@@ -38,20 +38,37 @@ export function Sidebar({ gradeData }: Props) {
     }
   }, [pathname]);
 
+  const [mobileExpanded, setMobileExpanded] = useState(false);
+
   return (
     <aside className="w-full lg:w-80 shrink-0 lg:sticky lg:top-20">
-      <div className="p-3.5 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col max-h-[calc(100vh-6rem)]">
-        <div className="pb-2 border-b border-slate-100 dark:border-slate-800 shrink-0">
-          <span className="text-[10px] font-black uppercase tracking-wider text-primary">
-            Hệ Thống Học Liệu
-          </span>
-          <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-            {gradeData.title}
-          </h3>
+      <div className="p-3 sm:p-3.5 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col lg:max-h-[calc(100vh-6rem)]">
+        <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800 shrink-0">
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-wider text-primary">
+              Hệ Thống Học Liệu
+            </span>
+            <h3 className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-slate-100">
+              {gradeData.title}
+            </h3>
+          </div>
+
+          {/* Toggle Button for Mobile Only */}
+          <button
+            onClick={() => setMobileExpanded(!mobileExpanded)}
+            className="lg:hidden px-2.5 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1"
+          >
+            <span>{mobileExpanded ? "Thu gọn danh mục" : "Xem bài khác"}</span>
+            <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", mobileExpanded ? "rotate-180" : "")} />
+          </button>
         </div>
 
-        {/* Chapters Accordion Navigation - Cuộn Độc Lập Không Ảnh Hưởng Khung Thực Chiến */}
-        <nav className="space-y-2 mt-2 overflow-y-auto pr-1 flex-1 overscroll-contain">
+        {/* Chapters Accordion Navigation - Ẩn mặc định trên mobile để học sinh tập trung làm bài, bấm 'Xem bài khác' để mở */}
+        <nav className={cn(
+          "space-y-2 mt-2 overflow-y-auto pr-1 flex-1 overscroll-contain transition-all duration-300",
+          !mobileExpanded && "hidden lg:block",
+          mobileExpanded && "block max-h-72 lg:max-h-none"
+        )}>
           {gradeData.chapters.map((chapter) => {
             const isOpen = openChapters[chapter.id] ?? true;
 

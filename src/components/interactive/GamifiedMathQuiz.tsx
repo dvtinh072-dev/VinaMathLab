@@ -1493,7 +1493,7 @@ export function GamifiedMathQuiz({
   const selectedOption = currentAnswer ? currentAnswer.selectedOption : null;
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-[#090D16] border-2 border-amber-500/40 p-4 sm:p-5 text-white space-y-3.5 shadow-2xl backdrop-blur-2xl">
+    <div className="relative overflow-hidden rounded-2xl bg-[#090D16] border sm:border-2 border-amber-500/40 p-2.5 sm:p-5 text-white space-y-3 sm:space-y-3.5 shadow-2xl backdrop-blur-2xl">
       {/* Background Decorative Neon Glows */}
       <div className="absolute top-0 right-1/4 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1509,7 +1509,7 @@ export function GamifiedMathQuiz({
       {/* ================================================================= */}
       {/* HEADER BẢNG ĐIỂM & ĐIỀU KHIỂN CHẾ ĐỘ GỌN GÀNG 1 DÒNG             */}
       {/* ================================================================= */}
-      <div className="relative z-10 flex flex-wrap items-center justify-between gap-2.5 pb-2.5 border-b border-slate-800">
+      <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-2.5 pb-2.5 border-b border-slate-800">
         {/* Điểm tích lũy khối */}
         <div className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center text-slate-950 font-black shadow-md shadow-amber-500/30 shrink-0">
@@ -1765,14 +1765,14 @@ export function GamifiedMathQuiz({
           </button>
 
           {/* Danh sách các câu hỏi [1] [2] [3]... */}
-          <div className="flex items-center gap-1.5 overflow-x-auto max-w-[55vw] sm:max-w-md py-0.5 px-1 scrollbar-none">
+          <div className="flex items-center gap-1.5 overflow-x-auto max-w-[50vw] sm:max-w-md py-1 px-1 scrollbar-none touch-pan-x">
             {activeSectionTab === "multiple_choice"
               ? activeQuizList.map((_, idx) => {
                   const ans = userAnswers[idx];
                   const isCurrent = idx === currentIndex;
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
-                    pillStyle = "bg-cyan-500 text-slate-950 font-black border-cyan-300 shadow-md shadow-cyan-500/40 scale-110";
+                    pillStyle = "bg-cyan-500 text-slate-950 font-black border-cyan-300 shadow-md shadow-cyan-500/40 scale-105";
                   } else if (ans) {
                     pillStyle = ans.isCorrect
                       ? "bg-emerald-950/90 text-emerald-300 border-emerald-500/70"
@@ -1782,7 +1782,7 @@ export function GamifiedMathQuiz({
                     <button
                       key={idx}
                       onClick={() => handleJumpToQuestion(idx)}
-                      className={`w-7 h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all ${pillStyle}`}
+                      className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
                       title={`Chuyển sang Câu ${idx + 1}`}
                     >
                       {idx + 1}
@@ -1795,7 +1795,7 @@ export function GamifiedMathQuiz({
                   const isCurrent = idx === tfCurrentIndex;
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
-                    pillStyle = "bg-amber-500 text-slate-950 font-black border-amber-300 shadow-md shadow-amber-500/40 scale-110";
+                    pillStyle = "bg-amber-500 text-slate-950 font-black border-amber-300 shadow-md shadow-amber-500/40 scale-105";
                   } else if (ans && ans.isSubmitted) {
                     pillStyle =
                       ans.correctCount === 4
@@ -1808,7 +1808,7 @@ export function GamifiedMathQuiz({
                     <button
                       key={idx}
                       onClick={() => setTfCurrentIndex(idx)}
-                      className={`w-7 h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all ${pillStyle}`}
+                      className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
                       title={`Chuyển sang Câu Đúng/Sai ${idx + 1}`}
                     >
                       {idx + 1}
@@ -1820,7 +1820,7 @@ export function GamifiedMathQuiz({
                   const isCurrent = idx === saCurrentIndex;
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
-                    pillStyle = "bg-emerald-500 text-slate-950 font-black border-emerald-300 shadow-md shadow-emerald-500/40 scale-110";
+                    pillStyle = "bg-emerald-500 text-slate-950 font-black border-emerald-300 shadow-md shadow-emerald-500/40 scale-105";
                   } else if (ans && ans.isSubmitted) {
                     pillStyle = ans.isCorrect
                       ? "bg-emerald-950/90 text-emerald-300 border-emerald-500/70"
@@ -1833,7 +1833,7 @@ export function GamifiedMathQuiz({
                         setSaCurrentIndex(idx);
                         setSaInputText(saUserAnswers[idx]?.answerText || "");
                       }}
-                      className={`w-7 h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all ${pillStyle}`}
+                      className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
                       title={`Chuyển sang Câu Trả lời ngắn ${idx + 1}`}
                     >
                       {idx + 1}

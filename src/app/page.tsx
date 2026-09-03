@@ -7,9 +7,9 @@ import { MathFormula } from "@/components/math/MathFormula";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] space-y-12 py-4">
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] space-y-6 sm:space-y-12 py-2 sm:py-4">
       {/* 1. Hero Gateway Banner */}
-      <section className="relative w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 border border-indigo-500/30 p-8 sm:p-14 md:p-16 text-center text-white space-y-8 shadow-2xl">
+      <section className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 border border-indigo-500/30 p-5 sm:p-12 md:p-16 text-center text-white space-y-6 sm:space-y-8 shadow-2xl">
         {/* Glow orbs */}
         <div className="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 -right-24 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
@@ -29,21 +29,24 @@ export default function HomePage() {
         </div>
 
         {/* Main Title */}
-        <div className="max-w-4xl mx-auto pt-2">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+        <div className="max-w-4xl mx-auto pt-1 sm:pt-2">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
             Hệ Thống Học Liệu{" "}
-            <span className="inline-block whitespace-nowrap bg-gradient-to-r from-cyan-400 via-teal-300 to-rose-400 bg-clip-text text-transparent">
+            <span className="inline-block bg-gradient-to-r from-cyan-400 via-teal-300 to-rose-400 bg-clip-text text-transparent">
               VinaMath
             </span>
           </h1>
+          <p className="text-xs sm:text-sm text-slate-300/90 max-w-xl mx-auto mt-2 leading-relaxed">
+            Học toán tương tác chuẩn SGK Kết nối tri thức 2026, thi thử THPT & ĐGNL trên máy tính và điện thoại di động.
+          </p>
         </div>
 
         {/* 2 Main Gateway Navigation Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-5 max-w-xl mx-auto pt-2">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-5 max-w-xl mx-auto pt-1 sm:pt-2 w-full">
           {/* Nút 1: Dành Cho Học Sinh */}
           <Link
             href="/hoc-tap"
-            className="px-7 py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-blue-500/30 hover:scale-105 hover:shadow-blue-500/50"
+            className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-blue-500/30 hover:scale-105 hover:shadow-blue-500/50 active:scale-95"
           >
             <span className="text-xl">🎓</span>
             <span>Dành Cho Học Sinh</span>
@@ -52,7 +55,7 @@ export default function HomePage() {
           {/* Nút 2: Dành Cho Giáo Viên */}
           <Link
             href="/giao-vien"
-            className="px-7 py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-slate-900/90 text-slate-200 border border-slate-700 hover:border-emerald-400 hover:text-white hover:bg-slate-800 hover:scale-105"
+            className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-slate-900/90 text-slate-200 border border-slate-700 hover:border-emerald-400 hover:text-white hover:bg-slate-800 hover:scale-105 active:scale-95"
           >
             <span className="text-xl">👨‍🏫</span>
             <span>Dành Cho Giáo Viên</span>

@@ -81,7 +81,7 @@ export default function HocTapGradeSelectionPage() {
   ];
 
   return (
-    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950 border border-indigo-500/30 p-8 sm:p-12 text-white space-y-12 shadow-2xl">
+    <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950 border border-indigo-500/30 p-4 sm:p-8 md:p-12 text-white space-y-8 sm:space-y-12 shadow-2xl">
       {/* Background Decorative Glowing Orbs */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 right-10 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />

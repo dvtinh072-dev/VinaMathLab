@@ -132,11 +132,11 @@ export function ExamEngine({ exam }: Props) {
       </div>
 
       {/* Main Examination View */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
         {/* Question Area */}
-        <div className="lg:col-span-8 p-6 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
-            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+        <div className="lg:col-span-8 p-3.5 sm:p-6 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4 sm:space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200 dark:border-slate-800">
+            <div className="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">
               {currentQ.type === "multiple_choice" && "Phần I: Trắc nghiệm 4 lựa chọn (0.25đ/câu)"}
               {currentQ.type === "true_false" && "Phần II: Trắc nghiệm Đúng / Sai (Tối đa 1.0đ/câu)"}
               {currentQ.type === "short_answer" && "Phần III: Trắc nghiệm Trả lời ngắn (0.5đ/câu)"}
@@ -216,10 +216,10 @@ export function ExamEngine({ exam }: Props) {
         </div>
 
         {/* Question Palette Sidebar */}
-        <div className="lg:col-span-4 p-5 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div className="lg:col-span-4 p-3.5 sm:p-5 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-3 sm:space-y-4">
           <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">Bảng điều hướng câu hỏi</h3>
 
-          <div className="grid grid-cols-5 gap-2">
+          <div className="grid grid-cols-6 sm:grid-cols-5 gap-1.5 sm:gap-2">
             {exam.questions.map((q, idx) => {
               const active = currentIdx === idx;
               const answered = isAnswered(q);

@@ -1,0 +1,189 @@
+@import "katex/dist/katex.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 228 35% 8%;
+    --foreground: 210 20% 98%;
+    --card: 226 30% 12%;
+    --card-foreground: 210 20% 98%;
+    --popover: 226 30% 12%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 217.2 25% 18%;
+    --input: 217.2 25% 18%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-indigo-500/20 selection:text-indigo-600 font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Vibrant Math Theme Badges & Glows */
+.glow-blue {
+  box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.35);
+}
+.glow-purple {
+  box-shadow: 0 10px 30px -10px rgba(124, 58, 237, 0.35);
+}
+.glow-rose {
+  box-shadow: 0 10px 30px -10px rgba(244, 63, 94, 0.35);
+}
+.glow-amber {
+  box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.35);
+}
+.glow-emerald {
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.35);
+}
+
+/* Floating animation for math symbols */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+  }
+}
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-4deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+.animate-float-reverse {
+  animation: floatReverse 7s ease-in-out infinite;
+}
+
+/* KaTeX custom high-contrast container - không ép nền trắng */
+.katex-display {
+  margin: 0.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  background: transparent !important;
+}
+
+.katex {
+  font-size: 1.05em;
+  text-rendering: geometricPrecision;
+  color: inherit !important;
+}
+
+.katex .text, .katex .mathrm, .katex .mathnormal {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.katex .mord, .katex .mbin, .katex .mrel, .katex .mopen, .katex .mclose, .katex .mpunct, .katex .minner, .katex .text {
+  color: inherit !important;
+}
+
+/* Đảm bảo đáp án và công thức tự co dãn vừa khung, không bị cắt chữ */
+.inline-math-container {
+  display: inline;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.inline-math-item {
+  display: inline;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.inline-math-item .katex {
+  white-space: normal !important;
+}
+
+.inline-math-item .katex-html {
+  white-space: normal !important;
+  display: inline !important;
+}
+
+.inline-math-item .katex .base {
+  white-space: normal !important;
+  display: inline !important;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-indigo-300 dark:bg-indigo-900 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-indigo-400 dark:bg-indigo-700;
+}
+
+/* Print Optimization */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+  .print-page-break {
+    page-break-before: always;
+  }
+  .katex-display {
+    border: none !important;
+    background: transparent !important;
+  }
+}

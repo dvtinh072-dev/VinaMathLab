@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String                @id @default(cuid())
+  username       String?               @unique
+  studentCode    String?               @unique
+  email          String?               @unique
+  password       String
+  fullName       String
+  role           String                @default("student") // "student", "teacher", "admin"
+  grade          String?
+  schoolClass    String?
+  exp            Int                   @default(0)
+  coins          Int                   @default(0)
+  streak         Int                   @default(1)
+  createdAt      DateTime              @default(now())
+  updatedAt      DateTime              @updatedAt
+
+  submissions    Submission[]
+  skillMasteries StudentSkillMastery[]
+
+  @@map("users")
+}
+
+model Skill {
+  id             String                @id @default(cuid())
+  code           String                @unique // Ví dụ: "T6.1.1", "T6.3.1"
+  name           String
+  description    String?
+  grade          String                // "lop-6", "lop-7"...
+  chapter        String?
+  createdAt      DateTime              @default(now())
+  updatedAt      DateTime              @updatedAt
+
+  masteries      StudentSkillMastery[]
+  submissions    Submission[]
+
+  @@map("skills")
+}
+
+model Question {
+  id             String       @id @default(cuid())
+  lessonId       String       // e.g. "t6-b1-tap-hop", "t6-b3-thu-tu-so-tu-nhien"
+  lessonTitle    String
+  grade          String       @default("lop-6")
+  badge          String       // e.g. "Bài 1.1 - SGK Toán 6 Tập 1, trang 7"
+  source         String       // e.g. "SGK Toán 6 Tập 1, Trang 7 & TN6 CI Bài 1 (Thư mục Anti/Tài Liệu Lớp 6)"
+  question       String
+  options        String       // JSON stringified array of 4 options
+  correctIndex   Int
+  explanation    String
+  cognitiveLevel String       @default("nhan_biet") // "nhan_biet" | "thong_hieu" | "van_dung" | "van_dung_cao"
+  isAiPractice   Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+
+  submissions    Submission[]
+
+  @@map("questions")
+}
+
+model StudentSkillMastery {
+  id            String   @id @default(cuid())
+  userId        String
+  skillId       String
+  masteryLevel  Float    @default(0.0) // 0.0 -> 100.0%
+  attemptsCount Int      @default(0)
+  correctCount  Int      @default(0)
+  lastPracticed DateTime @default(now())
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill         Skill    @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, skillId])
+  @@map("student_skill_masteries")
+}
+
+model Submission {
+  id               String    @id @default(cuid())
+  userId           String
+  skillId          String?
+  lessonId         String?
+  questionId       String?
+  selectedAnswer   String
+  isCorrect        Boolean
+  score            Float     @default(0)
+  timeSpentSeconds Int       @default(0)
+  source           String?
+  createdAt        DateTime  @default(now())
+
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill            Skill?    @relation(fields: [skillId], references: [id])
+  question         Question? @relation(fields: [questionId], references: [id], onDelete: SetNull)
+
+  @@map("submissions")
+}

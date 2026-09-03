@@ -1,0 +1,50 @@
+[
+  {
+    "id": "u-admin-1",
+    "role": "admin",
+    "username": "admin",
+    "password": "admin123",
+    "fullName": "Quản Trị Viên VinaMath",
+    "email": "admin@vinamath.edu.vn",
+    "createdAt": "2026-08-30T00:00:00.000Z"
+  },
+  {
+    "id": "u-student-1",
+    "role": "student",
+    "studentCode": "HS6001",
+    "password": "123456",
+    "fullName": "Nguyễn Văn An",
+    "grade": "Khối 6",
+    "schoolClass": "Lớp 6A",
+    "exp": 1250,
+    "coins": 180,
+    "streak": 5,
+    "createdAt": "2026-08-30T00:00:00.000Z"
+  },
+  {
+    "id": "u-student-2",
+    "role": "student",
+    "studentCode": "HS6002",
+    "password": "123456",
+    "fullName": "Trần Thị Mai",
+    "grade": "Khối 6",
+    "schoolClass": "Lớp 6B",
+    "exp": 980,
+    "coins": 120,
+    "streak": 3,
+    "createdAt": "2026-08-30T00:00:00.000Z"
+  },
+  {
+    "id": "u-student-1788089446022",
+    "role": "student",
+    "studentCode": "HS6099",
+    "password": "password123",
+    "fullName": "Lê Hoàng Long",
+    "grade": "Khối 6",
+    "schoolClass": "Lớp 6C",
+    "exp": 0,
+    "coins": 50,
+    "streak": 1,
+    "createdAt": "2026-08-30T11:30:46.022Z"
+  }
+]

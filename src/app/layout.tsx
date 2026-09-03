@@ -1,0 +1,43 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import "katex/dist/katex.min.css";
+import { ThemeProvider } from "next-themes";
+import { AuthProvider } from "@/context/AuthContext";
+import { AuthModal } from "@/components/auth/AuthModal";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "VinaMath | Nền Tảng Toán Học Tương Tác & Tự Học Thông Minh 2026",
+  description: "Trang web học toán tương tác cho học sinh Lớp 6-12, luyện thi THPT & ĐGNL theo chương trình GDPT 2018 và SGK Kết nối tri thức 2026, tích hợp AI sinh câu hỏi.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="vi" className={inter.variable} suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen flex flex-col bg-background text-foreground font-sans`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <AuthProvider>
+            <Header />
+            <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              {children}
+            </main>
+            <Footer />
+            <AuthModal />
+          </AuthProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

@@ -13,7 +13,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "bookChapter": "Chương I: Tập hợp các số tự nhiên",
     "scenarioTitle": "Tình huống: Phân loại đồ dùng học tập",
     "scenarioFrames": [],
-    "youtubeVideoId": "tP6vFm8YQc0",
+    "youtubeVideoId": "Alz53g47Nbk",
     "youtubeVideoTitle": "Bài Giảng Video: Tập Hợp & Phần Tử Của Tập Hợp (Toán 6 KNTT)",
     "videoQuestions": [
       {

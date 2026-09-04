@@ -96,6 +96,24 @@ interface Props {
 }
 
 /**
+ * Tự động trích xuất YouTube Video ID chuẩn từ bất kỳ định dạng link hoặc ID nào
+ * (ví dụ: https://www.youtube.com/watch?v=Alz53g47Nbk, https://youtu.be/Alz53g47Nbk hoặc Alz53g47Nbk)
+ */
+export function cleanYouTubeId(input?: string): string | null {
+  if (!input) return null;
+  const trimmed = input.trim();
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = trimmed.match(regExp);
+  if (match && match[2].length === 11) {
+    return match[2];
+  }
+  if (trimmed.length === 11 && !trimmed.includes("/") && !trimmed.includes(".")) {
+    return trimmed;
+  }
+  return trimmed;
+}
+
+/**
  * Trả về đồ họa SVG biểu diễn trục số cho các khoảng, đoạn, nửa khoảng tương ứng
  */
 export function getIntervalNumberLineSvg(pt: string): React.ReactNode | null {
@@ -1929,30 +1947,39 @@ export function GamifiedMathQuiz({
               </div>
 
               {/* Video Embed Frame Responsive 16:9 */}
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 shadow-inner">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${youtubeVideoId}?rel=0`}
-                  title={youtubeVideoTitle || lessonTitle}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              </div>
+              {(() => {
+                const effectiveVideoId = cleanYouTubeId(youtubeVideoId);
+                if (!effectiveVideoId) return null;
 
-              {/* Thanh trợ giúp xem video khi mạng chặn nhúng */}
-              <div className="flex items-center justify-between px-1 text-[11px] text-slate-400">
-                <span>Không phát được video trên khung nhúng?</span>
-                <a
-                  href={`https://www.youtube.com/watch?v=${youtubeVideoId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-rose-400 hover:text-rose-300 font-bold hover:underline"
-                >
-                  <span>Mở xem trên YouTube</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
+                return (
+                  <>
+                    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 shadow-inner">
+                      <iframe
+                        className="w-full h-full"
+                        src={`https://www.youtube.com/embed/${effectiveVideoId}?rel=0`}
+                        title={youtubeVideoTitle || lessonTitle}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+
+                    {/* Thanh trợ giúp xem video khi mạng chặn nhúng */}
+                    <div className="flex items-center justify-between px-1 text-[11px] text-slate-400">
+                      <span>Không phát được video trên khung nhúng?</span>
+                      <a
+                        href={`https://www.youtube.com/watch?v=${effectiveVideoId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-rose-400 hover:text-rose-300 font-bold hover:underline"
+                      >
+                        <span>Mở xem trên YouTube</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  </>
+                );
+              })()}
 
               {/* 2. CÁC CÂU HỎI TƯƠNG TÁC NGAY KHI XEM VIDEO (VIDEO CHECKPOINTS) */}
               {videoQuestions && videoQuestions.length > 0 && (

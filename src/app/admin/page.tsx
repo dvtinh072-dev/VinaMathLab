@@ -63,14 +63,39 @@ export default function AdminDashboardPage() {
   const fetchAdminData = async () => {
     setIsLoading(true);
     try {
-      // 1. Lấy danh sách users
+      // 1. Lấy danh sách users từ máy chủ
       const resUsers = await fetch("/api/auth/users");
       const dataUsers = await resUsers.json();
-      let rawStudents = [];
+      let rawStudents: any[] = [];
       if (dataUsers.success && dataUsers.users) {
         rawStudents = dataUsers.users.filter((u: any) => u.role === "student");
-        setStudents(rawStudents);
       }
+
+      // 1b. Gộp danh sách học sinh đăng ký lưu cục bộ (localStorage) để không bao giờ bị sót học sinh mới
+      if (typeof window !== "undefined") {
+        try {
+          const localSaved = localStorage.getItem("vinamath_local_registered_users");
+          if (localSaved) {
+            const parsedLocal = JSON.parse(localSaved);
+            const localStudents = parsedLocal.filter((u: any) => u.role === "student");
+            const existingKeys = new Set(
+              rawStudents.map((s) => s.id || s.username?.toLowerCase() || s.studentCode?.toLowerCase())
+            );
+
+            localStudents.forEach((ls: any) => {
+              const key = ls.id || ls.username?.toLowerCase() || ls.studentCode?.toLowerCase();
+              if (key && !existingKeys.has(key)) {
+                rawStudents.unshift(ls);
+                existingKeys.add(key);
+              }
+            });
+          }
+        } catch (e) {
+          console.warn("Lỗi đọc local registered users:", e);
+        }
+      }
+
+      setStudents(rawStudents);
 
       // 2. Lấy dữ liệu tiến độ & báo cáo câu sai
       const resProgress = await fetch("/api/student/progress?mode=admin");
@@ -144,6 +169,26 @@ export default function AdminDashboardPage() {
       const data = await res.json();
       if (res.ok && data.success) {
         setStatusMessage(`Đã xóa thành công học sinh: ${studentName}`);
+
+        // Dọn dẹp cả trong localStorage nếu có
+        if (typeof window !== "undefined") {
+          try {
+            const localSaved = localStorage.getItem("vinamath_local_registered_users");
+            if (localSaved) {
+              const list = JSON.parse(localSaved);
+              const filtered = list.filter(
+                (u: any) =>
+                  u.id !== studentId &&
+                  u.username?.toLowerCase() !== studentId.toLowerCase() &&
+                  u.studentCode !== studentId
+              );
+              localStorage.setItem("vinamath_local_registered_users", JSON.stringify(filtered));
+            }
+          } catch (e) {
+            console.warn("Lỗi dọn local registered users:", e);
+          }
+        }
+
         // Cập nhật lại state trực tiếp
         setStudents((prev) => prev.filter((s) => s.id !== studentId && s.username !== studentId && s.studentCode !== studentId));
         setTimeout(() => setStatusMessage(null), 3000);

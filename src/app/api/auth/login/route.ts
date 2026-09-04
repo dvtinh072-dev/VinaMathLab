@@ -20,7 +20,8 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { role, studentCode, username, identifier, password } = body;
-    const loginKey = (identifier || username || studentCode || "").trim();
+    const loginKey = (identifier || username || studentCode || "").trim().toLowerCase();
+    const cleanPassword = (password || "").trim();
 
     let user: any = null;
 
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
         user = await prisma.user.findFirst({
           where: {
             role: "admin",
-            password: password,
+            password: cleanPassword,
             OR: [
               { username: loginKey },
               { email: loginKey },
@@ -41,9 +42,9 @@ export async function POST(req: Request) {
         user = await prisma.user.findFirst({
           where: {
             role: "student",
-            password: password,
+            password: cleanPassword,
             OR: [
-              { username: loginKey.toLowerCase() },
+              { username: loginKey },
               { studentCode: loginKey.toUpperCase() },
               { studentCode: loginKey },
               { id: loginKey },
@@ -62,17 +63,18 @@ export async function POST(req: Request) {
         user = fallbackUsers.find(
           (u: any) =>
             u.role === "admin" &&
-            (u.username?.toLowerCase() === loginKey.toLowerCase() || u.email?.toLowerCase() === loginKey.toLowerCase()) &&
-            u.password === password
+            (u.username?.toLowerCase() === loginKey || u.email?.toLowerCase() === loginKey) &&
+            (u.password || "").trim() === cleanPassword
         );
       } else {
         user = fallbackUsers.find(
           (u: any) =>
             u.role === "student" &&
-            (u.username?.toLowerCase() === loginKey.toLowerCase() ||
+            (u.username?.toLowerCase() === loginKey ||
+             u.studentCode?.toLowerCase() === loginKey ||
              u.studentCode?.toUpperCase() === loginKey.toUpperCase() ||
-             u.id === loginKey) &&
-            u.password === password
+             u.id?.toLowerCase() === loginKey) &&
+            (u.password || "").trim() === cleanPassword
         );
       }
     }

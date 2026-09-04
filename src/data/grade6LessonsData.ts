@@ -295,6 +295,62 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "bookChapter": "Chương I: Tập hợp các số tự nhiên",
     "scenarioTitle": "Tình huống: Đọc số dân và số La Mã",
     "scenarioFrames": [],
+    "youtubeVideoId": "9sk748_nw0U",
+    "youtubeVideoTitle": "Bài Giảng Video: Cách Ghi Số Tự Nhiên (Toán 6 KNTT)",
+    "videoQuestions": [
+      {
+        "id": "vq-6.2.1",
+        "title": "Ví dụ 1: Phân biệt các hàng và lớp trong hệ thập phân",
+        "question": "Cho số tự nhiên có bốn chữ số $9998$. Khẳng định nào sau đây là SAI?",
+        "options": [
+          "Số $9998$ là số tự nhiên lớn nhất có bốn chữ số",
+          "Chữ số hàng chục của số đó là $9$",
+          "Số trăm của số đó là $99$",
+          "$9998 = 9 \\times 1000 + 9 \\times 100 + 9 \\times 10 + 8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo quy tắc số tự nhiên trong hệ thập phân: Số tự nhiên lớn nhất có 4 chữ số phải là $9999$. Do đó khẳng định 'Số $9998$ là số tự nhiên lớn nhất có bốn chữ số' là SAI. Các khẳng định còn lại đều đúng: chữ số hàng chục là $9$, số trăm là $99$ (vì $9998 = 99 \\times 100 + 98$), và cấu tạo thập phân là $9 \\times 1000 + 9 \\times 100 + 9 \\times 10 + 8$."
+      },
+      {
+        "id": "vq-6.2.2",
+        "title": "Ví dụ 2: Khai triển cấu tạo thập phân của số tự nhiên",
+        "question": "Biểu diễn số tự nhiên $236$ và số tự nhiên có hai chữ số $\\overline{ab}$ ($a \\ne 0$) dưới dạng tổng giá trị các chữ số của nó:",
+        "options": [
+          "$236 = 2 \\times 100 + 3 \\times 10 + 6$ và $\\overline{ab} = 10 \\times a + b$",
+          "$236 = 2 \\times 100 + 36$ và $\\overline{ab} = a + b$",
+          "$236 = 200 + 3 + 6$ và $\\overline{ab} = a \\times b$",
+          "$236 = 2 \\times 10 + 3 \\times 10 + 6$ và $\\overline{ab} = 100 \\times a + b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hệ thập phân, mỗi chữ số ở hàng nào thì nhân với giá trị của hàng đó: Chữ số 2 ở hàng trăm nên có giá trị là $2 \\times 100$, chữ số 3 ở hàng chục là $3 \\times 10$, chữ số 6 ở hàng đơn vị là $6$. Với số có hai chữ số $\\overline{ab}$, chữ số $a$ ở hàng chục và $b$ ở hàng đơn vị nên $\\overline{ab} = 10 \\times a + b$."
+      },
+      {
+        "id": "vq-6.2.3",
+        "title": "Ví dụ 3: Xác định số trăm, chữ số hàng trăm, số chục",
+        "question": "Cho số tự nhiên $3745$. Hãy xác định số trăm và chữ số hàng trăm của số này:",
+        "options": [
+          "Số trăm là $37$, chữ số hàng trăm là $7$",
+          "Số trăm là $7$, chữ số hàng trăm là $7$",
+          "Số trăm là $374$, chữ số hàng trăm là $4$",
+          "Số trăm là $3$, chữ số hàng trăm là $7$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cần phân biệt rõ giữa chữ số hàng trăm và số trăm: Chữ số hàng trăm là một chữ số duy nhất đứng ở vị trí hàng trăm, ở đây là $7$. Số trăm là toàn bộ phần số tính từ hàng trăm trở về trước, ta có $3745 = 37 \\times 100 + 45$, nên số trăm là $37$."
+      },
+      {
+        "id": "vq-6.2.4",
+        "title": "Ví dụ 4: Đọc và viết số La Mã trong thực tế",
+        "question": "Trong văn bản chính thức, 'Đại hội lần thứ $\\text{XIII}$ của Đảng Cộng sản Việt Nam' diễn ra năm 2021. Số La Mã $\\text{XIII}$ biểu thị số bao nhiêu trong hệ thập phân?",
+        "options": [
+          "$13$",
+          "$12$",
+          "$18$",
+          "$23$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo quy tắc ghi số La Mã: Ký tự $\\text{X}$ có giá trị là $10$, mỗi ký tự $\\text{I}$ có giá trị là $1$. Do đó: $\\text{XIII} = 10 + 1 + 1 + 1 = 13$. Vậy đây là Đại hội lần thứ mười ba ($13$)."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",

@@ -7,7 +7,8 @@ import { CURRICULUM_DATA, LessonItem } from "@/data/curriculumData";
 import { getUnifiedLessonDetail } from "@/data/allGradesLessonsData";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { GamifiedMathQuiz } from "@/components/interactive/GamifiedMathQuiz";
-import { Sparkles, ArrowLeft, Gamepad2 } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
+import { Sparkles, ArrowLeft, Lock, LogIn, UserPlus } from "lucide-react";
 
 interface Props {
   params: {
@@ -17,6 +18,9 @@ interface Props {
 }
 
 export default function TopicLessonPage({ params }: Props) {
+  const { user, isStudent, isAdmin, openAuthModal } = useAuth();
+  const isAuthenticated = Boolean(user && (isStudent || isAdmin));
+
   const gradeData = CURRICULUM_DATA[params.grade];
   if (!gradeData) notFound();
 
@@ -25,6 +29,61 @@ export default function TopicLessonPage({ params }: Props) {
 
   // Lấy dữ liệu chi tiết bài học chuẩn SGK
   const lessonDetail = getUnifiedLessonDetail(params.grade, topic.id, topic, gradeData);
+
+  // Nếu người dùng chưa đăng nhập, hiển thị Màn hình yêu cầu Đăng nhập / Đăng ký
+  if (!isAuthenticated) {
+    return (
+      <div className="flex flex-col lg:flex-row gap-5 items-start">
+        <Sidebar gradeData={gradeData} />
+        <article className="flex-1 w-full min-w-0">
+          <div className="p-6 sm:p-10 rounded-3xl bg-[#0e1526] border-2 border-amber-500/40 text-center space-y-6 shadow-2xl max-w-xl mx-auto my-8">
+            <div className="w-16 h-16 mx-auto rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+              <Lock className="w-8 h-8" />
+            </div>
+
+            <div className="space-y-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 text-xs font-black">
+                {gradeData.title} • {lessonDetail.title}
+              </span>
+              <h2 className="text-xl sm:text-2xl font-black text-white">
+                Vui Lòng Đăng Nhập Hoặc Đăng Ký
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Bạn cần đăng nhập tài khoản học sinh hoặc đăng ký thành viên mới để xem video bài giảng, thực hiện bài tập trắc nghiệm và lưu kết quả học tập.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+              <button
+                onClick={() => openAuthModal("student", "login")}
+                className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black text-xs sm:text-sm hover:from-blue-500 hover:to-cyan-400 transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/30 cursor-pointer"
+              >
+                <LogIn className="w-4 h-4" />
+                <span>Đăng Nhập Ngay</span>
+              </button>
+              <button
+                onClick={() => openAuthModal("student", "register")}
+                className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-slate-900 border border-slate-700 text-white font-black text-xs sm:text-sm hover:bg-slate-800 transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <UserPlus className="w-4 h-4 text-amber-400" />
+                <span>Đăng Ký Tài Khoản</span>
+              </button>
+            </div>
+
+            <div className="pt-2 text-center">
+              <Link
+                href="/hoc-tap"
+                className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-cyan-400 transition-colors"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" />
+                <span>Quay lại chọn khối lớp khác</span>
+              </Link>
+            </div>
+          </div>
+        </article>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col lg:flex-row gap-5 items-start">

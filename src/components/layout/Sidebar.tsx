@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { GradeData } from "@/data/curriculumData";
 import { BookOpen, Layers, Compass, BarChart3, ChevronRight, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAuth } from "@/context/AuthContext";
 
 interface Props {
   gradeData: GradeData;
@@ -13,6 +14,8 @@ interface Props {
 
 export function Sidebar({ gradeData }: Props) {
   const pathname = usePathname();
+  const { user, isStudent, isAdmin, openAuthModal } = useAuth();
+  const isAuthenticated = Boolean(user && (isStudent || isAdmin));
   const [openChapters, setOpenChapters] = useState<{ [key: string]: boolean }>({
     [gradeData.chapters[0]?.id || ""]: true,
   });
@@ -95,8 +98,14 @@ export function Sidebar({ gradeData }: Props) {
                           key={lesson.id}
                           ref={active ? activeRef : null}
                           href={href}
+                          onClick={(e) => {
+                            if (!isAuthenticated) {
+                              e.preventDefault();
+                              openAuthModal("student", "login");
+                            }
+                          }}
                           className={cn(
-                            "group flex items-start gap-1.5 p-1.5 rounded-lg text-xs transition-all",
+                            "group flex items-start gap-1.5 p-1.5 rounded-lg text-xs transition-all cursor-pointer",
                             active
                               ? "bg-primary text-white font-bold shadow-md shadow-primary/20"
                               : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900"

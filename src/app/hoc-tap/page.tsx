@@ -2,15 +2,33 @@
 
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { MathFormula } from "@/components/math/MathFormula";
 import { CURRICULUM_DATA } from "@/data/curriculumData";
+import { useAuth } from "@/context/AuthContext";
+import { Lock, LogIn, Sparkles, UserPlus } from "lucide-react";
 
 export default function HocTapGradeSelectionPage() {
+  const router = useRouter();
+  const { user, isStudent, isAdmin, openAuthModal } = useAuth();
+  const isAuthenticated = Boolean(user && (isStudent || isAdmin));
+
   const getFirstLessonHref = (gradeId: string) => {
     const gradeData = CURRICULUM_DATA[gradeId];
     const firstLessonId = gradeData?.chapters[0]?.lessons[0]?.id;
     return firstLessonId ? `/hoc-tap/${gradeId}/${firstLessonId}` : `/hoc-tap/${gradeId}`;
   };
+
+  const handleGradeClick = (e: React.MouseEvent, gradeId: string) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      // Mở modal xác thực cho học sinh
+      openAuthModal("student", "login");
+    } else {
+      router.push(getFirstLessonHref(gradeId));
+    }
+  };
+
   const middleSchoolGrades = [
     {
       id: "lop-6",
@@ -101,7 +119,39 @@ export default function HocTapGradeSelectionPage() {
         <MathFormula math="\vec{u} \cdot \vec{v}" />
       </div>
 
+      {/* Cảnh báo / Nhắc nhở đăng nhập nếu là khách */}
+      {!isAuthenticated && (
+        <div className="relative z-10 max-w-2xl mx-auto p-4 sm:p-5 rounded-2xl bg-amber-500/10 border-2 border-amber-500/30 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-lg">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0">
+              <Lock className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="font-black text-white text-sm">Yêu Cầu Đăng Nhập Thành Viên</div>
+              <div className="text-xs text-slate-300">
+                Đăng nhập hoặc đăng ký tài khoản học sinh để vào lớp học, tích lũy điểm EXP và theo dõi tiến độ.
+              </div>
+            </div>
+          </div>
 
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => openAuthModal("student", "login")}
+              className="px-3.5 py-2 rounded-xl bg-cyan-500 text-slate-950 font-black text-xs hover:bg-cyan-400 transition-all flex items-center gap-1.5 shadow-md shadow-cyan-500/30 cursor-pointer"
+            >
+              <LogIn className="w-3.5 h-3.5" />
+              <span>Đăng Nhập</span>
+            </button>
+            <button
+              onClick={() => openAuthModal("student", "register")}
+              className="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white font-black text-xs hover:bg-slate-800 transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <UserPlus className="w-3.5 h-3.5 text-amber-400" />
+              <span>Đăng Ký</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* 2. HÀNG 1: CẤP THCS (TOÁN 6, TOÁN 7, TOÁN 8, TOÁN 9) */}
       <div className="relative z-10 space-y-4">
@@ -113,19 +163,26 @@ export default function HocTapGradeSelectionPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {middleSchoolGrades.map((grade) => (
-            <Link
+            <button
+              type="button"
               key={grade.id}
-              href={getFirstLessonHref(grade.id)}
-              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl`}
+              onClick={(e) => handleGradeClick(e, grade.id)}
+              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl w-full cursor-pointer`}
             >
               {/* Logo Badge chứa chữ 'Toán 6', 'Toán 7', ... */}
-              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105`}>
+              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105 relative`}>
                 <span className="text-2xl drop-shadow-md">{grade.symbol}</span>
                 <span className="font-black text-2xl sm:text-3xl tracking-tight drop-shadow-md">
                   {grade.label}
                 </span>
+
+                {!isAuthenticated && (
+                  <span className="absolute top-2 right-2 p-1 rounded-md bg-black/40 text-amber-300" title="Cần đăng nhập">
+                    <Lock className="w-3.5 h-3.5" />
+                  </span>
+                )}
               </div>
-            </Link>
+            </button>
           ))}
         </div>
       </div>
@@ -140,19 +197,26 @@ export default function HocTapGradeSelectionPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {highSchoolGrades.map((grade) => (
-            <Link
+            <button
+              type="button"
               key={grade.id}
-              href={getFirstLessonHref(grade.id)}
-              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl`}
+              onClick={(e) => handleGradeClick(e, grade.id)}
+              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl w-full cursor-pointer`}
             >
               {/* Logo Badge chứa chữ 'Toán 10', 'Toán 11', 'Toán 12' */}
-              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105`}>
+              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105 relative`}>
                 <span className="text-2xl drop-shadow-md">{grade.symbol}</span>
                 <span className="font-black text-2xl sm:text-3xl tracking-tight drop-shadow-md">
                   {grade.label}
                 </span>
+
+                {!isAuthenticated && (
+                  <span className="absolute top-2 right-2 p-1 rounded-md bg-black/40 text-amber-300" title="Cần đăng nhập">
+                    <Lock className="w-3.5 h-3.5" />
+                  </span>
+                )}
               </div>
-            </Link>
+            </button>
           ))}
         </div>
       </div>

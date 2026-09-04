@@ -12,6 +12,8 @@ export function AuthModal() {
 
   // Student Form State
   const [studentCode, setStudentCode] = useState("");
+  const [studentUsername, setStudentUsername] = useState("");
+  const [studentSchool, setStudentSchool] = useState("");
   const [studentPassword, setStudentPassword] = useState("");
   const [studentFullName, setStudentFullName] = useState("");
   const [studentGrade, setStudentGrade] = useState("Khối 6");
@@ -48,7 +50,8 @@ export function AuthModal() {
       if (isRegister) {
         const res = await registerStudent({
           fullName: studentFullName,
-          studentCode: studentCode,
+          schoolName: studentSchool,
+          username: studentUsername,
           password: studentPassword,
           grade: studentGrade,
           schoolClass: studentClass,
@@ -207,9 +210,39 @@ export function AuthModal() {
                 </div>
               )}
 
+              {isRegister && (
+                <>
+                  <div>
+                    <label className="block text-xs font-bold text-slate-300 mb-1">Trường Học</label>
+                    <input
+                      type="text"
+                      required
+                      value={studentSchool}
+                      onChange={(e) => setStudentSchool(e.target.value)}
+                      placeholder="Ví dụ: THCS Giảng Võ, THCS Cầu Giấy..."
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-slate-300 mb-1">
+                      Tên Đăng Nhập (Username - viết liền không dấu)
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={studentUsername}
+                      onChange={(e) => setStudentUsername(e.target.value.toLowerCase().replace(/\s+/g, ""))}
+                      placeholder="Ví dụ: annguyen6a"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400 font-mono"
+                    />
+                  </div>
+                </>
+              )}
+
               <div>
                 <label className="block text-xs font-bold text-slate-300 mb-1">
-                  Mã Học Sinh {isRegister && "(Tùy chọn, để trống sẽ tự sinh mã)"}
+                  {isRegister ? "Mã Học Sinh (Tùy chọn, để trống sẽ tự sinh mã)" : "Tên Đăng Nhập hoặc Mã Học Sinh"}
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
@@ -217,11 +250,11 @@ export function AuthModal() {
                   </div>
                   <input
                     type="text"
-                    required={!isRegister}
+                    required
                     value={studentCode}
-                    onChange={(e) => setStudentCode(e.target.value.toUpperCase())}
-                    placeholder="Ví dụ: HS6001"
-                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold uppercase focus:outline-none focus:border-cyan-400"
+                    onChange={(e) => setStudentCode(e.target.value)}
+                    placeholder={isRegister ? "Ví dụ: HS6001 (không bắt buộc)" : "Nhập username hoặc mã HS (vd: annguyen6a, HS6001)"}
+                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
                   />
                 </div>
               </div>

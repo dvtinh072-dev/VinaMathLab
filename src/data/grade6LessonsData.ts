@@ -18,45 +18,63 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "videoQuestions": [
       {
         "id": "vq-6.1.1",
-        "title": "Câu hỏi tương tác 1: Nhận biết tập hợp",
-        "timeLabel": "02:15",
-        "question": "Trong các cách viết sau, cách viết nào đặt tên tập hợp và biểu diễn đúng quy ước SGK?",
+        "title": "Mục 1: Khái niệm tập hợp trong thực tế",
+        "timeSeconds": 105,
+        "timeLabel": "01:45",
+        "question": "Thầy Quang lấy ví dụ về tập hợp các đồ vật trên bàn giáo viên gồm những đồ vật nào?",
         "options": [
-          "A = {1; 2; 3; 4}",
-          "a = {1; 2; 3; 4}",
-          "A = (1, 2, 3, 4)",
-          "A = [1; 2; 3; 4]"
+          "Thước kẻ, compa, bút lông, phấn",
+          "Bảng đen, phấn trắng, khăn lau",
+          "Sách giáo khoa, vở ghi bài, bút chì",
+          "Máy tính bàn, chuột, bàn phím"
         ],
         "correctIndex": 0,
-        "explanation": "Tên tập hợp được đặt bằng chữ cái in hoa (A, B, C...) và các phần tử được viết trong dấu ngoặc nhọn { }, ngăn cách bởi dấu chấm phẩy (;)."
+        "explanation": "Trong bài giảng (mốc 01:45), thầy Quang lấy ví dụ trực quan tập hợp các đồ vật có trên bàn gồm: thước kẻ, compa, bút lông, phấn... Mỗi đồ vật này là một phần tử của tập hợp."
       },
       {
         "id": "vq-6.1.2",
-        "title": "Câu hỏi tương tác 2: Ký hiệu thuộc (∈) và không thuộc (∉)",
-        "timeLabel": "05:40",
-        "question": "Cho tập hợp M = {x; y; z; 5}. Khẳng định nào sau đây là ĐÚNG?",
+        "title": "Mục 2: Ký hiệu tên tập hợp và dấu ngoặc",
+        "timeSeconds": 260,
+        "timeLabel": "04:20",
+        "question": "Theo quy ước SGK Toán 6 và bài giảng, tên tập hợp được đặt bằng chữ cái gì và các phần tử nằm trong dấu ngoặc nào?",
         "options": [
-          "x ∈ M và 2 ∉ M",
-          "x ∉ M và 5 ∉ M",
-          "z ∉ M và 2 ∈ M",
-          "{x} ∈ M"
+          "Chữ cái in hoa (A, B, C...) và dấu ngoặc nhọn { }",
+          "Chữ cái in thường (a, b, c...) và dấu ngoặc tròn ( )",
+          "Chữ cái in hoa (A, B, C...) và dấu ngoặc vuông [ ]",
+          "Chữ số La Mã (I, II, III...) và dấu gạch chéo / /"
         ],
         "correctIndex": 0,
-        "explanation": "Phần tử x có mặt trong M nên x ∈ M. Số 2 không có mặt trong M nên 2 ∉ M."
+        "explanation": "Quy ước chuẩn Toán học: Người ta thường dùng các chữ cái in hoa như A, B, C, X, Y... để đặt tên cho tập hợp. Các phần tử của tập hợp được viết bên trong dấu ngoặc nhọn { } và ngăn cách nhau bởi dấu chấm phẩy (;)."
       },
       {
         "id": "vq-6.1.3",
-        "title": "Câu hỏi tương tác 3: Liệt kê phần tử tập hợp",
-        "timeLabel": "09:10",
-        "question": "Viết tập hợp P các chữ cái xuất hiện trong từ \"NHA TRANG\" bằng cách liệt kê phần tử:",
+        "title": "Mục 3: Ký hiệu thuộc (∈) và không thuộc (∉)",
+        "timeSeconds": 435,
+        "timeLabel": "07:15",
+        "question": "Cho tập hợp $M = \\{x; y; z; 5\\}$. Khẳng định nào sau đây là ĐÚNG?",
         "options": [
-          "P = {N; H; A; T; R; G}",
-          "P = {N; H; A; T; R; A; N; G}",
-          "P = {N; H; A; T; R}",
-          "P = {n; h; a; t; r; g}"
+          "$x \\in M$ và $2 \\notin M$",
+          "$x \\notin M$ và $5 \\notin M$",
+          "$z \\notin M$ và $2 \\in M$",
+          "$\\{x\\} \\in M$"
         ],
         "correctIndex": 0,
-        "explanation": "Theo quy tắc liệt kê, mỗi phần tử chỉ được viết một lần. Các chữ cái 'N' và 'A' lặp lại 2 lần chỉ được ghi 1 lần. Do đó P = {N; H; A; T; R; G}."
+        "explanation": "Phần tử x có mặt trong tập hợp M nên ta viết $x \\in M$ (đọc là x thuộc M). Số 2 không có mặt trong M nên ta viết $2 \\notin M$ (đọc là 2 không thuộc M)."
+      },
+      {
+        "id": "vq-6.1.4",
+        "title": "Mục 4: Quy tắc viết tập hợp bằng liệt kê",
+        "timeSeconds": 630,
+        "timeLabel": "10:30",
+        "question": "Khi viết tập hợp các chữ cái trong từ \"NHA TRANG\" bằng cách liệt kê, cách viết nào sau đây là ĐÚNG?",
+        "options": [
+          "$P = \\{N; H; A; T; R; G\\}$",
+          "$P = \\{N; H; A; T; R; A; N; G\\}$",
+          "$P = \\{n; h; a; t; r; g\\}$",
+          "$P = (N, H, A, T, R, G)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo quy tắc liệt kê phần tử: Mỗi phần tử chỉ được viết MỘT LẦN duy nhất, thứ tự liệt kê tùy ý. Từ 'NHA TRANG' có chữ N và A xuất hiện 2 lần thì chỉ ghi 1 lần. Do đó $P = \\{N; H; A; T; R; G\\}$."
       }
     ],
     "theorySections": [

@@ -861,6 +861,7 @@ export function GamifiedMathQuiz({
   // Quản lý xem video tương tác và bật/tắt lý thuyết chữ
   const [showFullText, setShowFullText] = useState<boolean>(showTextTheory);
   const [videoAnswers, setVideoAnswers] = useState<{ [qId: string]: number }>({});
+  const [activeVideoTime, setActiveVideoTime] = useState<number>(0);
 
   // Bộ câu hỏi gốc chuẩn SGK
   const defaultSgkQuestions: QuizQuestion[] = [
@@ -1951,12 +1952,17 @@ export function GamifiedMathQuiz({
                 const effectiveVideoId = cleanYouTubeId(youtubeVideoId);
                 if (!effectiveVideoId) return null;
 
+                const iframeSrc = `https://www.youtube.com/embed/${effectiveVideoId}?rel=0${
+                  activeVideoTime > 0 ? `&start=${activeVideoTime}&autoplay=1` : ""
+                }`;
+
                 return (
                   <>
                     <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 shadow-inner">
                       <iframe
+                        key={`${effectiveVideoId}-${activeVideoTime}`}
                         className="w-full h-full"
-                        src={`https://www.youtube.com/embed/${effectiveVideoId}?rel=0`}
+                        src={iframeSrc}
                         title={youtubeVideoTitle || lessonTitle}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
@@ -1965,17 +1971,29 @@ export function GamifiedMathQuiz({
                     </div>
 
                     {/* Thanh trợ giúp xem video khi mạng chặn nhúng */}
-                    <div className="flex items-center justify-between px-1 text-[11px] text-slate-400">
-                      <span>Không phát được video trên khung nhúng?</span>
-                      <a
-                        href={`https://www.youtube.com/watch?v=${effectiveVideoId}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-rose-400 hover:text-rose-300 font-bold hover:underline"
-                      >
-                        <span>Mở xem trên YouTube</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
+                    <div className="flex flex-wrap items-center justify-between gap-2 px-1 text-[11px] text-slate-400">
+                      <div className="flex items-center gap-2">
+                        <span>Không phát được video trên khung nhúng?</span>
+                        <a
+                          href={`https://www.youtube.com/watch?v=${effectiveVideoId}${activeVideoTime > 0 ? `&t=${activeVideoTime}s` : ""}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-rose-400 hover:text-rose-300 font-bold hover:underline"
+                        >
+                          <span>Mở xem trên YouTube</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </div>
+
+                      {activeVideoTime > 0 && (
+                        <button
+                          onClick={() => setActiveVideoTime(0)}
+                          className="inline-flex items-center gap-1 text-[11px] text-slate-400 hover:text-cyan-300 transition-colors"
+                        >
+                          <RotateCcw className="w-3 h-3" />
+                          <span>Xem lại từ đầu video</span>
+                        </button>
+                      )}
                     </div>
                   </>
                 );
@@ -1984,13 +2002,13 @@ export function GamifiedMathQuiz({
               {/* 2. CÁC CÂU HỎI TƯƠNG TÁC NGAY KHI XEM VIDEO (VIDEO CHECKPOINTS) */}
               {videoQuestions && videoQuestions.length > 0 && (
                 <div className="space-y-3 pt-2">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="text-xs font-black text-amber-300 flex items-center gap-1.5 uppercase tracking-wide">
                       <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                       Câu hỏi tương tác củng cố khi xem video ({videoQuestions.length} câu):
                     </span>
-                    <span className="text-[10px] text-cyan-400 font-bold">
-                      Trả lời đúng nhận +50 EXP ⭐
+                    <span className="text-[10px] text-cyan-400 font-bold bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-500/30">
+                      Mỗi câu đúng nhận +50 EXP ⭐
                     </span>
                   </div>
 
@@ -1999,22 +2017,38 @@ export function GamifiedMathQuiz({
                       const selected = videoAnswers[vq.id];
                       const isVAnswered = selected !== undefined;
                       const isVCorrect = selected === vq.correctIndex;
+                      const vqSeconds = vq.timeSeconds || 0;
 
                       return (
                         <div
                           key={vq.id}
                           className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-slate-700 transition-all space-y-2.5"
                         >
-                          <div className="flex items-center justify-between gap-2">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
                             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
                               <PlayCircle className="w-3 h-3 text-cyan-400" />
                               {vq.title || `Câu hỏi tương tác ${vIdx + 1}`}
                             </span>
-                            {vq.timeLabel && (
-                              <span className="text-[10px] font-bold text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
-                                ⏱ Mốc {vq.timeLabel}
-                              </span>
-                            )}
+
+                            <div className="flex items-center gap-1.5">
+                              {vqSeconds > 0 && (
+                                <button
+                                  type="button"
+                                  onClick={() => setActiveVideoTime(vqSeconds)}
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-lg bg-rose-500/20 text-rose-300 hover:bg-rose-500/30 border border-rose-500/40 transition-all cursor-pointer shadow-sm"
+                                  title="Bấm để video nhảy đến đoạn thầy giảng phần này"
+                                >
+                                  <Video className="w-3 h-3 text-rose-400" />
+                                  <span>Tua video đến {vq.timeLabel || `${Math.floor(vqSeconds / 60)}:${(vqSeconds % 60).toString().padStart(2, '0')}`}</span>
+                                </button>
+                              )}
+
+                              {vq.timeLabel && !vqSeconds && (
+                                <span className="text-[10px] font-bold text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
+                                  ⏱ Mốc {vq.timeLabel}
+                                </span>
+                              )}
+                            </div>
                           </div>
 
                           <div className="text-xs sm:text-sm font-bold text-white">
@@ -2069,11 +2103,30 @@ export function GamifiedMathQuiz({
                             })}
                           </div>
 
-                          {/* Phản hồi giải thích */}
+                          {/* Phản hồi giải thích và nút thử lại */}
                           {isVAnswered && (
-                            <div className="p-2.5 rounded-lg bg-slate-900/90 border border-cyan-500/30 text-xs text-slate-200 animate-in fade-in-50">
-                              <span className="font-bold text-amber-300">💡 Giải thích: </span>
-                              <MathFormattedText text={vq.explanation} />
+                            <div className="p-2.5 rounded-lg bg-slate-900/90 border border-cyan-500/30 text-xs text-slate-200 animate-in fade-in-50 space-y-2">
+                              <div className="flex items-start justify-between gap-2">
+                                <div>
+                                  <span className="font-bold text-amber-300">💡 Giải thích: </span>
+                                  <MathFormattedText text={vq.explanation} />
+                                </div>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setVideoAnswers((prev) => {
+                                      const next = { ...prev };
+                                      delete next[vq.id];
+                                      return next;
+                                    });
+                                  }}
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 shrink-0 transition-all cursor-pointer"
+                                  title="Làm lại câu hỏi này để củng cố kiến thức"
+                                >
+                                  <RefreshCw className="w-3 h-3 text-cyan-400" />
+                                  <span>Làm lại</span>
+                                </button>
+                              </div>
                             </div>
                           )}
                         </div>

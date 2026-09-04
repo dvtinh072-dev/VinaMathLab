@@ -68,6 +68,18 @@ export interface ExamSetItem {
   shortAnswerQuestions?: ShortAnswerQuestion[];
 }
 
+export interface VideoCheckpointQuestion {
+  id: string;
+  timeSeconds?: number;
+  timeLabel?: string;
+  title: string;
+  question: string;
+  mathProblem?: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
 export interface DetailedLessonData {
   id: string;
   lessonNumber: number;
@@ -76,6 +88,10 @@ export interface DetailedLessonData {
   scenarioTitle: string;
   scenarioFrames: ScenarioFrame[];
   theorySections: TheorySection[];
+  youtubeVideoId?: string;
+  youtubeVideoTitle?: string;
+  videoQuestions?: VideoCheckpointQuestion[];
+  showTextTheory?: boolean;
   tips?: string[];
   traps?: string[];
   interactiveType?: "venn" | "numberline" | "power" | "divisibility" | "integers" | "geometry" | "fraction" | "decimal" | "geometry2d" | "statistics" | "function" | "circle" | "vector" | "default";

@@ -13,6 +13,52 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "bookChapter": "Chương I: Tập hợp các số tự nhiên",
     "scenarioTitle": "Tình huống: Phân loại đồ dùng học tập",
     "scenarioFrames": [],
+    "youtubeVideoId": "tP6vFm8YQc0",
+    "youtubeVideoTitle": "Bài Giảng Video: Tập Hợp & Phần Tử Của Tập Hợp (Toán 6 KNTT)",
+    "videoQuestions": [
+      {
+        "id": "vq-6.1.1",
+        "title": "Câu hỏi tương tác 1: Nhận biết tập hợp",
+        "timeLabel": "02:15",
+        "question": "Trong các cách viết sau, cách viết nào đặt tên tập hợp và biểu diễn đúng quy ước SGK?",
+        "options": [
+          "A = {1; 2; 3; 4}",
+          "a = {1; 2; 3; 4}",
+          "A = (1, 2, 3, 4)",
+          "A = [1; 2; 3; 4]"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tên tập hợp được đặt bằng chữ cái in hoa (A, B, C...) và các phần tử được viết trong dấu ngoặc nhọn { }, ngăn cách bởi dấu chấm phẩy (;)."
+      },
+      {
+        "id": "vq-6.1.2",
+        "title": "Câu hỏi tương tác 2: Ký hiệu thuộc (∈) và không thuộc (∉)",
+        "timeLabel": "05:40",
+        "question": "Cho tập hợp M = {x; y; z; 5}. Khẳng định nào sau đây là ĐÚNG?",
+        "options": [
+          "x ∈ M và 2 ∉ M",
+          "x ∉ M và 5 ∉ M",
+          "z ∉ M và 2 ∈ M",
+          "{x} ∈ M"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phần tử x có mặt trong M nên x ∈ M. Số 2 không có mặt trong M nên 2 ∉ M."
+      },
+      {
+        "id": "vq-6.1.3",
+        "title": "Câu hỏi tương tác 3: Liệt kê phần tử tập hợp",
+        "timeLabel": "09:10",
+        "question": "Viết tập hợp P các chữ cái xuất hiện trong từ \"NHA TRANG\" bằng cách liệt kê phần tử:",
+        "options": [
+          "P = {N; H; A; T; R; G}",
+          "P = {N; H; A; T; R; A; N; G}",
+          "P = {N; H; A; T; R}",
+          "P = {n; h; a; t; r; g}"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo quy tắc liệt kê, mỗi phần tử chỉ được viết một lần. Các chữ cái 'N' và 'A' lặp lại 2 lần chỉ được ghi 1 lần. Do đó P = {N; H; A; T; R; G}."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",

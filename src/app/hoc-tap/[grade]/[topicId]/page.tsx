@@ -63,6 +63,10 @@ export default function TopicLessonPage({ params }: Props) {
           gradeTitle={gradeData.title}
           questions={lessonDetail.quizQuestions}
           theorySections={lessonDetail.theorySections}
+          youtubeVideoId={lessonDetail.youtubeVideoId}
+          youtubeVideoTitle={lessonDetail.youtubeVideoTitle}
+          videoQuestions={lessonDetail.videoQuestions}
+          showTextTheory={lessonDetail.showTextTheory}
           tips={lessonDetail.tips}
           traps={lessonDetail.traps}
           trueFalseQuestions={lessonDetail.trueFalseQuestions}

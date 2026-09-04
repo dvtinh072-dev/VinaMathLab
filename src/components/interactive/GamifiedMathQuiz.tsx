@@ -35,6 +35,10 @@ import {
   HelpCircle,
   ListFilter,
   FileText,
+  Video,
+  PlayCircle,
+  Eye,
+  EyeOff,
 } from "lucide-react";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { GRADE_7_AI_PRACTICE_DATA } from "@/data/grade7AiPracticeData";
@@ -47,7 +51,13 @@ import { GeometryDiagram, GeometryDiagramProps } from "@/components/math/Geometr
 import { useAuth } from "@/context/AuthContext";
 import { QuestionEditModal } from "@/components/admin/QuestionEditModal";
 import { AiQuestionGeneratorModal } from "@/components/admin/AiQuestionGeneratorModal";
-import type { TheorySection, TrueFalseQuestion, ShortAnswerQuestion, ExamSetItem } from "@/data/allGradesLessonsData";
+import type { 
+  TheorySection, 
+  TrueFalseQuestion, 
+  ShortAnswerQuestion, 
+  ExamSetItem,
+  VideoCheckpointQuestion 
+} from "@/data/allGradesLessonsData";
 
 export interface QuizQuestion {
   id: string | number;
@@ -73,6 +83,10 @@ interface Props {
   gradeTitle?: string;
   questions?: QuizQuestion[];
   theorySections?: TheorySection[];
+  youtubeVideoId?: string;
+  youtubeVideoTitle?: string;
+  videoQuestions?: VideoCheckpointQuestion[];
+  showTextTheory?: boolean;
   tips?: string[];
   traps?: string[];
   trueFalseQuestions?: TrueFalseQuestion[];
@@ -811,6 +825,10 @@ export function GamifiedMathQuiz({
   gradeTitle = "Toán 6",
   questions,
   theorySections,
+  youtubeVideoId,
+  youtubeVideoTitle,
+  videoQuestions,
+  showTextTheory = false,
   tips,
   traps,
   trueFalseQuestions,
@@ -820,6 +838,10 @@ export function GamifiedMathQuiz({
   const hasExamSets = Boolean(examSets && examSets.length > 0);
   const [selectedExamIndex, setSelectedExamIndex] = useState(0);
   const activeExam = hasExamSets && examSets ? examSets[selectedExamIndex] : null;
+
+  // Quản lý xem video tương tác và bật/tắt lý thuyết chữ
+  const [showFullText, setShowFullText] = useState<boolean>(showTextTheory);
+  const [videoAnswers, setVideoAnswers] = useState<{ [qId: string]: number }>({});
 
   // Bộ câu hỏi gốc chuẩn SGK
   const defaultSgkQuestions: QuizQuestion[] = [
@@ -1546,8 +1568,8 @@ export function GamifiedMathQuiz({
                     : "text-emerald-400 hover:text-white"
                 }`}
               >
-                <BookOpen className="w-3 h-3 text-emerald-300" />
-                <span>📖 Kiến thức cần nhớ</span>
+                {youtubeVideoId ? <Video className="w-3 h-3 text-rose-400" /> : <BookOpen className="w-3 h-3 text-emerald-300" />}
+                <span>{youtubeVideoId ? "🎬 Video bài giảng" : "📖 Kiến thức cần nhớ"}</span>
               </button>
             )}
 
@@ -1873,33 +1895,183 @@ export function GamifiedMathQuiz({
       {/* ================================================================= */}
       {quizMode === "theory" ? (
         <div className="space-y-4 pt-1 animate-in fade-in-50 duration-200">
-          {/* Banner giới thiệu */}
-          <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/60 border border-emerald-500/40 shadow-lg flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 shrink-0 shadow-md">
-                <BookOpen className="w-5 h-5" />
-              </div>
-              <div>
-                <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
-                  <span>Kiến thức trọng tâm cần nhớ</span>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                    Xem trước bài học
+          {/* 1. KHUNG NHÚNG VIDEO BÀI GIẢNG YOUTUBE (NẾU CÓ) */}
+          {youtubeVideoId && (
+            <div className="space-y-3 p-3 sm:p-5 rounded-2xl bg-[#0b1120] border-2 border-rose-500/40 shadow-2xl">
+              {/* Header Video */}
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800">
+                <div className="flex items-center gap-2">
+                  <span className="p-1.5 rounded-lg bg-rose-500/20 text-rose-400 border border-rose-500/30">
+                    <Video className="w-4 h-4" />
                   </span>
-                </h2>
-                <p className="text-xs text-slate-400">
-                  Tóm tắt nội dung lý thuyết trọng tâm theo sách bài tập và sách giáo khoa
-                </p>
-              </div>
-            </div>
+                  <div>
+                    <h2 className="text-xs sm:text-sm font-black text-white flex items-center gap-1.5">
+                      <span>{youtubeVideoTitle || `Video Bài Giảng: ${lessonTitle}`}</span>
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40 uppercase">
+                        Trực Quan
+                      </span>
+                    </h2>
+                    <p className="text-[11px] text-slate-400">Xem video bài giảng kết hợp trả lời câu hỏi kiểm tra nhanh bên dưới</p>
+                  </div>
+                </div>
 
-            <button
-              onClick={() => handleSwitchMode("sgk")}
-              className="px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-black text-xs flex items-center gap-2 shadow-md shadow-cyan-500/20 hover:scale-105 active:scale-95 transition-all"
-            >
-              <span>Vào làm bài tập ngay</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
+                {/* Nút Xem lại lý thuyết chữ khi cần */}
+                {theorySections && theorySections.length > 0 && (
+                  <button
+                    onClick={() => setShowFullText(!showFullText)}
+                    className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-slate-900 border border-slate-700 hover:border-emerald-400 text-slate-300 hover:text-emerald-300 flex items-center gap-1.5 transition-all shadow-sm"
+                  >
+                    {showFullText ? <EyeOff className="w-3.5 h-3.5 text-slate-400" /> : <Eye className="w-3.5 h-3.5 text-emerald-400" />}
+                    <span>{showFullText ? "Thu gọn bản chữ" : "Xem giáo án bản chữ"}</span>
+                  </button>
+                )}
+              </div>
+
+              {/* Video Embed Frame Responsive 16:9 */}
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 shadow-inner">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?rel=0&modestbranding=1`}
+                  title={youtubeVideoTitle || lessonTitle}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+
+              {/* 2. CÁC CÂU HỎI TƯƠNG TÁC NGAY KHI XEM VIDEO (VIDEO CHECKPOINTS) */}
+              {videoQuestions && videoQuestions.length > 0 && (
+                <div className="space-y-3 pt-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-amber-300 flex items-center gap-1.5 uppercase tracking-wide">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                      Câu hỏi tương tác củng cố khi xem video ({videoQuestions.length} câu):
+                    </span>
+                    <span className="text-[10px] text-cyan-400 font-bold">
+                      Trả lời đúng nhận +50 EXP ⭐
+                    </span>
+                  </div>
+
+                  <div className="space-y-3">
+                    {videoQuestions.map((vq, vIdx) => {
+                      const selected = videoAnswers[vq.id];
+                      const isVAnswered = selected !== undefined;
+                      const isVCorrect = selected === vq.correctIndex;
+
+                      return (
+                        <div
+                          key={vq.id}
+                          className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-slate-700 transition-all space-y-2.5"
+                        >
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                              <PlayCircle className="w-3 h-3 text-cyan-400" />
+                              {vq.title || `Câu hỏi tương tác ${vIdx + 1}`}
+                            </span>
+                            {vq.timeLabel && (
+                              <span className="text-[10px] font-bold text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
+                                ⏱ Mốc {vq.timeLabel}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="text-xs sm:text-sm font-bold text-white">
+                            <MathFormattedText text={vq.question} />
+                          </div>
+
+                          {/* Options Grid */}
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                            {vq.options.map((vOpt, optIdx) => {
+                              const isThisSelected = selected === optIdx;
+                              const isThisCorrect = optIdx === vq.correctIndex;
+
+                              let vBtnStyle = "bg-slate-900 hover:bg-slate-850 border-slate-800 text-slate-200 hover:border-cyan-500/50";
+                              if (isVAnswered) {
+                                if (isThisCorrect) {
+                                  vBtnStyle = "bg-emerald-950/90 border-emerald-400 text-emerald-100 shadow-sm";
+                                } else if (isThisSelected && !isThisCorrect) {
+                                  vBtnStyle = "bg-rose-950/90 border-rose-500 text-rose-100";
+                                } else {
+                                  vBtnStyle = "bg-slate-900/40 border-slate-850 text-slate-500 opacity-50";
+                                }
+                              }
+
+                              return (
+                                <button
+                                  key={optIdx}
+                                  onClick={() => {
+                                    if (isVAnswered) return;
+                                    setVideoAnswers((prev) => ({ ...prev, [vq.id]: optIdx }));
+                                    if (optIdx === vq.correctIndex) {
+                                      setSessionScore((s) => s + 50);
+                                      setCoinsEarned((c) => c + 5);
+                                      if (addExpAndCoins) addExpAndCoins(50, 5, 1);
+                                      playSound("correct");
+                                    } else {
+                                      playSound("wrong");
+                                    }
+                                  }}
+                                  disabled={isVAnswered}
+                                  className={`p-2.5 rounded-xl border text-left text-xs font-bold flex items-start gap-2 transition-all min-h-[40px] ${vBtnStyle}`}
+                                >
+                                  <span className="w-5 h-5 rounded-md bg-white/10 text-cyan-300 text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                                    {String.fromCharCode(65 + optIdx)}
+                                  </span>
+                                  <div className="flex-1 min-w-0">
+                                    <MathFormattedText text={vOpt} />
+                                  </div>
+                                  {isVAnswered && isThisCorrect && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />}
+                                  {isVAnswered && isThisSelected && !isThisCorrect && <XCircle className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" />}
+                                </button>
+                              );
+                            })}
+                          </div>
+
+                          {/* Phản hồi giải thích */}
+                          {isVAnswered && (
+                            <div className="p-2.5 rounded-lg bg-slate-900/90 border border-cyan-500/30 text-xs text-slate-200 animate-in fade-in-50">
+                              <span className="font-bold text-amber-300">💡 Giải thích: </span>
+                              <MathFormattedText text={vq.explanation} />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* 3. BẢN GIÁO ÁN CHỮ ĐÃ ĐƯỢC ĐÓNG GÓI (CHỈ HIỂN THỊ KHI BẬT HOẶC KHI BÀI CHƯA CÓ VIDEO) */}
+          {(!youtubeVideoId || showFullText) && (
+            <div className="space-y-4 animate-in fade-in-50 duration-200">
+              {/* Banner giới thiệu */}
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/60 border border-emerald-500/40 shadow-lg flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 shrink-0 shadow-md">
+                    <BookOpen className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
+                      <span>Kiến thức trọng tâm cần nhớ (Giáo án lưu trữ)</span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        Chuẩn SGK
+                      </span>
+                    </h2>
+                    <p className="text-xs text-slate-400">
+                      Toàn bộ nội dung lý thuyết tóm tắt và ví dụ mẫu đã được đóng gói an toàn
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => handleSwitchMode("sgk")}
+                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-black text-xs flex items-center gap-2 shadow-md shadow-cyan-500/20 hover:scale-105 active:scale-95 transition-all"
+                >
+                  <span>Vào làm bài tập ngay</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
 
           {/* Danh sách các phần lý thuyết */}
           <div className="grid grid-cols-1 gap-4">
@@ -2363,7 +2535,9 @@ export function GamifiedMathQuiz({
             </div>
           </div>
         </div>
-      ) : !isCompleted ? (
+      )}
+    </div>
+  ) : !isCompleted ? (
         activeSectionTab === "true_false" && currentTfList.length > 0 ? (
           /* ========================================================= */
           /* PHẦN II: CÂU TRẮC NGHIỆM ĐÚNG / SAI (4 CÂU - MỖI CÂU 4 Ý) */

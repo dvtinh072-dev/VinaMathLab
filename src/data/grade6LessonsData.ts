@@ -18,55 +18,47 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "videoQuestions": [
       {
         "id": "vq-6.1.1",
-        "title": "Mục 1: Khái niệm tập hợp trong thực tế",
-        "timeSeconds": 105,
-        "timeLabel": "01:45",
-        "question": "Thầy Quang lấy ví dụ về tập hợp các đồ vật trên bàn giáo viên gồm những đồ vật nào?",
+        "title": "Ví dụ 1: Nhận biết tập hợp trong Toán học",
+        "question": "Trong các phát biểu sau, phát biểu nào mô tả ĐÚNG một tập hợp được xác định rõ ràng trong toán học?",
         "options": [
-          "Thước kẻ, compa, bút lông, phấn",
-          "Bảng đen, phấn trắng, khăn lau",
-          "Sách giáo khoa, vở ghi bài, bút chì",
-          "Máy tính bàn, chuột, bàn phím"
+          "Tập hợp $A$ các số tự nhiên chẵn nhỏ hơn $10$",
+          "Tập hợp $B$ gồm các bạn học sinh giỏi nhất khối 6",
+          "Tập hợp $C$ gồm các số tự nhiên rất lớn",
+          "Tập hợp $D$ gồm các loài hoa đẹp nhất Việt Nam"
         ],
         "correctIndex": 0,
-        "explanation": "Trong bài giảng (mốc 01:45), thầy Quang lấy ví dụ trực quan tập hợp các đồ vật có trên bàn gồm: thước kẻ, compa, bút lông, phấn... Mỗi đồ vật này là một phần tử của tập hợp."
+        "explanation": "Trong toán học, các phần tử của một tập hợp phải được xác định rõ ràng (luôn biết chắc một đối tượng có thuộc hay không thuộc tập hợp). Các tiêu chí như 'giỏi nhất', 'rất lớn', 'đẹp nhất' mang tính cảm tính, không rõ ràng. Chỉ có tập hợp các số tự nhiên chẵn nhỏ hơn 10 là xác định rõ: $\\{0; 2; 4; 6; 8\\}$."
       },
       {
         "id": "vq-6.1.2",
-        "title": "Mục 2: Ký hiệu tên tập hợp và dấu ngoặc",
-        "timeSeconds": 260,
-        "timeLabel": "04:20",
-        "question": "Theo quy ước SGK Toán 6 và bài giảng, tên tập hợp được đặt bằng chữ cái gì và các phần tử nằm trong dấu ngoặc nào?",
+        "title": "Ví dụ 2: Ký hiệu tên tập hợp và dấu ngoặc",
+        "question": "Theo quy ước chuẩn Toán học, tên tập hợp thường được đặt bằng chữ cái gì và các phần tử nằm trong dấu ngoặc nào?",
         "options": [
-          "Chữ cái in hoa (A, B, C...) và dấu ngoặc nhọn { }",
-          "Chữ cái in thường (a, b, c...) và dấu ngoặc tròn ( )",
-          "Chữ cái in hoa (A, B, C...) và dấu ngoặc vuông [ ]",
-          "Chữ số La Mã (I, II, III...) và dấu gạch chéo / /"
+          "Chữ cái in hoa ($A, B, C...$) và dấu ngoặc nhọn $\\{ \\}$",
+          "Chữ cái in thường ($a, b, c...$) và dấu ngoặc tròn $( )$",
+          "Chữ cái in hoa ($A, B, C...$) và dấu ngoặc vuông $[ ]$",
+          "Chữ số La Mã ($I, II, III...$) và dấu gạch chéo $/ /$"
         ],
         "correctIndex": 0,
-        "explanation": "Quy ước chuẩn Toán học: Người ta thường dùng các chữ cái in hoa như A, B, C, X, Y... để đặt tên cho tập hợp. Các phần tử của tập hợp được viết bên trong dấu ngoặc nhọn { } và ngăn cách nhau bởi dấu chấm phẩy (;)."
+        "explanation": "Quy ước toán học: Người ta thường dùng các chữ cái in hoa như $A, B, C, X, Y...$ để đặt tên cho tập hợp. Các phần tử của tập hợp được viết bên trong dấu ngoặc nhọn $\\{ \\}$ và ngăn cách nhau bởi dấu chấm phẩy (;)."
       },
       {
         "id": "vq-6.1.3",
-        "title": "Mục 3: Ký hiệu thuộc (∈) và không thuộc (∉)",
-        "timeSeconds": 435,
-        "timeLabel": "07:15",
-        "question": "Cho tập hợp $M = \\{x; y; z; 5\\}$. Khẳng định nào sau đây là ĐÚNG?",
+        "title": "Ví dụ 3: Ký hiệu thuộc (∈) và không thuộc (∉)",
+        "question": "Cho tập hợp $M = \\{2; 3; 5; 7; 11\\}$. Khẳng định nào sau đây là ĐÚNG?",
         "options": [
-          "$x \\in M$ và $2 \\notin M$",
-          "$x \\notin M$ và $5 \\notin M$",
-          "$z \\notin M$ và $2 \\in M$",
-          "$\\{x\\} \\in M$"
+          "$3 \\in M$ và $9 \\notin M$",
+          "$3 \\notin M$ và $5 \\in M$",
+          "$7 \\in M$ và $11 \\notin M$",
+          "$2 \\notin M$ và $9 \\in M$"
         ],
         "correctIndex": 0,
-        "explanation": "Phần tử x có mặt trong tập hợp M nên ta viết $x \\in M$ (đọc là x thuộc M). Số 2 không có mặt trong M nên ta viết $2 \\notin M$ (đọc là 2 không thuộc M)."
+        "explanation": "Số 3 có mặt trong tập hợp $M$ nên ta viết $3 \\in M$ (3 thuộc $M$). Số 9 không có mặt trong $M$ nên ta viết $9 \\notin M$ (9 không thuộc $M$)."
       },
       {
         "id": "vq-6.1.4",
-        "title": "Mục 4: Quy tắc viết tập hợp bằng liệt kê",
-        "timeSeconds": 630,
-        "timeLabel": "10:30",
-        "question": "Khi viết tập hợp các chữ cái trong từ \"NHA TRANG\" bằng cách liệt kê, cách viết nào sau đây là ĐÚNG?",
+        "title": "Ví dụ 4: Quy tắc viết tập hợp bằng cách liệt kê",
+        "question": "Gọi $P$ là tập hợp các chữ cái xuất hiện trong từ \"NHA TRANG\". Cách viết tập hợp $P$ nào sau đây là ĐÚNG?",
         "options": [
           "$P = \\{N; H; A; T; R; G\\}$",
           "$P = \\{N; H; A; T; R; A; N; G\\}$",
@@ -74,7 +66,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
           "$P = (N, H, A, T, R, G)$"
         ],
         "correctIndex": 0,
-        "explanation": "Theo quy tắc liệt kê phần tử: Mỗi phần tử chỉ được viết MỘT LẦN duy nhất, thứ tự liệt kê tùy ý. Từ 'NHA TRANG' có chữ N và A xuất hiện 2 lần thì chỉ ghi 1 lần. Do đó $P = \\{N; H; A; T; R; G\\}$."
+        "explanation": "Theo quy tắc liệt kê phần tử của tập hợp: Mỗi phần tử chỉ được viết MỘT LẦN duy nhất, thứ tự liệt kê tùy ý. Trong từ 'NHA TRANG', chữ N và chữ A xuất hiện 2 lần nhưng chỉ ghi 1 lần trong tập hợp. Do đó $P = \\{N; H; A; T; R; G\\}$."
       }
     ],
     "theorySections": [

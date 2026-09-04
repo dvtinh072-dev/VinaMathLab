@@ -302,6 +302,28 @@ function shuffleOptions(q: QuizQuestion): QuizQuestion {
 }
 
 /**
+ * Thuật toán xáo trộn vị trí đáp án cho ví dụ minh họa video mỗi lần truy cập
+ */
+function shuffleVideoCheckpoint(vq: VideoCheckpointQuestion): VideoCheckpointQuestion {
+  const originalCorrectOption = vq.options[vq.correctIndex];
+  const indices = vq.options.map((_, i) => i);
+
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+
+  const shuffledOptions = indices.map((i) => vq.options[i]);
+  const newCorrectIndex = shuffledOptions.indexOf(originalCorrectOption);
+
+  return {
+    ...vq,
+    options: shuffledOptions,
+    correctIndex: newCorrectIndex,
+  };
+}
+
+/**
  * HỆ THỐNG SINH ĐỀ "LUYỆN TẬP THÊM" TƯƠNG ỨNG 1-1 VỚI SỐ CÂU HỎI VÀ DẠNG BÀI SGK CỦA TỪNG BÀI HỌC
  * - Đúng chính xác số lượng bài tập của bài đó trong SGK
  * - Cùng dạng bài, khác số liệu, khác ngữ cảnh thực tế
@@ -858,10 +880,28 @@ export function GamifiedMathQuiz({
   const [selectedExamIndex, setSelectedExamIndex] = useState(0);
   const activeExam = hasExamSets && examSets ? examSets[selectedExamIndex] : null;
 
-  // Quản lý xem video tương tác và bật/tắt lý thuyết chữ
+  // Quản lý xem video, ví dụ minh họa và bật/tắt lý thuyết chữ
   const [showFullText, setShowFullText] = useState<boolean>(showTextTheory);
   const [videoAnswers, setVideoAnswers] = useState<{ [qId: string]: number }>({});
   const [activeVideoTime, setActiveVideoTime] = useState<number>(0);
+  const [shuffledVideoQuestions, setShuffledVideoQuestions] = useState<VideoCheckpointQuestion[]>([]);
+
+  // Tự động xáo trộn ngẫu nhiên đáp án của các ví dụ minh họa mỗi lần truy cập bài học
+  useEffect(() => {
+    if (videoQuestions && videoQuestions.length > 0) {
+      setShuffledVideoQuestions(videoQuestions.map(shuffleVideoCheckpoint));
+      setVideoAnswers({});
+    } else {
+      setShuffledVideoQuestions([]);
+    }
+  }, [videoQuestions, lessonId]);
+
+  const handleShuffleVideoExamples = () => {
+    if (videoQuestions && videoQuestions.length > 0) {
+      setShuffledVideoQuestions(videoQuestions.map(shuffleVideoCheckpoint));
+      setVideoAnswers({});
+    }
+  };
 
   // Bộ câu hỏi gốc chuẩn SGK
   const defaultSgkQuestions: QuizQuestion[] = [
@@ -1999,142 +2039,139 @@ export function GamifiedMathQuiz({
                 );
               })()}
 
-              {/* 2. CÁC CÂU HỎI TƯƠNG TÁC NGAY KHI XEM VIDEO (VIDEO CHECKPOINTS) */}
-              {videoQuestions && videoQuestions.length > 0 && (
-                <div className="space-y-3 pt-2">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-xs font-black text-amber-300 flex items-center gap-1.5 uppercase tracking-wide">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                      Câu hỏi tương tác củng cố khi xem video ({videoQuestions.length} câu):
-                    </span>
-                    <span className="text-[10px] text-cyan-400 font-bold bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-500/30">
-                      Mỗi câu đúng nhận +50 EXP ⭐
-                    </span>
-                  </div>
-
-                  <div className="space-y-3">
-                    {videoQuestions.map((vq, vIdx) => {
-                      const selected = videoAnswers[vq.id];
-                      const isVAnswered = selected !== undefined;
-                      const isVCorrect = selected === vq.correctIndex;
-                      const vqSeconds = vq.timeSeconds || 0;
-
-                      return (
-                        <div
-                          key={vq.id}
-                          className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-slate-700 transition-all space-y-2.5"
+              {/* 2. CÁC VÍ DỤ MINH HỌA CỦNG CỐ KIẾN THỨC TỪ VIDEO */}
+              {((shuffledVideoQuestions && shuffledVideoQuestions.length > 0) || (videoQuestions && videoQuestions.length > 0)) && (() => {
+                const displayQuestions = shuffledVideoQuestions.length > 0 ? shuffledVideoQuestions : (videoQuestions || []);
+                return (
+                  <div className="space-y-3 pt-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <span className="text-xs font-black text-amber-300 flex items-center gap-1.5 uppercase tracking-wide">
+                        <Lightbulb className="w-4 h-4 text-amber-400 shrink-0" />
+                        Ví dụ minh họa củng cố kiến thức video ({displayQuestions.length} ví dụ):
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={handleShuffleVideoExamples}
+                          className="inline-flex items-center gap-1 text-[10px] font-bold text-amber-300 hover:text-white bg-amber-950/60 hover:bg-amber-900/80 px-2 py-0.5 rounded border border-amber-500/40 transition-all cursor-pointer shadow-sm"
+                          title="Xáo trộn ngẫu nhiên thứ tự các phương án lựa chọn A, B, C, D"
                         >
-                          <div className="flex flex-wrap items-center justify-between gap-2">
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-                              <PlayCircle className="w-3 h-3 text-cyan-400" />
-                              {vq.title || `Câu hỏi tương tác ${vIdx + 1}`}
-                            </span>
+                          <RefreshCw className="w-2.5 h-2.5 text-amber-400" />
+                          <span>Đảo đáp án</span>
+                        </button>
+                        <span className="text-[10px] text-cyan-400 font-bold bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-500/30">
+                          Mỗi câu đúng nhận +50 EXP ⭐
+                        </span>
+                      </div>
+                    </div>
 
-                            <div className="flex items-center gap-1.5">
-                              {vqSeconds > 0 && (
-                                <button
-                                  type="button"
-                                  onClick={() => setActiveVideoTime(vqSeconds)}
-                                  className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-lg bg-rose-500/20 text-rose-300 hover:bg-rose-500/30 border border-rose-500/40 transition-all cursor-pointer shadow-sm"
-                                  title="Bấm để video nhảy đến đoạn thầy giảng phần này"
-                                >
-                                  <Video className="w-3 h-3 text-rose-400" />
-                                  <span>Tua video đến {vq.timeLabel || `${Math.floor(vqSeconds / 60)}:${(vqSeconds % 60).toString().padStart(2, '0')}`}</span>
-                                </button>
-                              )}
+                    <div className="space-y-3">
+                      {displayQuestions.map((vq, vIdx) => {
+                        const selected = videoAnswers[vq.id];
+                        const isVAnswered = selected !== undefined;
+                        const isVCorrect = selected === vq.correctIndex;
 
-                              {vq.timeLabel && !vqSeconds && (
-                                <span className="text-[10px] font-bold text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
-                                  ⏱ Mốc {vq.timeLabel}
-                                </span>
-                              )}
+                        return (
+                          <div
+                            key={vq.id}
+                            className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-slate-700 transition-all space-y-2.5"
+                          >
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-sm">
+                                <Lightbulb className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                                {vq.title || `Ví dụ minh họa ${vIdx + 1}`}
+                              </span>
                             </div>
-                          </div>
 
-                          <div className="text-xs sm:text-sm font-bold text-white">
-                            <MathFormattedText text={vq.question} />
-                          </div>
+                            <div className="text-xs sm:text-sm font-bold text-white">
+                              <MathFormattedText text={vq.question} />
+                            </div>
 
-                          {/* Options Grid */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                            {vq.options.map((vOpt, optIdx) => {
-                              const isThisSelected = selected === optIdx;
-                              const isThisCorrect = optIdx === vq.correctIndex;
+                            {/* Options Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                              {vq.options.map((vOpt, optIdx) => {
+                                const isThisSelected = selected === optIdx;
+                                const isThisCorrect = optIdx === vq.correctIndex;
 
-                              let vBtnStyle = "bg-slate-900 hover:bg-slate-850 border-slate-800 text-slate-200 hover:border-cyan-500/50";
-                              if (isVAnswered) {
-                                if (isThisCorrect) {
-                                  vBtnStyle = "bg-emerald-950/90 border-emerald-400 text-emerald-100 shadow-sm";
-                                } else if (isThisSelected && !isThisCorrect) {
-                                  vBtnStyle = "bg-rose-950/90 border-rose-500 text-rose-100";
-                                } else {
-                                  vBtnStyle = "bg-slate-900/40 border-slate-850 text-slate-500 opacity-50";
+                                let vBtnStyle = "bg-slate-900 hover:bg-slate-850 border-slate-800 text-slate-200 hover:border-amber-500/50";
+                                if (isVAnswered) {
+                                  if (isThisCorrect) {
+                                    vBtnStyle = "bg-emerald-950/90 border-emerald-400 text-emerald-100 shadow-sm";
+                                  } else if (isThisSelected && !isThisCorrect) {
+                                    vBtnStyle = "bg-rose-950/90 border-rose-500 text-rose-100";
+                                  } else {
+                                    vBtnStyle = "bg-slate-900/40 border-slate-850 text-slate-500 opacity-50";
+                                  }
                                 }
-                              }
 
-                              return (
-                                <button
-                                  key={optIdx}
-                                  onClick={() => {
-                                    if (isVAnswered) return;
-                                    setVideoAnswers((prev) => ({ ...prev, [vq.id]: optIdx }));
-                                    if (optIdx === vq.correctIndex) {
-                                      setSessionScore((s) => s + 50);
-                                      setCoinsEarned((c) => c + 5);
-                                      if (addExpAndCoins) addExpAndCoins(50, 5, 1);
-                                      playSound("correct");
-                                    } else {
-                                      playSound("wrong");
-                                    }
-                                  }}
-                                  disabled={isVAnswered}
-                                  className={`p-2.5 rounded-xl border text-left text-xs font-bold flex items-start gap-2 transition-all min-h-[40px] ${vBtnStyle}`}
-                                >
-                                  <span className="w-5 h-5 rounded-md bg-white/10 text-cyan-300 text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
-                                    {String.fromCharCode(65 + optIdx)}
-                                  </span>
-                                  <div className="flex-1 min-w-0">
-                                    <MathFormattedText text={vOpt} />
-                                  </div>
-                                  {isVAnswered && isThisCorrect && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />}
-                                  {isVAnswered && isThisSelected && !isThisCorrect && <XCircle className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" />}
-                                </button>
-                              );
-                            })}
-                          </div>
-
-                          {/* Phản hồi giải thích và nút thử lại */}
-                          {isVAnswered && (
-                            <div className="p-2.5 rounded-lg bg-slate-900/90 border border-cyan-500/30 text-xs text-slate-200 animate-in fade-in-50 space-y-2">
-                              <div className="flex items-start justify-between gap-2">
-                                <div>
-                                  <span className="font-bold text-amber-300">💡 Giải thích: </span>
-                                  <MathFormattedText text={vq.explanation} />
-                                </div>
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    setVideoAnswers((prev) => {
-                                      const next = { ...prev };
-                                      delete next[vq.id];
-                                      return next;
-                                    });
-                                  }}
-                                  className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 shrink-0 transition-all cursor-pointer"
-                                  title="Làm lại câu hỏi này để củng cố kiến thức"
-                                >
-                                  <RefreshCw className="w-3 h-3 text-cyan-400" />
-                                  <span>Làm lại</span>
-                                </button>
-                              </div>
+                                return (
+                                  <button
+                                    key={optIdx}
+                                    onClick={() => {
+                                      if (isVAnswered) return;
+                                      setVideoAnswers((prev) => ({ ...prev, [vq.id]: optIdx }));
+                                      if (optIdx === vq.correctIndex) {
+                                        setSessionScore((s) => s + 50);
+                                        setCoinsEarned((c) => c + 5);
+                                        if (addExpAndCoins) addExpAndCoins(50, 5, 1);
+                                        playSound("correct");
+                                      } else {
+                                        playSound("wrong");
+                                      }
+                                    }}
+                                    disabled={isVAnswered}
+                                    className={`p-2.5 rounded-xl border text-left text-xs font-bold flex items-start gap-2 transition-all min-h-[40px] ${vBtnStyle}`}
+                                  >
+                                    <span className="w-5 h-5 rounded-md bg-white/10 text-amber-300 text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                                      {String.fromCharCode(65 + optIdx)}
+                                    </span>
+                                    <div className="flex-1 min-w-0">
+                                      <MathFormattedText text={vOpt} />
+                                    </div>
+                                    {isVAnswered && isThisCorrect && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />}
+                                    {isVAnswered && isThisSelected && !isThisCorrect && <XCircle className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" />}
+                                  </button>
+                                );
+                              })}
                             </div>
-                          )}
-                        </div>
-                      );
-                    })}
+
+                            {/* Phản hồi giải thích và nút thử lại */}
+                            {isVAnswered && (
+                              <div className="p-2.5 rounded-lg bg-slate-900/90 border border-amber-500/30 text-xs text-slate-200 animate-in fade-in-50 space-y-2">
+                                <div className="flex items-start justify-between gap-2">
+                                  <div>
+                                    <span className="font-bold text-amber-300">💡 Giải thích chi tiết: </span>
+                                    <MathFormattedText text={vq.explanation} />
+                                  </div>
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      // Cho phép làm lại ví dụ này và tự động xáo trộn lại câu hỏi đó
+                                      setVideoAnswers((prev) => {
+                                        const next = { ...prev };
+                                        delete next[vq.id];
+                                        return next;
+                                      });
+                                      setShuffledVideoQuestions((prevList) =>
+                                        prevList.map((item) => (item.id === vq.id ? shuffleVideoCheckpoint(item) : item))
+                                      );
+                                    }}
+                                    className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-amber-300 hover:text-white border border-slate-700 shrink-0 transition-all cursor-pointer"
+                                    title="Làm lại ví dụ này và đảo lại thứ tự đáp án"
+                                  >
+                                    <RefreshCw className="w-3 h-3 text-amber-400" />
+                                    <span>Làm lại</span>
+                                  </button>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              )}
+                );
+              })()}
             </div>
           )}
 

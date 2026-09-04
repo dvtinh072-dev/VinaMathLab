@@ -83,7 +83,7 @@ export async function POST(req: Request) {
           error:
             role === "admin"
               ? "Tên đăng nhập hoặc mật khẩu quản trị viên không chính xác."
-              : "Mã học sinh hoặc mật khẩu không chính xác.",
+              : "Tên đăng nhập hoặc mật khẩu không chính xác.",
         },
         { status: 401 }
       );

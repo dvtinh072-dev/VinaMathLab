@@ -26,7 +26,9 @@ import {
   X,
   Layers,
   School,
-  FileSpreadsheet
+  FileSpreadsheet,
+  Trash2,
+  UserCheck
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -126,6 +128,34 @@ export default function AdminDashboardPage() {
         (p: any) => p.userId === studentId || p.studentCode === studentCode
       ) || null
     );
+  };
+
+  const handleDeleteStudent = async (studentId: string, studentName: string) => {
+    const isConfirmed = window.confirm(
+      `Bạn có chắc chắn muốn xóa học sinh "${studentName}" (ID: ${studentId}) khỏi hệ thống?\n\nToàn bộ tiến độ học tập và dữ liệu liên quan sẽ bị xóa vĩnh viễn.`
+    );
+    if (!isConfirmed) return;
+
+    try {
+      setIsLoading(true);
+      const res = await fetch(`/api/auth/users?id=${encodeURIComponent(studentId)}`, {
+        method: "DELETE",
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setStatusMessage(`Đã xóa thành công học sinh: ${studentName}`);
+        // Cập nhật lại state trực tiếp
+        setStudents((prev) => prev.filter((s) => s.id !== studentId && s.username !== studentId && s.studentCode !== studentId));
+        setTimeout(() => setStatusMessage(null), 3000);
+      } else {
+        alert(data.error || "Không thể xóa học sinh này.");
+      }
+    } catch (e) {
+      console.error("Lỗi xóa học sinh:", e);
+      alert("Đã xảy ra lỗi khi gửi yêu cầu xóa.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const lessonsList = Object.values(GRADE_6_DETAILED_LESSONS).filter((lesson) => {
@@ -364,7 +394,7 @@ export default function AdminDashboardPage() {
                     <th className="py-3.5 px-4 text-center">Bài Hoàn Thành</th>
                     <th className="py-3.5 px-4 text-center">Câu Hỏi Sai</th>
                     <th className="py-3.5 px-4 text-center">Điểm EXP</th>
-                    <th className="py-3.5 px-4 text-right">Chi Tiết</th>
+                    <th className="py-3.5 px-4 text-right">Thao Tác</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800">
@@ -386,12 +416,9 @@ export default function AdminDashboardPage() {
                           <td className="py-3 px-4">
                             <div className="font-bold text-white flex items-center gap-1.5">
                               <span>{student.fullName}</span>
-                              <span className="text-[10px] font-mono font-normal text-cyan-400 bg-cyan-950/40 px-1.5 py-0.5 rounded border border-cyan-500/20">
-                                {student.studentCode}
-                              </span>
                             </div>
-                            <div className="text-[11px] text-slate-400 font-mono">
-                              @{student.username || student.studentCode?.toLowerCase()}
+                            <div className="text-[11px] text-cyan-400 font-mono font-bold">
+                              @{student.username || student.studentCode?.toLowerCase() || student.id}
                             </div>
                           </td>
 
@@ -440,15 +467,26 @@ export default function AdminDashboardPage() {
                             ⭐ {formatNaturalNumber(student.exp || 0)}
                           </td>
 
-                          {/* Nút xem chi tiết */}
+                          {/* Nút thao tác: Xem Sổ Tay & Xóa thành viên */}
                           <td className="py-3 px-4 text-right">
-                            <button
-                              onClick={() => setSelectedStudentDetail({ ...student, progress: prog })}
-                              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-300 hover:text-white border border-slate-700 font-bold text-[11px] transition-all cursor-pointer shadow-sm"
-                            >
-                              <Eye className="w-3 h-3" />
-                              <span>Xem Sổ Tay</span>
-                            </button>
+                            <div className="flex items-center justify-end gap-1.5">
+                              <button
+                                onClick={() => setSelectedStudentDetail({ ...student, progress: prog })}
+                                className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-300 hover:text-white border border-slate-700 font-bold text-[11px] transition-all cursor-pointer shadow-sm"
+                                title="Xem chi tiết tiến độ học sinh"
+                              >
+                                <Eye className="w-3 h-3" />
+                                <span>Sổ Tay</span>
+                              </button>
+                              <button
+                                onClick={() => handleDeleteStudent(student.id, student.fullName)}
+                                className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-600 text-rose-400 hover:text-white border border-rose-500/30 hover:border-rose-600 font-bold text-[11px] transition-all cursor-pointer shadow-sm"
+                                title="Xóa tài khoản thành viên này"
+                              >
+                                <Trash2 className="w-3 h-3" />
+                                <span>Xóa</span>
+                              </button>
+                            </div>
                           </td>
                         </tr>
                       );
@@ -610,11 +648,8 @@ export default function AdminDashboardPage() {
             <div className="flex items-start justify-between gap-4 pb-4 border-b border-slate-800">
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-[10px] font-mono font-bold">
-                    {selectedStudentDetail.studentCode}
-                  </span>
-                  <span className="text-xs text-slate-400 font-mono">
-                    @{selectedStudentDetail.username}
+                  <span className="px-2.5 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-[11px] font-mono font-bold">
+                    @{selectedStudentDetail.username || selectedStudentDetail.studentCode?.toLowerCase() || selectedStudentDetail.id}
                   </span>
                 </div>
                 <h2 className="text-xl font-black text-white flex items-center gap-2">

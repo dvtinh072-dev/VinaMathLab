@@ -91,7 +91,7 @@ export async function POST(req: Request) {
       const { password: _, ...userWithoutPass } = newAdmin;
       return NextResponse.json({ success: true, user: userWithoutPass });
     } else {
-      // Đăng ký tài khoản Học Sinh
+      // Đăng ký tài khoản Học Sinh (Không cần Mã HS, chỉ cần username)
       const { fullName, schoolName, schoolClass, grade, username, studentCode, password } = body;
 
       if (!fullName || !password) {
@@ -101,29 +101,48 @@ export async function POST(req: Request) {
         );
       }
 
-      const cleanUsername = (username || studentCode || "").trim().toLowerCase();
-      const finalCode =
-        studentCode ? studentCode.trim().toUpperCase() : `HS${Math.floor(1000 + Math.random() * 9000)}`;
+      // Tên đăng nhập: nếu không nhập username thì lấy studentCode hoặc tự sinh ngẫu nhiên
+      let rawUsername = (username || studentCode || "").trim().toLowerCase().replace(/\s+/g, "");
+      if (!rawUsername) {
+        rawUsername = `hs${Math.floor(10000 + Math.random() * 90000)}`;
+      }
 
-      if (cleanUsername) {
-        const isUserExisted = users.some(
-          (u: any) =>
-            u.username?.toLowerCase() === cleanUsername ||
-            u.studentCode?.toLowerCase() === cleanUsername
+      const cleanUsername = rawUsername;
+      const internalCode = studentCode ? studentCode.trim().toUpperCase() : cleanUsername.toUpperCase();
+
+      // Kiểm tra trùng username trong usersData.json
+      const isUserExistedInJson = users.some(
+        (u: any) =>
+          u.username?.toLowerCase() === cleanUsername ||
+          (u.studentCode && u.studentCode.toLowerCase() === cleanUsername)
+      );
+
+      // Kiểm tra trùng username trong DB
+      let isUserExistedInDb = false;
+      try {
+        const found = await prisma.user.findFirst({
+          where: {
+            OR: [
+              { username: cleanUsername },
+              { studentCode: internalCode }
+            ]
+          }
+        });
+        if (found) isUserExistedInDb = true;
+      } catch {}
+
+      if (isUserExistedInJson || isUserExistedInDb) {
+        return NextResponse.json(
+          { error: `Tên đăng nhập "${cleanUsername}" đã được sử dụng. Vui lòng chọn tên khác.` },
+          { status: 409 }
         );
-        if (isUserExisted) {
-          return NextResponse.json(
-            { error: `Tên đăng nhập "${cleanUsername}" đã được sử dụng. Vui lòng chọn tên khác.` },
-            { status: 409 }
-          );
-        }
       }
 
       const newStudent = {
         id: `u-student-${Date.now()}`,
         role: "student",
-        username: cleanUsername || finalCode.toLowerCase(),
-        studentCode: finalCode,
+        username: cleanUsername,
+        studentCode: internalCode,
         password,
         fullName: fullName.trim(),
         schoolName: (schoolName || "THCS VinaMath").trim(),
@@ -135,7 +154,7 @@ export async function POST(req: Request) {
         createdAt: new Date().toISOString(),
       };
 
-      // 1. Lưu vào file JSON fallback
+      // 1. Lưu vào file JSON
       users.push(newStudent);
       saveUsers(users);
 

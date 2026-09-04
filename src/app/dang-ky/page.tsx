@@ -115,7 +115,7 @@ export default function DangKyPage() {
             </h2>
             <p className="text-xs text-slate-400">
               {activeRole === "student"
-                ? "Tự tạo Mã học sinh hoặc để hệ thống sinh mã tự động"
+                ? "Sử dụng Tên đăng nhập để lưu trữ tiến độ học tập và thành tích cá nhân"
                 : "Yêu cầu Mã bảo mật hệ thống để kích hoạt quyền Admin"}
             </p>
           </div>

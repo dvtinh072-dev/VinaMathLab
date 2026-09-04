@@ -157,8 +157,8 @@ export function AuthModal() {
             </h3>
             <p className="text-xs text-slate-400">
               {activeRole === "student"
-                ? "Sử dụng Mã học sinh để lưu trữ điểm số EXP và thành tích"
-                : "Dành cho Giáo viên & Quản trị viên chỉnh sửa nội dung bài học"}
+                ? "Sử dụng Tên đăng nhập để lưu trữ tiến độ học tập và thành tích"
+                : "Dành cho Giáo viên & Quản trị viên quản trị hệ thống bài học"}
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export function AuthModal() {
               <div className="font-bold text-amber-400">💡 Tài khoản thử nghiệm nhanh:</div>
               {activeRole === "student" ? (
                 <div>
-                  Mã: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">HS6001</code> | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">123456</code>
+                  Học sinh: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">annguyen6a</code> | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">123456</code>
                 </div>
               ) : (
                 <div>
@@ -197,21 +197,19 @@ export function AuthModal() {
           {activeRole === "student" && (
             <>
               {isRegister && (
-                <div>
-                  <label className="block text-xs font-bold text-slate-300 mb-1">Họ và Tên</label>
-                  <input
-                    type="text"
-                    required
-                    value={studentFullName}
-                    onChange={(e) => setStudentFullName(e.target.value)}
-                    placeholder="Ví dụ: Nguyễn Văn An"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
-                  />
-                </div>
-              )}
-
-              {isRegister && (
                 <>
+                  <div>
+                    <label className="block text-xs font-bold text-slate-300 mb-1">Họ và Tên Học Sinh</label>
+                    <input
+                      type="text"
+                      required
+                      value={studentFullName}
+                      onChange={(e) => setStudentFullName(e.target.value)}
+                      placeholder="Ví dụ: Nguyễn Văn An"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                    />
+                  </div>
+
                   <div>
                     <label className="block text-xs font-bold text-slate-300 mb-1">Trường Học</label>
                     <input
@@ -224,25 +222,40 @@ export function AuthModal() {
                     />
                   </div>
 
-                  <div>
-                    <label className="block text-xs font-bold text-slate-300 mb-1">
-                      Tên Đăng Nhập (Username - viết liền không dấu)
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={studentUsername}
-                      onChange={(e) => setStudentUsername(e.target.value.toLowerCase().replace(/\s+/g, ""))}
-                      placeholder="Ví dụ: annguyen6a"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400 font-mono"
-                    />
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-[11px] font-bold text-slate-300 mb-1">Khối Lớp</label>
+                      <select
+                        value={studentGrade}
+                        onChange={(e) => setStudentGrade(e.target.value)}
+                        className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                      >
+                        <option value="Khối 6">Khối 6</option>
+                        <option value="Khối 7">Khối 7</option>
+                        <option value="Khối 8">Khối 8</option>
+                        <option value="Khối 9">Khối 9</option>
+                        <option value="Khối 10">Khối 10</option>
+                        <option value="Khối 11">Khối 11</option>
+                        <option value="Khối 12">Khối 12</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold text-slate-300 mb-1">Tên Lớp</label>
+                      <input
+                        type="text"
+                        value={studentClass}
+                        onChange={(e) => setStudentClass(e.target.value)}
+                        placeholder="Ví dụ: Lớp 6A"
+                        className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                      />
+                    </div>
                   </div>
                 </>
               )}
 
               <div>
                 <label className="block text-xs font-bold text-slate-300 mb-1">
-                  {isRegister ? "Mã Học Sinh (Tùy chọn, để trống sẽ tự sinh mã)" : "Tên Đăng Nhập hoặc Mã Học Sinh"}
+                  Tên Đăng Nhập {isRegister ? "(viết liền không dấu)" : ""}
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
@@ -251,44 +264,20 @@ export function AuthModal() {
                   <input
                     type="text"
                     required
-                    value={studentCode}
-                    onChange={(e) => setStudentCode(e.target.value)}
-                    placeholder={isRegister ? "Ví dụ: HS6001 (không bắt buộc)" : "Nhập username hoặc mã HS (vd: annguyen6a, HS6001)"}
-                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                    value={isRegister ? studentUsername : studentCode}
+                    onChange={(e) => {
+                      const val = e.target.value.toLowerCase().replace(/\s+/g, "");
+                      if (isRegister) {
+                        setStudentUsername(val);
+                      } else {
+                        setStudentCode(val);
+                      }
+                    }}
+                    placeholder={isRegister ? "Ví dụ: annguyen6a" : "Nhập tên đăng nhập (ví dụ: annguyen6a)"}
+                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400 font-mono"
                   />
                 </div>
               </div>
-
-              {isRegister && (
-                <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <label className="block text-[11px] font-bold text-slate-300 mb-1">Khối Lớp</label>
-                    <select
-                      value={studentGrade}
-                      onChange={(e) => setStudentGrade(e.target.value)}
-                      className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
-                    >
-                      <option value="Khối 6">Khối 6</option>
-                      <option value="Khối 7">Khối 7</option>
-                      <option value="Khối 8">Khối 8</option>
-                      <option value="Khối 9">Khối 9</option>
-                      <option value="Khối 10">Khối 10</option>
-                      <option value="Khối 11">Khối 11</option>
-                      <option value="Khối 12">Khối 12</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-bold text-slate-300 mb-1">Tên Lớp</label>
-                    <input
-                      type="text"
-                      value={studentClass}
-                      onChange={(e) => setStudentClass(e.target.value)}
-                      placeholder="Lớp 6A"
-                      className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
-                    />
-                  </div>
-                </div>
-              )}
 
               <div>
                 <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu</label>

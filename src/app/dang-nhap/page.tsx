@@ -129,7 +129,7 @@ export default function DangNhapPage() {
             <>
               <div>
                 <label className="block text-xs font-bold text-slate-300 mb-1">
-                  Tên Đăng Nhập hoặc Mã Học Sinh <span className="text-rose-400">*</span>
+                  Tên Đăng Nhập <span className="text-rose-400">*</span>
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
@@ -140,8 +140,8 @@ export default function DangNhapPage() {
                     required
                     value={studentCode}
                     onChange={(e) => setStudentCode(e.target.value)}
-                    placeholder="Ví dụ: annguyen6a hoặc HS6001"
-                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-cyan-400"
+                    placeholder="Ví dụ: annguyen6a"
+                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-cyan-400 font-mono"
                   />
                 </div>
               </div>

@@ -14,9 +14,10 @@ export default function DangKyPage() {
 
   // Student form
   const [studentFullName, setStudentFullName] = useState("");
-  const [studentCode, setStudentCode] = useState("");
+  const [studentSchool, setStudentSchool] = useState("");
   const [studentGrade, setStudentGrade] = useState("Khối 6");
   const [studentClass, setStudentClass] = useState("Lớp 6A");
+  const [studentUsername, setStudentUsername] = useState("");
   const [studentPassword, setStudentPassword] = useState("");
 
   // Admin form
@@ -39,14 +40,15 @@ export default function DangKyPage() {
     if (activeRole === "student") {
       const res = await registerStudent({
         fullName: studentFullName,
-        studentCode: studentCode,
+        schoolName: studentSchool,
+        username: studentUsername,
         password: studentPassword,
         grade: studentGrade,
         schoolClass: studentClass,
       });
       if (res.success) {
         setSuccessMsg("Đăng ký tài khoản học sinh thành công! Đang chuyển hướng...");
-        setTimeout(() => router.push("/hoc-tap/lop-6/t6-b1-tap-hop"), 1200);
+        setTimeout(() => router.push("/tai-khoan"), 1200);
       } else {
         setErrorMsg(res.error || "Đăng ký thất bại.");
       }
@@ -136,7 +138,7 @@ export default function DangKyPage() {
           {activeRole === "student" ? (
             <>
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Họ và Tên Học Sinh</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Họ và Tên Học Sinh <span className="text-rose-400">*</span></label>
                 <input
                   type="text"
                   required
@@ -148,21 +150,15 @@ export default function DangKyPage() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">
-                  Mã Học Sinh Mong Muốn (Để trống sẽ tự sinh mã ngẫu nhiên)
-                </label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                    <User className="w-4 h-4" />
-                  </div>
-                  <input
-                    type="text"
-                    value={studentCode}
-                    onChange={(e) => setStudentCode(e.target.value.toUpperCase())}
-                    placeholder="Ví dụ: HS2026 hoặc HS6005"
-                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold uppercase focus:outline-none focus:border-cyan-400"
-                  />
-                </div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Trường Học <span className="text-rose-400">*</span></label>
+                <input
+                  type="text"
+                  required
+                  value={studentSchool}
+                  onChange={(e) => setStudentSchool(e.target.value)}
+                  placeholder="Ví dụ: THCS Giảng Võ, THCS Trưng Vương..."
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
@@ -171,7 +167,7 @@ export default function DangKyPage() {
                   <select
                     value={studentGrade}
                     onChange={(e) => setStudentGrade(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                    className="w-full px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
                   >
                     <option value="Khối 6">Khối 6</option>
                     <option value="Khối 7">Khối 7</option>
@@ -183,19 +179,39 @@ export default function DangKyPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-[11px] font-bold text-slate-300 mb-1">Tên Lớp</label>
+                  <label className="block text-[11px] font-bold text-slate-300 mb-1">Tên Lớp <span className="text-rose-400">*</span></label>
                   <input
                     type="text"
+                    required
                     value={studentClass}
                     onChange={(e) => setStudentClass(e.target.value)}
-                    placeholder="Lớp 6A"
-                    className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
+                    placeholder="Ví dụ: 6A1, 10A2..."
+                    className="w-full px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Tên Đăng Nhập <span className="text-rose-400">*</span>
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <input
+                    type="text"
+                    required
+                    value={studentUsername}
+                    onChange={(e) => setStudentUsername(e.target.value.toLowerCase().replace(/\s+/g, ""))}
+                    placeholder="Ví dụ: annguyen6a (viết liền, không dấu)"
+                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-cyan-400"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu <span className="text-rose-400">*</span></label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                     <Lock className="w-4 h-4" />
@@ -205,7 +221,7 @@ export default function DangKyPage() {
                     required
                     value={studentPassword}
                     onChange={(e) => setStudentPassword(e.target.value)}
-                    placeholder="Tạo mật khẩu đăng nhập..."
+                    placeholder="Tối thiểu 6 ký tự..."
                     className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-cyan-400"
                   />
                 </div>

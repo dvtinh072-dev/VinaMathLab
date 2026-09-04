@@ -19,7 +19,8 @@ function getFallbackUsers() {
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { role, studentCode, username, password } = body;
+    const { role, studentCode, username, identifier, password } = body;
+    const loginKey = (identifier || username || studentCode || "").trim();
 
     let user: any = null;
 
@@ -31,18 +32,22 @@ export async function POST(req: Request) {
             role: "admin",
             password: password,
             OR: [
-              { username: username },
-              { email: username },
+              { username: loginKey },
+              { email: loginKey },
             ],
           },
         });
       } else {
-        const codeClean = (studentCode || "").trim().toUpperCase();
         user = await prisma.user.findFirst({
           where: {
             role: "student",
-            studentCode: codeClean,
             password: password,
+            OR: [
+              { username: loginKey.toLowerCase() },
+              { studentCode: loginKey.toUpperCase() },
+              { studentCode: loginKey },
+              { id: loginKey },
+            ],
           },
         });
       }
@@ -57,15 +62,16 @@ export async function POST(req: Request) {
         user = fallbackUsers.find(
           (u: any) =>
             u.role === "admin" &&
-            (u.username === username || u.email === username) &&
+            (u.username?.toLowerCase() === loginKey.toLowerCase() || u.email?.toLowerCase() === loginKey.toLowerCase()) &&
             u.password === password
         );
       } else {
-        const codeClean = (studentCode || "").trim().toUpperCase();
         user = fallbackUsers.find(
           (u: any) =>
             u.role === "student" &&
-            u.studentCode?.toUpperCase() === codeClean &&
+            (u.username?.toLowerCase() === loginKey.toLowerCase() ||
+             u.studentCode?.toUpperCase() === loginKey.toUpperCase() ||
+             u.id === loginKey) &&
             u.password === password
         );
       }

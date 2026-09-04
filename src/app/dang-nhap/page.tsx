@@ -30,9 +30,9 @@ export default function DangNhapPage() {
       const res = await loginStudent(studentCode, studentPassword);
       if (res.success) {
         setSuccessMsg("Đăng nhập học sinh thành công! Đang chuyển hướng...");
-        setTimeout(() => router.push("/hoc-tap/lop-6/t6-b1-tap-hop"), 1000);
+        setTimeout(() => router.push("/tai-khoan"), 1000);
       } else {
-        setErrorMsg(res.error || "Mã học sinh hoặc mật khẩu không chính xác.");
+        setErrorMsg(res.error || "Tên đăng nhập hoặc mật khẩu không chính xác.");
       }
     } else {
       const res = await loginAdmin(adminUsername, adminPassword);
@@ -91,17 +91,17 @@ export default function DangNhapPage() {
             </h2>
             <p className="text-xs text-slate-400">
               {activeRole === "student"
-                ? "Nhập Mã học sinh và mật khẩu để đồng bộ điểm số"
-                : "Đăng nhập để kích hoạt quyền chỉnh sửa dữ liệu bài học"}
+                ? "Nhập Tên đăng nhập hoặc Mã học sinh để vào học tập"
+                : "Đăng nhập để xem báo cáo học sinh và quản trị hệ thống"}
             </p>
           </div>
 
           {/* Quick Demo Pre-seed Badge */}
           <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 space-y-1">
-            <div className="font-bold text-amber-400">💡 Tài khoản mẫu kiểm thử:</div>
+            <div className="font-bold text-amber-400">💡 Tài khoản kiểm thử:</div>
             {activeRole === "student" ? (
               <div>
-                Mã: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">HS6001</code> | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">123456</code>
+                Tên đăng nhập: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">annguyen6a</code> (hoặc <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">HS6001</code>) | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">123456</code>
               </div>
             ) : (
               <div>
@@ -128,7 +128,9 @@ export default function DangNhapPage() {
           {activeRole === "student" ? (
             <>
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Mã Học Sinh</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Tên Đăng Nhập hoặc Mã Học Sinh <span className="text-rose-400">*</span>
+                </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                     <User className="w-4 h-4" />
@@ -137,15 +139,15 @@ export default function DangNhapPage() {
                     type="text"
                     required
                     value={studentCode}
-                    onChange={(e) => setStudentCode(e.target.value.toUpperCase())}
-                    placeholder="Ví dụ: HS6001"
-                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold uppercase focus:outline-none focus:border-cyan-400"
+                    onChange={(e) => setStudentCode(e.target.value)}
+                    placeholder="Ví dụ: annguyen6a hoặc HS6001"
+                    className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-cyan-400"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu <span className="text-rose-400">*</span></label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                     <Lock className="w-4 h-4" />

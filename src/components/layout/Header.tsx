@@ -88,19 +88,23 @@ export function Header() {
             </div>
           ) : isStudent ? (
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <div className="flex items-center gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-blue-50 dark:bg-slate-900 border border-blue-200 dark:border-cyan-500/30 text-xs">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-[10px] shrink-0">
+              <Link
+                href="/tai-khoan"
+                className="flex items-center gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-blue-50 dark:bg-slate-900 border border-blue-200 dark:border-cyan-500/30 text-xs hover:border-cyan-500 transition-all cursor-pointer shadow-sm group"
+                title="Xem Hồ sơ & Sổ tay tiến độ cá nhân"
+              >
+                <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-[10px] shrink-0 group-hover:scale-105 transition-transform">
                   <GraduationCap className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                 </div>
                 <div className="text-left leading-tight">
-                  <div className="font-black text-slate-800 dark:text-slate-200 text-[10px] sm:text-[11px] truncate max-w-[80px] sm:max-w-[120px]">
+                  <div className="font-black text-slate-800 dark:text-slate-200 text-[10px] sm:text-[11px] truncate max-w-[80px] sm:max-w-[120px] group-hover:text-primary transition-colors">
                     {user?.fullName}
                   </div>
                   <div className="text-[9px] sm:text-[10px] text-cyan-600 dark:text-cyan-400 font-bold flex items-center gap-1">
                     <span>⭐ {formatNaturalNumber(user?.exp || 0)}</span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               <button
                 onClick={logout}

@@ -1154,6 +1154,106 @@ export function GamifiedMathQuiz({
   const [isSavingChanges, setIsSavingChanges] = useState(false);
   const [adminSaveStatus, setAdminSaveStatus] = useState<string | null>(null);
 
+  // =========================================================================
+  // THEO DÕI THỜI GIAN XEM VIDEO & ĐỒNG BỘ TIẾN ĐỘ HỌC SINH
+  // =========================================================================
+  useEffect(() => {
+    if (!youtubeVideoId || quizMode !== "theory") return;
+
+    // Khi học sinh đang mở tab Video bài giảng, tích lũy thời gian mỗi 5 giây
+    const interval = setInterval(() => {
+      // Chỉ gửi đồng bộ lên server mỗi 30 giây để tối ưu mạng
+      if (user?.id) {
+        fetch("/api/student/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId: user.id,
+            addVideoSeconds: 5,
+            lessonId,
+            gradeKey,
+            lessonTitle,
+          }),
+        }).catch(() => {});
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [youtubeVideoId, quizMode, user?.id, lessonId, gradeKey, lessonTitle]);
+
+  // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
+  const recordMistake = async (
+    qId: string | number,
+    badgeText: string | undefined,
+    questionText: string,
+    selectedOptionText: string,
+    correctOptionText: string,
+    explanationText: string
+  ) => {
+    if (!user?.id) return;
+    try {
+      await fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user.id,
+          lessonId,
+          gradeKey,
+          lessonTitle,
+          wrongQuestion: {
+            questionId: String(qId),
+            badge: badgeText || "Bài tập",
+            questionText,
+            selectedOption: selectedOptionText,
+            correctOption: correctOptionText,
+            explanation: explanationText,
+          },
+        }),
+      });
+    } catch (e) {
+      console.error("Lỗi ghi nhận câu sai:", e);
+    }
+  };
+
+  // Đánh dấu đã làm đúng lại câu hỏi đã sai
+  const recordCorrectedMistake = async (qId: string | number) => {
+    if (!user?.id) return;
+    try {
+      await fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user.id,
+          resolveQuestionId: String(qId),
+        }),
+      });
+    } catch (e) {
+      console.error("Lỗi giải quyết câu sai:", e);
+    }
+  };
+
+  // Đồng bộ hoàn thành bài học
+  const syncLessonCompletion = async (score: number) => {
+    if (!user?.id) return;
+    try {
+      await fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user.id,
+          lessonId,
+          gradeKey,
+          lessonTitle,
+          isCompleted: true,
+          score,
+          totalQuestions: activeQuizList.length,
+        }),
+      });
+    } catch (e) {
+      console.error("Lỗi đồng bộ hoàn thành bài:", e);
+    }
+  };
+
   const handleOpenEdit = (q: QuizQuestion, index: number) => {
     setEditingQuestion(q);
     setEditingIndex(index);
@@ -1371,7 +1471,8 @@ export function GamifiedMathQuiz({
   const handleSelect = (idx: number) => {
     if (userAnswers[currentIndex] !== undefined || isCompleted || !activeQuizList[currentIndex]) return;
 
-    const isCorrect = idx === activeQuizList[currentIndex].correctIndex;
+    const currentQ = activeQuizList[currentIndex];
+    const isCorrect = idx === currentQ.correctIndex;
     setUserAnswers((prev) => ({ ...prev, [currentIndex]: { selectedOption: idx, isCorrect } }));
 
     if (isCorrect) {
@@ -1382,6 +1483,9 @@ export function GamifiedMathQuiz({
       setSessionScore((prev) => prev + earned);
       setCoinsEarned((prev) => prev + 10);
       setStreak((prev) => prev + 1);
+
+      // Nếu câu này trước đó học sinh từng sai, ghi nhận đã giải quyết xong
+      recordCorrectedMistake(currentQ.id);
 
       // Cập nhật điểm vào hồ sơ học sinh nếu đã đăng nhập
       if (addExpAndCoins) {
@@ -1406,6 +1510,16 @@ export function GamifiedMathQuiz({
       playSound("wrong");
       setStreak(0);
       setLives((prev) => Math.max(0, prev - 1));
+
+      // Tự động lưu câu làm sai vào Sổ tay câu sai học sinh & Admin Portal
+      recordMistake(
+        currentQ.id,
+        currentQ.badge,
+        currentQ.question,
+        currentQ.options[idx] || "Không xác định",
+        currentQ.options[currentQ.correctIndex] || "Không xác định",
+        currentQ.explanation
+      );
     }
   };
 
@@ -1421,6 +1535,9 @@ export function GamifiedMathQuiz({
     } else {
       setIsCompleted(true);
       playSound("victory");
+
+      // Đồng bộ hoàn thành bài lên máy chủ
+      syncLessonCompletion(sessionScore);
 
       if (sessionScore > lessonHighScore) {
         setLessonHighScore(sessionScore);
@@ -2115,8 +2232,17 @@ export function GamifiedMathQuiz({
                                         setCoinsEarned((c) => c + 5);
                                         if (addExpAndCoins) addExpAndCoins(50, 5, 1);
                                         playSound("correct");
+                                        recordCorrectedMistake(vq.id);
                                       } else {
                                         playSound("wrong");
+                                        recordMistake(
+                                          vq.id,
+                                          vq.title || "Ví dụ video",
+                                          vq.question,
+                                          vq.options[optIdx] || "Không xác định",
+                                          vq.options[vq.correctIndex] || "Không xác định",
+                                          vq.explanation
+                                        );
                                       }
                                     }}
                                     disabled={isVAnswered}

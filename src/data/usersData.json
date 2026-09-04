@@ -11,9 +11,11 @@
   {
     "id": "u-student-1",
     "role": "student",
+    "username": "annguyen6a",
     "studentCode": "HS6001",
     "password": "123456",
     "fullName": "Nguyễn Văn An",
+    "schoolName": "THCS Giảng Võ",
     "grade": "Khối 6",
     "schoolClass": "Lớp 6A",
     "exp": 1250,
@@ -24,9 +26,11 @@
   {
     "id": "u-student-2",
     "role": "student",
+    "username": "maitran6b",
     "studentCode": "HS6002",
     "password": "123456",
     "fullName": "Trần Thị Mai",
+    "schoolName": "THCS Cầu Giấy",
     "grade": "Khối 6",
     "schoolClass": "Lớp 6B",
     "exp": 980,
@@ -37,14 +41,16 @@
   {
     "id": "u-student-1788089446022",
     "role": "student",
+    "username": "longle6c",
     "studentCode": "HS6099",
     "password": "password123",
     "fullName": "Lê Hoàng Long",
+    "schoolName": "THCS Nguyễn Du",
     "grade": "Khối 6",
     "schoolClass": "Lớp 6C",
-    "exp": 0,
+    "exp": 450,
     "coins": 50,
-    "streak": 1,
+    "streak": 2,
     "createdAt": "2026-08-30T11:30:46.022Z"
   }
 ]

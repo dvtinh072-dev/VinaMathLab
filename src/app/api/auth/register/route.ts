@@ -92,7 +92,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: true, user: userWithoutPass });
     } else {
       // Đăng ký tài khoản Học Sinh
-      const { studentCode, grade, schoolClass } = body;
+      const { fullName, schoolName, schoolClass, grade, username, studentCode, password } = body;
 
       if (!fullName || !password) {
         return NextResponse.json(
@@ -101,28 +101,34 @@ export async function POST(req: Request) {
         );
       }
 
+      const cleanUsername = (username || studentCode || "").trim().toLowerCase();
       const finalCode =
         studentCode ? studentCode.trim().toUpperCase() : `HS${Math.floor(1000 + Math.random() * 9000)}`;
 
-      const isExisted = users.some(
-        (u: any) => u.role === "student" && u.studentCode?.toUpperCase() === finalCode
-      );
-
-      if (isExisted) {
-        return NextResponse.json(
-          { error: `Mã học sinh "${finalCode}" đã được sử dụng. Vui lòng chọn mã khác.` },
-          { status: 409 }
+      if (cleanUsername) {
+        const isUserExisted = users.some(
+          (u: any) =>
+            u.username?.toLowerCase() === cleanUsername ||
+            u.studentCode?.toLowerCase() === cleanUsername
         );
+        if (isUserExisted) {
+          return NextResponse.json(
+            { error: `Tên đăng nhập "${cleanUsername}" đã được sử dụng. Vui lòng chọn tên khác.` },
+            { status: 409 }
+          );
+        }
       }
 
       const newStudent = {
         id: `u-student-${Date.now()}`,
         role: "student",
+        username: cleanUsername || finalCode.toLowerCase(),
         studentCode: finalCode,
         password,
-        fullName,
+        fullName: fullName.trim(),
+        schoolName: (schoolName || "THCS VinaMath").trim(),
         grade: grade || "Khối 6",
-        schoolClass: schoolClass || "Lớp 6A",
+        schoolClass: (schoolClass || "Lớp 6A").trim(),
         exp: 0,
         coins: 50,
         streak: 1,
@@ -139,6 +145,7 @@ export async function POST(req: Request) {
           data: {
             id: newStudent.id,
             role: "student",
+            username: newStudent.username,
             studentCode: newStudent.studentCode,
             password: newStudent.password,
             fullName: newStudent.fullName,

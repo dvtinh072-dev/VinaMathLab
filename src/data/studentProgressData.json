@@ -1,0 +1,107 @@
+{
+  "u-student-1": {
+    "userId": "u-student-1",
+    "studentCode": "HS6001",
+    "username": "annguyen6a",
+    "fullName": "Nguyễn Văn An",
+    "schoolName": "THCS Giảng Võ",
+    "schoolClass": "Lớp 6A",
+    "totalVideoMinutes": 24,
+    "totalCompletedLessons": 2,
+    "lessons": {
+      "t6-b1-tap-hop": {
+        "lessonId": "t6-b1-tap-hop",
+        "gradeKey": "lop-6",
+        "lessonTitle": "Bài 1: Tập hợp",
+        "videoWatchedSeconds": 750,
+        "isCompleted": true,
+        "score": 90,
+        "totalQuestions": 10,
+        "lastStudiedAt": "2026-09-03T10:15:00.000Z"
+      },
+      "t6-b2-cach-ghi-so-tu-nhien": {
+        "lessonId": "t6-b2-cach-ghi-so-tu-nhien",
+        "gradeKey": "lop-6",
+        "lessonTitle": "Bài 2: Cách ghi số tự nhiên",
+        "videoWatchedSeconds": 690,
+        "isCompleted": true,
+        "score": 80,
+        "totalQuestions": 10,
+        "lastStudiedAt": "2026-09-04T07:20:00.000Z"
+      }
+    },
+    "wrongQuestions": {
+      "quiz-1.3": {
+        "id": "wq-u-student-1-quiz-1.3",
+        "questionId": "quiz-1.3",
+        "badge": "Bài 1.3 - SGK",
+        "questionText": "Cho tập hợp B = {x ∈ ℕ* | x ≤ 5}. Viết tập hợp B bằng cách liệt kê phần tử:",
+        "lessonId": "t6-b1-tap-hop",
+        "lessonTitle": "Bài 1: Tập hợp",
+        "gradeKey": "lop-6",
+        "wrongCount": 2,
+        "lastSelectedOption": "B = {0; 1; 2; 3; 4; 5}",
+        "correctOption": "B = {1; 2; 3; 4; 5}",
+        "explanation": "Vì x ∈ ℕ* nên x > 0 (không lấy số 0). Kết hợp x ≤ 5 thì B = {1; 2; 3; 4; 5}.",
+        "isResolved": true,
+        "lastWrongAt": "2026-09-03T10:18:20.000Z"
+      },
+      "quiz-2.3": {
+        "id": "wq-u-student-1-quiz-2.3",
+        "questionId": "quiz-2.3",
+        "badge": "Bài 2.3 - SGK",
+        "questionText": "Cho số tự nhiên 5432. Số chục và chữ số hàng chục của số này lần lượt là:",
+        "lessonId": "t6-b2-cach-ghi-so-tu-nhien",
+        "lessonTitle": "Bài 2: Cách ghi số tự nhiên",
+        "gradeKey": "lop-6",
+        "wrongCount": 3,
+        "lastSelectedOption": "Số chục là 32, chữ số hàng chục là 3",
+        "correctOption": "Số chục là 543, chữ số hàng chục là 3",
+        "explanation": "Số chục là toàn bộ phần số tính từ hàng chục trở về trước: 5432 = 543 × 10 + 2 nên số chục là 543.",
+        "isResolved": false,
+        "lastWrongAt": "2026-09-04T07:22:15.000Z"
+      }
+    },
+    "updatedAt": "2026-09-04T07:22:15.000Z"
+  },
+  "u-student-2": {
+    "userId": "u-student-2",
+    "studentCode": "HS6002",
+    "username": "maitran6b",
+    "fullName": "Trần Thị Mai",
+    "schoolName": "THCS Cầu Giấy",
+    "schoolClass": "Lớp 6B",
+    "totalVideoMinutes": 18,
+    "totalCompletedLessons": 1,
+    "lessons": {
+      "t6-b1-tap-hop": {
+        "lessonId": "t6-b1-tap-hop",
+        "gradeKey": "lop-6",
+        "lessonTitle": "Bài 1: Tập hợp",
+        "videoWatchedSeconds": 1080,
+        "isCompleted": true,
+        "score": 100,
+        "totalQuestions": 10,
+        "lastStudiedAt": "2026-09-02T16:30:00.000Z"
+      }
+    },
+    "wrongQuestions": {
+      "quiz-1.4": {
+        "id": "wq-u-student-2-quiz-1.4",
+        "questionId": "quiz-1.4",
+        "badge": "Bài 1.4 - SGK",
+        "questionText": "Biểu diễn tập hợp P các chữ số trong số 2021 bằng cách liệt kê phần tử:",
+        "lessonId": "t6-b1-tap-hop",
+        "lessonTitle": "Bài 1: Tập hợp",
+        "gradeKey": "lop-6",
+        "wrongCount": 1,
+        "lastSelectedOption": "P = {2; 0; 2; 1}",
+        "correctOption": "P = {0; 1; 2}",
+        "explanation": "Mỗi phần tử chỉ được viết một lần trong dấu ngoặc nhọn.",
+        "isResolved": true,
+        "lastWrongAt": "2026-09-02T16:32:00.000Z"
+      }
+    },
+    "updatedAt": "2026-09-02T16:32:00.000Z"
+  }
+}

@@ -6,6 +6,7 @@ export interface UserProfile {
   id: string;
   role: "student" | "admin";
   fullName: string;
+  schoolName?: string;
   studentCode?: string;
   username?: string;
   email?: string;
@@ -23,10 +24,12 @@ interface AuthContextType {
   isAdmin: boolean;
   isStudent: boolean;
   isLoading: boolean;
-  loginStudent: (studentCode: string, pass: string) => Promise<{ success: boolean; error?: string }>;
+  loginStudent: (identifier: string, pass: string) => Promise<{ success: boolean; error?: string }>;
   loginAdmin: (username: string, pass: string) => Promise<{ success: boolean; error?: string }>;
   registerStudent: (data: {
     fullName: string;
+    schoolName?: string;
+    username?: string;
     studentCode?: string;
     password: string;
     grade?: string;
@@ -86,12 +89,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const loginStudent = async (studentCode: string, pass: string) => {
+  const loginStudent = async (identifier: string, pass: string) => {
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ role: "student", studentCode, password: pass }),
+        body: JSON.stringify({ role: "student", identifier, studentCode: identifier, username: identifier, password: pass }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -124,6 +127,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const registerStudent = async (studentData: {
     fullName: string;
+    schoolName?: string;
+    username?: string;
     studentCode?: string;
     password: string;
     grade?: string;

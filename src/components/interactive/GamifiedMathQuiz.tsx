@@ -39,6 +39,7 @@ import {
   PlayCircle,
   Eye,
   EyeOff,
+  ExternalLink,
 } from "lucide-react";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { GRADE_7_AI_PRACTICE_DATA } from "@/data/grade7AiPracticeData";
@@ -1931,11 +1932,26 @@ export function GamifiedMathQuiz({
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 shadow-inner">
                 <iframe
                   className="w-full h-full"
-                  src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?rel=0&modestbranding=1`}
+                  src={`https://www.youtube.com/embed/${youtubeVideoId}?rel=0`}
                   title={youtubeVideoTitle || lessonTitle}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
+              </div>
+
+              {/* Thanh trợ giúp xem video khi mạng chặn nhúng */}
+              <div className="flex items-center justify-between px-1 text-[11px] text-slate-400">
+                <span>Không phát được video trên khung nhúng?</span>
+                <a
+                  href={`https://www.youtube.com/watch?v=${youtubeVideoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-rose-400 hover:text-rose-300 font-bold hover:underline"
+                >
+                  <span>Mở xem trên YouTube</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
 
               {/* 2. CÁC CÂU HỎI TƯƠNG TÁC NGAY KHI XEM VIDEO (VIDEO CHECKPOINTS) */}

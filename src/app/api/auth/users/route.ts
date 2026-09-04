@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { getDeletedIdentifiers, addDeletedIdentifiers } from "@/lib/deletedUsers";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -17,6 +18,7 @@ function getFallbackUsers() {
 
 export async function GET() {
   try {
+    const deletedSet = getDeletedIdentifiers();
     const fallbackUsers = getFallbackUsers();
     let dbUsers: any[] = [];
 
@@ -46,18 +48,42 @@ export async function GET() {
     // 2. Gộp danh sách người dùng từ cả DB và usersData.json để không bị mất bất kỳ tài khoản nào
     const userMap = new Map<string, any>();
 
-    // Đưa users từ file JSON vào trước
+    // Đưa users từ file JSON vào trước (loại trừ tài khoản đã bị xóa)
     fallbackUsers.forEach((u: any) => {
+      const idKey = u.id?.toLowerCase();
+      const usernameKey = u.username?.toLowerCase();
+      const codeKey = u.studentCode?.toLowerCase();
+
+      if (
+        (idKey && deletedSet.has(idKey)) ||
+        (usernameKey && deletedSet.has(usernameKey)) ||
+        (codeKey && deletedSet.has(codeKey))
+      ) {
+        return; // Bỏ qua tài khoản đã xóa
+      }
+
       const { password, ...safeUser } = u;
-      const key = u.id || u.username?.toLowerCase() || u.studentCode;
+      const key = u.id || usernameKey || u.studentCode;
       if (key) {
         userMap.set(key, safeUser);
       }
     });
 
-    // Đưa users từ DB vào (ghi đè hoặc bổ sung)
+    // Đưa users từ DB vào (ghi đè hoặc bổ sung, loại trừ tài khoản đã bị xóa)
     dbUsers.forEach((u: any) => {
-      const key = u.id || u.username?.toLowerCase() || u.studentCode;
+      const idKey = u.id?.toLowerCase();
+      const usernameKey = u.username?.toLowerCase();
+      const codeKey = u.studentCode?.toLowerCase();
+
+      if (
+        (idKey && deletedSet.has(idKey)) ||
+        (usernameKey && deletedSet.has(usernameKey)) ||
+        (codeKey && deletedSet.has(codeKey))
+      ) {
+        return; // Bỏ qua tài khoản đã xóa
+      }
+
+      const key = u.id || usernameKey || u.studentCode;
       if (key) {
         const existing = userMap.get(key);
         userMap.set(key, { ...existing, ...u });
@@ -89,14 +115,62 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ error: "Thiếu ID người dùng cần xóa." }, { status: 400 });
     }
 
-    // 1. Xóa khỏi Prisma DB nếu tồn tại
+    const cleanUserId = userId.trim();
+
+    // 0. Tìm thông tin chi tiết user (để thu thập mọi identifiers: id, username, studentCode, email)
+    const identifiersToDelete = new Set<string>([cleanUserId]);
+
+    // Tìm trong file usersData.json
+    try {
+      if (fs.existsSync(usersFilePath)) {
+        const fileContent = fs.readFileSync(usersFilePath, "utf-8");
+        const list = JSON.parse(fileContent);
+        const match = list.find(
+          (u: any) =>
+            u.id === cleanUserId ||
+            u.username?.toLowerCase() === cleanUserId.toLowerCase() ||
+            u.studentCode?.toLowerCase() === cleanUserId.toLowerCase()
+        );
+        if (match) {
+          if (match.id) identifiersToDelete.add(match.id);
+          if (match.username) identifiersToDelete.add(match.username);
+          if (match.studentCode) identifiersToDelete.add(match.studentCode);
+          if (match.email) identifiersToDelete.add(match.email);
+        }
+      }
+    } catch {}
+
+    // Tìm trong Prisma DB
+    try {
+      const dbMatch = await prisma.user.findFirst({
+        where: {
+          OR: [
+            { id: cleanUserId },
+            { username: cleanUserId },
+            { studentCode: cleanUserId },
+            { email: cleanUserId }
+          ]
+        }
+      });
+      if (dbMatch) {
+        if (dbMatch.id) identifiersToDelete.add(dbMatch.id);
+        if (dbMatch.username) identifiersToDelete.add(dbMatch.username);
+        if (dbMatch.studentCode) identifiersToDelete.add(dbMatch.studentCode);
+        if (dbMatch.email) identifiersToDelete.add(dbMatch.email);
+      }
+    } catch {}
+
+    // 1. Đưa vào Blacklist vĩnh viễn
+    addDeletedIdentifiers(Array.from(identifiersToDelete));
+
+    // 2. Xóa khỏi Prisma DB nếu tồn tại
     try {
       await prisma.user.deleteMany({
         where: {
           OR: [
-            { id: userId },
-            { username: userId },
-            { studentCode: userId }
+            { id: cleanUserId },
+            { username: cleanUserId },
+            { studentCode: cleanUserId }
           ]
         }
       });
@@ -104,21 +178,31 @@ export async function DELETE(req: Request) {
       console.warn("Prisma user delete warning:", dbErr);
     }
 
-    // 2. Xóa khỏi file usersData.json
+    // 3. Xóa khỏi file usersData.json
     try {
       if (fs.existsSync(usersFilePath)) {
         const fileContent = fs.readFileSync(usersFilePath, "utf-8");
         const list = JSON.parse(fileContent);
-        const filtered = list.filter(
-          (u: any) => u.id !== userId && u.username !== userId && u.studentCode !== userId
-        );
+        const filtered = list.filter((u: any) => {
+          const uId = u.id?.toLowerCase();
+          const uName = u.username?.toLowerCase();
+          const uCode = u.studentCode?.toLowerCase();
+          return (
+            !identifiersToDelete.has(u.id) &&
+            !identifiersToDelete.has(u.username) &&
+            !identifiersToDelete.has(u.studentCode) &&
+            (!uId || !identifiersToDelete.has(uId)) &&
+            (!uName || !identifiersToDelete.has(uName)) &&
+            (!uCode || !identifiersToDelete.has(uCode))
+          );
+        });
         fs.writeFileSync(usersFilePath, JSON.stringify(filtered, null, 2), "utf-8");
       }
     } catch (fsErr) {
       console.error("Lỗi xóa user khỏi usersData.json:", fsErr);
     }
 
-    // 3. Xóa tiến độ học tập liên quan trong studentProgressData.json
+    // 4. Xóa tiến độ học tập liên quan trong studentProgressData.json
     try {
       const progressPath = path.join(process.cwd(), "src/data/studentProgressData.json");
       if (fs.existsSync(progressPath)) {
@@ -127,12 +211,15 @@ export async function DELETE(req: Request) {
         let changed = false;
         Object.keys(progStore).forEach((key) => {
           const item = progStore[key];
-          if (
-            key === userId ||
-            item?.userId === userId ||
-            item?.studentCode === userId ||
-            item?.username === userId
-          ) {
+          const kLower = key.toLowerCase();
+          const isTarget =
+            identifiersToDelete.has(key) ||
+            identifiersToDelete.has(kLower) ||
+            (item?.userId && identifiersToDelete.has(item.userId)) ||
+            (item?.studentCode && identifiersToDelete.has(item.studentCode)) ||
+            (item?.username && identifiersToDelete.has(item.username));
+
+          if (isTarget) {
             delete progStore[key];
             changed = true;
           }
@@ -145,10 +232,15 @@ export async function DELETE(req: Request) {
       console.warn("Lỗi dọn tiến độ khi xóa user:", progErr);
     }
 
-    return NextResponse.json({ success: true, message: "Đã xóa thành viên thành công." });
+    return NextResponse.json({
+      success: true,
+      message: "Đã xóa thành viên thành công.",
+      deletedIdentifiers: Array.from(identifiersToDelete)
+    });
   } catch (error) {
     console.error("Delete user error:", error);
     return NextResponse.json({ error: "Lỗi máy chủ khi xóa thành viên." }, { status: 500 });
   }
 }
+
 

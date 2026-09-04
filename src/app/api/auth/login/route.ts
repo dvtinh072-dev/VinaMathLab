@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { isUserDeleted } from "@/lib/deletedUsers";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -22,6 +23,14 @@ export async function POST(req: Request) {
     const { role, studentCode, username, identifier, password } = body;
     const loginKey = (identifier || username || studentCode || "").trim().toLowerCase();
     const cleanPassword = (password || "").trim();
+
+    // Nếu tài khoản đã bị xóa trên hệ thống, từ chối đăng nhập ngay lập tức
+    if (isUserDeleted(loginKey)) {
+      return NextResponse.json(
+        { error: "Tài khoản này đã bị xóa khỏi hệ thống." },
+        { status: 403 }
+      );
+    }
 
     let user: any = null;
 
@@ -88,6 +97,19 @@ export async function POST(req: Request) {
               : "Tên đăng nhập hoặc mật khẩu không chính xác.",
         },
         { status: 401 }
+      );
+    }
+
+    // Kiểm tra chéo xem user này có nằm trong danh sách đã xóa không
+    if (
+      isUserDeleted(user.id) ||
+      isUserDeleted(user.username) ||
+      isUserDeleted(user.studentCode) ||
+      isUserDeleted(user.email)
+    ) {
+      return NextResponse.json(
+        { error: "Tài khoản này đã bị xóa khỏi hệ thống." },
+        { status: 403 }
       );
     }
 

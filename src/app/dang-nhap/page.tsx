@@ -96,19 +96,15 @@ export default function DangNhapPage() {
             </p>
           </div>
 
-          {/* Quick Demo Pre-seed Badge */}
-          <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 space-y-1">
-            <div className="font-bold text-amber-400">💡 Tài khoản kiểm thử:</div>
-            {activeRole === "student" ? (
-              <div>
-                Tên đăng nhập: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">annguyen6a</code> (hoặc <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">HS6001</code>) | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-bold">123456</code>
-              </div>
-            ) : (
+          {/* Admin Demo Hint if activeRole is admin */}
+          {activeRole === "admin" && (
+            <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+              <div className="font-bold text-amber-400">💡 Tài khoản quản trị mặc định:</div>
               <div>
                 Admin: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-bold">admin</code> | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-bold">admin123</code>
               </div>
-            )}
-          </div>
+            </div>
+          )}
 
           {/* Alerts */}
           {errorMsg && (

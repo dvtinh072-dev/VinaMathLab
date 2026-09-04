@@ -74,10 +74,38 @@ export default function AdminDashboardPage() {
       // 1b. Gộp danh sách học sinh đăng ký lưu cục bộ (localStorage) để không bao giờ bị sót học sinh mới
       if (typeof window !== "undefined") {
         try {
+          const deletedIdsRaw = localStorage.getItem("vinamath_deleted_user_ids");
+          const deletedSet: Set<string> = new Set(
+            deletedIdsRaw ? JSON.parse(deletedIdsRaw).map((x: string) => String(x).toLowerCase()) : []
+          );
+
+          // Loại bỏ các user đã bị xóa khỏi danh sách server
+          rawStudents = rawStudents.filter((s: any) => {
+            const sId = s.id?.toLowerCase();
+            const sUser = s.username?.toLowerCase();
+            const sCode = s.studentCode?.toLowerCase();
+            return !(
+              (sId && deletedSet.has(sId)) ||
+              (sUser && deletedSet.has(sUser)) ||
+              (sCode && deletedSet.has(sCode))
+            );
+          });
+
           const localSaved = localStorage.getItem("vinamath_local_registered_users");
           if (localSaved) {
             const parsedLocal = JSON.parse(localSaved);
-            const localStudents = parsedLocal.filter((u: any) => u.role === "student");
+            const localStudents = parsedLocal.filter((u: any) => {
+              if (u.role !== "student") return false;
+              const uId = u.id?.toLowerCase();
+              const uUser = u.username?.toLowerCase();
+              const uCode = u.studentCode?.toLowerCase();
+              return !(
+                (uId && deletedSet.has(uId)) ||
+                (uUser && deletedSet.has(uUser)) ||
+                (uCode && deletedSet.has(uCode))
+              );
+            });
+
             const existingKeys = new Set(
               rawStudents.map((s) => s.id || s.username?.toLowerCase() || s.studentCode?.toLowerCase())
             );
@@ -170,9 +198,25 @@ export default function AdminDashboardPage() {
       if (res.ok && data.success) {
         setStatusMessage(`Đã xóa thành công học sinh: ${studentName}`);
 
-        // Dọn dẹp cả trong localStorage nếu có
+        // Dọn dẹp cả trong localStorage nếu có & lưu vào Blacklist cục bộ
         if (typeof window !== "undefined") {
           try {
+            // 1. Ghi nhận vào danh sách tài khoản đã xóa (vinamath_deleted_user_ids)
+            const deletedIdsRaw = localStorage.getItem("vinamath_deleted_user_ids");
+            const deletedList: string[] = deletedIdsRaw ? JSON.parse(deletedIdsRaw) : [];
+            const idsToAdd = [
+              studentId,
+              studentId.toLowerCase(),
+              ...(data.deletedIdentifiers || [])
+            ];
+            idsToAdd.forEach((id) => {
+              if (id && !deletedList.includes(id)) {
+                deletedList.push(id);
+              }
+            });
+            localStorage.setItem("vinamath_deleted_user_ids", JSON.stringify(deletedList));
+
+            // 2. Lọc bỏ khỏi danh sách tài khoản đã đăng ký trong máy
             const localSaved = localStorage.getItem("vinamath_local_registered_users");
             if (localSaved) {
               const list = JSON.parse(localSaved);
@@ -180,7 +224,8 @@ export default function AdminDashboardPage() {
                 (u: any) =>
                   u.id !== studentId &&
                   u.username?.toLowerCase() !== studentId.toLowerCase() &&
-                  u.studentCode !== studentId
+                  u.studentCode !== studentId &&
+                  (!u.studentCode || u.studentCode.toLowerCase() !== studentId.toLowerCase())
               );
               localStorage.setItem("vinamath_local_registered_users", JSON.stringify(filtered));
             }
@@ -190,7 +235,14 @@ export default function AdminDashboardPage() {
         }
 
         // Cập nhật lại state trực tiếp
-        setStudents((prev) => prev.filter((s) => s.id !== studentId && s.username !== studentId && s.studentCode !== studentId));
+        setStudents((prev) =>
+          prev.filter(
+            (s) =>
+              s.id !== studentId &&
+              s.username?.toLowerCase() !== studentId.toLowerCase() &&
+              s.studentCode !== studentId
+          )
+        );
         setTimeout(() => setStatusMessage(null), 3000);
       } else {
         alert(data.error || "Không thể xóa học sinh này.");

@@ -117,9 +117,26 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
+  const isIdentifierDeletedLocally = (id: string) => {
+    if (typeof window === "undefined") return false;
+    try {
+      const raw = localStorage.getItem("vinamath_deleted_user_ids");
+      if (!raw) return false;
+      const list: string[] = JSON.parse(raw);
+      const clean = id.trim().toLowerCase();
+      return list.some((item) => String(item).toLowerCase() === clean);
+    } catch {
+      return false;
+    }
+  };
+
   const loginStudent = async (identifier: string, pass: string) => {
     const cleanIdentifier = identifier.trim();
     const cleanPass = pass.trim();
+
+    if (isIdentifierDeletedLocally(cleanIdentifier)) {
+      return { success: false, error: "Tài khoản này đã bị xóa khỏi hệ thống." };
+    }
 
     try {
       const res = await fetch("/api/auth/login", {
@@ -134,10 +151,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         }),
       });
 
-      if (res.ok) {
-        const data = await res.json();
+      const data = await res.json();
+      if (res.ok && data.success) {
         saveUserSession(data.user);
         return { success: true };
+      }
+      if (data.error && data.error.includes("đã bị xóa")) {
+        return { success: false, error: data.error };
       }
     } catch (e) {
       console.warn("Server login request failed, trying local fallback...", e);
@@ -155,6 +175,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     );
 
     if (matched) {
+      if (
+        isIdentifierDeletedLocally(matched.id) ||
+        isIdentifierDeletedLocally(matched.username || "") ||
+        isIdentifierDeletedLocally(matched.studentCode || "")
+      ) {
+        return { success: false, error: "Tài khoản này đã bị xóa khỏi hệ thống." };
+      }
       const { password: _, ...safeUser } = matched;
       saveUserSession(safeUser);
       return { success: true };

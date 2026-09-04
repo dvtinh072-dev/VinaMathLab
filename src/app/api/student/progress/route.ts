@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { getDeletedIdentifiers } from "@/lib/deletedUsers";
 
 const progressFilePath = path.join(process.cwd(), "src/data/studentProgressData.json");
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
@@ -42,10 +43,20 @@ export async function GET(req: Request) {
     const mode = searchParams.get("mode"); // "all" | "summary"
     const store = getProgressStore();
     const users = getUsersList();
+    const deletedSet = getDeletedIdentifiers();
 
     // 1. Chế độ Admin: Lấy báo cáo tổng thể hoặc danh sách toàn bộ học sinh
     if (mode === "all" || mode === "admin") {
-      const studentUsers = users.filter((u) => u.role === "student");
+      const studentUsers = users.filter((u) => {
+        if (u.role !== "student") return false;
+        const uId = u.id?.toLowerCase();
+        const uName = u.username?.toLowerCase();
+        const uCode = u.studentCode?.toLowerCase();
+        if ((uId && deletedSet.has(uId)) || (uName && deletedSet.has(uName)) || (uCode && deletedSet.has(uCode))) {
+          return false;
+        }
+        return true;
+      });
       const detailedList = studentUsers.map((stu) => {
         const p = store[stu.id] || store[stu.studentCode] || {
           userId: stu.id,

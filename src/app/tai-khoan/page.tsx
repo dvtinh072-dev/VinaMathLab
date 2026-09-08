@@ -42,7 +42,7 @@ export default function StudentProfilePage() {
   const [retryFeedback, setRetryFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
 
   useEffect(() => {
-    if (user?.id || user?.studentCode) {
+    if (user?.id || user?.studentCode || user?.username) {
       fetchStudentProgress();
     } else {
       setIsLoading(false);
@@ -52,7 +52,7 @@ export default function StudentProfilePage() {
   const fetchStudentProgress = async () => {
     setIsLoading(true);
     try {
-      const id = user?.id || user?.studentCode || "";
+      const id = user?.id || user?.studentCode || user?.username || "";
       const res = await fetch(`/api/student/progress?userId=${encodeURIComponent(id)}`);
       const data = await res.json();
       if (data.success && data.progress) {

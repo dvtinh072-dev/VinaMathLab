@@ -25,7 +25,47 @@ function saveProgressStore(store: Record<string, any>) {
   }
 }
 
-function getUsersList(): any[] {
+async function getUsersListAsync(): Promise<any[]> {
+  const fallbackUsers = getFallbackUsersList();
+  let dbUsers: any[] = [];
+  try {
+    const { prisma } = await import("@/lib/prisma");
+    dbUsers = await prisma.user.findMany({
+      select: {
+        id: true,
+        username: true,
+        studentCode: true,
+        fullName: true,
+        role: true,
+        grade: true,
+        schoolClass: true,
+        exp: true,
+        coins: true,
+        streak: true,
+        createdAt: true,
+      },
+    });
+  } catch (e) {
+    // Prisma fallback
+  }
+
+  const userMap = new Map<string, any>();
+  fallbackUsers.forEach((u) => {
+    const key = (u.id || u.username || u.studentCode || "").toLowerCase();
+    if (key) userMap.set(key, u);
+  });
+  dbUsers.forEach((u) => {
+    const key = (u.id || u.username || u.studentCode || "").toLowerCase();
+    if (key) {
+      const existing = userMap.get(key) || {};
+      userMap.set(key, { ...existing, ...u });
+    }
+  });
+
+  return Array.from(userMap.values());
+}
+
+function getFallbackUsersList(): any[] {
   try {
     if (!fs.existsSync(usersFilePath)) return [];
     const data = fs.readFileSync(usersFilePath, "utf-8");
@@ -42,7 +82,7 @@ export async function GET(req: Request) {
     const userId = searchParams.get("userId");
     const mode = searchParams.get("mode"); // "all" | "summary"
     const store = getProgressStore();
-    const users = getUsersList();
+    const users = await getUsersListAsync();
     const deletedSet = getDeletedIdentifiers();
 
     // 1. Chế độ Admin: Lấy báo cáo tổng thể hoặc danh sách toàn bộ học sinh
@@ -58,13 +98,17 @@ export async function GET(req: Request) {
         return true;
       });
       const detailedList = studentUsers.map((stu) => {
-        const p = store[stu.id] || store[stu.studentCode] || {
-          userId: stu.id,
-          totalVideoMinutes: 0,
-          totalCompletedLessons: 0,
-          lessons: {},
-          wrongQuestions: {},
-        };
+        const p =
+          store[stu.id] ||
+          (stu.studentCode ? store[stu.studentCode] : null) ||
+          (stu.username ? store[stu.username] : null) ||
+          (stu.username ? store[stu.username.toLowerCase()] : null) || {
+            userId: stu.id,
+            totalVideoMinutes: 0,
+            totalCompletedLessons: 0,
+            lessons: {},
+            wrongQuestions: {},
+          };
 
         const wrongList = Object.values(p.wrongQuestions || {});
         const activeWrongs = wrongList.filter((w: any) => !w.isResolved);
@@ -148,20 +192,32 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: "Thiếu userId" }, { status: 400 });
     }
 
-    const studentUser = users.find((u) => u.id === userId || u.studentCode === userId || u.username === userId);
-    const p = store[userId] || (studentUser ? store[studentUser.id] : null) || {
-      userId,
-      studentCode: studentUser?.studentCode,
-      username: studentUser?.username,
-      fullName: studentUser?.fullName,
-      schoolName: studentUser?.schoolName || "THCS VinaMath",
-      schoolClass: studentUser?.schoolClass || "Lớp 6A",
-      totalVideoMinutes: 0,
-      totalCompletedLessons: 0,
-      lessons: {},
-      wrongQuestions: {},
-      updatedAt: new Date().toISOString(),
-    };
+    const cleanUserId = userId.trim().toLowerCase();
+    const studentUser = users.find(
+      (u) =>
+        u.id?.toLowerCase() === cleanUserId ||
+        u.studentCode?.toLowerCase() === cleanUserId ||
+        u.username?.toLowerCase() === cleanUserId
+    );
+
+    const canonicalKey = studentUser?.id || userId;
+    const p =
+      store[canonicalKey] ||
+      store[userId] ||
+      (studentUser?.studentCode ? store[studentUser.studentCode] : null) ||
+      (studentUser?.username ? store[studentUser.username] : null) || {
+        userId: canonicalKey,
+        studentCode: studentUser?.studentCode,
+        username: studentUser?.username,
+        fullName: studentUser?.fullName,
+        schoolName: studentUser?.schoolName || "THCS VinaMath",
+        schoolClass: studentUser?.schoolClass || "Lớp 6A",
+        totalVideoMinutes: 0,
+        totalCompletedLessons: 0,
+        lessons: {},
+        wrongQuestions: {},
+        updatedAt: new Date().toISOString(),
+      };
 
     return NextResponse.json({
       success: true,
@@ -192,6 +248,7 @@ export async function POST(req: Request) {
     const {
       userId,
       studentCode,
+      username,
       lessonId,
       gradeKey,
       lessonTitle,
@@ -203,29 +260,47 @@ export async function POST(req: Request) {
       resolveQuestionId, // questionId đã sửa thành công
     } = body;
 
-    if (!userId && !studentCode) {
+    if (!userId && !studentCode && !username) {
       return NextResponse.json({ error: "Thiếu định danh học sinh (userId / studentCode)" }, { status: 400 });
     }
 
     const store = getProgressStore();
-    const targetKey = userId || studentCode;
+    const users = await getUsersListAsync();
+    const cleanId = (userId || studentCode || username || "").trim().toLowerCase();
+
+    const studentUser = users.find(
+      (u) =>
+        u.id?.toLowerCase() === cleanId ||
+        u.studentCode?.toLowerCase() === cleanId ||
+        u.username?.toLowerCase() === cleanId
+    );
+
+    // Dùng ID chuẩn của học sinh làm targetKey chính
+    const targetKey = studentUser?.id || userId || studentCode || username;
 
     if (!store[targetKey]) {
-      const users = getUsersList();
-      const studentUser = users.find((u) => u.id === targetKey || u.studentCode === targetKey);
-      store[targetKey] = {
-        userId: targetKey,
-        studentCode: studentUser?.studentCode || studentCode,
-        username: studentUser?.username,
-        fullName: studentUser?.fullName,
-        schoolName: studentUser?.schoolName || "THCS VinaMath",
-        schoolClass: studentUser?.schoolClass || "Lớp 6A",
-        totalVideoMinutes: 0,
-        totalCompletedLessons: 0,
-        lessons: {},
-        wrongQuestions: {},
-        updatedAt: new Date().toISOString(),
-      };
+      // Kiểm tra xem đã từng lưu bằng studentCode hay username chưa
+      const altRecord =
+        (studentUser?.studentCode ? store[studentUser.studentCode] : null) ||
+        (studentUser?.username ? store[studentUser.username] : null);
+
+      if (altRecord) {
+        store[targetKey] = { ...altRecord, userId: targetKey };
+      } else {
+        store[targetKey] = {
+          userId: targetKey,
+          studentCode: studentUser?.studentCode || studentCode,
+          username: studentUser?.username || username,
+          fullName: studentUser?.fullName,
+          schoolName: studentUser?.schoolName || "THCS VinaMath",
+          schoolClass: studentUser?.schoolClass || "Lớp 6A",
+          totalVideoMinutes: 0,
+          totalCompletedLessons: 0,
+          lessons: {},
+          wrongQuestions: {},
+          updatedAt: new Date().toISOString(),
+        };
+      }
     }
 
     const studentRecord = store[targetKey];

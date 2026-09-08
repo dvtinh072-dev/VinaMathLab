@@ -174,12 +174,24 @@ export default function AdminDashboardPage() {
   });
 
   // Tìm thông tin tiến độ kèm theo học sinh
-  const getStudentProgress = (studentId: string, studentCode: string) => {
+  const getStudentProgress = (studentId: string, studentCode?: string, username?: string) => {
     if (!progressData?.students) return null;
+    const sId = (studentId || "").toLowerCase();
+    const sCode = (studentCode || "").toLowerCase();
+    const sUser = (username || "").toLowerCase();
+
     return (
-      progressData.students.find(
-        (p: any) => p.userId === studentId || p.studentCode === studentCode
-      ) || null
+      progressData.students.find((p: any) => {
+        const pId = (p.id || p.userId || "").toLowerCase();
+        const pCode = (p.studentCode || "").toLowerCase();
+        const pUser = (p.username || "").toLowerCase();
+
+        return (
+          (sId && (pId === sId || pCode === sId || pUser === sId)) ||
+          (sCode && (pId === sCode || pCode === sCode || pUser === sCode)) ||
+          (sUser && (pId === sUser || pCode === sUser || pUser === sUser))
+        );
+      }) || null
     );
   };
 
@@ -503,10 +515,10 @@ export default function AdminDashboardPage() {
                     </tr>
                   ) : (
                     filteredStudents.map((student) => {
-                      const prog = getStudentProgress(student.id, student.studentCode);
+                      const prog = getStudentProgress(student.id, student.studentCode, student.username);
                       const videoMinutes = prog?.totalVideoMinutes || 0;
                       const completedCount = prog?.totalCompletedLessons || 0;
-                      const wrongCount = prog?.wrongQuestionsCount || 0;
+                      const wrongCount = prog?.activeWrongCount ?? prog?.wrongQuestionsList?.length ?? 0;
 
                       return (
                         <tr key={student.id} className="hover:bg-slate-900/60 transition-colors">

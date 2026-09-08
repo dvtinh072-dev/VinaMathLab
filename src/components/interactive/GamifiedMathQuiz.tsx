@@ -1061,10 +1061,34 @@ export function GamifiedMathQuiz({
         return up;
       });
       playSound(correctCount >= 3 ? "combo" : "correct");
+
+      // Nếu làm đúng hết 4 ý, đánh dấu đã khắc phục
+      if (correctCount === 4) {
+        recordCorrectedMistake(currentTf.id);
+      }
     } else {
       playSound("wrong");
       setStreak(0);
       setLives((prev) => Math.max(0, prev - 1));
+    }
+
+    // Nếu có ý sai (< 4), ghi nhận vào Sổ tay câu sai
+    if (correctCount < 4) {
+      const wrongSubItems = currentTf.subItems.filter(
+        (sub) => curr?.selected[sub.id] !== undefined && curr?.selected[sub.id] !== sub.correctAnswer
+      );
+      const wrongDetails = wrongSubItems
+        .map((s) => `Ý [${s.id}]: Chọn ${curr?.selected[s.id] ? "Đúng" : "Sai"} (Đáp án: ${s.correctAnswer ? "Đúng" : "Sai"})`)
+        .join(" | ");
+
+      recordMistake(
+        currentTf.id,
+        currentTf.badge || "Câu Đúng/Sai",
+        currentTf.prompt,
+        wrongDetails || "Có ý chọn sai",
+        "Tất cả 4 ý đạt chuẩn",
+        wrongSubItems.map((s) => s.explanation || s.text).join(" ")
+      );
     }
   };
 
@@ -1080,6 +1104,7 @@ export function GamifiedMathQuiz({
     } else {
       setIsCompleted(true);
       playSound("victory");
+      syncLessonCompletion(sessionScore);
     }
   };
 
@@ -1119,10 +1144,21 @@ export function GamifiedMathQuiz({
         return up;
       });
       playSound("correct");
+      recordCorrectedMistake(currentSa.id);
     } else {
       playSound("wrong");
       setStreak(0);
       setLives((prev) => Math.max(0, prev - 1));
+
+      // Tự động ghi nhận câu sai trả lời ngắn
+      recordMistake(
+        currentSa.id,
+        currentSa.badge || "Câu Trả lời ngắn",
+        currentSa.prompt,
+        saInputText,
+        currentSa.correctAnswer,
+        currentSa.explanation
+      );
     }
   };
 
@@ -1142,6 +1178,7 @@ export function GamifiedMathQuiz({
     } else {
       setIsCompleted(true);
       playSound("victory");
+      syncLessonCompletion(sessionScore);
     }
   };
 
@@ -1160,26 +1197,40 @@ export function GamifiedMathQuiz({
   useEffect(() => {
     if (!youtubeVideoId || quizMode !== "theory") return;
 
-    // Khi học sinh đang mở tab Video bài giảng, tích lũy thời gian mỗi 5 giây
-    const interval = setInterval(() => {
-      // Chỉ gửi đồng bộ lên server mỗi 30 giây để tối ưu mạng
-      if (user?.id) {
-        fetch("/api/student/progress", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            userId: user.id,
-            addVideoSeconds: 5,
-            lessonId,
-            gradeKey,
-            lessonTitle,
-          }),
-        }).catch(() => {});
-      }
-    }, 5000);
+    // Helper gửi tích lũy số giây xem video về server
+    const syncVideoTime = (seconds: number) => {
+      const studentId = user?.id || user?.studentCode || user?.username;
+      if (!studentId || seconds <= 0) return;
 
-    return () => clearInterval(interval);
-  }, [youtubeVideoId, quizMode, user?.id, lessonId, gradeKey, lessonTitle]);
+      fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user?.id,
+          studentCode: user?.studentCode,
+          username: user?.username,
+          addVideoSeconds: seconds,
+          lessonId,
+          gradeKey,
+          lessonTitle,
+        }),
+      }).catch(() => {});
+    };
+
+    // Gửi ngay 15 giây đầu tiên khi mở tab xem video
+    syncVideoTime(15);
+
+    // Tiếp tục tích lũy mỗi 15 giây khi đang xem
+    const interval = setInterval(() => {
+      syncVideoTime(15);
+    }, 15000);
+
+    return () => {
+      clearInterval(interval);
+      // Gửi thêm 5 giây khi rời tab video
+      syncVideoTime(5);
+    };
+  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, lessonId, gradeKey, lessonTitle]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
   const recordMistake = async (
@@ -1190,13 +1241,16 @@ export function GamifiedMathQuiz({
     correctOptionText: string,
     explanationText: string
   ) => {
-    if (!user?.id) return;
+    const studentId = user?.id || user?.studentCode || user?.username;
+    if (!studentId) return;
     try {
       await fetch("/api/student/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          userId: user.id,
+          userId: user?.id,
+          studentCode: user?.studentCode,
+          username: user?.username,
           lessonId,
           gradeKey,
           lessonTitle,
@@ -1217,13 +1271,16 @@ export function GamifiedMathQuiz({
 
   // Đánh dấu đã làm đúng lại câu hỏi đã sai
   const recordCorrectedMistake = async (qId: string | number) => {
-    if (!user?.id) return;
+    const studentId = user?.id || user?.studentCode || user?.username;
+    if (!studentId) return;
     try {
       await fetch("/api/student/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          userId: user.id,
+          userId: user?.id,
+          studentCode: user?.studentCode,
+          username: user?.username,
           resolveQuestionId: String(qId),
         }),
       });
@@ -1234,13 +1291,16 @@ export function GamifiedMathQuiz({
 
   // Đồng bộ hoàn thành bài học
   const syncLessonCompletion = async (score: number) => {
-    if (!user?.id) return;
+    const studentId = user?.id || user?.studentCode || user?.username;
+    if (!studentId) return;
     try {
       await fetch("/api/student/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          userId: user.id,
+          userId: user?.id,
+          studentCode: user?.studentCode,
+          username: user?.username,
           lessonId,
           gradeKey,
           lessonTitle,

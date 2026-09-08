@@ -34,6 +34,7 @@ import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
+import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 
 export default function AdminDashboardPage() {
   const { user, isAdmin, openAuthModal, logout } = useAuth();
@@ -173,15 +174,16 @@ export default function AdminDashboardPage() {
     return matchQuery && matchSchool && matchClass && matchGrade;
   });
 
-  // Tìm thông tin tiến độ kèm theo học sinh
+  // Tìm thông tin tiến độ kèm theo học sinh (gộp cả dữ liệu máy chủ và localStorage)
   const getStudentProgress = (studentId: string, studentCode?: string, username?: string) => {
-    if (!progressData?.students) return null;
     const sId = (studentId || "").toLowerCase();
     const sCode = (studentCode || "").toLowerCase();
     const sUser = (username || "").toLowerCase();
 
-    return (
-      progressData.students.find((p: any) => {
+    // 1. Tìm bản ghi từ server
+    let serverProg: any = null;
+    if (progressData?.students) {
+      serverProg = progressData.students.find((p: any) => {
         const pId = (p.id || p.userId || "").toLowerCase();
         const pCode = (p.studentCode || "").toLowerCase();
         const pUser = (p.username || "").toLowerCase();
@@ -191,8 +193,53 @@ export default function AdminDashboardPage() {
           (sCode && (pId === sCode || pCode === sCode || pUser === sCode)) ||
           (sUser && (pId === sUser || pCode === sUser || pUser === sUser))
         );
-      }) || null
-    );
+      }) || null;
+    }
+
+    // 2. Tìm bản ghi từ localStorage (phòng khi đang chạy trên Vercel serverless)
+    const localRecord = getLocalStudentProgress(studentId) || 
+      (studentCode ? getLocalStudentProgress(studentCode) : null) || 
+      (username ? getLocalStudentProgress(username) : null);
+
+    if (!localRecord) return serverProg;
+
+    const wrongList = Object.values(localRecord.wrongQuestions || {});
+    const activeWrongs = wrongList.filter((w: any) => !w.isResolved);
+    const resolvedWrongs = wrongList.filter((w: any) => w.isResolved);
+    const totalWrongAttempts = wrongList.reduce((sum: number, w: any) => sum + (w.wrongCount || 1), 0);
+    const completedLessonsCount = Object.values(localRecord.lessons || {}).filter((l: any) => l.isCompleted).length;
+
+    if (!serverProg) {
+      return {
+        id: studentId,
+        studentCode,
+        username,
+        totalVideoMinutes: localRecord.totalVideoMinutes || 0,
+        totalCompletedLessons: completedLessonsCount,
+        lessonsProgress: localRecord.lessons || {},
+        wrongQuestions: localRecord.wrongQuestions || {},
+        wrongQuestionsList: wrongList,
+        activeWrongCount: activeWrongs.length,
+        resolvedWrongCount: resolvedWrongs.length,
+        totalWrongAttempts,
+      };
+    }
+
+    // Gộp cả 2 để lấy kết quả tối ưu nhất
+    const mergedWrongMap = { ...(serverProg.wrongQuestions || {}), ...(localRecord.wrongQuestions || {}) };
+    const mergedWrongList = Object.values(mergedWrongMap);
+
+    return {
+      ...serverProg,
+      totalVideoMinutes: Math.max(serverProg.totalVideoMinutes || 0, localRecord.totalVideoMinutes || 0),
+      totalCompletedLessons: Math.max(serverProg.totalCompletedLessons || 0, completedLessonsCount),
+      lessonsProgress: { ...(serverProg.lessonsProgress || {}), ...(localRecord.lessons || {}) },
+      wrongQuestions: mergedWrongMap,
+      wrongQuestionsList: mergedWrongList,
+      activeWrongCount: Math.max(serverProg.activeWrongCount || 0, activeWrongs.length),
+      resolvedWrongCount: Math.max(serverProg.resolvedWrongCount || 0, resolvedWrongs.length),
+      totalWrongAttempts: Math.max(serverProg.totalWrongAttempts || 0, totalWrongAttempts),
+    };
   };
 
   const handleDeleteStudent = async (studentId: string, studentName: string) => {

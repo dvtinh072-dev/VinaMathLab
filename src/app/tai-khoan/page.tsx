@@ -28,6 +28,7 @@ import {
 import { useAuth } from "@/context/AuthContext";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
+import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
 
 export default function StudentProfilePage() {
   const router = useRouter();
@@ -51,15 +52,37 @@ export default function StudentProfilePage() {
 
   const fetchStudentProgress = async () => {
     setIsLoading(true);
+    const identifier = user?.id || user?.studentCode || user?.username || "";
+    
+    // 1. Đọc ngay từ localStorage trước để giao diện tức thì không bị độ trễ
+    const localProg = getLocalStudentProgress(identifier);
+    if (localProg) {
+      setProgressData(localProg);
+    }
+
+    // 2. Tải dữ liệu mới nhất từ máy chủ
     try {
-      const id = user?.id || user?.studentCode || user?.username || "";
-      const res = await fetch(`/api/student/progress?userId=${encodeURIComponent(id)}`);
+      const res = await fetch(`/api/student/progress?userId=${encodeURIComponent(identifier)}`);
       const data = await res.json();
       if (data.success && data.progress) {
-        setProgressData(data.progress);
+        // Gộp dữ liệu máy chủ và dữ liệu cục bộ (ưu tiên bản ghi có nhiều bài học hoặc video hơn)
+        const sProg = data.progress;
+        if (!localProg) {
+          setProgressData(sProg);
+        } else {
+          const merged = {
+            ...sProg,
+            ...localProg,
+            totalVideoMinutes: Math.max(sProg.totalVideoMinutes || 0, localProg.totalVideoMinutes || 0),
+            totalCompletedLessons: Math.max(sProg.totalCompletedLessons || 0, localProg.totalCompletedLessons || 0),
+            lessons: { ...(sProg.lessons || {}), ...(localProg.lessons || {}) },
+            wrongQuestions: { ...(sProg.wrongQuestions || {}), ...(localProg.wrongQuestions || {}) },
+          };
+          setProgressData(merged);
+        }
       }
     } catch (e) {
-      console.error("Lỗi tải tiến độ học tập:", e);
+      console.warn("Lỗi tải tiến độ học tập từ máy chủ, sử dụng dữ liệu cục bộ:", e);
     } finally {
       setIsLoading(false);
     }

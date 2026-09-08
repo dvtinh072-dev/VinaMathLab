@@ -52,6 +52,7 @@ import { GeometryDiagram, GeometryDiagramProps } from "@/components/math/Geometr
 import { useAuth } from "@/context/AuthContext";
 import { QuestionEditModal } from "@/components/admin/QuestionEditModal";
 import { AiQuestionGeneratorModal } from "@/components/admin/AiQuestionGeneratorModal";
+import { saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
 import type { 
   TheorySection, 
   TrueFalseQuestion, 
@@ -1197,11 +1198,26 @@ export function GamifiedMathQuiz({
   useEffect(() => {
     if (!youtubeVideoId || quizMode !== "theory") return;
 
-    // Helper gửi tích lũy số giây xem video về server
+    // Helper gửi tích lũy số giây xem video về server và localStorage
     const syncVideoTime = (seconds: number) => {
       const studentId = user?.id || user?.studentCode || user?.username;
       if (!studentId || seconds <= 0) return;
 
+      // 1. Lưu cục bộ (localStorage) ngay lập tức để không bao giờ mất dữ liệu kể cả trên Vercel/serverless
+      saveLocalStudentProgressUpdate({
+        userId: user?.id,
+        studentCode: user?.studentCode,
+        username: user?.username,
+        fullName: user?.fullName,
+        schoolName: user?.schoolName,
+        schoolClass: user?.schoolClass,
+        lessonId,
+        gradeKey,
+        lessonTitle,
+        addVideoSeconds: seconds,
+      });
+
+      // 2. Gửi đồng bộ lên server
       fetch("/api/student/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1230,7 +1246,7 @@ export function GamifiedMathQuiz({
       // Gửi thêm 5 giây khi rời tab video
       syncVideoTime(5);
     };
-  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, lessonId, gradeKey, lessonTitle]);
+  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
   const recordMistake = async (
@@ -1243,6 +1259,32 @@ export function GamifiedMathQuiz({
   ) => {
     const studentId = user?.id || user?.studentCode || user?.username;
     if (!studentId) return;
+
+    // 1. Lưu ngay vào bộ nhớ cục bộ
+    saveLocalStudentProgressUpdate({
+      userId: user?.id,
+      studentCode: user?.studentCode,
+      username: user?.username,
+      fullName: user?.fullName,
+      schoolName: user?.schoolName,
+      schoolClass: user?.schoolClass,
+      lessonId,
+      gradeKey,
+      lessonTitle,
+      wrongQuestion: {
+        questionId: String(qId),
+        badge: badgeText || "Bài tập",
+        questionText,
+        selectedOption: selectedOptionText,
+        correctOption: correctOptionText,
+        explanation: explanationText,
+        lessonId,
+        lessonTitle,
+        gradeKey,
+      },
+    });
+
+    // 2. Gửi lên server
     try {
       await fetch("/api/student/progress", {
         method: "POST",
@@ -1273,6 +1315,16 @@ export function GamifiedMathQuiz({
   const recordCorrectedMistake = async (qId: string | number) => {
     const studentId = user?.id || user?.studentCode || user?.username;
     if (!studentId) return;
+
+    // 1. Cập nhật giải quyết lỗi cục bộ
+    saveLocalStudentProgressUpdate({
+      userId: user?.id,
+      studentCode: user?.studentCode,
+      username: user?.username,
+      resolveQuestionId: String(qId),
+    });
+
+    // 2. Gửi lên server
     try {
       await fetch("/api/student/progress", {
         method: "POST",
@@ -1293,6 +1345,24 @@ export function GamifiedMathQuiz({
   const syncLessonCompletion = async (score: number) => {
     const studentId = user?.id || user?.studentCode || user?.username;
     if (!studentId) return;
+
+    // 1. Lưu hoàn thành bài học cục bộ
+    saveLocalStudentProgressUpdate({
+      userId: user?.id,
+      studentCode: user?.studentCode,
+      username: user?.username,
+      fullName: user?.fullName,
+      schoolName: user?.schoolName,
+      schoolClass: user?.schoolClass,
+      lessonId,
+      gradeKey,
+      lessonTitle,
+      isCompleted: true,
+      score,
+      totalQuestions: activeQuizList.length || 10,
+    });
+
+    // 2. Gửi lên server
     try {
       await fetch("/api/student/progress", {
         method: "POST",

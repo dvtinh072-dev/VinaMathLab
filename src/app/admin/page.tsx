@@ -81,10 +81,8 @@ export default function AdminDashboardPage() {
 
   // Lấy dữ liệu người dùng & tiến độ học tập từ API
   useEffect(() => {
-    if (isAdmin) {
-      fetchAdminData();
-    }
-  }, [isAdmin]);
+    fetchAdminData();
+  }, [isAdmin, user]);
 
   const fetchAdminData = async () => {
     setIsLoading(true);
@@ -437,34 +435,6 @@ export default function AdminDashboardPage() {
     }
   };
 
-  // If not admin, show login gate
-  if (!isAdmin) {
-    return (
-      <div className="min-h-[75vh] flex items-center justify-center p-4">
-        <div className="w-full max-w-md p-8 rounded-3xl bg-[#0e1526] border-2 border-amber-500/40 text-center space-y-6 shadow-2xl">
-          <div className="w-16 h-16 mx-auto rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
-            <Shield className="w-8 h-8" />
-          </div>
-
-          <div className="space-y-2">
-            <h2 className="text-xl font-black text-white">Khu Vực Quản Trị Viên (Admin)</h2>
-            <p className="text-xs text-slate-300">
-              Vui lòng đăng nhập với tài khoản Quản trị viên để truy cập trang quản lý bài học và theo dõi tiến độ học tập chi tiết của học sinh.
-            </p>
-          </div>
-
-
-          <button
-            onClick={() => openAuthModal("admin", "login")}
-            className="w-full py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm hover:from-amber-400 hover:to-yellow-300 shadow-lg shadow-amber-500/30 transition-all cursor-pointer"
-          >
-            Đăng Nhập Quản Trị Viên Ngay
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-6 pb-12">
       {/* Top Banner */}
@@ -475,7 +445,7 @@ export default function AdminDashboardPage() {
               <Shield className="w-3.5 h-3.5" /> Trung Tâm Quản Trị Hệ Thống
             </span>
             <span className="text-xs text-slate-400">
-              Xin chào, <strong className="text-white">{user?.fullName || user?.username}</strong>
+              Xin chào, <strong className="text-white">{user?.fullName || user?.username || "Quản trị viên"}</strong>
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black tracking-tight">

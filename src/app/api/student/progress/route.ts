@@ -263,6 +263,8 @@ export async function POST(req: Request) {
       totalQuestions,
       wrongQuestion, // { questionId, badge, questionText, selectedOption, correctOption, explanation }
       resolveQuestionId, // questionId đã sửa thành công
+      solvedQuestionId,
+      solvedExp,
     } = body;
 
     if (!userId && !studentCode && !username) {
@@ -373,6 +375,15 @@ export async function POST(req: Request) {
     // 3. Đánh dấu câu hỏi đã được làm lại đúng (Resolve)
     if (resolveQuestionId && studentRecord.wrongQuestions[resolveQuestionId]) {
       studentRecord.wrongQuestions[resolveQuestionId].isResolved = true;
+    }
+
+    // 3b. Ghi nhận câu hỏi đã được giải đúng để không tính điểm lần 2
+    if (solvedQuestionId) {
+      if (!studentRecord.solvedQuestions) studentRecord.solvedQuestions = {};
+      studentRecord.solvedQuestions[solvedQuestionId] = {
+        solvedAt: new Date().toISOString(),
+        earnedExp: solvedExp || 100,
+      };
     }
 
     // 4. Cập nhật EXP, Coins, Streak nếu có

@@ -40,6 +40,7 @@ export interface StudentProgressRecord {
   totalCompletedLessons: number;
   lessons: Record<string, LessonProgressItem>;
   wrongQuestions: Record<string, WrongQuestionItem>;
+  solvedQuestions?: Record<string, { solvedAt: string; earnedExp?: number } | boolean>;
   updatedAt: string;
 }
 
@@ -121,6 +122,8 @@ export function saveLocalStudentProgressUpdate(params: {
     gradeKey?: string;
   };
   resolveQuestionId?: string;
+  solvedQuestionId?: string;
+  solvedExp?: number;
 }): StudentProgressRecord | null {
   if (typeof window === "undefined") return null;
 
@@ -236,6 +239,15 @@ export function saveLocalStudentProgressUpdate(params: {
     existing.wrongQuestions[params.resolveQuestionId].isResolved = true;
   }
 
+  // 3b. Ghi nhận câu hỏi đã được làm đúng nhận điểm (để không tính điểm lần 2)
+  if (params.solvedQuestionId) {
+    if (!existing.solvedQuestions) existing.solvedQuestions = {};
+    existing.solvedQuestions[params.solvedQuestionId] = {
+      solvedAt: new Date().toISOString(),
+      earnedExp: params.solvedExp || 100,
+    };
+  }
+
   // 4. Tính toán tổng thời lượng video & bài học hoàn thành
   let totalSec = 0;
   let completedCount = 0;
@@ -256,3 +268,97 @@ export function saveLocalStudentProgressUpdate(params: {
   saveLocalProgressStore(store);
   return existing;
 }
+
+/**
+ * Kiểm tra xem một câu hỏi đã từng được học sinh giải đúng và nhận điểm chưa
+ * @param identifier Mã định danh học sinh (id, studentCode, username)
+ * @param questionKey Mã nhận diện duy nhất của câu hỏi (VD: lessonId:quiz:quiz-6.1.1)
+ */
+export function isQuestionAlreadySolved(
+  identifier: string | null | undefined,
+  questionKey: string
+): boolean {
+  if (typeof window === "undefined" || !questionKey) return false;
+  const cleanId = (identifier || "guest").trim().toLowerCase();
+
+  // 1. Kiểm tra trong bộ nhớ localStorage trực tiếp (nhanh, tức thì)
+  try {
+    const raw = localStorage.getItem(`vinamath_solved_questions_${cleanId}`);
+    if (raw) {
+      const map = JSON.parse(raw);
+      if (map[questionKey]) return true;
+    }
+    // Nếu đã đăng nhập, kiểm tra thêm bộ nhớ guest lúc chưa đăng nhập
+    if (cleanId !== "guest") {
+      const guestRaw = localStorage.getItem("vinamath_solved_questions_guest");
+      if (guestRaw) {
+        const guestMap = JSON.parse(guestRaw);
+        if (guestMap[questionKey]) return true;
+      }
+    }
+  } catch (e) {
+    // fallback
+  }
+
+  // 2. Kiểm tra trong StudentProgressRecord store
+  const prog = getLocalStudentProgress(cleanId);
+  if (prog?.solvedQuestions && prog.solvedQuestions[questionKey]) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
+ * Đánh dấu một câu hỏi đã được giải đúng và nhận điểm
+ * @param identifier Mã định danh học sinh
+ * @param questionKey Mã nhận diện duy nhất của câu hỏi
+ * @param earnedExp Số điểm EXP đã nhận lần đầu
+ */
+export function markQuestionSolved(
+  identifier: string | null | undefined,
+  questionKey: string,
+  earnedExp: number = 100
+) {
+  if (typeof window === "undefined" || !questionKey) return;
+  const cleanId = (identifier || "guest").trim().toLowerCase();
+
+  // 1. Lưu ngay vào localStorage trực tiếp
+  try {
+    const key = `vinamath_solved_questions_${cleanId}`;
+    const raw = localStorage.getItem(key);
+    const map = raw ? JSON.parse(raw) : {};
+    map[questionKey] = {
+      solvedAt: new Date().toISOString(),
+      earnedExp,
+    };
+    localStorage.setItem(key, JSON.stringify(map));
+  } catch (e) {
+    console.warn("Lỗi lưu solved question vào localStorage:", e);
+  }
+
+  // 2. Cập nhật vào StudentProgressRecord
+  saveLocalStudentProgressUpdate({
+    userId: identifier || undefined,
+    solvedQuestionId: questionKey,
+    solvedExp: earnedExp,
+  });
+
+  // 3. Đồng bộ lên server (nếu đã đăng nhập)
+  if (identifier && identifier !== "guest") {
+    try {
+      fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: identifier,
+          solvedQuestionId: questionKey,
+          solvedExp: earnedExp,
+        }),
+      }).catch(() => {});
+    } catch {
+      // background sync
+    }
+  }
+}
+

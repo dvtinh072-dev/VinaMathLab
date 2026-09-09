@@ -77,8 +77,14 @@ export default function StudentProfilePage() {
             totalCompletedLessons: Math.max(sProg.totalCompletedLessons || 0, localProg.totalCompletedLessons || 0),
             lessons: { ...(sProg.lessons || {}), ...(localProg.lessons || {}) },
             wrongQuestions: { ...(sProg.wrongQuestions || {}), ...(localProg.wrongQuestions || {}) },
+            solvedQuestions: { ...(sProg.solvedQuestions || {}), ...(localProg.solvedQuestions || {}) },
           };
           setProgressData(merged);
+          // Đồng bộ cache solvedQuestions vào localStorage để truy vấn nhanh
+          if (merged.solvedQuestions && typeof window !== "undefined") {
+            const clean = identifier.trim().toLowerCase();
+            localStorage.setItem(`vinamath_solved_questions_${clean}`, JSON.stringify(merged.solvedQuestions));
+          }
         }
 
         // Cập nhật session user nếu điểm/sao trên profile hoặc sProg cao hơn

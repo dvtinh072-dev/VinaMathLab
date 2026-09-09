@@ -230,9 +230,9 @@ export async function GET(req: Request) {
         schoolName: studentUser.schoolName || "THCS VinaMath",
         grade: studentUser.grade || "Khối 6",
         schoolClass: studentUser.schoolClass || "Lớp 6A",
-        exp: studentUser.exp || 0,
-        coins: studentUser.coins || 0,
-        streak: studentUser.streak || 1,
+        exp: Math.max(studentUser.exp || 0, p.exp || 0),
+        coins: Math.max(studentUser.coins || 0, p.coins || 0),
+        streak: Math.max(studentUser.streak || 1, p.streak || 1),
       } : null,
     });
   } catch (error) {
@@ -249,6 +249,11 @@ export async function POST(req: Request) {
       userId,
       studentCode,
       username,
+      earnedExp,
+      totalExp,
+      earnedCoins,
+      coins,
+      streak,
       lessonId,
       gradeKey,
       lessonTitle,
@@ -370,7 +375,24 @@ export async function POST(req: Request) {
       studentRecord.wrongQuestions[resolveQuestionId].isResolved = true;
     }
 
-    // 4. Tính toán lại tổng hợp
+    // 4. Cập nhật EXP, Coins, Streak nếu có
+    if (totalExp !== undefined) {
+      studentRecord.exp = Math.max(studentRecord.exp || 0, totalExp);
+    } else if (earnedExp) {
+      studentRecord.exp = (studentRecord.exp || 0) + earnedExp;
+    }
+
+    if (coins !== undefined) {
+      studentRecord.coins = Math.max(studentRecord.coins || 0, coins);
+    } else if (earnedCoins) {
+      studentRecord.coins = (studentRecord.coins || 0) + earnedCoins;
+    }
+
+    if (streak !== undefined) {
+      studentRecord.streak = Math.max(studentRecord.streak || 1, streak);
+    }
+
+    // 5. Tính toán lại tổng hợp
     let totalSec = 0;
     let completedCount = 0;
     Object.values(studentRecord.lessons).forEach((item: any) => {
@@ -383,6 +405,43 @@ export async function POST(req: Request) {
     studentRecord.updatedAt = new Date().toISOString();
 
     saveProgressStore(store);
+
+    // Đồng bộ điểm học sinh vào usersData.json và Prisma DB nếu có thay đổi điểm
+    if (studentUser && (earnedExp || totalExp !== undefined || earnedCoins || coins !== undefined || streak !== undefined)) {
+      try {
+        const usersList = getFallbackUsersList();
+        const uIdx = usersList.findIndex(
+          (u: any) =>
+            u.id === studentUser.id ||
+            (studentUser.username && u.username?.toLowerCase() === studentUser.username.toLowerCase()) ||
+            (studentUser.studentCode && u.studentCode?.toUpperCase() === studentUser.studentCode.toUpperCase())
+        );
+        if (uIdx !== -1) {
+          if (studentRecord.exp !== undefined) usersList[uIdx].exp = studentRecord.exp;
+          if (studentRecord.coins !== undefined) usersList[uIdx].coins = studentRecord.coins;
+          if (studentRecord.streak !== undefined) usersList[uIdx].streak = studentRecord.streak;
+          fs.writeFileSync(usersFilePath, JSON.stringify(usersList, null, 2), "utf-8");
+        }
+
+        const { prisma } = await import("@/lib/prisma");
+        await prisma.user.updateMany({
+          where: {
+            OR: [
+              { id: studentUser.id },
+              { username: studentUser.username },
+              { studentCode: studentUser.studentCode },
+            ],
+          },
+          data: {
+            exp: studentRecord.exp,
+            coins: studentRecord.coins,
+            streak: studentRecord.streak,
+          },
+        });
+      } catch (dbErr) {
+        console.warn("Lỗi cập nhật điểm người dùng qua progress API:", dbErr);
+      }
+    }
 
     return NextResponse.json({ success: true, progress: studentRecord });
   } catch (error) {

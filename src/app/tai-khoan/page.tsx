@@ -80,6 +80,23 @@ export default function StudentProfilePage() {
           };
           setProgressData(merged);
         }
+
+        // Cập nhật session user nếu điểm/sao trên profile hoặc sProg cao hơn
+        if (user) {
+          const bestExp = Math.max(data.profile?.exp || 0, sProg.exp || 0, localProg?.exp || 0, user.exp || 0);
+          const bestCoins = Math.max(data.profile?.coins || 0, sProg.coins || 0, localProg?.coins || 0, user.coins || 0);
+          const bestStreak = Math.max(data.profile?.streak || 1, sProg.streak || 1, localProg?.streak || 1, user.streak || 1);
+
+          if (bestExp > (user.exp || 0) || bestCoins > (user.coins || 0)) {
+            const updatedUser = {
+              ...user,
+              exp: bestExp,
+              coins: bestCoins,
+              streak: bestStreak,
+            };
+            localStorage.setItem("vinamath_auth_user", JSON.stringify(updatedUser));
+          }
+        }
       }
     } catch (e) {
       console.warn("Lỗi tải tiến độ học tập từ máy chủ, sử dụng dữ liệu cục bộ:", e);

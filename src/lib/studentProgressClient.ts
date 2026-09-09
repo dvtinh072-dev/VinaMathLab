@@ -33,6 +33,9 @@ export interface StudentProgressRecord {
   fullName?: string;
   schoolName?: string;
   schoolClass?: string;
+  exp?: number;
+  coins?: number;
+  streak?: number;
   totalVideoMinutes: number;
   totalCompletedLessons: number;
   lessons: Record<string, LessonProgressItem>;
@@ -93,6 +96,12 @@ export function saveLocalStudentProgressUpdate(params: {
   fullName?: string;
   schoolName?: string;
   schoolClass?: string;
+  exp?: number;
+  totalExp?: number;
+  earnedExp?: number;
+  coins?: number;
+  earnedCoins?: number;
+  streak?: number;
   lessonId?: string;
   gradeKey?: string;
   lessonTitle?: string;
@@ -131,12 +140,34 @@ export function saveLocalStudentProgressUpdate(params: {
       fullName: params.fullName,
       schoolName: params.schoolName || "THCS VinaMath",
       schoolClass: params.schoolClass || "Lớp 6A",
+      exp: params.totalExp !== undefined ? params.totalExp : (params.exp || 0),
+      coins: params.coins !== undefined ? params.coins : 50,
+      streak: params.streak !== undefined ? params.streak : 1,
       totalVideoMinutes: 0,
       totalCompletedLessons: 0,
       lessons: {},
       wrongQuestions: {},
       updatedAt: new Date().toISOString(),
     };
+  }
+
+  // Cập nhật EXP, Coins, Streak
+  if (params.totalExp !== undefined) {
+    existing.exp = Math.max(existing.exp || 0, params.totalExp);
+  } else if (params.exp !== undefined) {
+    existing.exp = Math.max(existing.exp || 0, params.exp);
+  } else if (params.earnedExp !== undefined && params.earnedExp > 0) {
+    existing.exp = (existing.exp || 0) + params.earnedExp;
+  }
+
+  if (params.coins !== undefined) {
+    existing.coins = Math.max(existing.coins || 0, params.coins);
+  } else if (params.earnedCoins !== undefined && params.earnedCoins > 0) {
+    existing.coins = (existing.coins || 0) + params.earnedCoins;
+  }
+
+  if (params.streak !== undefined) {
+    existing.streak = Math.max(existing.streak || 1, params.streak);
   }
 
   // 1. Cập nhật bài học & video

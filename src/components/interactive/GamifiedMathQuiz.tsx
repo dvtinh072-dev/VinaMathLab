@@ -1360,6 +1360,8 @@ export function GamifiedMathQuiz({
       isCompleted: true,
       score,
       totalQuestions: activeQuizList.length || 10,
+      totalExp: user?.exp,
+      streak: user?.streak,
     });
 
     // 2. Gửi lên server
@@ -1377,6 +1379,8 @@ export function GamifiedMathQuiz({
           isCompleted: true,
           score,
           totalQuestions: activeQuizList.length,
+          totalExp: user?.exp,
+          streak: user?.streak,
         }),
       });
     } catch (e) {
@@ -1525,11 +1529,11 @@ export function GamifiedMathQuiz({
 
     if (typeof window !== "undefined") {
       const savedGradeScore = localStorage.getItem(`vinamath_grade_score_${gradeKey}`);
-      if (savedGradeScore) {
-        setGradeTotalScore(Number(savedGradeScore));
-      } else {
-        setGradeTotalScore(100);
-      }
+      const initialScore = Math.max(
+        savedGradeScore ? Number(savedGradeScore) : 0,
+        user?.exp || 0
+      );
+      setGradeTotalScore(initialScore > 0 ? initialScore : 100);
 
       const savedLessonBest = localStorage.getItem(`vinamath_lesson_score_${gradeKey}_${lessonId}`);
       if (savedLessonBest) {
@@ -1538,7 +1542,14 @@ export function GamifiedMathQuiz({
         setLessonHighScore(0);
       }
     }
-  }, [gradeKey, lessonId]);
+  }, [gradeKey, lessonId, user?.exp]);
+
+  // Luôn đồng bộ gradeTotalScore với số sao/EXP của học sinh khi đăng nhập
+  useEffect(() => {
+    if (user?.exp !== undefined && user.exp > 0) {
+      setGradeTotalScore((prev) => Math.max(prev, user.exp || 0));
+    }
+  }, [user?.exp]);
 
   // Âm thanh tương tác Web Audio API
   const playSound = (type: "correct" | "wrong" | "victory" | "combo" | "ai") => {

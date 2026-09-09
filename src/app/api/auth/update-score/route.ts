@@ -25,24 +25,61 @@ function saveUsers(users: any[]) {
 
 export async function POST(req: Request) {
   try {
-    const { studentId, earnedExp, earnedCoins, streak } = await req.json();
-    if (!studentId) {
-      return NextResponse.json({ error: "Thiếu studentId" }, { status: 400 });
+    const { studentId, username, earnedExp, earnedCoins, streak, totalExp, totalCoins } = await req.json();
+    const searchKey = (studentId || username || "").trim();
+    if (!searchKey) {
+      return NextResponse.json({ error: "Thiếu studentId hoặc username" }, { status: 400 });
     }
 
+    const cleanKey = searchKey.toLowerCase();
     const users = getUsers();
-    const studentIndex = users.findIndex(
-      (u: any) => u.id === studentId || u.studentCode === studentId
+    let studentIndex = users.findIndex(
+      (u: any) =>
+        u.id?.toLowerCase() === cleanKey ||
+        u.studentCode?.toLowerCase() === cleanKey ||
+        u.username?.toLowerCase() === cleanKey
     );
+
+    if (studentIndex === -1) {
+      // Nếu chưa có trong JSON (ví dụ đăng ký qua Prisma), thử tìm trong Prisma
+      try {
+        const dbUser = await prisma.user.findFirst({
+          where: {
+            OR: [
+              { id: searchKey },
+              { username: cleanKey },
+              { studentCode: searchKey.toUpperCase() },
+              { studentCode: searchKey },
+            ],
+          },
+        });
+        if (dbUser) {
+          users.push(dbUser);
+          studentIndex = users.length - 1;
+        }
+      } catch (e) {
+        console.warn("Prisma fallback lookup warning:", e);
+      }
+    }
 
     if (studentIndex === -1) {
       return NextResponse.json({ error: "Không tìm thấy học sinh" }, { status: 404 });
     }
 
-    users[studentIndex].exp = (users[studentIndex].exp || 0) + (earnedExp || 0);
-    users[studentIndex].coins = (users[studentIndex].coins || 0) + (earnedCoins || 0);
+    if (totalExp !== undefined) {
+      users[studentIndex].exp = Math.max(users[studentIndex].exp || 0, totalExp);
+    } else if (earnedExp) {
+      users[studentIndex].exp = (users[studentIndex].exp || 0) + earnedExp;
+    }
+
+    if (totalCoins !== undefined) {
+      users[studentIndex].coins = Math.max(users[studentIndex].coins || 0, totalCoins);
+    } else if (earnedCoins) {
+      users[studentIndex].coins = (users[studentIndex].coins || 0) + earnedCoins;
+    }
+
     if (streak !== undefined) {
-      users[studentIndex].streak = Math.max(users[studentIndex].streak || 0, streak);
+      users[studentIndex].streak = Math.max(users[studentIndex].streak || 1, streak);
     }
 
     saveUsers(users);
@@ -51,7 +88,11 @@ export async function POST(req: Request) {
     try {
       await prisma.user.updateMany({
         where: {
-          OR: [{ id: studentId }, { studentCode: studentId }],
+          OR: [
+            { id: users[studentIndex].id },
+            { username: users[studentIndex].username },
+            { studentCode: users[studentIndex].studentCode },
+          ],
         },
         data: {
           exp: users[studentIndex].exp,

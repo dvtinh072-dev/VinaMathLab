@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
 
 export interface UserProfile {
   id: string;
@@ -76,7 +77,29 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       const saved = localStorage.getItem("vinamath_auth_user");
       if (saved) {
-        setUser(JSON.parse(saved));
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.role === "student") {
+          const localUsers = getLocalRegisteredUsers();
+          const localMatched = localUsers.find(
+            (u) =>
+              u.id === parsed.id ||
+              (parsed.username && u.username?.toLowerCase() === parsed.username.toLowerCase()) ||
+              (parsed.studentCode && u.studentCode?.toUpperCase() === parsed.studentCode.toUpperCase())
+          );
+          const localProg =
+            getLocalStudentProgress(parsed.id) ||
+            getLocalStudentProgress(parsed.username) ||
+            getLocalStudentProgress(parsed.studentCode);
+
+          const bestExp = Math.max(parsed.exp || 0, localMatched?.exp || 0, (localProg as any)?.exp || 0);
+          const bestCoins = Math.max(parsed.coins || 0, localMatched?.coins || 0, (localProg as any)?.coins || 0);
+          const bestStreak = Math.max(parsed.streak || 1, localMatched?.streak || 1, (localProg as any)?.streak || 1);
+
+          parsed.exp = bestExp;
+          parsed.coins = bestCoins;
+          parsed.streak = bestStreak;
+        }
+        setUser(parsed);
       }
     } catch (e) {
       console.error("Failed to load user from localStorage", e);
@@ -145,6 +168,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { success: false, error: "Tài khoản này đã bị xóa khỏi hệ thống." };
     }
 
+    const localUsers = getLocalRegisteredUsers();
+    const localMatched = localUsers.find(
+      (u) =>
+        u.role === "student" &&
+        (u.username?.toLowerCase() === cleanIdentifier.toLowerCase() ||
+          u.studentCode?.toUpperCase() === cleanIdentifier.toUpperCase() ||
+          u.id === cleanIdentifier) &&
+        u.password === cleanPass
+    );
+    const localProg = getLocalStudentProgress(cleanIdentifier);
+
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
@@ -160,7 +194,66 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       const data = await res.json();
       if (res.ok && data.success) {
-        saveUserSession(data.user);
+        // Hợp nhất dữ liệu học sinh với số sao EXP, coins, streak cao nhất từ client để không bao giờ bị mất điểm
+        const sUser = data.user;
+        const highestExp = Math.max(
+          sUser.exp || 0,
+          localMatched?.exp || 0,
+          (localProg as any)?.exp || 0
+        );
+        const highestCoins = Math.max(
+          sUser.coins || 0,
+          localMatched?.coins || 0,
+          (localProg as any)?.coins || 0
+        );
+        const highestStreak = Math.max(
+          sUser.streak || 1,
+          localMatched?.streak || 1,
+          (localProg as any)?.streak || 1
+        );
+
+        const mergedUser: UserProfile = {
+          ...sUser,
+          exp: highestExp,
+          coins: highestCoins,
+          streak: highestStreak,
+        };
+
+        saveUserSession(mergedUser);
+
+        saveLocalRegisteredUser({
+          ...(localMatched || {}),
+          ...mergedUser,
+          password: cleanPass,
+        });
+
+        saveLocalStudentProgressUpdate({
+          userId: mergedUser.id,
+          studentCode: mergedUser.studentCode,
+          username: mergedUser.username,
+          fullName: mergedUser.fullName,
+          schoolName: mergedUser.schoolName,
+          schoolClass: mergedUser.schoolClass,
+          totalExp: highestExp,
+          coins: highestCoins,
+          streak: highestStreak,
+        });
+
+        // Nếu máy chủ chưa kịp cập nhật điểm tích lũy trước đó, gửi đồng bộ ngay lập tức
+        if (highestExp > (sUser.exp || 0)) {
+          fetch("/api/auth/update-score", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              studentId: mergedUser.id || mergedUser.studentCode,
+              username: mergedUser.username,
+              earnedExp: highestExp - (sUser.exp || 0),
+              earnedCoins: Math.max(0, highestCoins - (sUser.coins || 0)),
+              streak: highestStreak,
+            }),
+          }).catch(() => {});
+        }
+
         return { success: true };
       }
       if (data.error && data.error.includes("đã bị xóa")) {
@@ -171,25 +264,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
 
     // Fallback: Kiểm tra trong bộ nhớ cục bộ (localStorage)
-    const localUsers = getLocalRegisteredUsers();
-    const matched = localUsers.find(
-      (u) =>
-        u.role === "student" &&
-        (u.username?.toLowerCase() === cleanIdentifier.toLowerCase() ||
-          u.studentCode?.toUpperCase() === cleanIdentifier.toUpperCase() ||
-          u.id === cleanIdentifier) &&
-        u.password === cleanPass
-    );
-
-    if (matched) {
+    if (localMatched) {
       if (
-        isIdentifierDeletedLocally(matched.id) ||
-        isIdentifierDeletedLocally(matched.username || "") ||
-        isIdentifierDeletedLocally(matched.studentCode || "")
+        isIdentifierDeletedLocally(localMatched.id) ||
+        isIdentifierDeletedLocally(localMatched.username || "") ||
+        isIdentifierDeletedLocally(localMatched.studentCode || "")
       ) {
         return { success: false, error: "Tài khoản này đã bị xóa khỏi hệ thống." };
       }
-      const { password: _, ...safeUser } = matched;
+      const highestExp = Math.max(localMatched.exp || 0, (localProg as any)?.exp || 0);
+      const highestCoins = Math.max(localMatched.coins || 0, (localProg as any)?.coins || 0);
+      const highestStreak = Math.max(localMatched.streak || 1, (localProg as any)?.streak || 1);
+
+      const { password: _, ...safeUser } = localMatched;
+      safeUser.exp = highestExp;
+      safeUser.coins = highestCoins;
+      safeUser.streak = highestStreak;
+
       saveUserSession(safeUser);
       return { success: true };
     }
@@ -460,23 +551,43 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     saveUserSession(updatedUser);
 
-    // Lưu vào danh sách local registered users
+    // 1. Lưu vào danh sách local registered users (tìm theo id, username, studentCode)
     const localUsers = getLocalRegisteredUsers();
-    const idx = localUsers.findIndex((u) => u.id === user.id || u.studentCode === user.studentCode);
+    const idx = localUsers.findIndex(
+      (u) =>
+        u.id === user.id ||
+        (user.username && u.username?.toLowerCase() === user.username.toLowerCase()) ||
+        (user.studentCode && u.studentCode?.toUpperCase() === user.studentCode.toUpperCase())
+    );
     if (idx !== -1) {
       localUsers[idx] = { ...localUsers[idx], exp: newExp, coins: newCoins, streak: newStreak };
       localStorage.setItem("vinamath_local_registered_users", JSON.stringify(localUsers));
+    } else {
+      localUsers.unshift({ ...updatedUser });
+      localStorage.setItem("vinamath_local_registered_users", JSON.stringify(localUsers));
     }
 
+    // 2. Lưu vào local progress store để bảo toàn điểm tuyệt đối
+    saveLocalStudentProgressUpdate({
+      userId: user.id,
+      studentCode: user.studentCode,
+      username: user.username,
+      totalExp: newExp,
+      coins: newCoins,
+      streak: newStreak,
+    });
+
+    // 3. Đồng bộ điểm tới backend (/api/auth/update-score)
     try {
-      await fetch("/api/auth/progress", {
+      await fetch("/api/auth/update-score", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           studentId: user.id || user.studentCode,
+          username: user.username,
           earnedExp,
           earnedCoins,
-          streak: currentStreak,
+          streak: newStreak,
         }),
       });
     } catch (e) {

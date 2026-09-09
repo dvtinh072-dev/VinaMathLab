@@ -28,7 +28,9 @@ import {
   School,
   FileSpreadsheet,
   Trash2,
-  UserCheck
+  UserCheck,
+  KeyRound,
+  Lock,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -37,9 +39,9 @@ import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 
 export default function AdminDashboardPage() {
-  const { user, isAdmin, openAuthModal, logout } = useAuth();
+  const { user, isAdmin, openAuthModal, logout, updateAdminCredentials } = useAuth();
 
-  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "mistakes" | "backup">("students");
+  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "mistakes" | "backup" | "settings">("students");
   const [searchQuery, setSearchQuery] = useState("");
   const [students, setStudents] = useState<any[]>([]);
   const [progressData, setProgressData] = useState<any>({ students: [], topMistakes: [] });
@@ -53,6 +55,29 @@ export default function AdminDashboardPage() {
 
   // Modal chi tiết học sinh
   const [selectedStudentDetail, setSelectedStudentDetail] = useState<any | null>(null);
+
+  // Form Đổi thông tin / Mật khẩu Admin
+  const [adminForm, setAdminForm] = useState({
+    currentUsername: user?.username || "admin",
+    currentPassword: "",
+    newUsername: "",
+    newFullName: user?.fullName || "",
+    newPassword: "",
+    confirmPassword: "",
+  });
+  const [adminFormError, setAdminFormError] = useState<string | null>(null);
+  const [adminFormSuccess, setAdminFormSuccess] = useState<string | null>(null);
+  const [isUpdatingAdmin, setIsUpdatingAdmin] = useState(false);
+
+  useEffect(() => {
+    if (user) {
+      setAdminForm((prev) => ({
+        ...prev,
+        currentUsername: user.username || "admin",
+        newFullName: user.fullName || "",
+      }));
+    }
+  }, [user]);
 
   // Lấy dữ liệu người dùng & tiến độ học tập từ API
   useEffect(() => {
@@ -341,6 +366,77 @@ export default function AdminDashboardPage() {
     setTimeout(() => setStatusMessage(null), 3000);
   };
 
+  const handleUpdateAdmin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAdminFormError(null);
+    setAdminFormSuccess(null);
+
+    const currentUsername = (adminForm.currentUsername || user?.username || "admin").trim();
+    const currentPassword = adminForm.currentPassword.trim();
+    const newUsername = adminForm.newUsername.trim();
+    const newFullName = adminForm.newFullName.trim();
+    const newPassword = adminForm.newPassword.trim();
+    const confirmPassword = adminForm.confirmPassword.trim();
+
+    if (!currentPassword) {
+      setAdminFormError("Vui lòng nhập mật khẩu hiện tại để xác thực tài khoản quản trị.");
+      return;
+    }
+
+    if (newPassword) {
+      if (newPassword.length < 6) {
+        setAdminFormError("Mật khẩu mới phải có ít nhất 6 ký tự.");
+        return;
+      }
+      if (newPassword !== confirmPassword) {
+        setAdminFormError("Mật khẩu mới và mật khẩu xác nhận không trùng khớp.");
+        return;
+      }
+    }
+
+    if (newUsername && newUsername.length < 3) {
+      setAdminFormError("Tên đăng nhập mới phải có ít nhất 3 ký tự.");
+      return;
+    }
+
+    if (!newUsername && !newPassword && !newFullName) {
+      setAdminFormError("Vui lòng nhập ít nhất một thông tin muốn thay đổi.");
+      return;
+    }
+
+    setIsUpdatingAdmin(true);
+    try {
+      const res = await updateAdminCredentials({
+        currentUsername,
+        currentPassword,
+        newUsername: newUsername || undefined,
+        newPassword: newPassword || undefined,
+        newFullName: newFullName || undefined,
+      });
+
+      if (res.success) {
+        setAdminFormSuccess(res.message || "Cập nhật tài khoản quản trị thành công!");
+        setAdminForm((prev) => ({
+          ...prev,
+          currentUsername: newUsername || prev.currentUsername,
+          currentPassword: newPassword || prev.currentPassword,
+          newUsername: "",
+          newPassword: "",
+          confirmPassword: "",
+          newFullName: newFullName || prev.newFullName,
+        }));
+        setTimeout(() => setAdminFormSuccess(null), 5000);
+      } else {
+        setAdminFormError(res.error || "Không thể cập nhật tài khoản quản trị viên.");
+      }
+    } catch (err) {
+      console.error("Lỗi cập nhật admin:", err);
+      setAdminFormError("Đã xảy ra lỗi khi gửi yêu cầu cập nhật.");
+    } finally {
+      setIsUpdatingAdmin(false);
+    }
+  };
+
   // If not admin, show login gate
   if (!isAdmin) {
     return (
@@ -357,12 +453,6 @@ export default function AdminDashboardPage() {
             </p>
           </div>
 
-          <div className="p-3 rounded-2xl bg-slate-900 border border-slate-800 text-xs text-slate-300 space-y-1">
-            <span className="text-amber-400 font-bold block">💡 Tài khoản Admin mặc định:</span>
-            <span>
-              Tên: <code className="text-amber-300 font-bold">admin</code> | Mật khẩu: <code className="text-amber-300 font-bold">admin123</code>
-            </span>
-          </div>
 
           <button
             onClick={() => openAuthModal("admin", "login")}
@@ -463,6 +553,18 @@ export default function AdminDashboardPage() {
         >
           <BookOpen className="w-4 h-4" />
           <span>Quản Lý Đề & Bài Học ({Object.keys(GRADE_6_DETAILED_LESSONS).length})</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("settings")}
+          className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
+            activeTab === "settings"
+              ? "bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <KeyRound className="w-4 h-4 text-emerald-400" />
+          <span>Cài Đặt & Đổi Mật Khẩu Admin</span>
         </button>
       </div>
 
@@ -790,6 +892,145 @@ export default function AdminDashboardPage() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB 4: CÀI ĐẶT & ĐỔI TÊN ĐĂNG NHẬP / MẬT KHẨU ADMIN                       */}
+      {/* ========================================================================= */}
+      {activeTab === "settings" && (
+        <div className="space-y-6 max-w-3xl animate-in fade-in">
+          <div className="p-6 sm:p-8 rounded-3xl bg-[#0e1526] border-2 border-emerald-500/30 space-y-6 shadow-xl">
+            <div className="space-y-2 pb-4 border-b border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="p-2 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                  <KeyRound className="w-5 h-5" />
+                </span>
+                <h2 className="text-xl font-black text-white">Đổi Tên Đăng Nhập & Mật Khẩu Quản Trị Viên</h2>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-400">
+                Cập nhật thông tin quản trị viên để bảo mật hệ thống. Sau khi đổi, hệ thống sẽ xóa bỏ mọi thông tin tài khoản mặc định và chỉ cho phép đăng nhập bằng tài khoản mới của bạn.
+              </p>
+            </div>
+
+            {/* Thông báo lỗi / thành công */}
+            {adminFormError && (
+              <div className="p-4 rounded-2xl bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs flex items-center gap-3">
+                <AlertCircle className="w-5 h-5 shrink-0" />
+                <span>{adminFormError}</span>
+              </div>
+            )}
+
+            {adminFormSuccess && (
+              <div className="p-4 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 shrink-0" />
+                <span>{adminFormSuccess}</span>
+              </div>
+            )}
+
+            <form onSubmit={handleUpdateAdmin} className="space-y-5">
+              {/* Phần 1: Xác thực hiện tại */}
+              <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
+                <div className="text-xs font-bold text-amber-400 flex items-center gap-1.5 uppercase tracking-wider">
+                  <Lock className="w-3.5 h-3.5" /> 1. Xác thực tài khoản hiện tại
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">Tên đăng nhập hiện tại</label>
+                    <input
+                      type="text"
+                      value={adminForm.currentUsername}
+                      onChange={(e) => setAdminForm({ ...adminForm, currentUsername: e.target.value })}
+                      required
+                      placeholder="admin"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-mono focus:border-amber-400 focus:outline-none transition-colors"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">
+                      Mật khẩu hiện tại <span className="text-rose-400">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      value={adminForm.currentPassword}
+                      onChange={(e) => setAdminForm({ ...adminForm, currentPassword: e.target.value })}
+                      required
+                      placeholder="Nhập mật khẩu hiện tại..."
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-amber-400 focus:outline-none transition-colors"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Phần 2: Thông tin mới */}
+              <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
+                <div className="text-xs font-bold text-emerald-400 flex items-center gap-1.5 uppercase tracking-wider">
+                  <KeyRound className="w-3.5 h-3.5" /> 2. Thiết lập thông tin đăng nhập mới
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">Tên đăng nhập mới</label>
+                    <input
+                      type="text"
+                      value={adminForm.newUsername}
+                      onChange={(e) => setAdminForm({ ...adminForm, newUsername: e.target.value })}
+                      placeholder="Bỏ trống nếu giữ nguyên"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-mono focus:border-emerald-400 focus:outline-none transition-colors"
+                    />
+                    <span className="text-[10px] text-slate-500">Tối thiểu 3 ký tự viết liền không dấu</span>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">Họ và tên Quản trị viên</label>
+                    <input
+                      type="text"
+                      value={adminForm.newFullName}
+                      onChange={(e) => setAdminForm({ ...adminForm, newFullName: e.target.value })}
+                      placeholder="Quản Trị Viên VinaMath"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-emerald-400 focus:outline-none transition-colors"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">Mật khẩu mới</label>
+                    <input
+                      type="password"
+                      value={adminForm.newPassword}
+                      onChange={(e) => setAdminForm({ ...adminForm, newPassword: e.target.value })}
+                      placeholder="Bỏ trống nếu không đổi mật khẩu"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-emerald-400 focus:outline-none transition-colors"
+                    />
+                    <span className="text-[10px] text-slate-500">Tối thiểu 6 ký tự</span>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-300">Xác nhận mật khẩu mới</label>
+                    <input
+                      type="password"
+                      value={adminForm.confirmPassword}
+                      onChange={(e) => setAdminForm({ ...adminForm, confirmPassword: e.target.value })}
+                      placeholder="Nhập lại mật khẩu mới..."
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-emerald-400 focus:outline-none transition-colors"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2 flex items-center justify-end gap-3">
+                <button
+                  type="submit"
+                  disabled={isUpdatingAdmin}
+                  className="px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 font-black text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-300 shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2 cursor-pointer disabled:opacity-50"
+                >
+                  <KeyRound className={`w-4 h-4 ${isUpdatingAdmin ? "animate-spin" : ""}`} />
+                  <span>{isUpdatingAdmin ? "Đang lưu thay đổi..." : "Lưu Thông Tin Đăng Nhập Mới"}</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

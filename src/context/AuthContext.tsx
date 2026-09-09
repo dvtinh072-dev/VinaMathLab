@@ -42,6 +42,13 @@ interface AuthContextType {
     password: string;
     adminSecret: string;
   }) => Promise<{ success: boolean; error?: string }>;
+  updateAdminCredentials: (data: {
+    currentUsername: string;
+    currentPassword: string;
+    newUsername?: string;
+    newPassword?: string;
+    newFullName?: string;
+  }) => Promise<{ success: boolean; error?: string; message?: string }>;
   logout: () => void;
   addExpAndCoins: (earnedExp: number, earnedCoins: number, currentStreak?: number) => Promise<void>;
   isAuthModalOpen: boolean;
@@ -229,8 +236,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { success: true };
     }
 
-    // Default hardcoded admin check if offline
-    if (cleanUsername.toLowerCase() === "admin" && cleanPass === "admin123") {
+    // Check if an admin was already updated or created in local storage
+    const hasCustomAdmin = localUsers.some((u) => u.role === "admin");
+
+    // Default hardcoded admin check if offline and no custom admin exists
+    if (!hasCustomAdmin && cleanUsername.toLowerCase() === "admin" && cleanPass === "admin123") {
       const fallbackAdmin: UserProfile = {
         id: "u-admin-1",
         role: "admin",
@@ -360,6 +370,76 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return { success: false, error: "Đăng ký admin thất bại." };
   };
 
+  const updateAdminCredentials = async (data: {
+    currentUsername: string;
+    currentPassword: string;
+    newUsername?: string;
+    newPassword?: string;
+    newFullName?: string;
+  }) => {
+    try {
+      const res = await fetch("/api/auth/change-credentials", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const resData = await res.json();
+      if (!res.ok) {
+        return { success: false, error: resData.error || "Không thể cập nhật thông tin admin." };
+      }
+
+      const updatedUser = resData.user;
+      // Cập nhật cả localStorage local users với thông tin mật khẩu mới
+      const localUsers = getLocalRegisteredUsers();
+      const updatedLocalUsers = localUsers.map((u) => {
+        if (
+          u.role === "admin" &&
+          (u.username?.toLowerCase() === data.currentUsername.trim().toLowerCase() ||
+            u.id === updatedUser.id)
+        ) {
+          return {
+            ...u,
+            username: updatedUser.username,
+            fullName: updatedUser.fullName,
+            password: (data.newPassword || data.currentPassword).trim(),
+          };
+        }
+        return u;
+      });
+
+      const foundAdmin = localUsers.some(
+        (u) =>
+          u.role === "admin" &&
+          (u.username?.toLowerCase() === data.currentUsername.trim().toLowerCase() ||
+            u.id === updatedUser.id)
+      );
+
+      if (!foundAdmin) {
+        updatedLocalUsers.unshift({
+          id: updatedUser.id,
+          role: "admin",
+          username: updatedUser.username,
+          fullName: updatedUser.fullName,
+          password: (data.newPassword || data.currentPassword).trim(),
+          email: updatedUser.email,
+          createdAt: new Date().toISOString(),
+        });
+      }
+
+      localStorage.setItem("vinamath_local_registered_users", JSON.stringify(updatedLocalUsers));
+      saveUserSession(updatedUser);
+
+      return {
+        success: true,
+        message: resData.message || "Cập nhật tài khoản quản trị viên thành công!",
+      };
+    } catch (e) {
+      console.error("updateAdminCredentials error:", e);
+      return { success: false, error: "Đã xảy ra lỗi khi kết nối tới máy chủ." };
+    }
+  };
+
   const logout = () => {
     saveUserSession(null);
   };
@@ -369,13 +449,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const newExp = (user.exp || 0) + earnedExp;
     const newCoins = (user.coins || 0) + earnedCoins;
-    const newStreak = currentStreak !== undefined ? Math.max(user.streak || 0, currentStreak) : user.streak;
+    const newStreak = currentStreak !== undefined ? currentStreak : (user.streak || 1);
 
-    const updated = { ...user, exp: newExp, coins: newCoins, streak: newStreak };
-    saveUserSession(updated);
+    const updatedUser: UserProfile = {
+      ...user,
+      exp: newExp,
+      coins: newCoins,
+      streak: newStreak,
+    };
+
+    saveUserSession(updatedUser);
+
+    // Lưu vào danh sách local registered users
+    const localUsers = getLocalRegisteredUsers();
+    const idx = localUsers.findIndex((u) => u.id === user.id || u.studentCode === user.studentCode);
+    if (idx !== -1) {
+      localUsers[idx] = { ...localUsers[idx], exp: newExp, coins: newCoins, streak: newStreak };
+      localStorage.setItem("vinamath_local_registered_users", JSON.stringify(localUsers));
+    }
 
     try {
-      await fetch("/api/auth/update-score", {
+      await fetch("/api/auth/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -415,6 +509,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         loginAdmin,
         registerStudent,
         registerAdmin,
+        updateAdminCredentials,
         logout,
         addExpAndCoins,
         isAuthModalOpen,

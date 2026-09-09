@@ -162,15 +162,6 @@ export function AuthModal() {
             </p>
           </div>
 
-          {/* Admin Demo Hint if activeRole is admin */}
-          {!isRegister && activeRole === "admin" && (
-            <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-[11px] text-slate-300 space-y-1">
-              <div className="font-bold text-amber-400">💡 Tài khoản quản trị mặc định:</div>
-              <div>
-                Admin: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-bold">admin</code> | Mật khẩu: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-300 font-bold">admin123</code>
-              </div>
-            </div>
-          )}
 
           {/* Notification Messages */}
           {errorMsg && (
@@ -320,7 +311,7 @@ export function AuthModal() {
                     required
                     value={adminUsername}
                     onChange={(e) => setAdminUsername(e.target.value)}
-                    placeholder="admin hoặc email..."
+                    placeholder="Tên đăng nhập hoặc email..."
                     className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-amber-400"
                   />
                 </div>

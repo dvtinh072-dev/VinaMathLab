@@ -148,8 +148,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "quizQuestions": [
       {
         "id": "quiz-1.1",
-        "badge": "Câu 1 - TN6 CI Bài 1 & SGK Toán 6 Trang 7",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 1 - Số phần tử của tập hợp",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Tập hợp $X = \\{1; 2; 3\\}$ có số phần tử là:",
         "options": [
           "3 phần tử",
@@ -162,8 +162,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.2",
-        "badge": "Bài 1.1 - SGK Toán 6 Tập 1, Trang 7 & Câu 3 TN6 CI",
-        "source": "SGK Toán 6 Tập 1, Trang 7 & TN6 CI Bài 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 2 - Ký hiệu thuộc (∈) và không thuộc (∉)",
+        "source": "SGK Toán 6 Tập 1, Trang 7 & TN6 CI Bài 1",
         "question": "Cho tập hợp $M = \\{a; b; x; y\\}$. Khẳng định nào sau đây là ĐÚNG?",
         "options": [
           "$y \\in M$",
@@ -176,8 +176,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.3",
-        "badge": "Câu 4 - TN6 CI Bài 1 & SH6-CĐ 1.1",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 3 - Xác định phần tử thuộc tập hợp",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1",
         "question": "Cho tập hợp $A = \\{1; 2; 3; 4; 5\\}$. Khẳng định nào sau đây là SAI?",
         "options": [
           "$0 \\in A$",
@@ -190,8 +190,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.4",
-        "badge": "Bài 1.3 - SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1",
-        "source": "SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 4 - Viết tập hợp các chữ cái (Liệt kê)",
+        "source": "SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1",
         "question": "Bằng cách liệt kê phần tử, hãy viết tập hợp $K$ các chữ cái xuất hiện trong từ \"NHA TRANG\":",
         "options": [
           "$K = \\{\\text{N; H; A; T; R; G}\\}$",
@@ -204,8 +204,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.5",
-        "badge": "Bài 1.5 - SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1",
-        "source": "SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 5 - Viết tập hợp các tháng trong quý",
+        "source": "SGK Toán 6 Tập 1, Trang 8 & SH6-CĐ 1.1",
         "question": "Một năm có 4 quý. Hãy viết tập hợp $M$ các tháng của Quý II trong năm (theo Dương lịch):",
         "options": [
           "$M = \\{\\text{tháng Tư; tháng Năm; tháng Sáu}\\}$",
@@ -218,8 +218,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.6",
-        "badge": "Dạng 1 Bài 1 - SH6-CĐ 1.1 (Dạy thêm KNTT)",
-        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 6 - Viết tập hợp số tự nhiên nhỏ hơn 8",
+        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.1",
         "question": "Viết tập hợp các số tự nhiên nhỏ hơn 8 bằng cách liệt kê các phần tử:",
         "options": [
           "$\\{0; 1; 2; 3; 4; 5; 6; 7\\}$",
@@ -232,8 +232,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.7",
-        "badge": "Câu 9 - TN6 CI Bài 1 (Mức độ Thông hiểu)",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 7 - Chỉ ra tính chất đặc trưng (Mức độ Thông hiểu)",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách",
         "question": "Cho tập hợp $A = \\{x \\in \\mathbb{N} \\mid 4 < x \\le 9\\}$. Tập hợp $A$ viết dưới dạng liệt kê là:",
         "options": [
           "$A = \\{5; 6; 7; 8; 9\\}$",
@@ -246,8 +246,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.8",
-        "badge": "Câu 11 - TN6 CI Bài 1 & SH6-CĐ 1.1",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 8 - Viết tập hợp theo tính chất đặc trưng",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1",
         "question": "Cho tập hợp $C = \\{3; 4; 5; 6; 7; 8\\}$. Cách viết nào dưới đây biểu diễn tập hợp $C$ dưới dạng chỉ ra tính chất đặc trưng cho các phần tử?",
         "options": [
           "$C = \\{x \\in \\mathbb{N} \\mid 2 < x \\le 8\\}$",
@@ -260,8 +260,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.9",
-        "badge": "Câu 12 - TN6 CI Bài 1 (Mức độ Thông hiểu)",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 9 - Tìm số phần tử của tập hợp (Mức độ Thông hiểu)",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách",
         "question": "Số phần tử của tập hợp $M = \\{x \\in \\mathbb{N} \\mid 10 < x \\le 20\\}$ là:",
         "options": [
           "10 phần tử",
@@ -274,8 +274,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-1.10",
-        "badge": "Câu 10 - TN6 CI Bài 1 & SH6-CĐ 1.1 Bài 5a",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 10 - Bài toán cấu tạo số tự nhiên (Mức độ Vận dụng)",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.1",
         "question": "Cho tập hợp $A$ là tập hợp các số tự nhiên có hai chữ số mà chữ số hàng chục gấp đôi chữ số hàng đơn vị. Tập hợp $A$ viết theo cách liệt kê là:",
         "options": [
           "$A = \\{21; 42; 63; 84\\}$",
@@ -409,8 +409,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "quizQuestions": [
       {
         "id": "quiz-2.1",
-        "badge": "Câu 1 - TN6 CI Bài 2 & SGK Toán 6 Trang 9",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 1 - Đọc và viết số tự nhiên lớn",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Viết số tự nhiên sau: \"Ba trăm hai mươi bảy tỉ bốn trăm chín mươi triệu không trăm ba mươi mốt nghìn năm trăm tám mươi bảy\":",
         "options": [
           "$327\\ 490\\ 031\\ 587$",
@@ -423,8 +423,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.2",
-        "badge": "Câu 2 - TN6 CI Bài 2 & SGK Toán 6 Trang 10",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 2 - Giá trị của chữ số theo hàng và lớp",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Trong số $46\\ 308\\ 000$, chữ số $6$ nằm ở hàng nào và có giá trị bằng bao nhiêu?",
         "options": [
           "Hàng triệu, có giá trị là $6\\ 000\\ 000$",
@@ -437,8 +437,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.3",
-        "badge": "Câu 7 - TN6 CI Bài 2 & SH6-CĐ 1.2",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 3 - Xác định số chục và chữ số hàng chục",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2",
         "question": "Cho số tự nhiên $5432$. Số chục và chữ số hàng chục của số này lần lượt là:",
         "options": [
           "Số chục là $543$, chữ số hàng chục là $3$",
@@ -451,8 +451,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.4",
-        "badge": "Câu 3 - TN6 CI Bài 2 & SGK Toán 6 Trang 11",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 4 - Đọc số La Mã",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Số La Mã $\\text{XXVII}$ tương ứng với giá trị nào trong hệ thập phân?",
         "options": [
           "$27$",
@@ -465,8 +465,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.5",
-        "badge": "Câu 5 - TN6 CI Bài 2 & SH6-CĐ 1.2",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 5 - Viết số tự nhiên bằng chữ số La Mã",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2",
         "question": "Viết các số tự nhiên $19$ và $25$ bằng chữ số La Mã:",
         "options": [
           "$\\text{XIX}$ và $\\text{XXV}$",
@@ -479,8 +479,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.6",
-        "badge": "Câu 13 - TN6 CI Bài 2 & SGK Toán 6 Trang 10",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 6 - Biểu diễn số thành tổng các hàng",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Cho số tự nhiên có tổng giá trị các chữ số của nó là: $3 \\times 1000 + 8 \\times 10 + 6$. Số đó là:",
         "options": [
           "$3086$",
@@ -493,8 +493,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.7",
-        "badge": "Câu 14 - TN6 CI Bài 2 & SH6-CĐ 1.2",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 7 - Tập hợp các chữ số của một số",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2",
         "question": "Viết tập hợp các chữ số của số tự nhiên $2021$ bằng cách liệt kê phần tử:",
         "options": [
           "$\\{0; 1; 2\\}$",
@@ -507,8 +507,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.8",
-        "badge": "Câu 4 - TN6 CI Bài 2 & SH6-CĐ 1.2",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 8 - Số tự nhiên lớn nhất có các chữ số khác nhau",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2",
         "question": "Số tự nhiên lớn nhất có ba chữ số khác nhau là:",
         "options": [
           "$987$",
@@ -521,8 +521,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.9",
-        "badge": "Câu 15 - TN6 CI Bài 2 & SH6-CĐ 1.2",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 9 - Đếm số tự nhiên có các chữ số khác nhau",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.2",
         "question": "Dùng ba chữ số $0; 6; 8$ để viết số tự nhiên, hỏi có bao nhiêu số tự nhiên có ba chữ số mà các chữ số khác nhau?",
         "options": [
           "$4$ số",
@@ -535,8 +535,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-2.10",
-        "badge": "Câu 17 - TN6 CI Bài 2 (Mức độ Vận dụng)",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 10 - Bài toán thay đổi giá trị số (Mức độ Vận dụng)",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách",
         "question": "Nếu thêm chữ số $5$ vào sau một số tự nhiên có ba chữ số thì được số tự nhiên mới như thế nào so với số cũ?",
         "options": [
           "Tăng gấp $10$ lần và thêm $5$ đơn vị so với số tự nhiên cũ",
@@ -609,8 +609,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "quizQuestions": [
       {
         "id": "quiz-3.1",
-        "badge": "Câu 1 - TN6 CI Bài 3 & SGK Trang 13",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 Trang 13",
+        "badge": "Câu 1 - Thứ tự các số trên tia số",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Chọn phát biểu ĐÚNG trong các phát biểu sau. Cho hai số tự nhiên $a$ và $b$, nếu $a < b$ thì:",
         "options": [
           "Điểm $a$ nằm bên trái điểm $b$ trên tia số nằm ngang",
@@ -623,8 +623,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.2",
-        "badge": "Câu 2 - TN6 CI Bài 3 & SH6-CĐ 1.3",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 2 - Số tự nhiên liền trước trên tia số",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.3",
         "question": "Điểm biểu diễn số tự nhiên nằm ngay bên trái điểm $4$ trên tia số là:",
         "options": [
           "Điểm $3$",
@@ -637,8 +637,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.3",
-        "badge": "Câu 1 Trắc nghiệm - SH6-CĐ 1.3 & SGK Trang 14",
-        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 3 - Tìm số liền trước của số cho trước",
+        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3",
         "question": "Số tự nhiên liền trước số $7428$ là số nào?",
         "options": [
           "$7427$",
@@ -651,8 +651,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.4",
-        "badge": "Câu 10 - TN6 CI Bài 3 & SH6-CĐ 1.3",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 4 - Nhận biết hai số tự nhiên liên tiếp",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SH6-CĐ 1.3",
         "question": "Trong các cặp số dưới đây, cặp số nào KHÔNG phải là hai số tự nhiên liên tiếp?",
         "options": [
           "$6$ và $4$",
@@ -665,8 +665,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.5",
-        "badge": "Câu 12 - TN6 CI Bài 3 & SGK Trang 14",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 Trang 14",
+        "badge": "Câu 5 - Tính chất bắc cầu của thứ tự",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Cho ba số tự nhiên $a, b, c$ thỏa mãn $a < b$ và $b < c$. Khẳng định nào sau đây là ĐÚNG?",
         "options": [
           "$a < c$",
@@ -679,8 +679,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.6",
-        "badge": "Câu 5 - TN6 CI Bài 3 & SGK Trang 14",
-        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1 Trang 14",
+        "badge": "Câu 6 - Tập hợp số tự nhiên trên đoạn thẳng",
+        "source": "Chuyên đề Trắc nghiệm Toán 6 Ba Bộ Sách & SGK Toán 6 Tập 1",
         "question": "Trên tia số, hai điểm $A$ và $B$ lần lượt biểu diễn số $6$ và số $10$. Gọi $M$ là tập hợp các số tự nhiên biểu diễn trên đoạn thẳng $AB$. Tập hợp $M$ được viết là:",
         "options": [
           "$M = \\{x \\in \\mathbb{N} \\mid 6 \\le x \\le 10\\}$",
@@ -693,8 +693,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.7",
-        "badge": "Câu 3 Trắc nghiệm - SH6-CĐ 1.3 & TN6 CI",
-        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 7 - Đếm số tự nhiên thỏa mãn bất đẳng thức",
+        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3",
         "question": "Có bao nhiêu số tự nhiên $x$ thỏa mãn điều kiện $748 < x < 760$?",
         "options": [
           "$11$ số",
@@ -707,8 +707,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.8",
-        "badge": "Câu 4 Trắc nghiệm - SH6-CĐ 1.3 & TN6 CI",
-        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 8 - Ba số tự nhiên liên tiếp giảm dần",
+        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3",
         "question": "Trong các dòng sau, dòng nào cho ta ba số tự nhiên liên tiếp giảm dần (với $m \\in \\mathbb{N}$)?",
         "options": [
           "$m + 2;\\ m + 1;\\ m$",
@@ -721,8 +721,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.9",
-        "badge": "Dạng 1 Bài 4 - SH6-CĐ 1.3",
-        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 9 - Tìm ba số tự nhiên liên tiếp",
+        "source": "Chuyên đề Dạy Thêm Toán 6 KNTT SH6-CĐ 1.3",
         "question": "Tìm ba số tự nhiên liên tiếp, biết rằng tổng của chúng bằng $24$:",
         "options": [
           "$7;\\ 8;\\ 9$",
@@ -735,8 +735,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-3.10",
-        "badge": "Bài 1.15 - SGK Toán 6 Tập 1 Trang 15",
-        "source": "SGK Toán 6 Tập 1 Trang 15 & SH6-CĐ 1.3 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 10 - Sắp xếp số tự nhiên theo thứ tự giảm dần",
+        "source": "SGK Toán 6 Tập 1 Trang 15 & SH6-CĐ 1.3",
         "question": "Bảng độ cao (theo mét) của 4 đỉnh núi tại Việt Nam: Fansipan ($3\\ 143\\text{ m}$), Pu Si Lung ($3\\ 083\\text{ m}$), Bạch Mộc Lương Tử ($3\\ 046\\text{ m}$), Tây Côn Lĩnh ($2\\ 427\\text{ m}$). Sắp xếp tên các đỉnh núi theo thứ tự độ cao GIẢM DẦN:",
         "options": [
           "Fansipan > Pu Si Lung > Bạch Mộc Lương Tử > Tây Côn Lĩnh",
@@ -766,8 +766,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "quizQuestions": [
       {
         "id": "quiz-4.1",
-        "badge": "Bài 1.16 - SGK Toán 6 Tập 1, trang 19",
-        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 1 - Tính nhanh tổng bằng tính chất giao hoán, kết hợp",
+        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4",
         "question": "Tính nhanh tổng sau bằng cách kết hợp hợp lí: $48 + 235 + 52$:",
         "options": [
           "$335$",
@@ -780,8 +780,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-4.2",
-        "badge": "Bài 1.17 - SGK Toán 6 Tập 1, trang 19",
-        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 2 - Điều kiện thực hiện phép trừ trong tập ℕ",
+        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4",
         "question": "Cho hai số tự nhiên $a$ và $b$. Điều kiện trong tập hợp số tự nhiên để phép trừ $a - b$ thực hiện được là:",
         "options": [
           "$a \\ge b$",
@@ -794,8 +794,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-4.3",
-        "badge": "Bài 1.18 - SGK Toán 6 Tập 1, trang 19",
-        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 3 - Tìm số tự nhiên x trong phép cộng",
+        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên",
         "question": "Tìm số tự nhiên $x$, biết: $x + 257 = 982$. Giá trị của $x$ là:",
         "options": [
           "$725$",
@@ -808,8 +808,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-4.4",
-        "badge": "Bài 1.19 - SGK Toán 6 Tập 1, trang 19",
-        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 4 - Tổng số tự nhiên nhỏ nhất và lớn nhất có 3 chữ số",
+        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên",
         "question": "Tổng của số tự nhiên nhỏ nhất có 3 chữ số khác nhau và số tự nhiên lớn nhất có 3 chữ số khác nhau là:",
         "options": [
           "$1\\ 089$",
@@ -822,8 +822,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-4.5",
-        "badge": "Bài 1.20 - SGK Toán 6 Tập 1, trang 19",
-        "source": "TN6 CI Bài 4 - Phép Cộng Trừ (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 5 - Bài toán tìm số bị trừ và số trừ (Vận dụng)",
+        "source": "TN6 CI Bài 4 - Phép Cộng Trừ",
         "question": "Một phép trừ có tổng của số bị trừ, số trừ và hiệu bằng $2\\ 020$. Số trừ lớn hơn hiệu là $48$. Tìm số bị trừ và số trừ:",
         "options": [
           "Số bị trừ là $1\\ 010$, số trừ là $529$",
@@ -853,8 +853,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "quizQuestions": [
       {
         "id": "quiz-5.1",
-        "badge": "Bài 1.21 - SGK Toán 6 Tập 1, trang 22",
-        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 1 - Áp dụng tính chất phân phối của phép nhân",
+        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5",
         "question": "Tính nhanh biểu thức bằng cách áp dụng tính chất phân phối: $25 \\times 37 + 25 \\times 63$:",
         "options": [
           "$2\\ 500$",
@@ -867,8 +867,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-5.2",
-        "badge": "Bài 1.22 - SGK Toán 6 Tập 1, trang 22",
-        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 2 - Tìm thương và số dư trong phép chia có dư",
+        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5",
         "question": "Thương và số dư trong phép chia $157$ cho $12$ là:",
         "options": [
           "Thương bằng 13, số dư bằng 1",
@@ -881,8 +881,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-5.3",
-        "badge": "Bài 1.23 - SGK Toán 6 Tập 1, trang 22",
-        "source": "SH6-CĐ 1.5 - Phép Nhân Chia Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 3 - Tìm số chia khi biết số bị chia, thương và số dư",
+        "source": "SH6-CĐ 1.5 - Phép Nhân Chia Số Tự Nhiên",
         "question": "Một phép chia có thương là 12, số dư là 5. Biết số bị chia là 101, số chia của phép chia đó là:",
         "options": [
           "8",
@@ -895,8 +895,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-5.4",
-        "badge": "Bài 1.24 - SGK Toán 6 Tập 1, trang 23",
-        "source": "TN6 CI Bài 5 - Phép Nhân Chia (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 4 - Bài toán thực tế mua đồ dùng học tập",
+        "source": "TN6 CI Bài 5 - Phép Nhân Chia",
         "question": "Một quyển vở 200 trang có giá 9 nghìn đồng. Với số tiền 100 nghìn đồng, bạn Huyền mua được nhiều nhất bao nhiêu quyển vở và còn thừa bao nhiêu tiền?",
         "options": [
           "Mua được 11 quyển và còn thừa 1 nghìn đồng",
@@ -909,8 +909,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       },
       {
         "id": "quiz-5.5",
-        "badge": "Bài 1.25 - SGK Toán 6 Tập 1, trang 23",
-        "source": "TN6 CI Bài 5 & SGK Toán 6 KNTT Trang 23 (Thư mục Anti/Tài Liệu Lớp 6)",
+        "badge": "Câu 5 - Bài toán thực tế xếp chỗ hành khách trên tàu hỏa",
+        "source": "TN6 CI Bài 5 & SGK Toán 6 KNTT Trang 23",
         "question": "Một đoàn tàu hỏa cần chở 892 hành khách. Biết mỗi toa tàu có 10 khoang, mỗi khoang có 8 chỗ ngồi. Hỏi đoàn tàu cần ít nhất bao nhiêu toa để chở hết số khách đó?",
         "options": [
           "12 toa",

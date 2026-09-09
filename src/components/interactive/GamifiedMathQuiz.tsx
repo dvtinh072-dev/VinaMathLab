@@ -2956,7 +2956,15 @@ export function GamifiedMathQuiz({
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-amber-500/20 text-amber-300 border border-amber-500/30">
                       <CheckSquare className="w-3 h-3" />
-                      {currentTf.badge || `Câu ${tfCurrentIndex + 1} (Đúng / Sai)`}
+                      {(() => {
+                        const prefix = `Câu ${tfCurrentIndex + 1} (Đúng / Sai)`;
+                        if (!currentTf.badge) return prefix;
+                        const cleaned = currentTf.badge
+                          .replace(/^(?:(?:Câu|Đúng\/Sai|ĐS|Bài)\s*[\d.]+(?:\s*(?:Bài|TN)\s*[\d.]*)?)+[\s.:-]*\s*/i, "")
+                          .replace(/^SGK.*$/i, "")
+                          .trim();
+                        return cleaned ? `${prefix} - ${cleaned}` : prefix;
+                      })()}
                     </span>
 
                     {currentTf.source && (
@@ -3135,7 +3143,15 @@ export function GamifiedMathQuiz({
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                       <PenTool className="w-3 h-3" />
-                      {currentSa.badge || `Câu ${saCurrentIndex + 1} (Trả lời ngắn)`}
+                      {(() => {
+                        const prefix = `Câu ${saCurrentIndex + 1} (Trả lời ngắn)`;
+                        if (!currentSa.badge) return prefix;
+                        const cleaned = currentSa.badge
+                          .replace(/^(?:(?:Câu|Trả lời ngắn|TLN|Bài)\s*[\d.]+(?:\s*(?:Bài|TN)\s*[\d.]*)?)+[\s.:-]*\s*/i, "")
+                          .replace(/^SGK.*$/i, "")
+                          .trim();
+                        return cleaned ? `${prefix} - ${cleaned}` : prefix;
+                      })()}
                     </span>
 
                     {currentSa.source && (
@@ -3265,11 +3281,19 @@ export function GamifiedMathQuiz({
                     }`}
                   >
                     {currentQ.isAiGenerated ? <Bot className="w-3 h-3" /> : <Sparkles className="w-3 h-3" />}
-                    {currentQ.badge && !currentQ.badge.toUpperCase().includes("SGK") && !currentQ.badge.toLowerCase().includes("trang")
-                      ? currentQ.badge
-                      : currentQ.isAiGenerated
+                    {currentQ.isAiGenerated
                       ? `Luyện tập ${currentIndex + 1}`
-                      : `Câu ${currentIndex + 1}`}
+                      : (() => {
+                          const prefix = `Câu ${currentIndex + 1}`;
+                          if (!currentQ.badge) return prefix;
+                          if (currentQ.badge.startsWith("🤖")) return currentQ.badge;
+                          const cleaned = currentQ.badge
+                            .replace(/^(?:(?:Câu|Bài|Dạng)\s*[\d.]+(?:\s*(?:Bài|TN)\s*[\d.]*)?)+[\s.:-]*\s*/i, "")
+                            .replace(/^SGK.*$/i, "")
+                            .replace(/^Bài tập.*$/i, "")
+                            .trim();
+                          return cleaned ? `${prefix} - ${cleaned}` : prefix;
+                        })()}
                   </span>
 
                 {currentQ.source && (

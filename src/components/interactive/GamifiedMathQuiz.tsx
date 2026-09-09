@@ -1538,11 +1538,10 @@ export function GamifiedMathQuiz({
       const savedLessonBest = localStorage.getItem(`vinamath_lesson_score_${gradeKey}_${lessonId}`);
       if (savedLessonBest) {
         setLessonHighScore(Number(savedLessonBest));
-      } else {
-        setLessonHighScore(0);
       }
     }
-  }, [gradeKey, lessonId, user?.exp]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gradeKey, lessonId]);
 
   // Luôn đồng bộ gradeTotalScore với số sao/EXP của học sinh khi đăng nhập
   useEffect(() => {

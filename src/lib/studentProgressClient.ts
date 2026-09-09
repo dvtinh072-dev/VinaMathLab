@@ -4,6 +4,8 @@ export interface LessonProgressItem {
   gradeKey: string;
   lessonTitle: string;
   videoWatchedSeconds: number;
+  lastVideoPosition?: number;
+  isVideoCompleted?: boolean;
   isCompleted: boolean;
   score: number;
   totalQuestions: number;
@@ -107,6 +109,8 @@ export function saveLocalStudentProgressUpdate(params: {
   gradeKey?: string;
   lessonTitle?: string;
   addVideoSeconds?: number;
+  lastVideoPosition?: number;
+  isVideoCompleted?: boolean;
   isCompleted?: boolean;
   score?: number;
   totalQuestions?: number;
@@ -192,6 +196,12 @@ export function saveLocalStudentProgressUpdate(params: {
     const l = existing.lessons[lId];
     if (params.addVideoSeconds && typeof params.addVideoSeconds === "number") {
       l.videoWatchedSeconds = (l.videoWatchedSeconds || 0) + Math.max(0, params.addVideoSeconds);
+    }
+    if (params.lastVideoPosition !== undefined) {
+      l.lastVideoPosition = params.lastVideoPosition;
+    }
+    if (params.isVideoCompleted !== undefined) {
+      l.isVideoCompleted = Boolean(params.isVideoCompleted);
     }
     if (params.isCompleted !== undefined) {
       l.isCompleted = Boolean(params.isCompleted);
@@ -360,5 +370,85 @@ export function markQuestionSolved(
       // background sync
     }
   }
+}
+
+/**
+ * Lấy vị trí thời gian giây xem video dở trước đó của học sinh
+ */
+export function getSavedVideoPosition(lessonId: string, identifier?: string): number {
+  if (typeof window === "undefined" || !lessonId) return 0;
+  const cleanId = (identifier || "guest").trim().toLowerCase();
+  try {
+    const raw = localStorage.getItem(`vinamath_video_pos_${lessonId}_${cleanId}`);
+    if (raw) {
+      const sec = Number(raw);
+      if (!isNaN(sec) && sec > 0) return sec;
+    }
+  } catch {}
+  const prog = getLocalStudentProgress(cleanId);
+  return prog?.lessons[lessonId]?.lastVideoPosition || 0;
+}
+
+/**
+ * Lưu vị trí thời gian video đang xem và trạng thái xem xong
+ */
+export function saveVideoPosition(
+  lessonId: string,
+  identifier: string | undefined,
+  positionSeconds: number,
+  isFinished: boolean = false
+) {
+  if (typeof window === "undefined" || !lessonId) return;
+  const cleanId = (identifier || "guest").trim().toLowerCase();
+  try {
+    localStorage.setItem(`vinamath_video_pos_${lessonId}_${cleanId}`, positionSeconds.toString());
+    if (isFinished) {
+      localStorage.setItem(`vinamath_video_done_${lessonId}_${cleanId}`, "true");
+    }
+  } catch {}
+
+  saveLocalStudentProgressUpdate({
+    userId: identifier,
+    lessonId,
+    lastVideoPosition: positionSeconds,
+    isVideoCompleted: isFinished ? true : undefined,
+  });
+
+  if (identifier && identifier !== "guest") {
+    try {
+      fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: identifier,
+          lessonId,
+          lastVideoPosition: positionSeconds,
+          isVideoCompleted: isFinished ? true : undefined,
+        }),
+      }).catch(() => {});
+    } catch {}
+  }
+}
+
+/**
+ * Kiểm tra học sinh đã xem hoàn thành video bài học này chưa
+ */
+export function isVideoCompleted(lessonId: string, identifier?: string): boolean {
+  if (typeof window === "undefined" || !lessonId) return false;
+  const cleanId = (identifier || "guest").trim().toLowerCase();
+  try {
+    if (localStorage.getItem(`vinamath_video_done_${lessonId}_${cleanId}`) === "true") {
+      return true;
+    }
+  } catch {}
+  const prog = getLocalStudentProgress(cleanId);
+  return Boolean(prog?.lessons[lessonId]?.isVideoCompleted);
+}
+
+/**
+ * Đánh dấu học sinh đã hoàn thành video bài học
+ */
+export function markVideoCompleted(lessonId: string, identifier?: string) {
+  saveVideoPosition(lessonId, identifier, 0, true);
 }
 

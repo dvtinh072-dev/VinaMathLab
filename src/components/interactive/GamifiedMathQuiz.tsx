@@ -55,7 +55,11 @@ import { AiQuestionGeneratorModal } from "@/components/admin/AiQuestionGenerator
 import { 
   saveLocalStudentProgressUpdate,
   isQuestionAlreadySolved,
-  markQuestionSolved 
+  markQuestionSolved,
+  getSavedVideoPosition,
+  saveVideoPosition,
+  isVideoCompleted,
+  markVideoCompleted
 } from "@/lib/studentProgressClient";
 import type { 
   TheorySection, 
@@ -889,6 +893,7 @@ export function GamifiedMathQuiz({
   const [showFullText, setShowFullText] = useState<boolean>(showTextTheory);
   const [videoAnswers, setVideoAnswers] = useState<{ [qId: string]: number }>({});
   const [activeVideoTime, setActiveVideoTime] = useState<number>(0);
+  const [isLessonVideoCompleted, setIsLessonVideoCompleted] = useState<boolean>(false);
   const [shuffledVideoQuestions, setShuffledVideoQuestions] = useState<VideoCheckpointQuestion[]>([]);
 
   // Tự động xáo trộn ngẫu nhiên đáp án của các ví dụ minh họa mỗi lần truy cập bài học
@@ -965,7 +970,7 @@ export function GamifiedMathQuiz({
   // State theo từng bài học (Bắt đầu lại khi vào bài khác)
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<{
-    [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean };
+    [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
   }>({});
   const [sessionScore, setSessionScore] = useState(0);
   const [streak, setStreak] = useState(0);
@@ -1005,14 +1010,14 @@ export function GamifiedMathQuiz({
   // State cho Phần II: Đúng / Sai
   const [tfCurrentIndex, setTfCurrentIndex] = useState(0);
   const [tfUserAnswers, setTfUserAnswers] = useState<{
-    [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean };
+    [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
   }>({});
 
   // State cho Phần III: Trả lời ngắn
   const [saCurrentIndex, setSaCurrentIndex] = useState(0);
   const [saInputText, setSaInputText] = useState("");
   const [saUserAnswers, setSaUserAnswers] = useState<{
-    [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean };
+    [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
   }>({});
 
   const handleTfSelect = (subId: string, value: boolean) => {
@@ -1229,10 +1234,18 @@ export function GamifiedMathQuiz({
   useEffect(() => {
     if (!youtubeVideoId || quizMode !== "theory") return;
 
+    const studentId = user?.id || user?.studentCode || user?.username;
+    let currentWatchedPos = Math.max(0, activeVideoTime || 0);
+
     // Helper gửi tích lũy số giây xem video về server và localStorage
     const syncVideoTime = (seconds: number) => {
-      const studentId = user?.id || user?.studentCode || user?.username;
-      if (!studentId || seconds <= 0) return;
+      const studentIdentifier = user?.id || user?.studentCode || user?.username;
+      if (!studentIdentifier || seconds <= 0) return;
+
+      currentWatchedPos += seconds;
+
+      // Lưu chính xác timestamp vị trí video đang phát
+      saveVideoPosition(lessonId, studentIdentifier, currentWatchedPos, false);
 
       // 1. Lưu cục bộ (localStorage) ngay lập tức để không bao giờ mất dữ liệu kể cả trên Vercel/serverless
       saveLocalStudentProgressUpdate({
@@ -1246,6 +1259,7 @@ export function GamifiedMathQuiz({
         gradeKey,
         lessonTitle,
         addVideoSeconds: seconds,
+        lastVideoPosition: currentWatchedPos,
       });
 
       // 2. Gửi đồng bộ lên server
@@ -1257,6 +1271,7 @@ export function GamifiedMathQuiz({
           studentCode: user?.studentCode,
           username: user?.username,
           addVideoSeconds: seconds,
+          lastVideoPosition: currentWatchedPos,
           lessonId,
           gradeKey,
           lessonTitle,
@@ -1277,7 +1292,7 @@ export function GamifiedMathQuiz({
       // Gửi thêm 5 giây khi rời tab video
       syncVideoTime(5);
     };
-  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle]);
+  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle, activeVideoTime]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
   const recordMistake = async (
@@ -1540,14 +1555,112 @@ export function GamifiedMathQuiz({
     const shuffledList = rawList.map(shuffleOptions);
     setActiveQuizList(shuffledList);
 
-    // Reset session game state
-    setCurrentIndex(0);
-    setUserAnswers({});
-    setTfCurrentIndex(0);
-    setTfUserAnswers({});
-    setSaCurrentIndex(0);
-    setSaInputText("");
-    setSaUserAnswers({});
+    const studentIdentifier = user?.id || user?.studentCode || user?.username;
+
+    // 1. Tự động kiểm tra và đánh dấu các câu Trắc nghiệm đã hoàn thành
+    const preAnswers: {
+      [index: number]: {
+        selectedOption: number;
+        isCorrect: boolean;
+        isAlreadySolved?: boolean;
+        isPreviouslyCompleted?: boolean;
+      };
+    } = {};
+    let firstUnfinishedIdx = -1;
+
+    shuffledList.forEach((q, idx) => {
+      const qKey = `${lessonId}:quiz:${q.id || idx}`;
+      if (isQuestionAlreadySolved(studentIdentifier, qKey)) {
+        preAnswers[idx] = {
+          selectedOption: q.correctIndex,
+          isCorrect: true,
+          isAlreadySolved: true,
+          isPreviouslyCompleted: true,
+        };
+      } else if (firstUnfinishedIdx === -1) {
+        firstUnfinishedIdx = idx;
+      }
+    });
+
+    setUserAnswers(preAnswers);
+    // Nhảy ngay đến câu trắc nghiệm còn lại đầu tiên
+    setCurrentIndex(firstUnfinishedIdx !== -1 ? firstUnfinishedIdx : 0);
+
+    // 2. Tự động kiểm tra và đánh dấu các câu Đúng / Sai đã hoàn thành
+    const preTfAnswers: {
+      [index: number]: {
+        selected: Record<string, boolean>;
+        isSubmitted: boolean;
+        correctCount: number;
+        isAlreadySolved?: boolean;
+        isPreviouslyCompleted?: boolean;
+      };
+    } = {};
+    let firstUnfinishedTf = -1;
+
+    currentTfList.forEach((tf, tfIdx) => {
+      const tfKey = `${lessonId}:tf:${tf.id || tfIdx}`;
+      if (isQuestionAlreadySolved(studentIdentifier, tfKey)) {
+        const allCorrectSelected: Record<string, boolean> = {};
+        tf.subItems.forEach((sub) => {
+          allCorrectSelected[sub.id] = sub.correctAnswer;
+        });
+        preTfAnswers[tfIdx] = {
+          selected: allCorrectSelected,
+          isSubmitted: true,
+          correctCount: tf.subItems.length,
+          isAlreadySolved: true,
+          isPreviouslyCompleted: true,
+        };
+      } else if (firstUnfinishedTf === -1) {
+        firstUnfinishedTf = tfIdx;
+      }
+    });
+
+    setTfUserAnswers(preTfAnswers);
+    setTfCurrentIndex(firstUnfinishedTf !== -1 ? firstUnfinishedTf : 0);
+
+    // 3. Tự động kiểm tra và đánh dấu các câu Trả lời ngắn đã hoàn thành
+    const preSaAnswers: {
+      [index: number]: {
+        answerText: string;
+        isCorrect: boolean;
+        isSubmitted: boolean;
+        isAlreadySolved?: boolean;
+        isPreviouslyCompleted?: boolean;
+      };
+    } = {};
+    let firstUnfinishedSa = -1;
+
+    currentSaList.forEach((sa, saIdx) => {
+      const saKey = `${lessonId}:sa:${sa.id || saIdx}`;
+      if (isQuestionAlreadySolved(studentIdentifier, saKey)) {
+        preSaAnswers[saIdx] = {
+          answerText: sa.correctAnswer,
+          isCorrect: true,
+          isSubmitted: true,
+          isAlreadySolved: true,
+          isPreviouslyCompleted: true,
+        };
+      } else if (firstUnfinishedSa === -1) {
+        firstUnfinishedSa = saIdx;
+      }
+    });
+
+    setSaUserAnswers(preSaAnswers);
+    const targetSaIdx = firstUnfinishedSa !== -1 ? firstUnfinishedSa : 0;
+    setSaCurrentIndex(targetSaIdx);
+    setSaInputText(preSaAnswers[targetSaIdx]?.answerText || "");
+
+    // Tự động chuyển đến phần thi còn câu chưa làm nếu Phần I đã hoàn thành hết
+    if (firstUnfinishedIdx === -1 && shuffledList.length > 0) {
+      if (firstUnfinishedTf !== -1 && currentTfList.length > 0) {
+        setActiveSectionTab("true_false");
+      } else if (firstUnfinishedSa !== -1 && currentSaList.length > 0) {
+        setActiveSectionTab("short_answer");
+      }
+    }
+
     setSessionScore(0);
     setStreak(0);
     setLives(3);
@@ -1559,6 +1672,16 @@ export function GamifiedMathQuiz({
     loadAndShuffleQuiz("sgk");
 
     if (typeof window !== "undefined") {
+      const studentId = user?.id || user?.studentCode || user?.username;
+
+      // Khôi phục vị trí video đang xem dở & trạng thái video đã hoàn thành
+      const savedPos = getSavedVideoPosition(lessonId, studentId);
+      if (savedPos > 5) {
+        setActiveVideoTime(savedPos);
+      }
+      const videoDone = isVideoCompleted(lessonId, studentId);
+      setIsLessonVideoCompleted(videoDone);
+
       const savedGradeScore = localStorage.getItem(`vinamath_grade_score_${gradeKey}`);
       const initialScore = Math.max(
         savedGradeScore ? Number(savedGradeScore) : 0,
@@ -1574,12 +1697,98 @@ export function GamifiedMathQuiz({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gradeKey, lessonId]);
 
-  // Luôn đồng bộ gradeTotalScore với số sao/EXP của học sinh khi đăng nhập
+  // Luôn đồng bộ gradeTotalScore, vị trí video và câu hỏi đã giải khi học sinh đăng nhập
   useEffect(() => {
     if (user?.exp !== undefined && user.exp > 0) {
       setGradeTotalScore((prev) => Math.max(prev, user.exp || 0));
     }
-  }, [user?.exp]);
+
+    const studentId = user?.id || user?.studentCode || user?.username;
+    if (!studentId) return;
+
+    // 1. Khôi phục video position nếu chưa nạp
+    const savedPos = getSavedVideoPosition(lessonId, studentId);
+    if (savedPos > 5 && activeVideoTime === 0) {
+      setActiveVideoTime(savedPos);
+    }
+    const videoDone = isVideoCompleted(lessonId, studentId);
+    setIsLessonVideoCompleted(videoDone);
+
+    // 2. Tự động kiểm tra và đánh dấu các câu Multiple Choice đã hoàn thành
+    if (activeQuizList.length > 0) {
+      setUserAnswers((prev) => {
+        let hasChanges = false;
+        const updated = { ...prev };
+        activeQuizList.forEach((q, idx) => {
+          if (!updated[idx]) {
+            const qKey = `${lessonId}:quiz:${q.id || idx}`;
+            if (isQuestionAlreadySolved(studentId, qKey)) {
+              updated[idx] = {
+                selectedOption: q.correctIndex,
+                isCorrect: true,
+                isAlreadySolved: true,
+                isPreviouslyCompleted: true,
+              };
+              hasChanges = true;
+            }
+          }
+        });
+        return hasChanges ? updated : prev;
+      });
+    }
+
+    // 3. Tự động kiểm tra các câu True / False đã hoàn thành
+    if (currentTfList.length > 0) {
+      setTfUserAnswers((prev) => {
+        let hasChanges = false;
+        const updated = { ...prev };
+        currentTfList.forEach((tf, tfIdx) => {
+          if (!updated[tfIdx]) {
+            const tfKey = `${lessonId}:tf:${tf.id || tfIdx}`;
+            if (isQuestionAlreadySolved(studentId, tfKey)) {
+              const allCorrectSelected: Record<string, boolean> = {};
+              tf.subItems.forEach((sub) => {
+                allCorrectSelected[sub.id] = sub.correctAnswer;
+              });
+              updated[tfIdx] = {
+                selected: allCorrectSelected,
+                isSubmitted: true,
+                correctCount: tf.subItems.length,
+                isAlreadySolved: true,
+                isPreviouslyCompleted: true,
+              };
+              hasChanges = true;
+            }
+          }
+        });
+        return hasChanges ? updated : prev;
+      });
+    }
+
+    // 4. Tự động kiểm tra các câu Short Answer đã hoàn thành
+    if (currentSaList.length > 0) {
+      setSaUserAnswers((prev) => {
+        let hasChanges = false;
+        const updated = { ...prev };
+        currentSaList.forEach((sa, saIdx) => {
+          if (!updated[saIdx]) {
+            const saKey = `${lessonId}:sa:${sa.id || saIdx}`;
+            if (isQuestionAlreadySolved(studentId, saKey)) {
+              updated[saIdx] = {
+                answerText: sa.correctAnswer,
+                isCorrect: true,
+                isSubmitted: true,
+                isAlreadySolved: true,
+                isPreviouslyCompleted: true,
+              };
+              hasChanges = true;
+            }
+          }
+        });
+        return hasChanges ? updated : prev;
+      });
+    }
+  }, [user?.id, user?.studentCode, user?.username, user?.exp, lessonId]);
 
   // Âm thanh tương tác Web Audio API
   const playSound = (type: "correct" | "wrong" | "victory" | "combo" | "ai") => {
@@ -2164,24 +2373,29 @@ export function GamifiedMathQuiz({
                   const isCurrent = idx === currentIndex;
                   const studentId = user?.id || user?.studentCode || user?.username;
                   const isPrevSolved = isQuestionAlreadySolved(studentId, `${lessonId}:quiz:${q.id || idx}`);
+                  const isDone = Boolean(ans?.isPreviouslyCompleted || isPrevSolved || (ans && ans.isCorrect));
+
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
                     pillStyle = "bg-cyan-500 text-slate-950 font-black border-cyan-300 shadow-md shadow-cyan-500/40 scale-105";
-                  } else if (ans) {
-                    pillStyle = ans.isCorrect
-                      ? "bg-emerald-950/90 text-emerald-300 border-emerald-500/70"
-                      : "bg-rose-950/90 text-rose-300 border-rose-500/70";
-                  } else if (isPrevSolved) {
-                    pillStyle = "bg-cyan-950/40 text-cyan-400 border-cyan-500/40 hover:border-cyan-400";
+                  } else if (isDone) {
+                    pillStyle = "bg-emerald-950/90 text-emerald-300 border-emerald-500/70 hover:border-emerald-400";
+                  } else if (ans && !ans.isCorrect) {
+                    pillStyle = "bg-rose-950/90 text-rose-300 border-rose-500/70";
                   }
+
                   return (
                     <button
                       key={idx}
                       onClick={() => handleJumpToQuestion(idx)}
                       className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
-                      title={`Chuyển sang Câu ${idx + 1}${isPrevSolved ? " (Đã hoàn thành đạt điểm trước đó)" : ""}`}
+                      title={`Chuyển sang Câu ${idx + 1}${isDone ? " (Đã hoàn thành đạt điểm)" : ""}`}
                     >
-                      {idx + 1}
+                      {isDone && !isCurrent ? (
+                        <span className="flex items-center text-[10px] text-emerald-400 font-black">✓{idx + 1}</span>
+                      ) : (
+                        idx + 1
+                      )}
                     </button>
                   );
                 })
@@ -2191,27 +2405,32 @@ export function GamifiedMathQuiz({
                   const isCurrent = idx === tfCurrentIndex;
                   const studentId = user?.id || user?.studentCode || user?.username;
                   const isPrevSolved = isQuestionAlreadySolved(studentId, `${lessonId}:tf:${tf.id || idx}`);
+                  const isDone = Boolean(ans?.isPreviouslyCompleted || isPrevSolved || (ans && ans.correctCount === 4));
+
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
                     pillStyle = "bg-amber-500 text-slate-950 font-black border-amber-300 shadow-md shadow-amber-500/40 scale-105";
+                  } else if (isDone) {
+                    pillStyle = "bg-emerald-950/90 text-emerald-300 border-emerald-500/70 hover:border-emerald-400";
                   } else if (ans && ans.isSubmitted) {
                     pillStyle =
-                      ans.correctCount === 4
-                        ? "bg-emerald-950/90 text-emerald-300 border-emerald-500/70"
-                        : ans.correctCount >= 2
+                      ans.correctCount >= 2
                         ? "bg-amber-950/90 text-amber-300 border-amber-500/70"
                         : "bg-rose-950/90 text-rose-300 border-rose-500/70";
-                  } else if (isPrevSolved) {
-                    pillStyle = "bg-amber-950/40 text-amber-400 border-amber-500/40 hover:border-amber-400";
                   }
+
                   return (
                     <button
                       key={idx}
                       onClick={() => setTfCurrentIndex(idx)}
                       className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
-                      title={`Chuyển sang Câu Đúng/Sai ${idx + 1}${isPrevSolved ? " (Đã hoàn thành đạt điểm trước đó)" : ""}`}
+                      title={`Chuyển sang Câu Đúng/Sai ${idx + 1}${isDone ? " (Đã hoàn thành đạt điểm)" : ""}`}
                     >
-                      {idx + 1}
+                      {isDone && !isCurrent ? (
+                        <span className="flex items-center text-[10px] text-emerald-400 font-black">✓{idx + 1}</span>
+                      ) : (
+                        idx + 1
+                      )}
                     </button>
                   );
                 })
@@ -2220,16 +2439,17 @@ export function GamifiedMathQuiz({
                   const isCurrent = idx === saCurrentIndex;
                   const studentId = user?.id || user?.studentCode || user?.username;
                   const isPrevSolved = isQuestionAlreadySolved(studentId, `${lessonId}:sa:${sa.id || idx}`);
+                  const isDone = Boolean(ans?.isPreviouslyCompleted || isPrevSolved || (ans && ans.isCorrect));
+
                   let pillStyle = "bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-600";
                   if (isCurrent) {
                     pillStyle = "bg-emerald-500 text-slate-950 font-black border-emerald-300 shadow-md shadow-emerald-500/40 scale-105";
-                  } else if (ans && ans.isSubmitted) {
-                    pillStyle = ans.isCorrect
-                      ? "bg-emerald-950/90 text-emerald-300 border-emerald-500/70"
-                      : "bg-rose-950/90 text-rose-300 border-rose-500/70";
-                  } else if (isPrevSolved) {
-                    pillStyle = "bg-emerald-950/40 text-emerald-400 border-emerald-500/40 hover:border-emerald-400";
+                  } else if (isDone) {
+                    pillStyle = "bg-emerald-950/90 text-emerald-300 border-emerald-500/70 hover:border-emerald-400";
+                  } else if (ans && ans.isSubmitted && !ans.isCorrect) {
+                    pillStyle = "bg-rose-950/90 text-rose-300 border-rose-500/70";
                   }
+
                   return (
                     <button
                       key={idx}
@@ -2238,9 +2458,13 @@ export function GamifiedMathQuiz({
                         setSaInputText(saUserAnswers[idx]?.answerText || "");
                       }}
                       className={`w-8 h-8 sm:w-7 sm:h-7 rounded-lg text-xs font-black flex items-center justify-center shrink-0 border transition-all active:scale-95 ${pillStyle}`}
-                      title={`Chuyển sang Câu Trả lời ngắn ${idx + 1}${isPrevSolved ? " (Đã hoàn thành đạt điểm trước đó)" : ""}`}
+                      title={`Chuyển sang Câu Trả lời ngắn ${idx + 1}${isDone ? " (Đã hoàn thành đạt điểm)" : ""}`}
                     >
-                      {idx + 1}
+                      {isDone && !isCurrent ? (
+                        <span className="flex items-center text-[10px] text-emerald-400 font-black">✓{idx + 1}</span>
+                      ) : (
+                        idx + 1
+                      )}
                     </button>
                   );
                 })}
@@ -2297,17 +2521,99 @@ export function GamifiedMathQuiz({
                   </div>
                 </div>
 
-                {/* Nút Xem lại lý thuyết chữ khi cần */}
-                {theorySections && theorySections.length > 0 && (
+                <div className="flex items-center gap-2">
+                  {!isLessonVideoCompleted ? (
+                    <button
+                      onClick={() => {
+                        const studentId = user?.id || user?.studentCode || user?.username;
+                        markVideoCompleted(lessonId, studentId);
+                        setIsLessonVideoCompleted(true);
+                        playSound("victory");
+                      }}
+                      className="px-2.5 py-1 rounded-xl text-[11px] font-black bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-900 hover:text-white flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                      title="Đánh dấu bạn đã xem xong toàn bộ video bài học này"
+                    >
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Đã xem xong video</span>
+                    </button>
+                  ) : (
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Đã hoàn thành video</span>
+                    </span>
+                  )}
+
                   <button
-                    onClick={() => setShowFullText(!showFullText)}
-                    className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-slate-900 border border-slate-700 hover:border-emerald-400 text-slate-300 hover:text-emerald-300 flex items-center gap-1.5 transition-all shadow-sm"
+                    onClick={() => handleSwitchMode("sgk")}
+                    className="px-3 py-1 rounded-xl text-[11px] font-black bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:from-blue-500 hover:to-cyan-400 flex items-center gap-1.5 transition-all shadow-sm cursor-pointer hover:scale-105 active:scale-95"
                   >
-                    {showFullText ? <EyeOff className="w-3.5 h-3.5 text-slate-400" /> : <Eye className="w-3.5 h-3.5 text-emerald-400" />}
-                    <span>{showFullText ? "Thu gọn bản chữ" : "Xem giáo án bản chữ"}</span>
+                    <span>Làm bài tập ngay</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </button>
-                )}
+
+                  {/* Nút Xem lại lý thuyết chữ khi cần */}
+                  {theorySections && theorySections.length > 0 && (
+                    <button
+                      onClick={() => setShowFullText(!showFullText)}
+                      className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-slate-900 border border-slate-700 hover:border-emerald-400 text-slate-300 hover:text-emerald-300 flex items-center gap-1.5 transition-all shadow-sm"
+                    >
+                      {showFullText ? <EyeOff className="w-3.5 h-3.5 text-slate-400" /> : <Eye className="w-3.5 h-3.5 text-emerald-400" />}
+                      <span>{showFullText ? "Thu gọn bản chữ" : "Giáo án chữ"}</span>
+                    </button>
+                  )}
+                </div>
               </div>
+
+              {/* Thông báo học sinh đã xem hoàn thành video */}
+              {isLessonVideoCompleted && (
+                <div className="p-3.5 rounded-xl bg-emerald-950/70 border border-emerald-500/50 flex flex-wrap items-center justify-between gap-3 shadow-lg animate-in fade-in duration-200">
+                  <div className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                    <div>
+                      <div className="text-xs sm:text-sm font-black text-emerald-200">
+                        🎉 Bạn đã xem hoàn thành video này trong lượt học trước!
+                      </div>
+                      <div className="text-[11px] text-slate-300">
+                        Không cần xem lại video trừ khi muốn ôn tập. Bạn có thể chuyển sang giải bài tập còn lại ngay.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => handleSwitchMode("sgk")}
+                      className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-xs flex items-center gap-1.5 shadow-md shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                    >
+                      <span>Vào làm bài tập ngay</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Thông báo đang phát tiếp từ vị trí trước đó */}
+              {activeVideoTime > 0 && (
+                <div className="p-2.5 rounded-xl bg-cyan-950/70 border border-cyan-500/40 flex flex-wrap items-center justify-between gap-2 text-xs shadow-md animate-in fade-in duration-200">
+                  <div className="flex items-center gap-2 text-cyan-300 font-bold">
+                    <PlayCircle className="w-4 h-4 text-cyan-400 animate-pulse shrink-0" />
+                    <span>
+                      Đang phát tiếp từ vị trí đã xem: {Math.floor(activeVideoTime / 60)} phút {(activeVideoTime % 60).toString().padStart(2, "0")} giây
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => {
+                        const studentId = user?.id || user?.studentCode || user?.username;
+                        saveVideoPosition(lessonId, studentId, 0, false);
+                        setActiveVideoTime(0);
+                      }}
+                      className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700 transition-all cursor-pointer"
+                    >
+                      <RotateCcw className="w-3 h-3 text-cyan-400" />
+                      <span>Phát lại từ đầu video</span>
+                    </button>
+                  </div>
+                </div>
+              )}
 
               {/* Video Embed Frame Responsive 16:9 */}
               {(() => {
@@ -2349,7 +2655,11 @@ export function GamifiedMathQuiz({
 
                       {activeVideoTime > 0 && (
                         <button
-                          onClick={() => setActiveVideoTime(0)}
+                          onClick={() => {
+                            const studentId = user?.id || user?.studentCode || user?.username;
+                            saveVideoPosition(lessonId, studentId, 0, false);
+                            setActiveVideoTime(0);
+                          }}
                           className="inline-flex items-center gap-1 text-[11px] text-slate-400 hover:text-cyan-300 transition-colors"
                         >
                           <RotateCcw className="w-3 h-3" />
@@ -3022,6 +3332,19 @@ export function GamifiedMathQuiz({
             return (
               <div className="space-y-3 pt-0.5 animate-in fade-in-50 duration-200">
                 <div className="p-3.5 sm:p-4 rounded-xl bg-[#131B2E] border border-amber-500/40 space-y-3 shadow-md">
+                  {/* Banner Đã hoàn thành */}
+                  {currentTfAns.isPreviouslyCompleted && (
+                    <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-emerald-950/70 border border-emerald-500/50 text-emerald-300 text-xs font-bold animate-in fade-in duration-150">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                        <span>Đã hoàn thành câu Đúng / Sai này trong lượt học trước (4/4 ý đúng) - Không cần làm lại</span>
+                      </div>
+                      <span className="text-[10px] bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/30 text-emerald-200 shrink-0 font-black">
+                        Đã nhận điểm ⭐
+                      </span>
+                    </div>
+                  )}
+
                   {/* Top Bar: Badge & Source */}
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-amber-500/20 text-amber-300 border border-amber-500/30">
@@ -3214,6 +3537,19 @@ export function GamifiedMathQuiz({
             return (
               <div className="space-y-3 pt-0.5 animate-in fade-in-50 duration-200">
                 <div className="p-3.5 sm:p-4 rounded-xl bg-[#131B2E] border border-emerald-500/40 space-y-3 shadow-md">
+                  {/* Banner Đã hoàn thành */}
+                  {currentSaAns?.isPreviouslyCompleted && (
+                    <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-emerald-950/70 border border-emerald-500/50 text-emerald-300 text-xs font-bold animate-in fade-in duration-150">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                        <span>Đã hoàn thành câu Trả lời ngắn này trong lượt học trước (Đáp án: {currentSa.correctAnswer}) - Không cần làm lại</span>
+                      </div>
+                      <span className="text-[10px] bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/30 text-emerald-200 shrink-0 font-black">
+                        Đã nhận điểm ⭐
+                      </span>
+                    </div>
+                  )}
+
                   {/* Top Bar: Badge & Source */}
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
@@ -3426,6 +3762,19 @@ export function GamifiedMathQuiz({
               )}
             </div>
 
+            {/* Banner Đã hoàn thành trong lượt học trước */}
+            {userAnswers[currentIndex]?.isPreviouslyCompleted && (
+              <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-emerald-950/70 border border-emerald-500/50 text-emerald-300 text-xs font-bold animate-in fade-in duration-150">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Đã hoàn thành câu hỏi này trong lượt học trước - Không cần làm lại</span>
+                </div>
+                <span className="text-[10px] bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/30 text-emerald-200 shrink-0 font-black">
+                  Đã nhận +100 EXP ⭐
+                </span>
+              </div>
+            )}
+
             {/* Question Text with KaTeX Math & Fractions */}
             <h4 className="text-sm sm:text-base font-bold text-white leading-snug">
               <MathFormattedText text={currentQ.question} />
@@ -3497,7 +3846,12 @@ export function GamifiedMathQuiz({
                   <Sparkles className="w-3.5 h-3.5" /> Lời Giải Chi Tiết:
                 </div>
                 {selectedOption === currentQ.correctIndex ? (
-                  userAnswers[currentIndex]?.isAlreadySolved ? (
+                  userAnswers[currentIndex]?.isPreviouslyCompleted ? (
+                    <span className="text-[10px] font-black text-emerald-300 bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/40 flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+                      Đã hoàn thành trước đó (Đã đạt điểm)
+                    </span>
+                  ) : userAnswers[currentIndex]?.isAlreadySolved ? (
                     <span className="text-[10px] font-black text-amber-300 bg-amber-500/20 px-2.5 py-0.5 rounded-full border border-amber-500/30 flex items-center gap-1">
                       <Sparkles className="w-3 h-3 text-amber-400" />
                       Đã tính điểm trước đó (Làm lại: +0 EXP)

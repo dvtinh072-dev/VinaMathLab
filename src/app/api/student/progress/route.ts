@@ -258,6 +258,8 @@ export async function POST(req: Request) {
       gradeKey,
       lessonTitle,
       addVideoSeconds,
+      lastVideoPosition,
+      isVideoCompleted,
       isCompleted,
       score,
       totalQuestions,
@@ -330,6 +332,12 @@ export async function POST(req: Request) {
       const l = studentRecord.lessons[lessonId];
       if (addVideoSeconds && typeof addVideoSeconds === "number") {
         l.videoWatchedSeconds = (l.videoWatchedSeconds || 0) + Math.max(0, addVideoSeconds);
+      }
+      if (lastVideoPosition !== undefined) {
+        l.lastVideoPosition = lastVideoPosition;
+      }
+      if (isVideoCompleted !== undefined) {
+        l.isVideoCompleted = Boolean(isVideoCompleted);
       }
       if (isCompleted !== undefined) {
         l.isCompleted = Boolean(isCompleted);

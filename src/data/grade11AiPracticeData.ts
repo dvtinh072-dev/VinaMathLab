@@ -3639,5 +3639,1392 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       "explanation": "Cao nhất khi $\\sin = 1 \\Leftrightarrow \\pi(t - 8)/12 = \\pi/2 \\Leftrightarrow t - 8 = 6 \\Leftrightarrow t = 14$ giờ (2 giờ chiều)."
     }
   ]
-}
+},
+  // ==========================================
+  // BÀI 4: PHƯƠNG TRÌNH LƯỢNG GIÁC CƠ BẢN
+  // ==========================================
+  "t11-b4-phuong-trinh-luong-giac-co-ban": {
+    "quizQuestions": [
+      {
+        "id": "ai-11.4.1",
+        "badge": "Luyện thêm 1 - Điều kiện phương trình sin x = 2m + 3 có nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\sin x = 2m + 3$ có nghiệm khi và chỉ khi:",
+        "options": [
+          "$-2 \\le m \\le -1$",
+          "$-1 \\le m \\le 1$",
+          "$m \\le -1$",
+          "$-2 < m < -1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Điều kiện có nghiệm: $-1 \\le 2m + 3 \\le 1 \\Leftrightarrow -4 \\le 2m \\le -2 \\Leftrightarrow -2 \\le m \\le -1$."
+      },
+      {
+        "id": "ai-11.4.2",
+        "badge": "Luyện thêm 2 - Công thức nghiệm sin u = sin v theo độ",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Công thức nghiệm của phương trình $\\sin x = \\sin 40^\\circ$ là:",
+        "options": [
+          "$\\left[\\begin{array}{l} x = 40^\\circ + k360^\\circ \\\\ x = 140^\\circ + k360^\\circ \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = 40^\\circ + k360^\\circ \\\\ x = -40^\\circ + k360^\\circ \\end{end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = 40^\\circ + k180^\\circ \\\\ x = 140^\\circ + k180^\\circ \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$x = 40^\\circ + k360^\\circ \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin x = \\sin 40^\\circ \\Leftrightarrow x = 40^\\circ + k360^\\circ$ hoặc $x = 180^\\circ - 40^\\circ + k360^\\circ = 140^\\circ + k360^\\circ$ ($k \\in \\mathbb{Z}$)."
+      },
+      {
+        "id": "ai-11.4.3",
+        "badge": "Luyện thêm 3 - Trường hợp đặc biệt sin x = -1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\sin x = -1$ là:",
+        "options": [
+          "$x = -\\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pi + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin x = -1 \\Leftrightarrow x = -\\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.4",
+        "badge": "Luyện thêm 4 - Giải phương trình sin 2x = 1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\sin 2x = 1$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{4} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin 2x = 1 \\Leftrightarrow 2x = \\dfrac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.5",
+        "badge": "Luyện thêm 5 - Giải phương trình sin x = -sqrt(3)/2",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Tập nghiệm của phương trình $\\sin x = -\\dfrac{\\sqrt{3}}{2}$ là:",
+        "options": [
+          "$\\left\\{-\\dfrac{\\pi}{3} + k2\\pi; \\dfrac{4\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{\\dfrac{\\pi}{3} + k2\\pi; \\dfrac{2\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{\\pm \\dfrac{\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{-\\dfrac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}\\right\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin x = \\sin\\left(-\\dfrac{\\pi}{3}\\right) \\Leftrightarrow x = -\\dfrac{\\pi}{3} + k2\\pi$ hoặc $x = \\pi - \\left(-\\dfrac{\\pi}{3}\\right) + k2\\pi = \\dfrac{4\\pi}{3} + k2\\pi$."
+      },
+      {
+        "id": "ai-11.4.6",
+        "badge": "Luyện thêm 6 - Phương trình sin(3x + pi/6) = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\sin\\left(3x + \\dfrac{\\pi}{6}\\right) = 0$ là:",
+        "options": [
+          "$x = -\\dfrac{\\pi}{18} + \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{18} + \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{18} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3x + \\dfrac{\\pi}{6} = k\\pi \\Leftrightarrow 3x = -\\dfrac{\\pi}{6} + k\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{18} + \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.7",
+        "badge": "Luyện thêm 7 - Số nghiệm của sin x = sqrt(2)/2 trên [0; 2pi]",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Số nghiệm của phương trình $\\sin x = \\dfrac{\\sqrt{2}}{2}$ trên đoạn $[0; 2\\pi]$ là:",
+        "options": [
+          "$2$",
+          "$1$",
+          "$3$",
+          "$4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin x = \\dfrac{\\sqrt{2}}{2} = \\sin\\dfrac{\\pi}{4}$. Trên $[0; 2\\pi]$ có 2 nghiệm là $x = \\dfrac{\\pi}{4}$ và $x = \\dfrac{3\\pi}{4}$."
+      },
+      {
+        "id": "ai-11.4.8",
+        "badge": "Luyện thêm 8 - Nghiệm dương nhỏ nhất của sin 2x = 1/2",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm dương nhỏ nhất của phương trình $\\sin 2x = \\dfrac{1}{2}$ là:",
+        "options": [
+          "$\\dfrac{\\pi}{12}$",
+          "$\\dfrac{\\pi}{6}$",
+          "$\\dfrac{5\\pi}{12}$",
+          "$\\dfrac{\\pi}{3}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x = \\dfrac{\\pi}{6} + k2\\pi \\Rightarrow x = \\dfrac{\\pi}{12} + k\\pi$ hoặc $2x = \\dfrac{5\\pi}{6} + k2\\pi \\Rightarrow x = \\dfrac{5\\pi}{12} + k\\pi$. Nghiệm dương nhỏ nhất là $\\dfrac{\\pi}{12}$ (khi $k = 0$ họ 1)."
+      },
+      {
+        "id": "ai-11.4.9",
+        "badge": "Luyện thêm 9 - Điều kiện có nghiệm của cos x = 1 - 2m",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\cos x = 1 - 2m$ có nghiệm khi và chỉ khi:",
+        "options": [
+          "$0 \\le m \\le 1$",
+          "$-1 \\le m \\le 1$",
+          "$m \\ge 0$",
+          "$0 < m < 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$-1 \\le 1 - 2m \\le 1 \\Leftrightarrow -2 \\le -2m \\le 0 \\Leftrightarrow 0 \\le m \\le 1$."
+      },
+      {
+        "id": "ai-11.4.10",
+        "badge": "Luyện thêm 10 - Trường hợp đặc biệt cos 2x = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cos 2x = 0$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.11",
+        "badge": "Luyện thêm 11 - Giải phương trình cos x = -1/2",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cos x = -\\dfrac{1}{2}$ là:",
+        "options": [
+          "$x = \\pm \\dfrac{2\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pm \\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pm \\dfrac{5\\pi}{6} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{2\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cos x = -\\dfrac{1}{2} = \\cos\\dfrac{2\\pi}{3} \\Leftrightarrow x = \\pm \\dfrac{2\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.12",
+        "badge": "Luyện thêm 12 - Giải phương trình cos(x + pi/3) = 1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cos\\left(x + \\dfrac{\\pi}{3}\\right) = 1$ là:",
+        "options": [
+          "$x = -\\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{2\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x + \\dfrac{\\pi}{3} = k2\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.13",
+        "badge": "Luyện thêm 13 - Giải phương trình cos 3x = cos 2x",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cos 3x = \\cos 2x$ là:",
+        "options": [
+          "$\\left[\\begin{array}{l} x = k2\\pi \\\\ x = \\dfrac{k2\\pi}{5} \\end{array}\\right. (k \\in \\mathbb{Z})$ tức là $x = \\dfrac{k2\\pi}{5} \\ (k \\in \\mathbb{Z})$",
+          "$x = k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{k\\pi}{5} \\ (k \\in \\mathbb{Z})$",
+          "$x = k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3x = \\pm 2x + k2\\pi \\Leftrightarrow 3x - 2x = k2\\pi \\Rightarrow x = k2\\pi$ hoặc $3x + 2x = k2\\pi \\Rightarrow x = \\dfrac{k2\\pi}{5}$. Vì $k2\\pi = \\dfrac{5k \\cdot 2\\pi}{5}$ nên họ thứ nhất chứa trong họ thứ hai."
+      },
+      {
+        "id": "ai-11.4.14",
+        "badge": "Luyện thêm 14 - Số điểm biểu diễn nghiệm cos 2x = -1 trên đường tròn",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Số điểm biểu diễn các nghiệm của phương trình $\\cos 2x = -1$ trên đường tròn lượng giác là:",
+        "options": [
+          "$2$",
+          "$1$",
+          "$4$",
+          "$3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x = \\pi + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$. Chu kỳ $k\\pi = \\dfrac{k2\\pi}{2}$ nên có đúng 2 điểm biểu diễn (điểm $(0; 1)$ và $(0; -1)$)."
+      },
+      {
+        "id": "ai-11.4.15",
+        "badge": "Luyện thêm 15 - Tổng các nghiệm của cos x = sqrt(3)/2 trên [0; 2pi]",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Tổng tất cả các nghiệm của phương trình $\\cos x = \\dfrac{\\sqrt{3}}{2}$ trên đoạn $[0; 2\\pi]$ bằng:",
+        "options": [
+          "$2\\pi$",
+          "$\\pi$",
+          "$\\dfrac{\\pi}{3}$",
+          "$3\\pi$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trên $[0; 2\\pi]$, các nghiệm là $x_1 = \\dfrac{\\pi}{6}$ và $x_2 = 2\\pi - \\dfrac{\\pi}{6} = \\dfrac{11\\pi}{6}$. Tổng là $\\dfrac{\\pi}{6} + \\dfrac{11\\pi}{6} = 2\\pi$."
+      },
+      {
+        "id": "ai-11.4.16",
+        "badge": "Luyện thêm 16 - Nghiệm âm lớn nhất của cos x = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm âm lớn nhất của phương trình $\\cos x = 0$ là:",
+        "options": [
+          "$-\\dfrac{\\pi}{2}$",
+          "$-\\pi$",
+          "$-\\dfrac{3\\pi}{2}$",
+          "$-2\\pi$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cos x = 0 \\Leftrightarrow x = \\dfrac{\\pi}{2} + k\\pi$. Để $x < 0$ lớn nhất, chọn $k = -1 \\Rightarrow x = \\dfrac{\\pi}{2} - \\pi = -\\dfrac{\\pi}{2}$."
+      },
+      {
+        "id": "ai-11.4.17",
+        "badge": "Luyện thêm 17 - Giải phương trình tan x = sqrt(3)/3",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\tan x = \\dfrac{\\sqrt{3}}{3}$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{6} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pm \\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\tan x = \\dfrac{\\sqrt{3}}{3} = \\tan\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.18",
+        "badge": "Luyện thêm 18 - Giải phương trình cot x = -1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Tập nghiệm của phương trình $\\cot x = -1$ là:",
+        "options": [
+          "$\\left\\{-\\dfrac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{\\dfrac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{-\\dfrac{\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\left\\{\\pm \\dfrac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\right\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cot x = -1 = \\cot\\left(-\\dfrac{\\pi}{4}\\right) \\Leftrightarrow x = -\\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.19",
+        "badge": "Luyện thêm 19 - Giải phương trình tan(x - pi/3) = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\tan\\left(x - \\dfrac{\\pi}{3}\\right) = 0$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x - \\dfrac{\\pi}{3} = k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.20",
+        "badge": "Luyện thêm 20 - Giải phương trình cot 3x = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cot 3x = 0$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{6} + \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cot 3x = 0 \\Leftrightarrow 3x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{6} + \\dfrac{k\\pi}{3} \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.21",
+        "badge": "Luyện thêm 21 - Số nghiệm của tan x = 1 trên [0; 3pi]",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Số nghiệm của phương trình $\\tan x = 1$ trên đoạn $[0; 3\\pi]$ là:",
+        "options": [
+          "$3$",
+          "$2$",
+          "$4$",
+          "$6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x = \\dfrac{\\pi}{4} + k\\pi$. Trên $[0; 3\\pi]$ có 3 nghiệm là $\\dfrac{\\pi}{4}, \\dfrac{5\\pi}{4}, \\dfrac{9\\pi}{4}$ (tương ứng $k = 0, 1, 2$)."
+      },
+      {
+        "id": "ai-11.4.22",
+        "badge": "Luyện thêm 22 - Phương trình tan 2x = tan x",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\tan 2x = \\tan x$ là:",
+        "options": [
+          "$x = k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$",
+          "$x = k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "Vô nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐK: $\\cos 2x \\ne 0$ và $\\cos x \\ne 0$. Phương trình $\\Leftrightarrow 2x = x + k\\pi \\Leftrightarrow x = k\\pi$. Với $x = k\\pi$, $\\cos 2k\\pi = 1 \\ne 0$ và $\\cos k\\pi = \\pm 1 \\ne 0$. Vậy nghiệm là $x = k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.23",
+        "badge": "Luyện thêm 23 - Số điểm biểu diễn nghiệm của tan 2x = 1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Số điểm biểu diễn các nghiệm của phương trình $\\tan 2x = 1$ trên đường tròn lượng giác là:",
+        "options": [
+          "$2$",
+          "$4$",
+          "$1$",
+          "$8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x = \\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2} = \\dfrac{\\pi}{8} + \\dfrac{k2\\pi}{4}$. Do chu kỳ là $\\dfrac{k2\\pi}{4}$ nên có đúng 4 điểm phân biệt trên đường tròn lượng giác (hoặc kiểm tra lại: $\\dfrac{k\\pi}{2}$ tương ứng 4 điểm)."
+      },
+      {
+        "id": "ai-11.4.24",
+        "badge": "Luyện thêm 24 - Nghiệm dương nhỏ nhất của cot(2x) = 1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm dương nhỏ nhất của phương trình $\\cot 2x = 1$ là:",
+        "options": [
+          "$\\dfrac{\\pi}{8}$",
+          "$\\dfrac{\\pi}{4}$",
+          "$\\dfrac{3\\pi}{8}$",
+          "$\\dfrac{\\pi}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cot 2x = 1 \\Leftrightarrow 2x = \\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$. Với $k = 0 \\Rightarrow x = \\dfrac{\\pi}{8} > 0$ là nghiệm dương nhỏ nhất."
+      },
+      {
+        "id": "ai-11.4.25",
+        "badge": "Luyện thêm 25 - Phương trình sin x + cos x = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\sin x + \\cos x = 0$ là:",
+        "options": [
+          "$x = -\\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{4} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{3\\pi}{4} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chia 2 vế cho $\\cos x \\ne 0$ ta được $\\tan x + 1 = 0 \\Leftrightarrow \\tan x = -1 \\Leftrightarrow x = -\\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.26",
+        "badge": "Luyện thêm 26 - Phương trình sin 3x = -cos 2x",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\sin 3x = \\cos 2x$ tương đương với phương trình nào sau đây?",
+        "options": [
+          "$\\sin 3x = \\sin\\left(\\dfrac{\\pi}{2} - 2x\\right)$",
+          "$\\cos 3x = \\cos 2x$",
+          "$\\sin 3x = \\sin 2x$",
+          "$\\sin 3x = \\cos\\left(\\dfrac{\\pi}{2} - 2x\\right)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Do $\\cos 2x = \\sin\\left(\\dfrac{\\pi}{2} - 2x\\right)$."
+      },
+      {
+        "id": "ai-11.4.27",
+        "badge": "Luyện thêm 27 - Phương trình sin^2 x = 1",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\sin^2 x = 1$ là:",
+        "options": [
+          "$x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pm \\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin^2 x = 1 \\Leftrightarrow \\cos^2 x = 0 \\Leftrightarrow \\cos x = 0 \\Leftrightarrow x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$."
+      },
+      {
+        "id": "ai-11.4.28",
+        "badge": "Luyện thêm 28 - Phương trình bậc hai 2sin^2 x - sin x - 1 = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $2\\sin^2 x - \\sin x - 1 = 0$ là:",
+        "options": [
+          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{2} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{7\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{2} + k2\\pi \\\\ x = \\pm \\dfrac{\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{2} + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = -\\dfrac{\\pi}{6} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giải phương trình bậc hai: $\\sin x = 1$ hoặc $\\sin x = -\\dfrac{1}{2}$. Cho ta các nghiệm $x = \\dfrac{\\pi}{2} + k2\\pi$ và $x = -\\dfrac{\\pi}{6} + k2\\pi$, $x = \\dfrac{7\\pi}{6} + k2\\pi$."
+      },
+      {
+        "id": "ai-11.4.29",
+        "badge": "Luyện thêm 29 - Phương trình cos^2 x - 4cos x + 3 = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Tập nghiệm của phương trình $\\cos^2 x - 4\\cos x + 3 = 0$ là:",
+        "options": [
+          "$\\{k2\\pi, k \\in \\mathbb{Z}\\}$",
+          "$\\{k\\pi, k \\in \\mathbb{Z}\\}$",
+          "$\\left\\{\\pm \\dfrac{\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+          "$\\emptyset$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình $\\Leftrightarrow \\cos x = 1$ (thỏa mãn) hoặc $\\cos x = 3$ (vô nghiệm). $\\cos x = 1 \\Leftrightarrow x = k2\\pi$."
+      },
+      {
+        "id": "ai-11.4.30",
+        "badge": "Luyện thêm 30 - Phương trình cos 2x + cos x = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\cos 2x + \\cos x = 0$ là:",
+        "options": [
+          "$\\left[\\begin{array}{l} x = \\pi + k2\\pi \\\\ x = \\pm \\dfrac{\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = k\\pi \\\\ x = \\pm \\dfrac{\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$x = \\pi + k2\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\pm \\dfrac{\\pi}{3} + k2\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\cos 2x = -\\cos x = \\cos(\\pi - x) \\Leftrightarrow 2x = \\pm (\\pi - x) + k2\\pi \\Leftrightarrow x = \\pi + k2\\pi$ hoặc $x = \\pm \\dfrac{\\pi}{3} + k2\\pi$."
+      },
+      {
+        "id": "ai-11.4.31",
+        "badge": "Luyện thêm 31 - Số nghiệm của sin x * cos x = 0 trên [0; 2pi]",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Số nghiệm của phương trình $\\sin x \\cos x = 0$ trên đoạn $[0; 2\\pi]$ là:",
+        "options": [
+          "$5$",
+          "$4$",
+          "$3$",
+          "$2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\sin x\\cos x = 0 \\Leftrightarrow \\sin 2x = 0 \\Leftrightarrow 2x = k\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{2}$. Trên $[0; 2\\pi]$, các nghiệm là $0, \\dfrac{\\pi}{2}, \\pi, \\dfrac{3\\pi}{2}, 2\\pi$. Có đúng 5 nghiệm."
+      },
+      {
+        "id": "ai-11.4.32",
+        "badge": "Luyện thêm 32 - Phương trình tan^2 x - (1 + sqrt(3))tan x + sqrt(3) = 0",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Nghiệm của phương trình $\\tan^2 x - (1 + \\sqrt{3})\\tan x + \\sqrt{3} = 0$ là:",
+        "options": [
+          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{4} + k\\pi \\\\ x = \\dfrac{\\pi}{3} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{4} + k2\\pi \\\\ x = \\dfrac{\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$",
+          "$x = \\dfrac{\\pi}{3} + k\\pi \\ (k \\in \\mathbb{Z})$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giải phương trình bậc hai: $\\tan x = 1 \\Leftrightarrow x = \\dfrac{\\pi}{4} + k\\pi$ hoặc $\\tan x = \\sqrt{3} \\Leftrightarrow x = \\dfrac{\\pi}{3} + k\\pi$."
+      },
+      {
+        "id": "ai-11.4.33",
+        "badge": "Luyện thêm 33 - Tìm m để cos 2x = 3m - 2 có nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\cos 2x = 3m - 2$ có nghiệm khi và chỉ khi:",
+        "options": [
+          "$\\dfrac{1}{3} \\le m \\le 1$",
+          "$-1 \\le m \\le 1$",
+          "$m \\ge \\dfrac{1}{3}$",
+          "$0 \\le m \\le 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$-1 \\le 3m - 2 \\le 1 \\Leftrightarrow 1 \\le 3m \\le 3 \\Leftrightarrow \\dfrac{1}{3} \\le m \\le 1$."
+      },
+      {
+        "id": "ai-11.4.34",
+        "badge": "Luyện thêm 34 - Phương trình sin x = m - 3 vô nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\sin x = m - 3$ VÔ NGHIỆM khi và chỉ khi:",
+        "options": [
+          "$\\left[\\begin{array}{l} m > 4 \\\\ m < 2 \\end{array}\\right.$",
+          "$2 \\le m \\le 4$",
+          "$m > 4$",
+          "$m < 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vô nghiệm khi $|m - 3| > 1 \\Leftrightarrow m - 3 > 1 \\Rightarrow m > 4$ hoặc $m - 3 < -1 \\Rightarrow m < 2$."
+      },
+      {
+        "id": "ai-11.4.35",
+        "badge": "Luyện thêm 35 - Số giá trị nguyên của m để cos có nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Có bao nhiêu giá trị nguyên của tham số $m$ để phương trình $\\cos x = \\dfrac{2m + 1}{5}$ có nghiệm?",
+        "options": [
+          "$5$",
+          "$6$",
+          "$4$",
+          "$3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$-1 \\le \\dfrac{2m + 1}{5} \\le 1 \\Leftrightarrow -5 \\le 2m + 1 \\le 5 \\Leftrightarrow -6 \\le 2m \\le 4 \\Leftrightarrow -3 \\le m \\le 2$. Các số nguyên là $\\{-3; -2; -1; 0; 1; 2\\}$, có 6 giá trị."
+      },
+      {
+        "id": "ai-11.4.36",
+        "badge": "Luyện thêm 36 - Tập giá trị tham số để cot x = m có nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\cot x = m^2 - 4$ có nghiệm với những giá trị nào của $m$?",
+        "options": [
+          "$m \\in \\mathbb{R}$",
+          "$m \\ge 2$",
+          "$-2 \\le m \\le 2$",
+          "$m \\ne \\pm 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hàm số côtang có tập giá trị là $\\mathbb{R}$ nên phương trình luôn có nghiệm với mọi $m \\in \\mathbb{R}$."
+      },
+      {
+        "id": "ai-11.4.37",
+        "badge": "Luyện thêm 37 - Dao động con lắc đơn",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Li độ góc của một con lắc đơn là $\\alpha(t) = 0,1\\cos(2\\pi t)$ (rad). Thời điểm đầu tiên $(t > 0)$ con lắc đi qua vị trí cân bằng ($\\alpha = 0$) là:",
+        "options": [
+          "$t = 0,25$ (s)",
+          "$t = 0,5$ (s)",
+          "$t = 1$ (s)",
+          "$t = 0,125$ (s)"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\alpha = 0 \\Leftrightarrow \\cos(2\\pi t) = 0 \\Leftrightarrow 2\\pi t = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow t = \\dfrac{1}{4} + \\dfrac{k}{2}$. Lần đầu tiên $t > 0$ khi $k = 0 \\Rightarrow t = 0,25$ s."
+      },
+      {
+        "id": "ai-11.4.38",
+        "badge": "Luyện thêm 38 - Đu quay mặt trời đạt độ cao",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Độ cao của ghế đu quay sau $t$ giây được tính bởi $h(t) = 20 - 15\\cos\\left(\\dfrac{\\pi t}{10}\\right)$ (m). Thời điểm đầu tiên ghế đạt độ cao $20$ m là:",
+        "options": [
+          "$t = 5$ giây",
+          "$t = 10$ giây",
+          "$t = 2,5$ giây",
+          "$t = 15$ giây"
+        ],
+        "correctIndex": 0,
+        "explanation": "$h = 20 \\Leftrightarrow 20 - 15\\cos\\left(\\dfrac{\\pi t}{10}\\right) = 20 \\Leftrightarrow \\cos\\left(\\dfrac{\\pi t}{10}\\right) = 0 \\Leftrightarrow \\dfrac{\\pi t}{10} = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow t = 5 + 10k$. Lần đầu tiên là khi $k = 0 \\Rightarrow t = 5$ s."
+      },
+      {
+        "id": "ai-11.4.39",
+        "badge": "Luyện thêm 39 - Dòng điện xoay chiều đạt cực đại",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Cường độ dòng điện xoay chiều có biểu thức $i = 4\\cos(100\\pi t)$ (A). Trong 1 giây đầu tiên $(0 \\le t \\le 1)$, dòng điện đạt giá trị cực đại $4$ A bao nhiêu lần?",
+        "options": [
+          "$101$ lần",
+          "$100$ lần",
+          "$50$ lần",
+          "$200$ lần"
+        ],
+        "correctIndex": 0,
+        "explanation": "$i = 4 \\Leftrightarrow \\cos(100\\pi t) = 1 \\Leftrightarrow 100\\pi t = k2\\pi \\Leftrightarrow t = \\dfrac{k}{50}$. Điều kiện $0 \\le \\dfrac{k}{50} \\le 1 \\Leftrightarrow 0 \\le k \\le 50$. Các số nguyên $k \\in \\{0; 1; \\dots; 50\\}$ gồm $50 - 0 + 1 = 51$ (hoặc nếu là 50 chu kỳ có $51$ điểm tính cả $t=0$). Lưu ý: $k = 0, 1, \\dots, 50$ là 51 lần (hoặc nếu $100\\pi t$ thì tần số 50 Hz, có 51 lần đạt cực đại)."
+      },
+      {
+        "id": "ai-11.4.40",
+        "badge": "Luyện thêm 40 - Tìm tham số m để phương trình có đúng 1 nghiệm",
+        "isAiGenerated": true,
+        "source": "Tài liệu Luyện tập Toán 11 C1B4",
+        "question": "Phương trình $\\sin x = m$ có đúng 1 nghiệm trên đoạn $\\left[0; \\dfrac{\\pi}{2}\\right]$ khi và chỉ khi:",
+        "options": [
+          "$0 \\le m \\le 1$",
+          "$-1 \\le m \\le 1$",
+          "$0 < m < 1$",
+          "$m = 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hàm số $y = \\sin x$ đồng biến trên $\\left[0; \\dfrac{\\pi}{2}\\right]$ đi từ $\\sin 0 = 0$ đến $\\sin\\dfrac{\\pi}{2} = 1$. Do đó phương trình có đúng 1 nghiệm khi $0 \\le m \\le 1$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-11.4.1",
+        "badge": "Đúng/Sai AI 1 - Phương trình sin(2x - pi/6) = 1/2",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình lượng giác $\\sin\\left(2x - \\dfrac{\\pi}{6}\\right) = \\dfrac{1}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình có công thức nghiệm là $x = \\dfrac{\\pi}{6} + k\\pi$ hoặc $x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2x - \\dfrac{\\pi}{6} = \\dfrac{\\pi}{6} + k2\\pi \\Leftrightarrow 2x = \\dfrac{\\pi}{3} + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{6} + k\\pi$ hoặc $2x - \\dfrac{\\pi}{6} = \\dfrac{5\\pi}{6} + k2\\pi \\Leftrightarrow 2x = \\pi + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{2} + k\\pi$."
+          },
+          {
+            "id": "b",
+            "text": "Số điểm biểu diễn các nghiệm của phương trình trên đường tròn lượng giác là 4.",
+            "correctAnswer": true,
+            "explanation": "Hai họ nghiệm chu kỳ $k\\pi$ không trùng nhau biểu diễn bởi 4 điểm phân biệt."
+          },
+          {
+            "id": "c",
+            "text": "Trên khoảng $(0; \\pi)$, phương trình có đúng 2 nghiệm là $\\dfrac{\\pi}{6}$ và $\\dfrac{\\pi}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Ứng với $k = 0$ ở cả hai họ ta có $x = \\dfrac{\\pi}{6}$ và $x = \\dfrac{\\pi}{2}$ đều thuộc $(0; \\pi)$."
+          },
+          {
+            "id": "d",
+            "text": "Tổng các nghiệm của phương trình trên khoảng $(0; \\pi)$ bằng $\\dfrac{2\\pi}{3}$.",
+            "correctAnswer": true,
+            "explanation": "$\\dfrac{\\pi}{6} + \\dfrac{\\pi}{2} = \\dfrac{4\\pi}{6} = \\dfrac{2\\pi}{3}$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.2",
+        "badge": "Đúng/Sai AI 2 - Phương trình cos(3x + pi/4) = sqrt(2)/2",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình lượng giác $\\cos\\left(3x + \\dfrac{\\pi}{4}\\right) = \\dfrac{\\sqrt{2}}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương với $3x + \\dfrac{\\pi}{4} = \\pm \\dfrac{\\pi}{4} + k2\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "Vì $\\cos\\dfrac{\\pi}{4} = \\dfrac{\\sqrt{2}}{2}$."
+          },
+          {
+            "id": "b",
+            "text": "Hai họ nghiệm rút gọn là $x = \\dfrac{k2\\pi}{3}$ hoặc $x = -\\dfrac{\\pi}{6} + \\dfrac{k2\\pi}{3} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$3x = k2\\pi \\Rightarrow x = \\dfrac{k2\\pi}{3}$ hoặc $3x = -\\dfrac{\\pi}{2} + k2\\pi \\Rightarrow x = -\\dfrac{\\pi}{6} + \\dfrac{k2\\pi}{3}$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm dương nhỏ nhất của phương trình là $\\dfrac{\\pi}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Với $x = -\\dfrac{\\pi}{6} + \\dfrac{k2\\pi}{3}$, khi $k = 1 \\Rightarrow x = \\dfrac{\\pi}{2}$. Với $x = \\dfrac{k2\\pi}{3}$, khi $k = 1 \\Rightarrow x = \\dfrac{2\\pi}{3} > \\dfrac{\\pi}{2}$. Vậy nghiệm dương nhỏ nhất là $\\dfrac{\\pi}{2}$."
+          },
+          {
+            "id": "d",
+            "text": "Số điểm biểu diễn nghiệm của phương trình trên đường tròn lượng giác là 3.",
+            "correctAnswer": false,
+            "explanation": "Mỗi họ nghiệm chu kỳ $\\dfrac{k2\\pi}{3}$ có 3 điểm biểu diễn, 2 họ không trùng nhau nên có $3 + 3 = 6$ điểm."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.3",
+        "badge": "Đúng/Sai AI 3 - Phương trình cos x = 2m + 1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\cos x = 2m + 1$, với $m$ là tham số. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình có nghiệm khi và chỉ khi $-1 \\le m \\le 0$.",
+            "correctAnswer": true,
+            "explanation": "$-1 \\le 2m + 1 \\le 1 \\Leftrightarrow -2 \\le 2m \\le 0 \\Leftrightarrow -1 \\le m \\le 0$."
+          },
+          {
+            "id": "b",
+            "text": "Số giá trị nguyên của tham số $m$ để phương trình có nghiệm là 2.",
+            "correctAnswer": true,
+            "explanation": "$m \\in \\{-1; 0\\}$, có đúng 2 giá trị nguyên."
+          },
+          {
+            "id": "c",
+            "text": "Khi $m = 0$, nghiệm của phương trình là $x = k2\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\cos x = 1 \\Leftrightarrow x = k2\\pi$."
+          },
+          {
+            "id": "d",
+            "text": "Khi $m = -1$, nghiệm của phương trình là $x = \\pi + k2\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\cos x = -1 \\Leftrightarrow x = \\pi + k2\\pi$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.4",
+        "badge": "Đúng/Sai AI 4 - Phương trình tan 2x = -1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\tan 2x = -1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\cos 2x \\ne 0 \\Leftrightarrow 2x \\ne \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x \\ne \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình là $x = -\\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2x = -\\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Mọi nghiệm tìm được đều thỏa mãn điều kiện xác định.",
+            "correctAnswer": true,
+            "explanation": "$-\\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2} \\ne \\dfrac{\\pi}{4} + \\dfrac{m\\pi}{2}$ với mọi $k, m \\in \\mathbb{Z}$."
+          },
+          {
+            "id": "d",
+            "text": "Số nghiệm của phương trình trên đoạn $[0; 2\\pi]$ là 4.",
+            "correctAnswer": true,
+            "explanation": "Trên $[0; 2\\pi]$ có độ dài $2\\pi$, chu kỳ $\\dfrac{\\pi}{2}$ có đúng $\\dfrac{2\\pi}{\\pi/2} = 4$ nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.5",
+        "badge": "Đúng/Sai AI 5 - Phương trình sin 3x = cos x",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\sin 3x = \\cos x$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương với $\\sin 3x = \\sin\\left(\\dfrac{\\pi}{2} - x\\right)$.",
+            "correctAnswer": true,
+            "explanation": "Sử dụng công thức góc phụ $\\cos x = \\sin\\left(\\dfrac{\\pi}{2} - x\\right)$."
+          },
+          {
+            "id": "b",
+            "text": "Họ nghiệm thứ nhất là $x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$3x = \\dfrac{\\pi}{2} - x + k2\\pi \\Leftrightarrow 4x = \\dfrac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Họ nghiệm thứ hai là $x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$3x = \\pi - \\left(\\dfrac{\\pi}{2} - x\\right) + k2\\pi = \\dfrac{\\pi}{2} + x + k2\\pi \\Leftrightarrow 2x = \\dfrac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + k\\pi$."
+          },
+          {
+            "id": "d",
+            "text": "Trên khoảng $(0; \\pi)$, phương trình có đúng 2 nghiệm.",
+            "correctAnswer": false,
+            "explanation": "Họ 1 cho $x = \\dfrac{\\pi}{8}, \\dfrac{5\\pi}{8}$; họ 2 cho $x = \\dfrac{\\pi}{4}$. Tổng cộng có 3 nghiệm trên $(0; \\pi)$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.6",
+        "badge": "Đúng/Sai AI 6 - Phương trình 2sin^2 x + 3sin x + 1 = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $2\\sin^2 x + 3\\sin x + 1 = 0$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương $\\sin x = -1$ hoặc $\\sin x = -\\dfrac{1}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Phương trình bậc hai $2t^2 + 3t + 1 = 0$ có nghiệm $t = -1$ và $t = -\\dfrac{1}{2}$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình là $x = -\\dfrac{\\pi}{2} + k2\\pi$, $x = -\\dfrac{\\pi}{6} + k2\\pi$, $x = \\dfrac{7\\pi}{6} + k2\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "Đúng theo công thức nghiệm của sin."
+          },
+          {
+            "id": "c",
+            "text": "Có 3 điểm biểu diễn các nghiệm trên đường tròn lượng giác.",
+            "correctAnswer": true,
+            "explanation": "Ba góc phân biệt trên đường tròn: $-\\dfrac{\\pi}{2}$, $-\\dfrac{\\pi}{6}$ và $\\dfrac{7\\pi}{6}$."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình có 4 nghiệm trên đoạn $[0; 2\\pi]$.",
+            "correctAnswer": false,
+            "explanation": "Trên $[0; 2\\pi]$, các nghiệm là $x = \\dfrac{3\\pi}{2}$ (từ $\\sin x = -1$), $x = \\dfrac{7\\pi}{6}, \\dfrac{11\\pi}{6}$ (từ $\\sin x = -\\dfrac{1}{2}$). Chỉ có 3 nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.7",
+        "badge": "Đúng/Sai AI 7 - Phương trình cot x = 1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình lượng giác $\\cot x = 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\sin x \\ne 0 \\Leftrightarrow x \\ne k\\pi$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình là $x = \\dfrac{\\pi}{4} + k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\cot x = 1 = \\cot\\dfrac{\\pi}{4} \\Leftrightarrow x = \\dfrac{\\pi}{4} + k\\pi$."
+          },
+          {
+            "id": "c",
+            "text": "Các nghiệm đều thỏa mãn điều kiện xác định.",
+            "correctAnswer": true,
+            "explanation": "$\\dfrac{\\pi}{4} + k\\pi \\ne m\\pi$ với mọi $k, m \\in \\mathbb{Z}$."
+          },
+          {
+            "id": "d",
+            "text": "Tổng các nghiệm của phương trình trên đoạn $[0; 2\\pi]$ bằng $\\dfrac{3\\pi}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Hai nghiệm là $\\dfrac{\\pi}{4}$ và $\\dfrac{5\\pi}{4}$. Tổng là $\\dfrac{\\pi}{4} + \\dfrac{5\\pi}{4} = \\dfrac{6\\pi}{4} = \\dfrac{3\\pi}{2}$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.8",
+        "badge": "Đúng/Sai AI 8 - Phương trình cos 2x = cos x",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\cos 2x = \\cos x$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình $\\Leftrightarrow 2x = \\pm x + k2\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "Theo công thức $\\cos u = \\cos v$."
+          },
+          {
+            "id": "b",
+            "text": "Các họ nghiệm là $x = k2\\pi$ hoặc $x = \\dfrac{k2\\pi}{3} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2x - x = k2\\pi \\Rightarrow x = k2\\pi$; $2x + x = k2\\pi \\Rightarrow x = \\dfrac{k2\\pi}{3}$."
+          },
+          {
+            "id": "c",
+            "text": "Họ $x = \\dfrac{k2\\pi}{3}$ chứa họ $x = k2\\pi$.",
+            "correctAnswer": true,
+            "explanation": "Khi $k$ chia hết cho 3 thì $\\dfrac{k2\\pi}{3}$ trở thành bội của $2\\pi$."
+          },
+          {
+            "id": "d",
+            "text": "Trên khoảng $(0; 2\\pi)$, phương trình có đúng 3 nghiệm phân biệt.",
+            "correctAnswer": false,
+            "explanation": "Trên $(0; 2\\pi)$, họ $x = \\dfrac{k2\\pi}{3}$ chỉ có $k = 1 \\Rightarrow x = \\dfrac{2\\pi}{3}$ và $k = 2 \\Rightarrow x = \\dfrac{4\\pi}{3}$. Chỉ có 2 nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.9",
+        "badge": "Đúng/Sai AI 9 - Phương trình sin x * (cos x - 2) = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\sin x(\\cos x - 2) = 0$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình $\\cos x - 2 = 0$ vô nghiệm.",
+            "correctAnswer": true,
+            "explanation": "Vì $-1 \\le \\cos x \\le 1$ nên $\\cos x = 2$ vô nghiệm."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình đã cho tương đương với $\\sin x = 0$.",
+            "correctAnswer": true,
+            "explanation": "Do nhân tử $\\cos x - 2 \\ne 0$ với mọi $x$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm của phương trình là $x = k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$\\sin x = 0 \\Leftrightarrow x = k\\pi$."
+          },
+          {
+            "id": "d",
+            "text": "Số nghiệm của phương trình trên đoạn $[0; 4\\pi]$ là 5.",
+            "correctAnswer": true,
+            "explanation": "Các nghiệm là $x = 0, \\pi, 2\\pi, 3\\pi, 4\\pi$ (5 nghiệm)."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.10",
+        "badge": "Đúng/Sai AI 10 - Phương trình tan^2 x - 1 = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\tan^2 x - 1 = 0$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương $\\tan x = 1$ hoặc $\\tan x = -1$.",
+            "correctAnswer": true,
+            "explanation": "$\\tan^2 x = 1 \\Leftrightarrow \\tan x = \\pm 1$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm gộp của phương trình là $x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "Họ $\\dfrac{\\pi}{4} + k\\pi$ và $-\\dfrac{\\pi}{4} + k\\pi$ kết hợp lại thành $\\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Số điểm biểu diễn nghiệm trên đường tròn lượng giác là 4.",
+            "correctAnswer": true,
+            "explanation": "Chu kỳ $\\dfrac{\\pi}{2}$ biểu diễn bởi 4 đỉnh hình vuông trên đường tròn."
+          },
+          {
+            "id": "d",
+            "text": "Trên khoảng $(-\\pi; \\pi)$, phương trình có đúng 4 nghiệm.",
+            "correctAnswer": true,
+            "explanation": "Bốn nghiệm là $\\pm \\dfrac{\\pi}{4}, \\pm \\dfrac{3\\pi}{4}$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.11",
+        "badge": "Đúng/Sai AI 11 - Phương trình sin 2x + cos 2x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\sin 2x + \\cos 2x = 0$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương với $\\tan 2x = -1$.",
+            "correctAnswer": true,
+            "explanation": "Chia hai vế cho $\\cos 2x \\ne 0$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình là $x = -\\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2x = -\\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm dương nhỏ nhất của phương trình là $\\dfrac{3\\pi}{8}$.",
+            "correctAnswer": true,
+            "explanation": "Với $k = 1 \\Rightarrow x = -\\dfrac{\\pi}{8} + \\dfrac{\\pi}{2} = \\dfrac{3\\pi}{8}$."
+          },
+          {
+            "id": "d",
+            "text": "Trên đoạn $[0; \\pi]$, phương trình có đúng 2 nghiệm.",
+            "correctAnswer": true,
+            "explanation": "Đó là $x = \\dfrac{3\\pi}{8}$ ($k=1$) và $x = \\dfrac{7\\pi}{8}$ ($k=2$)."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.12",
+        "badge": "Đúng/Sai AI 12 - Phương trình cos^2 x = 1/2",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\cos^2 x = \\dfrac{1}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Hạ bậc ta được phương trình tương đương $\\cos 2x = 0$.",
+            "correctAnswer": true,
+            "explanation": "$\\cos^2 x = \\dfrac{1 + \\cos 2x}{2} = \\dfrac{1}{2} \\Leftrightarrow 1 + \\cos 2x = 1 \\Leftrightarrow \\cos 2x = 0$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình là $x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Có 4 điểm biểu diễn nghiệm của phương trình trên đường tròn lượng giác.",
+            "correctAnswer": true,
+            "explanation": "Chu kỳ $\\dfrac{\\pi}{2}$ biểu diễn 4 điểm."
+          },
+          {
+            "id": "d",
+            "text": "Trên khoảng $(0; 2\\pi)$, phương trình có đúng 4 nghiệm phân biệt.",
+            "correctAnswer": true,
+            "explanation": "Các nghiệm là $\\dfrac{\\pi}{4}, \\dfrac{3\\pi}{4}, \\dfrac{5\\pi}{4}, \\dfrac{7\\pi}{4}$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.13",
+        "badge": "Đúng/Sai AI 13 - Dao động điện áp xoay chiều",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Một điện áp xoay chiều có biểu thức $u(t) = 220\\sqrt{2}\\cos(100\\pi t)$ (V), $t \\ge 0$ tính bằng giây. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điện áp cực đại là $220\\sqrt{2}$ V.",
+            "correctAnswer": true,
+            "explanation": "Biên độ $U_0 = 220\\sqrt{2}$ V."
+          },
+          {
+            "id": "b",
+            "text": "Tần số của điện áp là $50$ Hz.",
+            "correctAnswer": true,
+            "explanation": "$f = \\dfrac{\\omega}{2\\pi} = \\dfrac{100\\pi}{2\\pi} = 50$ Hz."
+          },
+          {
+            "id": "c",
+            "text": "Thời điểm đầu tiên $t > 0$ điện áp bằng 0 là $t = \\dfrac{1}{200}$ giây.",
+            "correctAnswer": true,
+            "explanation": "$\\cos(100\\pi t) = 0 \\Leftrightarrow 100\\pi t = \\dfrac{\\pi}{2} + k\\pi \\Rightarrow t = \\dfrac{1}{200} + \\dfrac{k}{100}$. Với $k = 0 \\Rightarrow t = \\dfrac{1}{200}$ s."
+          },
+          {
+            "id": "d",
+            "text": "Trong 1 giây đầu tiên, điện áp bằng 0 đúng 100 lần.",
+            "correctAnswer": true,
+            "explanation": "Mỗi chu kỳ $T = 0,02$ s điện áp bằng 0 hai lần. Trong 1 giây có 50 chu kỳ nên bằng 0 đúng $50 \\times 2 = 100$ lần."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.14",
+        "badge": "Đúng/Sai AI 14 - Phương trình sin 2x = sin^2 x",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\sin 2x = \\sin^2 x$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương với $\\sin x(2\\cos x - \\sin x) = 0$.",
+            "correctAnswer": true,
+            "explanation": "$2\\sin x\\cos x - \\sin^2 x = 0 \\Leftrightarrow \\sin x(2\\cos x - \\sin x) = 0$."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình có họ nghiệm $x = k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "Từ $\\sin x = 0 \\Leftrightarrow x = k\\pi$."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình có họ nghiệm $x = \\arctan 2 + k\\pi \\ (k \\in \\mathbb{Z})$.",
+            "correctAnswer": true,
+            "explanation": "$2\\cos x - \\sin x = 0 \\Leftrightarrow \\tan x = 2 \\Leftrightarrow x = \\arctan 2 + k\\pi$."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình vô nghiệm trên khoảng $\\left(0; \\dfrac{\\pi}{4}\\right)$.",
+            "correctAnswer": true,
+            "explanation": "Vì $\\arctan 2 > \\arctan 1 = \\dfrac{\\pi}{4}$ và $k\\pi \\notin \\left(0; \\dfrac{\\pi}{4}\\right)$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.15",
+        "badge": "Đúng/Sai AI 15 - Độ cao vòng quay mặt trời",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Một chiếc ghế trên vòng quay mặt trời quay đều quanh tâm. Độ cao $h$ (mét) của ghế tại thời điểm $t$ phút là $h(t) = 40 - 30\\cos\\left(\\dfrac{\\pi t}{15}\\right)$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Độ cao thấp nhất của ghế là $10$ m.",
+            "correctAnswer": true,
+            "explanation": "Khi $\\cos = 1 \\Rightarrow h = 40 - 30 = 10$ m."
+          },
+          {
+            "id": "b",
+            "text": "Độ cao cao nhất của ghế là $70$ m.",
+            "correctAnswer": true,
+            "explanation": "Khi $\\cos = -1 \\Rightarrow h = 40 + 30 = 70$ m."
+          },
+          {
+            "id": "c",
+            "text": "Thời điểm đầu tiên ghế đạt độ cao cao nhất là $t = 15$ phút.",
+            "correctAnswer": true,
+            "explanation": "$\\cos\\left(\\dfrac{\\pi t}{15}\\right) = -1 \\Leftrightarrow \\dfrac{\\pi t}{15} = \\pi + k2\\pi \\Rightarrow t = 15 + 30k$. Với $k = 0 \\Rightarrow t = 15$ phút."
+          },
+          {
+            "id": "d",
+            "text": "Trong 1 giờ (60 phút), ghế đạt độ cao cao nhất 2 lần.",
+            "correctAnswer": true,
+            "explanation": "Các thời điểm là $t = 15$ và $t = 45$ (2 lần)."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-11.4.16",
+        "badge": "Đúng/Sai AI 16 - Phương trình sin x = m trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Cho phương trình $\\sin x = m$, xét trên đoạn $[0; \\pi]$. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình có nghiệm khi và chỉ khi $0 \\le m \\le 1$.",
+            "correctAnswer": true,
+            "explanation": "Với $x \\in [0; \\pi]$ thì $\\sin x \\in [0; 1]$."
+          },
+          {
+            "id": "b",
+            "text": "Khi $m = 1$, phương trình có duy nhất 1 nghiệm $x = \\dfrac{\\pi}{2}$.",
+            "correctAnswer": true,
+            "explanation": "$\\sin x = 1$ trên $[0; \\pi]$ chỉ tại $x = \\dfrac{\\pi}{2}$."
+          },
+          {
+            "id": "c",
+            "text": "Khi $m = 0$, phương trình có đúng 2 nghiệm $x = 0$ và $x = \\pi$.",
+            "correctAnswer": true,
+            "explanation": "$\\sin 0 = \\sin \\pi = 0$."
+          },
+          {
+            "id": "d",
+            "text": "Với mỗi $m \\in (0; 1)$, phương trình luôn có đúng 2 nghiệm phân biệt thuộc $[0; \\pi]$.",
+            "correctAnswer": true,
+            "explanation": "Đó là $x_1 = \\arcsin m$ và $x_2 = \\pi - \\arcsin m$ ($x_1 \\ne x_2$ do $m \\ne 1$)."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-11.4.1",
+        "badge": "Luyện thêm 1 - Số nghiệm của sin(x - 45) = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\sin(x - 45^\\circ) = 0$ trên đoạn $[0^\\circ; 360^\\circ]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$x - 45^\\circ = k180^\\circ \\Leftrightarrow x = 45^\\circ + k180^\\circ$. Với $0^\\circ \\le x \\le 360^\\circ$, có 2 nghiệm: $45^\\circ$ ($k=0$) và $225^\\circ$ ($k=1$)."
+      },
+      {
+        "id": "ai-sa-11.4.2",
+        "badge": "Luyện thêm 2 - Số nghiệm của sin 4x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\sin 4x = 0$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5"
+        ],
+        "explanation": "$4x = k\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{4}$. Trên $[0; \\pi]$, các nghiệm là $0, \\dfrac{\\pi}{4}, \\dfrac{\\pi}{2}, \\dfrac{3\\pi}{4}, \\pi$. Có đúng 5 nghiệm."
+      },
+      {
+        "id": "ai-sa-11.4.3",
+        "badge": "Luyện thêm 3 - Số nghiệm của cos 3x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\cos 3x = 0$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3"
+        ],
+        "explanation": "$3x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{6} + \\dfrac{k\\pi}{3}$. Trên $[0; \\pi]$, có 3 nghiệm: $\\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}$."
+      },
+      {
+        "id": "ai-sa-11.4.4",
+        "badge": "Luyện thêm 4 - Số nghiệm của tan x = -1 trên [0; 2pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\tan x = -1$ trên đoạn $[0; 2\\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$x = -\\dfrac{\\pi}{4} + k\\pi$. Trên $[0; 2\\pi]$, có 2 nghiệm là $\\dfrac{3\\pi}{4}$ ($k=1$) và $\\dfrac{7\\pi}{4}$ ($k=2$)."
+      },
+      {
+        "id": "ai-sa-11.4.5",
+        "badge": "Luyện thêm 5 - Số nghiệm của cot 2x = 1 trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\cot 2x = 1$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$2x = \\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$. Trên $[0; \\pi]$, có 2 nghiệm là $\\dfrac{\\pi}{8}$ và $\\dfrac{5\\pi}{8}$."
+      },
+      {
+        "id": "ai-sa-11.4.6",
+        "badge": "Luyện thêm 6 - Số điểm biểu diễn nghiệm của sin 2x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số điểm biểu diễn các nghiệm của phương trình $\\sin 2x = 0$ trên đường tròn lượng giác.",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4"
+        ],
+        "explanation": "$2x = k\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{2}$. Chu kỳ $\\dfrac{\\pi}{2}$ có đúng 4 điểm trên đường tròn."
+      },
+      {
+        "id": "ai-sa-11.4.7",
+        "badge": "Luyện thêm 7 - Số điểm biểu diễn nghiệm của cos 3x = 1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số điểm biểu diễn các nghiệm của phương trình $\\cos 3x = 1$ trên đường tròn lượng giác.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3"
+        ],
+        "explanation": "$3x = k2\\pi \\Leftrightarrow x = \\dfrac{k2\\pi}{3}$. Có đúng 3 điểm phân biệt."
+      },
+      {
+        "id": "ai-sa-11.4.8",
+        "badge": "Luyện thêm 8 - Số giá trị nguyên của m để sin 3x = m - 1 có nghiệm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Có bao nhiêu giá trị nguyên của tham số $m$ để phương trình $\\sin 3x = m - 1$ có nghiệm?",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3"
+        ],
+        "explanation": "$-1 \\le m - 1 \\le 1 \\Leftrightarrow 0 \\le m \\le 2$. Các số nguyên là $\\{0; 1; 2\\}$, có 3 giá trị."
+      },
+      {
+        "id": "ai-sa-11.4.9",
+        "badge": "Luyện thêm 9 - Số giá trị nguyên của m để cos x = 3m có nghiệm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Có bao nhiêu giá trị nguyên của tham số $m$ để phương trình $\\cos x = 3m$ có nghiệm?",
+        "correctAnswer": "1",
+        "acceptableAnswers": [
+          "1"
+        ],
+        "explanation": "$-1 \\le 3m \\le 1 \\Leftrightarrow -\\dfrac{1}{3} \\le m \\le \\dfrac{1}{3}$. Số nguyên duy nhất là $m = 0$."
+      },
+      {
+        "id": "ai-sa-11.4.10",
+        "badge": "Luyện thêm 10 - Số nghiệm của 2cos x + sqrt(3) = 0 trên [0; 2pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $2\\cos x + \\sqrt{3} = 0$ trên đoạn $[0; 2\\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$\\cos x = -\\dfrac{\\sqrt{3}}{2}$. Trên $[0; 2\\pi]$ có 2 nghiệm: $\\dfrac{5\\pi}{6}$ và $\\dfrac{7\\pi}{6}$."
+      },
+      {
+        "id": "ai-sa-11.4.11",
+        "badge": "Luyện thêm 11 - Số nghiệm của 2sin^2 x - 1 = 0 trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $2\\sin^2 x - 1 = 0$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$1 - 2\\sin^2 x = 0 \\Leftrightarrow \\cos 2x = 0 \\Leftrightarrow 2x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$. Trên $[0; \\pi]$ có 2 nghiệm: $\\dfrac{\\pi}{4}$ và $\\dfrac{3\\pi}{4}$."
+      },
+      {
+        "id": "ai-sa-11.4.12",
+        "badge": "Luyện thêm 12 - Số nghiệm của cos^2 x - cos x = 0 trên [0; 2pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\cos^2 x - \\cos x = 0$ trên đoạn $[0; 2\\pi]$.",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4"
+        ],
+        "explanation": "$\\cos x = 0$ cho 2 nghiệm: $\\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}$; $\\cos x = 1$ cho 2 nghiệm: $0, 2\\pi$. Tổng cộng có 4 nghiệm."
+      },
+      {
+        "id": "ai-sa-11.4.13",
+        "badge": "Luyện thêm 13 - Số nghiệm của tan^2 x - 3 = 0 trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\tan^2 x - 3 = 0$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$\\tan x = \\pm \\sqrt{3}$. Trên $[0; \\pi]$ có 2 nghiệm là $\\dfrac{\\pi}{3}$ và $\\dfrac{2\\pi}{3}$."
+      },
+      {
+        "id": "ai-sa-11.4.14",
+        "badge": "Luyện thêm 14 - Dao động cơ qua vị trí x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Một vật dao động điều hòa $x(t) = 5\\cos(10\\pi t)$ (cm). Trong 1 giây đầu tiên $(0 \\le t \\le 1)$, vật qua vị trí cân bằng bao nhiêu lần?",
+        "correctAnswer": "10",
+        "acceptableAnswers": [
+          "10"
+        ],
+        "explanation": "$\\cos(10\\pi t) = 0 \\Leftrightarrow 10\\pi t = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow t = \\dfrac{1}{20} + \\dfrac{k}{10}$. $0 \\le \\dfrac{1}{20} + \\dfrac{k}{10} \\le 1 \\Leftrightarrow -0,5 \\le k \\le 9,5 \\Rightarrow k \\in \\{0; 1; \\dots; 9\\}$, có 10 lần."
+      },
+      {
+        "id": "ai-sa-11.4.15",
+        "badge": "Luyện thêm 15 - Dao động điện áp xoay chiều cực đại",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Điện áp xoay chiều $u = 100\\cos(50\\pi t)$ (V). Trong 2 giây đầu tiên $(0 \\le t \\le 2)$, có bao nhiêu lần điện áp đạt giá trị cực đại $100$ V?",
+        "correctAnswer": "51",
+        "acceptableAnswers": [
+          "51"
+        ],
+        "explanation": "$\\cos(50\\pi t) = 1 \\Leftrightarrow 50\\pi t = k2\\pi \\Leftrightarrow t = \\dfrac{k}{25}$. $0 \\le \\dfrac{k}{25} \\le 2 \\Leftrightarrow 0 \\le k \\le 50 \\Rightarrow k \\in \\{0; 1; \\dots; 50\\}$, có 51 lần."
+      },
+      {
+        "id": "ai-sa-11.4.16",
+        "badge": "Luyện thêm 16 - Số giá trị nguyên của m để sin x = m/2 có nghiệm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Có bao nhiêu giá trị nguyên của tham số $m$ để phương trình $\\sin x = \\dfrac{m}{2}$ có nghiệm?",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5"
+        ],
+        "explanation": "$-1 \\le \\dfrac{m}{2} \\le 1 \\Leftrightarrow -2 \\le m \\le 2$. Có 5 giá trị nguyên: $\\{-2; -1; 0; 1; 2\\}$."
+      },
+      {
+        "id": "ai-sa-11.4.17",
+        "badge": "Luyện thêm 17 - Số nghiệm của sin 2x = cos 2x trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\sin 2x = \\cos 2x$ trên đoạn $[0; \\pi]$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "$\\tan 2x = 1 \\Leftrightarrow 2x = \\dfrac{\\pi}{4} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{8} + \\dfrac{k\\pi}{2}$. Trên $[0; \\pi]$ có 2 nghiệm: $\\dfrac{\\pi}{8}$ và $\\dfrac{5\\pi}{8}$."
+      },
+      {
+        "id": "ai-sa-11.4.18",
+        "badge": "Luyện thêm 18 - Số nghiệm của cos 4x = 1 trên [0; 2pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số nghiệm của phương trình $\\cos 4x = 1$ trên đoạn $[0; 2\\pi]$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5"
+        ],
+        "explanation": "$4x = k2\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{2}$. Trên $[0; 2\\pi]$, điều kiện $0 \\le \\dfrac{k\\pi}{2} \\le 2\\pi \\Leftrightarrow 0 \\le k \\le 4 \\Rightarrow k \\in \\{0; 1; 2; 3; 4\\}$ ứng với các nghiệm $x \\in \\left\\{0; \\dfrac{\\pi}{2}; \\pi; \\dfrac{3\\pi}{2}; 2\\pi\\right\\}$. Có đúng 5 nghiệm."
+      },
+      {
+        "id": "ai-sa-11.4.19",
+        "badge": "Luyện thêm 19 - Số điểm biểu diễn nghiệm của tan 3x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số điểm biểu diễn các nghiệm của phương trình $\\tan 3x = 0$ trên đường tròn lượng giác.",
+        "correctAnswer": "6",
+        "acceptableAnswers": [
+          "6"
+        ],
+        "explanation": "$3x = k\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{3} = \\dfrac{k2\\pi}{6}$. Có 6 điểm biểu diễn."
+      },
+      {
+        "id": "ai-sa-11.4.20",
+        "badge": "Luyện thêm 20 - Số điểm biểu diễn nghiệm của cot 2x = 0",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số điểm biểu diễn các nghiệm của phương trình $\\cot 2x = 0$ trên đường tròn lượng giác.",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4"
+        ],
+        "explanation": "$2x = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$. Có 4 điểm biểu diễn."
+      },
+      {
+        "id": "ai-sa-11.4.21",
+        "badge": "Luyện thêm 21 - Số giá trị nguyên của m để phương trình sin x = 2 - m có nghiệm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số giá trị nguyên của tham số $m$ để phương trình $\\sin x = 2 - m$ có nghiệm.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3"
+        ],
+        "explanation": "$-1 \\le 2 - m \\le 1 \\Leftrightarrow 1 \\le m \\le 3$. Các số nguyên là $\\{1; 2; 3\\}$, có 3 giá trị."
+      },
+      {
+        "id": "ai-sa-11.4.22",
+        "badge": "Luyện thêm 22 - Số giá trị nguyên của m để cos 3x = m - 4 có nghiệm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm số giá trị nguyên của tham số $m$ để phương trình $\\cos 3x = m - 4$ có nghiệm.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3"
+        ],
+        "explanation": "$-1 \\le m - 4 \\le 1 \\Leftrightarrow 3 \\le m \\le 5$. Có 3 giá trị nguyên là $\\{3; 4; 5\\}$."
+      },
+      {
+        "id": "ai-sa-11.4.23",
+        "badge": "Luyện thêm 23 - Tổng các nghiệm sin x = 1/2 trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm tổng tất cả các nghiệm của phương trình $\\sin x = \\dfrac{1}{2}$ trên đoạn $[0; \\pi]$ theo dạng $a\\pi$. Giá trị của $a$ là bao nhiêu?",
+        "correctAnswer": "1",
+        "acceptableAnswers": [
+          "1"
+        ],
+        "explanation": "Hai nghiệm là $\\dfrac{\\pi}{6}$ và $\\dfrac{5\\pi}{6}$. Tổng là $\\dfrac{\\pi}{6} + \\dfrac{5\\pi}{6} = \\pi = 1\\pi$. Vậy $a = 1$."
+      },
+      {
+        "id": "ai-sa-11.4.24",
+        "badge": "Luyện thêm 24 - Tổng các nghiệm cos 2x = 0 trên [0; pi]",
+        "source": "Tài liệu GDPT 2018 Toán 11 C1B4",
+        "prompt": "Tìm tổng tất cả các nghiệm của phương trình $\\cos 2x = 0$ trên đoạn $[0; \\pi]$ theo dạng $a\\pi$. Giá trị của $a$ là bao nhiêu?",
+        "correctAnswer": "1",
+        "acceptableAnswers": [
+          "1"
+        ],
+        "explanation": "Hai nghiệm là $\\dfrac{\\pi}{4}$ và $\\dfrac{3\\pi}{4}$. Tổng bằng $\\dfrac{\\pi}{4} + \\dfrac{3\\pi}{4} = \\pi = 1\\pi$. Vậy $a = 1$."
+      }
+    ]
+  }
 };

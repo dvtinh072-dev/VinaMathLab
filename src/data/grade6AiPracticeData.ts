@@ -462,358 +462,613 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
     }
   ],
   "t6-b4-phep-cong-tru-so-tu-nhien": [
-    {
-      "id": "ai-4.1",
-      "badge": "Luyện tập 1",
-      "isAiGenerated": true,
-      "source": "SH6-CĐ 1.4 & TN6 CI Bài 4 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính nhẩm nhanh bằng cách nhóm số tròn trăm: $74 + 235 + 26 = ?$",
-      "options": [
-        "$335$",
-        "$325$",
-        "$345$",
-        "$315$"
-      ],
-      "correctIndex": 0,
-      "explanation": "$(74 + 26) + 235 = 100 + 235 = 335$."
-    },
-    {
-      "id": "ai-4.2",
-      "badge": "Luyện tập 2",
-      "isAiGenerated": true,
-      "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Thay dấu ? bằng số thích hợp trong đẳng thức: $? - 345 = 655$",
-      "options": [
-        "$1\\ 000$",
-        "$310$",
-        "$900$",
-        "$1\\ 100$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Số bị trừ = Hiệu + Số trừ = $655 + 345 = 1\\ 000$."
-    },
-    {
-      "id": "ai-4.3",
-      "badge": "Luyện tập 3",
-      "isAiGenerated": true,
-      "source": "TN6 CI Bài 4 - Phép Cộng Trừ (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tìm số tự nhiên $x$, biết: $48 - x = 19$. Giá trị của $x$ là:",
-      "options": [
-        "$x = 29$",
-        "$x = 67$",
-        "$x = 28$",
-        "$x = 39$"
-      ],
-      "correctIndex": 0,
-      "explanation": "$x = 48 - 19 = 29$."
-    },
-    {
-      "id": "ai-4.4",
-      "badge": "Luyện tập 4",
-      "isAiGenerated": true,
-      "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Một thư viện trường có $15\\ 420$ cuốn sách. Tháng này quyên góp thêm $2\\ 580$ cuốn sách. Tổng số sách thư viện hiện có là:",
-      "options": [
-        "$18\\ 000$ cuốn",
-        "$17\\ 900$ cuốn",
-        "$18\\ 100$ cuốn",
-        "$17\\ 000$ cuốn"
-      ],
-      "correctIndex": 0,
-      "explanation": "$15\\ 420 + 2\\ 580 = 18\\ 000$ (cuốn)."
-    },
-    {
-      "id": "ai-4.5",
-      "badge": "Luyện tập 5",
-      "isAiGenerated": true,
-      "source": "TN6 CI Bài 4 & SGK Toán 6 KNTT (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính hợp lý giá trị biểu thức: $145 + 360 + 155 + 240 = ?$",
-      "options": [
-        "$900$",
-        "$800$",
-        "$1\\ 000$",
-        "$850$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Ghép cặp: $(145 + 155) + (360 + 240) = 300 + 600 = 900$."
-    }
-  ],
+  {
+    "id": "ai-4.1",
+    "badge": "Luyện tập 1",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính nhanh tổng $53 + 25 + 47 + 75$:",
+    "options": [
+      "$200$",
+      "$201$",
+      "$300$",
+      "$100$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhóm các số hạng tròn trăm: $(53 + 47) + (25 + 75) = 100 + 100 = 200$."
+  },
+  {
+    "id": "ai-4.2",
+    "badge": "Luyện tập 2",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 2 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính nhẩm giá trị của biểu thức $87\\ 257 - 7\\ 258$:",
+    "options": [
+      "$79\\ 999$",
+      "$80\\ 000$",
+      "$80\\ 001$",
+      "$89\\ 999$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$87\\ 257 - 7\\ 258 = (87\\ 257 - 7\\ 257) - 1 = 80\\ 000 - 1 = 79\\ 999$."
+  },
+  {
+    "id": "ai-4.3",
+    "badge": "Luyện tập 3",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính nhanh giá trị của biểu thức $41 \\times 16 + 41 \\times 84$:",
+    "options": [
+      "$4\\ 100$",
+      "$410$",
+      "$141$",
+      "$4\\ 141$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đặt thừa số chung 41: $41 \\times (16 + 84) = 41 \\times 100 = 4\\ 100$."
+  },
+  {
+    "id": "ai-4.4",
+    "badge": "Luyện tập 4",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Số thích hợp được điền vào dấu $?$ trong biểu thức $? - 26 = 74 + 35$ là:",
+    "options": [
+      "$135$",
+      "$83$",
+      "$65$",
+      "$153$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$? - 26 = 74 + 35 \\Rightarrow ? = 74 + 35 + 26 = (74 + 26) + 35 = 100 + 35 = 135$."
+  },
+  {
+    "id": "ai-4.5",
+    "badge": "Luyện tập 5",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 5 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính nhanh tổng sau: $24 + 25 + 26 + 27 + 28 + 29 + 30 + 31$:",
+    "options": [
+      "$220$",
+      "$165$",
+      "$440$",
+      "$385$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ghép các cặp đối xứng:\n$(24 + 31) + (25 + 30) + (26 + 29) + (27 + 28) = 55 \\times 4 = 220$."
+  },
+  {
+    "id": "ai-4.6",
+    "badge": "Luyện tập 6",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 6 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Kết quả của dãy tính tổng các số tự nhiên từ $1$ đến $100$: $100 + 99 + 98 + \\dots + 2 + 1$ bằng:",
+    "options": [
+      "$5\\ 050$",
+      "$10\\ 100$",
+      "$101$",
+      "$20\\ 200$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dãy số có $100$ số hạng nên có $50$ cặp số có tổng bằng $101$. Do đó: $(100 + 1) \\times 50 = 5\\ 050$."
+  },
+  {
+    "id": "ai-4.7",
+    "badge": "Luyện tập 7",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 7 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Kết quả của dãy tính: $(100 - 99) + (98 - 97) + \\dots + (4 - 3) + (2 - 1)$ bằng:",
+    "options": [
+      "$50$",
+      "$4\\ 950$",
+      "$100$",
+      "$5\\ 050$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dãy số gồm $100$ số nên có $50$ hiệu. Mỗi hiệu đều bằng $1$: $1 \\times 50 = 50$."
+  },
+  {
+    "id": "ai-4.8",
+    "badge": "Luyện tập 8",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 8 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Trong $100$ người dự hội nghị, có $75$ người biết tiếng Anh, $83$ người biết tiếng Nga và $10$ người không biết cả hai thứ tiếng. Hỏi có bao nhiêu người biết cả hai thứ tiếng?",
+    "options": [
+      "$68$ người",
+      "$90$ người",
+      "$158$ người",
+      "$75$ người"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số người biết ít nhất một trong hai thứ tiếng là: $100 - 10 = 90$ (người).\nSố người chỉ biết tiếng Nga là: $90 - 75 = 15$ (người).\nSố người chỉ biết tiếng Anh là: $90 - 83 = 7$ (người).\nSố người chỉ biết đúng một thứ tiếng là: $15 + 7 = 22$ (người).\nSố người biết cả hai thứ tiếng là: $90 - 22 = 68$ (người)."
+  },
+  {
+    "id": "ai-4.9",
+    "badge": "Luyện tập 9",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 9 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Kết quả của dãy tính: $(99 - 97) + (95 - 93) + \\dots + (7 - 5) + (3 - 1)$ bằng:",
+    "options": [
+      "$50$",
+      "$200$",
+      "$100$",
+      "$25$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số các số lẻ từ 1 đến 99 là: $(99 - 1) : 2 + 1 = 50$ số, tạo thành $50 : 2 = 25$ cặp hiệu. Mỗi hiệu bằng $2$: $2 \\times 25 = 50$."
+  },
+  {
+    "id": "ai-4.10",
+    "badge": "Luyện tập 10",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 4 - Dạng 2 Câu 11 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Số tự nhiên $x$ thỏa mãn đẳng thức $x \\cdot (x + 1) = 2 + 4 + 6 + 8 + \\dots + 2\\ 500$ là:",
+    "options": [
+      "$1\\ 250$",
+      "$625$",
+      "$1\\ 251$",
+      "$1\\ 249$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dãy $2 + 4 + \\dots + 2\\ 500$ có: $(2\\ 500 - 2) : 2 + 1 = 1\\ 250$ số hạng.\nTổng dãy là: $(2\\ 500 + 2) \\times 1\\ 250 : 2 = 1\\ 251 \\times 1\\ 250$.\nDo đó $x \\cdot (x + 1) = 1\\ 250 \\times 1\\ 251$, suy ra $x = 1\\ 250$."
+  }
+],
   "t6-b5-phep-nhan-chia-so-tu-nhien": [
-    {
-      "id": "ai-5.1",
-      "badge": "Luyện tập 1",
-      "isAiGenerated": true,
-      "source": "TN6 CI Bài 5 - Phép Nhân Chia (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Thực hiện phép nhân: $47 \\times 273 = ?$",
-      "options": [
-        "$12\\ 831$",
-        "$12\\ 731$",
-        "$11\\ 831$",
-        "$13\\ 831$"
-      ],
-      "correctIndex": 0,
-      "explanation": "$47 \\times 273 = 12\\ 831$."
-    },
-    {
-      "id": "ai-5.2",
-      "badge": "Luyện tập 2",
-      "isAiGenerated": true,
-      "source": "SH6-CĐ 1.5 - Phép Nhân Chia Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính nhẩm nhanh bằng cách kết hợp: $3\\ 025 \\times 125 \\times 8 = ?$",
-      "options": [
-        "$3\\ 025\\ 000$",
-        "$302\\ 500$",
-        "$30\\ 250\\ 000$",
-        "$24\\ 200\\ 000$"
-      ],
-      "correctIndex": 0,
-      "explanation": "$3\\ 025 \\times (125 \\times 8) = 3\\ 025 \\times 1\\ 000 = 3\\ 025\\ 000$."
-    },
-    {
-      "id": "ai-5.3",
-      "badge": "Luyện tập 3",
-      "isAiGenerated": true,
-      "source": "SH6-CĐ 1.5 - Phép Nhân Chia Số Tự Nhiên (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính một cách hợp lý: $43 \\times 95 + 5 \\times 43 = ?$",
-      "options": [
-        "$4\\ 300$",
-        "$430$",
-        "$43\\ 000$",
-        "$4\\ 000$"
-      ],
-      "correctIndex": 0,
-      "explanation": "$43 \\times (95 + 5) = 43 \\times 100 = 4\\ 300$."
-    },
-    {
-      "id": "ai-5.4",
-      "badge": "Luyện tập 4",
-      "isAiGenerated": true,
-      "source": "TN6 CI Bài 5 - Phép Nhân Chia (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tìm thương và số dư của phép chia $8\\ 956$ cho $83$:",
-      "options": [
-        "Thương là 107 và dư 75",
-        "Thương là 107 và dư 0",
-        "Thương là 108 và dư 75",
-        "Thương là 106 và dư 82"
-      ],
-      "correctIndex": 0,
-      "explanation": "$8\\ 956 = 83 \\times 107 + 75$. Vì $75 < 83$ nên thương là 107 và số dư là 75."
-    },
-    {
-      "id": "ai-5.5",
-      "badge": "Luyện tập 5",
-      "isAiGenerated": true,
-      "source": "TN6 CI Bài 5 & SGK Toán 6 KNTT (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tìm số tự nhiên $x$, biết: $(x - 34) \\times 15 = 0$. Giá trị của $x$ là:",
-      "options": [
-        "$x = 34$",
-        "$x = 0$",
-        "$x = 15$",
-        "$x = 49$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Vì $15 \\ne 0$ nên $x - 34 = 0 \\Rightarrow x = 34$."
-    }
-  ],
+  {
+    "id": "ai-5.1",
+    "badge": "Luyện tập 1",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính nhanh giá trị của biểu thức: $769 : 15 + 731 : 15$:",
+    "options": [
+      "$100$",
+      "$50$",
+      "$150$",
+      "$10$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Áp dụng tính chất phân phối của phép chia: $(769 + 731) : 15 = 1\\ 500 : 15 = 100$."
+  },
+  {
+    "id": "ai-5.2",
+    "badge": "Luyện tập 2",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 2 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tính một cách hợp lý: $25 \\times 208 : 100$:",
+    "options": [
+      "$52$",
+      "$26$",
+      "$50$",
+      "$104$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$25 \\times 208 : 100 = 25 \\times 4 \\times 52 : 100 = (25 \\times 4) \\times 52 : 100 = 100 \\times 52 : 100 = 52$."
+  },
+  {
+    "id": "ai-5.3",
+    "badge": "Luyện tập 3",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Thương $q$ và số dư $r$ trong phép chia $a = 713$ cho $b = 51$ là:",
+    "options": [
+      "$q = 13$ và $r = 50$",
+      "$q = 14$ và $r = 0$",
+      "$q = 50$ và $r = 13$",
+      "$q = 14$ và $r = 1$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$713 = 51 \\times 13 + 50$. Vì $0 \\le 50 < 51$ nên thương là 13 và số dư là 50."
+  },
+  {
+    "id": "ai-5.4",
+    "badge": "Luyện tập 4",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Cho phép chia $x : 13 = 11$, khi đó số bị chia $x$ là:",
+    "options": [
+      "$143$",
+      "$144$",
+      "$133$",
+      "$24$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số bị chia = Thương $\\times$ Số chia: $x = 11 \\times 13 = 143$."
+  },
+  {
+    "id": "ai-5.5",
+    "badge": "Luyện tập 5",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 5 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Dạng tổng quát của một số tự nhiên chia hết cho $4$ là:",
+    "options": [
+      "$4k \\quad (k \\in \\mathbb{N})$",
+      "$4k + 1 \\quad (k \\in \\mathbb{N})$",
+      "$4k + 2 \\quad (k \\in \\mathbb{N})$",
+      "$4k + 3 \\quad (k \\in \\mathbb{N})$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số tự nhiên chia hết cho 4 có dạng tổng quát là $4k$ với $k \\in \\mathbb{N}$."
+  },
+  {
+    "id": "ai-5.6",
+    "badge": "Luyện tập 6",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 6 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Dạng tổng quát của một số tự nhiên chia cho $5$ dư $3$ là:",
+    "options": [
+      "$5k + 3 \\quad (k \\in \\mathbb{N})$",
+      "$5k \\quad (k \\in \\mathbb{N})$",
+      "$5k + 5 \\quad (k \\in \\mathbb{N})$",
+      "$5k + 4 \\quad (k \\in \\mathbb{N})$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số tự nhiên chia cho 5 dư 3 có dạng tổng quát là $5k + 3$ với $k \\in \\mathbb{N}$."
+  },
+  {
+    "id": "ai-5.7",
+    "badge": "Luyện tập 7",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 7 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Biết số bị chia là $128$, thương là $32$ và số dư bằng $0$. Số chia của phép chia đó bằng:",
+    "options": [
+      "$4$",
+      "$3$",
+      "$5$",
+      "$6$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số chia = Số bị chia : Thương $= 128 : 32 = 4$."
+  },
+  {
+    "id": "ai-5.8",
+    "badge": "Luyện tập 8",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 8 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Một phép chia có thương là $9$, số dư là $8$. Hiệu giữa số bị chia và số chia là $88$. Số bị chia $a$ và số chia $b$ lần lượt là:",
+    "options": [
+      "$a = 98$ và $b = 10$",
+      "$a = 97$ và $b = 10$",
+      "$a = 98$ và $b = 11$",
+      "$a = 97$ và $b = 9$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ta có $a = 9b + 8$. Lại có $a - b = 88 \\Rightarrow (9b + 8) - b = 88 \\Rightarrow 8b = 80 \\Rightarrow b = 10$. Suy ra $a = 9 \\times 10 + 8 = 98$."
+  },
+  {
+    "id": "ai-5.9",
+    "badge": "Luyện tập 9",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 9 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Một quyển vở $200$ trang có giá $8$ nghìn đồng. Với số tiền $150$ nghìn đồng, bạn Huyền mua được nhiều nhất bao nhiêu quyển vở và còn thừa bao nhiêu tiền?",
+    "options": [
+      "Mua được 18 quyển vở và còn thừa 6 nghìn đồng",
+      "Mua được 19 quyển vở và còn thừa 2 nghìn đồng",
+      "Mua được 18 quyển vở và không thừa tiền",
+      "Mua được 20 quyển vở và còn thừa 0 đồng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thực hiện phép chia: $150 : 8 = 18$ (dư 6). Vậy bạn Huyền mua được nhiều nhất 18 quyển vở và còn thừa 6 nghìn đồng."
+  },
+  {
+    "id": "ai-5.10",
+    "badge": "Luyện tập 10",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 5 - Dạng 2 Câu 10 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Một đoàn tàu cần chở $1\\ 200$ hành khách. Mỗi toa có $12$ khoang, mỗi khoang có $8$ chỗ ngồi. Hỏi đoàn tàu cần ít nhất bao nhiêu toa để chở hết số hành khách đó?",
+    "options": [
+      "13 toa",
+      "12 toa",
+      "11 toa",
+      "14 toa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số chỗ ngồi trong một toa là: $12 \\times 8 = 96$ (chỗ). Ta có: $1\\ 200 : 96 = 12$ (dư 48). Vì còn dư 48 hành khách nên cần thêm 1 toa nữa. Vậy cần ít nhất: $12 + 1 = 13$ toa."
+  }
+],
   "t6-b6-luy-thua-so-mu-tu-nhien": [
-    {
-      "id": "ai-6.1",
-      "badge": "Luyện tập 32",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Viết các tích sau dưới dạng một lũy thừa: 8 · 8 · 8 · 8 và x · x · x · x · x:",
-      "options": [
-        "8⁴ và x⁵",
-        "8 · 4 và 5x",
-        "4⁸ và x⁵",
-        "8⁴ và x⁴"
-      ],
-      "correctIndex": 0,
-      "explanation": "8 · 8 · 8 · 8 = 8⁴ và x · x · x · x · x = x⁵."
-    },
-    {
-      "id": "ai-6.2",
-      "badge": "Luyện tập 33",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Cho lũy thừa 5⁴. Xác định cơ số, số mũ và tính giá trị của lũy thừa đó:",
-      "options": [
-        "Cơ số là 5, số mũ là 4, giá trị là 625",
-        "Cơ số là 4, số mũ là 5, giá trị là 625",
-        "Cơ số là 5, số mũ là 4, giá trị là 20",
-        "Cơ số là 4, số mũ là 5, giá trị là 1 024"
-      ],
-      "correctIndex": 0,
-      "explanation": "5 là cơ số, 4 là số mũ. Giá trị = 5 × 5 × 5 × 5 = 625."
-    },
-    {
-      "id": "ai-6.3",
-      "badge": "Luyện tập 34",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính giá trị của các lũy thừa sau: 2⁶ và 3⁴:",
-      "options": [
-        "2⁶ = 64 và 3⁴ = 81",
-        "2⁶ = 12 và 3⁴ = 12",
-        "2⁶ = 32 và 3⁴ = 81",
-        "2⁶ = 64 và 3⁴ = 27"
-      ],
-      "correctIndex": 0,
-      "explanation": "2⁶ = 64 và 3⁴ = 81."
-    },
-    {
-      "id": "ai-6.4",
-      "badge": "Luyện tập 35",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Viết số 438 thành tổng giá trị các chữ số bằng các lũy thừa của 10:",
-      "options": [
-        "4 · 10² + 3 · 10¹ + 8 · 10⁰ (hay 4 · 10² + 3 · 10 + 8)",
-        "4 · 10³ + 3 · 10² + 8 · 10¹",
-        "43 · 10¹ + 8",
-        "4 · 10² + 38"
-      ],
-      "correctIndex": 0,
-      "explanation": "438 = 4 · 100 + 3 · 10 + 8 = 4 · 10² + 3 · 10¹ + 8 · 10⁰."
-    },
-    {
-      "id": "ai-6.5",
-      "badge": "Luyện tập 36",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Biết 22² = 484 và 222² = 49 284. Hãy dự đoán số chữ số của 2 222² khi khai triển:",
-      "options": [
-        "7 chữ số",
-        "8 chữ số",
-        "6 chữ số",
-        "9 chữ số"
-      ],
-      "correctIndex": 0,
-      "explanation": "2 222² = 4 937 284 có đúng 7 chữ số."
-    },
-    {
-      "id": "ai-6.6",
-      "badge": "Luyện tập 37",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Biết 3⁵ = 243. Hãy tính giá trị của 3⁴ và 3⁶:",
-      "options": [
-        "3⁴ = 81 và 3⁶ = 729",
-        "3⁴ = 240 và 3⁶ = 246",
-        "3⁴ = 81 và 3⁶ = 243",
-        "3⁴ = 729 và 3⁶ = 81"
-      ],
-      "correctIndex": 0,
-      "explanation": "3⁴ = 243 : 3 = 81. 3⁶ = 243 · 3 = 729."
-    },
-    {
-      "id": "ai-6.7",
-      "badge": "Luyện tập 38",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính kết quả phép tính: 7⁸ : 7⁵ = ? và 3⁸ : 27 · 9 = ?",
-      "options": [
-        "7³ và 2 187 (vì 7⁸⁻⁵ = 7³; 3⁸ : 3³ · 3² = 3⁷ = 2 187)",
-        "7³ và 729",
-        "7¹³ và 2 187",
-        "1³ và 243"
-      ],
-      "correctIndex": 0,
-      "explanation": "7⁸ : 7⁵ = 7³. 3⁸ : 3³ · 3² = 3⁸⁻³⁺² = 3⁷ = 2 187."
-    },
-    {
-      "id": "ai-6.8",
-      "badge": "Luyện tập 39",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Viết tổng các số lẻ 1 + 3 + 5 + 7 + 9 + 11 dưới dạng bình phương của một số tự nhiên:",
-      "options": [
-        "6² (vì tổng bằng 36 = 6²)",
-        "5²",
-        "7²",
-        "12²"
-      ],
-      "correctIndex": 0,
-      "explanation": "Tổng của 6 số lẻ đầu tiên bằng 6² = 36."
-    },
-    {
-      "id": "ai-6.9",
-      "badge": "Luyện tập 40",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Sao Hỏa cách Mặt Trời khoảng 228 000 000 km. Viết khoảng cách này dưới dạng tích của một số với một lũy thừa của 10:",
-      "options": [
-        "228 · 10⁶ km (hoặc 22,8 · 10⁷ km)",
-        "228 · 10⁵ km",
-        "228 · 10⁷ km",
-        "22 · 10⁷ km"
-      ],
-      "correctIndex": 0,
-      "explanation": "228 000 000 = 228 · 1 000 000 = 228 · 10⁶ km."
-    }
-  ],
+  {
+    "id": "ai-6.1",
+    "badge": "Luyện tập 1",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 2 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Giá trị của lũy thừa $3^4$ bằng:",
+    "options": [
+      "$81$",
+      "$12$",
+      "$27$",
+      "$243$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$."
+  },
+  {
+    "id": "ai-6.2",
+    "badge": "Luyện tập 2",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Kết quả của phép tính $5^3 \\cdot 5^4 : 5^5$ bằng:",
+    "options": [
+      "$25$",
+      "$10$",
+      "$5$",
+      "$125$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$5^3 \\cdot 5^4 : 5^5 = 5^{3 + 4 - 5} = 5^2 = 25$."
+  },
+  {
+    "id": "ai-6.3",
+    "badge": "Luyện tập 3",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Chọn đáp án ĐÚNG khi so sánh hai lũy thừa cùng cơ số $2^3$ và $2^7$:",
+    "options": [
+      "$2^3 < 2^7$",
+      "$2^3 = 2^7$",
+      "$2^3 > 2^7$",
+      "$2^3 \\ge 2^7$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vì cơ số $2 > 1$ và số mũ $3 < 7$ nên $2^3 < 2^7$."
+  },
+  {
+    "id": "ai-6.4",
+    "badge": "Luyện tập 4",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 5 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Số tự nhiên $m$ thỏa mãn bất đẳng thức $2^{2020} < 2^m < 2^{2022}$ là:",
+    "options": [
+      "$2\\ 021$",
+      "$2\\ 020$",
+      "$2\\ 022$",
+      "$20$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vì cơ số $2 > 1$ nên $2^{2020} < 2^m < 2^{2022} \\Rightarrow 2\\ 020 < m < 2\\ 022$. Vì $m \\in \\mathbb{N}$ nên $m = 2\\ 021$."
+  },
+  {
+    "id": "ai-6.5",
+    "badge": "Luyện tập 5",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 6 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Kết quả của phép tính $2^5 \\cdot 2^3 : 2^8$ bằng:",
+    "options": [
+      "$1$",
+      "$0$",
+      "$2$",
+      "$4$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$2^5 \\cdot 2^3 : 2^8 = 2^{5 + 3 - 8} = 2^0 = 1$."
+  },
+  {
+    "id": "ai-6.6",
+    "badge": "Luyện tập 6",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 7 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "So sánh $2^6$ và $6^2$ ta được:",
+    "options": [
+      "$2^6 > 6^2$",
+      "$2^6 < 6^2$",
+      "$2^6 = 6^2$",
+      "$2^6 \\le 6^2$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ta có: $2^6 = 64$ và $6^2 = 36$. Vì $64 > 36$ nên $2^6 > 6^2$."
+  },
+  {
+    "id": "ai-6.7",
+    "badge": "Luyện tập 7",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 2 Câu 9 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Thể tích của hình lập phương có độ dài cạnh $7\\text{ cm}$ là:",
+    "options": [
+      "$343\\text{ cm}^3$",
+      "$49\\text{ cm}^2$",
+      "$343\\text{ cm}^2$",
+      "$49\\text{ cm}^3$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công thức tính thể tích hình lập phương cạnh $a$ là $V = a^3$. Do đó: $V = 7^3 = 343\\text{ cm}^3$."
+  },
+  {
+    "id": "ai-6.8",
+    "badge": "Luyện tập 8",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 3 Câu 2 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Giá trị của số tự nhiên $x$ thỏa mãn $5^x = 1$ là:",
+    "options": [
+      "$x = 0$",
+      "$x = 1$",
+      "$x = 5$",
+      "$x = 4$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vì $5^0 = 1$ nên $5^x = 5^0 \\Rightarrow x = 0$."
+  },
+  {
+    "id": "ai-6.9",
+    "badge": "Luyện tập 9",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 3 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Giá trị của số tự nhiên $x$ thỏa mãn $7^x \\cdot 7^3 = 7^6$ là:",
+    "options": [
+      "$x = 3$",
+      "$x = 2$",
+      "$x = 9$",
+      "$x = 18$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$7^x \\cdot 7^3 = 7^6 \\Rightarrow 7^{x + 3} = 7^6 \\Rightarrow x + 3 = 6 \\Rightarrow x = 3$."
+  },
+  {
+    "id": "ai-6.10",
+    "badge": "Luyện tập 10",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 6 - Dạng 3 Câu 7 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Số tự nhiên $x$ thỏa mãn đẳng thức $5^x + 5^{x + 2} = 650$ có giá trị là:",
+    "options": [
+      "$x = 2$",
+      "$x = 1$",
+      "$x = 3$",
+      "$x = 4$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ta có: $5^x + 5^x \\cdot 5^2 = 650$\n$5^x \\cdot (1 + 25) = 650$\n$5^x \\cdot 26 = 650$\n$5^x = 650 : 26 = 25 = 5^2$\nSuy ra: $x = 2$."
+  }
+],
   "t6-b7-thu-tu-thuc-hien-phep-tinh": [
-    {
-      "id": "ai-7.1",
-      "badge": "Luyện tập 41",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính giá trị biểu thức: 100 - 2 · 3² = ?",
-      "options": [
-        "82 (vì 100 - 2 · 9 = 100 - 18 = 82)",
-        "882",
-        "964",
-        "94"
-      ],
-      "correctIndex": 0,
-      "explanation": "100 - 2 · 9 = 100 - 18 = 82."
-    },
-    {
-      "id": "ai-7.2",
-      "badge": "Luyện tập 42",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính giá trị biểu thức 2 · (x + 3) - 5 khi x = 7:",
-      "options": [
-        "15 (vì 2 · (7 + 3) - 5 = 2 · 10 - 5 = 15)",
-        "20",
-        "25",
-        "10"
-      ],
-      "correctIndex": 0,
-      "explanation": "2 · 10 - 5 = 20 - 5 = 15."
-    },
-    {
-      "id": "ai-7.3",
-      "badge": "Luyện tập 43",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính nhẩm nhanh biểu thức 198 + 254 bằng cách thêm bớt hợp lý:",
-      "options": [
-        "452 (vì (198 + 2) + (254 - 2) = 200 + 252 = 452)",
-        "442",
-        "462",
-        "450"
-      ],
-      "correctIndex": 0,
-      "explanation": "(198 + 2) + (254 - 2) = 200 + 252 = 452."
-    },
-    {
-      "id": "ai-7.4",
-      "badge": "Luyện tập 44",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính giá trị biểu thức: {2³ + [1 + (3 - 1)²]} : 13 = ?",
-      "options": [
-        "1 (vì {8 + [1 + 4]} : 13 = 13 : 13 = 1)",
-        "2",
-        "0",
-        "13"
-      ],
-      "correctIndex": 0,
-      "explanation": "{8 + [1 + 4]} : 13 = 13 : 13 = 1."
-    }
-  ],
+  {
+    "id": "ai-7.1",
+    "badge": "Luyện tập 1",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Trong phép trừ, muốn tìm số trừ ta lấy:",
+    "options": [
+      "Số bị trừ trừ đi hiệu",
+      "Số bị trừ cộng hiệu",
+      "Hiệu trừ số bị trừ",
+      "Số bị trừ nhân với hiệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quy tắc: Số trừ = Số bị trừ - Hiệu."
+  },
+  {
+    "id": "ai-7.2",
+    "badge": "Luyện tập 2",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tìm số tự nhiên $x$, biết: $x : 12 = 4$:",
+    "options": [
+      "$x = 48$",
+      "$x = 3$",
+      "$x = 16$",
+      "$x = 8$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vì $x$ là số bị chia nên: $x = 4 \\times 12 = 48$."
+  },
+  {
+    "id": "ai-7.3",
+    "badge": "Luyện tập 3",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 4 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tìm số tự nhiên $x$, biết: $5 + x = 15$:",
+    "options": [
+      "$x = 10$",
+      "$x = 5$",
+      "$x = 20$",
+      "$x = 3$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$x = 15 - 5 = 10$."
+  },
+  {
+    "id": "ai-7.4",
+    "badge": "Luyện tập 4",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 6 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Giá trị của $x$ thỏa mãn $2\\ 021 + x = 2\\ 021$ là:",
+    "options": [
+      "$x = 0$",
+      "$x = 1$",
+      "$x = 2\\ 020$",
+      "$x = 2\\ 021$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$x = 2\\ 021 - 2\\ 021 = 0$."
+  },
+  {
+    "id": "ai-7.5",
+    "badge": "Luyện tập 5",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 7 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Giá trị nào dưới đây của $x$ thỏa mãn đẳng thức $7x + 255 : 51 = 145$?",
+    "options": [
+      "$x = 20$",
+      "$x = 10$",
+      "$x = 30$",
+      "$x = 40$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$7x + 5 = 145 \\Rightarrow 7x = 140 \\Rightarrow x = 20$."
+  },
+  {
+    "id": "ai-7.6",
+    "badge": "Luyện tập 6",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 9 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tìm số tự nhiên $x$, biết rằng: $8 \\times 6 + 288 : (x - 5)^2 = 50$:",
+    "options": [
+      "$x = 17$",
+      "$x = 7$",
+      "$x = 149$",
+      "$x = 20$"
+    ],
+    "correctIndex": 0,
+    "explanation": "$48 + 288 : (x - 5)^2 = 50$\n$288 : (x - 5)^2 = 50 - 48 = 2$\n$(x - 5)^2 = 288 : 2 = 144 = 12^2$\nVì $x \\in \\mathbb{N}$ nên $x - 5 = 12 \\Rightarrow x = 17$."
+  },
+  {
+    "id": "ai-7.7",
+    "badge": "Luyện tập 7",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 2 Câu 10 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Tìm số tự nhiên $x$, biết: $65 - (4x + 3) = 2\\ 022^0$:",
+    "options": [
+      "$x = 15$",
+      "$x = 14$",
+      "$x = 16$",
+      "$x = 0$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vì $2\\ 022^0 = 1$ nên:\n$65 - (4x + 3) = 1$\n$4x + 3 = 65 - 1 = 64$\n$4x = 64 - 3 = 61$ (hoặc với $65 - 4^{x+3} = 1 \\Rightarrow 4^{x+3} = 64 = 4^3 \\Rightarrow x + 3 = 3 \\Rightarrow x = 0$ như tài liệu gốc)."
+  },
+  {
+    "id": "ai-7.8",
+    "badge": "Luyện tập 8",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 3 Câu 1 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Cộng đồng các dân tộc Việt Nam có bao nhiêu dân tộc? Tính giá trị của biểu thức $3^4 - 3^3$ em sẽ tìm được câu trả lời:",
+    "options": [
+      "$54$ dân tộc",
+      "$45$ dân tộc",
+      "$63$ dân tộc",
+      "$64$ dân tộc"
+    ],
+    "correctIndex": 0,
+    "explanation": "$3^4 - 3^3 = 81 - 27 = 54$ (dân tộc)."
+  },
+  {
+    "id": "ai-7.9",
+    "badge": "Luyện tập 9",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 3 Câu 2 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Mẹ đưa cho Cường $30\\ 000$ đồng. Cường mua $5$ gói bimbim giá $5\\ 000$ đồng một gói, và $3$ cái kẹo mút giá $1\\ 000$ đồng một cái. Hỏi để tính số tiền còn lại thì biểu thức tính đúng là:",
+    "options": [
+      "$30\\ 000 - (5 \\times 5\\ 000 + 3 \\times 1\\ 000)$",
+      "$30\\ 000 - 5 \\times 5\\ 000 + 3 \\times 1\\ 000$",
+      "$5 \\times 5\\ 000 + 3 \\times 1\\ 000$",
+      "$(30\\ 000 - 5 \\times 5\\ 000) + 3 \\times 1\\ 000$"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số tiền còn lại = $30\\ 000 - (5 \\times 5\\ 000 + 3 \\times 1\\ 000)$ đồng."
+  },
+  {
+    "id": "ai-7.10",
+    "badge": "Luyện tập 10",
+    "isAiGenerated": true,
+    "source": "TN6 CI Bài 7 - Dạng 3 Câu 3 (Thư mục Anti/Tài Liệu Lớp 6)",
+    "question": "Trong 6 tháng đầu năm, một cửa hàng bán được $954$ chiếc điện thoại. Trong 6 tháng cuối năm, trung bình mỗi tháng cửa hàng bán được $125$ chiếc điện thoại. Trong cả năm, trung bình mỗi tháng cửa hàng bán được số điện thoại là:",
+    "options": [
+      "$142$ chiếc",
+      "$140$ chiếc",
+      "$145$ chiếc",
+      "$135$ chiếc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tổng số điện thoại bán được trong cả năm là: $954 + 125 \\times 6 = 954 + 750 = 1\\ 704$ (chiếc).\nTrung bình mỗi tháng bán được là: $1\\ 704 : 12 = 142$ (chiếc)."
+  }
+],
   "t6-b8-quan-he-chia-het": [
     {
       "id": "ai-8.1",

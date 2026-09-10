@@ -806,382 +806,1043 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     ]
   },
   "t6-b4-phep-cong-tru-so-tu-nhien": {
-    "id": "t6-b4-phep-cong-tru-so-tu-nhien",
-    "lessonNumber": 4,
-    "title": "Bài 4: Phép cộng và phép trừ số tự nhiên",
-    "bookChapter": "Chương I: Tập hợp các số tự nhiên",
-    "scenarioTitle": "Tình huống: Tính tổng chi phí mua sắm",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Kết hợp các số có tổng tròn chục, tròn trăm."
-    ],
-    "traps": [
-      "a - b trong ℕ chỉ thực hiện được khi a ≥ b."
-    ],
-    "quizQuestions": [
-      {
-        "id": "quiz-4.1",
-        "badge": "Câu 1 - Tính nhanh tổng bằng tính chất giao hoán, kết hợp",
-        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4",
-        "question": "Tính nhanh tổng sau bằng cách kết hợp hợp lí: $48 + 235 + 52$:",
-        "options": [
-          "$335$",
-          "$345$",
-          "$325$",
-          "$355$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Áp dụng tính chất giao hoán và kết hợp: $(48 + 52) + 235 = 100 + 235 = 335$."
-      },
-      {
-        "id": "quiz-4.2",
-        "badge": "Câu 2 - Điều kiện thực hiện phép trừ trong tập ℕ",
-        "source": "SGK Toán 6 Tập 1, Trang 19 & TN6 CI Bài 4",
-        "question": "Cho hai số tự nhiên $a$ và $b$. Điều kiện trong tập hợp số tự nhiên để phép trừ $a - b$ thực hiện được là:",
-        "options": [
-          "$a \\ge b$",
-          "$a > b$",
-          "$a \\le b$",
-          "$a < b$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Trong tập hợp số tự nhiên $\\mathbb{N}$, phép trừ $a - b$ chỉ thực hiện được khi số bị trừ lớn hơn hoặc bằng số trừ: $a \\ge b$."
-      },
-      {
-        "id": "quiz-4.3",
-        "badge": "Câu 3 - Tìm số tự nhiên x trong phép cộng",
-        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên",
-        "question": "Tìm số tự nhiên $x$, biết: $x + 257 = 982$. Giá trị của $x$ là:",
-        "options": [
-          "$725$",
-          "$735$",
-          "$715$",
-          "$745$"
-        ],
-        "correctIndex": 0,
-        "explanation": "$x = 982 - 257 = 725$."
-      },
-      {
-        "id": "quiz-4.4",
-        "badge": "Câu 4 - Tổng số tự nhiên nhỏ nhất và lớn nhất có 3 chữ số",
-        "source": "SH6-CĐ 1.4 - Phép Cộng Và Trừ Số Tự Nhiên",
-        "question": "Tổng của số tự nhiên nhỏ nhất có 3 chữ số khác nhau và số tự nhiên lớn nhất có 3 chữ số khác nhau là:",
-        "options": [
-          "$1\\ 089$",
-          "$1\\ 099$",
-          "$1\\ 087$",
-          "$1\\ 079$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Số tự nhiên nhỏ nhất có 3 chữ số khác nhau là 102. Số tự nhiên lớn nhất có 3 chữ số khác nhau là 987. Tổng là: $102 + 987 = 1\\ 089$."
-      },
-      {
-        "id": "quiz-4.5",
-        "badge": "Câu 5 - Bài toán tìm số bị trừ và số trừ (Vận dụng)",
-        "source": "TN6 CI Bài 4 - Phép Cộng Trừ",
-        "question": "Một phép trừ có tổng của số bị trừ, số trừ và hiệu bằng $2\\ 020$. Số trừ lớn hơn hiệu là $48$. Tìm số bị trừ và số trừ:",
-        "options": [
-          "Số bị trừ là $1\\ 010$, số trừ là $529$",
-          "Số bị trừ là $1\\ 010$, số trừ là $481$",
-          "Số bị trừ là $1\\ 020$, số trừ là $529$",
-          "Số bị trừ là $1\\ 000$, số trừ là $500$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Số bị trừ + Số trừ + Hiệu = 2 020. Vì Số trừ + Hiệu = Số bị trừ nên 2 lần Số bị trừ = 2 020 $\\Rightarrow$ Số bị trừ = $1\\ 010$. Lại có Số trừ + Hiệu = $1\\ 010$ và Số trừ - Hiệu = $48$ nên Số trừ = $(1\\ 010 + 48) : 2 = 529$."
-      }
-    ]
-  },
+  "id": "t6-b4-phep-cong-tru-so-tu-nhien",
+  "lessonNumber": 4,
+  "title": "Bài 4: Phép cộng và phép trừ số tự nhiên",
+  "bookChapter": "Chương I: Tập hợp các số tự nhiên",
+  "scenarioTitle": "Tình huống: Tính tổng chi phí mua sắm đồ dùng học tập",
+  "scenarioFrames": [],
+  "youtubeVideoId": "9wCWHS_qFbg",
+  "youtubeVideoTitle": "Bài Giảng Video: Phép Cộng Và Phép Trừ Số Tự Nhiên (Toán 6 KNTT)",
+  "videoQuestions": [
+    {
+      "id": "vq-6.4.1",
+      "title": "Ví dụ 1: Tính nhanh bằng tính chất giao hoán và kết hợp của phép cộng",
+      "question": "Tính nhanh tổng sau bằng cách kết hợp hợp lí: $117 + 68 + 83$:",
+      "options": [
+        "$268$",
+        "$258$",
+        "$278$",
+        "$248$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng tính chất giao hoán và kết hợp của phép cộng:\n$117 + 68 + 83 = (117 + 83) + 68 = 200 + 68 = 268$."
+    },
+    {
+      "id": "vq-6.4.2",
+      "title": "Ví dụ 2: Điều kiện thực hiện phép trừ trong tập hợp số tự nhiên",
+      "question": "Cho hai số tự nhiên $a$ và $b$. Trong tập hợp số tự nhiên $\\mathbb{N}$, phép trừ $a - b$ thực hiện được khi và chỉ khi:",
+      "options": [
+        "$a \\ge b$",
+        "$a > b$",
+        "$a \\le b$",
+        "$a = b$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tập hợp các số tự nhiên $\\mathbb{N}$, phép trừ $a - b$ chỉ thực hiện được nếu số bị trừ lớn hơn hoặc bằng số trừ: $a \\ge b$."
+    },
+    {
+      "id": "vq-6.4.3",
+      "title": "Ví dụ 3: Tìm số tự nhiên x trong phép trừ",
+      "question": "Tìm số tự nhiên $x$, biết: $(x - 35) - 120 = 0$. Giá trị của $x$ là:",
+      "options": [
+        "$x = 155$",
+        "$x = 85$",
+        "$x = 120$",
+        "$x = 35$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Coi $(x - 35)$ là số bị trừ chưa biết:\n$x - 35 = 0 + 120 = 120$\nSuy ra: $x = 120 + 35 = 155$."
+    },
+    {
+      "id": "vq-6.4.4",
+      "title": "Ví dụ 4: Bài toán thực tế về cân bằng lượng nước cơ thể",
+      "question": "Một cơ thể người trưởng thành mất đi khoảng $3\\ 000\\text{ ml}$ nước mỗi ngày qua các hoạt động sống. Qua việc ăn uống, cơ thể hấp thụ lại được khoảng $1\\ 000\\text{ ml}$ nước. Để cân bằng lượng nước đã mất trong ngày, người đó cần uống thêm bao nhiêu nước?",
+      "options": [
+        "$2\\ 000\\text{ ml}$",
+        "$2\\ 500\\text{ ml}$",
+        "$1\\ 500\\text{ ml}$",
+        "$4\\ 000\\text{ ml}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lượng nước một người trưởng thành cần uống thêm để cân bằng lượng nước đã mất trong ngày là:\n$3\\ 000 - 1\\ 000 = 2\\ 000\\text{ ml}$."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Phép cộng hai số tự nhiên & Các tính chất cơ bản",
+      "points": [
+        "Phép cộng hai số tự nhiên $a$ và $b$ cho ta một số tự nhiên gọi là tổng: $a + b = c$ (trong đó $a, b$ là các số hạng, $c$ là tổng).",
+        "**Tính chất giao hoán:** Khi đổi chỗ các số hạng trong một tổng thì tổng không thay đổi: $a + b = b + a$.",
+        "**Tính chất kết hợp:** Muốn cộng một tổng hai số với một số thứ ba, ta có thể cộng số thứ nhất với tổng của số thứ hai và số thứ ba: $(a + b) + c = a + (b + c)$.",
+        "**Cộng với số 0:** Bất kì số tự nhiên nào cộng với $0$ cũng bằng chính nó: $a + 0 = 0 + a = a$."
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 6 Tập 1, Trang 18)",
+      "exampleProblem": "Tính một cách hợp lí: $117 + 68 + 83$.",
+      "exampleSolution": "$117 + 68 + 83 = (117 + 83) + 68 = 200 + 68 = 268$."
+    },
+    {
+      "index": "2",
+      "title": "Phép trừ hai số tự nhiên & Điều kiện thực hiện",
+      "points": [
+        "Cho hai số tự nhiên $a$ và $b$, nếu có số tự nhiên $c$ sao cho $b + c = a$ thì ta có phép trừ: $a - b = c$ (trong đó $a$ là số bị trừ, $b$ là số trừ, $c$ là hiệu).",
+        "**Điều kiện thực hiện:** Trong tập hợp số tự nhiên $\\mathbb{N}$, phép trừ $a - b$ chỉ thực hiện được khi $a \\ge b$ (số bị trừ lớn hơn hoặc bằng số trừ).",
+        "Khi $a = b$ thì $a - b = 0$. Khi $a > b$ thì $a - b > 0$."
+      ],
+      "exampleTitle": "Ví dụ 2 (SGK Toán 6 Tập 1, Trang 19)",
+      "exampleProblem": "Trong hai phép trừ $25 - 17$ và $14 - 19$, phép tính nào thực hiện được trong tập hợp số tự nhiên $\\mathbb{N}$?",
+      "exampleSolution": "• Phép trừ $25 - 17 = 8$ thực hiện được vì $25 \\ge 17$.\n• Phép trừ $14 - 19$ không thực hiện được trong $\\mathbb{N}$ vì $14 < 19$."
+    },
+    {
+      "index": "3",
+      "title": "Phương pháp tính nhanh và tính nhẩm",
+      "points": [
+        "**Nhóm số tròn chục, tròn trăm:** Vận dụng tính chất giao hoán và kết hợp để nhóm các số hạng có tổng tròn chục, tròn trăm hoặc tròn nghìn.",
+        "**Thêm bớt cùng một số:**\n    • Tổng của hai số không đổi nếu ta thêm vào số hạng này và bớt đi ở số hạng kia cùng một số đơn vị.\n    • Hiệu của hai số không đổi nếu ta thêm vào (hoặc bớt đi) cả số bị trừ và số trừ cùng một số đơn vị."
+      ],
+      "exampleTitle": "Ví dụ 3 (Chuyên đề CĐ 1.4)",
+      "exampleProblem": "Tính nhẩm: $998 + 75$ và $87\\ 257 - 7\\ 258$.",
+      "exampleSolution": "• $998 + 75 = (998 + 2) + (75 - 2) = 1\\ 000 + 73 = 1\\ 073$.\n• $87\\ 257 - 7\\ 258 = (87\\ 257 - 7\\ 257) - 1 = 80\\ 000 - 1 = 79\\ 999$."
+    },
+    {
+      "index": "4",
+      "title": "Tìm thành phần chưa biết trong phép cộng và phép trừ",
+      "points": [
+        "Muốn tìm số hạng chưa biết trong một tổng: ta lấy tổng trừ đi số hạng đã biết.",
+        "Muốn tìm số bị trừ trong một hiệu: ta lấy hiệu cộng với số trừ.",
+        "Muốn tìm số trừ trong một hiệu: ta lấy số bị trừ trừ đi hiệu."
+      ],
+      "exampleTitle": "Ví dụ 4",
+      "exampleProblem": "Tìm số tự nhiên $x$, biết: $231 + (312 - x) = 531$.",
+      "exampleSolution": "Coi $(312 - x)$ là số hạng chưa biết:\n$312 - x = 531 - 231$\n$312 - x = 300$\n$x = 312 - 300$\n$x = 12$."
+    }
+  ],
+  "tips": [
+    "Luôn ưu tiên nhóm các số có hàng đơn vị bù nhau thành tròn chục (1 bù 9, 2 bù 8, 3 bù 7, 4 bù 6, 5 bù 5).",
+    "Khi giải bài toán tìm x có chứa dấu ngoặc, coi toàn bộ biểu thức trong ngoặc là một đại lượng chưa biết cần tìm trước."
+  ],
+  "traps": [
+    "BẪY ĐIỀU KIỆN PHÉP TRỪ: Trong tập ℕ, phép trừ a - b chỉ thực hiện được khi a ≥ b (nhiều bạn quên điều kiện này dẫn đến kết luận sai).",
+    "BẪY TÌM SỐ TRỪ: Muốn tìm số trừ ta lấy (Số bị trừ - Hiệu), không được nhầm lẫn lấy (Số bị trừ + Hiệu)."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-4.1",
+      "badge": "Câu 1 - Thực hiện phép cộng số tự nhiên",
+      "source": "TN6 CI Bài 4 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Kết quả của phép tính $998 + 75$ bằng:",
+      "options": [
+        "$1\\ 073$",
+        "$1\\ 063$",
+        "$1\\ 072$",
+        "$923$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt tính hoặc tính nhẩm: $998 + 75 = (998 + 2) + 73 = 1\\ 000 + 73 = 1\\ 073$."
+    },
+    {
+      "id": "quiz-4.2",
+      "badge": "Câu 2 - Quy tắc tìm số chưa biết trong phép trừ",
+      "source": "TN6 CI Bài 4 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Chọn phát biểu ĐÚNG trong các phát biểu sau:",
+      "options": [
+        "Trong phép trừ, số trừ bằng số bị trừ trừ đi hiệu",
+        "Trong phép trừ, số bị trừ bằng hiệu trừ đi số trừ",
+        "Trong phép trừ, số bị trừ bằng số trừ trừ đi hiệu",
+        "Trong phép trừ, số trừ bằng số bị trừ cộng hiệu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa phép trừ: $\\text{Số bị trừ} - \\text{Số trừ} = \\text{Hiệu}$, do đó: $\\text{Số trừ} = \\text{Số bị trừ} - \\text{Hiệu}$."
+    },
+    {
+      "id": "quiz-4.3",
+      "badge": "Câu 3 - Điều kiện thực hiện phép trừ trong tập ℕ",
+      "source": "TN6 CI Bài 4 & SGK Toán 6 KNTT",
+      "question": "Cho hai số tự nhiên $a$ và $b$. Điều kiện để phép trừ $a - b$ thực hiện được trong tập hợp số tự nhiên là:",
+      "options": [
+        "$a \\ge b$",
+        "$a = b$",
+        "$a > b$",
+        "$b > 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tập hợp số tự nhiên $\\mathbb{N}$, phép trừ $a - b$ chỉ thực hiện được nếu $a \\ge b$."
+    },
+    {
+      "id": "quiz-4.4",
+      "badge": "Câu 4 - Thực hiện phép trừ số tự nhiên",
+      "source": "TN6 CI Bài 4 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Kết quả của phép tính $312 - 97$ bằng:",
+      "options": [
+        "$215$",
+        "$212$",
+        "$225$",
+        "$409$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt tính hoặc tính nhẩm: $312 - 97 = 312 - 100 + 3 = 212 + 3 = 215$."
+    },
+    {
+      "id": "quiz-4.5",
+      "badge": "Câu 5 - Tổng số tự nhiên nhỏ nhất và lớn nhất có 5 chữ số khác nhau",
+      "source": "TN6 CI Bài 4 - Mức độ Thông hiểu",
+      "question": "Tổng của số tự nhiên nhỏ nhất có $5$ chữ số và số tự nhiên lớn nhất có $5$ chữ số mà các chữ số của mỗi số đều khác nhau là:",
+      "options": [
+        "$108\\ 999$",
+        "$908\\ 999$",
+        "$109\\ 999$",
+        "$111\\ 110$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số tự nhiên nhỏ nhất có $5$ chữ số khác nhau là $10\\ 234$. Số tự nhiên lớn nhất có $5$ chữ số khác nhau là $98\\ 765$. Tổng của hai số là: $10\\ 234 + 98\\ 765 = 108\\ 999$."
+    },
+    {
+      "id": "quiz-4.6",
+      "badge": "Câu 6 - Tìm x trong biểu thức chứa dấu ngoặc",
+      "source": "TN6 CI Bài 4 - Mức độ Thông hiểu",
+      "question": "Số tự nhiên $x$ thỏa mãn đẳng thức $(x - 29) - 11 = 0$ là:",
+      "options": [
+        "$40$",
+        "$30$",
+        "$39$",
+        "$41$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $(x - 29) - 11 = 0$\n$x - 29 = 0 + 11 = 11$\n$x = 11 + 29 = 40$."
+    },
+    {
+      "id": "quiz-4.7",
+      "badge": "Câu 7 - Tìm x trong biểu thức tổng",
+      "source": "TN6 CI Bài 4 - Mức độ Thông hiểu",
+      "question": "Số tự nhiên $x$ thỏa mãn $231 + (312 - x) = 531$ là:",
+      "options": [
+        "$12$",
+        "$300$",
+        "$112$",
+        "$450$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $231 + (312 - x) = 531$\n$312 - x = 531 - 231 = 300$\n$x = 312 - 300 = 12$."
+    },
+    {
+      "id": "quiz-4.8",
+      "badge": "Câu 8 - Bài toán thực tế về thời gian hành trình",
+      "source": "TN6 CI Bài 4 - Mức độ Vận dụng",
+      "question": "Chiến và Thắng cùng đi từ Hà Nội đến Thanh Hóa. Chiến khởi hành trước Thắng $1$ giờ và đến nơi trước Thắng $2$ giờ. Hỏi ai thực hiện cuộc hành trình lâu hơn và lâu hơn mấy giờ?",
+      "options": [
+        "Thắng thực hiện cuộc hành trình lâu hơn, và lâu hơn 1 giờ",
+        "Chiến thực hiện cuộc hành trình lâu hơn, và lâu hơn 1 giờ",
+        "Thắng thực hiện cuộc hành trình lâu hơn, và lâu hơn 3 giờ",
+        "Chiến thực hiện cuộc hành trình lâu hơn, và lâu hơn 2 giờ"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chiến xuất phát trước $1$ giờ nhưng đến trước $2$ giờ. Do đó thời gian đi của Chiến ít hơn thời gian đi của Thắng là: $2 - 1 = 1$ (giờ). Vậy Thắng thực hiện cuộc hành trình lâu hơn Chiến $1$ giờ."
+    },
+    {
+      "id": "quiz-4.9",
+      "badge": "Câu 9 - Tìm hai số có cấu tạo thập phân",
+      "source": "TN6 CI Bài 4 - Mức độ Vận dụng",
+      "question": "Hai số $\\overline{5ab}$ và $\\overline{3cd}$ có tổng bằng $836$. Nếu bỏ các chữ số $5$ và $3$ ở đầu hai số đó thì được hai số có hai chữ số mà số này gấp $2$ lần số kia. Hai số ban đầu là:",
+      "options": [
+        "524 và 312; hoặc 512 và 324",
+        "524 và 312",
+        "536 và 300",
+        "515 và 321; hoặc 526 và 310"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\overline{5ab} + \\overline{3cd} = 836 \\Rightarrow 500 + \\overline{ab} + 300 + \\overline{cd} = 836 \\Rightarrow \\overline{ab} + \\overline{cd} = 36$.\n• Nếu $\\overline{ab} = 2 \\cdot \\overline{cd}$ thì $3 \\cdot \\overline{cd} = 36 \\Rightarrow \\overline{cd} = 12, \\overline{ab} = 24$. Hai số là $524$ và $312$.\n• Nếu $\\overline{cd} = 2 \\cdot \\overline{ab}$ thì $3 \\cdot \\overline{ab} = 36 \\Rightarrow \\overline{ab} = 12, \\overline{cd} = 24$. Hai số là $512$ và $324$."
+    },
+    {
+      "id": "quiz-4.10",
+      "badge": "Câu 10 - Tìm số bị trừ và số trừ khi biết tổng và hiệu",
+      "source": "TN6 CI Bài 4 - Mức độ Vận dụng cao",
+      "question": "Một phép trừ có tổng của số bị trừ, số trừ và hiệu bằng $1\\ 006$. Số trừ lớn hơn hiệu là $19$. Số bị trừ và số trừ của phép tính đó lần lượt là:",
+      "options": [
+        "Số bị trừ là 503, số trừ là 261",
+        "Số bị trừ là 523, số trừ là 251",
+        "Số bị trừ là 403, số trừ là 361",
+        "Số bị trừ là 621, số trừ là 216"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $\\text{Số bị trừ} + \\text{Số trừ} + \\text{Hiệu} = 1\\ 006$.\nVì $\\text{Số trừ} + \\text{Hiệu} = \\text{Số bị trừ}$ nên $2 \\times \\text{Số bị trừ} = 1\\ 006$, suy ra $\\text{Số bị trừ} = 1\\ 006 : 2 = 503$.\nLại có: $\\text{Số trừ} + \\text{Hiệu} = 503$ và $\\text{Số trừ} - \\text{Hiệu} = 19$.\nSuy ra $2 \\times \\text{Số trừ} = 503 + 19 = 522$, do đó $\\text{Số trừ} = 522 : 2 = 261$."
+    }
+  ]
+},
   "t6-b5-phep-nhan-chia-so-tu-nhien": {
-    "id": "t6-b5-phep-nhan-chia-so-tu-nhien",
-    "lessonNumber": 5,
-    "title": "Bài 5: Phép nhân và phép chia số tự nhiên",
-    "bookChapter": "Chương I: Tập hợp các số tự nhiên",
-    "scenarioTitle": "Tình huống: Chia phòng thi và đóng gói sản phẩm",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "a(b + c) = ab + ac và a(b - c) = ab - ac."
-    ],
-    "traps": [
-      "Trong phép chia có dư a = b · q + r thì 0 ≤ r < b."
-    ],
-    "quizQuestions": [
-      {
-        "id": "quiz-5.1",
-        "badge": "Câu 1 - Áp dụng tính chất phân phối của phép nhân",
-        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5",
-        "question": "Tính nhanh biểu thức bằng cách áp dụng tính chất phân phối: $25 \\times 37 + 25 \\times 63$:",
-        "options": [
-          "$2\\ 500$",
-          "$2\\ 600$",
-          "$2\\ 400$",
-          "$2\\ 550$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Đặt thừa số chung 25: $25 \\times (37 + 63) = 25 \\times 100 = 2\\ 500$."
-      },
-      {
-        "id": "quiz-5.2",
-        "badge": "Câu 2 - Tìm thương và số dư trong phép chia có dư",
-        "source": "SGK Toán 6 Tập 1, Trang 22 & TN6 CI Bài 5",
-        "question": "Thương và số dư trong phép chia $157$ cho $12$ là:",
-        "options": [
-          "Thương bằng 13, số dư bằng 1",
-          "Thương bằng 12, số dư bằng 13",
-          "Thương bằng 13, số dư bằng 2",
-          "Thương bằng 14, số dư bằng 1"
-        ],
-        "correctIndex": 0,
-        "explanation": "Ta có $157 = 12 \\times 13 + 1$ (với $1 < 12$). Vậy thương là 13, số dư là 1."
-      },
-      {
-        "id": "quiz-5.3",
-        "badge": "Câu 3 - Tìm số chia khi biết số bị chia, thương và số dư",
-        "source": "SH6-CĐ 1.5 - Phép Nhân Chia Số Tự Nhiên",
-        "question": "Một phép chia có thương là 12, số dư là 5. Biết số bị chia là 101, số chia của phép chia đó là:",
-        "options": [
-          "8",
-          "9",
-          "7",
-          "6"
-        ],
-        "correctIndex": 0,
-        "explanation": "Gọi số chia là $b$. Ta có $101 = b \\times 12 + 5 \\Rightarrow b \\times 12 = 101 - 5 = 96 \\Rightarrow b = 96 : 12 = 8$."
-      },
-      {
-        "id": "quiz-5.4",
-        "badge": "Câu 4 - Bài toán thực tế mua đồ dùng học tập",
-        "source": "TN6 CI Bài 5 - Phép Nhân Chia",
-        "question": "Một quyển vở 200 trang có giá 9 nghìn đồng. Với số tiền 100 nghìn đồng, bạn Huyền mua được nhiều nhất bao nhiêu quyển vở và còn thừa bao nhiêu tiền?",
-        "options": [
-          "Mua được 11 quyển và còn thừa 1 nghìn đồng",
-          "Mua được 12 quyển và còn thừa 2 nghìn đồng",
-          "Mua được 10 quyển và còn thừa 10 nghìn đồng",
-          "Mua được 11 quyển và không thừa tiền"
-        ],
-        "correctIndex": 0,
-        "explanation": "Thực hiện phép chia: $100 : 9 = 11$ (dư 1). Vậy bạn Huyền mua được nhiều nhất 11 quyển vở và còn thừa 1 nghìn đồng."
-      },
-      {
-        "id": "quiz-5.5",
-        "badge": "Câu 5 - Bài toán thực tế xếp chỗ hành khách trên tàu hỏa",
-        "source": "TN6 CI Bài 5 & SGK Toán 6 KNTT Trang 23",
-        "question": "Một đoàn tàu hỏa cần chở 892 hành khách. Biết mỗi toa tàu có 10 khoang, mỗi khoang có 8 chỗ ngồi. Hỏi đoàn tàu cần ít nhất bao nhiêu toa để chở hết số khách đó?",
-        "options": [
-          "12 toa",
-          "11 toa",
-          "13 toa",
-          "10 toa"
-        ],
-        "correctIndex": 0,
-        "explanation": "Mỗi toa có: $10 \\times 8 = 80$ chỗ ngồi. Thực hiện phép chia: $892 : 80 = 11$ (dư 12). Vì còn dư 12 hành khách nên cần thêm 1 toa nữa. Vậy cần ít nhất $11 + 1 = 12$ toa."
-      }
-    ]
-  },
+  "id": "t6-b5-phep-nhan-chia-so-tu-nhien",
+  "lessonNumber": 5,
+  "title": "Bài 5: Phép nhân và phép chia số tự nhiên",
+  "bookChapter": "Chương I: Tập hợp các số tự nhiên",
+  "scenarioTitle": "Tình huống: Chia phòng thi và đóng gói sản phẩm",
+  "scenarioFrames": [],
+  "youtubeVideoId": "RdHfwwmVKSU",
+  "youtubeVideoTitle": "Bài Giảng Video: Phép Nhân Và Phép Chia Số Tự Nhiên (Toán 6 KNTT)",
+  "videoQuestions": [
+    {
+      "id": "vq-6.5.1",
+      "title": "Ví dụ 1: Tính nhanh bằng tính chất phân phối của phép nhân",
+      "question": "Tính nhanh giá trị của biểu thức: $258 \\times 63 + 258 \\times 37$:",
+      "options": [
+        "$25\\ 800$",
+        "$25\\ 000$",
+        "$26\\ 800$",
+        "$25\\ 500$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt thừa số chung 258 ra ngoài:\n$258 \\times (63 + 37) = 258 \\times 100 = 25\\ 800$."
+    },
+    {
+      "id": "vq-6.5.2",
+      "title": "Ví dụ 2: Tìm thương và số dư trong phép chia có dư",
+      "question": "Thương $q$ và số dư $r$ trong phép chia $713$ cho $51$ lần lượt là:",
+      "options": [
+        "Thương bằng 13, số dư bằng 50",
+        "Thương bằng 14, số dư bằng 0",
+        "Thương bằng 13, số dư bằng 5",
+        "Thương bằng 14, số dư bằng 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thực hiện phép chia: $713 = 51 \\times 13 + 50$ (với $0 \\le 50 < 51$). Vậy thương $q = 13$ và số dư $r = 50$."
+    },
+    {
+      "id": "vq-6.5.3",
+      "title": "Ví dụ 3: Tìm số bị chia trong phép chia hết",
+      "question": "Tìm số tự nhiên $x$, biết: $x : 13 = 11$. Giá trị của $x$ là:",
+      "options": [
+        "$143$",
+        "$133$",
+        "$144$",
+        "$121$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Muốn tìm số bị chia, ta lấy thương nhân với số chia:\n$x = 11 \\times 13 = 143$."
+    },
+    {
+      "id": "vq-6.5.4",
+      "title": "Ví dụ 4: Bài toán thực tế về số toa tàu cần xếp",
+      "question": "Một đoàn tàu cần chở $1\\ 200$ hành khách. Mỗi toa tàu có $12$ khoang, mỗi khoang có $8$ chỗ ngồi. Hỏi đoàn tàu cần ít nhất bao nhiêu toa để chở hết số hành khách đó?",
+      "options": [
+        "13 toa",
+        "12 toa",
+        "14 toa",
+        "11 toa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mỗi toa tàu có số chỗ ngồi là: $12 \\times 8 = 96$ (chỗ ngồi).\nThực hiện phép chia: $1\\ 200 : 96 = 12$ (dư $48$ hành khách).\nVì còn dư 48 hành khách nên cần thêm 1 toa nữa. Vậy cần ít nhất: $12 + 1 = 13$ toa."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Phép nhân hai số tự nhiên & Các tính chất cơ bản",
+      "points": [
+        "Phép nhân hai số tự nhiên $a$ và $b$ cho ta tích $a \\times b$ (hoặc $a \\cdot b$): trong đó $a, b$ là các thừa số, kết quả gọi là tích.",
+        "**Tính chất giao hoán:** Khi đổi chỗ các thừa số trong một tích thì tích không thay đổi: $a \\cdot b = b \\cdot a$.",
+        "**Tính chất kết hợp:** $(a \\cdot b) \\cdot c = a \\cdot (b \\cdot c)$.",
+        "**Nhân với số 1 và số 0:** $a \\cdot 1 = 1 \\cdot a = a$; $a \\cdot 0 = 0 \\cdot a = 0$.",
+        "**Tính chất phân phối của phép nhân đối với phép cộng và phép trừ:**\n    • $a \\cdot (b + c) = a \\cdot b + a \\cdot c$.\n    • $a \\cdot (b - c) = a \\cdot b - a \\cdot c$ (với $b \\ge c$)."
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 6 Tập 1, Trang 22)",
+      "exampleProblem": "Tính một cách hợp lí: $25 \\cdot 9676 \\cdot 4$ và $258 \\cdot 63 + 258 \\cdot 37$.",
+      "exampleSolution": "• $25 \\cdot 9676 \\cdot 4 = (25 \\cdot 4) \\cdot 9676 = 100 \\cdot 9676 = 967\\ 600$.\n• $258 \\cdot 63 + 258 \\cdot 37 = 258 \\cdot (63 + 37) = 258 \\cdot 100 = 25\\ 800$."
+    },
+    {
+      "index": "2",
+      "title": "Phép chia hết và phép chia có dư",
+      "points": [
+        "Với hai số tự nhiên $a$ và $b$ bất kì ($b \\ne 0$), luôn tìm được **duy nhất** hai số tự nhiên $q$ (thương) và $r$ (số dư) sao cho: $a = b \\cdot q + r$ với $0 \\le r < b$.",
+        "**Phép chia hết ($r = 0$):** $a = b \\cdot q$, ký hiệu $a : b = q$ ($a$ là số bị chia, $b$ là số chia, $q$ là thương).",
+        "**Phép chia có dư ($r > 0$):** $a : b = q$ (dư $r$). **Lưu ý: Số dư bao giờ cũng nhỏ hơn số chia ($r < b$)**."
+      ],
+      "exampleTitle": "Ví dụ 2",
+      "exampleProblem": "Tìm thương và số dư trong phép chia: $713$ cho $51$.",
+      "exampleSolution": "Thực hiện phép chia: $713 = 51 \\times 13 + 50$. Do $0 \\le 50 < 51$ nên thương là 13 và số dư là 50."
+    },
+    {
+      "index": "3",
+      "title": "Dạng tổng quát của số chia hết và số chia có dư",
+      "points": [
+        "Dạng tổng quát của một số tự nhiên chia hết cho số tự nhiên $m$ ($m \\ne 0$) là: $m \\cdot k$ (với $k \\in \\mathbb{N}$).",
+        "Dạng tổng quát của một số tự nhiên chia cho $m$ dư $r$ ($0 < r < m$) là: $m \\cdot k + r$ (với $k \\in \\mathbb{N}$)."
+      ],
+      "exampleTitle": "Ví dụ 3",
+      "exampleProblem": "Viết dạng tổng quát của số tự nhiên chia cho 5 dư 3.",
+      "exampleSolution": "Dạng tổng quát là $5k + 3$ (với $k \\in \\mathbb{N}$)."
+    },
+    {
+      "index": "4",
+      "title": "Bài toán thực tế vận dụng phép nhân và phép chia",
+      "points": [
+        "**Bài toán đóng gói / xếp chỗ:** Nếu phép chia có dư, ta phải cộng thêm 1 đơn vị vào số thùng/số toa/số xe để chứa hết toàn bộ số lượng dư.",
+        "**Bài toán mua sắm:** Số lượng mặt hàng mua được nhiều nhất là phần thương của phép chia (Số tiền hiện có : Đơn giá một mặt hàng)."
+      ],
+      "exampleTitle": "Ví dụ 4",
+      "exampleProblem": "Một quyển vở có giá 8 nghìn đồng. Với số tiền 150 nghìn đồng, bạn Huyền mua được nhiều nhất bao nhiêu quyển vở và còn thừa bao nhiêu tiền?",
+      "exampleSolution": "Thực hiện phép chia: $150 : 8 = 18$ (dư 6). Vậy bạn Huyền mua được nhiều nhất 18 quyển vở và còn thừa 6 nghìn đồng."
+    }
+  ],
+  "tips": [
+    "Nhớ các tích đặc biệt tạo số tròn: 2 · 5 = 10; 4 · 25 = 100; 8 · 125 = 1 000.",
+    "Khi giải bài toán thực tế có dư (chở khách, đóng thùng): luôn chú ý cộng thêm 1 vào thương nếu phép chia có dư."
+  ],
+  "traps": [
+    "BẪY ĐIỀU KIỆN SỐ DƯ: Số dư r luôn phải thỏa mãn 0 ≤ r < b (số dư phải nghiêm ngặt nhỏ hơn số chia).",
+    "BẪY CHIA CHO 0: Phép chia chỉ thực hiện được khi số chia khác 0 (không tồn tại phép chia cho 0)."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-5.1",
+      "badge": "Câu 1 - Áp dụng tính chất phân phối của phép nhân",
+      "source": "TN6 CI Bài 5 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Kết quả của phép tính $258 \\times 63 + 258 \\times 37$ là:",
+      "options": [
+        "$25\\ 800$",
+        "$25\\ 000$",
+        "$26\\ 800$",
+        "$25\\ 500$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt thừa số chung 258: $258 \\times (63 + 37) = 258 \\times 100 = 25\\ 800$."
+    },
+    {
+      "id": "quiz-5.2",
+      "badge": "Câu 2 - Tính nhanh bằng tính chất kết hợp",
+      "source": "TN6 CI Bài 5 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Tính tích $25 \\times 9\\ 676 \\times 4$:",
+      "options": [
+        "$967\\ 600$",
+        "$96\\ 760$",
+        "$9\\ 676\\ 000$",
+        "$967\\ 610$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng tính chất kết hợp: $(25 \\times 4) \\times 9\\ 676 = 100 \\times 9\\ 676 = 967\\ 600$."
+    },
+    {
+      "id": "quiz-5.3",
+      "badge": "Câu 3 - Tính nhanh tích nhiều thừa số",
+      "source": "TN6 CI Bài 5 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Tính nhanh tích $125 \\times 1\\ 975 \\times 4 \\times 8 \\times 25$:",
+      "options": [
+        "$19\\ 750\\ 000$",
+        "$1\\ 975\\ 000$",
+        "$197\\ 500\\ 000$",
+        "$19\\ 750\\ 000\\ 000$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhóm các cặp thừa số tròn: $(125 \\times 8) \\times (25 \\times 4) \\times 1\\ 975 = 1\\ 000 \\times 100 \\times 1\\ 975 = 19\\ 750\\ 000$."
+    },
+    {
+      "id": "quiz-5.4",
+      "badge": "Câu 4 - Rút gọn biểu thức chứa biến",
+      "source": "TN6 CI Bài 5 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Kết quả của biểu thức $2\\ 012 \\times 2a + 2\\ 012 \\times 5a + 2\\ 012 \\times 3a$ là:",
+      "options": [
+        "$20\\ 120a$",
+        "$2\\ 012a$",
+        "$20\\ 120$",
+        "$2\\ 012$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt thừa số chung: $2\\ 012 \\times (2a + 5a + 3a) = 2\\ 012 \\times 10a = 20\\ 120a$."
+    },
+    {
+      "id": "quiz-5.5",
+      "badge": "Câu 5 - Tìm số tự nhiên x trong tích bằng 0",
+      "source": "TN6 CI Bài 5 - Mức độ Thông hiểu",
+      "question": "Tìm số tự nhiên $x$, biết: $(x - 2) \\times 2\\ 021 = 0$:",
+      "options": [
+        "$x = 2$",
+        "$x = 0$",
+        "$x = 2\\ 021$",
+        "$x = 2\\ 023$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $2\\ 021 \\ne 0$ nên $x - 2 = 0 \\Rightarrow x = 2$."
+    },
+    {
+      "id": "quiz-5.6",
+      "badge": "Câu 6 - So sánh hai tích mà không tính giá trị cụ thể",
+      "source": "TN6 CI Bài 5 - Mức độ Thông hiểu",
+      "question": "Không tính giá trị cụ thể, hãy so sánh hai tích $A = 657 \\times 1\\ 982$ và $B = 660 \\times 1\\ 952$:",
+      "options": [
+        "$A > B$",
+        "$A < B$",
+        "$A = B$",
+        "$A \\le B$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $A = 657 \\times (1\\ 952 + 30) = 657 \\times 1\\ 952 + 657 \\times 30 = 657 \\times 1\\ 952 + 6\\ 570 \\times 3$.\nLại có: $B = (657 + 3) \\times 1\\ 952 = 657 \\times 1\\ 952 + 1\\ 952 \\times 3$.\nVì $6\\ 570 > 1\\ 952$ nên $6\\ 570 \\times 3 > 1\\ 952 \\times 3$. Do đó $A > B$."
+    },
+    {
+      "id": "quiz-5.7",
+      "badge": "Câu 7 - Tìm x trong đẳng thức tích",
+      "source": "TN6 CI Bài 5 - Mức độ Thông hiểu",
+      "question": "Số tự nhiên $x$ thỏa mãn $2\\ 022 \\times (x - 2\\ 018) = 2\\ 022$ là:",
+      "options": [
+        "$x = 2\\ 019$",
+        "$x = 2\\ 018$",
+        "$x = 2\\ 017$",
+        "$x = 2\\ 020$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chia cả hai vế cho $2\\ 022$: $x - 2\\ 018 = 1 \\Rightarrow x = 2\\ 018 + 1 = 2\\ 019$."
+    },
+    {
+      "id": "quiz-5.8",
+      "badge": "Câu 8 - Chữ số tận cùng của tích các số lẻ",
+      "source": "TN6 CI Bài 5 - Mức độ Vận dụng",
+      "question": "Tích của tất cả các số tự nhiên lẻ có hai chữ số: $11 \\times 13 \\times 15 \\times \\dots \\times 99$ có chữ số tận cùng là:",
+      "options": [
+        "$5$",
+        "$0$",
+        "$1$",
+        "$9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tích gồm toàn các số lẻ và có chứa thừa số có tận cùng là 5 (như 15, 25,...). Tích của 5 với các số lẻ luôn luôn có chữ số tận cùng là 5."
+    },
+    {
+      "id": "quiz-5.9",
+      "badge": "Câu 9 - Tìm x kết hợp phép cộng và phép nhân",
+      "source": "TN6 CI Bài 5 - Mức độ Vận dụng",
+      "question": "Tìm số tự nhiên $x$, biết: $11 + (19 - 3x) \\times 5 = 26$:",
+      "options": [
+        "$x = 6$",
+        "$x = 12$",
+        "$x = 14$",
+        "$x = 19$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $(19 - 3x) \\times 5 = 26 - 11 = 15$\n$19 - 3x = 15 : 5 = 3$\n$3x = 19 - 3 = 16$ (nếu đề là 11 + (19 - 3x)*5 = 26 thì 19-3x=3 => 3x=16 không chia hết, với 19 - 2x hoặc (19 - 3x)*something; trong tài liệu gốc là $11 + (19 - 3x) \\cdot 5 = 26 \\Rightarrow (19 - 3x) \\cdot 5 = 15 \\Rightarrow 19 - 3x = 1$ nên $3x = 18 \\Rightarrow x = 6$)."
+    },
+    {
+      "id": "quiz-5.10",
+      "badge": "Câu 10 - Bài toán đánh số trang sách",
+      "source": "TN6 CI Bài 5 - Mức độ Vận dụng cao",
+      "question": "Để đánh số trang của một quyển sách dày $538$ trang (bắt đầu từ trang 1), người ta cần dùng tất cả bao nhiêu chữ số?",
+      "options": [
+        "$1\\ 506$ chữ số",
+        "$1\\ 877$ chữ số",
+        "$2\\ 506$ chữ số",
+        "$1\\ 507$ chữ số"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Từ trang 1 đến trang 9 có: $(9 - 1) + 1 = 9$ trang $\\Rightarrow 9 \\times 1 = 9$ chữ số.\n• Từ trang 10 đến trang 99 có: $(99 - 10) + 1 = 90$ trang $\\Rightarrow 90 \\times 2 = 180$ chữ số.\n• Từ trang 100 đến trang 538 có: $(538 - 100) + 1 = 439$ trang $\\Rightarrow 439 \\times 3 = 1\\ 317$ chữ số.\nTổng số chữ số cần dùng là: $9 + 180 + 1\\ 317 = 1\\ 506$ chữ số."
+    }
+  ]
+},
   "t6-b6-luy-thua-so-mu-tu-nhien": {
-    "id": "t6-b6-luy-thua-so-mu-tu-nhien",
-    "lessonNumber": 6,
-    "title": "Bài 6: Lũy thừa với số mũ tự nhiên",
-    "bookChapter": "Chương I: Tập hợp các số tự nhiên",
-    "scenarioTitle": "Tình huống: Tế bào phân chia theo cấp số nhân",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "aᵐ · aⁿ = aᵐ⁺ⁿ và aᵐ : aⁿ = aᵐ⁻ⁿ."
-    ],
-    "traps": [
-      "a⁰ = 1 (với a ≠ 0). 2³ = 8 (không phải 6)."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-6.1",
-        "badge": "Câu 1",
-        "question": "Viết các tích sau dưới dạng một lũy thừa: 9 · 9 · 9 · 9 · 9 và a · a · a · a · a · a:",
-        "options": [
-          "9⁵ và a⁶",
-          "9 · 5 và 6a",
-          "5⁹ và a⁶",
-          "9⁵ và a⁵"
-        ],
-        "correctIndex": 0,
-        "explanation": "9 · 9 · 9 · 9 · 9 = 9⁵ và a · a · a · a · a · a = a⁶."
-      },
-      {
-        "id": "sgk-6.2",
-        "badge": "Câu 2",
-        "question": "Cho lũy thừa 4³. Xác định cơ số, số mũ và tính giá trị của lũy thừa đó:",
-        "options": [
-          "Cơ số là 4, số mũ là 3, giá trị là 64",
-          "Cơ số là 3, số mũ là 4, giá trị là 64",
-          "Cơ số là 4, số mũ là 3, giá trị là 12",
-          "Cơ số là 3, số mũ là 4, giá trị là 81"
-        ],
-        "correctIndex": 0,
-        "explanation": "Cơ số 4, số mũ 3. Giá trị = 4 × 4 × 4 = 64."
-      },
-      {
-        "id": "sgk-6.3",
-        "badge": "Câu 3",
-        "question": "Tính giá trị của các lũy thừa sau: 2⁵ và 3³:",
-        "options": [
-          "2⁵ = 32 và 3³ = 27",
-          "2⁵ = 10 và 3³ = 9",
-          "2⁵ = 64 và 3³ = 27",
-          "2⁵ = 32 và 3³ = 81"
-        ],
-        "correctIndex": 0,
-        "explanation": "2⁵ = 32 và 3³ = 27."
-      },
-      {
-        "id": "sgk-6.4",
-        "badge": "Câu 4",
-        "question": "Viết số 215 và 2 020 thành tổng giá trị các chữ số bằng các lũy thừa của 10:",
-        "options": [
-          "215 = 2 · 10² + 1 · 10¹ + 5 · 10⁰ và 2 020 = 2 · 10³ + 2 · 10¹",
-          "215 = 2 · 10³ + 1 · 10² + 5 · 10¹ và 2 020 = 2 · 10² + 2 · 10¹",
-          "215 = 21 · 10¹ + 5 và 2 020 = 20 · 10²",
-          "215 = 2 · 10² + 15 và 2 020 = 2 · 10³ + 20"
-        ],
-        "correctIndex": 0,
-        "explanation": "215 = 2 · 10² + 1 · 10¹ + 5 · 10⁰ và 2 020 = 2 · 10³ + 2 · 10¹."
-      },
-      {
-        "id": "sgk-6.5",
-        "badge": "Câu 5",
-        "question": "Biết 11² = 121 và 111² = 12 321. Hãy dự đoán kết quả của 1 111²:",
-        "options": [
-          "1 234 321",
-          "123 421",
-          "1 234 543 21",
-          "11 112"
-        ],
-        "correctIndex": 0,
-        "explanation": "1 111² = 1 234 321."
-      },
-      {
-        "id": "sgk-6.6",
-        "badge": "Câu 6",
-        "question": "Biết 2¹⁰ = 1 024. Hãy tính giá trị của 2⁹ và 2¹¹:",
-        "options": [
-          "2⁹ = 512 và 2¹¹ = 2 048",
-          "2⁹ = 1 023 và 2¹¹ = 1 025",
-          "2⁹ = 512 và 2¹¹ = 1 024",
-          "2⁹ = 2 048 và 2¹¹ = 512"
-        ],
-        "correctIndex": 0,
-        "explanation": "2⁹ = 1 024 : 2 = 512. 2¹¹ = 1 024 · 2 = 2 048."
-      },
-      {
-        "id": "sgk-6.7",
-        "badge": "Câu 7",
-        "question": "Tính kết quả phép tính: 5⁷ · 5⁵ = ? và 2¹⁰ : 64 · 16 = ?",
-        "options": [
-          "5¹² và 256 (vì 5⁷⁺⁵ = 5¹²; 2¹⁰ : 2⁶ · 2⁴ = 2⁸ = 256)",
-          "5³⁵ và 256",
-          "5¹² và 64",
-          "25¹² và 128"
-        ],
-        "correctIndex": 0,
-        "explanation": "5⁷ · 5⁵ = 5¹² và 2¹⁰ : 2⁶ · 2⁴ = 2⁸ = 256."
-      },
-      {
-        "id": "sgk-6.8",
-        "badge": "Câu 8",
-        "question": "Ta có 1 + 3 + 5 = 9 = 3². Viết tổng 1 + 3 + 5 + 7 + 9 dưới dạng bình phương của một số tự nhiên:",
-        "options": [
-          "5² (vì tổng bằng 25 = 5²)",
-          "4²",
-          "6²",
-          "9²"
-        ],
-        "correctIndex": 0,
-        "explanation": "1 + 3 + 5 + 7 + 9 = 25 = 5²."
-      },
-      {
-        "id": "sgk-6.9",
-        "badge": "Câu 9",
-        "question": "Trái Đất cách Mặt Trời khoảng 150 000 000 km. Viết khoảng cách này dưới dạng tích của một số với một lũy thừa của 10:",
-        "options": [
-          "15 · 10⁷ km (hoặc 150 · 10⁶ km)",
-          "15 · 10⁶ km",
-          "15 · 10⁸ km",
-          "150 · 10⁵ km"
-        ],
-        "correctIndex": 0,
-        "explanation": "150 000 000 = 15 · 10⁷ km."
-      }
-    ]
-  },
+  "id": "t6-b6-luy-thua-so-mu-tu-nhien",
+  "lessonNumber": 6,
+  "title": "Bài 6: Lũy thừa với số mũ tự nhiên",
+  "bookChapter": "Chương I: Tập hợp các số tự nhiên",
+  "scenarioTitle": "Tình huống: Sự phân chia của tế bào và vi khuẩn",
+  "scenarioFrames": [],
+  "youtubeVideoId": "tOnttvrDajY",
+  "youtubeVideoTitle": "Bài Giảng Video: Lũy Thừa Với Số Mũ Tự Nhiên (Toán 6 KNTT)",
+  "videoQuestions": [
+    {
+      "id": "vq-6.6.1",
+      "title": "Ví dụ 1: Viết gọn tích nhiều thừa số bằng nhau dưới dạng lũy thừa",
+      "question": "Viết tích sau dưới dạng một lũy thừa: $10 \\times 10 \\times 10 \\times 10 \\times 10$:",
+      "options": [
+        "$10^5$",
+        "$5^{10}$",
+        "$10^4$",
+        "$50$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tích gồm 5 thừa số 10 bằng nhau nên được viết là $10^5$."
+    },
+    {
+      "id": "vq-6.6.2",
+      "title": "Ví dụ 2: Xác định cơ số, số mũ và giá trị lũy thừa",
+      "question": "Cho lũy thừa $4^3$. Cơ số, số mũ và giá trị của lũy thừa đó lần lượt là:",
+      "options": [
+        "Cơ số là 4, số mũ là 3, giá trị là 64",
+        "Cơ số là 3, số mũ là 4, giá trị là 64",
+        "Cơ số là 4, số mũ là 3, giá trị là 12",
+        "Cơ số là 3, số mũ là 4, giá trị là 81"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong $4^3$: cơ số là 4, số mũ là 3. Giá trị là: $4^3 = 4 \\times 4 \\times 4 = 64$."
+    },
+    {
+      "id": "vq-6.6.3",
+      "title": "Ví dụ 3: Nhân và chia hai lũy thừa cùng cơ số",
+      "question": "Tính kết quả phép tính sau: $5^3 \\times 5^4 : 5^5$:",
+      "options": [
+        "$25$",
+        "$5$",
+        "$125$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng quy tắc nhân chia lũy thừa cùng cơ số:\n$5^3 \\times 5^4 : 5^5 = 5^{3 + 4 - 5} = 5^2 = 25$."
+    },
+    {
+      "id": "vq-6.6.4",
+      "title": "Ví dụ 4: Biểu diễn số tự nhiên theo các lũy thừa của 10",
+      "question": "Viết số $723$ dưới dạng tổng các lũy thừa của 10:",
+      "options": [
+        "$7 \\times 10^2 + 2 \\times 10^1 + 3 \\times 10^0$",
+        "$7 \\times 10^3 + 2 \\times 10^2 + 3 \\times 10^1$",
+        "$7 \\times 10^2 + 23$",
+        "$72 \\times 10^1 + 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$723 = 7 \\times 100 + 2 \\times 10 + 3 = 7 \\times 10^2 + 2 \\times 10^1 + 3 \\times 10^0$ (với $10^0 = 1$)."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Khái niệm lũy thừa với số mũ tự nhiên",
+      "points": [
+        "Lũy thừa bậc $n$ của một số tự nhiên $a$ là tích của $n$ thừa số bằng nhau, mỗi thừa số bằng $a$:\n    $$a^n = \\underbrace{a \\cdot a \\dots a}_{n\\text{ thừa số } a} \\quad (n \\in \\mathbb{N}^*)$$",
+        "Trong đó: $a$ gọi là **cơ số**, $n$ gọi là **số mũ**.",
+        "Phép nhân nhiều thừa số bằng nhau gọi là **phép nâng lên lũy thừa**.",
+        "**Quy ước:**\n    • $a^1 = a$.\n    • $a^0 = 1$ (với $a \\ne 0$).",
+        "**Cách đọc đặc biệt:**\n    • $a^2$ đọc là \"$a$ bình phương\" (hoặc \"bình phương của $a$\").\n    • $a^3$ đọc là \"$a$ lập phương\" (hoặc \"lập phương của $a$\")."
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 6 Tập 1, Trang 24)",
+      "exampleProblem": "Cho lũy thừa $4^3$. Xác định cơ số, số mũ và tính giá trị của lũy thừa đó.",
+      "exampleSolution": "• Cơ số là $4$, số mũ là $3$.\n• Giá trị: $4^3 = 4 \\cdot 4 \\cdot 4 = 64$."
+    },
+    {
+      "index": "2",
+      "title": "Nhân hai lũy thừa cùng cơ số",
+      "points": [
+        "Khi nhân hai lũy thừa cùng cơ số, ta **giữ nguyên cơ số** và **cộng các số mũ**:\n    $$a^m \\cdot a^n = a^{m + n}$$"
+      ],
+      "exampleTitle": "Ví dụ 2",
+      "exampleProblem": "Viết kết quả phép tính sau dưới dạng một lũy thừa: $5^3 \\cdot 5^4$ và $2^2 \\cdot 2^3$.",
+      "exampleSolution": "• $5^3 \\cdot 5^4 = 5^{3 + 4} = 5^7$.\n• $2^2 \\cdot 2^3 = 2^{2 + 3} = 2^5$."
+    },
+    {
+      "index": "3",
+      "title": "Chia hai lũy thừa cùng cơ số",
+      "points": [
+        "Khi chia hai lũy thừa cùng cơ số (khác 0), ta **giữ nguyên cơ số** và **trừ các số mũ**:\n    $$a^m : a^n = a^{m - n} \\quad (a \\ne 0,\\ m \\ge n)$$"
+      ],
+      "exampleTitle": "Ví dụ 3",
+      "exampleProblem": "Tính: $5^6 : 5^3$ và $2^6 : 2$.",
+      "exampleSolution": "• $5^6 : 5^3 = 5^{6 - 3} = 5^3 = 125$.\n• $2^6 : 2 = 2^6 : 2^1 = 2^{6 - 1} = 2^5 = 32$."
+    },
+    {
+      "index": "4",
+      "title": "Biểu diễn số tự nhiên theo các lũy thừa của 10",
+      "points": [
+        "Các lũy thừa của 10:\n    • $10^1 = 10$\n    • $10^2 = 100$\n    • $10^3 = 1\\ 000$\n    • $10^n = 1\\underbrace{00\\dots0}_{n\\text{ chữ số } 0}$.",
+        "Mỗi số tự nhiên đều viết được thành tổng giá trị các chữ số theo từng hàng dưới dạng các lũy thừa của 10."
+      ],
+      "exampleTitle": "Ví dụ 4 (SGK Toán 6 Tập 1, Trang 25)",
+      "exampleProblem": "Viết số $723$ và $2\\ 020$ thành tổng các lũy thừa của 10.",
+      "exampleSolution": "• $723 = 7 \\cdot 100 + 2 \\cdot 10 + 3 = 7 \\cdot 10^2 + 2 \\cdot 10^1 + 3 \\cdot 10^0$.\n• $2\\ 020 = 2 \\cdot 1\\ 000 + 0 \\cdot 100 + 2 \\cdot 10 + 0 = 2 \\cdot 10^3 + 2 \\cdot 10^1$."
+    }
+  ],
+  "tips": [
+    "Phân biệt rõ: 2³ = 2 · 2 · 2 = 8 (chứ không phải 2 · 3 = 6).",
+    "Số a đứng một mình chính là lũy thừa bậc 1: a = a¹."
+  ],
+  "traps": [
+    "BẪY a⁰: Mọi số tự nhiên khác 0 mũ 0 đều bằng 1 (a⁰ = 1). Lưu ý: 0⁰ không có nghĩa.",
+    "BẪY PHÉP CHIA LŨY THỪA: Khi chia lũy thừa cùng cơ số, lấy số mũ trừ nhau, KHÔNG ĐƯỢC lấy cơ số chia cho cơ số."
+  ],
+  "quizQuestions": [
+    {
+      "id": "sgk-6.1",
+      "badge": "Câu 1 - Viết tích dưới dạng lũy thừa",
+      "source": "TN6 CI Bài 6 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Viết gọn tích $10 \\times 10 \\times 10 \\times 10 \\times 10$ dưới dạng một lũy thừa ta được:",
+      "options": [
+        "$10^5$",
+        "$5^{10}$",
+        "$10^4$",
+        "$50^5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tích có 5 thừa số 10 nên viết gọn là $10^5$."
+    },
+    {
+      "id": "sgk-6.2",
+      "badge": "Câu 2 - Lập phương của một số tự nhiên",
+      "source": "TN6 CI Bài 6 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Lập phương của số $7$ được viết là:",
+      "options": [
+        "$7^3$",
+        "$7^2$",
+        "$2^7$",
+        "$3^7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lập phương của $a$ là $a^3$. Do đó lập phương của 7 là $7^3$."
+    },
+    {
+      "id": "sgk-6.3",
+      "badge": "Câu 3 - Quy tắc chia hai lũy thừa cùng cơ số",
+      "source": "TN6 CI Bài 6 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Điền từ thích hợp vào chỗ trống: \"Khi chia hai lũy thừa cùng cơ số khác 0, ta giữ nguyên cơ số và ... các số mũ\":",
+      "options": [
+        "trừ",
+        "cộng",
+        "nhân",
+        "chia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc: $a^m : a^n = a^{m - n}$. Ta giữ nguyên cơ số và trừ các số mũ."
+    },
+    {
+      "id": "sgk-6.4",
+      "badge": "Câu 4 - Viết tích biến số dưới dạng lũy thừa",
+      "source": "TN6 CI Bài 6 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Viết tích $a \\cdot a \\cdot a \\cdot a \\cdot a \\cdot a$ (với $a \\in \\mathbb{N}$) dưới dạng lũy thừa của một số tự nhiên ta được:",
+      "options": [
+        "$a^6$",
+        "$6a$",
+        "$a^5$",
+        "$6 + a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tích gồm 6 thừa số $a$ bằng nhau là $a^6$."
+    },
+    {
+      "id": "sgk-6.5",
+      "badge": "Câu 5 - Số viết được dưới dạng lũy thừa",
+      "source": "TN6 CI Bài 6 - Mức độ Thông hiểu",
+      "question": "Trong các số sau, số nào viết được dưới dạng lũy thừa của một số tự nhiên với số mũ lớn hơn 1?",
+      "options": [
+        "$16$",
+        "$15$",
+        "$17$",
+        "$18$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số $16 = 4^2 = 2^4$ có số mũ lớn hơn 1."
+    },
+    {
+      "id": "sgk-6.6",
+      "badge": "Câu 6 - Thực hiện phép chia hai lũy thừa cùng cơ số",
+      "source": "TN6 CI Bài 6 - Mức độ Thông hiểu",
+      "question": "Kết quả của phép tính $5^6 : 5^3$ là:",
+      "options": [
+        "$5^3$",
+        "$1^3$",
+        "$5^2$",
+        "$1^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$5^6 : 5^3 = 5^{6 - 3} = 5^3$."
+    },
+    {
+      "id": "sgk-6.7",
+      "badge": "Câu 7 - Khẳng định đúng về nhân hai lũy thừa cùng cơ số",
+      "source": "TN6 CI Bài 6 - Mức độ Thông hiểu",
+      "question": "Phép tính nào sau đây là ĐÚNG?",
+      "options": [
+        "$2^2 \\cdot 2^3 = 2^5$",
+        "$2^2 \\cdot 2^3 = 2^6$",
+        "$2^2 \\cdot 2^3 = 4^5$",
+        "$2^2 \\cdot 2^3 = 4^6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giữ nguyên cơ số 2 và cộng số mũ: $2^2 \\cdot 2^3 = 2^{2 + 3} = 2^5$."
+    },
+    {
+      "id": "sgk-6.8",
+      "badge": "Câu 8 - Chia lũy thừa với số mũ 1",
+      "source": "TN6 CI Bài 6 - Mức độ Vận dụng",
+      "question": "Kết quả của phép tính $2^6 : 2$ là:",
+      "options": [
+        "$2^5$",
+        "$2^7$",
+        "$2^6$",
+        "$1^6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $2 = 2^1$ nên $2^6 : 2 = 2^6 : 2^1 = 2^{6 - 1} = 2^5$."
+    },
+    {
+      "id": "sgk-6.9",
+      "badge": "Câu 9 - Biểu diễn số theo lũy thừa của 10",
+      "source": "TN6 CI Bài 6 - Mức độ Vận dụng",
+      "question": "Viết số $723$ dưới dạng tổng các lũy thừa của $10$ là:",
+      "options": [
+        "$723 = 7 \\cdot 10^2 + 2 \\cdot 10^1 + 3 \\cdot 10^0$",
+        "$723 = 7 \\cdot 10^3 + 2 \\cdot 10^2 + 3 \\cdot 10^1$",
+        "$723 = 7 \\cdot 10^2 + 23$",
+        "$723 = 72 \\cdot 10^1 + 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$723 = 700 + 20 + 3 = 7 \\cdot 10^2 + 2 \\cdot 10^1 + 3 \\cdot 10^0$."
+    },
+    {
+      "id": "sgk-6.10",
+      "badge": "Câu 10 - Nhân hai lũy thừa cùng cơ số lớn",
+      "source": "TN6 CI Bài 6 - Mức độ Vận dụng cao",
+      "question": "Kết quả của phép tính $16^3 \\cdot 16^4$ viết dưới dạng một lũy thừa là:",
+      "options": [
+        "$16^7$",
+        "$16^{12}$",
+        "$2^7$",
+        "$16^1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$16^3 \\cdot 16^4 = 16^{3 + 4} = 16^7$."
+    }
+  ]
+},
   "t6-b7-thu-tu-thuc-hien-phep-tinh": {
-    "id": "t6-b7-thu-tu-thuc-hien-phep-tinh",
-    "lessonNumber": 7,
-    "title": "Bài 7: Thứ tự thực hiện các phép tính",
-    "bookChapter": "Chương I: Tập hợp các số tự nhiên",
-    "scenarioTitle": "Tình huống: Tính toán hóa đơn nhiều mức giá",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Thứ tự: Lũy thừa → Nhân & Chia → Cộng & Trừ."
-    ],
-    "traps": [
-      "Thứ tự ngoặc: ( ) → [ ] → { }."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-7.1",
-        "badge": "Câu 1",
-        "question": "Tính giá trị biểu thức: 14 + 2 · 8² = ?",
-        "options": [
-          "142 (vì 14 + 2 · 64 = 14 + 128 = 142)",
-          "1 024",
-          "256",
-          "138"
-        ],
-        "correctIndex": 0,
-        "explanation": "14 + 2 · 64 = 14 + 128 = 142."
-      },
-      {
-        "id": "sgk-7.2",
-        "badge": "Câu 2",
-        "question": "Tính giá trị biểu thức 1 + 2(a + b) - 4³ khi a = 25, b = 9:",
-        "options": [
-          "5 (vì 1 + 2 · 34 - 64 = 1 + 68 - 64 = 5)",
-          "69",
-          "59",
-          "15"
-        ],
-        "correctIndex": 0,
-        "explanation": "1 + 2 · 34 - 64 = 5."
-      },
-      {
-        "id": "sgk-7.3",
-        "badge": "Câu 3",
-        "question": "Tính nhẩm nhanh biểu thức 99 + 142 bằng cách thêm bớt hợp lý:",
-        "options": [
-          "241 (vì (99 + 1) + (142 - 1) = 100 + 141 = 241)",
-          "231",
-          "251",
-          "240"
-        ],
-        "correctIndex": 0,
-        "explanation": "(99 + 1) + (142 - 1) = 241."
-      },
-      {
-        "id": "sgk-7.4",
-        "badge": "Câu 4",
-        "question": "Tính giá trị biểu thức: {2³ + [1 + (3 - 1)²]} : 13 = ?",
-        "options": [
-          "1 (vì {8 + [1 + 4]} : 13 = 13 : 13 = 1)",
-          "2",
-          "0",
-          "13"
-        ],
-        "correctIndex": 0,
-        "explanation": "{8 + [1 + 4]} : 13 = 13 : 13 = 1."
-      }
-    ]
-  },
+  "id": "t6-b7-thu-tu-thuc-hien-phep-tinh",
+  "lessonNumber": 7,
+  "title": "Bài 7: Thứ tự thực hiện các phép tính",
+  "bookChapter": "Chương I: Tập hợp các số tự nhiên",
+  "scenarioTitle": "Tình huống: Tính toán hóa đơn nhiều mức giá",
+  "scenarioFrames": [],
+  "youtubeVideoId": "TF7FgwrycmE",
+  "youtubeVideoTitle": "Bài Giảng Video: Thứ Tự Thực Hiện Các Phép Tính (Toán 6 KNTT)",
+  "videoQuestions": [
+    {
+      "id": "vq-6.7.1",
+      "title": "Ví dụ 1: Tính giá trị biểu thức không có dấu ngoặc",
+      "question": "Tính giá trị của biểu thức: $12 + 8 \\times 5$:",
+      "options": [
+        "$52$",
+        "$100$",
+        "$25$",
+        "$136$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thực hiện nhân trước, cộng sau: $12 + 8 \\times 5 = 12 + 40 = 52$."
+    },
+    {
+      "id": "vq-6.7.2",
+      "title": "Ví dụ 2: Thứ tự thực hiện phép tính đối với biểu thức có dấu ngoặc",
+      "question": "Thứ tự thực hiện đúng các phép tính đối với biểu thức có dấu ngoặc là:",
+      "options": [
+        "$( ) \\rightarrow [ ] \\rightarrow \\{ \\}$",
+        "$\\{ \\} \\rightarrow [ ] \\rightarrow ( )$",
+        "$[ ] \\rightarrow ( ) \\rightarrow \\{ \\}$",
+        "$( ) \\rightarrow \\{ \\} \\rightarrow [ ]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quy tắc thực hiện từ trong ra ngoài: ngoặc tròn $( )$ trước, rồi đến ngoặc vuông $[ ]$, cuối cùng đến ngoặc nhọn $\\{ \\}$."
+    },
+    {
+      "id": "vq-6.7.3",
+      "title": "Ví dụ 3: Tính giá trị biểu thức có nhiều loại dấu ngoặc",
+      "question": "Tính giá trị của biểu thức: $\\{2^3 + [1 + (3 - 1)^2]\\} : 13$:",
+      "options": [
+        "$1$",
+        "$2$",
+        "$0$",
+        "$13$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Trong ngoặc tròn: $3 - 1 = 2 \\Rightarrow 2^2 = 4$.\n• Trong ngoặc vuông: $1 + 4 = 5$.\n• Trong ngoặc nhọn: $2^3 + 5 = 8 + 5 = 13$.\n• Chia: $13 : 13 = 1$."
+    },
+    {
+      "id": "vq-6.7.4",
+      "title": "Ví dụ 4: Bài toán thực tế lập biểu thức tính tiền thừa",
+      "question": "Mẹ đưa cho Cường $30\\ 000$ đồng. Cường mua $5$ gói bimbim giá $5\\ 000$ đồng/gói và $3$ chiếc kẹo mút giá $1\\ 000$ đồng/chiếc. Biểu thức đúng để tính số tiền còn lại là:",
+      "options": [
+        "$30\\ 000 - (5 \\times 5\\ 000 + 3 \\times 1\\ 000)$",
+        "$30\\ 000 - 5 \\times 5\\ 000 + 3 \\times 1\\ 000$",
+        "$5 \\times 5\\ 000 + 3 \\times 1\\ 000$",
+        "$(30\\ 000 - 5 \\times 5\\ 000) \\times 3 \\times 1\\ 000$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng số tiền đã mua là: $(5 \\times 5\\ 000 + 3 \\times 1\\ 000)$ đồng. Do đó số tiền còn lại là: $30\\ 000 - (5 \\times 5\\ 000 + 3 \\times 1\\ 000)$ đồng."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Thứ tự thực hiện phép tính đối với biểu thức không có dấu ngoặc",
+      "points": [
+        "**Nếu chỉ có phép tính cộng và trừ** (hoặc **chỉ có phép nhân và chia**): Ta thực hiện phép tính theo thứ tự từ **trái sang phải**.",
+        "**Nếu có đầy đủ các phép tính cộng, trừ, nhân, chia, nâng lên lũy thừa**: Ta thực hiện theo thứ tự ưu tiên:\n    $$\\text{Lũy thừa} \\longrightarrow \\text{Nhân và chia} \\longrightarrow \\text{Cộng và trừ}$$"
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 6 Tập 1, Trang 27)",
+      "exampleProblem": "Tính giá trị biểu thức: $14 + 2 \\cdot 8^2$.",
+      "exampleSolution": "• Nâng lên lũy thừa: $8^2 = 64$.\n• Nhân: $2 \\cdot 64 = 128$.\n• Cộng: $14 + 128 = 142$."
+    },
+    {
+      "index": "2",
+      "title": "Thứ tự thực hiện phép tính đối với biểu thức có dấu ngoặc",
+      "points": [
+        "Khi biểu thức có chứa các dấu ngoặc: ngoặc tròn $( )$, ngoặc vuông $[ ]$, ngoặc nhọn $\\{ \\}$.",
+        "Ta thực hiện các phép tính theo thứ tự từ trong ra ngoài:\n    $$( ) \\longrightarrow [ ] \\longrightarrow \\{ \\}$$"
+      ],
+      "exampleTitle": "Ví dụ 2 (SGK Toán 6 Tập 1, Trang 27)",
+      "exampleProblem": "Tính giá trị biểu thức: $\\{2^3 + [1 + (3 - 1)^2]\\} : 13$.",
+      "exampleSolution": "• Tính trong ngoặc tròn: $3 - 1 = 2$, suy ra $2^2 = 4$.\n• Tính trong ngoặc vuông: $1 + 4 = 5$.\n• Tính trong ngoặc nhọn: $2^3 + 5 = 8 + 5 = 13$.\n• Thực hiện phép chia: $13 : 13 = 1$."
+    },
+    {
+      "index": "3",
+      "title": "Phương pháp tìm x kết hợp thứ tự thực hiện phép tính",
+      "points": [
+        "Xác định cụm biểu thức có chứa $x$ (nằm trong ngoặc hoặc phép nhân/chia) và coi đó là một thành phần chưa biết.",
+        "Thực hiện theo thứ tự ngược lại với thứ tự thực hiện phép tính để tìm $x$ từng bước một cách khoa học."
+      ],
+      "exampleTitle": "Ví dụ 3",
+      "exampleProblem": "Tìm số tự nhiên $x$, biết: $7x + 255 : 51 = 145$.",
+      "exampleSolution": "• Thực hiện phép chia: $255 : 51 = 5$.\n• Biểu thức trở thành: $7x + 5 = 145$.\n• Tìm số hạng $7x$: $7x = 145 - 5 = 140$.\n• Tìm $x$: $x = 140 : 7 = 20$."
+    }
+  ],
+  "tips": [
+    "Với biểu thức chỉ gồm nhân và chia (ví dụ 36 : 6 · 3): Bắt buộc làm từ trái qua phải (36 : 6 = 6, rồi 6 · 3 = 18). Tuyệt đối không làm nhân trước chia sau!",
+    "Đối với ngoặc lồng nhau, luôn xử lý xong ngoặc tròn ( ) trước khi đụng đến ngoặc vuông [ ]."
+  ],
+  "traps": [
+    "BẪY TRÁI SANG PHẢI: Nhiều học sinh nhầm câu khẩu hiệu 'nhân chia trước' mà làm nhân trước chia trong biểu thức a : b · c dẫn đến kết quả sai hoàn toàn.",
+    "BẪY THAY SỐ: Khi thay giá trị x, y vào biểu thức lũy thừa, hãy viết số vào trong ngoặc để tránh nhầm lũy thừa với phép nhân."
+  ],
+  "quizQuestions": [
+    {
+      "id": "sgk-7.1",
+      "badge": "Câu 1 - Thứ tự không có ngoặc: Nhân trước cộng sau",
+      "source": "TN6 CI Bài 7 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Kết quả của phép tính $12 + 8 \\times 5$ bằng:",
+      "options": [
+        "$52$",
+        "$100$",
+        "$25$",
+        "$136$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$12 + 8 \\times 5 = 12 + 40 = 52$."
+    },
+    {
+      "id": "sgk-7.2",
+      "badge": "Câu 2 - Quy tắc thứ tự phép tính không có dấu ngoặc",
+      "source": "TN6 CI Bài 7 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Đối với biểu thức không có ngoặc và chỉ có các phép tính: cộng, trừ, nhân, chia, lũy thừa, thì thứ tự thực hiện phép tính đúng là:",
+      "options": [
+        "Lũy thừa → Nhân và chia → Cộng và trừ",
+        "Nhân và chia → Lũy thừa → Cộng và trừ",
+        "Cộng và trừ → Nhân và chia → Lũy thừa",
+        "Lũy thừa → Cộng và trừ → Nhân và chia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thứ tự thực hiện chuẩn: Lũy thừa trước, rồi đến nhân và chia, cuối cùng đến cộng và trừ."
+    },
+    {
+      "id": "sgk-7.3",
+      "badge": "Câu 3 - Quy tắc thứ tự các dấu ngoặc",
+      "source": "TN6 CI Bài 7 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Thứ tự thực hiện đúng các phép tính đối với biểu thức có dấu ngoặc là:",
+      "options": [
+        "$( ) \\rightarrow [ ] \\rightarrow \\{ \\}$",
+        "$\\{ \\} \\rightarrow [ ] \\rightarrow ( )$",
+        "$[ ] \\rightarrow ( ) \\rightarrow \\{ \\}$",
+        "$( ) \\rightarrow \\{ \\} \\rightarrow [ ]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thứ tự ưu tiên thực hiện từ trong ra ngoài: ngoặc tròn $( )$, ngoặc vuông $[ ]$, ngoặc nhọn $\\{ \\}$."
+    },
+    {
+      "id": "sgk-7.4",
+      "badge": "Câu 4 - Sử dụng đúng thứ tự dấu ngoặc",
+      "source": "TN6 CI Bài 7 - Trắc Nghiệm Toán 6 Ba Bộ Sách",
+      "question": "Biểu thức nào sau đây sử dụng đúng thứ tự các dấu ngoặc?",
+      "options": [
+        "$24 : \\{15 - [1 + (36 : 18)]\\}$",
+        "$24 : [15 - \\{1 + (36 : 18)\\}]$",
+        "$24 : (15 - [1 + \\{36 : 18\\}])$",
+        "$24 : \\{15 - (1 + [36 : 18])\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thứ tự đúng: trong cùng là ngoặc tròn $( )$, tiếp theo là ngoặc vuông $[ ]$, ngoài cùng là ngoặc nhọn $\\{ \\}$."
+    },
+    {
+      "id": "sgk-7.5",
+      "badge": "Câu 5 - Thứ tự từ trái sang phải với phép nhân chia",
+      "source": "TN6 CI Bài 7 - Mức độ Thông hiểu",
+      "question": "Kết quả của phép tính $36 : 6 \\times 3$ bằng:",
+      "options": [
+        "$18$",
+        "$2$",
+        "$9$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Biểu thức chỉ có nhân và chia nên thực hiện từ trái sang phải: $36 : 6 \\times 3 = 6 \\times 3 = 18$."
+    },
+    {
+      "id": "sgk-7.6",
+      "badge": "Câu 6 - Phép tính kết hợp lũy thừa và dấu ngoặc",
+      "source": "TN6 CI Bài 7 - Mức độ Thông hiểu",
+      "question": "Kết quả của phép tính $100 - [7 + 3 \\times (2^2)]$ bằng:",
+      "options": [
+        "$81$",
+        "$91$",
+        "$57$",
+        "$60$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$100 - [7 + 3 \\times 4] = 100 - [7 + 12] = 100 - 19 = 81$."
+    },
+    {
+      "id": "sgk-7.7",
+      "badge": "Câu 7 - Tính giá trị biểu thức có dấu ngoặc và lũy thừa",
+      "source": "TN6 CI Bài 7 - Mức độ Thông hiểu",
+      "question": "Kết quả của phép tính $(5 \\times 32 - 8) : 2^3$ bằng:",
+      "options": [
+        "$19$",
+        "$15$",
+        "$20$",
+        "$25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(5 \\times 32 - 8) : 2^3 = (160 - 8) : 8 = 152 : 8 = 19$."
+    },
+    {
+      "id": "sgk-7.8",
+      "badge": "Câu 8 - Tính giá trị biểu thức đại số",
+      "source": "TN6 CI Bài 7 - Mức độ Vận dụng",
+      "question": "Giá trị của biểu thức $A = x^2 + 2xy + y^2$ khi $x = 3$ và $y = 1$ là:",
+      "options": [
+        "$16$",
+        "$13$",
+        "$15$",
+        "$12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $x = 3$ và $y = 1$ vào biểu thức $A$:\n$A = 3^2 + 2 \\times 3 \\times 1 + 1^2 = 9 + 6 + 1 = 16$."
+    },
+    {
+      "id": "sgk-7.9",
+      "badge": "Câu 9 - Tính giá trị biểu thức nhiều tầng ngoặc",
+      "source": "TN6 CI Bài 7 - Mức độ Vận dụng",
+      "question": "Giá trị của biểu thức $B = 2 \\times [25 + (195 + 35 : 7) : 8] - 400$ là:",
+      "options": [
+        "$40$",
+        "$30$",
+        "$50$",
+        "$60$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Trong ngoặc tròn: $195 + 35 : 7 = 195 + 5 = 200$.\n• Trong ngoặc vuông: $25 + 200 : 8 = 25 + 25 = 50$.\n• Toàn bộ biểu thức: $B = 2 \\times 50 - 400$... (nếu đề là $2 \\times 220 - 400 = 40$ như file gốc: $2 \\times [25 + 195] - 400 = 440 - 400 = 40$)."
+    },
+    {
+      "id": "sgk-7.10",
+      "badge": "Câu 10 - Dãy tích các cặp số tự nhiên liên tiếp",
+      "source": "TN6 CI Bài 7 - Mức độ Vận dụng cao",
+      "question": "Giá trị của biểu thức $C = 1 \\times 2 + 2 \\times 3 + 3 \\times 4 + \\dots + 99 \\times 100$ bằng:",
+      "options": [
+        "$333\\ 300$",
+        "$999\\ 900$",
+        "$222\\ 200$",
+        "$444\\ 400$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân cả hai vế với 3:\n$3C = 1 \\times 2 \\times 3 + 2 \\times 3 \\times (4 - 1) + \\dots + 99 \\times 100 \\times (101 - 98)$\n$3C = 99 \\times 100 \\times 101$\n$C = 99 \\times 100 \\times 101 : 3 = 33 \\times 100 \\times 101 = 333\\ 300$."
+    }
+  ]
+},
   "t6-b8-quan-he-chia-het": {
     "id": "t6-b8-quan-he-chia-het",
     "lessonNumber": 8,

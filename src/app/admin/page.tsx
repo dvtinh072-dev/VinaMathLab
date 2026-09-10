@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -71,6 +71,8 @@ export default function AdminDashboardPage() {
   // State Modal Phân Quyền Giáo Viên
   const [isTeacherModalOpen, setIsTeacherModalOpen] = useState(false);
   const [editingTeacher, setEditingTeacher] = useState<any | null>(null);
+  const [modalGradeTab, setModalGradeTab] = useState<number>(6);
+  const [customClassesList, setCustomClassesList] = useState<string[]>([]);
   const [teacherFormData, setTeacherFormData] = useState({
     fullName: "",
     username: "",
@@ -387,23 +389,25 @@ export default function AdminDashboardPage() {
     }
   };
 
-  // Presets các lớp có sẵn để phân công giáo viên
-  const defaultClassPresets = [
-    "Lớp 6A", "Lớp 6B", "Lớp 6C", "Lớp 6A4", 
-    "Lớp 10A1", "Lớp 10A2", "Lớp 10A3", 
-    "Lớp 11A1", "Lớp 11A2", 
-    "Lớp 12A1", "Lớp 12A2"
-  ];
-  const allSelectableClasses = Array.from(new Set([...uniqueClasses, ...defaultClassPresets]));
+  // Tạo danh sách lớp theo khối: Khối 6 đến Khối 12, mỗi khối từ A1 đến A9 (Lớp 6A1, 6A2, ..., 12A9)
+  const GRADE_TABS = [6, 7, 8, 9, 10, 11, 12];
+  const GRADE_PRESETS: { [grade: number]: string[] } = useMemo(() => {
+    const map: { [grade: number]: string[] } = {};
+    GRADE_TABS.forEach((g) => {
+      map[g] = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => `Lớp ${g}A${num}`);
+    });
+    return map;
+  }, []);
 
   const openAddTeacherModal = () => {
     setEditingTeacher(null);
+    setModalGradeTab(6);
     setTeacherFormData({
       fullName: "",
       username: "",
       password: "",
       schoolName: "THCS VinaMath",
-      assignedClasses: ["Lớp 6A"],
+      assignedClasses: ["Lớp 6A1"],
       customClass: "",
     });
     setTeacherError(null);
@@ -413,6 +417,15 @@ export default function AdminDashboardPage() {
   const openEditTeacherModal = (t: any) => {
     setEditingTeacher(t);
     const classes = parseAssignedClasses(t.assignedClasses || t.schoolClass);
+    // Tự động chuyển tab khối sang lớp đầu tiên của giáo viên nếu có
+    let firstGrade = 6;
+    if (classes.length > 0) {
+      const match = classes[0].match(/(\d+)/);
+      if (match && GRADE_TABS.includes(Number(match[1]))) {
+        firstGrade = Number(match[1]);
+      }
+    }
+    setModalGradeTab(firstGrade);
     setTeacherFormData({
       fullName: t.fullName || "",
       username: t.username || "",
@@ -441,15 +454,25 @@ export default function AdminDashboardPage() {
     const raw = teacherFormData.customClass.trim();
     if (!raw) return;
     const formatted = raw.startsWith("Lớp ") ? raw : `Lớp ${raw}`;
-    if (!teacherFormData.assignedClasses.includes(formatted)) {
-      setTeacherFormData((prev) => ({
-        ...prev,
-        assignedClasses: [...prev.assignedClasses, formatted],
-        customClass: "",
-      }));
-    } else {
-      setTeacherFormData((prev) => ({ ...prev, customClass: "" }));
-    }
+    
+    // Thêm vào danh sách lớp đã chọn của giáo viên
+    setTeacherFormData((prev) => ({
+      ...prev,
+      assignedClasses: prev.assignedClasses.includes(formatted)
+        ? prev.assignedClasses
+        : [...prev.assignedClasses, formatted],
+      customClass: "",
+    }));
+
+    // Thêm vào danh sách lớp tùy chỉnh để hiển thị badge
+    setCustomClassesList((prev) => (prev.includes(formatted) ? prev : [...prev, formatted]));
+  };
+
+  const handleRemoveAssignedClass = (className: string) => {
+    setTeacherFormData((prev) => ({
+      ...prev,
+      assignedClasses: prev.assignedClasses.filter((c) => c !== className),
+    }));
   };
 
   const handleSaveTeacher = async (e: React.FormEvent) => {
@@ -474,6 +497,22 @@ export default function AdminDashboardPage() {
         });
         const data = await res.json();
         if (res.ok && data.success) {
+          // Đồng bộ vào localStorage để phản ánh tức thì trên client
+          try {
+            const localSaved = localStorage.getItem("vinamath_local_registered_users");
+            if (localSaved) {
+              const list = JSON.parse(localSaved);
+              const idx = list.findIndex((u: any) => u.id === editingTeacher.id || u.username === editingTeacher.username);
+              if (idx >= 0) {
+                list[idx].fullName = teacherFormData.fullName;
+                list[idx].schoolName = teacherFormData.schoolName;
+                list[idx].assignedClasses = teacherFormData.assignedClasses;
+                list[idx].schoolClass = teacherFormData.assignedClasses.join(", ");
+                localStorage.setItem("vinamath_local_registered_users", JSON.stringify(list));
+              }
+            }
+          } catch {}
+
           setStatusMessage(`Đã cập nhật phân công lớp cho giáo viên ${teacherFormData.fullName}`);
           setIsTeacherModalOpen(false);
           fetchAdminData();
@@ -502,6 +541,21 @@ export default function AdminDashboardPage() {
         });
         const data = await res.json();
         if (res.ok && data.success) {
+          try {
+            const localSaved = localStorage.getItem("vinamath_local_registered_users");
+            const list = localSaved ? JSON.parse(localSaved) : [];
+            list.unshift({
+              id: data.user?.id || `u-teacher-${Date.now()}`,
+              username: teacherFormData.username,
+              fullName: teacherFormData.fullName,
+              role: "teacher",
+              schoolName: teacherFormData.schoolName,
+              assignedClasses: teacherFormData.assignedClasses,
+              schoolClass: teacherFormData.assignedClasses.join(", "),
+            });
+            localStorage.setItem("vinamath_local_registered_users", JSON.stringify(list));
+          } catch {}
+
           setStatusMessage(`Đã thêm mới và phân quyền giáo viên: ${teacherFormData.fullName}`);
           setIsTeacherModalOpen(false);
           fetchAdminData();
@@ -1672,8 +1726,8 @@ export default function AdminDashboardPage() {
                 />
               </div>
 
-              {/* Phân Công Lớp (Checkboxes) */}
-              <div className="space-y-2 pt-1">
+              {/* Phân Công Lớp Phụ Trách Theo Khối 6-12 & A1-A9 */}
+              <div className="space-y-3 pt-1">
                 <div className="flex items-center justify-between">
                   <label className="block text-xs font-bold text-slate-300">
                     Phân Công Lớp Phụ Trách ({teacherFormData.assignedClasses.length} lớp đã chọn)
@@ -1683,50 +1737,190 @@ export default function AdminDashboardPage() {
                   </span>
                 </div>
 
-                <div className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2.5">
-                  <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto pr-1">
-                    {allSelectableClasses.map((cls) => {
-                      const isSelected = teacherFormData.assignedClasses.includes(cls);
+                {/* Danh sách các lớp ĐÃ CHỌN (có nút x để bớt nhanh) */}
+                <div className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2">
+                  <div className="text-[11px] font-bold text-slate-400 flex items-center justify-between">
+                    <span>Lớp đã phân công cho giáo viên:</span>
+                    {teacherFormData.assignedClasses.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setTeacherFormData((prev) => ({ ...prev, assignedClasses: [] }))}
+                        className="text-[10px] text-rose-400 hover:underline cursor-pointer"
+                      >
+                        Bỏ chọn tất cả
+                      </button>
+                    )}
+                  </div>
+                  {teacherFormData.assignedClasses.length === 0 ? (
+                    <div className="text-xs text-rose-400 italic py-1">
+                      ⚠️ Chưa chọn lớp nào. Hãy bấm chọn các lớp bên dưới hoặc nhập lớp mới.
+                    </div>
+                  ) : (
+                    <div className="flex flex-wrap gap-1.5 max-h-28 overflow-y-auto pr-1">
+                      {teacherFormData.assignedClasses.map((cls) => (
+                        <span
+                          key={cls}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-teal-500/20 text-teal-300 border border-teal-500/40 text-xs font-bold"
+                        >
+                          <span>{cls}</span>
+                          <button
+                            type="button"
+                            onClick={() => handleRemoveAssignedClass(cls)}
+                            className="w-4 h-4 rounded-full bg-teal-500/30 hover:bg-rose-500 hover:text-white flex items-center justify-center text-[10px] transition-colors cursor-pointer"
+                            title="Xóa lớp này khỏi danh sách phân công"
+                          >
+                            ×
+                          </button>
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Bộ chọn danh sách lớp theo từng Khối (Khối 6 -> 12) */}
+                <div className="p-3.5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                  <div className="text-xs font-bold text-slate-300">
+                    Chọn lớp theo Khối:
+                  </div>
+
+                  {/* Tabs chọn khối 6, 7, 8, 9, 10, 11, 12 */}
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                    {GRADE_TABS.map((g) => {
+                      const isActive = modalGradeTab === g;
+                      // Đếm xem có bao nhiêu lớp khối này đang được chọn
+                      const selectedInGradeCount = teacherFormData.assignedClasses.filter((c) => {
+                        const m = c.match(/(\d+)/);
+                        return m && Number(m[1]) === g;
+                      }).length;
+
                       return (
                         <button
+                          key={g}
                           type="button"
-                          key={cls}
-                          onClick={() => toggleClassAssignment(cls)}
-                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
-                            isSelected
-                              ? "bg-teal-500 text-slate-950 shadow-sm shadow-teal-500/30"
+                          onClick={() => setModalGradeTab(g)}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all shrink-0 flex items-center gap-1 cursor-pointer ${
+                            isActive
+                              ? "bg-teal-500 text-slate-950 shadow-md shadow-teal-500/20"
                               : "bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700"
                           }`}
                         >
-                          <span>{isSelected ? "✓" : "+"}</span>
-                          <span>{cls}</span>
+                          <span>Khối {g}</span>
+                          {selectedInGradeCount > 0 && (
+                            <span className={`w-4 h-4 rounded-full text-[10px] flex items-center justify-center font-bold ${
+                              isActive ? "bg-slate-950 text-teal-300" : "bg-teal-500 text-slate-950"
+                            }`}>
+                              {selectedInGradeCount}
+                            </span>
+                          )}
                         </button>
                       );
                     })}
                   </div>
 
-                  {/* Thêm lớp tùy chỉnh */}
-                  <div className="flex gap-2 pt-2 border-t border-slate-800">
-                    <input
-                      type="text"
-                      value={teacherFormData.customClass}
-                      onChange={(e) => setTeacherFormData({ ...teacherFormData, customClass: e.target.value })}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter") {
-                          e.preventDefault();
-                          handleAddCustomClass();
-                        }
-                      }}
-                      placeholder="Nhập tên lớp khác (Ví dụ: 6A5 hoặc 10A4)..."
-                      className="flex-1 px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
-                    />
-                    <button
-                      type="button"
-                      onClick={handleAddCustomClass}
-                      className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold cursor-pointer transition-colors"
-                    >
-                      Thêm
-                    </button>
+                  {/* Danh sách các lớp A1 đến A9 của Khối đang chọn */}
+                  <div className="space-y-1.5 pt-1">
+                    <div className="flex items-center justify-between text-[11px] text-slate-400">
+                      <span>Các lớp Khối {modalGradeTab} (A1 - A9):</span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const gradeClasses = GRADE_PRESETS[modalGradeTab] || [];
+                          const allIn = gradeClasses.every((c) => teacherFormData.assignedClasses.includes(c));
+                          if (allIn) {
+                            // Bỏ chọn tất cả lớp của khối này
+                            setTeacherFormData((prev) => ({
+                              ...prev,
+                              assignedClasses: prev.assignedClasses.filter((c) => !gradeClasses.includes(c)),
+                            }));
+                          } else {
+                            // Chọn tất cả lớp của khối này
+                            setTeacherFormData((prev) => ({
+                              ...prev,
+                              assignedClasses: Array.from(new Set([...prev.assignedClasses, ...gradeClasses])),
+                            }));
+                          }
+                        }}
+                        className="text-[10px] text-teal-400 hover:underline cursor-pointer"
+                      >
+                        {(GRADE_PRESETS[modalGradeTab] || []).every((c) => teacherFormData.assignedClasses.includes(c))
+                          ? "Bỏ chọn cả khối"
+                          : "Chọn cả khối"}
+                      </button>
+                    </div>
+
+                    <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                      {(GRADE_PRESETS[modalGradeTab] || []).map((cls) => {
+                        const isSelected = teacherFormData.assignedClasses.includes(cls);
+                        return (
+                          <button
+                            type="button"
+                            key={cls}
+                            onClick={() => toggleClassAssignment(cls)}
+                            className={`py-2 px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 cursor-pointer ${
+                              isSelected
+                                ? "bg-teal-500 text-slate-950 shadow-sm shadow-teal-500/30 font-black scale-102"
+                                : "bg-slate-800/90 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700/50"
+                            }`}
+                          >
+                            <span>{isSelected ? "✓" : "+"}</span>
+                            <span>{cls}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Thêm lớp tùy chỉnh (tự do thêm mọi tên lớp khác) */}
+                  <div className="pt-2 border-t border-slate-800 space-y-1.5">
+                    <label className="block text-[11px] font-bold text-slate-400">
+                      Thêm tên lớp tùy chỉnh khác:
+                    </label>
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={teacherFormData.customClass}
+                        onChange={(e) => setTeacherFormData({ ...teacherFormData, customClass: e.target.value })}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            handleAddCustomClass();
+                          }
+                        }}
+                        placeholder="Nhập tên lớp khác (Ví dụ: 6A10, 10A12, 12 Tin...)"
+                        className="flex-1 px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
+                      />
+                      <button
+                        type="button"
+                        onClick={handleAddCustomClass}
+                        className="px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-black cursor-pointer transition-colors shadow-sm shadow-teal-500/20"
+                      >
+                        + Thêm Lớp
+                      </button>
+                    </div>
+
+                    {/* Hiển thị danh sách lớp tùy chỉnh đã tạo nếu có */}
+                    {customClassesList.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 pt-1">
+                        <span className="text-[10px] text-slate-500 self-center">Lớp tự thêm:</span>
+                        {customClassesList.map((cls) => {
+                          const isSelected = teacherFormData.assignedClasses.includes(cls);
+                          return (
+                            <button
+                              key={cls}
+                              type="button"
+                              onClick={() => toggleClassAssignment(cls)}
+                              className={`px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                                isSelected
+                                  ? "bg-teal-500/20 text-teal-300 border border-teal-500/40"
+                                  : "bg-slate-800 text-slate-400 hover:text-white"
+                              }`}
+                            >
+                              {isSelected ? "✓ " : "+ "}{cls}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

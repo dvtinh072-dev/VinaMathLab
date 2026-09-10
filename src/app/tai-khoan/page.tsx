@@ -565,13 +565,19 @@ export default function StudentProfilePage() {
                     </tr>
                   ) : (
                     Object.values(lessonsMap).map((l: any) => {
-                      const minutes = Math.round((l.videoWatchedSeconds || 0) / 60);
+                      const sec = l.videoWatchedSeconds || 0;
+                      const mins = Math.floor(sec / 60);
+                      const remainSec = sec % 60;
+                      const timeStr = mins > 0 
+                        ? `${mins}p ${remainSec > 0 ? `${remainSec}s` : ""}`
+                        : `${remainSec}s`;
+
                       return (
                         <tr key={l.lessonId} className="hover:bg-slate-900/60 transition-colors">
                           <td className="py-3 px-4 font-black text-cyan-300">{l.lessonId}</td>
                           <td className="py-3 px-4 font-bold text-white">{l.lessonTitle}</td>
                           <td className="py-3 px-4 text-center font-bold text-cyan-400">
-                            ⏱ {minutes} phút
+                            ⏱ {timeStr}
                           </td>
                           <td className="py-3 px-4 text-center font-black text-amber-300">
                             ⭐ {l.score || 0} điểm

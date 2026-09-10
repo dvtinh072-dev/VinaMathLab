@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import {
   Trophy,
@@ -1245,25 +1245,32 @@ export function GamifiedMathQuiz({
   const [adminSaveStatus, setAdminSaveStatus] = useState<string | null>(null);
 
   // =========================================================================
-  // THEO DÕI THỜI GIAN XEM VIDEO & ĐỒNG BỘ TIẾN ĐỘ HỌC SINH
+  // THEO DÕI THỜI GIAN XEM VIDEO THỰC TẾ THEO TỪNG BÀI HỌC & ĐỒNG BỘ CLOUD
   // =========================================================================
+  const watchedPosRef = useRef<number>(0);
+  const pendingSecondsRef = useRef<number>(0);
+
+  useEffect(() => {
+    watchedPosRef.current = activeVideoTime || 0;
+  }, [activeVideoTime]);
+
   useEffect(() => {
     if (!activeVideoId || quizMode !== "theory") return;
 
-    const studentId = user?.id || user?.studentCode || user?.username;
-    let currentWatchedPos = Math.max(0, activeVideoTime || 0);
+    const studentIdentifier = user?.id || user?.studentCode || user?.username;
+    if (!studentIdentifier) return;
 
     // Helper gửi tích lũy số giây xem video về server và localStorage
-    const syncVideoTime = (seconds: number) => {
-      const studentIdentifier = user?.id || user?.studentCode || user?.username;
-      if (!studentIdentifier || seconds <= 0) return;
+    const flushVideoTime = (seconds: number) => {
+      if (seconds <= 0) return;
 
-      currentWatchedPos += seconds;
+      watchedPosRef.current += seconds;
+      const currentPos = watchedPosRef.current;
 
-      // Lưu chính xác timestamp vị trí video đang phát
-      saveVideoPosition(lessonId, studentIdentifier, currentWatchedPos, false);
+      // 1. Lưu chính xác timestamp vị trí video đang phát
+      saveVideoPosition(lessonId, studentIdentifier, currentPos, false);
 
-      // 1. Lưu cục bộ (localStorage) ngay lập tức để không bao giờ mất dữ liệu kể cả trên Vercel/serverless
+      // 2. Lưu cục bộ (localStorage) ngay lập tức
       saveLocalStudentProgressUpdate({
         userId: user?.id,
         studentCode: user?.studentCode,
@@ -1275,10 +1282,10 @@ export function GamifiedMathQuiz({
         gradeKey,
         lessonTitle,
         addVideoSeconds: seconds,
-        lastVideoPosition: currentWatchedPos,
+        lastVideoPosition: currentPos,
       });
 
-      // 2. Gửi đồng bộ lên server
+      // 3. Gửi đồng bộ lên server (Supabase Cloud)
       fetch("/api/student/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1287,7 +1294,7 @@ export function GamifiedMathQuiz({
           studentCode: user?.studentCode,
           username: user?.username,
           addVideoSeconds: seconds,
-          lastVideoPosition: currentWatchedPos,
+          lastVideoPosition: currentPos,
           lessonId,
           gradeKey,
           lessonTitle,
@@ -1295,20 +1302,32 @@ export function GamifiedMathQuiz({
       }).catch(() => {});
     };
 
-    // Gửi ngay 15 giây đầu tiên khi mở tab xem video
-    syncVideoTime(15);
-
-    // Tiếp tục tích lũy mỗi 15 giây khi đang xem
+    // Đếm thời gian thực tế mỗi giây khi học sinh đang xem tab bài giảng
     const interval = setInterval(() => {
-      syncVideoTime(15);
-    }, 15000);
+      if (typeof document !== "undefined" && document.visibilityState === "hidden") {
+        return; // Dừng đếm nếu học sinh thu nhỏ hoặc chuyển sang tab khác
+      }
+
+      pendingSecondsRef.current += 1;
+
+      // Cứ tích lũy đủ 10 giây thực tế thì đồng bộ lên Cloud
+      if (pendingSecondsRef.current >= 10) {
+        const secs = pendingSecondsRef.current;
+        pendingSecondsRef.current = 0;
+        flushVideoTime(secs);
+      }
+    }, 1000);
 
     return () => {
       clearInterval(interval);
-      // Gửi thêm 5 giây khi rời tab video
-      syncVideoTime(5);
+      // Khi học sinh chuyển bài hoặc rời tab video, lưu nốt số giây thực tế còn tồn đọng
+      if (pendingSecondsRef.current > 0) {
+        const secs = pendingSecondsRef.current;
+        pendingSecondsRef.current = 0;
+        flushVideoTime(secs);
+      }
     };
-  }, [activeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle, activeVideoTime]);
+  }, [activeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
   const recordMistake = async (

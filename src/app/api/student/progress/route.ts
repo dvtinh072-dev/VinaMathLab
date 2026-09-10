@@ -418,6 +418,9 @@ export async function POST(req: Request) {
       if (addVideoSeconds && typeof addVideoSeconds === "number") {
         l.videoWatchedSeconds = (l.videoWatchedSeconds || 0) + Math.max(0, addVideoSeconds);
       }
+      if (body.videoWatchedSeconds !== undefined && typeof body.videoWatchedSeconds === "number") {
+        l.videoWatchedSeconds = Math.max(l.videoWatchedSeconds || 0, body.videoWatchedSeconds);
+      }
       if (lastVideoPosition !== undefined) {
         l.lastVideoPosition = lastVideoPosition;
       }
@@ -434,6 +437,25 @@ export async function POST(req: Request) {
         l.totalQuestions = totalQuestions;
       }
       l.lastStudiedAt = new Date().toISOString();
+    }
+
+    // 1b. Hỗ trợ gộp danh sách bài học (khi đồng bộ hàng loạt từ các thiết bị)
+    if (body.lessons && typeof body.lessons === "object") {
+      Object.keys(body.lessons).forEach((lId) => {
+        const inL = body.lessons[lId];
+        if (!inL) return;
+        if (!studentRecord.lessons[lId]) {
+          studentRecord.lessons[lId] = { ...inL };
+        } else {
+          const exL = studentRecord.lessons[lId];
+          exL.videoWatchedSeconds = Math.max(exL.videoWatchedSeconds || 0, inL.videoWatchedSeconds || 0);
+          exL.score = Math.max(exL.score || 0, inL.score || 0);
+          if (inL.isCompleted) exL.isCompleted = true;
+          if (inL.isVideoCompleted) exL.isVideoCompleted = true;
+          if (inL.lastVideoPosition !== undefined) exL.lastVideoPosition = inL.lastVideoPosition;
+          if (inL.lastStudiedAt) exL.lastStudiedAt = inL.lastStudiedAt;
+        }
+      });
     }
 
     // 2. Cập nhật câu sai

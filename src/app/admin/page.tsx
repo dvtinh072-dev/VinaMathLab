@@ -1128,6 +1128,76 @@ export default function AdminDashboardPage() {
               </div>
             </div>
 
+            {/* Chi tiết thời gian xem video & tiến độ từng bài học của học sinh */}
+            <div className="space-y-3">
+              <h3 className="text-sm font-black text-white flex items-center justify-between">
+                <span className="flex items-center gap-2">
+                  <Video className="w-4 h-4 text-rose-400" />
+                  <span>Thời Gian Xem Video & Tiến Độ Từng Bài Học</span>
+                </span>
+                <span className="text-xs font-bold text-slate-400">
+                  Tổng: <strong className="text-rose-400">{selectedStudentDetail.progress?.totalVideoMinutes || 0} phút</strong>
+                </span>
+              </h3>
+
+              {selectedStudentDetail.progress?.lessons &&
+              Object.keys(selectedStudentDetail.progress.lessons).length > 0 ? (
+                <div className="rounded-2xl bg-slate-900/90 border border-slate-800 overflow-hidden shadow-inner">
+                  <div className="max-h-56 overflow-y-auto">
+                    <table className="w-full text-left text-xs text-slate-300">
+                      <thead className="bg-[#131d33] text-[10px] font-black uppercase text-amber-300 border-b border-slate-800 sticky top-0 z-10">
+                        <tr>
+                          <th className="py-2.5 px-3">Mã Bài</th>
+                          <th className="py-2.5 px-3">Tên Bài Học</th>
+                          <th className="py-2.5 px-3 text-center">Thời Lượng Video</th>
+                          <th className="py-2.5 px-3 text-center">Điểm</th>
+                          <th className="py-2.5 px-3 text-center">Trạng Thái</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-800/80 text-[11px]">
+                        {Object.values(selectedStudentDetail.progress.lessons).map((l: any) => {
+                          const sec = l.videoWatchedSeconds || 0;
+                          const mins = Math.floor(sec / 60);
+                          const remainSec = sec % 60;
+                          const timeStr = mins > 0 
+                            ? `${mins}p ${remainSec > 0 ? `${remainSec}s` : ""}`
+                            : `${remainSec}s`;
+
+                          return (
+                            <tr key={l.lessonId} className="hover:bg-slate-800/40 transition-colors">
+                              <td className="py-2 px-3 font-mono font-bold text-cyan-400">{l.lessonId}</td>
+                              <td className="py-2 px-3 font-medium text-white max-w-xs truncate">{l.lessonTitle || l.lessonId}</td>
+                              <td className="py-2 px-3 text-center font-bold text-rose-400">
+                                ⏱ {timeStr}
+                              </td>
+                              <td className="py-2 px-3 text-center font-bold text-amber-300">
+                                ⭐ {l.score || 0}
+                              </td>
+                              <td className="py-2 px-3 text-center">
+                                {l.isCompleted ? (
+                                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">
+                                    ✓ Xong
+                                  </span>
+                                ) : (
+                                  <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">
+                                    Đang học
+                                  </span>
+                                )}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : (
+                <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 text-center text-xs text-slate-400">
+                  Học sinh chưa có lượt xem video bài học nào.
+                </div>
+              )}
+            </div>
+
             {/* Sổ tay câu sai của học sinh này */}
             <div className="space-y-3">
               <h3 className="text-sm font-black text-white flex items-center gap-2">

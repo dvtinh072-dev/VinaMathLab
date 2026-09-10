@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -62,6 +63,38 @@ export async function POST(req: Request) {
       }
     }
 
+    // Nếu vẫn chưa có trong local, thử tìm trên Supabase
+    let suUserId = searchKey;
+    if (studentIndex === -1) {
+      try {
+        const { data: suUser } = await supabase
+          .from("users")
+          .select("*")
+          .or(`id.eq.${searchKey},username.eq.${cleanKey},student_code.ilike.${cleanKey}`)
+          .maybeSingle();
+
+        if (suUser) {
+          users.push({
+            id: suUser.id,
+            username: suUser.username,
+            studentCode: suUser.student_code,
+            fullName: suUser.full_name,
+            role: suUser.role,
+            schoolName: suUser.school_name,
+            grade: suUser.grade,
+            schoolClass: suUser.school_class,
+            exp: suUser.exp,
+            coins: suUser.coins,
+            streak: suUser.streak,
+          });
+          studentIndex = users.length - 1;
+          suUserId = suUser.id;
+        }
+      } catch {}
+    } else {
+      suUserId = users[studentIndex].id || searchKey;
+    }
+
     if (studentIndex === -1) {
       return NextResponse.json({ error: "Không tìm thấy học sinh" }, { status: 404 });
     }
@@ -84,7 +117,25 @@ export async function POST(req: Request) {
 
     saveUsers(users);
 
-    // Cập nhật Prisma DB
+    const updatedExp = users[studentIndex].exp;
+    const updatedCoins = users[studentIndex].coins;
+    const updatedStreak = users[studentIndex].streak;
+
+    // 1. Cập nhật Supabase Cloud Database
+    try {
+      await supabase
+        .from("users")
+        .update({
+          exp: updatedExp,
+          coins: updatedCoins,
+          streak: updatedStreak,
+        })
+        .or(`id.eq.${suUserId},username.eq.${cleanKey}`);
+    } catch (suErr) {
+      console.warn("Supabase update-score warning:", suErr);
+    }
+
+    // 2. Cập nhật Prisma DB
     try {
       await prisma.user.updateMany({
         where: {
@@ -95,9 +146,9 @@ export async function POST(req: Request) {
           ],
         },
         data: {
-          exp: users[studentIndex].exp,
-          coins: users[studentIndex].coins,
-          streak: users[studentIndex].streak,
+          exp: updatedExp,
+          coins: updatedCoins,
+          streak: updatedStreak,
         },
       });
     } catch (dbErr) {

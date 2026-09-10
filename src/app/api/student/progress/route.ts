@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { getDeletedIdentifiers } from "@/lib/deletedUsers";
+import { supabase } from "@/lib/supabaseClient";
 
 const progressFilePath = path.join(process.cwd(), "src/data/studentProgressData.json");
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
@@ -49,12 +50,41 @@ async function getUsersListAsync(): Promise<any[]> {
     // Prisma fallback
   }
 
+  // Supabase users
+  let suUsers: any[] = [];
+  try {
+    const { data } = await supabase.from("users").select("*");
+    if (data) {
+      suUsers = data.map((u: any) => ({
+        id: u.id,
+        username: u.username,
+        studentCode: u.student_code,
+        fullName: u.full_name,
+        role: u.role,
+        schoolName: u.school_name,
+        grade: u.grade,
+        schoolClass: u.school_class,
+        exp: u.exp,
+        coins: u.coins,
+        streak: u.streak,
+        createdAt: u.created_at,
+      }));
+    }
+  } catch (suErr) {}
+
   const userMap = new Map<string, any>();
   fallbackUsers.forEach((u) => {
     const key = (u.id || u.username || u.studentCode || "").toLowerCase();
     if (key) userMap.set(key, u);
   });
   dbUsers.forEach((u) => {
+    const key = (u.id || u.username || u.studentCode || "").toLowerCase();
+    if (key) {
+      const existing = userMap.get(key) || {};
+      userMap.set(key, { ...existing, ...u });
+    }
+  });
+  suUsers.forEach((u) => {
     const key = (u.id || u.username || u.studentCode || "").toLowerCase();
     if (key) {
       const existing = userMap.get(key) || {};
@@ -97,53 +127,81 @@ export async function GET(req: Request) {
         }
         return true;
       });
+
+      // Thử đọc toàn bộ progress từ Supabase để hợp nhất
+      let suProgressMap: Record<string, any> = {};
+      try {
+        const { data: suData } = await supabase.from("student_progress").select("*");
+        if (suData) {
+          suData.forEach((row: any) => {
+            const key = (row.id || row.user_id || row.username || "").toLowerCase();
+            suProgressMap[key] = {
+              userId: row.user_id || row.id,
+              studentCode: row.student_code,
+              username: row.username,
+              fullName: row.full_name,
+              totalVideoMinutes: row.total_video_minutes || 0,
+              totalCompletedLessons: row.total_completed_lessons || 0,
+              lessons: row.lessons || {},
+              wrongQuestions: row.wrong_questions || {},
+              solvedQuestions: row.solved_questions || {},
+              updatedAt: row.updated_at,
+            };
+          });
+        }
+      } catch {}
+
       const detailedList = studentUsers.map((stu) => {
+        const canonicalKey = stu.id?.toLowerCase() || "";
         const p =
+          suProgressMap[canonicalKey] ||
+          store[canonicalKey] ||
           store[stu.id] ||
           (stu.studentCode ? store[stu.studentCode] : null) ||
-          (stu.username ? store[stu.username] : null) ||
-          (stu.username ? store[stu.username.toLowerCase()] : null) || {
+          (stu.username ? store[stu.username] : null) || {
             userId: stu.id,
+            studentCode: stu.studentCode,
+            username: stu.username,
+            fullName: stu.fullName,
+            schoolName: stu.schoolName || "THCS VinaMath",
+            schoolClass: stu.schoolClass || "Lớp 6A",
             totalVideoMinutes: 0,
             totalCompletedLessons: 0,
             lessons: {},
             wrongQuestions: {},
+            updatedAt: stu.createdAt || new Date().toISOString(),
           };
 
-        const wrongList = Object.values(p.wrongQuestions || {});
-        const activeWrongs = wrongList.filter((w: any) => !w.isResolved);
-        const resolvedWrongs = wrongList.filter((w: any) => w.isResolved);
-        const totalWrongAttempts = wrongList.reduce((sum: number, w: any) => sum + (w.wrongCount || 1), 0);
+        const wrongQuestionsList = Object.values(p.wrongQuestions || {});
+        const activeMistakesCount = wrongQuestionsList.filter((w: any) => !w.isResolved).length;
 
         return {
           id: stu.id,
-          studentCode: stu.studentCode,
-          username: stu.username || stu.studentCode?.toLowerCase(),
-          fullName: stu.fullName,
+          studentCode: stu.studentCode || stu.id,
+          username: stu.username || stu.id,
+          fullName: stu.fullName || "Học sinh",
           schoolName: stu.schoolName || "THCS VinaMath",
           grade: stu.grade || "Khối 6",
           schoolClass: stu.schoolClass || "Lớp 6A",
-          exp: stu.exp || 0,
-          coins: stu.coins || 0,
-          streak: stu.streak || 1,
-          createdAt: stu.createdAt,
+          exp: Math.max(stu.exp || 0, p.exp || 0),
+          coins: Math.max(stu.coins || 0, p.coins || 0),
+          streak: Math.max(stu.streak || 1, p.streak || 1),
           totalVideoMinutes: p.totalVideoMinutes || 0,
-          totalCompletedLessons: Object.values(p.lessons || {}).filter((l: any) => l.isCompleted).length,
-          lessonsProgress: p.lessons || {},
-          wrongQuestionsList: wrongList,
-          activeWrongCount: activeWrongs.length,
-          resolvedWrongCount: resolvedWrongs.length,
-          totalWrongAttempts,
+          totalCompletedLessons: p.totalCompletedLessons || 0,
+          activeMistakesCount,
+          totalWrongAttempts: wrongQuestionsList.length,
+          lastActive: p.updatedAt || stu.createdAt,
+          wrongQuestionsList,
+          lessons: p.lessons || {},
         };
       });
 
-      // Thống kê các câu hỏi bị sai nhiều nhất (Top Difficult Questions)
       const questionMistakesMap: Record<string, {
         questionId: string;
-        badge?: string;
+        badge: string;
         questionText: string;
         lessonId: string;
-        lessonTitle?: string;
+        lessonTitle: string;
         totalWrongAttempts: number;
         affectedStudentsCount: number;
         explanation?: string;
@@ -201,7 +259,36 @@ export async function GET(req: Request) {
     );
 
     const canonicalKey = studentUser?.id || userId;
+
+    // 2.1. Đọc từ Supabase trước (Đồng bộ đám mây giữa điện thoại & máy tính)
+    let suProgressRecord: any = null;
+    try {
+      const { data: suData } = await supabase
+        .from("student_progress")
+        .select("*")
+        .or(`id.eq.${canonicalKey},user_id.eq.${canonicalKey},username.eq.${cleanUserId}`)
+        .maybeSingle();
+
+      if (suData) {
+        suProgressRecord = {
+          userId: suData.user_id || canonicalKey,
+          studentCode: suData.student_code || studentUser?.studentCode,
+          username: suData.username || studentUser?.username,
+          fullName: suData.full_name || studentUser?.fullName,
+          schoolName: studentUser?.schoolName || "THCS VinaMath",
+          schoolClass: studentUser?.schoolClass || "Lớp 6A",
+          totalVideoMinutes: suData.total_video_minutes || 0,
+          totalCompletedLessons: suData.total_completed_lessons || 0,
+          lessons: suData.lessons || {},
+          wrongQuestions: suData.wrong_questions || {},
+          solvedQuestions: suData.solved_questions || {},
+          updatedAt: suData.updated_at,
+        };
+      }
+    } catch {}
+
     const p =
+      suProgressRecord ||
       store[canonicalKey] ||
       store[userId] ||
       (studentUser?.studentCode ? store[studentUser.studentCode] : null) ||
@@ -263,8 +350,8 @@ export async function POST(req: Request) {
       isCompleted,
       score,
       totalQuestions,
-      wrongQuestion, // { questionId, badge, questionText, selectedOption, correctOption, explanation }
-      resolveQuestionId, // questionId đã sửa thành công
+      wrongQuestion,
+      resolveQuestionId,
       solvedQuestionId,
       solvedExp,
     } = body;
@@ -284,11 +371,9 @@ export async function POST(req: Request) {
         u.username?.toLowerCase() === cleanId
     );
 
-    // Dùng ID chuẩn của học sinh làm targetKey chính
     const targetKey = studentUser?.id || userId || studentCode || username;
 
     if (!store[targetKey]) {
-      // Kiểm tra xem đã từng lưu bằng studentCode hay username chưa
       const altRecord =
         (studentUser?.studentCode ? store[studentUser.studentCode] : null) ||
         (studentUser?.username ? store[studentUser.username] : null);
@@ -320,7 +405,7 @@ export async function POST(req: Request) {
         studentRecord.lessons[lessonId] = {
           lessonId,
           gradeKey: gradeKey || "lop-6",
-          lessonTitle: lessonTitle || lessonId,
+          lessonTitle: lessonTitle || "",
           videoWatchedSeconds: 0,
           isCompleted: false,
           score: 0,
@@ -351,9 +436,11 @@ export async function POST(req: Request) {
       l.lastStudiedAt = new Date().toISOString();
     }
 
-    // 2. Ghi nhận câu hỏi làm sai (kèm đếm số lần sai wrongCount)
+    // 2. Cập nhật câu sai
     if (wrongQuestion && wrongQuestion.questionId) {
       const qId = wrongQuestion.questionId;
+      if (!studentRecord.wrongQuestions) studentRecord.wrongQuestions = {};
+
       if (!studentRecord.wrongQuestions[qId]) {
         studentRecord.wrongQuestions[qId] = {
           id: `wq-${targetKey}-${qId}`,
@@ -371,21 +458,21 @@ export async function POST(req: Request) {
           lastWrongAt: new Date().toISOString(),
         };
       } else {
-        const existing = studentRecord.wrongQuestions[qId];
-        existing.wrongCount = (existing.wrongCount || 0) + 1;
-        existing.isResolved = false; // Đánh dấu lại là chưa resolved vì vừa làm sai tiếp
-        if (wrongQuestion.selectedOption) existing.lastSelectedOption = wrongQuestion.selectedOption;
-        if (wrongQuestion.correctOption) existing.correctOption = wrongQuestion.correctOption;
-        existing.lastWrongAt = new Date().toISOString();
+        const w = studentRecord.wrongQuestions[qId];
+        w.wrongCount = (w.wrongCount || 0) + 1;
+        w.isResolved = false;
+        if (wrongQuestion.selectedOption) w.lastSelectedOption = wrongQuestion.selectedOption;
+        if (wrongQuestion.correctOption) w.correctOption = wrongQuestion.correctOption;
+        w.lastWrongAt = new Date().toISOString();
       }
     }
 
     // 3. Đánh dấu câu hỏi đã được làm lại đúng (Resolve)
-    if (resolveQuestionId && studentRecord.wrongQuestions[resolveQuestionId]) {
+    if (resolveQuestionId && studentRecord.wrongQuestions?.[resolveQuestionId]) {
       studentRecord.wrongQuestions[resolveQuestionId].isResolved = true;
     }
 
-    // 3b. Ghi nhận câu hỏi đã được giải đúng để không tính điểm lần 2
+    // 3b. Ghi nhận câu hỏi đã được giải đúng
     if (solvedQuestionId) {
       if (!studentRecord.solvedQuestions) studentRecord.solvedQuestions = {};
       studentRecord.solvedQuestions[solvedQuestionId] = {
@@ -423,9 +510,30 @@ export async function POST(req: Request) {
     studentRecord.totalCompletedLessons = completedCount;
     studentRecord.updatedAt = new Date().toISOString();
 
+    // 6. Lưu vào bộ nhớ file JSON cục bộ
     saveProgressStore(store);
 
-    // Đồng bộ điểm học sinh vào usersData.json và Prisma DB nếu có thay đổi điểm
+    // 7. Lưu vào Supabase Cloud Database (Đồng bộ ngay lên đám mây)
+    try {
+      await supabase.from("student_progress").upsert({
+        id: targetKey,
+        user_id: targetKey,
+        username: studentUser?.username || username,
+        student_code: studentUser?.studentCode || studentCode,
+        full_name: studentUser?.fullName,
+        grade_key: gradeKey || "lop-6",
+        total_video_minutes: studentRecord.totalVideoMinutes,
+        total_completed_lessons: studentRecord.totalCompletedLessons,
+        lessons: studentRecord.lessons,
+        wrong_questions: studentRecord.wrongQuestions,
+        solved_questions: studentRecord.solvedQuestions || {},
+        updated_at: studentRecord.updatedAt,
+      }, { onConflict: "id" });
+    } catch (suErr) {
+      console.warn("Supabase student_progress upsert warning:", suErr);
+    }
+
+    // 8. Đồng bộ điểm học sinh vào Supabase users, usersData.json và Prisma DB
     if (studentUser && (earnedExp || totalExp !== undefined || earnedCoins || coins !== undefined || streak !== undefined)) {
       try {
         const usersList = getFallbackUsersList();
@@ -441,6 +549,16 @@ export async function POST(req: Request) {
           if (studentRecord.streak !== undefined) usersList[uIdx].streak = studentRecord.streak;
           fs.writeFileSync(usersFilePath, JSON.stringify(usersList, null, 2), "utf-8");
         }
+
+        // Cập nhật Supabase users table
+        await supabase
+          .from("users")
+          .update({
+            exp: studentRecord.exp,
+            coins: studentRecord.coins,
+            streak: studentRecord.streak,
+          })
+          .eq("id", studentUser.id);
 
         const { prisma } = await import("@/lib/prisma");
         await prisma.user.updateMany({

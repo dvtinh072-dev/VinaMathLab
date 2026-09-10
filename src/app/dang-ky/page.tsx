@@ -202,6 +202,9 @@ export default function DangKyPage() {
                   <input
                     type="text"
                     required
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck="false"
                     value={studentUsername}
                     onChange={(e) => setStudentUsername(e.target.value.toLowerCase().replace(/\s+/g, ""))}
                     placeholder="Ví dụ: annguyen6a (viết liền, không dấu)"

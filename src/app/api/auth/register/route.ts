@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 const ADMIN_SECRET_KEY = "VINAMATH2026";
@@ -68,11 +69,26 @@ export async function POST(req: Request) {
         createdAt: new Date().toISOString(),
       };
 
-      // 1. Lưu vào file JSON fallback
+      // 1. Lưu vào Supabase Cloud
+      try {
+        await supabase.from("users").upsert({
+          id: newAdmin.id,
+          username: newAdmin.username.toLowerCase(),
+          email: newAdmin.email,
+          password_hash: newAdmin.password,
+          full_name: newAdmin.fullName,
+          role: "admin",
+          created_at: newAdmin.createdAt,
+        });
+      } catch (suErr) {
+        console.warn("Supabase insert admin warning:", suErr);
+      }
+
+      // 2. Lưu vào file JSON fallback
       users.push(newAdmin);
       saveUsers(users);
 
-      // 2. Lưu vào Prisma DB
+      // 3. Lưu vào Prisma DB
       try {
         await prisma.user.create({
           data: {
@@ -109,6 +125,22 @@ export async function POST(req: Request) {
 
       const cleanUsername = rawUsername;
       const internalCode = studentCode ? studentCode.trim().toUpperCase() : cleanUsername.toUpperCase();
+
+      // Kiểm tra trùng trên Supabase
+      try {
+        const { data: suFound } = await supabase
+          .from("users")
+          .select("id")
+          .eq("username", cleanUsername)
+          .maybeSingle();
+
+        if (suFound) {
+          return NextResponse.json(
+            { error: `Tên đăng nhập "${cleanUsername}" đã được sử dụng. Vui lòng chọn tên khác.` },
+            { status: 409 }
+          );
+        }
+      } catch {}
 
       // Kiểm tra trùng username trong usersData.json
       const isUserExistedInJson = users.some(
@@ -154,11 +186,32 @@ export async function POST(req: Request) {
         createdAt: new Date().toISOString(),
       };
 
-      // 1. Lưu vào file JSON
+      // 1. Lưu vào Supabase Cloud
+      try {
+        await supabase.from("users").upsert({
+          id: newStudent.id,
+          username: newStudent.username,
+          student_code: newStudent.studentCode,
+          password_hash: newStudent.password,
+          full_name: newStudent.fullName,
+          role: "student",
+          school_name: newStudent.schoolName,
+          grade: newStudent.grade,
+          school_class: newStudent.schoolClass,
+          exp: newStudent.exp,
+          coins: newStudent.coins,
+          streak: newStudent.streak,
+          created_at: newStudent.createdAt,
+        });
+      } catch (suErr) {
+        console.warn("Supabase insert student warning:", suErr);
+      }
+
+      // 2. Lưu vào file JSON
       users.push(newStudent);
       saveUsers(users);
 
-      // 2. Lưu vào Prisma DB
+      // 3. Lưu vào Prisma DB
       try {
         await prisma.user.create({
           data: {

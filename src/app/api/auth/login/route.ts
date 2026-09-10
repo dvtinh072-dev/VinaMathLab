@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
 import { isUserDeleted } from "@/lib/deletedUsers";
+import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -34,38 +35,101 @@ export async function POST(req: Request) {
 
     let user: any = null;
 
-    // 1. Thử xác thực từ Prisma DB
+    // 1. Xác thực qua Supabase Cloud Database (Ưu tiên số 1 - Đồng bộ đám mây cho cả di động & máy tính)
     try {
       if (role === "admin") {
-        user = await prisma.user.findFirst({
-          where: {
-            role: "admin",
-            password: cleanPassword,
-            OR: [
-              { username: loginKey },
-              { email: loginKey },
-            ],
-          },
-        });
+        const { data: suUser, error } = await supabase
+          .from("users")
+          .select("*")
+          .eq("role", "admin")
+          .eq("password_hash", cleanPassword)
+          .or(`username.eq.${loginKey},email.eq.${loginKey}`)
+          .maybeSingle();
+
+        if (suUser && !error) {
+          user = {
+            id: suUser.id,
+            username: suUser.username,
+            studentCode: suUser.student_code,
+            email: suUser.email,
+            password: suUser.password_hash,
+            fullName: suUser.full_name,
+            role: suUser.role,
+            schoolName: suUser.school_name,
+            grade: suUser.grade,
+            schoolClass: suUser.school_class,
+            exp: suUser.exp,
+            coins: suUser.coins,
+            streak: suUser.streak,
+            createdAt: suUser.created_at,
+          };
+        }
       } else {
-        user = await prisma.user.findFirst({
-          where: {
-            role: "student",
-            password: cleanPassword,
-            OR: [
-              { username: loginKey },
-              { studentCode: loginKey.toUpperCase() },
-              { studentCode: loginKey },
-              { id: loginKey },
-            ],
-          },
-        });
+        const { data: suUser, error } = await supabase
+          .from("users")
+          .select("*")
+          .eq("role", "student")
+          .eq("password_hash", cleanPassword)
+          .or(`username.eq.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
+          .maybeSingle();
+
+        if (suUser && !error) {
+          user = {
+            id: suUser.id,
+            username: suUser.username,
+            studentCode: suUser.student_code,
+            email: suUser.email,
+            password: suUser.password_hash,
+            fullName: suUser.full_name,
+            role: suUser.role,
+            schoolName: suUser.school_name,
+            grade: suUser.grade,
+            schoolClass: suUser.school_class,
+            exp: suUser.exp,
+            coins: suUser.coins,
+            streak: suUser.streak,
+            createdAt: suUser.created_at,
+          };
+        }
       }
-    } catch (dbError) {
-      console.warn("Prisma query failed, falling back to JSON file:", dbError);
+    } catch (supabaseErr) {
+      console.warn("Supabase query warning, falling back to local database:", supabaseErr);
     }
 
-    // 2. Fallback sang file usersData.json nếu chưa tìm thấy trong DB
+    // 2. Thử xác thực từ Prisma DB nếu Supabase offline
+    if (!user) {
+      try {
+        if (role === "admin") {
+          user = await prisma.user.findFirst({
+            where: {
+              role: "admin",
+              password: cleanPassword,
+              OR: [
+                { username: loginKey },
+                { email: loginKey },
+              ],
+            },
+          });
+        } else {
+          user = await prisma.user.findFirst({
+            where: {
+              role: "student",
+              password: cleanPassword,
+              OR: [
+                { username: loginKey },
+                { studentCode: loginKey.toUpperCase() },
+                { studentCode: loginKey },
+                { id: loginKey },
+              ],
+            },
+          });
+        }
+      } catch (dbError) {
+        console.warn("Prisma query failed, falling back to JSON file:", dbError);
+      }
+    }
+
+    // 3. Fallback sang file usersData.json nếu chưa tìm thấy trong DB
     if (!user) {
       const fallbackUsers = getFallbackUsers();
       if (role === "admin") {
@@ -112,6 +176,14 @@ export async function POST(req: Request) {
         { status: 403 }
       );
     }
+
+    // Cập nhật last_login lên Supabase asynchronously
+    try {
+      await supabase
+        .from("users")
+        .update({ last_login: new Date().toISOString() })
+        .eq("id", user.id);
+    } catch {}
 
     const { password: _, ...userWithoutPass } = user;
     return NextResponse.json({ success: true, user: userWithoutPass });

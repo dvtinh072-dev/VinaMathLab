@@ -26,19 +26,29 @@ export default function DangNhapPage() {
     setSuccessMsg(null);
     setIsSubmitting(true);
 
+    const cleanStudentId = studentCode.trim();
+    const cleanStudentPass = studentPassword.trim();
+    const cleanAdminUser = adminUsername.trim();
+    const cleanAdminPass = adminPassword.trim();
+
     if (activeRole === "student") {
-      const res = await loginStudent(studentCode, studentPassword);
+      const res = await loginStudent(cleanStudentId, cleanStudentPass);
       if (res.success) {
         setSuccessMsg("Đăng nhập học sinh thành công! Đang chuyển hướng...");
-        setTimeout(() => router.push("/tai-khoan"), 1000);
+        // Sử dụng window.location.href để đảm bảo tải mới toàn bộ state trên Safari / Android Chrome
+        setTimeout(() => {
+          window.location.href = "/tai-khoan";
+        }, 800);
       } else {
         setErrorMsg(res.error || "Tên đăng nhập hoặc mật khẩu không chính xác.");
       }
     } else {
-      const res = await loginAdmin(adminUsername, adminPassword);
+      const res = await loginAdmin(cleanAdminUser, cleanAdminPass);
       if (res.success) {
         setSuccessMsg("Đăng nhập Quản trị viên thành công! Đang chuyển hướng...");
-        setTimeout(() => router.push("/admin"), 1000);
+        setTimeout(() => {
+          window.location.href = "/admin";
+        }, 800);
       } else {
         setErrorMsg(res.error || "Tài khoản quản trị viên không chính xác.");
       }
@@ -53,6 +63,7 @@ export default function DangNhapPage() {
         {/* Role Selector Tabs */}
         <div className="flex border-b border-slate-800 bg-[#131d33]">
           <button
+            type="button"
             onClick={() => {
               setActiveRole("student");
               setErrorMsg(null);
@@ -68,6 +79,7 @@ export default function DangNhapPage() {
           </button>
 
           <button
+            type="button"
             onClick={() => {
               setActiveRole("admin");
               setErrorMsg(null);
@@ -84,7 +96,7 @@ export default function DangNhapPage() {
         </div>
 
         {/* Login Form */}
-        <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-4">
+        <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-4" autoComplete="on">
           <div className="text-center space-y-1">
             <h2 className="text-xl font-black text-white">
               {activeRole === "student" ? "Đăng Nhập Học Sinh" : "Đăng Nhập Quản Trị Viên"}
@@ -95,7 +107,6 @@ export default function DangNhapPage() {
                 : "Đăng nhập để xem báo cáo học sinh và quản trị hệ thống"}
             </p>
           </div>
-
 
           {/* Alerts */}
           {errorMsg && (
@@ -124,7 +135,12 @@ export default function DangNhapPage() {
                   </div>
                   <input
                     type="text"
+                    name="username"
+                    id="student-username"
                     required
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck="false"
                     value={studentCode}
                     onChange={(e) => setStudentCode(e.target.value)}
                     placeholder="Ví dụ: annguyen6a"
@@ -134,14 +150,20 @@ export default function DangNhapPage() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Mật Khẩu <span className="text-rose-400">*</span></label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Mật Khẩu <span className="text-rose-400">*</span>
+                </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                     <Lock className="w-4 h-4" />
                   </div>
                   <input
                     type="password"
+                    name="password"
+                    id="student-password"
                     required
+                    autoCapitalize="none"
+                    autoCorrect="off"
                     value={studentPassword}
                     onChange={(e) => setStudentPassword(e.target.value)}
                     placeholder="Nhập mật khẩu..."
@@ -160,7 +182,12 @@ export default function DangNhapPage() {
                   </div>
                   <input
                     type="text"
+                    name="admin-user"
+                    id="admin-user"
                     required
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck="false"
                     value={adminUsername}
                     onChange={(e) => setAdminUsername(e.target.value)}
                     placeholder="Tên đăng nhập hoặc email..."
@@ -177,7 +204,11 @@ export default function DangNhapPage() {
                   </div>
                   <input
                     type="password"
+                    name="admin-pass"
+                    id="admin-pass"
                     required
+                    autoCapitalize="none"
+                    autoCorrect="off"
                     value={adminPassword}
                     onChange={(e) => setAdminPassword(e.target.value)}
                     placeholder="Nhập mật khẩu admin..."

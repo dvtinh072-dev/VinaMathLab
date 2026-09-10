@@ -11,6 +11,89 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     bookChapter: "Chương I: Hàm số lượng giác và phương trình lượng giác",
     scenarioTitle: "Mô hình hoá chuyển động quay tròn và góc lượng giác",
     scenarioFrames: [],
+    "youtubeVideoId": "hBx3cV2ugks",
+    "youtubeVideoTitle": "Bài Giảng Video: Giá trị lượng giác của góc lượng giác (Tiết 1) - Toán 11 KNTT",
+    "youtubeVideos": [
+        {
+            "id": "hBx3cV2ugks",
+            "title": "Tiết 1: Góc lượng giác & Đơn vị Radian"
+        },
+        {
+            "id": "uyhbVbE1EYo",
+            "title": "Tiết 2: Đường tròn lượng giác & Biểu diễn góc lượng giác"
+        },
+        {
+            "id": "tuZGW9-tNs8",
+            "title": "Tiết 3: Giá trị lượng giác của góc lượng giác & Hệ thức cơ bản"
+        },
+        {
+            "id": "-l72fLGqTcA",
+            "title": "Tiết 4: Góc liên quan đặc biệt & Luyện tập ứng dụng"
+        }
+    ],
+    "videoQuestions": [
+        {
+            "id": "vq-11.1.1",
+            "title": "Ví dụ 1 (Tiết 1): Đổi đơn vị độ sang radian",
+            "question": "Đổi góc có số đo $120^\\circ$ sang đơn vị radian, ta được kết quả là:",
+            "options": [
+                "$\\dfrac{2\\pi}{3}$ rad",
+                "$\\dfrac{3\\pi}{4}$ rad",
+                "$\\dfrac{5\\pi}{6}$ rad",
+                "$\\dfrac{\\pi}{3}$ rad"
+            ],
+            "correctIndex": 0,
+            "explanation": "Áp dụng công thức đổi đơn vị: $\\alpha = \\dfrac{a \\cdot \\pi}{180} = \\dfrac{120\\pi}{180} = \\dfrac{2\\pi}{3}$ rad."
+        },
+        {
+            "id": "vq-11.1.2",
+            "title": "Ví dụ 2 (Tiết 2): Xác định góc phần tư của góc lượng giác",
+            "question": "Điểm biểu diễn của góc lượng giác có số đo $\\alpha = -\\dfrac{2\\pi}{3}$ trên đường tròn lượng giác thuộc góc phần tư thứ mấy?",
+            "options": [
+                "Góc phần tư thứ III",
+                "Góc phần tư thứ II",
+                "Góc phần tư thứ IV",
+                "Góc phần tư thứ I"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $-\\pi < -\\dfrac{2\\pi}{3} < -\\dfrac{\\pi}{2}$. Quay từ gốc $A(1;0)$ theo chiều âm (cùng chiều kim đồng hồ) một góc $\\dfrac{2\\pi}{3} = 120^\\circ$, điểm biểu diễn rơi vào góc phần tư thứ III."
+        },
+        {
+            "id": "vq-11.1.3",
+            "title": "Ví dụ 3 (Tiết 3): Áp dụng hệ thức lượng giác cơ bản",
+            "question": "Cho $\\cos\\alpha = -\\dfrac{3}{5}$ với $\\dfrac{\\pi}{2} < \\alpha < \\pi$. Giá trị của $\\sin\\alpha$ bằng:",
+            "options": [
+                "$\\dfrac{4}{5}$",
+                "$-\\dfrac{4}{5}$",
+                "$\\dfrac{16}{25}$",
+                "$-\\dfrac{16}{25}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\sin^2\\alpha = 1 - \\cos^2\\alpha = 1 - \\left(-\\dfrac{3}{5}\\right)^2 = \\dfrac{16}{25}$. Vì $\\dfrac{\\pi}{2} < \\alpha < \\pi$ (góc phần tư thứ II) nên $\\sin\\alpha > 0$. Do đó $\\sin\\alpha = \\dfrac{4}{5}$."
+        },
+        {
+            "id": "vq-11.1.4",
+            "title": "Ví dụ 4 (Tiết 4): Rút gọn với góc liên quan đặc biệt",
+            "question": "Rút gọn biểu thức $A = \\sin(\\pi - \\alpha) + \\cos\\left(\\dfrac{\\pi}{2} - \\alpha\\right)$, ta được kết quả là:",
+            "options": [
+                "$2\\sin\\alpha$",
+                "$0$",
+                "$2\\cos\\alpha$",
+                "$\\sin\\alpha - \\cos\\alpha$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo công thức góc bù: $\\sin(\\pi - \\alpha) = \\sin\\alpha$. Theo công thức góc phụ: $\\cos\\left(\\dfrac{\\pi}{2} - \\alpha\\right) = \\sin\\alpha$. Vậy $A = \\sin\\alpha + \\sin\\alpha = 2\\sin\\alpha$."
+        }
+    ],
+    "tips": [
+        "Câu thần chú góc liên quan đặc biệt: 'Cos đối, Sin bù, Phụ chéo, Hơn kém pi tan'. Chỉ những hàm số được nhắc tên mới mang dấu dương, các hàm số khác đổi dấu âm.",
+        "Ghi nhớ bảng xét dấu theo góc phần tư: GPT I: Tất cả đều (+); GPT II: Chỉ sin (+); GPT III: Chỉ tan và cot (+); GPT IV: Chỉ cos (+)."
+    ],
+    "traps": [
+        "Bẫy đơn vị góc máy tính Casio: Luôn kiểm tra màn hình máy tính hiển thị chữ 'D' (Degree - độ) hay 'R' (Radian) trước khi bấm phím tính toán.",
+        "Bẫy dấu khi khai căn $\\sin^2\\alpha + \\cos^2\\alpha = 1$: Khi tính $\\sin\\alpha = \\pm\\sqrt{1 - \\cos^2\\alpha}$, bắt buộc phải căn cứ vào góc phần tư của $\\alpha$ để chọn dấu (+) hoặc (-)."
+    ]
+,
     theorySections: [
       {
         index: "1",
@@ -894,4 +977,562 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   }
+,
+  "t11-b2-cong-thuc-luong-giac": {
+  "id": "t11-b2-cong-thuc-luong-giac",
+  "lessonNumber": 2,
+  "title": "Bài 2: Công thức lượng giác",
+  "bookChapter": "Chương I: Hàm số lượng giác và phương trình lượng giác",
+  "scenarioTitle": "Vận dụng công thức lượng giác trong biến đổi sóng âm và kỹ thuật cơ khí",
+  "scenarioFrames": [],
+  "youtubeVideoId": "F0ul9DIR0rI",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 2 - Công thức lượng giác (Tiết 1) - Toán 11 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "F0ul9DIR0rI",
+      "title": "Tiết 1: Công thức cộng & Công thức nhân đôi"
+    },
+    {
+      "id": "RWH2VKKI9LA",
+      "title": "Tiết 2: Công thức biến đổi tích thành tổng & tổng thành tích"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-11.2.1",
+      "title": "Ví dụ 1 (Tiết 1): Công thức cộng lượng giác",
+      "question": "Khai triển biểu thức $\\cos\\left(a - \\dfrac{\\pi}{3}\\right)$ theo công thức cộng, ta được:",
+      "options": [
+        "$\\dfrac{1}{2}\\cos a + \\dfrac{\\sqrt{3}}{2}\\sin a$",
+        "$\\dfrac{1}{2}\\cos a - \\dfrac{\\sqrt{3}}{2}\\sin a$",
+        "$\\dfrac{\\sqrt{3}}{2}\\cos a + \\dfrac{1}{2}\\sin a$",
+        "$\\dfrac{\\sqrt{3}}{2}\\cos a - \\dfrac{1}{2}\\sin a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức cộng: $\\cos(a - b) = \\cos a \\cos b + \\sin a \\sin b$. Với $b = \\dfrac{\\pi}{3}$, ta có $\\cos\\dfrac{\\pi}{3} = \\dfrac{1}{2}$ và $\\sin\\dfrac{\\pi}{3} = \\dfrac{\\sqrt{3}}{2}$, do đó $\\cos\\left(a - \\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}\\cos a + \\dfrac{\\sqrt{3}}{2}\\sin a$."
+    },
+    {
+      "id": "vq-11.2.2",
+      "title": "Ví dụ 2 (Tiết 1): Áp dụng công thức nhân đôi",
+      "question": "Cho $\\sin a = \\dfrac{3}{5}$ và $\\cos a = \\dfrac{4}{5}$. Giá trị của $\\sin 2a$ bằng:",
+      "options": [
+        "$\\dfrac{24}{25}$",
+        "$\\dfrac{12}{25}$",
+        "$\\dfrac{7}{25}$",
+        "$\\dfrac{18}{25}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức nhân đôi: $\\sin 2a = 2\\sin a \\cos a = 2 \\cdot \\dfrac{3}{5} \\cdot \\dfrac{4}{5} = \\dfrac{24}{25}$."
+    },
+    {
+      "id": "vq-11.2.3",
+      "title": "Ví dụ 3 (Tiết 1): Rút gọn biểu thức bằng hạ bậc",
+      "question": "Rút gọn biểu thức $P = \\cos 2x + 2\\sin^2 x$, ta được kết quả là:",
+      "options": [
+        "$1$",
+        "$0$",
+        "$2\\cos 2x$",
+        "$\\cos^2 x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\cos 2x = 1 - 2\\sin^2 x$. Thay vào biểu thức: $P = 1 - 2\\sin^2 x + 2\\sin^2 x = 1$."
+    },
+    {
+      "id": "vq-11.2.4",
+      "title": "Ví dụ 4 (Tiết 2): Biến đổi tích thành tổng",
+      "question": "Biến đổi biểu thức $2\\sin 3x \\cos x$ thành tổng, ta được:",
+      "options": [
+        "$\\sin 4x + \\sin 2x$",
+        "$\\sin 4x - \\sin 2x$",
+        "$\\cos 4x + \\cos 2x$",
+        "$\\cos 4x - \\cos 2x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức tích thành tổng: $2\\sin a \\cos b = \\sin(a + b) + \\sin(a - b)$. Với $a = 3x, b = x$, ta có $2\\sin 3x \\cos x = \\sin(3x + x) + \\sin(3x - x) = \\sin 4x + \\sin 2x$."
+    }
+  ],
+  "tips": [
+    "Mẹo nhớ công thức cộng: 'Cos thì cos cos sin sin, dấu trừ đổi lại dấu cộng liền sau. Sin thì sin cos cos sin, dấu cùng dấu với phương trình đề cho'.",
+    "Mẹo nhớ công thức tổng thành tích: 'Cos cộng cos bằng hai cos cos; Cos trừ cos bằng trừ hai sin sin; Sin cộng sin bằng hai sin cos; Sin trừ sin bằng hai cos sin'."
+  ],
+  "traps": [
+    "Bẫy dấu trong công thức $\\cos(a + b)$: $\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$ (chú ý dấu trừ, rất hay nhầm thành dấu cộng).",
+    "Bẫy dấu trừ trong công thức $\\cos u - \\cos v$: $\\cos u - \\cos v = -2\\sin\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}$ (bắt buộc phải có dấu âm phía trước)."
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Công thức cộng",
+      "points": [
+        "$\\cos(a - b) = \\cos a \\cos b + \\sin a \\sin b$",
+        "$\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$",
+        "$\\sin(a - b) = \\sin a \\cos b - \\cos a \\sin b$",
+        "$\\sin(a + b) = \\sin a \\cos b + \\cos a \\sin b$",
+        "$\\tan(a - b) = \\dfrac{\\tan a - \\tan b}{1 + \\tan a \\tan b}$",
+        "$\\tan(a + b) = \\dfrac{\\tan a + \\tan b}{1 - \\tan a \\tan b}$"
+      ],
+      "formula": "\\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b; \\quad \\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b",
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tính giá trị lượng giác bằng công thức cộng",
+          "problem": "Tính $\\sin\\dfrac{7\\pi}{12}$ bằng cách viết $\\dfrac{7\\pi}{12} = \\dfrac{\\pi}{3} + \\dfrac{\\pi}{4}$.",
+          "solution": "Ta có: $\\sin\\dfrac{7\\pi}{12} = \\sin\\left(\\dfrac{\\pi}{3} + \\dfrac{\\pi}{4}\\right) = \\sin\\dfrac{\\pi}{3}\\cos\\dfrac{\\pi}{4} + \\cos\\dfrac{\\pi}{3}\\sin\\dfrac{\\pi}{4} = \\dfrac{\\sqrt{3}}{2} \\cdot \\dfrac{\\sqrt{2}}{2} + \\dfrac{1}{2} \\cdot \\dfrac{\\sqrt{2}}{2} = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Công thức nhân đôi và Hạ bậc",
+      "points": [
+        "Công thức nhân đôi: $\\sin 2a = 2\\sin a \\cos a$; $\\cos 2a = \\cos^2 a - \\sin^2 a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a$; $\\tan 2a = \\dfrac{2\\tan a}{1 - \\tan^2 a}$.",
+        "Công thức hạ bậc: $\\cos^2 a = \\dfrac{1 + \\cos 2a}{2}$; $\\sin^2 a = \\dfrac{1 - \\cos 2a}{2}$; $\\tan^2 a = \\dfrac{1 - \\cos 2a}{1 + \\cos 2a}$."
+      ],
+      "formula": "\\sin 2a = 2\\sin a \\cos a; \\quad \\cos 2a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a; \\quad \\cos^2 a = \\dfrac{1 + \\cos 2a}{2}",
+      "examples": [
+        {
+          "title": "Ví dụ 2: Tính giá trị nhân đôi",
+          "problem": "Cho $\\cos a = \\dfrac{1}{3}$. Tính $\\cos 2a$.",
+          "solution": "Áp dụng công thức nhân đôi: $\\cos 2a = 2\\cos^2 a - 1 = 2 \\cdot \\left(\\dfrac{1}{3}\\right)^2 - 1 = \\dfrac{2}{9} - 1 = -\\dfrac{7}{9}$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Công thức biến đổi tích thành tổng và tổng thành tích",
+      "points": [
+        "Biến đổi tích thành tổng: $\\cos a \\cos b = \\dfrac{1}{2}[\\cos(a - b) + \\cos(a + b)]$; $\\sin a \\sin b = \\dfrac{1}{2}[\\cos(a - b) - \\cos(a + b)]$; $\\sin a \\cos b = \\dfrac{1}{2}[\\sin(a + b) + \\sin(a - b)]$.",
+        "Biến đổi tổng thành tích: $\\cos u + \\cos v = 2\\cos\\dfrac{u+v}{2}\\cos\\dfrac{u-v}{2}$; $\\cos u - \\cos v = -2\\sin\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}$; $\\sin u + \\sin v = 2\\sin\\dfrac{u+v}{2}\\cos\\dfrac{u-v}{2}$; $\\sin u - \\sin v = 2\\cos\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}$."
+      ],
+      "formula": "\\cos u + \\cos v = 2\\cos\\dfrac{u+v}{2}\\cos\\dfrac{u-v}{2}; \\quad \\cos u - \\cos v = -2\\sin\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}",
+      "examples": [
+        {
+          "title": "Ví dụ 3: Biến đổi tổng thành tích",
+          "problem": "Rút gọn biểu thức $A = \\cos 5x + \\cos 3x$.",
+          "solution": "Áp dụng công thức tổng thành tích: $\\cos 5x + \\cos 3x = 2\\cos\\dfrac{5x + 3x}{2}\\cos\\dfrac{5x - 3x}{2} = 2\\cos 4x \\cos x$."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "sgk-11.2.1",
+      "badge": "Câu 1 - Công thức cộng côsin",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Công thức nào sau đây là ĐÚNG với mọi góc $a, b$?",
+      "options": [
+        "$\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$",
+        "$\\cos(a + b) = \\cos a \\cos b + \\sin a \\sin b$",
+        "$\\cos(a + b) = \\sin a \\cos b + \\cos a \\sin b$",
+        "$\\cos(a + b) = \\sin a \\cos b - \\cos a \\sin b$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức cộng côsin: $\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$."
+    },
+    {
+      "id": "sgk-11.2.2",
+      "badge": "Câu 2 - Công thức cộng sin",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Công thức nào sau đây là ĐÚNG với mọi góc $a, b$?",
+      "options": [
+        "$\\sin(a - b) = \\sin a \\cos b - \\cos a \\sin b$",
+        "$\\sin(a - b) = \\sin a \\cos b + \\cos a \\sin b$",
+        "$\\sin(a - b) = \\cos a \\cos b - \\sin a \\sin b$",
+        "$\\sin(a - b) = \\cos a \\cos b + \\sin a \\sin b$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức cộng sin: $\\sin(a - b) = \\sin a \\cos b - \\cos a \\sin b$."
+    },
+    {
+      "id": "sgk-11.2.3",
+      "badge": "Câu 3 - Công thức nhân đôi",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Khẳng định nào sau đây là SAI?",
+      "options": [
+        "$\\cos 2a = 1 - 2\\cos^2 a$",
+        "$\\cos 2a = \\cos^2 a - \\sin^2 a$",
+        "$\\cos 2a = 2\\cos^2 a - 1$",
+        "$\\cos 2a = 1 - 2\\sin^2 a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức đúng là $\\cos 2a = 2\\cos^2 a - 1$. Khẳng định $\\cos 2a = 1 - 2\\cos^2 a$ là sai."
+    },
+    {
+      "id": "sgk-11.2.4",
+      "badge": "Câu 4 - Tính giá trị lượng giác",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Giá trị của biểu thức $\\sin\\dfrac{7\\pi}{12}$ bằng:",
+      "options": [
+        "$\\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{3} + 1}{2}$",
+        "$\\dfrac{\\sqrt{2} + 1}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sin\\dfrac{7\\pi}{12} = \\sin\\left(\\dfrac{\\pi}{3} + \\dfrac{\\pi}{4}\\right) = \\sin\\dfrac{\\pi}{3}\\cos\\dfrac{\\pi}{4} + \\cos\\dfrac{\\pi}{3}\\sin\\dfrac{\\pi}{4} = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$."
+    },
+    {
+      "id": "sgk-11.2.5",
+      "badge": "Câu 5 - Tính cos 2a",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Cho $\\cos a = \\dfrac{1}{3}$. Giá trị của $\\cos 2a$ bằng:",
+      "options": [
+        "$-\\dfrac{7}{9}$",
+        "$\\dfrac{7}{9}$",
+        "$-\\dfrac{2}{3}$",
+        "$\\dfrac{2}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos 2a = 2\\cos^2 a - 1 = 2\\left(\\dfrac{1}{3}\\right)^2 - 1 = \\dfrac{2}{9} - 1 = -\\dfrac{7}{9}$."
+    },
+    {
+      "id": "sgk-11.2.6",
+      "badge": "Câu 6 - Công thức nhân đôi tang",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Với mọi góc $a$ thỏa mãn điều kiện xác định, $\\tan 2a$ bằng:",
+      "options": [
+        "$\\dfrac{2\\tan a}{1 - \\tan^2 a}$",
+        "$\\dfrac{2\\tan a}{1 + \\tan^2 a}$",
+        "$\\dfrac{\\tan a}{1 - \\tan^2 a}$",
+        "$\\dfrac{2\\tan a}{\\tan^2 a - 1}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức nhân đôi tang: $\\tan 2a = \\dfrac{2\\tan a}{1 - \\tan^2 a}$."
+    },
+    {
+      "id": "sgk-11.2.7",
+      "badge": "Câu 7 - Rút gọn biểu thức",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Rút gọn biểu thức $M = \\dfrac{\\sin 2x}{2\\cos x}$ (với $\\cos x \\ne 0$), ta được:",
+      "options": [
+        "$\\sin x$",
+        "$\\cos x$",
+        "$\\tan x$",
+        "$2\\sin x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$M = \\dfrac{2\\sin x \\cos x}{2\\cos x} = \\sin x$."
+    },
+    {
+      "id": "sgk-11.2.8",
+      "badge": "Câu 8 - Biến đổi tổng thành tích cos",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Biểu thức $\\cos 5x + \\cos 3x$ biến đổi thành tích là:",
+      "options": [
+        "$2\\cos 4x \\cos x$",
+        "$2\\sin 4x \\cos x$",
+        "$2\\cos 4x \\sin x$",
+        "$-2\\sin 4x \\sin x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos 5x + \\cos 3x = 2\\cos\\dfrac{5x + 3x}{2}\\cos\\dfrac{5x - 3x}{2} = 2\\cos 4x \\cos x$."
+    },
+    {
+      "id": "sgk-11.2.9",
+      "badge": "Câu 9 - Biến đổi tổng thành tích sin",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Biểu thức $\\sin 4x - \\sin 2x$ biến đổi thành tích là:",
+      "options": [
+        "$2\\cos 3x \\sin x$",
+        "$2\\sin 3x \\cos x$",
+        "$-2\\cos 3x \\sin x$",
+        "$2\\cos 3x \\cos x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin 4x - \\sin 2x = 2\\cos\\dfrac{4x + 2x}{2}\\sin\\dfrac{4x - 2x}{2} = 2\\cos 3x \\sin x$."
+    },
+    {
+      "id": "sgk-11.2.10",
+      "badge": "Câu 10 - Tích thành tổng",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "question": "Biểu thức $4\\cos 2x \\cos x$ được biến đổi thành tổng là:",
+      "options": [
+        "$2(\\cos 3x + \\cos x)$",
+        "$2(\\cos 3x - \\cos x)$",
+        "$4(\\cos 3x + \\cos x)$",
+        "$2(\\sin 3x + \\sin x)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$4\\cos 2x \\cos x = 4 \\cdot \\dfrac{1}{2}[\\cos(2x + x) + \\cos(2x - x)] = 2(\\cos 3x + \\cos x)$."
+    }
+  ]
+},
+  "t11-b3-ham-so-luong-giac": {
+  "id": "t11-b3-ham-so-luong-giac",
+  "lessonNumber": 3,
+  "title": "Bài 3: Hàm số lượng giác",
+  "bookChapter": "Chương I: Hàm số lượng giác và phương trình lượng giác",
+  "scenarioTitle": "Mô hình hóa hiện tượng dao động điều hòa và hiện tượng thủy triều",
+  "scenarioFrames": [],
+  "youtubeVideoId": "hg2xx0JjZnk",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 3 - Hàm số lượng giác (Tiết 1) - Toán 11 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "hg2xx0JjZnk",
+      "title": "Tiết 1: Hàm số sin và hàm số côsin"
+    },
+    {
+      "id": "6-CSaIJZ3pk",
+      "title": "Tiết 2: Hàm số tang và hàm số côtang"
+    },
+    {
+      "id": "RpYks3LoEZI",
+      "title": "Tiết 3: Tính tuần hoàn, chu kỳ và đồ thị hàm số lượng giác"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-11.3.1",
+      "title": "Ví dụ 1 (Tiết 1): Tập xác định và tập giá trị của y = sin x",
+      "question": "Tập giá trị của hàm số $y = \\sin x$ là khoảng, đoạn nào sau đây?",
+      "options": [
+        "$[-1; 1]$",
+        "$(-1; 1)$",
+        "$\\mathbb{R}$",
+        "$[0; 1]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với mọi số thực $x$, ta luôn có $-1 \\le \\sin x \\le 1$. Do đó tập giá trị của hàm số $y = \\sin x$ là đoạn $[-1; 1]$."
+    },
+    {
+      "id": "vq-11.3.2",
+      "title": "Ví dụ 2 (Tiết 2): Tập xác định của hàm số tang",
+      "question": "Tập xác định của hàm số $y = \\tan x$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số $y = \\tan x = \\dfrac{\\sin x}{\\cos x}$ xác định khi $\\cos x \\ne 0 \\Leftrightarrow x \\ne \\dfrac{\\pi}{2} + k\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "vq-11.3.3",
+      "title": "Ví dụ 3 (Tiết 3): Chu kỳ của hàm số lượng giác",
+      "question": "Chu kỳ tuần hoàn của hàm số $y = \\sin 2x$ là:",
+      "options": [
+        "$\\pi$",
+        "$2\\pi$",
+        "$\\dfrac{\\pi}{2}$",
+        "$4\\pi$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số $y = \\sin(\\omega x + \\varphi)$ có chu kỳ $T = \\dfrac{2\\pi}{|\\omega|}$. Với $\\omega = 2$, chu kỳ là $T = \\dfrac{2\\pi}{2} = \\pi$."
+    },
+    {
+      "id": "vq-11.3.4",
+      "title": "Ví dụ 4 (Tiết 3): Giá trị lớn nhất và nhỏ nhất",
+      "question": "Giá trị lớn nhất $M$ và giá trị nhỏ nhất $m$ của hàm số $y = 3\\cos x - 2$ lần lượt là:",
+      "options": [
+        "$M = 1, m = -5$",
+        "$M = 3, m = -3$",
+        "$M = 5, m = -1$",
+        "$M = 1, m = -1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $-1 \\le \\cos x \\le 1$ nên $-3 \\le 3\\cos x \\le 3 \\Rightarrow -3 - 2 \\le 3\\cos x - 2 \\le 3 - 2 \\Rightarrow -5 \\le y \\le 1$. Vậy $M = 1, m = -5$."
+    }
+  ],
+  "tips": [
+    "Quy tắc chu kỳ hàm lượng giác: Hàm $y = \\sin(\\omega x)$ và $y = \\cos(\\omega x)$ có chu kỳ $T = \\dfrac{2\\pi}{|\\omega|}$. Hàm $y = \\tan(\\omega x)$ và $y = \\cot(\\omega x)$ có chu kỳ $T = \\dfrac{\\pi}{|\\omega|}$.",
+    "Tính chẵn lẻ: Chỉ có duy nhất hàm $y = \\cos x$ là HÀM SỐ CHẴN (đồ thị đối xứng qua trục $Oy$). Ba hàm còn lại $\\sin x, \\tan x, \\cot x$ đều là HÀM SỐ LẺ (đồ thị đối xứng qua gốc tọa độ $O$)."
+  ],
+  "traps": [
+    "Bẫy điều kiện mẫu của $\\tan x$ và $\\cot x$: $\\tan x$ không xác định tại các điểm có $\\cos x = 0$ ($x = \\pi/2 + k\\pi$), còn $\\cot x$ không xác định tại các điểm có $\\sin x = 0$ ($x = k\\pi$). Tránh nhầm lẫn giữa hai điều kiện này.",
+    "Bẫy tập giá trị: Hàm số $y = \\sin x$ và $y = \\cos x$ bị chặn trong đoạn $[-1; 1]$, nhưng hàm số $y = \\tan x$ và $y = \\cot x$ có tập giá trị là toàn bộ $\\mathbb{R}$ (không bị chặn)."
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Hàm số sin và hàm số côsin",
+      "points": [
+        "Hàm số sin ($y = \\sin x$): Tập xác định $D = \\mathbb{R}$; Tập giá trị $[-1; 1]$ (tức $-1 \\le \\sin x \\le 1$); Là hàm số lẻ, đồ thị nhận gốc tọa độ $O$ làm tâm đối xứng; Tuần hoàn với chu kỳ $T = 2\\pi$.",
+        "Hàm số côsin ($y = \\cos x$): Tập xác định $D = \\mathbb{R}$; Tập giá trị $[-1; 1]$ (tức $-1 \\le \\cos x \\le 1$); Là hàm số chẵn, đồ thị nhận trục tung $Oy$ làm trục đối xứng; Tuần hoàn với chu kỳ $T = 2\\pi$."
+      ],
+      "formula": "y = \\sin x \\ (D = \\mathbb{R}, T = 2\\pi); \\quad y = \\cos x \\ (D = \\mathbb{R}, T = 2\\pi)",
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tìm tập giá trị",
+          "problem": "Tìm giá trị lớn nhất và nhỏ nhất của hàm số $y = 2\\sin x + 1$.",
+          "solution": "Ta có $-1 \\le \\sin x \\le 1 \\Rightarrow -2 \\le 2\\sin x \\le 2 \\Rightarrow -1 \\le 2\\sin x + 1 \\le 3$. Vậy $\\max y = 3$ (khi $\\sin x = 1$), $\\min y = -1$ (khi $\\sin x = -1$)."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Hàm số tang và hàm số côtang",
+      "points": [
+        "Hàm số tang ($y = \\tan x$): Tập xác định $D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$; Tập giá trị $\\mathbb{R}$; Là hàm số lẻ, đồ thị nhận gốc tọa độ $O$ làm tâm đối xứng; Tuần hoàn với chu kỳ $T = \\pi$.",
+        "Hàm số côtang ($y = \\cot x$): Tập xác định $D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$; Tập giá trị $\\mathbb{R}$; Là hàm số lẻ, đồ thị nhận gốc tọa độ $O$ làm tâm đối xứng; Tuần hoàn với chu kỳ $T = \\pi$."
+      ],
+      "formula": "y = \\tan x \\ (T = \\pi); \\quad y = \\cot x \\ (T = \\pi)",
+      "examples": [
+        {
+          "title": "Ví dụ 2: Tìm tập xác định",
+          "problem": "Tìm tập xác định của hàm số $y = \\tan\\left(x - \\dfrac{\\pi}{4}\\right)$.",
+          "solution": "Hàm số xác định khi $x - \\dfrac{\\pi}{4} \\ne \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x \\ne \\dfrac{3\\pi}{4} + k\\pi$ ($k \\in \\mathbb{Z}$). Vậy $D = \\mathbb{R} \\setminus \\left\\{\\dfrac{3\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\right\\}$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Đồ thị và tính tuần hoàn của hàm số lượng giác",
+      "points": [
+        "Đồ thị của hàm số $y = \\sin x$ và $y = \\cos x$ được gọi là đường hình sin.",
+        "Hàm số $y = \\sin(\\omega x + \\varphi)$ và $y = \\cos(\\omega x + \\varphi)$ tuần hoàn với chu kỳ $T = \\dfrac{2\\pi}{|\\omega|}$.",
+        "Hàm số $y = \\tan(\\omega x + \\varphi)$ và $y = \\cot(\\omega x + \\varphi)$ tuần hoàn với chu kỳ $T = \\dfrac{\\pi}{|\\omega|}."
+      ],
+      "formula": "T_{\\sin, \\cos} = \\dfrac{2\\pi}{|\\omega|}; \\quad T_{\\tan, \\cot} = \\dfrac{\\pi}{|\\omega|}",
+      "examples": [
+        {
+          "title": "Ví dụ 3: Xác định chu kỳ",
+          "problem": "Tìm chu kỳ tuần hoàn của các hàm số sau: a) $y = \\cos 4x$; b) $y = \\tan 3x$.",
+          "solution": "• Câu a: Hàm số $y = \\cos 4x$ có $\\omega = 4$ nên chu kỳ là $T = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}$.\n• Câu b: Hàm số $y = \\tan 3x$ có $\\omega = 3$ nên chu kỳ là $T = \\dfrac{\\pi}{3}$."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "sgk-11.3.1",
+      "badge": "Câu 1 - Tập giá trị hàm sin",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Tập giá trị của hàm số $y = \\sin x$ là:",
+      "options": [
+        "$[-1; 1]$",
+        "$(-1; 1)$",
+        "$\\mathbb{R}$",
+        "$[0; 1]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với mọi $x \\in \\mathbb{R}$ thì $-1 \\le \\sin x \\le 1$ nên tập giá trị là $[-1; 1]$."
+    },
+    {
+      "id": "sgk-11.3.2",
+      "badge": "Câu 2 - Tập giá trị hàm cos",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Tập giá trị của hàm số $y = \\cos x$ là:",
+      "options": [
+        "$[-1; 1]$",
+        "$\\mathbb{R}$",
+        "$[0; +\\infty)$",
+        "$(-1; 1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tập giá trị của hàm số côsin là đoạn $[-1; 1]$."
+    },
+    {
+      "id": "sgk-11.3.3",
+      "badge": "Câu 3 - Tập xác định hàm cotang",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Tập xác định của hàm số $y = \\cot x$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R}$",
+        "$D = \\mathbb{R} \\setminus \\{0\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số $y = \\cot x = \\dfrac{\\cos x}{\\sin x}$ xác định khi $\\sin x \\ne 0 \\Leftrightarrow x \\ne k\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "sgk-11.3.4",
+      "badge": "Câu 4 - Chu kỳ hàm cos 3x",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Chu kỳ tuần hoàn của hàm số $y = \\cos 3x$ là:",
+      "options": [
+        "$\\dfrac{2\\pi}{3}$",
+        "$3\\pi$",
+        "$2\\pi$",
+        "$\\dfrac{\\pi}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ $T = \\dfrac{2\\pi}{|\\omega|} = \\dfrac{2\\pi}{3}$."
+    },
+    {
+      "id": "sgk-11.3.5",
+      "badge": "Câu 5 - Chu kỳ hàm tan 2x",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Chu kỳ tuần hoàn của hàm số $y = \\tan 2x$ là:",
+      "options": [
+        "$\\dfrac{\\pi}{2}$",
+        "$\\pi$",
+        "$2\\pi$",
+        "$\\dfrac{\\pi}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ hàm số tang là $T = \\dfrac{\\pi}{|\\omega|} = \\dfrac{\\pi}{2}$."
+    },
+    {
+      "id": "sgk-11.3.6",
+      "badge": "Câu 6 - Nhận biết hàm số chẵn",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Hàm số nào sau đây là hàm số chẵn?",
+      "options": [
+        "$y = \\cos 2x$",
+        "$y = \\sin 2x$",
+        "$y = \\tan x$",
+        "$y = \\cot x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\cos(-2x) = \\cos(2x)$ nên $y = \\cos 2x$ là hàm số chẵn. Các hàm số $\\sin 2x, \\tan x, \\cot x$ đều là hàm số lẻ."
+    },
+    {
+      "id": "sgk-11.3.7",
+      "badge": "Câu 7 - Nhận biết hàm số lẻ",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Hàm số nào sau đây là hàm số lẻ?",
+      "options": [
+        "$y = \\sin 3x$",
+        "$y = \\cos 3x$",
+        "$y = \\cos^2 x$",
+        "$y = 1 + \\cos x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sin(-3x) = -\\sin(3x)$ nên $y = \\sin 3x$ là hàm số lẻ."
+    },
+    {
+      "id": "sgk-11.3.8",
+      "badge": "Câu 8 - Giá trị lớn nhất",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Giá trị lớn nhất của hàm số $y = 2\\cos x + 3$ bằng:",
+      "options": [
+        "$5$",
+        "$3$",
+        "$1$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\cos x \\le 1$ nên $y = 2\\cos x + 3 \\le 2(1) + 3 = 5$. Dấu '=' xảy ra khi $\\cos x = 1$."
+    },
+    {
+      "id": "sgk-11.3.9",
+      "badge": "Câu 9 - Giá trị nhỏ nhất",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Giá trị nhỏ nhất của hàm số $y = 4 - 3\\sin x$ bằng:",
+      "options": [
+        "$1$",
+        "$-3$",
+        "$-1$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\sin x \\le 1$ nên $-3\\sin x \\ge -3 \\Rightarrow y = 4 - 3\\sin x \\ge 4 - 3 = 1$. Dấu '=' xảy ra khi $\\sin x = 1$."
+    },
+    {
+      "id": "sgk-11.3.10",
+      "badge": "Câu 10 - Điểm thuộc đồ thị",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "question": "Đồ thị hàm số $y = \\sin x$ đi qua điểm nào sau đây?",
+      "options": [
+        "$(0; 0)$",
+        "$(0; 1)$",
+        "$\\left(\\dfrac{\\pi}{2}; 0\\right)$",
+        "$(\\pi; 1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với $x = 0$, ta có $y = \\sin 0 = 0$. Do đó đồ thị đi qua gốc tọa độ $(0; 0)$."
+    }
+  ]
+}
 };

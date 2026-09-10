@@ -846,4 +846,463 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       }
     ]
   }
+,
+  "t11-b2-cong-thuc-luong-giac": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.2.1",
+      "badge": "Luyện thêm 1 - Công thức cộng",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Giá trị của biểu thức $\\cos 75^\\circ$ bằng:",
+      "options": [
+        "$\\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{3} - 1}{2}$",
+        "$\\dfrac{\\sqrt{2} - 1}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\cos 75^\\circ = \\cos(45^\\circ + 30^\\circ) = \\cos 45^\\circ \\cos 30^\\circ - \\sin 45^\\circ \\sin 30^\\circ = \\dfrac{\\sqrt{2}}{2} \\cdot \\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{2}}{2} \\cdot \\dfrac{1}{2} = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$."
+    },
+    {
+      "id": "ai-11.2.2",
+      "badge": "Luyện thêm 2 - Công thức cộng tan",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Biết $\\tan a = \\dfrac{1}{2}$ và $\\tan b = \\dfrac{1}{3}$. Giá trị của $\\tan(a + b)$ bằng:",
+      "options": [
+        "$1$",
+        "$\\dfrac{5}{6}$",
+        "$\\dfrac{1}{6}$",
+        "$\\dfrac{5}{7}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\tan(a + b) = \\dfrac{\\tan a + \\tan b}{1 - \\tan a \\tan b} = \\dfrac{1/2 + 1/3}{1 - (1/2)(1/3)} = \\dfrac{5/6}{5/6} = 1$."
+    },
+    {
+      "id": "ai-11.2.3",
+      "badge": "Luyện thêm 3 - Công thức nhân đôi",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Cho $\\sin a = \\dfrac{1}{3}$. Giá trị của $\\cos 2a$ bằng:",
+      "options": [
+        "$\\dfrac{7}{9}$",
+        "$-\\dfrac{7}{9}$",
+        "$\\dfrac{8}{9}$",
+        "$\\dfrac{2}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos 2a = 1 - 2\\sin^2 a = 1 - 2\\left(\\dfrac{1}{3}\\right)^2 = 1 - \\dfrac{2}{9} = \\dfrac{7}{9}$."
+    },
+    {
+      "id": "ai-11.2.4",
+      "badge": "Luyện thêm 4 - Hạ bậc",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Rút gọn biểu thức $A = \\sin^2 x + \\cos 2x$, ta được kết quả là:",
+      "options": [
+        "$\\cos^2 x$",
+        "$\\sin^2 x$",
+        "$1$",
+        "$2\\cos 2x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\cos 2x = \\cos^2 x - \\sin^2 x$. Thay vào biểu thức: $A = \\sin^2 x + (\\cos^2 x - \\sin^2 x) = \\cos^2 x$."
+    },
+    {
+      "id": "ai-11.2.5",
+      "badge": "Luyện thêm 5 - Tích thành tổng",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Biến đổi biểu thức $2\\sin 5x \\sin 3x$ thành tổng hoặc hiệu, ta được:",
+      "options": [
+        "$\\cos 2x - \\cos 8x$",
+        "$\\cos 8x - \\cos 2x$",
+        "$\\sin 8x + \\sin 2x$",
+        "$\\cos 8x + \\cos 2x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$2\\sin a \\sin b = \\cos(a - b) - \\cos(a + b)$. Với $a = 5x, b = 3x$ ta có: $\\cos(5x - 3x) - \\cos(5x + 3x) = \\cos 2x - \\cos 8x$."
+    },
+    {
+      "id": "ai-11.2.6",
+      "badge": "Luyện thêm 6 - Tổng thành tích",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Rút gọn biểu thức $P = \\dfrac{\\sin 3x + \\sin x}{\\cos 3x + \\cos x}$ (khi biểu thức xác định):",
+      "options": [
+        "$\\tan 2x$",
+        "$\\cot 2x$",
+        "$\\tan x$",
+        "$\\tan 4x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sin 3x + \\sin x = 2\\sin 2x \\cos x$ và $\\cos 3x + \\cos x = 2\\cos 2x \\cos x$. Suy ra $P = \\dfrac{2\\sin 2x \\cos x}{2\\cos 2x \\cos x} = \\dfrac{\\sin 2x}{\\cos 2x} = \\tan 2x$."
+    },
+    {
+      "id": "ai-11.2.7",
+      "badge": "Luyện thêm 7 - Rút gọn biểu thức",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Giá trị của biểu thức $T = \\cos\\dfrac{\\pi}{5} \\cos\\dfrac{2\\pi}{5}$ bằng:",
+      "options": [
+        "$\\dfrac{1}{4}$",
+        "$\\dfrac{1}{2}$",
+        "$\\dfrac{1}{8}$",
+        "$\\dfrac{\\sqrt{5}-1}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân cả hai vế với $2\\sin\\dfrac{\\pi}{5}$: $2\\sin\\dfrac{\\pi}{5} T = \\sin\\dfrac{2\\pi}{5} \\cos\\dfrac{2\\pi}{5} = \\dfrac{1}{2}\\sin\\dfrac{4\\pi}{5} = \\dfrac{1}{2}\\sin\\left(\\pi - \\dfrac{\\pi}{5}\\right) = \\dfrac{1}{2}\\sin\\dfrac{\\pi}{5}$. Do $\\sin\\dfrac{\\pi}{5} \\ne 0$, suy ra $T = \\dfrac{1}{4}$."
+    },
+    {
+      "id": "ai-11.2.8",
+      "badge": "Luyện thêm 8 - Đẳng thức lượng giác",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Khẳng định nào sau đây là ĐÚNG với mọi góc $x$?",
+      "options": [
+        "$\\sin x + \\cos x = \\sqrt{2}\\sin\\left(x + \\dfrac{\\pi}{4}\\right)$",
+        "$\\sin x + \\cos x = \\sqrt{2}\\cos\\left(x + \\dfrac{\\pi}{4}\\right)$",
+        "$\\sin x + \\cos x = 2\\sin\\left(x + \\dfrac{\\pi}{4}\\right)$",
+        "$\\sin x - \\cos x = \\sqrt{2}\\sin\\left(x + \\dfrac{\\pi}{4}\\right)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin x + \\cos x = \\sqrt{2}\\left(\\dfrac{\\sqrt{2}}{2}\\sin x + \\dfrac{\\sqrt{2}}{2}\\cos x\\right) = \\sqrt{2}\\left(\\sin x \\cos\\dfrac{\\pi}{4} + \\cos x \\sin\\dfrac{\\pi}{4}\\right) = \\sqrt{2}\\sin\\left(x + \\dfrac{\\pi}{4}\\right)$."
+    },
+    {
+      "id": "ai-11.2.9",
+      "badge": "Luyện thêm 9 - Tính cos 4a",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Biết $\\sin 2a = \\dfrac{2}{3}$. Giá trị của biểu thức $1 - 2\\sin^2 2a$ bằng:",
+      "options": [
+        "$\\dfrac{1}{9}$",
+        "$-\\dfrac{1}{9}$",
+        "$\\dfrac{5}{9}$",
+        "$\\dfrac{7}{9}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $1 - 2\\sin^2 2a = \\cos 4a = 1 - 2\\left(\\dfrac{2}{3}\\right)^2 = 1 - \\dfrac{8}{9} = \\dfrac{1}{9}$."
+    },
+    {
+      "id": "ai-11.2.10",
+      "badge": "Luyện thêm 10 - Đẳng thức tam giác",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B2",
+      "question": "Trong tam giác $ABC$, hệ thức nào sau đây luôn ĐÚNG?",
+      "options": [
+        "$\\sin(A + B) = \\sin C$",
+        "$\\cos(A + B) = \\cos C$",
+        "$\\tan(A + B) = \\tan C$",
+        "$\\sin\\dfrac{A + B}{2} = \\sin\\dfrac{C}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $A + B + C = \\pi \\Rightarrow A + B = \\pi - C$. Do đó $\\sin(A + B) = \\sin(\\pi - C) = \\sin C$."
+    },
+    {
+      "id": "ai-11.2.11",
+      "badge": "Vận dụng AI 1 - Kỹ thuật âm thanh",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Hai sóng âm có phương trình dao động $y_1 = A\\cos(\\omega t)$ và $y_2 = A\\cos(\\omega t + \\varphi)$. Để hai sóng này triệt tiêu lẫn nhau hoàn toàn (hiện tượng giao thoa sóng triệt tiêu), độ lệch pha $\\varphi$ cần thỏa mãn:",
+      "options": [
+        "$\\varphi = (2k + 1)\\pi$ $(k \\in \\mathbb{Z})$",
+        "$\\varphi = k2\\pi$ $(k \\in \\mathbb{Z})$",
+        "$\\varphi = \\dfrac{\\pi}{2} + k\\pi$ $(k \\in \\mathbb{Z})$",
+        "$\\varphi = \\dfrac{\\pi}{4} + k\\pi$ $(k \\in \\mathbb{Z})$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sóng tổng hợp: $y = y_1 + y_2 = 2A\\cos\\left(\\dfrac{\\varphi}{2}\\right)\\cos\\left(\\omega t + \\dfrac{\\varphi}{2}\\right)$. Để biên độ bằng 0 thì $\\cos\\left(\\dfrac{\\varphi}{2}\\right) = 0 \\Leftrightarrow \\dfrac{\\varphi}{2} = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow \\varphi = \\pi + k2\\pi = (2k+1)\\pi$."
+    },
+    {
+      "id": "ai-11.2.12",
+      "badge": "Vận dụng AI 2 - Truyền tín hiệu điều chế",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Trong kỹ thuật điều chế biên độ vô tuyến (AM), tín hiệu mang tần số cao $\\cos(\\omega_c t)$ được nhân với tín hiệu tin tức $\\cos(\\omega_m t)$. Khi tách tích này thành tổng các tần số đơn, các tần số xuất hiện trong phổ sóng là:",
+      "options": [
+        "$\\omega_c - \\omega_m$ và $\\omega_c + \\omega_m$",
+        "$\\omega_c \\cdot \\omega_m$",
+        "$\\omega_c$ và $\\omega_m$",
+        "$2\\omega_c$ và $2\\omega_m$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức tích thành tổng: $\\cos(\\omega_c t)\\cos(\\omega_m t) = \\dfrac{1}{2}[\\cos((\\omega_c - \\omega_m)t) + \\cos((\\omega_c + \\omega_m)t)]$. Do đó xuất hiện 2 dải biên tần số là $\\omega_c - \\omega_m$ và $\\omega_c + \\omega_m$."
+    },
+    {
+      "id": "ai-11.2.13",
+      "badge": "Vận dụng AI 3 - Năng lượng dòng điện xoay chiều",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Công suất tức thời của dòng điện qua điện trở $R$ có dạng $p(t) = R \\cdot I_0^2 \\cos^2(\\omega t)$. Sử dụng công thức hạ bậc, công suất tức thời dao động quanh công suất trung bình với tần số góc bằng:",
+      "options": [
+        "$2\\omega$",
+        "$\\omega$",
+        "$\\dfrac{\\omega}{2}$",
+        "$4\\omega$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức hạ bậc: $\\cos^2(\\omega t) = \\dfrac{1 + \\cos(2\\omega t)}{2}$. Thành phần biến thiên theo thời gian có tần số góc là $2\\omega$."
+    },
+    {
+      "id": "ai-11.2.14",
+      "badge": "Vận dụng AI 4 - Chuyển động ném xiên",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Tầm xa của vật ném xiên với vận tốc $v_0$ và góc ném $\\alpha$ là $L = \\dfrac{v_0^2 \\sin 2\\alpha}{g}$. Tầm xa đạt giá trị cực đại khi góc ném $\\alpha$ bằng:",
+      "options": [
+        "$45^\\circ$",
+        "$30^\\circ$",
+        "$60^\\circ$",
+        "$90^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tầm xa $L$ lớn nhất khi $\\sin 2\\alpha = 1 \\Leftrightarrow 2\\alpha = 90^\\circ \\Leftrightarrow \\alpha = 45^\\circ$."
+    },
+    {
+      "id": "ai-11.2.15",
+      "badge": "Vận dụng AI 5 - Góc phản xạ mặt kính",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Cường độ ánh sáng qua hai kính phân cực hợp nhau góc $\\theta$ tuân theo định luật Malus: $I = I_0 \\cos^2 \\theta$. Nếu muốn cường độ ánh sáng giảm đi đúng một nửa so với ban đầu ($I = \\dfrac{I_0}{2}$), góc $\\theta$ phải bằng:",
+      "options": [
+        "$45^\\circ$",
+        "$30^\\circ$",
+        "$60^\\circ$",
+        "$90^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\cos^2 \\theta = \\dfrac{1}{2} \\Leftrightarrow \\cos\\theta = \\dfrac{\\sqrt{2}}{2}$ (với $0^\\circ \\le \\theta \\le 90^\\circ$) $\\Rightarrow \\theta = 45^\\circ$."
+    }
+  ]
+},
+  "t11-b3-ham-so-luong-giac": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.3.1",
+      "badge": "Luyện thêm 1 - Tập xác định hàm tang",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Tập xác định của hàm số $y = \\tan 2x$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{k\\pi}{2}, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\right\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số xác định khi $2x \\ne \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow x \\ne \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "ai-11.3.2",
+      "badge": "Luyện thêm 2 - Chu kỳ hàm sin",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Chu kỳ tuần hoàn của hàm số $y = \\sin\\left(3x - \\dfrac{\\pi}{6}\\right)$ là:",
+      "options": [
+        "$\\dfrac{2\\pi}{3}$",
+        "$3\\pi$",
+        "$\\dfrac{\\pi}{3}$",
+        "$2\\pi$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ hàm $y = \\sin(\\omega x + \\varphi)$ là $T = \\dfrac{2\\pi}{|\\omega|} = \\dfrac{2\\pi}{3}$."
+    },
+    {
+      "id": "ai-11.3.3",
+      "badge": "Luyện thêm 3 - Chu kỳ hàm cotang",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Chu kỳ tuần hoàn của hàm số $y = \\cot\\left(\\dfrac{x}{2}\\right)$ là:",
+      "options": [
+        "$2\\pi$",
+        "$\\pi$",
+        "$\\dfrac{\\pi}{2}$",
+        "$4\\pi$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ hàm số $y = \\cot(\\omega x)$ là $T = \\dfrac{\\pi}{|\\omega|} = \\dfrac{\\pi}{1/2} = 2\\pi$."
+    },
+    {
+      "id": "ai-11.3.4",
+      "badge": "Luyện thêm 4 - Giá trị lớn nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Giá trị lớn nhất của hàm số $y = 3\\sin\\left(x + \\dfrac{\\pi}{3}\\right) - 4$ bằng:",
+      "options": [
+        "$-1$",
+        "$-4$",
+        "$3$",
+        "$-7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\sin\\left(x + \\dfrac{\\pi}{3}\\right) \\le 1$ nên $y \\le 3(1) - 4 = -1$. Vậy $\\max y = -1$."
+    },
+    {
+      "id": "ai-11.3.5",
+      "badge": "Luyện thêm 5 - Giá trị nhỏ nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Giá trị nhỏ nhất của hàm số $y = 5 - 2\\cos^2 x$ bằng:",
+      "options": [
+        "$3$",
+        "$5$",
+        "$-2$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $0 \\le \\cos^2 x \\le 1 \\Rightarrow -2 \\le -2\\cos^2 x \\le 0 \\Rightarrow 3 \\le 5 - 2\\cos^2 x \\le 5$. Vậy $\\min y = 3$ (khi $\\cos^2 x = 1$)."
+    },
+    {
+      "id": "ai-11.3.6",
+      "badge": "Luyện thêm 6 - Tính chẵn lẻ",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Hàm số nào sau đây là hàm số chẵn?",
+      "options": [
+        "$y = x \\sin x$",
+        "$y = x \\cos x$",
+        "$y = x^2 \\sin x$",
+        "$y = \\tan x + \\sin x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt $f(x) = x\\sin x$. Ta có $f(-x) = (-x)\\sin(-x) = (-x)(-\\sin x) = x\\sin x = f(x)$. Vậy $y = x\\sin x$ là hàm số chẵn."
+    },
+    {
+      "id": "ai-11.3.7",
+      "badge": "Luyện thêm 7 - Tính đơn điệu hàm sin",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Hàm số $y = \\sin x$ đồng biến trên khoảng nào sau đây?",
+      "options": [
+        "$\\left(-\\dfrac{\\pi}{2}; \\dfrac{\\pi}{2}\\right)$",
+        "$\\left(0; \\pi\\right)$",
+        "$\\left(\\dfrac{\\pi}{2}; \\dfrac{3\\pi}{2}\\right)$",
+        "$\\left(\\pi; 2\\pi\\right)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số $y = \\sin x$ đồng biến trên mỗi khoảng $\\left(-\\dfrac{\\pi}{2} + k2\\pi; \\dfrac{\\pi}{2} + k2\\pi\\right)$ ($k \\in \\mathbb{Z}$). Với $k = 0$, khoảng đó là $\\left(-\\dfrac{\\pi}{2}; \\dfrac{\\pi}{2}\\right)$."
+    },
+    {
+      "id": "ai-11.3.8",
+      "badge": "Luyện thêm 8 - Điểm đối xứng của đồ thị",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Đồ thị hàm số $y = \\cos x$ nhận trục nào sau đây làm trục đối xứng?",
+      "options": [
+        "Trục tung $Oy$",
+        "Trục hoành $Ox$",
+        "Đường thẳng $y = x$",
+        "Gốc tọa độ $O$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $y = \\cos x$ là hàm số chẵn trên $\\mathbb{R}$ nên đồ thị nhận trục tung $Oy$ làm trục đối xứng."
+    },
+    {
+      "id": "ai-11.3.9",
+      "badge": "Luyện thêm 9 - Tập xác định phân thức",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Tập xác định của hàm số $y = \\dfrac{1}{\\sin x - 1}$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số xác định khi $\\sin x - 1 \\ne 0 \\Leftrightarrow \\sin x \\ne 1 \\Leftrightarrow x \\ne \\dfrac{\\pi}{2} + k2\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "ai-11.3.10",
+      "badge": "Luyện thêm 10 - Giao điểm với trục hoành",
+      "isAiGenerated": true,
+      "source": "Tài liệu Chuyên đề Toán 11 C1B3",
+      "question": "Đồ thị hàm số $y = \\sin x$ cắt trục hoành tại các điểm có hoành độ thỏa mãn:",
+      "options": [
+        "$x = k\\pi$ $(k \\in \\mathbb{Z})$",
+        "$x = \\dfrac{\\pi}{2} + k\\pi$ $(k \\in \\mathbb{Z})$",
+        "$x = k2\\pi$ $(k \\in \\mathbb{Z})$",
+        "$x = \\dfrac{\\pi}{4} + k\\pi$ $(k \\in \\mathbb{Z})$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giao điểm với trục hoành có $y = 0 \\Leftrightarrow \\sin x = 0 \\Leftrightarrow x = k\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "ai-11.3.11",
+      "badge": "Vận dụng AI 1 - Mô hình thủy triều",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Độ cao của mực nước biển tại một cảng theo thời gian $t$ (giờ, $0 \\le t \\le 24$) được mô hình hóa bởi hàm số: $h(t) = 4\\cos\\left(\\dfrac{\\pi t}{6}\\right) + 7$ (mét). Mực nước biển cao nhất trong ngày là bao nhiêu mét?",
+      "options": [
+        "$11$ m",
+        "$7$ m",
+        "$4$ m",
+        "$3$ m"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\cos\\left(\\dfrac{\\pi t}{6}\\right) \\le 1$ nên $h(t) \\le 4(1) + 7 = 11$ mét. Mực nước cao nhất là 11 m."
+    },
+    {
+      "id": "ai-11.3.12",
+      "badge": "Vận dụng AI 2 - Chu kỳ thủy triều",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Với hàm mực nước biển $h(t) = 4\\cos\\left(\\dfrac{\\pi t}{6}\\right) + 7$ (mét), sau khoảng thời gian bao lâu (chu kỳ) thì hiện tượng thủy triều lại lặp lại trạng thái cũ?",
+      "options": [
+        "$12$ giờ",
+        "$6$ giờ",
+        "$24$ giờ",
+        "$8$ giờ"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ của hàm số là $T = \\dfrac{2\\pi}{\\omega} = \\dfrac{2\\pi}{\\pi / 6} = 12$ giờ. Như vậy cứ sau 12 giờ hiện tượng thủy triều lại lặp lại một chu kỳ."
+    },
+    {
+      "id": "ai-11.3.13",
+      "badge": "Vận dụng AI 3 - Nhiệt độ trung bình năm",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Nhiệt độ trung bình $T$ ($^\\circ$C) trong tháng $t$ ($1 \\le t \\le 12$) ở một thành phố được cho bởi $T(t) = 22 + 8\\sin\\left(\\dfrac{\\pi(t - 4)}{6}\\right)$. Tháng nào trong năm có nhiệt độ trung bình cao nhất?",
+      "options": [
+        "Tháng 7",
+        "Tháng 6",
+        "Tháng 8",
+        "Tháng 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhiệt độ cao nhất khi $\\sin\\left(\\dfrac{\\pi(t - 4)}{6}\\right) = 1 \\Leftrightarrow \\dfrac{\\pi(t - 4)}{6} = \\dfrac{\\pi}{2} \\Leftrightarrow t - 4 = 3 \\Leftrightarrow t = 7$ (tức Tháng 7 với $T = 30^\\circ$C)."
+    },
+    {
+      "id": "ai-11.3.14",
+      "badge": "Vận dụng AI 4 - Vòng quay đu quay khổng lồ",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Một cabin trên vòng quay Sun Wheel có độ cao so với mặt đất tính theo giây $t$ là $h(t) = 30 - 25\\cos\\left(\\dfrac{\\pi t}{30}\\right)$ (mét). Thời gian cabin quay hết một vòng trọn vẹn là:",
+      "options": [
+        "$60$ giây",
+        "$30$ giây",
+        "$120$ giây",
+        "$15$ giây"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thời gian quay hết 1 vòng là chu kỳ $T = \\dfrac{2\\pi}{\\pi / 30} = 60$ giây."
+    },
+    {
+      "id": "ai-11.3.15",
+      "badge": "Vận dụng AI 5 - Nhịp tim điện tâm đồ",
+      "isAiGenerated": true,
+      "source": "Ứng dụng thực tế Lượng giác VinaMath AI",
+      "question": "Điện thế tâm thu của một bệnh nhân được mô tả đơn giản bằng sóng $V(t) = 1.2\\sin(2.5\\pi t)$ (mV), với $t$ tính bằng giây. Tần số nhịp tim của bệnh nhân này là bao nhiêu nhịp trên một phút?",
+      "options": [
+        "$75$ nhịp/phút",
+        "$60$ nhịp/phút",
+        "$80$ nhịp/phút",
+        "$90$ nhịp/phút"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu kỳ 1 nhịp tim là $T = \\dfrac{2\\pi}{2.5\\pi} = \\dfrac{2}{2.5} = 0.8$ giây. Số nhịp tim trong 1 phút (60 giây) là: $\\dfrac{60}{0.8} = 75$ nhịp/phút."
+    }
+  ]
+}
 };

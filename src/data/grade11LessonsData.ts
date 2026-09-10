@@ -5494,4 +5494,1667 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "Bẫy 6: Nhầm lẫn giữa đơn vị Radian và Độ: Trong công thức không được trộn lẫn, ví dụ $x = 30^\\circ + k2\\pi$ là SAI (phải là $+ k360^\\circ$)."
     ]
   }
+,
+  "t11-on-tap-chuong-1": {
+  "id": "t11-on-tap-chuong-1",
+  "lessonNumber": 0,
+  "title": "Ôn tập cuối chương I: Hàm số lượng giác và phương trình lượng giác",
+  "bookChapter": "Chương I: Hàm số lượng giác và phương trình lượng giác (SGK Toán 11 KNTT - Tập 1)",
+  "scenarioTitle": "Hệ thống hóa toàn bộ kiến thức lượng giác và luyện tập 3 đề tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+  "scenarioFrames": [],
+  "interactiveType": "circle",
+  "youtubeVideoId": "2gUunDSdPOE",
+  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương I - Toán 11 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "2gUunDSdPOE",
+      "title": "Bài giảng: Chữa bài tập cuối chương I (Lượng giác - KNTT)"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-11.ot1.1",
+      "title": "Câu hỏi 1: Hệ thức lượng giác cơ bản",
+      "question": "Hệ thức nào sau đây là ĐÚNG với mọi góc lượng giác $\\alpha$ làm cho các biểu thức có nghĩa?",
+      "options": [
+        "$\\sin^2 \\alpha + \\cos^2 \\alpha = 1$",
+        "$\\tan \\alpha = \\dfrac{\\cos \\alpha}{\\sin \\alpha}$",
+        "$1 + \\tan^2 \\alpha = \\dfrac{1}{\\sin^2 \\alpha}$",
+        "$\\sin(-\\alpha) = \\sin \\alpha$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hệ thức cơ bản: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$ với mọi $\\alpha$."
+    },
+    {
+      "id": "vq-11.ot1.2",
+      "title": "Câu hỏi 2: Công thức nhân đôi côsin",
+      "question": "Công thức nào sau đây SAI khi khai triển $\\cos 2a$?",
+      "options": [
+        "$\\cos 2a = 2\\sin^2 a - 1$",
+        "$\\cos 2a = \\cos^2 a - \\sin^2 a$",
+        "$\\cos 2a = 2\\cos^2 a - 1$",
+        "$\\cos 2a = 1 - 2\\sin^2 a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức đúng là $\\cos 2a = 1 - 2\\sin^2 a$, do đó phương án $\\cos 2a = 2\\sin^2 a - 1$ là SAI."
+    },
+    {
+      "id": "vq-11.ot1.3",
+      "title": "Câu hỏi 3: Tập xác định của hàm số tang",
+      "question": "Tập xác định của hàm số $y = \\tan x$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+        "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R}$",
+        "$D = [-1; 1]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số tang xác định khi $\\cos x \\ne 0 \\Leftrightarrow x \\ne \\dfrac{\\pi}{2} + k\\pi$."
+    },
+    {
+      "id": "vq-11.ot1.4",
+      "title": "Câu hỏi 4: Nghiệm của phương trình lượng giác cơ bản",
+      "question": "Phương trình $\\sin x = 0$ có các nghiệm là:",
+      "options": [
+        "$x = k\\pi \\ (k \\in \\mathbb{Z})$",
+        "$x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$",
+        "$x = k2\\pi \\ (k \\in \\mathbb{Z})$",
+        "$x = \\pi + k2\\pi \\ (k \\in \\mathbb{Z})$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin x = 0 \\Leftrightarrow x = k\\pi \\ (k \\in \\mathbb{Z})$."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Hệ thống hóa Góc lượng giác & Giá trị lượng giác",
+      "points": [
+        "Đơn vị đo: $180^\\circ = \\pi \\text{ rad} \\Rightarrow 1^\\circ = \\dfrac{\\pi}{180} \\text{ rad}, \\ 1 \\text{ rad} = \\left(\\dfrac{180}{\\pi}\\right)^\\circ$. Độ dài cung tròn bán kính $R$, góc $\\alpha$ rad: $l = \\alpha R$.",
+        "Hệ thức cơ bản: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$; $1 + \\tan^2 \\alpha = \\dfrac{1}{\\cos^2 \\alpha} \\ \\left(\\alpha \\ne \\dfrac{\\pi}{2} + k\\pi\\right)$; $1 + \\cot^2 \\alpha = \\dfrac{1}{\\sin^2 \\alpha} \\ (\\alpha \\ne k\\pi)$; $\\tan \\alpha \\cdot \\cot \\alpha = 1$.",
+        "Cung liên kết (Cos đối, Sin bù, Phụ chéo, Hơn kém $\\pi$ tan/cot): $\\cos(-\\alpha) = \\cos \\alpha$; $\\sin(\\pi - \\alpha) = \\sin \\alpha$; $\\sin\\left(\\dfrac{\\pi}{2} - \\alpha\\right) = \\cos \\alpha$."
+      ],
+      "formula": "\\sin^2 \\alpha + \\cos^2 \\alpha = 1; \\quad 1 + \\tan^2 \\alpha = \\dfrac{1}{\\cos^2 \\alpha}; \\quad l = \\alpha R",
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tính giá trị lượng giác khi biết một giá trị",
+          "problem": "Cho $\\sin \\alpha = \\dfrac{3}{5}$ với $\\dfrac{\\pi}{2} < \\alpha < \\pi$. Tính $\\cos \\alpha, \\tan \\alpha, \\cot \\alpha$.",
+          "solution": "Vì $\\dfrac{\\pi}{2} < \\alpha < \\pi$ nên $\\cos \\alpha < 0$. Ta có $\\cos^2 \\alpha = 1 - \\sin^2 \\alpha = 1 - \\dfrac{9}{25} = \\dfrac{16}{25} \\Rightarrow \\cos \\alpha = -\\dfrac{4}{5}$. Khi đó $\\tan \\alpha = \\dfrac{\\sin \\alpha}{\\cos \\alpha} = -\\dfrac{3}{4}$, $\\cot \\alpha = -\\dfrac{4}{3}$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Hệ thống hóa Công thức lượng giác",
+      "points": [
+        "Công thức cộng: $\\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b$; $\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b$; $\\tan(a \\pm b) = \\dfrac{\\tan a \\pm \\tan b}{1 \\mp \\tan a \\tan b}$.",
+        "Công thức nhân đôi: $\\sin 2a = 2\\sin a \\cos a$; $\\cos 2a = \\cos^2 a - \\sin^2 a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a$; $\\tan 2a = \\dfrac{2\\tan a}{1 - \\tan^2 a}$.",
+        "Công thức hạ bậc: $\\cos^2 a = \\dfrac{1 + \\cos 2a}{2}$; $\\sin^2 a = \\dfrac{1 - \\cos 2a}{2}$.",
+        "Biến đổi tích thành tổng và tổng thành tích: $\\cos a \\cos b = \\dfrac{1}{2}[\\cos(a-b) + \\cos(a+b)]$; $\\cos u + \\cos v = 2\\cos\\dfrac{u+v}{2}\\cos\\dfrac{u-v}{2}$."
+      ],
+      "formula": "\\cos 2a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a; \\quad \\sin 2a = 2\\sin a \\cos a",
+      "examples": [
+        {
+          "title": "Ví dụ 2: Rút gọn biểu thức bằng công thức cộng và nhân đôi",
+          "problem": "Rút gọn biểu thức $A = \\dfrac{\\sin 2x}{2\\cos x} + \\cos\\left(x + \\dfrac{\\pi}{2}\\right)$.",
+          "solution": "Ta có $\\dfrac{\\sin 2x}{2\\cos x} = \\dfrac{2\\sin x \\cos x}{2\\cos x} = \\sin x$. Lại có $\\cos\\left(x + \\dfrac{\\pi}{2}\\right) = -\\sin x$. Vậy $A = \\sin x + (-\\sin x) = 0$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Hệ thống hóa Hàm số lượng giác",
+      "points": [
+        "Hàm số $y = \\sin x$: $D = \\mathbb{R}$, tập giá trị $[-1; 1]$, là hàm số lẻ, tuần hoàn với chu kỳ $T = 2\\pi$.",
+        "Hàm số $y = \\cos x$: $D = \\mathbb{R}$, tập giá trị $[-1; 1]$, là hàm số chẵn, tuần hoàn với chu kỳ $T = 2\\pi$.",
+        "Hàm số $y = \\tan x$: $D = \\mathbb{R} \\setminus \\left\\{\\dfrac{\\pi}{2} + k\\pi\\right\\}$, tập giá trị $\\mathbb{R}$, là hàm số lẻ, tuần hoàn với chu kỳ $T = \\pi$.",
+        "Hàm số $y = \\cot x$: $D = \\mathbb{R} \\setminus \\{k\\pi\\}$, tập giá trị $\\mathbb{R}$, là hàm số lẻ, tuần hoàn với chu kỳ $T = \\pi$."
+      ],
+      "formula": "T_{\\sin, \\cos} = 2\\pi; \\quad T_{\\tan, \\cot} = \\pi; \\quad T_{f(\\omega x)} = \\dfrac{T_0}{|\\omega|}",
+      "examples": [
+        {
+          "title": "Ví dụ 3: Tìm tập xác định và giá trị lớn nhất, nhỏ nhất",
+          "problem": "Tìm tập xác định và GTLN, GTNN của hàm số $y = 3\\cos 2x - 1$.",
+          "solution": "• Hàm số xác định với mọi $x \\in \\mathbb{R}$, vậy $D = \\mathbb{R}$.\n• Vì $-1 \\le \\cos 2x \\le 1$ nên $-3 \\le 3\\cos 2x \\le 3 \\Rightarrow -4 \\le y \\le 2$. Vậy $\\max y = 2$ (khi $\\cos 2x = 1$) và $\\min y = -4$ (khi $\\cos 2x = -1$)."
+        }
+      ]
+    },
+    {
+      "index": "4",
+      "title": "Hệ thống hóa Phương trình lượng giác cơ bản",
+      "points": [
+        "$\\sin x = \\sin \\alpha \\Leftrightarrow \\left[\\begin{array}{l} x = \\alpha + k2\\pi \\\\ x = \\pi - \\alpha + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$. Điều kiện có nghiệm: $|m| \\le 1$.",
+        "$\\cos x = \\cos \\alpha \\Leftrightarrow x = \\pm \\alpha + k2\\pi \\ (k \\in \\mathbb{Z})$. Điều kiện có nghiệm: $|m| \\le 1$.",
+        "$\\tan x = \\tan \\alpha \\Leftrightarrow x = \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$. Luôn có nghiệm với mọi $m \\in \\mathbb{R}$.",
+        "$\\cot x = \\cot \\alpha \\Leftrightarrow x = \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$. Luôn có nghiệm với mọi $m \\in \\mathbb{R}$."
+      ],
+      "formula": "\\sin x = \\sin \\alpha \\Leftrightarrow x = \\alpha + k2\\pi \\lor x = \\pi - \\alpha + k2\\pi; \\quad \\cos x = \\cos \\alpha \\Leftrightarrow x = \\pm \\alpha + k2\\pi",
+      "examples": [
+        {
+          "title": "Ví dụ 4: Giải phương trình lượng giác trên một đoạn",
+          "problem": "Tìm tất cả các nghiệm của phương trình $2\\sin x - 1 = 0$ trên đoạn $[0; \\pi]$.",
+          "solution": "$2\\sin x - 1 = 0 \\Leftrightarrow \\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\dfrac{5\\pi}{6} + k2\\pi$. Trên đoạn $[0; \\pi]$, lấy $k = 0$ cho 2 nghiệm là $x = \\dfrac{\\pi}{6}$ và $x = \\dfrac{5\\pi}{6}$."
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Công thức hạ bậc và nhân đôi luôn xuất hiện trong các bài toán biến đổi và tính tích phân sau này: $\\cos 2a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a$.",
+    "Thần chú nhớ nghiệm phương trình: Sin bù, Cos đối, Tan và Cot đuôi $+ k\\pi$.",
+    "GTLN và GTNN của hàm dạng $a\\sin x + b\\cos x$: $-\\sqrt{a^2 + b^2} \\le a\\sin x + b\\cos x \\le \\sqrt{a^2 + b^2}$.",
+    "Đổi chu kỳ khi có hệ số $\\omega$: $T = \\dfrac{2\\pi}{|\\omega|}$ đối với sin và cos; $T = \\dfrac{\\pi}{|\\omega|}$ đối với tan và cot.",
+    "Bấm máy tính Casio khi giải trắc nghiệm: Chuyển máy tính sang chế độ Radian (Shift Menu 2 2), dùng phím CALC thử các đáp án.",
+    "Đếm nghiệm trên $[a; b]$: Cho biểu thức nghiệm $a \\le x(k) \\le b$ rồi giải bất phương trình tìm số nguyên $k$."
+  ],
+  "traps": [
+    "Bẫy 1: Quên nghiệm 'bù' của phương trình sin: Viết thiếu họ nghiệm $x = \\pi - \\alpha + k2\\pi$.",
+    "Bẫy 2: Nhầm lẫn đuôi chu kỳ: Viết nhầm $k\\pi$ thành $k2\\pi$ ở tan/cot hoặc ngược lại.",
+    "Bẫy 3: Quên điều kiện xác định của tan và cot khi giải phương trình: Chưa loại nghiệm không thỏa mãn ĐKXĐ.",
+    "Bẫy 4: Nhầm lẫn giữa tính chẵn và lẻ: Hàm cosin là hàm chẵn, còn sin, tan, cot là hàm lẻ.",
+    "Bẫy 5: Nhầm cung liên kết: Nhầm $\\sin(\\pi + \\alpha) = -\\sin \\alpha$, $\\cos(\\pi + \\alpha) = -\\cos \\alpha$, nhưng $\\tan(\\pi + \\alpha) = \\tan \\alpha$.",
+    "Bẫy 6: Khai căn phương trình bậc hai: Quên trường hợp lấy nghiệm âm hoặc không loại nghiệm khi đặt ẩn phụ $t = \\sin x \\ (|t| \\le 1)$."
+  ],
+  "examSets": [
+    {
+      "id": "de-1",
+      "title": "Đề ôn tập số 1",
+      "description": "Đề ôn tập tổng hợp cuối Chương I (Hàm số lượng giác & Phương trình lượng giác) - Đề 1",
+      "matrixBadge": "Phần I: 12 câu TN (3.0 đ) • Phần II: 4 câu Đúng/Sai (4.0 đ) • Phần III: 6 câu Trả lời ngắn (3.0 đ)",
+      "quizQuestions": [
+        {
+          "id": "quiz-11.1.1",
+          "badge": "Câu 1 - Nhận biết - Đổi 120° sang radian",
+          "source": "SGK Toán 11 KNTT Bài 1 - Dạng 1",
+          "question": "Đổi góc $120°$ sang đơn vị radian, ta được:",
+          "options": [
+            "$\\dfrac{2\\pi}{3}$",
+            "$\\dfrac{\\pi}{3}$",
+            "$\\dfrac{3\\pi}{4}$",
+            "$\\dfrac{4\\pi}{3}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$120° = 120 \\cdot \\dfrac{\\pi}{180} = \\dfrac{120\\pi}{180} = \\dfrac{2\\pi}{3}$ rad."
+        },
+        {
+          "id": "quiz-11.1.5",
+          "badge": "Câu 5 - Nhận biết - Đổi −135° sang radian",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+          "question": "Đổi góc $-135°$ sang đơn vị radian, ta được:",
+          "options": [
+            "$-\\dfrac{3\\pi}{4}$",
+            "$-\\dfrac{2\\pi}{3}$",
+            "$-\\dfrac{5\\pi}{6}$",
+            "$-\\dfrac{\\pi}{4}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$-135° = -135 \\cdot \\dfrac{\\pi}{180} = -\\dfrac{3\\pi}{4}$ rad."
+        },
+        {
+          "id": "quiz-11.1.8",
+          "badge": "Câu 8 - Vận dụng - Bài toán bánh xe",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+          "question": "Một bánh xe có bán kính $0.5$ m quay được $3$ vòng. Quãng đường mà một điểm trên vành đi được là:",
+          "options": [
+            "$3\\pi$ m",
+            "$6\\pi$ m",
+            "$1.5\\pi$ m",
+            "$\\pi$ m"
+          ],
+          "correctIndex": 0,
+          "explanation": "3 vòng = $3 \\times 2\\pi = 6\\pi$ rad. Quãng đường: $l = R \\cdot \\alpha = 0.5 \\times 6\\pi = 3\\pi$ m."
+        },
+        {
+          "id": "quiz-11.2.1",
+          "badge": "Câu 1 - Nhận biết - Công thức cộng côsin",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+          "question": "Khẳng định nào sau đây là ĐÚNG với mọi góc $a, b$?",
+          "options": [
+            "$\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$",
+            "$\\cos(a + b) = \\cos a \\cos b + \\sin a \\sin b$",
+            "$\\cos(a + b) = \\sin a \\cos b + \\cos a \\sin b$",
+            "$\\cos(a + b) = \\sin a \\cos b - \\cos a \\sin b$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Theo công thức cộng côsin: $\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$."
+        },
+        {
+          "id": "quiz-11.2.5",
+          "badge": "Câu 5 - Thông hiểu - Tính sin(a+b)",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+          "question": "Giá trị của biểu thức $\\sin 15^\\circ$ bằng:",
+          "options": [
+            "$\\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+            "$\\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+            "$\\dfrac{\\sqrt{3} - 1}{2}$",
+            "$\\dfrac{\\sqrt{2} - 1}{4}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\sin 15^\\circ = \\sin(45^\\circ - 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ - \\cos 45^\\circ \\sin 30^\\circ = \\dfrac{\\sqrt{2}}{2}\\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{2}}{2}\\dfrac{1}{2} = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$."
+        },
+        {
+          "id": "quiz-11.2.8",
+          "badge": "Câu 8 - Vận dụng - Công thức cộng tang",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+          "question": "Cho $\\tan a = 3, \\tan b = -2$. Giá trị của $\\tan(a - b)$ bằng:",
+          "options": [
+            "$-1$",
+            "$1$",
+            "$\\dfrac{5}{7}$",
+            "$-5$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\tan(a - b) = \\dfrac{\\tan a - \\tan b}{1 + \\tan a \\tan b} = \\dfrac{3 - (-2)}{1 + 3(-2)} = \\dfrac{5}{-5} = -1$."
+        },
+        {
+          "id": "quiz-11.3.1",
+          "badge": "Câu 1 - Nhận biết - TXĐ hàm sin và cos",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+          "question": "Tập xác định của các hàm số $y = \\sin x$ và $y = \\cos x$ là:",
+          "options": [
+            "$\\mathbb{R}$",
+            "$[-1; 1]$",
+            "$\\mathbb{R} \\setminus \\{0\\}$",
+            "$(0; +\\infty)$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hàm số sin và côsin xác định với mọi số thực $x \\in \\mathbb{R}$."
+        },
+        {
+          "id": "quiz-11.3.5",
+          "badge": "Câu 5 - Thông hiểu - TXĐ hàm phân thức chứa cos",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+          "question": "Tập xác định của hàm số $y = \\dfrac{1}{\\cos x - 1}$ là:",
+          "options": [
+            "$D = \\mathbb{R} \\setminus \\{k2\\pi, k \\in \\mathbb{Z}\\}$",
+            "$D = \\mathbb{R} \\setminus \\{\\pi + k2\\pi, k \\in \\mathbb{Z}\\}$",
+            "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+            "$D = \\mathbb{R}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Điều kiện: $\\cos x - 1 \\ne 0 \\Leftrightarrow \\cos x \\ne 1 \\Leftrightarrow x \\ne k2\\pi$ ($k \\in \\mathbb{Z}$)."
+        },
+        {
+          "id": "quiz-11.3.8",
+          "badge": "Câu 8 - Vận dụng cao - TXĐ chứa căn mẫu",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+          "question": "Tập xác định của hàm số $y = \\sqrt{\\dfrac{1 - \\cos 2x}{1 + \\sin^2 x}}$ là:",
+          "options": [
+            "$\\mathbb{R}$",
+            "$\\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+            "$[-1; 1]$",
+            "$\\emptyset$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vì $1 - \\cos 2x = 2\\sin^2 x \\ge 0$ và $1 + \\sin^2 x \\ge 1 > 0$ với mọi $x$, phân thức luôn không âm và mẫu luôn dương. Vậy $D = \\mathbb{R}$."
+        },
+        {
+          "id": "quiz-11.4.1",
+          "badge": "Câu 1 - Nhận biết - Điều kiện có nghiệm của sin x = m",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+          "question": "Phương trình $\\sin x = m$ có nghiệm khi và chỉ khi:",
+          "options": [
+            "$-1 \\le m \\le 1$",
+            "$m \\ge -1$",
+            "$m \\le 1$",
+            "$m \\in \\mathbb{R}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vì tập giá trị của hàm số sin là $[-1; 1]$ nên phương trình $\\sin x = m$ có nghiệm khi và chỉ khi $-1 \\le m \\le 1$."
+        },
+        {
+          "id": "quiz-11.4.5",
+          "badge": "Câu 5 - Thông hiểu - Giải phương trình sin x = 1/2",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+          "question": "Tất cả các nghiệm của phương trình $\\sin x = \\dfrac{1}{2}$ là:",
+          "options": [
+            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{5\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{3} + k2\\pi \\\\ x = \\dfrac{2\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k\\pi \\\\ x = \\dfrac{5\\pi}{6} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{end{array}\\right. (k \\in \\mathbb{Z})$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\dfrac{\\pi}{6} + k2\\pi = \\dfrac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)."
+        },
+        {
+          "id": "quiz-11.4.8",
+          "badge": "Câu 8 - Vận dụng - Nghiệm âm lớn nhất của phương trình sin",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+          "question": "Nghiệm âm lớn nhất của phương trình $\\sin x = -\\dfrac{1}{2}$ là:",
+          "options": [
+            "$-\\dfrac{\\pi}{6}$",
+            "$-\\dfrac{5\\pi}{6}$",
+            "$-\\dfrac{\\pi}{3}$",
+            "$-\\dfrac{2\\pi}{3}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\sin x = -\\dfrac{1}{2} = \\sin\\left(-\\dfrac{\\pi}{6}\\right) \\Leftrightarrow x = -\\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\left(-\\dfrac{\\pi}{6}\\right) + k2\\pi = \\dfrac{7\\pi}{6} + k2\\pi$. Nghiệm âm lớn nhất là $-\\dfrac{\\pi}{6}$ (ứng với họ thứ nhất khi $k = 0$)."
+        }
+      ],
+      "trueFalseQuestions": [
+        {
+          "id": "tf-11.1.1",
+          "badge": "Đúng/Sai 1 - Đổi đơn vị cơ bản (Nhận biết)",
+          "source": "SGK Toán 11 KNTT Bài 1 Dạng 1",
+          "prompt": "Đổi số đo của các góc sang radian. Khi đó:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$60° = \\dfrac{\\pi}{3}$ rad",
+              "correctAnswer": true,
+              "explanation": "$60° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{3}$ rad. Đúng."
+            },
+            {
+              "id": "b",
+              "text": "$90° = \\dfrac{\\pi}{2}$ rad",
+              "correctAnswer": true,
+              "explanation": "$90° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{2}$ rad. Đúng."
+            },
+            {
+              "id": "c",
+              "text": "$45° = \\dfrac{\\pi}{6}$ rad",
+              "correctAnswer": false,
+              "explanation": "$45° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{4}$ rad (không phải $\\dfrac{\\pi}{6}$). Sai."
+            },
+            {
+              "id": "d",
+              "text": "$270° = \\dfrac{3\\pi}{2}$ rad",
+              "correctAnswer": true,
+              "explanation": "$270° \\times \\dfrac{\\pi}{180} = \\dfrac{3\\pi}{2}$ rad. Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.2.1",
+          "badge": "Đúng/Sai 1 - Công thức cộng cơ bản",
+          "source": "SGK Toán 11 KNTT Bài 2 Dạng 1",
+          "prompt": "Cho hai góc lượng giác $a$ và $b$. Xét tính đúng sai của các khẳng định sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$\\sin(a + b) = \\sin a\\cos b + \\cos a\\sin b$",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức cộng sin."
+            },
+            {
+              "id": "b",
+              "text": "$\\cos(a - b) = \\cos a\\cos b + \\sin a\\sin b$",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức cộng côsin."
+            },
+            {
+              "id": "c",
+              "text": "$\\cos(a + b) = \\cos a\\cos b + \\sin a\\sin b$",
+              "correctAnswer": false,
+              "explanation": "Sai, công thức đúng là dấu trừ: $\\cos(a + b) = \\cos a\\cos b - \\sin a\\sin b$."
+            },
+            {
+              "id": "d",
+              "text": "$\\sin(a - b) = \\sin a\\cos b - \\cos a\\sin b$",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức cộng sin."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.3.1",
+          "badge": "Đúng/Sai 1 - Tập xác định của hàm số lượng giác",
+          "source": "SGK Toán 11 KNTT Bài 3 Dạng 1",
+          "prompt": "Xét tập xác định của các hàm số lượng giác cơ bản:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Hàm số $y = \\sin x$ có tập xác định $D = \\mathbb{R}$",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            },
+            {
+              "id": "b",
+              "text": "Hàm số $y = \\cos x$ có tập xác định $D = \\mathbb{R}$",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            },
+            {
+              "id": "c",
+              "text": "Hàm số $y = \\tan x$ xác định với mọi $x \\ne k\\pi$ ($k \\in \\mathbb{Z}$)",
+              "correctAnswer": false,
+              "explanation": "Sai, điều kiện là $x \\ne \\dfrac{\\pi}{2} + k\\pi$."
+            },
+            {
+              "id": "d",
+              "text": "Hàm số $y = \\cot x$ xác định với mọi $x \\ne k\\pi$ ($k \\in \\mathbb{Z}$)",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.4.1",
+          "badge": "Đúng/Sai 1 - Phương trình sin(2x + pi/3) = 1/2",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 Đúng Sai Câu 1",
+          "prompt": "Cho phương trình lượng giác $\\sin\\left(2x + \\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Số vị trí biểu diễn các nghiệm của phương trình trên đường tròn lượng giác là 4.",
+              "correctAnswer": true,
+              "explanation": "Phương trình $\\Leftrightarrow 2x + \\dfrac{\\pi}{3} = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $2x + \\dfrac{\\pi}{3} = \\dfrac{5\\pi}{6} + k2\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{12} + k\\pi$ hoặc $x = \\dfrac{\\pi}{4} + k\\pi$. Mỗi họ nghiệm có chu kỳ $k\\pi$ nên được biểu diễn bởi 2 điểm trên đường tròn, tổng cộng là 4 điểm."
+            },
+            {
+              "id": "b",
+              "text": "Phương trình có 2 nghiệm trên khoảng $(0; \\pi)$ là $x = \\dfrac{\\pi}{4}$ và $x = \\dfrac{11\\pi}{12}$.",
+              "correctAnswer": true,
+              "explanation": "Với họ $x = \\dfrac{\\pi}{4} + k\\pi \\xrightarrow{x \\in (0; \\pi)} x = \\dfrac{\\pi}{4}$ ($k=0$). Với họ $x = -\\dfrac{\\pi}{12} + k\\pi \\xrightarrow{x \\in (0; \\pi)} x = \\dfrac{11\\pi}{12}$ ($k=1$). Vậy có đúng 2 nghiệm."
+            },
+            {
+              "id": "c",
+              "text": "Tổng tất cả các nghiệm của phương trình trên khoảng $(0; \\pi)$ bằng $\\dfrac{7\\pi}{6}$.",
+              "correctAnswer": true,
+              "explanation": "Tổng hai nghiệm là $\\dfrac{\\pi}{4} + \\dfrac{11\\pi}{12} = \\dfrac{3\\pi + 11\\pi}{12} = \\dfrac{14\\pi}{12} = \\dfrac{7\\pi}{6}$."
+            },
+            {
+              "id": "d",
+              "text": "Phương trình có 4 nghiệm trên khoảng $(0; 2\\pi)$.",
+              "correctAnswer": true,
+              "explanation": "Vì mỗi chu kỳ $\\pi$ có 2 nghiệm nên trên khoảng $(0; 2\\pi)$ có độ dài $2\\pi$, phương trình có đúng $2 \\times 2 = 4$ nghiệm."
+            }
+          ]
+        }
+      ],
+      "shortAnswerQuestions": [
+        {
+          "id": "sa-11.1.1",
+          "badge": "TLN 1 - Đổi 330° sang radian",
+          "source": "SGK Toán 11 KNTT Bài 1",
+          "prompt": "Đổi $330°$ sang radian.",
+          "correctAnswer": "$\\dfrac{11\\pi}{6}$",
+          "acceptableAnswers": [
+            "11π/6",
+            "11pi/6"
+          ],
+          "explanation": "$330° = 330 \\times \\dfrac{\\pi}{180} = \\dfrac{11\\pi}{6}$ rad."
+        },
+        {
+          "id": "sa-11.2.1",
+          "badge": "TLN 1 - Tính cos 75°",
+          "source": "SGK Toán 11 KNTT Bài 2",
+          "prompt": "Tính giá trị của biểu thức $4\\cos 75^\\circ \\cdot (\\sqrt{6} + \\sqrt{2})$.",
+          "correctAnswer": "2",
+          "acceptableAnswers": [
+            "2"
+          ],
+          "explanation": "Ta có $\\cos 75^\\circ = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$. Do đó biểu thức $= 4 \\cdot \\dfrac{\\sqrt{6} - \\sqrt{2}}{4} \\cdot (\\sqrt{6} + \\sqrt{2}) = (\\sqrt{6})^2 - (\\sqrt{2})^2 = 6 - 2 = 4$ (Sửa kết quả: $6 - 2 = 4$)."
+        },
+        {
+          "id": "sa-11.3.1",
+          "badge": "TLN 1 - Chu kỳ hàm sin 4x",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm chu kỳ tuần hoàn $T$ của hàm số $y = \\sin 4x$. (Nhập theo dạng số nhân với pi, ví dụ: pi/2)",
+          "correctAnswer": "$\\dfrac{\\pi}{2}$",
+          "acceptableAnswers": [
+            "pi/2",
+            "π/2"
+          ],
+          "explanation": "$T = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}$."
+        },
+        {
+          "id": "sa-11.3.2",
+          "badge": "TLN 2 - Chu kỳ hàm tan 3x",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm chu kỳ tuần hoàn của hàm số $y = \\tan 3x$.",
+          "correctAnswer": "$\\dfrac{\\pi}{3}$",
+          "acceptableAnswers": [
+            "pi/3",
+            "π/3"
+          ],
+          "explanation": "$T = \\dfrac{\\pi}{3}$."
+        },
+        {
+          "id": "sa-11.4.1",
+          "badge": "Câu 1 - Trả lời ngắn - Số nghiệm của cos(x + 30) = -1",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 1",
+          "prompt": "Tìm số nghiệm của phương trình $\\cos(x + 30^\\circ) + 1 = 0$ trên đoạn $[-360^\\circ; 360^\\circ]$.",
+          "correctAnswer": "2",
+          "acceptableAnswers": [
+            "2"
+          ],
+          "explanation": "$\\cos(x + 30^\\circ) = -1 \\Leftrightarrow x + 30^\\circ = 180^\\circ + k360^\\circ \\Leftrightarrow x = 150^\\circ + k360^\\circ$. Với $-360^\\circ \\le 150^\\circ + k360^\\circ \\le 360^\\circ \\Leftrightarrow -\\dfrac{510}{360} \\le k \\le \\dfrac{210}{360} \\Rightarrow k \\in \\{-1; 0\\}$. Có 2 nghiệm là $-210^\\circ$ và $150^\\circ$."
+        },
+        {
+          "id": "sa-11.4.2",
+          "badge": "Câu 2 - Trả lời ngắn - Số nghiệm của cos 5x = cos 135",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 2",
+          "prompt": "Tìm số nghiệm của phương trình $\\cos 5x = \\cos 135^\\circ$ trên đoạn $[0^\\circ; 720^\\circ]$.",
+          "correctAnswer": "20",
+          "acceptableAnswers": [
+            "20"
+          ],
+          "explanation": "$5x = \\pm 135^\\circ + k360^\\circ \\Leftrightarrow x = 27^\\circ + k72^\\circ$ hoặc $x = -27^\\circ + k72^\\circ$. Trên $[0^\\circ; 720^\\circ]$, họ 1 có 10 nghiệm ($k = 0, \\dots, 9$), họ 2 có 10 nghiệm ($k = 1, \\dots, 10$). Hai họ này không có nghiệm chung. Tổng số nghiệm là $10 + 10 = 20$."
+        }
+      ]
+    },
+    {
+      "id": "de-2",
+      "title": "Đề ôn tập số 2",
+      "description": "Đề ôn tập tổng hợp cuối Chương I (Hàm số lượng giác & Phương trình lượng giác) - Đề 2",
+      "matrixBadge": "Phần I: 12 câu TN (3.0 đ) • Phần II: 4 câu Đúng/Sai (4.0 đ) • Phần III: 6 câu Trả lời ngắn (3.0 đ)",
+      "quizQuestions": [
+        {
+          "id": "quiz-11.1.9",
+          "badge": "Câu 9 - Nhận biết - Góc phần tư của 7π/6",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 2",
+          "question": "Điểm biểu diễn của góc lượng giác $\\dfrac{7\\pi}{6}$ nằm ở:",
+          "options": [
+            "Góc phần tư thứ III",
+            "Góc phần tư thứ II",
+            "Góc phần tư thứ IV",
+            "Góc phần tư thứ I"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vì $\\pi < \\dfrac{7\\pi}{6} < \\dfrac{3\\pi}{2}$ nên điểm biểu diễn nằm ở góc phần tư thứ III."
+        },
+        {
+          "id": "quiz-11.1.13",
+          "badge": "Câu 13 - Thông hiểu - Tìm góc cùng điểm biểu diễn",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 2",
+          "question": "Góc $\\dfrac{17\\pi}{4}$ có điểm biểu diễn trùng với điểm biểu diễn của góc nào sau đây?",
+          "options": [
+            "$\\dfrac{\\pi}{4}$",
+            "$\\dfrac{3\\pi}{4}$",
+            "$\\dfrac{5\\pi}{4}$",
+            "$\\dfrac{7\\pi}{4}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\dfrac{17\\pi}{4} = \\dfrac{\\pi}{4} + \\dfrac{16\\pi}{4} = \\dfrac{\\pi}{4} + 4\\pi = \\dfrac{\\pi}{4} + 2 \\cdot 2\\pi$. Vậy điểm biểu diễn trùng với $\\dfrac{\\pi}{4}$."
+        },
+        {
+          "id": "quiz-11.1.16",
+          "badge": "Câu 16 - Vận dụng - Mâm bánh xe chia phần",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 2",
+          "question": "Mâm bánh xe được chia đều thành $6$ phần bằng nhau xuất phát từ $A(1;0)$. Điểm chia thứ $2$ (quay ngược chiều kim đồng hồ) có số đo là:",
+          "options": [
+            "$\\dfrac{2\\pi}{3}$ rad",
+            "$\\dfrac{\\pi}{3}$ rad",
+            "$\\dfrac{\\pi}{2}$ rad",
+            "$\\pi$ rad"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mỗi phần chia ứng với góc $\\dfrac{2\\pi}{6} = \\dfrac{\\pi}{3}$ rad. Điểm thứ 2 có số đo: $2 \\times \\dfrac{\\pi}{3} = \\dfrac{2\\pi}{3}$ rad."
+        },
+        {
+          "id": "quiz-11.2.9",
+          "badge": "Câu 9 - Nhận biết - Công thức nhân đôi sin",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 2",
+          "question": "Công thức nào sau đây đúng với mọi góc $a$?",
+          "options": [
+            "$\\sin 2a = 2\\sin a \\cos a$",
+            "$\\sin 2a = \\sin a \\cos a$",
+            "$\\sin 2a = 2\\sin^2 a$",
+            "$\\sin 2a = \\cos^2 a - \\sin^2 a$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Theo công thức nhân đôi: $\\sin 2a = 2\\sin a \\cos a$."
+        },
+        {
+          "id": "quiz-11.2.13",
+          "badge": "Câu 13 - Thông hiểu - Công thức hạ bậc sin^2",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 2",
+          "question": "Công thức hạ bậc nào sau đây là ĐÚNG?",
+          "options": [
+            "$\\sin^2 a = \\dfrac{1 - \\cos 2a}{2}$",
+            "$\\sin^2 a = \\dfrac{1 + \\cos 2a}{2}$",
+            "$\\sin^2 a = \\dfrac{1 - \\sin 2a}{2}$",
+            "$\\sin^2 a = 1 - \\cos 2a$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Công thức hạ bậc: $\\sin^2 a = \\dfrac{1 - \\cos 2a}{2}$."
+        },
+        {
+          "id": "quiz-11.2.16",
+          "badge": "Câu 16 - Vận dụng - Rút gọn cot x - tan x",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 2",
+          "question": "Biểu thức $\\cot x - \\tan x$ tương đương với biểu thức nào sau đây?",
+          "options": [
+            "$2\\cot 2x$",
+            "$2\\tan 2x$",
+            "$\\cot 2x$",
+            "$\\tan 2x$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cot x - \\tan x = \\dfrac{\\cos x}{\\sin x} - \\dfrac{\\sin x}{\\cos x} = \\dfrac{\\cos^2 x - \\sin^2 x}{\\sin x \\cos x} = \\dfrac{\\cos 2x}{\\frac{1}{2}\\sin 2x} = 2\\cot 2x$."
+        },
+        {
+          "id": "quiz-11.3.9",
+          "badge": "Câu 9 - Nhận biết - Tập giá trị hàm sin",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 2",
+          "question": "Tập giá trị của hàm số $y = \\sin x$ là đoạn nào?",
+          "options": [
+            "$[-1; 1]$",
+            "$(-1; 1)$",
+            "$\\mathbb{R}$",
+            "$[0; 1]$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Với mọi $x$, ta luôn có $-1 \\le \\sin x \\le 1$. Do đó tập giá trị là đoạn $[-1; 1]$."
+        },
+        {
+          "id": "quiz-11.3.13",
+          "badge": "Câu 13 - Thông hiểu - GTLN hàm bậc hai cos^2",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 2",
+          "question": "Giá trị lớn nhất của hàm số $y = 2 - 3\\cos^2 x$ bằng:",
+          "options": [
+            "$2$",
+            "$-1$",
+            "$5$",
+            "$3$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vì $\\cos^2 x \\ge 0$ nên $-3\\cos^2 x \\le 0 \\Rightarrow y \\le 2$. Dấu '=' xảy ra khi $\\cos x = 0$. Giá trị lớn nhất là 2."
+        },
+        {
+          "id": "quiz-11.3.16",
+          "badge": "Câu 16 - Vận dụng - Tìm tập giá trị hàm sin^2 + cos",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 2",
+          "question": "Giá trị lớn nhất của hàm số $y = \\sin^2 x + 2\\cos x + 1$ bằng:",
+          "options": [
+            "$3$",
+            "$2$",
+            "$\\dfrac{9}{4}$",
+            "$4$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$y = (1 - \\cos^2 x) + 2\\cos x + 1 = -\\cos^2 x + 2\\cos x + 2 = 3 - (\\cos x - 1)^2 \\le 3$. Dấu '=' khi $\\cos x = 1$."
+        },
+        {
+          "id": "quiz-11.4.9",
+          "badge": "Câu 9 - Nhận biết - Công thức nghiệm của cos x = cos alpha",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 2",
+          "question": "Công thức nghiệm của phương trình $\\cos x = \\cos \\alpha$ là:",
+          "options": [
+            "$x = \\pm \\alpha + k2\\pi \\ (k \\in \\mathbb{Z})$",
+            "$\\left[\\begin{array}{l} x = \\alpha + k2\\pi \\\\ x = \\pi - \\alpha + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+            "$x = \\pm \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$",
+            "$x = \\alpha + k2\\pi \\ (k \\in \\mathbb{Z})$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Phương trình $\\cos x = \\cos \\alpha \\Leftrightarrow x = \\pm \\alpha + k2\\pi \\ (k \\in \\mathbb{Z})$."
+        },
+        {
+          "id": "quiz-11.4.13",
+          "badge": "Câu 13 - Thông hiểu - Giải phương trình cos 2x = -sqrt(2)/2",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 2",
+          "question": "Tập nghiệm của phương trình $\\cos 2x = -\\dfrac{\\sqrt{2}}{2}$ là:",
+          "options": [
+            "$\\left\\{\\pm \\dfrac{3\\pi}{8} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\pm \\dfrac{3\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\pm \\dfrac{\\pi}{8} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\pm \\dfrac{3\\pi}{8} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cos 2x = -\\dfrac{\\sqrt{2}}{2} = \\cos\\dfrac{3\\pi}{4} \\Leftrightarrow 2x = \\pm \\dfrac{3\\pi}{4} + k2\\pi \\Leftrightarrow x = \\pm \\dfrac{3\\pi}{8} + k\\pi \\ (k \\in \\mathbb{Z})$."
+        },
+        {
+          "id": "quiz-11.4.16",
+          "badge": "Câu 16 - Vận dụng - Số điểm biểu diễn nghiệm của cos trên đường tròn",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 2",
+          "question": "Số điểm biểu diễn các nghiệm của phương trình $\\cos 4x = 1$ trên đường tròn lượng giác là:",
+          "options": [
+            "$4$",
+            "$2$",
+            "$8$",
+            "$1$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cos 4x = 1 \\Leftrightarrow 4x = k2\\pi \\Leftrightarrow x = \\dfrac{k\\pi}{2} \\ (k \\in \\mathbb{Z})$. Do họ nghiệm có dạng $x = \\dfrac{k2\\pi}{4}$ nên có đúng 4 điểm phân biệt biểu diễn trên đường tròn lượng giác (tương ứng $k = 0, 1, 2, 3$)."
+        }
+      ],
+      "trueFalseQuestions": [
+        {
+          "id": "tf-11.1.2",
+          "badge": "Đúng/Sai 2 - Đổi radian sang độ (Nhận biết)",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+          "prompt": "Đổi số đo của các góc sang độ. Khi đó:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$\\dfrac{\\pi}{6}$ rad $= 30°$",
+              "correctAnswer": true,
+              "explanation": "$\\dfrac{\\pi}{6} \\times \\dfrac{180°}{\\pi} = 30°$. Đúng."
+            },
+            {
+              "id": "b",
+              "text": "$\\dfrac{\\pi}{4}$ rad $= 45°$",
+              "correctAnswer": true,
+              "explanation": "$\\dfrac{\\pi}{4} \\times \\dfrac{180°}{\\pi} = 45°$. Đúng."
+            },
+            {
+              "id": "c",
+              "text": "$\\dfrac{2\\pi}{3}$ rad $= 100°$",
+              "correctAnswer": false,
+              "explanation": "$\\dfrac{2\\pi}{3} \\times \\dfrac{180°}{\\pi} = 120°$, không phải $100°$. Sai."
+            },
+            {
+              "id": "d",
+              "text": "$\\dfrac{5\\pi}{6}$ rad $= 150°$",
+              "correctAnswer": true,
+              "explanation": "$\\dfrac{5\\pi}{6} \\times \\dfrac{180°}{\\pi} = 150°$. Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.2.2",
+          "badge": "Đúng/Sai 2 - Tính giá trị lượng giác góc đặc biệt",
+          "source": "SGK Toán 11 KNTT Bài 2 Dạng 1",
+          "prompt": "Xét tính đúng sai của các giá trị lượng giác sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$\\sin 75^\\circ = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+              "correctAnswer": true,
+              "explanation": "$\\sin(45^\\circ + 30^\\circ) = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$. Đúng."
+            },
+            {
+              "id": "b",
+              "text": "$\\cos 75^\\circ = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+              "correctAnswer": true,
+              "explanation": "$\\cos(45^\\circ + 30^\\circ) = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$. Đúng."
+            },
+            {
+              "id": "c",
+              "text": "$\\tan 75^\\circ = 2 - \\sqrt{3}$",
+              "correctAnswer": false,
+              "explanation": "$\\tan 75^\\circ = 2 + \\sqrt{3}$ (không phải $2 - \\sqrt{3}$). Sai."
+            },
+            {
+              "id": "d",
+              "text": "$\\cos 15^\\circ = \\sin 75^\\circ$",
+              "correctAnswer": true,
+              "explanation": "Vì $15^\\circ + 75^\\circ = 90^\\circ$ (hai góc phụ nhau) nên $\\cos 15^\\circ = \\sin 75^\\circ$. Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.3.2",
+          "badge": "Đúng/Sai 2 - Tập giá trị của hàm số lượng giác",
+          "source": "SGK Toán 11 KNTT Bài 3 Dạng 2",
+          "prompt": "Xét tập giá trị của các hàm số sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Tập giá trị của hàm số $y = \\sin x$ là đoạn $[-1; 1]$",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            },
+            {
+              "id": "b",
+              "text": "Tập giá trị của hàm số $y = \\cos x$ là đoạn $[-1; 1]$",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            },
+            {
+              "id": "c",
+              "text": "Tập giá trị của hàm số $y = \\tan x$ là đoạn $[-1; 1]$",
+              "correctAnswer": false,
+              "explanation": "Sai, tập giá trị của tang là toàn bộ $\\mathbb{R}$."
+            },
+            {
+              "id": "d",
+              "text": "Tập giá trị của hàm số $y = \\cos^2 x$ là đoạn $[0; 1]$",
+              "correctAnswer": true,
+              "explanation": "Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.4.2",
+          "badge": "Đúng/Sai 2 - Phương trình sin(3x - pi/4) = sqrt(3)/2",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 Đúng Sai Câu 2",
+          "prompt": "Cho phương trình lượng giác $\\sin\\left(3x - \\dfrac{\\pi}{4}\\right) = \\dfrac{\\sqrt{3}}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Công thức nghiệm của phương trình là $x = \\dfrac{7\\pi}{36} + \\dfrac{k2\\pi}{3}$ hoặc $x = \\dfrac{11\\pi}{36} + \\dfrac{k2\\pi}{3} \\ (k \\in \\mathbb{Z})$.",
+              "correctAnswer": true,
+              "explanation": "$3x - \\dfrac{\\pi}{4} = \\dfrac{\\pi}{3} + k2\\pi \\Leftrightarrow 3x = \\dfrac{7\\pi}{12} + k2\\pi \\Leftrightarrow x = \\dfrac{7\\pi}{36} + \\dfrac{k2\\pi}{3}$ hoặc $3x - \\dfrac{\\pi}{4} = \\pi - \\dfrac{\\pi}{3} + k2\\pi \\Leftrightarrow 3x = \\dfrac{11\\pi}{12} + k2\\pi \\Leftrightarrow x = \\dfrac{11\\pi}{36} + \\dfrac{k2\\pi}{3}$."
+            },
+            {
+              "id": "b",
+              "text": "Nghiệm dương nhỏ nhất của phương trình là $x = \\dfrac{7\\pi}{36}$.",
+              "correctAnswer": true,
+              "explanation": "Với $k = 0$, họ 1 cho $x = \\dfrac{7\\pi}{36} > 0$, họ 2 cho $x = \\dfrac{11\\pi}{36} > \\dfrac{7\\pi}{36}$. Vậy nghiệm dương nhỏ nhất là $\\dfrac{7\\pi}{36}$."
+            },
+            {
+              "id": "c",
+              "text": "Nghiệm âm lớn nhất của phương trình là $x = -\\dfrac{13\\pi}{36}$.",
+              "correctAnswer": true,
+              "explanation": "Với $k = -1$, họ 1 cho $x = \\dfrac{7\\pi}{36} - \\dfrac{24\\pi}{36} = -\\dfrac{17\\pi}{36}$; họ 2 cho $x = \\dfrac{11\\pi}{36} - \\dfrac{24\\pi}{36} = -\\dfrac{13\\pi}{36} > -\\dfrac{17\\pi}{36}$. Vậy nghiệm âm lớn nhất là $-\\dfrac{13\\pi}{36}$."
+            },
+            {
+              "id": "d",
+              "text": "Số nghiệm của phương trình trên khoảng $(0; \\pi)$ là 3.",
+              "correctAnswer": false,
+              "explanation": "Trên $(0; \\pi)$, họ 1 có $x = \\dfrac{7\\pi}{36}, \\dfrac{31\\pi}{36}$; họ 2 có $x = \\dfrac{11\\pi}{36}, \\dfrac{35\\pi}{36}$. Tổng cộng có 4 nghiệm, không phải 3."
+            }
+          ]
+        }
+      ],
+      "shortAnswerQuestions": [
+        {
+          "id": "sa-11.1.3",
+          "badge": "TLN 3 - Tính độ dài cung",
+          "source": "SGK Toán 11 KNTT Bài 1",
+          "prompt": "Tính độ dài cung tròn có số đo $\\dfrac{\\pi}{6}$ rad trên đường tròn bán kính $18$ cm.",
+          "correctAnswer": "$3\\pi$ cm",
+          "acceptableAnswers": [
+            "3π",
+            "3pi"
+          ],
+          "explanation": "$l = R|\\alpha| = 18 \\times \\dfrac{\\pi}{6} = 3\\pi$ cm."
+        },
+        {
+          "id": "sa-11.2.3",
+          "badge": "TLN 3 - Tính sin 2a",
+          "source": "SGK Toán 11 KNTT Bài 2",
+          "prompt": "Cho $\\sin a + \\cos a = \\dfrac{1}{2}$. Tính giá trị của $4\\sin 2a$.",
+          "correctAnswer": "-3",
+          "acceptableAnswers": [
+            "-3"
+          ],
+          "explanation": "Bình phương 2 vế: $(\\sin a + \\cos a)^2 = 1 + \\sin 2a = \\dfrac{1}{4} \\Rightarrow \\sin 2a = -\\dfrac{3}{4} \\Rightarrow 4\\sin 2a = -3$."
+        },
+        {
+          "id": "sa-11.3.3",
+          "badge": "TLN 3 - Giá trị lớn nhất hàm bậc nhất",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm giá trị lớn nhất của hàm số $y = 5\\cos 2x + 7$.",
+          "correctAnswer": "12",
+          "acceptableAnswers": [
+            "12"
+          ],
+          "explanation": "$\\max y = 5(1) + 7 = 12$."
+        },
+        {
+          "id": "sa-11.3.4",
+          "badge": "TLN 4 - Giá trị nhỏ nhất hàm bậc nhất",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm giá trị nhỏ nhất của hàm số $y = 3 - 4\\sin x$.",
+          "correctAnswer": "-1",
+          "acceptableAnswers": [
+            "-1"
+          ],
+          "explanation": "$\\min y = 3 - 4(1) = -1$."
+        },
+        {
+          "id": "sa-11.4.3",
+          "badge": "Câu 3 - Trả lời ngắn - Số nghiệm của tan 2x = sqrt(3)",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 3",
+          "prompt": "Tìm số nghiệm của phương trình $\\tan 2x = \\sqrt{3}$ trên đoạn $[-2\\pi; 4\\pi]$.",
+          "correctAnswer": "12",
+          "acceptableAnswers": [
+            "12"
+          ],
+          "explanation": "$2x = \\dfrac{\\pi}{3} + k\\pi \\Leftrightarrow x = \\dfrac{\\pi}{6} + \\dfrac{k\\pi}{2}$. Vì đoạn $[-2\\pi; 4\\pi]$ có độ dài $6\\pi$, mỗi chu kỳ $\\dfrac{\\pi}{2}$ có đúng 1 nghiệm nên số nghiệm là $\\dfrac{6\\pi}{\\pi/2} = 12$."
+        },
+        {
+          "id": "sa-11.4.4",
+          "badge": "Câu 4 - Trả lời ngắn - Số nghiệm của cot x = 0",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 5",
+          "prompt": "Tìm số nghiệm của phương trình $\\cot x = 0$ trên đoạn $[-2\\pi; 5\\pi]$.",
+          "correctAnswer": "7",
+          "acceptableAnswers": [
+            "7"
+          ],
+          "explanation": "$\\cot x = 0 \\Leftrightarrow x = \\dfrac{\\pi}{2} + k\\pi \\ (k \\in \\mathbb{Z})$. Điều kiện $-2\\pi \\le \\dfrac{\\pi}{2} + k\\pi \\le 5\\pi \\Leftrightarrow -2,5 \\le k \\le 4,5 \\Rightarrow k \\in \\{-2; -1; 0; 1; 2; 3; 4\\}$. Có 7 nghiệm."
+        }
+      ]
+    },
+    {
+      "id": "de-3",
+      "title": "Đề ôn tập số 3",
+      "description": "Đề ôn tập tổng hợp cuối Chương I (Hàm số lượng giác & Phương trình lượng giác) - Đề 3",
+      "matrixBadge": "Phần I: 12 câu TN (3.0 đ) • Phần II: 4 câu Đúng/Sai (4.0 đ) • Phần III: 6 câu Trả lời ngắn (3.0 đ)",
+      "quizQuestions": [
+        {
+          "id": "quiz-11.1.17",
+          "badge": "Câu 17 - Nhận biết - Tính sin(7π/6)",
+          "source": "SGK Toán 11 KNTT Bài 1 - Dạng 3",
+          "question": "Giá trị của $\\sin\\dfrac{7\\pi}{6}$ bằng:",
+          "options": [
+            "$-\\dfrac{1}{2}$",
+            "$\\dfrac{1}{2}$",
+            "$-\\dfrac{\\sqrt{3}}{2}$",
+            "$\\dfrac{\\sqrt{3}}{2}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\sin\\dfrac{7\\pi}{6} = \\sin\\left(\\pi + \\dfrac{\\pi}{6}\\right) = -\\sin\\dfrac{\\pi}{6} = -\\dfrac{1}{2}$."
+        },
+        {
+          "id": "quiz-11.1.21",
+          "badge": "Câu 21 - Thông hiểu - Tính cot(5π/3)",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 3",
+          "question": "Giá trị của $\\cot\\dfrac{5\\pi}{3}$ bằng:",
+          "options": [
+            "$-\\dfrac{\\sqrt{3}}{3}$",
+            "$\\dfrac{\\sqrt{3}}{3}$",
+            "$-\\sqrt{3}$",
+            "$\\sqrt{3}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cot\\dfrac{5\\pi}{3} = \\cot\\left(2\\pi - \\dfrac{\\pi}{3}\\right) = -\\cot\\dfrac{\\pi}{3} = -\\dfrac{1}{\\sqrt{3}} = -\\dfrac{\\sqrt{3}}{3}$."
+        },
+        {
+          "id": "quiz-11.1.37",
+          "badge": "Câu 37 - Thông hiểu - Rút gọn biểu thức cung liên kết",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 5",
+          "question": "Biểu thức $M = \\sin(\\pi - \\alpha) \\cdot \\tan\\left(\\dfrac{\\pi}{2} - \\alpha\\right)$ rút gọn bằng:",
+          "options": [
+            "$\\sin\\alpha \\cdot \\cot\\alpha = \\cos\\alpha$",
+            "$\\sin\\alpha$",
+            "$\\cos\\alpha$",
+            "$-\\cos\\alpha$"
+          ],
+          "correctIndex": 2,
+          "explanation": "$\\sin(\\pi - \\alpha) = \\sin\\alpha$ và $\\tan\\left(\\dfrac{\\pi}{2} - \\alpha\\right) = \\cot\\alpha = \\dfrac{\\cos\\alpha}{\\sin\\alpha}$. Vậy $M = \\sin\\alpha \\cdot \\dfrac{\\cos\\alpha}{\\sin\\alpha} = \\cos\\alpha$."
+        },
+        {
+          "id": "quiz-11.2.17",
+          "badge": "Câu 17 - Vận dụng - Tính giá trị nhân đôi",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 2",
+          "question": "Cho $\\tan a = \\dfrac{1}{2}$. Giá trị của $\\cos 2a$ bằng:",
+          "options": [
+            "$\\dfrac{3}{5}$",
+            "$\\dfrac{4}{5}$",
+            "$-\\dfrac{3}{5}$",
+            "$\\dfrac{1}{5}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cos 2a = \\dfrac{1 - \\tan^2 a}{1 + \\tan^2 a} = \\dfrac{1 - 1/4}{1 + 1/4} = \\dfrac{3/4}{5/4} = \\dfrac{3}{5}$."
+        },
+        {
+          "id": "quiz-11.2.21",
+          "badge": "Câu 21 - Thông hiểu - Tính tích cos góc đặc biệt",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 3",
+          "question": "Giá trị của biểu thức $2\\cos 75^\\circ \\cos 15^\\circ$ bằng:",
+          "options": [
+            "$\\dfrac{1}{2}$",
+            "$\\dfrac{\\sqrt{3}}{2}$",
+            "$1$",
+            "$\\dfrac{\\sqrt{2}}{2}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$2\\cos 75^\\circ \\cos 15^\\circ = \\cos(75^\\circ - 15^\\circ) + \\cos(75^\\circ + 15^\\circ) = \\cos 60^\\circ + \\cos 90^\\circ = \\dfrac{1}{2} + 0 = \\dfrac{1}{2}$."
+        },
+        {
+          "id": "quiz-11.2.37",
+          "badge": "Câu 37 - Vận dụng - Độ lệch pha sóng",
+          "source": "SGK Toán 11 KNTT Bài 2 - Dạng 5",
+          "question": "Tổng hợp hai dao động điều hòa cùng phương $x_1 = 3\\cos(10t)$ cm và $x_2 = 3\\cos\\left(10t + \\dfrac{\\pi}{3}\\right)$ cm có biên độ dao động tổng hợp là:",
+          "options": [
+            "$3\\sqrt{3}$ cm",
+            "$6$ cm",
+            "$3$ cm",
+            "$3\\sqrt{2}$ cm"
+          ],
+          "correctIndex": 0,
+          "explanation": "$A^2 = A_1^2 + A_2^2 + 2A_1A_2\\cos\\Delta\\varphi = 9 + 9 + 2(9)\\cos\\dfrac{\\pi}{3} = 18 + 9 = 27 \\Rightarrow A = 3\\sqrt{3}$ cm."
+        },
+        {
+          "id": "quiz-11.3.17",
+          "badge": "Câu 17 - Vận dụng - GTNN tam thức bậc hai lượng giác",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 2",
+          "question": "Giá trị nhỏ nhất của hàm số $y = \\cos 2x + 4\\cos x + 5$ bằng:",
+          "options": [
+            "$2$",
+            "$0$",
+            "$1$",
+            "$-1$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$y = 2\\cos^2 x - 1 + 4\\cos x + 5 = 2(\\cos x + 1)^2 + 2 \\ge 2$. Dấu '=' khi $\\cos x = -1$."
+        },
+        {
+          "id": "quiz-11.3.21",
+          "badge": "Câu 21 - Thông hiểu - Nhận biết hàm chẵn kết hợp x",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 3",
+          "question": "Hàm số nào sau đây là hàm số CHẴN?",
+          "options": [
+            "$y = x \\sin x$",
+            "$y = x \\cos x$",
+            "$y = x^2 \\sin x$",
+            "$y = x^3 \\cos x$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$f(-x) = (-x)\\sin(-x) = (-x)(-\\sin x) = x\\sin x = f(x)$. Vậy $y = x\\sin x$ là hàm số chẵn."
+        },
+        {
+          "id": "quiz-11.3.37",
+          "badge": "Câu 37 - Vận dụng - Thủy triều cực đại",
+          "source": "SGK Toán 11 KNTT Bài 3 - Dạng 5",
+          "question": "Mực nước biển $h(t) = 3\\cos\\left(\\dfrac{\\pi t}{6}\\right) + 8$ (mét, $t$ tính theo giờ từ 0h đến 24h). Lần đầu tiên mực nước đạt cực đại trong ngày là vào lúc:",
+          "options": [
+            "$0$ giờ (nửa đêm)",
+            "$6$ giờ sáng",
+            "$12$ giờ trưa",
+            "$3$ giờ sáng"
+          ],
+          "correctIndex": 0,
+          "explanation": "$h(t)$ lớn nhất khi $\\cos\\left(\\dfrac{\\pi t}{6}\\right) = 1 \\Leftrightarrow \\dfrac{\\pi t}{6} = k2\\pi \\Leftrightarrow t = 12k$. Với $t \\in [0; 24]$, lần đầu tiên là $t = 0$ giờ."
+        },
+        {
+          "id": "quiz-11.4.17",
+          "badge": "Câu 17 - Nhận biết - Nghiệm của phương trình tan x = m",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 3",
+          "question": "Phương trình $\\tan x = \\tan \\alpha$ có công thức nghiệm là:",
+          "options": [
+            "$x = \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$",
+            "$x = \\alpha + k2\\pi \\ (k \\in \\mathbb{Z})$",
+            "$x = \\pm \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$",
+            "$\\left[\\begin{array}{l} x = \\alpha + k\\pi \\\\ x = \\pi - \\alpha + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hàm số tang có chu kỳ tuần hoàn là $\\pi$, nên $\\tan x = \\tan \\alpha \\Leftrightarrow x = \\alpha + k\\pi \\ (k \\in \\mathbb{Z})$."
+        },
+        {
+          "id": "quiz-11.4.21",
+          "badge": "Câu 21 - Thông hiểu - Giải phương trình cot x = sqrt(3)",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 3",
+          "question": "Tập nghiệm của phương trình $\\cot x = \\sqrt{3}$ là:",
+          "options": [
+            "$\\left\\{\\dfrac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\dfrac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\dfrac{\\pi}{6} + k2\\pi, k \\in \\mathbb{Z}\\right\\}$",
+            "$\\left\\{\\pm \\dfrac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}\\right\\}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "$\\cot x = \\sqrt{3} = \\cot\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k\\pi \\ (k \\in \\mathbb{Z})$."
+        },
+        {
+          "id": "quiz-11.4.37",
+          "badge": "Câu 37 - Vận dụng - Bài toán thực tế dao động con lắc",
+          "source": "SGK Toán 11 KNTT Bài 4 - Dạng 5",
+          "question": "Một vật dao động điều hòa có li độ $s = 5\\cos(2t)$ (cm), với $t$ tính bằng giây. Thời điểm đầu tiên $(t > 0)$ vật đi qua vị trí cân bằng $(s = 0)$ là:",
+          "options": [
+            "$t = \\dfrac{\\pi}{4}$ (s)",
+            "$t = \\dfrac{\\pi}{2}$ (s)",
+            "$t = \\pi$ (s)",
+            "$t = \\dfrac{\\pi}{8}$ (s)"
+          ],
+          "correctIndex": 0,
+          "explanation": "$s = 0 \\Leftrightarrow 5\\cos 2t = 0 \\Leftrightarrow \\cos 2t = 0 \\Leftrightarrow 2t = \\dfrac{\\pi}{2} + k\\pi \\Leftrightarrow t = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$. Thời điểm đầu tiên $t > 0$ ứng với $k = 0 \\Rightarrow t = \\dfrac{\\pi}{4}$ s."
+        }
+      ],
+      "trueFalseQuestions": [
+        {
+          "id": "tf-11.1.3",
+          "badge": "Đúng/Sai 3 - Độ dài cung tròn (Nhận biết)",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+          "prompt": "Biểu diễn góc lượng giác trên đường tròn lượng giác. Khi đó:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$\\dfrac{\\pi}{3}$ là điểm M thuộc góc phần tư thứ I",
+              "correctAnswer": true,
+              "explanation": "$0 < \\dfrac{\\pi}{3} < \\dfrac{\\pi}{2}$, nên thuộc GPT I. Đúng."
+            },
+            {
+              "id": "b",
+              "text": "$\\dfrac{3\\pi}{4}$ là điểm M thuộc góc phần tư thứ II",
+              "correctAnswer": true,
+              "explanation": "$\\dfrac{\\pi}{2} < \\dfrac{3\\pi}{4} < \\pi$, nên thuộc GPT II. Đúng."
+            },
+            {
+              "id": "c",
+              "text": "$\\dfrac{5\\pi}{4}$ là điểm M thuộc góc phần tư thứ II",
+              "correctAnswer": false,
+              "explanation": "$\\pi < \\dfrac{5\\pi}{4} < \\dfrac{3\\pi}{2}$, nên thuộc GPT III (không phải II). Sai."
+            },
+            {
+              "id": "d",
+              "text": "$\\dfrac{5\\pi}{3}$ là điểm M thuộc góc phần tư thứ IV",
+              "correctAnswer": true,
+              "explanation": "$\\dfrac{3\\pi}{2} < \\dfrac{5\\pi}{3} < 2\\pi$, nên thuộc GPT IV. Đúng."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.2.3",
+          "badge": "Đúng/Sai 3 - Công thức nhân đôi",
+          "source": "SGK Toán 11 KNTT Bài 2 Dạng 2",
+          "prompt": "Cho góc lượng giác $x$. Xét tính đúng sai của các khẳng định sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "$\\sin 2x = 2\\sin x\\cos x$",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức nhân đôi sin."
+            },
+            {
+              "id": "b",
+              "text": "$\\cos 2x = \\cos^2 x - \\sin^2 x$",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức nhân đôi côsin."
+            },
+            {
+              "id": "c",
+              "text": "$\\cos 2x = 2\\sin^2 x - 1$",
+              "correctAnswer": false,
+              "explanation": "Sai, công thức đúng là $\\cos 2x = 1 - 2\\sin^2 x$."
+            },
+            {
+              "id": "d",
+              "text": "$\\tan 2x = \\dfrac{2\\tan x}{1 - \\tan^2 x}$ (với điều kiện xác định)",
+              "correctAnswer": true,
+              "explanation": "Đúng theo công thức nhân đôi tang."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.3.3",
+          "badge": "Đúng/Sai 3 - GTLN và GTNN cơ bản",
+          "source": "SGK Toán 11 KNTT Bài 3 Dạng 2",
+          "prompt": "Cho hàm số $y = 3\\cos x - 1$. Khi đó:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Giá trị lớn nhất của hàm số bằng $2$",
+              "correctAnswer": true,
+              "explanation": "$\\max y = 3(1) - 1 = 2$. Đúng."
+            },
+            {
+              "id": "b",
+              "text": "Giá trị nhỏ nhất của hàm số bằng $-4$",
+              "correctAnswer": true,
+              "explanation": "$\\min y = 3(-1) - 1 = -4$. Đúng."
+            },
+            {
+              "id": "c",
+              "text": "Hàm số đạt giá trị lớn nhất khi $x = k2\\pi$ ($k \\in \\mathbb{Z}$)",
+              "correctAnswer": true,
+              "explanation": "$\\cos x = 1 \\Leftrightarrow x = k2\\pi$. Đúng."
+            },
+            {
+              "id": "d",
+              "text": "Hàm số đạt giá trị nhỏ nhất khi $x = \\dfrac{\\pi}{2} + k\\pi$",
+              "correctAnswer": false,
+              "explanation": "Sai, $\\cos x = -1 \\Leftrightarrow x = \\pi + k2\\pi$."
+            }
+          ]
+        },
+        {
+          "id": "tf-11.4.3",
+          "badge": "Đúng/Sai 3 - Phương trình sin x = m",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 Đúng Sai Câu 3",
+          "prompt": "Cho phương trình $\\sin x = m$, với $m$ là tham số thực. Xét tính Đúng / Sai của các mệnh đề sau:",
+          "subItems": [
+            {
+              "id": "a",
+              "text": "Phương trình đã cho có nghiệm khi và chỉ khi $-1 \\le m \\le 1$.",
+              "correctAnswer": true,
+              "explanation": "Do tập giá trị của hàm số sin là $[-1; 1]$."
+            },
+            {
+              "id": "b",
+              "text": "Số giá trị nguyên của $m$ để phương trình có nghiệm là 3.",
+              "correctAnswer": true,
+              "explanation": "Các giá trị nguyên thỏa mãn $-1 \\le m \\le 1$ là $m \\in \\{-1; 0; 1\\}$, gồm đúng 3 giá trị."
+            },
+            {
+              "id": "c",
+              "text": "Tổng tất cả các giá trị nguyên của $m$ để phương trình có nghiệm bằng 0.",
+              "correctAnswer": true,
+              "explanation": "Tổng $(-1) + 0 + 1 = 0$."
+            },
+            {
+              "id": "d",
+              "text": "Khi $m = 1$, phương trình có tập nghiệm là $\\left\\{\\dfrac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\right\\}$.",
+              "correctAnswer": false,
+              "explanation": "Khi $m = 1$, nghiệm đúng là $x = \\dfrac{\\pi}{2} + k2\\pi$, chu kỳ là $k2\\pi$ chứ không phải $k\\pi$."
+            }
+          ]
+        }
+      ],
+      "shortAnswerQuestions": [
+        {
+          "id": "sa-11.1.5",
+          "badge": "TLN 5 - Xác định góc phần tư",
+          "source": "Tài liệu Luyện tập Toán 11 C1B1",
+          "prompt": "Điểm biểu diễn góc $\\dfrac{11\\pi}{7}$ nằm ở góc phần tư thứ mấy?",
+          "correctAnswer": "Góc phần tư IV",
+          "acceptableAnswers": [
+            "IV",
+            "4",
+            "GPT IV",
+            "góc phần tư thứ 4"
+          ],
+          "explanation": "$\\dfrac{3\\pi}{2} = \\dfrac{10.5\\pi}{7} < \\dfrac{11\\pi}{7} < \\dfrac{14\\pi}{7} = 2\\pi$. Nên nằm ở GPT IV."
+        },
+        {
+          "id": "sa-11.2.5",
+          "badge": "TLN 5 - Rút gọn tích sin.cos",
+          "source": "SGK Toán 11 KNTT Bài 2",
+          "prompt": "Tính giá trị của biểu thức $P = 8\\sin 15^\\circ \\cos 15^\\circ$.",
+          "correctAnswer": "2",
+          "acceptableAnswers": [
+            "2"
+          ],
+          "explanation": "$P = 4(2\\sin 15^\\circ \\cos 15^\\circ) = 4\\sin 30^\\circ = 4 \\times \\dfrac{1}{2} = 2$."
+        },
+        {
+          "id": "sa-11.3.5",
+          "badge": "TLN 5 - Giá trị lớn nhất căn bậc hai",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm giá trị lớn nhất của hàm số $y = \\sqrt{7 + 9\\cos x}$.",
+          "correctAnswer": "4",
+          "acceptableAnswers": [
+            "4"
+          ],
+          "explanation": "$\\max y = \\sqrt{7 + 9(1)} = \\sqrt{16} = 4$."
+        },
+        {
+          "id": "sa-11.3.6",
+          "badge": "TLN 6 - Giá trị nhỏ nhất căn bậc hai",
+          "source": "SGK Toán 11 KNTT Bài 3",
+          "prompt": "Tìm giá trị nhỏ nhất của hàm số $y = \\sqrt{5 - 4\\sin x}$.",
+          "correctAnswer": "1",
+          "acceptableAnswers": [
+            "1"
+          ],
+          "explanation": "$\\min y = \\sqrt{5 - 4(1)} = \\sqrt{1} = 1$."
+        },
+        {
+          "id": "sa-11.4.5",
+          "badge": "Câu 5 - Trả lời ngắn - Số nghiệm của tan x = sqrt(3)",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 6",
+          "prompt": "Tìm số nghiệm của phương trình $\\tan x = \\sqrt{3}$ trên đoạn $[-2\\pi; 4\\pi]$.",
+          "correctAnswer": "6",
+          "acceptableAnswers": [
+            "6"
+          ],
+          "explanation": "$\\tan x = \\sqrt{3} \\Leftrightarrow x = \\dfrac{\\pi}{3} + k\\pi$. Trên đoạn $[-2\\pi; 4\\pi]$ có độ dài $6\\pi$, chu kỳ $\\pi$ có đúng 1 nghiệm nên có 6 nghiệm (tương ứng $k = -2, -1, 0, 1, 2, 3$)."
+        },
+        {
+          "id": "sa-11.4.6",
+          "badge": "Câu 6 - Trả lời ngắn - Số nghiệm của sin x = 0",
+          "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN",
+          "prompt": "Tìm số nghiệm của phương trình $\\sin x = 0$ trên đoạn $[-3\\pi; 3\\pi]$.",
+          "correctAnswer": "7",
+          "acceptableAnswers": [
+            "7"
+          ],
+          "explanation": "$\\sin x = 0 \\Leftrightarrow x = k\\pi$. $-3\\pi \\le k\\pi \\le 3\\pi \\Leftrightarrow -3 \\le k \\le 3 \\Rightarrow k \\in \\{-3; -2; -1; 0; 1; 2; 3\\}$, có đúng 7 nghiệm."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-11.1.1",
+      "badge": "Câu 1 - Nhận biết - Đổi 120° sang radian",
+      "source": "SGK Toán 11 KNTT Bài 1 - Dạng 1",
+      "question": "Đổi góc $120°$ sang đơn vị radian, ta được:",
+      "options": [
+        "$\\dfrac{2\\pi}{3}$",
+        "$\\dfrac{\\pi}{3}$",
+        "$\\dfrac{3\\pi}{4}$",
+        "$\\dfrac{4\\pi}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$120° = 120 \\cdot \\dfrac{\\pi}{180} = \\dfrac{120\\pi}{180} = \\dfrac{2\\pi}{3}$ rad."
+    },
+    {
+      "id": "quiz-11.1.5",
+      "badge": "Câu 5 - Nhận biết - Đổi −135° sang radian",
+      "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+      "question": "Đổi góc $-135°$ sang đơn vị radian, ta được:",
+      "options": [
+        "$-\\dfrac{3\\pi}{4}$",
+        "$-\\dfrac{2\\pi}{3}$",
+        "$-\\dfrac{5\\pi}{6}$",
+        "$-\\dfrac{\\pi}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$-135° = -135 \\cdot \\dfrac{\\pi}{180} = -\\dfrac{3\\pi}{4}$ rad."
+    },
+    {
+      "id": "quiz-11.1.8",
+      "badge": "Câu 8 - Vận dụng - Bài toán bánh xe",
+      "source": "Tài liệu Luyện tập Toán 11 C1B1 Dạng 1",
+      "question": "Một bánh xe có bán kính $0.5$ m quay được $3$ vòng. Quãng đường mà một điểm trên vành đi được là:",
+      "options": [
+        "$3\\pi$ m",
+        "$6\\pi$ m",
+        "$1.5\\pi$ m",
+        "$\\pi$ m"
+      ],
+      "correctIndex": 0,
+      "explanation": "3 vòng = $3 \\times 2\\pi = 6\\pi$ rad. Quãng đường: $l = R \\cdot \\alpha = 0.5 \\times 6\\pi = 3\\pi$ m."
+    },
+    {
+      "id": "quiz-11.2.1",
+      "badge": "Câu 1 - Nhận biết - Công thức cộng côsin",
+      "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+      "question": "Khẳng định nào sau đây là ĐÚNG với mọi góc $a, b$?",
+      "options": [
+        "$\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$",
+        "$\\cos(a + b) = \\cos a \\cos b + \\sin a \\sin b$",
+        "$\\cos(a + b) = \\sin a \\cos b + \\cos a \\sin b$",
+        "$\\cos(a + b) = \\sin a \\cos b - \\cos a \\sin b$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo công thức cộng côsin: $\\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b$."
+    },
+    {
+      "id": "quiz-11.2.5",
+      "badge": "Câu 5 - Thông hiểu - Tính sin(a+b)",
+      "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+      "question": "Giá trị của biểu thức $\\sin 15^\\circ$ bằng:",
+      "options": [
+        "$\\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+        "$\\dfrac{\\sqrt{3} - 1}{2}$",
+        "$\\dfrac{\\sqrt{2} - 1}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin 15^\\circ = \\sin(45^\\circ - 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ - \\cos 45^\\circ \\sin 30^\\circ = \\dfrac{\\sqrt{2}}{2}\\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{2}}{2}\\dfrac{1}{2} = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$."
+    },
+    {
+      "id": "quiz-11.2.8",
+      "badge": "Câu 8 - Vận dụng - Công thức cộng tang",
+      "source": "SGK Toán 11 KNTT Bài 2 - Dạng 1",
+      "question": "Cho $\\tan a = 3, \\tan b = -2$. Giá trị của $\\tan(a - b)$ bằng:",
+      "options": [
+        "$-1$",
+        "$1$",
+        "$\\dfrac{5}{7}$",
+        "$-5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\tan(a - b) = \\dfrac{\\tan a - \\tan b}{1 + \\tan a \\tan b} = \\dfrac{3 - (-2)}{1 + 3(-2)} = \\dfrac{5}{-5} = -1$."
+    },
+    {
+      "id": "quiz-11.3.1",
+      "badge": "Câu 1 - Nhận biết - TXĐ hàm sin và cos",
+      "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+      "question": "Tập xác định của các hàm số $y = \\sin x$ và $y = \\cos x$ là:",
+      "options": [
+        "$\\mathbb{R}$",
+        "$[-1; 1]$",
+        "$\\mathbb{R} \\setminus \\{0\\}$",
+        "$(0; +\\infty)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hàm số sin và côsin xác định với mọi số thực $x \\in \\mathbb{R}$."
+    },
+    {
+      "id": "quiz-11.3.5",
+      "badge": "Câu 5 - Thông hiểu - TXĐ hàm phân thức chứa cos",
+      "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+      "question": "Tập xác định của hàm số $y = \\dfrac{1}{\\cos x - 1}$ là:",
+      "options": [
+        "$D = \\mathbb{R} \\setminus \\{k2\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R} \\setminus \\{\\pi + k2\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$D = \\mathbb{R}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điều kiện: $\\cos x - 1 \\ne 0 \\Leftrightarrow \\cos x \\ne 1 \\Leftrightarrow x \\ne k2\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "quiz-11.3.8",
+      "badge": "Câu 8 - Vận dụng cao - TXĐ chứa căn mẫu",
+      "source": "SGK Toán 11 KNTT Bài 3 - Dạng 1",
+      "question": "Tập xác định của hàm số $y = \\sqrt{\\dfrac{1 - \\cos 2x}{1 + \\sin^2 x}}$ là:",
+      "options": [
+        "$\\mathbb{R}$",
+        "$\\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}$",
+        "$[-1; 1]$",
+        "$\\emptyset$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $1 - \\cos 2x = 2\\sin^2 x \\ge 0$ và $1 + \\sin^2 x \\ge 1 > 0$ với mọi $x$, phân thức luôn không âm và mẫu luôn dương. Vậy $D = \\mathbb{R}$."
+    },
+    {
+      "id": "quiz-11.4.1",
+      "badge": "Câu 1 - Nhận biết - Điều kiện có nghiệm của sin x = m",
+      "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+      "question": "Phương trình $\\sin x = m$ có nghiệm khi và chỉ khi:",
+      "options": [
+        "$-1 \\le m \\le 1$",
+        "$m \\ge -1$",
+        "$m \\le 1$",
+        "$m \\in \\mathbb{R}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì tập giá trị của hàm số sin là $[-1; 1]$ nên phương trình $\\sin x = m$ có nghiệm khi và chỉ khi $-1 \\le m \\le 1$."
+    },
+    {
+      "id": "quiz-11.4.5",
+      "badge": "Câu 5 - Thông hiểu - Giải phương trình sin x = 1/2",
+      "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+      "question": "Tất cả các nghiệm của phương trình $\\sin x = \\dfrac{1}{2}$ là:",
+      "options": [
+        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{5\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{3} + k2\\pi \\\\ x = \\dfrac{2\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k\\pi \\\\ x = \\dfrac{5\\pi}{6} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
+        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{end{array}\\right. (k \\in \\mathbb{Z})$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\dfrac{\\pi}{6} + k2\\pi = \\dfrac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)."
+    },
+    {
+      "id": "quiz-11.4.8",
+      "badge": "Câu 8 - Vận dụng - Nghiệm âm lớn nhất của phương trình sin",
+      "source": "SGK Toán 11 KNTT Bài 4 - Dạng 1",
+      "question": "Nghiệm âm lớn nhất của phương trình $\\sin x = -\\dfrac{1}{2}$ là:",
+      "options": [
+        "$-\\dfrac{\\pi}{6}$",
+        "$-\\dfrac{5\\pi}{6}$",
+        "$-\\dfrac{\\pi}{3}$",
+        "$-\\dfrac{2\\pi}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin x = -\\dfrac{1}{2} = \\sin\\left(-\\dfrac{\\pi}{6}\\right) \\Leftrightarrow x = -\\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\left(-\\dfrac{\\pi}{6}\\right) + k2\\pi = \\dfrac{7\\pi}{6} + k2\\pi$. Nghiệm âm lớn nhất là $-\\dfrac{\\pi}{6}$ (ứng với họ thứ nhất khi $k = 0$)."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-11.1.1",
+      "badge": "Đúng/Sai 1 - Đổi đơn vị cơ bản (Nhận biết)",
+      "source": "SGK Toán 11 KNTT Bài 1 Dạng 1",
+      "prompt": "Đổi số đo của các góc sang radian. Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$60° = \\dfrac{\\pi}{3}$ rad",
+          "correctAnswer": true,
+          "explanation": "$60° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{3}$ rad. Đúng."
+        },
+        {
+          "id": "b",
+          "text": "$90° = \\dfrac{\\pi}{2}$ rad",
+          "correctAnswer": true,
+          "explanation": "$90° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{2}$ rad. Đúng."
+        },
+        {
+          "id": "c",
+          "text": "$45° = \\dfrac{\\pi}{6}$ rad",
+          "correctAnswer": false,
+          "explanation": "$45° \\times \\dfrac{\\pi}{180} = \\dfrac{\\pi}{4}$ rad (không phải $\\dfrac{\\pi}{6}$). Sai."
+        },
+        {
+          "id": "d",
+          "text": "$270° = \\dfrac{3\\pi}{2}$ rad",
+          "correctAnswer": true,
+          "explanation": "$270° \\times \\dfrac{\\pi}{180} = \\dfrac{3\\pi}{2}$ rad. Đúng."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.2.1",
+      "badge": "Đúng/Sai 1 - Công thức cộng cơ bản",
+      "source": "SGK Toán 11 KNTT Bài 2 Dạng 1",
+      "prompt": "Cho hai góc lượng giác $a$ và $b$. Xét tính đúng sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sin(a + b) = \\sin a\\cos b + \\cos a\\sin b$",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức cộng sin."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos(a - b) = \\cos a\\cos b + \\sin a\\sin b$",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức cộng côsin."
+        },
+        {
+          "id": "c",
+          "text": "$\\cos(a + b) = \\cos a\\cos b + \\sin a\\sin b$",
+          "correctAnswer": false,
+          "explanation": "Sai, công thức đúng là dấu trừ: $\\cos(a + b) = \\cos a\\cos b - \\sin a\\sin b$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sin(a - b) = \\sin a\\cos b - \\cos a\\sin b$",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức cộng sin."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.3.1",
+      "badge": "Đúng/Sai 1 - Tập xác định của hàm số lượng giác",
+      "source": "SGK Toán 11 KNTT Bài 3 Dạng 1",
+      "prompt": "Xét tập xác định của các hàm số lượng giác cơ bản:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hàm số $y = \\sin x$ có tập xác định $D = \\mathbb{R}$",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Hàm số $y = \\cos x$ có tập xác định $D = \\mathbb{R}$",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Hàm số $y = \\tan x$ xác định với mọi $x \\ne k\\pi$ ($k \\in \\mathbb{Z}$)",
+          "correctAnswer": false,
+          "explanation": "Sai, điều kiện là $x \\ne \\dfrac{\\pi}{2} + k\\pi$."
+        },
+        {
+          "id": "d",
+          "text": "Hàm số $y = \\cot x$ xác định với mọi $x \\ne k\\pi$ ($k \\in \\mathbb{Z}$)",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.4.1",
+      "badge": "Đúng/Sai 1 - Phương trình sin(2x + pi/3) = 1/2",
+      "source": "Tài liệu GDPT 2018 Toán 11 C1B4 Đúng Sai Câu 1",
+      "prompt": "Cho phương trình lượng giác $\\sin\\left(2x + \\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số vị trí biểu diễn các nghiệm của phương trình trên đường tròn lượng giác là 4.",
+          "correctAnswer": true,
+          "explanation": "Phương trình $\\Leftrightarrow 2x + \\dfrac{\\pi}{3} = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $2x + \\dfrac{\\pi}{3} = \\dfrac{5\\pi}{6} + k2\\pi \\Leftrightarrow x = -\\dfrac{\\pi}{12} + k\\pi$ hoặc $x = \\dfrac{\\pi}{4} + k\\pi$. Mỗi họ nghiệm có chu kỳ $k\\pi$ nên được biểu diễn bởi 2 điểm trên đường tròn, tổng cộng là 4 điểm."
+        },
+        {
+          "id": "b",
+          "text": "Phương trình có 2 nghiệm trên khoảng $(0; \\pi)$ là $x = \\dfrac{\\pi}{4}$ và $x = \\dfrac{11\\pi}{12}$.",
+          "correctAnswer": true,
+          "explanation": "Với họ $x = \\dfrac{\\pi}{4} + k\\pi \\xrightarrow{x \\in (0; \\pi)} x = \\dfrac{\\pi}{4}$ ($k=0$). Với họ $x = -\\dfrac{\\pi}{12} + k\\pi \\xrightarrow{x \\in (0; \\pi)} x = \\dfrac{11\\pi}{12}$ ($k=1$). Vậy có đúng 2 nghiệm."
+        },
+        {
+          "id": "c",
+          "text": "Tổng tất cả các nghiệm của phương trình trên khoảng $(0; \\pi)$ bằng $\\dfrac{7\\pi}{6}$.",
+          "correctAnswer": true,
+          "explanation": "Tổng hai nghiệm là $\\dfrac{\\pi}{4} + \\dfrac{11\\pi}{12} = \\dfrac{3\\pi + 11\\pi}{12} = \\dfrac{14\\pi}{12} = \\dfrac{7\\pi}{6}$."
+        },
+        {
+          "id": "d",
+          "text": "Phương trình có 4 nghiệm trên khoảng $(0; 2\\pi)$.",
+          "correctAnswer": true,
+          "explanation": "Vì mỗi chu kỳ $\\pi$ có 2 nghiệm nên trên khoảng $(0; 2\\pi)$ có độ dài $2\\pi$, phương trình có đúng $2 \\times 2 = 4$ nghiệm."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-11.1.1",
+      "badge": "TLN 1 - Đổi 330° sang radian",
+      "source": "SGK Toán 11 KNTT Bài 1",
+      "prompt": "Đổi $330°$ sang radian.",
+      "correctAnswer": "$\\dfrac{11\\pi}{6}$",
+      "acceptableAnswers": [
+        "11π/6",
+        "11pi/6"
+      ],
+      "explanation": "$330° = 330 \\times \\dfrac{\\pi}{180} = \\dfrac{11\\pi}{6}$ rad."
+    },
+    {
+      "id": "sa-11.2.1",
+      "badge": "TLN 1 - Tính cos 75°",
+      "source": "SGK Toán 11 KNTT Bài 2",
+      "prompt": "Tính giá trị của biểu thức $4\\cos 75^\\circ \\cdot (\\sqrt{6} + \\sqrt{2})$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "Ta có $\\cos 75^\\circ = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$. Do đó biểu thức $= 4 \\cdot \\dfrac{\\sqrt{6} - \\sqrt{2}}{4} \\cdot (\\sqrt{6} + \\sqrt{2}) = (\\sqrt{6})^2 - (\\sqrt{2})^2 = 6 - 2 = 4$ (Sửa kết quả: $6 - 2 = 4$)."
+    },
+    {
+      "id": "sa-11.3.1",
+      "badge": "TLN 1 - Chu kỳ hàm sin 4x",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "prompt": "Tìm chu kỳ tuần hoàn $T$ của hàm số $y = \\sin 4x$. (Nhập theo dạng số nhân với pi, ví dụ: pi/2)",
+      "correctAnswer": "$\\dfrac{\\pi}{2}$",
+      "acceptableAnswers": [
+        "pi/2",
+        "π/2"
+      ],
+      "explanation": "$T = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}$."
+    },
+    {
+      "id": "sa-11.3.2",
+      "badge": "TLN 2 - Chu kỳ hàm tan 3x",
+      "source": "SGK Toán 11 KNTT Bài 3",
+      "prompt": "Tìm chu kỳ tuần hoàn của hàm số $y = \\tan 3x$.",
+      "correctAnswer": "$\\dfrac{\\pi}{3}$",
+      "acceptableAnswers": [
+        "pi/3",
+        "π/3"
+      ],
+      "explanation": "$T = \\dfrac{\\pi}{3}$."
+    },
+    {
+      "id": "sa-11.4.1",
+      "badge": "Câu 1 - Trả lời ngắn - Số nghiệm của cos(x + 30) = -1",
+      "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 1",
+      "prompt": "Tìm số nghiệm của phương trình $\\cos(x + 30^\\circ) + 1 = 0$ trên đoạn $[-360^\\circ; 360^\\circ]$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "$\\cos(x + 30^\\circ) = -1 \\Leftrightarrow x + 30^\\circ = 180^\\circ + k360^\\circ \\Leftrightarrow x = 150^\\circ + k360^\\circ$. Với $-360^\\circ \\le 150^\\circ + k360^\\circ \\le 360^\\circ \\Leftrightarrow -\\dfrac{510}{360} \\le k \\le \\dfrac{210}{360} \\Rightarrow k \\in \\{-1; 0\\}$. Có 2 nghiệm là $-210^\\circ$ và $150^\\circ$."
+    },
+    {
+      "id": "sa-11.4.2",
+      "badge": "Câu 2 - Trả lời ngắn - Số nghiệm của cos 5x = cos 135",
+      "source": "Tài liệu GDPT 2018 Toán 11 C1B4 TLN Câu 2",
+      "prompt": "Tìm số nghiệm của phương trình $\\cos 5x = \\cos 135^\\circ$ trên đoạn $[0^\\circ; 720^\\circ]$.",
+      "correctAnswer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "explanation": "$5x = \\pm 135^\\circ + k360^\\circ \\Leftrightarrow x = 27^\\circ + k72^\\circ$ hoặc $x = -27^\\circ + k72^\\circ$. Trên $[0^\\circ; 720^\\circ]$, họ 1 có 10 nghiệm ($k = 0, \\dots, 9$), họ 2 có 10 nghiệm ($k = 1, \\dots, 10$). Hai họ này không có nghiệm chung. Tổng số nghiệm là $10 + 10 = 20$."
+    }
+  ]
+}
 };

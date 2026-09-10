@@ -816,6 +816,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t11-b2-cong-thuc-luong-giac", lessonNumber: 2, title: "Bài 2: Công thức lượng giác", strand: "daiso", description: "Công thức cộng, nhân đôi, biến đổi tích thành tổng và tổng thành tích.", keyFormulas: ["\\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b", "\\cos 2a = \\cos^2 a - \\sin^2 a = 2\\cos^2 a - 1"] },
           { id: "t11-b3-ham-so-luong-giac", lessonNumber: 3, title: "Bài 3: Hàm số lượng giác", strand: "daiso", description: "Tập xác định, chu kỳ và đồ thị các hàm số y = sin x, y = cos x, y = tan x.", keyFormulas: ["T = 2\\pi \\text{ (với sin, cos)}, \\ T = \\pi \\text{ (với tan)}"] },
           { id: "t11-b4-phuong-trinh-luong-giac-co-ban", lessonNumber: 4, title: "Bài 4: Phương trình lượng giác cơ bản", strand: "daiso", description: "Phương trình sin x = m, cos x = m, tan x = m.", keyFormulas: ["\\sin x = \\sin \\alpha \\Leftrightarrow x = \\alpha + k2\\pi \\lor x = \\pi - \\alpha + k2\\pi"] },
+          { id: "t11-on-tap-chuong-1", lessonNumber: 0, title: "Ôn tập cuối chương I", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Hàm số & Phương trình lượng giác với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\sin^2 x + \\cos^2 x = 1", "\\cos(a \\pm b), \\ \\sin(a \\pm b)", "\\sin 2a, \\ \\cos 2a", "\\sin x = m, \\ \\cos x = m"] },
         ],
       },
       {

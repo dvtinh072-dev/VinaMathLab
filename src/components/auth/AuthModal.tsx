@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { X, User, Shield, GraduationCap, Lock, KeyRound, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
 export function AuthModal() {
+  const router = useRouter();
   const { isAuthModalOpen, closeAuthModal, authModalConfig, loginStudent, loginAdmin, registerStudent, registerAdmin } = useAuth();
 
   const [activeRole, setActiveRole] = useState<"student" | "admin">("student");
@@ -58,7 +60,10 @@ export function AuthModal() {
         });
         if (res.success) {
           setSuccessMsg("Đăng ký tài khoản học sinh thành công!");
-          setTimeout(() => closeAuthModal(), 1200);
+          setTimeout(() => {
+            closeAuthModal();
+            router.push("/tai-khoan");
+          }, 1000);
         } else {
           setErrorMsg(res.error || "Đăng ký thất bại.");
         }
@@ -66,7 +71,10 @@ export function AuthModal() {
         const res = await loginStudent(studentCode, studentPassword);
         if (res.success) {
           setSuccessMsg("Đăng nhập học sinh thành công!");
-          setTimeout(() => closeAuthModal(), 1000);
+          setTimeout(() => {
+            closeAuthModal();
+            router.push("/tai-khoan");
+          }, 800);
         } else {
           setErrorMsg(res.error || "Đăng nhập thất bại.");
         }
@@ -82,7 +90,10 @@ export function AuthModal() {
         });
         if (res.success) {
           setSuccessMsg("Tạo tài khoản quản trị viên thành công!");
-          setTimeout(() => closeAuthModal(), 1200);
+          setTimeout(() => {
+            closeAuthModal();
+            router.push("/admin");
+          }, 1000);
         } else {
           setErrorMsg(res.error || "Đăng ký admin thất bại.");
         }
@@ -90,7 +101,10 @@ export function AuthModal() {
         const res = await loginAdmin(adminUsername, adminPassword);
         if (res.success) {
           setSuccessMsg("Đăng nhập Quản trị viên thành công!");
-          setTimeout(() => closeAuthModal(), 1000);
+          setTimeout(() => {
+            closeAuthModal();
+            router.push("/admin");
+          }, 800);
         } else {
           setErrorMsg(res.error || "Đăng nhập thất bại.");
         }

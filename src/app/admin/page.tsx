@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   Shield,
   GraduationCap,
@@ -39,7 +40,15 @@ import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 
 export default function AdminDashboardPage() {
+  const router = useRouter();
   const { user, isAdmin, openAuthModal, logout, updateAdminCredentials } = useAuth();
+
+  // TỰ ĐỘNG CHUYỂN HƯỚNG NẾU LÀ HỌC SINH (Học sinh không được vào trang quản trị)
+  useEffect(() => {
+    if (user && !isAdmin) {
+      router.replace("/tai-khoan");
+    }
+  }, [user, isAdmin, router]);
 
   const [activeTab, setActiveTab] = useState<"lessons" | "students" | "mistakes" | "backup" | "settings">("students");
   const [searchQuery, setSearchQuery] = useState("");
@@ -79,10 +88,12 @@ export default function AdminDashboardPage() {
     }
   }, [user]);
 
-  // Lấy dữ liệu người dùng & tiến độ học tập từ API
+  // Chỉ lấy dữ liệu quản trị khi là Admin
   useEffect(() => {
-    fetchAdminData();
-  }, [isAdmin, user]);
+    if (isAdmin) {
+      fetchAdminData();
+    }
+  }, [isAdmin]);
 
   const fetchAdminData = async () => {
     setIsLoading(true);
@@ -434,6 +445,62 @@ export default function AdminDashboardPage() {
       setIsUpdatingAdmin(false);
     }
   };
+
+  // 1. NẾU LÀ HỌC SINH ĐANG ĐĂNG NHẬP: TUYỆT ĐỐI KHÔNG HIỂN THỊ TRANG QUẢN TRỊ
+  if (user && !isAdmin) {
+    return (
+      <div className="min-h-[75vh] flex items-center justify-center p-4">
+        <div className="w-full max-w-md p-8 rounded-3xl bg-[#0e1526] border-2 border-cyan-500/40 text-center space-y-5 shadow-2xl animate-in zoom-in-95 duration-200">
+          <div className="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+            <GraduationCap className="w-8 h-8 animate-bounce" />
+          </div>
+
+          <div className="space-y-2">
+            <h2 className="text-xl font-black text-white">Bạn đang đăng nhập tài khoản Học sinh</h2>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              Xin chào <strong>{user.fullName || user.username}</strong>! Khu vực Quản trị chỉ dành cho Thầy Cô và Quản trị viên. Hệ thống đang chuyển hướng bạn về trang Sổ tay học tập cá nhân...
+            </p>
+          </div>
+
+          <div className="pt-2 flex justify-center">
+            <Link
+              href="/tai-khoan"
+              className="px-5 py-2.5 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black text-xs hover:scale-105 transition-all shadow-md shadow-cyan-500/30"
+            >
+              Về Trang Cá Nhân Học Sinh
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // 2. NẾU CHƯA ĐĂNG NHẬP: HIỂN THỊ KHUNG ĐĂNG NHẬP QUẢN TRỊ VIÊN
+  if (!isAdmin) {
+    return (
+      <div className="min-h-[75vh] flex items-center justify-center p-4">
+        <div className="w-full max-w-md p-8 rounded-3xl bg-[#0e1526] border-2 border-amber-500/40 text-center space-y-6 shadow-2xl animate-in zoom-in-95 duration-200">
+          <div className="w-16 h-16 mx-auto rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+            <Shield className="w-8 h-8" />
+          </div>
+
+          <div className="space-y-2">
+            <h2 className="text-xl font-black text-white">Khu Vực Quản Trị Viên (Admin)</h2>
+            <p className="text-xs text-slate-300">
+              Vui lòng đăng nhập với tài khoản Quản trị viên để truy cập trang quản lý bài học và theo dõi tiến độ học tập chi tiết của học sinh.
+            </p>
+          </div>
+
+          <button
+            onClick={() => openAuthModal("admin", "login")}
+            className="w-full py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm hover:from-amber-400 hover:to-yellow-300 shadow-lg shadow-amber-500/30 transition-all cursor-pointer"
+          >
+            Đăng Nhập Quản Trị Viên Ngay
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 pb-12">

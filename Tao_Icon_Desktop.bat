@@ -1,19 +1,19 @@
 @echo off
 chcp 65001 >nul
-title Tao Loi Tat VinaMath Ngoai Desktop
+title Tao Loi Tat VinaMath 2026 Ngoai Desktop
 
 echo ===================================================================
-echo             TẠO LỐI TẮT VINAMATH NGOÀI DESKTOP
+echo             TAO LOI TAT VINAMATH NGOAI MAN HINH CHINH (DESKTOP)
 echo ===================================================================
 echo.
-echo [*] Đang tạo biểu tượng lối tắt "VinaMath 2026" trên Desktop...
+echo [*] Dang tao bieu tuong loi tat VinaMath 2026 ngoai Desktop...
 
-powershell -Command "$ws = New-Object -ComObject WScript.Shell; $desktopPath = [Environment]::GetFolderPath('Desktop'); $s = $ws.CreateShortcut($desktopPath + '\VinaMath 2026.lnk'); $s.TargetPath = '%~dp0Chay_VinaMath.bat'; $s.WorkingDirectory = '%~dp0'; $s.Description = 'Hệ Thống Học Liệu Toán Học VinaMath 2026'; $s.Save()"
+cscript //nologo "%~dp0public\create_shortcut.vbs" "%~dp0"
 
 echo.
-echo [*] ĐÃ TẠO THÀNH CÔNG!
-echo     Bạn có thể ra ngoài màn hình chính (Desktop) và bấm đúp vào icon:
-echo     "VinaMath 2026" để mở trang web bất cứ lúc nào!
+echo [*] DA TAO LOI TAT THANH CONG!
+echo     Ban hay ra ngoai man hinh Desktop de thay icon "VinaMath 2026"
+echo     voi logo thuong hieu VinaMath 2026 sac net!
 echo ===================================================================
 echo.
 pause

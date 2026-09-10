@@ -28,9 +28,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "VinaMath | Nền Tảng Toán Học Tương Tác & Tự Học Thông Minh 2026",
   description: "Trang web học toán tương tác cho học sinh Lớp 6-12, luyện thi THPT & ĐGNL theo chương trình GDPT 2018 và SGK Kết nối tri thức 2026, tích hợp AI sinh câu hỏi.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: "black-translucent",
     title: "VinaMath",
   },
   formatDetection: {

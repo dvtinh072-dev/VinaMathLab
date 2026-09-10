@@ -1722,7 +1722,30 @@ export function GamifiedMathQuiz({
     const studentId = user?.id || user?.studentCode || user?.username;
     if (!studentId) return;
 
-    // 1. Khôi phục video position nếu chưa nạp
+    // 1. Tự động đồng bộ tiến độ mới nhất từ Supabase Cloud khi mở bài học trên bất kỳ thiết bị nào
+    fetch(`/api/student/progress?userId=${encodeURIComponent(studentId)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.progress) {
+          const p = data.progress;
+          if (p.solvedQuestions && typeof window !== "undefined") {
+            const clean = studentId.trim().toLowerCase();
+            localStorage.setItem(`vinamath_solved_questions_${clean}`, JSON.stringify(p.solvedQuestions));
+          }
+          if (p.lessons?.[lessonId]) {
+            const lProg = p.lessons[lessonId];
+            if (lProg.videoWatchedSeconds > 5 && activeVideoTime === 0) {
+              setActiveVideoTime(lProg.videoWatchedSeconds);
+            }
+            if (lProg.isVideoCompleted) {
+              setIsLessonVideoCompleted(true);
+            }
+          }
+        }
+      })
+      .catch(() => {});
+
+    // 1b. Khôi phục video position từ cache nếu chưa nạp
     const savedPos = getSavedVideoPosition(lessonId, studentId);
     if (savedPos > 5 && activeVideoTime === 0) {
       setActiveVideoTime(savedPos);

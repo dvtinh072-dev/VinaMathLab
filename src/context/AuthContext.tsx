@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
+import { getLocalStudentProgress, saveLocalStudentProgressUpdate, getLocalProgressStore } from "@/lib/studentProgressClient";
 
 export interface UserProfile {
   id: string;
@@ -52,6 +52,7 @@ interface AuthContextType {
   }) => Promise<{ success: boolean; error?: string; message?: string }>;
   logout: () => void;
   addExpAndCoins: (earnedExp: number, earnedCoins: number, currentStreak?: number) => Promise<void>;
+  refreshProfile: () => Promise<void>;
   isAuthModalOpen: boolean;
   authModalConfig: { defaultRole: "student" | "admin"; defaultTab: "login" | "register" };
   openAuthModal: (defaultRole?: "student" | "admin", defaultTab?: "login" | "register") => void;
@@ -72,14 +73,139 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     defaultTab: "login",
   });
 
-  // Tải trạng thái đăng nhập từ localStorage khi khởi động
+  // Hàm làm mới hồ sơ từ Cloud Database (Supabase)
+  const refreshProfile = async (currentUser?: UserProfile | null) => {
+    const targetUser = currentUser !== undefined ? currentUser : user;
+    if (!targetUser || targetUser.role !== "student") return;
+
+    const identifier = targetUser.id || targetUser.studentCode || targetUser.username || "";
+    if (!identifier) return;
+
+    try {
+      const res = await fetch(`/api/student/progress?userId=${encodeURIComponent(identifier)}`);
+      const data = await res.json();
+      if (data.success) {
+        const p = data.progress;
+        const prof = data.profile;
+
+        const bestExp = Math.max(targetUser.exp || 0, p?.exp || 0, prof?.exp || 0);
+        const bestCoins = Math.max(targetUser.coins || 0, p?.coins || 0, prof?.coins || 0);
+        const bestStreak = Math.max(targetUser.streak || 1, p?.streak || 1, prof?.streak || 1);
+
+        const updated: UserProfile = {
+          ...targetUser,
+          fullName: prof?.fullName || targetUser.fullName,
+          schoolName: prof?.schoolName || targetUser.schoolName,
+          schoolClass: prof?.schoolClass || targetUser.schoolClass,
+          grade: prof?.grade || targetUser.grade,
+          exp: bestExp,
+          coins: bestCoins,
+          streak: bestStreak,
+        };
+
+        saveUserSession(updated);
+
+        // Lưu progress cloud về localStorage của thiết bị này để dùng offline
+        if (p) {
+          saveLocalStudentProgressUpdate({
+            userId: updated.id,
+            studentCode: updated.studentCode,
+            username: updated.username,
+            fullName: updated.fullName,
+            schoolName: updated.schoolName,
+            schoolClass: updated.schoolClass,
+            totalExp: bestExp,
+            coins: bestCoins,
+            streak: bestStreak,
+            totalQuestions: 10,
+          });
+
+          // Cập nhật câu đã giải (solvedQuestions) vào localStorage thiết bị này
+          if (p.solvedQuestions && typeof window !== "undefined") {
+            const clean = identifier.trim().toLowerCase();
+            localStorage.setItem(`vinamath_solved_questions_${clean}`, JSON.stringify(p.solvedQuestions));
+          }
+        }
+      }
+    } catch (err) {
+      console.warn("Cloud sync on refresh warning:", err);
+    }
+  };
+
+  // Tải trạng thái đăng nhập từ localStorage và đồng bộ ngay với Cloud khi khởi động
   useEffect(() => {
     try {
+      // 1. Tự động đẩy tất cả tài khoản lưu trên trình duyệt này lên Supabase Cloud (cho phép trình duyệt khác đăng nhập ngay)
+      const localUsers = getLocalRegisteredUsers();
       const saved = localStorage.getItem("vinamath_auth_user");
+      const usersToSync = [...localUsers];
+      if (saved) {
+        try {
+          const parsedAuth = JSON.parse(saved);
+          if (
+            parsedAuth &&
+            !usersToSync.some(
+              (u) =>
+                u.id === parsedAuth.id ||
+                (parsedAuth.username && u.username?.toLowerCase() === parsedAuth.username.toLowerCase())
+            )
+          ) {
+            usersToSync.push(parsedAuth);
+          }
+        } catch {}
+      }
+
+      if (usersToSync.length > 0) {
+        fetch("/api/auth/sync-local-users", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ users: usersToSync }),
+        }).catch((err) => console.warn("Auto sync local users error:", err));
+      }
+
+      // 1b. Tự động đẩy toàn bộ tiến độ học tập cục bộ lên Supabase Cloud
+      try {
+        const localProgStore = getLocalProgressStore();
+        Object.values(localProgStore).forEach((p) => {
+          if (p && (p.userId || p.studentCode || p.username)) {
+            fetch("/api/student/progress", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(p),
+            }).catch(() => {});
+          }
+        });
+      } catch {}
+
+      // 2. Kéo danh sách tài khoản từ Supabase Cloud về localStorage để luôn có dữ liệu đa nền tảng
+      fetch("/api/auth/users")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && Array.isArray(data.users)) {
+            const currentLocal = getLocalRegisteredUsers();
+            const mergedMap = new Map<string, any>();
+            currentLocal.forEach((u) => {
+              const k = (u.id || u.username || "").toLowerCase();
+              if (k) mergedMap.set(k, u);
+            });
+            data.users.forEach((su: any) => {
+              const k = (su.id || su.username || "").toLowerCase();
+              if (k) {
+                const existing = mergedMap.get(k);
+                mergedMap.set(k, { ...existing, ...su });
+              }
+            });
+            localStorage.setItem(
+              "vinamath_local_registered_users",
+              JSON.stringify(Array.from(mergedMap.values()))
+            );
+          }
+        })
+        .catch(() => {});
+
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed && parsed.role === "student") {
-          const localUsers = getLocalRegisteredUsers();
           const localMatched = localUsers.find(
             (u) =>
               u.id === parsed.id ||
@@ -98,8 +224,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           parsed.exp = bestExp;
           parsed.coins = bestCoins;
           parsed.streak = bestStreak;
+
+          setUser(parsed);
+          // Tự động tải dữ liệu mới nhất từ Supabase Cloud để đồng bộ điểm số đã làm ở thiết bị khác
+          refreshProfile(parsed);
+        } else {
+          setUser(parsed);
         }
-        setUser(parsed);
       }
     } catch (e) {
       console.error("Failed to load user from localStorage", e);
@@ -282,6 +413,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       safeUser.streak = highestStreak;
 
       saveUserSession(safeUser);
+
+      // Đẩy ngay tài khoản này lên Supabase Cloud để các thiết bị khác cũng đăng nhập được
+      fetch("/api/auth/sync-local-users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ users: [localMatched] }),
+      }).catch(() => {});
+
       return { success: true };
     }
 
@@ -324,6 +463,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (matched) {
       const { password: _, ...safeUser } = matched;
       saveUserSession(safeUser);
+
+      // Đẩy ngay tài khoản admin này lên Supabase Cloud để các thiết bị khác cũng đăng nhập được
+      fetch("/api/auth/sync-local-users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ users: [matched] }),
+      }).catch(() => {});
+
       return { success: true };
     }
 
@@ -623,6 +770,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         updateAdminCredentials,
         logout,
         addExpAndCoins,
+        refreshProfile,
         isAuthModalOpen,
         authModalConfig,
         openAuthModal,

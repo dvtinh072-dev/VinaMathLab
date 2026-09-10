@@ -43,7 +43,7 @@ export async function POST(req: Request) {
           .select("*")
           .eq("role", "admin")
           .eq("password_hash", cleanPassword)
-          .or(`username.eq.${loginKey},email.eq.${loginKey}`)
+          .or(`username.ilike.${loginKey},email.ilike.${loginKey},id.eq.${loginKey}`)
           .maybeSingle();
 
         if (suUser && !error) {
@@ -70,7 +70,7 @@ export async function POST(req: Request) {
           .select("*")
           .eq("role", "student")
           .eq("password_hash", cleanPassword)
-          .or(`username.eq.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
+          .or(`username.ilike.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
           .maybeSingle();
 
         if (suUser && !error) {
@@ -177,13 +177,27 @@ export async function POST(req: Request) {
       );
     }
 
-    // Cập nhật last_login lên Supabase asynchronously
+    // Đảm bảo user được lưu / cập nhật trên Supabase Cloud
     try {
-      await supabase
-        .from("users")
-        .update({ last_login: new Date().toISOString() })
-        .eq("id", user.id);
-    } catch {}
+      await supabase.from("users").upsert({
+        id: user.id,
+        username: user.username?.toLowerCase(),
+        student_code: user.studentCode || null,
+        email: user.email || null,
+        password_hash: user.password || cleanPassword,
+        full_name: user.fullName || user.username,
+        role: user.role,
+        school_name: user.schoolName || null,
+        grade: user.grade || null,
+        school_class: user.schoolClass || null,
+        exp: user.exp || 0,
+        coins: user.coins || 0,
+        streak: user.streak || 1,
+        last_login: new Date().toISOString(),
+      }, { onConflict: "id" });
+    } catch (suErr) {
+      console.warn("Supabase upsert on login warning:", suErr);
+    }
 
     const { password: _, ...userWithoutPass } = user;
     return NextResponse.json({ success: true, user: userWithoutPass });

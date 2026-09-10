@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
 import { getDeletedIdentifiers, addDeletedIdentifiers } from "@/lib/deletedUsers";
+import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -43,6 +44,30 @@ export async function GET() {
       });
     } catch (dbErr) {
       console.warn("Prisma users query warning:", dbErr);
+    }
+
+    // 1b. Thử lấy từ Supabase Cloud Database (Đồng bộ đa thiết bị)
+    let suUsers: any[] = [];
+    try {
+      const { data } = await supabase.from("users").select("*");
+      if (data) {
+        suUsers = data.map((u: any) => ({
+          id: u.id,
+          username: u.username,
+          studentCode: u.student_code,
+          email: u.email,
+          fullName: u.full_name,
+          role: u.role,
+          grade: u.grade,
+          schoolClass: u.school_class,
+          exp: u.exp,
+          coins: u.coins,
+          streak: u.streak,
+          createdAt: u.created_at,
+        }));
+      }
+    } catch (suErr) {
+      console.warn("Supabase users query warning:", suErr);
     }
 
     // 2. Gộp danh sách người dùng từ cả DB và usersData.json để không bị mất bất kỳ tài khoản nào
@@ -87,6 +112,30 @@ export async function GET() {
       if (key) {
         const existing = userMap.get(key);
         userMap.set(key, { ...existing, ...u });
+      }
+    });
+
+    // Đưa users từ Supabase Cloud vào (ưu tiên số sao/exp cao nhất)
+    suUsers.forEach((u: any) => {
+      const idKey = u.id?.toLowerCase();
+      const usernameKey = u.username?.toLowerCase();
+      const codeKey = u.studentCode?.toLowerCase();
+
+      if (
+        (idKey && deletedSet.has(idKey)) ||
+        (usernameKey && deletedSet.has(usernameKey)) ||
+        (codeKey && deletedSet.has(codeKey))
+      ) {
+        return;
+      }
+
+      const key = u.id || usernameKey || u.studentCode;
+      if (key) {
+        const existing = userMap.get(key);
+        const bestExp = Math.max(existing?.exp || 0, u.exp || 0);
+        const bestCoins = Math.max(existing?.coins || 0, u.coins || 0);
+        const bestStreak = Math.max(existing?.streak || 1, u.streak || 1);
+        userMap.set(key, { ...existing, ...u, exp: bestExp, coins: bestCoins, streak: bestStreak });
       }
     });
 
@@ -160,8 +209,16 @@ export async function DELETE(req: Request) {
       }
     } catch {}
 
-    // 1. Đưa vào Blacklist vĩnh viễn
-    addDeletedIdentifiers(Array.from(identifiersToDelete));
+    // 1b. Xóa khỏi Supabase Cloud Database (Đồng bộ đa thiết bị)
+    try {
+      const idArr = Array.from(identifiersToDelete);
+      for (const val of idArr) {
+        await supabase.from("users").delete().or(`id.eq.${val},username.eq.${val.toLowerCase()},student_code.ilike.${val}`);
+        await supabase.from("student_progress").delete().or(`id.eq.${val},user_id.eq.${val},username.eq.${val.toLowerCase()}`);
+      }
+    } catch (suErr) {
+      console.warn("Supabase user delete warning:", suErr);
+    }
 
     // 2. Xóa khỏi Prisma DB nếu tồn tại
     try {

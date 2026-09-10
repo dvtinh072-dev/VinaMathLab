@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -159,7 +160,21 @@ export async function POST(req: Request) {
       }
     }
 
-    // 3. Cập nhật vào DB Prisma
+    // 3. Cập nhật vào Supabase Cloud Database (Đồng bộ đa thiết bị)
+    try {
+      await supabase.from("users").upsert({
+        id: adminUser.id,
+        username: updatedUsername.toLowerCase(),
+        password_hash: updatedPassword,
+        full_name: updatedFullName,
+        role: "admin",
+        email: adminUser.email || `${updatedUsername}@vinamath.edu.vn`,
+      });
+    } catch (suErr) {
+      console.warn("Supabase update admin credentials warning:", suErr);
+    }
+
+    // 3b. Cập nhật vào DB Prisma
     try {
       await prisma.user.upsert({
         where: { id: adminUser.id },

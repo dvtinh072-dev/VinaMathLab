@@ -276,6 +276,39 @@ export function saveLocalStudentProgressUpdate(params: {
   if (params.username) store[params.username.toLowerCase()] = existing;
 
   saveLocalProgressStore(store);
+
+  // Đồng bộ thời gian thực lên Cloud (Supabase) khi người dùng có thao tác học tập
+  const studentIdToSync = params.userId || params.studentCode || params.username;
+  if (studentIdToSync && studentIdToSync !== "guest") {
+    try {
+      fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: params.userId,
+          studentCode: params.studentCode,
+          username: params.username,
+          lessonId: params.lessonId,
+          gradeKey: params.gradeKey,
+          lessonTitle: params.lessonTitle,
+          addVideoSeconds: params.addVideoSeconds,
+          lastVideoPosition: params.lastVideoPosition,
+          isVideoCompleted: params.isVideoCompleted,
+          isCompleted: params.isCompleted,
+          score: params.score,
+          totalQuestions: params.totalQuestions,
+          wrongQuestion: params.wrongQuestion,
+          resolveQuestionId: params.resolveQuestionId,
+          solvedQuestionId: params.solvedQuestionId,
+          solvedExp: params.solvedExp,
+          totalExp: params.totalExp,
+          coins: params.coins,
+          streak: params.streak,
+        }),
+      }).catch(() => {});
+    } catch {}
+  }
+
   return existing;
 }
 

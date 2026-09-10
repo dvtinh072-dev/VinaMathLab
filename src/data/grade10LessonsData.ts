@@ -11,6 +11,80 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     bookChapter: "Chương I: Mệnh đề và tập hợp",
     scenarioTitle: "Tình huống thực tế: Khẳng định logic trong đời sống và các định lý toán học",
     scenarioFrames: [],
+    youtubeVideoId: "4dUuuV5yFvM",
+    youtubeVideoTitle: "Bài Giảng Video: Bài 1 - Mệnh đề (Tiết 1) - Toán 10 KNTT",
+    youtubeVideos: [
+      {
+        id: "4dUuuV5yFvM",
+        title: "Tiết 1: Mệnh đề & Mệnh đề phủ định"
+      },
+      {
+        id: "-BkRx0gm23o",
+        title: "Tiết 2: Mệnh đề kéo theo, tương đương & Kí hiệu ∀, ∃"
+      }
+    ],
+    videoQuestions: [
+      {
+        id: "vq-10.1.1",
+        title: "Ví dụ 1 (Tiết 1): Nhận biết câu là mệnh đề",
+        question: "Trong các câu sau, câu nào là một mệnh đề logic?",
+        options: [
+          "Số 17 là số nguyên tố.",
+          "Học sinh lớp 10 học giỏi quá!",
+          "Bạn đã làm xong bài tập về nhà chưa?",
+          "Hãy giữ trật tự và chú ý nghe giảng!"
+        ],
+        correctIndex: 0,
+        explanation: "\"Số 17 là số nguyên tố\" là một câu khẳng định có tính đúng sai rõ ràng (và là khẳng định đúng), nên là một mệnh đề. Các câu còn lại là câu cảm thán, câu hỏi và câu cầu khiến."
+      },
+      {
+        id: "vq-10.1.2",
+        title: "Ví dụ 2 (Tiết 1): Lập mệnh đề phủ định",
+        question: "Cho mệnh đề $P$: \"Tam giác $ABC$ là tam giác đều\". Phủ định $\\overline{P}$ của mệnh đề $P$ là gì?",
+        options: [
+          "Tam giác $ABC$ không phải là tam giác đều.",
+          "Tam giác $ABC$ là tam giác cân.",
+          "Tam giác $ABC$ là tam giác vuông.",
+          "Tam giác $ABC$ có ba cạnh không bằng nhau."
+        ],
+        correctIndex: 0,
+        explanation: "Phủ định của mệnh đề \"A là B\" là \"A không phải là B\". Do đó phủ định của $P$ là \"Tam giác ABC không phải là tam giác đều\"."
+      },
+      {
+        id: "vq-10.1.3",
+        title: "Ví dụ 3 (Tiết 2): Mệnh đề kéo theo và điều kiện cần, đủ",
+        question: "Cho định lý: \"Nếu tứ giác $ABCD$ là hình thoi thì tứ giác $ABCD$ có hai đường chéo vuông góc với nhau\". Khẳng định nào sau đây diễn đạt đúng định lý trên?",
+        options: [
+          "Tứ giác $ABCD$ là hình thoi là điều kiện đủ để có hai đường chéo vuông góc với nhau.",
+          "Tứ giác $ABCD$ là hình thoi là điều kiện cần để có hai đường chéo vuông góc với nhau.",
+          "Tứ giác $ABCD$ có hai đường chéo vuông góc với nhau là điều kiện đủ để nó là hình thoi.",
+          "Tứ giác $ABCD$ là hình thoi là điều kiện cần và đủ để hai đường chéo vuông góc với nhau."
+        ],
+        correctIndex: 0,
+        explanation: "Trong mệnh đề kéo theo $P \\Rightarrow Q$, mệnh đề giả thiết $P$ là điều kiện đủ để có $Q$, và kết luận $Q$ là điều kiện cần để có $P$. Vì vậy \"Tứ giác ABCD là hình thoi\" là điều kiện đủ."
+      },
+      {
+        id: "vq-10.1.4",
+        title: "Ví dụ 4 (Tiết 2): Phủ định mệnh đề chứa kí hiệu với mọi (∀)",
+        question: "Mệnh đề phủ định của mệnh đề \"$\\forall x \\in \\mathbb{R},\\ x^2 + 1 > 0$\" là:",
+        options: [
+          "\"$\\exists x \\in \\mathbb{R},\\ x^2 + 1 \\le 0$\"",
+          "\"$\\forall x \\in \\mathbb{R},\\ x^2 + 1 \\le 0$\"",
+          "\"$\\exists x \\in \\mathbb{R},\\ x^2 + 1 < 0$\"",
+          "\"$\\forall x \\in \\mathbb{R},\\ x^2 + 1 < 0$\""
+        ],
+        correctIndex: 0,
+        explanation: "Quy tắc phủ định mệnh đề với mọi: Phủ định của \"$\\forall x \\in X, P(x)$\" là \"$\\exists x \\in X, \\overline{P(x)}$\". Phủ định của dấu $>$ là dấu $\\le$."
+      }
+    ],
+    tips: [
+      "Quy tắc phủ định lượng từ: Phủ định của $\\forall$ chuyển thành $\\exists$, phủ định của $\\exists$ chuyển thành $\\forall$. Đồng thời phải phủ định cả tính chất phía sau ($>$ thành $\\le$, $<$ thành $\\ge$, $=$ thành $\\ne$).",
+      "Mẹo nhớ 'Điều kiện cần' và 'Điều kiện đủ' trong $P \\Rightarrow Q$: Giả thiết $P$ đứng trước là ĐỦ; Kết luận $Q$ đứng sau là CẦN (Đầu xuôi ĐỦ - Đuôi lọt CẦN)."
+    ],
+    traps: [
+      "Bẫy mệnh đề kéo theo $P \\Rightarrow Q$: Mệnh đề $P \\Rightarrow Q$ chỉ sai khi $P$ đúng mà $Q$ sai. Khi giả thiết $P$ sai thì bất kể $Q$ đúng hay sai, mệnh đề $P \\Rightarrow Q$ luôn đúng theo định nghĩa logic.",
+      "Bẫy đảo: Mệnh đề đảo $Q \\Rightarrow P$ của một mệnh đề đúng $P \\Rightarrow Q$ chưa chắc đã đúng (ví dụ: chia hết cho 4 thì chia hết cho 2 là đúng, nhưng đảo lại chia hết cho 2 thì chia hết cho 4 là sai)."
+    ],
     theorySections: [
       {
         index: "1",
@@ -489,6 +563,84 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Khảo sát và phân loại nhóm học sinh bằng ngôn ngữ tập hợp",
   "scenarioFrames": [],
   "interactiveType": "geometry",
+    youtubeVideoId: "emLiXccjys4",
+    youtubeVideoTitle: "Bài Giảng Video: Bài 2 - Tập hợp và các phép toán trên tập hợp (Tiết 1) - Toán 10 KNTT",
+    youtubeVideos: [
+      {
+        id: "emLiXccjys4",
+        title: "Tiết 1: Khái niệm tập hợp & Tập hợp con"
+      },
+      {
+        id: "qR-rwgAp1Uw",
+        title: "Tiết 2: Các tập hợp con của ℝ (Khoảng, Đoạn, Nửa khoảng)"
+      },
+      {
+        id: "xB_nHKTX444",
+        title: "Tiết 3: Các phép toán Giao, Hợp, Hiệu, Phần bù"
+      }
+    ],
+    videoQuestions: [
+      {
+        id: "vq-10.2.1",
+        title: "Ví dụ 1 (Tiết 1): Đếm số tập hợp con của một tập hợp",
+        question: "Tập hợp $A = \\{1; 2; 3\\}$ có tất cả bao nhiêu tập hợp con?",
+        options: [
+          "8",
+          "6",
+          "7",
+          "9"
+        ],
+        correctIndex: 0,
+        explanation: "Công thức tính số tập hợp con của một tập hợp có $n$ phần tử là $2^n$. Với $n = 3$, số tập hợp con của $A$ là $2^3 = 8$ (gồm $\\emptyset$, 3 tập có 1 phần tử, 3 tập có 2 phần tử và chính tập $A$)."
+      },
+      {
+        id: "vq-10.2.2",
+        title: "Ví dụ 2 (Tiết 2): Xác định tập con của số thực ℝ",
+        question: "Tập hợp các số thực $x$ thỏa mãn $-2 \\le x < 5$ được viết dưới dạng khoảng, đoạn, nửa khoảng là:",
+        options: [
+          "$[-2; 5)$",
+          "$(-2; 5]$",
+          "$[-2; 5]$",
+          "$(-2; 5)$"
+        ],
+        correctIndex: 0,
+        explanation: "Dấu có chứa dấu bằng '$\\le$' biểu diễn bằng ngoặc vuông '['; dấu nghiêm ngặt '$<$' biểu diễn bằng ngoặc tròn ')'. Do đó tập hợp là nửa khoảng $[-2; 5)$."
+      },
+      {
+        id: "vq-10.2.3",
+        title: "Ví dụ 3 (Tiết 3): Giao của hai tập hợp số",
+        question: "Cho hai tập hợp $A = (-3; 4]$ và $B = [1; 6)$. Khi đó tập hợp giao $A \\cap B$ là:",
+        options: [
+          "$[1; 4]$",
+          "$(-3; 6)$",
+          "$[1; 4)$",
+          "$(-3; 1]$"
+        ],
+        correctIndex: 0,
+        explanation: "Giao $A \\cap B$ gồm các phần tử thuộc cả $A$ và $B$. Biểu diễn trên trục số, ta lấy phần chung giữa $(-3; 4]$ và $[1; 6)$, kết quả là $[1; 4]$."
+      },
+      {
+        id: "vq-10.2.4",
+        title: "Ví dụ 4 (Tiết 3): Hiệu của hai tập hợp và phần bù",
+        question: "Cho tập hợp $A = [-2; 5)$ và $B = [1; 7]$. Khi đó tập hợp hiệu $A \\setminus B$ là:",
+        options: [
+          "$[-2; 1)$",
+          "$[-2; 1]$",
+          "$(5; 7]$",
+          "$[-2; 7]$"
+        ],
+        correctIndex: 0,
+        explanation: "Hiệu $A \\setminus B$ gồm các phần tử thuộc $A$ nhưng không thuộc $B$. Vì $B$ chứa điểm $1$ (ngoặc vuông $[1$), nên phần tử $1$ bị loại khỏi $A$, do đó tại mốc $1$ trở thành ngoặc tròn ')'. Kết quả là $[-2; 1)$."
+      }
+    ],
+    tips: [
+      "Quy tắc ngoặc khi tìm hiệu $A \\setminus B$: Tại các mốc biên của $B$, nếu $B$ lấy (ngoặc vuông) thì $A \\setminus B$ bỏ (chuyển thành ngoặc tròn); ngược lại nếu $B$ không lấy (ngoặc tròn) thì $A \\setminus B$ giữ lại (chuyển thành ngoặc vuông).",
+      "Vẽ trục số minh họa: Khi làm các phép toán giao, hợp, hiệu trên các khoảng đoạn, hãy luôn vẽ một trục số chung và dùng quy ước gạch bỏ phần không lấy để tránh nhầm lẫn các mốc biên."
+    ],
+    traps: [
+      "Bẫy tập hợp rỗng: Tập hợp rỗng $\\emptyset$ là tập hợp con của mọi tập hợp ($ \\emptyset \\subset A $ với mọi $A$), nhưng $\\emptyset$ không phải là phần tử của $A$ (trừ khi $A$ là tập hợp chứa các tập hợp con).",
+      "Bẫy ngoặc vuông và ngoặc tròn tại vô cực: Tại $-\\infty$ và $+\\infty$ BẮT BUỘC luôn luôn dùng ngoặc tròn, tuyệt đối không dùng ngoặc vuông."
+    ],
   "theorySections": [
     {
       "index": "1",
@@ -2159,6 +2311,76 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "venn",
+    youtubeVideoId: "JySXqEuzA_Q",
+    youtubeVideoTitle: "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương I - Toán 10 KNTT",
+    youtubeVideos: [
+      {
+        id: "JySXqEuzA_Q",
+        title: "Bài giảng: Chữa bài tập cuối chương I (Mệnh đề & Tập hợp)"
+      }
+    ],
+    videoQuestions: [
+      {
+        id: "vq-10.ot1.1",
+        title: "Ví dụ 1: Mệnh đề tương đương trong hình học",
+        question: "Cho tam giác $ABC$. Trong các khẳng định sau, khẳng định nào là một mệnh đề tương đương đúng?",
+        options: [
+          "Tam giác $ABC$ là tam giác đều khi và chỉ khi tam giác $ABC$ có ba góc bằng nhau.",
+          "Tam giác $ABC$ là tam giác vuông khi và chỉ khi tam giác $ABC$ có một góc tù.",
+          "Tam giác $ABC$ là tam giác cân khi và chỉ khi tam giác $ABC$ có hai đường cao bằng nhau và một góc bằng $60^\\circ$.",
+          "Tam giác $ABC$ có một góc vuông khi và chỉ khi $AB + AC = BC$."
+        ],
+        correctIndex: 0,
+        explanation: "Tam giác đều tương đương với việc có 3 góc bằng nhau (đều bằng $60^\\circ$). Mệnh đề tương đương này đúng ở cả hai chiều kéo theo."
+      },
+      {
+        id: "vq-10.ot1.2",
+        title: "Ví dụ 2: Tìm tập xác định dưới dạng tập hợp con của ℝ",
+        question: "Tập xác định của hàm số $y = \\sqrt{x - 3} + \\frac{1}{7 - x}$ là:",
+        options: [
+          "$[3; 7) \\cup (7; +\\infty)$",
+          "$[3; 7]$",
+          "$(3; 7)$",
+          "$[3; +\\infty)$"
+        ],
+        correctIndex: 0,
+        explanation: "Điều kiện xác định: $x - 3 \\ge 0 \\Leftrightarrow x \\ge 3$ và $7 - x \\ne 0 \\Leftrightarrow x \\ne 7$. Kết hợp lại ta được tập xác định là $D = [3; 7) \\cup (7; +\\infty)$."
+      },
+      {
+        id: "vq-10.ot1.3",
+        title: "Ví dụ 3: Xác định giao và hợp của hai khoảng đoạn",
+        question: "Cho hai tập hợp $A = [-4; 2)$ và $B = [-1; 5]$. Khi đó tập hợp $A \\cup B$ là:",
+        options: [
+          "$[-4; 5]$",
+          "$[-1; 2)$",
+          "$[-4; 2)$",
+          "$(-1; 5]$"
+        ],
+        correctIndex: 0,
+        explanation: "Hợp $A \\cup B$ là tập hợp chứa tất cả các phần tử thuộc ít nhất một trong hai tập hợp $A, B$. Trải trên trục số từ $-4$ đến $5$, ta được $[-4; 5]$."
+      },
+      {
+        id: "vq-10.ot1.4",
+        title: "Ví dụ 4: Bài toán thực tế sử dụng Sơ đồ Ven",
+        question: "Lớp 10A có 40 học sinh, trong đó có 25 bạn thích môn Toán, 20 bạn thích môn Văn và 12 bạn thích cả hai môn Toán và Văn. Hỏi lớp 10A có bao nhiêu bạn không thích cả hai môn trên?",
+        options: [
+          "7 bạn",
+          "5 bạn",
+          "8 bạn",
+          "10 bạn"
+        ],
+        correctIndex: 0,
+        explanation: "Số học sinh thích ít nhất một môn Toán hoặc Văn là: $|A \\cup B| = |A| + |B| - |A \\cap B| = 25 + 20 - 12 = 33$ học sinh. Do đó số bạn không thích cả hai môn là $40 - 33 = 7$ bạn."
+      }
+    ],
+    tips: [
+      "Công thức hợp hai tập hợp hữu hạn (Sơ đồ Ven): $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$. Nhớ trừ đi phần giao vì nó đã bị đếm hai lần.",
+      "Kiểm tra điều kiện rỗng khi tìm giao: $A \\cap B = \\emptyset$ xảy ra khi khoảng này nằm hoàn toàn bên trái hoặc bên phải khoảng kia mà không có điểm chung."
+    ],
+    traps: [
+      "Bẫy đếm trùng lặp trong bài toán Ven: Khi đề bài cho '25 bạn thích Toán' thì số này đã bao gồm cả 12 bạn thích cả Toán và Văn. Tránh lấy 25 + 20 rồi so sánh với 40 mà quên trừ phần giao.",
+      "Bẫy dấu ngoặc vuông và tròn tại mốc chia tập hợp: Khi giải bài toán tìm tham số $m$ để $A \\cap B = \\emptyset$, cần xem xét cực kỳ kỹ tại điểm tiếp giáp có thể xảy ra hay không (nếu cả 2 đều là ngoặc vuông thì sẽ có chung điểm tiếp giáp đó)."
+    ],
   "quizQuestions": [
     {
       "id": "ai-10.1.1",

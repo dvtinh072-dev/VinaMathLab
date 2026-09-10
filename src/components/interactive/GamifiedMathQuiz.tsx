@@ -974,10 +974,11 @@ export function GamifiedMathQuiz({
 
   const effectiveQuestions = activeExam ? activeExam.quizQuestions : questions;
   const initialList = effectiveQuestions && effectiveQuestions.length > 0 ? effectiveQuestions : defaultSgkQuestions;
-  const hasTheory = Boolean(theorySections && theorySections.length > 0);
+  const hasTheory = Boolean((theorySections && theorySections.length > 0) || activeVideoId);
 
-  // Chế độ: 'theory' (Kiến thức cần nhớ), 'sgk' (chuẩn SGK) hoặc 'ai' (Luyện tập thêm)
+  // Chế độ: 'theory' (Kiến thức cần nhớ / Video), 'sgk' (chuẩn SGK / Đề thi) hoặc 'ai' (Luyện tập thêm)
   const [quizMode, setQuizMode] = useState<"theory" | "sgk" | "ai">(() => {
+    if (hasExamSets) return "sgk";
     return hasTheory ? "theory" : "sgk";
   });
   const [activeQuizList, setActiveQuizList] = useState<QuizQuestion[]>([]);
@@ -2869,7 +2870,7 @@ export function GamifiedMathQuiz({
           )}
 
           {/* 3. BẢN GIÁO ÁN CHỮ ĐÃ ĐƯỢC ĐÓNG GÓI (CHỈ HIỂN THỊ KHI BẬT HOẶC KHI BÀI CHƯA CÓ VIDEO) */}
-          {(!activeVideoId || showFullText) && (
+          {Boolean(theorySections && theorySections.length > 0 && (!activeVideoId || showFullText)) && (
             <div className="space-y-4 animate-in fade-in-50 duration-200">
               {/* Banner giới thiệu */}
               <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/60 border border-emerald-500/40 shadow-lg flex flex-wrap items-center justify-between gap-3">

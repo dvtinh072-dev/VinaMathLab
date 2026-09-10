@@ -124,6 +124,7 @@ export default function TopicLessonPage({ params }: Props) {
           theorySections={lessonDetail.theorySections}
           youtubeVideoId={lessonDetail.youtubeVideoId}
           youtubeVideoTitle={lessonDetail.youtubeVideoTitle}
+          youtubeVideos={lessonDetail.youtubeVideos}
           videoQuestions={lessonDetail.videoQuestions}
           showTextTheory={lessonDetail.showTextTheory}
           tips={lessonDetail.tips}

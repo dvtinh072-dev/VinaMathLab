@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import {
   Trophy,
@@ -95,6 +95,7 @@ interface Props {
   theorySections?: TheorySection[];
   youtubeVideoId?: string;
   youtubeVideoTitle?: string;
+  youtubeVideos?: { id: string; title: string }[];
   videoQuestions?: VideoCheckpointQuestion[];
   showTextTheory?: boolean;
   tips?: string[];
@@ -877,6 +878,7 @@ export function GamifiedMathQuiz({
   theorySections,
   youtubeVideoId,
   youtubeVideoTitle,
+  youtubeVideos,
   videoQuestions,
   showTextTheory = false,
   tips,
@@ -888,6 +890,19 @@ export function GamifiedMathQuiz({
   const hasExamSets = Boolean(examSets && examSets.length > 0);
   const [selectedExamIndex, setSelectedExamIndex] = useState(0);
   const activeExam = hasExamSets && examSets ? examSets[selectedExamIndex] : null;
+
+  // Hỗ trợ một hoặc nhiều video bài giảng (Ví dụ: Tiết 1, Tiết 2)
+  const [selectedVideoIndex, setSelectedVideoIndex] = useState<number>(0);
+  const effectiveVideosList = useMemo(() => {
+    if (youtubeVideos && youtubeVideos.length > 0) return youtubeVideos;
+    if (youtubeVideoId) return [{ id: youtubeVideoId, title: youtubeVideoTitle || `Video Bài Giảng: ${lessonTitle}` }];
+    return [];
+  }, [youtubeVideos, youtubeVideoId, youtubeVideoTitle, lessonTitle]);
+
+  const currentVideo = effectiveVideosList[selectedVideoIndex] || effectiveVideosList[0];
+  const activeVideoId = currentVideo?.id || youtubeVideoId;
+  const activeVideoTitle = currentVideo?.title || youtubeVideoTitle || `Video Bài Giảng: ${lessonTitle}`;
+  const hasMultipleVideos = effectiveVideosList.length > 1;
 
   // Quản lý xem video, ví dụ minh họa và bật/tắt lý thuyết chữ
   const [showFullText, setShowFullText] = useState<boolean>(showTextTheory);
@@ -1232,7 +1247,7 @@ export function GamifiedMathQuiz({
   // THEO DÕI THỜI GIAN XEM VIDEO & ĐỒNG BỘ TIẾN ĐỘ HỌC SINH
   // =========================================================================
   useEffect(() => {
-    if (!youtubeVideoId || quizMode !== "theory") return;
+    if (!activeVideoId || quizMode !== "theory") return;
 
     const studentId = user?.id || user?.studentCode || user?.username;
     let currentWatchedPos = Math.max(0, activeVideoTime || 0);
@@ -1292,7 +1307,7 @@ export function GamifiedMathQuiz({
       // Gửi thêm 5 giây khi rời tab video
       syncVideoTime(5);
     };
-  }, [youtubeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle, activeVideoTime]);
+  }, [activeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle, activeVideoTime]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
   const recordMistake = async (
@@ -2147,8 +2162,8 @@ export function GamifiedMathQuiz({
                     : "text-emerald-400 hover:text-white"
                 }`}
               >
-                {youtubeVideoId ? <Video className="w-3 h-3 text-rose-400" /> : <BookOpen className="w-3 h-3 text-emerald-300" />}
-                <span>{youtubeVideoId ? "🎬 Video bài giảng" : "📖 Kiến thức cần nhớ"}</span>
+                {activeVideoId ? <Video className="w-3 h-3 text-rose-400" /> : <BookOpen className="w-3 h-3 text-emerald-300" />}
+                <span>{activeVideoId ? "🎬 Video bài giảng" : "📖 Kiến thức cần nhớ"}</span>
               </button>
             )}
 
@@ -2502,7 +2517,7 @@ export function GamifiedMathQuiz({
       {quizMode === "theory" ? (
         <div className="space-y-4 pt-1 animate-in fade-in-50 duration-200">
           {/* 1. KHUNG NHÚNG VIDEO BÀI GIẢNG YOUTUBE (NẾU CÓ) */}
-          {youtubeVideoId && (
+          {(activeVideoId || hasMultipleVideos) && (
             <div className="space-y-3 p-3 sm:p-5 rounded-2xl bg-[#0b1120] border-2 border-rose-500/40 shadow-2xl">
               {/* Header Video */}
               <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800">
@@ -2512,7 +2527,7 @@ export function GamifiedMathQuiz({
                   </span>
                   <div>
                     <h2 className="text-xs sm:text-sm font-black text-white flex items-center gap-1.5">
-                      <span>{youtubeVideoTitle || `Video Bài Giảng: ${lessonTitle}`}</span>
+                      <span>{activeVideoTitle || youtubeVideoTitle || `Video Bài Giảng: ${lessonTitle}`}</span>
                       <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40 uppercase">
                         Trực Quan
                       </span>
@@ -2563,6 +2578,38 @@ export function GamifiedMathQuiz({
                   )}
                 </div>
               </div>
+
+              {/* Thanh chọn tiết học / video bài giảng khi bài có nhiều video */}
+              {hasMultipleVideos && (
+                <div className="flex flex-wrap items-center gap-2 p-2 rounded-xl bg-slate-900/90 border border-slate-700/70 shadow-sm animate-in fade-in duration-200">
+                  <span className="text-[11px] font-bold text-slate-300 pl-1 flex items-center gap-1.5">
+                    <Video className="w-3.5 h-3.5 text-rose-400" />
+                    <span>Chọn tiết học / video bài giảng:</span>
+                  </span>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {effectiveVideosList.map((vid: { id: string; title: string }, idx: number) => {
+                      const isSelected = selectedVideoIndex === idx;
+                      return (
+                        <button
+                          key={vid.id || idx}
+                          onClick={() => {
+                            setSelectedVideoIndex(idx);
+                            setActiveVideoTime(0);
+                          }}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                            isSelected
+                              ? "bg-gradient-to-r from-rose-600 to-pink-500 text-white shadow-md shadow-rose-500/30 border border-rose-400"
+                              : "bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700"
+                          }`}
+                        >
+                          <PlayCircle className={`w-3.5 h-3.5 ${isSelected ? "text-white" : "text-rose-400"}`} />
+                          <span>{vid.title}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               {/* Thông báo học sinh đã xem hoàn thành video */}
               {isLessonVideoCompleted && (
@@ -2617,7 +2664,7 @@ export function GamifiedMathQuiz({
 
               {/* Video Embed Frame Responsive 16:9 */}
               {(() => {
-                const effectiveVideoId = cleanYouTubeId(youtubeVideoId);
+                const effectiveVideoId = cleanYouTubeId(activeVideoId);
                 if (!effectiveVideoId) return null;
 
                 const iframeSrc = `https://www.youtube.com/embed/${effectiveVideoId}?rel=0${
@@ -2631,7 +2678,7 @@ export function GamifiedMathQuiz({
                         key={`${effectiveVideoId}-${activeVideoTime}`}
                         className="w-full h-full"
                         src={iframeSrc}
-                        title={youtubeVideoTitle || lessonTitle}
+                        title={activeVideoTitle || lessonTitle}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
@@ -2660,10 +2707,9 @@ export function GamifiedMathQuiz({
                             saveVideoPosition(lessonId, studentId, 0, false);
                             setActiveVideoTime(0);
                           }}
-                          className="inline-flex items-center gap-1 text-[11px] text-slate-400 hover:text-cyan-300 transition-colors"
+                          className="text-[11px] text-slate-400 hover:text-rose-400 underline cursor-pointer"
                         >
-                          <RotateCcw className="w-3 h-3" />
-                          <span>Xem lại từ đầu video</span>
+                          Xem lại từ đầu
                         </button>
                       )}
                     </div>
@@ -2823,7 +2869,7 @@ export function GamifiedMathQuiz({
           )}
 
           {/* 3. BẢN GIÁO ÁN CHỮ ĐÃ ĐƯỢC ĐÓNG GÓI (CHỈ HIỂN THỊ KHI BẬT HOẶC KHI BÀI CHƯA CÓ VIDEO) */}
-          {(!youtubeVideoId || showFullText) && (
+          {(!activeVideoId || showFullText) && (
             <div className="space-y-4 animate-in fade-in-50 duration-200">
               {/* Banner giới thiệu */}
               <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/60 border border-emerald-500/40 shadow-lg flex flex-wrap items-center justify-between gap-3">

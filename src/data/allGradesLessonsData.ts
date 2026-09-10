@@ -80,6 +80,11 @@ export interface VideoCheckpointQuestion {
   explanation: string;
 }
 
+export interface VideoLessonItem {
+  id: string;
+  title: string;
+}
+
 export interface DetailedLessonData {
   id: string;
   lessonNumber: number;
@@ -90,6 +95,7 @@ export interface DetailedLessonData {
   theorySections: TheorySection[];
   youtubeVideoId?: string;
   youtubeVideoTitle?: string;
+  youtubeVideos?: VideoLessonItem[];
   videoQuestions?: VideoCheckpointQuestion[];
   showTextTheory?: boolean;
   tips?: string[];

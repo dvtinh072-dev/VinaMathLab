@@ -8,6 +8,72 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     "bookChapter": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn",
     "scenarioTitle": "Tình huống: Tính số tiền mua vé và tọa độ giao điểm trên bản đồ",
     "scenarioFrames": [],
+    "youtubeVideoId": "nDqC-YWY2ik",
+    "youtubeVideoTitle": "Bài Giảng Video: Khái Niệm Phương Trình Bậc Nhất Hai Ẩn (Tiết 1) - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "nDqC-YWY2ik",
+        "title": "Tiết 1: Khái niệm phương trình bậc nhất hai ẩn"
+      },
+      {
+        "id": "bppVKFQ1zyw",
+        "title": "Tiết 2 & 3: Hệ hai phương trình bậc nhất hai ẩn"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.1.1",
+        "title": "Ví dụ 1: Nhận biết phương trình bậc nhất hai ẩn",
+        "question": "Trong các phương trình sau, phương trình nào là phương trình bậc nhất hai ẩn?",
+        "options": [
+          "$2x - 3y = 5$",
+          "$x^2 + 2y = 0$",
+          "$\\frac{2}{x} + y = 1$",
+          "$0x + 0y = 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình bậc nhất hai ẩn có dạng $ax + by = c$ với $a \\ne 0$ hoặc $b \\ne 0$. Do đó $2x - 3y = 5$ là phương trình bậc nhất hai ẩn (với $a = 2, b = -3, c = 5$)."
+      },
+      {
+        "id": "vq-9.1.2",
+        "title": "Ví dụ 2: Kiểm tra cặp số là nghiệm của phương trình",
+        "question": "Cặp số nào sau đây là một nghiệm của phương trình $2x - y = 1$?",
+        "options": [
+          "$(1; 1)$",
+          "$(0,5; 3)$",
+          "$(2; 1)$",
+          "$(-1; 1)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1, y = 1$ vào vế trái: $2(1) - 1 = 1$ (bằng vế phải). Vậy cặp số $(1; 1)$ là một nghiệm của phương trình."
+      },
+      {
+        "id": "vq-9.1.3",
+        "title": "Ví dụ 3: Kiểm tra nghiệm của hệ hai phương trình bậc nhất hai ẩn",
+        "question": "Cặp số $(x; y) = (2; 1)$ là nghiệm của hệ phương trình nào dưới đây?",
+        "options": [
+          "$\\begin{cases} 2x - y = 3 \\\\ x + 3y = 5 \\end{cases}$",
+          "$\\begin{cases} 2x + y = 3 \\\\ x - 3y = 5 \\end{cases}$",
+          "$\\begin{cases} x - y = 2 \\\\ 2x + y = 3 \\end{cases}$",
+          "$\\begin{cases} 3x - y = 4 \\\\ x + y = 2 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 2, y = 1$ vào phương trình thứ nhất: $2(2) - 1 = 3$ (thỏa mãn); thay vào phương trình thứ hai: $2 + 3(1) = 5$ (thỏa mãn). Vậy $(2; 1)$ là nghiệm của hệ."
+      },
+      {
+        "id": "vq-9.1.4",
+        "title": "Ví dụ 4: Ý nghĩa hình học về số nghiệm của hệ phương trình",
+        "question": "Hai đường thẳng $d_1: 2x - y = 1$ và $d_2: 2x - y = 3$ song song với nhau. Khi đó hệ phương trình $\\begin{cases} 2x - y = 1 \\\\ 2x - y = 3 \\end{cases}$ có bao nhiêu nghiệm?",
+        "options": [
+          "Vô nghiệm (0 nghiệm)",
+          "Có nghiệm duy nhất (1 nghiệm)",
+          "Có 2 nghiệm phân biệt",
+          "Có vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số nghiệm của hệ bằng số giao điểm của hai đường thẳng biểu diễn tập nghiệm. Vì hai đường thẳng song song không có điểm chung nên hệ phương trình vô nghiệm."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",
@@ -67,8 +133,14 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "exampleSolution": "• Bước 1 (Xét vị trí tương đối): Hai đường thẳng $d_1: y = -x + 3$ và $d_2: y = -x + 5$ có cùng hệ số góc $-1$ và tung độ gốc khác nhau ($3 \\ne 5$) nên $d_1 \\parallel d_2$.\n• Bước 2 (Kết luận số nghiệm): Vì hai đường thẳng song song không có điểm chung nên hệ phương trình đã cho vô nghiệm."
       }
     ],
-    "tips": [],
-    "traps": [],
+    "tips": [
+      "Phương trình bậc nhất hai ẩn ax + by = c luôn có vô số nghiệm và tập nghiệm được biểu diễn bởi một đường thẳng trên mặt phẳng tọa độ.",
+      "Để kiểm tra một cặp số (x₀; y₀) có là nghiệm của hệ phương trình hay không, ta thay vào TẤT CẢ các phương trình của hệ: cặp số phải thỏa mãn đồng thời cả hai phương trình."
+    ],
+    "traps": [
+      "BẪY ĐIỀU KIỆN PHƯƠNG TRÌNH: a và b không được đồng thời bằng 0 (a² + b² ≠ 0). Phương trình 0x + 0y = c không phải là phương trình bậc nhất hai ẩn.",
+      "BẪY THỨ TỰ TỌA ĐỘ: Cặp nghiệm viết dưới dạng (x; y), trong đó hoành độ x đứng trước, tung độ y đứng sau. Chú ý không viết ngược (y; x)."
+    ],
     "quizQuestions": [
       {
         "id": "quiz-9.1.1",
@@ -219,6 +291,72 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     "bookChapter": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn",
     "scenarioTitle": "Tình huống: Tìm số lượng đồ dùng học tập và vận tốc ca nô",
     "scenarioFrames": [],
+    "youtubeVideoId": "_n4Ixg8j7lU",
+    "youtubeVideoTitle": "Bài Giảng Video: Giải Hệ Hai Phương Trình Bậc Nhất Hai Ẩn (Tiết 1 - Phương Pháp Thế) - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "_n4Ixg8j7lU",
+        "title": "Tiết 1: Phương pháp thế giải hệ hai phương trình"
+      },
+      {
+        "id": "cWtyBB_tYA8",
+        "title": "Tiết 2: Phương pháp cộng đại số giải hệ phương trình"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.2.1",
+        "title": "Ví dụ 1: Biểu diễn ẩn theo ẩn còn lại trong phương pháp thế",
+        "question": "Từ phương trình $x - 3y = 2$, biểu diễn ẩn $x$ theo ẩn $y$ ta được:",
+        "options": [
+          "$x = 3y + 2$",
+          "$x = -3y + 2$",
+          "$x = 3y - 2$",
+          "$x = \\frac{y + 2}{3}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chuyển $-3y$ sang vế phải đổi dấu thành $+3y$, ta được: $x = 3y + 2$."
+      },
+      {
+        "id": "vq-9.2.2",
+        "title": "Ví dụ 2: Giải hệ phương trình bằng phương pháp thế",
+        "question": "Nghiệm của hệ phương trình $\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$ là:",
+        "options": [
+          "$(5; 1)$",
+          "$(1; 5)$",
+          "$(2; 3)$",
+          "$(8; 2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Từ PT 1: $x = 3y + 2$. Thế vào PT 2: $2(3y + 2) + y = 11 \\Rightarrow 7y + 4 = 11 \\Rightarrow y = 1$. Khi đó $x = 3(1) + 2 = 5$."
+      },
+      {
+        "id": "vq-9.2.3",
+        "title": "Ví dụ 3: Giải hệ phương trình bằng phương pháp cộng đại số",
+        "question": "Nghiệm của hệ phương trình $\\begin{cases} 2x - 3y = 1 \\\\ 4x + 3y = 11 \\end{cases}$ là:",
+        "options": [
+          "$(2; 1)$",
+          "$(1; 2)$",
+          "$(3; 1)$",
+          "$(2; -1)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ số của $y$ là $-3$ và $3$ đối nhau. Cộng từng vế hai phương trình: $6x = 12 \\Rightarrow x = 2$. Thay vào PT 2: $4(2) + 3y = 11 \\Rightarrow 3y = 3 \\Rightarrow y = 1$."
+      },
+      {
+        "id": "vq-9.2.4",
+        "title": "Ví dụ 4: Nhận biết hệ phương trình vô nghiệm hoặc vô số nghiệm",
+        "question": "Khẳng định nào sau đây là ĐÚNG về số nghiệm của hệ phương trình $\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$?",
+        "options": [
+          "Hệ phương trình vô nghiệm",
+          "Hệ có nghiệm duy nhất $(2; 1)$",
+          "Hệ có vô số nghiệm",
+          "Hệ có 2 nghiệm phân biệt"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cộng từng vế hai phương trình: $(2x - 2x) + (-y + y) = 5 + 1$, hay $0 = 6$ (vô lý). Do đó hệ phương trình vô nghiệm."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",
@@ -288,8 +426,14 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "exampleSolution": "• Bước 1 (Nhập hệ số vào máy tính): Bấm MENU 9 1 2, nhập lần lượt các hệ số: $2 = 3 = 7 =$ và $3 = -1 = 5 =$.\n• Bước 2 (Đọc kết quả hiển thị): Màn hình hiển thị $x = 2$ và $y = 1$. Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
       }
     ],
-    "tips": [],
-    "traps": [],
+    "tips": [
+      "Khi dùng phương pháp thế: Nên chọn phương trình có hệ số của một ẩn bằng 1 hoặc -1 để biểu diễn ẩn đó theo ẩn kia đơn giản nhất, tránh phát sinh phân số.",
+      "Khi dùng phương pháp cộng đại số: Nếu hệ số đối nhau thì CỘNG từng vế; nếu hệ số bằng nhau thì TRỪ từng vế. Chú ý đổi dấu toàn bộ vế phải khi trừ."
+    ],
+    "traps": [
+      "BẪY QUÊN ĐỔI DẤU KHI TRỪ TỪNG VẾ: Khi trừ hai phương trình, nhớ đổi dấu tất cả các hạng tử của phương trình bị trừ (đặc biệt là dấu trừ trước số âm).",
+      "BẪY HỆ VÔ NGHIỆM VÀ VÔ SỐ NGHIỆM: Nếu ra 0x = 0 (luôn đúng) thì hệ có vô số nghiệm; nếu ra 0x = k (với k ≠ 0) thì hệ vô nghiệm."
+    ],
     "quizQuestions": [
       {
         "id": "quiz-9.2.1",
@@ -444,6 +588,72 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     "bookChapter": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn",
     "scenarioTitle": "Tình huống thực tế: Bài toán chuyển động, năng suất và kích thước hình chữ nhật",
     "scenarioFrames": [],
+    "youtubeVideoId": "xDvxdsSoGZQ",
+    "youtubeVideoTitle": "Bài Giảng Video: Giải Bài Toán Bằng Cách Lập Hệ Phương Trình (Tiết 1) - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "xDvxdsSoGZQ",
+        "title": "Tiết 1: Các bước lập hệ & Toán số học, chuyển động"
+      },
+      {
+        "id": "ckS9bt91TQg",
+        "title": "Tiết 2: Toán năng suất, phần trăm và hình học"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.3.1",
+        "title": "Ví dụ 1: Các bước chuẩn giải bài toán bằng cách lập hệ phương trình",
+        "question": "Thứ tự 3 bước chuẩn để giải một bài toán bằng cách lập hệ phương trình là:",
+        "options": [
+          "Bước 1: Lập hệ phương trình → Bước 2: Giải hệ phương trình → Bước 3: Kiểm tra và kết luận",
+          "Bước 1: Giải hệ phương trình → Bước 2: Lập hệ phương trình → Bước 3: Kiểm tra và kết luận",
+          "Bước 1: Kiểm tra và kết luận → Bước 2: Lập hệ phương trình → Bước 3: Giải hệ phương trình",
+          "Bước 1: Lập hệ phương trình → Bước 2: Kết luận ngay không cần giải hệ"
+        ],
+        "correctIndex": 0,
+        "explanation": "Quy trình giải chuẩn mực gồm 3 bước: Lập hệ phương trình → Giải hệ phương trình → Kiểm tra điều kiện và kết luận."
+      },
+      {
+        "id": "vq-9.3.2",
+        "title": "Ví dụ 2: Bài toán chuyển động trên sông (ca nô)",
+        "question": "Một ca nô đi xuôi dòng khúc sông dài $42\\text{ km}$ hết $1,5\\text{ giờ}$ và ngược dòng khúc sông đó hết $2,1\\text{ giờ}$. Vận tốc dòng nước là:",
+        "options": [
+          "$4\\text{ km/h}$",
+          "$24\\text{ km/h}$",
+          "$5\\text{ km/h}$",
+          "$3\\text{ km/h}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vận tốc xuôi dòng: $v_{\\text{xuôi}} = 42 : 1,5 = 28\\text{ km/h}$ ($v_{\\text{thực}} + v_{\\text{nước}} = 28$). Vận tốc ngược dòng: $v_{\\text{ngược}} = 42 : 2,1 = 20\\text{ km/h}$ ($v_{\\text{thực}} - v_{\\text{nước}} = 20$). Trừ hai phương trình: $2v_{\\text{nước}} = 8 \\Rightarrow v_{\\text{nước}} = 4\\text{ km/h}$."
+      },
+      {
+        "id": "vq-9.3.3",
+        "title": "Ví dụ 3: Bài toán năng suất và vượt mức phần trăm",
+        "question": "Tháng thứ nhất hai tổ may được $800$ chiếc áo. Tháng thứ hai tổ một vượt mức $15\\%$, tổ hai vượt mức $20\\%$ nên cả hai tổ may được $945$ chiếc áo. Gọi $x, y$ là số áo mỗi tổ may trong tháng thứ nhất. Hệ phương trình mô tả bài toán là:",
+        "options": [
+          "$\\begin{cases} x + y = 800 \\\\ 1,15x + 1,20y = 945 \\end{cases}$",
+          "$\\begin{cases} x + y = 945 \\\\ 1,15x + 1,20y = 800 \\end{cases}$",
+          "$\\begin{cases} x + y = 800 \\\\ 0,15x + 0,20y = 945 \\end{cases}$",
+          "$\\begin{cases} x + y = 800 \\\\ 15x + 20y = 945 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tháng 1 hai tổ may 800 áo: $x + y = 800$. Tháng 2 vượt mức: tổ 1 may $(1 + 0,15)x = 1,15x$, tổ 2 may $(1 + 0,20)y = 1,20y$, tổng là $1,15x + 1,20y = 945$."
+      },
+      {
+        "id": "vq-9.3.4",
+        "title": "Ví dụ 4: Bài toán hình học thay đổi kích thước chữ nhật",
+        "question": "Một mảnh vườn hình chữ nhật có chu vi $64\\text{ m}$. Nếu tăng chiều dài thêm $2\\text{ m}$ và tăng chiều rộng thêm $3\\text{ m}$ thì diện tích tăng thêm $88\\text{ m}^2$. Chiều dài và chiều rộng ban đầu lần lượt là:",
+        "options": [
+          "$18\\text{ m}$ và $14\\text{ m}$",
+          "$20\\text{ m}$ và $12\\text{ m}$",
+          "$16\\text{ m}$ và $16\\text{ m}$",
+          "$19\\text{ m}$ và $13\\text{ m}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nửa chu vi: $x + y = 32$. Diện tích tăng thêm: $(x + 2)(y + 3) - xy = 88 \\Rightarrow 3x + 2y = 82$. Ta có hệ: $\\begin{cases} x + y = 32 \\\\ 3x + 2y = 82 \\end{cases} \\Rightarrow x = 18\\text{ m}, y = 14\\text{ m}$."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",
@@ -510,8 +720,14 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "exampleSolution": "• Bước 1 (Gọi ẩn và đặt điều kiện):\n  Gọi chiều dài của mảnh vườn ban đầu là $x\\text{ (m)}$, chiều rộng là $y\\text{ (m)}$ ($x > y > 0$).\n• Bước 2 (Lập hệ phương trình):\n  Nửa chu vi mảnh vườn là $64 : 2 = 32\\text{ m}$, ta có: $x + y = 32$.\n  Khi tăng chiều dài thêm $2\\text{ m}$ và chiều rộng thêm $3\\text{ m}$, diện tích tăng $88\\text{ m}^2$, ta có:\n  $(x + 2)(y + 3) = xy + 88$\n  $xy + 3x + 2y + 6 = xy + 88$\n  $3x + 2y = 82$.\n  Ta có hệ phương trình: $\\begin{cases} x + y = 32 \\\\ 3x + 2y = 82 \\end{cases}$.\n• Bước 3 (Giải hệ phương trình):\n  Nhân hai vế phương trình thứ nhất với $2$, ta được: $2x + 2y = 64$.\n  Trừ từng vế phương trình thứ hai cho phương trình trên, ta được:\n  $x = 82 - 64 = 18$.\n  Thay $x = 18$ vào $x + y = 32$, ta được:\n  $18 + y = 32$, suy ra $y = 14$ (thỏa mãn điều kiện).\n• Bước 4 (Kết luận): Vậy chiều dài mảnh vườn ban đầu là $18\\text{ m}$ và chiều rộng là $14\\text{ m}$."
       }
     ],
-    "tips": [],
-    "traps": [],
+    "tips": [
+      "Luôn lập bảng phân tích đại lượng (Toán chuyển động: s = v · t; Toán năng suất: Công việc = Năng suất · Thời gian) để dễ dàng tìm ra 2 phương trình.",
+      "Đối chiếu nghiệm tìm được với điều kiện ban đầu của ẩn trước khi đưa ra câu trả lời kết luận."
+    ],
+    "traps": [
+      "BẪY ĐƠN VỊ THỜI GIAN: Phải đổi tất cả về cùng đơn vị trước khi tính (ví dụ: 1 giờ 30 phút = 1,5 giờ; 40 phút = 2/3 giờ).",
+      "BẪY TOÁN CHUYỂN ĐỘNG TRÊN SÔNG: Vận tốc xuôi dòng = Vận tốc thực + Vận tốc nước; Vận tốc ngược dòng = Vận tốc thực - Vận tốc nước (không được nhầm dấu)."
+    ],
     "quizQuestions": [
       {
         "id": "quiz-9.3.1",

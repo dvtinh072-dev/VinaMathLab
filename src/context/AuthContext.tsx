@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { getLocalStudentProgress, saveLocalStudentProgressUpdate, getLocalProgressStore } from "@/lib/studentProgressClient";
+import { parseAssignedClasses } from "@/lib/teacherClassUtils";
 
 export interface UserProfile {
   id: string;
@@ -79,7 +80,38 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Hàm làm mới hồ sơ từ Cloud Database (Supabase)
   const refreshProfile = async (currentUser?: UserProfile | null) => {
     const targetUser = currentUser !== undefined ? currentUser : user;
-    if (!targetUser || targetUser.role !== "student") return;
+    if (!targetUser) return;
+
+    // Làm mới thông tin & phân công lớp cho Giáo Viên
+    if (targetUser.role === "teacher") {
+      try {
+        const res = await fetch("/api/auth/users");
+        const data = await res.json();
+        if (data.success && Array.isArray(data.users)) {
+          const freshTeacher = data.users.find(
+            (u: any) =>
+              (targetUser.id && u.id === targetUser.id) ||
+              (targetUser.username && u.username?.toLowerCase() === targetUser.username.toLowerCase())
+          );
+          if (freshTeacher) {
+            const updated: UserProfile = {
+              ...targetUser,
+              username: freshTeacher.username || targetUser.username,
+              fullName: freshTeacher.fullName || targetUser.fullName,
+              schoolName: freshTeacher.schoolName || targetUser.schoolName,
+              schoolClass: freshTeacher.schoolClass || targetUser.schoolClass,
+              assignedClasses: parseAssignedClasses(freshTeacher.assignedClasses || freshTeacher.schoolClass),
+            };
+            saveUserSession(updated);
+          }
+        }
+      } catch (e) {
+        console.warn("Lỗi làm mới profile giáo viên:", e);
+      }
+      return;
+    }
+
+    if (targetUser.role !== "student") return;
 
     const identifier = targetUser.id || targetUser.studentCode || targetUser.username || "";
     if (!identifier) return;
@@ -233,9 +265,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           refreshProfile(parsed);
         } else if (parsed && parsed.role === "teacher") {
           if (!parsed.assignedClasses && parsed.schoolClass) {
-            parsed.assignedClasses = parsed.schoolClass.split(",").map((c: string) => c.trim()).filter(Boolean);
+            parsed.assignedClasses = parseAssignedClasses(parsed.schoolClass);
           }
           setUser(parsed);
+          refreshProfile(parsed);
         } else {
           setUser(parsed);
         }

@@ -188,7 +188,20 @@ export default function AdminDashboardPage() {
             });
 
             localTeachers.forEach((lt: any) => {
-              if (!rawTeachers.some((t) => t.id === lt.id || t.username === lt.username)) {
+              const matchIdx = rawTeachers.findIndex(
+                (t: any) =>
+                  (t.id && lt.id && t.id.toLowerCase() === lt.id.toLowerCase()) ||
+                  (t.username && lt.username && t.username.toLowerCase() === lt.username.toLowerCase())
+              );
+              if (matchIdx >= 0) {
+                rawTeachers[matchIdx] = {
+                  ...rawTeachers[matchIdx],
+                  assignedClasses: rawTeachers[matchIdx].assignedClasses?.length
+                    ? rawTeachers[matchIdx].assignedClasses
+                    : (lt.assignedClasses || []),
+                  schoolClass: rawTeachers[matchIdx].schoolClass || lt.schoolClass,
+                };
+              } else {
                 rawTeachers.unshift(lt);
               }
             });
@@ -480,40 +493,83 @@ export default function AdminDashboardPage() {
     setTeacherError(null);
     setIsSavingTeacher(true);
 
+    const targetUsername = teacherFormData.username.trim().toLowerCase();
+    const cleanFullName = teacherFormData.fullName.trim();
+    const cleanSchoolName = teacherFormData.schoolName.trim();
+    const assignedClasses = teacherFormData.assignedClasses;
+    const assignedClassStr = assignedClasses.join(", ");
+
     try {
       if (editingTeacher) {
-        // Cập nhật thông tin và phân công lớp
+        const oldUsername = (editingTeacher.username || "").trim().toLowerCase();
+
+        // Cập nhật thông tin, tên đăng nhập và phân công lớp
         const res = await fetch("/api/auth/users", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             id: editingTeacher.id,
-            username: editingTeacher.username,
-            fullName: teacherFormData.fullName,
-            schoolName: teacherFormData.schoolName,
-            assignedClasses: teacherFormData.assignedClasses,
-            password: teacherFormData.password || undefined,
+            oldUsername: oldUsername,
+            username: targetUsername,
+            newUsername: targetUsername,
+            fullName: cleanFullName,
+            schoolName: cleanSchoolName,
+            assignedClasses: assignedClasses,
+            schoolClass: assignedClassStr,
+            password: teacherFormData.password ? teacherFormData.password.trim() : undefined,
           }),
         });
         const data = await res.json();
         if (res.ok && data.success) {
-          // Đồng bộ vào localStorage để phản ánh tức thì trên client
+          // 1. Cập nhật state cục bộ ngay tức thì
+          setTeachers((prev) =>
+            prev.map((t) => {
+              if (t.id === editingTeacher.id || t.username?.toLowerCase() === oldUsername) {
+                return {
+                  ...t,
+                  username: targetUsername,
+                  fullName: cleanFullName,
+                  schoolName: cleanSchoolName,
+                  assignedClasses: assignedClasses,
+                  schoolClass: assignedClassStr,
+                };
+              }
+              return t;
+            })
+          );
+
+          // 2. Đồng bộ vào localStorage để phản ánh tức thì trên client
           try {
             const localSaved = localStorage.getItem("vinamath_local_registered_users");
-            if (localSaved) {
-              const list = JSON.parse(localSaved);
-              const idx = list.findIndex((u: any) => u.id === editingTeacher.id || u.username === editingTeacher.username);
-              if (idx >= 0) {
-                list[idx].fullName = teacherFormData.fullName;
-                list[idx].schoolName = teacherFormData.schoolName;
-                list[idx].assignedClasses = teacherFormData.assignedClasses;
-                list[idx].schoolClass = teacherFormData.assignedClasses.join(", ");
-                localStorage.setItem("vinamath_local_registered_users", JSON.stringify(list));
+            const list = localSaved ? JSON.parse(localSaved) : [];
+            const idx = list.findIndex(
+              (u: any) => u.id === editingTeacher.id || u.username?.toLowerCase() === oldUsername
+            );
+            if (idx >= 0) {
+              list[idx].username = targetUsername;
+              list[idx].fullName = cleanFullName;
+              list[idx].schoolName = cleanSchoolName;
+              list[idx].assignedClasses = assignedClasses;
+              list[idx].schoolClass = assignedClassStr;
+              if (teacherFormData.password?.trim()) {
+                list[idx].password = teacherFormData.password.trim();
               }
+            } else {
+              list.unshift({
+                ...editingTeacher,
+                username: targetUsername,
+                fullName: cleanFullName,
+                schoolName: cleanSchoolName,
+                assignedClasses: assignedClasses,
+                schoolClass: assignedClassStr,
+              });
             }
-          } catch {}
+            localStorage.setItem("vinamath_local_registered_users", JSON.stringify(list));
+          } catch (storageErr) {
+            console.warn("Lỗi lưu localStorage:", storageErr);
+          }
 
-          setStatusMessage(`Đã cập nhật phân công lớp cho giáo viên ${teacherFormData.fullName}`);
+          setStatusMessage(`Đã cập nhật phân công lớp cho giáo viên ${cleanFullName}`);
           setIsTeacherModalOpen(false);
           fetchAdminData();
           setTimeout(() => setStatusMessage(null), 3000);
@@ -522,7 +578,7 @@ export default function AdminDashboardPage() {
         }
       } else {
         // Thêm giáo viên mới
-        if (!teacherFormData.username || !teacherFormData.password || !teacherFormData.fullName) {
+        if (!targetUsername || !teacherFormData.password || !cleanFullName) {
           setTeacherError("Vui lòng điền đầy đủ họ tên, tên đăng nhập và mật khẩu.");
           setIsSavingTeacher(false);
           return;
@@ -532,31 +588,36 @@ export default function AdminDashboardPage() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             role: "teacher",
-            fullName: teacherFormData.fullName,
-            username: teacherFormData.username,
-            password: teacherFormData.password,
-            schoolName: teacherFormData.schoolName,
-            assignedClasses: teacherFormData.assignedClasses,
+            fullName: cleanFullName,
+            username: targetUsername,
+            password: teacherFormData.password.trim(),
+            schoolName: cleanSchoolName,
+            assignedClasses: assignedClasses,
+            schoolClass: assignedClassStr,
           }),
         });
         const data = await res.json();
         if (res.ok && data.success) {
+          const newTeacherObj = {
+            id: data.user?.id || `u-teacher-${Date.now()}`,
+            username: targetUsername,
+            fullName: cleanFullName,
+            role: "teacher",
+            schoolName: cleanSchoolName,
+            assignedClasses: assignedClasses,
+            schoolClass: assignedClassStr,
+          };
+
+          setTeachers((prev) => [newTeacherObj, ...prev]);
+
           try {
             const localSaved = localStorage.getItem("vinamath_local_registered_users");
             const list = localSaved ? JSON.parse(localSaved) : [];
-            list.unshift({
-              id: data.user?.id || `u-teacher-${Date.now()}`,
-              username: teacherFormData.username,
-              fullName: teacherFormData.fullName,
-              role: "teacher",
-              schoolName: teacherFormData.schoolName,
-              assignedClasses: teacherFormData.assignedClasses,
-              schoolClass: teacherFormData.assignedClasses.join(", "),
-            });
+            list.unshift(newTeacherObj);
             localStorage.setItem("vinamath_local_registered_users", JSON.stringify(list));
           } catch {}
 
-          setStatusMessage(`Đã thêm mới và phân quyền giáo viên: ${teacherFormData.fullName}`);
+          setStatusMessage(`Đã thêm mới và phân quyền giáo viên: ${cleanFullName}`);
           setIsTeacherModalOpen(false);
           fetchAdminData();
           setTimeout(() => setStatusMessage(null), 3000);
@@ -579,6 +640,39 @@ export default function AdminDashboardPage() {
       const data = await res.json();
       if (res.ok && data.success) {
         setStatusMessage(`Đã xóa tài khoản giáo viên: ${tName}`);
+
+        // Dọn dẹp cả trong localStorage nếu có & lưu vào Blacklist cục bộ
+        if (typeof window !== "undefined") {
+          try {
+            const deletedIdsRaw = localStorage.getItem("vinamath_deleted_user_ids");
+            const deletedList: string[] = deletedIdsRaw ? JSON.parse(deletedIdsRaw) : [];
+            const idsToAdd = [
+              tId,
+              tId.toLowerCase(),
+              ...(data.deletedIdentifiers || [])
+            ];
+            idsToAdd.forEach((id) => {
+              if (id && !deletedList.includes(id)) {
+                deletedList.push(id);
+              }
+            });
+            localStorage.setItem("vinamath_deleted_user_ids", JSON.stringify(deletedList));
+
+            const localSaved = localStorage.getItem("vinamath_local_registered_users");
+            if (localSaved) {
+              const list = JSON.parse(localSaved);
+              const filtered = list.filter(
+                (u: any) =>
+                  u.id !== tId &&
+                  u.username?.toLowerCase() !== tId.toLowerCase()
+              );
+              localStorage.setItem("vinamath_local_registered_users", JSON.stringify(filtered));
+            }
+          } catch (e) {
+            console.warn("Lỗi dọn local registered users:", e);
+          }
+        }
+
         setTeachers((prev) => prev.filter((t) => t.id !== tId && t.username !== tId));
         setTimeout(() => setStatusMessage(null), 3000);
       } else {
@@ -1140,7 +1234,7 @@ export default function AdminDashboardPage() {
                                 className="px-3 py-1.5 rounded-xl bg-teal-500/20 text-teal-300 hover:bg-teal-500/30 border border-teal-500/40 text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1"
                               >
                                 <Edit3 className="w-3 h-3" />
-                                <span>Phân Công Lớp</span>
+                                <span>Sửa & Phân Công</span>
                               </button>
                               <button
                                 onClick={() => handleDeleteTeacher(t.id || t.username, t.fullName || t.username)}
@@ -1637,10 +1731,10 @@ export default function AdminDashboardPage() {
                 </div>
                 <div>
                   <h2 className="text-base font-black text-white">
-                    {editingTeacher ? "Chỉnh Sửa Phân Công Lớp" : "Thêm Giáo Viên Mới"}
+                    {editingTeacher ? "Chỉnh Sửa Giáo Viên & Phân Công Lớp" : "Thêm Giáo Viên Mới"}
                   </h2>
                   <p className="text-xs text-slate-400">
-                    Phân quyền các lớp phụ trách cho giáo viên
+                    Cập nhật tên đăng nhập, thông tin và phân quyền các lớp phụ trách
                   </p>
                 </div>
               </div>
@@ -1684,12 +1778,14 @@ export default function AdminDashboardPage() {
                   <input
                     type="text"
                     required
-                    disabled={Boolean(editingTeacher)}
                     value={teacherFormData.username}
-                    onChange={(e) => setTeacherFormData({ ...teacherFormData, username: e.target.value })}
+                    onChange={(e) => setTeacherFormData({ ...teacherFormData, username: e.target.value.toLowerCase().replace(/\s+/g, "") })}
                     placeholder="Ví dụ: gv_toan6"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono disabled:opacity-60 focus:outline-none focus:border-teal-400"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono focus:outline-none focus:border-teal-400"
                   />
+                  <span className="text-[10px] text-teal-400/90 block mt-1">
+                    {editingTeacher ? "💡 Có thể thay đổi tên đăng nhập của giáo viên tại đây" : "Viết liền không dấu"}
+                  </span>
                 </div>
 
                 <div>

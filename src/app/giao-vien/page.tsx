@@ -41,7 +41,7 @@ import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 
 export default function GiaoVienPage() {
   const router = useRouter();
-  const { user, isTeacher, isAdmin, isStudent, loginTeacher, logout } = useAuth();
+  const { user, isTeacher, isAdmin, isStudent, loginTeacher, logout, refreshProfile } = useAuth();
 
   // Login Form State (cho giáo viên chưa đăng nhập)
   const [loginUsername, setLoginUsername] = useState("");
@@ -77,9 +77,10 @@ export default function GiaoVienPage() {
   // Tải dữ liệu học sinh khi đã đăng nhập giáo viên hoặc admin
   useEffect(() => {
     if (user && (isTeacher || isAdmin)) {
+      refreshProfile();
       fetchTeacherData();
     }
-  }, [user, isTeacher, isAdmin]);
+  }, [user?.id, user?.username, isTeacher, isAdmin]);
 
   const fetchTeacherData = async () => {
     setIsLoading(true);

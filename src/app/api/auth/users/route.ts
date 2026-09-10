@@ -62,6 +62,7 @@ export async function GET() {
           schoolName: u.school_name,
           grade: u.grade,
           schoolClass: u.school_class,
+          assignedClasses: parseAssignedClasses(u.school_class),
           exp: u.exp,
           coins: u.coins,
           streak: u.streak,
@@ -117,7 +118,7 @@ export async function GET() {
       }
     });
 
-    // Đưa users từ Supabase Cloud vào (ưu tiên số sao/exp cao nhất)
+    // Đưa users từ Supabase Cloud vào (ưu tiên số sao/exp cao nhất và cập nhật lớp phụ trách)
     suUsers.forEach((u: any) => {
       const idKey = u.id?.toLowerCase();
       const usernameKey = u.username?.toLowerCase();
@@ -137,7 +138,15 @@ export async function GET() {
         const bestExp = Math.max(existing?.exp || 0, u.exp || 0);
         const bestCoins = Math.max(existing?.coins || 0, u.coins || 0);
         const bestStreak = Math.max(existing?.streak || 1, u.streak || 1);
-        userMap.set(key, { ...existing, ...u, exp: bestExp, coins: bestCoins, streak: bestStreak });
+        userMap.set(key, {
+          ...existing,
+          ...u,
+          schoolClass: u.schoolClass || existing?.schoolClass,
+          assignedClasses: u.assignedClasses?.length ? u.assignedClasses : (existing?.assignedClasses || []),
+          exp: bestExp,
+          coins: bestCoins,
+          streak: bestStreak,
+        });
       }
     });
 
@@ -145,7 +154,7 @@ export async function GET() {
       if (u.role === "teacher") {
         return {
           ...u,
-          assignedClasses: parseAssignedClasses(u.assignedClasses || u.schoolClass || u.school_class),
+          assignedClasses: parseAssignedClasses(u.assignedClasses?.length ? u.assignedClasses : (u.schoolClass || u.school_class)),
         };
       }
       return u;
@@ -259,55 +268,112 @@ export async function POST(req: Request) {
   }
 }
 
-// Cập nhật tài khoản (Admin sửa phân công lớp, đổi mật khẩu giáo viên)
+// Cập nhật tài khoản (Admin sửa phân công lớp, đổi tên đăng nhập, đổi mật khẩu giáo viên)
 export async function PUT(req: Request) {
   try {
     const body = await req.json();
-    const { id, username, fullName, schoolName, assignedClasses, schoolClass, password } = body;
-    const cleanUsername = (username || "").trim().toLowerCase();
+    const { id, oldUsername, username, newUsername, fullName, schoolName, assignedClasses, schoolClass, password } = body;
+
+    const targetUsername = (newUsername || username || "").trim().toLowerCase();
+    const prevUsername = (oldUsername || (id ? undefined : targetUsername) || "").trim().toLowerCase();
+
+    // 1. Kiểm tra nếu đổi tên đăng nhập: xác thực tính hợp lệ và không trùng lặp
+    const isUsernameChanged = Boolean(targetUsername && prevUsername && targetUsername !== prevUsername);
+
+    if (isUsernameChanged) {
+      if (targetUsername.length < 3) {
+        return NextResponse.json({ error: "Tên đăng nhập mới phải có ít nhất 3 ký tự." }, { status: 400 });
+      }
+      if (!/^[a-zA-Z0-9._-]+$/.test(targetUsername)) {
+        return NextResponse.json({ error: "Tên đăng nhập chỉ được chứa chữ cái, số, dấu chấm, gạch dưới hoặc gạch nối." }, { status: 400 });
+      }
+
+      // Kiểm tra trùng lặp trên Supabase Cloud
+      try {
+        let query = supabase.from("users").select("id, username").eq("username", targetUsername);
+        if (id) query = query.neq("id", id);
+        const { data: dupUsers } = await query;
+        if (dupUsers && dupUsers.length > 0) {
+          return NextResponse.json(
+            { error: `Tên đăng nhập "${targetUsername}" đã có người sử dụng. Vui lòng chọn tên đăng nhập khác.` },
+            { status: 400 }
+          );
+        }
+      } catch (checkErr) {
+        console.warn("Supabase username duplicate check warning:", checkErr);
+      }
+
+      // Kiểm tra trùng lặp trên usersData.json
+      const fallbackUsers = getFallbackUsers();
+      const duplicateInJson = fallbackUsers.some(
+        (u: any) => u.username?.toLowerCase() === targetUsername && (!id || u.id !== id)
+      );
+      if (duplicateInJson) {
+        return NextResponse.json(
+          { error: `Tên đăng nhập "${targetUsername}" đã tồn tại trên hệ thống. Vui lòng chọn tên đăng nhập khác.` },
+          { status: 400 }
+        );
+      }
+    }
 
     const assignedClassStr = Array.isArray(assignedClasses)
       ? assignedClasses.join(", ")
-      : schoolClass !== undefined ? schoolClass : undefined;
+      : schoolClass !== undefined ? String(schoolClass) : undefined;
 
-    // 1. Cập nhật Supabase Cloud
+    // 2. Cập nhật Supabase Cloud
     try {
       const updateData: any = {};
+      if (isUsernameChanged) {
+        updateData.username = targetUsername;
+        updateData.email = `${targetUsername}@vinamath.edu.vn`;
+      }
       if (fullName) updateData.full_name = fullName.trim();
       if (schoolName) updateData.school_name = schoolName.trim();
       if (assignedClassStr !== undefined) updateData.school_class = assignedClassStr;
       if (password && password.trim()) updateData.password_hash = password.trim();
 
+      let suUpdated = false;
       if (id) {
-        await supabase.from("users").update(updateData).eq("id", id);
-      } else if (cleanUsername) {
-        await supabase.from("users").update(updateData).eq("username", cleanUsername);
+        const { data: resData, error: errId } = await supabase.from("users").update(updateData).eq("id", id).select();
+        if (!errId && resData && resData.length > 0) suUpdated = true;
+      }
+      if (!suUpdated && prevUsername) {
+        await supabase.from("users").update(updateData).eq("username", prevUsername);
       }
     } catch (suErr) {
       console.warn("Supabase update teacher warning:", suErr);
     }
 
-    // 2. Cập nhật Prisma DB
+    // 3. Cập nhật Prisma DB nếu có
     try {
       const dbUpdate: any = {};
+      if (isUsernameChanged) {
+        dbUpdate.username = targetUsername;
+        dbUpdate.email = `${targetUsername}@vinamath.edu.vn`;
+      }
       if (fullName) dbUpdate.fullName = fullName.trim();
       if (assignedClassStr !== undefined) dbUpdate.schoolClass = assignedClassStr;
       if (password && password.trim()) dbUpdate.password = password.trim();
 
       if (id) {
         await prisma.user.updateMany({ where: { id }, data: dbUpdate });
-      } else if (cleanUsername) {
-        await prisma.user.updateMany({ where: { username: cleanUsername }, data: dbUpdate });
+      }
+      if (prevUsername) {
+        await prisma.user.updateMany({ where: { username: prevUsername }, data: dbUpdate });
       }
     } catch (dbErr) {}
 
-    // 3. Cập nhật usersData.json
+    // 4. Cập nhật usersData.json
     try {
       const fallbackUsers = getFallbackUsers();
       const idx = fallbackUsers.findIndex(
-        (u: any) => (id && u.id === id) || (cleanUsername && u.username?.toLowerCase() === cleanUsername)
+        (u: any) => (id && u.id === id) || (prevUsername && u.username?.toLowerCase() === prevUsername)
       );
       if (idx >= 0) {
+        if (isUsernameChanged) {
+          fallbackUsers[idx].username = targetUsername;
+          fallbackUsers[idx].email = `${targetUsername}@vinamath.edu.vn`;
+        }
         if (fullName) fallbackUsers[idx].fullName = fullName.trim();
         if (schoolName) fallbackUsers[idx].schoolName = schoolName.trim();
         if (assignedClassStr !== undefined) {
@@ -317,9 +383,22 @@ export async function PUT(req: Request) {
         if (password && password.trim()) fallbackUsers[idx].password = password.trim();
         fs.writeFileSync(usersFilePath, JSON.stringify(fallbackUsers, null, 2), "utf-8");
       }
-    } catch (fsErr) {}
+    } catch (fsErr) {
+      console.error("Lỗi cập nhật usersData.json:", fsErr);
+    }
 
-    return NextResponse.json({ success: true, message: "Cập nhật tài khoản và phân quyền thành công." });
+    return NextResponse.json({
+      success: true,
+      user: {
+        id,
+        username: targetUsername || prevUsername,
+        fullName: fullName ? fullName.trim() : undefined,
+        schoolName: schoolName ? schoolName.trim() : undefined,
+        assignedClasses: parseAssignedClasses(assignedClassStr),
+        schoolClass: assignedClassStr,
+      },
+      message: "Cập nhật tài khoản giáo viên và phân công lớp thành công.",
+    });
   } catch (error) {
     console.error("Update user error:", error);
     return NextResponse.json({ error: "Lỗi máy chủ khi cập nhật tài khoản." }, { status: 500 });

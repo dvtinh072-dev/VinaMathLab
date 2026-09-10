@@ -556,6 +556,62 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     "bookChapter": "Chương I: Tập hợp các số tự nhiên",
     "scenarioTitle": "Tình huống: So sánh độ cao và dân số",
     "scenarioFrames": [],
+    "youtubeVideoId": "tJENT7eqyf4",
+    "youtubeVideoTitle": "Bài Giảng Video: Thứ Tự Trong Tập Hợp Các Số Tự Nhiên (Toán 6 KNTT)",
+    "videoQuestions": [
+      {
+        "id": "vq-6.3.1",
+        "title": "Ví dụ 1: So sánh hai số tự nhiên và vị trí trên tia số",
+        "question": "Cho hai số tự nhiên $28\\ 091$ và $28\\ 100$. Khẳng định nào sau đây là ĐÚNG về so sánh hai số và vị trí của chúng trên tia số nằm ngang?",
+        "options": [
+          "$28\\ 091 < 28\\ 100$ và điểm $28\\ 091$ nằm bên trái điểm $28\\ 100$",
+          "$28\\ 091 > 28\\ 100$ và điểm $28\\ 091$ nằm bên phải điểm $28\\ 100$",
+          "$28\\ 091 < 28\\ 100$ và điểm $28\\ 091$ nằm bên phải điểm $28\\ 100$",
+          "$28\\ 091 > 28\\ 100$ và điểm $28\\ 091$ nằm bên trái điểm $28\\ 100$"
+        ],
+        "correctIndex": 0,
+        "explanation": "So sánh từng cặp chữ số từ trái sang phải: chữ số hàng chục nghìn và hàng nghìn giống nhau (2 và 8), chữ số hàng trăm có $0 < 1$ nên $28\\ 091 < 28\\ 100$. Trên tia số nằm ngang (chiều từ trái sang phải), số nhỏ hơn được biểu diễn bởi điểm nằm bên trái số lớn hơn. Do đó điểm $28\\ 091$ nằm bên trái điểm $28\\ 100$."
+      },
+      {
+        "id": "vq-6.3.2",
+        "title": "Ví dụ 2: Vận dụng tính chất bắc cầu trong thứ tự số tự nhiên",
+        "question": "Cho ba số tự nhiên $m, n, p$. Biết rằng $m < 15$ và $15 < n$. So sánh giữa $m$ và $n$ theo tính chất bắc cầu:",
+        "options": [
+          "$m < n$",
+          "$m > n$",
+          "$m = n$",
+          "$m \\ge n$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo tính chất bắc cầu của thứ tự trong tập hợp các số tự nhiên: nếu $a < b$ và $b < c$ thì $a < c$. Ở đây với $m < 15$ và $15 < n$ (qua số trung gian là 15), ta suy ra ngay $m < n$."
+      },
+      {
+        "id": "vq-6.3.3",
+        "title": "Ví dụ 3: Xác định số liền trước, số liền sau và số liên tiếp",
+        "question": "Số tự nhiên liền trước của $1200$ và số tự nhiên liền sau của $1200$ lần lượt là:",
+        "options": [
+          "$1199$ và $1201$",
+          "$1201$ và $1199$",
+          "$1190$ và $1210$",
+          "$1198$ và $1202$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số tự nhiên liền trước của số $1200$ là: $1200 - 1 = 1199$. Số tự nhiên liền sau của số $1200$ là: $1200 + 1 = 1201$. Ba số $1199;\\ 1200;\\ 1201$ tạo thành ba số tự nhiên liên tiếp tăng dần."
+      },
+      {
+        "id": "vq-6.3.4",
+        "title": "Ví dụ 4: Sắp xếp số tự nhiên theo thứ tự trong bài toán thực tế",
+        "question": "Độ cao (tính theo mét) của bốn đỉnh núi tại Việt Nam: Fansipan ($3\\ 143\\text{ m}$), Pu Si Lung ($3\\ 083\\text{ m}$), Bạch Mộc Lương Tử ($3\\ 046\\text{ m}$), Tây Côn Lĩnh ($2\\ 427\\text{ m}$). Thứ tự sắp xếp các đỉnh núi theo độ cao GIẢM DẦN là:",
+        "options": [
+          "Fansipan > Pu Si Lung > Bạch Mộc Lương Tử > Tây Côn Lĩnh",
+          "Fansipan > Bạch Mộc Lương Tử > Pu Si Lung > Tây Côn Lĩnh",
+          "Pu Si Lung > Fansipan > Bạch Mộc Lương Tử > Tây Côn Lĩnh",
+          "Tây Côn Lĩnh > Bạch Mộc Lương Tử > Pu Si Lung > Fansipan"
+        ],
+        "correctIndex": 0,
+        "explanation": "So sánh độ cao các đỉnh núi: $3\\ 143 > 3\\ 083 > 3\\ 046 > 2\\ 427$. Do đó, thứ tự sắp xếp độ cao giảm dần từ cao nhất đến thấp nhất là: Fansipan ($3\\ 143\\text{ m}$) > Pu Si Lung ($3\\ 083\\text{ m}$) > Bạch Mộc Lương Tử ($3\\ 046\\text{ m}$) > Tây Côn Lĩnh ($2\\ 427\\text{ m}$)."
+      }
+    ],
     "theorySections": [
       {
         "index": "1",
@@ -731,7 +787,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
           "$5;\\ 6;\\ 7$"
         ],
         "correctIndex": 0,
-        "explanation": "Gọi ba số tự nhiên liên tiếp là $n, n+1, n+2$. Ta có $n + (n+1) + (n+2) = 24 \\Rightarrow 3n + 3 = 24 \\Rightarrow 3n = 21 \\Rightarrow n = 7$. Ba số cần tìm là $7;\\ 8;\\ 9$."
+        "explanation": "Gọi ba số tự nhiên liên tiếp là $n, n+1, n+2$. Ta có $n + (n+1) + (n+2) = 24$, suy ra $3n + 3 = 24$, do đó $3n = 21$, suy ra $n = 7$. Ba số cần tìm là $7;\\ 8;\\ 9$."
       },
       {
         "id": "quiz-3.10",

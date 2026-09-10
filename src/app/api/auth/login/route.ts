@@ -37,60 +37,46 @@ export async function POST(req: Request) {
 
     // 1. Xác thực qua Supabase Cloud Database (Ưu tiên số 1 - Đồng bộ đám mây cho cả di động & máy tính)
     try {
-      if (role === "admin") {
-        const { data: suUser, error } = await supabase
+      // Đầu tiên thử tìm user theo đúng role yêu cầu
+      let suUser: any = null;
+      const { data: suDataByRole } = await supabase
+        .from("users")
+        .select("*")
+        .eq("role", role)
+        .eq("password_hash", cleanPassword)
+        .or(`username.ilike.${loginKey},email.ilike.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
+        .maybeSingle();
+
+      suUser = suDataByRole;
+
+      // Nếu không tìm thấy theo role đó, tìm kiếm linh hoạt bất kỳ role nào khớp tên và mật khẩu
+      if (!suUser) {
+        const { data: suDataAnyRole } = await supabase
           .from("users")
           .select("*")
-          .eq("role", "admin")
           .eq("password_hash", cleanPassword)
-          .or(`username.ilike.${loginKey},email.ilike.${loginKey},id.eq.${loginKey}`)
+          .or(`username.ilike.${loginKey},email.ilike.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
           .maybeSingle();
+        suUser = suDataAnyRole;
+      }
 
-        if (suUser && !error) {
-          user = {
-            id: suUser.id,
-            username: suUser.username,
-            studentCode: suUser.student_code,
-            email: suUser.email,
-            password: suUser.password_hash,
-            fullName: suUser.full_name,
-            role: suUser.role,
-            schoolName: suUser.school_name,
-            grade: suUser.grade,
-            schoolClass: suUser.school_class,
-            exp: suUser.exp,
-            coins: suUser.coins,
-            streak: suUser.streak,
-            createdAt: suUser.created_at,
-          };
-        }
-      } else {
-        const { data: suUser, error } = await supabase
-          .from("users")
-          .select("*")
-          .eq("role", "student")
-          .eq("password_hash", cleanPassword)
-          .or(`username.ilike.${loginKey},student_code.ilike.${loginKey},id.eq.${loginKey}`)
-          .maybeSingle();
-
-        if (suUser && !error) {
-          user = {
-            id: suUser.id,
-            username: suUser.username,
-            studentCode: suUser.student_code,
-            email: suUser.email,
-            password: suUser.password_hash,
-            fullName: suUser.full_name,
-            role: suUser.role,
-            schoolName: suUser.school_name,
-            grade: suUser.grade,
-            schoolClass: suUser.school_class,
-            exp: suUser.exp,
-            coins: suUser.coins,
-            streak: suUser.streak,
-            createdAt: suUser.created_at,
-          };
-        }
+      if (suUser) {
+        user = {
+          id: suUser.id,
+          username: suUser.username,
+          studentCode: suUser.student_code,
+          email: suUser.email,
+          password: suUser.password_hash,
+          fullName: suUser.full_name,
+          role: suUser.role, // Sử dụng vai trò thực tế của tài khoản (admin hoặc student)
+          schoolName: suUser.school_name,
+          grade: suUser.grade,
+          schoolClass: suUser.school_class,
+          exp: suUser.exp,
+          coins: suUser.coins,
+          streak: suUser.streak,
+          createdAt: suUser.created_at,
+        };
       }
     } catch (supabaseErr) {
       console.warn("Supabase query warning, falling back to local database:", supabaseErr);
@@ -99,31 +85,18 @@ export async function POST(req: Request) {
     // 2. Thử xác thực từ Prisma DB nếu Supabase offline
     if (!user) {
       try {
-        if (role === "admin") {
-          user = await prisma.user.findFirst({
-            where: {
-              role: "admin",
-              password: cleanPassword,
-              OR: [
-                { username: loginKey },
-                { email: loginKey },
-              ],
-            },
-          });
-        } else {
-          user = await prisma.user.findFirst({
-            where: {
-              role: "student",
-              password: cleanPassword,
-              OR: [
-                { username: loginKey },
-                { studentCode: loginKey.toUpperCase() },
-                { studentCode: loginKey },
-                { id: loginKey },
-              ],
-            },
-          });
-        }
+        user = await prisma.user.findFirst({
+          where: {
+            password: cleanPassword,
+            OR: [
+              { username: loginKey },
+              { email: loginKey },
+              { studentCode: loginKey.toUpperCase() },
+              { studentCode: loginKey },
+              { id: loginKey },
+            ],
+          },
+        });
       } catch (dbError) {
         console.warn("Prisma query failed, falling back to JSON file:", dbError);
       }
@@ -132,24 +105,15 @@ export async function POST(req: Request) {
     // 3. Fallback sang file usersData.json nếu chưa tìm thấy trong DB
     if (!user) {
       const fallbackUsers = getFallbackUsers();
-      if (role === "admin") {
-        user = fallbackUsers.find(
-          (u: any) =>
-            u.role === "admin" &&
-            (u.username?.toLowerCase() === loginKey || u.email?.toLowerCase() === loginKey) &&
-            (u.password || "").trim() === cleanPassword
-        );
-      } else {
-        user = fallbackUsers.find(
-          (u: any) =>
-            u.role === "student" &&
-            (u.username?.toLowerCase() === loginKey ||
-             u.studentCode?.toLowerCase() === loginKey ||
-             u.studentCode?.toUpperCase() === loginKey.toUpperCase() ||
-             u.id?.toLowerCase() === loginKey) &&
-            (u.password || "").trim() === cleanPassword
-        );
-      }
+      user = fallbackUsers.find(
+        (u: any) =>
+          (u.password || "").trim() === cleanPassword &&
+          (u.username?.toLowerCase() === loginKey ||
+           u.email?.toLowerCase() === loginKey ||
+           u.studentCode?.toLowerCase() === loginKey ||
+           u.studentCode?.toUpperCase() === loginKey.toUpperCase() ||
+           u.id?.toLowerCase() === loginKey)
+      );
     }
 
     if (!user) {

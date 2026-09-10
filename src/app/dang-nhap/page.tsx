@@ -34,10 +34,17 @@ export default function DangNhapPage() {
     if (activeRole === "student") {
       const res = await loginStudent(cleanStudentId, cleanStudentPass);
       if (res.success) {
-        setSuccessMsg("Đăng nhập học sinh thành công! Đang chuyển hướng...");
-        // Sử dụng window.location.href để đảm bảo tải mới toàn bộ state trên Safari / Android Chrome
+        setSuccessMsg("Đăng nhập thành công! Đang chuyển hướng...");
+        let redirectUrl = "/tai-khoan";
+        try {
+          const raw = localStorage.getItem("vinamath_auth_user");
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed.role === "admin") redirectUrl = "/admin";
+          }
+        } catch {}
         setTimeout(() => {
-          window.location.href = "/tai-khoan";
+          window.location.href = redirectUrl;
         }, 800);
       } else {
         setErrorMsg(res.error || "Tên đăng nhập hoặc mật khẩu không chính xác.");
@@ -45,9 +52,17 @@ export default function DangNhapPage() {
     } else {
       const res = await loginAdmin(cleanAdminUser, cleanAdminPass);
       if (res.success) {
-        setSuccessMsg("Đăng nhập Quản trị viên thành công! Đang chuyển hướng...");
+        setSuccessMsg("Đăng nhập thành công! Đang chuyển hướng...");
+        let redirectUrl = "/admin";
+        try {
+          const raw = localStorage.getItem("vinamath_auth_user");
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed.role === "student") redirectUrl = "/tai-khoan";
+          }
+        } catch {}
         setTimeout(() => {
-          window.location.href = "/admin";
+          window.location.href = redirectUrl;
         }, 800);
       } else {
         setErrorMsg(res.error || "Tài khoản quản trị viên không chính xác.");

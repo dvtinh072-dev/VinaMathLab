@@ -15,14 +15,14 @@ import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 export function Header() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
-  const { user, isAdmin, isStudent, logout, openAuthModal } = useAuth();
+  const { user, isAdmin, isStudent, isTeacher, logout, openAuthModal } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Trang Chủ", icon: Home },
     { href: "/hoc-tap", label: "Học Liệu Khối Lớp", icon: BookOpen },
     { href: "/luyen-thi", label: "Phòng Thi Thử", icon: Award },
-    { href: "/giao-vien", label: "Giáo Viên", icon: Users },
+    { href: "/giao-vien", label: "Quản Lý Lớp", icon: Users },
   ];
 
   return (
@@ -82,6 +82,25 @@ export function Header() {
                 onClick={logout}
                 className="p-1.5 sm:p-2 rounded-xl text-slate-500 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all"
                 title="Đăng xuất Admin"
+              >
+                <LogOut className="w-4 h-4" />
+              </button>
+            </div>
+          ) : isTeacher ? (
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <Link
+                href="/giao-vien"
+                className="inline-flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40 text-[11px] sm:text-xs font-black hover:bg-emerald-500/30 transition-all shadow-sm"
+              >
+                <Users className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Quản Lý Lớp: {user?.fullName || user?.username}</span>
+                <span className="sm:hidden">Giáo Viên</span>
+              </Link>
+
+              <button
+                onClick={logout}
+                className="p-1.5 sm:p-2 rounded-xl text-slate-500 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all"
+                title="Đăng xuất Giáo viên"
               >
                 <LogOut className="w-4 h-4" />
               </button>

@@ -30,6 +30,7 @@ import {
   FileSpreadsheet,
   Trash2,
   UserCheck,
+  UserPlus,
   KeyRound,
   Lock,
 } from "lucide-react";
@@ -38,6 +39,7 @@ import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
+import { parseAssignedClasses, isStudentInAssignedClasses } from "@/lib/teacherClassUtils";
 
 export default function AdminDashboardPage() {
   const router = useRouter();
@@ -50,9 +52,10 @@ export default function AdminDashboardPage() {
     }
   }, [user, isAdmin, router]);
 
-  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "mistakes" | "backup" | "settings">("students");
+  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "backup" | "settings">("students");
   const [searchQuery, setSearchQuery] = useState("");
   const [students, setStudents] = useState<any[]>([]);
+  const [teachers, setTeachers] = useState<any[]>([]);
   const [progressData, setProgressData] = useState<any>({ students: [], topMistakes: [] });
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -64,6 +67,20 @@ export default function AdminDashboardPage() {
 
   // Modal chi tiết học sinh
   const [selectedStudentDetail, setSelectedStudentDetail] = useState<any | null>(null);
+
+  // State Modal Phân Quyền Giáo Viên
+  const [isTeacherModalOpen, setIsTeacherModalOpen] = useState(false);
+  const [editingTeacher, setEditingTeacher] = useState<any | null>(null);
+  const [teacherFormData, setTeacherFormData] = useState({
+    fullName: "",
+    username: "",
+    password: "",
+    schoolName: "THCS VinaMath",
+    assignedClasses: [] as string[],
+    customClass: "",
+  });
+  const [teacherError, setTeacherError] = useState<string | null>(null);
+  const [isSavingTeacher, setIsSavingTeacher] = useState(false);
 
   // Form Đổi thông tin / Mật khẩu Admin
   const [adminForm, setAdminForm] = useState({
@@ -102,11 +119,13 @@ export default function AdminDashboardPage() {
       const resUsers = await fetch("/api/auth/users");
       const dataUsers = await resUsers.json();
       let rawStudents: any[] = [];
+      let rawTeachers: any[] = [];
       if (dataUsers.success && dataUsers.users) {
         rawStudents = dataUsers.users.filter((u: any) => u.role === "student");
+        rawTeachers = dataUsers.users.filter((u: any) => u.role === "teacher");
       }
 
-      // 1b. Gộp danh sách học sinh đăng ký lưu cục bộ (localStorage) để không bao giờ bị sót học sinh mới
+      // 1b. Gộp danh sách học sinh & giáo viên lưu cục bộ (localStorage) để không bao giờ bị sót
       if (typeof window !== "undefined") {
         try {
           const deletedIdsRaw = localStorage.getItem("vinamath_deleted_user_ids");
@@ -126,6 +145,12 @@ export default function AdminDashboardPage() {
             );
           });
 
+          rawTeachers = rawTeachers.filter((t: any) => {
+            const tId = t.id?.toLowerCase();
+            const tUser = t.username?.toLowerCase();
+            return !((tId && deletedSet.has(tId)) || (tUser && deletedSet.has(tUser)));
+          });
+
           const localSaved = localStorage.getItem("vinamath_local_registered_users");
           if (localSaved) {
             const parsedLocal = JSON.parse(localSaved);
@@ -141,6 +166,13 @@ export default function AdminDashboardPage() {
               );
             });
 
+            const localTeachers = parsedLocal.filter((u: any) => {
+              if (u.role !== "teacher") return false;
+              const uId = u.id?.toLowerCase();
+              const uUser = u.username?.toLowerCase();
+              return !((uId && deletedSet.has(uId)) || (uUser && deletedSet.has(uUser)));
+            });
+
             const existingKeys = new Set(
               rawStudents.map((s) => s.id || s.username?.toLowerCase() || s.studentCode?.toLowerCase())
             );
@@ -152,6 +184,12 @@ export default function AdminDashboardPage() {
                 existingKeys.add(key);
               }
             });
+
+            localTeachers.forEach((lt: any) => {
+              if (!rawTeachers.some((t) => t.id === lt.id || t.username === lt.username)) {
+                rawTeachers.unshift(lt);
+              }
+            });
           }
         } catch (e) {
           console.warn("Lỗi đọc local registered users:", e);
@@ -159,6 +197,7 @@ export default function AdminDashboardPage() {
       }
 
       setStudents(rawStudents);
+      setTeachers(rawTeachers);
 
       // 2. Lấy dữ liệu tiến độ & báo cáo câu sai
       const resProgress = await fetch("/api/student/progress?mode=admin");
@@ -343,6 +382,156 @@ export default function AdminDashboardPage() {
     } catch (e) {
       console.error("Lỗi xóa học sinh:", e);
       alert("Đã xảy ra lỗi khi gửi yêu cầu xóa.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Presets các lớp có sẵn để phân công giáo viên
+  const defaultClassPresets = [
+    "Lớp 6A", "Lớp 6B", "Lớp 6C", "Lớp 6A4", 
+    "Lớp 10A1", "Lớp 10A2", "Lớp 10A3", 
+    "Lớp 11A1", "Lớp 11A2", 
+    "Lớp 12A1", "Lớp 12A2"
+  ];
+  const allSelectableClasses = Array.from(new Set([...uniqueClasses, ...defaultClassPresets]));
+
+  const openAddTeacherModal = () => {
+    setEditingTeacher(null);
+    setTeacherFormData({
+      fullName: "",
+      username: "",
+      password: "",
+      schoolName: "THCS VinaMath",
+      assignedClasses: ["Lớp 6A"],
+      customClass: "",
+    });
+    setTeacherError(null);
+    setIsTeacherModalOpen(true);
+  };
+
+  const openEditTeacherModal = (t: any) => {
+    setEditingTeacher(t);
+    const classes = parseAssignedClasses(t.assignedClasses || t.schoolClass);
+    setTeacherFormData({
+      fullName: t.fullName || "",
+      username: t.username || "",
+      password: "",
+      schoolName: t.schoolName || "THCS VinaMath",
+      assignedClasses: classes,
+      customClass: "",
+    });
+    setTeacherError(null);
+    setIsTeacherModalOpen(true);
+  };
+
+  const toggleClassAssignment = (className: string) => {
+    setTeacherFormData((prev) => {
+      const exists = prev.assignedClasses.includes(className);
+      return {
+        ...prev,
+        assignedClasses: exists
+          ? prev.assignedClasses.filter((c) => c !== className)
+          : [...prev.assignedClasses, className],
+      };
+    });
+  };
+
+  const handleAddCustomClass = () => {
+    const raw = teacherFormData.customClass.trim();
+    if (!raw) return;
+    const formatted = raw.startsWith("Lớp ") ? raw : `Lớp ${raw}`;
+    if (!teacherFormData.assignedClasses.includes(formatted)) {
+      setTeacherFormData((prev) => ({
+        ...prev,
+        assignedClasses: [...prev.assignedClasses, formatted],
+        customClass: "",
+      }));
+    } else {
+      setTeacherFormData((prev) => ({ ...prev, customClass: "" }));
+    }
+  };
+
+  const handleSaveTeacher = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setTeacherError(null);
+    setIsSavingTeacher(true);
+
+    try {
+      if (editingTeacher) {
+        // Cập nhật thông tin và phân công lớp
+        const res = await fetch("/api/auth/users", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: editingTeacher.id,
+            username: editingTeacher.username,
+            fullName: teacherFormData.fullName,
+            schoolName: teacherFormData.schoolName,
+            assignedClasses: teacherFormData.assignedClasses,
+            password: teacherFormData.password || undefined,
+          }),
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          setStatusMessage(`Đã cập nhật phân công lớp cho giáo viên ${teacherFormData.fullName}`);
+          setIsTeacherModalOpen(false);
+          fetchAdminData();
+          setTimeout(() => setStatusMessage(null), 3000);
+        } else {
+          setTeacherError(data.error || "Không thể cập nhật giáo viên.");
+        }
+      } else {
+        // Thêm giáo viên mới
+        if (!teacherFormData.username || !teacherFormData.password || !teacherFormData.fullName) {
+          setTeacherError("Vui lòng điền đầy đủ họ tên, tên đăng nhập và mật khẩu.");
+          setIsSavingTeacher(false);
+          return;
+        }
+        const res = await fetch("/api/auth/users", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            role: "teacher",
+            fullName: teacherFormData.fullName,
+            username: teacherFormData.username,
+            password: teacherFormData.password,
+            schoolName: teacherFormData.schoolName,
+            assignedClasses: teacherFormData.assignedClasses,
+          }),
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          setStatusMessage(`Đã thêm mới và phân quyền giáo viên: ${teacherFormData.fullName}`);
+          setIsTeacherModalOpen(false);
+          fetchAdminData();
+          setTimeout(() => setStatusMessage(null), 3000);
+        } else {
+          setTeacherError(data.error || "Không thể tạo tài khoản giáo viên.");
+        }
+      }
+    } catch (err) {
+      setTeacherError("Đã xảy ra lỗi khi lưu thông tin giáo viên.");
+    } finally {
+      setIsSavingTeacher(false);
+    }
+  };
+
+  const handleDeleteTeacher = async (tId: string, tName: string) => {
+    if (!window.confirm(`Bạn có chắc chắn muốn xóa tài khoản giáo viên "${tName}" khỏi hệ thống?`)) return;
+    try {
+      setIsLoading(true);
+      const res = await fetch(`/api/auth/users?id=${encodeURIComponent(tId)}`, { method: "DELETE" });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setStatusMessage(`Đã xóa tài khoản giáo viên: ${tName}`);
+        setTeachers((prev) => prev.filter((t) => t.id !== tId && t.username !== tId));
+        setTimeout(() => setStatusMessage(null), 3000);
+      } else {
+        alert(data.error || "Không thể xóa giáo viên.");
+      }
+    } catch (err) {
+      alert("Đã xảy ra lỗi khi gửi yêu cầu xóa giáo viên.");
     } finally {
       setIsLoading(false);
     }
@@ -569,6 +758,18 @@ export default function AdminDashboardPage() {
         </button>
 
         <button
+          onClick={() => setActiveTab("teachers")}
+          className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
+            activeTab === "teachers"
+              ? "bg-teal-500 text-slate-950 shadow-md shadow-teal-500/20"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <UserCheck className="w-4 h-4 text-teal-400" />
+          <span>Phân Quyền Giáo Viên ({teachers.length})</span>
+        </button>
+
+        <button
           onClick={() => setActiveTab("mistakes")}
           className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
             activeTab === "mistakes"
@@ -780,6 +981,119 @@ export default function AdminDashboardPage() {
                               >
                                 <Trash2 className="w-3 h-3" />
                                 <span>Xóa</span>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB: PHÂN QUYỀN GIÁO VIÊN & PHÂN CÔNG LỚP HỌC                             */}
+      {/* ========================================================================= */}
+      {activeTab === "teachers" && (
+        <div className="space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-[#0e1526] border border-slate-800">
+            <div>
+              <h2 className="text-sm font-black text-white flex items-center gap-2">
+                <UserCheck className="w-4 h-4 text-teal-400" />
+                Danh Sách Giáo Viên & Phân Công Lớp Quản Lý
+              </h2>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Admin phân công các lớp phụ trách cho từng giáo viên. Giáo viên chỉ được xem và quản lý học sinh trong các lớp được phân quyền tại đây.
+              </p>
+            </div>
+            <button
+              onClick={openAddTeacherModal}
+              className="px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-md shadow-teal-500/20 shrink-0 cursor-pointer"
+            >
+              <UserPlus className="w-4 h-4" />
+              <span>+ Thêm Giáo Viên Mới</span>
+            </button>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-[#0e1526] overflow-hidden shadow-lg">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs">
+                <thead className="bg-slate-900/80 text-slate-400 font-bold border-b border-slate-800">
+                  <tr>
+                    <th className="p-3.5">STT</th>
+                    <th className="p-3.5">Giáo Viên</th>
+                    <th className="p-3.5">Tên Đăng Nhập</th>
+                    <th className="p-3.5">Trường Công Tác</th>
+                    <th className="p-3.5">Các Lớp Được Phân Công</th>
+                    <th className="p-3.5 text-center">HS Trong Lớp</th>
+                    <th className="p-3.5 text-center">Thao Tác</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/60 text-slate-300">
+                  {teachers.length === 0 ? (
+                    <tr>
+                      <td colSpan={7} className="p-8 text-center text-slate-500">
+                        Chưa có giáo viên nào trong hệ thống. Hãy nhấn &quot;+ Thêm Giáo Viên Mới&quot; để tạo tài khoản và phân công lớp.
+                      </td>
+                    </tr>
+                  ) : (
+                    teachers.map((t, idx) => {
+                      const tClasses = parseAssignedClasses(t.assignedClasses || t.schoolClass);
+                      const myStudentsCount = students.filter((s) => isStudentInAssignedClasses(tClasses, s.schoolClass)).length;
+
+                      return (
+                        <tr key={t.id || t.username} className="hover:bg-slate-900/50 transition-colors">
+                          <td className="p-3.5 font-mono text-slate-500">{idx + 1}</td>
+                          <td className="p-3.5">
+                            <div className="font-bold text-white flex items-center gap-1.5">
+                              <span className="text-base">👨‍🏫</span>
+                              <span>{t.fullName || t.username}</span>
+                            </div>
+                          </td>
+                          <td className="p-3.5 font-mono text-teal-400 font-bold">{t.username}</td>
+                          <td className="p-3.5 text-slate-400">{t.schoolName || "THCS VinaMath"}</td>
+                          <td className="p-3.5">
+                            <div className="flex flex-wrap gap-1.5">
+                              {tClasses.length === 0 ? (
+                                <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-500/10 text-rose-400 border border-rose-500/20">
+                                  Chưa phân công lớp
+                                </span>
+                              ) : (
+                                tClasses.map((cls: string) => (
+                                  <span
+                                    key={cls}
+                                    className="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/30"
+                                  >
+                                    {cls}
+                                  </span>
+                                ))
+                              )}
+                            </div>
+                          </td>
+                          <td className="p-3.5 text-center font-bold text-white">
+                            <span className="px-2.5 py-1 rounded-full bg-slate-800 text-cyan-300 text-xs">
+                              {myStudentsCount} HS
+                            </span>
+                          </td>
+                          <td className="p-3.5 text-center">
+                            <div className="flex items-center justify-center gap-2">
+                              <button
+                                onClick={() => openEditTeacherModal(t)}
+                                className="px-3 py-1.5 rounded-xl bg-teal-500/20 text-teal-300 hover:bg-teal-500/30 border border-teal-500/40 text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1"
+                              >
+                                <Edit3 className="w-3 h-3" />
+                                <span>Phân Công Lớp</span>
+                              </button>
+                              <button
+                                onClick={() => handleDeleteTeacher(t.id || t.username, t.fullName || t.username)}
+                                className="p-1.5 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 border border-rose-500/30 text-xs transition-all cursor-pointer"
+                                title="Xóa tài khoản giáo viên"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
                               </button>
                             </div>
                           </td>
@@ -1251,6 +1565,184 @@ export default function AdminDashboardPage() {
                 Đóng
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MODAL: THÊM / CHỈNH SỬA PHÂN CÔNG LỚP CHO GIÁO VIÊN                        */}
+      {/* ========================================================================= */}
+      {isTeacherModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in">
+          <div className="w-full max-w-lg rounded-3xl bg-[#0e1526] border-2 border-teal-500/40 p-6 space-y-5 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+            {/* Header Modal */}
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-300">
+                  <UserCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <h2 className="text-base font-black text-white">
+                    {editingTeacher ? "Chỉnh Sửa Phân Công Lớp" : "Thêm Giáo Viên Mới"}
+                  </h2>
+                  <p className="text-xs text-slate-400">
+                    Phân quyền các lớp phụ trách cho giáo viên
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsTeacherModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Error Message */}
+            {teacherError && (
+              <div className="p-3 rounded-xl bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>{teacherError}</span>
+              </div>
+            )}
+
+            {/* Form */}
+            <form onSubmit={handleSaveTeacher} className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Họ và Tên Giáo Viên <span className="text-rose-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={teacherFormData.fullName}
+                  onChange={(e) => setTeacherFormData({ ...teacherFormData, fullName: e.target.value })}
+                  placeholder="Ví dụ: Thầy Nguyễn Văn Toàn"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Tên Đăng Nhập <span className="text-rose-400">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    disabled={Boolean(editingTeacher)}
+                    value={teacherFormData.username}
+                    onChange={(e) => setTeacherFormData({ ...teacherFormData, username: e.target.value })}
+                    placeholder="Ví dụ: gv_toan6"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono disabled:opacity-60 focus:outline-none focus:border-teal-400"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    {editingTeacher ? "Mật Khẩu Mới (bỏ trống nếu giữ nguyên)" : "Mật Khẩu Khởi Tạo *"}
+                  </label>
+                  <input
+                    type="password"
+                    required={!editingTeacher}
+                    value={teacherFormData.password}
+                    onChange={(e) => setTeacherFormData({ ...teacherFormData, password: e.target.value })}
+                    placeholder={editingTeacher ? "Nhập nếu muốn đổi..." : "Ví dụ: gv123456"}
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Đơn Vị Công Tác / Trường Học
+                </label>
+                <input
+                  type="text"
+                  value={teacherFormData.schoolName}
+                  onChange={(e) => setTeacherFormData({ ...teacherFormData, schoolName: e.target.value })}
+                  placeholder="Ví dụ: THCS VinaMath"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
+                />
+              </div>
+
+              {/* Phân Công Lớp (Checkboxes) */}
+              <div className="space-y-2 pt-1">
+                <div className="flex items-center justify-between">
+                  <label className="block text-xs font-bold text-slate-300">
+                    Phân Công Lớp Phụ Trách ({teacherFormData.assignedClasses.length} lớp đã chọn)
+                  </label>
+                  <span className="text-[10px] text-teal-400 font-medium">
+                    (Giáo viên chỉ thấy học sinh các lớp này)
+                  </span>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2.5">
+                  <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto pr-1">
+                    {allSelectableClasses.map((cls) => {
+                      const isSelected = teacherFormData.assignedClasses.includes(cls);
+                      return (
+                        <button
+                          type="button"
+                          key={cls}
+                          onClick={() => toggleClassAssignment(cls)}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                            isSelected
+                              ? "bg-teal-500 text-slate-950 shadow-sm shadow-teal-500/30"
+                              : "bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700"
+                          }`}
+                        >
+                          <span>{isSelected ? "✓" : "+"}</span>
+                          <span>{cls}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Thêm lớp tùy chỉnh */}
+                  <div className="flex gap-2 pt-2 border-t border-slate-800">
+                    <input
+                      type="text"
+                      value={teacherFormData.customClass}
+                      onChange={(e) => setTeacherFormData({ ...teacherFormData, customClass: e.target.value })}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                          e.preventDefault();
+                          handleAddCustomClass();
+                        }
+                      }}
+                      placeholder="Nhập tên lớp khác (Ví dụ: 6A5 hoặc 10A4)..."
+                      className="flex-1 px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:outline-none focus:border-teal-400"
+                    />
+                    <button
+                      type="button"
+                      onClick={handleAddCustomClass}
+                      className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold cursor-pointer transition-colors"
+                    >
+                      Thêm
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Modal Actions */}
+              <div className="flex items-center justify-end gap-2.5 pt-3 border-t border-slate-800">
+                <button
+                  type="button"
+                  onClick={() => setIsTeacherModalOpen(false)}
+                  className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-colors cursor-pointer"
+                >
+                  Hủy
+                </button>
+                <button
+                  type="submit"
+                  disabled={isSavingTeacher}
+                  className="px-5 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs transition-all shadow-md shadow-teal-500/20 cursor-pointer"
+                >
+                  {isSavingTeacher ? "Đang lưu..." : editingTeacher ? "Lưu Cập Nhật Phân Quyền" : "Tạo & Phân Quyền"}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

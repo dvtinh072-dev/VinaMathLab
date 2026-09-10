@@ -52,15 +52,19 @@ export default function HomePage() {
             <span>Dành Cho Học Sinh</span>
           </Link>
 
-          {/* Nút 2: Dành Cho Giáo Viên */}
+          {/* Nút 2: Phân Quyền Quản Lý Giáo Viên */}
           <Link
             href="/giao-vien"
-            className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-slate-900/90 text-slate-200 border border-slate-700 hover:border-emerald-400 hover:text-white hover:bg-slate-800 hover:scale-105 active:scale-95"
+            className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all duration-300 shadow-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white shadow-emerald-500/25 hover:scale-105 hover:shadow-emerald-500/40 active:scale-95 border border-emerald-400/30"
           >
             <span className="text-xl">👨‍🏫</span>
-            <span>Dành Cho Giáo Viên</span>
+            <span>Phân Quyền Quản Lý Giáo Viên</span>
           </Link>
         </div>
+
+        <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 text-center pt-1">
+          Học sinh tự học chuẩn SGK 2026 • Giáo viên đăng nhập quản lý lớp theo phân công của Admin
+        </p>
       </section>
 
       {/* 2. Thông Tin Web & Liên Hệ Tác Giả */}

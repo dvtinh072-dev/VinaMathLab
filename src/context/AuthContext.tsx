@@ -5,7 +5,7 @@ import { getLocalStudentProgress, saveLocalStudentProgressUpdate, getLocalProgre
 
 export interface UserProfile {
   id: string;
-  role: "student" | "admin";
+  role: "student" | "admin" | "teacher";
   fullName: string;
   schoolName?: string;
   studentCode?: string;
@@ -13,6 +13,7 @@ export interface UserProfile {
   email?: string;
   grade?: string;
   schoolClass?: string;
+  assignedClasses?: string[];
   exp?: number;
   coins?: number;
   streak?: number;
@@ -21,12 +22,14 @@ export interface UserProfile {
 
 interface AuthContextType {
   user: UserProfile | null;
-  role: "guest" | "student" | "admin";
+  role: "guest" | "student" | "admin" | "teacher";
   isAdmin: boolean;
   isStudent: boolean;
+  isTeacher: boolean;
   isLoading: boolean;
   loginStudent: (identifier: string, pass: string) => Promise<{ success: boolean; error?: string }>;
   loginAdmin: (username: string, pass: string) => Promise<{ success: boolean; error?: string }>;
+  loginTeacher: (username: string, pass: string) => Promise<{ success: boolean; error?: string; user?: UserProfile }>;
   registerStudent: (data: {
     fullName: string;
     schoolName?: string;
@@ -228,6 +231,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           setUser(parsed);
           // Tự động tải dữ liệu mới nhất từ Supabase Cloud để đồng bộ điểm số đã làm ở thiết bị khác
           refreshProfile(parsed);
+        } else if (parsed && parsed.role === "teacher") {
+          if (!parsed.assignedClasses && parsed.schoolClass) {
+            parsed.assignedClasses = parsed.schoolClass.split(",").map((c: string) => c.trim()).filter(Boolean);
+          }
+          setUser(parsed);
         } else {
           setUser(parsed);
         }
@@ -496,6 +504,61 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
   };
 
+  const loginTeacher = async (username: string, pass: string): Promise<{ success: boolean; error?: string; user?: UserProfile }> => {
+    const cleanUsername = username.trim();
+    const cleanPass = pass.trim();
+
+    try {
+      const res = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ role: "teacher", username: cleanUsername, password: cleanPass }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && data.user) {
+          saveUserSession(data.user);
+          return { success: true, user: data.user };
+        }
+        return { success: false, error: data.error || "Tên đăng nhập hoặc mật khẩu giáo viên không chính xác." };
+      } else {
+        const errData = await res.json().catch(() => ({}));
+        if (errData.error) return { success: false, error: errData.error };
+      }
+    } catch (e) {
+      console.warn("Server teacher login failed, trying fallback...", e);
+    }
+
+    // Fallback: kiểm tra trong bộ nhớ cục bộ
+    const localUsers = getLocalRegisteredUsers();
+    const matched = localUsers.find(
+      (u) =>
+        (u.role === "teacher" || u.role === "admin") &&
+        (u.username?.toLowerCase() === cleanUsername.toLowerCase() ||
+          u.email?.toLowerCase() === cleanUsername.toLowerCase()) &&
+        u.password === cleanPass
+    );
+
+    if (matched) {
+      const { password: _, ...safeUser } = matched;
+      saveUserSession(safeUser);
+
+      fetch("/api/auth/sync-local-users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ users: [matched] }),
+      }).catch(() => {});
+
+      return { success: true, user: safeUser };
+    }
+
+    return {
+      success: false,
+      error: "Tài khoản giáo viên hoặc mật khẩu không chính xác.",
+    };
+  };
+
   const registerStudent = async (studentData: {
     fullName: string;
     schoolName?: string;
@@ -754,6 +817,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const role = user ? user.role : "guest";
   const isAdmin = role === "admin";
   const isStudent = role === "student";
+  const isTeacher = role === "teacher";
 
   return (
     <AuthContext.Provider
@@ -762,9 +826,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         role,
         isAdmin,
         isStudent,
+        isTeacher,
         isLoading,
         loginStudent,
         loginAdmin,
+        loginTeacher,
         registerStudent,
         registerAdmin,
         updateAdminCredentials,

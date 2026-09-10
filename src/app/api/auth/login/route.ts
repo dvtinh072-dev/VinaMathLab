@@ -4,6 +4,7 @@ import path from "path";
 import { prisma } from "@/lib/prisma";
 import { isUserDeleted } from "@/lib/deletedUsers";
 import { supabase } from "@/lib/supabaseClient";
+import { parseAssignedClasses } from "@/lib/teacherClassUtils";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -68,10 +69,11 @@ export async function POST(req: Request) {
           email: suUser.email,
           password: suUser.password_hash,
           fullName: suUser.full_name,
-          role: suUser.role, // Sử dụng vai trò thực tế của tài khoản (admin hoặc student)
+          role: suUser.role, // Vai trò thực tế: admin, teacher, hoặc student
           schoolName: suUser.school_name,
           grade: suUser.grade,
           schoolClass: suUser.school_class,
+          assignedClasses: parseAssignedClasses(suUser.school_class),
           exp: suUser.exp,
           coins: suUser.coins,
           streak: suUser.streak,
@@ -122,10 +124,16 @@ export async function POST(req: Request) {
           error:
             role === "admin"
               ? "Tên đăng nhập hoặc mật khẩu quản trị viên không chính xác."
+              : role === "teacher"
+              ? "Tên đăng nhập hoặc mật khẩu giáo viên không chính xác."
               : "Tên đăng nhập hoặc mật khẩu không chính xác.",
         },
         { status: 401 }
       );
+    }
+
+    if (user.role === "teacher" && !user.assignedClasses) {
+      user.assignedClasses = parseAssignedClasses(user.schoolClass);
     }
 
     // Kiểm tra chéo xem user này có nằm trong danh sách đã xóa không

@@ -9,6 +9,32 @@
     "createdAt": "2026-08-30T00:00:00.000Z"
   },
   {
+    "id": "u-teacher-toan6",
+    "role": "teacher",
+    "username": "gv_toan6",
+    "password": "gv123456",
+    "fullName": "Thầy Nguyễn Văn Toàn",
+    "schoolName": "THCS VinaMath",
+    "email": "gv_toan6@vinamath.edu.vn",
+    "grade": "Giáo Viên",
+    "schoolClass": "Lớp 6A4, Lớp 6A",
+    "assignedClasses": ["Lớp 6A4", "Lớp 6A"],
+    "createdAt": "2026-08-30T00:00:00.000Z"
+  },
+  {
+    "id": "u-teacher-toan10",
+    "role": "teacher",
+    "username": "gv_toan10",
+    "password": "gv123456",
+    "fullName": "Cô Trần Thị Hương",
+    "schoolName": "THPT Chuyên VinaMath",
+    "email": "gv_toan10@vinamath.edu.vn",
+    "grade": "Giáo Viên",
+    "schoolClass": "Lớp 10A1",
+    "assignedClasses": ["Lớp 10A1"],
+    "createdAt": "2026-08-30T00:00:00.000Z"
+  },
+  {
     "id": "u-student-1",
     "role": "student",
     "username": "annguyen6a",

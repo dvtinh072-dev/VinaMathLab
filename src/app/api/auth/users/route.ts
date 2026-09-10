@@ -4,6 +4,7 @@ import path from "path";
 import { prisma } from "@/lib/prisma";
 import { getDeletedIdentifiers, addDeletedIdentifiers } from "@/lib/deletedUsers";
 import { supabase } from "@/lib/supabaseClient";
+import { parseAssignedClasses } from "@/lib/teacherClassUtils";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
 
@@ -139,11 +140,188 @@ export async function GET() {
       }
     });
 
-    const mergedUsers = Array.from(userMap.values());
+    const mergedUsers = Array.from(userMap.values()).map((u: any) => {
+      if (u.role === "teacher") {
+        return {
+          ...u,
+          assignedClasses: parseAssignedClasses(u.assignedClasses || u.schoolClass || u.school_class),
+        };
+      }
+      return u;
+    });
     return NextResponse.json({ success: true, users: mergedUsers });
   } catch (error) {
     console.error("Fetch users error:", error);
     return NextResponse.json({ error: "Lỗi tải danh sách người dùng." }, { status: 500 });
+  }
+}
+
+// Tạo tài khoản mới (Ví dụ: Thêm Giáo Viên do Admin phân quyền)
+export async function POST(req: Request) {
+  try {
+    const body = await req.json();
+    const { fullName, username, password, schoolName, role = "teacher", assignedClasses = [], schoolClass, grade } = body;
+    const cleanUsername = (username || "").trim().toLowerCase();
+    const cleanPassword = (password || "").trim();
+    const cleanFullName = (fullName || cleanUsername).trim();
+
+    if (!cleanUsername || !cleanPassword) {
+      return NextResponse.json({ error: "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu." }, { status: 400 });
+    }
+
+    const assignedClassStr = Array.isArray(assignedClasses) && assignedClasses.length > 0
+      ? assignedClasses.join(", ")
+      : (schoolClass || "");
+
+    const newId = `u-${role}-${Date.now()}`;
+    const newUser: any = {
+      id: newId,
+      username: cleanUsername,
+      password: cleanPassword,
+      fullName: cleanFullName,
+      role: role,
+      schoolName: schoolName || "THCS VinaMath",
+      grade: grade || (role === "teacher" ? "Giáo Viên" : "Khối 6"),
+      schoolClass: assignedClassStr,
+      assignedClasses: Array.isArray(assignedClasses) && assignedClasses.length > 0 ? assignedClasses : parseAssignedClasses(assignedClassStr),
+      email: `${cleanUsername}@vinamath.edu.vn`,
+      exp: 0,
+      coins: 100,
+      streak: 1,
+      createdAt: new Date().toISOString(),
+    };
+
+    // 1. Lưu vào Supabase Cloud
+    try {
+      await supabase.from("users").upsert({
+        id: newUser.id,
+        username: newUser.username,
+        email: newUser.email,
+        password_hash: cleanPassword,
+        full_name: newUser.fullName,
+        role: newUser.role,
+        school_name: newUser.schoolName,
+        grade: newUser.grade,
+        school_class: newUser.schoolClass,
+        exp: newUser.exp,
+        coins: newUser.coins,
+        streak: newUser.streak,
+        created_at: newUser.createdAt,
+      }, { onConflict: "username" });
+    } catch (suErr) {
+      console.warn("Supabase upsert teacher warning:", suErr);
+    }
+
+    // 2. Lưu vào Prisma DB nếu có
+    try {
+      await prisma.user.upsert({
+        where: { username: cleanUsername },
+        update: {
+          fullName: cleanFullName,
+          password: cleanPassword,
+          role: role,
+          schoolClass: assignedClassStr,
+        },
+        create: {
+          id: newId,
+          username: cleanUsername,
+          password: cleanPassword,
+          fullName: cleanFullName,
+          role: role,
+          schoolClass: assignedClassStr,
+          grade: newUser.grade,
+        }
+      });
+    } catch (dbErr) {
+      console.warn("Prisma upsert teacher warning:", dbErr);
+    }
+
+    // 3. Lưu vào usersData.json
+    try {
+      const fallbackUsers = getFallbackUsers();
+      const existingIdx = fallbackUsers.findIndex((u: any) => u.username?.toLowerCase() === cleanUsername);
+      if (existingIdx >= 0) {
+        fallbackUsers[existingIdx] = { ...fallbackUsers[existingIdx], ...newUser };
+      } else {
+        fallbackUsers.unshift(newUser);
+      }
+      fs.writeFileSync(usersFilePath, JSON.stringify(fallbackUsers, null, 2), "utf-8");
+    } catch (fsErr) {
+      console.error("Lỗi ghi usersData.json:", fsErr);
+    }
+
+    const { password: _, ...safeUser } = newUser;
+    return NextResponse.json({ success: true, user: safeUser, message: "Tạo tài khoản thành công." });
+  } catch (error) {
+    console.error("Create user error:", error);
+    return NextResponse.json({ error: "Lỗi máy chủ khi tạo tài khoản." }, { status: 500 });
+  }
+}
+
+// Cập nhật tài khoản (Admin sửa phân công lớp, đổi mật khẩu giáo viên)
+export async function PUT(req: Request) {
+  try {
+    const body = await req.json();
+    const { id, username, fullName, schoolName, assignedClasses, schoolClass, password } = body;
+    const cleanUsername = (username || "").trim().toLowerCase();
+
+    const assignedClassStr = Array.isArray(assignedClasses)
+      ? assignedClasses.join(", ")
+      : schoolClass !== undefined ? schoolClass : undefined;
+
+    // 1. Cập nhật Supabase Cloud
+    try {
+      const updateData: any = {};
+      if (fullName) updateData.full_name = fullName.trim();
+      if (schoolName) updateData.school_name = schoolName.trim();
+      if (assignedClassStr !== undefined) updateData.school_class = assignedClassStr;
+      if (password && password.trim()) updateData.password_hash = password.trim();
+
+      if (id) {
+        await supabase.from("users").update(updateData).eq("id", id);
+      } else if (cleanUsername) {
+        await supabase.from("users").update(updateData).eq("username", cleanUsername);
+      }
+    } catch (suErr) {
+      console.warn("Supabase update teacher warning:", suErr);
+    }
+
+    // 2. Cập nhật Prisma DB
+    try {
+      const dbUpdate: any = {};
+      if (fullName) dbUpdate.fullName = fullName.trim();
+      if (assignedClassStr !== undefined) dbUpdate.schoolClass = assignedClassStr;
+      if (password && password.trim()) dbUpdate.password = password.trim();
+
+      if (id) {
+        await prisma.user.updateMany({ where: { id }, data: dbUpdate });
+      } else if (cleanUsername) {
+        await prisma.user.updateMany({ where: { username: cleanUsername }, data: dbUpdate });
+      }
+    } catch (dbErr) {}
+
+    // 3. Cập nhật usersData.json
+    try {
+      const fallbackUsers = getFallbackUsers();
+      const idx = fallbackUsers.findIndex(
+        (u: any) => (id && u.id === id) || (cleanUsername && u.username?.toLowerCase() === cleanUsername)
+      );
+      if (idx >= 0) {
+        if (fullName) fallbackUsers[idx].fullName = fullName.trim();
+        if (schoolName) fallbackUsers[idx].schoolName = schoolName.trim();
+        if (assignedClassStr !== undefined) {
+          fallbackUsers[idx].schoolClass = assignedClassStr;
+          fallbackUsers[idx].assignedClasses = parseAssignedClasses(assignedClassStr);
+        }
+        if (password && password.trim()) fallbackUsers[idx].password = password.trim();
+        fs.writeFileSync(usersFilePath, JSON.stringify(fallbackUsers, null, 2), "utf-8");
+      }
+    } catch (fsErr) {}
+
+    return NextResponse.json({ success: true, message: "Cập nhật tài khoản và phân quyền thành công." });
+  } catch (error) {
+    console.error("Update user error:", error);
+    return NextResponse.json({ error: "Lỗi máy chủ khi cập nhật tài khoản." }, { status: 500 });
   }
 }
 

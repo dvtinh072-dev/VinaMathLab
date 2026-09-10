@@ -49,18 +49,18 @@ export async function POST(req: Request) {
         continue;
       }
 
-      const role = u.role === "admin" ? "admin" : "student";
+      const role = u.role === "admin" ? "admin" : u.role === "teacher" ? "teacher" : "student";
       const cleanPassword = (u.password || u.password_hash || "").trim();
       const fullName = (u.fullName || u.full_name || rawUsername).trim();
       const studentCode = u.studentCode || u.student_code || (role === "student" ? rawUsername.toUpperCase() : null);
-      const email = u.email || (role === "admin" ? `${loginKey}@vinamath.edu.vn` : null);
+      const email = u.email || (role === "admin" ? `${loginKey}@vinamath.edu.vn` : role === "teacher" ? `${loginKey}@vinamath.edu.vn` : null);
       const schoolName = u.schoolName || u.school_name || "THCS VinaMath";
       const grade = u.grade || "Khối 6";
-      const schoolClass = u.schoolClass || u.school_class || "Lớp 6A";
+      const schoolClass = u.schoolClass || u.school_class || (role === "teacher" ? "Lớp 6A4" : "Lớp 6A");
       const exp = Number(u.exp) || 0;
       const coins = Number(u.coins) || 0;
       const streak = Number(u.streak) || 1;
-      const id = u.id || (role === "admin" ? `u-admin-${Date.now()}` : `u-student-${Date.now()}`);
+      const id = u.id || (role === "admin" ? `u-admin-${Date.now()}` : role === "teacher" ? `u-teacher-${Date.now()}` : `u-student-${Date.now()}`);
 
       // 1. Đồng bộ lên Supabase Cloud Database
       try {

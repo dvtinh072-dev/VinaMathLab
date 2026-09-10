@@ -131,7 +131,7 @@ export default function DangNhapPage() {
             }`}
           >
             <User className="w-4 h-4" />
-            <span>Giáo Viên</span>
+            <span>Dành Cho Giáo Viên</span>
           </button>
 
           <button

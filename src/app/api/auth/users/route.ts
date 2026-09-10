@@ -59,6 +59,7 @@ export async function GET() {
           email: u.email,
           fullName: u.full_name,
           role: u.role,
+          schoolName: u.school_name,
           grade: u.grade,
           schoolClass: u.school_class,
           exp: u.exp,
@@ -343,6 +344,16 @@ export async function DELETE(req: Request) {
     }
 
     const cleanUserId = userId.trim();
+    const lowerUserId = cleanUserId.toLowerCase();
+
+    // Bảo vệ không cho xóa các tài khoản mặc định của hệ thống
+    const defaultProtectedUsers = ["admin", "u-admin-1", "dvtinh072", "u-admin-dvtinh072", "gv_toan6", "u-teacher-toan6", "gv_toan10", "u-teacher-toan10"];
+    if (defaultProtectedUsers.includes(lowerUserId)) {
+      return NextResponse.json(
+        { error: "Không thể xóa tài khoản mặc định của hệ thống." },
+        { status: 403 }
+      );
+    }
 
     // 0. Tìm thông tin chi tiết user (để thu thập mọi identifiers: id, username, studentCode, email)
     const identifiersToDelete = new Set<string>([cleanUserId]);

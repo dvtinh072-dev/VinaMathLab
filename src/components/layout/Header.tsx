@@ -22,7 +22,7 @@ export function Header() {
     { href: "/", label: "Trang Chủ", icon: Home },
     { href: "/hoc-tap", label: "Học Liệu Khối Lớp", icon: BookOpen },
     { href: "/luyen-thi", label: "Phòng Thi Thử", icon: Award },
-    { href: "/giao-vien", label: "Quản Lý Lớp", icon: Users },
+    { href: "/giao-vien", label: "Dành Cho Giáo Viên", icon: Users },
   ];
 
   return (

@@ -346,11 +346,11 @@ export async function DELETE(req: Request) {
     const cleanUserId = userId.trim();
     const lowerUserId = cleanUserId.toLowerCase();
 
-    // Bảo vệ không cho xóa các tài khoản mặc định của hệ thống
-    const defaultProtectedUsers = ["admin", "u-admin-1", "dvtinh072", "u-admin-dvtinh072", "gv_toan6", "u-teacher-toan6", "gv_toan10", "u-teacher-toan10"];
+    // Bảo vệ không cho xóa tài khoản quản trị tối cao của hệ thống
+    const defaultProtectedUsers = ["admin", "u-admin-1", "dvtinh072", "u-admin-dvtinh072"];
     if (defaultProtectedUsers.includes(lowerUserId)) {
       return NextResponse.json(
-        { error: "Không thể xóa tài khoản mặc định của hệ thống." },
+        { error: "Không thể xóa tài khoản Quản trị viên tối cao." },
         { status: 403 }
       );
     }

@@ -6,12 +6,14 @@ import { useRouter } from "next/navigation";
 import { MathFormula } from "@/components/math/MathFormula";
 import { CURRICULUM_DATA } from "@/data/curriculumData";
 import { useAuth } from "@/context/AuthContext";
-import { Lock, LogIn, Sparkles, UserPlus } from "lucide-react";
+import { Lock, LogIn, Sparkles, UserPlus, AlertCircle, ShieldAlert } from "lucide-react";
+import { canAccessGrade } from "@/lib/teacherClassUtils";
 
 export default function HocTapGradeSelectionPage() {
   const router = useRouter();
   const { user, isStudent, isAdmin, openAuthModal } = useAuth();
   const isAuthenticated = Boolean(user && (isStudent || isAdmin));
+  const [accessDeniedMessage, setAccessDeniedMessage] = React.useState<string | null>(null);
 
   const getFirstLessonHref = (gradeId: string) => {
     const gradeData = CURRICULUM_DATA[gradeId];
@@ -20,13 +22,26 @@ export default function HocTapGradeSelectionPage() {
   };
 
   const handleGradeClick = (e: React.MouseEvent, gradeId: string) => {
+    setAccessDeniedMessage(null);
+
     if (!isAuthenticated) {
       e.preventDefault();
       // Mở modal xác thực cho học sinh
       openAuthModal("student", "login");
-    } else {
-      router.push(getFirstLessonHref(gradeId));
+      return;
     }
+
+    // Kiểm tra quyền hạn khối: Học sinh chỉ được học khối mình đã đăng ký
+    const check = canAccessGrade(user, gradeId);
+    if (!check.allowed && check.reason === "GRADE_MISMATCH") {
+      e.preventDefault();
+      setAccessDeniedMessage(
+        `Tài khoản của bạn đăng ký ${check.userGradeLabel}. Bạn chỉ được học nội dung thuộc khối của mình và không thể xem bài học ${check.targetGradeLabel}.`
+      );
+      return;
+    }
+
+    router.push(getFirstLessonHref(gradeId));
   };
 
   const middleSchoolGrades = [
@@ -98,6 +113,59 @@ export default function HocTapGradeSelectionPage() {
     },
   ];
 
+  const isStudentUser = Boolean(user && isStudent && !isAdmin);
+
+  const renderGradeCard = (grade: any) => {
+    const check = isAuthenticated && isStudentUser ? canAccessGrade(user, grade.id) : { allowed: true };
+    const isBlocked = isAuthenticated && isStudentUser && !check.allowed;
+    const isOwnGrade = isAuthenticated && isStudentUser && check.allowed && check.userGradeNum;
+
+    return (
+      <button
+        type="button"
+        key={grade.id}
+        onClick={(e) => handleGradeClick(e, grade.id)}
+        className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl w-full cursor-pointer ${
+          isBlocked ? "opacity-60 hover:opacity-85" : ""
+        } ${isOwnGrade ? "ring-2 ring-emerald-400/80 shadow-emerald-500/30" : ""}`}
+      >
+        {/* Logo Badge chứa chữ 'Toán ...' */}
+        <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105 relative`}>
+          <span className="text-2xl drop-shadow-md">{grade.symbol}</span>
+          <span className="font-black text-2xl sm:text-3xl tracking-tight drop-shadow-md">
+            {grade.label}
+          </span>
+
+          {!isAuthenticated && (
+            <span className="absolute top-2 right-2 p-1 rounded-md bg-black/40 text-amber-300" title="Cần đăng nhập">
+              <Lock className="w-3.5 h-3.5" />
+            </span>
+          )}
+
+          {isBlocked && (
+            <span
+              className="absolute top-2 right-2 px-2 py-0.5 rounded-lg bg-black/70 border border-rose-500/50 text-[11px] font-black text-rose-300 flex items-center gap-1 shadow"
+              title="Khác khối lớp của bạn"
+            >
+              <Lock className="w-3 h-3 text-rose-400" />
+              <span>Khác khối</span>
+            </span>
+          )}
+
+          {isOwnGrade && (
+            <span
+              className="absolute top-2 right-2 px-2.5 py-0.5 rounded-lg bg-emerald-950/80 border border-emerald-400/80 text-[11px] font-black text-emerald-300 flex items-center gap-1 shadow-lg shadow-emerald-500/40"
+              title="Khối lớp của bạn"
+            >
+              <Sparkles className="w-3 h-3 text-amber-300" />
+              <span>Khối của bạn</span>
+            </span>
+          )}
+        </div>
+      </button>
+    );
+  };
+
   return (
     <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950 border border-indigo-500/30 p-4 sm:p-8 md:p-12 text-white space-y-8 sm:space-y-12 shadow-2xl">
       {/* Background Decorative Glowing Orbs */}
@@ -118,6 +186,29 @@ export default function HocTapGradeSelectionPage() {
       <div className="absolute bottom-8 right-12 text-xl text-emerald-400/30 font-bold select-none animate-float-reverse hidden sm:block">
         <MathFormula math="\vec{u} \cdot \vec{v}" />
       </div>
+
+      {/* Thông báo từ chối truy cập khối khác đối với học sinh */}
+      {accessDeniedMessage && (
+        <div className="relative z-10 max-w-2xl mx-auto p-4 sm:p-5 rounded-2xl bg-rose-500/15 border-2 border-rose-500/40 backdrop-blur-md flex items-center justify-between gap-3 text-left shadow-xl animate-in fade-in zoom-in-95">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 shrink-0">
+              <ShieldAlert className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="font-black text-rose-300 text-sm">Phân Quyền Khối Học</div>
+              <div className="text-xs text-rose-200/90 leading-relaxed">
+                {accessDeniedMessage}
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={() => setAccessDeniedMessage(null)}
+            className="px-3 py-1.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 text-xs font-bold border border-rose-500/40 shrink-0 transition-colors cursor-pointer"
+          >
+            Đã hiểu
+          </button>
+        </div>
+      )}
 
       {/* Cảnh báo / Nhắc nhở đăng nhập nếu là khách */}
       {!isAuthenticated && (
@@ -162,28 +253,7 @@ export default function HocTapGradeSelectionPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {middleSchoolGrades.map((grade) => (
-            <button
-              type="button"
-              key={grade.id}
-              onClick={(e) => handleGradeClick(e, grade.id)}
-              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl w-full cursor-pointer`}
-            >
-              {/* Logo Badge chứa chữ 'Toán 6', 'Toán 7', ... */}
-              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105 relative`}>
-                <span className="text-2xl drop-shadow-md">{grade.symbol}</span>
-                <span className="font-black text-2xl sm:text-3xl tracking-tight drop-shadow-md">
-                  {grade.label}
-                </span>
-
-                {!isAuthenticated && (
-                  <span className="absolute top-2 right-2 p-1 rounded-md bg-black/40 text-amber-300" title="Cần đăng nhập">
-                    <Lock className="w-3.5 h-3.5" />
-                  </span>
-                )}
-              </div>
-            </button>
-          ))}
+          {middleSchoolGrades.map(renderGradeCard)}
         </div>
       </div>
 
@@ -196,28 +266,7 @@ export default function HocTapGradeSelectionPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {highSchoolGrades.map((grade) => (
-            <button
-              type="button"
-              key={grade.id}
-              onClick={(e) => handleGradeClick(e, grade.id)}
-              className={`group relative overflow-hidden rounded-3xl border ${grade.borderColor} ${grade.cardBg} ${grade.glowEffect} p-7 transition-all duration-300 hover:-translate-y-2 flex items-center justify-center text-center backdrop-blur-xl shadow-xl w-full cursor-pointer`}
-            >
-              {/* Logo Badge chứa chữ 'Toán 10', 'Toán 11', 'Toán 12' */}
-              <div className={`w-full py-5 px-6 rounded-2xl ${grade.badgeBg} flex items-center justify-center gap-3 transition-transform duration-300 group-hover:scale-105 relative`}>
-                <span className="text-2xl drop-shadow-md">{grade.symbol}</span>
-                <span className="font-black text-2xl sm:text-3xl tracking-tight drop-shadow-md">
-                  {grade.label}
-                </span>
-
-                {!isAuthenticated && (
-                  <span className="absolute top-2 right-2 p-1 rounded-md bg-black/40 text-amber-300" title="Cần đăng nhập">
-                    <Lock className="w-3.5 h-3.5" />
-                  </span>
-                )}
-              </div>
-            </button>
-          ))}
+          {highSchoolGrades.map(renderGradeCard)}
         </div>
       </div>
     </div>

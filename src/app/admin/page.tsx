@@ -1142,19 +1142,13 @@ export default function AdminDashboardPage() {
                                 <Edit3 className="w-3 h-3" />
                                 <span>Phân Công Lớp</span>
                               </button>
-                              {["gv_toan6", "gv_toan10", "u-teacher-toan6", "u-teacher-toan10"].includes((t.username || t.id || "").toLowerCase()) ? (
-                                <span className="px-2.5 py-1 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 text-[10px] font-bold" title="Tài khoản giáo viên mặc định của hệ thống, không thể xóa">
-                                  Mặc định
-                                </span>
-                              ) : (
-                                <button
-                                  onClick={() => handleDeleteTeacher(t.id || t.username, t.fullName || t.username)}
-                                  className="p-1.5 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 border border-rose-500/30 text-xs transition-all cursor-pointer"
-                                  title="Xóa tài khoản giáo viên"
-                                >
-                                  <Trash2 className="w-3.5 h-3.5" />
-                                </button>
-                              )}
+                              <button
+                                onClick={() => handleDeleteTeacher(t.id || t.username, t.fullName || t.username)}
+                                className="p-1.5 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 border border-rose-500/30 text-xs transition-all cursor-pointer"
+                                title="Xóa tài khoản giáo viên này"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
                             </div>
                           </td>
                         </tr>

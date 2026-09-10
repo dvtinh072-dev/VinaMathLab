@@ -29,10 +29,12 @@ import { useAuth } from "@/context/AuthContext";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
+import { getUserGradeKey } from "@/lib/teacherClassUtils";
 
 export default function StudentProfilePage() {
   const router = useRouter();
   const { user, isStudent, isAdmin, logout, openAuthModal } = useAuth();
+  const userGradeKey = getUserGradeKey(user);
 
   const [progressData, setProgressData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -350,7 +352,7 @@ export default function StudentProfilePage() {
 
             <div className="pt-2">
               <Link
-                href="/hoc-tap/lop-6/t6-b1-tap-hop"
+                href={`/hoc-tap/${userGradeKey}`}
                 className="w-full py-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-black text-xs hover:from-cyan-400 hover:to-blue-500 transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20"
               >
                 <span>Vào Học Tiếp Ngay Bây Giờ</span>

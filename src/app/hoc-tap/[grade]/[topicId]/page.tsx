@@ -8,7 +8,8 @@ import { getUnifiedLessonDetail } from "@/data/allGradesLessonsData";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { GamifiedMathQuiz } from "@/components/interactive/GamifiedMathQuiz";
 import { useAuth } from "@/context/AuthContext";
-import { Sparkles, ArrowLeft, Lock, LogIn, UserPlus } from "lucide-react";
+import { Sparkles, ArrowLeft, Lock, LogIn, UserPlus, ShieldAlert } from "lucide-react";
+import { canAccessGrade, getUserGradeKey } from "@/lib/teacherClassUtils";
 
 interface Props {
   params: {
@@ -81,6 +82,56 @@ export default function TopicLessonPage({ params }: Props) {
             </div>
           </div>
         </article>
+      </div>
+    );
+  }
+
+  // Kiểm tra phân quyền khối học: Học sinh chỉ được học khối mình đã đăng ký
+  const gradeCheck = canAccessGrade(user, params.grade);
+  if (!gradeCheck.allowed && gradeCheck.reason === "GRADE_MISMATCH") {
+    const userGradeKey = getUserGradeKey(user);
+    const userGradeData = userGradeKey ? CURRICULUM_DATA[userGradeKey] : null;
+    const userFirstLessonId = userGradeData?.chapters[0]?.lessons[0]?.id;
+    const myGradeHref = userGradeKey
+      ? (userFirstLessonId ? `/hoc-tap/${userGradeKey}/${userFirstLessonId}` : `/hoc-tap/${userGradeKey}`)
+      : "/hoc-tap";
+
+    return (
+      <div className="max-w-2xl mx-auto my-12 p-6 sm:p-10 rounded-3xl bg-[#0e1526] border-2 border-rose-500/40 text-center space-y-6 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95">
+        <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 shadow-lg shadow-rose-500/20">
+          <ShieldAlert className="w-8 h-8" />
+        </div>
+
+        <div className="space-y-2">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/15 text-rose-300 border border-rose-500/30 text-xs font-black">
+            {gradeData.title} • Quyền Truy Cập Bị Giới Hạn
+          </span>
+          <h2 className="text-xl sm:text-2xl font-black text-white">
+            Nội Dung Không Thuộc Khối Đã Đăng Ký
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg mx-auto">
+            Tài khoản của bạn đăng ký <strong className="text-cyan-400 font-bold">{gradeCheck.userGradeLabel}</strong>. Bạn chỉ có quyền học tập và làm bài trong khối của mình và không được phép xem nội dung của <strong className="text-rose-400 font-bold">{gradeCheck.targetGradeLabel}</strong>.
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+          {userGradeKey && (
+            <Link
+              href={myGradeHref}
+              className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black text-xs sm:text-sm hover:from-blue-500 hover:to-cyan-400 transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/30 cursor-pointer"
+            >
+              <Sparkles className="w-4 h-4 text-amber-300" />
+              <span>Vào Học {gradeCheck.userGradeLabel}</span>
+            </Link>
+          )}
+          <Link
+            href="/hoc-tap"
+            className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-slate-800 border border-slate-700 text-white font-black text-xs sm:text-sm hover:bg-slate-700 transition-all flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 text-slate-400" />
+            <span>Danh Sách Khối Lớp</span>
+          </Link>
+        </div>
       </div>
     );
   }

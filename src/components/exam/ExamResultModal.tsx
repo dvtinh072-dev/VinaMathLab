@@ -95,16 +95,16 @@ export function ExamResultModal({ exam, mcAnswers, tfAnswers, saAnswers, onClose
           </div>
         </div>
 
-        <div className="flex items-center gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row items-center gap-3 pt-3">
           <button
             onClick={onRestart}
-            className="flex-1 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-xs md:text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center justify-center gap-1.5"
+            className="w-full sm:flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs sm:text-sm font-extrabold bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 shadow-[0_4px_0_0_#cbd5e1] dark:shadow-[0_4px_0_0_#1e293b] hover:from-slate-50 hover:to-slate-150 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2 transition-all duration-150 select-none"
           >
             <RotateCcw className="w-4 h-4" /> Làm lại bài thi
           </button>
           <button
             onClick={onClose}
-            className="flex-1 py-3 rounded-xl bg-primary text-white text-xs md:text-sm font-semibold hover:bg-primary/90 shadow-md flex items-center justify-center gap-1.5"
+            className="w-full sm:flex-1 py-3 rounded-2xl bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white text-xs sm:text-sm font-black border-t border-blue-400 shadow-[0_4px_0_0_#1e40af] hover:from-blue-500 hover:to-indigo-600 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2 transition-all duration-150 select-none"
           >
             <CheckCircle2 className="w-4 h-4" /> Xem chi tiết lời giải
           </button>

@@ -75,25 +75,25 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
                 <button
                   onClick={() => onAnswer(sub.key, true)}
                   className={cn(
-                    "px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all flex items-center gap-1",
+                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 transform select-none flex items-center gap-1.5",
                     userVal === true
-                      ? "bg-blue-600 text-white border-blue-600 shadow-sm"
-                      : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-blue-400"
+                      ? "bg-gradient-to-b from-emerald-400 to-emerald-600 text-white border-t border-emerald-300 shadow-[0_3px_0_0_#065f46] scale-105"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-[0_2px_0_0_#cbd5e1] dark:shadow-[0_2px_0_0_#0f172a] hover:text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:border-emerald-300 active:translate-y-0.5 active:shadow-none"
                   )}
                 >
-                  <Check className="w-3.5 h-3.5" /> Đúng
+                  <Check className="w-4 h-4 stroke-[3]" /> Đúng
                 </button>
 
                 <button
                   onClick={() => onAnswer(sub.key, false)}
                   className={cn(
-                    "px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all flex items-center gap-1",
+                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 transform select-none flex items-center gap-1.5",
                     userVal === false
-                      ? "bg-amber-600 text-white border-amber-600 shadow-sm"
-                      : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-amber-400"
+                      ? "bg-gradient-to-b from-rose-500 to-red-600 text-white border-t border-rose-300 shadow-[0_3px_0_0_#9f1239] scale-105"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-[0_2px_0_0_#cbd5e1] dark:shadow-[0_2px_0_0_#0f172a] hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/30 hover:border-rose-300 active:translate-y-0.5 active:shadow-none"
                   )}
                 >
-                  <X className="w-3.5 h-3.5" /> Sai
+                  <X className="w-4 h-4 stroke-[3]" /> Sai
                 </button>
 
                 {showExplanation && (

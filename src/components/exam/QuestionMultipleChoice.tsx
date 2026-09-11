@@ -41,7 +41,7 @@ export function QuestionMultipleChoice({ question, selectedKey, onSelect, showEx
       {(() => {
         const isAnyLong = question.options.some((opt) => opt.text.length > 28);
         return (
-          <div className={`grid gap-2.5 pt-1 ${isAnyLong ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
+          <div className={`grid gap-3 pt-1 ${isAnyLong ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
             {question.options.map((opt) => {
               const isSelected = selectedKey === opt.key;
               const isCorrect = showExplanation && opt.key === question.correctKey;
@@ -52,27 +52,29 @@ export function QuestionMultipleChoice({ question, selectedKey, onSelect, showEx
                   key={opt.key}
                   onClick={() => onSelect(opt.key)}
                   className={cn(
-                    "flex items-start gap-3 p-3 rounded-xl border text-left text-sm transition-all min-h-[48px]",
+                    "flex items-start gap-3.5 p-3.5 sm:p-4 rounded-2xl border text-left text-sm transition-all duration-150 transform select-none min-h-[52px]",
                     isSelected
-                      ? "border-primary bg-primary/10 text-primary font-medium ring-1 ring-primary"
-                      : "border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 text-slate-700 dark:text-slate-300",
-                    isCorrect && "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-semibold ring-1 ring-emerald-500",
-                    isWrong && "border-red-500 bg-red-50 dark:bg-red-950/40 text-red-700 dark:text-red-300 ring-1 ring-red-500"
+                      ? "border-blue-500 bg-gradient-to-r from-blue-50/90 to-indigo-50/90 dark:from-blue-950/50 dark:to-indigo-950/50 text-blue-950 dark:text-blue-100 font-bold shadow-[0_4px_0_0_#2563eb] dark:shadow-[0_4px_0_0_#1d4ed8] -translate-y-0.5"
+                      : "border-slate-200 dark:border-slate-750 bg-white dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 shadow-[0_3px_0_0_#e2e8f0] dark:shadow-[0_3px_0_0_#1e293b] hover:border-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 active:translate-y-0.5 active:shadow-none",
+                    isCorrect &&
+                      "border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 text-emerald-950 dark:text-emerald-100 font-bold shadow-[0_4px_0_0_#059669]",
+                    isWrong &&
+                      "border-rose-500 bg-gradient-to-r from-rose-50 to-red-50 dark:from-rose-950/40 dark:to-red-950/40 text-rose-950 dark:text-rose-100 font-bold shadow-[0_4px_0_0_#e11d48]"
                   )}
                 >
                   <span
                     className={cn(
-                      "w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 border mt-0.5",
+                      "w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black shrink-0 border transition-all duration-150 mt-0.5",
                       isSelected
-                        ? "bg-primary text-white border-primary"
-                        : "bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300",
-                      isCorrect && "bg-emerald-600 text-white border-emerald-600",
-                      isWrong && "bg-red-600 text-white border-red-600"
+                        ? "bg-gradient-to-b from-blue-500 to-indigo-600 text-white border-t border-blue-300 shadow-[0_2px_0_0_#1e40af]"
+                        : "bg-slate-100 dark:bg-slate-750 border-b-2 border-slate-300 dark:border-slate-650 text-slate-700 dark:text-slate-300",
+                      isCorrect && "bg-gradient-to-b from-emerald-500 to-teal-600 text-white border-t border-emerald-300 shadow-[0_2px_0_0_#065f46]",
+                      isWrong && "bg-gradient-to-b from-rose-500 to-red-600 text-white border-t border-rose-300 shadow-[0_2px_0_0_#9f1239]"
                     )}
                   >
                     {opt.key}
                   </span>
-                  <div className="flex-1 min-w-0 break-words leading-relaxed overflow-visible">
+                  <div className="flex-1 min-w-0 break-words leading-relaxed overflow-visible pt-0.5">
                     <MathFormula math={opt.text} />
                   </div>
                 </button>

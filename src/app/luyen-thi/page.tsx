@@ -10,6 +10,98 @@ import {
 import { useAuth } from "@/context/AuthContext";
 import { canAccessGrade } from "@/lib/teacherClassUtils";
 
+const GRADE_STYLES: {
+  [key: string]: {
+    activeBg: string;
+    activeBorder: string;
+    activeShadow: string;
+    activeRing: string;
+    inactiveBg: string;
+    inactiveBorder: string;
+    inactiveText: string;
+    inactiveShadow: string;
+    badge: string;
+  };
+} = {
+  "lop-6": {
+    activeBg: "bg-gradient-to-b from-emerald-500 via-emerald-600 to-teal-700 text-white",
+    activeBorder: "border-t border-emerald-300",
+    activeShadow: "shadow-[0_5px_0_0_#065f46]",
+    activeRing: "ring-2 ring-emerald-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-emerald-50/70 hover:bg-emerald-100/90 dark:bg-emerald-950/20 dark:hover:bg-emerald-950/40",
+    inactiveBorder: "border-emerald-300 dark:border-emerald-800/70",
+    inactiveText: "text-emerald-800 dark:text-emerald-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#a7f3d0] dark:shadow-[0_3px_0_0_#064e3b]",
+    badge: "THCS",
+  },
+  "lop-7": {
+    activeBg: "bg-gradient-to-b from-sky-500 via-sky-600 to-cyan-700 text-white",
+    activeBorder: "border-t border-sky-300",
+    activeShadow: "shadow-[0_5px_0_0_#0369a1]",
+    activeRing: "ring-2 ring-sky-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-sky-50/70 hover:bg-sky-100/90 dark:bg-sky-950/20 dark:hover:bg-sky-950/40",
+    inactiveBorder: "border-sky-300 dark:border-sky-800/70",
+    inactiveText: "text-sky-800 dark:text-sky-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#bae6fd] dark:shadow-[0_3px_0_0_#0c4a6e]",
+    badge: "THCS",
+  },
+  "lop-8": {
+    activeBg: "bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white",
+    activeBorder: "border-t border-blue-300",
+    activeShadow: "shadow-[0_5px_0_0_#1e3a8a]",
+    activeRing: "ring-2 ring-blue-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-blue-50/70 hover:bg-blue-100/90 dark:bg-blue-950/20 dark:hover:bg-blue-950/40",
+    inactiveBorder: "border-blue-300 dark:border-blue-800/70",
+    inactiveText: "text-blue-800 dark:text-blue-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#bfdbfe] dark:shadow-[0_3px_0_0_#172554]",
+    badge: "THCS",
+  },
+  "lop-9": {
+    activeBg: "bg-gradient-to-b from-rose-500 via-red-500 to-rose-600 text-white",
+    activeBorder: "border-t border-rose-200",
+    activeShadow: "shadow-[0_5px_0_0_#9f1239]",
+    activeRing: "ring-2 ring-rose-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-rose-50/70 hover:bg-rose-100/90 dark:bg-rose-950/20 dark:hover:bg-rose-950/40",
+    inactiveBorder: "border-rose-300 dark:border-rose-800/70",
+    inactiveText: "text-rose-800 dark:text-rose-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#fecdd3] dark:shadow-[0_3px_0_0_#4c0519]",
+    badge: "Vào 10",
+  },
+  "lop-10": {
+    activeBg: "bg-gradient-to-b from-violet-600 via-purple-600 to-purple-700 text-white",
+    activeBorder: "border-t border-violet-300",
+    activeShadow: "shadow-[0_5px_0_0_#4c1d95]",
+    activeRing: "ring-2 ring-violet-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-purple-50/70 hover:bg-purple-100/90 dark:bg-purple-950/20 dark:hover:bg-purple-950/40",
+    inactiveBorder: "border-purple-300 dark:border-purple-800/70",
+    inactiveText: "text-purple-800 dark:text-purple-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#e9d5ff] dark:shadow-[0_3px_0_0_#3b0764]",
+    badge: "THPT",
+  },
+  "lop-11": {
+    activeBg: "bg-gradient-to-b from-fuchsia-600 via-pink-600 to-pink-700 text-white",
+    activeBorder: "border-t border-fuchsia-300",
+    activeShadow: "shadow-[0_5px_0_0_#701a75]",
+    activeRing: "ring-2 ring-fuchsia-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-fuchsia-50/70 hover:bg-fuchsia-100/90 dark:bg-fuchsia-950/20 dark:hover:bg-fuchsia-950/40",
+    inactiveBorder: "border-fuchsia-300 dark:border-fuchsia-800/70",
+    inactiveText: "text-fuchsia-800 dark:text-fuchsia-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#f5d0fe] dark:shadow-[0_3px_0_0_#4a044e]",
+    badge: "THPT",
+  },
+  "lop-12": {
+    activeBg: "bg-gradient-to-b from-amber-500 via-orange-500 to-amber-600 text-white",
+    activeBorder: "border-t border-amber-200",
+    activeShadow: "shadow-[0_5px_0_0_#9a3412]",
+    activeRing: "ring-2 ring-amber-400 ring-offset-2 dark:ring-offset-slate-900",
+    inactiveBg: "bg-amber-50/70 hover:bg-amber-100/90 dark:bg-amber-950/20 dark:hover:bg-amber-950/40",
+    inactiveBorder: "border-amber-300 dark:border-amber-800/70",
+    inactiveText: "text-amber-800 dark:text-amber-300",
+    inactiveShadow: "shadow-[0_3px_0_0_#fde68a] dark:shadow-[0_3px_0_0_#451a03]",
+    badge: "TN THPT",
+  },
+};
+
 export default function LuyenThiPage() {
   const { user, isStudent, isAdmin, isTeacher, openAuthModal } = useAuth();
 
@@ -23,19 +115,37 @@ export default function LuyenThiPage() {
         if (gNum >= 6 && gNum <= 12) return `lop-${gNum}`;
       }
     }
-    return "lop-6";
+    return "lop-9"; // Mặc định Lớp 9
   }, [user]);
 
   const [selectedGrade, setSelectedGrade] = useState<string>(defaultGradeId);
   const [selectedPeriod, setSelectedPeriod] = useState<string>("all");
   const [accessWarning, setAccessWarning] = useState<string | null>(null);
 
-  // Danh sách đề thi theo khối đã chọn
+  // Đổi khối lớp
+  const handleSelectGrade = (gradeId: string) => {
+    setAccessWarning(null);
+
+    // Kiểm tra phân quyền học sinh
+    if (user && isStudent) {
+      const allowed = canAccessGrade(user, gradeId);
+      if (!allowed) {
+        const studentGrade = user.grade || user.schoolClass || "khối khác";
+        setAccessWarning(
+          `⚠️ Bạn đang đăng ký tài khoản ${studentGrade}. Để xem và thi đề ${GRADE_EXAM_TABS.find(g => g.id === gradeId)?.label}, vui lòng liên hệ Thầy/Cô hoặc Quản trị viên cập nhật phân lớp.`
+        );
+      }
+    }
+
+    setSelectedGrade(gradeId);
+    setSelectedPeriod("all"); // reset bộ lọc kỳ thi
+  };
+
   const activeGradeObj = useMemo(() => {
     return GRADE_EXAM_TABS.find((g) => g.id === selectedGrade) || GRADE_EXAM_TABS[0];
   }, [selectedGrade]);
 
-  // Các kỳ thi hợp lệ cho khối lớp đang chọn
+  // Danh sách các kỳ thi có sẵn cho khối lớp đang chọn
   const availablePeriods = useMemo(() => {
     return EXAM_PERIODS.filter((p) => {
       if (!p.specialForGrade) return true;
@@ -45,122 +155,69 @@ export default function LuyenThiPage() {
 
   // Danh sách đề thi được lọc
   const filteredExams = useMemo(() => {
-    const allExams = Object.values(SAMPLE_EXAMS);
-    return allExams.filter((exam) => {
-      // Lọc theo khối
-      if (exam.grade && exam.grade !== selectedGrade) return false;
-      // Lọc theo kỳ thi
-      if (selectedPeriod !== "all") {
-        if (exam.examType !== selectedPeriod) return false;
-      }
+    return Object.values(SAMPLE_EXAMS).filter((exam) => {
+      if (exam.grade !== selectedGrade) return false;
+      if (selectedPeriod !== "all" && exam.examType !== selectedPeriod) return false;
       return true;
     });
   }, [selectedGrade, selectedPeriod]);
 
-  // Kiểm tra quyền khi học sinh bấm chọn khối
-  const handleSelectGrade = (gradeId: string) => {
-    setAccessWarning(null);
-
-    // Nếu học sinh click khối khác khối mình đăng ký
-    if (user && isStudent) {
-      const check = canAccessGrade(user, gradeId);
-      if (!check.allowed && check.reason === "GRADE_MISMATCH") {
-        setAccessWarning(
-          `Tài khoản của bạn đăng ký ${check.userGradeLabel}. Bạn được ưu tiên luyện thi các đề thuộc khối của mình.`
-        );
-      }
-    }
-
-    setSelectedGrade(gradeId);
-    setSelectedPeriod("all"); // reset bộ lọc kỳ thi
-  };
-
   return (
-    <div className="space-y-8 sm:space-y-10">
-      {/* Banner Hiện Đại */}
-      <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-xl space-y-3 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-xs font-semibold backdrop-blur-md">
-            <Award className="w-3.5 h-3.5 text-amber-300" />
-            Hệ Thống Khảo Sát & Phòng Thi Thử 2026
-          </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-amber-400/20 text-amber-200 text-xs font-bold border border-amber-300/30">
-            Khối Lớp 6 - 12
-          </span>
-        </div>
-
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight">
-          Phòng Thi Thử Trực Tuyến Chuẩn Cấu Trúc Bộ GD&ĐT
-        </h1>
-        <p className="text-xs sm:text-sm text-blue-100 max-w-3xl leading-relaxed">
-          Hệ thống đề thi chuẩn hóa phân theo từng khối lớp từ Lớp 6 đến Lớp 12: Đầy đủ các kỳ <strong>Giữa kỳ 1, Cuối kỳ 1, Giữa kỳ 2, Cuối kỳ 2</strong>; đặc biệt <strong>Lớp 9</strong> tích hợp chuyên đề <strong>Ôn thi Tuyển sinh vào lớp 10</strong>, và <strong>Lớp 12</strong> có trọn bộ <strong>Ôn thi TN THPT 2026 & Đánh giá năng lực (ĐHQG, TSA)</strong>.
-        </p>
-      </div>
-
-      {/* 3 Formats Explainer Bar */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
-        <div className="p-4 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm flex items-start gap-3">
-          <span className="w-8 h-8 rounded-xl bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 font-black text-xs flex items-center justify-center shrink-0">
-            I
-          </span>
+    <div className="space-y-6 sm:space-y-8">
+      {/* THANH CHỌN KHỐI LỚP (TABS) - MÀU SẮC ĐẸP, NÉT, HIỆN ĐẠI */}
+      <div className="space-y-3.5 pt-1">
+        <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Trắc nghiệm nhiều lựa chọn</div>
-            <div className="text-[11px] text-slate-500">0.25đ / câu • 1 đáp án chính xác duy nhất</div>
+            <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-slate-100 flex items-center gap-2.5 tracking-tight">
+              <GraduationCap className="w-6 h-6 text-primary" />
+              <span>Phòng Luyện Thi Theo Khối Lớp</span>
+            </h1>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium">
+              Chọn khối lớp để luyện tập các đề thi Giữa kỳ, Cuối kỳ và Chuyên đề chuẩn cấu trúc Bộ GD&ĐT
+            </p>
           </div>
-        </div>
 
-        <div className="p-4 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm flex items-start gap-3">
-          <span className="w-8 h-8 rounded-xl bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300 font-black text-xs flex items-center justify-center shrink-0">
-            II
-          </span>
-          <div>
-            <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Trắc nghiệm Đúng / Sai</div>
-            <div className="text-[11px] text-slate-500">4 ý / câu • Tính điểm lũy tiến chuẩn BGD (tối đa 1.0đ)</div>
-          </div>
-        </div>
-
-        <div className="p-4 rounded-2xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm flex items-start gap-3">
-          <span className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 font-black text-xs flex items-center justify-center shrink-0">
-            III
-          </span>
-          <div>
-            <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Trả lời ngắn / Điền số học</div>
-            <div className="text-[11px] text-slate-500">0.5đ / câu • Điền kết quả số, phân số hoặc giá trị thực</div>
-          </div>
-        </div>
-      </div>
-
-      {/* THANH CHỌN KHỐI LỚP (TABS) */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
-            <GraduationCap className="w-5 h-5 text-primary" />
-            Chọn Khối Lớp Luyện Thi:
-          </h2>
           {user && isStudent && (
-            <span className="text-xs text-slate-500 font-medium">
-              Bạn đang học: <strong className="text-primary">{user.grade || user.schoolClass || "Chưa chọn"}</strong>
-            </span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 text-xs text-blue-700 dark:text-blue-300 font-medium">
+              <span>Lớp của bạn:</span>
+              <strong className="text-primary font-bold">{user.grade || user.schoolClass || "Chưa chọn"}</strong>
+            </div>
           )}
         </div>
 
-        <div className="grid grid-cols-4 sm:grid-cols-7 gap-2.5 sm:gap-3">
+        {/* 7 NÚT KHỐI LỚP 3D SẮC NÉT HIỆN ĐẠI */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
           {GRADE_EXAM_TABS.map((tab) => {
             const isSelected = selectedGrade === tab.id;
+            const style = GRADE_STYLES[tab.id] || GRADE_STYLES["lop-6"];
+
             return (
               <button
                 key={tab.id}
                 onClick={() => handleSelectGrade(tab.id)}
-                className={`flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-2xl transition-all duration-150 transform select-none ${
+                className={`group relative flex flex-col items-center justify-center p-3.5 sm:p-4 rounded-2xl border transition-all duration-150 transform select-none ${
                   isSelected
-                    ? "bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white border-t border-blue-300 shadow-[0_5px_0_0_#1e3a8a] scale-[1.04] -translate-y-1 font-black ring-2 ring-blue-400 ring-offset-2 dark:ring-offset-slate-900"
-                    : "bg-card border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 shadow-[0_3px_0_0_#e2e8f0] dark:shadow-[0_3px_0_0_#0f172a] hover:border-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 active:translate-y-0.5 active:shadow-none font-bold"
+                    ? `${style.activeBg} ${style.activeBorder} ${style.activeShadow} ${style.activeRing} scale-[1.04] -translate-y-1 font-black`
+                    : `${style.inactiveBg} ${style.inactiveBorder} ${style.inactiveText} ${style.inactiveShadow} hover:scale-[1.02] active:translate-y-0.5 active:shadow-none font-bold`
                 }`}
               >
-                <span className="text-xl sm:text-2xl mb-1.5 filter drop-shadow-sm">{tab.icon}</span>
-                <span className="text-xs sm:text-sm tracking-tight">{tab.label}</span>
+                {/* Badge phân cấp */}
+                <span
+                  className={`absolute top-2 right-2 px-1.5 py-0.5 rounded-md text-[9px] font-black uppercase tracking-wider ${
+                    isSelected
+                      ? "bg-white/25 text-white backdrop-blur-sm shadow-xs"
+                      : "bg-white/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 shadow-xs border border-black/5 dark:border-white/5"
+                  }`}
+                >
+                  {style.badge}
+                </span>
+
+                <span className="text-2xl sm:text-3xl mb-1.5 filter drop-shadow-sm transition-transform duration-150 group-hover:scale-110">
+                  {tab.icon}
+                </span>
+                <span className="text-sm font-black tracking-tight">
+                  {tab.label}
+                </span>
               </button>
             );
           })}

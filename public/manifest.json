@@ -2,11 +2,15 @@
   "name": "VinaMath - Nền Tảng Học Toán 2026",
   "short_name": "VinaMath",
   "description": "Hệ thống học liệu toán học tương tác & luyện thi trắc nghiệm thông minh Lớp 6-12",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay", "minimal-ui"],
   "background_color": "#0F172A",
-  "theme_color": "#38BDF8",
-  "orientation": "portrait-primary",
+  "theme_color": "#0284C7",
+  "orientation": "any",
+  "categories": ["education", "books"],
   "icons": [
     {
       "src": "/icon-192.png",
@@ -23,7 +27,8 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/favicon.svg",

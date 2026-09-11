@@ -17,7 +17,11 @@ export type QuestionData =
 export interface ExamData {
   id: string;
   title: string;
-  category: "THPT_QG" | "DGNL_DHQG" | "DGNL_TSA" | "LOP_12" | "LOP_11" | "LOP_10";
+  grade?: string; // "lop-6", "lop-7", "lop-8", "lop-9", "lop-10", "lop-11", "lop-12"
+  gradeNumber?: number; // 6, 7, 8, 9, 10, 11, 12
+  examType?: "giua-ky-1" | "cuoi-ky-1" | "giua-ky-2" | "cuoi-ky-2" | "tuyen-sinh-10" | "thpt-qg" | "dgnl";
+  category?: string;
+  subtitle?: string;
   durationMinutes: number;
   totalQuestions: number;
   questions: QuestionData[];

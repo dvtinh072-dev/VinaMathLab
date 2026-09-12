@@ -6711,5 +6711,150 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       "explanation": "Độ cao sau lần nảy thứ $n$ là $h_n = h_0 \\cdot \\left(\\dfrac{1}{2}\\right)^n$.\nVới $n = 4$: $h_4 = 8 \\cdot \\left(\\dfrac{1}{2}\\right)^4 = \\dfrac{8}{16} = 0,5\\text{ m}$."
     }
   ]
+},
+
+  "t11-on-tap-chuong-2": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.ot2.1",
+      "badge": "Luyện thêm 1 - Dãy số tăng giảm",
+      "source": "SBT Toán 11 KNTT Chương 2",
+      "question": "Dãy số nào sau đây là một dãy số tăng?",
+      "options": [
+        "$u_n = \\dfrac{2n - 1}{n + 1}$",
+        "$u_n = \\dfrac{1}{n^2}$",
+        "$u_n = 4 - 3n$",
+        "$u_n = (-2)^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_{n+1} - u_n = \\dfrac{2n + 1}{n + 2} - \\dfrac{2n - 1}{n + 1} = \\dfrac{3}{(n+2)(n+1)} > 0,\\; \\forall n \\ge 1$ nên dãy số tăng."
+    },
+    {
+      "id": "ai-11.ot2.2",
+      "badge": "Luyện thêm 2 - Dãy số bị chặn",
+      "source": "SBT Toán 11 KNTT Chương 2",
+      "question": "Dãy số nào sau đây là một dãy số bị chặn?",
+      "options": [
+        "$u_n = \\dfrac{n^2}{n^2 + 1}$",
+        "$u_n = 2n + 5$",
+        "$u_n = n^3$",
+        "$u_n = 3^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$0 < \\dfrac{n^2}{n^2 + 1} < 1,\\; \\forall n \\ge 1$. Do đó dãy số bị chặn."
+    },
+    {
+      "id": "ai-11.ot2.3",
+      "badge": "Luyện thêm 3 - Cấp số cộng tìm công sai",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_1 = -3$ và $u_4 = 6$. Công sai $d$ của cấp số cộng bằng:",
+      "options": [
+        "$3$",
+        "$2$",
+        "$4$",
+        "$-3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_4 = u_1 + 3d \\Leftrightarrow 6 = -3 + 3d \\Leftrightarrow 3d = 9 \\Leftrightarrow d = 3$."
+    },
+    {
+      "id": "ai-11.ot2.4",
+      "badge": "Luyện thêm 4 - Cấp số cộng tính tổng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_1 = 5$ và công sai $d = 3$. Tổng $S_{12}$ của $12$ số hạng đầu tiên là:",
+      "options": [
+        "$258$",
+        "$260$",
+        "$250$",
+        "$270$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S_{12} = \\dfrac{12[2(5) + 11(3)]}{2} = 6(10 + 33) = 6 \\times 43 = 258$."
+    },
+    {
+      "id": "ai-11.ot2.5",
+      "badge": "Luyện thêm 5 - Ba số lập thành CSC",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2",
+      "question": "Tìm giá trị của $a$ để ba số $2a - 1;\\; 3a + 1;\\; 5a + 1$ theo thứ tự lập thành một cấp số cộng.",
+      "options": [
+        "$a = 2$",
+        "$a = 1$",
+        "$a = 3$",
+        "$a = -1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2a - 1) + (5a + 1) = 2(3a + 1) \\Leftrightarrow 7a = 6a + 2 \\Leftrightarrow a = 2$."
+    },
+    {
+      "id": "ai-11.ot2.6",
+      "badge": "Luyện thêm 6 - Cấp số nhân tìm số hạng",
+      "source": "SBT Toán 11 KNTT Chương 2",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 4$ và $q = -2$. Giá trị của số hạng $u_6$ là:",
+      "options": [
+        "$-128$",
+        "$128$",
+        "$-64$",
+        "$64$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_6 = u_1 \\cdot q^5 = 4 \\cdot (-2)^5 = 4 \\cdot (-32) = -128$."
+    },
+    {
+      "id": "ai-11.ot2.7",
+      "badge": "Luyện thêm 7 - Cấp số nhân tìm công bội",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 3$ và $u_5 = 48$ với $q > 0$. Công bội $q$ bằng:",
+      "options": [
+        "$2$",
+        "$4$",
+        "$\\sqrt{2}$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_5 = u_1 \\cdot q^4 \\Leftrightarrow 48 = 3q^4 \\Leftrightarrow q^4 = 16 \\Rightarrow q = 2$ (do $q > 0$)."
+    },
+    {
+      "id": "ai-11.ot2.8",
+      "badge": "Luyện thêm 8 - Cấp số nhân tính tổng",
+      "source": "SBT Toán 11 KNTT Chương 2",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và $q = 3$. Tổng $S_4$ của $4$ số hạng đầu tiên bằng:",
+      "options": [
+        "$80$",
+        "$81$",
+        "$78$",
+        "$82$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S_4 = \\dfrac{2(3^4 - 1)}{3 - 1} = 3^4 - 1 = 81 - 1 = 80$."
+    },
+    {
+      "id": "ai-11.ot2.9",
+      "badge": "Luyện thêm 9 - Tổng cấp số nhân lùi vô hạn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2",
+      "question": "Tính tổng của cấp số nhân lùi vô hạn $S = 5 + \\dfrac{5}{4} + \\dfrac{5}{16} + \\dots$",
+      "options": [
+        "$\\dfrac{20}{3}$",
+        "$\\dfrac{15}{4}$",
+        "$7$",
+        "$\\dfrac{25}{4}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_1 = 5, q = \\dfrac{1}{4}$. Tổng $S = \\dfrac{5}{1 - 0,25} = \\dfrac{5}{0,75} = \\dfrac{20}{3}$."
+    },
+    {
+      "id": "ai-11.ot2.10",
+      "badge": "Luyện thêm 10 - Bài toán phân chia vi khuẩn",
+      "source": "SBT Toán 11 KNTT Chương 2",
+      "question": "Một lượng vi khuẩn ban đầu gồm $500$ con. Cứ sau mỗi giờ số lượng vi khuẩn tăng gấp ba lần. Hỏi sau $4$ giờ có tất cả bao nhiêu con vi khuẩn?",
+      "options": [
+        "$40\\;500$ con",
+        "$13\\;500$ con",
+        "$121\\;500$ con",
+        "$45\\;000$ con"
+      ],
+      "correctIndex": 0,
+      "explanation": "$N_4 = 500 \\cdot 3^4 = 500 \\times 81 = 40\\;500$ con vi khuẩn."
+    }
+  ]
 }
 };

@@ -829,6 +829,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t11-b5-day-so", lessonNumber: 5, title: "Bài 5: Dãy số", strand: "daiso", description: "Dãy số tăng, giảm, bị chặn và cho bằng công thức truy hồi.", keyFormulas: ["u_n = f(n)"] },
           { id: "t11-b6-cap-so-cong", lessonNumber: 6, title: "Bài 6: Cấp số cộng", strand: "daiso", description: "Số hạng tổng quát và tính tổng n số hạng đầu.", keyFormulas: ["u_n = u_1 + (n-1)d", "S_n = \\frac{n(u_1 + u_n)}{2}"] },
           { id: "t11-b7-cap-so-nhan", lessonNumber: 7, title: "Bài 7: Cấp số nhân", strand: "daiso", description: "Số hạng tổng quát u_n = u_1 q^{n-1} và tổng S_n.", keyFormulas: ["u_n = u_1 \\cdot q^{n-1}", "S_n = u_1 \\frac{1 - q^n}{1 - q}"] },
+          { id: "t11-on-tap-chuong-2", lessonNumber: 0, title: "Ôn tập cuối chương II", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Dãy số, Cấp số cộng và Cấp số nhân với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["u_n = f(n)", "u_n = u_1 + (n-1)d", "S_n = \\frac{n(u_1 + u_n)}{2}", "u_n = u_1 \\cdot q^{n-1}", "S_n = u_1 \\frac{1 - q^n}{1 - q}"] },
         ],
       },
       {

@@ -3668,7 +3668,7 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
         "question": "Công thức nghiệm của phương trình $\\sin x = \\sin 40^\\circ$ là:",
         "options": [
           "$\\left[\\begin{array}{l} x = 40^\\circ + k360^\\circ \\\\ x = 140^\\circ + k360^\\circ \\end{array}\\right. (k \\in \\mathbb{Z})$",
-          "$\\left[\\begin{array}{l} x = 40^\\circ + k360^\\circ \\\\ x = -40^\\circ + k360^\\circ \\end{end{array}\\right. (k \\in \\mathbb{Z})$",
+          "$\\left[\\begin{array}{l} x = 40^\\circ + k360^\\circ \\\\ x = -40^\\circ + k360^\\circ \\end{array}\\right. (k \\in \\mathbb{Z})$",
           "$\\left[\\begin{array}{l} x = 40^\\circ + k180^\\circ \\\\ x = 140^\\circ + k180^\\circ \\end{array}\\right. (k \\in \\mathbb{Z})$",
           "$x = 40^\\circ + k360^\\circ \\ (k \\in \\mathbb{Z})$"
         ],

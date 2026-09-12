@@ -4201,7 +4201,7 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{5\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
           "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{3} + k2\\pi \\\\ x = \\dfrac{2\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
           "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k\\pi \\\\ x = \\dfrac{5\\pi}{6} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
-          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{end{array}\\right. (k \\in \\mathbb{Z})$"
+          "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$"
         ],
         "correctIndex": 0,
         "explanation": "$\\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\dfrac{\\pi}{6} + k2\\pi = \\dfrac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)."
@@ -5810,7 +5810,7 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
             "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{5\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
             "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{3} + k2\\pi \\\\ x = \\dfrac{2\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
             "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k\\pi \\\\ x = \\dfrac{5\\pi}{6} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
-            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{end{array}\\right. (k \\in \\mathbb{Z})$"
+            "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$"
           ],
           "correctIndex": 0,
           "explanation": "$\\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\dfrac{\\pi}{6} + k2\\pi = \\dfrac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)."
@@ -6935,7 +6935,7 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = \\dfrac{5\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
         "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{3} + k2\\pi \\\\ x = \\dfrac{2\\pi}{3} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
         "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k\\pi \\\\ x = \\dfrac{5\\pi}{6} + k\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$",
-        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{end{array}\\right. (k \\in \\mathbb{Z})$"
+        "$\\left[\\begin{array}{l} x = \\dfrac{\\pi}{6} + k2\\pi \\\\ x = -\\dfrac{\\pi}{6} + k2\\pi \\end{array}\\right. (k \\in \\mathbb{Z})$"
       ],
       "correctIndex": 0,
       "explanation": "$\\sin x = \\dfrac{1}{2} = \\sin\\dfrac{\\pi}{6} \\Leftrightarrow x = \\dfrac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\dfrac{\\pi}{6} + k2\\pi = \\dfrac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)."

@@ -76,18 +76,43 @@ export function formatMathInText(rawText?: string | null): string {
 }
 
 export function MathFormattedText({ text, className = "" }: MathFormattedTextProps) {
-  // Render an toàn tuyệt đối với KaTeX
+  // Render an toàn tuyệt đối với KaTeX và hỗ trợ bảng HTML responsive
   const renderedHtml = useMemo(() => {
     if (!text || typeof text !== "string") return "";
 
-    const processed = formatMathInText(text);
+    // Bước 0: Bảo vệ các khối bảng HTML <div class="...table-container...">...</div> hoặc <table...>...</table>
+    const htmlBlocks: string[] = [];
+    const textWithProtectedHtml = text.replace(/(<(?:table|div\s+class="overflow-x-auto)[\s\S]*?<\/(?:table|div)>)/gi, (_, table) => {
+      const idx = htmlBlocks.length;
+      htmlBlocks.push(table);
+      return `___HTML_TABLE_BLOCK_${idx}___`;
+    });
 
-    // Tách các đoạn Text và các đoạn Math ($...$ hoặc $$...$$)
-    const parts = processed.split(/(\$\$[\s\S]+?\$\$|\$[^\$\n]+?\$)/g);
+    const processed = formatMathInText(textWithProtectedHtml);
 
-    return parts
+    // Tách các đoạn Text, HTML blocks, và Math ($...$ hoặc $$...$$)
+    const parts = processed.split(/(___HTML_TABLE_BLOCK_\d+___|\$\$[\s\S]+?\$\$|\$[^\$\n]+?\$)/g);
+
+    const rendered = parts
       .map((part) => {
         if (!part) return "";
+
+        // Kiểm tra khối HTML Table
+        const htmlMatch = part.match(/^___HTML_TABLE_BLOCK_(\d+)___$/);
+        if (htmlMatch) {
+          const rawTable = htmlBlocks[Number(htmlMatch[1])];
+          // Render các biểu thức math nằm bên trong bảng (ví dụ $15; 20$)
+          return rawTable.replace(/\$([^\$\n]+?)\$/g, (_, math) => {
+            try {
+              return `<span class="inline-math-item mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
+                math,
+                { displayMode: false, throwOnError: false, strict: false }
+              )}</span>`;
+            } catch {
+              return math;
+            }
+          });
+        }
 
         if (part.startsWith("$$") && part.endsWith("$$") && part.length > 4) {
           const content = part.slice(2, -2);
@@ -127,6 +152,8 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           .replace(/\n/g, "<br/>");
       })
       .join("");
+
+    return rendered;
   }, [text]);
 
   return (

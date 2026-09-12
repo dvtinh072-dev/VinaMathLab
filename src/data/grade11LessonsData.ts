@@ -10080,20 +10080,20 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Hệ thống hóa toàn bộ kiến thức Dãy số, Cấp số cộng, Cấp số nhân và rèn luyện 3 đề tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
   "scenarioFrames": [],
   "interactiveType": "function",
-  "youtubeVideoId": "LgRcIsrdfTw",
+  "youtubeVideoId": "eNaWez4D6p4",
   "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương II - Toán 11 KNTT",
   "youtubeVideos": [
     {
-      "id": "LgRcIsrdfTw",
-      "title": "Bài giảng: Chữa bài tập cuối chương II - Toán 11 Kết nối tri thức"
-    },
-    {
       "id": "eNaWez4D6p4",
-      "title": "Bài giảng: Ôn tập lý thuyết & bài tập cuối chương II (Tiết 1) - KNTT"
+      "title": "Bài tập cuối chương 2: Dãy số, CSC & CSN (Tiết 1) - KNTT"
     },
     {
-      "id": "r-z5CtTptrM",
-      "title": "Bài giảng: Hướng dẫn giải chi tiết bài tập cuối chương II (SGK KNTT)"
+      "id": "z7BS9wM45rE",
+      "title": "Bài tập cuối chương 2: Dãy số, CSC & CSN (Tiết 2) - KNTT"
+    },
+    {
+      "id": "w3ton8IWSiE",
+      "title": "Bài tập cuối chương 2: Dãy số, CSC & CSN (Tiết 3) - KNTT"
     }
   ],
   "videoQuestions": [

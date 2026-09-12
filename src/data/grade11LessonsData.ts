@@ -11742,4 +11742,1427 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 }
+,
+
+  // ==========================================
+  // BÀI 8: MẪU SỐ LIỆU GHÉP NHÓM
+  // ==========================================
+  "t11-b8-mau-so-lieu-ghep-nhom": {
+    "id": "t11-b8-mau-so-lieu-ghep-nhom",
+    "lessonNumber": 8,
+    "title": "Bài 8: Mẫu số liệu ghép nhóm",
+    "bookChapter": "Chương III: Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+    "scenarioTitle": "Thu thập dữ liệu thực tế: Khảo sát chiều cao học sinh, thời gian truy cập internet và phân chia nhóm số liệu",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn Minh",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy, khi trường mình đo chiều cao của 500 bạn học sinh khối 11, các số đo rất đa dạng từ 150 cm đến 180 cm. Nếu lập bảng tần số bình thường thì bảng sẽ cực kỳ dài và khó quan sát tổng quan. Có cách nào thu gọn lại không ạ?",
+        "visualGraphic": "graph",
+        "mathNote": "500 \\text{ số liệu} \\to [150; 155), [155; 160), \\dots"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính",
+        "avatar": "👨‍🏫",
+        "speech": "Chào Minh! Để khắc phục điều đó, các nhà thống kê sử dụng phương pháp 'Ghép nhóm số liệu'. Ta chia miền giá trị thành các nửa khoảng bằng nhau $[a_i; a_{i+1})$, sau đó đếm số lượng giá trị rơi vào từng khoảng để tạo thành bảng tần số ghép nhóm!",
+        "visualGraphic": "graph",
+        "mathNote": "[a_i; a_{i+1}) \\text{ có độ dài } L = a_{i+1} - a_i"
+      },
+      {
+        "id": 3,
+        "character": "student",
+        "characterName": "Bạn Lan",
+        "avatar": "👩‍🎓",
+        "speech": "Thưa Thầy, mỗi nhóm như $[150; 155)$ có khoảng cách 5 cm thì khi tính toán đại diện, ta dùng giá trị nào? Và tần số tích lũy của nhóm mang ý nghĩa gì ạ?",
+        "visualGraphic": "savings",
+        "mathNote": "c_i = \\dfrac{a_i + a_{i+1}}{2},\\; cf_k = \\sum_{i=1}^k m_i"
+      },
+      {
+        "id": 4,
+        "character": "teacher",
+        "characterName": "Thầy Tính",
+        "avatar": "👨‍🏫",
+        "speech": "Rất hay, Lan! Mỗi nhóm được đại diện bởi trung điểm hai đầu mút: $c_i = \\dfrac{a_i + a_{i+1}}{2}$. Còn tần số tích lũy cho biết có bao nhiêu số liệu nhỏ hơn đầu mút phải của nhóm đó, rất quan trọng để xác định trung vị và tứ phân vị!",
+        "visualGraphic": "savings",
+        "mathNote": "c_i = \\dfrac{a_i + a_{i+1}}{2}"
+      }
+    ],
+    "youtubeVideoId": "aMnSXuMpxt0",
+    "youtubeVideoTitle": "Bài Giảng Video: Bài 8 - Mẫu số liệu ghép nhóm - Toán 11 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "aMnSXuMpxt0",
+        "title": "Bài 8: Mẫu số liệu ghép nhóm (Tiết 1) - Toán 11 KNTT"
+      },
+      {
+        "id": "y0rEJskCkRc",
+        "title": "Bài 8: Mẫu số liệu ghép nhóm (Tiết 2) - Toán 11 KNTT"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "1. Khái niệm mẫu số liệu ghép nhóm & Bảng tần số ghép nhóm",
+        "points": [
+          "Mẫu số liệu ghép nhóm là mẫu số liệu được cho dưới dạng bảng tần số của các nhóm số liệu.",
+          "Mỗi nhóm số liệu là tập hợp gồm các giá trị của số liệu được ghép nhóm theo một tiêu chí xác định có dạng $[a_i; a_{i+1})$, trong đó $a_i$ là đầu mút trái, $a_{i+1}$ là đầu mút phải. Nhóm cuối cùng có thể lấy đoạn $[a_k; a_{k+1}]$.",
+          "Độ dài của nhóm $[a_i; a_{i+1})$ là hiệu số giữa đầu mút phải và đầu mút trái: $L = a_{i+1} - a_i$.",
+          "Tần số $m_i$ của một nhóm là số lượng giá trị trong mẫu số liệu thuộc vào nhóm đó. Tổng các tần số bằng cỡ mẫu $n = \\sum m_i$."
+        ],
+        "formula": "L = a_{i+1} - a_i; \\quad n = m_1 + m_2 + \\dots + m_k",
+        "exampleProblem": "Khảo sát chiều cao (cm) của 50 học sinh được chia thành 5 nhóm: $[150; 155)$, $[155; 160)$, $[160; 165)$, $[165; 170)$, $[170; 175]$. Tìm độ dài của mỗi nhóm.",
+        "exampleSolution": "Độ dài của mỗi nhóm là: $155 - 150 = 5$ cm. Tất cả các nhóm đều có độ dài bằng 5 cm."
+      },
+      {
+        "index": "2",
+        "title": "2. Giá trị đại diện của nhóm",
+        "points": [
+          "Giá trị đại diện $c_i$ của nhóm $[a_i; a_{i+1})$ là trung bình cộng của hai đầu mút:",
+          "$$c_i = \\dfrac{a_i + a_{i+1}}{2}$$",
+          "Giá trị đại diện được dùng để tính toán các số đặc trưng như số trung bình của mẫu số liệu ghép nhóm."
+        ],
+        "formula": "c_i = \\dfrac{a_i + a_{i+1}}{2}",
+        "exampleProblem": "Tìm giá trị đại diện của nhóm $[40,5; 45,5)$ và nhóm $[50; 60)$.",
+        "exampleSolution": "• Giá trị đại diện của nhóm $[40,5; 45,5)$ là: $c = \\dfrac{40,5 + 45,5}{2} = 43$.\n• Giá trị đại diện của nhóm $[50; 60)$ là: $c = \\dfrac{50 + 60}{2} = 55$."
+      },
+      {
+        "index": "3",
+        "title": "3. Tần số tích lũy",
+        "points": [
+          "Tần số tích lũy $cf_k$ của một nhóm là tổng tần số của nhóm đó và tất cả các nhóm đứng trước nó:",
+          "$$cf_k = m_1 + m_2 + \\dots + m_k$$",
+          "Ý nghĩa: Tần số tích lũy cho biết có bao nhiêu số liệu trong mẫu có giá trị nhỏ hơn đầu mút phải $a_{k+1}$ của nhóm đó.",
+          "Tần số tích lũy của nhóm cuối cùng luôn bằng cỡ mẫu $n$."
+        ],
+        "formula": "cf_k = \\sum_{i=1}^k m_i; \\quad cf_k = cf_{k-1} + m_k",
+        "exampleProblem": "Cho bảng tần số với các tần số lần lượt là $m_1 = 5, m_2 = 12, m_3 = 23, m_4 = 17, m_5 = 3$. Tính tần số tích lũy của nhóm thứ 3.",
+        "exampleSolution": "Tần số tích lũy của nhóm thứ 3 là: $cf_3 = m_1 + m_2 + m_3 = 5 + 12 + 23 = 40$."
+      },
+      {
+        "index": "4",
+        "title": "4. Quy trình ghép nhóm mẫu số liệu không ghép nhóm",
+        "points": [
+          "Bước 1: Tìm giá trị nhỏ nhất $x_{\\min}$ và giá trị lớn nhất $x_{\\max}$ của mẫu số liệu. Tính khoảng biến thiên $R = x_{\\max} - x_{\\min}$.",
+          "Bước 2: Chọn số nhóm $k$ thích hợp (thường từ 5 đến 8 nhóm). Xác định độ dài nhóm $L > \\dfrac{R}{k}$.",
+          "Bước 3: Xác định các nửa khoảng $[a_i; a_{i+1})$ với $a_1 \\le x_{\\min}$ và $a_{k+1} > x_{\\max}$.",
+          "Bước 4: Đếm số giá trị thuộc mỗi nhóm và lập bảng tần số ghép nhóm."
+        ],
+        "formula": "R = x_{\\max} - x_{\\min}; \\quad L \\approx \\dfrac{R}{k}",
+        "exampleProblem": "Mẫu số liệu có giá trị nhỏ nhất là 30 và lớn nhất là 70. Nếu chia thành 8 nhóm có độ dài bằng nhau thì độ dài mỗi nhóm bằng bao nhiêu?",
+        "exampleSolution": "Khoảng biến thiên: $R = 70 - 30 = 40$. Độ dài mỗi nhóm là: $L = \\dfrac{40}{8} = 5$."
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-11.8.1",
+        "timeSeconds": 180,
+        "timeLabel": "03:00",
+        "title": "Định nghĩa nhóm số liệu ghép nhóm",
+        "question": "Nhóm số liệu trong mẫu số liệu ghép nhóm thường được cho dưới dạng nào?",
+        "options": [
+          "$[a; b)$, trong đó $a$ là đầu mút trái, $b$ là đầu mút phải",
+          "$(a; b)$, trong đó $a, b$ là các số bất kỳ",
+          "$(a; b]$, trong đó chỉ lấy đầu mút phải",
+          "$[a; b]$, luôn bắt buộc lấy cả hai đầu mút cho mọi nhóm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, mỗi nhóm số liệu thường được biểu diễn dưới dạng nửa khoảng $[a_i; a_{i+1})$, với $a_i$ là đầu mút trái và $a_{i+1}$ là đầu mút phải."
+      },
+      {
+        "id": "vq-11.8.2",
+        "timeSeconds": 420,
+        "timeLabel": "07:00",
+        "title": "Giá trị đại diện của nhóm",
+        "question": "Giá trị đại diện của nhóm $[a; b)$ được tính theo công thức nào sau đây?",
+        "options": [
+          "$\\dfrac{a + b}{2}$",
+          "$b - a$",
+          "$\\sqrt{ab}$",
+          "$\\dfrac{b - a}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện của nhóm $[a; b)$ là trung bình cộng hai đầu mút: $c = \\dfrac{a + b}{2}$."
+      },
+      {
+        "id": "vq-11.8.3",
+        "timeSeconds": 750,
+        "timeLabel": "12:30",
+        "title": "Độ dài của nhóm",
+        "question": "Độ dài của nhóm $[150; 155)$ là:",
+        "options": [
+          "$5$",
+          "$152,5$",
+          "$155$",
+          "$10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ dài của nhóm là hiệu hai đầu mút: $L = 155 - 150 = 5$."
+      },
+      {
+        "id": "vq-11.8.4",
+        "timeSeconds": 1080,
+        "timeLabel": "18:00",
+        "title": "Tần số tích lũy",
+        "question": "Tần số tích lũy của nhóm cuối cùng trong bảng tần số ghép nhóm có giá trị bằng:",
+        "options": [
+          "Cỡ mẫu $n$",
+          "Tần số của nhóm đầu tiên",
+          "Trung bình cộng các tần số",
+          "Tần số lớn nhất"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số tích lũy của nhóm cuối cùng bằng tổng tần số của toàn bộ các nhóm, tức là bằng cỡ mẫu $n$."
+      }
+    ],
+    "tips": [
+      "Để tìm giá trị đại diện của nhóm $[a; b)$, luôn nhớ cộng hai đầu mút rồi chia đôi: $c = \\dfrac{a + b}{2}$.",
+      "Độ dài của nhóm bằng đầu mút phải trừ đầu mút trái: $L = b - a$. Không cộng 1 như khi đếm số nguyên!",
+      "Khi chuyển mẫu số liệu gốc sang mẫu ghép nhóm, kiểm tra tổng các tần số $\\sum m_i$ phải bằng đúng cỡ mẫu $n$ ban đầu.",
+      "Giá trị rơi đúng vào đầu mút trái $a$ thì thuộc nhóm $[a; b)$, nhưng rơi đúng vào đầu mút phải $b$ thì thuộc nhóm kế tiếp $[b; c)$."
+    ],
+    "traps": [
+      "Nhầm lẫn giữa độ dài nhóm $L = b - a$ và giá trị đại diện $c = \\dfrac{a + b}{2}$.",
+      "Xếp nhầm biên: Giá trị $x = 160$ trong bảng gồm các nhóm $[155; 160)$ và $[160; 165)$ phải được tính vào nhóm $[160; 165)$, không được tính vào $[155; 160)$.",
+      "Quên kiểm tra cỡ mẫu: Bỏ sót số liệu khi đếm thủ công dẫn đến tổng tần số nhỏ hơn cỡ mẫu $n$."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-11.8.1",
+        "badge": "Câu 1 - Nhận biết - Định nghĩa mẫu số liệu ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 1",
+        "question": "Điền từ thích hợp vào chỗ trống: \"Mẫu số liệu ... là mẫu số liệu cho dưới dạng bảng tần số của các nhóm số liệu.\"",
+        "options": [
+          "Ghép nhóm",
+          "Không ghép nhóm",
+          "Rời rạc",
+          "Hỗn hợp"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa, mẫu số liệu ghép nhóm là mẫu số liệu được cho dưới dạng bảng tần số của các nhóm số liệu."
+      },
+      {
+        "id": "quiz-11.8.2",
+        "badge": "Câu 2 - Nhận biết - Dạng biểu diễn của nhóm số liệu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 2",
+        "question": "Mỗi nhóm số liệu trong mẫu số liệu ghép nhóm thường được biểu diễn dưới dạng nào?",
+        "options": [
+          "$[a; b)$, trong đó $a$ là đầu mút trái, $b$ là đầu mút phải",
+          "$(a; b)$, không lấy cả hai đầu mút",
+          "$(a; b]$, chỉ lấy đầu mút phải",
+          "$[a; b]$, luôn bắt buộc lấy cả hai đầu mút"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm số liệu thường được cho dưới dạng nửa khoảng $[a; b)$, trong đó $a$ là đầu mút trái, $b$ là đầu mút phải (nhóm cuối có thể lấy đoạn $[a; b]$)."
+      },
+      {
+        "id": "quiz-11.8.3",
+        "badge": "Câu 3 - Nhận biết - Công thức tính độ dài nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 3",
+        "question": "Độ dài của nhóm $[a_i; a_{i+1})$ được tính theo công thức nào sau đây?",
+        "options": [
+          "$a_{i+1} - a_i$",
+          "$\\dfrac{a_i + a_{i+1}}{2}$",
+          "$a_i + a_{i+1}$",
+          "$a_{i+1} - a_i + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ dài của nhóm $[a_i; a_{i+1})$ bằng hiệu số giữa đầu mút phải và đầu mút trái: $L = a_{i+1} - a_i$."
+      },
+      {
+        "id": "quiz-11.8.4",
+        "badge": "Câu 4 - Nhận biết - Công thức giá trị đại diện",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 4",
+        "question": "Giá trị đại diện $c_i$ của nhóm $[a_i; a_{i+1})$ được tính bởi công thức nào?",
+        "options": [
+          "$c_i = \\dfrac{a_i + a_{i+1}}{2}$",
+          "$c_i = a_{i+1} - a_i$",
+          "$c_i = \\sqrt{a_i \\cdot a_{i+1}}$",
+          "$c_i = \\dfrac{a_{i+1} - a_i}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện của nhóm là trung bình cộng của hai đầu mút: $c_i = \\dfrac{a_i + a_{i+1}}{2}$."
+      },
+      {
+        "id": "quiz-11.8.5",
+        "badge": "Câu 5 - Thông hiểu - Đếm số nhóm của mẫu số liệu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 5",
+        "question": "Khảo sát thời gian (phút) đi làm của nhân viên công ty gồm các nhóm: $[15; 20), [20; 25), [25; 30), [30; 35), [35; 40), [40; 45), [45; 50)$. Mẫu số liệu này được chia thành bao nhiêu nhóm?",
+        "options": [
+          "$7$ nhóm",
+          "$6$ nhóm",
+          "$5$ nhóm",
+          "$8$ nhóm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Quan sát các nửa khoảng đã cho, ta thấy mẫu số liệu được chia thành đúng 7 nhóm."
+      },
+      {
+        "id": "quiz-11.8.6",
+        "badge": "Câu 6 - Thông hiểu - Tìm giá trị đại diện cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 6",
+        "question": "Giá trị đại diện của nhóm $[160; 165)$ là:",
+        "options": [
+          "$162,5$",
+          "$160$",
+          "$165$",
+          "$5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$c = \\dfrac{160 + 165}{2} = 162,5$."
+      },
+      {
+        "id": "quiz-11.8.7",
+        "badge": "Câu 7 - Thông hiểu - Tìm độ dài của nhóm cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 7",
+        "question": "Cho bảng số liệu gồm các nhóm: $[40,5; 45,5), [45,5; 50,5), [50,5; 55,5)$. Độ dài của mỗi nhóm là:",
+        "options": [
+          "$5$",
+          "$43$",
+          "$45,5$",
+          "$10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ dài của nhóm: $L = 45,5 - 40,5 = 5$."
+      },
+      {
+        "id": "quiz-11.8.8",
+        "badge": "Câu 8 - Thông hiểu - Xác định tần số nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 8",
+        "question": "Cho bảng phân bố thời gian truy cập Internet: $[9,5; 12,5)$ có 3 học sinh; $[12,5; 15,5)$ có 12 học sinh; $[15,5; 18,5)$ có 15 học sinh; $[18,5; 21,5)$ có 24 học sinh; $[21,5; 24,5)$ có 2 học sinh. Có bao nhiêu học sinh truy cập Internet từ 18,5 đến dưới 21,5 phút?",
+        "options": [
+          "$24$",
+          "$15$",
+          "$12$",
+          "$2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dựa vào bảng tần số, nhóm $[18,5; 21,5)$ có tần số là 24 học sinh."
+      },
+      {
+        "id": "quiz-11.8.9",
+        "badge": "Câu 9 - Thông hiểu - Tính cỡ mẫu từ bảng ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 9",
+        "question": "Một mẫu số liệu ghép nhóm có các tần số tương ứng lần lượt là $m_1 = 5, m_2 = 18, m_3 = 40, m_4 = 26, m_5 = 8, m_6 = 3$. Cỡ mẫu $n$ của mẫu số liệu là:",
+        "options": [
+          "$100$",
+          "$90$",
+          "$95$",
+          "$105$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cỡ mẫu $n = 5 + 18 + 40 + 26 + 8 + 3 = 100$."
+      },
+      {
+        "id": "quiz-11.8.10",
+        "badge": "Câu 10 - Thông hiểu - Xác định phần tử thuộc nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 10",
+        "question": "Số liệu $x = 160$ thuộc vào nhóm nào sau đây?",
+        "options": [
+          "$[160; 165)$",
+          "$[155; 160)$",
+          "$(160; 165)$",
+          "$[150; 155)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm $[160; 165)$ lấy đầu mút trái là 160 và không lấy 165. Do đó $x = 160$ thuộc nhóm $[160; 165)$."
+      },
+      {
+        "id": "quiz-11.8.11",
+        "badge": "Câu 11 - Thông hiểu - Tính tần số tích lũy",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 11",
+        "question": "Cho bảng phân bố tần số ghép nhóm có 4 nhóm với tần số lần lượt là $4; 9; 14; 11$. Tần số tích lũy của nhóm thứ ba là:",
+        "options": [
+          "$27$",
+          "$14$",
+          "$13$",
+          "$38$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số tích lũy của nhóm thứ 3 là: $cf_3 = 4 + 9 + 14 = 27$."
+      },
+      {
+        "id": "quiz-11.8.12",
+        "badge": "Câu 12 - Thông hiểu - Tính tần số tích lũy nhóm cuối",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 12",
+        "question": "Một mẫu số liệu gồm 50 số liệu được chia thành 5 nhóm. Tần số tích lũy của nhóm thứ 5 bằng:",
+        "options": [
+          "$50$",
+          "$10$",
+          "$25$",
+          "Không xác định được"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số tích lũy của nhóm cuối cùng luôn bằng tổng tất cả các tần số, tức là bằng cỡ mẫu $n = 50$."
+      },
+      {
+        "id": "quiz-11.8.13",
+        "badge": "Câu 13 - Vận dụng - Tìm khoảng biến thiên khi ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 13",
+        "question": "Một mẫu số liệu điều tra có giá trị nhỏ nhất là $129$ và giá trị lớn nhất là $145$. Khoảng biến thiên $R$ của mẫu số liệu là:",
+        "options": [
+          "$16$",
+          "$15$",
+          "$17$",
+          "$14$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khoảng biến thiên: $R = x_{\\max} - x_{\\min} = 145 - 129 = 16$."
+      },
+      {
+        "id": "quiz-11.8.14",
+        "badge": "Câu 14 - Vận dụng - Xác định độ dài nhóm từ khoảng biến thiên",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 14",
+        "question": "Cần phân chia một mẫu số liệu có khoảng biến thiên $R = 40$ thành $8$ nhóm có độ dài bằng nhau. Độ dài mỗi nhóm là:",
+        "options": [
+          "$5$",
+          "$4$",
+          "$8$",
+          "$6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ dài mỗi nhóm: $L = \\dfrac{R}{k} = \\dfrac{40}{8} = 5$."
+      },
+      {
+        "id": "quiz-11.8.15",
+        "badge": "Câu 15 - Vận dụng - Đếm số lượng giá trị thỏa điều kiện ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 15",
+        "question": "Cho bảng phân bố điểm thi môn Toán: $[0; 20)$ có 4 học sinh; $[20; 40)$ có 6 học sinh; $[40; 50)$ có 15 học sinh; $[50; 70)$ có 22 học sinh; $[70; 100]$ có 13 học sinh. Biết điểm đạt từ 50 trở lên. Hỏi có bao nhiêu học sinh KHÔNG đạt?",
+        "options": [
+          "$25$ học sinh",
+          "$24$ học sinh",
+          "$26$ học sinh",
+          "$20$ học sinh"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số học sinh dưới 50 điểm nằm trong các nhóm $[0; 20), [20; 40), [40; 50)$: $4 + 6 + 15 = 25$ học sinh."
+      },
+      {
+        "id": "quiz-11.8.16",
+        "badge": "Câu 16 - Vận dụng - Tính tỉ lệ phần trăm của nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 16",
+        "question": "Khảo sát chiều dài lá dương xỉ gồm 80 lá: nhóm $[10; 20)$ có 8 lá; $[20; 30)$ có 28 lá; $[30; 40)$ có 32 lá; $[40; 50)$ có 12 lá. Tỉ lệ lá có chiều dài từ $20$ cm đến dưới $40$ cm chiếm bao nhiêu phần trăm?",
+        "options": [
+          "$75\\%$",
+          "$70\\%$",
+          "$65\\%$",
+          "$80\\%$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số lá từ 20 đến dưới 40 cm là: $28 + 32 = 60$ lá. Tỉ lệ: $\\dfrac{60}{80} \\times 100\\% = 75\\%$."
+      },
+      {
+        "id": "quiz-11.8.17",
+        "badge": "Câu 17 - Vận dụng - Tính số lượng thực tế theo cỡ áo",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 17",
+        "question": "Khảo sát chiều cao 36 bạn học sinh: nhóm size M $[155; 165)$ có 22 học sinh, size L $[165; 175)$ có 8 học sinh, size XL $[175; 185)$ có 6 học sinh. Nếu công ty may $900$ áo thì nên may bao nhiêu áo size M?",
+        "options": [
+          "$550$ áo",
+          "$500$ áo",
+          "$600$ áo",
+          "$520$ áo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tỉ lệ học sinh size M là: $\\dfrac{22}{36} = \\dfrac{11}{18}$. Khi may 900 áo: $900 \\times \\dfrac{11}{18} = 550$ áo."
+      },
+      {
+        "id": "quiz-11.8.18",
+        "badge": "Câu 18 - Vận dụng - Ghép nhóm dữ liệu bảng điểm số",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 18",
+        "question": "Điểm kiểm tra giữa kì I của lớp 11A gồm các nhóm: $[3; 5)$ có 3 HS; $[5; 7)$ có 12 HS; $[7; 9)$ có 20 HS; $[9; 10]$ có 5 HS. Sĩ số lớp 11A là:",
+        "options": [
+          "$40$ học sinh",
+          "$38$ học sinh",
+          "$42$ học sinh",
+          "$45$ học sinh"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sĩ số lớp: $n = 3 + 12 + 20 + 5 = 40$ học sinh."
+      },
+      {
+        "id": "quiz-11.8.19",
+        "badge": "Câu 19 - Vận dụng cao - Nhận diện quy tắc ghép nhóm tối ưu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 19",
+        "question": "Phát biểu nào sau đây là KHÔNG chính xác về việc ghép nhóm mẫu số liệu?",
+        "options": [
+          "Nên chia mẫu số liệu thành càng nhiều nhóm (khoảng 30-40 nhóm) càng tốt để tăng độ chính xác",
+          "Mẫu số liệu ghép nhóm giúp thu gọn và thuận lợi cho việc tổ chức, phân tích số liệu",
+          "Các nhóm số liệu thường có độ dài bằng nhau",
+          "Giá trị đại diện của nhóm $[a; b)$ là $\\dfrac{a+b}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Không nên chia thành quá nhiều nhóm vì sẽ làm mất đi ưu điểm thu gọn và khái quát của mẫu số liệu ghép nhóm. Thông thường chỉ chia từ 5 đến 8 nhóm."
+      },
+      {
+        "id": "quiz-11.8.20",
+        "badge": "Câu 20 - Vận dụng cao - Khảo sát số liệu kinh tế",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trắc nghiệm Câu 20",
+        "question": "Doanh thu (triệu đồng) trong 20 ngày của cửa hàng: $[5; 7)$ có 2 ngày; $[7; 9)$ có 7 ngày; $[9; 11)$ có 7 ngày; $[11; 13)$ có 3 ngày; $[13; 15)$ có 1 ngày. Tần số tích lũy của nhóm $[9; 11)$ là:",
+        "options": [
+          "$16$",
+          "$14$",
+          "$9$",
+          "$19$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số tích lũy của nhóm thứ 3 là: $cf_3 = 2 + 7 + 7 = 16$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-11.8.1",
+        "badge": "Đúng/Sai 1 - Khái niệm mẫu số liệu ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Đúng Sai Câu 1",
+        "prompt": "Cho mẫu số liệu ghép nhóm về thời gian xem tivi (giờ/tuần) của 32 học sinh: $[0; 5)$ có 8 HS; $[5; 10)$ có 16 HS; $[10; 15)$ có 4 HS; $[15; 20)$ có 2 HS; $[20; 25)$ có 2 HS. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Mẫu số liệu trên gồm có 5 nhóm.",
+            "correctAnswer": true,
+            "explanation": "Đúng, có 5 khoảng: [0; 5), [5; 10), [10; 15), [15; 20), [20; 25)."
+          },
+          {
+            "id": "b",
+            "text": "Độ dài của mỗi nhóm bằng 5 giờ.",
+            "correctAnswer": true,
+            "explanation": "Đúng, độ dài mỗi nhóm: 5 - 0 = 10 - 5 = 5."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị đại diện của nhóm thứ ba $[10; 15)$ là 12,5 giờ.",
+            "correctAnswer": true,
+            "explanation": "Đúng, c_3 = (10 + 15)/2 = 12,5."
+          },
+          {
+            "id": "d",
+            "text": "Số học sinh xem tivi từ 15 giờ trở lên là 2 học sinh.",
+            "correctAnswer": false,
+            "explanation": "Sai, số học sinh xem từ 15 giờ trở lên gồm nhóm [15; 20) và [20; 25): 2 + 2 = 4 học sinh."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.8.2",
+        "badge": "Đúng/Sai 2 - Tần số tích lũy và cỡ mẫu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Đúng Sai Câu 2",
+        "prompt": "Cho bảng phân bố tần số ghép nhóm về cân nặng (kg) của 40 học sinh: $[40; 45)$ có 6 HS; $[45; 50)$ có 14 HS; $[50; 55)$ có 12 HS; $[55; 60)$ có 8 HS. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Cỡ mẫu của mẫu số liệu là $n = 40$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 6 + 14 + 12 + 8 = 40."
+          },
+          {
+            "id": "b",
+            "text": "Tần số tích lũy của nhóm $[45; 50)$ là $20$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, cf_2 = 6 + 14 = 20."
+          },
+          {
+            "id": "c",
+            "text": "Tần số tích lũy của nhóm $[50; 55)$ là $30$.",
+            "correctAnswer": false,
+            "explanation": "Sai, cf_3 = 6 + 14 + 12 = 32."
+          },
+          {
+            "id": "d",
+            "text": "Có 50% số học sinh có cân nặng dưới 50 kg.",
+            "correctAnswer": true,
+            "explanation": "Đúng, số học sinh dưới 50 kg là 20 HS, tỉ lệ: 20/40 = 50%."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.8.3",
+        "badge": "Đúng/Sai 3 - Ghép nhóm số liệu từ dãy số thực tế",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Đúng Sai Câu 3",
+        "prompt": "Khảo sát tuổi thọ của 35 bóng đèn có tuổi thọ thấp nhất là 1101 giờ và cao nhất là 1179 giờ. Người ta chia thành 4 nhóm có độ dài bằng nhau: $[1100; 1120), [1120; 1140), [1140; 1160), [1160; 1180)$. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khoảng biến thiên của mẫu số liệu ban đầu là $78$ giờ.",
+            "correctAnswer": true,
+            "explanation": "Đúng, R = 1179 - 1101 = 78 giờ."
+          },
+          {
+            "id": "b",
+            "text": "Độ dài của mỗi nhóm là $20$ giờ.",
+            "correctAnswer": true,
+            "explanation": "Đúng, L = 1120 - 1100 = 20."
+          },
+          {
+            "id": "c",
+            "text": "Bóng đèn có tuổi thọ 1140 giờ được xếp vào nhóm $[1120; 1140)$.",
+            "correctAnswer": false,
+            "explanation": "Sai, 1140 là đầu mút phải của [1120; 1140) nên nó thuộc vào nhóm kế tiếp [1140; 1160)."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị đại diện của nhóm thứ nhất là $1110$ giờ.",
+            "correctAnswer": true,
+            "explanation": "Đúng, (1100 + 1120)/2 = 1110."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.8.4",
+        "badge": "Đúng/Sai 4 - Bảng số liệu tiền điện của các hộ gia đình",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Đúng Sai Câu 4",
+        "prompt": "Cho bảng số liệu về tiền điện phải trả trong tháng (nghìn đồng) của 50 hộ gia đình: $[375; 450)$ có 6 hộ; $[450; 525)$ có 15 hộ; $[525; 600)$ có 10 hộ; $[600; 675)$ có 6 hộ; $[675; 750)$ có 9 hộ; $[750; 825)$ có 4 hộ. Xét tính Đúng / Sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Độ dài của mỗi nhóm trong bảng bằng $75$ nghìn đồng.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 450 - 375 = 75."
+          },
+          {
+            "id": "b",
+            "text": "Giá trị đại diện của nhóm $[450; 525)$ là $487,5$ nghìn đồng.",
+            "correctAnswer": true,
+            "explanation": "Đúng, (450 + 525)/2 = 487,5."
+          },
+          {
+            "id": "c",
+            "text": "Nhóm có số lượng hộ gia đình nhiều nhất là $[450; 525)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tần số cao nhất là 15 hộ thuộc nhóm [450; 525)."
+          },
+          {
+            "id": "d",
+            "text": "Tần số tích lũy của nhóm $[525; 600)$ là $25$.",
+            "correctAnswer": false,
+            "explanation": "Sai, cf_3 = 6 + 15 + 10 = 31 hộ."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.8.5",
+        "badge": "Đúng/Sai 5 - Tỉ lệ phần trăm và nhóm chiếm ưu thế",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Đúng Sai Câu 5",
+        "prompt": "Thống kê nhiệt độ tại một địa phương trong 40 ngày mùa hè: $[28; 30)$ có 7 ngày; $[30; 32)$ có 15 ngày; $[32; 34)$ có 12 ngày; $[34; 36)$ có 6 ngày. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Cỡ mẫu là $n = 40$ ngày.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 7 + 15 + 12 + 6 = 40 ngày."
+          },
+          {
+            "id": "b",
+            "text": "Tỉ lệ ngày có nhiệt độ từ 30°C đến dưới 32°C là $37,5\\%$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 15/40 = 37,5%."
+          },
+          {
+            "id": "c",
+            "text": "Số ngày có nhiệt độ từ 32°C trở lên là 18 ngày.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 12 + 6 = 18 ngày."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị đại diện của nhóm cuối cùng là $36°C$.",
+            "correctAnswer": false,
+            "explanation": "Sai, giá trị đại diện của [34; 36) là (34 + 36)/2 = 35°C."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-11.8.1",
+        "badge": "TLN 1 - Tính giá trị đại diện",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 1",
+        "prompt": "Tính giá trị đại diện của nhóm số liệu $[155; 165)$.",
+        "correctAnswer": "160",
+        "acceptableAnswers": [
+          "160"
+        ],
+        "explanation": "Giá trị đại diện: $c = \\dfrac{155 + 165}{2} = 160$."
+      },
+      {
+        "id": "sa-11.8.2",
+        "badge": "TLN 2 - Tính độ dài của nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 2",
+        "prompt": "Cho nhóm số liệu $[37,5; 42,5)$. Tìm độ dài của nhóm số liệu này.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5"
+        ],
+        "explanation": "Độ dài nhóm: $L = 42,5 - 37,5 = 5$."
+      },
+      {
+        "id": "sa-11.8.3",
+        "badge": "TLN 3 - Tính tần số tích lũy",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 3",
+        "prompt": "Cho bảng tần số ghép nhóm có 4 nhóm với tần số lần lượt là $8, 22, 35, 15$. Tính tần số tích lũy của nhóm thứ hai.",
+        "correctAnswer": "30",
+        "acceptableAnswers": [
+          "30"
+        ],
+        "explanation": "Tần số tích lũy của nhóm thứ hai: $cf_2 = 8 + 22 = 30$."
+      },
+      {
+        "id": "sa-11.8.4",
+        "badge": "TLN 4 - Tính cỡ mẫu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 4",
+        "prompt": "Một bảng tần số ghép nhóm gồm 5 nhóm có các tần số lần lượt là $6, 14, 25, 37, 18$. Tìm cỡ mẫu $n$ của mẫu số liệu.",
+        "correctAnswer": "100",
+        "acceptableAnswers": [
+          "100"
+        ],
+        "explanation": "Cỡ mẫu: $n = 6 + 14 + 25 + 37 + 18 = 100$."
+      },
+      {
+        "id": "sa-11.8.5",
+        "badge": "TLN 5 - Đếm số lượng thỏa mãn điều kiện",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 5",
+        "prompt": "Bảng thống kê điểm kiểm tra của 45 học sinh gồm: $[0; 5)$ có 5 HS; $[5; 7)$ có 18 HS; $[7; 9)$ có 15 HS; $[9; 10]$ có 7 HS. Có bao nhiêu học sinh đạt điểm từ 7 trở lên?",
+        "correctAnswer": "22",
+        "acceptableAnswers": [
+          "22"
+        ],
+        "explanation": "Số học sinh đạt điểm từ 7 trở lên: $15 + 7 = 22$ học sinh."
+      },
+      {
+        "id": "sa-11.8.6",
+        "badge": "TLN 6 - Tìm số nhóm cần chia",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1 Trả lời ngắn Câu 6",
+        "prompt": "Một mẫu số liệu có khoảng biến thiên $R = 36$. Nếu người ta chia thành các nhóm có độ dài bằng nhau là $6$ thì mẫu số liệu được chia thành bao nhiêu nhóm?",
+        "correctAnswer": "6",
+        "acceptableAnswers": [
+          "6"
+        ],
+        "explanation": "Số nhóm: $k = \\dfrac{R}{L} = \\dfrac{36}{6} = 6$ nhóm."
+      }
+    ]
+  },
+
+  // ==========================================
+  // BÀI 9: CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM
+  // ==========================================
+  "t11-b9-so-dac-trung-mau-ghep-nhom": {
+    "id": "t11-b9-so-dac-trung-mau-ghep-nhom",
+    "lessonNumber": 9,
+    "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm",
+    "bookChapter": "Chương III: Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+    "scenarioTitle": "Phân tích xu thế trung tâm: Đánh giá điểm thi năng lực, tiền lương và tối ưu hóa quy mô sản xuất",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn Minh",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy, sau khi có bảng tần số ghép nhóm, làm thế nào để chúng ta tính được điểm số trung bình của cả khối, hoặc tìm mức thu nhập phổ biến nhất của các hộ gia đình ạ?",
+        "visualGraphic": "graph",
+        "mathNote": "\\bar{x} = \\dfrac{1}{n}\\sum m_i c_i,\\; M_o = a_j + \\dots"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính",
+        "avatar": "👨‍🏫",
+        "speech": "Chào Minh! Chúng ta sử dụng các số đặc trưng đo xu thế trung tâm: Số trung bình $\\bar{x}$, Trung vị $M_e$, Tứ phân vị $Q_1, Q_2, Q_3$ và Mốt $M_o$. Mỗi đại lượng sẽ cho một góc nhìn chuẩn xác về vị trí trung tâm của tập số liệu!",
+        "visualGraphic": "graph",
+        "mathNote": "\\bar{x},\\; M_e,\\; Q_1, Q_2, Q_3,\\; M_o"
+      },
+      {
+        "id": 3,
+        "character": "student",
+        "characterName": "Bạn Lan",
+        "avatar": "👩‍🎓",
+        "speech": "Thưa Thầy, khi dữ liệu có những giá trị ngoại lai quá cao hoặc quá thấp (như vài người có thu nhập đột biến), thì số trung bình hay trung vị đại diện tốt hơn ạ?",
+        "visualGraphic": "savings",
+        "mathNote": "M_e \\text{ không bị ảnh hưởng bởi giá trị ngoại lai}"
+      },
+      {
+        "id": 4,
+        "character": "teacher",
+        "characterName": "Thầy Tính",
+        "avatar": "👨‍🏫",
+        "speech": "Câu hỏi tuyệt vời, Lan! Khi có giá trị ngoại lai, trung vị $M_e$ phản ánh chính xác vị trí trung tâm hơn vì nó chia đôi mẫu số liệu thành 50% lớn hơn và 50% nhỏ hơn mà không bị kéo lệch bởi các giá trị dị biệt!",
+        "visualGraphic": "savings",
+        "mathNote": "M_e = u_m + \\dfrac{\\frac{n}{2} - C}{n_m}(u_{m+1} - u_m)"
+      }
+    ],
+    "youtubeVideoId": "Xbmf-5y8Syo",
+    "youtubeVideoTitle": "Bài Giảng Video: Bài 9 - Các số đặc trưng đo xu thế trung tâm - Toán 11 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "Xbmf-5y8Syo",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 1) - Toán 11 KNTT"
+      },
+      {
+        "id": "ofyfuuTfuoI",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 2) - Toán 11 KNTT"
+      },
+      {
+        "id": "7ZUZn4QkJc4",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 3) - Toán 11 KNTT"
+      },
+      {
+        "id": "5WDwsh_Cwb4",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 4) - Toán 11 KNTT"
+      },
+      {
+        "id": "aWdsl-4gh48",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 5) - Toán 11 KNTT"
+      },
+      {
+        "id": "NUIHOsOQp7U",
+        "title": "Bài 9: Các số đặc trưng đo xu thế trung tâm (Tiết 6) - Toán 11 KNTT"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "1. Số trung bình của mẫu số liệu ghép nhóm",
+        "points": [
+          "Số trung bình của mẫu số liệu ghép nhóm, kí hiệu là $\\bar{x}$, được tính theo công thức:",
+          "$$\\bar{x} = \\dfrac{m_1 c_1 + m_2 c_2 + \\dots + m_k c_k}{n}$$",
+          "trong đó $c_i$ là giá trị đại diện của nhóm thứ $i$, $m_i$ là tần số của nhóm thứ $i$ và $n = m_1 + m_2 + \\dots + m_k$ là cỡ mẫu.",
+          "Ý nghĩa: $\\bar{x}$ xấp xỉ số trung bình của mẫu số liệu gốc, đại diện cho độ lớn trung bình của toàn bộ mẫu số liệu."
+        ],
+        "formula": "\\bar{x} = \\dfrac{1}{n} \\sum_{i=1}^k m_i c_i",
+        "exampleProblem": "Cho bảng số liệu gồm: $[10; 20)$ có 4 người, $[20; 30)$ có 6 người. Tính số trung bình $\\bar{x}$.",
+        "exampleSolution": "Giá trị đại diện: $c_1 = 15, c_2 = 25$. Cỡ mẫu: $n = 4 + 6 = 10$.\n$\\bar{x} = \\dfrac{4(15) + 6(25)}{10} = \\dfrac{60 + 150}{10} = 21$."
+      },
+      {
+        "index": "2",
+        "title": "2. Trung vị của mẫu số liệu ghép nhóm",
+        "points": [
+          "Để tính trung vị $M_e$, ta thực hiện 2 bước:",
+          "• Bước 1: Xác định nhóm chứa trung vị. Đó là nhóm đầu tiên có tần số tích lũy $cf \\ge \\dfrac{n}{2}$. Giả sử là nhóm $[a_m; a_{m+1})$.",
+          "• Bước 2: Áp dụng công thức tính trung vị:",
+          "$$M_e = a_m + \\dfrac{\\dfrac{n}{2} - C}{m_m} \\cdot (a_{m+1} - a_m)$$",
+          "trong đó $a_m$ là đầu mút trái, $m_m$ là tần số của nhóm chứa trung vị, $C = cf_{m-1}$ là tần số tích lũy của nhóm trước đó (nếu $m = 1$ thì $C = 0$)."
+        ],
+        "formula": "M_e = a_m + \\dfrac{\\dfrac{n}{2} - C}{m_m} \\cdot (a_{m+1} - a_m)",
+        "exampleProblem": "Cỡ mẫu $n = 40$. Nhóm $[40; 60)$ có tần số $m = 12$, tần số tích lũy nhóm trước $C = 14$. Tính trung vị.",
+        "exampleSolution": "$M_e = 40 + \\dfrac{20 - 14}{12} \\times (60 - 40) = 40 + \\dfrac{6}{12} \\times 20 = 40 + 10 = 50$."
+      },
+      {
+        "index": "3",
+        "title": "3. Tứ phân vị của mẫu số liệu ghép nhóm",
+        "points": [
+          "Tứ phân vị gồm ba giá trị $Q_1, Q_2, Q_3$ chia mẫu số liệu thành 4 phần bằng nhau (mỗi phần 25%):",
+          "• Tứ phân vị thứ hai: $Q_2 = M_e$ (trung vị).",
+          "• Tứ phân vị thứ nhất $Q_1$: Nhóm chứa $Q_1$ là nhóm đầu tiên có $cf \\ge \\dfrac{n}{4}$, giả sử là $[a_p; a_{p+1})$.",
+          "$$Q_1 = a_p + \\dfrac{\\dfrac{n}{4} - C}{m_p} \\cdot (a_{p+1} - a_p)$$",
+          "• Tứ phân vị thứ ba $Q_3$: Nhóm chứa $Q_3$ là nhóm đầu tiên có $cf \\ge \\dfrac{3n}{4}$, giả sử là $[a_q; a_{q+1})$.",
+          "$$Q_3 = a_q + \\dfrac{\\dfrac{3n}{4} - C}{m_q} \\cdot (a_{q+1} - a_q)$$",
+          "• Khoảng tứ phân vị: $\\Delta_Q = Q_3 - Q_1$, đo độ phân tán của 50% số liệu trung tâm."
+        ],
+        "formula": "Q_1 = a_p + \\dfrac{\\frac{n}{4} - C}{m_p}h;\\; Q_3 = a_q + \\dfrac{\\frac{3n}{4} - C}{m_q}h;\\; \\Delta_Q = Q_3 - Q_1",
+        "exampleProblem": "Cho $n = 60$. Nhóm $[60; 80)$ chứa $Q_3$ có tần số $m = 25$ và tần số tích lũy trước đó $C = 25$. Tính $Q_3$.",
+        "exampleSolution": "$\\dfrac{3n}{4} = 45$. $Q_3 = 60 + \\dfrac{45 - 25}{25} \\times 20 = 60 + 16 = 76$."
+      },
+      {
+        "index": "4",
+        "title": "4. Mốt của mẫu số liệu ghép nhóm",
+        "points": [
+          "• Nhóm chứa mốt là nhóm có tần số lớn nhất, giả sử là nhóm $[a_j; a_{j+1})$.",
+          "• Mốt $M_o$ của mẫu số liệu ghép nhóm được tính theo công thức:",
+          "$$M_o = a_j + \\dfrac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot (a_{j+1} - a_j)$$",
+          "trong đó $m_j$ là tần số của nhóm chứa mốt; $m_{j-1}, m_{j+1}$ lần lượt là tần số của nhóm đứng trước và nhóm đứng sau nó (nếu nhóm đầu chứa mốt thì $m_0 = 0$, nếu nhóm cuối chứa mốt thì $m_{k+1} = 0$).",
+          "Ý nghĩa: Mốt đặc trưng cho giá trị xuất hiện phổ biến nhất, dùng nhiều trong phân tích thị trường, thị hiếu tiêu dùng."
+        ],
+        "formula": "M_o = a_j + \\dfrac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot (a_{j+1} - a_j)",
+        "exampleProblem": "Nhóm chứa mốt là $[40; 60)$ với độ dài $h = 20$, tần số $m_j = 12$, hai tần số bên cạnh là $m_{j-1} = 9$ và $m_{j+1} = 10$. Tính mốt $M_o$.",
+        "exampleSolution": "$M_o = 40 + \\dfrac{12 - 9}{(12 - 9) + (12 - 10)} \\times 20 = 40 + \\dfrac{3}{5} \\times 20 = 52$."
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-11.9.1",
+        "timeSeconds": 180,
+        "timeLabel": "03:00",
+        "title": "Số trung bình ghép nhóm",
+        "question": "Số trung bình $\\bar{x}$ của mẫu số liệu ghép nhóm được tính dựa vào đại lượng nào của mỗi nhóm?",
+        "options": [
+          "Giá trị đại diện của nhóm",
+          "Độ dài của nhóm",
+          "Đầu mút trái của nhóm",
+          "Đầu mút phải của nhóm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số trung bình ghép nhóm được tính bằng tổng các tích giữa giá trị đại diện và tần số của nhóm, rồi chia cho cỡ mẫu."
+      },
+      {
+        "id": "vq-11.9.2",
+        "timeSeconds": 420,
+        "timeLabel": "07:00",
+        "title": "Nhóm chứa trung vị",
+        "question": "Nhóm chứa trung vị của mẫu số liệu ghép nhóm là nhóm đầu tiên có tần số tích lũy thỏa mãn:",
+        "options": [
+          "$cf \\ge \\dfrac{n}{2}$",
+          "$cf \\ge \\dfrac{n}{4}$",
+          "$cf \\ge \\dfrac{3n}{4}$",
+          "$cf = n$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trung vị chia đôi mẫu số liệu nên nhóm chứa trung vị là nhóm đầu tiên có tần số tích lũy lớn hơn hoặc bằng $n/2$."
+      },
+      {
+        "id": "vq-11.9.3",
+        "timeSeconds": 750,
+        "timeLabel": "12:30",
+        "title": "Nhóm chứa mốt",
+        "question": "Nhóm chứa mốt của mẫu số liệu ghép nhóm là:",
+        "options": [
+          "Nhóm có tần số lớn nhất",
+          "Nhóm ở chính giữa bảng",
+          "Nhóm có độ dài dài nhất",
+          "Nhóm có giá trị đại diện lớn nhất"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa mốt là nhóm có tần số lớn nhất trong tất cả các nhóm."
+      },
+      {
+        "id": "vq-11.9.4",
+        "timeSeconds": 1080,
+        "timeLabel": "18:00",
+        "title": "Tứ phân vị thứ hai",
+        "question": "Tứ phân vị thứ hai $Q_2$ của mẫu số liệu ghép nhóm có giá trị bằng:",
+        "options": [
+          "Trung vị $M_e$",
+          "Số trung bình $\\bar{x}$",
+          "Mốt $M_o$",
+          "Giá trị đại diện của nhóm giữa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa, tứ phân vị thứ hai $Q_2$ chính là trung vị $M_e$."
+      }
+    ],
+    "tips": [
+      "Để tìm nhóm chứa trung vị, hãy lập cột tần số tích lũy $cf_k$ rồi so sánh với $\\dfrac{n}{2}$. Nhóm đầu tiên có $cf_k \\ge \\dfrac{n}{2}$ chính là nhóm chứa trung vị.",
+      "Tương tự: nhóm chứa $Q_1$ có $cf_k \\ge \\dfrac{n}{4}$, nhóm chứa $Q_3$ có $cf_k \\ge \\dfrac{3n}{4}$.",
+      "Trong công thức tính mốt $M_o$, mẫu số là tổng độ lệch tần số với hai nhóm kế cận: $(m_j - m_{j-1}) + (m_j - m_{j+1})$.",
+      "Có thể dùng máy tính cầm tay Casio fx-580VNX (chế độ Thống kê 1 biến kèm cột Tần số) để tính nhanh số trung bình $\\bar{x}$ bằng cách nhập giá trị đại diện $c_i$ vào cột X và tần số $m_i$ vào cột FREQ."
+    ],
+    "traps": [
+      "Nhầm lẫn giữa $C$ và $m_m$: $C$ là tần số tích lũy của nhóm ĐỨNG TRƯỚC nhóm chứa trung vị/tứ phân vị, còn $m_m$ là tần số của CHÍNH NHÓM ĐÓ.",
+      "Nhầm thứ tự công sai trong mốt: Công thức mốt chỉ áp dụng khi các nhóm có độ dài $h$ bằng nhau.",
+      "Quên nhân độ dài nhóm $h$: Trong công thức $M_e, Q_1, Q_3, M_o$, phần phân số bắt buộc phải nhân với độ dài nhóm $h = a_{j+1} - a_j$ trước khi cộng với đầu mút trái $a_j$."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-11.9.1",
+        "badge": "Câu 1 - Nhận biết - Công thức số trung bình",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 1",
+        "question": "Cho mẫu số liệu ghép nhóm gồm $k$ nhóm có các giá trị đại diện $c_1, c_2, \\dots, c_k$ và các tần số tương ứng $m_1, m_2, \\dots, m_k$. Công thức tính số trung bình $\\bar{x}$ là:",
+        "options": [
+          "$\\bar{x} = \\dfrac{m_1 c_1 + m_2 c_2 + \\dots + m_k c_k}{n}$",
+          "$\\bar{x} = \\dfrac{c_1 + c_2 + \\dots + c_k}{k}$",
+          "$\\bar{x} = \\dfrac{m_1 + m_2 + \\dots + m_k}{k}$",
+          "$\\bar{x} = \\dfrac{m_1 c_1 + m_2 c_2 + \\dots + m_k c_k}{k}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số trung bình của mẫu số liệu ghép nhóm: $\\bar{x} = \\dfrac{1}{n} \\sum_{i=1}^k m_i c_i$, trong đó $n = \\sum m_i$ là cỡ mẫu."
+      },
+      {
+        "id": "quiz-11.9.2",
+        "badge": "Câu 2 - Nhận biết - Nhóm chứa trung vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 2",
+        "question": "Để xác định nhóm chứa trung vị $M_e$ của mẫu số liệu ghép nhóm cỡ mẫu $n$, ta tìm nhóm đầu tiên có tần số tích lũy $cf$ thỏa mãn điều kiện nào?",
+        "options": [
+          "$cf \\ge \\dfrac{n}{2}$",
+          "$cf \\ge \\dfrac{n}{4}$",
+          "$cf \\ge \\dfrac{3n}{4}$",
+          "$cf = n$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa trung vị là nhóm đầu tiên có tần số tích lũy lớn hơn hoặc bằng $\\dfrac{n}{2}$."
+      },
+      {
+        "id": "quiz-11.9.3",
+        "badge": "Câu 3 - Nhận biết - Nhóm chứa mốt",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 3",
+        "question": "Nhóm chứa mốt $M_o$ của mẫu số liệu ghép nhóm là nhóm:",
+        "options": [
+          "Có tần số lớn nhất trong các nhóm",
+          "Đứng ở vị trí chính giữa của bảng số liệu",
+          "Có tần số tích lũy lớn hơn hoặc bằng $\\dfrac{n}{2}$",
+          "Có độ dài lớn nhất"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa mốt của mẫu số liệu ghép nhóm là nhóm có tần số lớn nhất."
+      },
+      {
+        "id": "quiz-11.9.4",
+        "badge": "Câu 4 - Nhận biết - Công thức mốt",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 4",
+        "question": "Giả sử nhóm $[a_j; a_{j+1})$ là nhóm chứa mốt với tần số $m_j$. Công thức tính mốt $M_o$ là:",
+        "options": [
+          "$M_o = a_j + \\dfrac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot (a_{j+1} - a_j)$",
+          "$M_o = a_j + \\dfrac{m_j - m_{j+1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot (a_{j+1} - a_j)$",
+          "$M_o = a_j + \\dfrac{m_j}{m_{j-1} + m_{j+1}} \\cdot (a_{j+1} - a_j)$",
+          "$M_o = \\dfrac{a_j + a_{j+1}}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Công thức tính mốt của mẫu số liệu ghép nhóm: $M_o = a_j + \\dfrac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot h$, với $h = a_{j+1} - a_j$."
+      },
+      {
+        "id": "quiz-11.9.5",
+        "badge": "Câu 5 - Nhận biết - Công thức tứ phân vị thứ nhất",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 5",
+        "question": "Giả sử nhóm $[a_p; a_{p+1})$ chứa tứ phân vị thứ nhất $Q_1$. Công thức tính $Q_1$ là:",
+        "options": [
+          "$Q_1 = a_p + \\dfrac{\\dfrac{n}{4} - C}{m_p} \\cdot (a_{p+1} - a_p)$",
+          "$Q_1 = a_p + \\dfrac{\\dfrac{n}{2} - C}{m_p} \\cdot (a_{p+1} - a_p)$",
+          "$Q_1 = a_p + \\dfrac{\\dfrac{3n}{4} - C}{m_p} \\cdot (a_{p+1} - a_p)$",
+          "$Q_1 = a_p + \\dfrac{n - C}{m_p} \\cdot (a_{p+1} - a_p)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Công thức tính tứ phân vị thứ nhất: $Q_1 = a_p + \\dfrac{\\dfrac{n}{4} - C}{m_p} \\cdot (a_{p+1} - a_p)$, trong đó $C = cf_{p-1}$ là tần số tích lũy của nhóm trước."
+      },
+      {
+        "id": "quiz-11.9.6",
+        "badge": "Câu 6 - Thông hiểu - Tìm nhóm chứa mốt cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 6",
+        "question": "Khảo sát cân nặng của 25 quả bơ: $[140; 150)$ có 2 quả; $[150; 160)$ có 6 quả; $[160; 170)$ có 12 quả; $[170; 180)$ có 4 quả; $[180; 190)$ có 1 quả. Nhóm chứa mốt là:",
+        "options": [
+          "$[160; 170)$",
+          "$[150; 160)$",
+          "$[170; 180)$",
+          "$[180; 190)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số lớn nhất là $12$ thuộc nhóm $[160; 170)$."
+      },
+      {
+        "id": "quiz-11.9.7",
+        "badge": "Câu 7 - Thông hiểu - Tìm nhóm chứa trung vị cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 7",
+        "question": "Khảo sát thời gian tập thể dục của 42 học sinh: $[0; 20)$ có 5 HS; $[20; 40)$ có 9 HS; $[40; 60)$ có 12 HS; $[60; 80)$ có 10 HS; $[80; 100)$ có 6 HS. Nhóm chứa trung vị là:",
+        "options": [
+          "$[40; 60)$",
+          "$[20; 40)$",
+          "$[60; 80)$",
+          "$[80; 100)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cỡ mẫu $n = 42 \\Rightarrow \\dfrac{n}{2} = 21$. Tần số tích lũy: $cf_1 = 5, cf_2 = 14, cf_3 = 26 \\ge 21$. Vậy nhóm chứa trung vị là $[40; 60)$."
+      },
+      {
+        "id": "quiz-11.9.8",
+        "badge": "Câu 8 - Thông hiểu - Tìm nhóm chứa Q1 cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 8",
+        "question": "Khảo sát thời gian tập thể dục của 42 học sinh ở câu 7. Nhóm chứa tứ phân vị thứ nhất $Q_1$ là:",
+        "options": [
+          "$[20; 40)$",
+          "$[0; 20)$",
+          "$[40; 60)$",
+          "$[60; 80)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\dfrac{n}{4} = \\dfrac{42}{4} = 10,5$. Tần số tích lũy: $cf_1 = 5, cf_2 = 14 \\ge 10,5$. Vậy nhóm chứa $Q_1$ là $[20; 40)$."
+      },
+      {
+        "id": "quiz-11.9.9",
+        "badge": "Câu 9 - Thông hiểu - Tìm nhóm chứa Q3 cụ thể",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 9",
+        "question": "Khảo sát thời gian tập thể dục của 42 học sinh ở câu 7. Nhóm chứa tứ phân vị thứ ba $Q_3$ là:",
+        "options": [
+          "$[60; 80)$",
+          "$[40; 60)$",
+          "$[80; 100)$",
+          "$[20; 40)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\dfrac{3n}{4} = \\dfrac{3 \\times 42}{4} = 31,5$. Tần số tích lũy: $cf_1=5, cf_2=14, cf_3=26, cf_4=36 \\ge 31,5$. Vậy nhóm chứa $Q_3$ là $[60; 80)$."
+      },
+      {
+        "id": "quiz-11.9.10",
+        "badge": "Câu 10 - Thông hiểu - Tính số trung bình đơn giản",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 10",
+        "question": "Cho bảng số liệu gồm 2 nhóm: $[10; 20)$ có 4 người, $[20; 30)$ có 6 người. Số trung bình $\\bar{x}$ của mẫu số liệu là:",
+        "options": [
+          "$21$",
+          "$20$",
+          "$19$",
+          "$22$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện: $c_1 = 15, c_2 = 25$. Số trung bình: $\\bar{x} = \\dfrac{4(15) + 6(25)}{10} = \\dfrac{60 + 150}{10} = 21$."
+      },
+      {
+        "id": "quiz-11.9.11",
+        "badge": "Câu 11 - Vận dụng - Tính số trung bình của mẫu 5 nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 11",
+        "question": "Cân nặng của 28 học sinh nam lớp 11 được chia thành: $[45; 49)$ có 4 HS; $[49; 53)$ có 5 HS; $[53; 57)$ có 7 HS; $[57; 61)$ có 7 HS; $[61; 65)$ có 5 HS. Cân nặng trung bình của học sinh xấp xỉ bằng:",
+        "options": [
+          "$55,6$ kg",
+          "$56,2$ kg",
+          "$54,8$ kg",
+          "$57,1$ kg"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện: $47; 51; 55; 59; 63$.\n$\\bar{x} = \\dfrac{4(47) + 5(51) + 7(55) + 7(59) + 5(63)}{28} = \\dfrac{188 + 255 + 385 + 413 + 315}{28} = \\dfrac{1556}{28} \\approx 55,57 \\approx 55,6$ kg."
+      },
+      {
+        "id": "quiz-11.9.12",
+        "badge": "Câu 12 - Vận dụng - Tính mốt của mẫu ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 12",
+        "question": "Khảo sát thời gian tập thể dục: $[0; 20)$ có 5; $[20; 40)$ có 9; $[40; 60)$ có 12; $[60; 80)$ có 10; $[80; 100)$ có 6. Mốt $M_o$ của mẫu số liệu là:",
+        "options": [
+          "$52$",
+          "$50$",
+          "$48$",
+          "$54$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa mốt $[40; 60)$ có $a_j = 40, h = 20, m_j = 12, m_{j-1} = 9, m_{j+1} = 10$.\n$M_o = 40 + \\dfrac{12 - 9}{(12 - 9) + (12 - 10)} \\times 20 = 40 + \\dfrac{3}{3 + 2} \\times 20 = 40 + 12 = 52$."
+      },
+      {
+        "id": "quiz-11.9.13",
+        "badge": "Câu 13 - Vận dụng - Tính trung vị của mẫu ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 13",
+        "question": "Cho mẫu số liệu khảo sát cự li ném lao của 30 vận động viên: $[60; 65)$ có 4; $[65; 70)$ có 6; $[70; 75)$ có 12; $[75; 80)$ có 8. Trung vị $M_e$ của mẫu số liệu là:",
+        "options": [
+          "$72,08$ m",
+          "$71,25$ m",
+          "$72,50$ m",
+          "$73,15$ m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cỡ mẫu $n = 30 \\Rightarrow \\dfrac{n}{2} = 15$. Nhóm chứa trung vị là $[70; 75)$ (do $cf_2 = 10, cf_3 = 22$).\n$a_m = 70, h = 5, m_m = 12, C = 10$.\n$M_e = 70 + \\dfrac{15 - 10}{12} \\times 5 = 70 + \\dfrac{25}{12} \\approx 70 + 2,083 = 72,08$ m."
+      },
+      {
+        "id": "quiz-11.9.14",
+        "badge": "Câu 14 - Vận dụng - Tính tứ phân vị Q1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 14",
+        "question": "Cho mẫu số liệu điểm thi của 60 học sinh: $[20; 40)$ có 7; $[40; 60)$ có 18; $[60; 80)$ có 25; $[80; 100)$ có 10. Tứ phân vị thứ nhất $Q_1$ xấp xỉ bằng:",
+        "options": [
+          "$48,89$",
+          "$47,50$",
+          "$50,25$",
+          "$45,60$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\dfrac{n}{4} = 15$. Nhóm chứa $Q_1$ là $[40; 60)$ vì $cf_1 = 7, cf_2 = 25$.\n$a_p = 40, h = 20, m_p = 18, C = 7$.\n$Q_1 = 40 + \\dfrac{15 - 7}{18} \\times 20 = 40 + \\dfrac{160}{18} \\approx 40 + 8,89 = 48,89$."
+      },
+      {
+        "id": "quiz-11.9.15",
+        "badge": "Câu 15 - Vận dụng - Tính tứ phân vị Q3",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 15",
+        "question": "Với mẫu số liệu ở câu 14 gồm 60 học sinh, tứ phân vị thứ ba $Q_3$ bằng:",
+        "options": [
+          "$76$",
+          "$74$",
+          "$75$",
+          "$78$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\dfrac{3n}{4} = 45$. Nhóm chứa $Q_3$ là $[60; 80)$ vì $cf_2 = 25, cf_3 = 50$.\n$a_q = 60, h = 20, m_q = 25, C = 25$.\n$Q_3 = 60 + \\dfrac{45 - 25}{25} \\times 20 = 60 + \\dfrac{20}{25} \\times 20 = 60 + 16 = 76$."
+      },
+      {
+        "id": "quiz-11.9.16",
+        "badge": "Câu 16 - Vận dụng - Tính khoảng tứ phân vị delta_Q",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 16",
+        "question": "Biết tứ phân vị thứ nhất $Q_1 = 48,89$ và tứ phân vị thứ ba $Q_3 = 76$. Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1$ của mẫu số liệu là:",
+        "options": [
+          "$27,11$",
+          "$28,11$",
+          "$26,89$",
+          "$30,00$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khoảng tứ phân vị: $\\Delta_Q = Q_3 - Q_1 = 76 - 48,89 = 27,11$."
+      },
+      {
+        "id": "quiz-11.9.17",
+        "badge": "Câu 17 - Vận dụng - Xác định số lượng cuộc gọi phổ biến nhất",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 17",
+        "question": "Thống kê số cuộc gọi của nhân viên CSKH trong 30 ngày: $[0; 5)$ có 5 ngày; $[5; 10)$ có 13 ngày; $[10; 15)$ có 7 ngày; $[15; 20)$ có 3 ngày; $[20; 25)$ có 2 ngày. Mốt của mẫu số liệu là:",
+        "options": [
+          "$7,86$",
+          "$8,50$",
+          "$7,25$",
+          "$6,90$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa mốt $[5; 10)$ có $a_j = 5, h = 5, m_j = 13, m_{j-1} = 5, m_{j+1} = 7$.\n$M_o = 5 + \\dfrac{13 - 5}{(13 - 5) + (13 - 7)} \\times 5 = 5 + \\dfrac{8}{8 + 6} \\times 5 = 5 + \\dfrac{40}{14} \\approx 5 + 2,86 = 7,86$."
+      },
+      {
+        "id": "quiz-11.9.18",
+        "badge": "Câu 18 - Vận dụng - So sánh số trung bình giữa hai tập dữ liệu",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 18",
+        "question": "Khảo sát cân nặng cam ở vườn A có trung bình $\\bar{x}_A = 161,7$ g và vườn B có trung bình $\\bar{x}_B = 165,3$ g. Khẳng định nào sau đây đúng?",
+        "options": [
+          "Theo số trung bình, cam ở vườn B nặng hơn cam ở vườn A",
+          "Theo số trung bình, cam ở vườn A nặng hơn cam ở vườn B",
+          "Cam ở hai vườn nặng bằng nhau",
+          "Không thể so sánh được"
+        ],
+        "correctIndex": 0,
+        "explanation": "Do $\\bar{x}_B = 165,3 > \\bar{x}_A = 161,7$ nên theo số trung bình, quả cam ở vườn B nặng hơn quả cam ở vườn A."
+      },
+      {
+        "id": "quiz-11.9.19",
+        "badge": "Câu 19 - Vận dụng cao - Tư vấn giá bán từ mốt",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 19",
+        "question": "Khảo sát nhu cầu giá mua nhà (triệu đồng/m2): $[10; 14)$ có 54 người; $[14; 18)$ có 78 người; $[18; 22)$ có 120 người; $[22; 26)$ có 45 người; $[26; 30)$ có 12 người. Công ty nên xây nhà ở mức giá nào (mốt) để đáp ứng nhu cầu nhiều người nhất?",
+        "options": [
+          "$19,4$ triệu đồng",
+          "$20,0$ triệu đồng",
+          "$18,5$ triệu đồng",
+          "$21,2$ triệu đồng"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhóm chứa mốt $[18; 22)$ có $a_j = 18, h = 4, m_j = 120, m_{j-1} = 78, m_{j+1} = 45$.\n$M_o = 18 + \\dfrac{120 - 78}{(120 - 78) + (120 - 45)} \\times 4 = 18 + \\dfrac{42}{42 + 75} \\times 4 = 18 + \\dfrac{168}{117} \\approx 18 + 1,44 = 19,4$ triệu đồng."
+      },
+      {
+        "id": "quiz-11.9.20",
+        "badge": "Câu 20 - Vận dụng cao - Ý nghĩa thống kê của tứ phân vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trắc nghiệm Câu 20",
+        "question": "Biết tứ phân vị thứ nhất của thời gian ngủ học sinh khối 11 là $Q_1 = 5,64$ giờ. Khẳng định nào sau đây là đúng về mặt ý nghĩa thống kê?",
+        "options": [
+          "Có khoảng 75% học sinh khối 11 có thời gian ngủ từ 5,64 giờ trở lên",
+          "Có đúng 25% học sinh khối 11 ngủ đúng 5,64 giờ",
+          "Học sinh khối 11 ngủ trung bình là 5,64 giờ",
+          "Có khoảng 75% học sinh ngủ dưới 5,64 giờ"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tứ phân vị thứ nhất $Q_1$ chia mẫu số liệu thành 25% phần nhỏ hơn và 75% phần lớn hơn. Do đó có khoảng 75% học sinh có thời gian ngủ từ $Q_1 = 5,64$ giờ trở lên."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-11.9.1",
+        "badge": "Đúng/Sai 1 - Các số đặc trưng cơ bản",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Đúng Sai Câu 1",
+        "prompt": "Cho bảng phân bố thời gian tập thể dục của 40 học sinh: $[0; 20)$ có 5 HS; $[20; 40)$ có 9 HS; $[40; 60)$ có 12 HS; $[60; 80)$ có 10 HS; $[80; 100)$ có 4 HS. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Số học sinh được khảo sát là $n = 40$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 5 + 9 + 12 + 10 + 4 = 40 học sinh."
+          },
+          {
+            "id": "b",
+            "text": "Nhóm chứa trung vị là $[40; 60)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, n/2 = 20, cf_2 = 14, cf_3 = 26 >= 20 nên thuộc nhóm [40; 60)."
+          },
+          {
+            "id": "c",
+            "text": "Nhóm chứa mốt là $[40; 60)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tần số lớn nhất là 12 thuộc nhóm [40; 60)."
+          },
+          {
+            "id": "d",
+            "text": "Số trung bình của mẫu số liệu là $50$ phút.",
+            "correctAnswer": false,
+            "explanation": "Sai, giá trị đại diện: 10, 30, 50, 70, 90. Trung bình = [5(10) + 9(30) + 12(50) + 10(70) + 4(90)]/40 = [50 + 270 + 600 + 700 + 360]/40 = 1980/40 = 49,5 phút."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.9.2",
+        "badge": "Đúng/Sai 2 - Tính toán mốt và trung vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Đúng Sai Câu 2",
+        "prompt": "Với bảng số liệu ở câu 1 có nhóm chứa mốt là $[40; 60)$ với $m_j = 12, m_{j-1} = 9, m_{j+1} = 10, h = 20$. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Hiệu $m_j - m_{j-1} = 3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 12 - 9 = 3."
+          },
+          {
+            "id": "b",
+            "text": "Mốt của mẫu số liệu là $M_o = 52$ phút.",
+            "correctAnswer": true,
+            "explanation": "Đúng, M_o = 40 + [3 / (3 + 2)] * 20 = 40 + 12 = 52."
+          },
+          {
+            "id": "c",
+            "text": "Trung vị của mẫu số liệu là $M_e = 50$ phút.",
+            "correctAnswer": true,
+            "explanation": "Đúng, M_e = 40 + [(20 - 14)/12] * 20 = 40 + (6/12)*20 = 40 + 10 = 50 phút."
+          },
+          {
+            "id": "d",
+            "text": "Mốt luôn luôn có giá trị trùng với trung vị trong mọi mẫu số liệu ghép nhóm.",
+            "correctAnswer": false,
+            "explanation": "Sai, mốt và trung vị phản ánh hai khía cạnh khác nhau (tần suất lặp lại cao nhất và vị trí chính giữa) nên thông thường có giá trị khác nhau."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.9.3",
+        "badge": "Đúng/Sai 3 - Tính toán tứ phân vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Đúng Sai Câu 3",
+        "prompt": "Cho mẫu số liệu điểm kiểm tra của 40 học sinh: $[2; 4)$ có 4 HS; $[4; 6)$ có 10 HS; $[6; 8)$ có 18 HS; $[8; 10]$ có 8 HS. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Nhóm chứa tứ phân vị thứ nhất $Q_1$ là $[4; 6)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, n/4 = 10, cf_1 = 4, cf_2 = 14 >= 10 nên thuộc nhóm [4; 6)."
+          },
+          {
+            "id": "b",
+            "text": "Tứ phân vị thứ nhất $Q_1 = 5,2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, Q_1 = 4 + [(10 - 4)/10] * 2 = 4 + 1,2 = 5,2."
+          },
+          {
+            "id": "c",
+            "text": "Nhóm chứa tứ phân vị thứ ba $Q_3$ là $[8; 10]$.",
+            "correctAnswer": false,
+            "explanation": "Sai, 3n/4 = 30, cf_2 = 14, cf_3 = 32 >= 30 nên nhóm chứa Q_3 là [6; 8)."
+          },
+          {
+            "id": "d",
+            "text": "Khoảng tứ phân vị đo độ phân tán của 50% số liệu chính giữa.",
+            "correctAnswer": true,
+            "explanation": "Đúng, định nghĩa khoảng tứ phân vị delta_Q = Q_3 - Q_1 đo độ phân tán của 50% số liệu trung tâm."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.9.4",
+        "badge": "Đúng/Sai 4 - So sánh hiệu quả của hai nhóm học sinh",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Đúng Sai Câu 4",
+        "prompt": "Khảo sát điểm kiểm tra tiếng Anh của hai lớp 11A và 11B cùng có 40 học sinh thu được: Điểm trung bình $\\bar{x}_A = 7,2$ và $\\bar{x}_B = 6,8$; Trung vị $M_{e(A)} = 7,4$ và $M_{e(B)} = 6,9$. Xét tính Đúng / Sai của các kết luận sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điểm trung bình của lớp 11A cao hơn lớp 11B.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 7,2 > 6,8."
+          },
+          {
+            "id": "b",
+            "text": "Theo trung vị, học sinh lớp 11A có kết quả đồng đều hơn và cao hơn lớp 11B.",
+            "correctAnswer": true,
+            "explanation": "Đúng, 7,4 > 6,9."
+          },
+          {
+            "id": "c",
+            "text": "Mọi học sinh lớp 11A đều có điểm cao hơn mọi học sinh lớp 11B.",
+            "correctAnswer": false,
+            "explanation": "Sai, các số đặc trưng chỉ phản ánh xu thế chung của tập hợp số liệu chứ không khẳng định từng cá nhân."
+          },
+          {
+            "id": "d",
+            "text": "Nếu mẫu số liệu có giá trị bất thường (quá cao hoặc quá thấp), trung vị là đại lượng đại diện tốt hơn số trung bình.",
+            "correctAnswer": true,
+            "explanation": "Đúng, trung vị ít bị ảnh hưởng bởi các giá trị ngoại lai so với số trung bình."
+          }
+        ]
+      },
+      {
+        "id": "tf-11.9.5",
+        "badge": "Đúng/Sai 5 - Ứng dụng mốt trong kinh doanh",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Đúng Sai Câu 5",
+        "prompt": "Một cửa hàng giày thống kê cỡ giày bán được trong tháng qua mẫu số liệu ghép nhóm và tính được mốt $M_o = 40,2$. Xét tính Đúng / Sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Cỡ giày 40 là cỡ giày có nhu cầu mua lớn nhất.",
+            "correctAnswer": true,
+            "explanation": "Đúng, mốt xấp xỉ 40 nên cỡ 40 bán chạy nhất."
+          },
+          {
+            "id": "b",
+            "text": "Cửa hàng nên nhập nhiều giày cỡ 40 hơn các cỡ khác.",
+            "correctAnswer": true,
+            "explanation": "Đúng, ứng dụng thực tế của mốt giúp tối ưu lượng hàng tồn kho theo nhu cầu phổ biến nhất."
+          },
+          {
+            "id": "c",
+            "text": "Mốt của mẫu số liệu ghép nhóm luôn là một số nguyên.",
+            "correctAnswer": false,
+            "explanation": "Sai, công thức mốt nội suy thường cho kết quả là số thập phân (ví dụ 40,2)."
+          },
+          {
+            "id": "d",
+            "text": "Một mẫu số liệu ghép nhóm chỉ có thể có duy nhất một mốt.",
+            "correctAnswer": false,
+            "explanation": "Sai, nếu có hai nhóm không kề nhau cùng đạt tần số lớn nhất bằng nhau thì mẫu có thể có nhiều hơn một mốt."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-11.9.1",
+        "badge": "TLN 1 - Tính số trung bình",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 1",
+        "prompt": "Cho bảng số liệu gồm 3 nhóm: $[0; 10)$ có 2; $[10; 20)$ có 6; $[20; 30)$ có 2. Tính số trung bình $\\bar{x}$ của mẫu số liệu.",
+        "correctAnswer": "15",
+        "acceptableAnswers": [
+          "15"
+        ],
+        "explanation": "Giá trị đại diện: $5, 15, 25$. Trung bình: $\\bar{x} = \\dfrac{2(5) + 6(15) + 2(25)}{10} = \\dfrac{10 + 90 + 50}{10} = 15$."
+      },
+      {
+        "id": "sa-11.9.2",
+        "badge": "TLN 2 - Tính mốt của mẫu số liệu ghép nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 2",
+        "prompt": "Khảo sát thời gian tập thể dục: $[0; 20)$ có 5; $[20; 40)$ có 9; $[40; 60)$ có 12; $[60; 80)$ có 10; $[80; 100)$ có 6. Tìm mốt $M_o$ của mẫu số liệu.",
+        "correctAnswer": "52",
+        "acceptableAnswers": [
+          "52"
+        ],
+        "explanation": "Nhóm chứa mốt $[40; 60)$: $M_o = 40 + \\dfrac{12 - 9}{(12 - 9) + (12 - 10)} \\times 20 = 40 + \\dfrac{3}{5} \\times 20 = 52$."
+      },
+      {
+        "id": "sa-11.9.3",
+        "badge": "TLN 3 - Tính trung vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 3",
+        "prompt": "Khảo sát thời gian tập thể dục của 40 học sinh: $[0; 20)$ có 5; $[20; 40)$ có 9; $[40; 60)$ có 12; $[60; 80)$ có 10; $[80; 100)$ có 4. Tính trung vị $M_e$ của mẫu số liệu.",
+        "correctAnswer": "50",
+        "acceptableAnswers": [
+          "50"
+        ],
+        "explanation": "Cỡ mẫu $n = 40 \\Rightarrow \\dfrac{n}{2} = 20$. Nhóm chứa trung vị là $[40; 60)$ với $C = 14, m_m = 12, h = 20$.\n$M_e = 40 + \\dfrac{20 - 14}{12} \\times 20 = 40 + 10 = 50$."
+      },
+      {
+        "id": "sa-11.9.4",
+        "badge": "TLN 4 - Tính tứ phân vị Q1",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 4",
+        "prompt": "Cho mẫu số liệu ghép nhóm của 40 học sinh ở câu 3. Tính tứ phân vị thứ nhất $Q_1$. (Nhập số thập phân dùng dấu phẩy hoặc chấm, làm tròn đến 2 chữ số thập phân).",
+        "correctAnswer": "31,11",
+        "acceptableAnswers": [
+          "31,11",
+          "31.11"
+        ],
+        "explanation": "$\\dfrac{n}{4} = 10$. Nhóm chứa $Q_1$ là $[20; 40)$ có $a_p = 20, h = 20, m_p = 9, C = 5$.\n$Q_1 = 20 + \\dfrac{10 - 5}{9} \\times 20 = 20 + \\dfrac{100}{9} \\approx 31,11$."
+      },
+      {
+        "id": "sa-11.9.5",
+        "badge": "TLN 5 - Tính tứ phân vị Q3",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 5",
+        "prompt": "Cho mẫu số liệu ghép nhóm của 40 học sinh ở câu 3. Tính tứ phân vị thứ ba $Q_3$.",
+        "correctAnswer": "68",
+        "acceptableAnswers": [
+          "68"
+        ],
+        "explanation": "$\\dfrac{3n}{4} = 30$. Nhóm chứa $Q_3$ là $[60; 80)$ có $a_q = 60, h = 20, m_q = 10, C = 26$.\n$Q_3 = 60 + \\dfrac{30 - 26}{10} \\times 20 = 60 + 8 = 68$."
+      },
+      {
+        "id": "sa-11.9.6",
+        "badge": "TLN 6 - Tính khoảng tứ phân vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2 Trả lời ngắn Câu 6",
+        "prompt": "Một mẫu số liệu có $Q_1 = 31,11$ và $Q_3 = 68$. Tính khoảng tứ phân vị $\\Delta_Q$ (làm tròn đến hàng phần trăm).",
+        "correctAnswer": "36,89",
+        "acceptableAnswers": [
+          "36,89",
+          "36.89"
+        ],
+        "explanation": "$\\Delta_Q = Q_3 - Q_1 = 68 - 31,11 = 36,89$."
+      }
+    ]
+  }
 };

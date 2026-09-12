@@ -6857,4 +6857,301 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
     }
   ]
 }
+,
+
+  // ==========================================
+  // BÀI 8: MẪU SỐ LIỆU GHÉP NHÓM (AI PRACTICE)
+  // ==========================================
+  "t11-b8-mau-so-lieu-ghep-nhom": {
+    "quizQuestions": [
+      {
+        "id": "ai-11.8.1",
+        "badge": "Luyện thêm 1 - Giá trị đại diện của nhóm",
+        "source": "SBT Toán 11 KNTT Bài 8",
+        "question": "Giá trị đại diện của nhóm $[150; 160)$ là:",
+        "options": [
+          "$155$",
+          "$150$",
+          "$160$",
+          "$10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện: $c = \\dfrac{150 + 160}{2} = 155$."
+      },
+      {
+        "id": "ai-11.8.2",
+        "badge": "Luyện thêm 2 - Độ dài của nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1",
+        "question": "Độ dài của nhóm $[12,5; 17,5)$ bằng:",
+        "options": [
+          "$5$",
+          "$15$",
+          "$17,5$",
+          "$2,5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ dài nhóm: $L = 17,5 - 12,5 = 5$."
+      },
+      {
+        "id": "ai-11.8.3",
+        "badge": "Luyện thêm 3 - Tính cỡ mẫu",
+        "source": "SBT Toán 11 KNTT Bài 8",
+        "question": "Một mẫu số liệu ghép nhóm có các tần số lần lượt là $7, 13, 25, 15$. Cỡ mẫu $n$ là:",
+        "options": [
+          "$60$",
+          "$50$",
+          "$55$",
+          "$65$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cỡ mẫu: $n = 7 + 13 + 25 + 15 = 60$."
+      },
+      {
+        "id": "ai-11.8.4",
+        "badge": "Luyện thêm 4 - Tần số tích lũy",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1",
+        "question": "Cho 3 nhóm đầu có tần số lần lượt là $6, 14, 21$. Tần số tích lũy của nhóm thứ ba là:",
+        "options": [
+          "$41$",
+          "$35$",
+          "$21$",
+          "$20$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$cf_3 = 6 + 14 + 21 = 41$."
+      },
+      {
+        "id": "ai-11.8.5",
+        "badge": "Luyện thêm 5 - Khoảng biến thiên",
+        "source": "SBT Toán 11 KNTT Bài 8",
+        "question": "Mẫu số liệu có giá trị nhỏ nhất là $45$ và lớn nhất là $85$. Khoảng biến thiên $R$ bằng:",
+        "options": [
+          "$40$",
+          "$45$",
+          "$130$",
+          "$85$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$R = 85 - 45 = 40$."
+      },
+      {
+        "id": "ai-11.8.6",
+        "badge": "Luyện thêm 6 - Xác định phần tử thuộc nhóm",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1",
+        "question": "Giá trị $x = 25$ thuộc vào khoảng nào sau đây khi ghép nhóm?",
+        "options": [
+          "$[25; 30)$",
+          "$[20; 25)$",
+          "$(25; 30)$",
+          "$[15; 20)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Do nửa khoảng $[25; 30)$ chứa đầu mút trái 25."
+      },
+      {
+        "id": "ai-11.8.7",
+        "badge": "Luyện thêm 7 - Tính tỉ lệ phần trăm",
+        "source": "SBT Toán 11 KNTT Bài 8",
+        "question": "Trong 50 công nhân, có 15 người làm được từ 30 đến dưới 40 sản phẩm. Tỉ lệ công nhân ở nhóm này là:",
+        "options": [
+          "$30\\%$",
+          "$25\\%$",
+          "$35\\%$",
+          "$15\\%$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tỉ lệ: $\\dfrac{15}{50} \\times 100\\% = 30\\%$."
+      },
+      {
+        "id": "ai-11.8.8",
+        "badge": "Luyện thêm 8 - Số nhóm khi chia đều",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1",
+        "question": "Khoảng biến thiên là $35$. Nếu chia thành các nhóm có độ dài bằng $5$ thì cần bao nhiêu nhóm?",
+        "options": [
+          "$7$",
+          "$6$",
+          "$8$",
+          "$5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$k = \\dfrac{35}{5} = 7$ nhóm."
+      },
+      {
+        "id": "ai-11.8.9",
+        "badge": "Luyện thêm 9 - Đếm số lượng dưới ngưỡng",
+        "source": "SBT Toán 11 KNTT Bài 8",
+        "question": "Bảng số liệu tiền cước: $[0; 50)$ có 5 bạn; $[50; 100)$ có 12 bạn; $[100; 150)$ có 23 bạn. Có bao nhiêu bạn có tiền cước dưới 100 nghìn đồng?",
+        "options": [
+          "$17$",
+          "$5$",
+          "$12$",
+          "$40$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Số bạn có tiền cước dưới 100 nghìn là: $5 + 12 = 17$ bạn."
+      },
+      {
+        "id": "ai-11.8.10",
+        "badge": "Luyện thêm 10 - Tần số tích lũy của nhóm cuối",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B1",
+        "question": "Một lớp học có 42 học sinh được chia thành 4 nhóm cân nặng. Tần số tích lũy của nhóm thứ tư bằng:",
+        "options": [
+          "$42$",
+          "$10,5$",
+          "$21$",
+          "Chưa thể kết luận"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số tích lũy nhóm cuối cùng bằng tổng số học sinh $n = 42$."
+      }
+    ]
+  },
+
+  // ==========================================
+  // BÀI 9: CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM (AI PRACTICE)
+  // ==========================================
+  "t11-b9-so-dac-trung-mau-ghep-nhom": {
+    "quizQuestions": [
+      {
+        "id": "ai-11.9.1",
+        "badge": "Luyện thêm 1 - Tính số trung bình",
+        "source": "SBT Toán 11 KNTT Bài 9",
+        "question": "Một mẫu số liệu gồm 2 nhóm: $[0; 4)$ có 3 học sinh, $[4; 8)$ có 7 học sinh. Số trung bình $\\bar{x}$ bằng:",
+        "options": [
+          "$4,8$",
+          "$5,0$",
+          "$4,5$",
+          "$5,2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Giá trị đại diện: $2$ và $6$. $\\bar{x} = \\dfrac{3(2) + 7(6)}{10} = \\dfrac{6 + 42}{10} = 4,8$."
+      },
+      {
+        "id": "ai-11.9.2",
+        "badge": "Luyện thêm 2 - Nhóm chứa trung vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2",
+        "question": "Mẫu số liệu 50 học sinh gồm: $[0; 10)$ có 12 HS; $[10; 20)$ có 18 HS; $[20; 30)$ có 20 HS. Nhóm chứa trung vị là:",
+        "options": [
+          "$[10; 20)$",
+          "$[0; 10)$",
+          "$[20; 30)$",
+          "Không xác định được"
+        ],
+        "correctIndex": 0,
+        "explanation": "$n/2 = 25$. $cf_1 = 12, cf_2 = 30 \\ge 25$. Nhóm chứa trung vị là $[10; 20)$."
+      },
+      {
+        "id": "ai-11.9.3",
+        "badge": "Luyện thêm 3 - Nhóm chứa mốt",
+        "source": "SBT Toán 11 KNTT Bài 9",
+        "question": "Cho bảng số liệu: $[10; 20)$ có 8; $[20; 30)$ có 25; $[30; 40)$ có 14. Nhóm chứa mốt là:",
+        "options": [
+          "$[20; 30)$",
+          "$[10; 20)$",
+          "$[30; 40)$",
+          "$[25; 35)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tần số lớn nhất là 25 thuộc nhóm $[20; 30)$."
+      },
+      {
+        "id": "ai-11.9.4",
+        "badge": "Luyện thêm 4 - Tính mốt của mẫu số liệu đối xứng",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2",
+        "question": "Cho mẫu số liệu có nhóm chứa mốt là $[20; 30)$ với $m_{j-1} = 10, m_j = 20, m_{j+1} = 10$. Mốt $M_o$ bằng:",
+        "options": [
+          "$25$",
+          "$24$",
+          "$26$",
+          "$20$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Do hai tần số hai bên bằng nhau ($m_{j-1} = m_{j+1} = 10$) nên mốt rơi đúng vào chính giữa nhóm: $M_o = \\dfrac{20 + 30}{2} = 25$."
+      },
+      {
+        "id": "ai-11.9.5",
+        "badge": "Luyện thêm 5 - Nhóm chứa Q1",
+        "source": "SBT Toán 11 KNTT Bài 9",
+        "question": "Mẫu số liệu 80 người gồm: $[20; 30)$ có 15; $[30; 40)$ có 30; $[40; 50)$ có 35. Nhóm chứa tứ phân vị thứ nhất $Q_1$ là:",
+        "options": [
+          "$[30; 40)$",
+          "$[20; 30)$",
+          "$[40; 50)$",
+          "Không có"
+        ],
+        "correctIndex": 0,
+        "explanation": "$n/4 = 20$. $cf_1 = 15, cf_2 = 45 \\ge 20$. Vậy nhóm chứa $Q_1$ là $[30; 40)$."
+      },
+      {
+        "id": "ai-11.9.6",
+        "badge": "Luyện thêm 6 - Nhóm chứa Q3",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2",
+        "question": "Với mẫu số liệu ở câu 5 (cỡ mẫu 80), nhóm chứa tứ phân vị thứ ba $Q_3$ là:",
+        "options": [
+          "$[40; 50)$",
+          "$[30; 40)$",
+          "$[20; 30)$",
+          "Không có"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3n/4 = 60$. $cf_2 = 45, cf_3 = 80 \\ge 60$. Vậy nhóm chứa $Q_3$ là $[40; 50)$."
+      },
+      {
+        "id": "ai-11.9.7",
+        "badge": "Luyện thêm 7 - Tính trung vị",
+        "source": "SBT Toán 11 KNTT Bài 9",
+        "question": "Cho 2 nhóm: $[10; 20)$ có 10; $[20; 30)$ có 10. Trung vị $M_e$ của mẫu số liệu bằng:",
+        "options": [
+          "$20$",
+          "$15$",
+          "$25$",
+          "$18$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cỡ mẫu $n = 20 \\Rightarrow n/2 = 10$. Trung vị chia đôi mẫu số liệu ngay tại mút giao giữa 2 nhóm, $M_e = 20$."
+      },
+      {
+        "id": "ai-11.9.8",
+        "badge": "Luyện thêm 8 - Khoảng tứ phân vị",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2",
+        "question": "Một mẫu số liệu có $Q_1 = 15$ và $Q_3 = 45$. Khoảng tứ phân vị $\\Delta_Q$ bằng:",
+        "options": [
+          "$30$",
+          "$60$",
+          "$15$",
+          "$25$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\Delta_Q = Q_3 - Q_1 = 45 - 15 = 30$."
+      },
+      {
+        "id": "ai-11.9.9",
+        "badge": "Luyện thêm 9 - Ý nghĩa của trung vị",
+        "source": "SBT Toán 11 KNTT Bài 9",
+        "question": "Trung vị của mẫu số liệu ghép nhóm chia mẫu số liệu thành:",
+        "options": [
+          "Hai phần, mỗi phần chứa xấp xỉ 50% số giá trị",
+          "Bốn phần, mỗi phần chứa xấp xỉ 25% số giá trị",
+          "Phần có tần số lớn nhất",
+          "Hai phần có độ dài bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trung vị chia mẫu số liệu thành hai phần có số lượng giá trị xấp xỉ bằng nhau (mỗi phần 50%)."
+      },
+      {
+        "id": "ai-11.9.10",
+        "badge": "Luyện thêm 10 - So sánh mốt và trung bình",
+        "source": "Tài liệu GDPT 2018 Toán 11 C3B2",
+        "question": "Đại lượng nào sau đây đo giá trị xuất hiện thường xuyên nhất trong mẫu số liệu?",
+        "options": [
+          "Mốt",
+          "Số trung bình",
+          "Trung vị",
+          "Tứ phân vị"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mốt là đại lượng đặc trưng cho giá trị có tần số xuất hiện nhiều nhất."
+      }
+    ]
+  }
 };

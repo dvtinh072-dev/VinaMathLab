@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
-import { isUserDeleted } from "@/lib/deletedUsers";
+import { isUserDeleted, fetchDeletedIdentifiersFromCloud } from "@/lib/deletedUsers";
 import { supabase } from "@/lib/supabaseClient";
 
 const usersFilePath = path.join(process.cwd(), "src/data/usersData.json");
@@ -35,6 +35,9 @@ export async function POST(req: Request) {
     if (!users || !Array.isArray(users) || users.length === 0) {
       return NextResponse.json({ success: true, message: "Không có tài khoản nào cần đồng bộ.", syncedCount: 0 });
     }
+
+    // Tải danh sách tài khoản đã xóa từ Cloud để chặn hoàn toàn việc hồi sinh tài khoản đã xóa
+    await fetchDeletedIdentifiersFromCloud();
 
     const fallbackUsers = getFallbackUsers();
     let syncedCount = 0;

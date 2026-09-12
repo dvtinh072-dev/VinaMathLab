@@ -201,10 +201,23 @@ export default function AdminDashboardPage() {
                     : (lt.assignedClasses || []),
                   schoolClass: rawTeachers[matchIdx].schoolClass || lt.schoolClass,
                 };
-              } else {
-                rawTeachers.unshift(lt);
               }
             });
+
+            // Dọn sạch vinamath_local_registered_users: loại trừ bất kỳ giáo viên nào không còn trên server hoặc đã bị xóa
+            const validTeacherKeys = new Set(rawTeachers.map((t: any) => (t.id || t.username || "").toLowerCase()));
+            const cleanedLocal = parsedLocal.filter((u: any) => {
+              const uId = u.id?.toLowerCase();
+              const uUser = u.username?.toLowerCase();
+              if ((uId && deletedSet.has(uId)) || (uUser && deletedSet.has(uUser)) || u.role === "deleted") {
+                return false;
+              }
+              if (u.role === "teacher") {
+                return (uId && validTeacherKeys.has(uId)) || (uUser && validTeacherKeys.has(uUser));
+              }
+              return true;
+            });
+            localStorage.setItem("vinamath_local_registered_users", JSON.stringify(cleanedLocal));
           }
         } catch (e) {
           console.warn("Lỗi đọc local registered users:", e);

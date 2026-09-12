@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
-import { getDeletedIdentifiers, addDeletedIdentifiers } from "@/lib/deletedUsers";
+import { getDeletedIdentifiers, addDeletedIdentifiers, fetchDeletedIdentifiersFromCloud } from "@/lib/deletedUsers";
 import { supabase } from "@/lib/supabaseClient";
 import { parseAssignedClasses } from "@/lib/teacherClassUtils";
 
@@ -20,7 +20,7 @@ function getFallbackUsers() {
 
 export async function GET() {
   try {
-    const deletedSet = getDeletedIdentifiers();
+    const deletedSet = await fetchDeletedIdentifiersFromCloud();
     const fallbackUsers = getFallbackUsers();
     let dbUsers: any[] = [];
 
@@ -50,9 +50,11 @@ export async function GET() {
     // 1b. Thử lấy từ Supabase Cloud Database (Đồng bộ đa thiết bị)
     let suUsers: any[] = [];
     try {
-      const { data } = await supabase.from("users").select("*");
+      const { data } = await supabase.from("users").select("*").neq("role", "deleted");
       if (data) {
-        suUsers = data.map((u: any) => ({
+        suUsers = data
+          .filter((u: any) => u.role !== "deleted")
+          .map((u: any) => ({
           id: u.id,
           username: u.username,
           studentCode: u.student_code,
@@ -477,9 +479,16 @@ export async function DELETE(req: Request) {
       }
     } catch {}
 
-    // 1b. Xóa khỏi Supabase Cloud Database (Đồng bộ đa thiết bị)
+    // 1b. Ghi nhận vĩnh viễn vào danh sách xóa (cả local và Supabase Cloud tombstones)
+    const idArr = Array.from(identifiersToDelete);
     try {
-      const idArr = Array.from(identifiersToDelete);
+      await addDeletedIdentifiers(idArr);
+    } catch (delErr) {
+      console.warn("addDeletedIdentifiers warning:", delErr);
+    }
+
+    // 1c. Xóa khỏi Supabase Cloud Database (Đồng bộ đa thiết bị)
+    try {
       for (const val of idArr) {
         await supabase.from("users").delete().or(`id.eq.${val},username.eq.${val.toLowerCase()},student_code.ilike.${val}`);
         await supabase.from("student_progress").delete().or(`id.eq.${val},user_id.eq.${val},username.eq.${val.toLowerCase()}`);

@@ -170,14 +170,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Tải trạng thái đăng nhập từ localStorage và đồng bộ ngay với Cloud khi khởi động
   useEffect(() => {
     try {
-      // 1. Tự động đẩy tất cả tài khoản lưu trên trình duyệt này lên Supabase Cloud (cho phép trình duyệt khác đăng nhập ngay)
+      // 1. Tự động đẩy tất cả tài khoản lưu trên trình duyệt này lên Supabase Cloud (chỉ đồng bộ tài khoản hợp lệ, loại bỏ tài khoản đã xóa)
       const localUsers = getLocalRegisteredUsers();
       const saved = localStorage.getItem("vinamath_auth_user");
-      const usersToSync = [...localUsers];
+      const deletedIdsRaw = localStorage.getItem("vinamath_deleted_user_ids");
+      const deletedSet = new Set<string>(
+        deletedIdsRaw ? JSON.parse(deletedIdsRaw).map((x: string) => String(x).toLowerCase()) : []
+      );
+
+      const usersToSync = localUsers.filter((u) => {
+        const uId = u.id?.toLowerCase();
+        const uUser = u.username?.toLowerCase();
+        const uCode = u.studentCode?.toLowerCase();
+        return !(
+          (uId && deletedSet.has(uId)) ||
+          (uUser && deletedSet.has(uUser)) ||
+          (uCode && deletedSet.has(uCode)) ||
+          u.role === "deleted"
+        );
+      });
+
       if (saved) {
         try {
           const parsedAuth = JSON.parse(saved);
-          if (
+          const pId = parsedAuth.id?.toLowerCase();
+          const pUser = parsedAuth.username?.toLowerCase();
+          const isDeletedAuth = (pId && deletedSet.has(pId)) || (pUser && deletedSet.has(pUser)) || parsedAuth.role === "deleted";
+
+          if (isDeletedAuth) {
+            localStorage.removeItem("vinamath_auth_user");
+          } else if (
             parsedAuth &&
             !usersToSync.some(
               (u) =>
@@ -212,27 +234,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         });
       } catch {}
 
-      // 2. Kéo danh sách tài khoản từ Supabase Cloud về localStorage để luôn có dữ liệu đa nền tảng
+      // 2. Kéo danh sách tài khoản từ Supabase Cloud về và dọn dẹp sạch sẽ tài khoản đã xóa
       fetch("/api/auth/users")
         .then((res) => res.json())
         .then((data) => {
           if (data.success && Array.isArray(data.users)) {
-            const currentLocal = getLocalRegisteredUsers();
-            const mergedMap = new Map<string, any>();
-            currentLocal.forEach((u) => {
-              const k = (u.id || u.username || "").toLowerCase();
-              if (k) mergedMap.set(k, u);
+            const validUsers = data.users.filter((u: any) => {
+              const uId = u.id?.toLowerCase();
+              const uUser = u.username?.toLowerCase();
+              return !(
+                (uId && deletedSet.has(uId)) ||
+                (uUser && deletedSet.has(uUser)) ||
+                u.role === "deleted"
+              );
             });
-            data.users.forEach((su: any) => {
-              const k = (su.id || su.username || "").toLowerCase();
-              if (k) {
-                const existing = mergedMap.get(k);
-                mergedMap.set(k, { ...existing, ...su });
-              }
-            });
+
             localStorage.setItem(
               "vinamath_local_registered_users",
-              JSON.stringify(Array.from(mergedMap.values()))
+              JSON.stringify(validUsers)
             );
           }
         })

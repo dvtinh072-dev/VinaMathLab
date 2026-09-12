@@ -6419,5 +6419,2537 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       "explanation": "Bất phương trình: $3n - 2 < 100 \\Leftrightarrow 3n < 102 \\Leftrightarrow n < 34$.\nVì $n \\in \\mathbb{N}^*$ nên $n \\in \\{1; 2; 3; \\dots; 33\\}$, có đúng 33 số hạng."
     }
   ]
+},
+  // ==========================================
+  // BÀI 6: CẤP SỐ CỘNG (AI PRACTICE)
+  // ==========================================
+  "t11-b6-cap-so-cong": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.6.1",
+      "badge": "Câu 1 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 1",
+      "question": "Ta có $u_{4}=13u_{1}+3d = 131+3d = 133d = 12d = 4.$ Cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=3,$ công sai $d = -2$ thì số hạng thứ $5$ là",
+      "options": [
+        "$u_{5}=1$ .",
+        "$u_{5}=8$ .",
+        "$u_{5}=-7$ .",
+        "$u_{5}=-5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{5}=u_{1}+4d = 3+4.(-2)=-5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.2",
+      "badge": "Câu 2 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 2",
+      "question": "Cho cấp số cộng có $u_{3}=2$ , công sai $d = -2$ . Số hạng thứ hai của cấp số cộng đó là",
+      "options": [
+        "$u_{2}=4$",
+        "$u_{2}=0$",
+        "$u_{2}=-4$",
+        "$u_{2}=3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{3}=u_{2}+d = u_{2}+-2$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.3",
+      "badge": "Câu 3 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 3",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}=1,d = 2$ . Tính $u_{10}$",
+      "options": [
+        "$u_{10}=20$ .",
+        "$u_{10}=10.$",
+        "$u_{10}=19$ .",
+        "$u_{10}=15.$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{10}=u_{1}+9d = 1+2.9=19$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.4",
+      "badge": "Câu 4 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 4",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}=-3$ , $u_{6}=27$ . Tính công sai $d$ .",
+      "options": [
+        "$d = 7$ .",
+        "$d = 5$ .",
+        "$d = 8$ .",
+        "$d = 6$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{6}=u_{1}+5d = 27d = 6$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.5",
+      "badge": "Câu 5 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 5",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng tổng quát là $u_n=3n-2$ . Tìm công sai $d$ của cấp số cộng.",
+      "options": [
+        "$d = 3$ .",
+        "$d = 2$ .",
+        "$d = -2$ .",
+        "$d = -3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{n+1}-u_n=3n+1()$ Suy ra $d = 3$ là công sai của cấp số cộng.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.6",
+      "badge": "Câu 6 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 6",
+      "question": "Cho cấp số cộng $(u_n)$ với $u_{17}=33$ và $u_{33}=65$ thì công sai bằng",
+      "options": [
+        "$1$ .",
+        "$3$ .",
+        "$-2$ .",
+        "$2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $u_{1}$ , $d$ lần lượt là số hạng đầu và công sai của cấp số cộng $(u_n)$ . Khi đó, ta có: $u_{17}=u_{1}+16d$ , $u_{33}=u_{1}+32d$ Suy ra: $u_{33}-u_{17}=65-3316d = 32d = 2$ Vậy công sai bằng: $2$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.7",
+      "badge": "Câu 7 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 7",
+      "question": "Một cấp số cộng gồm $5$ số hạng. Hiệu số hạng đầu và số hạng cuối bằng $20$ . Tìm công sai $d$ của cấp số cộng đã cho",
+      "options": [
+        "$d = -5$ .",
+        "$d = 4$ .",
+        "$d = -4$ .",
+        "$d = 5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi năm số hạng của cấp số cộng đã cho là: $u_{1};u_{2};u$ Theo đề bài ta có: $u_{1}-u_{5}=20u$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.8",
+      "badge": "Câu 8 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 8",
+      "question": "Cho cấp số cộng $u_n$ có các số hạng đầu lần lượt là $5;9;13;17;...$ . Tìm số hạng tổng quát $u_n$ của cấp số cộng?",
+      "options": [
+        "$u_n=4n+1$ .",
+        "$u_n=5n-1$ .",
+        "$u_n=5n+1$ .",
+        "$u_n=4n-1$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_n=u_{1}+n-1()$ ▪ $u_{3}=u_{1}+3-1()$ ▪ $u_n=5+n-1().4=4n+1$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.9",
+      "badge": "Câu 9 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 9",
+      "question": "Xác định số hàng đầu và công sai của cấp số cộng có $u_{9}=5u_{2}$ và $u_{13}=2u_{6}+5$ .",
+      "options": [
+        "và .",
+        "và .",
+        "và .",
+        "và ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: . Theo đầu bài ta có hpt: $u_{1}+8d = 5 u_{1}+d()$ $4u_{1}-3d = 0 u_{1}-2d = -5{$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.10",
+      "badge": "Câu 10 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 10",
+      "question": "Cho $(u_n)$ là một cấp số cộng thỏa mãn $u_{1}+u_{3}=8$ và $u_{4}=10$ . Công sai của cấp số cộng đã cho bằng",
+      "options": [
+        "$3$ .",
+        "$6$ .",
+        "$2$ .",
+        "$4$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{1}+u_{3}=8u_{4}=10{$ . Vậy công sai của cấp số cộng là $d = 3$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.11",
+      "badge": "Câu 11 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 11",
+      "question": "Tìm công thức số hạng tổng quát của cấp số cộng $(u_n)$ thỏa mãn: $u_{2}-u_{3}+u_{5}=7u_{1}+u$",
+      "options": [
+        "$u_n=2n+3$ .",
+        "$u_n=2n-1$ .",
+        "$u_n=2n+1$ .",
+        "$u_n=2n-3$ ."
+      ],
+      "correctIndex": 1,
+      "explanation": "Chọn B Giả sử dãy cấp số cộng $(u_n)$ có công sai là $d$ . Khi đó, $u_{2}-u_{3}+u_{5}=7u_{1}+u$ trở thành: $u_{1}+d()-u$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.12",
+      "badge": "Câu 12 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 12",
+      "question": "Số hạng tổng quát của cấp số cộng $(u_n)$ : $u_n=u_{1}+n-1()$ Vậy $u_n=2n-1$ . Cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=3$ , công sai $d = -2$ thì số hạng thứ 5 là",
+      "options": [
+        "$u_{5}=8$ .",
+        "$u_{5}=1$ .",
+        "$u_{5}=-5$ .",
+        "$u_{5}=-7$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{5}=u_{1}+4d = 3+4.-2()$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.13",
+      "badge": "Câu 13 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 13",
+      "question": "Cho cấp số cộng có $u_{1}=-3$ , $d = 4$ . Chọn khẳng định đúng trong các khẳng định sau?",
+      "options": [
+        "$u_{5}=15$ .",
+        "$u_{4}=8$ .",
+        "$u_{3}=5$ .",
+        "$u_{2}=2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{3}=u_{1}+2d$ $=-3+2.4$ $=5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.14",
+      "badge": "Câu 14 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 14",
+      "question": "Cho cấp số cộng $(u_n)$ có và công sai $d = 4$ . Hãy tính $u_{99}$ .",
+      "options": [
+        "$401$ .",
+        "$403$ .",
+        "$402$ .",
+        "$404$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có : $u_{99}=u_{1}+98d$ $=11+98.4$ $=403$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.15",
+      "badge": "Câu 15 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 15",
+      "question": "Cho cấp số cộng $(u_n)$ , biết: $u_{1}=3$ , $u_{2}=-1$ . Chọn đáp án đúng.",
+      "options": [
+        "$u_{3}=4$ .",
+        "$u_{3}=7$ .",
+        "$u_{3}=2$ .",
+        "$u_{3}=-5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $(u_n)$ là cấp số cộng nên $2u_{2}=u_{1}+u_{3}$ suy ra $u_{3}=2u_{2}-u_{1}=-5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.16",
+      "badge": "Câu 16 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 16",
+      "question": "Một cấp số cộng $(u_n)$ có $u_{13}=8$ và $d = -3$ . Tìm số hạng thứ ba của cấp số cộng $(u_n)$ .",
+      "options": [
+        "$50$ .",
+        "$28$ .",
+        "$38$ .",
+        "$44$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{13}=u_{1}+12d$ $8=u_{1}+12.-3()$ $u_{1}=44$ $u_{3}=u_{1}+2d = 44-6=38$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.17",
+      "badge": "Câu 17 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 17",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=3$ và công sai $d = 2$ . Giá trị của $u_{7}$ bằng:",
+      "options": [
+        "$15$ .",
+        "$17$ .",
+        "$19$ .",
+        "$13$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{7}=u_{1}+6.d = 3+6.2=15$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.18",
+      "badge": "Câu 18 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 18",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=2$ và công sai $d = 4$ . Giá trị $u_{2019}$ bằng",
+      "options": [
+        "$8074$ .",
+        "$4074$ .",
+        "$8078$ .",
+        "$4078$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức của số hạng tổng quát $u_n=u_{1}+n-1()$ $=2+2018.4=8074$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.19",
+      "badge": "Câu 19 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 19",
+      "question": "Tìm số hạng thứ $11$ của cấp số cộng có số hạng đầu bằng $3$ và công sai $d = -2$ .",
+      "options": [
+        "$-21$ .",
+        "$23$ .",
+        "$-19$ .",
+        "$-17$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức số hạng tổng quát của cấp số cộng ta có $u_{11}=u_{1}+10d = 3+10.-2()$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.20",
+      "badge": "Câu 20 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 20",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=-2$ và công sai $d = -7.$ Giá trị $u_{6}$ bằng",
+      "options": [
+        "$37$ .",
+        "$-37$ .",
+        "$-33$ .",
+        "$33$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{6}=u_{1}+5d = -2-35=-37$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.21",
+      "badge": "Câu 21 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 21",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_{1}=2$ và công sai $d = 5$ . Giá trị $u_{4}$ bằng",
+      "options": [
+        "22.",
+        "17.",
+        "12.",
+        "250."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{4}=u_{1}+3d$ $=2+15=17$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.22",
+      "badge": "Câu 22 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 22",
+      "question": "Cho cấp số cộng $(u_n)$ với số hạng đầu tiên $u_{1}=2$ và công sai $d = 2$ . Tìm $u_{2018}$ ?",
+      "options": [
+        "$u_{2018}=22018$ .",
+        "$u_{2018}=22017$ .",
+        "$u_{2018}=4036$ .",
+        "$u_{2018}=4038$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_n=u_{1}+n-1()$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.23",
+      "badge": "Câu 23 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 23",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}=3$ và công sai $d = 7$ . Hỏi kể từ số hạng thứ mấy trở đi thì các số hạng của đều lớn hơn $2018$ ?",
+      "options": [
+        "$287$ .",
+        "$289$ .",
+        "$288$ .",
+        "$286$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_n=u_{1}+n-1()$ $=3+7 n-1()$ $=7n-4$ ; . Vậy . Viết ba số xen giữa $2$ và $22$ để ta được một cấp số cộng có $5$ số hạng?",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.24",
+      "badge": "Câu 24 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 24",
+      "question": "Ta có: $u_n=u_{1}+n-1()$ $=3+7 n-1()$ $=7n-4$ ; . Vậy . Viết ba số xen giữa $2$ và $22$ để ta được một cấp số cộng có $5$ số hạng?",
+      "options": [
+        "$6$ , $12$ , $18$ .",
+        "$8$ , $13$ , $18$ .",
+        "$7$ , $12$ , $17$ .",
+        "$6$ , $10$ , $14$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Xem cấp số cộng cần tìm là $(u_n)$ có: $u_{1}=2 u_{5}=22{$ . Suy ra: $u_{1}=2 d = 5{$ . Vậy cấp số cộng cần tìm là $(u_n)$ : $2$ , $7$ , $12$ , $17$ , $22$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.25",
+      "badge": "Câu 25 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 25",
+      "question": "Cho cấp số cộng có $u_{1}=-2$ và $d = 4$ . Chọn khẳng định đúng trong các khẳng định sau ?",
+      "options": [
+        "$u_{4}=8$ .",
+        "$u_{5}=15$ .",
+        "$u_{2}=3$ .",
+        "$u_{3}=6$ ."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ta có: $u_{1}=-2$ và $d = 4$ suy ra $u_{2}=u_{1}+d = -2+4=2$ $u_{3}=u_{1}+2d = -2+2.4=6$ ; $u_{4}=u_{1}+3d = -2+3.4=10$ ; $u_{5}=u_{1}+4d = -2+4.4=14$ Nên đáp án D đúng.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.26",
+      "badge": "Câu 26 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 26",
+      "question": "Cho cấp số cộng $(u_n)$ với $u_{1}=2$ ; $d = 9$ . Khi đó số $2018$ là số hạng thứ mấy trong dãy?",
+      "options": [
+        "$226$ .",
+        "$225$ .",
+        "$223$ .",
+        "$224$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_n=u_{1}+n-1()$ $2018=2+ n-1().9$ $n=225$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.27",
+      "badge": "Câu 27 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 27",
+      "question": "Cho cấp số cộng $1,4,7,...$ . Số hạng thứ 100 của cấp số cộng là",
+      "options": [
+        "$297$ .",
+        "$301$ .",
+        "$295$ .",
+        "$298$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cấp số cộng $1,4,7,...$ . có số hạng đầu $u_{1}=1$ và công sai $d = 3$ . Số hạng thứ 100 của cấp số cộng là: $u_{100}=u_{1}+99.d = 1+99.3=298$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.28",
+      "badge": "Câu 28 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 28",
+      "question": "Cho cấp số cộng $(u_n)$ biết $u_{1}=3$ , $u_{8}=24$ thì $u_{11}$ bằng",
+      "options": [
+        "$30$ .",
+        "$33$ .",
+        "$32$ .",
+        "$28$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{8}=u_{1}+7dd = u_{8}-u_{1}$ . $u_{11}=u_{1}+10d = 33$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.29",
+      "badge": "Câu 29 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 29",
+      "question": "Cho cấp số cộng có số hạng thứ 3 và số hạng thứ 7 lần lượt là 6 và 2. Tìm số hạng thứ 5.",
+      "options": [
+        "$u_{5}=2.$",
+        "$u_{5}=-2.$",
+        "$u_{5}=0.$",
+        "$u_{5}=4.$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo giả thiết ta có $u_{3}=6 u_{7}=-2{$ Vậy $u_{5}=2$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.30",
+      "badge": "Câu 30 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 30",
+      "question": "Cho cấp số cộng $(u_n)$ , biết $u_{2}=3$ và $u_{4}=7$ . Giá trị của $u_{15}$ bằng",
+      "options": [
+        "$27$ .",
+        "$31$ .",
+        "$35$ .",
+        "$29$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ giả thiết $u_{2}=3$ và $u_{4}=7$ suy ra ta có hệ phương trình: $u_{1}+d = 3 u_{1}+3d = 7{$ $u_{1}=1 d = 2{$ . Vậy $u_{15}=u_{1}+14d = 29$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.31",
+      "badge": "Câu 31 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 31",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}=123$ và $u_{3}-u_{15}=84$ . Số 11 là số hạng thứ bao nhiêu của cấp số cộng đã cho?",
+      "options": [
+        "17.",
+        "16.",
+        "18.",
+        "19."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{3}-u_{15}=84u_{1}+2d-u$ . Số hạng tổng quát: $u_n=-7n+130$ . Ta có: $u_n=11n=17$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.32",
+      "badge": "Câu 32 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 32",
+      "question": "Cho cấp số cộng $(u_n)$ biết $u_{1}=-1;$ $d = 2;$ $u_n=43$ . Hỏi cấp số cộng đó có bao nhiêu số hạng?",
+      "options": [
+        "20.",
+        "23.",
+        "22.",
+        "21."
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_n=u_{1}+(n-1)d$ $43=-1+(n-1).2$ $n=23$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.33",
+      "badge": "Câu 33 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 33",
+      "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu là $u_{2}=1$ , $u_{5}=19$ . Số $103$ là số hạng thứ mấy trong cấp số cộng đã cho?",
+      "options": [
+        ".",
+        ".",
+        ".",
+        "."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{2}=1 u_{5}=19{$ . Lại có $u_n=u_{1}+n-1()$ . Vậy số $103$ là số hạng thứ 19 trong cấp số cộng đã cho.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.34",
+      "badge": "Câu 34 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 34",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}=5$ và công sai $d = -3$ . Biết rằng $-289$ là một số hạng của cấp số cộng trên. Hỏi đó là số hạng thứ bao nhiêu?",
+      "options": [
+        "$98$ .",
+        "$99$ .",
+        "$101$ .",
+        "$100$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Số hạng tổng quát của cấp số cộng có $u_{1}=5$ và công sai $d = -3$ là $u_n=5-3n-1()$ , $n\\in \\mathbb{N}$ . Ta có $-289=5-3 n-1()$ $-294=-3 n-1()$ $98=n-1$ $n=99$ . Vậy $-289$ là số hạng thứ $99$ của cấp số cộng trên.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.35",
+      "badge": "Câu 35 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 35",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{2}=2001$ và $u_{5}=1995$ . Khi đó $u_{1001}$ bằng",
+      "options": [
+        "$4005$ .",
+        "$1$ .",
+        "$3$ .",
+        "$4003$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $u_{1}$ và $d$ lần lượt là số hạng đầu tiên và công sai của cấp số công. Ta có: $u_{2}=2001 u_{5}=1995{$ . Vậy $u_{1001}=u_{1}+1000d = 3$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.36",
+      "badge": "Câu 36 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 36",
+      "question": "Một cấp số cộng có số hạng đầu ${{u}_{1}}=2018$ công sai $d = -5$ . Hỏi bắt đầu từ số hạng nào của cấp số cộng đó thì nó nhận giá trị âm.",
+      "options": [
+        "${{u}_{406}}$ .",
+        "${{{u}_{403}}}$ .",
+        "${{u}_{405}}$ .",
+        "${{u}_{404}}$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có ${{u}_{n}}={{u}_{1}}+\\left( n-1 \\right)d = 2018-5\\left( n-1 \\right)$ Có ${{u}_{n}}2023\\Leftrightarrow n>\\frac{2023}{5}$ , $n\\in \\mathbb{Z}\\Rightarrow n\\ge 405$ . Vậy từ ${{u}_{405}}$ thì số hạng của cấp số cộng đó nhận giá trị âm.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.37",
+      "badge": "Câu 37 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 37",
+      "question": "Cho cấp số cộng $(u_n)$ có $u_{1}-2u_{5}+u_{6}=-15u_{3}+u_{7}=46$ . Số hạng đầu $u_{1}$ là",
+      "options": [
+        "$u_{1}=-5$ .",
+        "$u_{1}=5$ .",
+        "$u_{1}=3$ .",
+        "$u_{1}=-3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $d$ là công sai của CSC. Ta có $u_n=u_{1}+n-1()$ . $u_{1}-2u_{5}+u_{6}=-15u_{3}+u_{7}=46$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.38",
+      "badge": "Câu 38 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 38",
+      "question": "Cho dãy số xác định bởi Tính ?",
+      "options": [
+        ".",
+        ".",
+        ".",
+        "."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cách 1: Dùng casio 570VN B1 : Nhập vào máy tính “2”=>SHIFT=>STO=>A B2: Nhập B3: Ấn CALC rồi bấm liên tiếp dấu “=” cho kết quả . Cách 2: Từ . Ta có nên dãy là một cấp số cộng với công sai nên .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.39",
+      "badge": "Câu 39 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 39",
+      "question": "Cho cấp số cộng $(u_n)$ thỏa mãn $u_{5}+3u_{3}-u_{2}=-213u_{7}-2u_{4}=-34$ . Tính số hạng thứ $100$ của cấp số.",
+      "options": [
+        "$u_{100}=-243$ .",
+        "$u_{100}=-295$ .",
+        "$u_{100}=-231$ .",
+        "$u_{100}=-294$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "$u_{5}+3u_{3}-u_{2}=-213u_{7}-2u_{4}=-34$ $u_{1}+4d+3 u_{1}+2d()-u$ $u_{1}+3d = -7 u_{1}+12d = -34{$ $u_{1}=2 d = -3{$ . Số hạng thứ $100$ là $u_{100}=2+99-3()=-295$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.6.40",
+      "badge": "Câu 40 - Luyện tập Cấp số cộng - DẠNG 2. TÌM CÁC YẾU TỐ CỦA CẤP SỐ CỘNG",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 40",
+      "question": "Cho cấp số cộng $u_n$ có công sai $d = 2$ và biểu thức $u_{22}+u_{32}+u$ đạt giá trị nhỏ nhất. Số 2018 là số hạng thứ bao nhiêu của cấp số cộng $u_n$ ?",
+      "options": [
+        "$1011$ .",
+        "$1014$ .",
+        "$1013$ .",
+        "$1012$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{2}=u_{1}+2u_{3}=u_{1}+4u_{4}=u$ Vậy $u_{22}+u_{32}+u$ đạt giá trị nhỏ nhất khi $u_{1}=-4$ . Từ đó suy ra $2018=u_{1}+n-1()d2018=-4+$",
+      "isAiGenerated": true
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-11.6.1",
+      "badge": "Đúng/Sai 1 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 1",
+      "prompt": "Cho dãy cấp số cộng $(u_n)$ có $u_{1}=4.$ Biết tổng $20$ số hạng đầu tiên bằng $460.$ Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Dãy số $(u_n)$ có $d = 2.$ X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ có $u_{4}=8.$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ có $S_{10}=120.$ X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ có hiệu $S_{8}-S_{4}=60.$ X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.2",
+      "badge": "Đúng/Sai 2 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 2",
+      "prompt": "Cho cấp số cộng có , . Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng thứ 17 của cấp số cộng là X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Công sai của cấp số cộng là X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng thứ 2 của cấp số cộng là X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng 17 số hạng đầu tiên của cấp số cộng là X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.3",
+      "badge": "Đúng/Sai 3 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 3",
+      "prompt": "Cho cấp số cộng có , công sai . Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số là số hạng thứ 36 của cấp số cộng. X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng thứ 3 của cấp số cộng bằng . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Tổng 10 số hạng đầu tiên của cấp số cộng bằng . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Kể từ số hạng thứ 3 thì các số hạng của cấp số cộng đều_nhận giá trị dương. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.4",
+      "badge": "Đúng/Sai 4 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 4",
+      "prompt": "Cho cấp số cộng $(u_n)$ có $u_{4}=-12,u_{14}=18$ . Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Công sai của cấp số cộng là $d = 3$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng đầu của cấp số cộng là $u_{1}=21$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng thứ $9$ của cấp số cộng là $u_{9}=3$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng $5$ số hạng đầu của cấp số cộng là $S_{5}=-60$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.5",
+      "badge": "Đúng/Sai 5 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 5",
+      "prompt": "Gọi $u_{1}$ là số hạng đầu, $d$ là công sai của cấp số cộng $(u_n)$ . Ta có: $u_{4}=u_{1}+3du_{14}=u_{1}+13d$ $u_{1}+3d = -12 u_{1}+13d = 18{$ $d = 3u_{1}=-21{$ . Số hạng thứ $9$ là $u_{9}=u_{1}+8d$ $=-21+8.3$ $=3$ . Tổng $5$ số hạng đầu là $S_{5}=5u_{1}+55-1()$ . Vậy mệnh đề a) c) đúng. Mệnh đề b) d) sai. Người ta trồng 3240 cây theo một hình tam giác như sau: hàng thứ nhất trồng 1 cây, hàng thứ hai trồng 2 cây, hàng thứ ba trồng 3 cây, …Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số cây mỗi hàng lập thành một cấp số cộng $\\left(u_{n}\\right)$ có số hạng đầu là . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số cây mỗi hàng lập thành một cấp số cộng $\\left(u_{n}\\right)$ có công sai là . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Có tất cả $80$ hàng cây. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Hàng thứ $20$ trồng được $40$ cây. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.6",
+      "badge": "Đúng/Sai 6 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 6",
+      "prompt": "Số cây mỗi hàng (bắt đầu từ hàng thứ nhất) lập thành một cấp số cộng $\\left(u_{n}\\right)$ có $u_{1}=1, d = 1$ . Giả sử có $n$ hàng cây thì . Ta có . Số cây hàng thứ $20$ trồng được là $u_{20}=u_{1}+19d = 20$ . Vậy mệnh đề a) c) đúng. Mệnh đề b) d) sai. Giá của một chiếc xe ô tô lúc mới mua là 680 triệu đồng. Cứ sau mỗi năm sử dụng, giá của chiếc xe ô tô giảm 50 triệu đồng. Gọi $u_n$ (triệu đồng) là giá của chiếc ô tô trong năm thứ $n$ sử dụng. Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$u_{2}=630$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là cấp số cộng với công sai $d = 50$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Giá của chiếc ô tô sau_{3} năm sử dụng lớn hơn 500 triệu đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Sau ít nhất 8 năm sử dụng thì giá của chiếc ô tô nhỏ hơn một nửa giá trị ban đầu của nó. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.7",
+      "badge": "Đúng/Sai 7 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 7",
+      "prompt": "Cho cấp số cộng có tổng số hạng đầu là $S_n=-4n2+17n$ , $n\\in \\mathbb{N}*$ . Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu của cấp số cộng là: $u_{1}=13$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Công sai của cấp số cộng là: $d = 5$ . X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng tổng quát của cấp số cộng là: $u_n=-8n+15$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng $S=u_{10}+u_{12}+u_{14}+...+u_{98}+u$ có giá trị là $S=-19274$ . X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.8",
+      "badge": "Đúng/Sai 8 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 8",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ có số hạng đầu ${u_1=\\frac{3}{2}}$ , công sai ${d = \\frac{1}{2}}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Công thức cho số hạng tổng quát",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "5 là số hạng thứ 8 của cấp số cộng đã cho",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "${\\frac{15}{4}}$ một số hạng của cấp số cộng đã cho",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng 100 số hạng đầu của cấp số cộng ${\\left(u_n\\right)}$ bằng $2620$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.9",
+      "badge": "Đúng/Sai 9 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 9",
+      "prompt": "Cho các dãy số có số hạng tổng quát ${a_n=4 n-3}$ ; ${b_n=\\frac{2-3 n}{4}}$ ; ${c_n=n^2}$ . Khi đó",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "${\\left(a_n\\right)}$ là một cấp số cộng với số hạng đầu",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "${\\left(a_n\\right)}$ là một cấp số cộng với công sai ${d = 4}$ .",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "${\\left(b_n\\right)}$ là một cấp số cộng với số hạng đầu và công sai",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "${\\left(c_n\\right)}$ là một cấp số cộng với công sai",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.10",
+      "badge": "Đúng/Sai 10 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 10",
+      "prompt": "d) Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "b) Ta có: ${a_{n+1}-a_n=4(n+1)-3-(4 n-3)=4, \\forall n \\geq 1}$ . Do đó ${\\left(a_n\\right)}$ là một cấp số cộng với số hạng đầu ${a_1=4 \\cdot 1-3=1}$ và công sai ${d = 4}$ .",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Ta có: ${b_{n+1}-b_n=\\frac{2-3(n+1)}{4}-\\frac{2-3 n}{4}=\\frac{2-3 n-3-2+3 n}{4}=-\\frac{3}{4}, \\forall n \\geq 1}$ . Suy ra: ${\\left(b_n\\right)}$ là một cấp số cộng với số hạng đầu ${b_1=\\frac{2-3.1}{4}=-\\frac{1}{4}}$ và công sai ${d = -\\frac{3}{4}}$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Ta có: ${c_{n+1}-c_n=(n+1)^2-n^2=2 n+1}$ (phụ thuộc vào giá trị của ${n}$ ). Suy ra ${\\left(c_n\\right)}$ không phải là một cấp số cộng. Cho cấp số cộng ${-2 ; x ; 6 ; y}$ . Khi đó",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "a",
+          "text": "$x=2$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "$y=8$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.11",
+      "badge": "Đúng/Sai 11 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 11",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ , biết rằng: ${u_1=-3, u_6=27}$ , khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Công sai của cấp số cộng bằng $7$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng $u_{10}=52$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng của 85 số hạng đầu",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.12",
+      "badge": "Đúng/Sai 12 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 12",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ , biết rằng: ${u_1=5}$ và tổng của 50 số hạng đầu bằng 5150, khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Công sai của cấp số cộng bằng $6$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng $u_{10}=42$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng của 85 số hạng đầu",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.13",
+      "badge": "Đúng/Sai 13 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 13",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ , gọi ${S_n}$ là tổng ${n}$ số hạng đầu tiên của nó. Biết ${S_7=77}$ và ${S_{12}=192}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_{1}=5$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Tổng $u_{1}+u_{3}=14$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Công sai của cấp số cộng bằng $3$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng $u_{11}=25$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.14",
+      "badge": "Đúng/Sai 14 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 14",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ có công sai ${d thoả mãn ${\\left\\{\\begin{array}{l}u_1+u_7=26 \\\\ u_2^2+u_6^2=466\\end{array}\\right.}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Công sai $d = -3$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng $u_{10}=-11$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng $u_{2024}=-8067$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.15",
+      "badge": "Đúng/Sai 15 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 15",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ có ${u_1=5}$ và ${d = -7}$ . Khi đó",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "$u_{5}+u_{7}=-50$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số -849 là số hạng thứ 123 của cấp số cộng",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số $-114$ là số hạng thứ 18 của cấp số cộng",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.6.16",
+      "badge": "Đúng/Sai 16 - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 16",
+      "prompt": "Cho cấp số cộng ${\\left(u_n\\right)}$ thoả mãn ${\\left\\{\\begin{array}{l}u_1-u_3+u_5=15 \\\\ u_1+u_6=27\\end{array}\\right.}$ . Khi đó",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_{1}=21$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Công sai của cấp số cộng bằng $-2$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng $u_{11}=-9$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số $-6048$ là số hạng thứ $2024$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-11.6.1",
+      "badge": "Câu 1 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 1",
+      "prompt": "Một chiếc đồng hồ đánh chuông, số tiếng chuông được đánh bằng số giờ mà đồng hồ chỉ tại thời điểm đánh chuông. Hỏi một ngày đồng hồ đó đánh bao nhiêu tiếng chuông báo giờ",
+      "correctAnswer": "156",
+      "acceptableAnswers": [
+        "156"
+      ],
+      "explanation": "Gọi $u_n$ là số tiếng chuông ở giờ thứ $n$ , trong đó $1\\le n\\le 12.$ Sau_{12} giờ đồng hồ đánh được: $S_{12}=U1+...+U12=1+2+...+12=6.(1+12)=78$ tiếng."
+    },
+    {
+      "id": "ai-sa-11.6.2",
+      "badge": "Câu 2 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 2",
+      "prompt": "Một ngày đồng hồ đánh được 78.2 = 156 tiếng. Trên một bàn cờ có nhiều ô vuông, người ta đặt 7 hạt dẻ vào ô đầu tiên, sau đó đặt tiếp vào ô thứ hai số hạt nhiều hơn ô thứ nhất là 5, tiếp tục đặt vào ô thứ ba số hạt nhiều hơn ô thứ hai là 5,… và cứ thế tiếp tục đến ô thứ $n$ . Biết rằng đặt hết số ô trên bàn cờ người ta phải sử dụng 25450 hạt. Hỏi bàn cờ đó có bao nhiêu ô vuông?",
+      "correctAnswer": "100",
+      "acceptableAnswers": [
+        "100"
+      ],
+      "explanation": "Đáp án chính xác là 100."
+    },
+    {
+      "id": "ai-sa-11.6.3",
+      "badge": "Câu 3 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 3",
+      "prompt": "Số hạt dẻ trên mỗi ô theo thứ tự đó lập thành cấp số cộng $(u_n)$ có $7,d = 5.$ Gọi $n$ là số ô trên bàn cờ thì $u$ Ta có $5450=S_nu-1$ $5n +9n-50900=0n=100$ . Hùng đang tiết kiệm để mua một cây guitar. Trong tuần đầu tiên, anh ta để dành đô la, và trong mỗi tuần tiếp theo, anh ta đã thêm đô la vào tài khoản tiết kiệm của mình. Cây guitar Hùng cần mua có giá đô la. Hỏi vào tuần thứ bao nhiêu thì anh ấy có đủ tiền để mua cây guitar đó?",
+      "correctAnswer": "46",
+      "acceptableAnswers": [
+        "46"
+      ],
+      "explanation": "Đáp án chính xác là 46."
+    },
+    {
+      "id": "ai-sa-11.6.4",
+      "badge": "Câu 4 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 4",
+      "prompt": "Xét 1 cấp số cộng có $u_{1}=42,d = 8$ sau $n$ tuần anh ta phải có số tiền là $u_n=42+(n-1).8\\ge 400$ $n-1\\ge 400-42 8n\\ge400-428+1=45.75$ Vậy kể cả tuần đầu thì tuần thứ anh ta có đủ tiền để mua cây guitar đó. Một rạp hát có 30 dãy ghế, dãy đầu tiên có 25 ghế. Mỗi dãy sau có hơn dãy trước 3 ghế. Hỏi rạp hát có tất cả bao nhiêu ghế?",
+      "correctAnswer": "2055",
+      "acceptableAnswers": [
+        "2055"
+      ],
+      "explanation": "Đáp án chính xác là 2055."
+    },
+    {
+      "id": "ai-sa-11.6.5",
+      "badge": "Câu 5 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 5",
+      "prompt": "Số ghế của mỗi dãy theo thứ tự đó lập thành một cấp số cộng có 30 số hạng có công sai $d = 3$ và $u_{1}=25.$ Tổng số ghế là Chu vi của một đa giác là $158cm,$ số đo các cạnh của nó lập thành một cấp số cộng với công sai $d = 3cm.$ Biết cạnh lớn nhất là $44cm.$ Khi đó số cạnh của đa giác đó là",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Gọi cạnh nhỏ nhất là $u_{1}$ và số cạnh của đa giác là $n$ với $n\\in \\mathbb{N} *$ Ta có $44=u_{1}+n-1().3u$ Vì chu vi của tứ giác là $158$ nên ta có $158= n 44+47-3n()2$ $n=793n=4[$ . Vì $n\\in \\mathbb{N} *$ nên $n=4.$"
+    },
+    {
+      "id": "ai-sa-11.6.6",
+      "badge": "Câu 6 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 6",
+      "prompt": "Trong dịp nghỉ lễ 02/9 gia đình anh An cần thuê một xe Taxi để di chuyển từ thủ đô Hà Nội về thăm quê tại TP Bắc Giang. Biết giá của kilômét đầu tiên là 10.000 đồng, kể từ kilômét thứ 2 giá của mỗi kilômét tăng thêm 500 đồng so với giá của kilômét trước đó. Biết quãng đường Taxi di chuyển từ thủ đô Hà Nội về TP Bắc Giang là 80 km. Hỏi gia đình anh An phải trả bao nhiêu tiền cho chuyến Taxi đó? (đơn vị nghìn đồng)",
+      "correctAnswer": "2380",
+      "acceptableAnswers": [
+        "2380"
+      ],
+      "explanation": "Đáp án chính xác là 2380."
+    },
+    {
+      "id": "ai-sa-11.6.7",
+      "badge": "Câu 7 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 7",
+      "prompt": "Số tiền ở từng Kilomet lập thành một cấp số cộng Số hạng đầu tiên là $u_{1}=10.000$ , công sai $d = 500$ . Cấp số cộng có 80 số hạng Tổng số tiền là $S_{80}=80.10000+79.80.5002=2.380.000$ đồng Giá của một chiếc xe ô tô lúc mới mua là $680$ triệu đồng. Cứ sau mỗi năm sử dụng, giá của chiếc xe ô tô giảm $55$ triệu đồng. Tính giá còn lại của chiếc xe sau $5$ năm sử dụng.",
+      "correctAnswer": "2078",
+      "acceptableAnswers": [
+        "2078"
+      ],
+      "explanation": "Giá của chiếc xe ô tô sau một năm sử dụng là $680-55=625$ . Giá của chiếc xe ô tô sau mỗi năm sử dụng lập thành một cấp số cộng với số hạng đầu là $u_{1}=625$ và công sai $d = -55$ . Do đó, giá của chiếc ô tô sau_{5} năm sử dụng là $u_{5}=u_{1}+4d = 405$ . Vào năm $2020$ , dân số của một thành phố là khoảng $1,2$ triệu_người. Giả sử mỗi năm, dân số của thành phố này tăng thêm khoảng $30$ nghìn người. Hãy ước tính dân số của thành phố này vào năm $2030$ . (đơn vị triệu_người) Ta có: $1,2$ triệu_người $=1200$ nghìn người. Dân số mỗi năm của thành phố từ năm 2020 đến năm 2030 lập thành một cấp số cộng, gồm 11 số hạng $(2030-2020+1=11)$ , với số hạng đầu $u_{1}=1200$ và công sai $d = 30$ . Ta có: $u_{11}=u_{1}+10d = 1500.$ Vậy dân số của thành phố này vào năm $2030$ khoảng $1500$ nghìn người hay $1,5$ triệu_người. Vào năm 2023, nhiệt độ tru_ng bình của thành phố A là khoảng . Giả sử do biến đổi khí hậu_nên mỗi năm nhiệt độ tru_ng bình của thành phố A đều tăng thêm khoảng . Hãy ước tính kể từ năm nào thì nhiệt độ tru_ng bình của thành phố A đạt từ trở lên. Theo bài toán, nhiệt độ tru_ng bình ở mỗi năm của thành phố A lập thành cấp số cộng với công sai là và là nhiệt độ tru_ng bình của thành phố A vào năm 2023. Giả sử số hạng thứ $n$ của cấp số cộng có giá trị lớn hơn hoặc bằng $35$ . Tức là, $u_n\\ge 35$ hay $u_{1}+(n-1).d\\ge 35$ $29,5+(n-1).0,1\\ge 35$ $n\\ge 56$ . Do đó, kể từ số hạng thứ 56 trở đi thì chúng đều có giá trị lớn hơn hoặc bằng 35. Ta có: là nhiệt độ tru_ng bình của thành phố A vào năm 2023. Nên $u_{55}$ là nhiệt độ tru_ng bình của thành phố A vào năm . Vậy kể từ năm 2078 thì nhiệt độ tru_ng bình của thành phố A đạt từ trở lên."
+    },
+    {
+      "id": "ai-sa-11.6.8",
+      "badge": "Câu 8 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 8",
+      "prompt": "Một rạp hát có 18 hàng ghế xếp theo hình quạt. Hàng thứ nhất có 16 ghế, hàng thứ hai có 20 ghế, hàng thứ ba có 24 ghế,… cứ thế cho đến hàng cuối cùng. Hỏi tổng số ghế có trong rạp là bao nhiêu ?",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "Gọi số ghế ở hàng thứ $n$ là $u_n$ . Ta có: $u_{1}=16$ , $u_{2}=20$ , $u_{3}=24$ , …. Nhận xét dãy số $(u_n)$ là cấp số cộng có $u_{1}=16$ , công sai $d = u_{2}-u_{1}=20-16=4$ . Khi đó $S_{18}=n2u_{1}+n-1$ . Vậy tổng số ghế trong rạp hát là 900 ghế Công ty A tuyển một kĩ sư xây dựng với mức lương năm đầu là 180 triệu đồng/năm và cam kết sau mỗi năm, tiền lương sẽ tăng thêm 8 triệu đồng/năm so với năm liền trước đó. Hỏi sau bao nhiêu_năm thì tổng tiền lương của người kĩ sư đó bằng 2160 triệu đồng."
+    },
+    {
+      "id": "ai-sa-11.6.9",
+      "badge": "Câu 9 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 9",
+      "prompt": "Số tiền lương của kĩ sư lập thành một cấp số cộng với $u_{1}=180$ và $d = 8$ . Theo đề bài ta có $S_n=2160$ , với $n\\in \\mathbb{N} *$ . Mặt khác, $S_n=nu_{1}+nn-1()$ . Như vậy $S_n=21604n2+176n=2160n2+44n-540=0n=10n=-54(l).[$ Vậy sau_{10} năm tổng tiền lương của kĩ sư bằng 2160 triệu đồng. Nam chơi trò chơi xếp các que diêm thành tháp theo qui tắc thể hiện như hình vẽ. Tính số que diêm để bạn Nam xếp được tháp có $10$ tầng.",
+      "correctAnswer": "210",
+      "acceptableAnswers": [
+        "210"
+      ],
+      "explanation": "Tổng số que diêm ở $1$ tầng là $u_{1}=3$ . Tổng số que diêm ở $2$ tầng là $u_{1}+u_{2}=3+7$ . Tổng số que diêm ở $3$ tầng là $u_{1}+u_{2}+u_{3}=3+7+11$ . … Ta có cấp số cộng $u_{1}=3$ , $d = 4$ , tính $S_{10}$ ?"
+    },
+    {
+      "id": "ai-sa-11.6.10",
+      "badge": "Câu 10 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 10",
+      "prompt": "Để cần có $10$ tầng cần tổng $S_{10}=n22u$ que. Mặt cắt của một tổ ong có hình lưới tạo bởi các ô hình lục giác đều. Từ một ô đầu tiên, bước thứ nhất, các ong thợ tạo ra vòng $1$ gồm $6$ ô lục giác; bước thứ hai, các ong thợ sẽ tạo ra vòng $2$ có $12$ ô bao quanh vòng $1$ ; bước thứ ba, các ong thợ sẽ tạo ra $18$ ô bao quanh vòng $2$ ; cứ thế tiếp tục như hình vẽ bên dưới. Tính số ô trên vòng thứ 8 mà ong thợ tạo ra?",
+      "correctAnswer": "48",
+      "acceptableAnswers": [
+        "48"
+      ],
+      "explanation": "Đáp án chính xác là 48."
+    },
+    {
+      "id": "ai-sa-11.6.11",
+      "badge": "Câu 11 - Trả lời ngắn - Luyện tập Cấp số cộng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 11",
+      "prompt": "Số ô lục giác ở từng vòng tạo thành cấp số cộng có công sai $d = 6$ . Với cấp số cộng có $u_{1}=6$ ; $u_{2}=12$ ; $u_{3}=18$ . Vậy số ô trên vòng thứ 8 mà ong thợ tạo ra là $u_{8}=u_{1}+n-1()$ . Một công ty thực hiện việc trả lương cho các công nhân theo phương thức sau: Mức lương của quý làm việc đầu tiên cho công ty là $13,5$ triệu đồng/ quý, và kể từ quý làm việc thứ hai, mức lương sẽ được tăng thêm $500.000$ đồng mỗi quý. Tính tổng số tiền lương một công nhân nhận được sau ba năm làm việc cho công ty. (đơn vị triệu đồng)",
+      "correctAnswer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "explanation": "Ta thấy tổng số tiền lương trong ba năm là tổng $12$ số hạng đầu tiên của cấp số cộng $(u_n)$ với $u_{1}=13,5;d = 0,5$ nên tổng số tiền lương một công nhân nhận được sau ba năm làm việc cho công ty là $S_{12}=122.13,5+12-1()$ Triệu đồng. Litva sẽ tham gia vào cộng đồng chu_ng châu Âu sử dụng đồng Euro là đồng tiền chu_ng vào ngày $01$ tháng $01$ năm $2015.$ Để kỷ niệm thời khắc lịch sử này, chính quyền đất nước này quyết định dùng đồng tiền xu Litas Lithuania cũ của đất nước để xếp một mô hình kim tự tháp. Biết rằng tầng dưới cùng có đồng và cứ lên thêm một tầng thì số đồng xu giảm đi $100$ đồng. Hỏi mô hình Kim tự tháp này có tất cả bao nhiêu tầng? Gọi $u_n(n\\in \\mathbb{N}*)$ số đồng xu tầng thứ $n$ . Theo đề Câu ta có $(u_n)$ là cấp số cộng có $u_{1}=4901$ , công sai $d = -100$ và $S_n=122550$ . Ta có $S_n=nu_{1}+nn-1()$ $122550=4901n-50n 2+50n$ $-50n 2+4951n-122550=0n=50n=245150l()$ . Vậy mô hình kim tự tháp có tổng cộng $50$ tầng."
+    }
+  ]
+},
+  // ==========================================
+  // BÀI 7: CẤP SỐ NHÂN (AI PRACTICE)
+  // ==========================================
+  "t11-b7-cap-so-nhan": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.7.1",
+      "badge": "Câu 1 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 1",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=3$ và $u_{2}=12$ . Công bội của cấp số nhân đã cho bằng",
+      "options": [
+        ".",
+        ".",
+        ".",
+        "."
+      ],
+      "correctIndex": 0,
+      "explanation": "Công bội của cấp số nhân đã cho là $q = u_{2}u_{1}=$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.2",
+      "badge": "Câu 2 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 2",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=3$ và $u_{2}=15.$ Công bội của cấp số nhân đã cho bằng",
+      "options": [
+        "$-12$ .",
+        "$1 5$ .",
+        "$5$ .",
+        "$12$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ định nghĩa cấp số nhân ta có $q = u_{2}u_{1}=5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.3",
+      "badge": "Câu 3 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 3",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=2$ và $u_{2}=6$ . Công bội của cấp số nhân đã cho bằng",
+      "options": [
+        "$3$ .",
+        "$-4$ .",
+        "$4$ .",
+        "$1 3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Công bội của cấp số nhân là $q = u_{2}u_{1}=$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.4",
+      "badge": "Câu 4 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 4",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=3$ và công bội $q = 2$ . Giá trị của $u_{2}$ bằng",
+      "options": [
+        "$8$ .",
+        "$9$ .",
+        "$6$ .",
+        "$3 2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{2}=u_{1}.q = 3.2=6$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.5",
+      "badge": "Câu 5 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 5",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=2$ và công bội $q = 3$ . Giá trị của $u_{2}$ bằng",
+      "options": [
+        "$6$ .",
+        "$9$ .",
+        "$8$ .",
+        "$2 3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{2}=u_{1}.q = 2.3=6$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.6",
+      "badge": "Câu 6 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 6",
+      "question": "Cho cấp số nhân $x)=2x3.f(x-1).[2f(x-1)+x.x-1)]$ với $u_{1}=3$ và công bội $q = 4$ . Giá trị của $u_{2}$ bằng",
+      "options": [
+        "$64$ .",
+        "$81$ .",
+        "$12$ .",
+        "$3 4$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{2}=u_{1}.q = 3.4=12$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.7",
+      "badge": "Câu 7 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 7",
+      "question": "Tìm công bội của một cấp số nhân ${\\left( u _ { n } \\right)}$ có ${u _ { 1 } = \\frac { 1 } { 2 }}$ và ${u _ { 6 } = 16}$ .",
+      "options": [
+        "${q = \\frac { 1 } { 2 }}$ .",
+        "${q = - 2}$ .",
+        "${q = 2}$ .",
+        "${q = - \\frac { 1 } { 2 }}$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có ${u _ { 6 } = u _ { 1 } \\cdot q ^ { 5 } \\Rightarrow q ^ { 5 } = \\frac { u _ { 6 } } { u _ { 1 } } = \\frac { 16 } { \\frac { 1 } { 2 } } = 32}$ ${\\Rightarrow q = 2}$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.8",
+      "badge": "Câu 8 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 8",
+      "question": "Cho cấp số nhân $(u_n)$ , biết $u_{1}=1$ , $u_{4}=64$ . Tính công bội $q$ của cấp số nhân đã cho",
+      "options": [
+        "$q = 4$ .",
+        "$q = -4$ .",
+        "$q = 21$ .",
+        "$q = 2 2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{4}=64u_{1}.q3=64q3=64q = 4$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.9",
+      "badge": "Câu 9 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 9",
+      "question": "Cho cấp số nhân $(u_n)$ có $(u)1=-2$ và $(u)5=-162$ .Công bội $(q)$ bằng:",
+      "options": [
+        "$(q = -3)$ .",
+        "$(q = 3)$ .",
+        "$(q = 3;q = -3)$ .",
+        "$(q = -2)$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $(u)5=-162u_{1}.q4=-162q4=-162u_{1}$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.10",
+      "badge": "Câu 10 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 10",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_{1}=2$ và $u_{4}=54$ . Giá trị của công bội $q$ bằng",
+      "options": [
+        "$3$ .",
+        "$9$ .",
+        "$27$ .",
+        "$-3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{4}u_{1}=q$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.11",
+      "badge": "Câu 11 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 11",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=2$ và công bội $q = 3$ . Tìm số hạng thứ $4$ của cấp số nhân?",
+      "options": [
+        "$24$ .",
+        "$54$ .",
+        "$162$ .",
+        "$48$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Có $u_{4}=u_{1}.q3=2.33=54.$ : Cấp số nhân $(u_n)$ có $u_{4}=9,u_{5}=81$ có công bội là",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.12",
+      "badge": "Câu 12 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 12",
+      "question": "Có $u_{4}=u_{1}.q3=2.33=54.$ : Cấp số nhân $(u_n)$ có $u_{4}=9,u_{5}=81$ có công bội là",
+      "options": [
+        "$3$ .",
+        "$72$ .",
+        "$18$ .",
+        "$9$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có công bội $q = u_{5}u_{4}=$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.13",
+      "badge": "Câu 13 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 13",
+      "question": "Tìm công bội $q$ của một cấp số nhân $(u_n)$ có $u_{1}=12$ và $u_{6}=16$ .",
+      "options": [
+        "$q = 1 2$ .",
+        "$q = -2$ .",
+        "$q = 2$ .",
+        "$q = - 1 2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{6}=u_{1}.q516=12$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.14",
+      "badge": "Câu 14 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 14",
+      "question": "Cho cấp số nhân $(u_n)$ có số hạng đầu $u_{1}=2$ và $u_{6}=486$ . Công bội q bằng",
+      "options": [
+        "$q = 3$ .",
+        "$q = 5$ .",
+        "$q = 3 2$ .",
+        "$q = 2 3$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chọn A Theo đề ra ta có: $u_{1}=2 u_{6}=486{$ $u_{1}=2 486=u_{1}.q5{$ $q 5=243=35$ $q = 3$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.15",
+      "badge": "Câu 15 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 15",
+      "question": "Cho cấp số nhân $(u_n)$ với $u_{1}=-12; u_{7}=-32$ . Tìm q ?",
+      "options": [
+        "$q = \\pm 1 2$ .",
+        "$q = \\pm 2$ .",
+        "$q = \\pm 4$ .",
+        "$q = \\pm 1$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức số hạng tổng quát cấp số nhân ta có $u_n=u_{1}q^n-1u_{7}=u$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.16",
+      "badge": "Câu 16 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 16",
+      "question": "Biết ba số $x2;8;x$ theo thứ tự lập thành cấp số nhân. Giá trị của $x$ bằng",
+      "options": [
+        "$x=4$",
+        "$x=5$",
+        "$x=2$",
+        "$x=1$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Do ba số $x2;8;x$ theo thứ tự lập thành cấp số nhân nên theo tính chất cấp số nhân ta được $x2.x=8x3=8x=2$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.17",
+      "badge": "Câu 17 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 17",
+      "question": "Cho cấp số nhân $(u_n)$ có công bội $q$ . Chọn hệ thức đúng trong các hệ thức sau:",
+      "options": [
+        "",
+        ".",
+        "$u k=u_{1}.qk-1.$",
+        "$u k=u_{1}+k-1()$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo tính chất các số hạng của cấp số nhân.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.18",
+      "badge": "Câu 18 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 18",
+      "question": "Cho dãy số $(u_n)$ xác định bởi: . Chọn hệ thức đúng:",
+      "options": [
+        "$(u_n)$ là cấp số nhân có công bội $q = - 1 10.$",
+        "$u_n=(-2)110n-1.$",
+        "$n\\ge 2()$ .",
+        "$n\\ge 2()$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{n+1}u_n=-$ nên $(u_n)$ là cấp số nhân có công bội $q = - 1 10.$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.19",
+      "badge": "Câu 19 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 19",
+      "question": "Cho cấp số nhân có $u_{1}=-3$ , $q = 2 3$ . Tính $u_{5}?$",
+      "options": [
+        "$u_{5}=-2716.$",
+        "$u_{5}=-1627.$",
+        "$u_{5}=1627.$",
+        "$u_{5}=2716.$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Chọn B Ta có: $u_{5}=u_{1}.q4=-3$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.20",
+      "badge": "Câu 20 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 20",
+      "question": "Cho cấp số nhân có $u_{1}=-3$ , $q = 2 3$ . Số là số hạng thứ mấy của cấp số này?",
+      "options": [
+        "Thứ 5.",
+        "Thứ 6.",
+        "Thứ 7.",
+        "Không phải là số hạng của cấp số."
+      ],
+      "correctIndex": 1,
+      "explanation": "Chọn B Giả sử số là số hạng thứ $n$ của cấp số này. Ta có: $u_{1}.q^n-1=-96243$ . Vậy số là số hạng thứ 6 của cấp số.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.21",
+      "badge": "Câu 21 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 21",
+      "question": "Cho cấp số nhân có $u_{2}=14$ ; $u_{5}=16$ . Tìm $q$ và $u_{1}$ .",
+      "options": [
+        "$q = 1 2; u_{1}=12$",
+        "$q = - 1 2; u_{1}=-12$",
+        "$q = 4; u_{1}=116.$",
+        "$q = -4; u_{1}=-116.$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{2}=u_{1}.q14=u$ ; $u_{5}=u_{1}.q4 16=u_{1}.q$ Suy ra: $q 3=64 q = 4$ . Từ đó: $u_{1}=116.$ Với $x$ là số nguyên dương, ba số $2x,3x+3,5x+5$ theo thứ tự là ba số hạng liên tiếp của một cấp số nhân. Số hạng tiếp theo của cấp số nhân đó là",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.22",
+      "badge": "Câu 22 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 22",
+      "question": "Ta có: $u_{2}=u_{1}.q14=u$ ; $u_{5}=u_{1}.q4 16=u_{1}.q$ Suy ra: $q 3=64 q = 4$ . Từ đó: $u_{1}=116.$ Với $x$ là số nguyên dương, ba số $2x,3x+3,5x+5$ theo thứ tự là ba số hạng liên tiếp của một cấp số nhân. Số hạng tiếp theo của cấp số nhân đó là",
+      "options": [
+        "$- 250 3$ .",
+        "$250 3$ .",
+        "$250$ .",
+        "$-250$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ba số $2x,3x+3,5x+5$ theo thứ tự là ba số hạng liên tiếp của một cấp số nhân nên $2x 5x+5()=3x+3$ . Với $x=9$ , suy ra $q = 3.9+3 2.9=3018=$ Số hạng tiếp theo của cấp số nhân đó là: $5.9+5().53$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.23",
+      "badge": "Câu 23 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 23",
+      "question": "Cho ba số thực $x,y,z$ trong đó $x\\ne 0$ . Biết rằng $x,2y,3z$ lập thành cấp số cộng và $x,y,z$ lập thành cấp số nhân; tìm công bội $q$ của cấp số nhân đó.",
+      "options": [
+        "$q = 1q = 13[$",
+        "$q = 13q = 23$",
+        "$q = 2$",
+        "$q = 1$"
+      ],
+      "correctIndex": 3,
+      "explanation": "$x,y,z$ lập thành cấp số nhân công bội $q$ nên $y=qx;z=q 2x$ $x,2y,3z$ lập thành cấp số cộng nên $2y= x+3z 22qx=x+3q2x2$ Vì $x\\ne 0$ nên $2qx= x+3q 2x24q = 1+3q2$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.24",
+      "badge": "Câu 24 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 24",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_{1}=-2$ và công bội $q = 3$ . Số hạng $u_{2}$ là:",
+      "options": [
+        "$u_{2}=-6$ .",
+        "$u_{2}=6$ .",
+        "$u_{2}=1$ .",
+        "$u_{2}=-18$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Số hạng $u_{2}$ là: $u_{2}=u_{1}.q$ $=-6$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.25",
+      "badge": "Câu 25 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 25",
+      "question": "Cho cấp số nhân ${\\left( {{u}_{n}} \\right)}$ có ${{u}_{5}}=2$ và ${{u}_{9}}=6$ . Tính ${{u}_{21}}$ .",
+      "options": [
+        "$18$ .",
+        "$54$ .",
+        "$162$ .",
+        "$486$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{5}=2 u_{9}=6{$ $u_{1}q 4=2u_{1}q8=6$ $u_{1}= 2 3q4=3$ . Suy ra $u_{21}=u_{1}q20=u_{1}$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.26",
+      "badge": "Câu 26 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 26",
+      "question": "Cho cấp số nhân $(u_n)$ có số hạng đầu $u_{1}=2$ và công bội $q = 5$ . Giá trị của $u_{6}u_{8}$ bằng",
+      "options": [
+        "$2.5 6$ .",
+        "$2.5 7$ .",
+        "$2.5 8$ .",
+        "$2.5 5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $(u_n)$ là cấp số nhân nên $u_{6}u_{8}=u_{72}$ , suy ra $u_{6}u_{8}=u$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.27",
+      "badge": "Câu 27 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 27",
+      "question": "Cho cấp số nhân $(u_n)$ có $u_{1}=3$ , công bội $q = 2$ . Ta có $u_{5}$ bằng",
+      "options": [
+        "$24$ .",
+        "$11$ .",
+        "$48$ .",
+        "$9$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức số hạng tổng quát của cấp số nhân: $u_n=u_{1}.q^n-1$ . Do đó $u_{5}=3.24=48$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.28",
+      "badge": "Câu 28 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 28",
+      "question": "Cho cấp số nhân $(u_n)$ có công bội dương và $u_{2}=14$ , $u_{4}=4$ . Giá trị của $u_{1}$ là",
+      "options": [
+        "$u_{1}=16$ .",
+        "$u_{1}=116$ .",
+        "$u_{1}=-116$ .",
+        "$u_{1}=12$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo tính chất của cấp số nhân với $k\\ge 2$ thì $u k2=uk-1.uk+1$ ta suy ra $u_{32}=u_{2}.u_{4}=$ Vì $(u_n)$ là cấp số nhân có công bội dương nên $u_{3}=1$ . Gọi $q$ là công bội ta được $q = u_{4}u_{3}=$ Từ đó ta có $u_{1}=u_{2}q = $ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.29",
+      "badge": "Câu 29 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 29",
+      "question": "Cho cấp số nhân $(u_n)$ có số hạng đầu $u_{1}=2$ và công bội $q = 3$ . Giá trị $u_{2019}$ bằng",
+      "options": [
+        "$2.3 2018$ .",
+        "$3.2 2018$ .",
+        "$2.3 2019$ .",
+        "$3.2 2019$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức của số hạng tổng quát $u_n=u_{1}.q^n-1=2.32018$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.30",
+      "badge": "Câu 30 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 30",
+      "question": "Cho cấp số nhân $(u_n);u$ . Hỏi số $1024$ là số hạng thứ mấy?",
+      "options": [
+        "$11$ .",
+        "$9$ .",
+        "$8$ .",
+        "$10$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_n=u_{1}.q^n-11.2n-1=10242$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.31",
+      "badge": "Câu 31 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 31",
+      "question": "Cho cấp số nhân $(u_n)$ có số hạng đầu $u_{1}=5$ và công bội $q = -2$ . Số hạng thứ sáu của $(u_n)$ là",
+      "options": [
+        "$u_{6}=320$ .",
+        "$u_{6}=-160$ .",
+        "$u_{6}=-320$ .",
+        "$u_{6}=160$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{6}=u_{1}.q5=5.-2$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.32",
+      "badge": "Câu 32 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 32",
+      "question": "Tìm số hạng đầu $u_{1}$ của cấp số nhân $(u_n)$ biết rằng $u_{1}+u_{2}+u_{3}=168$ và $u_{4}+u_{5}+u_{6}=21$",
+      "options": [
+        "$u_{1}=24$ .",
+        "$u_{1}=133411$ .",
+        "$u_{1}=96$ .",
+        "$u_{1}=2173$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có : $u_{1}+u_{2}+u_{3}=168u_{4}+u_{5}+u$ $u_{1} 1+q+q2()=168$ $u_{1}= 168 1+q+q 2q3=$ $u_{1}=96 q = 1 2{$ . Vậy $u_{1}=96$ ,",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.33",
+      "badge": "Câu 33 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 33",
+      "question": "Cho dãy số xác định bởi . Tính số hạng thứ của dãy số trên",
+      "options": [
+        "$u_{2018}=6.22017-5$ .",
+        "$u_{2018}=6.22018-5$ .",
+        "$u_{2018}=6.22017+1$ .",
+        "$u_{2018}=6.22018+5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_n=vn-5$ , $u_{n+1}=2u_n+5$ $v n+1-5=2vn-5()$ $v n+1=2vn$ . Do đó $v n$ là cấp số nhân với $v 1=6$ , $q = 2$ , $v n=6.q^n-1$ , $v 2018=6.22017$ $u_{2018}=6.22017-5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.34",
+      "badge": "Câu 34 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 34",
+      "question": "Cho $(u_n)$ là cấp số nhân, công bội $q>0.$ Biết $u_{1}=1,u_{3}=4.$ Tìm $u_{4}$ .",
+      "options": [
+        "$11 2$ .",
+        "$2.$",
+        "$16.$",
+        "$8.$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{1}=1 u_{3}=4{$",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.35",
+      "badge": "Câu 35 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 35",
+      "question": "Cho cấp số nhân $(u_n),n$ với công bội $q = 2$ và có số hạng thứ hai $u$ Số hạng thứ $7$ của cấp số nhân là",
+      "options": [
+        "$u$ .",
+        "$u$ .",
+        "$u$ .",
+        "$u$ ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Ta có $(u_n),n$ là cấp số nhân có công bội $q = 2$ nên có số hạng tổng quát $u$ . Vì $u$ Vậy số hạng thứ $7$ của cấp số là $160.$ Đáp ánC.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.36",
+      "badge": "Câu 36 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 36",
+      "question": "Cho một cấp số nhân có số hạng thứ $4$ gấp $4096$ lần số hạng đầu tiên. Tổng hai số hạng đầu tiên là 34. Số hạng thứ $3$ của dãy số có giá trị bằng:",
+      "options": [
+        "$1$ .",
+        "$512$ .",
+        "$1024$ .",
+        "$32$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo bài ra ta có: $u_{4}=4096.u_{1}u_{1}+u_{2}=34$ . Vậy $u_{3}=u_{1}.q2=2.162=512$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.37",
+      "badge": "Câu 37 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 37",
+      "question": "Cho cấp số nhân $(u_n)$ , biết $u_{1}=12$ , $u_{3}u_{8}=243$ . Tìm $u_{9}$ .",
+      "options": [
+        "$u_{9}=22187$ .",
+        "$u_{9}=46563$ .",
+        "$u_{9}=78732$ .",
+        "$u_{9}=42187$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $q$ là công bội của cấp số nhân $(u_n)$ . Ta có $u_{3}=u_{1}q2$ , $u_{8}=u_{1}q7$ $u_{3}u_{8}=$ $q = 1 3$ . Do đó $u_{9}=u_{1}q8$ $=12.13()$ $= 4 2187$ . [1D3-0.0-2] Cho cấp số nhân $(u_n)$ có tổng $n$ số hạng đầu tiên là $S_n=5n-1$ với $n=1,2,...$ . Tìm số hạng đầu $u_{1}$ và công bội $q$ của cấp số nhân đó?",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.38",
+      "badge": "Câu 38 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 38",
+      "question": "Gọi $q$ là công bội của cấp số nhân $(u_n)$ . Ta có $u_{3}=u_{1}q2$ , $u_{8}=u_{1}q7$ $u_{3}u_{8}=$ $q = 1 3$ . Do đó $u_{9}=u_{1}q8$ $=12.13()$ $= 4 2187$ . [1D3-0.0-2] Cho cấp số nhân $(u_n)$ có tổng $n$ số hạng đầu tiên là $S_n=5n-1$ với $n=1,2,...$ . Tìm số hạng đầu $u_{1}$ và công bội $q$ của cấp số nhân đó?",
+      "options": [
+        "$u_{1}=5$ , $q = 4$ .",
+        "$u_{1}=5$ , $q = 6$ .",
+        "$u_{1}=4$ , $q = 5$ .",
+        "$u_{1}=6$ , $q = 5$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{1}=S_{1}=5-1=4u_{1}+u_{2}=S_{2}=5$ $u_{1}=4$ , $q = u_{2}u_{1}=5$ .",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.39",
+      "badge": "Câu 39 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 39",
+      "question": "Cho cấp số nhân $(u_n)$ biết $u_{4}-u_{2}=54u_{5}-u_{3}=108$ . Tìm số hạng đầu $u_{1}$ và công bội $q$ của cấp số nhân trên.",
+      "options": [
+        "$u_{1}=9$ ; $q = 2$ .",
+        "$u_{1}=9$ ; $q = -2$ .",
+        "$u_{1}=-9$ ; $q = -2$ .",
+        "$u_{1}=-9$ ; $q = 2$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_{4}-u_{2}=54u_{5}-u_{3}=108$ $u_{1}q 3-u_{1}q = 54u_{1}q4-u$ $u_{1}q q2-1()=54$ $u_{1}=9 q = 2{$ . Vậy $u_{1}=9$ ; $q = 2$ . Xen giữa số $3$ và số $768$ là $7$ số để được một cấp số nhân có $u_{1}=3$ . Khi đó $u_{5}$ là:",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-11.7.40",
+      "badge": "Câu 40 - Luyện tập Cấp số nhân - DẠNG 2. TÌM CÔNG BỘI, SỐ HẠNG VÀ CÔNG THỨC TỔNG QUÁT CỦA CẤP SỐ NHÂN",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trắc nghiệm Câu 40",
+      "question": "Ta có: $u_{4}-u_{2}=54u_{5}-u_{3}=108$ $u_{1}q 3-u_{1}q = 54u_{1}q4-u$ $u_{1}q q2-1()=54$ $u_{1}=9 q = 2{$ . Vậy $u_{1}=9$ ; $q = 2$ . Xen giữa số $3$ và số $768$ là $7$ số để được một cấp số nhân có $u_{1}=3$ . Khi đó $u_{5}$ là:",
+      "options": [
+        "$72$ .",
+        "$-48$ .",
+        "$\\pm 48$ .",
+        "$48$ ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_{1}=3$ và $u_{9}=768$ nên $768=3.q 8$ $q 8=256$ $q = \\pm 2$ . Do đó $u_{5}=u_{1}.q4=3.24=48$ . Cấp số nhân có Tìm , biết rằng .",
+      "isAiGenerated": true
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-11.7.1",
+      "badge": "Đúng/Sai 1 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 1",
+      "prompt": "Một nhà hát có 25 hàng ghế với 16 ghế ở hàng thứ nhất, 18 ghế ở hàng thứ hai, 20 ghế ở hàng thứ ba và cứ tiếp tục theo quy luật đó, tức là hàng sau_nhiều hơn hàng liền trước nó 2 ghế. Gọi $u_n$ (ghế) là tổng số ghế ở hàng thứ $n$ . Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$u_{2}=18$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là cấp số cộng có công sai $d = 2$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số ghế ở hàng thứ $20$ nhỏ hơn $54$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng số ghế trong nhà hát nhiều hơn $1000$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.2",
+      "badge": "Đúng/Sai 2 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 2",
+      "prompt": "Số ghế trong các dãy ghế liên tiếp lập thành một cấp số cộng với số hạng đầu $u_{1}=16$ và công sai $d = 2$ . $u_{2}=u_{1}+d = 16+2=18$ . Vậy a) và $2()$ đúng. Ta có $u_{20}=u_{1}+19d = 16+19.2=54$ . Suy ra $3()$ sai. Số ghế ở mỗi hàng của nhà hát lập thành một cấp số cộng, gồm 25 số hạng, với số hạng đầu $u_1=16$ và công sai $d = 2$ . Tổng các số hạng này là Suy ra $4()$ sai. Khi kí kết hợp đồng lao động với người lao động, một doanh nghiệp đề xuất hai phương án trả lương như sau: Phương án 1: Năm thứ nhất, tiền lương là 120 triệu. Kể từ năm thứ hai trở đi, mỗi năm tiền lương được tăng 18 triệu. Phương án 2: Quý thứ nhất, tiền lương là 24 triệu. Kể từ quý thứ hai trở đi, mỗi quý tiền lương được tăng 1,8 triệu. Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trong phương án 1: dãy số tiền lương là cấp số cộng có số hạng đầu tiên là $u_{1}=120$ , công sai $d 1=18$ . X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Trong phương án 1: tiền lương người lao động nhận được trong năm thứ ba là $174$ triệu. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Trong phương án 1: tổng tiền lương người lao động nhận được trong ba năm là 414 triệu. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Nếu kí hợp đồng lao động trong ba năm, với mong muốn nhận được tổng số tiền lương cao nhất thì người lao động nên chọn phương án 1. X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.3",
+      "badge": "Đúng/Sai 3 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 3",
+      "prompt": "Trong hội chợ tết, một công ty sữa muốn xếp $1000$ hộp sữa theo thứ tự từ trên xuống dưới như sau: Hàng thứ nhất có 1 hộp sữa, hàng thứ hai có 3 hộp sữa, hàng thứ ba có 5 hộp sữa, $…$ cứ như thế, số lượng hộp sữa của hàng sau lớn hơn số lượng hộp sữa của hàng trước nó là 2 hộp sữa (mô hình như hình dưới). Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Gọi $u_n$ là số hộp sữa ở hàng thứ $n$ thì $(u_n)$ là một cấp số cộng có số hạng đầu $u_{1}=1$ và công sai $d = 2$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hộp sữa của hàng thứ 10 là 20 hộp sữa X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Để xếp được 20 hàng thì cần 400 hộp sữa X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Hàng cuối cùng có 900 hộp sữa X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.4",
+      "badge": "Đúng/Sai 4 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 4",
+      "prompt": "Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Gọi $u_n$ là số hộp sữa ở hàng thứ $n$ thì $(u_n)$ là một cấp số cộng có số hạng đầu $u_{1}=1$ và công sai $d = 2$ .",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hộp sữa của hàng thứ 10 là $u_{10}=u_{1}+9d = 1+9.2=19$ hộp sữa.",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Để xếp được 20 hàng thì số hộp sữa cần có là $S_{20}=2022u$ hộp sữa",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Ta có $S_n=n22.1+$ . Giả sử với $1000$ hộp sữa ta chỉ xếp được nhiều_nhất $n$ hàng thì n là số nguyên lớn nhất thoả mãn bất phương trình $S_n\\le 1000n2\\le 1000-1010\\le n\\le 1010$ . Suy ra $n=31$ . Vậy, hàng cuối cùng có $u_{31}=3122u$ hộp sữa. Do nhu cầu đi lại của gia đình, anh Bình quyết định thực hiện tích góp tiền để mua một chiếc ôtô HONDA CRV trị giá $1,259$ tỉ đồng. Đợt thứ nhất: anh Bình đã tích góp theo nguyên tắc tháng sau tích góp nhiều hơn tháng ngay trước đó số tiền là $2$ triệu đồng và cứ như thế đến tháng thứ $10$ anh phải góp $21$ triệu đồng. Đến hết đợt thứ nhất anh Bình có tất cả $624$ triệu đồng. Đợt thứ hai kế tiếp: do muốn rút ngắn thời gian mua xe thì số tiền còn lại anh tiếp tục tích góp với tháng đầu là $5$ triệu đồng và mỗi tháng tiếp theo số tiền gấp đôi tháng kề trước nó. Các mệnh đề sau đây đúng hay sai? Mệnh đề Đúng Sai",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "a",
+          "text": "Đợt thứ nhất anh Bình tích lũy tiền theo dãy số với cấp số cộng có công sai là $d = 2$ triệu và $u_{1}=3$ triệu. X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Anh Bình tích lũy tiền hết đợt thứ nhất trong 25 tháng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Đợt thứ hai anh Bình tích lũy tiền theo dãy số với cấp số nhân có công bội là $q = 2$ triệu và $u_{1}=5$ triệu. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Để đủ tiền mua ôtô thì anh Bình thì anh Bình tích góp ít nhất 31 tháng X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.5",
+      "badge": "Đúng/Sai 5 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 5",
+      "prompt": "Một sinh viên sau khi ra trường và xin vào làm cho một tru_ng tâm với mức lương khởi điểm là 100 triệu đồng một năm. Cứ sau mỗi năm, tru_ng tâm trả thêm cho sinh viên 20 triệu đồng. Gọi $u_n$ (triệu đồng) là số tiền lương mà sinh viên đó nhận được ở năm thứ $n$ . Hỏi các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số tiền lương sinh viên nhận được ở năm thứ hai là $120$ triệu đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số tiền lương sinh viên nhận được ở năm thứ 10 là $300$ triệu đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là cấp số cộng có $u_{1}=120$ và công sai $d = 20$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Giả sử, mỗi năm bạn sinh viên chi tiêu tiết kiệm hết 70 triệu đồng. Vậy sau ít nhất 12 năm thì sinh viên đó mua được căn chu_ng cư 2 tỉ đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.6",
+      "badge": "Đúng/Sai 6 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 6",
+      "prompt": "Ta thấy, số tiền lương năm sau hơn năm trước $20$ triệu đồng nên $(u_n)$ là cấp số cộng có $u_{1}=100$ và công sai $d = 20$ . Do đó: $u_n=u_{1}+n-1()$",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số tiền lương sinh viên nhận được ở năm thứ hai là $u_{2}=120$ (triệu đồng). Vậy mệnh đề 1 là đúng.",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số tiền lương sinh viên nhận được ở năm thứ 10 là $u_{10}=20.10+80=280$ (triệu đồng). Vậy mệnh đề 2 là sai.",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Mệnh đề c) là sai vì $u_{1}=100$ .",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng số tiền bạn sinh viên tiết kiệm được sau $n$ năm là: $S= n 22u_{1}+$ (triệu đồng). Ta có: $S\\ge 2000$ $10n 2+20n-2000\\ge 0n\\ge 13,1n\\le -15,1[$ . Do đó sau ít nhất sau_{14} năm thì sinh viên đó có thể mua được chu_ng cư 2 tỉ đồng. Vậy mệnh đề 4 là sai. Người ta thiết kế một cái tháp gồm 11 tầng. Diện tích bề mặt trên của mỗi tầng bằng nửa diện tích của mặt trên của tầng ngay bên dưới và diện tích mặt trên của tầng 1 bằng nửa diện tích của đế tháp ( đế tháp có diện tích là $12288m 2$ ). Mệnh đề Đúng Sai",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "a",
+          "text": "Diện tích tầng $11$ là $4 m2()$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Diện tích các tầng lập thành cấp số nhân có công bội $q = 1 2$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích các tầng lập thành cấp số cộng có công sai $d = 1 2$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Cần bao nhiêu $m 2$ gạch để lát nền từ tầng $1$ đến hết tầng $11$ X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.7",
+      "badge": "Đúng/Sai 7 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 7",
+      "prompt": "Trong một hồ sen, số lá sen ngày hôm sau bằng $3$ lần số lá sen ngày hôm trước. Biết rằng ngày đầu có $1$ lá sen thì tới ngày thứ $10$ hồ sẽ đầy lá sen. Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu_ngày đầu có $9$ lá sen thì tới ngày thứ 8 hồ sẽ đầy lá sen. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số lá sen lập thành cấp số nhân $(u_n)$ với $u_{1}=1$ và công bội $q = 3$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số lá sen lập thành cấp số cộng $(u_n)$ với $u_{1}=1$ và công bội $q = 3$ . X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Nếu_ngày đầu có $9$ lá sen thì tới ngày thứ 9 hồ sẽ đầy lá sen. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.8",
+      "badge": "Đúng/Sai 8 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 8",
+      "prompt": "Ngày đầu có có $u_{1}=1$ lá sen. Do số lá sen ngày hôm sau bằng $3$ lần số lá sen ngày hôm trước nên ta có cấp số nhân $(u_n)$ với $u_{1}=1$ và công bội $q = 3$ . Vì ngày thứ $10$ hồ sẽ đầy lá sen nên có $u_{10}=u_{1}.q9=1.39=3$ lá sen. Ngày đầu có $v 1=9$ lá sen. Do số lá sen ngày hôm sau bằng $3$ lần số lá sen ngày hôm trước nên ta có cấp số nhân $vm()$ với $v 1=9$ và công bội $q = 3$ . Khi đó sau $m$ ngày thì số lá sen là $v m=v1.qm-1=9.3m-1$ . Ta có $9.3 m-1=393m+1=39m+1=9m=8$ . Để tích lũy cho việc học đại học của cậu con trai đầu lòng, cô Lan quyết định hằng tháng bỏ ra nghìn đồng vào tài khoản tiết kiệm, được trả lãi $0,5%$ cộng dồn hằng tháng. Cô bắt đầu chương trình tích lũy này khi cậu con trai tròn ba tuổi và gửi tiền vào đầu mỗi tháng. Các mệnh đề sau đúng hay sai? Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Đến lần gửi khoản tiền thứ $180$ thì cậu con trai tròn $18$ tuổi. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số tiền của cô Lan có trong chương trình ở đầu tháng thứ 2 là $0,6 1+0,5%()$ triệu đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số tiền của cô Lan có trong chương trình ở đầu tháng thứ 5 (làm tròn đến hàng nghìn) là $3.030.000$ đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số tiền của cô Lan có trong chương trình vào thời điểm cậu con trai đầu lòng tròn 18 tuổi nhỏ hơn $160$ triệu đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.9",
+      "badge": "Đúng/Sai 9 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 9",
+      "prompt": "Gọi $u_n$ là số triệu đồng mà cô Lan có trong chương trình tích lũy ở lần gửi thứ $n$ (vào đầu tháng thứ $n$ ). Kí hiệu $a=0,6$ triệu đồng, $r=0,5%$ . Số tiền của cô Lan có trong chương trình ở đầu tháng thứ nhất là: $u_{1}=a$ . Số tiền của cô Lan có trong chương trình ở đầu tháng thứ 2 là: $u_{2}=a1+r()+a=0,6$ . Số tiền của cô Lan có trong chương trình ở đầu tháng thứ 3 là: $u_{3}=a1+r()$ . Tương tự cho các tháng tiếp theo, suy ra số tiền của cô Lan có trong chương trình ở đầu tháng thứ $n$ là: $u_n=a1+r()$ . Số tiền của cô Lan có trong chương trình ở đầu tháng thứ 5 là: $u_{5}=a.1+r()$ triệu đồng = $3.030.000$ đồng. Vào thời điểm cậu con trai đầu lòng tròn tuổi là thời điểm gửi khoản tiền thứ $180$ . Lúc đó cô sẽ tích lũy được $u_{180}=a.1+r()$ (triệu đồng). Anh Bình là nhân viên của một công tyA. Từ ngày 1/2/2024 anh Bình được nâng lương lên bậc 4, mức lương anh hiện hưởng là 11.718.750 đồng mỗi tháng (chưa trừ thuế và bảo hiểm). Theo quy định của công ty, nếu không bị kỉ luật, không có khen thưởng đặc biệt thì cứ sau_{3} năm anh Bình sẽ được nâng một bậc lương, tăng thêm 25% so với bậc lương trước, tối đa là bậc 7. Khi hết bậc 7 sẽ chuyển sang vượt khu_ng. Lương vượt khu_ng năm sau cao hơn năm trước 1% và vẫn nhận hàng tháng. Lương bậc 1 sẽ được tính sau khi hết đúng 1 năm tập sự. Anh Bình là người rất nghiêm túc, không vi phạm kỉ luật. Anh dự định sẽ làm việc 30 năm ở công ty này rồi nghỉ hưu. Các mệnh đề sau đúng hay sai? (làm tròn đến đồng) Mệnh đề Đúng Sai",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Lương bậc 5 của anh Bình sẽ là 14.500.000 đồng. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Lương bậc 1 của anh Bình là 6.000.000 đồng. X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Lương bậc 7 anh Bình là 23.250.000. X",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng tiền lương anh Bình nhận được kể từ khi hết tập sự đến khi nghỉ hưu là $=5.554.357.709$ X",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.10",
+      "badge": "Đúng/Sai 10 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 10",
+      "prompt": "Cho các dãy số sau đây: ${u_n=(\\sqrt{5})^{2 n-3}}$ ; ${v_n=\\frac{2}{n}}$ ; ${w_n=\\frac{3^{n+1}}{2^n}}$ và dãy số hữu hạn gồm các số hạng: ${16 ; 4 ; 1 ; \\frac{1}{4} ; \\frac{1}{16} ; \\frac{1}{64}}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "${\\left(u_n\\right)}$ là một cấp số nhân công bội ${q = 5}$ .",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "${\\left(v_n\\right)}$ không phải là một cấp số nhân",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "${\\left(w_n\\right)}$ là một cấp số nhân có số hạng đầu",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số hữu hạn đã cho theo thứ tự lập thành cấp số nhân có công bội bằng .",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.11",
+      "badge": "Đúng/Sai 11 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 11",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ với công bội ${q và ${u_2=4, u_4=9}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu ${u_1=-\\frac{8}{3}}$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng $u_{5}=272$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "$- 2187 32$ là số hạng thứ 8",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Cấp số nhân có công bội ${q = -\\frac{3}{2}}$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.12",
+      "badge": "Đúng/Sai 12 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 12",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ , biết ${u_1+u_5=51 ; u_2+u_6=102}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_{1}=3$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng $u_{4}=48$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số 12288 là số hạng thứ 12 của cấp số nhân ${\\left(u_n\\right)}$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng tám số hạng đầu của cấp số nhân là: .",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.13",
+      "badge": "Đúng/Sai 13 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 13",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ thoả mãn: ${\\left\\{\\begin{array}{l}u_4=\\frac{2}{27} \\\\ u_3=243 u_8\\end{array}\\right.}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng ${u_1=2 ; u_2=\\frac{2}{3} ; u_3=\\frac{2}{9} ; u_4=\\frac{2}{27} ; u_5=\\frac{2}{81}}$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "$u_{5}-u_{3}=-1681$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số ${\\frac{2}{6561}}$ là số hạng thứ 8 của cấp số nhân",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng chín số hạng đầu của cấp số nhân là số lớn hơn 3.",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.14",
+      "badge": "Đúng/Sai 14 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 14",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ thoả mãn ${\\left\\{\\begin{array}{l}u_4+u_6=-540 \\\\ u_3+u_5=180\\end{array}\\right.}$ . Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_{1}=2$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Gọi $q$ là công bội của cấp số nhân, thì ba số $q;1;3$ tạo thành một cấp số cộng",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Số $-486$ là số hạng thứ 5 của cấp số nhân",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Tổng của 21 số hạng đầu cấp số nhân đã cho bằng $5230176602$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.15",
+      "badge": "Đúng/Sai 15 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 15",
+      "prompt": "Cho tứ giác ${A B C D}$ có bốn góc tạo thành một cấp số nhân có công bội bằng 2. Khi đó:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số đo góc nhỏ nhất bằng $24$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "Số đo góc lớn nhất bằng $196$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "Tổng số đo góc lớn nhất với góc nhỏ nhất bằng $220$",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "Số đo góc lớn nhất trừ cho số đo góc nhỏ nhất bằng $168$",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.7.16",
+      "badge": "Đúng/Sai 16 - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Đúng Sai Câu 16",
+      "prompt": "Cho các dãy số ${a_n=n^2+n+1}$ ; ${b_n=(n+2) \\cdot 3^n}$ ; ${\\left\\{\\begin{array}{l}c_1=2 \\\\ c_{n+1}=\\frac{6}{c_n}, \\forall n \\in \\mathbb{N}^*\\end{array}\\right.}$ ; ${d_n=(-4)^{2 n+1}}$ . Khi đó",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "${\\left(a_n\\right)}$ không phải là cấp số nhân",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "b",
+          "text": "${\\left(b_n\\right)}$ không phải là cấp số nhân",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "c",
+          "text": "${\\left(c_n\\right)}$ là một cấp số nhân",
+          "correctAnswer": false,
+          "explanation": "Mệnh đề này sai theo lý thuyết và công thức đã học."
+        },
+        {
+          "id": "d",
+          "text": "${\\left(d_n\\right)}$ là một cấp số nhân",
+          "correctAnswer": true,
+          "explanation": "Mệnh đề này đúng theo lý thuyết và công thức đã học."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-11.7.1",
+      "badge": "Câu 1 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 1",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ biết ${u_1=5, u_5=405}$ và tổng ${S_n=u_1+u_2+\\ldots .+u_n=1820}$ . Tìm ${n}$ .",
+      "correctAnswer": "315",
+      "acceptableAnswers": [
+        "315"
+      ],
+      "explanation": "Ta có: ${\\left\\{\\begin{array}{l}u_1=5 \\\\ u_5=405\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=5 \\\\ u_1 q^4=405\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=5 \\\\ q^4=\\frac{405}{u_1}=81\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=5 \\\\ q = \\pm 3\\end{array}\\right.\\right.\\right.\\right.}$ . Trường hợp 1: ${u_1=5 ; q = 3}$ . ${\\begin{align} & S_n=u_1+u_2+\\ldots .+u_n=1820\\left(n \\in N^*\\right) \\\\ & \\Leftrightarrow u_1 \\frac{1-q^n}{1-q}=1820 \\Leftrightarrow \\frac{1-3^n}{1-3}=\\frac{1820}{5} \\Leftrightarrow 3^n=729 \\Leftrightarrow n=6 . \\end{align} }$ Trường hợp 2: ${u_1=5 ; q = -3}$ . Viết thêm bốn số vào giữa hai số 160 và 5 để được một cấp số nhân gồm sáu số hạng. Tìm tổng tất cả các số hạng của cấp số nhân đó. Gọi ${\\left(u_n\\right)}$ là cấp số nhân lập được và ${q}$ là công bội của cấp số nhân đó. Cấp số nhân cần lập có dạng: ${160 ; u_2 ; u_3 ; u_4 ; u_5 ; 5}$ . Ta có: ${\\left\\{\\begin{array}{l}u_1=160 \\\\ u_6=5\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=160 \\\\ u_1 q^5=5\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=160 \\\\ 160 q^5=5\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}u_1=160 \\\\ q = \\frac{1}{2}\\end{array}\\right.\\right.\\right.\\right.}$ . Tổng các số hạng của cấp số nhân là: ${S_6=\\frac{u_1\\left(1-q^6\\right)}{1-q}=\\frac{160\\left[1-\\left(\\frac{1}{2}\\right)^6\\right]}{\\frac{1}{2}}=315}$ ."
+    },
+    {
+      "id": "ai-sa-11.7.2",
+      "badge": "Câu 2 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 2",
+      "prompt": "Cho cấp số nhân ${\\left(u_n\\right)}$ có ${S_2=4}$ và ${S_3=13}$ (trong đó ${S_2, S_3}$ theo thứ tự là tổng của hai và của ba số hạng đầu của cấp số nhân). Tìm ${S_5}$ là tổng của năm số hạng đầu của cấp số nhân có công bội dương",
+      "correctAnswer": "${S_5=\\frac{u_1\\left(1-q^5\\right)}{1-q}=\\frac{1\\left(1-3^5\\right)}{1-3}=121 . }$",
+      "acceptableAnswers": [
+        "${S_5=\\frac{u_1\\left(1-q^5\\right)}{1-q}=\\frac{1\\left(1-3^5\\right)}{1-3}=121 . }$"
+      ],
+      "explanation": "Ta có: ${u_3=S_3-S_2=9 \\Rightarrow u_1 q^2=9 \\Rightarrow u_1=\\frac{9}{q^2}}$ (1) (vì ${q \\neq 0}$ ). Mặt khác ${S_2=4}$ nên ${u_1+u_1 q = 4}$ . (2) Thay (1) vào (2), ta có: ${\\frac{9}{q^2}+\\frac{9}{q}=4 \\Leftrightarrow 4 q^2-9 q-9=0 \\Leftrightarrow q = 3}$ hoặc ${q = -\\frac{3}{4}}$ ."
+    },
+    {
+      "id": "ai-sa-11.7.3",
+      "badge": "Câu 3 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 3",
+      "prompt": "Với ${q = 3}$ thì ${u_1=1}$ , khi đó: ${S_5=\\frac{u_1\\left(1-q^5\\right)}{1-q}=\\frac{1\\left(1-3^5\\right)}{1-3}=121 . }$ Theo báo cáo của Chính phủ, dân số của nước ta tính đến tháng 12 năm 2018 là 95,93 triệu_người, nếu tỉ lệ tăng trưởng dân số tru_ng bình hằng năm là ${1,33 \\%}$ thì dân số nước ta vào tháng 12 năm 2025 là bao nhiêu? (Tính theo đơn vị triệu_người, làm tròn đến hàng phần mười)",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Theo tỉ lệ tăng trưởng ${1,33 \\%}$ thì: - Tháng 12 năm 2019, dân số nước ta là: ${u_1=95,93+95,93 \\cdot \\frac{1,33}{100}=95,93\\left(1+\\frac{1,33}{100}\\right)}$ (triệu_người). - Tháng 12 năm 2020, dân số nước ta là: (triệu_người). - Theo quy luật đó, ta biết dân số nước ta vào tháng 12 năm thứ ${n}$ kể từ năm 2019 được tính theo công thức ${u_n=95,93\\left(1+\\frac{1,33}{100}\\right)^n}$ (triệu_người). - Vậy vào tháng 12 năm 2025 (tức ${n=2025-2018=7}$ ), dân số nước ta là: (triệu_người). Tìm số hạng đầu của một cấp số nhân có 4 số hạng, biết tổng 3 số hạng đầu bằng $148 9$ , đồng thời theo thứ tự chúng là số hạng thứ 1, thứ 4, thứ 8 của một cấp số cộng có công sai khác $0$ . Gọi 4 số hạng đầu của cấp số nhân đã cho là $u_{1}$ , $u_{2}$ , $u_{3}$ , $u_{4}$ ; công bội của cấp số nhân là $q$ , công sai của cấp số cộng là $d$ ( $d\\ne 0$ ). Tổng 3 số hạng đầu của cấp số nhân bằng $148 9$ nên: $u_{1}+u_{2}+u_{3}=1489$ $u_{1}+u_{1}.q+u_{1}.q2=$ Do $u_{1}$ , $u_{2}$ , $u_{3}$ theo thứ tự chúng là số hạng thứ 1, thứ 4, thứ 8 của một cấp số cộng có công sai $d\\ne 0$ nên: $u_{1}.q = u_{1}+3d(2)u_{1}.q2=u_{1}+7d(3)$ Nhân phương trình với 7 và nhân phương trình với 3; sau đó trừ hai phương trình theo vế ta được: $u_{1}(3q2-7q+4)=0$ Từ phương trình ta có $u_{1}\\ne 0$ . Khi đó $(3)3q 2-7q+4=0q = 1q = 43[$ . +) Với $q = 1$ , thay vào suy ra $u_{2}=u_{2}=u_{3}=14827$ +) Với $q = 4 3$ , thay vào suy ra $u_{1}=4$ , $u_{2}=163$ , $u_{3}=649$ , $u_{4}=25627$ . Vậy, 4 số hạng đầu của cấp số nhânlà $u_{1}=4$ , $u_{2}=163$ , $u_{3}=649$ , $u_{4}=25627$ ."
+    },
+    {
+      "id": "ai-sa-11.7.4",
+      "badge": "Câu 4 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 4",
+      "prompt": "Cho bốn số nguyên dương, trong đó ba số đầu lập thành một cấp số cộng, ba số sau lập thành một cấp số nhân. Biết rằng tổng của số hạng đầu và cuối là 11, tổng của hai số hạng giữa là 10. Tính tích các số đó.",
+      "correctAnswer": "432",
+      "acceptableAnswers": [
+        "432"
+      ],
+      "explanation": "+ Gọi bốn số phải tìm là $u_{1}, u_{2}, u_{3}, u_{4}$ , ta có + Ba số đầu lập thành cấp số cộng, giả sử là $u_{2}-d, u_{2}, u_{2}+d$ , với d là công sai + Ba số sau lập thành cấp số nhân, khi đó có dạng $u_{2}, u_{2} q, u_{2} q^{2}$ , với q là công bội, q>0 + Theo giả thiết ta có + Từ suy ra + Từ suy ra 485330515049500+ Thay $d$ ở vào hệ thức và rút gọn, ta được phương trình + Giải ra được . + Với không thoả mãn, vì các số $u_{1}, u_{2}, u_{3}, u_{4}$ không nguyên. + Với thì và . 206946511938000Suy ra bốn số cần tìm là 2,4,6,9. Vậy tích các số đó là $432$ ."
+    },
+    {
+      "id": "ai-sa-11.7.5",
+      "badge": "Câu 5 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 5",
+      "prompt": "Cho 3 số dương có tổng là 65 lập thành một cấp số nhân tăng, nếu bớt một đơn vị ở số hạng thứ nhất và 19 đơn vị ở số hạng thứ ba ta được một cấp số cộng. Tìm số dương lớn nhất trong 3 số đó",
+      "correctAnswer": "45",
+      "acceptableAnswers": [
+        "45"
+      ],
+      "explanation": "Gọi $u_{1},u_{2},u_{3}$ theo thứ tự đó lập thành một cấp số nhân. Theo đề: $u_{1}-1;u_{3}-19$ theo thứ tự đó lập thành một cấp số cộng. Ta có: $u_{1}+u_{2}+u_{3}=65u_{1}-1+u_{3}-19=2u$ $u_{1}+u_{2}+u_{3}=65u_{1}-2u_{2}+u$ $u_{1}+u_{1}.q+u_{1}.q2=65u_{1}-2u$ $u_{1} 1+q+q2()=65$ Lấy $1()2$ $4 1+q+q2()=13$ $9q 2-30q+9=0$ $q = 3 ( q = 1 3$ Vì $u_{1},u_{2},u_{3}$ theo thứ tự lập thành cấp số nhân tăng dần nên chọn $q = 3u_{1}=5$ Vậy $u_{1}=5; u_{2}=15; u_{3}=45.$"
+    },
+    {
+      "id": "ai-sa-11.7.6",
+      "badge": "Câu 6 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 6",
+      "prompt": "Trong năm đầu tiên đi làm, anh An được nhận lương là 10 triệu đồng mỗi tháng. Cứ hết một năm, anh An lại được tăng lương, mỗi tháng năm sau tăng 12% so với mỗi tháng năm trước. Mỗi khi lĩnh lương anh An đều cất đi phần lương tăng so với năm ngay trước để tiết kiệm mua ô tô. Hỏi sau ít nhất bao nhiêu_năm thì anh An mua được ô tô giá 500 triệu biết rằng anh An được gia đình hỗ trợ 32% giá trị chiếc xe?",
+      "correctAnswer": "13",
+      "acceptableAnswers": [
+        "13"
+      ],
+      "explanation": "Đáp án chính xác là 13."
+    },
+    {
+      "id": "ai-sa-11.7.7",
+      "badge": "Câu 7 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 7",
+      "prompt": "Số tiền anh An cần tiết kiệm là $500-500.0,32=340$ . Gọi số tiền mà anh An nhận được ở mỗi tháng trong năm đầu tiên là $u_{1}=10$ . Thì số tiền mà anh An nhận được ở mỗi tháng trong năm thứ hai là $u_{2}=u_{1}.1+0,12()$ . Số tiền mà anh An nhận được ở mỗi tháng trong năm thứ ba là $u_{3}=u_{1}.1+0,12()$ . … Số tiền mà anh An nhận được ở mỗi tháng trong năm thứ $n$ là $u_n=u_{1}.1+0,12()$ $=u_{1}.1,12()$ . Vậy số tiền mà anh An tiết kiệm được sau $n$ năm là $12. u_{2}-u_{1}+u_{3}-u$ $=12. u_n-u_{1}()$ $=12. u_{1}.1,12()$ . Theo bài ta ta có: $12. u_{1}.1,12()$ $12.u_{1}.1,12()$ $1,12()n-1=$ $nH12,86$ $n=13$ . Vậy sau ít nhất $13$ năm thì anh An sẽ tiết kiệm đủ tiền để mua ô tô. Cho một hình tròn tâm $O$ bán kính là $R=60m$ . Dựng tam giác đều $A 1B1C1$ nội tiếp đường tròn, sau đó lấy đường tròn nội tiếp tam giác $A 1B1C1$ . Cứ tiếp tục làm quá trình như trên. Diện tích của tam giác $A 9B9C9$ là",
+      "correctAnswer": "13",
+      "acceptableAnswers": [
+        "13"
+      ],
+      "explanation": "Ta có $R=60m=OA 1$ , suy ra trong tam giác $A 1OB1$ ta có $A 1B12=2OA1$ $A 1B12=2.602+2.60$ . Mà các tam giác $A 1B1C1$ , $A 2B2C2$ ,… có độ dài các cạnh là cấp số nhân với công bội $q c=12$ . Nên diện tích các tam giác $A 1B1C1$ , $A 2B2C2$ ,… là cấp số nhân với công bội $q S=14$ . $S_{1}=SA1B1C1$ . $S_{9}=S_{1}.14$ . Ta biết rằng trong một hồ sen, số lá sen ngày hôm sau bằng 3 lần số lá sen ngày hôm trước. Biết rằng nếu_ngày đầu có 1 lá sen thì tới ngày thứ 15 hồ sẽ đầy lá sen.Hỏi nếu_ngày đầu có 9 lá sen thì tới ngày thứ mấy hồ sẽ đầy lá sen? Gọi $u_n$ là số lá sen ngày thứ $n.$ Khi đó $(u_n)$ là cấp số nhân có công bội $q = 3.$ Nếu số lá sen ngày đầu là $1=3 0$ thì $u_{1}=1$ , số lá sen ngày thứ 15 là $u_{15}=u_{1}q14=1.314=3$ Như vậy để hồ đầy lá thì cần $3 14$ lá. Nếu số lá sen ngày đầu là $9$ thì $u_{1}=9$ , số lá sen ngày thứ $n$ là $u_n=u_{1}q^n-1=9.3n-1=3$ ."
+    },
+    {
+      "id": "ai-sa-11.7.8",
+      "badge": "Câu 8 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 8",
+      "prompt": "Để hồ đầy lá sen thì cần $3 14$ lá nên $3 n+1=314n+1=14n=13$ . Vậy đến ngày thứ 13 thì hồ đầy lá. Một đội thợ công nhân dùng gạch cỡ $30\\cdot 30cm$ để lát nền cho một toà tháp gồm 7 tầng theo cấu trúc diện tích mặt sàn của tầng trên bằng một nửa diện tích mặt sàn của tầng dưới. Biết diện tích mặt đáy của tháp là $16m 2$ , hỏi đội công nhân dự định dùng tối thiểu khoảng bao nhiêu viên gạch?",
+      "correctAnswer": "353",
+      "acceptableAnswers": [
+        "353"
+      ],
+      "explanation": "Giả sử diện tích mặt sàn tầng 1 là $S_{1}$ ( $m 2$ ). Suy ra, diện tích mặt sàn tầng 2 là $S_{2}=12S_{1}$ ( $m 2$ ); Diện tích mặt sàn tầng 3 là $S_{3}=12S_{2}=$ ( $m 2$ ); ……………. Diện tích mặt sàn tầng 7 là $S_{7}=126S$ ( $m 2$ ). Tổng diện tích mặt sàn của toà tháp là $S=S_{1}+S_{2}+...+S_{7}=S_{1}.$ $=S_{1}.1-12$ ."
+    },
+    {
+      "id": "ai-sa-11.7.9",
+      "badge": "Câu 9 - Trả lời ngắn - Luyện tập Cấp số nhân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2 Trả lời ngắn Câu 9",
+      "prompt": "Số viên gạch cần dùng là $31,75: 0,3.0,3()H353$ viên. Vậy phải dùng tối thiểu_{353} viên gạch. Vào năm $2020$ , dân số của một quốc gia là khoảng $97$ triệu_người và tốc độ tăng trưởng dân số là . Nếu tốc độ tăng trường dân số này được giữ nguyên hằng năm, hăy ước tính dân số của quốc gia đó vào năm $2030$ .",
+      "correctAnswer": "127",
+      "acceptableAnswers": [
+        "127"
+      ],
+      "explanation": "Giả sử dân số của quốc gia đó là N. Vì tốc độ tăng trưởng dân số là nên sau một năm, số dân tăng thêm là . Vậy dân số của quốc gia đó vào năm sau là: $N+0,91%.N=100,91%.N=1,0091N$ . Như vậy, dân số của quốc gia đó sau mỗi năm lập thành một cấp số nhân với số hạng đầu $u_{1}=N$ và công bội $q = 1,0091$ . Theo bài ra ta có: $u_{1}=97$ ứng với năm 2020. Ta có: $2030-2020=10$ . Dân số của quốc gia đó vào năm 2030 chính là dân số của quốc gia sau_{10} năm kể từ năm 2020, ứng với $u_{11}$ và $u_{11}=u_{1}.q10=97.1,009110H106,2$ triệu_người. Vậy nếu tốc độ tăng trưởng dân số được giữ nguyên hằng năm thì dân số của quốc gia đó vào năm 2030 xấp xỉ khoảng 106,2 triệu_người. Theo ước tính, kể từ lúc mới mua, cứ sau mỗi 200 lần sạc thì pin của điện thoại Iphone sẽ giảm 5% so với chu kỳ 200 lần sạc trước đó. Hỏi sau_{1200} lần sạc thì pin của điện thoại Iphone còn lại bao nhiêu phần trăm so với lúc mới mua? (làm tròn đến hàng phần trăm) Du_ng lượng pin sau mỗi 200 lần sạc kể từ lúc mới mua lập thành cấp số nhân có công bội $q = 0,95$ và số hạng đầu $u_{1}=100%$ . Du_ng lượng pin của điện thoại Ipjone sau_{1200} lần sạc còn lại so với lúc mới mua là $u_{7}=u_{1}.q6=100%.0,95$ . Đầu mùa thu hoạch sầu riêng, bác An đã bán cho người thứ nhất nửa số sầu riêng thu hoạch được và nửa quả, bán cho người thứ hai nửa số sầu riêng còn lại và nửa quả, bán cho người thứ ba nửa số sầu riêng còn lại và nửa quả,… Đến lượt người thứ bảy bác cũng bán nửa số sầu riêng còn lại và nửa quả thì hết số lượng sầu riêng nhà bác An thu hoạch được. Hỏi bác An đã thu hoạch được bao nhiêu quả sầu riêng đầu mùa? Gọi $x$ là số quả sầu riêng thu hoạch được đầu mùa của bác An."
+    }
+  ]
 }
 };

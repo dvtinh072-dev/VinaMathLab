@@ -80,9 +80,9 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
   const renderedHtml = useMemo(() => {
     if (!text || typeof text !== "string") return "";
 
-    // Bước 0: Bảo vệ các khối bảng HTML <div class="...table-container...">...</div> hoặc <table...>...</table>
+    // Bước 0: Bảo vệ các khối bảng HTML <div class="overflow-x-auto...">...</div> hoặc <table...>...</table>
     const htmlBlocks: string[] = [];
-    const textWithProtectedHtml = text.replace(/(<(?:table|div\s+class="overflow-x-auto)[\s\S]*?<\/(?:table|div)>)/gi, (_, table) => {
+    const textWithProtectedHtml = text.replace(/(<div\s+class="overflow-x-auto[^>]*>[\s\S]*?<\/div>|<table[\s\S]*?<\/table>)/gi, (_, table) => {
       const idx = htmlBlocks.length;
       htmlBlocks.push(table);
       return `___HTML_TABLE_BLOCK_${idx}___`;

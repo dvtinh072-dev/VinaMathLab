@@ -148,20 +148,24 @@
   display: inline;
   word-break: break-word;
   overflow-wrap: break-word;
+  color: #fcd34d !important;
 }
 
 .inline-math-item .katex {
   white-space: normal !important;
+  color: #fcd34d !important;
 }
 
 .inline-math-item .katex-html {
   white-space: normal !important;
   display: inline !important;
+  color: #fcd34d !important;
 }
 
 .inline-math-item .katex .base {
   white-space: normal !important;
   display: inline !important;
+  color: #fcd34d !important;
 }
 
 /* Custom modern scrollbar */

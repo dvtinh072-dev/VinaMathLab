@@ -5503,12 +5503,20 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Hệ thống hóa toàn bộ kiến thức lượng giác và luyện tập 3 đề tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
   "scenarioFrames": [],
   "interactiveType": "circle",
-  "youtubeVideoId": "2gUunDSdPOE",
+  "youtubeVideoId": "6W9ZIaEfoH4",
   "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương I - Toán 11 KNTT",
   "youtubeVideos": [
     {
-      "id": "2gUunDSdPOE",
-      "title": "Bài giảng: Chữa bài tập cuối chương I (Lượng giác - KNTT)"
+      "id": "6W9ZIaEfoH4",
+      "title": "Bài tập cuối chương 1: Hàm số & Phương trình lượng giác (Tiết 1) - KNTT"
+    },
+    {
+      "id": "hWvtvqEKUqA",
+      "title": "Bài tập cuối chương 1: Hàm số & Phương trình lượng giác (Tiết 2) - KNTT"
+    },
+    {
+      "id": "zQfD7o1UtjY",
+      "title": "Bài tập cuối chương 1: Hàm số & Phương trình lượng giác (Tiết 3) - KNTT"
     }
   ],
   "videoQuestions": [

@@ -137,11 +137,16 @@
   color: inherit !important;
 }
 
-/* Đảm bảo đáp án và công thức tự co dãn vừa khung, không bị cắt chữ */
 .inline-math-container {
   display: inline;
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+.inline-math-container table,
+.inline-math-container table th,
+.inline-math-container table td {
+  color: #ffffff !important;
 }
 
 .inline-math-item {

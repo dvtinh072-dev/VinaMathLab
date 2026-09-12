@@ -5027,4 +5027,1397 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       }
     ]
   }
+
+,
+  // ==========================================
+  // BÀI 5: DÃY SỐ
+  // ==========================================
+  "t11-b5-day-so": {
+  "quizQuestions": [
+    {
+      "id": "ai-11.5.1",
+      "badge": "Luyện thêm 1 - Khai triển dãy số lũy thừa",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $3; 9; 27; 81; \\dots$ Số hạng tổng quát $u_n$ của dãy số này là:",
+      "options": [
+        "$u_n = 3^n$",
+        "$u_n = 3n$",
+        "$u_n = 3^{n-1}$",
+        "$u_n = 3n^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_1 = 3^1, u_2 = 3^2, u_3 = 3^3, u_4 = 3^4, \\dots$ Do đó số hạng tổng quát là $u_n = 3^n$."
+    },
+    {
+      "id": "ai-11.5.2",
+      "badge": "Luyện thêm 2 - Tìm số hạng thứ 6 của phân thức",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n - 2}{2n + 1}$. Giá trị của số hạng $u_6$ bằng:",
+      "options": [
+        "$\\dfrac{16}{13}$",
+        "$\\dfrac{14}{13}$",
+        "$\\dfrac{18}{13}$",
+        "$\\dfrac{16}{11}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 6$ vào công thức: $u_6 = \\dfrac{3(6) - 2}{2(6) + 1} = \\dfrac{18 - 2}{12 + 1} = \\dfrac{16}{13}$."
+    },
+    {
+      "id": "ai-11.5.3",
+      "badge": "Luyện thêm 3 - Dãy số dấu đan xen bậc nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $1; -4; 9; -16; 25; \\dots$ Số hạng tổng quát $u_n$ của dãy số là:",
+      "options": [
+        "$u_n = (-1)^{n+1} \\cdot n^2$",
+        "$u_n = (-1)^n \\cdot n^2$",
+        "$u_n = -n^2$",
+        "$u_n = (-1)^{n-1} \\cdot 2n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dãy số gồm bình phương của các số tự nhiên với dấu dương ở vị trí lẻ, dấu âm ở vị trí chẵn. Do đó $u_n = (-1)^{n+1} \\cdot n^2$."
+    },
+    {
+      "id": "ai-11.5.4",
+      "badge": "Luyện thêm 4 - Số hạng tổng quát dạng phân thức bậc nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số có các số hạng đầu là $\\dfrac{1}{2}; \\dfrac{2}{3}; \\dfrac{3}{4}; \\dfrac{4}{5}; \\dots$ Số hạng tổng quát $u_n$ của dãy số này là:",
+      "options": [
+        "$u_n = \\dfrac{n}{n + 1}$",
+        "$u_n = \\dfrac{n - 1}{n}$",
+        "$u_n = \\dfrac{n}{n + 2}$",
+        "$u_n = \\dfrac{n + 1}{n + 2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tử số là $1, 2, 3, 4, \\dots$ tương ứng với $n$. Mẫu số lớn hơn tử số 1 đơn vị nên là $n + 1$. Vậy $u_n = \\dfrac{n}{n + 1}$."
+    },
+    {
+      "id": "ai-11.5.5",
+      "badge": "Luyện thêm 5 - Kiểm tra số hạng của dãy số",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 4n - 3$. Số $197$ là số hạng thứ mấy của dãy số?",
+      "options": [
+        "Số hạng thứ $50$",
+        "Số hạng thứ $49$",
+        "Số hạng thứ $51$",
+        "Không thuộc dãy số"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giải phương trình $4n - 3 = 197 \\Leftrightarrow 4n = 200 \\Leftrightarrow n = 50 \\in \\mathbb{N}^*$. Vậy 197 là số hạng thứ 50."
+    },
+    {
+      "id": "ai-11.5.6",
+      "badge": "Luyện thêm 6 - Dãy số tổng bình phương",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 1 + 3 + 5 + \\dots + (2n - 1)$. Công thức rút gọn của $u_n$ là:",
+      "options": [
+        "$u_n = n^2$",
+        "$u_n = n(n + 1)$",
+        "$u_n = n^2 + 1$",
+        "$u_n = 2n^2 - 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng của $n$ số lẻ đầu tiên bằng bình phương của số các số hạng: $1 + 3 + 5 + \\dots + (2n - 1) = n^2$."
+    },
+    {
+      "id": "ai-11.5.7",
+      "badge": "Luyện thêm 7 - Tìm ba số hạng đầu của dãy căn thức",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\sqrt{3n + 1}$. Ba số hạng đầu tiên của dãy số là:",
+      "options": [
+        "$2; \\sqrt{7}; \\sqrt{10}$",
+        "$2; \\sqrt{6}; 3$",
+        "$1; \\sqrt{7}; \\sqrt{10}$",
+        "$2; \\sqrt{8}; \\sqrt{11}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = \\sqrt{3(1) + 1} = \\sqrt{4} = 2$.\n• $u_2 = \\sqrt{3(2) + 1} = \\sqrt{7}$.\n• $u_3 = \\sqrt{3(3) + 1} = \\sqrt{10}$."
+    },
+    {
+      "id": "ai-11.5.8",
+      "badge": "Luyện thêm 8 - Tìm số hạng từ dãy truy hồi",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 3$ và $u_{n+1} = u_n + 4$ ($n \\ge 1$). Số hạng $u_5$ bằng:",
+      "options": [
+        "$19$",
+        "$15$",
+        "$23$",
+        "$16$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức tổng quát của cấp số cộng này là $u_n = u_1 + (n - 1)d = 3 + 4(n - 1) = 4n - 1$.\nVới $n = 5$: $u_5 = 4(5) - 1 = 19$."
+    },
+    {
+      "id": "ai-11.5.9",
+      "badge": "Luyện thêm 9 - Dãy truy hồi nhân hệ số 3",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = 3u_n$ ($n \\ge 1$). Số hạng $u_4$ bằng:",
+      "options": [
+        "$27$",
+        "$9$",
+        "$81$",
+        "$12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_1 = 1, u_2 = 3, u_3 = 9, u_4 = 27$."
+    },
+    {
+      "id": "ai-11.5.10",
+      "badge": "Luyện thêm 10 - Tìm công thức dãy số 2; 6; 12; 20",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số có các số hạng đầu là $2; 6; 12; 20; 30; \\dots$ Công thức số hạng tổng quát $u_n$ là:",
+      "options": [
+        "$u_n = n(n + 1)$",
+        "$u_n = n^2 + 1$",
+        "$u_n = 2n^2$",
+        "$u_n = n(n + 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhận xét:\n$u_1 = 1 \\cdot 2 = 2$\n$u_2 = 2 \\cdot 3 = 6$\n$u_3 = 3 \\cdot 4 = 12$\n$u_4 = 4 \\cdot 5 = 20$\nVậy $u_n = n(n + 1)$."
+    },
+    {
+      "id": "ai-11.5.11",
+      "badge": "Luyện thêm 11 - Dãy truy hồi u_{n+1} = 2u_n + 3",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = 2u_n + 3$ với mọi $n \\ge 1$. Ba số hạng đầu tiên của dãy số là:",
+      "options": [
+        "$1; 5; 13$",
+        "$1; 5; 11$",
+        "$1; 4; 11$",
+        "$1; 5; 15$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = 1$\n• $u_2 = 2(1) + 3 = 5$\n• $u_3 = 2(5) + 3 = 13$."
+    },
+    {
+      "id": "ai-11.5.12",
+      "badge": "Luyện thêm 12 - CTTQ của dãy u_{n+1} = 2u_n + 3",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Số hạng tổng quát $u_n$ của dãy số ở câu trên ($u_1 = 1, u_{n+1} = 2u_n + 3$) là:",
+      "options": [
+        "$u_n = 2^{n+1} - 3$",
+        "$u_n = 2^n - 1$",
+        "$u_n = 2^{n-1} + 3$",
+        "$u_n = 3 \\cdot 2^{n-1} - 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cộng 3 vào hai vế: $u_{n+1} + 3 = 2(u_n + 3)$.\nĐặt $v_n = u_n + 3 \\Rightarrow v_1 = 1 + 3 = 4 = 2^2$.\nKhi đó $v_{n+1} = 2v_n \\Rightarrow v_n = 4 \\cdot 2^{n-1} = 2^{n+1}$.\nSuy ra $u_n = v_n - 3 = 2^{n+1} - 3$."
+    },
+    {
+      "id": "ai-11.5.13",
+      "badge": "Luyện thêm 13 - Dãy truy hồi tổng các số tự nhiên",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = u_n + (n + 1)$ với mọi $n \\ge 1$. Số hạng tổng quát $u_n$ là:",
+      "options": [
+        "$u_n = \\dfrac{n(n + 1)}{2}$",
+        "$u_n = n^2$",
+        "$u_n = \\dfrac{n(n - 1)}{2}$",
+        "$u_n = n^2 + n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $u_n - u_{n-1} = n$. Cộng dồn: $u_n = 1 + 2 + 3 + \\dots + n = \\dfrac{n(n + 1)}{2}$."
+    },
+    {
+      "id": "ai-11.5.14",
+      "badge": "Luyện thêm 14 - Dãy truy hồi nghịch đảo",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = \\dfrac{1}{2}$ và $u_{n+1} = \\dfrac{u_n}{2u_n + 1}$ với mọi $n \\ge 1$. Số hạng $u_{10}$ bằng:",
+      "options": [
+        "$\\dfrac{1}{20}$",
+        "$\\dfrac{1}{11}$",
+        "$\\dfrac{1}{19}$",
+        "$\\dfrac{1}{22}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nghịch đảo: $\\dfrac{1}{u_{n+1}} = \\dfrac{2u_n + 1}{u_n} = \\dfrac{1}{u_n} + 2$.\nĐặt $v_n = \\dfrac{1}{u_n} \\Rightarrow v_1 = 2$ và $v_{n+1} = v_n + 2$.\nDo đó $v_n = 2 + 2(n - 1) = 2n \\Rightarrow u_n = \\dfrac{1}{2n}$.\nVới $n = 10: u_{10} = \\dfrac{1}{20}$."
+    },
+    {
+      "id": "ai-11.5.15",
+      "badge": "Luyện thêm 15 - Dãy số bậc hai u_{n+1} = u_n + 4n",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 3$ và $u_{n+1} = u_n + 4n$ với mọi $n \\ge 1$. Số hạng $u_4$ bằng:",
+      "options": [
+        "$27$",
+        "$23$",
+        "$15$",
+        "$31$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_2 = u_1 + 4(1) = 3 + 4 = 7$\n• $u_3 = u_2 + 4(2) = 7 + 8 = 15$\n• $u_4 = u_3 + 4(3) = 15 + 12 = 27$."
+    },
+    {
+      "id": "ai-11.5.16",
+      "badge": "Luyện thêm 16 - Dãy số Fibonacci tính tổng",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy Fibonacci với $F_1 = 1, F_2 = 1$ và $F_{n+2} = F_{n+1} + F_n$. Tổng của 5 số hạng đầu tiên $S_5 = F_1 + F_2 + F_3 + F_4 + F_5$ bằng:",
+      "options": [
+        "$12$",
+        "$11$",
+        "$13$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Năm số hạng đầu: $F_1 = 1, F_2 = 1, F_3 = 2, F_4 = 3, F_5 = 5$.\nTổng $S_5 = 1 + 1 + 2 + 3 + 5 = 12$."
+    },
+    {
+      "id": "ai-11.5.17",
+      "badge": "Luyện thêm 17 - Số hạng thứ n của dãy số mũ",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 2^n - 1$. Số 127 là số hạng thứ mấy của dãy số?",
+      "options": [
+        "Số hạng thứ $7$",
+        "Số hạng thứ $6$",
+        "Số hạng thứ $8$",
+        "Số hạng thứ $5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giải $2^n - 1 = 127 \\Leftrightarrow 2^n = 128 = 2^7 \\Leftrightarrow n = 7$."
+    },
+    {
+      "id": "ai-11.5.18",
+      "badge": "Luyện thêm 18 - Dãy số tuần hoàn chu kỳ 4",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$. Giá trị của $u_{100}$ bằng:",
+      "options": [
+        "$-1$",
+        "$0$",
+        "$1$",
+        "$\\dfrac{1}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 100$: $u_{100} = \\cos\\left(\\dfrac{100\\pi}{2}\\right) = \\cos(50\\pi) = 1$."
+    },
+    {
+      "id": "ai-11.5.19",
+      "badge": "Luyện thêm 19 - Dãy số nghiệm nguyên",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n^2 + 3}{n + 1}$. Có bao nhiêu giá trị $n \\in \\mathbb{N}^*$ để $u_n$ nhận giá trị nguyên?",
+      "options": [
+        "$2$",
+        "$1$",
+        "$3$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chia đa thức: $u_n = \\dfrac{(n^2 - 1) + 4}{n + 1} = n - 1 + \\dfrac{4}{n + 1}$.\nĐể $u_n$ nguyên thì $n + 1$ là ước của 4. Với $n \\in \\mathbb{N}^* \\Rightarrow n + 1 \\ge 2$.\nCác ước là 2 và 4:\n• $n + 1 = 2 \\Rightarrow n = 1 \\in \\mathbb{N}^*$.\n• $n + 1 = 4 \\Rightarrow n = 3 \\in \\mathbb{N}^*$.\nVậy có đúng 2 giá trị nguyên dương của $n$."
+    },
+    {
+      "id": "ai-11.5.20",
+      "badge": "Luyện thêm 20 - Dãy số tổng phân thức bậc hai",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{1}{1 \\cdot 4} + \\dfrac{1}{4 \\cdot 7} + \\dots + \\dfrac{1}{(3n-2)(3n+1)}$. Công thức rút gọn của $u_n$ là:",
+      "options": [
+        "$u_n = \\dfrac{n}{3n + 1}$",
+        "$u_n = \\dfrac{1}{3n + 1}$",
+        "$u_n = \\dfrac{3n}{3n + 1}$",
+        "$u_n = \\dfrac{n}{3n - 2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\dfrac{1}{(3k-2)(3k+1)} = \\dfrac{1}{3}\\left(\\dfrac{1}{3k-2} - \\dfrac{1}{3k+1}\\right)$.\nRút gọn: $u_n = \\dfrac{1}{3}\\left(1 - \\dfrac{1}{3n+1}\\right) = \\dfrac{1}{3} \\cdot \\dfrac{3n}{3n+1} = \\dfrac{n}{3n+1}$."
+    },
+    {
+      "id": "ai-11.5.21",
+      "badge": "Luyện thêm 21 - Dãy số tăng bậc nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dãy số nào sau đây là dãy số tăng?",
+      "options": [
+        "$u_n = 3n - 5$",
+        "$u_n = -2n + 1$",
+        "$u_n = \\dfrac{2}{n}$",
+        "$u_n = 1 - n^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét $u_n = 3n - 5$: $u_{n+1} - u_n = [3(n+1) - 5] - (3n - 5) = 3 > 0,\\; \\forall n$. Vậy $(u_n)$ là dãy tăng."
+    },
+    {
+      "id": "ai-11.5.22",
+      "badge": "Luyện thêm 22 - Dãy số giảm phân thức",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dãy số nào sau đây là dãy số giảm?",
+      "options": [
+        "$u_n = \\dfrac{2n + 3}{n + 1}$",
+        "$u_n = \\dfrac{n - 1}{n + 1}$",
+        "$u_n = 2^n$",
+        "$u_n = n^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét tích chéo phân thức $u_n = \\dfrac{2n + 3}{n + 1}$: tử số của $u_{n+1} - u_n$ là $2(1) - 3(1) = -1 < 0$. Mẫu số dương nên dãy số giảm."
+    },
+    {
+      "id": "ai-11.5.23",
+      "badge": "Luyện thêm 23 - Tính tăng giảm của dãy mũ âm",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\left(\\dfrac{2}{3}\\right)^n$. Mệnh đề nào sau đây đúng?",
+      "options": [
+        "$(u_n)$ là dãy số giảm",
+        "$(u_n)$ là dãy số tăng",
+        "$(u_n)$ không tăng không giảm",
+        "$(u_n)$ có cả số âm lẫn số dương"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì cơ số $0 < \\dfrac{2}{3} < 1$ và $u_n > 0$ nên $\\dfrac{u_{n+1}}{u_n} = \\dfrac{2}{3} < 1$. Do đó $(u_n)$ là dãy số giảm."
+    },
+    {
+      "id": "ai-11.5.24",
+      "badge": "Luyện thêm 24 - Tìm tham số để dãy phân thức tăng",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 3}{n + 2}$. Dãy số $(u_n)$ là dãy số tăng khi và chỉ khi:",
+      "options": [
+        "$a > \\dfrac{3}{2}$",
+        "$a < \\dfrac{3}{2}$",
+        "$a > 3$",
+        "$a \\ge \\dfrac{3}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét tích chéo: $2a - 3 > 0 \\Leftrightarrow a > \\dfrac{3}{2}$."
+    },
+    {
+      "id": "ai-11.5.25",
+      "badge": "Luyện thêm 25 - Tính tăng giảm của dãy căn bậc hai",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\sqrt{n^2 + 1} - n$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "$(u_n)$ là dãy số giảm",
+        "$(u_n)$ là dãy số tăng",
+        "$(u_n)$ là dãy hằng",
+        "$(u_n)$ không tăng không giảm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân liên hợp: $u_n = \\dfrac{1}{\\sqrt{n^2 + 1} + n}$. Khi $n$ tăng thì mẫu số tăng ngặt nên $u_n$ giảm ngặt."
+    },
+    {
+      "id": "ai-11.5.26",
+      "badge": "Luyện thêm 26 - Dãy không tăng không giảm chứa cos",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dãy số nào sau đây không phải là dãy số đơn điệu?",
+      "options": [
+        "$u_n = (-1)^n$",
+        "$u_n = 4n - 1$",
+        "$u_n = \\dfrac{1}{3^n}$",
+        "$u_n = -n^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dãy $u_n = (-1)^n$ nhận các giá trị đan dấu $-1; 1; -1; 1; \\dots$ nên không tăng và không giảm (không đơn điệu)."
+    },
+    {
+      "id": "ai-11.5.27",
+      "badge": "Luyện thêm 27 - Dãy số tăng với tỉ số giai thừa",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2^n}{n!}$. Dãy số $(u_n)$ giảm kể từ số hạng thứ mấy?",
+      "options": [
+        "Kể từ số hạng thứ $2$ ($n \\ge 2$)",
+        "Kể từ số hạng thứ $1$ ($n \\ge 1$)",
+        "Kể từ số hạng thứ $3$ ($n \\ge 3$)",
+        "Dãy số luôn tăng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét tỉ số $\\dfrac{u_{n+1}}{u_n} = \\dfrac{2^{n+1}}{(n+1)!} \\cdot \\dfrac{n!}{2^n} = \\dfrac{2}{n + 1}$.\nĐể dãy số giảm thì $\\dfrac{u_{n+1}}{u_n} < 1 \\Leftrightarrow \\dfrac{2}{n+1} < 1 \\Leftrightarrow n + 1 > 2 \\Leftrightarrow n > 1$.\nVậy dãy số giảm kể từ $n \\ge 2$."
+    },
+    {
+      "id": "ai-11.5.28",
+      "badge": "Luyện thêm 28 - Dãy số chứa tham số nghịch biến",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{(m - 2)n + 1}{n + 1}$. Có bao nhiêu giá trị nguyên của $m \\in [-5; 5]$ để dãy số $(u_n)$ là dãy số tăng?",
+      "options": [
+        "$3$",
+        "$4$",
+        "$5$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tích chéo: $(m - 2)(1) - 1(1) = m - 3$.\nĐể dãy số tăng thì $m - 3 > 0 \\Leftrightarrow m > 3$.\nDo $m \\in [-5; 5]$ và $m \\in \\mathbb{Z}$ nên $m \\in \\{4; 5\\}$, có đúng 2 giá trị."
+    },
+    {
+      "id": "ai-11.5.29",
+      "badge": "Luyện thêm 29 - Dãy đa thức bậc hai tăng ngặt",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = n^2 - 6n + 1$. Dãy số $(u_n)$ bắt đầu tăng kể từ số hạng thứ mấy?",
+      "options": [
+        "Kể từ số hạng thứ $3$ ($n \\ge 3$)",
+        "Kể từ số hạng thứ $1$ ($n \\ge 1$)",
+        "Kể từ số hạng thứ $4$ ($n \\ge 4$)",
+        "Kể từ số hạng thứ $2$ ($n \\ge 2$)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét $u_{n+1} - u_n = [(n+1)^2 - 6(n+1) + 1] - (n^2 - 6n + 1) = 2n - 5$.\nĐể dãy số tăng thì $2n - 5 > 0 \\Leftrightarrow n > 2,5 \\Rightarrow n \\ge 3$.\nVậy dãy số tăng kể từ số hạng thứ 3."
+    },
+    {
+      "id": "ai-11.5.30",
+      "badge": "Luyện thêm 30 - So sánh tính đơn điệu",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Khẳng định nào sau đây là SAI?",
+      "options": [
+        "Mọi dãy số bị chặn đều là dãy số tăng hoặc giảm",
+        "Nếu $u_{n+1} > u_n$ với mọi $n \\in \\mathbb{N}^*$ thì $(u_n)$ là dãy số tăng",
+        "Dãy số hằng $u_n = c$ vừa là dãy không tăng, vừa là dãy không giảm",
+        "Dãy số $u_n = \\dfrac{1}{n}$ là dãy số giảm và bị chặn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Phát biểu 'Mọi dãy số bị chặn đều là dãy số tăng hoặc giảm' là SAI. Ví dụ dãy $u_n = (-1)^n$ bị chặn trong $[-1; 1]$ nhưng không tăng cũng không giảm."
+    },
+    {
+      "id": "ai-11.5.31",
+      "badge": "Luyện thêm 31 - Dãy số bị chặn bởi hàm lượng giác",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dãy số nào sau đây bị chặn?",
+      "options": [
+        "$u_n = \\dfrac{\\sin n}{n}$",
+        "$u_n = n^2$",
+        "$u_n = 2^n$",
+        "$u_n = -3n + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $|\\sin n| \\le 1$ và $n \\ge 1$ nên $|u_n| = \\left|\\dfrac{\\sin n}{n}\\right| \\le \\dfrac{1}{n} \\le 1$. Do đó $-1 \\le u_n \\le 1$, dãy số bị chặn."
+    },
+    {
+      "id": "ai-11.5.32",
+      "badge": "Luyện thêm 32 - Dãy bị chặn trên",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 4 - 3n^2$. Dãy số $(u_n)$:",
+      "options": [
+        "Bị chặn trên bởi $1$",
+        "Bị chặn dưới bởi $1$",
+        "Bị chặn cả hai phía",
+        "Không bị chặn trên"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $n \\ge 1 \\Rightarrow n^2 \\ge 1 \\Rightarrow -3n^2 \\le -3 \\Rightarrow 4 - 3n^2 \\le 4 - 3 = 1$. Vậy $(u_n)$ bị chặn trên bởi 1."
+    },
+    {
+      "id": "ai-11.5.33",
+      "badge": "Luyện thêm 33 - Chặn của phân thức bậc nhất",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n - 1}{n + 1}$. Dãy số $(u_n)$ bị chặn trong khoảng nào?",
+      "options": [
+        "$[1; 3)$",
+        "$(0; 3)$",
+        "$[1; 4]$",
+        "$[0; 2]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = \\dfrac{3(1) - 1}{1 + 1} = 1$.\n• $u_n = \\dfrac{3(n+1) - 4}{n+1} = 3 - \\dfrac{4}{n+1} < 3$ với mọi $n$.\n• Vì dãy tăng nên $1 \\le u_n < 3,\\; \\forall n \\in \\mathbb{N}^*$."
+    },
+    {
+      "id": "ai-11.5.34",
+      "badge": "Luyện thêm 34 - Khảo sát bị chặn bằng Cô-si",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n^2 + 4}{n}$. Giá trị nhỏ nhất của số hạng $u_n$ là:",
+      "options": [
+        "$4$",
+        "$5$",
+        "$\\dfrac{5}{2}$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tách $u_n = n + \\dfrac{4}{n}$. Áp dụng BĐT Cô-si cho hai số dương $n$ và $\\dfrac{4}{n}$:\n$u_n \\ge 2\\sqrt{n \\cdot \\dfrac{4}{n}} = 4$.\nDấu '=' xảy ra khi $n = \\dfrac{4}{n} \\Leftrightarrow n^2 = 4 \\Leftrightarrow n = 2 \\in \\mathbb{N}^*$. Vậy GTNN là 4."
+    },
+    {
+      "id": "ai-11.5.35",
+      "badge": "Luyện thêm 35 - Dãy số bị chặn dưới bởi 0",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dãy số nào sau đây bị chặn dưới bởi 0 nhưng không bị chặn trên?",
+      "options": [
+        "$u_n = n^2 + \\sqrt{n}$",
+        "$u_n = \\dfrac{1}{n^2 + 1}$",
+        "$u_n = \\cos n$",
+        "$u_n = -2n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với mọi $n \\ge 1$, $u_n = n^2 + \\sqrt{n} > 0$ nên bị chặn dưới bởi 0. Khi $n \\to +\\infty$ thì $u_n \\to +\\infty$ nên không bị chặn trên."
+    },
+    {
+      "id": "ai-11.5.36",
+      "badge": "Luyện thêm 36 - Bài toán tiền gửi ngân hàng theo năm",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Một người gửi 50 triệu đồng vào ngân hàng với lãi suất $7\\%/\\text{năm}$ theo hình thức lãi kép kì hạn 1 năm. Sau 5 năm, số tiền cả gốc và lãi người đó thu được là:",
+      "options": [
+        "Xấp xỉ $70,13$ triệu đồng",
+        "Xấp xỉ $67,50$ triệu đồng",
+        "Xấp xỉ $72,50$ triệu đồng",
+        "Xấp xỉ $65,00$ triệu đồng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức lãi kép: $T_5 = 50(1 + 0,07)^5 = 50(1,07)^5 \\approx 50 \\cdot 1,40255 = 70,1275 \\approx 70,13$ triệu đồng."
+    },
+    {
+      "id": "ai-11.5.37",
+      "badge": "Luyện thêm 37 - Bài toán tăng dân số",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Dân số của một thành phố hiện nay là 2 triệu người. Giả sử tốc độ tăng dân số hàng năm là $1,2\\%$. Sau $n$ năm, dân số thành phố được dự báo theo công thức:",
+      "options": [
+        "$P_n = 2 \\cdot (1,012)^n$ (triệu người)",
+        "$P_n = 2 \\cdot (1,12)^n$ (triệu người)",
+        "$P_n = 2 + 0,012n$ (triệu người)",
+        "$P_n = 2 \\cdot (0,012)^n$ (triệu người)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dân số tăng theo cấp số nhân với công bội $q = 1 + 1,2\\% = 1,012$. Công thức sau $n$ năm là $P_n = 2(1,012)^n$ triệu người."
+    },
+    {
+      "id": "ai-11.5.38",
+      "badge": "Luyện thêm 38 - Bài toán phân đôi tế bào",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Một tế bào ban đầu cứ sau 30 phút lại phân chia làm 2 tế bào mới. Sau 4 giờ, tổng số tế bào con tạo thành là:",
+      "options": [
+        "$256$",
+        "$128$",
+        "$512$",
+        "$64$"
+      ],
+      "correctIndex": 0,
+      "explanation": "4 giờ = 240 phút $\\Rightarrow$ số chu kỳ phân chia là $\\dfrac{240}{30} = 8$. Số tế bào là $2^8 = 256$ tế bào."
+    },
+    {
+      "id": "ai-11.5.39",
+      "badge": "Luyện thêm 39 - Tháp Hà Nội với 5 đĩa",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Số bước di chuyển tối thiểu để hoàn thành trò chơi Tháp Hà Nội với 5 chiếc đĩa là:",
+      "options": [
+        "$31$",
+        "$32$",
+        "$16$",
+        "$15$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số bước tối thiểu là $u_n = 2^n - 1$. Với $n = 5$: $u_5 = 2^5 - 1 = 32 - 1 = 31$ bước."
+    },
+    {
+      "id": "ai-11.5.40",
+      "badge": "Luyện thêm 40 - Lãi kép tìm lãi suất tháng",
+      "isAiGenerated": true,
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
+      "question": "Một người gửi 100 triệu đồng sau 2 tháng nhận được cả gốc lẫn lãi là 101,0025 triệu đồng theo hình thức lãi kép. Lãi suất tháng của ngân hàng đó là:",
+      "options": [
+        "$0,5\\%/\\text{tháng}$",
+        "$0,6\\%/\\text{tháng}$",
+        "$0,4\\%/\\text{tháng}$",
+        "$1,0\\%/\\text{tháng}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $100(1 + r)^2 = 101,0025 \\Leftrightarrow (1 + r)^2 = 1,010025 \\Leftrightarrow 1 + r = 1,005 \\Rightarrow r = 0,005 = 0,5\\%/\\text{tháng}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-11.5.1",
+      "badge": "Luyện thêm Đúng/Sai 1 - Dãy số u_n = n / 4^n",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n}{4^n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ba số hạng đầu của dãy số là $u_1 = \\dfrac{1}{4}, u_2 = \\dfrac{1}{8}, u_3 = \\dfrac{3}{64}$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = \\dfrac{1}{4}$, $u_2 = \\dfrac{2}{16} = \\dfrac{1}{8}$, $u_3 = \\dfrac{3}{64}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": true,
+          "explanation": "$\\dfrac{u_{n+1}}{u_n} = \\dfrac{n+1}{4n} = \\dfrac{1}{4} + \\dfrac{1}{4n} \\le \\dfrac{1}{2} < 1,\\; \\forall n \\ge 1$. Do đó dãy số giảm."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $\\dfrac{1}{4}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $(u_n)$ là dãy số giảm nên $u_n \\le u_1 = \\dfrac{1}{4}$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ không bị chặn dưới.",
+          "correctAnswer": false,
+          "explanation": "Vì $u_n > 0$ với mọi $n \\in \\mathbb{N}^*$, nên dãy số bị chặn dưới bởi 0."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.2",
+      "badge": "Luyện thêm Đúng/Sai 2 - Dãy số u_n = (n + 1) / (n + 2)",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = \\dfrac{n + 1}{n + 2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu tiên của dãy số là $u_1 = \\dfrac{2}{3}$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = \\dfrac{1 + 1}{1 + 2} = \\dfrac{2}{3}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": false,
+          "explanation": "$u_{n+1} - u_n = \\dfrac{n+2}{n+3} - \\dfrac{n+1}{n+2} = \\dfrac{1}{(n+3)(n+2)} > 0$, do đó dãy số là dãy tăng."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $1$.",
+          "correctAnswer": true,
+          "explanation": "$u_n = 1 - \\dfrac{1}{n+2} < 1$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn.",
+          "correctAnswer": true,
+          "explanation": "Vì $\\dfrac{2}{3} \\le u_n < 1$ với mọi $n \\ge 1$ nên dãy số bị chặn."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.3",
+      "badge": "Luyện thêm Đúng/Sai 3 - Dãy số u_n = n + 1/n",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = n + \\dfrac{1}{n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng thứ hai của dãy số là $u_2 = \\dfrac{5}{2}$.",
+          "correctAnswer": true,
+          "explanation": "$u_2 = 2 + \\dfrac{1}{2} = \\dfrac{5}{2}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "$u_{n+1} - u_n = 1 - \\dfrac{1}{n(n+1)} = \\dfrac{n(n+1) - 1}{n(n+1)} > 0,\\; \\forall n \\ge 1$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn dưới bởi $2$.",
+          "correctAnswer": true,
+          "explanation": "Theo bất đẳng thức Cô-si: $n + \\dfrac{1}{n} \\ge 2\\sqrt{n \\cdot \\dfrac{1}{n}} = 2$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $100$.",
+          "correctAnswer": false,
+          "explanation": "Khi $n$ tăng vô hạn thì $u_n \\to +\\infty$, dãy số không bị chặn trên."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.4",
+      "badge": "Luyện thêm Đúng/Sai 4 - Dãy số u_n = 3n - 4",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 3n - 4$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu tiên của dãy số là $u_1 = -1$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = 3(1) - 4 = -1$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "$u_{n+1} - u_n = [3(n+1) - 4] - (3n - 4) = 3 > 0$."
+        },
+        {
+          "id": "c",
+          "text": "Số $101$ là một số hạng của dãy số.",
+          "correctAnswer": true,
+          "explanation": "Giải $3n - 4 = 101 \\Leftrightarrow 3n = 105 \\Leftrightarrow n = 35 \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ bị chặn cả hai phía.",
+          "correctAnswer": false,
+          "explanation": "Dãy số tăng vô hạn khi $n \\to +\\infty$ nên không bị chặn trên."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.5",
+      "badge": "Luyện thêm Đúng/Sai 5 - Dãy truy hồi tích",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 2$ và $u_{n+1} = 3u_n$ ($n \\ge 1$). Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng thứ 3 của dãy số là $u_3 = 18$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = 2, u_2 = 6, u_3 = 18$."
+        },
+        {
+          "id": "b",
+          "text": "Công thức số hạng tổng quát là $u_n = 2 \\cdot 3^{n-1}$.",
+          "correctAnswer": true,
+          "explanation": "$(u_n)$ là cấp số nhân có $u_1 = 2, q = 3 \\Rightarrow u_n = 2 \\cdot 3^{n-1}$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": false,
+          "explanation": "Vì $u_1 = 2 > 0$ và công bội $q = 3 > 1$ nên dãy số tăng ngặt."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng thứ 5 của dãy số là $u_5 = 162$.",
+          "correctAnswer": true,
+          "explanation": "$u_5 = 2 \\cdot 3^4 = 2 \\cdot 81 = 162$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.6",
+      "badge": "Luyện thêm Đúng/Sai 6 - Dãy số u_n = (-1)^n",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = (-1)^n$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bốn số hạng đầu của dãy số là $-1; 1; -1; 1$.",
+          "correctAnswer": true,
+          "explanation": "Thay $n = 1, 2, 3, 4$: $u_1 = -1, u_2 = 1, u_3 = -1, u_4 = 1$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": false,
+          "explanation": "Dãy số đan dấu liên tục, không tăng không giảm."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn.",
+          "correctAnswer": true,
+          "explanation": "Vì $-1 \\le u_n \\le 1$ với mọi $n \\in \\mathbb{N}^*$ nên dãy bị chặn."
+        },
+        {
+          "id": "d",
+          "text": "Tổng của 100 số hạng đầu tiên bằng 0.",
+          "correctAnswer": true,
+          "explanation": "Gồm 50 cặp $(-1 + 1) = 0$. Tổng $S_{100} = 0$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.7",
+      "badge": "Luyện thêm Đúng/Sai 7 - Dãy số Fibonacci",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số Fibonacci $(F_n)$ với $F_1 = 1, F_2 = 1, F_{n+2} = F_{n+1} + F_n$ ($n \\ge 1$). Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $F_5 = 5$ và $F_6 = 8$.",
+          "correctAnswer": true,
+          "explanation": "$F_1 = 1, F_2 = 1, F_3 = 2, F_4 = 3, F_5 = 5, F_6 = 8$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(F_n)$ là dãy số tăng kể từ $n \\ge 2$.",
+          "correctAnswer": true,
+          "explanation": "Vì $F_{n+1} - F_n = F_{n-1} > 0,\\; \\forall n \\ge 2$ nên dãy số tăng kể từ $n \\ge 2$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(F_n)$ bị chặn trên.",
+          "correctAnswer": false,
+          "explanation": "Các số hạng Fibonacci tăng ra vô cực, không bị chặn trên."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng $F_7 = 13$.",
+          "correctAnswer": true,
+          "explanation": "$F_7 = F_6 + F_5 = 8 + 5 = 13$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.8",
+      "badge": "Luyện thêm Đúng/Sai 8 - Dãy phân số nghịch đảo u_n = 1/n",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{1}{n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": true,
+          "explanation": "$u_{n+1} - u_n = \\dfrac{1}{n+1} - \\dfrac{1}{n} = \\dfrac{-1}{n(n+1)} < 0$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $1$.",
+          "correctAnswer": true,
+          "explanation": "Vì dãy giảm nên $u_n \\le u_1 = 1$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn dưới bởi $0$.",
+          "correctAnswer": true,
+          "explanation": "Vì $n > 0 \\Rightarrow \\dfrac{1}{n} > 0,\\; \\forall n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Có số hạng của dãy nhận giá trị âm.",
+          "correctAnswer": false,
+          "explanation": "Mọi số hạng của dãy đều dương: $u_n > 0,\\; \\forall n$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.9",
+      "badge": "Luyện thêm Đúng/Sai 9 - Lãi kép gửi 100 triệu kì hạn 1 tháng",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Một người gửi tiết kiệm 100 triệu đồng kì hạn 1 tháng với lãi suất $0,6\\%/\\text{tháng}$ theo hình thức lãi kép. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sau 1 tháng, số tiền thu được là 100,6 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_1 = 100(1 + 0,006) = 100,6$ triệu đồng."
+        },
+        {
+          "id": "b",
+          "text": "Sau 2 tháng, số tiền thu được là 101,2036 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_2 = 100(1,006)^2 = 101,2036$ triệu đồng."
+        },
+        {
+          "id": "c",
+          "text": "Sau 12 tháng, số tiền cả gốc và lãi lớn hơn 107 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_{12} = 100(1,006)^{12} \\approx 107,44$ triệu đồng $> 107$ triệu đồng."
+        },
+        {
+          "id": "d",
+          "text": "Số tiền thu được sau $n$ tháng tạo thành một cấp số nhân.",
+          "correctAnswer": true,
+          "explanation": "$T_n = 100(1,006)^n$ là cấp số nhân có $u_1 = 100,6$ và công bội $q = 1,006$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.10",
+      "badge": "Luyện thêm Đúng/Sai 10 - Dãy số u_n = 2n^2 + 3",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2n^2 + 3$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_1 = 5$ và $u_2 = 11$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = 2(1) + 3 = 5, u_2 = 2(4) + 3 = 11$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "$u_{n+1} - u_n = 2(n+1)^2 - 2n^2 = 4n + 2 > 0$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn dưới bởi $5$.",
+          "correctAnswer": true,
+          "explanation": "$n \\ge 1 \\Rightarrow u_n \\ge u_1 = 5$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ bị chặn trên.",
+          "correctAnswer": false,
+          "explanation": "Dãy số tăng không bị chặn."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.11",
+      "badge": "Luyện thêm Đúng/Sai 11 - Dãy số lượng giác u_n = 2cos(n) + 1",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2\\cos(n) + 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Dãy số $(u_n)$ bị chặn trong đoạn $[-1; 3]$.",
+          "correctAnswer": true,
+          "explanation": "$-1 \\le \\cos n \\le 1 \\Rightarrow 2(-1) + 1 \\le u_n \\le 2(1) + 1 \\Leftrightarrow -1 \\le u_n \\le 3$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": false,
+          "explanation": "Hàm cos dao động tuần hoàn nên dãy không tăng không giảm."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn.",
+          "correctAnswer": true,
+          "explanation": "Vừa bị chặn trên vừa bị chặn dưới."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị $u_n$ có thể nhận giá trị bằng 4.",
+          "correctAnswer": false,
+          "explanation": "Giá trị lớn nhất của $u_n$ là 3 nên không thể bằng 4."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.12",
+      "badge": "Luyện thêm Đúng/Sai 12 - Dãy số u_n = (3n - 1) / (n + 2)",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n - 1}{n + 2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu tiên là $u_1 = \\dfrac{2}{3}$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = \\dfrac{3(1) - 1}{1 + 2} = \\dfrac{2}{3}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "Tích chéo $3(2) - (-1)(1) = 7 > 0$, do đó dãy tăng."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $3$.",
+          "correctAnswer": true,
+          "explanation": "$u_n = 3 - \\dfrac{7}{n+2} < 3,\\; \\forall n$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ không bị chặn dưới.",
+          "correctAnswer": false,
+          "explanation": "Dãy tăng nên bị chặn dưới bởi $u_1 = \\dfrac{2}{3}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.13",
+      "badge": "Luyện thêm Đúng/Sai 13 - Khấu hao tài sản 10%/năm",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Một chiếc máy tính mua mới với giá 20 triệu đồng. Mỗi năm giá trị của máy giảm $10\\%$ so với năm trước. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sau 1 năm, giá trị còn lại của máy tính là 18 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$20 \\cdot 0,9 = 18$ triệu đồng."
+        },
+        {
+          "id": "b",
+          "text": "Sau 2 năm, giá trị còn lại của máy tính là 16,2 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$18 \\cdot 0,9 = 16,2$ triệu đồng."
+        },
+        {
+          "id": "c",
+          "text": "Công thức giá trị sau $n$ năm là $V_n = 20 \\cdot (0,9)^n$ (triệu đồng).",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức suy giảm liên tiếp."
+        },
+        {
+          "id": "d",
+          "text": "Sau 3 năm, giá trị của máy tính giảm đi 5,4 triệu đồng so với lúc mua.",
+          "correctAnswer": false,
+          "explanation": "$V_3 = 20(0,9)^3 = 14,58$ triệu đồng. Giá trị giảm là $20 - 14,58 = 5,42$ triệu đồng $\\ne 5,4$ triệu đồng."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.14",
+      "badge": "Luyện thêm Đúng/Sai 14 - Dãy số u_n = 2^n - 1",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2^n - 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ba số hạng đầu của dãy số là $1; 3; 7$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = 2^1 - 1 = 1, u_2 = 2^2 - 1 = 3, u_3 = 2^3 - 1 = 7$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "$u_{n+1} - u_n = (2^{n+1} - 1) - (2^n - 1) = 2^n > 0$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên.",
+          "correctAnswer": false,
+          "explanation": "$u_n \\to +\\infty$ khi $n \\to +\\infty$."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng $u_6 = 63$.",
+          "correctAnswer": true,
+          "explanation": "$u_6 = 2^6 - 1 = 64 - 1 = 63$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.15",
+      "badge": "Luyện thêm Đúng/Sai 15 - Dãy số u_n = 1 / (n^2 + n)",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{1}{n(n+1)}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu tiên của dãy số là $u_1 = \\dfrac{1}{2}$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = \\dfrac{1}{1(2)} = \\dfrac{1}{2}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": true,
+          "explanation": "Mẫu số $n(n+1)$ tăng ngặt nên phân số giảm ngặt."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trong nửa khoảng $\\left(0; \\dfrac{1}{2}\\right]$.",
+          "correctAnswer": true,
+          "explanation": "$0 < u_n \\le u_1 = \\dfrac{1}{2}$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Số hạng $u_4 = \\dfrac{1}{16}$.",
+          "correctAnswer": false,
+          "explanation": "$u_4 = \\dfrac{1}{4 \\times 5} = \\dfrac{1}{20} \\ne \\dfrac{1}{16}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-11.5.16",
+      "badge": "Luyện thêm Đúng/Sai 16 - Vi khuẩn phân chia sau 15 phút",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 Đúng Sai",
+      "prompt": "Một loại vi khuẩn phân đôi cứ sau 15 phút một lần. Ban đầu có 2 vi khuẩn. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sau 1 giờ, số lần phân đôi là 4 lần.",
+          "correctAnswer": true,
+          "explanation": "60 phút / 15 phút = 4 lần."
+        },
+        {
+          "id": "b",
+          "text": "Sau 1 giờ, số lượng vi khuẩn tạo thành là 32 con.",
+          "correctAnswer": true,
+          "explanation": "$N = 2 \\cdot 2^4 = 32$ con."
+        },
+        {
+          "id": "c",
+          "text": "Sau 2 giờ, số lượng vi khuẩn tạo thành là 512 con.",
+          "correctAnswer": true,
+          "explanation": "Sau 2 giờ = 8 lần phân đôi: $N = 2 \\cdot 2^8 = 512$ con."
+        },
+        {
+          "id": "d",
+          "text": "Số lượng vi khuẩn sau $n$ giờ là $2 \\cdot 2^{4n} = 2^{4n+1}$ con.",
+          "correctAnswer": true,
+          "explanation": "Sau $n$ giờ có $4n$ chu kỳ: $N = 2 \\cdot 2^{4n} = 2^{4n+1}$ con."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-11.5.1",
+      "badge": "Luyện thêm 1 - Trả lời ngắn - Tìm số hạng thứ 8 của cấp số nhân",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 3 \\cdot 2^{n-1}$. Tìm số hạng $u_8$.",
+      "correctAnswer": "384",
+      "acceptableAnswers": [
+        "384"
+      ],
+      "explanation": "Thay $n = 8$: $u_8 = 3 \\cdot 2^7 = 3 \\cdot 128 = 384$."
+    },
+    {
+      "id": "ai-sa-11.5.2",
+      "badge": "Luyện thêm 2 - Trả lời ngắn - Tìm vị trí số hạng của dãy bậc nhất",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 5n - 2$. Số $248$ là số hạng thứ mấy của dãy số?",
+      "correctAnswer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "explanation": "Giải $5n - 2 = 248 \\Leftrightarrow 5n = 250 \\Leftrightarrow n = 50$."
+    },
+    {
+      "id": "ai-sa-11.5.3",
+      "badge": "Luyện thêm 3 - Trả lời ngắn - Tính u_5 của dãy truy hồi",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = 2u_n + 1$ ($n \\ge 1$). Tìm giá trị của số hạng $u_5$.",
+      "correctAnswer": "31",
+      "acceptableAnswers": [
+        "31"
+      ],
+      "explanation": "• $u_1 = 1$\n• $u_2 = 2(1) + 1 = 3$\n• $u_3 = 2(3) + 1 = 7$\n• $u_4 = 2(7) + 1 = 15$\n• $u_5 = 2(15) + 1 = 31$."
+    },
+    {
+      "id": "ai-sa-11.5.4",
+      "badge": "Luyện thêm 4 - Trả lời ngắn - Số hạng Fibonacci F_8",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy Fibonacci với $F_1 = 1, F_2 = 1, F_{n+2} = F_{n+1} + F_n$. Tìm giá trị của số hạng $F_8$.",
+      "correctAnswer": "21",
+      "acceptableAnswers": [
+        "21"
+      ],
+      "explanation": "Liệt kê: $F_1 = 1, F_2 = 1, F_3 = 2, F_4 = 3, F_5 = 5, F_6 = 8, F_7 = 13, F_8 = 21$."
+    },
+    {
+      "id": "ai-sa-11.5.5",
+      "badge": "Luyện thêm 5 - Trả lời ngắn - Tìm n để u_n = 100",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = n^2 + 2n - 19$. Tìm giá trị nguyên dương $n$ để $u_n = 101$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "Giải $n^2 + 2n - 19 = 101 \\Leftrightarrow n^2 + 2n - 120 = 0 \\Leftrightarrow (n - 10)(n + 12) = 0$.\nVì $n \\in \\mathbb{N}^*$ nên $n = 10$."
+    },
+    {
+      "id": "ai-sa-11.5.6",
+      "badge": "Luyện thêm 6 - Trả lời ngắn - Tính tổng 5 số hạng đầu",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2n + 1$. Tính tổng $S_5 = u_1 + u_2 + u_3 + u_4 + u_5$.",
+      "correctAnswer": "35",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "explanation": "Các số hạng là: $u_1 = 3, u_2 = 5, u_3 = 7, u_4 = 9, u_5 = 11$.\nTổng $S_5 = 3 + 5 + 7 + 9 + 11 = 35$."
+    },
+    {
+      "id": "ai-sa-11.5.7",
+      "badge": "Luyện thêm 7 - Trả lời ngắn - Tìm tham số m nguyên để dãy tăng",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{mn - 2}{n + 3}$. Tìm số giá trị nguyên dương $m < 5$ để dãy số $(u_n)$ là dãy số tăng.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Tích chéo: $3m - (-2)(1) = 3m + 2$.\nĐể dãy số tăng thì $3m + 2 > 0 \\Leftrightarrow m > -\\dfrac{2}{3}$.\nCác số nguyên dương $m < 5$ là $m \\in \\{1; 2; 3; 4\\}$, có đúng 4 giá trị."
+    },
+    {
+      "id": "ai-sa-11.5.8",
+      "badge": "Luyện thêm 8 - Trả lời ngắn - Giá trị nhỏ nhất của dãy số",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = n^2 - 8n + 25$. Tìm giá trị nhỏ nhất của số hạng $u_n$.",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "explanation": "Biến đổi $u_n = (n - 4)^2 + 9 \\ge 9$.\nDấu '=' xảy ra khi $n = 4 \\in \\mathbb{N}^*$. Vậy GTNN là 9."
+    },
+    {
+      "id": "ai-sa-11.5.9",
+      "badge": "Luyện thêm 9 - Trả lời ngắn - Lãi kép gửi 50 triệu",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Một người gửi tiết kiệm 50 triệu đồng kì hạn 1 tháng với lãi suất $0,5\\%/\\text{tháng}$ theo hình thức lãi kép. Sau 6 tháng, số tiền lãi người đó nhận được là bao nhiêu triệu đồng (làm tròn đến hàng phần trăm)?",
+      "correctAnswer": "1,52",
+      "acceptableAnswers": [
+        "1,52",
+        "1.52"
+      ],
+      "explanation": "Tổng số tiền nhận được: $T_6 = 50(1 + 0,005)^6 \\approx 51,519$ triệu đồng.\nTiền lãi: $51,519 - 50 = 1,519 \\approx 1,52$ triệu đồng."
+    },
+    {
+      "id": "ai-sa-11.5.10",
+      "badge": "Luyện thêm 10 - Trả lời ngắn - Số vi khuẩn sau 2 giờ",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Một quần thể vi khuẩn ban đầu có 5 cá thể, cứ sau 20 phút số lượng cá thể lại tăng gấp đôi. Hỏi sau 2 giờ có bao nhiêu cá thể vi khuẩn?",
+      "correctAnswer": "320",
+      "acceptableAnswers": [
+        "320"
+      ],
+      "explanation": "2 giờ = 120 phút = 6 chu kỳ.\nSố cá thể là $N = 5 \\cdot 2^6 = 5 \\cdot 64 = 320$ cá thể."
+    },
+    {
+      "id": "ai-sa-11.5.11",
+      "badge": "Luyện thêm 11 - Trả lời ngắn - Số bước Tháp Hà Nội 7 đĩa",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Số bước di chuyển tối thiểu để dời toàn bộ 7 đĩa trong trò chơi Tháp Hà Nội sang một cọc khác là bao nhiêu?",
+      "correctAnswer": "127",
+      "acceptableAnswers": [
+        "127"
+      ],
+      "explanation": "$u_7 = 2^7 - 1 = 128 - 1 = 127$ bước."
+    },
+    {
+      "id": "ai-sa-11.5.12",
+      "badge": "Luyện thêm 12 - Trả lời ngắn - Giá trị u_4 của dãy phân thức",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n^2 + 1}{n + 1}$. Tìm giá trị của số hạng $u_4$ dưới dạng số thập phân.",
+      "correctAnswer": "6,6",
+      "acceptableAnswers": [
+        "6,6",
+        "6.6"
+      ],
+      "explanation": "Thay $n = 4$: $u_4 = \\dfrac{2(16) + 1}{4 + 1} = \\dfrac{33}{5} = 6,6$."
+    },
+    {
+      "id": "ai-sa-11.5.13",
+      "badge": "Luyện thêm 13 - Trả lời ngắn - Dãy số u_{n+1} = u_n + 3n",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_1 = 1$ và $u_{n+1} = u_n + 3n$ ($n \\ge 1$). Tìm giá trị của số hạng $u_5$.",
+      "correctAnswer": "31",
+      "acceptableAnswers": [
+        "31"
+      ],
+      "explanation": "• $u_2 = 1 + 3 = 4$\n• $u_3 = 4 + 6 = 10$\n• $u_4 = 10 + 9 = 19$\n• $u_5 = 19 + 12 = 31$."
+    },
+    {
+      "id": "ai-sa-11.5.14",
+      "badge": "Luyện thêm 14 - Trả lời ngắn - Tìm vị trí số hạng của dãy u_n = 2^n - 3",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2^n - 3$. Số 509 là số hạng thứ mấy của dãy số?",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "explanation": "Giải $2^n - 3 = 509 \\Leftrightarrow 2^n = 512 = 2^9 \\Leftrightarrow n = 9$."
+    },
+    {
+      "id": "ai-sa-11.5.15",
+      "badge": "Luyện thêm 15 - Trả lời ngắn - Chặn trên của dãy phân số",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{4n + 1}{n + 2}$. Tìm số nguyên nhỏ nhất $M$ là một chặn trên của dãy số $(u_n)$.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Ta có $u_n = 4 - \\dfrac{7}{n+2} < 4$ với mọi $n \\in \\mathbb{N}^*$. Do đó số nguyên nhỏ nhất là chặn trên là $M = 4$."
+    },
+    {
+      "id": "ai-sa-11.5.16",
+      "badge": "Luyện thêm 16 - Trả lời ngắn - Tìm n để u_n là số nguyên",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n + 8}{n + 1}$. Tìm giá trị nguyên dương $n$ lớn nhất để $u_n$ nhận giá trị nguyên.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "$u_n = 3 + \\dfrac{5}{n+1}$. Để $u_n$ nguyên thì $n + 1$ là ước nguyên dương của 5.\nƯớc lớn nhất là $5 \\Rightarrow n + 1 = 5 \\Rightarrow n = 4$."
+    },
+    {
+      "id": "ai-sa-11.5.17",
+      "badge": "Luyện thêm 17 - Trả lời ngắn - Số hạng thứ 20 của cấp số cộng",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 7n - 5$. Tìm giá trị của số hạng $u_{20}$.",
+      "correctAnswer": "135",
+      "acceptableAnswers": [
+        "135"
+      ],
+      "explanation": "$u_{20} = 7(20) - 5 = 140 - 5 = 135$."
+    },
+    {
+      "id": "ai-sa-11.5.18",
+      "badge": "Luyện thêm 18 - Trả lời ngắn - Số tháng gửi tiết kiệm",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Một người gửi 50 triệu đồng với lãi suất $1\\%/\\text{tháng}$ lãi kép. Hỏi sau ít nhất bao nhiêu tháng người đó thu về số tiền lớn hơn 55 triệu đồng?",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$50(1,01)^n > 55 \\Leftrightarrow (1,01)^n > 1,1 \\Leftrightarrow n > \\log_{1,01}(1,1) \\approx 9,58$.\nVậy cần ít nhất 10 tháng."
+    },
+    {
+      "id": "ai-sa-11.5.19",
+      "badge": "Luyện thêm 19 - Trả lời ngắn - Khấu hao xe máy sau 2 năm",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Một chiếc xe máy có giá mua mới 40 triệu đồng. Sau mỗi năm giá trị xe giảm $10\\%$. Sau 2 năm sử dụng, giá trị còn lại của xe là bao nhiêu triệu đồng?",
+      "correctAnswer": "32,4",
+      "acceptableAnswers": [
+        "32,4",
+        "32.4"
+      ],
+      "explanation": "$V_2 = 40(0,9)^2 = 40 \\cdot 0,81 = 32,4$ triệu đồng."
+    },
+    {
+      "id": "ai-sa-11.5.20",
+      "badge": "Luyện thêm 20 - Trả lời ngắn - Tổng dãy phân số đảo",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho $u_n = \\dfrac{1}{1 \\cdot 2} + \\dfrac{1}{2 \\cdot 3} + \\dots + \\dfrac{1}{n(n+1)}$. Tìm giá trị của $u_9$ dưới dạng số thập phân.",
+      "correctAnswer": "0,9",
+      "acceptableAnswers": [
+        "0,9",
+        "0.9"
+      ],
+      "explanation": "$u_n = \\dfrac{n}{n+1} \\Rightarrow u_9 = \\dfrac{9}{10} = 0,9$."
+    },
+    {
+      "id": "ai-sa-11.5.21",
+      "badge": "Luyện thêm 21 - Trả lời ngắn - Dãy truy hồi u_{n+1} = u_n + 5",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ biết $u_1 = 4$ và $u_{n+1} = u_n + 5$. Tìm số hạng $u_{15}$.",
+      "correctAnswer": "74",
+      "acceptableAnswers": [
+        "74"
+      ],
+      "explanation": "$u_n = 4 + 5(n - 1) = 5n - 1$. Với $n = 15$: $u_{15} = 5(15) - 1 = 74$."
+    },
+    {
+      "id": "ai-sa-11.5.22",
+      "badge": "Luyện thêm 22 - Trả lời ngắn - Số hạng nhỏ nhất của hàm phân thức",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = n + \\dfrac{9}{n}$. Tìm giá trị nhỏ nhất của số hạng $u_n$.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Theo BĐT Cô-si: $n + \\dfrac{9}{n} \\ge 2\\sqrt{n \\cdot \\dfrac{9}{n}} = 6$.\nDấu '=' xảy ra khi $n = 3 \\in \\mathbb{N}^*$. Vậy GTNN là 6."
+    },
+    {
+      "id": "ai-sa-11.5.23",
+      "badge": "Luyện thêm 23 - Trả lời ngắn - Số hạng thứ 10 của dãy đan dấu",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = (-1)^{n+1} \\cdot 2n$. Tìm giá trị của số hạng $u_{10}$.",
+      "correctAnswer": "-20",
+      "acceptableAnswers": [
+        "-20"
+      ],
+      "explanation": "Thay $n = 10$: $u_{10} = (-1)^{11} \\cdot 2(10) = -20$."
+    },
+    {
+      "id": "ai-sa-11.5.24",
+      "badge": "Luyện thêm 24 - Trả lời ngắn - Số lượng số hạng nhỏ hơn 100",
+      "source": "Tài liệu Luyện tập Toán 11 C2B1 TLN",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 3n - 2$. Có bao nhiêu số hạng của dãy số nhỏ hơn 100?",
+      "correctAnswer": "33",
+      "acceptableAnswers": [
+        "33"
+      ],
+      "explanation": "Bất phương trình: $3n - 2 < 100 \\Leftrightarrow 3n < 102 \\Leftrightarrow n < 34$.\nVì $n \\in \\mathbb{N}^*$ nên $n \\in \\{1; 2; 3; \\dots; 33\\}$, có đúng 33 số hạng."
+    }
+  ]
+}
 };

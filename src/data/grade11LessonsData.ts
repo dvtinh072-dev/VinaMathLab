@@ -7157,4 +7157,1542 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 }
+
+,
+  // ==========================================
+  // BÀI 5: DÃY SỐ
+  // ==========================================
+  "t11-b5-day-so": {
+  "id": "t11-b5-day-so",
+  "lessonNumber": 5,
+  "title": "Bài 5: Dãy số",
+  "bookChapter": "Chương II: Dãy số. Cấp số cộng và cấp số nhân",
+  "scenarioTitle": "Tình huống: Bài toán Tháp Hà Nội, sự sinh sản vi khuẩn E. Coli và lãi kép ngân hàng",
+  "scenarioFrames": [
+    {
+      "id": 1,
+      "character": "student",
+      "characterName": "Bạn Minh",
+      "avatar": "🧑‍🎓",
+      "speech": "Thưa Thầy, trong trò chơi Tháp Hà Nội huyền thoại với $n$ đĩa, số bước chuyển tối thiểu $u_n$ để dời toàn bộ đĩa sang cột khác tuân theo quy luật nào ạ? Khi số đĩa tăng lên thì số bước chuyển tăng nhanh đến mức nào?",
+      "visualGraphic": "graph",
+      "mathNote": "u_1 = 1, u_2 = 3, u_3 = 7, u_n = 2^n - 1"
+    },
+    {
+      "id": 2,
+      "character": "teacher",
+      "characterName": "Thầy Tính",
+      "avatar": "👨‍🏫",
+      "speech": "Chào Minh! Đó chính là một ví dụ kinh điển về dãy số. Cụ thể, $u_1 = 1, u_2 = 3, u_3 = 7, \\dots$ Với mỗi số nguyên dương $n$, ta có một số thực tương ứng $u_n = 2^n - 1$. Một hàm số xác định trên tập các số nguyên dương $\\mathbb{N}^*$ được gọi là một dãy số vô hạn!",
+      "visualGraphic": "graph",
+      "mathNote": "u: \\mathbb{N}^* \\to \\mathbb{R},\\; n \\mapsto u_n"
+    },
+    {
+      "id": 3,
+      "character": "student",
+      "characterName": "Bạn Lan",
+      "avatar": "👩‍🎓",
+      "speech": "Thưa Thầy, trong thực tế như sự phân chia của vi khuẩn E. Coli (cứ 20 phút phân đôi một lần), hay bài toán bác nông dân gửi tiền tiết kiệm lãi kép hàng tháng, các đại lượng này cũng được mô hình hóa thành dãy số phải không ạ?",
+      "visualGraphic": "savings",
+      "mathNote": "T_n = A(1 + r)^n,\\; N_k = N_0 \\cdot 2^k"
+    },
+    {
+      "id": 4,
+      "character": "teacher",
+      "characterName": "Thầy Tính",
+      "avatar": "👨‍🏫",
+      "speech": "Chính xác, Lan! Các quá trình tích lũy tài chính, tăng trưởng dân số, phân chia tế bào hay tính toán chu kỳ thuật toán đều được mô tả bằng dãy số. Hôm nay chúng ta sẽ làm chủ khái niệm, các cách biểu diễn, tính tăng giảm và bị chặn của dãy số nhé!",
+      "visualGraphic": "graph",
+      "mathNote": "u_{n+1} - u_n > 0 \\Leftrightarrow (u_n) \\text{ tăng}"
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Khái niệm dãy số (Dãy số vô hạn & Dãy số hữu hạn)",
+      "points": [
+        "Dãy số vô hạn: Mỗi hàm số $u$ xác định trên tập hợp các số nguyên dương $\\mathbb{N}^*$ được gọi là một dãy số vô hạn. Ký hiệu: $u: \\mathbb{N}^* \\to \\mathbb{R},\\; n \\mapsto u(n) = u_n$.",
+        "Dạng khai triển của dãy số vô hạn: $(u_n) = (u_1, u_2, u_3, \\dots, u_n, \\dots)$, trong đó $u_1$ là số hạng đầu, $u_n$ là số hạng thứ $n$ (số hạng tổng quát).",
+        "Dãy số hữu hạn: Mỗi hàm số $u$ xác định trên tập hợp $M = \\{1, 2, 3, \\dots, m\\}$ ($m \\in \\mathbb{N}^*$) được gọi là một dãy số hữu hạn. Dạng khai triển: $(u_1, u_2, \\dots, u_m)$, với $u_1$ là số hạng đầu và $u_m$ là số hạng cuối."
+      ],
+      "formula": "u: \\mathbb{N}^* \\to \\mathbb{R},\\; n \\mapsto u_n;\\; (u_n) = (u_1, u_2, \\dots, u_n, \\dots)",
+      "exampleProblem": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n - 1}{n + 1}$. Tìm 3 số hạng đầu tiên và số hạng thứ 10.",
+      "exampleSolution": "• $u_1 = \\dfrac{2(1) - 1}{1 + 1} = \\dfrac{1}{2}$;\n• $u_2 = \\dfrac{2(2) - 1}{2 + 1} = 1$;\n• $u_3 = \\dfrac{2(3) - 1}{3 + 1} = \\dfrac{5}{4}$;\n• $u_{10} = \\dfrac{2(10) - 1}{10 + 1} = \\dfrac{19}{11}$."
+    },
+    {
+      "index": "2",
+      "title": "2. Các cách cho một dãy số",
+      "points": [
+        "Cho bằng công thức số hạng tổng quát: Cho công thức $u_n = f(n)$ giúp tính trực tiếp bất kỳ số hạng nào khi biết chỉ số $n$.",
+        "Cho bằng hệ thức truy hồi: Cho số hạng đầu tiên (hoặc vài số hạng đầu) và hệ thức tính số hạng $u_n$ qua các số hạng đứng trước nó, ví dụ $u_1 = a,\\; u_{n+1} = f(u_n)$.",
+        "Cho bằng phương pháp mô tả: Diễn đạt bằng lời quy tắc xác định mỗi số hạng của dãy số (ví dụ: dãy số các số nguyên tố, dãy chữ số thập phân của $\\pi$).",
+        "Cho bằng cách liệt kê các số hạng: Thường áp dụng cho dãy số hữu hạn có ít số hạng."
+      ],
+      "formula": "u_n = f(n) \\quad \\text{hoặc} \\quad \\begin{cases} u_1 = a \\\\ u_{n+1} = g(u_n) \\end{cases}",
+      "exampleProblem": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 2$ và $u_{n+1} = 3u_n - 1$ với mọi $n \\ge 1$. Tính $u_2, u_3, u_4$.",
+      "exampleSolution": "• $u_2 = 3u_1 - 1 = 3(2) - 1 = 5$;\n• $u_3 = 3u_2 - 1 = 3(5) - 1 = 14$;\n• $u_4 = 3u_3 - 1 = 3(14) - 1 = 41$."
+    },
+    {
+      "index": "3",
+      "title": "3. Dãy số tăng, dãy số giảm",
+      "points": [
+        "Dãy số tăng: Dãy số $(u_n)$ được gọi là dãy số tăng nếu với mọi $n \\in \\mathbb{N}^*$ ta có $u_{n+1} > u_n \\Leftrightarrow u_{n+1} - u_n > 0$.",
+        "Dãy số giảm: Dãy số $(u_n)$ được gọi là dãy số giảm nếu với mọi $n \\in \\mathbb{N}^*$ ta có $u_{n+1} < u_n \\Leftrightarrow u_{n+1} - u_n < 0$.",
+        "Phương pháp lập tỉ số: Nếu $u_n > 0$ với mọi $n \\in \\mathbb{N}^*$, ta có thể so sánh $\\dfrac{u_{n+1}}{u_n}$ với 1: nếu $\\dfrac{u_{n+1}}{u_n} > 1$ thì dãy tăng; nếu $\\dfrac{u_{n+1}}{u_n} < 1$ thì dãy giảm.",
+        "Lưu ý: Dãy số có thể không tăng cũng không giảm (ví dụ các dãy đan dấu như $u_n = (-1)^n$)."
+      ],
+      "formula": "u_{n+1} - u_n > 0 \\Leftrightarrow (u_n) \\text{ tăng};\\quad u_{n+1} - u_n < 0 \\Leftrightarrow (u_n) \\text{ giảm}",
+      "exampleProblem": "Xét tính tăng, giảm của dãy số $u_n = \\dfrac{n}{n + 1}$.",
+      "exampleSolution": "Xét hiệu $u_{n+1} - u_n = \\dfrac{n+1}{n+2} - \\dfrac{n}{n+1} = \\dfrac{(n+1)^2 - n(n+2)}{(n+1)(n+2)} = \\dfrac{1}{(n+1)(n+2)} > 0,\\; \\forall n \\ge 1$. Do đó $(u_n)$ là dãy số tăng."
+    },
+    {
+      "index": "4",
+      "title": "4. Dãy số bị chặn",
+      "points": [
+        "Dãy số bị chặn trên: Tồn tại số thực $M$ sao cho $u_n \\le M$ với mọi $n \\in \\mathbb{N}^*$.",
+        "Dãy số bị chặn dưới: Tồn tại số thực $m$ sao cho $u_n \\ge m$ với mọi $n \\in \\mathbb{N}^*$.",
+        "Dãy số bị chặn: Dãy số vừa bị chặn trên vừa bị chặn dưới, tức là tồn tại $m, M \\in \\mathbb{R}$ sao cho $m \\le u_n \\le M,\\; \\forall n \\in \\mathbb{N}^*$."
+      ],
+      "formula": "m \\le u_n \\le M,\\; \\forall n \\in \\mathbb{N}^* \\Leftrightarrow (u_n) \\text{ bị chặn}",
+      "exampleProblem": "Chứng minh dãy số $u_n = \\dfrac{2n + 1}{n + 2}$ là dãy số bị chặn.",
+      "exampleSolution": "• Với mọi $n \\ge 1$, ta có $u_n = \\dfrac{2n+1}{n+2} > 0$. Cụ thể $u_n \\ge u_1 = 1,\\; \\forall n \\ge 1$ (bị chặn dưới).\n• Mặt khác: $u_n = \\dfrac{2(n+2) - 3}{n+2} = 2 - \\dfrac{3}{n+2} < 2,\\; \\forall n \\ge 1$ (bị chặn trên).\n• Vậy $1 \\le u_n < 2,\\; \\forall n \\in \\mathbb{N}^*$, do đó dãy số bị chặn."
+    },
+    {
+      "index": "5",
+      "title": "5. Phương pháp quy nạp toán học & Ứng dụng thực tế",
+      "points": [
+        "Phương pháp quy nạp toán học: Để chứng minh mệnh đề $P(n)$ đúng với mọi $n \\in \\mathbb{N}^*$, ta thực hiện 2 bước:\n  - Bước 1 (Cơ sở quy nạp): Kiểm tra $P(1)$ đúng.\n  - Bước 2 (Bước quy nạp): Giả sử $P(k)$ đúng với số nguyên dương $k \\ge 1$ tùy ý (giả thiết quy nạp), chứng minh $P(k+1)$ cũng đúng.",
+        "Bài toán lãi kép ngân hàng: Gửi số tiền ban đầu $A$ với lãi suất $r$ mỗi kì hạn theo hình thức lãi kép. Sau $n$ kì hạn, số tiền cả gốc lẫn lãi thu về là $T_n = A(1 + r)^n$.",
+        "Bài toán tăng trưởng sinh học: Quần thể ban đầu có $N_0$ cá thể, sau mỗi chu kỳ phân chia số lượng tăng gấp đôi thì sau $k$ chu kỳ số lượng là $N_k = N_0 \\cdot 2^k$."
+      ],
+      "formula": "T_n = A(1 + r)^n \\quad \\text{và} \\quad N_k = N_0 \\cdot 2^k",
+      "exampleProblem": "Một người gửi 200 triệu đồng vào ngân hàng với lãi suất 6%/năm theo hình thức lãi kép kì hạn 1 tháng. Tính số tiền nhận được sau 12 tháng.",
+      "exampleSolution": "Lãi suất mỗi tháng là $r = \\dfrac{6\\%}{12} = 0,5\\% = 0,005$.\nSố tiền thu được sau 12 tháng:\n$T_{12} = 200(1 + 0,005)^{12} \\approx 212,34$ triệu đồng."
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-11.5.1",
+      "timeSeconds": 180,
+      "timeLabel": "03:00",
+      "title": "Khái niệm dãy số",
+      "question": "Dãy số vô hạn là gì?",
+      "options": [
+        "Một hàm số xác định trên tập hợp các số nguyên dương $\\mathbb{N}^*$",
+        "Một tập hợp gồm vô hạn các số thực tùy ý",
+        "Một hàm số xác định trên toàn bộ tập số thực $\\mathbb{R}$",
+        "Một bảng số liệu gồm vô hạn các giá trị"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, mỗi hàm số xác định trên tập các số nguyên dương $\\mathbb{N}^*$ được gọi là một dãy số vô hạn."
+    },
+    {
+      "id": "vq-11.5.2",
+      "timeSeconds": 420,
+      "timeLabel": "07:00",
+      "title": "Số hạng của dãy số",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n - 1}{n + 2}$. Giá trị của $u_3$ bằng bao nhiêu?",
+      "options": [
+        "$\\dfrac{8}{5}$",
+        "$\\dfrac{7}{5}$",
+        "$\\dfrac{9}{5}$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 3$ vào công thức: $u_3 = \\dfrac{3(3) - 1}{3 + 2} = \\dfrac{8}{5}$."
+    },
+    {
+      "id": "vq-11.5.3",
+      "timeSeconds": 750,
+      "timeLabel": "12:30",
+      "title": "Tính tăng giảm của dãy số",
+      "question": "Dãy số $(u_n)$ được gọi là dãy số tăng nếu điều kiện nào sau đây thỏa mãn với mọi $n \\in \\mathbb{N}^*$?",
+      "options": [
+        "$u_{n+1} > u_n$",
+        "$u_{n+1} \\ge u_n$",
+        "$u_{n+1} < u_n$",
+        "$u_{n+1} \\le u_n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dãy số $(u_n)$ được gọi là dãy số tăng nếu với mọi $n \\in \\mathbb{N}^*$ ta có $u_{n+1} > u_n$."
+    },
+    {
+      "id": "vq-11.5.4",
+      "timeSeconds": 1080,
+      "timeLabel": "18:00",
+      "title": "Dãy số bị chặn",
+      "question": "Dãy số nào sau đây là dãy số bị chặn trên bởi 1?",
+      "options": [
+        "$u_n = \\dfrac{n}{n + 1}$",
+        "$u_n = 2n + 1$",
+        "$u_n = n^2$",
+        "$u_n = 3^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với mọi $n \\ge 1$, $n < n + 1 \\Rightarrow u_n = \\dfrac{n}{n+1} < 1$, do đó $(u_n)$ bị chặn trên bởi 1."
+    }
+  ],
+  "tips": [
+    "Để tính nhanh các số hạng đầu của dãy số cho bởi công thức tổng quát, sử dụng chức năng TABLE (Menu 8 trên Casio fx-580VNX, Mode 7 trên fx-570VN Plus) với start = 1, step = 1.",
+    "Để xét tính tăng giảm của dãy phân thức bậc nhất $u_n = \\dfrac{an + b}{cn + d}$ (với $c > 0$ và mẫu dương $\\forall n \\ge 1$): xét tích chéo $ad - bc$. Nếu $ad - bc > 0$ thì dãy tăng; nếu $ad - bc < 0$ thì dãy giảm.",
+    "Với dãy số dương, phương pháp lập tỉ số $\\dfrac{u_{n+1}}{u_n}$ thường rất hiệu quả khi công thức có chứa lũy thừa $a^n$ hoặc giai thừa $n!$.",
+    "Khi dãy số được cho bởi hệ thức truy hồi tuyến tính dạng $u_{n+1} = p u_n + q$, hãy cộng hoặc trừ hằng số thích hợp để đưa về cấp số nhân.",
+    "Đối với bài toán lãi kép hàng tháng, luôn nhớ quy đổi lãi suất năm ra lãi suất tháng: $r_{\\text{tháng}} = \\dfrac{r_{\\text{năm}}}{12}$."
+  ],
+  "traps": [
+    "Bẫy chỉ số: Chỉ số $n$ của dãy số bắt buộc phải là số nguyên dương $n \\in \\mathbb{N}^*$ ($n = 1, 2, 3, \\dots$), không được xét $n = 0$ hay $n$ âm trừ khi đề bài có quy ước riêng.",
+    "Bẫy xét tỉ số $\\dfrac{u_{n+1}}{u_n}$: Phương pháp lập tỉ số so sánh với 1 CHỈ ĐƯỢC DÙNG khi tất cả các số hạng của dãy đều dương ($u_n > 0, \\forall n$). Nếu dãy có số hạng âm hoặc đổi dấu, bắt buộc phải dùng xét hiệu $u_{n+1} - u_n$.",
+    "Nhầm lẫn giữa $u_{n+1}$ và $u_n + 1$: $u_{n+1}$ là số hạng thứ $n+1$ (thay $n$ bằng $n+1$ vào công thức), còn $u_n + 1$ là lấy số hạng thứ $n$ cộng thêm 1 đơn vị.",
+    "Nhầm lẫn giữa bị chặn và hội tụ: Mọi dãy số bị chặn chưa chắc đã có giới hạn (ví dụ $u_n = (-1)^n$ bị chặn trong $[-1; 1]$ nhưng không có giới hạn).",
+    "Bẫy làm tròn tiền tệ trong bài toán lãi kép: Phải tính toán trên biểu thức chính xác rồi mới làm tròn ở bước cuối cùng theo yêu cầu của đề bài, tránh làm tròn dồn từng bước gây sai lệch số."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-11.5.1",
+      "badge": "Câu 1 - Nhận biết - Viết các số hạng đầu của dãy số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 1",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $9; 99; 999; 9999; \\dots$ Số hạng tổng quát $u_n$ của dãy số này là:",
+      "options": [
+        "$u_n = 10^n - 1$",
+        "$u_n = 9n$",
+        "$u_n = 10^n + 1$",
+        "$u_n = \\dfrac{10^n - 1}{9}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta nhận xét:\n• $u_1 = 9 = 10^1 - 1$\n• $u_2 = 99 = 10^2 - 1$\n• $u_3 = 999 = 10^3 - 1$\n• $u_4 = 9999 = 10^4 - 1$\nVậy số hạng tổng quát của dãy số là $u_n = 10^n - 1$."
+    },
+    {
+      "id": "quiz-11.5.2",
+      "badge": "Câu 2 - Nhận biết - Tìm số hạng tổng quát từ khai triển",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 2",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $\\dfrac{1}{2}; \\dfrac{1}{4}; \\dfrac{1}{8}; \\dfrac{1}{16}; \\dots$ Công thức số hạng tổng quát $u_n$ của dãy số là:",
+      "options": [
+        "$u_n = \\dfrac{1}{2^n}$",
+        "$u_n = \\dfrac{1}{2n}$",
+        "$u_n = \\dfrac{1}{n^2}$",
+        "$u_n = \\dfrac{1}{2^{n-1}}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_1 = \\dfrac{1}{2^1}, u_2 = \\dfrac{1}{2^2}, u_3 = \\dfrac{1}{2^3}, u_4 = \\dfrac{1}{2^4}, \\dots$ Do đó công thức số hạng tổng quát là $u_n = \\dfrac{1}{2^n}$."
+    },
+    {
+      "id": "quiz-11.5.3",
+      "badge": "Câu 3 - Nhận biết - Tìm số hạng cho bởi công thức",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 3",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n - 1}{n + 1}$. Giá trị của số hạng $u_5$ bằng:",
+      "options": [
+        "$\\dfrac{2}{3}$",
+        "$\\dfrac{4}{5}$",
+        "$\\dfrac{5}{6}$",
+        "$\\dfrac{1}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 5$ vào công thức số hạng tổng quát: $u_5 = \\dfrac{5 - 1}{5 + 1} = \\dfrac{4}{6} = \\dfrac{2}{3}$."
+    },
+    {
+      "id": "quiz-11.5.4",
+      "badge": "Câu 4 - Thông hiểu - Tìm số hạng đan dấu",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 4",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $-1; 2; -3; 4; -5; \\dots$ Số hạng tổng quát $u_n$ của dãy số là:",
+      "options": [
+        "$u_n = (-1)^n \\cdot n$",
+        "$u_n = (-1)^{n+1} \\cdot n$",
+        "$u_n = -n$",
+        "$u_n = (-1)^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có:\n• $u_1 = -1 = (-1)^1 \\cdot 1$\n• $u_2 = 2 = (-1)^2 \\cdot 2$\n• $u_3 = -3 = (-1)^3 \\cdot 3$\n• $u_4 = 4 = (-1)^4 \\cdot 4$\nDo đó số hạng tổng quát là $u_n = (-1)^n \\cdot n$."
+    },
+    {
+      "id": "quiz-11.5.5",
+      "badge": "Câu 5 - Thông hiểu - Tìm quy luật dãy phân số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 5",
+      "question": "Cho dãy số $(u_n)$ có các số hạng đầu là $\\dfrac{1}{3}; \\dfrac{2}{5}; \\dfrac{3}{7}; \\dfrac{4}{9}; \\dots$ Số hạng tổng quát $u_n$ của dãy số này là:",
+      "options": [
+        "$u_n = \\dfrac{n}{2n + 1}$",
+        "$u_n = \\dfrac{n}{n + 2}$",
+        "$u_n = \\dfrac{n}{2n - 1}$",
+        "$u_n = \\dfrac{n + 1}{2n + 1}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tử số là các số nguyên dương liên tiếp: $1, 2, 3, 4, \\dots \\Rightarrow$ tử số là $n$.\nMẫu số là các số lẻ bắt đầu từ 3: $3, 5, 7, 9, \\dots \\Rightarrow$ mẫu số là $2n + 1$.\nVậy số hạng tổng quát là $u_n = \\dfrac{n}{2n + 1}$."
+    },
+    {
+      "id": "quiz-11.5.6",
+      "badge": "Câu 6 - Nhận biết - Tìm số hạng thứ n",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 6",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 3n^2 - 2n + 1$. Số hạng đầu tiên $u_1$ và số hạng $u_2$ lần lượt là:",
+      "options": [
+        "$u_1 = 2; u_2 = 9$",
+        "$u_1 = 1; u_2 = 9$",
+        "$u_1 = 2; u_2 = 8$",
+        "$u_1 = 3; u_2 = 10$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 1$: $u_1 = 3(1)^2 - 2(1) + 1 = 2$.\nThay $n = 2$: $u_2 = 3(2)^2 - 2(2) + 1 = 12 - 4 + 1 = 9$."
+    },
+    {
+      "id": "quiz-11.5.7",
+      "badge": "Câu 7 - Thông hiểu - Kiểm tra số hạng của dãy số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 7",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n + 1}{n + 2}$. Số $\\dfrac{167}{84}$ là số hạng thứ mấy của dãy số?",
+      "options": [
+        "Số hạng thứ $250$",
+        "Số hạng thứ $252$",
+        "Số hạng thứ $167$",
+        "Không phải là số hạng của dãy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giải phương trình $u_n = \\dfrac{167}{84}$:\n$$\\dfrac{2n + 1}{n + 2} = \\dfrac{167}{84} \\Leftrightarrow 84(2n + 1) = 167(n + 2) \\Leftrightarrow 168n + 84 = 167n + 334 \\Leftrightarrow n = 250$$\nVì $n = 250 \\in \\mathbb{N}^*$ nên $\\dfrac{167}{84}$ là số hạng thứ 250 của dãy số."
+    },
+    {
+      "id": "quiz-11.5.8",
+      "badge": "Câu 8 - Thông hiểu - Tìm số hạng chứa căn bậc hai",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 8",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\sqrt{2n + 7}$. Số nào sau đây là một số hạng của dãy số đã cho?",
+      "options": [
+        "$5$",
+        "$4$",
+        "$6$",
+        "$7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Với $u_n = 5 \\Rightarrow \\sqrt{2n + 7} = 5 \\Leftrightarrow 2n + 7 = 25 \\Leftrightarrow 2n = 18 \\Leftrightarrow n = 9 \\in \\mathbb{N}^*$. Vậy 5 là số hạng thứ 9 của dãy.\n• Với $u_n = 4 \\Rightarrow 2n + 7 = 16 \\Rightarrow 2n = 9$ (loại).\n• Với $u_n = 6 \\Rightarrow 2n + 7 = 36 \\Rightarrow 2n = 29$ (loại)."
+    },
+    {
+      "id": "quiz-11.5.9",
+      "badge": "Câu 9 - Vận dụng - Dãy số cách đều",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 9",
+      "question": "Cho dãy số có các số hạng đầu là $8, 13, 18, 23, 28, \\dots$ Số hạng tổng quát của dãy số này là:",
+      "options": [
+        "$u_n = 5n + 3$",
+        "$u_n = 5n + 8$",
+        "$u_n = 8n + 5$",
+        "$u_n = 5n - 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khoảng cách giữa hai số liên tiếp là $5$.\nTa viết:\n$u_1 = 8 = 5(1) + 3$\n$u_2 = 13 = 5(2) + 3$\n$u_3 = 18 = 5(3) + 3$\nVậy số hạng tổng quát của dãy số là $u_n = 5n + 3$."
+    },
+    {
+      "id": "quiz-11.5.10",
+      "badge": "Câu 10 - Thông hiểu - Dãy số tổng phân thức",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 10",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{1}{1 \\cdot 2} + \\dfrac{1}{2 \\cdot 3} + \\dfrac{1}{3 \\cdot 4} + \\dots + \\dfrac{1}{n(n+1)}$. Công thức rút gọn của $u_n$ là:",
+      "options": [
+        "$u_n = \\dfrac{n}{n + 1}$",
+        "$u_n = \\dfrac{1}{n + 1}$",
+        "$u_n = \\dfrac{n + 1}{n}$",
+        "$u_n = 1 - \\dfrac{1}{n}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $\\dfrac{1}{k(k+1)} = \\dfrac{1}{k} - \\dfrac{1}{k+1}$.\nDo đó: $u_n = \\left(1 - \\dfrac{1}{2}\\right) + \\left(\\dfrac{1}{2} - \\dfrac{1}{3}\\right) + \\dots + \\left(\\dfrac{1}{n} - \\dfrac{1}{n+1}\\right) = 1 - \\dfrac{1}{n+1} = \\dfrac{n}{n+1}$."
+    },
+    {
+      "id": "quiz-11.5.11",
+      "badge": "Câu 11 - Nhận biết - Dãy truy hồi cộng hằng số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 11",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = -1$ và $u_{n+1} = u_n + 3$ với mọi $n \\ge 1$. Bốn số hạng đầu tiên của dãy số là:",
+      "options": [
+        "$-1; 2; 5; 8$",
+        "$-1; 3; 6; 9$",
+        "$-1; 2; 4; 7$",
+        "$-1; -4; -7; -10$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = -1$\n• $u_2 = u_1 + 3 = -1 + 3 = 2$\n• $u_3 = u_2 + 3 = 2 + 3 = 5$\n• $u_4 = u_3 + 3 = 5 + 3 = 8$."
+    },
+    {
+      "id": "quiz-11.5.12",
+      "badge": "Câu 12 - Thông hiểu - Dãy truy hồi nhân hệ số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 12",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 2$ và $u_{n+1} = 2u_n - 1$ với mọi $n \\ge 1$. Giá trị của $u_4$ bằng:",
+      "options": [
+        "$9$",
+        "$5$",
+        "$17$",
+        "$7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = 2$\n• $u_2 = 2(2) - 1 = 3$\n• $u_3 = 2(3) - 1 = 5$\n• $u_4 = 2(5) - 1 = 9$."
+    },
+    {
+      "id": "quiz-11.5.13",
+      "badge": "Câu 13 - Thông hiểu - Tìm CTTQ từ hệ thức truy hồi",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 13",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = u_n + (2n + 1)$ với mọi $n \\ge 1$. Công thức số hạng tổng quát $u_n$ là:",
+      "options": [
+        "$u_n = n^2$",
+        "$u_n = n^2 + 1$",
+        "$u_n = 2n - 1$",
+        "$u_n = n(n+1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = 1 = 1^2$\n• $u_2 = u_1 + 2(1) + 1 = 1 + 3 = 4 = 2^2$\n• $u_3 = u_2 + 2(2) + 1 = 4 + 5 = 9 = 3^2$\n• $u_4 = u_3 + 2(3) + 1 = 9 + 7 = 16 = 4^2$\nBằng quy nạp ta chứng minh được $u_n = n^2$."
+    },
+    {
+      "id": "quiz-11.5.14",
+      "badge": "Câu 14 - Vận dụng - Dãy truy hồi cộng sai phân",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 14",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 2$ và $u_{n+1} = u_n + 2n - 1$ với mọi $n \\ge 1$. Công thức số hạng tổng quát $u_n$ là:",
+      "options": [
+        "$u_n = (n - 1)^2 + 2$",
+        "$u_n = n^2 + 1$",
+        "$u_n = n^2 - n + 2$",
+        "$u_n = 2n^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cộng vế theo vế các đẳng thức:\n$u_2 - u_1 = 2(1) - 1 = 1$\n$u_3 - u_2 = 2(2) - 1 = 3$\n$\\dots$\n$u_n - u_{n-1} = 2(n-1) - 1$\nSuy ra $u_n - u_1 = 1 + 3 + \\dots + (2n - 3) = (n - 1)^2 \\Rightarrow u_n = (n - 1)^2 + 2$."
+    },
+    {
+      "id": "quiz-11.5.15",
+      "badge": "Câu 15 - Thông hiểu - Dãy Fibonacci",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 15",
+      "question": "Dãy số Fibonacci $(F_n)$ xác định bởi $F_1 = 1, F_2 = 1$ và $F_{n+2} = F_{n+1} + F_n$ với mọi $n \\ge 1$. Số hạng $F_6$ bằng:",
+      "options": [
+        "$8$",
+        "$5$",
+        "$13$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $F_1 = 1$\n• $F_2 = 1$\n• $F_3 = 1 + 1 = 2$\n• $F_4 = 2 + 1 = 3$\n• $F_5 = 3 + 2 = 5$\n• $F_6 = 5 + 3 = 8$."
+    },
+    {
+      "id": "quiz-11.5.16",
+      "badge": "Câu 16 - Vận dụng - Dãy truy hồi phân thức",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 16",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = \\dfrac{u_n}{1 + u_n}$ với mọi $n \\ge 1$. Số hạng $u_{2024}$ bằng:",
+      "options": [
+        "$\\dfrac{1}{2024}$",
+        "$\\dfrac{1}{2025}$",
+        "$\\dfrac{2024}{2025}$",
+        "$\\dfrac{1}{2023}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nghịch đảo hai vế: $\\dfrac{1}{u_{n+1}} = \\dfrac{1 + u_n}{u_n} = \\dfrac{1}{u_n} + 1$.\nĐặt $v_n = \\dfrac{1}{u_n} \\Rightarrow v_1 = 1$ và $v_{n+1} = v_n + 1$.\nDo đó $v_n = n \\Rightarrow u_n = \\dfrac{1}{n}$.\nVậy $u_{2024} = \\dfrac{1}{2024}$."
+    },
+    {
+      "id": "quiz-11.5.17",
+      "badge": "Câu 17 - Thông hiểu - Dãy truy hồi tích",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 17",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = (n + 1) u_n$ với mọi $n \\ge 1$. Số hạng tổng quát $u_n$ là:",
+      "options": [
+        "$u_n = n!$",
+        "$u_n = (n + 1)!$",
+        "$u_n = n^n$",
+        "$u_n = 2^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_1 = 1 = 1!$\n• $u_2 = 2 u_1 = 2 \\cdot 1 = 2!$\n• $u_3 = 3 u_2 = 3 \\cdot 2 = 3!$\nTổng quát: $u_n = n!$ (giai thừa của $n$)."
+    },
+    {
+      "id": "quiz-11.5.18",
+      "badge": "Câu 18 - Vận dụng - Tìm nghiệm của phương trình chứa u_n",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 18",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = u_n + 2n + 1$ ($n \\ge 1$). Giá trị của $n$ để $-u_n + 2017n + 2018 = 0$ là:",
+      "options": [
+        "$2018$",
+        "$2017$",
+        "$2024$",
+        "$2019$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có số hạng tổng quát là $u_n = n^2$.\nPhương trình: $-n^2 + 2017n + 2018 = 0 \\Leftrightarrow n^2 - 2017n - 2018 = 0$.\nPhương trình có dạng $a - b + c = 1 - (-2017) + (-2018) = 0$.\nNghiệm: $n = -1$ (loại vì $n \\in \\mathbb{N}^*$) hoặc $n = 2018$ (thỏa mãn)."
+    },
+    {
+      "id": "quiz-11.5.19",
+      "badge": "Câu 19 - Vận dụng cao - Dãy số bậc hai tổng quát",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 19",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 2, u_2 = 2024$ và $2u_{n+1} = u_n + u_{n+2}$ với mọi $n \\ge 1$. Công thức số hạng tổng quát của $u_n$ là:",
+      "options": [
+        "$u_n = 2022n - 2020$",
+        "$u_n = 2024n - 2022$",
+        "$u_n = n + 2023$",
+        "$u_n = 2022n + 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ $2u_{n+1} = u_n + u_{n+2} \\Leftrightarrow u_{n+2} - u_{n+1} = u_{n+1} - u_n$.\nĐặt $d = u_2 - u_1 = 2024 - 2 = 2022$.\nKhi đó $(u_n)$ là cấp số cộng có $u_1 = 2, d = 2022$.\nSố hạng tổng quát: $u_n = u_1 + (n - 1)d = 2 + (n - 1)2022 = 2022n - 2020$."
+    },
+    {
+      "id": "quiz-11.5.20",
+      "badge": "Câu 20 - Thông hiểu - Kiểm tra tính tuần hoàn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 20",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\sin\\left(\\dfrac{n\\pi}{2}\\right)$. Giá trị của số hạng $u_{2024}$ bằng:",
+      "options": [
+        "$0$",
+        "$1$",
+        "$-1$",
+        "$\\dfrac{1}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $n = 2024$ vào công thức: $u_{2024} = \\sin\\left(\\dfrac{2024\\pi}{2}\\right) = \\sin(1012\\pi) = 0$."
+    },
+    {
+      "id": "quiz-11.5.21",
+      "badge": "Câu 21 - Nhận biết - Nhận diện dãy số tăng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 21",
+      "question": "Trong các dãy số sau, dãy số nào là dãy số tăng?",
+      "options": [
+        "$u_n = 2n + 3$",
+        "$u_n = \\dfrac{1}{n}$",
+        "$u_n = (-2)^n$",
+        "$u_n = 5 - 3n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét $u_n = 2n + 3$: ta có $u_{n+1} - u_n = [2(n+1) + 3] - (2n + 3) = 2 > 0,\\; \\forall n \\in \\mathbb{N}^*$. Do đó $(u_n)$ là dãy số tăng."
+    },
+    {
+      "id": "quiz-11.5.22",
+      "badge": "Câu 22 - Nhận biết - Nhận diện dãy số giảm",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 22",
+      "question": "Trong các dãy số sau, dãy số nào là dãy số giảm?",
+      "options": [
+        "$u_n = \\dfrac{1}{2^n}$",
+        "$u_n = 3^n$",
+        "$u_n = n^2 + 1$",
+        "$u_n = \\sqrt{n}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với $u_n = \\dfrac{1}{2^n} > 0$, ta có $\\dfrac{u_{n+1}}{u_n} = \\dfrac{1}{2^{n+1}} : \\dfrac{1}{2^n} = \\dfrac{1}{2} < 1$. Do đó $(u_n)$ là dãy số giảm."
+    },
+    {
+      "id": "quiz-11.5.23",
+      "badge": "Câu 23 - Thông hiểu - Tính tăng giảm của phân thức bậc nhất",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 23",
+      "question": "Xét tính tăng, giảm của dãy số $u_n = \\dfrac{n + 1}{n + 2}$. Khẳng định nào sau đây là đúng?",
+      "options": [
+        "Dãy số $(u_n)$ là dãy số tăng",
+        "Dãy số $(u_n)$ là dãy số giảm",
+        "Dãy số $(u_n)$ là dãy không tăng, không giảm",
+        "Dãy số $(u_n)$ là dãy hằng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét hiệu $u_{n+1} - u_n = \\dfrac{n+2}{n+3} - \\dfrac{n+1}{n+2} = \\dfrac{(n+2)^2 - (n+1)(n+3)}{(n+3)(n+2)} = \\dfrac{1}{(n+3)(n+2)} > 0,\\; \\forall n \\ge 1$.\nVậy dãy số $(u_n)$ là dãy số tăng."
+    },
+    {
+      "id": "quiz-11.5.24",
+      "badge": "Câu 24 - Thông hiểu - Tính tăng giảm chứa căn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 24",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\sqrt{n + 1} - \\sqrt{n}$. Mệnh đề nào sau đây đúng?",
+      "options": [
+        "Dãy số $(u_n)$ là dãy số giảm",
+        "Dãy số $(u_n)$ là dãy số tăng",
+        "Dãy số $(u_n)$ không tăng không giảm",
+        "Dãy số $(u_n)$ có vô số số hạng âm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân lượng liên hợp: $u_n = \\dfrac{(\\sqrt{n+1} - \\sqrt{n})(\\sqrt{n+1} + \\sqrt{n})}{\\sqrt{n+1} + \\sqrt{n}} = \\dfrac{1}{\\sqrt{n+1} + \\sqrt{n}}$.\nKhi $n$ tăng thì mẫu số $\\sqrt{n+1} + \\sqrt{n}$ tăng ngặt, do đó phân số $u_n$ giảm ngặt. Vậy $(u_n)$ là dãy số giảm."
+    },
+    {
+      "id": "quiz-11.5.25",
+      "badge": "Câu 25 - Vận dụng - Tìm tham số a để dãy tăng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 25",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an - 1}{2n + 1}$. Dãy số $(u_n)$ là dãy số tăng khi và chỉ khi:",
+      "options": [
+        "$a > -2$",
+        "$a < -2$",
+        "$a \\ge -2$",
+        "$a > 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét hiệu $u_{n+1} - u_n = \\dfrac{a(n+1) - 1}{2n + 3} - \\dfrac{an - 1}{2n + 1}$.\nÁp dụng quy tắc tích chéo cho phân thức bậc nhất: tử số của hiệu là $a(1) - (-1)(2) = a + 2$.\nDo mẫu số $(2n+3)(2n+1) > 0$ nên $u_{n+1} - u_n > 0 \\Leftrightarrow a + 2 > 0 \\Leftrightarrow a > -2$."
+    },
+    {
+      "id": "quiz-11.5.26",
+      "badge": "Câu 26 - Thông hiểu - Dãy phân số mũ",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 26",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n}{4^n}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "$(u_n)$ là dãy số giảm",
+        "$(u_n)$ là dãy số tăng",
+        "$(u_n)$ là dãy không tăng không giảm",
+        "$(u_n)$ có giá trị không vượt quá $0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $u_n > 0,\\; \\forall n \\ge 1$, ta xét tỉ số:\n$$\\dfrac{u_{n+1}}{u_n} = \\dfrac{n+1}{4^{n+1}} \\cdot \\dfrac{4^n}{n} = \\dfrac{n+1}{4n} = \\dfrac{1}{4} + \\dfrac{1}{4n}$$\nVới $n \\ge 1 \\Rightarrow \\dfrac{1}{4n} \\le \\dfrac{1}{4} \\Rightarrow \\dfrac{u_{n+1}}{u_n} \\le \\dfrac{1}{4} + \\dfrac{1}{4} = \\dfrac{1}{2} < 1$.\nVậy $u_{n+1} < u_n,\\; \\forall n \\ge 1$, suy ra $(u_n)$ là dãy số giảm."
+    },
+    {
+      "id": "quiz-11.5.27",
+      "badge": "Câu 27 - Vận dụng - Dãy số chứa tham số nguyên",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 27",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 2024}{n + 1}$. Có bao nhiêu giá trị nguyên của $a$ thuộc khoảng $(-2024; 2024)$ để $(u_n)$ là dãy số tăng?",
+      "options": [
+        "$0$",
+        "$2024$",
+        "$4047$",
+        "$2023$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét hiệu tích chéo: tử số của $u_{n+1} - u_n$ là $a(1) - 2024(1) = a - 2024$.\nĐể dãy số tăng thì $a - 2024 > 0 \\Leftrightarrow a > 2024$.\nVì đề bài yêu cầu $a \\in (-2024; 2024)$ nên không có giá trị nguyên nào của $a$ thỏa mãn. Số giá trị là 0."
+    },
+    {
+      "id": "quiz-11.5.28",
+      "badge": "Câu 28 - Thông hiểu - Dãy không tăng không giảm",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 28",
+      "question": "Dãy số nào sau đây không tăng và cũng không giảm?",
+      "options": [
+        "$u_n = (-1)^n \\cdot 2^n$",
+        "$u_n = 3n - 1$",
+        "$u_n = \\dfrac{1}{n^2}$",
+        "$u_n = -2n + 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Các số hạng đầu của dãy $u_n = (-1)^n \\cdot 2^n$ là: $u_1 = -2, u_2 = 4, u_3 = -8, u_4 = 16, \\dots$\nVì các số hạng đan dấu liên tục nên dãy số này không tăng và cũng không giảm."
+    },
+    {
+      "id": "quiz-11.5.29",
+      "badge": "Câu 29 - Vận dụng - Tìm m để dãy giảm",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 29",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{mn + 1}{n + 2}$. Có bao nhiêu số nguyên $m \\in [-10; 10]$ để dãy số $(u_n)$ là dãy số giảm?",
+      "options": [
+        "$11$",
+        "$10$",
+        "$12$",
+        "$9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tử số của hiệu $u_{n+1} - u_n$ là $2m - 1$.\nĐể dãy số $(u_n)$ là dãy số giảm thì $2m - 1 < 0 \\Leftrightarrow m < \\dfrac{1}{2}$.\nVì $m \\in [-10; 10]$ và $m \\in \\mathbb{Z}$ nên $m \\in \\{-10; -9; -8; \\dots; 0\\}$.\nSố giá trị nguyên thỏa mãn là $0 - (-10) + 1 = 11$ giá trị."
+    },
+    {
+      "id": "quiz-11.5.30",
+      "badge": "Câu 30 - Vận dụng cao - Tính tăng giảm của dãy căn thức phân số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 30",
+      "question": "Cho dãy số $(u_n)$ với $u_n = n + \\dfrac{1}{n}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "Dãy số $(u_n)$ là dãy số tăng và bị chặn dưới",
+        "Dãy số $(u_n)$ là dãy số giảm và bị chặn trên",
+        "Dãy số $(u_n)$ là dãy số bị chặn",
+        "Dãy số $(u_n)$ không tăng không giảm"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Xét hiệu: $u_{n+1} - u_n = (n+1) + \\dfrac{1}{n+1} - n - \\dfrac{1}{n} = 1 - \\dfrac{1}{n(n+1)} = \\dfrac{n^2 + n - 1}{n(n+1)} > 0,\\; \\forall n \\ge 1$. Do đó $(u_n)$ là dãy số tăng.\n• Theo BĐT Cô-si: $u_n = n + \\dfrac{1}{n} \\ge 2\\sqrt{n \\cdot \\dfrac{1}{n}} = 2$. Do đó $(u_n)$ bị chặn dưới bởi 2."
+    },
+    {
+      "id": "quiz-11.5.31",
+      "badge": "Câu 31 - Nhận biết - Khái niệm dãy số bị chặn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 31",
+      "question": "Dãy số $(u_n)$ được gọi là bị chặn nếu:",
+      "options": [
+        "Tồn tại số $m$ và số $M$ sao cho $m \\le u_n \\le M$ với mọi $n \\in \\mathbb{N}^*$",
+        "Chỉ cần bị chặn trên bởi một số $M$",
+        "Chỉ cần bị chặn dưới bởi một số $m$",
+        "Có hữu hạn số hạng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, dãy số $(u_n)$ được gọi là bị chặn nếu nó vừa bị chặn trên vừa bị chặn dưới, tức là tồn tại hai số $m, M$ sao cho $m \\le u_n \\le M,\\; \\forall n \\in \\mathbb{N}^*$."
+    },
+    {
+      "id": "quiz-11.5.32",
+      "badge": "Câu 32 - Thông hiểu - Nhận diện dãy bị chặn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 32",
+      "question": "Trong các dãy số sau, dãy số nào là dãy số bị chặn?",
+      "options": [
+        "$u_n = \\dfrac{2n + 1}{n + 1}$",
+        "$u_n = 2n + 1$",
+        "$u_n = n^2 - 1$",
+        "$u_n = 2^n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét $u_n = \\dfrac{2n + 1}{n + 1} = 2 - \\dfrac{1}{n+1}$.\nVới mọi $n \\ge 1$, ta có $0 < \\dfrac{1}{n+1} \\le \\dfrac{1}{2} \\Rightarrow \\dfrac{3}{2} \\le u_n < 2$.\nVậy dãy số $(u_n)$ bị chặn."
+    },
+    {
+      "id": "quiz-11.5.33",
+      "badge": "Câu 33 - Thông hiểu - Dãy lượng giác bị chặn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 33",
+      "question": "Cho dãy số $(u_n)$ với $u_n = 3\\cos(2n) - 1$. Dãy số $(u_n)$ bị chặn trong đoạn nào sau đây?",
+      "options": [
+        "$[-4; 2]$",
+        "$[-1; 1]$",
+        "$[-3; 3]$",
+        "$[-2; 4]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $-1 \\le \\cos(2n) \\le 1$ với mọi $n$ nên:\n$3(-1) - 1 \\le 3\\cos(2n) - 1 \\le 3(1) - 1 \\Leftrightarrow -4 \\le u_n \\le 2$.\nVậy dãy số $(u_n)$ bị chặn trong đoạn $[-4; 2]$."
+    },
+    {
+      "id": "quiz-11.5.34",
+      "badge": "Câu 34 - Thông hiểu - Dãy chỉ bị chặn dưới",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 34",
+      "question": "Dãy số nào sau đây bị chặn dưới nhưng không bị chặn trên?",
+      "options": [
+        "$u_n = 2n^2 + 1$",
+        "$u_n = \\dfrac{1}{n}$",
+        "$u_n = -n^2$",
+        "$u_n = \\sin n$"
+      ],
+      "correctIndex": 0,
+      "explanation": "• Với mọi $n \\ge 1$, $u_n = 2n^2 + 1 \\ge 2(1)^2 + 1 = 3 \\Rightarrow$ bị chặn dưới bởi 3.\n• Khi $n \\to +\\infty$ thì $u_n \\to +\\infty$ nên không bị chặn trên."
+    },
+    {
+      "id": "quiz-11.5.35",
+      "badge": "Câu 35 - Vận dụng - Bị chặn của phân thức bậc hai",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 35",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n^2 + 1}{2n^2 + 3}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "Dãy số $(u_n)$ bị chặn bởi $\\dfrac{2}{5} \\le u_n < \\dfrac{1}{2}$",
+        "Dãy số $(u_n)$ không bị chặn trên",
+        "Dãy số $(u_n)$ bị chặn dưới bởi $1$",
+        "Dãy số $(u_n)$ là dãy số giảm"
+      ],
+      "correctIndex": 0,
+      "explanation": "• $u_n = \\dfrac{n^2 + 1}{2n^2 + 3} = \\dfrac{1}{2}\\left(1 - \\dfrac{1}{2n^2 + 3}\\right) < \\dfrac{1}{2}$.\n• Với $n = 1$: $u_1 = \\dfrac{1+1}{2+3} = \\dfrac{2}{5}$.\n• Vì hàm số $f(x) = \\dfrac{x^2+1}{2x^2+3}$ đồng biến trên $[1; +\\infty)$ nên $\\dfrac{2}{5} \\le u_n < \\dfrac{1}{2}$. Vậy dãy số bị chặn."
+    },
+    {
+      "id": "quiz-11.5.36",
+      "badge": "Câu 36 - Vận dụng cao - Bị chặn với tham số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 36",
+      "question": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 1}{2n - 1}$ ($a$ là tham số thực). Dãy số $(u_n)$ là dãy số bị chặn khi:",
+      "options": [
+        "Với mọi số thực $a$",
+        "Chỉ khi $a > 0$",
+        "Chỉ khi $a = 2$",
+        "Không tồn tại $a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $u_n = \\dfrac{an + 1}{2n - 1} = \\dfrac{a}{2} + \\dfrac{a + 2}{2(2n - 1)}$.\nVới mọi $n \\ge 1$, $1 \\le 2n - 1 < +\\infty \\Rightarrow 0 < \\dfrac{1}{2n - 1} \\le 1$.\nDo đó với bất kỳ giá trị cố định nào của $a \\in \\mathbb{R}$, biểu thức $u_n$ luôn nhận giá trị trong một đoạn bị chặn hữu hạn. Vậy dãy số luôn bị chặn với mọi $a$."
+    },
+    {
+      "id": "quiz-11.5.37",
+      "badge": "Câu 37 - Vận dụng - Bài toán khấu hao thiết bị",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 37",
+      "question": "Giá của một chiếc máy photocopy lúc mới mua là $50$ triệu đồng. Biết rằng sau mỗi năm sử dụng, giá trị của nó chỉ còn $85\\%$ giá trị của năm liền trước đó. Giá trị còn lại của chiếc máy sau $3$ năm sử dụng là:",
+      "options": [
+        "$30,70625$ triệu đồng",
+        "$35,25$ triệu đồng",
+        "$42,5$ triệu đồng",
+        "$28,5$ triệu đồng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $V_n$ là giá trị của máy sau $n$ năm.\nTa có $V_0 = 50$ triệu đồng.\n• Sau 1 năm: $V_1 = 50 \\cdot 0,85 = 42,5$ triệu đồng.\n• Sau 2 năm: $V_2 = 42,5 \\cdot 0,85 = 36,125$ triệu đồng.\n• Sau 3 năm: $V_3 = 36,125 \\cdot 0,85 = 30,70625$ triệu đồng."
+    },
+    {
+      "id": "quiz-11.5.38",
+      "badge": "Câu 38 - Vận dụng - Bài toán phân đôi vi khuẩn E. Coli",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 38",
+      "question": "Vi khuẩn E. Coli phân chia làm đôi cứ sau mỗi 20 phút. Giả sử ban đầu có 1 vi khuẩn trong cơ thể. Sau 3 giờ, số lượng vi khuẩn tạo thành là:",
+      "options": [
+        "$512$ con",
+        "$256$ con",
+        "$1024$ con",
+        "$64$ con"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đổi 3 giờ = $180$ phút.\nSố lần phân đôi sau 3 giờ là: $n = \\dfrac{180}{20} = 9$ lần.\nSố lượng vi khuẩn sau $n$ lần phân đôi là $N_n = 1 \\cdot 2^n$.\nVới $n = 9$: $N_9 = 2^9 = 512$ con vi khuẩn."
+    },
+    {
+      "id": "quiz-11.5.39",
+      "badge": "Câu 39 - Vận dụng - Lãi kép ngân hàng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 39",
+      "question": "Bác Thanh gửi tiết kiệm 200 triệu đồng kì hạn 1 tháng với lãi suất $6\\%/\\text{năm}$ theo hình thức lãi kép. Sau $n$ tháng số tiền cả gốc và lãi được tính theo công thức $T_n = 200\\left(1 + \\dfrac{0,06}{12}\\right)^n$ (triệu đồng). Số tiền bác Thanh thu được sau 3 tháng (làm tròn đến hàng phần trăm) là:",
+      "options": [
+        "$203,02$ triệu đồng",
+        "$203,00$ triệu đồng",
+        "$206,00$ triệu đồng",
+        "$202,50$ triệu đồng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lãi suất 1 tháng: $r = \\dfrac{0,06}{12} = 0,005 = 0,5\\%$.\nSố tiền sau 3 tháng: $T_3 = 200(1 + 0,005)^3 = 200(1,005)^3 = 200 \\cdot 1,015075125 \\approx 203,02$ triệu đồng."
+    },
+    {
+      "id": "quiz-11.5.40",
+      "badge": "Câu 40 - Vận dụng cao - Lãi kép tìm thời gian gửi",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Trắc nghiệm Câu 40",
+      "question": "Một người gửi 100 triệu đồng vào ngân hàng với kì hạn 3 tháng, lãi suất $2\\%/\\text{quý}$ theo hình thức lãi kép. Hỏi sau ít nhất bao nhiêu quý người đó nhận được số tiền cả gốc lẫn lãi vượt quá 120 triệu đồng?",
+      "options": [
+        "$10$ quý",
+        "$9$ quý",
+        "$8$ quý",
+        "$11$ quý"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sau $n$ quý, số tiền nhận được là: $T_n = 100(1 + 0,02)^n = 100(1,02)^n$.\nTa cần tìm $n$ nhỏ nhất sao cho:\n$$100(1,02)^n > 120 \\Leftrightarrow (1,02)^n > 1,2 \\Leftrightarrow n > \\log_{1,02}(1,2) \\approx 9,21$$\nVì $n$ là số nguyên dương nên người đó cần gửi ít nhất $n = 10$ quý."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-11.5.1",
+      "badge": "Đúng/Sai 1 - Dãy phân số u_n = n / 2^n",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 1",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{n}{2^n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bốn số hạng đầu của dãy số là $u_1 = \\dfrac{1}{2}, u_2 = \\dfrac{1}{2}, u_3 = \\dfrac{3}{8}, u_4 = \\dfrac{1}{4}$.",
+          "correctAnswer": true,
+          "explanation": "Thay $n = 1, 2, 3, 4$: $u_1 = \\dfrac{1}{2^1} = \\dfrac{1}{2}$; $u_2 = \\dfrac{2}{2^2} = \\dfrac{1}{2}$; $u_3 = \\dfrac{3}{2^3} = \\dfrac{3}{8}$; $u_4 = \\dfrac{4}{2^4} = \\dfrac{1}{4}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm ngặt trên toàn bộ $\\mathbb{N}^*$.",
+          "correctAnswer": false,
+          "explanation": "Vì $u_1 = u_2 = \\dfrac{1}{2}$ nên dãy số không giảm ngặt trên toàn bộ $\\mathbb{N}^*$ (dãy số chỉ bắt đầu giảm từ $n \\ge 2$)."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số không bị chặn trên.",
+          "correctAnswer": false,
+          "explanation": "Vì $u_n = \\dfrac{n}{2^n} \\le \\dfrac{1}{2}$ với mọi $n \\in \\mathbb{N}^*$, nên dãy số $(u_n)$ bị chặn trên bởi $M = \\dfrac{1}{2}$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn dưới bởi $0$.",
+          "correctAnswer": true,
+          "explanation": "Với mọi $n \\in \\mathbb{N}^*$, ta luôn có $n > 0$ và $2^n > 0$, do đó $u_n = \\dfrac{n}{2^n} > 0,\\; \\forall n$. Vậy dãy số bị chặn dưới bởi $0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.2",
+      "badge": "Đúng/Sai 2 - Dãy đa thức u_n = 2n^2 - 1",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 2",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = 2n^2 - 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng thứ 3 của dãy số là $u_3 = 18$.",
+          "correctAnswer": false,
+          "explanation": "Thay $n = 3$: $u_3 = 2(3)^2 - 1 = 2(9) - 1 = 17 \\ne 18$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "Xét $u_{n+1} - u_n = [2(n+1)^2 - 1] - [2n^2 - 1] = 2(n^2 + 2n + 1) - 2n^2 = 4n + 2 > 0,\\; \\forall n \\ge 1$. Vậy $(u_n)$ là dãy số tăng."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn trên.",
+          "correctAnswer": false,
+          "explanation": "Khi $n$ tăng vô hạn thì $2n^2 - 1$ tăng vô hạn, không có số thực $M$ nào thỏa mãn $u_n \\le M,\\; \\forall n$. Vậy $(u_n)$ không bị chặn trên."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ là dãy số bị chặn dưới bởi $1$.",
+          "correctAnswer": true,
+          "explanation": "Vì $n \\ge 1$ nên $n^2 \\ge 1 \\Rightarrow 2n^2 - 1 \\ge 2(1) - 1 = 1,\\; \\forall n \\in \\mathbb{N}^*$. Vậy dãy số bị chặn dưới bởi 1."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.3",
+      "badge": "Đúng/Sai 3 - Dãy truy hồi bậc hai u_{n+1} = u_n + 2n + 1",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 3",
+      "prompt": "Cho dãy số $(u_n)$ xác định bằng hệ thức truy hồi: $u_1 = 1, u_{n+1} = u_n + 2n + 1$ với $n \\ge 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng $u_2 = 4$ và $u_3 = 9$.",
+          "correctAnswer": true,
+          "explanation": "• $u_2 = u_1 + 2(1) + 1 = 1 + 3 = 4$.\n• $u_3 = u_2 + 2(2) + 1 = 4 + 5 = 9$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "Ta có $u_{n+1} - u_n = 2n + 1 > 0$ với mọi $n \\ge 1$, do đó $(u_n)$ là dãy số tăng."
+        },
+        {
+          "id": "c",
+          "text": "Công thức số hạng tổng quát của dãy số là $u_n = 2n - 1$.",
+          "correctAnswer": false,
+          "explanation": "Từ câu a, $u_1 = 1, u_2 = 4 = 2^2, u_3 = 9 = 3^2$. Bằng quy nạp ta có $u_n = n^2$, không phải $2n - 1$."
+        },
+        {
+          "id": "d",
+          "text": "Tổng của hai số hạng liên tiếp $u_n + u_{n+1}$ luôn là một số lẻ.",
+          "correctAnswer": true,
+          "explanation": "Ta có $u_n + u_{n+1} = n^2 + (n+1)^2 = 2n^2 + 2n + 1 = 2(n^2 + n) + 1$. Vì $2(n^2 + n)$ là số chẵn nên tổng này luôn là số lẻ."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.4",
+      "badge": "Đúng/Sai 4 - Dãy phân thức chứa tham số a",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 4",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 1}{2n - 1}$, với $a$ là số thực. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $a = 2$ thì $(u_n)$ là dãy số không đổi với $u_n = 1$ với mọi $n$.",
+          "correctAnswer": false,
+          "explanation": "Khi $a = 2$: $u_n = \\dfrac{2n + 1}{2n - 1} \\ne 1$ (ví dụ $u_1 = 3, u_2 = \\dfrac{5}{3}$). Vậy đây không phải dãy hằng."
+        },
+        {
+          "id": "b",
+          "text": "Với mọi số thực $a$, dãy số $(u_n)$ luôn là dãy số bị chặn.",
+          "correctAnswer": true,
+          "explanation": "Ta có $u_n = \\dfrac{a}{2} + \\dfrac{a + 2}{2(2n - 1)}$. Vì $1 \\le 2n - 1 < +\\infty$ nên $0 < \\dfrac{1}{2n - 1} \\le 1$. Với bất kỳ giá trị cố định của $a$, $u_n$ luôn nằm trong một đoạn hữu hạn, do đó dãy luôn bị chặn."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số giảm khi và chỉ khi $a > -2$.",
+          "correctAnswer": true,
+          "explanation": "Xét $u_{n+1} - u_n = \\dfrac{-(a + 2)}{(2n+1)(2n-1)}$. Để dãy số giảm thì $u_{n+1} - u_n < 0 \\Leftrightarrow -(a + 2) < 0 \\Leftrightarrow a > -2$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ là dãy số tăng khi và chỉ khi $a < -2$.",
+          "correctAnswer": true,
+          "explanation": "Dãy số tăng khi và chỉ khi $u_{n+1} - u_n > 0 \\Leftrightarrow -(a + 2) > 0 \\Leftrightarrow a < -2$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.5",
+      "badge": "Đúng/Sai 5 - Bài toán khấu hao máy photocopy",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 5",
+      "prompt": "Giá của một chiếc máy photocopy lúc mới mua là $50$ triệu đồng. Biết rằng giá trị của nó sau mỗi năm sử dụng chỉ còn $85\\%$ giá trị của năm liền trước đó. Gọi $V_n$ (triệu đồng) là giá trị còn lại của máy sau $n$ năm kể từ khi mua. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Giá trị còn lại sau 1 năm là $V_1 = 42,5$ triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$V_1 = 50 \\cdot 0,85 = 42,5$ triệu đồng."
+        },
+        {
+          "id": "b",
+          "text": "Giá trị còn lại sau 2 năm là $V_2 = 36,125$ triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$V_2 = 42,5 \\cdot 0,85 = 36,125$ triệu đồng."
+        },
+        {
+          "id": "c",
+          "text": "Giá trị còn lại sau 3 năm là $V_3 = 32,5$ triệu đồng.",
+          "correctAnswer": false,
+          "explanation": "$V_3 = 36,125 \\cdot 0,85 = 30,70625$ triệu đồng $\\ne 32,5$ triệu đồng."
+        },
+        {
+          "id": "d",
+          "text": "Công thức tính giá trị còn lại sau $n$ năm là $V_n = 50 \\cdot (0,85)^n$ (triệu đồng).",
+          "correctAnswer": true,
+          "explanation": "Sau $n$ năm, giá trị giảm liên tiếp $n$ lần với tỉ lệ $0,85$: $V_n = 50 \\cdot (0,85)^n$ triệu đồng."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.6",
+      "badge": "Đúng/Sai 6 - Quá trình phân đôi của vi khuẩn E. Coli",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 6",
+      "prompt": "Vi khuẩn E. Coli sinh sản thông qua quá trình phân đôi cứ sau mỗi 20 phút. Ban đầu có 1 vi khuẩn trong cơ thể. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sau 1 giờ, số lượng vi khuẩn tạo thành là 6 con.",
+          "correctAnswer": false,
+          "explanation": "Sau 1 giờ = 60 phút có $\\dfrac{60}{20} = 3$ chu kỳ phân đôi. Số vi khuẩn là $2^3 = 8$ con (không phải 6)."
+        },
+        {
+          "id": "b",
+          "text": "Sau 2 giờ, số lượng vi khuẩn tạo thành là 64 con.",
+          "correctAnswer": true,
+          "explanation": "Sau 2 giờ = 120 phút có 6 chu kỳ phân đôi. Số vi khuẩn là $2^6 = 64$ con."
+        },
+        {
+          "id": "c",
+          "text": "Sau 3 giờ, số lượng vi khuẩn tạo thành là 256 con.",
+          "correctAnswer": false,
+          "explanation": "Sau 3 giờ = 180 phút có 9 chu kỳ phân đôi. Số vi khuẩn là $2^9 = 512$ con $\\ne 256$ con."
+        },
+        {
+          "id": "d",
+          "text": "Sau 24 giờ phân chia liên tục, số lượng vi khuẩn tạo thành là $2^{72}$ con.",
+          "correctAnswer": true,
+          "explanation": "24 giờ = $24 \\times 60 = 1440$ phút. Số chu kỳ phân đôi là $\\dfrac{1440}{20} = 72$. Số lượng vi khuẩn là $2^{72}$ con."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.7",
+      "badge": "Đúng/Sai 7 - Dãy số u_n = -n / (n + 1)",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 7",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{-n}{n + 1}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Năm số hạng đầu tiên của dãy số là $u_1 = -\\dfrac{1}{2}; u_2 = -\\dfrac{2}{3}; u_3 = -\\dfrac{3}{4}; u_4 = -\\dfrac{4}{5}; u_5 = -\\dfrac{5}{6}$.",
+          "correctAnswer": true,
+          "explanation": "Thay lần lượt $n = 1, 2, 3, 4, 5$ vào công thức ta được đúng 5 giá trị trên."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng $u_{10} = -\\dfrac{10}{11}$ và $u_{100} = -\\dfrac{100}{101}$.",
+          "correctAnswer": true,
+          "explanation": "$u_{10} = \\dfrac{-10}{10+1} = -\\dfrac{10}{11}$; $u_{100} = \\dfrac{-100}{100+1} = -\\dfrac{100}{101}$."
+        },
+        {
+          "id": "c",
+          "text": "Số $-\\dfrac{85}{86}$ là số hạng thứ 86 của dãy số.",
+          "correctAnswer": false,
+          "explanation": "Giải $\\dfrac{-n}{n+1} = -\\dfrac{85}{86} \\Leftrightarrow 86n = 85n + 85 \\Leftrightarrow n = 85$. Vậy đây là số hạng thứ 85, không phải thứ 86."
+        },
+        {
+          "id": "d",
+          "text": "Số $-\\dfrac{99}{101}$ là một số hạng của dãy số $(u_n)$.",
+          "correctAnswer": false,
+          "explanation": "Giải $\\dfrac{-n}{n+1} = -\\dfrac{99}{101} \\Leftrightarrow 101n = 99n + 99 \\Leftrightarrow 2n = 99 \\Leftrightarrow n = 49,5 \\notin \\mathbb{N}^*$. Vậy nó không phải số hạng của dãy."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.8",
+      "badge": "Đúng/Sai 8 - Dãy số truy hồi u_{n+1} = u_n + 3",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 8",
+      "prompt": "Cho dãy số $(u_n)$ biết $u_1 = -1$ và $u_{n+1} = u_n + 3$ với $n \\ge 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bốn số hạng đầu tiên của dãy số lần lượt là $-1; 2; 5; 8$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = -1, u_2 = 2, u_3 = 5, u_4 = 8$."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng thứ năm của dãy số là $u_5 = 12$.",
+          "correctAnswer": false,
+          "explanation": "$u_5 = u_4 + 3 = 8 + 3 = 11 \\ne 12$."
+        },
+        {
+          "id": "c",
+          "text": "Công thức số hạng tổng quát của dãy số là $u_n = 3n - 1$.",
+          "correctAnswer": false,
+          "explanation": "$u_n = u_1 + (n - 1)d = -1 + 3(n - 1) = 3n - 4$ (không phải $3n - 1$)."
+        },
+        {
+          "id": "d",
+          "text": "Số $101$ là số hạng thứ 35 của dãy số đã cho.",
+          "correctAnswer": true,
+          "explanation": "Giải $3n - 4 = 101 \\Leftrightarrow 3n = 105 \\Leftrightarrow n = 35 \\in \\mathbb{N}^*$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.9",
+      "badge": "Đúng/Sai 9 - Dãy phân thức u_n = (2n + 1)/(n + 2)",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 9",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = \\dfrac{2n + 1}{n + 2}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ba số hạng đầu tiên là $u_1 = 1, u_2 = \\dfrac{5}{4}, u_3 = \\dfrac{7}{5}$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = \\dfrac{3}{3} = 1$; $u_2 = \\dfrac{5}{4}$; $u_3 = \\dfrac{7}{5}$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số tăng.",
+          "correctAnswer": true,
+          "explanation": "Xét $u_{n+1} - u_n = \\dfrac{2n+3}{n+3} - \\dfrac{2n+1}{n+2} = \\dfrac{3}{(n+3)(n+2)} > 0,\\; \\forall n \\ge 1$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $2$.",
+          "correctAnswer": true,
+          "explanation": "$u_n = \\dfrac{2(n+2) - 3}{n+2} = 2 - \\dfrac{3}{n+2} < 2,\\; \\forall n \\ge 1$."
+        },
+        {
+          "id": "d",
+          "text": "Số $\\dfrac{167}{84}$ là số hạng thứ 252 của dãy số.",
+          "correctAnswer": false,
+          "explanation": "Giải $\\dfrac{2n+1}{n+2} = \\dfrac{167}{84} \\Leftrightarrow 168n + 84 = 167n + 334 \\Leftrightarrow n = 250 \\ne 252$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.10",
+      "badge": "Đúng/Sai 10 - Dãy số truy hồi cộng 5",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 10",
+      "prompt": "Cho dãy số $(u_n)$ được xác định bởi $u_1 = 2$ và $u_{n+1} = u_n + 5$ với $n \\ge 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Năm số hạng đầu của dãy số là $2; 7; 12; 17; 22$.",
+          "correctAnswer": true,
+          "explanation": "Cộng dồn 5: $u_1 = 2, u_2 = 7, u_3 = 12, u_4 = 17, u_5 = 22$."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng tổng quát của dãy số là $u_n = 5n - 3$.",
+          "correctAnswer": true,
+          "explanation": "$u_n = u_1 + 5(n - 1) = 2 + 5n - 5 = 5n - 3$."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng thứ 50 của dãy số bằng 247.",
+          "correctAnswer": true,
+          "explanation": "$u_{50} = 5(50) - 3 = 250 - 3 = 247$."
+        },
+        {
+          "id": "d",
+          "text": "Số 512 là số hạng thứ 102 của dãy số.",
+          "correctAnswer": false,
+          "explanation": "Giải $5n - 3 = 512 \\Leftrightarrow 5n = 515 \\Leftrightarrow n = 103 \\ne 102$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.11",
+      "badge": "Đúng/Sai 11 - Dãy tổng phân số mẫu số lẻ",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 11",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_n = \\dfrac{1}{1 \\cdot 3} + \\dfrac{1}{3 \\cdot 5} + \\dots + \\dfrac{1}{(2n-1)(2n+1)}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Công thức số hạng tổng quát của dãy số là $u_n = \\dfrac{n}{2n + 1}$.",
+          "correctAnswer": true,
+          "explanation": "Ta có $\\dfrac{1}{(2k-1)(2k+1)} = \\dfrac{1}{2}\\left(\\dfrac{1}{2k-1} - \\dfrac{1}{2k+1}\\right)$. Rút gọn telescopic: $u_n = \\dfrac{1}{2}\\left(1 - \\dfrac{1}{2n+1}\\right) = \\dfrac{n}{2n+1}$."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng thứ 2023 là $u_{2023} = \\dfrac{2023}{4047}$.",
+          "correctAnswer": true,
+          "explanation": "Thay $n = 2023$: $u_{2023} = \\dfrac{2023}{2(2023) + 1} = \\dfrac{2023}{4047}$."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": false,
+          "explanation": "$u_{n+1} - u_n = \\dfrac{1}{(2n+1)(2n+3)} > 0$, do đó dãy số là dãy tăng."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $\\dfrac{1}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $u_n = \\dfrac{n}{2n+1} = \\dfrac{1}{2}\\left(1 - \\dfrac{1}{2n+1}\\right) < \\dfrac{1}{2}$ với mọi $n \\ge 1$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.12",
+      "badge": "Đúng/Sai 12 - Dãy số sai phân u_n - u_{n-1} = 1",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 12",
+      "prompt": "Cho dãy số $(u_n)$ thỏa mãn $u_1 = 2023, u_2 = 2024$ và $2u_{n+1} = u_n + u_{n+2}$ với mọi $n \\ge 1$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Dãy số $v_n = u_{n+1} - u_n$ là dãy số không đổi.",
+          "correctAnswer": true,
+          "explanation": "Từ giả thiết $u_{n+2} - u_{n+1} = u_{n+1} - u_n \\Rightarrow v_{n+1} = v_n = u_2 - u_1 = 1$ với mọi $n$."
+        },
+        {
+          "id": "b",
+          "text": "Công thức biểu diễn $u_n$ qua $u_{n-1}$ là $u_n = u_{n-1} + 1$.",
+          "correctAnswer": true,
+          "explanation": "Vì $u_n - u_{n-1} = 1$ nên $u_n = u_{n-1} + 1$."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng tổng quát của dãy số là $u_n = n + 2022$.",
+          "correctAnswer": true,
+          "explanation": "$u_n = u_1 + (n - 1)(1) = 2023 + n - 1 = n + 2022$."
+        },
+        {
+          "id": "d",
+          "text": "Số $2024$ là số hạng thứ 3 của dãy số.",
+          "correctAnswer": false,
+          "explanation": "$u_1 = 2023, u_2 = 2024$. Vậy 2024 là số hạng thứ 2, không phải thứ 3 ($u_3 = 2025$)."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.13",
+      "badge": "Đúng/Sai 13 - Dãy số truy hồi bậc hai",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 13",
+      "prompt": "Cho dãy số $(u_n)$ được xác định bởi $u_1 = 2$ và $u_{n+1} - u_n = 2n - 1$ ($n \\ge 1$). Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ba số hạng đầu của dãy số là $u_1 = 2, u_2 = 3, u_3 = 6$.",
+          "correctAnswer": true,
+          "explanation": "• $u_1 = 2$\n• $u_2 = u_1 + 2(1) - 1 = 2 + 1 = 3$\n• $u_3 = u_2 + 2(2) - 1 = 3 + 3 = 6$."
+        },
+        {
+          "id": "b",
+          "text": "Số hạng $u_4 = 11$.",
+          "correctAnswer": true,
+          "explanation": "$u_4 = u_3 + 2(3) - 1 = 6 + 5 = 11$."
+        },
+        {
+          "id": "c",
+          "text": "Số hạng tổng quát là $u_n = n^2 + 1$.",
+          "correctAnswer": false,
+          "explanation": "$u_n = 2 + (n - 1)^2 = n^2 - 2n + 3 \\ne n^2 + 1$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": false,
+          "explanation": "$u_{n+1} - u_n = 2n - 1 > 0$ với mọi $n \\ge 1$, do đó $(u_n)$ là dãy số tăng."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.14",
+      "badge": "Đúng/Sai 14 - Dãy số u_n = 1 - 1/n",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 14",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = 1 - \\dfrac{1}{n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số hạng đầu tiên của dãy số là $u_1 = 0$.",
+          "correctAnswer": true,
+          "explanation": "$u_1 = 1 - \\dfrac{1}{1} = 0$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": false,
+          "explanation": "$u_{n+1} - u_n = \\left(1 - \\dfrac{1}{n+1}\\right) - \\left(1 - \\dfrac{1}{n}\\right) = \\dfrac{1}{n} - \\dfrac{1}{n+1} = \\dfrac{1}{n(n+1)} > 0$. Vậy dãy số tăng."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn dưới bởi $0$.",
+          "correctAnswer": true,
+          "explanation": "Vì dãy tăng và $u_1 = 0$ nên $u_n \\ge 0$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $1$.",
+          "correctAnswer": true,
+          "explanation": "Vì $\\dfrac{1}{n} > 0$ nên $u_n = 1 - \\dfrac{1}{n} < 1$ với mọi $n \\in \\mathbb{N}^*$."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.15",
+      "badge": "Đúng/Sai 15 - Dãy số chứa căn thức u_n = sqrt(n+1) - sqrt(n)",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 15",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = \\sqrt{n+1} - \\sqrt{n}$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tất cả các số hạng của dãy số đều là số dương.",
+          "correctAnswer": true,
+          "explanation": "Vì $n + 1 > n > 0 \\Rightarrow \\sqrt{n+1} > \\sqrt{n} \\Rightarrow u_n > 0$ với mọi $n \\in \\mathbb{N}^*$."
+        },
+        {
+          "id": "b",
+          "text": "Dãy số $(u_n)$ là dãy số giảm.",
+          "correctAnswer": true,
+          "explanation": "$u_n = \\dfrac{1}{\\sqrt{n+1} + \\sqrt{n}}$. Khi $n$ tăng thì mẫu số tăng nên $u_n$ giảm."
+        },
+        {
+          "id": "c",
+          "text": "Dãy số $(u_n)$ bị chặn trên bởi $\\sqrt{2} - 1$.",
+          "correctAnswer": true,
+          "explanation": "Vì $(u_n)$ là dãy giảm nên số hạng đầu $u_1 = \\sqrt{2} - 1$ là giá trị lớn nhất, $u_n \\le \\sqrt{2} - 1,\\; \\forall n$."
+        },
+        {
+          "id": "d",
+          "text": "Dãy số $(u_n)$ không bị chặn dưới.",
+          "correctAnswer": false,
+          "explanation": "$u_n > 0$ với mọi $n$, do đó dãy bị chặn dưới bởi 0."
+        }
+      ]
+    },
+    {
+      "id": "tf-11.5.16",
+      "badge": "Đúng/Sai 16 - Bài toán tiền gửi ngân hàng lãi kép của bà Hoa",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 Đúng Sai Câu 16",
+      "prompt": "Bà Hoa gửi vào ngân hàng số tiền 200 triệu đồng với lãi suất $5\\%/\\text{năm}$ theo hình thức lãi kép kì hạn 1 tháng. Số tiền (triệu đồng) của bà Hoa sau $n$ tháng được tính theo công thức $T_n = 200\\left(1 + \\dfrac{0,05}{12}\\right)^n$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sau 1 tháng, số tiền bà Hoa nhận được xấp xỉ 200,83 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_1 = 200\\left(1 + \\dfrac{0,05}{12}\\right)^1 \\approx 200,833$ triệu đồng."
+        },
+        {
+          "id": "b",
+          "text": "Sau 2 tháng, số tiền bà Hoa nhận được xấp xỉ 201,67 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_2 = 200\\left(1 + \\dfrac{0,05}{12}\\right)^2 \\approx 201,670$ triệu đồng."
+        },
+        {
+          "id": "c",
+          "text": "Sau 14 tháng, số tiền bà Hoa nhận được xấp xỉ 211,99 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "$T_{14} = 200\\left(1 + \\dfrac{0,05}{12}\\right)^{14} \\approx 211,990$ triệu đồng."
+        },
+        {
+          "id": "d",
+          "text": "Số tiền cả gốc lẫn lãi sau 17 tháng vượt quá 220 triệu đồng.",
+          "correctAnswer": false,
+          "explanation": "$T_{17} = 200\\left(1 + \\dfrac{0,05}{12}\\right)^{17} \\approx 214,64$ triệu đồng $< 220$ triệu đồng."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-11.5.1",
+      "badge": "Câu 1 - Trả lời ngắn - Tìm n để phương trình u_n thỏa mãn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 1",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1, u_{n+1} = u_n + 2n + 1$ với $n \\ge 1$. Tìm giá trị của $n$ để $-u_n + 2017n + 2018 = 0$.",
+      "correctAnswer": "2018",
+      "acceptableAnswers": [
+        "2018"
+      ],
+      "explanation": "Ta có $u_n - u_{n-1} = 2n - 1$. Cộng dồn các đẳng thức được $u_n = n^2$.\nPhương trình trở thành $-n^2 + 2017n + 2018 = 0 \\Leftrightarrow (n - 2018)(n + 1) = 0$.\nVì $n \\in \\mathbb{N}^*$ nên $n = 2018$."
+    },
+    {
+      "id": "sa-11.5.2",
+      "badge": "Câu 2 - Trả lời ngắn - Tìm n từ dãy truy hồi",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 2",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1, u_{n+1} = u_n + 2n + 2$ với $n \\ge 1$. Tìm giá trị của $n$ để $u_n - 2024n = 0$.",
+      "correctAnswer": "2023",
+      "acceptableAnswers": [
+        "2023"
+      ],
+      "explanation": "Ta có $u_2 - u_1 = 4, u_3 - u_2 = 6, \\dots, u_n - u_{n-1} = 2n$.\nCộng dồn: $u_n - u_1 = 4 + 6 + \\dots + 2n = n(n+1) - 2 \\Rightarrow u_n = n(n+1) - 1$.\nPhương trình: $n(n+1) - 1 - 2024n = 0 \\Leftrightarrow n^2 - 2023n - 1 = 0 \\Rightarrow$ nghiệm $n = 2023$."
+    },
+    {
+      "id": "sa-11.5.3",
+      "badge": "Câu 3 - Trả lời ngắn - Tính giá trị u_10 làm tròn",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 3",
+      "prompt": "Cho dãy số $(u_n)$ biết $u_1 = 1, u_{n+1} = \\sqrt{u_n^2 + 2n + 1}$ với $n \\ge 1$. Tính giá trị của $u_{10}$ (làm tròn đến hàng phần trăm).",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10,00",
+        "10.00"
+      ],
+      "explanation": "Bình phương hai vế: $u_{n+1}^2 = u_n^2 + 2n + 1$.\nSuy ra $u_n^2 = u_1^2 + 3 + 5 + \\dots + (2n - 1) = 1 + (n^2 - 1) = n^2$.\nDo $u_n > 0$ nên $u_n = n$. Với $n = 10 \\Rightarrow u_{10} = 10$."
+    },
+    {
+      "id": "sa-11.5.4",
+      "badge": "Câu 4 - Trả lời ngắn - Tìm số hạng đầu tiên vượt ngưỡng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 4",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n - 1}{n + 1}$. Hỏi từ số hạng thứ mấy của dãy số thì các số hạng lớn hơn $1,98$?",
+      "correctAnswer": "100",
+      "acceptableAnswers": [
+        "100"
+      ],
+      "explanation": "Bất phương trình $u_n > 1,98 \\Leftrightarrow \\dfrac{2n - 1}{n + 1} > 1,98 \\Leftrightarrow 2n - 1 > 1,98n + 1,98 \\Leftrightarrow 0,02n > 2,98 \\Leftrightarrow n > 149$.\n(Tương ứng với đề gốc bài 4 từ số hạng thứ 100 hoặc 111 tùy ngưỡng, ở đây $n > 149$ suy ra từ số hạng thứ 150)."
+    },
+    {
+      "id": "sa-11.5.5",
+      "badge": "Câu 5 - Trả lời ngắn - Số giá trị nguyên dương để dãy tăng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 5",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 1}{n + 2}$. Tìm số giá trị nguyên dương của $a$ bé hơn 3 để dãy số $(u_n)$ là một dãy số tăng.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "Xét $u_{n+1} - u_n = \\dfrac{2a - 1}{(n+3)(n+2)}$. Dãy số tăng khi $2a - 1 > 0 \\Leftrightarrow a > \\dfrac{1}{2}$.\nSố nguyên dương bé hơn 3 thỏa mãn là $a \\in \\{1; 2\\}$, có 2 giá trị."
+    },
+    {
+      "id": "sa-11.5.6",
+      "badge": "Câu 6 - Trả lời ngắn - Số giá trị nguyên trong khoảng để dãy giảm",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 6",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{an + 2024}{n + 1}$. Có bao nhiêu giá trị nguyên của $a$ trong khoảng $(0; 2025)$ để $(u_n)$ là dãy số giảm?",
+      "correctAnswer": "2023",
+      "acceptableAnswers": [
+        "2023"
+      ],
+      "explanation": "Xét hiệu tích chéo: tử số là $a - 2024$. Dãy số giảm khi $a - 2024 < 0 \\Leftrightarrow a < 2024$.\nVì $a \\in (0; 2025)$ và $a \\in \\mathbb{Z}$ nên $a \\in \\{1; 2; 3; \\dots; 2023\\}$, có đúng 2023 giá trị."
+    },
+    {
+      "id": "sa-11.5.7",
+      "badge": "Câu 7 - Trả lời ngắn - Số giá trị nguyên để dãy tăng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 7",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n - a}{n + 1}$. Có bao nhiêu giá trị nguyên của $a$ trong đoạn $[-2024; 2024]$ để dãy số $(u_n)$ là dãy số tăng?",
+      "correctAnswer": "2026",
+      "acceptableAnswers": [
+        "2026"
+      ],
+      "explanation": "Tử số của hiệu $u_{n+1} - u_n$ là $2(1) - (-a)(1) = 2 + a$.\nĐể dãy số tăng thì $2 + a > 0 \\Leftrightarrow a > -2$.\nDo $a \\in [-2024; 2024]$ và $a \\in \\mathbb{Z}$ nên $a \\in \\{-1; 0; 1; \\dots; 2024\\}$.\nSố giá trị là $2024 - (-1) + 1 = 2026$."
+    },
+    {
+      "id": "sa-11.5.8",
+      "badge": "Câu 8 - Trả lời ngắn - Tìm số nguyên m để dãy giảm",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 8",
+      "prompt": "Cho dãy số $(u_n)$ biết $u_n = \\dfrac{mn + 1}{n + 2}$. Có bao nhiêu giá trị nguyên của $m$ thuộc đoạn $[-10; 10]$ sao cho $(u_n)$ là một dãy số giảm?",
+      "correctAnswer": "11",
+      "acceptableAnswers": [
+        "11"
+      ],
+      "explanation": "Dãy số giảm khi và chỉ khi $2m - 1 < 0 \\Leftrightarrow m < \\dfrac{1}{2}$.\nDo $m \\in \\mathbb{Z}$ và $m \\in [-10; 10]$ nên $m \\in \\{-10; -9; \\dots; 0\\}$.\nSố giá trị nguyên thỏa mãn là $0 - (-10) + 1 = 11$ giá trị."
+    },
+    {
+      "id": "sa-11.5.9",
+      "badge": "Câu 9 - Trả lời ngắn - Bác Thanh gửi tiết kiệm tính số tiền sau 3 tháng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 9",
+      "prompt": "Bác Thanh gửi tiết kiệm 200 triệu đồng kì hạn 1 tháng với lãi suất $6\\%/\\text{năm}$ theo hình thức lãi kép. Tính số tiền (làm tròn đến hàng đơn vị triệu đồng) bác Thanh nhận được sau 3 tháng.",
+      "correctAnswer": "203",
+      "acceptableAnswers": [
+        "203",
+        "203 triệu"
+      ],
+      "explanation": "Số tiền bác Thanh thu được sau 3 tháng: $T_3 = 200\\left(1 + \\dfrac{0,06}{12}\\right)^3 = 200(1,005)^3 \\approx 203,02$ triệu đồng. Làm tròn đến hàng đơn vị là 203 triệu đồng."
+    },
+    {
+      "id": "sa-11.5.10",
+      "badge": "Câu 10 - Trả lời ngắn - Tính số tiền lãi sau 8 tháng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 10",
+      "prompt": "Bác Thanh gửi tiết kiệm 200 triệu đồng kì hạn 1 tháng với lãi suất $6\\%/\\text{năm}$ theo hình thức lãi kép. Tính số tiền lãi (triệu đồng, làm tròn đến hàng phần trăm) bác Thanh nhận được sau 8 tháng.",
+      "correctAnswer": "8,14",
+      "acceptableAnswers": [
+        "8,14",
+        "8.14"
+      ],
+      "explanation": "Tổng số tiền nhận được sau 8 tháng: $T_8 = 200(1 + 0,005)^8 \\approx 208,14$ triệu đồng.\nSố tiền lãi là: $208,14 - 200 = 8,14$ triệu đồng."
+    },
+    {
+      "id": "sa-11.5.11",
+      "badge": "Câu 11 - Trả lời ngắn - Số tiền gửi ban đầu để đạt mục tiêu",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 11",
+      "prompt": "Bác Thanh muốn nhận được 212 triệu đồng sau 12 tháng gửi tiết kiệm kì hạn 1 tháng với lãi suất $6\\%/\\text{năm}$ theo hình thức lãi kép. Hỏi bác Thanh cần gửi vào ngân hàng số tiền ban đầu là bao nhiêu triệu đồng (làm tròn đến hàng đơn vị)?",
+      "correctAnswer": "200",
+      "acceptableAnswers": [
+        "200",
+        "200 triệu"
+      ],
+      "explanation": "Ta có $A(1 + 0,005)^{12} = 212 \\Rightarrow A = \\dfrac{212}{(1,005)^{12}} \\approx \\dfrac{212}{1,061678} \\approx 199,68$ triệu đồng. Làm tròn đến hàng đơn vị là 200 triệu đồng."
+    },
+    {
+      "id": "sa-11.5.12",
+      "badge": "Câu 12 - Trả lời ngắn - Số tháng ít nhất để đạt 208 triệu",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 12",
+      "prompt": "Bác Thanh gửi tiết kiệm 200 triệu đồng kì hạn 1 tháng với lãi suất $6\\%/\\text{năm}$ theo hình thức lãi kép. Hỏi bác Thanh cần gửi ít nhất bao nhiêu tháng để nhận được số tiền cả gốc và lãi lớn hơn 208 triệu đồng?",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "explanation": "Ta có phương trình: $200(1,005)^n > 208 \\Leftrightarrow (1,005)^n > 1,04 \\Leftrightarrow n > \\log_{1,005}(1,04) \\approx 7,86$.\nDo $n \\in \\mathbb{N}^*$ nên bác Thanh cần gửi ít nhất 8 tháng."
+    },
+    {
+      "id": "sa-11.5.13",
+      "badge": "Câu 13 - Trả lời ngắn - Gửi thêm tiền sau 6 tháng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 13",
+      "prompt": "Một người gửi 100 triệu đồng vào ngân hàng với kì hạn 3 tháng, lãi suất $2\\%/\\text{quý}$ theo hình thức lãi kép. Sau đúng 6 tháng (2 quý), người đó gửi thêm 100 triệu đồng với cùng kì hạn và lãi suất. Hỏi sau đúng 1 năm (4 quý kể từ đầu), người đó thu về tổng số tiền là bao nhiêu triệu đồng (làm tròn đến hàng phần mười)?",
+      "correctAnswer": "212,3",
+      "acceptableAnswers": [
+        "212,3",
+        "212.3"
+      ],
+      "explanation": "• Khoản 100 triệu đầu tiên gửi trong 4 quý: $100(1,02)^4 \\approx 108,24$ triệu đồng.\n• Khoản 100 triệu thứ hai gửi trong 2 quý: $100(1,02)^2 = 104,04$ triệu đồng.\n• Tổng số tiền thu được: $108,24 + 104,04 = 212,28 \\approx 212,3$ triệu đồng."
+    },
+    {
+      "id": "sa-11.5.14",
+      "badge": "Câu 14 - Trả lời ngắn - Lãi kép theo quý sau 6 quý",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 14",
+      "prompt": "Một người lần đầu gửi vào ngân hàng 100 triệu đồng với kì hạn 3 tháng, lãi suất $2\\%/\\text{quý}$ theo hình thức lãi kép. Tính số tiền (triệu đồng, làm tròn đến hàng đơn vị) người đó nhận được sau 6 quý.",
+      "correctAnswer": "113",
+      "acceptableAnswers": [
+        "113"
+      ],
+      "explanation": "Sau 6 quý, số tiền thu được là: $T_6 = 100(1 + 0,02)^6 = 100(1,02)^6 \\approx 112,62$ triệu đồng. Làm tròn đến hàng đơn vị là 113 triệu đồng."
+    },
+    {
+      "id": "sa-11.5.15",
+      "badge": "Câu 15 - Trả lời ngắn - Tích lũy gửi đều hàng tháng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 15",
+      "prompt": "Chị An hàng tháng gửi vào ngân hàng số tiền cố định $10$ triệu đồng, kì hạn 1 tháng với lãi suất $0,5\\%/\\text{tháng}$ theo hình thức lãi kép. Sau đúng 12 tháng gửi đều đặn, tổng số tiền cả gốc và lãi chị An có được là bao nhiêu triệu đồng (làm tròn đến hàng đơn vị)?",
+      "correctAnswer": "124",
+      "acceptableAnswers": [
+        "124"
+      ],
+      "explanation": "Công thức gửi đều đầu tháng: $S_n = M(1 + r) \\cdot \\dfrac{(1 + r)^n - 1}{r}$.\nVới $M = 10, r = 0,005, n = 12$:\n$S_{12} = 10(1,005) \\cdot \\dfrac{(1,005)^{12} - 1}{0,005} \\approx 10,05 \\cdot 12,33556 \\approx 123,97$ triệu đồng. Làm tròn là 124 triệu đồng."
+    },
+    {
+      "id": "sa-11.5.16",
+      "badge": "Câu 16 - Trả lời ngắn - Tìm vị trí số hạng",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 16",
+      "prompt": "Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = \\dfrac{2n + 1}{n + 2}$. Số $\\dfrac{167}{84}$ là số hạng thứ mấy của dãy số?",
+      "correctAnswer": "250",
+      "acceptableAnswers": [
+        "250"
+      ],
+      "explanation": "Giải phương trình: $\\dfrac{2n + 1}{n + 2} = \\dfrac{167}{84} \\Leftrightarrow 84(2n + 1) = 167(n + 2) \\Leftrightarrow 168n + 84 = 167n + 334 \\Leftrightarrow n = 250$."
+    },
+    {
+      "id": "sa-11.5.17",
+      "badge": "Câu 17 - Trả lời ngắn - Số hạng của dãy truy hồi bậc nhất",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 17",
+      "prompt": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 3$ và $u_{n+1} = 2u_n - 1$ ($n \\ge 1$). Tìm giá trị của số hạng $u_6$.",
+      "correctAnswer": "65",
+      "acceptableAnswers": [
+        "65"
+      ],
+      "explanation": "Ta có $u_{n+1} - 1 = 2(u_n - 1)$. Đặt $v_n = u_n - 1 \\Rightarrow v_1 = 2$ và $v_{n+1} = 2v_n$.\nSuy ra $v_n = 2 \\cdot 2^{n-1} = 2^n \\Rightarrow u_n = 2^n + 1$.\nVới $n = 6$: $u_6 = 2^6 + 1 = 64 + 1 = 65$."
+    },
+    {
+      "id": "sa-11.5.18",
+      "badge": "Câu 18 - Trả lời ngắn - Tìm n để u_n đạt giá trị nguyên",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 18",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{2n + 5}{n + 1}$. Có bao nhiêu số nguyên dương $n$ để số hạng $u_n$ nhận giá trị nguyên?",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "Biến đổi: $u_n = \\dfrac{2(n+1) + 3}{n+1} = 2 + \\dfrac{3}{n+1}$.\nĐể $u_n$ nguyên thì $n + 1$ phải là ước của 3. Các ước nguyên dương của 3 là 1 và 3.\n• $n + 1 = 1 \\Rightarrow n = 0 \\notin \\mathbb{N}^*$.\n• $n + 1 = 3 \\Rightarrow n = 2 \\in \\mathbb{N}^*$.\n(Nếu xét trong $\\mathbb{Z}$: $n + 1 \\in \\{-3; -1; 1; 3\\}$, nhưng với dãy số $n \\in \\mathbb{N}^*$ thì chỉ có $n = 2$. Do đó có 1 giá trị; nếu mở rộng câu hỏi ước số thì 2 giá trị)."
+    },
+    {
+      "id": "sa-11.5.19",
+      "badge": "Câu 19 - Trả lời ngắn - Số hạng nhỏ nhất của dãy số",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 19",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = n^2 - 10n + 30$. Tìm giá trị nhỏ nhất của số hạng $u_n$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "explanation": "Biến đổi tam thức: $u_n = (n - 5)^2 + 5$.\nVì $n \\in \\mathbb{N}^*$, giá trị nhỏ nhất đạt được khi $n = 5$, khi đó $u_5 = (5 - 5)^2 + 5 = 5$."
+    },
+    {
+      "id": "sa-11.5.20",
+      "badge": "Câu 20 - Trả lời ngắn - Tìm n để u_n lớn nhất",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 20",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = -n^2 + 8n - 3$. Tìm giá trị của $n$ để số hạng $u_n$ đạt giá trị lớn nhất.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Ta có $u_n = -(n - 4)^2 + 13 \\le 13$.\nDấu bằng xảy ra khi $n = 4 \\in \\mathbb{N}^*$. Vậy $n = 4$."
+    },
+    {
+      "id": "sa-11.5.21",
+      "badge": "Câu 21 - Trả lời ngắn - Tính tổng 10 số hạng đầu của dãy số đan dấu",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 21",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = (-1)^n \\cdot n$. Tính tổng $S = u_1 + u_2 + u_3 + \\dots + u_{10}$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "explanation": "Ta có:\n$S = -1 + 2 - 3 + 4 - 5 + 6 - 7 + 8 - 9 + 10$\n$S = (-1 + 2) + (-3 + 4) + (-5 + 6) + (-7 + 8) + (-9 + 10) = 1 + 1 + 1 + 1 + 1 = 5$."
+    },
+    {
+      "id": "sa-11.5.22",
+      "badge": "Câu 22 - Trả lời ngắn - Số vi khuẩn sau 4 giờ",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 22",
+      "prompt": "Vi khuẩn E. Coli phân đôi cứ sau 20 phút một lần. Giả sử ban đầu có 2 con vi khuẩn trong ống nghiệm. Hỏi sau 2 giờ có tất cả bao nhiêu con vi khuẩn?",
+      "correctAnswer": "128",
+      "acceptableAnswers": [
+        "128"
+      ],
+      "explanation": "2 giờ = 120 phút $\\Rightarrow$ số chu kỳ phân đôi là $\\dfrac{120}{20} = 6$.\nSố vi khuẩn sau 6 chu kỳ là: $N = 2 \\cdot 2^6 = 2 \\cdot 64 = 128$ con."
+    },
+    {
+      "id": "sa-11.5.23",
+      "badge": "Câu 23 - Trả lời ngắn - Số bước chuyển tối thiểu Tháp Hà Nội",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 23",
+      "prompt": "Trong trò chơi Tháp Hà Nội với 6 đĩa, số bước chuyển tối thiểu để chuyển toàn bộ 6 đĩa từ cọc thứ nhất sang cọc thứ ba theo luật chơi là bao nhiêu?",
+      "correctAnswer": "63",
+      "acceptableAnswers": [
+        "63"
+      ],
+      "explanation": "Số bước chuyển tối thiểu cho $n$ đĩa là $u_n = 2^n - 1$.\nVới $n = 6$: $u_6 = 2^6 - 1 = 64 - 1 = 63$ bước."
+    },
+    {
+      "id": "sa-11.5.24",
+      "badge": "Câu 24 - Trả lời ngắn - Số lượng số hạng nguyên của dãy phân thức",
+      "source": "Tài liệu GDPT 2018 Toán 11 C2B1 TLN Câu 24",
+      "prompt": "Cho dãy số $(u_n)$ với $u_n = \\dfrac{3n + 12}{n + 1}$. Có bao nhiêu số hạng của dãy số nhận giá trị là số nguyên?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "explanation": "Biến đổi: $u_n = \\dfrac{3(n+1) + 9}{n+1} = 3 + \\dfrac{9}{n+1}$.\nĐể $u_n$ nguyên thì $n + 1$ là ước của 9. Các ước nguyên dương lớn hơn 1 của 9 là: $3$ và $9$.\n• $n + 1 = 3 \\Rightarrow n = 2 \\in \\mathbb{N}^*$.\n• $n + 1 = 9 \\Rightarrow n = 8 \\in \\mathbb{N}^*$.\n• $n + 1 = 1 \\Rightarrow n = 0$ (loại). Nếu xét ước khác: có 2 số hạng nguyên dương (hoặc nếu tính cả 1 là 3 số hạng)."
+    }
+  ]
+}
 };

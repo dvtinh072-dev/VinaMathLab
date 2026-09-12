@@ -7214,6 +7214,30 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "mathNote": "u_{n+1} - u_n > 0 \\Leftrightarrow (u_n) \\text{ tăng}"
     }
   ],
+  "youtubeVideoId": "zQfD7o1UtjY",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 5 - Dãy số - Toán 11 Kết nối tri thức",
+  "youtubeVideos": [
+    {
+      "id": "zQfD7o1UtjY",
+      "title": "Bài giảng: Bài 5 - Dãy số - Toán 11 Kết nối tri thức"
+    },
+    {
+      "id": "vbtmefpR850",
+      "title": "Bài 5: Dãy số (Tiết 1) - Toán 11 KNTT"
+    },
+    {
+      "id": "hPD88M6sQH0",
+      "title": "Bài 5: Dãy số (Tiết 2) - Toán 11 KNTT"
+    },
+    {
+      "id": "xcoSEpPT22g",
+      "title": "Bài 5: Dãy số (Tiết 3) - Toán 11 KNTT"
+    },
+    {
+      "id": "SEeOfBntxCQ",
+      "title": "Bài 5: Dãy số (Tiết 4) - Toán 11 KNTT"
+    }
+  ],
   "theorySections": [
     {
       "index": "1",
@@ -8750,6 +8774,22 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "mathNote": "S_n = \\dfrac{n(u_1 + u_n)}{2}"
     }
   ],
+  "youtubeVideoId": "aOStTQtB0Y0",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 6 - Cấp số cộng - Toán 11 Kết nối tri thức",
+  "youtubeVideos": [
+    {
+      "id": "aOStTQtB0Y0",
+      "title": "Bài 6: Cấp số cộng (Tiết 1) - Toán 11 KNTT"
+    },
+    {
+      "id": "_DM_xBaxO-8",
+      "title": "Bài 6: Cấp số cộng (Tiết 2) - Toán 11 KNTT"
+    },
+    {
+      "id": "SkraxBnTN_0",
+      "title": "Bài 6: Cấp số cộng (Tiết 3) - Toán 11 KNTT"
+    }
+  ],
   "theorySections": [
     {
       "index": "1",
@@ -9399,6 +9439,26 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "speech": "Chính xác, Lan! Cấp số nhân miêu tả sự tăng trưởng bùng nổ theo cấp lũy thừa. Để tính tổng $n$ số hạng đầu, ta có công thức tuyệt đẹp: $S_n = u_1 \\dfrac{1 - q^n}{1 - q}$ (với $q \\ne 1$).",
       "visualGraphic": "savings",
       "mathNote": "S_n = u_1 \\dfrac{1 - q^n}{1 - q}"
+    }
+  ],
+  "youtubeVideoId": "9sX53jzJZFE",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 7 - Cấp số nhân - Toán 11 Kết nối tri thức",
+  "youtubeVideos": [
+    {
+      "id": "9sX53jzJZFE",
+      "title": "Bài 7: Cấp số nhân (Tiết 1) - Toán 11 KNTT"
+    },
+    {
+      "id": "Oh91iGOmgl8",
+      "title": "Bài 7: Cấp số nhân (Tiết 2) - Toán 11 KNTT"
+    },
+    {
+      "id": "W8yNsDcqTMI",
+      "title": "Bài 7: Cấp số nhân (Tiết 3) - Toán 11 KNTT"
+    },
+    {
+      "id": "nLdpHApPjKU",
+      "title": "Bài 7: Cấp số nhân (Tiết 4) - Toán 11 KNTT"
     }
   ],
   "theorySections": [

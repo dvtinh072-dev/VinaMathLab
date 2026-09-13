@@ -24,7 +24,7 @@ export interface HybridChatInput {
 export interface HybridChatOutput {
   reply: string;
   sources: { title: string; citation: string; url?: string }[];
-  providerUsed: "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK nội bộ";
+  providerUsed: "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK chuẩn";
   isGroundedWithKnowledge: boolean;
 }
 
@@ -318,7 +318,7 @@ Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi ti
     return {
       reply: fallbackReply,
       sources: defaultSources,
-      providerUsed: "Học liệu SGK nội bộ",
+      providerUsed: "Học liệu SGK chuẩn",
       isGroundedWithKnowledge: true,
     };
   }
@@ -336,7 +336,7 @@ Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi ti
     return {
       reply: fallbackReply,
       sources: defaultSources,
-      providerUsed: "Học liệu SGK nội bộ",
+      providerUsed: "Học liệu SGK chuẩn",
       isGroundedWithKnowledge: true,
     };
   }
@@ -352,7 +352,7 @@ Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi ti
   return {
     reply: noMatchReply,
     sources: defaultSources,
-    providerUsed: "Học liệu SGK nội bộ",
+    providerUsed: "Học liệu SGK chuẩn",
     isGroundedWithKnowledge: false,
   };
 }

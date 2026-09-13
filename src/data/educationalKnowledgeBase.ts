@@ -475,6 +475,54 @@ $$S = \\sqrt{p(p - a)(p - b)(p - c)}$$`,
     sourceCitation: "Sách giáo khoa Toán 10 (Tập 1), Chương III: Hệ thức lượng trong tam giác, Bài 6 (Mục 3: Giải tam giác và các công thức tính diện tích tam giác, Trang 41), NXB Giáo Dục Việt Nam."
   },
   {
+    id: "kb-t10-so-trung-binh-thong-ke",
+    keywords: [
+      "so trung binh",
+      "so trung binh cong",
+      "tinh so trung binh",
+      "tinh so trung binh cong",
+      "trung vi",
+      "tu phan vi",
+      "mot",
+      "phuong sai",
+      "do lech chuan",
+      "cac so dac trung do xu the trung tam",
+      "mau so lieu khong ghep nhom",
+      "thong ke toan 10",
+      "thong ke lop 10"
+    ],
+    topic: "Số trung bình cộng & Các số đặc trưng mẫu số liệu không ghép nhóm (Toán 10)",
+    grade: 10,
+    questionVariants: [
+      "tính số trung bình cộng lớp 10",
+      "công thức tính số trung bình lớp 10",
+      "tính trung vị lớp 10",
+      "tứ phân vị lớp 10",
+      "phương sai và độ lệch chuẩn lớp 10"
+    ],
+    summary: "Số trung bình cộng, trung vị, tứ phân vị, mốt, phương sai và độ lệch chuẩn của mẫu số liệu không ghép nhóm.",
+    officialContent: `1. **Số trung bình cộng (kí hiệu $\\overline{x}$):**
+Cho mẫu số liệu gồm $n$ giá trị $x_1, x_2, ..., x_n$:
+$$\\overline{x} = \\frac{x_1 + x_2 + ... + x_n}{n} = \\frac{1}{n} \\sum_{i=1}^n x_i$$
+- Nếu số liệu cho dưới dạng bảng tần số ($x_k$ xuất hiện $n_k$ lần, với cỡ mẫu $n = \\sum n_k$):
+$$\\overline{x} = \\frac{n_1 x_1 + n_2 x_2 + ... + n_k x_k}{n}$$
+
+2. **Trung vị ($M_e$):**
+Sắp xếp mẫu số liệu theo thứ tự không giảm: $x_1 \\le x_2 \\le ... \\le x_n$.
+- Nếu $n$ lẻ: $M_e = x_{\\frac{n+1}{2}}$.
+- Nếu $n$ chẵn: $M_e = \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}$.
+
+3. **Mốt ($M_o$):** Giá trị có tần số xuất hiện lớn nhất trong mẫu số liệu.
+
+4. **Phương sai ($s^2$) & Độ lệch chuẩn ($s$):**
+$$s^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\overline{x})^2 = \\frac{1}{n} \\sum_{i=1}^n x_i^2 - (\\overline{x})^2$$
+Độ lệch chuẩn: $s = \\sqrt{s^2}$.`,
+    formulaLatex: "\\overline{x} = \\frac{\\sum x_i}{n}, \\ s^2 = \\frac{1}{n}\\sum (x_i - \\overline{x})^2, \\ s = \\sqrt{s^2}",
+    sourceName: "SGK Toán 10 (Tập 1) - Bộ sách Kết nối tri thức với cuộc sống",
+    sourceUrl: "https://hanhtrangso.nxbgd.vn",
+    sourceCitation: "Sách giáo khoa Toán 10 (Tập 1), Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm, Bài 12 & Bài 13, NXB Giáo Dục Việt Nam."
+  },
+  {
     id: "kb-t10-menh-de-tap-hop",
     keywords: ["menh de", "menh de chua bien", "menh de phu dinh", "menh de keo theo", "tuong duong", "khoang", "doan"],
     topic: "Mệnh đề logic, Kí hiệu $\\forall, \\exists$ & Các tập hợp số",
@@ -528,6 +576,79 @@ $$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0$$`,
   },
 
   // =================== TOÁN 11 ===================
+  {
+    id: "kb-t11-so-trung-binh-ghep-nhom",
+    keywords: [
+      "so trung binh",
+      "so trung binh cong",
+      "tinh so trung binh",
+      "tinh so trung binh cong",
+      "tinh so trung binh cong lop 11",
+      "mau so lieu ghep nhom",
+      "gia tri dai dien",
+      "trung vi ghep nhom",
+      "tu phan vi ghep nhom",
+      "mot ghep nhom",
+      "thong ke lop 11",
+      "cac so dac trung do xu the trung tam"
+    ],
+    topic: "Số trung bình cộng & Các số đặc trưng của mẫu số liệu ghép nhóm (Toán 11)",
+    grade: 11,
+    questionVariants: [
+      "tính số trung bình cộng lớp 11",
+      "tính số trung bình lớp 11",
+      "số trung bình cộng của mẫu số liệu ghép nhóm",
+      "công thức tính số trung bình cộng lớp 11",
+      "công thức tính số trung bình của mẫu số liệu ghép nhóm",
+      "các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+      "tính trung vị của mẫu số liệu ghép nhóm",
+      "tính mốt của mẫu số liệu ghép nhóm",
+      "tứ phân vị của mẫu số liệu ghép nhóm"
+    ],
+    summary: "Công thức tính số trung bình cộng, giá trị đại diện nhóm, trung vị, tứ phân vị và mốt của mẫu số liệu ghép nhóm lớp 11 chuẩn SGK.",
+    officialContent: `1. **Khái niệm mẫu số liệu ghép nhóm:**
+Mẫu số liệu ghép nhóm là mẫu số liệu được cho dưới dạng các khoảng/nửa khoảng rời nhau: $[a_1; a_2), [a_2; a_3), ..., [a_k; a_{k+1})$ cùng với tần số tương ứng $m_1, m_2, ..., m_k$.
+Cỡ mẫu: $n = m_1 + m_2 + ... + m_k$.
+
+2. **Công thức tính số trung bình cộng của mẫu số liệu ghép nhóm:**
+- **Bước 1: Xác định giá trị đại diện $c_i$ của từng nhóm:**
+  $$c_i = \\frac{a_i + a_{i+1}}{2} \\quad (i = 1, 2, ..., k)$$
+- **Bước 2: Áp dụng công thức số trung bình cộng:**
+  $$\\overline{x} = \\frac{m_1 c_1 + m_2 c_2 + ... + m_k c_k}{n} = \\frac{1}{n} \\sum_{i=1}^k m_i c_i$$
+
+3. **Trung vị ($M_e$) của mẫu số liệu ghép nhóm:**
+Giả sử nhóm $[a_p; a_{p+1})$ là nhóm đầu tiên có tần số tích luỹ $\\ge \\frac{n}{2}$ (gọi là nhóm chứa trung vị):
+$$M_e = a_p + \\frac{\\frac{n}{2} - C}{m_p} \\cdot (a_{p+1} - a_p)$$
+*(với $C = m_1 + m_2 + ... + m_{p-1}$ là tổng tần số của các nhóm đứng trước nhóm chứa trung vị).*
+
+4. **Tứ phân vị ($Q_1, Q_2, Q_3$):**
+- $Q_2 = M_e$.
+- $Q_1$ tính theo nhóm chứa $\\frac{n}{4}$: $Q_1 = a_p + \\frac{\\frac{n}{4} - C}{m_p} \\cdot (a_{p+1} - a_p)$.
+- $Q_3$ tính theo nhóm chứa $\\frac{3n}{4}$: $Q_3 = a_r + \\frac{\\frac{3n}{4} - C}{m_r} \\cdot (a_{r+1} - a_r)$.
+
+5. **Mốt ($M_o$) của mẫu số liệu ghép nhóm:**
+Giả sử nhóm $[a_j; a_{j+1})$ có tần số lớn nhất $m_j$:
+$$M_o = a_j + \\frac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot (a_{j+1} - a_j)$$
+
+6. **Ví dụ áp dụng minh họa cụ thể:**
+Cho mẫu số liệu ghép nhóm về thời gian truy cập Internet (giờ/ngày) của 40 học sinh:
+- Nhóm $[0; 1)$: tần số $m_1 = 5 \\implies$ Giá trị đại diện $c_1 = \\frac{0+1}{2} = 0,5$.
+- Nhóm $[1; 2)$: tần số $m_2 = 15 \\implies$ Giá trị đại diện $c_2 = \\frac{1+2}{2} = 1,5$.
+- Nhóm $[2; 3)$: tần số $m_3 = 12 \\implies$ Giá trị đại diện $c_3 = \\frac{2+3}{2} = 2,5$.
+- Nhóm $[3; 4)$: tần số $m_4 = 8 \\implies$ Giá trị đại diện $c_4 = \\frac{3+4}{2} = 3,5$.
+Cỡ mẫu: $n = 5 + 15 + 12 + 8 = 40$.
+*Số trung bình cộng:*
+$$\\overline{x} = \\frac{5 \\cdot 0,5 + 15 \\cdot 1,5 + 12 \\cdot 2,5 + 8 \\cdot 3,5}{40} = \\frac{2,5 + 22,5 + 30 + 28}{40} = \\frac{83}{40} = 2,075\\text{ (giờ)}.$$`,
+    formulaLatex: "\\overline{x} = \\frac{\\sum m_i c_i}{n} = \\frac{m_1 c_1 + m_2 c_2 + ... + m_k c_k}{n}, \\ c_i = \\frac{a_i + a_{i+1}}{2}",
+    standardSteps: [
+      "Bước 1: Tính giá trị đại diện c_i = (a_i + a_{i+1})/2 của từng nhóm dữ liệu.",
+      "Bước 2: Nhân từng giá trị đại diện c_i với tần số m_i tương ứng.",
+      "Bước 3: Cộng tổng các tích vừa tìm được rồi chia cho cỡ mẫu n = tổng các tần số."
+    ],
+    sourceName: "SGK Toán 11 (Tập 1) - Bộ sách Kết nối tri thức với cuộc sống",
+    sourceUrl: "https://hanhtrangso.nxbgd.vn",
+    sourceCitation: "Sách giáo khoa Toán 11 (Tập 1), Chương V: Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm, Bài 13: Số gần đúng và sai số - Các số đặc trưng đo xu thế trung tâm (Trang 128 - 134), NXB Giáo Dục Việt Nam."
+  },
   {
     id: "kb-t11-luong-giac",
     keywords: [
@@ -635,6 +756,50 @@ $$y - y_0 = f'(x_0)(x - x_0) \\iff y = f'(x_0)(x - x_0) + y_0$$`,
     sourceName: "SGK Toán 11 (Tập 2) - Bộ sách Kết nối tri thức với cuộc sống",
     sourceUrl: "https://hanhtrangso.nxbgd.vn",
     sourceCitation: "Sách giáo khoa Toán 11 (Tập 2), Chương IX: Đạo hàm, NXB Giáo Dục Việt Nam."
+  },
+
+  {
+    id: "kb-t11-khoang-cach",
+    keywords: [
+      "khoang cach",
+      "khoang cach tu diem den mat phang",
+      "khoang cach giua hai duong thang cheo nhau",
+      "khoang cach giua duong thang va mat phang song song",
+      "khoang cach giua hai mat phang song song",
+      "khoang cach trong khong gian",
+      "hinh hoc khong gian lop 11"
+    ],
+    topic: "Khoảng cách trong không gian (Toán 11)",
+    grade: 11,
+    questionVariants: [
+      "tính khoảng cách lớp 11",
+      "tính khoảng cách từ điểm đến mặt phẳng",
+      "tính khoảng cách giữa hai đường thẳng chéo nhau",
+      "công thức tính khoảng cách trong hình không gian lớp 11",
+      "khoảng cách giữa hai mặt phẳng song song"
+    ],
+    summary: "Phương pháp tính khoảng cách từ điểm đến đường thẳng, điểm đến mặt phẳng và khoảng cách giữa hai đường thẳng chéo nhau hình học không gian 11.",
+    officialContent: `1. **Khoảng cách từ điểm $M$ đến mặt phẳng $(P)$:**
+- Kẻ $MH \\perp (P)$ tại $H$. Khi đó $d(M, (P)) = MH$.
+- **Phương pháp đổi điểm:** Nếu đường thẳng $AB$ cắt $(P)$ tại $I$ ($I \\notin (P)$) thì:
+  $\\frac{d(A, (P))}{d(B, (P))} = \\frac{IA}{IB}$
+- **Phương pháp thể tích (khối chóp):** $d(A, (SBC)) = \\frac{3 V_{S.ABC}}{S_{\\Delta SBC}}$.
+2. **Khoảng cách giữa đường thẳng $a$ và mặt phẳng $(P)$ song song với $a$:**
+$d(a, (P)) = d(M, (P)) \\quad (\\text{với } M \\text{ là điểm bất kì thuộc } a)$
+3. **Khoảng cách giữa hai mặt phẳng song song $(P)$ và $(Q)$:**
+$d((P), (Q)) = d(M, (Q)) \\quad (\\text{với } M \\in (P))$
+4. **Khoảng cách giữa hai đường thẳng chéo nhau $a$ và $b$:**
+- Dựng mặt phẳng $(P)$ chứa $b$ và song song với $a$: Khi đó $d(a, b) = d(a, (P)) = d(M, (P))$ với $M \\in a$.
+- Dựng đoạn vuông góc chung $HK$ ($H \\in a, K \\in b, HK \\perp a, HK \\perp b$): $d(a, b) = HK$.`,
+    formulaLatex: "d(M, (P)) = MH \\ (MH \\perp (P)), \\ d(a, b) = d(a, (P)) \\ (b \\subset (P), a \\parallel (P))",
+    standardSteps: [
+      "Bước 1: Xác định chân đường vuông góc hạ từ đỉnh xuống đáy hình chóp/lăng trụ.",
+      "Bước 2: Sử dụng phương pháp dời điểm về chân đường cao để tính khoảng cách.",
+      "Bước 3: Dựng tam giác vuông chứa đoạn vuông góc và dùng hệ thức lượng (ví dụ: 1/h^2 = 1/a^2 + 1/b^2)."
+    ],
+    sourceName: "SGK Toán 11 (Tập 2) - Bộ sách Kết nối tri thức với cuộc sống",
+    sourceUrl: "https://hanhtrangso.nxbgd.vn",
+    sourceCitation: "Sách giáo khoa Toán 11 (Tập 2), Chương VII: Quan hệ vuông góc trong không gian, Bài 24: Khoảng cách trong không gian, NXB Giáo Dục Việt Nam."
   },
 
   // =================== TOÁN 12 ===================
@@ -752,6 +917,16 @@ $$P(B_k \\mid A) = \\frac{P(B_k) \\cdot P(A \\mid B_k)}{P(A)} = \\frac{P(B_k) \\
 ];
 
 /**
+ * Danh sách các từ dừng (stopwords) trong câu hỏi toán học tiếng Việt.
+ * Các từ này KHÔNG được dùng để tính điểm đơn lẻ, tránh việc "tính số..." match nhầm sang bài khác.
+ */
+const STOP_WORDS = new Set([
+  "so", "tinh", "cac", "la", "gi", "cua", "trong", "va", "cho", "mot", 
+  "nhung", "bang", "de", "theo", "the", "nao", "hay", "co", "khi", "nhu", 
+  "bai", "hoc", "ra", "sao", "giup", "em", "thay", "co"
+]);
+
+/**
  * Hàm chuẩn hóa văn bản tiếng Việt để tìm kiếm
  */
 function normalizeText(text: string): string {
@@ -767,7 +942,6 @@ function normalizeText(text: string): string {
 
 /**
  * Kiểm tra xem từ đơn có xuất hiện dưới dạng một từ độc lập (whole word) hay không.
- * Tránh việc 'cos' match với 'cosin', 'sin' match với 'cosin'.
  */
 function containsWholeWord(text: string, word: string): boolean {
   const normT = " " + normalizeText(text) + " ";
@@ -778,6 +952,8 @@ function containsWholeWord(text: string, word: string): boolean {
 
 /**
  * Hàm tìm kiếm kiến thức chuẩn xác từ kho tri thức giáo dục uy tín
+ * BẢO VỆ CHẶT CHẼ: Bắt buộc có điểm chủ đề cốt lõi (coreScore >= 35).
+ * KHÔNG BAO GIỜ để từ khóa "lớp 11" hay các từ dừng "số", "tính" tự ý match sang chủ đề khác!
  */
 export function queryEducationalKnowledgeBase(userQuestion: string): {
   match: KnowledgeItem | null;
@@ -790,71 +966,91 @@ export function queryEducationalKnowledgeBase(userQuestion: string): {
     return { match: null, confidence: 0, allCandidates: [] };
   }
 
+  // 0. Nhận diện rõ ràng lớp học trong câu hỏi (Ví dụ: "lớp 11", "toán 11", "k11", "lớp 10"...)
+  let queryGrade: number | null = null;
+  const gradeRegex = /(?:lop|toan|k)\s*(6|7|8|9|10|11|12)\b/;
+  const matchGrade = normQ.match(gradeRegex);
+  if (matchGrade) {
+    queryGrade = parseInt(matchGrade[1], 10);
+  }
+
   const scored = EDUCATIONAL_KNOWLEDGE_BASE.map((item) => {
-    let score = 0;
+    let coreScore = 0;
 
     // 1. So khớp biến thể câu hỏi (Question Variants) - Trọng số cao nhất
     for (const v of item.questionVariants) {
       const normV = normalizeText(v);
       if (normQ === normV) {
-        score += 150; // Trùng khớp hoàn toàn câu hỏi
-      } else if (normQ.includes(normV)) {
-        score += 70; // Câu hỏi người dùng chứa trọn vẹn biến thể mẫu
-      } else if (normV.includes(normQ) && normQ.length >= 6) {
-        score += 45; // Biến thể mẫu chứa câu hỏi người dùng
+        coreScore += 180; // Trùng khớp hoàn toàn câu hỏi
+      } else if (normQ.includes(normV) && normV.length >= 8) {
+        coreScore += 90; // Câu hỏi người dùng chứa trọn vẹn biến thể mẫu
+      } else if (normV.includes(normQ) && normQ.length >= 8) {
+        coreScore += 60; // Biến thể mẫu chứa câu hỏi người dùng
       }
     }
 
-    // 2. So khớp từ khóa (Keywords)
+    // 2. So khớp từ khóa chuyên môn (Keywords)
     for (const kw of item.keywords) {
       const normKw = normalizeText(kw);
       const isMultiWord = normKw.includes(" ");
 
       if (isMultiWord) {
-        // Cụm từ khóa nhiều chữ (ví dụ: "dinh ly cosin", "hang dang thuc")
+        // Cụm từ khóa nhiều chữ (ví dụ: "so trung binh", "dinh ly cosin", "mau so lieu ghep nhom")
         if (normQ.includes(normKw)) {
-          score += 50;
+          coreScore += 70;
         }
       } else {
-        // Từ khóa đơn (như "cos", "sin", "tan", "uoc", "boi")
-        // Bắt buộc kiểm tra whole-word để không match nhầm (như "cos" trong "cosin")
-        if (containsWholeWord(normQ, normKw)) {
-          score += 12;
+        // Từ khóa đơn: BỎ QUA NẾU LÀ STOPWORD (như "so", "tinh")
+        if (!STOP_WORDS.has(normKw)) {
+          if (containsWholeWord(normQ, normKw)) {
+            coreScore += 25;
+          }
         }
       }
     }
 
     // 3. So khớp tiêu đề chủ đề (Topic)
     const normTopic = normalizeText(item.topic);
-    if (normQ.includes(normTopic)) {
-      score += 50;
+    if (normQ.includes(normTopic) && normTopic.length >= 8) {
+      coreScore += 70;
     } else {
       const topicWords = normTopic.split(" ");
       for (const w of topicWords) {
-        if (w.length >= 3 && containsWholeWord(normQ, w)) {
-          score += 6;
+        if (w.length >= 3 && !STOP_WORDS.has(w) && containsWholeWord(normQ, w)) {
+          coreScore += 15;
         }
       }
     }
 
-    // 4. Ưu tiên lớp nếu người dùng có nhắc đến lớp (ví dụ: "toán 10", "lớp 10")
-    if (item.grade > 0) {
-      if (normQ.includes("lop " + item.grade) || normQ.includes("toan " + item.grade) || normQ.includes("k" + item.grade)) {
-        score += 25;
+    // 4. KIỂM SOÁT LỚP HỌC CHẶT CHẼ:
+    // - Nếu học sinh chỉ định rõ lớp (ví dụ "lớp 11"):
+    //   + Bài đúng lớp 11 được cộng thưởng lớn (+100) khi đã có coreScore >= 20.
+    //   + Bài sai lớp (lớp 10 hoặc 12) BỊ PHẠT NẶNG (-150) để tuyệt đối không bao giờ match nhầm sang lớp khác!
+    // - Nếu không chỉ định lớp: không phạt.
+    let gradeBonus = 0;
+    if (queryGrade !== null && item.grade > 0) {
+      if (item.grade === queryGrade) {
+        if (coreScore >= 20) {
+          gradeBonus += 100;
+        }
+      } else {
+        gradeBonus -= 150;
       }
     }
 
-    return { item, score };
+    const totalScore = coreScore + gradeBonus;
+    return { item, score: totalScore, coreScore };
   });
 
   scored.sort((a, b) => b.score - a.score);
 
   const best = scored[0];
-  if (best && best.score >= 20) {
+  // BẮT BUỘC coreScore >= 35 và totalScore >= 35
+  if (best && best.coreScore >= 35 && best.score >= 35) {
     return {
       match: best.item,
       confidence: best.score,
-      allCandidates: scored.filter((s) => s.score >= 20)
+      allCandidates: scored.filter((s) => s.coreScore >= 35 && s.score >= 35)
     };
   }
 

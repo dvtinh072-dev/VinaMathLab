@@ -1787,7 +1787,7 @@ export default function AdminDashboardPage() {
                     ? "✨ Gemini + SGK Active"
                     : aiConfig?.provider === "openai" && aiConfig?.hasOpenAiKey
                     ? "✨ ChatGPT + SGK Active"
-                    : "📚 Học Liệu SGK Nội Bộ"}
+                    : "📚 Học Liệu SGK Chuẩn"}
                 </span>
               </div>
               <p className="text-xs text-slate-400">
@@ -1911,11 +1911,11 @@ export default function AdminDashboardPage() {
                     }`}
                   >
                     <div className="text-xs font-bold flex items-center justify-between">
-                      <span>Học liệu SGK Nội Bộ</span>
+                      <span>Học liệu SGK Chuẩn</span>
                       {aiProviderChoice === "internal" && <span className="text-[10px] text-cyan-400 font-black">✓ Chọn</span>}
                     </div>
                     <div className="text-[10px] text-slate-400 leading-snug">
-                      Không gọi API ngoài, 100% trích xuất chuẩn CSDL nội bộ VinaMath.
+                      Không gọi API ngoài, 100% trích xuất chuẩn CSDL SGK VinaMath.
                     </div>
                   </button>
                 </div>
@@ -2038,7 +2038,7 @@ export default function AdminDashboardPage() {
                   ? "Google Gemini + SGK"
                   : aiConfig?.provider === "openai" && aiConfig?.hasOpenAiKey
                   ? "ChatGPT + SGK"
-                  : "Học liệu SGK Nội Bộ"}
+                  : "Học liệu SGK Chuẩn"}
               </div>
             </div>
             <div className="p-3 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-1">

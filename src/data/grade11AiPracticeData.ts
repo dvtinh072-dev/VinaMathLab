@@ -5204,7 +5204,7 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       "badge": "Luyện thêm 12 - CTTQ của dãy u_{n+1} = 2u_n + 3",
       "isAiGenerated": true,
       "source": "Tài liệu Luyện tập Toán 11 C2B1 Dãy số",
-      "question": "Số hạng tổng quát $u_n$ của dãy số ở câu trên ($u_1 = 1, u_{n+1} = 2u_n + 3$) là:",
+      "question": "Cho dãy số $(u_n)$ xác định bởi $u_1 = 1$ và $u_{n+1} = 2u_n + 3$ với mọi $n \\ge 1$. Số hạng tổng quát $u_n$ của dãy số là:",
       "options": [
         "$u_n = 2^{n+1} - 3$",
         "$u_n = 2^n - 1$",

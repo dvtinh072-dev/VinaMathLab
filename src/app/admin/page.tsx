@@ -34,6 +34,7 @@ import {
   KeyRound,
   Lock,
   Flag,
+  Bot,
   MessageSquare,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
@@ -43,6 +44,7 @@ import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 import { parseAssignedClasses, isStudentInAssignedClasses } from "@/lib/teacherClassUtils";
 import { fetchQuestionReports, updateQuestionReportStatus, deleteQuestionReport, QuestionReportItem } from "@/lib/questionReportClient";
+import { fetchAdminChatLogs, deleteAdminChatLog, AiChatLogItem } from "@/lib/vinaAiChatClient";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 
 export default function AdminDashboardPage() {
@@ -56,7 +58,9 @@ export default function AdminDashboardPage() {
     }
   }, [user, isAdmin, router]);
 
-  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "reports" | "backup" | "settings">("students");
+  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "reports" | "ai_chat" | "backup" | "settings">("students");
+  const [aiChatLogs, setAiChatLogs] = useState<AiChatLogItem[]>([]);
+  const [aiChatSearchQuery, setAiChatSearchQuery] = useState<string>("");
   const [questionReports, setQuestionReports] = useState<QuestionReportItem[]>([]);
   const [reportFilterStatus, setReportFilterStatus] = useState<"all" | "pending" | "resolved" | "dismissed">("all");
   const [selectedReportDetail, setSelectedReportDetail] = useState<QuestionReportItem | null>(null);
@@ -245,6 +249,14 @@ export default function AdminDashboardPage() {
         setQuestionReports(reportsList);
       } catch (repErr) {
         console.warn("Lỗi fetch question reports:", repErr);
+      }
+
+      // 1.6. Lấy lịch sử hỏi đáp của AI Vina
+      try {
+        const chatLogsList = await fetchAdminChatLogs();
+        setAiChatLogs(chatLogsList);
+      } catch (chatErr) {
+        console.warn("Lỗi fetch chat logs:", chatErr);
       }
 
       const resProgress = await fetch("/api/student/progress?mode=admin");
@@ -976,6 +988,18 @@ export default function AdminDashboardPage() {
               {pendingReportsCount} mới
             </span>
           )}
+        </button>
+
+        <button
+          onClick={() => setActiveTab("ai_chat")}
+          className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
+            activeTab === "ai_chat"
+              ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/30"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <Bot className="w-4 h-4 text-cyan-400" />
+          <span>Hỏi Đáp AI Vina ({aiChatLogs.length})</span>
         </button>
 
         <button
@@ -1714,6 +1738,203 @@ export default function AdminDashboardPage() {
                     </div>
                   );
                 })}
+              </div>
+            );
+          })()}
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB: THỐNG KÊ HỎI ĐÁP CỦA HỌC SINH VỚI TRỢ LÝ AI VINA                     */}
+      {/* ========================================================================= */}
+      {activeTab === "ai_chat" && (
+        <div className="space-y-4 animate-in fade-in duration-200">
+          {/* Top Banner & Filter Controls */}
+          <div className="p-4 rounded-2xl bg-[#0e1526] border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 shadow-md">
+            <div className="space-y-1">
+              <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
+                <Bot className="w-4 h-4 text-cyan-400" />
+                <span>Giám Sát & Thống Kê Hội Thoại Trợ Lý AI Vina</span>
+              </h2>
+              <p className="text-xs text-slate-400">
+                Lưu giữ 100% câu hỏi của học sinh và nguồn tư liệu giáo dục chính thống mà AI Vina đã trích dẫn để Admin kiểm soát chất lượng sư phạm.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                onClick={async () => {
+                  const updated = await fetchAdminChatLogs();
+                  setAiChatLogs(updated);
+                  setStatusMessage("Đã làm mới danh sách hội thoại AI Vina!");
+                  setTimeout(() => setStatusMessage(null), 2500);
+                }}
+                className="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-bold text-xs hover:bg-slate-800 flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                <RefreshCw className="w-3.5 h-3.5 text-cyan-400" />
+                <span>Làm mới</span>
+              </button>
+
+              {aiChatLogs.length > 0 && (
+                <button
+                  onClick={async () => {
+                    if (!window.confirm("Bạn có chắc muốn xóa toàn bộ lịch sử hỏi đáp của học sinh với AI?")) return;
+                    await deleteAdminChatLog("all");
+                    setAiChatLogs([]);
+                    setStatusMessage("Đã xóa toàn bộ nhật ký hội thoại AI Vina.");
+                    setTimeout(() => setStatusMessage(null), 3000);
+                  }}
+                  className="px-3 py-1.5 rounded-xl bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/30 text-rose-300 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5"
+                >
+                  <Trash2 className="w-3.5 h-3.5" />
+                  <span>Xóa tất cả nhật ký</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Search bar */}
+          <div className="relative max-w-md">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <input
+              type="text"
+              value={aiChatSearchQuery}
+              onChange={(e) => setAiChatSearchQuery(e.target.value)}
+              placeholder="Tìm theo câu hỏi, tên học sinh, chủ đề bài học..."
+              className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-slate-900 border border-slate-800 text-white text-xs placeholder-slate-500 focus:outline-none focus:border-cyan-400 shadow-inner"
+            />
+          </div>
+
+          {/* Chat Logs List */}
+          {(() => {
+            const filteredLogs = aiChatLogs.filter((log) => {
+              if (!aiChatSearchQuery.trim()) return true;
+              const q = aiChatSearchQuery.toLowerCase();
+              return (
+                log.question.toLowerCase().includes(q) ||
+                log.answer.toLowerCase().includes(q) ||
+                (log.studentName && log.studentName.toLowerCase().includes(q)) ||
+                (log.topic && log.topic.toLowerCase().includes(q))
+              );
+            });
+
+            if (filteredLogs.length === 0) {
+              return (
+                <div className="py-14 text-center rounded-3xl bg-[#0e1526] border border-slate-800 space-y-3">
+                  <div className="w-12 h-12 mx-auto rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500">
+                    <Bot className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-bold text-white">Chưa có câu hỏi nào từ học sinh</h3>
+                    <p className="text-xs text-slate-400">
+                      Khi học sinh mở khung chat AI Vina ở góc phải màn hình để tra cứu bài học, dữ liệu hỏi - đáp sẽ được thống kê trực tiếp tại đây.
+                    </p>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <div className="grid grid-cols-1 gap-3.5">
+                {filteredLogs.map((log) => (
+                  <div
+                    key={log.id}
+                    className="p-4 rounded-2xl bg-[#0e1526] border border-slate-800 hover:border-cyan-500/40 transition-all space-y-3 shadow-md"
+                  >
+                    {/* Top Row: Meta info */}
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-[10px] font-black flex items-center gap-1">
+                          <Bot className="w-3 h-3" />
+                          <span>{log.topic || "Toán Phổ Thông"}</span>
+                        </span>
+
+                        {log.grade && (
+                          <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[10px] font-bold">
+                            Lớp {log.grade}
+                          </span>
+                        )}
+
+                        <span
+                          className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                            log.isAnsweredFromKnowledge
+                              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                              : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+                          }`}
+                        >
+                          {log.isAnsweredFromKnowledge
+                            ? "✓ Học liệu chính thống"
+                            : "⚠️ Cảnh báo không tự bịa"}
+                        </span>
+                      </div>
+
+                      <div className="text-[11px] text-slate-400 flex items-center gap-2">
+                        <span>
+                          Học sinh: <strong className="text-slate-200">{log.studentName || "Khách"}</strong>
+                          {log.studentClass ? ` (${log.studentClass})` : ""}
+                        </span>
+                        <span>•</span>
+                        <span className="font-mono text-slate-400">
+                          {new Date(log.timestamp).toLocaleString("vi-VN")}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Question Bubble */}
+                    <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+                      <div className="text-[10px] font-black text-amber-400 uppercase tracking-wider flex items-center gap-1">
+                        <span>❓ Câu hỏi của học sinh:</span>
+                      </div>
+                      <div className="text-xs font-bold text-white leading-relaxed">
+                        {log.question}
+                      </div>
+                    </div>
+
+                    {/* Answer Bubble */}
+                    <div className="p-3.5 rounded-xl bg-slate-950/80 border border-cyan-500/30 space-y-2">
+                      <div className="text-[10px] font-black text-cyan-400 uppercase tracking-wider flex items-center gap-1">
+                        <Bot className="w-3 h-3" />
+                        <span>Câu trả lời của AI Vina:</span>
+                      </div>
+                      <div className="text-xs text-slate-200 leading-relaxed font-sans">
+                        <MathFormattedText text={log.answer} />
+                      </div>
+                    </div>
+
+                    {/* Citations & Sources */}
+                    {log.sources && log.sources.length > 0 && (
+                      <div className="p-3 rounded-xl bg-slate-900/60 border border-amber-500/20 space-y-1">
+                        <div className="text-[10px] font-black text-amber-300 flex items-center gap-1 uppercase">
+                          <BookOpen className="w-3 h-3 text-amber-400" />
+                          <span>Nguồn gốc tư liệu đã đối chiếu:</span>
+                        </div>
+                        {log.sources.map((s, idx) => (
+                          <div key={idx} className="text-[11px] text-slate-300 leading-snug">
+                            <strong className="text-cyan-300">{s.title}:</strong> {s.citation}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Action Bar */}
+                    <div className="pt-1 flex items-center justify-end">
+                      <button
+                        onClick={async () => {
+                          if (!window.confirm("Xóa bản ghi câu hỏi này khỏi hệ thống quản trị?")) return;
+                          await deleteAdminChatLog(log.id);
+                          const updated = await fetchAdminChatLogs();
+                          setAiChatLogs(updated);
+                          setStatusMessage("Đã xóa bản ghi câu hỏi.");
+                          setTimeout(() => setStatusMessage(null), 2500);
+                        }}
+                        className="px-2.5 py-1 rounded-lg text-rose-400 hover:text-white hover:bg-rose-950/40 border border-rose-500/30 text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1"
+                      >
+                        <Trash2 className="w-3 h-3" />
+                        <span>Xóa dòng này</span>
+                      </button>
+                    </div>
+                  </div>
+                ))}
               </div>
             );
           })()}

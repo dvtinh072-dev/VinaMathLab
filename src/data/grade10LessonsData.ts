@@ -1561,6 +1561,84 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Thiết lập mô hình bài toán ngân sách và kế hoạch sản xuất",
   "scenarioFrames": [],
   "interactiveType": "geometry",
+  "youtubeVideoId": "LUDXjX2XPRE",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 3 - Bất phương trình bậc nhất hai ẩn (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "LUDXjX2XPRE",
+      "title": "Tiết 1: Khái niệm bất phương trình bậc nhất hai ẩn & Nghiệm"
+    },
+    {
+      "id": "Sbodsz4U8Zo",
+      "title": "Tiết 2: Biểu diễn miền nghiệm của BPT bậc nhất hai ẩn trên mặt phẳng tọa độ Oxy"
+    },
+    {
+      "id": "y8X5ZUdpfU8",
+      "title": "Tiết 3: Vận dụng bất phương trình bậc nhất hai ẩn vào bài toán thực tiễn"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.3.1",
+      "title": "Ví dụ 1 (Tiết 1): Nhận dạng bất phương trình bậc nhất hai ẩn",
+      "question": "Trong các bất phương trình sau, bất phương trình nào là bất phương trình bậc nhất hai ẩn?",
+      "options": [
+        "$2x + 3y \\le 12$",
+        "$x^2 + 2y > 5$",
+        "$2x + y - 3z < 0$",
+        "$xy + 2x \\ge 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bất phương trình $2x + 3y \\le 12$ có đúng 2 ẩn $x, y$ với bậc 1 và các hệ số $a = 2, b = 3$ thỏa mãn $a^2 + b^2 \\ne 0$."
+    },
+    {
+      "id": "vq-10.3.2",
+      "title": "Ví dụ 2 (Tiết 1): Kiểm tra điểm thuộc miền nghiệm",
+      "question": "Cặp số $(x; y)$ nào sau đây KHÔNG PHẢI là nghiệm của bất phương trình $x - 2y < 4$?",
+      "options": [
+        "$(4; 0)$",
+        "$(0; 0)$",
+        "$(1; 1)$",
+        "$(2; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay cặp số $(4; 0)$ vào vế trái: $4 - 2(0) = 4 < 4$ là khẳng định SAI. Do đó cặp số $(4; 0)$ không phải là nghiệm."
+    },
+    {
+      "id": "vq-10.3.3",
+      "title": "Ví dụ 3 (Tiết 2): Quy tắc xác định miền nghiệm trên hệ trục Oxy",
+      "question": "Khi biểu diễn miền nghiệm của bất phương trình $2x - y \\ge 4$ trên mặt phẳng tọa độ $Oxy$, ta vẽ đường thẳng bờ $d: 2x - y = 4$ bằng nét gì và miền nghiệm có chứa gốc tọa độ $O(0; 0)$ không?",
+      "options": [
+        "Vẽ nét liền (lấy cả bờ $d$) và miền nghiệm không chứa gốc tọa độ $O(0; 0)$.",
+        "Vẽ nét đứt (không lấy bờ $d$) và miền nghiệm không chứa gốc tọa độ $O(0; 0)$.",
+        "Vẽ nét liền (lấy cả bờ $d$) và miền nghiệm chứa gốc tọa độ $O(0; 0)$.",
+        "Vẽ nét đứt (không lấy bờ $d$) và miền nghiệm chứa gốc tọa độ $O(0; 0)$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì BPT có dấu $\\ge$ (có dấu bằng) nên vẽ nét liền và lấy cả bờ $d$. Thử gốc $O(0; 0)$: $2(0) - 0 = 0 \\ge 4$ (sai), vậy miền nghiệm là nửa mặt phẳng bờ $d$ không chứa gốc tọa độ $O$."
+    },
+    {
+      "id": "vq-10.3.4",
+      "title": "Ví dụ 4 (Tiết 3): Thiết lập bất phương trình từ bài toán thực tế",
+      "question": "Bạn Nam mang 200 nghìn đồng đi mua hai loại vở: loại I giá 15 nghìn đồng/quyển, loại II giá 10 nghìn đồng/quyển. Gọi $x, y$ lần lượt là số quyển vở loại I và loại II Nam mua ($x, y \\in \\mathbb{N}$). Bất phương trình thể hiện số tiền Nam có thể chi trả là:",
+      "options": [
+        "$3x + 2y \\le 40$",
+        "$3x + 2y < 40$",
+        "$15x + 10y \\ge 200$",
+        "$2x + 3y \\le 40$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng số tiền chi mua hai loại vở không vượt quá 200 nghìn đồng: $15x + 10y \\le 200 \\Leftrightarrow 3x + 2y \\le 40$ (chia cả hai vế cho 5)."
+    }
+  ],
+  "tips": [
+    "Mẹo chọn điểm thử: Luôn ưu tiên thử gốc tọa độ $O(0; 0)$ nếu đường thẳng bờ $ax + by = c$ có $c \\ne 0$. Nếu đường thẳng bờ đi qua gốc tọa độ ($c = 0$), hãy chọn điểm $A(1; 0)$ hoặc $B(0; 1)$ trên các trục tọa độ để tính toán nhanh nhất.",
+    "Mẹo nhớ nét vẽ bờ: Dấu $\\le, \\ge$ (có dấu bằng) $\\rightarrow$ vẽ NÉT LIỀN (miền nghiệm kể cả đường thẳng bờ); Dấu $<, >$ (không có dấu bằng) $\\rightarrow$ vẽ NÉT ĐỨT (miền nghiệm không kể đường thẳng bờ)."
+  ],
+  "traps": [
+    "Bẫy dấu bất đẳng thức khi chia cho số âm: Khi biến đổi bất phương trình để vẽ bờ hoặc tìm $y$ theo $x$, nếu chia hoặc nhân hai vế cho một số âm thì phải ĐỔI CHIỀU dấu bất phương trình.",
+    "Bẫy điều kiện thực tiễn: Khi thiết lập mô hình bài toán thực tế (số lượng sản phẩm, số bao phân, số vé, thời gian...), luôn bắt buộc phải bổ sung điều kiện không âm $x \\ge 0, y \\ge 0$ và điều kiện nguyên $x, y \\in \\mathbb{N}$ nếu đại lượng không thể chia nhỏ."
+  ],
   "theorySections": [
     {
       "index": "1",

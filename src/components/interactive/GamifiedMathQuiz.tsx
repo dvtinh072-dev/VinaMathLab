@@ -40,6 +40,7 @@ import {
   Eye,
   EyeOff,
   ExternalLink,
+  GraduationCap,
 } from "lucide-react";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { GRADE_7_AI_PRACTICE_DATA } from "@/data/grade7AiPracticeData";
@@ -981,13 +982,51 @@ export function GamifiedMathQuiz({
     if (hasExamSets) return "sgk";
     return hasTheory ? "theory" : "sgk";
   });
-  const [activeQuizList, setActiveQuizList] = useState<QuizQuestion[]>([]);
 
-  // State theo từng bài học (Bắt đầu lại khi vào bài khác)
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<{
+  // 1. Quizzes (Lưu độc lập giữa SGK và Luyện thêm để không mất câu hỏi & đáp án khi chuyển chế độ)
+  const [sgkQuizList, setSgkQuizList] = useState<QuizQuestion[]>([]);
+  const [aiQuizList, setAiQuizList] = useState<QuizQuestion[]>([]);
+  const activeQuizList = quizMode === "ai" ? aiQuizList : sgkQuizList;
+  const setActiveQuizList = (list: QuizQuestion[] | ((prev: QuizQuestion[]) => QuizQuestion[])) => {
+    if (quizMode === "ai") {
+      setAiQuizList(list);
+    } else {
+      setSgkQuizList(list);
+    }
+  };
+
+  // 2. Vị trí câu hỏi Trắc nghiệm
+  const [sgkCurrentIndex, setSgkCurrentIndex] = useState(0);
+  const [aiCurrentIndex, setAiCurrentIndex] = useState(0);
+  const currentIndex = quizMode === "ai" ? aiCurrentIndex : sgkCurrentIndex;
+  const setCurrentIndex = (val: number | ((prev: number) => number)) => {
+    if (quizMode === "ai") {
+      setAiCurrentIndex(val);
+    } else {
+      setSgkCurrentIndex(val);
+    }
+  };
+
+  // 3. Câu trả lời Trắc nghiệm
+  const [sgkUserAnswers, setSgkUserAnswers] = useState<{
     [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
   }>({});
+  const [aiUserAnswers, setAiUserAnswers] = useState<{
+    [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
+  }>({});
+  const userAnswers = quizMode === "ai" ? aiUserAnswers : sgkUserAnswers;
+  const setUserAnswers = (
+    updater:
+      | { [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }
+      | ((prev: { [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }) => { [index: number]: { selectedOption: number; isCorrect: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } })
+  ) => {
+    if (quizMode === "ai") {
+      setAiUserAnswers(updater);
+    } else {
+      setSgkUserAnswers(updater);
+    }
+  };
+
   const [sessionScore, setSessionScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [lives, setLives] = useState(3);
@@ -998,43 +1037,88 @@ export function GamifiedMathQuiz({
   // Phần I: Trắc nghiệm 4 lựa chọn, Phần II: Đúng/Sai (4 ý), Phần III: Trả lời ngắn
   const [activeSectionTab, setActiveSectionTab] = useState<"multiple_choice" | "true_false" | "short_answer">("multiple_choice");
 
-  // Dữ liệu cho Phần II (Đúng / Sai) và Phần III (Trả lời ngắn)
-  const currentTfList: TrueFalseQuestion[] =
-    activeExam
-      ? (activeExam.trueFalseQuestions || [])
-      : quizMode === "sgk"
-        ? (trueFalseQuestions || [])
-        : (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
-           GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
-           trueFalseQuestions ||
-           []);
+  // 4. Danh sách câu hỏi và câu trả lời cho Phần II: Đúng / Sai
+  const sgkTfList: TrueFalseQuestion[] = activeExam ? (activeExam.trueFalseQuestions || []) : (trueFalseQuestions || []);
+  const aiTfList: TrueFalseQuestion[] = !activeExam
+    ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+       GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+       [])
+    : [];
+  const currentTfList = quizMode === "ai" ? aiTfList : sgkTfList;
 
-  const currentSaList: ShortAnswerQuestion[] =
-    activeExam
-      ? (activeExam.shortAnswerQuestions || [])
-      : quizMode === "sgk"
-        ? (shortAnswerQuestions || [])
-        : (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
-           GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
-           shortAnswerQuestions ||
-           []);
+  const [sgkTfCurrentIndex, setSgkTfCurrentIndex] = useState(0);
+  const [aiTfCurrentIndex, setAiTfCurrentIndex] = useState(0);
+  const tfCurrentIndex = quizMode === "ai" ? aiTfCurrentIndex : sgkTfCurrentIndex;
+  const setTfCurrentIndex = (val: number | ((prev: number) => number)) => {
+    if (quizMode === "ai") {
+      setAiTfCurrentIndex(val);
+    } else {
+      setSgkTfCurrentIndex(val);
+    }
+  };
+
+  const [sgkTfUserAnswers, setSgkTfUserAnswers] = useState<{
+    [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
+  }>({});
+  const [aiTfUserAnswers, setAiTfUserAnswers] = useState<{
+    [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
+  }>({});
+  const tfUserAnswers = quizMode === "ai" ? aiTfUserAnswers : sgkTfUserAnswers;
+  const setTfUserAnswers = (
+    updater:
+      | { [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }
+      | ((prev: { [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }) => { [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } })
+  ) => {
+    if (quizMode === "ai") {
+      setAiTfUserAnswers(updater);
+    } else {
+      setSgkTfUserAnswers(updater);
+    }
+  };
+
+  // 5. Danh sách câu hỏi và câu trả lời cho Phần III: Trả lời ngắn
+  const sgkSaList: ShortAnswerQuestion[] = activeExam ? (activeExam.shortAnswerQuestions || []) : (shortAnswerQuestions || []);
+  const aiSaList: ShortAnswerQuestion[] = !activeExam
+    ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+       GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+       [])
+    : [];
+  const currentSaList = quizMode === "ai" ? aiSaList : sgkSaList;
+
+  const [sgkSaCurrentIndex, setSgkSaCurrentIndex] = useState(0);
+  const [aiSaCurrentIndex, setAiSaCurrentIndex] = useState(0);
+  const saCurrentIndex = quizMode === "ai" ? aiSaCurrentIndex : sgkSaCurrentIndex;
+  const setSaCurrentIndex = (val: number | ((prev: number) => number)) => {
+    if (quizMode === "ai") {
+      setAiSaCurrentIndex(val);
+    } else {
+      setSgkSaCurrentIndex(val);
+    }
+  };
+
+  const [saInputText, setSaInputText] = useState("");
+  const [sgkSaUserAnswers, setSgkSaUserAnswers] = useState<{
+    [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
+  }>({});
+  const [aiSaUserAnswers, setAiSaUserAnswers] = useState<{
+    [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
+  }>({});
+  const saUserAnswers = quizMode === "ai" ? aiSaUserAnswers : sgkSaUserAnswers;
+  const setSaUserAnswers = (
+    updater:
+      | { [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }
+      | ((prev: { [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } }) => { [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean } })
+  ) => {
+    if (quizMode === "ai") {
+      setAiSaUserAnswers(updater);
+    } else {
+      setSgkSaUserAnswers(updater);
+    }
+  };
 
   const hasTrueFalse = Boolean(currentTfList && currentTfList.length > 0);
   const hasShortAnswer = Boolean(currentSaList && currentSaList.length > 0);
   const hasMultiSection = hasTrueFalse || hasShortAnswer;
-
-  // State cho Phần II: Đúng / Sai
-  const [tfCurrentIndex, setTfCurrentIndex] = useState(0);
-  const [tfUserAnswers, setTfUserAnswers] = useState<{
-    [index: number]: { selected: Record<string, boolean>; isSubmitted: boolean; correctCount: number; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
-  }>({});
-
-  // State cho Phần III: Trả lời ngắn
-  const [saCurrentIndex, setSaCurrentIndex] = useState(0);
-  const [saInputText, setSaInputText] = useState("");
-  const [saUserAnswers, setSaUserAnswers] = useState<{
-    [index: number]: { answerText: string; isCorrect: boolean; isSubmitted: boolean; isAlreadySolved?: boolean; isPreviouslyCompleted?: boolean };
-  }>({});
 
   const handleTfSelect = (subId: string, value: boolean) => {
     const curr = tfUserAnswers[tfCurrentIndex];
@@ -1132,6 +1216,210 @@ export function GamifiedMathQuiz({
     }
   };
 
+  // Đồng bộ hoàn thành bài học
+  const syncLessonCompletion = async (score: number) => {
+    const studentId = user?.id || user?.studentCode || user?.username;
+    if (!studentId) return;
+
+    // 1. Lưu hoàn thành bài học cục bộ
+    saveLocalStudentProgressUpdate({
+      userId: user?.id,
+      studentCode: user?.studentCode,
+      username: user?.username,
+      fullName: user?.fullName,
+      schoolName: user?.schoolName,
+      schoolClass: user?.schoolClass,
+      lessonId,
+      gradeKey,
+      lessonTitle,
+      isCompleted: true,
+      score,
+      totalQuestions: activeQuizList.length || 10,
+      totalExp: user?.exp,
+      streak: user?.streak,
+    });
+
+    // 2. Gửi lên server
+    try {
+      await fetch("/api/student/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user?.id,
+          studentCode: user?.studentCode,
+          username: user?.username,
+          lessonId,
+          gradeKey,
+          lessonTitle,
+          isCompleted: true,
+          score,
+          totalQuestions: activeQuizList.length,
+          totalExp: user?.exp,
+          streak: user?.streak,
+        }),
+      });
+    } catch (e) {
+      console.error("Lỗi đồng bộ hoàn thành bài:", e);
+    }
+  };
+
+  const finishQuiz = () => {
+    setIsCompleted(true);
+    playSound("victory");
+    syncLessonCompletion(sessionScore);
+
+    if (sessionScore > lessonHighScore) {
+      setLessonHighScore(sessionScore);
+      if (typeof window !== "undefined") {
+        localStorage.setItem(`vinamath_lesson_score_${gradeKey}_${lessonId}`, sessionScore.toString());
+      }
+    }
+  };
+
+  const getNextButtonLabel = (
+    tab: "multiple_choice" | "true_false" | "short_answer",
+    mode: "theory" | "sgk" | "ai",
+    cIdx: number,
+    tfIdx: number,
+    saIdx: number,
+    fullText: boolean = false
+  ) => {
+    if (tab === "multiple_choice") {
+      if (cIdx + 1 < activeQuizList.length) {
+        return "Câu Kế Tiếp";
+      }
+      if (mode === "sgk") {
+        if (sgkTfList.length > 0) return fullText ? "Tiếp tục: Phần II - Đúng / Sai" : "Sang Phần II";
+        if (sgkSaList.length > 0) return fullText ? "Tiếp tục: Phần III - Trả lời ngắn" : "Sang Phần III";
+        if (!hasExamSets && aiQuizList.length > 0) return fullText ? "Tiếp tục: Luyện thêm (AI)" : "Sang Luyện thêm";
+        return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+      }
+      if (mode === "ai") {
+        if (aiTfList.length > 0) return fullText ? "Tiếp tục: Phần II - Đúng / Sai" : "Sang Phần II";
+        if (aiSaList.length > 0) return fullText ? "Tiếp tục: Phần III - Trả lời ngắn" : "Sang Phần III";
+        return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+      }
+      return "Câu Kế Tiếp";
+    }
+
+    if (tab === "true_false") {
+      if (tfIdx + 1 < currentTfList.length) {
+        return "Câu Kế Tiếp";
+      }
+      if (mode === "sgk") {
+        if (sgkSaList.length > 0) return fullText ? "Tiếp tục: Phần III - Trả lời ngắn" : "Sang Phần III";
+        if (!hasExamSets && aiQuizList.length > 0) return fullText ? "Tiếp tục: Luyện thêm (AI)" : "Sang Luyện thêm";
+        return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+      }
+      if (mode === "ai") {
+        if (aiSaList.length > 0) return fullText ? "Tiếp tục: Phần III - Trả lời ngắn" : "Sang Phần III";
+        return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+      }
+      return "Câu Kế Tiếp";
+    }
+
+    if (tab === "short_answer") {
+      if (saIdx + 1 < currentSaList.length) {
+        return "Câu Kế Tiếp";
+      }
+      if (mode === "sgk") {
+        if (!hasExamSets && aiQuizList.length > 0) return fullText ? "Tiếp tục: Luyện thêm (AI)" : "Sang Luyện thêm";
+        return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+      }
+      return fullText ? "🏆 Tổng kết điểm toàn bài" : "Tổng Kết";
+    }
+
+    return "Câu Kế Tiếp";
+  };
+
+  const handleNavNext = (section: "multiple_choice" | "true_false" | "short_answer") => {
+    if (section === "multiple_choice") {
+      if (currentIndex + 1 < activeQuizList.length) {
+        setCurrentIndex((prev) => prev + 1);
+        return;
+      }
+      // Reached the end of multiple choice
+      if (quizMode === "sgk") {
+        if (sgkTfList.length > 0) {
+          setActiveSectionTab("true_false");
+          setTfCurrentIndex(0);
+          playSound("combo");
+        } else if (sgkSaList.length > 0) {
+          setActiveSectionTab("short_answer");
+          setSaCurrentIndex(0);
+          playSound("combo");
+        } else if (!hasExamSets && aiQuizList.length > 0) {
+          setQuizMode("ai");
+          setActiveSectionTab("multiple_choice");
+          setAiCurrentIndex(0);
+          playSound("ai");
+        } else {
+          finishQuiz();
+        }
+      } else if (quizMode === "ai") {
+        if (aiTfList.length > 0) {
+          setActiveSectionTab("true_false");
+          setTfCurrentIndex(0);
+          playSound("combo");
+        } else if (aiSaList.length > 0) {
+          setActiveSectionTab("short_answer");
+          setSaCurrentIndex(0);
+          playSound("combo");
+        } else {
+          finishQuiz();
+        }
+      }
+    } else if (section === "true_false") {
+      if (tfCurrentIndex + 1 < currentTfList.length) {
+        setTfCurrentIndex((prev) => prev + 1);
+        return;
+      }
+      // Reached the end of True/False
+      if (quizMode === "sgk") {
+        if (sgkSaList.length > 0) {
+          setActiveSectionTab("short_answer");
+          setSaCurrentIndex(0);
+          playSound("combo");
+        } else if (!hasExamSets && aiQuizList.length > 0) {
+          setQuizMode("ai");
+          setActiveSectionTab("multiple_choice");
+          setAiCurrentIndex(0);
+          playSound("ai");
+        } else {
+          finishQuiz();
+        }
+      } else if (quizMode === "ai") {
+        if (aiSaList.length > 0) {
+          setActiveSectionTab("short_answer");
+          setSaCurrentIndex(0);
+          playSound("combo");
+        } else {
+          finishQuiz();
+        }
+      }
+    } else if (section === "short_answer") {
+      if (saCurrentIndex + 1 < currentSaList.length) {
+        const nextIdx = saCurrentIndex + 1;
+        setSaCurrentIndex(nextIdx);
+        setSaInputText(saUserAnswers[nextIdx]?.answerText || "");
+        return;
+      }
+      // Reached the end of Short Answer
+      if (quizMode === "sgk") {
+        if (!hasExamSets && aiQuizList.length > 0) {
+          setQuizMode("ai");
+          setActiveSectionTab("multiple_choice");
+          setAiCurrentIndex(0);
+          playSound("ai");
+        } else {
+          finishQuiz();
+        }
+      } else if (quizMode === "ai") {
+        finishQuiz();
+      }
+    }
+  };
+
   const handleTfPrev = () => {
     if (tfCurrentIndex > 0) {
       setTfCurrentIndex((prev) => prev - 1);
@@ -1139,13 +1427,7 @@ export function GamifiedMathQuiz({
   };
 
   const handleTfNext = () => {
-    if (tfCurrentIndex + 1 < currentTfList.length) {
-      setTfCurrentIndex((prev) => prev + 1);
-    } else {
-      setIsCompleted(true);
-      playSound("victory");
-      syncLessonCompletion(sessionScore);
-    }
+    handleNavNext("true_false");
   };
 
   const handleSaSubmit = () => {
@@ -1224,15 +1506,7 @@ export function GamifiedMathQuiz({
   };
 
   const handleSaNext = () => {
-    if (saCurrentIndex + 1 < currentSaList.length) {
-      const nextIdx = saCurrentIndex + 1;
-      setSaCurrentIndex(nextIdx);
-      setSaInputText(saUserAnswers[nextIdx]?.answerText || "");
-    } else {
-      setIsCompleted(true);
-      playSound("victory");
-      syncLessonCompletion(sessionScore);
-    }
+    handleNavNext("short_answer");
   };
 
   // Auth Context cho Học sinh và Quản trị viên
@@ -1422,52 +1696,7 @@ export function GamifiedMathQuiz({
     }
   };
 
-  // Đồng bộ hoàn thành bài học
-  const syncLessonCompletion = async (score: number) => {
-    const studentId = user?.id || user?.studentCode || user?.username;
-    if (!studentId) return;
 
-    // 1. Lưu hoàn thành bài học cục bộ
-    saveLocalStudentProgressUpdate({
-      userId: user?.id,
-      studentCode: user?.studentCode,
-      username: user?.username,
-      fullName: user?.fullName,
-      schoolName: user?.schoolName,
-      schoolClass: user?.schoolClass,
-      lessonId,
-      gradeKey,
-      lessonTitle,
-      isCompleted: true,
-      score,
-      totalQuestions: activeQuizList.length || 10,
-      totalExp: user?.exp,
-      streak: user?.streak,
-    });
-
-    // 2. Gửi lên server
-    try {
-      await fetch("/api/student/progress", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId: user?.id,
-          studentCode: user?.studentCode,
-          username: user?.username,
-          lessonId,
-          gradeKey,
-          lessonTitle,
-          isCompleted: true,
-          score,
-          totalQuestions: activeQuizList.length,
-          totalExp: user?.exp,
-          streak: user?.streak,
-        }),
-      });
-    } catch (e) {
-      console.error("Lỗi đồng bộ hoàn thành bài:", e);
-    }
-  };
 
   const handleOpenEdit = (q: QuizQuestion, index: number) => {
     setEditingQuestion(q);
@@ -1556,14 +1785,14 @@ export function GamifiedMathQuiz({
     const targetExam = examSets?.[examIdx];
     const rawList = targetExam?.quizQuestions || [];
     const shuffledList = rawList.map(shuffleOptions);
-    setActiveQuizList(shuffledList);
-    setCurrentIndex(0);
-    setUserAnswers({});
-    setTfCurrentIndex(0);
-    setTfUserAnswers({});
-    setSaCurrentIndex(0);
+    setSgkQuizList(shuffledList);
+    setSgkCurrentIndex(0);
+    setSgkUserAnswers({});
+    setSgkTfCurrentIndex(0);
+    setSgkTfUserAnswers({});
+    setSgkSaCurrentIndex(0);
     setSaInputText("");
-    setSaUserAnswers({});
+    setSgkSaUserAnswers({});
     setSessionScore(0);
     setStreak(0);
     setLives(3);
@@ -1574,26 +1803,30 @@ export function GamifiedMathQuiz({
     }
   };
 
-  // Khởi tạo và nạp bộ câu hỏi (sinh mới hoàn toàn tương ứng 1-1 nếu là 'ai')
-  const loadAndShuffleQuiz = (mode: "sgk" | "ai") => {
-    let rawList: QuizQuestion[] = [];
-    if (activeExam) {
-      rawList = activeExam.quizQuestions;
-    } else if (mode === "sgk") {
-      rawList = initialList;
-    } else {
-      // Sinh bộ câu hỏi tương tự mới hoàn toàn bám sát số lượng và dạng bài SGK
-      rawList = generateSimilarAiQuestions(lessonId, lessonTitle, initialList);
-    }
-
-    // Xáo trộn ngẫu nhiên vị trí các phương án A, B, C, D
-    const shuffledList = rawList.map(shuffleOptions);
-    setActiveQuizList(shuffledList);
-
+  // Khởi tạo và nạp bộ câu hỏi (chuẩn bị cả SGK và Luyện tập thêm AI để học sinh làm liền mạch)
+  const loadAndShuffleQuiz = (mode: "sgk" | "ai" = "sgk") => {
     const studentIdentifier = user?.id || user?.studentCode || user?.username;
 
-    // 1. Tự động kiểm tra và đánh dấu các câu Trắc nghiệm đã hoàn thành
-    const preAnswers: {
+    // 1. Chuẩn bị danh sách SGK
+    let rawSgk: QuizQuestion[] = [];
+    if (activeExam) {
+      rawSgk = activeExam.quizQuestions;
+    } else {
+      rawSgk = initialList;
+    }
+    const shuffledSgk = rawSgk.map(shuffleOptions);
+    setSgkQuizList(shuffledSgk);
+
+    // 2. Chuẩn bị danh sách Luyện tập thêm AI (nếu không phải đề thi)
+    let shuffledAi: QuizQuestion[] = [];
+    if (!activeExam) {
+      const rawAi = generateSimilarAiQuestions(lessonId, lessonTitle, initialList);
+      shuffledAi = rawAi.map(shuffleOptions);
+      setAiQuizList(shuffledAi);
+    }
+
+    // 3. Tự động kiểm tra các câu SGK Trắc nghiệm đã giải
+    const preSgkAnswers: {
       [index: number]: {
         selectedOption: number;
         isCorrect: boolean;
@@ -1601,28 +1834,54 @@ export function GamifiedMathQuiz({
         isPreviouslyCompleted?: boolean;
       };
     } = {};
-    let firstUnfinishedIdx = -1;
+    let firstUnfinishedSgk = -1;
 
-    shuffledList.forEach((q, idx) => {
+    shuffledSgk.forEach((q, idx) => {
       const qKey = `${lessonId}:quiz:${q.id || idx}`;
       if (isQuestionAlreadySolved(studentIdentifier, qKey)) {
-        preAnswers[idx] = {
+        preSgkAnswers[idx] = {
           selectedOption: q.correctIndex,
           isCorrect: true,
           isAlreadySolved: true,
           isPreviouslyCompleted: true,
         };
-      } else if (firstUnfinishedIdx === -1) {
-        firstUnfinishedIdx = idx;
+      } else if (firstUnfinishedSgk === -1) {
+        firstUnfinishedSgk = idx;
       }
     });
+    setSgkUserAnswers(preSgkAnswers);
+    setSgkCurrentIndex(firstUnfinishedSgk !== -1 ? firstUnfinishedSgk : 0);
 
-    setUserAnswers(preAnswers);
-    // Nhảy ngay đến câu trắc nghiệm còn lại đầu tiên
-    setCurrentIndex(firstUnfinishedIdx !== -1 ? firstUnfinishedIdx : 0);
+    // 4. Tự động kiểm tra các câu AI Trắc nghiệm đã giải
+    if (shuffledAi.length > 0) {
+      const preAiAnswers: {
+        [index: number]: {
+          selectedOption: number;
+          isCorrect: boolean;
+          isAlreadySolved?: boolean;
+          isPreviouslyCompleted?: boolean;
+        };
+      } = {};
+      let firstUnfinishedAi = -1;
+      shuffledAi.forEach((q, idx) => {
+        const qKey = `${lessonId}:quiz:${q.id || idx}`;
+        if (isQuestionAlreadySolved(studentIdentifier, qKey)) {
+          preAiAnswers[idx] = {
+            selectedOption: q.correctIndex,
+            isCorrect: true,
+            isAlreadySolved: true,
+            isPreviouslyCompleted: true,
+          };
+        } else if (firstUnfinishedAi === -1) {
+          firstUnfinishedAi = idx;
+        }
+      });
+      setAiUserAnswers(preAiAnswers);
+      setAiCurrentIndex(firstUnfinishedAi !== -1 ? firstUnfinishedAi : 0);
+    }
 
-    // 2. Tự động kiểm tra và đánh dấu các câu Đúng / Sai đã hoàn thành
-    const preTfAnswers: {
+    // 5. Tự động kiểm tra các câu Đúng / Sai SGK đã hoàn thành
+    const preSgkTf: {
       [index: number]: {
         selected: Record<string, boolean>;
         isSubmitted: boolean;
@@ -1633,14 +1892,14 @@ export function GamifiedMathQuiz({
     } = {};
     let firstUnfinishedTf = -1;
 
-    currentTfList.forEach((tf, tfIdx) => {
+    sgkTfList.forEach((tf, tfIdx) => {
       const tfKey = `${lessonId}:tf:${tf.id || tfIdx}`;
       if (isQuestionAlreadySolved(studentIdentifier, tfKey)) {
         const allCorrectSelected: Record<string, boolean> = {};
         tf.subItems.forEach((sub) => {
           allCorrectSelected[sub.id] = sub.correctAnswer;
         });
-        preTfAnswers[tfIdx] = {
+        preSgkTf[tfIdx] = {
           selected: allCorrectSelected,
           isSubmitted: true,
           correctCount: tf.subItems.length,
@@ -1651,12 +1910,11 @@ export function GamifiedMathQuiz({
         firstUnfinishedTf = tfIdx;
       }
     });
+    setSgkTfUserAnswers(preSgkTf);
+    setSgkTfCurrentIndex(firstUnfinishedTf !== -1 ? firstUnfinishedTf : 0);
 
-    setTfUserAnswers(preTfAnswers);
-    setTfCurrentIndex(firstUnfinishedTf !== -1 ? firstUnfinishedTf : 0);
-
-    // 3. Tự động kiểm tra và đánh dấu các câu Trả lời ngắn đã hoàn thành
-    const preSaAnswers: {
+    // 6. Tự động kiểm tra các câu Trả lời ngắn SGK đã hoàn thành
+    const preSgkSa: {
       [index: number]: {
         answerText: string;
         isCorrect: boolean;
@@ -1667,10 +1925,10 @@ export function GamifiedMathQuiz({
     } = {};
     let firstUnfinishedSa = -1;
 
-    currentSaList.forEach((sa, saIdx) => {
+    sgkSaList.forEach((sa, saIdx) => {
       const saKey = `${lessonId}:sa:${sa.id || saIdx}`;
       if (isQuestionAlreadySolved(studentIdentifier, saKey)) {
-        preSaAnswers[saIdx] = {
+        preSgkSa[saIdx] = {
           answerText: sa.correctAnswer,
           isCorrect: true,
           isSubmitted: true,
@@ -1681,17 +1939,16 @@ export function GamifiedMathQuiz({
         firstUnfinishedSa = saIdx;
       }
     });
-
-    setSaUserAnswers(preSaAnswers);
+    setSgkSaUserAnswers(preSgkSa);
     const targetSaIdx = firstUnfinishedSa !== -1 ? firstUnfinishedSa : 0;
-    setSaCurrentIndex(targetSaIdx);
-    setSaInputText(preSaAnswers[targetSaIdx]?.answerText || "");
+    setSgkSaCurrentIndex(targetSaIdx);
+    setSaInputText(preSgkSa[targetSaIdx]?.answerText || "");
 
     // Tự động chuyển đến phần thi còn câu chưa làm nếu Phần I đã hoàn thành hết
-    if (firstUnfinishedIdx === -1 && shuffledList.length > 0) {
-      if (firstUnfinishedTf !== -1 && currentTfList.length > 0) {
+    if (firstUnfinishedSgk === -1 && shuffledSgk.length > 0) {
+      if (firstUnfinishedTf !== -1 && sgkTfList.length > 0) {
         setActiveSectionTab("true_false");
-      } else if (firstUnfinishedSa !== -1 && currentSaList.length > 0) {
+      } else if (firstUnfinishedSa !== -1 && sgkSaList.length > 0) {
         setActiveSectionTab("short_answer");
       }
     }
@@ -1990,22 +2247,7 @@ export function GamifiedMathQuiz({
   };
 
   const handleNext = () => {
-    if (currentIndex + 1 < activeQuizList.length) {
-      setCurrentIndex((prev) => prev + 1);
-    } else {
-      setIsCompleted(true);
-      playSound("victory");
-
-      // Đồng bộ hoàn thành bài lên máy chủ
-      syncLessonCompletion(sessionScore);
-
-      if (sessionScore > lessonHighScore) {
-        setLessonHighScore(sessionScore);
-        if (typeof window !== "undefined") {
-          localStorage.setItem(`vinamath_lesson_score_${gradeKey}_${lessonId}`, sessionScore.toString());
-        }
-      }
-    }
+    handleNavNext("multiple_choice");
   };
 
   const handleJumpToQuestion = (idx: number) => {
@@ -2017,9 +2259,6 @@ export function GamifiedMathQuiz({
   const handleSwitchMode = (mode: "theory" | "sgk" | "ai") => {
     setQuizMode(mode);
     playSound(mode === "theory" ? "combo" : "ai");
-    if (mode !== "theory") {
-      loadAndShuffleQuiz(mode);
-    }
   };
 
   // Cấp bậc danh hiệu khối
@@ -2141,10 +2380,408 @@ export function GamifiedMathQuiz({
     return null;
   };
 
+  // Tổng hợp kết quả toàn bộ buổi làm bài (cả SGK và Luyện thêm)
+  const summaryStats = useMemo(() => {
+    let totalQuestions = 0;
+    let totalCorrect = 0;
+    const mistakes: {
+      id: string;
+      sectionTitle: string;
+      mode: "sgk" | "ai";
+      sectionTab: "multiple_choice" | "true_false" | "short_answer";
+      questionIndex: number;
+      badge: string;
+      questionText: string;
+      selectedAnswer: string;
+      correctAnswer: string;
+      explanation: string;
+    }[] = [];
+
+    // 1. Multiple Choice SGK
+    sgkQuizList.forEach((q, idx) => {
+      const ans = sgkUserAnswers[idx];
+      if (ans !== undefined) {
+        totalQuestions++;
+        if (ans.isCorrect) {
+          totalCorrect++;
+        } else {
+          mistakes.push({
+            id: `sgk-mc-${q.id || idx}`,
+            sectionTitle: "Phần I: Trắc nghiệm (Bài tập)",
+            mode: "sgk",
+            sectionTab: "multiple_choice",
+            questionIndex: idx,
+            badge: q.badge || `Câu ${idx + 1}`,
+            questionText: q.question,
+            selectedAnswer: q.options[ans.selectedOption] || "Chưa chọn",
+            correctAnswer: q.options[q.correctIndex] || "Không xác định",
+            explanation: q.explanation || "Xem lại kiến thức bài học.",
+          });
+        }
+      }
+    });
+
+    // 2. True / False SGK
+    sgkTfList.forEach((tf, tfIdx) => {
+      const ans = sgkTfUserAnswers[tfIdx];
+      if (ans && ans.isSubmitted) {
+        totalQuestions += tf.subItems.length;
+        totalCorrect += ans.correctCount;
+        if (ans.correctCount < tf.subItems.length) {
+          const wrongSubs = tf.subItems.filter(
+            (sub) => ans.selected[sub.id] !== undefined && ans.selected[sub.id] !== sub.correctAnswer
+          );
+          mistakes.push({
+            id: `sgk-tf-${tf.id || tfIdx}`,
+            sectionTitle: "Phần II: Đúng / Sai (Bài tập)",
+            mode: "sgk",
+            sectionTab: "true_false",
+            questionIndex: tfIdx,
+            badge: tf.badge || `Câu ${tfIdx + 1} (Đúng / Sai)`,
+            questionText: tf.prompt,
+            selectedAnswer: wrongSubs
+              .map((s) => `Ý ${s.id}) chọn ${ans.selected[s.id] ? "Đúng" : "Sai"}`)
+              .join(", "),
+            correctAnswer: wrongSubs
+              .map((s) => `Ý ${s.id}) phải là ${s.correctAnswer ? "Đúng" : "Sai"}`)
+              .join(", "),
+            explanation:
+              wrongSubs.map((s) => `[Ý ${s.id}]: ${s.explanation || (s.correctAnswer ? "Mệnh đề đúng" : "Mệnh đề sai")}`).join(" | ") ||
+              "Xem lại kiến thức bài học.",
+          });
+        }
+      }
+    });
+
+    // 3. Short Answer SGK
+    sgkSaList.forEach((sa, saIdx) => {
+      const ans = sgkSaUserAnswers[saIdx];
+      if (ans && ans.isSubmitted) {
+        totalQuestions++;
+        if (ans.isCorrect) {
+          totalCorrect++;
+        } else {
+          mistakes.push({
+            id: `sgk-sa-${sa.id || saIdx}`,
+            sectionTitle: "Phần III: Trả lời ngắn (Bài tập)",
+            mode: "sgk",
+            sectionTab: "short_answer",
+            questionIndex: saIdx,
+            badge: sa.badge || `Câu ${saIdx + 1} (Trả lời ngắn)`,
+            questionText: sa.prompt,
+            selectedAnswer: ans.answerText || "Chưa nhập",
+            correctAnswer: sa.correctAnswer,
+            explanation: sa.explanation || "Xem lại phương pháp giải.",
+          });
+        }
+      }
+    });
+
+    // 4. Multiple Choice AI (Luyện thêm)
+    aiQuizList.forEach((q, idx) => {
+      const ans = aiUserAnswers[idx];
+      if (ans !== undefined) {
+        totalQuestions++;
+        if (ans.isCorrect) {
+          totalCorrect++;
+        } else {
+          mistakes.push({
+            id: `ai-mc-${q.id || idx}`,
+            sectionTitle: "Luyện thêm (AI tương tự)",
+            mode: "ai",
+            sectionTab: "multiple_choice",
+            questionIndex: idx,
+            badge: q.badge || `Luyện tập ${idx + 1}`,
+            questionText: q.question,
+            selectedAnswer: q.options[ans.selectedOption] || "Chưa chọn",
+            correctAnswer: q.options[q.correctIndex] || "Không xác định",
+            explanation: q.explanation || "Xem lại kiến thức bài học.",
+          });
+        }
+      }
+    });
+
+    // 5. True / False AI (nếu có)
+    aiTfList.forEach((tf, tfIdx) => {
+      const ans = aiTfUserAnswers[tfIdx];
+      if (ans && ans.isSubmitted) {
+        totalQuestions += tf.subItems.length;
+        totalCorrect += ans.correctCount;
+        if (ans.correctCount < tf.subItems.length) {
+          const wrongSubs = tf.subItems.filter(
+            (sub) => ans.selected[sub.id] !== undefined && ans.selected[sub.id] !== sub.correctAnswer
+          );
+          mistakes.push({
+            id: `ai-tf-${tf.id || tfIdx}`,
+            sectionTitle: "Luyện thêm: Đúng / Sai (AI)",
+            mode: "ai",
+            sectionTab: "true_false",
+            questionIndex: tfIdx,
+            badge: tf.badge || `Luyện tập ${tfIdx + 1} (Đúng / Sai)`,
+            questionText: tf.prompt,
+            selectedAnswer: wrongSubs
+              .map((s) => `Ý ${s.id}) chọn ${ans.selected[s.id] ? "Đúng" : "Sai"}`)
+              .join(", "),
+            correctAnswer: wrongSubs
+              .map((s) => `Ý ${s.id}) phải là ${s.correctAnswer ? "Đúng" : "Sai"}`)
+              .join(", "),
+            explanation:
+              wrongSubs.map((s) => `[Ý ${s.id}]: ${s.explanation || (s.correctAnswer ? "Mệnh đề đúng" : "Mệnh đề sai")}`).join(" | ") ||
+              "Xem lại kiến thức bài học.",
+          });
+        }
+      }
+    });
+
+    // 6. Short Answer AI (nếu có)
+    aiSaList.forEach((sa, saIdx) => {
+      const ans = aiSaUserAnswers[saIdx];
+      if (ans && ans.isSubmitted) {
+        totalQuestions++;
+        if (ans.isCorrect) {
+          totalCorrect++;
+        } else {
+          mistakes.push({
+            id: `ai-sa-${sa.id || saIdx}`,
+            sectionTitle: "Luyện thêm: Trả lời ngắn (AI)",
+            mode: "ai",
+            sectionTab: "short_answer",
+            questionIndex: saIdx,
+            badge: sa.badge || `Luyện tập ${saIdx + 1} (Trả lời ngắn)`,
+            questionText: sa.prompt,
+            selectedAnswer: ans.answerText || "Chưa nhập",
+            correctAnswer: sa.correctAnswer,
+            explanation: sa.explanation || "Xem lại phương pháp giải.",
+          });
+        }
+      }
+    });
+
+    const accuracyRate = totalQuestions > 0 ? Math.round((totalCorrect / totalQuestions) * 100) : 0;
+
+    return {
+      totalQuestions,
+      totalCorrect,
+      accuracyRate,
+      mistakes,
+    };
+  }, [
+    sgkQuizList,
+    sgkUserAnswers,
+    sgkTfList,
+    sgkTfUserAnswers,
+    sgkSaList,
+    sgkSaUserAnswers,
+    aiQuizList,
+    aiUserAnswers,
+    aiTfList,
+    aiTfUserAnswers,
+    aiSaList,
+    aiSaUserAnswers,
+  ]);
+
+  const getPedagogicalFeedback = (rate: number, mistakeCount: number) => {
+    if (rate === 100 || mistakeCount === 0) {
+      return {
+        tag: "👑 Xuất sắc toàn diện!",
+        tagColor: "text-amber-300 bg-amber-500/20 border-amber-400",
+        avatarIcon: Crown,
+        quote:
+          "Thầy/cô chúc mừng em! Em đã hoàn thành trọn vẹn toàn bộ các phần bài tập và luyện thêm với kết quả tuyệt đối 100%. Nền tảng tư duy và kỹ năng giải toán của em rất vững vàng, đọc đề cẩn thận và tính toán chuẩn xác. Hãy tiếp tục giữ vững phong độ xuất sắc này ở các bài học tiếp theo nhé!",
+        advice: "Em đã làm chủ hoàn toàn kiến thức bài học này, có thể tự tin bước sang bài học tiếp theo hoặc thử sức với các đề thi nâng cao.",
+      };
+    }
+    if (rate >= 80) {
+      return {
+        tag: "🥇 Thành tích rất tốt!",
+        tagColor: "text-cyan-300 bg-cyan-500/20 border-cyan-400",
+        avatarIcon: Trophy,
+        quote:
+          "Rất tốt! Em đã thể hiện sự tập trung cao độ và nắm rất chắc các dạng toán trọng tâm của bài qua cả phần bài tập lẫn luyện thêm. Chỉ còn một vài câu em nhầm lẫn nhỏ ở bước biến đổi hoặc điều kiện. Em hãy xem lại phân tích các câu sai bên dưới để hoàn thiện 100% kỹ năng nhé!",
+        advice: "Em hãy bấm 'Làm lại các câu sai' bên dưới để sửa lại các câu chưa chính xác và biến sai lầm thành bài học kinh nghiệm quý giá.",
+      };
+    }
+    if (rate >= 60) {
+      return {
+        tag: "🥈 Kết quả khá tốt - Tiếp tục phát huy!",
+        tagColor: "text-emerald-300 bg-emerald-500/20 border-emerald-400",
+        avatarIcon: Sparkles,
+        quote:
+          "Khá tốt! Thầy/cô khen ngợi tinh thần tự giác và sự kiên trì của em khi đã nỗ lực làm hết tất cả các phần bài tập và luyện thêm. Em đã nắm được các khái niệm và công thức cơ bản. Để nâng cao điểm số, em hãy lưu ý đọc kỹ dữ kiện đề bài và các bẫy thường gặp. Xem kỹ hướng dẫn từng câu sai bên dưới nhé!",
+        advice: "Dành 2-3 phút đọc lại lời giải chi tiết cho các câu sai, sau đó bấm 'Làm lại các câu sai' để khắc sâu kiến thức.",
+      };
+    }
+    if (rate >= 40) {
+      return {
+        tag: "🥉 Nỗ lực đáng khen - Cố gắng lên nhé!",
+        tagColor: "text-orange-300 bg-orange-500/20 border-orange-400",
+        avatarIcon: Heart,
+        quote:
+          "Rất đáng khen ngợi sự kiên trì của em! Dù bài tập có nhiều dạng toán thử thách nhưng em đã không nản lòng và hoàn thành cả bài tập lẫn phần luyện thêm. Trong môn Toán, mỗi lần làm sai là một cơ hội tuyệt vời để em phát hiện lỗ hổng kiến thức và tiến bộ. Em hãy đọc kỹ hướng dẫn giải chi tiết bên dưới rồi làm lại nhé!",
+        advice: "Đừng vội nản lòng. Hãy xem kỹ phần 'Kiến thức cần nhớ' và lời giải chi tiết ở các câu sai, sau đó thử làm lại từng câu một.",
+      };
+    }
+    return {
+      tag: "🎯 Khởi đầu kiên trì - Vững bước tiến bộ!",
+      tagColor: "text-purple-300 bg-purple-500/20 border-purple-400",
+      avatarIcon: Award,
+      quote:
+        "Thầy/cô rất trân trọng nỗ lực của em khi đã kiên trì làm bài đến câu cuối cùng của cả phần luyện thêm. Bài học này có nhiều khái niệm và công thức mới cần thời gian rèn luyện. Em hãy bình tĩnh xem lại video bài giảng và bảng tóm tắt kiến thức cần nhớ, sau đó làm lại các câu bên dưới để từng bước tiến bộ nhé!",
+      advice: "Khuyên em nên bấm 'Xem lại Lý thuyết' để củng cố các công thức trọng tâm, sau đó bấm 'Làm lại các câu sai' để làm quen dần với các dạng bài.",
+    };
+  };
+
+  // Làm lại một câu sai cụ thể
+  const handleRetrySingleMistake = (mistake: (typeof summaryStats.mistakes)[number]) => {
+    setQuizMode(mistake.mode);
+    setActiveSectionTab(mistake.sectionTab);
+    if (mistake.sectionTab === "multiple_choice") {
+      if (mistake.mode === "ai") {
+        setAiUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setAiCurrentIndex(mistake.questionIndex);
+      } else {
+        setSgkUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setSgkCurrentIndex(mistake.questionIndex);
+      }
+    } else if (mistake.sectionTab === "true_false") {
+      if (mistake.mode === "ai") {
+        setAiTfUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setAiTfCurrentIndex(mistake.questionIndex);
+      } else {
+        setSgkTfUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setSgkTfCurrentIndex(mistake.questionIndex);
+      }
+    } else if (mistake.sectionTab === "short_answer") {
+      if (mistake.mode === "ai") {
+        setAiSaUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setAiSaCurrentIndex(mistake.questionIndex);
+      } else {
+        setSgkSaUserAnswers((prev) => {
+          const updated = { ...prev };
+          delete updated[mistake.questionIndex];
+          return updated;
+        });
+        setSgkSaCurrentIndex(mistake.questionIndex);
+      }
+      setSaInputText("");
+    }
+    setIsCompleted(false);
+  };
+
+  // Làm lại tất cả các câu sai
+  const handleRetryAllMistakes = () => {
+    if (summaryStats.mistakes.length === 0) return;
+    summaryStats.mistakes.forEach((mistake) => {
+      if (mistake.sectionTab === "multiple_choice") {
+        if (mistake.mode === "ai") {
+          setAiUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        } else {
+          setSgkUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        }
+      } else if (mistake.sectionTab === "true_false") {
+        if (mistake.mode === "ai") {
+          setAiTfUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        } else {
+          setSgkTfUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        }
+      } else if (mistake.sectionTab === "short_answer") {
+        if (mistake.mode === "ai") {
+          setAiSaUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        } else {
+          setSgkSaUserAnswers((prev) => {
+            const updated = { ...prev };
+            delete updated[mistake.questionIndex];
+            return updated;
+          });
+        }
+      }
+    });
+
+    const first = summaryStats.mistakes[0];
+    setQuizMode(first.mode);
+    setActiveSectionTab(first.sectionTab);
+    if (first.sectionTab === "multiple_choice") {
+      if (first.mode === "ai") setAiCurrentIndex(first.questionIndex);
+      else setSgkCurrentIndex(first.questionIndex);
+    } else if (first.sectionTab === "true_false") {
+      if (first.mode === "ai") setAiTfCurrentIndex(first.questionIndex);
+      else setSgkTfCurrentIndex(first.questionIndex);
+    } else if (first.sectionTab === "short_answer") {
+      if (first.mode === "ai") setAiSaCurrentIndex(first.questionIndex);
+      else setSgkSaCurrentIndex(first.questionIndex);
+      setSaInputText("");
+    }
+    setIsCompleted(false);
+  };
+
+  // Làm lại toàn bộ bài tập
+  const handleRetryAll = () => {
+    setSgkUserAnswers({});
+    setAiUserAnswers({});
+    setSgkTfUserAnswers({});
+    setAiTfUserAnswers({});
+    setSgkSaUserAnswers({});
+    setAiSaUserAnswers({});
+    setSgkCurrentIndex(0);
+    setAiCurrentIndex(0);
+    setSgkTfCurrentIndex(0);
+    setAiTfCurrentIndex(0);
+    setSgkSaCurrentIndex(0);
+    setAiSaCurrentIndex(0);
+    setSaInputText("");
+    setSessionScore(0);
+    setStreak(0);
+    setLives(3);
+    setCoinsEarned(0);
+    setQuizMode("sgk");
+    setActiveSectionTab("multiple_choice");
+    setIsCompleted(false);
+  };
+
   const rank = getGradeRank(gradeTotalScore);
   const currentQ = activeQuizList[currentIndex];
 
-  if (!currentQ && quizMode !== "theory") return null;
+  if (!currentQ && quizMode !== "theory" && !isCompleted && activeSectionTab === "multiple_choice") return null;
   const diagramInfo = currentQ ? resolveQuestionDiagram(currentQ, lessonId) : null;
 
   const currentAnswer = userAnswers[currentIndex];
@@ -2541,13 +3178,7 @@ export function GamifiedMathQuiz({
             title="Chuyển sang câu kế tiếp"
           >
             <span className="hidden sm:inline">
-              {(activeSectionTab === "multiple_choice"
-                ? currentIndex + 1 === activeQuizList.length
-                : activeSectionTab === "true_false"
-                ? tfCurrentIndex + 1 === currentTfList.length
-                : saCurrentIndex + 1 === currentSaList.length)
-                ? "Tổng Kết"
-                : "Câu Kế Tiếp"}
+              {getNextButtonLabel(activeSectionTab, quizMode, currentIndex, tfCurrentIndex, saCurrentIndex, false)}
             </span>
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -3603,7 +4234,7 @@ export function GamifiedMathQuiz({
                           onClick={handleTfNext}
                           className="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center gap-1.5 hover:scale-105 transition-transform shadow-md shadow-amber-500/30"
                         >
-                          <span>{tfCurrentIndex + 1 === currentTfList.length ? "Xong Phần II" : "Câu Kế Tiếp"}</span>
+                          <span>{getNextButtonLabel("true_false", quizMode, currentIndex, tfCurrentIndex, saCurrentIndex, true)}</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                         </button>
                       </div>
@@ -3760,7 +4391,7 @@ export function GamifiedMathQuiz({
                           onClick={handleSaNext}
                           className="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-400 via-teal-500 to-emerald-500 text-slate-950 font-black text-xs sm:text-sm flex items-center gap-1.5 hover:scale-105 transition-transform shadow-md shadow-emerald-500/30"
                         >
-                          <span>{saCurrentIndex + 1 === currentSaList.length ? "Xong Phần III" : "Câu Kế Tiếp"}</span>
+                          <span>{getNextButtonLabel("short_answer", quizMode, currentIndex, tfCurrentIndex, saCurrentIndex, true)}</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                         </button>
                       </div>
@@ -3986,7 +4617,7 @@ export function GamifiedMathQuiz({
                   onClick={handleNext}
                   className="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center gap-1.5 hover:scale-105 transition-transform shadow-md shadow-amber-500/30"
                 >
-                  <span>{currentIndex + 1 === activeQuizList.length ? "Xem Tổng Kết Điểm" : "Câu Kế Tiếp"}</span>
+                  <span>{getNextButtonLabel("multiple_choice", quizMode, currentIndex, tfCurrentIndex, saCurrentIndex, true)}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -3995,47 +4626,234 @@ export function GamifiedMathQuiz({
         </div>
         )
       ) : (
-        /* MÀN HÌNH CHIẾN THẮNG & THƯỞNG ĐIỂM */
-        <div className="py-5 text-center space-y-4 animate-in zoom-in-95 duration-200">
-          <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-amber-400 to-yellow-300 flex items-center justify-center text-slate-950 font-black shadow-xl shadow-amber-500/40 animate-bounce">
-            <Crown className="w-8 h-8" />
-          </div>
+        /* ========================================================================= */
+        /* MÀN HÌNH TỔNG KẾT ĐIỂM TOÀN BÀI HỌC VÀ LỜI NHẬN XÉT SƯ PHẠM               */
+        /* ========================================================================= */
+        (() => {
+          const feedback = getPedagogicalFeedback(summaryStats.accuracyRate, summaryStats.mistakes.length);
+          const FeedbackIcon = feedback.avatarIcon;
 
-          <div className="space-y-1">
-            <h3 className="text-xl sm:text-2xl font-black text-white">
-              🎉 Chúc Mừng Bạn Đã Hoàn Thành Vòng Thử Thách!
-            </h3>
-            <p className="text-xs text-slate-300 max-w-md mx-auto">
-              Bạn đã xuất sắc ghi thêm điểm thưởng danh giá vào bảng thành tích Khối {gradeTitle}!
-            </p>
-          </div>
+          return (
+            <div className="py-4 space-y-5 animate-in zoom-in-95 duration-200 text-left">
+              {/* Top Trophy & Title */}
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-amber-400 via-yellow-400 to-amber-500 flex items-center justify-center text-slate-950 font-black shadow-xl shadow-amber-500/40 animate-bounce">
+                  <FeedbackIcon className="w-8 h-8" />
+                </div>
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border shadow-sm mb-1 bg-slate-900/90 text-amber-300 border-amber-500/40">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                    <span>{feedback.tag}</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                    🎉 Tổng Kết Kết Quả Bài Học & Luyện Tập
+                  </h3>
+                  <p className="text-xs text-slate-300 max-w-xl mx-auto">
+                    {lessonTitle} • Khối {gradeTitle}
+                  </p>
+                </div>
+              </div>
 
-          {/* Reward Cards */}
-          <div className="grid grid-cols-3 gap-2.5 max-w-lg mx-auto text-xs">
-            <div className="p-3 rounded-xl bg-slate-900 border border-amber-500/40 space-y-0.5">
-              <span className="text-slate-400 text-[9px] uppercase font-bold block">EXP Vòng Này</span>
-              <span className="text-lg font-black text-amber-300">+{sessionScore}</span>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900 border border-cyan-500/40 space-y-0.5">
-              <span className="text-slate-400 text-[9px] uppercase font-bold block">Tổng EXP {gradeTitle}</span>
-              <span className="text-lg font-black text-cyan-300">{formatNaturalNumber(gradeTotalScore)}</span>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900 border border-purple-500/40 space-y-0.5">
-              <span className="text-slate-400 text-[9px] uppercase font-bold block">VinaCoins</span>
-              <span className="text-lg font-black text-purple-300">+{coinsEarned} 🪙</span>
-            </div>
-          </div>
+              {/* 4 Thẻ Thống Kê Điểm Số & Thành Tích */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-xs">
+                <div className="p-3 rounded-xl bg-slate-900/90 border border-cyan-500/40 space-y-0.5 text-center shadow-sm">
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tỉ Lệ Chính Xác</span>
+                  <div className="text-xl font-black text-cyan-300">
+                    {summaryStats.accuracyRate}%
+                  </div>
+                  <span className="text-[10px] text-slate-400 block font-medium">
+                    {summaryStats.totalCorrect}/{summaryStats.totalQuestions} câu đúng
+                  </span>
+                </div>
 
-          <div className="flex justify-center gap-3 pt-1">
-            <button
-              onClick={() => handleSwitchMode("ai")}
-              className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-black text-xs sm:text-sm flex items-center gap-1.5 hover:scale-105 transition-transform shadow-md shadow-purple-500/40"
-            >
-              <Bot className="w-4 h-4 text-amber-300" />
-              <span>Luyện tập thêm ({initialList.length} câu tương tự)</span>
-            </button>
-          </div>
-        </div>
+                <div className="p-3 rounded-xl bg-slate-900/90 border border-amber-500/40 space-y-0.5 text-center shadow-sm">
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">EXP Bài Học</span>
+                  <div className="text-xl font-black text-amber-300">
+                    +{sessionScore}
+                  </div>
+                  <span className="text-[10px] text-amber-400/80 block font-medium">
+                    Điểm thưởng vòng này
+                  </span>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 space-y-0.5 text-center shadow-sm">
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">VinaCoins</span>
+                  <div className="text-xl font-black text-purple-300">
+                    +{coinsEarned} 🪙
+                  </div>
+                  <span className="text-[10px] text-purple-400/80 block font-medium">
+                    Xu tích lũy hồ sơ
+                  </span>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-900/90 border border-emerald-500/40 space-y-0.5 text-center shadow-sm">
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tổng EXP Khối</span>
+                  <div className="text-xl font-black text-emerald-300">
+                    {formatNaturalNumber(gradeTotalScore)}
+                  </div>
+                  <span className="text-[10px] text-emerald-400/80 block font-medium">
+                    {rank.title}
+                  </span>
+                </div>
+              </div>
+
+              {/* Lời Nhận Xét Khen Ngợi & Động Viên Sư Phạm (Ấm áp, chân thành, không quá lố) */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 border border-cyan-500/40 shadow-xl space-y-3">
+                <div className="flex items-center gap-2.5 text-cyan-300 font-bold text-sm sm:text-base border-b border-cyan-500/20 pb-2">
+                  <div className="w-7 h-7 rounded-lg bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300">
+                    <GraduationCap className="w-4 h-4" />
+                  </div>
+                  <span>Lời nhận xét & động viên sư phạm từ Thầy/Cô VinaMath</span>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-100 leading-relaxed font-medium">
+                  {feedback.quote}
+                </p>
+
+                <div className="flex items-start gap-2 p-2.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-xs text-cyan-200">
+                  <Lightbulb className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-amber-300">Gợi ý rèn luyện tiếp theo: </strong>
+                    {feedback.advice}
+                  </div>
+                </div>
+              </div>
+
+              {/* Danh Sách Câu Chưa Đúng & Hướng Dẫn Ôn Tập Bổ Sung */}
+              {summaryStats.mistakes.length === 0 ? (
+                <div className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/50 flex items-center gap-3 text-emerald-300 shadow-md">
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <div className="text-xs sm:text-sm font-bold">
+                    🌟 Xuất sắc! Em đã trả lời chính xác tất cả các câu hỏi trong cả bài tập và phần luyện thêm! Không có câu nào bị sai sót.
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-xl bg-slate-950/80 border border-rose-500/30 shadow-inner">
+                    <div className="flex items-center gap-2 text-rose-300 font-bold text-xs sm:text-sm">
+                      <AlertTriangle className="w-4 h-4 text-rose-400 shrink-0" />
+                      <span>Các câu em cần ôn lại & phân tích hướng bổ sung ({summaryStats.mistakes.length} câu)</span>
+                    </div>
+
+                    <button
+                      onClick={handleRetryAllMistakes}
+                      className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-rose-600 via-amber-600 to-orange-500 text-white font-black text-xs flex items-center justify-center gap-1.5 hover:scale-105 transition-all shadow-md shadow-rose-600/30 cursor-pointer self-start sm:self-auto active:scale-95"
+                    >
+                      <RotateCcw className="w-3.5 h-3.5" />
+                      <span>Làm lại tất cả câu sai ({summaryStats.mistakes.length})</span>
+                    </button>
+                  </div>
+
+                  <p className="text-[11px] text-slate-400 italic px-1">
+                    💡 Thầy/cô đã chuẩn bị hướng dẫn chi tiết cho từng câu bên dưới. Em hãy đọc kỹ phân tích rồi bấm nút <strong>"Làm lại câu này"</strong> để khắc sâu kiến thức nhé:
+                  </p>
+
+                  <div className="space-y-3">
+                    {summaryStats.mistakes.map((m, mIdx) => (
+                      <div
+                        key={m.id || mIdx}
+                        className="p-3.5 sm:p-4 rounded-2xl bg-[#131B2E] border border-rose-500/40 space-y-2.5 shadow-md hover:border-rose-400/60 transition-colors"
+                      >
+                        {/* Header của câu sai */}
+                        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-rose-500/20 text-rose-300 border border-rose-500/40">
+                              {m.sectionTitle}
+                            </span>
+                            <span className="text-xs font-black text-white">
+                              {m.badge}
+                            </span>
+                          </div>
+
+                          <button
+                            onClick={() => handleRetrySingleMistake(m)}
+                            className="px-3 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400 text-[11px] font-black flex items-center gap-1 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+                          >
+                            <RotateCcw className="w-3 h-3 text-cyan-400" />
+                            <span>Làm lại câu này</span>
+                          </button>
+                        </div>
+
+                        {/* Đề bài câu sai */}
+                        <div className="text-xs sm:text-sm font-bold text-slate-100 leading-relaxed">
+                          <MathFormattedText text={m.questionText} />
+                        </div>
+
+                        {/* So sánh phương án đã chọn vs Đáp án chính xác */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                          <div className="p-2.5 rounded-xl bg-rose-950/40 border border-rose-500/40 space-y-1">
+                            <div className="text-rose-400 font-bold flex items-center gap-1 text-[11px]">
+                              <XCircle className="w-3.5 h-3.5 shrink-0" />
+                              <span>Em đã chọn / nhập:</span>
+                            </div>
+                            <div className="text-slate-200 font-medium pl-4">
+                              <MathFormattedText text={m.selectedAnswer} />
+                            </div>
+                          </div>
+
+                          <div className="p-2.5 rounded-xl bg-emerald-950/40 border border-emerald-500/40 space-y-1">
+                            <div className="text-emerald-400 font-bold flex items-center gap-1 text-[11px]">
+                              <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
+                              <span>Đáp án chính xác:</span>
+                            </div>
+                            <div className="text-emerald-200 font-bold pl-4">
+                              <MathFormattedText text={m.correctAnswer} />
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Hướng dẫn giải chi tiết & kiến thức cần nhớ */}
+                        <div className="p-3 rounded-xl bg-slate-950/90 border border-amber-500/30 space-y-1.5">
+                          <div className="text-amber-300 font-bold text-[11px] flex items-center gap-1.5 uppercase">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                            <span>Hướng dẫn giải chi tiết & kiến thức cần nhớ:</span>
+                          </div>
+                          <div className="text-xs text-slate-200 leading-relaxed font-normal">
+                            <MathFormattedText text={m.explanation} />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Action Buttons */}
+              <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center justify-center gap-3">
+                {summaryStats.mistakes.length > 0 && (
+                  <button
+                    onClick={handleRetryAllMistakes}
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 via-amber-600 to-orange-500 text-white font-black text-xs sm:text-sm flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-rose-600/30 cursor-pointer active:scale-95"
+                  >
+                    <RotateCcw className="w-4 h-4" />
+                    <span>Làm lại {summaryStats.mistakes.length} câu chưa đúng</span>
+                  </button>
+                )}
+
+                <button
+                  onClick={handleRetryAll}
+                  className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 border border-cyan-500/40 text-xs sm:text-sm font-black flex items-center gap-2 hover:scale-105 transition-all cursor-pointer active:scale-95"
+                >
+                  <RefreshCw className="w-4 h-4 text-cyan-400" />
+                  <span>Luyện tập lại toàn bài</span>
+                </button>
+
+                {hasTheory && (
+                  <button
+                    onClick={() => {
+                      setQuizMode("theory");
+                      setIsCompleted(false);
+                    }}
+                    className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-300 border border-emerald-500/40 text-xs sm:text-sm font-bold flex items-center gap-2 hover:scale-105 transition-all cursor-pointer active:scale-95"
+                  >
+                    <BookOpen className="w-4 h-4 text-emerald-400" />
+                    <span>Xem lại Video & Lý thuyết</span>
+                  </button>
+                )}
+              </div>
+            </div>
+          );
+        })()
       )}
 
       {/* Admin Question Edit Modal */}

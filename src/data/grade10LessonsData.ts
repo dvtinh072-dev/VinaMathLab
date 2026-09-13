@@ -6525,6 +6525,80 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống: Nửa đường tròn đơn vị và đo góc nghiêng tia sáng Mặt Trời",
   "scenarioFrames": [],
   "interactiveType": "geometry",
+  "youtubeVideoId": "j1EYbiPNB_s",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 5 - Giá trị lượng giác của một góc từ 0° đến 180° (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "j1EYbiPNB_s",
+      "title": "Tiết 1: Khái niệm nửa đường tròn đơn vị & Định nghĩa giá trị lượng giác của một góc từ 0° đến 180°"
+    },
+    {
+      "id": "_GqL8D5YSHU",
+      "title": "Tiết 2: Mối quan hệ giữa các giá trị lượng giác của hai góc bù nhau và phụ nhau"
+    },
+    {
+      "id": "_pgilzE1QGg",
+      "title": "Tiết 3: Bảng giá trị lượng giác của các góc đặc biệt & Sử dụng máy tính cầm tay Casio"
+    },
+    {
+      "id": "P3y5L94EkIQ",
+      "title": "Tiết 4: Các hệ thức lượng giác cơ bản & Hướng dẫn giải chi tiết bài tập SGK"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.5.1",
+      "title": "Ví dụ 1 (Tiết 1): Xác định dấu của giá trị lượng giác góc tù",
+      "question": "Cho góc $\\alpha$ là góc tù ($90^\\circ < \\alpha < 180^\\circ$). Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\sin \\alpha > 0$ và $\\cos \\alpha < 0$",
+        "$\\sin \\alpha < 0$ và $\\cos \\alpha < 0$",
+        "$\\sin \\alpha > 0$ và $\\cos \\alpha > 0$",
+        "$\\sin \\alpha < 0$ và $\\cos \\alpha > 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trên nửa đường tròn đơn vị, với góc tù $90^\\circ < \\alpha < 180^\\circ$, điểm biểu diễn $M(x_0; y_0)$ nằm ở góc phần tư thứ II nên có hoành độ $x_0 = \\cos \\alpha < 0$ và tung độ $y_0 = \\sin \\alpha > 0$."
+    },
+    {
+      "id": "vq-10.5.2",
+      "title": "Ví dụ 2 (Tiết 2): Áp dụng công thức hai góc bù nhau",
+      "question": "Giá trị của biểu thức $P = \\sin 135^\\circ + \\cos 135^\\circ$ bằng:",
+      "options": [
+        "$0$",
+        "$\\sqrt{2}$",
+        "$-\\sqrt{2}$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $135^\\circ$ và $45^\\circ$ là hai góc bù nhau ($135^\\circ + 45^\\circ = 180^\\circ$). Do đó:\n• $\\sin 135^\\circ = \\sin 45^\\circ = \\frac{\\sqrt{2}}{2}$\n• $\\cos 135^\\circ = -\\cos 45^\\circ = -\\frac{\\sqrt{2}}{2}$\nSuy ra $P = \\frac{\\sqrt{2}}{2} + \\left(-\\frac{\\sqrt{2}}{2}\\right) = 0$."
+    },
+    {
+      "id": "vq-10.5.3",
+      "title": "Ví dụ 3 (Tiết 3): Giá trị lượng giác của các góc đặc biệt",
+      "question": "Giá trị của $\\tan 150^\\circ$ bằng bao nhiêu?",
+      "options": [
+        "$-\\frac{\\sqrt{3}}{3}$",
+        "$\\frac{\\sqrt{3}}{3}$",
+        "$-\\sqrt{3}$",
+        "$\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức bù nhau: $\\tan 150^\\circ = \\tan(180^\\circ - 30^\\circ) = -\\tan 30^\\circ = -\\frac{\\sqrt{3}}{3}$."
+    },
+    {
+      "id": "vq-10.5.4",
+      "title": "Ví dụ 4 (Tiết 4): Vận dụng hệ thức lượng giác cơ bản",
+      "question": "Cho $\\sin \\alpha = \\frac{4}{5}$ với $\\alpha$ là góc nhọn ($0^\\circ < \\alpha < 90^\\circ$). Giá trị của $\\cos \\alpha$ bằng:",
+      "options": [
+        "$\\frac{3}{5}$",
+        "$-\\frac{3}{5}$",
+        "$\\frac{1}{5}$",
+        "$\\frac{\\sqrt{3}}{5}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức $\\sin^2 \\alpha + \\cos^2 \\alpha = 1 \\Rightarrow \\cos^2 \\alpha = 1 - \\left(\\frac{4}{5}\\right)^2 = \\frac{9}{25}$. Vì $\\alpha$ nhọn nên $\\cos \\alpha > 0 \\Rightarrow \\cos \\alpha = \\frac{3}{5}$."
+    }
+  ],
   "tips": [
     "Mẹo nhớ dấu lượng giác trên nửa đường tròn đơn vị: sin luôn dương hoặc bằng 0 trên [0°; 180°]; cos dương ở góc nhọn (< 90°), bằng 0 tại 90°, và âm ở góc tù (> 90°).",
     "Mẹo nhớ góc bù nhau (180° - α): 'Sin bù' - duy nhất sin giữ nguyên dấu: sin(180° - α) = sin α; còn cos, tan, cot đổi dấu thành đối số.",

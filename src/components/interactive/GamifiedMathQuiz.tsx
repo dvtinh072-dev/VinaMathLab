@@ -1038,12 +1038,18 @@ export function GamifiedMathQuiz({
   const [activeSectionTab, setActiveSectionTab] = useState<"multiple_choice" | "true_false" | "short_answer">("multiple_choice");
 
   // 4. Danh sách câu hỏi và câu trả lời cho Phần II: Đúng / Sai
-  const sgkTfList: TrueFalseQuestion[] = activeExam ? (activeExam.trueFalseQuestions || []) : (trueFalseQuestions || []);
-  const aiTfList: TrueFalseQuestion[] = !activeExam
-    ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
-       GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
-       [])
-    : [];
+  const sgkTfList: TrueFalseQuestion[] = useMemo(() => {
+    return activeExam ? (activeExam.trueFalseQuestions || []) : (trueFalseQuestions || []);
+  }, [activeExam, trueFalseQuestions]);
+
+  const aiTfList: TrueFalseQuestion[] = useMemo(() => {
+    return !activeExam
+      ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+         GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+         [])
+      : [];
+  }, [activeExam, lessonId]);
+
   const currentTfList = quizMode === "ai" ? aiTfList : sgkTfList;
 
   const [sgkTfCurrentIndex, setSgkTfCurrentIndex] = useState(0);
@@ -1077,12 +1083,18 @@ export function GamifiedMathQuiz({
   };
 
   // 5. Danh sách câu hỏi và câu trả lời cho Phần III: Trả lời ngắn
-  const sgkSaList: ShortAnswerQuestion[] = activeExam ? (activeExam.shortAnswerQuestions || []) : (shortAnswerQuestions || []);
-  const aiSaList: ShortAnswerQuestion[] = !activeExam
-    ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
-       GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
-       [])
-    : [];
+  const sgkSaList: ShortAnswerQuestion[] = useMemo(() => {
+    return activeExam ? (activeExam.shortAnswerQuestions || []) : (shortAnswerQuestions || []);
+  }, [activeExam, shortAnswerQuestions]);
+
+  const aiSaList: ShortAnswerQuestion[] = useMemo(() => {
+    return !activeExam
+      ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+         GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+         [])
+      : [];
+  }, [activeExam, lessonId]);
+
   const currentSaList = quizMode === "ai" ? aiSaList : sgkSaList;
 
   const [sgkSaCurrentIndex, setSgkSaCurrentIndex] = useState(0);
@@ -4745,7 +4757,7 @@ export function GamifiedMathQuiz({
                   </div>
 
                   <p className="text-[11px] text-slate-400 italic px-1">
-                    💡 Thầy/cô đã chuẩn bị hướng dẫn chi tiết cho từng câu bên dưới. Em hãy đọc kỹ phân tích rồi bấm nút <strong>"Làm lại câu này"</strong> để khắc sâu kiến thức nhé:
+                    💡 Thầy/cô đã chuẩn bị hướng dẫn chi tiết cho từng câu bên dưới. Em hãy đọc kỹ phân tích rồi bấm nút <strong>&quot;Làm lại câu này&quot;</strong> để khắc sâu kiến thức nhé:
                   </p>
 
                   <div className="space-y-3">

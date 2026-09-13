@@ -69,7 +69,8 @@ export default function RootLayout({
             </main>
             <Footer />
             <AuthModal />
-            <VinaAiChatWidget />
+            {/* Tạm thời ẩn Chatbot AI Vina theo yêu cầu */}
+            {/* <VinaAiChatWidget /> */}
             <MathChatBox />
           </AuthProvider>
         </ThemeProvider>

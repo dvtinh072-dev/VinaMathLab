@@ -132,11 +132,7 @@ export default function MathChatBox() {
   };
 
   return (
-    <div
-      className={`fixed z-50 flex flex-col items-end ${
-        isOpen ? "bottom-4 right-4" : "bottom-20 right-4"
-      }`}
-    >
+    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end">
       {/* KHUNG CHAT (CHAT WINDOW) */}
       {isOpen && (
         <div

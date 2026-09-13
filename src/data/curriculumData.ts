@@ -672,6 +672,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         lessons: [
           { id: "t10-b5-gia-tri-luong-giac-0-180", lessonNumber: 5, title: "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°", strand: "hinhhoc", description: "Góc tù, góc nhọn, mối liên hệ góc phụ, góc bù.", keyFormulas: ["\\sin(180^\\circ - \\alpha) = \\sin \\alpha", "\\cos(180^\\circ - \\alpha) = -\\cos \\alpha"], hasInteractive: "geometry" },
           { id: "t10-b6-he-thuc-luong-tam-giac", lessonNumber: 6, title: "Bài 6: Hệ thức lượng trong tam giác", strand: "hinhhoc", description: "Định lý Cosin, Sin, công thức Heron và giải tam giác.", keyFormulas: ["a^2 = b^2 + c^2 - 2bc \\cos A", "\\frac{a}{\\sin A} = 2R", "S = \\sqrt{p(p-a)(p-b)(p-c)}"], hasInteractive: "geometry" },
+          { id: "t10-on-tap-chuong-3", lessonNumber: 0, title: "Ôn tập cuối chương III", strand: "hinhhoc", description: "Hệ thống hóa kiến thức Hệ thức lượng trong tam giác với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["a^2 = b^2 + c^2 - 2bc \\cos A", "\\frac{a}{\\sin A} = 2R", "S = \\frac{1}{2}ab \\sin C", "S = \\sqrt{p(p-a)(p-b)(p-c)}", "S = pr"] },
         ],
       },
       {

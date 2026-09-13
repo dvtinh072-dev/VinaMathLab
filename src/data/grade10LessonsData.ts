@@ -4895,6 +4895,80 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "geometry",
+    "youtubeVideoId": "MNefivUP1AU",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương II - Toán 10 KNTT",
+    "youtubeVideos": [
+      {
+            "id": "MNefivUP1AU",
+            "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương II"
+      },
+      {
+            "id": "h-JmY8lZ2qI",
+            "title": "Tiết 2: Chữa bài tập tự luận - Biểu diễn miền nghiệm của BPT & Hệ BPT"
+      },
+      {
+            "id": "V-N2ApB3mIg",
+            "title": "Tiết 3: Phương pháp giải bài toán thực tế tối ưu hóa hàm số mục tiêu F(x, y)"
+      },
+      {
+            "id": "ewLV8X4qTYI",
+            "title": "Tiết 4: Tổng kết các dạng toán nâng cao & Luyện đề ôn tập chương II"
+      }
+],
+    "videoQuestions": [
+      {
+            "id": "vq-10.ot2.1",
+            "title": "Ví dụ 1 (Tiết 1): Xác định miền nghiệm của BPT bậc nhất hai ẩn",
+            "question": "Điểm nào sau đây KHÔNG thuộc miền nghiệm của bất phương trình $2x - 3y + 6 > 0$?",
+            "options": [
+                  "$M(0; 3)$",
+                  "$O(0; 0)$",
+                  "$N(1; 1)$",
+                  "$P(-1; 1)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay tọa độ điểm $M(0; 3)$ vào vế trái: $2(0) - 3(3) + 6 = -9 + 6 = -3 > 0$ là mệnh đề sai. Vậy $M(0; 3)$ không thuộc miền nghiệm của BPT."
+      },
+      {
+            "id": "vq-10.ot2.2",
+            "title": "Ví dụ 2 (Tiết 2): Kiểm tra nghiệm của hệ bất phương trình",
+            "question": "Cặp số $(x; y) = (2; 1)$ là một nghiệm của hệ bất phương trình nào sau đây?",
+            "options": [
+                  "$\\begin{cases} x + 2y \\le 5 \\\\ 2x - y \\ge 3 \\\\ x \\ge 0 \\end{cases}$",
+                  "$\\begin{cases} x + 2y > 5 \\\\ 2x - y < 3 \\end{cases}$",
+                  "$\\begin{cases} 2x + y \\le 4 \\\\ x - y > 1 \\end{cases}$",
+                  "$\\begin{cases} x + y \\ge 4 \\\\ x - 2y \\ge 0 \\end{cases}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $(x; y) = (2; 1)$ vào hệ đầu tiên:\n$2 + 2(1) = 4 \\le 5$ (thỏa mãn);\n$2(2) - 1 = 3 \\ge 3$ (thỏa mãn);\n$2 \\ge 0$ (thỏa mãn).\nVậy $(2; 1)$ là nghiệm của hệ A."
+      },
+      {
+            "id": "vq-10.ot2.3",
+            "title": "Ví dụ 3 (Tiết 3): Xác định số đỉnh của miền nghiệm đa giác",
+            "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x \\le 4 \\end{cases}$ là một miền đa giác có bao nhiêu đỉnh?",
+            "options": [
+                  "4 đỉnh",
+                  "3 đỉnh",
+                  "5 đỉnh",
+                  "6 đỉnh"
+            ],
+            "correctIndex": 0,
+            "explanation": "Miền nghiệm là một hình thang vuông (tứ giác) với 4 đỉnh là $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$ (vì đường $x = 4$ cắt $x + y = 5$ tại $B(4; 1)$)."
+      },
+      {
+            "id": "vq-10.ot2.4",
+            "title": "Ví dụ 4 (Tiết 4): Tìm giá trị lớn nhất của hàm mục tiêu",
+            "question": "Cho miền nghiệm tứ giác có các đỉnh $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$. Giá trị lớn nhất của biểu thức $F(x, y) = 3x + 2y$ trên miền tứ giác này là:",
+            "options": [
+                  "14",
+                  "12",
+                  "10",
+                  "15"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tính giá trị của $F(x, y)$ tại 4 đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 3(4) + 2(0) = 12$;\n$F(4; 1) = 3(4) + 2(1) = 14$;\n$F(0; 5) = 3(0) + 2(5) = 10$.\nVậy giá trị lớn nhất là 14 tại đỉnh $B(4; 1)$."
+      }
+],
   "tips": [
     "Mẹo thử điểm O(0; 0): Nếu đường thẳng ax + by = c không đi qua gốc tọa độ O, hãy thay ngay (0; 0) vào BPT để xác định nhanh nửa mặt phẳng nghiệm.",
     "Mẹo tìm GTLN, GTNN trên miền đa giác: Chỉ cần tính giá trị của F(x, y) = ax + by tại các đỉnh của miền nghiệm đa giác rồi so sánh, giá trị lớn nhất/nhỏ nhất luôn đạt tại một trong các đỉnh.",

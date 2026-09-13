@@ -6512,4 +6512,1542 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 }
+,
+
+  // ==========================================
+  // BÀI 5: GIÁ TRỊ LƯỢNG GIÁC CỦA MỘT GÓC TỪ 0° ĐẾN 180°
+  // ==========================================
+  "t10-b5-gia-tri-luong-giac-0-180": {
+  "id": "t10-b5-gia-tri-luong-giac-0-180",
+  "lessonNumber": 5,
+  "title": "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°",
+  "bookChapter": "Chương III: Hệ thức lượng trong tam giác (SGK Toán 10 KNTT - Tập 1)",
+  "scenarioTitle": "Tình huống: Nửa đường tròn đơn vị và đo góc nghiêng tia sáng Mặt Trời",
+  "scenarioFrames": [],
+  "interactiveType": "geometry",
+  "tips": [
+    "Mẹo nhớ dấu lượng giác trên nửa đường tròn đơn vị: sin luôn dương hoặc bằng 0 trên [0°; 180°]; cos dương ở góc nhọn (< 90°), bằng 0 tại 90°, và âm ở góc tù (> 90°).",
+    "Mẹo nhớ góc bù nhau (180° - α): 'Sin bù' - duy nhất sin giữ nguyên dấu: sin(180° - α) = sin α; còn cos, tan, cot đổi dấu thành đối số.",
+    "Mẹo nhớ góc phụ nhau (90° - α): 'Phụ chéo' - sin đổi thành cos, cos đổi thành sin, tan đổi thành cot, cot đổi thành tan.",
+    "Mẹo bấm máy tính Casio: Đặt đơn vị góc sang ĐỘ (Degree: Shift -> Menu -> 2 -> 1). Để tìm góc tù khi biết cos hoặc tan âm, bấm Shift + cos / Shift + tan máy sẽ trả ngay góc từ 0° đến 180°."
+  ],
+  "traps": [
+    "Cạm bẫy nhầm dấu của cos góc tù: Học sinh hay quên dấu trừ khi tính cos(120°), cos(135°), cos(150°). Nhớ rằng cos(180° - α) = -cos α!",
+    "Cạm bẫy tan và cot không xác định: tan 90° không xác định (vì cos 90° = 0); cot 0° và cot 180° không xác định (vì sin = 0).",
+    "Cạm bẫy hai nghiệm của phương trình sin: Khi biết sin α = m (0 < m < 1), luôn có hai góc bù nhau thỏa mãn (một góc nhọn α và một góc tù 180° - α).",
+    "Cạm bẫy khai căn sin² + cos² = 1: cos α = ±√(1 - sin² α), phải dựa vào điều kiện góc nhọn (lấy dấu +) hay góc tù (lấy dấu -) để chọn đúng dấu của cos."
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Định nghĩa giá trị lượng giác trên nửa đường tròn đơn vị",
+      "points": [
+        "Nửa đường tròn đơn vị: nửa đường tròn tâm $O(0; 0)$ bán kính $R = 1$ nằm phía trên trục hoành ($y \\ge 0$).",
+        "Với mỗi góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$), gọi $M(x_0; y_0)$ là điểm trên nửa đường tròn đơn vị sao cho $\\widehat{xOM} = \\alpha$. Khi đó:",
+        "    • $\\sin \\alpha = y_0$ (tung độ của điểm $M$)",
+        "    • $\\cos \\alpha = x_0$ (hoành độ của điểm $M$)",
+        "    • $\\tan \\alpha = \\frac{y_0}{x_0} = \\frac{\\sin \\alpha}{\\cos \\alpha}$ (với $\\alpha \\ne 90^\\circ$)",
+        "    • $\\cot \\alpha = \\frac{x_0}{y_0} = \\frac{\\cos \\alpha}{\\sin \\alpha}$ (với $\\alpha \\ne 0^\\circ$ và $\\alpha \\ne 180^\\circ$)",
+        "Dấu của các giá trị lượng giác:",
+        "    • Nếu $\\alpha$ nhọn ($0^\\circ < \\alpha < 90^\\circ$): $\\sin \\alpha > 0, \\cos \\alpha > 0, \\tan \\alpha > 0, \\cot \\alpha > 0$.",
+        "    • Nếu $\\alpha$ tù ($90^\\circ < \\alpha < 180^\\circ$): $\\sin \\alpha > 0, \\cos \\alpha < 0, \\tan \\alpha < 0, \\cot \\alpha < 0$."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 1: Xác định giá trị lượng giác của các góc đặc biệt",
+          "problem": "Tìm các giá trị lượng giác của góc $\\alpha = 120^\\circ$.",
+          "solution": "Điểm $M$ trên nửa đường tròn đơn vị ứng với góc $120^\\circ$ có tọa độ $M\\left(-\\frac{1}{2}; \\frac{\\sqrt{3}}{2}\\right)$.\nDo đó:\n• $\\sin 120^\\circ = \\frac{\\sqrt{3}}{2}$\n• $\\cos 120^\\circ = -\\frac{1}{2}$\n• $\\tan 120^\\circ = \\frac{\\sin 120^\\circ}{\\cos 120^\\circ} = -\\sqrt{3}$\n• $\\cot 120^\\circ = \\frac{1}{\\tan 120^\\circ} = -\\frac{\\sqrt{3}}{3}$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Mối quan hệ giữa các giá trị lượng giác của hai góc bù nhau và phụ nhau",
+      "points": [
+        "Hai góc bù nhau (tổng bằng $180^\\circ$):",
+        "    • $\\sin(180^\\circ - \\alpha) = \\sin \\alpha$",
+        "    • $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$",
+        "    • $\\tan(180^\\circ - \\alpha) = -\\tan \\alpha$ ($\\alpha \\ne 90^\\circ$)",
+        "    • $\\cot(180^\\circ - \\alpha) = -\\cot \\alpha$ ($0^\\circ < \\alpha < 180^\\circ$)",
+        "Hai góc phụ nhau (tổng bằng $90^\\circ$):",
+        "    • $\\sin(90^\\circ - \\alpha) = \\cos \\alpha$",
+        "    • $\\cos(90^\\circ - \\alpha) = \\sin \\alpha$",
+        "    • $\\tan(90^\\circ - \\alpha) = \\cot \\alpha$",
+        "    • $\\cot(90^\\circ - \\alpha) = \\tan \\alpha$"
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 2: Rút gọn biểu thức lượng giác sử dụng góc bù",
+          "problem": "Tính giá trị biểu thức $A = \\sin 30^\\circ \\cos 150^\\circ + \\sin 150^\\circ \\cos 30^\\circ$.",
+          "solution": "Ta có:\n• $\\cos 150^\\circ = \\cos(180^\\circ - 30^\\circ) = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$.\n• $\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = \\frac{1}{2}$.\nThay vào $A$:\n$A = \\left(\\frac{1}{2}\\right)\\left(-\\frac{\\sqrt{3}}{2}\\right) + \\left(\\frac{1}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) = -\\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{3}}{4} = 0$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Các hệ thức lượng giác cơ bản",
+      "points": [
+        "Với mọi góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$), ta luôn có các hệ thức cơ bản:",
+        "    1) $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$",
+        "    2) $\\tan \\alpha \\cdot \\cot \\alpha = 1$ (với $\\alpha \\ne 0^\\circ, 90^\\circ, 180^\\circ$)",
+        "    3) $1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$ (với $\\alpha \\ne 90^\\circ$)",
+        "    4) $1 + \\cot^2 \\alpha = \\frac{1}{\\sin^2 \\alpha}$ (với $\\alpha \\ne 0^\\circ, 180^\\circ$)"
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 3: Cho một giá trị lượng giác, tính các giá trị còn lại",
+          "problem": "Cho góc $\\alpha$ tù thỏa mãn $\\sin \\alpha = \\frac{3}{5}$. Tính $\\cos \\alpha$ và $\\tan \\alpha$.",
+          "solution": "Áp dụng công thức $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$, ta có:\n$\\cos^2 \\alpha = 1 - \\sin^2 \\alpha = 1 - \\left(\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25}$.\nVì $\\alpha$ là góc tù ($90^\\circ < \\alpha < 180^\\circ$) nên $\\cos \\alpha < 0$.\nDo đó: $\\cos \\alpha = -\\sqrt{\\frac{16}{25}} = -\\frac{4}{5}$.\nTừ đó: $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha} = \\frac{3/5}{-4/5} = -\\frac{3}{4}$."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.5.1",
+      "badge": "Nhận biết - Định nghĩa sin trên nửa đường tròn đơn vị",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 37",
+      "question": "Trên nửa đường tròn đơn vị, gọi $M(x_0; y_0)$ là điểm biểu diễn góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$). Giá trị $\\sin \\alpha$ bằng:",
+      "options": [
+        "$y_0$",
+        "$x_0$",
+        "$\\frac{x_0}{y_0}$",
+        "$\\frac{y_0}{x_0}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa trên nửa đường tròn đơn vị, $\\sin \\alpha$ bằng tung độ $y_0$ của điểm $M$."
+    },
+    {
+      "id": "quiz-10.5.2",
+      "badge": "Nhận biết - Định nghĩa cos trên nửa đường tròn đơn vị",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 37",
+      "question": "Trên nửa đường tròn đơn vị, hoành độ $x_0$ của điểm $M$ biểu diễn góc $\\alpha$ chính là:",
+      "options": [
+        "$\\cos \\alpha$",
+        "$\\sin \\alpha$",
+        "$\\tan \\alpha$",
+        "$\\cot \\alpha$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, $\\cos \\alpha$ bằng hoành độ $x_0$ của điểm $M$."
+    },
+    {
+      "id": "quiz-10.5.3",
+      "badge": "Nhận biết - Dấu của giá trị lượng giác góc tù",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 38",
+      "question": "Cho góc $\\alpha$ thỏa mãn $90^\\circ < \\alpha < 180^\\circ$ (góc tù). Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\sin \\alpha > 0$",
+        "$\\cos \\alpha > 0$",
+        "$\\tan \\alpha > 0$",
+        "$\\cot \\alpha > 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với góc tù $\\alpha$, tung độ $y_0 > 0$ nên $\\sin \\alpha > 0$; còn hoành độ $x_0 < 0$ nên $\\cos \\alpha < 0, \\tan \\alpha < 0, \\cot \\alpha < 0$."
+    },
+    {
+      "id": "quiz-10.5.4",
+      "badge": "Nhận biết - Dấu của cos góc tù",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 38",
+      "question": "Với góc $\\alpha$ tù ($90^\\circ < \\alpha < 180^\\circ$), mệnh đề nào sau đây đúng?",
+      "options": [
+        "$\\cos \\alpha < 0$",
+        "$\\cos \\alpha > 0$",
+        "$\\cos \\alpha = 0$",
+        "$\\cos \\alpha \\ge 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Góc tù nằm ở góc phần tư thứ II của hệ trục tọa độ, có hoành độ âm nên $\\cos \\alpha < 0$."
+    },
+    {
+      "id": "quiz-10.5.5",
+      "badge": "Nhận biết - Giá trị lượng giác của 0 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 38",
+      "question": "Giá trị của $\\cos 0^\\circ$ bằng:",
+      "options": [
+        "1",
+        "0",
+        "$-1$",
+        "Không xác định"
+      ],
+      "correctIndex": 0,
+      "explanation": "Góc $0^\\circ$ ứng với điểm $A(1; 0)$ trên trục $Ox$, do đó $\\cos 0^\\circ = 1$."
+    },
+    {
+      "id": "quiz-10.5.6",
+      "badge": "Nhận biết - Giá trị lượng giác của 90 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 38",
+      "question": "Trong các khẳng định sau, khẳng định nào ĐÚNG?",
+      "options": [
+        "$\\sin 90^\\circ = 1$",
+        "$\\cos 90^\\circ = 1$",
+        "$\\tan 90^\\circ = 0$",
+        "$\\sin 90^\\circ = 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điểm biểu diễn góc $90^\\circ$ là $B(0; 1)$, do đó $\\sin 90^\\circ = 1, \\cos 90^\\circ = 0$, $\\tan 90^\\circ$ không xác định."
+    },
+    {
+      "id": "quiz-10.5.7",
+      "badge": "Nhận biết - Giá trị lượng giác của 180 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 38",
+      "question": "Giá trị của $\\cos 180^\\circ$ bằng:",
+      "options": [
+        "$-1$",
+        "1",
+        "0",
+        "$\\frac{1}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điểm biểu diễn góc $180^\\circ$ là $A'(-1; 0)$, do đó $\\cos 180^\\circ = -1$."
+    },
+    {
+      "id": "quiz-10.5.8",
+      "badge": "Thông hiểu - Giá trị lượng giác của 120 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 39",
+      "question": "Giá trị của $\\cos 120^\\circ$ bằng:",
+      "options": [
+        "$-\\frac{1}{2}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "$-\\frac{\\sqrt{3}}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos 120^\\circ = \\cos(180^\\circ - 60^\\circ) = -\\cos 60^\\circ = -\\frac{1}{2}$."
+    },
+    {
+      "id": "quiz-10.5.9",
+      "badge": "Thông hiểu - Giá trị lượng giác của 135 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 39",
+      "question": "Giá trị của $\\sin 135^\\circ$ bằng:",
+      "options": [
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$-\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{1}{2}$",
+        "$-\\frac{1}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sin 135^\\circ = \\sin(180^\\circ - 45^\\circ) = \\sin 45^\\circ = \\frac{\\sqrt{2}}{2}$."
+    },
+    {
+      "id": "quiz-10.5.10",
+      "badge": "Thông hiểu - Giá trị lượng giác của 150 độ",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 39",
+      "question": "Giá trị của $\\tan 150^\\circ$ bằng:",
+      "options": [
+        "$-\\frac{\\sqrt{3}}{3}$",
+        "$\\frac{\\sqrt{3}}{3}$",
+        "$-\\sqrt{3}$",
+        "$\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\tan 150^\\circ = \\tan(180^\\circ - 30^\\circ) = -\\tan 30^\\circ = -\\frac{\\sqrt{3}}{3}$."
+    },
+    {
+      "id": "quiz-10.5.11",
+      "badge": "Thông hiểu - Công thức sin góc bù",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 39",
+      "question": "Với mọi góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$), khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\sin(180^\\circ - \\alpha) = \\sin \\alpha$",
+        "$\\sin(180^\\circ - \\alpha) = -\\sin \\alpha$",
+        "$\\cos(180^\\circ - \\alpha) = \\cos \\alpha$",
+        "$\\tan(180^\\circ - \\alpha) = \\tan \\alpha$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo tính chất hai góc bù nhau, chỉ có $\\sin$ giữ nguyên giá trị: $\\sin(180^\\circ - \\alpha) = \\sin \\alpha$."
+    },
+    {
+      "id": "quiz-10.5.12",
+      "badge": "Thông hiểu - Công thức cos góc bù",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 39",
+      "question": "Khẳng định nào sau đây SAI?",
+      "options": [
+        "$\\cos(180^\\circ - \\alpha) = \\cos \\alpha$",
+        "$\\sin(180^\\circ - \\alpha) = \\sin \\alpha$",
+        "$\\tan(180^\\circ - \\alpha) = -\\tan \\alpha \\ (\\alpha \\ne 90^\\circ)$",
+        "$\\cot(180^\\circ - \\alpha) = -\\cot \\alpha \\ (0^\\circ < \\alpha < 180^\\circ)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khẳng định $\\cos(180^\\circ - \\alpha) = \\cos \\alpha$ là SAI vì đúng phải là $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$."
+    },
+    {
+      "id": "quiz-10.5.13",
+      "badge": "Thông hiểu - Hệ thức cơ bản sin² + cos²",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 40",
+      "question": "Với mọi góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$), giá trị của biểu thức $P = \\sin^2 \\alpha + \\cos^2 \\alpha$ bằng:",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "$-1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hệ thức lượng giác cơ bản: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$ với mọi góc $\\alpha$."
+    },
+    {
+      "id": "quiz-10.5.14",
+      "badge": "Thông hiểu - Hệ thức liên hệ giữa tan và cos",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 40",
+      "question": "Với góc $\\alpha \\ne 90^\\circ$, hệ thức nào sau đây ĐÚNG?",
+      "options": [
+        "$1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$",
+        "$1 + \\tan^2 \\alpha = \\frac{1}{\\sin^2 \\alpha}$",
+        "$1 + \\cot^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$",
+        "$\\tan \\alpha \\cdot \\cot \\alpha = -1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $1 + \\tan^2 \\alpha = 1 + \\frac{\\sin^2 \\alpha}{\\cos^2 \\alpha} = \\frac{\\cos^2 \\alpha + \\sin^2 \\alpha}{\\cos^2 \\alpha} = \\frac{1}{\\cos^2 \\alpha}$."
+    },
+    {
+      "id": "quiz-10.5.15",
+      "badge": "Thông hiểu - Tính tổng sin hai góc bù nhau",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 40",
+      "question": "Giá trị của biểu thức $M = \\cos 20^\\circ + \\cos 160^\\circ$ bằng:",
+      "options": [
+        "0",
+        "1",
+        "$-1$",
+        "$2\\cos 20^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $160^\\circ = 180^\\circ - 20^\\circ$ nên $\\cos 160^\\circ = -\\cos 20^\\circ$. Do đó $M = \\cos 20^\\circ - \\cos 20^\\circ = 0$."
+    },
+    {
+      "id": "quiz-10.5.16",
+      "badge": "Vận dụng - Tính giá trị lượng giác khi biết sin và góc nhọn",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 41",
+      "question": "Cho góc $\\alpha$ nhọn thỏa mãn $\\sin \\alpha = \\frac{5}{13}$. Giá trị của $\\cos \\alpha$ là:",
+      "options": [
+        "$\\frac{12}{13}$",
+        "$-\\frac{12}{13}$",
+        "$\\frac{8}{13}$",
+        "$\\frac{13}{12}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\alpha$ nhọn nên $\\cos \\alpha > 0$. Ta có $\\cos \\alpha = \\sqrt{1 - \\sin^2 \\alpha} = \\sqrt{1 - \\frac{25}{169}} = \\sqrt{\\frac{144}{169}} = \\frac{12}{13}$."
+    },
+    {
+      "id": "quiz-10.5.17",
+      "badge": "Vận dụng - Tính giá trị lượng giác khi biết sin và góc tù",
+      "source": "SGK Toán 10 KNTT Bài 5 Trang 41",
+      "question": "Cho góc $\\alpha$ tù thỏa mãn $\\sin \\alpha = \\frac{4}{5}$. Giá trị của $\\cos \\alpha$ là:",
+      "options": [
+        "$-\\frac{3}{5}$",
+        "$\\frac{3}{5}$",
+        "$-\\frac{4}{5}$",
+        "$\\frac{1}{5}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\alpha$ là góc tù nên $\\cos \\alpha < 0$. Do đó $\\cos \\alpha = -\\sqrt{1 - \\sin^2 \\alpha} = -\\sqrt{1 - \\frac{16}{25}} = -\\frac{3}{5}$."
+    },
+    {
+      "id": "quiz-10.5.18",
+      "badge": "Vận dụng - Tính giá trị biểu thức lượng giác đối xứng",
+      "source": "SBT Toán 10 KNTT Bài 5",
+      "question": "Cho $\\tan \\alpha = 2$. Giá trị của biểu thức $P = \\frac{2\\sin \\alpha + \\cos \\alpha}{\\sin \\alpha - 3\\cos \\alpha}$ bằng:",
+      "options": [
+        "$-5$",
+        "5",
+        "$-3$",
+        "3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chia cả tử và mẫu cho $\\cos \\alpha \\ne 0$ ta được: $P = \\frac{2\\tan \\alpha + 1}{\\tan \\alpha - 3} = \\frac{2(2) + 1}{2 - 3} = \\frac{5}{-1} = -5$."
+    },
+    {
+      "id": "quiz-10.5.19",
+      "badge": "Vận dụng - Biểu thức tổng cos từ 1 độ đến 180 độ",
+      "source": "Bộ đề bồi dưỡng Toán 10",
+      "question": "Tính giá trị của biểu thức $S = \\cos 10^\\circ + \\cos 20^\\circ + \\dots + \\cos 170^\\circ + \\cos 180^\\circ$.",
+      "options": [
+        "$-1$",
+        "0",
+        "1",
+        "$-2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhóm các cặp bù nhau: $(\\cos 10^\\circ + \\cos 170^\\circ) + (\\cos 20^\\circ + \\cos 160^\\circ) + \\dots + (\\cos 80^\\circ + \\cos 100^\\circ) + \\cos 90^\\circ + \\cos 180^\\circ$.\nMỗi cặp có tổng bằng 0, $\\cos 90^\\circ = 0$, còn lại $\\cos 180^\\circ = -1$. Vậy $S = -1$."
+    },
+    {
+      "id": "quiz-10.5.20",
+      "badge": "Vận dụng cao - Tìm góc nhọn thỏa mãn đẳng thức",
+      "source": "Bộ đề bồi dưỡng Toán 10",
+      "question": "Tìm góc $\\alpha$ ($0^\\circ < \\alpha < 90^\\circ$) biết $\\sin \\alpha + \\cos \\alpha = \\sqrt{2}$.",
+      "options": [
+        "$45^\\circ$",
+        "$30^\\circ$",
+        "$60^\\circ$",
+        "$75^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bình phương hai vế: $(\\sin \\alpha + \\cos \\alpha)^2 = 2 \\Leftrightarrow \\sin^2 \\alpha + \\cos^2 \\alpha + 2\\sin \\alpha \\cos \\alpha = 2 \\Leftrightarrow 1 + 2\\sin \\alpha \\cos \\alpha = 2 \\Leftrightarrow 2\\sin \\alpha \\cos \\alpha = 1$.\nMặt khác $(\\sin \\alpha - \\cos \\alpha)^2 = 1 - 2\\sin \\alpha \\cos \\alpha = 0 \\Rightarrow \\sin \\alpha = \\cos \\alpha$. Vì $\\alpha$ nhọn nên $\\alpha = 45^\\circ$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.5.1",
+      "badge": "Đúng / Sai 1 - Định nghĩa và dấu giá trị lượng giác",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Cho góc $\\alpha$ thỏa mãn $0^\\circ \\le \\alpha \\le 180^\\circ$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Với mọi góc $\\alpha \\in [0^\\circ; 180^\\circ]$, ta luôn có $\\sin \\alpha \\ge 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì tung độ của các điểm trên nửa đường tròn đơn vị luôn thỏa mãn $y \\ge 0$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $\\alpha$ là góc nhọn thì $\\cos \\alpha > 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì các điểm thuộc cung phần tư thứ nhất có hoành độ dương ($x > 0$)."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $\\alpha$ là góc tù thì $\\tan \\alpha > 0$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì góc tù có $\\sin \\alpha > 0, \\cos \\alpha < 0$ nên $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha} < 0$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị của $\\cos 90^\\circ$ bằng $1$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\cos 90^\\circ = 0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.2",
+      "badge": "Đúng / Sai 2 - Tính giá trị góc lượng giác đặc biệt",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Xét tính đúng/sai của các giá trị lượng giác sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sin 150^\\circ = \\frac{1}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = \\frac{1}{2}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos 135^\\circ = \\frac{\\sqrt{2}}{2}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\cos 135^\\circ = -\\cos 45^\\circ = -\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\tan 120^\\circ = -\\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\tan 120^\\circ = -\\tan 60^\\circ = -\\sqrt{3}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\cot 135^\\circ = -1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cot 135^\\circ = -\\cot 45^\\circ = -1$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.3",
+      "badge": "Đúng / Sai 3 - Hai góc bù nhau",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Cho hai góc bù nhau $\\alpha$ và $\\beta$ (tức $\\alpha + \\beta = 180^\\circ$ với $0^\\circ < \\alpha, \\beta < 180^\\circ, \\alpha \\ne 90^\\circ$). Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sin \\alpha = \\sin \\beta$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\sin(180^\\circ - \\beta) = \\sin \\beta$."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos \\alpha + \\cos \\beta = 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos \\alpha = -\\cos \\beta \\Leftrightarrow \\cos \\alpha + \\cos \\beta = 0$."
+        },
+        {
+          "id": "c",
+          "text": "$\\tan \\alpha \\cdot \\tan \\beta = 1$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\tan \\alpha = -\\tan \\beta$ nên $\\tan \\alpha \\cdot \\tan \\beta = -\\tan^2 \\beta \\le 0$."
+        },
+        {
+          "id": "d",
+          "text": "$\\cot \\alpha + \\cot \\beta = 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cot \\alpha = -\\cot \\beta$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.4",
+      "badge": "Đúng / Sai 4 - Tính giá trị khi biết sin alpha",
+      "source": "SBT Toán 10 KNTT Bài 5",
+      "prompt": "Cho góc $\\alpha$ thỏa mãn $90^\\circ < \\alpha < 180^\\circ$ và $\\sin \\alpha = \\frac{3}{5}$.",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\alpha$ là một góc tù.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $90^\\circ < \\alpha < 180^\\circ$ là định nghĩa của góc tù."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos \\alpha = \\frac{4}{5}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\alpha$ tù nên $\\cos \\alpha < 0$, giá trị đúng là $\\cos \\alpha = -\\frac{4}{5}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\tan \\alpha = -\\frac{3}{4}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha} = \\frac{3/5}{-4/5} = -\\frac{3}{4}$."
+        },
+        {
+          "id": "d",
+          "text": "Biểu thức $E = 2\\sin \\alpha + \\cos \\alpha$ có giá trị bằng $\\frac{2}{5}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $E = 2\\left(\\frac{3}{5}\\right) + \\left(-\\frac{4}{5}\\right) = \\frac{6}{5} - \\frac{4}{5} = \\frac{2}{5}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.5",
+      "badge": "Đúng / Sai 5 - Tính giá trị khi biết cos alpha",
+      "source": "SBT Toán 10 KNTT Bài 5",
+      "prompt": "Cho góc $\\alpha$ ($0^\\circ \\le \\alpha \\le 180^\\circ$) thỏa mãn $\\cos \\alpha = -\\frac{5}{13}$.",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Góc $\\alpha$ là góc tù.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos \\alpha < 0$ chứng tỏ $\\alpha$ là góc tù ($90^\\circ < \\alpha < 180^\\circ$)."
+        },
+        {
+          "id": "b",
+          "text": "$\\sin \\alpha = \\frac{12}{13}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\sin \\alpha = \\sqrt{1 - \\cos^2 \\alpha} = \\sqrt{1 - \\frac{25}{169}} = \\frac{12}{13}$ (luôn dương trên $[0^\\circ; 180^\\circ]$)."
+        },
+        {
+          "id": "c",
+          "text": "$\\cot \\alpha = -\\frac{12}{5}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha} = \\frac{-5/13}{12/13} = -\\frac{5}{12}$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị của biểu thức $T = \\sin^2 \\alpha - \\cos^2 \\alpha$ bằng $\\frac{119}{169}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $T = \\left(\\frac{12}{13}\\right)^2 - \\left(-\\frac{5}{13}\\right)^2 = \\frac{144 - 25}{169} = \\frac{119}{169}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.6",
+      "badge": "Đúng / Sai 6 - Rút gọn biểu thức lượng giác",
+      "source": "SBT Toán 10 KNTT Bài 5",
+      "prompt": "Xét tính đúng/sai của các đẳng thức rút gọn lượng giác sau với mọi góc $\\alpha$ hợp lệ:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sin(180^\\circ - \\alpha) + \\cos(90^\\circ - \\alpha) = 2\\sin \\alpha$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\sin(180^\\circ - \\alpha) = \\sin \\alpha$ và $\\cos(90^\\circ - \\alpha) = \\sin \\alpha$. Tổng là $2\\sin \\alpha$."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos(180^\\circ - \\alpha) + \\sin(90^\\circ - \\alpha) = 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$ và $\\sin(90^\\circ - \\alpha) = \\cos \\alpha$. Tổng bằng 0."
+        },
+        {
+          "id": "c",
+          "text": "$\\tan(180^\\circ - \\alpha) \\cdot \\cot(90^\\circ - \\alpha) = 1$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\tan(180^\\circ - \\alpha) = -\\tan \\alpha$ và $\\cot(90^\\circ - \\alpha) = \\tan \\alpha$, tích là $-\\tan^2 \\alpha$ chứ không phải $1$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sin^2(180^\\circ - \\alpha) + \\cos^2(180^\\circ - \\alpha) = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $(-\\cos \\alpha)^2 + (\\sin \\alpha)^2 = \\sin^2 \\alpha + \\cos^2 \\alpha = 1$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.7",
+      "badge": "Đúng / Sai 7 - Biểu thức liên hệ tam giác",
+      "source": "Đề thi thử Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có các góc là $A, B, C$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sin(A + B) = \\sin C$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $A + B + C = 180^\\circ \\Rightarrow A + B = 180^\\circ - C \\Rightarrow \\sin(A + B) = \\sin(180^\\circ - C) = \\sin C$."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos(A + B) = \\cos C$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\cos(A + B) = \\cos(180^\\circ - C) = -\\cos C$."
+        },
+        {
+          "id": "c",
+          "text": "$\\cos(A + B) + \\cos C = 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos(A + B) = -\\cos C \\Leftrightarrow \\cos(A + B) + \\cos C = 0$."
+        },
+        {
+          "id": "d",
+          "text": "$\\tan(A + B) = -\\tan C$ (với tam giác $ABC$ không vuông tại $C$).",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\tan(A + B) = \\tan(180^\\circ - C) = -\\tan C$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.5.8",
+      "badge": "Đúng / Sai 8 - Hệ thức nâng cao và góc phụ",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Cho biểu thức $P = \\sin^2 10^\\circ + \\sin^2 20^\\circ + \\dots + \\sin^2 80^\\circ$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Góc $10^\\circ$ và $80^\\circ$ là hai góc phụ nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $10^\\circ + 80^\\circ = 90^\\circ$."
+        },
+        {
+          "id": "b",
+          "text": "Ta có $\\sin 80^\\circ = \\cos 10^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức hai góc phụ nhau: $\\sin(90^\\circ - 10^\\circ) = \\cos 10^\\circ$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sin^2 10^\\circ + \\sin^2 80^\\circ = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\sin^2 10^\\circ + \\cos^2 10^\\circ = 1$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị của biểu thức $P$ bằng $4$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì ghép 4 cặp: $(10^\\circ, 80^\\circ), (20^\\circ, 70^\\circ), (30^\\circ, 60^\\circ), (40^\\circ, 50^\\circ)$. Mỗi cặp bằng 1, tổng bằng $4$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.5.1",
+      "badge": "Trả lời ngắn 1 - Tính sin góc bù",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Biết $\\sin 40^\\circ \\approx 0{,}643$. Tính giá trị của biểu thức $A = \\sin 140^\\circ - \\sin 40^\\circ$.",
+      "correctAnswer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "explanation": "Vì $140^\\circ = 180^\\circ - 40^\\circ$ nên $\\sin 140^\\circ = \\sin 40^\\circ$. Do đó $A = \\sin 40^\\circ - \\sin 40^\\circ = 0$."
+    },
+    {
+      "id": "sa-10.5.2",
+      "badge": "Trả lời ngắn 2 - Tính tổng cos hai góc bù nhau",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Tính giá trị của biểu thức $B = \\cos 35^\\circ + \\cos 145^\\circ$.",
+      "correctAnswer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "explanation": "Vì $145^\\circ = 180^\\circ - 35^\\circ$ nên $\\cos 145^\\circ = -\\cos 35^\\circ$. Tổng $B = \\cos 35^\\circ - \\cos 35^\\circ = 0$."
+    },
+    {
+      "id": "sa-10.5.3",
+      "badge": "Trả lời ngắn 3 - Tính giá trị biểu thức tổng bình phương",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Tính giá trị của biểu thức $C = \\sin^2 47^\\circ + \\cos^2 133^\\circ$.",
+      "correctAnswer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "explanation": "Ta có $\\cos 133^\\circ = \\cos(180^\\circ - 47^\\circ) = -\\cos 47^\\circ \\Rightarrow \\cos^2 133^\\circ = \\cos^2 47^\\circ$. Khi đó $C = \\sin^2 47^\\circ + \\cos^2 47^\\circ = 1$."
+    },
+    {
+      "id": "sa-10.5.4",
+      "badge": "Trả lời ngắn 4 - Tính góc khi biết sin",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Tìm số đo góc tù $\\alpha$ (tính theo độ) thỏa mãn $\\sin \\alpha = \\frac{1}{2}$.",
+      "correctAnswer": "150",
+      "acceptableAnswers": [
+        "150",
+        "150 độ",
+        "150°"
+      ],
+      "explanation": "Vì $\\sin 30^\\circ = \\frac{1}{2}$ nên góc tù thỏa mãn là $\\alpha = 180^\\circ - 30^\\circ = 150^\\circ$."
+    },
+    {
+      "id": "sa-10.5.5",
+      "badge": "Trả lời ngắn 5 - Tính góc khi biết cos âm",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Tìm số đo góc $\\alpha$ (tính theo độ, $0^\\circ \\le \\alpha \\le 180^\\circ$) biết $\\cos \\alpha = -\\frac{\\sqrt{2}}{2}$.",
+      "correctAnswer": "135",
+      "acceptableAnswers": [
+        "135",
+        "135 độ",
+        "135°"
+      ],
+      "explanation": "Vì $\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$ nên $\\cos 135^\\circ = -\\cos 45^\\circ = -\\frac{\\sqrt{2}}{2}$. Do đó $\\alpha = 135^\\circ$."
+    },
+    {
+      "id": "sa-10.5.6",
+      "badge": "Trả lời ngắn 6 - Tính góc khi biết tan âm",
+      "source": "SGK Toán 10 KNTT Bài 5",
+      "prompt": "Tìm số đo góc $\\alpha$ (tính theo độ, $0^\\circ \\le \\alpha \\le 180^\\circ$) biết $\\tan \\alpha = -1$.",
+      "correctAnswer": "135",
+      "acceptableAnswers": [
+        "135",
+        "135 độ",
+        "135°"
+      ],
+      "explanation": "Vì $\\tan 45^\\circ = 1$ nên $\\tan 135^\\circ = -\\tan 45^\\circ = -1$. Vậy $\\alpha = 135^\\circ$."
+    },
+    {
+      "id": "sa-10.5.7",
+      "badge": "Trả lời ngắn 7 - Tính giá trị biểu thức tích tan",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Tính giá trị của biểu thức $P = \\tan 20^\\circ \\cdot \\tan 70^\\circ$.",
+      "correctAnswer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "explanation": "Vì $70^\\circ = 90^\\circ - 20^\\circ$ nên $\\tan 70^\\circ = \\cot 20^\\circ$. Do đó $P = \\tan 20^\\circ \\cdot \\cot 20^\\circ = 1$."
+    },
+    {
+      "id": "sa-10.5.8",
+      "badge": "Trả lời ngắn 8 - Tính tan khi biết sin và cos",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho góc tù $\\alpha$ thỏa mãn $\\sin \\alpha = \\frac{3}{5}$. Tính giá trị của biểu thức $4\\tan \\alpha$.",
+      "correctAnswer": "-3",
+      "acceptableAnswers": [
+        "-3"
+      ],
+      "explanation": "Vì $\\alpha$ tù nên $\\cos \\alpha = -\\sqrt{1 - (3/5)^2} = -\\frac{4}{5}$. Do đó $\\tan \\alpha = \\frac{3/5}{-4/5} = -\\frac{3}{4} \\Rightarrow 4\\tan \\alpha = -3$."
+    },
+    {
+      "id": "sa-10.5.9",
+      "badge": "Trả lời ngắn 9 - Rút gọn biểu thức tổng bình phương",
+      "source": "Bộ đề ôn tập Toán 10",
+      "prompt": "Tính giá trị của biểu thức $S = \\sin^2 15^\\circ + \\sin^2 75^\\circ + \\cos^2 30^\\circ + \\cos^2 60^\\circ$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "Ta có $\\sin 75^\\circ = \\cos 15^\\circ \\Rightarrow \\sin^2 15^\\circ + \\sin^2 75^\\circ = \\sin^2 15^\\circ + \\cos^2 15^\\circ = 1$. Tương tự $\\cos 60^\\circ = \\sin 30^\\circ \\Rightarrow \\cos^2 30^\\circ + \\cos^2 60^\\circ = \\cos^2 30^\\circ + \\sin^2 30^\\circ = 1$. Tổng $S = 1 + 1 = 2$."
+    },
+    {
+      "id": "sa-10.5.10",
+      "badge": "Trả lời ngắn 10 - Giá trị biểu thức lượng giác phân thức",
+      "source": "Bộ đề ôn tập Toán 10",
+      "prompt": "Cho $\\tan \\alpha = 3$. Tính giá trị của biểu thức $Q = \\frac{\\sin \\alpha + \\cos \\alpha}{\\sin \\alpha - \\cos \\alpha}$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "explanation": "Chia cả tử và mẫu cho $\\cos \\alpha \\ne 0$: $Q = \\frac{\\tan \\alpha + 1}{\\tan \\alpha - 1} = \\frac{3 + 1}{3 - 1} = \\frac{4}{2} = 2$."
+    },
+    {
+      "id": "sa-10.5.11",
+      "badge": "Trả lời ngắn 11 - Tích sin và cos khi biết tổng",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Cho góc $\\alpha$ thỏa mãn $\\sin \\alpha + \\cos \\alpha = \\frac{7}{5}$. Tính giá trị của $50 \\cdot (\\sin \\alpha \\cdot \\cos \\alpha)$.",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "explanation": "Bình phương hai vế: $(\\sin \\alpha + \\cos \\alpha)^2 = \\frac{49}{25} \\Leftrightarrow 1 + 2\\sin \\alpha \\cos \\alpha = \\frac{49}{25} \\Leftrightarrow 2\\sin \\alpha \\cos \\alpha = \\frac{24}{25} \\Leftrightarrow \\sin \\alpha \\cos \\alpha = \\frac{12}{25}$. Vậy $50 \\cdot \\frac{12}{25} = 24$."
+    },
+    {
+      "id": "sa-10.5.12",
+      "badge": "Trả lời ngắn 12 - Giá trị biểu thức đối xứng bậc 4",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Biết $\\sin \\alpha \\cos \\alpha = \\frac{1}{4}$. Tính giá trị của biểu thức $P = 8(\\sin^4 \\alpha + \\cos^4 \\alpha)$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7"
+      ],
+      "explanation": "Ta có $\\sin^4 \\alpha + \\cos^4 \\alpha = (\\sin^2 \\alpha + \\cos^2 \\alpha)^2 - 2\\sin^2 \\alpha \\cos^2 \\alpha = 1 - 2\\left(\\frac{1}{4}\\right)^2 = 1 - 2\\left(\\frac{1}{16}\\right) = 1 - \\frac{1}{8} = \\frac{7}{8}$. Do đó $8 \\cdot \\frac{7}{8} = 7$."
+    }
+  ]
+},
+
+  // ==========================================
+  // BÀI 6: HỆ THỨC LƯỢNG TRONG TAM GIÁC
+  // ==========================================
+  "t10-b6-he-thuc-luong-tam-giac": {
+  "id": "t10-b6-he-thuc-luong-tam-giac",
+  "lessonNumber": 6,
+  "title": "Bài 6: Hệ thức lượng trong tam giác",
+  "bookChapter": "Chương III: Hệ thức lượng trong tam giác (SGK Toán 10 KNTT - Tập 1)",
+  "scenarioTitle": "Tình huống thực tế: Đo chiều cao tháp truyền hình và khoảng cách qua hồ nước",
+  "scenarioFrames": [],
+  "interactiveType": "geometry",
+  "tips": [
+    "Mẹo chọn định lý Cosin hay Sin: Biết 2 cạnh và góc kẹp giữa (c-g-c) hoặc 3 cạnh (c-c-c) -> dùng ĐỊNH LÝ COSIN. Biết 1 cạnh và 2 góc (g-c-g) hoặc 2 cạnh và 1 góc đối diện -> dùng ĐỊNH LÝ SIN.",
+    "Mẹo tính bán kính đường tròn ngoại tiếp R: Luôn dùng định lý Sin: R = a / (2 sin A).",
+    "Mẹo tính bán kính đường tròn nội tiếp r: Tính diện tích S trước (bằng Heron hoặc 1/2 ab sin C), sau đó dùng r = S / p (với p là nửa chu vi).",
+    "Mẹo nhận biết góc tù trong tam giác: Nếu a² > b² + c² thì tam giác tù tại góc A (vì cos A < 0); nếu a² = b² + c² thì vuông tại A; nếu a² < b² + c² (với a là cạnh lớn nhất) thì nhọn."
+  ],
+  "traps": [
+    "Cạm bẫy nhầm dấu định lý Cosin: a² = b² + c² - 2bc cos A (dấu TRỪ, không phải dấu cộng!). Và cos A = (b² + c² - a²) / (2bc).",
+    "Cạm bẫy định lý Sin tính R: a / sin A = 2R (bằng 2R chứ không phải bằng R!).",
+    "Cạm bẫy hai nghiệm góc khi dùng định lý Sin: Khi tính sin B = (b sin A) / a < 1, góc B có thể là góc nhọn hoặc góc tù (nếu b > a). Luôn kiểm tra điều kiện cạnh đối diện góc lớn hơn phải lớn hơn!",
+    "Cạm bẫy làm tròn số quá sớm trong bài toán thực tế: Hãy giữ phân số hoặc biểu thức căn/lượng giác chính xác đến bước cuối cùng mới bấm xấp xỉ để tránh sai số lũy tiến."
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Định lý Cosin và công thức đường trung tuyến",
+      "points": [
+        "Định lý Cosin: Trong tam giác $ABC$ có độ dài các cạnh $BC = a, CA = b, AB = c$:",
+        "    • $a^2 = b^2 + c^2 - 2bc \\cos A$",
+        "    • $b^2 = a^2 + c^2 - 2ac \\cos B$",
+        "    • $c^2 = a^2 + b^2 - 2ab \\cos C$",
+        "Hệ quả (Tính góc từ 3 cạnh):",
+        "    • $\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}; \\quad \\cos B = \\frac{a^2 + c^2 - b^2}{2ac}; \\quad \\cos C = \\frac{a^2 + b^2 - c^2}{2ab}$",
+        "Công thức độ dài đường trung tuyến (kẻ từ đỉnh $A, B, C$):",
+        "    • $m_a^2 = \\frac{2(b^2 + c^2) - a^2}{4}; \\quad m_b^2 = \\frac{2(a^2 + c^2) - b^2}{4}; \\quad m_c^2 = \\frac{2(a^2 + b^2) - c^2}{4}$"
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tính cạnh thứ ba và góc của tam giác",
+          "problem": "Cho tam giác $ABC$ có $b = 8$, $c = 5$ và $\\widehat{A} = 60^\\circ$. Tính cạnh $a$ và góc $\\widehat{B}$.",
+          "solution": "• Áp dụng định lý Cosin tính cạnh $a$:\n$a^2 = b^2 + c^2 - 2bc \\cos A = 8^2 + 5^2 - 2 \\cdot 8 \\cdot 5 \\cdot \\cos 60^\\circ = 64 + 25 - 80 \\cdot \\frac{1}{2} = 89 - 40 = 49 \\Rightarrow a = 7$.\n• Áp dụng hệ quả tính $\\cos B$:\n$\\cos B = \\frac{a^2 + c^2 - b^2}{2ac} = \\frac{7^2 + 5^2 - 8^2}{2 \\cdot 7 \\cdot 5} = \\frac{49 + 25 - 64}{70} = \\frac{10}{70} = \\frac{1}{7} \\Rightarrow \\widehat{B} \\approx 81{,}8^\\circ$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Định lý Sin",
+      "points": [
+        "Định lý Sin: Trong tam giác $ABC$ bất kỳ, tỉ số giữa mỗi cạnh và sin của góc đối diện luôn bằng đường kính đường tròn ngoại tiếp $2R$:",
+        "    $$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$$",
+        "Hệ quả:",
+        "    • $a = 2R \\sin A, \\quad b = 2R \\sin B, \\quad c = 2R \\sin C$",
+        "    • $R = \\frac{a}{2\\sin A} = \\frac{b}{2\\sin B} = \\frac{c}{2\\sin C}$"
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 2: Tính cạnh và bán kính đường tròn ngoại tiếp",
+          "problem": "Cho tam giác $ABC$ có $a = 10$, $\\widehat{A} = 45^\\circ$, $\\widehat{B} = 60^\\circ$. Tính cạnh $b$ và bán kính $R$.",
+          "solution": "• Áp dụng định lý Sin:\n$\\frac{b}{\\sin B} = \\frac{a}{\\sin A} \\Rightarrow b = \\frac{a \\cdot \\sin B}{\\sin A} = \\frac{10 \\cdot \\sin 60^\\circ}{\\sin 45^\\circ} = \\frac{10 \\cdot \\frac{\\sqrt{3}}{2}}{\\frac{\\sqrt{2}}{2}} = 10 \\cdot \\sqrt{\\frac{3}{2}} = 5\\sqrt{6}$.\n• Bán kính đường tròn ngoại tiếp:\n$R = \\frac{a}{2\\sin A} = \\frac{10}{2\\sin 45^\\circ} = \\frac{10}{2 \\cdot \\frac{\\sqrt{2}}{2}} = \\frac{10}{\\sqrt{2}} = 5\\sqrt{2}$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Các công thức tính diện tích tam giác",
+      "points": [
+        "Cho tam giác $ABC$ có các cạnh $a, b, c$, nửa chu vi $p = \\frac{a + b + c}{2}$, bán kính ngoại tiếp $R$, nội tiếp $r$:",
+        "    1) $S = \\frac{1}{2} a h_a = \\frac{1}{2} b h_b = \\frac{1}{2} c h_c$",
+        "    2) $S = \\frac{1}{2} ab \\sin C = \\frac{1}{2} bc \\sin A = \\frac{1}{2} ac \\sin B$",
+        "    3) $S = \\frac{abc}{4R} \\quad \\Rightarrow \\quad R = \\frac{abc}{4S}$",
+        "    4) $S = pr \\quad \\Rightarrow \\quad r = \\frac{S}{p}$",
+        "    5) Công thức Heron: $S = \\sqrt{p(p - a)(p - b)(p - c)}$"
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 3: Tính diện tích, R, r của tam giác biết ba cạnh",
+          "problem": "Cho tam giác $ABC$ có $a = 13$, $b = 14$, $c = 15$. Tính diện tích $S$, bán kính $R$ và $r$.",
+          "solution": "• Nửa chu vi: $p = \\frac{13 + 14 + 15}{2} = 21$.\n• Diện tích theo công thức Heron:\n$S = \\sqrt{21(21 - 13)(21 - 14)(21 - 15)} = \\sqrt{21 \\cdot 8 \\cdot 7 \\cdot 6} = \\sqrt{7056} = 84$.\n• Bán kính đường tròn ngoại tiếp:\n$R = \\frac{abc}{4S} = \\frac{13 \\cdot 14 \\cdot 15}{4 \\cdot 84} = \\frac{2730}{336} = \\frac{65}{8} = 8{,}125$.\n• Bán kính đường tròn nội tiếp:\n$r = \\frac{S}{p} = \\frac{84}{21} = 4$."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.6.1",
+      "badge": "Nhận biết - Định lý Cosin",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 43",
+      "question": "Cho tam giác $ABC$ có các cạnh $BC = a, AC = b, AB = c$. Mệnh đề nào sau đây ĐÚNG?",
+      "options": [
+        "$a^2 = b^2 + c^2 - 2bc \\cos A$",
+        "$a^2 = b^2 + c^2 + 2bc \\cos A$",
+        "$a^2 = b^2 + c^2 - 2bc \\sin A$",
+        "$a^2 = b^2 + c^2 - bc \\cos A$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Cosin trong tam giác $ABC$: $a^2 = b^2 + c^2 - 2bc \\cos A$."
+    },
+    {
+      "id": "quiz-10.6.2",
+      "badge": "Nhận biết - Hệ quả định lý Cosin",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 43",
+      "question": "Trong tam giác $ABC$, công thức tính $\\cos A$ là:",
+      "options": [
+        "$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$",
+        "$\\cos A = \\frac{b^2 + c^2 + a^2}{2bc}$",
+        "$\\cos A = \\frac{a^2 + c^2 - b^2}{2ac}$",
+        "$\\cos A = \\frac{b^2 + c^2 - a^2}{bc}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ $a^2 = b^2 + c^2 - 2bc \\cos A \\Rightarrow \\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$."
+    },
+    {
+      "id": "quiz-10.6.3",
+      "badge": "Nhận biết - Định lý Sin",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 44",
+      "question": "Cho tam giác $ABC$ nội tiếp đường tròn bán kính $R$. Hệ thức nào sau đây ĐÚNG?",
+      "options": [
+        "$\\frac{a}{\\sin A} = 2R$",
+        "$\\frac{a}{\\sin A} = R$",
+        "$\\frac{a}{\\sin A} = 4R$",
+        "$a \\sin A = 2R$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Sin: $\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$."
+    },
+    {
+      "id": "quiz-10.6.4",
+      "badge": "Nhận biết - Công thức diện tích tam giác chứa sin",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 45",
+      "question": "Diện tích tam giác $ABC$ được tính theo công thức nào sau đây?",
+      "options": [
+        "$S = \\frac{1}{2} bc \\sin A$",
+        "$S = \\frac{1}{2} bc \\cos A$",
+        "$S = bc \\sin A$",
+        "$S = \\frac{1}{2} ac \\sin A$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích bằng nửa tích hai cạnh nhân sin của góc kẹp giữa: $S = \\frac{1}{2} bc \\sin A$."
+    },
+    {
+      "id": "quiz-10.6.5",
+      "badge": "Nhận biết - Công thức Heron",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 45",
+      "question": "Với $p = \\frac{a + b + c}{2}$ là nửa chu vi, công thức Heron tính diện tích tam giác là:",
+      "options": [
+        "$S = \\sqrt{p(p - a)(p - b)(p - c)}$",
+        "$S = \\sqrt{(p - a)(p - b)(p - c)}$",
+        "$S = p(p - a)(p - b)(p - c)$",
+        "$S = \\sqrt{p(p + a)(p + b)(p + c)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức Heron: $S = \\sqrt{p(p - a)(p - b)(p - c)}$."
+    },
+    {
+      "id": "quiz-10.6.6",
+      "badge": "Nhận biết - Mối liên hệ diện tích và bán kính nội tiếp",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 45",
+      "question": "Bán kính đường tròn nội tiếp $r$ của tam giác $ABC$ được tính theo công thức:",
+      "options": [
+        "$r = \\frac{S}{p}$",
+        "$r = \\frac{p}{S}$",
+        "$r = \\frac{4S}{abc}$",
+        "$r = \\frac{abc}{4S}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ công thức diện tích $S = pr$, suy ra bán kính đường tròn nội tiếp là $r = \\frac{S}{p}$."
+    },
+    {
+      "id": "quiz-10.6.7",
+      "badge": "Thông hiểu - Tính cạnh khi biết hai cạnh và góc xen giữa",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 44",
+      "question": "Cho tam giác $ABC$ có $b = 6, c = 8, \\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
+      "options": [
+        "$2\\sqrt{13}$",
+        "$\\sqrt{148}$",
+        "10",
+        "$2\\sqrt{37}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$a^2 = b^2 + c^2 - 2bc \\cos A = 36 + 64 - 2(6)(8)\\left(\\frac{1}{2}\\right) = 100 - 48 = 52 \\Rightarrow a = \\sqrt{52} = 2\\sqrt{13}$."
+    },
+    {
+      "id": "quiz-10.6.8",
+      "badge": "Thông hiểu - Tính góc khi biết ba cạnh",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 44",
+      "question": "Tam giác $ABC$ có $a = 7, b = 8, c = 5$. Số đo của góc $\\widehat{A}$ bằng:",
+      "options": [
+        "$60^\\circ$",
+        "$45^\\circ$",
+        "$30^\\circ$",
+        "$120^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc} = \\frac{64 + 25 - 49}{2(8)(5)} = \\frac{40}{80} = \\frac{1}{2} \\Rightarrow \\widehat{A} = 60^\\circ$."
+    },
+    {
+      "id": "quiz-10.6.9",
+      "badge": "Thông hiểu - Tính cạnh theo định lý Sin",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 45",
+      "question": "Cho tam giác $ABC$ có $\\widehat{B} = 60^\\circ, \\widehat{C} = 45^\\circ$ và $b = 6$. Độ dài cạnh $c$ là:",
+      "options": [
+        "$2\\sqrt{6}$",
+        "$3\\sqrt{2}$",
+        "$2\\sqrt{3}$",
+        "$3\\sqrt{6}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Sin: $c = \\frac{b \\sin C}{\\sin B} = \\frac{6 \\cdot \\sin 45^\\circ}{\\sin 60^\\circ} = \\frac{6 \\cdot \\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{3}}{2}} = \\frac{6\\sqrt{2}}{\\sqrt{3}} = 2\\sqrt{6}$."
+    },
+    {
+      "id": "quiz-10.6.10",
+      "badge": "Thông hiểu - Tính bán kính đường tròn ngoại tiếp R",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 45",
+      "question": "Cho tam giác $ABC$ có $a = 6$ và $\\widehat{A} = 30^\\circ$. Bán kính đường tròn ngoại tiếp $R$ bằng:",
+      "options": [
+        "6",
+        "12",
+        "3",
+        "$6\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$2R = \\frac{a}{\\sin A} = \\frac{6}{\\sin 30^\\circ} = \\frac{6}{1/2} = 12 \\Rightarrow R = 6$."
+    },
+    {
+      "id": "quiz-10.6.11",
+      "badge": "Thông hiểu - Tính diện tích tam giác",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 46",
+      "question": "Tam giác $ABC$ có $a = 4, b = 5$ và $\\widehat{C} = 30^\\circ$. Diện tích của tam giác $ABC$ bằng:",
+      "options": [
+        "5",
+        "10",
+        "$5\\sqrt{3}$",
+        "20"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S = \\frac{1}{2} ab \\sin C = \\frac{1}{2} \\cdot 4 \\cdot 5 \\cdot \\sin 30^\\circ = 10 \\cdot \\frac{1}{2} = 5$."
+    },
+    {
+      "id": "quiz-10.6.12",
+      "badge": "Thông hiểu - Công thức độ dài đường trung tuyến",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 44",
+      "question": "Cho tam giác $ABC$ có $a = 6, b = 4, c = 4$. Độ dài đường trung tuyến $m_a$ kẻ từ $A$ bằng:",
+      "options": [
+        "$\\sqrt{7}$",
+        "7",
+        "$\\sqrt{14}$",
+        "2"
+      ],
+      "correctIndex": 0,
+      "explanation": "$m_a^2 = \\frac{2(b^2 + c^2) - a^2}{4} = \\frac{2(16 + 16) - 36}{4} = \\frac{64 - 36}{4} = \\frac{28}{4} = 7 \\Rightarrow m_a = \\sqrt{7}$."
+    },
+    {
+      "id": "quiz-10.6.13",
+      "badge": "Vận dụng - Nhận dạng tam giác tù",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "question": "Tam giác $ABC$ có ba cạnh $a = 5, b = 7, c = 10$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "Tam giác $ABC$ là tam giác tù",
+        "Tam giác $ABC$ là tam giác nhọn",
+        "Tam giác $ABC$ là tam giác vuông",
+        "Tam giác $ABC$ là tam giác đều"
+      ],
+      "correctIndex": 0,
+      "explanation": "Xét cạnh lớn nhất $c = 10$: ta có $c^2 = 100$, trong khi $a^2 + b^2 = 25 + 49 = 74$. Vì $c^2 > a^2 + b^2$ nên $\\cos C = \\frac{a^2 + b^2 - c^2}{2ab} = \\frac{74 - 100}{70} < 0 \\Rightarrow \\widehat{C} > 90^\\circ$. Vậy tam giác là tam giác tù."
+    },
+    {
+      "id": "quiz-10.6.14",
+      "badge": "Vận dụng - Tính chiều cao tam giác",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "question": "Tam giác $ABC$ có ba cạnh $a = 6, b = 8, c = 10$. Chiều cao $h_a$ kẻ từ đỉnh $A$ bằng:",
+      "options": [
+        "8",
+        "6",
+        "4.8",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta thấy $6^2 + 8^2 = 36 + 64 = 100 = 10^2$, tam giác vuông tại $A$. Do đó diện tích $S = \\frac{1}{2}bc = \\frac{1}{2}(8)(6) = 24$. Mặt khác $S = \\frac{1}{2} a h_a \\Rightarrow h_a = \\frac{2S}{a} = \\frac{48}{6} = 8$."
+    },
+    {
+      "id": "quiz-10.6.15",
+      "badge": "Vận dụng - Tính bán kính đường tròn nội tiếp r",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "question": "Tam giác vuông $ABC$ vuông tại $A$ có hai cạnh góc vuông $AB = 6, AC = 8$. Bán kính đường tròn nội tiếp $r$ bằng:",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cạnh huyền $a = \\sqrt{6^2 + 8^2} = 10$. Nửa chu vi $p = \\frac{6 + 8 + 10}{2} = 12$. Diện tích $S = \\frac{1}{2}(6)(8) = 24$. Bán kính $r = \\frac{S}{p} = \\frac{24}{12} = 2$."
+    },
+    {
+      "id": "quiz-10.6.16",
+      "badge": "Vận dụng - Bài toán thực tế đo khoảng cách đầm lầy",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 48",
+      "question": "Để đo khoảng cách giữa hai điểm $A$ và $B$ bị ngăn cách bởi một hồ nước, người ta chọn điểm $C$ trên bờ sao cho $CA = 40$ m, $CB = 60$ m và $\\widehat{ACB} = 60^\\circ$. Khoảng cách $AB$ bằng:",
+      "options": [
+        "$20\\sqrt{7}$ m",
+        "$20\\sqrt{19}$ m",
+        "50 m",
+        "$20\\sqrt{3}$ m"
+      ],
+      "correctIndex": 0,
+      "explanation": "$AB^2 = CA^2 + CB^2 - 2 CA \\cdot CB \\cos 60^\\circ = 40^2 + 60^2 - 2(40)(60)\\left(\\frac{1}{2}\\right) = 1600 + 3600 - 2400 = 2800 \\Rightarrow AB = \\sqrt{2800} = 20\\sqrt{7}$ m."
+    },
+    {
+      "id": "quiz-10.6.17",
+      "badge": "Vận dụng - Bài toán ngọn hải đăng",
+      "source": "SGK Toán 10 KNTT Bài 6 Trang 48",
+      "question": "Từ hai vị trí $A$ và $B$ cách nhau 500 m trên bờ biển cùng quan sát một ngọn hải đăng $C$, người ta đo được $\\widehat{CAB} = 70^\\circ$ và $\\widehat{CBA} = 80^\\circ$. Góc $\\widehat{ACB}$ bằng:",
+      "options": [
+        "$30^\\circ$",
+        "$40^\\circ$",
+        "$35^\\circ$",
+        "$50^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng ba góc trong tam giác bằng $180^\\circ$: $\\widehat{ACB} = 180^\\circ - (70^\\circ + 80^\\circ) = 30^\\circ$."
+    },
+    {
+      "id": "quiz-10.6.18",
+      "badge": "Vận dụng cao - Đẳng thức liên hệ lượng giác trong tam giác",
+      "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
+      "question": "Nếu tam giác $ABC$ thỏa mãn $a = 2b \\cos C$ thì tam giác $ABC$ là:",
+      "options": [
+        "Tam giác cân tại $A$",
+        "Tam giác cân tại $B$",
+        "Tam giác vuông tại $C$",
+        "Tam giác đều"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $\\cos C = \\frac{a^2 + b^2 - c^2}{2ab}$ vào giả thiết: $a = 2b \\left(\\frac{a^2 + b^2 - c^2}{2ab}\\right) = \\frac{a^2 + b^2 - c^2}{a} \\Rightarrow a^2 = a^2 + b^2 - c^2 \\Leftrightarrow b^2 = c^2 \\Leftrightarrow b = c$. Vậy tam giác cân tại $A$."
+    },
+    {
+      "id": "quiz-10.6.19",
+      "badge": "Vận dụng cao - Tỉ số bán kính R và r",
+      "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
+      "question": "Cho tam giác đều $ABC$ cạnh $a$. Tỉ số $\\frac{R}{r}$ giữa bán kính ngoại tiếp và nội tiếp bằng:",
+      "options": [
+        "2",
+        "$\\sqrt{3}$",
+        "3",
+        "$\\frac{3}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tam giác đều, trọng tâm trùng tâm đường tròn ngoại tiếp và nội tiếp. Bán kính ngoại tiếp $R = \\frac{2}{3} h$, bán kính nội tiếp $r = \\frac{1}{3} h$. Do đó $\\frac{R}{r} = 2$."
+    },
+    {
+      "id": "quiz-10.6.20",
+      "badge": "Vận dụng cao - Tối ưu hóa góc nhìn nghệ thuật",
+      "source": "Đề thi HSG Toán 10",
+      "question": "Cho tam giác $ABC$ có chu vi $2p = 16$ và bán kính đường tròn nội tiếp $r = 2$. Diện tích tam giác $ABC$ bằng:",
+      "options": [
+        "16",
+        "32",
+        "8",
+        "24"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa chu vi $p = \\frac{16}{2} = 8$. Diện tích $S = pr = 8 \\cdot 2 = 16$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.6.1",
+      "badge": "Đúng / Sai 1 - Định lý Cosin và Sin",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có độ dài ba cạnh $a, b, c$ và $R$ là bán kính đường tròn ngoại tiếp. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Định lý Cosin khẳng định $b^2 = a^2 + c^2 - 2ac \\cos B$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức chuẩn của định lý Cosin."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos B = \\frac{a^2 + c^2 - b^2}{2ac}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo hệ quả rút $\\cos B$ từ định lý Cosin."
+        },
+        {
+          "id": "c",
+          "text": "Theo định lý Sin ta có $b = R \\sin B$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\frac{b}{\\sin B} = 2R \\Rightarrow b = 2R \\sin B$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $\\widehat{A} = 90^\\circ$ thì $a = 2R$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì trong tam giác vuông, cạnh huyền $a$ chính là đường kính của đường tròn ngoại tiếp, $a = 2R$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.2",
+      "badge": "Đúng / Sai 2 - Tính toán số đo cụ thể trong tam giác",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $a = 7, b = 8, c = 3$. Xét tính đúng/sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nửa chu vi của tam giác bằng $p = 9$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $p = \\frac{7 + 8 + 3}{2} = 9$."
+        },
+        {
+          "id": "b",
+          "text": "$\\cos A = \\frac{8^2 + 3^2 - 7^2}{2 \\cdot 8 \\cdot 3} = \\frac{1}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\frac{64 + 9 - 49}{48} = \\frac{24}{48} = \\frac{1}{2}$."
+        },
+        {
+          "id": "c",
+          "text": "Góc $\\widehat{A}$ có số đo bằng $60^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos A = \\frac{1}{2} \\Rightarrow \\widehat{A} = 60^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích tam giác $ABC$ bằng $6\\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $S = \\frac{1}{2} bc \\sin A = \\frac{1}{2} \\cdot 8 \\cdot 3 \\cdot \\sin 60^\\circ = 12 \\cdot \\frac{\\sqrt{3}}{2} = 6\\sqrt{3}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.3",
+      "badge": "Đúng / Sai 3 - Công thức diện tích và bán kính",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có diện tích $S$, nửa chu vi $p$, bán kính ngoại tiếp $R$, bán kính nội tiếp $r$.",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$S = \\frac{abc}{4R}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức liên hệ diện tích và bán kính ngoại tiếp."
+        },
+        {
+          "id": "b",
+          "text": "$S = pr$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo công thức liên hệ diện tích và bán kính nội tiếp."
+        },
+        {
+          "id": "c",
+          "text": "Nếu tam giác đều cạnh $a$ thì diện tích $S = \\frac{a^2 \\sqrt{3}}{4}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $S = \\frac{1}{2} a^2 \\sin 60^\\circ = \\frac{a^2 \\sqrt{3}}{4}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu tam giác đều cạnh $a$ thì bán kính nội tiếp $r = \\frac{a\\sqrt{3}}{3}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $r = \\frac{a\\sqrt{3}}{6}$ (bằng $\\frac{1}{3}$ đường cao)."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.4",
+      "badge": "Đúng / Sai 4 - Đường trung tuyến và tam giác vuông",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$, gọi $M$ là trung điểm cạnh $BC$.",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài cạnh $BC = 10$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $BC = \\sqrt{6^2 + 8^2} = 10$."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài trung tuyến $AM = 5$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền: $AM = \\frac{BC}{2} = 5$."
+        },
+        {
+          "id": "c",
+          "text": "Bán kính đường tròn ngoại tiếp tam giác là $R = 10$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $R = \\frac{BC}{2} = 5$."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích tam giác $ABM$ bằng $12$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $M$ là trung điểm $BC$ nên $S_{ABM} = \\frac{1}{2} S_{ABC} = \\frac{1}{2} \\left(\\frac{1}{2} \\cdot 6 \\cdot 8\\right) = 12$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.5",
+      "badge": "Đúng / Sai 5 - Bài toán thực tế đo chiều cao tháp",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Để đo chiều cao của một tòa tháp $CD$, người ta chọn hai điểm $A$ và $B$ trên mặt đất thẳng hàng với chân tháp $D$ sao cho $AB = 30$ m. Từ $A$ và $B$ nhìn thấy đỉnh tháp $C$ dưới các góc nâng lần lượt là $\\widehat{CAD} = 35^\\circ$ và $\\widehat{CBD} = 48^\\circ$ ($B$ nằm giữa $A$ và $D$).",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Góc $\\widehat{ACB} = 48^\\circ - 35^\\circ = 13^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\widehat{CBD}$ là góc ngoài của tam giác $ABC$ tại đỉnh $B$, do đó $\\widehat{ACB} = \\widehat{CBD} - \\widehat{CAD} = 48^\\circ - 35^\\circ = 13^\\circ$."
+        },
+        {
+          "id": "b",
+          "text": "Áp dụng định lý Sin trong tam giác $ABC$, ta có $BC = \\frac{AB \\cdot \\sin 35^\\circ}{\\sin 13^\\circ}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\frac{BC}{\\sin \\widehat{BAC}} = \\frac{AB}{\\sin \\widehat{ACB}} \\Rightarrow BC = \\frac{AB \\sin 35^\\circ}{\\sin 13^\\circ}$."
+        },
+        {
+          "id": "c",
+          "text": "Chiều cao tòa tháp được tính bởi công thức $CD = BC \\cdot \\sin 48^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì trong tam giác vuông $BCD$ vuông tại $D$, $CD = BC \\sin 48^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Chiều cao $CD$ của tháp nhỏ hơn $40$ m.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $BC = \\frac{30 \\sin 35^\\circ}{\\sin 13^\\circ} \\approx 76{,}5$ m $\\Rightarrow CD = 76{,}5 \\cdot \\sin 48^\\circ \\approx 56{,}8$ m $> 40$ m."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.6",
+      "badge": "Đúng / Sai 6 - Nhận dạng tam giác qua hệ thức",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$. Xét tính đúng/sai của các điều kiện suy ra tính chất tam giác:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $a^2 + b^2 = c^2$ thì tam giác $ABC$ vuông tại $C$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định lý Pythagore đảo."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $\\sin A = \\sin B$ thì tam giác $ABC$ luôn là tam giác cân tại $C$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì trong tam giác, $\\sin A = \\sin B \\Leftrightarrow A = B$ (vì $A + B < 180^\\circ$), do đó $a = b$."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $\\cos A < 0$ thì tam giác $ABC$ là tam giác tù.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $\\cos A < 0 \\Leftrightarrow 90^\\circ < A < 180^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $b + c = 2a$ thì $\\sin B + \\sin C = \\sin A$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì theo định lý Sin: $b + c = 2R(\\sin B + \\sin C)$ và $2a = 4R \\sin A$, suy ra $\\sin B + \\sin C = 2\\sin A$ chứ không phải $\\sin A$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.7",
+      "badge": "Đúng / Sai 7 - Bài toán tàu thuyền di chuyển trên biển",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Hai tàu thủy cùng xuất phát từ một cảng $O$ đi theo hai hướng tạo với nhau một góc $60^\\circ$. Tàu A chạy với vận tốc $20$ hải lý/h, tàu B chạy với vận tốc $15$ hải lý/h. Sau 2 giờ:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Quãng đường tàu A đi được là $OA = 40$ hải lý.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $S = v \\cdot t = 20 \\cdot 2 = 40$ hải lý."
+        },
+        {
+          "id": "b",
+          "text": "Quãng đường tàu B đi được là $OB = 30$ hải lý.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $S = v \\cdot t = 15 \\cdot 2 = 30$ hải lý."
+        },
+        {
+          "id": "c",
+          "text": "Khoảng cách giữa hai tàu là $AB = \\sqrt{40^2 + 30^2 - 2(40)(30)\\cos 60^\\circ}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định lý Cosin trong tam giác $OAB$."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng cách giữa hai tàu sau 2 giờ bằng $35$ hải lý.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $AB^2 = 1600 + 900 - 1200 = 1300 \\Rightarrow AB = 10\\sqrt{13} \\approx 36{,}05$ hải lý $\\ne 35$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.6.8",
+      "badge": "Đúng / Sai 8 - Hệ thức trung tuyến và tính đối xứng",
+      "source": "Bộ đề bồi dưỡng HSG Toán 10",
+      "prompt": "Cho tam giác $ABC$ có các đường trung tuyến $m_a, m_b, m_c$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$4(m_a^2 + m_b^2 + m_c^2) = 3(a^2 + b^2 + c^2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì cộng 3 công thức trung tuyến: $m_a^2 + m_b^2 + m_c^2 = \\frac{3}{4}(a^2 + b^2 + c^2)$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu tam giác vuông tại $A$ thì $m_a = \\frac{a}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $m_a^2 + m_b^2 = 5m_c^2$ thì tam giác $ABC$ vuông tại $C$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì thế công thức trung tuyến vào ta được $a^2 + b^2 = c^2$, suy ra tam giác vuông tại $C$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu ba đường trung tuyến bằng nhau thì tam giác $ABC$ là tam giác vuông cân.",
+          "correctAnswer": false,
+          "explanation": "Sai vì ba trung tuyến bằng nhau khi và chỉ khi ba cạnh bằng nhau, tức tam giác $ABC$ là tam giác đều."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.6.1",
+      "badge": "Trả lời ngắn 1 - Tính độ dài cạnh theo định lý Cosin",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $b = 5, c = 8$ và $\\widehat{A} = 60^\\circ$. Tính độ dài cạnh $a$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7"
+      ],
+      "explanation": "$a^2 = 5^2 + 8^2 - 2(5)(8)\\cos 60^\\circ = 25 + 64 - 40 = 49 \\Rightarrow a = 7$."
+    },
+    {
+      "id": "sa-10.6.2",
+      "badge": "Trả lời ngắn 2 - Tính góc A khi biết ba cạnh",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $a = 13, b = 8, c = 7$. Tính số đo góc $\\widehat{A}$ (tính bằng độ).",
+      "correctAnswer": "120",
+      "acceptableAnswers": [
+        "120",
+        "120 độ",
+        "120°"
+      ],
+      "explanation": "$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc} = \\frac{64 + 49 - 169}{2(8)(7)} = \\frac{-56}{112} = -\\frac{1}{2} \\Rightarrow \\widehat{A} = 120^\\circ$."
+    },
+    {
+      "id": "sa-10.6.3",
+      "badge": "Trả lời ngắn 3 - Tính bán kính ngoại tiếp R",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $a = 10$ và $\\widehat{A} = 30^\\circ$. Tính bán kính $R$ của đường tròn ngoại tiếp tam giác.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$R = \\frac{a}{2\\sin A} = \\frac{10}{2\\sin 30^\\circ} = \\frac{10}{2(1/2)} = 10$."
+    },
+    {
+      "id": "sa-10.6.4",
+      "badge": "Trả lời ngắn 4 - Tính diện tích tam giác theo hai cạnh và sin",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $b = 6, c = 10$ và $\\widehat{A} = 150^\\circ$. Tính diện tích tam giác $ABC$.",
+      "correctAnswer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "explanation": "$S = \\frac{1}{2} bc \\sin A = \\frac{1}{2} \\cdot 6 \\cdot 10 \\cdot \\sin 150^\\circ = 30 \\cdot \\frac{1}{2} = 15$."
+    },
+    {
+      "id": "sa-10.6.5",
+      "badge": "Trả lời ngắn 5 - Tính diện tích tam giác theo Heron",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Tính diện tích tam giác $ABC$ có độ dài ba cạnh lần lượt là $a = 5, b = 6, c = 7$. (Lấy kết quả chính xác dưới dạng $6\\sqrt{k}$, hãy điền giá trị của $k$).",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Nửa chu vi $p = \\frac{5 + 6 + 7}{2} = 9$. Diện tích $S = \\sqrt{9(9-5)(9-6)(9-7)} = \\sqrt{9 \\cdot 4 \\cdot 3 \\cdot 2} = \\sqrt{216} = 6\\sqrt{6}$. Vậy $k = 6$."
+    },
+    {
+      "id": "sa-10.6.6",
+      "badge": "Trả lời ngắn 6 - Tính bán kính đường tròn nội tiếp r",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có ba cạnh $a = 13, b = 14, c = 15$. Tính bán kính đường tròn nội tiếp $r$ của tam giác.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Nửa chu vi $p = 21$, diện tích $S = 84$. Bán kính $r = \\frac{S}{p} = \\frac{84}{21} = 4$."
+    },
+    {
+      "id": "sa-10.6.7",
+      "badge": "Trả lời ngắn 7 - Độ dài đường trung tuyến",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác $ABC$ có $a = 8, b = 6, c = 4$. Tính $m_a^2$ (bình phương độ dài đường trung tuyến kẻ từ $A$).",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$m_a^2 = \\frac{2(b^2 + c^2) - a^2}{4} = \\frac{2(36 + 16) - 64}{4} = \\frac{2(52) - 64}{4} = \\frac{104 - 64}{4} = \\frac{40}{4} = 10$."
+    },
+    {
+      "id": "sa-10.6.8",
+      "badge": "Trả lời ngắn 8 - Độ dài chiều cao tam giác vuông",
+      "source": "SBT Toán 10 KNTT Bài 6",
+      "prompt": "Cho tam giác vuông có hai cạnh góc vuông là 9 và 12. Tính độ dài đường cao ứng với cạnh huyền.",
+      "correctAnswer": "7.2",
+      "acceptableAnswers": [
+        "7.2",
+        "7,2",
+        "36/5"
+      ],
+      "explanation": "Cạnh huyền $a = \\sqrt{9^2 + 12^2} = 15$. Diện tích $S = \\frac{1}{2}(9)(12) = 54$. Đường cao $h = \\frac{2S}{a} = \\frac{108}{15} = 7{,}2$."
+    },
+    {
+      "id": "sa-10.6.9",
+      "badge": "Trả lời ngắn 9 - Đo khoảng cách qua hồ nước",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Để đo khoảng cách $AB$ qua hồ nước, người ta đo được $CA = 30$ m, $CB = 50$ m và góc $\\widehat{ACB} = 120^\\circ$. Tính khoảng cách $AB$ (mét).",
+      "correctAnswer": "70",
+      "acceptableAnswers": [
+        "70",
+        "70m",
+        "70 m"
+      ],
+      "explanation": "$AB^2 = 30^2 + 50^2 - 2(30)(50)\\cos 120^\\circ = 900 + 2500 - 3000\\left(-\\frac{1}{2}\\right) = 3400 + 1500 = 4900 \\Rightarrow AB = 70$ m."
+    },
+    {
+      "id": "sa-10.6.10",
+      "badge": "Trả lời ngắn 10 - Khoảng cách hai tàu sau 1 giờ",
+      "source": "SGK Toán 10 KNTT Bài 6",
+      "prompt": "Hai tàu xuất phát từ cảng $O$ theo hai hướng hợp với nhau một góc $120^\\circ$, vận tốc lần lượt là 30 km/h và 50 km/h. Tính khoảng cách giữa hai tàu sau 1 giờ (tính theo km).",
+      "correctAnswer": "70",
+      "acceptableAnswers": [
+        "70",
+        "70km",
+        "70 km"
+      ],
+      "explanation": "Sau 1 giờ: $OA = 30$ km, $OB = 50$ km, $\\widehat{AOB} = 60^\\circ$ (khoan, góc $60^\\circ$ thì: $30^2 + 50^2 - 2(30)(50)\\cos 60^\\circ = 900 + 2500 - 1500 = 1900 \\Rightarrow AB = 10\\sqrt{19}$). Nếu góc là $120^\\circ$ thì $AB = 70$ km. Ta đổi đề bài thành góc giữa hai hướng là $120^\\circ$: khi đó khoảng cách là 70 km."
+    },
+    {
+      "id": "sa-10.6.11",
+      "badge": "Trả lời ngắn 11 - Giá trị tỉ số bán kính R/r của tam giác vuông cân",
+      "source": "Bộ đề bồi dưỡng Toán 10",
+      "prompt": "Cho tam giác đều có diện tích $S = 9\\sqrt{3}$. Tính độ dài cạnh của tam giác đều đó.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Công thức diện tích tam giác đều: $S = \\frac{a^2\\sqrt{3}}{4} = 9\\sqrt{3} \\Rightarrow a^2 = 36 \\Rightarrow a = 6$."
+    },
+    {
+      "id": "sa-10.6.12",
+      "badge": "Trả lời ngắn 12 - Tích hai cạnh tam giác",
+      "source": "Bộ đề bồi dưỡng Toán 10",
+      "prompt": "Cho tam giác $ABC$ có diện tích $S = 20$ và $\\widehat{A} = 30^\\circ$. Tính tích độ dài hai cạnh $b \\cdot c$.",
+      "correctAnswer": "80",
+      "acceptableAnswers": [
+        "80"
+      ],
+      "explanation": "$S = \\frac{1}{2} bc \\sin A \\Rightarrow 20 = \\frac{1}{2} bc \\left(\\frac{1}{2}\\right) = \\frac{1}{4} bc \\Rightarrow bc = 80$."
+    }
+  ]
+}
 };

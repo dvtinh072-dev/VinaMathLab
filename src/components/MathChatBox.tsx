@@ -204,12 +204,12 @@ export default function MathChatBox() {
                     Gia Sư Toán Học AI
                   </h3>
                   <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[9px] font-black uppercase">
-                    {geminiKey ? "✨ Gemini Active" : "📚 Socratic SGK"}
+                    {geminiKey ? "✨ Gemini 2.0 Flash" : "📚 SGK Chuẩn"}
                   </span>
                 </div>
                 <p className="text-[10px] text-slate-300 flex items-center gap-1">
                   <Sparkles className="w-3 h-3 text-amber-400" />
-                  <span>Gợi mở tư duy & Chuẩn LaTeX KaTeX</span>
+                  <span>Giải Toán Chuẩn Xác & Công Thức LaTeX</span>
                 </p>
               </div>
             </div>

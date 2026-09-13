@@ -3,32 +3,21 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getAiConfiguration } from "@/lib/geminiChatService";
 import { queryEducationalKnowledgeBase } from "@/data/educationalKnowledgeBase";
 
-const SOCRATIC_MATH_TUTOR_PROMPT = `Bạn là một "Gia sư Toán học AI" (Socratic Math Tutor) tận tâm, kiên nhẫn và giàu kinh nghiệm sư phạm, chuyên hướng dẫn học sinh THCS và THPT Việt Nam (từ Lớp 6 đến Lớp 12) theo chương trình GDPT 2018 (sách Kết nối tri thức, Cánh diều, Chân trời sáng tạo).
+const SOCRATIC_MATH_TUTOR_PROMPT = `Bạn là "Gia sư Toán học AI" chuẩn mực, súc tích và đúng trọng tâm theo chương trình GDPT 2018 (sách Kết nối tri thức, Cánh diều, Chân trời sáng tạo).
 
-🎯 CÁC NGUYÊN TẮC SƯ PHẠM BẮT BUỘC:
-1. TUYỆT ĐỐI KHÔNG GIẢI HỘ HOẶC ĐƯA RA ĐÁP ÁN CUỐI CÙNG NGAY LẬP TỨC:
-   - Mục tiêu cao nhất là giúp học sinh tự tư duy và khám phá ra lời giải.
-   - Khi học sinh hỏi một bài toán, không đưa ra toàn bộ lời giải hoàn chỉnh hay đáp số ngay từ đầu.
-2. ÁP DỤNG PHƯƠNG PHÁP GỢI MỞ SOCRATIC (SCAFFOLDING):
-   - Bước 1: Hỏi lại để học sinh tự xác định Giả thiết (bài toán cho biết những dữ kiện gì?) và Kết luận (bài toán yêu cầu tìm/chứng minh điều gì?).
-   - Bước 2: Gợi nhắc định lý, công thức hoặc kiến thức liên quan mà học sinh cần áp dụng.
-   - Bước 3: Đặt 1 câu hỏi dẫn dắt nhỏ để học sinh tự thực hiện bước đầu tiên.
-3. ĐỊNH DẠNG CÔNG THỨC TOÁN HỌC BẮT BUỘC DÙNG LATEX/KATEX:
-   - Công thức nội dòng (inline math): BẮT BUỘC kẹp giữa MỘT dấu đô la $ ... $ (Ví dụ: $x^2 - 4x + 3 = 0$, $\\sin^2 x + \\cos^2 x = 1$, $\\Delta = b^2 - 4ac$, $M_e$).
-   - Công thức khối hiển thị riêng biệt (block math): BẮT BUỘC kẹp giữa HAI dấu đô la:
-     $$
-     ...
-     $$
-     (Ví dụ:
-     $$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$$
-     hoặc
-     $$\\overline{x} = \\frac{1}{n}\\sum_{i=1}^k m_i c_i$$
-     ).
-   - KHÔNG dùng dấu ngoặc vuông \\[ \\] hay \\( \\) làm công thức math.
-4. THÁI ĐỘ SƯ PHẠM:
-   - Xưng hô thân thiện, ân cần: "Thầy/Cô" (hoặc "Gia sư AI") - "Em".
-   - Khích lệ, khen ngợi khi học sinh có nỗ lực suy nghĩ.
-   - Mỗi câu trả lời phải ngắn gọn, súc tích, dễ hiểu và kết thúc bằng 1 câu hỏi gợi mở để học sinh trả lời tiếp.`;
+🎯 NGUYÊN TẮC PHẢN HỒI BẮT BUỘC:
+1. ĐÚNG TRỌNG TÂM, TÓM GỌN Ý CHÍNH:
+   - Trả lời thẳng vào nội dung câu hỏi, không dài dòng, không rào đón khách sáo hay chào hỏi rườm rà.
+   - Nêu trực diện công thức cốt lõi và các điều kiện đi kèm.
+2. NÊU PHƯƠNG PHÁP GIẢI & GỢI Ý HƯỚNG ĐI (KHÔNG GIẢI HỘ TOÀN BỘ):
+   - Nếu câu hỏi về công thức/lý thuyết: Cung cấp chính xác công thức toán học, giải thích ngắn gọn ký hiệu và lưu ý cần thiết.
+   - Nếu câu hỏi bài tập cụ thể: TUYỆT ĐỐI KHÔNG giải trọn vẹn ra đáp số cuối cùng thay học sinh. Hãy tóm tắt ngắn gọn PHƯƠNG PHÁP GIẢI (2 - 3 bước) và gợi ý cách đặt phép tính để học sinh tự làm.
+3. TUYỆT ĐỐI KHÔNG HỎI NGƯỢC LẠI NGƯỜI HỎI:
+   - Nghiêm cấm đặt các câu hỏi vặn ngược như: "Em có biết...?", "Đề bài cho gì vậy em?", "Em hãy cho Thầy biết...", "Em tính ra bao nhiêu?", "Đến lượt em nhé...".
+   - Luôn đưa ra lời chỉ dẫn dứt khoát, rõ ràng: "Bước 1: ...", "Bước 2: ...", "Áp dụng công thức: ...".
+4. ĐỊNH DẠNG CÔNG THỨC TOÁN BẮT BUỘC DÙNG LATEX/KATEX:
+   - Công thức nội dòng: kẹp giữa $ ... $ (Ví dụ: $S = a \\cdot b$, $x^2 - 4x + 3 = 0$).
+   - Công thức hiển thị khối riêng biệt: kẹp giữa $$ ... $$.`;
 
 export async function POST(req: NextRequest) {
   try {
@@ -115,33 +104,25 @@ export async function POST(req: NextRequest) {
       const k = kbMatchResult.match;
 
       if (k) {
-        // Có bài học chuẩn trong kho tri thức SGK -> Dẫn dắt theo phương pháp Socratic
+        // Trả lời thẳng vào trọng tâm, tóm gọn ý chính, nêu phương pháp giải, KHÔNG hỏi ngược
         const stepsBlock = k.standardSteps && k.standardSteps.length > 0
-          ? "\n#### 📌 Các bước áp dụng chuẩn:\n" + k.standardSteps.map((s, idx) => `${idx + 1}. ${s}`).join("\n") + "\n"
+          ? "\n\n📌 **Phương pháp giải & Các bước áp dụng:**\n" + k.standardSteps.map((s, idx) => `${idx + 1}. ${s}`).join("\n")
           : "";
 
-        responseText = `Chào em! Thầy rất vui cùng em tìm hiểu bài toán về **${k.topic}**! 🎯
+        responseText = `### 📖 ${k.topic}
 
-💡 **Bước 1: Nhận diện giả thiết & kết luận**
-Trước khi tính toán, em hãy quan sát kỹ đề bài:
-- Bài toán đã cho biết những đại lượng hoặc số liệu nào rồi?
-- Yêu cầu của bài toán là cần tính hoặc chứng minh điều gì?
+**1. Kiến thức & Công thức cốt lõi:**
+${k.officialContent}${stepsBlock}
 
-📖 **Bước 2: Gợi nhớ kiến thức trọng tâm (*${k.sourceName}*)**
-${k.officialContent}
-${stepsBlock}
-🎯 **Bước 3: Đến lượt em thực hành nhé!**
-Em hãy thử chia sẻ xem đề bài cụ thể của em có các số liệu bằng bao nhiêu? Hãy nhắn lại cho Thầy để Thầy cùng em giải từng bước nhỏ nhé! 💪`;
+*(Nguồn chuẩn: ${k.sourceName})*`;
       } else {
-        // Chưa có bài học khớp trực tiếp -> Khung gợi mở Socratic phổ quát
-        responseText = `Chào em! Thầy đã nhận được câu hỏi toán học của em:
-*"${latestUserMessage.content}"*
+        // Nếu là bài toán cụ thể chưa có trong CSDL: Nêu phương pháp giải & các bước tiếp cận, không hỏi ngược
+        responseText = `**Phương pháp giải bài toán:**
 
-🎯 **Để Thầy cùng em từng bước tìm ra hướng giải quyết, em hãy cho Thầy biết 2 dữ kiện nhỏ trước nhé:**
-1. **Giả thiết:** Đề bài của em đã cho biết những số liệu hoặc dữ kiện ban đầu nào?
-2. **Yêu cầu:** Bài toán đang yêu cầu em tính hay chứng minh điều gì?
-
-Em hãy nhắn lại 2 thông tin trên (hoặc gõ rõ đề bài toán), Thầy sẽ gợi nhắc công thức phù hợp và hướng dẫn em giải từng bước nhé! 🌟`;
+1. **Xác định đại lượng:** Nhận diện các dữ kiện đã cho và đại lượng cần tìm trong bài toán.
+2. **Quy đổi đơn vị:** Đưa tất cả kích thước hoặc số liệu về cùng một đơn vị đo hợp chuẩn.
+3. **Áp dụng công thức:** Thiết lập biểu thức toán học hoặc phương trình liên hệ giữa các đại lượng.
+4. **Thực hiện phép tính & Đối chiếu:** Thay số vào công thức để tính toán và đối chiếu với điều kiện bài toán.`;
       }
     }
 

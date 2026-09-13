@@ -29,11 +29,10 @@ export interface ChatMessage {
 
 const INITIAL_GREETING: ChatMessage = {
   role: "assistant",
-  content: `Chào em! Thầy là **Gia sư Toán học AI** đồng hành cùng em theo chương trình GDPT 2018.
+  content: `Chào em! Thầy là **Gia sư Toán học AI**.
+Thầy sẽ tóm lược **công thức cốt lõi** và **phương pháp giải bài toán** giúp em nắm chắc kiến thức và tự tin giải bài.
 
-🎯 **Phương châm học tập:** Thầy sẽ **không giải hộ hay cho ngay đáp án**, mà sẽ cùng em phân tích đề bài, gợi ý công thức và hướng dẫn từng bước nhỏ để em tự mình chinh phục bài toán!
-
-Em đang gặp khó khăn ở bài toán hay chuyên đề nào? Hãy gửi đề bài cho Thầy nhé!`,
+Em hãy gửi bài toán hoặc công thức cần tra cứu nhé!`,
   timestamp: new Date().toISOString(),
 };
 

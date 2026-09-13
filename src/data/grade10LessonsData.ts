@@ -7369,6 +7369,114 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Đo chiều cao tháp truyền hình và khoảng cách qua hồ nước",
   "scenarioFrames": [],
   "interactiveType": "geometry",
+  "youtubeVideoId": "4rXeqdVy20k",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 6 - Hệ thức lượng trong tam giác (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "4rXeqdVy20k",
+      "title": "Tiết 1: Định lý Cosin & Hệ quả tính góc của tam giác"
+    },
+    {
+      "id": "ohB2309RBlQ",
+      "title": "Tiết 2: Công thức độ dài đường trung tuyến của tam giác"
+    },
+    {
+      "id": "j1wxq0uMblQ",
+      "title": "Tiết 3: Định lý Sin & Tính bán kính đường tròn ngoại tiếp R"
+    },
+    {
+      "id": "SHM5fZEGK54",
+      "title": "Tiết 4: Các công thức tính diện tích tam giác & Công thức Heron"
+    },
+    {
+      "id": "6_Zz6_MTPhQ",
+      "title": "Tiết 5: Giải tam giác & Ứng dụng đo đạc thực tế (khoảng cách, chiều cao)"
+    },
+    {
+      "id": "pvaua9QDz1c",
+      "title": "Tiết 6: Chữa chi tiết toàn bộ bài tập SGK Toán 10 KNTT Bài 6"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.6.1",
+      "title": "Ví dụ 1 (Tiết 1): Áp dụng định lý Cosin tính cạnh tam giác",
+      "question": "Cho tam giác $ABC$ có $b = 8$, $c = 5$ và $\\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
+      "options": [
+        "$7$",
+        "$\\sqrt{89}$",
+        "$6$",
+        "$3\\sqrt{5}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc \\cos A = 8^2 + 5^2 - 2 \\cdot 8 \\cdot 5 \\cdot \\cos 60^\\circ = 64 + 25 - 80 \\cdot \\frac{1}{2} = 49 \\Rightarrow a = 7$."
+    },
+    {
+      "id": "vq-10.6.2",
+      "title": "Ví dụ 2 (Tiết 2): Tính độ dài đường trung tuyến kẻ từ đỉnh A",
+      "question": "Cho tam giác $ABC$ có $a = 6$, $b = 8$, $c = 10$. Độ dài đường trung tuyến $m_a$ kẻ từ đỉnh $A$ bằng:",
+      "options": [
+        "$\\sqrt{73}$",
+        "$5$",
+        "$7$",
+        "$\\sqrt{65}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng công thức đường trung tuyến: $m_a^2 = \\frac{2(b^2 + c^2) - a^2}{4} = \\frac{2(64 + 100) - 36}{4} = \\frac{2(164) - 36}{4} = \\frac{328 - 36}{4} = \\frac{292}{4} = 73 \\Rightarrow m_a = \\sqrt{73}$."
+    },
+    {
+      "id": "vq-10.6.3",
+      "title": "Ví dụ 3 (Tiết 3): Định lý Sin và bán kính ngoại tiếp R",
+      "question": "Cho tam giác $ABC$ có $a = 10$ và $\\widehat{A} = 30^\\circ$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ là:",
+      "options": [
+        "$10$",
+        "$5$",
+        "$20$",
+        "$10\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Sin: $\\frac{a}{\\sin A} = 2R \\Rightarrow R = \\frac{a}{2\\sin A} = \\frac{10}{2\\sin 30^\\circ} = \\frac{10}{2 \\cdot \\frac{1}{2}} = 10$."
+    },
+    {
+      "id": "vq-10.6.4",
+      "title": "Ví dụ 4 (Tiết 4): Tính diện tích tam giác theo công thức sin",
+      "question": "Cho tam giác $ABC$ có $AB = 6$, $AC = 8$ và $\\widehat{A} = 30^\\circ$. Diện tích của tam giác $ABC$ là:",
+      "options": [
+        "$12$",
+        "$24$",
+        "$12\\sqrt{3}$",
+        "$6\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích tam giác: $S = \\frac{1}{2} AB \\cdot AC \\cdot \\sin A = \\frac{1}{2} \\cdot 6 \\cdot 8 \\cdot \\sin 30^\\circ = 24 \\cdot \\frac{1}{2} = 12$."
+    },
+    {
+      "id": "vq-10.6.5",
+      "title": "Ví dụ 5 (Tiết 5): Đo khoảng cách không đến được trong thực tế",
+      "question": "Hai điểm $A$ và $B$ cách nhau một đầm lầy. Từ điểm $C$ nhìn thấy hai điểm $A$ và $B$ dưới góc $\\widehat{ACB} = 60^\\circ$, đồng thời đo được $CA = 40\\text{ m}$, $CB = 60\\text{ m}$. Khoảng cách $AB$ xấp xỉ bằng:",
+      "options": [
+        "$52{,}9\\text{ m}$",
+        "$50\\text{ m}$",
+        "$55{,}5\\text{ m}$",
+        "$62{,}3\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng định lý Cosin trong tam giác $ABC$:\n$AB^2 = CA^2 + CB^2 - 2 \\cdot CA \\cdot CB \\cdot \\cos C = 40^2 + 60^2 - 2 \\cdot 40 \\cdot 60 \\cdot \\cos 60^\\circ = 1600 + 3600 - 4800 \\cdot 0{,}5 = 5200 - 2400 = 2800$.\nSuy ra $AB = \\sqrt{2800} = 20\\sqrt{7} \\approx 52{,}915\\text{ m}$."
+    },
+    {
+      "id": "vq-10.6.6",
+      "title": "Ví dụ 6 (Tiết 6): Tính bán kính đường tròn nội tiếp r",
+      "question": "Cho tam giác có ba cạnh là $5$, $6$, $7$. Bán kính $r$ của đường tròn nội tiếp tam giác bằng:",
+      "options": [
+        "$\\frac{2\\sqrt{6}}{3}$",
+        "$\\frac{\\sqrt{6}}{3}$",
+        "$\\sqrt{6}$",
+        "$2\\sqrt{6}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa chu vi $p = \\frac{5 + 6 + 7}{2} = 9$.\nDiện tích Heron: $S = \\sqrt{9(9 - 5)(9 - 6)(9 - 7)} = \\sqrt{9 \\cdot 4 \\cdot 3 \\cdot 2} = \\sqrt{216} = 6\\sqrt{6}$.\nBán kính nội tiếp: $r = \\frac{S}{p} = \\frac{6\\sqrt{6}}{9} = \\frac{2\\sqrt{6}}{3}$."
+    }
+  ],
   "tips": [
     "Mẹo chọn định lý Cosin hay Sin: Biết 2 cạnh và góc kẹp giữa (c-g-c) hoặc 3 cạnh (c-c-c) -> dùng ĐỊNH LÝ COSIN. Biết 1 cạnh và 2 góc (g-c-g) hoặc 2 cạnh và 1 góc đối diện -> dùng ĐỊNH LÝ SIN.",
     "Mẹo tính bán kính đường tròn ngoại tiếp R: Luôn dùng định lý Sin: R = a / (2 sin A).",

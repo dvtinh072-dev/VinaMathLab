@@ -14,11 +14,16 @@ import {
   Minimize2,
   RotateCcw,
   BookOpen,
+  Settings,
+  Key,
+  Check,
+  ExternalLink,
 } from "lucide-react";
 
 export interface ChatMessage {
   role: "user" | "assistant";
   content: string;
+  provider?: string;
   timestamp: string;
 }
 
@@ -33,21 +38,34 @@ Em đang gặp khó khăn ở bài toán hay chuyên đề nào? Hãy gửi đ�
 };
 
 const SUGGESTIONS = [
+  "Công thức tính diện tích hình chữ nhật",
   "Giải phương trình: $x^2 - 5x + 6 = 0$",
   "Nhắc lại Định lý Côsin trong tam giác",
   "Cách tính số trung bình ghép nhóm Lớp 11",
-  "Tìm giá trị lớn nhất của hàm số",
 ];
 
 export default function MathChatBox() {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [showConfig, setShowConfig] = useState(false);
+  const [geminiKey, setGeminiKey] = useState("");
+  const [keyInput, setKeyInput] = useState("");
+  const [isSavedKey, setIsSavedKey] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([INITIAL_GREETING]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  // Khởi tạo đọc API Key từ localStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("vina_gemini_api_key") || "";
+      setGeminiKey(saved);
+      setKeyInput(saved);
+    }
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -59,6 +77,31 @@ export default function MathChatBox() {
       setTimeout(() => inputRef.current?.focus(), 150);
     }
   }, [isOpen, messages, isLoading]);
+
+  const handleSaveKey = async () => {
+    const trimmed = keyInput.trim();
+    setGeminiKey(trimmed);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("vina_gemini_api_key", trimmed);
+    }
+    // Gửi lưu đồng bộ lên Supabase nếu là admin
+    try {
+      await fetch("/api/ai/config", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          geminiApiKey: trimmed,
+          provider: trimmed ? "gemini" : "internal",
+        }),
+      });
+    } catch {}
+
+    setIsSavedKey(true);
+    setTimeout(() => {
+      setIsSavedKey(false);
+      setShowConfig(false);
+    }, 1200);
+  };
 
   const handleSend = async (textToSend?: string) => {
     const text = (textToSend || input).trim();
@@ -78,8 +121,12 @@ export default function MathChatBox() {
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-gemini-key": geminiKey,
+        },
         body: JSON.stringify({
+          apiKey: geminiKey,
           messages: nextMessages.map((m) => ({
             role: m.role,
             content: m.content,
@@ -95,6 +142,7 @@ export default function MathChatBox() {
       const assistantMessage: ChatMessage = {
         role: "assistant",
         content: replyContent,
+        provider: data.provider,
         timestamp: new Date().toISOString(),
       };
 
@@ -136,14 +184,14 @@ export default function MathChatBox() {
       {/* KHUNG CHAT (CHAT WINDOW) */}
       {isOpen && (
         <div
-          className={`mb-3 rounded-3xl bg-slate-900/95 backdrop-blur-md border-2 border-indigo-500/40 shadow-2xl overflow-hidden flex flex-col transition-all duration-200 animate-in zoom-in-95 ${
+          className={`mb-3 rounded-3xl bg-slate-950/95 dark:bg-slate-900/95 backdrop-blur-md border-2 border-indigo-500/40 shadow-2xl overflow-hidden flex flex-col transition-all duration-200 animate-in zoom-in-95 ${
             isExpanded
-              ? "w-[94vw] sm:w-[600px] h-[85vh] max-h-[750px]"
-              : "w-[92vw] sm:w-[420px] h-[540px] max-h-[78vh]"
+              ? "w-[94vw] sm:w-[620px] h-[86vh] max-h-[760px]"
+              : "w-[92vw] sm:w-[430px] h-[550px] max-h-[78vh]"
           }`}
         >
           {/* HEADER */}
-          <div className="p-3.5 sm:p-4 bg-gradient-to-r from-indigo-950 via-slate-900 to-violet-950 border-b border-indigo-500/30 flex items-center justify-between">
+          <div className="p-3 sm:p-4 bg-gradient-to-r from-indigo-900 via-slate-900 to-violet-950 border-b border-indigo-500/30 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <div className="relative">
                 <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-500 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/30">
@@ -157,7 +205,7 @@ export default function MathChatBox() {
                     Gia Sư Toán Học AI
                   </h3>
                   <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[9px] font-black uppercase">
-                    Socratic
+                    {geminiKey ? "✨ Gemini Active" : "📚 Socratic SGK"}
                   </span>
                 </div>
                 <p className="text-[10px] text-slate-300 flex items-center gap-1">
@@ -169,6 +217,17 @@ export default function MathChatBox() {
 
             {/* Các nút hành động header */}
             <div className="flex items-center gap-1 text-slate-400">
+              <button
+                onClick={() => setShowConfig(!showConfig)}
+                title="Cài đặt API Key Gemini"
+                className={`p-1.5 rounded-xl transition ${
+                  showConfig || geminiKey
+                    ? "text-cyan-400 bg-cyan-950/50 border border-cyan-500/40"
+                    : "hover:text-white hover:bg-slate-800"
+                }`}
+              >
+                <Settings className="w-4 h-4" />
+              </button>
               <button
                 onClick={handleReset}
                 title="Làm mới trò chuyện"
@@ -197,8 +256,48 @@ export default function MathChatBox() {
             </div>
           </div>
 
+          {/* HỘP THOẠI CÀI ĐẶT API KEY (SETTINGS DRAWER) */}
+          {showConfig && (
+            <div className="p-3 bg-slate-900 border-b border-indigo-500/30 text-xs space-y-2 animate-in slide-in-from-top-2">
+              <div className="flex items-center justify-between text-indigo-300 font-bold">
+                <div className="flex items-center gap-1.5">
+                  <Key className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Cấu hình Google Gemini API Key</span>
+                </div>
+                <a
+                  href="https://aistudio.google.com/app/apikey"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[10px] text-cyan-400 hover:underline flex items-center gap-0.5"
+                >
+                  <span>Lấy key miễn phí</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <input
+                  type="password"
+                  value={keyInput}
+                  onChange={(e) => setKeyInput(e.target.value)}
+                  placeholder="Dán AI Studio API Key (AIzaSy...)"
+                  className="flex-1 bg-slate-950 border border-slate-700 rounded-xl px-2.5 py-1.5 text-slate-100 text-xs outline-none focus:border-cyan-400"
+                />
+                <button
+                  onClick={handleSaveKey}
+                  className="px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs flex items-center gap-1 transition shrink-0"
+                >
+                  {isSavedKey ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : null}
+                  <span>{isSavedKey ? "Đã Lưu!" : "Lưu Key"}</span>
+                </button>
+              </div>
+              <p className="text-[10px] text-slate-400">
+                Key được lưu an toàn trên trình duyệt và tự động kích hoạt trí tuệ nhân tạo Gemini 1.5 Flash.
+              </p>
+            </div>
+          )}
+
           {/* DANH SÁCH TIN NHẮN */}
-          <div className="flex-1 p-3.5 sm:p-4 overflow-y-auto space-y-3.5 text-xs sm:text-sm">
+          <div className="flex-1 p-3.5 sm:p-4 overflow-y-auto space-y-3.5 text-xs sm:text-sm bg-slate-950/50">
             {messages.map((m, idx) => {
               const isUser = m.role === "user";
               return (
@@ -215,14 +314,14 @@ export default function MathChatBox() {
                   )}
 
                   <div
-                    className={`max-w-[85%] rounded-2xl p-3 leading-relaxed shadow-sm ${
+                    className={`max-w-[85%] rounded-2xl p-3 sm:p-3.5 leading-relaxed shadow-sm ${
                       isUser
                         ? "bg-indigo-600 text-white rounded-tr-sm font-medium"
-                        : "bg-slate-800/90 border border-slate-700/80 text-slate-100 rounded-tl-sm"
+                        : "bg-slate-900 border border-slate-700/80 text-slate-100 rounded-tl-sm"
                     }`}
                   >
                     {!isUser ? (
-                      <div className="prose prose-sm dark:prose-invert max-w-none break-words text-slate-100 text-xs sm:text-[13px] leading-relaxed">
+                      <div className="prose prose-sm dark:prose-invert max-w-none break-words text-slate-100 [&_p]:text-slate-100 [&_strong]:text-cyan-300 [&_li]:text-slate-200 [&_h1]:text-white [&_h2]:text-white [&_h3]:text-white [&_h4]:text-amber-300 text-xs sm:text-[13px] leading-relaxed">
                         <ReactMarkdown
                           remarkPlugins={[remarkMath]}
                           rehypePlugins={[rehypeKatex]}
@@ -231,7 +330,7 @@ export default function MathChatBox() {
                         </ReactMarkdown>
                       </div>
                     ) : (
-                      <div className="whitespace-pre-wrap break-words text-xs sm:text-[13px]">
+                      <div className="whitespace-pre-wrap break-words text-xs sm:text-[13px] text-white">
                         {m.content}
                       </div>
                     )}
@@ -246,7 +345,7 @@ export default function MathChatBox() {
                 <div className="w-7 h-7 rounded-xl bg-indigo-500/20 border border-indigo-500/40 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5">
                   <GraduationCap className="w-4 h-4" />
                 </div>
-                <div className="bg-slate-800/90 border border-slate-700/80 rounded-2xl rounded-tl-sm px-4 py-2.5 text-slate-300">
+                <div className="bg-slate-900 border border-slate-700/80 rounded-2xl rounded-tl-sm px-4 py-2.5 text-slate-300">
                   <div className="flex items-center gap-1.5">
                     <span
                       className="w-2 h-2 rounded-full bg-indigo-400 animate-bounce"
@@ -273,7 +372,7 @@ export default function MathChatBox() {
 
           {/* GỢI Ý CÂU HỎI NHANH */}
           {messages.length <= 2 && (
-            <div className="px-3.5 pb-2">
+            <div className="px-3.5 pb-2 bg-slate-950/80">
               <div className="text-[10px] font-black text-slate-400 flex items-center gap-1 mb-1.5 uppercase">
                 <BookOpen className="w-3 h-3 text-indigo-400" />
                 <span>Gợi ý chủ đề nhanh:</span>
@@ -284,7 +383,7 @@ export default function MathChatBox() {
                     key={sIdx}
                     onClick={() => handleSend(sug)}
                     disabled={isLoading}
-                    className="px-2.5 py-1 rounded-xl bg-slate-800/80 hover:bg-indigo-600/30 border border-slate-700/60 hover:border-indigo-500/50 text-[11px] text-slate-300 hover:text-indigo-200 transition text-left"
+                    className="px-2.5 py-1 rounded-xl bg-slate-900 hover:bg-indigo-600/40 border border-slate-800 hover:border-indigo-500/50 text-[11px] text-slate-300 hover:text-indigo-200 transition text-left"
                   >
                     {sug}
                   </button>
@@ -294,7 +393,7 @@ export default function MathChatBox() {
           )}
 
           {/* KHUNG NHẬP LIỆU (INPUT BOX) */}
-          <div className="p-3 bg-slate-950/80 border-t border-slate-800">
+          <div className="p-3 bg-slate-950 border-t border-slate-800">
             <div className="relative flex items-end gap-2 bg-slate-900 border border-slate-700/80 rounded-2xl p-1.5 focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500/50 transition">
               <textarea
                 ref={inputRef}
@@ -341,7 +440,7 @@ export default function MathChatBox() {
             Gia Sư Toán AI
           </span>
           <span className="hidden sm:inline-block px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-bold">
-            Socratic
+            {geminiKey ? "Gemini" : "Socratic"}
           </span>
         </button>
       )}

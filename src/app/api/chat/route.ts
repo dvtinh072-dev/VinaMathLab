@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getAiConfiguration } from "@/lib/geminiChatService";
+import { queryEducationalKnowledgeBase } from "@/data/educationalKnowledgeBase";
 
 const SOCRATIC_MATH_TUTOR_PROMPT = `Bạn là một "Gia sư Toán học AI" (Socratic Math Tutor) tận tâm, kiên nhẫn và giàu kinh nghiệm sư phạm, chuyên hướng dẫn học sinh THCS và THPT Việt Nam (từ Lớp 6 đến Lớp 12) theo chương trình GDPT 2018 (sách Kết nối tri thức, Cánh diều, Chân trời sáng tạo).
 
@@ -32,7 +33,7 @@ const SOCRATIC_MATH_TUTOR_PROMPT = `Bạn là một "Gia sư Toán học AI" (So
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { messages, message } = body;
+    const { messages, message, apiKey: clientBodyKey } = body;
 
     // Chuẩn hoá danh sách tin nhắn
     let chatHistory: Array<{ role: "user" | "assistant"; content: string }> = [];
@@ -56,54 +57,95 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Đọc API Key từ biến môi trường hoặc cấu hình hệ thống
+    // 1. Xác định API Key từ nhiều nguồn: Client gửi lên -> Biến môi trường -> Supabase
+    const headerKey = req.headers.get("x-gemini-key") || "";
     const systemConfig = await getAiConfiguration();
-    const apiKey = process.env.GEMINI_API_KEY || systemConfig.geminiApiKey;
+    const apiKey =
+      (clientBodyKey && clientBodyKey.trim()) ||
+      (headerKey && headerKey.trim()) ||
+      process.env.GEMINI_API_KEY ||
+      systemConfig.geminiApiKey ||
+      "";
 
-    if (!apiKey) {
-      return NextResponse.json({
-        reply:
-          "Chào em! Hiện tại hệ thống chưa cấu hình biến môi trường `GEMINI_API_KEY`. Thầy/Cô quản trị vui lòng cấu hình API Key trong file `.env.local` hoặc tại trang Quản trị `/admin` để kích hoạt Gia sư Toán học AI nhé!",
-      });
+    let responseText = "";
+    let providerSource = "Socratic SGK Engine";
+
+    // 2. Thử gọi mô hình Gemini nếu có API Key
+    if (apiKey) {
+      try {
+        const genAI = new GoogleGenerativeAI(apiKey);
+        const model = genAI.getGenerativeModel({
+          model: "gemini-1.5-flash",
+          systemInstruction: SOCRATIC_MATH_TUTOR_PROMPT,
+        });
+
+        const priorMessages = chatHistory.slice(0, -1);
+        const formattedHistory: Array<{ role: "user" | "model"; parts: [{ text: string }] }> = [];
+        for (const msg of priorMessages) {
+          if (!msg.content || typeof msg.content !== "string") continue;
+          formattedHistory.push({
+            role: msg.role === "assistant" ? "model" : "user",
+            parts: [{ text: msg.content }],
+          });
+        }
+
+        while (formattedHistory.length > 0 && formattedHistory[0].role !== "user") {
+          formattedHistory.shift();
+        }
+
+        const chat = model.startChat({
+          history: formattedHistory,
+          generationConfig: {
+            temperature: 0.3,
+            maxOutputTokens: 1000,
+          },
+        });
+
+        const result = await chat.sendMessage(latestUserMessage.content);
+        responseText = result.response.text();
+        providerSource = "Gemini 1.5 Flash + Socratic";
+      } catch (geminiError: any) {
+        console.warn("Gemini API call failed, falling back to Socratic SGK Engine:", geminiError?.message);
+      }
     }
 
-    // Khởi tạo Google Generative AI
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
-      systemInstruction: SOCRATIC_MATH_TUTOR_PROMPT,
-    });
+    // 3. NẾU CHƯA CÓ KEY HOẶC GEMINI GẶP SỰ CỐ: Dùng bộ máy tri thức sư phạm chuẩn SGK (Socratic Engine)
+    if (!responseText) {
+      const kbMatchResult = queryEducationalKnowledgeBase(latestUserMessage.content);
+      const k = kbMatchResult.match;
 
-    // Chuẩn bị lịch sử hội thoại cho Gemini (bỏ qua tin nhắn cuối vì sẽ gửi qua sendMessage)
-    const priorMessages = chatHistory.slice(0, -1);
-    
-    // Đảm bảo cấu trúc role đan xen user -> model -> user...
-    const formattedHistory: Array<{ role: "user" | "model"; parts: [{ text: string }] }> = [];
-    for (const msg of priorMessages) {
-      if (!msg.content || typeof msg.content !== "string") continue;
-      formattedHistory.push({
-        role: msg.role === "assistant" ? "model" : "user",
-        parts: [{ text: msg.content }],
-      });
+      if (k) {
+        // Có bài học chuẩn trong kho tri thức SGK -> Dẫn dắt theo phương pháp Socratic
+        const stepsBlock = k.standardSteps && k.standardSteps.length > 0
+          ? "\n#### 📌 Các bước áp dụng chuẩn:\n" + k.standardSteps.map((s, idx) => `${idx + 1}. ${s}`).join("\n") + "\n"
+          : "";
+
+        responseText = `Chào em! Thầy rất vui cùng em tìm hiểu bài toán về **${k.topic}**! 🎯
+
+💡 **Bước 1: Nhận diện giả thiết & kết luận**
+Trước khi tính toán, em hãy quan sát kỹ đề bài:
+- Bài toán đã cho biết những đại lượng hoặc số liệu nào rồi?
+- Yêu cầu của bài toán là cần tính hoặc chứng minh điều gì?
+
+📖 **Bước 2: Gợi nhớ kiến thức trọng tâm (*${k.sourceName}*)**
+${k.officialContent}
+${stepsBlock}
+🎯 **Bước 3: Đến lượt em thực hành nhé!**
+Em hãy thử chia sẻ xem đề bài cụ thể của em có các số liệu bằng bao nhiêu? Hãy nhắn lại cho Thầy để Thầy cùng em giải từng bước nhỏ nhé! 💪`;
+      } else {
+        // Chưa có bài học khớp trực tiếp -> Khung gợi mở Socratic phổ quát
+        responseText = `Chào em! Thầy đã nhận được câu hỏi toán học của em:
+*"${latestUserMessage.content}"*
+
+🎯 **Để Thầy cùng em từng bước tìm ra hướng giải quyết, em hãy cho Thầy biết 2 dữ kiện nhỏ trước nhé:**
+1. **Giả thiết:** Đề bài của em đã cho biết những số liệu hoặc dữ kiện ban đầu nào?
+2. **Yêu cầu:** Bài toán đang yêu cầu em tính hay chứng minh điều gì?
+
+Em hãy nhắn lại 2 thông tin trên (hoặc gõ rõ đề bài toán), Thầy sẽ gợi nhắc công thức phù hợp và hướng dẫn em giải từng bước nhé! 🌟`;
+      }
     }
 
-    // Đảm bảo tin nhắn đầu tiên trong history là của user (nếu có history)
-    while (formattedHistory.length > 0 && formattedHistory[0].role !== "user") {
-      formattedHistory.shift();
-    }
-
-    const chat = model.startChat({
-      history: formattedHistory,
-      generationConfig: {
-        temperature: 0.3,
-        maxOutputTokens: 1000,
-      },
-    });
-
-    const result = await chat.sendMessage(latestUserMessage.content);
-    const responseText = result.response.text();
-
-    // Đồng bộ nhật ký hỏi đáp lên Supabase Cloud để Thầy/Cô quản trị theo dõi chất lượng
+    // 4. Đồng bộ nhật ký hỏi đáp lên Supabase Cloud để Thầy/Cô quản trị theo dõi chất lượng
     try {
       const { supabase } = await import("@/lib/supabaseClient");
       const { data: cloudData } = await supabase
@@ -126,13 +168,13 @@ export async function POST(req: NextRequest) {
         answer: responseText,
         sources: [
           {
-            title: "Gia sư Socratic AI (Gemini 1.5 Flash)",
+            title: `Gia sư Socratic AI (${providerSource})`,
             citation: "Phương pháp Socratic & GDPT 2018 Bộ Giáo dục và Đào tạo",
             url: "https://moet.gov.vn",
           },
         ],
         isAnsweredFromKnowledge: true,
-        aiProvider: "Gemini + SGK",
+        aiProvider: apiKey ? "Gemini + SGK" : "Học liệu SGK chuẩn",
         timestamp: new Date().toISOString(),
       });
 
@@ -152,15 +194,16 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       reply: responseText,
+      provider: providerSource,
     });
   } catch (error: any) {
     console.error("Lỗi Gia sư Toán AI (app/api/chat/route.ts):", error);
     return NextResponse.json(
       {
         reply:
-          "Rất tiếc, Gia sư AI đang gặp chút sự cố kết nối với hệ thống AI (" +
+          "Rất tiếc, Gia sư AI đang gặp chút sự cố kết nối (" +
           (error?.message || "Lỗi không xác định") +
-          "). Em vui lòng thử lại sau ít giây nhé!",
+          "). Em vui lòng gửi lại câu hỏi nhé!",
       },
       { status: 200 }
     );

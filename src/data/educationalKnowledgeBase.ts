@@ -128,6 +128,74 @@ export const EDUCATIONAL_KNOWLEDGE_BASE: KnowledgeItem[] = [
     sourceCitation: "Sách giáo khoa Toán 6 (Tập 1), Chương III: Số nguyên, NXB Giáo Dục Việt Nam."
   },
 
+  {
+    id: "kb-t6-chu-vi-dien-tich-hinh-phang",
+    keywords: [
+      "dien tich hinh chu nhat",
+      "chu vi hinh chu nhat",
+      "hinh chu nhat",
+      "dien tich hinh vuong",
+      "chu vi hinh vuong",
+      "hinh vuong",
+      "dien tich hinh thang",
+      "chu vi hinh thang",
+      "hinh thang",
+      "dien tich hinh thoi",
+      "hinh thoi",
+      "dien tich hinh binh hanh",
+      "hinh binh hanh",
+      "dien tich hinh tron",
+      "chu vi hinh tron",
+      "chu vi va dien tich",
+      "dien tich",
+      "chu vi",
+      "hinh hoc truc quan"
+    ],
+    topic: "Chu vi và Diện tích các hình phẳng cơ bản (Hình chữ nhật, hình vuông, hình thang, hình thoi, hình bình hành)",
+    grade: 6,
+    questionVariants: [
+      "công thức tính diện tích hình chữ nhật",
+      "tính diện tích hình chữ nhật",
+      "công tính diện tích hình chữ nhật",
+      "diện tích hình chữ nhật",
+      "chu vi hình chữ nhật",
+      "công thức tính chu vi hình chữ nhật",
+      "công thức tính diện tích hình vuông",
+      "tính diện tích hình vuông",
+      "diện tích hình vuông",
+      "công thức tính diện tích hình thang",
+      "tính diện tích hình thang",
+      "công thức tính diện tích hình thoi",
+      "công thức tính diện tích hình bình hành"
+    ],
+    summary: "Công thức tính chu vi và diện tích các hình phẳng: hình chữ nhật, hình vuông, hình thang, hình thoi, hình bình hành theo SGK Toán 6.",
+    officialContent: `1. **Hình chữ nhật (chiều dài $a$, chiều rộng $b$ cùng đơn vị đo):**
+- **Chu vi:** $C = (a + b) \\cdot 2$
+- **Diện tích:** $S = a \\cdot b$ (Chiều dài nhân chiều rộng)
+
+2. **Hình vuông (cạnh $a$):**
+- **Chu vi:** $C = 4a$
+- **Diện tích:** $S = a^2$ (Cạnh nhân cạnh)
+
+3. **Hình thang (đáy lớn $a$, đáy bé $b$, chiều cao $h$):**
+- **Diện tích:** $S = \\frac{(a + b) \\cdot h}{2}$ (Tổng hai đáy nhân chiều cao rồi chia 2)
+
+4. **Hình thoi (hai đường chéo $d_1, d_2$):**
+- **Diện tích:** $S = \\frac{1}{2} d_1 \\cdot d_2$ (Tích hai đường chéo chia 2)
+
+5. **Hình bình hành (đáy $a$, chiều cao $h$):**
+- **Diện tích:** $S = a \\cdot h$ (Độ dài đáy nhân chiều cao)`,
+    formulaLatex: "S_{\\text{HCN}} = a \\cdot b, \\ S_{\\text{HV}} = a^2, \\ S_{\\text{Hình thang}} = \\frac{(a+b)h}{2}",
+    standardSteps: [
+      "Bước 1: Xác định đúng hình phẳng và các kích thước bài toán đã cho.",
+      "Bước 2: Đổi các kích thước về cùng một đơn vị đo (ví dụ: cùng là cm hoặc m).",
+      "Bước 3: Thay số vào công thức diện tích tương ứng và ghi rõ đơn vị đo diện tích (cm², m²...)."
+    ],
+    sourceName: "SGK Toán 6 (Tập 1) - Bộ sách Kết nối tri thức với cuộc sống",
+    sourceUrl: "https://hanhtrangso.nxbgd.vn",
+    sourceCitation: "Sách giáo khoa Toán 6 (Tập 1), Chương III: Hình học trực quan, Bài 11: Chu vi và diện tích của một số hình phẳng trong thực tiễn (Trang 89 - 94), NXB Giáo Dục Việt Nam."
+  },
+
   // =================== TOÁN 7 ===================
   {
     id: "kb-t7-so-huu-ti",

@@ -8,6 +8,7 @@ import { AuthModal } from "@/components/auth/AuthModal";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { VinaAiChatWidget } from "@/components/ai/VinaAiChatWidget";
+import MathChatBox from "@/components/MathChatBox";
 
 const inter = Inter({
   subsets: ["latin", "vietnamese"],
@@ -69,6 +70,7 @@ export default function RootLayout({
             <Footer />
             <AuthModal />
             <VinaAiChatWidget />
+            <MathChatBox />
           </AuthProvider>
         </ThemeProvider>
       </body>

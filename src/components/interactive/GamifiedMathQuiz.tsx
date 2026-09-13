@@ -86,6 +86,7 @@ export interface QuizQuestion {
   badge?: string;
   isAiGenerated?: boolean;
   source?: string;
+  svgDiagram?: string;
   diagram?: {
     type: GeometryDiagramProps["type"];
     caption?: string;
@@ -4302,6 +4303,14 @@ export function GamifiedMathQuiz({
                     <MathFormattedText text={currentTf.prompt} />
                   </div>
 
+                  {/* Sơ đồ trực quan SVG nếu có */}
+                  {currentTf.svgDiagram && (
+                    <div
+                      className="my-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 flex justify-center shadow-inner overflow-hidden"
+                      dangerouslySetInnerHTML={{ __html: currentTf.svgDiagram }}
+                    />
+                  )}
+
                   {/* Danh sách 4 ý a, b, c, d */}
                   <div className="space-y-3 pt-1">
                     {currentTf.subItems.map((sub) => {
@@ -4758,7 +4767,14 @@ export function GamifiedMathQuiz({
             </h4>
 
             {/* Hình vẽ hình học trực quan nếu có */}
-            {diagramInfo && (
+            {currentQ.svgDiagram && (
+              <div
+                className="my-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 flex justify-center shadow-inner overflow-hidden"
+                dangerouslySetInnerHTML={{ __html: currentQ.svgDiagram }}
+              />
+            )}
+
+            {diagramInfo && !currentQ.svgDiagram && (
               <GeometryDiagram
                 type={diagramInfo.type}
                 caption={diagramInfo.caption}

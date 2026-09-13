@@ -472,10 +472,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Chuyên đề ôn thi Toán 10",
       "question": "Số tập con của một tập hợp có 5 phần tử là:",
       "options": [
-        "10",
-        "16",
-        "32",
-        "25"
+        "$10$",
+        "$16$",
+        "$32$",
+        "$25$"
       ],
       "correctIndex": 2,
       "explanation": "Số tập con của tập hợp có 5 phần tử là $2^5 = 32$.",
@@ -487,10 +487,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề cấu trúc mới Toán 10",
       "question": "Cho tập hợp $M = \\{a, b, c, d, e\\}$. Số tập con gồm đúng 3 phần tử của tập hợp $M$ là:",
       "options": [
-        "10",
-        "15",
-        "20",
-        "5"
+        "$10$",
+        "$15$",
+        "$20$",
+        "$5$"
       ],
       "correctIndex": 0,
       "explanation": "Số tập con gồm 3 phần tử từ 5 phần tử là: $C_5^3 = 10$.",
@@ -592,10 +592,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10 KNTT",
       "question": "Cho hai tập hợp $A = \\{a, b, c, d\\}$ và $B = \\{b, d, e\\}$. Tập hợp $A \\cap B$ có bao nhiêu phần tử?",
       "options": [
-        "1",
-        "2",
-        "3",
-        "5"
+        "$1$",
+        "$2$",
+        "$3$",
+        "$5$"
       ],
       "correctIndex": 1,
       "explanation": "Các phần tử chung là $b$ và $d$, tổng cộng có 2 phần tử.",
@@ -636,10 +636,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "badge": "Thông hiểu - Độ dài của đoạn giao nhau",
       "source": "Bộ đề cấu trúc mới Toán 10",
       "options": [
-        "1",
-        "2",
-        "3",
-        "5"
+        "$1$",
+        "$2$",
+        "$3$",
+        "$5$"
       ],
       "correctIndex": 1,
       "explanation": "$A \\cap B = [2; 4]$. Độ dài là $4 - 2 = 2$.",
@@ -697,10 +697,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SGK Toán 10 KNTT",
       "question": "Một lớp có 45 học sinh, trong đó có 28 bạn thích bơi lội, 20 bạn thích cầu lông, và 12 bạn thích cả hai môn. Hỏi có bao nhiêu bạn không thích môn nào trong hai môn?",
       "options": [
-        "9",
-        "10",
-        "12",
-        "7"
+        "$9$",
+        "$10$",
+        "$12$",
+        "$7$"
       ],
       "correctIndex": 0,
       "explanation": "Số bạn thích ít nhất một môn: $28 + 20 - 12 = 36$. Số bạn không thích môn nào: $45 - 36 = 9$.",
@@ -712,10 +712,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10 KNTT",
       "question": "Khảo sát 60 học sinh, có 35 bạn thích xem phim hoạt hình, 30 bạn thích xem phim khoa học viễn tưởng, và cả 60 bạn đều thích ít nhất một thể loại phim. Có bao nhiêu bạn thích cả hai thể loại?",
       "options": [
-        "5",
-        "8",
-        "10",
-        "12"
+        "$5$",
+        "$8$",
+        "$10$",
+        "$12$"
       ],
       "correctIndex": 0,
       "explanation": "$n(A \\cap B) = 35 + 30 - 60 = 5$ bạn.",
@@ -727,10 +727,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề cấu trúc mới Toán 10",
       "question": "Cho tập hợp $X$ có 7 phần tử và tập hợp $Y$ có 8 phần tử. Biết $X \\cap Y$ có 3 phần tử. Số phần tử của tập hợp $X \\cup Y$ là:",
       "options": [
-        "12",
-        "15",
-        "11",
-        "18"
+        "$12$",
+        "$15$",
+        "$11$",
+        "$18$"
       ],
       "correctIndex": 0,
       "explanation": "$n(X \\cup Y) = 7 + 8 - 3 = 12$.",
@@ -1439,10 +1439,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề khảo sát chất lượng Toán 10",
       "question": "Đường thẳng bờ $2x + 5y = 10$ cùng với hai trục tọa độ $Ox, Oy$ tạo thành một tam giác có diện tích bằng:",
       "options": [
-        "5",
-        "10",
-        "20",
-        "2.5"
+        "$5$",
+        "$10$",
+        "$20$",
+        "$2{,}5$"
       ],
       "correctIndex": 0,
       "explanation": "Giao $Ox$: $(5; 0) \\Rightarrow OA = 5$. Giao $Oy$: $(0; 2) \\Rightarrow OB = 2$. Diện tích $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 5 \\cdot 2 = 5$."
@@ -1453,10 +1453,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề ôn thi học kì Toán 10",
       "question": "Khoảng cách từ gốc tọa độ $O(0; 0)$ đến đường thẳng bờ của bất phương trình $5x - 12y + 26 = 0$ bằng:",
       "options": [
-        "2",
-        "26",
-        "13",
-        "1"
+        "$2$",
+        "$26$",
+        "$13$",
+        "$1$"
       ],
       "correctIndex": 0,
       "explanation": "Khoảng cách $d = \\frac{|26|}{\\sqrt{5^2 + (-12)^2}} = \\frac{26}{13} = 2$."
@@ -1998,10 +1998,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Diện tích miền tam giác nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + 5y \\le 10 \\end{cases}$ bằng:",
       "options": [
-        "5",
-        "10",
-        "2.5",
-        "20"
+        "$5$",
+        "$10$",
+        "$2{,}5$",
+        "$20$"
       ],
       "correctIndex": 0,
       "explanation": "Đường thẳng $2x + 5y = 10$ cắt các trục tại $A(5; 0)$ và $B(0; 2)$. Diện tích tam giác vuông $OAB$ là $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 5 \\cdot 2 = 5$."
@@ -2043,10 +2043,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho miền tứ giác nghiệm có các đỉnh $O(0; 0), A(3; 0), B(2; 3), C(0; 4)$. Giá trị lớn nhất của biểu thức $F(x, y) = 5x + 3y$ trên miền tứ giác này là:",
       "options": [
-        "19",
-        "15",
-        "12",
-        "21"
+        "$19$",
+        "$15$",
+        "$12$",
+        "$21$"
       ],
       "correctIndex": 0,
       "explanation": "Tính giá trị $F(x, y)$ tại các đỉnh:\n$F(0; 0) = 0$;\n$F(3; 0) = 5(3) + 3(0) = 15$;\n$F(2; 3) = 5(2) + 3(3) = 19$;\n$F(0; 4) = 5(0) + 3(4) = 12$.\nGiá trị lớn nhất là 19 tại đỉnh $B(2; 3)$."
@@ -2061,7 +2061,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$-7$",
         "$-6$",
         "$-1$",
-        "5"
+        "$5$"
       ],
       "correctIndex": 0,
       "explanation": "Tính tại 4 đỉnh:\n$F(A) = 2(1) - 3(1) = -1$;\n$F(B) = 2(4) - 3(1) = 5$;\n$F(C) = 2(3) - 3(4) = -6$;\n$F(D) = 2(1) - 3(3) = -7$.\nGiá trị nhỏ nhất là $-7$ tại đỉnh $D(1; 3)$."
@@ -2665,10 +2665,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Giá trị của biểu thức $A = \\sin 120^\\circ + \\cos 150^\\circ$ bằng:",
       "options": [
-        "0",
+        "$0$",
         "$\\sqrt{3}$",
         "$-\\sqrt{3}$",
-        "1"
+        "$1$"
       ],
       "correctIndex": 0,
       "explanation": "Ta có $\\sin 120^\\circ = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$ và $\\cos 150^\\circ = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$. Do đó $A = \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{3}}{2} = 0$."
@@ -2726,8 +2726,8 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "question": "Giá trị của biểu thức $B = \\cos^2 25^\\circ + \\cos^2 155^\\circ$ bằng:",
       "options": [
         "$2\\cos^2 25^\\circ$",
-        "1",
-        "0",
+        "$1$",
+        "$0$",
         "$2$"
       ],
       "correctIndex": 0,
@@ -2770,7 +2770,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Rút gọn biểu thức $M = \\sin(180^\\circ - x) - \\cos(90^\\circ - x)$. Kết quả là:",
       "options": [
-        "0",
+        "$0$",
         "$2\\sin x$",
         "$-2\\sin x$",
         "$2\\cos x$"
@@ -2803,7 +2803,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$-\\frac{1}{4}$",
         "$\\frac{1}{4}$",
         "$-1$",
-        "1"
+        "$1$"
       ],
       "correctIndex": 0,
       "explanation": "Chia cả tử và mẫu cho $\\sin \\alpha \\ne 0$: $A = \\frac{3 + 2\\cot \\alpha}{2 - \\cot \\alpha} = \\frac{3 + 2(-2)}{2 - (-2)} = \\frac{3 - 4}{4} = -\\frac{1}{4}$."
@@ -2815,10 +2815,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Giá trị của biểu thức $S = \\cos 1^\\circ + \\cos 2^\\circ + \\dots + \\cos 178^\\circ + \\cos 179^\\circ$ bằng:",
       "options": [
-        "0",
-        "1",
+        "$0$",
+        "$1$",
         "$-1$",
-        "179"
+        "$179$"
       ],
       "correctIndex": 0,
       "explanation": "Ghép các cặp bù nhau: $(\\cos 1^\\circ + \\cos 179^\\circ) + (\\cos 2^\\circ + \\cos 178^\\circ) + \\dots + \\cos 90^\\circ = 0 + 0 + \\dots + 0 = 0$."
@@ -2831,8 +2831,8 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "question": "Tính giá trị của biểu thức $P = \\sin^2 15^\\circ + \\sin^2 75^\\circ + \\sin^2 45^\\circ$.",
       "options": [
         "$\\frac{3}{2}$",
-        "1",
-        "2",
+        "$1$",
+        "$2$",
         "$\\frac{5}{2}$"
       ],
       "correctIndex": 0,
@@ -2875,10 +2875,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Với mọi góc $\\alpha \\in [0^\\circ; 180^\\circ]$, giá trị lớn nhất của $f(\\alpha) = \\sin \\alpha$ bằng:",
       "options": [
-        "1",
-        "0",
+        "$1$",
+        "$0$",
         "$-1$",
-        "2"
+        "$2$"
       ],
       "correctIndex": 0,
       "explanation": "Trên đoạn $[0^\\circ; 180^\\circ]$, tung độ của điểm trên nửa đường tròn đơn vị đạt cực đại tại đỉnh $B(0; 1)$, tức là khi $\\alpha = 90^\\circ$ thì $\\sin 90^\\circ = 1$."
@@ -2905,10 +2905,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Biểu thức $K = (\\sin \\alpha + \\cos \\alpha)^2 + (\\sin \\alpha - \\cos \\alpha)^2$ có giá trị bằng:",
       "options": [
-        "2",
-        "1",
-        "0",
-        "4"
+        "$2$",
+        "$1$",
+        "$0$",
+        "$4$"
       ],
       "correctIndex": 0,
       "explanation": "Khai triển: $(\\sin^2 \\alpha + \\cos^2 \\alpha + 2\\sin \\alpha \\cos \\alpha) + (\\sin^2 \\alpha + \\cos^2 \\alpha - 2\\sin \\alpha \\cos \\alpha) = 1 + 1 = 2$."
@@ -3141,6 +3141,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-tf-10.5.8",
+      "svgDiagram": "<svg viewBox=\"0 0 450 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Mặt đất --> <line x1=\"30\" y1=\"185\" x2=\"420\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <!-- Mặt trời góc trái trên --> <g transform=\"translate(65, 45)\"> <circle cx=\"0\" cy=\"0\" r=\"16\" fill=\"#f59e0b\"/> <line x1=\"0\" y1=\"-23\" x2=\"0\" y2=\"-28\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"0\" y1=\"23\" x2=\"0\" y2=\"28\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"-23\" y1=\"0\" x2=\"-28\" y2=\"0\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"23\" y1=\"0\" x2=\"28\" y2=\"0\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"-16\" y1=\"-16\" x2=\"-20\" y2=\"-20\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"16\" y1=\"16\" x2=\"20\" y2=\"20\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"16\" y1=\"-16\" x2=\"20\" y2=\"-20\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"-16\" y1=\"16\" x2=\"-20\" y2=\"20\" stroke=\"#f59e0b\" stroke-width=\"2\"/> </g> <!-- Cọc tiêu thẳng đứng AB tại B(320, 185) --> <line x1=\"320\" y1=\"185\" x2=\"320\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"3\"/> <!-- Góc vuông tại B --> <rect x=\"308\" y=\"173\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/> <!-- Bóng cọc tiêu trên mặt đất từ B(320, 185) về C(145, 185) --> <line x1=\"145\" y1=\"185\" x2=\"320\" y2=\"185\" stroke=\"#eab308\" stroke-width=\"3.5\"/> <!-- Tia sáng mặt trời từ C lên đỉnh cọc A --> <line x1=\"145\" y1=\"185\" x2=\"320\" y2=\"85\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/> <!-- Cung góc nâng alpha tại C --> <path d=\"M 185 185 A 40 40 0 0 0 178 165\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"195\" y=\"175\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">α</text> <!-- Số đo chiều cao và chiều dài bóng --> <text x=\"330\" y=\"140\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"600\">h = 1,5 m</text> <text x=\"200\" y=\"205\" fill=\"#eab308\" font-size=\"13\" font-weight=\"600\">Bóng = 1,5√3 m</text> <!-- Các điểm --> <circle cx=\"320\" cy=\"85\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"325\" y=\"80\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">A (Đỉnh cọc)</text> <circle cx=\"320\" cy=\"185\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"325\" y=\"195\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">B (Chân)</text> <circle cx=\"145\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"110\" y=\"195\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">C</text> </svg>",
       "badge": "Luyện thêm Đ/S 8 - Ứng dụng thực tế đo góc và bóng",
       "source": "Bộ đề thi thử Toán 10 mới",
       "prompt": "Một cọc tiêu cao $1{,}5$ m cắm thẳng đứng trên mặt đất. Khi bóng của cọc tiêu trên mặt đất dài $1{,}5\\sqrt{3}$ m, gọi $\\alpha$ là góc nâng của tia sáng Mặt Trời so với mặt đất ($0^\\circ < \\alpha < 90^\\circ$).",
@@ -3302,6 +3303,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-sa-10.5.12",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"rayArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#fbbf24\"/> </marker> </defs> <!-- Gương phẳng nằm ngang --> <line x1=\"40\" y1=\"175\" x2=\"400\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <!-- Vạch chéo mặt sau của gương --> <line x1=\"70\" y1=\"175\" x2=\"60\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"120\" y1=\"175\" x2=\"110\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"170\" y1=\"175\" x2=\"160\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"220\" y1=\"175\" x2=\"210\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"270\" y1=\"175\" x2=\"260\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"320\" y1=\"175\" x2=\"310\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <line x1=\"370\" y1=\"175\" x2=\"360\" y2=\"188\" stroke=\"#64748b\" stroke-width=\"1.5\"/> <text x=\"340\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\" font-style=\"italic\">Gương phẳng</text> <!-- Pháp tuyến IN thẳng đứng --> <line x1=\"220\" y1=\"175\" x2=\"220\" y2=\"35\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/> <text x=\"225\" y=\"42\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">N (Pháp tuyến)</text> <circle cx=\"220\" cy=\"175\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"215\" y=\"195\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">I</text> <!-- Tia tới SI (góc tới 30 độ so với pháp tuyến) --> <line x1=\"130\" y1=\"45\" x2=\"220\" y2=\"175\" stroke=\"#fbbf24\" stroke-width=\"2.2\" marker-mid=\"url(#rayArrow)\"/> <circle cx=\"130\" cy=\"45\" r=\"3.5\" fill=\"#fbbf24\"/> <text x=\"110\" y=\"40\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">S (Tia tới)</text> <!-- Tia phản xạ IR (góc phản xạ 30 độ so với pháp tuyến) --> <line x1=\"220\" y1=\"175\" x2=\"310\" y2=\"45\" stroke=\"#fbbf24\" stroke-width=\"2.2\"/> <circle cx=\"310\" cy=\"45\" r=\"3.5\" fill=\"#fbbf24\"/> <text x=\"315\" y=\"40\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">R (Tia phản xạ)</text> <!-- Góc tới 30 độ và góc phản xạ 30 độ --> <path d=\"M 220 120 A 55 55 0 0 1 193 135\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/> <text x=\"180\" y=\"125\" fill=\"#f59e0b\" font-size=\"12\" font-weight=\"bold\">30°</text> <path d=\"M 220 120 A 55 55 0 0 0 247 135\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/> <text x=\"235\" y=\"125\" fill=\"#f59e0b\" font-size=\"12\" font-weight=\"bold\">30°</text> <!-- Góc hợp bởi tia tới kéo dài và tia phản xạ là alpha = 120 độ --> <line x1=\"220\" y1=\"175\" x2=\"265\" y2=\"240\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/> <text x=\"200\" y=\"90\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">α = 120°</text> </svg>",
       "badge": "Luyện thêm TLN 12 - Góc lệch tia phản xạ",
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "prompt": "Một tia sáng chiếu tới gương phẳng với góc tới bằng $30^\\circ$. Góc hợp bởi tia tới và tia phản xạ là $\\alpha$. Tính giá trị của $2\\cos \\alpha$.",
@@ -3329,7 +3331,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{21}$",
         "$\\sqrt{41}$",
         "$\\sqrt{61}$",
-        "5"
+        "$5$"
       ],
       "correctIndex": 0,
       "explanation": "$a^2 = 16 + 25 - 2(4)(5)\\cos 60^\\circ = 41 - 20 = 21 \\Rightarrow a = \\sqrt{21}$."
@@ -3356,10 +3358,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ có $\\widehat{A} = 45^\\circ, \\widehat{B} = 30^\\circ, a = 4\\sqrt{2}$. Độ dài cạnh $b$ bằng:",
       "options": [
-        "4",
+        "$4$",
         "$4\\sqrt{3}$",
         "$2\\sqrt{2}$",
-        "8"
+        "$8$"
       ],
       "correctIndex": 0,
       "explanation": "Theo định lý Sin: $b = \\frac{a \\sin B}{\\sin A} = \\frac{4\\sqrt{2} \\cdot \\sin 30^\\circ}{\\sin 45^\\circ} = \\frac{4\\sqrt{2} \\cdot \\frac{1}{2}}{\\frac{\\sqrt{2}}{2}} = 4$."
@@ -3373,8 +3375,8 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "options": [
         "$4\\sqrt{2}$",
         "$8\\sqrt{2}$",
-        "4",
-        "8"
+        "$4$",
+        "$8$"
       ],
       "correctIndex": 0,
       "explanation": "$2R = \\frac{b}{\\sin B} = \\frac{8}{\\sin 45^\\circ} = \\frac{8}{\\frac{\\sqrt{2}}{2}} = 8\\sqrt{2} \\Rightarrow R = 4\\sqrt{2}$."
@@ -3388,8 +3390,8 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "options": [
         "$12\\sqrt{2}$",
         "$24\\sqrt{2}$",
-        "12",
-        "24"
+        "$12$",
+        "$24$"
       ],
       "correctIndex": 0,
       "explanation": "$S = \\frac{1}{2} ac \\sin B = \\frac{1}{2}(6)(8)\\sin 135^\\circ = 24 \\cdot \\frac{\\sqrt{2}}{2} = 12\\sqrt{2}$."
@@ -3419,7 +3421,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{3}$",
         "$2\\sqrt{3}$",
         "$\\frac{\\sqrt{3}}{2}$",
-        "3"
+        "$3$"
       ],
       "correctIndex": 0,
       "explanation": "Đường cao $h = \\frac{a\\sqrt{3}}{2} = 3\\sqrt{3}$. Bán kính nội tiếp $r = \\frac{1}{3}h = \\sqrt{3}$."
@@ -3431,9 +3433,9 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ vuông tại $B$ có $BA = 6, BC = 8$. Độ dài đường trung tuyến kẻ từ đỉnh $B$ là:",
       "options": [
-        "5",
-        "10",
-        "4",
+        "$5$",
+        "$10$",
+        "$4$",
         "$\\sqrt{28}$"
       ],
       "correctIndex": 0,
@@ -3446,10 +3448,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Tam giác $ABC$ có $a = 10, b = 10, c = 12$. Chiều cao $h_c$ kẻ từ đỉnh $C$ xuống cạnh $c$ bằng:",
       "options": [
-        "8",
-        "6",
-        "10",
-        "4"
+        "$8$",
+        "$6$",
+        "$10$",
+        "$4$"
       ],
       "correctIndex": 0,
       "explanation": "Vì $a = b = 10$ nên tam giác cân tại $C$. Chân đường cao $H$ là trung điểm $AB$, $AH = 6$. Theo Pythagore: $h_c = \\sqrt{10^2 - 6^2} = 8$."
@@ -3461,10 +3463,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Tam giác $ABC$ có $\\cos A = \\frac{3}{5}$. Tỉ số $\\frac{a}{\\sin A}$ bằng $20$. Độ dài cạnh $a$ là:",
       "options": [
-        "16",
-        "12",
-        "8",
-        "10"
+        "$16$",
+        "$12$",
+        "$8$",
+        "$10$"
       ],
       "correctIndex": 0,
       "explanation": "Vì $\\cos A = \\frac{3}{5} > 0$ nên $\\sin A = \\sqrt{1 - (3/5)^2} = \\frac{4}{5}$. Khi đó $a = 20 \\sin A = 20 \\cdot \\frac{4}{5} = 16$."
@@ -3476,10 +3478,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Tam giác $ABC$ có $a = 3, b = 4, c = 5$. Bán kính đường tròn ngoại tiếp $R$ bằng:",
       "options": [
-        "2.5",
-        "5",
-        "3",
-        "1.5"
+        "$2{,}5$",
+        "$5$",
+        "$3$",
+        "$1{,}5$"
       ],
       "correctIndex": 0,
       "explanation": "Tam giác $ABC$ vuông tại $C$ vì $3^2 + 4^2 = 5^2$. Cạnh huyền là $c = 5$, bán kính ngoại tiếp $R = \\frac{c}{2} = 2{,}5$."
@@ -3501,6 +3503,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-10.6.13",
+      "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Hai ngọn núi M và N --> <!-- Núi M bên trái --> <polygon points=\"120,60 60,180 180,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"120,60 105,95 120,90 135,100 120,60\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Núi N bên phải --> <polygon points=\"340,75 280,180 400,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"340,75 328,105 340,100 352,110 340,75\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Điểm quan sát P --> <line x1=\"220\" y1=\"195\" x2=\"120\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <line x1=\"220\" y1=\"195\" x2=\"340\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <!-- Khoảng cách MN cần tính --> <line x1=\"120\" y1=\"60\" x2=\"340\" y2=\"75\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Cung góc 60 độ tại P --> <path d=\"M 203 172 A 35 35 0 0 1 239 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"212\" y=\"162\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <!-- Số đo PM = 800m, PN = 500m --> <text x=\"125\" y=\"145\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">800 m</text> <text x=\"290\" y=\"150\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">500 m</text> <text x=\"220\" y=\"55\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">MN = ?</text> <!-- Các đỉnh --> <circle cx=\"120\" cy=\"60\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"95\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">M</text> <circle cx=\"340\" cy=\"75\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"350\" y=\"75\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">N</text> <circle cx=\"220\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"215\" y=\"218\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">P</text> </svg>",
       "badge": "Luyện thêm 13 - Góc nhìn qua chướng ngại vật",
       "isAiGenerated": true,
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
@@ -3521,10 +3524,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Tam giác có diện tích $S = 30$ và chu vi bằng $20$. Bán kính đường tròn nội tiếp $r$ bằng:",
       "options": [
-        "3",
-        "2",
-        "1.5",
-        "6"
+        "$3$",
+        "$2$",
+        "$1{,}5$",
+        "$6$"
       ],
       "correctIndex": 0,
       "explanation": "Nửa chu vi $p = \\frac{20}{2} = 10$. Bán kính $r = \\frac{S}{p} = \\frac{30}{10} = 3$."
@@ -3551,16 +3554,17 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3, AC = 4$. Độ dài đường trung tuyến kẻ từ đỉnh góc vuông $A$ là:",
       "options": [
-        "2.5",
-        "5",
-        "3",
-        "3.5"
+        "$2{,}5$",
+        "$5$",
+        "$3$",
+        "$3{,}5$"
       ],
       "correctIndex": 0,
       "explanation": "Cạnh huyền $BC = 5$. Trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền: $m_a = \\frac{5}{2} = 2{,}5$."
     },
     {
       "id": "ai-10.6.17",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"canoArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- La bàn 4 hướng góc trái trên --> <g transform=\"translate(60, 50)\"> <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#1e293b\" stroke=\"#475569\"/> <line x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <line x1=\"-20\" y1=\"0\" x2=\"20\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <text x=\"-4\" y=\"-24\" fill=\"#38bdf8\" font-size=\"11\" font-weight=\"bold\">B</text> <text x=\"24\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">Đ</text> <text x=\"-32\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">T</text> <text x=\"-4\" y=\"32\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">N</text> </g> <!-- Điểm A (Bến xuất phát) --> <circle cx=\"120\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"100\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Chạy hướng Đông 40km đến B --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Rẽ hướng Bắc 30km đến C --> <line x1=\"300\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"65\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"60\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Góc vuông tại B --> <rect x=\"286\" y=\"161\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/> <!-- Khoảng cách AC đường chéo --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Độ dài --> <text x=\"195\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">40 km (Đông)</text> <text x=\"315\" y=\"125\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">30 km (Bắc)</text> <text x=\"180\" y=\"110\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
       "badge": "Luyện thêm 17 - Khoảng cách di chuyển của tàu",
       "isAiGenerated": true,
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
@@ -3584,7 +3588,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{19}$",
         "$\\sqrt{13}$",
         "$\\sqrt{7}$",
-        "4"
+        "$4$"
       ],
       "correctIndex": 0,
       "explanation": "$BC^2 = 2^2 + 3^2 - 2(2)(3)\\cos 120^\\circ = 4 + 9 - 12\\left(-\\frac{1}{2}\\right) = 13 + 6 = 19 \\Rightarrow BC = \\sqrt{19}$."
@@ -3611,10 +3615,10 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ có trung tuyến $AM$. Nếu diện tích tam giác $ABC$ bằng $40$ thì diện tích tam giác $ABM$ bằng:",
       "options": [
-        "20",
-        "10",
-        "30",
-        "25"
+        "$20$",
+        "$10$",
+        "$30$",
+        "$25$"
       ],
       "correctIndex": 0,
       "explanation": "Vì $M$ là trung điểm $BC$ nên hai tam giác $ABM$ và $ACM$ có chung đường cao và đáy bằng nhau. Do đó $S_{ABM} = \\frac{1}{2} S_{ABC} = 20$."
@@ -3751,6 +3755,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-tf-10.6.5",
+      "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"planeArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- Sân bay A --> <circle cx=\"70\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"50\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Bay hướng Đông 100km đến B --> <line x1=\"70\" y1=\"175\" x2=\"250\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"250\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"245\" y=\"200\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Đường thẳng Đông kéo dài nét đứt --> <line x1=\"250\" y1=\"175\" x2=\"340\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/> <!-- Chếch Bắc 60 độ: bay 60km đến C (60 độ so với phương Đông) --> <!-- dx = 60*cos(-60) = 30, dy = -60*sin(60) = -52 -> x = 250 + 60 = 310, y = 175 - 104 = 71 --> <line x1=\"250\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"310\" cy=\"71\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"320\" y=\"70\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Cung góc đổi hướng 60 độ ngoài --> <path d=\"M 285 175 A 35 35 0 0 0 268 145\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"1.8\"/> <text x=\"288\" y=\"160\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <!-- Cung góc trong B = 120 độ --> <path d=\"M 215 175 A 35 35 0 0 1 268 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"220\" y=\"155\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">120°</text> <!-- Khoảng cách AC bay thẳng --> <line x1=\"70\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Số đo --> <text x=\"145\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">AB = 100 km</text> <text x=\"305\" y=\"130\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">60 km</text> <text x=\"175\" y=\"105\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
       "badge": "Luyện thêm Đ/S 5 - Bài toán thực tế máy bay bay",
       "source": "Bộ đề thi thử Toán 10 mới",
       "prompt": "Một máy bay bay từ sân bay $A$ theo hướng Đông $100$ km đến điểm $B$, sau đó đổi hướng bay chếch về phía Bắc một góc $60^\\circ$ bay thêm $60$ km đến sân bay $C$.",
@@ -3847,6 +3852,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-tf-10.6.8",
+      "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Mặt đất --> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <!-- Ngọn núi cao tại D(385, 195) --> <polygon points=\"385,55 315,195 440,195\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"385,55 372,85 385,80 398,90 385,55\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Chiều cao ngọn núi CD --> <line x1=\"385\" y1=\"55\" x2=\"385\" y2=\"195\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/> <rect x=\"373\" y=\"183\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/> <circle cx=\"385\" cy=\"55\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Đỉnh núi)</text> <circle cx=\"385\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"205\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <!-- Tia ngắm từ B và A --> <line x1=\"255\" y1=\"195\" x2=\"385\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"90\" y1=\"195\" x2=\"385\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <!-- Cung góc nâng 45 độ tại B --> <path d=\"M 290 195 A 35 35 0 0 0 279 169\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"285\" y=\"185\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">45°</text> <!-- Cung góc nâng 30 độ tại A --> <path d=\"M 130 195 A 40 40 0 0 0 124 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"135\" y=\"187\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text> <!-- Kích thước AB = 200m --> <line x1=\"90\" y1=\"215\" x2=\"255\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"90\" y1=\"210\" x2=\"90\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"255\" y1=\"210\" x2=\"255\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <text x=\"150\" y=\"230\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 200 m</text> <!-- Điểm A và B --> <circle cx=\"90\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"80\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"255\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"245\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"405\" y=\"130\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = CD</text> </svg>",
       "badge": "Luyện thêm Đ/S 8 - Ứng dụng thực tế đo góc nâng",
       "source": "Bộ đề thi thử Toán 10 mới",
       "prompt": "Một người đứng tại vị trí $A$ quan sát đỉnh $C$ của một ngọn núi thấy góc nâng bằng $30^\\circ$. Người đó tiến lại gần ngọn núi thêm $200$ m đến điểm $B$ thì thấy góc nâng là $45^\\circ$ ($A, B$ và chân núi $D$ thẳng hàng).",
@@ -3971,6 +3977,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     },
     {
       "id": "ai-sa-10.6.9",
+      "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Mặt đất --> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <!-- Tòa nhà cao tầng tại D(380, 195) --> <rect x=\"360\" y=\"45\" width=\"40\" height=\"150\" fill=\"#1e293b\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <!-- Cửa sổ tòa nhà --> <rect x=\"368\" y=\"60\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"60\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"85\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"85\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"110\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"110\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"135\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"135\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <!-- Đỉnh C và chân D --> <circle cx=\"380\" cy=\"45\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"45\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Nóc nhà)</text> <circle cx=\"380\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"210\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <!-- Tia ngắm từ B và A --> <line x1=\"260\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"100\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <!-- Cung góc nâng 60 độ tại B --> <path d=\"M 290 195 A 30 30 0 0 0 276 174\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"288\" y=\"186\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <!-- Cung góc nâng 30 độ tại A --> <path d=\"M 140 195 A 40 40 0 0 0 134 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"145\" y=\"188\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text> <!-- Kích thước AB = 60m --> <line x1=\"100\" y1=\"215\" x2=\"260\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"100\" y1=\"210\" x2=\"100\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"260\" y1=\"210\" x2=\"260\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <text x=\"160\" y=\"230\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 60 m</text> <!-- Điểm A và B --> <circle cx=\"100\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"90\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"260\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"250\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"410\" y=\"120\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = ?</text> </svg>",
       "badge": "Luyện thêm TLN 9 - Khoảng cách ngọn hải đăng",
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "prompt": "Hai người cùng quan sát một tòa nhà cao từ hai điểm $A$ và $B$ cách nhau $60$ m. Biết từ $A$ và $B$ nhìn thấy đỉnh tòa nhà dưới góc $30^\\circ$ và $60^\\circ$ ($A, B$ và chân tòa nhà thẳng hàng). Tính chiều cao của tòa nhà (lấy kết quả chính xác dưới dạng $a\\sqrt{3}$, hãy điền giá trị $a$).",

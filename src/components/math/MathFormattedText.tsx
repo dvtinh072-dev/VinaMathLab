@@ -58,10 +58,11 @@ export function formatMathInText(rawText?: string | null): string {
     return `${prefix}$${elem} \\in ${formattedSet}$`;
   });
 
-  protectedText = protectedText.replace(/(^|[\s])([a-zA-Z0-9]+)\s*∉\s*([a-zA-Z0-9ℕℤℚℝ*]+)(?=[\s,;.]|$)/g, (_, prefix, elem, set) => {
-    let formattedSet = set === "ℕ*" ? "\\mathbb{N}^*" : set === "ℕ" ? "\\mathbb{N}" : set === "ℤ" ? "\\mathbb{Z}" : set;
-    return `${prefix}$${elem} \\notin ${formattedSet}$`;
-  });
+  // 2.5. Tự động chuyển đổi chuỗi chỉ chứa số nguyên/thập phân/phân số đứng độc lập sang LaTeX
+  if (/^\s*-?\d+(?:[\.,]\d+)?\s*$/.test(protectedText)) {
+    const numClean = protectedText.trim().replace('.', '{,}');
+    protectedText = `$${numClean}$`;
+  }
 
   // Bước 3: Khôi phục các khối LaTeX đã bảo vệ
   let restored = protectedText.replace(/___MATH_BLOCK_DISPLAY_(\d+)___/g, (_, idx) => {

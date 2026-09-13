@@ -29,18 +29,21 @@ export interface ChatMessage {
 
 const INITIAL_GREETING: ChatMessage = {
   role: "assistant",
-  content: `Chào em! Thầy là **Gia sư Toán học AI**.
-Thầy sẽ tóm lược **công thức cốt lõi** và **phương pháp giải bài toán** giúp em nắm chắc kiến thức và tự tin giải bài.
+  content: `Chào em! Thầy là **Trợ Lý Vina** - Trợ lý AI Sư phạm Toán học VinaMath.
+
+Thầy có thể hỗ trợ em:
+- 🔍 **Tra cứu nhanh** phương pháp giải, định lý và công thức toán học từ **Lớp 6 đến Lớp 12**.
+- 💡 **Hỗ trợ giải bài tập khi cần**, phân tích hướng tư duy, trình bày lời giải chi tiết và đáp số chuẩn xác.
 
 Em hãy gửi bài toán hoặc công thức cần tra cứu nhé!`,
   timestamp: new Date().toISOString(),
 };
 
 const SUGGESTIONS = [
-  "Công thức tính diện tích hình chữ nhật",
-  "Giải phương trình: $x^2 - 5x + 6 = 0$",
-  "Nhắc lại Định lý Côsin trong tam giác",
-  "Cách tính số trung bình ghép nhóm Lớp 11",
+  "Công thức Định lý Côsin tam giác (Lớp 10)",
+  "Các quy tắc tính đạo hàm hàm số (Lớp 11)",
+  "Phương trình mặt phẳng Oxyz (Lớp 12)",
+  "Cách tìm ƯCLN và BCNN (Toán 6)",
 ];
 
 export default function MathChatBox() {
@@ -136,7 +139,7 @@ export default function MathChatBox() {
       const data = await response.json();
       const replyContent =
         data.reply ||
-        "Gia sư AI chưa thể phản hồi lúc này. Em vui lòng thử lại nhé!";
+        "Trợ Lý Vina chưa thể phản hồi lúc này. Em vui lòng thử lại nhé!";
 
       const assistantMessage: ChatMessage = {
         role: "assistant",
@@ -168,7 +171,7 @@ export default function MathChatBox() {
   };
 
   const handleReset = () => {
-    if (window.confirm("Em có muốn làm mới cuộc trò chuyện với Gia sư không?")) {
+    if (window.confirm("Em có muốn làm mới cuộc trò chuyện với Trợ Lý Vina không?")) {
       setMessages([
         {
           ...INITIAL_GREETING,
@@ -201,15 +204,15 @@ export default function MathChatBox() {
               <div>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-sm font-black text-white tracking-wide">
-                    Gia Sư Toán Học AI
+                    Trợ Lý Vina
                   </h3>
                   <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[9px] font-black uppercase">
-                    {geminiKey ? "✨ Gemini 2.0 Flash" : "📚 SGK Chuẩn"}
+                    {geminiKey ? "✨ Gemini 2.0 Flash" : "📚 SGK VinaMath"}
                   </span>
                 </div>
                 <p className="text-[10px] text-slate-300 flex items-center gap-1">
                   <Sparkles className="w-3 h-3 text-amber-400" />
-                  <span>Giải Toán Chuẩn Xác & Công Thức LaTeX</span>
+                  <span>Tra Cứu Công Thức & Hỗ Trợ Giải Toán 6 - 12</span>
                 </p>
               </div>
             </div>
@@ -359,7 +362,7 @@ export default function MathChatBox() {
                       style={{ animationDelay: "300ms" }}
                     />
                     <span className="text-[11px] text-slate-400 ml-1 font-medium">
-                      Gia sư đang suy nghĩ gợi ý...
+                      Trợ Lý Vina đang tra cứu và giải đáp...
                     </span>
                   </div>
                 </div>
@@ -399,7 +402,7 @@ export default function MathChatBox() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Hỏi Gia sư về bài toán của em... (Nhấn Enter để gửi)"
+                placeholder="Hỏi Trợ Lý Vina về phương pháp, công thức hoặc bài toán... (Enter để gửi)"
                 rows={1}
                 disabled={isLoading}
                 className="w-full bg-transparent border-0 focus:ring-0 text-xs sm:text-sm text-slate-100 placeholder-slate-500 resize-none max-h-24 px-2 py-1.5 outline-none"
@@ -436,10 +439,10 @@ export default function MathChatBox() {
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400" />
           </div>
           <span className="text-xs sm:text-sm font-black tracking-wide">
-            Gia Sư Toán AI
+            Trợ Lý Vina
           </span>
           <span className="hidden sm:inline-block px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-bold">
-            {geminiKey ? "Gemini" : "Socratic"}
+            {geminiKey ? "Gemini 2.0" : "VinaMath"}
           </span>
         </button>
       )}

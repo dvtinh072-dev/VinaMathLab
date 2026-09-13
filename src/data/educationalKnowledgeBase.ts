@@ -8,6 +8,8 @@
  * - Thư viện học liệu số quốc gia VinaMath
  */
 
+import { CURRICULUM_DATA } from "@/data/curriculumData";
+
 export interface KnowledgeItem {
   id: string;
   keywords: string[];
@@ -991,7 +993,8 @@ $$P(B_k \\mid A) = \\frac{P(B_k) \\cdot P(A \\mid B_k)}{P(A)} = \\frac{P(B_k) \\
 const STOP_WORDS = new Set([
   "so", "tinh", "cac", "la", "gi", "cua", "trong", "va", "cho", "mot", 
   "nhung", "bang", "de", "theo", "the", "nao", "hay", "co", "khi", "nhu", 
-  "bai", "hoc", "ra", "sao", "giup", "em", "thay", "co"
+  "bai", "hoc", "ra", "sao", "giup", "em", "thay", "co", "cong", "thuc",
+  "phuong", "phap", "cach", "quy", "tac", "tim"
 ]);
 
 /**
@@ -1018,10 +1021,108 @@ function containsWholeWord(text: string, word: string): boolean {
   return normT.includes(" " + normW + " ");
 }
 
+let _cachedAllKnowledgeItems: KnowledgeItem[] | null = null;
+
 /**
- * Hàm tìm kiếm kiến thức chuẩn xác từ kho tri thức giáo dục uy tín
- * BẢO VỆ CHẶT CHẼ: Bắt buộc có điểm chủ đề cốt lõi (coreScore >= 35).
- * KHÔNG BAO GIỜ để từ khóa "lớp 11" hay các từ dừng "số", "tính" tự ý match sang chủ đề khác!
+ * TẬP HỢP TOÀN BỘ TRI THỨC TOÁN HỌC TỪ LỚP 6 ĐẾN LỚP 12:
+ * Kết hợp tri thức thủ công chi tiết (EDUCATIONAL_KNOWLEDGE_BASE)
+ * với tất cả 252+ bài học trong CURRICULUM_DATA (Toán 6, 7, 8, 9, 10, 11, 12).
+ * Tự động cập nhật ngay khi dự án thêm bài học mới hoặc cập nhật công thức!
+ */
+export function getAllVinaKnowledgeItems(): KnowledgeItem[] {
+  if (_cachedAllKnowledgeItems) {
+    return _cachedAllKnowledgeItems;
+  }
+
+  const items: KnowledgeItem[] = [...EDUCATIONAL_KNOWLEDGE_BASE];
+  const existingIds = new Set(items.map((i) => i.id));
+
+  // Quét toàn bộ CURRICULUM_DATA từ Lớp 6 đến Lớp 12
+  for (const [, gradeData] of Object.entries(CURRICULUM_DATA)) {
+    const gradeNum = gradeData.gradeNumber;
+    for (const chapter of gradeData.chapters) {
+      for (const lesson of chapter.lessons) {
+        const synthId = `curriculum-${lesson.id}`;
+        if (existingIds.has(synthId) || existingIds.has(lesson.id)) continue;
+
+        const rawTitle = lesson.title.replace(/^Bài\s+\d+[:.]\s*/i, "").trim();
+        const normTitle = normalizeText(rawTitle);
+        const normChapter = normalizeText(chapter.title.replace(/^Chương\s+[IVXLCDM\d]+[:.]\s*/i, ""));
+
+        // Tạo bigrams từ tiêu đề bài học và tiêu đề chương để tăng độ nhạy
+        const words = normTitle.split(" ").filter(Boolean);
+        const bigrams: string[] = [];
+        for (let i = 0; i < words.length - 1; i++) {
+          const bg = `${words[i]} ${words[i + 1]}`;
+          if (!STOP_WORDS.has(words[i]) || !STOP_WORDS.has(words[i + 1])) {
+            bigrams.push(bg);
+          }
+        }
+
+        const chapterWords = normChapter.split(" ").filter(Boolean);
+        for (let i = 0; i < chapterWords.length - 1; i++) {
+          bigrams.push(`${chapterWords[i]} ${chapterWords[i + 1]}`);
+        }
+
+        const keywords = [
+          normTitle,
+          normChapter,
+          ...bigrams,
+          ...words.filter((w) => w.length >= 3 && !STOP_WORDS.has(w)),
+          lesson.strand,
+        ];
+
+        const questionVariants = [
+          rawTitle.toLowerCase(),
+          `công thức ${rawTitle.toLowerCase()}`,
+          `phương pháp ${rawTitle.toLowerCase()}`,
+          `cách giải ${rawTitle.toLowerCase()}`,
+          `toán ${gradeNum} ${rawTitle.toLowerCase()}`,
+          `lý thuyết ${rawTitle.toLowerCase()}`,
+          `định lý ${rawTitle.toLowerCase()}`,
+        ];
+
+        const formulasFormatted =
+          lesson.keyFormulas && lesson.keyFormulas.length > 0
+            ? lesson.keyFormulas.map((f) => `$$${f}$$`).join("\n")
+            : "";
+
+        const officialContent = [
+          `**1. Khái niệm & Trọng tâm kiến thức (${lesson.title}):**\n${lesson.description}`,
+          formulasFormatted ? `**2. Công thức cốt lõi chuẩn SGK:**\n${formulasFormatted}` : "",
+          `**3. Định hướng phương pháp giải:**\n- Bước 1: Nhận diện dạng toán và tóm tắt các giả thiết liên quan đến ${rawTitle}.\n- Bước 2: Áp dụng chuẩn xác hệ thức, công thức liên quan.\n- Bước 3: Kiểm tra điều kiện xác định và kết luận nghiệm/đáp số.`,
+        ]
+          .filter(Boolean)
+          .join("\n\n");
+
+        items.push({
+          id: synthId,
+          keywords,
+          topic: `${lesson.title} (${gradeData.title})`,
+          grade: gradeNum,
+          questionVariants,
+          summary: lesson.description,
+          officialContent,
+          formulaLatex: lesson.keyFormulas ? lesson.keyFormulas.join("; ") : "",
+          standardSteps: [
+            `Bước 1: Đọc kỹ đề bài, xác định các giả thiết và đại lượng liên quan đến ${rawTitle}.`,
+            `Bước 2: Áp dụng công thức và tính chất chuẩn SGK: ${lesson.keyFormulas[0] || rawTitle}`,
+            "Bước 3: Thực hiện tính toán và kiểm tra điều kiện xác định để đưa ra đáp số chính xác.",
+          ],
+          sourceName: `SGK ${gradeData.title} - ${gradeData.bookSeries || "Bộ sách Kết Nối Tri Thức"}`,
+          sourceUrl: "https://hanhtrangso.nxbgd.vn",
+          sourceCitation: `Sách giáo khoa ${gradeData.title}, ${chapter.title}, ${lesson.title}.`,
+        });
+      }
+    }
+  }
+
+  _cachedAllKnowledgeItems = items;
+  return _cachedAllKnowledgeItems;
+}
+
+/**
+ * Hàm tìm kiếm kiến thức chuẩn xác từ toàn bộ kho học liệu Toán 6 - 12
  */
 export function queryEducationalKnowledgeBase(userQuestion: string): {
   match: KnowledgeItem | null;
@@ -1034,7 +1135,7 @@ export function queryEducationalKnowledgeBase(userQuestion: string): {
     return { match: null, confidence: 0, allCandidates: [] };
   }
 
-  // 0. Nhận diện rõ ràng lớp học trong câu hỏi (Ví dụ: "lớp 11", "toán 11", "k11", "lớp 10"...)
+  // Nhận diện rõ ràng lớp học trong câu hỏi (Ví dụ: "lớp 11", "toán 11", "k11", "lớp 10"...)
   let queryGrade: number | null = null;
   const gradeRegex = /(?:lop|toan|k)\s*(6|7|8|9|10|11|12)\b/;
   const matchGrade = normQ.match(gradeRegex);
@@ -1042,37 +1143,40 @@ export function queryEducationalKnowledgeBase(userQuestion: string): {
     queryGrade = parseInt(matchGrade[1], 10);
   }
 
-  const scored = EDUCATIONAL_KNOWLEDGE_BASE.map((item) => {
+  const allItems = getAllVinaKnowledgeItems();
+
+  const scored = allItems.map((item) => {
     let coreScore = 0;
 
     // 1. So khớp biến thể câu hỏi (Question Variants) - Trọng số cao nhất
     for (const v of item.questionVariants) {
       const normV = normalizeText(v);
       if (normQ === normV) {
-        coreScore += 180; // Trùng khớp hoàn toàn câu hỏi
-      } else if (normQ.includes(normV) && normV.length >= 8) {
-        coreScore += 90; // Câu hỏi người dùng chứa trọn vẹn biến thể mẫu
-      } else if (normV.includes(normQ) && normQ.length >= 8) {
-        coreScore += 60; // Biến thể mẫu chứa câu hỏi người dùng
+        coreScore += 200; // Trùng khớp hoàn toàn câu hỏi
+      } else if (normQ.includes(normV) && normV.length >= 6) {
+        coreScore += 100; // Câu hỏi người dùng chứa trọn vẹn biến thể mẫu
+      } else if (normV.includes(normQ) && normQ.length >= 6) {
+        coreScore += 70; // Biến thể mẫu chứa câu hỏi người dùng
       }
     }
 
     // 2. So khớp từ khóa chuyên môn (Keywords)
+    const matchedKeywords = new Set<string>();
     for (const kw of item.keywords) {
       const normKw = normalizeText(kw);
-      const isMultiWord = normKw.includes(" ");
+      if (!normKw || STOP_WORDS.has(normKw) || matchedKeywords.has(normKw)) continue;
 
-      if (isMultiWord) {
-        // Cụm từ khóa nhiều chữ (ví dụ: "so trung binh", "dinh ly cosin", "mau so lieu ghep nhom")
+      if (normKw.includes(" ")) {
+        // Cụm từ khóa nhiều chữ (ví dụ: "dao ham", "so trung binh", "phuong trinh mat phang")
         if (normQ.includes(normKw)) {
-          coreScore += 70;
+          matchedKeywords.add(normKw);
+          coreScore += 120;
         }
       } else {
-        // Từ khóa đơn: BỎ QUA NẾU LÀ STOPWORD (như "so", "tinh")
-        if (!STOP_WORDS.has(normKw)) {
-          if (containsWholeWord(normQ, normKw)) {
-            coreScore += 25;
-          }
+        // Từ khóa đơn
+        if (containsWholeWord(normQ, normKw)) {
+          matchedKeywords.add(normKw);
+          coreScore += 25;
         }
       }
     }
@@ -1080,21 +1184,10 @@ export function queryEducationalKnowledgeBase(userQuestion: string): {
     // 3. So khớp tiêu đề chủ đề (Topic)
     const normTopic = normalizeText(item.topic);
     if (normQ.includes(normTopic) && normTopic.length >= 8) {
-      coreScore += 70;
-    } else {
-      const topicWords = normTopic.split(" ");
-      for (const w of topicWords) {
-        if (w.length >= 3 && !STOP_WORDS.has(w) && containsWholeWord(normQ, w)) {
-          coreScore += 15;
-        }
-      }
+      coreScore += 80;
     }
 
     // 4. KIỂM SOÁT LỚP HỌC CHẶT CHẼ:
-    // - Nếu học sinh chỉ định rõ lớp (ví dụ "lớp 11"):
-    //   + Bài đúng lớp 11 được cộng thưởng lớn (+100) khi đã có coreScore >= 20.
-    //   + Bài sai lớp (lớp 10 hoặc 12) BỊ PHẠT NẶNG (-150) để tuyệt đối không bao giờ match nhầm sang lớp khác!
-    // - Nếu không chỉ định lớp: không phạt.
     let gradeBonus = 0;
     if (queryGrade !== null && item.grade > 0) {
       if (item.grade === queryGrade) {
@@ -1113,18 +1206,57 @@ export function queryEducationalKnowledgeBase(userQuestion: string): {
   scored.sort((a, b) => b.score - a.score);
 
   const best = scored[0];
-  // BẮT BUỘC coreScore >= 35 và totalScore >= 35
-  if (best && best.coreScore >= 35 && best.score >= 35) {
+  // BẮT BUỘC coreScore >= 30 và totalScore >= 30
+  if (best && best.coreScore >= 30 && best.score >= 30) {
     return {
       match: best.item,
       confidence: best.score,
-      allCandidates: scored.filter((s) => s.coreScore >= 35 && s.score >= 35)
+      allCandidates: scored.filter((s) => s.coreScore >= 30 && s.score >= 30),
     };
   }
 
   return {
     match: null,
     confidence: 0,
-    allCandidates: []
+    allCandidates: [],
+  };
+}
+
+/**
+ * Trích xuất ngữ cảnh kiến thức GDPT 2018 Toán 6 - 12 để huấn luyện / tiêm vào prompt của Trợ Lý AI Vina
+ */
+export function getVinaCurriculumGroundingContext(userQuestion: string): {
+  groundingText: string;
+  matchedItem: KnowledgeItem | null;
+} {
+  const result = queryEducationalKnowledgeBase(userQuestion);
+  const match = result.match;
+
+  if (!match) {
+    return {
+      groundingText: "",
+      matchedItem: null,
+    };
+  }
+
+  const stepsFormatted =
+    match.standardSteps && match.standardSteps.length > 0
+      ? match.standardSteps.map((s, idx) => `  ${idx + 1}. ${s}`).join("\n")
+      : "";
+
+  const formulasFormatted = match.formulaLatex ? `  ${match.formulaLatex}` : "";
+
+  const groundingText = `
+📚 TRI THỨC TOÁN HỌC TRÍCH XUẤT TỪ DỰ ÁN VINAMATH (GDPT 2018 - TOÁN 6 ĐẾN 12):
+- **Chủ đề:** ${match.topic} (Khối ${match.grade})
+- **Tóm tắt lý thuyết:** ${match.summary}
+${formulasFormatted ? `- **Công thức trọng tâm:**\n${formulasFormatted}` : ""}
+${stepsFormatted ? `- **Phương pháp & Các bước giải chuẩn SGK:**\n${stepsFormatted}` : ""}
+- **Nguồn trích dẫn:** ${match.sourceName} (${match.sourceCitation})
+`.trim();
+
+  return {
+    groundingText,
+    matchedItem: match,
   };
 }

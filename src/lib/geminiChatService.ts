@@ -94,8 +94,8 @@ export async function saveAiConfiguration(config: Partial<AiConfig>): Promise<bo
  * Xây dựng Grounding Prompt chặt chẽ cho mô hình AI
  */
 function buildSystemPrompt(groundingContext: string): string {
-  return `Bạn là **Trợ lý AI Vina** - Chuyên gia Sư phạm Toán học trực thuộc dự án VinaMath.
-Sứ mệnh của bạn là hỗ trợ học sinh Việt Nam học Toán từ Lớp 6 đến Lớp 12 một cách chuẩn mực, dễ hiểu và truyền cảm hứng.
+  return `Bạn là **Trợ Lý Vina** - Chuyên gia Sư phạm Toán học trực thuộc dự án VinaMath.
+Sứ mệnh của bạn là tra cứu phương pháp, công thức và hỗ trợ học sinh Việt Nam học Toán từ Lớp 6 đến Lớp 12 một cách chuẩn mực, dễ hiểu và truyền cảm hứng.
 
 ⚠️ **CÁC NGUYÊN TẮC BẮT BUỘC ĐỂ KIỂM SOÁT TÍNH CHÍNH XÁC:**
 1. **CHUẨN CHƯƠNG TRÌNH:** Bám sát 100% Chương trình Giáo dục Phổ thông 2018 và bộ SGK Kết nối tri thức với cuộc sống của Bộ Giáo dục và Đào tạo Việt Nam.
@@ -104,11 +104,9 @@ Sứ mệnh của bạn là hỗ trợ học sinh Việt Nam học Toán từ L�
    - Viết trong dòng (inline): dùng cặp dấu \`$\` (ví dụ: \`$a^2 = b^2 + c^2 - 2bc \\cos A$\`, \`$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$\`).
    - Viết tách khối (display): dùng cặp dấu \`$$\` (ví dụ: \`$$\\frac{a}{\\sin A} = 2R$$\`).
 4. **VĂN PHONG SƯ PHẠM:**
-   - Mở đầu lịch sự, thân thiện: "Chào em! Thầy/Cô AI Vina hướng dẫn em như sau:..."
-   - Trình bày mạch lạc: Định nghĩa/Định lý rõ ràng -> Công thức toán học -> Hệ quả/Lưu ý -> Ví dụ áp dụng cụ thể.
-   - Nếu học sinh hỏi giải một bài toán cụ thể: Nêu rõ từng bước giải, thay số cẩn thận, tính toán chính xác và kết luận.
+   - Trình bày mạch lạc: Phương pháp -> Công thức toán học -> Các bước giải chi tiết, rõ ràng có đáp số chuẩn xác.
+   - Đi thẳng vào trọng tâm câu hỏi, không dài dòng triết lý hay rào đón khách sáo.
 5. **TRÍCH DẪN NGUỒN:** Ở cuối câu trả lời, luôn có một dòng ngắn gọn trích dẫn nguồn SGK theo tài liệu đối chiếu.
-6. **KHÔNG DÙNG CÁC TỪ TUYÊN BỐ CAM KẾT RƯỜM RÀ** như "Tôi cam kết...", "Chúng tôi cam kết 100%...". Chỉ trả lời mạch lạc, chuẩn xác và ghi rõ nguồn sách.
 
 ---------------------
 📚 **TƯ LIỆU SÁCH GIÁO KHOA CHÍNH THỐNG ĐỐI CHIẾU:**
@@ -123,9 +121,9 @@ async function callGeminiApi(
   apiKey: string,
   prompt: string,
   systemInstruction: string,
-  temperature: number = 0.3
+  temperature: number = 0.2
 ): Promise<string | null> {
-  const models = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-2.5-flash", "gemini-1.5-pro"];
+  const models = ["gemini-2.0-flash", "gemini-1.5-flash"];
   
   for (const model of models) {
     try {

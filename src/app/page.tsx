@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Mail, Phone, Heart, ShieldCheck, UserCheck, GraduationCap, Sparkles } from "lucide-react";
+import { Mail, Phone, Heart, ShieldCheck, UserCheck } from "lucide-react";
 import { MathFormula } from "@/components/math/MathFormula";
 
 export default function HomePage() {
@@ -67,63 +67,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* 2. Tính Năng Mới: Gia Sư Toán Học AI (Socratic Tutor) */}
-      <section className="w-full max-w-4xl p-5 sm:p-7 rounded-3xl bg-gradient-to-r from-indigo-950/90 via-slate-900 to-violet-950/90 border-2 border-indigo-500/30 shadow-xl space-y-4">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-black uppercase">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>Tính Năng Mới 2026 • Trí Tuệ Nhân Tạo</span>
-            </div>
-            <h2 className="text-lg sm:text-xl font-black text-white flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-indigo-400" />
-              Gia Sư Toán Học AI (Phương Pháp Gợi Mở Socratic)
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Tuyệt đối không giải hộ hay đưa sẵn đáp án. Gia sư AI sẽ cùng em phân tích bài toán, gợi mở công thức chuẩn KaTeX và hướng dẫn từng bước nhỏ để em tự tin chinh phục mọi dạng toán Lớp 6 - 12!
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2 shrink-0">
-            <div className="px-3 py-1.5 rounded-2xl bg-indigo-500/20 border border-indigo-500/40 text-xs font-bold text-indigo-200 flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Gia Sư AI Sẵn Sàng</span>
-            </div>
-          </div>
-        </div>
-
-        {/* 3 Trụ cột phương pháp */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
-          <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
-            <div className="font-bold text-indigo-300 flex items-center gap-1.5">
-              <span>🧠</span> <span>Gợi Mở Tư Duy</span>
-            </div>
-            <p className="text-[11px] text-slate-400 leading-snug">
-              Đặt câu hỏi dẫn dắt để học sinh tự tìm ra cách giải thay vì chép đáp án.
-            </p>
-          </div>
-
-          <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
-            <div className="font-bold text-cyan-300 flex items-center gap-1.5">
-              <span>📐</span> <span>Chuẩn KaTeX / LaTeX</span>
-            </div>
-            <p className="text-[11px] text-slate-400 leading-snug">
-              Hiển thị phân số, tích phân, căn bậc hai và ma trận sắc nét trên mọi thiết bị.
-            </p>
-          </div>
-
-          <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
-            <div className="font-bold text-amber-300 flex items-center gap-1.5">
-              <span>📚</span> <span>Bám Sát GDPT 2018</span>
-            </div>
-            <p className="text-[11px] text-slate-400 leading-snug">
-              Thuật toán bám sát định dạng và phương pháp SGK Kết nối tri thức.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Thông Tin Web & Liên Hệ Tác Giả */}
+      {/* 2. Thông Tin Web & Liên Hệ Tác Giả */}
       <section className="w-full max-w-4xl p-6 sm:p-8 rounded-3xl bg-card border border-slate-200/80 dark:border-slate-800/80 shadow-sm space-y-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
           <div>

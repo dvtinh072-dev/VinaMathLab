@@ -41,6 +41,10 @@ import {
   EyeOff,
   ExternalLink,
   GraduationCap,
+  Clock,
+  Target,
+  Play,
+  AlertCircle,
 } from "lucide-react";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { GRADE_7_AI_PRACTICE_DATA } from "@/data/grade7AiPracticeData";
@@ -2394,8 +2398,10 @@ export function GamifiedMathQuiz({
 
   // Tổng hợp kết quả toàn bộ buổi làm bài (cả SGK và Luyện thêm)
   const summaryStats = useMemo(() => {
-    let totalQuestions = 0;
+    let totalAllQuestions = 0;
+    let totalAttempted = 0;
     let totalCorrect = 0;
+
     const mistakes: {
       id: string;
       sectionTitle: string;
@@ -2409,11 +2415,22 @@ export function GamifiedMathQuiz({
       explanation: string;
     }[] = [];
 
+    const unattemptedList: {
+      id: string;
+      sectionTitle: string;
+      mode: "sgk" | "ai";
+      sectionTab: "multiple_choice" | "true_false" | "short_answer";
+      questionIndex: number;
+      badge: string;
+      questionText: string;
+    }[] = [];
+
     // 1. Multiple Choice SGK
     sgkQuizList.forEach((q, idx) => {
+      totalAllQuestions++;
       const ans = sgkUserAnswers[idx];
       if (ans !== undefined) {
-        totalQuestions++;
+        totalAttempted++;
         if (ans.isCorrect) {
           totalCorrect++;
         } else {
@@ -2430,16 +2447,28 @@ export function GamifiedMathQuiz({
             explanation: q.explanation || "Xem lại kiến thức bài học.",
           });
         }
+      } else {
+        unattemptedList.push({
+          id: `unattempted-sgk-mc-${q.id || idx}`,
+          sectionTitle: "Phần I: Trắc nghiệm (Bài tập)",
+          mode: "sgk",
+          sectionTab: "multiple_choice",
+          questionIndex: idx,
+          badge: q.badge || `Câu ${idx + 1}`,
+          questionText: q.question,
+        });
       }
     });
 
     // 2. True / False SGK
     sgkTfList.forEach((tf, tfIdx) => {
+      totalAllQuestions++;
       const ans = sgkTfUserAnswers[tfIdx];
       if (ans && ans.isSubmitted) {
-        totalQuestions += tf.subItems.length;
-        totalCorrect += ans.correctCount;
-        if (ans.correctCount < tf.subItems.length) {
+        totalAttempted++;
+        if (ans.correctCount === tf.subItems.length) {
+          totalCorrect++;
+        } else {
           const wrongSubs = tf.subItems.filter(
             (sub) => ans.selected[sub.id] !== undefined && ans.selected[sub.id] !== sub.correctAnswer
           );
@@ -2462,14 +2491,25 @@ export function GamifiedMathQuiz({
               "Xem lại kiến thức bài học.",
           });
         }
+      } else {
+        unattemptedList.push({
+          id: `unattempted-sgk-tf-${tf.id || tfIdx}`,
+          sectionTitle: "Phần II: Đúng / Sai (Bài tập)",
+          mode: "sgk",
+          sectionTab: "true_false",
+          questionIndex: tfIdx,
+          badge: tf.badge || `Câu ${tfIdx + 1} (Đúng / Sai)`,
+          questionText: tf.prompt,
+        });
       }
     });
 
     // 3. Short Answer SGK
     sgkSaList.forEach((sa, saIdx) => {
+      totalAllQuestions++;
       const ans = sgkSaUserAnswers[saIdx];
       if (ans && ans.isSubmitted) {
-        totalQuestions++;
+        totalAttempted++;
         if (ans.isCorrect) {
           totalCorrect++;
         } else {
@@ -2486,96 +2526,151 @@ export function GamifiedMathQuiz({
             explanation: sa.explanation || "Xem lại phương pháp giải.",
           });
         }
+      } else {
+        unattemptedList.push({
+          id: `unattempted-sgk-sa-${sa.id || saIdx}`,
+          sectionTitle: "Phần III: Trả lời ngắn (Bài tập)",
+          mode: "sgk",
+          sectionTab: "short_answer",
+          questionIndex: saIdx,
+          badge: sa.badge || `Câu ${saIdx + 1} (Trả lời ngắn)`,
+          questionText: sa.prompt,
+        });
       }
     });
 
     // 4. Multiple Choice AI (Luyện thêm)
-    aiQuizList.forEach((q, idx) => {
-      const ans = aiUserAnswers[idx];
-      if (ans !== undefined) {
-        totalQuestions++;
-        if (ans.isCorrect) {
-          totalCorrect++;
+    if (!hasExamSets && aiQuizList.length > 0) {
+      aiQuizList.forEach((q, idx) => {
+        totalAllQuestions++;
+        const ans = aiUserAnswers[idx];
+        if (ans !== undefined) {
+          totalAttempted++;
+          if (ans.isCorrect) {
+            totalCorrect++;
+          } else {
+            mistakes.push({
+              id: `ai-mc-${q.id || idx}`,
+              sectionTitle: "Luyện thêm (AI tương tự)",
+              mode: "ai",
+              sectionTab: "multiple_choice",
+              questionIndex: idx,
+              badge: q.badge || `Luyện tập ${idx + 1}`,
+              questionText: q.question,
+              selectedAnswer: q.options[ans.selectedOption] || "Chưa chọn",
+              correctAnswer: q.options[q.correctIndex] || "Không xác định",
+              explanation: q.explanation || "Xem lại kiến thức bài học.",
+            });
+          }
         } else {
-          mistakes.push({
-            id: `ai-mc-${q.id || idx}`,
-            sectionTitle: "Luyện thêm (AI tương tự)",
+          unattemptedList.push({
+            id: `unattempted-ai-mc-${q.id || idx}`,
+            sectionTitle: "Luyện thêm (AI)",
             mode: "ai",
             sectionTab: "multiple_choice",
             questionIndex: idx,
             badge: q.badge || `Luyện tập ${idx + 1}`,
             questionText: q.question,
-            selectedAnswer: q.options[ans.selectedOption] || "Chưa chọn",
-            correctAnswer: q.options[q.correctIndex] || "Không xác định",
-            explanation: q.explanation || "Xem lại kiến thức bài học.",
           });
         }
-      }
-    });
+      });
+    }
 
     // 5. True / False AI (nếu có)
-    aiTfList.forEach((tf, tfIdx) => {
-      const ans = aiTfUserAnswers[tfIdx];
-      if (ans && ans.isSubmitted) {
-        totalQuestions += tf.subItems.length;
-        totalCorrect += ans.correctCount;
-        if (ans.correctCount < tf.subItems.length) {
-          const wrongSubs = tf.subItems.filter(
-            (sub) => ans.selected[sub.id] !== undefined && ans.selected[sub.id] !== sub.correctAnswer
-          );
-          mistakes.push({
-            id: `ai-tf-${tf.id || tfIdx}`,
+    if (!hasExamSets && aiTfList.length > 0) {
+      aiTfList.forEach((tf, tfIdx) => {
+        totalAllQuestions++;
+        const ans = aiTfUserAnswers[tfIdx];
+        if (ans && ans.isSubmitted) {
+          totalAttempted++;
+          if (ans.correctCount === tf.subItems.length) {
+            totalCorrect++;
+          } else {
+            const wrongSubs = tf.subItems.filter(
+              (sub) => ans.selected[sub.id] !== undefined && ans.selected[sub.id] !== sub.correctAnswer
+            );
+            mistakes.push({
+              id: `ai-tf-${tf.id || tfIdx}`,
+              sectionTitle: "Luyện thêm: Đúng / Sai (AI)",
+              mode: "ai",
+              sectionTab: "true_false",
+              questionIndex: tfIdx,
+              badge: tf.badge || `Luyện tập ${tfIdx + 1} (Đúng / Sai)`,
+              questionText: tf.prompt,
+              selectedAnswer: wrongSubs
+                .map((s) => `Ý ${s.id}) chọn ${ans.selected[s.id] ? "Đúng" : "Sai"}`)
+                .join(", "),
+              correctAnswer: wrongSubs
+                .map((s) => `Ý ${s.id}) phải là ${s.correctAnswer ? "Đúng" : "Sai"}`)
+                .join(", "),
+              explanation:
+                wrongSubs.map((s) => `[Ý ${s.id}]: ${s.explanation || (s.correctAnswer ? "Mệnh đề đúng" : "Mệnh đề sai")}`).join(" | ") ||
+                "Xem lại kiến thức bài học.",
+            });
+          }
+        } else {
+          unattemptedList.push({
+            id: `unattempted-ai-tf-${tf.id || tfIdx}`,
             sectionTitle: "Luyện thêm: Đúng / Sai (AI)",
             mode: "ai",
             sectionTab: "true_false",
             questionIndex: tfIdx,
             badge: tf.badge || `Luyện tập ${tfIdx + 1} (Đúng / Sai)`,
             questionText: tf.prompt,
-            selectedAnswer: wrongSubs
-              .map((s) => `Ý ${s.id}) chọn ${ans.selected[s.id] ? "Đúng" : "Sai"}`)
-              .join(", "),
-            correctAnswer: wrongSubs
-              .map((s) => `Ý ${s.id}) phải là ${s.correctAnswer ? "Đúng" : "Sai"}`)
-              .join(", "),
-            explanation:
-              wrongSubs.map((s) => `[Ý ${s.id}]: ${s.explanation || (s.correctAnswer ? "Mệnh đề đúng" : "Mệnh đề sai")}`).join(" | ") ||
-              "Xem lại kiến thức bài học.",
           });
         }
-      }
-    });
+      });
+    }
 
     // 6. Short Answer AI (nếu có)
-    aiSaList.forEach((sa, saIdx) => {
-      const ans = aiSaUserAnswers[saIdx];
-      if (ans && ans.isSubmitted) {
-        totalQuestions++;
-        if (ans.isCorrect) {
-          totalCorrect++;
+    if (!hasExamSets && aiSaList.length > 0) {
+      aiSaList.forEach((sa, saIdx) => {
+        totalAllQuestions++;
+        const ans = aiSaUserAnswers[saIdx];
+        if (ans && ans.isSubmitted) {
+          totalAttempted++;
+          if (ans.isCorrect) {
+            totalCorrect++;
+          } else {
+            mistakes.push({
+              id: `ai-sa-${sa.id || saIdx}`,
+              sectionTitle: "Luyện thêm: Trả lời ngắn (AI)",
+              mode: "ai",
+              sectionTab: "short_answer",
+              questionIndex: saIdx,
+              badge: sa.badge || `Luyện tập ${saIdx + 1} (Trả lời ngắn)`,
+              questionText: sa.prompt,
+              selectedAnswer: ans.answerText || "Chưa nhập",
+              correctAnswer: sa.correctAnswer,
+              explanation: sa.explanation || "Xem lại phương pháp giải.",
+            });
+          }
         } else {
-          mistakes.push({
-            id: `ai-sa-${sa.id || saIdx}`,
+          unattemptedList.push({
+            id: `unattempted-ai-sa-${sa.id || saIdx}`,
             sectionTitle: "Luyện thêm: Trả lời ngắn (AI)",
             mode: "ai",
             sectionTab: "short_answer",
             questionIndex: saIdx,
             badge: sa.badge || `Luyện tập ${saIdx + 1} (Trả lời ngắn)`,
             questionText: sa.prompt,
-            selectedAnswer: ans.answerText || "Chưa nhập",
-            correctAnswer: sa.correctAnswer,
-            explanation: sa.explanation || "Xem lại phương pháp giải.",
           });
         }
-      }
-    });
+      });
+    }
 
-    const accuracyRate = totalQuestions > 0 ? Math.round((totalCorrect / totalQuestions) * 100) : 0;
+    const attemptedAccuracyRate = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
+    const completionRate = totalAllQuestions > 0 ? Math.round((totalAttempted / totalAllQuestions) * 100) : 0;
 
     return {
-      totalQuestions,
+      totalAllQuestions,
+      totalAttempted,
       totalCorrect,
-      accuracyRate,
+      attemptedAccuracyRate,
+      completionRate,
+      unattemptedQuestionsCount: unattemptedList.length,
       mistakes,
+      unattemptedList,
     };
   }, [
     sgkQuizList,
@@ -2584,6 +2679,7 @@ export function GamifiedMathQuiz({
     sgkTfUserAnswers,
     sgkSaList,
     sgkSaUserAnswers,
+    hasExamSets,
     aiQuizList,
     aiUserAnswers,
     aiTfList,
@@ -2592,7 +2688,34 @@ export function GamifiedMathQuiz({
     aiSaUserAnswers,
   ]);
 
-  const getPedagogicalFeedback = (rate: number, mistakeCount: number) => {
+  const getPedagogicalFeedback = (
+    rate: number,
+    mistakeCount: number,
+    unattemptedCount: number,
+    attemptedCount: number,
+    totalCount: number
+  ) => {
+    if (unattemptedCount > 0) {
+      if (attemptedCount === 0) {
+        return {
+          tag: "⚠️ Chưa hoàn thành bài tập",
+          tagColor: "text-amber-300 bg-amber-500/20 border-amber-400",
+          avatarIcon: AlertTriangle,
+          quote:
+            `Em chưa làm câu hỏi nào trong bài học này (còn ${unattemptedCount}/${totalCount} câu chưa làm). Bạn cần hoàn thành bài tập để ghi nhận tiến độ và tích lũy điểm thưởng nhé!`,
+          advice: "Hãy bấm nút 'Bắt đầu làm bài tập' để bắt đầu thử sức và tích lũy điểm số ngay.",
+        };
+      }
+      return {
+        tag: "⚠️ Chưa hoàn thành bài tập",
+        tagColor: "text-amber-300 bg-amber-500/20 border-amber-400",
+        avatarIcon: AlertTriangle,
+        quote:
+          `Em đã làm được ${attemptedCount}/${totalCount} câu với tỉ lệ làm đúng là ${rate}% (${attemptedCount - mistakeCount}/${attemptedCount} câu đúng). Tuy nhiên, em vẫn còn ${unattemptedCount} câu chưa hoàn thành. Bạn cần hoàn thành bài tập để nắm vững trọn vẹn kiến thức và được công nhận hoàn tất bài học nhé!`,
+        advice: `Em hãy bấm nút "Tiếp tục làm các câu chưa xong" bên dưới để giải nốt ${unattemptedCount} câu hỏi còn lại nhé.`,
+      };
+    }
+
     if (rate === 100 || mistakeCount === 0) {
       return {
         tag: "👑 Xuất sắc toàn diện!",
@@ -2609,7 +2732,7 @@ export function GamifiedMathQuiz({
         tagColor: "text-cyan-300 bg-cyan-500/20 border-cyan-400",
         avatarIcon: Trophy,
         quote:
-          "Rất tốt! Em đã thể hiện sự tập trung cao độ và nắm rất chắc các dạng toán trọng tâm của bài qua cả phần bài tập lẫn luyện thêm. Chỉ còn một vài câu em nhầm lẫn nhỏ ở bước biến đổi hoặc điều kiện. Em hãy xem lại phân tích các câu sai bên dưới để hoàn thiện 100% kỹ năng nhé!",
+          "Rất tốt! Em đã hoàn thành toàn bộ câu hỏi của bài học và thể hiện sự tập trung cao độ, nắm rất chắc các dạng toán trọng tâm. Chỉ còn một vài câu em nhầm lẫn nhỏ ở bước biến đổi hoặc điều kiện. Em hãy xem lại phân tích các câu sai bên dưới để hoàn thiện 100% kỹ năng nhé!",
         advice: "Em hãy bấm 'Làm lại các câu sai' bên dưới để sửa lại các câu chưa chính xác và biến sai lầm thành bài học kinh nghiệm quý giá.",
       };
     }
@@ -2619,7 +2742,7 @@ export function GamifiedMathQuiz({
         tagColor: "text-emerald-300 bg-emerald-500/20 border-emerald-400",
         avatarIcon: Sparkles,
         quote:
-          "Khá tốt! Thầy/cô khen ngợi tinh thần tự giác và sự kiên trì của em khi đã nỗ lực làm hết tất cả các phần bài tập và luyện thêm. Em đã nắm được các khái niệm và công thức cơ bản. Để nâng cao điểm số, em hãy lưu ý đọc kỹ dữ kiện đề bài và các bẫy thường gặp. Xem kỹ hướng dẫn từng câu sai bên dưới nhé!",
+          "Khá tốt! Thầy/cô khen ngợi tinh thần tự giác và sự kiên trì của em khi đã hoàn thành đủ các phần bài tập và luyện thêm. Em đã nắm được các khái niệm và công thức cơ bản. Để nâng cao điểm số, em hãy lưu ý đọc kỹ dữ kiện đề bài và các bẫy thường gặp. Xem kỹ hướng dẫn từng câu sai bên dưới nhé!",
         advice: "Dành 2-3 phút đọc lại lời giải chi tiết cho các câu sai, sau đó bấm 'Làm lại các câu sai' để khắc sâu kiến thức.",
       };
     }
@@ -2627,20 +2750,55 @@ export function GamifiedMathQuiz({
       return {
         tag: "🥉 Nỗ lực đáng khen - Cố gắng lên nhé!",
         tagColor: "text-orange-300 bg-orange-500/20 border-orange-400",
-        avatarIcon: Heart,
+        avatarIcon: Target,
         quote:
-          "Rất đáng khen ngợi sự kiên trì của em! Dù bài tập có nhiều dạng toán thử thách nhưng em đã không nản lòng và hoàn thành cả bài tập lẫn phần luyện thêm. Trong môn Toán, mỗi lần làm sai là một cơ hội tuyệt vời để em phát hiện lỗ hổng kiến thức và tiến bộ. Em hãy đọc kỹ hướng dẫn giải chi tiết bên dưới rồi làm lại nhé!",
+          "Rất đáng khen ngợi sự kiên trì của em! Dù bài tập có nhiều dạng toán thử thách nhưng em đã không nản lòng và hoàn thành đầy đủ cả bài tập lẫn phần luyện thêm. Trong môn Toán, mỗi lần làm sai là một cơ hội tuyệt vời để em phát hiện lỗ hổng kiến thức và tiến bộ. Em hãy đọc kỹ hướng dẫn giải chi tiết bên dưới rồi làm lại nhé!",
         advice: "Đừng vội nản lòng. Hãy xem kỹ phần 'Kiến thức cần nhớ' và lời giải chi tiết ở các câu sai, sau đó thử làm lại từng câu một.",
       };
     }
     return {
       tag: "🎯 Khởi đầu kiên trì - Vững bước tiến bộ!",
       tagColor: "text-purple-300 bg-purple-500/20 border-purple-400",
-      avatarIcon: Award,
+      avatarIcon: AlertTriangle,
       quote:
         "Thầy/cô rất trân trọng nỗ lực của em khi đã kiên trì làm bài đến câu cuối cùng của cả phần luyện thêm. Bài học này có nhiều khái niệm và công thức mới cần thời gian rèn luyện. Em hãy bình tĩnh xem lại video bài giảng và bảng tóm tắt kiến thức cần nhớ, sau đó làm lại các câu bên dưới để từng bước tiến bộ nhé!",
       advice: "Khuyên em nên bấm 'Xem lại Lý thuyết' để củng cố các công thức trọng tâm, sau đó bấm 'Làm lại các câu sai' để làm quen dần với các dạng bài.",
     };
+  };
+
+  const handleGoToQuestion = (item: {
+    mode: "sgk" | "ai";
+    sectionTab: "multiple_choice" | "true_false" | "short_answer";
+    questionIndex: number;
+  }) => {
+    setQuizMode(item.mode);
+    setActiveSectionTab(item.sectionTab);
+    if (item.sectionTab === "multiple_choice") {
+      if (item.mode === "ai") {
+        setAiCurrentIndex(item.questionIndex);
+      } else {
+        setSgkCurrentIndex(item.questionIndex);
+      }
+    } else if (item.sectionTab === "true_false") {
+      if (item.mode === "ai") {
+        setAiTfCurrentIndex(item.questionIndex);
+      } else {
+        setSgkTfCurrentIndex(item.questionIndex);
+      }
+    } else if (item.sectionTab === "short_answer") {
+      if (item.mode === "ai") {
+        setAiSaCurrentIndex(item.questionIndex);
+      } else {
+        setSgkSaCurrentIndex(item.questionIndex);
+      }
+    }
+    setIsCompleted(false);
+  };
+
+  const handleContinueUnfinished = () => {
+    if (summaryStats.unattemptedList.length > 0) {
+      handleGoToQuestion(summaryStats.unattemptedList[0]);
+    }
   };
 
   // Làm lại một câu sai cụ thể
@@ -4642,74 +4800,128 @@ export function GamifiedMathQuiz({
         /* MÀN HÌNH TỔNG KẾT ĐIỂM TOÀN BÀI HỌC VÀ LỜI NHẬN XÉT SƯ PHẠM               */
         /* ========================================================================= */
         (() => {
-          const feedback = getPedagogicalFeedback(summaryStats.accuracyRate, summaryStats.mistakes.length);
+          const feedback = getPedagogicalFeedback(
+            summaryStats.attemptedAccuracyRate,
+            summaryStats.mistakes.length,
+            summaryStats.unattemptedQuestionsCount,
+            summaryStats.totalAttempted,
+            summaryStats.totalAllQuestions
+          );
           const FeedbackIcon = feedback.avatarIcon;
+          const isUnfinished = summaryStats.unattemptedQuestionsCount > 0;
 
           return (
             <div className="py-4 space-y-5 animate-in zoom-in-95 duration-200 text-left">
               {/* Top Trophy & Title */}
               <div className="text-center space-y-2">
-                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-amber-400 via-yellow-400 to-amber-500 flex items-center justify-center text-slate-950 font-black shadow-xl shadow-amber-500/40 animate-bounce">
+                <div
+                  className={`w-16 h-16 mx-auto rounded-2xl flex items-center justify-center text-slate-950 font-black shadow-xl animate-bounce ${
+                    isUnfinished
+                      ? "bg-gradient-to-tr from-amber-500 via-orange-500 to-amber-400 shadow-amber-500/40"
+                      : "bg-gradient-to-tr from-amber-400 via-yellow-400 to-amber-500 shadow-amber-500/40"
+                  }`}
+                >
                   <FeedbackIcon className="w-8 h-8" />
                 </div>
                 <div className="space-y-1">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border shadow-sm mb-1 bg-slate-900/90 text-amber-300 border-amber-500/40">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  <div
+                    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border shadow-sm mb-1 ${
+                      isUnfinished
+                        ? "bg-amber-950/90 text-amber-300 border-amber-500/50"
+                        : "bg-slate-900/90 text-amber-300 border-amber-500/40"
+                    }`}
+                  >
+                    {isUnfinished ? (
+                      <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+                    ) : (
+                      <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                    )}
                     <span>{feedback.tag}</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-                    🎉 Tổng Kết Kết Quả Bài Học & Luyện Tập
+                    {isUnfinished
+                      ? "⚠️ Báo Cáo Tiến Độ: Chưa Hoàn Thành Bài Tập"
+                      : "🎉 Tổng Kết Kết Quả Bài Học & Luyện Tập"}
                   </h3>
                   <p className="text-xs text-slate-300 max-w-xl mx-auto">
-                    {lessonTitle} • Khối {gradeTitle}
+                    {isUnfinished
+                      ? `Đã làm ${summaryStats.totalAttempted} / ${summaryStats.totalAllQuestions} câu • Còn ${summaryStats.unattemptedQuestionsCount} câu chưa làm • ${lessonTitle}`
+                      : `${lessonTitle} • Khối ${gradeTitle}`}
                   </p>
                 </div>
               </div>
 
+              {/* Banner cảnh báo nổi bật khi còn câu chưa làm */}
+              {isUnfinished && (
+                <div className="p-4 rounded-2xl bg-gradient-to-r from-amber-950/80 via-slate-900 to-amber-950/80 border-2 border-amber-500/60 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/40 shrink-0 mt-0.5">
+                      <AlertTriangle className="w-5 h-5 animate-pulse" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm sm:text-base font-black text-amber-300 uppercase tracking-tight">
+                        Chưa hoàn thành — Bạn cần hoàn thành bài tập!
+                      </h4>
+                      <p className="text-xs text-amber-200/90 mt-1 leading-relaxed">
+                        Em mới thực hiện <strong>{summaryStats.totalAttempted}/{summaryStats.totalAllQuestions} câu</strong>. Hiện còn <strong>{summaryStats.unattemptedQuestionsCount} câu chưa làm</strong>. Hãy bấm nút bên cạnh để làm tiếp và hoàn tất bài học nhé!
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={handleContinueUnfinished}
+                    className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-amber-500/30 shrink-0 cursor-pointer self-start sm:self-auto"
+                  >
+                    <Play className="w-4 h-4 fill-slate-950" />
+                    <span>Làm tiếp câu chưa xong</span>
+                  </button>
+                </div>
+              )}
+
               {/* 4 Thẻ Thống Kê Điểm Số & Thành Tích */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-xs">
                 <div className="p-3 rounded-xl bg-slate-900/90 border border-cyan-500/40 space-y-0.5 text-center shadow-sm">
-                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tỉ Lệ Chính Xác</span>
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tỉ Lệ Đúng (Đã Làm)</span>
                   <div className="text-xl font-black text-cyan-300">
-                    {summaryStats.accuracyRate}%
+                    {summaryStats.attemptedAccuracyRate}%
                   </div>
                   <span className="text-[10px] text-slate-400 block font-medium">
-                    {summaryStats.totalCorrect}/{summaryStats.totalQuestions} câu đúng
+                    {summaryStats.totalCorrect}/{summaryStats.totalAttempted} câu đã làm đúng
                   </span>
                 </div>
 
                 <div className="p-3 rounded-xl bg-slate-900/90 border border-amber-500/40 space-y-0.5 text-center shadow-sm">
-                  <span className="text-slate-400 text-[10px] uppercase font-bold block">EXP Bài Học</span>
-                  <div className="text-xl font-black text-amber-300">
-                    +{sessionScore}
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tiến Độ Hoàn Thành</span>
+                  <div className={`text-xl font-black ${isUnfinished ? "text-amber-300" : "text-emerald-300"}`}>
+                    {summaryStats.totalAttempted}/{summaryStats.totalAllQuestions}
                   </div>
-                  <span className="text-[10px] text-amber-400/80 block font-medium">
-                    Điểm thưởng vòng này
+                  <span className={`text-[10px] block font-medium ${isUnfinished ? "text-amber-400" : "text-emerald-400"}`}>
+                    {isUnfinished ? `Còn ${summaryStats.unattemptedQuestionsCount} câu chưa làm` : "Đã làm hết 100% ✓"}
                   </span>
                 </div>
 
                 <div className="p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 space-y-0.5 text-center shadow-sm">
-                  <span className="text-slate-400 text-[10px] uppercase font-bold block">VinaCoins</span>
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">EXP Bài Học</span>
                   <div className="text-xl font-black text-purple-300">
-                    +{coinsEarned} 🪙
+                    +{sessionScore}
                   </div>
                   <span className="text-[10px] text-purple-400/80 block font-medium">
-                    Xu tích lũy hồ sơ
+                    Điểm thưởng vòng này
                   </span>
                 </div>
 
                 <div className="p-3 rounded-xl bg-slate-900/90 border border-emerald-500/40 space-y-0.5 text-center shadow-sm">
-                  <span className="text-slate-400 text-[10px] uppercase font-bold block">Tổng EXP Khối</span>
+                  <span className="text-slate-400 text-[10px] uppercase font-bold block">VinaCoins</span>
                   <div className="text-xl font-black text-emerald-300">
-                    {formatNaturalNumber(gradeTotalScore)}
+                    +{coinsEarned} 🪙
                   </div>
                   <span className="text-[10px] text-emerald-400/80 block font-medium">
-                    {rank.title}
+                    Xu tích lũy hồ sơ
                   </span>
                 </div>
               </div>
 
-              {/* Lời Nhận Xét Khen Ngợi & Động Viên Sư Phạm (Ấm áp, chân thành, không quá lố) */}
+              {/* Lời Nhận Xét Khen Ngợi & Động Viên Sư Phạm */}
               <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 border border-cyan-500/40 shadow-xl space-y-3">
                 <div className="flex items-center gap-2.5 text-cyan-300 font-bold text-sm sm:text-base border-b border-cyan-500/20 pb-2">
                   <div className="w-7 h-7 rounded-lg bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300">
@@ -4731,14 +4943,75 @@ export function GamifiedMathQuiz({
                 </div>
               </div>
 
-              {/* Danh Sách Câu Chưa Đúng & Hướng Dẫn Ôn Tập Bổ Sung */}
-              {summaryStats.mistakes.length === 0 ? (
-                <div className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/50 flex items-center gap-3 text-emerald-300 shadow-md">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <div className="text-xs sm:text-sm font-bold">
-                    🌟 Xuất sắc! Em đã trả lời chính xác tất cả các câu hỏi trong cả bài tập và phần luyện thêm! Không có câu nào bị sai sót.
+              {/* Danh Sách Các Câu Chưa Làm (NẾU CÓ CÂU CHƯA LÀM) */}
+              {summaryStats.unattemptedList.length > 0 && (
+                <div className="space-y-3 pt-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-xl bg-amber-950/50 border border-amber-500/40 shadow-inner">
+                    <div className="flex items-center gap-2 text-amber-300 font-bold text-xs sm:text-sm">
+                      <Clock className="w-4 h-4 text-amber-400 shrink-0" />
+                      <span>Danh sách câu chưa hoàn thành ({summaryStats.unattemptedList.length} câu) — Bạn cần hoàn thành bài tập:</span>
+                    </div>
+
+                    <button
+                      onClick={handleContinueUnfinished}
+                      className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black text-xs flex items-center justify-center gap-1.5 hover:scale-105 transition-all shadow-md shadow-amber-500/30 cursor-pointer self-start sm:self-auto active:scale-95"
+                    >
+                      <Play className="w-3.5 h-3.5 fill-slate-950" />
+                      <span>Làm tiếp câu chưa xong</span>
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {summaryStats.unattemptedList.map((item) => (
+                      <div
+                        key={item.id}
+                        className="p-3.5 rounded-2xl bg-[#131B2E] border border-amber-500/30 flex flex-col justify-between gap-3 shadow-md hover:border-amber-400/60 transition-colors"
+                      >
+                        <div className="space-y-1.5">
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                              {item.sectionTitle}
+                            </span>
+                            <span className="text-xs font-black text-white">
+                              {item.badge}
+                            </span>
+                          </div>
+
+                          <div className="text-xs sm:text-sm font-bold text-slate-200 leading-relaxed line-clamp-3">
+                            <MathFormattedText text={item.questionText} />
+                          </div>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2 pt-2 border-t border-slate-800">
+                          <span className="text-[11px] font-bold text-amber-400 flex items-center gap-1">
+                            <AlertCircle className="w-3.5 h-3.5 text-amber-400" />
+                            <span>Chưa làm</span>
+                          </span>
+
+                          <button
+                            onClick={() => handleGoToQuestion(item)}
+                            className="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs flex items-center gap-1 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+                          >
+                            <span>Làm câu này ngay</span>
+                            <ChevronRight className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
+              )}
+
+              {/* Danh Sách Câu Chưa Đúng & Hướng Dẫn Ôn Tập Bổ Sung */}
+              {summaryStats.mistakes.length === 0 ? (
+                summaryStats.unattemptedList.length === 0 && (
+                  <div className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/50 flex items-center gap-3 text-emerald-300 shadow-md">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+                    <div className="text-xs sm:text-sm font-bold">
+                      🌟 Xuất sắc! Em đã trả lời chính xác tất cả các câu hỏi trong cả bài tập và phần luyện thêm! Không có câu nào bị sai sót.
+                    </div>
+                  </div>
+                )
               ) : (
                 <div className="space-y-3">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-xl bg-slate-950/80 border border-rose-500/30 shadow-inner">
@@ -4832,6 +5105,16 @@ export function GamifiedMathQuiz({
 
               {/* Action Buttons */}
               <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center justify-center gap-3">
+                {isUnfinished && (
+                  <button
+                    onClick={handleContinueUnfinished}
+                    className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-amber-500/30 cursor-pointer active:scale-95"
+                  >
+                    <Play className="w-4 h-4 fill-slate-950" />
+                    <span>Tiếp tục làm bài tập ({summaryStats.unattemptedQuestionsCount} câu còn lại)</span>
+                  </button>
+                )}
+
                 {summaryStats.mistakes.length > 0 && (
                   <button
                     onClick={handleRetryAllMistakes}

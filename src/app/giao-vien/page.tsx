@@ -37,6 +37,13 @@ import {
   Code,
   Share2,
   ShieldAlert,
+  Grid,
+  Sliders,
+  Globe,
+  Database,
+  HelpCircle,
+  Check,
+  UploadCloud,
 } from "lucide-react";
 import { useAuth, UserProfile } from "@/context/AuthContext";
 import { TEACHER_RESOURCES } from "@/data/teacherResources";
@@ -54,6 +61,9 @@ import {
   SAMPLE_TEACHER_EXAM_TEXT_GRADE_6,
 } from "@/lib/examParser";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
+import { ExamMatrix, MatrixTopicItem, PrebuiltMatrix } from "@/types/examMatrix";
+import { PREBUILT_EXAM_MATRICES } from "@/data/prebuiltMatrices";
+import { parseMatrixFromRawText } from "@/lib/matrixExamGenerator";
 
 export default function GiaoVienPage() {
   const router = useRouter();
@@ -96,6 +106,19 @@ export default function GiaoVienPage() {
   const [isParsingFile, setIsParsingFile] = useState(false);
   const [isSavingExam, setIsSavingExam] = useState(false);
   const [examCreationSuccess, setExamCreationSuccess] = useState<string | null>(null);
+
+  // Matrix Generator States
+  const [isMatrixModalOpen, setIsMatrixModalOpen] = useState(false);
+  const [matrixGradeNumber, setMatrixGradeNumber] = useState<number>(10);
+  const [matrixTargetClass, setMatrixTargetClass] = useState("");
+  const [matrixTitle, setMatrixTitle] = useState("");
+  const [matrixDuration, setMatrixDuration] = useState<number>(45);
+  const [matrixSourceOption, setMatrixSourceOption] = useState<"project" | "internet" | "hybrid">("hybrid");
+  const [matrixTopics, setMatrixTopics] = useState<MatrixTopicItem[]>([]);
+  const [isGeneratingFromMatrix, setIsGeneratingFromMatrix] = useState(false);
+  const [matrixRawText, setMatrixRawText] = useState("");
+  const [matrixUploadMode, setMatrixUploadMode] = useState<"prebuilt" | "manual" | "upload">("prebuilt");
+  const [selectedPrebuiltId, setSelectedPrebuiltId] = useState<string>("matrix-t10-gk1");
 
   // Modal Chi Tiết Học Sinh
   const [selectedStudentDetail, setSelectedStudentDetail] = useState<any | null>(null);
@@ -395,6 +418,136 @@ export default function GiaoVienPage() {
     a.download = `BangDiem_${exam.title.replace(/\s+/g, "_")}_${exam.targetClass}.csv`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  const loadPrebuiltMatrix = (matrixId: string) => {
+    setSelectedPrebuiltId(matrixId);
+    const found = PREBUILT_EXAM_MATRICES.find((m) => m.id === matrixId);
+    if (found) {
+      setMatrixGradeNumber(found.gradeNumber);
+      setMatrixTitle(found.title);
+      setMatrixDuration(found.durationMinutes);
+      setMatrixTopics(JSON.parse(JSON.stringify(found.topics)));
+      if (!matrixTargetClass && assignedClasses.length > 0) {
+        setMatrixTargetClass(assignedClasses[0]);
+      }
+    }
+  };
+
+  const handleAddMatrixTopic = () => {
+    const newId = `topic-${Date.now()}`;
+    setMatrixTopics((prev) => [
+      ...prev,
+      {
+        id: newId,
+        topicName: `Chủ đề mới ${prev.length + 1}`,
+        part1: { nb: 2, th: 1, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+      },
+    ]);
+  };
+
+  const handleRemoveMatrixTopic = (id: string) => {
+    setMatrixTopics((prev) => prev.filter((t) => t.id !== id));
+  };
+
+  const handleUpdateMatrixCell = (
+    topicId: string,
+    part: "part1" | "part2" | "part3",
+    level: "nb" | "th" | "vd" | "vdc",
+    val: number
+  ) => {
+    setMatrixTopics((prev) =>
+      prev.map((t) => {
+        if (t.id !== topicId) return t;
+        return {
+          ...t,
+          [part]: {
+            ...t[part],
+            [level]: Math.max(0, val),
+          },
+        };
+      })
+    );
+  };
+
+  const handleGenerateFromMatrix = async () => {
+    if (!matrixTitle.trim()) {
+      alert("Vui lòng nhập tên đề thi theo ma trận");
+      return;
+    }
+    if (matrixTopics.length === 0) {
+      alert("Ma trận chưa có chủ đề nào. Vui lòng thêm ít nhất 1 chủ đề.");
+      return;
+    }
+    setIsGeneratingFromMatrix(true);
+    try {
+      const payloadMatrix: ExamMatrix = {
+        title: matrixTitle.trim(),
+        grade: `lop-${matrixGradeNumber}`,
+        gradeNumber: matrixGradeNumber,
+        targetClass: matrixTargetClass.trim() || (assignedClasses[0] || "Tất cả các lớp"),
+        durationMinutes: matrixDuration,
+        topics: matrixTopics,
+        sourceOption: matrixSourceOption,
+      };
+
+      const res = await fetch("/api/teacher/exams/matrix-generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ matrix: payloadMatrix }),
+      });
+      const data = await res.json();
+      if (data.success && data.exam) {
+        setNewExamTitle(data.exam.title || matrixTitle);
+        setNewExamTargetClass(data.exam.targetClass || matrixTargetClass || (assignedClasses[0] || "Tất cả các lớp"));
+        setNewExamGradeNumber(data.exam.gradeNumber || matrixGradeNumber);
+        setNewExamDuration(data.exam.durationMinutes || matrixDuration);
+        setParsedPreviewQuestions(data.exam.questions || []);
+        setParseErrors(data.warnings || []);
+
+        setIsMatrixModalOpen(false);
+        setIsCreateModalOpen(true);
+      } else {
+        alert(data.error || "Không thể tạo đề thi từ ma trận");
+      }
+    } catch (e: any) {
+      alert("Lỗi khi tạo đề từ ma trận: " + (e?.message || ""));
+    } finally {
+      setIsGeneratingFromMatrix(false);
+    }
+  };
+
+  const handleMatrixFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setIsGeneratingFromMatrix(true);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("gradeNumber", String(matrixGradeNumber));
+
+      const res = await fetch("/api/teacher/exams/parse-file", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success && data.rawText) {
+        setMatrixRawText(data.rawText);
+        const parsedMat = parseMatrixFromRawText(data.rawText, matrixGradeNumber);
+        setMatrixTitle(parsedMat.title || matrixTitle);
+        setMatrixDuration(parsedMat.durationMinutes || matrixDuration);
+        setMatrixTopics(parsedMat.topics);
+        setMatrixUploadMode("manual");
+      } else {
+        alert(data.error || "Không thể phân tích file ma trận");
+      }
+    } catch (err: any) {
+      alert("Lỗi xử lý file ma trận: " + err?.message);
+    } finally {
+      setIsGeneratingFromMatrix(false);
+    }
   };
 
   const handleTeacherLogin = async (e: React.FormEvent) => {
@@ -1250,18 +1403,31 @@ export default function GiaoVienPage() {
               </p>
             </div>
 
-            <button
-              onClick={() => {
-                setIsCreateModalOpen(true);
-                if (assignedClasses.length > 0 && !newExamTargetClass) {
-                  setNewExamTargetClass(assignedClasses[0]);
-                }
-              }}
-              className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white font-black text-xs transition-all shadow-lg shadow-blue-500/30 cursor-pointer flex items-center gap-2 shrink-0"
-            >
-              <PlusCircle className="w-4 h-4" />
-              <span>Tạo Đề Thi Mới Theo Lớp</span>
-            </button>
+            <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+              <button
+                onClick={() => {
+                  setIsMatrixModalOpen(true);
+                  loadPrebuiltMatrix("matrix-t10-gk1");
+                }}
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-orange-500/25 cursor-pointer flex items-center gap-2 shrink-0"
+              >
+                <Grid className="w-4 h-4" />
+                <span>Tạo Đề Từ Ma Trận Đề Thi</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setIsCreateModalOpen(true);
+                  if (assignedClasses.length > 0 && !newExamTargetClass) {
+                    setNewExamTargetClass(assignedClasses[0]);
+                  }
+                }}
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white font-black text-xs transition-all shadow-lg shadow-blue-500/30 cursor-pointer flex items-center gap-2 shrink-0"
+              >
+                <PlusCircle className="w-4 h-4" />
+                <span>Tạo Đề Thủ Công / Tải File</span>
+              </button>
+            </div>
           </div>
 
           {/* Bộ Lọc Theo Lớp & Thống Kê Nhanh */}
@@ -1773,6 +1939,391 @@ Câu 3: Tìm x...
                 <Sparkles className="w-4 h-4" />
                 <span>{isSavingExam ? "Đang xuất bản..." : "XUẤT BẢN ĐỀ THI & LẤY LINK LÀM BÀI"}</span>
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MODAL MATRIX: TẠO ĐỀ THI TỪ MA TRẬN & NGÂN HÀNG CÂU HỎI                    */}
+      {/* ========================================================================= */}
+      {isMatrixModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md animate-in fade-in">
+          <div className="w-full max-w-4xl rounded-3xl bg-[#0d1424] border-2 border-orange-500/40 p-6 sm:p-7 space-y-5 shadow-2xl overflow-hidden max-h-[92vh] overflow-y-auto text-white">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-orange-500/40 flex items-center justify-center text-orange-400">
+                  <Grid className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base sm:text-lg font-black text-white flex items-center gap-2">
+                    <span>Tạo Đề Thi Tự Động Từ Ma Trận Đề</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-400 border border-orange-500/30 font-bold">
+                      Chuẩn BGD 2025
+                    </span>
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Chọn ma trận có sẵn, chỉnh sửa hoặc tải file ma trận lên để hệ thống tự động bốc câu hỏi từ ngân hàng dự án & AI
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsMatrixModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Chế độ ma trận */}
+            <div className="flex flex-wrap items-center justify-between gap-3 p-3 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setMatrixUploadMode("prebuilt")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    matrixUploadMode === "prebuilt"
+                      ? "bg-orange-500 text-slate-950 shadow-md shadow-orange-500/20"
+                      : "bg-slate-800 text-slate-300 hover:text-white"
+                  }`}
+                >
+                  Ma trận mẫu Bộ GD&ĐT
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMatrixUploadMode("manual")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    matrixUploadMode === "manual"
+                      ? "bg-orange-500 text-slate-950 shadow-md shadow-orange-500/20"
+                      : "bg-slate-800 text-slate-300 hover:text-white"
+                  }`}
+                >
+                  Tùy chỉnh số câu theo cấp độ
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMatrixUploadMode("upload")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    matrixUploadMode === "upload"
+                      ? "bg-orange-500 text-slate-950 shadow-md shadow-orange-500/20"
+                      : "bg-slate-800 text-slate-300 hover:text-white"
+                  }`}
+                >
+                  Tải file ma trận lên
+                </button>
+              </div>
+
+              {/* Nguồn tạo câu hỏi */}
+              <div className="flex items-center gap-1.5 text-xs">
+                <span className="text-slate-400 font-medium">Nguồn câu hỏi:</span>
+                <select
+                  value={matrixSourceOption}
+                  onChange={(e: any) => setMatrixSourceOption(e.target.value)}
+                  className="px-2.5 py-1 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-xs focus:outline-none focus:border-orange-500 cursor-pointer"
+                >
+                  <option value="hybrid">⚡ Kết hợp (Dự án + AI/Internet)</option>
+                  <option value="project">📚 Nguồn trong dự án (Ngân hàng chuẩn)</option>
+                  <option value="internet">🌐 Nguồn Internet / AI Generator</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Chọn ma trận có sẵn */}
+            {matrixUploadMode === "prebuilt" && (
+              <div className="space-y-2">
+                <label className="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                  <Sliders className="w-3.5 h-3.5 text-orange-400" />
+                  <span>Chọn mẫu ma trận chuẩn Bộ GD&ĐT:</span>
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                  {PREBUILT_EXAM_MATRICES.map((m) => {
+                    const isSelected = selectedPrebuiltId === m.id;
+                    return (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => loadPrebuiltMatrix(m.id)}
+                        className={`p-3 rounded-2xl border text-left transition-all cursor-pointer relative ${
+                          isSelected
+                            ? "bg-orange-500/10 border-orange-500 shadow-md shadow-orange-500/10"
+                            : "bg-slate-900/60 border-slate-800 hover:border-slate-700"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md bg-slate-800 text-amber-300">
+                            Khối {m.gradeNumber} • {m.durationMinutes} phút
+                          </span>
+                          {isSelected && <Check className="w-4 h-4 text-orange-400" />}
+                        </div>
+                        <h4 className="text-xs font-bold text-white line-clamp-1">{m.title}</h4>
+                        <p className="text-[11px] text-slate-400 line-clamp-2 mt-1">{m.description}</p>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Chế độ tải file ma trận */}
+            {matrixUploadMode === "upload" && (
+              <div className="p-4 rounded-2xl bg-slate-900/60 border border-dashed border-orange-500/40 text-center space-y-3">
+                <div className="w-12 h-12 mx-auto rounded-2xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400">
+                  <UploadCloud className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-white">Tải file ma trận đề thi lên</h4>
+                  <p className="text-xs text-slate-400 mt-0.5">
+                    Hỗ trợ file Word (.docx), PDF (.pdf), Excel (.xlsx/.csv), file ảnh (.png, .jpg) hoặc bảng text ma trận
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <label className="px-4 py-2 rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 font-black text-xs cursor-pointer inline-flex items-center gap-2 transition-all">
+                    <UploadCloud className="w-4 h-4" />
+                    <span>Chọn file từ máy tính</span>
+                    <input
+                      type="file"
+                      accept=".docx,.pdf,.png,.jpg,.jpeg,.xlsx,.xls,.csv,.txt"
+                      onChange={handleMatrixFileUpload}
+                      className="hidden"
+                    />
+                  </label>
+                </div>
+                {matrixRawText && (
+                  <p className="text-[11px] text-emerald-400 font-medium">
+                    ✓ Đã nhận diện nội dung file ma trận! Bạn có thể kiểm tra bảng chủ đề bên dưới.
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Thông tin chung */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-3.5 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs">
+              <div>
+                <label className="font-bold text-slate-300 block mb-1">Tên đề thi theo ma trận</label>
+                <input
+                  type="text"
+                  value={matrixTitle}
+                  onChange={(e) => setMatrixTitle(e.target.value)}
+                  placeholder="VD: Kiểm tra Giữa Kì 1 - Toán 10"
+                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white font-medium focus:outline-none focus:border-orange-500"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-300 block mb-1">Khối lớp & Lớp kiểm tra</label>
+                <div className="grid grid-cols-2 gap-2">
+                  <select
+                    value={matrixGradeNumber}
+                    onChange={(e) => setMatrixGradeNumber(Number(e.target.value))}
+                    className="w-full px-2.5 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white font-medium focus:outline-none focus:border-orange-500 cursor-pointer"
+                  >
+                    <option value={10}>Toán 10</option>
+                    <option value={6}>Toán 6</option>
+                  </select>
+                  <input
+                    type="text"
+                    value={matrixTargetClass}
+                    onChange={(e) => setMatrixTargetClass(e.target.value)}
+                    placeholder="VD: 10A1, 6A"
+                    className="w-full px-2.5 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white font-medium focus:outline-none focus:border-orange-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-300 block mb-1">Thời gian làm bài (phút)</label>
+                <input
+                  type="number"
+                  min={15}
+                  max={180}
+                  step={5}
+                  value={matrixDuration}
+                  onChange={(e) => setMatrixDuration(Number(e.target.value))}
+                  className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white font-medium focus:outline-none focus:border-orange-500"
+                />
+              </div>
+            </div>
+
+            {/* Bảng ma trận đặc tả chi tiết */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-black text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                  <Database className="w-3.5 h-3.5 text-orange-400" />
+                  <span>Đặc tả số câu hỏi theo từng chủ đề & cấp độ tư duy</span>
+                </span>
+                <button
+                  type="button"
+                  onClick={handleAddMatrixTopic}
+                  className="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-orange-300 text-xs font-bold cursor-pointer transition-colors flex items-center gap-1"
+                >
+                  <PlusCircle className="w-3.5 h-3.5" />
+                  <span>Thêm chủ đề</span>
+                </button>
+              </div>
+
+              <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/50">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-950/80 text-slate-300 border-b border-slate-800">
+                      <th className="p-2.5 font-black text-[11px] min-w-[180px]">Chủ đề / Bài học</th>
+                      <th colSpan={4} className="p-2 text-center font-bold text-sky-300 bg-sky-950/30 border-l border-r border-slate-800">
+                        Phần I: TN 4 Lựa Chọn (0.25đ/câu)
+                        <div className="grid grid-cols-4 text-[10px] text-slate-400 mt-0.5">
+                          <span>NB</span><span>TH</span><span>VD</span><span>VDC</span>
+                        </div>
+                      </th>
+                      <th colSpan={4} className="p-2 text-center font-bold text-amber-300 bg-amber-950/30 border-r border-slate-800">
+                        Phần II: Đúng/Sai (1.0đ/câu 4 ý)
+                        <div className="grid grid-cols-4 text-[10px] text-slate-400 mt-0.5">
+                          <span>NB</span><span>TH</span><span>VD</span><span>VDC</span>
+                        </div>
+                      </th>
+                      <th colSpan={4} className="p-2 text-center font-bold text-emerald-300 bg-emerald-950/30 border-r border-slate-800">
+                        Phần III: Trả lời ngắn (0.5đ/câu)
+                        <div className="grid grid-cols-4 text-[10px] text-slate-400 mt-0.5">
+                          <span>NB</span><span>TH</span><span>VD</span><span>VDC</span>
+                        </div>
+                      </th>
+                      <th className="p-2 text-center font-bold w-12">Xóa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {matrixTopics.map((topic, idx) => {
+                      return (
+                        <tr key={topic.id || idx} className="border-b border-slate-800/60 hover:bg-slate-800/30">
+                          <td className="p-2">
+                            <input
+                              type="text"
+                              value={topic.topicName}
+                              onChange={(e) => {
+                                const val = e.target.value;
+                                setMatrixTopics((prev) =>
+                                  prev.map((t) => (t.id === topic.id ? { ...t, topicName: val } : t))
+                                );
+                              }}
+                              className="w-full px-2 py-1 rounded-lg bg-slate-950 border border-slate-800 text-white font-medium text-xs focus:outline-none focus:border-orange-500"
+                            />
+                          </td>
+
+                          {/* Part 1: NB, TH, VD, VDC */}
+                          {(["nb", "th", "vd", "vdc"] as const).map((lvl) => (
+                            <td key={`p1-${lvl}`} className="p-1 text-center bg-sky-950/10">
+                              <input
+                                type="number"
+                                min={0}
+                                max={20}
+                                value={topic.part1[lvl] || 0}
+                                onChange={(e) =>
+                                  handleUpdateMatrixCell(topic.id, "part1", lvl, Number(e.target.value))
+                                }
+                                className="w-10 text-center py-1 rounded bg-slate-950 border border-slate-800 text-sky-300 font-bold text-xs"
+                              />
+                            </td>
+                          ))}
+
+                          {/* Part 2: NB, TH, VD, VDC */}
+                          {(["nb", "th", "vd", "vdc"] as const).map((lvl) => (
+                            <td key={`p2-${lvl}`} className="p-1 text-center bg-amber-950/10">
+                              <input
+                                type="number"
+                                min={0}
+                                max={10}
+                                value={topic.part2[lvl] || 0}
+                                onChange={(e) =>
+                                  handleUpdateMatrixCell(topic.id, "part2", lvl, Number(e.target.value))
+                                }
+                                className="w-10 text-center py-1 rounded bg-slate-950 border border-slate-800 text-amber-300 font-bold text-xs"
+                              />
+                            </td>
+                          ))}
+
+                          {/* Part 3: NB, TH, VD, VDC */}
+                          {(["nb", "th", "vd", "vdc"] as const).map((lvl) => (
+                            <td key={`p3-${lvl}`} className="p-1 text-center bg-emerald-950/10">
+                              <input
+                                type="number"
+                                min={0}
+                                max={15}
+                                value={topic.part3[lvl] || 0}
+                                onChange={(e) =>
+                                  handleUpdateMatrixCell(topic.id, "part3", lvl, Number(e.target.value))
+                                }
+                                className="w-10 text-center py-1 rounded bg-slate-950 border border-slate-800 text-emerald-300 font-bold text-xs"
+                              />
+                            </td>
+                          ))}
+
+                          <td className="p-1 text-center">
+                            <button
+                              type="button"
+                              onClick={() => handleRemoveMatrixTopic(topic.id)}
+                              className="p-1 text-slate-500 hover:text-rose-400 transition-colors cursor-pointer"
+                            >
+                              <Trash2 className="w-4 h-4 mx-auto" />
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                  {/* Footer tổng kết số câu */}
+                  <tfoot>
+                    <tr className="bg-slate-950 font-bold text-[11px] text-slate-300 border-t border-slate-700">
+                      <td className="p-2 font-black text-orange-400">TỔNG SỐ CÂU:</td>
+                      <td colSpan={4} className="p-2 text-center text-sky-300">
+                        {matrixTopics.reduce(
+                          (acc, t) => acc + t.part1.nb + t.part1.th + t.part1.vd + t.part1.vdc,
+                          0
+                        )}{" "}
+                        câu (Phần I)
+                      </td>
+                      <td colSpan={4} className="p-2 text-center text-amber-300">
+                        {matrixTopics.reduce(
+                          (acc, t) => acc + t.part2.nb + t.part2.th + t.part2.vd + t.part2.vdc,
+                          0
+                        )}{" "}
+                        câu (Phần II)
+                      </td>
+                      <td colSpan={4} className="p-2 text-center text-emerald-300">
+                        {matrixTopics.reduce(
+                          (acc, t) => acc + t.part3.nb + t.part3.th + t.part3.vd + t.part3.vdc,
+                          0
+                        )}{" "}
+                        câu (Phần III)
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+
+            {/* Footer Modal Actions */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-800">
+              <div className="flex items-center gap-2 text-xs text-slate-400">
+                <Globe className="w-4 h-4 text-orange-400" />
+                <span>Hệ thống sẽ lấy từ ngân hàng dự án trước, câu thiếu sẽ được AI tạo tức thì.</span>
+              </div>
+
+              <div className="flex items-center gap-2 w-full sm:w-auto">
+                <button
+                  type="button"
+                  onClick={() => setIsMatrixModalOpen(false)}
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-colors cursor-pointer"
+                >
+                  Đóng
+                </button>
+                <button
+                  type="button"
+                  disabled={isGeneratingFromMatrix || matrixTopics.length === 0}
+                  onClick={handleGenerateFromMatrix}
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-orange-500/25 cursor-pointer disabled:opacity-40 disabled:pointer-events-none flex items-center justify-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  <span>{isGeneratingFromMatrix ? "Đang bốc đề thi từ ma trận..." : "BỐC ĐỀ THI TỪ MA TRẬN"}</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

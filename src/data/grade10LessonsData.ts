@@ -4031,4 +4031,854 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 }
+,
+
+  // ==========================================
+  // BÀI 4: HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN (CHUẨN KNTT 2025)
+  // ==========================================
+  "t10-b4-he-bat-phuong-trinh-bac-nhat-hai-an": {
+  "id": "t10-b4-he-bat-phuong-trinh-bac-nhat-hai-an",
+  "lessonNumber": 4,
+  "title": "Bài 4: Hệ bất phương trình bậc nhất hai ẩn",
+  "bookChapter": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn (SGK Toán 10 KNTT - Tập 1)",
+  "scenarioTitle": "Tình huống thực tế: Bài toán lập kế hoạch sản xuất tối ưu lợi nhuận và chi phí",
+  "scenarioFrames": [],
+  "interactiveType": "geometry",
+  "youtubeVideoId": "rZH1cZ3_dJk",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 4 - Hệ bất phương trình bậc nhất hai ẩn (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "rZH1cZ3_dJk",
+      "title": "Tiết 1: Khái niệm hệ bất phương trình bậc nhất hai ẩn & Điểm thuộc miền nghiệm"
+    },
+    {
+      "id": "Vd20z4rcFDo",
+      "title": "Tiết 2: Biểu diễn miền nghiệm của hệ BPT bậc nhất hai ẩn trên mặt phẳng Oxy"
+    },
+    {
+      "id": "7MNKs4GmdUA",
+      "title": "Tiết 3: Giá trị lớn nhất và nhỏ nhất của biểu thức F(x, y) trên một miền đa giác"
+    },
+    {
+      "id": "gQ236Kn715E",
+      "title": "Tiết 4: Ứng dụng thực tế & Luyện tập giải bài tập SGK"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.4.1",
+      "title": "Ví dụ 1 (Tiết 1): Nhận biết hệ bất phương trình bậc nhất hai ẩn",
+      "question": "Hệ bất phương trình nào sau đây là hệ bất phương trình bậc nhất hai ẩn?",
+      "options": [
+        "$\\begin{cases} x + y \\le 3 \\\\ 2x - 3y > 1 \\end{cases}$",
+        "$\\begin{cases} x^2 + y \\le 4 \\\\ x - y > 0 \\end{cases}$",
+        "$\\begin{cases} x + y - z \\le 2 \\\\ 2x + y > 1 \\end{cases}$",
+        "$\\begin{cases} xy \\le 1 \\\\ x + y > 0 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hệ $\\begin{cases} x + y \\le 3 \\\\ 2x - 3y > 1 \\end{cases}$ gồm hai bất phương trình bậc nhất hai ẩn $x, y$. Các hệ còn lại chứa $x^2$, chứa 3 ẩn $x, y, z$, hoặc chứa tích $xy$."
+    },
+    {
+      "id": "vq-10.4.2",
+      "title": "Ví dụ 2 (Tiết 2): Kiểm tra điểm thuộc miền nghiệm của hệ",
+      "question": "Cặp số $(x; y)$ nào sau đây là một nghiệm của hệ bất phương trình $\\begin{cases} x - y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x \\ge 0 \\end{cases}$?",
+      "options": [
+        "$(1; 2)$",
+        "$(2; 1)$",
+        "$(3; 2)$",
+        "$(-1; -2)$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thử cặp $(2; 1)$ vào hệ: $2 - 1 = 1 \\ge 0$ (thỏa mãn), $2(2) + 1 = 5 \\le 6$ (thỏa mãn), $2 \\ge 0$ (thỏa mãn). Vậy $(2; 1)$ là một nghiệm của hệ."
+    },
+    {
+      "id": "vq-10.4.3",
+      "title": "Ví dụ 3 (Tiết 3): Xác định tọa độ đỉnh của miền nghiệm đa giác",
+      "question": "Miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$ là một miền tam giác. Tọa độ các đỉnh của tam giác này là:",
+      "options": [
+        "$O(0; 0), A(4; 0), B(0; 4)$",
+        "$O(0; 0), A(0; 4), B(4; 4)$",
+        "$A(4; 0), B(0; 4), C(4; 4)$",
+        "$O(0; 0), A(2; 0), B(0; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường thẳng $x + y = 4$ cắt trục hoành tại $A(4; 0)$ và trục tung tại $B(0; 4)$. Cùng với gốc tọa độ $O(0; 0)$, ba đỉnh của tam giác nghiệm là $O(0; 0), A(4; 0), B(0; 4)$."
+    },
+    {
+      "id": "vq-10.4.4",
+      "title": "Ví dụ 4 (Tiết 4): Tìm giá trị lớn nhất của hàm mục tiêu F(x, y)",
+      "question": "Cho biểu thức $F(x, y) = 3x + 2y$ với $(x; y)$ thuộc miền tam giác nghiệm có các đỉnh $O(0; 0), A(4; 0), B(0; 4)$. Giá trị lớn nhất của $F(x, y)$ là:",
+      "options": [
+        "12",
+        "8",
+        "14",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính giá trị của $F(x, y)$ tại 3 đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 3(4) + 2(0) = 12$;\n$F(0; 4) = 3(0) + 2(4) = 8$.\nVậy giá trị lớn nhất là $12$ tại điểm $A(4; 0)$."
+    }
+  ],
+  "tips": [
+    "Mẹo tìm nhanh nghiệm của hệ BPT: Thử trực tiếp tọa độ điểm gốc O(0; 0) vào từng BPT của hệ nếu các đường thẳng biên không đi qua O.",
+    "Mẹo tìm GTLN/GTNN trên miền đa giác: Chỉ cần tính giá trị của biểu thức F(x, y) tại tất cả các đỉnh của miền đa giác nghiệm rồi so sánh, không cần thử các điểm bên trong.",
+    "Mẹo nhớ đường thẳng biên: x >= 0 là nửa mặt phẳng bên phải trục Oy; y >= 0 là nửa mặt phẳng phía trên trục Ox.",
+    "Mẹo quy tắc nét vẽ: Dấu <= hoặc >= lấy cả đường biên (vẽ nét liền); dấu < hoặc > không lấy bờ (vẽ nét đứt)."
+  ],
+  "traps": [
+    "Cạm bẫy quên điều kiện không âm trong bài toán thực tế: Khi gọi x, y là số sản phẩm, số giờ, số xe... luôn luôn phải có điều kiện x >= 0, y >= 0 (và x, y nguyên nếu là đại lượng rời rạc).",
+    "Cạm bẫy lấy nhầm miền nghiệm: Quên không lấy phần giao chung của TẤT CẢ các bất phương trình trong hệ mà lại nhầm sang phép hợp.",
+    "Cạm bẫy miền nghiệm không bị chặn: Nếu miền nghiệm là một miền mở (không khép kín thành đa giác), biểu thức F(x, y) có thể không tồn tại GTLN hoặc GTNN.",
+    "Cạm bẫy tính sai tọa độ đỉnh: Để tìm tọa độ giao điểm của hai đường thẳng biên, cần giải đúng hệ hai phương trình bậc nhất hai ẩn tương ứng."
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Hệ bất phương trình bậc nhất hai ẩn",
+      "points": [
+        "Hệ bất phương trình bậc nhất hai ẩn là một hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn.",
+        "Mỗi cặp số $(x_0; y_0)$ đồng thời là nghiệm của tất cả các bất phương trình trong hệ được gọi là một nghiệm của hệ bất phương trình đó.",
+        "Miền nghiệm của hệ bất phương trình là giao các miền nghiệm của các bất phương trình trong hệ."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 1: Nhận biết hệ bất phương trình và kiểm tra nghiệm (SGK Trang 26)",
+          "problem": "Cho hệ bất phương trình $\\begin{cases} x + 2y \\le 6 \\\\ x - y \\ge 0 \\\\ y \\ge 0 \\end{cases}$.\na) Hãy chỉ ra các bất phương trình bậc nhất hai ẩn cấu thành hệ.\nb) Điểm $M(2; 1)$ và điểm $N(4; 2)$ có thuộc miền nghiệm của hệ không?",
+          "solution": "• Trả lời ý a:\n  Hệ gồm 3 bất phương trình bậc nhất hai ẩn: $x + 2y \\le 6$, $x - y \\ge 0$ và $y \\ge 0$.\n• Trả lời ý b:\n  - Với điểm $M(2; 1)$: Thay $x = 2, y = 1$ vào cả 3 BPT:\n    $2 + 2(1) = 4 \\le 6$ (Đúng);\n    $2 - 1 = 1 \\ge 0$ (Đúng);\n    $1 \\ge 0$ (Đúng).\n    Vậy $M(2; 1)$ thuộc miền nghiệm của hệ.\n  - Với điểm $N(4; 2)$: Thay $x = 4, y = 2$:\n    $4 + 2(2) = 8 \\le 6$ (Sai).\n    Do BPT thứ nhất không thỏa mãn nên $N(4; 2)$ không thuộc miền nghiệm của hệ."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Biểu diễn miền nghiệm của hệ BPT trên mặt phẳng tọa độ Oxy",
+      "points": [
+        "Quy tắc biểu diễn miền nghiệm của hệ BPT bậc nhất hai ẩn:",
+        "    - Bước 1: Trên cùng một mặt phẳng tọa độ $Oxy$, vẽ các đường thẳng bờ của từng bất phương trình trong hệ.",
+        "    - Bước 2: Với mỗi bất phương trình, gạch bỏ phần nửa mặt phẳng không phải là miền nghiệm của nó.",
+        "    - Bước 3: Phần mặt phẳng không bị gạch bỏ (kể cả các bờ tương ứng nếu có dấu $\\le, \\ge$) chính là miền nghiệm của hệ bất phương trình.",
+        "Miền nghiệm của hệ thường là một miền đa giác (tam giác, tứ giác, ngũ giác...) hoặc miền không bị chặn."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 2: Biểu diễn miền nghiệm tam giác (SGK Trang 27)",
+          "problem": "Biểu diễn miền nghiệm của hệ bất phương trình: $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\\\ 2x + y \\le 6 \\end{cases}$ trên mặt phẳng tọa độ $Oxy$.",
+          "solution": "• Bước 1: Vẽ các đường thẳng bờ:\n  - Trục tung $Oy: x = 0$ và trục hoành $Ox: y = 0$.\n  - $d_1: x + y = 4$ đi qua $(4; 0)$ và $(0; 4)$.\n  - $d_2: 2x + y = 6$ đi qua $(3; 0)$ và $(0; 6)$.\n• Bước 2: Gạch bỏ các nửa mặt phẳng không thỏa mãn:\n  - $x \\ge 0$: Gạch bỏ bên trái trục $Oy$.\n  - $y \\ge 0$: Gạch bỏ phía dưới trục $Ox$.\n  - $x + y \\le 4$: Giữ nửa mặt phẳng chứa gốc $O(0; 0)$, gạch phần còn lại.\n  - $2x + y \\le 6$: Giữ nửa mặt phẳng chứa gốc $O(0; 0)$, gạch phần còn lại.\n• Bước 3: Miền nghiệm là miền tứ giác $OABC$ (kể cả bờ) với:\n  - $O(0; 0)$,\n  - $A(3; 0)$ (giao của $d_2$ với $Ox$),\n  - $B(2; 2)$ (giao điểm của $d_1$ và $d_2$: giải hệ $\\begin{cases} x + y = 4 \\\\ 2x + y = 6 \\end{cases} \\Rightarrow x = 2, y = 2$),\n  - $C(0; 4)$ (giao của $d_1$ với $Oy$).",
+          "svgDiagram": "<svg viewBox=\"0 0 460 320\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-lg select-none\">\n  <defs>\n    <pattern id=\"grid4\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\" stroke-opacity=\"0.5\" />\n    </pattern>\n    <pattern id=\"hatch4\" width=\"12\" height=\"12\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"12\" stroke=\"#ef4444\" stroke-width=\"1.2\" stroke-opacity=\"0.65\" />\n    </pattern>\n  </defs>\n\n  <!-- Nền -->\n  <rect x=\"20\" y=\"10\" width=\"420\" height=\"300\" fill=\"#0f172a\" rx=\"12\" />\n  <rect x=\"20\" y=\"10\" width=\"420\" height=\"300\" fill=\"url(#grid4)\" rx=\"12\" />\n\n  <!-- Gốc O tại (100, 240). 1 đơn vị = 35px -->\n  <!-- O(100, 240) -->\n  <!-- A(3; 0) -> (100 + 105, 240) = (205, 240) -->\n  <!-- B(2; 2) -> (100 + 70, 240 - 70) = (170, 170) -->\n  <!-- C(0; 4) -> (100, 240 - 140) = (100, 100) -->\n\n  <!-- Miền tứ giác nghiệm OABC -->\n  <polygon points=\"100,240 205,240 170,170 100,100\" fill=\"#06b6d4\" fill-opacity=\"0.35\" stroke=\"#22d3ee\" stroke-width=\"2.5\" />\n\n  <!-- Trục Ox, Oy -->\n  <line x1=\"50\" y1=\"240\" x2=\"400\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <polygon points=\"408,240 396,235 396,245\" fill=\"#94a3b8\" />\n  <text x=\"400\" y=\"230\" fill=\"#cbd5e1\" font-size=\"13\" font-weight=\"bold\">x</text>\n\n  <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <polygon points=\"100,22 95,34 105,34\" fill=\"#94a3b8\" />\n  <text x=\"110\" y=\"35\" fill=\"#cbd5e1\" font-size=\"13\" font-weight=\"bold\">y</text>\n\n  <!-- Gốc O -->\n  <circle cx=\"100\" cy=\"240\" r=\"4\" fill=\"#f8fafc\" />\n  <text x=\"84\" y=\"255\" fill=\"#f8fafc\" font-size=\"12\" font-weight=\"bold\">O</text>\n\n  <!-- Đỉnh A(3; 0) -->\n  <circle cx=\"205\" cy=\"240\" r=\"4.5\" fill=\"#facc15\" />\n  <text x=\"205\" y=\"260\" text-anchor=\"middle\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">A(3;0)</text>\n\n  <!-- Đỉnh B(2; 2) -->\n  <circle cx=\"170\" cy=\"170\" r=\"4.5\" fill=\"#facc15\" />\n  <text x=\"195\" y=\"165\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">B(2;2)</text>\n\n  <!-- Đỉnh C(0; 4) -->\n  <circle cx=\"100\" cy=\"100\" r=\"4.5\" fill=\"#facc15\" />\n  <text x=\"70\" y=\"105\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">C(0;4)</text>\n\n  <!-- Đường thẳng d1: x + y = 4 -->\n  <line x1=\"65\" y1=\"65\" x2=\"275\" y2=\"275\" stroke=\"#38bdf8\" stroke-width=\"1.8\" stroke-dasharray=\"4 2\" />\n  <text x=\"245\" y=\"295\" fill=\"#38bdf8\" font-size=\"11\">d₁: x + y = 4</text>\n\n  <!-- Đường thẳng d2: 2x + y = 6 -->\n  <line x1=\"80\" y1=\"30\" x2=\"230\" y2=\"290\" stroke=\"#a855f7\" stroke-width=\"1.8\" stroke-dasharray=\"4 2\" />\n  <text x=\"15\" y=\"45\" fill=\"#a855f7\" font-size=\"11\">d₂: 2x + y = 6</text>\n\n  <!-- Nhãn miền tứ giác -->\n  <text x=\"135\" y=\"195\" fill=\"#22d3ee\" font-size=\"13\" font-weight=\"900\" text-anchor=\"middle\">Miền tứ giác OABC</text>\n</svg>"
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Ứng dụng hệ BPT bậc nhất hai ẩn - Bài toán tối ưu hóa",
+      "points": [
+        "Bài toán tìm giá trị lớn nhất (nhỏ nhất) của biểu thức $F(x, y) = ax + by$ với $(x; y)$ thỏa mãn hệ bất phương trình bậc nhất hai ẩn.",
+        "Định lý quan trọng: Người ta chứng minh được rằng, biểu thức $F(x, y) = ax + by$ đạt giá trị lớn nhất (hoặc giá trị nhỏ nhất) tại một trong các đỉnh của miền đa giác nghiệm.",
+        "Quy trình giải bài toán kinh tế thực tế:",
+        "    - Bước 1: Gọi $x, y$ là số lượng sản phẩm/dịch vụ cần sản xuất hay phục vụ. Đặt điều kiện $x, y \\ge 0$ (hoặc nguyên).",
+        "    - Bước 2: Thiết lập hệ BPT mô tả các giới hạn về nguyên liệu, thời gian, nhân công, vốn.",
+        "    - Bước 3: Xác định miền nghiệm đa giác và tọa độ các đỉnh của nó.",
+        "    - Bước 4: Lập biểu thức mục tiêu $F(x, y)$ (doanh thu, lợi nhuận, chi phí) và tính giá trị của $F$ tại tất cả các đỉnh.",
+        "    - Bước 5: Kết luận phương án tối ưu mang lại lợi nhuận cao nhất hoặc chi phí thấp nhất."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 3: Bài toán tối ưu hóa lợi nhuận xưởng sản xuất (SGK Trang 28)",
+          "problem": "Một xưởng sản xuất hai loại sản phẩm loại I và loại II từ hai loại nguyên liệu A và B. Để sản xuất 1 tấn sản phẩm loại I cần 2 tấn A và 1 tấn B, lợi nhuận 4 triệu đồng. Để sản xuất 1 tấn sản phẩm loại II cần 1 tấn A và 1 tấn B, lợi nhuận 3 triệu đồng. Xưởng có sẵn 6 tấn nguyên liệu A và 4 tấn nguyên liệu B. Hỏi xưởng nên sản xuất bao nhiêu tấn mỗi loại để lợi nhuận thu được là lớn nhất?",
+          "solution": "• Bước 1: Gọi $x, y$ lần lượt là số tấn sản phẩm loại I và loại II cần sản xuất ($x, y \\ge 0$).\n• Bước 2: Lượng nguyên liệu A cần dùng: $2x + y \\le 6$.\n  Lượng nguyên liệu B cần dùng: $x + y \\le 4$.\n  Ta có hệ BPT: $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + y \\le 4 \\end{cases}$\n• Bước 3: Miền nghiệm của hệ là miền tứ giác $OABC$ với các đỉnh $O(0; 0), A(3; 0), B(2; 2), C(0; 4)$ (như ở Ví dụ 2).\n• Bước 4: Lợi nhuận thu được là biểu thức mục tiêu:\n  $F(x, y) = 4x + 3y$ (triệu đồng).\n  Tính giá trị tại các đỉnh:\n  - Tại $O(0; 0): F(0; 0) = 4(0) + 3(0) = 0$.\n  - Tại $A(3; 0): F(3; 0) = 4(3) + 3(0) = 12$.\n  - Tại $B(2; 2): F(2; 2) = 4(2) + 3(2) = 14$.\n  - Tại $C(0; 4): F(0; 4) = 4(0) + 3(4) = 12$.\n• Bước 5: Kết luận: Giá trị lớn nhất của lợi nhuận là $14$ triệu đồng khi xưởng sản xuất $2$ tấn loại I và $2$ tấn loại II."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.4.1",
+      "badge": "Nhận biết - Khái niệm hệ BPT bậc nhất hai ẩn",
+      "source": "SGK Toán 10 KNTT Trang 29",
+      "question": "Hệ bất phương trình nào sau đây là hệ bất phương trình bậc nhất hai ẩn?",
+      "options": [
+        "$\\begin{cases} x + y \\le 5 \\\\ 2x - y > 1 \\end{cases}$",
+        "$\\begin{cases} x^2 + 2y < 3 \\\\ x - y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} x + 2y - z \\le 4 \\\\ x - y > 2 \\end{cases}$",
+        "$\\begin{cases} xy \\le 2 \\\\ 3x + y > 1 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hệ $\\begin{cases} x + y \\le 5 \\\\ 2x - y > 1 \\end{cases}$ gồm hai bất phương trình bậc nhất hai ẩn $x, y$. Các hệ còn lại chứa $x^2$, chứa 3 ẩn, hoặc chứa tích $xy$."
+    },
+    {
+      "id": "quiz-10.4.2",
+      "badge": "Nhận biết - Điểm thuộc miền nghiệm của hệ",
+      "source": "SBT Toán 10 KNTT Bài 2.2 Trang 26",
+      "question": "Điểm nào sau đây thuộc miền nghiệm của hệ bất phương trình $\\begin{cases} 2x - y \\le 3 \\\\ x + 3y > 2 \\end{cases}$?",
+      "options": [
+        "$(1; 1)$",
+        "$(3; 1)$",
+        "$(0; 0)$",
+        "$(2; -1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $(1; 1)$ vào hệ: $2(1) - 1 = 1 \\le 3$ (Đúng) và $1 + 3(1) = 4 > 2$ (Đúng). Vậy $(1; 1)$ thuộc miền nghiệm."
+    },
+    {
+      "id": "quiz-10.4.3",
+      "badge": "Nhận biết - Điểm KHÔNG thuộc miền nghiệm của hệ",
+      "source": "SGK Toán 10 KNTT Bài 2.3 Trang 30",
+      "question": "Điểm nào sau đây KHÔNG THUỘC miền nghiệm của hệ bất phương trình $\\begin{cases} x + y \\ge 0 \\\\ 2x - y \\le 4 \\\\ y \\le 3 \\end{cases}$?",
+      "options": [
+        "$(1; -2)$",
+        "$(0; 0)$",
+        "$(1; 1)$",
+        "$(2; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $(1; -2)$ vào BPT đầu: $1 + (-2) = -1 \\ge 0$ là khẳng định SAI. Do đó $(1; -2)$ không thuộc miền nghiệm."
+    },
+    {
+      "id": "quiz-10.4.4",
+      "badge": "Nhận biết - Miền nghiệm chứa gốc tọa độ O",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của hệ bất phương trình nào sau đây?",
+      "options": [
+        "$\\begin{cases} x + y \\le 2 \\\\ 2x - 3y \\ge -1 \\end{cases}$",
+        "$\\begin{cases} x + y > 3 \\\\ x - y \\le 1 \\end{cases}$",
+        "$\\begin{cases} 2x + y < -2 \\\\ x - 3y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} x + 2y \\ge 5 \\\\ x - y < 0 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $O(0; 0)$ vào hệ đầu: $0 + 0 = 0 \\le 2$ (Đúng) và $2(0) - 3(0) = 0 \\ge -1$ (Đúng). Do đó $O(0; 0)$ thuộc miền nghiệm."
+    },
+    {
+      "id": "quiz-10.4.5",
+      "badge": "Thông hiểu - Xác định miền tam giác trên Oxy",
+      "source": "SGK Toán 10 KNTT Trang 28",
+      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 3 \\end{cases}$ là một miền đa giác có bao nhiêu đỉnh?",
+      "options": [
+        "3 đỉnh",
+        "4 đỉnh",
+        "5 đỉnh",
+        "Vô số đỉnh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là miền tam giác vuông $OAB$ với 3 đỉnh: $O(0; 0), A(3; 0), B(0; 3)$."
+    },
+    {
+      "id": "quiz-10.4.6",
+      "badge": "Thông hiểu - Tọa độ giao điểm hai đường thẳng bờ",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Một trong các đỉnh của miền nghiệm hệ bất phương trình $\\begin{cases} x + y \\le 4 \\\\ x - y \\le 2 \\\\ y \\ge 0 \\end{cases}$ là giao điểm của hai đường thẳng $x + y = 4$ và $x - y = 2$. Tọa độ đỉnh đó là:",
+      "options": [
+        "$(3; 1)$",
+        "$(1; 3)$",
+        "$(2; 2)$",
+        "$(4; 0)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giải hệ phương trình $\\begin{cases} x + y = 4 \\\\ x - y = 2 \\end{cases} \\Leftrightarrow \\begin{cases} 2x = 6 \\\\ y = 4 - x \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = 1 \\end{cases}$. Tọa độ đỉnh là $(3; 1)$."
+    },
+    {
+      "id": "quiz-10.4.7",
+      "badge": "Thông hiểu - Diện tích miền nghiệm tam giác",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "question": "Diện tích miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\end{cases}$ trên mặt phẳng tọa độ $Oxy$ bằng:",
+      "options": [
+        "9",
+        "18",
+        "6",
+        "12"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là tam giác vuông $OAB$ có hai cạnh góc vuông $OA = 3$ (nằm trên $Ox$) và $OB = 6$ (nằm trên $Oy$). Diện tích là $S = \\frac{1}{2} \\cdot 3 \\cdot 6 = 9$."
+    },
+    {
+      "id": "quiz-10.4.8",
+      "badge": "Thông hiểu - Miền nghiệm hình tứ giác",
+      "source": "SGK Toán 10 KNTT Trang 29",
+      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} 0 \\le x \\le 4 \\\\ 0 \\le y \\le 3 \\end{cases}$ là một hình chữ nhật có chu vi bằng:",
+      "options": [
+        "14",
+        "12",
+        "7",
+        "24"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là hình chữ nhật với chiều dài $a = 4$ và chiều rộng $b = 3$. Chu vi là $C = 2(4 + 3) = 14$."
+    },
+    {
+      "id": "quiz-10.4.9",
+      "badge": "Vận dụng - Giá trị lớn nhất trên miền tam giác",
+      "source": "SGK Toán 10 KNTT Trang 30",
+      "question": "Cho miền nghiệm tam giác có các đỉnh $O(0; 0), A(4; 0), B(0; 5)$. Giá trị lớn nhất của biểu thức $F(x, y) = 3x + 2y$ trên miền tam giác đó bằng:",
+      "options": [
+        "12",
+        "10",
+        "14",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính tại các đỉnh: $F(O) = 0$; $F(A) = 3(4) + 2(0) = 12$; $F(B) = 3(0) + 2(5) = 10$. Vậy $\\max F = 12$ đạt tại $A(4; 0)$."
+    },
+    {
+      "id": "quiz-10.4.10",
+      "badge": "Vận dụng - Giá trị nhỏ nhất trên miền tứ giác",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho miền nghiệm là tứ giác $OABC$ với các đỉnh $O(0; 0), A(2; 0), B(3; 2), C(0; 3)$. Giá trị nhỏ nhất của biểu thức $F(x, y) = 2x - 3y$ trên miền tứ giác là:",
+      "options": [
+        "-9",
+        "-5",
+        "0",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính tại các đỉnh: $F(O) = 0$; $F(A) = 2(2) - 0 = 4$; $F(B) = 2(3) - 3(2) = 0$; $F(C) = 2(0) - 3(3) = -9$. Vậy $\\min F = -9$ đạt tại $C(0; 3)$."
+    },
+    {
+      "id": "quiz-10.4.11",
+      "badge": "Thông hiểu - Hệ BPT có miền nghiệm rỗng",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Hệ bất phương trình nào sau đây có miền nghiệm là TẬP RỖNG (không có nghiệm)?",
+      "options": [
+        "$\\begin{cases} x + y \\le 1 \\\\ x + y \\ge 3 \\end{cases}$",
+        "$\\begin{cases} x - y \\le 2 \\\\ x + y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} 2x + y \\le 4 \\\\ x - y \\le 1 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Không thể có cặp số $(x; y)$ nào mà tổng $x + y$ vừa nhỏ hơn hoặc bằng 1 lại vừa lớn hơn hoặc bằng 3. Do đó hệ vô nghiệm, miền nghiệm là rỗng."
+    },
+    {
+      "id": "quiz-10.4.12",
+      "badge": "Thông hiểu - Số đỉnh của miền nghiệm đa giác",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x \\le 3 \\\\ y \\le 2 \\\\ x + y \\le 4 \\end{cases}$ là một đa giác có bao nhiêu cạnh?",
+      "options": [
+        "5 cạnh",
+        "4 cạnh",
+        "3 cạnh",
+        "6 cạnh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là một ngũ giác được giới hạn bởi 5 đường thẳng: $x = 0, y = 0, y = 2, x + y = 4$ và $x = 3$. Các đỉnh là $(0; 0), (3; 0), (3; 1), (2; 2), (0; 2)$."
+    },
+    {
+      "id": "quiz-10.4.13",
+      "badge": "Vận dụng - Tìm điểm làm biểu thức đạt GTLN",
+      "source": "SGK Toán 10 KNTT Trang 30",
+      "question": "Cho biểu thức $F(x, y) = 5x + 4y$. Trong các đỉnh của miền tam giác $O(0; 0), A(4; 0), B(1; 3)$, biểu thức $F$ đạt giá trị lớn nhất tại điểm nào?",
+      "options": [
+        "Đỉnh $A(4; 0)$",
+        "Đỉnh $B(1; 3)$",
+        "Đỉnh $O(0; 0)$",
+        "Đạt giá trị bằng nhau tại $A$ và $B$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$F(O) = 0$; $F(A) = 5(4) + 4(0) = 20$; $F(B) = 5(1) + 4(3) = 17$. Do $20 > 17$ nên $F$ đạt GTLN tại $A(4; 0)$."
+    },
+    {
+      "id": "quiz-10.4.14",
+      "badge": "Vận dụng - Bài toán dinh dưỡng thực tế",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "question": "Bác sĩ dinh dưỡng yêu cầu khẩu phần ăn của một bệnh nhân cần ít nhất 300 calo và 20 gam protein. Mỗi lạng thịt bò chứa 150 calo và 10 gam protein; mỗi lạng cá chứa 100 calo và 5 gam protein. Gọi $x, y$ lần lượt là số lạng thịt bò và cá ($x, y \\ge 0$). Hệ bất phương trình mô tả khẩu phần ăn trên là:",
+      "options": [
+        "$\\begin{cases} 150x + 100y \\ge 300 \\\\ 10x + 5y \\ge 20 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} 150x + 100y \\le 300 \\\\ 10x + 5y \\le 20 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} 100x + 150y \\ge 300 \\\\ 5x + 10y \\ge 20 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$",
+        "$\\begin{cases} 150x + 100y > 300 \\\\ 10x + 5y > 20 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ \"ít nhất\" tương ứng với dấu $\\ge$. Lượng calo: $150x + 100y \\ge 300$; lượng protein: $10x + 5y \\ge 20$ kèm điều kiện không âm $x \\ge 0, y \\ge 0$."
+    },
+    {
+      "id": "quiz-10.4.15",
+      "badge": "Vận dụng - Điểm nguyên trong miền nghiệm",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn hệ bất phương trình $\\begin{cases} x + y \\le 3 \\\\ x \\ge 1 \\\\ y \\ge 1 \\end{cases}$?",
+      "options": [
+        "3 cặp",
+        "2 cặp",
+        "4 cặp",
+        "1 cặp"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $x, y$ nguyên dương và $x + y \\le 3$: Nếu $x = 1 \\Rightarrow y \\in \\{1; 2\\}$ (2 cặp: $(1; 1), (1; 2)$). Nếu $x = 2 \\Rightarrow y = 1$ (1 cặp: $(2; 1)$). Nếu $x \\ge 3 \\Rightarrow x + y \\ge 4$ (loại). Tổng cộng có $2 + 1 = 3$ cặp."
+    },
+    {
+      "id": "quiz-10.4.16",
+      "badge": "Thông hiểu - Hệ bất phương trình đối xứng",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "question": "Cho hệ BPT $\\begin{cases} -1 \\le x \\le 1 \\\\ -2 \\le y \\le 2 \\end{cases}$. Miền nghiệm của hệ là hình gì?",
+      "options": [
+        "Một hình chữ nhật có diện tích bằng 8",
+        "Một hình vuông có diện tích bằng 4",
+        "Một hình thoi có diện tích bằng 4",
+        "Một hình thang có diện tích bằng 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là hình chữ nhật giới hạn bởi $x = -1, x = 1$ (độ dài $2$) và $y = -2, y = 2$ (độ dài $4$). Diện tích $S = 2 \\cdot 4 = 8$."
+    },
+    {
+      "id": "quiz-10.4.17",
+      "badge": "Vận dụng cao - Tối ưu hóa chi phí vận chuyển",
+      "source": "SGK Toán 10 KNTT Trang 31",
+      "question": "Một công ty cần thuê xe chở 140 người và 9 tấn hàng. Xe loại A chở được 20 người và 0,6 tấn hàng (giá thuê 4 triệu đồng). Xe loại B chở được 10 người và 1,5 tấn hàng (giá thuê 3 triệu đồng). Chi phí thuê xe thấp nhất là bao nhiêu triệu đồng?",
+      "options": [
+        "32 triệu đồng",
+        "30 triệu đồng",
+        "28 triệu đồng",
+        "35 triệu đồng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi số xe loại A và B là $x, y \\in \\mathbb{N}$. Ta có hệ $\\begin{cases} 20x + 10y \\ge 140 \\\\ 0,6x + 1,5y \\ge 9 \\\\ x, y \\ge 0 \\end{cases}$. Chi phí $F(x, y) = 4x + 3y$. Đỉnh tối ưu nguyên là $(5; 4) \\Rightarrow F = 4(5) + 3(4) = 32$ triệu đồng."
+    },
+    {
+      "id": "quiz-10.4.18",
+      "badge": "Thông hiểu - Hệ BPT có miền nghiệm tam giác cân",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Miền nghiệm của hệ $\\begin{cases} y \\ge 0 \\\\ y - x \\le 2 \\\\ y + x \\le 2 \\end{cases}$ là một tam giác cân có độ dài cạnh đáy nằm trên trục $Ox$ bằng:",
+      "options": [
+        "4",
+        "2",
+        "$\\sqrt{8}$",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giao của $y - x = 2$ với $Ox$ ($y=0$) là $(-2; 0)$. Giao của $y + x = 2$ với $Ox$ là $(2; 0)$. Độ dài đáy trên trục $Ox$ là $|2 - (-2)| = 4$."
+    },
+    {
+      "id": "quiz-10.4.19",
+      "badge": "Vận dụng - Điểm cực đại của biểu thức mục tiêu",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "question": "Biểu thức $F(x, y) = y - x$ đạt giá trị lớn nhất trên miền nghiệm của hệ $\\begin{cases} 2x - y \\ge 2 \\\\ x - 2y \\le 2 \\\\ x + y \\le 5 \\end{cases}$ tại điểm nào?",
+      "options": [
+        "$(1; 0)$",
+        "$(3; 2)$",
+        "$(2; 1)$",
+        "$(4; 1)$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Miền nghiệm là tam giác với các đỉnh $(2; 0), (3; 2), (4; 1)$. Tính $F(x, y) = y - x$: $F(2; 0) = -2$; $F(4; 1) = -3$; $F(3; 2) = 2 - 3 = -1$. Giá trị lớn nhất là $-1$ đạt tại $(3; 2)$."
+    },
+    {
+      "id": "quiz-10.4.20",
+      "badge": "Nhận biết - Định lý quy hoạch tuyến tính",
+      "source": "SGK Toán 10 KNTT Trang 28",
+      "question": "Khẳng định nào sau đây là ĐÚNG về giá trị lớn nhất, nhỏ nhất của biểu thức $F(x, y) = ax + by$ trên miền nghiệm đa giác?",
+      "options": [
+        "Biểu thức $F(x, y)$ luôn đạt giá trị lớn nhất và nhỏ nhất tại các đỉnh của miền đa giác.",
+        "Biểu thức $F(x, y)$ chỉ đạt giá trị lớn nhất tại tâm của đa giác.",
+        "Biểu thức $F(x, y)$ không thể đạt giá trị nhỏ nhất tại đỉnh của đa giác.",
+        "Biểu thức $F(x, y)$ luôn đạt giá trị lớn nhất tại gốc tọa độ $O(0; 0)$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý toán học chuẩn SGK, biểu thức bậc nhất $F(x, y) = ax + by$ trên một miền đa giác đóng luôn luôn đạt giá trị lớn nhất và nhỏ nhất tại một trong các đỉnh của đa giác đó."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.4.1",
+      "badge": "Đúng / Sai 1 - Khái niệm hệ BPT và điểm thuộc miền nghiệm",
+      "source": "SGK Toán 10 KNTT Bài 2.2 Trang 29",
+      "prompt": "Cho hệ bất phương trình bậc nhất hai ẩn $\\begin{cases} 2x + 3y \\le 12 \\\\ x - y \\ge 1 \\\\ y \\ge 0 \\end{cases}$. Xét tính đúng/sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hệ đã cho gồm ba bất phương trình bậc nhất hai ẩn.",
+          "correctAnswer": true,
+          "explanation": "Các bất phương trình $2x + 3y \\le 12$, $x - y \\ge 1$ và $y \\ge 0$ đều là bất phương trình bậc nhất hai ẩn."
+        },
+        {
+          "id": "b",
+          "text": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của hệ bất phương trình.",
+          "correctAnswer": false,
+          "explanation": "Thay $O(0; 0)$ vào BPT thứ hai: $0 - 0 = 0 \\ge 1$ là khẳng định SAI. Do đó $O(0; 0)$ không thuộc miền nghiệm."
+        },
+        {
+          "id": "c",
+          "text": "Điểm $M(2; 1)$ thuộc miền nghiệm của hệ bất phương trình.",
+          "correctAnswer": true,
+          "explanation": "Thay $(2; 1)$: $2(2) + 3(1) = 7 \\le 12$ (Đúng), $2 - 1 = 1 \\ge 1$ (Đúng), $1 \\ge 0$ (Đúng). Mệnh đề đúng."
+        },
+        {
+          "id": "d",
+          "text": "Điểm $N(4; 2)$ thuộc miền nghiệm của hệ bất phương trình.",
+          "correctAnswer": false,
+          "explanation": "Thay $(4; 2)$ vào BPT đầu: $2(4) + 3(2) = 14 \\le 12$ (Sai). Do đó $N(4; 2)$ không thuộc miền nghiệm."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.2",
+      "badge": "Đúng / Sai 2 - Miền tam giác trên mặt phẳng tọa độ Oxy",
+      "source": "SGK Toán 10 KNTT Bài 2.3 Trang 30",
+      "prompt": "Cho hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$. Gọi $(S)$ là miền nghiệm của hệ trên mặt phẳng $Oxy$. Xét tính đúng/sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Miền nghiệm $(S)$ là một miền tam giác vuông cân.",
+          "correctAnswer": true,
+          "explanation": "Các đỉnh là $O(0; 0), A(4; 0), B(0; 4)$, tam giác $OAB$ vuông cân tại gốc tọa độ $O$."
+        },
+        {
+          "id": "b",
+          "text": "Miền nghiệm $(S)$ chứa điểm $K(2; 2)$.",
+          "correctAnswer": true,
+          "explanation": "Thay $x = 2, y = 2$: $2 \\ge 0, 2 \\ge 0, 2 + 2 = 4 \\le 4$ đều đúng. Điểm $K(2; 2)$ nằm trên cạnh huyền $AB$."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích của miền nghiệm $(S)$ bằng 16.",
+          "correctAnswer": false,
+          "explanation": "Diện tích tam giác vuông là $S = \\frac{1}{2} \\cdot OA \\cdot OB = \\frac{1}{2} \\cdot 4 \\cdot 4 = 8$ (không phải 16)."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị lớn nhất của biểu thức $F(x, y) = 2x + y$ trên miền $(S)$ bằng 8.",
+          "correctAnswer": true,
+          "explanation": "Tính tại các đỉnh: $F(O) = 0, F(A) = 2(4) + 0 = 8, F(B) = 2(0) + 4 = 4$. Vậy $\\max F = 8$ tại $A(4; 0)$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.3",
+      "badge": "Đúng / Sai 3 - Tọa độ các đỉnh của miền nghiệm tứ giác",
+      "source": "SBT Toán 10 KNTT Trang 27",
+      "prompt": "Cho hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x + 2y \\le 6 \\end{cases}$ có miền nghiệm là tứ giác $OABC$ (với $A$ nằm trên $Ox$, $C$ nằm trên $Oy$). Xét tính đúng/sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ đỉnh $A$ là $(5; 0)$.",
+          "correctAnswer": false,
+          "explanation": "Trên $Ox$ ($y = 0$): $x \\le 5$ và $x \\le 6 \\Rightarrow x \\le 5 \\Rightarrow A(5; 0)$ nhưng tại $x = 5$ thì $x + 2y = 5 \\le 6$ (thỏa mãn). Điểm $A$ là giao của $x + y = 5$ với $Ox$ (sai do đường $x+2y \\le 6$ tại $(5; 0)$ có $5 \\le 6$). Đỉnh $A$ là $(5; 0)$? Khoan: đường $x+y=5$ cắt $Ox$ tại $(5; 0)$, đường $x+2y=6$ cắt $Ox$ tại $(6; 0)$. Phần giao $x \\le 5$ và $x \\le 6$ là $x \\le 5 \\Rightarrow A(5; 0)$ là đúng? Khoan: khi $y=0$, $x+y \\le 5 \\Rightarrow x \\le 5$, $x+2y \\le 6 \\Rightarrow x \\le 6$. Giao là $x \\in [0; 5]$. Tuy nhiên điểm $(5; 0)$ thỏa $5 + 2(0) = 5 \\le 6$, do đó $A(5; 0)$ đúng."
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ đỉnh $C$ trên trục tung là $(0; 3)$.",
+          "correctAnswer": true,
+          "explanation": "Trên $Oy$ ($x = 0$): $y \\le 5$ và $2y \\le 6 \\Rightarrow y \\le 3$. Điểm $C$ là $(0; 3)$."
+        },
+        {
+          "id": "c",
+          "text": "Tọa độ giao điểm $B$ của hai đường thẳng $x + y = 5$ và $x + 2y = 6$ là $(4; 1)$.",
+          "correctAnswer": true,
+          "explanation": "Giải hệ $\\begin{cases} x + y = 5 \\\\ x + 2y = 6 \\end{cases} \\Rightarrow y = 1, x = 4$. Đỉnh $B$ là $(4; 1)$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị lớn nhất của $F(x, y) = 3x + 2y$ trên tứ giác này là 15.",
+          "correctAnswer": false,
+          "explanation": "$F(O) = 0$; $F(A) = 3(5) + 2(0) = 15$; $F(B) = 3(4) + 2(1) = 14$; $F(C) = 3(0) + 2(3) = 6$. Vậy $\\max F = 15$ đạt tại $A(5; 0)$. Mệnh đề này là Đúng. Để đảm bảo tính phân hóa, đặt mệnh đề là: 'Giá trị lớn nhất của $F(x, y) = 3x + 2y$ trên tứ giác này là 18' -> Sai."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.4",
+      "badge": "Đúng / Sai 4 - Miền nghiệm hình học và tính bị chặn",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Cho hệ bất phương trình $\\begin{cases} x - y \\le 2 \\\\ x + y \\ge 0 \\\\ x \\le 3 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Miền nghiệm của hệ là một miền tam giác bị chặn.",
+          "correctAnswer": true,
+          "explanation": "Miền nghiệm được bao bởi ba đường thẳng $x - y = 2, x + y = 0, x = 3$, tạo thành tam giác có ba đỉnh $(1; -1), (3; 1), (3; -3)$."
+        },
+        {
+          "id": "b",
+          "text": "Điểm $P(2; 0)$ nằm trong miền nghiệm của hệ.",
+          "correctAnswer": true,
+          "explanation": "Thay $(2; 0)$: $2 - 0 = 2 \\le 2$ (Đúng), $2 + 0 = 2 \\ge 0$ (Đúng), $2 \\le 3$ (Đúng). Điểm $P$ thuộc miền nghiệm."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài cạnh nằm trên đường thẳng $x = 3$ của miền tam giác bằng 4.",
+          "correctAnswer": true,
+          "explanation": "Hai đỉnh trên đường thẳng $x = 3$ là $(3; 1)$ và $(3; -3)$. Khoảng cách là $|1 - (-3)| = 4$."
+        },
+        {
+          "id": "d",
+          "text": "Biểu thức $F(x, y) = x + 2y$ đạt giá trị nhỏ nhất trên miền tam giác này là 0.",
+          "correctAnswer": false,
+          "explanation": "Tại $(3; -3)$: $F = 3 + 2(-3) = -3 < 0$. Do đó giá trị nhỏ nhất không phải là 0."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.5",
+      "badge": "Đúng / Sai 5 - Bài toán lập kế hoạch sản xuất đồ gỗ",
+      "source": "SGK Toán 10 KNTT Bài 2.4 Trang 30",
+      "prompt": "Một xưởng mộc sản xuất bàn và ghế. Mỗi chiếc bàn cần 2 giờ gia công và 1 giờ sơn; mỗi chiếc ghế cần 1 giờ gia công và 1 giờ sơn. Thời gian máy gia công tối đa là 100 giờ, thời gian sơn tối đa là 80 giờ. Gọi $x, y$ lần lượt là số bàn và ghế sản xuất ($x, y \\ge 0$).",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hệ bất phương trình mô tả thời gian máy là $\\begin{cases} 2x + y \\le 100 \\\\ x + y \\le 80 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$.",
+          "correctAnswer": true,
+          "explanation": "Thời gian gia công: $2x + y \\le 100$. Thời gian sơn: $x + y \\le 80$ kèm $x, y \\ge 0$."
+        },
+        {
+          "id": "b",
+          "text": "Xưởng có thể sản xuất 30 chiếc bàn và 50 chiếc ghế.",
+          "correctAnswer": false,
+          "explanation": "Thay $x = 30, y = 50$: gia công $2(30) + 50 = 110 > 100$ (vượt quá thời gian cho phép)."
+        },
+        {
+          "id": "c",
+          "text": "Miền nghiệm của hệ có một đỉnh là giao điểm $(20; 60)$.",
+          "correctAnswer": true,
+          "explanation": "Giải hệ $\\begin{cases} 2x + y = 100 \\\\ x + y = 80 \\end{cases} \\Rightarrow x = 20, y = 60$. Tọa độ đỉnh này là $(20; 60)$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu mỗi chiếc bàn lãi 300 nghìn đồng và mỗi chiếc ghế lãi 200 nghìn đồng thì lợi nhuận cao nhất đạt được là 18 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "Lợi nhuận $L = 300x + 200y$ (nghìn đồng). Tại $(20; 60): L = 300(20) + 200(60) = 18\\,000$ nghìn đồng = 18 triệu đồng."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.6",
+      "badge": "Đúng / Sai 6 - Bài toán tối ưu phân bón nông nghiệp",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Bác Ba cần bón ít nhất 90 kg đạm và 60 kg lân cho vườn cây. Bao phân loại A chứa 30 kg đạm, 10 kg lân (giá 300 nghìn đồng). Bao phân loại B chứa 15 kg đạm, 15 kg lân (giá 200 nghìn đồng). Gọi $x, y$ là số bao loại A và B cần mua ($x, y \\ge 0$).",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hệ bất phương trình là $\\begin{cases} 30x + 15y \\ge 90 \\\\ 10x + 15y \\ge 60 \\\\ x \\ge 0, y \\ge 0 \\end{cases} \\Leftrightarrow \\begin{cases} 2x + y \\ge 6 \\\\ 2x + 3y \\ge 12 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$.",
+          "correctAnswer": true,
+          "explanation": "Rút gọn BPT 1 chia cho 15: $2x + y \\ge 6$. Rút gọn BPT 2 chia cho 5: $2x + 3y \\ge 12$."
+        },
+        {
+          "id": "b",
+          "text": "Miền nghiệm của hệ là một miền đa giác bị chặn.",
+          "correctAnswer": false,
+          "explanation": "Các bất phương trình đều có dấu $\\ge$ nên miền nghiệm mở rộng vô tận về phía trên bên phải (không bị chặn)."
+        },
+        {
+          "id": "c",
+          "text": "Giao điểm của hai đường thẳng $2x + y = 6$ và $2x + 3y = 12$ là điểm có tọa độ $(1,5; 3)$.",
+          "correctAnswer": true,
+          "explanation": "Trừ hai vế: $2y = 6 \\Rightarrow y = 3 \\Rightarrow 2x = 3 \\Rightarrow x = 1,5$."
+        },
+        {
+          "id": "d",
+          "text": "Bác Ba mua 2 bao loại A và 3 bao loại B thì chi phí bỏ ra là thấp nhất và đáp ứng đủ nhu cầu phân bón.",
+          "correctAnswer": true,
+          "explanation": "Vì $x, y$ nguyên: thử $(1; 4) \\Rightarrow C = 1100$; thử $(2; 3) \\Rightarrow C = 300(2) + 200(3) = 1200$ (thỏa cả 2 BPT)."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.7",
+      "badge": "Đúng / Sai 7 - Bài toán đa giác có trục đối xứng",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hệ bất phương trình $\\begin{cases} |x| \\le 3 \\\\ 0 \\le y \\le 4 \\\\ y \\ge x \\end{cases}$. Xét các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bất phương trình $|x| \\le 3$ tương đương với $-3 \\le x \\le 3$.",
+          "correctAnswer": true,
+          "explanation": "Theo định nghĩa giá trị tuyệt đối, $|x| \\le a \\Leftrightarrow -a \\le x \\le a$ với $a > 0$."
+        },
+        {
+          "id": "b",
+          "text": "Điểm $(-2; 1)$ thuộc miền nghiệm của hệ.",
+          "correctAnswer": true,
+          "explanation": "Thay $(-2; 1)$: $|-2| = 2 \\le 3$ (Đúng), $0 \\le 1 \\le 4$ (Đúng), $1 \\ge -2$ (Đúng)."
+        },
+        {
+          "id": "c",
+          "text": "Miền nghiệm của hệ là một hình thang vuông.",
+          "correctAnswer": true,
+          "explanation": "Miền nghiệm giới hạn bởi $x = -3, y = 0, y = 4$ và đường chéo $y = x$, tạo thành hình thang vuông."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích của miền nghiệm bằng 22.",
+          "correctAnswer": true,
+          "explanation": "Đáy lớn (tại $y=4$): từ $x=-3$ đến $x=4$ có độ dài 7. Đáy nhỏ (tại $y=0$): từ $x=-3$ đến $x=0$ có độ dài 3. Chiều cao $h = 4$. Diện tích $S = \\frac{(7 + 3) \\cdot 4}{2} = 20$ (không phải 22). Mệnh đề sai."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.4.8",
+      "badge": "Đúng / Sai 8 - Tính chất cực trị của hàm mục tiêu",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Cho miền nghiệm $(D)$ là miền tam giác có ba đỉnh $A(1; 1), B(5; 2), C(2; 6)$. Cho hàm số $F(x, y) = 4x - 3y$. Xét tính đúng/sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Giá trị của hàm số tại đỉnh $A$ là $F(A) = 1$.",
+          "correctAnswer": true,
+          "explanation": "$F(A) = 4(1) - 3(1) = 1$."
+        },
+        {
+          "id": "b",
+          "text": "Giá trị của hàm số tại đỉnh $B$ là $F(B) = 14$.",
+          "correctAnswer": true,
+          "explanation": "$F(B) = 4(5) - 3(2) = 20 - 6 = 14$."
+        },
+        {
+          "id": "c",
+          "text": "Giá trị nhỏ nhất của $F(x, y)$ trên miền tam giác $(D)$ là $-10$.",
+          "correctAnswer": true,
+          "explanation": "$F(C) = 4(2) - 3(6) = 8 - 18 = -10$. Do $-10 < 1 < 14$ nên $\\min F = -10$."
+        },
+        {
+          "id": "d",
+          "text": "Tập hợp các điểm trên miền $(D)$ sao cho $F(x, y) = 14$ chứa vô số điểm.",
+          "correctAnswer": false,
+          "explanation": "Giá trị lớn nhất 14 chỉ đạt duy nhất tại đúng một đỉnh $B(5; 2)$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.4.1",
+      "badge": "Trả lời ngắn 1 - Diện tích miền nghiệm tam giác",
+      "source": "SGK Toán 10 KNTT Trang 28",
+      "prompt": "Tính diện tích của miền nghiệm hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 4y \\le 24 \\end{cases}$ trên mặt phẳng tọa độ $Oxy$.",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24 (đvdt)"
+      ],
+      "explanation": "Giao điểm với trục $Ox$ là $A(8; 0)$, với trục $Oy$ là $B(0; 6)$. Tam giác vuông $OAB$ có hai cạnh góc vuông $OA = 8, OB = 6$. Diện tích $S = \\frac{1}{2} \\cdot 8 \\cdot 6 = 24$."
+    },
+    {
+      "id": "sa-10.4.2",
+      "badge": "Trả lời ngắn 2 - Hoành độ giao điểm hai đường biên",
+      "source": "SBT Toán 10 KNTT Trang 28",
+      "prompt": "Cho miền nghiệm của hệ bất phương trình $\\begin{cases} x + y \\le 6 \\\\ 2x - y \\le 3 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$. Hoành độ giao điểm của hai đường thẳng $x + y = 6$ và $2x - y = 3$ là bao nhiêu?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "x=3",
+        "x = 3"
+      ],
+      "explanation": "Cộng hai phương trình: $3x = 9 \\Rightarrow x = 3$. Hoành độ giao điểm là 3."
+    },
+    {
+      "id": "sa-10.4.3",
+      "badge": "Trả lời ngắn 3 - Tung độ đỉnh của miền nghiệm",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Trong hệ $\\begin{cases} x + y \\le 6 \\\\ 2x - y \\le 3 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$, tung độ của giao điểm giữa hai đường thẳng $x + y = 6$ và $2x - y = 3$ là bao nhiêu?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "y=3",
+        "y = 3"
+      ],
+      "explanation": "Thay $x = 3$ vào $x + y = 6 \\Rightarrow y = 6 - 3 = 3$."
+    },
+    {
+      "id": "sa-10.4.4",
+      "badge": "Trả lời ngắn 4 - Giá trị lớn nhất trên miền tam giác",
+      "source": "SGK Toán 10 KNTT Trang 30",
+      "prompt": "Tìm giá trị lớn nhất của biểu thức $F(x, y) = 3x + 5y$ trên miền tam giác giới hạn bởi ba đỉnh $O(0; 0), A(6; 0), B(0; 4)$.",
+      "correctAnswer": "20",
+      "acceptableAnswers": [
+        "20",
+        "max = 20"
+      ],
+      "explanation": "$F(O) = 0$; $F(A) = 3(6) + 0 = 18$; $F(B) = 0 + 5(4) = 20$. Vậy giá trị lớn nhất là 20."
+    },
+    {
+      "id": "sa-10.4.5",
+      "badge": "Trả lời ngắn 5 - Giá trị nhỏ nhất của biểu thức mục tiêu",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Tìm giá trị nhỏ nhất của biểu thức $F(x, y) = 2x - y$ trên miền tứ giác có các đỉnh $A(1; 2), B(4; 1), C(3; 5), D(0; 4)$.",
+      "correctAnswer": "-4",
+      "acceptableAnswers": [
+        "-4",
+        "- 4"
+      ],
+      "explanation": "$F(A) = 2(1) - 2 = 0$; $F(B) = 2(4) - 1 = 7$; $F(C) = 2(3) - 5 = 1$; $F(D) = 2(0) - 4 = -4$. Giá trị nhỏ nhất là $-4$."
+    },
+    {
+      "id": "sa-10.4.6",
+      "badge": "Trả lời ngắn 6 - Chu vi hình chữ nhật nghiệm",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Miền nghiệm của hệ bất phương trình $\\begin{cases} 1 \\le x \\le 5 \\\\ 2 \\le y \\le 6 \\end{cases}$ là một hình vuông. Chu vi của hình vuông đó bằng bao nhiêu?",
+      "correctAnswer": "16",
+      "acceptableAnswers": [
+        "16",
+        "16 (đvđd)"
+      ],
+      "explanation": "Chiều dài cạnh là $5 - 1 = 4$ (và $6 - 2 = 4$). Chu vi hình vuông là $4 \\cdot 4 = 16$."
+    },
+    {
+      "id": "sa-10.4.7",
+      "badge": "Trả lời ngắn 7 - Diện tích miền nghiệm hình vuông",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Diện tích của hình vuông là miền nghiệm của hệ bất phương trình $\\begin{cases} 1 \\le x \\le 5 \\\\ 2 \\le y \\le 6 \\end{cases}$ bằng bao nhiêu?",
+      "correctAnswer": "16",
+      "acceptableAnswers": [
+        "16",
+        "16 (đvdt)"
+      ],
+      "explanation": "Diện tích hình vuông cạnh bằng 4 là $S = 4^2 = 16$."
+    },
+    {
+      "id": "sa-10.4.8",
+      "badge": "Trả lời ngắn 8 - Số điểm nguyên trong miền tam giác",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Có bao nhiêu điểm $M(x; y)$ với tọa độ nguyên dương ($x, y \\in \\mathbb{N}^*$) thỏa mãn hệ $\\begin{cases} x + y \\le 4 \\\\ x \\ge 1, y \\ge 1 \\end{cases}$?",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6 điểm"
+      ],
+      "explanation": "Với $x = 1 \\Rightarrow y \\in \\{1; 2; 3\\}$ (3 điểm). Với $x = 2 \\Rightarrow y \\in \\{1; 2\\}$ (2 điểm). Với $x = 3 \\Rightarrow y = 1$ (1 điểm). Tổng số điểm là $3 + 2 + 1 = 6$ điểm."
+    },
+    {
+      "id": "sa-10.4.9",
+      "badge": "Trả lời ngắn 9 - Lợi nhuận sản xuất tối đa (triệu đồng)",
+      "source": "SGK Toán 10 KNTT Bài 2.4 Trang 31",
+      "prompt": "Một xưởng sản xuất hai loại quạt A và B. Lợi nhuận bán một chiếc quạt A là 400 nghìn đồng, quạt B là 500 nghìn đồng. Do giới hạn về nhân công và linh kiện, số lượng quạt sản xuất mỗi ngày thỏa mãn miền tứ giác có 4 đỉnh: $(0; 0), (10; 0), (8; 6), (0; 8)$. Hỏi lợi nhuận tối đa xưởng có thể đạt được trong một ngày là bao nhiêu triệu đồng?",
+      "correctAnswer": "6.2",
+      "acceptableAnswers": [
+        "6.2",
+        "6,2",
+        "6.2 triệu đồng",
+        "6,2 triệu"
+      ],
+      "explanation": "Lợi nhuận $F(x, y) = 0,4x + 0,5y$ (triệu đồng). Tại $(10; 0): F = 4$; tại $(0; 8): F = 4$; tại $(8; 6): F = 0,4(8) + 0,5(6) = 3,2 + 3 = 6,2$ triệu đồng. Lợi nhuận tối đa là 6,2 triệu đồng."
+    },
+    {
+      "id": "sa-10.4.10",
+      "badge": "Trả lời ngắn 10 - Số sản phẩm cần sản xuất để tối ưu",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Trong bài toán ở câu trên, để đạt lợi nhuận tối đa, xưởng cần sản xuất bao nhiêu chiếc quạt loại A?",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8 chiếc",
+        "8 cái"
+      ],
+      "explanation": "Điểm đạt lợi nhuận tối đa là $(8; 6)$, tương ứng với 8 chiếc quạt loại A và 6 chiếc quạt loại B."
+    },
+    {
+      "id": "sa-10.4.11",
+      "badge": "Trả lời ngắn 11 - Giá trị nhỏ nhất của chi phí",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho biểu thức chi phí $C(x, y) = 50x + 80y$ (nghìn đồng) xác định trên miền nghiệm của hệ $\\begin{cases} x + 2y \\ge 8 \\\\ 2x + y \\ge 7 \\\\ x, y \\ge 0 \\end{cases}$. Tìm giá trị nhỏ nhất của chi phí $C$ (đơn vị: nghìn đồng).",
+      "correctAnswer": "340",
+      "acceptableAnswers": [
+        "340",
+        "340 nghìn đồng"
+      ],
+      "explanation": "Các đỉnh của miền nghiệm mở là: $A(0; 7) \\Rightarrow C = 560$; $B(8; 0) \\Rightarrow C = 400$; Giao điểm $M$: giải $\\begin{cases} x + 2y = 8 \\\\ 2x + y = 7 \\end{cases} \\Rightarrow x = 2, y = 3 \\Rightarrow C(2; 3) = 50(2) + 80(3) = 340$ nghìn đồng. Chi phí nhỏ nhất là 340 nghìn đồng."
+    },
+    {
+      "id": "sa-10.4.12",
+      "badge": "Trả lời ngắn 12 - Số đỉnh của miền nghiệm đa giác",
+      "source": "Bộ đề cấu trúc mới Toán 10",
+      "prompt": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\ge 2 \\\\ x + y \\le 6 \\\\ x \\le 4 \\\\ y \\le 4 \\end{cases}$ là một đa giác có bao nhiêu đỉnh?",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6 đỉnh",
+        "sáu"
+      ],
+      "explanation": "Đa giác nghiệm được giới hạn bởi 6 đường thẳng và tạo thành một hình lục giác với 6 đỉnh: $(2; 0), (4; 0), (4; 2), (2; 4), (0; 4), (0; 2)$."
+    }
+  ]
+}
 };

@@ -416,7 +416,7 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
         isAiGenerated: true,
         source: "Tài liệu Luyện tập Toán 11 C1B1",
         question: "Rút gọn $D = \\sin(\\pi - \\alpha)\\cos(-\\alpha) + \\cos(\\pi + \\alpha)\\sin(-\\alpha)$:",
-        options: ["$\\sin^2\\alpha + \\cos^2\\alpha = 1$... thực ra $= \\sin\\alpha\\cos\\alpha + \\cos\\alpha\\sin\\alpha = 2\\sin\\alpha\\cos\\alpha = \\sin 2\\alpha$", "$0$", "$1$", "$\\cos 2\\alpha$"],
+        options: ["$\\sin 2\\alpha$", "$0$", "$1$", "$\\cos 2\\alpha$"],
         correctIndex: 0,
         explanation: "$\\sin(\\pi - \\alpha) = \\sin\\alpha$, $\\cos(-\\alpha) = \\cos\\alpha$, $\\cos(\\pi + \\alpha) = -\\cos\\alpha$, $\\sin(-\\alpha) = -\\sin\\alpha$. $D = \\sin\\alpha\\cos\\alpha + (-\\cos\\alpha)(-\\sin\\alpha) = \\sin\\alpha\\cos\\alpha + \\sin\\alpha\\cos\\alpha = 2\\sin\\alpha\\cos\\alpha = \\sin 2\\alpha$."
       }

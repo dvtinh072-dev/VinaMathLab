@@ -3616,12 +3616,12 @@ export function GamifiedMathQuiz({
                               </span>
                             </div>
 
-                            <div className="text-xs sm:text-sm font-bold text-white">
+                            <div className="text-sm sm:text-base md:text-lg font-bold text-white leading-relaxed">
                               <MathFormattedText text={vq.question} />
                             </div>
 
                             {/* Options Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                               {vq.options.map((vOpt, optIdx) => {
                                 const isThisSelected = selected === optIdx;
                                 const isThisCorrect = optIdx === vq.correctIndex;
@@ -3668,16 +3668,16 @@ export function GamifiedMathQuiz({
                                       }
                                     }}
                                     disabled={isVAnswered}
-                                    className={`p-2.5 rounded-xl border text-left text-xs font-bold flex items-start gap-2 transition-all min-h-[40px] ${vBtnStyle}`}
+                                    className={`p-3 rounded-xl border text-left text-sm sm:text-base font-bold flex items-start gap-2.5 transition-all min-h-[48px] ${vBtnStyle}`}
                                   >
-                                    <span className="w-5 h-5 rounded-md bg-white/10 text-amber-300 text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                                    <span className="w-6 h-6 rounded-md bg-white/10 text-amber-300 text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
                                       {String.fromCharCode(65 + optIdx)}
                                     </span>
                                     <div className="flex-1 min-w-0">
                                       <MathFormattedText text={vOpt} />
                                     </div>
-                                    {isVAnswered && isThisCorrect && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />}
-                                    {isVAnswered && isThisSelected && !isThisCorrect && <XCircle className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" />}
+                                    {isVAnswered && isThisCorrect && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />}
+                                    {isVAnswered && isThisSelected && !isThisCorrect && <XCircle className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />}
                                   </button>
                                 );
                               })}
@@ -4298,12 +4298,12 @@ export function GamifiedMathQuiz({
                   </div>
 
                   {/* Đề bài chung */}
-                  <div className="text-sm sm:text-base font-bold text-white leading-relaxed">
+                  <div className="text-base sm:text-lg md:text-xl font-bold text-white leading-relaxed tracking-wide">
                     <MathFormattedText text={currentTf.prompt} />
                   </div>
 
                   {/* Danh sách 4 ý a, b, c, d */}
-                  <div className="space-y-2.5 pt-1">
+                  <div className="space-y-3 pt-1">
                     {currentTf.subItems.map((sub) => {
                       const userChoice = currentTfAns.selected[sub.id];
                       const isSubSubmitted = currentTfAns.isSubmitted;
@@ -4312,7 +4312,7 @@ export function GamifiedMathQuiz({
                       return (
                         <div
                           key={sub.id}
-                          className={`p-3 rounded-xl border transition-all ${
+                          className={`p-3.5 sm:p-4 rounded-xl border transition-all ${
                             isSubSubmitted
                               ? isUserCorrect
                                 ? "bg-emerald-950/30 border-emerald-500/50"
@@ -4320,12 +4320,12 @@ export function GamifiedMathQuiz({
                               : "bg-slate-900/80 border-slate-800 hover:border-slate-700"
                           }`}
                         >
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                            <div className="flex items-start gap-2 flex-1 min-w-0">
-                              <span className="w-5 h-5 rounded-md bg-amber-500/20 text-amber-300 font-black text-xs flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/30">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div className="flex items-start gap-2.5 flex-1 min-w-0">
+                              <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-md bg-amber-500/20 text-amber-300 font-black text-xs sm:text-sm flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/30">
                                 {sub.id}
                               </span>
-                              <div className="text-xs sm:text-sm font-medium text-slate-100 leading-relaxed break-words">
+                              <div className="text-sm sm:text-base md:text-lg font-medium text-slate-100 leading-relaxed break-words">
                                 <MathFormattedText text={sub.text} />
                               </div>
                             </div>
@@ -4335,7 +4335,7 @@ export function GamifiedMathQuiz({
                               <button
                                 onClick={() => handleTfSelect(sub.id, true)}
                                 disabled={isSubSubmitted}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all flex items-center gap-1 ${
+                                className={`px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 ${
                                   userChoice === true
                                     ? isSubSubmitted
                                       ? sub.correctAnswer === true
@@ -4348,7 +4348,7 @@ export function GamifiedMathQuiz({
                                 }`}
                               >
                                 {isSubSubmitted && userChoice === true && (
-                                  isUserCorrect ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />
+                                  isUserCorrect ? <CheckCircle2 className="w-4 h-4" /> : <XCircle className="w-4 h-4" />
                                 )}
                                 <span>Đúng</span>
                               </button>
@@ -4356,7 +4356,7 @@ export function GamifiedMathQuiz({
                               <button
                                 onClick={() => handleTfSelect(sub.id, false)}
                                 disabled={isSubSubmitted}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all flex items-center gap-1 ${
+                                className={`px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 ${
                                   userChoice === false
                                     ? isSubSubmitted
                                       ? sub.correctAnswer === false
@@ -4369,7 +4369,7 @@ export function GamifiedMathQuiz({
                                 }`}
                               >
                                 {isSubSubmitted && userChoice === false && (
-                                  isUserCorrect ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />
+                                  isUserCorrect ? <CheckCircle2 className="w-4 h-4" /> : <XCircle className="w-4 h-4" />
                                 )}
                                 <span>Sai</span>
                               </button>
@@ -4528,7 +4528,7 @@ export function GamifiedMathQuiz({
                   </div>
 
                   {/* Prompt Text */}
-                  <div className="text-sm sm:text-base font-bold text-white leading-relaxed">
+                  <div className="text-base sm:text-lg md:text-xl font-bold text-white leading-relaxed tracking-wide">
                     <MathFormattedText text={currentSa.prompt} />
                   </div>
 
@@ -4555,13 +4555,13 @@ export function GamifiedMathQuiz({
                           value={saInputText}
                           onChange={(e) => setSaInputText(e.target.value)}
                           placeholder="Nhập đáp số của bạn (ví dụ: 3, 5, 1/2, 10...)"
-                          className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border-2 border-emerald-500/40 text-white placeholder-slate-500 text-sm font-bold focus:outline-none focus:border-emerald-400 transition-all shadow-inner"
+                          className="w-full px-4 py-3 rounded-xl bg-slate-950 border-2 border-emerald-500/40 text-white placeholder-slate-500 text-base sm:text-lg font-bold focus:outline-none focus:border-emerald-400 transition-all shadow-inner"
                         />
                       </div>
                       <button
                         type="submit"
                         disabled={!saInputText.trim()}
-                        className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-black flex items-center justify-center gap-2 transition-all ${
+                        className={`px-5 py-3 rounded-xl text-sm sm:text-base font-black flex items-center justify-center gap-2 transition-all ${
                           saInputText.trim()
                             ? "bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 hover:scale-105 shadow-md shadow-emerald-500/30 cursor-pointer active:scale-95"
                             : "bg-slate-800 text-slate-500 cursor-not-allowed border border-slate-700"
@@ -4574,10 +4574,10 @@ export function GamifiedMathQuiz({
                   ) : (
                     <div className="p-3.5 rounded-xl bg-gradient-to-r from-blue-950/90 via-slate-900 to-indigo-950/90 border border-cyan-400/40 space-y-2 animate-in fade-in duration-150">
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-1.5 text-xs font-black">
+                        <div className="flex items-center gap-1.5 text-xs sm:text-sm font-black">
                           {currentSaAns.isCorrect ? (
                             currentSaAns.isAlreadySolved ? (
-                              <span className="text-amber-300 flex items-center gap-1 bg-amber-500/20 px-2.5 py-1 rounded-lg border border-amber-500/30 text-[11px] font-black">
+                              <span className="text-amber-300 flex items-center gap-1 bg-amber-500/20 px-2.5 py-1 rounded-lg border border-amber-500/30 text-xs sm:text-sm font-black">
                                 <CheckCircle2 className="w-4 h-4 text-amber-400" /> Chính xác! (Đã tính điểm trước đó: +0 EXP)
                               </span>
                             ) : (
@@ -4591,14 +4591,14 @@ export function GamifiedMathQuiz({
                             </span>
                           )}
                         </div>
-                        <span className="text-[11px] font-bold text-slate-400">
+                        <span className="text-xs sm:text-sm font-bold text-slate-400">
                           Bạn đã nhập: <strong className="text-white">{currentSaAns.answerText}</strong>
                         </span>
                       </div>
 
                       {/* Detailed Explanation */}
-                      <div className="text-xs sm:text-sm text-slate-100 leading-relaxed font-medium pt-1">
-                        <div className="text-amber-300 font-bold text-xs uppercase mb-1 flex items-center gap-1">
+                      <div className="text-sm sm:text-base text-slate-100 leading-relaxed font-medium pt-1">
+                        <div className="text-amber-300 font-bold text-xs sm:text-sm uppercase mb-1 flex items-center gap-1">
                           <Sparkles className="w-3.5 h-3.5" /> Lời giải chi tiết:
                         </div>
                         <MathFormattedText text={currentSa.explanation} />
@@ -4608,7 +4608,7 @@ export function GamifiedMathQuiz({
                         <button
                           onClick={handleSaPrev}
                           disabled={saCurrentIndex === 0}
-                          className={`px-3.5 py-2 rounded-xl text-xs font-black flex items-center gap-1.5 transition-all ${
+                          className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-black flex items-center gap-1.5 transition-all ${
                             saCurrentIndex === 0
                               ? "opacity-30 cursor-not-allowed text-slate-500 bg-slate-900 border border-slate-800"
                               : "bg-slate-900 hover:bg-slate-800 text-cyan-300 border border-cyan-500/40 hover:scale-105"
@@ -4753,7 +4753,7 @@ export function GamifiedMathQuiz({
             )}
 
             {/* Question Text with KaTeX Math & Fractions */}
-            <h4 className="text-sm sm:text-base font-bold text-white leading-snug">
+            <h4 className="text-base sm:text-lg md:text-xl font-bold text-white leading-relaxed tracking-wide">
               <MathFormattedText text={currentQ.question} />
             </h4>
 
@@ -4771,7 +4771,7 @@ export function GamifiedMathQuiz({
             const isAnyOptionLong = currentQ.options.some((opt) => opt.length > 28);
 
             return (
-              <div className={`grid gap-2.5 ${isAnyOptionLong ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
+              <div className={`grid gap-3 ${isAnyOptionLong ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
                 {currentQ.options.map((opt, idx) => {
                   const isSelected = selectedOption === idx;
                   const isCorrect = idx === currentQ.correctIndex;
@@ -4795,19 +4795,19 @@ export function GamifiedMathQuiz({
                       key={idx}
                       onClick={() => handleSelect(idx)}
                       disabled={isAnswered}
-                      className={`p-3 sm:p-3.5 rounded-xl border-2 text-left font-bold text-xs sm:text-sm flex items-start justify-between gap-3 transition-all duration-150 shadow-sm min-h-[48px] ${btnStyle}`}
+                      className={`p-3.5 sm:p-4 rounded-xl border-2 text-left font-bold text-base sm:text-lg flex items-center justify-between gap-3.5 transition-all duration-150 shadow-sm min-h-[56px] ${btnStyle}`}
                     >
-                      <div className="flex items-start gap-3 min-w-0 flex-1">
-                        <span className="w-6 h-6 rounded-lg bg-white/10 text-cyan-300 font-black text-xs flex items-center justify-center shrink-0 border border-white/10 mt-0.5">
+                      <div className="flex items-center gap-3.5 min-w-0 flex-1">
+                        <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-white/10 text-cyan-300 font-black text-sm sm:text-base flex items-center justify-center shrink-0 border border-white/15">
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <div className="font-bold flex-1 min-w-0 break-words leading-relaxed text-xs sm:text-sm overflow-visible">
+                        <div className="font-bold flex-1 min-w-0 break-words leading-relaxed text-base sm:text-lg md:text-xl overflow-visible">
                           <MathFormattedText text={opt} />
                         </div>
                       </div>
 
-                      {isAnswered && isCorrect && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />}
-                      {isAnswered && isSelected && !isCorrect && <XCircle className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />}
+                      {isAnswered && isCorrect && <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />}
+                      {isAnswered && isSelected && !isCorrect && <XCircle className="w-5 h-5 text-rose-400 shrink-0" />}
                     </button>
                   );
                 })}

@@ -167,6 +167,10 @@
   color: #fcd34d !important;
 }
 
+.inline-math-item .katex {
+  font-size: 1.15em !important;
+}
+
 .inline-math-item .katex-html {
   white-space: normal !important;
   display: inline !important;

@@ -563,84 +563,84 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Khảo sát và phân loại nhóm học sinh bằng ngôn ngữ tập hợp",
   "scenarioFrames": [],
   "interactiveType": "geometry",
-    youtubeVideoId: "emLiXccjys4",
-    youtubeVideoTitle: "Bài Giảng Video: Bài 2 - Tập hợp và các phép toán trên tập hợp (Tiết 1) - Toán 10 KNTT",
-    youtubeVideos: [
-      {
-        id: "emLiXccjys4",
-        title: "Tiết 1: Khái niệm tập hợp & Tập hợp con"
-      },
-      {
-        id: "qR-rwgAp1Uw",
-        title: "Tiết 2: Các tập hợp con của ℝ (Khoảng, Đoạn, Nửa khoảng)"
-      },
-      {
-        id: "xB_nHKTX444",
-        title: "Tiết 3: Các phép toán Giao, Hợp, Hiệu, Phần bù"
-      }
-    ],
-    videoQuestions: [
-      {
-        id: "vq-10.2.1",
-        title: "Ví dụ 1 (Tiết 1): Đếm số tập hợp con của một tập hợp",
-        question: "Tập hợp $A = \\{1; 2; 3\\}$ có tất cả bao nhiêu tập hợp con?",
-        options: [
-          "8",
-          "6",
-          "7",
-          "9"
-        ],
-        correctIndex: 0,
-        explanation: "Công thức tính số tập hợp con của một tập hợp có $n$ phần tử là $2^n$. Với $n = 3$, số tập hợp con của $A$ là $2^3 = 8$ (gồm $\\emptyset$, 3 tập có 1 phần tử, 3 tập có 2 phần tử và chính tập $A$)."
-      },
-      {
-        id: "vq-10.2.2",
-        title: "Ví dụ 2 (Tiết 2): Xác định tập con của số thực ℝ",
-        question: "Tập hợp các số thực $x$ thỏa mãn $-2 \\le x < 5$ được viết dưới dạng khoảng, đoạn, nửa khoảng là:",
-        options: [
-          "$[-2; 5)$",
-          "$(-2; 5]$",
-          "$[-2; 5]$",
-          "$(-2; 5)$"
-        ],
-        correctIndex: 0,
-        explanation: "Dấu có chứa dấu bằng '$\\le$' biểu diễn bằng ngoặc vuông '['; dấu nghiêm ngặt '$<$' biểu diễn bằng ngoặc tròn ')'. Do đó tập hợp là nửa khoảng $[-2; 5)$."
-      },
-      {
-        id: "vq-10.2.3",
-        title: "Ví dụ 3 (Tiết 3): Giao của hai tập hợp số",
-        question: "Cho hai tập hợp $A = (-3; 4]$ và $B = [1; 6)$. Khi đó tập hợp giao $A \\cap B$ là:",
-        options: [
-          "$[1; 4]$",
-          "$(-3; 6)$",
-          "$[1; 4)$",
-          "$(-3; 1]$"
-        ],
-        correctIndex: 0,
-        explanation: "Giao $A \\cap B$ gồm các phần tử thuộc cả $A$ và $B$. Biểu diễn trên trục số, ta lấy phần chung giữa $(-3; 4]$ và $[1; 6)$, kết quả là $[1; 4]$."
-      },
-      {
-        id: "vq-10.2.4",
-        title: "Ví dụ 4 (Tiết 3): Hiệu của hai tập hợp và phần bù",
-        question: "Cho tập hợp $A = [-2; 5)$ và $B = [1; 7]$. Khi đó tập hợp hiệu $A \\setminus B$ là:",
-        options: [
-          "$[-2; 1)$",
-          "$[-2; 1]$",
-          "$(5; 7]$",
-          "$[-2; 7]$"
-        ],
-        correctIndex: 0,
-        explanation: "Hiệu $A \\setminus B$ gồm các phần tử thuộc $A$ nhưng không thuộc $B$. Vì $B$ chứa điểm $1$ (ngoặc vuông $[1$), nên phần tử $1$ bị loại khỏi $A$, do đó tại mốc $1$ trở thành ngoặc tròn ')'. Kết quả là $[-2; 1)$."
-      }
-    ],
-    tips: [
-      "Quy tắc ngoặc khi tìm hiệu $A \\setminus B$: Tại các mốc biên của $B$, nếu $B$ lấy (ngoặc vuông) thì $A \\setminus B$ bỏ (chuyển thành ngoặc tròn); ngược lại nếu $B$ không lấy (ngoặc tròn) thì $A \\setminus B$ giữ lại (chuyển thành ngoặc vuông).",
-      "Vẽ trục số minh họa: Khi làm các phép toán giao, hợp, hiệu trên các khoảng đoạn, hãy luôn vẽ một trục số chung và dùng quy ước gạch bỏ phần không lấy để tránh nhầm lẫn các mốc biên."
-    ],
-    traps: [
-      "Bẫy tập hợp rỗng: Tập hợp rỗng $\\emptyset$ là tập hợp con của mọi tập hợp ($ \\emptyset \\subset A $ với mọi $A$), nhưng $\\emptyset$ không phải là phần tử của $A$ (trừ khi $A$ là tập hợp chứa các tập hợp con).",
-      "Bẫy ngoặc vuông và ngoặc tròn tại vô cực: Tại $-\\infty$ và $+\\infty$ BẮT BUỘC luôn luôn dùng ngoặc tròn, tuyệt đối không dùng ngoặc vuông."
-    ],
+  "youtubeVideoId": "emLiXccjys4",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 2 - Tập hợp và các phép toán trên tập hợp (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "emLiXccjys4",
+      "title": "Tiết 1: Khái niệm tập hợp & Tập hợp con"
+    },
+    {
+      "id": "qR-rwgAp1Uw",
+      "title": "Tiết 2: Các tập hợp con của ℝ (Khoảng, Đoạn, Nửa khoảng)"
+    },
+    {
+      "id": "xB_nHKTX444",
+      "title": "Tiết 3: Các phép toán Giao, Hợp, Hiệu, Phần bù"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.2.1",
+      "title": "Ví dụ 1 (Tiết 1): Đếm số tập hợp con của một tập hợp",
+      "question": "Tập hợp $A = \\{1; 2; 3\\}$ có tất cả bao nhiêu tập hợp con?",
+      "options": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ],
+      "correctIndex": 0,
+      "explanation": "Công thức tính số tập hợp con của một tập hợp có $n$ phần tử là $2^n$. Với $n = 3$, số tập hợp con của $A$ là $2^3 = 8$ (gồm $\\emptyset$, 3 tập có 1 phần tử, 3 tập có 2 phần tử và chính tập $A$)."
+    },
+    {
+      "id": "vq-10.2.2",
+      "title": "Ví dụ 2 (Tiết 2): Xác định tập con của số thực ℝ",
+      "question": "Tập hợp các số thực $x$ thỏa mãn $-2 \\le x < 5$ được viết dưới dạng khoảng, đoạn, nửa khoảng là:",
+      "options": [
+        "$[-2; 5)$",
+        "$(-2; 5]$",
+        "$[-2; 5]$",
+        "$(-2; 5)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dấu có chứa dấu bằng '$\\le$' biểu diễn bằng ngoặc vuông '['; dấu nghiêm ngặt '$<$' biểu diễn bằng ngoặc tròn ')'. Do đó tập hợp là nửa khoảng $[-2; 5)$."
+    },
+    {
+      "id": "vq-10.2.3",
+      "title": "Ví dụ 3 (Tiết 3): Giao của hai tập hợp số",
+      "question": "Cho hai tập hợp $A = (-3; 4]$ và $B = [1; 6)$. Khi đó tập hợp giao $A \\cap B$ là:",
+      "options": [
+        "$[1; 4]$",
+        "$(-3; 6)$",
+        "$[1; 4)$",
+        "$(-3; 1]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giao $A \\cap B$ gồm các phần tử thuộc cả $A$ và $B$. Biểu diễn trên trục số, ta lấy phần chung giữa $(-3; 4]$ và $[1; 6)$, kết quả là $[1; 4]$."
+    },
+    {
+      "id": "vq-10.2.4",
+      "title": "Ví dụ 4 (Tiết 3): Hiệu của hai tập hợp và phần bù",
+      "question": "Cho tập hợp $A = [-2; 5)$ và $B = [1; 7]$. Khi đó tập hợp hiệu $A \\setminus B$ là:",
+      "options": [
+        "$[-2; 1)$",
+        "$[-2; 1]$",
+        "$(5; 7]$",
+        "$[-2; 7]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hiệu $A \\setminus B$ gồm các phần tử thuộc $A$ nhưng không thuộc $B$. Vì $B$ chứa điểm $1$ (ngoặc vuông $[1$), nên phần tử $1$ bị loại khỏi $A$, do đó tại mốc $1$ trở thành ngoặc tròn ')'. Kết quả là $[-2; 1)$."
+    }
+  ],
+  "tips": [
+    "Quy tắc ngoặc khi tìm hiệu $A \\setminus B$: Tại các mốc biên của $B$, nếu $B$ lấy (ngoặc vuông) thì $A \\setminus B$ bỏ (chuyển thành ngoặc tròn); ngược lại nếu $B$ không lấy (ngoặc tròn) thì $A \\setminus B$ giữ lại (chuyển thành ngoặc vuông).",
+    "Vẽ trục số minh họa: Khi làm các phép toán giao, hợp, hiệu trên các khoảng đoạn, hãy luôn vẽ một trục số chung và dùng quy ước gạch bỏ phần không lấy để tránh nhầm lẫn các mốc biên."
+  ],
+  "traps": [
+    "Bẫy tập hợp rỗng: Tập hợp rỗng $\\emptyset$ là tập hợp con của mọi tập hợp ($ \\emptyset \\subset A $ với mọi $A$), nhưng $\\emptyset$ không phải là phần tử của $A$ (trừ khi $A$ là tập hợp chứa các tập hợp con).",
+    "Bẫy ngoặc vuông và ngoặc tròn tại vô cực: Tại $-\\infty$ và $+\\infty$ BẮT BUỘC luôn luôn dùng ngoặc tròn, tuyệt đối không dùng ngoặc vuông."
+  ],
   "theorySections": [
     {
       "index": "1",
@@ -674,33 +674,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "title": "Ví dụ 1b: Biểu diễn khoảng, đoạn trên trục số (SGK Trang 15)",
           "problem": "Biểu diễn các tập hợp sau dưới dạng khoảng, đoạn, nửa khoảng:\n  a) $A = \\{x \\in \\mathbb{R} \\mid -3 \\le x < 2\\}$.\n  b) $B = \\{x \\in \\mathbb{R} \\mid x > 1\\}$.",
           "solution": "• Trả lời ý a: $A = [-3; 2)$ (nửa khoảng, lấy mút vuông tại $-3$ và mút tròn tại $2$).\n• Trả lời ý b: $B = (1; +\\infty)$ (khoảng từ $1$ đến dương vô cực, lấy ngoặc tròn tại $1$).",
-          "svgDiagram": `<svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-lg select-none">
-  <!-- Dòng 1: Tập A = [-3; 2) -->
-  <text x="15" y="32" fill="#38bdf8" font-size="12" font-weight="bold">a) Tập A = [-3; 2):</text>
-  <line x1="145" y1="28" x2="495" y2="28" stroke="#475569" stroke-width="2" />
-  <polygon points="505,28 493,24 493,32" fill="#94a3b8" />
-  <!-- Gạch bỏ bên trái -3 (145 đến 210) -->
-  <path d="M 155 20 L 165 36 M 170 20 L 180 36 M 185 20 L 195 36 M 200 20 L 210 36" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.8" />
-  <!-- Đoạn lấy từ -3 (210) đến 2 (360) -->
-  <line x1="210" y1="28" x2="360" y2="28" stroke="#10b981" stroke-width="3.5" />
-  <text x="210" y="33" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold">[</text>
-  <text x="210" y="47" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="bold">-3</text>
-  <text x="360" y="34" text-anchor="middle" fill="#10b981" font-size="20" font-weight="bold">)</text>
-  <text x="360" y="47" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="bold">2</text>
-  <!-- Gạch bỏ bên phải 2 (360 đến 490) -->
-  <path d="M 370 20 L 380 36 M 385 20 L 395 36 M 400 20 L 410 36 M 415 20 L 425 36 M 430 20 L 440 36 M 445 20 L 455 36 M 460 20 L 470 36 M 475 20 L 485 36" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.8" />
-
-  <!-- Dòng 2: Tập B = (1; +∞) -->
-  <text x="15" y="92" fill="#38bdf8" font-size="12" font-weight="bold">b) Tập B = (1; +∞):</text>
-  <line x1="145" y1="88" x2="495" y2="88" stroke="#475569" stroke-width="2" />
-  <polygon points="505,88 493,84 493,92" fill="#94a3b8" />
-  <!-- Gạch bỏ bên trái 1 (145 đến 300) -->
-  <path d="M 155 80 L 165 96 M 170 80 L 180 96 M 185 80 L 195 96 M 200 80 L 210 96 M 215 80 L 225 96 M 230 80 L 240 96 M 245 80 L 255 96 M 260 80 L 270 96 M 275 80 L 285 96 M 290 80 L 300 96" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.8" />
-  <!-- Tia lấy từ 1 (300) đến +∞ (495) -->
-  <line x1="300" y1="88" x2="495" y2="88" stroke="#38bdf8" stroke-width="3.5" />
-  <text x="300" y="94" text-anchor="middle" fill="#38bdf8" font-size="20" font-weight="bold">(</text>
-  <text x="300" y="107" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="bold">1</text>
-</svg>`
+          "svgDiagram": "<svg viewBox=\"0 0 520 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-lg select-none\">\n  <!-- Dòng 1: Tập A = [-3; 2) -->\n  <text x=\"15\" y=\"32\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">a) Tập A = [-3; 2):</text>\n  <line x1=\"145\" y1=\"28\" x2=\"495\" y2=\"28\" stroke=\"#475569\" stroke-width=\"2\" />\n  <polygon points=\"505,28 493,24 493,32\" fill=\"#94a3b8\" />\n  <!-- Gạch bỏ bên trái -3 (145 đến 210) -->\n  <path d=\"M 155 20 L 165 36 M 170 20 L 180 36 M 185 20 L 195 36 M 200 20 L 210 36\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-opacity=\"0.8\" />\n  <!-- Đoạn lấy từ -3 (210) đến 2 (360) -->\n  <line x1=\"210\" y1=\"28\" x2=\"360\" y2=\"28\" stroke=\"#10b981\" stroke-width=\"3.5\" />\n  <text x=\"210\" y=\"33\" text-anchor=\"middle\" fill=\"#10b981\" font-size=\"18\" font-weight=\"bold\">[</text>\n  <text x=\"210\" y=\"47\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"11\" font-weight=\"bold\">-3</text>\n  <text x=\"360\" y=\"34\" text-anchor=\"middle\" fill=\"#10b981\" font-size=\"20\" font-weight=\"bold\">)</text>\n  <text x=\"360\" y=\"47\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"11\" font-weight=\"bold\">2</text>\n  <!-- Gạch bỏ bên phải 2 (360 đến 490) -->\n  <path d=\"M 370 20 L 380 36 M 385 20 L 395 36 M 400 20 L 410 36 M 415 20 L 425 36 M 430 20 L 440 36 M 445 20 L 455 36 M 460 20 L 470 36 M 475 20 L 485 36\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-opacity=\"0.8\" />\n\n  <!-- Dòng 2: Tập B = (1; +∞) -->\n  <text x=\"15\" y=\"92\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">b) Tập B = (1; +∞):</text>\n  <line x1=\"145\" y1=\"88\" x2=\"495\" y2=\"88\" stroke=\"#475569\" stroke-width=\"2\" />\n  <polygon points=\"505,88 493,84 493,92\" fill=\"#94a3b8\" />\n  <!-- Gạch bỏ bên trái 1 (145 đến 300) -->\n  <path d=\"M 155 80 L 165 96 M 170 80 L 180 96 M 185 80 L 195 96 M 200 80 L 210 96 M 215 80 L 225 96 M 230 80 L 240 96 M 245 80 L 255 96 M 260 80 L 270 96 M 275 80 L 285 96 M 290 80 L 300 96\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-opacity=\"0.8\" />\n  <!-- Tia lấy từ 1 (300) đến +∞ (495) -->\n  <line x1=\"300\" y1=\"88\" x2=\"495\" y2=\"88\" stroke=\"#38bdf8\" stroke-width=\"3.5\" />\n  <text x=\"300\" y=\"94\" text-anchor=\"middle\" fill=\"#38bdf8\" font-size=\"20\" font-weight=\"bold\">(</text>\n  <text x=\"300\" y=\"107\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"11\" font-weight=\"bold\">1</text>\n</svg>"
         }
       ]
     },
@@ -726,89 +700,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "title": "Ví dụ 2b: Phép toán trên khoảng, đoạn số thực (SGK Trang 17)",
           "problem": "Cho hai tập hợp $A = [-2; 3)$ và $B = [1; 5]$. Xác định $A \\cap B, A \\cup B, A \\setminus B$ và $C_{\\mathbb{R}} B$.",
           "solution": "• $A \\cap B = [1; 3)$ (phần chung giữa hai tập hợp).\n• $A \\cup B = [-2; 5]$ (hợp lại phủ từ mút nhỏ nhất $-2$ đến mút lớn nhất $5$).\n• $A \\setminus B = [-2; 1)$ (thuộc $[-2; 3)$ nhưng bỏ đi đoạn $[1; 5]$, mút 1 thuộc $B$ nên đổi thành ngoặc tròn).\n• $C_{\\mathbb{R}} B = \\mathbb{R} \\setminus [1; 5] = (-\\infty; 1) \\cup (5; +\\infty)$.",
-          "svgDiagram": `<svg viewBox="0 0 620 270" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-2xl select-none">
-  <!-- Đường dóng mốc toạ độ -2 (x=240), 1 (x=310), 3 (x=390), 5 (x=480) -->
-  <line x1="240" y1="12" x2="240" y2="265" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 3" />
-  <line x1="310" y1="12" x2="310" y2="265" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 3" />
-  <line x1="390" y1="12" x2="390" y2="265" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 3" />
-  <line x1="480" y1="12" x2="480" y2="265" stroke="#334155" stroke-width="1.2" stroke-dasharray="3 3" />
-
-  <!-- Dòng 1: Tập A = [-2; 3) -->
-  <text x="12" y="32" fill="#cbd5e1" font-size="12" font-weight="bold">Tập A = [-2; 3):</text>
-  <line x1="190" y1="28" x2="585" y2="28" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,28 583,24 583,32" fill="#94a3b8" />
-  <path d="M 195 21 L 205 35 M 210 21 L 220 35 M 225 21 L 235 35" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <line x1="240" y1="28" x2="390" y2="28" stroke="#38bdf8" stroke-width="3" />
-  <text x="240" y="33" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="bold">[</text>
-  <text x="240" y="44" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">-2</text>
-  <text x="390" y="34" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="bold">)</text>
-  <text x="390" y="44" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">3</text>
-  <path d="M 400 21 L 410 35 M 420 21 L 430 35 M 440 21 L 450 35 M 460 21 L 470 35 M 480 21 L 490 35 M 500 21 L 510 35 M 520 21 L 530 35 M 540 21 L 550 35 M 560 21 L 570 35" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-
-  <!-- Dòng 2: Tập B = [1; 5] -->
-  <text x="12" y="74" fill="#cbd5e1" font-size="12" font-weight="bold">Tập B = [1; 5]:</text>
-  <line x1="190" y1="70" x2="585" y2="70" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,70 583,66 583,74" fill="#94a3b8" />
-  <path d="M 195 63 L 205 77 M 215 63 L 225 77 M 235 63 L 245 77 M 255 63 L 265 77 M 275 63 L 285 77 M 295 63 L 305 77" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <line x1="310" y1="70" x2="480" y2="70" stroke="#f59e0b" stroke-width="3" />
-  <text x="310" y="75" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="bold">[</text>
-  <text x="310" y="86" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">1</text>
-  <text x="480" y="75" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="bold">]</text>
-  <text x="480" y="86" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">5</text>
-  <path d="M 490 63 L 500 77 M 510 63 L 520 77 M 530 63 L 540 77 M 550 63 L 560 77 M 570 63 L 580 77" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-
-  <!-- Dòng 3: A ∩ B = [1; 3) -->
-  <text x="12" y="116" fill="#38bdf8" font-size="12" font-weight="bold">A ∩ B = [1; 3):</text>
-  <line x1="190" y1="112" x2="585" y2="112" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,112 583,108 583,116" fill="#94a3b8" />
-  <path d="M 195 105 L 205 119 M 215 105 L 225 119 M 235 105 L 245 119 M 255 105 L 265 119 M 275 105 L 285 119 M 295 105 L 305 119" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <line x1="310" y1="112" x2="390" y2="112" stroke="#38bdf8" stroke-width="3.5" />
-  <text x="310" y="117" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="bold">[</text>
-  <text x="310" y="128" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">1</text>
-  <text x="390" y="118" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="bold">)</text>
-  <text x="390" y="128" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">3</text>
-  <path d="M 400 105 L 410 119 M 420 105 L 430 119 M 440 105 L 450 119 M 460 105 L 470 119 M 480 105 L 490 119 M 500 105 L 510 119 M 520 105 L 530 119 M 540 105 L 550 119 M 560 105 L 570 119" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-
-  <!-- Dòng 4: A ∪ B = [-2; 5] -->
-  <text x="12" y="158" fill="#f59e0b" font-size="12" font-weight="bold">A ∪ B = [-2; 5]:</text>
-  <line x1="190" y1="154" x2="585" y2="154" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,154 583,150 583,158" fill="#94a3b8" />
-  <path d="M 195 147 L 205 161 M 210 147 L 220 161 M 225 147 L 235 161" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <line x1="240" y1="154" x2="480" y2="154" stroke="#f59e0b" stroke-width="3.5" />
-  <text x="240" y="159" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="bold">[</text>
-  <text x="240" y="170" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">-2</text>
-  <text x="480" y="159" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="bold">]</text>
-  <text x="480" y="170" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">5</text>
-  <path d="M 490 147 L 500 161 M 510 147 L 520 161 M 530 147 L 540 161 M 550 147 L 560 161 M 570 147 L 580 161" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-
-  <!-- Dòng 5: A ∖ B = [-2; 1) (dùng ký hiệu ∖ U+2216 chuẩn toán học) -->
-  <text x="12" y="200" fill="#10b981" font-size="12" font-weight="bold">A ∖ B = [-2; 1):</text>
-  <line x1="190" y1="196" x2="585" y2="196" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,196 583,192 583,200" fill="#94a3b8" />
-  <path d="M 195 189 L 205 203 M 210 189 L 220 203 M 225 189 L 235 203" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <line x1="240" y1="196" x2="310" y2="196" stroke="#10b981" stroke-width="3.5" />
-  <text x="240" y="201" text-anchor="middle" fill="#10b981" font-size="16" font-weight="bold">[</text>
-  <text x="240" y="212" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">-2</text>
-  <text x="310" y="202" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold">)</text>
-  <text x="310" y="212" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">1</text>
-  <path d="M 320 189 L 330 203 M 340 189 L 350 203 M 360 189 L 370 203 M 380 189 L 390 203 M 400 189 L 410 203 M 420 189 L 430 203 M 440 189 L 450 203 M 460 189 L 470 203 M 480 189 L 490 203 M 500 189 L 510 203 M 520 189 L 530 203 M 540 189 L 550 203 M 560 189 L 570 203" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-
-  <!-- Dòng 6: Phần bù C_ℝ B to rõ, hiển thị đẹp mắt -->
-  <text x="12" y="238" fill="#c084fc" font-size="14" font-weight="bold">C<tspan font-size="10" dy="4">ℝ</tspan><tspan font-size="14" dy="-4"> B</tspan></text>
-  <text x="12" y="254" fill="#a855f7" font-size="11" font-weight="bold">= (-∞; 1) ∪ (5; +∞):</text>
-  <line x1="190" y1="244" x2="585" y2="244" stroke="#475569" stroke-width="1.8" />
-  <polygon points="593,244 583,240 583,248" fill="#94a3b8" />
-  <!-- Tia trái: (-∞; 1) -->
-  <line x1="190" y1="244" x2="310" y2="244" stroke="#a855f7" stroke-width="3.5" />
-  <text x="310" y="250" text-anchor="middle" fill="#a855f7" font-size="18" font-weight="bold">)</text>
-  <text x="310" y="260" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">1</text>
-  <!-- Gạch bỏ giữa [1; 5] -->
-  <path d="M 320 237 L 330 251 M 340 237 L 350 251 M 360 237 L 370 251 M 375 237 L 385 251 M 395 237 L 405 251 M 415 237 L 425 251 M 435 237 L 445 251 M 455 237 L 465 251 M 470 237 L 480 251" stroke="#ef4444" stroke-width="1.3" stroke-opacity="0.75" />
-  <!-- Tia phải: (5; +∞) -->
-  <line x1="480" y1="244" x2="585" y2="244" stroke="#a855f7" stroke-width="3.5" />
-  <text x="480" y="250" text-anchor="middle" fill="#a855f7" font-size="18" font-weight="bold">(</text>
-  <text x="480" y="260" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">5</text>
-</svg>`
+          "svgDiagram": "<svg viewBox=\"0 0 620 270\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-2xl select-none\">\n  <!-- Đường dóng mốc toạ độ -2 (x=240), 1 (x=310), 3 (x=390), 5 (x=480) -->\n  <line x1=\"240\" y1=\"12\" x2=\"240\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" />\n  <line x1=\"310\" y1=\"12\" x2=\"310\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" />\n  <line x1=\"390\" y1=\"12\" x2=\"390\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" />\n  <line x1=\"480\" y1=\"12\" x2=\"480\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" />\n\n  <!-- Dòng 1: Tập A = [-2; 3) -->\n  <text x=\"12\" y=\"32\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"bold\">Tập A = [-2; 3):</text>\n  <line x1=\"190\" y1=\"28\" x2=\"585\" y2=\"28\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,28 583,24 583,32\" fill=\"#94a3b8\" />\n  <path d=\"M 195 21 L 205 35 M 210 21 L 220 35 M 225 21 L 235 35\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <line x1=\"240\" y1=\"28\" x2=\"390\" y2=\"28\" stroke=\"#38bdf8\" stroke-width=\"3\" />\n  <text x=\"240\" y=\"33\" text-anchor=\"middle\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"bold\">[</text>\n  <text x=\"240\" y=\"44\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">-2</text>\n  <text x=\"390\" y=\"34\" text-anchor=\"middle\" fill=\"#38bdf8\" font-size=\"18\" font-weight=\"bold\">)</text>\n  <text x=\"390\" y=\"44\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">3</text>\n  <path d=\"M 400 21 L 410 35 M 420 21 L 430 35 M 440 21 L 450 35 M 460 21 L 470 35 M 480 21 L 490 35 M 500 21 L 510 35 M 520 21 L 530 35 M 540 21 L 550 35 M 560 21 L 570 35\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n\n  <!-- Dòng 2: Tập B = [1; 5] -->\n  <text x=\"12\" y=\"74\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"bold\">Tập B = [1; 5]:</text>\n  <line x1=\"190\" y1=\"70\" x2=\"585\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,70 583,66 583,74\" fill=\"#94a3b8\" />\n  <path d=\"M 195 63 L 205 77 M 215 63 L 225 77 M 235 63 L 245 77 M 255 63 L 265 77 M 275 63 L 285 77 M 295 63 L 305 77\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <line x1=\"310\" y1=\"70\" x2=\"480\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"3\" />\n  <text x=\"310\" y=\"75\" text-anchor=\"middle\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"bold\">[</text>\n  <text x=\"310\" y=\"86\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">1</text>\n  <text x=\"480\" y=\"75\" text-anchor=\"middle\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"bold\">]</text>\n  <text x=\"480\" y=\"86\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">5</text>\n  <path d=\"M 490 63 L 500 77 M 510 63 L 520 77 M 530 63 L 540 77 M 550 63 L 560 77 M 570 63 L 580 77\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n\n  <!-- Dòng 3: A ∩ B = [1; 3) -->\n  <text x=\"12\" y=\"116\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">A ∩ B = [1; 3):</text>\n  <line x1=\"190\" y1=\"112\" x2=\"585\" y2=\"112\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,112 583,108 583,116\" fill=\"#94a3b8\" />\n  <path d=\"M 195 105 L 205 119 M 215 105 L 225 119 M 235 105 L 245 119 M 255 105 L 265 119 M 275 105 L 285 119 M 295 105 L 305 119\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <line x1=\"310\" y1=\"112\" x2=\"390\" y2=\"112\" stroke=\"#38bdf8\" stroke-width=\"3.5\" />\n  <text x=\"310\" y=\"117\" text-anchor=\"middle\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"bold\">[</text>\n  <text x=\"310\" y=\"128\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">1</text>\n  <text x=\"390\" y=\"118\" text-anchor=\"middle\" fill=\"#38bdf8\" font-size=\"18\" font-weight=\"bold\">)</text>\n  <text x=\"390\" y=\"128\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">3</text>\n  <path d=\"M 400 105 L 410 119 M 420 105 L 430 119 M 440 105 L 450 119 M 460 105 L 470 119 M 480 105 L 490 119 M 500 105 L 510 119 M 520 105 L 530 119 M 540 105 L 550 119 M 560 105 L 570 119\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n\n  <!-- Dòng 4: A ∪ B = [-2; 5] -->\n  <text x=\"12\" y=\"158\" fill=\"#f59e0b\" font-size=\"12\" font-weight=\"bold\">A ∪ B = [-2; 5]:</text>\n  <line x1=\"190\" y1=\"154\" x2=\"585\" y2=\"154\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,154 583,150 583,158\" fill=\"#94a3b8\" />\n  <path d=\"M 195 147 L 205 161 M 210 147 L 220 161 M 225 147 L 235 161\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <line x1=\"240\" y1=\"154\" x2=\"480\" y2=\"154\" stroke=\"#f59e0b\" stroke-width=\"3.5\" />\n  <text x=\"240\" y=\"159\" text-anchor=\"middle\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"bold\">[</text>\n  <text x=\"240\" y=\"170\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">-2</text>\n  <text x=\"480\" y=\"159\" text-anchor=\"middle\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"bold\">]</text>\n  <text x=\"480\" y=\"170\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">5</text>\n  <path d=\"M 490 147 L 500 161 M 510 147 L 520 161 M 530 147 L 540 161 M 550 147 L 560 161 M 570 147 L 580 161\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n\n  <!-- Dòng 5: A ∖ B = [-2; 1) (dùng ký hiệu ∖ U+2216 chuẩn toán học) -->\n  <text x=\"12\" y=\"200\" fill=\"#10b981\" font-size=\"12\" font-weight=\"bold\">A ∖ B = [-2; 1):</text>\n  <line x1=\"190\" y1=\"196\" x2=\"585\" y2=\"196\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,196 583,192 583,200\" fill=\"#94a3b8\" />\n  <path d=\"M 195 189 L 205 203 M 210 189 L 220 203 M 225 189 L 235 203\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <line x1=\"240\" y1=\"196\" x2=\"310\" y2=\"196\" stroke=\"#10b981\" stroke-width=\"3.5\" />\n  <text x=\"240\" y=\"201\" text-anchor=\"middle\" fill=\"#10b981\" font-size=\"16\" font-weight=\"bold\">[</text>\n  <text x=\"240\" y=\"212\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">-2</text>\n  <text x=\"310\" y=\"202\" text-anchor=\"middle\" fill=\"#10b981\" font-size=\"18\" font-weight=\"bold\">)</text>\n  <text x=\"310\" y=\"212\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">1</text>\n  <path d=\"M 320 189 L 330 203 M 340 189 L 350 203 M 360 189 L 370 203 M 380 189 L 390 203 M 400 189 L 410 203 M 420 189 L 430 203 M 440 189 L 450 203 M 460 189 L 470 203 M 480 189 L 490 203 M 500 189 L 510 203 M 520 189 L 530 203 M 540 189 L 550 203 M 560 189 L 570 203\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n\n  <!-- Dòng 6: Phần bù C_ℝ B to rõ, hiển thị đẹp mắt -->\n  <text x=\"12\" y=\"238\" fill=\"#c084fc\" font-size=\"14\" font-weight=\"bold\">C<tspan font-size=\"10\" dy=\"4\">ℝ</tspan><tspan font-size=\"14\" dy=\"-4\"> B</tspan></text>\n  <text x=\"12\" y=\"254\" fill=\"#a855f7\" font-size=\"11\" font-weight=\"bold\">= (-∞; 1) ∪ (5; +∞):</text>\n  <line x1=\"190\" y1=\"244\" x2=\"585\" y2=\"244\" stroke=\"#475569\" stroke-width=\"1.8\" />\n  <polygon points=\"593,244 583,240 583,248\" fill=\"#94a3b8\" />\n  <!-- Tia trái: (-∞; 1) -->\n  <line x1=\"190\" y1=\"244\" x2=\"310\" y2=\"244\" stroke=\"#a855f7\" stroke-width=\"3.5\" />\n  <text x=\"310\" y=\"250\" text-anchor=\"middle\" fill=\"#a855f7\" font-size=\"18\" font-weight=\"bold\">)</text>\n  <text x=\"310\" y=\"260\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">1</text>\n  <!-- Gạch bỏ giữa [1; 5] -->\n  <path d=\"M 320 237 L 330 251 M 340 237 L 350 251 M 360 237 L 370 251 M 375 237 L 385 251 M 395 237 L 405 251 M 415 237 L 425 251 M 435 237 L 445 251 M 455 237 L 465 251 M 470 237 L 480 251\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-opacity=\"0.75\" />\n  <!-- Tia phải: (5; +∞) -->\n  <line x1=\"480\" y1=\"244\" x2=\"585\" y2=\"244\" stroke=\"#a855f7\" stroke-width=\"3.5\" />\n  <text x=\"480\" y=\"250\" text-anchor=\"middle\" fill=\"#a855f7\" font-size=\"18\" font-weight=\"bold\">(</text>\n  <text x=\"480\" y=\"260\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"10\" font-weight=\"bold\">5</text>\n</svg>"
         }
       ]
     },
@@ -827,36 +719,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "title": "Ví dụ 3: Bài toán khảo sát sở thích học sinh (SGK Trang 18)",
           "problem": "Lớp 10A có 40 học sinh, trong đó có 26 bạn thích môn Bóng đá, 18 bạn thích môn Cầu lông, và 12 bạn thích cả hai môn. Hỏi:\na) Có bao nhiêu bạn chỉ thích môn Bóng đá?\nb) Có bao nhiêu bạn không thích môn nào trong hai môn trên?",
           "solution": "• Trả lời ý a: Số bạn chỉ thích môn Bóng đá là: $26 - 12 = 14$ bạn.\n• Trả lời ý b:\n  - Số bạn thích ít nhất một trong hai môn là: $n(A \\cup B) = 26 + 18 - 12 = 32$ bạn.\n  - Số bạn không thích môn nào là: $40 - 32 = 8$ bạn.",
-          "svgDiagram": `<svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-md select-none">
-  <!-- Khung chữ nhật bao quanh toàn thể lớp học 10A -->
-  <rect x="20" y="15" width="400" height="200" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2" />
-  <text x="35" y="42" fill="#94a3b8" font-size="12" font-weight="bold">👥 40</text>
-
-  <!-- Vòng tròn 1: Môn Bóng đá (175, 120, r=68) -->
-  <circle cx="175" cy="120" r="68" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="2.5" />
-  <!-- Vòng tròn 2: Môn Cầu lông (265, 120, r=68) -->
-  <circle cx="265" cy="120" r="68" fill="#7c3aed" fill-opacity="0.25" stroke="#a855f7" stroke-width="2.5" />
-
-  <!-- Thấu kính giao nhau nổi bật -->
-  <path d="M 220 69 A 68 68 0 0 1 220 171 A 68 68 0 0 1 220 69" fill="#9333ea" fill-opacity="0.45" stroke="#e879f9" stroke-width="2" />
-
-  <!-- Biểu tượng và số môn Bóng đá -->
-  <text x="140" y="85" font-size="22" text-anchor="middle">⚽</text>
-  <text x="140" y="128" font-size="22" font-weight="900" fill="#38bdf8" text-anchor="middle">14</text>
-
-  <!-- Vùng giao nhau: thích cả 2 môn -->
-  <text x="220" y="128" font-size="24" font-weight="900" fill="#facc15" text-anchor="middle">12</text>
-
-  <!-- Biểu tượng và số môn Cầu lông -->
-  <text x="300" y="85" font-size="22" text-anchor="middle">🏸</text>
-  <text x="300" y="128" font-size="22" font-weight="900" fill="#c084fc" text-anchor="middle">6</text>
-
-  <!-- Không thích môn nào (ngoài 2 vòng tròn) -->
-  <g transform="translate(65, 180)">
-    <circle cx="0" cy="0" r="16" fill="#1e293b" stroke="#64748b" stroke-width="1.5" />
-    <text x="0" y="6" text-anchor="middle" fill="#f87171" font-size="16" font-weight="900">8</text>
-  </g>
-</svg>`
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md select-none\">\n  <!-- Khung chữ nhật bao quanh toàn thể lớp học 10A -->\n  <rect x=\"20\" y=\"15\" width=\"400\" height=\"200\" rx=\"16\" fill=\"#0f172a\" stroke=\"#334155\" stroke-width=\"2\" />\n  <text x=\"35\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">👥 40</text>\n\n  <!-- Vòng tròn 1: Môn Bóng đá (175, 120, r=68) -->\n  <circle cx=\"175\" cy=\"120\" r=\"68\" fill=\"#0284c7\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- Vòng tròn 2: Môn Cầu lông (265, 120, r=68) -->\n  <circle cx=\"265\" cy=\"120\" r=\"68\" fill=\"#7c3aed\" fill-opacity=\"0.25\" stroke=\"#a855f7\" stroke-width=\"2.5\" />\n\n  <!-- Thấu kính giao nhau nổi bật -->\n  <path d=\"M 220 69 A 68 68 0 0 1 220 171 A 68 68 0 0 1 220 69\" fill=\"#9333ea\" fill-opacity=\"0.45\" stroke=\"#e879f9\" stroke-width=\"2\" />\n\n  <!-- Biểu tượng và số môn Bóng đá -->\n  <text x=\"140\" y=\"85\" font-size=\"22\" text-anchor=\"middle\">⚽</text>\n  <text x=\"140\" y=\"128\" font-size=\"22\" font-weight=\"900\" fill=\"#38bdf8\" text-anchor=\"middle\">14</text>\n\n  <!-- Vùng giao nhau: thích cả 2 môn -->\n  <text x=\"220\" y=\"128\" font-size=\"24\" font-weight=\"900\" fill=\"#facc15\" text-anchor=\"middle\">12</text>\n\n  <!-- Biểu tượng và số môn Cầu lông -->\n  <text x=\"300\" y=\"85\" font-size=\"22\" text-anchor=\"middle\">🏸</text>\n  <text x=\"300\" y=\"128\" font-size=\"22\" font-weight=\"900\" fill=\"#c084fc\" text-anchor=\"middle\">6</text>\n\n  <!-- Không thích môn nào (ngoài 2 vòng tròn) -->\n  <g transform=\"translate(65, 180)\">\n    <circle cx=\"0\" cy=\"0\" r=\"16\" fill=\"#1e293b\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n    <text x=\"0\" y=\"6\" text-anchor=\"middle\" fill=\"#f87171\" font-size=\"16\" font-weight=\"900\">8</text>\n  </g>\n</svg>"
         }
       ]
     }
@@ -1112,7 +975,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$5$"
       ],
       "correctIndex": 0,
-      "explanation": "Số bạn chơi ít nhất một môn: $n(A \\cup B) = 25 + 18 - 10 = 33$ bạn. Số bạn không chơi môn nào là: $40 - 33 = 7$ bạn."
+      "explanation": "Số bạn chơi ít nhất một môn: $n(A \\cup B) = 25 + 18 - 10 = 33$ bạn. Số bạn không chơi môn nào là: $40 - 33 = 7$ bạn.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Lớp 10A (45 HS)</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#f59e0b\" fill-opacity=\"0.22\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">Bóng đá ⚽ (25)</text> <text x=\"250\" y=\"70\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">Bóng rổ 🏀 (20)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">15</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">10</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">10</text> <text x=\"355\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Ngoài: 10</text> </svg>"
     },
     {
       "id": "quiz-10.2.19",
@@ -1126,7 +990,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$8$"
       ],
       "correctIndex": 0,
-      "explanation": "Áp dụng công thức: $n(A \\cap B) = n(A) + n(B) - n(A \\cup B) = 32 + 28 - 50 = 10$ bạn."
+      "explanation": "Áp dụng công thức: $n(A \\cap B) = n(A) + n(B) - n(A \\cup B) = 32 + 28 - 50 = 10$ bạn.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khách siêu thị (100)</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#ef4444\" fill-opacity=\"0.22\" stroke=\"#ef4444\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#06b6d4\" fill-opacity=\"0.22\" stroke=\"#06b6d4\" stroke-width=\"2\"/> <text x=\"130\" y=\"70\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\">Thực phẩm 🥩 (65)</text> <text x=\"255\" y=\"70\" fill=\"#22d3ee\" font-size=\"13\" font-weight=\"bold\">Đồ uống 🥤 (45)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">40</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">25</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">20</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không mua: 15</text> </svg>"
     },
     {
       "id": "quiz-10.2.20",
@@ -1398,7 +1263,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "correctAnswer": true,
           "explanation": "Số bạn không chọn môn nào: $80 - 72 = 8$ bạn."
         }
-      ]
+      ],
+      "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khối 10: 70 học sinh</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#eab308\" fill-opacity=\"0.22\" stroke=\"#eab308\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#f43f5e\" fill-opacity=\"0.22\" stroke=\"#f43f5e\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#facc15\" font-size=\"13\" font-weight=\"bold\">Cờ vua ♟️ (40)</text> <text x=\"255\" y=\"70\" fill=\"#fb7185\" font-size=\"13\" font-weight=\"bold\">Cờ tướng 🔴 (35)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">35</text> <text x=\"212\" y=\"120\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"bold\">5</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">30</text> <text x=\"345\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Tổng = 70</text> </svg>"
     }
   ],
   "shortAnswerQuestions": [
@@ -1961,7 +1827,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$80x + 50y > 500$"
       ],
       "correctIndex": 0,
-      "explanation": "Tổng số tiền là $80x + 50y$ (nghìn đồng). Vì không vượt quá 500 nghìn đồng nên: $80x + 50y \\le 500 \\Leftrightarrow 8x + 5y \\le 50$."
+      "explanation": "Tổng số tiền là $80x + 50y$ (nghìn đồng). Vì không vượt quá 500 nghìn đồng nên: $80x + 50y \\le 500 \\Leftrightarrow 8x + 5y \\le 50$.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- 6x + 5y <= 30: Cắt Ox tại 5 (px: 260, 185), Oy tại 6 (px: 85, 55) --> <polygon points=\"85,185 260,185 85,55\" fill=\"#ec4899\" fill-opacity=\"0.22\" stroke=\"#ec4899\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"185\" r=\"4\" fill=\"#ec4899\"/> <text x=\"255\" y=\"202\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">5</text> <circle cx=\"85\" cy=\"55\" r=\"4\" fill=\"#ec4899\"/> <text x=\"65\" y=\"58\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">6</text> <text x=\"140\" y=\"140\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">6x + 5y ≤ 30</text> </svg>"
     },
     {
       "id": "quiz-10.3.20",
@@ -2201,7 +2068,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "correctAnswer": true,
           "explanation": "Thay $x = 12, y = 12$: $3(12) + 2(12) = 36 + 24 = 60 \\le 60$ (đúng)."
         }
-      ]
+      ],
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- 6x + 5y <= 30: Cắt Ox tại 5 (px: 260, 185), Oy tại 6 (px: 85, 55) --> <polygon points=\"85,185 260,185 85,55\" fill=\"#ec4899\" fill-opacity=\"0.22\" stroke=\"#ec4899\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"185\" r=\"4\" fill=\"#ec4899\"/> <text x=\"255\" y=\"202\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">5</text> <circle cx=\"85\" cy=\"55\" r=\"4\" fill=\"#ec4899\"/> <text x=\"65\" y=\"58\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">6</text> <text x=\"140\" y=\"140\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">6x + 5y ≤ 30</text> </svg>"
     },
     {
       "id": "tf-10.3.8",
@@ -2350,7 +2218,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "5",
         "5 bông"
       ],
-      "explanation": "Gọi $x$ là số bông hoa hồng ($x \\in \\mathbb{N}$). Khi mua 3 bông hoa ly, số tiền mua hoa ly là $3 \\cdot 25 = 75$ nghìn đồng. Số tiền còn lại mua hoa hồng là $150 - 75 = 75$ nghìn đồng. Số bông hoa hồng tối đa là: $75 : 15 = 5$ bông."
+      "explanation": "Gọi $x$ là số bông hoa hồng ($x \\in \\mathbb{N}$). Khi mua 3 bông hoa ly, số tiền mua hoa ly là $3 \\cdot 25 = 75$ nghìn đồng. Số tiền còn lại mua hoa hồng là $150 - 75 = 75$ nghìn đồng. Số bông hoa hồng tối đa là: $75 : 15 = 5$ bông.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- 6x + 5y <= 30: Cắt Ox tại 5 (px: 260, 185), Oy tại 6 (px: 85, 55) --> <polygon points=\"85,185 260,185 85,55\" fill=\"#ec4899\" fill-opacity=\"0.22\" stroke=\"#ec4899\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"185\" r=\"4\" fill=\"#ec4899\"/> <text x=\"255\" y=\"202\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">5</text> <circle cx=\"85\" cy=\"55\" r=\"4\" fill=\"#ec4899\"/> <text x=\"65\" y=\"58\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">6</text> <text x=\"140\" y=\"140\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">6x + 5y ≤ 30</text> </svg>"
     },
     {
       "id": "sa-10.3.11",
@@ -2389,76 +2258,76 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "venn",
-    youtubeVideoId: "JySXqEuzA_Q",
-    youtubeVideoTitle: "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương I - Toán 10 KNTT",
-    youtubeVideos: [
-      {
-        id: "JySXqEuzA_Q",
-        title: "Bài giảng: Chữa bài tập cuối chương I (Mệnh đề & Tập hợp)"
-      }
-    ],
-    videoQuestions: [
-      {
-        id: "vq-10.ot1.1",
-        title: "Ví dụ 1: Mệnh đề tương đương trong hình học",
-        question: "Cho tam giác $ABC$. Trong các khẳng định sau, khẳng định nào là một mệnh đề tương đương đúng?",
-        options: [
-          "Tam giác $ABC$ là tam giác đều khi và chỉ khi tam giác $ABC$ có ba góc bằng nhau.",
-          "Tam giác $ABC$ là tam giác vuông khi và chỉ khi tam giác $ABC$ có một góc tù.",
-          "Tam giác $ABC$ là tam giác cân khi và chỉ khi tam giác $ABC$ có hai đường cao bằng nhau và một góc bằng $60^\\circ$.",
-          "Tam giác $ABC$ có một góc vuông khi và chỉ khi $AB + AC = BC$."
-        ],
-        correctIndex: 0,
-        explanation: "Tam giác đều tương đương với việc có 3 góc bằng nhau (đều bằng $60^\\circ$). Mệnh đề tương đương này đúng ở cả hai chiều kéo theo."
-      },
-      {
-        id: "vq-10.ot1.2",
-        title: "Ví dụ 2: Tìm tập xác định dưới dạng tập hợp con của ℝ",
-        question: "Tập xác định của hàm số $y = \\sqrt{x - 3} + \\frac{1}{7 - x}$ là:",
-        options: [
-          "$[3; 7) \\cup (7; +\\infty)$",
-          "$[3; 7]$",
-          "$(3; 7)$",
-          "$[3; +\\infty)$"
-        ],
-        correctIndex: 0,
-        explanation: "Điều kiện xác định: $x - 3 \\ge 0 \\Leftrightarrow x \\ge 3$ và $7 - x \\ne 0 \\Leftrightarrow x \\ne 7$. Kết hợp lại ta được tập xác định là $D = [3; 7) \\cup (7; +\\infty)$."
-      },
-      {
-        id: "vq-10.ot1.3",
-        title: "Ví dụ 3: Xác định giao và hợp của hai khoảng đoạn",
-        question: "Cho hai tập hợp $A = [-4; 2)$ và $B = [-1; 5]$. Khi đó tập hợp $A \\cup B$ là:",
-        options: [
-          "$[-4; 5]$",
-          "$[-1; 2)$",
-          "$[-4; 2)$",
-          "$(-1; 5]$"
-        ],
-        correctIndex: 0,
-        explanation: "Hợp $A \\cup B$ là tập hợp chứa tất cả các phần tử thuộc ít nhất một trong hai tập hợp $A, B$. Trải trên trục số từ $-4$ đến $5$, ta được $[-4; 5]$."
-      },
-      {
-        id: "vq-10.ot1.4",
-        title: "Ví dụ 4: Bài toán thực tế sử dụng Sơ đồ Ven",
-        question: "Lớp 10A có 40 học sinh, trong đó có 25 bạn thích môn Toán, 20 bạn thích môn Văn và 12 bạn thích cả hai môn Toán và Văn. Hỏi lớp 10A có bao nhiêu bạn không thích cả hai môn trên?",
-        options: [
-          "7 bạn",
-          "5 bạn",
-          "8 bạn",
-          "10 bạn"
-        ],
-        correctIndex: 0,
-        explanation: "Số học sinh thích ít nhất một môn Toán hoặc Văn là: $|A \\cup B| = |A| + |B| - |A \\cap B| = 25 + 20 - 12 = 33$ học sinh. Do đó số bạn không thích cả hai môn là $40 - 33 = 7$ bạn."
-      }
-    ],
-    tips: [
-      "Công thức hợp hai tập hợp hữu hạn (Sơ đồ Ven): $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$. Nhớ trừ đi phần giao vì nó đã bị đếm hai lần.",
-      "Kiểm tra điều kiện rỗng khi tìm giao: $A \\cap B = \\emptyset$ xảy ra khi khoảng này nằm hoàn toàn bên trái hoặc bên phải khoảng kia mà không có điểm chung."
-    ],
-    traps: [
-      "Bẫy đếm trùng lặp trong bài toán Ven: Khi đề bài cho '25 bạn thích Toán' thì số này đã bao gồm cả 12 bạn thích cả Toán và Văn. Tránh lấy 25 + 20 rồi so sánh với 40 mà quên trừ phần giao.",
-      "Bẫy dấu ngoặc vuông và tròn tại mốc chia tập hợp: Khi giải bài toán tìm tham số $m$ để $A \\cap B = \\emptyset$, cần xem xét cực kỳ kỹ tại điểm tiếp giáp có thể xảy ra hay không (nếu cả 2 đều là ngoặc vuông thì sẽ có chung điểm tiếp giáp đó)."
-    ],
+  "youtubeVideoId": "JySXqEuzA_Q",
+  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương I - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "JySXqEuzA_Q",
+      "title": "Bài giảng: Chữa bài tập cuối chương I (Mệnh đề & Tập hợp)"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.ot1.1",
+      "title": "Ví dụ 1: Mệnh đề tương đương trong hình học",
+      "question": "Cho tam giác $ABC$. Trong các khẳng định sau, khẳng định nào là một mệnh đề tương đương đúng?",
+      "options": [
+        "Tam giác $ABC$ là tam giác đều khi và chỉ khi tam giác $ABC$ có ba góc bằng nhau.",
+        "Tam giác $ABC$ là tam giác vuông khi và chỉ khi tam giác $ABC$ có một góc tù.",
+        "Tam giác $ABC$ là tam giác cân khi và chỉ khi tam giác $ABC$ có hai đường cao bằng nhau và một góc bằng $60^\\circ$.",
+        "Tam giác $ABC$ có một góc vuông khi và chỉ khi $AB + AC = BC$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tam giác đều tương đương với việc có 3 góc bằng nhau (đều bằng $60^\\circ$). Mệnh đề tương đương này đúng ở cả hai chiều kéo theo."
+    },
+    {
+      "id": "vq-10.ot1.2",
+      "title": "Ví dụ 2: Tìm tập xác định dưới dạng tập hợp con của ℝ",
+      "question": "Tập xác định của hàm số $y = \\sqrt{x - 3} + \\frac{1}{7 - x}$ là:",
+      "options": [
+        "$[3; 7) \\cup (7; +\\infty)$",
+        "$[3; 7]$",
+        "$(3; 7)$",
+        "$[3; +\\infty)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điều kiện xác định: $x - 3 \\ge 0 \\Leftrightarrow x \\ge 3$ và $7 - x \\ne 0 \\Leftrightarrow x \\ne 7$. Kết hợp lại ta được tập xác định là $D = [3; 7) \\cup (7; +\\infty)$."
+    },
+    {
+      "id": "vq-10.ot1.3",
+      "title": "Ví dụ 3: Xác định giao và hợp của hai khoảng đoạn",
+      "question": "Cho hai tập hợp $A = [-4; 2)$ và $B = [-1; 5]$. Khi đó tập hợp $A \\cup B$ là:",
+      "options": [
+        "$[-4; 5]$",
+        "$[-1; 2)$",
+        "$[-4; 2)$",
+        "$(-1; 5]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hợp $A \\cup B$ là tập hợp chứa tất cả các phần tử thuộc ít nhất một trong hai tập hợp $A, B$. Trải trên trục số từ $-4$ đến $5$, ta được $[-4; 5]$."
+    },
+    {
+      "id": "vq-10.ot1.4",
+      "title": "Ví dụ 4: Bài toán thực tế sử dụng Sơ đồ Ven",
+      "question": "Lớp 10A có 40 học sinh, trong đó có 25 bạn thích môn Toán, 20 bạn thích môn Văn và 12 bạn thích cả hai môn Toán và Văn. Hỏi lớp 10A có bao nhiêu bạn không thích cả hai môn trên?",
+      "options": [
+        "7 bạn",
+        "5 bạn",
+        "8 bạn",
+        "10 bạn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số học sinh thích ít nhất một môn Toán hoặc Văn là: $|A \\cup B| = |A| + |B| - |A \\cap B| = 25 + 20 - 12 = 33$ học sinh. Do đó số bạn không thích cả hai môn là $40 - 33 = 7$ bạn."
+    }
+  ],
+  "tips": [
+    "Công thức hợp hai tập hợp hữu hạn (Sơ đồ Ven): $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$. Nhớ trừ đi phần giao vì nó đã bị đếm hai lần.",
+    "Kiểm tra điều kiện rỗng khi tìm giao: $A \\cap B = \\emptyset$ xảy ra khi khoảng này nằm hoàn toàn bên trái hoặc bên phải khoảng kia mà không có điểm chung."
+  ],
+  "traps": [
+    "Bẫy đếm trùng lặp trong bài toán Ven: Khi đề bài cho '25 bạn thích Toán' thì số này đã bao gồm cả 12 bạn thích cả Toán và Văn. Tránh lấy 25 + 20 rồi so sánh với 40 mà quên trừ phần giao.",
+    "Bẫy dấu ngoặc vuông và tròn tại mốc chia tập hợp: Khi giải bài toán tìm tham số $m$ để $A \\cap B = \\emptyset$, cần xem xét cực kỳ kỹ tại điểm tiếp giáp có thể xảy ra hay không (nếu cả 2 đều là ngoặc vuông thì sẽ có chung điểm tiếp giáp đó)."
+  ],
   "quizQuestions": [
     {
       "id": "ai-10.1.1",
@@ -3018,19 +2887,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "isAiGenerated": true
         },
         {
-          "id": "ai-10.2.15",
-          "badge": "Vận dụng - Tham số để hai tập rời nhau",
-          "source": "Đề thi học sinh giỏi Toán 10",
-          "question": "Cho hai tập hợp $A = [m; m + 3]$ và $B = [2; 6]$. Tìm tất cả các giá trị của $m$ để $A \\cap B = \\emptyset$.",
+          "id": "ai-10.2.prac1",
+          "badge": "Vận dụng - Bài toán thực tế sở thích thể thao",
+          "source": "Sách giáo khoa Toán 10 KNTT & Đề thi khảo sát",
+          "question": "Lớp 10A có 45 học sinh, trong đó có 25 bạn thích bóng đá, 20 bạn thích bóng chuyền và 10 bạn thích cả hai môn này. Số học sinh của lớp không thích môn nào trong hai môn trên là:",
           "options": [
-            "$m < -1$ hoặc $m > 6$",
-            "$-1 \\le m \\le 6$",
-            "$m \\le -1$ hoặc $m \\ge 6$",
-            "$m < 2$ hoặc $m > 6$"
+            "$10$",
+            "$15$",
+            "$5$",
+            "$12$"
           ],
           "correctIndex": 0,
-          "explanation": "Rời nhau khi $m + 3 < 2 \\Leftrightarrow m < -1$ hoặc $m > 6$.",
-          "isAiGenerated": true
+          "explanation": "Gọi $A$ là tập hợp học sinh thích bóng đá ($n(A) = 25$), $B$ là tập hợp học sinh thích bóng chuyền ($n(B) = 20$). Khi đó $A \\cap B$ là số bạn thích cả hai môn ($n(A \\cap B) = 10$). Số học sinh thích ít nhất một môn là $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 25 + 20 - 10 = 35$. Số bạn không thích môn nào là: $45 - 35 = 10$.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Lớp 10A (45 HS)</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#f59e0b\" fill-opacity=\"0.22\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">Bóng đá ⚽ (25)</text> <text x=\"250\" y=\"70\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">Bóng rổ 🏀 (20)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">15</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">10</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">10</text> <text x=\"355\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Ngoài: 10</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -3131,36 +3000,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.2.2",
-          "badge": "Đúng / Sai 2 - Phép toán trên tập hợp rời rạc",
-          "source": "SBT Toán 10 KNTT",
-          "prompt": "Cho hai tập hợp $A = \\{2; 4; 6; 8\\}$ và $B = \\{3; 4; 5; 6; 7\\}$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+          "id": "ai-tf-10.1.prac1",
+          "badge": "Đúng / Sai 4 - Bài toán khảo sát ngoại ngữ sinh viên",
+          "source": "Đề kiểm tra định kì Toán 10 KNTT",
+          "prompt": "Khảo sát 50 sinh viên tại một trường đại học: có 30 bạn học Tiếng Anh, 25 bạn học Tiếng Pháp và 10 bạn học cả hai thứ tiếng này. Xét tính Đúng/Sai của các khẳng định sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Giao của hai tập hợp là $A \\cap B = \\{4; 6\\}$.",
+              "text": "Số sinh viên chỉ học Tiếng Anh mà không học Tiếng Pháp là 20 bạn.",
               "correctAnswer": true,
-              "explanation": "Các phần tử chung là 4 và 6."
+              "explanation": "Số sinh viên chỉ học Tiếng Anh là $30 - 10 = 20$ bạn."
             },
             {
               "id": "b",
-              "text": "Hợp $A \\cup B$ có tất cả 7 phần tử.",
+              "text": "Số sinh viên chỉ học đúng một trong hai ngoại ngữ trên là 35 bạn.",
               "correctAnswer": true,
-              "explanation": "$A \\cup B = \\{2; 3; 4; 5; 6; 7; 8\\}$ gồm 7 phần tử."
+              "explanation": "Số sinh viên chỉ học Tiếng Pháp là $25 - 10 = 15$. Vậy số sinh viên chỉ học đúng một thứ tiếng là $20 + 15 = 35$ bạn."
             },
             {
               "id": "c",
-              "text": "Hiệu $A \\setminus B = \\{2; 8\\}$.",
+              "text": "Số sinh viên không học ngoại ngữ nào trong hai thứ tiếng trên là 5 bạn.",
               "correctAnswer": true,
-              "explanation": "Thuộc $A$ nhưng không thuộc $B$ là 2 và 8."
+              "explanation": "Số sinh viên học ít nhất một ngoại ngữ là $30 + 25 - 10 = 45$. Số sinh viên không học ngoại ngữ nào là $50 - 45 = 5$ bạn."
             },
             {
               "id": "d",
-              "text": "Hiệu $B \\setminus A = \\{3; 5; 7\\}$.",
-              "correctAnswer": true,
-              "explanation": "Thuộc $B$ nhưng không thuộc $A$ là 3, 5, 7."
+              "text": "Tỉ lệ sinh viên chỉ học Tiếng Pháp chiếm $40\\%$ tổng số sinh viên khảo sát.",
+              "correctAnswer": false,
+              "explanation": "Tỉ lệ là $\\frac{15}{50} = 30\\% \\ne 40\\%$."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khảo sát 50 HS ngoại ngữ</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#a855f7\" fill-opacity=\"0.22\" stroke=\"#a855f7\" stroke-width=\"2\"/> <text x=\"125\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">Tiếng Anh 🇬🇧 (30)</text> <text x=\"250\" y=\"70\" fill=\"#c084fc\" font-size=\"13\" font-weight=\"bold\">Tiếng Pháp 🇫🇷 (25)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">18</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">12</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">13</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Ngoài: 7</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -3225,16 +3095,16 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "prompt": "Cho tập hợp $A$ có 7 phần tử phân biệt. Có tất cả bao nhiêu tập con gồm đúng 2 phần tử của tập hợp $A$?"
         },
         {
-          "id": "ai-sa-10.2.4",
-          "badge": "Trả lời ngắn 4 - Số phần tử của hợp hai tập rời rạc",
-          "source": "SGK Toán 10 KNTT",
-          "correctAnswer": "5",
+          "id": "ai-sa-10.1.prac1",
+          "badge": "Trả lời ngắn 6 - Đếm số học sinh không giỏi môn nào",
+          "source": "SBT Toán 10 KNTT",
+          "prompt": "Trong lớp 10B có 40 học sinh, có 22 học sinh giỏi môn Toán, 18 học sinh giỏi môn Văn, và 8 học sinh giỏi cả hai môn Toán và Văn. Hỏi có bao nhiêu học sinh của lớp không giỏi môn nào trong hai môn Toán và Văn?",
+          "correctAnswer": "8",
           "acceptableAnswers": [
-            "5",
-            "năm"
+            "8"
           ],
-          "explanation": "$A \\cup B = \\{1; 3; 5; 7; 8\\}$, gồm đúng 5 phần tử.",
-          "prompt": "Cho hai tập hợp $A = \\{1; 3; 5; 7\\}$ và $B = \\{3; 5; 8\\}$. Tập hợp $A \\cup B$ có bao nhiêu phần tử?"
+          "explanation": "Số học sinh giỏi ít nhất một môn Toán hoặc Văn là: $n(T \\cup V) = 22 + 18 - 8 = 32$ bạn. Số học sinh không giỏi môn nào trong hai môn là: $40 - 32 = 8$ bạn.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Lớp học 40 HS</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#10b981\" fill-opacity=\"0.22\" stroke=\"#10b981\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#ec4899\" fill-opacity=\"0.22\" stroke=\"#ec4899\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">Toán 📐 (26)</text> <text x=\"260\" y=\"70\" fill=\"#f472b6\" font-size=\"13\" font-weight=\"bold\">Văn 📖 (22)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">14</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">12</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">10</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không thích: 4</text> </svg>"
         }
       ]
     },
@@ -3410,19 +3280,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "isAiGenerated": true
         },
         {
-          "id": "ai-10.2.17",
-          "badge": "Vận dụng - Tham số để hai tia số giao nhau khác rỗng",
-          "source": "SBT Toán 10 KNTT",
-          "question": "Cho hai tập hợp $A = (-\\infty; 2m]$ và $B = [m - 4; +\\infty)$. Tìm $m$ để $A \\cap B \\ne \\emptyset$.",
+          "id": "ai-10.2.prac2",
+          "badge": "Vận dụng - Khảo sát người tiêu dùng siêu thị",
+          "source": "Đề thi chọn HSG & Khảo sát chuyên đề Toán 10",
+          "question": "Khảo sát 100 khách hàng tại một siêu thị: có 65 người mua sữa tươi, 50 người mua bánh mì, và 30 người mua cả hai mặt hàng này. Số khách hàng chỉ mua sữa tươi mà không mua bánh mì là:",
           "options": [
-            "$m \\ge -4$",
-            "$m > -4$",
-            "$m \\le -4$",
-            "$m < -4$"
+            "$35$",
+            "$15$",
+            "$20$",
+            "$50$"
           ],
           "correctIndex": 0,
-          "explanation": "Giao nhau khác rỗng khi và chỉ khi $m - 4 \\le 2m \\Leftrightarrow m \\ge -4$.",
-          "isAiGenerated": true
+          "explanation": "Số khách hàng chỉ mua sữa tươi mà không mua bánh mì là: $65 - 30 = 35$ người.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khách siêu thị (100)</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#ef4444\" fill-opacity=\"0.22\" stroke=\"#ef4444\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#06b6d4\" fill-opacity=\"0.22\" stroke=\"#06b6d4\" stroke-width=\"2\"/> <text x=\"130\" y=\"70\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\">Thực phẩm 🥩 (65)</text> <text x=\"255\" y=\"70\" fill=\"#22d3ee\" font-size=\"13\" font-weight=\"bold\">Đồ uống 🥤 (45)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">40</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">25</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">20</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không mua: 15</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -3523,36 +3393,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.2.5",
-          "badge": "Đúng / Sai 5 - Bất phương trình chứa giá trị tuyệt đối",
-          "source": "SGK Toán 10 KNTT",
-          "prompt": "Cho tập hợp $A = \\{x \\in \\mathbb{R} \\mid |x - 2| \\le 2\\}$ và $B = (1; 6)$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+          "id": "ai-tf-10.1.prac2",
+          "badge": "Đúng / Sai 4 - Khảo sát câu lạc bộ bơi lội và cầu lông",
+          "source": "Đề kiểm tra chất lượng Toán 10 KNTT",
+          "prompt": "Một câu lạc bộ thanh thiếu niên có 60 thành viên: 35 bạn tham gia bơi lội, 28 bạn tham gia cầu lông, và 15 bạn tham gia cả hai môn thể thao này. Xét tính Đúng/Sai của các mệnh đề sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Tập hợp $A$ biểu diễn dưới dạng đoạn là $[0; 4]$.",
+              "text": "Số thành viên chỉ tham gia bơi lội là 20 bạn.",
               "correctAnswer": true,
-              "explanation": "$|x - 2| \\le 2 \\Leftrightarrow 0 \\le x \\le 4$."
+              "explanation": "$35 - 15 = 20$ bạn."
             },
             {
               "id": "b",
-              "text": "Độ dài của đoạn $A$ bằng 4.",
+              "text": "Số thành viên chỉ tham gia cầu lông là 13 bạn.",
               "correctAnswer": true,
-              "explanation": "$4 - 0 = 4$."
+              "explanation": "$28 - 15 = 13$ bạn."
             },
             {
               "id": "c",
-              "text": "Giao của hai tập hợp là $A \\cap B = (1; 4]$.",
+              "text": "Số thành viên tham gia ít nhất một trong hai môn thể thao trên là 48 bạn.",
               "correctAnswer": true,
-              "explanation": "Phần chung thỏa mãn $1 < x \\le 4$."
+              "explanation": "$35 + 28 - 15 = 48$ bạn."
             },
             {
               "id": "d",
-              "text": "Hiệu $A \\setminus B = [0; 1)$.",
+              "text": "Số thành viên không tham gia môn thể thao nào trong hai môn trên là 15 bạn.",
               "correctAnswer": false,
-              "explanation": "Vì $1 \\notin B$ nên $1 \\in A \\setminus B$. Kết quả đúng là $[0; 1]$."
+              "explanation": "Số thành viên không tham gia là $60 - 48 = 12$ bạn, không phải 15."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Hội đồng 60 VĐV</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#10b981\" fill-opacity=\"0.22\" stroke=\"#10b981\" stroke-width=\"2\"/> <text x=\"130\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">Cầu lông 🏸 (36)</text> <text x=\"260\" y=\"70\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">Bơi lội 🏊 (28)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">22</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">14</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">14</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không thi: 10</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -3617,16 +3488,16 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "prompt": "Cho hai tập hợp $A = [-1; 6]$ và $B = (3; 9]$. Có tất cả bao nhiêu số nguyên $x$ thuộc tập hợp $A \\setminus B$?"
         },
         {
-          "id": "ai-sa-10.2.8",
-          "badge": "Trả lời ngắn 8 - Giá trị nguyên lớn nhất thuộc giao",
-          "source": "SBT Toán 10 KNTT",
+          "id": "ai-sa-10.1.prac2",
+          "badge": "Trả lời ngắn 6 - Thống kê đăng ký giải thi đấu thể thao",
+          "source": "Toán 10 Nâng cao & Ứng dụng thực tiễn",
+          "prompt": "Một trường THPT tổ chức giải thi đấu thể thao gồm hai môn Cờ vua và Bóng bàn cho 70 học sinh khối 10. Có 42 bạn đăng ký thi cờ vua, 38 bạn đăng ký bóng bàn, và 15 bạn đăng ký cả hai môn. Hỏi có bao nhiêu học sinh không đăng ký môn nào trong hai môn trên?",
           "correctAnswer": "5",
           "acceptableAnswers": [
-            "5",
-            "năm"
+            "5"
           ],
-          "explanation": "Ta có $A \\cap B = [-2; 5]$. Giá trị nguyên lớn nhất là 5.",
-          "prompt": "Cho hai tập hợp $A = (-\\infty; 5]$ và $B = [-2; +\\infty)$. Giá trị nguyên lớn nhất thuộc tập hợp $A \\cap B$ là bao nhiêu?"
+          "explanation": "Số bạn đăng ký ít nhất một môn là: $42 + 38 - 15 = 65$ bạn. Số bạn không đăng ký môn nào là: $70 - 65 = 5$ bạn.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khối 10: 70 học sinh</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#eab308\" fill-opacity=\"0.22\" stroke=\"#eab308\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#f43f5e\" fill-opacity=\"0.22\" stroke=\"#f43f5e\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#facc15\" font-size=\"13\" font-weight=\"bold\">Cờ vua ♟️ (40)</text> <text x=\"255\" y=\"70\" fill=\"#fb7185\" font-size=\"13\" font-weight=\"bold\">Cờ tướng 🔴 (35)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">35</text> <text x=\"212\" y=\"120\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"bold\">5</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">30</text> <text x=\"345\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Tổng = 70</text> </svg>"
         }
       ]
     },
@@ -3802,19 +3673,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Ta có $C_\\mathbb{R} A = \\mathbb{R} \\setminus [-1; +\\infty) = (-\\infty; -1)$."
         },
         {
-          "id": "ai-10.2.24",
-          "badge": "Luyện thêm 24 - Vận dụng tìm tham số để hai tập có điểm chung",
-          "isAiGenerated": true,
-          "source": "Đề thi Olympic & HSG Toán 10",
-          "question": "Cho hai đoạn $A = [m - 1; m + 3]$ và $B = [2; 6]$. Tìm tất cả các giá trị thực của tham số $m$ để $A \\cap B \\ne \\emptyset$:",
+          "id": "ai-10.2.prac3",
+          "badge": "Vận dụng - Khảo sát câu lạc bộ bóng bàn và bóng đá",
+          "source": "SBT Toán 10 KNTT",
+          "question": "Một nhóm 35 học sinh: có 20 bạn tham gia câu lạc bộ Bóng đá, 18 bạn tham gia câu lạc bộ Bóng bàn, và 8 bạn tham gia cả hai câu lạc bộ này. Số bạn không tham gia câu lạc bộ nào là:",
           "options": [
-            "$-1 \\le m \\le 7$",
-            "$-1 < m < 7$",
-            "$m \\ge -1$",
-            "$m \\le 7$"
+            "$5$",
+            "$8$",
+            "$10$",
+            "$7$"
           ],
           "correctIndex": 0,
-          "explanation": "Để hai đoạn $A$ và $B$ có điểm chung ($A \\cap B \\ne \\emptyset$) thì $\\begin{cases} m + 3 \\ge 2 \\\\ m - 1 \\le 6 \\end{cases} \\Leftrightarrow \\begin{cases} m \\ge -1 \\\\ m \\le 7 \\end{cases} \\Leftrightarrow -1 \\le m \\le 7$."
+          "explanation": "Số bạn tham gia ít nhất một câu lạc bộ là: $20 + 18 - 8 = 30$ bạn. Số bạn không tham gia câu lạc bộ nào là: $35 - 30 = 5$ bạn.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Nhóm 35 học sinh</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#f97316\" fill-opacity=\"0.22\" stroke=\"#f97316\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#06b6d4\" fill-opacity=\"0.22\" stroke=\"#06b6d4\" stroke-width=\"2\"/> <text x=\"130\" y=\"70\" fill=\"#fb923c\" font-size=\"13\" font-weight=\"bold\">Bóng bàn 🏓 (20)</text> <text x=\"260\" y=\"70\" fill=\"#22d3ee\" font-size=\"13\" font-weight=\"bold\">Bơi lội 🏊 (18)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">11</text> <text x=\"212\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">9</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">9</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Ngoài: 6</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -3915,36 +3786,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.2.8",
-          "badge": "Đúng / Sai 8 - Khảo sát môn học ngoại khóa",
-          "source": "Bộ đề ôn thi định kỳ Toán 10",
-          "prompt": "Khảo sát 70 học sinh khối 10: có 40 bạn đăng ký học cờ vua, 35 bạn đăng ký học cờ tướng, và 15 bạn đăng ký cả hai môn. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+          "id": "ai-tf-10.1.prac3",
+          "badge": "Đúng / Sai 4 - Phỏng vấn khán giả rạp chiếu phim",
+          "source": "Đề kiểm tra chuyên đề Toán 10 KNTT",
+          "prompt": "Một rạp chiếu phim phỏng vấn 60 khán giả trẻ: có 38 người thích xem phim hành động, 32 người thích xem phim hoạt hình, và 18 người thích cả hai thể loại này. Xét tính Đúng/Sai của các mệnh đề sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Số bạn chỉ đăng ký cờ vua là 25 bạn.",
+              "text": "Có đúng 20 khán giả chỉ thích xem phim hành động.",
               "correctAnswer": true,
-              "explanation": "$40 - 15 = 25$ bạn."
+              "explanation": "$38 - 18 = 20$ khán giả."
             },
             {
               "id": "b",
-              "text": "Số bạn chỉ đăng ký cờ tướng là 20 bạn.",
+              "text": "Có đúng 14 khán giả chỉ thích xem phim hoạt hình.",
               "correctAnswer": true,
-              "explanation": "$35 - 15 = 20$ bạn."
+              "explanation": "$32 - 18 = 14$ khán giả."
             },
             {
               "id": "c",
-              "text": "Số bạn đăng ký ít nhất một môn cờ là 60 bạn.",
+              "text": "Có 8 khán giả không thích cả hai thể loại phim trên.",
               "correctAnswer": true,
-              "explanation": "$40 + 35 - 15 = 60$ bạn."
+              "explanation": "Khán giả thích ít nhất 1 thể loại: $38 + 32 - 18 = 52$. Không thích cả hai: $60 - 52 = 8$ người."
             },
             {
               "id": "d",
-              "text": "Số bạn không đăng ký môn cờ nào là 10 bạn.",
-              "correctAnswer": true,
-              "explanation": "$70 - 60 = 10$ bạn."
+              "text": "Số khán giả chỉ thích đúng một trong hai thể loại phim chiếm trên $60\\%$ tổng số người được hỏi.",
+              "correctAnswer": false,
+              "explanation": "Tổng số người chỉ thích 1 thể loại là $20 + 14 = 34$. Tỉ lệ: $\\frac{34}{60} \\approx 56.7\\% < 60\\%$."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Khảo sát 60 học sinh xem phim</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#8b5cf6\" fill-opacity=\"0.22\" stroke=\"#8b5cf6\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#14b8a6\" fill-opacity=\"0.22\" stroke=\"#14b8a6\" stroke-width=\"2\"/> <text x=\"130\" y=\"70\" fill=\"#a78bfa\" font-size=\"13\" font-weight=\"bold\">Hoạt hình 🎬 (35)</text> <text x=\"255\" y=\"70\" fill=\"#2dd4bf\" font-size=\"13\" font-weight=\"bold\">Khoa học 🔬 (30)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">20</text> <text x=\"210\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-weight=\"bold\">15</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">15</text> <text x=\"360\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không xem: 10</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -4014,18 +3886,16 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "prompt": "Một nhóm 35 học sinh: có 20 bạn tham gia CLB Bóng đá, 18 bạn tham gia CLB Bóng rổ, và 9 bạn tham gia cả hai CLB. Hỏi có bao nhiêu bạn không tham gia CLB nào trong hai CLB trên?"
         },
         {
-          "id": "ai-sa-10.2.12",
-          "badge": "Trả lời ngắn 12 - Bài toán VĐV đăng ký một nội dung",
-          "source": "Bộ đề cấu trúc mới Toán 10",
-          "correctAnswer": "21",
+          "id": "ai-sa-10.1.prac3",
+          "badge": "Trả lời ngắn 6 - Khảo sát học sinh năng khiếu Toán và Tiếng Anh",
+          "source": "Đề thi khảo sát chất lượng đầu năm Toán 10",
+          "prompt": "Một lớp có 45 học sinh làm bài khảo sát năng khiếu: có 28 bạn thích học môn Toán, 22 bạn thích học môn Tiếng Anh, và 15 bạn thích cả hai môn này. Hỏi có tất cả bao nhiêu học sinh chỉ thích đúng một trong hai môn học trên?",
+          "correctAnswer": "20",
           "acceptableAnswers": [
-            "21",
-            "hai mươi mốt",
-            "21 VĐV"
+            "20"
           ],
-          "explanation": "Số bạn chỉ thi chạy: $19 - 7 = 12$ bạn. Số bạn chỉ thi nhảy xa: $16 - 7 = 9$ bạn. Tổng số bạn chỉ thi đúng 1 môn là: $12 + 9 = 21$ bạn.",
-          "svgDiagram": "<svg viewBox=\"0 0 440 210\" className=\"w-full max-w-md mx-auto my-2 select-none\">\n  <defs>\n    <linearGradient id=\"gChayAi10_2\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stopColor=\"#06b6d4\" stopOpacity=\"0.25\" />\n      <stop offset=\"100%\" stopColor=\"#0891b2\" stopOpacity=\"0.10\" />\n    </linearGradient>\n    <linearGradient id=\"gXaAi10_2\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stopColor=\"#e11d48\" stopOpacity=\"0.25\" />\n      <stop offset=\"100%\" stopColor=\"#be123c\" stopOpacity=\"0.10\" />\n    </linearGradient>\n    <linearGradient id=\"gGiaoChayXa\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n      <stop offset=\"0%\" stopColor=\"#a855f7\" stopOpacity=\"0.55\" />\n      <stop offset=\"100%\" stopColor=\"#7c3aed\" stopOpacity=\"0.35\" />\n    </linearGradient>\n  </defs>\n  <rect x=\"10\" y=\"10\" width=\"420\" height=\"190\" rx=\"16\" fill=\"#0b1329\" stroke=\"#334155\" strokeWidth=\"2\" />\n  <circle cx=\"170\" cy=\"115\" r=\"68\" fill=\"url(#gChayAi10_2)\" />\n  <circle cx=\"260\" cy=\"115\" r=\"68\" fill=\"url(#gXaAi10_2)\" />\n  <path d=\"M 215 64 A 68 68 0 0 1 215 166 A 68 68 0 0 1 215 64 Z\" fill=\"url(#gGiaoChayXa)\" stroke=\"#c084fc\" strokeWidth=\"1.5\" strokeDasharray=\"3 2\" />\n  <circle cx=\"170\" cy=\"115\" r=\"68\" fill=\"none\" stroke=\"#06b6d4\" strokeWidth=\"2.5\" />\n  <circle cx=\"260\" cy=\"115\" r=\"68\" fill=\"none\" stroke=\"#e11d48\" strokeWidth=\"2.5\" />\n  <text x=\"170\" y=\"40\" fontSize=\"24\" textAnchor=\"middle\">🏃</text>\n  <text x=\"260\" y=\"40\" fontSize=\"24\" textAnchor=\"middle\">👟</text>\n  <text x=\"135\" y=\"123\" fill=\"#67e8f9\" fontSize=\"22\" fontWeight=\"bold\" textAnchor=\"middle\">12</text>\n  <text x=\"215\" y=\"123\" fill=\"#ffffff\" fontSize=\"22\" fontWeight=\"900\" textAnchor=\"middle\">7</text>\n  <text x=\"295\" y=\"123\" fill=\"#fda4af\" fontSize=\"22\" fontWeight=\"bold\" textAnchor=\"middle\">9</text>\n  <text x=\"385\" y=\"165\" fill=\"#f43f5e\" fontSize=\"20\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n</svg>",
-          "prompt": "Trong một giải điền kinh gồm 32 vận động viên: có 19 bạn tham gia Chạy, 16 bạn tham gia Nhảy xa, và 7 bạn tham gia cả hai nội dung. Hỏi có bao nhiêu vận động viên chỉ tham gia đúng một nội dung thi đấu?"
+          "explanation": "Số học sinh chỉ thích Toán: $28 - 15 = 13$ bạn. Số học sinh chỉ thích Tiếng Anh: $22 - 15 = 7$ bạn. Vậy số học sinh chỉ thích đúng một trong hai môn là: $13 + 7 = 20$ bạn.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 220\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"20\" y=\"20\" width=\"400\" height=\"180\" rx=\"12\" fill=\"#0f172a\" stroke=\"#475569\" stroke-width=\"1.5\"/> <text x=\"35\" y=\"45\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Học sinh giỏi: 45 thí sinh</text> <circle cx=\"170\" cy=\"115\" r=\"65\" fill=\"#eab308\" fill-opacity=\"0.22\" stroke=\"#eab308\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"115\" r=\"65\" fill=\"#3b82f6\" fill-opacity=\"0.22\" stroke=\"#3b82f6\" stroke-width=\"2\"/> <text x=\"135\" y=\"70\" fill=\"#facc15\" font-size=\"13\" font-weight=\"bold\">Giải Toán 🏆 (28)</text> <text x=\"260\" y=\"70\" fill=\"#60a5fa\" font-size=\"13\" font-weight=\"bold\">Giải Anh 🏅 (20)</text> <text x=\"145\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">20</text> <text x=\"212\" y=\"120\" fill=\"#34d399\" font-size=\"16\" font-weight=\"bold\">8</text> <text x=\"280\" y=\"120\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">12</text> <text x=\"355\" y=\"180\" fill=\"#94a3b8\" font-size=\"12\">Không giải: 5</text> </svg>"
         }
       ]
     }
@@ -4383,7 +4253,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$\\begin{cases} 150x + 100y > 300 \\\\ 10x + 5y > 20 \\end{cases}$"
       ],
       "correctIndex": 0,
-      "explanation": "Từ \"ít nhất\" tương ứng với dấu $\\ge$. Lượng calo: $150x + 100y \\ge 300$; lượng protein: $10x + 5y \\ge 20$ kèm điều kiện không âm $x \\ge 0, y \\ge 0$."
+      "explanation": "Từ \"ít nhất\" tương ứng với dấu $\\ge$. Lượng calo: $150x + 100y \\ge 300$; lượng protein: $10x + 5y \\ge 20$ kèm điều kiện không âm $x \\ge 0, y \\ge 0$.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"180\" x2=\"390\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"90\" y1=\"205\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"185\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"95\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"75\" y=\"195\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Miền không bị chặn mở về góc I --> <!-- 2x + y = 3 -> (1.5, 0) px:(180, 180), (0, 3) px:(90, 60) --> <!-- x + 2y = 3 -> (3, 0) px:(270, 180), (0, 1.5) px:(90, 120) --> <!-- Giao điểm (1, 1) px:(150, 120) --> <polygon points=\"90,60 150,120 270,180 380,180 380,30 90,30\" fill=\"#10b981\" fill-opacity=\"0.18\"/> <line x1=\"70\" y1=\"35\" x2=\"200\" y2=\"195\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"70\" y1=\"105\" x2=\"310\" y2=\"195\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"150\" cy=\"120\" r=\"4.5\" fill=\"#fbbf24\"/> <text x=\"160\" y=\"115\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">M(1; 1)</text> <text x=\"240\" y=\"70\" fill=\"#10b981\" font-size=\"13\" font-weight=\"bold\">Miền dinh dưỡng</text> </svg>"
     },
     {
       "id": "quiz-10.4.15",
@@ -4425,7 +4296,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "35 triệu đồng"
       ],
       "correctIndex": 0,
-      "explanation": "Gọi số xe loại A và B là $x, y \\in \\mathbb{N}$. Ta có hệ $\\begin{cases} 20x + 10y \\ge 140 \\\\ 0,6x + 1,5y \\ge 9 \\\\ x, y \\ge 0 \\end{cases}$. Chi phí $F(x, y) = 4x + 3y$. Đỉnh tối ưu nguyên là $(5; 4) \\Rightarrow F = 4(5) + 3(4) = 32$ triệu đồng."
+      "explanation": "Gọi số xe loại A và B là $x, y \\in \\mathbb{N}$. Ta có hệ $\\begin{cases} 20x + 10y \\ge 140 \\\\ 0,6x + 1,5y \\ge 9 \\\\ x, y \\ge 0 \\end{cases}$. Chi phí $F(x, y) = 4x + 3y$. Đỉnh tối ưu nguyên là $(5; 4) \\Rightarrow F = 4(5) + 3(4) = 32$ triệu đồng.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- Tứ giác A(1;5) px:(115, 75), B(3;2) px:(185, 145), C(6;1) px:(285, 165), D(2;7) px:(150, 45) --> <polygon points=\"115,75 185,145 285,165 150,45\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"185\" cy=\"145\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"195\" y=\"145\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(3; 2) Min 18tr</text> <circle cx=\"115\" cy=\"75\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"80\" y=\"75\" fill=\"#cbd5e1\" font-size=\"11\">A(1;5)</text> <circle cx=\"285\" cy=\"165\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"290\" y=\"170\" fill=\"#cbd5e1\" font-size=\"11\">C(6;1)</text> <circle cx=\"150\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"155\" y=\"40\" fill=\"#cbd5e1\" font-size=\"11\">D(2;7)</text> </svg>"
     },
     {
       "id": "quiz-10.4.18",
@@ -4629,7 +4501,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "correctAnswer": true,
           "explanation": "Lợi nhuận $L = 300x + 200y$ (nghìn đồng). Tại $(20; 60): L = 300(20) + 200(60) = 18\\,000$ nghìn đồng = 18 triệu đồng."
         }
-      ]
+      ],
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Tứ giác OABC: O(85, 185), A(4; 0) px:(245, 185), B(2; 4) px:(165, 85), C(0; 6) px:(85, 45) --> <polygon points=\"85,185 245,185 165,85 85,45\" fill=\"#f59e0b\" fill-opacity=\"0.22\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <circle cx=\"85\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <circle cx=\"245\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"240\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(4; 0)</text> <circle cx=\"165\" cy=\"85\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"175\" y=\"80\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">B(2; 4) Max</text> <circle cx=\"85\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"45\" y=\"48\" fill=\"#cbd5e1\" font-size=\"12\">C(0; 6)</text> <text x=\"110\" y=\"145\" fill=\"#e2e8f0\" font-size=\"12\" font-style=\"italic\">F(x,y) = 400x + 300y</text> </svg>"
     },
     {
       "id": "tf-10.4.6",
@@ -4661,7 +4534,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "correctAnswer": true,
           "explanation": "Vì $x, y$ nguyên: thử $(1; 4) \\Rightarrow C = 1100$; thử $(2; 3) \\Rightarrow C = 300(2) + 200(3) = 1200$ (thỏa cả 2 BPT)."
         }
-      ]
+      ],
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"180\" x2=\"390\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"90\" y1=\"205\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"185\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"95\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"75\" y=\"195\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Đường thẳng 8x + 5y = 200 -> cắt Ox tại x=25 (px: 90+220=310), Oy tại y=40 (px: 180-130=50) --> <polygon points=\"90,180 310,180 90,50\" fill=\"#38bdf8\" fill-opacity=\"0.25\"/> <line x1=\"60\" y1=\"32\" x2=\"330\" y2=\"192\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <circle cx=\"310\" cy=\"180\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"300\" y=\"198\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">25</text> <circle cx=\"90\" cy=\"50\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"65\" y=\"55\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">40</text> <text x=\"210\" y=\"80\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">8x + 5y ≤ 200</text> <text x=\"140\" y=\"150\" fill=\"#e2e8f0\" font-size=\"12\" font-style=\"italic\">Miền nghiệm</text> </svg>"
     },
     {
       "id": "tf-10.4.7",
@@ -4839,7 +4713,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "6.2 triệu đồng",
         "6,2 triệu"
       ],
-      "explanation": "Lợi nhuận $F(x, y) = 0,4x + 0,5y$ (triệu đồng). Tại $(10; 0): F = 4$; tại $(0; 8): F = 4$; tại $(8; 6): F = 0,4(8) + 0,5(6) = 3,2 + 3 = 6,2$ triệu đồng. Lợi nhuận tối đa là 6,2 triệu đồng."
+      "explanation": "Lợi nhuận $F(x, y) = 0,4x + 0,5y$ (triệu đồng). Tại $(10; 0): F = 4$; tại $(0; 8): F = 4$; tại $(8; 6): F = 0,4(8) + 0,5(6) = 3,2 + 3 = 6,2$ triệu đồng. Lợi nhuận tối đa là 6,2 triệu đồng.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- O(0;0), A(5;0) px:(255, 185), B(4;3) px:(225, 115), C(0;6) px:(85, 45) --> <polygon points=\"85,185 255,185 225,115 85,45\" fill=\"#8b5cf6\" fill-opacity=\"0.22\" stroke=\"#8b5cf6\" stroke-width=\"2\"/> <circle cx=\"225\" cy=\"115\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"235\" y=\"110\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(4; 3) Max 2,6tr</text> <circle cx=\"255\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"245\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(5;0)</text> <circle cx=\"85\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"50\" y=\"48\" fill=\"#cbd5e1\" font-size=\"12\">C(0;6)</text> </svg>"
     },
     {
       "id": "sa-10.4.10",
@@ -4852,7 +4727,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "8 chiếc",
         "8 cái"
       ],
-      "explanation": "Điểm đạt lợi nhuận tối đa là $(8; 6)$, tương ứng với 8 chiếc quạt loại A và 6 chiếc quạt loại B."
+      "explanation": "Điểm đạt lợi nhuận tối đa là $(8; 6)$, tương ứng với 8 chiếc quạt loại A và 6 chiếc quạt loại B.",
+      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- O(0;0), A(5;0) px:(255, 185), B(4;3) px:(225, 115), C(0;6) px:(85, 45) --> <polygon points=\"85,185 255,185 225,115 85,45\" fill=\"#8b5cf6\" fill-opacity=\"0.22\" stroke=\"#8b5cf6\" stroke-width=\"2\"/> <circle cx=\"225\" cy=\"115\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"235\" y=\"110\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(4; 3) Max 2,6tr</text> <circle cx=\"255\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"245\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(5;0)</text> <circle cx=\"85\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"50\" y=\"48\" fill=\"#cbd5e1\" font-size=\"12\">C(0;6)</text> </svg>"
     },
     {
       "id": "sa-10.4.11",
@@ -4895,80 +4771,80 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "geometry",
-    "youtubeVideoId": "MNefivUP1AU",
-    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương II - Toán 10 KNTT",
-    "youtubeVideos": [
-      {
-            "id": "MNefivUP1AU",
-            "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương II"
-      },
-      {
-            "id": "h-JmY8lZ2qI",
-            "title": "Tiết 2: Chữa bài tập tự luận - Biểu diễn miền nghiệm của BPT & Hệ BPT"
-      },
-      {
-            "id": "V-N2ApB3mIg",
-            "title": "Tiết 3: Phương pháp giải bài toán thực tế tối ưu hóa hàm số mục tiêu F(x, y)"
-      },
-      {
-            "id": "ewLV8X4qTYI",
-            "title": "Tiết 4: Tổng kết các dạng toán nâng cao & Luyện đề ôn tập chương II"
-      }
-],
-    "videoQuestions": [
-      {
-            "id": "vq-10.ot2.1",
-            "title": "Ví dụ 1 (Tiết 1): Xác định miền nghiệm của BPT bậc nhất hai ẩn",
-            "question": "Điểm nào sau đây KHÔNG thuộc miền nghiệm của bất phương trình $2x - 3y + 6 > 0$?",
-            "options": [
-                  "$M(0; 3)$",
-                  "$O(0; 0)$",
-                  "$N(1; 1)$",
-                  "$P(-1; 1)$"
-            ],
-            "correctIndex": 0,
-            "explanation": "Thay tọa độ điểm $M(0; 3)$ vào vế trái: $2(0) - 3(3) + 6 = -9 + 6 = -3 > 0$ là mệnh đề sai. Vậy $M(0; 3)$ không thuộc miền nghiệm của BPT."
-      },
-      {
-            "id": "vq-10.ot2.2",
-            "title": "Ví dụ 2 (Tiết 2): Kiểm tra nghiệm của hệ bất phương trình",
-            "question": "Cặp số $(x; y) = (2; 1)$ là một nghiệm của hệ bất phương trình nào sau đây?",
-            "options": [
-                  "$\\begin{cases} x + 2y \\le 5 \\\\ 2x - y \\ge 3 \\\\ x \\ge 0 \\end{cases}$",
-                  "$\\begin{cases} x + 2y > 5 \\\\ 2x - y < 3 \\end{cases}$",
-                  "$\\begin{cases} 2x + y \\le 4 \\\\ x - y > 1 \\end{cases}$",
-                  "$\\begin{cases} x + y \\ge 4 \\\\ x - 2y \\ge 0 \\end{cases}$"
-            ],
-            "correctIndex": 0,
-            "explanation": "Thay $(x; y) = (2; 1)$ vào hệ đầu tiên:\n$2 + 2(1) = 4 \\le 5$ (thỏa mãn);\n$2(2) - 1 = 3 \\ge 3$ (thỏa mãn);\n$2 \\ge 0$ (thỏa mãn).\nVậy $(2; 1)$ là nghiệm của hệ A."
-      },
-      {
-            "id": "vq-10.ot2.3",
-            "title": "Ví dụ 3 (Tiết 3): Xác định số đỉnh của miền nghiệm đa giác",
-            "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x \\le 4 \\end{cases}$ là một miền đa giác có bao nhiêu đỉnh?",
-            "options": [
-                  "4 đỉnh",
-                  "3 đỉnh",
-                  "5 đỉnh",
-                  "6 đỉnh"
-            ],
-            "correctIndex": 0,
-            "explanation": "Miền nghiệm là một hình thang vuông (tứ giác) với 4 đỉnh là $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$ (vì đường $x = 4$ cắt $x + y = 5$ tại $B(4; 1)$)."
-      },
-      {
-            "id": "vq-10.ot2.4",
-            "title": "Ví dụ 4 (Tiết 4): Tìm giá trị lớn nhất của hàm mục tiêu",
-            "question": "Cho miền nghiệm tứ giác có các đỉnh $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$. Giá trị lớn nhất của biểu thức $F(x, y) = 3x + 2y$ trên miền tứ giác này là:",
-            "options": [
-                  "$14$",
-                  "$12$",
-                  "$10$",
-                  "$15$"
-            ],
-            "correctIndex": 0,
-            "explanation": "Tính giá trị của $F(x, y)$ tại 4 đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 3(4) + 2(0) = 12$;\n$F(4; 1) = 3(4) + 2(1) = 14$;\n$F(0; 5) = 3(0) + 2(5) = 10$.\nVậy giá trị lớn nhất là 14 tại đỉnh $B(4; 1)$."
-      }
-],
+  "youtubeVideoId": "MNefivUP1AU",
+  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương II - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "MNefivUP1AU",
+      "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương II"
+    },
+    {
+      "id": "h-JmY8lZ2qI",
+      "title": "Tiết 2: Chữa bài tập tự luận - Biểu diễn miền nghiệm của BPT & Hệ BPT"
+    },
+    {
+      "id": "V-N2ApB3mIg",
+      "title": "Tiết 3: Phương pháp giải bài toán thực tế tối ưu hóa hàm số mục tiêu F(x, y)"
+    },
+    {
+      "id": "ewLV8X4qTYI",
+      "title": "Tiết 4: Tổng kết các dạng toán nâng cao & Luyện đề ôn tập chương II"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.ot2.1",
+      "title": "Ví dụ 1 (Tiết 1): Xác định miền nghiệm của BPT bậc nhất hai ẩn",
+      "question": "Điểm nào sau đây KHÔNG thuộc miền nghiệm của bất phương trình $2x - 3y + 6 > 0$?",
+      "options": [
+        "$M(0; 3)$",
+        "$O(0; 0)$",
+        "$N(1; 1)$",
+        "$P(-1; 1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay tọa độ điểm $M(0; 3)$ vào vế trái: $2(0) - 3(3) + 6 = -9 + 6 = -3 > 0$ là mệnh đề sai. Vậy $M(0; 3)$ không thuộc miền nghiệm của BPT."
+    },
+    {
+      "id": "vq-10.ot2.2",
+      "title": "Ví dụ 2 (Tiết 2): Kiểm tra nghiệm của hệ bất phương trình",
+      "question": "Cặp số $(x; y) = (2; 1)$ là một nghiệm của hệ bất phương trình nào sau đây?",
+      "options": [
+        "$\\begin{cases} x + 2y \\le 5 \\\\ 2x - y \\ge 3 \\\\ x \\ge 0 \\end{cases}$",
+        "$\\begin{cases} x + 2y > 5 \\\\ 2x - y < 3 \\end{cases}$",
+        "$\\begin{cases} 2x + y \\le 4 \\\\ x - y > 1 \\end{cases}$",
+        "$\\begin{cases} x + y \\ge 4 \\\\ x - 2y \\ge 0 \\end{cases}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $(x; y) = (2; 1)$ vào hệ đầu tiên:\n$2 + 2(1) = 4 \\le 5$ (thỏa mãn);\n$2(2) - 1 = 3 \\ge 3$ (thỏa mãn);\n$2 \\ge 0$ (thỏa mãn).\nVậy $(2; 1)$ là nghiệm của hệ A."
+    },
+    {
+      "id": "vq-10.ot2.3",
+      "title": "Ví dụ 3 (Tiết 3): Xác định số đỉnh của miền nghiệm đa giác",
+      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x \\le 4 \\end{cases}$ là một miền đa giác có bao nhiêu đỉnh?",
+      "options": [
+        "4 đỉnh",
+        "3 đỉnh",
+        "5 đỉnh",
+        "6 đỉnh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miền nghiệm là một hình thang vuông (tứ giác) với 4 đỉnh là $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$ (vì đường $x = 4$ cắt $x + y = 5$ tại $B(4; 1)$)."
+    },
+    {
+      "id": "vq-10.ot2.4",
+      "title": "Ví dụ 4 (Tiết 4): Tìm giá trị lớn nhất của hàm mục tiêu",
+      "question": "Cho miền nghiệm tứ giác có các đỉnh $O(0; 0), A(4; 0), B(4; 1), C(0; 5)$. Giá trị lớn nhất của biểu thức $F(x, y) = 3x + 2y$ trên miền tứ giác này là:",
+      "options": [
+        "$14$",
+        "$12$",
+        "$10$",
+        "$15$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính giá trị của $F(x, y)$ tại 4 đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 3(4) + 2(0) = 12$;\n$F(4; 1) = 3(4) + 2(1) = 14$;\n$F(0; 5) = 3(0) + 2(5) = 10$.\nVậy giá trị lớn nhất là 14 tại đỉnh $B(4; 1)$."
+    }
+  ],
   "tips": [
     "Mẹo thử điểm O(0; 0): Nếu đường thẳng ax + by = c không đi qua gốc tọa độ O, hãy thay ngay (0; 0) vào BPT để xác định nhanh nửa mặt phẳng nghiệm.",
     "Mẹo tìm GTLN, GTNN trên miền đa giác: Chỉ cần tính giá trị của F(x, y) = ax + by tại các đỉnh của miền nghiệm đa giác rồi so sánh, giá trị lớn nhất/nhỏ nhất luôn đạt tại một trong các đỉnh.",
@@ -5523,19 +5399,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Miền nghiệm là hình chữ nhật giới hạn bởi $0 \\le x \\le 3$ và $0 \\le y \\le 4$, có 4 đỉnh là $O(0; 0), A(3; 0), B(3; 4), C(0; 4)$."
         },
         {
-          "id": "ai-10.4.10",
-          "badge": "Luyện thêm 10 - GTLN của hàm mục tiêu",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Cho miền tứ giác nghiệm có các đỉnh $O(0; 0), A(3; 0), B(2; 3), C(0; 4)$. Giá trị lớn nhất của biểu thức $F(x, y) = 5x + 3y$ trên miền tứ giác này là:",
+          "id": "ai-10.4.prac1",
+          "badge": "Vận dụng cao - Bài toán tối ưu chi phí phân bón",
+          "source": "SGK Toán 10 KNTT Bài 4",
+          "question": "Bác An cần bón ít nhất 90 kg đạm và 60 kg lân cho vườn cây. Bao phân loại A chứa 30 kg đạm, 10 kg lân (giá 500 nghìn đồng). Bao phân loại B chứa 10 kg đạm, 20 kg lân (giá 400 nghìn đồng). Gọi $x, y$ là số bao phân loại A và B cần mua ($x, y \\in \\mathbb{N}$). Để chi phí mua phân bón là thấp nhất, bác An cần mua bao nhiêu bao phân loại A?",
           "options": [
-            "$19$",
-            "$15$",
-            "$12$",
-            "$21$"
+            "$2$",
+            "$3$",
+            "$1$",
+            "$4$"
           ],
           "correctIndex": 0,
-          "explanation": "Tính giá trị $F(x, y)$ tại các đỉnh:\n$F(0; 0) = 0$;\n$F(3; 0) = 5(3) + 3(0) = 15$;\n$F(2; 3) = 5(2) + 3(3) = 19$;\n$F(0; 4) = 5(0) + 3(4) = 12$.\nGiá trị lớn nhất là 19 tại đỉnh $B(2; 3)$."
+          "explanation": "Hệ điều kiện: $30x + 10y \\ge 90 \\iff 3x + y \\ge 9$; $10x + 20y \\ge 60 \\iff x + 2y \\ge 6$; $x \\ge 0, y \\ge 0$. Chi phí $F(x, y) = 500x + 400y$. Giao điểm của hai đường thẳng là $(2.4; 1.8)$. Xét các điểm nguyên khả thi: $(2; 3)$ cho $F = 500(2) + 400(3) = 2200$ nghìn; $(3; 2)$ cho $F = 500(3) + 400(2) = 2300$ nghìn; $(1; 6)$ cho $F = 2900$ nghìn; $(0; 9)$ cho $F = 3600$ nghìn. Chi phí thấp nhất khi $(x; y) = (2; 3)$, tức là bác An cần mua 2 bao phân loại A.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"180\" x2=\"390\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"90\" y1=\"205\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"185\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"95\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"75\" y=\"195\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Đường thẳng 8x + 5y = 200 -> cắt Ox tại x=25 (px: 90+220=310), Oy tại y=40 (px: 180-130=50) --> <polygon points=\"90,180 310,180 90,50\" fill=\"#38bdf8\" fill-opacity=\"0.25\"/> <line x1=\"60\" y1=\"32\" x2=\"330\" y2=\"192\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <circle cx=\"310\" cy=\"180\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"300\" y=\"198\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">25</text> <circle cx=\"90\" cy=\"50\" r=\"4\" fill=\"#38bdf8\"/> <text x=\"65\" y=\"55\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">40</text> <text x=\"210\" y=\"80\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">8x + 5y ≤ 200</text> <text x=\"140\" y=\"150\" fill=\"#e2e8f0\" font-size=\"12\" font-style=\"italic\">Miền nghiệm</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -5636,36 +5512,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.4.2",
-          "badge": "Luyện thêm Đ/S 2 - Miền nghiệm hình học trên mặt phẳng Oxy",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Cho hệ bất phương trình $(II): \\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\\\ x - y \\le 0 \\end{cases}$. Xét tính đúng/sai của các mệnh đề sau:",
+          "id": "ai-tf-10.4.prac1",
+          "badge": "Đúng / Sai 4 - Bài toán dinh dưỡng và khẩu phần ăn",
+          "source": "SBT Toán 10 KNTT",
+          "prompt": "Một bác sĩ khuyên người bệnh mỗi ngày cần bổ sung ít nhất 900 đơn vị protein và ít nhất 1200 đơn vị lipit. Bệnh nhân dùng $x$ lạng thực phẩm loại I (cung cấp 60 đơn vị protein, 40 đơn vị lipit; giá 30 nghìn đồng/lạng) và $y$ lạng thực phẩm loại II (cung cấp 30 đơn vị protein, 80 đơn vị lipit; giá 20 nghìn đồng/lạng). Xét tính Đúng/Sai của các khẳng định sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Đường thẳng $x - y = 0$ chia mặt phẳng thành hai nửa, nửa chứa miền nghiệm là nửa chứa điểm $(0; 1)$.",
+              "text": "Bất phương trình biểu thị lượng protein cần bổ sung là $2x + y \\ge 30$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì với điểm $(0; 1)$, ta có $0 - 1 = -1 \\le 0$ thỏa mãn bất phương trình."
+              "explanation": "$60x + 30y \\ge 900 \\iff 2x + y \\ge 30$."
             },
             {
               "id": "b",
-              "text": "Miền nghiệm của hệ $(II)$ là một miền tam giác có đỉnh là $O(0; 0), A(0; 4)$ và $B(2; 2)$.",
+              "text": "Bất phương trình biểu thị lượng lipit cần bổ sung là $x + 2y \\ge 30$.",
               "correctAnswer": true,
-              "explanation": "Đúng. Giao điểm của $x=0$ và $y=0$ là $O(0; 0)$. Giao của $x=0$ và $x+y=4$ là $A(0; 4)$. Giao của $x+y=4$ và $x-y=0$ là $B(2; 2)$."
+              "explanation": "$40x + 80y \\ge 1200 \\iff x + 2y \\ge 30$."
             },
             {
               "id": "c",
-              "text": "Điểm $C(3; 1)$ thuộc miền nghiệm của hệ $(II)$.",
-              "correctAnswer": false,
-              "explanation": "Sai vì thay $C(3; 1)$ vào BPT thứ tư: $3 - 1 = 2 \\le 0$ là mệnh đề sai."
+              "text": "Giao điểm của hai đường thẳng bờ tương ứng là điểm $M(10; 10)$.",
+              "correctAnswer": true,
+              "explanation": "Giải hệ $\\begin{cases} 2x + y = 30 \\\\ x + 2y = 30 \\end{cases} \\iff x = 10, y = 10$."
             },
             {
               "id": "d",
-              "text": "Diện tích của miền nghiệm tam giác $OAB$ bằng $4$.",
-              "correctAnswer": true,
-              "explanation": "Đúng. Tam giác $OAB$ có cạnh đáy $OA = 4$ nằm trên trục $Oy$, chiều cao kẻ từ $B(2; 2)$ xuống $Oy$ chính bằng khoảng cách hoành độ $x_B = 2$. Do đó $S = \\frac{1}{2} \\cdot 4 \\cdot 2 = 4$."
+              "text": "Chi phí tối thiểu mỗi ngày của bệnh nhân để đảm bảo dinh dưỡng là 600 nghìn đồng.",
+              "correctAnswer": false,
+              "explanation": "Chi phí là $T(10; 10) = 30 \\times 10 + 20 \\times 10 = 500$ nghìn đồng, không phải 600 nghìn."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"180\" x2=\"390\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"90\" y1=\"205\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"185\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"95\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"75\" y=\"195\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Miền không bị chặn mở về góc I --> <!-- 2x + y = 3 -> (1.5, 0) px:(180, 180), (0, 3) px:(90, 60) --> <!-- x + 2y = 3 -> (3, 0) px:(270, 180), (0, 1.5) px:(90, 120) --> <!-- Giao điểm (1, 1) px:(150, 120) --> <polygon points=\"90,60 150,120 270,180 380,180 380,30 90,30\" fill=\"#10b981\" fill-opacity=\"0.18\"/> <line x1=\"70\" y1=\"35\" x2=\"200\" y2=\"195\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <line x1=\"70\" y1=\"105\" x2=\"310\" y2=\"195\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"150\" cy=\"120\" r=\"4.5\" fill=\"#fbbf24\"/> <text x=\"160\" y=\"115\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">M(1; 1)</text> <text x=\"240\" y=\"70\" fill=\"#10b981\" font-size=\"13\" font-weight=\"bold\">Miền dinh dưỡng</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -5728,15 +5605,17 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Từ $3x - y = 3 \\Rightarrow y = 3x - 3$. Thế vào phương trình đầu: $x + 2(3x - 3) = 8 \\Leftrightarrow 7x - 6 = 8 \\Leftrightarrow 7x = 14 \\Leftrightarrow x = 2$."
         },
         {
-          "id": "ai-sa-10.4.4",
-          "badge": "Luyện thêm TLN 4 - GTLN của biểu thức mục tiêu F(x, y)",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Cho $(x; y)$ thuộc miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ 2x + y \\le 8 \\end{cases}$. Tìm giá trị lớn nhất của biểu thức $F(x, y) = 2x + 3y$.",
-          "correctAnswer": "18",
+          "id": "ai-sa-10.4.prac1",
+          "badge": "Trả lời ngắn 6 - Tối ưu hóa tiền lãi xưởng mộc bàn ghế",
+          "source": "Toán 10 KNTT Bài 4 Khám phá",
+          "prompt": "Một xưởng mộc làm bàn và ghế. Mỗi cái bàn cần 3 giờ chế biến gỗ và 1 giờ hoàn thiện. Mỗi cái ghế cần 1 giờ chế biến gỗ và 1 giờ hoàn thiện. Xưởng có tối đa 12 giờ chế biến gỗ và 8 giờ hoàn thiện mỗi ngày. Tiền lãi mỗi cái bàn là 400 nghìn đồng, mỗi cái ghế là 200 nghìn đồng. Hỏi tiền lãi lớn nhất mà xưởng có thể đạt được trong một ngày là bao nhiêu nghìn đồng?",
+          "correctAnswer": "2000",
           "acceptableAnswers": [
-            "18"
+            "2000",
+            "2.000"
           ],
-          "explanation": "Miền nghiệm là tứ giác $OABC$ với $O(0; 0), A(4; 0), B(2; 4), C(0; 6)$ (vì giao của $x+y=6$ và $2x+y=8$ là $x=2, y=4$).\nTính $F$ tại các đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 8$;\n$F(2; 4) = 2(2) + 3(4) = 16$;\n$F(0; 6) = 2(0) + 3(6) = 18$.\nVậy giá trị lớn nhất là 18."
+          "explanation": "Gọi $x, y$ là số bàn và ghế ($x, y \\ge 0$). Hệ ràng buộc: $\\begin{cases} 3x + y \\le 12 \\\\ x + y \\le 8 \\end{cases}$. Miền nghiệm là tứ giác với các đỉnh $O(0; 0), A(4; 0), B(2; 6), C(0; 8)$. Tiền lãi $F(x, y) = 400x + 200y$. Ta có: $F(O) = 0$, $F(A) = 1600$, $F(B) = 400(2) + 200(6) = 2000$, $F(C) = 1600$. Tiền lãi tối đa là 2000 nghìn đồng (khi làm 2 bàn và 6 ghế).",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Tứ giác OABC: O(85, 185), A(4; 0) px:(245, 185), B(2; 4) px:(165, 85), C(0; 6) px:(85, 45) --> <polygon points=\"85,185 245,185 165,85 85,45\" fill=\"#f59e0b\" fill-opacity=\"0.22\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <circle cx=\"85\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <circle cx=\"245\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"240\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(4; 0)</text> <circle cx=\"165\" cy=\"85\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"175\" y=\"80\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">B(2; 4) Max</text> <circle cx=\"85\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"45\" y=\"48\" fill=\"#cbd5e1\" font-size=\"12\">C(0; 6)</text> <text x=\"110\" y=\"145\" fill=\"#e2e8f0\" font-size=\"12\" font-style=\"italic\">F(x,y) = 400x + 300y</text> </svg>"
         }
       ]
     },
@@ -5906,19 +5785,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Tính tại 4 đỉnh:\n$F(A) = 2(1) - 3(1) = -1$;\n$F(B) = 2(4) - 3(1) = 5$;\n$F(C) = 2(3) - 3(4) = -6$;\n$F(D) = 2(1) - 3(3) = -7$.\nGiá trị nhỏ nhất là $-7$ tại đỉnh $D(1; 3)$."
         },
         {
-          "id": "ai-10.4.14",
-          "badge": "Luyện thêm 14 - Bài toán kinh tế thực tế thiết lập hệ BPT",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Bác An có tối đa 10 triệu đồng để mua $x$ bao phân bón loại A (giá 400 nghìn đồng/bao) và $y$ bao loại B (giá 500 nghìn đồng/bao). Bất phương trình nào mô tả điều kiện ngân sách?",
+          "id": "ai-10.3.prac2",
+          "badge": "Thông hiểu - Thiết lập bất phương trình mua hoa quả",
+          "source": "SGK Toán 10 KNTT Bài 3",
+          "question": "Bác Hoa đi chợ mang theo 150 nghìn đồng để mua cam (giá 30 nghìn đồng/kg) và táo (giá 25 nghìn đồng/kg). Gọi $x$ và $y$ lần lượt là số kilôgam cam và táo bác Hoa mua. Bất phương trình biểu thị số tiền bác Hoa chi tiêu không vượt quá số tiền mang theo là:",
           "options": [
-            "$4x + 5y \\le 100$",
-            "$400x + 500y \\le 10$",
-            "$4x + 5y \\ge 100$",
-            "$5x + 4y \\le 100$"
+            "$6x + 5y \\le 30$",
+            "$6x + 5y \\ge 30$",
+            "$5x + 6y \\le 30$",
+            "$6x + 5y < 30$"
           ],
           "correctIndex": 0,
-          "explanation": "Đổi 10 triệu đồng = 10 000 nghìn đồng. BPT ngân sách: $400x + 500y \\le 10 000$. Chia cả hai vế cho 100 ta được $4x + 5y \\le 100$."
+          "explanation": "Số tiền mua $x$ kg cam là $30x$ nghìn đồng, mua $y$ kg táo là $25y$ nghìn đồng. Vì số tiền chi tiêu không vượt quá 150 nghìn đồng nên: $30x + 25y \\le 150 \\iff 6x + 5y \\le 30$.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- 6x + 5y <= 30: Cắt Ox tại 5 (px: 260, 185), Oy tại 6 (px: 85, 55) --> <polygon points=\"85,185 260,185 85,55\" fill=\"#ec4899\" fill-opacity=\"0.22\" stroke=\"#ec4899\" stroke-width=\"2\"/> <circle cx=\"260\" cy=\"185\" r=\"4\" fill=\"#ec4899\"/> <text x=\"255\" y=\"202\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">5</text> <circle cx=\"85\" cy=\"55\" r=\"4\" fill=\"#ec4899\"/> <text x=\"65\" y=\"58\" fill=\"#ec4899\" font-size=\"12\" font-weight=\"bold\">6</text> <text x=\"140\" y=\"140\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">6x + 5y ≤ 30</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -6019,36 +5898,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.4.4",
-          "badge": "Luyện thêm Đ/S 4 - Bài toán dinh dưỡng và khẩu phần ăn",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Một bác sĩ khuyên người bệnh mỗi ngày cần bổ sung ít nhất 900 đơn vị protein và 1200 đơn vị lipit. Thức ăn X chứa 30 đơn vị protein, 20 đơn vị lipit trên 100g. Thức ăn Y chứa 10 đơn vị protein, 30 đơn vị lipit trên 100g. Gọi $x, y$ (lạng, 1 lạng = 100g) lần lượt là lượng thức ăn X và Y cần ăn mỗi ngày.",
+          "id": "ai-tf-10.4.prac2",
+          "badge": "Đúng / Sai 4 - Bài toán điều động xe vận tải hàng hóa",
+          "source": "Đề thi học kì 1 Toán 10",
+          "prompt": "Một đội vận tải có 10 xe lớn và 8 xe nhỏ cần chở ít nhất 120 tấn hàng và ít nhất 40 người. Mỗi xe lớn chở được 20 tấn hàng và 5 người; chi phí thuê 4 triệu đồng/chuyến. Mỗi xe nhỏ chở được 10 tấn hàng và 5 người; chi phí thuê 3 triệu đồng/chuyến. Gọi $x, y$ lần lượt là số xe lớn và nhỏ được điều động ($0 \\le x \\le 10, 0 \\le y \\le 8$). Xét tính Đúng/Sai của các mệnh đề sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Điều kiện của các biến số là $x \\ge 0, y \\ge 0$.",
+              "text": "Bất phương trình đảm bảo khối lượng hàng vận chuyển là $2x + y \\ge 12$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì khối lượng thức ăn không thể âm."
+              "explanation": "$20x + 10y \\ge 120 \\iff 2x + y \\ge 12$."
             },
             {
               "id": "b",
-              "text": "Bất phương trình biểu thị lượng protein cần nạp là $30x + 10y \\ge 900$.",
+              "text": "Bất phương trình đảm bảo số người vận chuyển là $x + y \\ge 8$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì cần ít nhất 900 đơn vị protein nên tổng lượng protein $30x + 10y \\ge 900$."
+              "explanation": "$5x + 5y \\ge 40 \\iff x + y \\ge 8$."
             },
             {
               "id": "c",
-              "text": "Bất phương trình biểu thị lượng lipit cần nạp là $20x + 30y \\le 1200$.",
-              "correctAnswer": false,
-              "explanation": "Sai vì yêu cầu bổ sung ít nhất 1200 đơn vị lipit nên dấu phải là $\\ge 1200$ chứ không phải $\\le$."
+              "text": "Cặp số $(x; y) = (4; 4)$ thỏa mãn toàn bộ các điều kiện của bài toán.",
+              "correctAnswer": true,
+              "explanation": "$2(4) + 4 = 12 \\ge 12; 4 + 4 = 8 \\ge 8; 0 \\le 4 \\le 10; 0 \\le 4 \\le 8$. Thỏa mãn."
             },
             {
               "id": "d",
-              "text": "Nếu ăn 20 lạng thức ăn X và 30 lạng thức ăn Y thì người bệnh thỏa mãn cả hai tiêu chuẩn trên.",
-              "correctAnswer": true,
-              "explanation": "Đúng. Với $x = 20, y = 30$:\nProtein: $30(20) + 10(30) = 900 \\ge 900$ (Thỏa mãn);\nLipit: $20(20) + 30(30) = 1300 \\ge 1200$ (Thỏa mãn)."
+              "text": "Chi phí thuê xe thấp nhất đạt được khi chỉ thuê xe lớn mà không thuê xe nhỏ nào.",
+              "correctAnswer": false,
+              "explanation": "Nếu $y = 0$ thì $2x \\ge 12 \\implies x \\ge 6$ và $x \\ge 8$ để chở đủ 40 người. Khi đó $x = 8 \\implies$ chi phí $4 \\times 8 = 32$ triệu. Trong khi chọn $(4; 4)$ thì chi phí chỉ là $4(4) + 3(4) = 28$ triệu đồng."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- 5x + 2y >= 30 -> (6, 0) px:(250, 185), (0, 15) px:(85, 40) --> <polygon points=\"85,40 250,185 380,185 380,40\" fill=\"#06b6d4\" fill-opacity=\"0.2\"/> <line x1=\"75\" y1=\"25\" x2=\"270\" y2=\"200\" stroke=\"#06b6d4\" stroke-width=\"2.5\"/> <circle cx=\"250\" cy=\"185\" r=\"4.5\" fill=\"#06b6d4\"/> <text x=\"245\" y=\"202\" fill=\"#06b6d4\" font-size=\"12\" font-weight=\"bold\">(6; 0) Min 24tr</text> <text x=\"180\" y=\"90\" fill=\"#06b6d4\" font-size=\"13\" font-weight=\"bold\">5x + 2y ≥ 30</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -6110,17 +5990,16 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Ta có $F(x, y) = 2(x + y)$. Vì $x + y \\ge 3$ nên $F(x, y) \\ge 2(3) = 6$. Giá trị nhỏ nhất là 6."
         },
         {
-          "id": "ai-sa-10.4.6",
-          "badge": "Luyện thêm TLN 6 - Số nghiệm nguyên dương của hệ",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn hệ bất phương trình $\\begin{cases} 2x + y \\le 5 \\\\ x \\ge 1 \\\\ y \\ge 1 \\end{cases}$?",
-          "correctAnswer": "4",
+          "id": "ai-sa-10.4.prac2",
+          "badge": "Trả lời ngắn 6 - Tối ưu hóa tiền lãi nông nghiệp trồng trọt",
+          "source": "SBT Toán 10 KNTT",
+          "prompt": "Một bác nông dân trồng đậu và cà trên diện tích tối đa 8 sào đất. Để trồng 1 sào đậu cần 20 công nhân và thu lãi 3 triệu đồng. Để trồng 1 sào cà cần 30 công nhân và thu lãi 4 triệu đồng. Bác nông dân chỉ có thể huy động tối đa 180 công nhân cho vụ mùa này. Hỏi số tiền lãi cao nhất bác nông dân có thể thu được là bao nhiêu triệu đồng?",
+          "correctAnswer": "26",
           "acceptableAnswers": [
-            "4",
-            "4 cặp",
-            "bốn"
+            "26"
           ],
-          "explanation": "Vì $x, y \\in \\mathbb{Z}^+$:\n- Với $x = 1 \\Rightarrow 2(1) + y \\le 5 \\Rightarrow y \\le 3$, ta có 3 cặp: $(1; 1), (1; 2), (1; 3)$.\n- Với $x = 2 \\Rightarrow 2(2) + y \\le 5 \\Rightarrow y \\le 1$, ta có 1 cặp: $(2; 1)$.\n- Với $x \\ge 3 \\Rightarrow 2x \\ge 6 > 5$ (loại).\nTổng cộng có 4 cặp số nguyên dương."
+          "explanation": "Gọi diện tích trồng đậu là $x$ (sào), cà là $y$ (sào) ($x, y \\ge 0$). Hệ điều kiện: $\\begin{cases} x + y \\le 8 \\\\ 20x + 30y \\le 180 \\iff 2x + 3y \\le 18 \\end{cases}$. Tiền lãi: $L(x, y) = 3x + 4y$ (triệu đồng). Các đỉnh miền nghiệm: $O(0; 0) \\to 0$; $A(8; 0) \\to 24$; $B(6; 2) \\to 3(6) + 4(2) = 26$; $C(0; 6) \\to 24$. Tiền lãi cao nhất là 26 triệu đồng khi trồng 6 sào đậu và 2 sào cà.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <text x=\"70\" y=\"200\" fill=\"#94a3b8\" font-size=\"12\">O</text> <!-- Tứ giác O(0;0), A(8;0) px:(300, 185), B(6;2) px:(250, 135), C(0;5) px:(85, 75) --> <polygon points=\"85,185 300,185 250,135 85,75\" fill=\"#10b981\" fill-opacity=\"0.22\" stroke=\"#10b981\" stroke-width=\"2\"/> <circle cx=\"250\" cy=\"135\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"260\" y=\"130\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(6; 2) Max 26tr</text> <circle cx=\"300\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"290\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(8;0)</text> <circle cx=\"85\" cy=\"75\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"50\" y=\"78\" fill=\"#cbd5e1\" font-size=\"12\">C(0;5)</text> </svg>"
         }
       ]
     },
@@ -6290,19 +6169,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Thay $(1; m)$ vào hệ:\n$\\begin{cases} 2(1) - m \\ge 0 \\\\ 1 + 2m \\le 7 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 2 \\\\ 2m \\le 6 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 2 \\\\ m \\le 3 \\end{cases} \\Leftrightarrow m \\le 2$."
         },
         {
-          "id": "ai-10.4.20",
-          "badge": "Luyện thêm 20 - Tối ưu hóa chi phí thực tế",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Một xí nghiệp vận chuyển cần thuê $x$ xe lớn và $y$ xe nhỏ với chi phí $C(x, y) = 4x + 3y$ (triệu đồng). Miền nghiệm cho phép thuê là đa giác có các đỉnh $A(2; 5), B(6; 1), C(4; 4)$. Chi phí thuê thấp nhất là:",
+          "id": "ai-10.4.prac3",
+          "badge": "Vận dụng cao - Tối ưu chi phí thuê xe chở khách và hàng",
+          "source": "Đề thi HSG & Ôn tập Toán 10",
+          "question": "Một công ty cần thuê xe chở 140 người và 9 tấn hàng. Xe loại A chở được 20 người và 0.6 tấn hàng; xe loại B chở được 10 người và 1.5 tấn hàng. Giá thuê xe loại A là 4 triệu đồng, xe loại B là 3 triệu đồng. Chi phí thuê xe nhỏ nhất là bao nhiêu triệu đồng?",
           "options": [
-            "23 triệu đồng",
-            "27 triệu đồng",
-            "28 triệu đồng",
-            "24 triệu đồng"
+            "$32$",
+            "$30$",
+            "$35$",
+            "$28$"
           ],
           "correctIndex": 0,
-          "explanation": "Tính chi phí tại 3 đỉnh:\n$C(A) = 4(2) + 3(5) = 23$;\n$C(B) = 4(6) + 3(1) = 27$;\n$C(C) = 4(4) + 3(4) = 28$.\nChi phí nhỏ nhất là 23 triệu đồng tại điểm $A(2; 5)$."
+          "explanation": "Gọi $x, y$ là số xe loại A và B. Ràng buộc: $20x + 10y \\ge 140 \\iff 2x + y \\ge 14$; $0.6x + 1.5y \\ge 9 \\iff 2x + 5y \\ge 30$; $x \\ge 0, y \\ge 0$. Chi phí $F(x, y) = 4x + 3y$. Giao điểm hai đường thẳng: $\\begin{cases} 2x + y = 14 \\\\ 2x + 5y = 30 \\end{cases} \\implies 4y = 16 \\implies y = 4, x = 5$. Tại $(5; 4)$, chi phí là $F(5; 4) = 4(5) + 3(4) = 32$ triệu đồng. Tại các đỉnh biên khác chi phí lớn hơn.",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- Tứ giác A(1;5) px:(115, 75), B(3;2) px:(185, 145), C(6;1) px:(285, 165), D(2;7) px:(150, 45) --> <polygon points=\"115,75 185,145 285,165 150,45\" fill=\"#38bdf8\" fill-opacity=\"0.22\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <circle cx=\"185\" cy=\"145\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"195\" y=\"145\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(3; 2) Min 18tr</text> <circle cx=\"115\" cy=\"75\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"80\" y=\"75\" fill=\"#cbd5e1\" font-size=\"11\">A(1;5)</text> <circle cx=\"285\" cy=\"165\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"290\" y=\"170\" fill=\"#cbd5e1\" font-size=\"11\">C(6;1)</text> <circle cx=\"150\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"155\" y=\"40\" fill=\"#cbd5e1\" font-size=\"11\">D(2;7)</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -6403,36 +6282,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.4.6",
-          "badge": "Luyện thêm Đ/S 6 - Khảo sát số đỉnh và tính bị chặn của miền nghiệm",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Cho hệ bất phương trình $\\begin{cases} 2x + y \\ge 4 \\\\ x + 2y \\ge 5 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$. Xét tính đúng/sai của các mệnh đề sau:",
+          "id": "ai-tf-10.4.prac3",
+          "badge": "Đúng / Sai 4 - Kế hoạch sản xuất tiệm bánh ngọt và bánh mặn",
+          "source": "Sách bài tập Toán 10 KNTT",
+          "prompt": "Một tiệm bánh sản xuất bánh ngọt và bánh mặn. Mỗi chiếc bánh ngọt cần 200 g bột và 100 g đường. Mỗi chiếc bánh mặn cần 100 g bột và 50 g đường. Tiệm hiện có 4 kg bột và 1.8 kg đường. Gọi $x, y$ lần lượt là số bánh ngọt và bánh mặn sản xuất ($x, y \\ge 0$). Xét tính Đúng/Sai của các mệnh đề sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của hệ.",
-              "correctAnswer": false,
-              "explanation": "Sai vì $2(0) + 0 = 0 \\ge 4$ là sai."
+              "text": "Đổi đơn vị nguyên liệu: 4 kg bằng 4000 g và 1.8 kg bằng 1800 g.",
+              "correctAnswer": true,
+              "explanation": "$4\\text{ kg} = 4000\\text{ g}, 1.8\\text{ kg} = 1800\\text{ g}$."
             },
             {
               "id": "b",
-              "text": "Giao điểm của hai đường thẳng $2x + y = 4$ và $x + 2y = 5$ là điểm $I(1; 2)$.",
+              "text": "Bất phương trình lượng bột sử dụng là $2x + y \\le 40$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì giải hệ: $y = 4 - 2x \\Rightarrow x + 2(4 - 2x) = 5 \\Leftrightarrow -3x = -3 \\Leftrightarrow x = 1 \\Rightarrow y = 2$."
+              "explanation": "$200x + 100y \\le 4000 \\iff 2x + y \\le 40$."
             },
             {
               "id": "c",
-              "text": "Miền nghiệm của hệ là một miền đa giác đóng (bị chặn).",
-              "correctAnswer": false,
-              "explanation": "Sai vì đây là miền mở (không bị chặn phía trên bên phải khi $x, y \\to +\\infty$)."
+              "text": "Bất phương trình lượng đường sử dụng là $2x + y \\le 36$.",
+              "correctAnswer": true,
+              "explanation": "$100x + 50y \\le 1800 \\iff 2x + y \\le 36$."
             },
             {
               "id": "d",
-              "text": "Biểu thức $F(x, y) = 3x + 2y$ có giá trị nhỏ nhất trên miền nghiệm bằng $7$ tại điểm $I(1; 2)$.",
-              "correctAnswer": true,
-              "explanation": "Đúng vì tại 3 đỉnh của miền lồi vô hạn: $(0; 5/2) \\Rightarrow F = 5$; $(1; 2) \\Rightarrow F = 3(1) + 2(2) = 7$; $(2; 0) \\Rightarrow F = 3(2) + 0 = 6$. Khoan! Tại $(2; 0)$, BPT $x + 2y \\ge 5$ trở thành $2 \\ge 5$ (Sai). Điểm biên trên các trục tọa độ phải là: giao của $2x + y = 4$ với $Oy$ là $(0; 4)$ thỏa mãn $0 + 2(4) = 8 \\ge 5$; giao của $x + 2y = 5$ với $Ox$ là $(5; 0)$ thỏa mãn $2(5) + 0 = 10 \\ge 4$. Ba đỉnh thực sự của miền là $(0; 4), (1; 2), (5; 0)$.\nTính $F$: tại $(0; 4): F = 8$; tại $(1; 2): F = 7$; tại $(5; 0): F = 15$. Vì vậy GTNN chính xác là $7$ tại $I(1; 2)$."
+              "text": "Nếu không làm chiếc bánh ngọt nào, tiệm bánh có thể làm tối đa 40 chiếc bánh mặn.",
+              "correctAnswer": false,
+              "explanation": "Khi $x = 0$, ta có $y \\le 40$ và $y \\le 36 \\implies y \\le 36$. Do lượng đường có hạn nên tối đa chỉ làm được 36 chiếc bánh mặn."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- 2x + y <= 100, 3x + 2y <= 180 --> <polygon points=\"85,185 240,185 190,105 85,45\" fill=\"#f59e0b\" fill-opacity=\"0.2\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <circle cx=\"190\" cy=\"105\" r=\"4.5\" fill=\"#fbbf24\"/> <text x=\"195\" y=\"100\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">(20; 60)</text> <text x=\"120\" y=\"130\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">Tiệm bánh ngọt</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -6496,17 +6376,17 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Tính $F$:\n$F(0; 0) = 0$;\n$F(6; 0) = 18$;\n$F(4; 5) = 3(4) + 5(5) = 12 + 25 = 37$;\n$F(0; 7) = 35$.\nGiá trị lớn nhất là 37 đạt tại đỉnh $B(4; 5)$. Vậy $x_0 = 4$."
         },
         {
-          "id": "ai-sa-10.4.12",
-          "badge": "Luyện thêm TLN 12 - Số đỉnh của miền đa giác nghiệm",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x \\le 5 \\\\ y \\le 4 \\\\ x + y \\ge 2 \\end{cases}$ là một đa giác có bao nhiêu đỉnh?",
-          "correctAnswer": "5",
+          "id": "ai-sa-10.4.prac3",
+          "badge": "Trả lời ngắn 6 - Tối ưu hóa lợi nhuận dây chuyền quạt điện",
+          "source": "Toán 10 Nâng cao & Đề thi định kì",
+          "prompt": "Một xưởng sản xuất hai loại quạt điện A và B. Để sản xuất 1 quạt A cần 3 giờ máy tiện và 1 giờ máy hàn. Để sản xuất 1 quạt B cần 1 giờ máy tiện và 1 giờ máy hàn. Xưởng có tối đa 15 giờ máy tiện và 9 giờ máy hàn. Lợi nhuận mỗi quạt A là 350 nghìn đồng, mỗi quạt B là 200 nghìn đồng. Hỏi lợi nhuận lớn nhất mà xưởng có thể đạt được trong một ngày là bao nhiêu nghìn đồng?",
+          "correctAnswer": "2250",
           "acceptableAnswers": [
-            "5",
-            "5 đỉnh",
-            "năm"
+            "2250",
+            "2.250"
           ],
-          "explanation": "Hình chữ nhật $0 \\le x \\le 5, 0 \\le y \\le 4$ bị đường thẳng $x + y = 2$ cắt cụt mất góc ở gốc tọa độ $O$. Năm đỉnh của đa giác nghiệm là $(2; 0), (5; 0), (5; 4), (0; 4), (0; 2)$. Vậy đa giác có 5 đỉnh."
+          "explanation": "Hệ điều kiện: $3x + y \\le 15$; $x + y \\le 9$; $x \\ge 0, y \\ge 0$. Lợi nhuận $L(x, y) = 350x + 200y$. Giao điểm hai đường thẳng: $2x = 6 \\implies x = 3, y = 6$. Các đỉnh: $O(0; 0) \\to 0$; $A(5; 0) \\to 1750$; $B(3; 6) \\to 350(3) + 200(6) = 2250$; $C(0; 9) \\to 1800$. Vậy lợi nhuận tối đa là 2250 nghìn đồng (khi sản xuất 3 quạt A và 6 quạt B).",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"50\" y1=\"185\" x2=\"390\" y2=\"185\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <line x1=\"85\" y1=\"205\" x2=\"85\" y2=\"25\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/> <text x=\"395\" y=\"190\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">x</text> <text x=\"90\" y=\"28\" fill=\"#94a3b8\" font-size=\"13\" font-weight=\"bold\">y</text> <!-- O(0;0), A(5;0) px:(255, 185), B(4;3) px:(225, 115), C(0;6) px:(85, 45) --> <polygon points=\"85,185 255,185 225,115 85,45\" fill=\"#8b5cf6\" fill-opacity=\"0.22\" stroke=\"#8b5cf6\" stroke-width=\"2\"/> <circle cx=\"225\" cy=\"115\" r=\"5\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"235\" y=\"110\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">B(4; 3) Max 2,6tr</text> <circle cx=\"255\" cy=\"185\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"245\" y=\"202\" fill=\"#cbd5e1\" font-size=\"12\">A(5;0)</text> <circle cx=\"85\" cy=\"45\" r=\"4\" fill=\"#cbd5e1\"/> <text x=\"50\" y=\"48\" fill=\"#cbd5e1\" font-size=\"12\">C(0;6)</text> </svg>"
         }
       ]
     }
@@ -8254,63 +8134,63 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "geometry",
-    "youtubeVideoId": "hVqJvZ_3Seo",
-    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương III - Toán 10 KNTT",
-    "youtubeVideos": [
-      {
-        "id": "hVqJvZ_3Seo",
-        "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương III"
-      },
-      {
-        "id": "IzkMEVZuc54",
-        "title": "Tiết 2: Chữa bài tập tự luận - Tính các yếu tố trong tam giác & Chứng minh đẳng thức"
-      },
-      {
-        "id": "77a-UJC55KA",
-        "title": "Tiết 3: Giải bài toán thực tế đo khoảng cách, chiều cao & Tổng kết chương III"
-      }
-    ],
-    "videoQuestions": [
-      {
-        "id": "vq-10.ot3.1",
-        "title": "Ví dụ 1 (Tiết 1): Áp dụng định lý Cosin tính độ dài cạnh tam giác",
-        "question": "Cho tam giác $ABC$ có cạnh $b = 5$, $c = 8$ và góc xen giữa $\\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
-        "options": [
-          "$7$",
-          "$\\sqrt{129}$",
-          "$49$",
-          "$2\\sqrt{10}$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc \\cos A = 5^2 + 8^2 - 2(5)(8)\\cos 60^\\circ = 25 + 64 - 80 \\cdot \\frac{1}{2} = 89 - 40 = 49 \\Rightarrow a = 7$."
-      },
-      {
-        "id": "vq-10.ot3.2",
-        "title": "Ví dụ 2 (Tiết 2): Tính bán kính đường tròn ngoại tiếp R của tam giác",
-        "question": "Cho tam giác $ABC$ có cạnh $a = 6\\sqrt{3}$ và góc đối diện $\\widehat{A} = 60^\\circ$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ bằng:",
-        "options": [
-          "$6$",
-          "$3\\sqrt{3}$",
-          "$12$",
-          "$6\\sqrt{3}$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Theo định lý Sin: $\\frac{a}{\\sin A} = 2R \\Rightarrow R = \\frac{a}{2\\sin A} = \\frac{6\\sqrt{3}}{2\\sin 60^\\circ} = \\frac{6\\sqrt{3}}{2 \\cdot \\frac{\\sqrt{3}}{2}} = 6$."
-      },
-      {
-        "id": "vq-10.ot3.3",
-        "title": "Ví dụ 3 (Tiết 3): Ứng dụng thực tế đo khoảng cách không thể đo trực tiếp",
-        "question": "Để đo khoảng cách giữa hai điểm $A$ và $B$ bị ngăn cách bởi một dòng sông, người ta chọn điểm $C$ cùng bên bờ với $A$ sao cho $CA = 50\\text{ m}$, đo được các góc $\\widehat{CAB} = 65^\\circ$ và $\\widehat{ACB} = 75^\\circ$. Số đo của góc $\\widehat{ABC}$ là:",
-        "options": [
-          "$40^\\circ$",
-          "$45^\\circ$",
-          "$50^\\circ$",
-          "$35^\\circ$"
-        ],
-        "correctIndex": 0,
-        "explanation": "Trong tam giác $ABC$, tổng ba góc bằng $180^\\circ$: $\\widehat{ABC} = 180^\\circ - (\\widehat{CAB} + \\widehat{ACB}) = 180^\\circ - (65^\\circ + 75^\\circ) = 180^\\circ - 140^\\circ = 40^\\circ$."
-      }
-    ],
+  "youtubeVideoId": "hVqJvZ_3Seo",
+  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương III - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "hVqJvZ_3Seo",
+      "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương III"
+    },
+    {
+      "id": "IzkMEVZuc54",
+      "title": "Tiết 2: Chữa bài tập tự luận - Tính các yếu tố trong tam giác & Chứng minh đẳng thức"
+    },
+    {
+      "id": "77a-UJC55KA",
+      "title": "Tiết 3: Giải bài toán thực tế đo khoảng cách, chiều cao & Tổng kết chương III"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-10.ot3.1",
+      "title": "Ví dụ 1 (Tiết 1): Áp dụng định lý Cosin tính độ dài cạnh tam giác",
+      "question": "Cho tam giác $ABC$ có cạnh $b = 5$, $c = 8$ và góc xen giữa $\\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
+      "options": [
+        "$7$",
+        "$\\sqrt{129}$",
+        "$49$",
+        "$2\\sqrt{10}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc \\cos A = 5^2 + 8^2 - 2(5)(8)\\cos 60^\\circ = 25 + 64 - 80 \\cdot \\frac{1}{2} = 89 - 40 = 49 \\Rightarrow a = 7$."
+    },
+    {
+      "id": "vq-10.ot3.2",
+      "title": "Ví dụ 2 (Tiết 2): Tính bán kính đường tròn ngoại tiếp R của tam giác",
+      "question": "Cho tam giác $ABC$ có cạnh $a = 6\\sqrt{3}$ và góc đối diện $\\widehat{A} = 60^\\circ$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ bằng:",
+      "options": [
+        "$6$",
+        "$3\\sqrt{3}$",
+        "$12$",
+        "$6\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định lý Sin: $\\frac{a}{\\sin A} = 2R \\Rightarrow R = \\frac{a}{2\\sin A} = \\frac{6\\sqrt{3}}{2\\sin 60^\\circ} = \\frac{6\\sqrt{3}}{2 \\cdot \\frac{\\sqrt{3}}{2}} = 6$."
+    },
+    {
+      "id": "vq-10.ot3.3",
+      "title": "Ví dụ 3 (Tiết 3): Ứng dụng thực tế đo khoảng cách không thể đo trực tiếp",
+      "question": "Để đo khoảng cách giữa hai điểm $A$ và $B$ bị ngăn cách bởi một dòng sông, người ta chọn điểm $C$ cùng bên bờ với $A$ sao cho $CA = 50\\text{ m}$, đo được các góc $\\widehat{CAB} = 65^\\circ$ và $\\widehat{ACB} = 75^\\circ$. Số đo của góc $\\widehat{ABC}$ là:",
+      "options": [
+        "$40^\\circ$",
+        "$45^\\circ$",
+        "$50^\\circ$",
+        "$35^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tam giác $ABC$, tổng ba góc bằng $180^\\circ$: $\\widehat{ABC} = 180^\\circ - (\\widehat{CAB} + \\widehat{ACB}) = 180^\\circ - (65^\\circ + 75^\\circ) = 180^\\circ - 140^\\circ = 40^\\circ$."
+    }
+  ],
   "tips": [
     "Mẹo chọn định lý trong tam giác: Biết 2 cạnh và góc kẹp giữa (c-g-c) hoặc 3 cạnh (c-c-c) -> dùng định lý Cosin; Biết 1 cạnh và 2 góc (g-c-g) hoặc 2 cạnh và 1 góc đối diện -> dùng định lý Sin.",
     "Mẹo nhớ nhanh góc bù: sin bù (chỉ có sin giữ nguyên dấu), các hàm còn lại đổi dấu thành đối số: sin(180° - α) = sin α; cos(180° - α) = -cos α.",
@@ -8878,19 +8758,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "$S = \\frac{1}{2} ac \\sin B = \\frac{1}{2}(6)(8)\\sin 135^\\circ = 24 \\cdot \\frac{\\sqrt{2}}{2} = 12\\sqrt{2}$."
         },
         {
-          "id": "ai-10.6.6",
-          "badge": "Luyện thêm 6 - Tính diện tích tam giác đều",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Một tam giác đều có cạnh bằng 4 cm thì diện tích bằng:",
+          "id": "ai-10.6.prac1",
+          "badge": "Vận dụng - Đo khoảng cách gián tiếp qua đầm lầy",
+          "source": "SGK Toán 10 KNTT Bài 6 & Đề thi khảo sát",
+          "question": "Để đo khoảng cách giữa hai điểm $A$ và $B$ bị ngăn cách bởi một đầm lầy, người ta chọn điểm mốc $C$ sao cho từ $C$ có thể nhìn thấy cả $A$ và $B$. Bằng giác kế đo được $CA = 200\\text{ m}$, $CB = 150\\text{ m}$ và góc $\\widehat{ACB} = 60^\\circ$. Khoảng cách giữa hai điểm $A$ và $B$ xấp xỉ bằng:",
           "options": [
-            "$4\\sqrt{3}\\text{ cm}^2$",
-            "$8\\sqrt{3}\\text{ cm}^2$",
-            "$16\\sqrt{3}\\text{ cm}^2$",
-            "$2\\sqrt{3}\\text{ cm}^2$"
+            "$180\\text{ m}$",
+            "$175\\text{ m}$",
+            "$190\\text{ m}$",
+            "$250\\text{ m}$"
           ],
           "correctIndex": 0,
-          "explanation": "Diện tích tam giác đều cạnh $a$ là $S = \\frac{a^2\\sqrt{3}}{4} = \\frac{16\\sqrt{3}}{4} = 4\\sqrt{3}\\text{ cm}^2$."
+          "explanation": "Áp dụng định lí cosin trong tam giác $ABC$: $AB^2 = CA^2 + CB^2 - 2 \\cdot CA \\cdot CB \\cdot \\cos C = 200^2 + 150^2 - 2 \\cdot 200 \\cdot 150 \\cdot \\cos 60^\\circ = 40000 + 22500 - 30000 = 32500$. Do đó $AB = \\sqrt{32500} \\approx 180.28\\text{ m} \\approx 180\\text{ m}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M 180 80 Q 250 55 310 90 Q 360 120 330 160 Q 270 190 210 165 Q 160 140 180 80 Z\" fill=\"#0284c7\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"6 3\"/> <text x=\"240\" y=\"125\" fill=\"#38bdf8\" font-size=\"12\" font-style=\"italic\">Đầm lầy</text> <line x1=\"75\" y1=\"180\" x2=\"190\" y2=\"65\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"75\" y1=\"180\" x2=\"365\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"190\" y1=\"65\" x2=\"365\" y2=\"175\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <path d=\"M 110 179 A 40 40 0 0 0 100 152\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"115\" y=\"165\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <text x=\"105\" y=\"112\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">40 m</text> <text x=\"210\" y=\"200\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">60 m</text> <text x=\"290\" y=\"110\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AB = 20√7 m</text> <circle cx=\"75\" cy=\"180\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"55\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">C</text> <circle cx=\"190\" cy=\"65\" r=\"5\" fill=\"#10b981\"/> <text x=\"180\" y=\"50\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"365\" cy=\"175\" r=\"5\" fill=\"#10b981\"/> <text x=\"375\" y=\"185\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">B</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -8991,36 +8871,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.6.2",
-          "badge": "Luyện thêm Đ/S 2 - Định lý Sin và bán kính R",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Cho tam giác $ABC$ có $\\widehat{A} = 60^\\circ, \\widehat{B} = 45^\\circ$ và cạnh $b = 4$.",
+          "id": "ai-tf-10.6.prac1",
+          "badge": "Đúng / Sai 4 - Đo chiều cao ngọn tháp bằng giác kế",
+          "source": "SGK Toán 10 KNTT Bài 6",
+          "prompt": "Từ điểm $A$ trên mặt đất, người ta quan sát đỉnh một ngọn tháp $CD$ cao dựng đứng trên mặt đất (chân tháp $D$). Góc nâng nhìn đỉnh tháp từ $A$ là $\\widehat{CAD} = 30^\\circ$. Tiến lại gần tháp một đoạn $AB = 50\\text{ m}$ trên cùng đường thẳng qua chân tháp, góc nâng quan sát đỉnh tháp từ $B$ là $\\widehat{CBD} = 60^\\circ$. Xét tính Đúng/Sai của các khẳng định sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Góc $\\widehat{C} = 180^\\circ - (60^\\circ + 45^\\circ) = 75^\\circ$.",
+              "text": "Tam giác $ABC$ là tam giác cân tại đỉnh $B$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì tổng ba góc trong tam giác bằng $180^\\circ$."
+              "explanation": "Ta có $\\widehat{ACB} = \\widehat{CBD} - \\widehat{CAD} = 60^\\circ - 30^\\circ = 30^\\circ = \\widehat{CAB} \\implies \\triangle ABC$ cân tại $B$."
             },
             {
               "id": "b",
-              "text": "Bán kính đường tròn ngoại tiếp $R = 2\\sqrt{2}$.",
+              "text": "Độ dài đoạn thẳng $BC$ bằng $50\\text{ m}$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $2R = \\frac{b}{\\sin B} = \\frac{4}{\\sin 45^\\circ} = 4\\sqrt{2} \\Rightarrow R = 2\\sqrt{2}$."
+              "explanation": "Vì $\\triangle ABC$ cân tại $B$ nên $BC = AB = 50\\text{ m}$."
             },
             {
               "id": "c",
-              "text": "Độ dài cạnh $a = 2\\sqrt{6}$.",
+              "text": "Chiều cao $CD$ của tháp tính theo công thức $CD = BC \\cdot \\sin 60^\\circ$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $a = 2R \\sin A = 2(2\\sqrt{2})\\sin 60^\\circ = 4\\sqrt{2} \\cdot \\frac{\\sqrt{3}}{2} = 2\\sqrt{6}$."
+              "explanation": "Trong tam giác vuông $BCD$ tại $D$: $CD = BC \\cdot \\sin \\widehat{CBD} = 50 \\cdot \\frac{\\sqrt{3}}{2} = 25\\sqrt{3} \\approx 43.3\\text{ m}$."
             },
             {
               "id": "d",
-              "text": "Cạnh $a$ ngắn hơn cạnh $b$.",
+              "text": "Chiều cao của ngọn tháp lớn hơn $45\\text{ m}$.",
               "correctAnswer": false,
-              "explanation": "Sai vì $a = 2\\sqrt{6} \\approx 4{,}9 > b = 4$ (vì góc $A > B$)."
+              "explanation": "$CD = 25\\sqrt{3} \\approx 43.3\\text{ m} < 45\\text{ m}$."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <g transform=\"translate(385, 45)\"> <polygon points=\"0,0 -14,150 14,150\" fill=\"#0f172a\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <circle cx=\"0\" cy=\"-4\" r=\"3\" fill=\"#ef4444\"/> <line x1=\"0\" y1=\"-4\" x2=\"0\" y2=\"150\" stroke=\"#f59e0b\" stroke-width=\"2\"/> </g> <circle cx=\"385\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"200\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <circle cx=\"385\" cy=\"45\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"45\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C</text> <line x1=\"260\" y1=\"195\" x2=\"385\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"100\" y1=\"195\" x2=\"385\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <path d=\"M 295 195 A 35 35 0 0 0 282 169\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"290\" y=\"182\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">48°</text> <path d=\"M 140 195 A 40 40 0 0 0 133 172\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"145\" y=\"186\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">35°</text> <text x=\"165\" y=\"220\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 30 m</text> <circle cx=\"100\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"90\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"260\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"250\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"405\" y=\"125\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = CD</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -9084,15 +8965,17 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "$\\cos A = \\frac{1 + 4 - 3}{2(1)(2)} = \\frac{2}{4} = \\frac{1}{2} \\Rightarrow \\widehat{A} = 60^\\circ$."
         },
         {
-          "id": "ai-sa-10.6.3",
-          "badge": "Luyện thêm TLN 3 - Bán kính đường tròn ngoại tiếp R",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Cho tam giác $ABC$ có $c = 12$ và $\\widehat{C} = 60^\\circ$. Tính $R\\sqrt{3}$.",
-          "correctAnswer": "12",
+          "id": "ai-sa-10.6.prac1",
+          "badge": "Trả lời ngắn 6 - Khoảng cách giữa hai tàu thủy sau khi rời cảng",
+          "source": "SBT Toán 10 KNTT",
+          "prompt": "Hai chiếc tàu thủy xuất phát cùng một thời điểm từ cảng $O$, đi thẳng theo hai hướng tạo với nhau một góc $60^\\circ$. Tàu thứ nhất chạy với vận tốc $30\\text{ km/h}$, tàu thứ hai chạy với vận tốc $40\\text{ km/h}$. Sau 2 giờ, khoảng cách giữa hai tàu là bao nhiêu kilômét? (Làm tròn kết quả đến hàng đơn vị).",
+          "correctAnswer": "72",
           "acceptableAnswers": [
-            "12"
+            "72",
+            "72 km"
           ],
-          "explanation": "$2R = \\frac{c}{\\sin C} = \\frac{12}{\\sqrt{3}/2} = \\frac{24}{\\sqrt{3}} \\Rightarrow R = \\frac{12}{\\sqrt{3}} \\Rightarrow R\\sqrt{3} = 12$."
+          "explanation": "Sau 2 giờ: tàu 1 đi được $OA = 30 \\times 2 = 60\\text{ km}$; tàu 2 đi được $OB = 40 \\times 2 = 80\\text{ km}$. Góc $\\widehat{AOB} = 60^\\circ$. Khoảng cách giữa hai tàu là $AB$: $AB^2 = OA^2 + OB^2 - 2 \\cdot OA \\cdot OB \\cdot \\cos 60^\\circ = 60^2 + 80^2 - 2 \\cdot 60 \\cdot 80 \\cdot 0.5 = 3600 + 6400 - 4800 = 5200$. Vậy $AB = \\sqrt{5200} \\approx 72.11\\text{ km} \\approx 72\\text{ km}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <circle cx=\"70\" cy=\"180\" r=\"6\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"50\" y=\"195\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">O (Cảng)</text> <line x1=\"70\" y1=\"180\" x2=\"310\" y2=\"180\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"70\" y1=\"180\" x2=\"245\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"245\" y1=\"55\" x2=\"310\" y2=\"180\" stroke=\"#f43f5e\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/> <path d=\"M 115 180 A 45 45 0 0 0 93 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"120\" y=\"162\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <text x=\"135\" y=\"105\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">40 hl</text> <text x=\"175\" y=\"200\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">30 hl</text> <text x=\"290\" y=\"115\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AB ≈ 36,1 hl</text> <circle cx=\"245\" cy=\"55\" r=\"5\" fill=\"#10b981\"/> <text x=\"255\" y=\"55\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">Tàu A</text> <circle cx=\"310\" cy=\"180\" r=\"5\" fill=\"#10b981\"/> <text x=\"320\" y=\"185\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">Tàu B</text> </svg>"
         }
       ]
     },
@@ -9268,19 +9151,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Tam giác $ABC$ vuông tại $C$ vì $3^2 + 4^2 = 5^2$. Cạnh huyền là $c = 5$, bán kính ngoại tiếp $R = \\frac{c}{2} = 2{,}5$."
         },
         {
-          "id": "ai-10.6.12",
-          "badge": "Luyện thêm 12 - Công thức Heron tính S",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Tam giác $ABC$ có các cạnh $a = 7, b = 9, c = 8$. Diện tích của tam giác bằng:",
+          "id": "ai-10.6.prac2",
+          "badge": "Vận dụng - Ngọn hải đăng quan sát thuyền cứu hộ",
+          "source": "Đề kiểm tra học kì 1 Toán 10 KNTT",
+          "question": "Một ngọn hải đăng cao $45\\text{ m}$ so với mực nước biển. Từ đỉnh hải đăng, người quan sát nhìn thấy một chiếc thuyền cứu hộ dưới góc hạ $30^\\circ$. Khoảng cách từ chân ngọn hải đăng (ngang mực nước biển) đến con thuyền xấp xỉ bằng:",
           "options": [
-            "$12\\sqrt{5}$",
-            "$24\\sqrt{5}$",
-            "$6\\sqrt{5}$",
-            "$18\\sqrt{5}$"
+            "$78\\text{ m}$",
+            "$90\\text{ m}$",
+            "$26\\text{ m}$",
+            "$64\\text{ m}$"
           ],
           "correctIndex": 0,
-          "explanation": "Nửa chu vi $p = \\frac{7+9+8}{2} = 12$. Diện tích $S = \\sqrt{12(12-7)(12-9)(12-8)} = \\sqrt{12 \\cdot 5 \\cdot 3 \\cdot 4} = \\sqrt{720} = 12\\sqrt{5}$."
+          "explanation": "Góc hạ là góc giữa phương nằm ngang và tia nhìn. Do đó trong tam giác vuông tạo bởi đỉnh tháp $A$, chân tháp $H$ và thuyền $B$, góc $\\widehat{ABH} = 30^\\circ$. Khoảng cách $HB = \\frac{AH}{\\tan 30^\\circ} = \\frac{45}{1/\\sqrt{3}} = 45\\sqrt{3} \\approx 77.94\\text{ m} \\approx 78\\text{ m}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 450 250\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"0\" y=\"0\" width=\"450\" height=\"195\" fill=\"#0369a1\" fill-opacity=\"0.12\"/> <line x1=\"30\" y1=\"195\" x2=\"420\" y2=\"195\" stroke=\"#eab308\" stroke-width=\"2\" stroke-dasharray=\"7 3\"/> <text x=\"380\" y=\"215\" fill=\"#eab308\" font-size=\"12\" font-style=\"italic\">Bờ biển</text> <g transform=\"translate(225, 45)\"> <polygon points=\"-7,15 7,15 4,-12 -4,-12\" fill=\"#f1f5f9\"/> <circle cx=\"0\" cy=\"15\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"12\" y=\"10\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Hải đăng)</text> </g> <line x1=\"100\" y1=\"195\" x2=\"330\" y2=\"195\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"100\" y1=\"195\" x2=\"225\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"330\" y1=\"195\" x2=\"225\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <path d=\"M 135 195 A 35 35 0 0 0 118 165\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"132\" y=\"180\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">70°</text> <path d=\"M 295 195 A 35 35 0 0 1 316 163\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"275\" y=\"180\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">80°</text> <text x=\"200\" y=\"215\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">500 m</text> <circle cx=\"100\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"90\" y=\"220\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"330\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"330\" y=\"220\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -9381,36 +9264,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.6.4",
-          "badge": "Luyện thêm Đ/S 4 - Trung tuyến và trọng tâm",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $2\\sqrt{3}$, trọng tâm $G$.",
+          "id": "ai-tf-10.6.prac2",
+          "badge": "Đúng / Sai 4 - Góc nâng và độ cao máy bay cất cánh",
+          "source": "Đề thi thử tốt nghiệp & Ôn tập Toán 10",
+          "prompt": "Một máy bay cất cánh từ sân bay $A$ theo hướng chếch lên tạo với mặt đất một góc $20^\\circ$. Sau 3 phút bay với vận tốc đều $600\\text{ km/h}$ theo phương này, máy bay đạt đến vị trí điểm $B$. Xét tính Đúng/Sai của các mệnh đề sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Độ dài mỗi đường trung tuyến bằng $3$.",
+              "text": "Thời gian bay 3 phút tương ứng với $0.05$ giờ.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $m = \\frac{a\\sqrt{3}}{2} = \\frac{2\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3$."
+              "explanation": "$3\\text{ phút} = \\frac{3}{60} = 0.05\\text{ giờ}$."
             },
             {
               "id": "b",
-              "text": "Khoảng cách từ trọng tâm $G$ đến mỗi đỉnh bằng $2$.",
+              "text": "Quãng đường $AB$ mà máy bay đã bay là $30\\text{ km}$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $AG = \\frac{2}{3} m = \\frac{2}{3} \\cdot 3 = 2$."
+              "explanation": "$s = v \\cdot t = 600 \\times 0.05 = 30\\text{ km}$."
             },
             {
               "id": "c",
-              "text": "Khoảng cách từ $G$ đến mỗi cạnh bằng $1$.",
+              "text": "Độ cao của máy bay so với mặt đất tính theo công thức $h = AB \\cdot \\sin 20^\\circ$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì bán kính nội tiếp $r = \\frac{1}{3} m = 1$."
+              "explanation": "Trong tam giác vuông, cạnh đối bằng cạnh huyền nhân sin góc đối: $h = AB \\cdot \\sin 20^\\circ$."
             },
             {
               "id": "d",
-              "text": "Diện tích tam giác $GBC$ bằng $\\frac{1}{2}$ diện tích tam giác $ABC$.",
+              "text": "Độ cao của máy bay khi đó vượt quá $12\\text{ km}$.",
               "correctAnswer": false,
-              "explanation": "Sai vì trọng tâm chia tam giác thành 3 tam giác có diện tích bằng nhau, do đó $S_{GBC} = \\frac{1}{3} S_{ABC}$."
+              "explanation": "$h = 30 \\cdot \\sin 20^\\circ \\approx 30 \\times 0.342 = 10.26\\text{ km} < 12\\text{ km}$."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <circle cx=\"70\" cy=\"175\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"50\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <line x1=\"70\" y1=\"175\" x2=\"250\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <circle cx=\"250\" cy=\"175\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"245\" y=\"200\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <line x1=\"250\" y1=\"175\" x2=\"340\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/> <line x1=\"250\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <circle cx=\"310\" cy=\"71\" r=\"5\" fill=\"#10b981\"/> <text x=\"320\" y=\"70\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <path d=\"M 285 175 A 35 35 0 0 0 268 145\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"1.8\"/> <text x=\"288\" y=\"160\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <path d=\"M 215 175 A 35 35 0 0 1 268 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"220\" y=\"155\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">120°</text> <line x1=\"70\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <text x=\"145\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">100 km</text> <text x=\"305\" y=\"130\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">60 km</text> <text x=\"175\" y=\"105\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = 140 km</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -9472,15 +9356,17 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "$p = \\frac{4+5+7}{2} = 8$. Diện tích $S = \\sqrt{8(8-4)(8-5)(8-7)} = \\sqrt{8 \\cdot 4 \\cdot 3 \\cdot 1} = \\sqrt{96} = 4\\sqrt{6}$. Vậy $k = 6$."
         },
         {
-          "id": "ai-sa-10.6.6",
-          "badge": "Luyện thêm TLN 6 - Bán kính đường tròn nội tiếp r",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Tam giác có ba cạnh $a = 6, b = 8, c = 10$. Tính bán kính đường tròn nội tiếp $r$.",
-          "correctAnswer": "2",
+          "id": "ai-sa-10.6.prac2",
+          "badge": "Trả lời ngắn 6 - Đo khoảng cách hai bên bờ hồ nước",
+          "source": "SGK Toán 10 KNTT Bài 6 Vận dụng",
+          "prompt": "Để đo khoảng cách giữa hai điểm $A$ và $B$ nằm ở hai bên bờ một hồ nước, một kỹ sư đo đạc chọn điểm mốc $C$. Bằng các thiết bị trắc địa đo được $CA = 80\\text{ m}$, $CB = 120\\text{ m}$ và góc $\\widehat{ACB} = 120^\\circ$. Tính khoảng cách $AB$ theo đơn vị mét (làm tròn kết quả đến hàng đơn vị).",
+          "correctAnswer": "174",
           "acceptableAnswers": [
-            "2"
+            "174",
+            "174 m"
           ],
-          "explanation": "Tam giác vuông, $S = \\frac{1}{2}(6)(8) = 24$, $p = 12 \\Rightarrow r = \\frac{24}{12} = 2$."
+          "explanation": "Áp dụng định lí cosin trong tam giác $ABC$: $AB^2 = CA^2 + CB^2 - 2 \\cdot CA \\cdot CB \\cdot \\cos 120^\\circ = 80^2 + 120^2 - 2 \\cdot 80 \\cdot 120 \\cdot (-0.5) = 6400 + 14400 + 9600 = 30400$. Suy ra $AB = \\sqrt{30400} \\approx 174.36\\text{ m} \\approx 174\\text{ m}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M 120 100 Q 230 70 330 110 Q 370 150 310 170 Q 210 185 130 160 Q 90 130 120 100 Z\" fill=\"#0284c7\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"6 3\"/> <text x=\"225\" y=\"135\" fill=\"#38bdf8\" font-size=\"12\" font-style=\"italic\">Hồ nước</text> <circle cx=\"180\" cy=\"175\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"180\" y=\"198\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">C</text> <line x1=\"180\" y1=\"175\" x2=\"80\" y2=\"90\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"180\" y1=\"175\" x2=\"370\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/> <line x1=\"80\" y1=\"90\" x2=\"370\" y2=\"175\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <path d=\"M 215 175 A 35 35 0 0 0 153 152\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"185\" y=\"155\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">120°</text> <text x=\"100\" y=\"150\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">30 m</text> <text x=\"270\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">50 m</text> <text x=\"235\" y=\"105\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AB = 70 m</text> <circle cx=\"80\" cy=\"90\" r=\"5\" fill=\"#10b981\"/> <text x=\"65\" y=\"85\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"370\" cy=\"175\" r=\"5\" fill=\"#10b981\"/> <text x=\"380\" y=\"180\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">B</text> </svg>"
         }
       ]
     },
@@ -9582,7 +9468,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "ai-10.6.13",
-      "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Hai ngọn núi M và N --> <!-- Núi M bên trái --> <polygon points=\"120,60 60,180 180,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"120,60 105,95 120,90 135,100 120,60\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Núi N bên phải --> <polygon points=\"340,75 280,180 400,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"340,75 328,105 340,100 352,110 340,75\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Điểm quan sát P --> <line x1=\"220\" y1=\"195\" x2=\"120\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <line x1=\"220\" y1=\"195\" x2=\"340\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <!-- Khoảng cách MN cần tính --> <line x1=\"120\" y1=\"60\" x2=\"340\" y2=\"75\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Cung góc 60 độ tại P --> <path d=\"M 203 172 A 35 35 0 0 1 239 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"212\" y=\"162\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <!-- Số đo PM = 800m, PN = 500m --> <text x=\"125\" y=\"145\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">800 m</text> <text x=\"290\" y=\"150\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">500 m</text> <text x=\"220\" y=\"55\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">MN = ?</text> <!-- Các đỉnh --> <circle cx=\"120\" cy=\"60\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"95\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">M</text> <circle cx=\"340\" cy=\"75\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"350\" y=\"75\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">N</text> <circle cx=\"220\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"215\" y=\"218\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">P</text> </svg>",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Hai ngọn núi M và N --> <!-- Núi M bên trái --> <polygon points=\"120,60 60,180 180,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"120,60 105,95 120,90 135,100 120,60\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Núi N bên phải --> <polygon points=\"340,75 280,180 400,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polyline points=\"340,75 328,105 340,100 352,110 340,75\" fill=\"#f8fafc\" opacity=\"0.8\"/> <!-- Điểm quan sát P --> <line x1=\"220\" y1=\"195\" x2=\"120\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <line x1=\"220\" y1=\"195\" x2=\"340\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <!-- Khoảng cách MN cần tính --> <line x1=\"120\" y1=\"60\" x2=\"340\" y2=\"75\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Cung góc 60 độ tại P --> <path d=\"M 203 172 A 35 35 0 0 1 239 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"212\" y=\"162\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <!-- Số đo PM = 800m, PN = 500m --> <text x=\"125\" y=\"145\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">800 m</text> <text x=\"290\" y=\"150\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">500 m</text> <text x=\"220\" y=\"55\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">MN = ?</text> <!-- Các đỉnh --> <circle cx=\"120\" cy=\"60\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"95\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">M</text> <circle cx=\"340\" cy=\"75\" r=\"4.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"350\" y=\"75\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">N</text> <circle cx=\"220\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"215\" y=\"218\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">P</text> </svg>",
           "badge": "Luyện thêm 13 - Góc nhìn qua chướng ngại vật",
           "isAiGenerated": true,
           "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
@@ -9643,7 +9529,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "ai-10.6.17",
-      "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"canoArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- La bàn 4 hướng góc trái trên --> <g transform=\"translate(60, 50)\"> <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#1e293b\" stroke=\"#475569\"/> <line x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <line x1=\"-20\" y1=\"0\" x2=\"20\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <text x=\"-4\" y=\"-24\" fill=\"#38bdf8\" font-size=\"11\" font-weight=\"bold\">B</text> <text x=\"24\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">Đ</text> <text x=\"-32\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">T</text> <text x=\"-4\" y=\"32\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">N</text> </g> <!-- Điểm A (Bến xuất phát) --> <circle cx=\"120\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"100\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Chạy hướng Đông 40km đến B --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Rẽ hướng Bắc 30km đến C --> <line x1=\"300\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"65\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"60\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Góc vuông tại B --> <rect x=\"286\" y=\"161\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/> <!-- Khoảng cách AC đường chéo --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Độ dài --> <text x=\"195\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">40 km (Đông)</text> <text x=\"315\" y=\"125\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">30 km (Bắc)</text> <text x=\"180\" y=\"110\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
+          "svgDiagram": "<svg viewBox=\"0 0 440 230\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"canoArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- La bàn 4 hướng góc trái trên --> <g transform=\"translate(60, 50)\"> <circle cx=\"0\" cy=\"0\" r=\"22\" fill=\"#1e293b\" stroke=\"#475569\"/> <line x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <line x1=\"-20\" y1=\"0\" x2=\"20\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/> <text x=\"-4\" y=\"-24\" fill=\"#38bdf8\" font-size=\"11\" font-weight=\"bold\">B</text> <text x=\"24\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">Đ</text> <text x=\"-32\" y=\"4\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">T</text> <text x=\"-4\" y=\"32\" fill=\"#cbd5e1\" font-size=\"11\" font-weight=\"bold\">N</text> </g> <!-- Điểm A (Bến xuất phát) --> <circle cx=\"120\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"100\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Chạy hướng Đông 40km đến B --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Rẽ hướng Bắc 30km đến C --> <line x1=\"300\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#canoArrow)\"/> <circle cx=\"300\" cy=\"65\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"310\" y=\"60\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Góc vuông tại B --> <rect x=\"286\" y=\"161\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/> <!-- Khoảng cách AC đường chéo --> <line x1=\"120\" y1=\"175\" x2=\"300\" y2=\"65\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Độ dài --> <text x=\"195\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">40 km (Đông)</text> <text x=\"315\" y=\"125\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">30 km (Bắc)</text> <text x=\"180\" y=\"110\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
           "badge": "Luyện thêm 17 - Khoảng cách di chuyển của tàu",
           "isAiGenerated": true,
           "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
@@ -9658,19 +9544,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Hai hướng Đông và Bắc vuông góc nhau. Theo định lý Pythagore: $AC = \\sqrt{40^2 + 30^2} = 50$ km."
         },
         {
-          "id": "ai-10.6.18",
-          "badge": "Luyện thêm 18 - Tam giác có một góc 120 độ",
-          "isAiGenerated": true,
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Cho tam giác $ABC$ có $AB = 2, AC = 3$ và $\\widehat{A} = 120^\\circ$. Độ dài cạnh $BC$ là:",
+          "id": "ai-10.6.prac3",
+          "badge": "Vận dụng - Đo khoảng cách giữa hai đỉnh núi",
+          "source": "SBT Toán 10 KNTT Bài 6",
+          "question": "Muốn đo khoảng cách giữa hai đỉnh núi $M$ và $N$, từ đài quan sát $P$ người ta đo được $PM = 6\\text{ km}$, $PN = 10\\text{ km}$ và góc $\\widehat{MPN} = 60^\\circ$. Khoảng cách giữa hai đỉnh núi $M$ và $N$ xấp xỉ bằng:",
           "options": [
-            "$\\sqrt{19}$",
-            "$\\sqrt{13}$",
-            "$\\sqrt{7}$",
-            "$4$"
+            "$8.7\\text{ km}$",
+            "$14\\text{ km}$",
+            "$7.2\\text{ km}$",
+            "$9.5\\text{ km}$"
           ],
           "correctIndex": 0,
-          "explanation": "$BC^2 = 2^2 + 3^2 - 2(2)(3)\\cos 120^\\circ = 4 + 9 - 12\\left(-\\frac{1}{2}\\right) = 13 + 6 = 19 \\Rightarrow BC = \\sqrt{19}$."
+          "explanation": "Áp dụng định lí cosin cho tam giác $PMN$: $MN^2 = PM^2 + PN^2 - 2 \\cdot PM \\cdot PN \\cdot \\cos 60^\\circ = 6^2 + 10^2 - 2 \\cdot 6 \\cdot 10 \\cdot 0.5 = 36 + 100 - 60 = 76$. Suy ra $MN = \\sqrt{76} \\approx 8.72\\text{ km} \\approx 8.7\\text{ km}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <polygon points=\"120,60 60,180 180,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <polygon points=\"340,75 280,180 400,180\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <line x1=\"220\" y1=\"195\" x2=\"120\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <line x1=\"220\" y1=\"195\" x2=\"340\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/> <line x1=\"120\" y1=\"60\" x2=\"340\" y2=\"75\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <path d=\"M 203 172 A 35 35 0 0 1 239 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"212\" y=\"162\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">60°</text> <text x=\"125\" y=\"145\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">800 m</text> <text x=\"290\" y=\"150\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">500 m</text> <text x=\"220\" y=\"55\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">MN = 700 m</text> <circle cx=\"120\" cy=\"60\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"95\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">M</text> <circle cx=\"340\" cy=\"75\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"350\" y=\"75\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">N</text> <circle cx=\"220\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"215\" y=\"218\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">P</text> </svg>"
         }
       ],
       "trueFalseQuestions": [
@@ -9740,7 +9626,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "ai-tf-10.6.5",
-      "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"planeArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- Sân bay A --> <circle cx=\"70\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"50\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Bay hướng Đông 100km đến B --> <line x1=\"70\" y1=\"175\" x2=\"250\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"250\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"245\" y=\"200\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Đường thẳng Đông kéo dài nét đứt --> <line x1=\"250\" y1=\"175\" x2=\"340\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/> <!-- Chếch Bắc 60 độ: bay 60km đến C (60 độ so với phương Đông) --> <!-- dx = 60*cos(-60) = 30, dy = -60*sin(60) = -52 -> x = 250 + 60 = 310, y = 175 - 104 = 71 --> <line x1=\"250\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"310\" cy=\"71\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"320\" y=\"70\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Cung góc đổi hướng 60 độ ngoài --> <path d=\"M 285 175 A 35 35 0 0 0 268 145\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"1.8\"/> <text x=\"288\" y=\"160\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <!-- Cung góc trong B = 120 độ --> <path d=\"M 215 175 A 35 35 0 0 1 268 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"220\" y=\"155\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">120°</text> <!-- Khoảng cách AC bay thẳng --> <line x1=\"70\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Số đo --> <text x=\"145\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">AB = 100 km</text> <text x=\"305\" y=\"130\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">60 km</text> <text x=\"175\" y=\"105\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
+          "svgDiagram": "<svg viewBox=\"0 0 450 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"planeArrow\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"> <path d=\"M 0 2 L 8 5 L 0 8 z\" fill=\"#38bdf8\"/> </marker> </defs> <!-- Sân bay A --> <circle cx=\"70\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"50\" y=\"195\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <!-- Bay hướng Đông 100km đến B --> <line x1=\"70\" y1=\"175\" x2=\"250\" y2=\"175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"250\" cy=\"175\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"245\" y=\"200\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <!-- Đường thẳng Đông kéo dài nét đứt --> <line x1=\"250\" y1=\"175\" x2=\"340\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/> <!-- Chếch Bắc 60 độ: bay 60km đến C (60 độ so với phương Đông) --> <!-- dx = 60*cos(-60) = 30, dy = -60*sin(60) = -52 -> x = 250 + 60 = 310, y = 175 - 104 = 71 --> <line x1=\"250\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#38bdf8\" stroke-width=\"2.5\" marker-mid=\"url(#planeArrow)\"/> <circle cx=\"310\" cy=\"71\" r=\"5\" fill=\"#10b981\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"320\" y=\"70\" fill=\"#10b981\" font-size=\"14\" font-weight=\"bold\">C</text> <!-- Cung góc đổi hướng 60 độ ngoài --> <path d=\"M 285 175 A 35 35 0 0 0 268 145\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"1.8\"/> <text x=\"288\" y=\"160\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <!-- Cung góc trong B = 120 độ --> <path d=\"M 215 175 A 35 35 0 0 1 268 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/> <text x=\"220\" y=\"155\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">120°</text> <!-- Khoảng cách AC bay thẳng --> <line x1=\"70\" y1=\"175\" x2=\"310\" y2=\"71\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/> <!-- Số đo --> <text x=\"145\" y=\"195\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">AB = 100 km</text> <text x=\"305\" y=\"130\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"600\">60 km</text> <text x=\"175\" y=\"105\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\">AC = ?</text> </svg>",
           "badge": "Luyện thêm Đ/S 5 - Bài toán thực tế máy bay bay",
           "source": "Bộ đề thi thử Toán 10 mới",
           "prompt": "Một máy bay bay từ sân bay $A$ theo hướng Đông $100$ km đến điểm $B$, sau đó đổi hướng bay chếch về phía Bắc một góc $60^\\circ$ bay thêm $60$ km đến sân bay $C$.",
@@ -9772,36 +9658,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           ]
         },
         {
-          "id": "ai-tf-10.6.6",
-          "badge": "Luyện thêm Đ/S 6 - Nhận dạng tam giác qua tỉ lệ cạnh",
-          "source": "Bộ đề thi thử Toán 10 mới",
-          "prompt": "Cho tam giác $ABC$ có các cạnh thỏa mãn $a : b : c = 3 : 5 : 7$.",
+          "id": "ai-tf-10.6.prac3",
+          "badge": "Đúng / Sai 4 - Đo chiều cao của ngọn núi bằng định lí sin",
+          "source": "Đề thi HSG & Khảo sát chất lượng Toán 10",
+          "prompt": "Để đo chiều cao của một ngọn núi, hai trắc địa viên đứng tại hai vị trí $A$ và $B$ trên mặt đất cách nhau $400\\text{ m}$ (cùng nằm trên mặt phẳng thẳng đứng qua đỉnh núi $C$). Góc nâng nhìn đỉnh núi từ $A$ là $\\alpha = 32^\\circ$ và từ $B$ là $\\beta = 40^\\circ$. Chân núi nằm cùng phía với $B$ so với $A$. Xét tính Đúng/Sai của các khẳng định sau:",
           "subItems": [
             {
               "id": "a",
-              "text": "Có thể đặt $a = 3k, b = 5k, c = 7k$ với $k > 0$.",
+              "text": "Góc $\\widehat{ACB} = \\beta - \\alpha = 8^\\circ$.",
               "correctAnswer": true,
-              "explanation": "Đúng theo tính chất dãy tỉ số bằng nhau."
+              "explanation": "Góc ngoài tam giác: $\\beta = \\alpha + \\widehat{ACB} \\implies \\widehat{ACB} = 40^\\circ - 32^\\circ = 8^\\circ$."
             },
             {
               "id": "b",
-              "text": "Góc lớn nhất của tam giác là góc $\\widehat{C}$.",
+              "text": "Áp dụng định lí sin cho tam giác $ABC$: $\\frac{BC}{\\sin 32^\\circ} = \\frac{AB}{\\sin 8^\\circ}$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $c$ là cạnh lớn nhất."
+              "explanation": "Đúng theo định lí sin: $\\frac{BC}{\\sin A} = \\frac{AB}{\\sin C}$."
             },
             {
               "id": "c",
-              "text": "$\\cos C = -\\frac{1}{2}$.",
+              "text": "Khoảng cách từ vị trí $B$ đến đỉnh núi $C$ xấp xỉ bằng $1523\\text{ m}$.",
               "correctAnswer": true,
-              "explanation": "Đúng vì $\\cos C = \\frac{9k^2 + 25k^2 - 49k^2}{2(3k)(5k)} = \\frac{-15k^2}{30k^2} = -\\frac{1}{2}$."
+              "explanation": "$BC = \\frac{400 \\cdot \\sin 32^\\circ}{\\sin 8^\\circ} \\approx \\frac{400 \\cdot 0.5299}{0.1392} \\approx 1523\\text{ m}$."
             },
             {
               "id": "d",
-              "text": "Số đo góc $\\widehat{C}$ bằng $150^\\circ$.",
+              "text": "Chiều cao của ngọn núi so với mặt đất nhỏ hơn $900\\text{ m}$.",
               "correctAnswer": false,
-              "explanation": "Sai vì $\\cos C = -\\frac{1}{2} \\Rightarrow \\widehat{C} = 120^\\circ$ chứ không phải $150^\\circ$."
+              "explanation": "Chiều cao núi $h = BC \\cdot \\sin 40^\\circ \\approx 1523 \\cdot 0.6428 \\approx 979\\text{ m} > 900\\text{ m}$."
             }
-          ]
+          ],
+          "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <polygon points=\"385,55 315,195 440,195\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"1.5\"/> <line x1=\"385\" y1=\"55\" x2=\"385\" y2=\"195\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/> <circle cx=\"385\" cy=\"55\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"55\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Đỉnh núi)</text> <circle cx=\"385\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"395\" y=\"205\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <line x1=\"255\" y1=\"195\" x2=\"385\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"90\" y1=\"195\" x2=\"385\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <path d=\"M 290 195 A 35 35 0 0 0 279 169\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"285\" y=\"185\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">45°</text> <path d=\"M 130 195 A 40 40 0 0 0 124 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"135\" y=\"187\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text> <text x=\"150\" y=\"220\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 200 m</text> <circle cx=\"90\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"80\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"255\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"245\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"405\" y=\"130\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = CD</text> </svg>"
         }
       ],
       "shortAnswerQuestions": [
@@ -9863,19 +9750,2296 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "explanation": "Cạnh huyền $a = \\sqrt{15^2 + 20^2} = 25$. Diện tích $S = \\frac{1}{2}(15)(20) = 150$. Chiều cao $h = \\frac{2S}{a} = \\frac{300}{25} = 12$."
         },
         {
-          "id": "ai-sa-10.6.9",
-      "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Mặt đất --> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <!-- Tòa nhà cao tầng tại D(380, 195) --> <rect x=\"360\" y=\"45\" width=\"40\" height=\"150\" fill=\"#1e293b\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <!-- Cửa sổ tòa nhà --> <rect x=\"368\" y=\"60\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"60\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"85\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"85\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"110\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"110\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"368\" y=\"135\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <rect x=\"384\" y=\"135\" width=\"8\" height=\"10\" fill=\"#38bdf8\" opacity=\"0.7\"/> <!-- Đỉnh C và chân D --> <circle cx=\"380\" cy=\"45\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"45\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Nóc nhà)</text> <circle cx=\"380\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"210\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <!-- Tia ngắm từ B và A --> <line x1=\"260\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"100\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <!-- Cung góc nâng 60 độ tại B --> <path d=\"M 290 195 A 30 30 0 0 0 276 174\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"288\" y=\"186\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <!-- Cung góc nâng 30 độ tại A --> <path d=\"M 140 195 A 40 40 0 0 0 134 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"145\" y=\"188\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text> <!-- Kích thước AB = 60m --> <line x1=\"100\" y1=\"215\" x2=\"260\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"100\" y1=\"210\" x2=\"100\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <line x1=\"260\" y1=\"210\" x2=\"260\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <text x=\"160\" y=\"230\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 60 m</text> <!-- Điểm A và B --> <circle cx=\"100\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"90\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"260\" cy=\"195\" r=\"5\" fill=\"#38bdf8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/> <text x=\"250\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"410\" y=\"120\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = ?</text> </svg>",
-          "badge": "Luyện thêm TLN 9 - Khoảng cách ngọn hải đăng",
-          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "prompt": "Hai người cùng quan sát một tòa nhà cao từ hai điểm $A$ và $B$ cách nhau $60$ m. Biết từ $A$ và $B$ nhìn thấy đỉnh tòa nhà dưới góc $30^\\circ$ và $60^\\circ$ ($A, B$ và chân tòa nhà thẳng hàng). Tính chiều cao của tòa nhà (lấy kết quả chính xác dưới dạng $a\\sqrt{3}$, hãy điền giá trị $a$).",
-          "correctAnswer": "30",
+          "id": "ai-sa-10.6.prac3",
+          "badge": "Trả lời ngắn 6 - Đo chiều cao tòa nhà cao tầng từ hai vị trí",
+          "source": "Toán 10 KNTT Bài 6 Ứng dụng",
+          "prompt": "Hai người quan sát đỉnh một tòa nhà cao tầng từ hai vị trí $A$ và $B$ cách nhau $60\\text{ m}$ trên mặt đất bằng phẳng (cùng thẳng hàng với chân tòa nhà $H$). Góc quan sát đỉnh tháp $T$ từ $A$ là $30^\\circ$, từ $B$ là $45^\\circ$ ($B$ ở gần tòa nhà hơn $A$). Hỏi chiều cao tòa nhà $TH$ là bao nhiêu mét? (Làm tròn kết quả đến hàng đơn vị).",
+          "correctAnswer": "82",
           "acceptableAnswers": [
-            "30"
+            "82",
+            "82 m"
           ],
-          "explanation": "Góc ngoài tại $B$ là $60^\\circ$, góc $\\widehat{A} = 30^\\circ \\Rightarrow \\widehat{ACB} = 60^\\circ - 30^\\circ = 30^\\circ$. Tam giác $ABC$ cân tại $B \\Rightarrow BC = AB = 60$ m. Chiều cao $h = BC \\sin 60^\\circ = 60 \\cdot \\frac{\\sqrt{3}}{2} = 30\\sqrt{3}$ m. Vậy $a = 30$."
+          "explanation": "Trong tam giác vuông $THB$: $HB = TH / \\tan 45^\\circ = TH$. Trong tam giác vuông $THA$: $HA = TH / \\tan 30^\\circ = TH \\sqrt{3}$. Ta có: $HA - HB = AB = 60 \\implies TH(\\sqrt{3} - 1) = 60 \\implies TH = \\frac{60}{\\sqrt{3} - 1} = 30(\\sqrt{3} + 1) \\approx 30 \\times 2.732 = 81.96\\text{ m} \\approx 82\\text{ m}$.",
+          "svgDiagram": "<svg viewBox=\"0 0 460 240\" class=\"w-full max-w-md mx-auto h-auto rounded-xl shadow-lg border border-slate-700/60 bg-slate-900/95 my-2.5\" xmlns=\"http://www.w3.org/2000/svg\"> <line x1=\"30\" y1=\"195\" x2=\"430\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"2\"/> <rect x=\"360\" y=\"45\" width=\"40\" height=\"150\" fill=\"#1e293b\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/> <circle cx=\"380\" cy=\"45\" r=\"4.5\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"45\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">C (Nóc nhà)</text> <circle cx=\"380\" cy=\"195\" r=\"4\" fill=\"#f59e0b\"/> <text x=\"390\" y=\"210\" fill=\"#f59e0b\" font-size=\"14\" font-weight=\"bold\">D</text> <line x1=\"260\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <line x1=\"100\" y1=\"195\" x2=\"380\" y2=\"45\" stroke=\"#38bdf8\" stroke-width=\"2\"/> <path d=\"M 290 195 A 30 30 0 0 0 276 174\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"288\" y=\"186\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">60°</text> <path d=\"M 140 195 A 40 40 0 0 0 134 175\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <text x=\"145\" y=\"188\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text> <text x=\"160\" y=\"220\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"600\">AB = 60 m</text> <circle cx=\"100\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"90\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text> <circle cx=\"260\" cy=\"195\" r=\"5\" fill=\"#38bdf8\"/> <text x=\"250\" y=\"190\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text> <text x=\"410\" y=\"120\" fill=\"#f59e0b\" font-size=\"13\" font-weight=\"bold\">h = 30√3 m</text> </svg>"
         }
       ]
     }
   ]
 }
+,
+
+  // ==========================================
+  // BÀI 7: CÁC KHÁI NIỆM MỞ ĐẦU (CHUẨN KNTT 2025)
+  // ==========================================
+  "t10-b7-khai-niem-mo-dau-vector": {
+  "id": "t10-b7-khai-niem-mo-dau-vector",
+  "lessonNumber": 7,
+  "title": "Bài 7: Các khái niệm mở đầu",
+  "bookChapter": "Chương IV: Vectơ",
+  "scenarioTitle": "Tình huống thực tế: Hướng gió, vận tốc máy bay và chuyển động có hướng",
+  "scenarioFrames": [],
+  "interactiveType": "vector",
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Khái niệm vectơ & Ký hiệu",
+      "points": [
+        "• **Định nghĩa**: Vectơ là một đoạn thẳng có hướng (đã chỉ rõ điểm nào là điểm đầu, điểm nào là điểm cuối).\\",
+        "• **Ký hiệu**: Vectơ có điểm đầu $A$, điểm cuối $B$ được kí hiệu là $\\\\vec{AB}$ (đọc là 'vectơ $AB$').\\",
+        "• **Vectơ đơn kí hiệu**: Ngoài ra, người ta còn kí hiệu vectơ bằng các chữ cái in thường có mũi tên ở trên như $\\\\vec{a}, \\\\vec{b}, \\\\vec{x}, \\\\vec{u}, \\\\vec{v}$."
+      ]
+    },
+    {
+      "index": "2",
+      "title": "2. Độ dài của vectơ (Độ lớn)",
+      "points": [
+        "• **Khái niệm**: Độ dài của vectơ $\\\\vec{AB}$ là khoảng cách giữa điểm đầu $A$ và điểm cuối $B$ của vectơ đó.\\",
+        "• **Ký hiệu**: $|\\\\vec{AB}| = AB$.\\",
+        "• Vectơ có độ dài bằng $1$ được gọi là **vectơ đơn vị**."
+      ]
+    },
+    {
+      "index": "3",
+      "title": "3. Giá của vectơ, Hai vectơ cùng phương & Cùng hướng",
+      "points": [
+        "• **Giá của vectơ**: Đường thẳng đi qua điểm đầu và điểm cuối của vectơ được gọi là **giá** của vectơ đó.\\",
+        "• **Hai vectơ cùng phương**: Hai vectơ được gọi là **cùng phương** nếu giá của chúng **song song** hoặc **trùng nhau**.\\",
+        "• **Cùng hướng / Ngược hướng**: Khi hai vectơ đã cùng phương, chúng chỉ có thể **cùng hướng** hoặc **ngược hướng**.\\",
+        "• **Nhận xét quan trọng**: Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\\\vec{AB}$ và $\\\\vec{AC}$ cùng phương."
+      ]
+    },
+    {
+      "index": "4",
+      "title": "4. Hai vectơ bằng nhau",
+      "points": [
+        "• **Định nghĩa**: Hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$ được gọi là **bằng nhau** nếu chúng **cùng hướng** và **có cùng độ dài**.\\",
+        "• **Ký hiệu**: $\\\\vec{a} = \\\\vec{b}$.\\",
+        "• Cho trước điểm $O$ và vectơ $\\\\vec{a}$, luôn tồn tại duy nhất một điểm $A$ sao cho $\\\\vec{OA} = \\\\vec{a}$."
+      ]
+    },
+    {
+      "index": "5",
+      "title": "5. Vectơ-không",
+      "points": [
+        "• **Định nghĩa**: Vectơ có điểm đầu trùng với điểm cuối gọi là **vectơ-không**, kí hiệu là $\\\\vec{0}$. Ví dụ: $\\\\vec{AA} = \\\\vec{BB} = \\\\vec{0}$.\\",
+        "• **Quy ước**: Vectơ $\\\\vec{0}$ có độ dài bằng $0$, tức $|\\\\vec{0}| = 0$. Vectơ $\\\\vec{0}$ **cùng phương, cùng hướng với mọi vectơ**."
+      ]
+    }
+  ],
+  "tips": [
+    "Muốn hai vectơ cùng phương thì giá của chúng phải song song hoặc trùng nhau.",
+    "Hai vectơ bằng nhau bắt buộc phải thỏa mãn 2 điều kiện: CÙNG HƯỚNG và CÙNG ĐỘ DÀI. Cùng độ dài nhưng khác hướng thì KHÔNG bằng nhau!",
+    "Số vectơ khác $\\vec{0}$ tạo bởi $n$ điểm phân biệt luôn bằng $n(n - 1)$ (chỉnh hợp chập 2 của $n$ phần tử)."
+  ],
+  "traps": [
+    "Bẫy nhầm lẫn: Nhầm giữa 'đoạn thẳng' và 'vectơ': Đoạn thẳng $AB = BA$, nhưng vectơ $\\vec{AB}$ và $\\vec{BA}$ là hai vectơ ngược hướng nhau!",
+    "Bẫy vectơ-không: Quên rằng vectơ $\\vec{0}$ cùng phương, cùng hướng với mọi vectơ theo quy ước toán học."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.7.1",
+      "badge": "Nhận biết - Khái niệm vectơ",
+      "source": "SGK Toán 10 KNTT Bài 7",
+      "question": "Khẳng định nào sau đây là ĐÚNG về khái niệm vectơ?",
+      "options": [
+        "Vectơ là một đoạn thẳng có hướng.",
+        "Vectơ là một đường thẳng có hướng.",
+        "Vectơ là một tia trong mặt phẳng.",
+        "Vectơ là khoảng cách giữa hai điểm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa SGK: Vectơ là một đoạn thẳng có hướng (chỉ rõ điểm đầu và điểm cuối)."
+    },
+    {
+      "id": "quiz-10.7.2",
+      "badge": "Nhận biết - Điểm đầu và điểm cuối của vectơ",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Vectơ $\\vec{MN}$ có điểm đầu và điểm cuối lần lượt là:",
+      "options": [
+        "Điểm đầu là $M$, điểm cuối là $N$.",
+        "Điểm đầu là $N$, điểm cuối là $M$.",
+        "Điểm đầu là $M$, điểm cuối không xác định.",
+        "Cả $M$ và $N$ đều là điểm đầu."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ký hiệu $\\vec{MN}$ quy ước chữ cái viết trước là điểm đầu ($M$), chữ cái viết sau là điểm cuối ($N$)."
+    },
+    {
+      "id": "quiz-10.7.3",
+      "badge": "Nhận biết - Kí hiệu độ dài vectơ",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Độ dài của vectơ $\\vec{AB}$ được kí hiệu là:",
+      "options": [
+        "$|\\vec{AB}|$",
+        "$\\vec{|AB|}$",
+        "$(\\vec{AB})$",
+        "$||AB||$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ dài của vectơ $\\vec{AB}$ kí hiệu là $|\\vec{AB}|$ và chính bằng khoảng cách $AB$ giữa hai điểm $A$ và $B$."
+    },
+    {
+      "id": "quiz-10.7.4",
+      "badge": "Thông hiểu - Hai vectơ cùng phương",
+      "source": "Đề kiểm tra định kì Toán 10 Chuyên đề Vectơ",
+      "question": "Hai vectơ được gọi là cùng phương khi và chỉ khi:",
+      "options": [
+        "Giá của chúng song song hoặc trùng nhau.",
+        "Giá của chúng cắt nhau.",
+        "Độ dài của chúng bằng nhau.",
+        "Chúng cùng hướng với nhau."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau."
+    },
+    {
+      "id": "quiz-10.7.5",
+      "badge": "Nhận biết - Tính chất vectơ-không",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Mệnh đề nào sau đây là SAI khi nói về vectơ-không $\\vec{0}$?",
+      "options": [
+        "Vectơ $\\vec{0}$ có độ dài bằng $1$.",
+        "Vectơ $\\vec{0}$ cùng phương với mọi vectơ.",
+        "Vectơ $\\vec{0}$ có điểm đầu trùng với điểm cuối.",
+        "Vectơ $\\vec{0}$ cùng hướng với mọi vectơ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vectơ-không có độ dài bằng $0$ ($|\\vec{0}| = 0$), không phải bằng $1$."
+    },
+    {
+      "id": "quiz-10.7.6",
+      "badge": "Thông hiểu - Ba điểm thẳng hàng",
+      "source": "Đề thi khảo sát chất lượng Toán 10",
+      "question": "Cho ba điểm phân biệt $A, B, C$. Điều kiện cần và đủ để ba điểm $A, B, C$ thẳng hàng là:",
+      "options": [
+        "$\\vec{AB}$ và $\\vec{AC}$ cùng phương.",
+        "$|\\vec{AB}| = |\\vec{AC}|$.",
+        "$\\vec{AB} = \\vec{AC}$.",
+        "$\\vec{AB}$ và $\\vec{AC}$ cùng hướng."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\vec{AB}$ và $\\vec{AC}$ cùng phương (giá của chúng có chung điểm $A$ nên phải trùng nhau)."
+    },
+    {
+      "id": "quiz-10.7.7",
+      "badge": "Thông hiểu - Hai vectơ bằng nhau",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Hai vectơ $\\vec{a}$ và $\\vec{b}$ được gọi là bằng nhau nếu:",
+      "options": [
+        "Chúng cùng hướng và có cùng độ dài.",
+        "Chúng cùng phương và có cùng độ dài.",
+        "Chúng có cùng độ dài.",
+        "Giá của chúng trùng nhau."
+      ],
+      "correctIndex": 0,
+      "explanation": "Định nghĩa: $\\vec{a} = \\vec{b} \\iff \\vec{a}$ và $\\vec{b}$ cùng hướng và $|\\vec{a}| = |\\vec{b}|$."
+    },
+    {
+      "id": "quiz-10.7.8",
+      "badge": "Thông hiểu - Vectơ trong hình bình hành",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho hình bình hành $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{AB} = \\vec{DC}$",
+        "$\\vec{AB} = \\vec{CD}$",
+        "$\\vec{AD} = \\vec{CB}$",
+        "$\\vec{AC} = \\vec{BD}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong hình bình hành $ABCD$, đoạn thẳng $AB$ song song và bằng đoạn thẳng $DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$. Do đó $\\vec{AB} = \\vec{DC}$."
+    },
+    {
+      "id": "quiz-10.7.9",
+      "badge": "Thông hiểu - Đếm số vectơ tạo từ các điểm",
+      "source": "Đề kiểm tra Toán 10",
+      "question": "Cho 4 điểm phân biệt $A, B, C, D$ trong đó không có ba điểm nào thẳng hàng. Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là hai trong 4 điểm đã cho?",
+      "options": [
+        "$12$",
+        "$6$",
+        "$16$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chọn điểm đầu có 4 cách, chọn điểm cuối khác điểm đầu có 3 cách. Vậy số vectơ khác $\\vec{0}$ là $4 \\times 3 = 12$."
+    },
+    {
+      "id": "quiz-10.7.10",
+      "badge": "Thông hiểu - Vectơ trong tam giác có các trung điểm",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, AC, BC$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\vec{MN}$ có điểm đầu và điểm cuối là các đỉnh của tam giác hoặc các trung điểm đã cho?",
+      "options": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $MN$ là đường trung bình của tam giác $ABC$ nên $MN // BC$ và $MN = BP = PC = \\frac{1}{2}BC$. Các vectơ cùng hướng và cùng độ dài với $\\vec{MN}$ là $\\vec{BP}$ và $\\vec{PC}$. Vậy có đúng 2 vectơ."
+    },
+    {
+      "id": "quiz-10.7.11",
+      "badge": "Thông hiểu - Độ dài vectơ cạnh hình vuông",
+      "source": "Đề thi học kì Toán 10",
+      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a\\sqrt{2}$. Độ dài của vectơ $\\vec{AC}$ bằng:",
+      "options": [
+        "$2a$",
+        "$a\\sqrt{2}$",
+        "$a$",
+        "$4a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong hình vuông $ABCD$, đường chéo $AC = AB\\sqrt{2} = a\\sqrt{2} \\cdot \\sqrt{2} = 2a$. Vậy $|\\vec{AC}| = 2a$."
+    },
+    {
+      "id": "quiz-10.7.12",
+      "badge": "Thông hiểu - Vectơ trong hình thoi",
+      "source": "Bộ đề ôn tập Toán 10",
+      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{ABC} = 60^\\circ$. Độ dài của vectơ $\\vec{AC}$ bằng:",
+      "options": [
+        "$a$",
+        "$a\\sqrt{3}$",
+        "$2a$",
+        "$\\frac{a\\sqrt{3}}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tam giác $ABC$ có $BA = BC = a$ và $\\widehat{B} = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\vec{AC}| = a$."
+    },
+    {
+      "id": "quiz-10.7.13",
+      "badge": "Vận dụng - Lục giác đều và các vectơ bằng nhau",
+      "source": "SGK Toán 10 KNTT Bài 7",
+      "question": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Các vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối lấy từ 7 điểm trên và bằng vectơ $\\vec{AB}$ là:",
+      "options": [
+        "$\\vec{FO}, \\vec{OC}, \\vec{ED}$",
+        "$\\vec{FO}, \\vec{CO}, \\vec{ED}$",
+        "$\\vec{OF}, \\vec{OC}, \\vec{DE}$",
+        "$\\vec{AF}, \\vec{FE}, \\vec{ED}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong lục giác đều $ABCDEF$ tâm $O$, các đoạn thẳng $FO, OC, ED$ đều song song và bằng $AB$, đồng thời các vectơ $\\vec{FO}, \\vec{OC}, \\vec{ED}$ đều có chiều cùng hướng với $\\vec{AB}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
+    },
+    {
+      "id": "quiz-10.7.14",
+      "badge": "Thông hiểu - Hai vectơ đối nhau",
+      "source": "Đề thi thử Toán 10",
+      "question": "Cho đoạn thẳng $AB$ có trung điểm $I$. Cặp vectơ nào sau đây là hai vectơ ngược hướng và có độ dài bằng nhau?",
+      "options": [
+        "$\\vec{IA}$ và $\\vec{IB}$",
+        "$\\vec{AI}$ và $\\vec{IB}$",
+        "$\\vec{IA}$ và $\\vec{BI}$",
+        "$\\vec{AB}$ và $\\vec{IB}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$I$ là trung điểm của $AB$ nên $IA = IB$ và tia $IA$ ngược chiều với tia $IB$, do đó $\\vec{IA}$ và $\\vec{IB}$ là hai vectơ ngược hướng có cùng độ dài."
+    },
+    {
+      "id": "quiz-10.7.15",
+      "badge": "Thông hiểu - Điểm di động tạo vectơ",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho hai điểm phân biệt $A$ và $B$. Có bao nhiêu điểm $M$ thỏa mãn $\\vec{MA} = \\vec{MB}$?",
+      "options": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "Vô số"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nếu $\\vec{MA} = \\vec{MB}$ thì $M$ phải trùng với chính nó, và ngọn của hai vectơ bằng nhau khi chung gốc $M$ thì $A \\equiv B$, trái với giả thiết $A$ và $B$ phân biệt. Vậy không có điểm $M$ nào thỏa mãn."
+    },
+    {
+      "id": "quiz-10.7.16",
+      "badge": "Thông hiểu - Độ dài vectơ tâm hình chữ nhật",
+      "source": "Đề khảo sát chuyên đề Toán 10",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 6, AD = 8$, tâm $O$. Độ dài của vectơ $\\vec{AO}$ bằng:",
+      "options": [
+        "$5$",
+        "$10$",
+        "$7$",
+        "$2.5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường chéo $AC = \\sqrt{AB^2 + AD^2} = \\sqrt{36 + 64} = 10$. Vì $O$ là trung điểm của $AC$ nên $AO = \\frac{1}{2}AC = 5 \\implies |\\vec{AO}| = 5$."
+    },
+    {
+      "id": "quiz-10.7.17",
+      "badge": "Thông hiểu - Hướng của vectơ trên đoạn thẳng",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho đoạn thẳng $AB$ và điểm $C$ nằm giữa hai điểm $A$ và $B$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{CA}$ và $\\vec{CB}$ ngược hướng.",
+        "$\\vec{CA}$ và $\\vec{CB}$ cùng hướng.",
+        "$\\vec{AC}$ và $\\vec{BC}$ cùng hướng.",
+        "$\\vec{CA}$ và $\\vec{AB}$ cùng hướng."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì điểm $C$ nằm giữa $A$ và $B$ nên hai tia $CA$ và $CB$ là hai tia đối nhau, do đó hai vectơ $\\vec{CA}$ và $\\vec{CB}$ ngược hướng nhau."
+    },
+    {
+      "id": "quiz-10.7.18",
+      "badge": "Thông hiểu - Tỉ số độ dài hai vectơ",
+      "source": "SBT Toán 10",
+      "question": "Cho đoạn thẳng $MN = 12$. Điểm $P$ thuộc đoạn $MN$ sao cho $MP = 3PN$. Tỉ số $\\frac{|\\vec{MP}|}{|\\vec{MN}|}$ bằng:",
+      "options": [
+        "$\\frac{3}{4}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $MP + PN = MN \\iff 3PN + PN = 12 \\iff 4PN = 12 \\implies PN = 3, MP = 9$. Do đó $\\frac{|\\vec{MP}|}{|\\vec{MN}|} = \\frac{9}{12} = \\frac{3}{4}$."
+    },
+    {
+      "id": "quiz-10.7.19",
+      "badge": "Vận dụng - Bài toán thực tế vận tốc máy bay",
+      "source": "Ứng dụng Vectơ trong Vật lý & Thực tế",
+      "question": "Một chiếc máy bay bay theo hướng Bắc với vận tốc $600\\text{ km/h}$. Một chiếc máy bay thứ hai bay theo hướng Nam với vận tốc $600\\text{ km/h}$. Biểu diễn vectơ vận tốc của hai máy bay lần lượt là $\\vec{v}_1$ và $\\vec{v}_2$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{v}_1$ và $\\vec{v}_2$ ngược hướng và có cùng độ lớn: $|\\vec{v}_1| = |\\vec{v}_2| = 600\\text{ km/h}$.",
+        "$\\vec{v}_1 = \\vec{v}_2$ vì cả hai đều có vận tốc $600\\text{ km/h}$.",
+        "$\\vec{v}_1$ và $\\vec{v}_2$ không cùng phương vì một chiếc bay lên Bắc, một chiếc bay xuống Nam.",
+        "$\\vec{v}_1$ và $\\vec{v}_2$ vuông góc với nhau."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hướng Bắc và hướng Nam cùng nằm trên đường kinh tuyến (cùng phương) nhưng ngược chiều nhau. Hai máy bay có cùng tốc độ $600\\text{ km/h}$ nên $|\\vec{v}_1| = |\\vec{v}_2|$, do đó $\\vec{v}_1$ và $\\vec{v}_2$ ngược hướng.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <linearGradient id=\"b7grid\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#38bdf8\" stop-opacity=\"0.1\"/>\n      <stop offset=\"100%\" stop-color=\"#818cf8\" stop-opacity=\"0.02\"/>\n    </linearGradient>\n    <marker id=\"arrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"arrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrEmerald\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n  </defs>\n  <rect width=\"100%\" height=\"100%\" fill=\"url(#b7grid)\" rx=\"10\"/>\n  <!-- Trục la bàn Bắc Nam Đông Tây -->\n  <circle cx=\"250\" cy=\"160\" r=\"110\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <circle cx=\"250\" cy=\"160\" r=\"60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/>\n  <line x1=\"250\" y1=\"30\" x2=\"250\" y2=\"290\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"120\" y1=\"160\" x2=\"380\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"250\" y=\"24\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">BẮC (N)</text>\n  <text x=\"250\" y=\"308\" fill=\"#94a3b8\" font-size=\"12\" text-anchor=\"middle\">NAM (S)</text>\n  <text x=\"395\" y=\"164\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">ĐÔNG (E)</text>\n  <text x=\"105\" y=\"164\" fill=\"#94a3b8\" font-size=\"12\" text-anchor=\"end\">TÂY (W)</text>\n  <!-- Vectơ vận tốc máy bay v1 hướng Đông Bắc 45 độ -->\n  <line x1=\"250\" y1=\"160\" x2=\"335\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"3.5\" marker-end=\"url(#arrCyan)\"/>\n  <text x=\"345\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">v₁ = 600 km/h (Đông Bắc 45°)</text>\n  <!-- Vectơ vận tốc gió v_gio hướng Tây -->\n  <line x1=\"250\" y1=\"160\" x2=\"170\" y2=\"160\" stroke=\"#fbbf24\" stroke-width=\"3\" marker-end=\"url(#arrAmber)\"/>\n  <text x=\"160\" y=\"150\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"end\">v_gió = 60 km/h</text>\n  <!-- Vectơ tàu biển v2 hướng Đông -->\n  <line x1=\"250\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#34d399\" stroke-width=\"3\" marker-end=\"url(#arrEmerald)\"/>\n  <text x=\"300\" y=\"185\" fill=\"#34d399\" font-size=\"12\" font-weight=\"bold\">v₂ = 30 hải lý/h</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f8fafc\"/>\n  <text x=\"240\" y=\"178\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"bold\">O</text>\n</svg>"
+    },
+    {
+      "id": "quiz-10.7.20",
+      "badge": "Vận dụng - Bài toán thực tế độ dịch chuyển thuyền buồm",
+      "source": "SGK Toán 10 KNTT Bài 7",
+      "question": "Một chiếc thuyền buồm chạy trên mặt biển theo hướng Đông với vận tốc đều $25\\text{ km/h}$. Sau $2.4$ giờ chạy liên tục, độ dài của vectơ độ dịch chuyển $\\vec{d}$ của thuyền buồm bằng bao nhiêu?",
+      "options": [
+        "$60\\text{ km}$",
+        "$50\\text{ km}$",
+        "$70\\text{ km}$",
+        "$55\\text{ km}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ lớn của vectơ độ dịch chuyển chính là quãng đường đi được theo đường thẳng: $d = v \\times t = 25 \\times 2.4 = 60\\text{ km}$. Vậy $|\\vec{d}| = 60\\text{ km}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border border-sky-700/50 p-3\">\n  <defs>\n    <marker id=\"boatArr\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n  </defs>\n  <!-- Mặt nước hồ phẳng lặng -->\n  <path d=\"M 30 200 Q 150 190 270 200 T 470 200\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <path d=\"M 50 230 Q 170 220 290 230 T 450 230\" fill=\"none\" stroke=\"#0369a1\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <!-- Điểm xuất phát bến thuyền A -->\n  <circle cx=\"80\" cy=\"130\" r=\"6\" fill=\"#f59e0b\"/>\n  <text x=\"75\" y=\"110\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">Bến A (gốc)</text>\n  <!-- Điểm đến B -->\n  <circle cx=\"380\" cy=\"130\" r=\"6\" fill=\"#10b981\"/>\n  <text x=\"375\" y=\"110\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">Bến B (ngọn)</text>\n  <!-- Vectơ độ dịch chuyển AB -->\n  <line x1=\"80\" y1=\"130\" x2=\"380\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"4\" marker-end=\"url(#boatArr)\"/>\n  <!-- Thông số -->\n  <text x=\"230\" y=\"155\" fill=\"#e0f2fe\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">vec(AB): v = 25 km/h, t = 2.4 h</text>\n  <text x=\"230\" y=\"175\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">|vec(d)| = |vec(AB)| = 25 × 2.4 = 60 km</text>\n  <!-- Hướng di chuyển -->\n  <text x=\"430\" y=\"135\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Hướng Đông -></text>\n</svg>"
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.7.1",
+      "badge": "Đúng / Sai 1 - Khảo sát các điểm thẳng hàng",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho ba điểm phân biệt $A, B, C$ thẳng hàng, trong đó điểm $B$ nằm giữa hai điểm $A$ và $C$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hai vectơ $\\vec{BA}$ và $\\vec{BC}$ là hai vectơ ngược hướng.",
+          "correctAnswer": true,
+          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên hai tia $BA$ và $BC$ đối nhau, suy ra $\\vec{BA}$ và $\\vec{BC}$ ngược hướng."
+        },
+        {
+          "id": "b",
+          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{AC}$ là hai vectơ cùng hướng.",
+          "correctAnswer": true,
+          "explanation": "Cùng xuất phát từ $A$ đi qua $B$ rồi đến $C$ nên hai tia $AB$ và $AC$ trùng nhau, do đó $\\vec{AB}$ và $\\vec{AC}$ cùng hướng."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài của vectơ $\\vec{AC}$ bằng tổng độ dài $|\\vec{AB}| + |\\vec{BC}|$.",
+          "correctAnswer": true,
+          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên $AC = AB + BC \\implies |\\vec{AC}| = |\\vec{AB}| + |\\vec{BC}|.$"
+        },
+        {
+          "id": "d",
+          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{BC}$ ngược hướng với nhau.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{AB}$ và $\\vec{BC}$ đều hướng từ trái sang phải dọc theo đường thẳng nên chúng cùng hướng, không phải ngược hướng."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.2",
+      "badge": "Đúng / Sai 2 - Vectơ trong hình bình hành",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hình bình hành $ABCD$ có tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} = \\vec{DC}$.",
+          "correctAnswer": true,
+          "explanation": "Do $AB // DC$ và $AB = DC$, hướng từ $A \\to B$ trùng hướng từ $D \\to C$ nên $\\vec{AB} = \\vec{DC}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AD} = \\vec{BC}$.",
+          "correctAnswer": true,
+          "explanation": "Do $AD // BC$ và $AD = BC$, hướng từ $A \\to D$ trùng hướng từ $B \\to C$ nên $\\vec{AD} = \\vec{BC}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{OA} = \\vec{OC}$.",
+          "correctAnswer": false,
+          "explanation": "$O$ là trung điểm $AC$ nên $\\vec{OA}$ và $\\vec{OC}$ ngược hướng, suy ra $\\vec{OA} = -\\vec{OC} \\ne \\vec{OC}$."
+        },
+        {
+          "id": "d",
+          "text": "$|\\vec{AC}| = |\\vec{BD}|$.",
+          "correctAnswer": false,
+          "explanation": "Trong hình bình hành nói chung, hai đường chéo $AC$ và $BD$ không bằng nhau (chỉ bằng nhau khi là hình chữ nhật)."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.3",
+      "badge": "Đúng / Sai 3 - Vectơ trong hình lục giác đều",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Các vectơ $\\vec{AB}, \\vec{FO}, \\vec{OC}, \\vec{ED}$ bằng nhau.",
+          "correctAnswer": true,
+          "explanation": "Các đoạn thẳng này đều song song, có độ dài bằng cạnh lục giác và cùng hướng sang phải."
+        },
+        {
+          "id": "b",
+          "text": "Có tất cả 3 vectơ khác $\\vec{0}$ có điểm đầu $O$ và bằng $\\vec{AB}$.",
+          "correctAnswer": false,
+          "explanation": "Chỉ có duy nhất 1 vectơ là $\\vec{OC}$ có điểm đầu $O$ và bằng $\\vec{AB}$."
+        },
+        {
+          "id": "c",
+          "text": "Hai vectơ $\\vec{OA}$ và $\\vec{OD}$ ngược hướng và có cùng độ dài.",
+          "correctAnswer": true,
+          "explanation": "$O$ là trung điểm của đường chéo chính $AD$ nên $\\vec{OA}$ và $\\vec{OD}$ ngược hướng và $|\\vec{OA}| = |\\vec{OD}| = R$."
+        },
+        {
+          "id": "d",
+          "text": "Vectơ $\\vec{AC}$ cùng phương với vectơ $\\vec{FD}$.",
+          "correctAnswer": true,
+          "explanation": "Tứ giác $ACDF$ là hình chữ nhật nên $AC // FD$, do đó $\\vec{AC}$ cùng phương với $\\vec{FD}$."
+        }
+      ],
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
+    },
+    {
+      "id": "tf-10.7.4",
+      "badge": "Đúng / Sai 4 - Vectơ đường trung bình tam giác",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$. Lấy điểm $P$ đối xứng với $M$ qua $N$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hai vectơ $\\vec{MN}$ và $\\vec{BC}$ cùng hướng.",
+          "correctAnswer": true,
+          "explanation": "$MN$ là đường trung bình của $\\triangle ABC$ nên $MN // BC$ và $\\vec{MN}$ cùng hướng $\\vec{BC}$."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài $|\\vec{MN}| = \\frac{1}{2}|\\vec{BC}|$.",
+          "correctAnswer": true,
+          "explanation": "$MN = \\frac{1}{2}BC$ nên $|\\vec{MN}| = \\frac{1}{2}|\\vec{BC}|.$"
+        },
+        {
+          "id": "c",
+          "text": "Tứ giác $BMPN$ là hình thang.",
+          "correctAnswer": false,
+          "explanation": "Tứ giác $AMCP$ có $N$ là trung điểm của $AC$ và $MP$ nên $AMCP$ là hình bình hành $\\implies CP // AM$ và $CP = AM = MB$, do đó $MBCP$ là hình bình hành, không phải chỉ là hình thang."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{MP} = \\vec{BC}$.",
+          "correctAnswer": true,
+          "explanation": "$MP = 2MN = BC$ và $MP // BC$, cùng hướng sang phải nên $\\vec{MP} = \\vec{BC}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.5",
+      "badge": "Đúng / Sai 5 - Tính chất vectơ-không và vectơ đơn vị",
+      "source": "Đề kiểm tra định kì Toán 10",
+      "prompt": "Xét tính Đúng/Sai của các mệnh đề lý thuyết sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Vectơ $\\vec{0}$ cùng hướng với mọi vectơ.",
+          "correctAnswer": true,
+          "explanation": "Theo quy ước SGK Toán 10: Vectơ-không cùng phương, cùng hướng với mọi vectơ."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $|\\vec{a}| = |\\vec{b}|$ thì chắc chắn $\\vec{a} = \\vec{b}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì hai vectơ có thể cùng độ dài nhưng khác hướng (hoặc không cùng phương)."
+        },
+        {
+          "id": "c",
+          "text": "Mọi vectơ có độ dài bằng $1$ đều được gọi là vectơ đơn vị.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa vectơ đơn vị."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $\\vec{a} = \\vec{b}$ thì giá của $\\vec{a}$ và giá của $\\vec{b}$ phải trùng nhau.",
+          "correctAnswer": false,
+          "explanation": "Sai vì giá của hai vectơ bằng nhau có thể song song với nhau."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.6",
+      "badge": "Đúng / Sai 6 - Vectơ trong hình chữ nhật",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hình chữ nhật $ABCD$ có tâm $O$, $AB = 3, AD = 4$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài vectơ $|\\vec{AC}| = 5$.",
+          "correctAnswer": true,
+          "explanation": "$AC = \\sqrt{3^2 + 4^2} = 5 \\implies |\\vec{AC}| = 5$."
+        },
+        {
+          "id": "b",
+          "text": "Hai vectơ $\\vec{OA}$ và $\\vec{OC}$ có độ dài bằng nhau nhưng ngược hướng.",
+          "correctAnswer": true,
+          "explanation": "$O$ là trung điểm $AC$ nên $|\\vec{OA}| = |\\vec{OC}| = 2.5$ và $\\vec{OA}$ ngược hướng $\\vec{OC}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{AB} = \\vec{CD}$.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{AB}$ và $\\vec{CD}$ ngược hướng nhau, do đó $\\vec{AB} = -\\vec{CD} \\ne \\vec{CD}$."
+        },
+        {
+          "id": "d",
+          "text": "Có đúng 4 vectơ có độ dài bằng $5$ mà điểm đầu và điểm cuối là các đỉnh của hình chữ nhật.",
+          "correctAnswer": true,
+          "explanation": "Đó là $\\vec{AC}, \\vec{CA}, \\vec{BD}, \\vec{DB}$ (2 đường chéo, mỗi đường cho 2 vectơ)."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.7",
+      "badge": "Đúng / Sai 7 - Vectơ trong hình thoi cạnh a",
+      "source": "Đề khảo sát HSG Toán 10",
+      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $a$, tâm $O$ và góc $\\widehat{BAD} = 120^\\circ$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tam giác $ABD$ là tam giác đều.",
+          "correctAnswer": false,
+          "explanation": "Tam giác $ABD$ cân tại $A$ có $\\widehat{A} = 120^\\circ$ nên không đều (tam giác $BCD$ mới đều vì $\\widehat{C} = 60^\\circ$)."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài vectơ $|\\vec{BD}| = a\\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "$BD = 2BO = 2 \\cdot a \\sin 60^\\circ = a\\sqrt{3} \\implies |\\vec{BD}| = a\\sqrt{3}$."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài vectơ $|\\vec{AC}| = a$.",
+          "correctAnswer": true,
+          "explanation": "$AC = 2AO = 2 \\cdot a \\cos 60^\\circ = a \\implies |\\vec{AC}| = a$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{BO} = \\vec{OD}$.",
+          "correctAnswer": true,
+          "explanation": "$O$ là trung điểm của $BD$, chiều từ $B \\to O$ cùng chiều $O \\to D$ và $BO = OD$ nên $\\vec{BO} = \\vec{OD}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.7.8",
+      "badge": "Đúng / Sai 8 - Chuyển động máy bay và tàu thủy",
+      "source": "Ứng dụng Toán học trong Hàng hải và Hàng không",
+      "prompt": "Một đài kiểm soát không lưu theo dõi ba phương tiện chuyển động: máy bay $A$ bay theo hướng Bắc với tốc độ $500\\text{ km/h}$; máy bay $B$ bay theo hướng Nam với tốc độ $500\\text{ km/h}$; tàu thủy $C$ chạy theo hướng Đông với tốc độ $40\\text{ km/h}$. Gọi $\\vec{v}_A, \\vec{v}_B, \\vec{v}_C$ lần lượt là các vectơ vận tốc. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hai vectơ vận tốc $\\vec{v}_A$ và $\\vec{v}_B$ cùng phương.",
+          "correctAnswer": true,
+          "explanation": "Hướng Bắc và hướng Nam cùng nằm trên đường thẳng kinh tuyến Bắc - Nam nên hai vectơ cùng phương."
+        },
+        {
+          "id": "b",
+          "text": "Hai vectơ vận tốc $\\vec{v}_A$ và $\\vec{v}_B$ bằng nhau vì có cùng tốc độ $500\\text{ km/h}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì chúng ngược hướng nhau, do đó $\\vec{v}_A = -\\vec{v}_B \\ne \\vec{v}_B$."
+        },
+        {
+          "id": "c",
+          "text": "Vectơ vận tốc $\\vec{v}_C$ vuông góc với phương của vectơ vận tốc $\\vec{v}_A$.",
+          "correctAnswer": true,
+          "explanation": "Hướng Đông vuông góc với hướng Bắc."
+        },
+        {
+          "id": "d",
+          "text": "Sau 1.5 giờ, độ dài vectơ độ dịch chuyển của tàu thủy $C$ là $60\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "$|\\vec{d}_C| = 40 \\times 1.5 = 60\\text{ km}$."
+        }
+      ],
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <linearGradient id=\"b7grid\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#38bdf8\" stop-opacity=\"0.1\"/>\n      <stop offset=\"100%\" stop-color=\"#818cf8\" stop-opacity=\"0.02\"/>\n    </linearGradient>\n    <marker id=\"arrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"arrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrEmerald\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n  </defs>\n  <rect width=\"100%\" height=\"100%\" fill=\"url(#b7grid)\" rx=\"10\"/>\n  <!-- Trục la bàn Bắc Nam Đông Tây -->\n  <circle cx=\"250\" cy=\"160\" r=\"110\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <circle cx=\"250\" cy=\"160\" r=\"60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/>\n  <line x1=\"250\" y1=\"30\" x2=\"250\" y2=\"290\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"120\" y1=\"160\" x2=\"380\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"250\" y=\"24\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">BẮC (N)</text>\n  <text x=\"250\" y=\"308\" fill=\"#94a3b8\" font-size=\"12\" text-anchor=\"middle\">NAM (S)</text>\n  <text x=\"395\" y=\"164\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">ĐÔNG (E)</text>\n  <text x=\"105\" y=\"164\" fill=\"#94a3b8\" font-size=\"12\" text-anchor=\"end\">TÂY (W)</text>\n  <!-- Vectơ vận tốc máy bay v1 hướng Đông Bắc 45 độ -->\n  <line x1=\"250\" y1=\"160\" x2=\"335\" y2=\"75\" stroke=\"#38bdf8\" stroke-width=\"3.5\" marker-end=\"url(#arrCyan)\"/>\n  <text x=\"345\" y=\"70\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">v₁ = 600 km/h (Đông Bắc 45°)</text>\n  <!-- Vectơ vận tốc gió v_gio hướng Tây -->\n  <line x1=\"250\" y1=\"160\" x2=\"170\" y2=\"160\" stroke=\"#fbbf24\" stroke-width=\"3\" marker-end=\"url(#arrAmber)\"/>\n  <text x=\"160\" y=\"150\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"end\">v_gió = 60 km/h</text>\n  <!-- Vectơ tàu biển v2 hướng Đông -->\n  <line x1=\"250\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#34d399\" stroke-width=\"3\" marker-end=\"url(#arrEmerald)\"/>\n  <text x=\"300\" y=\"185\" fill=\"#34d399\" font-size=\"12\" font-weight=\"bold\">v₂ = 30 hải lý/h</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f8fafc\"/>\n  <text x=\"240\" y=\"178\" fill=\"#cbd5e1\" font-size=\"12\" font-weight=\"bold\">O</text>\n</svg>"
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.7.1",
+      "badge": "Trả lời ngắn 1 - Đếm số vectơ tạo bởi 5 điểm",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho 5 điểm phân biệt $A, B, C, D, E$ trong đó không có ba điểm nào thẳng hàng. Hỏi có tất cả bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là hai trong 5 điểm đã cho?",
+      "correctAnswer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "explanation": "Số vectơ khác $\\vec{0}$ là $5 \\times (5 - 1) = 20$ vectơ."
+    },
+    {
+      "id": "sa-10.7.2",
+      "badge": "Trả lời ngắn 2 - Vectơ cùng phương trong hình bình hành",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ cùng phương với vectơ $\\vec{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành?",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Các vectơ cùng phương với $\\vec{AB}$ có giá song song hoặc trùng với $AB$, đó là các vectơ nằm trên đường thẳng $AB$ và $CD$: $\\vec{BA}, \\vec{CD}, \\vec{DC}$ (và chính $\\vec{AB}$ cùng 2 vectơ $\\vec{AB}, \\vec{BA}$ trên cạnh kia). Tổng cộng các vectơ khác $\\vec{0}$ cùng phương với $\\vec{AB}$ là: $\\vec{AB}, \\vec{BA}, \\vec{CD}, \\vec{DC}$. Tuy nhiên nếu tính cả các vectơ trên 2 giá này (không tính $\\vec{AB}$ nếu đề hỏi khác $\\vec{AB}$), tổng số vectơ có điểm đầu, cuối là đỉnh cùng phương với $\\vec{AB}$ là: $\\vec{AB}, \\vec{BA}, \\vec{CD}, \\vec{DC}$ (gồm 4 vectơ) hoặc nếu tính cả đoạn chéo thì không song song. Vậy có 4 vectơ (tính cả $\\vec{AB}$ là 4)."
+    },
+    {
+      "id": "sa-10.7.3",
+      "badge": "Trả lời ngắn 3 - Độ dài vectơ cạnh tam giác đều",
+      "source": "Đề kiểm tra 15 phút Toán 10",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $8$. Độ dài của vectơ $\\vec{BC}$ bằng bao nhiêu?",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "explanation": "$|\\vec{BC}| = BC = 8$."
+    },
+    {
+      "id": "sa-10.7.4",
+      "badge": "Trả lời ngắn 4 - Độ dài vectơ đường chéo hình chữ nhật",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 6\\text{ cm}$ và $BC = 8\\text{ cm}$. Tính độ dài của vectơ $\\vec{AC}$ (theo đơn vị cm).",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10 cm"
+      ],
+      "explanation": "$|\\vec{AC}| = AC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+    },
+    {
+      "id": "sa-10.7.5",
+      "badge": "Trả lời ngắn 5 - Độ dài vectơ từ tâm hình vuông",
+      "source": "SBT Toán 10",
+      "prompt": "Cho hình vuông $ABCD$ có tâm $O$ và cạnh bằng $4\\sqrt{2}$. Tính độ dài của vectơ $\\vec{OA}$.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "explanation": "Đường chéo $AC = AB\\sqrt{2} = 4\\sqrt{2} \\cdot \\sqrt{2} = 8$. Vì $O$ là trung điểm $AC$ nên $OA = \\frac{8}{2} = 4 \\implies |\\vec{OA}| = 4$."
+    },
+    {
+      "id": "sa-10.7.6",
+      "badge": "Trả lời ngắn 6 - Độ dài vectơ trong hình thoi góc 60 độ",
+      "source": "Đề kiểm tra Toán 10 KNTT",
+      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $6$ và góc $\\widehat{BAD} = 60^\\circ$. Tính độ dài của vectơ $\\vec{BD}$.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Tam giác $ABD$ cân tại $A$ có $\\widehat{BAD} = 60^\\circ$ nên là tam giác đều $\\implies BD = AB = 6 \\implies |\\vec{BD}| = 6$."
+    },
+    {
+      "id": "sa-10.7.7",
+      "badge": "Trả lời ngắn 7 - Tỉ số độ dài vectơ trên đoạn thẳng",
+      "source": "Sách bài tập Toán 10",
+      "prompt": "Cho đoạn thẳng $AB = 15$. Điểm $M$ thuộc đoạn $AB$ sao cho $MA = 6$. Tính tỉ số độ dài $\\frac{|\\vec{MA}|}{|\\vec{MB}|}$.",
+      "correctAnswer": "0.67",
+      "acceptableAnswers": [
+        "0.67",
+        "2/3",
+        "0,67"
+      ],
+      "explanation": "$MB = AB - MA = 15 - 6 = 9$. Tỉ số $\\frac{|\\vec{MA}|}{|\\vec{MB}|} = \\frac{6}{9} = \\frac{2}{3} \\approx 0.67$."
+    },
+    {
+      "id": "sa-10.7.8",
+      "badge": "Trả lời ngắn 8 - Độ dài đường trung tuyến tam giác vuông",
+      "source": "Đề thi khảo sát Toán 10",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 9, AC = 12$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\vec{AM}$.",
+      "correctAnswer": "7.5",
+      "acceptableAnswers": [
+        "7.5",
+        "15/2",
+        "7,5"
+      ],
+      "explanation": "Cạnh huyền $BC = \\sqrt{9^2 + 12^2} = 15$. Trung tuyến ứng với cạnh huyền $AM = \\frac{BC}{2} = 7.5 \\implies |\\vec{AM}| = 7.5$."
+    },
+    {
+      "id": "sa-10.7.9",
+      "badge": "Trả lời ngắn 9 - Số vectơ tạo bởi các đỉnh hình bát giác đều",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là các đỉnh của một hình bát giác đều (hình 8 cạnh đều)?",
+      "correctAnswer": "56",
+      "acceptableAnswers": [
+        "56"
+      ],
+      "explanation": "Hình bát giác đều có 8 đỉnh. Số vectơ khác $\\vec{0}$ là: $A_8^2 = 8 \\times 7 = 56$."
+    },
+    {
+      "id": "sa-10.7.10",
+      "badge": "Trả lời ngắn 10 - Vectơ bằng nhau trong hình lục giác đều",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\vec{AB}$ có điểm đầu và điểm cuối lấy từ 7 điểm $A, B, C, D, E, F, O$ (không tính chính vectơ $\\vec{AB}$)?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "explanation": "Các vectơ khác $\\vec{AB}$ bằng $\\vec{AB}$ là: $\\vec{FO}, \\vec{OC}, \\vec{ED}$. Vậy có đúng 3 vectơ.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
+    },
+    {
+      "id": "sa-10.7.11",
+      "badge": "Trả lời ngắn 11 - Độ dài vectơ đường cao tam giác đều",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $4\\sqrt{3}$. Gọi $H$ là trung điểm của $BC$. Tính độ dài của vectơ $\\vec{AH}$.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Đường cao tam giác đều: $AH = \\frac{a\\sqrt{3}}{2} = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |\\vec{AH}| = 6$."
+    },
+    {
+      "id": "sa-10.7.12",
+      "badge": "Trả lời ngắn 12 - Bài toán thực tế độ dịch chuyển thuyền máy",
+      "source": "Toán học và Đời sống",
+      "prompt": "Một chiếc ca nô xuất phát từ bến $A$ chạy thẳng theo hướng Đông với vận tốc không đổi $32\\text{ km/h}$. Sau 2 giờ 15 phút, ca nô đến bến $B$. Tính độ dài của vectơ độ dịch chuyển $\\vec{AB}$ (theo đơn vị kilômét).",
+      "correctAnswer": "72",
+      "acceptableAnswers": [
+        "72",
+        "72 km"
+      ],
+      "explanation": "Đổi 2 giờ 15 phút $= 2.25$ giờ. Độ dài vectơ độ dịch chuyển: $|\\vec{AB}| = 32 \\times 2.25 = 72\\text{ km}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border border-sky-700/50 p-3\">\n  <defs>\n    <marker id=\"boatArr\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n  </defs>\n  <!-- Mặt nước hồ phẳng lặng -->\n  <path d=\"M 30 200 Q 150 190 270 200 T 470 200\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <path d=\"M 50 230 Q 170 220 290 230 T 450 230\" fill=\"none\" stroke=\"#0369a1\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <!-- Điểm xuất phát bến thuyền A -->\n  <circle cx=\"80\" cy=\"130\" r=\"6\" fill=\"#f59e0b\"/>\n  <text x=\"75\" y=\"110\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">Bến A (gốc)</text>\n  <!-- Điểm đến B -->\n  <circle cx=\"380\" cy=\"130\" r=\"6\" fill=\"#10b981\"/>\n  <text x=\"375\" y=\"110\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">Bến B (ngọn)</text>\n  <!-- Vectơ độ dịch chuyển AB -->\n  <line x1=\"80\" y1=\"130\" x2=\"380\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"4\" marker-end=\"url(#boatArr)\"/>\n  <!-- Thông số -->\n  <text x=\"230\" y=\"155\" fill=\"#e0f2fe\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">vec(AB): v = 25 km/h, t = 2.4 h</text>\n  <text x=\"230\" y=\"175\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">|vec(d)| = |vec(AB)| = 25 × 2.4 = 60 km</text>\n  <!-- Hướng di chuyển -->\n  <text x=\"430\" y=\"135\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Hướng Đông -></text>\n</svg>"
+    }
+  ]
+},
+
+  // ==========================================
+  // BÀI 8: TỔNG VÀ HIỆU CỦA HAI VECTƠ (CHUẨN KNTT 2025)
+  // ==========================================
+  "t10-b8-tong-va-hieu-vector": {
+  "id": "t10-b8-tong-va-hieu-vector",
+  "lessonNumber": 8,
+  "title": "Bài 8: Tổng và hiệu của hai vectơ",
+  "bookChapter": "Chương IV: Vectơ",
+  "scenarioTitle": "Tình huống thực tế: Hợp lực kéo tàu và chuyển động của ca nô trên dòng sông",
+  "scenarioFrames": [],
+  "interactiveType": "vector",
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Tổng của hai vectơ & Quy tắc ba điểm (Tam giác)",
+      "points": [
+        "• **Định nghĩa**: Cho hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$. Lấy điểm $A$ tùy ý, vẽ $\\\\vec{AB} = \\\\vec{a}$ và $\\\\vec{BC} = \\\\vec{b}$. Vectơ $\\\\vec{AC}$ được gọi là **tổng của hai vectơ** $\\\\vec{a}$ và $\\\\vec{b}$, kí hiệu là $\\\\vec{a} + \\\\vec{b}$.\\",
+        "• **Quy tắc ba điểm**: Với ba điểm $A, B, C$ bất kì, ta luôn có:\\",
+        "$$\\\\vec{AB} + \\\\vec{BC} = \\\\vec{AC}$$\\",
+        "• **Tính chất**: Giao hoán: $\\\\vec{a} + \\\\vec{b} = \\\\vec{b} + \\\\vec{a}$; Kết hợp: $(\\\\vec{a} + \\\\vec{b}) + \\\\vec{c} = \\\\vec{a} + (\\\\vec{b} + \\\\vec{c})$; Cộng với vectơ $\\\\vec{0}$: $\\\\vec{a} + \\\\vec{0} = \\\\vec{a}$."
+      ]
+    },
+    {
+      "index": "2",
+      "title": "2. Quy tắc hình bình hành",
+      "points": [
+        "• Nếu tứ giác $ABCD$ là hình bình hành thì:\\",
+        "$$\\\\vec{AB} + \\\\vec{AD} = \\\\vec{AC}$$\\",
+        "*(Tổng hai vectơ chung gốc bằng vectơ đường chéo xuất phát từ gốc đó)*."
+      ]
+    },
+    {
+      "index": "3",
+      "title": "3. Vectơ đối & Hiệu của hai vectơ",
+      "points": [
+        "• **Vectơ đối**: Vectơ có cùng độ dài và ngược hướng với $\\\\vec{a}$ được gọi là vectơ đối của $\\\\vec{a}$, kí hiệu là $-\\\\vec{a}$. Ta có $\\\\vec{a} + (-\\\\vec{a}) = \\\\vec{0}$. Vectơ đối của $\\\\vec{AB}$ là $\\\\vec{BA} = -\\\\vec{AB}$.\\",
+        "• **Hiệu hai vectơ**: $\\\\vec{a} - \\\\vec{b} = \\\\vec{a} + (-\\\\vec{b})$.\\",
+        "• **Quy tắc hiệu (chung gốc)**: Với ba điểm $O, A, B$ bất kì, ta có:\\",
+        "$$\\\\vec{OB} - \\\\vec{OA} = \\\\vec{AB}$$"
+      ]
+    },
+    {
+      "index": "4",
+      "title": "4. Tính chất trung điểm và trọng tâm",
+      "points": [
+        "• Điểm $I$ là trung điểm của đoạn thẳng $AB$ khi và chỉ khi:\\",
+        "$$\\\\vec{IA} + \\\\vec{IB} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\vec{OA} + \\\\vec{OB} = 2\\\\vec{OI} \\\\quad (\\\\forall O)$$\\",
+        "• Điểm $G$ là trọng tâm tam giác $ABC$ khi và chỉ khi:\\",
+        "$$\\\\vec{GA} + \\\\vec{GB} + \\\\vec{GC} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\vec{OA} + \\\\vec{OB} + \\\\vec{OC} = 3\\\\vec{OG} \\\\quad (\\\\forall O)$$"
+      ]
+    }
+  ],
+  "tips": [
+    "Để cộng hai vectơ nối đuôi nhau: Điểm cuối vectơ này là điểm đầu vectơ kia: vec(A_B_) + vec(_B_C) = vec(AC).",
+    "Để trừ hai vectơ chung gốc: vec(O_B_) - vec(O_A_) = vec(AB) (ngọn trừ gốc, điểm cuối trừ điểm đầu).",
+    "Khi tính độ dài tổng hai vectơ: không bao giờ được cộng độ dài trực tiếp |vec(a) + vec(b)| ≠ |vec(a)| + |vec(b)| trừ khi chúng cùng hướng!"
+  ],
+  "traps": [
+    "Bẫy quy tắc hiệu: Nhiều bạn nhầm lẫn vec(OA) - vec(OB) = vec(AB) (sai, đúng phải là vec(BA)). Nhớ câu thần chú: 'Sau trừ Trước = Trước đến Sau' -> vec(OB) - vec(OA) = vec(AB).",
+    "Bẫy độ lớn hợp lực: Khi hai lực góc 60°, dùng định lý hình bình hành F² = F₁² + F₂² + 2F₁F₂ cos α (dấu cộng, khác dấu trừ trong định lý cosin tam giác)."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.8.1",
+      "badge": "Nhận biết - Quy tắc ba điểm",
+      "source": "SGK Toán 10 KNTT Bài 8",
+      "question": "Cho ba điểm phân biệt $A, B, C$. Đẳng thức nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{AB} + \\vec{BC} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{AC} = \\vec{BC}$",
+        "$\\vec{BA} + \\vec{BC} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{CB} = \\vec{AC}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc ba điểm (quy tắc tam giác): $\\vec{AB} + \\vec{BC} = \\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.8.2",
+      "badge": "Nhận biết - Quy tắc hình bình hành",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho hình bình hành $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{AB} + \\vec{AD} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{AD} = \\vec{BD}$",
+        "$\\vec{AB} + \\vec{AC} = \\vec{AD}$",
+        "$\\vec{BA} + \\vec{BC} = \\vec{AC}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc hình bình hành: Tổng hai vectơ chung gốc bằng vectơ đường chéo $\\vec{AB} + \\vec{AD} = \\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.8.3",
+      "badge": "Nhận biết - Quy tắc hiệu hai vectơ",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho ba điểm phân biệt $O, A, B$. Vectơ $\\vec{OB} - \\vec{OA}$ bằng vectơ nào sau đây?",
+      "options": [
+        "$\\vec{AB}$",
+        "$\\vec{BA}$",
+        "$\\vec{OA}$",
+        "$\\vec{BO}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc trừ hai vectơ chung gốc: $\\vec{OB} - \\vec{OA} = \\vec{AB}$."
+    },
+    {
+      "id": "quiz-10.8.4",
+      "badge": "Nhận biết - Vectơ đối của vectơ",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Vectơ đối của vectơ $\\vec{MN}$ là:",
+      "options": [
+        "$\\vec{NM}$",
+        "$-\\vec{NM}$",
+        "$\\vec{MN}$",
+        "$|\\vec{MN}|$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vectơ đối của $\\vec{MN}$ là $-\\vec{MN} = \\vec{NM}$."
+    },
+    {
+      "id": "quiz-10.8.5",
+      "badge": "Thông hiểu - Tính chất trung điểm",
+      "source": "Đề kiểm tra Toán 10",
+      "question": "Cho đoạn thẳng $AB$ có trung điểm là $I$. Đẳng thức vectơ nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{IA} + \\vec{IB} = \\vec{0}$",
+        "$\\vec{IA} + \\vec{IB} = \\vec{AB}$",
+        "$\\vec{AI} + \\vec{BI} = \\vec{0}$",
+        "$\\vec{IA} - \\vec{IB} = \\vec{0}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $I$ là trung điểm $AB$ nên hai vectơ $\\vec{IA}$ và $\\vec{IB}$ là hai vectơ đối nhau, do đó $\\vec{IA} + \\vec{IB} = \\vec{0}$."
+    },
+    {
+      "id": "quiz-10.8.6",
+      "badge": "Thông hiểu - Tính chất trọng tâm tam giác",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ có trọng tâm $G$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$",
+        "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{AB}$",
+        "$\\vec{AG} + \\vec{BG} + \\vec{CG} = 3\\vec{0}$",
+        "$\\vec{GA} = \\vec{GB} = \\vec{GC}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trọng tâm tam giác $ABC$ luôn thỏa mãn $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$."
+    },
+    {
+      "id": "quiz-10.8.7",
+      "badge": "Thông hiểu - Rút gọn tổng vectơ liên tiếp",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Rút gọn biểu thức vectơ $\\vec{u} = \\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE}$ được kết quả là:",
+      "options": [
+        "$\\vec{AE}$",
+        "$\\vec{EA}$",
+        "$\\vec{0}$",
+        "$\\vec{AD}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng quy tắc nối đuôi ba điểm liên tiếp: $\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE} = (\\vec{AB} + \\vec{BC}) + (\\vec{CD} + \\vec{DE}) = \\vec{AC} + \\vec{CE} = \\vec{AE}$."
+    },
+    {
+      "id": "quiz-10.8.8",
+      "badge": "Thông hiểu - Độ dài tổng hai vectơ vuông góc",
+      "source": "Đề thi học kì 1 Toán 10",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 3, AD = 4$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "options": [
+        "$5$",
+        "$7$",
+        "$1$",
+        "$\\sqrt{7}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc hình bình hành: $\\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài $|\\vec{AB} + \\vec{AD}| = |\\vec{AC}| = \\sqrt{3^2 + 4^2} = 5$."
+    },
+    {
+      "id": "quiz-10.8.9",
+      "badge": "Thông hiểu - Độ dài hiệu hai vectơ tam giác đều",
+      "source": "Đề kiểm tra định kì Toán 10",
+      "question": "Cho tam giác đều $ABC$ cạnh bằng $a$. Độ dài của vectơ $\\vec{AB} - \\vec{AC}$ bằng:",
+      "options": [
+        "$a$",
+        "$a\\sqrt{3}$",
+        "$2a$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc hiệu: $\\vec{AB} - \\vec{AC} = \\vec{CB}$. Do đó $|\\vec{AB} - \\vec{AC}| = |\\vec{CB}| = a$."
+    },
+    {
+      "id": "quiz-10.8.10",
+      "badge": "Thông hiểu - Độ dài tổng hai vectơ tam giác đều",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho tam giác đều $ABC$ có cạnh bằng $a$. Gọi $H$ là trung điểm $BC$. Độ dài của vectơ $\\vec{AB} + \\vec{AC}$ bằng:",
+      "options": [
+        "$a\\sqrt{3}$",
+        "$a$",
+        "$\\frac{a\\sqrt{3}}{2}$",
+        "$2a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $H$ là trung điểm $BC$ nên $\\vec{AB} + \\vec{AC} = 2\\vec{AH}$. Độ dài: $|\\vec{AB} + \\vec{AC}| = 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
+    },
+    {
+      "id": "quiz-10.8.11",
+      "badge": "Thông hiểu - Hiệu hai vectơ hình vuông",
+      "source": "Đề thi thử Toán 10",
+      "question": "Cho hình vuông $ABCD$ cạnh $a$. Độ dài của vectơ $\\vec{AB} - \\vec{DA}$ bằng:",
+      "options": [
+        "$a\\sqrt{2}$",
+        "$a$",
+        "$2a$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $-\\vec{DA} = \\vec{AD}$. Do đó $\\vec{AB} - \\vec{DA} = \\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài: $|\\vec{AC}| = a\\sqrt{2}$."
+    },
+    {
+      "id": "quiz-10.8.12",
+      "badge": "Thông hiểu - Khẳng định sai về tổng vectơ",
+      "source": "Bộ đề Toán 10 KNTT",
+      "question": "Cho hình bình hành $ABCD$ tâm $O$. Khẳng định nào sau đây là SAI?",
+      "options": [
+        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DA} = \\vec{0}$",
+        "$\\vec{OA} + \\vec{OC} = \\vec{0}$",
+        "$\\vec{OB} + \\vec{OD} = \\vec{0}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\vec{OA} + \\vec{OC} = \\vec{0}$ và $\\vec{OB} + \\vec{OD} = \\vec{0}$. Do đó tổng cả 4 vectơ phải bằng $\\vec{0}$, không thể bằng $\\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.8.13",
+      "badge": "Vận dụng - Độ dài tổng hai vectơ góc 120 độ",
+      "source": "Đề thi HSG Toán 10",
+      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{BAD} = 120^\\circ$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "options": [
+        "$a$",
+        "$a\\sqrt{3}$",
+        "$2a$",
+        "$\\frac{a\\sqrt{3}}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc hình bình hành: $\\vec{AB} + \\vec{AD} = \\vec{AC}$. Tam giác $ABC$ cân tại $B$ có $\\widehat{B} = 180^\\circ - 120^\\circ = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\vec{AB} + \\vec{AD}| = a$."
+    },
+    {
+      "id": "quiz-10.8.14",
+      "badge": "Thông hiểu - Điều kiện để tổng hai vectơ bằng 0",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho ba điểm phân biệt $A, B, C$. Nếu $\\vec{AB} + \\vec{AC} = \\vec{0}$ thì:",
+      "options": [
+        "$A$ là trung điểm của đoạn thẳng $BC$.",
+        "$B$ là trung điểm của đoạn thẳng $AC$.",
+        "$C$ là trung điểm của đoạn thẳng $AB$.",
+        "Tam giác $ABC$ là tam giác đều."
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{AB} + \\vec{AC} = \\vec{0} \\iff \\vec{AB} = -\\vec{AC} = \\vec{CA}$, nghĩa là $A$ là trung điểm của đoạn thẳng $BC$."
+    },
+    {
+      "id": "quiz-10.8.15",
+      "badge": "Thông hiểu - Rút gọn biểu thức hiệu",
+      "source": "SBT Toán 10",
+      "question": "Cho 4 điểm $A, B, C, D$. Biểu thức $\\vec{AB} - \\vec{CD} - \\vec{AC}$ bằng vectơ nào sau đây?",
+      "options": [
+        "$\\vec{DB}$",
+        "$\\vec{BD}$",
+        "$\\vec{DA}$",
+        "$\\vec{0}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $\\vec{AB} - \\vec{AC} = \\vec{CB}$. Lại có $-\\vec{CD} = \\vec{DC}$. Vậy $\\vec{CB} + \\vec{DC} = \\vec{DC} + \\vec{CB} = \\vec{DB}$."
+    },
+    {
+      "id": "quiz-10.8.16",
+      "badge": "Vận dụng - Độ dài tổng hai vectơ hình thoi góc 60 độ",
+      "source": "Đề kiểm tra chất lượng Toán 10",
+      "question": "Cho hình thoi $ABCD$ cạnh $a$ có $\\widehat{BAD} = 60^\\circ$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "options": [
+        "$a\\sqrt{3}$",
+        "$a$",
+        "$2a$",
+        "$a\\sqrt{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$. Trong hình thoi có $\\widehat{BAD} = 60^\\circ$, đường chéo $AC = 2 \\cdot a \\cos 30^\\circ = a\\sqrt{3}$."
+    },
+    {
+      "id": "quiz-10.8.17",
+      "badge": "Thông hiểu - Điểm M thỏa mãn đẳng thức vectơ",
+      "source": "Đề thi thử Toán 10",
+      "question": "Cho đoạn thẳng $AB$ và điểm $I$ là trung điểm của $AB$. Điểm $M$ thỏa mãn $\\vec{MA} + \\vec{MB} = \\vec{0}$ thì:",
+      "options": [
+        "$M$ trùng với điểm $I$.",
+        "$M$ trùng với điểm $A$.",
+        "$M$ trùng với điểm $B$.",
+        "Không tồn tại điểm $M$."
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{MA} + \\vec{MB} = \\vec{0} \\iff M$ là trung điểm của $AB$, tức $M \\equiv I$."
+    },
+    {
+      "id": "quiz-10.8.18",
+      "badge": "Thông hiểu - Tổng các vectơ đỉnh đa giác khép kín",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho hình lục giác đều $ABCDEF$. Tổng $\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE} + \\vec{EF} + \\vec{FA}$ bằng:",
+      "options": [
+        "$\\vec{0}$",
+        "$\\vec{AD}$",
+        "$2\\vec{AB}$",
+        "$\\vec{AF}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng các vectơ theo chu trình khép kín: điểm đầu trùng với điểm cuối tạo thành vectơ $\\vec{AA} = \\vec{0}$."
+    },
+    {
+      "id": "quiz-10.8.19",
+      "badge": "Vận dụng cao - Bài toán thực tế hợp lực kéo vật",
+      "source": "Vật lý 10 & Toán 10 KNTT Bài 8",
+      "question": "Hai lực $\\vec{F}_1$ và $\\vec{F}_2$ cùng tác dụng lên một vật tại điểm $O$, góc tạo bởi hai lực là $60^\\circ$. Biết độ lớn $|\\vec{F}_1| = |\\vec{F}_2| = 50\\text{ N}$. Độ lớn của hợp lực $\\vec{F} = \\vec{F}_1 + \\vec{F}_2$ xấp xỉ bằng:",
+      "options": [
+        "$86.6\\text{ N}$",
+        "$100\\text{ N}$",
+        "$50\\text{ N}$",
+        "$70.7\\text{ N}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hợp lực được xác định theo quy tắc hình bình hành: $|\\vec{F}|^2 = F_1^2 + F_2^2 + 2F_1F_2 \\cos 60^\\circ = 50^2 + 50^2 + 2(50)(50)(0.5) = 2500 + 2500 + 2500 = 7500$. Suy ra $|\\vec{F}| = \\sqrt{7500} = 50\\sqrt{3} \\approx 86.6\\text{ N}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"fArrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"fArrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"fArrRose\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n  </defs>\n  <!-- Gốc lực O -->\n  <circle cx=\"80\" cy=\"240\" r=\"6\" fill=\"#f8fafc\"/>\n  <text x=\"65\" y=\"260\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">O (Vật)</text>\n  <!-- Lực F1 (nằm ngang) -->\n  <line x1=\"80\" y1=\"240\" x2=\"300\" y2=\"240\" stroke=\"#38bdf8\" stroke-width=\"3.5\" marker-end=\"url(#fArrCyan)\"/>\n  <text x=\"210\" y=\"265\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">vec(F₁) = 50 N</text>\n  <!-- Lực F2 (góc 60 độ lên trên) -->\n  <!-- dx = 180 * cos(60°) = 90 -> x = 170; dy = 180 * sin(60°) = 155.88 -> y = 84.12 -->\n  <line x1=\"80\" y1=\"240\" x2=\"170\" y2=\"84\" stroke=\"#fbbf24\" stroke-width=\"3.5\" marker-end=\"url(#fArrAmber)\"/>\n  <text x=\"90\" y=\"140\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">vec(F₂) = 50 N</text>\n  <!-- Cung góc 60 độ -->\n  <path d=\"M 120 240 A 40 40 0 0 0 100 205\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"220\" fill=\"#f1f5f9\" font-size=\"12\" font-weight=\"bold\">60°</text>\n  <!-- Đường nét đứt hình bình hành -->\n  <line x1=\"300\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <line x1=\"170\" y1=\"84\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <!-- Hợp lực F = F1 + F2 -->\n  <line x1=\"80\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#f43f5e\" stroke-width=\"4.5\" marker-end=\"url(#fArrRose)\"/>\n  <text x=\"320\" y=\"145\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">vec(F) = vec(F₁) + vec(F₂)</text>\n  <text x=\"280\" y=\"45\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">|vec(F)| = 50*sqrt(3) ≈ 86.6 N</text>\n</svg>"
+    },
+    {
+      "id": "quiz-10.8.20",
+      "badge": "Vận dụng cao - Bài toán thực tế vận tốc ca nô cắt ngang sông",
+      "source": "SGK Toán 10 KNTT Bài 8 Vận dụng",
+      "question": "Một chiếc ca nô vượt qua một con sông từ bờ này sang bờ kia. Vận tốc riêng của ca nô đối với dòng nước là $12\\text{ km/h}$ theo hướng vuông góc với bờ sông. Vận tốc của dòng nước đối với bờ là $5\\text{ km/h}$ xuôi dòng. Vận tốc thực tế của ca nô đối với bờ sông bằng:",
+      "options": [
+        "$13\\text{ km/h}$",
+        "$17\\text{ km/h}$",
+        "$7\\text{ km/h}$",
+        "$11.2\\text{ km/h}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vận tốc thực tế là tổng hai vectơ vuông góc nhau: $\\vec{v} = \\vec{v}_{\\text{thuyền}} + \\vec{v}_{\\text{nước}}$. Độ lớn: $v = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13\\text{ km/h}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border border-sky-700/50 p-3\">\n  <defs>\n    <marker id=\"vArrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"vArrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"vArrEmerald\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n  </defs>\n  <!-- Hai bờ sông -->\n  <line x1=\"40\" y1=\"220\" x2=\"480\" y2=\"220\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"60\" x2=\"480\" y2=\"60\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"490\" y=\"65\" fill=\"#38bdf8\" font-size=\"12\">Bờ bên kia</text>\n  <text x=\"490\" y=\"225\" fill=\"#38bdf8\" font-size=\"12\">Bờ xuất phát</text>\n  <!-- Thuyền ở vị trí A -->\n  <circle cx=\"100\" cy=\"220\" r=\"5\" fill=\"#f8fafc\"/>\n  <text x=\"80\" y=\"240\" fill=\"#f8fafc\" font-size=\"13\" font-weight=\"bold\">Bến A</text>\n  <!-- Vectơ vận tốc thuyền v_thuyen (thẳng qua sông) -->\n  <line x1=\"100\" y1=\"220\" x2=\"100\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"3\" marker-end=\"url(#vArrCyan)\"/>\n  <text x=\"35\" y=\"150\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">v_thuyền = 12 km/h</text>\n  <!-- Vectơ vận tốc dòng nước v_nuoc (dọc bờ sông) -->\n  <line x1=\"100\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#fbbf24\" stroke-width=\"3\" marker-end=\"url(#vArrAmber)\"/>\n  <text x=\"150\" y=\"65\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">v_dòng = 5 km/h</text>\n  <!-- Vectơ vận tốc thực tế v_tong hop -->\n  <line x1=\"100\" y1=\"220\" x2=\"260\" y2=\"80\" stroke=\"#34d399\" stroke-width=\"4\" marker-end=\"url(#vArrEmerald)\"/>\n  <circle cx=\"260\" cy=\"80\" r=\"5\" fill=\"#34d399\"/>\n  <text x=\"270\" y=\"75\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">Điểm đến B'</text>\n  <text x=\"200\" y=\"170\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">v = sqrt(12² + 5²) = 13 km/h</text>\n</svg>"
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.8.1",
+      "badge": "Đúng / Sai 1 - Khảo sát các quy tắc vectơ cơ bản",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho ba điểm phân biệt bất kì $A, B, C$. Xét tính Đúng/Sai của các đẳng thức sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{BC} = \\vec{AC}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo quy tắc ba điểm."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AB} - \\vec{AC} = \\vec{BC}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $\\vec{AB} - \\vec{AC} = \\vec{CB}$, không phải $\\vec{BC}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{BA} + \\vec{AC} = \\vec{BC}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{BA} + \\vec{AC} = \\vec{BC}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{AB} + \\vec{BA} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{AB} + \\vec{BA} = \\vec{AA} = \\vec{0}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.2",
+      "badge": "Đúng / Sai 2 - Vectơ trong hình bình hành",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hình bình hành $ABCD$ tâm $O$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo quy tắc hình bình hành."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AB} - \\vec{AD} = \\vec{DB}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{AB} - \\vec{AD} = \\vec{DB}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\vec{OA} + \\vec{OC} = \\vec{0}$ và $\\vec{OB} + \\vec{OD} = \\vec{0}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{BA} + \\vec{BC} = \\vec{AC}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $\\vec{BA} + \\vec{BC} = \\vec{BD}$, không phải $\\vec{AC}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.3",
+      "badge": "Đúng / Sai 3 - Vectơ trong tam giác có trung tuyến",
+      "source": "Đề kiểm tra định kì Toán 10",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{AC} = 2\\vec{AM}$.",
+          "correctAnswer": true,
+          "explanation": "$M$ là trung điểm của $BC$ nên $\\vec{AB} + \\vec{AC} = 2\\vec{AM}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo tính chất trọng tâm."
+        },
+        {
+          "id": "c",
+          "text": "Với mọi điểm $O$ bất kì, ta luôn có $\\vec{OA} + \\vec{OB} + \\vec{OC} = 3\\vec{OG}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo hệ thức vectơ trọng tâm."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{MB} + \\vec{MC} = \\vec{BC}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: vì $M$ là trung điểm $BC$ nên $\\vec{MB} + \\vec{MC} = \\vec{0}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.4",
+      "badge": "Đúng / Sai 4 - Độ dài vectơ trong hình vuông",
+      "source": "Đề thi học kì 1 Toán 10",
+      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $a$, tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$|\\vec{AB} + \\vec{AD}| = a\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC} \\implies |\\vec{AC}| = a\\sqrt{2}$."
+        },
+        {
+          "id": "b",
+          "text": "$|\\vec{AB} - \\vec{AD}| = a\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} - \\vec{AD} = \\vec{DB} \\implies |\\vec{DB}| = a\\sqrt{2}$."
+        },
+        {
+          "id": "c",
+          "text": "$|\\vec{OA} - \\vec{OB}| = a$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{OA} - \\vec{OB} = \\vec{BA} \\implies |\\vec{BA}| = a$."
+        },
+        {
+          "id": "d",
+          "text": "$|\\vec{OA} + \\vec{OB}| = a\\sqrt{2}$.",
+          "correctAnswer": false,
+          "explanation": "Gọi $M$ là trung điểm $AB$, $|\\vec{OA} + \\vec{OB}| = 2OM = 2 \\cdot \\frac{a}{2} = a \\ne a\\sqrt{2}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.5",
+      "badge": "Đúng / Sai 5 - Vectơ trong tam giác đều cạnh a",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $a$, chiều cao $AH$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$|\\vec{AB} - \\vec{AC}| = a$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB} \\implies |\\vec{CB}| = a$."
+        },
+        {
+          "id": "b",
+          "text": "$|\\vec{AB} + \\vec{AC}| = a\\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} + \\vec{AC} = 2\\vec{AH} \\implies 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
+        },
+        {
+          "id": "c",
+          "text": "$|\\vec{AH} + \\vec{HB}| = a$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AH} + \\vec{HB} = \\vec{AB} \\implies |\\vec{AB}| = a$."
+        },
+        {
+          "id": "d",
+          "text": "$|\\vec{AB} + \\vec{BC}| = 2a$.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{AB} + \\vec{BC} = \\vec{AC} \\implies |\\vec{AC}| = a \\ne 2a$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.6",
+      "badge": "Đúng / Sai 6 - Rút gọn biểu thức vectơ nâng cao",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Cho 6 điểm tùy ý $A, B, C, D, E, F$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{CD} + \\vec{EA} = \\vec{ED} + \\vec{CB}$.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{EA} + \\vec{AB} + \\vec{CD} = \\vec{EB} + \\vec{CD}$, trong khi vế phải là $\\vec{ED} + \\vec{CB} = \\vec{EB} + \\vec{CD}$? Thử: $\\vec{EB} + \\vec{CD} - (\\vec{ED} + \\vec{CB}) = \\vec{EB} - \\vec{ED} + \\vec{CD} - \\vec{CB} = \\vec{DB} + \\vec{DB} = 2\\vec{DB} \\ne \\vec{0}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AE} + \\vec{BF} + \\vec{CD}$.",
+          "correctAnswer": true,
+          "explanation": "Biến đổi vế trái trừ vế phải: $(\\vec{AD} - \\vec{CD}) + (\\vec{BE} - \\vec{AE}) + (\\vec{CF} - \\vec{BF}) = \\vec{AC} + \\vec{BA} + \\vec{CB} = \\vec{BA} + \\vec{AC} + \\vec{CB} = \\vec{BB} = \\vec{0}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{AB} - \\vec{DC} = \\vec{AC} - \\vec{DB}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB}$, còn $\\vec{DC} - \\vec{DB} = \\vec{BC} = -\\vec{CB}$, vậy $\\vec{AB} + \\vec{DB} = \\vec{AC} + \\vec{DC}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $\\vec{AB} + \\vec{CD} = \\vec{0}$ thì tứ giác $ABDC$ là hình bình hành.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{AB} = -\\vec{CD} = \\vec{DC}$, do đó tứ giác $ABCD$ là hình bình hành, không phải $ABDC$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.8.7",
+      "badge": "Đúng / Sai 7 - Bài toán thực tế hai lực kéo tàu",
+      "source": "Ứng dụng Vật lý 10",
+      "prompt": "Hai chiếc tàu kéo tác dụng vào một chiếc sà lan hai lực kéo $\\vec{F}_1$ và $\\vec{F}_2$ có cùng độ lớn $4000\\text{ N}$, góc hợp bởi hai dây kéo là $90^\\circ$. Gọi $\\vec{F} = \\vec{F}_1 + \\vec{F}_2$ là lực kéo tổng hợp tác dụng lên sà lan. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Hai vectơ lực $\\vec{F}_1$ và $\\vec{F}_2$ vuông góc với nhau.",
+          "correctAnswer": true,
+          "explanation": "Góc giữa hai lực bằng $90^\\circ$."
+        },
+        {
+          "id": "b",
+          "text": "Độ lớn của hợp lực $\\vec{F}$ tính theo công thức $|\\vec{F}| = \\sqrt{F_1^2 + F_2^2}$.",
+          "correctAnswer": true,
+          "explanation": "Do hai lực vuông góc nên áp dụng định lý Pythagore cho hình chữ nhật hợp lực: $F = \\sqrt{F_1^2 + F_2^2}$."
+        },
+        {
+          "id": "c",
+          "text": "Độ lớn của hợp lực bằng $8000\\text{ N}$.",
+          "correctAnswer": false,
+          "explanation": "$F = 4000\\sqrt{2} \\approx 5657\\text{ N} \\ne 8000\\text{ N}$."
+        },
+        {
+          "id": "d",
+          "text": "Hướng của lực tổng hợp $\\vec{F}$ chia đôi góc giữa hai sợi dây kéo.",
+          "correctAnswer": true,
+          "explanation": "Vì hai lực có độ lớn bằng nhau nên hình bình hành lực là hình thoi (ở đây là hình vuông), đường chéo là phân giác."
+        }
+      ],
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"fArrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"fArrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"fArrRose\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n  </defs>\n  <!-- Gốc lực O -->\n  <circle cx=\"80\" cy=\"240\" r=\"6\" fill=\"#f8fafc\"/>\n  <text x=\"65\" y=\"260\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">O (Vật)</text>\n  <!-- Lực F1 (nằm ngang) -->\n  <line x1=\"80\" y1=\"240\" x2=\"300\" y2=\"240\" stroke=\"#38bdf8\" stroke-width=\"3.5\" marker-end=\"url(#fArrCyan)\"/>\n  <text x=\"210\" y=\"265\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">vec(F₁) = 50 N</text>\n  <!-- Lực F2 (góc 60 độ lên trên) -->\n  <!-- dx = 180 * cos(60°) = 90 -> x = 170; dy = 180 * sin(60°) = 155.88 -> y = 84.12 -->\n  <line x1=\"80\" y1=\"240\" x2=\"170\" y2=\"84\" stroke=\"#fbbf24\" stroke-width=\"3.5\" marker-end=\"url(#fArrAmber)\"/>\n  <text x=\"90\" y=\"140\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">vec(F₂) = 50 N</text>\n  <!-- Cung góc 60 độ -->\n  <path d=\"M 120 240 A 40 40 0 0 0 100 205\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"220\" fill=\"#f1f5f9\" font-size=\"12\" font-weight=\"bold\">60°</text>\n  <!-- Đường nét đứt hình bình hành -->\n  <line x1=\"300\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <line x1=\"170\" y1=\"84\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <!-- Hợp lực F = F1 + F2 -->\n  <line x1=\"80\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#f43f5e\" stroke-width=\"4.5\" marker-end=\"url(#fArrRose)\"/>\n  <text x=\"320\" y=\"145\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">vec(F) = vec(F₁) + vec(F₂)</text>\n  <text x=\"280\" y=\"45\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">|vec(F)| = 50*sqrt(3) ≈ 86.6 N</text>\n</svg>"
+    },
+    {
+      "id": "tf-10.8.8",
+      "badge": "Đúng / Sai 8 - Vận tốc máy bay khi có gió thổi",
+      "source": "Toán học Hàng không",
+      "prompt": "Một chiếc máy bay đang bay về hướng Đông với tốc độ riêng $500\\text{ km/h}$. Cùng lúc đó có một cơn gió thổi đều về hướng Bắc với tốc độ $50\\text{ km/h}$. Vận tốc tổng hợp của máy bay so với mặt đất là $\\vec{v} = \\vec{v}_b + \\vec{v}_g$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Vectơ $\\vec{v}_b$ và vectơ $\\vec{v}_g$ vuông góc với nhau.",
+          "correctAnswer": true,
+          "explanation": "Hướng Đông và hướng Bắc vuông góc nhau."
+        },
+        {
+          "id": "b",
+          "text": "Máy bay bay lệch về hướng Đông Bắc so với đường bay dự định.",
+          "correctAnswer": true,
+          "explanation": "Gió thổi về hướng Bắc sẽ đẩy máy bay dạt về hướng Bắc tạo thành hướng Đông Bắc."
+        },
+        {
+          "id": "c",
+          "text": "Tốc độ của máy bay so với mặt đất nhỏ hơn $500\\text{ km/h}$.",
+          "correctAnswer": false,
+          "explanation": "Tốc độ $v = \\sqrt{500^2 + 50^2} = \\sqrt{252500} \\approx 502.5\\text{ km/h} > 500\\text{ km/h}$."
+        },
+        {
+          "id": "d",
+          "text": "Góc lệch đường bay của máy bay so với hướng Đông thỏa mãn $\\tan \\alpha = \\frac{50}{500} = 0.1$.",
+          "correctAnswer": true,
+          "explanation": "Góc lệch $\\alpha$ có $\\tan \\alpha = \\frac{v_g}{v_b} = \\frac{50}{500} = 0.1$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.8.1",
+      "badge": "Trả lời ngắn 1 - Độ dài tổng vectơ hình vuông",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $6$. Tính độ dài của vectơ $\\vec{u} = \\vec{AB} + \\vec{AD}$ (kết quả làm tròn đến hàng phần mười).",
+      "correctAnswer": "8.5",
+      "acceptableAnswers": [
+        "8.5",
+        "8,5",
+        "6*sqrt(2)"
+      ],
+      "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài: $|\\vec{AC}| = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
+    },
+    {
+      "id": "sa-10.8.2",
+      "badge": "Trả lời ngắn 2 - Độ dài hiệu vectơ tam giác vuông",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}, AC = 12\\text{ cm}$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AC}$ (theo cm).",
+      "correctAnswer": "13",
+      "acceptableAnswers": [
+        "13",
+        "13 cm"
+      ],
+      "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB} \\implies |\\vec{CB}| = BC = \\sqrt{5^2 + 12^2} = 13\\text{ cm}$."
+    },
+    {
+      "id": "sa-10.8.3",
+      "badge": "Trả lời ngắn 3 - Độ dài tổng hai vectơ tam giác đều",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $4$. Tính độ dài của vectơ $\\vec{AB} + \\vec{AC}$ (làm tròn đến hàng phần mười).",
+      "correctAnswer": "6.9",
+      "acceptableAnswers": [
+        "6.9",
+        "6,9",
+        "4*sqrt(3)"
+      ],
+      "explanation": "Gọi $H$ là trung điểm $BC$: $|\\vec{AB} + \\vec{AC}| = 2AH = 2 \\cdot \\frac{4\\sqrt{3}}{2} = 4\\sqrt{3} \\approx 6.928 \\approx 6.9$."
+    },
+    {
+      "id": "sa-10.8.4",
+      "badge": "Trả lời ngắn 4 - Độ dài hiệu hai vectơ hình chữ nhật",
+      "source": "Bộ đề Toán 10 KNTT",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 8, AD = 6$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AD}$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$\\vec{AB} - \\vec{AD} = \\vec{DB} \\implies |\\vec{DB}| = \\sqrt{8^2 + 6^2} = 10$."
+    },
+    {
+      "id": "sa-10.8.5",
+      "badge": "Trả lời ngắn 5 - Độ dài tổng hai vectơ cùng hướng",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $C$ nằm giữa $A$ và $B$ sao cho $AC = 4$. Tính độ dài của vectơ $\\vec{u} = \\vec{AC} + \\vec{CB}$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$\\vec{AC} + \\vec{CB} = \\vec{AB} \\implies |\\vec{AB}| = 10$."
+    },
+    {
+      "id": "sa-10.8.6",
+      "badge": "Trả lời ngắn 6 - Hợp lực kéo vật vuông góc",
+      "source": "Vật lý 10 & Vectơ thực tế",
+      "prompt": "Hai lực $\\vec{F}_1$ và $\\vec{F}_2$ cùng tác dụng lên một chất điểm có phương vuông góc với nhau, độ lớn tương ứng là $60\\text{ N}$ và $80\\text{ N}$. Tính độ lớn của hợp lực $\\vec{F} = \\vec{F}_1 + \\vec{F}_2$ (theo đơn vị N).",
+      "correctAnswer": "100",
+      "acceptableAnswers": [
+        "100",
+        "100 N"
+      ],
+      "explanation": "Vì hai lực vuông góc nên $|\\vec{F}| = \\sqrt{60^2 + 80^2} = 100\\text{ N}$."
+    },
+    {
+      "id": "sa-10.8.7",
+      "badge": "Trả lời ngắn 7 - Độ dài vectơ trọng tâm",
+      "source": "Đề thi khảo sát Toán 10",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $3\\sqrt{3}$, có trọng tâm $G$. Tính độ dài của vectơ $\\vec{GA} + \\vec{GB}$.",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "explanation": "Vì $G$ là trọng tâm nên $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0} \\implies \\vec{GA} + \\vec{GB} = -\\vec{GC}$. Do đó $|\\vec{GA} + \\vec{GB}| = |\\vec{GC}| = \\frac{2}{3} h = \\frac{2}{3} \\cdot \\frac{3\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3$."
+    },
+    {
+      "id": "sa-10.8.8",
+      "badge": "Trả lời ngắn 8 - Độ dài tổng hai vectơ góc 120 độ",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{a}$ và $\\vec{b}$ có cùng độ lớn bằng $10$, góc giữa hai vectơ là $120^\\circ$. Tính độ dài của vectơ tổng $\\vec{a} + \\vec{b}$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$|\\vec{a} + \\vec{b}|^2 = 10^2 + 10^2 + 2(10)(10)\\cos 120^\\circ = 100 + 100 - 100 = 100 \\implies |\\vec{a} + \\vec{b}| = 10$."
+    },
+    {
+      "id": "sa-10.8.9",
+      "badge": "Trả lời ngắn 9 - Tổng hai vectơ góc 60 độ",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ cùng xuất phát từ một điểm, có độ lớn $|\\vec{u}| = 6, |\\vec{v}| = 6$, góc giữa chúng bằng $60^\\circ$. Tính độ dài của vectơ tổng $\\vec{u} + \\vec{v}$ (làm tròn đến hàng phần mười).",
+      "correctAnswer": "10.4",
+      "acceptableAnswers": [
+        "10.4",
+        "10,4",
+        "6*sqrt(3)"
+      ],
+      "explanation": "$|\\vec{u} + \\vec{v}| = 2 \\cdot 6 \\cos 30^\\circ = 6\\sqrt{3} \\approx 10.392 \\approx 10.4$."
+    },
+    {
+      "id": "sa-10.8.10",
+      "badge": "Trả lời ngắn 10 - Vectơ đối trong hình bình hành",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho hình bình hành $ABCD$ có $AB = 7, AD = 5$. Tính độ dài của vectơ $\\vec{u} = \\vec{BA} + \\vec{BC} + \\vec{CD} + \\vec{DA}$.",
+      "correctAnswer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "explanation": "Biểu thức là chu trình khép kín hoặc gộp cặp đối: $\\vec{BA} + \\vec{CD} = \\vec{0}$ và $\\vec{BC} + \\vec{DA} = \\vec{0} \\implies \\vec{u} = \\vec{0}$, độ dài bằng $0$."
+    },
+    {
+      "id": "sa-10.8.11",
+      "badge": "Trả lời ngắn 11 - Bài toán thực tế thuyền qua sông",
+      "source": "Ứng dụng Vectơ trong Thực tiễn",
+      "prompt": "Một chiếc ca nô di chuyển trên sông: vận tốc riêng của máy đẩy ca nô là $15\\text{ km/h}$ theo phương thẳng qua bờ đối diện, vận tốc dòng nước chảy là $8\\text{ km/h}$. Tính tốc độ thực tế của ca nô so với bờ sông (theo km/h).",
+      "correctAnswer": "17",
+      "acceptableAnswers": [
+        "17",
+        "17 km/h"
+      ],
+      "explanation": "Vận tốc thực tế là tổng hai vectơ vuông góc: $v = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ km/h}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border border-sky-700/50 p-3\">\n  <defs>\n    <marker id=\"vArrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"vArrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"vArrEmerald\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n  </defs>\n  <!-- Hai bờ sông -->\n  <line x1=\"40\" y1=\"220\" x2=\"480\" y2=\"220\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"60\" x2=\"480\" y2=\"60\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"490\" y=\"65\" fill=\"#38bdf8\" font-size=\"12\">Bờ bên kia</text>\n  <text x=\"490\" y=\"225\" fill=\"#38bdf8\" font-size=\"12\">Bờ xuất phát</text>\n  <!-- Thuyền ở vị trí A -->\n  <circle cx=\"100\" cy=\"220\" r=\"5\" fill=\"#f8fafc\"/>\n  <text x=\"80\" y=\"240\" fill=\"#f8fafc\" font-size=\"13\" font-weight=\"bold\">Bến A</text>\n  <!-- Vectơ vận tốc thuyền v_thuyen (thẳng qua sông) -->\n  <line x1=\"100\" y1=\"220\" x2=\"100\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"3\" marker-end=\"url(#vArrCyan)\"/>\n  <text x=\"35\" y=\"150\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">v_thuyền = 12 km/h</text>\n  <!-- Vectơ vận tốc dòng nước v_nuoc (dọc bờ sông) -->\n  <line x1=\"100\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#fbbf24\" stroke-width=\"3\" marker-end=\"url(#vArrAmber)\"/>\n  <text x=\"150\" y=\"65\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">v_dòng = 5 km/h</text>\n  <!-- Vectơ vận tốc thực tế v_tong hop -->\n  <line x1=\"100\" y1=\"220\" x2=\"260\" y2=\"80\" stroke=\"#34d399\" stroke-width=\"4\" marker-end=\"url(#vArrEmerald)\"/>\n  <circle cx=\"260\" cy=\"80\" r=\"5\" fill=\"#34d399\"/>\n  <text x=\"270\" y=\"75\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">Điểm đến B'</text>\n  <text x=\"200\" y=\"170\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">v = sqrt(12² + 5²) = 13 km/h</text>\n</svg>"
+    },
+    {
+      "id": "sa-10.8.12",
+      "badge": "Trả lời ngắn 12 - Hợp lực tác dụng lên vật đứng yên",
+      "source": "Toán - Lý 10",
+      "prompt": "Một vật có trọng lượng $P = 120\\text{ N}$ được giữ thăng bằng trên mặt đất phẳng nhờ hai sợi dây kéo tạo với nhau góc $90^\\circ$. Biết hai lực căng dây có độ lớn bằng nhau. Độ lớn của mỗi lực căng dây là bao nhiêu Niutơn? (Làm tròn đến hàng phần mười).",
+      "correctAnswer": "84.9",
+      "acceptableAnswers": [
+        "84.9",
+        "84,9",
+        "60*sqrt(2)"
+      ],
+      "explanation": "Hợp lực căng dây cân bằng với trọng lượng: $F_{\\text{hl}} = P = 120\\text{ N}$. Vì hai dây vuông góc và lực bằng nhau: $T\\sqrt{2} = 120 \\implies T = \\frac{120}{\\sqrt{2}} = 60\\sqrt{2} \\approx 84.85 \\approx 84.9\\text{ N}$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"fArrCyan\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"fArrAmber\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"fArrRose\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n  </defs>\n  <!-- Gốc lực O -->\n  <circle cx=\"80\" cy=\"240\" r=\"6\" fill=\"#f8fafc\"/>\n  <text x=\"65\" y=\"260\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">O (Vật)</text>\n  <!-- Lực F1 (nằm ngang) -->\n  <line x1=\"80\" y1=\"240\" x2=\"300\" y2=\"240\" stroke=\"#38bdf8\" stroke-width=\"3.5\" marker-end=\"url(#fArrCyan)\"/>\n  <text x=\"210\" y=\"265\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">vec(F₁) = 50 N</text>\n  <!-- Lực F2 (góc 60 độ lên trên) -->\n  <!-- dx = 180 * cos(60°) = 90 -> x = 170; dy = 180 * sin(60°) = 155.88 -> y = 84.12 -->\n  <line x1=\"80\" y1=\"240\" x2=\"170\" y2=\"84\" stroke=\"#fbbf24\" stroke-width=\"3.5\" marker-end=\"url(#fArrAmber)\"/>\n  <text x=\"90\" y=\"140\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">vec(F₂) = 50 N</text>\n  <!-- Cung góc 60 độ -->\n  <path d=\"M 120 240 A 40 40 0 0 0 100 205\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"220\" fill=\"#f1f5f9\" font-size=\"12\" font-weight=\"bold\">60°</text>\n  <!-- Đường nét đứt hình bình hành -->\n  <line x1=\"300\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <line x1=\"170\" y1=\"84\" x2=\"390\" y2=\"84\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n  <!-- Hợp lực F = F1 + F2 -->\n  <line x1=\"80\" y1=\"240\" x2=\"390\" y2=\"84\" stroke=\"#f43f5e\" stroke-width=\"4.5\" marker-end=\"url(#fArrRose)\"/>\n  <text x=\"320\" y=\"145\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">vec(F) = vec(F₁) + vec(F₂)</text>\n  <text x=\"280\" y=\"45\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">|vec(F)| = 50*sqrt(3) ≈ 86.6 N</text>\n</svg>"
+    }
+  ]
+},
+
+  // ==========================================
+  // BÀI 9: TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ (CHUẨN KNTT 2025)
+  // ==========================================
+  "t10-b9-tich-vector-voi-mot-so": {
+  "id": "t10-b9-tich-vector-voi-mot-so",
+  "lessonNumber": 9,
+  "title": "Bài 9: Tích của một vectơ với một số",
+  "bookChapter": "Chương IV: Vectơ",
+  "scenarioTitle": "Tình huống thực tế: Tỉ lệ lực tác dụng, vận tốc biến đổi và phân tích lực trong cơ học",
+  "scenarioFrames": [],
+  "interactiveType": "vector",
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Định nghĩa tích của một vectơ với một số",
+      "points": [
+        "• Cho số thực $k$ và vectơ $\\\\vec{a} \\",
+        "e \\\\vec{0}$. **Tích của vectơ $\\\\vec{a}$ với số $k$** là một vectơ, kí hiệu là $k\\\\vec{a}$.\\",
+        "• **Hướng**: $k\\\\vec{a}$ **cùng hướng** với $\\\\vec{a}$ khi $k > 0$; $k\\\\vec{a}$ **ngược hướng** với $\\\\vec{a}$ khi $k < 0$.\\",
+        "• **Độ dài**: $|k\\\\vec{a}| = |k| \\\\cdot |\\\\vec{a}|$.\\",
+        "• **Quy ước**: $0\\\\vec{a} = \\\\vec{0}$ và $k\\\\vec{0} = \\\\vec{0}$."
+      ]
+    },
+    {
+      "index": "2",
+      "title": "2. Các tính chất của phép nhân vectơ với số",
+      "points": [
+        "Với hai vectơ $\\\\vec{a}, \\\\vec{b}$ và hai số thực $k, m$, ta có:\\",
+        "• Kết hợp: $k(m\\\\vec{a}) = (km)\\\\vec{a}$.\\",
+        "• Phân phối với phép cộng vectơ: $k(\\\\vec{a} + \\\\vec{b}) = k\\\\vec{a} + k\\\\vec{b}$.\\",
+        "• Phân phối với phép cộng số: $(k + m)\\\\vec{a} = k\\\\vec{a} + m\\\\vec{a}$.\\",
+        "• $1\\\\vec{a} = \\\\vec{a}$ và $(-1)\\\\vec{a} = -\\\\vec{a}$."
+      ]
+    },
+    {
+      "index": "3",
+      "title": "3. Điều kiện hai vectơ cùng phương & Ba điểm thẳng hàng",
+      "points": [
+        "• **Điều kiện cùng phương**: Hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$ (với $\\\\vec{a} \\",
+        "e \\\\vec{0}$) cùng phương khi và chỉ khi có một số thực $k$ sao cho $\\\\vec{b} = k\\\\vec{a}$.\\",
+        "• **Ba điểm thẳng hàng**: Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi có một số thực $k \\",
+        "e 0$ sao cho $\\\\vec{AB} = k\\\\vec{AC}$."
+      ]
+    },
+    {
+      "index": "4",
+      "title": "4. Hệ thức trung điểm và trọng tâm",
+      "points": [
+        "• Nếu $I$ là trung điểm của đoạn thẳng $AB$, thì với mọi điểm $M$ ta có:\\",
+        "$$\\\\vec{MI} = \\\\frac{1}{2}(\\\\vec{MA} + \\\\vec{MB})$$\\",
+        "• Nếu $G$ là trọng tâm của tam giác $ABC$, thì với mọi điểm $M$ ta có:\\",
+        "$$\\\\vec{MG} = \\\\frac{1}{3}(\\\\vec{MA} + \\\\vec{MB} + \\\\vec{MC})$$\\",
+        "• Trên đường trung tuyến $AM$, ta có $\\\\vec{AG} = \\\\frac{2}{3}\\\\vec{AM}$ và $\\\\vec{GA} = -2\\\\vec{GM}$."
+      ]
+    },
+    {
+      "index": "5",
+      "title": "5. Phân tích một vectơ theo hai vectơ không cùng phương",
+      "points": [
+        "• Cho hai vectơ không cùng phương $\\\\vec{a}$ và $\\\\vec{b}$. Với mọi vectơ $\\\\vec{x}$, luôn tồn tại **duy nhất** một cặp số thực $(m; n)$ sao cho:\\",
+        "$$\\\\vec{x} = m\\\\vec{a} + n\\\\vec{b}$$\\",
+        "*(Đây là cơ sở lý thuyết cho hệ tọa độ vectơ trong mặt phẳng)*."
+      ]
+    }
+  ],
+  "tips": [
+    "Nhớ quy tắc dấu: Số k dương thì cùng hướng, số k âm thì ngược hướng.",
+    "Độ dài của k*vec(a) luôn bằng |k| nhân với độ dài vec(a) (độ dài luôn không âm, ví dụ |-3*vec(a)| = 3|vec(a)|).",
+    "Để chứng minh ba điểm A, B, C thẳng hàng: Tìm số k sao cho vec(AB) = k*vec(AC)."
+  ],
+  "traps": [
+    "Bẫy dấu khi biểu diễn trung tuyến: Trọng tâm G chia AM theo tỉ số GA = 2 GM, nhưng vì vec(GA) và vec(GM) ngược hướng nên vec(GA) = -2 vec(GM) (dấu trừ rất hay bị bỏ quên!).",
+    "Bẫy độ dài: Tuyệt đối không viết |-2*vec(a)| = -2|vec(a)|! Độ dài vectơ là một số không âm: |-2*vec(a)| = 2|vec(a)|."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.9.1",
+      "badge": "Nhận biết - Độ dài của tích vectơ với số",
+      "source": "SGK Toán 10 KNTT Bài 9",
+      "question": "Cho vectơ $\\vec{a}$ và số thực $k$. Độ dài của vectơ $k\\vec{a}$ bằng:",
+      "options": [
+        "$|k| \\cdot |\\vec{a}|$",
+        "$k \\cdot |\\vec{a}|$",
+        "$-k \\cdot |\\vec{a}|$",
+        "$|k| + |\\vec{a}|$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa SGK: $|k\\vec{a}| = |k| \\cdot |\\vec{a}|$, độ dài luôn là số không âm."
+    },
+    {
+      "id": "quiz-10.9.2",
+      "badge": "Nhận biết - Hướng của tích vectơ với số",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho vectơ $\\vec{a} \\ne \\vec{0}$. Vectơ $-3\\vec{a}$ có đặc điểm nào sau đây?",
+      "options": [
+        "Ngược hướng với $\\vec{a}$ và có độ dài bằng $3|\\vec{a}|$.",
+        "Cùng hướng với $\\vec{a}$ và có độ dài bằng $3|\\vec{a}|$.",
+        "Ngược hướng với $\\vec{a}$ và có độ dài bằng $-3|\\vec{a}|$.",
+        "Cùng phương nhưng không so sánh được hướng."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì hệ số $k = -3 < 0$ nên vectơ $-3\\vec{a}$ ngược hướng với $\\vec{a}$ và có độ dài bằng $|-3| \\cdot |\\vec{a}| = 3|\\vec{a}|$.",
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"sArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"sArrGreen\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"sArrRose\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n  </defs>\n  <!-- Vectơ a ban đầu -->\n  <line x1=\"80\" y1=\"80\" x2=\"200\" y2=\"80\" stroke=\"#60a5fa\" stroke-width=\"3.5\" marker-end=\"url(#sArrBlue)\"/>\n  <text x=\"140\" y=\"65\" fill=\"#60a5fa\" font-size=\"14\" font-weight=\"bold\">vec(a)</text>\n  <!-- Vectơ 2a (cùng hướng, gấp đôi độ dài) -->\n  <line x1=\"80\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#34d399\" stroke-width=\"3.5\" marker-end=\"url(#sArrGreen)\"/>\n  <text x=\"200\" y=\"135\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">2*vec(a) (cùng hướng, |2vec(a)| = 2|vec(a)|)</text>\n  <!-- Vectơ -1.5a (ngược hướng) -->\n  <line x1=\"260\" y1=\"220\" x2=\"80\" y2=\"220\" stroke=\"#f43f5e\" stroke-width=\"3.5\" marker-end=\"url(#sArrRose)\"/>\n  <text x=\"170\" y=\"245\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">-1.5*vec(a) (ngược hướng, |-1.5vec(a)| = 1.5|vec(a)|)</text>\n</svg>"
+    },
+    {
+      "id": "quiz-10.9.3",
+      "badge": "Nhận biết - Hệ thức trọng tâm và trung tuyến",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Đẳng thức nào sau đây là ĐÚNG?",
+      "options": [
+        "$\\vec{AG} = \\frac{2}{3}\\vec{AM}$",
+        "$\\vec{AG} = \\frac{1}{3}\\vec{AM}$",
+        "$\\vec{GA} = 2\\vec{GM}$",
+        "$\\vec{AM} = 3\\vec{AG}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trọng tâm $G$ nằm trên đoạn $AM$ sao cho $AG = \\frac{2}{3}AM$, hướng từ $A \\to G$ cùng hướng $A \\to M$ nên $\\vec{AG} = \\frac{2}{3}\\vec{AM}$."
+    },
+    {
+      "id": "quiz-10.9.4",
+      "badge": "Thông hiểu - Hệ thức vectơ trung điểm",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho $I$ là trung điểm của đoạn thẳng $AB$. Với điểm $M$ bất kì, ta luôn có:",
+      "options": [
+        "$\\vec{MA} + \\vec{MB} = 2\\vec{MI}$",
+        "$\\vec{MA} + \\vec{MB} = \\vec{MI}$",
+        "$\\vec{MI} = \\vec{MA} + \\vec{MB}$",
+        "$\\vec{MA} + \\vec{MB} = \\frac{1}{2}\\vec{MI}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hệ thức trung điểm: $\\vec{MA} + \\vec{MB} = 2\\vec{MI}$."
+    },
+    {
+      "id": "quiz-10.9.5",
+      "badge": "Thông hiểu - Trọng tâm G và đoạn GM",
+      "source": "Đề kiểm tra định kì Toán 10",
+      "question": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Đẳng thức nào sau đây ĐÚNG?",
+      "options": [
+        "$\\vec{GA} = -2\\vec{GM}$",
+        "$\\vec{GA} = 2\\vec{GM}$",
+        "$\\vec{GM} = -2\\vec{GA}$",
+        "$\\vec{GA} = -\\frac{1}{2}\\vec{GM}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$G$ nằm giữa $A$ và $M$, đoạn $GA = 2GM$, hai vectơ $\\vec{GA}$ và $\\vec{GM}$ ngược hướng nên $\\vec{GA} = -2\\vec{GM}$."
+    },
+    {
+      "id": "quiz-10.9.6",
+      "badge": "Thông hiểu - Điểm chia đoạn thẳng theo tỉ số",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho đoạn thẳng $AB$ và điểm $M$ nằm giữa $A, B$ sao cho $AM = 3MB$. Đẳng thức vectơ nào sau đây ĐÚNG?",
+      "options": [
+        "$\\vec{AM} = \\frac{3}{4}\\vec{AB}$",
+        "$\\vec{AM} = 3\\vec{AB}$",
+        "$\\vec{AM} = \\frac{1}{3}\\vec{AB}$",
+        "$\\vec{AM} = -\\frac{3}{4}\\vec{AB}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $AB = AM + MB = 3MB + MB = 4MB \\implies AM = \\frac{3}{4}AB$. Do $\\vec{AM}$ và $\\vec{AB}$ cùng hướng nên $\\vec{AM} = \\frac{3}{4}\\vec{AB}$."
+    },
+    {
+      "id": "quiz-10.9.7",
+      "badge": "Thông hiểu - Tìm số k biểu thị hai vectơ đối",
+      "source": "Đề thi khảo sát Toán 10",
+      "question": "Cho đoạn thẳng $AB$ có trung điểm $I$. Số thực $k$ thỏa mãn $\\vec{IA} = k\\vec{AB}$ là:",
+      "options": [
+        "$-\\frac{1}{2}$",
+        "$\\frac{1}{2}$",
+        "$-2$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$IA = \\frac{1}{2}AB$, chiều từ $I \\to A$ ngược với $A \\to B$ nên $\\vec{IA} = -\\frac{1}{2}\\vec{AB} \\implies k = -\\frac{1}{2}$."
+    },
+    {
+      "id": "quiz-10.9.8",
+      "badge": "Thông hiểu - Phân tích vectơ trong hình bình hành",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho hình bình hành $ABCD$. Gọi $M$ là trung điểm của $BC$. Phân tích vectơ $\\vec{AM}$ theo hai vectơ $\\vec{AB}$ và $\\vec{AD}$:",
+      "options": [
+        "$\\vec{AM} = \\vec{AB} + \\frac{1}{2}\\vec{AD}$",
+        "$\\vec{AM} = \\frac{1}{2}\\vec{AB} + \\vec{AD}$",
+        "$\\vec{AM} = \\vec{AB} + \\vec{AD}$",
+        "$\\vec{AM} = 2\\vec{AB} + \\vec{AD}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\vec{AM} = \\vec{AB} + \\vec{BM} = \\vec{AB} + \\frac{1}{2}\\vec{BC}$. Do $\\vec{BC} = \\vec{AD}$ nên $\\vec{AM} = \\vec{AB} + \\frac{1}{2}\\vec{AD}$."
+    },
+    {
+      "id": "quiz-10.9.9",
+      "badge": "Thông hiểu - Ba điểm thẳng hàng",
+      "source": "Đề kiểm tra chuyên đề Vectơ",
+      "question": "Điều kiện cần và đủ để ba điểm phân biệt $A, B, C$ thẳng hàng là tồn tại số thực $k$ sao cho:",
+      "options": [
+        "$\\vec{AB} = k\\vec{AC}$",
+        "$|\\vec{AB}| = k|\\vec{AC}|$",
+        "$\\vec{AB} + \\vec{AC} = k\\vec{0}$",
+        "$\\vec{AB} = k\\vec{BC}$ với $k = 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\vec{AB}$ và $\\vec{AC}$ cùng phương, tức là $\\vec{AB} = k\\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.9.10",
+      "badge": "Thông hiểu - Rút gọn tổ hợp tuyến tính vectơ",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Thu gọn biểu thức $\\vec{u} = 2(\\vec{a} + 3\\vec{b}) - 3(2\\vec{a} - \\vec{b})$ được kết quả là:",
+      "options": [
+        "$-4\\vec{a} + 9\\vec{b}$",
+        "$-4\\vec{a} + 3\\vec{b}$",
+        "$8\\vec{a} + 9\\vec{b}$",
+        "$-4\\vec{a} - 9\\vec{b}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{u} = 2\\vec{a} + 6\\vec{b} - 6\\vec{a} + 3\\vec{b} = -4\\vec{a} + 9\\vec{b}$."
+    },
+    {
+      "id": "quiz-10.9.11",
+      "badge": "Thông hiểu - Độ dài vectơ tích số",
+      "source": "Đề thi học kì 1 Toán 10",
+      "question": "Cho tam giác đều $ABC$ cạnh bằng $4$. Độ dài của vectơ $\\vec{u} = 3\\vec{AB}$ bằng:",
+      "options": [
+        "$12$",
+        "$7$",
+        "$4$",
+        "$9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$|\\vec{u}| = |3\\vec{AB}| = 3|\\vec{AB}| = 3 \\times 4 = 12$."
+    },
+    {
+      "id": "quiz-10.9.12",
+      "badge": "Thông hiểu - Độ dài vectơ có hệ số âm",
+      "source": "Bộ đề Toán 10 KNTT",
+      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a$. Độ dài của vectơ $\\vec{v} = -2\\vec{AC}$ bằng:",
+      "options": [
+        "$2a\\sqrt{2}$",
+        "$-2a\\sqrt{2}$",
+        "$a\\sqrt{2}$",
+        "$4a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$|-2\\vec{AC}| = |-2| \\cdot |\\vec{AC}| = 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
+    },
+    {
+      "id": "quiz-10.9.13",
+      "badge": "Vận dụng - Phân tích vectơ trọng tâm theo hai cạnh",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ có trọng tâm $G$. Phân tích vectơ $\\vec{AG}$ theo hai vectơ $\\vec{AB}$ và $\\vec{AC}$:",
+      "options": [
+        "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$",
+        "$\\vec{AG} = \\frac{2}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$",
+        "$\\vec{AG} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC}$",
+        "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi $M$ là trung điểm $BC$, ta có $\\vec{AM} = \\frac{1}{2}(\\vec{AB} + \\vec{AC})$. Vì $\\vec{AG} = \\frac{2}{3}\\vec{AM}$ nên $\\vec{AG} = \\frac{2}{3} \\cdot \\frac{1}{2}(\\vec{AB} + \\vec{AC}) = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.9.14",
+      "badge": "Thông hiểu - Tỉ số hai vectơ cùng phương",
+      "source": "SBT Toán 10",
+      "question": "Cho ba điểm $A, B, C$ thẳng hàng thỏa mãn $\\vec{AB} = -3\\vec{AC}$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "$A$ nằm giữa $B$ và $C$, $AB = 3AC$.",
+        "$C$ nằm giữa $A$ và $B$, $AB = 3AC$.",
+        "$B$ nằm giữa $A$ và $C$, $AB = 3AC$.",
+        "$A$ nằm giữa $B$ và $C$, $AC = 3AB$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $k = -3 < 0$ nên hai vectơ $\\vec{AB}$ và $\\vec{AC}$ ngược hướng, suy ra điểm $A$ nằm giữa $B$ và $C$. Độ dài $AB = |-3|AC = 3AC$."
+    },
+    {
+      "id": "quiz-10.9.15",
+      "badge": "Thông hiểu - Phân tích vectơ trên cạnh tam giác",
+      "source": "Đề khảo sát Toán 10",
+      "question": "Cho tam giác $ABC$. Lấy điểm $D$ trên cạnh $BC$ sao cho $BD = 2DC$. Phân tích vectơ $\\vec{AD}$ theo $\\vec{AB}$ và $\\vec{AC}$:",
+      "options": [
+        "$\\vec{AD} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$",
+        "$\\vec{AD} = \\frac{2}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$",
+        "$\\vec{AD} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC}$",
+        "$\\vec{AD} = \\vec{AB} + 2\\vec{AC}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\vec{BD} = \\frac{2}{3}\\vec{BC} = \\frac{2}{3}(\\vec{AC} - \\vec{AB})$. Do đó $\\vec{AD} = \\vec{AB} + \\vec{BD} = \\vec{AB} + \\frac{2}{3}\\vec{AC} - \\frac{2}{3}\\vec{AB} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.9.16",
+      "badge": "Vận dụng - Độ dài vectơ kết hợp",
+      "source": "Đề thi HSG Toán 10",
+      "question": "Cho tam giác vuông cân $ABC$ tại $A$ có $AB = AC = 2$. Độ dài của vectơ $\\vec{u} = 2\\vec{AB} + \\vec{AC}$ bằng:",
+      "options": [
+        "$2\\sqrt{5}$",
+        "$6$",
+        "$2\\sqrt{3}$",
+        "$4\\sqrt{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì tam giác vuông tại $A$ nên $AB \\perp AC$. Độ dài: $|\\vec{u}| = \\sqrt{(2AB)^2 + AC^2} = \\sqrt{(2 \\times 2)^2 + 2^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$."
+    },
+    {
+      "id": "quiz-10.9.17",
+      "badge": "Thông hiểu - Đẳng thức điểm M",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho hai điểm $A, B$. Điểm $M$ thỏa mãn $\\vec{MA} + 2\\vec{MB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "$M$ nằm trên đoạn $AB$ sao cho $MA = 2MB$.",
+        "$M$ nằm ngoài đoạn $AB$ sao cho $MA = 2MB$.",
+        "$M$ là trung điểm của $AB$.",
+        "$M$ nằm trên đoạn $AB$ sao cho $MB = 2MA$."
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{MA} + 2\\vec{MB} = \\vec{0} \\iff \\vec{MA} = -2\\vec{MB}$. Hai vectơ ngược hướng nên $M$ nằm giữa $A$ và $B$, độ dài $MA = 2MB$."
+    },
+    {
+      "id": "quiz-10.9.18",
+      "badge": "Vận dụng cao - Tìm k để ba điểm thẳng hàng",
+      "source": "Bộ đề ôn thi Toán 10",
+      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $AB$, $N$ là điểm trên cạnh $AC$ sao cho $NC = 2NA$. Gọi $K$ là trung điểm của $MN$. Khi biểu diễn $\\vec{AK} = x\\vec{AB} + y\\vec{AC}$, cặp số $(x; y)$ là:",
+      "options": [
+        "$(\\frac{1}{4}; \\frac{1}{6})$",
+        "$(\\frac{1}{2}; \\frac{1}{3})$",
+        "$(\\frac{1}{4}; \\frac{1}{3})$",
+        "$(\\frac{1}{2}; \\frac{1}{6})$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\vec{AM} = \\frac{1}{2}\\vec{AB}$, $\\vec{AN} = \\frac{1}{3}\\vec{AC}$. Vì $K$ là trung điểm $MN$ nên $\\vec{AK} = \\frac{1}{2}(\\vec{AM} + \\vec{AN}) = \\frac{1}{2}(\\frac{1}{2}\\vec{AB} + \\frac{1}{3}\\vec{AC}) = \\frac{1}{4}\\vec{AB} + \\frac{1}{6}\\vec{AC}$."
+    },
+    {
+      "id": "quiz-10.9.19",
+      "badge": "Vận dụng - Bài toán thực tế ô tô tăng tốc",
+      "source": "Vật lý 10 & Vectơ thực tế",
+      "question": "Một chiếc xe đang chạy thẳng đều với vận tốc $\\vec{v}_0$ có độ lớn $40\\text{ km/h}$. Người lái xe tăng tốc để vận tốc mới đạt $\\vec{v} = 1.8\\vec{v}_0$. Độ lớn của vận tốc mới là:",
+      "options": [
+        "$72\\text{ km/h}$",
+        "$58\\text{ km/h}$",
+        "$80\\text{ km/h}$",
+        "$60\\text{ km/h}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$|\\vec{v}| = |1.8\\vec{v}_0| = 1.8 \\times 40 = 72\\text{ km/h}$."
+    },
+    {
+      "id": "quiz-10.9.20",
+      "badge": "Vận dụng cao - Trọng tâm hệ hạt khối lượng",
+      "source": "SGK Toán 10 KNTT Bài 9",
+      "question": "Hai chất điểm có khối lượng $m_1 = 2\\text{ kg}$ tại điểm $A$ và $m_2 = 3\\text{ kg}$ tại điểm $B$. Khối tâm (trọng tâm hệ) $G$ của hai chất điểm được định nghĩa bởi hệ thức $2\\vec{GA} + 3\\vec{GB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "Điểm $G$ nằm trên đoạn $AB$ và $GA = \\frac{3}{2}GB$.",
+        "Điểm $G$ nằm ngoài đoạn $AB$ và $GA = \\frac{3}{2}GB$.",
+        "Điểm $G$ là trung điểm của đoạn thẳng $AB$.",
+        "Điểm $G$ nằm trên đoạn $AB$ và $GB = \\frac{3}{2}GA$."
+      ],
+      "correctIndex": 0,
+      "explanation": "$2\\vec{GA} + 3\\vec{GB} = \\vec{0} \\iff \\vec{GA} = -\\frac{3}{2}\\vec{GB}$. Vì hệ số âm nên $G$ nằm giữa $A$ và $B$, độ dài $GA = \\frac{3}{2}GB$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.9.1",
+      "badge": "Đúng / Sai 1 - Tính chất tích vectơ với số",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho vectơ $\\vec{a} \\ne \\vec{0}$ và các số thực $k, m$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $k > 0$ thì vectơ $k\\vec{a}$ cùng hướng với vectơ $\\vec{a}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa tích vectơ với số dương."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài $|k\\vec{a}| = k|\\vec{a}|$ với mọi số thực $k$.",
+          "correctAnswer": false,
+          "explanation": "Sai: khi $k < 0$ thì $|k\\vec{a}| = -k|\\vec{a}| = |k| \\cdot |\\vec{a}|$, không phải $k|\\vec{a}|$."
+        },
+        {
+          "id": "c",
+          "text": "Vectơ $0\\vec{a} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo quy ước số 0 nhân vectơ cho kết quả là vectơ-không."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $k\\vec{a} = m\\vec{a}$ thì chắc chắn $k = m$.",
+          "correctAnswer": true,
+          "explanation": "Vì $\\vec{a} \\ne \\vec{0}$ nên $(k - m)\\vec{a} = \\vec{0} \\implies k - m = 0 \\iff k = m$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.2",
+      "badge": "Đúng / Sai 2 - Hệ thức trọng tâm và trung điểm",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$, trọng tâm $G$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AG} = \\frac{2}{3}\\vec{AM}$.",
+          "correctAnswer": true,
+          "explanation": "$G$ nằm trên $AM$ và $AG = \\frac{2}{3}AM$, cùng hướng nên $\\vec{AG} = \\frac{2}{3}\\vec{AM}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Tính chất trọng tâm tam giác."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{GM} = -\\frac{1}{2}\\vec{GA}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{GM}$ và $\\vec{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\vec{GM} = -\\frac{1}{2}\\vec{GA}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{AB} + \\vec{AC} = 3\\vec{AG}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AB} + \\vec{AC} = 2\\vec{AM} = 2 \\cdot \\frac{3}{2}\\vec{AG} = 3\\vec{AG}$."
+        }
+      ],
+      "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <polygon points=\"260,40 100,240 420,240\" fill=\"#1e1b4b\" fill-opacity=\"0.5\" stroke=\"#818cf8\" stroke-width=\"2\"/>\n  <!-- Trung điểm M của BC: (260, 240) -->\n  <!-- Trung tuyến AM từ (260, 40) đến (260, 240) -->\n  <line x1=\"260\" y1=\"40\" x2=\"260\" y2=\"240\" stroke=\"#fbbf24\" stroke-width=\"2\"/>\n  <!-- Trọng tâm G chia AM tỉ lệ 2:1 -> G = (260, 40 + 200*2/3) = (260, 173.3) -->\n  <circle cx=\"260\" cy=\"173.3\" r=\"5\" fill=\"#f43f5e\"/>\n  <text x=\"275\" y=\"178\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">G (Trọng tâm)</text>\n  <!-- Điểm đỉnh -->\n  <circle cx=\"260\" cy=\"40\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"255\" y=\"30\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"100\" cy=\"240\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"80\" y=\"255\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"420\" cy=\"240\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"430\" y=\"255\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"260\" cy=\"240\" r=\"4\" fill=\"#fbbf24\"/>\n  <text x=\"255\" y=\"260\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">M</text>\n  <!-- Chú thích công thức -->\n  <text x=\"260\" y=\"290\" fill=\"#cbd5e1\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">vec(GA) + vec(GB) + vec(GC) = vec(0)   |   vec(AG) = (2/3)*vec(AM)</text>\n</svg>"
+    },
+    {
+      "id": "tf-10.9.3",
+      "badge": "Đúng / Sai 3 - Điểm chia đoạn thẳng theo tỉ lệ",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho đoạn thẳng $AB$ có độ dài $12\\text{ cm}$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 8\\text{ cm}$. Xét tính Đúng/Sai của các đẳng thức sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AM} = \\frac{2}{3}\\vec{AB}$.",
+          "correctAnswer": true,
+          "explanation": "$\\frac{AM}{AB} = \\frac{8}{12} = \\frac{2}{3}$ và cùng hướng nên $\\vec{AM} = \\frac{2}{3}\\vec{AB}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{MB} = -\\frac{1}{3}\\vec{AB}$.",
+          "correctAnswer": false,
+          "explanation": "$\\vec{MB}$ cùng hướng với $\\vec{AB}$ và $MB = 4 = \\frac{1}{3}AB$ nên $\\vec{MB} = \\frac{1}{3}\\vec{AB}$, không có dấu trừ."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{MA} + 2\\vec{MB} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{MA}$ ngược hướng $\\vec{MB}$ và $MA = 2MB \\implies \\vec{MA} = -2\\vec{MB} \\iff \\vec{MA} + 2\\vec{MB} = \\vec{0}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{BA} = -\\frac{3}{2}\\vec{AM}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{BA} = -\\vec{AB} = -\\frac{3}{2}\\vec{AM}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.4",
+      "badge": "Đúng / Sai 4 - Phân tích vectơ trong hình bình hành",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho hình bình hành $ABCD$. Gọi $I$ là trung điểm của $CD$. Xét tính Đúng/Sai của các phép phân tích vectơ sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{AI} = \\vec{AD} + \\frac{1}{2}\\vec{AB}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{AI} = \\vec{AD} + \\vec{DI} = \\vec{AD} + \\frac{1}{2}\\vec{DC} = \\vec{AD} + \\frac{1}{2}\\vec{AB}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AC} = \\vec{AB} + \\vec{AD}$.",
+          "correctAnswer": true,
+          "explanation": "Quy tắc hình bình hành."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{BD} = \\vec{AD} - \\vec{AB}$.",
+          "correctAnswer": true,
+          "explanation": "Quy tắc trừ: $\\vec{AD} - \\vec{AB} = \\vec{BD}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{AI} = \\frac{1}{2}\\vec{AC} + \\frac{1}{2}\\vec{AD}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $I$ là trung điểm $CD$ nên $\\vec{AI} = \\frac{1}{2}(\\vec{AC} + \\vec{AD})$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.5",
+      "badge": "Đúng / Sai 5 - Ba điểm thẳng hàng",
+      "source": "Đề thi HSG Toán 10",
+      "prompt": "Cho tam giác $ABC$. Lấy các điểm $M, N$ sao cho $\\vec{AM} = 3\\vec{AB}$ và $\\vec{AN} = 3\\vec{AC}$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\vec{MN} = 3\\vec{BC}$.",
+          "correctAnswer": true,
+          "explanation": "$\\vec{MN} = \\vec{AN} - \\vec{AM} = 3\\vec{AC} - 3\\vec{AB} = 3(\\vec{AC} - \\vec{AB}) = 3\\vec{BC}$."
+        },
+        {
+          "id": "b",
+          "text": "Hai đường thẳng $MN$ và $BC$ song song với nhau.",
+          "correctAnswer": true,
+          "explanation": "Vì $\\vec{MN} = 3\\vec{BC}$ và $M \\notin BC$ nên $MN // BC$."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài đoạn thẳng $MN$ gấp 3 lần độ dài đoạn thẳng $BC$.",
+          "correctAnswer": true,
+          "explanation": "$MN = |3\\vec{BC}| = 3BC$."
+        },
+        {
+          "id": "d",
+          "text": "Ba điểm $A, M, N$ thẳng hàng.",
+          "correctAnswer": false,
+          "explanation": "Tam giác $AMN$ đồng dạng tam giác $ABC$, ba điểm $A, M, N$ không thẳng hàng vì $A, B, C$ không thẳng hàng."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.6",
+      "badge": "Đúng / Sai 6 - Biểu thị vectơ tâm tỉ cự",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$. Gọi $I$ là điểm thỏa mãn $\\vec{IA} + 2\\vec{IB} + 3\\vec{IC} = \\vec{0}$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Với mọi điểm $M$, ta có $\\vec{MA} + 2\\vec{MB} + 3\\vec{MC} = 6\\vec{MI}$.",
+          "correctAnswer": true,
+          "explanation": "Chèn điểm $I$: $\\vec{MI} + \\vec{IA} + 2(\\vec{MI} + \\vec{IB}) + 3(\\vec{MI} + \\vec{IC}) = 6\\vec{MI} + (\\vec{IA} + 2\\vec{IB} + 3\\vec{IC}) = 6\\vec{MI}$."
+        },
+        {
+          "id": "b",
+          "text": "Điểm $I$ là duy nhất xác định.",
+          "correctAnswer": true,
+          "explanation": "Với gốc $A$, $6\\vec{AI} = 2\\vec{AB} + 3\\vec{AC} \\implies \\vec{AI} = \\frac{1}{3}\\vec{AB} + \\frac{1}{2}\\vec{AC}$, điểm $I$ xác định duy nhất."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{AI} = \\frac{1}{3}\\vec{AB} + \\frac{1}{2}\\vec{AC}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo chứng minh trên."
+        },
+        {
+          "id": "d",
+          "text": "Điểm $I$ trùng với trọng tâm của tam giác $ABC$.",
+          "correctAnswer": false,
+          "explanation": "Trọng tâm thỏa mãn hệ số $1:1:1$, còn ở đây hệ số là $1:2:3$ nên $I$ không phải trọng tâm."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.7",
+      "badge": "Đúng / Sai 7 - Độ dài vectơ hình học",
+      "source": "Đề kiểm tra định kì Toán 10",
+      "prompt": "Cho hình vuông $ABCD$ cạnh bằng $a$, tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$|2\\vec{AB} + 2\\vec{AD}| = 2a\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$2(\\vec{AB} + \\vec{AD}) = 2\\vec{AC} \\implies 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
+        },
+        {
+          "id": "b",
+          "text": "$|\\frac{1}{2}\\vec{AC}| = \\frac{a\\sqrt{2}}{2}$.",
+          "correctAnswer": true,
+          "explanation": "$|\\vec{OA}| = \\frac{1}{2}AC = \\frac{a\\sqrt{2}}{2}$."
+        },
+        {
+          "id": "c",
+          "text": "$|-3\\vec{AB}| = 3a$.",
+          "correctAnswer": true,
+          "explanation": "$|-3| \\cdot |\\vec{AB}| = 3a$."
+        },
+        {
+          "id": "d",
+          "text": "$|2\\vec{AB} - 2\\vec{AD}| = 0$.",
+          "correctAnswer": false,
+          "explanation": "$2(\\vec{AB} - \\vec{AD}) = 2\\vec{DB} \\implies 2a\\sqrt{2} \\ne 0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.9.8",
+      "badge": "Đúng / Sai 8 - Vận tốc biến đổi trong chuyển động",
+      "source": "Ứng dụng Vật lý và Thực tế",
+      "prompt": "Một chiếc ca nô đang chạy với vectơ vận tốc ban đầu $\\vec{v}_0$ có độ lớn $15\\text{ km/h}$ theo hướng Đông. Xét tính Đúng/Sai của các tình huống sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu ca nô tăng tốc để vận tốc mới là $\\vec{v}_1 = 2\\vec{v}_0$ thì ca nô vẫn chạy theo hướng Đông với tốc độ $30\\text{ km/h}$.",
+          "correctAnswer": true,
+          "explanation": "Hệ số $2 > 0$ cùng hướng, độ lớn $2 \\times 15 = 30\\text{ km/h}$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu ca nô chuyển sang chạy lùi với vận tốc $\\vec{v}_2 = -0.5\\vec{v}_0$ thì ca nô chạy theo hướng Tây với tốc độ $7.5\\text{ km/h}$.",
+          "correctAnswer": true,
+          "explanation": "Hệ số âm đảo ngược từ Đông sang Tây, độ lớn $|-0.5| \\times 15 = 7.5\\text{ km/h}$."
+        },
+        {
+          "id": "c",
+          "text": "Hai vectơ $\\vec{v}_1$ và $\\vec{v}_2$ cùng phương với nhau.",
+          "correctAnswer": true,
+          "explanation": "Cả hai đều cùng phương với $\\vec{v}_0$ (nằm trên trục Đông - Tây)."
+        },
+        {
+          "id": "d",
+          "text": "Độ lớn của $\\vec{v}_2$ lớn hơn độ lớn của $\\vec{v}_0$.",
+          "correctAnswer": false,
+          "explanation": "$7.5\\text{ km/h} < 15\\text{ km/h}$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.9.1",
+      "badge": "Trả lời ngắn 1 - Độ dài tích vectơ",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = -4\\vec{AB}$.",
+      "correctAnswer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "explanation": "$|-4\\vec{AB}| = |-4| \\cdot |\\vec{AB}| = 4 \\times 5 = 20$."
+    },
+    {
+      "id": "sa-10.9.2",
+      "badge": "Trả lời ngắn 2 - Tỉ số k của trọng tâm",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\vec{GA} = k\\vec{GM}$. Tìm giá trị của số thực $k$.",
+      "correctAnswer": "-2",
+      "acceptableAnswers": [
+        "-2"
+      ],
+      "explanation": "Vì $\\vec{GA}$ và $\\vec{GM}$ ngược hướng và $GA = 2GM$ nên $\\vec{GA} = -2\\vec{GM} \\implies k = -2$."
+    },
+    {
+      "id": "sa-10.9.3",
+      "badge": "Trả lời ngắn 3 - Tỉ số k của trung tuyến",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\vec{AG} = k\\vec{AM}$. Tìm giá trị của số thực $k$ (viết dưới dạng phân số tối giản a/b).",
+      "correctAnswer": "2/3",
+      "acceptableAnswers": [
+        "2/3",
+        "0.67"
+      ],
+      "explanation": "$\\vec{AG} = \\frac{2}{3}\\vec{AM} \\implies k = \\frac{2}{3}$."
+    },
+    {
+      "id": "sa-10.9.4",
+      "badge": "Trả lời ngắn 4 - Độ dài vectơ đường chéo",
+      "source": "Bộ đề Toán 10",
+      "prompt": "Cho hình vuông $ABCD$ cạnh $3$. Tính độ dài của vectơ $\\vec{u} = 2\\vec{AB} + 2\\vec{AD}$ (làm tròn đến hàng phần mười).",
+      "correctAnswer": "8.5",
+      "acceptableAnswers": [
+        "8.5",
+        "8,5",
+        "6*sqrt(2)"
+      ],
+      "explanation": "$2(\\vec{AB} + \\vec{AD}) = 2\\vec{AC} \\implies 2 \\times 3\\sqrt{2} = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
+    },
+    {
+      "id": "sa-10.9.5",
+      "badge": "Trả lời ngắn 5 - Tìm số k trong đẳng thức vectơ",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 2$. Biết $\\vec{MA} = k\\vec{MB}$. Tìm giá trị của số thực $k$.",
+      "correctAnswer": "-0.25",
+      "acceptableAnswers": [
+        "-0.25",
+        "-1/4",
+        "-0,25"
+      ],
+      "explanation": "$MB = 10 - 2 = 8$. Vì $M$ nằm giữa $A$ và $B$ nên $\\vec{MA}$ ngược hướng $\\vec{MB}$. Tỉ số độ dài $\\frac{MA}{MB} = \\frac{2}{8} = \\frac{1}{4} \\implies \\vec{MA} = -\\frac{1}{4}\\vec{MB} \\implies k = -0.25$."
+    },
+    {
+      "id": "sa-10.9.6",
+      "badge": "Trả lời ngắn 6 - Độ dài vectơ tam giác vuông",
+      "source": "Đề thi học kì 1 Toán 10",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3, AC = 4$. Tính độ dài của vectơ $\\vec{u} = 2\\vec{AB} + \\frac{3}{2}\\vec{AC}$.",
+      "correctAnswer": "8.5",
+      "acceptableAnswers": [
+        "8.5",
+        "8,5",
+        "sqrt(72)"
+      ],
+      "explanation": "Do $AB \\perp AC$, $|\\vec{u}| = \\sqrt{(2AB)^2 + (1.5AC)^2} = \\sqrt{6^2 + 6^2} = \\sqrt{72} = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
+    },
+    {
+      "id": "sa-10.9.7",
+      "badge": "Trả lời ngắn 7 - Tìm hệ số phân tích vectơ",
+      "source": "SBT Toán 10",
+      "prompt": "Cho tam giác $ABC$ có trọng tâm $G$. Biểu diễn $\\vec{AG} = x\\vec{AB} + y\\vec{AC}$. Tính giá trị của tổng $S = x + y$ (viết dưới dạng phân số tối giản a/b).",
+      "correctAnswer": "2/3",
+      "acceptableAnswers": [
+        "2/3",
+        "0.67"
+      ],
+      "explanation": "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC} \\implies x = \\frac{1}{3}, y = \\frac{1}{3} \\implies S = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}$."
+    },
+    {
+      "id": "sa-10.9.8",
+      "badge": "Trả lời ngắn 8 - Độ dài vectơ tam giác đều",
+      "source": "Đề kiểm tra Toán 10",
+      "prompt": "Cho tam giác đều $ABC$ cạnh $2\\sqrt{3}$. Gọi $M$ là trung điểm $BC$. Tính độ dài vectơ $2\\vec{AM}$.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "$AM = \\frac{2\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3 \\implies |2\\vec{AM}| = 2 \\times 3 = 6$."
+    },
+    {
+      "id": "sa-10.9.9",
+      "badge": "Trả lời ngắn 9 - Khối tâm hai chất điểm",
+      "source": "Ứng dụng Vật lý",
+      "prompt": "Hai vật nặng có khối lượng $m_1 = 3\\text{ kg}$ đặt tại $A$ và $m_2 = 1\\text{ kg}$ đặt tại $B$ cách nhau $12\\text{ cm}$. Khối tâm $G$ thỏa mãn $3\\vec{GA} + \\vec{GB} = \\vec{0}$. Tính khoảng cách $GA$ (theo cm).",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3 cm"
+      ],
+      "explanation": "$3GA = GB$ và $GA + GB = 12 \\implies 4GA = 12 \\implies GA = 3\\text{ cm}$."
+    },
+    {
+      "id": "sa-10.9.10",
+      "badge": "Trả lời ngắn 10 - Tỉ số k của điểm thẳng hàng",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$. Điểm $N$ nằm trên cạnh $AC$ sao cho $AN = 3NC$. Biết $\\vec{AN} = k\\vec{AC}$. Tìm $k$.",
+      "correctAnswer": "0.75",
+      "acceptableAnswers": [
+        "0.75",
+        "3/4",
+        "0,75"
+      ],
+      "explanation": "$AC = AN + NC = 3NC + NC = 4NC \\implies AN = \\frac{3}{4}AC \\implies \\vec{AN} = \\frac{3}{4}\\vec{AC} \\implies k = 0.75$."
+    },
+    {
+      "id": "sa-10.9.11",
+      "badge": "Trả lời ngắn 11 - Vận tốc xe máy sau khi tăng tốc",
+      "source": "Bài toán thực tế Vectơ",
+      "prompt": "Một chiếc xe máy đang đi với vận tốc $36\\text{ km/h}$. Người lái vặn ga tăng tốc theo hướng cũ với gia tốc đều sao cho vận tốc mới là $\\vec{v} = 1.5\\vec{v}_0$. Tính tốc độ mới của xe máy (theo km/h).",
+      "correctAnswer": "54",
+      "acceptableAnswers": [
+        "54",
+        "54 km/h"
+      ],
+      "explanation": "$v = 1.5 \\times 36 = 54\\text{ km/h}$."
+    },
+    {
+      "id": "sa-10.9.12",
+      "badge": "Trả lời ngắn 12 - Lực kéo tác dụng lên xe",
+      "source": "Toán học và Đời sống",
+      "prompt": "Một động cơ điện tác dụng một lực kéo $\\vec{F}_0$ có độ lớn $250\\text{ N}$. Khi chuyển sang chế độ tăng cường (turbo), lực kéo đạt $\\vec{F} = 2.4\\vec{F}_0$. Tính độ lớn của lực kéo mới (theo Niutơn).",
+      "correctAnswer": "600",
+      "acceptableAnswers": [
+        "600",
+        "600 N"
+      ],
+      "explanation": "$F = 2.4 \\times 250 = 600\\text{ N}$."
+    }
+  ]
+}
+
 };

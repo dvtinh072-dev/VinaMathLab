@@ -1578,7 +1578,7 @@ export default function GiaoVienPage() {
                   }`}
                 >
                   <Upload className="w-3.5 h-3.5" />
-                  <span>Tải File Word (.docx) / Text (.txt)</span>
+                  <span>Tải File Đề Thi (Word, PDF, Ảnh Chụp, Text)</span>
                 </button>
               </div>
 
@@ -1622,21 +1622,22 @@ Câu 3: Tìm x...
                   </div>
                   <div className="space-y-1">
                     <p className="text-xs font-bold text-slate-200">
-                      Chọn file đề kiểm tra Word (.docx) hoặc Text (.txt) từ máy tính
+                      Tải lên file Word (.docx), PDF (.pdf) hoặc File Ảnh Chụp (.png, .jpg, .jpeg)
                     </p>
                     <p className="text-[11px] text-slate-400">
-                      Hệ thống tự động trích xuất nội dung văn bản và phân tích cú pháp câu hỏi
+                      Hệ thống tự động trích xuất văn bản hoặc dùng Trí tuệ nhân tạo (AI Vision OCR) để nhận diện công thức toán học và chuyển hóa thành câu hỏi tương tác.
                     </p>
                   </div>
                   <input
                     type="file"
-                    accept=".docx,.txt,.md"
+                    accept=".docx,.txt,.md,.pdf,.png,.jpg,.jpeg,.webp,.bmp"
                     onChange={handleFileUpload}
                     className="text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-600 file:text-white hover:file:bg-blue-500 cursor-pointer"
                   />
                   {isParsingFile && (
-                    <div className="text-xs text-cyan-400 font-bold animate-pulse">
-                      Đang phân tích file đề thi...
+                    <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/30 text-xs text-cyan-300 font-bold animate-pulse flex items-center justify-center gap-2">
+                      <Sparkles className="w-4 h-4 animate-spin text-cyan-400" />
+                      <span>Đang phân tích & nhận diện đề thi (Word / PDF / AI Vision OCR)... Vui lòng đợi trong giây lát</span>
                     </div>
                   )}
                 </div>

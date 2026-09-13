@@ -26,10 +26,10 @@ import {
 } from "@/lib/vinaAiChatClient";
 
 const SUGGESTED_QUESTIONS = [
+  "Định lý cosin trong tam giác?",
+  "Định lý sin và bán kính ngoại tiếp?",
   "7 hằng đẳng thức đáng nhớ là gì?",
   "Công thức nghiệm phương trình bậc hai và Viète?",
-  "Định lý cosin và công thức tính diện tích tam giác?",
-  "Công thức nhân đôi và cộng lượng giác?",
   "Quy tắc tính đạo hàm và phương trình tiếp tuyến?",
   "Công thức xác suất có điều kiện và Bayes?",
 ];
@@ -54,11 +54,11 @@ export function VinaAiChatWidget() {
           sender: "vina",
           text:
             "Xin chào em! Thầy/Cô là **Trợ lý AI Vina** của VinaMath. Em có thắc mắc gì về công thức, định lý hay phương pháp giải Toán từ Lớp 6 đến Lớp 12 không?\n\n" +
-            "💡 *Mọi câu trả lời của Vina đều được trích dẫn 100% từ SGK Kết nối tri thức và Chương trình GDPT 2018 của Bộ GD&ĐT, kèm nguồn gốc rõ ràng.*",
+            "💡 *Em hãy nhập tên bài học, định lý hoặc câu hỏi toán học cần giải đáp nhé!*",
           sources: [
             {
               title: "Bộ Giáo Dục và Đào Tạo - Chương trình GDPT 2018",
-              citation: "SGK Toán 6-12 Kết Nối Tri Thức & Hệ thống giáo án VinaMath",
+              citation: "SGK Toán 6-12 Kết Nối Tri Thức & Hệ thống học liệu VinaMath",
               url: "https://moet.gov.vn",
             },
           ],

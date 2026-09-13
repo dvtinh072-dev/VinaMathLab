@@ -169,11 +169,11 @@ export async function POST(request: Request) {
       const stepText = k.standardSteps && k.standardSteps.length > 0
         ? "\n#### 📌 Các bước áp dụng chuẩn:\n" + k.standardSteps.join("\n") + "\n"
         : "";
-      answerText = "Chào em! Thầy/Cô AI **Vina** đã đối chiếu và tra cứu câu hỏi của em trong học liệu chính thống:\n\n" +
+      answerText = "Chào em! Dưới đây là kiến thức chuẩn mực về **" + k.topic + "** được trích dẫn từ sách giáo khoa:\n\n" +
         "### 📖 " + k.topic + "\n" +
         k.officialContent + "\n" +
         stepText +
-        "\n> ⚠️ **Cam kết tư liệu chính thống:** Toàn bộ câu trả lời trên được trích dẫn chính xác theo chuẩn chương trình GDPT 2018 của Bộ Giáo dục và Đào tạo, tuyệt đối không suy diễn ngoài tài liệu sư phạm.";
+        "\n📚 **Nguồn trích dẫn:** *" + k.sourceCitation + "*";
       sourcesList = [{
         title: k.sourceName,
         citation: k.sourceCitation,
@@ -188,9 +188,9 @@ export async function POST(request: Request) {
         const descText = curMatch.description ? "**Tóm tắt cốt lõi:** " + curMatch.description + "\n\n" : "";
         const theoryText = curMatch.theory ? "**Kiến thức trọng tâm:**\n- " + curMatch.theory.points.join("\n- ") + "\n" : "";
         const formulaText = curMatch.formulas && curMatch.formulas.length > 0 ? "\n**Công thức trọng tâm:**\n$$" + curMatch.formulas.join("$$ và $$") + "$$\n" : "";
-        answerText = "Chào em! AI **Vina** xin gửi tới em kiến thức chuẩn của **" + curMatch.lessonTitle + "** (" + curMatch.bookChapter + "):\n\n" +
+        answerText = "Chào em! Dưới đây là kiến thức chuẩn của bài học **" + curMatch.lessonTitle + "** (" + curMatch.bookChapter + "):\n\n" +
           descText + theoryText + formulaText +
-          "\n> ⚠️ **Cam kết tư liệu:** Trích xuất nguyên bản từ hệ thống giáo án điện tử SGK Kết nối tri thức với cuộc sống của dự án VinaMath.";
+          "\n📚 **Nguồn trích dẫn:** *Chương trình Giáo dục phổ thông 2018 môn Toán - " + curMatch.bookChapter + "*";
         sourcesList = [{
           title: "SGK Kết Nối Tri Thức Với Cuộc Sống - " + curMatch.bookChapter,
           citation: "Chương trình Giáo dục phổ thông 2018 môn Toán, " + curMatch.lessonTitle,
@@ -198,13 +198,12 @@ export async function POST(request: Request) {
         }];
       } else {
         isKnowledgeHit = false;
-        answerText = "Chào em! Trợ lý AI **Vina** tuân thủ nguyên tắc sư phạm: **\"Tuyệt đối không tự suy diễn hoặc bịa đặt kiến thức khi chưa có tư liệu giáo dục chính thống đối chiếu\"**.\n\n" +
-          "Hiện tại, hệ thống chưa tìm thấy mục bài học hoặc định lý đối chiếu chính xác cho câu hỏi:\n" +
+        answerText = "Chào em! Hiện tại hệ thống chưa tìm thấy mục bài học hoặc định lý đối chiếu cho câu hỏi:\n" +
           "*" + trimmedQ + "*\n\n" +
-          "💡 **Gợi ý cho em:**\n" +
-          "1. Em có thể nhập từ khóa ngắn gọn hơn (ví dụ: *\"định lý cosin\"*, *\"hằng đẳng thức\"*, *\"căn bậc hai\"*, *\"cấp số cộng\"*, *\"đạo hàm\"*...).\n" +
-          "2. Hoặc ghi rõ lớp học (ví dụ: *\"Toán 6 dấu hiệu chia hết\"*, *\"Toán 10 công thức lượng giác\"*).\n" +
-          "3. Thầy/Cô quản trị đã ghi nhận câu hỏi này để kịp thời bổ sung tài liệu chính thống giải đáp cho em!";
+          "💡 **Gợi ý tra cứu:**\n" +
+          "1. Em hãy nhập từ khóa ngắn gọn, đúng trọng tâm (ví dụ: *\"định lý cosin\"*, *\"định lý sin\"*, *\"hằng đẳng thức\"*, *\"căn bậc hai\"*, *\"đạo hàm\"*...).\n" +
+          "2. Hoặc ghi kèm lớp học (ví dụ: *\"Toán 10 định lý cosin\"*, *\"Toán 6 dấu hiệu chia hết\"*).\n" +
+          "3. Thầy/Cô quản trị đã ghi nhận câu hỏi này để kịp thời bổ sung học liệu giải đáp cho em nhé!";
         sourcesList = [{
           title: "Bộ Giáo Dục và Đào Tạo - Chương trình GDPT 2018",
           citation: "Cổng thông tin điện tử Bộ GD&ĐT: moet.gov.vn & Thư viện sách giáo khoa số",

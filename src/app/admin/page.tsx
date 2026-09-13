@@ -33,6 +33,8 @@ import {
   UserPlus,
   KeyRound,
   Lock,
+  Flag,
+  MessageSquare,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -40,6 +42,8 @@ import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 import { parseAssignedClasses, isStudentInAssignedClasses } from "@/lib/teacherClassUtils";
+import { fetchQuestionReports, updateQuestionReportStatus, deleteQuestionReport, QuestionReportItem } from "@/lib/questionReportClient";
+import { MathFormattedText } from "@/components/math/MathFormattedText";
 
 export default function AdminDashboardPage() {
   const router = useRouter();
@@ -52,7 +56,14 @@ export default function AdminDashboardPage() {
     }
   }, [user, isAdmin, router]);
 
-  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "backup" | "settings">("students");
+  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "reports" | "backup" | "settings">("students");
+  const [questionReports, setQuestionReports] = useState<QuestionReportItem[]>([]);
+  const [reportFilterStatus, setReportFilterStatus] = useState<"all" | "pending" | "resolved" | "dismissed">("all");
+  const [selectedReportDetail, setSelectedReportDetail] = useState<QuestionReportItem | null>(null);
+
+  const pendingReportsCount = useMemo(() => {
+    return questionReports.filter((r) => r.status === "pending").length;
+  }, [questionReports]);
   const [searchQuery, setSearchQuery] = useState("");
   const [students, setStudents] = useState<any[]>([]);
   const [teachers, setTeachers] = useState<any[]>([]);
@@ -228,6 +239,14 @@ export default function AdminDashboardPage() {
       setTeachers(rawTeachers);
 
       // 2. Lấy dữ liệu tiến độ & báo cáo câu sai
+      // 1.5. Lấy danh sách báo cáo sai sót câu hỏi
+      try {
+        const reportsList = await fetchQuestionReports();
+        setQuestionReports(reportsList);
+      } catch (repErr) {
+        console.warn("Lỗi fetch question reports:", repErr);
+      }
+
       const resProgress = await fetch("/api/student/progress?mode=admin");
       const dataProgress = await resProgress.json();
       if (dataProgress.success) {
@@ -943,6 +962,23 @@ export default function AdminDashboardPage() {
         </button>
 
         <button
+          onClick={() => setActiveTab("reports")}
+          className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
+            activeTab === "reports"
+              ? "bg-rose-500 text-white shadow-md shadow-rose-500/20"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <Flag className="w-4 h-4 text-rose-400" />
+          <span>Báo Cáo Sai Sót ({questionReports.length})</span>
+          {pendingReportsCount > 0 && (
+            <span className="px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] animate-pulse">
+              {pendingReportsCount} mới
+            </span>
+          )}
+        </button>
+
+        <button
           onClick={() => setActiveTab("lessons")}
           className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
             activeTab === "lessons"
@@ -1405,6 +1441,282 @@ export default function AdminDashboardPage() {
               </table>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB: BÁO CÁO SAI SÓT CÂU HỎI TỪ HỌC SINH                                 */}
+      {/* ========================================================================= */}
+      {activeTab === "reports" && (
+        <div className="space-y-4 animate-in fade-in duration-200">
+          {/* Header & Filter Controls */}
+          <div className="p-4 rounded-2xl bg-[#0e1526] border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 shadow-md">
+            <div className="space-y-1">
+              <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
+                <Flag className="w-4 h-4 text-rose-400" />
+                <span>Hộp Thư Phản Ánh & Báo Cáo Sai Sót Từ Học Sinh</span>
+              </h2>
+              <p className="text-xs text-slate-400">
+                Theo dõi các câu hỏi học sinh báo cáo sai đáp án, sai đề hoặc sai lời giải để kịp thời chỉnh sửa trực tiếp.
+              </p>
+            </div>
+
+            {/* Filter Buttons */}
+            <div className="flex flex-wrap items-center gap-1.5 self-stretch md:self-auto">
+              <button
+                onClick={() => setReportFilterStatus("all")}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  reportFilterStatus === "all"
+                    ? "bg-slate-700 text-white font-black shadow-sm"
+                    : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+                }`}
+              >
+                Tất cả ({questionReports.length})
+              </button>
+              <button
+                onClick={() => setReportFilterStatus("pending")}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+                  reportFilterStatus === "pending"
+                    ? "bg-amber-500 text-slate-950 font-black shadow-sm"
+                    : "bg-slate-900 text-amber-300 hover:bg-slate-800 border border-slate-800"
+                }`}
+              >
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+                <span>Chờ xử lý ({pendingReportsCount})</span>
+              </button>
+              <button
+                onClick={() => setReportFilterStatus("resolved")}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  reportFilterStatus === "resolved"
+                    ? "bg-emerald-500 text-slate-950 font-black shadow-sm"
+                    : "bg-slate-900 text-emerald-400 hover:bg-slate-800 border border-slate-800"
+                }`}
+              >
+                Đã chỉnh sửa ({questionReports.filter((r) => r.status === "resolved").length})
+              </button>
+              <button
+                onClick={() => setReportFilterStatus("dismissed")}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  reportFilterStatus === "dismissed"
+                    ? "bg-slate-600 text-white font-black shadow-sm"
+                    : "bg-slate-900 text-slate-400 hover:bg-slate-800 border border-slate-800"
+                }`}
+              >
+                Bỏ qua ({questionReports.filter((r) => r.status === "dismissed").length})
+              </button>
+            </div>
+          </div>
+
+          {/* Reports Table / List */}
+          {(() => {
+            const filteredReports = questionReports.filter((r) => {
+              if (reportFilterStatus === "all") return true;
+              return r.status === reportFilterStatus;
+            });
+
+            if (filteredReports.length === 0) {
+              return (
+                <div className="py-14 text-center rounded-3xl bg-[#0e1526] border border-slate-800 space-y-3">
+                  <div className="w-12 h-12 mx-auto rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-bold text-white">
+                      {reportFilterStatus === "pending"
+                        ? "Tuyệt vời! Không còn báo cáo nào đang chờ xử lý."
+                        : "Chưa có báo cáo sai sót nào trong danh mục này."}
+                    </h3>
+                    <p className="text-xs text-slate-400">
+                      Khi học sinh bấm nút &quot;Báo lỗi câu này&quot;, dữ liệu chi tiết sẽ xuất hiện tại đây ngay lập tức.
+                    </p>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <div className="grid grid-cols-1 gap-3.5">
+                {filteredReports.map((item) => {
+                  const reasonLabel = (() => {
+                    switch (item.reportReason) {
+                      case "wrong_answer":
+                        return "Sai đáp án";
+                      case "wrong_question":
+                        return "Sai đề bài";
+                      case "wrong_solution":
+                        return "Sai lời giải";
+                      case "typo_latex":
+                        return "Lỗi công thức/hình";
+                      default:
+                        return "Góp ý khác";
+                    }
+                  })();
+
+                  const gradeRoute = item.gradeKey ? item.gradeKey.replace("grade", "lop-") : "lop-6";
+
+                  return (
+                    <div
+                      key={item.id}
+                      className={`p-4 rounded-2xl bg-[#0e1526] border transition-all space-y-3 shadow-md ${
+                        item.status === "pending"
+                          ? "border-amber-500/50 hover:border-amber-400"
+                          : item.status === "resolved"
+                          ? "border-emerald-500/30 hover:border-emerald-400"
+                          : "border-slate-800 opacity-70"
+                      }`}
+                    >
+                      {/* Top Row: Meta info */}
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span
+                            className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${
+                              item.status === "pending"
+                                ? "bg-amber-500/20 text-amber-300 border border-amber-500/40"
+                                : item.status === "resolved"
+                                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                                : "bg-slate-800 text-slate-400 border border-slate-700"
+                            }`}
+                          >
+                            {item.status === "pending"
+                              ? "⏳ Chờ xử lý"
+                              : item.status === "resolved"
+                              ? "✓ Đã chỉnh sửa"
+                              : "✕ Bỏ qua"}
+                          </span>
+
+                          <span className="px-2 py-0.5 rounded-md bg-rose-500/10 text-rose-300 border border-rose-500/30 text-[10px] font-bold">
+                            {reasonLabel}
+                          </span>
+
+                          <span className="text-xs font-bold text-white">
+                            {item.lessonTitle}
+                          </span>
+
+                          <span className="px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-[10px] font-mono font-bold">
+                            {item.questionBadge || item.questionId}
+                          </span>
+                        </div>
+
+                        <div className="text-[11px] text-slate-400 flex items-center gap-2">
+                          <span>
+                            Người báo: <strong className="text-slate-200">{item.reporter?.fullName || item.reporter?.username || "Học sinh"}</strong>
+                            {item.reporter?.schoolClass ? ` (${item.reporter.schoolClass})` : ""}
+                          </span>
+                          <span>•</span>
+                          <span className="font-mono text-slate-400">
+                            {new Date(item.createdAt).toLocaleString("vi-VN")}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Question Content */}
+                      <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-100 font-medium leading-relaxed">
+                        <div className="text-slate-400 text-[10px] font-bold uppercase mb-1">
+                          Nội dung câu hỏi:
+                        </div>
+                        <MathFormattedText text={item.questionText} />
+                      </div>
+
+                      {/* Answers & Feedback details */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                        {item.correctAnswer && (
+                          <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 text-emerald-300">
+                            <span className="text-[10px] text-slate-400 block font-bold">Đáp án trong hệ thống:</span>
+                            <span className="font-bold">{item.correctAnswer}</span>
+                          </div>
+                        )}
+
+                        {item.description ? (
+                          <div className="p-2.5 rounded-xl bg-rose-950/30 border border-rose-500/30 text-rose-200">
+                            <span className="text-[10px] text-rose-400 block font-bold">Lời nhắn/Mô tả lỗi của học sinh:</span>
+                            <span className="italic">{item.description}</span>
+                          </div>
+                        ) : (
+                          <div className="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800/80 text-slate-400 italic">
+                            Học sinh không để lại mô tả bổ sung.
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Actions Bar */}
+                      <div className="pt-2 flex flex-wrap items-center justify-between gap-2 border-t border-slate-800/80">
+                        <div className="flex items-center gap-2">
+                          {item.lessonId && (
+                            <Link
+                              href={`/hoc-tap/${gradeRoute}/${item.lessonId}`}
+                              target="_blank"
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black text-xs hover:scale-105 transition-all shadow-sm"
+                            >
+                              <ExternalLink className="w-3.5 h-3.5" />
+                              <span>Mở bài học để sửa ngay</span>
+                            </Link>
+                          )}
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                          {item.status === "pending" && (
+                            <>
+                              <button
+                                onClick={async () => {
+                                  await updateQuestionReportStatus(item.id, "resolved");
+                                  const updated = await fetchQuestionReports();
+                                  setQuestionReports(updated);
+                                  setStatusMessage("Đã đánh dấu đã chỉnh sửa câu hỏi thành công!");
+                                  setTimeout(() => setStatusMessage(null), 3000);
+                                }}
+                                className="px-3 py-1.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all cursor-pointer flex items-center gap-1"
+                              >
+                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                                <span>Đánh dấu đã sửa</span>
+                              </button>
+                              <button
+                                onClick={async () => {
+                                  await updateQuestionReportStatus(item.id, "dismissed");
+                                  const updated = await fetchQuestionReports();
+                                  setQuestionReports(updated);
+                                }}
+                                className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white border border-slate-700 text-xs font-bold transition-all cursor-pointer"
+                              >
+                                Bỏ qua
+                              </button>
+                            </>
+                          )}
+
+                          {item.status !== "pending" && (
+                            <button
+                              onClick={async () => {
+                                await updateQuestionReportStatus(item.id, "pending");
+                                const updated = await fetchQuestionReports();
+                                setQuestionReports(updated);
+                              }}
+                              className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-bold transition-all cursor-pointer"
+                            >
+                              Chuyển lại về Chờ xử lý
+                            </button>
+                          )}
+
+                          <button
+                            onClick={async () => {
+                              if (!window.confirm("Bạn có chắc muốn xóa báo cáo này khỏi danh sách?")) return;
+                              await deleteQuestionReport(item.id);
+                              const updated = await fetchQuestionReports();
+                              setQuestionReports(updated);
+                              setStatusMessage("Đã xóa báo cáo.");
+                              setTimeout(() => setStatusMessage(null), 3000);
+                            }}
+                            className="p-1.5 rounded-xl text-rose-400 hover:text-white hover:bg-rose-950/40 border border-rose-500/30 transition-all cursor-pointer"
+                            title="Xóa báo cáo này"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })()}
         </div>
       )}
 

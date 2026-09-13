@@ -45,6 +45,7 @@ import {
   Target,
   Play,
   AlertCircle,
+  Flag,
 } from "lucide-react";
 import { GRADE_6_AI_PRACTICE_DATA } from "@/data/grade6AiPracticeData";
 import { GRADE_7_AI_PRACTICE_DATA } from "@/data/grade7AiPracticeData";
@@ -57,6 +58,7 @@ import { GeometryDiagram, GeometryDiagramProps } from "@/components/math/Geometr
 import { useAuth } from "@/context/AuthContext";
 import { QuestionEditModal } from "@/components/admin/QuestionEditModal";
 import { AiQuestionGeneratorModal } from "@/components/admin/AiQuestionGeneratorModal";
+import { ReportQuestionModal, ReportQuestionTarget } from "@/components/interactive/ReportQuestionModal";
 import { 
   saveLocalStudentProgressUpdate,
   isQuestionAlreadySolved,
@@ -1533,6 +1535,15 @@ export function GamifiedMathQuiz({
   const [editingIndex, setEditingIndex] = useState<number>(-1);
   const [isSavingChanges, setIsSavingChanges] = useState(false);
   const [adminSaveStatus, setAdminSaveStatus] = useState<string | null>(null);
+
+  // Báo cáo sai sót câu hỏi từ học sinh
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false);
+  const [reportTarget, setReportTarget] = useState<ReportQuestionTarget | null>(null);
+
+  const handleOpenReport = (target: ReportQuestionTarget) => {
+    setReportTarget(target);
+    setIsReportModalOpen(true);
+  };
 
   // =========================================================================
   // THEO DÕI THỜI GIAN XEM VIDEO THỰC TẾ THEO TỪNG BÀI HỌC & ĐỒNG BỘ CLOUD
@@ -4250,15 +4261,40 @@ export function GamifiedMathQuiz({
                       })()}
                     </span>
 
-                    {currentTf.source && (
-                      <span
-                        className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 truncate max-w-[280px] sm:max-w-xs"
-                        title={currentTf.source}
+                    <div className="flex items-center gap-1.5 ml-auto">
+                      {currentTf.source && (
+                        <span
+                          className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 truncate max-w-[240px] sm:max-w-xs"
+                          title={currentTf.source}
+                        >
+                          <Bookmark className="w-2.5 h-2.5 shrink-0 text-cyan-400" />
+                          <span className="truncate">Nguồn: {currentTf.source}</span>
+                        </span>
+                      )}
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          handleOpenReport({
+                            lessonId: lessonId || "",
+                            lessonTitle,
+                            gradeKey,
+                            questionId: currentTf.id || `tf-${tfCurrentIndex}`,
+                            questionBadge: currentTf.badge || `Câu ${tfCurrentIndex + 1} (Đúng / Sai)`,
+                            sectionTab: "true_false",
+                            quizMode,
+                            questionText: currentTf.prompt,
+                            correctAnswer: currentTf.subItems.map((s) => `${s.id}: ${s.correctAnswer ? "Đ" : "S"}`).join(", "),
+                            explanation: currentTf.subItems.map((s) => `[Ý ${s.id}]: ${s.explanation || (s.correctAnswer ? "Đúng" : "Sai")}`).join(" | "),
+                          })
+                        }
+                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-rose-500/10 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 text-[10px] font-bold transition-all shadow-sm cursor-pointer active:scale-95"
+                        title="Báo cáo sai sót trong câu hỏi, đáp án hoặc lời giải"
                       >
-                        <Bookmark className="w-2.5 h-2.5 shrink-0 text-cyan-400" />
-                        <span className="truncate">Nguồn: {currentTf.source}</span>
-                      </span>
-                    )}
+                        <Flag className="w-3 h-3 text-rose-400" />
+                        <span>Báo lỗi câu này</span>
+                      </button>
+                    </div>
                   </div>
 
                   {/* Đề bài chung */}
@@ -4455,15 +4491,40 @@ export function GamifiedMathQuiz({
                       })()}
                     </span>
 
-                    {currentSa.source && (
-                      <span
-                        className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 truncate max-w-[280px] sm:max-w-xs"
-                        title={currentSa.source}
+                    <div className="flex items-center gap-1.5 ml-auto">
+                      {currentSa.source && (
+                        <span
+                          className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 truncate max-w-[240px] sm:max-w-xs"
+                          title={currentSa.source}
+                        >
+                          <Bookmark className="w-2.5 h-2.5 shrink-0 text-cyan-400" />
+                          <span className="truncate">Nguồn: {currentSa.source}</span>
+                        </span>
+                      )}
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          handleOpenReport({
+                            lessonId: lessonId || "",
+                            lessonTitle,
+                            gradeKey,
+                            questionId: currentSa.id || `sa-${saCurrentIndex}`,
+                            questionBadge: currentSa.badge || `Câu ${saCurrentIndex + 1} (Trả lời ngắn)`,
+                            sectionTab: "short_answer",
+                            quizMode,
+                            questionText: currentSa.prompt,
+                            correctAnswer: currentSa.correctAnswer,
+                            explanation: currentSa.explanation,
+                          })
+                        }
+                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-rose-500/10 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 text-[10px] font-bold transition-all shadow-sm cursor-pointer active:scale-95"
+                        title="Báo cáo sai sót trong câu hỏi, đáp số hoặc lời giải"
                       >
-                        <Bookmark className="w-2.5 h-2.5 shrink-0 text-cyan-400" />
-                        <span className="truncate">Nguồn: {currentSa.source}</span>
-                      </span>
-                    )}
+                        <Flag className="w-3 h-3 text-rose-400" />
+                        <span>Báo lỗi câu này</span>
+                      </button>
+                    </div>
                   </div>
 
                   {/* Prompt Text */}
@@ -4613,44 +4674,70 @@ export function GamifiedMathQuiz({
                   </span>
                 )}
 
-              {/* Admin Actions */}
-              {isAdmin && (
                 <div className="flex flex-wrap items-center gap-1.5 ml-auto">
                   <button
-                    onClick={() => handleOpenEdit(currentQ, currentIndex)}
-                    className="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-black hover:bg-amber-500/40 transition-all flex items-center gap-1 shadow-sm"
-                    title="Chỉnh sửa nội dung câu hỏi này"
+                    type="button"
+                    onClick={() =>
+                      handleOpenReport({
+                        lessonId: lessonId || "",
+                        lessonTitle,
+                        gradeKey,
+                        questionId: currentQ.id || `mc-${currentIndex}`,
+                        questionBadge: currentQ.badge || `Câu ${currentIndex + 1}`,
+                        sectionTab: "multiple_choice",
+                        quizMode,
+                        questionText: currentQ.question,
+                        selectedAnswer: selectedOption !== null ? currentQ.options[selectedOption] : undefined,
+                        correctAnswer: currentQ.options[currentQ.correctIndex],
+                        explanation: currentQ.explanation,
+                      })
+                    }
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-rose-500/10 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 text-[10px] font-bold transition-all shadow-sm cursor-pointer active:scale-95"
+                    title="Báo cáo sai sót trong câu hỏi, đáp án hoặc lời giải"
                   >
-                    <Edit3 className="w-3 h-3" /> Sửa câu này
-                  </button>
-                  <button
-                    onClick={handleAddNewQuestion}
-                    className="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-black hover:bg-emerald-500/40 transition-all flex items-center gap-1"
-                    title="Thêm bài tập mới vào bài học"
-                  >
-                    <Plus className="w-3 h-3" /> Thêm bài
-                  </button>
-                  <button
-                    onClick={() => setIsAiGenerateModalOpen(true)}
-                    className="px-2.5 py-1 rounded-lg bg-gradient-to-r from-purple-600/30 via-indigo-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 text-purple-200 border border-purple-400/50 text-[10px] font-black transition-all flex items-center gap-1 shadow-sm hover:scale-105 active:scale-95"
-                    title="AI tự sinh câu hỏi theo mức độ nhận thức (Nhận biết, Thông hiểu, Vận dụng) và YCCĐ Bộ GD&ĐT"
-                  >
-                    <Bot className="w-3 h-3 text-purple-300" />
-                    <span>Thêm từ AI</span>
+                    <Flag className="w-3 h-3 text-rose-400" />
+                    <span>Báo lỗi câu này</span>
                   </button>
 
-                  {activeQuizList.length > 1 && (
-                    <button
-                      onClick={() => handleDeleteQuestion(currentIndex)}
-                      className="p-1 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] hover:bg-rose-500/40 transition-all"
-                      title="Xóa bài tập này"
-                    >
-                      <Trash2 className="w-3 h-3" />
-                    </button>
+                  {/* Admin Actions */}
+                  {isAdmin && (
+                    <>
+                      <button
+                        onClick={() => handleOpenEdit(currentQ, currentIndex)}
+                        className="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-black hover:bg-amber-500/40 transition-all flex items-center gap-1 shadow-sm"
+                        title="Chỉnh sửa nội dung câu hỏi này"
+                      >
+                        <Edit3 className="w-3 h-3" /> Sửa câu này
+                      </button>
+                      <button
+                        onClick={handleAddNewQuestion}
+                        className="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-black hover:bg-emerald-500/40 transition-all flex items-center gap-1"
+                        title="Thêm bài tập mới vào bài học"
+                      >
+                        <Plus className="w-3 h-3" /> Thêm bài
+                      </button>
+                      <button
+                        onClick={() => setIsAiGenerateModalOpen(true)}
+                        className="px-2.5 py-1 rounded-lg bg-gradient-to-r from-purple-600/30 via-indigo-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 text-purple-200 border border-purple-400/50 text-[10px] font-black transition-all flex items-center gap-1 shadow-sm hover:scale-105 active:scale-95"
+                        title="AI tự sinh câu hỏi theo mức độ nhận thức (Nhận biết, Thông hiểu, Vận dụng) và YCCĐ Bộ GD&ĐT"
+                      >
+                        <Bot className="w-3 h-3 text-purple-300" />
+                        <span>Thêm từ AI</span>
+                      </button>
+
+                      {activeQuizList.length > 1 && (
+                        <button
+                          onClick={() => handleDeleteQuestion(currentIndex)}
+                          className="p-1 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] hover:bg-rose-500/40 transition-all"
+                          title="Xóa bài tập này"
+                        >
+                          <Trash2 className="w-3 h-3" />
+                        </button>
+                      )}
+                    </>
                   )}
                 </div>
-              )}
-            </div>
+              </div>
 
             {/* Banner Đã hoàn thành trong lượt học trước */}
             {userAnswers[currentIndex]?.isPreviouslyCompleted && (
@@ -5170,6 +5257,18 @@ export function GamifiedMathQuiz({
           lessonTitle={lessonTitle}
           existingQuestions={activeQuizList}
           onAddQuestion={handleAddAiQuestion}
+        />
+      )}
+
+      {/* Student Question Report Modal */}
+      {isReportModalOpen && reportTarget && (
+        <ReportQuestionModal
+          isOpen={isReportModalOpen}
+          onClose={() => {
+            setIsReportModalOpen(false);
+            setReportTarget(null);
+          }}
+          target={reportTarget}
         />
       )}
     </div>

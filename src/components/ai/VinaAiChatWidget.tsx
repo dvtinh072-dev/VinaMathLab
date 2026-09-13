@@ -108,6 +108,7 @@ export function VinaAiChatWidget() {
           text: res.reply,
           sources: res.sources,
           isAnsweredFromKnowledge: res.isAnsweredFromKnowledge,
+          aiProvider: (res as any).aiProvider,
           timestamp: new Date().toISOString(),
         };
         const updated = [...nextMessages, botMsg];
@@ -228,6 +229,14 @@ export function VinaAiChatWidget() {
                   >
                     {isVina ? (
                       <div className="space-y-2">
+                        {m.aiProvider && (
+                          <div className="flex items-center gap-1.5 pb-1 border-b border-slate-800/80">
+                            <Sparkles className="w-3 h-3 text-cyan-400 shrink-0" />
+                            <span className="text-[9px] font-black uppercase tracking-wider text-cyan-300">
+                              {m.aiProvider}
+                            </span>
+                          </div>
+                        )}
                         <div className="prose-sm dark:prose-invert leading-relaxed break-words font-sans text-xs">
                           <MathFormattedText text={m.text} />
                         </div>

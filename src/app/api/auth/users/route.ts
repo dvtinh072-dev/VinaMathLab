@@ -53,7 +53,7 @@ export async function GET() {
       const { data } = await supabase.from("users").select("*").neq("role", "deleted");
       if (data) {
         suUsers = data
-          .filter((u: any) => u.role !== "deleted")
+          .filter((u: any) => u.role !== "deleted" && u.role !== "system" && !String(u.id).startsWith("system_"))
           .map((u: any) => ({
           id: u.id,
           username: u.username,

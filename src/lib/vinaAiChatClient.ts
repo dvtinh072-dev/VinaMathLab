@@ -8,6 +8,7 @@ export interface ChatMessage {
     url?: string;
   }[];
   isAnsweredFromKnowledge?: boolean;
+  aiProvider?: string;
   timestamp: string;
 }
 
@@ -24,9 +25,19 @@ export interface AiChatLogItem {
     url?: string;
   }[];
   isAnsweredFromKnowledge: boolean;
+  aiProvider?: string;
   topic?: string;
   grade?: number;
   timestamp: string;
+}
+
+export interface AiConfigData {
+  hasGeminiKey: boolean;
+  hasOpenAiKey: boolean;
+  maskedGemini: string;
+  maskedOpenAi: string;
+  provider: "gemini" | "openai" | "internal";
+  temperature?: number;
 }
 
 const LOCAL_CHAT_HISTORY_KEY = "vinamath_vina_chat_history";
@@ -105,5 +116,36 @@ export async function deleteAdminChatLog(id: string): Promise<boolean> {
     return res.ok && data.success;
   } catch {
     return false;
+  }
+}
+
+export async function fetchAiAdminConfig(): Promise<AiConfigData | null> {
+  try {
+    const res = await fetch("/api/ai/config");
+    const data = await res.json();
+    if (res.ok && data.success) {
+      return data.config;
+    }
+  } catch (e) {
+    console.warn("Lỗi đọc cấu hình AI:", e);
+  }
+  return null;
+}
+
+export async function saveAiAdminConfig(config: {
+  geminiApiKey?: string;
+  openaiApiKey?: string;
+  provider?: string;
+}): Promise<{ success: boolean; message?: string; error?: string }> {
+  try {
+    const res = await fetch("/api/ai/config", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(config),
+    });
+    const data = await res.json();
+    return data;
+  } catch (e: any) {
+    return { success: false, error: e.message };
   }
 }

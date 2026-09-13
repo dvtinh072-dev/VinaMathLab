@@ -36,6 +36,7 @@ import {
   Flag,
   Bot,
   MessageSquare,
+  Save,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -44,7 +45,7 @@ import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
 import { parseAssignedClasses, isStudentInAssignedClasses } from "@/lib/teacherClassUtils";
 import { fetchQuestionReports, updateQuestionReportStatus, deleteQuestionReport, QuestionReportItem } from "@/lib/questionReportClient";
-import { fetchAdminChatLogs, deleteAdminChatLog, AiChatLogItem } from "@/lib/vinaAiChatClient";
+import { fetchAdminChatLogs, deleteAdminChatLog, AiChatLogItem, AiConfigData, fetchAiAdminConfig, saveAiAdminConfig } from "@/lib/vinaAiChatClient";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 
 export default function AdminDashboardPage() {
@@ -61,7 +62,13 @@ export default function AdminDashboardPage() {
   const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "reports" | "ai_chat" | "backup" | "settings">("students");
   const [aiChatLogs, setAiChatLogs] = useState<AiChatLogItem[]>([]);
   const [aiChatSearchQuery, setAiChatSearchQuery] = useState<string>("");
-  const [questionReports, setQuestionReports] = useState<QuestionReportItem[]>([]);
+  const [aiConfig, setAiConfig] = useState<AiConfigData | null>(null);
+  const [geminiKeyInput, setGeminiKeyInput] = useState<string>("");
+  const [openaiKeyInput, setOpenaiKeyInput] = useState<string>("");
+  const [aiProviderChoice, setAiProviderChoice] = useState<"gemini" | "openai" | "internal">("gemini");
+  const [isSavingAiConfig, setIsSavingAiConfig] = useState(false);
+  const [showAiConfigBox, setShowAiConfigBox] = useState(false);
+  const [questionReports, setQuestionReports] = useState<any[]>([]);
   const [reportFilterStatus, setReportFilterStatus] = useState<"all" | "pending" | "resolved" | "dismissed">("all");
   const [selectedReportDetail, setSelectedReportDetail] = useState<QuestionReportItem | null>(null);
 
@@ -270,6 +277,18 @@ export default function AdminDashboardPage() {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (activeTab === "ai_chat") {
+      fetchAdminChatLogs().then((logs) => setAiChatLogs(logs));
+      fetchAiAdminConfig().then((cfg) => {
+        if (cfg) {
+          setAiConfig(cfg);
+          setAiProviderChoice(cfg.provider || "gemini");
+        }
+      });
+    }
+  }, [activeTab]);
 
   // Danh sách trường học duy nhất để làm bộ lọc
   const uniqueSchools = Array.from(
@@ -1752,21 +1771,50 @@ export default function AdminDashboardPage() {
           {/* Top Banner & Filter Controls */}
           <div className="p-4 rounded-2xl bg-[#0e1526] border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 shadow-md">
             <div className="space-y-1">
-              <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
-                <Bot className="w-4 h-4 text-cyan-400" />
-                <span>Giám Sát & Thống Kê Hội Thoại Trợ Lý AI Vina</span>
-              </h2>
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm sm:text-base font-black text-white flex items-center gap-2">
+                  <Bot className="w-4 h-4 text-cyan-400" />
+                  <span>Giám Sát & Thống Kê Hội Thoại Trợ Lý AI Vina</span>
+                </h2>
+                <span className={`px-2 py-0.5 rounded-full text-[10px] font-black border ${
+                  aiConfig?.provider === "gemini" && aiConfig?.hasGeminiKey
+                    ? "bg-purple-500/20 text-purple-300 border-purple-500/40"
+                    : aiConfig?.provider === "openai" && aiConfig?.hasOpenAiKey
+                    ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+                    : "bg-cyan-500/20 text-cyan-300 border-cyan-500/40"
+                }`}>
+                  {aiConfig?.provider === "gemini" && aiConfig?.hasGeminiKey
+                    ? "✨ Gemini + SGK Active"
+                    : aiConfig?.provider === "openai" && aiConfig?.hasOpenAiKey
+                    ? "✨ ChatGPT + SGK Active"
+                    : "📚 Học Liệu SGK Nội Bộ"}
+                </span>
+              </div>
               <p className="text-xs text-slate-400">
-                Lưu giữ 100% câu hỏi của học sinh và nguồn tư liệu giáo dục chính thống mà AI Vina đã trích dẫn để Admin kiểm soát chất lượng sư phạm.
+                Lưu giữ 100% câu hỏi của học sinh trên Supabase Cloud và nguồn tư liệu giáo dục chính thống mà AI Vina đã trích dẫn để Admin kiểm soát chất lượng sư phạm.
               </p>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={() => setShowAiConfigBox(!showAiConfigBox)}
+                className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                  showAiConfigBox
+                    ? "bg-purple-600 text-white border-purple-500 shadow-md shadow-purple-500/30"
+                    : "bg-slate-900 border-slate-800 text-purple-300 hover:bg-slate-800"
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>{showAiConfigBox ? "Đóng cấu hình AI" : "⚙️ Cấu hình Gemini / ChatGPT"}</span>
+              </button>
+
               <button
                 onClick={async () => {
                   const updated = await fetchAdminChatLogs();
                   setAiChatLogs(updated);
-                  setStatusMessage("Đã làm mới danh sách hội thoại AI Vina!");
+                  const cfg = await fetchAiAdminConfig();
+                  if (cfg) setAiConfig(cfg);
+                  setStatusMessage("Đã làm mới danh sách hội thoại từ Cloud!");
                   setTimeout(() => setStatusMessage(null), 2500);
                 }}
                 className="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-bold text-xs hover:bg-slate-800 flex items-center gap-1.5 transition-all cursor-pointer"
@@ -1778,7 +1826,7 @@ export default function AdminDashboardPage() {
               {aiChatLogs.length > 0 && (
                 <button
                   onClick={async () => {
-                    if (!window.confirm("Bạn có chắc muốn xóa toàn bộ lịch sử hỏi đáp của học sinh với AI?")) return;
+                    if (!window.confirm("Bạn có chắc muốn xóa toàn bộ lịch sử hỏi đáp của học sinh với AI khỏi máy chủ và Cloud?")) return;
                     await deleteAdminChatLog("all");
                     setAiChatLogs([]);
                     setStatusMessage("Đã xóa toàn bộ nhật ký hội thoại AI Vina.");
@@ -1790,6 +1838,215 @@ export default function AdminDashboardPage() {
                   <span>Xóa tất cả nhật ký</span>
                 </button>
               )}
+            </div>
+          </div>
+
+          {/* Collapsible AI Configuration Panel */}
+          {showAiConfigBox && (
+            <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900 to-[#0e1526] border-2 border-purple-500/40 space-y-4 shadow-xl animate-in zoom-in-95">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-black text-white">Thiết Lập Liên Kết Gemini & ChatGPT Cho AI Vina</h3>
+                    <p className="text-[11px] text-slate-400">
+                      Kết hợp linh hoạt LLM thông minh và kho tri thức SGK chuẩn mực để kiểm soát tính chính xác, không hoàn toàn phụ thuộc vào mô hình bên ngoài.
+                    </p>
+                  </div>
+                </div>
+                <span className="text-[10px] font-bold text-slate-400 bg-slate-950 px-2.5 py-1 rounded-lg border border-slate-800">
+                  Lưu trên Cloud Supabase
+                </span>
+              </div>
+
+              {/* Mode selection */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-bold text-slate-300">Chế độ vận hành của Trợ lý AI Vina:</label>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setAiProviderChoice("gemini")}
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
+                      aiProviderChoice === "gemini"
+                        ? "bg-purple-950/40 border-purple-500 text-white shadow-sm"
+                        : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    <div className="text-xs font-bold flex items-center justify-between">
+                      <span>Google Gemini + SGK</span>
+                      {aiProviderChoice === "gemini" && <span className="text-[10px] text-purple-400 font-black">✓ Chọn</span>}
+                    </div>
+                    <div className="text-[10px] text-slate-400 leading-snug">
+                      Ưu tiên dùng Gemini Flash kết hợp nạp dữ liệu SGK đối chiếu.
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setAiProviderChoice("openai")}
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
+                      aiProviderChoice === "openai"
+                        ? "bg-emerald-950/40 border-emerald-500 text-white shadow-sm"
+                        : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    <div className="text-xs font-bold flex items-center justify-between">
+                      <span>ChatGPT + SGK</span>
+                      {aiProviderChoice === "openai" && <span className="text-[10px] text-emerald-400 font-black">✓ Chọn</span>}
+                    </div>
+                    <div className="text-[10px] text-slate-400 leading-snug">
+                      Sử dụng OpenAI gpt-4o-mini với prompt sư phạm căn cứ SGK.
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setAiProviderChoice("internal")}
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
+                      aiProviderChoice === "internal"
+                        ? "bg-cyan-950/40 border-cyan-500 text-white shadow-sm"
+                        : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    <div className="text-xs font-bold flex items-center justify-between">
+                      <span>Học liệu SGK Nội Bộ</span>
+                      {aiProviderChoice === "internal" && <span className="text-[10px] text-cyan-400 font-black">✓ Chọn</span>}
+                    </div>
+                    <div className="text-[10px] text-slate-400 leading-snug">
+                      Không gọi API ngoài, 100% trích xuất chuẩn CSDL nội bộ VinaMath.
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              {/* Gemini Key Input */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between text-xs">
+                    <label className="font-bold text-slate-300 flex items-center gap-1.5">
+                      <span>Google Gemini API Key:</span>
+                      {aiConfig?.hasGeminiKey && (
+                        <span className="text-[10px] text-emerald-400 font-normal">
+                          (Đã có key: {aiConfig.maskedGemini})
+                        </span>
+                      )}
+                    </label>
+                    <a
+                      href="https://aistudio.google.com/app/apikey"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[10px] text-cyan-400 hover:underline flex items-center gap-0.5"
+                    >
+                      <span>Lấy key miễn phí</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </a>
+                  </div>
+                  <input
+                    type="password"
+                    value={geminiKeyInput}
+                    onChange={(e) => setGeminiKeyInput(e.target.value)}
+                    placeholder={aiConfig?.hasGeminiKey ? "Để trống nếu không đổi key mới" : "Dán Gemini API Key (AIzaSy...)"}
+                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs placeholder-slate-500 focus:outline-none focus:border-purple-400 font-mono"
+                  />
+                </div>
+
+                {/* OpenAI Key Input */}
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between text-xs">
+                    <label className="font-bold text-slate-300 flex items-center gap-1.5">
+                      <span>OpenAI API Key (Tùy chọn):</span>
+                      {aiConfig?.hasOpenAiKey && (
+                        <span className="text-[10px] text-emerald-400 font-normal">
+                          (Đã có key: {aiConfig.maskedOpenAi})
+                        </span>
+                      )}
+                    </label>
+                    <a
+                      href="https://platform.openai.com/api-keys"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[10px] text-cyan-400 hover:underline flex items-center gap-0.5"
+                    >
+                      <span>OpenAI Dashboard</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </a>
+                  </div>
+                  <input
+                    type="password"
+                    value={openaiKeyInput}
+                    onChange={(e) => setOpenaiKeyInput(e.target.value)}
+                    placeholder={aiConfig?.hasOpenAiKey ? "Để trống nếu không đổi key mới" : "Dán OpenAI API Key (sk-...)"}
+                    className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs placeholder-slate-500 focus:outline-none focus:border-emerald-400 font-mono"
+                  />
+                </div>
+              </div>
+
+              {/* Save Button */}
+              <div className="flex items-center justify-between pt-2 border-t border-slate-800/80">
+                <div className="text-[11px] text-slate-400">
+                  💡 *Hệ thống luôn kiểm soát tính chính xác: Nạp CSDL SGK làm căn cứ bắt buộc cho AI, và tự động fallback về kho học liệu nội bộ nếu API bị lỗi/hết quota.*
+                </div>
+                <button
+                  type="button"
+                  disabled={isSavingAiConfig}
+                  onClick={async () => {
+                    setIsSavingAiConfig(true);
+                    const payload: any = { provider: aiProviderChoice };
+                    if (geminiKeyInput.trim()) payload.geminiApiKey = geminiKeyInput.trim();
+                    if (openaiKeyInput.trim()) payload.openaiApiKey = openaiKeyInput.trim();
+
+                    const res = await saveAiAdminConfig(payload);
+                    setIsSavingAiConfig(false);
+                    if (res.success) {
+                      setGeminiKeyInput("");
+                      setOpenaiKeyInput("");
+                      const updated = await fetchAiAdminConfig();
+                      if (updated) setAiConfig(updated);
+                      setStatusMessage("Đã lưu cấu hình liên kết AI thành công lên Cloud Supabase!");
+                      setTimeout(() => setStatusMessage(null), 3000);
+                    } else {
+                      alert("Lỗi lưu cấu hình: " + (res.error || "Không xác định"));
+                    }
+                  }}
+                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white text-xs font-black shadow-md shadow-purple-500/20 transition-all cursor-pointer flex items-center gap-1.5 shrink-0"
+                >
+                  <Save className="w-3.5 h-3.5" />
+                  <span>{isSavingAiConfig ? "Đang lưu..." : "Lưu Cấu Hình AI"}</span>
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Stats Bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div className="p-3 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-1">
+              <div className="text-[10px] text-slate-400 font-bold uppercase">Tổng Lượt Hỏi Đáp</div>
+              <div className="text-xl font-black text-cyan-400">{aiChatLogs.length}</div>
+            </div>
+            <div className="p-3 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-1">
+              <div className="text-[10px] text-slate-400 font-bold uppercase">Khớp Học Liệu SGK</div>
+              <div className="text-xl font-black text-emerald-400">
+                {aiChatLogs.filter((l) => l.isAnsweredFromKnowledge).length}
+              </div>
+            </div>
+            <div className="p-3 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-1">
+              <div className="text-[10px] text-slate-400 font-bold uppercase">Chế Độ Hoạt Động</div>
+              <div className="text-xs font-black text-purple-300 truncate pt-1">
+                {aiConfig?.provider === "gemini" && aiConfig?.hasGeminiKey
+                  ? "Google Gemini + SGK"
+                  : aiConfig?.provider === "openai" && aiConfig?.hasOpenAiKey
+                  ? "ChatGPT + SGK"
+                  : "Học liệu SGK Nội Bộ"}
+              </div>
+            </div>
+            <div className="p-3 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-1">
+              <div className="text-[10px] text-slate-400 font-bold uppercase">Lưu Trữ Dữ Liệu</div>
+              <div className="text-xs font-black text-emerald-400 pt-1 flex items-center gap-1">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Supabase Cloud Sync</span>
+              </div>
             </div>
           </div>
 
@@ -1866,6 +2123,20 @@ export default function AdminDashboardPage() {
                             ? "✓ Học liệu chính thống"
                             : "⚠️ Cảnh báo không tự bịa"}
                         </span>
+
+                        {log.aiProvider && (
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
+                              log.aiProvider.includes("Gemini")
+                                ? "bg-purple-500/20 text-purple-300 border-purple-500/40"
+                                : log.aiProvider.includes("ChatGPT")
+                                ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+                                : "bg-cyan-500/20 text-cyan-300 border-cyan-500/40"
+                            }`}
+                          >
+                            🤖 {log.aiProvider}
+                          </span>
+                        )}
                       </div>
 
                       <div className="text-[11px] text-slate-400 flex items-center gap-2">

@@ -7,6 +7,7 @@ import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
 import { GRADE_10_DETAILED_LESSONS } from "@/data/grade10LessonsData";
 import { GRADE_11_DETAILED_LESSONS } from "@/data/grade11LessonsData";
 import { supabase } from "@/lib/supabaseClient";
+import { generateHybridAiResponse } from "@/lib/geminiChatService";
 
 export interface AiChatMessageLog {
   id: string;
@@ -21,6 +22,7 @@ export interface AiChatMessageLog {
     url?: string;
   }[];
   isAnsweredFromKnowledge: boolean;
+  aiProvider?: "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK nội bộ";
   topic?: string;
   grade?: number;
   timestamp: string;
@@ -34,7 +36,7 @@ function readLocalChatLogs(): AiChatMessageLog[] {
     const raw = fs.readFileSync(chatLogsFilePath, "utf-8");
     return JSON.parse(raw) || [];
   } catch (err) {
-    console.error("Lỗi đọc aiChatLogsData.json:", err);
+    console.warn("Lỗi đọc aiChatLogsData.json:", err);
     return [];
   }
 }
@@ -43,7 +45,53 @@ function writeLocalChatLogs(logs: AiChatMessageLog[]): void {
   try {
     fs.writeFileSync(chatLogsFilePath, JSON.stringify(logs, null, 2), "utf-8");
   } catch (err) {
-    console.error("Lỗi ghi aiChatLogsData.json:", err);
+    console.warn("Lỗi ghi aiChatLogsData.json (môi trường serverless):", err);
+  }
+}
+
+/**
+ * Đọc logs từ Supabase Cloud Database (Đảm bảo lưu vĩnh viễn trên Vercel/Cloud)
+ */
+async function readCloudChatLogs(): Promise<AiChatMessageLog[]> {
+  try {
+    const { data, error } = await supabase
+      .from("users")
+      .select("school_class")
+      .eq("id", "system_ai_chat_logs")
+      .single();
+
+    if (!error && data && data.school_class) {
+      const parsed = JSON.parse(data.school_class);
+      if (Array.isArray(parsed)) {
+        return parsed;
+      }
+    }
+  } catch (err) {
+    console.warn("Lỗi đọc logs từ Supabase Cloud:", err);
+  }
+  return [];
+}
+
+/**
+ * Lưu logs vào Supabase Cloud Database
+ */
+async function writeCloudChatLogs(logs: AiChatMessageLog[]): Promise<boolean> {
+  try {
+    // Giữ tối đa 500 bản ghi mới nhất để bảo đảm dung lượng và tốc độ
+    const limitedLogs = logs.slice(0, 500);
+    const { error } = await supabase.from("users").upsert({
+      id: "system_ai_chat_logs",
+      username: "system_ai_chat_logs",
+      role: "system",
+      full_name: "AI Chat Logs Cloud Storage",
+      password_hash: "system_log_hash",
+      school_class: JSON.stringify(limitedLogs),
+    });
+
+    return !error;
+  } catch (err) {
+    console.error("Lỗi ghi logs lên Supabase Cloud:", err);
+    return false;
   }
 }
 
@@ -86,34 +134,18 @@ function searchCurriculumLessons(q: string) {
 
 export async function GET() {
   try {
-    let logs = readLocalChatLogs();
-    try {
-      const { data, error } = await supabase
-        .from("ai_chat_logs")
-        .select("*")
-        .order("created_at", { ascending: false });
-      if (!error && Array.isArray(data) && data.length > 0) {
-        const suLogs: AiChatMessageLog[] = data.map((item: any) => ({
-          id: item.id,
-          studentId: item.student_id || item.studentId,
-          studentName: item.student_name || item.studentName,
-          studentClass: item.student_class || item.studentClass,
-          question: item.question,
-          answer: item.answer,
-          sources: item.sources || [],
-          isAnsweredFromKnowledge: item.is_answered_from_knowledge ?? item.isAnsweredFromKnowledge ?? true,
-          topic: item.topic,
-          grade: item.grade,
-          timestamp: item.created_at || item.timestamp,
-        }));
-        const map = new Map<string, AiChatMessageLog>();
-        logs.forEach((l) => map.set(l.id, l));
-        suLogs.forEach((l) => map.set(l.id, l));
-        logs = Array.from(map.values());
-      }
-    } catch {}
-    logs.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
-    return NextResponse.json({ success: true, logs });
+    const localLogs = readLocalChatLogs();
+    const cloudLogs = await readCloudChatLogs();
+
+    // Gộp dữ liệu từ Cloud và Local, ưu tiên Cloud
+    const map = new Map<string, AiChatMessageLog>();
+    localLogs.forEach((l) => map.set(l.id, l));
+    cloudLogs.forEach((l) => map.set(l.id, l));
+
+    const allLogs = Array.from(map.values());
+    allLogs.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+
+    return NextResponse.json({ success: true, logs: allLogs });
   } catch (error: any) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
@@ -123,20 +155,23 @@ export async function DELETE(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get("id");
-    let logs = readLocalChatLogs();
-    if (id === "all") {
-      logs = [];
-    } else if (id) {
-      logs = logs.filter((l) => l.id !== id);
+
+    const cloudLogs = await readCloudChatLogs();
+    const localLogs = readLocalChatLogs();
+
+    let updatedLogs: AiChatMessageLog[] = [];
+    if (id !== "all" && id) {
+      const map = new Map<string, AiChatMessageLog>();
+      localLogs.forEach((l) => map.set(l.id, l));
+      cloudLogs.forEach((l) => map.set(l.id, l));
+      map.delete(id);
+      updatedLogs = Array.from(map.values());
     }
-    writeLocalChatLogs(logs);
-    try {
-      if (id === "all") {
-        await supabase.from("ai_chat_logs").delete().neq("id", "");
-      } else if (id) {
-        await supabase.from("ai_chat_logs").delete().eq("id", id);
-      }
-    } catch {}
+
+    // Cập nhật cả Cloud và Local
+    await writeCloudChatLogs(updatedLogs);
+    writeLocalChatLogs(updatedLogs);
+
     return NextResponse.json({ success: true });
   } catch (error: any) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
@@ -147,110 +182,79 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { question, studentInfo } = body;
+
     if (!question || typeof question !== "string" || !question.trim()) {
       return NextResponse.json(
         { success: false, error: "Vui lòng nhập câu hỏi của em." },
         { status: 400 }
       );
     }
+
     const trimmedQ = question.trim();
+
+    // 1. Kiểm tra trong CSDL Kiến thức Sư phạm chuẩn (Grounding)
     const kbResult = queryEducationalKnowledgeBase(trimmedQ);
-    let answerText = "";
-    let sourcesList: { title: string; citation: string; url?: string }[] = [];
-    let isKnowledgeHit = false;
-    let identifiedTopic = "";
-    let identifiedGrade = 0;
+    const curMatch = !kbResult.match ? searchCurriculumLessons(trimmedQ) : null;
 
-    if (kbResult.match) {
-      const k = kbResult.match;
-      isKnowledgeHit = true;
-      identifiedTopic = k.topic;
-      identifiedGrade = k.grade;
-      const stepText = k.standardSteps && k.standardSteps.length > 0
-        ? "\n#### 📌 Các bước áp dụng chuẩn:\n" + k.standardSteps.join("\n") + "\n"
-        : "";
-      answerText = "Chào em! Dưới đây là kiến thức chuẩn mực về **" + k.topic + "** được trích dẫn từ sách giáo khoa:\n\n" +
-        "### 📖 " + k.topic + "\n" +
-        k.officialContent + "\n" +
-        stepText +
-        "\n📚 **Nguồn trích dẫn:** *" + k.sourceCitation + "*";
-      sourcesList = [{
-        title: k.sourceName,
-        citation: k.sourceCitation,
-        url: k.sourceUrl,
-      }];
-    } else {
-      const curMatch = searchCurriculumLessons(trimmedQ);
-      if (curMatch) {
-        isKnowledgeHit = true;
-        identifiedTopic = curMatch.lessonTitle;
-        identifiedGrade = curMatch.gradeNumber || 0;
-        const descText = curMatch.description ? "**Tóm tắt cốt lõi:** " + curMatch.description + "\n\n" : "";
-        const theoryText = curMatch.theory ? "**Kiến thức trọng tâm:**\n- " + curMatch.theory.points.join("\n- ") + "\n" : "";
-        const formulaText = curMatch.formulas && curMatch.formulas.length > 0 ? "\n**Công thức trọng tâm:**\n$$" + curMatch.formulas.join("$$ và $$") + "$$\n" : "";
-        answerText = "Chào em! Dưới đây là kiến thức chuẩn của bài học **" + curMatch.lessonTitle + "** (" + curMatch.bookChapter + "):\n\n" +
-          descText + theoryText + formulaText +
-          "\n📚 **Nguồn trích dẫn:** *Chương trình Giáo dục phổ thông 2018 môn Toán - " + curMatch.bookChapter + "*";
-        sourcesList = [{
-          title: "SGK Kết Nối Tri Thức Với Cuộc Sống - " + curMatch.bookChapter,
-          citation: "Chương trình Giáo dục phổ thông 2018 môn Toán, " + curMatch.lessonTitle,
-          url: "https://hanhtrangso.nxbgd.vn",
-        }];
-      } else {
-        isKnowledgeHit = false;
-        answerText = "Chào em! Hiện tại hệ thống chưa tìm thấy mục bài học hoặc định lý đối chiếu cho câu hỏi:\n" +
-          "*" + trimmedQ + "*\n\n" +
-          "💡 **Gợi ý tra cứu:**\n" +
-          "1. Em hãy nhập từ khóa ngắn gọn, đúng trọng tâm (ví dụ: *\"định lý cosin\"*, *\"định lý sin\"*, *\"hằng đẳng thức\"*, *\"căn bậc hai\"*, *\"đạo hàm\"*...).\n" +
-          "2. Hoặc ghi kèm lớp học (ví dụ: *\"Toán 10 định lý cosin\"*, *\"Toán 6 dấu hiệu chia hết\"*).\n" +
-          "3. Thầy/Cô quản trị đã ghi nhận câu hỏi này để kịp thời bổ sung học liệu giải đáp cho em nhé!";
-        sourcesList = [{
-          title: "Bộ Giáo Dục và Đào Tạo - Chương trình GDPT 2018",
-          citation: "Cổng thông tin điện tử Bộ GD&ĐT: moet.gov.vn & Thư viện sách giáo khoa số",
-          url: "https://moet.gov.vn",
-        }];
-      }
-    }
+    let identifiedTopic = kbResult.match?.topic || curMatch?.lessonTitle || "";
+    let identifiedGrade = kbResult.match?.grade || curMatch?.gradeNumber || 0;
 
+    // 2. Gọi Hybrid AI Response (kết hợp Gemini/ChatGPT và Học liệu SGK)
+    const hybridResponse = await generateHybridAiResponse({
+      question: trimmedQ,
+      knowledgeMatch: kbResult.match,
+      curriculumMatch: curMatch,
+      studentInfo,
+    });
+
+    const answerText = hybridResponse.reply;
+    const sourcesList = hybridResponse.sources;
+    const isKnowledgeHit = hybridResponse.isGroundedWithKnowledge;
+    const aiProviderUsed = hybridResponse.providerUsed;
+
+    // 3. Tạo bản ghi log hỏi đáp chi tiết
     const logItem: AiChatMessageLog = {
       id: "chat_" + Date.now() + "_" + Math.random().toString(36).substring(2, 7),
-      studentId: studentInfo?.userId || studentInfo?.studentCode || studentInfo?.username,
+      studentId: studentInfo?.userId || studentInfo?.studentCode || studentInfo?.username || "guest",
       studentName: studentInfo?.fullName || studentInfo?.username || "Học sinh (Khách)",
-      studentClass: studentInfo?.schoolClass,
+      studentClass: studentInfo?.schoolClass || "Tự do",
       question: trimmedQ,
       answer: answerText,
       sources: sourcesList,
       isAnsweredFromKnowledge: isKnowledgeHit,
+      aiProvider: aiProviderUsed,
       topic: identifiedTopic || undefined,
       grade: identifiedGrade > 0 ? identifiedGrade : undefined,
       timestamp: new Date().toISOString(),
     };
-    const logs = readLocalChatLogs();
-    logs.unshift(logItem);
-    writeLocalChatLogs(logs);
+
+    // 4. Lưu đồng bộ lên Supabase Cloud Database và file Local
     try {
-      await supabase.from("ai_chat_logs").insert([{
-        id: logItem.id,
-        student_id: logItem.studentId,
-        student_name: logItem.studentName,
-        student_class: logItem.studentClass,
-        question: logItem.question,
-        answer: logItem.answer,
-        sources: logItem.sources,
-        is_answered_from_knowledge: logItem.isAnsweredFromKnowledge,
-        topic: logItem.topic,
-        grade: logItem.grade,
-        created_at: logItem.timestamp,
-      }]);
-    } catch {}
+      const currentCloudLogs = await readCloudChatLogs();
+      currentCloudLogs.unshift(logItem);
+      await writeCloudChatLogs(currentCloudLogs);
+    } catch (cloudErr) {
+      console.warn("Lỗi đồng bộ log lên Cloud:", cloudErr);
+    }
+
+    try {
+      const localLogs = readLocalChatLogs();
+      localLogs.unshift(logItem);
+      writeLocalChatLogs(localLogs);
+    } catch (localErr) {
+      console.warn("Lỗi lưu log local:", localErr);
+    }
+
     return NextResponse.json({
       success: true,
       reply: answerText,
       sources: sourcesList,
       isAnsweredFromKnowledge: isKnowledgeHit,
+      aiProvider: aiProviderUsed,
       logId: logItem.id,
     });
   } catch (error: any) {
+    console.error("Lỗi xử lý AI Chat:", error);
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }

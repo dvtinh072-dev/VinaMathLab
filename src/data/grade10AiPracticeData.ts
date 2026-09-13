@@ -4033,7 +4033,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-10.7.1",
       "badge": "Luyện thêm 1 - Khái niệm giá của vectơ",
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-      "question": "Giá của vectơ $\\vec{AB}$ (với $A \\ne B$) là:",
+      "question": "Giá của vectơ $\\overrightarrow{AB}$ (với $A \\ne B$) là:",
       "options": [
         "Đường thẳng đi qua hai điểm $A$ và $B$.",
         "Đoạn thẳng nối $A$ và $B$.",
@@ -4049,13 +4049,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Ngân hàng đề thi Toán 10",
       "question": "Cho hình bình hành $ABCD$. Cặp vectơ nào sau đây CÙNG PHƯƠNG?",
       "options": [
-        "$\\vec{AD}$ và $\\vec{BC}$",
-        "$\\vec{AB}$ và $\\vec{AD}$",
-        "$\\vec{AC}$ và $\\vec{BD}$",
-        "$\\vec{BC}$ và $\\vec{CD}$"
+        "$\\overrightarrow{AD}$ và $\\overrightarrow{BC}$",
+        "$\\overrightarrow{AB}$ và $\\overrightarrow{AD}$",
+        "$\\overrightarrow{AC}$ và $\\overrightarrow{BD}$",
+        "$\\overrightarrow{BC}$ và $\\overrightarrow{CD}$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $AD // BC$ nên giá của $\\vec{AD}$ song song với giá của $\\vec{BC}$, do đó hai vectơ cùng phương."
+      "explanation": "Vì $AD // BC$ nên giá của $\\overrightarrow{AD}$ song song với giá của $\\overrightarrow{BC}$, do đó hai vectơ cùng phương."
     },
     {
       "id": "ai-10.7.3",
@@ -4063,13 +4063,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề kiểm tra chuyên đề Vectơ",
       "question": "Cho đoạn thẳng $AB$ có trung điểm $M$. Cặp vectơ nào sau đây NGƯỢC HƯỚNG?",
       "options": [
-        "$\\vec{MA}$ và $\\vec{MB}$",
-        "$\\vec{AM}$ và $\\vec{MB}$",
-        "$\\vec{AM}$ và $\\vec{AB}$",
-        "$\\vec{MB}$ và $\\vec{AB}$"
+        "$\\overrightarrow{MA}$ và $\\overrightarrow{MB}$",
+        "$\\overrightarrow{AM}$ và $\\overrightarrow{MB}$",
+        "$\\overrightarrow{AM}$ và $\\overrightarrow{AB}$",
+        "$\\overrightarrow{MB}$ và $\\overrightarrow{AB}$"
       ],
       "correctIndex": 0,
-      "explanation": "$M$ nằm giữa $A$ và $B$ nên hai tia $MA$ và $MB$ đối nhau $\\implies \\vec{MA}$ và $\\vec{MB}$ ngược hướng."
+      "explanation": "$M$ nằm giữa $A$ và $B$ nên hai tia $MA$ và $MB$ đối nhau $\\implies \\overrightarrow{MA}$ và $\\overrightarrow{MB}$ ngược hướng."
     },
     {
       "id": "ai-10.7.4",
@@ -4077,19 +4077,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SGK Toán 10 KNTT",
       "question": "Trong các khẳng định sau, khẳng định nào ĐÚNG?",
       "options": [
-        "Vectơ $\\vec{AA}$ là vectơ-không.",
+        "Vectơ $\\overrightarrow{AA}$ là vectơ-không.",
         "Độ dài của vectơ $\\vec{0}$ là $1$.",
         "Vectơ $\\vec{0}$ không có hướng xác định và không cùng phương với vectơ nào.",
         "Vectơ $\\vec{0}$ luôn có độ dài lớn hơn $0$."
       ],
       "correctIndex": 0,
-      "explanation": "Vectơ có điểm đầu trùng điểm cuối như $\\vec{AA}$ là vectơ-không, có độ dài bằng $0$."
+      "explanation": "Vectơ có điểm đầu trùng điểm cuối như $\\overrightarrow{AA}$ là vectơ-không, có độ dài bằng $0$."
     },
     {
       "id": "ai-10.7.5",
       "badge": "Luyện thêm 5 - Độ dài vectơ cạnh tam giác vuông cân",
       "source": "SBT Toán 10",
-      "question": "Cho tam giác $ABC$ vuông cân tại $A$ có $AB = AC = 3\\sqrt{2}$. Độ dài của vectơ $\\vec{BC}$ bằng:",
+      "question": "Cho tam giác $ABC$ vuông cân tại $A$ có $AB = AC = 3\\sqrt{2}$. Độ dài của vectơ $\\overrightarrow{BC}$ bằng:",
       "options": [
         "$6$",
         "$3\\sqrt{2}$",
@@ -4097,7 +4097,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$12$"
       ],
       "correctIndex": 0,
-      "explanation": "$BC = \\sqrt{AB^2 + AC^2} = \\sqrt{18 + 18} = 6 \\implies |\\vec{BC}| = 6$."
+      "explanation": "$BC = \\sqrt{AB^2 + AC^2} = \\sqrt{18 + 18} = 6 \\implies |\\overrightarrow{BC}| = 6$."
     },
     {
       "id": "ai-10.7.6",
@@ -4111,7 +4111,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$12$"
       ],
       "correctIndex": 0,
-      "explanation": "Số vectơ là $3 \\times 2 = 6$ (gồm $\\vec{AB}, \\vec{BA}, \\vec{BC}, \\vec{CB}, \\vec{CA}, \\vec{AC}$)."
+      "explanation": "Số vectơ là $3 \\times 2 = 6$ (gồm $\\overrightarrow{AB}, \\overrightarrow{BA}, \\overrightarrow{BC}, \\overrightarrow{CB}, \\overrightarrow{CA}, \\overrightarrow{AC}$)."
     },
     {
       "id": "ai-10.7.7",
@@ -4119,27 +4119,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề Toán 10 KNTT",
       "question": "Cho hình thoi $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AB} = \\vec{DC}$",
-        "$\\vec{AB} = \\vec{BC}$",
-        "$\\vec{AD} = \\vec{CD}$",
-        "$\\vec{AC} = \\vec{BD}$"
+        "$\\overrightarrow{AB} = \\overrightarrow{DC}$",
+        "$\\overrightarrow{AB} = \\overrightarrow{BC}$",
+        "$\\overrightarrow{AD} = \\overrightarrow{CD}$",
+        "$\\overrightarrow{AC} = \\overrightarrow{BD}$"
       ],
       "correctIndex": 0,
-      "explanation": "Hình thoi là hình bình hành nên $\\vec{AB} = \\vec{DC}$."
+      "explanation": "Hình thoi là hình bình hành nên $\\overrightarrow{AB} = \\overrightarrow{DC}$."
     },
     {
       "id": "ai-10.7.8",
       "badge": "Luyện thêm 8 - Điểm đối xứng và vectơ bằng nhau",
       "source": "Chuyên đề Hình học 10",
-      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Lấy điểm $D$ đối xứng với $A$ qua $M$. Khi đó vectơ $\\vec{AB}$ bằng vectơ nào?",
+      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Lấy điểm $D$ đối xứng với $A$ qua $M$. Khi đó vectơ $\\overrightarrow{AB}$ bằng vectơ nào?",
       "options": [
-        "$\\vec{CD}$",
-        "$\\vec{DC}$",
-        "$\\vec{BD}$",
-        "$\\vec{AC}$"
+        "$\\overrightarrow{CD}$",
+        "$\\overrightarrow{DC}$",
+        "$\\overrightarrow{BD}$",
+        "$\\overrightarrow{AC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Tứ giác $ABDC$ có hai đường chéo $AD$ và $BC$ cắt nhau tại trung điểm $M$ của mỗi đường nên $ABDC$ là hình bình hành. Do đó $\\vec{AB} = \\vec{CD}$."
+      "explanation": "Tứ giác $ABDC$ có hai đường chéo $AD$ và $BC$ cắt nhau tại trung điểm $M$ của mỗi đường nên $ABDC$ là hình bình hành. Do đó $\\overrightarrow{AB} = \\overrightarrow{CD}$."
     },
     {
       "id": "ai-10.7.9",
@@ -4173,7 +4173,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-10.7.11",
       "badge": "Luyện thêm 11 - Độ dài vectơ đường cao tam giác đều",
       "source": "SBT Toán 10",
-      "question": "Cho tam giác đều $ABC$ cạnh $2a$. Chiều cao $AH$ có độ dài vectơ $|\\vec{AH}|$ bằng:",
+      "question": "Cho tam giác đều $ABC$ cạnh $2a$. Chiều cao $AH$ có độ dài vectơ $|\\overrightarrow{AH}|$ bằng:",
       "options": [
         "$a\\sqrt{3}$",
         "$a$",
@@ -4181,13 +4181,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\frac{a\\sqrt{3}}{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "$AH = \\frac{2a\\sqrt{3}}{2} = a\\sqrt{3} \\implies |\\vec{AH}| = a\\sqrt{3}$."
+      "explanation": "$AH = \\frac{2a\\sqrt{3}}{2} = a\\sqrt{3} \\implies |\\overrightarrow{AH}| = a\\sqrt{3}$."
     },
     {
       "id": "ai-10.7.12",
       "badge": "Luyện thêm 12 - Điều kiện để hai vectơ bằng nhau",
       "source": "Đề kiểm tra Toán 10",
-      "question": "Cho tứ giác $ABCD$. Điều kiện để $\\vec{AB} = \\vec{DC}$ là:",
+      "question": "Cho tứ giác $ABCD$. Điều kiện để $\\overrightarrow{AB} = \\overrightarrow{DC}$ là:",
       "options": [
         "Tứ giác $ABCD$ là hình bình hành.",
         "Tứ giác $ABDC$ là hình bình hành.",
@@ -4195,21 +4195,21 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$AB // DC$."
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} = \\vec{DC} \\iff AB // DC$ và $AB = DC$, tức là tứ giác $ABCD$ là hình bình hành."
+      "explanation": "$\\overrightarrow{AB} = \\overrightarrow{DC} \\iff AB // DC$ và $AB = DC$, tức là tứ giác $ABCD$ là hình bình hành."
     },
     {
       "id": "ai-10.7.13",
       "badge": "Luyện thêm 13 - Vectơ trong hình thoi",
       "source": "Bộ đề Toán 10 KNTT",
-      "question": "Cho hình thoi $ABCD$ tâm $O$. Vectơ $\\vec{AO}$ bằng vectơ nào sau đây?",
+      "question": "Cho hình thoi $ABCD$ tâm $O$. Vectơ $\\overrightarrow{AO}$ bằng vectơ nào sau đây?",
       "options": [
-        "$\\vec{OC}$",
-        "$\\vec{CO}$",
-        "$\\vec{BO}$",
-        "$\\vec{OD}$"
+        "$\\overrightarrow{OC}$",
+        "$\\overrightarrow{CO}$",
+        "$\\overrightarrow{BO}$",
+        "$\\overrightarrow{OD}$"
       ],
       "correctIndex": 0,
-      "explanation": "$O$ là trung điểm $AC$, hướng từ $A \\to O$ trùng hướng từ $O \\to C$ và $AO = OC$ nên $\\vec{AO} = \\vec{OC}$."
+      "explanation": "$O$ là trung điểm $AC$, hướng từ $A \\to O$ trùng hướng từ $O \\to C$ và $AO = OC$ nên $\\overrightarrow{AO} = \\overrightarrow{OC}$."
     },
     {
       "id": "ai-10.7.14",
@@ -4217,19 +4217,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10",
       "question": "Cho tam giác $ABC$. Trên tia đối của tia $AB$ lấy điểm $D$ sao cho $AD = AB$. Khi đó:",
       "options": [
-        "$\\vec{AD}$ và $\\vec{AB}$ ngược hướng.",
-        "$\\vec{AD} = \\vec{AB}$.",
-        "$\\vec{AD}$ và $\\vec{AB}$ cùng hướng.",
-        "$\\vec{AD}$ và $\\vec{AB}$ không cùng phương."
+        "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ ngược hướng.",
+        "$\\overrightarrow{AD} = \\overrightarrow{AB}$.",
+        "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ cùng hướng.",
+        "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ không cùng phương."
       ],
       "correctIndex": 0,
-      "explanation": "Vì $D$ thuộc tia đối của tia $AB$ nên hai tia $AD$ và $AB$ đối nhau $\\implies \\vec{AD}$ và $\\vec{AB}$ ngược hướng."
+      "explanation": "Vì $D$ thuộc tia đối của tia $AB$ nên hai tia $AD$ và $AB$ đối nhau $\\implies \\overrightarrow{AD}$ và $\\overrightarrow{AB}$ ngược hướng."
     },
     {
       "id": "ai-10.7.15",
       "badge": "Luyện thêm 15 - Độ dài vectơ tâm hình vuông",
       "source": "Đề khảo sát chất lượng Toán 10",
-      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a$, tâm $O$. Độ dài của vectơ $\\vec{OB}$ bằng:",
+      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a$, tâm $O$. Độ dài của vectơ $\\overrightarrow{OB}$ bằng:",
       "options": [
         "$\\frac{a\\sqrt{2}}{2}$",
         "$a\\sqrt{2}$",
@@ -4237,13 +4237,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$a$"
       ],
       "correctIndex": 0,
-      "explanation": "Đường chéo $BD = a\\sqrt{2}$. Vì $O$ là trung điểm $BD$ nên $OB = \\frac{a\\sqrt{2}}{2} \\implies |\\vec{OB}| = \\frac{a\\sqrt{2}}{2}$."
+      "explanation": "Đường chéo $BD = a\\sqrt{2}$. Vì $O$ là trung điểm $BD$ nên $OB = \\frac{a\\sqrt{2}}{2} \\implies |\\overrightarrow{OB}| = \\frac{a\\sqrt{2}}{2}$."
     },
     {
       "id": "ai-10.7.16",
       "badge": "Luyện thêm 16 - Vectơ trong tam giác vuông",
       "source": "Đề thi thử Toán 10",
-      "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Gọi $I$ là trung điểm của $BC$. Độ dài của vectơ $\\vec{BI}$ bằng:",
+      "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Gọi $I$ là trung điểm của $BC$. Độ dài của vectơ $\\overrightarrow{BI}$ bằng:",
       "options": [
         "$5$",
         "$10$",
@@ -4251,7 +4251,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$2.5$"
       ],
       "correctIndex": 0,
-      "explanation": "Cạnh huyền $BC = \\sqrt{6^2 + 8^2} = 10$. Vì $I$ là trung điểm của $BC$ nên $BI = 5 \\implies |\\vec{BI}| = 5$."
+      "explanation": "Cạnh huyền $BC = \\sqrt{6^2 + 8^2} = 10$. Vì $I$ là trung điểm của $BC$ nên $BI = 5 \\implies |\\overrightarrow{BI}| = 5$."
     },
     {
       "id": "ai-10.7.17",
@@ -4259,19 +4259,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SGK Toán 10 KNTT",
       "question": "Cho hình thang $ABCD$ ($AB // CD$, $AB < CD$). Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AB}$ cùng hướng với $\\vec{DC}$.",
-        "$\\vec{AB} = \\vec{DC}$.",
-        "$\\vec{AB}$ ngược hướng với $\\vec{DC}$.",
-        "$\\vec{AD}$ cùng phương với $\\vec{BC}$."
+        "$\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{DC}$.",
+        "$\\overrightarrow{AB} = \\overrightarrow{DC}$.",
+        "$\\overrightarrow{AB}$ ngược hướng với $\\overrightarrow{DC}$.",
+        "$\\overrightarrow{AD}$ cùng phương với $\\overrightarrow{BC}$."
       ],
       "correctIndex": 0,
-      "explanation": "Trong hình thang $ABCD$, đáy $AB // DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$ nên $\\vec{AB}$ cùng hướng với $\\vec{DC}$ (tuy nhiên $|\\vec{AB}| \\ne |\\vec{DC}|$ do $AB < CD$)."
+      "explanation": "Trong hình thang $ABCD$, đáy $AB // DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$ nên $\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{DC}$ (tuy nhiên $|\\overrightarrow{AB}| \\ne |\\overrightarrow{DC}|$ do $AB < CD$)."
     },
     {
       "id": "ai-10.7.18",
       "badge": "Luyện thêm 18 - Độ dài vectơ đoạn thẳng tỉ lệ",
       "source": "SBT Toán 10",
-      "question": "Cho đoạn thẳng $AB = 20$. Lấy điểm $C$ trên đoạn $AB$ sao cho $AC = \\frac{2}{5}AB$. Độ dài của vectơ $\\vec{CB}$ bằng:",
+      "question": "Cho đoạn thẳng $AB = 20$. Lấy điểm $C$ trên đoạn $AB$ sao cho $AC = \\frac{2}{5}AB$. Độ dài của vectơ $\\overrightarrow{CB}$ bằng:",
       "options": [
         "$12$",
         "$8$",
@@ -4279,7 +4279,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$15$"
       ],
       "correctIndex": 0,
-      "explanation": "$AC = \\frac{2}{5} \\times 20 = 8$. Do đó $CB = AB - AC = 20 - 8 = 12 \\implies |\\vec{CB}| = 12$."
+      "explanation": "$AC = \\frac{2}{5} \\times 20 = 8$. Do đó $CB = AB - AC = 20 - 8 = 12 \\implies |\\overrightarrow{CB}| = 12$."
     },
     {
       "id": "ai-10.7.19",
@@ -4321,27 +4321,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AB} = \\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "Cùng độ dài và cùng hướng sang phải nên $\\vec{AB} = \\vec{BC}$."
+          "explanation": "Cùng độ dài và cùng hướng sang phải nên $\\overrightarrow{AB} = \\overrightarrow{BC}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AC} = \\vec{BD}$.",
+          "text": "$\\overrightarrow{AC} = \\overrightarrow{BD}$.",
           "correctAnswer": true,
-          "explanation": "$AC = 2AB = BD$ và cùng hướng nên $\\vec{AC} = \\vec{BD}$."
+          "explanation": "$AC = 2AB = BD$ và cùng hướng nên $\\overrightarrow{AC} = \\overrightarrow{BD}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{BA}$ và $\\vec{CD}$ cùng hướng.",
+          "text": "$\\overrightarrow{BA}$ và $\\overrightarrow{CD}$ cùng hướng.",
           "correctAnswer": false,
-          "explanation": "$\\vec{BA}$ hướng sang trái, còn $\\vec{CD}$ hướng sang phải nên chúng ngược hướng."
+          "explanation": "$\\overrightarrow{BA}$ hướng sang trái, còn $\\overrightarrow{CD}$ hướng sang phải nên chúng ngược hướng."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AD}| = 3|\\vec{AB}|$.",
+          "text": "$|\\overrightarrow{AD}| = 3|\\overrightarrow{AB}|$.",
           "correctAnswer": true,
-          "explanation": "$AD = 3AB$ nên $|\\vec{AD}| = 3|\\vec{AB}|.$"
+          "explanation": "$AD = 3AB$ nên $|\\overrightarrow{AD}| = 3|\\overrightarrow{AB}|.$"
         }
       ]
     },
@@ -4353,27 +4353,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} = \\vec{DC}$.",
+          "text": "$\\overrightarrow{AB} = \\overrightarrow{DC}$.",
           "correctAnswer": true,
           "explanation": "Đúng vì $AB // DC, AB = DC$ và cùng hướng."
         },
         {
           "id": "b",
-          "text": "$|\\vec{AB}| = |\\vec{BC}| = a$.",
+          "text": "$|\\overrightarrow{AB}| = |\\overrightarrow{BC}| = a$.",
           "correctAnswer": true,
           "explanation": "Cạnh hình vuông bằng $a$ nên độ dài bằng nhau."
         },
         {
           "id": "c",
-          "text": "$\\vec{AC} = \\vec{BD}$.",
+          "text": "$\\overrightarrow{AC} = \\overrightarrow{BD}$.",
           "correctAnswer": false,
           "explanation": "Hai đường chéo vuông góc nhau nên không cùng phương, do đó không thể bằng nhau."
         },
         {
           "id": "d",
-          "text": "$\\vec{OB} = \\vec{DO}$.",
+          "text": "$\\overrightarrow{OB} = \\overrightarrow{DO}$.",
           "correctAnswer": true,
-          "explanation": "$O$ là trung điểm $BD$, chiều từ $D \\to O$ cùng chiều từ $O \\to B$ và $DO = OB$ nên $\\vec{OB} = \\vec{DO}$."
+          "explanation": "$O$ là trung điểm $BD$, chiều từ $D \\to O$ cùng chiều từ $O \\to B$ và $DO = OB$ nên $\\overrightarrow{OB} = \\overrightarrow{DO}$."
         }
       ]
     },
@@ -4385,19 +4385,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{FE} = \\vec{BD}$.",
+          "text": "$\\overrightarrow{FE} = \\overrightarrow{BD}$.",
           "correctAnswer": true,
-          "explanation": "$FE$ là đường trung bình song song và bằng $BD$ nên $\\vec{FE} = \\vec{BD}$."
+          "explanation": "$FE$ là đường trung bình song song và bằng $BD$ nên $\\overrightarrow{FE} = \\overrightarrow{BD}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{FE} = \\vec{DC}$.",
+          "text": "$\\overrightarrow{FE} = \\overrightarrow{DC}$.",
           "correctAnswer": true,
-          "explanation": "$BD = DC$ nên $\\vec{FE} = \\vec{DC}$."
+          "explanation": "$BD = DC$ nên $\\overrightarrow{FE} = \\overrightarrow{DC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{FD}$ và $\\vec{AC}$ ngược hướng.",
+          "text": "$\\overrightarrow{FD}$ và $\\overrightarrow{AC}$ ngược hướng.",
           "correctAnswer": false,
           "explanation": "$FD // AC$, hướng từ $F \\to D$ cùng hướng với $A \\to C$ nên chúng cùng hướng."
         },
@@ -4417,27 +4417,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{CD}$ cùng phương.",
+          "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{CD}$ cùng phương.",
           "correctAnswer": true,
           "explanation": "Vì $AB // CD$ nên hai vectơ cùng phương."
         },
         {
           "id": "b",
-          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{DC}$ cùng hướng.",
+          "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{DC}$ cùng hướng.",
           "correctAnswer": true,
           "explanation": "Cùng hướng từ trái sang phải theo hai đáy."
         },
         {
           "id": "c",
-          "text": "$\\vec{AD} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AD} = \\overrightarrow{BC}$.",
           "correctAnswer": false,
           "explanation": "Hai cạnh bên của hình thang không song song nên không cùng phương, do đó không bằng nhau."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AC}| = |\\vec{BD}|$.",
+          "text": "$|\\overrightarrow{AC}| = |\\overrightarrow{BD}|$.",
           "correctAnswer": true,
-          "explanation": "Hình thang cân có hai đường chéo bằng nhau nên $|\\vec{AC}| = |\\vec{BD}|.$"
+          "explanation": "Hình thang cân có hai đường chéo bằng nhau nên $|\\overrightarrow{AC}| = |\\overrightarrow{BD}|.$"
         }
       ]
     },
@@ -4469,7 +4469,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
           "id": "d",
           "text": "Vectơ $\\vec{0}$ có vô số điểm đầu và điểm cuối.",
           "correctAnswer": false,
-          "explanation": "Vectơ $\\vec{0}$ cụ thể như $\\vec{AA}$ có điểm đầu là $A$ và điểm cuối là $A$."
+          "explanation": "Vectơ $\\vec{0}$ cụ thể như $\\overrightarrow{AA}$ có điểm đầu là $A$ và điểm cuối là $A$."
         }
       ]
     },
@@ -4481,13 +4481,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$|\\vec{AB}| = |\\vec{BC}| = |\\vec{CA}| = a$.",
+          "text": "$|\\overrightarrow{AB}| = |\\overrightarrow{BC}| = |\\overrightarrow{CA}| = a$.",
           "correctAnswer": true,
           "explanation": "Ba cạnh tam giác đều bằng $a$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AB} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AB} = \\overrightarrow{BC}$.",
           "correctAnswer": false,
           "explanation": "Hai cạnh cắt nhau nên không cùng phương, không thể bằng nhau."
         },
@@ -4499,7 +4499,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         },
         {
           "id": "d",
-          "text": "Ba vectơ $\\vec{GA}, \\vec{GB}, \\vec{GC}$ có cùng độ dài.",
+          "text": "Ba vectơ $\\overrightarrow{GA}, \\overrightarrow{GB}, \\overrightarrow{GC}$ có cùng độ dài.",
           "correctAnswer": true,
           "explanation": "Trong tam giác đều, khoảng cách từ trọng tâm đến 3 đỉnh là bằng nhau."
         }
@@ -4531,9 +4531,9 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         },
         {
           "id": "d",
-          "text": "$\\vec{AH} = \\vec{B'C}$.",
+          "text": "$\\overrightarrow{AH} = \\overrightarrow{B'C}$.",
           "correctAnswer": true,
-          "explanation": "Vì $AHCB'$ là hình bình hành nên $\\vec{AH} = \\vec{B'C}$."
+          "explanation": "Vì $AHCB'$ là hình bình hành nên $\\overrightarrow{AH} = \\overrightarrow{B'C}$."
         }
       ]
     },
@@ -4587,74 +4587,74 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.7.2",
       "badge": "Luyện thêm TLN 2 - Độ dài vectơ cạnh hình vuông",
       "source": "SBT Toán 10",
-      "prompt": "Cho hình vuông $ABCD$ có diện tích bằng $36\\text{ cm}^2$. Tính độ dài của vectơ $\\vec{AB}$ (theo cm).",
+      "prompt": "Cho hình vuông $ABCD$ có diện tích bằng $36\\text{ cm}^2$. Tính độ dài của vectơ $\\overrightarrow{AB}$ (theo cm).",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6",
         "6 cm"
       ],
-      "explanation": "Cạnh hình vuông $a = \\sqrt{36} = 6\\text{ cm} \\implies |\\vec{AB}| = 6$."
+      "explanation": "Cạnh hình vuông $a = \\sqrt{36} = 6\\text{ cm} \\implies |\\overrightarrow{AB}| = 6$."
     },
     {
       "id": "ai-sa-10.7.3",
       "badge": "Luyện thêm TLN 3 - Độ dài đường chéo hình vuông",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $5\\sqrt{2}$. Tính độ dài của vectơ $\\vec{BD}$.",
+      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $5\\sqrt{2}$. Tính độ dài của vectơ $\\overrightarrow{BD}$.",
       "correctAnswer": "10",
       "acceptableAnswers": [
         "10"
       ],
-      "explanation": "$BD = 5\\sqrt{2} \\cdot \\sqrt{2} = 10 \\implies |\\vec{BD}| = 10$."
+      "explanation": "$BD = 5\\sqrt{2} \\cdot \\sqrt{2} = 10 \\implies |\\overrightarrow{BD}| = 10$."
     },
     {
       "id": "ai-sa-10.7.4",
       "badge": "Luyện thêm TLN 4 - Số vectơ bằng vectơ cho trước",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\vec{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành (không tính chính vectơ $\\vec{AB}$)?",
+      "prompt": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\overrightarrow{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành (không tính chính vectơ $\\overrightarrow{AB}$)?",
       "correctAnswer": "1",
       "acceptableAnswers": [
         "1"
       ],
-      "explanation": "Chỉ có duy nhất vectơ $\\vec{DC}$."
+      "explanation": "Chỉ có duy nhất vectơ $\\overrightarrow{DC}$."
     },
     {
       "id": "ai-sa-10.7.5",
       "badge": "Luyện thêm TLN 5 - Độ dài vectơ tam giác vuông",
       "source": "Đề thi học kì 1 Toán 10",
-      "prompt": "Cho tam giác $ABC$ vuông tại $B$ có $AB = 5, BC = 12$. Tính độ dài của vectơ $\\vec{AC}$.",
+      "prompt": "Cho tam giác $ABC$ vuông tại $B$ có $AB = 5, BC = 12$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
       "correctAnswer": "13",
       "acceptableAnswers": [
         "13"
       ],
-      "explanation": "$AC = \\sqrt{5^2 + 12^2} = 13 \\implies |\\vec{AC}| = 13$."
+      "explanation": "$AC = \\sqrt{5^2 + 12^2} = 13 \\implies |\\overrightarrow{AC}| = 13$."
     },
     {
       "id": "ai-sa-10.7.6",
       "badge": "Luyện thêm TLN 6 - Độ dài đường trung tuyến",
       "source": "SBT Toán 10",
-      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 16$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\vec{AM}$.",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 16$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\overrightarrow{AM}$.",
       "correctAnswer": "8",
       "acceptableAnswers": [
         "8"
       ],
-      "explanation": "$AM = \\frac{BC}{2} = 8 \\implies |\\vec{AM}| = 8$."
+      "explanation": "$AM = \\frac{BC}{2} = 8 \\implies |\\overrightarrow{AM}| = 8$."
     },
     {
       "id": "ai-sa-10.7.7",
       "badge": "Luyện thêm TLN 7 - Tỉ số độ dài hai vectơ",
       "source": "Đề kiểm tra định kì Toán 10",
-      "prompt": "Cho đoạn thẳng $AB = 18$. Điểm $C$ nằm trên đoạn $AB$ sao cho $AC = 2CB$. Tính độ dài của vectơ $\\vec{AC}$.",
+      "prompt": "Cho đoạn thẳng $AB = 18$. Điểm $C$ nằm trên đoạn $AB$ sao cho $AC = 2CB$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
       "correctAnswer": "12",
       "acceptableAnswers": [
         "12"
       ],
-      "explanation": "$AC = \\frac{2}{3}AB = \\frac{2}{3} \\times 18 = 12 \\implies |\\vec{AC}| = 12$."
+      "explanation": "$AC = \\frac{2}{3}AB = \\frac{2}{3} \\times 18 = 12 \\implies |\\overrightarrow{AC}| = 12$."
     },
     {
       "id": "ai-sa-10.7.8",
       "badge": "Luyện thêm TLN 8 - Độ dài vectơ đường cao",
       "source": "Bộ đề Toán 10 KNTT",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $6$. Gọi $H$ là trung điểm của cạnh $BC$. Tính độ dài của vectơ $\\vec{AH}$ (kết quả làm tròn đến hàng phần mười).",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $6$. Gọi $H$ là trung điểm của cạnh $BC$. Tính độ dài của vectơ $\\overrightarrow{AH}$ (kết quả làm tròn đến hàng phần mười).",
       "correctAnswer": "5.2",
       "acceptableAnswers": [
         "5.2",
@@ -4667,7 +4667,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.7.9",
       "badge": "Luyện thêm TLN 9 - Vectơ trong hình thoi góc 120 độ",
       "source": "Đề thi HSG Toán 10",
-      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $8$ và góc $\\widehat{ABC} = 120^\\circ$. Tính độ dài của vectơ $\\vec{AC}$.",
+      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $8$ và góc $\\widehat{ABC} = 120^\\circ$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
       "correctAnswer": "13.9",
       "acceptableAnswers": [
         "13.9",
@@ -4691,12 +4691,12 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.7.11",
       "badge": "Luyện thêm TLN 11 - Khoảng cách tâm hình chữ nhật",
       "source": "SBT Toán 10",
-      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 16$, tâm $O$. Tính độ dài của vectơ $\\vec{OD}$.",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 16$, tâm $O$. Tính độ dài của vectơ $\\overrightarrow{OD}$.",
       "correctAnswer": "10",
       "acceptableAnswers": [
         "10"
       ],
-      "explanation": "$BD = \\sqrt{12^2 + 16^2} = 20$. Vì $O$ là trung điểm $BD$ nên $OD = 10 \\implies |\\vec{OD}| = 10$."
+      "explanation": "$BD = \\sqrt{12^2 + 16^2} = 20$. Vì $O$ là trung điểm $BD$ nên $OD = 10 \\implies |\\overrightarrow{OD}| = 10$."
     },
     {
       "id": "ai-sa-10.7.12",
@@ -4725,61 +4725,61 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
       "question": "Cho 3 điểm phân biệt $M, N, P$. Đẳng thức nào sau đây là SAI?",
       "options": [
-        "$\\vec{MN} + \\vec{NP} = \\vec{PN}$",
-        "$\\vec{MN} + \\vec{NP} = \\vec{MP}$",
-        "$\\vec{PM} + \\vec{MN} = \\vec{PN}$",
-        "$\\vec{NP} + \\vec{PM} = \\vec{NM}$"
+        "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{PN}$",
+        "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{MP}$",
+        "$\\overrightarrow{PM} + \\overrightarrow{MN} = \\overrightarrow{PN}$",
+        "$\\overrightarrow{NP} + \\overrightarrow{PM} = \\overrightarrow{NM}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{MN} + \\vec{NP} = \\vec{MP}$, không thể bằng $\\vec{PN}$."
+      "explanation": "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{MP}$, không thể bằng $\\overrightarrow{PN}$."
     },
     {
       "id": "ai-10.8.2",
       "badge": "Luyện thêm 2 - Quy tắc hình bình hành",
       "source": "Đề kiểm tra Toán 10 KNTT",
-      "question": "Cho hình bình hành $MNPQ$. Tổng hai vectơ $\\vec{MN} + \\vec{MQ}$ bằng vectơ nào sau đây?",
+      "question": "Cho hình bình hành $MNPQ$. Tổng hai vectơ $\\overrightarrow{MN} + \\overrightarrow{MQ}$ bằng vectơ nào sau đây?",
       "options": [
-        "$\\vec{MP}$",
-        "$\\vec{NQ}$",
-        "$\\vec{QN}$",
-        "$\\vec{PM}$"
+        "$\\overrightarrow{MP}$",
+        "$\\overrightarrow{NQ}$",
+        "$\\overrightarrow{QN}$",
+        "$\\overrightarrow{PM}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc hình bình hành: $\\vec{MN} + \\vec{MQ} = \\vec{MP}$."
+      "explanation": "Theo quy tắc hình bình hành: $\\overrightarrow{MN} + \\overrightarrow{MQ} = \\overrightarrow{MP}$."
     },
     {
       "id": "ai-10.8.3",
       "badge": "Luyện thêm 3 - Vectơ đối trong đoạn thẳng",
       "source": "SBT Toán 10",
-      "question": "Cho đoạn thẳng $CD$. Vectơ đối của vectơ $\\vec{CD}$ là:",
+      "question": "Cho đoạn thẳng $CD$. Vectơ đối của vectơ $\\overrightarrow{CD}$ là:",
       "options": [
-        "$\\vec{DC}$",
-        "$-\\vec{DC}$",
-        "$\\vec{CD}$",
-        "$|\\vec{CD}|$"
+        "$\\overrightarrow{DC}$",
+        "$-\\overrightarrow{DC}$",
+        "$\\overrightarrow{CD}$",
+        "$|\\overrightarrow{CD}|$"
       ],
       "correctIndex": 0,
-      "explanation": "Vectơ đối của $\\vec{CD}$ là $-\\vec{CD} = \\vec{DC}$."
+      "explanation": "Vectơ đối của $\\overrightarrow{CD}$ là $-\\overrightarrow{CD} = \\overrightarrow{DC}$."
     },
     {
       "id": "ai-10.8.4",
       "badge": "Luyện thêm 4 - Quy tắc hiệu hai vectơ",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho ba điểm bất kì $A, B, C$. Hiệu $\\vec{CA} - \\vec{CB}$ bằng:",
+      "question": "Cho ba điểm bất kì $A, B, C$. Hiệu $\\overrightarrow{CA} - \\overrightarrow{CB}$ bằng:",
       "options": [
-        "$\\vec{BA}$",
-        "$\\vec{AB}$",
-        "$\\vec{AC}$",
-        "$\\vec{BC}$"
+        "$\\overrightarrow{BA}$",
+        "$\\overrightarrow{AB}$",
+        "$\\overrightarrow{AC}$",
+        "$\\overrightarrow{BC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc trừ chung gốc: $\\vec{CA} - \\vec{CB} = \\vec{BA}$."
+      "explanation": "Theo quy tắc trừ chung gốc: $\\overrightarrow{CA} - \\overrightarrow{CB} = \\overrightarrow{BA}$."
     },
     {
       "id": "ai-10.8.5",
       "badge": "Luyện thêm 5 - Độ dài tổng hai vectơ tam giác vuông",
       "source": "Đề thi học kì 1 Toán 10",
-      "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Độ dài của vectơ $\\vec{AB} + \\vec{AC}$ bằng:",
+      "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
       "options": [
         "$10$",
         "$14$",
@@ -4787,41 +4787,41 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{14}$"
       ],
       "correctIndex": 0,
-      "explanation": "Dựng hình chữ nhật $ABDC$, ta có $\\vec{AB} + \\vec{AC} = \\vec{AD}$. Độ dài $|\\vec{AD}| = \\sqrt{6^2 + 8^2} = 10$."
+      "explanation": "Dựng hình chữ nhật $ABDC$, ta có $\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$. Độ dài $|\\overrightarrow{AD}| = \\sqrt{6^2 + 8^2} = 10$."
     },
     {
       "id": "ai-10.8.6",
       "badge": "Luyện thêm 6 - Rút gọn tổng ba vectơ",
       "source": "SBT Toán 10 KNTT",
-      "question": "Rút gọn biểu thức $\\vec{u} = \\vec{PQ} + \\vec{QR} + \\vec{RP}$ ta được kết quả là:",
+      "question": "Rút gọn biểu thức $\\vec{u} = \\overrightarrow{PQ} + \\overrightarrow{QR} + \\overrightarrow{RP}$ ta được kết quả là:",
       "options": [
         "$\\vec{0}$",
-        "$\\vec{PR}$",
-        "$\\vec{PQ}$",
-        "$2\\vec{PR}$"
+        "$\\overrightarrow{PR}$",
+        "$\\overrightarrow{PQ}$",
+        "$2\\overrightarrow{PR}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{PQ} + \\vec{QR} + \\vec{RP} = \\vec{PP} = \\vec{0}$."
+      "explanation": "$\\overrightarrow{PQ} + \\overrightarrow{QR} + \\overrightarrow{RP} = \\overrightarrow{PP} = \\vec{0}$."
     },
     {
       "id": "ai-10.8.7",
       "badge": "Luyện thêm 7 - Hiệu hai vectơ đối nhau",
       "source": "Đề kiểm tra Toán 10",
-      "question": "Cho $I$ là trung điểm của đoạn thẳng $AB$. Hiệu $\\vec{IA} - \\vec{IB}$ bằng vectơ nào sau đây?",
+      "question": "Cho $I$ là trung điểm của đoạn thẳng $AB$. Hiệu $\\overrightarrow{IA} - \\overrightarrow{IB}$ bằng vectơ nào sau đây?",
       "options": [
-        "$2\\vec{IA}$",
+        "$2\\overrightarrow{IA}$",
         "$\\vec{0}$",
-        "$\\vec{AB}$",
-        "$\\vec{BA}$"
+        "$\\overrightarrow{AB}$",
+        "$\\overrightarrow{BA}$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $\\vec{IB} = -\\vec{IA}$ nên $\\vec{IA} - \\vec{IB} = \\vec{IA} - (-\\vec{IA}) = 2\\vec{IA}$."
+      "explanation": "Vì $\\overrightarrow{IB} = -\\overrightarrow{IA}$ nên $\\overrightarrow{IA} - \\overrightarrow{IB} = \\overrightarrow{IA} - (-\\overrightarrow{IA}) = 2\\overrightarrow{IA}$."
     },
     {
       "id": "ai-10.8.8",
       "badge": "Luyện thêm 8 - Độ dài hiệu hai vectơ hình vuông",
       "source": "Bộ đề Toán 10",
-      "question": "Cho hình vuông $ABCD$ cạnh $4$. Độ dài của vectơ $\\vec{AB} - \\vec{AC}$ bằng:",
+      "question": "Cho hình vuông $ABCD$ cạnh $4$. Độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$ bằng:",
       "options": [
         "$4$",
         "$4\\sqrt{2}$",
@@ -4829,21 +4829,21 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$0$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB}$. Độ dài $|\\vec{CB}| = BC = 4$."
+      "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$. Độ dài $|\\overrightarrow{CB}| = BC = 4$."
     },
     {
       "id": "ai-10.8.9",
       "badge": "Luyện thêm 9 - Tổng hai vectơ đối nhau",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho hình bình hành $ABCD$ tâm $O$. Tổng $\\vec{OA} + \\vec{OC}$ bằng:",
+      "question": "Cho hình bình hành $ABCD$ tâm $O$. Tổng $\\overrightarrow{OA} + \\overrightarrow{OC}$ bằng:",
       "options": [
         "$\\vec{0}$",
-        "$\\vec{AC}$",
-        "$2\\vec{OA}$",
-        "$\\vec{BD}$"
+        "$\\overrightarrow{AC}$",
+        "$2\\overrightarrow{OA}$",
+        "$\\overrightarrow{BD}$"
       ],
       "correctIndex": 0,
-      "explanation": "$O$ là trung điểm $AC$ nên $\\vec{OA} + \\vec{OC} = \\vec{0}$."
+      "explanation": "$O$ là trung điểm $AC$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0}$."
     },
     {
       "id": "ai-10.8.10",
@@ -4851,19 +4851,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10",
       "question": "Cho tam giác $ABC$ có trọng tâm $G$. Với điểm $M$ tùy ý, ta luôn có:",
       "options": [
-        "$\\vec{MA} + \\vec{MB} + \\vec{MC} = 3\\vec{MG}$",
-        "$\\vec{MA} + \\vec{MB} + \\vec{MC} = \\vec{MG}$",
-        "$\\vec{MA} + \\vec{MB} + \\vec{MC} = \\vec{0}$",
-        "$\\vec{MA} + \\vec{MB} + \\vec{MC} = 2\\vec{MG}$"
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 3\\overrightarrow{MG}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\overrightarrow{MG}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 2\\overrightarrow{MG}$"
       ],
       "correctIndex": 0,
-      "explanation": "Đẳng thức trọng tâm: $\\vec{MA} + \\vec{MB} + \\vec{MC} = 3\\vec{MG}$."
+      "explanation": "Đẳng thức trọng tâm: $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 3\\overrightarrow{MG}$."
     },
     {
       "id": "ai-10.8.11",
       "badge": "Luyện thêm 11 - Độ dài vectơ tam giác đều",
       "source": "Đề thi thử Toán 10",
-      "question": "Cho tam giác đều $ABC$ cạnh $2$. Độ dài vectơ $\\vec{u} = \\vec{AB} - \\vec{BC}$ bằng:",
+      "question": "Cho tam giác đều $ABC$ cạnh $2$. Độ dài vectơ $\\vec{u} = \\overrightarrow{AB} - \\overrightarrow{BC}$ bằng:",
       "options": [
         "$2\\sqrt{3}$",
         "$2$",
@@ -4871,41 +4871,41 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{3}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} - \\vec{BC} = \\vec{AB} + \\vec{CB}$. Gọi $M$ là trung điểm $B$ đối xứng... Ta có $|\\vec{AB} + \\vec{CB}|^2 = AB^2 + CB^2 + 2 AB \\cdot CB \\cos 60^\\circ = 4 + 4 + 2(2)(2)(0.5) = 12 \\implies |\\vec{u}| = \\sqrt{12} = 2\\sqrt{3}$."
+      "explanation": "$\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AB} + \\overrightarrow{CB}$. Gọi $M$ là trung điểm $B$ đối xứng... Ta có $|\\overrightarrow{AB} + \\overrightarrow{CB}|^2 = AB^2 + CB^2 + 2 AB \\cdot CB \\cos 60^\\circ = 4 + 4 + 2(2)(2)(0.5) = 12 \\implies |\\vec{u}| = \\sqrt{12} = 2\\sqrt{3}$."
     },
     {
       "id": "ai-10.8.12",
       "badge": "Luyện thêm 12 - Vectơ tổng bằng vectơ không",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho 4 điểm $A, B, C, D$. Tổng $\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DA}$ bằng:",
+      "question": "Cho 4 điểm $A, B, C, D$. Tổng $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DA}$ bằng:",
       "options": [
         "$\\vec{0}$",
-        "$\\vec{AC}$",
-        "$\\vec{BD}$",
-        "$2\\vec{AB}$"
+        "$\\overrightarrow{AC}$",
+        "$\\overrightarrow{BD}$",
+        "$2\\overrightarrow{AB}$"
       ],
       "correctIndex": 0,
-      "explanation": "Đường gấp khúc khép kín: tổng bằng $\\vec{AA} = \\vec{0}$."
+      "explanation": "Đường gấp khúc khép kín: tổng bằng $\\overrightarrow{AA} = \\vec{0}$."
     },
     {
       "id": "ai-10.8.13",
       "badge": "Luyện thêm 13 - Hiệu hai vectơ trung điểm",
       "source": "SBT Toán 10",
-      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm của $BC$. Hiệu $\\vec{AB} - \\vec{AC}$ bằng:",
+      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm của $BC$. Hiệu $\\overrightarrow{AB} - \\overrightarrow{AC}$ bằng:",
       "options": [
-        "$\\vec{CB}$",
-        "$\\vec{BC}$",
-        "$2\\vec{AM}$",
+        "$\\overrightarrow{CB}$",
+        "$\\overrightarrow{BC}$",
+        "$2\\overrightarrow{AM}$",
         "$\\vec{0}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB}$."
+      "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$."
     },
     {
       "id": "ai-10.8.14",
       "badge": "Luyện thêm 14 - Độ dài tổng hai vectơ đối",
       "source": "Bộ đề Toán 10",
-      "question": "Cho đoạn thẳng $AB = 8$. Độ dài của vectơ $\\vec{AB} + \\vec{BA}$ bằng:",
+      "question": "Cho đoạn thẳng $AB = 8$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{BA}$ bằng:",
       "options": [
         "$0$",
         "$8$",
@@ -4913,13 +4913,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$-8$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} + \\vec{BA} = \\vec{0} \\implies |\\vec{0}| = 0$."
+      "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BA} = \\vec{0} \\implies |\\vec{0}| = 0$."
     },
     {
       "id": "ai-10.8.15",
       "badge": "Luyện thêm 15 - Điểm thỏa mãn đẳng thức vectơ",
       "source": "Đề kiểm tra định kì Toán 10",
-      "question": "Cho tam giác $ABC$. Điểm $M$ thỏa mãn $\\vec{MA} + \\vec{MB} + \\vec{MC} = \\vec{0}$ là:",
+      "question": "Cho tam giác $ABC$. Điểm $M$ thỏa mãn $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$ là:",
       "options": [
         "Trọng tâm của tam giác $ABC$.",
         "Trực tâm của tam giác $ABC$.",
@@ -4927,13 +4927,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "Tâm đường tròn nội tiếp tam giác $ABC$."
       ],
       "correctIndex": 0,
-      "explanation": "Điểm thỏa mãn $\\vec{MA} + \\vec{MB} + \\vec{MC} = \\vec{0}$ duy nhất là trọng tâm $G$."
+      "explanation": "Điểm thỏa mãn $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$ duy nhất là trọng tâm $G$."
     },
     {
       "id": "ai-10.8.16",
       "badge": "Luyện thêm 16 - Độ dài vectơ hình chữ nhật",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho hình chữ nhật $ABCD$ có $AB = 5, BC = 12$. Độ dài vectơ $\\vec{AB} + \\vec{BC}$ bằng:",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 5, BC = 12$. Độ dài vectơ $\\overrightarrow{AB} + \\overrightarrow{BC}$ bằng:",
       "options": [
         "$13$",
         "$17$",
@@ -4941,13 +4941,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\sqrt{119}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} + \\vec{BC} = \\vec{AC} \\implies |\\vec{AC}| = \\sqrt{5^2 + 12^2} = 13$."
+      "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies |\\overrightarrow{AC}| = \\sqrt{5^2 + 12^2} = 13$."
     },
     {
       "id": "ai-10.8.17",
       "badge": "Luyện thêm 17 - Hiệu hai vectơ cạnh hình thoi",
       "source": "Đề khảo sát Toán 10",
-      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và $\\widehat{ABC} = 60^\\circ$. Độ dài vectơ $\\vec{BA} - \\vec{BC}$ bằng:",
+      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và $\\widehat{ABC} = 60^\\circ$. Độ dài vectơ $\\overrightarrow{BA} - \\overrightarrow{BC}$ bằng:",
       "options": [
         "$a$",
         "$a\\sqrt{3}$",
@@ -4955,7 +4955,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\frac{a\\sqrt{3}}{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{BA} - \\vec{BC} = \\vec{CA}$. Tam giác $ABC$ đều nên $CA = a$."
+      "explanation": "$\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$. Tam giác $ABC$ đều nên $CA = a$."
     },
     {
       "id": "ai-10.8.18",
@@ -4963,13 +4963,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SGK Toán 10 KNTT",
       "question": "Cho 4 điểm $A, B, C, D$. Khẳng định nào sau đây luôn ĐÚNG?",
       "options": [
-        "$\\vec{AB} + \\vec{CD} = \\vec{AD} + \\vec{CB}$",
-        "$\\vec{AB} + \\vec{CD} = \\vec{AC} + \\vec{BD}$",
-        "$\\vec{AB} - \\vec{CD} = \\vec{AC} - \\vec{BD}$",
-        "$\\vec{AB} + \\vec{BC} = \\vec{AD} + \\vec{DC}$"
+        "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\overrightarrow{AD} + \\overrightarrow{CB}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\overrightarrow{AC} + \\overrightarrow{BD}$",
+        "$\\overrightarrow{AB} - \\overrightarrow{CD} = \\overrightarrow{AC} - \\overrightarrow{BD}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AD} + \\overrightarrow{DC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Chèn điểm: $\\vec{AB} = \\vec{AD} + \\vec{DB}$, $\\vec{CD} = \\vec{CB} + \\vec{BD}$. Cộng lại: $\\vec{AD} + \\vec{CB} + (\\vec{DB} + \\vec{BD}) = \\vec{AD} + \\vec{CB}$."
+      "explanation": "Chèn điểm: $\\overrightarrow{AB} = \\overrightarrow{AD} + \\overrightarrow{DB}$, $\\overrightarrow{CD} = \\overrightarrow{CB} + \\overrightarrow{BD}$. Cộng lại: $\\overrightarrow{AD} + \\overrightarrow{CB} + (\\overrightarrow{DB} + \\overrightarrow{BD}) = \\overrightarrow{AD} + \\overrightarrow{CB}$."
     },
     {
       "id": "ai-10.8.19",
@@ -5009,27 +5009,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{BC} + \\vec{CA} = \\vec{0}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA} = \\vec{0}$.",
           "correctAnswer": true,
           "explanation": "Chu trình ba điểm khép kín luôn bằng $\\vec{0}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AB} - \\vec{AC} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{BC}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB}$, không phải $\\vec{BC}$."
+          "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$, không phải $\\overrightarrow{BC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{AB} + \\vec{AC} = \\vec{BC}$ khi tam giác vuông.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{BC}$ khi tam giác vuông.",
           "correctAnswer": false,
-          "explanation": "Không bao giờ có hệ thức này vì $\\vec{AB} + \\vec{AC}$ có phương khác $\\vec{BC}$."
+          "explanation": "Không bao giờ có hệ thức này vì $\\overrightarrow{AB} + \\overrightarrow{AC}$ có phương khác $\\overrightarrow{BC}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{BA} - \\vec{BC} = \\vec{CA}$.",
+          "text": "$\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$.",
           "correctAnswer": true,
-          "explanation": "Quy tắc trừ chung gốc: $\\vec{BA} - \\vec{BC} = \\vec{CA}$."
+          "explanation": "Quy tắc trừ chung gốc: $\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$."
         }
       ]
     },
@@ -5041,27 +5041,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{BA} + \\vec{BC} = \\vec{BD}$.",
+          "text": "$\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{BD}$.",
           "correctAnswer": true,
           "explanation": "Quy tắc hình bình hành xuất phát từ đỉnh $B$."
         },
         {
           "id": "b",
-          "text": "$\\vec{DA} + \\vec{DC} = \\vec{DB}$.",
+          "text": "$\\overrightarrow{DA} + \\overrightarrow{DC} = \\overrightarrow{DB}$.",
           "correctAnswer": true,
           "explanation": "Quy tắc hình bình hành xuất phát từ đỉnh $D$."
         },
         {
           "id": "c",
-          "text": "$\\vec{AB} - \\vec{BC} = \\vec{AC}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AC}$.",
           "correctAnswer": false,
-          "explanation": "Sai: $\\vec{AB} - \\vec{BC} = \\vec{AB} + \\vec{CB} \\ne \\vec{AC}$."
+          "explanation": "Sai: $\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AB} + \\overrightarrow{CB} \\ne \\overrightarrow{AC}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{AB} + \\vec{CD} = \\vec{0}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "Vì $\\vec{CD} = -\\vec{AB}$ nên tổng bằng $\\vec{0}$."
+          "explanation": "Vì $\\overrightarrow{CD} = -\\overrightarrow{AB}$ nên tổng bằng $\\vec{0}$."
         }
       ]
     },
@@ -5073,27 +5073,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$|\\vec{AB} + \\vec{BC}| = 2\\sqrt{2}$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{BC}| = 2\\sqrt{2}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} + \\vec{BC} = \\vec{AC} \\implies AC = 2\\sqrt{2}$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies AC = 2\\sqrt{2}$."
         },
         {
           "id": "b",
-          "text": "$|\\vec{AB} - \\vec{BC}| = 2\\sqrt{2}$.",
+          "text": "$|\\overrightarrow{AB} - \\overrightarrow{BC}| = 2\\sqrt{2}$.",
           "correctAnswer": true,
-          "explanation": "$|\\vec{AB} + \\vec{CB}| = \\sqrt{2^2 + 2^2} = 2\\sqrt{2}$."
+          "explanation": "$|\\overrightarrow{AB} + \\overrightarrow{CB}| = \\sqrt{2^2 + 2^2} = 2\\sqrt{2}$."
         },
         {
           "id": "c",
-          "text": "$|\\vec{OA} + \\vec{OC}| = 0$.",
+          "text": "$|\\overrightarrow{OA} + \\overrightarrow{OC}| = 0$.",
           "correctAnswer": true,
-          "explanation": "$O$ là trung điểm $AC$ nên $\\vec{OA} + \\vec{OC} = \\vec{0} \\implies$ độ dài bằng $0$."
+          "explanation": "$O$ là trung điểm $AC$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0} \\implies$ độ dài bằng $0$."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AB} + \\vec{CD}| = 4$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{CD}| = 4$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB} + \\vec{CD} = \\vec{0} \\implies$ độ dài bằng $0$, không phải 4."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0} \\implies$ độ dài bằng $0$, không phải 4."
         }
       ]
     },
@@ -5105,27 +5105,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{MA} + \\vec{MB} = \\vec{0}$.",
+          "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0}$.",
           "correctAnswer": true,
           "explanation": "Tính chất cơ bản của trung điểm."
         },
         {
           "id": "b",
-          "text": "$\\vec{AM} + \\vec{BM} = \\vec{0}$.",
+          "text": "$\\overrightarrow{AM} + \\overrightarrow{BM} = \\vec{0}$.",
           "correctAnswer": true,
           "explanation": "Hai vectơ đối nhau nên tổng bằng $\\vec{0}$."
         },
         {
           "id": "c",
-          "text": "Với mọi điểm $P$, ta có $\\vec{PA} + \\vec{PB} = 2\\vec{PM}$.",
+          "text": "Với mọi điểm $P$, ta có $\\overrightarrow{PA} + \\overrightarrow{PB} = 2\\overrightarrow{PM}$.",
           "correctAnswer": true,
           "explanation": "Hệ thức trung điểm tổng quát."
         },
         {
           "id": "d",
-          "text": "$\\vec{MA} - \\vec{MB} = \\vec{0}$.",
+          "text": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\vec{0}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{MA} - \\vec{MB} = \\vec{BA} \\ne \\vec{0}$."
+          "explanation": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\overrightarrow{BA} \\ne \\vec{0}$."
         }
       ]
     },
@@ -5137,25 +5137,25 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$|\\vec{AB} - \\vec{AC}| = 6$.",
+          "text": "$|\\overrightarrow{AB} - \\overrightarrow{AC}| = 6$.",
           "correctAnswer": true,
-          "explanation": "$|\\vec{CB}| = 6$."
+          "explanation": "$|\\overrightarrow{CB}| = 6$."
         },
         {
           "id": "b",
-          "text": "$|\\vec{AB} + \\vec{AC}| = 6\\sqrt{3}$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{AC}| = 6\\sqrt{3}$.",
           "correctAnswer": true,
           "explanation": "$2h = 2 \\cdot \\frac{6\\sqrt{3}}{2} = 6\\sqrt{3}$."
         },
         {
           "id": "c",
-          "text": "$|\\vec{BC} + \\vec{CA}| = 6$.",
+          "text": "$|\\overrightarrow{BC} + \\overrightarrow{CA}| = 6$.",
           "correctAnswer": true,
-          "explanation": "$|\\vec{BA}| = 6$."
+          "explanation": "$|\\overrightarrow{BA}| = 6$."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AB} + \\vec{BC} + \\vec{CA}| = 18$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA}| = 18$.",
           "correctAnswer": false,
           "explanation": "Tổng ba vectơ bằng $\\vec{0}$ nên độ dài bằng $0$, không phải 18."
         }
@@ -5169,25 +5169,25 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{CD} + \\vec{BC} = \\vec{AD}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} + \\overrightarrow{BC} = \\overrightarrow{AD}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} + \\vec{BC} + \\vec{CD} = \\vec{AD}$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} = \\overrightarrow{AD}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AC} + \\vec{BD} = \\vec{AD} + \\vec{BC}$.",
+          "text": "$\\overrightarrow{AC} + \\overrightarrow{BD} = \\overrightarrow{AD} + \\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "Chèn điểm $D$ vào $\\vec{AC}$: $\\vec{AD} + \\vec{DC} + \\vec{BD} = \\vec{AD} + (\\vec{BD} + \\vec{DC}) = \\vec{AD} + \\vec{BC}$."
+          "explanation": "Chèn điểm $D$ vào $\\overrightarrow{AC}$: $\\overrightarrow{AD} + \\overrightarrow{DC} + \\overrightarrow{BD} = \\overrightarrow{AD} + (\\overrightarrow{BD} + \\overrightarrow{DC}) = \\overrightarrow{AD} + \\overrightarrow{BC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{AB} - \\vec{AD} = \\vec{CB} - \\vec{CD}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{CB} - \\overrightarrow{CD}$.",
           "correctAnswer": true,
-          "explanation": "Vế trái $= \\vec{DB}$, vế phải $= \\vec{DB}$."
+          "explanation": "Vế trái $= \\overrightarrow{DB}$, vế phải $= \\overrightarrow{DB}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{AB} + \\vec{AC} = \\vec{AD}$ khi $ABCD$ là hình thang.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$ khi $ABCD$ là hình thang.",
           "correctAnswer": false,
           "explanation": "Chỉ đúng khi $ABCD$ là hình bình hành."
         }
@@ -5263,7 +5263,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.8.1",
       "badge": "Luyện thêm TLN 1 - Độ dài vectơ hình vuông",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình vuông $ABCD$ cạnh $8$. Tính độ dài của vectơ $\\vec{u} = \\vec{AB} + \\vec{AD}$ (làm tròn đến hàng phần mười).",
+      "prompt": "Cho hình vuông $ABCD$ cạnh $8$. Tính độ dài của vectơ $\\vec{u} = \\overrightarrow{AB} + \\overrightarrow{AD}$ (làm tròn đến hàng phần mười).",
       "correctAnswer": "11.3",
       "acceptableAnswers": [
         "11.3",
@@ -5276,18 +5276,18 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.8.2",
       "badge": "Luyện thêm TLN 2 - Hiệu hai vectơ tam giác vuông",
       "source": "SBT Toán 10",
-      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 8, AC = 15$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AC}$.",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 8, AC = 15$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$.",
       "correctAnswer": "17",
       "acceptableAnswers": [
         "17"
       ],
-      "explanation": "$|\\vec{CB}| = \\sqrt{8^2 + 15^2} = 17$."
+      "explanation": "$|\\overrightarrow{CB}| = \\sqrt{8^2 + 15^2} = 17$."
     },
     {
       "id": "ai-sa-10.8.3",
       "badge": "Luyện thêm TLN 3 - Tổng hai vectơ tam giác đều",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $2\\sqrt{3}$. Tính độ dài của vectơ $\\vec{AB} + \\vec{AC}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $2\\sqrt{3}$. Tính độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$.",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
@@ -5310,12 +5310,12 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.8.5",
       "badge": "Luyện thêm TLN 5 - Độ dài hiệu vectơ hình chữ nhật",
       "source": "Bộ đề Toán 10",
-      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 5$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AD}$.",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 5$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AD}$.",
       "correctAnswer": "13",
       "acceptableAnswers": [
         "13"
       ],
-      "explanation": "$|\\vec{DB}| = \\sqrt{12^2 + 5^2} = 13$."
+      "explanation": "$|\\overrightarrow{DB}| = \\sqrt{12^2 + 5^2} = 13$."
     },
     {
       "id": "ai-sa-10.8.6",
@@ -5332,12 +5332,12 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.8.7",
       "badge": "Luyện thêm TLN 7 - Độ dài vectơ trọng tâm",
       "source": "Đề thi khảo sát Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $6\\sqrt{3}$, trọng tâm $G$. Tính độ dài vectơ $\\vec{GA} + \\vec{GB}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $6\\sqrt{3}$, trọng tâm $G$. Tính độ dài vectơ $\\overrightarrow{GA} + \\overrightarrow{GB}$.",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
       ],
-      "explanation": "$|\\vec{GC}| = \\frac{2}{3} \\cdot \\frac{6\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6$."
+      "explanation": "$|\\overrightarrow{GC}| = \\frac{2}{3} \\cdot \\frac{6\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6$."
     },
     {
       "id": "ai-sa-10.8.8",
@@ -5356,23 +5356,23 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.8.9",
       "badge": "Luyện thêm TLN 9 - Độ dài tổng vectơ cùng hướng",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho ba điểm thẳng hàng $A, B, C$ ($B$ nằm giữa $A$ và $C$) có $AB = 7, BC = 9$. Tính độ dài vectơ $\\vec{AB} + \\vec{BC}$.",
+      "prompt": "Cho ba điểm thẳng hàng $A, B, C$ ($B$ nằm giữa $A$ và $C$) có $AB = 7, BC = 9$. Tính độ dài vectơ $\\overrightarrow{AB} + \\overrightarrow{BC}$.",
       "correctAnswer": "16",
       "acceptableAnswers": [
         "16"
       ],
-      "explanation": "$|\\vec{AC}| = 7 + 9 = 16$."
+      "explanation": "$|\\overrightarrow{AC}| = 7 + 9 = 16$."
     },
     {
       "id": "ai-sa-10.8.10",
       "badge": "Luyện thêm TLN 10 - Độ dài hiệu vectơ ngược hướng",
       "source": "SBT Toán 10",
-      "prompt": "Cho đoạn thẳng $AB = 14$ có trung điểm $M$. Tính độ dài của vectơ $\\vec{MA} - \\vec{MB}$.",
+      "prompt": "Cho đoạn thẳng $AB = 14$ có trung điểm $M$. Tính độ dài của vectơ $\\overrightarrow{MA} - \\overrightarrow{MB}$.",
       "correctAnswer": "14",
       "acceptableAnswers": [
         "14"
       ],
-      "explanation": "$\\vec{MA} - \\vec{MB} = \\vec{BA} \\implies |\\vec{BA}| = 14$."
+      "explanation": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\overrightarrow{BA} \\implies |\\overrightarrow{BA}| = 14$."
     },
     {
       "id": "ai-sa-10.8.11",
@@ -5441,13 +5441,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{GM} = -\\frac{1}{3}\\vec{AM}$",
-        "$\\vec{GM} = \\frac{1}{3}\\vec{AM}$",
-        "$\\vec{GM} = -\\frac{1}{2}\\vec{AM}$",
-        "$\\vec{GM} = \\frac{2}{3}\\vec{AM}$"
+        "$\\overrightarrow{GM} = -\\frac{1}{3}\\overrightarrow{AM}$",
+        "$\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$",
+        "$\\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{AM}$",
+        "$\\overrightarrow{GM} = \\frac{2}{3}\\overrightarrow{AM}$"
       ],
       "correctIndex": 0,
-      "explanation": "Đoạn $GM = \\frac{1}{3}AM$, chiều từ $G \\to M$ cùng chiều $A \\to M$ nên $\\vec{GM} = \\frac{1}{3}\\vec{AM}$? Hãy kiểm tra: tia $A \\to M$ có $G$ ở giữa nên chiều từ $G \\to M$ cùng hướng với $A \\to M$! Vậy $\\vec{GM} = \\frac{1}{3}\\vec{AM}$! Chỉnh lại: $\\vec{MG} = -\\frac{1}{3}\\vec{AM}$."
+      "explanation": "Đoạn $GM = \\frac{1}{3}AM$, chiều từ $G \\to M$ cùng chiều $A \\to M$ nên $\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$? Hãy kiểm tra: tia $A \\to M$ có $G$ ở giữa nên chiều từ $G \\to M$ cùng hướng với $A \\to M$! Vậy $\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$! Chỉnh lại: $\\overrightarrow{MG} = -\\frac{1}{3}\\overrightarrow{AM}$."
     },
     {
       "id": "ai-10.9.4",
@@ -5455,13 +5455,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề kiểm tra Toán 10",
       "question": "Cho đoạn thẳng $AB$ có trung điểm $M$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{AB} = 2\\vec{AM}$",
-        "$\\vec{AB} = -2\\vec{AM}$",
-        "$\\vec{AM} = 2\\vec{AB}$",
-        "$\\vec{AB} = \\frac{1}{2}\\vec{AM}$"
+        "$\\overrightarrow{AB} = 2\\overrightarrow{AM}$",
+        "$\\overrightarrow{AB} = -2\\overrightarrow{AM}$",
+        "$\\overrightarrow{AM} = 2\\overrightarrow{AB}$",
+        "$\\overrightarrow{AB} = \\frac{1}{2}\\overrightarrow{AM}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB}$ cùng hướng với $\\vec{AM}$ và $AB = 2AM$ nên $\\vec{AB} = 2\\vec{AM}$."
+      "explanation": "$\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{AM}$ và $AB = 2AM$ nên $\\overrightarrow{AB} = 2\\overrightarrow{AM}$."
     },
     {
       "id": "ai-10.9.5",
@@ -5481,7 +5481,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-10.9.6",
       "badge": "Luyện thêm 6 - Độ dài vectơ tích",
       "source": "SBT Toán 10",
-      "question": "Cho đoạn thẳng $AB = 6$. Độ dài của vectơ $-5\\vec{AB}$ bằng:",
+      "question": "Cho đoạn thẳng $AB = 6$. Độ dài của vectơ $-5\\overrightarrow{AB}$ bằng:",
       "options": [
         "$30$",
         "$-30$",
@@ -5489,7 +5489,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$11$"
       ],
       "correctIndex": 0,
-      "explanation": "$|-5\\vec{AB}| = |-5| \\cdot |\\vec{AB}| = 5 \\times 6 = 30$."
+      "explanation": "$|-5\\overrightarrow{AB}| = |-5| \\cdot |\\overrightarrow{AB}| = 5 \\times 6 = 30$."
     },
     {
       "id": "ai-10.9.7",
@@ -5497,13 +5497,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề thi học kì 1 Toán 10",
       "question": "Cho đoạn thẳng $AB$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = \\frac{1}{3}AB$. Đẳng thức nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{MA} = -\\frac{1}{2}\\vec{MB}$",
-        "$\\vec{MA} = 2\\vec{MB}$",
-        "$\\vec{MA} = -2\\vec{MB}$",
-        "$\\vec{MA} = \\frac{1}{2}\\vec{MB}$"
+        "$\\overrightarrow{MA} = -\\frac{1}{2}\\overrightarrow{MB}$",
+        "$\\overrightarrow{MA} = 2\\overrightarrow{MB}$",
+        "$\\overrightarrow{MA} = -2\\overrightarrow{MB}$",
+        "$\\overrightarrow{MA} = \\frac{1}{2}\\overrightarrow{MB}$"
       ],
       "correctIndex": 0,
-      "explanation": "$M$ nằm giữa $A$ và $B$, $AM = \\frac{1}{3}AB \\implies MB = \\frac{2}{3}AB \\implies MB = 2AM$. Do hai vectơ ngược hướng nên $\\vec{MA} = -\\frac{1}{2}\\vec{MB}$."
+      "explanation": "$M$ nằm giữa $A$ và $B$, $AM = \\frac{1}{3}AB \\implies MB = \\frac{2}{3}AB \\implies MB = 2AM$. Do hai vectơ ngược hướng nên $\\overrightarrow{MA} = -\\frac{1}{2}\\overrightarrow{MB}$."
     },
     {
       "id": "ai-10.9.8",
@@ -5525,13 +5525,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SGK Toán 10 KNTT",
       "question": "Cho tam giác $ABC$. Gọi $M, N$ lần lượt là trung điểm của $AB, AC$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{MN} = \\frac{1}{2}\\vec{BC}$",
-        "$\\vec{MN} = -\\frac{1}{2}\\vec{BC}$",
-        "$\\vec{MN} = 2\\vec{BC}$",
-        "$\\vec{MN} = \\vec{BC}$"
+        "$\\overrightarrow{MN} = \\frac{1}{2}\\overrightarrow{BC}$",
+        "$\\overrightarrow{MN} = -\\frac{1}{2}\\overrightarrow{BC}$",
+        "$\\overrightarrow{MN} = 2\\overrightarrow{BC}$",
+        "$\\overrightarrow{MN} = \\overrightarrow{BC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Đường trung bình: $\\vec{MN} = \\frac{1}{2}\\vec{BC}$."
+      "explanation": "Đường trung bình: $\\overrightarrow{MN} = \\frac{1}{2}\\overrightarrow{BC}$."
     },
     {
       "id": "ai-10.9.10",
@@ -5539,19 +5539,19 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10",
       "question": "Cho hình bình hành $ABCD$ tâm $O$. Với điểm $M$ tùy ý, ta luôn có:",
       "options": [
-        "$\\vec{MA} + \\vec{MC} = 2\\vec{MO}$",
-        "$\\vec{MA} + \\vec{MC} = \\vec{MO}$",
-        "$\\vec{MA} + \\vec{MC} = \\frac{1}{2}\\vec{MO}$",
-        "$\\vec{MA} + \\vec{MC} = 4\\vec{MO}$"
+        "$\\overrightarrow{MA} + \\overrightarrow{MC} = 2\\overrightarrow{MO}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MC} = \\overrightarrow{MO}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MC} = \\frac{1}{2}\\overrightarrow{MO}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MC} = 4\\overrightarrow{MO}$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $O$ là trung điểm $AC$ nên $\\vec{MA} + \\vec{MC} = 2\\vec{MO}$."
+      "explanation": "Vì $O$ là trung điểm $AC$ nên $\\overrightarrow{MA} + \\overrightarrow{MC} = 2\\overrightarrow{MO}$."
     },
     {
       "id": "ai-10.9.11",
       "badge": "Luyện thêm 11 - Độ dài vectơ tam giác vuông",
       "source": "Đề khảo sát Toán 10",
-      "question": "Cho tam giác vuông tại $A$ có $AB = 4, AC = 3$. Độ dài vectơ $\\vec{u} = \\frac{1}{2}\\vec{AB} + \\vec{AC}$ bằng:",
+      "question": "Cho tam giác vuông tại $A$ có $AB = 4, AC = 3$. Độ dài vectơ $\\vec{u} = \\frac{1}{2}\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
       "options": [
         "$\\sqrt{13}$",
         "$5$",
@@ -5567,13 +5567,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "Đề thi thử Toán 10",
       "question": "Cho điểm $C$ nằm giữa hai điểm $A$ và $B$ sao cho $AC = 3CB$. Đẳng thức nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{CA} = -3\\vec{CB}$",
-        "$\\vec{CA} = 3\\vec{CB}$",
-        "$\\vec{AC} = 3\\vec{CB}$",
-        "$\\vec{CA} = -\\frac{1}{3}\\vec{CB}$"
+        "$\\overrightarrow{CA} = -3\\overrightarrow{CB}$",
+        "$\\overrightarrow{CA} = 3\\overrightarrow{CB}$",
+        "$\\overrightarrow{AC} = 3\\overrightarrow{CB}$",
+        "$\\overrightarrow{CA} = -\\frac{1}{3}\\overrightarrow{CB}$"
       ],
       "correctIndex": 0,
-      "explanation": "$C$ nằm giữa nên $\\vec{CA}$ ngược hướng $\\vec{CB}$, độ dài $CA = 3CB \\implies \\vec{CA} = -3\\vec{CB}$."
+      "explanation": "$C$ nằm giữa nên $\\overrightarrow{CA}$ ngược hướng $\\overrightarrow{CB}$, độ dài $CA = 3CB \\implies \\overrightarrow{CA} = -3\\overrightarrow{CB}$."
     },
     {
       "id": "ai-10.9.13",
@@ -5581,13 +5581,13 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "source": "SBT Toán 10 KNTT",
       "question": "Cho tứ giác $ABCD$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$. Với điểm $O$ bất kì, ta có:",
       "options": [
-        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = 2(\\vec{OM} + \\vec{ON})$",
-        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{OM} + \\vec{ON}$",
-        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = 4(\\vec{OM} + \\vec{ON})$",
-        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{0}$"
+        "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = 2(\\overrightarrow{OM} + \\overrightarrow{ON})$",
+        "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\overrightarrow{OM} + \\overrightarrow{ON}$",
+        "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = 4(\\overrightarrow{OM} + \\overrightarrow{ON})$",
+        "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\vec{0}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{OA} + \\vec{OB} = 2\\vec{OM}$ và $\\vec{OC} + \\vec{OD} = 2\\vec{ON}$. Cộng lại được $2(\\vec{OM} + \\vec{ON})$."
+      "explanation": "$\\overrightarrow{OA} + \\overrightarrow{OB} = 2\\overrightarrow{OM}$ và $\\overrightarrow{OC} + \\overrightarrow{OD} = 2\\overrightarrow{ON}$. Cộng lại được $2(\\overrightarrow{OM} + \\overrightarrow{ON})$."
     },
     {
       "id": "ai-10.9.14",
@@ -5607,7 +5607,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-10.9.15",
       "badge": "Luyện thêm 15 - Độ dài vectơ tích số nguyên",
       "source": "Đề kiểm tra Toán 10",
-      "question": "Cho tam giác đều $ABC$ cạnh bằng $3$. Độ dài của vectơ $\\vec{u} = 2\\vec{AB} - 2\\vec{AC}$ bằng:",
+      "question": "Cho tam giác đều $ABC$ cạnh bằng $3$. Độ dài của vectơ $\\vec{u} = 2\\overrightarrow{AB} - 2\\overrightarrow{AC}$ bằng:",
       "options": [
         "$6$",
         "$0$",
@@ -5615,7 +5615,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$3\\sqrt{3}$"
       ],
       "correctIndex": 0,
-      "explanation": "$2(\\vec{AB} - \\vec{AC}) = 2\\vec{CB} \\implies |2\\vec{CB}| = 2 \\times 3 = 6$."
+      "explanation": "$2(\\overrightarrow{AB} - \\overrightarrow{AC}) = 2\\overrightarrow{CB} \\implies |2\\overrightarrow{CB}| = 2 \\times 3 = 6$."
     },
     {
       "id": "ai-10.9.16",
@@ -5635,21 +5635,21 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-10.9.17",
       "badge": "Luyện thêm 17 - Phân tích vectơ trong hình chữ nhật",
       "source": "SBT Toán 10",
-      "question": "Cho hình chữ nhật $ABCD$. Gọi $O$ là giao điểm hai đường chéo. Vectơ $\\vec{AO}$ bằng:",
+      "question": "Cho hình chữ nhật $ABCD$. Gọi $O$ là giao điểm hai đường chéo. Vectơ $\\overrightarrow{AO}$ bằng:",
       "options": [
-        "$\\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AD}$",
-        "$\\vec{AB} + \\vec{AD}$",
-        "$\\frac{1}{2}\\vec{AB} + \\vec{AD}$",
-        "$\\vec{AB} + \\frac{1}{2}\\vec{AD}$"
+        "$\\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{AD}$",
+        "$\\frac{1}{2}\\overrightarrow{AB} + \\overrightarrow{AD}$",
+        "$\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AO} = \\frac{1}{2}\\vec{AC} = \\frac{1}{2}(\\vec{AB} + \\vec{AD}) = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AD}$."
+      "explanation": "$\\overrightarrow{AO} = \\frac{1}{2}\\overrightarrow{AC} = \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AD}) = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$."
     },
     {
       "id": "ai-10.9.18",
       "badge": "Luyện thêm 18 - Tỉ số phân giác trong",
       "source": "Đề thi HSG Toán 10",
-      "question": "Cho tam giác $ABC$ có $AB = 4, AC = 6$. Đường phân giác trong góc $A$ cắt $BC$ tại $D$. Khi đó $\\vec{BD} = k\\vec{BC}$ với $k$ bằng:",
+      "question": "Cho tam giác $ABC$ có $AB = 4, AC = 6$. Đường phân giác trong góc $A$ cắt $BC$ tại $D$. Khi đó $\\overrightarrow{BD} = k\\overrightarrow{BC}$ với $k$ bằng:",
       "options": [
         "$\\frac{2}{5}$",
         "$\\frac{3}{5}$",
@@ -5657,7 +5657,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "$\\frac{1}{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo tính chất đường phân giác: $\\frac{DB}{DC} = \\frac{AB}{AC} = \\frac{4}{6} = \\frac{2}{3} \\implies DB = \\frac{2}{5}BC \\implies \\vec{BD} = \\frac{2}{5}\\vec{BC} \\implies k = \\frac{2}{5}$."
+      "explanation": "Theo tính chất đường phân giác: $\\frac{DB}{DC} = \\frac{AB}{AC} = \\frac{4}{6} = \\frac{2}{3} \\implies DB = \\frac{2}{5}BC \\implies \\overrightarrow{BD} = \\frac{2}{5}\\overrightarrow{BC} \\implies k = \\frac{2}{5}$."
     },
     {
       "id": "ai-10.9.19",
@@ -5729,27 +5729,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AM} = 3\\vec{GM}$.",
+          "text": "$\\overrightarrow{AM} = 3\\overrightarrow{GM}$.",
           "correctAnswer": true,
-          "explanation": "Vì $AM = 3GM$ và cùng hướng nên $\\vec{AM} = 3\\vec{GM}$."
+          "explanation": "Vì $AM = 3GM$ và cùng hướng nên $\\overrightarrow{AM} = 3\\overrightarrow{GM}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{GA} = -2\\vec{GM}$.",
+          "text": "$\\overrightarrow{GA} = -2\\overrightarrow{GM}$.",
           "correctAnswer": true,
           "explanation": "Hai vectơ ngược hướng và $GA = 2GM$."
         },
         {
           "id": "c",
-          "text": "$\\vec{GB} + \\vec{GC} = 2\\vec{GM}$.",
+          "text": "$\\overrightarrow{GB} + \\overrightarrow{GC} = 2\\overrightarrow{GM}$.",
           "correctAnswer": true,
-          "explanation": "$M$ là trung điểm $BC$ nên $\\vec{GB} + \\vec{GC} = 2\\vec{GM}$."
+          "explanation": "$M$ là trung điểm $BC$ nên $\\overrightarrow{GB} + \\overrightarrow{GC} = 2\\overrightarrow{GM}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{GA} + 2\\vec{GM} = \\vec{0}$.",
+          "text": "$\\overrightarrow{GA} + 2\\overrightarrow{GM} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "Do $\\vec{GA} = -2\\vec{GM}$ nên $\\vec{GA} + 2\\vec{GM} = \\vec{0}$."
+          "explanation": "Do $\\overrightarrow{GA} = -2\\overrightarrow{GM}$ nên $\\overrightarrow{GA} + 2\\overrightarrow{GM} = \\vec{0}$."
         }
       ]
     },
@@ -5761,15 +5761,15 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{PA}$ và $\\vec{AB}$ ngược hướng.",
+          "text": "$\\overrightarrow{PA}$ và $\\overrightarrow{AB}$ ngược hướng.",
           "correctAnswer": true,
-          "explanation": "Do $P$ thuộc tia đối của tia $AB$ nên $\\vec{PA}$ ngược hướng $\\vec{AB}$."
+          "explanation": "Do $P$ thuộc tia đối của tia $AB$ nên $\\overrightarrow{PA}$ ngược hướng $\\overrightarrow{AB}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{PA} = -2\\vec{AB}$.",
+          "text": "$\\overrightarrow{PA} = -2\\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "Ngược hướng và độ dài $PA = 2AB$ nên $\\vec{PA} = -2\\vec{AB}$."
+          "explanation": "Ngược hướng và độ dài $PA = 2AB$ nên $\\overrightarrow{PA} = -2\\overrightarrow{AB}$."
         },
         {
           "id": "c",
@@ -5779,9 +5779,9 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         },
         {
           "id": "d",
-          "text": "$\\vec{PB} = 3\\vec{AB}$.",
+          "text": "$\\overrightarrow{PB} = 3\\overrightarrow{AB}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{PB}$ ngược hướng với $\\vec{AB}$ nên $\\vec{PB} = -3\\vec{AB}$, không phải $3\\vec{AB}$."
+          "explanation": "$\\overrightarrow{PB}$ ngược hướng với $\\overrightarrow{AB}$ nên $\\overrightarrow{PB} = -3\\overrightarrow{AB}$, không phải $3\\overrightarrow{AB}$."
         }
       ]
     },
@@ -5825,25 +5825,25 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AM} = \\frac{1}{2}\\vec{AB}$.",
+          "text": "$\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB}$.",
           "correctAnswer": true,
           "explanation": "$M$ là trung điểm $AB$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AN} = \\frac{2}{3}\\vec{AC}$.",
+          "text": "$\\overrightarrow{AN} = \\frac{2}{3}\\overrightarrow{AC}$.",
           "correctAnswer": true,
           "explanation": "$AC = AN + NC = 3NC \\implies AN = \\frac{2}{3}AC$."
         },
         {
           "id": "c",
-          "text": "$\\vec{MN} = \\frac{2}{3}\\vec{AC} - \\frac{1}{2}\\vec{AB}$.",
+          "text": "$\\overrightarrow{MN} = \\frac{2}{3}\\overrightarrow{AC} - \\frac{1}{2}\\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{MN} = \\vec{AN} - \\vec{AM} = \\frac{2}{3}\\vec{AC} - \\frac{1}{2}\\vec{AB}$."
+          "explanation": "$\\overrightarrow{MN} = \\overrightarrow{AN} - \\overrightarrow{AM} = \\frac{2}{3}\\overrightarrow{AC} - \\frac{1}{2}\\overrightarrow{AB}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{MN}$ cùng phương với $\\vec{BC}$.",
+          "text": "$\\overrightarrow{MN}$ cùng phương với $\\overrightarrow{BC}$.",
           "correctAnswer": false,
           "explanation": "Vì $\\frac{AM}{AB} = \\frac{1}{2} \\ne \\frac{AN}{AC} = \\frac{2}{3}$ nên theo Talet $MN$ không song song $BC$, hai vectơ không cùng phương."
         }
@@ -5857,27 +5857,27 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "subItems": [
         {
           "id": "a",
-          "text": "$|3\\vec{AB}| = 9$.",
+          "text": "$|3\\overrightarrow{AB}| = 9$.",
           "correctAnswer": true,
           "explanation": "$3 \\times 3 = 9$."
         },
         {
           "id": "b",
-          "text": "$|-2\\vec{AD}| = 8$.",
+          "text": "$|-2\\overrightarrow{AD}| = 8$.",
           "correctAnswer": true,
           "explanation": "$|-2| \\times 4 = 8$."
         },
         {
           "id": "c",
-          "text": "$|\\frac{1}{5}\\vec{AC}| = 1$.",
+          "text": "$|\\frac{1}{5}\\overrightarrow{AC}| = 1$.",
           "correctAnswer": true,
           "explanation": "$AC = 5 \\implies \\frac{1}{5} \\times 5 = 1$."
         },
         {
           "id": "d",
-          "text": "$|2\\vec{AB} + 2\\vec{AD}| = 14$.",
+          "text": "$|2\\overrightarrow{AB} + 2\\overrightarrow{AD}| = 14$.",
           "correctAnswer": false,
-          "explanation": "$2|\\vec{AC}| = 2 \\times 5 = 10 \\ne 14$."
+          "explanation": "$2|\\overrightarrow{AC}| = 2 \\times 5 = 10 \\ne 14$."
         }
       ]
     },
@@ -5885,7 +5885,7 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-tf-10.9.7",
       "badge": "Luyện thêm Đ/S 7 - Tọa độ hóa tỉ lệ",
       "source": "Bộ đề Toán 10",
-      "prompt": "Cho đoạn thẳng $AB$. Điểm $I$ chia đoạn thẳng $AB$ theo tỉ số $\\vec{IA} = -\\frac{3}{5}\\vec{IB}$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "prompt": "Cho đoạn thẳng $AB$. Điểm $I$ chia đoạn thẳng $AB$ theo tỉ số $\\overrightarrow{IA} = -\\frac{3}{5}\\overrightarrow{IB}$. Xét tính Đúng/Sai của các khẳng định sau:",
       "subItems": [
         {
           "id": "a",
@@ -5895,9 +5895,9 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         },
         {
           "id": "b",
-          "text": "$5\\vec{IA} + 3\\vec{IB} = \\vec{0}$.",
+          "text": "$5\\overrightarrow{IA} + 3\\overrightarrow{IB} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "Quy đồng: $5\\vec{IA} = -3\\vec{IB} \\iff 5\\vec{IA} + 3\\vec{IB} = \\vec{0}$."
+          "explanation": "Quy đồng: $5\\overrightarrow{IA} = -3\\overrightarrow{IB} \\iff 5\\overrightarrow{IA} + 3\\overrightarrow{IB} = \\vec{0}$."
         },
         {
           "id": "c",
@@ -5907,9 +5907,9 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         },
         {
           "id": "d",
-          "text": "$\\vec{AI} = \\frac{3}{8}\\vec{AB}$.",
+          "text": "$\\overrightarrow{AI} = \\frac{3}{8}\\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AI}$ cùng hướng $\\vec{AB}$ và $AI = \\frac{3}{8}AB$ nên $\\vec{AI} = \\frac{3}{8}\\vec{AB}$."
+          "explanation": "$\\overrightarrow{AI}$ cùng hướng $\\overrightarrow{AB}$ và $AI = \\frac{3}{8}AB$ nên $\\overrightarrow{AI} = \\frac{3}{8}\\overrightarrow{AB}$."
         }
       ]
     },
@@ -5951,92 +5951,92 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.9.1",
       "badge": "Luyện thêm TLN 1 - Độ dài tích vectơ",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho đoạn thẳng $AB = 7$. Tính độ dài của vectơ $\\vec{u} = -3\\vec{AB}$.",
+      "prompt": "Cho đoạn thẳng $AB = 7$. Tính độ dài của vectơ $\\vec{u} = -3\\overrightarrow{AB}$.",
       "correctAnswer": "21",
       "acceptableAnswers": [
         "21"
       ],
-      "explanation": "$|-3\\vec{AB}| = 3 \\times 7 = 21$."
+      "explanation": "$|-3\\overrightarrow{AB}| = 3 \\times 7 = 21$."
     },
     {
       "id": "ai-sa-10.9.2",
       "badge": "Luyện thêm TLN 2 - Tỉ số k của trọng tâm",
       "source": "SBT Toán 10",
-      "prompt": "Cho tam giác $ABC$ có trọng tâm $G$ và trung tuyến $AM$. Biết $\\vec{GM} = k\\vec{GA}$. Tìm số thực $k$.",
+      "prompt": "Cho tam giác $ABC$ có trọng tâm $G$ và trung tuyến $AM$. Biết $\\overrightarrow{GM} = k\\overrightarrow{GA}$. Tìm số thực $k$.",
       "correctAnswer": "-0.5",
       "acceptableAnswers": [
         "-0.5",
         "-1/2",
         "-0,5"
       ],
-      "explanation": "$\\vec{GM}$ và $\\vec{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\vec{GM} = -\\frac{1}{2}\\vec{GA} \\implies k = -0.5$."
+      "explanation": "$\\overrightarrow{GM}$ và $\\overrightarrow{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{GA} \\implies k = -0.5$."
     },
     {
       "id": "ai-sa-10.9.3",
       "badge": "Luyện thêm TLN 3 - Độ dài vectơ hình vuông",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho hình vuông $ABCD$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = 3\\vec{AB} - 3\\vec{AD}$ (làm tròn đến hàng phần mười).",
+      "prompt": "Cho hình vuông $ABCD$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = 3\\overrightarrow{AB} - 3\\overrightarrow{AD}$ (làm tròn đến hàng phần mười).",
       "correctAnswer": "21.2",
       "acceptableAnswers": [
         "21.2",
         "21,2",
         "15*sqrt(2)"
       ],
-      "explanation": "$3|\\vec{DB}| = 3 \\times 5\\sqrt{2} = 15\\sqrt{2} \\approx 21.21 \\approx 21.2$."
+      "explanation": "$3|\\overrightarrow{DB}| = 3 \\times 5\\sqrt{2} = 15\\sqrt{2} \\approx 21.21 \\approx 21.2$."
     },
     {
       "id": "ai-sa-10.9.4",
       "badge": "Luyện thêm TLN 4 - Tỉ số k chia đoạn thẳng",
       "source": "Bộ đề Toán 10",
-      "prompt": "Cho đoạn thẳng $AB = 16$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 4$. Biết $\\vec{MB} = k\\vec{MA}$. Tìm $k$.",
+      "prompt": "Cho đoạn thẳng $AB = 16$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 4$. Biết $\\overrightarrow{MB} = k\\overrightarrow{MA}$. Tìm $k$.",
       "correctAnswer": "-3",
       "acceptableAnswers": [
         "-3"
       ],
-      "explanation": "$MB = 16 - 4 = 12$. $\\vec{MB}$ ngược hướng $\\vec{MA}$, tỉ số $\\frac{MB}{MA} = \\frac{12}{4} = 3 \\implies \\vec{MB} = -3\\vec{MA} \\implies k = -3$."
+      "explanation": "$MB = 16 - 4 = 12$. $\\overrightarrow{MB}$ ngược hướng $\\overrightarrow{MA}$, tỉ số $\\frac{MB}{MA} = \\frac{12}{4} = 3 \\implies \\overrightarrow{MB} = -3\\overrightarrow{MA} \\implies k = -3$."
     },
     {
       "id": "ai-sa-10.9.5",
       "badge": "Luyện thêm TLN 5 - Độ dài vectơ đường cao",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho tam giác đều $ABC$ cạnh $4\\sqrt{3}$, đường cao $AH$. Tính độ dài của vectơ $3\\vec{AH}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh $4\\sqrt{3}$, đường cao $AH$. Tính độ dài của vectơ $3\\overrightarrow{AH}$.",
       "correctAnswer": "18",
       "acceptableAnswers": [
         "18"
       ],
-      "explanation": "$AH = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |3\\vec{AH}| = 3 \\times 6 = 18$."
+      "explanation": "$AH = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |3\\overrightarrow{AH}| = 3 \\times 6 = 18$."
     },
     {
       "id": "ai-sa-10.9.6",
       "badge": "Luyện thêm TLN 6 - Hệ số phân tích vectơ",
       "source": "SBT Toán 10",
-      "prompt": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Biểu diễn $\\vec{AM} = x\\vec{AB} + y\\vec{AC}$. Tính tích $P = x \\cdot y$.",
+      "prompt": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Biểu diễn $\\overrightarrow{AM} = x\\overrightarrow{AB} + y\\overrightarrow{AC}$. Tính tích $P = x \\cdot y$.",
       "correctAnswer": "0.25",
       "acceptableAnswers": [
         "0.25",
         "1/4",
         "0,25"
       ],
-      "explanation": "$\\vec{AM} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC} \\implies x = 0.5, y = 0.5 \\implies P = 0.25$."
+      "explanation": "$\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC} \\implies x = 0.5, y = 0.5 \\implies P = 0.25$."
     },
     {
       "id": "ai-sa-10.9.7",
       "badge": "Luyện thêm TLN 7 - Tỉ số vectơ phân giác",
       "source": "Đề thi HSG Toán 10",
-      "prompt": "Cho tam giác $ABC$ có $AB = 6, AC = 9$. Phân giác trong góc $A$ cắt $BC$ tại $D$. Biết $\\vec{CD} = k\\vec{CB}$. Tìm giá trị của $k$.",
+      "prompt": "Cho tam giác $ABC$ có $AB = 6, AC = 9$. Phân giác trong góc $A$ cắt $BC$ tại $D$. Biết $\\overrightarrow{CD} = k\\overrightarrow{CB}$. Tìm giá trị của $k$.",
       "correctAnswer": "0.6",
       "acceptableAnswers": [
         "0.6",
         "3/5",
         "0,6"
       ],
-      "explanation": "$\\frac{DC}{DB} = \\frac{AC}{AB} = \\frac{9}{6} = \\frac{3}{2} \\implies DC = \\frac{3}{5}CB \\implies \\vec{CD} = \\frac{3}{5}\\vec{CB} \\implies k = 0.6$."
+      "explanation": "$\\frac{DC}{DB} = \\frac{AC}{AB} = \\frac{9}{6} = \\frac{3}{2} \\implies DC = \\frac{3}{5}CB \\implies \\overrightarrow{CD} = \\frac{3}{5}\\overrightarrow{CB} \\implies k = 0.6$."
     },
     {
       "id": "ai-sa-10.9.8",
       "badge": "Luyện thêm TLN 8 - Khối tâm hai chất điểm",
       "source": "Vật lý 10",
-      "prompt": "Hai quả cầu có khối lượng $m_1 = 4\\text{ kg}$ tại $A$ và $m_2 = 2\\text{ kg}$ tại $B$ cách nhau $18\\text{ cm}$. Khối tâm $G$ thỏa mãn $4\\vec{GA} + 2\\vec{GB} = \\vec{0}$. Tính khoảng cách $GB$ (theo cm).",
+      "prompt": "Hai quả cầu có khối lượng $m_1 = 4\\text{ kg}$ tại $A$ và $m_2 = 2\\text{ kg}$ tại $B$ cách nhau $18\\text{ cm}$. Khối tâm $G$ thỏa mãn $4\\overrightarrow{GA} + 2\\overrightarrow{GB} = \\vec{0}$. Tính khoảng cách $GB$ (theo cm).",
       "correctAnswer": "12",
       "acceptableAnswers": [
         "12",
@@ -6048,25 +6048,25 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "id": "ai-sa-10.9.9",
       "badge": "Luyện thêm TLN 9 - Độ dài vectơ tam giác vuông",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác vuông $ABC$ tại $A$ có $AB = 6, AC = 8$. Tính độ dài vectơ $\\vec{u} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC}$.",
+      "prompt": "Cho tam giác vuông $ABC$ tại $A$ có $AB = 6, AC = 8$. Tính độ dài vectơ $\\vec{u} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$.",
       "correctAnswer": "5",
       "acceptableAnswers": [
         "5"
       ],
-      "explanation": "$\\vec{u} = \\frac{1}{2}(\\vec{AB} + \\vec{AC}) = \\vec{AM}$ (với $M$ là trung điểm cạnh huyền $BC$). $BC = 10 \\implies AM = 5$."
+      "explanation": "$\\vec{u} = \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AC}) = \\overrightarrow{AM}$ (với $M$ là trung điểm cạnh huyền $BC$). $BC = 10 \\implies AM = 5$."
     },
     {
       "id": "ai-sa-10.9.10",
       "badge": "Luyện thêm TLN 10 - Tỉ số k trên đoạn thẳng",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho đoạn thẳng $AB$. Lấy điểm $C$ sao cho $\\vec{AC} = 4\\vec{BC}$. Tính tỉ số độ dài $\\frac{AC}{AB}$.",
+      "prompt": "Cho đoạn thẳng $AB$. Lấy điểm $C$ sao cho $\\overrightarrow{AC} = 4\\overrightarrow{BC}$. Tính tỉ số độ dài $\\frac{AC}{AB}$.",
       "correctAnswer": "1.33",
       "acceptableAnswers": [
         "1.33",
         "4/3",
         "1,33"
       ],
-      "explanation": "$\\vec{AC} = 4(\\vec{AC} - \\vec{AB}) = 4\\vec{AC} - 4\\vec{AB} \\implies 3\\vec{AC} = 4\\vec{AB} \\implies \\frac{AC}{AB} = \\frac{4}{3} \\approx 1.33$."
+      "explanation": "$\\overrightarrow{AC} = 4(\\overrightarrow{AC} - \\overrightarrow{AB}) = 4\\overrightarrow{AC} - 4\\overrightarrow{AB} \\implies 3\\overrightarrow{AC} = 4\\overrightarrow{AB} \\implies \\frac{AC}{AB} = \\frac{4}{3} \\approx 1.33$."
     },
     {
       "id": "ai-sa-10.9.11",

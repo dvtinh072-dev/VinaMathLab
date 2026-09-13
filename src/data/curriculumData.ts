@@ -683,7 +683,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         description: "Khái niệm vector, tổng hiệu hai vector, tích vector với một số, tọa độ và tích vô hướng.",
         lessons: [
           { id: "t10-b7-khai-niem-mo-dau-vector", lessonNumber: 7, title: "Bài 7: Các khái niệm mở đầu", strand: "hinhhoc", description: "Độ dài vector, hai vector cùng phương, cùng hướng, bằng nhau.", keyFormulas: ["|\\vec{a}|, \\ \\vec{a} = \\vec{b}"], hasInteractive: "vector" },
-          { id: "t10-b8-tong-va-hieu-vector", lessonNumber: 8, title: "Bài 8: Tổng và hiệu của hai vector", strand: "hinhhoc", description: "Quy tắc ba điểm, quy tắc hình bình hành, vector đối.", keyFormulas: ["\\vec{AB} + \\vec{BC} = \\vec{AC}, \\ \\vec{AB} - \\vec{AC} = \\vec{CB}"], hasInteractive: "vector" },
+          { id: "t10-b8-tong-va-hieu-vector", lessonNumber: 8, title: "Bài 8: Tổng và hiệu của hai vector", strand: "hinhhoc", description: "Quy tắc ba điểm, quy tắc hình bình hành, vector đối.", keyFormulas: ["\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}, \\ \\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}"], hasInteractive: "vector" },
           { id: "t10-b9-tich-vector-voi-mot-so", lessonNumber: 9, title: "Bài 9: Tích của một vector với một số", strand: "hinhhoc", description: "Điều kiện hai vector cùng phương và ba điểm thẳng hàng.", keyFormulas: ["\\vec{a} = k \\vec{b} \\Leftrightarrow \\vec{a} \\parallel \\vec{b}"], hasInteractive: "vector" },
           { id: "t10-b10-vector-trong-mat-phang-toa-do", lessonNumber: 10, title: "Bài 10: Vector trong mặt phẳng tọa độ", strand: "hinhhoc", description: "Tọa độ điểm và tọa độ vector trên hệ trục Oxy.", keyFormulas: ["\\vec{u} = (x; y) \\Leftrightarrow \\vec{u} = x\\vec{i} + y\\vec{j}"], hasInteractive: "vector" },
           { id: "t10-b11-tich-vo-huong-hai-vector", lessonNumber: 11, title: "Bài 11: Tích vô hướng của hai vector", strand: "hinhhoc", description: "Định nghĩa góc giữa hai vector và biểu thức tọa độ của tích vô hướng.", keyFormulas: ["\\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| \\cos(\\vec{u}, \\vec{v}) = u_1 v_1 + u_2 v_2"], hasInteractive: "vector" },
@@ -933,9 +933,9 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         title: "Chuyên đề 1: Phép biến hình trong mặt phẳng",
         description: "Phép tịnh tiến, đối xứng trục, đối xứng tâm, phép quay, phép vị tự và phép đồng dạng.",
         lessons: [
-          { id: "t11-cd1-phep-tinh-tien-doi-xung-truc", lessonNumber: 1, title: "Bài 1: Phép tịnh tiến và phép đối xứng trục", strand: "hinhhoc", description: "Bảo toàn khoảng cách giữa hai điểm bất kỳ.", keyFormulas: ["T_{\\vec{v}}(M) = M' \\Leftrightarrow \\vec{MM'} = \\vec{v}"] },
+          { id: "t11-cd1-phep-tinh-tien-doi-xung-truc", lessonNumber: 1, title: "Bài 1: Phép tịnh tiến và phép đối xứng trục", strand: "hinhhoc", description: "Bảo toàn khoảng cách giữa hai điểm bất kỳ.", keyFormulas: ["T_{\\vec{v}}(M) = M' \\Leftrightarrow \\overrightarrow{MM'} = \\vec{v}"] },
           { id: "t11-cd2-phep-doi-xung-tam-quay", lessonNumber: 2, title: "Bài 2: Phép đối xứng tâm và phép quay", strand: "hinhhoc", description: "Phép quay tâm O góc lượng giác alpha.", keyFormulas: ["Q_{(O, \\alpha)}(M) = M'"] },
-          { id: "t11-cd3-phep-vi-tu-dong-dang", lessonNumber: 3, title: "Bài 3: Phép vị tự và phép đồng dạng", strand: "hinhhoc", description: "Biến đoạn thẳng thành đoạn thẳng có độ dài nhân với |k|.", keyFormulas: ["V_{(I, k)}(M) = M' \\Leftrightarrow \\vec{IM'} = k \\vec{IM}"] },
+          { id: "t11-cd3-phep-vi-tu-dong-dang", lessonNumber: 3, title: "Bài 3: Phép vị tự và phép đồng dạng", strand: "hinhhoc", description: "Biến đoạn thẳng thành đoạn thẳng có độ dài nhân với |k|.", keyFormulas: ["V_{(I, k)}(M) = M' \\Leftrightarrow \\overrightarrow{IM'} = k \\overrightarrow{IM}"] },
         ],
       },
       {
@@ -1001,8 +1001,8 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         title: "Chương II: Vector và hệ tọa độ trong không gian",
         description: "Vector trong không gian, hệ trục tọa độ Oxyz và biểu thức tọa độ của các phép toán vector.",
         lessons: [
-          { id: "t12-b6-vector-trong-khong-gian", lessonNumber: 6, title: "Bài 6: Vector trong không gian", strand: "hinhhoc", description: "Quy tắc hình hộp, ba vector đồng phẳng.", keyFormulas: ["\\vec{AC'} = \\vec{AB} + \\vec{AD} + \\vec{AA'} \\text{ (Quy tắc hình hộp)}"] },
-          { id: "t12-b7-he-truc-toa-do-oxyz", lessonNumber: 7, title: "Bài 7: Hệ trục tọa độ trong không gian", strand: "hinhhoc", description: "Gốc O và ba vector đơn vị i, j, k vuông góc từng đôi một.", keyFormulas: ["\\vec{OM} = x\\vec{i} + y\\vec{j} + z\\vec{k} \\Rightarrow M(x; y; z)"] },
+          { id: "t12-b6-vector-trong-khong-gian", lessonNumber: 6, title: "Bài 6: Vector trong không gian", strand: "hinhhoc", description: "Quy tắc hình hộp, ba vector đồng phẳng.", keyFormulas: ["\\overrightarrow{AC'} = \\overrightarrow{AB} + \\overrightarrow{AD} + \\overrightarrow{AA'} \\text{ (Quy tắc hình hộp)}"] },
+          { id: "t12-b7-he-truc-toa-do-oxyz", lessonNumber: 7, title: "Bài 7: Hệ trục tọa độ trong không gian", strand: "hinhhoc", description: "Gốc O và ba vector đơn vị i, j, k vuông góc từng đôi một.", keyFormulas: ["\\overrightarrow{OM} = x\\vec{i} + y\\vec{j} + z\\vec{k} \\Rightarrow M(x; y; z)"] },
           { id: "t12-b8-bieu-thuc-toa-do-vector", lessonNumber: 8, title: "Bài 8: Biểu thức tọa độ của các phép toán vector", strand: "hinhhoc", description: "Tổng, hiệu, tích với số, tích vô hướng, độ dài và góc trong Oxyz.", keyFormulas: ["\\vec{u} \\cdot \\vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3, \\ |\\vec{u}| = \\sqrt{u_1^2 + u_2^2 + u_3^2}"] },
         ],
       },

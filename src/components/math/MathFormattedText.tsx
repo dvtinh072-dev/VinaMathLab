@@ -76,6 +76,16 @@ export function formatMathInText(rawText?: string | null): string {
   return restored;
 }
 
+/**
+ * Chuẩn hóa ký hiệu vectơ theo chuẩn SGK Toán học:
+ * - Vectơ hai điểm đầu cuối: \vec{AB}, \vec{MN} -> \overrightarrow{AB}, \overrightarrow{MN} (mũi tên kéo dài phủ cả 2 chữ cái)
+ * - Vectơ một ký tự: \vec{a}, \vec{u}, \vec{v}, \vec{0} -> giữ nguyên
+ */
+export function normalizeVectorNotation(latex: string): string {
+  if (!latex || typeof latex !== "string") return "";
+  return latex.replace(/\\vec\{([A-Z][A-Z0-9']{1,})\}/g, (_, points) => `\\overrightarrow{${points}}`);
+}
+
 export function MathFormattedText({ text, className = "" }: MathFormattedTextProps) {
   // Render an toàn tuyệt đối với KaTeX và hỗ trợ bảng HTML responsive
   const renderedHtml = useMemo(() => {
@@ -95,7 +105,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
     const parts = processed.split(/(___HTML_TABLE_BLOCK_\d+___|\$\$[\s\S]+?\$\$|\$[^\$\n]+?\$)/g);
 
     const rendered = parts
-      .map((part) => {
+      .map((part, idx) => {
         if (!part) return "";
 
         // Kiểm tra khối HTML Table
@@ -105,8 +115,9 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           // Render các biểu thức math nằm bên trong bảng (ví dụ $15; 20$)
           return rawTable.replace(/\$([^\$\n]+?)\$/g, (_, math) => {
             try {
+              const normalizedMath = normalizeVectorNotation(math);
               return `<span class="inline-math-item mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
-                math,
+                normalizedMath,
                 { displayMode: false, throwOnError: false, strict: false }
               )}</span>`;
             } catch {
@@ -116,7 +127,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
         }
 
         if (part.startsWith("$$") && part.endsWith("$$") && part.length > 4) {
-          const content = part.slice(2, -2);
+          const content = normalizeVectorNotation(part.slice(2, -2));
           try {
             return katex.renderToString(content, {
               displayMode: true,
@@ -129,9 +140,13 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
         }
 
         if (part.startsWith("$") && part.endsWith("$") && part.length > 2) {
-          const content = part.slice(1, -1);
+          const content = normalizeVectorNotation(part.slice(1, -1));
+          // Kiểm tra nếu phần tử tiếp theo bắt đầu bằng dấu câu (, . ; : ? ! )) thì bỏ lề phải để không bị hở dấu
+          const nextPart = parts[idx + 1] || "";
+          const hasPunctuationAfter = /^[.,;:?!)]/.test(nextPart.trimStart());
+          const mrClass = hasPunctuationAfter ? "mr-0" : "mr-0.5";
           try {
-            return `<span class="inline-math-item mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
+            return `<span class="inline-math-item ml-0.5 ${mrClass} align-middle text-amber-300 font-semibold">${katex.renderToString(
               content,
               {
                 displayMode: false,

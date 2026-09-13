@@ -9785,7 +9785,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "title": "1. Khái niệm vectơ & Ký hiệu",
       "points": [
         "• **Định nghĩa**: Vectơ là một đoạn thẳng có hướng (đã chỉ rõ điểm nào là điểm đầu, điểm nào là điểm cuối).\\",
-        "• **Ký hiệu**: Vectơ có điểm đầu $A$, điểm cuối $B$ được kí hiệu là $\\\\vec{AB}$ (đọc là 'vectơ $AB$').\\",
+        "• **Ký hiệu**: Vectơ có điểm đầu $A$, điểm cuối $B$ được kí hiệu là $\\\\overrightarrow{AB}$ (đọc là 'vectơ $AB$').\\",
         "• **Vectơ đơn kí hiệu**: Ngoài ra, người ta còn kí hiệu vectơ bằng các chữ cái in thường có mũi tên ở trên như $\\\\vec{a}, \\\\vec{b}, \\\\vec{x}, \\\\vec{u}, \\\\vec{v}$."
       ]
     },
@@ -9793,8 +9793,8 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "index": "2",
       "title": "2. Độ dài của vectơ (Độ lớn)",
       "points": [
-        "• **Khái niệm**: Độ dài của vectơ $\\\\vec{AB}$ là khoảng cách giữa điểm đầu $A$ và điểm cuối $B$ của vectơ đó.\\",
-        "• **Ký hiệu**: $|\\\\vec{AB}| = AB$.\\",
+        "• **Khái niệm**: Độ dài của vectơ $\\\\overrightarrow{AB}$ là khoảng cách giữa điểm đầu $A$ và điểm cuối $B$ của vectơ đó.\\",
+        "• **Ký hiệu**: $|\\\\overrightarrow{AB}| = AB$.\\",
         "• Vectơ có độ dài bằng $1$ được gọi là **vectơ đơn vị**."
       ]
     },
@@ -9805,7 +9805,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "• **Giá của vectơ**: Đường thẳng đi qua điểm đầu và điểm cuối của vectơ được gọi là **giá** của vectơ đó.\\",
         "• **Hai vectơ cùng phương**: Hai vectơ được gọi là **cùng phương** nếu giá của chúng **song song** hoặc **trùng nhau**.\\",
         "• **Cùng hướng / Ngược hướng**: Khi hai vectơ đã cùng phương, chúng chỉ có thể **cùng hướng** hoặc **ngược hướng**.\\",
-        "• **Nhận xét quan trọng**: Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\\\vec{AB}$ và $\\\\vec{AC}$ cùng phương."
+        "• **Nhận xét quan trọng**: Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\\\overrightarrow{AB}$ và $\\\\overrightarrow{AC}$ cùng phương."
       ]
     },
     {
@@ -9814,14 +9814,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "points": [
         "• **Định nghĩa**: Hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$ được gọi là **bằng nhau** nếu chúng **cùng hướng** và **có cùng độ dài**.\\",
         "• **Ký hiệu**: $\\\\vec{a} = \\\\vec{b}$.\\",
-        "• Cho trước điểm $O$ và vectơ $\\\\vec{a}$, luôn tồn tại duy nhất một điểm $A$ sao cho $\\\\vec{OA} = \\\\vec{a}$."
+        "• Cho trước điểm $O$ và vectơ $\\\\vec{a}$, luôn tồn tại duy nhất một điểm $A$ sao cho $\\\\overrightarrow{OA} = \\\\vec{a}$."
       ]
     },
     {
       "index": "5",
       "title": "5. Vectơ-không",
       "points": [
-        "• **Định nghĩa**: Vectơ có điểm đầu trùng với điểm cuối gọi là **vectơ-không**, kí hiệu là $\\\\vec{0}$. Ví dụ: $\\\\vec{AA} = \\\\vec{BB} = \\\\vec{0}$.\\",
+        "• **Định nghĩa**: Vectơ có điểm đầu trùng với điểm cuối gọi là **vectơ-không**, kí hiệu là $\\\\vec{0}$. Ví dụ: $\\\\overrightarrow{AA} = \\\\overrightarrow{BB} = \\\\vec{0}$.\\",
         "• **Quy ước**: Vectơ $\\\\vec{0}$ có độ dài bằng $0$, tức $|\\\\vec{0}| = 0$. Vectơ $\\\\vec{0}$ **cùng phương, cùng hướng với mọi vectơ**."
       ]
     }
@@ -9832,7 +9832,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     "Số vectơ khác $\\vec{0}$ tạo bởi $n$ điểm phân biệt luôn bằng $n(n - 1)$ (chỉnh hợp chập 2 của $n$ phần tử)."
   ],
   "traps": [
-    "Bẫy nhầm lẫn: Nhầm giữa 'đoạn thẳng' và 'vectơ': Đoạn thẳng $AB = BA$, nhưng vectơ $\\vec{AB}$ và $\\vec{BA}$ là hai vectơ ngược hướng nhau!",
+    "Bẫy nhầm lẫn: Nhầm giữa 'đoạn thẳng' và 'vectơ': Đoạn thẳng $AB = BA$, nhưng vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{BA}$ là hai vectơ ngược hướng nhau!",
     "Bẫy vectơ-không: Quên rằng vectơ $\\vec{0}$ cùng phương, cùng hướng với mọi vectơ theo quy ước toán học."
   ],
   "quizQuestions": [
@@ -9854,7 +9854,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "quiz-10.7.2",
       "badge": "Nhận biết - Điểm đầu và điểm cuối của vectơ",
       "source": "SBT Toán 10 KNTT",
-      "question": "Vectơ $\\vec{MN}$ có điểm đầu và điểm cuối lần lượt là:",
+      "question": "Vectơ $\\overrightarrow{MN}$ có điểm đầu và điểm cuối lần lượt là:",
       "options": [
         "Điểm đầu là $M$, điểm cuối là $N$.",
         "Điểm đầu là $N$, điểm cuối là $M$.",
@@ -9862,21 +9862,21 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "Cả $M$ và $N$ đều là điểm đầu."
       ],
       "correctIndex": 0,
-      "explanation": "Ký hiệu $\\vec{MN}$ quy ước chữ cái viết trước là điểm đầu ($M$), chữ cái viết sau là điểm cuối ($N$)."
+      "explanation": "Ký hiệu $\\overrightarrow{MN}$ quy ước chữ cái viết trước là điểm đầu ($M$), chữ cái viết sau là điểm cuối ($N$)."
     },
     {
       "id": "quiz-10.7.3",
       "badge": "Nhận biết - Kí hiệu độ dài vectơ",
       "source": "SGK Toán 10 KNTT",
-      "question": "Độ dài của vectơ $\\vec{AB}$ được kí hiệu là:",
+      "question": "Độ dài của vectơ $\\overrightarrow{AB}$ được kí hiệu là:",
       "options": [
-        "$|\\vec{AB}|$",
+        "$|\\overrightarrow{AB}|$",
         "$\\vec{|AB|}$",
-        "$(\\vec{AB})$",
+        "$(\\overrightarrow{AB})$",
         "$||AB||$"
       ],
       "correctIndex": 0,
-      "explanation": "Độ dài của vectơ $\\vec{AB}$ kí hiệu là $|\\vec{AB}|$ và chính bằng khoảng cách $AB$ giữa hai điểm $A$ và $B$."
+      "explanation": "Độ dài của vectơ $\\overrightarrow{AB}$ kí hiệu là $|\\overrightarrow{AB}|$ và chính bằng khoảng cách $AB$ giữa hai điểm $A$ và $B$."
     },
     {
       "id": "quiz-10.7.4",
@@ -9912,13 +9912,13 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "Đề thi khảo sát chất lượng Toán 10",
       "question": "Cho ba điểm phân biệt $A, B, C$. Điều kiện cần và đủ để ba điểm $A, B, C$ thẳng hàng là:",
       "options": [
-        "$\\vec{AB}$ và $\\vec{AC}$ cùng phương.",
-        "$|\\vec{AB}| = |\\vec{AC}|$.",
-        "$\\vec{AB} = \\vec{AC}$.",
-        "$\\vec{AB}$ và $\\vec{AC}$ cùng hướng."
+        "$\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng phương.",
+        "$|\\overrightarrow{AB}| = |\\overrightarrow{AC}|$.",
+        "$\\overrightarrow{AB} = \\overrightarrow{AC}$.",
+        "$\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng hướng."
       ],
       "correctIndex": 0,
-      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\vec{AB}$ và $\\vec{AC}$ cùng phương (giá của chúng có chung điểm $A$ nên phải trùng nhau)."
+      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng phương (giá của chúng có chung điểm $A$ nên phải trùng nhau)."
     },
     {
       "id": "quiz-10.7.7",
@@ -9936,17 +9936,18 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "quiz-10.7.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,135 210,135 270,35 110,35\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"204\" y2=\"135\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"110\" y1=\"35\" x2=\"264\" y2=\"35\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"106\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"266\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"270\" y2=\"35\" stroke=\"#fbbf24\" strokeWidth=\"1.5\" strokeOpacity=\"0.6\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"110\" y2=\"35\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeOpacity=\"0.5\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <circle cx=\"50\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"210\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"218\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"96\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Vectơ trong hình bình hành",
       "source": "SGK Toán 10 KNTT",
       "question": "Cho hình bình hành $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AB} = \\vec{DC}$",
-        "$\\vec{AB} = \\vec{CD}$",
-        "$\\vec{AD} = \\vec{CB}$",
-        "$\\vec{AC} = \\vec{BD}$"
+        "$\\overrightarrow{AB} = \\overrightarrow{DC}$",
+        "$\\overrightarrow{AB} = \\overrightarrow{CD}$",
+        "$\\overrightarrow{AD} = \\overrightarrow{CB}$",
+        "$\\overrightarrow{AC} = \\overrightarrow{BD}$"
       ],
       "correctIndex": 0,
-      "explanation": "Trong hình bình hành $ABCD$, đoạn thẳng $AB$ song song và bằng đoạn thẳng $DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$. Do đó $\\vec{AB} = \\vec{DC}$."
+      "explanation": "Trong hình bình hành $ABCD$, đoạn thẳng $AB$ song song và bằng đoạn thẳng $DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$. Do đó $\\overrightarrow{AB} = \\overrightarrow{DC}$."
     },
     {
       "id": "quiz-10.7.9",
@@ -9964,9 +9965,10 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "quiz-10.7.10",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <polygon points=\"110,87 210,87 160,150\" fill=\"#38bdf8\" fillOpacity=\"0.1\" stroke=\"#38bdf8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"110\" y1=\"87\" x2=\"204\" y2=\"87\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"60\" y1=\"150\" x2=\"154\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"150\" x2=\"254\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"96\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M</text>\n  <circle cx=\"210\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"218\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">N</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#fbbf24\"/><text x=\"160\" y=\"165\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">P</text>\n</svg>",
       "badge": "Thông hiểu - Vectơ trong tam giác có các trung điểm",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho tam giác $ABC$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, AC, BC$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\vec{MN}$ có điểm đầu và điểm cuối là các đỉnh của tam giác hoặc các trung điểm đã cho?",
+      "question": "Cho tam giác $ABC$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, AC, BC$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\overrightarrow{MN}$ có điểm đầu và điểm cuối là các đỉnh của tam giác hoặc các trung điểm đã cho?",
       "options": [
         "$2$",
         "$3$",
@@ -9974,13 +9976,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$1$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $MN$ là đường trung bình của tam giác $ABC$ nên $MN // BC$ và $MN = BP = PC = \\frac{1}{2}BC$. Các vectơ cùng hướng và cùng độ dài với $\\vec{MN}$ là $\\vec{BP}$ và $\\vec{PC}$. Vậy có đúng 2 vectơ."
+      "explanation": "Vì $MN$ là đường trung bình của tam giác $ABC$ nên $MN // BC$ và $MN = BP = PC = \\frac{1}{2}BC$. Các vectơ cùng hướng và cùng độ dài với $\\overrightarrow{MN}$ là $\\overrightarrow{BP}$ và $\\overrightarrow{PC}$. Vậy có đúng 2 vectơ."
     },
     {
       "id": "quiz-10.7.11",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Độ dài vectơ cạnh hình vuông",
       "source": "Đề thi học kì Toán 10",
-      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a\\sqrt{2}$. Độ dài của vectơ $\\vec{AC}$ bằng:",
+      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a\\sqrt{2}$. Độ dài của vectơ $\\overrightarrow{AC}$ bằng:",
       "options": [
         "$2a$",
         "$a\\sqrt{2}$",
@@ -9988,13 +9991,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$4a$"
       ],
       "correctIndex": 0,
-      "explanation": "Trong hình vuông $ABCD$, đường chéo $AC = AB\\sqrt{2} = a\\sqrt{2} \\cdot \\sqrt{2} = 2a$. Vậy $|\\vec{AC}| = 2a$."
+      "explanation": "Trong hình vuông $ABCD$, đường chéo $AC = AB\\sqrt{2} = a\\sqrt{2} \\cdot \\sqrt{2} = 2a$. Vậy $|\\overrightarrow{AC}| = 2a$."
     },
     {
       "id": "quiz-10.7.12",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,20 265,90 160,160 55,90\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"154\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"259\" y2=\"90\" stroke=\"#38bdf8\" strokeWidth=\"2\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"23\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"157\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"11\" fontWeight=\"bold\">O</text>\n  <text x=\"75\" y=\"94\" fill=\"#94a3b8\" fontSize=\"11\">60�</text>\n  <circle cx=\"160\" cy=\"20\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"14\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"265\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"274\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"174\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">D</text>\n  <circle cx=\"55\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n</svg>",
       "badge": "Thông hiểu - Vectơ trong hình thoi",
       "source": "Bộ đề ôn tập Toán 10",
-      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{ABC} = 60^\\circ$. Độ dài của vectơ $\\vec{AC}$ bằng:",
+      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{ABC} = 60^\\circ$. Độ dài của vectơ $\\overrightarrow{AC}$ bằng:",
       "options": [
         "$a$",
         "$a\\sqrt{3}$",
@@ -10002,42 +10006,43 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$\\frac{a\\sqrt{3}}{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "Tam giác $ABC$ có $BA = BC = a$ và $\\widehat{B} = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\vec{AC}| = a$."
+      "explanation": "Tam giác $ABC$ có $BA = BC = a$ và $\\widehat{B} = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\overrightarrow{AC}| = a$."
     },
     {
       "id": "quiz-10.7.13",
       "badge": "Vận dụng - Lục giác đều và các vectơ bằng nhau",
       "source": "SGK Toán 10 KNTT Bài 7",
-      "question": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Các vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối lấy từ 7 điểm trên và bằng vectơ $\\vec{AB}$ là:",
+      "question": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Các vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối lấy từ 7 điểm trên và bằng vectơ $\\overrightarrow{AB}$ là:",
       "options": [
-        "$\\vec{FO}, \\vec{OC}, \\vec{ED}$",
-        "$\\vec{FO}, \\vec{CO}, \\vec{ED}$",
-        "$\\vec{OF}, \\vec{OC}, \\vec{DE}$",
-        "$\\vec{AF}, \\vec{FE}, \\vec{ED}$"
+        "$\\overrightarrow{FO}, \\overrightarrow{OC}, \\overrightarrow{ED}$",
+        "$\\overrightarrow{FO}, \\overrightarrow{CO}, \\overrightarrow{ED}$",
+        "$\\overrightarrow{OF}, \\overrightarrow{OC}, \\overrightarrow{DE}$",
+        "$\\overrightarrow{AF}, \\overrightarrow{FE}, \\overrightarrow{ED}$"
       ],
       "correctIndex": 0,
-      "explanation": "Trong lục giác đều $ABCDEF$ tâm $O$, các đoạn thẳng $FO, OC, ED$ đều song song và bằng $AB$, đồng thời các vectơ $\\vec{FO}, \\vec{OC}, \\vec{ED}$ đều có chiều cùng hướng với $\\vec{AB}$.",
+      "explanation": "Trong lục giác đều $ABCDEF$ tâm $O$, các đoạn thẳng $FO, OC, ED$ đều song song và bằng $AB$, đồng thời các vectơ $\\overrightarrow{FO}, \\overrightarrow{OC}, \\overrightarrow{ED}$ đều có chiều cùng hướng với $\\overrightarrow{AB}$.",
       "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
     },
     {
       "id": "quiz-10.7.14",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Thông hiểu - Hai vectơ đối nhau",
       "source": "Đề thi thử Toán 10",
       "question": "Cho đoạn thẳng $AB$ có trung điểm $I$. Cặp vectơ nào sau đây là hai vectơ ngược hướng và có độ dài bằng nhau?",
       "options": [
-        "$\\vec{IA}$ và $\\vec{IB}$",
-        "$\\vec{AI}$ và $\\vec{IB}$",
-        "$\\vec{IA}$ và $\\vec{BI}$",
-        "$\\vec{AB}$ và $\\vec{IB}$"
+        "$\\overrightarrow{IA}$ và $\\overrightarrow{IB}$",
+        "$\\overrightarrow{AI}$ và $\\overrightarrow{IB}$",
+        "$\\overrightarrow{IA}$ và $\\overrightarrow{BI}$",
+        "$\\overrightarrow{AB}$ và $\\overrightarrow{IB}$"
       ],
       "correctIndex": 0,
-      "explanation": "$I$ là trung điểm của $AB$ nên $IA = IB$ và tia $IA$ ngược chiều với tia $IB$, do đó $\\vec{IA}$ và $\\vec{IB}$ là hai vectơ ngược hướng có cùng độ dài."
+      "explanation": "$I$ là trung điểm của $AB$ nên $IA = IB$ và tia $IA$ ngược chiều với tia $IB$, do đó $\\overrightarrow{IA}$ và $\\overrightarrow{IB}$ là hai vectơ ngược hướng có cùng độ dài."
     },
     {
       "id": "quiz-10.7.15",
       "badge": "Thông hiểu - Điểm di động tạo vectơ",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho hai điểm phân biệt $A$ và $B$. Có bao nhiêu điểm $M$ thỏa mãn $\\vec{MA} = \\vec{MB}$?",
+      "question": "Cho hai điểm phân biệt $A$ và $B$. Có bao nhiêu điểm $M$ thỏa mãn $\\overrightarrow{MA} = \\overrightarrow{MB}$?",
       "options": [
         "$0$",
         "$1$",
@@ -10045,13 +10050,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "Vô số"
       ],
       "correctIndex": 0,
-      "explanation": "Nếu $\\vec{MA} = \\vec{MB}$ thì $M$ phải trùng với chính nó, và ngọn của hai vectơ bằng nhau khi chung gốc $M$ thì $A \\equiv B$, trái với giả thiết $A$ và $B$ phân biệt. Vậy không có điểm $M$ nào thỏa mãn."
+      "explanation": "Nếu $\\overrightarrow{MA} = \\overrightarrow{MB}$ thì $M$ phải trùng với chính nó, và ngọn của hai vectơ bằng nhau khi chung gốc $M$ thì $A \\equiv B$, trái với giả thiết $A$ và $B$ phân biệt. Vậy không có điểm $M$ nào thỏa mãn."
     },
     {
       "id": "quiz-10.7.16",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"50\" y=\"30\" width=\"220\" height=\"110\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"264\" y2=\"33\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"50\" y1=\"30\" x2=\"264\" y2=\"137\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <text x=\"160\" y=\"155\" fill=\"#38bdf8\" fontSize=\"12\" textAnchor=\"middle\">AB = 6</text>\n  <text x=\"35\" y=\"90\" fill=\"#34d399\" fontSize=\"12\" textAnchor=\"middle\">AD = 8</text>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"270\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"50\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Độ dài vectơ tâm hình chữ nhật",
       "source": "Đề khảo sát chuyên đề Toán 10",
-      "question": "Cho hình chữ nhật $ABCD$ có $AB = 6, AD = 8$, tâm $O$. Độ dài của vectơ $\\vec{AO}$ bằng:",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 6, AD = 8$, tâm $O$. Độ dài của vectơ $\\overrightarrow{AO}$ bằng:",
       "options": [
         "$5$",
         "$10$",
@@ -10059,7 +10065,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$2.5$"
       ],
       "correctIndex": 0,
-      "explanation": "Đường chéo $AC = \\sqrt{AB^2 + AD^2} = \\sqrt{36 + 64} = 10$. Vì $O$ là trung điểm của $AC$ nên $AO = \\frac{1}{2}AC = 5 \\implies |\\vec{AO}| = 5$."
+      "explanation": "Đường chéo $AC = \\sqrt{AB^2 + AD^2} = \\sqrt{36 + 64} = 10$. Vì $O$ là trung điểm của $AC$ nên $AO = \\frac{1}{2}AC = 5 \\implies |\\overrightarrow{AO}| = 5$."
     },
     {
       "id": "quiz-10.7.17",
@@ -10067,19 +10073,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "SGK Toán 10 KNTT",
       "question": "Cho đoạn thẳng $AB$ và điểm $C$ nằm giữa hai điểm $A$ và $B$. Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{CA}$ và $\\vec{CB}$ ngược hướng.",
-        "$\\vec{CA}$ và $\\vec{CB}$ cùng hướng.",
-        "$\\vec{AC}$ và $\\vec{BC}$ cùng hướng.",
-        "$\\vec{CA}$ và $\\vec{AB}$ cùng hướng."
+        "$\\overrightarrow{CA}$ và $\\overrightarrow{CB}$ ngược hướng.",
+        "$\\overrightarrow{CA}$ và $\\overrightarrow{CB}$ cùng hướng.",
+        "$\\overrightarrow{AC}$ và $\\overrightarrow{BC}$ cùng hướng.",
+        "$\\overrightarrow{CA}$ và $\\overrightarrow{AB}$ cùng hướng."
       ],
       "correctIndex": 0,
-      "explanation": "Vì điểm $C$ nằm giữa $A$ và $B$ nên hai tia $CA$ và $CB$ là hai tia đối nhau, do đó hai vectơ $\\vec{CA}$ và $\\vec{CB}$ ngược hướng nhau."
+      "explanation": "Vì điểm $C$ nằm giữa $A$ và $B$ nên hai tia $CA$ và $CB$ là hai tia đối nhau, do đó hai vectơ $\\overrightarrow{CA}$ và $\\overrightarrow{CB}$ ngược hướng nhau."
     },
     {
       "id": "quiz-10.7.18",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Thông hiểu - Tỉ số độ dài hai vectơ",
       "source": "SBT Toán 10",
-      "question": "Cho đoạn thẳng $MN = 12$. Điểm $P$ thuộc đoạn $MN$ sao cho $MP = 3PN$. Tỉ số $\\frac{|\\vec{MP}|}{|\\vec{MN}|}$ bằng:",
+      "question": "Cho đoạn thẳng $MN = 12$. Điểm $P$ thuộc đoạn $MN$ sao cho $MP = 3PN$. Tỉ số $\\frac{|\\overrightarrow{MP}|}{|\\overrightarrow{MN}|}$ bằng:",
       "options": [
         "$\\frac{3}{4}$",
         "$\\frac{1}{4}$",
@@ -10087,7 +10094,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$3$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $MP + PN = MN \\iff 3PN + PN = 12 \\iff 4PN = 12 \\implies PN = 3, MP = 9$. Do đó $\\frac{|\\vec{MP}|}{|\\vec{MN}|} = \\frac{9}{12} = \\frac{3}{4}$."
+      "explanation": "Ta có $MP + PN = MN \\iff 3PN + PN = 12 \\iff 4PN = 12 \\implies PN = 3, MP = 9$. Do đó $\\frac{|\\overrightarrow{MP}|}{|\\overrightarrow{MN}|} = \\frac{9}{12} = \\frac{3}{4}$."
     },
     {
       "id": "quiz-10.7.19",
@@ -10123,63 +10130,65 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "trueFalseQuestions": [
     {
       "id": "tf-10.7.1",
+      "svgDiagram": "<svg viewBox=\"0 0 320 130\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"30\" y1=\"65\" x2=\"290\" y2=\"65\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"154\" y2=\"65\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"254\" y2=\"65\" stroke=\"#fbbf24\" strokeWidth=\"2\" strokeDasharray=\"4 2\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"65\" r=\"4\" fill=\"#f8fafc\"/><text x=\"60\" y=\"90\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"160\" cy=\"65\" r=\"4\" fill=\"#38bdf8\"/><text x=\"160\" y=\"90\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"65\" r=\"4\" fill=\"#fbbf24\"/><text x=\"260\" y=\"90\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">C</text>\n  <text x=\"160\" y=\"45\" fill=\"#fbbf24\" fontSize=\"12\" textAnchor=\"middle\">AB c�ng phuong AC (AB = k AC)</text>\n</svg>",
       "badge": "Đúng / Sai 1 - Khảo sát các điểm thẳng hàng",
       "source": "SGK Toán 10 KNTT",
       "prompt": "Cho ba điểm phân biệt $A, B, C$ thẳng hàng, trong đó điểm $B$ nằm giữa hai điểm $A$ và $C$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "Hai vectơ $\\vec{BA}$ và $\\vec{BC}$ là hai vectơ ngược hướng.",
+          "text": "Hai vectơ $\\overrightarrow{BA}$ và $\\overrightarrow{BC}$ là hai vectơ ngược hướng.",
           "correctAnswer": true,
-          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên hai tia $BA$ và $BC$ đối nhau, suy ra $\\vec{BA}$ và $\\vec{BC}$ ngược hướng."
+          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên hai tia $BA$ và $BC$ đối nhau, suy ra $\\overrightarrow{BA}$ và $\\overrightarrow{BC}$ ngược hướng."
         },
         {
           "id": "b",
-          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{AC}$ là hai vectơ cùng hướng.",
+          "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ là hai vectơ cùng hướng.",
           "correctAnswer": true,
-          "explanation": "Cùng xuất phát từ $A$ đi qua $B$ rồi đến $C$ nên hai tia $AB$ và $AC$ trùng nhau, do đó $\\vec{AB}$ và $\\vec{AC}$ cùng hướng."
+          "explanation": "Cùng xuất phát từ $A$ đi qua $B$ rồi đến $C$ nên hai tia $AB$ và $AC$ trùng nhau, do đó $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng hướng."
         },
         {
           "id": "c",
-          "text": "Độ dài của vectơ $\\vec{AC}$ bằng tổng độ dài $|\\vec{AB}| + |\\vec{BC}|$.",
+          "text": "Độ dài của vectơ $\\overrightarrow{AC}$ bằng tổng độ dài $|\\overrightarrow{AB}| + |\\overrightarrow{BC}|$.",
           "correctAnswer": true,
-          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên $AC = AB + BC \\implies |\\vec{AC}| = |\\vec{AB}| + |\\vec{BC}|.$"
+          "explanation": "Vì $B$ nằm giữa $A$ và $C$ nên $AC = AB + BC \\implies |\\overrightarrow{AC}| = |\\overrightarrow{AB}| + |\\overrightarrow{BC}|.$"
         },
         {
           "id": "d",
-          "text": "Hai vectơ $\\vec{AB}$ và $\\vec{BC}$ ngược hướng với nhau.",
+          "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{BC}$ ngược hướng với nhau.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB}$ và $\\vec{BC}$ đều hướng từ trái sang phải dọc theo đường thẳng nên chúng cùng hướng, không phải ngược hướng."
+          "explanation": "$\\overrightarrow{AB}$ và $\\overrightarrow{BC}$ đều hướng từ trái sang phải dọc theo đường thẳng nên chúng cùng hướng, không phải ngược hướng."
         }
       ]
     },
     {
       "id": "tf-10.7.2",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,135 210,135 270,35 110,35\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"204\" y2=\"135\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"110\" y1=\"35\" x2=\"264\" y2=\"35\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"106\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"266\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"270\" y2=\"35\" stroke=\"#fbbf24\" strokeWidth=\"1.5\" strokeOpacity=\"0.6\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"110\" y2=\"35\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeOpacity=\"0.5\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <circle cx=\"50\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"210\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"218\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"96\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Đúng / Sai 2 - Vectơ trong hình bình hành",
       "source": "SBT Toán 10 KNTT",
       "prompt": "Cho hình bình hành $ABCD$ có tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} = \\vec{DC}$.",
+          "text": "$\\overrightarrow{AB} = \\overrightarrow{DC}$.",
           "correctAnswer": true,
-          "explanation": "Do $AB // DC$ và $AB = DC$, hướng từ $A \\to B$ trùng hướng từ $D \\to C$ nên $\\vec{AB} = \\vec{DC}$."
+          "explanation": "Do $AB // DC$ và $AB = DC$, hướng từ $A \\to B$ trùng hướng từ $D \\to C$ nên $\\overrightarrow{AB} = \\overrightarrow{DC}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AD} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AD} = \\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "Do $AD // BC$ và $AD = BC$, hướng từ $A \\to D$ trùng hướng từ $B \\to C$ nên $\\vec{AD} = \\vec{BC}$."
+          "explanation": "Do $AD // BC$ và $AD = BC$, hướng từ $A \\to D$ trùng hướng từ $B \\to C$ nên $\\overrightarrow{AD} = \\overrightarrow{BC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{OA} = \\vec{OC}$.",
+          "text": "$\\overrightarrow{OA} = \\overrightarrow{OC}$.",
           "correctAnswer": false,
-          "explanation": "$O$ là trung điểm $AC$ nên $\\vec{OA}$ và $\\vec{OC}$ ngược hướng, suy ra $\\vec{OA} = -\\vec{OC} \\ne \\vec{OC}$."
+          "explanation": "$O$ là trung điểm $AC$ nên $\\overrightarrow{OA}$ và $\\overrightarrow{OC}$ ngược hướng, suy ra $\\overrightarrow{OA} = -\\overrightarrow{OC} \\ne \\overrightarrow{OC}$."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AC}| = |\\vec{BD}|$.",
+          "text": "$|\\overrightarrow{AC}| = |\\overrightarrow{BD}|$.",
           "correctAnswer": false,
           "explanation": "Trong hình bình hành nói chung, hai đường chéo $AC$ và $BD$ không bằng nhau (chỉ bằng nhau khi là hình chữ nhật)."
         }
@@ -10193,48 +10202,49 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "subItems": [
         {
           "id": "a",
-          "text": "Các vectơ $\\vec{AB}, \\vec{FO}, \\vec{OC}, \\vec{ED}$ bằng nhau.",
+          "text": "Các vectơ $\\overrightarrow{AB}, \\overrightarrow{FO}, \\overrightarrow{OC}, \\overrightarrow{ED}$ bằng nhau.",
           "correctAnswer": true,
           "explanation": "Các đoạn thẳng này đều song song, có độ dài bằng cạnh lục giác và cùng hướng sang phải."
         },
         {
           "id": "b",
-          "text": "Có tất cả 3 vectơ khác $\\vec{0}$ có điểm đầu $O$ và bằng $\\vec{AB}$.",
+          "text": "Có tất cả 3 vectơ khác $\\vec{0}$ có điểm đầu $O$ và bằng $\\overrightarrow{AB}$.",
           "correctAnswer": false,
-          "explanation": "Chỉ có duy nhất 1 vectơ là $\\vec{OC}$ có điểm đầu $O$ và bằng $\\vec{AB}$."
+          "explanation": "Chỉ có duy nhất 1 vectơ là $\\overrightarrow{OC}$ có điểm đầu $O$ và bằng $\\overrightarrow{AB}$."
         },
         {
           "id": "c",
-          "text": "Hai vectơ $\\vec{OA}$ và $\\vec{OD}$ ngược hướng và có cùng độ dài.",
+          "text": "Hai vectơ $\\overrightarrow{OA}$ và $\\overrightarrow{OD}$ ngược hướng và có cùng độ dài.",
           "correctAnswer": true,
-          "explanation": "$O$ là trung điểm của đường chéo chính $AD$ nên $\\vec{OA}$ và $\\vec{OD}$ ngược hướng và $|\\vec{OA}| = |\\vec{OD}| = R$."
+          "explanation": "$O$ là trung điểm của đường chéo chính $AD$ nên $\\overrightarrow{OA}$ và $\\overrightarrow{OD}$ ngược hướng và $|\\overrightarrow{OA}| = |\\overrightarrow{OD}| = R$."
         },
         {
           "id": "d",
-          "text": "Vectơ $\\vec{AC}$ cùng phương với vectơ $\\vec{FD}$.",
+          "text": "Vectơ $\\overrightarrow{AC}$ cùng phương với vectơ $\\overrightarrow{FD}$.",
           "correctAnswer": true,
-          "explanation": "Tứ giác $ACDF$ là hình chữ nhật nên $AC // FD$, do đó $\\vec{AC}$ cùng phương với $\\vec{FD}$."
+          "explanation": "Tứ giác $ACDF$ là hình chữ nhật nên $AC // FD$, do đó $\\overrightarrow{AC}$ cùng phương với $\\overrightarrow{FD}$."
         }
       ],
       "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
     },
     {
       "id": "tf-10.7.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <polygon points=\"110,87 210,87 160,150\" fill=\"#38bdf8\" fillOpacity=\"0.1\" stroke=\"#38bdf8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"110\" y1=\"87\" x2=\"204\" y2=\"87\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"60\" y1=\"150\" x2=\"154\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"150\" x2=\"254\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"96\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M</text>\n  <circle cx=\"210\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"218\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">N</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#fbbf24\"/><text x=\"160\" y=\"165\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">P</text>\n</svg>",
       "badge": "Đúng / Sai 4 - Vectơ đường trung bình tam giác",
       "source": "SGK Toán 10 KNTT",
       "prompt": "Cho tam giác $ABC$ có $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$. Lấy điểm $P$ đối xứng với $M$ qua $N$. Xét tính Đúng/Sai của các khẳng định sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "Hai vectơ $\\vec{MN}$ và $\\vec{BC}$ cùng hướng.",
+          "text": "Hai vectơ $\\overrightarrow{MN}$ và $\\overrightarrow{BC}$ cùng hướng.",
           "correctAnswer": true,
-          "explanation": "$MN$ là đường trung bình của $\\triangle ABC$ nên $MN // BC$ và $\\vec{MN}$ cùng hướng $\\vec{BC}$."
+          "explanation": "$MN$ là đường trung bình của $\\triangle ABC$ nên $MN // BC$ và $\\overrightarrow{MN}$ cùng hướng $\\overrightarrow{BC}$."
         },
         {
           "id": "b",
-          "text": "Độ dài $|\\vec{MN}| = \\frac{1}{2}|\\vec{BC}|$.",
+          "text": "Độ dài $|\\overrightarrow{MN}| = \\frac{1}{2}|\\overrightarrow{BC}|$.",
           "correctAnswer": true,
-          "explanation": "$MN = \\frac{1}{2}BC$ nên $|\\vec{MN}| = \\frac{1}{2}|\\vec{BC}|.$"
+          "explanation": "$MN = \\frac{1}{2}BC$ nên $|\\overrightarrow{MN}| = \\frac{1}{2}|\\overrightarrow{BC}|.$"
         },
         {
           "id": "c",
@@ -10244,9 +10254,9 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "d",
-          "text": "$\\vec{MP} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{MP} = \\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "$MP = 2MN = BC$ và $MP // BC$, cùng hướng sang phải nên $\\vec{MP} = \\vec{BC}$."
+          "explanation": "$MP = 2MN = BC$ và $MP // BC$, cùng hướng sang phải nên $\\overrightarrow{MP} = \\overrightarrow{BC}$."
         }
       ]
     },
@@ -10284,38 +10294,40 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "tf-10.7.6",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"50\" y=\"30\" width=\"220\" height=\"110\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"264\" y2=\"33\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"50\" y1=\"30\" x2=\"264\" y2=\"137\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <text x=\"160\" y=\"155\" fill=\"#38bdf8\" fontSize=\"12\" textAnchor=\"middle\">AB = 6</text>\n  <text x=\"35\" y=\"90\" fill=\"#34d399\" fontSize=\"12\" textAnchor=\"middle\">AD = 8</text>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"270\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"50\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Đúng / Sai 6 - Vectơ trong hình chữ nhật",
       "source": "SBT Toán 10 KNTT",
       "prompt": "Cho hình chữ nhật $ABCD$ có tâm $O$, $AB = 3, AD = 4$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "Độ dài vectơ $|\\vec{AC}| = 5$.",
+          "text": "Độ dài vectơ $|\\overrightarrow{AC}| = 5$.",
           "correctAnswer": true,
-          "explanation": "$AC = \\sqrt{3^2 + 4^2} = 5 \\implies |\\vec{AC}| = 5$."
+          "explanation": "$AC = \\sqrt{3^2 + 4^2} = 5 \\implies |\\overrightarrow{AC}| = 5$."
         },
         {
           "id": "b",
-          "text": "Hai vectơ $\\vec{OA}$ và $\\vec{OC}$ có độ dài bằng nhau nhưng ngược hướng.",
+          "text": "Hai vectơ $\\overrightarrow{OA}$ và $\\overrightarrow{OC}$ có độ dài bằng nhau nhưng ngược hướng.",
           "correctAnswer": true,
-          "explanation": "$O$ là trung điểm $AC$ nên $|\\vec{OA}| = |\\vec{OC}| = 2.5$ và $\\vec{OA}$ ngược hướng $\\vec{OC}$."
+          "explanation": "$O$ là trung điểm $AC$ nên $|\\overrightarrow{OA}| = |\\overrightarrow{OC}| = 2.5$ và $\\overrightarrow{OA}$ ngược hướng $\\overrightarrow{OC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{AB} = \\vec{CD}$.",
+          "text": "$\\overrightarrow{AB} = \\overrightarrow{CD}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB}$ và $\\vec{CD}$ ngược hướng nhau, do đó $\\vec{AB} = -\\vec{CD} \\ne \\vec{CD}$."
+          "explanation": "$\\overrightarrow{AB}$ và $\\overrightarrow{CD}$ ngược hướng nhau, do đó $\\overrightarrow{AB} = -\\overrightarrow{CD} \\ne \\overrightarrow{CD}$."
         },
         {
           "id": "d",
           "text": "Có đúng 4 vectơ có độ dài bằng $5$ mà điểm đầu và điểm cuối là các đỉnh của hình chữ nhật.",
           "correctAnswer": true,
-          "explanation": "Đó là $\\vec{AC}, \\vec{CA}, \\vec{BD}, \\vec{DB}$ (2 đường chéo, mỗi đường cho 2 vectơ)."
+          "explanation": "Đó là $\\overrightarrow{AC}, \\overrightarrow{CA}, \\overrightarrow{BD}, \\overrightarrow{DB}$ (2 đường chéo, mỗi đường cho 2 vectơ)."
         }
       ]
     },
     {
       "id": "tf-10.7.7",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,20 265,90 160,160 55,90\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"154\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"259\" y2=\"90\" stroke=\"#38bdf8\" strokeWidth=\"2\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"23\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"157\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"11\" fontWeight=\"bold\">O</text>\n  <text x=\"75\" y=\"94\" fill=\"#94a3b8\" fontSize=\"11\">60�</text>\n  <circle cx=\"160\" cy=\"20\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"14\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"265\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"274\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"174\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">D</text>\n  <circle cx=\"55\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n</svg>",
       "badge": "Đúng / Sai 7 - Vectơ trong hình thoi cạnh a",
       "source": "Đề khảo sát HSG Toán 10",
       "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $a$, tâm $O$ và góc $\\widehat{BAD} = 120^\\circ$. Xét tính Đúng/Sai của các khẳng định sau:",
@@ -10328,21 +10340,21 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "b",
-          "text": "Độ dài vectơ $|\\vec{BD}| = a\\sqrt{3}$.",
+          "text": "Độ dài vectơ $|\\overrightarrow{BD}| = a\\sqrt{3}$.",
           "correctAnswer": true,
-          "explanation": "$BD = 2BO = 2 \\cdot a \\sin 60^\\circ = a\\sqrt{3} \\implies |\\vec{BD}| = a\\sqrt{3}$."
+          "explanation": "$BD = 2BO = 2 \\cdot a \\sin 60^\\circ = a\\sqrt{3} \\implies |\\overrightarrow{BD}| = a\\sqrt{3}$."
         },
         {
           "id": "c",
-          "text": "Độ dài vectơ $|\\vec{AC}| = a$.",
+          "text": "Độ dài vectơ $|\\overrightarrow{AC}| = a$.",
           "correctAnswer": true,
-          "explanation": "$AC = 2AO = 2 \\cdot a \\cos 60^\\circ = a \\implies |\\vec{AC}| = a$."
+          "explanation": "$AC = 2AO = 2 \\cdot a \\cos 60^\\circ = a \\implies |\\overrightarrow{AC}| = a$."
         },
         {
           "id": "d",
-          "text": "$\\vec{BO} = \\vec{OD}$.",
+          "text": "$\\overrightarrow{BO} = \\overrightarrow{OD}$.",
           "correctAnswer": true,
-          "explanation": "$O$ là trung điểm của $BD$, chiều từ $B \\to O$ cùng chiều $O \\to D$ và $BO = OD$ nên $\\vec{BO} = \\vec{OD}$."
+          "explanation": "$O$ là trung điểm của $BD$, chiều từ $B \\to O$ cùng chiều $O \\to D$ và $BO = OD$ nên $\\overrightarrow{BO} = \\overrightarrow{OD}$."
         }
       ]
     },
@@ -10394,85 +10406,92 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "sa-10.7.2",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,135 210,135 270,35 110,35\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"204\" y2=\"135\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"110\" y1=\"35\" x2=\"264\" y2=\"35\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"106\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"266\" y2=\"41\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"135\" x2=\"270\" y2=\"35\" stroke=\"#fbbf24\" strokeWidth=\"1.5\" strokeOpacity=\"0.6\"/>\n  <line x1=\"210\" y1=\"135\" x2=\"110\" y2=\"35\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeOpacity=\"0.5\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <circle cx=\"50\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"210\" cy=\"135\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"218\" y=\"145\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"96\" y=\"35\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Trả lời ngắn 2 - Vectơ cùng phương trong hình bình hành",
       "source": "SBT Toán 10 KNTT",
-      "prompt": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ cùng phương với vectơ $\\vec{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành?",
+      "prompt": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ cùng phương với vectơ $\\overrightarrow{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành?",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
       ],
-      "explanation": "Các vectơ cùng phương với $\\vec{AB}$ có giá song song hoặc trùng với $AB$, đó là các vectơ nằm trên đường thẳng $AB$ và $CD$: $\\vec{BA}, \\vec{CD}, \\vec{DC}$ (và chính $\\vec{AB}$ cùng 2 vectơ $\\vec{AB}, \\vec{BA}$ trên cạnh kia). Tổng cộng các vectơ khác $\\vec{0}$ cùng phương với $\\vec{AB}$ là: $\\vec{AB}, \\vec{BA}, \\vec{CD}, \\vec{DC}$. Tuy nhiên nếu tính cả các vectơ trên 2 giá này (không tính $\\vec{AB}$ nếu đề hỏi khác $\\vec{AB}$), tổng số vectơ có điểm đầu, cuối là đỉnh cùng phương với $\\vec{AB}$ là: $\\vec{AB}, \\vec{BA}, \\vec{CD}, \\vec{DC}$ (gồm 4 vectơ) hoặc nếu tính cả đoạn chéo thì không song song. Vậy có 4 vectơ (tính cả $\\vec{AB}$ là 4)."
+      "explanation": "Các vectơ cùng phương với $\\overrightarrow{AB}$ có giá song song hoặc trùng với $AB$, đó là các vectơ nằm trên đường thẳng $AB$ và $CD$: $\\overrightarrow{BA}, \\overrightarrow{CD}, \\overrightarrow{DC}$ (và chính $\\overrightarrow{AB}$ cùng 2 vectơ $\\overrightarrow{AB}, \\overrightarrow{BA}$ trên cạnh kia). Tổng cộng các vectơ khác $\\vec{0}$ cùng phương với $\\overrightarrow{AB}$ là: $\\overrightarrow{AB}, \\overrightarrow{BA}, \\overrightarrow{CD}, \\overrightarrow{DC}$. Tuy nhiên nếu tính cả các vectơ trên 2 giá này (không tính $\\overrightarrow{AB}$ nếu đề hỏi khác $\\overrightarrow{AB}$), tổng số vectơ có điểm đầu, cuối là đỉnh cùng phương với $\\overrightarrow{AB}$ là: $\\overrightarrow{AB}, \\overrightarrow{BA}, \\overrightarrow{CD}, \\overrightarrow{DC}$ (gồm 4 vectơ) hoặc nếu tính cả đoạn chéo thì không song song. Vậy có 4 vectơ (tính cả $\\overrightarrow{AB}$ là 4)."
     },
     {
       "id": "sa-10.7.3",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Trả lời ngắn 3 - Độ dài vectơ cạnh tam giác đều",
       "source": "Đề kiểm tra 15 phút Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $8$. Độ dài của vectơ $\\vec{BC}$ bằng bao nhiêu?",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $8$. Độ dài của vectơ $\\overrightarrow{BC}$ bằng bao nhiêu?",
       "correctAnswer": "8",
       "acceptableAnswers": [
         "8"
       ],
-      "explanation": "$|\\vec{BC}| = BC = 8$."
+      "explanation": "$|\\overrightarrow{BC}| = BC = 8$."
     },
     {
       "id": "sa-10.7.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"50\" y=\"30\" width=\"220\" height=\"110\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"264\" y2=\"33\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"50\" y1=\"30\" x2=\"264\" y2=\"137\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"85\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"78\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <text x=\"160\" y=\"155\" fill=\"#38bdf8\" fontSize=\"12\" textAnchor=\"middle\">AB = 6</text>\n  <text x=\"35\" y=\"90\" fill=\"#34d399\" fontSize=\"12\" textAnchor=\"middle\">AD = 8</text>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"270\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"270\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"278\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"50\" cy=\"30\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"28\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Trả lời ngắn 4 - Độ dài vectơ đường chéo hình chữ nhật",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 6\\text{ cm}$ và $BC = 8\\text{ cm}$. Tính độ dài của vectơ $\\vec{AC}$ (theo đơn vị cm).",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 6\\text{ cm}$ và $BC = 8\\text{ cm}$. Tính độ dài của vectơ $\\overrightarrow{AC}$ (theo đơn vị cm).",
       "correctAnswer": "10",
       "acceptableAnswers": [
         "10",
         "10 cm"
       ],
-      "explanation": "$|\\vec{AC}| = AC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+      "explanation": "$|\\overrightarrow{AC}| = AC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
     },
     {
       "id": "sa-10.7.5",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Trả lời ngắn 5 - Độ dài vectơ từ tâm hình vuông",
       "source": "SBT Toán 10",
-      "prompt": "Cho hình vuông $ABCD$ có tâm $O$ và cạnh bằng $4\\sqrt{2}$. Tính độ dài của vectơ $\\vec{OA}$.",
+      "prompt": "Cho hình vuông $ABCD$ có tâm $O$ và cạnh bằng $4\\sqrt{2}$. Tính độ dài của vectơ $\\overrightarrow{OA}$.",
       "correctAnswer": "4",
       "acceptableAnswers": [
         "4"
       ],
-      "explanation": "Đường chéo $AC = AB\\sqrt{2} = 4\\sqrt{2} \\cdot \\sqrt{2} = 8$. Vì $O$ là trung điểm $AC$ nên $OA = \\frac{8}{2} = 4 \\implies |\\vec{OA}| = 4$."
+      "explanation": "Đường chéo $AC = AB\\sqrt{2} = 4\\sqrt{2} \\cdot \\sqrt{2} = 8$. Vì $O$ là trung điểm $AC$ nên $OA = \\frac{8}{2} = 4 \\implies |\\overrightarrow{OA}| = 4$."
     },
     {
       "id": "sa-10.7.6",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,20 265,90 160,160 55,90\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"154\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"259\" y2=\"90\" stroke=\"#38bdf8\" strokeWidth=\"2\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"23\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"157\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"11\" fontWeight=\"bold\">O</text>\n  <text x=\"75\" y=\"94\" fill=\"#94a3b8\" fontSize=\"11\">60�</text>\n  <circle cx=\"160\" cy=\"20\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"14\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"265\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"274\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"174\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">D</text>\n  <circle cx=\"55\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n</svg>",
       "badge": "Trả lời ngắn 6 - Độ dài vectơ trong hình thoi góc 60 độ",
       "source": "Đề kiểm tra Toán 10 KNTT",
-      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $6$ và góc $\\widehat{BAD} = 60^\\circ$. Tính độ dài của vectơ $\\vec{BD}$.",
+      "prompt": "Cho hình thoi $ABCD$ có cạnh bằng $6$ và góc $\\widehat{BAD} = 60^\\circ$. Tính độ dài của vectơ $\\overrightarrow{BD}$.",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
       ],
-      "explanation": "Tam giác $ABD$ cân tại $A$ có $\\widehat{BAD} = 60^\\circ$ nên là tam giác đều $\\implies BD = AB = 6 \\implies |\\vec{BD}| = 6$."
+      "explanation": "Tam giác $ABD$ cân tại $A$ có $\\widehat{BAD} = 60^\\circ$ nên là tam giác đều $\\implies BD = AB = 6 \\implies |\\overrightarrow{BD}| = 6$."
     },
     {
       "id": "sa-10.7.7",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Trả lời ngắn 7 - Tỉ số độ dài vectơ trên đoạn thẳng",
       "source": "Sách bài tập Toán 10",
-      "prompt": "Cho đoạn thẳng $AB = 15$. Điểm $M$ thuộc đoạn $AB$ sao cho $MA = 6$. Tính tỉ số độ dài $\\frac{|\\vec{MA}|}{|\\vec{MB}|}$.",
+      "prompt": "Cho đoạn thẳng $AB = 15$. Điểm $M$ thuộc đoạn $AB$ sao cho $MA = 6$. Tính tỉ số độ dài $\\frac{|\\overrightarrow{MA}|}{|\\overrightarrow{MB}|}$.",
       "correctAnswer": "0.67",
       "acceptableAnswers": [
         "0.67",
         "2/3",
         "0,67"
       ],
-      "explanation": "$MB = AB - MA = 15 - 6 = 9$. Tỉ số $\\frac{|\\vec{MA}|}{|\\vec{MB}|} = \\frac{6}{9} = \\frac{2}{3} \\approx 0.67$."
+      "explanation": "$MB = AB - MA = 15 - 6 = 9$. Tỉ số $\\frac{|\\overrightarrow{MA}|}{|\\overrightarrow{MB}|} = \\frac{6}{9} = \\frac{2}{3} \\approx 0.67$."
     },
     {
       "id": "sa-10.7.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"60,140 60,35 255,140\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <rect x=\"60\" y=\"125\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"153\" y2=\"90\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"60\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"32\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"255\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"264\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"157.5\" cy=\"87.5\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M</text>\n  <text x=\"45\" y=\"90\" fill=\"#38bdf8\" fontSize=\"11\">c = 9</text>\n  <text x=\"155\" y=\"158\" fill=\"#34d399\" fontSize=\"11\">b = 12</text>\n  <text x=\"175\" y=\"110\" fill=\"#fbbf24\" fontSize=\"11\">a = 15</text>\n</svg>",
       "badge": "Trả lời ngắn 8 - Độ dài đường trung tuyến tam giác vuông",
       "source": "Đề thi khảo sát Toán 10",
-      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 9, AC = 12$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\vec{AM}$.",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 9, AC = 12$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\overrightarrow{AM}$.",
       "correctAnswer": "7.5",
       "acceptableAnswers": [
         "7.5",
         "15/2",
         "7,5"
       ],
-      "explanation": "Cạnh huyền $BC = \\sqrt{9^2 + 12^2} = 15$. Trung tuyến ứng với cạnh huyền $AM = \\frac{BC}{2} = 7.5 \\implies |\\vec{AM}| = 7.5$."
+      "explanation": "Cạnh huyền $BC = \\sqrt{9^2 + 12^2} = 15$. Trung tuyến ứng với cạnh huyền $AM = \\frac{BC}{2} = 7.5 \\implies |\\overrightarrow{AM}| = 7.5$."
     },
     {
       "id": "sa-10.7.9",
@@ -10489,36 +10508,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "sa-10.7.10",
       "badge": "Trả lời ngắn 10 - Vectơ bằng nhau trong hình lục giác đều",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\vec{AB}$ có điểm đầu và điểm cuối lấy từ 7 điểm $A, B, C, D, E, F, O$ (không tính chính vectơ $\\vec{AB}$)?",
+      "prompt": "Cho hình lục giác đều $ABCDEF$ tâm $O$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\overrightarrow{AB}$ có điểm đầu và điểm cuối lấy từ 7 điểm $A, B, C, D, E, F, O$ (không tính chính vectơ $\\overrightarrow{AB}$)?",
       "correctAnswer": "3",
       "acceptableAnswers": [
         "3"
       ],
-      "explanation": "Các vectơ khác $\\vec{AB}$ bằng $\\vec{AB}$ là: $\\vec{FO}, \\vec{OC}, \\vec{ED}$. Vậy có đúng 3 vectơ.",
+      "explanation": "Các vectơ khác $\\overrightarrow{AB}$ bằng $\\overrightarrow{AB}$ là: $\\overrightarrow{FO}, \\overrightarrow{OC}, \\overrightarrow{ED}$. Vậy có đúng 3 vectơ.",
       "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 320\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <defs>\n    <marker id=\"hexArrBlue\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#60a5fa\"/>\n    </marker>\n    <marker id=\"hexArrPink\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f472b6\"/>\n    </marker>\n  </defs>\n  <!-- Lục giác đều ABCDEF tâm O -->\n  <!-- Tọa độ: O(250, 160), R=100. Góc k*60°: A(150, 160) góc 180°, B(200, 73.4) góc 240°, C(300, 73.4) góc 300°, D(350, 160) góc 0°, E(300, 246.6) góc 60°, F(200, 246.6) góc 120° -->\n  <polygon points=\"150,160 200,73.4 300,73.4 350,160 300,246.6 200,246.6\" fill=\"#1e1b4b\" fill-opacity=\"0.4\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Các đường chéo chính AD, BE, CF -->\n  <line x1=\"150\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"73.4\" x2=\"300\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"300\" y1=\"73.4\" x2=\"200\" y2=\"246.6\" stroke=\"#4338ca\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Vectơ AB -->\n  <line x1=\"150\" y1=\"160\" x2=\"200\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ FO -->\n  <line x1=\"200\" y1=\"246.6\" x2=\"250\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ OC -->\n  <line x1=\"250\" y1=\"160\" x2=\"300\" y2=\"73.4\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Vectơ ED -->\n  <line x1=\"300\" y1=\"246.6\" x2=\"350\" y2=\"160\" stroke=\"#60a5fa\" stroke-width=\"3\" marker-end=\"url(#hexArrBlue)\"/>\n  <!-- Đỉnh -->\n  <circle cx=\"150\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"135\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"200\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"195\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"300\" cy=\"73.4\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"60\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"350\" cy=\"160\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"360\" y=\"165\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <circle cx=\"300\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"305\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">E</text>\n  <circle cx=\"200\" cy=\"246.6\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"190\" y=\"265\" fill=\"#e0e7ff\" font-size=\"14\" font-weight=\"bold\">F</text>\n  <circle cx=\"250\" cy=\"160\" r=\"4\" fill=\"#f43f5e\"/>\n  <text x=\"255\" y=\"150\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">O</text>\n  <!-- Chú thích -->\n  <text x=\"250\" y=\"300\" fill=\"#a5b4fc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Các vectơ bằng nhau: vec(AB) = vec(FO) = vec(OC) = vec(ED)</text>\n</svg>"
     },
     {
       "id": "sa-10.7.11",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Trả lời ngắn 11 - Độ dài vectơ đường cao tam giác đều",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $4\\sqrt{3}$. Gọi $H$ là trung điểm của $BC$. Tính độ dài của vectơ $\\vec{AH}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $4\\sqrt{3}$. Gọi $H$ là trung điểm của $BC$. Tính độ dài của vectơ $\\overrightarrow{AH}$.",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
       ],
-      "explanation": "Đường cao tam giác đều: $AH = \\frac{a\\sqrt{3}}{2} = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |\\vec{AH}| = 6$."
+      "explanation": "Đường cao tam giác đều: $AH = \\frac{a\\sqrt{3}}{2} = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |\\overrightarrow{AH}| = 6$."
     },
     {
       "id": "sa-10.7.12",
       "badge": "Trả lời ngắn 12 - Bài toán thực tế độ dịch chuyển thuyền máy",
       "source": "Toán học và Đời sống",
-      "prompt": "Một chiếc ca nô xuất phát từ bến $A$ chạy thẳng theo hướng Đông với vận tốc không đổi $32\\text{ km/h}$. Sau 2 giờ 15 phút, ca nô đến bến $B$. Tính độ dài của vectơ độ dịch chuyển $\\vec{AB}$ (theo đơn vị kilômét).",
+      "prompt": "Một chiếc ca nô xuất phát từ bến $A$ chạy thẳng theo hướng Đông với vận tốc không đổi $32\\text{ km/h}$. Sau 2 giờ 15 phút, ca nô đến bến $B$. Tính độ dài của vectơ độ dịch chuyển $\\overrightarrow{AB}$ (theo đơn vị kilômét).",
       "correctAnswer": "72",
       "acceptableAnswers": [
         "72",
         "72 km"
       ],
-      "explanation": "Đổi 2 giờ 15 phút $= 2.25$ giờ. Độ dài vectơ độ dịch chuyển: $|\\vec{AB}| = 32 \\times 2.25 = 72\\text{ km}$.",
+      "explanation": "Đổi 2 giờ 15 phút $= 2.25$ giờ. Độ dài vectơ độ dịch chuyển: $|\\overrightarrow{AB}| = 32 \\times 2.25 = 72\\text{ km}$.",
       "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 280\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border border-sky-700/50 p-3\">\n  <defs>\n    <marker id=\"boatArr\" viewBox=\"0 0 10 10\" refX=\"6\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n  </defs>\n  <!-- Mặt nước hồ phẳng lặng -->\n  <path d=\"M 30 200 Q 150 190 270 200 T 470 200\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <path d=\"M 50 230 Q 170 220 290 230 T 450 230\" fill=\"none\" stroke=\"#0369a1\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n  <!-- Điểm xuất phát bến thuyền A -->\n  <circle cx=\"80\" cy=\"130\" r=\"6\" fill=\"#f59e0b\"/>\n  <text x=\"75\" y=\"110\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">Bến A (gốc)</text>\n  <!-- Điểm đến B -->\n  <circle cx=\"380\" cy=\"130\" r=\"6\" fill=\"#10b981\"/>\n  <text x=\"375\" y=\"110\" fill=\"#34d399\" font-size=\"14\" font-weight=\"bold\">Bến B (ngọn)</text>\n  <!-- Vectơ độ dịch chuyển AB -->\n  <line x1=\"80\" y1=\"130\" x2=\"380\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"4\" marker-end=\"url(#boatArr)\"/>\n  <!-- Thông số -->\n  <text x=\"230\" y=\"155\" fill=\"#e0f2fe\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">vec(AB): v = 25 km/h, t = 2.4 h</text>\n  <text x=\"230\" y=\"175\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">|vec(d)| = |vec(AB)| = 25 × 2.4 = 60 km</text>\n  <!-- Hướng di chuyển -->\n  <text x=\"430\" y=\"135\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"bold\">Hướng Đông -></text>\n</svg>"
     }
   ]
@@ -10540,9 +10560,9 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "index": "1",
       "title": "1. Tổng của hai vectơ & Quy tắc ba điểm (Tam giác)",
       "points": [
-        "• **Định nghĩa**: Cho hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$. Lấy điểm $A$ tùy ý, vẽ $\\\\vec{AB} = \\\\vec{a}$ và $\\\\vec{BC} = \\\\vec{b}$. Vectơ $\\\\vec{AC}$ được gọi là **tổng của hai vectơ** $\\\\vec{a}$ và $\\\\vec{b}$, kí hiệu là $\\\\vec{a} + \\\\vec{b}$.\\",
+        "• **Định nghĩa**: Cho hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$. Lấy điểm $A$ tùy ý, vẽ $\\\\overrightarrow{AB} = \\\\vec{a}$ và $\\\\overrightarrow{BC} = \\\\vec{b}$. Vectơ $\\\\overrightarrow{AC}$ được gọi là **tổng của hai vectơ** $\\\\vec{a}$ và $\\\\vec{b}$, kí hiệu là $\\\\vec{a} + \\\\vec{b}$.\\",
         "• **Quy tắc ba điểm**: Với ba điểm $A, B, C$ bất kì, ta luôn có:\\",
-        "$$\\\\vec{AB} + \\\\vec{BC} = \\\\vec{AC}$$\\",
+        "$$\\\\overrightarrow{AB} + \\\\overrightarrow{BC} = \\\\overrightarrow{AC}$$\\",
         "• **Tính chất**: Giao hoán: $\\\\vec{a} + \\\\vec{b} = \\\\vec{b} + \\\\vec{a}$; Kết hợp: $(\\\\vec{a} + \\\\vec{b}) + \\\\vec{c} = \\\\vec{a} + (\\\\vec{b} + \\\\vec{c})$; Cộng với vectơ $\\\\vec{0}$: $\\\\vec{a} + \\\\vec{0} = \\\\vec{a}$."
       ]
     },
@@ -10551,7 +10571,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "title": "2. Quy tắc hình bình hành",
       "points": [
         "• Nếu tứ giác $ABCD$ là hình bình hành thì:\\",
-        "$$\\\\vec{AB} + \\\\vec{AD} = \\\\vec{AC}$$\\",
+        "$$\\\\overrightarrow{AB} + \\\\overrightarrow{AD} = \\\\overrightarrow{AC}$$\\",
         "*(Tổng hai vectơ chung gốc bằng vectơ đường chéo xuất phát từ gốc đó)*."
       ]
     },
@@ -10559,10 +10579,10 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "index": "3",
       "title": "3. Vectơ đối & Hiệu của hai vectơ",
       "points": [
-        "• **Vectơ đối**: Vectơ có cùng độ dài và ngược hướng với $\\\\vec{a}$ được gọi là vectơ đối của $\\\\vec{a}$, kí hiệu là $-\\\\vec{a}$. Ta có $\\\\vec{a} + (-\\\\vec{a}) = \\\\vec{0}$. Vectơ đối của $\\\\vec{AB}$ là $\\\\vec{BA} = -\\\\vec{AB}$.\\",
+        "• **Vectơ đối**: Vectơ có cùng độ dài và ngược hướng với $\\\\vec{a}$ được gọi là vectơ đối của $\\\\vec{a}$, kí hiệu là $-\\\\vec{a}$. Ta có $\\\\vec{a} + (-\\\\vec{a}) = \\\\vec{0}$. Vectơ đối của $\\\\overrightarrow{AB}$ là $\\\\overrightarrow{BA} = -\\\\overrightarrow{AB}$.\\",
         "• **Hiệu hai vectơ**: $\\\\vec{a} - \\\\vec{b} = \\\\vec{a} + (-\\\\vec{b})$.\\",
         "• **Quy tắc hiệu (chung gốc)**: Với ba điểm $O, A, B$ bất kì, ta có:\\",
-        "$$\\\\vec{OB} - \\\\vec{OA} = \\\\vec{AB}$$"
+        "$$\\\\overrightarrow{OB} - \\\\overrightarrow{OA} = \\\\overrightarrow{AB}$$"
       ]
     },
     {
@@ -10570,9 +10590,9 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "title": "4. Tính chất trung điểm và trọng tâm",
       "points": [
         "• Điểm $I$ là trung điểm của đoạn thẳng $AB$ khi và chỉ khi:\\",
-        "$$\\\\vec{IA} + \\\\vec{IB} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\vec{OA} + \\\\vec{OB} = 2\\\\vec{OI} \\\\quad (\\\\forall O)$$\\",
+        "$$\\\\overrightarrow{IA} + \\\\overrightarrow{IB} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\overrightarrow{OA} + \\\\overrightarrow{OB} = 2\\\\overrightarrow{OI} \\\\quad (\\\\forall O)$$\\",
         "• Điểm $G$ là trọng tâm tam giác $ABC$ khi và chỉ khi:\\",
-        "$$\\\\vec{GA} + \\\\vec{GB} + \\\\vec{GC} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\vec{OA} + \\\\vec{OB} + \\\\vec{OC} = 3\\\\vec{OG} \\\\quad (\\\\forall O)$$"
+        "$$\\\\overrightarrow{GA} + \\\\overrightarrow{GB} + \\\\overrightarrow{GC} = \\\\vec{0} \\\\quad \\\\text{hoặc} \\\\quad \\\\overrightarrow{OA} + \\\\overrightarrow{OB} + \\\\overrightarrow{OC} = 3\\\\overrightarrow{OG} \\\\quad (\\\\forall O)$$"
       ]
     }
   ],
@@ -10592,13 +10612,13 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "SGK Toán 10 KNTT Bài 8",
       "question": "Cho ba điểm phân biệt $A, B, C$. Đẳng thức nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AB} + \\vec{BC} = \\vec{AC}$",
-        "$\\vec{AB} + \\vec{AC} = \\vec{BC}$",
-        "$\\vec{BA} + \\vec{BC} = \\vec{AC}$",
-        "$\\vec{AB} + \\vec{CB} = \\vec{AC}$"
+        "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{BC}$",
+        "$\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{AC}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{CB} = \\overrightarrow{AC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc ba điểm (quy tắc tam giác): $\\vec{AB} + \\vec{BC} = \\vec{AC}$."
+      "explanation": "Theo quy tắc ba điểm (quy tắc tam giác): $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.8.2",
@@ -10606,41 +10626,41 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "SGK Toán 10 KNTT",
       "question": "Cho hình bình hành $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AB} + \\vec{AD} = \\vec{AC}$",
-        "$\\vec{AB} + \\vec{AD} = \\vec{BD}$",
-        "$\\vec{AB} + \\vec{AC} = \\vec{AD}$",
-        "$\\vec{BA} + \\vec{BC} = \\vec{AC}$"
+        "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{BD}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$",
+        "$\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{AC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc hình bình hành: Tổng hai vectơ chung gốc bằng vectơ đường chéo $\\vec{AB} + \\vec{AD} = \\vec{AC}$."
+      "explanation": "Theo quy tắc hình bình hành: Tổng hai vectơ chung gốc bằng vectơ đường chéo $\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.8.3",
       "badge": "Nhận biết - Quy tắc hiệu hai vectơ",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho ba điểm phân biệt $O, A, B$. Vectơ $\\vec{OB} - \\vec{OA}$ bằng vectơ nào sau đây?",
+      "question": "Cho ba điểm phân biệt $O, A, B$. Vectơ $\\overrightarrow{OB} - \\overrightarrow{OA}$ bằng vectơ nào sau đây?",
       "options": [
-        "$\\vec{AB}$",
-        "$\\vec{BA}$",
-        "$\\vec{OA}$",
-        "$\\vec{BO}$"
+        "$\\overrightarrow{AB}$",
+        "$\\overrightarrow{BA}$",
+        "$\\overrightarrow{OA}$",
+        "$\\overrightarrow{BO}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc trừ hai vectơ chung gốc: $\\vec{OB} - \\vec{OA} = \\vec{AB}$."
+      "explanation": "Theo quy tắc trừ hai vectơ chung gốc: $\\overrightarrow{OB} - \\overrightarrow{OA} = \\overrightarrow{AB}$."
     },
     {
       "id": "quiz-10.8.4",
       "badge": "Nhận biết - Vectơ đối của vectơ",
       "source": "SGK Toán 10 KNTT",
-      "question": "Vectơ đối của vectơ $\\vec{MN}$ là:",
+      "question": "Vectơ đối của vectơ $\\overrightarrow{MN}$ là:",
       "options": [
-        "$\\vec{NM}$",
-        "$-\\vec{NM}$",
-        "$\\vec{MN}$",
-        "$|\\vec{MN}|$"
+        "$\\overrightarrow{NM}$",
+        "$-\\overrightarrow{NM}$",
+        "$\\overrightarrow{MN}$",
+        "$|\\overrightarrow{MN}|$"
       ],
       "correctIndex": 0,
-      "explanation": "Vectơ đối của $\\vec{MN}$ là $-\\vec{MN} = \\vec{NM}$."
+      "explanation": "Vectơ đối của $\\overrightarrow{MN}$ là $-\\overrightarrow{MN} = \\overrightarrow{NM}$."
     },
     {
       "id": "quiz-10.8.5",
@@ -10648,47 +10668,49 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "Đề kiểm tra Toán 10",
       "question": "Cho đoạn thẳng $AB$ có trung điểm là $I$. Đẳng thức vectơ nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{IA} + \\vec{IB} = \\vec{0}$",
-        "$\\vec{IA} + \\vec{IB} = \\vec{AB}$",
-        "$\\vec{AI} + \\vec{BI} = \\vec{0}$",
-        "$\\vec{IA} - \\vec{IB} = \\vec{0}$"
+        "$\\overrightarrow{IA} + \\overrightarrow{IB} = \\vec{0}$",
+        "$\\overrightarrow{IA} + \\overrightarrow{IB} = \\overrightarrow{AB}$",
+        "$\\overrightarrow{AI} + \\overrightarrow{BI} = \\vec{0}$",
+        "$\\overrightarrow{IA} - \\overrightarrow{IB} = \\vec{0}$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $I$ là trung điểm $AB$ nên hai vectơ $\\vec{IA}$ và $\\vec{IB}$ là hai vectơ đối nhau, do đó $\\vec{IA} + \\vec{IB} = \\vec{0}$."
+      "explanation": "Vì $I$ là trung điểm $AB$ nên hai vectơ $\\overrightarrow{IA}$ và $\\overrightarrow{IB}$ là hai vectơ đối nhau, do đó $\\overrightarrow{IA} + \\overrightarrow{IB} = \\vec{0}$."
     },
     {
       "id": "quiz-10.8.6",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"60,140 160,35 260,140\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1\" strokeDasharray=\"3 3\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"154\" y2=\"41\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"35\" x2=\"254\" y2=\"134\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"254\" y2=\"140\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"160\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"25\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"160\" y=\"160\" fill=\"#fbbf24\" fontSize=\"11\" textAnchor=\"middle\">AC = AB + BC</text>\n</svg>",
       "badge": "Thông hiểu - Tính chất trọng tâm tam giác",
       "source": "SGK Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ có trọng tâm $G$. Khẳng định nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$",
-        "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{AB}$",
-        "$\\vec{AG} + \\vec{BG} + \\vec{CG} = 3\\vec{0}$",
-        "$\\vec{GA} = \\vec{GB} = \\vec{GC}$"
+        "$\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0}$",
+        "$\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\overrightarrow{AB}$",
+        "$\\overrightarrow{AG} + \\overrightarrow{BG} + \\overrightarrow{CG} = 3\\vec{0}$",
+        "$\\overrightarrow{GA} = \\overrightarrow{GB} = \\overrightarrow{GC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Trọng tâm tam giác $ABC$ luôn thỏa mãn $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$."
+      "explanation": "Trọng tâm tam giác $ABC$ luôn thỏa mãn $\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0}$."
     },
     {
       "id": "quiz-10.8.7",
       "badge": "Thông hiểu - Rút gọn tổng vectơ liên tiếp",
       "source": "SBT Toán 10 KNTT",
-      "question": "Rút gọn biểu thức vectơ $\\vec{u} = \\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE}$ được kết quả là:",
+      "question": "Rút gọn biểu thức vectơ $\\vec{u} = \\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DE}$ được kết quả là:",
       "options": [
-        "$\\vec{AE}$",
-        "$\\vec{EA}$",
+        "$\\overrightarrow{AE}$",
+        "$\\overrightarrow{EA}$",
         "$\\vec{0}$",
-        "$\\vec{AD}$"
+        "$\\overrightarrow{AD}$"
       ],
       "correctIndex": 0,
-      "explanation": "Áp dụng quy tắc nối đuôi ba điểm liên tiếp: $\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE} = (\\vec{AB} + \\vec{BC}) + (\\vec{CD} + \\vec{DE}) = \\vec{AC} + \\vec{CE} = \\vec{AE}$."
+      "explanation": "Áp dụng quy tắc nối đuôi ba điểm liên tiếp: $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DE} = (\\overrightarrow{AB} + \\overrightarrow{BC}) + (\\overrightarrow{CD} + \\overrightarrow{DE}) = \\overrightarrow{AC} + \\overrightarrow{CE} = \\overrightarrow{AE}$."
     },
     {
       "id": "quiz-10.8.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,140 190,140 260,45 120,45\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"116\" y2=\"51\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"254\" y2=\"49\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"198\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"120\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"106\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n  <text x=\"170\" y=\"80\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">AC = AB + AD</text>\n</svg>",
       "badge": "Thông hiểu - Độ dài tổng hai vectơ vuông góc",
       "source": "Đề thi học kì 1 Toán 10",
-      "question": "Cho hình chữ nhật $ABCD$ có $AB = 3, AD = 4$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 3, AD = 4$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AD}$ bằng:",
       "options": [
         "$5$",
         "$7$",
@@ -10696,13 +10718,13 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$\\sqrt{7}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc hình bình hành: $\\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài $|\\vec{AB} + \\vec{AD}| = |\\vec{AC}| = \\sqrt{3^2 + 4^2} = 5$."
+      "explanation": "Theo quy tắc hình bình hành: $\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Độ dài $|\\overrightarrow{AB} + \\overrightarrow{AD}| = |\\overrightarrow{AC}| = \\sqrt{3^2 + 4^2} = 5$."
     },
     {
       "id": "quiz-10.8.9",
       "badge": "Thông hiểu - Độ dài hiệu hai vectơ tam giác đều",
       "source": "Đề kiểm tra định kì Toán 10",
-      "question": "Cho tam giác đều $ABC$ cạnh bằng $a$. Độ dài của vectơ $\\vec{AB} - \\vec{AC}$ bằng:",
+      "question": "Cho tam giác đều $ABC$ cạnh bằng $a$. Độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$ bằng:",
       "options": [
         "$a$",
         "$a\\sqrt{3}$",
@@ -10710,13 +10732,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$0$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc hiệu: $\\vec{AB} - \\vec{AC} = \\vec{CB}$. Do đó $|\\vec{AB} - \\vec{AC}| = |\\vec{CB}| = a$."
+      "explanation": "Theo quy tắc hiệu: $\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$. Do đó $|\\overrightarrow{AB} - \\overrightarrow{AC}| = |\\overrightarrow{CB}| = a$."
     },
     {
       "id": "quiz-10.8.10",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"60,140 160,35 260,140\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1\" strokeDasharray=\"3 3\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"154\" y2=\"41\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"35\" x2=\"254\" y2=\"134\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"254\" y2=\"140\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"160\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"25\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"160\" y=\"160\" fill=\"#fbbf24\" fontSize=\"11\" textAnchor=\"middle\">AC = AB + BC</text>\n</svg>",
       "badge": "Thông hiểu - Độ dài tổng hai vectơ tam giác đều",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho tam giác đều $ABC$ có cạnh bằng $a$. Gọi $H$ là trung điểm $BC$. Độ dài của vectơ $\\vec{AB} + \\vec{AC}$ bằng:",
+      "question": "Cho tam giác đều $ABC$ có cạnh bằng $a$. Gọi $H$ là trung điểm $BC$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
       "options": [
         "$a\\sqrt{3}$",
         "$a$",
@@ -10724,13 +10747,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$2a$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $H$ là trung điểm $BC$ nên $\\vec{AB} + \\vec{AC} = 2\\vec{AH}$. Độ dài: $|\\vec{AB} + \\vec{AC}| = 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
+      "explanation": "Vì $H$ là trung điểm $BC$ nên $\\overrightarrow{AB} + \\overrightarrow{AC} = 2\\overrightarrow{AH}$. Độ dài: $|\\overrightarrow{AB} + \\overrightarrow{AC}| = 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
     },
     {
       "id": "quiz-10.8.11",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Hiệu hai vectơ hình vuông",
       "source": "Đề thi thử Toán 10",
-      "question": "Cho hình vuông $ABCD$ cạnh $a$. Độ dài của vectơ $\\vec{AB} - \\vec{DA}$ bằng:",
+      "question": "Cho hình vuông $ABCD$ cạnh $a$. Độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{DA}$ bằng:",
       "options": [
         "$a\\sqrt{2}$",
         "$a$",
@@ -10738,27 +10762,28 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$0$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $-\\vec{DA} = \\vec{AD}$. Do đó $\\vec{AB} - \\vec{DA} = \\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài: $|\\vec{AC}| = a\\sqrt{2}$."
+      "explanation": "Ta có $-\\overrightarrow{DA} = \\overrightarrow{AD}$. Do đó $\\overrightarrow{AB} - \\overrightarrow{DA} = \\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Độ dài: $|\\overrightarrow{AC}| = a\\sqrt{2}$."
     },
     {
       "id": "quiz-10.8.12",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,20 265,90 160,160 55,90\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"154\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"259\" y2=\"90\" stroke=\"#38bdf8\" strokeWidth=\"2\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"23\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"55\" y1=\"90\" x2=\"156\" y2=\"157\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/>\n  <text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"11\" fontWeight=\"bold\">O</text>\n  <text x=\"75\" y=\"94\" fill=\"#94a3b8\" fontSize=\"11\">60�</text>\n  <circle cx=\"160\" cy=\"20\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"14\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"265\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"274\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"160\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"174\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">D</text>\n  <circle cx=\"55\" cy=\"90\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"40\" y=\"94\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n</svg>",
       "badge": "Thông hiểu - Khẳng định sai về tổng vectơ",
       "source": "Bộ đề Toán 10 KNTT",
       "question": "Cho hình bình hành $ABCD$ tâm $O$. Khẳng định nào sau đây là SAI?",
       "options": [
-        "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{AC}$",
-        "$\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DA} = \\vec{0}$",
-        "$\\vec{OA} + \\vec{OC} = \\vec{0}$",
-        "$\\vec{OB} + \\vec{OD} = \\vec{0}$"
+        "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\overrightarrow{AC}$",
+        "$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DA} = \\vec{0}$",
+        "$\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0}$",
+        "$\\overrightarrow{OB} + \\overrightarrow{OD} = \\vec{0}$"
       ],
       "correctIndex": 0,
-      "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\vec{OA} + \\vec{OC} = \\vec{0}$ và $\\vec{OB} + \\vec{OD} = \\vec{0}$. Do đó tổng cả 4 vectơ phải bằng $\\vec{0}$, không thể bằng $\\vec{AC}$."
+      "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0}$ và $\\overrightarrow{OB} + \\overrightarrow{OD} = \\vec{0}$. Do đó tổng cả 4 vectơ phải bằng $\\vec{0}$, không thể bằng $\\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.8.13",
       "badge": "Vận dụng - Độ dài tổng hai vectơ góc 120 độ",
       "source": "Đề thi HSG Toán 10",
-      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{BAD} = 120^\\circ$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "question": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và góc $\\widehat{BAD} = 120^\\circ$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AD}$ bằng:",
       "options": [
         "$a$",
         "$a\\sqrt{3}$",
@@ -10766,13 +10791,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$\\frac{a\\sqrt{3}}{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo quy tắc hình bình hành: $\\vec{AB} + \\vec{AD} = \\vec{AC}$. Tam giác $ABC$ cân tại $B$ có $\\widehat{B} = 180^\\circ - 120^\\circ = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\vec{AB} + \\vec{AD}| = a$."
+      "explanation": "Theo quy tắc hình bình hành: $\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Tam giác $ABC$ cân tại $B$ có $\\widehat{B} = 180^\\circ - 120^\\circ = 60^\\circ$ nên là tam giác đều, do đó $AC = a \\implies |\\overrightarrow{AB} + \\overrightarrow{AD}| = a$."
     },
     {
       "id": "quiz-10.8.14",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Thông hiểu - Điều kiện để tổng hai vectơ bằng 0",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho ba điểm phân biệt $A, B, C$. Nếu $\\vec{AB} + \\vec{AC} = \\vec{0}$ thì:",
+      "question": "Cho ba điểm phân biệt $A, B, C$. Nếu $\\overrightarrow{AB} + \\overrightarrow{AC} = \\vec{0}$ thì:",
       "options": [
         "$A$ là trung điểm của đoạn thẳng $BC$.",
         "$B$ là trung điểm của đoạn thẳng $AC$.",
@@ -10780,27 +10806,27 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "Tam giác $ABC$ là tam giác đều."
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} + \\vec{AC} = \\vec{0} \\iff \\vec{AB} = -\\vec{AC} = \\vec{CA}$, nghĩa là $A$ là trung điểm của đoạn thẳng $BC$."
+      "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\vec{0} \\iff \\overrightarrow{AB} = -\\overrightarrow{AC} = \\overrightarrow{CA}$, nghĩa là $A$ là trung điểm của đoạn thẳng $BC$."
     },
     {
       "id": "quiz-10.8.15",
       "badge": "Thông hiểu - Rút gọn biểu thức hiệu",
       "source": "SBT Toán 10",
-      "question": "Cho 4 điểm $A, B, C, D$. Biểu thức $\\vec{AB} - \\vec{CD} - \\vec{AC}$ bằng vectơ nào sau đây?",
+      "question": "Cho 4 điểm $A, B, C, D$. Biểu thức $\\overrightarrow{AB} - \\overrightarrow{CD} - \\overrightarrow{AC}$ bằng vectơ nào sau đây?",
       "options": [
-        "$\\vec{DB}$",
-        "$\\vec{BD}$",
-        "$\\vec{DA}$",
+        "$\\overrightarrow{DB}$",
+        "$\\overrightarrow{BD}$",
+        "$\\overrightarrow{DA}$",
         "$\\vec{0}$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có: $\\vec{AB} - \\vec{AC} = \\vec{CB}$. Lại có $-\\vec{CD} = \\vec{DC}$. Vậy $\\vec{CB} + \\vec{DC} = \\vec{DC} + \\vec{CB} = \\vec{DB}$."
+      "explanation": "Ta có: $\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$. Lại có $-\\overrightarrow{CD} = \\overrightarrow{DC}$. Vậy $\\overrightarrow{CB} + \\overrightarrow{DC} = \\overrightarrow{DC} + \\overrightarrow{CB} = \\overrightarrow{DB}$."
     },
     {
       "id": "quiz-10.8.16",
       "badge": "Vận dụng - Độ dài tổng hai vectơ hình thoi góc 60 độ",
       "source": "Đề kiểm tra chất lượng Toán 10",
-      "question": "Cho hình thoi $ABCD$ cạnh $a$ có $\\widehat{BAD} = 60^\\circ$. Độ dài của vectơ $\\vec{AB} + \\vec{AD}$ bằng:",
+      "question": "Cho hình thoi $ABCD$ cạnh $a$ có $\\widehat{BAD} = 60^\\circ$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AD}$ bằng:",
       "options": [
         "$a\\sqrt{3}$",
         "$a$",
@@ -10808,13 +10834,13 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$a\\sqrt{2}$"
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$. Trong hình thoi có $\\widehat{BAD} = 60^\\circ$, đường chéo $AC = 2 \\cdot a \\cos 30^\\circ = a\\sqrt{3}$."
+      "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Trong hình thoi có $\\widehat{BAD} = 60^\\circ$, đường chéo $AC = 2 \\cdot a \\cos 30^\\circ = a\\sqrt{3}$."
     },
     {
       "id": "quiz-10.8.17",
       "badge": "Thông hiểu - Điểm M thỏa mãn đẳng thức vectơ",
       "source": "Đề thi thử Toán 10",
-      "question": "Cho đoạn thẳng $AB$ và điểm $I$ là trung điểm của $AB$. Điểm $M$ thỏa mãn $\\vec{MA} + \\vec{MB} = \\vec{0}$ thì:",
+      "question": "Cho đoạn thẳng $AB$ và điểm $I$ là trung điểm của $AB$. Điểm $M$ thỏa mãn $\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0}$ thì:",
       "options": [
         "$M$ trùng với điểm $I$.",
         "$M$ trùng với điểm $A$.",
@@ -10822,21 +10848,21 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "Không tồn tại điểm $M$."
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{MA} + \\vec{MB} = \\vec{0} \\iff M$ là trung điểm của $AB$, tức $M \\equiv I$."
+      "explanation": "$\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0} \\iff M$ là trung điểm của $AB$, tức $M \\equiv I$."
     },
     {
       "id": "quiz-10.8.18",
       "badge": "Thông hiểu - Tổng các vectơ đỉnh đa giác khép kín",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho hình lục giác đều $ABCDEF$. Tổng $\\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE} + \\vec{EF} + \\vec{FA}$ bằng:",
+      "question": "Cho hình lục giác đều $ABCDEF$. Tổng $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DE} + \\overrightarrow{EF} + \\overrightarrow{FA}$ bằng:",
       "options": [
         "$\\vec{0}$",
-        "$\\vec{AD}$",
-        "$2\\vec{AB}$",
-        "$\\vec{AF}$"
+        "$\\overrightarrow{AD}$",
+        "$2\\overrightarrow{AB}$",
+        "$\\overrightarrow{AF}$"
       ],
       "correctIndex": 0,
-      "explanation": "Tổng các vectơ theo chu trình khép kín: điểm đầu trùng với điểm cuối tạo thành vectơ $\\vec{AA} = \\vec{0}$."
+      "explanation": "Tổng các vectơ theo chu trình khép kín: điểm đầu trùng với điểm cuối tạo thành vectơ $\\overrightarrow{AA} = \\vec{0}$."
     },
     {
       "id": "quiz-10.8.19",
@@ -10872,65 +10898,67 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "trueFalseQuestions": [
     {
       "id": "tf-10.8.1",
+      "svgDiagram": "<svg viewBox=\"0 0 320 170\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"60,140 160,35 260,140\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1\" strokeDasharray=\"3 3\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"154\" y2=\"41\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"35\" x2=\"254\" y2=\"134\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"254\" y2=\"140\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"160\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"25\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"160\" y=\"160\" fill=\"#fbbf24\" fontSize=\"11\" textAnchor=\"middle\">AC = AB + BC</text>\n</svg>",
       "badge": "Đúng / Sai 1 - Khảo sát các quy tắc vectơ cơ bản",
       "source": "SGK Toán 10 KNTT",
       "prompt": "Cho ba điểm phân biệt bất kì $A, B, C$. Xét tính Đúng/Sai của các đẳng thức sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{BC} = \\vec{AC}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$.",
           "correctAnswer": true,
           "explanation": "Đúng theo quy tắc ba điểm."
         },
         {
           "id": "b",
-          "text": "$\\vec{AB} - \\vec{AC} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{BC}$.",
           "correctAnswer": false,
-          "explanation": "Sai: $\\vec{AB} - \\vec{AC} = \\vec{CB}$, không phải $\\vec{BC}$."
+          "explanation": "Sai: $\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$, không phải $\\overrightarrow{BC}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{BA} + \\vec{AC} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{BA} + \\overrightarrow{AC} = \\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "Đúng: $\\vec{BA} + \\vec{AC} = \\vec{BC}$."
+          "explanation": "Đúng: $\\overrightarrow{BA} + \\overrightarrow{AC} = \\overrightarrow{BC}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{AB} + \\vec{BA} = \\vec{0}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{BA} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "Đúng: $\\vec{AB} + \\vec{BA} = \\vec{AA} = \\vec{0}$."
+          "explanation": "Đúng: $\\overrightarrow{AB} + \\overrightarrow{BA} = \\overrightarrow{AA} = \\vec{0}$."
         }
       ]
     },
     {
       "id": "tf-10.8.2",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,140 190,140 260,45 120,45\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"116\" y2=\"51\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"254\" y2=\"49\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"198\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"120\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"106\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n  <text x=\"170\" y=\"80\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">AC = AB + AD</text>\n</svg>",
       "badge": "Đúng / Sai 2 - Vectơ trong hình bình hành",
       "source": "SBT Toán 10 KNTT",
       "prompt": "Cho hình bình hành $ABCD$ tâm $O$. Xét tính Đúng/Sai của các khẳng định sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$.",
           "correctAnswer": true,
           "explanation": "Đúng theo quy tắc hình bình hành."
         },
         {
           "id": "b",
-          "text": "$\\vec{AB} - \\vec{AD} = \\vec{DB}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{DB}$.",
           "correctAnswer": true,
-          "explanation": "Đúng: $\\vec{AB} - \\vec{AD} = \\vec{DB}$."
+          "explanation": "Đúng: $\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{DB}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = \\vec{0}$.",
+          "text": "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\vec{OA} + \\vec{OC} = \\vec{0}$ và $\\vec{OB} + \\vec{OD} = \\vec{0}$."
+          "explanation": "Vì $O$ là trung điểm của $AC$ và $BD$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0}$ và $\\overrightarrow{OB} + \\overrightarrow{OD} = \\vec{0}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{BA} + \\vec{BC} = \\vec{AC}$.",
+          "text": "$\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{AC}$.",
           "correctAnswer": false,
-          "explanation": "Sai: $\\vec{BA} + \\vec{BC} = \\vec{BD}$, không phải $\\vec{AC}$."
+          "explanation": "Sai: $\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{BD}$, không phải $\\overrightarrow{AC}$."
         }
       ]
     },
@@ -10942,91 +10970,93 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{AC} = 2\\vec{AM}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = 2\\overrightarrow{AM}$.",
           "correctAnswer": true,
-          "explanation": "$M$ là trung điểm của $BC$ nên $\\vec{AB} + \\vec{AC} = 2\\vec{AM}$."
+          "explanation": "$M$ là trung điểm của $BC$ nên $\\overrightarrow{AB} + \\overrightarrow{AC} = 2\\overrightarrow{AM}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$.",
+          "text": "$\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0}$.",
           "correctAnswer": true,
           "explanation": "Đúng theo tính chất trọng tâm."
         },
         {
           "id": "c",
-          "text": "Với mọi điểm $O$ bất kì, ta luôn có $\\vec{OA} + \\vec{OB} + \\vec{OC} = 3\\vec{OG}$.",
+          "text": "Với mọi điểm $O$ bất kì, ta luôn có $\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} = 3\\overrightarrow{OG}$.",
           "correctAnswer": true,
           "explanation": "Đúng theo hệ thức vectơ trọng tâm."
         },
         {
           "id": "d",
-          "text": "$\\vec{MB} + \\vec{MC} = \\vec{BC}$.",
+          "text": "$\\overrightarrow{MB} + \\overrightarrow{MC} = \\overrightarrow{BC}$.",
           "correctAnswer": false,
-          "explanation": "Sai: vì $M$ là trung điểm $BC$ nên $\\vec{MB} + \\vec{MC} = \\vec{0}$."
+          "explanation": "Sai: vì $M$ là trung điểm $BC$ nên $\\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$."
         }
       ]
     },
     {
       "id": "tf-10.8.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Đúng / Sai 4 - Độ dài vectơ trong hình vuông",
       "source": "Đề thi học kì 1 Toán 10",
       "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $a$, tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$|\\vec{AB} + \\vec{AD}| = a\\sqrt{2}$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{AD}| = a\\sqrt{2}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC} \\implies |\\vec{AC}| = a\\sqrt{2}$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC} \\implies |\\overrightarrow{AC}| = a\\sqrt{2}$."
         },
         {
           "id": "b",
-          "text": "$|\\vec{AB} - \\vec{AD}| = a\\sqrt{2}$.",
+          "text": "$|\\overrightarrow{AB} - \\overrightarrow{AD}| = a\\sqrt{2}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} - \\vec{AD} = \\vec{DB} \\implies |\\vec{DB}| = a\\sqrt{2}$."
+          "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{DB} \\implies |\\overrightarrow{DB}| = a\\sqrt{2}$."
         },
         {
           "id": "c",
-          "text": "$|\\vec{OA} - \\vec{OB}| = a$.",
+          "text": "$|\\overrightarrow{OA} - \\overrightarrow{OB}| = a$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{OA} - \\vec{OB} = \\vec{BA} \\implies |\\vec{BA}| = a$."
+          "explanation": "$\\overrightarrow{OA} - \\overrightarrow{OB} = \\overrightarrow{BA} \\implies |\\overrightarrow{BA}| = a$."
         },
         {
           "id": "d",
-          "text": "$|\\vec{OA} + \\vec{OB}| = a\\sqrt{2}$.",
+          "text": "$|\\overrightarrow{OA} + \\overrightarrow{OB}| = a\\sqrt{2}$.",
           "correctAnswer": false,
-          "explanation": "Gọi $M$ là trung điểm $AB$, $|\\vec{OA} + \\vec{OB}| = 2OM = 2 \\cdot \\frac{a}{2} = a \\ne a\\sqrt{2}$."
+          "explanation": "Gọi $M$ là trung điểm $AB$, $|\\overrightarrow{OA} + \\overrightarrow{OB}| = 2OM = 2 \\cdot \\frac{a}{2} = a \\ne a\\sqrt{2}$."
         }
       ]
     },
     {
       "id": "tf-10.8.5",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Đúng / Sai 5 - Vectơ trong tam giác đều cạnh a",
       "source": "SBT Toán 10 KNTT",
       "prompt": "Cho tam giác đều $ABC$ cạnh bằng $a$, chiều cao $AH$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$|\\vec{AB} - \\vec{AC}| = a$.",
+          "text": "$|\\overrightarrow{AB} - \\overrightarrow{AC}| = a$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB} \\implies |\\vec{CB}| = a$."
+          "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB} \\implies |\\overrightarrow{CB}| = a$."
         },
         {
           "id": "b",
-          "text": "$|\\vec{AB} + \\vec{AC}| = a\\sqrt{3}$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{AC}| = a\\sqrt{3}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} + \\vec{AC} = 2\\vec{AH} \\implies 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AC} = 2\\overrightarrow{AH} \\implies 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
         },
         {
           "id": "c",
-          "text": "$|\\vec{AH} + \\vec{HB}| = a$.",
+          "text": "$|\\overrightarrow{AH} + \\overrightarrow{HB}| = a$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AH} + \\vec{HB} = \\vec{AB} \\implies |\\vec{AB}| = a$."
+          "explanation": "$\\overrightarrow{AH} + \\overrightarrow{HB} = \\overrightarrow{AB} \\implies |\\overrightarrow{AB}| = a$."
         },
         {
           "id": "d",
-          "text": "$|\\vec{AB} + \\vec{BC}| = 2a$.",
+          "text": "$|\\overrightarrow{AB} + \\overrightarrow{BC}| = 2a$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB} + \\vec{BC} = \\vec{AC} \\implies |\\vec{AC}| = a \\ne 2a$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies |\\overrightarrow{AC}| = a \\ne 2a$."
         }
       ]
     },
@@ -11038,27 +11068,27 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AB} + \\vec{CD} + \\vec{EA} = \\vec{ED} + \\vec{CB}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} + \\overrightarrow{EA} = \\overrightarrow{ED} + \\overrightarrow{CB}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{EA} + \\vec{AB} + \\vec{CD} = \\vec{EB} + \\vec{CD}$, trong khi vế phải là $\\vec{ED} + \\vec{CB} = \\vec{EB} + \\vec{CD}$? Thử: $\\vec{EB} + \\vec{CD} - (\\vec{ED} + \\vec{CB}) = \\vec{EB} - \\vec{ED} + \\vec{CD} - \\vec{CB} = \\vec{DB} + \\vec{DB} = 2\\vec{DB} \\ne \\vec{0}$."
+          "explanation": "$\\overrightarrow{EA} + \\overrightarrow{AB} + \\overrightarrow{CD} = \\overrightarrow{EB} + \\overrightarrow{CD}$, trong khi vế phải là $\\overrightarrow{ED} + \\overrightarrow{CB} = \\overrightarrow{EB} + \\overrightarrow{CD}$? Thử: $\\overrightarrow{EB} + \\overrightarrow{CD} - (\\overrightarrow{ED} + \\overrightarrow{CB}) = \\overrightarrow{EB} - \\overrightarrow{ED} + \\overrightarrow{CD} - \\overrightarrow{CB} = \\overrightarrow{DB} + \\overrightarrow{DB} = 2\\overrightarrow{DB} \\ne \\vec{0}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AE} + \\vec{BF} + \\vec{CD}$.",
+          "text": "$\\overrightarrow{AD} + \\overrightarrow{BE} + \\overrightarrow{CF} = \\overrightarrow{AE} + \\overrightarrow{BF} + \\overrightarrow{CD}$.",
           "correctAnswer": true,
-          "explanation": "Biến đổi vế trái trừ vế phải: $(\\vec{AD} - \\vec{CD}) + (\\vec{BE} - \\vec{AE}) + (\\vec{CF} - \\vec{BF}) = \\vec{AC} + \\vec{BA} + \\vec{CB} = \\vec{BA} + \\vec{AC} + \\vec{CB} = \\vec{BB} = \\vec{0}$."
+          "explanation": "Biến đổi vế trái trừ vế phải: $(\\overrightarrow{AD} - \\overrightarrow{CD}) + (\\overrightarrow{BE} - \\overrightarrow{AE}) + (\\overrightarrow{CF} - \\overrightarrow{BF}) = \\overrightarrow{AC} + \\overrightarrow{BA} + \\overrightarrow{CB} = \\overrightarrow{BA} + \\overrightarrow{AC} + \\overrightarrow{CB} = \\overrightarrow{BB} = \\vec{0}$."
         },
         {
           "id": "c",
-          "text": "$\\vec{AB} - \\vec{DC} = \\vec{AC} - \\vec{DB}$.",
+          "text": "$\\overrightarrow{AB} - \\overrightarrow{DC} = \\overrightarrow{AC} - \\overrightarrow{DB}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB}$, còn $\\vec{DC} - \\vec{DB} = \\vec{BC} = -\\vec{CB}$, vậy $\\vec{AB} + \\vec{DB} = \\vec{AC} + \\vec{DC}$."
+          "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$, còn $\\overrightarrow{DC} - \\overrightarrow{DB} = \\overrightarrow{BC} = -\\overrightarrow{CB}$, vậy $\\overrightarrow{AB} + \\overrightarrow{DB} = \\overrightarrow{AC} + \\overrightarrow{DC}$."
         },
         {
           "id": "d",
-          "text": "Nếu $\\vec{AB} + \\vec{CD} = \\vec{0}$ thì tứ giác $ABDC$ là hình bình hành.",
+          "text": "Nếu $\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0}$ thì tứ giác $ABDC$ là hình bình hành.",
           "correctAnswer": false,
-          "explanation": "$\\vec{AB} = -\\vec{CD} = \\vec{DC}$, do đó tứ giác $ABCD$ là hình bình hành, không phải $ABDC$."
+          "explanation": "$\\overrightarrow{AB} = -\\overrightarrow{CD} = \\overrightarrow{DC}$, do đó tứ giác $ABCD$ là hình bình hành, không phải $ABDC$."
         }
       ]
     },
@@ -11133,61 +11163,65 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "sa-10.8.1",
       "badge": "Trả lời ngắn 1 - Độ dài tổng vectơ hình vuông",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $6$. Tính độ dài của vectơ $\\vec{u} = \\vec{AB} + \\vec{AD}$ (kết quả làm tròn đến hàng phần mười).",
+      "prompt": "Cho hình vuông $ABCD$ có cạnh bằng $6$. Tính độ dài của vectơ $\\vec{u} = \\overrightarrow{AB} + \\overrightarrow{AD}$ (kết quả làm tròn đến hàng phần mười).",
       "correctAnswer": "8.5",
       "acceptableAnswers": [
         "8.5",
         "8,5",
         "6*sqrt(2)"
       ],
-      "explanation": "$\\vec{AB} + \\vec{AD} = \\vec{AC}$. Độ dài: $|\\vec{AC}| = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
+      "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Độ dài: $|\\overrightarrow{AC}| = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
     },
     {
       "id": "sa-10.8.2",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,140 190,140 260,45 120,45\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"116\" y2=\"51\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"254\" y2=\"49\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"198\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"120\" cy=\"45\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"106\" y=\"42\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n  <text x=\"170\" y=\"80\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">AC = AB + AD</text>\n</svg>",
       "badge": "Trả lời ngắn 2 - Độ dài hiệu vectơ tam giác vuông",
       "source": "SBT Toán 10 KNTT",
-      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}, AC = 12\\text{ cm}$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AC}$ (theo cm).",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}, AC = 12\\text{ cm}$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$ (theo cm).",
       "correctAnswer": "13",
       "acceptableAnswers": [
         "13",
         "13 cm"
       ],
-      "explanation": "$\\vec{AB} - \\vec{AC} = \\vec{CB} \\implies |\\vec{CB}| = BC = \\sqrt{5^2 + 12^2} = 13\\text{ cm}$."
+      "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB} \\implies |\\overrightarrow{CB}| = BC = \\sqrt{5^2 + 12^2} = 13\\text{ cm}$."
     },
     {
       "id": "sa-10.8.3",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Trả lời ngắn 3 - Độ dài tổng hai vectơ tam giác đều",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $4$. Tính độ dài của vectơ $\\vec{AB} + \\vec{AC}$ (làm tròn đến hàng phần mười).",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $4$. Tính độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$ (làm tròn đến hàng phần mười).",
       "correctAnswer": "6.9",
       "acceptableAnswers": [
         "6.9",
         "6,9",
         "4*sqrt(3)"
       ],
-      "explanation": "Gọi $H$ là trung điểm $BC$: $|\\vec{AB} + \\vec{AC}| = 2AH = 2 \\cdot \\frac{4\\sqrt{3}}{2} = 4\\sqrt{3} \\approx 6.928 \\approx 6.9$."
+      "explanation": "Gọi $H$ là trung điểm $BC$: $|\\overrightarrow{AB} + \\overrightarrow{AC}| = 2AH = 2 \\cdot \\frac{4\\sqrt{3}}{2} = 4\\sqrt{3} \\approx 6.928 \\approx 6.9$."
     },
     {
       "id": "sa-10.8.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Trả lời ngắn 4 - Độ dài hiệu hai vectơ hình chữ nhật",
       "source": "Bộ đề Toán 10 KNTT",
-      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 8, AD = 6$. Tính độ dài của vectơ $\\vec{AB} - \\vec{AD}$.",
+      "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 8, AD = 6$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AD}$.",
       "correctAnswer": "10",
       "acceptableAnswers": [
         "10"
       ],
-      "explanation": "$\\vec{AB} - \\vec{AD} = \\vec{DB} \\implies |\\vec{DB}| = \\sqrt{8^2 + 6^2} = 10$."
+      "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{DB} \\implies |\\overrightarrow{DB}| = \\sqrt{8^2 + 6^2} = 10$."
     },
     {
       "id": "sa-10.8.5",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Trả lời ngắn 5 - Độ dài tổng hai vectơ cùng hướng",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $C$ nằm giữa $A$ và $B$ sao cho $AC = 4$. Tính độ dài của vectơ $\\vec{u} = \\vec{AC} + \\vec{CB}$.",
+      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $C$ nằm giữa $A$ và $B$ sao cho $AC = 4$. Tính độ dài của vectơ $\\vec{u} = \\overrightarrow{AC} + \\overrightarrow{CB}$.",
       "correctAnswer": "10",
       "acceptableAnswers": [
         "10"
       ],
-      "explanation": "$\\vec{AC} + \\vec{CB} = \\vec{AB} \\implies |\\vec{AB}| = 10$."
+      "explanation": "$\\overrightarrow{AC} + \\overrightarrow{CB} = \\overrightarrow{AB} \\implies |\\overrightarrow{AB}| = 10$."
     },
     {
       "id": "sa-10.8.6",
@@ -11205,12 +11239,12 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "sa-10.8.7",
       "badge": "Trả lời ngắn 7 - Độ dài vectơ trọng tâm",
       "source": "Đề thi khảo sát Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $3\\sqrt{3}$, có trọng tâm $G$. Tính độ dài của vectơ $\\vec{GA} + \\vec{GB}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $3\\sqrt{3}$, có trọng tâm $G$. Tính độ dài của vectơ $\\overrightarrow{GA} + \\overrightarrow{GB}$.",
       "correctAnswer": "3",
       "acceptableAnswers": [
         "3"
       ],
-      "explanation": "Vì $G$ là trọng tâm nên $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0} \\implies \\vec{GA} + \\vec{GB} = -\\vec{GC}$. Do đó $|\\vec{GA} + \\vec{GB}| = |\\vec{GC}| = \\frac{2}{3} h = \\frac{2}{3} \\cdot \\frac{3\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3$."
+      "explanation": "Vì $G$ là trọng tâm nên $\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0} \\implies \\overrightarrow{GA} + \\overrightarrow{GB} = -\\overrightarrow{GC}$. Do đó $|\\overrightarrow{GA} + \\overrightarrow{GB}| = |\\overrightarrow{GC}| = \\frac{2}{3} h = \\frac{2}{3} \\cdot \\frac{3\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3$."
     },
     {
       "id": "sa-10.8.8",
@@ -11240,12 +11274,12 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "sa-10.8.10",
       "badge": "Trả lời ngắn 10 - Vectơ đối trong hình bình hành",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho hình bình hành $ABCD$ có $AB = 7, AD = 5$. Tính độ dài của vectơ $\\vec{u} = \\vec{BA} + \\vec{BC} + \\vec{CD} + \\vec{DA}$.",
+      "prompt": "Cho hình bình hành $ABCD$ có $AB = 7, AD = 5$. Tính độ dài của vectơ $\\vec{u} = \\overrightarrow{BA} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DA}$.",
       "correctAnswer": "0",
       "acceptableAnswers": [
         "0"
       ],
-      "explanation": "Biểu thức là chu trình khép kín hoặc gộp cặp đối: $\\vec{BA} + \\vec{CD} = \\vec{0}$ và $\\vec{BC} + \\vec{DA} = \\vec{0} \\implies \\vec{u} = \\vec{0}$, độ dài bằng $0$."
+      "explanation": "Biểu thức là chu trình khép kín hoặc gộp cặp đối: $\\overrightarrow{BA} + \\overrightarrow{CD} = \\vec{0}$ và $\\overrightarrow{BC} + \\overrightarrow{DA} = \\vec{0} \\implies \\vec{u} = \\vec{0}$, độ dài bằng $0$."
     },
     {
       "id": "sa-10.8.11",
@@ -11318,7 +11352,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "• **Điều kiện cùng phương**: Hai vectơ $\\\\vec{a}$ và $\\\\vec{b}$ (với $\\\\vec{a} \\",
         "e \\\\vec{0}$) cùng phương khi và chỉ khi có một số thực $k$ sao cho $\\\\vec{b} = k\\\\vec{a}$.\\",
         "• **Ba điểm thẳng hàng**: Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi có một số thực $k \\",
-        "e 0$ sao cho $\\\\vec{AB} = k\\\\vec{AC}$."
+        "e 0$ sao cho $\\\\overrightarrow{AB} = k\\\\overrightarrow{AC}$."
       ]
     },
     {
@@ -11326,10 +11360,10 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "title": "4. Hệ thức trung điểm và trọng tâm",
       "points": [
         "• Nếu $I$ là trung điểm của đoạn thẳng $AB$, thì với mọi điểm $M$ ta có:\\",
-        "$$\\\\vec{MI} = \\\\frac{1}{2}(\\\\vec{MA} + \\\\vec{MB})$$\\",
+        "$$\\\\overrightarrow{MI} = \\\\frac{1}{2}(\\\\overrightarrow{MA} + \\\\overrightarrow{MB})$$\\",
         "• Nếu $G$ là trọng tâm của tam giác $ABC$, thì với mọi điểm $M$ ta có:\\",
-        "$$\\\\vec{MG} = \\\\frac{1}{3}(\\\\vec{MA} + \\\\vec{MB} + \\\\vec{MC})$$\\",
-        "• Trên đường trung tuyến $AM$, ta có $\\\\vec{AG} = \\\\frac{2}{3}\\\\vec{AM}$ và $\\\\vec{GA} = -2\\\\vec{GM}$."
+        "$$\\\\overrightarrow{MG} = \\\\frac{1}{3}(\\\\overrightarrow{MA} + \\\\overrightarrow{MB} + \\\\overrightarrow{MC})$$\\",
+        "• Trên đường trung tuyến $AM$, ta có $\\\\overrightarrow{AG} = \\\\frac{2}{3}\\\\overrightarrow{AM}$ và $\\\\overrightarrow{GA} = -2\\\\overrightarrow{GM}$."
       ]
     },
     {
@@ -11383,17 +11417,18 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "quiz-10.9.3",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Nhận biết - Hệ thức trọng tâm và trung tuyến",
       "source": "SBT Toán 10 KNTT",
       "question": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Đẳng thức nào sau đây là ĐÚNG?",
       "options": [
-        "$\\vec{AG} = \\frac{2}{3}\\vec{AM}$",
-        "$\\vec{AG} = \\frac{1}{3}\\vec{AM}$",
-        "$\\vec{GA} = 2\\vec{GM}$",
-        "$\\vec{AM} = 3\\vec{AG}$"
+        "$\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM}$",
+        "$\\overrightarrow{AG} = \\frac{1}{3}\\overrightarrow{AM}$",
+        "$\\overrightarrow{GA} = 2\\overrightarrow{GM}$",
+        "$\\overrightarrow{AM} = 3\\overrightarrow{AG}$"
       ],
       "correctIndex": 0,
-      "explanation": "Trọng tâm $G$ nằm trên đoạn $AM$ sao cho $AG = \\frac{2}{3}AM$, hướng từ $A \\to G$ cùng hướng $A \\to M$ nên $\\vec{AG} = \\frac{2}{3}\\vec{AM}$."
+      "explanation": "Trọng tâm $G$ nằm trên đoạn $AM$ sao cho $AG = \\frac{2}{3}AM$, hướng từ $A \\to G$ cùng hướng $A \\to M$ nên $\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM}$."
     },
     {
       "id": "quiz-10.9.4",
@@ -11401,47 +11436,50 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "source": "SGK Toán 10 KNTT",
       "question": "Cho $I$ là trung điểm của đoạn thẳng $AB$. Với điểm $M$ bất kì, ta luôn có:",
       "options": [
-        "$\\vec{MA} + \\vec{MB} = 2\\vec{MI}$",
-        "$\\vec{MA} + \\vec{MB} = \\vec{MI}$",
-        "$\\vec{MI} = \\vec{MA} + \\vec{MB}$",
-        "$\\vec{MA} + \\vec{MB} = \\frac{1}{2}\\vec{MI}$"
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} = 2\\overrightarrow{MI}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} = \\overrightarrow{MI}$",
+        "$\\overrightarrow{MI} = \\overrightarrow{MA} + \\overrightarrow{MB}$",
+        "$\\overrightarrow{MA} + \\overrightarrow{MB} = \\frac{1}{2}\\overrightarrow{MI}$"
       ],
       "correctIndex": 0,
-      "explanation": "Hệ thức trung điểm: $\\vec{MA} + \\vec{MB} = 2\\vec{MI}$."
+      "explanation": "Hệ thức trung điểm: $\\overrightarrow{MA} + \\overrightarrow{MB} = 2\\overrightarrow{MI}$."
     },
     {
       "id": "quiz-10.9.5",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Thông hiểu - Trọng tâm G và đoạn GM",
       "source": "Đề kiểm tra định kì Toán 10",
       "question": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Đẳng thức nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{GA} = -2\\vec{GM}$",
-        "$\\vec{GA} = 2\\vec{GM}$",
-        "$\\vec{GM} = -2\\vec{GA}$",
-        "$\\vec{GA} = -\\frac{1}{2}\\vec{GM}$"
+        "$\\overrightarrow{GA} = -2\\overrightarrow{GM}$",
+        "$\\overrightarrow{GA} = 2\\overrightarrow{GM}$",
+        "$\\overrightarrow{GM} = -2\\overrightarrow{GA}$",
+        "$\\overrightarrow{GA} = -\\frac{1}{2}\\overrightarrow{GM}$"
       ],
       "correctIndex": 0,
-      "explanation": "$G$ nằm giữa $A$ và $M$, đoạn $GA = 2GM$, hai vectơ $\\vec{GA}$ và $\\vec{GM}$ ngược hướng nên $\\vec{GA} = -2\\vec{GM}$."
+      "explanation": "$G$ nằm giữa $A$ và $M$, đoạn $GA = 2GM$, hai vectơ $\\overrightarrow{GA}$ và $\\overrightarrow{GM}$ ngược hướng nên $\\overrightarrow{GA} = -2\\overrightarrow{GM}$."
     },
     {
       "id": "quiz-10.9.6",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Thông hiểu - Điểm chia đoạn thẳng theo tỉ số",
       "source": "SBT Toán 10 KNTT",
       "question": "Cho đoạn thẳng $AB$ và điểm $M$ nằm giữa $A, B$ sao cho $AM = 3MB$. Đẳng thức vectơ nào sau đây ĐÚNG?",
       "options": [
-        "$\\vec{AM} = \\frac{3}{4}\\vec{AB}$",
-        "$\\vec{AM} = 3\\vec{AB}$",
-        "$\\vec{AM} = \\frac{1}{3}\\vec{AB}$",
-        "$\\vec{AM} = -\\frac{3}{4}\\vec{AB}$"
+        "$\\overrightarrow{AM} = \\frac{3}{4}\\overrightarrow{AB}$",
+        "$\\overrightarrow{AM} = 3\\overrightarrow{AB}$",
+        "$\\overrightarrow{AM} = \\frac{1}{3}\\overrightarrow{AB}$",
+        "$\\overrightarrow{AM} = -\\frac{3}{4}\\overrightarrow{AB}$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $AB = AM + MB = 3MB + MB = 4MB \\implies AM = \\frac{3}{4}AB$. Do $\\vec{AM}$ và $\\vec{AB}$ cùng hướng nên $\\vec{AM} = \\frac{3}{4}\\vec{AB}$."
+      "explanation": "Ta có $AB = AM + MB = 3MB + MB = 4MB \\implies AM = \\frac{3}{4}AB$. Do $\\overrightarrow{AM}$ và $\\overrightarrow{AB}$ cùng hướng nên $\\overrightarrow{AM} = \\frac{3}{4}\\overrightarrow{AB}$."
     },
     {
       "id": "quiz-10.9.7",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Thông hiểu - Tìm số k biểu thị hai vectơ đối",
       "source": "Đề thi khảo sát Toán 10",
-      "question": "Cho đoạn thẳng $AB$ có trung điểm $I$. Số thực $k$ thỏa mãn $\\vec{IA} = k\\vec{AB}$ là:",
+      "question": "Cho đoạn thẳng $AB$ có trung điểm $I$. Số thực $k$ thỏa mãn $\\overrightarrow{IA} = k\\overrightarrow{AB}$ là:",
       "options": [
         "$-\\frac{1}{2}$",
         "$\\frac{1}{2}$",
@@ -11449,35 +11487,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$2$"
       ],
       "correctIndex": 0,
-      "explanation": "$IA = \\frac{1}{2}AB$, chiều từ $I \\to A$ ngược với $A \\to B$ nên $\\vec{IA} = -\\frac{1}{2}\\vec{AB} \\implies k = -\\frac{1}{2}$."
+      "explanation": "$IA = \\frac{1}{2}AB$, chiều từ $I \\to A$ ngược với $A \\to B$ nên $\\overrightarrow{IA} = -\\frac{1}{2}\\overrightarrow{AB} \\implies k = -\\frac{1}{2}$."
     },
     {
       "id": "quiz-10.9.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,140 190,140 260,40 120,40\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"116\" y2=\"46\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"220\" y2=\"94\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"225\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"235\" y=\"94\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M (Trung di?m BC)</text>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"198\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"40\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"38\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"120\" cy=\"40\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"106\" y=\"38\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Phân tích vectơ trong hình bình hành",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho hình bình hành $ABCD$. Gọi $M$ là trung điểm của $BC$. Phân tích vectơ $\\vec{AM}$ theo hai vectơ $\\vec{AB}$ và $\\vec{AD}$:",
+      "question": "Cho hình bình hành $ABCD$. Gọi $M$ là trung điểm của $BC$. Phân tích vectơ $\\overrightarrow{AM}$ theo hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AD}$:",
       "options": [
-        "$\\vec{AM} = \\vec{AB} + \\frac{1}{2}\\vec{AD}$",
-        "$\\vec{AM} = \\frac{1}{2}\\vec{AB} + \\vec{AD}$",
-        "$\\vec{AM} = \\vec{AB} + \\vec{AD}$",
-        "$\\vec{AM} = 2\\vec{AB} + \\vec{AD}$"
+        "$\\overrightarrow{AM} = \\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$",
+        "$\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB} + \\overrightarrow{AD}$",
+        "$\\overrightarrow{AM} = \\overrightarrow{AB} + \\overrightarrow{AD}$",
+        "$\\overrightarrow{AM} = 2\\overrightarrow{AB} + \\overrightarrow{AD}$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $\\vec{AM} = \\vec{AB} + \\vec{BM} = \\vec{AB} + \\frac{1}{2}\\vec{BC}$. Do $\\vec{BC} = \\vec{AD}$ nên $\\vec{AM} = \\vec{AB} + \\frac{1}{2}\\vec{AD}$."
+      "explanation": "Ta có $\\overrightarrow{AM} = \\overrightarrow{AB} + \\overrightarrow{BM} = \\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{BC}$. Do $\\overrightarrow{BC} = \\overrightarrow{AD}$ nên $\\overrightarrow{AM} = \\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$."
     },
     {
       "id": "quiz-10.9.9",
+      "svgDiagram": "<svg viewBox=\"0 0 320 130\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"30\" y1=\"65\" x2=\"290\" y2=\"65\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"154\" y2=\"65\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"254\" y2=\"65\" stroke=\"#fbbf24\" strokeWidth=\"2\" strokeDasharray=\"4 2\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"65\" r=\"4\" fill=\"#f8fafc\"/><text x=\"60\" y=\"90\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"160\" cy=\"65\" r=\"4\" fill=\"#38bdf8\"/><text x=\"160\" y=\"90\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"65\" r=\"4\" fill=\"#fbbf24\"/><text x=\"260\" y=\"90\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">C</text>\n  <text x=\"160\" y=\"45\" fill=\"#fbbf24\" fontSize=\"12\" textAnchor=\"middle\">AB c�ng phuong AC (AB = k AC)</text>\n</svg>",
       "badge": "Thông hiểu - Ba điểm thẳng hàng",
       "source": "Đề kiểm tra chuyên đề Vectơ",
       "question": "Điều kiện cần và đủ để ba điểm phân biệt $A, B, C$ thẳng hàng là tồn tại số thực $k$ sao cho:",
       "options": [
-        "$\\vec{AB} = k\\vec{AC}$",
-        "$|\\vec{AB}| = k|\\vec{AC}|$",
-        "$\\vec{AB} + \\vec{AC} = k\\vec{0}$",
-        "$\\vec{AB} = k\\vec{BC}$ với $k = 1$"
+        "$\\overrightarrow{AB} = k\\overrightarrow{AC}$",
+        "$|\\overrightarrow{AB}| = k|\\overrightarrow{AC}|$",
+        "$\\overrightarrow{AB} + \\overrightarrow{AC} = k\\vec{0}$",
+        "$\\overrightarrow{AB} = k\\overrightarrow{BC}$ với $k = 1$"
       ],
       "correctIndex": 0,
-      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\vec{AB}$ và $\\vec{AC}$ cùng phương, tức là $\\vec{AB} = k\\vec{AC}$."
+      "explanation": "Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ cùng phương, tức là $\\overrightarrow{AB} = k\\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.9.10",
@@ -11497,7 +11537,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "quiz-10.9.11",
       "badge": "Thông hiểu - Độ dài vectơ tích số",
       "source": "Đề thi học kì 1 Toán 10",
-      "question": "Cho tam giác đều $ABC$ cạnh bằng $4$. Độ dài của vectơ $\\vec{u} = 3\\vec{AB}$ bằng:",
+      "question": "Cho tam giác đều $ABC$ cạnh bằng $4$. Độ dài của vectơ $\\vec{u} = 3\\overrightarrow{AB}$ bằng:",
       "options": [
         "$12$",
         "$7$",
@@ -11505,13 +11545,14 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$9$"
       ],
       "correctIndex": 0,
-      "explanation": "$|\\vec{u}| = |3\\vec{AB}| = 3|\\vec{AB}| = 3 \\times 4 = 12$."
+      "explanation": "$|\\vec{u}| = |3\\overrightarrow{AB}| = 3|\\overrightarrow{AB}| = 3 \\times 4 = 12$."
     },
     {
       "id": "quiz-10.9.12",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Thông hiểu - Độ dài vectơ có hệ số âm",
       "source": "Bộ đề Toán 10 KNTT",
-      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a$. Độ dài của vectơ $\\vec{v} = -2\\vec{AC}$ bằng:",
+      "question": "Cho hình vuông $ABCD$ có cạnh bằng $a$. Độ dài của vectơ $\\vec{v} = -2\\overrightarrow{AC}$ bằng:",
       "options": [
         "$2a\\sqrt{2}$",
         "$-2a\\sqrt{2}$",
@@ -11519,27 +11560,29 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$4a$"
       ],
       "correctIndex": 0,
-      "explanation": "$|-2\\vec{AC}| = |-2| \\cdot |\\vec{AC}| = 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
+      "explanation": "$|-2\\overrightarrow{AC}| = |-2| \\cdot |\\overrightarrow{AC}| = 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
     },
     {
       "id": "quiz-10.9.13",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Vận dụng - Phân tích vectơ trọng tâm theo hai cạnh",
       "source": "SGK Toán 10 KNTT",
-      "question": "Cho tam giác $ABC$ có trọng tâm $G$. Phân tích vectơ $\\vec{AG}$ theo hai vectơ $\\vec{AB}$ và $\\vec{AC}$:",
+      "question": "Cho tam giác $ABC$ có trọng tâm $G$. Phân tích vectơ $\\overrightarrow{AG}$ theo hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$:",
       "options": [
-        "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$",
-        "$\\vec{AG} = \\frac{2}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$",
-        "$\\vec{AG} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC}$",
-        "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$"
+        "$\\overrightarrow{AG} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{1}{3}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AB} + \\frac{2}{3}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AG} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AG} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{2}{3}\\overrightarrow{AC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Gọi $M$ là trung điểm $BC$, ta có $\\vec{AM} = \\frac{1}{2}(\\vec{AB} + \\vec{AC})$. Vì $\\vec{AG} = \\frac{2}{3}\\vec{AM}$ nên $\\vec{AG} = \\frac{2}{3} \\cdot \\frac{1}{2}(\\vec{AB} + \\vec{AC}) = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$."
+      "explanation": "Gọi $M$ là trung điểm $BC$, ta có $\\overrightarrow{AM} = \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AC})$. Vì $\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM}$ nên $\\overrightarrow{AG} = \\frac{2}{3} \\cdot \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AC}) = \\frac{1}{3}\\overrightarrow{AB} + \\frac{1}{3}\\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.9.14",
+      "svgDiagram": "<svg viewBox=\"0 0 320 130\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"30\" y1=\"65\" x2=\"290\" y2=\"65\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"154\" y2=\"65\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"60\" y1=\"65\" x2=\"254\" y2=\"65\" stroke=\"#fbbf24\" strokeWidth=\"2\" strokeDasharray=\"4 2\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"65\" r=\"4\" fill=\"#f8fafc\"/><text x=\"60\" y=\"90\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"160\" cy=\"65\" r=\"4\" fill=\"#38bdf8\"/><text x=\"160\" y=\"90\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"260\" cy=\"65\" r=\"4\" fill=\"#fbbf24\"/><text x=\"260\" y=\"90\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">C</text>\n  <text x=\"160\" y=\"45\" fill=\"#fbbf24\" fontSize=\"12\" textAnchor=\"middle\">AB c�ng phuong AC (AB = k AC)</text>\n</svg>",
       "badge": "Thông hiểu - Tỉ số hai vectơ cùng phương",
       "source": "SBT Toán 10",
-      "question": "Cho ba điểm $A, B, C$ thẳng hàng thỏa mãn $\\vec{AB} = -3\\vec{AC}$. Khẳng định nào sau đây ĐÚNG?",
+      "question": "Cho ba điểm $A, B, C$ thẳng hàng thỏa mãn $\\overrightarrow{AB} = -3\\overrightarrow{AC}$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
         "$A$ nằm giữa $B$ và $C$, $AB = 3AC$.",
         "$C$ nằm giữa $A$ và $B$, $AB = 3AC$.",
@@ -11547,27 +11590,29 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$A$ nằm giữa $B$ và $C$, $AC = 3AB$."
       ],
       "correctIndex": 0,
-      "explanation": "Vì $k = -3 < 0$ nên hai vectơ $\\vec{AB}$ và $\\vec{AC}$ ngược hướng, suy ra điểm $A$ nằm giữa $B$ và $C$. Độ dài $AB = |-3|AC = 3AC$."
+      "explanation": "Vì $k = -3 < 0$ nên hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ ngược hướng, suy ra điểm $A$ nằm giữa $B$ và $C$. Độ dài $AB = |-3|AC = 3AC$."
     },
     {
       "id": "quiz-10.9.15",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <polygon points=\"110,87 210,87 160,150\" fill=\"#38bdf8\" fillOpacity=\"0.1\" stroke=\"#38bdf8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"110\" y1=\"87\" x2=\"204\" y2=\"87\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"60\" y1=\"150\" x2=\"154\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"150\" x2=\"254\" y2=\"150\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"110\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"96\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M</text>\n  <circle cx=\"210\" cy=\"87\" r=\"3\" fill=\"#fbbf24\"/><text x=\"218\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">N</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#fbbf24\"/><text x=\"160\" y=\"165\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">P</text>\n</svg>",
       "badge": "Thông hiểu - Phân tích vectơ trên cạnh tam giác",
       "source": "Đề khảo sát Toán 10",
-      "question": "Cho tam giác $ABC$. Lấy điểm $D$ trên cạnh $BC$ sao cho $BD = 2DC$. Phân tích vectơ $\\vec{AD}$ theo $\\vec{AB}$ và $\\vec{AC}$:",
+      "question": "Cho tam giác $ABC$. Lấy điểm $D$ trên cạnh $BC$ sao cho $BD = 2DC$. Phân tích vectơ $\\overrightarrow{AD}$ theo $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$:",
       "options": [
-        "$\\vec{AD} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$",
-        "$\\vec{AD} = \\frac{2}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC}$",
-        "$\\vec{AD} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{AC}$",
-        "$\\vec{AD} = \\vec{AB} + 2\\vec{AC}$"
+        "$\\overrightarrow{AD} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{2}{3}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AD} = \\frac{2}{3}\\overrightarrow{AB} + \\frac{1}{3}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AD} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$",
+        "$\\overrightarrow{AD} = \\overrightarrow{AB} + 2\\overrightarrow{AC}$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $\\vec{BD} = \\frac{2}{3}\\vec{BC} = \\frac{2}{3}(\\vec{AC} - \\vec{AB})$. Do đó $\\vec{AD} = \\vec{AB} + \\vec{BD} = \\vec{AB} + \\frac{2}{3}\\vec{AC} - \\frac{2}{3}\\vec{AB} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$."
+      "explanation": "Ta có $\\overrightarrow{BD} = \\frac{2}{3}\\overrightarrow{BC} = \\frac{2}{3}(\\overrightarrow{AC} - \\overrightarrow{AB})$. Do đó $\\overrightarrow{AD} = \\overrightarrow{AB} + \\overrightarrow{BD} = \\overrightarrow{AB} + \\frac{2}{3}\\overrightarrow{AC} - \\frac{2}{3}\\overrightarrow{AB} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{2}{3}\\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.9.16",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"60,140 60,35 255,140\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <rect x=\"60\" y=\"125\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"60\" y1=\"140\" x2=\"153\" y2=\"90\" stroke=\"#fbbf24\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"60\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"60\" cy=\"35\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"46\" y=\"32\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"255\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"264\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"157.5\" cy=\"87.5\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"168\" y=\"85\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M</text>\n  <text x=\"45\" y=\"90\" fill=\"#38bdf8\" fontSize=\"11\">c = 9</text>\n  <text x=\"155\" y=\"158\" fill=\"#34d399\" fontSize=\"11\">b = 12</text>\n  <text x=\"175\" y=\"110\" fill=\"#fbbf24\" fontSize=\"11\">a = 15</text>\n</svg>",
       "badge": "Vận dụng - Độ dài vectơ kết hợp",
       "source": "Đề thi HSG Toán 10",
-      "question": "Cho tam giác vuông cân $ABC$ tại $A$ có $AB = AC = 2$. Độ dài của vectơ $\\vec{u} = 2\\vec{AB} + \\vec{AC}$ bằng:",
+      "question": "Cho tam giác vuông cân $ABC$ tại $A$ có $AB = AC = 2$. Độ dài của vectơ $\\vec{u} = 2\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
       "options": [
         "$2\\sqrt{5}$",
         "$6$",
@@ -11581,7 +11626,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "quiz-10.9.17",
       "badge": "Thông hiểu - Đẳng thức điểm M",
       "source": "SBT Toán 10 KNTT",
-      "question": "Cho hai điểm $A, B$. Điểm $M$ thỏa mãn $\\vec{MA} + 2\\vec{MB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
+      "question": "Cho hai điểm $A, B$. Điểm $M$ thỏa mãn $\\overrightarrow{MA} + 2\\overrightarrow{MB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
         "$M$ nằm trên đoạn $AB$ sao cho $MA = 2MB$.",
         "$M$ nằm ngoài đoạn $AB$ sao cho $MA = 2MB$.",
@@ -11589,13 +11634,13 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$M$ nằm trên đoạn $AB$ sao cho $MB = 2MA$."
       ],
       "correctIndex": 0,
-      "explanation": "$\\vec{MA} + 2\\vec{MB} = \\vec{0} \\iff \\vec{MA} = -2\\vec{MB}$. Hai vectơ ngược hướng nên $M$ nằm giữa $A$ và $B$, độ dài $MA = 2MB$."
+      "explanation": "$\\overrightarrow{MA} + 2\\overrightarrow{MB} = \\vec{0} \\iff \\overrightarrow{MA} = -2\\overrightarrow{MB}$. Hai vectơ ngược hướng nên $M$ nằm giữa $A$ và $B$, độ dài $MA = 2MB$."
     },
     {
       "id": "quiz-10.9.18",
       "badge": "Vận dụng cao - Tìm k để ba điểm thẳng hàng",
       "source": "Bộ đề ôn thi Toán 10",
-      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $AB$, $N$ là điểm trên cạnh $AC$ sao cho $NC = 2NA$. Gọi $K$ là trung điểm của $MN$. Khi biểu diễn $\\vec{AK} = x\\vec{AB} + y\\vec{AC}$, cặp số $(x; y)$ là:",
+      "question": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $AB$, $N$ là điểm trên cạnh $AC$ sao cho $NC = 2NA$. Gọi $K$ là trung điểm của $MN$. Khi biểu diễn $\\overrightarrow{AK} = x\\overrightarrow{AB} + y\\overrightarrow{AC}$, cặp số $(x; y)$ là:",
       "options": [
         "$(\\frac{1}{4}; \\frac{1}{6})$",
         "$(\\frac{1}{2}; \\frac{1}{3})$",
@@ -11603,10 +11648,11 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "$(\\frac{1}{2}; \\frac{1}{6})$"
       ],
       "correctIndex": 0,
-      "explanation": "Ta có $\\vec{AM} = \\frac{1}{2}\\vec{AB}$, $\\vec{AN} = \\frac{1}{3}\\vec{AC}$. Vì $K$ là trung điểm $MN$ nên $\\vec{AK} = \\frac{1}{2}(\\vec{AM} + \\vec{AN}) = \\frac{1}{2}(\\frac{1}{2}\\vec{AB} + \\frac{1}{3}\\vec{AC}) = \\frac{1}{4}\\vec{AB} + \\frac{1}{6}\\vec{AC}$."
+      "explanation": "Ta có $\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB}$, $\\overrightarrow{AN} = \\frac{1}{3}\\overrightarrow{AC}$. Vì $K$ là trung điểm $MN$ nên $\\overrightarrow{AK} = \\frac{1}{2}(\\overrightarrow{AM} + \\overrightarrow{AN}) = \\frac{1}{2}(\\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{3}\\overrightarrow{AC}) = \\frac{1}{4}\\overrightarrow{AB} + \\frac{1}{6}\\overrightarrow{AC}$."
     },
     {
       "id": "quiz-10.9.19",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"50\" x2=\"144\" y2=\"50\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <text x=\"45\" y=\"42\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\">v0 (v?n t?c ban d?u)</text>\n  <line x1=\"50\" y1=\"100\" x2=\"264\" y2=\"100\" stroke=\"#fbbf24\" strokeWidth=\"3.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <text x=\"45\" y=\"92\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">v = k � v0 (v?n t?c sau khi tang t?c)</text>\n</svg>",
       "badge": "Vận dụng - Bài toán thực tế ô tô tăng tốc",
       "source": "Vật lý 10 & Vectơ thực tế",
       "question": "Một chiếc xe đang chạy thẳng đều với vận tốc $\\vec{v}_0$ có độ lớn $40\\text{ km/h}$. Người lái xe tăng tốc để vận tốc mới đạt $\\vec{v} = 1.8\\vec{v}_0$. Độ lớn của vận tốc mới là:",
@@ -11621,9 +11667,10 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "quiz-10.9.20",
+      "svgDiagram": "<svg viewBox=\"0 0 320 150\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"75\" x2=\"270\" y2=\"75\" stroke=\"#94a3b8\" strokeWidth=\"4\"/>\n  <polygon points=\"140,75 130,110 150,110\" fill=\"#fbbf24\"/>\n  <circle cx=\"140\" cy=\"75\" r=\"4\" fill=\"#fbbf24\"/>\n  <text x=\"140\" y=\"125\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">Kh?i t�m G</text>\n  <circle cx=\"60\" cy=\"60\" r=\"14\" fill=\"#38bdf8\"/><text x=\"60\" y=\"64\" fill=\"#0f172a\" fontSize=\"10\" fontWeight=\"bold\" textAnchor=\"middle\">m1</text>\n  <circle cx=\"250\" cy=\"62\" r=\"11\" fill=\"#34d399\"/><text x=\"250\" y=\"66\" fill=\"#0f172a\" fontSize=\"10\" fontWeight=\"bold\" textAnchor=\"middle\">m2</text>\n  <line x1=\"140\" y1=\"75\" x2=\"68\" y2=\"75\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"140\" y1=\"75\" x2=\"242\" y2=\"75\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <text x=\"100\" y=\"92\" fill=\"#38bdf8\" fontSize=\"11\">GA</text>\n  <text x=\"195\" y=\"92\" fill=\"#34d399\" fontSize=\"11\">GB</text>\n</svg>",
       "badge": "Vận dụng cao - Trọng tâm hệ hạt khối lượng",
       "source": "SGK Toán 10 KNTT Bài 9",
-      "question": "Hai chất điểm có khối lượng $m_1 = 2\\text{ kg}$ tại điểm $A$ và $m_2 = 3\\text{ kg}$ tại điểm $B$. Khối tâm (trọng tâm hệ) $G$ của hai chất điểm được định nghĩa bởi hệ thức $2\\vec{GA} + 3\\vec{GB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
+      "question": "Hai chất điểm có khối lượng $m_1 = 2\\text{ kg}$ tại điểm $A$ và $m_2 = 3\\text{ kg}$ tại điểm $B$. Khối tâm (trọng tâm hệ) $G$ của hai chất điểm được định nghĩa bởi hệ thức $2\\overrightarrow{GA} + 3\\overrightarrow{GB} = \\vec{0}$. Khẳng định nào sau đây ĐÚNG?",
       "options": [
         "Điểm $G$ nằm trên đoạn $AB$ và $GA = \\frac{3}{2}GB$.",
         "Điểm $G$ nằm ngoài đoạn $AB$ và $GA = \\frac{3}{2}GB$.",
@@ -11631,7 +11678,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "Điểm $G$ nằm trên đoạn $AB$ và $GB = \\frac{3}{2}GA$."
       ],
       "correctIndex": 0,
-      "explanation": "$2\\vec{GA} + 3\\vec{GB} = \\vec{0} \\iff \\vec{GA} = -\\frac{3}{2}\\vec{GB}$. Vì hệ số âm nên $G$ nằm giữa $A$ và $B$, độ dài $GA = \\frac{3}{2}GB$."
+      "explanation": "$2\\overrightarrow{GA} + 3\\overrightarrow{GB} = \\vec{0} \\iff \\overrightarrow{GA} = -\\frac{3}{2}\\overrightarrow{GB}$. Vì hệ số âm nên $G$ nằm giữa $A$ và $B$, độ dài $GA = \\frac{3}{2}GB$."
     }
   ],
   "trueFalseQuestions": [
@@ -11675,92 +11722,94 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AG} = \\frac{2}{3}\\vec{AM}$.",
+          "text": "$\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM}$.",
           "correctAnswer": true,
-          "explanation": "$G$ nằm trên $AM$ và $AG = \\frac{2}{3}AM$, cùng hướng nên $\\vec{AG} = \\frac{2}{3}\\vec{AM}$."
+          "explanation": "$G$ nằm trên $AM$ và $AG = \\frac{2}{3}AM$, cùng hướng nên $\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$.",
+          "text": "$\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0}$.",
           "correctAnswer": true,
           "explanation": "Tính chất trọng tâm tam giác."
         },
         {
           "id": "c",
-          "text": "$\\vec{GM} = -\\frac{1}{2}\\vec{GA}$.",
+          "text": "$\\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{GA}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{GM}$ và $\\vec{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\vec{GM} = -\\frac{1}{2}\\vec{GA}$."
+          "explanation": "$\\overrightarrow{GM}$ và $\\overrightarrow{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{GA}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{AB} + \\vec{AC} = 3\\vec{AG}$.",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = 3\\overrightarrow{AG}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AB} + \\vec{AC} = 2\\vec{AM} = 2 \\cdot \\frac{3}{2}\\vec{AG} = 3\\vec{AG}$."
+          "explanation": "$\\overrightarrow{AB} + \\overrightarrow{AC} = 2\\overrightarrow{AM} = 2 \\cdot \\frac{3}{2}\\overrightarrow{AG} = 3\\overrightarrow{AG}$."
         }
       ],
       "svgDiagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" class=\"w-full h-auto max-w-lg mx-auto select-none rounded-xl shadow-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-700/50 p-3\">\n  <polygon points=\"260,40 100,240 420,240\" fill=\"#1e1b4b\" fill-opacity=\"0.5\" stroke=\"#818cf8\" stroke-width=\"2\"/>\n  <!-- Trung điểm M của BC: (260, 240) -->\n  <!-- Trung tuyến AM từ (260, 40) đến (260, 240) -->\n  <line x1=\"260\" y1=\"40\" x2=\"260\" y2=\"240\" stroke=\"#fbbf24\" stroke-width=\"2\"/>\n  <!-- Trọng tâm G chia AM tỉ lệ 2:1 -> G = (260, 40 + 200*2/3) = (260, 173.3) -->\n  <circle cx=\"260\" cy=\"173.3\" r=\"5\" fill=\"#f43f5e\"/>\n  <text x=\"275\" y=\"178\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">G (Trọng tâm)</text>\n  <!-- Điểm đỉnh -->\n  <circle cx=\"260\" cy=\"40\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"255\" y=\"30\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <circle cx=\"100\" cy=\"240\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"80\" y=\"255\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <circle cx=\"420\" cy=\"240\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"430\" y=\"255\" fill=\"#38bdf8\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <circle cx=\"260\" cy=\"240\" r=\"4\" fill=\"#fbbf24\"/>\n  <text x=\"255\" y=\"260\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\">M</text>\n  <!-- Chú thích công thức -->\n  <text x=\"260\" y=\"290\" fill=\"#cbd5e1\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">vec(GA) + vec(GB) + vec(GC) = vec(0)   |   vec(AG) = (2/3)*vec(AM)</text>\n</svg>"
     },
     {
       "id": "tf-10.9.3",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Đúng / Sai 3 - Điểm chia đoạn thẳng theo tỉ lệ",
       "source": "Đề kiểm tra Toán 10",
       "prompt": "Cho đoạn thẳng $AB$ có độ dài $12\\text{ cm}$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 8\\text{ cm}$. Xét tính Đúng/Sai của các đẳng thức sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AM} = \\frac{2}{3}\\vec{AB}$.",
+          "text": "$\\overrightarrow{AM} = \\frac{2}{3}\\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "$\\frac{AM}{AB} = \\frac{8}{12} = \\frac{2}{3}$ và cùng hướng nên $\\vec{AM} = \\frac{2}{3}\\vec{AB}$."
+          "explanation": "$\\frac{AM}{AB} = \\frac{8}{12} = \\frac{2}{3}$ và cùng hướng nên $\\overrightarrow{AM} = \\frac{2}{3}\\overrightarrow{AB}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{MB} = -\\frac{1}{3}\\vec{AB}$.",
+          "text": "$\\overrightarrow{MB} = -\\frac{1}{3}\\overrightarrow{AB}$.",
           "correctAnswer": false,
-          "explanation": "$\\vec{MB}$ cùng hướng với $\\vec{AB}$ và $MB = 4 = \\frac{1}{3}AB$ nên $\\vec{MB} = \\frac{1}{3}\\vec{AB}$, không có dấu trừ."
+          "explanation": "$\\overrightarrow{MB}$ cùng hướng với $\\overrightarrow{AB}$ và $MB = 4 = \\frac{1}{3}AB$ nên $\\overrightarrow{MB} = \\frac{1}{3}\\overrightarrow{AB}$, không có dấu trừ."
         },
         {
           "id": "c",
-          "text": "$\\vec{MA} + 2\\vec{MB} = \\vec{0}$.",
+          "text": "$\\overrightarrow{MA} + 2\\overrightarrow{MB} = \\vec{0}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{MA}$ ngược hướng $\\vec{MB}$ và $MA = 2MB \\implies \\vec{MA} = -2\\vec{MB} \\iff \\vec{MA} + 2\\vec{MB} = \\vec{0}$."
+          "explanation": "$\\overrightarrow{MA}$ ngược hướng $\\overrightarrow{MB}$ và $MA = 2MB \\implies \\overrightarrow{MA} = -2\\overrightarrow{MB} \\iff \\overrightarrow{MA} + 2\\overrightarrow{MB} = \\vec{0}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{BA} = -\\frac{3}{2}\\vec{AM}$.",
+          "text": "$\\overrightarrow{BA} = -\\frac{3}{2}\\overrightarrow{AM}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{BA} = -\\vec{AB} = -\\frac{3}{2}\\vec{AM}$."
+          "explanation": "$\\overrightarrow{BA} = -\\overrightarrow{AB} = -\\frac{3}{2}\\overrightarrow{AM}$."
         }
       ]
     },
     {
       "id": "tf-10.9.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"50,140 190,140 260,40 120,40\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"116\" y2=\"46\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <line x1=\"50\" y1=\"140\" x2=\"220\" y2=\"94\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"225\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"235\" y=\"94\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">M (Trung di?m BC)</text>\n  <circle cx=\"50\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"36\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"190\" cy=\"140\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"198\" y=\"152\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"40\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"38\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"120\" cy=\"40\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"106\" y=\"38\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Đúng / Sai 4 - Phân tích vectơ trong hình bình hành",
       "source": "SGK Toán 10 KNTT",
       "prompt": "Cho hình bình hành $ABCD$. Gọi $I$ là trung điểm của $CD$. Xét tính Đúng/Sai của các phép phân tích vectơ sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{AI} = \\vec{AD} + \\frac{1}{2}\\vec{AB}$.",
+          "text": "$\\overrightarrow{AI} = \\overrightarrow{AD} + \\frac{1}{2}\\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{AI} = \\vec{AD} + \\vec{DI} = \\vec{AD} + \\frac{1}{2}\\vec{DC} = \\vec{AD} + \\frac{1}{2}\\vec{AB}$."
+          "explanation": "$\\overrightarrow{AI} = \\overrightarrow{AD} + \\overrightarrow{DI} = \\overrightarrow{AD} + \\frac{1}{2}\\overrightarrow{DC} = \\overrightarrow{AD} + \\frac{1}{2}\\overrightarrow{AB}$."
         },
         {
           "id": "b",
-          "text": "$\\vec{AC} = \\vec{AB} + \\vec{AD}$.",
+          "text": "$\\overrightarrow{AC} = \\overrightarrow{AB} + \\overrightarrow{AD}$.",
           "correctAnswer": true,
           "explanation": "Quy tắc hình bình hành."
         },
         {
           "id": "c",
-          "text": "$\\vec{BD} = \\vec{AD} - \\vec{AB}$.",
+          "text": "$\\overrightarrow{BD} = \\overrightarrow{AD} - \\overrightarrow{AB}$.",
           "correctAnswer": true,
-          "explanation": "Quy tắc trừ: $\\vec{AD} - \\vec{AB} = \\vec{BD}$."
+          "explanation": "Quy tắc trừ: $\\overrightarrow{AD} - \\overrightarrow{AB} = \\overrightarrow{BD}$."
         },
         {
           "id": "d",
-          "text": "$\\vec{AI} = \\frac{1}{2}\\vec{AC} + \\frac{1}{2}\\vec{AD}$.",
+          "text": "$\\overrightarrow{AI} = \\frac{1}{2}\\overrightarrow{AC} + \\frac{1}{2}\\overrightarrow{AD}$.",
           "correctAnswer": true,
-          "explanation": "Vì $I$ là trung điểm $CD$ nên $\\vec{AI} = \\frac{1}{2}(\\vec{AC} + \\vec{AD})$."
+          "explanation": "Vì $I$ là trung điểm $CD$ nên $\\overrightarrow{AI} = \\frac{1}{2}(\\overrightarrow{AC} + \\overrightarrow{AD})$."
         }
       ]
     },
@@ -11768,25 +11817,25 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "tf-10.9.5",
       "badge": "Đúng / Sai 5 - Ba điểm thẳng hàng",
       "source": "Đề thi HSG Toán 10",
-      "prompt": "Cho tam giác $ABC$. Lấy các điểm $M, N$ sao cho $\\vec{AM} = 3\\vec{AB}$ và $\\vec{AN} = 3\\vec{AC}$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "prompt": "Cho tam giác $ABC$. Lấy các điểm $M, N$ sao cho $\\overrightarrow{AM} = 3\\overrightarrow{AB}$ và $\\overrightarrow{AN} = 3\\overrightarrow{AC}$. Xét tính Đúng/Sai của các khẳng định sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$\\vec{MN} = 3\\vec{BC}$.",
+          "text": "$\\overrightarrow{MN} = 3\\overrightarrow{BC}$.",
           "correctAnswer": true,
-          "explanation": "$\\vec{MN} = \\vec{AN} - \\vec{AM} = 3\\vec{AC} - 3\\vec{AB} = 3(\\vec{AC} - \\vec{AB}) = 3\\vec{BC}$."
+          "explanation": "$\\overrightarrow{MN} = \\overrightarrow{AN} - \\overrightarrow{AM} = 3\\overrightarrow{AC} - 3\\overrightarrow{AB} = 3(\\overrightarrow{AC} - \\overrightarrow{AB}) = 3\\overrightarrow{BC}$."
         },
         {
           "id": "b",
           "text": "Hai đường thẳng $MN$ và $BC$ song song với nhau.",
           "correctAnswer": true,
-          "explanation": "Vì $\\vec{MN} = 3\\vec{BC}$ và $M \\notin BC$ nên $MN // BC$."
+          "explanation": "Vì $\\overrightarrow{MN} = 3\\overrightarrow{BC}$ và $M \\notin BC$ nên $MN // BC$."
         },
         {
           "id": "c",
           "text": "Độ dài đoạn thẳng $MN$ gấp 3 lần độ dài đoạn thẳng $BC$.",
           "correctAnswer": true,
-          "explanation": "$MN = |3\\vec{BC}| = 3BC$."
+          "explanation": "$MN = |3\\overrightarrow{BC}| = 3BC$."
         },
         {
           "id": "d",
@@ -11800,23 +11849,23 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "tf-10.9.6",
       "badge": "Đúng / Sai 6 - Biểu thị vectơ tâm tỉ cự",
       "source": "SBT Toán 10 KNTT",
-      "prompt": "Cho tam giác $ABC$. Gọi $I$ là điểm thỏa mãn $\\vec{IA} + 2\\vec{IB} + 3\\vec{IC} = \\vec{0}$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "prompt": "Cho tam giác $ABC$. Gọi $I$ là điểm thỏa mãn $\\overrightarrow{IA} + 2\\overrightarrow{IB} + 3\\overrightarrow{IC} = \\vec{0}$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "Với mọi điểm $M$, ta có $\\vec{MA} + 2\\vec{MB} + 3\\vec{MC} = 6\\vec{MI}$.",
+          "text": "Với mọi điểm $M$, ta có $\\overrightarrow{MA} + 2\\overrightarrow{MB} + 3\\overrightarrow{MC} = 6\\overrightarrow{MI}$.",
           "correctAnswer": true,
-          "explanation": "Chèn điểm $I$: $\\vec{MI} + \\vec{IA} + 2(\\vec{MI} + \\vec{IB}) + 3(\\vec{MI} + \\vec{IC}) = 6\\vec{MI} + (\\vec{IA} + 2\\vec{IB} + 3\\vec{IC}) = 6\\vec{MI}$."
+          "explanation": "Chèn điểm $I$: $\\overrightarrow{MI} + \\overrightarrow{IA} + 2(\\overrightarrow{MI} + \\overrightarrow{IB}) + 3(\\overrightarrow{MI} + \\overrightarrow{IC}) = 6\\overrightarrow{MI} + (\\overrightarrow{IA} + 2\\overrightarrow{IB} + 3\\overrightarrow{IC}) = 6\\overrightarrow{MI}$."
         },
         {
           "id": "b",
           "text": "Điểm $I$ là duy nhất xác định.",
           "correctAnswer": true,
-          "explanation": "Với gốc $A$, $6\\vec{AI} = 2\\vec{AB} + 3\\vec{AC} \\implies \\vec{AI} = \\frac{1}{3}\\vec{AB} + \\frac{1}{2}\\vec{AC}$, điểm $I$ xác định duy nhất."
+          "explanation": "Với gốc $A$, $6\\overrightarrow{AI} = 2\\overrightarrow{AB} + 3\\overrightarrow{AC} \\implies \\overrightarrow{AI} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$, điểm $I$ xác định duy nhất."
         },
         {
           "id": "c",
-          "text": "$\\vec{AI} = \\frac{1}{3}\\vec{AB} + \\frac{1}{2}\\vec{AC}$.",
+          "text": "$\\overrightarrow{AI} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$.",
           "correctAnswer": true,
           "explanation": "Đúng theo chứng minh trên."
         },
@@ -11830,38 +11879,40 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "tf-10.9.7",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Đúng / Sai 7 - Độ dài vectơ hình học",
       "source": "Đề kiểm tra định kì Toán 10",
       "prompt": "Cho hình vuông $ABCD$ cạnh bằng $a$, tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
       "subItems": [
         {
           "id": "a",
-          "text": "$|2\\vec{AB} + 2\\vec{AD}| = 2a\\sqrt{2}$.",
+          "text": "$|2\\overrightarrow{AB} + 2\\overrightarrow{AD}| = 2a\\sqrt{2}$.",
           "correctAnswer": true,
-          "explanation": "$2(\\vec{AB} + \\vec{AD}) = 2\\vec{AC} \\implies 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
+          "explanation": "$2(\\overrightarrow{AB} + \\overrightarrow{AD}) = 2\\overrightarrow{AC} \\implies 2 \\cdot a\\sqrt{2} = 2a\\sqrt{2}$."
         },
         {
           "id": "b",
-          "text": "$|\\frac{1}{2}\\vec{AC}| = \\frac{a\\sqrt{2}}{2}$.",
+          "text": "$|\\frac{1}{2}\\overrightarrow{AC}| = \\frac{a\\sqrt{2}}{2}$.",
           "correctAnswer": true,
-          "explanation": "$|\\vec{OA}| = \\frac{1}{2}AC = \\frac{a\\sqrt{2}}{2}$."
+          "explanation": "$|\\overrightarrow{OA}| = \\frac{1}{2}AC = \\frac{a\\sqrt{2}}{2}$."
         },
         {
           "id": "c",
-          "text": "$|-3\\vec{AB}| = 3a$.",
+          "text": "$|-3\\overrightarrow{AB}| = 3a$.",
           "correctAnswer": true,
-          "explanation": "$|-3| \\cdot |\\vec{AB}| = 3a$."
+          "explanation": "$|-3| \\cdot |\\overrightarrow{AB}| = 3a$."
         },
         {
           "id": "d",
-          "text": "$|2\\vec{AB} - 2\\vec{AD}| = 0$.",
+          "text": "$|2\\overrightarrow{AB} - 2\\overrightarrow{AD}| = 0$.",
           "correctAnswer": false,
-          "explanation": "$2(\\vec{AB} - \\vec{AD}) = 2\\vec{DB} \\implies 2a\\sqrt{2} \\ne 0$."
+          "explanation": "$2(\\overrightarrow{AB} - \\overrightarrow{AD}) = 2\\overrightarrow{DB} \\implies 2a\\sqrt{2} \\ne 0$."
         }
       ]
     },
     {
       "id": "tf-10.9.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"50\" x2=\"144\" y2=\"50\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <text x=\"45\" y=\"42\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\">v0 (v?n t?c ban d?u)</text>\n  <line x1=\"50\" y1=\"100\" x2=\"264\" y2=\"100\" stroke=\"#fbbf24\" strokeWidth=\"3.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <text x=\"45\" y=\"92\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">v = k � v0 (v?n t?c sau khi tang t?c)</text>\n</svg>",
       "badge": "Đúng / Sai 8 - Vận tốc biến đổi trong chuyển động",
       "source": "Ứng dụng Vật lý và Thực tế",
       "prompt": "Một chiếc ca nô đang chạy với vectơ vận tốc ban đầu $\\vec{v}_0$ có độ lớn $15\\text{ km/h}$ theo hướng Đông. Xét tính Đúng/Sai của các tình huống sau:",
@@ -11898,67 +11949,71 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "sa-10.9.1",
       "badge": "Trả lời ngắn 1 - Độ dài tích vectơ",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = -4\\vec{AB}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = -4\\overrightarrow{AB}$.",
       "correctAnswer": "20",
       "acceptableAnswers": [
         "20"
       ],
-      "explanation": "$|-4\\vec{AB}| = |-4| \\cdot |\\vec{AB}| = 4 \\times 5 = 20$."
+      "explanation": "$|-4\\overrightarrow{AB}| = |-4| \\cdot |\\overrightarrow{AB}| = 4 \\times 5 = 20$."
     },
     {
       "id": "sa-10.9.2",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Trả lời ngắn 2 - Tỉ số k của trọng tâm",
       "source": "SBT Toán 10 KNTT",
-      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\vec{GA} = k\\vec{GM}$. Tìm giá trị của số thực $k$.",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\overrightarrow{GA} = k\\overrightarrow{GM}$. Tìm giá trị của số thực $k$.",
       "correctAnswer": "-2",
       "acceptableAnswers": [
         "-2"
       ],
-      "explanation": "Vì $\\vec{GA}$ và $\\vec{GM}$ ngược hướng và $GA = 2GM$ nên $\\vec{GA} = -2\\vec{GM} \\implies k = -2$."
+      "explanation": "Vì $\\overrightarrow{GA}$ và $\\overrightarrow{GM}$ ngược hướng và $GA = 2GM$ nên $\\overrightarrow{GA} = -2\\overrightarrow{GM} \\implies k = -2$."
     },
     {
       "id": "sa-10.9.3",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Trả lời ngắn 3 - Tỉ số k của trung tuyến",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\vec{AG} = k\\vec{AM}$. Tìm giá trị của số thực $k$ (viết dưới dạng phân số tối giản a/b).",
+      "prompt": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Biết $\\overrightarrow{AG} = k\\overrightarrow{AM}$. Tìm giá trị của số thực $k$ (viết dưới dạng phân số tối giản a/b).",
       "correctAnswer": "2/3",
       "acceptableAnswers": [
         "2/3",
         "0.67"
       ],
-      "explanation": "$\\vec{AG} = \\frac{2}{3}\\vec{AM} \\implies k = \\frac{2}{3}$."
+      "explanation": "$\\overrightarrow{AG} = \\frac{2}{3}\\overrightarrow{AM} \\implies k = \\frac{2}{3}$."
     },
     {
       "id": "sa-10.9.4",
+      "svgDiagram": "<svg viewBox=\"0 0 320 175\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <rect x=\"95\" y=\"25\" width=\"130\" height=\"130\" fill=\"#1e293b\" fillOpacity=\"0.5\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"220\" y2=\"30\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <line x1=\"95\" y1=\"25\" x2=\"220\" y2=\"150\" stroke=\"#f43f5e\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"82\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">O</text>\n  <line x1=\"95\" y1=\"155\" x2=\"219\" y2=\"155\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"95\" y1=\"155\" x2=\"95\" y2=\"31\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <circle cx=\"95\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">A</text>\n  <circle cx=\"225\" cy=\"155\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"165\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"225\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"235\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"95\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"82\" y=\"23\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">D</text>\n</svg>",
       "badge": "Trả lời ngắn 4 - Độ dài vectơ đường chéo",
       "source": "Bộ đề Toán 10",
-      "prompt": "Cho hình vuông $ABCD$ cạnh $3$. Tính độ dài của vectơ $\\vec{u} = 2\\vec{AB} + 2\\vec{AD}$ (làm tròn đến hàng phần mười).",
+      "prompt": "Cho hình vuông $ABCD$ cạnh $3$. Tính độ dài của vectơ $\\vec{u} = 2\\overrightarrow{AB} + 2\\overrightarrow{AD}$ (làm tròn đến hàng phần mười).",
       "correctAnswer": "8.5",
       "acceptableAnswers": [
         "8.5",
         "8,5",
         "6*sqrt(2)"
       ],
-      "explanation": "$2(\\vec{AB} + \\vec{AD}) = 2\\vec{AC} \\implies 2 \\times 3\\sqrt{2} = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
+      "explanation": "$2(\\overrightarrow{AB} + \\overrightarrow{AD}) = 2\\overrightarrow{AC} \\implies 2 \\times 3\\sqrt{2} = 6\\sqrt{2} \\approx 8.485 \\approx 8.5$."
     },
     {
       "id": "sa-10.9.5",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Trả lời ngắn 5 - Tìm số k trong đẳng thức vectơ",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 2$. Biết $\\vec{MA} = k\\vec{MB}$. Tìm giá trị của số thực $k$.",
+      "prompt": "Cho đoạn thẳng $AB = 10$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 2$. Biết $\\overrightarrow{MA} = k\\overrightarrow{MB}$. Tìm giá trị của số thực $k$.",
       "correctAnswer": "-0.25",
       "acceptableAnswers": [
         "-0.25",
         "-1/4",
         "-0,25"
       ],
-      "explanation": "$MB = 10 - 2 = 8$. Vì $M$ nằm giữa $A$ và $B$ nên $\\vec{MA}$ ngược hướng $\\vec{MB}$. Tỉ số độ dài $\\frac{MA}{MB} = \\frac{2}{8} = \\frac{1}{4} \\implies \\vec{MA} = -\\frac{1}{4}\\vec{MB} \\implies k = -0.25$."
+      "explanation": "$MB = 10 - 2 = 8$. Vì $M$ nằm giữa $A$ và $B$ nên $\\overrightarrow{MA}$ ngược hướng $\\overrightarrow{MB}$. Tỉ số độ dài $\\frac{MA}{MB} = \\frac{2}{8} = \\frac{1}{4} \\implies \\overrightarrow{MA} = -\\frac{1}{4}\\overrightarrow{MB} \\implies k = -0.25$."
     },
     {
       "id": "sa-10.9.6",
       "badge": "Trả lời ngắn 6 - Độ dài vectơ tam giác vuông",
       "source": "Đề thi học kì 1 Toán 10",
-      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3, AC = 4$. Tính độ dài của vectơ $\\vec{u} = 2\\vec{AB} + \\frac{3}{2}\\vec{AC}$.",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3, AC = 4$. Tính độ dài của vectơ $\\vec{u} = 2\\overrightarrow{AB} + \\frac{3}{2}\\overrightarrow{AC}$.",
       "correctAnswer": "8.5",
       "acceptableAnswers": [
         "8.5",
@@ -11969,32 +12024,35 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "sa-10.9.7",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 60,150 260,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" strokeDasharray=\"3 3\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"102\" stroke=\"#fbbf24\" strokeWidth=\"3\" markerEnd=\"url(#mArrAmber)\"/>\n  <circle cx=\"160\" cy=\"108\" r=\"4\" fill=\"#fbbf24\"/><text x=\"175\" y=\"112\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\">G (Tr?ng t�m)</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#94a3b8\"/><text x=\"160\" y=\"166\" fill=\"#94a3b8\" fontSize=\"12\" textAnchor=\"middle\">M</text>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"48\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"260\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"268\" y=\"158\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <text x=\"70\" y=\"70\" fill=\"#fbbf24\" fontSize=\"11\">AG = (2/3)AM</text>\n</svg>",
       "badge": "Trả lời ngắn 7 - Tìm hệ số phân tích vectơ",
       "source": "SBT Toán 10",
-      "prompt": "Cho tam giác $ABC$ có trọng tâm $G$. Biểu diễn $\\vec{AG} = x\\vec{AB} + y\\vec{AC}$. Tính giá trị của tổng $S = x + y$ (viết dưới dạng phân số tối giản a/b).",
+      "prompt": "Cho tam giác $ABC$ có trọng tâm $G$. Biểu diễn $\\overrightarrow{AG} = x\\overrightarrow{AB} + y\\overrightarrow{AC}$. Tính giá trị của tổng $S = x + y$ (viết dưới dạng phân số tối giản a/b).",
       "correctAnswer": "2/3",
       "acceptableAnswers": [
         "2/3",
         "0.67"
       ],
-      "explanation": "$\\vec{AG} = \\frac{1}{3}\\vec{AB} + \\frac{1}{3}\\vec{AC} \\implies x = \\frac{1}{3}, y = \\frac{1}{3} \\implies S = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}$."
+      "explanation": "$\\overrightarrow{AG} = \\frac{1}{3}\\overrightarrow{AB} + \\frac{1}{3}\\overrightarrow{AC} \\implies x = \\frac{1}{3}, y = \\frac{1}{3} \\implies S = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}$."
     },
     {
       "id": "sa-10.9.8",
+      "svgDiagram": "<svg viewBox=\"0 0 320 180\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <polygon points=\"160,25 70,150 250,150\" fill=\"#1e293b\" fillOpacity=\"0.4\" stroke=\"#475569\" strokeWidth=\"1.5\"/>\n  <line x1=\"160\" y1=\"25\" x2=\"160\" y2=\"144\" stroke=\"#fbbf24\" strokeWidth=\"2\" markerEnd=\"url(#mArrAmber)\"/>\n  <rect x=\"160\" y=\"140\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#94a3b8\" strokeWidth=\"1\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"154\" y2=\"29\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <circle cx=\"160\" cy=\"25\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"160\" y=\"17\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"58\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">B</text>\n  <circle cx=\"250\" cy=\"150\" r=\"3.5\" fill=\"#f8fafc\"/><text x=\"258\" y=\"160\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\">C</text>\n  <circle cx=\"160\" cy=\"150\" r=\"3.5\" fill=\"#fbbf24\"/><text x=\"160\" y=\"168\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">H</text>\n</svg>",
       "badge": "Trả lời ngắn 8 - Độ dài vectơ tam giác đều",
       "source": "Đề kiểm tra Toán 10",
-      "prompt": "Cho tam giác đều $ABC$ cạnh $2\\sqrt{3}$. Gọi $M$ là trung điểm $BC$. Tính độ dài vectơ $2\\vec{AM}$.",
+      "prompt": "Cho tam giác đều $ABC$ cạnh $2\\sqrt{3}$. Gọi $M$ là trung điểm $BC$. Tính độ dài vectơ $2\\overrightarrow{AM}$.",
       "correctAnswer": "6",
       "acceptableAnswers": [
         "6"
       ],
-      "explanation": "$AM = \\frac{2\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3 \\implies |2\\vec{AM}| = 2 \\times 3 = 6$."
+      "explanation": "$AM = \\frac{2\\sqrt{3} \\cdot \\sqrt{3}}{2} = 3 \\implies |2\\overrightarrow{AM}| = 2 \\times 3 = 6$."
     },
     {
       "id": "sa-10.9.9",
+      "svgDiagram": "<svg viewBox=\"0 0 320 150\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"75\" x2=\"270\" y2=\"75\" stroke=\"#94a3b8\" strokeWidth=\"4\"/>\n  <polygon points=\"140,75 130,110 150,110\" fill=\"#fbbf24\"/>\n  <circle cx=\"140\" cy=\"75\" r=\"4\" fill=\"#fbbf24\"/>\n  <text x=\"140\" y=\"125\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">Kh?i t�m G</text>\n  <circle cx=\"60\" cy=\"60\" r=\"14\" fill=\"#38bdf8\"/><text x=\"60\" y=\"64\" fill=\"#0f172a\" fontSize=\"10\" fontWeight=\"bold\" textAnchor=\"middle\">m1</text>\n  <circle cx=\"250\" cy=\"62\" r=\"11\" fill=\"#34d399\"/><text x=\"250\" y=\"66\" fill=\"#0f172a\" fontSize=\"10\" fontWeight=\"bold\" textAnchor=\"middle\">m2</text>\n  <line x1=\"140\" y1=\"75\" x2=\"68\" y2=\"75\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"140\" y1=\"75\" x2=\"242\" y2=\"75\" stroke=\"#34d399\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrEmerald)\"/>\n  <text x=\"100\" y=\"92\" fill=\"#38bdf8\" fontSize=\"11\">GA</text>\n  <text x=\"195\" y=\"92\" fill=\"#34d399\" fontSize=\"11\">GB</text>\n</svg>",
       "badge": "Trả lời ngắn 9 - Khối tâm hai chất điểm",
       "source": "Ứng dụng Vật lý",
-      "prompt": "Hai vật nặng có khối lượng $m_1 = 3\\text{ kg}$ đặt tại $A$ và $m_2 = 1\\text{ kg}$ đặt tại $B$ cách nhau $12\\text{ cm}$. Khối tâm $G$ thỏa mãn $3\\vec{GA} + \\vec{GB} = \\vec{0}$. Tính khoảng cách $GA$ (theo cm).",
+      "prompt": "Hai vật nặng có khối lượng $m_1 = 3\\text{ kg}$ đặt tại $A$ và $m_2 = 1\\text{ kg}$ đặt tại $B$ cách nhau $12\\text{ cm}$. Khối tâm $G$ thỏa mãn $3\\overrightarrow{GA} + \\overrightarrow{GB} = \\vec{0}$. Tính khoảng cách $GA$ (theo cm).",
       "correctAnswer": "3",
       "acceptableAnswers": [
         "3",
@@ -12004,19 +12062,21 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "sa-10.9.10",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#475569\" strokeWidth=\"2\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"46\" y2=\"70\" stroke=\"#38bdf8\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrCyan)\"/>\n  <line x1=\"160\" y1=\"70\" x2=\"274\" y2=\"70\" stroke=\"#f43f5e\" strokeWidth=\"2.5\" markerEnd=\"url(#mArrRose)\"/>\n  <circle cx=\"40\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"40\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">A</text>\n  <circle cx=\"280\" cy=\"70\" r=\"4\" fill=\"#f8fafc\"/><text x=\"280\" y=\"95\" fill=\"#f8fafc\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">B</text>\n  <circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#fbbf24\"/><text x=\"160\" y=\"55\" fill=\"#fbbf24\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\">I (Trung di?m)</text>\n  <text x=\"100\" y=\"45\" fill=\"#38bdf8\" fontSize=\"11\" textAnchor=\"middle\">vecto IA</text>\n  <text x=\"220\" y=\"45\" fill=\"#f43f5e\" fontSize=\"11\" textAnchor=\"middle\">vecto IB</text>\n</svg>",
       "badge": "Trả lời ngắn 10 - Tỉ số k của điểm thẳng hàng",
       "source": "SGK Toán 10 KNTT",
-      "prompt": "Cho tam giác $ABC$. Điểm $N$ nằm trên cạnh $AC$ sao cho $AN = 3NC$. Biết $\\vec{AN} = k\\vec{AC}$. Tìm $k$.",
+      "prompt": "Cho tam giác $ABC$. Điểm $N$ nằm trên cạnh $AC$ sao cho $AN = 3NC$. Biết $\\overrightarrow{AN} = k\\overrightarrow{AC}$. Tìm $k$.",
       "correctAnswer": "0.75",
       "acceptableAnswers": [
         "0.75",
         "3/4",
         "0,75"
       ],
-      "explanation": "$AC = AN + NC = 3NC + NC = 4NC \\implies AN = \\frac{3}{4}AC \\implies \\vec{AN} = \\frac{3}{4}\\vec{AC} \\implies k = 0.75$."
+      "explanation": "$AC = AN + NC = 3NC + NC = 4NC \\implies AN = \\frac{3}{4}AC \\implies \\overrightarrow{AN} = \\frac{3}{4}\\overrightarrow{AC} \\implies k = 0.75$."
     },
     {
       "id": "sa-10.9.11",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"50\" x2=\"144\" y2=\"50\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <text x=\"45\" y=\"42\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\">v0 (v?n t?c ban d?u)</text>\n  <line x1=\"50\" y1=\"100\" x2=\"264\" y2=\"100\" stroke=\"#fbbf24\" strokeWidth=\"3.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <text x=\"45\" y=\"92\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">v = k � v0 (v?n t?c sau khi tang t?c)</text>\n</svg>",
       "badge": "Trả lời ngắn 11 - Vận tốc xe máy sau khi tăng tốc",
       "source": "Bài toán thực tế Vectơ",
       "prompt": "Một chiếc xe máy đang đi với vận tốc $36\\text{ km/h}$. Người lái vặn ga tăng tốc theo hướng cũ với gia tốc đều sao cho vận tốc mới là $\\vec{v} = 1.5\\vec{v}_0$. Tính tốc độ mới của xe máy (theo km/h).",
@@ -12029,6 +12089,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     },
     {
       "id": "sa-10.9.12",
+      "svgDiagram": "<svg viewBox=\"0 0 320 140\" className=\"w-full max-w-md mx-auto rounded-xl bg-slate-900/80 p-2 shadow-inner border border-slate-700/50\">\n\n  <defs>\n    <marker id=\"mArrCyan\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#38bdf8\"/>\n    </marker>\n    <marker id=\"mArrEmerald\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#34d399\"/>\n    </marker>\n    <marker id=\"mArrAmber\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"mArrRose\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#f43f5e\"/>\n    </marker>\n    <marker id=\"mArrPurple\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1 L 10 5 L 0 9 z\" fill=\"#c084fc\"/>\n    </marker>\n  </defs>\n  <line x1=\"50\" y1=\"50\" x2=\"144\" y2=\"50\" stroke=\"#38bdf8\" strokeWidth=\"3\" markerEnd=\"url(#mArrCyan)\"/>\n  <text x=\"45\" y=\"42\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\">v0 (v?n t?c ban d?u)</text>\n  <line x1=\"50\" y1=\"100\" x2=\"264\" y2=\"100\" stroke=\"#fbbf24\" strokeWidth=\"3.5\" markerEnd=\"url(#mArrAmber)\"/>\n  <text x=\"45\" y=\"92\" fill=\"#fbbf24\" fontSize=\"12\" fontWeight=\"bold\">v = k � v0 (v?n t?c sau khi tang t?c)</text>\n</svg>",
       "badge": "Trả lời ngắn 12 - Lực kéo tác dụng lên xe",
       "source": "Toán học và Đời sống",
       "prompt": "Một động cơ điện tác dụng một lực kéo $\\vec{F}_0$ có độ lớn $250\\text{ N}$. Khi chuyển sang chế độ tăng cường (turbo), lực kéo đạt $\\vec{F} = 2.4\\vec{F}_0$. Tính độ lớn của lực kéo mới (theo Niutơn).",

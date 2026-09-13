@@ -20,7 +20,8 @@ export function MathFormula({ math, block = false, className, copyable = false }
   useEffect(() => {
     if (containerRef.current) {
       try {
-        katex.render(math, containerRef.current, {
+        const normalized = math ? math.replace(/\\vec\{([A-Z][A-Z0-9']{1,})\}/g, (_, points) => `\\overrightarrow{${points}}`) : "";
+        katex.render(normalized, containerRef.current, {
           displayMode: block,
           throwOnError: false,
           strict: false,

@@ -207,7 +207,7 @@ export default function MathChatBox() {
                     Trợ Lý Vina
                   </h3>
                   <span className="px-1.5 py-0.2 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[9px] font-black uppercase">
-                    {geminiKey ? "✨ Gemini 2.0 Flash" : "📚 SGK VinaMath"}
+                    {geminiKey ? "✨ Trí Tuệ AI" : "📚 SGK VinaMath"}
                   </span>
                 </div>
                 <p className="text-[10px] text-slate-300 flex items-center gap-1">
@@ -293,7 +293,7 @@ export default function MathChatBox() {
                 </button>
               </div>
               <p className="text-[10px] text-slate-400">
-                Key được lưu an toàn trên trình duyệt và tự động kích hoạt trí tuệ nhân tạo Gemini 1.5 Flash.
+                Key được lưu an toàn trên trình duyệt và tự động kích hoạt trí tuệ nhân tạo AI nâng cao.
               </p>
             </div>
           )}
@@ -440,9 +440,6 @@ export default function MathChatBox() {
           </div>
           <span className="text-xs sm:text-sm font-black tracking-wide">
             Trợ Lý Vina
-          </span>
-          <span className="hidden sm:inline-block px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-bold">
-            {geminiKey ? "Gemini 2.0" : "VinaMath"}
           </span>
         </button>
       )}

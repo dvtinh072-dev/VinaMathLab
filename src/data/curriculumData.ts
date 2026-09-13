@@ -660,6 +660,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         lessons: [
           { id: "t10-b3-bat-phuong-trinh-bac-nhat-hai-an", lessonNumber: 3, title: "Bài 3: Bất phương trình bậc nhất hai ẩn", strand: "daiso", description: "Biểu diễn miền nghiệm trên mặt phẳng tọa độ Oxy.", keyFormulas: ["ax + by \\le c"] },
           { id: "t10-b4-he-bat-phuong-trinh-bac-nhat-hai-an", lessonNumber: 4, title: "Bài 4: Hệ bất phương trình bậc nhất hai ẩn", strand: "daiso", description: "Miền nghiệm đa giác và bài toán tìm giá trị lớn nhất, nhỏ nhất thực tế.", keyFormulas: ["F(x, y) = ax + by \\text{ đạt GTLN tại một trong các đỉnh của miền nghiệm}"] },
+          { id: "t10-on-tap-chuong-2", lessonNumber: 0, title: "Ôn tập cuối chương II", strand: "daiso", description: "Hệ thống hóa kiến thức Bất phương trình & Hệ bất phương trình bậc nhất hai ẩn với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["ax + by \\le c", "\\begin{cases} a_1 x + b_1 y \\le c_1 \\\\ a_2 x + b_2 y \\le c_2 \\end{cases}", "F(x, y) = ax + by \\text{ đạt max/min tại đỉnh đa giác}"] },
         ],
       },
       {

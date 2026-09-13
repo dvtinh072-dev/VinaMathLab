@@ -8254,6 +8254,63 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "geometry",
+    "youtubeVideoId": "hVqJvZ_3Seo",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và Chữa bài tập cuối chương III - Toán 10 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "hVqJvZ_3Seo",
+        "title": "Tiết 1: Ôn tập lý thuyết & Chữa bài tập trắc nghiệm cuối chương III"
+      },
+      {
+        "id": "IzkMEVZuc54",
+        "title": "Tiết 2: Chữa bài tập tự luận - Tính các yếu tố trong tam giác & Chứng minh đẳng thức"
+      },
+      {
+        "id": "77a-UJC55KA",
+        "title": "Tiết 3: Giải bài toán thực tế đo khoảng cách, chiều cao & Tổng kết chương III"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-10.ot3.1",
+        "title": "Ví dụ 1 (Tiết 1): Áp dụng định lý Cosin tính độ dài cạnh tam giác",
+        "question": "Cho tam giác $ABC$ có cạnh $b = 5$, $c = 8$ và góc xen giữa $\\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
+        "options": [
+          "$7$",
+          "$\\sqrt{129}$",
+          "$49$",
+          "$2\\sqrt{10}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc \\cos A = 5^2 + 8^2 - 2(5)(8)\\cos 60^\\circ = 25 + 64 - 80 \\cdot \\frac{1}{2} = 89 - 40 = 49 \\Rightarrow a = 7$."
+      },
+      {
+        "id": "vq-10.ot3.2",
+        "title": "Ví dụ 2 (Tiết 2): Tính bán kính đường tròn ngoại tiếp R của tam giác",
+        "question": "Cho tam giác $ABC$ có cạnh $a = 6\\sqrt{3}$ và góc đối diện $\\widehat{A} = 60^\\circ$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ bằng:",
+        "options": [
+          "$6$",
+          "$3\\sqrt{3}$",
+          "$12$",
+          "$6\\sqrt{3}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định lý Sin: $\\frac{a}{\\sin A} = 2R \\Rightarrow R = \\frac{a}{2\\sin A} = \\frac{6\\sqrt{3}}{2\\sin 60^\\circ} = \\frac{6\\sqrt{3}}{2 \\cdot \\frac{\\sqrt{3}}{2}} = 6$."
+      },
+      {
+        "id": "vq-10.ot3.3",
+        "title": "Ví dụ 3 (Tiết 3): Ứng dụng thực tế đo khoảng cách không thể đo trực tiếp",
+        "question": "Để đo khoảng cách giữa hai điểm $A$ và $B$ bị ngăn cách bởi một dòng sông, người ta chọn điểm $C$ cùng bên bờ với $A$ sao cho $CA = 50\\text{ m}$, đo được các góc $\\widehat{CAB} = 65^\\circ$ và $\\widehat{ACB} = 75^\\circ$. Số đo của góc $\\widehat{ABC}$ là:",
+        "options": [
+          "$40^\\circ$",
+          "$45^\\circ$",
+          "$50^\\circ$",
+          "$35^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong tam giác $ABC$, tổng ba góc bằng $180^\\circ$: $\\widehat{ABC} = 180^\\circ - (\\widehat{CAB} + \\widehat{ACB}) = 180^\\circ - (65^\\circ + 75^\\circ) = 180^\\circ - 140^\\circ = 40^\\circ$."
+      }
+    ],
   "tips": [
     "Mẹo chọn định lý trong tam giác: Biết 2 cạnh và góc kẹp giữa (c-g-c) hoặc 3 cạnh (c-c-c) -> dùng định lý Cosin; Biết 1 cạnh và 2 góc (g-c-g) hoặc 2 cạnh và 1 góc đối diện -> dùng định lý Sin.",
     "Mẹo nhớ nhanh góc bù: sin bù (chỉ có sin giữ nguyên dấu), các hàm còn lại đổi dấu thành đối số: sin(180° - α) = sin α; cos(180° - α) = -cos α.",

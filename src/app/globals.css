@@ -143,9 +143,15 @@
   overflow-wrap: break-word;
 }
 
-.inline-math-container table,
+.inline-math-container table {
+  border-collapse: collapse !important;
+  border: 1px solid #334155 !important;
+  background-color: transparent !important;
+}
+
 .inline-math-container table th,
 .inline-math-container table td {
+  border: 1px solid #334155 !important;
   color: #ffffff !important;
 }
 

@@ -72,6 +72,8 @@ import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { ExamMatrix, MatrixTopicItem, PrebuiltMatrix } from "@/types/examMatrix";
 import { PREBUILT_EXAM_MATRICES } from "@/data/prebuiltMatrices";
 import { parseMatrixFromRawText } from "@/lib/matrixExamGenerator";
+import { ExamPreviewModal } from "@/components/exam/ExamPreviewModal";
+import { exportExamToWord } from "@/lib/exportExamWord";
 
 export default function GiaoVienPage() {
   const router = useRouter();
@@ -100,6 +102,7 @@ export default function GiaoVienPage() {
   const [copiedExamId, setCopiedExamId] = useState<string | null>(null);
   const [examClassFilter, setExamClassFilter] = useState<string>("all");
   const [selectedSubmissionDetail, setSelectedSubmissionDetail] = useState<StudentExamSubmission | null>(null);
+  const [previewingExam, setPreviewingExam] = useState<CustomExam | null>(null);
 
   // Exam Folder Management States
   const [examFolders, setExamFolders] = useState<ExamFolder[]>([
@@ -255,6 +258,7 @@ export default function GiaoVienPage() {
       }
 
       setIsBankDrawModalOpen(false);
+      setPreviewingExam(newExam);
       setExamCreationSuccess(`Đã rút thành công đề thi "${newExam.title}" với ${newExam.totalQuestions} câu hỏi từ Ngân hàng đề!`);
       setTimeout(() => setExamCreationSuccess(null), 6000);
     } catch (err: any) {
@@ -638,6 +642,7 @@ export default function GiaoVienPage() {
       const data = await res.json();
       if (data.success && data.exam) {
         setTeacherExams((prev) => [data.exam, ...prev]);
+        setPreviewingExam(data.exam);
         setExamCreationSuccess(`Đã xuất bản đề thi thành công! Đường dẫn làm bài: /kiem-tra/${data.exam.id}`);
         setTimeout(() => {
           setIsCreateModalOpen(false);
@@ -645,7 +650,7 @@ export default function GiaoVienPage() {
           setNewExamTitle("");
           setNewExamRawText("");
           setParsedPreviewQuestions([]);
-        }, 1800);
+        }, 1200);
       } else {
         alert(data.error || "Không thể tạo đề thi");
       }
@@ -1906,15 +1911,35 @@ export default function GiaoVienPage() {
                         <span>Sao Chép Link Thi</span>
                       </button>
 
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        {/* Nút Xem Đề */}
+                        <button
+                          onClick={() => setPreviewingExam(exam)}
+                          className="px-3 py-2 rounded-xl bg-cyan-950/60 hover:bg-cyan-900/60 border border-cyan-500/40 text-cyan-300 font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5 shadow-sm"
+                          title="Xem chi tiết toàn bộ nội dung đề thi"
+                        >
+                          <Eye className="w-3.5 h-3.5 text-cyan-400" />
+                          <span>Xem Đề</span>
+                        </button>
+
+                        {/* Nút Tải Word */}
+                        <button
+                          onClick={() => exportExamToWord(exam, { includeAnswers: true })}
+                          className="px-3 py-2 rounded-xl bg-blue-950/60 hover:bg-blue-900/60 border border-blue-500/40 text-blue-300 font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5 shadow-sm"
+                          title="Tải về file Word (.doc) chuẩn MathType / Equation kèm đáp án & lời giải"
+                        >
+                          <Download className="w-3.5 h-3.5 text-blue-400" />
+                          <span>Tải Word</span>
+                        </button>
+
                         {/* Nút xem bảng điểm & giám sát */}
                         <button
                           onClick={() => openExamSubmissions(exam)}
                           className="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5"
                           title="Xem danh sách điểm số và số lần học sinh thoát màn hình"
                         >
-                          <ClipboardCheck className="w-3.5 h-3.5 text-blue-400" />
-                          <span>Bảng Điểm & Giám Sát</span>
+                          <ClipboardCheck className="w-3.5 h-3.5 text-emerald-400" />
+                          <span>Bảng Điểm</span>
                         </button>
 
                         {/* Nút chuyển thư mục */}
@@ -3678,6 +3703,15 @@ Câu 3: Tìm x...
             </div>
           </div>
         </div>
+      )}
+
+      {/* Modal Xem Trước Đề Thi & Tải File Word Chuẩn Equation / MathType */}
+      {previewingExam && (
+        <ExamPreviewModal
+          exam={previewingExam}
+          onClose={() => setPreviewingExam(null)}
+          onCopyLink={copyExamLink}
+        />
       )}
     </div>
   );

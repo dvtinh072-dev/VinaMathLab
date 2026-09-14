@@ -6,23 +6,49 @@ import { getAiConfiguration } from "@/lib/geminiChatService";
 export const dynamic = "force-dynamic";
 
 /**
- * Trích xuất text từ HTML (bảo toàn cấu trúc bảng table -> dòng và tab)
+ * Trích xuất text từ HTML (bảo toàn cấu trúc bảng table: mỗi <tr> thành 1 dòng, các ô <td>/<th> phân cách bằng \t)
  */
 function extractTextFromHtml(html: string): string {
-  const text = html
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<\/p>/gi, "\n")
-    .replace(/<\/tr>/gi, "\n")
-    .replace(/<\/td>|<\/th>/gi, "\t")
-    .replace(/<[^>]+>/g, " ");
+  // 1. Loại bỏ các thẻ style và script
+  let cleanHtml = html
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replace(/<script[\s\S]*?<\/script>/gi, "");
 
-  return text
+  // 2. Bảo toàn hàng trong bảng: mỗi <tr> thành 1 dòng, các ô phân cách bằng \t
+  cleanHtml = cleanHtml.replace(/<tr[^>]*>([\s\S]*?)<\/tr>/gi, (_, trContent) => {
+    const cells: string[] = [];
+    const cellRegex = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
+    let cellMatch: RegExpExecArray | null;
+    while ((cellMatch = cellRegex.exec(trContent)) !== null) {
+      const cellText = cellMatch[1]
+        .replace(/<br\s*\/?>/gi, " ")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/&lt;/gi, "<")
+        .replace(/&gt;/gi, ">")
+        .replace(/&quot;/gi, '"')
+        .replace(/&#39;/gi, "'")
+        .replace(/\s+/g, " ")
+        .trim();
+      cells.push(cellText);
+    }
+    return cells.join("\t") + "\n";
+  });
+
+  // 3. Xử lý các thẻ còn lại ngoài bảng
+  const text = cleanHtml
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|h\d)>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
     .replace(/&lt;/gi, "<")
     .replace(/&gt;/gi, ">")
     .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
+    .replace(/&#39;/gi, "'");
+
+  return text
     .split("\n")
     .map((l) => l.trim())
     .filter((l) => l.length > 0)

@@ -402,15 +402,55 @@ export function parseMatrixFromRawText(rawText: string, defaultGradeNumber = 10)
   const topics: MatrixTopicItem[] = [];
 
   // Look for title and duration in top lines
-  for (const line of lines.slice(0, 10)) {
+  for (const line of lines.slice(0, 15)) {
     if (/ma\s*trận|đặc\s*tả/i.test(line) && !/khung|mẫu/i.test(line)) {
       title = line.trim();
     }
-    const timeMatch = line.match(/thời gian[:\s]+(\d+)/i);
+    const timeMatch = line.match(/thời\s*gian[^:\d]*[:\s]+(\d+)/i);
     if (timeMatch) {
       durationMinutes = parseInt(timeMatch[1], 10);
     }
   }
+
+  // Helper hàm tách cột thông minh (hỗ trợ Tab, Markdown Pipe, CSV có ngoặc kép, Semicolon)
+  const splitRow = (line: string): string[] => {
+    if (line.includes("\t")) {
+      return line.split("\t").map((s) => s.trim().replace(/^"|"$/g, ""));
+    }
+    if (line.includes("|")) {
+      return line.split("|").map((s) => s.trim()).filter((s) => s.length > 0);
+    }
+
+    let inQuotes = false;
+    let commaCount = 0;
+    let semiCount = 0;
+    for (let i = 0; i < line.length; i++) {
+      const c = line[i];
+      if (c === '"') inQuotes = !inQuotes;
+      else if (!inQuotes) {
+        if (c === ",") commaCount++;
+        else if (c === ";") semiCount++;
+      }
+    }
+    const delimiter = semiCount > commaCount ? ";" : ",";
+
+    const result: string[] = [];
+    let current = "";
+    inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const c = line[i];
+      if (c === '"') {
+        inQuotes = !inQuotes;
+      } else if (c === delimiter && !inQuotes) {
+        result.push(current.trim().replace(/^"|"$/g, ""));
+        current = "";
+      } else {
+        current += c;
+      }
+    }
+    result.push(current.trim().replace(/^"|"$/g, ""));
+    return result;
+  };
 
   // 1. Try parsing table/delimited lines (Tab, Comma, Semicolon, Pipe |)
   for (const rawLine of lines) {
@@ -418,58 +458,46 @@ export function parseMatrixFromRawText(rawText: string, defaultGradeNumber = 10)
     if (!line) continue;
     if (/^(stt|tt|thứ tự|chủ đề|mức độ|phần i|tổng|cộng|lưu ý|hướng dẫn)/i.test(line)) continue;
 
-    // Detect delimiter
-    let delimiter = "";
-    if (line.includes("\t")) delimiter = "\t";
-    else if (line.includes(";")) delimiter = ";";
-    else if (line.includes("|")) delimiter = "|";
-    else if (line.includes(",")) delimiter = ",";
+    const parts = splitRow(line);
 
-    if (delimiter) {
-      const parts = line
-        .split(delimiter)
-        .map((s) => s.trim().replace(/^"|"$/g, ""))
-        .filter((s) => s.length > 0 && s !== "|");
+    if (parts.length >= 3) {
+      let topicIdx = 0;
+      // If first column is an integer like STT (1, 2, 3...)
+      if (/^\d+$/.test(parts[0]) && parts.length > 1) {
+        topicIdx = 1;
+      }
 
-      if (parts.length >= 3) {
-        let topicIdx = 0;
-        // If first column is an integer like STT (1, 2, 3...)
-        if (/^\d+$/.test(parts[0]) && parts.length > 1) {
-          topicIdx = 1;
+      const topicName = parts[topicIdx];
+      if (
+        topicName &&
+        topicName.length >= 3 &&
+        !/^(stt|tt|tổng|cộng|thời gian|điểm|mức độ|tỉ lệ)/i.test(topicName)
+      ) {
+        // Extract competency if present
+        let competency: string | undefined = undefined;
+        let numsStartIndex = topicIdx + 1;
+
+        if (parts[topicIdx + 1] && isNaN(Number(parts[topicIdx + 1]))) {
+          competency = parts[topicIdx + 1];
+          numsStartIndex = topicIdx + 2;
         }
 
-        const topicName = parts[topicIdx];
-        if (
-          topicName &&
-          topicName.length >= 3 &&
-          !/^(stt|tt|tổng|cộng|thời gian|điểm|mức độ|tỉ lệ)/i.test(topicName)
-        ) {
-          // Extract competency if present
-          let competency: string | undefined = undefined;
-          let numsStartIndex = topicIdx + 1;
+        // Extract all numbers from remaining parts
+        const nums: number[] = [];
+        for (let i = numsStartIndex; i < parts.length; i++) {
+          const val = parseInt(parts[i], 10);
+          if (!isNaN(val)) nums.push(val);
+        }
 
-          if (parts[topicIdx + 1] && isNaN(Number(parts[topicIdx + 1]))) {
-            competency = parts[topicIdx + 1];
-            numsStartIndex = topicIdx + 2;
-          }
-
-          // Extract all numbers from remaining parts
-          const nums: number[] = [];
-          for (let i = numsStartIndex; i < parts.length; i++) {
-            const val = parseInt(parts[i], 10);
-            if (!isNaN(val)) nums.push(val);
-          }
-
-          if (nums.length >= 3) {
-            topics.push({
-              id: `topic-${topics.length + 1}`,
-              topicName,
-              competencyRequired: competency,
-              part1: { nb: nums[0] || 0, th: nums[1] || 0, vd: nums[2] || 0, vdc: nums[3] || 0 },
-              part2: { nb: nums[4] || 0, th: nums[5] || 0, vd: nums[6] || 0, vdc: nums[7] || 0 },
-              part3: { nb: nums[8] || 0, th: nums[9] || 0, vd: nums[10] || 0, vdc: nums[11] || 0 },
-            });
-          }
+        if (nums.length >= 3) {
+          topics.push({
+            id: `topic-${topics.length + 1}`,
+            topicName,
+            competencyRequired: competency,
+            part1: { nb: nums[0] || 0, th: nums[1] || 0, vd: nums[2] || 0, vdc: nums[3] || 0 },
+            part2: { nb: nums[4] || 0, th: nums[5] || 0, vd: nums[6] || 0, vdc: nums[7] || 0 },
+            part3: { nb: nums[8] || 0, th: nums[9] || 0, vd: nums[10] || 0, vdc: nums[11] || 0 },
+          });
         }
       }
     }

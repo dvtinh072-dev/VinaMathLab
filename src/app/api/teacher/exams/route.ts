@@ -9,6 +9,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const targetClass = searchParams.get("targetClass");
     const grade = searchParams.get("grade");
+    const folderId = searchParams.get("folderId");
 
     let exams = getAllCustomExams();
 
@@ -20,6 +21,10 @@ export async function GET(request: Request) {
 
     if (grade && grade !== "all") {
       exams = exams.filter((e) => e.grade === grade);
+    }
+
+    if (folderId && folderId !== "all" && folderId !== "folder-all") {
+      exams = exams.filter((e) => e.folderId === folderId);
     }
 
     return NextResponse.json({
@@ -43,6 +48,8 @@ export async function POST(request: Request) {
       grade,
       gradeNumber,
       targetClass,
+      folderId,
+      folderName,
       durationMinutes,
       questions,
       authorTeacherId,
@@ -67,6 +74,8 @@ export async function POST(request: Request) {
       grade: grade || (gradeNumber ? `lop-${gradeNumber}` : "lop-10"),
       gradeNumber: Number(gradeNumber) || 10,
       targetClass: targetClass?.trim() || "Tất cả các lớp",
+      folderId: folderId || "folder-all",
+      folderName: folderName || "Tất cả đề thi",
       durationMinutes: Number(durationMinutes) || 45,
       totalQuestions: questions.length,
       questions,
@@ -93,6 +102,40 @@ export async function POST(request: Request) {
   } catch (error: any) {
     return NextResponse.json(
       { success: false, error: error?.message || "Lỗi xử lý tạo đề thi" },
+      { status: 500 }
+    );
+  }
+}
+
+export async function PATCH(request: Request) {
+  try {
+    const body = await request.json();
+    const { examId, folderId, folderName } = body;
+
+    if (!examId || !folderId) {
+      return NextResponse.json(
+        { success: false, error: "Thiếu examId hoặc folderId" },
+        { status: 400 }
+      );
+    }
+
+    const { moveExamToFolder } = await import("@/lib/customExamsStore");
+    const ok = moveExamToFolder(examId, folderId, folderName);
+
+    if (!ok) {
+      return NextResponse.json(
+        { success: false, error: "Không tìm thấy đề thi để chuyển thư mục" },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: "Đã chuyển đề thi vào thư mục thành công",
+    });
+  } catch (error: any) {
+    return NextResponse.json(
+      { success: false, error: error?.message || "Lỗi cập nhật thư mục" },
       { status: 500 }
     );
   }

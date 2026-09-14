@@ -1,5 +1,13 @@
 import { QuestionData } from "@/components/exam/ExamEngine";
 
+export interface ExamFolder {
+  id: string;
+  name: string; // e.g. "Đề Kiểm Tra Giữa Kì 1", "Chuyên Đề Vectơ", "Đề Thi Khối 10"
+  icon?: string;
+  color?: string; // Tailwind color tag
+  createdAt?: string;
+}
+
 export interface CustomExam {
   id: string;
   title: string;
@@ -7,6 +15,8 @@ export interface CustomExam {
   grade?: string; // e.g. "lop-10", "lop-6", "lop-11", "lop-12"
   gradeNumber?: number; // 10, 6, 7, 8, 9, 11, 12
   targetClass: string; // e.g. "10A1", "6A", "Tất cả các lớp"
+  folderId?: string; // Thư mục lưu trữ (VD: "folder-gk1", "folder-vecto", etc.)
+  folderName?: string; // Tên thư mục hiển thị
   authorTeacherId?: string;
   authorName?: string;
   durationMinutes: number; // e.g. 15, 45, 60, 90

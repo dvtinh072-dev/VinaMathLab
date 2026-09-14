@@ -2,19 +2,90 @@ import { PrebuiltMatrix } from "@/types/examMatrix";
 
 export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
   // =========================================================================
-  // TOÁN 10
+  // TOÁN 10 - CHUẨN CÔNG VĂN 7991/BGDĐT-GDTrH (ÁP DỤNG HK2 NĂM HỌC 2024-2025)
   // =========================================================================
   {
+    id: "matrix-t10-gk2-cv7991",
+    title: "Ma trận Đề Giữa Học Kỳ 2 - Toán 10 (Chuẩn Công Văn 7991)",
+    gradeNumber: 10,
+    examType: "giua-ky-2",
+    durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
+    description: "Chuẩn CV 7991/BGDĐT: Hàm số bậc hai, Dấu tam thức bậc hai, Phương trình quy về bậc hai, Tọa độ vectơ trong mặt phẳng.",
+    topics: [
+      {
+        id: "t10-ch6-hs",
+        topicName: "Chương VI: Hàm số, đồ thị và tam thức bậc hai",
+        competencyRequired: "Biết đồ thị hàm bậc hai; hiểu xét dấu tam thức; vận dụng giải bài toán thực tế cực trị parabol",
+        part1: { nb: 4, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+      },
+      {
+        id: "t10-ch7-toado",
+        topicName: "Chương VII: Phương pháp tọa độ trong mặt phẳng (Toạ độ vectơ, đường thẳng)",
+        competencyRequired: "Biết toạ độ vectơ; hiểu viết phương trình đường thẳng; vận dụng tính góc và khoảng cách",
+        part1: { nb: 4, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 1 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 1 },
+      },
+    ],
+  },
+  {
+    id: "matrix-t10-ck2-cv7991",
+    title: "Ma trận Đề Cuối Học Kỳ 2 - Toán 10 (Chuẩn Công Văn 7991)",
+    gradeNumber: 10,
+    examType: "cuoi-ky-2",
+    durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
+    description: "Chuẩn CV 7991/BGDĐT: Tam thức bậc hai, Phương pháp tọa độ trong mặt phẳng (Đường thẳng, Đường tròn, Ba đường conic), Đại số tổ hợp, Xác suất.",
+    topics: [
+      {
+        id: "t10-ck2-ch6",
+        topicName: "Chương VI: Hàm số và tam thức bậc hai",
+        part1: { nb: 2, th: 1, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 0, vdc: 0 },
+      },
+      {
+        id: "t10-ck2-ch7",
+        topicName: "Chương VII: Phương pháp toạ độ trong mặt phẳng (Đường thẳng, Đường tròn, Conic)",
+        part1: { nb: 3, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+      },
+      {
+        id: "t10-ck2-ch8",
+        topicName: "Chương VIII: Đại số tổ hợp (Quy tắc đếm, Hoán vị, Chỉnh hợp, Tổ hợp, Nhị thức Newton)",
+        part1: { nb: 4, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 0 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 1 },
+      },
+      {
+        id: "t10-ck2-ch9",
+        topicName: "Chương IX: Tính xác suất của biến cố",
+        part1: { nb: 3, th: 1, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 0, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 0 },
+      },
+    ],
+  },
+  {
     id: "matrix-t10-gk1",
-    title: "Ma trận Đề Giữa Học Kỳ 1 - Toán 10 (Chuẩn Cấu Trúc BGD 2025)",
+    title: "Ma trận Đề Giữa Học Kỳ 1 - Toán 10 (Chuẩn Công Văn 7991)",
     gradeNumber: 10,
     examType: "giua-ky-1",
     durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
     description: "Trọng tâm: Mệnh đề & Tập hợp, Bất phương trình & Hệ BPT bậc nhất hai ẩn, Hệ thức lượng trong tam giác.",
     topics: [
       {
         id: "t10-ch1",
         topicName: "Chương I: Mệnh đề và tập hợp",
+        competencyRequired: "Biết mệnh đề toán học; hiểu các phép toán tập hợp; vận dụng biểu đồ Venn",
         part1: { nb: 3, th: 2, vd: 0, vdc: 0 },
         part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
         part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
@@ -22,6 +93,7 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
       {
         id: "t10-ch2",
         topicName: "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
+        competencyRequired: "Biết nghiệm BPT bậc nhất 2 ẩn; hiểu biểu diễn miền nghiệm; vận dụng bài toán thực tế tối ưu",
         part1: { nb: 2, th: 2, vd: 0, vdc: 0 },
         part2: { nb: 0, th: 1, vd: 0, vdc: 0 },
         part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
@@ -29,6 +101,7 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
       {
         id: "t10-ch3",
         topicName: "Chương III: Hệ thức lượng trong tam giác & Định lý sin, cosin",
+        competencyRequired: "Biết định lý cosin, sin; hiểu tính góc và bán kính R; vận dụng giải tam giác thực tế",
         part1: { nb: 2, th: 1, vd: 0, vdc: 0 },
         part2: { nb: 0, th: 1, vd: 0, vdc: 1 },
         part3: { nb: 0, th: 0, vd: 1, vdc: 1 },
@@ -37,10 +110,12 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
   },
   {
     id: "matrix-t10-ck1",
-    title: "Ma trận Đề Cuối Học Kỳ 1 - Toán 10 (Chuẩn Cấu Trúc BGD 2025)",
+    title: "Ma trận Đề Cuối Học Kỳ 1 - Toán 10 (Chuẩn Công Văn 7991)",
     gradeNumber: 10,
     examType: "cuoi-ky-1",
     durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
     description: "Trọng tâm toàn học kỳ 1: Mệnh đề, Tập hợp, Hệ thức lượng, Vectơ & Các phép toán vectơ, Tích vô hướng.",
     topics: [
       {
@@ -72,6 +147,8 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
     gradeNumber: 10,
     examType: "khao-sat-45p",
     durationMinutes: 45,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
     description: "Khái niệm vectơ, tổng và hiệu hai vectơ, tích của một số với một vectơ, tích vô hướng của hai vectơ.",
     topics: [
       {
@@ -99,14 +176,75 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
   },
 
   // =========================================================================
-  // TOÁN 6
+  // TOÁN 6 - CHUẨN CÔNG VĂN 7991/BGDĐT-GDTrH (KNTT)
   // =========================================================================
   {
+    id: "matrix-t6-gk2-cv7991",
+    title: "Ma trận Đề Giữa Học Kỳ 2 - Toán 6 (Chuẩn Công Văn 7991)",
+    gradeNumber: 6,
+    examType: "giua-ky-2",
+    durationMinutes: 60,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
+    description: "Chuẩn CV 7991/BGDĐT: Phân số (Khái niệm, so sánh, các phép tính), Số thập phân và các bài toán thực tế.",
+    topics: [
+      {
+        id: "t6-ch6-ps",
+        topicName: "Chương VI: Phân số (Khái niệm, tính chất cơ bản, so sánh phân số)",
+        part1: { nb: 4, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+      },
+      {
+        id: "t6-ch7-stp",
+        topicName: "Chương VII: Số thập phân và các phép tính",
+        part1: { nb: 3, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 1 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 1 },
+      },
+    ],
+  },
+  {
+    id: "matrix-t6-ck2-cv7991",
+    title: "Ma trận Đề Cuối Học Kỳ 2 - Toán 6 (Chuẩn Công Văn 7991)",
+    gradeNumber: 6,
+    examType: "cuoi-ky-2",
+    durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
+    description: "Chuẩn CV 7991/BGDĐT: Phân số, Số thập phân, Hình học phẳng (Điểm, đường thẳng, tia, góc, số đo góc) và Dữ liệu thống kê.",
+    topics: [
+      {
+        id: "t6-ck2-ps-stp",
+        topicName: "Chương VI & VII: Phân số và Số thập phân",
+        part1: { nb: 4, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+      },
+      {
+        id: "t6-ck2-hinh",
+        topicName: "Chương VIII: Hình học phẳng cơ bản (Điểm, đường thẳng, tia, đoạn thẳng, góc)",
+        part1: { nb: 3, th: 2, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 1, vd: 0, vdc: 1 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 0 },
+      },
+      {
+        id: "t6-ck2-tk",
+        topicName: "Chương IX: Dữ liệu và xác suất thực nghiệm",
+        part1: { nb: 2, th: 1, vd: 0, vdc: 0 },
+        part2: { nb: 0, th: 0, vd: 1, vdc: 0 },
+        part3: { nb: 0, th: 0, vd: 1, vdc: 1 },
+      },
+    ],
+  },
+  {
     id: "matrix-t6-gk1",
-    title: "Ma trận Đề Giữa Học Kỳ 1 - Toán 6 (KNTT)",
+    title: "Ma trận Đề Giữa Học Kỳ 1 - Toán 6 (Chuẩn Công Văn 7991)",
     gradeNumber: 6,
     examType: "giua-ky-1",
     durationMinutes: 60,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
     description: "Tập hợp số tự nhiên, Các phép tính số tự nhiên, Lũy thừa, Tính chất chia hết, Tam giác đều, Hình vuông, Lục giác đều.",
     topics: [
       {
@@ -134,10 +272,12 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
   },
   {
     id: "matrix-t6-ck1",
-    title: "Ma trận Đề Cuối Học Kỳ 1 - Toán 6 (KNTT)",
+    title: "Ma trận Đề Cuối Học Kỳ 1 - Toán 6 (Chuẩn Công Văn 7991)",
     gradeNumber: 6,
     examType: "cuoi-ky-1",
     durationMinutes: 90,
+    isCV7991Standard: true,
+    scoreRatios: { part1: 3.0, part2: 2.0, part3: 2.0, essayOrShortAdv: 3.0 },
     description: "Số tự nhiên, Số nguyên (Tập hợp Z, các phép tính cộng trừ nhân chia số nguyên), Hình học trực quan.",
     topics: [
       {
@@ -164,3 +304,4 @@ export const PREBUILT_EXAM_MATRICES: PrebuiltMatrix[] = [
     ],
   },
 ];
+

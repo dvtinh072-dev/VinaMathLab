@@ -412,25 +412,62 @@ export function parseMatrixFromRawText(rawText: string, defaultGradeNumber = 10)
     }
   }
 
-  // Regex to detect chapter / topic lines
-  // e.g. "1. Chương I: Mệnh đề..." or "Chủ đề: Vectơ"
-  const topicRegex = /(?:^|\n)\s*(?:(?:\d+[\.:\)]|[IVXLCDM]+[\.:\)]|Chương|Chủ đề|Bài)\s+)([^\n\r]+)/gi;
-  let match: RegExpExecArray | null;
+  // 1. Try parsing CSV formatted matrix (e.g. from downloaded template)
+  const csvLines = lines.filter((l) => l.includes(",") && !l.toLowerCase().startsWith("stt"));
+  for (const line of csvLines) {
+    const parts = line.split(",").map((s) => s.trim().replace(/^"|"$/g, ""));
+    if (parts.length >= 5 && parts[1]) {
+      const topicName = parts[1];
+      if (topicName && !/tổng|cộng|stt/i.test(topicName)) {
+        // If row has numbers for Part I, II, III
+        // Expected columns: [STT, Topic, Comp, P1_NB, P1_TH, P1_VD, P1_VDC, P2_NB, P2_TH, P2_VD, P2_VDC, P3_NB, P3_TH, P3_VD, P3_VDC]
+        const p1_nb = parseInt(parts[3], 10) || 0;
+        const p1_th = parseInt(parts[4], 10) || 0;
+        const p1_vd = parseInt(parts[5], 10) || 0;
+        const p1_vdc = parseInt(parts[6], 10) || 0;
 
-  while ((match = topicRegex.exec(rawText)) !== null) {
-    const topicName = match[1].trim();
-    if (topicName.length > 3 && !/tổng|cộng|thời gian|điểm/i.test(topicName)) {
-      topics.push({
-        id: `topic-${topics.length + 1}`,
-        topicName,
-        part1: { nb: 2, th: 1, vd: 0, vdc: 0 },
-        part2: { nb: 0, th: 1, vd: 0, vdc: 0 },
-        part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
-      });
+        const p2_nb = parseInt(parts[7], 10) || 0;
+        const p2_th = parseInt(parts[8], 10) || 0;
+        const p2_vd = parseInt(parts[9], 10) || 0;
+        const p2_vdc = parseInt(parts[10], 10) || 0;
+
+        const p3_nb = parseInt(parts[11], 10) || 0;
+        const p3_th = parseInt(parts[12], 10) || 0;
+        const p3_vd = parseInt(parts[13], 10) || 0;
+        const p3_vdc = parseInt(parts[14], 10) || 0;
+
+        topics.push({
+          id: `topic-${topics.length + 1}`,
+          topicName,
+          competencyRequired: parts[2] || undefined,
+          part1: { nb: p1_nb, th: p1_th, vd: p1_vd, vdc: p1_vdc },
+          part2: { nb: p2_nb, th: p2_th, vd: p2_vd, vdc: p2_vdc },
+          part3: { nb: p3_nb, th: p3_th, vd: p3_vd, vdc: p3_vdc },
+        });
+      }
     }
   }
 
-  // If no topics found, fallback to 2 standard default topics
+  // 2. If no CSV topics parsed, use regex to detect chapter / topic lines from text or Word extraction
+  if (topics.length === 0) {
+    const topicRegex = /(?:^|\n)\s*(?:(?:\d+[\.:\)]|[IVXLCDM]+[\.:\)]|Chương|Chủ đề|Bài)\s+)([^\n\r]+)/gi;
+    let match: RegExpExecArray | null;
+
+    while ((match = topicRegex.exec(rawText)) !== null) {
+      const topicName = match[1].trim();
+      if (topicName.length > 3 && !/tổng|cộng|thời gian|điểm|hướng dẫn|công văn|phụ lục/i.test(topicName)) {
+        topics.push({
+          id: `topic-${topics.length + 1}`,
+          topicName,
+          part1: { nb: 3, th: 2, vd: 0, vdc: 0 },
+          part2: { nb: 0, th: 1, vd: 1, vdc: 0 },
+          part3: { nb: 0, th: 1, vd: 1, vdc: 0 },
+        });
+      }
+    }
+  }
+
+  // 3. Fallback to 2 standard CV 7991 default topics if none found
   if (topics.length === 0) {
     topics.push({
       id: "topic-1",

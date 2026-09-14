@@ -44,6 +44,11 @@ import {
   HelpCircle,
   Check,
   UploadCloud,
+  Folder,
+  FolderPlus,
+  FileSpreadsheet,
+  Tag,
+  MoveRight,
 } from "lucide-react";
 import { useAuth, UserProfile } from "@/context/AuthContext";
 import { TEACHER_RESOURCES } from "@/data/teacherResources";
@@ -54,7 +59,7 @@ import {
   isStudentInSpecificClass,
 } from "@/lib/teacherClassUtils";
 import { getLocalStudentProgress } from "@/lib/studentProgressClient";
-import { CustomExam, StudentExamSubmission } from "@/types/customExam";
+import { CustomExam, StudentExamSubmission, ExamFolder } from "@/types/customExam";
 import {
   parseExamText,
   SAMPLE_TEACHER_EXAM_TEXT_GRADE_10,
@@ -92,6 +97,23 @@ export default function GiaoVienPage() {
   const [copiedExamId, setCopiedExamId] = useState<string | null>(null);
   const [examClassFilter, setExamClassFilter] = useState<string>("all");
   const [selectedSubmissionDetail, setSelectedSubmissionDetail] = useState<StudentExamSubmission | null>(null);
+
+  // Exam Folder Management States
+  const [examFolders, setExamFolders] = useState<ExamFolder[]>([
+    { id: "folder-all", name: "Tất cả đề thi", icon: "folder", color: "blue" },
+    { id: "folder-cv7991", name: "Đề chuẩn CV 7991 (2025)", icon: "sparkles", color: "amber" },
+    { id: "folder-gk1", name: "Đề Giữa Học Kỳ 1", icon: "calendar", color: "sky" },
+    { id: "folder-ck1", name: "Đề Cuối Học Kỳ 1", icon: "book-open", color: "indigo" },
+    { id: "folder-gk2", name: "Đề Giữa Học Kỳ 2", icon: "calendar", color: "teal" },
+    { id: "folder-ck2", name: "Đề Cuối Học Kỳ 2", icon: "book-open", color: "emerald" },
+    { id: "folder-chuyende", name: "Đề Khảo Sát & Chuyên Đề", icon: "layers", color: "purple" },
+  ]);
+  const [selectedFolderId, setSelectedFolderId] = useState<string>("folder-all");
+  const [isNewFolderModalOpen, setIsNewFolderModalOpen] = useState(false);
+  const [newFolderNameInput, setNewFolderNameInput] = useState("");
+  const [movingExam, setMovingExam] = useState<CustomExam | null>(null);
+  const [targetMoveFolderId, setTargetMoveFolderId] = useState<string>("folder-all");
+  const [newExamFolderId, setNewExamFolderId] = useState<string>("folder-all");
 
   // Create Exam Modal States
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
@@ -218,10 +240,23 @@ export default function GiaoVienPage() {
 
       // 3. Lấy danh sách đề thi trực tuyến của giáo viên
       await fetchTeacherExams();
+      await fetchExamFolders();
     } catch (err) {
       console.error("Lỗi lấy dữ liệu giáo viên:", err);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const fetchExamFolders = async () => {
+    try {
+      const res = await fetch("/api/teacher/exams/folders");
+      const data = await res.json();
+      if (data.success && Array.isArray(data.folders) && data.folders.length > 0) {
+        setExamFolders(data.folders);
+      }
+    } catch (e) {
+      console.warn("Lỗi tải danh mục thư mục đề:", e);
     }
   };
 
@@ -237,6 +272,87 @@ export default function GiaoVienPage() {
       console.warn("Lỗi tải danh sách đề thi:", e);
     } finally {
       setIsLoadingExams(false);
+    }
+  };
+
+  const handleCreateNewFolder = async () => {
+    if (!newFolderNameInput.trim()) {
+      alert("Vui lòng nhập tên thư mục đề thi");
+      return;
+    }
+    try {
+      const res = await fetch("/api/teacher/exams/folders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: newFolderNameInput.trim(), color: "indigo" }),
+      });
+      const data = await res.json();
+      if (data.success && data.folder) {
+        setExamFolders((prev) => [...prev, data.folder]);
+        setSelectedFolderId(data.folder.id);
+        setIsNewFolderModalOpen(false);
+        setNewFolderNameInput("");
+      } else {
+        alert(data.error || "Không thể tạo thư mục");
+      }
+    } catch (e: any) {
+      alert("Lỗi khi tạo thư mục: " + e?.message);
+    }
+  };
+
+  const handleDeleteFolder = async (folderId: string) => {
+    if (folderId === "folder-all") {
+      alert("Không thể xóa thư mục mặc định");
+      return;
+    }
+    if (!confirm("Thầy/Cô có chắc chắn muốn xóa thư mục này? Các đề thi trong thư mục sẽ tự động được chuyển về thư mục chung.")) {
+      return;
+    }
+    try {
+      const res = await fetch(`/api/teacher/exams/folders?id=${folderId}`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        setExamFolders((prev) => prev.filter((f) => f.id !== folderId));
+        if (selectedFolderId === folderId) {
+          setSelectedFolderId("folder-all");
+        }
+        await fetchTeacherExams();
+      } else {
+        alert(data.error || "Không thể xóa thư mục");
+      }
+    } catch (e: any) {
+      alert("Lỗi xóa thư mục: " + e?.message);
+    }
+  };
+
+  const handleExecuteMoveExam = async () => {
+    if (!movingExam) return;
+    try {
+      const targetFolder = examFolders.find((f) => f.id === targetMoveFolderId);
+      const res = await fetch("/api/teacher/exams", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          examId: movingExam.id,
+          folderId: targetMoveFolderId,
+          folderName: targetFolder?.name || "Tất cả đề thi",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setTeacherExams((prev) =>
+          prev.map((e) =>
+            e.id === movingExam.id
+              ? { ...e, folderId: targetMoveFolderId, folderName: targetFolder?.name || "Tất cả đề thi" }
+              : e
+          )
+        );
+        setMovingExam(null);
+      } else {
+        alert(data.error || "Không thể chuyển thư mục");
+      }
+    } catch (e: any) {
+      alert("Lỗi chuyển thư mục: " + e?.message);
     }
   };
 
@@ -369,6 +485,8 @@ export default function GiaoVienPage() {
         targetClass: newExamTargetClass.trim() || (assignedClasses[0] || "Tất cả các lớp"),
         gradeNumber: newExamGradeNumber,
         grade: `lop-${newExamGradeNumber}`,
+        folderId: newExamFolderId || "folder-all",
+        folderName: examFolders.find((f) => f.id === newExamFolderId)?.name || "Tất cả đề thi",
         durationMinutes: newExamDuration,
         questions: parsedPreviewQuestions,
         authorTeacherId: user?.id || "",
@@ -1459,12 +1577,86 @@ export default function GiaoVienPage() {
             </div>
           )}
 
+          {/* Hệ Thống Thư Mục Quản Lý Đề Thi (Exam Folders) */}
+          <div className="p-4 rounded-3xl bg-[#0e1526] border border-slate-800 space-y-3 shadow-md">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <Folder className="w-4 h-4 text-amber-400" />
+                <span className="text-xs font-black uppercase text-white tracking-wider">
+                  Thư Mục Quản Lý Đề Kiểm Tra ({examFolders.length})
+                </span>
+              </div>
+              <button
+                onClick={() => setIsNewFolderModalOpen(true)}
+                className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-amber-300 hover:text-white text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer shadow-sm"
+              >
+                <FolderPlus className="w-3.5 h-3.5" />
+                <span>Thêm Thư Mục Mới</span>
+              </button>
+            </div>
+
+            {/* Folder Badges / Tabs */}
+            <div className="flex items-center gap-2 overflow-x-auto pb-1.5 scrollbar-thin scrollbar-thumb-slate-800">
+              {examFolders.map((f) => {
+                const isSelected = selectedFolderId === f.id;
+                const count =
+                  f.id === "folder-all"
+                    ? teacherExams.length
+                    : teacherExams.filter((e) => e.folderId === f.id).length;
+
+                return (
+                  <div key={f.id} className="relative group shrink-0 flex items-center">
+                    <button
+                      onClick={() => setSelectedFolderId(f.id)}
+                      className={`px-3.5 py-2 rounded-2xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer border ${
+                        isSelected
+                          ? "bg-amber-500 text-slate-950 border-amber-400 shadow-md shadow-amber-500/20"
+                          : "bg-slate-900/90 text-slate-300 border-slate-800 hover:border-slate-700 hover:text-white"
+                      }`}
+                    >
+                      <Folder className={`w-3.5 h-3.5 ${isSelected ? "text-slate-950" : "text-amber-400"}`} />
+                      <span>{f.name}</span>
+                      <span
+                        className={`text-[10px] px-1.5 py-0.5 rounded-full font-black ${
+                          isSelected ? "bg-slate-950 text-amber-300" : "bg-slate-800 text-slate-400"
+                        }`}
+                      >
+                        {count}
+                      </span>
+                    </button>
+                    {f.id !== "folder-all" && (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDeleteFolder(f.id);
+                        }}
+                        title="Xóa thư mục"
+                        className="ml-1 p-1 text-slate-500 hover:text-rose-400 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Danh Sách Các Đề Thi Của Giáo Viên */}
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-black text-white flex items-center gap-2">
                 <FileText className="w-4 h-4 text-blue-400" />
-                <span>Danh Sách Đề Kiểm Tra ({teacherExams.length})</span>
+                <span>
+                  Danh Sách Đề: {examFolders.find((f) => f.id === selectedFolderId)?.name || "Tất cả"} (
+                  {
+                    (selectedFolderId === "folder-all"
+                      ? teacherExams
+                      : teacherExams.filter((e) => e.folderId === selectedFolderId)
+                    ).length
+                  }
+                  )
+                </span>
               </h3>
               <button
                 onClick={fetchTeacherExams}
@@ -1508,16 +1700,25 @@ export default function GiaoVienPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {teacherExams.map((exam) => (
+                {(selectedFolderId === "folder-all"
+                  ? teacherExams
+                  : teacherExams.filter((e) => e.folderId === selectedFolderId)
+                ).map((exam) => (
                   <div
                     key={exam.id}
                     className="p-5 rounded-3xl bg-[#0e1526] border border-slate-800 hover:border-blue-500/40 transition-all space-y-4 flex flex-col justify-between shadow-lg"
                   >
                     <div className="space-y-2">
                       <div className="flex items-center justify-between gap-2">
-                        <span className="px-3 py-1 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 font-bold text-[11px]">
-                          Lớp: {exam.targetClass || "Tất cả các lớp"}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="px-3 py-1 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 font-bold text-[11px]">
+                            Lớp: {exam.targetClass || "Tất cả các lớp"}
+                          </span>
+                          <span className="px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-[10px] font-bold flex items-center gap-1">
+                            <Folder className="w-2.5 h-2.5" />
+                            <span>{exam.folderName || "Tất cả đề thi"}</span>
+                          </span>
+                        </div>
                         <span className="text-[11px] text-slate-500">
                           {exam.createdAt ? new Date(exam.createdAt).toLocaleDateString("vi-VN") : ""}
                         </span>
@@ -1560,6 +1761,18 @@ export default function GiaoVienPage() {
                         >
                           <ClipboardCheck className="w-3.5 h-3.5 text-blue-400" />
                           <span>Bảng Điểm & Giám Sát</span>
+                        </button>
+
+                        {/* Nút chuyển thư mục */}
+                        <button
+                          onClick={() => {
+                            setMovingExam(exam);
+                            setTargetMoveFolderId(exam.folderId || "folder-all");
+                          }}
+                          className="p-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-amber-400 hover:text-amber-300 transition-all cursor-pointer"
+                          title="Chuyển vào thư mục khác"
+                        >
+                          <Folder className="w-4 h-4" />
                         </button>
 
                         {/* Nút làm thử */}
@@ -1711,11 +1924,28 @@ export default function GiaoVienPage() {
               </div>
 
               <div className="space-y-1">
-                <label className="block text-xs font-bold text-slate-300">Chế Độ Giám Sát</label>
-                <div className="px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-emerald-400 text-xs font-bold flex items-center gap-1.5">
-                  <ShieldAlert className="w-3.5 h-3.5" />
-                  <span>Đang Bật (Focus Tracker)</span>
+                <label className="block text-xs font-bold text-slate-300">Thư Mục Đề Thi</label>
+                <select
+                  value={newExamFolderId}
+                  onChange={(e) => setNewExamFolderId(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-blue-400"
+                >
+                  {examFolders.map((f) => (
+                    <option key={f.id} value={f.id}>
+                      📁 {f.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="sm:col-span-3 p-3 rounded-2xl bg-emerald-950/30 border border-emerald-500/30 flex items-center justify-between text-xs text-emerald-300">
+                <div className="flex items-center gap-2">
+                  <ShieldAlert className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span><strong>Chế độ giám sát thông minh (Focus Tracker)</strong>: Tự động ghi nhận số lần học sinh chuyển tab hoặc thoát toàn màn hình khi làm bài.</span>
                 </div>
+                <span className="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-black text-[10px] uppercase tracking-wider shrink-0 border border-emerald-500/30">
+                  Đang Bật
+                </span>
               </div>
             </div>
 
@@ -2065,25 +2295,65 @@ Câu 3: Tìm x...
               </div>
             )}
 
+            {/* Tải về biểu mẫu chuẩn CV 7991 */}
+            <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                  <FileText className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-black text-white">Biểu mẫu Ma trận chuẩn Công văn 7991/BGDĐT-GDTrH</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-md bg-amber-500/20 text-amber-300 font-bold border border-amber-500/30">
+                      Mới 2025
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-slate-300 mt-0.5">
+                    Thầy/Cô tải file mẫu Word (.doc) hoặc Excel/CSV (.csv) về máy để chỉnh sửa các chủ đề và số lượng câu hỏi, sau đó tải lên lại hệ thống để tạo đề tự động.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                <a
+                  href={`/api/teacher/exams/template-matrix?format=doc&grade=${matrixGradeNumber}`}
+                  download
+                  className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-amber-500/40 text-amber-300 hover:text-white text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
+                  title="Tải biểu mẫu Microsoft Word chuẩn Phụ lục CV 7991"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Tải Mẫu Word (.doc)</span>
+                </a>
+                <a
+                  href={`/api/teacher/exams/template-matrix?format=csv&grade=${matrixGradeNumber}`}
+                  download
+                  className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-300 hover:text-white text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
+                  title="Tải bảng tính Excel/CSV chuẩn CV 7991"
+                >
+                  <FileSpreadsheet className="w-3.5 h-3.5" />
+                  <span>Tải Mẫu Excel/CSV</span>
+                </a>
+              </div>
+            </div>
+
             {/* Chế độ tải file ma trận */}
             {matrixUploadMode === "upload" && (
-              <div className="p-4 rounded-2xl bg-slate-900/60 border border-dashed border-orange-500/40 text-center space-y-3">
+              <div className="p-5 rounded-2xl bg-slate-900/60 border border-dashed border-orange-500/40 text-center space-y-3">
                 <div className="w-12 h-12 mx-auto rounded-2xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400">
                   <UploadCloud className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-white">Tải file ma trận đề thi lên</h4>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    Hỗ trợ file Word (.docx), PDF (.pdf), Excel (.xlsx/.csv), file ảnh (.png, .jpg) hoặc bảng text ma trận
+                  <h4 className="text-sm font-bold text-white">Tải file ma trận đề thi lên (Word / Excel / PDF / Ảnh)</h4>
+                  <p className="text-xs text-slate-400 mt-0.5 max-w-md mx-auto">
+                    Hỗ trợ file biểu mẫu Word (.doc, .docx), Excel (.xlsx, .csv), file scan PDF (.pdf) hoặc ảnh bảng ma trận. Hệ thống tự động bóc tách số câu theo từng dạng và cấp độ.
                   </p>
                 </div>
                 <div className="flex justify-center">
-                  <label className="px-4 py-2 rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 font-black text-xs cursor-pointer inline-flex items-center gap-2 transition-all">
+                  <label className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs cursor-pointer inline-flex items-center gap-2 transition-all shadow-md shadow-orange-500/20">
                     <UploadCloud className="w-4 h-4" />
-                    <span>Chọn file từ máy tính</span>
+                    <span>Chọn file ma trận từ máy tính</span>
                     <input
                       type="file"
-                      accept=".docx,.pdf,.png,.jpg,.jpeg,.xlsx,.xls,.csv,.txt"
+                      accept=".docx,.doc,.pdf,.png,.jpg,.jpeg,.xlsx,.xls,.csv,.txt"
                       onChange={handleMatrixFileUpload}
                       className="hidden"
                     />
@@ -2324,6 +2594,130 @@ Câu 3: Tìm x...
                   <span>{isGeneratingFromMatrix ? "Đang bốc đề thi từ ma trận..." : "BỐC ĐỀ THI TỪ MA TRẬN"}</span>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MODAL: TẠO THƯ MỤC ĐỀ THI MỚI                                            */}
+      {/* ========================================================================= */}
+      {isNewFolderModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in">
+          <div className="w-full max-w-md rounded-3xl bg-[#0e1526] border-2 border-amber-500/40 p-6 space-y-5 shadow-2xl text-white">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300">
+                  <FolderPlus className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-black text-white">Tạo Thư Mục Đề Thi Mới</h3>
+                  <p className="text-xs text-slate-400">Phân loại và quản lý đề kiểm tra theo khối, học kỳ hoặc chủ đề</p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsNewFolderModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="space-y-2">
+              <label className="block text-xs font-bold text-slate-300">
+                Tên Thư Mục <span className="text-rose-400">*</span>
+              </label>
+              <input
+                type="text"
+                value={newFolderNameInput}
+                onChange={(e) => setNewFolderNameInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleCreateNewFolder();
+                }}
+                placeholder="Ví dụ: Đề Ôn Thi Học Kỳ 2, Kiểm Tra 15 Phút..."
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-amber-400"
+                autoFocus
+              />
+            </div>
+
+            <div className="flex items-center justify-end gap-2 pt-2 border-t border-slate-800">
+              <button
+                type="button"
+                onClick={() => setIsNewFolderModalOpen(false)}
+                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-colors cursor-pointer"
+              >
+                Hủy
+              </button>
+              <button
+                type="button"
+                onClick={handleCreateNewFolder}
+                className="px-5 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+              >
+                <FolderPlus className="w-4 h-4" />
+                <span>Tạo Thư Mục</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MODAL: CHUYỂN ĐỀ THI VÀO THƯ MỤC                                          */}
+      {/* ========================================================================= */}
+      {movingExam && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in">
+          <div className="w-full max-w-md rounded-3xl bg-[#0e1526] border-2 border-indigo-500/40 p-6 space-y-5 shadow-2xl text-white">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-300">
+                  <MoveRight className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-black text-white">Chuyển Thư Mục Cho Đề Thi</h3>
+                  <p className="text-xs text-slate-400 truncate max-w-[240px]">{movingExam.title}</p>
+                </div>
+              </div>
+              <button
+                onClick={() => setMovingExam(null)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="space-y-2">
+              <label className="block text-xs font-bold text-slate-300">
+                Chọn Thư Mục Đích <span className="text-rose-400">*</span>
+              </label>
+              <select
+                value={targetMoveFolderId}
+                onChange={(e) => setTargetMoveFolderId(e.target.value)}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-indigo-400"
+              >
+                {examFolders.map((f) => (
+                  <option key={f.id} value={f.id}>
+                    📁 {f.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="flex items-center justify-end gap-2 pt-2 border-t border-slate-800">
+              <button
+                type="button"
+                onClick={() => setMovingExam(null)}
+                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-colors cursor-pointer"
+              >
+                Hủy
+              </button>
+              <button
+                type="button"
+                onClick={handleExecuteMoveExam}
+                className="px-5 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white font-black text-xs transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+              >
+                <MoveRight className="w-4 h-4" />
+                <span>Chuyển Thư Mục</span>
+              </button>
             </div>
           </div>
         </div>

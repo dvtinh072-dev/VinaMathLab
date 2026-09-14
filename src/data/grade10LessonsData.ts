@@ -9779,6 +9779,18 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Hướng gió, vận tốc máy bay và chuyển động có hướng",
   "scenarioFrames": [],
   "interactiveType": "vector",
+  "youtubeVideoId": "FTTZY9b1ous",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 7 - Các khái niệm mở đầu (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "FTTZY9b1ous",
+      "title": "Tiết 1: Khái niệm vectơ, độ dài vectơ, hai vectơ cùng phương & cùng hướng"
+    },
+    {
+      "id": "GNr6Y5UijN4",
+      "title": "Tiết 2: Hai vectơ bằng nhau, vectơ-không & Hướng dẫn giải bài tập SGK"
+    }
+  ],
   "theorySections": [
     {
       "index": "1",
@@ -10555,6 +10567,26 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Hợp lực kéo tàu và chuyển động của ca nô trên dòng sông",
   "scenarioFrames": [],
   "interactiveType": "vector",
+  "youtubeVideoId": "KonKbScvWL0",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 8 - Tổng và hiệu của hai vectơ (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "KonKbScvWL0",
+      "title": "Tiết 1: Tổng của hai vectơ & Quy tắc ba điểm, Quy tắc hình bình hành"
+    },
+    {
+      "id": "g8QmUFmz4v0",
+      "title": "Tiết 2: Tính chất của phép cộng vectơ & Hợp lực trong cơ học"
+    },
+    {
+      "id": "FOEbq9vBplA",
+      "title": "Tiết 3: Hiệu của hai vectơ, vectơ đối & Quy tắc trừ"
+    },
+    {
+      "id": "eN71nsLiZBg",
+      "title": "Tiết 4: Tính chất trung điểm, trọng tâm & Hướng dẫn giải bài tập SGK"
+    }
+  ],
   "theorySections": [
     {
       "index": "1",
@@ -11322,6 +11354,22 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Tỉ lệ lực tác dụng, vận tốc biến đổi và phân tích lực trong cơ học",
   "scenarioFrames": [],
   "interactiveType": "vector",
+  "youtubeVideoId": "nm35fHPxnPE",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 9 - Tích của một vectơ với một số (Tiết 1) - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "nm35fHPxnPE",
+      "title": "Tiết 1: Định nghĩa tích của vectơ với một số & Các tính chất cơ bản"
+    },
+    {
+      "id": "i6dbBGlVd6o",
+      "title": "Tiết 2: Điều kiện hai vectơ cùng phương & Ba điểm thẳng hàng"
+    },
+    {
+      "id": "i1VJv-yChFI",
+      "title": "Tiết 3: Hệ thức trung điểm, trọng tâm & Phân tích một vectơ theo hai vectơ không cùng phương"
+    }
+  ],
   "theorySections": [
     {
       "index": "1",

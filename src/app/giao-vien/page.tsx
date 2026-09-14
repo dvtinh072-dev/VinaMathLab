@@ -654,10 +654,14 @@ export default function GiaoVienPage() {
       if (data.success && data.rawText) {
         setMatrixRawText(data.rawText);
         const parsedMat = parseMatrixFromRawText(data.rawText, matrixGradeNumber);
-        setMatrixTitle(parsedMat.title || matrixTitle);
-        setMatrixDuration(parsedMat.durationMinutes || matrixDuration);
-        setMatrixTopics(parsedMat.topics);
-        setMatrixUploadMode("manual");
+        if (parsedMat.topics && parsedMat.topics.length > 0) {
+          setMatrixTitle(parsedMat.title || matrixTitle);
+          setMatrixDuration(parsedMat.durationMinutes || matrixDuration);
+          setMatrixTopics(parsedMat.topics);
+          setMatrixUploadMode("manual");
+        } else {
+          alert("Đã nhận diện nội dung văn bản file nhưng chưa bóc tách được bảng ma trận phân phối câu hỏi. Vui lòng kiểm tra lại cấu trúc bảng hoặc dùng file biểu mẫu tải về từ hệ thống.");
+        }
       } else {
         alert(data.error || "Không thể phân tích file ma trận");
       }
@@ -665,6 +669,7 @@ export default function GiaoVienPage() {
       alert("Lỗi xử lý file ma trận: " + err?.message);
     } finally {
       setIsGeneratingFromMatrix(false);
+      e.target.value = "";
     }
   };
 
@@ -2026,7 +2031,7 @@ Câu 3: Tìm x...
                   </div>
                   <input
                     type="file"
-                    accept=".docx,.txt,.md,.pdf,.png,.jpg,.jpeg,.webp,.bmp"
+                    accept=".docx,.doc,.xlsx,.xls,.csv,.txt,.md,.pdf,.png,.jpg,.jpeg,.webp,.bmp"
                     onChange={handleFileUpload}
                     className="text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-600 file:text-white hover:file:bg-blue-500 cursor-pointer"
                   />

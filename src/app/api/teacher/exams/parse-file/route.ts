@@ -1,8 +1,213 @@
 import { NextResponse } from "next/server";
+import * as XLSX from "xlsx";
 import { parseExamText } from "@/lib/examParser";
 import { getAiConfiguration } from "@/lib/geminiChatService";
 
 export const dynamic = "force-dynamic";
+
+/**
+ * Trích xuất text từ HTML (bảo toàn cấu trúc bảng table -> dòng và tab)
+ */
+function extractTextFromHtml(html: string): string {
+  const text = html
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/p>/gi, "\n")
+    .replace(/<\/tr>/gi, "\n")
+    .replace(/<\/td>|<\/th>/gi, "\t")
+    .replace(/<[^>]+>/g, " ");
+
+  return text
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .split("\n")
+    .map((l) => l.trim())
+    .filter((l) => l.length > 0)
+    .join("\n");
+}
+
+/**
+ * Trích xuất text từ file Excel (.xlsx, .xls)
+ */
+function extractTextFromExcel(buffer: Buffer): string {
+  try {
+    const workbook = XLSX.read(buffer, { type: "buffer" });
+    const allCsvs: string[] = [];
+    for (const name of workbook.SheetNames) {
+      const sheet = workbook.Sheets[name];
+      if (sheet) {
+        const csv = XLSX.utils.sheet_to_csv(sheet, { FS: "\t" });
+        if (csv.trim()) {
+          allCsvs.push(csv.trim());
+        }
+      }
+    }
+    return allCsvs.join("\n\n");
+  } catch (e: any) {
+    console.warn("Lỗi đọc file Excel qua XLSX:", e?.message);
+    return "";
+  }
+}
+
+/**
+ * Trích xuất text từ file Word .doc (cả HTML-based doc và binary doc)
+ */
+function extractTextFromDoc(buffer: Buffer): string {
+  // 1. Kiểm tra xem có phải file HTML-based doc không
+  const utf8Str = buffer.toString("utf-8");
+  if (
+    utf8Str.includes("<html") ||
+    utf8Str.includes("<table") ||
+    utf8Str.includes("<body") ||
+    utf8Str.includes("xmlns:w") ||
+    utf8Str.includes("xmlns:o")
+  ) {
+    return extractTextFromHtml(utf8Str);
+  }
+
+  // 2. Binary Word 97-2003: trích xuất chuỗi có nghĩa
+  const latin1 = buffer.toString("latin1");
+  if (latin1.includes("<html") || latin1.includes("<table")) {
+    return extractTextFromHtml(latin1);
+  }
+
+  // Lấy các chuỗi ký tự in được (printable characters)
+  const printable = buffer
+    .toString("utf-8")
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (printable.length > 50) {
+    return printable;
+  }
+
+  return "";
+}
+
+/**
+ * Trích xuất text từ file Word .docx
+ */
+async function extractTextFromDocx(buffer: Buffer): Promise<string> {
+  // Kiểm tra nếu buffer thực chất là HTML được lưu với đuôi .docx
+  const startStr = buffer.slice(0, 200).toString("utf-8");
+  if (startStr.includes("<html") || startStr.includes("<table") || startStr.includes("<xml")) {
+    return extractTextFromHtml(buffer.toString("utf-8"));
+  }
+
+  try {
+    const mammoth = await import("mammoth");
+
+    // Thử convert sang HTML trước để giữ trọn vẹn cấu trúc bảng (table rows)
+    const htmlResult = await mammoth.convertToHtml({ buffer });
+    if (htmlResult.value && htmlResult.value.includes("<table")) {
+      const fromHtml = extractTextFromHtml(htmlResult.value);
+      if (fromHtml.trim().length > 30) {
+        return fromHtml;
+      }
+    }
+
+    // Lấy raw text
+    const mammothRes = await mammoth.extractRawText({ buffer });
+    if (mammothRes.value && mammothRes.value.trim().length > 0) {
+      return mammothRes.value;
+    }
+
+    if (htmlResult.value && htmlResult.value.trim().length > 0) {
+      return extractTextFromHtml(htmlResult.value);
+    }
+  } catch (e: any) {
+    console.warn("Lỗi đọc docx bằng mammoth:", e?.message);
+  }
+
+  return "";
+}
+
+/**
+ * Trích xuất text từ file PDF
+ */
+async function extractTextFromPdf(buffer: Buffer): Promise<string> {
+  let extractedText = "";
+
+  // 1. Thử dùng pdf-parse
+  try {
+    const { PDFParse } = await import("pdf-parse");
+    const parser = new PDFParse({ data: buffer });
+    const pdfRes = await parser.getText();
+    const anyRes = pdfRes as any;
+    if (anyRes) {
+      if (typeof anyRes.text === "string" && anyRes.text.trim()) {
+        extractedText = anyRes.text.trim();
+      } else if (anyRes.pages && Array.isArray(anyRes.pages)) {
+        extractedText = anyRes.pages.map((p: any) => p.text || "").join("\n\n").trim();
+      } else if (typeof anyRes === "string") {
+        extractedText = anyRes.trim();
+      }
+    }
+    await parser.destroy();
+  } catch (pdfErr: any) {
+    console.warn("Lỗi đọc PDF bằng pdf-parse:", pdfErr?.message);
+  }
+
+  // 2. Fallback stream decompression nếu pdf-parse trả về rỗng
+  if (!extractedText || extractedText.trim().length < 40) {
+    try {
+      const zlib = await import("zlib");
+      const content = buffer.toString("latin1");
+      const streamRegex = /stream\r?\n([\s\S]*?)\r?\nendstream/g;
+      let match: RegExpExecArray | null;
+      const streamTexts: string[] = [];
+
+      while ((match = streamRegex.exec(content)) !== null) {
+        const rawStream = Buffer.from(match[1], "latin1");
+        let uncompressed: Buffer | null = null;
+        try {
+          uncompressed = zlib.inflateSync(rawStream);
+        } catch {
+          try {
+            uncompressed = zlib.inflateRawSync(rawStream);
+          } catch {
+            uncompressed = rawStream;
+          }
+        }
+        if (uncompressed) {
+          const str = uncompressed.toString("utf-8");
+          const textMatches = str.match(/\((.*?)\)\s*(?:Tj|'|")/g);
+          if (textMatches) {
+            const row = textMatches
+              .map((m) => m.replace(/^\(|\)\s*(?:Tj|'|")$/g, ""))
+              .join(" ")
+              .trim();
+            if (row.length > 2) streamTexts.push(row);
+          }
+        }
+      }
+      if (streamTexts.length > 0) {
+        extractedText = streamTexts.join("\n");
+      }
+    } catch (streamErr: any) {
+      console.warn("Lỗi fallback decompress PDF:", streamErr?.message);
+    }
+  }
+
+  // 3. Fallback Gemini Vision nếu file scan và có API Key
+  if (!extractedText || extractedText.trim().length < 60) {
+    const aiConfig = await getAiConfiguration();
+    if (aiConfig.geminiApiKey) {
+      try {
+        const aiText = await ocrWithGemini(buffer, "application/pdf", aiConfig.geminiApiKey);
+        if (aiText) extractedText = aiText;
+      } catch (ocrErr: any) {
+        console.warn("Lỗi Gemini OCR PDF:", ocrErr?.message);
+      }
+    }
+  }
+
+  return extractedText;
+}
 
 export async function POST(request: Request) {
   try {
@@ -22,51 +227,33 @@ export async function POST(request: Request) {
 
     // 1. File Word (.docx)
     if (fileName.endsWith(".docx")) {
-      try {
-        const mammoth = await import("mammoth");
-        const mammothRes = await mammoth.extractRawText({ buffer });
-        extractedText = mammothRes.value;
-      } catch (e: any) {
-        return NextResponse.json(
-          { success: false, error: "Không thể đọc file Word (.docx): " + (e?.message || "") },
-          { status: 400 }
-        );
-      }
+      extractedText = await extractTextFromDocx(buffer);
     }
-    // 2. File Text / Markdown (.txt, .md)
+    // 2. File Word (.doc)
+    else if (fileName.endsWith(".doc")) {
+      extractedText = extractTextFromDoc(buffer);
+    }
+    // 3. File Excel (.xlsx, .xls)
+    else if (fileName.endsWith(".xlsx") || fileName.endsWith(".xls")) {
+      extractedText = extractTextFromExcel(buffer);
+    }
+    // 4. File CSV / TSV (.csv, .tsv)
+    else if (fileName.endsWith(".csv") || fileName.endsWith(".tsv")) {
+      let str = buffer.toString("utf-8").replace(/^\uFEFF/, "");
+      if (str.includes("\x00")) {
+        str = buffer.toString("utf16le");
+      }
+      extractedText = str;
+    }
+    // 5. File Text / Markdown (.txt, .md)
     else if (fileName.endsWith(".txt") || fileName.endsWith(".md")) {
-      extractedText = buffer.toString("utf-8");
+      extractedText = buffer.toString("utf-8").replace(/^\uFEFF/, "");
     }
-    // 3. File PDF (.pdf)
+    // 6. File PDF (.pdf)
     else if (fileName.endsWith(".pdf")) {
-      try {
-        const { PDFParse } = await import("pdf-parse");
-        const parser = new PDFParse({ data: buffer });
-        const pdfRes = await parser.getText();
-        if (pdfRes && pdfRes.pages && Array.isArray(pdfRes.pages)) {
-          extractedText = pdfRes.pages.map((p: any) => p.text).join("\n\n");
-        } else if (typeof pdfRes === "string") {
-          extractedText = pdfRes;
-        }
-        await parser.destroy();
-      } catch (pdfErr: any) {
-        console.warn("Lỗi đọc PDF bằng pdf-parse:", pdfErr);
-      }
-
-      // Nếu PDF ít chữ hoặc là PDF dạng ảnh scan, thử dùng Gemini Vision nếu có API Key
-      if (!extractedText || extractedText.trim().length < 60) {
-        const aiConfig = await getAiConfiguration();
-        if (aiConfig.geminiApiKey) {
-          try {
-            const aiText = await ocrWithGemini(buffer, "application/pdf", aiConfig.geminiApiKey);
-            if (aiText) extractedText = aiText;
-          } catch (ocrErr: any) {
-            console.warn("Lỗi Gemini OCR PDF:", ocrErr);
-          }
-        }
-      }
+      extractedText = await extractTextFromPdf(buffer);
     }
-    // 4. File Ảnh (.jpg, .jpeg, .png, .webp, .bmp)
+    // 7. File Ảnh (.jpg, .jpeg, .png, .webp, .bmp)
     else if (
       fileName.endsWith(".jpg") ||
       fileName.endsWith(".jpeg") ||
@@ -86,7 +273,7 @@ export async function POST(request: Request) {
           {
             success: false,
             error:
-              "Để nhận diện đề thi từ file ảnh chụp (OCR hình ảnh), hệ thống cần cấu hình Gemini API Key. Thầy/Cô vui lòng cấu hình API Key trong mục Quản trị hệ thống hoặc tải lên file Word (.docx), PDF hoặc Text (.txt).",
+              "Để nhận diện đề thi từ file ảnh chụp (OCR hình ảnh), hệ thống cần cấu hình Gemini API Key. Thầy/Cô vui lòng cấu hình API Key trong mục Quản trị hệ thống hoặc tải lên file Word (.doc, .docx), Excel (.xlsx, .csv), PDF hoặc Text (.txt).",
           },
           { status: 400 }
         );
@@ -103,20 +290,31 @@ export async function POST(request: Request) {
           { status: 500 }
         );
       }
-    } else {
-      return NextResponse.json(
-        {
-          success: false,
-          error:
-            "Định dạng file không được hỗ trợ. Vui lòng tải file Word (.docx), PDF (.pdf), File Ảnh (.jpg, .png) hoặc Text (.txt)",
-        },
-        { status: 400 }
-      );
+    }
+    // 8. Fallback định dạng văn bản bất kỳ
+    else {
+      const fallbackStr = buffer.toString("utf-8").replace(/^\uFEFF/, "").trim();
+      if (fallbackStr.length > 20) {
+        extractedText = fallbackStr;
+      } else {
+        return NextResponse.json(
+          {
+            success: false,
+            error:
+              "Định dạng file không được hỗ trợ. Vui lòng tải file Word (.doc, .docx), Excel (.xlsx, .csv), PDF (.pdf), File Ảnh (.jpg, .png) hoặc Text (.txt)",
+          },
+          { status: 400 }
+        );
+      }
     }
 
     if (!extractedText.trim()) {
       return NextResponse.json(
-        { success: false, error: "Không tìm thấy nội dung văn bản trong file đã tải lên" },
+        {
+          success: false,
+          error:
+            "Không tìm thấy nội dung văn bản trong file đã tải lên. Nếu đây là file ảnh scan hoặc PDF hình chụp, vui lòng cấu hình Gemini API Key để nhận diện (OCR), hoặc dùng file Word (.doc, .docx), Excel (.xlsx, .csv) hoặc Text (.txt).",
+        },
         { status: 400 }
       );
     }

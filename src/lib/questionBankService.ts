@@ -12,6 +12,8 @@ import { MultipleChoiceQuestionData } from "@/components/exam/QuestionMultipleCh
 import { TrueFalseQuestionData } from "@/components/exam/QuestionTrueFalse";
 import { ShortAnswerQuestionData } from "@/components/exam/QuestionShortAnswer";
 
+import { CustomExam } from "@/types/customExam";
+
 const BANK_BASE_DIR = path.join(process.cwd(), "src/data/bank");
 
 /**
@@ -30,9 +32,9 @@ export function getQuestionBankCatalog(gradeNumber: number = 10): QuestionBankCa
 }
 
 /**
- * Đọc danh sách câu hỏi của một chương cụ thể (On-demand server-side loading)
+ * Lấy danh sách câu hỏi của một chương cụ thể
  */
-export function getChapterQuestions(gradeNumber: number, fileKey: string): BankQuestion[] {
+export function getChapterQuestions(gradeNumber: number = 10, fileKey: string): BankQuestion[] {
   try {
     const filePath = path.join(BANK_BASE_DIR, `grade${gradeNumber}`, `${fileKey}.json`);
     if (!fs.existsSync(filePath)) return [];
@@ -60,14 +62,7 @@ function shuffleArray<T>(array: T[]): T[] {
  * Thuật toán RÚT ĐỀ THÔNG MINH từ Ngân hàng câu hỏi
  */
 export function drawExamFromBank(config: DrawExamConfig): {
-  exam: {
-    title: string;
-    gradeNumber: number;
-    targetClass: string;
-    durationMinutes: number;
-    totalQuestions: number;
-    questions: QuestionData[];
-  };
+  exam: CustomExam;
   stats: {
     totalRequested: number;
     totalDrawn: number;
@@ -170,7 +165,7 @@ export function drawExamFromBank(config: DrawExamConfig): {
   const examQuestions: QuestionData[] = [];
   let globalIdx = 1;
 
-  // PHẦN I: Trắc nghiệm nhiều lựa chọn
+  // Phần I: Trắc nghiệm 4 lựa chọn (MC)
   selectedMC.forEach((q) => {
     const keys: ("A" | "B" | "C" | "D")[] = ["A", "B", "C", "D"];
     const options = (q.options && q.options.length >= 2)
@@ -188,7 +183,7 @@ export function drawExamFromBank(config: DrawExamConfig): {
     const correctKey = (q.correctKey || "A") as "A" | "B" | "C" | "D";
 
     const mcq: MultipleChoiceQuestionData = {
-      id: `draw-${q.id}`,
+      id: q.id,
       type: "multiple_choice",
       index: globalIdx++,
       stem: q.stem,
@@ -201,45 +196,44 @@ export function drawExamFromBank(config: DrawExamConfig): {
     examQuestions.push(mcq);
   });
 
-  // PHẦN II: Trắc nghiệm Đúng/Sai
+  // Phần II: Trắc nghiệm Đúng / Sai (TF)
   selectedTF.forEach((q) => {
-    const rawStatements = q.statements && q.statements.length > 0
-      ? q.statements
-      : [
-          { id: "a", text: "Mệnh đề trên đúng với mọi giá trị xác định.", isCorrect: true },
-          { id: "b", text: "Tồn tại ít nhất một phản ví dụ cho mệnh đề.", isCorrect: false },
-          { id: "c", text: "Điều kiện cần và đủ được thỏa mãn.", isCorrect: true },
-          { id: "d", text: "Phủ định của mệnh đề luôn luôn đúng.", isCorrect: false },
-        ];
-
-    const subQuestions = rawStatements.map((s, sIdx) => ({
-      key: (["a", "b", "c", "d"][sIdx] || "a") as "a" | "b" | "c" | "d",
-      text: s.text,
-      isCorrect: s.isCorrect,
-    }));
-
+    const defaultStatements = [
+      { key: "a" as const, text: "Mệnh đề hoặc phát biểu thứ nhất", isCorrect: true },
+      { key: "b" as const, text: "Mệnh đề hoặc phát biểu thứ hai", isCorrect: false },
+      { key: "c" as const, text: "Mệnh đề hoặc phát biểu thứ ba", isCorrect: true },
+      { key: "d" as const, text: "Mệnh đề hoặc phát biểu thứ tư", isCorrect: false },
+    ];
+    let subQuestions = defaultStatements;
+    if (q.statements && q.statements.length > 0) {
+      subQuestions = q.statements.slice(0, 4).map((st, idx) => ({
+        key: ["a", "b", "c", "d"][idx] as "a" | "b" | "c" | "d",
+        text: st.text,
+        isCorrect: Boolean(st.isCorrect),
+      }));
+    }
     const tfq: TrueFalseQuestionData = {
-      id: `draw-${q.id}`,
+      id: q.id,
       type: "true_false",
       index: globalIdx++,
       stem: q.stem,
       subQuestions,
-      explanation: q.explanation,
+      explanation: q.explanation || "Học sinh kiểm tra từng mệnh đề theo định nghĩa và công thức.",
       topic: q.chapterName,
       difficulty: q.level,
     };
     examQuestions.push(tfq);
   });
 
-  // PHẦN III: Trắc nghiệm Trả lời ngắn
+  // Phần III: Trả lời ngắn (SA)
   selectedSA.forEach((q) => {
     const saq: ShortAnswerQuestionData = {
-      id: `draw-${q.id}`,
+      id: q.id,
       type: "short_answer",
       index: globalIdx++,
       stem: q.stem,
       correctAnswer: q.correctAnswer || "0",
-      explanation: q.explanation,
+      explanation: q.explanation || "Học sinh giải chi tiết và điền đáp số cuối cùng.",
       topic: q.chapterName,
       difficulty: q.level,
     };
@@ -252,14 +246,23 @@ export function drawExamFromBank(config: DrawExamConfig): {
     if (byLevelCount[q.level] !== undefined) byLevelCount[q.level]++;
   });
 
+  const examId = `exam-bank-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
+
   return {
     exam: {
+      id: examId,
       title: config.title || `Đề Khảo Sát Toán ${config.gradeNumber} - Rút Từ Ngân Hàng`,
+      grade: `lop-${config.gradeNumber}`,
       gradeNumber: config.gradeNumber,
       targetClass: config.targetClass || `Lớp ${config.gradeNumber}`,
+      folderId: "folder-all",
+      folderName: "Tất cả đề thi",
       durationMinutes: config.durationMinutes || 45,
       totalQuestions: examQuestions.length,
       questions: examQuestions,
+      createdAt: new Date().toISOString(),
+      allowReviewAnswers: true,
+      antiCheatEnabled: true,
     },
     stats: {
       totalRequested:

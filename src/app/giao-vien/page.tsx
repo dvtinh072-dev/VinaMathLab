@@ -246,7 +246,15 @@ export default function GiaoVienPage() {
         return;
       }
 
-      const newExam = data.exam;
+      const newExam = {
+        ...data.exam,
+        id: data.exam?.id || `exam-bank-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
+        grade: data.exam?.grade || `lop-${bankGradeNumber}`,
+        gradeNumber: data.exam?.gradeNumber || bankGradeNumber,
+        targetClass: data.exam?.targetClass || targetCls,
+        createdAt: data.exam?.createdAt || new Date().toISOString(),
+      };
+
       setTeacherExams(prev => [newExam, ...prev]);
 
       try {

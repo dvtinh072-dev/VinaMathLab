@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bq-10-c10-1",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hệ phương trình nào sau đây là hệ ba phương trình bậc nhất ba ẩn $x, y, z$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} 2x - y + z = 1 \\\\ x + 3y - 2z = 4 \\\\ 3x + 2y - z = 5 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} x^2 + y + z = 1 \\\\ 2x - y + z = 3 \\\\ x + y - z = 2 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} 2x - yz = 1 \\\\ x + y - 2z = 0 \\\\ 3x + y + z = 4 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} \\frac{1}{x} + y + z = 2 \\\\ 2x - y + z = 1 \\\\ x - 3y + z = 0 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định nghĩa, hệ phương trình bậc nhất ba ẩn có các phương trình mà mỗi ẩn số $x, y, z$ đều có bậc nhất và không có tích của các ẩn.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-2",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Nghiệm của hệ phương trình $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ là $(x_0; y_0; z_0)$. Giá trị của $x_0 + y_0 + z_0$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6$"
+      },
+      {
+        "key": "B",
+        "text": "$5$"
+      },
+      {
+        "key": "C",
+        "text": "$4$"
+      },
+      {
+        "key": "D",
+        "text": "$3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Từ phương trình thứ nhất ta có ngay $x + y + z = 6$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-3",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Một cửa hàng bán ba loại áo thun $A, B, C$. Ngày thứ nhất bán được 2 áo $A$, 3 áo $B$, 1 áo $C$ thu về 1.100.000 đồng. Ngày thứ hai bán được 3 áo $A$, 2 áo $B$, 2 áo $C$ thu về 1.300.000 đồng. Ngày thứ ba bán được 1 áo $A$, 1 áo $B$, 3 áo $C$ thu về 900.000 đồng. Giá tiền mỗi chiếc áo loại $A$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$200.000$ đồng"
+      },
+      {
+        "key": "B",
+        "text": "$150.000$ đồng"
+      },
+      {
+        "key": "C",
+        "text": "$250.000$ đồng"
+      },
+      {
+        "key": "D",
+        "text": "$180.000$ đồng"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Gọi giá tiền áo $A, B, C$ lần lượt là $x, y, z$ (nghìn đồng). Giải hệ ba phương trình bậc nhất ba ẩn: $2x+3y+z=1100$, $3x+2y+2z=1300$, $x+y+3z=900$. Ta được $x=200, y=200, z=100$. Vậy giá áo loại A là 200.000 đồng.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-4",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Phương pháp quy nạp toán học",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bước cơ sở trong phương pháp quy nạp toán học để chứng minh mệnh đề $P(n)$ đúng với mọi số nguyên dương $n$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kiểm tra mệnh đề $P(n)$ đúng với $n = 1$."
+      },
+      {
+        "key": "B",
+        "text": "Giả sử mệnh đề đúng với $n = k \\ge 1$."
+      },
+      {
+        "key": "C",
+        "text": "Chứng minh mệnh đề đúng với $n = k + 1$."
+      },
+      {
+        "key": "D",
+        "text": "Kết luận mệnh đề đúng với mọi $n \\ge 1$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Quy trình quy nạp gồm 2 bước: Bước 1 (Bước cơ sở) là kiểm tra mệnh đề đúng với giá trị đầu tiên $n = 1$ (hoặc $n = n_0$).",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-5",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Phương pháp quy nạp toán học",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Dùng phương pháp quy nạp toán học, ta chứng minh được tổng $S_n = 1 + 2 + 3 + \\dots + n$ bằng biểu thức nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{n(n+1)}{2}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{n(n-1)}{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$n(n+1)$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{n(2n+1)}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Công thức tổng của $n$ số nguyên dương đầu tiên là $S_n = \\frac{n(n+1)}{2}$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-6",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Ba đường conic và ứng dụng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường conic có tâm sai $e < 1$ là đường nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Đường elip"
+      },
+      {
+        "key": "B",
+        "text": "Đường parabol"
+      },
+      {
+        "key": "C",
+        "text": "Đường hypebol"
+      },
+      {
+        "key": "D",
+        "text": "Đường tròn"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định nghĩa đường conic: Nếu tâm sai $e < 1$ thì conic là elip; $e = 1$ là parabol; $e > 1$ là hypebol.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-7",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Ba đường conic và ứng dụng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của elip $(E)$ có độ dài trục lớn bằng $10$, độ dài trục nhỏ bằng $6$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{x^2}{25} + \\frac{y^2}{9} = 1$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{x^2}{100} + \\frac{y^2}{36} = 1$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{x^2}{25} - \\frac{y^2}{9} = 1$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{x^2}{9} + \\frac{y^2}{25} = 1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ta có $2a = 10 \\implies a = 5 \\implies a^2 = 25$; $2b = 6 \\implies b = 3 \\implies b^2 = 9$. Phương trình chính tắc là $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-8",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Ba đường conic và ứng dụng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho parabol $(P): y^2 = 8x$. Khoảng cách từ tiêu điểm $F$ đến đường chuẩn $\\Delta$ của parabol $(P)$ bằng:",
+    "correctAnswer": "4",
+    "explanation": "Phương trình chính tắc của parabol có dạng $y^2 = 2px$. Với $y^2 = 8x \\implies 2p = 8 \\implies p = 4$. Khoảng cách từ tiêu điểm đến đường chuẩn chính bằng tham số tiêu $p = 4$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-9",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Ba đường conic và ứng dụng",
+    "type": "short_answer",
+    "level": "VD",
+    "stem": "Một chiếc gương cầu có mặt cắt là một parabol có phương trình $y^2 = 16x$ (đơn vị: cm). Một nguồn sáng đặt tại tiêu điểm $F$ của gương. Khoảng cách từ đỉnh parabol $O(0;0)$ đến tiêu điểm $F$ bằng bao nhiêu cm?",
+    "correctAnswer": "4",
+    "explanation": "Ta có $2p = 16 \\implies p = 8$. Tiêu điểm $F$ có tọa độ $(p/2; 0) = (4; 0)$. Do đó khoảng cách $OF = 4\\text{ cm}$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-10",
+    "gradeNumber": 10,
+    "chapterId": "c10",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Biết hệ phương trình $\\begin{cases} x + 2y - z = 4 \\\\ 2x - y + 3z = 7 \\\\ 3x + y + 2z = 11 \\end{cases}$ có nghiệm duy nhất $(x; y; z)$. Tính giá trị của biểu thức $P = x + y + z$.",
+    "correctAnswer": "4",
+    "explanation": "Giải hệ bằng máy tính hoặc phương pháp Gauss ta được $x = 2, y = 1, z = 0$. Suy ra $P = 2 + 1 + 0 = 3$ hoặc thế ngược lại $x=2, y=1, z=0$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  }
+]

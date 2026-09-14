@@ -1,0 +1,508 @@
+[
+  {
+    "stem": "Tìm tập xác định của hàm số: ⑴ ⑵ ⑶ ⑷",
+    "explanation": "🖎 Lời giải\n\n⑴ \n\nHàm số là hàm đa thức nên xác định \n\nVậy tập xác định của hàm số là .\n\n⑵ \n\nHàm số xác định khi \n\nVậy tập xác định của hàm số là .\n\n⑶ \n\nTa có   với mọi .\n\nVậy tập xác định của hàm số là .\n\n⑷ \n\nHàm số xác định khi .\n\nVậy tập xác định của hàm số là .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-502",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tập xác định của hàm số: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹",
+    "explanation": "🖎 Lời giải\n\n⑴ \n\nHàm số xác định khi .\n\nVậy tập xác định của hàm số là .\n\n⑵ \n\nTa có  với mọi .\n\nVậy tập xác định của hàm số là .\n\n⑶ \n\nHàm số xác định khi .\n\nVậy tập xác định của hàm số là .\n\n⑷ \n\nHàm số xác định khi .\n\nVậy tập xác định của hàm số là .\n\n⑸ \n\nTa có \n\n.\n\nHàm số xác định khi \n\n.\n\nVậy tập xác định của hàm số là .\n\n⑹ \n\nHàm số xác định khi \n\n.\n\nVậy tập xác định của hàm số là .\n\n\n\n🏱 Dạng 2. Tập xác định của hàm số chứa tham số\n\n\n\nBài toán. Cho hàm . Tìm tất cả các giá trị tham số  để hàm số xác định trên tập .\n\n≫ Bước ⑴: \tTìm điều kiện xác định của hàm số (theo ). Gọi D là tập xác định của hàm số.\n\n≫ Bước ⑵: \tHàm số xác định trên tập  khi và chỉ khi .\n\n▶ Chú ý: Cho là biểu thức luôn có nghĩa\n\n▶ \tHàm số  xác định trên  vô nghiệm trên .\n\n▶ \tHàm số  xác định trên  \n\n▶ \tHàm số  xác định trên \n\n▶ \t\n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-503",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm tất cả các giá trị của để hàm số xác định trên .",
+    "explanation": "🖎 Lời giải\n\nĐiều kiện xác định của hàm số là .\n\nHàm số xác định trên \n\n với mọi \n\n vô nghiệm\n\n.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-504",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm các giá trị của để hàm số có tập xác định là",
+    "explanation": "🖎 Lời giải\n\nĐiều kiện xác định của hàm số là .\n\nKhi đó tập xác định của hàm số là .\n\nYêu cầu bài toán thỏa mãn .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-505",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm các giá trị của để hàm số xác định trên",
+    "explanation": "🖎 Lời giải\n\nĐiều kiện xác định của hàm số là \n\nHàm số xác định trên \n\n có nghiệm đúng với mọi  \n\n.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-506",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Xét tính đồng biến và nghịch biến của hàm số trên khoảng ⑴ ⑵",
+    "explanation": "🖎 Lời giải\n\nTXĐ: .\n\nVới mọi , , \n\nTa có \n\n⑴ \n\nVới mọi  và  ta có .\n\nSuy ra  hay .\n\nVậy hàm số đã cho đồng biến trên khoảng .\n\n⑵ \n\nVới mọi  và  ta có .\n\nSuy ra  hay .\n\nVậy hàm số đã cho đồng biến trên khoảng .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-507",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị thực của để hàm số nghịch biến trên",
+    "explanation": "🖎 Lời giải\n\nTập xác định: .\n\nVới mọi , , ta có: \n\n. \n\nHàm số nghịch biến trên  .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-508",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Có bao nhiêu giá trị nguyên của tham số thuộc đoạn để hàm số đồng biến trên ?",
+    "explanation": "🖎 Lời giải\n\nTập xác định: .\n\nVới mọi , , ta có: \n\n.\n\nHàm số đồng biến trên  .\n\nMà  và  nên .\n\nVậy có 4 giá trị nguyên của  thỏa mãn đề bài.",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-509",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị thực của tham số để hàm số nghịch biến trên khoảng .",
+    "explanation": "🖎 Lời giải\n\nXét \n\nVới mọi , , ta có: \n\n\n\n.\n\nHàm số nghịch biến trên \n\n, \n\nTa có \n\nTừ .\n\nVậy .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-510",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị của tham số m để hàm số nghịch biến trên từng khoảng xác định.",
+    "explanation": "🖎 Lời giải\n\nTập xác định .\n\n» Gọi là hai giá trị phân biệt tùy ý thuộc , \n\nTa có \n\nDo  nên , \n\nTừ đó suy ra để hàm số nghịch biến trên thì .\n\n» Gọi là hai giá trị phân biệt tùy ý thuộc , \n\nTa có \n\nDo  nên , \n\nTừ đó suy ra để hàm số nghịch biến trên thì .\n\nTóm lại  thì hàm số đã cho nghịch biến trên từng khoảng xác định.",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P1.docx",
+    "id": "bq-10-c6-511",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Chương 03 C Luyện tập Câu hỏi – Trả lời trắc nghiệm Tập xác định của hàm số là",
+    "options": [
+      {
+        "key": "A",
+        "text": ""
+      },
+      {
+        "key": "B",
+        "text": ""
+      },
+      {
+        "key": "C",
+        "text": ""
+      },
+      {
+        "key": "D",
+        "text": ""
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "🖎 Lời giải\n\nChọn A\n\nĐiều kiện xác định : \n\nNên tập xác định của hàm số là : .\n\nTập xác định của hàm số  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số đã cho xác định khi .\n\nVậy tập xác định của hàm số là .\n\nTập giá trị của hàm số  trên đoạn  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có  nên hàm số có tập giá trị là .\n\nTập xác định của hàm số  là\n\nA. .\tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nĐiều kiện: .\n\nVậy tập xác định của hàm số là: .\n\nTập giá trị của hàm số  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có  với mọi  nên hàm số có tập giá trị là . \n\nTập xác định của hàm số là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nĐiều kiện xác định của hàm số là .\n\nVậy tập xác định của hàm số là .\n\nCách khác: Điều kiện xác định của hàm số là .\n\nVậy tập xác định của hàm số là .\n\nTìm tập xác định của hàm số .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số xác định khi và chỉ khi \n\nVậy .\n\nTập xác định của hàm số là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐKXĐ: . \n\nVậy, tập xác định của hàm số là \n\nTập xác định của hàm số  là với là các số thực. Tính tổng \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐiều kiện xác định: .\n\n* Tập xác định .\n\nTìm tập xác định của hàm số .\n\nA. \tB. .\tC. .\tD. \n\n🖎 Lời giải\n\nChọn A\n\nĐiều kiện: \n\nTìm tập xác định  của hàm số .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn c\n\nĐiều kiện xác định: .\n\nVậy tập xác định của hàm số đã cho là: .\n\nHàm số nào sau đây có tập xác định là ?\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n có tập xác định là .\n\n có tập xác định là .\n\n có tập xác định là .\n\nTập xác định  của hàm số  là\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nHàm số  xác định khi và chỉ khi .\n\nVậy tập xác định của hàm số là .\n\nTập xác định  của hàm số  là\n\nA. \tB. \n\nC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nĐể hàm số  xác định thì: .\n\nTìm tập xác định D của hàm số: .\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nVới  thì  nên hàm số xác định với mọi .\n\nVới : Hàm số xác định khi .\n\nVậy .\n\nTập xác định của hàm số \n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nĐiều kiện xác dịnh của hàm số .\n\nGiả sử  là tập xác định của hàm số . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số xác định khi \n\nTXĐ:  nên \n\nHàm số  có tập xác định  Tính giá trị biểu thức \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số  xác định khi: .\n\nGọi  là nghiệm của phương trình .\n\nTheo Vi-et có .\n\nCó \n\nVậy .\n\nBiểu đồ dưới đây cho biết tăng trưởng GDP trong 9 tháng đầu năm trong giai đoạn 2011-2018 của Việt Nam.\n\n\n\nCho biết năm nào tăng trưởng GDP trong trong 9 tháng đầu năm trong giai đoạn 2011-2018 là cao nhất?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nNăm  có GDP là .\n\nBảng giá cước gọi quốc tế của công ty viễn thông A được cho bởi bảng sau:\n\nThời gian gọi (phút)\n\nGiá cước điện thoại (đồng/phút)\n\nKhông quá 8 phút\n\n5000\n\nTừ phút thứ 9 đến phút thứ 15\n\n5500\n\nTừ phút thứ 16 đến phút thứ 25\n\n6000\n\nTừ phút thứ 26 trở đi\n\n6500\n\nÔng An thực hiện cuộc gọi quốc tế 12 phút. Số tiền ông An phải trả là\n\nA. đồng.\tB. đồng.\tC. đồng.\tD. đồng.\n\n🖎 Lời giải\n\nChọn D\n\nSố tiền ông An phải trả là: đồng. \n\nBảng dưới đây thể hiện tỉ lệ đỗ tốt nghiệp THPT trên toàn quốc trong năm năm (từ năm 2018 đến năm 2022)\n\nNăm\n\n2018\n\n2019\n\n2020\n\n2021\n\n2022\n\nTỉ lệ đỗ tốt nghiệp (%)\n\n93,55\n\n95,93\n\n97,43\n\n95,57\n\n96,36\n\nCoi  là hàm số biểu thị sự phụ thuộc tỉ lệ đỗ tốt nghiệp THPT vào thời gian . Khẳng định nào sau đây sai\n\nA. Tập xác định của hàm số là .\n\nB. .\n\nC. Giá trị lớn nhất của hàm số  trên  là .\n\nD. Giá trị nhỏ nhất của hàm số  trên  là .\n\n🖎 Lời giải\n\nChọn C\n\nDo giá trị lớn nhất của hàm số  trên  là , nên đáp án sai là câu C.\n\nTrong các hàm số sau, hàm số nào nghịch biến trên ?\n\nA. .\tB. .\tC. .\tD. \n\n🖎 Lời giải\n\nChọn B\n\nHàm số  với  nghịch biến trên  khi và chỉ khi .\n\nXét sự biến thiên của hàm số  trên khoảng . Khẳng định nào sau đây đúng?\n\nA. Hàm số nghịch biến trên khoảng .\n\nB. Hàm số vừa đồng biến, vừa nghịch biến trên khoảng .\n\nC. Hàm số đồng biến trên khoảng .\n\nD. Hàm số không đồng biến, không nghịch biến trên khoảng .\n\n🖎 Lời giải\n\nChọn A\n\n\n\nVậy hàm số nghịch biến trên khoảng .\n\nCho hàm số  có bảng biến thiên như hình bên dưới. Khẳng định nào sao đây là đúng?\n\n\n\nA. Hàm số đồng biến trên khoảng .\n\nB. Hàm số đồng biến trên khoảng .\n\nC. Hàm số đồng biến trên khoảng .\n\nD. Hàm số đồng biến trên khoảng .\n\n🖎 Lời giải\n\nChọn C\n\nDựa vào bảng biến thiên: khoảng  có mũi tên hướng lên, diễn tả hàm số đồng biến.\n\nCho hàm số  có đồ thị là đường cong trong hình bên.\n\n\n\nHàm số đã cho đồng biến trên khoảng nào dưới đây?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nVì đồ thị hàm số đi lên khi  nên chọn đáp án B\n\nCho hàm số có đồ thị như hình bên dưới.\n\n\n\nKhẳng định nào sau đây là đúng?\n\nA. Hàm số nghịch biến trên khoảng .\tB. Hàm số đồng biến trên khoảng .\n\nC. Hàm số nghịch biến trên khoảng .\tD. Hàm số đồng biến trên khoảng .\n\n🖎 Lời giải\n\nChọn C\n\nTrên khoảng , đồ thị hàm số đi xuống từ trái sang phải nên hàm số nghịch biến.\n\nTrong mặt phẳng , điểm  thuộc đồ thị hàm số  lúc đó giá trị của bằng:\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n thuộc đồ thị hàm số  nên ta có \n\nĐáp án B\n\nChuẩn bị hết mùa rét năm 2024 một cửa hàng bán quần áo rét cần thanh lý 350 chiếc áo rét. Mỗi ngày cửa hàng đó thanh lý được 30 chiếc áo. Gọi  là số ngày đã bán,  là số áo còn lại sau  ngày bán. Hãy lập hàm số  theo biến .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nSố áo bán thanh lý được sau  ngày là  chiếc.\n\nVậy số áo còn lại sau  ngày là  chiếc.\n\nCho hàm số . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\n.\n\nVới giá trị nào của  thì hàm số  xác định trên .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số  xác định trên  khi phương trình  vô nghiệm\n\nHay .\n\nCho hàm số với là tham số. Số các giá trị nguyên dương của tham số để hàm số xác định với mọi thuộc là\n\nA. vô số.\tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nHàm số xác định với mọi thuộc \n\n Phương trình vô nghiệm\n\n\n\nVì là số nguyên dương nên \n\nVậy có 9 giá trị nguyên dương của thỏa đề bài.\n\nTìm giá trị của tham số để hàm số xác định trên nửa khoảng .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nHàm số xác định khi .\n\nHàm số xác định trên .\n\nTìm giá trị của tham số để hàm số xác định trên \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nĐiều kiện: \n\n\n\nTa có:\n\n\n\n\n\n\n\n, dấu bằng xảy ra khi .\n\nTừ và , ta suy ra: .\n\nVậy \n\nTìm tất cả các giá trị của để hàm số xác định trên khoảng ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nHàm số xác định khi .\n\nHàm số xác định trên khoảng khi và chỉ khi .\n\n.\n\nTất cả các giá trị của tham số  để hàm số  xác định trên khoảng là\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐiều kiện xác định của hàm số là: .\n\nTrường hợp 1. TXĐ của hàm số là:  loại.\n\nTrường hợp 2.TXĐ của hàm số là: .\n\nĐể hàm số xác định trên khoảng  thì .\n\n.\n\nSuy ra .\n\nCâu hỏi – Trả lời Đúng/sai\n\nCho đồ thị các hàm số . Khi đó:\n\n\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nĐồ thị hàm số  là một đường cong\n\n\n\n\n\n(b)\n\nĐồ thị hàm số cắt đồ thị hàm số  tại hai điểm\n\n\n\n\n\n(c)\n\nĐồ thị của hàm số  nghịch biến trên .\n\n\n\n\n\n(d)\n\nĐồ thị hàm số  nghịch biến trên khoảng \n\n\n\n\n\n🖎 Lời giải\n\n(a) Đồ thị hàm số  là một đường cong\n\nĐồ thị hàm số  là một đường thẳng\n\n» Chọn SAI.\n\n(b) Đồ thị hàm số cắt đồ thị hàm số  tại hai điểm\n\n» Chọn ĐÚNG.\n\n(c) Đồ thị của hàm số  nghịch biến trên .\n\nDựa vào đồ thị ta có:\n\nĐồ thị của hàm số  nghịch biến trên .\n\n» Chọn ĐÚNG.\n\n(d) Đồ thị hàm số  nghịch biến trên khoảng \n\nĐồ thị hàm số  nghịch biến trên khoảng  và đồng biến trên khoảng .\n\n» Chọn SAI.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nĐiểm  và thuộc đồ thị hàm số đã cho\n\n\n\n\n\n(b)\n\nĐiểm  không thuộc đồ thị hàm số đã cho\n\n\n\n\n\n(c)\n\nĐiểm thuộc đồ thị hàm số có hoành độ  là \n\n\n\n\n\n(d)\n\nNhững điểm thuộc đồ thị hàm số có tung độ bằng 0 là  và .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Điểm  và  thuộc đồ thị hàm số đã cho\n\nĐiểm  thuộc đồ thị hàm số vì  (đúng).\n\nĐiểm  không thuộc đồ thị hàm số vì  (sai).\n\n» Chọn SAI.\n\n(b) Điểm  không thuộc đồ thị hàm số đã cho\n\nĐiểm  thuộc đồ thị hàm số vì  (đúng).\n\n» Chọn ĐÚNG.\n\n(c) Điểm thuộc đồ thị hàm số có hoành độ  là \n\nVới  thì , ta có điểm  thuộc đồ thị.\n\n» Chọn ĐÚNG.\n\n(d) Những điểm thuộc đồ thị hàm số có tung độ bằng 0 là  và .\n\nVới  thì .\n\nVậy có hai điểm thuộc đồ thị có tung độ bằng 0 là  và .\n\n» Chọn ĐÚNG.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\nVới  thì .\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: \n\n» Chọn ĐÚNG.\n\n(b) \n\n; \n\n» Chọn SAI.\n\n(c) \n\n.\n\n» Chọn ĐÚNG.\n\n(d) Với  thì .\n\n\n\n.\n\n» Chọn SAI.\n\nBiểu đồ dưới đây cho biết số người bị nhiễm Covid-19 của một tỉnh trong một tháng của năm 2021.\n\n\n\nKhi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nSố người bị nhiễm Covid-19 trong mỗi tháng tương ứng là một hàm số\n\n\n\n\n\n(b)\n\nGọi  là số người bị nhiễm Covid-19 theo tháng,  là tháng tương ứng  nguyên dương). Hàm số theo biểu đồ trên có dạng . Khi đó tập giá trị của hàm số là \n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\nVới  thì , ta có điểm  thuộc đồ thị hàm số.\n\n\n\n\n\n🖎 Lời giải\n\n(a) Số người bị nhiễm Covid-19 trong mỗi tháng tương ứng là một hàm số\n\nỨng với mỗi tháng trong năm, ta chỉ có đúng một số lượng người nhiễm Covid-19 trong tỉnh đó. Vì vậy mối liên hệ này chính là một hàm số\n\n» Chọn ĐÚNG.\n\n(b) Gọi  là số người bị nhiễm Covid-19 theo tháng,  là tháng tương ứng  nguyên dương). Hàm số theo biểu đồ trên có dạng . Khi đó tập giá trị của hàm số là \n\nTập xác định hàm số: . \n\nTập giá trị hàm số là: .\n\n» Chọn ĐÚNG.\n\n(c) .\n\nTa có: .\n\n» Chọn SAI.\n\n(d) Với  thì , ta có điểm  thuộc đồ thị hàm số.\n\nVới  thì , ta có điểm  thuộc đồ thị hàm số.\n\n» Chọn ĐÚNG.\n\nCho hàm số  có đồ thị là đường gấp khúc như hình bên.\n\n\n\nKhi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTập giá trị hàm số \n\n\n\n\n\n(b)\n\nTa thấy điểm  thuộc đồ thị hàm số, điểm  không thuộc đồ thị hàm số.\n\n\n\n\n\n(c)\n\nTa có: .\n\n\n\n\n\n(d)\n\nHàm số đã cho đồng biến trên các khoảng: ; hàm số nghịch biến trên các khoảng: .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Tập giá trị hàm số \n\nTập xác định hàm số: . \n\nTập giá trị hàm số: \n\n» Chọn SAI.\n\n(b) Ta thấy điểm  thuộc đồ thị hàm số, điểm  không thuộc đồ thị hàm số.\n\nTa thấy điểm  thuộc đồ thị hàm số, điểm  không thuộc đồ thị hàm số.\n\n» Chọn ĐÚNG.\n\n(c) Ta có: .\n\nTa có: .\n\n» Chọn ĐÚNG.\n\n(d) Hàm số đã cho đồng biến trên các khoảng: ; hàm số nghịch biến trên các khoảng: .\n\nHàm số đã cho đồng biến trên các khoảng: ; hàm số nghịch biến trên các khoảng: .\n\n» Chọn ĐÚNG.\n\nMột công ty dịch vụ cho thuê xe hơi vào dịp tết với giá thuê mỗi chiếc xe hơi như sau: khách thuê tối thiểu phải thuê trọn ba ngày tết (mùng ) với giá 1000000 triệu đồng/ngày; những ngày còn lại (nếu khách còn thuê) sẽ được tính giá thuê là 700000 đồng/ngày. Giả sử  là tổng số tiền mà khách phải trả khi thuê một chiếc xe hơi của công ty và  là số ngày thuê của khách. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nHàm số  theo  là \n\n\n\n\n\n(b)\n\nĐiều kiện của  là \n\n\n\n\n\n(c)\n\nMột khách hàng thuê một chiếc xe hơi công ty trong 7 ngày tết thì sẽ trả khoản tiền thuê là (đồng).\n\n\n\n\n\n(d)\n\nAnh Bình định dành ra một khoản tối đa là 10 triệu đồng cho phí thuê xe đi chơi trong dịp tết, khi đó anh Bình có thể thuê xe của công ty trên tối đa 12 ngày.\n\n\n\n\n\n🖎 Lời giải\n\n(a) Hàm số  theo  là \n\nTa có:  \n\n» Chọn ĐÚNG.\n\n(b) Điều kiện của  là \n\nVới .\n\n» Chọn SAI.\n\n(c) Một khách hàng thuê một chiếc xe hơi công ty trong 7 ngày tết thì sẽ trả khoản tiền thuê là (đồng).\n\nVới  thì  (đồng).\n\nXét bất phương trình\n\n\n\n» Chọn ĐÚNG.\n\n(d) Anh Bình định dành ra một khoản tối đa là 10 triệu đồng cho phí thuê xe đi chơi trong dịp tết, khi đó anh Bình có thể thuê xe của công ty trên tối đa 12 ngày.\n\nVậy với khoản tiền 10 triệu đồng, anh Bình chỉ có thể thuê một chiếc xe tối đa 11 ngày.\n\n» Chọn SAI.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nĐiểm  thuộc đồ thị  của hàm số đã cho\n\n\n\n\n\n(b)\n\nĐiểm thuộc đồ thị hàm số có hoành độ bằng  là .\n\n\n\n\n\n(c)\n\nĐiểm thuộc đồ thị hàm số có hoành độ bằng  là .\n\n\n\n\n\n(d)\n\n là những điểm thuộc đồ thị hàm số có tung độ bằng .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Điểm  thuộc đồ thị  của hàm số đã cho\n\nXét hàm số . Ta có:  nên .\n\n» Chọn ĐÚNG.\n\n(b) Điểm thuộc đồ thị hàm số có hoành độ bằng  là .\n\nGọi  lần lượt là các điểm thuộc đồ thị hàm số có hoành độ bằng . \n\nTa có\n\n nên .\n\n» Chọn ĐÚNG.\n\n(c) Điểm thuộc đồ thị hàm số có hoành độ bằng  là .\n\n nên .\n\n» Chọn SAI.\n\n(d)  là những điểm thuộc đồ thị hàm số có tung độ bằng .\n\nGọi  là điểm thuộc đồ thị hàm số có tung độ bằng . \n\nTa có .\n\nVậy có hai điểm thuộc đồ thị hàm số mà tung độ bằng  là .\n\n» Chọn SAI.\n\nCho hàm số . \n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\nĐiểm  thuộc đồ thị hàm số.\n\n\n\n\n\n(c)\n\nHàm số đồng biến trên khoảng .\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) .\n\nTa có  thỏa mãn  \n\nNên  và  thỏa mãn  nên . \n\nSuy ra \n\n» Chọn ĐÚNG.\n\n(b) Điểm  thuộc đồ thị hàm số.\n\nTa có  thỏa mãn  nên . \n\nĐiểm thuộc đồ thị hàm số  là điểm  nên điểm  không thuộc đồ thị hàm số .\n\n» Chọn SAI.\n\n(c) Hàm số đồng biến trên khoảng .\n\nTrên khoảng  hàm số  là hàm số bậc nhất với hệ số  \n\nNên hàm số  nghịch biến trên khoảng . \n\n» Chọn SAI.\n\n(d) .\n\nTa có có  thỏa mãn  nên  và  thỏa mãn  nên . Suy ra .\n\n» Chọn ĐÚNG.\n\nCho hàm số  có đồ thị như hình vẽ:\n\n\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nĐiểm  thuộc đồ thị của hàm số.\n\n\n\n\n\n(b)\n\nHàm số  nghịch biến trên khoảng .\n\n\n\n\n\n(c)\n\nHàm số  đồng biến trên khoảng .\n\n\n\n\n\n(d)\n\nTập giá trị của hàm số là .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Điểm  thuộc đồ thị của hàm số.\n\nTừ đồ thị, ta thấy: Điểm  thuộc đồ thị hàm số nên điểm  không thuộc đồ thị của hàm số.\n\n» Chọn SAI.\n\n(b) Hàm số  nghịch biến trên khoảng .\n\nTừ đồ thị, ta thấy: Trên khoảng , hàm số có đồ thị là đường đi xuống nên hàm số nghịch biến trên .\n\n» Chọn ĐÚNG.\n\n(c) Hàm số  đồng biến trên khoảng .\n\nTừ đồ thị, ta thấy: Trên khoảng , hàm số có đồ thị là đường đi lên nên hàm số đồng biến trên .\n\n» Chọn ĐÚNG.\n\n(d) Tập giá trị của hàm số là \n\nTừ đồ thị, ta thấy: Tập giá trị của hàm số là .\n\n» Chọn SAI.\n\nCâu hỏi – Trả lời ngắn\n\nTập xác định hàm số  có dạng  với  là các số tự nhiên. Giá trị  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 5\n\nHàm số xác định khi và chỉ khi  . Tập xác định hàm số: .\n\nKhi đó \n\nTập xác định hàm số  có dạng  với  là các số tự nhiên. Giá trị  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 7\n\nHàm số xác định khi và chỉ khi\n\n\n\n\n\nTa có: ,\n\nsuy ra: .\n\nDấu đẳng thức xảy ra . \n\nDo vậy . Tập xác định hàm số: .\n\nKhi đó \n\nCho hàm số:  với  là tham số. Điều kiện của tham số  để hàm số đã cho xác định trên  có dạng  với  là các số tự nhiên. Tính giá trị \n\n🖎 Lời giải\n\n✓ Trả lời: –3\n\nHàm số xác định trên \n\n.\n\nVậy  là giá trị cần tìm.\n\nKhi đó \n\nCho . Có bao nhiêu giá trị nguyên của tham số  để .\n\n🖎 Lời giải\n\n✓ Trả lời: 2\n\nVới , ta có: . \n\nVới , ta có: .\n\nKhi đó: .\n\nVậy  thỏa mãn.\n\nCó bao nhiêu giá trị nguyên của tham số  trong đoạn  để hàm số  đồng biến trên ?\n\n🖎 Lời giải\n\n✓ Trả lời: 20\n\nXét  với mọi .\n\nTa có: .\n\nSuy ra: . Điều kiện để hàm số đồng biến trên  là . Vậy với  thì hàm số đã cho đồng biến trên .\n\nKhi đó có 20 giá trị nguyên của m\n\nAnh T cần đặt một tiệc cưới ước tính khoảng 30 đến 35 bàn. \n\n» Nhà hàng 1 đề nghị anh T đóng tiền cố định 20 triệu đồng, sau khi tiệc cưới diễn ra sẽ đóng khoản còn lại với số tiền 2 triệu đồng/1 bàn. \n\n» Nhà hàng 2 đề nghị anh T đóng tiền cố định 10 triệu đồng, sau khi tiệc cưới diễn ra sẽ đóng khoản còn lại với số tiền 2,5 triệu/1 bàn. \n\nĐể tiết kiệm được chi phí cho tiệc cưới, anh T nên lựa chọn nhà hàng n (giả sử rằng chất lượng phục vụ hai nhà hàng trên là ngang nhau)? Giá trị n bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nGọi  là số bàn tiệc thực tế trong đám cưới ( nguyên dương và )\n\nVà  (triệu đồng) là số tiền mà người đó phải trả cho nhà hàng.\n\nNếu đăng ký tại nhà hàng 1, anh T sẽ trả tiền theo công thức: .\n\nVới  thì , tức là anh T phải trả khoản tiền khoảng 80 triệu đến 90 triệu cho nhà hàng thứ nhất.\n\nNếu đăng ký tại nhà hàng 2, anh T sẽ trả tiền theo công thức: .\n\nVới  thì , tức là anh T phải trả khoản tiền khoảng 85 triệu đến 97,5 triệu cho nhà hàng thứ hai.\n\nVậy, nếu chất lượng phục vụ hai nhà hàng là tương đương, anh T nên chọn nhà hàng 1 để tiết kiệm một khoản chi phí tiệc cưới.\n\nTập xác định hàm số  có dạng  với  là các số tự nhiên. Tính giá trị \n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nHàm số xác định  . Tập xác định hàm số: .\n\nKhi đó \n\nTrong tập xác định hàm số  có bao nhiêu giá trị nguyên?\n\n🖎 Lời giải\n\n✓ Trả lời: 20\n\nHàm số xác định  .\n\nTập xác định hàm số: .\n\nKhi đó có 20 giá trị nguyên trong tập xác định của hàm số đã cho.\n\nCó bao nhiêu giá trị nguyên của  trong  để hàm số  xác định với mọi .\n\n🖎 Lời giải\n\n✓ Trả lời: 100\n\nHàm số xác định .\n\n» Trường hợp 1: . \n\nKhi đó tập xác định hàm số  không thể chứa đoạn .\n\n» Trường hợp 2: . \n\nKhi đó tập xác định hàm số \n\nHàm số xác định \n\n (thỏa ).\n\nVậy với  thì hàm số đã cho xác định với mọi .\n\nKhi đó  có 100 giá trị nguyên của \n\nCho hàm số  với  là tham số. Tìm giá trị của  sao cho .\n\n🖎 Lời giải\n\n✓ Trả lời: -2\n\n.\n\nVậy  là giá trị cần tìm.\n\nTập xác định hàm số  có dạng  với  là số tự nhiên. Giá trị  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nKhi  thì hàm số là  luôn xác định với .\n\nKhi  thì hàm số là  xác định khi \n\nDo đó hàm số đã cho xác định khi .\n\nVậy tập xác định của hàm số là .\n\nCho hàm số  (với m là tham số). Tìm các giá trị của  để đồ thị của hàm số  đi qua điểm .\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nĐồ thị của hàm số  đi qua điểm  khi và chỉ khi \n\n\n\nVậy chỉ có 1 giá trị m thỏa.\n\nCó bao nhiêu giá trị nguyên của tham số  để hàm số  xác định trên .\n\n🖎 Lời giải\n\n✓ Trả lời: 0\n\nHàm số xác định khi .\n\nNên tập xác định của hàm số là  với điều kiện .\n\nHàm số đã cho xác định trên  khi và chỉ khi  . Suy ra không có giá trị  thỏa mãn.\n\nCho hàm số . Có bao nhiêu giá trị nguyên của tham số  để điểm  thuộc đồ thị hàm số đã cho.\n\n🖎 Lời giải\n\n✓ Trả lời: 0\n\nĐiểm  thuộc đồ thị hàm số đã cho khi và chỉ khi \n\n\n\nVậy không có giá trị nguyên của tham số m.\n\nTập xác định hàm số  có dạng  với  là các số tự nhiên. Giá trị  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 6\n\nĐiều kiện xác định \n\nVậy tập xác định của hàm số là .\n\nKhi đó \n\nCó bao nhiêu giá trị nguyên của tham số trong  để hàm số  xác định trên tập .\n\n🖎 Lời giải\n\n✓ Trả lời: 14\n\nĐiều kiện .\n\nĐể hàm số xác định trên  thì .\n\nKhi đó trong  có 14 giá trị nguyên.\n\n---------------------------------- Hết ----------------------------------",
+    "type": "multiple_choice",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B1-HÀM SỐ và ĐỒ THỊ-P2.docx",
+    "id": "bq-10-c6-512",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Xác định parabol ⑴ , biết qua ,có trục đối xứng là . ⑵ , biết là đỉnh của . ⑶ :, biết đi qua , , ⑷ biết hoành độ đỉnh bằng và qua .",
+    "explanation": "🖎 Lời giải\n\n⑴ , biết  qua ,có trục đối xứng là .\n\nTa có: \n\n⑵ , biết  là đỉnh của .\n\nTa có :  \n\n⑶ :, biết  đi qua , , . \n\nTa có: .\n\n⑷  biết hoành độ đỉnh  bằng   và  qua .\n\nTa có: .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-513",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Xác định hàm số với , , là các tham số, biết rằng hàm số ấy đạt giá trị lớn nhất bằng tại và có đồ thị đi qua điểm .",
+    "explanation": "🖎 Lời giải\n\nTập xác định . \n\nTrên , do hàm số  đạt giá trị lớn nhất nên . \n\nDo đó theo giả thiết, ta có:  (nhận).\n\nVậy hàm số cần tìm là .",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-514",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị của tham số để parabol cắt đường thẳng tại đỉnh của nó.",
+    "explanation": "🖎 Lời giải\n\nĐỉnh của  là .\n\nTheo giả thiết,  thuộc đường thẳng  nên \n\nVậy .\n\n\n\n🏱 Dạng 2. Vẽ đồ thị hàm số bậc 2\n\n\n\nĐể vẽ đồ thị hàm số bậc hai  ta thực hiện theo các bước sau:\n\n» Bước 1. Xác định tọa độ đỉnh .\n\n» Bước 2. Vẽ trục đối xứng .\n\n» Bước 3. Lập bảng giá trị\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n» Bước 4. Vẽ Parabol\n\nLưu ý:\n\n🢬 \tKhi vẽ cần chú ý dấu của hệ số  (bề lõm lên trên nếu  , xuống dưới nếu  )\n\n🢬 \tĐồ thị của hàm số cắt trục tung tại điểm  \n\n🢬 \tĐồ thị của hàm số cắt trục hoành (nếu có) tại điểm  với  là nghiệm của phương trình \n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-515",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Lập bảng biến thiên và vẽ đồ thị của hàm số .",
+    "explanation": "🖎 Lời giải\n\nTa có , , . Suy ra toạ độ đỉnh là .\n\n\n\nDo đó hàm số nghịch biến trên khoảng  và đồng biến trên khoảng .\n\nVẽ đồ thị: Ta có đỉnh là  và trục đối xứng là .\n\nBảng giá trị \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTa có đồ thị của hàm số  là",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-516",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . ⑴ Lập bảng biến thiên và vẽ đồ thị của hàm số. ⑵ Tìm các giá trị của để và .",
+    "explanation": "🖎 Lời giải\n\n⑴ Lập bảng biến thiên và vẽ đồ thị  của hàm số.\n\nTa có , , . Suy ra toạ độ đỉnh là .\n\n\n\nDo đó hàm số đồng biến trên khoảng  và nghịch biến trên khoảng .\n\nVẽ đồ thị: Ta có đỉnh là  và trục đối xứng là .\n\nBảng giá trị\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTa có đồ thị của hàm số  là \n\n⑵ Tìm các giá trị của  để  và .\n\nTừ đồ thị ta thấy để  thì  và  thì .\n\n\n\n🏱 Dạng 3. Tìm tham số để hàm số bậc 2 đơn điệu \n\n\n\n» Trường hợp : Yêu cầu của bài toán .\n\n» Trường hợp : Yêu cầu của bài toán .\n\n» Trường hợp : Yêu cầu của bài toán . \n\nLưu ý: \n\n» Việc tìm điều kiện để hàm số  nghịch biến trên khoảng  được làm tương tự.\n\n» Có thể dựa vào định nghĩa tính đồng biến, nghịch biến của hàm số để thực hiện các bài toán trên.\n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-517",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị của tham số để hàm số ⑴ đồng biến trên . ⑵ nghịch biến trên .",
+    "explanation": "🖎 Lời giải\n\n⑴  đồng biến trên .\n\nTa có ,  nên hàm số đã cho đồng biến trên . \n\nDo vậy, yêu cầu của bài toán .\n\nKết luận: .\n\n⑵   nghịch biến trên .\n\nTa có   nên hàm số đã cho nghịch biến trên .\n\nDo vậy, yêu cầu của bài toán  .\n\nKết luận: .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-518",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị của tham số để hàm số ⑴ nghịch biến trên . ⑵ đồng biến trên .",
+    "explanation": "🖎 Lời giải\n\n⑴  nghịch biến trên  .\n\nTa có  nên hàm số đã cho nghịch biến trên  .\n\nDo vậy, yêu cầu của bài toán .\n\nKết luận: .\n\n⑵  đồng biến trên . \n\nTa có ,  với .\n\n» Trường hợp : , là hàm số nghịch biến trên  nên loại .\n\n» Trường hợp :  nên hàm số có BBT như sau: \n\n\n\n \n\n \n\ny\n\nx\n\n \n\n \n\n \n\nDựa vào BBT thấy hàm số không thể đồng biến trên . Tức  bị loại.\n\n» Trường hợp : Ta có  nên hàm số có BBT như sau: \n\n\n\nx\n\ny\n\n \n\n \n\n \n\n \n\n \n\nDựa vào BBT thấy yêu cầu của bài toán  . \n\nTóm lại: .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-519",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm các giá trị của tham số để hàm số nghịch biến trên .",
+    "explanation": "🖎 Lời giải\n\nTa có ,  với .\n\n» Trường hợp : Hàm số đã cho trở thành , là hàm số nghịch biến trên  nên cũng nghịch biến trên . Tức  thỏa mãn yêu cầu của bài toán.\n\n» Trường hợp : Ta có  nên hàm số nghịch biến trên \n\nDo vậy yêu cầu của bài toán    , đúng với .\n\n» Trường hợp : Ta có  nên hàm số nghịch biến trên .\n\nDo vậy yêu cầu của bài toán .\t\n\nTóm lại: .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-520",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho parabol . Xác định trục đối xứng, tọa độ đỉnh của parabol , tọa độ giao điểm của parabol với trục hoành.",
+    "explanation": "🖎 Lời giải\n\nTa có , , do vậy:\n\n có trục đối xứng là ;\n\n có đỉnh là .\n\nHoành độ giao điểm của  với trục hoành là nghiệm của . \n\nVậy tọa độ giao điểm của  với trục hoành là",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-521",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho parabol với . Xét dấu của biết rằng cắt trục hoành tại hai điểm phân biệt có hoành độ âm.",
+    "explanation": "🖎 Lời giải\n\n cắt Ox tại hai điểm phân biệt có hoành độ âm .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-522",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tất cả các giá trị của tham số để parabol và trục không có điểm chung.",
+    "explanation": "🖎 Lời giải\n\nPhương trình hoành độ giao điểm của  và trục  là  \n\nYêu cầu của bài toán   vô nghiệm  . Vậy .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-523",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho parabol và đường thẳng . Tìm tất cả các giá trị của tham số để tiếp xúc với .",
+    "explanation": "🖎 Lời giải\n\nPhương trình hoành độ giao điểm ;là: . \n\n tiếp xúc với  có nghiệm duy nhất .\n\nVậy .\n\n\n\n🏱 Dạng 5. Sự tương giao\n\n\n\nLoại 1:\tDựa vào đồ thị của hàm số  biện luận theo tham số  số nghiệm của \n\n» Vẽ đồ thị  của hàm số .\n\n» Tùy vào giá trị của  để chỉ ra số giao điểm của  và.\n\n» Số giao điểm của  và  cũng chính là số nghiệm của phương trình .\n\nLưu ý: \t là đường thẳng có phương ngang và cắt Oy tại điểm có tung độ .\n\nLoại 2:\tSự tương giao của đồ thị hàm số bậc nhất và bậc hai\n\nCho đồ thị  của hàm số  và đồ thị  của hàm số . \n\nToạ độ giao điểm của hai đồ thị và  là nghiệm của \n\nPhương trình hoành độ giao điểm của  và  là\n\n\n\nNhận xét: \n\n1. \tSố giao điểm của  và  bằng số nghiệm của hệ phương trình và cũng bằng số nghiệm của phương trình .\n\n2. \tNếu phương trình  vô nghiệm thì ta nói  và  không giao nhau.\n\n3. \tNếu phương trình  có nghiệm kép thì ta nói  và  tiếp xúc với nhau. \n\nLúc này ta nói  là tiếp tuyến của . \n\n4. \tNếu phương trình  có 2 nghiệm phân biệt thì ta nói  và  cắt nhau.\n\n\n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-524",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm tọa độ giao điểm của Parabol và đường thẳng : .",
+    "explanation": "🖎 Lời giải\n\nPhương trình hoành độ giao điểm .\n\nVới ; .\n\nTọa độ giao điểm của và  là .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-525",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho Parabol và đường thẳng . Tìm để tiếp xúc với . Tìm tọa độ tiếp điểm khi đó.",
+    "explanation": "🖎 Lời giải\n\nPhương trình hoành độ giao điểm .\n\nĐể  tiếp xúc với  thì .\n\nTọa độ tiếp điểm khi đó là .\n\nNhận xét: Từ phương trình (1) ta tính  . Để  tiếp xúc với thì (1) có nghiệm kép .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-526",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số có đồ thị như hình vẽ bên dưới. Dựa vào đồ thị tìm các giá trị của tham số để phương trình có 2 nghiệm phân biệt.",
+    "explanation": "🖎 Lời giải\n\n là phương trình hoành độ giao điểm của đồ thị hàm số  của  và .\n\nSố nghiệm phương trình  bằng số giao điểm của  và .\n\nDựa vào đồ thị ta thấy, yêu cầu bài toán . \n\nVậy .",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-527",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số có đồ thị như nhình vẽ bên dưới. Dựa vào đồ thị, tìm các giá trị của tham số để phương trình: có 2 nghiệm phân biệt dương.",
+    "explanation": "🖎 Lời giải\n\nPhương trình:  \n\nPhương trình  là phương trình hoành độ giao điểm của   và đường thẳng .\n\nSố nghiệm của phương trình  là số giao điểm của  và  .\n\nYêu cầu bài toán   .\n\nVậy .\n\n\n\n🏱 Dạng 6. Giá trị lớn nhất – Giá trị nhỏ nhất\n\n\n\nLoại 1:\tTìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số trên 1 tập cho trước\n\n» Lập bảng biến thiên\n\n» Xác định tập bài toán yêu cầu\n\n» Kết luận.\n\nLoại 2:\tTìm điều kiện để hàm số bậc hai đạt giá trị lớn nhất/nhỏ nhất.\n\nCho hàm số bậc hai: \n\n» Nếu  thì  đạt tại hoành độ đỉnh .\n\n» Nếu  thì  đạt tại hoành độ đỉnh .\n\nTrường hợp tập xác định khác , ta kẻ bảng biến thiên của hàm số trên tập đó để có được giá trị lớn nhất, giá trị nhỏ nhất.\n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-528",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm giá trị lớn nhất của hàm số đã cho trên .",
+    "explanation": "🖎 Lời giải\n\nTa có: ;.\n\nVì  nên hàm số nghịch biến trên , đồng biến trên . \n\nDựa vào bảng biến thiên, vậy  và .",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-529",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm giá trị lớn nhất và giá trị nhỏ nhất của hàm số trên .",
+    "explanation": "🖎 Lời giải\n\nTa có: ; \n\nVì  nên hàm số đồng biến trên , nghịch biến trên . \n\nDựa vào bảng biến thiên, vậy  và.",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-530",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Tìm giá trị thực của tham số để hàm số có giá trị nhỏ nhất bằng trên",
+    "explanation": "🖎 Lời giải\n\nHoành độ đỉnh: , suy ra .\n\nĐể hàm số có giá trị nhỏ nhất bằng  . (Thỏa mãn)",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-531",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số đạt giá trị nhỏ nhất bằng 2 khi và nhận giá trị bằng khi . Tính .",
+    "explanation": "🖎 Lời giải\n\nĐể hàm số  đạt giá trị nhỏ nhất bằng 2  khi  và nhận giá trị bằng  khi  khi và chỉ khi .",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-532",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Cho hàm số . Tìm giá trị thực của tham số để giá trị lớn nhất của hàm số đã cho đạt giá trị nhỏ nhất.",
+    "explanation": "🖎 Lời giải\n\nHoành độ đỉnh: , suy ra \n\n» Trường hợp 1: Khi  thì  tại điểm .\n\n.\n\nVậy  tại điểm .\n\n» Trường hợp 2: Khi  thì hàm số đã cho không có giá trị lớn nhất, chỉ có giá trị nhỏ nhất.\n\n» Trường hợp 3: Khi  thì hàm số  đã cho là hàm số bậc nhất, không có giá trị lớn nhất.\n\nKết luận: .\n\n\n\n🏱 Dạng 7. Bài toán thực tế\n\n\n\nBài toán:\tCác bài toán thực tế mà mô hình thực tiễn chưa chuyển về mô hình toán học. Các bước làm như sau: \n\n» Bước 1: \tDựa vào giả thiết của đề bài, xây dựng mô hình toán học cho vấn đề đang xét, tức diễn tả dưới “dạng ngôn ngữ toán học” cho mô hình mô phỏng thực tiễn. Căn cứ vào các yếu tố bài ra ta chọn biến số, tìm điều kiện tồn tại, đơn vị.\n\n» Bước 2: \tDựa vào các mối liên hệ ràng buộc giữa biến số với các giả thiết của đề bài cũng như các kiến thức liên quan đến thực tế, ta thiết lập hàm số bậc hai. Chuyển yêu cầu đặt ra đối với bài toán thực tiễn thành yêu cầu bài toán hàm số bậc hai. \n\n» Bước 3: \tDùng tính chất hàm số bậc hai để giải quyết bài toán hình thành ở bước 2. Lưu ý kiểm tra điều kiện, và kết quả thu được có phù hợp với bài toán thực tế đã cho chưa.\n\n\n\nPhương pháp",
+    "type": "essay",
+    "level": "VDC",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-533",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Một quả bóng được ném vào không trung có chiều cao tính từ lúc bắt đầu ném ra được cho bởi công thức (tính bằng mét), t là thời gian tính bằng giây . ⑴ Tính chiều cao lớn nhất quả bóng đạt được. ⑵ Hãy tính xem sau bao lâu quả bóng sẽ rơi xuống mặt đất ?",
+    "explanation": "🖎 Lời giải\n\n⑴ Tính chiều cao lớn nhất quả bóng đạt được. \n\nTa có: .\n\nVậy quả bóng đạt chiều cao lớn nhất bằng 4 m tại thời điểm  giây.\n\n⑵ Hãy tính xem sau bao lâu quả bóng sẽ rơi xuống mặt đất ?\n\nTa có:  (loại) hoặc  (nhận).\n\nVậy sau 3 giây quả bóng sẽ rơi xuống mặt đất.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-534",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Độ cao của quả bóng golf tính theo thời gian có thể được xác định bằng một hàm bậc hai. Với các thông số cho trong bảng sau, hãy xác định độ cao quả bóng đạt được tại thời điểm 3 giây ? Thời gian (giây) 0 0,5 1 2 Độ cao (mét) 0 28 48 64",
+    "explanation": "🖎 Lời giải\n\nĐộ cao của quả bóng tính theo thời gian được xác định bởi hàm số  (tính bằng mét), t : giây, .\n\nVới các thông số cho bởi bảng trên ta có:\n\n.\n\nVậy độ cao quả bóng đạt được tại thời điểm 3 giây là 48 m.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-535",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Một miếng nhôm có bề ngang 32 cm được uốn cong tạo thành máng dẫn nước bằng chia tấm nhôm thành 3 phần rồi gấp 2 bên lại theo một góc vuông như hình vẽ dưới. Hỏi bằng bao nhiêu để tạo ra máng có có diện tích mặt ngang lớn nhất để có thể cho nước đi qua nhiều nhất ?",
+    "explanation": "🖎 Lời giải\n\nGọi  là diện tích mặt ngang ứng với bề ngang  (cm) của phần gấp hai bên, ta có:\n\n, với .\n\nDiện tích mặt ngang lớn nhất khi hàm số  đạt giá trị lớn nhất trên .\n\nTa có: .\n\n.\n\nVậy  cm thì diện tích mặt ngang lớn nhất.",
+    "type": "essay",
+    "level": "VD",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-536",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Hai con chuồn chuồn bay trên hai quĩ đạo khác nhau, xuất phát cùng thời điểm. Một con bay trên quỹ đạo là đường thẳng từ điểm đến điểm với vận tốc . Con còn lại bay trên quĩ đạo là đường thẳng từ đến với vận tốc . Hỏi trong quá trình bay thì khoảng cách ngắn nhất hai con đạt được là bao nhiêu ?",
+    "explanation": "🖎 Lời giải\n\nXét tại thời điểm  (giây), , con chuồn chuồn bay từ A về O có tọa độ là .\n\nCon chuồn chuồn bay từ  về  trên quĩ đạo là đường thẳng có hệ số góc là .\n\nDo đó tại thời điểm , nó có tọa độ là .\n\nTa có: .\n\nKhi đó, khoảng cách giữa hai con chuồn chuồn là:\n\n\n\n nhỏ nhất khi hàm số  đạt giá trị nhỏ nhất trên .\n\nTa có: \n\n.\n\nVậy khoảng cách ngắn nhất của hai con chuồn chuồn trong quá trình bay là m.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-537",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Một cửa hàng bán bưởi Đoan Hùng của Phú Thọ với giá bán mỗi quả là 50000 đồng. Với giá bán này thì mỗi ngày cửa hàng chỉ bán được 40 quả. Cửa hàng dự định giảm giá bán, ước tính nếu cửa hàng cứ giảm mỗi quả 1000 đồng thì số bưởi bán tăng thêm được là 10 quả. Xác định giá bán để của hàng thu được lợi nhuận cao nhất, biết rằng giá nhập về ban đầu cho mỗi quả là 30000 đồng.",
+    "explanation": "🖎 Lời giải\n\nGọi  là giá bán thực tế của mỗi quả bưởi Đoan Hùng (: đồng, ).\n\nTương ứng với giá bán là  thì số quả bán được là: .\n\nGọi  là hàm lợi nhuận thu được (: đồng), ta có: \n\n\n\nLợi nhuận thu được lớn nhất khi hàm  đạt giá trị lớn nhất trên  \n\nTa có: \n\n.\n\nVậy với giá bán 42000 đồng mỗi quả bưởi thì cửa hàng thu được lợi nhuận lớn nhất.",
+    "type": "essay",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-538",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Ông Tiến có một mảnh đất hình tam giác vuông có diện tích . Ông Tiến có ý định đào ao thả cá có dạng hình chữ nhật trên khu đất của mình (như hình vẽ ). Hỏi rằng ông Tiến có thể đào một cái ao với diện tích lớn nhất là bao nhiêu?",
+    "explanation": "🖎 Lời giải\n\n\n\nGiả sử ao cá hình chữ nhật  như hình vẽ. \n\nDiện tích ao là  .\n\nĐặt \n\nTheo Talet ta có  \n\nvà  \n\nkhi đó , \n\nTa xét hàm số  với  có bảng biến thiên như sau:\n\n\n\nVậy ông Tiến có thể đào ao thả cá với diện tích lớn nhất là  khi đỉnh  là trung điểm của cạnh huyền .",
+    "type": "essay",
+    "level": "VD",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P1.docx",
+    "id": "bq-10-c6-539",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "stem": "Chương 03 C Luyện tập Câu hỏi – Trả lời trắc nghiệm Hàm số đồng biến trên khoảng nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": ""
+      },
+      {
+        "key": "B",
+        "text": ""
+      },
+      {
+        "key": "C",
+        "text": ""
+      },
+      {
+        "key": "D",
+        "text": ""
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "🖎 Lời giải\n\nChọn D\n\nHàm số bậc hai có  nên hàm số đồng biến trên .\n\nĐiểm  là đỉnh của Parabol nào sau đây?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nHoành độ đỉnh là . Từ đó loại câu B.\n\nThay hoành độ  vào phương trình Parabol ở các câu A, C, D, ta thấy chỉ có câu A thỏa điều kiện .\n\nBiết hàm số bậc hai  có đồ thị là một đường Parabol đi qua điểm  và có đỉnh . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTheo giả thiết ta có hệ:với \n\nVậy hàm bậc hai cần tìm là \n\nXác định hàm số  biết đồ thị của nó có đỉnh  và cắt trục hoành tại điểm có hoành độ bằng \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nDo đồ thị của nó có đỉnh  và cắt trụ hoành tại điểm có hoành độ bằng  nên ta có\n\n\n\nVậy \n\nCho parabol  có phương trình . Tìm , biết  đi qua điểm  và có đỉnh .\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\n đi qua điểm .\n\n có đỉnh .\n\nParabol  đi qua hai điểm và  có phương trình là\n\nA. .\tB. .\tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nParabol  đi qua hai điểm và  nên ta có hệ phương trình:\n\n Vậy hàm số cần tìm là \n\nCho  đi qua điểm  Khi đó\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nThay tọa độ vào .\n\nTa được: .\n\nParabol  đi qua  và có đỉnh . Khi đó tích  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nĐiều kiện \n\nTừ giả thiết ta có hệ   .\n\nCho parabol  có trục đối xứng là đường thẳng  và đi qua điểm . Tổng giá trị  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nVì parabol có trục đối xứng là đường thẳng và đi qua điểm \n\nnên ta có .\n\nDo đó .\n\nCho parabol  có đồ thị như hình sau\n\n\n\nPhương trình của parabol này là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐồ thị hàm số cắt trục tung tại điểm  nên .\n\nTọa độ đỉnh , ta có phương trình:   .\n\nVậy parabol cần tìm là: .\n\nCho parabol , có đồ thị như hình bên dưới.\n\n\n\nKhi đó có giá trị là:\n\nA. .\tB. 9.\tC. .\tD. 6.\n\n🖎 Lời giải\n\nChọn C\n\n\n\nParabol đi qua các điểm \n\nDo đó ta có hệ phương trình:\n\nKhi đó: \n\nCho hàm số đồ thị như hình. Tính giá trị biểu thức .\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nDo đồ thị hàm số có đỉnh là  \n\nDo đồ thị hàm số đi qua điểm \n\nTừ và \n\nĐồ thị hàm số ,  có hệ số  là\n\n\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nBề lõm hướng xuống \n\nNếu hàm số  có  và  thì đồ thị hàm số của nó có dạng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nDo  nên Parabol quay bề lõm lên trên, suy ra loại phương án . \n\nMặt khác do  nên đỉnh Parabol có hoành độ  nên loại phương án . Vậy chọn .\n\nCho hàm số  có đồ thị như hình bên dưới. Khẳng định nào sau đây đúng?\n\n`\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nParabol có bề lõm quay lên  loại D.\n\nParabol cắt trục tung tại điểm có tung độ âm nên  loại B, C. \n\nCho đồ thị hàm số  có đồ thị như hình vẽ bên dưới. Mệnh đề nào sau đây đúng?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTừ dáng đồ thị ta có .\n\nĐồ thị cắt trục  tại điểm có tung độ dương nên .\n\nHoành độ đỉnh  mà  suy ra .\n\nCho hàm số  có  thì đồ thị  của hàm số là hình nào trong các hình dưới đây\n\n\n\nA. hình .\tB. hình .\tC. hình .\tD. hình .\n\n🖎 Lời giải\n\nChọn C\n\nVì  nên đồ thị có bề lõm hướng xuống dưới  loại hình, hình.\n\n  nên trục đối xứng của nằm bên trái trục tung. Vậy hình thỏa mãn nên chọn đáp án\tC.\n\nBảng biến thiên sau là của hàm số nào?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTừ bảng biến thiên suy ra hệ số . Loại C, D\n\nToạ độ đỉnh  loại B\n\nĐồ thị trong hình vẽ dưới đây là của hàm số nào trong các phương án A;B;C;D sau đây?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐồ thị cắt trục tung tại điểm có tung độ bằng  nên loại B và C\n\nHoành độ của đỉnh là  nên ta loại A \n\nCho parabol  có đồ thị như hình sau\n\n\n\nPhương trình của parabol này là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐồ thị hàm số cắt trục tung tại điểm  nên .\n\nTọa độ đỉnh , ta có phương trình:   .\n\nVậy parabol cần tìm là: .\n\nĐồ thị hình bên dưới là đồ thị của hàm số bậc hai nào?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nDựa vào hình vẽ ta có hàm số bậc hai có hệ số  nên ta loại đáp án C, D.\n\nMặt khác đồ thị hàm số cắt trục hoành tại điểm có tọa độ , mà điểm  thuộc đồ thị hàm số  và không thuộc đồ thị hàm số  nên ta Chọn B\n\nTrên mặt phẳng tọa độ  cho Parabol như hình vẽ.\n\n\n\nHỏi parabol có phương trình nào trong các phương trình dưới đây?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nĐồ thị hàm số là parabol có bề lõm quay xuống nên hệ số . Loại đáp án A,B.\n\nĐồ thị cắt trục tung tại điểm có tung độ dương nên loại đáp án C.\n\nCho parabol  có đồ thị như hình bên. Khi đó  có giá trị là\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nParabol  đi qua các điểm , ,  nên có hệ phương trình:  .\n\nKhi đó: .\n\nHàm số nào sau đây có đồ thị như hình bên dưới\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nĐồ thị trên là của hàm số bậc hai với hệ số  và có tọa độ đỉnh là . Vậy đồ thị đã cho là đồ thị của hàm số .\n\nBảng biến thiên ở dưới là bảng biến thiên của hàm số nào trong các hàm số được cho ở bốn phương án A, B, C, D sau đây?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nParabol cần tìm phải có hệ số  và đồ thị hàm số phải đi qua điểm . Đáp án C thỏa mãn.\n\nBảng biến thiên sau đây là bảng biến thiên của hàm số nào?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nDựa vào BBT ta thấy:\n\nParabol có bề lõm quay lên trên nên hệ số  Loại A.\n\nParabol có đỉnh  nên thay  vào các đáp án B, C, D.\n\nNhận thấy chỉ có đáp án B thỏa mãn.\n\nCho hàm số  có đồ thị như hình bên dưới. Khẳng định nào sau đây đúng?\n\n`\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nParabol có bề lõm quay lên  loại D.\n\nParabol cắt trục tung tại điểm có tung độ âm nên  loại B, C. Chọn A\n\nCho hàm số  có đồ thị là parabol trong hình vẽ. Khẳng định nào sau đây là đúng?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nVì Parabol hướng bề lõm lên trên nên .\n\nĐồ thị hàm số cắt  tại điểm  ở dưới .\n\nHoành độ đỉnh Parabol là , mà .\n\nCho hàm số  có đồ thị như hình dưới đây. Khẳng định nào sau đây là đúng?\n\n\n\n\n\n\n\n\n\n\n\nA. , , .\tB. , , .\n\nC. , , .\tD. , , .\n\n🖎 Lời giải\n\nChọn C\n\nNhìn vào đồ thị ta có:\n\n• Bề lõm hướng xuống .\n\n• Hoành độ đỉnh .\n\n• Đồ thị hàm số cắt trục tung tại điểm có tung độ âm .\n\nDo đó: , , .\n\nCho parabol  có đồ thị như hình bên. Khi đó  có giá trị là\n\n\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nParabol  đi qua các điểm , ,  nên có hệ phương trình:  .\n\nKhi đó: .\n\nGiá trị nhỏ nhất của hàm số  đạt được tại\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có: \n\nDấu bằng xảy ra khi nên chọn đáp án B.\n\nGiá trị lớn nhất của hàm số  bằng:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nHàm số  có giá trị nhỏ nhất là .\n\nSuy ra hàm số  có giá trị lớn nhất là .\n\nTổng giá trị nhỏ nhất và giá trị lớn nhất của hàm số  trên miền  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nXét trên miền  thì hàm số có bảng biến thiên là\n\n\n\nTừ bảng biến thiên suy ra: Giá trị lớn nhất của hàm số bằng  và giá trị nhỏ nhất của hàm số bằng  nên tổng giá trị lớn nhất và giá trị nhỏ nhất là .\n\nGiá trị nhỏ nhất của hàm số  là:\n\nA. \tB. 1\tC. 4\tD. 3\n\n🖎 Lời giải\n\nChọn D\n\nTa có .\n\nSuy ra . Dấu bằng xảy ra khi và chỉ khi . Vậy giá trị nhỏ nhất của hàm số đã cho là 3.\n\nGọi  là tập hợp tất cả các giá trị dương của tham số  để giá trị nhỏ nhất của hàm số  trên đoạn  bằng . Tính tổng  các phần tử của \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có đỉnh .\n\nDo  nên . Khi đó đỉnh .\n\n\n\nGiá trị nhỏ nhất của hàm số  trên đoạn  là  tại . .\n\nHoành độ giao điểm của đường thẳng  với  là\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nPhương trình hoành độ giao điểm\n\n.\n\nCho hàm số . Giá trị của tham số  để đồ thị hàm số  cắt đường thẳng  tại hai điểm phân biệt ,  thỏa mãn  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nXét phương trình hoành độ giao điểm:  \n\nPhương trình có hai nghiệm phân biệt khi và chỉ khi  .\n\nGọi ,  là hai nghiệm phân biệt của nên theo Vi-et ta có: .\n\n   .\n\nVậy  là giá trị cần tìm.\n\nCổng Arch tại thành phố St.Louis của Mỹ có hình dạng là một parabol. Biết khoảng cách giữa hai chân cổng bằng m. Trên thành cổng, tại vị trí có độ cao m so với mặt đất, người ta thả một sợi dây chạm đất. Vị trí chạm đất của đầu sợi dây này cách chân cổng  một đoạn m. Giả sử các số liệu trên là chính xác. Hãy tính độ cao của cổng Arch.\n\n\n\nA. m.\tB. m.\tC. m.\tD. m.\n\n🖎 Lời giải\n\nChọn D\n\nGắn hệ toạ độ  sao cho gốc toạ độ trùng với trung điểm của AB, tia  là chiều dương của trục hoành.\n\nParabol có phương trình , đi qua các điểm:  và  nên ta có hệ\n\n\n\nSuy ra chiều cao của cổng là m.\n\nCô Tình có  lưới muốn rào một mảng vườn hình chữ nhật để trồng rau, biết rằng một cạnh là tường, cô Tình chỉ cần rào  cạnh còn lại của hình chữ nhật để làm vườn. Em hãy tính hộ diện tích lớn nhất mà cô Tình có thể rào được?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n\n\nGọi hai cạnh của hình chữ nhật có độ dài là ; .\n\nTa có .\n\nDiện tích hình chữ nhật là .\n\nVậy diện tích hình chữ nhật lớn nhất là , đạt được khi .\n\nMột quả bóng được ném vào không trung có chiều cao tính từ lúc bắt đầu ném ra được cho bởi công thức  (tính bằng mét), t  là thời gian tính bằng giây . Tính chiều cao lớn nhất quả bóng đạt được?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có: .\n\nVậy quả bóng đạt chiều cao lớn nhất bằng tại thời điểm  giây.\n\nCâu hỏi – Trả lời đúng/sai\n\nXét đồ thị của hàm số . Khi đó:\n\n\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\ncó toạ độ đỉnh \n\n\n\n\n\n(b)\n\ntrục đối xứng là \n\n\n\n\n\n(c)\n\ngiao điểm của đồ thị với trục tung là \n\n\n\n\n\n(d)\n\ngiao điểm của đồ thị với trục hoành là  và \n\n\n\n\n\n🖎 Lời giải\n\n(a) có toạ độ đỉnh \n\nTa có  nên parabol quay bề lõm xuống dưới, có toạ độ đỉnh \n\n» Chọn ĐÚNG.\n\n(b) trục đối xứng là .\n\nVà trục đối xứng là . \n\n» Chọn ĐÚNG.\n\n(c) giao điểm của đồ thị với trục tung là .\n\nGiao điểm của đồ thị với trục tung là . \n\n» Chọn ĐÚNG.\n\n(d) giao điểm của đồ thị với trục hoành là  và .\n\nGiao điểm của đồ thị với trục hoành là  và .\n\n» Chọn SAI.\n\nCho parabol  đi qua điểm .\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTrục đối xứng của parabol là \n\n\n\n\n\n(b)\n\nToạ độ đỉnh của parabol là .\n\n\n\n\n\n(c)\n\nHệ số  và .\n\n\n\n\n\n(d)\n\nHàm số đồng biến trên khoảng .\n\n\n\n\n\n🖎 Lời giải\n\nVì parabol  đi qua  nên ta có:  . \n\nVậy parabol là .\n\n(a) Trục đối xứng của parabol là \n\nParabol  có trục đối xứng là .\n\n» Chọn ĐÚNG.\n\n(b) Toạ độ đỉnh của parabol là .\n\nParabol  có toạ độ đỉnh là .\n\n» Chọn SAI.\n\n(c) Hệ số  và .\n\nParabol  có hệ số  và .\n\n» Chọn ĐÚNG.\n\n(d) Hàm số đồng biến trên khoảng .\n\nHàm số đồng biến trên khoảng  và nghịch biến trên khoảng .\n\n» Chọn ĐÚNG.\n\nCho parabol  và đường thẳng .\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nParabol  cắt đường thẳng  hai điểm phân biệt.\n\n\n\n\n\n(b)\n\nGiao điểm của parabol  và đường thẳng  là .\n\n\n\n\n\n(c)\n\nParabol  cắt trục hoành tại duy nhất một điểm.\n\n\n\n\n\n(d)\n\nParabol  cắt trục tung tại điểm có tung độ bằng .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Parabol  cắt đường thẳng  hai điểm phân biệt.\n\nXét phương trình hoành độ giao điểm của  và : \n\n. \n\nSuy ra parabol  cắt đường thẳng  hai điểm phân biệt.\n\n» Chọn ĐÚNG.\n\n(b) Giao điểm của parabol  và đường thẳng  là .\n\nGiao điểm của parabol  và đường thẳng  là .\n\n» Chọn ĐÚNG.\n\n(c) Parabol  cắt trục hoành tại duy nhất một điểm.\n\nPhương trình hoành độ giao điểm của  và trục hoành: .\n\nSuy ra parabol  cắt trục hoành tại hai điểm.\n\n» Chọn SAI.\n\n(d) Parabol  cắt trục tung tại điểm có tung độ bằng .\n\nGiao điểm của  và trục hoành là nghiệm của hệ phương trình: \n\nSuy ra parabol  cắt trục tung tại điểm có tung độ bằng .\n\n» Chọn SAI.\n\nCho hàm số bậc hai  có đồ thị như hình:\n\n\n\nKhi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n là hàm số bậc hai có đồ thị như hình vẽ bên trên\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nParabol đi qua điểm  nên suy ra .\n\n» Chọn ĐÚNG.\n\n(b) \n\nVì parabol có đỉnh  \n\nNên ta có hệ phương trình: \n\n» Chọn ĐÚNG.\n\n(c) \n\n» Chọn ĐÚNG.\n\n(d)  là hàm số bậc hai có đồ thị như hình vẽ bên trên\n\nVậy hàm số cần tìm là .\n\n» Chọn SAI.\n\nQuan sát đồ thị hàm số bậc hai  ở hình dưới đây\n\n\n\nKhi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\nToạ độ đỉnh , trục đối xứng \n\n\n\n\n\n(c)\n\nĐồng biến trên khoảng ; nghịch biến trên khoảng \n\n\n\n\n\n(d)\n\n thuộc các khoảng  và  thì \n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nNhánh cuối của đồ thị đi lên nên \n\n» Chọn ĐÚNG.\n\n(b) Toạ độ đỉnh , trục đối xứng \n\nToạ độ đỉnh , trục đối xứng \n\n» Chọn ĐÚNG.\n\n(c) Đồng biến trên khoảng ; nghịch biến trên khoảng \n\nĐồng biến trên khoảng ; Nghịch biến trên khoảng ;\n\n» Chọn SAI.\n\n(d)  thuộc các khoảng  và  thì \n\n thuộc các khoảng  và  thì \n\n» Chọn ĐÚNG.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n khi .\n\n\n\n\n\n(b)\n\n khi .\n\n\n\n\n\n(c)\n\nGiá trị nhỏ nhất của hàm số  bằng.\n\n\n\n\n\n(d)\n\nVới  thì đường thẳng  cắt đồ thị  tại 2 điểm phân biệt có hoành độ  thoả mãn \n\n\n\n\n\n🖎 Lời giải\n\n(a)  khi .\n\n khi .\n\n» Chọn SAI.\n\n(b)  khi .\n\n khi .\n\n» Chọn SAI.\n\n(c) Giá trị nhỏ nhất của hàm số  bằng.\n\nXét hàm số , có  \n\nNên giá trị nhỏ nhất của hàm số  là .\n\n» Chọn ĐÚNG.\n\n(d) Với  thì đường thẳng  cắt đồ thị  tại 2 điểm phân biệt có hoành độ  thoả mãn \n\nPhương trình hoành độ giao điểm của  và đồ thị  là: \n\n\n\nXét vế trái của  là: , có  suy ra  là giá trị nhỏ nhất. Đường thẳng  cắt parabol  tại hai điểm phân biệt  khi \n\nÁp dụng hệ thức Viète cho phương trình , ta có: .\n\nKhi đó . Suy ra \n\n(thoả mãn ).\n\nVậy với  thì đường thẳng  cắt đồ thị  tại hai điểm phân biệt có hoành độ  thoả mãn .\n\n» Chọn ĐÚNG.\n\nCho đồ thị hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTọa độ đỉnh .\n\n\n\n\n\n(b)\n\nBề lõm parabol hướng xuống.\n\n\n\n\n\n(c)\n\nParabol cắt  tại các điểm .\n\n\n\n\n\n(d)\n\nĐồ thị parabol như hình bên \n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) Tọa độ đỉnh .\n\n.\n\nTọa độ đỉnh  của parabol:  hay .\n\n» Chọn ĐÚNG.\n\n(b) Bề lõm parabol hướng xuống.\n\nPhương trình trục đối xứng parabol: . \n\nVì  nên bề lõm parabol hướng lên.\n\n» Chọn SAI.\n\n(c) Parabol cắt  tại các điểm .\n\nParabol cắt  tại điểm  với   hay .\n\nParabol cắt  tại các điểm  có hoành độ thỏa  hay .\n\n» Chọn ĐÚNG.\n\n(d) Đồ thị parabol như hình bên \n\nLấy điểm  đối xứng với  qua đường thẳng .\n\nQua năm điểm , ta vẽ được parabol như hình bên.\n\n\n\n» Chọn ĐÚNG.\n\nCho đồ thị hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTọa độ đỉnh .\n\n\n\n\n\n(b)\n\nPhương trình trục đối xứng parabol: .\n\n\n\n\n\n(c)\n\nBề lõm parabol hướng lên.\n\n\n\n\n\n(d)\n\nĐồ thị parabol như hình bên \n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) Tọa độ đỉnh .\n\n.\n\nTọa độ đỉnh  của parabol:  hay \n\n» Chọn SAI.\n\n(b) Phương trình trục đối xứng parabol: .\n\nPhương trình trục đối xứng parabol: . \n\n» Chọn SAI.\n\n(c) Bề lõm parabol hướng lên.\n\nVì  nên bề lõm parabol hướng lên.\n\n» Chọn ĐÚNG.\n\n(d) Đồ thị parabol như hình bên \n\nNếu ta tìm giao điểm giữa parabol với , tức là giải phương trình  trước, tuy nhiên phương trình này cho ta hai nghiệm vô tỉ (không đẹp). Chính vì thế nên ta chọn giải pháp lập bảng giá trị để tìm ra năm cặp  thỏa mãn hàm số với đỉnh I làm tâm của bảng giá trị đó.\n\nBảng giá trị\n\n\n\n0\n\n1\n\n2\n\n3\n\n4\n\n\n\n1\n\n\n\n\n\n\n\n1\n\n\n\n» Chọn ĐÚNG.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTọa độ đỉnh  của parabol .\n\n\n\n\n\n(b)\n\nBề lõm parabol hướng lên.\n\n\n\n\n\n(c)\n\nHàm số đã cho đồng biến trên khoảng  và nghịch biến trên khoảng \n\n\n\n\n\n(d)\n\nGiá trị lớn nhất của hàm số là , khi .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Tọa độ đỉnh  của parabol .\n\n.\n\nTập xác định: . \n\nTọa độ đỉnh  của parabol:\n\n hay .\n\n» Chọn ĐÚNG.\n\n(b) Bề lõm parabol hướng lên.\n\nĐịnh hướng cho bảng biến thiên: Do  nên bề lõm parabol hướng xuống.\n\n» Chọn SAI.\n\n(c) Hàm số đã cho đồng biến trên khoảng  và nghịch biến trên khoảng \n\nBảng biến thiên:\n\n\n\nKết luận:\n\nHàm số đã cho đồng biến trên khoảng  và nghịch biến trên khoảng \n\n» Chọn SAI.\n\n(d) Giá trị lớn nhất của hàm số là , khi .\n\nGiá trị lớn nhất của hàm số là , khi . (Hàm số không có giá trị nhỏ nhất)\n\n» Chọn ĐÚNG.\n\nCho hàm số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTập xác định: .\n\n\n\n\n\n(b)\n\nBề lõm parabol hướng lên\n\n\n\n\n\n(c)\n\nBảng biến thiên: \n\n\n\n\n\n\n\n(d)\n\nGiá trị lớn nhất của hàm số là , khi đó .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Tập xác định: .\n\n.\n\nTập xác định: . \n\n» Chọn ĐÚNG.\n\n(b) Bề lõm parabol hướng lên\n\nTọa độ đỉnh  của parabol:  hay .\n\nDo  nên bề lõm parabol hướng lên.\n\n» Chọn ĐÚNG.\n\n(c) Bảng biến thiên:\n\nBảng biến thiên:\n\n\n\n» Chọn ĐÚNG.\n\n(d) Giá trị lớn nhất của hàm số là , khi đó .\n\nHàm số đã cho đồng biến trên khoảng  và nghịch biến trên khoảng \n\nGiá trị nhỏ nhất của hàm số là , khi đó . (Hàm số không có giá trị lớn nhất).\n\n» Chọn SAI.\n\nCâu hỏi – Trả lời ngắn\n\nCho parabol , biết rằng parabol đi qua điểm  và có đỉnh . Tính tổng \n\n🖎 Lời giải\n\n✓ Trả lời: -1\n\nParabol  đi qua điểm  suy ra  \n\nMặt khác, đỉnh  của parabol có toạ độ là  nên:\n\n\n\nVậy parabol cần tìm là .\n\nKhi đó \n\nMột viên bi được ném xiên từ vị trí  cách mặt đất  theo quỹ đạo dạng parabol như hình vẽ sau đây. Khoảng cách từ vị trí  đến vị trí  là bao nhiêu mét? Biết rằng vị trí  là nơi viên bi rơi xuống chạm mặt đất. Kết quả làm tròn đến chữ số thập phân thứ nhất.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 2,2\n\nGiả sử gốc toạ độ tại điểm . \n\nHàm số của đồ thị biểu diễn đường đi của viên bi có dạng . \n\nTheo hình vẽ ta có: đồ thị có đỉnh là  và đi qua điểm  nên ta có\n\n \n\nDo đó, đồ thị hàm số biểu diễn đường đi của viên bi là .\n\nĐiểm  là giao điểm của đồ thị với trục hoành nên hoành độ của điểm  là nghiệm\n\ncủa phương trình  phương trình này và kết hợp với điều kiện  ta nhận .\n\nVậy khoảng cách từ vị trí  đến vị trí  là  mét.\n\nCho hàm số bậc hai có đồ thị là parabol  biết:  có giá trị nhỏ nhất bằng ; biết  đi qua điểm  và  cắt  tại điểm có tung độ bằng 1. Khi đó có bao nhiêu hàm số parabol thỏa yêu cầu bài toán?\n\n🖎 Lời giải\n\n✓ Trả lời: 2\n\n đi qua hai điểm  và  nên .\n\nMặt khác  \n\nThay (1) vào (2): .\n\nVới  thì  (nhận). Hàm số được xác định: .\n\nVới  thì  (nhận). Hàm số được xác định: .\n\nCho parabol . Điểm  là đỉnh của . Giá trị của  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nTa có: hoành độ đỉnh của  là .\n\nSuy ra.\n\nVậy .\n\nCho hàm số . Giá trị thực của tham số  để giá trị lớn nhất của hàm số đã cho đạt giá trị nhỏ nhất là\n\n🖎 Lời giải\n\n✓ Trả lời: -1\n\nHoành độ đỉnh: , suy ra \n\n» Trường hợp 1: Khi  Hàm số đã cho có đồ thị là Parabol có\n\nHoành độ đỉnh: , suy ra \n\nKhi đó  tại điểm .\n\n.\n\nVậy  khi .\n\n» Trường hợp 2: Khi  thì hàm số đã cho không có giá trị lớn nhất, chỉ có giá trị nhỏ nhất.\n\n» Trường hợp 3: Khi  thì hàm số  đã cho là hàm số bậc nhất, không có giá trị lớn nhất.\n\nVậy .\n\nBố bạn Lan gửi 50 triệu đồng vào một ngân hàng với lãi suất  năm. Biết rằng nếu không rút tiền ra khỏi ngân hàng thì cứ sau mỗi năm số tiền lãi sẽ được nhập với vốn ban đầu để tính lãi cho năm tiếp theo. Bố Lan dự định sẽ dùng tiền vốn và lãi để mua cho Lan một chiếc xe máy và một chiếc laptop có tổng giá trị 54 triệu đồng. Nếu lãi suất gửi là  năm thì sau 2 năm với số tiền vốn và lãi để bố Lan mua xe máy và laptop cho Lan là bao nhiêu triệu đồng? Kết quả làm tròn đến chữ số thập phân thứ nhất.\n\n🖎 Lời giải\n\n✓ Trả lời: 55,1\n\nNếu gửi ở ngân hàng có lãi suất năm thì sau 2 năm số tiền cả vốn lẫn lãi thu được là:  (triệu đồng).\n\nCổng Arch tại thành phố St Louis của Mỹ có hình dạng của một parabol. Biết khoảng cách giữa hai chân cổng là . Trên thành cổng, tại vị trí có độ cao  so với mặt đất, người ta thả một sợi dây chạm đất và vị trí chạm đất này cách chân cổng (điểm ) một khoảng . Độ cao của cổng Arch có kết quả gần đúng dạng  (kết quả làm tròn đến hàng phần chục). Với a;b;c là các số tự nhiên. Tính .\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 14\n\n\n\nDựng hệ trục  như hình vẽ \n\nVà gọi hàm số tương ứng cổng Arch là: .\n\nVì parabol qua ba điểm  nên\n\n\n\nDo vậy ta xác định được hàm số là .\n\nĐỉnh  của parabol có tọa độ: .\n\nVậy, chiều cao của cổng gần bằng .\n\nKhi đó \n\nCho parabol . Có tất cả bao nhiêu giá trị nguyên của  để parabol cắt  tại hai điểm phân biệt có hoành độ dương.\n\n🖎 Lời giải\n\n✓ Trả lời: 0\n\nPhương trình hoành độ giao điểm của  và trục  là\n\n\n\nĐể parabol cắt  tại hai điểm phân biệt có hoành độ dương khi và chỉ khi (1) có hai nghiệm phân biệt dương .\n\nKhi đó không tồn tại giá trị nguyên của m.\n\nCó bao nhiêu giá trị nguyên của  để phương trình  có nghiệm.\n\n🖎 Lời giải\n\n✓ Trả lời: 3\n\nĐiều kiện .\n\nĐặt .\n\nPhương trình đã cho trở thành .\n\nPhương trình đã cho có nghiệm khi  có nghiệm .\n\nXét hàm số  trên đoạn .\n\nBảng biến thiên:\n\n\n\nPhương trình  có nghiệm khi \n\nVậy .\n\nKhi đó có 3 giá trị nguyên của tham số m\n\nMột chiếc cổng hình parabol có phương trình . Biết cổng có chiều rộng  mét (như hình vẽ). Hãy tính chiều cao  của cổng. Kết quả làm tròn đến chữ số thập phân thứ nhất.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 3,1\n\n\n\nGọi  và  là hai điểm ứng với hai chân cổng như hình vẽ. \n\nVì cổng hình parabol cớ phương trình  và có chiều rộng  mét \n\nNên  và .\n\nVậy chiều cao của cổng là:  mét.\n\n---------------------------------- Hết ----------------------------------",
+    "type": "multiple_choice",
+    "level": "TH",
+    "chapterId": "c6",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "sourceCitation": "C3-B2-HÀM SỐ BẬC HAI-P2.docx",
+    "id": "bq-10-c6-540",
+    "gradeNumber": 10,
+    "createdAt": "2026-09-14T05:01:55.265Z"
+  }
+]

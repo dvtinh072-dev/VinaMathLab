@@ -49,7 +49,10 @@ import {
   FileSpreadsheet,
   Tag,
   MoveRight,
+  Dices,
+  Shuffle,
 } from "lucide-react";
+import { QuestionBankCatalog } from "@/types/questionBank";
 import { useAuth, UserProfile } from "@/context/AuthContext";
 import { TEACHER_RESOURCES } from "@/data/teacherResources";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -128,6 +131,138 @@ export default function GiaoVienPage() {
   const [isParsingFile, setIsParsingFile] = useState(false);
   const [isSavingExam, setIsSavingExam] = useState(false);
   const [examCreationSuccess, setExamCreationSuccess] = useState<string | null>(null);
+
+  // Bank Exam Drawer States
+  const [isBankDrawModalOpen, setIsBankDrawModalOpen] = useState(false);
+  const [bankCatalog, setBankCatalog] = useState<QuestionBankCatalog | null>(null);
+  const [isLoadingBankCatalog, setIsLoadingBankCatalog] = useState(false);
+  const [bankGradeNumber, setBankGradeNumber] = useState<number>(10);
+  const [bankExamTitle, setBankExamTitle] = useState("Đề kiểm tra trích xuất từ Ngân hàng đề Toán 10");
+  const [bankTargetClass, setBankTargetClass] = useState("");
+  const [bankDuration, setBankDuration] = useState<number>(45);
+  const [bankScope, setBankScope] = useState<"all" | "custom">("all");
+  const [bankSelectedChapters, setBankSelectedChapters] = useState<string[]>([]);
+  const [bankCountMC, setBankCountMC] = useState<number>(12);
+  const [bankCountTF, setBankCountTF] = useState<number>(2);
+  const [bankCountSA, setBankCountSA] = useState<number>(4);
+  const [bankLevelNB, setBankLevelNB] = useState<number>(6);
+  const [bankLevelTH, setBankLevelTH] = useState<number>(6);
+  const [bankLevelVD, setBankLevelVD] = useState<number>(4);
+  const [bankLevelVDC, setBankLevelVDC] = useState<number>(2);
+  const [isDrawingFromBank, setIsDrawingFromBank] = useState(false);
+  const [bankDrawError, setBankDrawError] = useState<string | null>(null);
+
+  const fetchBankCatalog = async (grade = 10) => {
+    setIsLoadingBankCatalog(true);
+    setBankDrawError(null);
+    try {
+      const res = await fetch(`/api/teacher/exams/bank-stats?gradeNumber=${grade}`);
+      const data = await res.json();
+      if (data.success && data.catalog) {
+        setBankCatalog(data.catalog);
+        if (bankSelectedChapters.length === 0) {
+          setBankSelectedChapters(data.catalog.chapters.map((c: any) => c.chapterId));
+        }
+      }
+    } catch (err: any) {
+      console.error("Lỗi tải catalog ngân hàng đề:", err);
+    } finally {
+      setIsLoadingBankCatalog(false);
+    }
+  };
+
+  const applyBankPreset = (preset: '15m' | '45m' | '90m') => {
+    if (preset === '15m') {
+      setBankExamTitle("Kiểm tra 15 phút - Toán 10");
+      setBankDuration(15);
+      setBankCountMC(10);
+      setBankCountTF(0);
+      setBankCountSA(0);
+      setBankLevelNB(5);
+      setBankLevelTH(3);
+      setBankLevelVD(2);
+      setBankLevelVDC(0);
+    } else if (preset === '45m') {
+      setBankExamTitle("Kiểm tra định kỳ 45 phút - Toán 10");
+      setBankDuration(45);
+      setBankCountMC(12);
+      setBankCountTF(2);
+      setBankCountSA(4);
+      setBankLevelNB(6);
+      setBankLevelTH(6);
+      setBankLevelVD(4);
+      setBankLevelVDC(2);
+    } else if (preset === '90m') {
+      setBankExamTitle("Đề kiểm tra học kỳ chuẩn CV 7991 (90 phút) - Toán 10");
+      setBankDuration(90);
+      setBankCountMC(12);
+      setBankCountTF(4);
+      setBankCountSA(6);
+      setBankLevelNB(7);
+      setBankLevelTH(7);
+      setBankLevelVD(5);
+      setBankLevelVDC(3);
+    }
+  };
+
+  const handleDrawExamFromBank = async () => {
+    if (!bankExamTitle.trim()) {
+      alert("Vui lòng nhập tên đề thi");
+      return;
+    }
+    const targetCls = bankTargetClass || (assignedClasses.length > 0 ? assignedClasses[0] : "10A1");
+    setIsDrawingFromBank(true);
+    setBankDrawError(null);
+    try {
+      const res = await fetch("/api/teacher/exams/bank-draw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          gradeNumber: bankGradeNumber,
+          title: bankExamTitle,
+          targetClass: targetCls,
+          duration: bankDuration,
+          chapterIds: bankScope === "all" ? [] : bankSelectedChapters,
+          counts: {
+            mc: bankCountMC,
+            tf: bankCountTF,
+            sa: bankCountSA,
+          },
+          levels: {
+            NB: bankLevelNB,
+            TH: bankLevelTH,
+            VD: bankLevelVD,
+            VDC: bankLevelVDC,
+          },
+        }),
+      });
+
+      const data = await res.json();
+      if (!data.success) {
+        setBankDrawError(data.error || "Không thể rút đề từ ngân hàng");
+        return;
+      }
+
+      const newExam = data.exam;
+      setTeacherExams(prev => [newExam, ...prev]);
+
+      try {
+        const stored = localStorage.getItem("vina_teacher_custom_exams");
+        const list = stored ? JSON.parse(stored) : [];
+        localStorage.setItem("vina_teacher_custom_exams", JSON.stringify([newExam, ...list]));
+      } catch (e) {
+        console.warn("Could not save to localStorage:", e);
+      }
+
+      setIsBankDrawModalOpen(false);
+      setExamCreationSuccess(`Đã rút thành công đề thi "${newExam.title}" với ${newExam.totalQuestions} câu hỏi từ Ngân hàng đề!`);
+      setTimeout(() => setExamCreationSuccess(null), 6000);
+    } catch (err: any) {
+      setBankDrawError(err.message || "Lỗi kết nối máy chủ");
+    } finally {
+      setIsDrawingFromBank(false);
+    }
+  };
 
   // Matrix Generator States
   const [isMatrixModalOpen, setIsMatrixModalOpen] = useState(false);
@@ -1529,6 +1664,20 @@ export default function GiaoVienPage() {
             <div className="flex flex-wrap items-center gap-2.5 shrink-0">
               <button
                 onClick={() => {
+                  setIsBankDrawModalOpen(true);
+                  if (assignedClasses.length > 0 && !bankTargetClass) {
+                    setBankTargetClass(assignedClasses[0]);
+                  }
+                  fetchBankCatalog(10);
+                }}
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 cursor-pointer flex items-center gap-2 shrink-0"
+              >
+                <Dices className="w-4 h-4" />
+                <span>🎲 Rút Đề Từ Ngân Hàng (Khối 10)</span>
+              </button>
+
+              <button
+                onClick={() => {
                   setIsMatrixModalOpen(true);
                   loadPrebuiltMatrix("matrix-t10-gk1");
                 }}
@@ -2603,6 +2752,367 @@ Câu 3: Tìm x...
           </div>
         </div>
       )}
+
+      {/* ========================================================================= */}
+      {/* MODAL: RÚT ĐỀ TỰ ĐỘNG TỪ NGÂN HÀNG ĐỀ TOÁN 10                             */}
+      {/* ========================================================================= */}
+      {isBankDrawModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md animate-in fade-in">
+          <div className="w-full max-w-4xl rounded-3xl bg-[#0d1424] border-2 border-emerald-500/40 p-6 sm:p-7 space-y-5 shadow-2xl overflow-hidden max-h-[92vh] overflow-y-auto text-white">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+                  <Dices className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base sm:text-lg font-black text-white flex items-center gap-2">
+                    <span>Rút Đề Tự Động Từ Ngân Hàng Câu Hỏi (Khối 10)</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">
+                      813 câu hỏi độc quyền
+                    </span>
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Trích xuất câu hỏi ngẫu nhiên theo số lượng, mức độ và phạm vi chương. 100% không trùng bài học và bài luyện tập.
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsBankDrawModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Presets rút nhanh */}
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-slate-300 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-emerald-400" />
+                <span>Mẫu cấu hình đề thi chuẩn BGD 2025:</span>
+              </label>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => applyBankPreset('15m')}
+                  className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 hover:bg-emerald-950/20 transition-all text-left group cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-emerald-400 group-hover:text-emerald-300">⚡ 15 Phút</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 font-bold">10 câu</span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-1">10 Trắc nghiệm (5 NB, 3 TH, 2 VD)</p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => applyBankPreset('45m')}
+                  className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/50 hover:bg-teal-950/20 transition-all text-left group cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-teal-400 group-hover:text-teal-300">⏱️ 45 Phút (Định kỳ)</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 font-bold">18 câu</span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-1">12 TN + 2 Đúng/Sai + 4 Ngắn</p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => applyBankPreset('90m')}
+                  className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 hover:bg-cyan-950/20 transition-all text-left group cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-cyan-400 group-hover:text-cyan-300">🎯 90 Phút (Học kỳ - CV 7991)</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 font-bold">22 câu</span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-1">12 TN + 4 Đúng/Sai + 6 Ngắn</p>
+                </button>
+              </div>
+            </div>
+
+            {/* Thông tin cơ bản */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="space-y-1.5 sm:col-span-2">
+                <label className="text-xs font-bold text-slate-300">Tên đề thi kiểm tra</label>
+                <input
+                  type="text"
+                  value={bankExamTitle}
+                  onChange={(e) => setBankExamTitle(e.target.value)}
+                  placeholder="Nhập tên đề kiểm tra..."
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-emerald-500"
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-xs font-bold text-slate-300">Thời gian làm bài (phút)</label>
+                <input
+                  type="number"
+                  min={5}
+                  max={180}
+                  value={bankDuration}
+                  onChange={(e) => setBankDuration(Number(e.target.value))}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-emerald-500"
+                />
+              </div>
+            </div>
+
+            {/* Phạm vi chương */}
+            <div className="space-y-2.5 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="flex items-center justify-between">
+                <label className="text-xs font-bold text-slate-200 flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-emerald-400" />
+                  <span>Phạm vi kiến thức kiểm tra:</span>
+                </label>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setBankScope('all')}
+                    className={`px-3 py-1 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                      bankScope === 'all'
+                        ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20'
+                        : 'bg-slate-800 text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    Toàn bộ chương trình (10 chương)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setBankScope('custom')}
+                    className={`px-3 py-1 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                      bankScope === 'custom'
+                        ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20'
+                        : 'bg-slate-800 text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    Tùy chọn từng chương
+                  </button>
+                </div>
+              </div>
+
+              {bankScope === 'custom' && bankCatalog && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto p-1 pr-2">
+                  {bankCatalog.chapters.map((ch) => {
+                    const isChecked = bankSelectedChapters.includes(ch.chapterId);
+                    return (
+                      <div
+                        key={ch.chapterId}
+                        onClick={() => {
+                          if (isChecked) {
+                            if (bankSelectedChapters.length > 1) {
+                              setBankSelectedChapters(bankSelectedChapters.filter(id => id !== ch.chapterId));
+                            }
+                          } else {
+                            setBankSelectedChapters([...bankSelectedChapters, ch.chapterId]);
+                          }
+                        }}
+                        className={`p-2.5 rounded-xl border text-xs cursor-pointer flex items-center justify-between transition-all ${
+                          isChecked
+                            ? 'bg-emerald-950/30 border-emerald-500/50 text-white'
+                            : 'bg-slate-950/60 border-slate-800 text-slate-400 hover:text-slate-300'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 truncate">
+                          <div className={`w-4 h-4 rounded flex items-center justify-center text-[10px] font-black ${
+                            isChecked ? 'bg-emerald-500 text-slate-950' : 'border border-slate-700'
+                          }`}>
+                            {isChecked && '✓'}
+                          </div>
+                          <span className="truncate font-medium">{ch.chapterName}</span>
+                        </div>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/80 text-emerald-400 shrink-0 font-bold ml-2">
+                          {ch.totalQuestions} câu
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
+            {/* Cấu hình Số lượng câu hỏi & Mức độ nhận thức */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Cột số lượng theo dạng câu */}
+              <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-slate-200">Số lượng câu theo cấu trúc BGD:</label>
+                  <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-black">
+                    Tổng: {bankCountMC + bankCountTF + bankCountSA} câu
+                  </span>
+                </div>
+
+                <div className="space-y-2.5">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-slate-300">Phần I: Trắc nghiệm 4 lựa chọn (MC)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={50}
+                      value={bankCountMC}
+                      onChange={(e) => setBankCountMC(Math.max(0, Number(e.target.value)))}
+                      className="w-16 px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-center text-emerald-400 font-bold focus:outline-none focus:border-emerald-500"
+                    />
+                  </div>
+
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-slate-300">Phần II: Đúng / Sai (TF)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={20}
+                      value={bankCountTF}
+                      onChange={(e) => setBankCountTF(Math.max(0, Number(e.target.value)))}
+                      className="w-16 px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-center text-teal-400 font-bold focus:outline-none focus:border-emerald-500"
+                    />
+                  </div>
+
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-slate-300">Phần III: Trả lời ngắn (SA)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={20}
+                      value={bankCountSA}
+                      onChange={(e) => setBankCountSA(Math.max(0, Number(e.target.value)))}
+                      className="w-16 px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-center text-cyan-400 font-bold focus:outline-none focus:border-emerald-500"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Cột mức độ nhận thức */}
+              <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-slate-200">Phân bổ mức độ nhận thức:</label>
+                  <span className={`text-[11px] px-2 py-0.5 rounded-full font-black ${
+                    (bankLevelNB + bankLevelTH + bankLevelVD + bankLevelVDC) === (bankCountMC + bankCountTF + bankCountSA)
+                      ? 'bg-emerald-500/20 text-emerald-300'
+                      : 'bg-amber-500/20 text-amber-300'
+                  }`}>
+                    Tổng mức độ: {bankLevelNB + bankLevelTH + bankLevelVD + bankLevelVDC} / {bankCountMC + bankCountTF + bankCountSA}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2.5 text-xs">
+                  <div className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+                    <span className="text-slate-400">Nhận biết (NB)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={50}
+                      value={bankLevelNB}
+                      onChange={(e) => setBankLevelNB(Math.max(0, Number(e.target.value)))}
+                      className="w-12 px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 text-center text-blue-400 font-bold focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+                    <span className="text-slate-400">Thông hiểu (TH)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={50}
+                      value={bankLevelTH}
+                      onChange={(e) => setBankLevelTH(Math.max(0, Number(e.target.value)))}
+                      className="w-12 px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 text-center text-emerald-400 font-bold focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+                    <span className="text-slate-400">Vận dụng (VD)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={50}
+                      value={bankLevelVD}
+                      onChange={(e) => setBankLevelVD(Math.max(0, Number(e.target.value)))}
+                      className="w-12 px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 text-center text-amber-400 font-bold focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+                    <span className="text-slate-400">V.Dụng cao (VDC)</span>
+                    <input
+                      type="number"
+                      min={0}
+                      max={50}
+                      value={bankLevelVDC}
+                      onChange={(e) => setBankLevelVDC(Math.max(0, Number(e.target.value)))}
+                      className="w-12 px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 text-center text-rose-400 font-bold focus:outline-none"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const total = bankCountMC + bankCountTF + bankCountSA;
+                      const nb = Math.round(total * 0.35);
+                      const th = Math.round(total * 0.35);
+                      const vd = Math.round(total * 0.20);
+                      const vdc = Math.max(0, total - nb - th - vd);
+                      setBankLevelNB(nb);
+                      setBankLevelTH(th);
+                      setBankLevelVD(vd);
+                      setBankLevelVDC(vdc);
+                    }}
+                    className="text-[11px] text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 cursor-pointer"
+                  >
+                    <Sliders className="w-3.5 h-3.5" />
+                    <span>Tự động cân bằng tỉ lệ 35% - 35% - 20% - 10%</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Báo lỗi nếu có */}
+            {bankDrawError && (
+              <div className="p-3.5 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>{bankDrawError}</span>
+              </div>
+            )}
+
+            {/* Modal Actions */}
+            <div className="flex items-center justify-between pt-3 border-t border-slate-800">
+              <div className="text-[11px] text-slate-400">
+                Lớp nhận đề: <span className="font-bold text-white">{bankTargetClass || (assignedClasses.length > 0 ? assignedClasses[0] : '10A1')}</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => setIsBankDrawModalOpen(false)}
+                  disabled={isDrawingFromBank}
+                  className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition-all cursor-pointer"
+                >
+                  Hủy
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleDrawExamFromBank}
+                  disabled={isDrawingFromBank || (bankCountMC + bankCountTF + bankCountSA === 0)}
+                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 cursor-pointer flex items-center gap-2 disabled:opacity-50"
+                >
+                  {isDrawingFromBank ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin" />
+                      <span>Đang bốc câu hỏi từ ngân hàng...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Shuffle className="w-4 h-4" />
+                      <span>🎲 Bắt Đầu Rút Đề</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
 
       {/* ========================================================================= */}
       {/* MODAL: TẠO THƯ MỤC ĐỀ THI MỚI                                            */}

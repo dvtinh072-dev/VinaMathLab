@@ -1,0 +1,197 @@
+{
+  "gradeNumber": 10,
+  "totalQuestions": 813,
+  "updatedAt": "2026-09-14T05:03:35.420Z",
+  "chapters": [
+    {
+      "chapterId": "c1",
+      "chapterNumber": 1,
+      "chapterName": "Chương I: Mệnh đề và tập hợp",
+      "fileKey": "c1-menh-de-va-tap-hop",
+      "totalQuestions": 298,
+      "byType": {
+        "multiple_choice": 183,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 115
+      },
+      "byLevel": {
+        "NB": 28,
+        "TH": 257,
+        "VD": 8,
+        "VDC": 5
+      }
+    },
+    {
+      "chapterId": "c2",
+      "chapterNumber": 2,
+      "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
+      "fileKey": "c2-bat-phuong-trinh-he-bpt",
+      "totalQuestions": 31,
+      "byType": {
+        "multiple_choice": 4,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 27
+      },
+      "byLevel": {
+        "NB": 1,
+        "TH": 27,
+        "VD": 1,
+        "VDC": 2
+      }
+    },
+    {
+      "chapterId": "c3",
+      "chapterNumber": 3,
+      "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+      "fileKey": "c3-he-thuc-luong-tam-giac",
+      "totalQuestions": 184,
+      "byType": {
+        "multiple_choice": 108,
+        "true_false": 0,
+        "short_answer": 1,
+        "essay": 75
+      },
+      "byLevel": {
+        "NB": 4,
+        "TH": 118,
+        "VD": 62,
+        "VDC": 0
+      }
+    },
+    {
+      "chapterId": "c4",
+      "chapterNumber": 4,
+      "chapterName": "Chương IV: Vectơ",
+      "fileKey": "c4-vecto",
+      "totalQuestions": 68,
+      "byType": {
+        "multiple_choice": 4,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 64
+      },
+      "byLevel": {
+        "NB": 0,
+        "TH": 66,
+        "VD": 2,
+        "VDC": 0
+      }
+    },
+    {
+      "chapterId": "c5",
+      "chapterNumber": 5,
+      "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+      "fileKey": "c5-cac-so-dac-trung-thong-ke",
+      "totalQuestions": 48,
+      "byType": {
+        "multiple_choice": 4,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 44
+      },
+      "byLevel": {
+        "NB": 0,
+        "TH": 44,
+        "VD": 3,
+        "VDC": 1
+      }
+    },
+    {
+      "chapterId": "c6",
+      "chapterNumber": 6,
+      "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+      "fileKey": "c6-ham-so-bac-hai-do-thi",
+      "totalQuestions": 39,
+      "byType": {
+        "multiple_choice": 2,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 37
+      },
+      "byLevel": {
+        "NB": 0,
+        "TH": 29,
+        "VD": 2,
+        "VDC": 8
+      }
+    },
+    {
+      "chapterId": "c7",
+      "chapterNumber": 7,
+      "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+      "fileKey": "c7-phuong-phap-toa-do-mat-phang",
+      "totalQuestions": 57,
+      "byType": {
+        "multiple_choice": 2,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 55
+      },
+      "byLevel": {
+        "NB": 4,
+        "TH": 48,
+        "VD": 5,
+        "VDC": 0
+      }
+    },
+    {
+      "chapterId": "c8",
+      "chapterNumber": 8,
+      "chapterName": "Chương VIII: Đại số tổ hợp",
+      "fileKey": "c8-dai-so-to-hop",
+      "totalQuestions": 51,
+      "byType": {
+        "multiple_choice": 3,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 48
+      },
+      "byLevel": {
+        "NB": 0,
+        "TH": 51,
+        "VD": 0,
+        "VDC": 0
+      }
+    },
+    {
+      "chapterId": "c9",
+      "chapterNumber": 9,
+      "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+      "fileKey": "c9-tinh-xac-suat-co-dien",
+      "totalQuestions": 27,
+      "byType": {
+        "multiple_choice": 2,
+        "true_false": 0,
+        "short_answer": 0,
+        "essay": 25
+      },
+      "byLevel": {
+        "NB": 0,
+        "TH": 27,
+        "VD": 0,
+        "VDC": 0
+      }
+    },
+    {
+      "chapterId": "c10",
+      "chapterNumber": 10,
+      "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+      "fileKey": "c10-chuyen-de-hoc-tap",
+      "totalQuestions": 10,
+      "byType": {
+        "multiple_choice": 7,
+        "true_false": 0,
+        "short_answer": 3,
+        "essay": 0
+      },
+      "byLevel": {
+        "NB": 3,
+        "TH": 5,
+        "VD": 2,
+        "VDC": 0
+      }
+    }
+  ]
+}

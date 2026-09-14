@@ -1,6 +1,6 @@
 {
   "gradeNumber": 10,
-  "totalQuestions": 813,
+  "totalQuestions": 1013,
   "updatedAt": "2026-09-14T05:03:35.420Z",
   "chapters": [
     {
@@ -27,18 +27,18 @@
       "chapterNumber": 2,
       "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
       "fileKey": "c2-bat-phuong-trinh-he-bpt",
-      "totalQuestions": 31,
+      "totalQuestions": 231,
       "byType": {
-        "multiple_choice": 4,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 27
+        "multiple_choice": 124,
+        "true_false": 35,
+        "short_answer": 45,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 1,
-        "TH": 27,
-        "VD": 1,
-        "VDC": 2
+        "NB": 86,
+        "TH": 87,
+        "VD": 43,
+        "VDC": 15
       }
     },
     {

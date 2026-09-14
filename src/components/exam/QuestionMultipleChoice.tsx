@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MathFormula } from "@/components/math/MathFormula";
+import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { cn } from "@/lib/utils";
 
 export interface MultipleChoiceQuestionData {
@@ -29,12 +29,12 @@ interface Props {
 export function QuestionMultipleChoice({ question, selectedKey, onSelect, showExplanation = false }: Props) {
   return (
     <div className="space-y-4">
-      <div className="flex items-start gap-2">
-        <span className="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold bg-primary/10 text-primary shrink-0">
+      <div className="flex items-start gap-2.5">
+        <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-xl text-xs font-black bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shrink-0">
           Câu {question.index}
         </span>
-        <div className="text-slate-900 dark:text-slate-100 font-medium text-sm md:text-base leading-relaxed">
-          <MathFormula math={question.stem} />
+        <div className="text-white font-medium text-sm md:text-base leading-relaxed flex-1">
+          <MathFormattedText text={question.stem} />
         </div>
       </div>
 
@@ -54,28 +54,32 @@ export function QuestionMultipleChoice({ question, selectedKey, onSelect, showEx
                   className={cn(
                     "flex items-start gap-3.5 p-3.5 sm:p-4 rounded-2xl border text-left text-sm transition-all duration-150 transform select-none min-h-[52px]",
                     isSelected
-                      ? "border-blue-500 bg-gradient-to-r from-blue-50/90 to-indigo-50/90 dark:from-blue-950/50 dark:to-indigo-950/50 text-blue-950 dark:text-blue-100 font-bold shadow-[0_4px_0_0_#2563eb] dark:shadow-[0_4px_0_0_#1d4ed8] -translate-y-0.5"
-                      : "border-slate-200 dark:border-slate-750 bg-white dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 shadow-[0_3px_0_0_#e2e8f0] dark:shadow-[0_3px_0_0_#1e293b] hover:border-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 active:translate-y-0.5 active:shadow-none",
+                      ? "border-cyan-400 bg-cyan-950/40 text-cyan-100 font-bold shadow-[0_4px_0_0_#0891b2] -translate-y-0.5"
+                      : "border-slate-750 bg-slate-850 hover:bg-slate-800 text-slate-100 hover:border-cyan-500/50 shadow-[0_3px_0_0_#1e293b] active:translate-y-0.5 active:shadow-none",
                     isCorrect &&
-                      "border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 text-emerald-950 dark:text-emerald-100 font-bold shadow-[0_4px_0_0_#059669]",
+                      "border-emerald-400 bg-emerald-950/50 text-emerald-100 font-bold shadow-[0_4px_0_0_#059669]",
                     isWrong &&
-                      "border-rose-500 bg-gradient-to-r from-rose-50 to-red-50 dark:from-rose-950/40 dark:to-red-950/40 text-rose-950 dark:text-rose-100 font-bold shadow-[0_4px_0_0_#e11d48]"
+                      "border-rose-400 bg-rose-950/50 text-rose-100 font-bold shadow-[0_4px_0_0_#e11d48]"
                   )}
+                  style={{
+                    backgroundColor: isSelected ? "rgba(8, 145, 178, 0.2)" : isCorrect ? "rgba(5, 150, 105, 0.25)" : isWrong ? "rgba(225, 29, 72, 0.25)" : "#162032",
+                    borderColor: isSelected ? "#22d3ee" : isCorrect ? "#34d399" : isWrong ? "#fb7185" : "#2d3748"
+                  }}
                 >
                   <span
                     className={cn(
                       "w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black shrink-0 border transition-all duration-150 mt-0.5",
                       isSelected
-                        ? "bg-gradient-to-b from-blue-500 to-indigo-600 text-white border-t border-blue-300 shadow-[0_2px_0_0_#1e40af]"
-                        : "bg-slate-100 dark:bg-slate-750 border-b-2 border-slate-300 dark:border-slate-650 text-slate-700 dark:text-slate-300",
-                      isCorrect && "bg-gradient-to-b from-emerald-500 to-teal-600 text-white border-t border-emerald-300 shadow-[0_2px_0_0_#065f46]",
-                      isWrong && "bg-gradient-to-b from-rose-500 to-red-600 text-white border-t border-rose-300 shadow-[0_2px_0_0_#9f1239]"
+                        ? "bg-gradient-to-b from-cyan-500 to-blue-600 text-slate-950 border-cyan-300 font-black shadow-[0_2px_0_0_#0284c7]"
+                        : "bg-slate-800 border-slate-700 text-slate-200",
+                      isCorrect && "bg-gradient-to-b from-emerald-500 to-teal-600 text-slate-950 font-black border-emerald-300 shadow-[0_2px_0_0_#065f46]",
+                      isWrong && "bg-gradient-to-b from-rose-500 to-red-600 text-white font-black border-rose-300 shadow-[0_2px_0_0_#9f1239]"
                     )}
                   >
                     {opt.key}
                   </span>
-                  <div className="flex-1 min-w-0 break-words leading-relaxed overflow-visible pt-0.5">
-                    <MathFormula math={opt.text} />
+                  <div className="flex-1 min-w-0 break-words leading-relaxed overflow-visible pt-0.5 text-slate-100 font-medium">
+                    <MathFormattedText text={opt.text} />
                   </div>
                 </button>
               );
@@ -85,13 +89,13 @@ export function QuestionMultipleChoice({ question, selectedKey, onSelect, showEx
       })()}
 
       {showExplanation && (
-        <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-xs space-y-2 mt-3">
-          <div className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs space-y-2 mt-3 text-slate-200">
+          <div className="font-bold text-white flex items-center gap-2">
             <span>💡 Lời giải chi tiết:</span>
-            <span className="text-emerald-600">Đáp án đúng: {question.correctKey}</span>
+            <span className="text-emerald-400">Đáp án đúng: {question.correctKey}</span>
           </div>
-          <div className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            <MathFormula math={question.explanation} />
+          <div className="text-slate-300 leading-relaxed">
+            <MathFormattedText text={question.explanation} />
           </div>
         </div>
       )}

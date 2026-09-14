@@ -1,36 +1,5 @@
 [
   {
-    "stem": "Cho tam giác có ba cạnh là . Tính bán kính của đường tròn nội tiếp tam giác",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c7-397",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Trên trục cho 2 điểm có tọa độ lần lượt là và 5. ⑴ Tìm tọa độ của . ⑵ Tìm tọa độ trung điểm của đoạn thẳng . ⑶ Tìm tọa độ của điểm sao cho . ⑷ Tìm tọa độ điểm sao cho .",
     "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ của .\n\n.\n\n⑵ Tìm tọa độ trung điểm  của đoạn thẳng .\n\nTọa độ điểm  là .\n\n⑶ Tìm tọa độ của điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .\n\n⑷ Tìm tọa độ điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .",
     "type": "essay",
@@ -183,41 +152,6 @@
     "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
     "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
     "id": "bq-10-c7-760",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chương 09 C Luyện tập",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "🖎 Lời giải\n\nChọn A\n\nTa có .\n\nTrong mặt phẳng , cho hai điểm  và . Độ dài vectơ  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTính độ dài vectơ .\n\n. Vậy .\n\nTrong mặt phẳng với hệ trục tọa độ , cho điểm  và . Khẳng định nào sau đây đúng?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có: .\n\nCho . Tìm x sao cho \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nTa có: \n\nCho các vectơ . Khi đó góc giữa chúng là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có , suy ra .\n\nCho các vectơ . Tính tích vô hướng của \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có ,  suy ra .\n\nTrong mặt phẳng , cho  và . Khẳng định nào sau đây là sai?\n\nA. Tích vô hướng của hai vectơ đã cho là .\n\nB. Độ lớn của vectơ  là .\n\nC. Độ lớn của vectơ  là .\n\nD. Góc giữa hai vectơ là .\n\n🖎 Lời giải\n\nChọn D\n\nTa có  nên B đúng.\n\n nên C đúng.\n\n nên A đúng, D sai.\n\nTrong mặt phẳng tọa độ  cho hai vectơ  và . Khẳng định nào sau đây đúng?\n\nA. \tB.  và  cùng phương.\n\nC.  vuông góc với .\tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có  suy ra  vuông góc với . \n\nTrong hệ tọa độ  cho  Tọa độ của vecto  là\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nCó .\n\nTrong mặt phẳng tọa độ , , . Tìm  để  cùng phương?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có:  cùng phương khi và chỉ khi: . \n\nTrong hệ trục tọa độ , cho hai điểm , . Tính độ dài véctơ .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\n .\n\nTrong mặt phẳng tọa độ  cho ba điểm  Tính tích vô hướng \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có .\n\nSuy ra \n\nTrên trục  cho ba điểm A, B, C có tọa độ lần lượt là . Khi đó tọa độ điểm M thảo mãn  là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\n\n\nTrên trục  cho tọa độ các điểm B, C lần lượt là  và . Tìm m để đoạn thẳng BC có độ dài nhỏ nhất.\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\n. BC nhỏ nhất khi \n\nTrong mặt phẳng tọa độ  cho hai vectơ  và  Tìm tọa độ vectơ  biết  và \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nGọi \n\nTa có \n\nCho , . Tính góc của \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có .\n\nCặp vectơ nào sau đây vuông góc?\n\nA.  và .\tB.  và .\n\nC.  và .\tD.  và .\n\n🖎 Lời giải\n\nChọn C\n\nPhương án A:  suy ra A sai.\n\nPhương án B:  suy ra B sai.\n\nPhương án C:  suy ra C đúng.\n\nPhương án D:  suy ra D sai.\n\nCho tam giác  có , , .Tính \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có ,  \n\nsuy ra .\n\nTrong mặt phẳng  cho 2 vectơ :  và  Kết luận nào sau đây sai?\n\nA. \tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\n\n\nPhương án A: nên loại A\n\nPhương án B: suy ra  vuông góc nên loại B\n\nPhương án C: nên chọn C.\n\nTrong mặt phẳng tọa độ  cho ba vectơ  và  với  Biết rằng vectơ  vuông góc với vectơ . Khẳng định nào sau đây đúng?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có \n\nĐể \n\nTrong mặt phẳng cho , , . Khảng định nào sau đây đúng.\n\nA. , .\tB. .\n\nC. Tam giác vuông cân tại .\tD. Tam giác vuông cân tại .\n\n🖎 Lời giải\n\nChọn C\n\nPhương án A: do  nên loại A.\n\nPhương án B:,,\n\nsuy ra không vuông góc nên loại B.\n\nPhương án C: Ta có , , , suy ra , .Nên Tam giác  vuông cân tại .Do đó chọn C.\n\nTrong mặt phẳng tọa độ  cho hai điểm  và  Tìm tọa độ điểm  thuộc trục tung sao cho tam giác  vuông tại \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có  nên  và \n\nTam giác  vuông tại nên \n\nVậy .\n\nCho tam giác  có  Tìm tọa độ chân đường cao hạ từ đỉnh  của tam giác .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\n\n\nTa có \n\nNhận thấy rằng  nên tam giác  vuông tại \n\nVậy chân đường cao hạ từ đỉnh  của tam giác  trùng với đỉnh \n\nCho điểm  và vectơ .Vectơ nào trong hình là vectơ ?\n\n\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nTa có: \n\nTrong mặt phẳng , cho hai điểm  và . Tìm tọa độ điểm  sao cho tam giác  vuông cân tại .\n\nA.  hoặc .\tB.  hoặc .\n\nC.  hoặc .\tD.  hoặc .\n\n🖎 Lời giải\n\nChọn B\n\nTìm tọa độ điểm  sao cho tam giác  vuông cân tại .\n\nGọi . Tam giác  vuông cân tại \n\n\n\n.\n\nVậy  hoặc .\n\nCho véc tơ . Với giá trị nào của  thì véc tơ  tạo với véctơ  một góc \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có: .\n\nGóc giữa hai véc tơ  và  bằng suy ra  .\n\n\n\n.\n\nTrong mặt phẳng toạ độ Oxy, cho  có . Tọa độ điểm M thỏa mãn  là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có \n\nTrong mặt phẳng với hệ tọa độ , cho hai vectơ  và . Tìm  để vectơ  vuông góc với .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nHai vectơ \n\nTrong mặt phẳng với hệ tọa độ  cho tam giác  có trọng tâm , biết  là trung điểm của cạnh . Tọa độ đỉnh  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n\n\nGọi . Ta tính được , .\n\nTa có: . Vậy .\n\nTrong hệ tọa độ Oxy, cho 3 điểm . Xác định tọa độ giao điểm I của AD và BG với D thuộc BC và , G là trọng tâm \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\n\n\nTa có  không cùng phương.\n\nTa có \n\nTrọng tâm . Gọi  là giao điểm của AD và BG\n\nTa có  cùng phương\n\n\n\nTa lại có  cùng phương  tồn tại số \n\n\n\nB. Câu hỏi – Trả lời đúng/sai\n\nTrong mặt phẳng toạ độ, cho các điểm . Các điểm  lần lượt chia các đoạn  theo các tỉ số . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\nBa điểm  thẳng hàng.\n\n\n\n\n\n🖎 Lời giải\n\n\n\n(a) \n\nTheo đề bài ta có  là trung điểm đoạn . \n\nTheo công thức trung điểm ta có: \n\n» Chọn ĐÚNG.\n\n(b) \n\nVì  chia  tỉ số  nên  Vậy \n\n» Chọn SAI.\n\n(c) \n\nTương tự tính được .\n\n» Chọn SAI.\n\n(d) Ba điểm  thẳng hàng.\n\nTa có .\n\nRõ ràng  nên  thẳng hàng.\n\n» Chọn ĐÚNG.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nNếu  là trung điểm của  thì tọa độ điểm .\n\n\n\n\n\n(b)\n\nNếu  là trọng tâm của tam giác  thì tọa độ điểm .\n\n\n\n\n\n(c)\n\nNếu  là đỉnh thứ tư của hình bình hành  thì tọa độ điểm .\n\n\n\n\n\n(d)\n\nNếu  là điểm thuộc trục hoành sao cho  vuông góc với  thì tọa độ .\n\n\n\n\n\n🖎 Lời giải\n\n(a) Nếu  là trung điểm của  thì tọa độ điểm .\n\nNếu  là trung điểm của  thì  .\n\n» Chọn SAI.\n\n(b) Nếu  là trọng tâm của tam giác  thì tọa độ điểm .\n\nNếu  là trọng tâm của tam giác  thì  .\n\n» Chọn SAI.\n\n(c) Nếu  là đỉnh thứ tư của hình bình hành  thì tọa độ điểm .\n\nTa có ; .\n\nNếu  là hình bình hành thì .\n\n» Chọn ĐÚNG.\n\n(d) Nếu  là điểm thuộc trục hoành sao cho  vuông góc với  thì tọa độ .\n\nVì  là điểm thuộc trục hoành ; ; \n\nDo  vuông góc với  nên .\n\n» Chọn ĐÚNG.\n\nTrong mặt phẳng toạ độ , cho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nBa điểm  không thẳng hàng.\n\n\n\n\n\n(b)\n\n là tọa độ trọng tâm của tam giác .\n\n\n\n\n\n(c)\n\nTứ giác  là hình bình hành khi đó tọa độ điểm  là \n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) Ba điểm  không thẳng hàng.\n\nTa có: .\n\nDo  nên  không cùng phương. \n\nVì vậy ba điểm  không thẳng hàng.\n\n» Chọn ĐÚNG.\n\n(b)  là tọa độ trọng tâm của tam giác .\n\nDo  là trọng tâm của tam giác  nên .\n\n» Chọn ĐÚNG.\n\n(c) Tứ giác  là hình bình hành khi đó tọa độ điểm  là \n\nGiả sử . Ta có: .\n\nTứ giác  là hình bình hành nếu  \n\nVậy .\n\n» Chọn SAI.\n\n(d) \n\nTa có: \n\n, \n\n\n\nTa có: .\n\nSuy ra  nên .\n\nTa có: .\n\nSuy ra  nên .\n\nVậy .\n\n» Chọn SAI.\n\nTrong mặt phẳng tọa độ , cho các vectơ . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\nVectơ  cùng phương với  và có độ dài bằng  có tọa độ  hay .\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: .\n\n» Chọn ĐÚNG.\n\n(b) \n\n\n\n» Chọn SAI.\n\n(c) \n\n\n\n» Chọn SAI.\n\n(d) Vectơ  cùng phương với  và có độ dài bằng  có tọa độ  hay .\n\nVì  cùng phương với  nên tồn tại  để \n\n\n\nMặt khác .\n\nVậy có hai vectơ thỏa mãn đề bài là  hay .\n\n» Chọn ĐÚNG.\n\nTrong mặt phẳng tọa độ , cho các vectơ  và . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\nVectơ cùng phương, cùng hướng với vectơ \n\n\n\n\n\n(c)\n\nVectơ  cùng phương, cùng hướng với vectơ \n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: . \n\n» Chọn ĐÚNG.\n\n(b) Vectơ cùng phương, cùng hướng với vectơ \n\nTa  nên  là hai vectơ cùng phương với nhau, \n\nHơn nữa chúng cùng hướng với nhau vì .\n\n» Chọn ĐÚNG.\n\n(c) Vectơ  cùng phương, cùng hướng với vectơ \n\nTương tự: , tức là  \n\nNên  và  là hai vectơ cùng phương, ngược hướng với nhau.\n\n» Chọn SAI.\n\n(d) \n\nGọi  là các số thỏa mãn  ( không cùng phương).\n\nKhi đó: . Vậy .\n\n» Chọn ĐÚNG.\n\nTrong mặt phẳng tọa độ , cho tam giác  có các đỉnh thỏa mãn . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n là trung điểm  nên \n\n\n\n\n\n(c)\n\n là trọng tâm  nên \n\n\n\n\n\n(d)\n\nĐiểm  sao cho  là hình bình hành nên \n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: \n\n.\n\n\n\n» Chọn ĐÚNG.\n\n(b)  là trung điểm  nên \n\n là trung điểm  nên  hay \n\n» Chọn ĐÚNG.\n\n(c)  là trọng tâm  nên \n\n là trọng tâm  \n\nNên ,  hay .\n\n» Chọn SAI.\n\n(d) Điểm  sao cho  là hình bình hành nên \n\nTa có:  là hình bình hành\n\n\n\nVậy .\n\n» Chọn SAI.\n\nTrong mặt phẳng tọa độ , cho các điểm . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTọa độ điểm  sao cho  là trọng tâm tam giác  là \n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\nTọa độ điểm  thuộc trục hoành sao cho  thẳng hàng là \n\n\n\n\n\n(d)\n\nTọa độ  thỏa mãn  là \n\n\n\n\n\n🖎 Lời giải\n\n(a) Tọa độ điểm  sao cho  là trọng tâm tam giác  là \n\nC là trọng tâm tam giác \n\nVậy .\n\n» Chọn SAI.\n\n(b) \n\n» Chọn ĐÚNG.\n\n(c) Tọa độ điểm  thuộc trục hoành sao cho  thẳng hàng là \n\nGọi .\n\nBa điểm  thẳng hàng \n\n cùng phương \n\n. Vậy .\n\n» Chọn ĐÚNG.\n\n(d) Tọa độ  thỏa mãn  là \n\nGọi . \n\nTa có: \n\n\n\nSuy ra: .\n\nTa có: . \n\nVậy .\n\n» Chọn SAI.\n\nTrong mặt phẳng tọa độ , cho ba điểm . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n là ba đỉnh một tam giác\n\n\n\n\n\n(b)\n\nĐiểm  là trung điểm của \n\n\n\n\n\n(c)\n\nĐiểm  thuộc  sao cho  bé nhất có hoành độ bằng \n\n\n\n\n\n(d)\n\nĐiểm  thuộc  sao cho  bé nhất có tung độ bằng \n\n\n\n\n\n🖎 Lời giải\n\n(a)  là ba đỉnh một tam giác.\n\nTa có: ; vì  không cùng phương.\n\nVậy  không thẳng hàng hay  là ba đỉnh một tam giác.\n\n» Chọn ĐÚNG.\n\n(b) Điểm  là trung điểm của \n\nTrung điểm  có tọa độ \n\n» Chọn SAI.\n\n(b) Điểm  thuộc  sao cho  bé nhất có hoành độ bằng \n\nDo  nên hai điểm  nằm khác phía so với trục . \n\nVì  thuộc  mà  bé nhất nên  thẳng hàng hay  cùng phương.\n\nGọi .\n\nTa có  cùng phương .\n\nVậy .\n\n» Chọn SAI.\n\n(c) Điểm  thuộc  sao cho  bé nhất có tung độ bằng \n\nDo  nên hai điểm  nằm cùng phía so với trục . \n\nLấy  đối xứng với  qua  (lúc này  và  khác phía so với trục .\n\nVì  thuộc  nên . \n\nDo vậy ; tổng này bé nhất \n\n thẳng hàng \n\n cùng phương.\n\nGọi .\n\nTa có  cùng phương .\n\nVậy .\n\n» Chọn SAI.\n\nCho tam giác  có ba đỉnh . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nTam giác  vuông tại.\n\n\n\n\n\n(b)\n\nTâm đường tròn ngoại tiếp của tam giác có tọa độ là  \n\n\n\n\n\n(c)\n\nTam giác có diện tích bằng 25 (đơn vị diện tích).\n\n\n\n\n\n(d)\n\nĐiểm H thuộc sao cho  ngắn nhất có tọa độ là \n\n\n\n\n\n🖎 Lời giải\n\n(a) Tam giác  vuông tại.\n\nTa có \n\nDo đó  hay tam giác  vuông tại.\n\n» Chọn ĐÚNG.\n\n(b) Tâm đường tròn ngoại tiếp của tam giác có tọa độ là  .\n\nTâm đường tròn ngoại tiếp của vuông là trung điểm cạnh huyền, là điểm có tọa độ là  \n\n» Chọn SAI.\n\n(c) Tam giác có diện tích bằng 25 ( đơn vị diện tích ).\n\n. \n\nVậy diện tích tam giác vuông  là  (đơn vị diện tích)\n\n» Chọn ĐÚNG.\n\n(d) Điểm H thuộc sao cho  ngắn nhất có tọa độ là \n\nĐiểm H thuộc sao cho  ngắn nhất   là hình chiếu của  trên .\n\nGọi  là hình chiếu của  lên. \n\nTa có \n\n  (1)\n\nMặt khác  cùng phương nên  (2)\n\nTừ (1) và (2) ta có : tọa độ điểm  thỏa mãn hệ  \n\nVậy hình chiếu của  lên  là .\n\n» Chọn SAI.\n\nTrên màn hình ra đa của một đài kiểm soát không lưu (được coi như mặt phẳng tọa độ với đơn vị trên các trục tính theo ki-lô-mét, một máy bay trực thăng chuyển động thẳng đều từ thành phố  có tọa độ  đến thành phố  có tọa độ  và thời gian bay quãng đường  là giờ. Biết tọa độ  là tọa độ của máy bay trực thăng tại thời điểm sau khi xuất phát  giờ. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\nGiả sử  là vị trí của máy bay trực thăng tại thời điểm sau khi xuất phát 1 giờ. \n\nTa có \n\nVì máy bay trực thăng chuyển động thẳng đều nên . \n\nDo đó \n\nVậy vị trí của máy bay trực thăng tại thời điểm sau khi xuất phát  giờ là \n\n(a) .\n\n» Chọn ĐÚNG.\n\n(b) .\n\n» Chọn SAI.\n\n(c) .\n\n» Chọn ĐÚNG.\n\n(d) .\n\n» Chọn SAI.\n\nC. Câu hỏi – Trả lời ngắn\n\nVới  thì có bao nhiêu  cùng phương với .\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nVì  cùng phương với  nên ,\n\nhay \n\nDo đó,  hoặc .\n\nVậy chỉ có  thỏa, do đó có 1 vectơ  thỏa.\n\nTrong mặt phẳng tọa độ , cho các vectơ  và . Có bao nhiêu giá trị dương của tham số  để  cùng phương với .\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nTa có  cùng phương với  khi và chỉ khi  .\n\nVì  dương nên  thỏa mãn.\n\nTrong mặt phẳng tọa độ , cho hai điểm . Xác định giá trị hoành độ của điểm  sao cho ba điểm  thẳng hàng. Biết điểm  nằm trên trục hoành.\n\n🖎 Lời giải\n\n✓ Trả lời: 17\n\nP là điểm nằm trên trục hoành nên . \n\nTa có: \n\nBa điểm  thẳng hàng khi \n\nVậy .\n\nCho các điểm , tính tổng tung độ và hoahf độ điểm  biết rằng . Kết quả làm tròn đến hàng phần mười.\n\n🖎 Lời giải\n\n✓ Trả lời: 2,3\n\nTa có . \n\nTừ điều kiện đã cho ta. \n\nGiải hệ phương trình ta được , suy ra .\n\nTrong mặt phẳng toạ độ , cho  và . Tính  biết rằng , với  là các số tự nhiên.\n\n🖎 Lời giải\n\n✓ Trả lời: 6\n\nTa có:  \n\nVậy .\n\nTrong mặt phẳng toạ độ , cho . Xác định hoành độ điểm  thoả mãn .\n\n🖎 Lời giải\n\n✓ Trả lời: -11\n\nGiả sử . \n\nTa có: . \n\nSuy ra . \n\nDo đó \n\nVậy \n\nTrong mặt phẳng toạ độ , cho tam giác  có , . Có bao nhiêu điểm  trên đường thẳng  sao cho diện tích của tam giác  bằng ba lần diện tích của tam giác .\n\n🖎 Lời giải\n\n✓ Trả lời: 2\n\nVì  nằm trên đường thẳng  \n\nNên  (hai tam giác có cùng đường cao kẻ từ ).\n\nGiả sử . \n\nTa có: .\n\nTrường hợp 1: .\n\nTa có: . Vậy .\n\nTrường hợp 2: .\n\nTa có:  Vậy .\n\nVậy có hai điểm  thoả mãn bài toán là:  và .\n\nTrong mặt phẳng toạ độ , cho hai điểm . Có bao nhiêu điểm  thuộc trục hoành thỏa mãn .\n\n🖎 Lời giải\n\n✓ Trả lời: 2\n\nĐiểm  thuộc trục hoành nên giả sử .\n\nTa có: .\n\nTheo đề bài, \n\n\n\nVậy có hai điểm  thoả mãn bài toán là:  và .\n\nTrong mặt phẳng toạ độ , cho hai vectơ  và  (với  là tham số). Tìm giá trị của  để góc giữa hai vectơ  và  bằng .\n\n🖎 Lời giải\n\n✓ Trả lời: 0,25\n\nTa có: \n\nTa có:  và  (3)\n\nGiải phương trình (3), thay giá trị nghiệm vào (1), (2) để kiểm tra ta có .\n\nTrong mặt phẳng toạ độ , cho hai điểm  và . Biết điểm  trên trục tung để  đạt giá trị nhỏ nhất. Tung độ của điểm  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nĐiểm  thuộc trục tung nên giả sử . \n\nTa có: , . \n\nSuy ra . \n\nDo đó . \n\nDấu bằng xảy ra khi . \n\n đạt giá trị nhỏ nhất bằng 14 khi  có toạ độ là .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P2.docx",
-    "id": "bq-10-c7-761",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.265Z"
   },
@@ -1220,41 +1154,6 @@
     "createdAt": "2026-09-14T05:48:24.696Z"
   },
   {
-    "id": "bq-10-c7-hk2-1789364904696-16",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Đường tròn (C) đi qua ba điểm A(2; 0), B(0; −3), C(5; −3).",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Đường kính của đường tròn (C) bằng √26.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Hoành độ của tâm đường tròn (",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "đi qua ba điểm A(2; 0), B(0; −3), C(5; −3). a) Đường kính của đường tròn (C) bằng √26. b) Hoành độ của tâm đường tròn (C) bằng −5 2. c) Đường tròn (C)",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Gọi I là tâm đường tròn (C), khi đó độ dài đoạn IO = 5√2. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
     "id": "bq-10-c7-hk2-1789364904696-17",
     "gradeNumber": 10,
     "chapterId": "c7-phuong-phap-toa-do-mat-phang",
@@ -1489,41 +1388,6 @@
     ],
     "correctKey": "A",
     "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
-    "id": "bq-10-c7-hk2-1789364904696-25",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "TH",
-    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C) có phương trình x2 + y2 − 6x + 2y + 6 = 0 và hai điểm A(1; −1), B(1; 3). Xét tính Đúng/Sai của các mệnh đề sau",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Bán kính của đường tròn (C) là R = 6.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Điểm A thuộc đường tròn.",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "có phương trình x2 + y2 − 6x + 2y + 6 = 0 và hai điểm A(1; −1), B(1; 3). Xét tính Đúng/Sai của các mệnh đề sau a) Bán kính của đường tròn (C) là R = 6",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Qua B kẻ được hai tiếp tuyến với (C) có phương trình là x = 1 và 3x + 4y − 12 = 0. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.696Z"
   },
@@ -1904,111 +1768,6 @@
     "createdAt": "2026-09-14T05:48:24.696Z"
   },
   {
-    "id": "bq-10-c7-hk2-1789364904696-40",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Trong mặt phẳng (Oxy), cho hai đường thẳng d1 : 2x − 4y + 3 = 0 và d2 : − 3x + y − 17 = 0.",
-    "statements": [
-      {
-        "id": "a",
-        "text": "d1 ⊥ d2.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "I Å13 2 ; 5 2 ã là tọa độ giao điểm của 2 đường thẳng d1 và d2.",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Góc giữa 2 đường thẳng d1 và d2 bằng 135◦.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Gọi A là điểm thuộc trục hoành (khác gốc tọa độ O) và B là điểm thuộc đường thẳng d2 sao cho tam giác OAB vuông cân tại B. Khi đó, có 2 điểm B thỏa mã",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
-    "id": "bq-10-c7-hk2-1789364904696-41",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Trong mặt phẳng toạ độ Oxy, cho (C) : (x − 2)2 + (y − 2)2 = 9 điểm A(5; −1). Gọi ∆1 và ∆2 là các tiếp tuyến đường tròn (C) đi qua điểm",
-    "statements": [
-      {
-        "id": "a",
-        "text": "(C) có bán kính R = 3.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Gọi I là tâm của đường tròn (",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": ": (x − 2)2 + (y − 2)2 = 9 điểm A(5; −1). Gọi ∆1 và ∆2 là các tiếp tuyến đường tròn (C) đi qua điểm A. a) (C) có bán kính R = 3. b) Gọi I là tâm của đư",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Các tiếp tuyến ∆1 và ∆2 vuông góc với nhau. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
-    "id": "bq-10-c7-hk2-1789364904696-42",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "TH",
-    "stem": "Lập phương trình đường tròn trong mỗi trường hợp sau",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Đường tròn có tâm I(−3; 4) bán kính R = 9. \u0014 GV: NGÔ ĐỨC TÀI / Trang 60/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Đường tròn có tâm I(5; −2) và đi qua điểm M(4; −1).",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Đường tròn có tâm I(1; −1) và có một tiếp tuyến là ∆ : 5x − 12y − 1 = 0.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Đường tròn đường kính AB với A(3; −4) và B(−1; 6). e) Đường tròn đi qua ba điểm A(1; 1), B(3; 1) và C(0; 4).",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
     "id": "bq-10-c7-hk2-1789364904696-43",
     "gradeNumber": 10,
     "chapterId": "c7-phuong-phap-toa-do-mat-phang",
@@ -2211,41 +1970,6 @@
     ],
     "correctKey": "A",
     "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.696Z"
-  },
-  {
-    "id": "bq-10-c7-hk2-1789364904696-50",
-    "gradeNumber": 10,
-    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "lessonTitle": "Bài 19: Phương trình đường thẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Trong mặt phẳng Oxy, cho đường thẳng ∆ : (x = 3 − 2t y = 1 + t (t ∈ R) và điểm A(4; 2).",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Đường thẳng d1 : 2x − y + 1 = 0 vuông góc với đường thẳng ∆.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "d(A, ∆) = √5 5 .",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Đường thẳng d2 : x + 2y = 0 đi qua điểm A và song song với đường thẳng ∆.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Gọi d3 là đường thẳng có hệ số góc dương, đi qua điểm A và tạo với đường thẳng ∆ một góc 45◦. Khi đó, điểm B(5; −1) thuộc đường thẳng d3 .",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.696Z"
   },

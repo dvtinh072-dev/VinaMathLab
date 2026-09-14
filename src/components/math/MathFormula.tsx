@@ -19,8 +19,23 @@ export function MathFormula({ math, block = false, className, copyable = false }
 
   useEffect(() => {
     if (containerRef.current) {
+      if (!math) {
+        containerRef.current.innerText = "";
+        return;
+      }
       try {
-        const normalized = math ? math.replace(/\\vec\{([A-Z][A-Z0-9']{1,})\}/g, (_, points) => `\\overrightarrow{${points}}`) : "";
+        // Nếu chuỗi chứa chữ tiếng Việt có dấu hoặc dài và không bắt đầu bằng ký hiệu toán,
+        // thì đó là văn bản hỗn hợp chứ không phải một biểu thức LaTeX đơn thuần!
+        const hasVietnamese = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]/i.test(math);
+        const hasWordLike = /\b(nửa|mặt|phẳng|đường|thẳng|tọa|độ|không|chứa|gốc|tập|nghiệm|bất|phương|trình)\b/i.test(math);
+        
+        if (hasVietnamese || hasWordLike) {
+          // Render dạng text thông thường an toàn, tránh KaTeX render ra font Times New Roman nghiêng dính liền
+          containerRef.current.innerText = math;
+          return;
+        }
+
+        const normalized = math.replace(/\\vec\{([A-Z][A-Z0-9']{1,})\}/g, (_, points) => `\\overrightarrow{${points}}`);
         katex.render(normalized, containerRef.current, {
           displayMode: block,
           throwOnError: false,

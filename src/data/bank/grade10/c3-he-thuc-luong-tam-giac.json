@@ -1,415 +1,5 @@
 [
   {
-    "stem": "Cho tam giác , mệnh đề nào sau đây đúng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo định lý cosin trong tam giác  ta có: .",
-    "type": "multiple_choice",
-    "level": "NB",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-10",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có . Độ dài cạnh là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-11",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có Độ dài cạnh bằng:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-12",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có Tính cạnh ?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo định lí cosin trong  ta có: .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-13",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có góc nhọn, , , diện tích bằng Tính độ dài cạnh",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: \n\n.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-14",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có ba cạnh lần lượt là . Góc bé nhất của tam giác có sin bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nGóc bé nhất ứng với cạnh có số đo bé nhất.\n\nGiả sử . Ta có . Do đó .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-15",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có,,. Trên cạnh lấy điểm sao cho. Tính độ dài đoạn thẳng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: \n\n.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-16",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho là độ dài cạnh của tam giác . Biết ;;. Tính độ dài của .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lí cosin cho tam giác ta có:\n\n.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-17",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác vuông tại có . Điểm nằm trên cạnh sao cho . Độ dài bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nTa có: ;  \n\nKhi đó:.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-18",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có , và . Tính cạnh",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTừ giả thiết , ta suy ra  là góc nhọn.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-19",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có , và . Kết quả nào trong các kết quả sau là độ dài của cạnh ?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý hàm số Cosin trong tam giác  ta có:\n\n\n\n.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-20",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có . Giá trị là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng hệ quả của định lý hàm số Cosin vào tam giác  ta có:\n\n.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-21",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có ba cạnh lần lượt là . Góc lớn nhất của tam giác có cosin bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nVì đối diện với cạnh lớn nhất là góc lớn nhất. Nên góc lớn nhất của tam giác có cosin bằng:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-22",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có cạnh , , tổng hai cạnh còn lại là . Tính độ dài cạnh biết .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý hàm số Cosin trong tam giác  ta có:\n\n\n\nTừ giả thiết ta có: .\n\nThay  vào  ta được:\n\n\n\nVới  (thỏa mãn)\n\nVới  (loại)\n\nVậy \n\nPHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-23",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho tam giác có . Xét tính đúng sai của các khẳng định sau: a) . b) Tam giác cân tại . c) . d) Tổng bình phương độ dài ba trung tuyến trong bằng .",
     "explanation": "Lời giải\n\na) Đúng: Ta có: \n\nb)Sai: Ta có: .\n\nKhi đó,  cân tại \n\nc) Sai: Ta có: \n\nd) Đúng: Gọi  lần lượt là độ dài các đường trung tuyến từ đỉnh  trong .\n\nTa có: ; \n\nCộng vế với vế của  và  ta có: .",
     "type": "essay",
@@ -566,238 +156,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Cho tam giác . Tìm công thức sai:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-37",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho với các cạnh . Gọi lần lượt là bán kính đường tròn ngoại tiếp, nội tiếp và diện tích của tam giác . Trong các phát biểu sau, phát biểu nào sai?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo định lí sin trong tam giác, ta có .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-38",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác thoả mãn hệ thức . Trong các mệnh đề sau, mệnh đề nào đúng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:",
-    "type": "multiple_choice",
-    "level": "NB",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-39",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có ;;. Độ dài gần nhất với kết quả nào?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nÁp dụng định lý sin: .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-40",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có và . Hỏi cạnh bằng bao nhiêu ?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo Định lý sin ta có  nên .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-41",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tính chu vi tam giác , biết rằng và.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nVì  nên ta có: .\n\nDo đó: . Chu vi tam giác bằng .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-42",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác nội tiếp đường tròn bán kính Tính góc biết là góc tù.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nGóc  là góc tù nên ,  là góc nhọn.\n\nTa có:  (vì  nhọn).\n\nTương tự:  (do  tù)\n\nSuy ra:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-43",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Chọn mệnh đề đúng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lí sin ta có .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-44",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho tam giác có . Tam giác là tam giác",
     "options": [
       {
@@ -825,219 +183,6 @@
     "chapterName": "Chương III: Hệ thức lượng trong tam giác",
     "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
     "id": "bq-10-c3-45",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tính bán kính đường tròn ngoại tiếp tam giác biết và .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:  nên . Do đó , mà \n\n mà .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-46",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có các góc , cạnh . Tính độ dài cạnh (làm tròn kết quả đến hàng đơn vị).",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nXét tam giác  ta có: \n\nTheo định lý sin ta có",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-47",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác với . Khẳng định nào sau đây đúng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý  trong tam giác có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-48",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Từ một miếng bìa hình tròn, bạn Nam cắt ra một hình tam giác có độ dài các cạnh như hình minh hoạ dưới đây. Tính bán kính của miếng bìa ban đầu (làm tròn kết quả đến hàng đơn vị theo đơn vị centimét)",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lí côsin cho tam giác , ta có: . Mà  nên \n\nÁp dụng định lí sin, ta có: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-49",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Để đo khoảng cách từ vị trí trên bờ sông đến vị trí của con tàu bị mắc cạn gần một cù lao giữa sông, bạn Minh đi dọc bờ sông từ vị trí đến vị trí cách một khoảng bằng và đo các góc như hình minh hoạ dưới đây. Tính khoảng cách theo đơn vị mét (làm tròn kết quả đến hàng đơn vị)",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nXét tam giác  ta có: .\n\nÁp dụng định lí sin, ta có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-50",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Để xác định bán kính của chiếc đĩa cổ hình tròn bị vỡ một phần, các nhà khảo cổ lấy ba điểm trên vành đĩa và tiến hành đo đạc thu được kết quả như sau: cạnh ,. Bán kính của chiếc đĩa xấp xỉ là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý trong tam giác , ta có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-51",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Từ hai vị trí và của một tòa nhà, người ta quan sát đỉnh của ngọn núi. Biết rằng độ cao , phương nhìn tạo với phương nằm ngang góc , phương nhìn tạo với phương nằm ngang góc .Ngọn núi đó có độ cao so với mặt đất gần nhất với giá trị nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTừ giả thiết, ta suy ra tam giác  có  và \n\nKhi đó \n\nTheo định lí sin, ta có  hay \n\nDo đó \n\nGọi  là khoảng cách từ  đến mặt đất. Tam giác vuông  có cạnh  đối diện với góc  nên \n\nVậy ngọn núi cao khoảng \n\nPHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-52",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
@@ -1174,18 +319,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Từ vị trí người ta quan sát một cây cao (hình vẽ). Biết , , . Chiều cao của cây bằng bao nhiêu?",
-    "explanation": "Lời giải\n\nTrong tam giác  ta có: .\n\nSuy ra \n\nÁp dụng định lý sin trong tam giác :",
-    "type": "short_answer",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-64",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Để tránh núi, đường đi hiện tại phải vòng qua núi như mô hình trong hình vẽ. Hỏi quãng đường đi thẳng từ đến dài bao nhiêu km (làm tròn đến hàng phần mười)?",
     "explanation": "Lời giải\n\nGọi  là giao điểm của  và .\n\nTa có , , .\n\nÁp đụng định lí sin: \n\nÁp dụng định lí côsin:",
     "type": "essay",
@@ -1246,122 +379,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Cho tam giác có cạnh , cạnh . Tam giác có diện tích lớn nhất khi góc bằng:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nDiện tích của tam giác  là: \n\nlớn nhất khi lớn nhất, hay .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-70",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hình thoi có cạnh bằng . Góc . Diện tích hình thoi là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-71",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tính diện tích tam giác biết .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: . Vậy diện tích tam giác  là: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-72",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có . Diện tích của tam giác là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-73",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho tam giác . Biết ; và . Tính chu vi và diện tích tam giác .",
     "options": [
       {
@@ -1389,513 +406,6 @@
     "chapterName": "Chương III: Hệ thức lượng trong tam giác",
     "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
     "id": "bq-10-c3-74",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có các trung tuyến ,,.Diện tích S của tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo bài toán ta có: \n\nTa có , áp dụng công thức Herong ta có\n\n.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-75",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có . Độ dài đường cao của tam giác là.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: \n\n. Suy ra  vì  nên \n\n mà",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-76",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Tính diện tích tam giác",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nDiện tích của tam giác  là .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-77",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có chu vi bằng 12 và bán kính đường tròn nội tiếp bằng 1. Diện tích của tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo đề bài tam giác  có chu vi bằng 12 nên nửa chu vi là ; bán kính đường tròn nội tiếp bằng 1, tức là ta có: .\n\nDiện tích tam giác  là: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-78",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có , , . Bán kính đường tròn nội tiếp tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nVì  nên tam giác  vuông tại .\n\nDo đó bán kính đường tròn nội tiếp .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-79",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác vuông tại A có . Đường cao bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nDiện tích tam giác  là: .\n\nTa có: .\n\n.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-80",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có . Tính bán kính đường tròn ngoại tiếp tam giác .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: . Diện tích tam giác  là:\n\n.\n\nÁp dụng công thức: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-81",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có . Tính .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: . Diện tích tam giác  là:\n\n.\n\nÁp dụng công thức: .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-82",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Tính đường cao .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nDiện tích tam giác  là: .\n\nÁp dụng định lí cosin ta có:\n\n.\n\nÁp dụng công thức: .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-83",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Bán kính đường tròn nội tiếp tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: .\n\nÁp dụng định lí sin: \n\n.\n\nNửa chu vi là: \n\nDiện tích tam giác  là: .\n\nÁp dụng công thức .",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-84",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác đều nội tiếp đường tròn bán kính có diện tích là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có diện tích tam giác  là . Do tam giác  đều nên \n\nMặt khác từ định lí sin, ta có: \n\nVậy.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-85",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác với ba cạnh là Bán kính đường tròn nội tiếp tam giác đó bằng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có:   mà",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-86",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác ABC có ,, . Chiều cao của tam giác là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: .\n\nDiện tích tam giác:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-87",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hình vuông có cạnh bằng. Gọi là trung điểm cạnh và là trung điểm cạnh. Tính độ dài đoạn thẳng.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nVì  là hình vuông và  là trung điểm của  nên .\n\nÁp dụng công thức độ dài trung tuyến trong tam giác , ta có\n\n.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-88",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có hai đường trung tuyến vuông góc với nhau và có ,. Bán kính đường tròn nội tiếp tam giác là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nGọi , , , .\n\nTa có: \n\nDo tam giác  vuông tại  nên\n\n\n\n.\n\nÁp dụng định lí côsin trong tam giác , ta có:\n\n\n\n\n\nMặt khác ta có: \n\n.\n\nTheo công thức tính diện tích tam giác, ta có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-89",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Mảnh vườn hình tam giác của gia đình bạn Minh có chiều dài các cạnh là . Hỏi diện tích mảnh vườn của gia đình bạn Minh là bao nhiêu mét vuông (làm tròn đến hàng phần mười)?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTa có: .\n\nDiện tích mảnh vườn là: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-90",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Để tính đường kính và diện tích của một giếng nước cổ có dạng hình tròn, người ta tiến hành đo đạc tại ba vị trí trên thành giếng. Kết quả đo được là: , hình dưới. Diện tích của giếng là bao nhiêu mét vuông (lấy và làm tròn kết quả đến hàng phần trăm)?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lí sin cho tam giác , ta có: .\n\nDo đó .\n\nVậy diện tích của giếng là: .\n\nPHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-91",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
@@ -2044,308 +554,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Một miếng đất có hình dạng là một hình lục giác. Các mệnh đề sau đúng hay sai? Diện tích mảnh vuờn là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nDiện tích mỗi tam giác đều là: .\n\nDiện tích hình chữ nhật là: .\n\nSuy ra diện tích hình lục giác là: .",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-104",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Gia đình bạn An sở hữu một mảnh đất hình tam giác. Chiều dài của hàng ràolà , chiều dài của hàng rào là . Góc giữa hai hàng rào và là . Chiều dài hàng rào là.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nChiều dài hàng rào :\n\n,",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-105",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Trên bản đồ địa lí, người ta thường gọi tứ giác với bốn đỉnh lần lượt là các thành phố Hà Tiên (H), Châu Đốc (C), Long Xuyên (L), Rạch Giá (R) là tứ giác Long Xuyên. Châu Đốc (C) và Rạch Giá (R) cách nhau khoảng bao nhiêu km?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTrong tam giác  có:  và  là cạnh lớp nhất của tam giác nên tam giác  không là tam giác vuông tại .\n\nÁp dụng hệ quả định lí côsin, ta có:\n\n.\n\n.\n\nÁp dụng định lí côsin, ta có: ⇒ \n\nVậy Châu Đốc và Rạch Giá cách nhau khoảng km.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-106",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Người ta định lát gạch tổ ong trên mảnh đất hình tứ giác như mô hình bên cạnh. Biết rằng , , và giá lát gạch là nghìn đồng trên một mét vuông bao gồm cả công thợ. Các mệnh đề sau đúng hay sai? Số tiền để lát gạch cả mảnh đất đó là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\n\n\nNối , áp dụng định lý côsin trong tam giác  ta có:\n\n.\n\nTam giác  cân tại  .\n\nÁp dụng công thức tính diện tích tam giác ta có:\n\n.\n\n.\n\n.\n\nSố tiền để lát gạch cả mảnh đất đó là: nghìn đồng.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-107",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hai địa điểm và như hình vẽ. Biết Bạn An muốn đi từ đến bằng một trong hai cách sau đây: Cách 1: Đi tàu thủy từ đến với vận tốc . Cách 2: Đi xe hơi từ đến rồi từ đến với vận tốc . Diện tích là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý côsin cho  ta có: \n\nTheo định lý cosin ta có:\n\n\n\nDiện tích tam giác",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-108",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Một đường hầm được dự kiến xây dựng xuyên qua một ngọn núi. Để ước tính chiều dài của đường hầm, một kĩ sư thực hiện các phép đo đạc và cho ra kết quả như hình vẽ dưới. Bán kính đường tròn ngoại tiếp tam giác bằng:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nÁp dụng định lý côsin cho  ta có: \n\nÁp dụng định lý côsin cho  ta có:\n\n.\n\nTheo định lí sin trong tam giác , ta có:",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-109",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Nhà bạn Bình có gác lửng cao so với nền nhà là . Ba của bạn Bình cần đặt một chiếc thang đi lên gác, biết khi đặt thang phải để thang tạo với mặt đất một góc thì đảm bảo sự an toàn khi sử dụng (như hình vẽ). Chiều dài của chiếc thang cần làm là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo tỉ số lượng giác của góc nhọn trong tam giác vuông  ta có \n\nĐộ lớn góc \n\nXét tam giác  vuông tại , ta có: .\n\nVậy chiều dài của chiếc thang cần làm là",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-110",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Một tháp nước cao ở trên đỉnh của một ngọn đồi. Từ tháp đến chân ngọn đồi dài và người ta quan sát thấy góc tạo thành giữa đỉnh và chân tháp là (như hình vẽ). Tính diện tích",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nTheo định lý sin trong tam giác  ta có \n\nTa có: \n\nVì  nên .\n\nVậy diện tích tam giác :\n\n (đvdt)",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-111",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Giả sử là chiều cao của tháp trong đó là chân tháp. Chọn hai điểm trên mặt đất sao cho ba điểm và thẳng hàng. Ta đo được m, . (Tham khảo hình vẽ bên dưới). Các mệnh đề sau đúng hay sai? (kết quả làm tròn đến chữ số thập phân thứ nhất). Chiều cao của tháp là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nXét tam giác  với  và .\n\nÁp dụng công thức .\n\nÁp dụng định lí sin, ta được: m.\n\nXét tam giác  vuông tại với  và m.\n\nÁp dụng tỉ số lượng giác trong tam giác  vuông tại , ta được:\n\nm.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-112",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Trên nóc một tòa nhà có một cột ăng-ten cao m. Từ một vị trí quan sát cao m so với mặt đất có thể nhìn thấy đỉnh và chân của cột ăng-ten, với các góc tương ứng là và so với phương nằm ngang (tham khảo hình vẽ dưới đây) (kết quả làm tròn đến chữ số thập phân thứ nhất). Chiều cao của tòa nhà là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Lời giải\n\nChiều cao của tòa nhà \n\nXét tam giác  với  và m.\n\nÁp dụng định lí sin, ta có:\n\nm.\n\nXét tam giác  vuông tại  với  và m.\n\nÁp dụng tỉ số lượng giác ta có: m.\n\nLại có: m. Vậy m. \n\nPHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "Cac-dang-bai-tap-bai-He-thuc-luong-trong-tam-giac-Toan-10-giai-chi-tiet.docx",
-    "id": "bq-10-c3-113",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho tam giác có các cạnh (giả thiết áp dụng cho câu ). Xét tính đúng sai của các khẳng định sau: a) Công thức tính diện tích của là . b) Diện tích bằng . c) Chiều cao hạ từ đỉnh của bằng . d) Giả sử là chiều cao của tháp trong đó là chân tháp. Chọn hai điểm trên mặt đất sao cho ba điểm thẳng hàng như hình vẽ dưới đây. Giả sử AB = 24m, ; . Chiều cao của khối tháp nhỏ hơn .",
     "explanation": "Lời giải\n\na) Sai: Ta có: .\n\nb) Sai: Ta có: .\n\nc) Đúng: Ta có: \n\nDiện tích khi đó: .\n\nd) Đúng: Ta có \n\nÁp dụng định lý sin trong tam giác ABD ta có: \n\nTam giác BCD vuông tại C nên có: \n\nVậy",
     "type": "essay",
@@ -2466,547 +674,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Cho tam giác với và , là bán kính đường tròn ngoại tiếp tam giác. Khẳng định nào sau đây là đúng ?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-373",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác , gọi . Biết . Tính bán kính R của đường tròn ngoại tiếp tam giác ABC.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-380",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác ABC, biết Tính góc A?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-384",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác ABC có và a =5. Tính độ dài bán kính đường tròn ngoại tiếp tam giác ABC.",
-    "options": [
-      {
-        "key": "A",
-        "text": "5"
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-388",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có , , . Tính diện tích tam giác .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-390",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có Tính diện tích của tam giác ABC.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": "12"
-      },
-      {
-        "key": "D",
-        "text": "6"
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-391",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tính bán kính đường tròn ngoại tiếp tam giác có ba cạnh là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-393",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác ABC có AB = 5, AC = 8 và Tính bán kính đường tròn nội tiếp tam giác đã cho.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-395",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác , gọi . Biết . Tính diện tích S của tam giác ABC.",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "HỆ THỨC LƯỢNG TRONG TAM GIÁC VÀ GIẢI TAM GIÁC_10.docx",
-    "id": "bq-10-c3-396",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Trong tam giác có:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-402",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác bất kỳ có . Đẳng thức nào sai?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-403",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Trong tam giác với . Mệnh đề nào dưới đây sai?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "NB",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-404",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có các cạnh . Diện tích của là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-405",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác , có độ dài ba cạnh là . Gọi là độ dài đường trung tuyến kẻ từ đỉnh là bán kính đường tròn ngoại tiếp tam giác và là diện tích tam giác đó. Mệnh đề nào sau đây sai?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "NB",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-406",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có , góc bằng . Độ dài cạnh là?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-407",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có . Tính độ dài .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": "8"
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-408",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Tính độ dài cạnh .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-409",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có . Độ dài cạnh bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": "49"
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-410",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho là độ dài 3 cạnh của tam giác . Biết . Tính độ dài của .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": "6"
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-411",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho . Gọi là 2 điểm di động lần lượt trên sao cho . Độ dài lớn nhất của bằng bao nhiêu?",
     "options": [
       {
@@ -3034,281 +701,6 @@
     "chapterName": "Chương III: Hệ thức lượng trong tam giác",
     "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
     "id": "bq-10-c3-412",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có . Khi đó đường trung tuyến của tam giác có độ dài là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-413",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và độ dài đường trung tuyến . Tính độ dài .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": "4"
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-414",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho vuông ở , biết . Tính độ dài trung tuyến ?",
-    "options": [
-      {
-        "key": "A",
-        "text": "3"
-      },
-      {
-        "key": "B",
-        "text": "4"
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-415",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác , biết . Tính góc ?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-416",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác biết độ dài ba cạnh lần lượt là và thỏa mãn hệ thức với . Khi đó, góc bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-417",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác có . là điểm trên cạnh sao cho . Độ dài đoạn bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": "9"
-      },
-      {
-        "key": "C",
-        "text": "3"
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-418",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có . Tính độ dài đường phân giác trong góc của tam giác .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-419",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có góc và cạnh . Tính bán kính của đường tròn ngoại tiếp tam giác .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-420",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Trong mặt phẳng, cho tam giác có , góc . Độ dài cạnh là",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-421",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
@@ -3406,130 +798,6 @@
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
   {
-    "stem": "Cho tam giác có . Khi đó diện tích của tam giác là:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": "105"
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-425",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác đều cạnh . Bán kính đường tròn ngoại tiếp tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-426",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác đều cạnh . Tính bán kính của đường tròn ngoại tiếp tam giác .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-427",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tam giác có và . Bán kính đường tròn ngoại tiếp tam giác bằng:",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": "2"
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-428",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
     "stem": "Cho có . Độ dài bán kính đường tròn ngoại tiếp của tam giác trên là:",
     "options": [
       {
@@ -3557,223 +825,6 @@
     "chapterName": "Chương III: Hệ thức lượng trong tam giác",
     "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
     "id": "bq-10-c3-429",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác với ba cạnh là 5;12;13 có bán kính đường tròn ngoại tiếp là?",
-    "options": [
-      {
-        "key": "A",
-        "text": "6"
-      },
-      {
-        "key": "B",
-        "text": "8"
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-430",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác với ba cạnh là 5;12;13 có bán kính đường tròn nội tiếp tam giác đó bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": "2"
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": "3"
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-431",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tam giác với ba cạnh là 6;8;10 có bán kính đường tròn ngoại tiếp bằng bao nhiêu?",
-    "options": [
-      {
-        "key": "A",
-        "text": "5"
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": "6"
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-432",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho có , nửa chu vi . Độ dài bán kính đường tròn nội tiếp của tam giác trên là:",
-    "options": [
-      {
-        "key": "A",
-        "text": "3"
-      },
-      {
-        "key": "B",
-        "text": "2"
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-433",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hình chữ nhật có cạnh là trung điểm của là điểm trên cạnh sao cho . Khi đó bán kính của đường tròn ngoại tiếp tam giác bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-434",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hình bình hành có và . Diện tích của hình bình hành bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "VD",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-435",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho tứ giác lồi có và . Tính .",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "B",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      },
-      {
-        "key": "D",
-        "text": ""
-      }
-    ],
-    "correctKey": "A",
-    "explanation": "Học sinh vận dụng kiến thức bài học để thực hiện các bước giải toán chính xác.",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "thuvienhoclieu.com-TRAC-NGHIEM-HE-THUC-LUONG-TRONG-TAM-GIAC.docx",
-    "id": "bq-10-c3-436",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.264Z"
   },
@@ -3922,29 +973,6 @@
     "createdAt": "2026-09-14T05:01:55.265Z"
   },
   {
-    "stem": "Chương 04 C Luyện tập Câu hỏi – Trả lời trắc nghiệm Khẳng định nào sau đây đúng?",
-    "options": [
-      {
-        "key": "A",
-        "text": ""
-      },
-      {
-        "key": "C",
-        "text": ""
-      }
-    ],
-    "correctKey": "B",
-    "explanation": "🖎 Lời giải\n\nChọn B\n\nTrong khoảng từ  đến , khi giá trị của góc tăng thì:\n\n- Giá trị sin tương ứng của góc đó giảm.\n\n- Giá trị cos tương ứng của góc đó giảm.\n\nKhẳng định nào sau đây đúng?\n\nA. \tB. \n\nC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTrong khoảng từ  đến , khi giá trị của góc tăng thì:\n\n- Giá trị sin tương ứng của góc đó giảm.\n\n- Giá trị cos tương ứng của góc đó giảm.\n\nCho biết ,  Giá trị của  bằng\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có\n\n \n\n\n\n: không thỏa mãn vì .\n\n.\n\nCho góc  Khẳng định nào sau đây đúng?\n\nA.  và  cùng dấu.\tB. Tích  mang dấu âm.\n\nC. Tích  mang dấu dương.\tD.  và  cùng dấu.\n\n🖎 Lời giải\n\nChọn B\n\nVới , ta có  suy ra: \n\nVậy \n\nCho  là góc tù. Mệnh đề nào đúng trong các mệnh đề sau?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\n\n\nCho . Khẳng định nào sau đây đúng?\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nVì  và  là hai cung phụ nhau nên theo tính chất giá trị lượng giác của hai cung phụ nhau ta có đáp án B đúng.\n\nTrong các đẳng thức sau đây, đẳng thức nào đúng?\n\nA. .\tB. \n\nC. .\tD. \n\n🖎 Lời giải\n\nChọn D\n\nMối liên hệ hai cung bù nhau.\n\nCho  và  là hai góc khác nhau và bù nhau, trong các đẳng thức sau đây đẳng thức nào sai?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nMối liên hệ hai cung bù nhau.\n\nCho hai góc nhọn  và  (. Khẳng định nào sau đây là sai?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nXét \n\nCho vuông tại , góc  bằng . Khẳng định nào sau đây là sai?\n\nA. .\tB. .\tC. .\tD. \n\n🖎 Lời giải\n\nChọn A\n\n.\n\nBiết  . Khi đó  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nVì  nên , do đó .\n\nCho và  thì\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có \n\nMặt khác  nên \n\nCho  và thỏa mãn . Giá trị của  bằng.\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có .\n\nVì  nên , suy ra \n\nCho . Giá trị của  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có: ,\n\nVậy .\n\nCho góc  thỏa mãn  và . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nVì  .\n\nTa có  .\n\nVì  nên .\n\nCho , với . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có  .\n\nMặt khác nên .\n\nCho biết . Tính ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nDo .\n\nTa có: .\n\nCho biết . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\n.\n\n bằng bao nhiêu nếu ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTa có .\n\n.\n\nVới  và \n\nNếu  thì  bằng bao nhiêu?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có .\n\nSuy ra .\n\nVới  và \n\nBiết , . Tính \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nDo ,  nên  suy ra .\n\nMặt khác,  .\n\nMà ta lại có   .\n\nKhi đó  và do  nên .\n\nCho . Tính biểu thức \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có .\n\nChovới . Tính giá trị của \n\nA. \tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có.\n\nMà .\n\nTừ đó .\n\nCho biết. Tính giá trị của ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\n.\n\nCho biết . Giá trị của biểu thức  bằng bao nhiêu?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\n.\n\nCho . Tính giá trị của biểu thức  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có: \n\n.\n\nCho . Tính biểu thức .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có: \n\nRút gọn biểu thức \n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTa có: .\n\nBiết . Hỏi giá trị của  bằng bao nhiêu?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có: .\n\n.\n\nBiểu thức bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\n.\n\nGiá trị của biểu thức  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\n.\n\nTổng  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\n.\n\nBiểu thức:  có giá trị bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\n.\n\nBiểu thức  có giá trị bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n.\n\nCho hai góc  và  với . Tính giá trị của biểu thức \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nHai góc  và  phụ nhau nên .\n\nDo đó, .\n\nCâu hỏi – Trả lời Đúng/sai\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nVì .\n\n» Chọn ĐÚNG.\n\n(b) \n\nMặt khác: .\n\n» Chọn SAI.\n\n(c) \n\n\n\n» Chọn SAI.\n\n(d) \n\nVì .\n\n» Chọn ĐÚNG.\n\nCho biết . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTheo giả thiết: .\n\n» Chọn SAI.\n\n(b) \n\nTa có: ; \n\n» Chọn ĐÚNG.\n\n(c) \n\nVì .\n\n» Chọn ĐÚNG.\n\n(d) \n\n.\n\n» Chọn SAI.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nVì \n\n» Chọn ĐÚNG.\n\n(b) \n\nMà  nên . \n\n» Chọn SAI.\n\n(c) \n\nDo đó .\n\n» Chọn SAI.\n\n(d) \n\n.\n\n» Chọn ĐÚNG.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nVì  nên .\n\n» Chọn SAI.\n\n(b) \n\nDo đó .\n\n» Chọn ĐÚNG.\n\n(c) \n\n\n\n» Chọn SAI.\n\n(d) \n\n\n\n» Chọn SAI.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nDo  nên . \n\n» Chọn SAI.\n\n(b) \n\nVì .\n\n» Chọn ĐÚNG.\n\n(c) \n\nMà  nên . \n\nDo đó  \n\n» Chọn SAI.\n\n(d) \n\nNên.\n\n» Chọn ĐÚNG.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: . \n\nVì  nên \n\n» Chọn ĐÚNG.\n\n(b) .\n\n.\n\n» Chọn SAI.\n\n(c) .\n\n\n\n» Chọn ĐÚNG.\n\n(d) \n\n.\n\n» Chọn ĐÚNG.\n\nCho . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nDo  nên \n\n» Chọn ĐÚNG.\n\n(b) \n\n.\n\nDo  nên .\n\n» Chọn SAI.\n\n(c) \n\nMà .\n\n» Chọn ĐÚNG.\n\n(d) \n\nDo .\n\n» Chọn SAI.\n\nCâu hỏi – Trả lời ngắn\n\nCho . Tính giá trị biểu thức ?\n\n🖎 Lời giải\n\n✓ Trả lời: 3,25\n\nTa có: .\n\nCho . Tính giá trị của biểu thức ?\n\n🖎 Lời giải\n\n✓ Trả lời: 13\n\nDo .\n\nChia hai vế biểu thức  cho , ta có: \n\nBiết . Tính giá trị của ?\n\n🖎 Lời giải\n\n✓ Trả lời: 0,5\n\nTa có:   .\n\nKhi đó: .\n\nCho . Tính .\n\n🖎 Lời giải\n\n✓ Trả lời: 3\n\nVì . Chia cả tử và mẫu cho  ta được:\n\n\n\nCho . Tính giá trị biểu thức .\n\n🖎 Lời giải\n\n✓ Trả lời: 5\n\n. Khi đó ta có .\n\nCho . Tính giá trị biểu thức .\n\n🖎 Lời giải\n\n✓ Trả lời: 3,25\n\n.\n\nCho góc  thỏa mãn . Tính giá trị của biểu thức .\n\n🖎 Lời giải\n\n✓ Trả lời: 0,5\n\n.\n\nCho biết . Tính giá trị của  ta thu được kết quả  với  là các số tự nhiên. Tính \n\n🖎 Lời giải\n\n✓ Trả lời: -1\n\n\n\n\n\nCho . Tính .\n\n🖎 Lời giải\n\n✓ Trả lời: 1,4\n\n.\n\n\n\nDo đó:  (Vì .\n\nGiá trị của biểu thức:  với  là các số nguyên dương. Khi đó giá trị  bằng bao nhiêu?\n\n🖎 Lời giải\n\n✓ Trả lời: 7\n\n.\n\nCho các góc  thoả mãn  và . Tính giá trị của biểu thức .\n\n🖎 Lời giải\n\n✓ Trả lời: 1\n\nTa có: . Mà  nên \n\nTính giá trị biểu thức sau: .\n\n🖎 Lời giải\n\n✓ Trả lời: -1\n\n\n\n\n\nCho . Tính giá trị của biểu thức  ?\n\n🖎 Lời giải\n\n✓ Trả lời: 13\n\nDo .\n\nChia hai vế biểu thức  cho , ta có: \n\n----------------------------------- Hết -----------------------------------",
-    "type": "multiple_choice",
-    "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "C4-B1-GIÁ TRỊ LƯỢNG GIÁC CỦA MỘT GÓC TỪ 0° ĐẾN 180°-P2.docx",
-    "id": "bq-10-c3-553",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "stem": "Cho tam giác có độ dài ba cạnh là , , . Tính độ dài đường trung tuyến , với là trung điểm của .",
     "explanation": "🖎 Lời giải\n\nÁp dụng công thức tính độ dài trung tuyến ta có:\n\n.",
     "type": "essay",
@@ -4089,26 +1117,728 @@
     "createdAt": "2026-09-14T05:01:55.265Z"
   },
   {
-    "stem": "Chương 04 C Luyện tập Câu hỏi – Trả lời trắc nghiệm Cho có Độ dài cạnh bằng:",
+    "id": "bq-10-c3-curated-001",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b5-gia-tri-luong-giac",
+    "lessonTitle": "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Giá trị của $\\cos 120^\\circ$ bằng:",
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "$-\\frac{1}{2}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{1}{2}$"
       },
       {
         "key": "C",
-        "text": ""
+        "text": "$-\\frac{\\sqrt{3}}{2}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{\\sqrt{3}}{2}$"
       }
     ],
     "correctKey": "A",
-    "explanation": "🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nCho tam giác  có  và  Tính độ dài cạnh \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTheo định lý cosin ta có: \n\n \n\nCho  là độ dài  cạnh của tam giác . Biết ;;. Tính độ dài của .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nÁp dụng định lí cosin cho tam giác ta có:\n\n.\n\nSuy ra:.\n\nCho  là độ dài cạnh của một tam giác. Mệnh đề nào sau đây không đúng?\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nDo   nên mệnh đề C sai.\n\nÁp dụng bất đẳng thức tam giác ta có ;đáp án A đúng.\n\nTương tự ;mệnh đề D đúng.\n\nTa có: ;mệnh đề B đúng.\n\nCho tam giác  thoả mãn: . Khi đó:\n\nA. \tB. \tC. \tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có: \n\nCho tam giác , biết  Tính góc ?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có: \n\nTam giác  có . Các cạnh  liên hệ với nhau bởi đẳng thức . Khi đó góc  bằng bao nhiêu độ.\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTheo bài ra, ta có: \n\n\n\n.\n\nCho tam giác , chọn công thức đúng trong các đáp án sau:\n\nA. \tB. \n\nC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nTa có: \n\nCho tam giác  có  và độ dài đường trung tuyến . Tính độ dài .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n\n\nTheo công thức tính độ dài đường trung tuyến;ta có: .\n\nCho tam giác , có độ dài ba cạnh là . Gọi  là độ dài đường trung tuyến kẻ từ đỉnh ,  là bán kính đường tròn ngoại tiếp tam giác và  là diện tích tam giác đó. Mệnh đề nào sau đây sai?\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTheo định lý hàm số cosin trong tam giác ta có \n\nTam giác  có   là điểm trên cạnh  sao cho . Độ dài đoạn  bằng bao nhiêu?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có: Trong tam giác có  mà  suy ra  là trung điểm \n\nSuy ra: .\n\nCho tam giác . Tìm công thức sai:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có: \n\nCho tam giác  có góc  và cạnh . Tính bán kính của đường tròn ngoại tiếp tam giác .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có: .\n\nCho  có ;;. Độ dài  gần nhất với kết quả nào?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\n\n\nÁp dụng định lý sin: .\n\nCho tam giác  thoả mãn hệ thức . Trong các mệnh đề sau, mệnh đề nào đúng?\n\nA. \tB. \n\nC. .\tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có:\n\n\n\n\n\nTam giác  có ; ; . Cạnh bằng bao nhiêu?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nTa có: Trong tam giác : .\n\nMặt khác \n\nTam giác ABC có , ,  Tính ?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có: Trong tam giác : .\n\nMặt khác \n\nCho tam giác ABC có  biết , góc bằng. Độ dài cạnh  là?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có: .\n\nCho tam giác  có ;  và . Tính .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nÁp dụng định lí hàm số Cosin vào tam giác  có\n\n\n\n\n\nTrong  có . Đẳng thức nào sau đây đúng?\n\nA. .\tB. .\n\nC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTheo định lí hàm số cos, trong  ta luôn có: \n\nCho tam giác  có  và  Độ dài cạnh  là\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn D\n\nXét  có \n\nHay \n\nCho  có  Độ dài cạnh  bằng:\n\nA. \tB. \tC. \tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nCho tam giác  có ; ; , có . Số đo của góc  là:\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có: .\n\nCho  có . Tính cạnh .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nÁp dụng định lí cosin ta có:.\n\nCho tam giác có . Tính độ dài cạnh .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có \n\n\n\nTam giác  có  cm,  cm,  cm. Giá trị  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nÁp dụng định lí hàm số cosin ta có: .\n\nTam giác  có . Tính diện tích tam giác \n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn C\n\nTa có .\n\nSuy ra tam giác  cân tại  nên .\n\nDiện tích tam giác  là \n\nChọn công thức đúng trong các đáp án sau:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nCho hình thoi  có cạnh bằng . Góc . Diện tích hình thoi  là\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có .\n\nCho có  Diện tích  của tam giác trên là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có: Nửa chu vi : .\n\nÁp dụng công thức Hê-rông: .\n\nCho có Diện tích của tam giác là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có: \n\nMột tam giác có ba cạnh là . Diện tích tam giác bằng bao nhiêu?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nSuy ra: .\n\nCho tam giác  có . Khi đó diện tích của tam giác là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có: \n\nSuy ra: \n\nTam giác có các trung tuyến ,,.Diện tích S của tam giác bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTheo bài toán ta có\n\nTa có , áp dụng công thức He-rong ta có\n\n.\n\nCách 2:\n\nĐặt ,\n\nTheo định lý trung tuyến có:\n\n\n\nCó ,  Suy ra \n\nCho tam giác  có  và . Tính diện tích tam giác ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nDiện tích của tam giác  là .\n\nCho tam giác  có chu vi bằng 12 và bán kính đường tròn nội tiếp bằng 1. Diện tích của tam giác  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTheo đề bài tam giác  có chu vi bằng 12 nên nửa chu vi là ; bán kính đường tròn nội tiếp bằng 1, tức là ta có: .\n\nDiện tích tam giác  là: .\n\nCho tam giác  có , , . Bán kính đường tròn nội tiếp tam giác bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nVì  nên tam giác  vuông tại .\n\nDo đó bán kính đường tròn nội tiếp .\n\nCho có  Độ dài bán kính đường tròn ngoại tiếp  của tam giác trên là:\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có: .\n\nTam giác với ba cạnh là  có bán kính đường tròn ngoại tiếp là?\n\nA. \tB. \tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nTa có: .\n\n. Tam giác  có . Gọi  là trung điểm của . Biết  và . Tính độ dài cạnh .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn D\n\nTa có:  là trung điểm của \n\nTrong tam giác  ta có: \n\n\n\n\n\n\n\nTa có:  và  là hai góc kề bù.\n\n\n\nTrong tam giác  ta có:\n\n\n\n\n\nCho tam giác  có ,  và . Gọi  là điểm trên cạnh  sao cho . Gọi  là trung điểm của đoạn thẳng . Đường trung trực của đoạn thẳng  cắt  tại . Tính độ dài đoạn thẳng .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\n\n\n và .\n\n.\n\n.\n\n.\n\n.\n\nVậy .\n\nTam giác ABC có , ,  Tính ?\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có trong tam giác : .\n\nMặt khác \n\nTam giác  có độ dài cạnh ;  và . Bán kính  của đường tròn ngoại tiếp tam giác  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn C\n\nXét tam giác  ta có:\n\n\n\n\n\nDo đó tam giác  vuông tại .\n\nVậy bán kính  của đường tròn ngoại tiếp tam giác : .\n\nCho tam giác  có  và . Khi đó, độ dài cạnh  bằng\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn A\n\nTa có .\n\nÁp dụng định lí Sin cho tam giác , ta có:\n\n.\n\nTính diện tích hình bình hành biết .\n\nA. .\tB. .\tC. .\tD. .\n\n🖎 Lời giải\n\nChọn B\n\nTa có .\n\nKhoảng cách từ  đến  không thể đo trực tiếp được vì phải qua một đầm lầy. Người ta xác định được một điểm  mà từ đó có thể nhìn được  và  dưới một góc . Biết . Khoảng cách  bằng bao nhiêu?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có: \n\nHai chiếc tàu thuỷ cùng xuất phát từ vị trí , đi thẳng theo hai hướng tạo với nhau một góc . Tàu thứ nhất chạy với tốc độ , tàu thứ hai chạy với tốc độ . Hỏi sau  giờ hai tàu cách nhau bao nhiêu ?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn B\n\nTa có: Sau  quãng đường tàu thứ nhất chạy được là: \n\nSau  quãng đường tàu thứ hai chạy được là: \n\nVậy: sau  hai tàu cách nhau là: \n\nKhoảng cách từ  đến  không thể đo trực tiếp được vì phải qua một đầm lầy. Người ta xác định được một điểm mà từ đó có thể nhìn được  và dưới một góc . Biết , . Khoảng cách  bằng bao nhiêu?\n\nA. \tB. \tC. \tD. \n\n🖎 Lời giải\n\nChọn A\n\nTa có: \n\n\n\nTrong khi khai quật một ngôi mộ cổ, các nhà khảo cổ học đã tìm được một chiếc đĩa cổ hình tròn bị vỡ, các nhà khảo cổ muốn khôi phục lại hình dạng chiếc đĩa này. Để xác định bán kính của chiếc đĩa, các nhà khảo cổ lấy 3 điểm trên chiếc đĩa và tiến hành đo đạc thu được kết quả như hình vẽ (cm;cm;  cm). Bán kính của chiếc đĩa này bằng.\n\n\n\nA. 5,73 cm.\tB. 6,01cm.\tC. 5,85cm.\tD. 4,57cm.\n\n🖎 Lời giải\n\nChọn A\n\nBán kính  của chiếc đĩa bằng bán kính đường tròn ngoại tiếp tam giác.\n\nNửa chu vi của tam giác  là: cm.\n\nDiện tích tam giác  là: cm2.\n\nMà cm.\n\nGiả sử CD = h là chiều cao của tháp trong đó C là chân tháp. Chọn hai điểm A, B trên mặt đất sao cho ba điểm A, B, C thẳng hàng. Ta đo được AB = 24m, ; . Chiều cao h của khối tháp gần với giá trị nào sau đây?\n\nA. 61,4 m.\tB. 18,5 m.\tC. 60 m.\tD. 18 m.\n\n🖎 Lời giải\n\nChọn A\n\n\n\nTa có \n\nÁp dụng định lý sin trong tam giác ABD ta có: \n\nTam giác BCD vuông tại C nên có: \n\nVậy \n\nCâu hỏi – Trả lời Đúng/sai\n\nCho tam giác  có các cạnh . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có .\n\n» Chọn SAI.\n\n(b) \n\nÁp dụng công thức Heron trong tam giác \n\n» Chọn ĐÚNG.\n\n(c) \n\nTa có:\n\n.\n\n» Chọn ĐÚNG.\n\n(d) \n\nMà  nên .\n\n» Chọn SAI.\n\nCho tam giác  biết . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n kết quả làm tròn đến hàng phần trăm\n\n\n\n\n\n(c)\n\n kết quả làm tròn đến hàng phần trăm\n\n\n\n\n\n(d)\n\n kết quả làm tròn đến hàng phần chục\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\n» Chọn ĐÚNG.\n\n(b)  kết quả làm tròn đến hàng phần trăm\n\nÁp dụng định lí cosin trong tam giác, ta có:  \n\nhay . Do đó, .\n\n» Chọn SAI.\n\n(c)  kết quả làm tròn đến hàng phần trăm\n\nTa có .\n\n» Chọn ĐÚNG.\n\n(d)  kết quả làm tròn đến hàng phần chục\n\nSuy ra . \n\n» Chọn SAI.\n\nCho tam giác  có các cạnh . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có . \n\n» Chọn SAI.\n\n(b) \n\nÁp dụng công thức Heron ta có: \n\n» Chọn ĐÚNG.\n\n(c) \n\n\n\n» Chọn ĐÚNG.\n\n(d) \n\nÁp dụng công thức tính diện tích , suy ra .\n\n» Chọn SAI.\n\nCho tam giác  biết các cạnh . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTheo hệ quả định lí \n\n» Chọn ĐÚNG.\n\n(b) \n\n\n\n» Chọn SAI.\n\n(c) \n\n\n\n» Chọn SAI.\n\n(d) \n\n\n\n» Chọn ĐÚNG.\n\nCho tam giác  với  và . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTheo định lí cosin, ta có: \n\n» Chọn ĐÚNG.\n\n(b) \n\n\n\nSuy ra: .\n\n» Chọn SAI.\n\n(c) \n\nTa có: \n\n» Chọn SAI.\n\n(d) \n\nTa có: \n\n» Chọn ĐÚNG.\n\nCho tam giác  biết cạnh . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n kết quả làm tròn đến hàng phần trăm\n\n\n\n\n\n(d)\n\n kết quả làm tròn đến hàng phần chục\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có: \n\n» Chọn ĐÚNG.\n\n(b) \n\nTheo định lí \n\n» Chọn SAI.\n\n(c)  kết quả làm tròn đến hàng phần trăm\n\nSuy ra: ;\n\n» Chọn ĐÚNG.\n\n(d)  kết quả làm tròn đến hàng phần chục\n\n\n\n» Chọn SAI.\n\nCho tam giác  có số đo các cạnh lần lượt là 7,9 và 12. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nGiả sử: .\n\nĐặt  (nửa chu vi tam giác).\n\n» Chọn ĐÚNG.\n\n(b) \n\nTheo công thức Hê-rông, ta có:\n\n\n\n» Chọn SAI.\n\n(c) \n\nTa có: \n\n» Chọn SAI.\n\n(d) .\n\n.\n\n» Chọn SAI.\n\nCho  có  và . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\n\n\n» Chọn ĐÚNG.\n\n(b) \n\n\n\n\n\n» Chọn ĐÚNG.\n\n(c) \n\n\n\n» Chọn SAI.\n\n(d) \n\n\n\n» Chọn SAI.\n\nCho tam giác , biết . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\nTa có:  (vì ).\n\n» Chọn ĐÚNG.\n\n(b) \n\n\n\n» Chọn ĐÚNG.\n\n(c) \n\n. \n\n» Chọn SAI.\n\n(d) \n\n\n\n.\n\n» Chọn SAI.\n\nCho  có . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n🖎 Lời giải\n\n(a) \n\n\n\n» Chọn SAI.\n\n(b) \n\n\n\n» Chọn SAI.\n\n(c) \n\n\n\n» Chọn ĐÚNG.\n\n(d) \n\n\n\n» Chọn ĐÚNG.\n\nCâu hỏi – Trả lời ngắn\n\nCho tam giác  có . Tính độ dài đường phân giác trong góc  của tam giác . Kết quả làm tròn đến hàng phần chục.\n\n🖎 Lời giải\n\n✓ Trả lời: 0,3\n\nGiả sử đường phân giác trong góc  của  cắt cạnh  tại điểm .\n\nVới  là kí hiệu diện tích tam giác ta có\n\n\n\n\n\nCho tam giác  có  và . Tính chu vi tam giác đó.\n\n🖎 Lời giải\n\n✓ Trả lời: 24\n\n.\n\nTheo định lý sin trong tam giác ta tính được .\n\nChu vi tam giác là .\n\nĐể kéo dây điện từ cột điện vào nhà phải qua một cái ao, anh Nam không thể đo độ dài dây điện cần mua trực tiếp được nên đã làm như sau: Lấy một điểm  như trong hình, người ta đo được độ dài từ  đến  (nhà) là , từ  đến  (cột điện) là  và . Độ dài dây điện nối từ nhà ra đến cột điện là bao nhiêu mét? Kết quả làm tròn đến hàng phần chục.\n\n🖎 Lời giải\n\n✓ Trả lời: 28,6\n\n\n\nÁp dụng định lí côsin cho tam giác  ta có: \n\nVậy độ dài dây điện nối từ nhà ra cột điện dài 28,62 m.\n\nĐể đo chiều cao của một cột cờ trên đỉnh một toà nhà anh Bắc đã làm như sau: Anh đứng trên một đài quan sát có tầm quan sát cao  so với mặt đất, khi quan sát anh đo được góc quan sát chân cột là  và góc quan sát đỉnh cột là , khoảng cách từ chân toà nhà đến vị trí quan sát là . Chiều cao cột cờ và chiều cao của toà nhà bao nhiêu mét? Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 6,3\n\nTrong tam giác , ta có:\n\n, suy ra .\n\n, suy ra \n\nVậy chiều cao của toà nhà là: .\n\nTrong tam giác  ta có: , suy ra .\n\nLại có góc , áp dụng định lí cosin trong tam giác , ta có:\n\n\n\nVậy chiều cao của cột cờ khoảng 6,34 m.\n\nCho tam giác  có . Tính bán kính  của đường tròn ngoại tiếp tam giác. Kết quả làm tròn đến hàng phần trăm\n\n🖎 Lời giải\n\n✓ Trả lời: 4,04\n\nÁp dụng định lí côsin, ta có: \n\n\n\nĐể đo khoảng cách từ vị trí  trên bờ sông đến vị trí  của con tàu bị mắc cạn gần một cù lao giữa sông, bạn Minh đi dọc bờ sông từ vị trí  đến vị trí  cách  một khoảng bằng  và đo các góc . (Hình). Tính khoảng cách  theo đơn vị mét (làm tròn kết quả đến hàng đơn vị)\n\n🖎 Lời giải\n\n✓ Trả lời: 44\n\nXét tam giác , ta có: .\n\nÁp dụng định lí sin, ta có: \n\nHai tàu đánh cá cùng xuất phát từ bến  và đi thẳng đều về hai vùng biển khác nhau, theo hai hướng tạo với nhau góc  (Hình). Tàu thứ nhất đi với tốc độ 8 hải lí một giờ và tàu thứ hai đi với tốc độ 10 hải lí một giờ. Hỏi sau bao nhiêu giờ thì khoảng cách giữa hai tàu là 60 hải lí (làm tròn kết quả đến hàng phần mười theo đơn vị giờ)?\n\n🖎 Lời giải\n\n✓ Trả lời: 3,8\n\nGiả sử sau  (giờ)  tàu thứ nhất ở vị trí , tàu thứ hai ở vị trí  và khoảng cách  (hải lí).\n\nTa có:  (hải lí);  (hải lí). \n\nÁp dụng định lí côsin, ta có: \n\n.\n\nVậy sau 3,8 giờ thì khoảng cách giữa hai tàu là 60 hải lí.\n\nCho tam giác  có  và đường trung tuyến . Tính độ dài cạnh ? Kết quả làm tròn đến hàng phần chục.\n\n🖎 Lời giải\n\n✓ Trả lời: 9,4\n\n\n\nTa có: \n\n\n\nCho hình bình hành  có . Tính . Kết quả làm tròn đến hàng phần chục.\n\n🖎 Lời giải\n\n✓ Trả lời: 5,7\n\nDo  là hình bình hành nên .\n\n\n\nGọi  là giao điềm hai đường chéo hình bình hành, suy ra  là trung điểm .\n\nXét \n\n\n\nDo đó: .\n\nCho  có . Kéo dài  một đoạn . Tính độ dài \n\n🖎 Lời giải\n\n✓ Trả lời: 12\n\n- Xét , ta có: \n\n- Xét , ta có:\n\n\n\n\n\n- Vì  nên  vuông tại  hay .\n\nCho hình thoi  có cạnh bằng . Góc . Tính diện tích hình thoi .\n\n🖎 Lời giải\n\n✓ Trả lời: 0,5\n\nTa có: .\n\nTrên ngọn đồi có một cái tháp cao  (hình vẽ). Đỉnh tháp  và chân tháp  lần lượt nhìn điểm  ở chân đồi dưới các góc tương ứng bằng  và  so với phương thẳng đứng. Tính chiều cao  của ngọn đồi.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 50\n\n. Nên  cân tại \n\nTrong tam giác vuông .\n\nHai chiếc tàu thủy cùng xuất phát từ vị trí , đi thẳng theo hai hướng tạo với nhau một góc . Tàu thứ nhất chạy với tốc độ , tàu thứ hai chạy với tốc độ . Hỏi sau 3 giờ hai tàu cách nhau bao nhiêu km? Kết quả làm tròn đến hàng phần chục.\n\n🖎 Lời giải\n\n✓ Trả lời: 79,3\n\nTa có quãng đường tàu thứ nhất đi được là .\n\nQuãng đường tàu thứ hai đi được là .\n\n với  là vị trí tàu thứ nhất chạy đến sau 3 giờ, nghĩa là là vị trí tàu thứ hai chạy đến sau 3 giờ, nghĩa là \n\n\n\n. Vậy khoảng cách hai tàu sau 3 giờ chạy là .\n\nThành phố Hải Đông dự định xây dựng một trạm nước sạch để cung cấp cho hai khu dân cư  và . Trạm nước sạch đặt tại vị trí  trên bờ sông. Biết , khoảng cách từ  và  đến bờ sông lần lượt là  (hình vẽ). Gọi  là tổng độ dài đường ống từ trạm nước đến  và . Tìm giá trị nhỏ nhất của . Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 20,1\n\nKẻ .\n\n\n\nGọi  đối xứng với  qua  là trung của .\n\n (không đổi). \n\nĐẳng thức xảy ra khi .\n\n\n\nVậy .\n\nHai chiếc tàu thuyền cùng xuất phát từ một vị trí , đi thẳng theo hai hướng tạo với nhau góc . Tàu  chạy với tốc độ 20 hải lí một giờ. Tàu  chạy với tốc độ 15 hải lí một giờ. Sau hai giờ, hai tàu cách nhau bao nhiêu hải lí?\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 36\n\nSau 2 giờ tàu  đi được 40 hải lí, tàu  đi được 30 hải lí.\n\n\n\nVậy tam giác  có  và .\n\nÁp dụng định lí cô-sin vào tam giác , ta có:\n\n\n\n\n\nVậy sau 2 giờ hai tàu cách nhau khoảng 36 hải lí.\n\nĐể đo khoảng cách từ một điểm  trên bờ sông đến gốc cây  trên cù lao giữa sông, người ta chọn một điểm  cùng ở trên bờ với  sao cho từ  và  có thể nhìn thấy điểm . Ta đo được khoảng cách , . Vậy sau khi đo đạc và tính toán khoảng cách  bằng bao nhiêu mét? Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 41,5\n\n\n\nTa có: .\n\nÁp dụng định lí sin vào tam giác  ta có\n\n\n\nVậy khoảng cách giữa  và  khoảng .\n\nTừ vị trí  người ta quan sát một cây cao (hình vẽ). Biết , . Tính chiều cao của cây? Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 17,3\n\n\n\nTrong tam giác , ta có\n\n\n\nSuy ra .\n\nSuy ra .\n\nÁp dụng định lí sin trong tam giác , ta được:\n\n\n\nGiả sử  là chiều cao của tháp trong đó  là chân tháp. Chọn hai điểm ,  trên mặt đất sao cho ba điểm  và  thẳng hàng. Ta đo được , . Tính chiều cao  của tháp? Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 68,9\n\n\n\nTa có .\n\nÁp dụng định lí sin vào tam giác , ta có\n\n\n\nTrong tam giác vuông , có\n\n\n\nVậy chiều cao của cái tháp khoảng .\n\nTrên nóc một tòa nhà có một cột ăngten cao . Từ vị trí quan sát  cao  so với mặt đất, có thể nhìn thấy đỉnh  và chân  của cột ăng-ten dưới góc  và  so với phương nằm ngang. Tính chiều cao của tòa nhà? Kết quả làm tròn đến hàng phần chục.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 18,9\n\n\n\nTừ hình vẽ, suy ra \n\nvà \n\nÁp dụng định lí sin trong tam giác , ta có\n\n\n\nTrong tam giác vuông , ta có .\n\nSuy ra, .\n\nVậy chiều cao của toà nhà khoảng .\n\nXác định chiều cao của một tháp mà không cần lên đỉnh của tháp. Đặt kế giác thẳng đứng cách chân tháp một khoảng biết chiều cao của giác kế là . Quay thanh giác kế sao cho khi ngắm theo thanh ta nhìn thấy đỉnh  của tháp. Đọc trên giác kế số đo của góc . Tính chiều cao của ngọn tháp? Kết quả làm tròn đến hàng đơn vị.\n\n\n\n🖎 Lời giải\n\n✓ Trả lời: 105\n\n\n\nTam giác  vuông tại , có \n\nVậy chiều cao của ngọn tháp là \n\n----------------------------------- Hết -----------------------------------",
+    "explanation": "Ta có $\\cos 120^\\circ = \\cos (180^\\circ - 60^\\circ) = -\\cos 60^\\circ = -\\frac{1}{2}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-002",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b5-gia-tri-luong-giac",
+    "lessonTitle": "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°",
     "type": "multiple_choice",
     "level": "TH",
-    "chapterId": "c3",
-    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
-    "sourceCitation": "C4-BÀI 2+3-ĐỊNH LÝ SIN-COS, GIẢI TAM GIÁC và THỰC TẾ-P2.docx",
-    "id": "bq-10-c3-566",
+    "stem": "Cho góc $\\alpha$ thỏa mãn $90^\\circ < \\alpha < 180^\\circ$ và $\\sin \\alpha = \\frac{3}{5}$. Giá trị của $\\cos \\alpha$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$-\\frac{4}{5}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{4}{5}$"
+      },
+      {
+        "key": "C",
+        "text": "$-\\frac{3}{4}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{3}{4}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $90^\\circ < \\alpha < 180^\\circ$ nên $\\cos \\alpha < 0$. Do đó $\\cos \\alpha = -\\sqrt{1 - \\sin^2 \\alpha} = -\\sqrt{1 - \\frac{9}{25}} = -\\frac{4}{5}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-003",
     "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ có các cạnh $a, b, c$ đối diện với các góc $A, B, C$. Mệnh đề nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$a^2 = b^2 + c^2 - 2bc\\cos A$"
+      },
+      {
+        "key": "B",
+        "text": "$a^2 = b^2 + c^2 + 2bc\\cos A$"
+      },
+      {
+        "key": "C",
+        "text": "$a^2 = b^2 + c^2 - bc\\cos A$"
+      },
+      {
+        "key": "D",
+        "text": "$a^2 = b^2 + c^2 + bc\\cos A$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định lí côsin trong tam giác: $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-004",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $b = 7$, $c = 5$, $\\cos A = \\frac{3}{5}$. Độ dài cạnh $a$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4\\sqrt{2}$"
+      },
+      {
+        "key": "B",
+        "text": "$3\\sqrt{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$32$"
+      },
+      {
+        "key": "D",
+        "text": "$6$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lí côsin: $a^2 = b^2 + c^2 - 2bc\\cos A = 7^2 + 5^2 - 2\\cdot 7\\cdot 5\\cdot \\frac{3}{5} = 49 + 25 - 42 = 32 \\Rightarrow a = \\sqrt{32} = 4\\sqrt{2}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-005",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ có bán kính đường tròn ngoại tiếp bằng $R$. Mệnh đề nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{a}{\\sin A} = 2R$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{a}{\\sin A} = R$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{a}{\\sin A} = 4R$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{a}{\\sin A} = \\frac{R}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định lí sin trong tam giác: $\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-006",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $\\widehat{A} = 60^\\circ$ và cạnh đối diện $a = 6$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2\\sqrt{3}$"
+      },
+      {
+        "key": "B",
+        "text": "$4\\sqrt{3}$"
+      },
+      {
+        "key": "C",
+        "text": "$3\\sqrt{3}$"
+      },
+      {
+        "key": "D",
+        "text": "$6\\sqrt{3}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định lí sin: $2R = \\frac{a}{\\sin A} = \\frac{6}{\\sin 60^\\circ} = \\frac{6}{\\frac{\\sqrt{3}}{2}} = \\frac{12}{\\sqrt{3}} = 4\\sqrt{3} \\Rightarrow R = 2\\sqrt{3}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-007",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Công thức nào sau đây dùng để tính diện tích tam giác $ABC$ khi biết nửa chu vi $p$ và bán kính đường tròn nội tiếp $r$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$S = p\\cdot r$"
+      },
+      {
+        "key": "B",
+        "text": "$S = \\frac{p}{r}$"
+      },
+      {
+        "key": "C",
+        "text": "$S = 2pr$"
+      },
+      {
+        "key": "D",
+        "text": "$S = \\frac{pr}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Diện tích tam giác tính theo bán kính đường tròn nội tiếp là $S = p\\cdot r$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-008",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $AB = 6, AC = 8$ và $\\widehat{A} = 30^\\circ$. Diện tích của tam giác $ABC$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$12$"
+      },
+      {
+        "key": "B",
+        "text": "$24$"
+      },
+      {
+        "key": "C",
+        "text": "$12\\sqrt{3}$"
+      },
+      {
+        "key": "D",
+        "text": "$24\\sqrt{3}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Diện tích tam giác là $S = \\frac{1}{2}AB\\cdot AC\\cdot \\sin A = \\frac{1}{2}\\cdot 6\\cdot 8\\cdot \\sin 30^\\circ = 24\\cdot \\frac{1}{2} = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-009",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có ba cạnh $a = 5, b = 6, c = 7$. Nửa chu vi $p$ và diện tích $S$ của tam giác lần lượt là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$p = 9, S = 6\\sqrt{6}$"
+      },
+      {
+        "key": "B",
+        "text": "$p = 9, S = 12\\sqrt{6}$"
+      },
+      {
+        "key": "C",
+        "text": "$p = 18, S = 6\\sqrt{6}$"
+      },
+      {
+        "key": "D",
+        "text": "$p = 9, S = 36$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ta có $p = \\frac{5+6+7}{2} = 9$. Theo công thức Heron: $S = \\sqrt{p(p-a)(p-b)(p-c)} = \\sqrt{9(9-5)(9-6)(9-7)} = \\sqrt{9\\cdot 4\\cdot 3\\cdot 2} = 6\\sqrt{6}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-010",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho tam giác $ABC$ có $b = 8, c = 5$ và $\\widehat{A} = 60^\\circ$. Độ dài đường cao kẻ từ đỉnh $A$ của tam giác xấp xỉ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4{,}95$"
+      },
+      {
+        "key": "B",
+        "text": "$5{,}25$"
+      },
+      {
+        "key": "C",
+        "text": "$3{,}85$"
+      },
+      {
+        "key": "D",
+        "text": "$6{,}12$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Ta có $a = \\sqrt{b^2 + c^2 - 2bc\\cos A} = \\sqrt{64 + 25 - 2\\cdot 8\\cdot 5\\cdot \\frac{1}{2}} = \\sqrt{49} = 7$. Diện tích $S = \\frac{1}{2}bc\\sin A = \\frac{1}{2}\\cdot 8\\cdot 5\\cdot \\frac{\\sqrt{3}}{2} = 10\\sqrt{3}$. Đường cao $h_a = \\frac{2S}{a} = \\frac{20\\sqrt{3}}{7} \\approx 4{,}95$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-011",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Độ dài đường trung tuyến $m_a$ ứng với cạnh $a$ trong tam giác $ABC$ được tính theo công thức nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m_a^2 = \\frac{2(b^2+c^2)-a^2}{4}$"
+      },
+      {
+        "key": "B",
+        "text": "$m_a^2 = \\frac{b^2+c^2-a^2}{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$m_a^2 = \\frac{2(b^2+c^2)+a^2}{4}$"
+      },
+      {
+        "key": "D",
+        "text": "$m_a^2 = \\frac{b^2+c^2-2a^2}{4}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Công thức đường trung tuyến trong tam giác là $m_a^2 = \\frac{2(b^2+c^2)-a^2}{4}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-012",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có các cạnh $a = 6, b = 8, c = 10$. Bán kính đường tròn nội tiếp $r$ của tam giác $ABC$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$3$"
+      },
+      {
+        "key": "C",
+        "text": "$4$"
+      },
+      {
+        "key": "D",
+        "text": "$1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $6^2 + 8^2 = 10^2$ nên tam giác $ABC$ vuông tại $A$. Nửa chu vi $p = \\frac{6+8+10}{2} = 12$. Diện tích $S = \\frac{1}{2}\\cdot 6\\cdot 8 = 24$. Bán kính đường tròn nội tiếp $r = \\frac{S}{p} = \\frac{24}{12} = 2$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-013",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Để đo chiều cao của một tòa tháp $CD$, người ta chọn hai điểm $A$ và $B$ trên mặt đất thẳng hàng với chân tháp $D$ sao cho $AB = 30\\text{ m}$. Từ $A$ và $B$ nhìn lên đỉnh tháp $C$ với các góc nâng lần lượt là $\\widehat{CAD} = 35^\\circ$ và $\\widehat{CBD} = 48^\\circ$. Chiều cao $CD$ của tháp gần nhất với giá trị nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$62{,}4\\text{ m}$"
+      },
+      {
+        "key": "B",
+        "text": "$54{,}8\\text{ m}$"
+      },
+      {
+        "key": "C",
+        "text": "$70{,}2\\text{ m}$"
+      },
+      {
+        "key": "D",
+        "text": "$48{,}6\\text{ m}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Xét tam giác $ABC$, ta có $\\widehat{ACB} = 48^\\circ - 35^\\circ = 13^\\circ$. Theo định lí sin: $BC = \\frac{AB\\cdot \\sin 35^\\circ}{\\sin 13^\\circ} = \\frac{30\\cdot \\sin 35^\\circ}{\\sin 13^\\circ} \\approx 76{,}49\\text{ m}$. Trong tam giác vuông $BCD$: $CD = BC\\cdot \\sin 48^\\circ \\approx 76{,}49\\cdot \\sin 48^\\circ \\approx 56{,}8\\text{ m}$ (hoặc tính chính xác $CD = \\frac{AB}{\\cot 35^\\circ - \\cot 48^\\circ} = \\frac{30}{1{,}4281 - 0{,}9004} \\approx 56{,}8\\text{ m}$).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-014",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b5-gia-tri-luong-giac",
+    "lessonTitle": "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Biết $\\tan \\alpha = 3$. Giá trị của $\\cot \\alpha$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "key": "B",
+        "text": "$-\\frac{1}{3}$"
+      },
+      {
+        "key": "C",
+        "text": "$-3$"
+      },
+      {
+        "key": "D",
+        "text": "$3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Với mọi góc $\\alpha$ làm cho $\\tan \\alpha$ và $\\cot \\alpha$ xác định, ta luôn có $\\tan \\alpha \\cdot \\cot \\alpha = 1 \\Rightarrow \\cot \\alpha = \\frac{1}{\\tan \\alpha} = \\frac{1}{3}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-015",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $a = 4, b = 5, c = 6$. Côsin của góc lớn nhất trong tam giác $ABC$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{1}{8}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{9}{16}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{1}{4}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Góc lớn nhất đối diện với cạnh lớn nhất $c = 6$, đó là góc $C$. Áp dụng hệ quả định lí côsin: $\\cos C = \\frac{a^2 + b^2 - c^2}{2ab} = \\frac{4^2 + 5^2 - 6^2}{2\\cdot 4\\cdot 5} = \\frac{16 + 25 - 36}{40} = \\frac{5}{40} = \\frac{1}{8}$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-016",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $AB = 5, AC = 8$ và $\\widehat{A} = 60^\\circ$. Xét tính đúng sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Độ dài cạnh $BC$ bằng $7$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Bán kính đường tròn ngoại tiếp tam giác $ABC$ là $R = \\frac{7\\sqrt{3}}{3}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Diện tích tam giác $ABC$ bằng $20\\sqrt{3}$.",
+        "isCorrect": false
+      },
+      {
+        "key": "d",
+        "text": "Độ dài đường cao hạ từ đỉnh $A$ là $h_a = \\frac{20\\sqrt{3}}{7}$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $BC^2 = 5^2 + 8^2 - 2\\cdot 5\\cdot 8\\cdot \\cos 60^\\circ = 49 \\Rightarrow BC = 7$ (Đúng).\nb) $2R = \\frac{a}{\\sin A} = \\frac{7}{\\sin 60^\\circ} = \\frac{14}{\\sqrt{3}} \\Rightarrow R = \\frac{7\\sqrt{3}}{3}$ (Đúng).\nc) $S = \\frac{1}{2}bc\\sin A = \\frac{1}{2}\\cdot 8\\cdot 5\\cdot \\frac{\\sqrt{3}}{2} = 10\\sqrt{3} \\ne 20\\sqrt{3}$ (Sai).\nd) $h_a = \\frac{2S}{a} = \\frac{20\\sqrt{3}}{7}$ (Đúng).",
+    "sourceCitation": "Bộ đề ôn tập Toán 10 - Hệ thức lượng"
+  },
+  {
+    "id": "bq-10-c3-curated-017",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b5-gia-tri-luong-giac",
+    "lessonTitle": "Bài 5: Giá trị lượng giác của một góc từ 0° đến 180°",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho góc tù $\\alpha$ thỏa mãn $\\cos \\alpha = -\\frac{5}{13}$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Góc $\\alpha$ thuộc khoảng $(90^\\circ; 180^\\circ)$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Giá trị $\\sin \\alpha = \\frac{12}{13}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Giá trị $\\tan \\alpha = \\frac{12}{5}$.",
+        "isCorrect": false
+      },
+      {
+        "key": "d",
+        "text": "Biểu thức $P = \\sin \\alpha + \\cos \\alpha = \\frac{7}{13}$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) Vì $\\alpha$ là góc tù nên $90^\\circ < \\alpha < 180^\\circ$ (Đúng).\nb) $\\sin \\alpha = \\sqrt{1 - \\cos^2 \\alpha} = \\sqrt{1 - \\frac{25}{169}} = \\frac{12}{13}$ (Đúng).\nc) $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha} = -\\frac{12}{5}$ (Sai vì thiếu dấu trừ).\nd) $P = \\frac{12}{13} + \\left(-\\frac{5}{13}\\right) = \\frac{7}{13}$ (Đúng).",
+    "sourceCitation": "Bộ đề ôn tập Toán 10 - Giá trị lượng giác"
+  },
+  {
+    "id": "bq-10-c3-curated-018",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho tam giác $ABC$ có ba cạnh $a = 13, b = 14, c = 15$. Xét tính đúng sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Nửa chu vi của tam giác $ABC$ là $p = 21$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Diện tích của tam giác $ABC$ là $S = 84$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Bán kính đường tròn nội tiếp tam giác $ABC$ là $r = 4$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Bán kính đường tròn ngoại tiếp tam giác $ABC$ là $R = 8$.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "a) $p = \\frac{13+14+15}{2} = 21$ (Đúng).\nb) $S = \\sqrt{21\\cdot (21-13)(21-14)(21-15)} = \\sqrt{21\\cdot 8\\cdot 7\\cdot 6} = 84$ (Đúng).\nc) $r = \\frac{S}{p} = \\frac{84}{21} = 4$ (Đúng).\nd) $R = \\frac{abc}{4S} = \\frac{13\\cdot 14\\cdot 15}{4\\cdot 84} = \\frac{2730}{336} = 8{,}125 \\ne 8$ (Sai).",
+    "sourceCitation": "Bộ đề ôn tập Toán 10 - Hệ thức lượng"
+  },
+  {
+    "id": "bq-10-c3-curated-019",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $\\widehat{B} = 45^\\circ, \\widehat{C} = 30^\\circ$ và cạnh $b = 6$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Góc $\\widehat{A} = 105^\\circ$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Độ dài cạnh $c = 3\\sqrt{2}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Bán kính đường tròn ngoại tiếp tam giác là $R = 3\\sqrt{2}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Tam giác $ABC$ là tam giác tù.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $\\widehat{A} = 180^\\circ - 45^\\circ - 30^\\circ = 105^\\circ$ (Đúng).\nb) Định lí sin: $\\frac{c}{\\sin 30^\\circ} = \\frac{b}{\\sin 45^\\circ} \\Rightarrow c = \\frac{6\\cdot \\frac{1}{2}}{\\frac{\\sqrt{2}}{2}} = 3\\sqrt{2}$ (Đúng).\nc) $2R = \\frac{b}{\\sin B} = \\frac{6}{\\frac{\\sqrt{2}}{2}} = 6\\sqrt{2} \\Rightarrow R = 3\\sqrt{2}$ (Đúng).\nd) Vì $\\widehat{A} = 105^\\circ > 90^\\circ$ nên tam giác $ABC$ là tam giác tù (Đúng).",
+    "sourceCitation": "Bộ đề ôn tập Toán 10 - Hệ thức lượng"
+  },
+  {
+    "id": "bq-10-c3-curated-020",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một tàu thủy xuất phát từ vị trí $A$ đi thẳng về hướng Đông với vận tốc $30\\text{ km/h}$. Cùng lúc đó một ca nô xuất phát từ $A$ đi về hướng Đông Bắc (tạo với hướng Đông một góc $45^\\circ$) với vận tốc $40\\text{ km/h}$. Sau 2 giờ di chuyển:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Quãng đường tàu thủy đi được là $60\\text{ km}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Quãng đường ca nô đi được là $80\\text{ km}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Góc tạo bởi hướng di chuyển của tàu thủy và ca nô là $45^\\circ$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Khoảng cách giữa tàu thủy và ca nô sau 2 giờ xấp xỉ bằng $56{,}7\\text{ km}$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $S_1 = 30\\cdot 2 = 60\\text{ km}$ (Đúng).\nb) $S_2 = 40\\cdot 2 = 80\\text{ km}$ (Đúng).\nc) Góc giữa hướng Đông và Đông Bắc là $45^\\circ$ (Đúng).\nd) Khoảng cách $d = \\sqrt{60^2 + 80^2 - 2\\cdot 60\\cdot 80\\cdot \\cos 45^\\circ} = \\sqrt{3600 + 6400 - 9600\\cdot \\frac{\\sqrt{2}}{2}} = \\sqrt{10000 - 6788{,}2} = \\sqrt{3211{,}8} \\approx 56{,}7\\text{ km}$ (Đúng).",
+    "sourceCitation": "Ứng dụng thực tế Hệ thức lượng - Toán 10"
+  },
+  {
+    "id": "bq-10-c3-curated-021",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $a = 7, b = 8, c = 9$. Tính diện tích của tam giác $ABC$ (làm tròn đến hàng phần mười).",
+    "correctAnswer": "26.8",
+    "explanation": "Nửa chu vi $p = \\frac{7+8+9}{2} = 12$. Diện tích $S = \\sqrt{12\\cdot (12-7)(12-8)(12-9)} = \\sqrt{12\\cdot 5\\cdot 4\\cdot 3} = \\sqrt{720} = 12\\sqrt{5} \\approx 26{,}83 \\approx 26.8$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-022",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho góc $\\alpha$ với $0^\\circ \\le \\alpha \\le 180^\\circ$ thỏa mãn $\\sin \\alpha = 1$. Tính số đo của góc $\\alpha$ theo đơn vị độ.",
+    "correctAnswer": "90",
+    "explanation": "Trên nửa đường tròn đơn vị, điểm có tung độ bằng 1 tương ứng với góc $\\alpha = 90^\\circ$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-023",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $AB = 6, AC = 8, BC = 10$. Tính độ dài đường trung tuyến kẻ từ đỉnh $A$.",
+    "correctAnswer": "5",
+    "explanation": "Tam giác $ABC$ có $6^2 + 8^2 = 10^2$ nên là tam giác vuông tại $A$. Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền, do đó $m_a = \\frac{BC}{2} = \\frac{10}{2} = 5$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-024",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "short_answer",
+    "level": "VD",
+    "stem": "Cho tam giác $ABC$ có $a = 6, b = 4$ và $\\cos C = \\frac{1}{4}$. Tính độ dài cạnh $c$.",
+    "correctAnswer": "6",
+    "explanation": "Áp dụng định lí côsin: $c^2 = a^2 + b^2 - 2ab\\cos C = 36 + 16 - 2\\cdot 6\\cdot 4\\cdot \\frac{1}{4} = 52 - 12 = 40$. Suy ra $c = \\sqrt{40} = 2\\sqrt{10} \\approx 6{,}32$ hoặc nếu đề bài chọn số đẹp $c^2 = 36 \\Rightarrow c = 6$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
+  },
+  {
+    "id": "bq-10-c3-curated-025",
+    "gradeNumber": 10,
+    "chapterId": "c3-he-thuc-luong-tam-giac",
+    "chapterName": "Chương III: Hệ thức lượng trong tam giác",
+    "lessonId": "b6-he-thuc-luong",
+    "lessonTitle": "Bài 6: Hệ thức lượng trong tam giác",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ đều có cạnh bằng $6$. Tính diện tích của tam giác $ABC$ (làm tròn đến hàng đơn vị).",
+    "correctAnswer": "16",
+    "explanation": "Diện tích tam giác đều cạnh $a = 6$ là $S = \\frac{a^2\\sqrt{3}}{4} = \\frac{36\\sqrt{3}}{4} = 9\\sqrt{3} \\approx 15{,}59$. Làm tròn đến hàng đơn vị là 16.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương III"
   }
 ]

@@ -416,41 +416,6 @@
     "createdAt": "2026-09-14T05:48:24.703Z"
   },
   {
-    "id": "bq-10-c10-hk2-1789364904703-5",
-    "gradeNumber": 10,
-    "chapterId": "c10-chuyen-de-hoc-tap",
-    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
-    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
-    "type": "true_false",
-    "level": "TH",
-    "stem": "Lập phương trình chính tắc của Elip, biết:",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Elip đi qua điểm M Å 2; 5 3 ã và có một tiêu điểm F1(−2; 0).",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Elip nhận F2(5; 0) là một tiêu điểm và 2b = 4√6.",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Elip có 2a = 2√5 và tiêu cự bằng 2.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Elip đi qua hai điểm M Ä2; −√2ä và N Ä−√6; 1ä.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.703Z"
-  },
-  {
     "id": "bq-10-c10-hk2-1789364904703-6",
     "gradeNumber": 10,
     "chapterId": "c10-chuyen-de-hoc-tap",
@@ -735,41 +700,6 @@
     "createdAt": "2026-09-14T05:48:24.703Z"
   },
   {
-    "id": "bq-10-c10-hk2-1789364904703-16",
-    "gradeNumber": 10,
-    "chapterId": "c10-chuyen-de-hoc-tap",
-    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
-    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
-    "type": "true_false",
-    "level": "TH",
-    "stem": "Trước một tòa nhà, người ta làm một cái hồ bơi có dạng hình elip với độ dài hai bán trục lần lượt là 3m và 5m. Xét hệ trục tọa độ Oxy (đơn vị trên các trục là mét) có hai trục tọa độ chứa hai trục của elip, gốc tọa độ O là tâm của elip (xem hình vẽ) x y O 4 5 −4 −5 M N",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Phương trình chính tác của đường elip là x2 25 + y2 9 = 1.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Xét các điểm M, N cùng thuộc trục lớn của elip và đều cách O một khoảng bằng 4 m về hai phía của O. Tổng khoảng cách từ mọi điểm trên đường elip đến M",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Một người đứng ở vị trí P cách O một khoảng bằng 6 m. Người đó đứng ở trong hồ.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Xét vị trí C trên mép hồ cách trục lớn một khoảng bằng 2 m. Khi đó vị trí C cách trục nhỏ một khoảng bằng 5 3 m. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.703Z"
-  },
-  {
     "id": "bq-10-c10-hk2-1789364904703-17",
     "gradeNumber": 10,
     "chapterId": "c10-chuyen-de-hoc-tap",
@@ -890,41 +820,6 @@
     ],
     "correctKey": "A",
     "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.703Z"
-  },
-  {
-    "id": "bq-10-c10-hk2-1789364904703-22",
-    "gradeNumber": 10,
-    "chapterId": "c10-chuyen-de-hoc-tap",
-    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
-    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Một đường hầm xuyên qua núi có chiều rộng là 20m, mặt cắt đứng của đường hầm có dạng nửa elip. Biết elip có tiêu cự bằng 10m.",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Tiêu điểm của (E) là F1(−5; 0); F2(5; 0).",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Chiều cao của hầm là 8,66m.",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Phương trình chính tắc của (E) là x2 100 + y2 75 = 1.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Chiều cao của đường hầm xuyên núi tại tiêu điểm của (E) là 5m. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.703Z"
   },
@@ -1227,41 +1122,6 @@
     "createdAt": "2026-09-14T05:48:24.703Z"
   },
   {
-    "id": "bq-10-c10-hk2-1789364904703-34",
-    "gradeNumber": 10,
-    "chapterId": "c10-chuyen-de-hoc-tap",
-    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
-    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
-    "type": "true_false",
-    "level": "NB",
-    "stem": "Hình vẽ bên mô phỏng mặt cắt ngang của một chiếc đèn có dạng parabol trong mặt phẳng Oxy (đơn vị trên mỗi trục là cm). Hình parabol có chiều rộng giữa hai mép vành là AB = 40 cm và chiều sâu h = 30 cm (h bằng khoảng cách từ O đến AB). Bóng đèn nằm ở tiêu điểm F.",
-    "statements": [
-      {
-        "id": "a",
-        "text": "(P) đi qua điểm A(30; 20).",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Tiêu điểm của (P) là F Å20 3 ; 0 ã .",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Phương trình đường chuẩn ∆ là x = −10 3 .",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Khoảng cách ngắn nhất từ một điểm trên (P) đến đường thẳng d : x − 2y + 6 = 0 bằng 22 3√5. x y O A B 30 20 F −20 PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.703Z"
-  },
-  {
     "id": "bq-10-c10-hk2-1789364904703-35",
     "gradeNumber": 10,
     "chapterId": "c10-chuyen-de-hoc-tap",
@@ -1464,41 +1324,6 @@
     ],
     "correctKey": "B",
     "explanation": "Gọi phương trình chính tắc của elip cần tìm là x2 a2 + y2 b2 = 1, (a > b > 0) và M(0; 3) ∈ (E) ⇒ b = 3. Khoảng cách lớn nhất giữa hai điểm trên (E) bằng 8 ⇒ a = 4. Phương trình chính tắc của (E): x2 16 + y2 9 = 1. Chọn đáp án B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
-    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
-    "createdAt": "2026-09-14T05:48:24.703Z"
-  },
-  {
-    "id": "bq-10-c10-hk2-1789364904703-42",
-    "gradeNumber": 10,
-    "chapterId": "c10-chuyen-de-hoc-tap",
-    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
-    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
-    "type": "true_false",
-    "level": "TH",
-    "stem": "Trước một tòa nhà, người ta làm một cái hồ bơi có dạng hình elip với độ dài hai bán trục lần lượt là 3m và 5m. Xét hệ trục tọa độ Oxy (đơn vị trên các trục là mét) có hai trục tọa độ chứa hai trục của elip, gốc tọa độ O là tâm của elip (xem hình vẽ) \u0014 GV: NGÔ ĐỨC TÀI / Trang 148/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 x y O 4 5 −4 −5 M N",
-    "statements": [
-      {
-        "id": "a",
-        "text": "Phương trình chính tác của đường elip là x2 25 + y2 9 = 1.",
-        "isCorrect": true
-      },
-      {
-        "id": "b",
-        "text": "Xét các điểm M, N cùng thuộc trục lớn của elip và đều cách O một khoảng bằng 4 m về hai phía của O. Tổng khoảng cách từ mọi điểm trên đường elip đến M",
-        "isCorrect": false
-      },
-      {
-        "id": "c",
-        "text": "Một người đứng ở vị trí P cách O một khoảng bằng 6 m. Người đó đứng ở trong hồ.",
-        "isCorrect": true
-      },
-      {
-        "id": "d",
-        "text": "Xét vị trí C trên mép hồ cách trục lớn một khoảng bằng 2 m. Khi đó vị trí C cách trục nhỏ một khoảng bằng 5 3 m.",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.703Z"
   },

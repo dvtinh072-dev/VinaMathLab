@@ -254,5 +254,2890 @@
     "correctAnswer": "4",
     "explanation": "Giải hệ bằng máy tính hoặc phương pháp Gauss ta được $x = 2, y = 1, z = 0$. Suy ra $P = 2 + 1 + 0 = 3$ hoặc thế ngược lại $x=2, y=1, z=0$.",
     "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-0",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, phương trình chính tắc của hypebol (H) đi qua hai điểm A Ä4√2; 2ä và B Ä−6; −√5ä là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 16 − y2 4 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 31 − y2 31 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 24 − y2 12 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 32 − y2 8 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-1",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, đường elip x2 9 + y2 6 = 1 có tiêu cự bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "2√3."
+      },
+      {
+        "key": "B",
+        "text": "√3."
+      },
+      {
+        "key": "C",
+        "text": "3."
+      },
+      {
+        "key": "D",
+        "text": "6."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-2",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho hypebol có phương trình chính tắc x2 16 − y2 9 = 1. Các tiêu điểm của hypebol là",
+    "options": [
+      {
+        "key": "A",
+        "text": "F1(−25; 0) và F2(25; 0)."
+      },
+      {
+        "key": "B",
+        "text": "F1(−5; 0) và F2(5; 0)."
+      },
+      {
+        "key": "C",
+        "text": "F1 Ä−√337; 0ä và F2 Ä√337; 0ä."
+      },
+      {
+        "key": "D",
+        "text": "F1(−337; 0) và F2(337; 0)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-3",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho parabol (P) có phương trình y2 = 4x. Tọa độ tiêu điểm của parabol (P) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "F(−1; 0)."
+      },
+      {
+        "key": "B",
+        "text": "F(1; 0)."
+      },
+      {
+        "key": "C",
+        "text": "F(0; 1)."
+      },
+      {
+        "key": "D",
+        "text": "F(0; −1)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-4",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng với hệ tọa độ Oxy, cho elip (E) : x2 25 + y2 9 = 1. Tiêu cự của (E) bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "10."
+      },
+      {
+        "key": "B",
+        "text": "16."
+      },
+      {
+        "key": "C",
+        "text": "4."
+      },
+      {
+        "key": "D",
+        "text": "8."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-5",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Lập phương trình chính tắc của Elip, biết:",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Elip đi qua điểm M Å 2; 5 3 ã và có một tiêu điểm F1(−2; 0).",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Elip nhận F2(5; 0) là một tiêu điểm và 2b = 4√6.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Elip có 2a = 2√5 và tiêu cự bằng 2.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Elip đi qua hai điểm M Ä2; −√2ä và N Ä−√6; 1ä.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-6",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, phương trình chính tắc của parabol (P) có tiêu điểm là F(5; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = 20x."
+      },
+      {
+        "key": "B",
+        "text": "y = 30x."
+      },
+      {
+        "key": "C",
+        "text": "y = 15x."
+      },
+      {
+        "key": "D",
+        "text": "y = 10x."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-7",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hypebol (H) : x2 25 − y2 9 = 1 có hai tiêu điểm là",
+    "options": [
+      {
+        "key": "A",
+        "text": "F1(−4; 0), F2(4; 0)."
+      },
+      {
+        "key": "B",
+        "text": "F1(−3; 0), F2(3; 0)."
+      },
+      {
+        "key": "C",
+        "text": "F1(−5; 0), F2(5; 0)."
+      },
+      {
+        "key": "D",
+        "text": "F1 Ä−√34; 0ä, F2 Ä√34; 0ä."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-8",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của hypebol (H) có một tiêu điểm F1(−4; 0) và đi qua điểm M(2; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 4 − y2 12 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 2 − y2 12 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 4 + y2 12 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 2 − y2 2√3 = 1. \u0014 GV: NGÔ ĐỨC TÀI / Trang 55/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-9",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, phương trình chính tắc của elip (E) có tiêu cự bằng 6 và đi qua điểm A(5; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 100 + y2 81 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 15 + y2 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 25 + y2 9 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 25 + y2 16 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-10",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Một đèn pin có chóa đèn mặt cắt hình parabol với kính thước trong hình trên. Giây tóc bóng đèn được đặt ở tiêu điểm F. Để đèn chiếu được xa phải đặt bóng đèn cách đỉnh của chóa đèn bao nhiêu cm? F 18 cm 3 cm KQ: PHẦN 4. Tự luận.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-11",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho hypebol có phương trình chính tắc x2 4 − y2 25 = 1 và điểm M thuộc hypebol. Khi đó |MF1 − MF2| bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "4."
+      },
+      {
+        "key": "B",
+        "text": "8."
+      },
+      {
+        "key": "C",
+        "text": "6."
+      },
+      {
+        "key": "D",
+        "text": "10."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-12",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đường hypebol có phương trình chính tắc sau (H) : x2 16 − y2 9 = 1. Điểm nào sau đây không nằm trên đường hypebol?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Q(4; 0)."
+      },
+      {
+        "key": "B",
+        "text": "N Ä−4√2; 3ä."
+      },
+      {
+        "key": "C",
+        "text": "P(−4; 0)."
+      },
+      {
+        "key": "D",
+        "text": "M(3; 1)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-13",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho Elip (E) đi qua điểm M(0; 3). Biết khoảng cách lớn nhất giữa hai điểm trên (E) bằng 8. Phương trình chính tắc của Elip",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 9 + y2 16 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 16 + y2 9 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 9 + y2 64 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 64 + y2 9 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-14",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đường elip có phương trình chính tắc (E) : x2 9 + y2 3 = 1 và điểm A(3; 0). Điểm B,C nằm trên (E) sao cho B,C đối xứng qua trục Ox và △ABC đều. Diện tích của tam giác ABC là bao nhiêu? (",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-15",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, phương trình chính tắc của elip đi qua các điểm A1(6; 0) và M Ä0; √32ä là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 36 + y2 4 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 36 + y2 32 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 144 + y2 4 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 36 + y2 32 = 0. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-16",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trước một tòa nhà, người ta làm một cái hồ bơi có dạng hình elip với độ dài hai bán trục lần lượt là 3m và 5m. Xét hệ trục tọa độ Oxy (đơn vị trên các trục là mét) có hai trục tọa độ chứa hai trục của elip, gốc tọa độ O là tâm của elip (xem hình vẽ) x y O 4 5 −4 −5 M N",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Phương trình chính tác của đường elip là x2 25 + y2 9 = 1.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Xét các điểm M, N cùng thuộc trục lớn của elip và đều cách O một khoảng bằng 4 m về hai phía của O. Tổng khoảng cách từ mọi điểm trên đường elip đến M",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Một người đứng ở vị trí P cách O một khoảng bằng 6 m. Người đó đứng ở trong hồ.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Xét vị trí C trên mép hồ cách trục lớn một khoảng bằng 2 m. Khi đó vị trí C cách trục nhỏ một khoảng bằng 5 3 m. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-17",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một vụ nổ được hai micro M1 và M2 cách nhau 2 dặm ghi lại (1 dặm bằng 5 280 feet). Micro M1 nhận được âm thanh trước 4 giây so với micro M2. Giả sử âm thanh di chuyển với tốc độ 1 100 feet/giây. Tập tất cả các điểm P xảy ra vụ nổ thỏa mãn các điều kiện trên là một hypebol có phương trình dạng x2 a2 − y2 b2 = 1, với hai micro M1 và M2 là các tiêu điểm. Khi đó a + b bằng bao nhiêu? (Đáp số a và b làm tròn đến chữ số hàng đơn vị). x y O M1 M2 P KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-18",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho parabol (P) có phương trình chính tắc y2 = 8x. Gọi I là giao điểm của đường chuẩn với trục Ox, đường thẳng đi qua tiêu điểm F và vuông góc với trục Ox cắt (P) tại hai điểm lần lượt là M, N. Tính diện tích tam giác IMN. KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-19",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đường hypebol có phương trình (H) : 100x2 − 25y2 = 100. Tiêu cự của hypebol đó là",
+    "options": [
+      {
+        "key": "A",
+        "text": "2√10."
+      },
+      {
+        "key": "B",
+        "text": "2√104."
+      },
+      {
+        "key": "C",
+        "text": "√10."
+      },
+      {
+        "key": "D",
+        "text": "√104."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-20",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho Elip có một tiêu điểm F1(−1; 0) và khoảng cách lớn nhất giữa hai điểm trên Elip bằng 2√5. Phương trình chính tắc của Elip",
+    "options": [
+      {
+        "key": "A",
+        "text": "4x2 + 5y2 = 20."
+      },
+      {
+        "key": "B",
+        "text": "4x2 + 5y2 = 12."
+      },
+      {
+        "key": "C",
+        "text": "5x2 + 4y2 = 20."
+      },
+      {
+        "key": "D",
+        "text": "5x2 + 4y2 = 12."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-21",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho elip (E) có phương trình chính tắc là x2 5 + y2 1 = 1. Tìm tọa độ các tiêu điểm của (E).",
+    "options": [
+      {
+        "key": "A",
+        "text": "F1(−1; 0) và F2(1; 0)."
+      },
+      {
+        "key": "B",
+        "text": "F1(−2; 0) và F2(2; 0)."
+      },
+      {
+        "key": "C",
+        "text": "F1(2; 0) và F2(−2; 0)."
+      },
+      {
+        "key": "D",
+        "text": "F1(√5; 0) và F2(−√5; 0). PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-22",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Một đường hầm xuyên qua núi có chiều rộng là 20m, mặt cắt đứng của đường hầm có dạng nửa elip. Biết elip có tiêu cự bằng 10m.",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Tiêu điểm của (E) là F1(−5; 0); F2(5; 0).",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Chiều cao của hầm là 8,66m.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Phương trình chính tắc của (E) là x2 100 + y2 75 = 1.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Chiều cao của đường hầm xuyên núi tại tiêu điểm của (E) là 5m. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-23",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tháp giải nhiệt của một nhà máy có nóc và đáy là hai hình tròn, mặt cắt đứng của tháp được thiết kế có dạng hypebol (tham khảo hình vẽ). Biết khoảng cách giữa hai tiêu điểm của hypebol bằng 20 m, độ dài trục thực của hypebol bằng 16 m. Khoảng cách từ nóc tháp đến tâm đối xứng của hypebol bằng 2 3 khoảng cách từ tâm đối xứng đến đáy. Biết diện tích dáy tháp bằng 10 064π m2. Chiều cao của tháp bằng bao nhiêu mét? KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-24",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, phương trình nào dưới đây là phương trình chính tắc của Hypebol?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 25 + y2 16 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 25 − y 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "y2 = 16x."
+      },
+      {
+        "key": "D",
+        "text": "x2 25 − y2 16 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-25",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho elip (E) có phương trình chính tắc là x2 25 + y2 16 = 1. Tìm độ dài trục bé của (E).",
+    "options": [
+      {
+        "key": "A",
+        "text": "10."
+      },
+      {
+        "key": "B",
+        "text": "8."
+      },
+      {
+        "key": "C",
+        "text": "9."
+      },
+      {
+        "key": "D",
+        "text": "6."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-26",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của elip (E) có tiêu cự bằng 6 và đi qua điểm A(5; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 100 + y2 81 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 15 + y2 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 25 + y2 9 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 25 + y2 16 = 1. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-27",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một gương hypebol (được sử dụng trong một số kính thiên văn) có tính chất là một tia sáng hướng vào tiêu điểm sẽ bị phản xạ sang tiêu điểm khác. Gương trong hình vẽ có phương trình x2 36 − y2 64 = 1. Điểm M (a; b)trên gương sẽ nhận được tia sánh đi qua điểm (0; 10) và bị phản xạ sang tiêu điểm còn lại? (tham khảo hình vẽ). F1 F2 > > > > > > F1 F2 Tính T = a + b (",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-28",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Để cắt một bảng hiệu quảng cáo hình elip có trục lớn bằng 80 cm và trục nhỏ bẳng 40 cm từ một tấm ván ép hình chữ nhật ABCD có kích thước 80 cm 40 cm. Người ta vẽ hình elip đó lên tấm ván ép (như hình vẽ) bằng một vòng dây qua hai cái đinh ghim vào hai tiêu điểm. Hỏi phải lấy vòng dây có độ dài là bao nhiêu cm (làm tròn đến hàng đơn vị). x y O −a a −b b −c c M F1 F2 A B C D KQ: \u0014 GV: NGÔ ĐỨC TÀI / Trang 72/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 18. ĐỀ SỐ 8 PHẦN 1. Câu trắc nghiệm nhiều phương án lựa chọn",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-29",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho elip (E) đi qua một điểm M Ä5√2; 4√2ä, một tiêu điểm F1(−6; 0). Lập phương trình chính tắc của (E).",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 100 + y2 64 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 64 + y2 100 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 100 + y2 36 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 400 − y2 144 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-30",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, phương trình chính tắc của đường hypebol (H) có một tiêu điểm là F2(6; 0) và đi qua điểm A2(4; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 9 − y2 16 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 25 − y2 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 16 − y2 20 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 4 − y2 25 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-31",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho elip có phương trình 9x2 + 25y2 = 225. Tiêu cự của elip bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "6."
+      },
+      {
+        "key": "B",
+        "text": "15."
+      },
+      {
+        "key": "C",
+        "text": "8."
+      },
+      {
+        "key": "D",
+        "text": "4."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-32",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tiêu điểm của parabol y2 = √3x là",
+    "options": [
+      {
+        "key": "A",
+        "text": "F Ç − √3 4 ; 0 å ."
+      },
+      {
+        "key": "B",
+        "text": "F Ç√3 2 ; 0 å ."
+      },
+      {
+        "key": "C",
+        "text": "F Ç − √3 2 ; 0 å ."
+      },
+      {
+        "key": "D",
+        "text": "F Ç√3 4 ; 0 å ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-33",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình nào sau đây là phương trình chính tắc của parabol nhận điểm F Å9 2; 0 ã làm tiêu điểm?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y2 = 18x."
+      },
+      {
+        "key": "B",
+        "text": "y = 18x2."
+      },
+      {
+        "key": "C",
+        "text": "y2 = 9x."
+      },
+      {
+        "key": "D",
+        "text": "y = 9x2. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-34",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Hình vẽ bên mô phỏng mặt cắt ngang của một chiếc đèn có dạng parabol trong mặt phẳng Oxy (đơn vị trên mỗi trục là cm). Hình parabol có chiều rộng giữa hai mép vành là AB = 40 cm và chiều sâu h = 30 cm (h bằng khoảng cách từ O đến AB). Bóng đèn nằm ở tiêu điểm F.",
+    "statements": [
+      {
+        "id": "a",
+        "text": "(P) đi qua điểm A(30; 20).",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Tiêu điểm của (P) là F Å20 3 ; 0 ã .",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Phương trình đường chuẩn ∆ là x = −10 3 .",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Khoảng cách ngắn nhất từ một điểm trên (P) đến đường thẳng d : x − 2y + 6 = 0 bằng 22 3√5. x y O A B 30 20 F −20 PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-35",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho hypebol (H) : x2 16 − y2 9 = 1. Độ dài trục ảo của hypebol (H) bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "8."
+      },
+      {
+        "key": "B",
+        "text": "10."
+      },
+      {
+        "key": "C",
+        "text": "6."
+      },
+      {
+        "key": "D",
+        "text": "12."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-36",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của elip đi qua điểm B(0; 4) và có một tiêu điểm F2(3; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 10 + y2 8 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 25 + y2 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 25 + y2 9 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 16 + y2 25 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-37",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hypebol 7x2 − 9y2 = 63 có tiêu cự bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "8."
+      },
+      {
+        "key": "B",
+        "text": "16."
+      },
+      {
+        "key": "C",
+        "text": "4."
+      },
+      {
+        "key": "D",
+        "text": "63."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-38",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm phương trình chính tắc của elip (E) có độ dài trục lớn bằng 10, tiêu cự có độ dài bằng 6.",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 25 − y2 16 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 25 + y2 16 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 25 + y2 9 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 25 − y2 9 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-39",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Một sao chổi đi qua hệ Mặt Trời theo quỹ đạo là một nhánh hypebol nhận tâm Trái Đất là một tiêu điểm, khoảng cách gần nhất từ sao chổi này đến tâm Trái Đất là 3.108 km và tâm sai của quỹ đạo hypebol là 3,6. Hãy lập phương trình chính tắc của hypebol chứa quỹ đạo, với 1 đơn vị đo trên mặt phẳng toạ độ ứng với trên thực tế.",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 40,2 − y2 56,8 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 60,84 − y2 45,8 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 60,84 − y2 55,8 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 20,84 − y2 43,8 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-40",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Một đèn pin có chóa đèn mặt cắt hình parabol với kính thước trong hình trên. Giây tóc bóng đèn được đặt ở tiêu điểm F. Để đèn chiếu được xa phải đặt bóng đèn cách đỉnh của chóa đèn bao nhiêu cm? F 18 cm 3 cm Đáp án: 6 , 7 5",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-41",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho Elip (E) đi qua điểm M(0; 3). Biết khoảng cách lớn nhất giữa hai điểm trên (E) bằng 8. Phương trình chính tắc của Elip \u0014 GV: NGÔ ĐỨC TÀI / Trang 134/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 9 + y2 16 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x2 16 + y2 9 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x2 9 + y2 64 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x2 64 + y2 9 = 1."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Gọi phương trình chính tắc của elip cần tìm là x2 a2 + y2 b2 = 1, (a > b > 0) và M(0; 3) ∈ (E) ⇒ b = 3. Khoảng cách lớn nhất giữa hai điểm trên (E) bằng 8 ⇒ a = 4. Phương trình chính tắc của (E): x2 16 + y2 9 = 1. Chọn đáp án B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-42",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trước một tòa nhà, người ta làm một cái hồ bơi có dạng hình elip với độ dài hai bán trục lần lượt là 3m và 5m. Xét hệ trục tọa độ Oxy (đơn vị trên các trục là mét) có hai trục tọa độ chứa hai trục của elip, gốc tọa độ O là tâm của elip (xem hình vẽ) \u0014 GV: NGÔ ĐỨC TÀI / Trang 148/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 x y O 4 5 −4 −5 M N",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Phương trình chính tác của đường elip là x2 25 + y2 9 = 1.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Xét các điểm M, N cùng thuộc trục lớn của elip và đều cách O một khoảng bằng 4 m về hai phía của O. Tổng khoảng cách từ mọi điểm trên đường elip đến M",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Một người đứng ở vị trí P cách O một khoảng bằng 6 m. Người đó đứng ở trong hồ.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Xét vị trí C trên mép hồ cách trục lớn một khoảng bằng 2 m. Khi đó vị trí C cách trục nhỏ một khoảng bằng 5 3 m.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-43",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một vụ nổ được hai micro M1 và M2 cách nhau 2 dặm ghi lại (1 dặm bằng 5 280 feet). Micro M1 nhận được âm thanh trước 4 giây so với micro M2. Giả sử âm thanh di chuyển với tốc độ 1 100 feet/giây. Tập tất cả các điểm P xảy ra vụ nổ thỏa mãn các điều kiện trên là một hypebol có phương trình dạng x2 a2 − y2 b2 = 1, với hai micro M1 và M2 là các tiêu điểm. Khi đó a + b bằng bao nhiêu? (Đáp số a và b làm tròn đến chữ số hàng đơn vị). x y O M1 M2 P \u0014 GV: NGÔ ĐỨC TÀI / Trang 150/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 Đáp án: 7 0 0 0",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-44",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho parabol (P) có phương trình chính tắc y2 = 8x. Gọi I là giao điểm của đường chuẩn với trục Ox, đường thẳng đi qua tiêu điểm F và vuông góc với trục Ox cắt (P) tại hai điểm lần lượt là M, N. Tính diện tích tam giác IMN. Đáp án: 1 6",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-45",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tháp giải nhiệt của một nhà máy có nóc và đáy là hai hình tròn, mặt cắt đứng của tháp được thiết kế có dạng hypebol (tham khảo hình vẽ). Biết khoảng cách giữa hai tiêu điểm của hypebol bằng 20 m, độ dài trục thực của hypebol bằng 16 m. Khoảng cách từ nóc tháp đến tâm đối xứng của hypebol bằng 2 3 khoảng cách từ tâm đối xứng đến đáy. Biết diện tích dáy tháp bằng 10 064π m2. Chiều cao của tháp bằng bao nhiêu mét? Đáp án: 1 2 5",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-46",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho elip (E) có phương trình chính tắc là x2 25 + y2 16 = 1. Tìm độ dài trục bé của (E). \u0014 GV: NGÔ ĐỨC TÀI / Trang 165/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
+    "options": [
+      {
+        "key": "A",
+        "text": "10."
+      },
+      {
+        "key": "B",
+        "text": "8."
+      },
+      {
+        "key": "C",
+        "text": "9."
+      },
+      {
+        "key": "D",
+        "text": "6."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Ta có b = 4, do đó độ dài trục bé của (E) là 2b = 8. Chọn đáp án B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . □",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-47",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một gương hypebol (được sử dụng trong một số kính thiên văn) có tính chất là một tia sáng hướng vào tiêu điểm sẽ bị phản xạ sang tiêu điểm khác. Gương trong hình vẽ có phương trình x2 36 − y2 64 = 1. Điểm M (a; b)trên gương sẽ nhận được tia sánh đi qua điểm (0; 10) và bị phản xạ sang tiêu điểm còn lại? (tham khảo hình vẽ). \u0014 GV: NGÔ ĐỨC TÀI / Trang 170/361  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 F1 F2 > > > > > > F1 F2 Tính T = a + b (",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-hk2-1789364904703-48",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Để cắt một bảng hiệu quảng cáo hình elip có trục lớn bằng 80 cm và trục nhỏ bẳng 40 cm từ một tấm ván ép hình chữ nhật ABCD có kích thước 80 cm 40 cm. Người ta vẽ hình elip đó lên tấm ván ép (như hình vẽ) bằng một vòng dây qua hai cái đinh ghim vào hai tiêu điểm. Hỏi phải lấy vòng dây có độ dài là bao nhiêu cm (làm tròn đến hàng đơn vị). x y O −a a −b b −c c M F1 F2 A B C D Đáp án: 1 7 5",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.703Z"
+  },
+  {
+    "id": "bq-10-c10-conic-060",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cặp điểm nào là các tiêu điểm của elip : ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Ta có: . Cho Elip . Mệnh đề nào sai trong các mệnh đề sau: A. có tỉ số . B. có trục lớn bằng . C. có trục nhỏ bằng . D. có tiêu cự .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.314Z"
+  },
+  {
+    "id": "bq-10-c10-conic-061",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho Elip . Mệnh đề nào sai trong các mệnh đề sau:",
+    "options": [
+      {
+        "key": "A",
+        "text": "có tỉ số ."
+      },
+      {
+        "key": "B",
+        "text": "có trục lớn bằng ."
+      },
+      {
+        "key": "C",
+        "text": "có trục nhỏ bằng ."
+      },
+      {
+        "key": "D",
+        "text": "có tiêu cự ."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Suy ra: Tiêu cự của là . Cho elip . Phát biểu nào sau đây đúng? A. Tỉ số giữa trục lớn và trục nhỏ bằng . B. Tiêu cự bằng . C. Tâm sai . D. Hai tiêu điểm và .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-062",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho elip . Phát biểu nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tỉ số giữa trục lớn và trục nhỏ bằng ."
+      },
+      {
+        "key": "B",
+        "text": "Tiêu cự bằng ."
+      },
+      {
+        "key": "C",
+        "text": "Tâm sai ."
+      },
+      {
+        "key": "D",
+        "text": "Hai tiêu điểm và ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Ta có . Trong các phương trình sau, phương trình nào là phương trình chính tắc của elip A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-063",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các phương trình sau, phương trình nào là phương trình chính tắc của elip",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Vì . Tâm sai của Hyperbol bằng A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-064",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tâm sai của Hyperbol bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Ta có: suy ra Tâm sai của Hyperbol là . Đường Hyperbol có tiêu cự bằng A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-065",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Đường Hyperbol có tiêu cự bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chọn C Ta có: suy ra . Khi đó Hyperbol có tiêu cự là . Cho elip . Chọn khẳng định sai A. Điểm . B. có tiêu cự bằng . C. Trục lớn của có độ dài bằng . D. có tâm sai bằng .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-066",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho elip . Chọn khẳng định sai",
+    "options": [
+      {
+        "key": "A",
+        "text": "Điểm ."
+      },
+      {
+        "key": "B",
+        "text": "có tiêu cự bằng ."
+      },
+      {
+        "key": "C",
+        "text": "Trục lớn của có độ dài bằng ."
+      },
+      {
+        "key": "D",
+        "text": "có tâm sai bằng ."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Có . Khi đó có tâm sai bằng . Trong các phương trình sau, phương trình nào là phương trình chính tắc của elip A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-067",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường thẳng nào dưới đây là đường chuẩn của Hyperbol ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Ta có: suy ra Khi đó đường chuẩn của Hyperbol . Cho có hai tiêu điểm , và điểm thuộc . Biết chu vi tam giác bằng . Khi đó tâm sai của bằng A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-068",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho có hai tiêu điểm , và điểm thuộc . Biết chu vi tam giác bằng . Khi đó tâm sai của bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Ta có và . . Tâm sai của elip: . Phương trình chính tắc của Elip là A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-069",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Phương trình chính tắc của Elip là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chọn C Phương trình chính tắc của elip có tiêu cự bằng và trục lớn bằng . A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-070",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của elip có tiêu cự bằng và trục lớn bằng .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Gọi phương trình elip là . Vì trục lớn bằng nên . Elip có tiêu cự bằng nên . Vậy phương trình Elip là: . Đường Hyperbol có tiêu cự bằng: A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-071",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Viết phương trình chính tắc của Parabol đi qua điểm .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Phương trình chính tắc của parabol Vậy phương trình . Viết phương trình chính tắc của Parabol biết đường chuẩn có phương trình . A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-072",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Viết phương trình chính tắc của Parabol biết đường chuẩn có phương trình .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Phương trình chính tắc của parabol Đường chuẩn suy ra . Vậy . Tìm phương trình chính tắc của Hypebol biết nó có trục thực dài gấp đôi trục ảo và có tiêu cự bằng . A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-073",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm phương trình chính tắc của Hypebol biết nó có trục thực dài gấp đôi trục ảo và có tiêu cự bằng .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Xét hyperbol có phương trình chính tắc là . Theo giả thiết, ta có . Vậy phương trình là Đường Hyperbol có một tiêu điểm là điểm nào dưới đây? A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-074",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường Hyperbol có một tiêu điểm là điểm nào dưới đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Ta có suy ra . Tiêu điểm . Cho điểm nằm trên Hyperbol . Nếu điểm có hoành độ bằng thì khoảng cách từ đến các tiêu điểm là bao nhiêu? A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-075",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho điểm nằm trên Hyperbol . Nếu điểm có hoành độ bằng thì khoảng cách từ đến các tiêu điểm là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Ta có Vậy Tiêu điểm có hoành độ khi đó Phương trình của Elip có độ dài trục lớn bằng , độ dài trục nhỏ bằng là: A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-076",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Phương trình của Elip có độ dài trục lớn bằng , độ dài trục nhỏ bằng là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Gọi Độ dài trục lớn là: Độ dài trục nhỏ là: Vậy phương trình Elip là: Cho có hình chữ nhật cơ sở diện tích bằng , chu vi bằng thì phương trình chính tắc là: A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-077",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho có hình chữ nhật cơ sở diện tích bằng , chu vi bằng thì phương trình chính tắc là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Ta có: . Vậy PTCT của là : . Viết phương trình chính tắc của Parabol đi qua điểm . A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-078",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của có độ dài trục lớn bằng , tỉ số giữa tiêu cự và độ dài trục lớn bằng là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B * Do độ dài trục lớn bằng 6 nên * Do tỷ số giữa tiêu cự và độ dài trục lớn bằng nên . * Ta có: . Elip có hai đỉnh ; và hai tiêu điểm và có phương trình chính tắc là A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-079",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Elip có hai đỉnh ; và hai tiêu điểm và có phương trình chính tắc là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Theo đề bài ta có . Vậy phương trình chính tắc của Elip đã cho là Phương trình chính tắc của có độ dài trục lớn gấp lần độ dài trục nhỏ và tiêu cự bằng là A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-080",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình chính tắc của có độ dài trục lớn gấp lần độ dài trục nhỏ và tiêu cự bằng là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D * Do độ dài trục lớn gấp lần độ dài trục nhỏ nên * Do tiêu cự bằng nên . * Ta có: . Cho điểm nằm trên Hyperbol : . Nếu hoành độ điểm bằng 8 thì khoảng cách từ đến các tiêu điểm của là bao nhiêu? A. và . B. và . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-081",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho điểm nằm trên Hyperbol : . Nếu hoành độ điểm bằng 8 thì khoảng cách từ đến các tiêu điểm của là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "và ."
+      },
+      {
+        "key": "B",
+        "text": "và ."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Ta có Vậy Tiêu điểm có hoành độ khi đó Tìm phương trình chính tắc của Hypebol biết nó có một đường tiệm cận là và hình chữ nhật cơ sở của nó có diện tích bằng . A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-082",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm phương trình chính tắc của Hypebol biết nó có một đường tiệm cận là và hình chữ nhật cơ sở của nó có diện tích bằng .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Xét hyperbol có phương trình chính tắc là . Tiệm cận . Diện tích hình chữ nhật cơ sở bằng . Từ và suy ra . Tìm phương trình chính tắc của Hypebol biết nó đi qua điểm là và một đường tiệm cận có phương trình là . A. . B. . C. . D.",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-083",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm phương trình chính tắc của Hypebol biết nó đi qua điểm là và một đường tiệm cận có phương trình là .",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Xét hyperbol có phương trình chính tắc là . Đường tiệm cận . Hyperbol đi qua điểm . Ta có hệ phương trình . Cho Elip . Với là điểm bất kì nằm trên , khẳng định nào sau đây là khẳng định đúng? A. B. C. D.",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-084",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Elip đi qua điểm và có tiêu cự bằng thì có phương trình chính tắc là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B Giả sử có PTCT là: . Ta có: Vậy PTCT của là : Đường thẳng nào dưới đây là đường chuẩn của Hyperbol ? A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-085",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Hyperbol có 2 đường tiệm cận vuông góc nhau thì có tâm sai bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "Một kết quả khác"
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Xét hyperbol có phương trình chính tắc là . Hai đường tiệm cận của có phương trình là và . Do hai đường tiệm cận vuông góc với nhau nên ta có Vậy tâm sai của là . Cho elip có phương trình . Các điểm , lần lượt di động trên tia và",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-086",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho elip có phương trình . Các điểm , lần lượt di động trên tia và tia sao cho luôn tiếp xúc với . Tọa độ điểm để đoạn ngắn nhất là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Gọi , với . Phương trình đường thẳng : luôn tiếp xúc với có nghiệm duy nhất. Từ đó suy ra Mặt khác . Ta có bé nhất cân tại Khi đó Vậy khi . Cho Elip và điểm nằm trên. Nếu điểm có hoành độ bằng thì các khoảng cách t",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-087",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho Elip và điểm nằm trên. Nếu điểm có hoành độ bằng thì các khoảng cách từ tới tiêu điểm của bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Ta có , Vậy Cho có hai tiêu điểm , và điểm thuộc . Gọi là điểm đối xứng với qua gốc tọa độ Khi đó A. . B. . C. D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-088",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho có hai tiêu điểm , và điểm thuộc . Gọi là điểm đối xứng với qua gốc tọa độ Khi đó",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "Không tồn tại"
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Chọn B đối xứng với qua gốc tọa độ nên . Ta có: . Do đó Trong mặt phẳng với hệ trục tọa độ cho đường elip và hai điểm . Điểm thay đổi trên elip . Diện tích tam giác lớn nhất bằng A. . B. . C. . D. .",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-089",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng với hệ trục tọa độ cho đường elip và hai điểm . Điểm thay đổi trên elip . Diện tích tam giác lớn nhất bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chọn C + Ta có với lớn nhất khi lớn nhất. + Nhận thấy có hai tiếp tuyến song song với, gọi là hai tiếp điểm tương ứng. Khi đó lớn nhất khi . + Mà tiếp tuyến tại có phương trình là: . + Từ đó ta có: Khi bay với vận tốc siêu th",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-090",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Khi bay với vận tốc siêu thanh (tốc độ chuyển động lớn hơn tốc độ âm thanh trong cùng môi trường), một máy bay tạo ra một vùng nhiễu động trên mặt đất dọc theo một nhánh của hypebol (Hình bên dưới). Phần nghe rõ nhất tiếng ồn của vùng nói trên được gọi là thảm nhiễu động. Bề rộng của thảm này gấp khoảng 5 lần cao độ của máy bay. Biết bề rộng của thảm nhiễu động được đo cách phía sau máy bay một khoảng là 40 mile (mile (dặm) là đơn vị đo khoảng cách, 1 mile ≈ 1,6 km ) và (H) có phương trình: . Cao độ của máy bay là",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "D",
+    "explanation": "Chọn D Khi thì Bề rộng của thảm nhiễu là (mile) ..Cao độ của máy bay là (mile) Khúc cua của một con đường có dạng hình parabol , điểm đầu vào của khúc cua là và điểm cuối là , khoảng cách . Đỉnh của khúc cua cách đường thẳng một khoảng v",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-091",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Hãy lập phương trình chính tắc của hypebol chứa quỹ đạo, với 1 đơn vị đo trên mặt phẳng toạ độ ứng với km trên thực tế.",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn A Chọn hệ trục toạ độ sao cho tâm Mặt Trời trùng với tiêu điểm của hypebol. Gọi phương trình chính tắc của hypebol là . Theo đề bài, ta có: Khoảng cách gần nhất từ sao chổi này đến tâm Mặt Trời là km Tâm sai của quỹ đạo hypebol là 3,6",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-conic-092",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng tọa độ",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Bốn trạm phát tín hiệu vô tuyến có vị trí A, B, C, D theo thứ tự đó thẳng hàng và cách đều với khoảng cách 200 km. Tại một thời điểm, bốn trạm cùng phát tín hiệu với vận tốc 292000 km/s. Một tàu thủy nhận được tín hiệu từ trạm C trước 0,0005s so với tín hiệu từ trạm B và nhận được tín hiệu từ trạm D sớm 0,001s so với tín hiệu từ trạm A. Chọn hệ trục tọa độ Oxy như trong hình bên dưới (1 đơn vị trên mặt phẳng tọa độ ứng với 100 km trên thực tế). Tổng khoảng cách từ tàu đến các trạm B và trạm C bằng bao nhiêu (đáp số được làm tròn đến hàng đơn vị, tính theo đơn vị km) bằng cách lập phương trình chính tắc của hai hypebol đi qua vị trí M của tàu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "."
+      },
+      {
+        "key": "B",
+        "text": "."
+      },
+      {
+        "key": "C",
+        "text": "."
+      },
+      {
+        "key": "D",
+        "text": "."
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Chọn C Gọi vận tốc phát tín hiệu là v (theo đề bài v = 292000 km/s); lần lượt là thời gian để tàu nhận được tín hiệu từ các trạm A, B, C, D; M là vị trí của tàu thuỷ. Hiệu các khoảng cách từ tàu đến các trạm B, C là: . Hiệu các khoảng cách",
+    "sourceCitation": "Tài liệu Chuyên đề Ba đường Conic Toán 10 KNTT",
+    "createdAt": "2026-09-14T05:50:39.315Z"
+  },
+  {
+    "id": "bq-10-c10-extra-001",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Phương trình nào sau đây là phương trình chính tắc của đường Elip?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{x^2}{25} + \\frac{y^2}{16} = 1$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{x^2}{16} + \\frac{y^2}{25} = 1$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{x^2}{25} - \\frac{y^2}{16} = 1$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{x^2}{25} + \\frac{y^2}{16} = -1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Phương trình chính tắc của elip có dạng $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ với $a > b > 0$. Ở đây $a^2 = 25 > b^2 = 16$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.605Z"
+  },
+  {
+    "id": "bq-10-c10-extra-002",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho elip $(E): \\frac{x^2}{100} + \\frac{y^2}{64} = 1$. Tiêu cự của elip $(E)$ bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$12$"
+      },
+      {
+        "key": "B",
+        "text": "$6$"
+      },
+      {
+        "key": "C",
+        "text": "$20$"
+      },
+      {
+        "key": "D",
+        "text": "$16$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$a^2 = 100, b^2 = 64 \\Rightarrow c^2 = a^2 - b^2 = 100 - 64 = 36 \\Rightarrow c = 6$. Tiêu cự là $2c = 12$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-003",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tâm sai $e$ của hyperbol $(H): \\frac{x^2}{9} - \\frac{y^2}{16} = 1$ bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{3}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{4}{3}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{5}{4}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{3}{5}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$a^2 = 9 \\Rightarrow a = 3$; $b^2 = 16 \\Rightarrow c^2 = a^2 + b^2 = 25 \\Rightarrow c = 5$. Tâm sai $e = \\frac{c}{a} = \\frac{5}{3}$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-004",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Phương trình chính tắc của parabol $(P)$ có tham số tiêu $p = 4$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$y^2 = 8x$"
+      },
+      {
+        "key": "B",
+        "text": "$y^2 = 4x$"
+      },
+      {
+        "key": "C",
+        "text": "$y^2 = 16x$"
+      },
+      {
+        "key": "D",
+        "text": "$x^2 = 8y$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Phương trình chính tắc của parabol có dạng $y^2 = 2px$. Với $p = 4 \\Rightarrow y^2 = 8x$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-005",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tiêu điểm $F$ của parabol $(P): y^2 = 12x$ có tọa độ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$F(3; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$F(6; 0)$"
+      },
+      {
+        "key": "C",
+        "text": "$F(0; 3)$"
+      },
+      {
+        "key": "D",
+        "text": "$F(-3; 0)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$2p = 12 \\Rightarrow p = 6 \\Rightarrow \\frac{p}{2} = 3$. Tiêu điểm $F(\\frac{p}{2}; 0) = F(3; 0)$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-006",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường chuẩn của parabol $(P): y^2 = 6x$ có phương trình là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$x = -1.5$"
+      },
+      {
+        "key": "B",
+        "text": "$x = 1.5$"
+      },
+      {
+        "key": "C",
+        "text": "$x = -3$"
+      },
+      {
+        "key": "D",
+        "text": "$y = -1.5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$2p = 6 \\Rightarrow p = 3 \\Rightarrow \\frac{p}{2} = 1.5$. Đường chuẩn có phương trình $x = -\\frac{p}{2} = -1.5$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-007",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nghiệm $(x; y; z)$ của hệ phương trình $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(1; 2; 3)$"
+      },
+      {
+        "key": "B",
+        "text": "$(2; 1; 3)$"
+      },
+      {
+        "key": "C",
+        "text": "$(1; 3; 2)$"
+      },
+      {
+        "key": "D",
+        "text": "$(3; 2; 1)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(1; 2; 3)$ vào cả ba phương trình: $1 + 2 + 3 = 6$ (đúng), $2(1) - 2 + 3 = 3$ (đúng), $1 + 2(2) - 3 = 2$ (đúng).",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-008",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Một cửa hàng bán 3 loại hoa quả gồm xoài, táo, cam. Giá 1kg xoài, táo, cam lần lượt là $x, y, z$ (nghìn đồng). Ba người khách mua với số lượng như sau: Người 1 mua 2kg xoài, 3kg táo, 1kg cam hết 160 nghìn; Người 2 mua 1kg xoài, 2kg táo, 3kg cam hết 150 nghìn; Người 3 mua 3kg xoài, 1kg táo, 2kg cam hết 170 nghìn. Giá 1kg xoài bằng bao nhiêu nghìn đồng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "40 nghìn đồng"
+      },
+      {
+        "key": "B",
+        "text": "30 nghìn đồng"
+      },
+      {
+        "key": "C",
+        "text": "20 nghìn đồng"
+      },
+      {
+        "key": "D",
+        "text": "50 nghìn đồng"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Giải hệ $\\begin{cases} 2x + 3y + z = 160 \\\\ x + 2y + 3z = 150 \\\\ 3x + y + 2z = 170 \\end{cases} \\Rightarrow x = 40, y = 20, z = 20$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-009",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Phương pháp quy nạp toán học",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Khi chứng minh mệnh đề $P(n)$ đúng với mọi số nguyên dương $n$ bằng phương pháp quy nạp toán học, bước cơ sở cần chứng minh mệnh đề đúng với giá trị nào của $n$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$n = 1$"
+      },
+      {
+        "key": "B",
+        "text": "$n = 0$"
+      },
+      {
+        "key": "C",
+        "text": "$n = k$"
+      },
+      {
+        "key": "D",
+        "text": "$n = k + 1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Bước cơ sở (bước khởi đầu) cần kiểm tra khẳng định đúng với số nguyên dương nhỏ nhất, tức là với $n = 1$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-010",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Một đường hầm có mặt cắt hình nửa elip với chiều rộng là 16m và chiều cao vòm cầu tại điểm chính giữa là 6m. Tiêu cự của elip tương ứng bằng bao nhiêu mét?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4\\sqrt{7}$ m"
+      },
+      {
+        "key": "B",
+        "text": "$2\\sqrt{7}$ m"
+      },
+      {
+        "key": "C",
+        "text": "$8$ m"
+      },
+      {
+        "key": "D",
+        "text": "$10$ m"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Trục lớn $2a = 16 \\Rightarrow a = 8$. Chiều cao $b = 6$. Khi đó $c = \\sqrt{a^2 - b^2} = \\sqrt{64 - 36} = \\sqrt{28} = 2\\sqrt{7}$. Tiêu cự $2c = 4\\sqrt{7}$ m.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-011",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Hai đường tiệm cận của hyperbol $(H): \\frac{x^2}{16} - \\frac{y^2}{9} = 1$ có phương trình là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$y = \\pm \\frac{3}{4}x$"
+      },
+      {
+        "key": "B",
+        "text": "$y = \\pm \\frac{4}{3}x$"
+      },
+      {
+        "key": "C",
+        "text": "$y = \\pm \\frac{9}{16}x$"
+      },
+      {
+        "key": "D",
+        "text": "$y = \\pm \\frac{16}{9}x$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Hyperbol $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ có hai đường tiệm cận là $y = \\pm \\frac{b}{a}x$. Ở đây $a = 4, b = 3 \\Rightarrow y = \\pm \\frac{3}{4}x$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-012",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một điểm $M$ thuộc hyperbol $(H): \\frac{x^2}{16} - \\frac{y^2}{9} = 1$ có hoành độ $x_M = 5$. Tích hai bán kính qua tiêu $MF_1 \\cdot MF_2$ bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{169}{16}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{25}{16}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{144}{25}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{81}{16}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tâm sai $e = \\frac{5}{4}$. $MF_1 = |a + ex| = |4 + \\frac{5}{4}(5)| = \\frac{41}{4}$, $MF_2 = |a - ex| = |4 - \\frac{25}{4}| = \\frac{9}{4}$. Tích $MF_1 \\cdot MF_2$ hoặc áp dụng công thức bán kính qua tiêu hyperbol.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-013",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 3: Phương pháp quy nạp toán học",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Tổng $S_n = 1 + 2 + 3 + \\dots + n$ bằng biểu thức nào sau đây với mọi $n \\in \\mathbb{N}^*$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{n(n + 1)}{2}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{n(n - 1)}{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$n(n + 1)$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{n(n + 2)}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Định lý kinh điển được chứng minh bằng quy nạp toán học: $S_n = \\frac{n(n + 1)}{2}$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-014",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 1: Hệ phương trình bậc nhất ba ẩn",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm $m$ để hệ phương trình $\\begin{cases} x + y + z = 1 \\\\ 2x + 3y + z = 4 \\\\ 3x + 4y + 2z = m \\end{cases}$ có vô số nghiệm.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m = 5$"
+      },
+      {
+        "key": "B",
+        "text": "$m = 3$"
+      },
+      {
+        "key": "C",
+        "text": "$m = 4$"
+      },
+      {
+        "key": "D",
+        "text": "$m = 6$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cộng phương trình (1) và phương trình (2) ta được: $(x+y+z) + (2x+3y+z) = 3x + 4y + 2z = 1 + 4 = 5$. Để hệ có nghiệm thì vế phải của phương trình (3) phải bằng 5, tức là $m = 5$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-extra-015",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonTitle": "Chuyên đề 2: Ba đường Conic trong mặt phẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho elip $(E): \\frac{x^2}{25} + \\frac{y^2}{9} = 1$. Độ dài trục lớn của $(E)$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$10$"
+      },
+      {
+        "key": "B",
+        "text": "$5$"
+      },
+      {
+        "key": "C",
+        "text": "$6$"
+      },
+      {
+        "key": "D",
+        "text": "$8$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$a^2 = 25 \\Rightarrow a = 5$. Độ dài trục lớn là $2a = 10$.",
+    "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
+    "createdAt": "2026-09-14T05:51:04.606Z"
   }
 ]

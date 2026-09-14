@@ -1,6 +1,6 @@
 {
   "gradeNumber": 10,
-  "totalQuestions": 1013,
+  "totalQuestions": 1510,
   "updatedAt": "2026-09-14T05:03:35.420Z",
   "chapters": [
     {
@@ -65,16 +65,16 @@
       "chapterNumber": 4,
       "chapterName": "Chương IV: Vectơ",
       "fileKey": "c4-vecto",
-      "totalQuestions": 68,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 4,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 64
+        "multiple_choice": 37,
+        "true_false": 8,
+        "short_answer": 6,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 0,
-        "TH": 66,
+        "NB": 44,
+        "TH": 69,
         "VD": 2,
         "VDC": 0
       }
@@ -84,16 +84,16 @@
       "chapterNumber": 5,
       "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
       "fileKey": "c5-cac-so-dac-trung-thong-ke",
-      "totalQuestions": 48,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 4,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 44
+        "multiple_choice": 57,
+        "true_false": 10,
+        "short_answer": 4,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 0,
-        "TH": 44,
+        "NB": 33,
+        "TH": 78,
         "VD": 3,
         "VDC": 1
       }
@@ -103,17 +103,17 @@
       "chapterNumber": 6,
       "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
       "fileKey": "c6-ham-so-bac-hai-do-thi",
-      "totalQuestions": 39,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 2,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 37
+        "multiple_choice": 56,
+        "true_false": 5,
+        "short_answer": 17,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 0,
-        "TH": 29,
-        "VD": 2,
+        "NB": 41,
+        "TH": 62,
+        "VD": 4,
         "VDC": 8
       }
     },
@@ -122,16 +122,16 @@
       "chapterNumber": 7,
       "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
       "fileKey": "c7-phuong-phap-toa-do-mat-phang",
-      "totalQuestions": 57,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 2,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 55
+        "multiple_choice": 45,
+        "true_false": 6,
+        "short_answer": 9,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 4,
-        "TH": 48,
+        "NB": 23,
+        "TH": 87,
         "VD": 5,
         "VDC": 0
       }
@@ -141,16 +141,16 @@
       "chapterNumber": 8,
       "chapterName": "Chương VIII: Đại số tổ hợp",
       "fileKey": "c8-dai-so-to-hop",
-      "totalQuestions": 51,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 3,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 48
+        "multiple_choice": 58,
+        "true_false": 4,
+        "short_answer": 5,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 0,
-        "TH": 51,
+        "NB": 59,
+        "TH": 56,
         "VD": 0,
         "VDC": 0
       }
@@ -160,16 +160,16 @@
       "chapterNumber": 9,
       "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
       "fileKey": "c9-tinh-xac-suat-co-dien",
-      "totalQuestions": 27,
+      "totalQuestions": 115,
       "byType": {
-        "multiple_choice": 2,
-        "true_false": 0,
-        "short_answer": 0,
-        "essay": 25
+        "multiple_choice": 60,
+        "true_false": 2,
+        "short_answer": 28,
+        "essay": 0
       },
       "byLevel": {
-        "NB": 0,
-        "TH": 27,
+        "NB": 23,
+        "TH": 92,
         "VD": 0,
         "VDC": 0
       }
@@ -179,17 +179,17 @@
       "chapterNumber": 10,
       "chapterName": "Chương X: Chuyên đề học tập Toán 10",
       "fileKey": "c10-chuyen-de-hoc-tap",
-      "totalQuestions": 10,
+      "totalQuestions": 107,
       "byType": {
-        "multiple_choice": 7,
-        "true_false": 0,
-        "short_answer": 3,
+        "multiple_choice": 86,
+        "true_false": 5,
+        "short_answer": 16,
         "essay": 0
       },
       "byLevel": {
-        "NB": 3,
-        "TH": 5,
-        "VD": 2,
+        "NB": 39,
+        "TH": 58,
+        "VD": 10,
         "VDC": 0
       }
     }

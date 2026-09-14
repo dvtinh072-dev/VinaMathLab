@@ -886,5 +886,1425 @@
     "id": "bq-10-c4-634",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775906-45ee",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ba điểm , , A B C thẳng hàng và B ở giữa như hình vẽ sau. Cặp vectơ nào sau đây ngược hướng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "BC  và AB  ."
+      },
+      {
+        "key": "B",
+        "text": "CB  và BA  ."
+      },
+      {
+        "key": "C",
+        "text": "CB  và AC  ."
+      },
+      {
+        "key": "D",
+        "text": "BC  và AC  ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.906Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-6soh",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC . Gọi , , M N P lần lượt là trung điểm của các cạnh , , AB AC BC . Số các vectơ khác vectơ không, bằng với vectơ MN  có điểm đầu và điểm cuối là các điểm , , , , , M N P A B C là",
+    "options": [
+      {
+        "key": "A",
+        "text": "4."
+      },
+      {
+        "key": "B",
+        "text": "2."
+      },
+      {
+        "key": "C",
+        "text": "5."
+      },
+      {
+        "key": "D",
+        "text": "7."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-ink4",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nếu = AB AC   thì:",
+    "options": [
+      {
+        "key": "A",
+        "text": "tam giác ABC là tam giác cân"
+      },
+      {
+        "key": "B",
+        "text": "tam giác ABC là tam giác đều"
+      },
+      {
+        "key": "C",
+        "text": "A là trung điểm đoạn BC"
+      },
+      {
+        "key": "D",
+        "text": "điểm B trùng với điểm C"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-ff1g",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ba điểm M, N, P thẳng hàng, trong đó N nằm giữa hai điểm M và P. Khi đó cặp vectơ nào sau đây cùng hướng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MN  và MP "
+      },
+      {
+        "key": "B",
+        "text": "MN  và PN "
+      },
+      {
+        "key": "C",
+        "text": "MP  và PN "
+      },
+      {
+        "key": "D",
+        "text": "NP  và NM "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-kono",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Điều kiện nào là điều kiện cần và đủ để = AB CD  ",
+    "options": [
+      {
+        "key": "A",
+        "text": "ABCD là hình bình hành"
+      },
+      {
+        "key": "B",
+        "text": "ACBD là hình bình hành"
+      },
+      {
+        "key": "C",
+        "text": "AD và BC có cùng trung điểm"
+      },
+      {
+        "key": "D",
+        "text": "= AB CD  và / / AB CD"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-1c7e",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ba điểm A, B, C cùng nằm trên một đường thẳng. Các vectơ , AB BC   cùng hướng khi và chỉ khi:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Điểm B thuộc đoạn AC"
+      },
+      {
+        "key": "B",
+        "text": "Điểm A thuộc đoạn BC"
+      },
+      {
+        "key": "C",
+        "text": "Điểm C thuộc đoạn AB"
+      },
+      {
+        "key": "D",
+        "text": "Điểm A nằm ngoài đoạn BC"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-em3r",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thoi tâm O, cạnh bằng a và  60 = ° A . Kết luận nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 2 = a AO "
+      },
+      {
+        "key": "B",
+        "text": "= OA a "
+      },
+      {
+        "key": "C",
+        "text": "= OA OB  "
+      },
+      {
+        "key": "D",
+        "text": "2 2 = a OA "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-cm08",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tứ giác ABCD. Gọi M, N, P lần lượt là trung điểm của AD, BC và AC. Biết = MP PN   . Chọn câu đúng.",
+    "options": [
+      {
+        "key": "A",
+        "text": "= AC BD  "
+      },
+      {
+        "key": "B",
+        "text": "= AC BC  "
+      },
+      {
+        "key": "C",
+        "text": "= AD BC  "
+      },
+      {
+        "key": "D",
+        "text": "= AD BD   CHƯƠNG IV VECTƠ  ĐỀ TEST – CHUYÊN ĐỀ – VECTƠ TRONG MẶT PHẲNG Page 2 Sưu tầm và biên soạn"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-j8ok",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC có H là trực tâm và O là tâm đường tròn ngoại tiếp. Gọi D là điểm đối xứng với B qua O. Câu nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= AH DC  "
+      },
+      {
+        "key": "B",
+        "text": "= AB DC  "
+      },
+      {
+        "key": "C",
+        "text": "= AD BC  "
+      },
+      {
+        "key": "D",
+        "text": "= AO AH  "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-e6g4",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho AB  khác 0  và cho điểm C , có bao nhiêu điểm D thỏa mãn = AB CD   .",
+    "options": [
+      {
+        "key": "A",
+        "text": "vô số điểm."
+      },
+      {
+        "key": "B",
+        "text": "1điểm."
+      },
+      {
+        "key": "C",
+        "text": "2 điểm."
+      },
+      {
+        "key": "D",
+        "text": "không có điểm nào."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-l1x1",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ba điểm , , M N P thẳng hàng, trong đó điểm N nằm giữa hai điểm M và P . Khi đó các cặp vectơ nào sau đây cùng hướng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MP  và PN  ."
+      },
+      {
+        "key": "B",
+        "text": "MN  và PN  ."
+      },
+      {
+        "key": "C",
+        "text": "NM  và NP  ."
+      },
+      {
+        "key": "D",
+        "text": "MN  và MP  ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775907-83ka",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Gọi O là giao điểm của hai đường chéo của hình bình hành ABCD . Đẳng thức nào sau đây sai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= AB DC   ."
+      },
+      {
+        "key": "B",
+        "text": "= OA CO   ."
+      },
+      {
+        "key": "C",
+        "text": "= OB DO   ."
+      },
+      {
+        "key": "D",
+        "text": "= CB AD   . PHẦN II. Câu trắc nghiệm đúng sai. Thí sinh trả lời từ"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.907Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775908-p1n1",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho tam giác ABC có M và N lần lượt là trung điểm của AB và AC . Lấy điểm P đối xứng với điểm M qua N .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "= MN BC",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "=   BC MN",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "MN  và BC  ngược hướng",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "= MP BC   .",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.908Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775908-hst1",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho tứ giác ABCD . Gọi , , , M N P Q lần lượt là trung điểm , AB BC , , CD DA .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "MN là đường trung bình của tam giác ACD",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "1 2 = PQ AC",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Tứ giác MNPQ là hình thang",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "= MN QP  ",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.908Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775908-h9i3",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho ABC  có trực tâm H và O là tâm đường tròn ngoại tiếp tam giác. Gọi ′ B là điểm đối xứng của B qua O .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "′ ⊥ B C BC",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "′ / / B C AB",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Tứ giác ′ AB CH là hình bình hành.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "′ ′ = =     ; AH B C AB HC",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.908Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775908-xe64",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho ABC  đều cạnh a , trực tâm H .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "⊥ AH BC",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "3 2 = a AM",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "3 4 = a AH",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "3 3 = = =    . a HA HB HC  CHUYÊN ĐỀ IV – TOÁN 10 – CHƯƠNG IV – VECTO Page 3 Sưu tầm và biên soạn PHẦN III. Câu trắc",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.908Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775909-9f43",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho hình thoi tâm O, cạnh bằng 1 và  60 A = ° . Độ dài của vectơ AO  bằng bao nhiêu?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775909-7mhv",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho hình chữ nhật ABCD . Có bao nhiêu vectơ được tạo thành mà điểm đầu và điểm cuối lấy từ các đỉnh của hình chữ nhật?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775909-shwl",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho hình bình hành ABCD . Gọi , M N lần lượt là trung điểm của , . DC AB P là giao điểm của , AM DB và Q là giao điểm của , CN DB . Có bao nhiêu vecto bằng vectơ DP  đúng hay sai?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775909-wn1u",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho hình vuông ABCD tâm O cạnh 1. Gọi M là trung điểm của AB, N là điểm đối xứng với C qua D. Độ dài của vectơ MN  bằng bao nhiêu?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-o6a9",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành ABCD . Có bao nhiêu vectơ khác 0  cùng phương với AB  có điểm đầu và cuối là các đỉnh của hình bình hành?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1."
+      },
+      {
+        "key": "B",
+        "text": "2 ."
+      },
+      {
+        "key": "C",
+        "text": "3 ."
+      },
+      {
+        "key": "D",
+        "text": "4 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-5xyu",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình vuông ABCD, câu nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= AB BC  "
+      },
+      {
+        "key": "B",
+        "text": "= AB CD  "
+      },
+      {
+        "key": "C",
+        "text": "= AC BD  "
+      },
+      {
+        "key": "D",
+        "text": "= AD CB  "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-lmeh",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tứ giác đều ABCD. Gọi M, N, P, Q lần lượt là trung điểm của AB, BC, CD, DA. Mệnh đề nào sau đây là sai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= MN QP  "
+      },
+      {
+        "key": "B",
+        "text": "= QP MN  "
+      },
+      {
+        "key": "C",
+        "text": "= MQ NP  "
+      },
+      {
+        "key": "D",
+        "text": "= MN AC  "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-uj7c",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho 5 điểm A, B, C, D, E có bao nhiêu vectơ khác vectơ-không có điểm đầu là A và điểm cuối là một trong các điểm đã cho:",
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "20"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-hwrg",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho lục giác đều ABCDEF tâm O. Hãy tìm các vectơ khác vectơ-không có điểm đầu, điểm cuối là đỉnh của lục giác và tâm O sao cho bằng với AB  ?",
+    "options": [
+      {
+        "key": "A",
+        "text": ", , FO OC FD   "
+      },
+      {
+        "key": "B",
+        "text": ", , FO AC ED   "
+      },
+      {
+        "key": "C",
+        "text": ", , BO OC ED   "
+      },
+      {
+        "key": "D",
+        "text": ", , FO OC ED   "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-81wj",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC với trực tâm H. D là điểm đối xứng với B qua tâm O của đường tròn ngoại tiếp tam giác ABC. Khẳng định nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= HA CD   và = AD CH  "
+      },
+      {
+        "key": "B",
+        "text": "= HA CD   và = DA HC  "
+      },
+      {
+        "key": "C",
+        "text": "= HA CD   và = AD HC  "
+      },
+      {
+        "key": "D",
+        "text": "= AD HC   và = OB OD  "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-tdbg",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho hình bình hành ABCD tâm O. Gọi P, Q, R lần lượt là trung điểm của AB, BC, AD. Lấy 8 điểm trên là gốc hoặc ngọn của các vectơ. Tìm mệnh đề sai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Có 2 vectơ bằng PR "
+      },
+      {
+        "key": "B",
+        "text": "Có 4 vectơ bằng AR "
+      },
+      {
+        "key": "C",
+        "text": "Có 2 vectơ bằng BO "
+      },
+      {
+        "key": "D",
+        "text": "Có 5 vectơ bằng OP "
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-rt8t",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho 3 điểm M , N , P thẳng hàng trong đó N nằm giữa M và P . khi đó các cặp véc tơ nào sau đây cùng hướng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MN  và MP  ."
+      },
+      {
+        "key": "B",
+        "text": "MN  và PN  ."
+      },
+      {
+        "key": "C",
+        "text": "NM  và NP  ."
+      },
+      {
+        "key": "D",
+        "text": "MP  và PN  ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-ur3j",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC . Gọi , , M N P lần lượt là trung điểm của , AB AC và BC . Có bao nhiêu véctơ khác véctơ không có điểm đầu và điểm cuối là các điểm trong các điểm , , , , , A B C M N P bằng véctơ MN  ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1."
+      },
+      {
+        "key": "B",
+        "text": "4 ."
+      },
+      {
+        "key": "C",
+        "text": "2 ."
+      },
+      {
+        "key": "D",
+        "text": "3 CHƯƠNG IV VECTƠ  ĐỀ TEST – CHUYÊN ĐỀ – VECTƠ TRONG MẶT PHẲNG Page 2 Sưu tầm và biên soạn"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-szw1",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho lục giác đều ABCDEF tâm O . Số vecto bằng vecto OC  có điểm đầu và điểm cuối là các đỉnh của lục giác là",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 ."
+      },
+      {
+        "key": "B",
+        "text": "3 ."
+      },
+      {
+        "key": "C",
+        "text": "2 ."
+      },
+      {
+        "key": "D",
+        "text": "4 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775909-p9sc",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC có trực tâm H và tâm đường tròn ngoại tiếp O . Gọi D là điểm đối xứng với A qua O ; E là điểm đối xứng với O qua BC . Khẳng định nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "= OA HE   ."
+      },
+      {
+        "key": "B",
+        "text": "= OH DE   ."
+      },
+      {
+        "key": "C",
+        "text": "= AH OE   ."
+      },
+      {
+        "key": "D",
+        "text": "= BH CD   ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775909-x2y3",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho lục giác đều ABCDEF có tâm O .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Vectơ OA  cùng phương với OD ",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Có 9 vectơ khác vectơ không và cùng phương với vectơ OA  .",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Vectơ AB  ngược hướng OC ",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Có 3 vectơ khác vectơ không và cùng hướng với vectơ AB  .",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775909-kdkg",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho ABC  có ′ ′ ′ , , A B C lần lượt là các trung điểm của các cạnh , , BC CA AB .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "2 ′ ′ ′ ′ = = = . AB BC C A A B",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Hai vectơ ′ ′ ′   , BC A B ngược hướng",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "′ ′ ′ ′ = =    BC C A A B .",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "′ ′ ′ =   B C CA .",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.909Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775910-79u1",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho tam giác ABC vuông tại A có 3 2 3 = = , . AB AC Gọi M là trung điểm BC và H là hình chiếu vuông góc của A lên BC .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "2 2 2 = + BC AB AC",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "4 15 =  AM",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "⋅ = ⋅ AB AC AH BC",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "5 15 =  AH",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-tf-1789364775910-n146",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho hình thang ABCD vuông tại A và có 1 2 = = = AB AD DC a . Gọi BF là đường phân giác trong của tam giác ( ) ∈ ABD F AD .",
+    "statements": [
+      {
+        "id": "a",
+        "text": "2 2 2 = + CA DA DC",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "3 =  CA a",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": " 45 = ° ABF",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "2 08 ≈  , BF a (kết quả làm tròn đến hàng phần trăm)  CHUYÊN ĐỀ IV – TOÁN 10 – CHƯƠNG IV – VECTO Page 3 Sưu tầm và biên soạn PHẦN",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775910-h4l6",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho tam giác ABC . Gọi , , M N P lần lượt là trung điểm của , AB AC và BC . Có bao nhiêu véctơ khác véctơ không có điểm đầu và điểm cuối là các điểm trong các điểm , , , , , A B C M N P bằng véctơ MN  (không trùng với MN  )?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-sa-1789364775910-evp3",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tứ giác ABCD . Gọi , , , M N P Q lần lượt là trung điểm của , , , AB BC CD DA . Có bao nhiêu vectơ tạo thành từ các điểm đã cho tìm các vec tơ cùng hướng với vec tơ MN ",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-u9dk",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác . ABC Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "+ = AB AC BC    ."
+      },
+      {
+        "key": "B",
+        "text": "+ = AB BC AC    ."
+      },
+      {
+        "key": "C",
+        "text": "+ = AB CB AC    ."
+      },
+      {
+        "key": "D",
+        "text": "+ = AB CA BC    ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-cgvm",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành ABCD . Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "+ = AB AD BD    ."
+      },
+      {
+        "key": "B",
+        "text": "+ = AB AD DB    ."
+      },
+      {
+        "key": "C",
+        "text": "+ = AB AD AC    ."
+      },
+      {
+        "key": "D",
+        "text": "+ = AB AD CA    ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-c047",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đẳng thức nào dưới đây sai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "− = MN MP NP    ."
+      },
+      {
+        "key": "B",
+        "text": "= + MN MP PN    ."
+      },
+      {
+        "key": "C",
+        "text": "− = NM NP PM    ."
+      },
+      {
+        "key": "D",
+        "text": "+ = MN NP MP    ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-f7jv",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác ABC có trung tuyến AM và trọng tâm G . Khẳng định nào sau đây là đúng",
+    "options": [
+      {
+        "key": "A",
+        "text": "+ = AB AC AM    ."
+      },
+      {
+        "key": "B",
+        "text": "= + BG GA GC    ."
+      },
+      {
+        "key": "C",
+        "text": "= BM CM   ."
+      },
+      {
+        "key": "D",
+        "text": "0 + = GA GM    ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-db5v",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho bốn điểm phân biệt , , , A B C D . Vectơ tổng + + + AB CD BC DA     bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "0  ."
+      },
+      {
+        "key": "B",
+        "text": "AC  ."
+      },
+      {
+        "key": "C",
+        "text": "BD  ."
+      },
+      {
+        "key": "D",
+        "text": "BA  ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-jrye",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành ABCD có tâm O. Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "− = OB OD BD    ."
+      },
+      {
+        "key": "B",
+        "text": "− = − OB OC OD OA     ."
+      },
+      {
+        "key": "C",
+        "text": "− = OA OB CD    ."
+      },
+      {
+        "key": "D",
+        "text": "− = AB AD BD    ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-safv",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho , , M N P lần lượt là trung điểm các cạnh , , AB BC CA của tam giác . ABC Hỏi vectơ + MB AP   bằng vectơ nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AC  ."
+      },
+      {
+        "key": "B",
+        "text": "PB  ."
+      },
+      {
+        "key": "C",
+        "text": "MP  ."
+      },
+      {
+        "key": "D",
+        "text": "AN  ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-7ttn",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Rút gọn véc tơ = + + + . u MN PQ NP QR     ",
+    "options": [
+      {
+        "key": "A",
+        "text": "= R u M   ."
+      },
+      {
+        "key": "B",
+        "text": "= u MN   ."
+      },
+      {
+        "key": "C",
+        "text": "= R u P   ."
+      },
+      {
+        "key": "D",
+        "text": "= u MP   ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-sq4b",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho , , , ABC D E F  lần lượt là trung điểm của các cạnh BC, CA, A, B. Đẳng thức nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "+ + = + + AD BE CF AB AC BC      "
+      },
+      {
+        "key": "B",
+        "text": "Đẳng thức nào sau đây là đúng? A. + + = + + AD BE CF AB AC BC       B. + + = + + AD BE CF AF CE DB "
+      },
+      {
+        "key": "C",
+        "text": "+ + = + + AD BE CF AE BF CD      "
+      },
+      {
+        "key": "D",
+        "text": "+ + = + + AD BE CF BA BC AC       O D A B C CHƯƠNG IV VECTƠ  ĐỀ TEST – CHUYÊN ĐỀ – VECTƠ TRONG M"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-c4-mc-1789364775910-u2vi",
+    "gradeNumber": 10,
+    "chapterId": "c4-vecto",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonTitle": "Bài 7: Các khái niệm mở đầu về vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thoi ABCD cạnh a và  60 = ° BAD . Độ dài của BD  bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "2a ."
+      },
+      {
+        "key": "B",
+        "text": "a ."
+      },
+      {
+        "key": "C",
+        "text": "3 2 a ."
+      },
+      {
+        "key": "D",
+        "text": "2 a ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
+    "createdAt": "2026-09-14T05:46:15.910Z"
   }
 ]

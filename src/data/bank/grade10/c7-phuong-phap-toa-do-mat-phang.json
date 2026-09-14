@@ -724,5 +724,1717 @@
     "id": "bq-10-c7-803",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-0",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trục đối xứng của Parabol (P) : y = 2x2 + 6x + 3 là đường thẳng nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 3 2."
+      },
+      {
+        "key": "B",
+        "text": "y = 3 2."
+      },
+      {
+        "key": "C",
+        "text": "y = −3 2."
+      },
+      {
+        "key": "D",
+        "text": "x = −3 2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-1",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trục đối xứng của parabol (P) : y = −x2 + 5x + 3 là đường thẳng",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 5 4."
+      },
+      {
+        "key": "B",
+        "text": "x = −5 2."
+      },
+      {
+        "key": "C",
+        "text": "x = −5 4."
+      },
+      {
+        "key": "D",
+        "text": "x = 5 2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-2",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trục đối xứng của parabol y = 3x2 − 2x + 1 là đường thẳng",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = −1 3."
+      },
+      {
+        "key": "B",
+        "text": "x = 2 3."
+      },
+      {
+        "key": "C",
+        "text": "x = 1 3."
+      },
+      {
+        "key": "D",
+        "text": "y = 1 3. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-3",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Parabol y = 2x2 − 4x + 3 có trục đối xứng là đường thẳng có phương trình",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 2."
+      },
+      {
+        "key": "B",
+        "text": "x = 1."
+      },
+      {
+        "key": "C",
+        "text": "x = −2."
+      },
+      {
+        "key": "D",
+        "text": "x = −1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-4",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tọa độ giao điểm của (P) : y = x2 − 4x với đường thẳng d : y = −x − 2 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "M (0; −2), N (2; −4)."
+      },
+      {
+        "key": "B",
+        "text": "M (−1; −1), N (−2; 0)."
+      },
+      {
+        "key": "C",
+        "text": "M ( −3; 1), N (3; −5)."
+      },
+      {
+        "key": "D",
+        "text": "M (1; −3), N (2; −4)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-5",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Cho parabol y = ax2 + bx + 4 có trục đối xứng là đường thẳng x = 1 3 và đi qua điểm A(1; 3). Tổng giá trị a + 2b là bao nhiêu? KQ: PHẦN 4. Tự luận.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-6",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tọa độ giao điểm của hai đường thẳng y = 1 − 3x 4 và y = − \u0010 x 3 + 1 \u0011 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(0; −1)."
+      },
+      {
+        "key": "B",
+        "text": "(2; −3)."
+      },
+      {
+        "key": "C",
+        "text": "(0; 1 4)."
+      },
+      {
+        "key": "D",
+        "text": "(3; −2)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-7",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình nào sau đây là phương trình tham số của đường thẳng d : 3x − 2y + 6 = 0?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = 3t y = 2t + 3."
+      },
+      {
+        "key": "B",
+        "text": "   x = t y = 3 2t + 3."
+      },
+      {
+        "key": "C",
+        "text": "   x = t y = −3 2t + 3."
+      },
+      {
+        "key": "D",
+        "text": "   x = 2t y = 3 2t + 3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-8",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Đường thẳng d đi qua điểm M(0; −2) và có vectơ chỉ phương #»u = (3; 0) có phương trình tổng quát là",
+    "options": [
+      {
+        "key": "A",
+        "text": "d : x = 0."
+      },
+      {
+        "key": "B",
+        "text": "d : y + 2 = 0."
+      },
+      {
+        "key": "C",
+        "text": "d : y − 2 = 0."
+      },
+      {
+        "key": "D",
+        "text": "d : x − 2 = 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-9",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đường thẳng d1 : x + 2y − 2 = 0 và d2 : x − y = 0. Tính cosin của góc tạo bởi giữa hai đường thẳng đã cho.",
+    "options": [
+      {
+        "key": "A",
+        "text": "√10 10 ."
+      },
+      {
+        "key": "B",
+        "text": "√2 3 ."
+      },
+      {
+        "key": "C",
+        "text": "√3 3 ."
+      },
+      {
+        "key": "D",
+        "text": "√3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-10",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho các phương trình sau, phương trình nào là phương trình đường tròn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 + y2 − 4x + 2y + 7 = 0."
+      },
+      {
+        "key": "B",
+        "text": "x2 + y2 − x + y + 4 = 0."
+      },
+      {
+        "key": "C",
+        "text": "x2 + y2 − 6x + y + 11 = 0."
+      },
+      {
+        "key": "D",
+        "text": "x2 + y2 − 4x + 2y − 5 = 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-11",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, điểm nào sau đây thuộc đường tròn có phương trình (x − 2)2 + (y + 1)2 = 9?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(2; 1)."
+      },
+      {
+        "key": "B",
+        "text": "(2; −1)."
+      },
+      {
+        "key": "C",
+        "text": "(2; 2)."
+      },
+      {
+        "key": "D",
+        "text": "(2; −2)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-12",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đường tròn (C) : x2 + y2 + 4x − 6y − 3 = 0. Hãy xác định tâm I và bán kính R của đường tròn (C).",
+    "options": [
+      {
+        "key": "A",
+        "text": "I(2; −3), R = 4."
+      },
+      {
+        "key": "B",
+        "text": "I(−2; 3), R = 4."
+      },
+      {
+        "key": "C",
+        "text": "I(−2; 3), R = 16."
+      },
+      {
+        "key": "D",
+        "text": "I(2; −3), R = 16. \u0014 GV: NGÔ ĐỨC TÀI / Trang 47/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-13",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình đường thẳng đi qua hai điểm A(0; 4), B(−6; 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x 6 + y 4 = 1."
+      },
+      {
+        "key": "B",
+        "text": "x 4 + y −6 = 1."
+      },
+      {
+        "key": "C",
+        "text": "x −4 + y −6 = 1."
+      },
+      {
+        "key": "D",
+        "text": "x −6 + y 4 = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-14",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đường thẳng d có phương trình tham số (x = 5 + t y = −9 − 2t . Phương trình tổng quát của đường thẳng d là",
+    "options": [
+      {
+        "key": "A",
+        "text": "2x + y − 1 = 0."
+      },
+      {
+        "key": "B",
+        "text": "−2x + y − 1 = 0."
+      },
+      {
+        "key": "C",
+        "text": "x + 2y + 1 = 0."
+      },
+      {
+        "key": "D",
+        "text": "2x + 3y − 1 = 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-15",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho hai đường thẳng d1 : 2x − y + 3 = 0 và d2 : x + 2y + 1 = 0. Vị trí tương đối của hai đường thẳng d1 và d2 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "d1 ≡2."
+      },
+      {
+        "key": "B",
+        "text": "d1 ∥ d2."
+      },
+      {
+        "key": "C",
+        "text": "d1 ⊥ d2."
+      },
+      {
+        "key": "D",
+        "text": "Cắt nhau và không vuông góc. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-16",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Đường tròn (C) đi qua ba điểm A(2; 0), B(0; −3), C(5; −3).",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Đường kính của đường tròn (C) bằng √26.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Hoành độ của tâm đường tròn (",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "đi qua ba điểm A(2; 0), B(0; −3), C(5; −3). a) Đường kính của đường tròn (C) bằng √26. b) Hoành độ của tâm đường tròn (C) bằng −5 2. c) Đường tròn (C)",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Gọi I là tâm đường tròn (C), khi đó độ dài đoạn IO = 5√2. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-17",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Có hai con tàu A, B xuất phát từ hai bến, chuyển động theo đường thẳng ngoài biển. Trên màn hình ra-đa của trạm điều khiển (xem như mặt phẳng tọa độ Oxy với đơn vị trên các trục tính bằng ki-lô-mét), tại thời điểm t (giờ), vị trí \u0014 GV: NGÔ ĐỨC TÀI / Trang 48/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 của tàu A có tọa độ được xác định bởi công thức (x = 3 − 33t y = −4 + 25t ; vị trí tàu B có tọa độ là (4 − 30t; 3 − 40t). Tính góc giữa hai đường đi của hai tàu A, B (đơn vị độ, kết quả làm tròn đến hàng phần chục). KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-18",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy, cho đường thẳng d : 7x + 3y − 1 = 0. Vectơ nào sau đây là vectơ chỉ phương của đường thẳng d?",
+    "options": [
+      {
+        "key": "A",
+        "text": "#»u = (7; 3)."
+      },
+      {
+        "key": "B",
+        "text": "#»u = (3; 7)."
+      },
+      {
+        "key": "C",
+        "text": "#»u = (−3; 7)."
+      },
+      {
+        "key": "D",
+        "text": "#»u = (2; 3)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-19",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, đường tròn có tâm I(1; 2) tiếp xúc với đường thẳng (d) : 3x − 4y − 10 = 0 có phương trình là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(C) : (x − 1)2 + (y − 2)2 = 9."
+      },
+      {
+        "key": "B",
+        "text": "(C) : (x − 1)2 + (y − 2)2 = 1."
+      },
+      {
+        "key": "C",
+        "text": "(C) : (x + 1)2 + (y + 2)2 = 3."
+      },
+      {
+        "key": "D",
+        "text": "(C) : (x − 1)2 + (y − 2)2 = 3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-20",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C) : (x − 1)2 + (y + 2)2 = 9. Đường kính của đường tròn (C) bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "3."
+      },
+      {
+        "key": "B",
+        "text": "4."
+      },
+      {
+        "key": "C",
+        "text": "6."
+      },
+      {
+        "key": "D",
+        "text": "2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-21",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Viết phương trình đường tròn đường kính AB biết A(2; 3), B(0; −5).",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x − 1)2 + (y + 1)2 = √17."
+      },
+      {
+        "key": "B",
+        "text": "(x − 2)2 + (y + 2)2 = 68."
+      },
+      {
+        "key": "C",
+        "text": "(x + 1)2 + (y − 1)2 = 17."
+      },
+      {
+        "key": "D",
+        "text": "(x − 1)2 + (y + 1)2 = 17. \u0014 GV: NGÔ ĐỨC TÀI / Trang 51/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-22",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Khoảng cách từ điểm M(2; 0) đến đường thẳng ∆ : (x = 1 + 3t y = 2 + 4t bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "2."
+      },
+      {
+        "key": "B",
+        "text": "2 5."
+      },
+      {
+        "key": "C",
+        "text": "10 √5."
+      },
+      {
+        "key": "D",
+        "text": "√5 2 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-23",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đường thẳng d1 : 10x + 5y − 1 = 0 và d2 : (x = 2 + t y = 1 − t . Tính côsin của góc tạo bởi giữa hai đường thẳng đã cho.",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 √10."
+      },
+      {
+        "key": "B",
+        "text": "3√10 10 ."
+      },
+      {
+        "key": "C",
+        "text": "4√10 10 ."
+      },
+      {
+        "key": "D",
+        "text": "3 10."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-24",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, phương trình tham số của đường thẳng d đi qua hai điểm A(3; 1); B(4; 3) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = 3 + 4t y = 1 + 3t ."
+      },
+      {
+        "key": "B",
+        "text": "(x = 1 + 3t y = 2 + 1t ."
+      },
+      {
+        "key": "C",
+        "text": "(x = 3 + 2t y = 1 + 1t ."
+      },
+      {
+        "key": "D",
+        "text": "(x = 3 + t y = 1 + 2t . PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-25",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C) có phương trình x2 + y2 − 6x + 2y + 6 = 0 và hai điểm A(1; −1), B(1; 3). Xét tính Đúng/Sai của các mệnh đề sau",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Bán kính của đường tròn (C) là R = 6.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Điểm A thuộc đường tròn.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "có phương trình x2 + y2 − 6x + 2y + 6 = 0 và hai điểm A(1; −1), B(1; 3). Xét tính Đúng/Sai của các mệnh đề sau a) Bán kính của đường tròn (C) là R = 6",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Qua B kẻ được hai tiếp tuyến với (C) có phương trình là x = 1 và 3x + 4y − 12 = 0. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-26",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng toạ độ Oxy, cho A(−1; 0), B(2; 4) và C(4; 1). Biết rằng tập hợp các điểm M thoả mãn 3MA2 + MB2 = 2MC2 là một đường tròn (C). Tìm tính bán kính của (C) (",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-27",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đường tròn (C) có tâm I(−4; 1) và tiếp xúc với đường thẳng ∆ : 3x − 4y + 1 = 0. Bán kính R của đường tròn (C) bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "R = 19 5 ."
+      },
+      {
+        "key": "B",
+        "text": "R = 4."
+      },
+      {
+        "key": "C",
+        "text": "R = 17 5 ."
+      },
+      {
+        "key": "D",
+        "text": "R = 3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-28",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hai đường thẳng d1 : 11x − 12y + 1 = 0 và d2 : 12x + 11y + 9 = 0. Xét vị trí tương đối giữa d1 và d2.",
+    "options": [
+      {
+        "key": "A",
+        "text": "d1 ∥ d2."
+      },
+      {
+        "key": "B",
+        "text": "d1 ≡ d2."
+      },
+      {
+        "key": "C",
+        "text": "d1 cắt d2 nhưng không vuông góc."
+      },
+      {
+        "key": "D",
+        "text": "d1 ⊥ d2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-29",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C) : x2 + y2 + 4x + 6y − 12 = 0. Phương trình nào sau đây cũng là phương trình của (C)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x − 2)2 + (y − 3)2 = 25."
+      },
+      {
+        "key": "B",
+        "text": "(x + 2)2 + (y − 3)2 = 25."
+      },
+      {
+        "key": "C",
+        "text": "(x − 2)2 + (y + 3)2 = 25."
+      },
+      {
+        "key": "D",
+        "text": "(x + 2)2 + (y + 3)2 = 25."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-30",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Với giá trị nào của a thì hai đường thẳng d1 : 2x−4y+1 = 0 và d2 : (x = −1 + at y = 3 − (a + 1)t vuông góc với nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "a = −2."
+      },
+      {
+        "key": "B",
+        "text": "a = 2."
+      },
+      {
+        "key": "C",
+        "text": "a = −1."
+      },
+      {
+        "key": "D",
+        "text": "a = 1. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-31",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C) có tâm B(1; 1) và cắt đường thẳng d : 3x + 4y + 8 = 0 tại M, N thoả mãn MN = 8. Bán kính của (C) bằng bao nhiêu? KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-32",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng toạ độ Oxy, cho tam giác ABC có A(2; 2), B(1; 5) và đỉnh C nằm trên đường thẳng d · 2x − y − 8 = 0. Toạ độ đỉnh C(a; b), biết rằng C có tung độ âm và diện tích tam giác ABC bằng 2. Tính a + 2b. KQ: \u0014 GV: NGÔ ĐỨC TÀI / Trang 56/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-33",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy (đơn vị trên các trục là mét), một chất điểm chuyển động đều luôn cách điểm I(3; 3) một khoảng bằng 2. Một chất điểm khác chuyển động thẳng đều trên đường thẳng, tại hai thời điểm, chất điểm đó ở vị trí A(−3; 2) và B(2; 7). Tại mọi thời điểm, khoảng cách giữa hai chất điểm lớn hơn bao nhiêu mét? KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-34",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tính góc giữa hai đường thẳng d1 : 2x − y − 3 = 0 và d2 : 3x + y + 2 = 0.",
+    "options": [
+      {
+        "key": "A",
+        "text": "45◦."
+      },
+      {
+        "key": "B",
+        "text": "60◦."
+      },
+      {
+        "key": "C",
+        "text": "30◦."
+      },
+      {
+        "key": "D",
+        "text": "90◦."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-35",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy cho đường thẳng d đi qua A(0; 1) có hệ số góc k nguyên dương. Viết phương trình đường thẳng d biết d tạo với hai trục tọa độ một tam giác có diện tích bằng 0,5.",
+    "options": [
+      {
+        "key": "A",
+        "text": "d : x − 2y + 2 = 0."
+      },
+      {
+        "key": "B",
+        "text": "d : x − y + 1 = 0."
+      },
+      {
+        "key": "C",
+        "text": "d : x + y − 1 = 0."
+      },
+      {
+        "key": "D",
+        "text": "d : x − 4y + 4 = 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-36",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho tam giác ABC có A(2; 3), B(5; 4); C(−1; −4). Viết phương trình tham số đường thẳng OG trong đó O là gốc tọa độ và điểm G là trọng tâm của tam giác ABC.",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = 1 + 2t y = 4 + t ."
+      },
+      {
+        "key": "B",
+        "text": "(x = 2 + t y = 2 + 4t ."
+      },
+      {
+        "key": "C",
+        "text": "(x = 2t y = t ."
+      },
+      {
+        "key": "D",
+        "text": "(x = 2 y = 1 + 3t ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-37",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình tham số của đường thẳng d đi qua hai điểm A(−2; 3) và B(3; 1) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = −2 + 5t y = 3 + 2t ."
+      },
+      {
+        "key": "B",
+        "text": "(x = −2 + 5t y = 3 − 2t ."
+      },
+      {
+        "key": "C",
+        "text": "(x = −2 + 2t y = 3 + 5t ."
+      },
+      {
+        "key": "D",
+        "text": "(x = 3 − 5t y = 1 − 2t . \u0014 GV: NGÔ ĐỨC TÀI / Trang 58/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-38",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy, số giao điểm của đường thẳng (d) : 3x − 4y + 5 = 0 và đường tròn (C) : x2 + y2 − 1 = 0 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "1."
+      },
+      {
+        "key": "B",
+        "text": "2."
+      },
+      {
+        "key": "C",
+        "text": "0."
+      },
+      {
+        "key": "D",
+        "text": "3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-39",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho hai điểm A (2; 2) , B (5; 1). Tìm tọa độ điểm C trên đường thẳng∆: x − 2y + 8 = 0 sao cho diện tích tam giác ABC bằng 17.",
+    "options": [
+      {
+        "key": "A",
+        "text": "C (12; 10) và C Å −76 5 ; −18 5 ã ."
+      },
+      {
+        "key": "B",
+        "text": "C (−12; 10)."
+      },
+      {
+        "key": "C",
+        "text": "C Å1 5; 41 10 ã ."
+      },
+      {
+        "key": "D",
+        "text": "C (−4; 2). PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-40",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Trong mặt phẳng (Oxy), cho hai đường thẳng d1 : 2x − 4y + 3 = 0 và d2 : − 3x + y − 17 = 0.",
+    "statements": [
+      {
+        "id": "a",
+        "text": "d1 ⊥ d2.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "I Å13 2 ; 5 2 ã là tọa độ giao điểm của 2 đường thẳng d1 và d2.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Góc giữa 2 đường thẳng d1 và d2 bằng 135◦.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Gọi A là điểm thuộc trục hoành (khác gốc tọa độ O) và B là điểm thuộc đường thẳng d2 sao cho tam giác OAB vuông cân tại B. Khi đó, có 2 điểm B thỏa mã",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-41",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Trong mặt phẳng toạ độ Oxy, cho (C) : (x − 2)2 + (y − 2)2 = 9 điểm A(5; −1). Gọi ∆1 và ∆2 là các tiếp tuyến đường tròn (C) đi qua điểm",
+    "statements": [
+      {
+        "id": "a",
+        "text": "(C) có bán kính R = 3.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Gọi I là tâm của đường tròn (",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": ": (x − 2)2 + (y − 2)2 = 9 điểm A(5; −1). Gọi ∆1 và ∆2 là các tiếp tuyến đường tròn (C) đi qua điểm A. a) (C) có bán kính R = 3. b) Gọi I là tâm của đư",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Các tiếp tuyến ∆1 và ∆2 vuông góc với nhau. PHẦN 3. Câu trắc nghiệm trả lời ngắn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-42",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Lập phương trình đường tròn trong mỗi trường hợp sau",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Đường tròn có tâm I(−3; 4) bán kính R = 9. \u0014 GV: NGÔ ĐỨC TÀI / Trang 60/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Đường tròn có tâm I(5; −2) và đi qua điểm M(4; −1).",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Đường tròn có tâm I(1; −1) và có một tiếp tuyến là ∆ : 5x − 12y − 1 = 0.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Đường tròn đường kính AB với A(3; −4) và B(−1; 6). e) Đường tròn đi qua ba điểm A(1; 1), B(3; 1) và C(0; 4).",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-43",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hệ trục tọa độ Oxy, trong đó mỗi đơn vị độ dài tương ứng với 1 km. Một chiếc xe M chạy trên đường thẳng từ A(−6; −3) đến B(6; 6) với vận tốc không đổi là 50 km/h. Biết rằng có một ra-đa đặt tại C(5; −1). Hỏi trong quá trình chiếc xe M di chuyển, sau bao nhiêu phút kể từ lúc xuất phát thì khoảng cách từ C đến chiếc xe M là ngắn nhất và khoảng cách ấy là bao nhiêu ki-lô-mét? —Hết— \u0014 GV: NGÔ ĐỨC TÀI / Trang 61/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 15. ĐỀ SỐ 5 PHẦN 1. Câu trắc nghiệm nhiều phương án lựa chọn",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-44",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, cho đường tròn (C1) : x2 + y2 − 2x − 4y − 5 = 0 và điểm A(3; 4). Viết phương trình đường tròn (C) có tâm là tâm của đường tròn (C1) và đi qua điểm",
+    "options": [
+      {
+        "key": "A",
+        "text": "A. (x − 1)2 + (y − 2)2 = 10."
+      },
+      {
+        "key": "B",
+        "text": "(x − 1)2 + (y − 2)2 = 8."
+      },
+      {
+        "key": "C",
+        "text": "(x + 1)2 + (y + 2)2 = 8."
+      },
+      {
+        "key": "D",
+        "text": "(x + 1)2 + (y + 2)2 = 10."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-45",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có hai giá trị m1, m2 để đường thẳng d : x + my − 3 = 0 hợp với đường thẳng d′ : x + y = 0 một góc 60◦. Tổng m1 + m2 bằng",
+    "options": [
+      {
+        "key": "A",
+        "text": "−1."
+      },
+      {
+        "key": "B",
+        "text": "1."
+      },
+      {
+        "key": "C",
+        "text": "−4."
+      },
+      {
+        "key": "D",
+        "text": "4."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-46",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tọa độ giao điểm của hai đường thẳng 7x − 3y + 16 = 0 và x + 10 = 0 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(−10; −18)."
+      },
+      {
+        "key": "B",
+        "text": "(10; 18)."
+      },
+      {
+        "key": "C",
+        "text": "(−10; 18)."
+      },
+      {
+        "key": "D",
+        "text": "(10; −18)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-47",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng Oxy, điểm nào sau đây thuộc đường tròn có phương trình (x − 2)2 + (y + 1)2 = 9?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(2; 1)."
+      },
+      {
+        "key": "B",
+        "text": "(2; −1)."
+      },
+      {
+        "key": "C",
+        "text": "(2; 2)."
+      },
+      {
+        "key": "D",
+        "text": "(2; −2)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-48",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập hợp các điểm có tỉ số các khoảng cách đến hai đường thẳng d1 và d2 bằng 5 13 với d1 : 5x − 12y + 4 = 0 và d2 : 4x − 3y − 10 = 0.",
+    "options": [
+      {
+        "key": "A",
+        "text": "x − 9y − 14 = 0; 3x − 5y − 6 = 0."
+      },
+      {
+        "key": "B",
+        "text": "9x − 5y − 6 = 0; 9x − y + 14 = 0."
+      },
+      {
+        "key": "C",
+        "text": "x + 9y − 14 = 0; 9x + 9y − 6 = 0."
+      },
+      {
+        "key": "D",
+        "text": "x − 9y + 14 = 0 ; 9x − 15y − 6 = 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-49",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình tham số của đường thẳng d : 2x + y − 1 = 0 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = 2t y = 1 − t ."
+      },
+      {
+        "key": "B",
+        "text": "(x = −t y = 1 − 2t ."
+      },
+      {
+        "key": "C",
+        "text": "(x = t y = 1 + 2t ."
+      },
+      {
+        "key": "D",
+        "text": "(x = t y = 1 − 2t . \u0014 GV: NGÔ ĐỨC TÀI / Trang 62/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-50",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Trong mặt phẳng Oxy, cho đường thẳng ∆ : (x = 3 − 2t y = 1 + t (t ∈ R) và điểm A(4; 2).",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Đường thẳng d1 : 2x − y + 1 = 0 vuông góc với đường thẳng ∆.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "d(A, ∆) = √5 5 .",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Đường thẳng d2 : x + 2y = 0 đi qua điểm A và song song với đường thẳng ∆.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Gọi d3 là đường thẳng có hệ số góc dương, đi qua điểm A và tạo với đường thẳng ∆ một góc 45◦. Khi đó, điểm B(5; −1) thuộc đường thẳng d3 .",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-51",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng (Oxy), đường tròn đi qua ba điểm A(1; 2), B(5; 2), C(1; −3) có phương trình là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x2 + y2 + 6x + y − 1 = 0."
+      },
+      {
+        "key": "B",
+        "text": "x2 + y2 − 6x − y − 1 = 0."
+      },
+      {
+        "key": "C",
+        "text": "x2 + y2 − 6x + y − 1 = 0."
+      },
+      {
+        "key": "D",
+        "text": "x2 + y2 + 6x − y − 1 = 0. \u0014 GV: NGÔ ĐỨC TÀI / Trang 66/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-52",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Viết phương trình tham số của đường thẳng đi qua A (3; 4) và có vectơ chỉ phương #»u = (3; −2)",
+    "options": [
+      {
+        "key": "A",
+        "text": "(x = 3 + 3t y = −2 + 4t ."
+      },
+      {
+        "key": "B",
+        "text": "(x = 3 − 6t y = −2 + 4t ."
+      },
+      {
+        "key": "C",
+        "text": "(x = 3 + 2t y = 4 + 3t ."
+      },
+      {
+        "key": "D",
+        "text": "(x = 3 + 3t y = 4 − 2t ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-53",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, cho hai đường thẳng ∆1 : x − 2y + 1 = 0, ∆2 : 3x − y + 7 = 0. Nhận định nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hai đường thẳng ∆1 và ∆2 vuông góc với nhau."
+      },
+      {
+        "key": "B",
+        "text": "Hai đường thẳng ∆1 và ∆2 song song với nhau."
+      },
+      {
+        "key": "C",
+        "text": "Hai đường thẳng ∆1 và ∆2 trùng nhau."
+      },
+      {
+        "key": "D",
+        "text": "Hai đường thẳng ∆1 và ∆2 cắt nhau."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-54",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Viết phương trình đường tròn (C) : x2 + y2 − 2ax − 2by + c = 0 biết (C) đi qua hai điểm A(3; 3), B(7; −1) và có tâm nằm trên đường thẳng d : x + y − 2 = 0. Khi đó a + b + c bằng bao nhiêu? KQ: \u0014 GV: NGÔ ĐỨC TÀI / Trang 67/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-55",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng toạ độ Oxy, cho tam giác ABC có A(1; 1), B(5; −2), đỉnh C thuộc đường thẳng y − 4 = 0, trọng tâm G thuộc đường thẳng 3x − 2y + 6 = 0. Biết diện tích tam giác ABC có dạng a b (với a b là phân số tối giản). Tính a + b. KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-56",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ Oxy, góc giữa hai đường thẳng d1 : 3x + y + 3 = 0 và d2 : − 2x + y + 1 = 0 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "135◦."
+      },
+      {
+        "key": "B",
+        "text": "45◦."
+      },
+      {
+        "key": "C",
+        "text": "90◦."
+      },
+      {
+        "key": "D",
+        "text": "30◦."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-hk2-1789364904696-57",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Phương trình đường tròn tâm I(2, −3) và đi qua điểm M(−2, 0) là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(C) : (x + 2)2 + (y − 3)2 = 25."
+      },
+      {
+        "key": "B",
+        "text": "(C) : (x − 2)2 + (y + 3)2 = 5."
+      },
+      {
+        "key": "C",
+        "text": "(C) : (x + 2)2 + (y − 3)2 = 5."
+      },
+      {
+        "key": "D",
+        "text": "(C) : (x − 2)2 + (y + 3)2 = 25."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.696Z"
   }
 ]

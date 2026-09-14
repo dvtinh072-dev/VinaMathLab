@@ -504,5 +504,2146 @@
     "id": "bq-10-c6-540",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781705-j3db",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tại một buổi khai trương, người ta làm một cổng chào có đường viền trong của mặt cắt là đường parabol. Người ta đo khoảng cách giữa hai chân cổng là 4, 5m. Từ một điểm trên thân cổng người ta đo được khoảng cách tới mặt đât (điêm H ) là 1, 8m và khoảng cách từ điểm H tới chân cồng gần nhất là 1 m . Hãy tính chiều cao của cồng chào đó (tính theo đường viền trong) theo đơn vị mét và làm tròn",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.705Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781705-4o4z",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khi du lịch đến thành phố St. Louis (Mỹ), ta sẽ thấy một cái cổng lớn có hình parabol hướng bề lõm xuống dưới, đó là cổng Arch. Giả sử ta lập 20  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ một hệ toạ độ Oxy sao cho một chân cổng đi qua gốc O như Hình 16 (x và y tính bằng mét), chân kia của cổng ở vị trí có tọa độ (162; 0). Biết một điểm M trên cổng có tọa độ là (10; 43) Tính chiều cao của cổng (tính từ điểm cao nhất trên cổng xuống mặt đất), làm tròn",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.705Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-mnvf",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Hai bạn An và Bình trao đổi với nhau: An nói: Tớ đọc ở một tài liệu thấy nói rằng cổng Trường Đại học Bách khoa Hà Nội có dạng một parabol, khoảng cách giữa hai chân cổng là 8 m và chiều cao của cổng tính từ một điểm trên mặt đất cách chân cổng là 0,5 m là 2,93 m. Từ đó tớ tính ra được chiều cao của cổng parabol đó là 12 m . Sau một hồi suy nghĩ, Bình nói: Nếu dữ kiện như bạn nói, thì chiều cao của cổng parabol mà bạn tính ra ở trên là không chính xác. Dựa vào thông tin mà An đọc được, em hãy tính chiều cao của cổng Trường Đại học Bách Khoa Hà Nội để xem",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-acbv",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Bác Hùng dùng 200 m hàng rào dây thép gai để rào miếng đất đủ rộng thành một mảnh vườn hình chữ nhật. a) Tìm công thức tính diện tích S(x) của mảnh vườn hình chữ nhật rào được theo chiều rộng x(m) của mảnh vườn đó. b) Tìm kích thước của mảnh vườn hình chữ nhật có diện tích lớn nhất có thể rào được.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-3wg1",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cầu Nhật Tân bắc qua sông Hồng được xem là chiếc cầu dây văng dài nhất Việt. Cầu có 5 trụ tháp chính kết nối các nhịp dây văng nâng đỡ toàn bộ phần chính của cây cầu, cũng là để tượng trưng cho 5 cửa ô cổ kính của Hà Nội. Mỗi trụ tháp được kiến trúc tạo dáng mĩ thuật phía trong bằng đường cong tựa như một parabol. a) Giả sử rằng mặt trong của trụ cầu là một parabol như Hình 7 . Khi không thể đo trực tiếp khoảng cách từ đỉnh vòm phía trong của trụ cầu tới mặt đường, làm thế nào để ước tính độ cao này? b) Giả sử biết độ rộng của mặt đường khoảng 43 m. Một người đã dùng dây 24  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ dọi (không giãn) gắn lên thành trụ cầu ở vị trí B và điều chỉnh độ dài dây dọi để quả nặng vừa chạm đất (khi lặng gió), sau đó đo được chiều dài đoạn dây dọi sử dụng là 1, 87 m và khoảng cách từ chân trụ cầu đến quả nặng là 20 cm. Nếu dùng dữ liệu tự thu thập được và tính toán theo cách ở trên thì người này sẽ ước tính được độ cao từ đỉnh vòm phía trong một trụ của cầu Nhật Tân tới mặt đường là bao nhiêu?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-i47u",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Chiếc cầu dây văng một nhịp được thiết kế hai bên thành cầu có dạng parabol và được cố định bằng các dây cáp song song. Dựa vào bản vẽ ở Hình, hãy tính chiều dài tổng cộng của các dây cáp dọc ở hai mặt bên. Biết: - Dây dài nhất là 5 m, dây ngắn nhất là 0,8 m. Khoảng cách giữa các dây bằng nhau. - Nhịp cầu dài 30 m. - Cần tính thêm 5% chiều dài mỗi sợi dây cáp để neo cố định.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-3mk7",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một vận động viên bóng chuyền đánh một quả bóng lên với vị trí ban đầu từ độ cao 4 ft (tính từ tay đánh bóng đến mặt đất). Tại thời điểm 0,5s trái bóng ở độ cao 10 ft và tại 1s thì trái bóng ở độ cao 8 ft 25  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ a) Viết công thức tính độ cao quả bóng tính theo thời gian t(s) sau khi được đánh ra, biết công thức tính h(t) là một hàm số bậc 2 b) Độ cao lớn nhất quả bóng đạt được là bao nhiêu? c) Đối phương có bao nhiêu giây để chạy đến cứu quả bóng trước khi nó chạm đến mặt đất?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-4foj",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một máy bay trực thăng cứu hộ bay ở độ cao 500 (feet) so với mặt đất, đang chuẩn bị phun nước vào một đám cháy rừng từ trên không. Độ cao h (feet) của nước so với mặt đất tính theo thời gian t (s) kể từ lúc máy bay phun ra là một hàm số bậc 2. Tại thời điểm 5s sau nước phun thì tới được phía trên đám cháy đang bốc lửa cao 90m. Tính khoảng cách từ đám cháy đến máy bay theo phương ngang biết rằng khoảng cách theo phương ngang tính từ điểm cháy đến máy bay là 85 x= (ft)",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-w404",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Công ty du lịch Saigon Tourist báo giá tiền chuyến đi tham quan Đà Lạt cho nhóm khách của Trường THPT Trường Trinh như sau: • Nếu có dưới 40 khách thì giá vé là 500 000 đồng / 1 người. • Nếu có nhiều hơn 40 khách thì cứ thêm một người, giá vé sẽ giảm 10 000 đồng / 1 người cho toàn bộ hành khách. • Gọi x là số lượng khách từ người thứ 41 trở đi. Hãy biểu thị doanh thu của 26  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ công ty theo x. • Số người của nhóm du lịch nhiều nhất là bao nhiêu để công ty không bị lỗ, biết chi phí của chuyến đi là 20.160.000 đồng?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-ss5x",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Sức mạnh động cơ (tính bằng đơn vị mã lực) sinh ra từ máy của một canô ở tốc độ quay r vòng/ phút được xác định bởi hàm số: p(r) = −0.000025r2 + 0.2r − 240 Vậy sức mạnh lớn nhất của động cơ này đạt được là bao nhiêu? Khi đó, động cơ phải quay bao nhiêu vòng/ phút?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-ssai",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Anh Tuân muốn xây dựng một hố ga không có nắp đậy dạng hình hộp chữ nhật có thể tích chứa được 3200 cm2, tỉ số giữa chiều cao và chiều rộng 27  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ của hố ga bằng 2 cm. Xác định diện tích đáy của hố ga để khi xây hố ga tiết kiệm được nguyên liệu nhất.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-k69e",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Nhà Lan muốn xây một hồ nước có dạng một khối hộp chữ nhật có nắp đậy có thể tích bằng 576m3. Đáy hồ là hình chữ nhật có chiều dài gấp đôi chiều rộng. Giá tiền thuê nhân công để xây hồ tính theo m2 là 500.000 đồng/m2. Hãy xác định kích thước của hồ chứa nước sao cho chi phí thuê nhân công là ít nhất và chi phí đó là bao nhiêu.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-sa-1789364781706-c13m",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "VD",
+    "stem": "Một ca sĩ có buổi biểu diễn âm nhạc có giá vé đã thông báo là 600 đô la thì sẽ có 1000 người đặt vé. Tuy nhiên sau khi đã có 1000 người đặt vé với giá 600 đô la thì quản lý kinh doanh của ca sĩ này nhận thấy, cứ mỗi 20 đô la giảm giá vé thì sẽ thu hút thêm 100 người mua vé nên ông quyết định mở ra một chương trình giảm giá vé. Tìm giá vé phù hợp để có được số tiền vé thu vào là cao nhất và số tiền đó là bao nhiêu (đơn vị là đô la)? Bài 100. Một tạp chí được bán với giá 20 nghìn đồng một cuốn. Chi phí xuất bản x cuốn tạp chí (bao gồm: lương cán bộ, công nhân viên, giấy in,...) được cho bởi công thức: C(x) = 0, 001x2 − 2x + 1000, C(x) được tính theo đơn vị nghìn đồng. Chi phí phát hành cho mỗi cuốn là 4 nghìn đồng. 1. • Tính tổng chi phí T (x) (xuất bản và phát hành) cho x cuốn tạp chí. • Tỉ số M (x) = T (x) x được gọi là chi phí trung bình cho một cuốn tạp chí khi xuất bản x cuốn. Tính M (x) theo x và tìm số lượng tạp chí cần xuất bản sao cho chi phí trung bình là thấp nhất. 2. Các khoản thu bao gồm tiền bán tạp chí và 90 triệu đồng nhận được từ quảng cáo và sự trợ giúp cho báo chí (Giả sử số cuốn in ra đều được bán hết). • Chứng minh rằng số tiền lãi khi in x cuốn tạp chí là L(x) = −0, 001x2 + 18x − 10000. 28  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ • Hỏi in bao nhiêu cuốn thì có lãi. • In bao nhiêu cuốn thì lãi nhiều nhất và tính số tiền lãi đó. 29  Nhóm NC MATH NHÓM TOÁN HỌC TRẺ 2 Hướng dẫn giải hàm số bậc hai 2.1 Giải phương trình bậc hai Lịch sử phát triển phương trình bậc hai • Babylon (khoảng 2000 TCN): Đã biết cách giải các phương trình dạng ax2 = b, ax2 + bx = c bằng phương pháp hình học, sử dụng diện tích hình vuông, hình chữ nhật để biểu diễn. • Ai Cập cổ đại: Biết cách giải phương trình dạng đơn giản thông qua các bài toán đo đạc đất đai, xây dựng bằng phương pháp xấp xỉ. • Hy Lạp cổ đại: Các nhà toán học như Euclid, Diophantus phát triển phương pháp hình học để giải phương trình bậc hai, nghiên cứu nghiệm nguyên thông qua phân tích số học. • Ấn Độ (Bhaskara II, thế kỷ 12): Bhaskara II đưa ra công thức nghiệm rõ ràng cho phương trình bậc hai, công thức này ngày nay còn được gọi là công thức Bhaskara. • Al-Khwarizmi (thế kỷ 9): Trong cuốn “Al-jabr” của mình, ông đã mô tả chi tiết cách giải phương trình bậc hai bằng phương pháp hoàn thành bình phương, đặt nền móng cho tên gọi “Algebra” hiện nay. • Châu Âu thời Phục Hưng: Các nhà toán học phương Tây hoàn thiện ký hiệu đại số, áp dụng công thức nghiệm phương trình bậc",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VI: Hàm số, đồ thị và ứng dụng",
+    "createdAt": "2026-09-14T05:46:21.706Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-0",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bảng biến thiên như hình bên là bảng biến thiên của hàm số nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = x2 + 2x − 2."
+      },
+      {
+        "key": "B",
+        "text": "y = x2 − 2x − 2."
+      },
+      {
+        "key": "C",
+        "text": "y = −x2 − 2x − 2."
+      },
+      {
+        "key": "D",
+        "text": "y = x2 + 3x − 2. x y −∞ −1 +∞ +∞ +∞ −3 −3 +∞ +∞"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-1",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho hàm số y = f (x) = 2023x − 2022. Tính f (1).",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (1) = 2."
+      },
+      {
+        "key": "B",
+        "text": "f (1) = 2023."
+      },
+      {
+        "key": "C",
+        "text": "f (1) = 2022."
+      },
+      {
+        "key": "D",
+        "text": "f (1) = 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-2",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số y = √x2 − 1 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = (−∞; 0]."
+      },
+      {
+        "key": "B",
+        "text": "D = (−1; 1)."
+      },
+      {
+        "key": "C",
+        "text": "D = [0; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "D = (−∞; −1] ∪ [1; +∞)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-3",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đồ thị dưới đây là của hàm số nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = x2 − 4x − 1."
+      },
+      {
+        "key": "B",
+        "text": "y = x2 − 4x + 3."
+      },
+      {
+        "key": "C",
+        "text": "y = −x2 + 4x − 1."
+      },
+      {
+        "key": "D",
+        "text": "y = −x2 + 4x + 3. x y O −1 1 2 3 4 −1 1 2 3 4"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-4",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số có đồ thị như hình bên. Khẳng định nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hàm số nghịch biến trên khoảng (0; 3)."
+      },
+      {
+        "key": "B",
+        "text": "Hàm số đồng biến trên khoảng (−∞; 3)."
+      },
+      {
+        "key": "C",
+        "text": "Hàm số đồng biến trên khoảng (−∞; 1)."
+      },
+      {
+        "key": "D",
+        "text": "Hàm số nghịch biến trên khoảng (0; 2). x y O 1 2 −3"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-5",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Bất phương trình nào sau đây là bất phương trình bậc hai một ẩn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "−3x + 5y > 1."
+      },
+      {
+        "key": "B",
+        "text": "x − 7y − 3z > 2."
+      },
+      {
+        "key": "C",
+        "text": "2x2 + 3x + 1 > 0."
+      },
+      {
+        "key": "D",
+        "text": "2x2 − y > 1. \u0014 GV: NGÔ ĐỨC TÀI / Trang 7/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-6",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho đồ thị của hàm số bậc hai f (x) như hình vẽ Tập nghiệm của bất phương trình f (x) > 0 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "S = (−∞; 0) ∪ (2; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "S = (0; 2)."
+      },
+      {
+        "key": "C",
+        "text": "S = (−∞; 0] ∪ [2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "S = (2; +∞). x y O 2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-7",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nghiệm của tam thức bậc hai f (x) = x2 − 9 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = −3."
+      },
+      {
+        "key": "B",
+        "text": "x = 3."
+      },
+      {
+        "key": "C",
+        "text": "\"x = 3 x = −3 ."
+      },
+      {
+        "key": "D",
+        "text": "\"x = 0 x = 9 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-8",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tập nghiệm của phương trình √2x2 − 3x − 1 = √2x − 4 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "S = ∅."
+      },
+      {
+        "key": "B",
+        "text": "S = {1}."
+      },
+      {
+        "key": "C",
+        "text": "S = R."
+      },
+      {
+        "key": "D",
+        "text": "S = ß 1; 1 2 ™ ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-9",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tam thức bậc hai f (x) = −x2 + 5x − 4 nhận giá trị dương khi và chỉ khi",
+    "options": [
+      {
+        "key": "A",
+        "text": "x ∈ (−∞; 1)."
+      },
+      {
+        "key": "B",
+        "text": "x ∈ (4; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "x ∈ (1; 4)."
+      },
+      {
+        "key": "D",
+        "text": "x ∈ (1; +∞)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-10",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số y = x − 1 x2 − x + 3 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = R \\ {3}."
+      },
+      {
+        "key": "B",
+        "text": "D = R."
+      },
+      {
+        "key": "C",
+        "text": "D = ∅."
+      },
+      {
+        "key": "D",
+        "text": "D = R \\ {0}. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-11",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho hàm số y = f (x) có đồ thị dạng parabol như hình bên dưới. x y O",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Parabol trên là đồ thị của hàm số y = −x2 + 2x.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Khoảng nghịch biến của hàm số f (x) là (−∞ ; 2).",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Tập nghiệm của bất phương trình f (x) ≥ 0 là S = (0; 2).",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "f (x) < 0 , ∀x ∈ (−∞ ; 0) ∪ (2 ; +∞).",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-12",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số y = ax2 + bx + c có đồ thị (P) như hình vẽ. Khẳng định nào sau đây là sai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hàm số đồng biến trên khoảng (−∞; 3)."
+      },
+      {
+        "key": "B",
+        "text": "(P) có đỉnh là I(3; 4)."
+      },
+      {
+        "key": "C",
+        "text": "(P) cắt trục tung tại điểm có tung độ bằng 4."
+      },
+      {
+        "key": "D",
+        "text": "(P) cắt trục hoành tại hai điểm phân biệt. x y O 3 4 −1 7"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-13",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đồ thị hàm số y = x2 − 2x − 3 đi qua điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "N(1; 2)."
+      },
+      {
+        "key": "B",
+        "text": "P(0; 2)."
+      },
+      {
+        "key": "C",
+        "text": "M(1; 1)."
+      },
+      {
+        "key": "D",
+        "text": "Q(3; 0)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-14",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hàm số y = x2 − 4x + 11 đồng biến trên khoảng nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(−2; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "(−∞; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "(2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "(−∞; 2)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-15",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số bậc hai y = ax2 + bx + c (a̸ = 0) có đồ thị (P), đỉnh của (P) được xác định bởi công thức nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "I Å − b 2a; − ∆ 4a ã ."
+      },
+      {
+        "key": "B",
+        "text": "I Åb a; ∆ 4a ã ."
+      },
+      {
+        "key": "C",
+        "text": "I Å −b a; − ∆ 4a ã ."
+      },
+      {
+        "key": "D",
+        "text": "I Å − b 2a; − ∆ 2a ã ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-16",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập xác định của hàm số y = √x − 1 + √2 − x.",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = (1; 2)."
+      },
+      {
+        "key": "B",
+        "text": "D = [1; 2]."
+      },
+      {
+        "key": "C",
+        "text": "D = (−∞; 1) ∪ (2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "D = (−∞; 1] ∪ [2; +∞)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-17",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập xác định D của hàm số √2x2 − 5x + 2 .",
+    "options": [
+      {
+        "key": "A",
+        "text": "Å −∞; −1 2 ò ."
+      },
+      {
+        "key": "B",
+        "text": "[2; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "Å −∞; −1 2 ò ∪ [2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "ï −1 2 ò ; 2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-18",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Quan sát đồ thị hàm số bậc hai y = f (x) ở hình bên. Khi đó",
+    "statements": [
+      {
+        "id": "a",
+        "text": "a > 0.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Toạ độ đỉnh I(2; −1), trục đối xứng x = 2.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Đồng biến trên khoảng (−∞; 2); Nghịch biến trên khoảng (2; +∞).",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "x thuộc các khoảng (−∞; 1) và (3; +∞) thì f (x) > 0. x y O 1 2 3 −1 3",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-19",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các biểu thức sau, biểu thức nào là tam thức bậc hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (x) = x2 + 3."
+      },
+      {
+        "key": "B",
+        "text": "f (x) = 2x + 3."
+      },
+      {
+        "key": "C",
+        "text": "f (x) = mx2 + 3."
+      },
+      {
+        "key": "D",
+        "text": "f (x) = √2x2 + 3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-20",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đồ thị hình bên dưới là đồ thị của hàm số nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = 2x2 − 4x − 2."
+      },
+      {
+        "key": "B",
+        "text": "y = −x2 − 2x + 3."
+      },
+      {
+        "key": "C",
+        "text": "y = x2 − 2x − 1."
+      },
+      {
+        "key": "D",
+        "text": "y = x2 + 2x − 2. x y O 1 2 1 −2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-21",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập hợp tất cả các giá trị của x để tam thức f (x) = 2x2 + 2x + 5 nhận giá trị dương.",
+    "options": [
+      {
+        "key": "A",
+        "text": "(0; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "(−∞; 2)."
+      },
+      {
+        "key": "C",
+        "text": "(−2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "R."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-22",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Điểm nào sau đây thuộc đồ thị của hàm số y = x − 2 x(x − 1)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "M(0; −1)."
+      },
+      {
+        "key": "B",
+        "text": "M(2; 1)."
+      },
+      {
+        "key": "C",
+        "text": "M(2; 0)."
+      },
+      {
+        "key": "D",
+        "text": "M(1; 1)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-23",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập xác định D của hàm số f (x) = √x + 1 x − 3 .",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = (3; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "D = [−1; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "D = [−1; 3) ∪ (3 : +∞)."
+      },
+      {
+        "key": "D",
+        "text": "D = R \\ {3}."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-24",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số: f (x) =    − 2(x − 3) khi − 1 ≤ x ≤ 1 px2 − 1 khi x > 1 . Giá trị của f (−1); f (1) lần lượt là",
+    "options": [
+      {
+        "key": "A",
+        "text": "8 và 0."
+      },
+      {
+        "key": "B",
+        "text": "0 và 8."
+      },
+      {
+        "key": "C",
+        "text": "0 và 0."
+      },
+      {
+        "key": "D",
+        "text": "8 và 4."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-25",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tập nghiệm của phương trình √x2 + 3x − 2 = √1 + x là",
+    "options": [
+      {
+        "key": "A",
+        "text": "∅."
+      },
+      {
+        "key": "B",
+        "text": "{−3}."
+      },
+      {
+        "key": "C",
+        "text": "{1; −3}."
+      },
+      {
+        "key": "D",
+        "text": "{1}. \u0014 GV: NGÔ ĐỨC TÀI / Trang 13/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-26",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bảng biến thiên nào dưới đây là của hàm số y = −x2 + 2x + 1",
+    "options": [
+      {
+        "key": "A",
+        "text": "x −∞ +∞ 1 y +∞ 2 +∞ ."
+      },
+      {
+        "key": "B",
+        "text": "x −∞ +∞ 1 y −∞ 2 −∞ ."
+      },
+      {
+        "key": "C",
+        "text": "x −∞ +∞ 1 y −∞ +∞ ."
+      },
+      {
+        "key": "D",
+        "text": "x −∞ +∞ 1 y +∞ −∞ ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-27",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tam thức y = x2 − 2x − 3 nhận giá trị dương khi và chỉ khi",
+    "options": [
+      {
+        "key": "A",
+        "text": "x < −3 hoặc x > −1."
+      },
+      {
+        "key": "B",
+        "text": "x < −1 hoặc x > 3."
+      },
+      {
+        "key": "C",
+        "text": "x < −2 hoặc x > 6."
+      },
+      {
+        "key": "D",
+        "text": "−1 < x < 3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-28",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho hàm số f (x) = ax2 + bx + c có đồ thị như hình vẽ. Tìm tất cả giá trị của x để f (x) < 0.",
+    "options": [
+      {
+        "key": "A",
+        "text": "x ∈ (−∞; 1) ∪ (3; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "x ∈ (1; 3)."
+      },
+      {
+        "key": "C",
+        "text": "x ∈ (0; 2)."
+      },
+      {
+        "key": "D",
+        "text": "x ∈ (−1; 0). x y O 1 3 \u0014 GV: NGÔ ĐỨC TÀI / Trang 14/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004 PHẦN 2. Câu trắc nghiệm"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-29",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho hàm số y = f (x) có đồ thị như hình vẽ bên. Mỗi",
+    "statements": [
+      {
+        "id": "a",
+        "text": "f (x) = 0 ⇔ x = 6.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "f (0) = 3.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Tập xác định D = [−1; 9].",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "f (x) ≥ 2, ∀x ∈ D.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-30",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Có bao nhiêu số nguyên m thuộc đoạn [1; 8] để hàm số y = √3x − m, (với m là tham số) xác định trên tập (1; +∞). KQ:",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-31",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một công ty bắt đầu sản xuất và bán một loại xe máy từ năm 2018. Số lượng loại xe máy đó bán được trong hai năm liên tiếp 2018 và 2019 lần lượt là 4 nghìn và 4,5 nghìn chiếc. Theo nghiên cứu dự báo thị trường của công ty, trong khoảng 10 năm kể từ 2018, số lượng xe máy loại đó bán được mỗi năm có thể được xấp xỉ bởi một hàm số bậc hai. Giả sử t là thời gian (theo đơn vị năm) tính từ năm 2018. Số lượng loại xe máy đó bán được trong năm 2018 và năm 2019 lần lượt được biểu diễn bởi các điểm (0; 4) và (1; 4,5). Giả sử điểm (0; 4) là đỉnh đồ thị của hàm số bậc hai này.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-32",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số y = √x − 3 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(3; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "(−∞; 3)."
+      },
+      {
+        "key": "C",
+        "text": "[3; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "(−∞; 3]."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-33",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Hàm số mô tả sự phụ thuộc của y (số tiền phải trả, tính bằng nghìn đồng) vào x (lượng điện tiêu thụ, tính bằng kW h) trên từng khoảng giá trị x được cho bằng công thức như hình bên. Ông An tháng thứ nhất sài hết 90 kWh điện, tháng thứ hai sài hết 120 kWh điện. Theo công thức bên thì số tiền ông An phải trả trong 2 tháng gần nhất với",
+    "options": [
+      {
+        "key": "A",
+        "text": "364 nghìn đồng."
+      },
+      {
+        "key": "B",
+        "text": "361 nghìn đồng."
+      },
+      {
+        "key": "C",
+        "text": "392 nghìn đồng."
+      },
+      {
+        "key": "D",
+        "text": "352 nghìn đồng."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-34",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đồ thị của hàm số y = f (x) = (2x + 1 khi x ≤ 2 − 3 khi x > 2 đi qua điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(0; −3)."
+      },
+      {
+        "key": "B",
+        "text": "(3; 7)."
+      },
+      {
+        "key": "C",
+        "text": "(2; −3)."
+      },
+      {
+        "key": "D",
+        "text": "(0; 1). \u0014 GV: NGÔ ĐỨC TÀI / Trang 17/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-35",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Nghiệm của phương trình √4x2 + 2x + 10 = 3x + 1 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 1."
+      },
+      {
+        "key": "B",
+        "text": "x = −9 5 ."
+      },
+      {
+        "key": "C",
+        "text": " x = −9 5 x = 1 ."
+      },
+      {
+        "key": "D",
+        "text": "x ∈ /0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-36",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bảng xét dấu sau là của tam thức bậc hai nào? x f (x) −∞ 1 2 +∞ − 0 + 0 −",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (x) = −x2 − 3x + 2."
+      },
+      {
+        "key": "B",
+        "text": "f (x) = (x − 1) (−x + 2)."
+      },
+      {
+        "key": "C",
+        "text": "f (x) = x2 + 3x + 2."
+      },
+      {
+        "key": "D",
+        "text": "f (x) = x2 − 3x + 2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-37",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập xác định của hàm số y = x x2 − 20232 .",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = R\\\b ± 2023 ."
+      },
+      {
+        "key": "B",
+        "text": "D = R."
+      },
+      {
+        "key": "C",
+        "text": "D = \b ± 2023 ."
+      },
+      {
+        "key": "D",
+        "text": "D = R\\\b2023 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-38",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các biểu thức dưới đây, biểu thức nào là một tam thức bậc hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (x) = x2 + 3."
+      },
+      {
+        "key": "B",
+        "text": "f (x) = 0x2 + 2x."
+      },
+      {
+        "key": "C",
+        "text": "f (x) = 1 x2 ."
+      },
+      {
+        "key": "D",
+        "text": "f (x) = 2x + 1."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-39",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hàm số nào có đồ thị như hình vẽ bên dưới?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = −x2 + 4x − 3."
+      },
+      {
+        "key": "B",
+        "text": "y = −x2 − 4x − 3."
+      },
+      {
+        "key": "C",
+        "text": "y = −2x2 − x − 3."
+      },
+      {
+        "key": "D",
+        "text": "y = x2 − 4x − 3. x y 1 O 2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-40",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tìm tập xác định D của hàm số y = x x + 2.",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = R \\ {−2}."
+      },
+      {
+        "key": "B",
+        "text": "D = (−2; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "D = R \\ {2}."
+      },
+      {
+        "key": "D",
+        "text": "D = (−∞; −2)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-41",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam thức f (x) = ax2 + bx + c với a̸ = 0 và ∆ = b2 − 4ac, khi đó f (x) ≤ 0, ∀x ∈ R khi và chỉ khi",
+    "options": [
+      {
+        "key": "A",
+        "text": "(a > 0 ∆ ≤ 0."
+      },
+      {
+        "key": "B",
+        "text": "(a ≤ 0 ∆ < 0."
+      },
+      {
+        "key": "C",
+        "text": "(a < 0 ∆ ≤ 0."
+      },
+      {
+        "key": "D",
+        "text": "(a < 0 ∆ ≥ 0."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-42",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho hàm số y = f (x) =    2 x − 1, x ∈ (−∞; 2] x2 − 1, x ∈ (2; 5] . Tính f (3).",
+    "options": [
+      {
+        "key": "A",
+        "text": "8."
+      },
+      {
+        "key": "B",
+        "text": "1."
+      },
+      {
+        "key": "C",
+        "text": "7."
+      },
+      {
+        "key": "D",
+        "text": "2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-43",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số f (x) = √−x2 + 5x + 6.",
+    "options": [
+      {
+        "key": "A",
+        "text": "R."
+      },
+      {
+        "key": "B",
+        "text": "[−1; 6]."
+      },
+      {
+        "key": "C",
+        "text": "(−1; 6)."
+      },
+      {
+        "key": "D",
+        "text": "(−∞; −1] ∪ [6; +∞)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-44",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho hàm số y = f (x) = 2x2 − 1. Tính f (2).",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (2) = 2."
+      },
+      {
+        "key": "B",
+        "text": "f (2) = 3."
+      },
+      {
+        "key": "C",
+        "text": "f (2) = 7."
+      },
+      {
+        "key": "D",
+        "text": "f (2) = 5."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-45",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tổng các nghiệm của phương trình √4 + 2x − x2 = x − 2 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "0."
+      },
+      {
+        "key": "B",
+        "text": "1."
+      },
+      {
+        "key": "C",
+        "text": "2."
+      },
+      {
+        "key": "D",
+        "text": "3."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-46",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các hàm số sau, hàm số nào không là hàm số bậc hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = −x2 + 4x + 2."
+      },
+      {
+        "key": "B",
+        "text": "y = x(2x2 + 5x − 1)."
+      },
+      {
+        "key": "C",
+        "text": "y = −3x(6x − 8)."
+      },
+      {
+        "key": "D",
+        "text": "y = x2 + 6x. \u0014 GV: NGÔ ĐỨC TÀI / Trang 21/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10 Ô 0889.971.004"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-47",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số f (x) = 2x2 + 8x + 8. Phát biểu nào sau đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hàm số đồng biến trên khoảng (−4; +∞), nghịch biến trên khoảng (−∞; −4)."
+      },
+      {
+        "key": "B",
+        "text": "Hàm số đồng biến trên khoảng (−2; +∞), nghịch biến trên khoảng (−∞; −2)."
+      },
+      {
+        "key": "C",
+        "text": "Hàm số đồng biến trên khoảng (−∞; −2), nghịch biến trên khoảng (−2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "Hàm số đồng biến trên khoảng (−∞; −4), nghịch biến trên khoảng (−4; +∞)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-48",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số y = 1 x + √3 − x là",
+    "options": [
+      {
+        "key": "A",
+        "text": "(−∞; 3]."
+      },
+      {
+        "key": "B",
+        "text": "[3; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "R \\ {0}."
+      },
+      {
+        "key": "D",
+        "text": "(−∞; 3] \\ {0}. PHẦN 2. Câu trắc nghiệm đúng sai"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-49",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "true_false",
+    "level": "NB",
+    "stem": "Cho hàm số bậc hai y = 2x2 − 4x + c có đồ thị là một parabol (P). Biết (P) đi qua điểm M (0; 1).",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Trục đối xứng là đường thẳng x = −1.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "c > 0.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "(P) đi qua A (1; −1).",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "(P) có bề lõm quay xuống dưới.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-50",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Độ cao so với mặt đất của một quả bóng được ném lên theo phương thẳng đứng được mô tả bởi hàm số bậc hai h(t) = −4, 9t2 + 20t + 1, ở đó độ cao h(t) tính bằng mét và thời gian t tính bằng giây. Trong khoảng thời điểm nào trong quá trình bay của nó, quả bóng sẽ ở độ cao trên 5(m) so với mặt đất?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-51",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập xác định của hàm số y = √6 − x − x2 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "D = [−3; 2]."
+      },
+      {
+        "key": "B",
+        "text": "D = (−∞; −3] ∪ [2; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "D = (−∞; −3) ∪ (2; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "D = [−2; 3]."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-52",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Tập nghiệm của phương trình √5x + 6 = x − 6 là",
+    "options": [
+      {
+        "key": "A",
+        "text": "S = {2}."
+      },
+      {
+        "key": "B",
+        "text": "S = {6}."
+      },
+      {
+        "key": "C",
+        "text": "S = {2; 15}."
+      },
+      {
+        "key": "D",
+        "text": "S = {15}."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-53",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam thức bậc hai f (x) = ax2 + bx + c (c̸ = 0). Đặt ∆ = b2 − 4ac. Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nếu ∆ < 0 thì f (x) luôn trái dấu với hệ số a, với mọi x ∈ R."
+      },
+      {
+        "key": "B",
+        "text": "Nếu ∆ < 0 thì f (x) luôn cùng dấu với hệ số b, với mọi x ∈ R."
+      },
+      {
+        "key": "C",
+        "text": "Nếu ∆ > 0 thì f (x) luôn cùng dấu với hệ số a, với mọi x ∈ R."
+      },
+      {
+        "key": "D",
+        "text": "Nếu ∆ = 0 thì f (x) luôn cùng dấu với hệ số a, với mọi x ∈ R \\ ß − b 2a ™ ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-54",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Hàm số f (x) =      2√x − 2 − 3 x − 1 , khi x ≥ 2 x2 + 2, khi x < 2 . Tính P = f (2) + f (−2).",
+    "options": [
+      {
+        "key": "A",
+        "text": "P = 3."
+      },
+      {
+        "key": "B",
+        "text": "P = 7 3."
+      },
+      {
+        "key": "C",
+        "text": "P = 6."
+      },
+      {
+        "key": "D",
+        "text": "P = 2."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-55",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Xét dấu tam thức f (x) = −3x2 + 2x + 8. Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (x) ≥ 0 khi x ∈ ï −4 3; 2 ò ."
+      },
+      {
+        "key": "B",
+        "text": "f (x) ≤ 0 khi x ∈ Å −∞; −4 3 ã ∪ [2; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "f (x) ≤ 0 khi x ∈ Å −4 3; 2 ã ."
+      },
+      {
+        "key": "D",
+        "text": "f (x) ≥ 0 khi x ∈ Å −4 3; 2 ã ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-56",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hàm số y = ax2 + bx + c có đồ thị như bên. Khẳng định nào dưới đây là đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "a > 0, b > 0, c < 0."
+      },
+      {
+        "key": "B",
+        "text": "a < 0, b < 0, c > 0."
+      },
+      {
+        "key": "C",
+        "text": "a > 0, b < 0, c > 0."
+      },
+      {
+        "key": "D",
+        "text": "a > 0, b < 0, c < 0. x y O"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-57",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hàm số y = f (x) có đồ thị là đường cong trong hình vẽ. Xét tính đúng, sai của các mệnh đề sau",
+    "statements": [
+      {
+        "id": "a",
+        "text": "f (x) = x2 − 2x − 1.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Phương trình f (x) = −2 có đúng hai nghiệm thực phân biệt.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Hàm số đã cho đồng biến trên (1; +∞).",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Giá trị lớn nhất của hàm số là −2. x y O 1 2 1 −2",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng khẳng định theo định nghĩa và công thức tương ứng.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-58",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "short_answer",
+    "level": "VD",
+    "stem": "Có bao nhiêu giá trị nguyên âm của tham số m để hàm số y = √x2 − 2mx − 2m + 3 có tập xác định là R. KQ: PHẦN 4. Tự luận.",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện các bước giải toán chi tiết để tìm ra đáp số.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-59",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đồ thị hàm số bậc hai y = f (x) tiếp xúc với trục hoành như hình vẽ. Dấu tam thức bậc hai f (x) đúng với mọi giá trị của x là",
+    "options": [
+      {
+        "key": "A",
+        "text": "f (x) = 0."
+      },
+      {
+        "key": "B",
+        "text": "f (x) > 0."
+      },
+      {
+        "key": "C",
+        "text": "f (x) ≥ 0."
+      },
+      {
+        "key": "D",
+        "text": "f (x) ≤ 0. x y O"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-60",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nếu hàm số y = ax2 + bx + c có a > 0; b > 0 và c < 0 thì đồ thị hàm số của nó có dạng",
+    "options": [
+      {
+        "key": "A",
+        "text": "x y O ."
+      },
+      {
+        "key": "B",
+        "text": "x y O ."
+      },
+      {
+        "key": "C",
+        "text": "x y O ."
+      },
+      {
+        "key": "D",
+        "text": "x y O ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-61",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Xét sự biến thiên của hàm số f (x) = 3 x trên khoảng (0; +∞). Khẳng định nào sau đây đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hàm số nghịch biến trên khoảng (0; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "Hàm số vừa đồng biến, vừa nghịch biến trên khoảng (0; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "Hàm số đồng biến trên khoảng (0; +∞)."
+      },
+      {
+        "key": "D",
+        "text": "Hàm số không đồng biến, không nghịch biến trên khoảng (0; +∞). \u0014 GV: NGÔ ĐỨC TÀI / Trang 28/162  p Bộ Đề Ôn Theo Chương HK2 - Toán 10"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
+  },
+  {
+    "id": "bq-10-c6-hk2-1789364904692-62",
+    "gradeNumber": 10,
+    "chapterId": "c6-ham-so-bac-hai-do-thi",
+    "chapterName": "Chương VI: Hàm số, đồ thị và ứng dụng",
+    "lessonTitle": "Bài 15: Hàm số bậc hai và đồ thị",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tam thức bậc hai f (x) = 2x2 + 2x + 5 nhận giá trị dương khi và chỉ khi",
+    "options": [
+      {
+        "key": "A",
+        "text": "x ∈ (0; +∞)."
+      },
+      {
+        "key": "B",
+        "text": "x ∈ (−2; +∞)."
+      },
+      {
+        "key": "C",
+        "text": "x ∈ R."
+      },
+      {
+        "key": "D",
+        "text": "x ∈ (−∞; 0)."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
+    "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
+    "createdAt": "2026-09-14T05:48:24.692Z"
   }
 ]

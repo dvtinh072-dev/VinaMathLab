@@ -659,5 +659,1975 @@
     "id": "bq-10-c8-747",
     "gradeNumber": 10,
     "createdAt": "2026-09-14T05:01:55.265Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-mfvl",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trên giá sách có 8 quyển sách Văn và 10 quyển sách Toán, các quyển này đôi một phân biệt. Hỏi có bao nhiêu cách chọn ra một quyển sách trên giá?",
+    "options": [
+      {
+        "key": "A",
+        "text": "80."
+      },
+      {
+        "key": "B",
+        "text": "10."
+      },
+      {
+        "key": "C",
+        "text": "8."
+      },
+      {
+        "key": "D",
+        "text": "18."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-nll1",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Lớp 10A có 25 học sinh nam và 20 học sinh nữ. Hỏi có bao nhiêu cách chọn ra 1 học sinh tham gia cuộc thi ‘‘RING THE GOLDEN BELL”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "20."
+      },
+      {
+        "key": "B",
+        "text": "45."
+      },
+      {
+        "key": "C",
+        "text": "25."
+      },
+      {
+        "key": "D",
+        "text": "500."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-3zx7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn một học sinh từ một nhóm gồm5 học sinh nam và6 học sinh nữ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "11 ."
+      },
+      {
+        "key": "B",
+        "text": "30 ."
+      },
+      {
+        "key": "C",
+        "text": "6 ."
+      },
+      {
+        "key": "D",
+        "text": "5 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-93ja",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn một học sinh từ một nhóm gồm 6 học sinh nam và 9 học sinh nữ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "9 ."
+      },
+      {
+        "key": "B",
+        "text": "54 ."
+      },
+      {
+        "key": "C",
+        "text": "15 ."
+      },
+      {
+        "key": "D",
+        "text": "6 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-ao15",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn một học sinh từ một nhóm5 học sinh nam và7 học sinh nữ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7 ."
+      },
+      {
+        "key": "B",
+        "text": "12 ."
+      },
+      {
+        "key": "C",
+        "text": "5 ."
+      },
+      {
+        "key": "D",
+        "text": "35 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-ge77",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn một học sinh từ một nhóm gồm 7 học sinh nam và 8 học sinh nữ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "8 ."
+      },
+      {
+        "key": "B",
+        "text": "15 ."
+      },
+      {
+        "key": "C",
+        "text": "56 ."
+      },
+      {
+        "key": "D",
+        "text": "7 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-mmyl",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn một quả cam từ một giỏ đựng trái cây, biết trong giỏ có 5 quả cam sành và 7 quả cam canh?",
+    "options": [
+      {
+        "key": "A",
+        "text": "35 ."
+      },
+      {
+        "key": "B",
+        "text": "7 ."
+      },
+      {
+        "key": "C",
+        "text": "12 ."
+      },
+      {
+        "key": "D",
+        "text": "5 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-jupm",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ thành phố A đến thành phố B có 5 con đường đi, từ thành phố B đến thành phố C có 6 con đường đi. Có bao nhiêu cách đi từ thành phố A đến thành phố C, biết phải đi qua thành phố B?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 5 ."
+      },
+      {
+        "key": "B",
+        "text": "30 ."
+      },
+      {
+        "key": "C",
+        "text": "11 ."
+      },
+      {
+        "key": "D",
+        "text": "5!.6! ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-gecz",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong một hộp bút gồm có 8 cây bút bi, 6 cây bút chì và 10 cây bút màu. Hỏi có bao nhiêu cách chọn ra một cây bút từ hộp bút đó?",
+    "options": [
+      {
+        "key": "A",
+        "text": "480."
+      },
+      {
+        "key": "B",
+        "text": "24."
+      },
+      {
+        "key": "C",
+        "text": "48."
+      },
+      {
+        "key": "D",
+        "text": "60."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-qw1g",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một nhóm có 5 bạn giỏi Toán, 3 bạn giỏi Văn và 1 bạn giỏi cả Toán lẫn Văn. Hỏi nhóm đó có bao nhiêu bạn giỏi Toán hoặc Văn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7."
+      },
+      {
+        "key": "B",
+        "text": "8."
+      },
+      {
+        "key": "C",
+        "text": "9."
+      },
+      {
+        "key": "D",
+        "text": "6."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-z9pz",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một lớp có25 học sinh nam và20 học sinh nữ. Có bao nhiêu cách chọn ra một học sinh làm lớp trưởng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "25 ."
+      },
+      {
+        "key": "B",
+        "text": "45 ."
+      },
+      {
+        "key": "C",
+        "text": "20 ."
+      },
+      {
+        "key": "D",
+        "text": "500 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-i1jz",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một công việc được hoàn thành bằng cách chọn một trong hai hành động. Hành động thứ nhất cóm cách thực hiện và hành động thứ hai cón cách thực hiện. Số cách hoàn thành công việc đã cho bằng: BÀI TẬP TRẮC NGHIỆM  GV. Phan Nhật Linh - SĐT: 0817 098 716 5 Chương 8. ĐẠI SỐ TỔ HỢP TOÁN 10 – CHƯƠNG TRÌNH MỚI",
+    "options": [
+      {
+        "key": "A",
+        "text": "n m ."
+      },
+      {
+        "key": "B",
+        "text": ". m n ."
+      },
+      {
+        "key": "C",
+        "text": "m n + ."
+      },
+      {
+        "key": "D",
+        "text": "m n ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-65ev",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Giả sử bạn muốn mua một áo sơ mi cỡ 39 hoặc cỡ 40. Áo cỡ 39 có 5 màu khác nhau, áo cỡ 40 có 4 màu khác nhau. Hỏi có bao nhiêu sự lựa chọn (về màu áo và cỡ áo).",
+    "options": [
+      {
+        "key": "A",
+        "text": "9 ."
+      },
+      {
+        "key": "B",
+        "text": "5 ."
+      },
+      {
+        "key": "C",
+        "text": "4 ."
+      },
+      {
+        "key": "D",
+        "text": "1 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-v21d",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một lớp có 39 bạn nam và 10 bạn nữ. Hỏi có bao nhiêu cách chọn một bạn phụ trách quỹ lớp?",
+    "options": [
+      {
+        "key": "A",
+        "text": "49 ."
+      },
+      {
+        "key": "B",
+        "text": "10 ."
+      },
+      {
+        "key": "C",
+        "text": "390 ."
+      },
+      {
+        "key": "D",
+        "text": "39 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-qmk8",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một lớp 10A có 16 nam và 28 nữ. Có bao nhiêu cách chọn ra một học sinh lớp 10A để tham gia thi an toàn giao thong do trường tổ chức?",
+    "options": [
+      {
+        "key": "A",
+        "text": "28."
+      },
+      {
+        "key": "B",
+        "text": "16."
+      },
+      {
+        "key": "C",
+        "text": "44."
+      },
+      {
+        "key": "D",
+        "text": "22."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-kdy0",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nếu một công việc được chia thành hai trường hợp để thực hiện, trường hợp thứ nhất cóm cách thực hiện, trường hợp thứ hai cón cách thực hiện và mỗi cách thực hiện ở trường hợp này không trùng với bất kì cách thực hiện nào ở trường hợp kia. Khi đó số cách thực hiện công việc nói trên là:",
+    "options": [
+      {
+        "key": "A",
+        "text": ". m n ."
+      },
+      {
+        "key": "B",
+        "text": "m n + ."
+      },
+      {
+        "key": "C",
+        "text": "! ! m n +"
+      },
+      {
+        "key": "D",
+        "text": "!. ! m n ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-grzx",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một người có4 cái quần khác nhau,6 cái áo khác nhau,3 chiếc cà vạt khác nhau. Để chọn một cái quần hoặc một cái áo hoặc một cái cà vạt thì số cách chọn khác nhau là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "13."
+      },
+      {
+        "key": "B",
+        "text": "72 ."
+      },
+      {
+        "key": "C",
+        "text": "12 ."
+      },
+      {
+        "key": "D",
+        "text": "30 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-g4fd",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trên bàn có8 cây bút chì khác nhau,6 cây bút bi khác nhau và10 cuốn tập khác nhau. Một học sinh muốn chọn một đồ vật duy nhất hoặc một cây bút chì hoặc một cây bút bi hoặc một cuốn tập thì số cách chọn khác nhau là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "480 ."
+      },
+      {
+        "key": "B",
+        "text": "24."
+      },
+      {
+        "key": "C",
+        "text": "48 ."
+      },
+      {
+        "key": "D",
+        "text": "60 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-mpft",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong một trường THPT, khối11 có280 học sinh nam và325 học sinh nữ. Nhà trường cần chọn một học sinh ở khối11 đi dự dạ hội của học sinh thành phố. Hỏi nhà trường có bao nhiêu cách chọn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "45."
+      },
+      {
+        "key": "B",
+        "text": "280."
+      },
+      {
+        "key": "C",
+        "text": "325."
+      },
+      {
+        "key": "D",
+        "text": "605."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788752-c53z",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một người có5 cái quần khác nhau,7 cái áo khác nhau,9 chiếc cà vạt khác nhau. Để chọn một cái quần hoặc một cái áo hoặc một cái cà vạt thì số cách chọn khác nhau là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "12 ."
+      },
+      {
+        "key": "B",
+        "text": "315 ."
+      },
+      {
+        "key": "C",
+        "text": "6615 ."
+      },
+      {
+        "key": "D",
+        "text": "21 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.752Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-dzeb",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu số nguyên dương không lớn hơn2020 mà chia hết cho2 hoặc cho3 ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1684"
+      },
+      {
+        "key": "B",
+        "text": "1683"
+      },
+      {
+        "key": "C",
+        "text": "1347 ."
+      },
+      {
+        "key": "D",
+        "text": "1348 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-vdx9",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trên giá sách có 6 quyển sách Toán khác nhau, 7 quyển sách Văn khác nhau và 8 quyển sách Tiếng Anh khác nhau. Có bao nhiêu cách lấy 2 quyển sách thuộc 2 môn khác nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "146 ."
+      },
+      {
+        "key": "B",
+        "text": "336 ."
+      },
+      {
+        "key": "C",
+        "text": "420 ."
+      },
+      {
+        "key": "D",
+        "text": "210 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-km5a",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một trường trung học phổ thông có26 học sinh giỏi khối12 và43 học sinh giỏi khối11 ,59 học sinh giỏi khối10 . Vậy nhà trường có bao nhiêu cách chọn1 học sinh giỏi để đi dự trại hè?",
+    "options": [
+      {
+        "key": "A",
+        "text": "23"
+      },
+      {
+        "key": "B",
+        "text": "128"
+      },
+      {
+        "key": "C",
+        "text": "43"
+      },
+      {
+        "key": "D",
+        "text": "69"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-wdzp",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tổ I có 6 học sinh nam, 4 học sinh nữ; tổ II có 5 nam, 5 nữ. Có bao nhiêu cách chọn mỗi tổ một học  GV. Phan Nhật Linh - SĐT: 0817 098 716 6 Chương 8. ĐẠI SỐ TỔ HỢP TOÁN 10 – CHƯƠNG TRÌNH MỚI sinh lên bảng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "100."
+      },
+      {
+        "key": "B",
+        "text": "600."
+      },
+      {
+        "key": "C",
+        "text": "20."
+      },
+      {
+        "key": "D",
+        "text": "72."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-2891",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp có chứa12 bi đỏ,9 bi xanh và8 bi vàng. Số cách chọn được một bi trong hộp đó là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "96 ."
+      },
+      {
+        "key": "B",
+        "text": "864 ."
+      },
+      {
+        "key": "C",
+        "text": "108 ."
+      },
+      {
+        "key": "D",
+        "text": "29 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-6pr0",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một bó hoa có6 hoa hồng trắng,7 hoa hoa hồng đỏ và8 hoa hồng vàng. Hỏi có mấy cách chọn lấy một bông hoa.",
+    "options": [
+      {
+        "key": "A",
+        "text": "336 ."
+      },
+      {
+        "key": "B",
+        "text": "48 ."
+      },
+      {
+        "key": "C",
+        "text": "42 ."
+      },
+      {
+        "key": "D",
+        "text": "21 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-iszt",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong kì thi đánh giá năng lực năm 2024 của Đại học Quốc Gia Hà Nội, tháng 3 có 2 ca thi khác nhau, tháng 5 có 3 ca thi khác nhau. An đăng kí tham gia thi tháng 3 và tháng 5, mỗi tháng chỉ chọn một ca. Hỏi An có bao nhiêu cách chọn",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 ."
+      },
+      {
+        "key": "B",
+        "text": "15 ."
+      },
+      {
+        "key": "C",
+        "text": "9 ."
+      },
+      {
+        "key": "D",
+        "text": "10 . PHẦN II. Câu trắc nghiệm đúng sai. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-tf-1789364788753-donf",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong một cuộc thi tìm hiểu về đất nước Việt Nam, ban tổ chức công bố danh sách các đề tài bao gồm: 8 đề tài về lịch sử, 7 đề tài về thiên nhiên, 10 đề tài về con người và 6 đề tài về văn hóa. Mỗi thí sinh được quyền chọn một đề tài. Xét tính đúng sai của các khẳng định sau:",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Chọn đề tài về lịch sử có 8 cách.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Chọn đề tài về thiên nhiên có 10 cách.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Chọn đề tài về văn hóa hoặc con người có 17 cách.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Mỗi thí sinh có 31 cách chọn.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-tf-1789364788753-tgug",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một cửa hàng có7 bông hoa Ly,15 bông hoa Hồng và6 bông hoa Lan. Bạn Nam muốn mua 1 số bông hoa từ cửa hàng đó. Xét tính đúng sai của các khẳng định sau:",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Có 28 cách chọn mua 1 bông hoa từ cửa hàng.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Có 630 cách chọn mua một bó gồm 3 bông khác loại từ cửa hàng.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Có 2766 cách chọn mua 2 bông khác loại từ cửa hàng.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Có 13 cách chọn mua 1 bông Hồng từ cửa hàng.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-tf-1789364788753-m55z",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong một khoảng thời gian làa ngày, tại thị trấn Quảng Phú, Đài khí tượng thủy văn đã thống kê được: Số ngày mưa: 10 ngày; Số ngày có gió: 8 ngày; Số ngày lạnh: 7 ngày; Số ngày mưa và gió: 5 ngày; Số ngày mưa và lạnh: 4 ngày; Số ngày lạnh và có gió: 4 ngày; Số ngày mưa, lạnh và có gió: 1 ngày. Xét tính đúng sai của các khẳng định sau:",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Số ngày mưa và lạnh là 11.",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Số ngày chỉ lạnh hoặc chỉ gió là 4.",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Số ngày có ít nhất 2 trong 3 đặc điểm: mưa, gió, lạnh là 11.",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Giá trị củaa là 13.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-tf-1789364788753-19rq",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một chiếc hộp đựng các viên bi khác nhau, trong đó có4 viên bi màu đỏ,3 viên bi màu xanh và2 viên bi màu vàng. Xét tính đúng sai của các khẳng định sau:",
+    "statements": [
+      {
+        "id": "a",
+        "text": "Số cách chọn ra1 viên bi có màu đỏ là4 .",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Số cách chọn ra1 viên bi không có màu đỏ hoặc màu vàng là6 .",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Số cách chọn ra1 viên bi có màu đỏ hoặc màu xanh là12 .",
+        "isCorrect": true
+      },
+      {
+        "id": "d",
+        "text": "Số cách chọn ra1 viên bi có màu đỏ hoặc màu xanh hoặc màu vàng là9 .  GV. Phan Nhật Linh - SĐT: 0817 098 716 7 Chương 8. ĐẠI SỐ TỔ H",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kiểm tra từng mệnh đề theo định nghĩa và công thức của bài học.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-sa-1789364788753-rxy0",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Trong một trường THPT, khối 10 có365 học sinh nam và315 học sinh nữ. Nhà trường cần chọn một học sinh ở khối 10 đi dự trại hè. Hỏi nhà trường có bao nhiêu cách chọn?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-sa-1789364788753-atca",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Trong một trường THPT, khối 10 có240 học sinh nam và315 học sinh nữ. Nhà trường cần chọn một học sinh ở khối10 đi dự khai mạc hội thi Robocon dành cho học sinh thành phố. Hỏi nhà trường có bao nhiêu cách chọn?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-sa-1789364788753-qkbt",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Một trường THPT được cử một học sinh đi dự trại hè toàn quốc. Nhà trường quyết định chọn một học sinh giỏi từ lớp 10A hoặc lớp 11A. Hỏi nhà trường có bao nhiêu cách chọn, nếu biết rằng lớp 10A có 15 học sinh giỏi và lớp 11A có 18 học sinh giỏi?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-sa-1789364788753-6bsf",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "short_answer",
+    "level": "NB",
+    "stem": "Trong trường THPT, khối 10 có160 học sinh đạt học lực giỏi môn Toán,140 học sinh đạt học lực giỏi môn Ngoại ngữ,50 học sinh đạt học lực giỏi cả 2 môn Toán, Tiếng Anh và200 học sinh không đạt giỏi môn nào trong 2 môn Toán, Ngoại ngữ. Hỏi khối 10 trường đó có bao nhiêu học sinh?",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-sa-1789364788753-due3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một trường THPT được cử một học sinh đi dự trại hè toàn quốc. Nhà trường quyết định chọn một học sinh giỏi từ lớp 10A hoặc lớp 11A. Hỏi nhà trường có bao nhiêu cách chọn, nếu biết rằng lớp 10A có 15 học sinh giỏi và lớp 11A có 18 học sinh giỏi? -----------------HẾT-----------------  GV. Phan Nhật Linh - SĐT: 0817 098 716 1 Chương 8. ĐẠI SỐ TỔ HỢP TOÁN 10 – CHƯƠNG TRÌNH MỚI Dạng 2: Quy tắc nhân Phương pháp: Để đếm số cách lựa chọn để thực hiện một công việcA bằng quy tắc nhân, ta thực hiện các bước như sau: • Bước 1: Phân tích xem có bao nhiêu công đoạn liên tiếp cần phải tiến hành để thực hiện công việcA (giả sửA chỉ hoàn thành sau khi tất cả các công đoạn 1 2 , ,..., n A A A hoàn thành). • Bước 2: Đếm số cách chọn 1 2 , ,..., n x x x trong các công đoạn 1 2 , ,..., n A A A . • Bước 3: Dùng quy tắc nhân ta tính được số cách lựa chọn để thực hiện công việcA là: 1 2 . . . n x x x x =    . Bài tập 1: Một thùng trong đó có12 hộp đựng bút màu đỏ,18 hộp đựng bút màu xanh (có kích thước đôi một khác nhau). Hỏi có bao nhiêu cách để chọn được 2 hộp bút khác màu? Bài tập 2: Một người có 6 cái áo khác nhau, 5 cái quần khác nhau và 4 cái cà vạt khác nhau. Hỏi có bao nhiêu cách chọn một bộ đồng phục gồm áo, quần và cà vạt? Bài tập 3: Thực hiện các yêu cầu sau: a) Có bao nhiêu số tự nhiên có bốn chữ số? b) Có bao nhiêu số tự nhiên có bốn chữ số khác nhau được lập từ các chữ số 1; 2; 3; 4; 5; 6; 7; 8; 9 ? Bài tập 4: Có bao nhiêu số điện thoại gồm 10 chữ số, trong đó hai số đầu là 09? Bài tập 5: Có thể lập được bao nhiêu số tự nhiên có 3 chữ số lấy từ tập hợp   0;1; 2; 3; 4; 5 A = mà số đó chia hết cho 5? Bài tập 6: Tủ lạnh nhà bạn An có 20 hộp sữa và 15 cái bánh quy, trong đó có 12 hộp sữa có hương dâu và 8 hộp sữa sô cô la, 8 cái bánh quy hương sô cô la và 7 cái bánh quy hương dâu. Bạn An đang cần lựa 1 món bánh sô cô la và 1 hộp sữa dâu để ăn bữa chiều. Hỏi bạn An có bao nhiêu cách chọn? Bài tập 7: Một thùng trong đó có19 hộp đựng bút màu đỏ,15 hộp đựng bút màu xanh. Số cách khác nhau để chọn được đồng thời một hộp màu đỏ, một hộp màu xanh là Bài tập 8: Cho tập hợp   1;2;4;5;7;8 . A = Có bao nhiêu số tự nhiên gồm 4 chữ số được lập từA sao cho các chữ số khác nhau từng đôi một. Bài tập 9: Cho tập hợp   0;1;2;3;4;5;6 . A = Có bao nhiêu số tự nhiên gồm 4 chữ số được lập từA sao cho các chữ số khác nhau từng đôi một và là số chẵn. Bài tập 10: Cho tập hợp   0;1;2;3;4;5;6;7 . A = Có bao nhiêu số tự nhiên gồm 4 chữ s",
+    "correctAnswer": "1",
+    "explanation": "Thực hiện biến đổi đại số và tính toán theo yêu cầu của bài toán.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-9l07",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có 3 kiểu đồng hồ đeo tay (vuông, tròn, elip) và 4 kiểu dây (kim loại, da, vải và nhựa). Hỏi có bao nhiêu cách chọn một chiếc đồng hồ gồm một mặt và một dây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4 ."
+      },
+      {
+        "key": "B",
+        "text": "7 ."
+      },
+      {
+        "key": "C",
+        "text": "12."
+      },
+      {
+        "key": "D",
+        "text": "16 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-a8vw",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một người có 4 cái quần, 6 cái áo, 3 chiếc cà vạt. Để chọn mỗi thứ một món thì có bao nhiêu cách chọn bộ \" quần-áo-cà vạt\" khác nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "13."
+      },
+      {
+        "key": "B",
+        "text": "72."
+      },
+      {
+        "key": "C",
+        "text": "12."
+      },
+      {
+        "key": "D",
+        "text": "30."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-4wo3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một thùng trong đó có 12 hộp đựng bút màu đỏ, 18 hộp đựng bút màu xanh. Số cách khác nhau để chọn được đồng thời một hộp màu đỏ, một hộp màu xanh là?",
+    "options": [
+      {
+        "key": "A",
+        "text": "13 ."
+      },
+      {
+        "key": "B",
+        "text": "12 ."
+      },
+      {
+        "key": "C",
+        "text": "18 ."
+      },
+      {
+        "key": "D",
+        "text": "216."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-rf79",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trên bàn có 8 cây bút chì khác nhau, 6 cây bút bi khác nhau và 10 cuốn tập khác nhau. Số cách khác nhau để chọn được đồng thời một cây bút chì, một cây bút bi và một cuốn tập.",
+    "options": [
+      {
+        "key": "A",
+        "text": "24 ."
+      },
+      {
+        "key": "B",
+        "text": "48 ."
+      },
+      {
+        "key": "C",
+        "text": "480."
+      },
+      {
+        "key": "D",
+        "text": "60 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-sxdf",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một bó có 5 hoa hồng trắng, 6 hoa hồng đỏ và 7 hoa hồng vàng. Hỏi có mấy cách chọn lấy ba bông hoa có đủ cả ba màu.",
+    "options": [
+      {
+        "key": "A",
+        "text": "240 ."
+      },
+      {
+        "key": "B",
+        "text": "210."
+      },
+      {
+        "key": "C",
+        "text": "18 ."
+      },
+      {
+        "key": "D",
+        "text": "120 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-xjg7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một người vào cửa hàng ăn, người đó chọn thực đơn gồm một món ăn trong năm món, một loại quả tráng miệng trong năm loại quả và một nước uống trong ba loại nước uống. Có bao nhiêu cách chọn thực đơn.",
+    "options": [
+      {
+        "key": "A",
+        "text": "25 ."
+      },
+      {
+        "key": "B",
+        "text": "75."
+      },
+      {
+        "key": "C",
+        "text": "100 ."
+      },
+      {
+        "key": "D",
+        "text": "15 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-you8",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong một trường THPT, khối 11 có 280 học sinh nam và 325 học sinh nữ. Nhà trường cần chọn hai học sinh trong đó có một nam và một nữ đi dự trại hè của học sinh thành phố. Hỏi nhà trường có bao nhiêu cách chọn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "910000."
+      },
+      {
+        "key": "B",
+        "text": "91000."
+      },
+      {
+        "key": "C",
+        "text": "910."
+      },
+      {
+        "key": "D",
+        "text": "625."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-gbu3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một đội học sinh giỏi của trường THPT, gồm 5 học sinh khối 12, 4 học sinh khối 11, 3 học sinh khối 10. Số cách chọn ba học sinh trong đó mồi khối có một em?",
+    "options": [
+      {
+        "key": "A",
+        "text": "12."
+      },
+      {
+        "key": "B",
+        "text": "220."
+      },
+      {
+        "key": "C",
+        "text": "60."
+      },
+      {
+        "key": "D",
+        "text": "3."
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-po00",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có 10 cặp vợ chồng đi dự tiệc. Tổng số cách chọn một người đàn ông và một người đàn bà trong bữa tiệc phát biểu ý kiến sao cho hai người đó không là vợ chồng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "100."
+      },
+      {
+        "key": "B",
+        "text": "91."
+      },
+      {
+        "key": "C",
+        "text": "Tổng số cách chọn một người đàn ông và một người đàn bà trong bữa tiệc phát biểu ý kiến sao cho hai người đó không là vợ chồng? A. 100. B. 91. C. 10."
+      },
+      {
+        "key": "D",
+        "text": "90."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-f1m5",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "An muốn qua nhà Bình để cùng Bình đến chơi nhà Cường. Từ nhà An đến nhà Bình có 4 con đường đi, từ nhà Bình tới nhà Cường có 6 con đường đi. Hỏi An có bao nhiêu cách chọn đường đi đến nhà Cường?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6."
+      },
+      {
+        "key": "B",
+        "text": "4."
+      },
+      {
+        "key": "C",
+        "text": "10."
+      },
+      {
+        "key": "D",
+        "text": "24."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-654v",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Các thành phốA ,B ,C ,D được nổi với nhau bởi các con đường như hình vẽ. Hỏi có bao nhiêu cách đi từA đếnD mà quaB vàC chỉ một lần?",
+    "options": [
+      {
+        "key": "A",
+        "text": "9."
+      },
+      {
+        "key": "B",
+        "text": "10."
+      },
+      {
+        "key": "C",
+        "text": "18."
+      },
+      {
+        "key": "D",
+        "text": "24. BÀI TẬP TRẮC NGHIỆM  GV. Phan Nhật Linh - SĐT: 0817 098 716 3 Chương 8. ĐẠI SỐ TỔ HỢP TOÁN 10 – CHƯƠNG TRÌNH MỚI"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-5zcg",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Các thành phốA ,B ,C ,D được nối với nhau bởi các con đường như hình vẽ. Hỏi có bao nhiêu cách đi từA đếnD rồi quay lạiA ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1296"
+      },
+      {
+        "key": "B",
+        "text": "784"
+      },
+      {
+        "key": "C",
+        "text": "576."
+      },
+      {
+        "key": "D",
+        "text": "324"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-ylaa",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ các chữ số0;1;2;3;4;5 lập được bao nhiêu số tự nhiên có 5 chữ số phân biệt?",
+    "options": [
+      {
+        "key": "A",
+        "text": "720 ."
+      },
+      {
+        "key": "B",
+        "text": "120 ."
+      },
+      {
+        "key": "C",
+        "text": "96 ."
+      },
+      {
+        "key": "D",
+        "text": "600 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-jwj4",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ các chữ số2,3,4,5,6,7 lập được bao nhiêu số tự nhiên có bốn chữ số",
+    "options": [
+      {
+        "key": "A",
+        "text": "1296 ."
+      },
+      {
+        "key": "B",
+        "text": "24 ."
+      },
+      {
+        "key": "C",
+        "text": "360 ."
+      },
+      {
+        "key": "D",
+        "text": "720 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788753-x9td",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bạn Mai có ba cái áo màu khác nhau và hai quần kiểu khác nhau. Hỏi Mai có bao nhiêu cách chọn một bộ quần áo",
+    "options": [
+      {
+        "key": "A",
+        "text": "10."
+      },
+      {
+        "key": "B",
+        "text": "20."
+      },
+      {
+        "key": "C",
+        "text": "6."
+      },
+      {
+        "key": "D",
+        "text": "5."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.753Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-4yfj",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một tổ gồm6 học sinh nam và4 học sinh nữ. Số cách chọn ra2 học sinh gồm1 học sinh nam và1 học sinh nữ từ tổ đó là",
+    "options": [
+      {
+        "key": "A",
+        "text": "10 ."
+      },
+      {
+        "key": "B",
+        "text": "90 ."
+      },
+      {
+        "key": "C",
+        "text": "45 ."
+      },
+      {
+        "key": "D",
+        "text": "24 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-finh",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tập hợp   1;2;3;4;5;6;7;8 A = . Từ tập hợp A có thể lập được bao nhiêu số gồm 8 chữ số đôi một khác nhau sao cho các số này lẻ và không chia hết cho 5?",
+    "options": [
+      {
+        "key": "A",
+        "text": "20100"
+      },
+      {
+        "key": "B",
+        "text": "12260"
+      },
+      {
+        "key": "C",
+        "text": "40320"
+      },
+      {
+        "key": "D",
+        "text": "15120"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-m96b",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Lớp 11A gồm có29 học sinh nữ và14 học sinh nam. Có bao nhiêu cách chọn1 học sinh nam và1 học sinh nữ vào đội văn nghệ của nhà trường?",
+    "options": [
+      {
+        "key": "A",
+        "text": "406 ."
+      },
+      {
+        "key": "B",
+        "text": "29 ."
+      },
+      {
+        "key": "C",
+        "text": "43 ."
+      },
+      {
+        "key": "D",
+        "text": "903 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-oxoj",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho1,2,3,4,5 có thể lập được bao nhiêu số tự nhiên có 5 chữ số?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3125"
+      },
+      {
+        "key": "B",
+        "text": "Đáp án khác"
+      },
+      {
+        "key": "C",
+        "text": "120"
+      },
+      {
+        "key": "D",
+        "text": "96"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-3cq1",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Lớp 12A1 có20 bạn nữ và16 bạn nam. Có bao nhiêu cách chọn một bạn nữ và một bạn nam của lớp 12A1 để tham gia hoạt động ngoại khóa của trường?",
+    "options": [
+      {
+        "key": "A",
+        "text": "630 ."
+      },
+      {
+        "key": "B",
+        "text": "36 ."
+      },
+      {
+        "key": "C",
+        "text": "320 ."
+      },
+      {
+        "key": "D",
+        "text": "1220 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-nnl4",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong một tuần bạnA dự định mỗi ngày đi thăm một người bạn trong 12 người bạn của mình. Hỏi bạnA có thể lập được bao nhiêu kế hoạch đi thăm bạn của mình (thăm một bạn không quá một lần)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3991680."
+      },
+      {
+        "key": "B",
+        "text": "12! ."
+      },
+      {
+        "key": "C",
+        "text": "35831808."
+      },
+      {
+        "key": "D",
+        "text": "7!"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-gbsg",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nhãn mỗi chiếc ghế trong hội trường gồm hai phần: phần đầu là một chữ cái (trong bảng24 chữ cái tiếng Việt), phần thứ hai là một số nguyên dương nhỏ hơn26 . Hỏi có nhiều nhất bao nhiêu chiếc ghế được ghi nhãn khác nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "624."
+      },
+      {
+        "key": "B",
+        "text": "48."
+      },
+      {
+        "key": "C",
+        "text": "600."
+      },
+      {
+        "key": "D",
+        "text": "26."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-ommg",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Biển số xe máy của tỉnhA (nếu không kể mã số tỉnh) có6 kí tự, trong đó kí tự ở vị trí đầu tiên là một chữ cái (trong bảng26 cái tiếng Anh), kí tự ở vị trí thứ hai là một chữ số thuộc tập   1;2; ;9  , mỗi kí tự ở bốn vị trí tiếp theo là một chữ số thuộc tập  0;1;2; ;9  . Hỏi nếu chỉ dùng một mã số tỉnh thì tỉnhA có thể làm được nhiều nhất bao nhiêu biển số xe máy khác nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2340000."
+      },
+      {
+        "key": "B",
+        "text": "234000."
+      },
+      {
+        "key": "C",
+        "text": "75."
+      },
+      {
+        "key": "D",
+        "text": "2600000."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-wuv0",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Số253125000 có bao nhiêu ước số tự nhiên?",
+    "options": [
+      {
+        "key": "A",
+        "text": "160 ."
+      },
+      {
+        "key": "B",
+        "text": "240 ."
+      },
+      {
+        "key": "C",
+        "text": "180."
+      },
+      {
+        "key": "D",
+        "text": "120 .  GV. Phan Nhật Linh - SĐT: 0817 098 716 4 Chương 8. ĐẠI SỐ TỔ HỢP TOÁN 10 – CHƯƠNG TRÌNH MỚI"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-2k69",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ các chữ số1,5,6,7 có thể lập được bao nhiêu chữ số tự nhiên có4 chữ số (không nhất thiết phải khác nhau)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "324 ."
+      },
+      {
+        "key": "B",
+        "text": "256."
+      },
+      {
+        "key": "C",
+        "text": "248 ."
+      },
+      {
+        "key": "D",
+        "text": "124 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-abfl",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ các chữ số1,5,6,7 có thể lập được bao nhiêu chữ số tự nhiên có4 chữ số khác nhau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "36."
+      },
+      {
+        "key": "B",
+        "text": "24."
+      },
+      {
+        "key": "C",
+        "text": "20."
+      },
+      {
+        "key": "D",
+        "text": "14."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-svbw",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu số tự nhiên có hai chữ số mà hai chữ số đều chẵn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "99."
+      },
+      {
+        "key": "B",
+        "text": "50 ."
+      },
+      {
+        "key": "C",
+        "text": "20."
+      },
+      {
+        "key": "D",
+        "text": "10 ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-mc-1789364788754-6mx7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Từ các chữ số1,2,3,4,5,6 có thể lập được bao nhiêu số tự nhiên bé hơn 100?",
+    "options": [
+      {
+        "key": "A",
+        "text": "36 ."
+      },
+      {
+        "key": "B",
+        "text": "62 ."
+      },
+      {
+        "key": "C",
+        "text": "54 ."
+      },
+      {
+        "key": "D",
+        "text": "42."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
+    "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
+    "createdAt": "2026-09-14T05:46:28.754Z"
   }
 ]

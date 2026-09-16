@@ -1661,68 +1661,53 @@ export default function GiaoVienPage() {
       {/* ========================================================================= */}
       {activeTeacherTab === "exams" && (
         <div className="space-y-6 animate-in fade-in duration-200">
-          {/* Header Banner */}
-          <div className="p-6 rounded-3xl bg-gradient-to-r from-blue-900/50 via-indigo-900/40 to-slate-900 border border-blue-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl">
-            <div className="space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[11px] font-black uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Số Hóa Đề Thi & Chấm Tự Động</span>
-              </div>
-              <h2 className="text-xl sm:text-2xl font-black text-white">
-                Hệ Thống Đề Kiểm Tra Theo Lớp & Thi Online 2026
-              </h2>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Tải lên đề thi (Word / Text), web tự động chuyển hóa thành dạng bài tập tương tác chuẩn Bộ GD&ĐT (Trắc nghiệm 4 lựa chọn, Đúng/Sai, Trả lời ngắn). Giáo viên xuất link cho học sinh kiểm tra online <strong>không cần cài phần mềm</strong>, chấm tự động và <strong>ghi nhận số lần học sinh thoát/đóng màn hình</strong>.
-              </p>
-            </div>
+          {/* 4 Nút Thao Tác Tạo & Khám Phá Đề Thi Gọn Gàng */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <button
+              onClick={() => setIsBankViewerModalOpen(true)}
+              className="px-4 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 text-white font-black text-xs sm:text-sm transition-all shadow-md shadow-purple-500/20 cursor-pointer flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-purple-400/30"
+            >
+              <BookOpen className="w-4 h-4 text-amber-300 shrink-0" />
+              <span className="truncate">Xem Thử Ngân Hàng Đề (1.197 Câu)</span>
+            </button>
 
-            <div className="flex flex-wrap items-center gap-2.5 shrink-0">
-              <button
-                onClick={() => setIsBankViewerModalOpen(true)}
-                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 text-white font-black text-xs transition-all shadow-lg shadow-purple-500/25 cursor-pointer flex items-center gap-2 shrink-0 hover:scale-[1.02] active:scale-95"
-              >
-                <BookOpen className="w-4 h-4 text-amber-300" />
-                <span>📚 Xem Thử Ngân Hàng Đề (1.197 Câu)</span>
-              </button>
+            <button
+              onClick={() => {
+                setIsBankDrawModalOpen(true);
+                if (assignedClasses.length > 0 && !bankTargetClass) {
+                  setBankTargetClass(assignedClasses[0]);
+                }
+                fetchBankCatalog(10);
+              }}
+              className="px-4 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-md shadow-emerald-500/20 cursor-pointer flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-emerald-400/30"
+            >
+              <Dices className="w-4 h-4 shrink-0" />
+              <span className="truncate">Rút Đề Ngân Hàng (Khối 10)</span>
+            </button>
 
-              <button
-                onClick={() => {
-                  setIsBankDrawModalOpen(true);
-                  if (assignedClasses.length > 0 && !bankTargetClass) {
-                    setBankTargetClass(assignedClasses[0]);
-                  }
-                  fetchBankCatalog(10);
-                }}
-                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 cursor-pointer flex items-center gap-2 shrink-0"
-              >
-                <Dices className="w-4 h-4" />
-                <span>🎲 Rút Đề Từ Ngân Hàng (Khối 10)</span>
-              </button>
+            <button
+              onClick={() => {
+                setIsMatrixModalOpen(true);
+                loadPrebuiltMatrix("matrix-t10-gk1");
+              }}
+              className="px-4 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-md shadow-orange-500/20 cursor-pointer flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-amber-400/30"
+            >
+              <Grid className="w-4 h-4 shrink-0" />
+              <span className="truncate">Tạo Đề Từ Ma Trận</span>
+            </button>
 
-              <button
-                onClick={() => {
-                  setIsMatrixModalOpen(true);
-                  loadPrebuiltMatrix("matrix-t10-gk1");
-                }}
-                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-orange-500/25 cursor-pointer flex items-center gap-2 shrink-0"
-              >
-                <Grid className="w-4 h-4" />
-                <span>Tạo Đề Từ Ma Trận Đề Thi</span>
-              </button>
-
-              <button
-                onClick={() => {
-                  setIsCreateModalOpen(true);
-                  if (assignedClasses.length > 0 && !newExamTargetClass) {
-                    setNewExamTargetClass(assignedClasses[0]);
-                  }
-                }}
-                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white font-black text-xs transition-all shadow-lg shadow-blue-500/30 cursor-pointer flex items-center gap-2 shrink-0"
-              >
-                <PlusCircle className="w-4 h-4" />
-                <span>Tạo Đề Thủ Công / Tải File</span>
-              </button>
-            </div>
+            <button
+              onClick={() => {
+                setIsCreateModalOpen(true);
+                if (assignedClasses.length > 0 && !newExamTargetClass) {
+                  setNewExamTargetClass(assignedClasses[0]);
+                }
+              }}
+              className="px-4 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-black text-xs sm:text-sm transition-all shadow-md shadow-blue-500/25 cursor-pointer flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 border border-blue-400/30"
+            >
+              <PlusCircle className="w-4 h-4 shrink-0" />
+              <span className="truncate">Tạo Đề Thủ Công / Tải File</span>
+            </button>
           </div>
 
           {/* Bộ Lọc Theo Lớp & Thống Kê Nhanh */}

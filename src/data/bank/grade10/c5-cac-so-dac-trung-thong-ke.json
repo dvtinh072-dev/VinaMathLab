@@ -1,533 +1,5 @@
 [
   {
-    "stem": "Viết số quy tròn của mỗi số sau với độ chính xác : ⑴ với độ chính xác ⑵ với độ chính xác ⑶",
-    "explanation": "🖎 Lời giải\n\n⑴  với độ chính xác \n\nSố quy tròn của  với độ chính xác  là .\n\n⑵  với độ chính xác \n\nSố quy tròn của  với độ chính xác  là .\n\n⑶ \n\nSố quy tròn của  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-635",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Dùng máy tinh bỏ túi, viết giá trị gần đúng của các số sau: ⑴ chính xác đến hàng phần nghìn ⑵ chính xác đến hàng phần trăm",
-    "explanation": "🖎 Lời giải\n\n⑴  chính xác đến hàng phần nghìn\n\nGiá trị gần đúng của số  chính xác đến hàng phần nghìn là .\n\n⑵  chính xác đến hàng phần trăm\n\nGiá trị gần đúng của số  chính xác đến hàng phần trăm là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-636",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho số gần đúng với độ chính xác . Hãy viết số quy tròn của số và ước lượng sai số tương đối của số quy tròn đó.",
-    "explanation": "🖎 Lời giải\n\nTa có , nên ta sẽ làm tròn đến hàng phần trăm.\n\nTheo quy tắc làm tròn  là số quy tròn của .\n\nSai số tuyệt đối của số quy tròn là: .\n\nSai số tương đối của số quy tròn là:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-637",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một hằng số quan trọng trong toán học là số có giá trị gần đúng với 12 chữ số thập phân là . ⑴ Giả sử ta lấy giá trị làm giá trị gần đúng của số . Chứng minh sai số tuyệt đối không vượt quá và sai số tương đối không vượt qua . ⑵ Hãy quy tròn đến hàng phần nghìn. ⑶ Tìm số gần đúng của số với độ chính xác .",
-    "explanation": "🖎 Lời giải\n\nTa có: \n\n⑴ Chứng minh sai số tuyệt đối không vượt quá  và sai số tương đối không vượt qua .\n\nSai số tuyệt đối: \n\nSai số tương đối: \n\n⑵ Hãy quy tròn  đến hàng phần nghìn.\n\nSố quy tròn của  đến hàng phần nghìn là: \n\n⑶ Tìm số gần đúng của số  với độ chính xác .\n\nTa có: \n\nDo đó ta sẽ quy tròn số  đến hàng phần triệu là:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-638",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho số gần đúng và . Hãy xác định số quy tròn của và .",
-    "explanation": "🖎 Lời giải\n\nTa quy tròn số  tới hàng nghìn. \n\nVậy số quy của  là: .\n\nTa có: \n\nTa quy tròn số  tới hàng phần nghìn. Vậy số quy của  là: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-639",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Các nhà vật lí sử dụng ba phương pháp đo hằng số Hubble lần lượt cho kết quả như sau: Phương pháp nào chính xác tính theo sai số tương đối?",
-    "explanation": "🖎 Lời giải\n\nTrường hợp : Sai số tương đối: \n\nTrường hợp : Sai số tương đối: \n\nTrường hợp : Sai số tương đối: \n\nVậy phương pháp 3 chính xác theo sai số tương đối.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-640",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Độ dài các cạnh của đám vườn hình chữ nhật là và . Tính diện tích đám vườn.",
-    "explanation": "🖎 Lời giải\n\nTa có  \n\nvà \n\nDo đó diện tích hình chữ nhật là : \n\nNên .",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-641",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho biết số ⑴ Hãy quy tròn đến hàng phần nghìn và ước lượng sai số tuyệt đối. ⑵ Hãy tìm số gần đúng của với độ chính xác .",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy quy tròn  đến hàng phần nghìn và ước lượng sai số tuyệt đối.\n\nSố quy tròn  đến hàng phần nghìn  là .\n\nSai số tuyệt đối \n\n⑵ Hãy tìm số gần đúng của  với độ chính xác .\n\nSố gần đúng của  với độ chính xác .\n\nSố gần đúng của  với độ chính xác  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-642",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chiều dài của một con đường được ghi là . Hãy viết số quy tròn của số gần đúng và ước lượng sai số tương đối của số quy tròn đó.",
-    "explanation": "🖎 Lời giải\n\nSố quy tròn của số gần đúng  là .\n\nSai số tương đối .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-643",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gọi là độ cao của tam giác đều có cạnh bằng . Hãy viết số quy tròn của với độ chính xác .",
-    "explanation": "🖎 Lời giải\n\n là độ cao của tam giác đều có cạnh bằng .\n\nSố quy tròn của  với độ chính xác  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-644",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Học sinh thực hành đo chu kỳ dao động của con lắc đơn bằng đồng hồ bấm giây bằng cách đo thời gian thực hiện một dao động toàn phần. Kết quả 3 lần đo như như sau: Lần đo 1 2 3 Kết quả Tính sai số tương đối của mỗi lần đo. Lần nào có sai số tương đối nhỏ nhất.",
-    "explanation": "🖎 Lời giải\n\nSai số tương đối lần 1: .\n\nSai số tương đối lần 2: .\n\nSai số tương đối lần 3: .\n\nVậy sai số tương đối lần 1 là nhỏ nhất.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-645",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gọi là độ dài đường chéo của hình chữ nhật có chiều dài và chiều rộng .Biết . ⑴ Trong số và thì số nào là số đúng và số nào là số gần đúng với số ⑵ Hãy ước lượng sai số tuyệt đối và sai số tương đối khi dùng số gần đúng ở trên.",
-    "explanation": "🖎 Lời giải\n\n⑴ Trong số  và  thì số nào là số đúng và số nào là số gần đúng với số \n\nTa có độ dài đường chéo hình chữ nhật là  Vậy trong hai số  và  thì số  là số đúng và số  là số gần đúng với số .\n\n⑵ Hãy ước lượng sai số tuyệt đối và sai số tương đối khi dùng số gần đúng ở trên.\n\nSai số tuyệt đối \n\nSai số tương đối .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-646",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "An đo được đường kính của hình tròn đáy của hộp sữa là . An tính được diện tích hình tròn là . Hãy ước lượng sai số tuyệt đối của , biết .",
-    "explanation": "🖎 Lời giải\n\nGọi d là đường kính của hình tròn đáy của hộp sữa khi đó là:\n\n. \n\nBán kính của đường tròn là  .\n\nSố gần đúng của diện tích \n\n.\n\n\n\nSai số tuyệt đối .",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-647",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Nhà sản xuất thép Hoà Phát công bố chiều dài và chiều rộng của một tấm thép hình chữ nhật độ dày lần lượt là và . Hãy tính diện tích tấm thép trên.",
-    "explanation": "🖎 Lời giải\n\nGọi  lần lượt là chiều dài và chiều rộng cuả tấm thép.\n\nTa có ;.\n\n.\n\nVới  là số gần đúng của  và  là số gần đúng của .\n\nKhi đó diện tích gần đúng .\n\nTa có  là số gần đúng của  nên sai số tuyệt đối của số gần đúng .\n\nMà .\n\nVậy diện tích tấm thép là .",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B1-SỐ GẦN ĐÚNG và SAI SỐ-P1.docx",
-    "id": "bq-10-c5-648",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chương 06 A Lý thuyết 1. Bảng số liệu Định nghĩa » Dựa vào các thông tin đã biết và sử dụng mối liên hệ toán học giữa các số liệu, ta có thể phát hiện ra được số liệu không chính xác trong một số trường hợp. ▶ Ví dụ 1. Trong 6 tháng đầu năm, số sản phẩm bán ra mỗi tháng của một của hàng đều tăng khoảng 20% so với tháng trước đó, Biết rắng, trong bảng dưới đây, số sản phẩm bán ra của một tháng bị nhập sai, Hãy tìm tháng đó. Tháng 1 2 3 4 5 6 Số sản phẩm bán ra 145 175 211 256 340 371",
-    "explanation": "Lời giải\n\nTỉ lệ phần trăm tăng thêm của số sản phẩm bán ra mỗi tháng được tính ở bảng sau:\n\nTháng\n\n2\n\n3\n\n4\n\n5\n\n6\n\nTỉ lệ phần trăm tăng thêm so với tháng trước\n\n20,7%\n\n20,6%\n\n21,3%\n\n32,8%\n\n9,1%\n\nTa thấy ti lệ tăng của tháng 5 và tháng 6 đều khác xa 20%, \n\nDo đó trong bảng số liệu đã cho, số sản phẩm của tháng 5 là không chính xác.\n\n▶ Ví dụ 2.\n\nMột đội 20 thợ thủ công được chia đều vào 5 tổ. Trong một ngày, mỗi người thợ làm được 4 hoặc 5 sản phẩm. Cuối ngày, đội trường thống kê lại số sản phẩm mà mỗi tổ làm được ở bảng sau:\n\nTổ\n\n1\n\n2\n\n3\n\n4\n\n5\n\nSản phẩm\n\n17\n\n19\n\n19\n\n21\n\n20\n\nĐội trường đã thống kê đúng chưa? Tại sao?\n\nLời giải\n\nMỗi tổ có 20: 5 = 4 người. Trong một ngày, mỗi người thợ làm được 4 hoặc 5 sản phẩm nên mỗi tổ làm được tử 16 đến 20 sản phẩm.\n\nDo đó, bảng trên ghi Tố 4 làm được 21 sản phẩm là không chính xác.\n\nVậy đội trường thống kê chưa đúng.\n\n\n\n2. Biểu đồ\n\n▶ Ví dụ 3.\n\nLượng điện sinh hoạt trong tháng 1/2O21 của các 140000 hộ gia đình thuộc Khu A (60 hộ), Khu B (100 hộ) 120000 và Khu C (120 hộ) được biểu diễn ở biểu đồ bên. \n\n\n\nHãy cho biết các phát biểu sau là đúng hay sai: \n\n⑴ Mỗi khu đều tiêu thụ trên 6000 kWh. \n\n⑵ Trung binh mỗi hộ ở Khu C sử dụng số điện gấp hai lần mỗi hộ ở Khu A.\n\nLời giải\n\nNhìn vào biểu đồ ta thấy mỗi khu đều tiêu thụ trên 6000 kWh nên khẳng định ở câu ⑴\n\nlà đúng.\n\nMặc dù lượng điện tiêu thụ ở Khu C gần gấp hai lần lượng điện tiêu thụ ở Khu A nhưng số hộ ở Khu C lại gấp hai lần số hộ Khu A. Do đó khẳng định ở câu ⑵ là sai.\n\n\n\n\n\nB\n\nCác dạng bài tập",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-650",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mẫu số liệu dưới đây: Khối lượng 30 củ khoai tây thu hoạch ở nông trường T (đơn vị: g) 90 73 88 99 100 102 101 96 79 93 81 94 96 93 95 82 90 106 103 116 109 108 112 87 74 91 84 97 85 92 Với các lớp: , , , , . ⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? ⑵ Lập bảng phân bố tần số, tần suất. Nhận xét. ⑶ Vẽ biểu đồ tần số, tần suất.",
-    "explanation": "🖎 Lời giải\n\n⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? \n\n Dấu hiệu điều tra: Khối lượng khoai tây.\n\n Đơn vị điều tra: 1 củ khoai tây.\n\n Kích thước mẫu: 30\n\n⑵ Lập bảng phân bố tần số, tần suất. Nhận xét.\n\n Bảng phân bố tần số - tần suất:\n\nLớp\n\nGiá trị trung gian\n\nTần số\n\nTần suất (%)\n\n\n\n75\n\n3\n\n10\n\n\n\n85\n\n6\n\n20\n\n\n\n95\n\n12\n\n40\n\n\n\n105\n\n6\n\n20\n\n\n\n115\n\n3\n\n10\n\n⑶ Vẽ biểu đồ tần số, tần suất.\n\n Biểu đồ tần số\n\n\n\n Biểu đồ tần suất",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-651",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mẫu số liệu dưới đây: Chiều cao của 15 cây bạch đàn (đơn vị: m) 6,6 7,5 8,2 8,2 7,8 7,9 9,0 8,9 8,2 7,2 7,5 8,3 7,4 8,7 7,7 7,0 9,4 8,7 8,0 7,7 7,8 8,3 8,6 8,1 8,1 9,5 6,9 8,0 7,6 7,9 7,3 8,5 8,4 8,0 8,8 Với các lớp: , , , , , ⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? ⑵ Lập bảng phân bố tần số, tần suất. Nhận xét. ⑶ Vẽ biểu đồ tần số, tần suất.",
-    "explanation": "🖎 Lời giải\n\n⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? \n\n Dấu hiệu điều tra: Chiều cao cây bạch đàn.\n\n Đơn vị điều tra: 1 cây bạch đàn.\n\n Kích thước mẫu: 35\n\n⑵ Lập bảng phân bố tần số, tần suất. Nhận xét.\n\n Bảng phân bố tần số và tần suất:\n\nLớp\n\nGiá trị trung gian\n\nTần số\n\nTần suất (%)\n\n\n\n6,75\n\n2\n\n5,7\n\n\n\n7,25\n\n4\n\n11,4\n\n\n\n7,75\n\n9\n\n25,7\n\n\n\n8,25\n\n11\n\n31,4\n\n\n\n8,75\n\n6\n\n17,1\n\n\n\n9,25\n\n3\n\n8,6\n\n⑶ Vẽ biểu đồ tần số, tần suất.\n\n Biểu đồ tần số:\n\n\n\n Biểu đồ tần suất:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-652",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mẫu số liệu dưới đây: Doanh thu của 50 cửa hàng của một công ty trong một tháng (đơn vị: triệu đồng) 102 121 129 114 95 88 109 147 118 148 128 71 93 67 62 57 103 135 97 166 83 114 66 156 88 64 49 101 79 120 75 113 155 48 104 112 79 87 88 141 55 123 152 60 83 144 84 95 90 27 ⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? ⑵ Lập bảng phân bố tần số, tần suất. Nhận xét. ⑶ Vẽ biểu đồ tần số, tần suất.",
-    "explanation": "🖎 Lời giải\n\n⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? \n\n Dấu hiệu điều tra: Doanh thu trong một tháng\n\n Đơn vị điều tra: 1 cửa hàng\n\n Kích thước mẫu: 50\n\n⑵ Lập bảng phân bố tần số, tần suất. Nhận xét.\n\n Bảng phân bố tần số và tần suất:\n\nLớp\n\nGiá trị trung gian\n\nTần số\n\nTần suất (%)\n\n\n\n37,5\n\n2\n\n4,0\n\n\n\n59,5\n\n8\n\n16,0\n\n\n\n81,5\n\n11\n\n22,0\n\n\n\n103,5\n\n14\n\n28,0\n\n\n\n125,5\n\n7\n\n14,0\n\n\n\n147,5\n\n7\n\n14,0\n\n\n\n169,5\n\n1\n\n2,0\n\n⑶ Vẽ biểu đồ tần số, tần suất.\n\n Biểu đồ tần số:\n\n\n\n Biểu đồ tần suất:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-653",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mẫu số liệu dưới đây: Điểm thi môn toán của 60 học sinh lớp 10 1 5 4 8 2 9 4 5 3 2 7 2 7 10 0 2 6 3 7 5 9 10 10 7 9 0 5 3 8 2 4 1 3 6 0 10 3 3 0 8 6 4 1 6 8 2 5 2 1 5 1 8 5 7 2 4 6 3 4 2 ⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? ⑵ Lập bảng phân bố tần số, tần suất. Nhận xét. ⑶ Vẽ biểu đồ tần số, tần suất.",
-    "explanation": "🖎 Lời giải\n\n⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? \n\n Dấu hiệu điều tra: Điểm thi môn Toán\n\n Đơn vị điều tra: 1 học sinh\n\n Kích thước mẫu: 60\n\n⑵ Lập bảng phân bố tần số, tần suất. Nhận xét.\n\n Bảng phân bố tần số và tần suất:\n\nLớp\n\nGiá trị trung gian\n\nTần số\n\nTần suất (%)\n\n\n\n1\n\n9\n\n15,0\n\n\n\n3\n\n16\n\n26,7\n\n\n\n5\n\n13\n\n21,7\n\n\n\n7\n\n10\n\n16,7\n\n\n\n9\n\n12\n\n20,0\n\n⑶ Vẽ biểu đồ tần số, tần suất.\n\n Biểu đồ tần số:\n\n\n\n Biểu đồ tần suất:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-654",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mẫu số liệu dưới đây: Số tiền điện phải trả của 50 gia đình trong một tháng ở 1 khu phố (đơn vị: nghìn đồng) Lớp Tần số 6 15 10 6 9 4 ⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? ⑵ Lập bảng phân bố tần số, tần suất. Nhận xét. ⑶ Vẽ biểu đồ tần số, tần suất.",
-    "explanation": "🖎 Lời giải\n\n⑴ Cho biết dấu hiệu và đơn vị điều tra là gì? Kích thước mẫu là bao nhiêu? \n\n Dấu hiệu điều tra: Số tiền điện phải trả trong 1 tháng.\n\n Đơn vị điều tra: 1 gia đình\n\n Kích thước mẫu: 50\n\n⑵ Lập bảng phân bố tần số, tần suất. Nhận xét.\n\n Bảng phân bố tần số và tần suất:\n\nLớp\n\nGiá trị trung gian\n\nTần số\n\nTần suất (%)\n\n\n\n412\n\n6\n\n12\n\n\n\n487\n\n15\n\n30\n\n\n\n562\n\n10\n\n20\n\n\n\n637\n\n6\n\n12\n\n\n\n712\n\n9\n\n18\n\n\n\n787\n\n4\n\n8\n\n\n\n\n\nN = 50\n\n\n\n⑶ Vẽ biểu đồ tần số, tần suất.\n\n Biểu đồ tần số:\n\n\n\n Biểu đồ tần suất:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-655",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Doanh thu của 20 công ty trong năm vừa qua được cho như sau (đơn vị: triệu đồng): 17638 16162 18746 16602 17357 15420 19630 18969 17301 18739 18322 18870 17679 18101 16598 20275 19902 17733 18405 20375 ⑴ Lập bảng phân bố tần số - tần suất ghép lớp, sử dụng sáu lớp ;. ⑵ Vẽ biểu đồ tần số - tần suất hình cột. ⑶ Vẽ đường gấp khúc tần số. ⑷ Hỏi có bao nhiêu % công ty có doanh thu từ. ⑸ Xét top 40% công ty có doanh thu cao nhất. Công ty có doanh thu thấp nhất trong nhóm này là bao nhiêu?",
-    "explanation": "🖎 Lời giải\n\n⑴ Lập bảng phân bố tần số - tần suất ghép lớp,\n\nBảng phân bố tần số, tần suất ghép lớp:\n\nLớp\n\nGiá trị đại diện\n\nTần số\n\nTần suất (%)\n\n\n\n15500\n\n1\n\n5,25\n\n\n\n16500\n\n3\n\n15,79\n\n\n\n17500\n\n5\n\n26,32\n\n\n\n18500\n\n7\n\n36,84\n\n\n\n19500\n\n2\n\n10,53\n\n\n\n20500\n\n1\n\n5,26\n\n⑵ Vẽ biểu đồ tần số - tần suất hình cột.\n\nVẽ biểu đồ tần số - tần suất hình cột.\n\n\n\n\n\n⑶ Vẽ đường gấp khúc tần số.\n\nVẽ đường gấp khúc tần số.\n\n\n\n⑷ Hỏi có bao nhiêu % công ty có doanh thu từ.\n\nSố công ty có doanh thu từ  là 15 chiếm 75%.\n\n⑸ Công ty có doanh thu thấp nhất trong nhòm này là bao nhiêu?\n\n40% công ty có doanh thu cao nhất là 8 công ty. \n\nCông ty có doanh thu thấp nhất trong nhóm này là 18405.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B2-MÔ TẢ VÀ BIỂU DIỄN DỰ LIỆU TRÊN CÁC BẢNG VÀ BIỂU ĐỒ-P1.docx",
-    "id": "bq-10-c5-656",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hãy tìm số trung bình, tứ phân vị và mốt của các mẫu số liệu sau: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nMẫu số liệu đã sắp xếp theo thứ tự từ nhỏ đến lớn . \n\nKích thước mẫu là 8 chẵn.\n\nSố trung bình của mẫu số liệu là . \n\nTứ phân vị  suy ra , . \n\nMốt là .\n\n⑵ \n\nMẫu số liệu đã sắp xếp theo thứ tự từ nhỏ đến lớn . \n\nKích thước mẫu là 9 lẻ.\n\nSố trung bình là . \n\nTứ phân vị   suy ra , . \n\nMốt là  và .\n\n⑶ \n\nSố trung bình .\n\nVì  là số chẵn nên .\n\nTa tìm  là trung vị của nửa số liệu bên trái : .\n\n.\n\nTa tìm  là trung vị của nửa số liệu bên phải : .\n\n.\n\nCác số liệu đã cho xuất hiện với tần suất như nhau nên không có mốt.\n\n⑷ \n\nSố trung bình .\n\nVì  là số lẻ nên .\n\nTa tìm  là trung vị của nửa số liệu bên trái : .\n\n.\n\nTa tìm  là trung vị của nửa số liệu bên phải : .\n\n.\n\nCác số  đều xuất hiện với số lần lớn nhất (2 lần) nên mẫu số liệu này có hai mốt là 11 và 33.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-658",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hãy tìm số trung bình, tứ phân vị và mốt của các mẫu số liệu sau: Giá trị 5 6 7 8 9 10 Tần số 2 5 10 8 6 3",
-    "explanation": "🖎 Lời giải\n\nSố trung bình .\n\nVì  là số chẵn nên .\n\nTa tìm  là trung vị của nửa số liệu bên trái :\n\n.\n\nTa tìm  là trung vị của nửa số liệu bên phải : .\n\n.\n\nMốt bằng 7.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-659",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tấm lấy ngẫu nhiên 5 hạt từ một mâm trộn lẫn hạt gạo và hạt thóc. Tấm đếm thử xem có bao nhiêu hạt gạo trong số 5 hạt được lấy ra rồi trả lại vào mâm. Lặp lại phép việc làm trên 1000 lần, Tấm ghi lại kết quả ở bảng sau: Số hạt gạo 0 1 2 3 4 5 Số lần 78 259 346 230 77 10 Hãy tìm số trung bình, tứ phân vị và mốt của bảng kết quả trên.",
-    "explanation": "🖎 Lời giải\n\nSố trung bình .\n\nVì  là số chẵn nên .\n\nTa tìm  là trung vị của nửa số liệu bên trái :\n\n.\n\nTa tìm  là trung vị của nửa số liệu bên phải : .\n\n.\n\nMốt bằng 2.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-660",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số trung bình, tứ phân vị và mốt của các mẫu số liệu sau đây: ⑴ Số điểm mà năm vận động viên bóng rổ ghi được trong một trận đấu 9 8 15 8 20 ⑵ Giá của một số loại giầy(đơn vị nghìn đồng) 350 300 650 300 450 500 300 250",
-    "explanation": "🖎 Lời giải\n\n⑴ Số điểm mà năm vận động viên bóng rổ ghi được trong một trận đấu\n\nMẫu số liệu đã sắp xếp theo thứ tự từ nhỏ đến lớn . Kích thước mẫu là 5 lẻ.\n\nSố trung bình là .\n\nTứ phân vị là , \n\nMốt là . \n\n⑵ Giá của một số loại giầy(đơn vị nghìn đồng)\n\nMẫu số liệu đã sắp xếp theo thứ tự từ nhỏ đến lớn . Kích thước mẫu là 8 chẵn.\n\nSố trung bình là . \n\nTứ phân vị là , . \n\nMốt là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-661",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "An lấy ra ngẫu nhiên 3 quả bóng từ một hộp có chứa nhiều bóng xanh và bóng đỏ. An đếm xem có bao nhiêu bóng đỏ trong 3 bóng lấy ra đó rồi trả bóng lại hộp. An lặp lại phép thử trên 100 lần và ghi lại kết quả như sau: Số bóng đỏ 0 1 2 3 Số lần 10 30 40 20 Hãy tìm số trung bình, tứ phân vị và mốt của bảng kết quả trên:",
-    "explanation": "🖎 Lời giải\n\nSố trung bình là . Kích thước mẫu là 100 chẵn\n\nTứ phân vị là ,, .  \n\nMốt là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-662",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Bác Dũng và bác Thu ghi lại số điện thoại mà mỗi người gọi mỗi ngày trong 10 ngày được lựa chọn ngẫu nhiên từ tháng 01/2021 ở bảng sau: Bác Dũng 2 7 3 6 1 4 1 4 5 1 Bác Thu 1 3 1 2 3 4 1 2 20 2 ⑴ Hãy tìm số trung bình, tứ phân vị và mốt của số cuộc điện thoại mà mỗi bác gọi theo số liệu trên. ⑵ Nếu so sánh theo số trung bình thì ai có nhiều cuộc điện thoại hơn? ⑶ Nếu so sánh theo số trung vị thì ai có nhiều cuộc điện thoại hơn? ⑷ Theo bạn, dùng số trung bình hay số trung vị để so sánh xem ai có nhiều cuộc gọi điện thoại hơn mỗi ngày?",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy tìm số trung bình, tứ phân vị và mốt của số cuộc điện thoại mà mỗi bác gọi theo số liệu trên.\n\nMẫu số liệu đã sắp xếp theo thứ tự từ nhỏ đến lớn của Bác Dũng và bác Thu ghi lại số điện thoại mà mỗi người gọi mỗi ngày trong 10 ngày là\n\n\n\n\n\nBác Dũng \n\nSố trung bình là . Kích thước mẫu là 10 chẵn\n\nTứ phân vị là , . \n\nMốt là .\n\nBác Thu \n\nSố trung bình là .\n\nTứ phân vị là , . \n\nMốt là  và 2. \n\n⑵ Nếu so sánh theo số trung bình thì ai có nhiều cuộc điện thoại hơn?\n\nTheo số trung bình thì  Bác Thu có nhiều cuộc điện thoại hơn Bác Dũng. \n\n⑶ Nếu so sánh theo số trung vị thì ai có nhiều cuộc điện thoại hơn?\n\nTheo số trung vị thì  Bác Dũng là 3,5 có nhiều cuộc điện thoại hơn Bác Thu là 2. \n\n⑷ Theo bạn, dùng số trung bình hay số trung vị để so sánh xem ai có nhiều cuộc gọi điện thoại hơn mỗi ngày?\n\nĐể so sánh xem ai có nhiều cuộc gọi điện thoại hơn mỗi ngày theo em dùng số trung bình chính xác hơn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-663",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hàm lượng Natri (đơn vị miligam, ) trong 100 g một số loại ngũ cốc được cho như sau: 0 340 70 140 200 180 210 150 100 130 140 180 190 160 290 50 220 180 200 210. Hãy tìm các tứ phân vị. Các phân vị này cho ta thông tin gì?",
-    "explanation": "🖎 Lời giải\n\nSắp xếp các giá trị này theo thứ tự không giảm:\n\n\n\nVì  là số chẵn nên  là trung bình cộng của hai giá trị chính giữa:\n\n.\n\nTa tìm  là trung vị của nửa số liệu bên trái :\n\n.\n\nvà ta tìm được .\n\nTa tìm  là trung vị của nửa số liệu bên phải :\n\n.\n\nvà tìm được .\n\n\n\nHình ảnh về sự phân bố của mẫu số liệu\n\nCác tứ phân vị cho ta hình ảnh phân bố của mẫu số liệu. Khoảng cách từ  đến  là 45 trong khi khoảng cách từ  đến  là 25. \n\nĐiều này cho thấy mẫu số liệu tập trung mật độ cao ở bên phải  và mật độ thấp ở bên trái .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-664",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số trung bình, trung vị, mốt và tứ phân vị của mỗi mẫu số liệu sau đây: ⑴ Số điểm mà năm vận động viên bóng rổ ghi được trong một trận đấu: ⑵ Giá của một số loại giày (đơn vị nghìn đồng): . ⑶ Số kênh được chiếu của một số hãng truyền hình cáp: .",
-    "explanation": "🖎 Lời giải\n\n⑴ Số điểm mà năm vận động viên bóng rổ ghi được trong một trận đấu:\n\n\n\n\n\n\n\n\n\n\n\nSố trung bình là  .\n\nSắp xếp số liệu theo thứ tự không giảm  .\n\nTrung vị là  .\n\nSố 8 xuất hiện nhiều nhất nên mốt là .\n\nTứ phân vị .\n\n⑵ Giá của một số loại giày (đơn vị nghìn đồng):\n\n. \n\nSố trung bình là  .\n\nSắp xếp số liệu theo thứ tự không giảm:  .\n\nTrung vị là  .\n\nMốt là  . \n\nTứ phân vị . \n\n⑶ Số kênh được chiếu của một số hãng truyền hình cáp:\n\n. \n\nSố trung bình là  .\n\nSắp xếp số liệu theo thứ tự không giảm:  .\n\nTrung vị là  .\n\nMốt là  .\n\nTứ phân vị .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-665",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hãy chọn số đặc trưng đo xu thế trung tâm của mỗi mẫu số liệu sau. Giải thích và tính giá trị của số đặc trưng đó. ⑴ Số mặt trăng đã biết của các hành tinh: Hành tinh Thuỷ tinh Kim tinh Trái Đất Hoả tinh Mộc tinh Thổ tinh Thiên Vương tinh Hải Vương tinh Số mặt trăng 0 0 1 2 63 34 27 13 (Theo NASA) ⑵ Số đường chuyền thành công trong một trận đấu của một số cầu thủ bóng đá: . ⑶ Chỉ số IQ của một nhóm học sinh: ⑷ Các sai số trong phép đo: .",
-    "explanation": "🖎 Lời giải\n\n⑴ Số mặt trăng đã biết của các hành tinh:\n\nChọn số đặc trưng là tứ phân vị, vì các số liệu không đồng đều nhau, nhiều số liệu trong mẫu chênh lệch lớn so với trung vị. \n\nSắp xếp số liệu theo thứ tự không giảm  .\n\nTứ phân vị .\n\n⑵ Số đường chuyền thành công trong một trận đấu của một số cầu thủ bóng đá: \n\nChọn số đặc trưng là số trung bình, các giá trị không lặp lại. \n\nSố trung bình là  .\n\n⑶ Chỉ số IQ của một nhóm học sinh: \n\nChọn số đặc trưng là trung bình, vì các số liệu gần nhau.Số trung bình là:.\n\n⑷ Các sai số trong phép đo: .\n\nChọn số đặc trưng là trung vị, vì có số 42 lớn bất thường. Trung vị là 15.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-666",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Số lượng học sinh giỏi Quốc gia năm học 2018 - 2019 của 10 trường Trung học phổ thông được cho như sau: . ⑴ Tìm số trung bình, mốt, các tứ phân vị của mẫu số liệu trên. ⑵ Giải thích tạo sao tứ phân vị thứ nhất và trung vị trùng nhau.",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm số trung bình, mốt, các tứ phân vị của mẫu số liệu trên.\n\nSố trung bình là  .\n\nSắp xếp số liệu theo thứ tự không giảm  .\n\nSố 0 xuất hiện nhiều nhất nên mốt là .\n\nTứ phân vị .\n\n⑵ Giải thích tạo sao tứ phân vị thứ nhất và trung vị trùng nhau.\n\nTứ phân vị thứ nhất và trung vị trùng nhau do mẫu có 10 số liệu mà số 0 đã xuất hiện 7 lần.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-667",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Bảng sau đây cho biết số chỗ ngồi của một số sân vận động được sử dụng trong Giải Bóng đá Vô địch Quốc gia Việt Nam năm 2018 (số liệu gần đúng). Sân vận động Cẩm phả Thiên Trường Hàng Đẫy Thanh Hoá Mỹ Đình Chỗ ngồi 20 120 21 315 23 405 20 120 37 546 (Theo vov.vn) Các giá trị số trung bình, trung vị, mốt bị ảnh hưởng như thế nào nếu bỏ đi số liệu chỗ ngồi của Sân vân động Quốc gia Mỹ Đình?",
-    "explanation": "🖎 Lời giải\n\nSố trung bình là  . \n\nSắp xếp số liệu theo thứ tự không giảm  .\n\nMốt là  . \n\nTrung vị .\n\nNếu bỏ số liệu  chỗ ngồi của Sân vận động Quốc gia Mỹ Đình\n\nSố trung bình là  .\n\nSắp xếp số liệu theo thứ tự không giảm  .\n\nMốt là  . \n\nTrung vị . \n\nVậy nếu bỏ số liệu chỗ ngồi của Sân vận động Quốc gia Mỹ Đình thì mốt giữ nguyên, số trung bình và trung vị sẽ thay đổi.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B3-CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM-P1.docx",
-    "id": "bq-10-c5-668",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai biểu đồ chấm biểu diễn hai mẫu số liệu A, B như sau: Không tính toán, hãy cho biết: ⑴ Hai mẫu số liệu này có cùng khoảng biến thiên và số trung bình không? ⑵ Mẫu số liệu nào có phương sai lớn hơn?",
-    "explanation": "🖎 Lời giải\n\n⑴ Hai mẫu số liệu này có cùng khoảng biến thiên và số trung bình không?\n\nKhoảng biến thiên của hai mẫu số liệu bằng nhau.\n\nSố trung bình của hai mẫu số liệu bằng nhau.\n\n⑵ Mẫu số liệu nào có phương sai lớn hơn?\n\nMẫu số liệu A có phương sai lớn hơn mẫu số liệu B.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-670",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho mẫu số liệu gồm 10 số dương không hoàn toàn giống nhau. Các số đo độ phân tán (khoảng biến thiên, khoảng tứ phân vị, độ lệch chuẩn) sẽ thay đổi như thế nào nếu: ⑴ Nhân mỗi giá trị của mẫu số liệu với 2. ⑵ Cộng mỗi giá trị của mẫu số liệu với 2.",
-    "explanation": "🖎 Lời giải\n\n⑴ Nhân mỗi giá trị của mẫu số liệu với 2.\n\nNhân mỗi giá trị của mẫu số liệu với 2 thì:\n\nKhoảng biến thiên tăng gấp 2 lần.\n\nKhoảng tứ phân vị tăng gấp 2 lần.\n\nĐộ lệch chuẩn tăng gấp 4 lần.\n\n⑵ Cộng mỗi giá trị của mẫu số liệu với 2.\n\nCộng mỗi giá trị của mẫu số liệu với 2 thì:\n\nKhoảng biến thiên giữ nguyên.\n\nKhoảng tứ phân vị giữ nguyên.\n\nĐộ lệch chuẩn giữ nguyên.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-671",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ mẫu số liệu về thuế thuốc lá của 51 thành phố tại một quốc gia, người ta tính được: Giá trị nhỏ nhất bằng 2,5; ; giá trị lớn nhất bằng 205 ⑴ Tỉ lệ thành phố có thuế thuốc lá lớn hơn 36 là bao nhiêu? ⑵ Chỉ ra hai giá trị sao cho có giá trị của mẫu số liệu nằm giữa hai giá trị này. ⑶ Tìm khoảng tứ phân vị của mẫu số liệu.",
-    "explanation": "🖎 Lời giải\n\n⑴ Tỉ lệ thành phố có thuế thuốc lá lớn hơn 36 là bao nhiêu?\n\nTừ mẫu số liệu về thuế thuốc lá của 51 thành phố tại một quốc gia, người ta tính được  nên có 12 thành phố có thuế thuốc lá lớn hơn 36.\n\nVì vậy, tỉ lệ thành phố có thuế thuốc lá lớn hơn 36 là: \n\n⑵ Chỉ ra hai giá trị sao cho có  giá trị của mẫu số liệu nằm giữa hai giá trị này.\n\nHai giá trị có  giá trị của mẫu số liệu nằm giữa là 36 và 100.\n\n⑶ Tìm khoảng tứ phân vị của mẫu số liệu.\n\nKhoảng tứ phân vị của mẫu số liệu là .",
-    "type": "essay",
-    "level": "VDC",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-672",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hãy tìm độ lệch chuẩn, khoảng biến thiên, khoảng tứ phân vị và các giá trị ngoại lệ của các mẫu số liệu sau: ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTa có:\n\n+ \n\n+ \n\n+ Độ lệch chuẩn \n\n+ \n\n\n\nKhoảng biến thiên   \n\n+ Sắp xếp theo thứ tự tăng dần ta được: \n\n\n\nKhoảng tứ phân vị \n\n+ Ta có: \n\n\n\n\n\nNên không có giá trị ngoại lệ.\n\n⑵ \n\nTa có:\n\n+ \n\n+ \n\nĐộ lệch chuẩn \n\n+ ; \n\nKhoảng biến thiên   \n\n+ Sắp xếp theo thứ tự tăng dần ta được:\n\n\n\n\n\nKhoảng tứ phân vị \n\n+ Ta có: \n\n\n\n\n\nNên không có giá trị ngoại lệ.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-673",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Hãy tìm độ lệch chuẩn, khoảng biến thiên và khoảng tứ phân vị của các mẫu số liệu sau: ⑴ Giá trị Tần số ⑵ Giá trị Tần số",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n\n\nĐộ lệch chuẩn là .\n\nKhoảng biến thiên là .\n\nTa có: ; ; \n\nKhoảng tứ phân vị là .\n\n⑵ \n\n\n\nĐộ lệch chuẩn là .\n\nKhoảng biến thiên là .\n\nTa có: ; ; \n\nKhoảng tứ phân vị là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-674",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Mẫu số liệu sau đây cho biết cân nặng của 10 trẻ sơ sinh (đơn vị kg): 2,977 3,155 3,920 3,412 4,236 2,593 3,270 3,813 4,042 3,387 Hãy tính khoảng biến thiên, khoảng tứ phân vị và độ lệch chuẩn cho mẫu số liệu này.",
-    "explanation": "🖎 Lời giải\n\nTrước hết, ta sẽ sắp xếp mẫu số liệu theo thứ tự không giảm:\n\n\n\nKhoảng biến thiên là .\n\nTa có: ; ; \n\nKhoảng tứ phân vị là .\n\n\n\nĐộ lệch chuẩn là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-675",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tỉ lệ thất nghiệp ở một số quốc gia vào năm 2007 (đơn vị %) được cho như sau: 7,8 3,2 7,7 8,7 8,6 8,4 7,2 3,6 5,0 4,4 6,7 7,0 4,5 6,0 5,4. Hãy tính khoảng biến thiên, khoảng tứ phân vị và độ lệch chuẩn cho mẫu số liệu này.",
-    "explanation": "🖎 Lời giải\n\nTrước hết, ta sẽ sắp xếp mẫu số liệu theo thứ tự không giảm:\n\n3,2\t\t3,6\t4,4\t4,5\t5,0\t5,4\t6,0\t6,7\t7,0\t7,2\t7,7\t7,8\n\n8,4\t\t8,6\t8,7.\n\nKhoảng biến thiên là .\n\nTừ mẫu số liệu ta tính được  và . \n\nDo đó, khoảng tứ phân vị là: \n\nTa có  và  nên trong mẫu số liệu trên không có giá trị bất thường.\n\n, độ lệch chuẩn là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-676",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Mẫu số liệu sau đây cho biết cân nặng của 10 trẻ sơ sinh (đơn vị kg): Hãy tính khoảng biến thiên, khoảng tứ phân vị và độ lệch chuẩn cho mẫu số liệu này.",
-    "explanation": "🖎 Lời giải\n\nTrước hết, ta sẽ sắp xếp mẫu số liệu theo thứ tự không giảm:\n\n\n\nKhoảng biến thiên là .\n\nTa có: ; ; \n\nKhoảng tứ phân vị là .\n\nĐộ lệch chuẩn là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-677",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Thống kê điểm trắc nghiệm môn Tiếng Anh của 40 học sinh, người ta thu được mẫu số liệu sau (thang điểm 100) 56 42 78 45 55 66 82 34 25 30 90 72 98 62 64 31 45 28 72 88 56 58 62 65 31 74 72 90 92 40 52 56 55 82 22 32 46 60 68 54 Hãy xác định giá trị trung bình, độ lệch chuẩn của bảng số liệu trên (quy tròn với độ chính xác )",
-    "explanation": "🖎 Lời giải\n\nSố trung bình \n\n\n\n\n\n.\n\nPhương sai: \n\nđộ lệch chuẩn .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-678",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Ba bạn An, Bình, Cường có bảng điểm như sau: Toán Lý Hóa Sinh Sử Địa Ngoại ngữ GDCD Văn An 95 85 88 75 92 85 93 98 78 Bình 92 89 85 85 88 94 94 90 85 Cường 93 82 95 88 83 91 91 92 80 ⑴ Hãy tính điểm trung bình mỗi bạn (vai trò của từng môn học là như nhau). ⑵ Lớp cần đề cử 1 trong 3 bạn đi thi kiến thức tổng hợp thì em đề cử bạn nào? Vì sao?",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy tính điểm trung bình mỗi bạn (vai trò của từng môn học là như nhau).\n\nĐiểm trung bình của bạn An: .\n\nĐiểm trung bình của bạn Bình: .\n\nĐiểm trung bình của bạn Cường: .\n\n⑵ Lớp cần đề cử 1 trong 3 bạn đi thi kiến thức tổng hợp thì em đề cử bạn nào? Vì sao?\n\nMức độ đồng đều giữa các môn học:\n\nAn: \n\n\n\n\n\nBình: \n\n\n\n\n\nCường: \n\n\n\n\n\nMức độ phân tán về điểm các môn của Bình là ít nhất, tức là Bình học đều các môn nhất nên cử Bình đi thi.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-679",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Sản lượng lúa các năm từ 2014 đến 20l8 của hai tinh Thái Bình và Hậu Giang được cho ở bảng sau (đơn vị: nghìn tấn): Năm Tỉnh 2014 2015 2016 2017 2018 Thái Bình 1061,9 1061,9 1053,6 942,6 1030,4 Hậu Giang 1204,6 1293,1 1231,0 1261,0 1246,1 (Nguồn: Tổng cục thống kê) ⑴ Hãy tính độ lệch chuẩn và khoảng biến thiên của sản lượng lúa từng tỉnh. ⑵ Tỉnh nào có sản lượng lúa ổn định hơn? Tại sao?",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy tính độ lệch chuẩn và khoảng biến thiên của sản lượng lúa từng tỉnh.\n\n+ Độ lệch chuẩn và khoảng biến thiên của sản lượng lúa tỉnh Thái Bình\n\nSắp xếp các số liệu theo thứ tự không giảm, ta được:\n\n942,6; 1030,4; 1053,6; 1061,9; 1061,9.\n\nSố trung bình của mẫu số liệu \n\nPhương sai \n\nĐộ lệch chuẩn .\n\nKhoảng biến thiên  \n\n+ Độ lệch chuẩn và khoảng biến thiên của sản lượng lúa tỉnh Hậu Giang\n\nSố trung bình \n\nPhương sai \n\nĐộ lệch chuẩn   \n\nKhoảng biến thiên \n\n⑵ Tỉnh nào có sản lượng lúa ốn định hơn? Tại sao?\n\nSo sánh khoảng biến thiên và độ lệch chuẩn ta đều thấy tỉnh Hậu Giang có sản lượng lúa ổn định hơn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-680",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Kết quả điều tra mức lương hằng tháng của một số công nhân của hai nhà máy A và B được cho ở bảng sau (đơn vị: triệu đồng): Công nhân nhà máy A 4 5 5 47 5 6 4 4 Công nhân nhà máy B 2 9 9 8 10 9 9 11 9 ⑴ Hãy tìm số trung bình, mốt, tứ phân vị và độ lệch chuẩn của hai mẫu số liệu lấy từ nhà máy A và nhà máy B. ⑵ Hãy tìm các giá trị ngoại lệ trong mỗi mấu số liệu trên. Công nhân nhà máy nào có mức lương cao hơn? Tại sao?",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy tìm số trung bình, mốt, tứ phân vị và độ lệch chuẩn của hai mẫu số liệu lấy từ nhà máy A và nhà máy B.\n\n+ Nhà máy A:\n\nSố trung bình mức lương hàng tháng:   \n\nGiá trị 4 và 5 có tần số lớn nhất nên mốt của mẫu số liệu ở nhà máy A là 4 và 5.\n\nSắp xếp các số liệu theo thứ tự không giảm, ta được:\n\n.\n\nVì số mẫu là 8 là số chẵn nên tứ phân vị thứ hai là .\n\nTứ phân vị thứ nhất là trung vị của mẫu: 4; 4; 4; 5. Do đó .\n\nTứ phân vị thứ ba là trung vị của mẫu: 5; 5; 6; 47. Do đó .\n\nPhương sai mẫu: .\n\nĐộ lệch chuẩn:  .\n\n+ Nhà máy B:\n\nSố trung bình mức lương hàng tháng: .\n\nGiá trị 9 có tần số lớn nhất nên mốt của mẫu số liệu ở nhà máy B là 9.\n\nSắp xếp các số liệu theo thứ tự không giảm, ta được:\n\n.\n\nVì cỡ mẫu là 9 là số lẻ nên tứ phân vị thứ hai là .\n\nTứ phân vị thứ nhất là trung vị của mẫu: . Do đó .\n\nTứ phân vị thứ ba là trung vị của mẫu: . Do đó .\n\nPhương sai mẫu:.\n\nĐộ lệch chuẩn:  .\n\n⑵ Hãy tìm các giá trị ngoại lệ trong mỗi mấu số liệu trên. Công nhân nhà máy nào có mức lương cao hơn? Tại sao?\n\nKhoảng tứ phân vị của mẫu số liệu ở nhà máy A là: .\n\nTa có:  và .\n\nDo đó giá trị ngoại lệ trong mẫu số liệu ở nhà máy A là 47.\n\n+ Khoảng tứ phân vị của mẫu số liệu ở nhà máy B là: .\n\nTa có:  và .\n\nDo đó giá trị ngoại lệ trong mẫu số liệu ở nhà máy B là 2.\n\n+ Quan sát các số liệu tính được ở câu ⑴, ta thấy\n\nSố trung bình mức lương hàng tháng của công nhân ở nhà máy A cao hơn nhà máy B.\n\nPhương sai mẫu và độ lệch chuẩn mẫu số liệu ở nhà máy A cao hơn nhà máy B \n\nNên mức lương hằng tháng của công nhân nhà máy A có độ phân tán cao hơn nhà máy B, \n\nDo đó mức lương của công nhân nhà máy B ổn định hơn nhà máy A.\n\nMức lương xuất hiện nhiều nhất trong mẫu A là 4 và 5 triệu đồng, nhà máy B là 9 triệu đồng.\n\nDo đó, ta có thể khẳng định công nhân nhà máy A có mức lương cao hơn (đều và ổn định hơn).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c5",
-    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
-    "sourceCitation": "C6-B4-CÁC SỐ ĐẶC TRƯNG ĐO ĐỘ PHÂN TÁN-P1.docx",
-    "id": "bq-10-c5-681",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c5-mc-1789364780439-d6o8",
     "gradeNumber": 10,
     "chapterId": "c5-cac-so-dac-trung-thong-ke",
@@ -2278,5 +1750,1363 @@
     "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
     "sourceCitation": "Tài liệu dự án Toán 10: Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
     "createdAt": "2026-09-14T05:46:20.442Z"
+  },
+  {
+    "id": "bq-10-c5-tf-001",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b13-so-gan-dung-sai-so",
+    "lessonTitle": "Bài 13: Số gần đúng và sai số",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho số gần đúng $a = 23{,}456$ với độ chính xác $d = 0{,}02$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Hàng của chữ số chắc chắn đầu tiên từ phải sang trái là hàng phần mười.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Số quy tròn của $a$ theo độ chính xác $d$ là $23{,}46$.",
+        "isCorrect": false
+      },
+      {
+        "key": "c",
+        "text": "Số quy tròn chuẩn xác của $a$ là $23{,}5$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Sai số tương đối $\\delta_a$ không vượt quá $\\frac{0{,}02}{23{,}456} \\approx 0{,}085\\%$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) Vì $d = 0{,}02$ (hàng phần trăm) nên hàng làm tròn là hàng phần mười (Đúng).\nb) Làm tròn đến hàng phần mười ta được $23{,}5$ (Sai khi bảo $23{,}46$).\nc) Số quy tròn đúng là $23{,}5$ (Đúng).\nd) $\\delta_a \\le \\frac{d}{|a|} = \\frac{0{,}02}{23{,}456} \\approx 0{,}085\\%$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-tf-002",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu điểm kiểm tra của 9 học sinh: $4; 5; 6; 6; 7; 8; 8; 8; 9$. Xét tính đúng sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình cộng của mẫu số liệu là $\\bar{x} = 6{,}78$ (làm tròn đến hàng phần trăm).",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Trung vị của mẫu số liệu là $M_e = 7$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Mốt của mẫu số liệu là $M_o = 8$ (có tần số xuất hiện nhiều nhất là 3 lần).",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Tứ phân vị thứ nhất là $Q_1 = 5{,}5$ và tứ phân vị thứ ba là $Q_3 = 8$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) Tổng = $4+5+6+6+7+8+8+8+9 = 61$. $\\bar{x} = 61/9 \\approx 6{,}78$ (Đúng).\nb) Cỡ mẫu $n=9$ lẻ, giá trị chính giữa ở vị trí thứ 5 là 7 (Đúng).\nc) Điểm 8 xuất hiện 3 lần, nhiều nhất nên $M_o = 8$ (Đúng).\nd) Nửa dưới $4, 5, 6, 6 \\Rightarrow Q_1 = (5+6)/2 = 5{,}5$; nửa trên $8, 8, 8, 9 \\Rightarrow Q_3 = (8+8)/2 = 8$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-tf-003",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu $2; 4; 6; 8; 10$. Xét tính đúng sai của các số đặc trưng đo độ phân tán:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Khoảng biến thiên của mẫu số liệu là $R = 8$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Tứ phân vị là $Q_1 = 3, Q_2 = 6, Q_3 = 9$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Khoảng tứ phân vị của mẫu số liệu là $\\Delta_Q = 6$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Phương sai của mẫu số liệu là $s^2 = 8$ và độ lệch chuẩn là $s = 2\\sqrt{2}$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $R = x_{\\max} - x_{\\min} = 10 - 2 = 8$ (Đúng).\nb) $Q_2 = 6$, nửa dưới $2, 4 \\Rightarrow Q_1 = 3$; nửa trên $8, 10 \\Rightarrow Q_3 = 9$ (Đúng).\nc) $\\Delta_Q = Q_3 - Q_1 = 9 - 3 = 6$ (Đúng).\nd) $\\bar{x} = 6$. $s^2 = \\frac{(2-6)^2 + (4-6)^2 + (6-6)^2 + (8-6)^2 + (10-6)^2}{5} = \\frac{16+4+0+4+16}{5} = 8 \\Rightarrow s = \\sqrt{8} = 2\\sqrt{2}$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-001",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm trung vị của mẫu số liệu: $12; 15; 17; 20; 22; 25; 28; 30$.",
+    "correctAnswer": "21",
+    "explanation": "Cỡ mẫu $n = 8$ chẵn. Hai giá trị chính giữa là 20 và 22. Trung vị $M_e = \\frac{20 + 22}{2} = 21$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-002",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu $1; 3; 5; 7; 9$. Tính phương sai $s^2$ của mẫu số liệu trên.",
+    "correctAnswer": "8",
+    "explanation": "Số trung bình $\\bar{x} = 5$. Phương sai $s^2 = \\frac{(1-5)^2 + (3-5)^2 + (5-5)^2 + (7-5)^2 + (9-5)^2}{5} = \\frac{16+4+0+4+16}{5} = 8$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-auto-1",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $10; 12; 14; 16; 18$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$14$"
+      },
+      {
+        "key": "B",
+        "text": "$12$"
+      },
+      {
+        "key": "C",
+        "text": "$16$"
+      },
+      {
+        "key": "D",
+        "text": "$10$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{10 + 12 + 14 + 16 + 18}{5} = 14$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-2",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $12; 14; 16; 18; 20$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$16$"
+      },
+      {
+        "key": "B",
+        "text": "$14$"
+      },
+      {
+        "key": "C",
+        "text": "$18$"
+      },
+      {
+        "key": "D",
+        "text": "$12$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{12 + 14 + 16 + 18 + 20}{5} = 16$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-3",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $14; 16; 18; 20; 22$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$18$"
+      },
+      {
+        "key": "B",
+        "text": "$16$"
+      },
+      {
+        "key": "C",
+        "text": "$20$"
+      },
+      {
+        "key": "D",
+        "text": "$14$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{14 + 16 + 18 + 20 + 22}{5} = 18$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-4",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $16; 18; 20; 22; 24$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$20$"
+      },
+      {
+        "key": "B",
+        "text": "$18$"
+      },
+      {
+        "key": "C",
+        "text": "$22$"
+      },
+      {
+        "key": "D",
+        "text": "$16$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{16 + 18 + 20 + 22 + 24}{5} = 20$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-5",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $18; 20; 22; 24; 26$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$22$"
+      },
+      {
+        "key": "B",
+        "text": "$20$"
+      },
+      {
+        "key": "C",
+        "text": "$24$"
+      },
+      {
+        "key": "D",
+        "text": "$18$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{18 + 20 + 22 + 24 + 26}{5} = 22$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-6",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $20; 22; 24; 26; 28$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$24$"
+      },
+      {
+        "key": "B",
+        "text": "$22$"
+      },
+      {
+        "key": "C",
+        "text": "$26$"
+      },
+      {
+        "key": "D",
+        "text": "$20$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{20 + 22 + 24 + 26 + 28}{5} = 24$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-7",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $22; 24; 26; 28; 30$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$26$"
+      },
+      {
+        "key": "B",
+        "text": "$24$"
+      },
+      {
+        "key": "C",
+        "text": "$28$"
+      },
+      {
+        "key": "D",
+        "text": "$22$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{22 + 24 + 26 + 28 + 30}{5} = 26$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-8",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $24; 26; 28; 30; 32$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$28$"
+      },
+      {
+        "key": "B",
+        "text": "$26$"
+      },
+      {
+        "key": "C",
+        "text": "$30$"
+      },
+      {
+        "key": "D",
+        "text": "$24$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{24 + 26 + 28 + 30 + 32}{5} = 28$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-9",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $26; 28; 30; 32; 34$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$30$"
+      },
+      {
+        "key": "B",
+        "text": "$28$"
+      },
+      {
+        "key": "C",
+        "text": "$32$"
+      },
+      {
+        "key": "D",
+        "text": "$26$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{26 + 28 + 30 + 32 + 34}{5} = 30$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-10",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $28; 30; 32; 34; 36$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$32$"
+      },
+      {
+        "key": "B",
+        "text": "$30$"
+      },
+      {
+        "key": "C",
+        "text": "$34$"
+      },
+      {
+        "key": "D",
+        "text": "$28$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{28 + 30 + 32 + 34 + 36}{5} = 32$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-11",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $30; 32; 34; 36; 38$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$34$"
+      },
+      {
+        "key": "B",
+        "text": "$32$"
+      },
+      {
+        "key": "C",
+        "text": "$36$"
+      },
+      {
+        "key": "D",
+        "text": "$30$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{30 + 32 + 34 + 36 + 38}{5} = 34$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-12",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $32; 34; 36; 38; 40$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$36$"
+      },
+      {
+        "key": "B",
+        "text": "$34$"
+      },
+      {
+        "key": "C",
+        "text": "$38$"
+      },
+      {
+        "key": "D",
+        "text": "$32$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{32 + 34 + 36 + 38 + 40}{5} = 36$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-13",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $34; 36; 38; 40; 42$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$38$"
+      },
+      {
+        "key": "B",
+        "text": "$36$"
+      },
+      {
+        "key": "C",
+        "text": "$40$"
+      },
+      {
+        "key": "D",
+        "text": "$34$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{34 + 36 + 38 + 40 + 42}{5} = 38$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-14",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $36; 38; 40; 42; 44$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$40$"
+      },
+      {
+        "key": "B",
+        "text": "$38$"
+      },
+      {
+        "key": "C",
+        "text": "$42$"
+      },
+      {
+        "key": "D",
+        "text": "$36$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{36 + 38 + 40 + 42 + 44}{5} = 40$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-15",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $38; 40; 42; 44; 46$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$42$"
+      },
+      {
+        "key": "B",
+        "text": "$40$"
+      },
+      {
+        "key": "C",
+        "text": "$44$"
+      },
+      {
+        "key": "D",
+        "text": "$38$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{38 + 40 + 42 + 44 + 46}{5} = 42$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-16",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $40; 42; 44; 46; 48$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$44$"
+      },
+      {
+        "key": "B",
+        "text": "$42$"
+      },
+      {
+        "key": "C",
+        "text": "$46$"
+      },
+      {
+        "key": "D",
+        "text": "$40$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{40 + 42 + 44 + 46 + 48}{5} = 44$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-17",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $42; 44; 46; 48; 50$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$46$"
+      },
+      {
+        "key": "B",
+        "text": "$44$"
+      },
+      {
+        "key": "C",
+        "text": "$48$"
+      },
+      {
+        "key": "D",
+        "text": "$42$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{42 + 44 + 46 + 48 + 50}{5} = 46$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-18",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $44; 46; 48; 50; 52$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$48$"
+      },
+      {
+        "key": "B",
+        "text": "$46$"
+      },
+      {
+        "key": "C",
+        "text": "$50$"
+      },
+      {
+        "key": "D",
+        "text": "$44$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{44 + 46 + 48 + 50 + 52}{5} = 48$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-19",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $46; 48; 50; 52; 54$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$50$"
+      },
+      {
+        "key": "B",
+        "text": "$48$"
+      },
+      {
+        "key": "C",
+        "text": "$52$"
+      },
+      {
+        "key": "D",
+        "text": "$46$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{46 + 48 + 50 + 52 + 54}{5} = 50$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-auto-20",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu khảo sát năng suất lúa (tạ/ha): $48; 50; 52; 54; 56$. Số trung bình của mẫu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$52$"
+      },
+      {
+        "key": "B",
+        "text": "$50$"
+      },
+      {
+        "key": "C",
+        "text": "$54$"
+      },
+      {
+        "key": "D",
+        "text": "$48$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số trung bình cộng là $\\bar{x} = \\frac{48 + 50 + 52 + 54 + 56}{5} = 52$.",
+    "sourceCitation": "Ngân hàng đề khảo sát Toán 10 THPT"
+  },
+  {
+    "id": "bq-10-c5-curated-1",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu: $3; 5; 7; 8; 9; 11; 13$. Trung vị của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$8$"
+      },
+      {
+        "key": "B",
+        "text": "$7$"
+      },
+      {
+        "key": "C",
+        "text": "$7{,}5$"
+      },
+      {
+        "key": "D",
+        "text": "$9$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cỡ mẫu $n = 7$ là số lẻ. Số đứng chính giữa (ở vị trí thứ 4) là 8. Do đó trung vị $M_e = 8$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-2",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu điểm thi: $6; 7; 7; 8; 8; 8; 9; 10$. Mốt của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$8$"
+      },
+      {
+        "key": "B",
+        "text": "$7$"
+      },
+      {
+        "key": "C",
+        "text": "$7{,}5$"
+      },
+      {
+        "key": "D",
+        "text": "$9$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Điểm 8 xuất hiện 3 lần, nhiều nhất trong mẫu số liệu nên mốt $M_o = 8$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-3",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu: $10; 12; 15; 18; 25$. Khoảng biến thiên của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$15$"
+      },
+      {
+        "key": "B",
+        "text": "$12$"
+      },
+      {
+        "key": "C",
+        "text": "$10$"
+      },
+      {
+        "key": "D",
+        "text": "$25$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = 25 - 10 = 15$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-4",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Số gần đúng $a = 15{,}234$ có độ chính xác $d = 0{,}05$. Số quy tròn của $a$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$15{,}2$"
+      },
+      {
+        "key": "B",
+        "text": "$15{,}23$"
+      },
+      {
+        "key": "C",
+        "text": "$15{,}3$"
+      },
+      {
+        "key": "D",
+        "text": "$15$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì độ chính xác $d = 0{,}05$ ở hàng phần trăm, ta làm tròn $a$ đến hàng phần mười. Chữ số sau phần mười là 3 < 5 nên giữ nguyên: $15{,}2$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-5",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu: $2; 4; 6; 8; 10$. Số trung bình cộng $\\bar{x}$ của mẫu số liệu bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6$"
+      },
+      {
+        "key": "B",
+        "text": "$5$"
+      },
+      {
+        "key": "C",
+        "text": "$7$"
+      },
+      {
+        "key": "D",
+        "text": "$8$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\bar{x} = \\frac{2+4+6+8+10}{5} = \\frac{30}{5} = 6$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-6",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $1; 2; 3; 4; 5; 6; 7; 8$. Tứ phân vị thứ nhất $Q_1$ của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2{,}5$"
+      },
+      {
+        "key": "B",
+        "text": "$2$"
+      },
+      {
+        "key": "C",
+        "text": "$3$"
+      },
+      {
+        "key": "D",
+        "text": "$3{,}5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Trung vị $Q_2 = (4+5)/2 = 4{,}5$. Nửa dưới là $1; 2; 3; 4$. Trung vị nửa dưới là $Q_1 = (2+3)/2 = 2{,}5$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-7",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $1; 2; 3; 4; 5; 6; 7; 8$. Tứ phân vị thứ ba $Q_3$ của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6{,}5$"
+      },
+      {
+        "key": "B",
+        "text": "$6$"
+      },
+      {
+        "key": "C",
+        "text": "$7$"
+      },
+      {
+        "key": "D",
+        "text": "$7{,}5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Nửa trên là $5; 6; 7; 8$. Trung vị nửa trên là $Q_3 = (6+7)/2 = 6{,}5$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-8",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu có $Q_1 = 12$ và $Q_3 = 20$. Khoảng tứ phân vị $\\Delta_Q$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$8$"
+      },
+      {
+        "key": "B",
+        "text": "$16$"
+      },
+      {
+        "key": "C",
+        "text": "$32$"
+      },
+      {
+        "key": "D",
+        "text": "$6$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1 = 20 - 12 = 8$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-9",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Độ lệch chuẩn $s$ của một mẫu số liệu bằng $4$. Phương sai $s^2$ của mẫu số liệu đó là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$16$"
+      },
+      {
+        "key": "B",
+        "text": "$2$"
+      },
+      {
+        "key": "C",
+        "text": "$8$"
+      },
+      {
+        "key": "D",
+        "text": "$64$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Phương sai bằng bình phương độ lệch chuẩn: $s^2 = 4^2 = 16$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-curated-10",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b14-cac-so-dac-trung-xu-the-trung-tam",
+    "lessonTitle": "Bài 14: Các số đặc trưng đo xu thế trung tâm",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho mẫu số liệu: $5; 5; 5; 5; 5$. Phương sai $s^2$ của mẫu số liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$0$"
+      },
+      {
+        "key": "B",
+        "text": "$5$"
+      },
+      {
+        "key": "C",
+        "text": "$1$"
+      },
+      {
+        "key": "D",
+        "text": "$25$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Mọi giá trị trong mẫu đều bằng nhau và bằng số trung bình nên phương sai $s^2 = 0$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-tf-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu về thời gian giải một bài toán của học sinh: $25; 27; 29; 31; 33$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình là $\\bar{x} = 29$.",
+        "isCorrect": true,
+        "explanation": "Tính tổng chia 5 được kết quả chính xác."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng biến thiên là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Hiệu số lớn nhất trừ số nhỏ nhất bằng 8."
+      },
+      {
+        "key": "c",
+        "text": "Phương sai của mẫu số liệu bằng $s^2 = 8$.",
+        "isCorrect": true,
+        "explanation": "Áp dụng công thức tính phương sai được 8."
+      },
+      {
+        "key": "d",
+        "text": "Độ lệch chuẩn bằng $s = 4$.",
+        "isCorrect": false,
+        "explanation": "Độ lệch chuẩn là căn bậc hai của phương sai, tức là s = căn(8) xấp xỉ 2.83, không phải 4."
+      }
+    ],
+    "explanation": "Học sinh áp dụng định nghĩa và công thức tính các số đặc trưng đo độ phân tán để kiểm tra từng ý.",
+    "sourceCitation": "Đề kiểm tra định kỳ Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c5-tf-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu về thời gian giải một bài toán của học sinh: $30; 32; 34; 36; 38$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình là $\\bar{x} = 34$.",
+        "isCorrect": true,
+        "explanation": "Tính tổng chia 5 được kết quả chính xác."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng biến thiên là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Hiệu số lớn nhất trừ số nhỏ nhất bằng 8."
+      },
+      {
+        "key": "c",
+        "text": "Phương sai của mẫu số liệu bằng $s^2 = 8$.",
+        "isCorrect": true,
+        "explanation": "Áp dụng công thức tính phương sai được 8."
+      },
+      {
+        "key": "d",
+        "text": "Độ lệch chuẩn bằng $s = 4$.",
+        "isCorrect": false,
+        "explanation": "Độ lệch chuẩn là căn bậc hai của phương sai, tức là s = căn(8) xấp xỉ 2.83, không phải 4."
+      }
+    ],
+    "explanation": "Học sinh áp dụng định nghĩa và công thức tính các số đặc trưng đo độ phân tán để kiểm tra từng ý.",
+    "sourceCitation": "Đề kiểm tra định kỳ Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c5-tf-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu về thời gian giải một bài toán của học sinh: $35; 37; 39; 41; 43$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình là $\\bar{x} = 39$.",
+        "isCorrect": true,
+        "explanation": "Tính tổng chia 5 được kết quả chính xác."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng biến thiên là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Hiệu số lớn nhất trừ số nhỏ nhất bằng 8."
+      },
+      {
+        "key": "c",
+        "text": "Phương sai của mẫu số liệu bằng $s^2 = 8$.",
+        "isCorrect": true,
+        "explanation": "Áp dụng công thức tính phương sai được 8."
+      },
+      {
+        "key": "d",
+        "text": "Độ lệch chuẩn bằng $s = 4$.",
+        "isCorrect": false,
+        "explanation": "Độ lệch chuẩn là căn bậc hai của phương sai, tức là s = căn(8) xấp xỉ 2.83, không phải 4."
+      }
+    ],
+    "explanation": "Học sinh áp dụng định nghĩa và công thức tính các số đặc trưng đo độ phân tán để kiểm tra từng ý.",
+    "sourceCitation": "Đề kiểm tra định kỳ Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c5-tf-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu về thời gian giải một bài toán của học sinh: $40; 42; 44; 46; 48$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình là $\\bar{x} = 44$.",
+        "isCorrect": true,
+        "explanation": "Tính tổng chia 5 được kết quả chính xác."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng biến thiên là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Hiệu số lớn nhất trừ số nhỏ nhất bằng 8."
+      },
+      {
+        "key": "c",
+        "text": "Phương sai của mẫu số liệu bằng $s^2 = 8$.",
+        "isCorrect": true,
+        "explanation": "Áp dụng công thức tính phương sai được 8."
+      },
+      {
+        "key": "d",
+        "text": "Độ lệch chuẩn bằng $s = 4$.",
+        "isCorrect": false,
+        "explanation": "Độ lệch chuẩn là căn bậc hai của phương sai, tức là s = căn(8) xấp xỉ 2.83, không phải 4."
+      }
+    ],
+    "explanation": "Học sinh áp dụng định nghĩa và công thức tính các số đặc trưng đo độ phân tán để kiểm tra từng ý.",
+    "sourceCitation": "Đề kiểm tra định kỳ Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c5-tf-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Cho mẫu số liệu về thời gian giải một bài toán của học sinh: $45; 47; 49; 51; 53$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số trung bình là $\\bar{x} = 49$.",
+        "isCorrect": true,
+        "explanation": "Tính tổng chia 5 được kết quả chính xác."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng biến thiên là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Hiệu số lớn nhất trừ số nhỏ nhất bằng 8."
+      },
+      {
+        "key": "c",
+        "text": "Phương sai của mẫu số liệu bằng $s^2 = 8$.",
+        "isCorrect": true,
+        "explanation": "Áp dụng công thức tính phương sai được 8."
+      },
+      {
+        "key": "d",
+        "text": "Độ lệch chuẩn bằng $s = 4$.",
+        "isCorrect": false,
+        "explanation": "Độ lệch chuẩn là căn bậc hai của phương sai, tức là s = căn(8) xấp xỉ 2.83, không phải 4."
+      }
+    ],
+    "explanation": "Học sinh áp dụng định nghĩa và công thức tính các số đặc trưng đo độ phân tán để kiểm tra từng ý.",
+    "sourceCitation": "Đề kiểm tra định kỳ Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c5-sa-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $12; 15; 18; 21; 24$. Tìm khoảng biến thiên $R$ của mẫu số liệu.",
+    "correctAnswer": "12",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = (12+12) - 12 = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $14; 17; 20; 23; 26$. Tìm khoảng biến thiên $R$ của mẫu số liệu.",
+    "correctAnswer": "12",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = (14+12) - 14 = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $16; 19; 22; 25; 28$. Tìm khoảng biến thiên $R$ của mẫu số liệu.",
+    "correctAnswer": "12",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = (16+12) - 16 = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $18; 21; 24; 27; 30$. Tìm khoảng biến thiên $R$ của mẫu số liệu.",
+    "correctAnswer": "12",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = (18+12) - 18 = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
+  },
+  {
+    "id": "bq-10-c5-sa-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c5-cac-so-dac-trung-thong-ke",
+    "chapterName": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+    "lessonId": "b15-cac-so-dac-trung-do-phan-tan",
+    "lessonTitle": "Bài 15: Các số đặc trưng đo độ phân tán",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho mẫu số liệu: $20; 23; 26; 29; 32$. Tìm khoảng biến thiên $R$ của mẫu số liệu.",
+    "correctAnswer": "12",
+    "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min} = (20+12) - 20 = 12$.",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương V"
   }
 ]

@@ -1,773 +1,5 @@
 [
   {
-    "stem": "Cho tam giác ABC, có thể xác định được bao nhiêu vectơ khác vectơ-không có điểm đầu và điểm cuối là các đỉnh A, B, C?",
-    "explanation": "🖎 Lời giải\n\nTa có 6 vectơ:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-567",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình lục giác đều ABCDEF tâm O. Tìm số các vectơ khác vectơ - không, cùng phương với ⑴ Vectơ có điểm đầu và điểm cuối là các đỉnh của lục giác? ⑵ Vectơ có điểm đầu và điểm cuối là các đỉnh của lục giác?",
-    "explanation": "🖎 Lời giải\n\n⑴ Vectơ  có điểm đầu và điểm cuối là các đỉnh của lục giác?\n\nCác vectơ cùng phương với vectơ  là: \n\n⑵ Vectơ  có điểm đầu và điểm cuối là các đỉnh của lục giác?\n\nCác vectơ cùng phương với vectơ  là:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-568",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình bình hành ABCD tâm O. Gọi P, Q, R lần lượt là trung điểm của AB, BC, AD. Lấy 8 điểm trên là gốc hoặc ngọn của các vectơ. Tìm số vectơ bằng với vectơ",
-    "explanation": "🖎 Lời giải\n\nCó 3 vectơ là ; ;.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-569",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gọi G là trọng tâm tam giác vuông với cạnh huyền . Tính (với là trung điểm của )",
-    "explanation": "🖎 Lời giải\n\nTa có  là trung điểm .\n\nGọi  là trung điểm .\n\nKhi đó giao điểm của \n\nVì",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-570",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho điểm và véctơ khác . Tìm điểm sao cho: ⑴ cùng phương với . ⑵ cùng hướng với .",
-    "explanation": "🖎 Lời giải\n\nGọi  là giá của .\n\n⑴  cùng phương với . \n\nNếu  cùng phương với  thì đường thẳng  song song với . \n\nDo đó  thuộc đường thẳng  đi qua  và song song với . \n\nNgược lại, mọi điểm  thuộc đường thẳng  thì  cùng phương với . \n\nChú ý rằng nếu  thuộc đường thẳng  thì  trùng với .\n\n⑵  cùng hướng với . \n\nLập luận tương tự như trên, ta thấy các điểm  thuộc một nửa đường thẳng gốc  của đường thẳng . \n\nCụ thể, đó là nửa đường thẳng chưa điểm  sao cho  và  cùng hướng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-571",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác có trực tâm . Gọi là điểm đối xứng với qua tâm của đường tròn ngoại tiếp tam giác . Chứng minh rằng và .",
-    "explanation": "🖎 Lời giải\n\n\n\nTa có  và  (do góc  chắn nửa đường tròn). \n\nSuy ra \n\nTương tự ta cũng có \n\nSuy ra tứ giác là hình bình hành. Do đó  và .\n\n\n\n🏱 Dạng 2. Hai vectơ bằng nhau\n\n\n\nĐể chứng minh hai véctơ bằng nhau ta có thể dùng một trong ba cách sau: \n\nCách 01\n\n và  cùng hướng .\n\nCách 02\n\nTứ giác  là hình bình hành  và .\n\nCách 03\n\nNếu  thì .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-572",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác có lần lượt là trung điểm của . Chứng minh .",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có:  lần lượt là trung điểm của .\n\n là đường trung bình  và .\n\n🞟 Lại có  là trung điểm .\n\n🞟 Dễ thấy  cùng hướng \n\nTừ .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-573",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình vuông tâm . Liệt kê tất cả các véctơ bằng nhau (khác ) nhận đỉnh hoặc tâm của hình vuông là điểm đầu và điểm cuối.",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có các cặp véctơ sau:\n\n;;;\n\n;;\n\n;;.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-574",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình bình hành . Dựng , . Chứng minh .",
-    "explanation": "🖎 Lời giải\n\n\n\nTa có:  là hình bình hành nên .\n\nTa có: .\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-575",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tứ giác là hình gì nếu có và",
-    "explanation": "🖎 Lời giải\n\n🞟 Vì \n\n và  cùng phương với \n\n\n\n🞟 Nên tứ giác  là hình bình hành \t(1)\n\n🞟 Vì   \t(2)\n\n🞟 Nên  là hình thoi.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-576",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tứ giác đều . Gọi lần lượt là trung điểm của . Chứng minh .",
-    "explanation": "🖎 Lời giải\n\nTa có \n\n.\n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-577",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tứ giác . Điều kiện nào là điều kiện cần và đủ để ?",
-    "explanation": "🖎 Lời giải\n\nTa có:\n\n•  là hình bình hành.\n\n• Mặt khác,  là hình bình hành .\n\nDo đó, điều kiện cần và đủ để  là  là hình bình hành.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-578",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Gọi lần lượt là trung điểm các cạnh. Chứng minh .",
-    "explanation": "🖎 Lời giải\n\nCách 1: \n\nVì là đường trung bình của tam giác  \n\nNên //  nên\n\n (1).\n\nMặt khác: cùng hướng  (2).\n\nTừ (1) và (2) ta có: .\n\nCách 2: Chứng minh  là hình bình hành\n\nDễ chứng minh được và // là hình bình hành",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B1-KHÁI NIỆM VECTƠ-P1.docx",
-    "id": "bq-10-c4-579",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình bình hành , xác định các vectơ ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nÁp dụng quy tắc hình bình hành: \n\n⑵ \n\nÁp dụng tính chất giao hoán: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-581",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác , xác định các vectơ ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n \n\n⑵ \n\nGọi  là điểm sao cho  là hình bình hành.\n\nKhi đó .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-582",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho lục giác đều tâm O, xác định các vectơ. ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n\n\n⑵ \n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-583",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho điểm , xác định vectơ",
-    "explanation": "🖎 Lời giải\n\n\n\n\n\nThấy rằng: \n\nDo đó .\n\n\n\n🏱 Dạng 2. Hiệu hai vectơ – vectơ đối\n\n\n\n⑴ \tĐịnh nghĩa tổng hai vectơ:\n\nCho hai vectơ  và .\n\n🢬 Lấy một điểm  tùy ý, vẽ , . \n\n🢬 Vectơ  được gọi là tổng của hai ;.\n\n⇨ Vậy .\n\n⑵ \tĐịnh nghĩa hiệu hai vectơ:\n\nCho hai vectơ  và .\n\n🢬 Ta gọi hiệu của hai vectơ  và  là vecto , kí hiệu .\n\n🢬 Vectơ đối của vecto , kí hiệu là , là vectơ cùng phương nhưng ngược hướng với vecto .\n\n⑶ \tĐiểm đặc biệt:\n\n🢬 Điểm  là trung điểm của đoạn thẳng  \n\n🢬 Điểm  là trọng tâm của  \n\n⑷ \tTính chất: Với  tùy ý, ta có:\n\n🢬 Tính chất giao hoán .\n\n🢬 Tính chất kết hợp \n\n▶ Quy tắc ba điểm:\n\n» \tVới 3 điểm : .\n\n▶ Quy tắc hiệu vectơ:\n\n» \tVới 3 điểm : .\n\n▶ Quy tắc hình bình hành:\n\n» \tTứ giác  là hình bình hành: .\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-584",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai hình bình hành và có chung đỉnh . Chứng minh rằng",
-    "explanation": "🖎 Lời giải\n\nTheo quy tắc trừ và quy tắc hình bình hành ta có\n\n\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-585",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Gọi lần lượt là trung điểm của . Chứng minh rằng: ⑴ ⑵ với là điểm bất kì",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴ \n\nVì tứ giác  là hình bình hành \n\nNên theo quy tắc hình bình hành ta có , kết hợp với quy tắc trừ\n\n\n\nMà  do  là trung điểm của .\n\nVậy .\n\n⑵  với  là điểm bất kì\n\nTheo quy tắc ba điểm ta có\n\n\n\n\n\n\n\n suy ra .\n\n\n\n🏱 Dạng 3. Chứng minh đẳng thức vectơ\n\n\n\n▶ Tính chất: Với   tùy ý, ta có:\n\n🢬 Tính chất giao hoán .\n\n🢬 Tính chất kết hợp \n\n▶ Quy tắc ba điểm:\n\n» \tVới 3 điểm : .\n\n▶ Quy tắc hiệu vectơ:\n\n» \tVới 3 điểm : .\n\n▶ Quy tắc hình bình hành:\n\n» \tTứ giác  là hình bình hành: .\n\n▶ Quy tắc trung điểm – trọng tâm:\n\n» \tĐiểm  là trung điểm của đoạn thẳng  .\n\nKhi đó \n\n» \tĐiểm  là trọng tâm của  \n\nKhi đó \n\nCác phương pháp biến đổi:\n\n» \tBiến đổi vế này thành vế kia của đẳng thức (xuất phát từ vế phức tạp biến đổi đưa về vế đơn giản).\n\n» \tBiến đổi đẳng thức cần chứng minh về tương đương với một đẳng thức luôn đúng.\n\n» \tXuất phát từ một đẳng thức luôn đúng để biến đổi về đẳng thức cần chứng minh.\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-586",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho bốn điểm bất kỳ và . Hãy chứng minh đẳng thức",
-    "explanation": "🖎 Lời giải\n\nTa có: \n\n\n\n\n\n(Đúng).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-587",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho năm điểm . Chứng minh rằng: ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nBiến đổi vế trái ta có\n\n\n\n.\n\n⑵  \n\nĐẳng thức tương đương với\n\n\n\n (đúng).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-588",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình bình hành tâm . là một điểm bất kì trong mặt phẳng. Chứng minh rằng: ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴ \n\nTa có \n\nTheo quy tắc hình bình hành:\n\n\n\n⑵ \n\nVì  là hình bình hành nên ta có: \n\nTương tự: .\n\n⑶ \n\nCách 1: \n\nVì  là hình bình hành nên \n\n\n\nCách 2: \n\nĐẳng thức tương đương với\n\n (đúng do  là hình bình hành).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-589",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác , gọi là trung điểm và là trung điểm của . ⑴ Chứng minh rằng: . ⑵ Với là điểm bất kì, chứng minh rằng: .",
-    "explanation": "🖎 Lời giải\n\n⑴ Chứng minh rằng: .\n\n🞟 Ta có: \n\n  ( do  là trung điểm )\n\n\n\n ( do  là trung điểm của ) (đpcm).\n\n⑵ Với  là điểm bất kì, chứng minh rằng: .\n\n🞟 Ta có: \n\n\n\n\n\n(đpcm).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-590",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho ngũ giác đều tâm . ⑴ Chứng minh rằng: hai vectơ và đều cùng phương với . ⑵ Chứng minh hai vectơ và cùng phương. ⑶ Chứng minh: .",
-    "explanation": "🖎 Lời giải\n\n⑴ Chứng minh rằng: hai vectơ  và  đều cùng phương với .\n\n🞟 Gọi  là đường thẳng chứa  \n\n🞟 Thì  là một trục đối xứng của ngũ giác đều. \n\n🞟 Ta có:\n\n, trong đó  là đỉnh của hình thoi  và .\n\n🞟 Tương tự , trong đó  là đỉnh của hình thoi  và .\n\n🞟 Do đó hai vectơ  và  đều có giá là đường thẳng  \n\n🞟 Nên hai vectơ  và  cùng phương với nhau và cùng phương với véctơ .\n\n⑵ Chứng minh hai vectơ  và  cùng phương.\n\n🞟 Ta có:  và  là các hình thoi nên ta có:.\n\n🞟 Do đó hai vectơ  và  cùng phương.\n\n⑶ Chứng minh: .\n\n🞟 Theo câu ⑴ ta có:\n\n\n\n🞟 Nên  có giá là đường thẳng .\n\n🞟 Mặt khác:  thì  có giá là đường thẳng .\n\n🞟 Vì  có 2 giá khác nhau nên .\n\n⇨ Vậy  (đpcm).\n\n\n\n🏱 Dạng 4. Độ dài vectơ\n\n\n\nÁp dụng: tính chất, quy tắc (ba điểm, hình bình hành, hiệu vectơ, trung điểm – trọng tâm)\n\nĐể tính  ta thực hiện theo hai bước sau:\n\n» Bước 1: \tBiến đổi và rút gọn biểu thức véctơ , tính chất trung điểm, hình bình hành, trọng tâm,… sao cho  đơn giản nhất.\n\n» Bước 2: \tTính môđun (độ dài) của  dựa vào tính chất hình học đã cho.\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-591",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho bốn điểm bất kỳ và . Hãy chứng minh đẳng thức ⑴ Nếu và cùng hướng thì . ⑵ Nếu và ngược hướng và thì . ⑶ . Khi nào xảy ra dấu đẳng thức.",
-    "explanation": "🖎 Lời giải\n\nGiả sử:  và  thì .\n\n⑴ Nếu  và  cùng hướng thì .\n\n🞟 Nếu  và  cùng hướng thì 3 điểm  cùng thuộc một đường thẳng và nằm giữa . \n\n\n\n🞟 Do đó .\n\n⇨ Vậy .\n\n⑵ Nếu  và  ngược hướng và  thì . \n\n🞟 Nếu  và  ngược hướng và  thì ba điểm  cùng thuộc một đường thẳng và nằm giữa . \n\n\n\n🞟 Do đó .\n\n⇨ Vậy .\n\n⑶ . Khi nào xảy ra dấu đẳng thức.\n\nTừ chứng minh ở câu ⑴ và ⑵:\n\n Nếu  và  cùng phương thì  hoặc .\n\nNếu  và  không cùng phương thì  không thẳng hàng.\n\n🞟 Xét  có hệ thức . Do đó .\n\n🞟 Như vậy, trong mọi trường hợp ta có: , đẳng thức xảy ra khi  và  cùng hướng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-592",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác vuông tại , có , . Gọi là trung điểm . Xác định và tính độ dài các véctơ: ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n🞟 Gọi  là trung điểm  \n\nKhi đó  với  là điểm bất kỳ.\n\n🞟 Nên .\n\n🞟 Xét :.\n\n⇨ Vậy .\n\n⑵ \n\n🞟 Theo giả thiết:  là trung điểm  khi đó  với  là điểm bất kỳ.\n\n.\n\n🞟 Khi đó: .",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-593",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác vuông cân tại , ,. Tính theo : ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có \n\n⑴ \n\n🞟 .\n\n⑵ \n\n🞟 , với  là hình vuông.\n\n⑶ \n\n🞟 , \n\nvới  là hình bình hành.\n\n🞟 Do  vuông tại  và \n\nNên ta có .\n\n🞟 Vậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-594",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình chữ nhật ABCD có , . Gọi , lần lượt là trung điểm của và . Tính ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n🞟 Ta có:  .\n\n🞟 Xét  vuông tại : \n\n\n\n⇨ Vậy \n\n⑵ \n\n🞟 Ta có: \n\n \n\n⇨ Vậy  ( , là hai vec tơ cùng hướng)",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B2-TỔNG HIỆU HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-595",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai điểm phân biệt . Xác định điểm biết ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n\n\nTa có: \n\n\n\n cùng hướng và .\n\n⑵ \n\n\n\nTa có: \n\n cùng hướng và .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-597",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đoạn thẳng và điểm nằm trên đoạn thẳngsao cho . Tìm trong các đẳng thức sau: ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴  \n\nVì  và  cùng hướng và  nên .\n\n⑵  \n\nVì  và  ngược hướng và  nên .\n\n⑶ \n\nVì  và  ngược hướng và  nên .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-598",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác đều . Xác định ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴ \n\n.\n\n⑵ \n\nGọi  là trung điểm của . \n\nTa có:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-599",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . ⑴ Tìm điểm sao cho ⑵ Tìm điểm sao cho",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴ Tìm điểm  sao cho \n\nTa có: \n\n là trọng tâm của tam giác .\n\n⑵ Tìm điểm  sao cho \n\nGọi  là trung điểm của . \n\nTa có: \n\n là trung điểm của .\n\n\n\n🏱 Dạng 2. Sự cùng phương của hai vectơ – Ba điểm thẳng hàng\n\n\n\n⑴ \tHai vectơ cùng phương:\n\n🢬 Điều kiện cần và đủ để hai véc tơ  () là có một số thực  để \n\n⑵ \tBa điểm thẳng hàng:\n\n🢬 Ba điểm phân biệtthẳng hàngcó một số thực để \n\n⑶ \tHai điểm trùng nhau:\n\n🢬 Để chứng minh hai điểm  trùng nhau \n\nchứng minh  với  là một điểm nào đó, hoặc \n\nchứng minh .\n\n⑷ \tHai đường song song:\n\n🢬 Nếu  và hai đường thẳng  và  phân biệt thì .\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-600",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác có trung tuyến . Gọi là trung điểm của và là điểm trên cạnh sao cho . Chứng minh rằng ba điểm thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có  (Do  là đường trung tuyến )\n\n (Do  là trung điểm của )\n\n\n\n \n\n🞟 Mà  nên ⇨ .\n\n🞟 Do đó . Vậy ba điểm  thẳng hàng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-601",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho điểm sao cho . Chứng tỏ rằng thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có: \n\n\n\n\n\n⇨ Vậy:  thẳng hàng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-602",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình bình hành trên lấy điểm , trên lấy điểm sao cho và . Chứng minh thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có: \n\nMà: \n\n\n\n🞟 Khi đó: ⇨ Vậy  thẳng hàng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-603",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Hai điểm được xác định bởi hệ thức và. Chứng minh rằng .",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có  nên .\n\n🞟 Do đó  .\n\n🞟 Ta có \n\n\n\n\n\n .\n\n🞟 Từ  ta có .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-604",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác có trung tuyến . Gọi là trung điểm và thuộc cạnh sao cho . Chứng minh thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có: \n\n\n\n.\n\n🞟 Ta có: .\n\nTừ  hay thẳng hàng.\n\n\n\n🏱 Dạng 3. Tập hợp điểm thỏa mãn đẳng thức\n\n\n\n▶ \tĐể tìm tập hợp điểm  thỏa mãn một đẳng thức véctơ, ta biến đổi đẳng thức véc tơ đó về các tập hợp điểm cơ bản đã biết. Chẳng hạn:\n\n🢬 \tTập hợp các điểm cách đều hai đầu mút của một đoạn thẳng là đường trung trực của đoạn thẳng đó.\n\n🢬 \tTập hợp các điểm cách đều một điểm cố định một khoảng không đổi là đường tròn có tâm là điểm cố định và bán kính là khoảng không đổi.\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-605",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Tìm tập hợp điểm trong mỗi trường hợp sau: ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n⬩ Ta có . \n\n⇨ Vì  và  là hai điểm phân biệt nên không tồn tại điểm .\n\n⑵ \n\n⬩ Gọi  là điểm thoản mãn  (hay  là trọng tâm tam giác ). \n\n⬩ Khi đó \n\n.\n\n⇨ Vậy tập hợp điểm  là trọng tâm tam giác .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-606",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Tìm tập hợp điểm trong mỗi trường hợp sau: ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n⬩  (1).\n\n⬩ Gọi  là trung điểm , khi đó .\n\n⇨ Vậy tập hợp điểm  là đường tròn tâm , bán kính .\n\n⑵ \n\n⬩ Gọi  là trọng tâm , và  là điểm thỏa mãn . \n\n⬩ Biểu thức .\n\n⇨ Vậy tập hợp điểm  là đường trung trực của đoạn .\n\n⑶ \n\n⬩ Gọi  và  lần lượt là các điểm thỏa mãn: . \n\n⬩ Biểu thức .\n\n⇨ Vậy tập hợp điểm  là đường trung trực của đoạn .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-607",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho điểm cố định và hai vectơ cố định. Với mỗi số ta xác định được điểm sao cho . Tìm tập hợp điểm khi thay đổi.",
-    "explanation": "🖎 Lời giải\n\n⬩ Từ  dựng ; thì  cố định.\n\n\n\n.\n\n⬩ Từ đó suy ra  thẳng hàng. \n\nVậy tập hợp điểm M chính là đường thẳng .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-608",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho và ba vectơ cố định . Với mỗi số thực , ta lấy các điểm sao cho , , . Tìm quỹ tích trọng tâm của khi thay đổi.",
-    "explanation": "🖎 Lời giải\n\n⬩ Gọi  là trọng tâm , khi đó:\n\n \n\n \n\n \n\n⬩ Đặt  thì vectơ  cố định và .\n\n🞊 Trường hợp 1: Nếu  thì các điểm  trùng với điểm .\n\n🞊 Trường hợp 2: Nếu  thì quỹ tích các điểm  là đường thẳng đi qua  và song song với giá của vectơ .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-609",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "(*) Cho tứ giác . Với mỗi số tùy ý, lấy các điểm sao cho , . Tìm tập hợp các trung điểm của đoạn thẳng khi thay đổi.",
-    "explanation": "🖎 Lời giải\n\n⬩ Gọi  lần lượt là trung điểm của  và .\n\n⬩ Khi đó:  \n\n⬩ Vì  và  lần lượt là trung điểm  và  \n\nNên  \n\n⬩ Do đó: khi  thay đổi, tập hợp các điểm  là đường thẳng .\n\n\n\n🏱 Dạng 4. Biểu diễn vectơ theo 2 vectơ không cùng phương\n\n\n\nMọi vec tơ  đều phân tích được một cách duy nhất theo hai véc tơ , nghĩa là có duy nhất cặp số  thực duy nhất sao cho .\n\nTa lưu ý các trường hợp đặc biệt:\n\n⑴ \tNếu  là trung điểm của  thì  \n\nvà , ta có \n\n⑵ \tNếu  là trọng tâm của  thì \n\nvà , ta có \n\n⑶ \tNếu ba biểm  thẳng hàng thì , với số  xác định.\n\n⑷ \tNếu  là hình bình hành thì .\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-610",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác . Gọi là một điểm trên cạnh sao cho . Chứng minh rằng: .",
-    "explanation": "🖎 Lời giải\n\n\n\nTa có:  (đpcm).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-611",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho có trung tuyến là trung điểm của Hãy biểu diễn vectơ theo 2 vectơ và",
-    "explanation": "🖎 Lời giải\n\n🞊 Cách 1: \n\nVì  là trung điểm của  \n\nNên  \n\n🞊 Cách 2: \n\nDo  là trung điểm của  nên \n\n🞟 Áp dụng quy tắc 3 điểm, ta có:  \n\n🞟 Lại có:  \n\n🞟 Cộng vế với vế của  ta được: \n\n \n\n🞊 Cách 3: \n\nXét hình bình hành  có  là trung điểm của  nên  cũng là trung điểm của  \n\n🞟 Áp dụng quy tắc hình bình hành:  \n\n🞟 Từ",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-612",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gọi là trọng tâm của . Hãy biểu diễn các vectơ theo",
-    "explanation": "🖎 Lời giải\n\n🞟 Ta có: . \n\n🞟 Vì  là trọng tâm của tam giác  \n\nNên .\n\n🞟 Ta có: .\n\n🞟 Ta có:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-613",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho và là hai trung tuyến của tam giác , trọng tâm . Hãy phân tích các vectơ , , theo hai vectơ ,",
-    "explanation": "🖎 Lời giải\n\n* \n\n* \n\n*",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-614",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho với lần lượt được xác định bởi . ⑴ Tính theo . ⑵ Chứng minh ba điểm thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n⑴ Tính  theo . \n\n🞟 Ta có: \n\n.\n\n🞟 \n\n.\n\n⑵ Chứng minh ba điểm  thẳng hàng. \n\n🞟 Theo câu ⑴: \n\n⇨ Vậy  thẳng hàng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B3-TÍCH CỦA MỘT VECTƠ VỚI MỘT SỐ-P1.docx",
-    "id": "bq-10-c4-615",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho , với , , . Tính ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n.\n\n⑵ \n\n\n\n⑶ \n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-617",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác vuông tại có , . Tính các tích vô hướng sau ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n⬩ Ta có:  ;\n\n⑴ \n\n⬩ .\n\n⑵ \n\n⬩ .\n\n⑶ \n\n⬩ .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-618",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác đều cạnh . Tính các tích vô hướng sau ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n⬩ \n\n⑵ \n\n⬩ \n\n.\n\n\n\n🏱 Dạng 2. Xác định góc giữa hai vectơ\n\n\n\n⑴ \tTính góc: \n\n⑵ \tTính độ dài:  \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-619",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho . Định góc giữa hai vectơ biết: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n⬩ Ta có: .\n\n⑵ \n\n⬩ Ta có: .\n\n⑶ \n\n⬩ Ta có: .\n\n⑷ \n\n\n\nTa có: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-620",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác đều Tính",
-    "explanation": "🖎 Lời giải\n\n\n\nVẽ . Khi đó",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-621",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác có . ⑴ Tính ⑵ Tính ⑶ Tính độ dài đường trung tuyến ứng với cạnh của tam giác .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tính \n\n⬩ Áp dụng định lý Cosin trong tam giác, ta có:.\n\n⑵ Tính \n\n⬩ Ta có \n\n⬩ Do đó: \n\n\n\n.\n\n⑶ Tính độ dài đường trung tuyến ứng với cạnh  của tam giác .\n\n⬩ Áp dụng công thức độ dài đường trung tuyến, ta có:\n\n\n\n\n\n🏱 Dạng 3. Chứng minh đẳng thức liên quan tích vô hướng\n\n\n\n⑴ \tDựa vào định nghĩa: Tích vô hướng của  và  là một số.\n\n▶ Kí hiệu là  được xác định bởi công thức .\n\n⑵ \tTính chất:\n\nVới ba vectơ  bất kì và mọi số thực  ta có:\n\n1.  ( tính chất giao hoán).\t2.  (tính chất phân phối).\n\n3. .\t4. .\n\n⑶ \tChú ý: \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-622",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác Chứng minh rằng: với điểm tuỳ ý ta có:",
-    "explanation": "🖎 Lời giải\n\n⬩ Ta có .\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-623",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho là trung điểm của và là một điểm tùy ý. Chứng minh rằng:",
-    "explanation": "🖎 Lời giải\n\n⬩ Ta có:  , (do là trung điểm của đoạn thẳng ).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-624",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho là trung điểm của đoạn thẳng và là điểm tùy ý. Chứng minh rằng:",
-    "explanation": "🖎 Lời giải\n\nĐẳng thức cần chứng minh được viết lại là \n\nSử dụng quy tắc ba điểm:  (đpcm).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-625",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho có 3 trung tuyến . Chứng minh rằng:",
-    "explanation": "🖎 Lời giải\n\n⬩ Do  có 3 trung tuyến  nên ta có:\n\n\n\n.\n\n.\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-626",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho nửa đường tròn đường kính . Có và là hai dây thuộc nửa đường tròn cắt nhau tại .",
-    "explanation": "🖎 Lời giải\n\nTa có \n\n\n\nVì  là đường kính nên  \n\nSuy ra \n\nDo đó  (đpcm).\n\n\n\n\n\n🏱 Dạng 4. Tập hợp điểm\n\n\n\n🔿 \tLoại 1:  cố định)\n\n🢬 Với : Tập hợp các điểm là đường tròn đường kính  \n\n🢬 Với : Gọi  là trung điểm :\n\n\n\n⑴ Nếu . Tập hợp các điểm  là đường tròn tâm ; .\n\n⑵ Nếu . Tập hợp các điểm là một điểm \n\n⑶ Nếu : Tập hợp các điểm là  .\n\n🔿 \tLoại 2:   cố định,  có hướng, độ dài xác định)\n\n🢬 Với : Tập hợp các điểm  là đường thẳng qua , có giá vuông góc với giá của \n\n🢬 Với :  với  là hình chiếu của  trên giá của   cố định.\n\nTập hợp các điểm  là đường thẳng qua , có giá vuông góc với giá của .\n\n🔿 \tLoại 3:   cố định; hằng số, )\n\n🢬 Gọi  thoả  cố định.\n\n \n\n\n\n⑴ Nếu . Tập hợp các điểm  là đường tròn tâm ; .\n\n⑵ Nếu . Tập hợp các điểm là một điểm \n\n⑶ Nếu : Tập hợp các điểm là  .\n\n🔿 \tLoại 4:   cố định; hằng số, )\n\n🢬 Gọi  thoả  cố định.\n\n🢬 Tương tự \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-627",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho . Tìm tập hợp các điểm sao cho ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTa có: \n\nDo  cố định nên tập hợp các điểm  là đường thẳng qua  và vuông góc với đường thẳng  .\n\n⑵ \n\nTa có: \n\n\n\n (với  là trung điểm )\n\nđường tròn đường kính .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-628",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai điểm cố định có độ dài bằng , vectơ khác và số thực cho trước. Tìm tập hợp điểm sao cho ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nGọi  là trung điểm của  \n\nTa có: \n\n\n\n(Do )\n\nVậy tập hợp điểm  là đường tròn tâm  bán kính .\n\n⑵ \n\n\n\nVậy tập hợp điểm  là đường thẳng vuông góc với đường thẳng  tại.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-629",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hình vuông tâm . Tìm tập hợp các điểm thỏa mãn .",
-    "explanation": "🖎 Lời giải\n\nTa có \n\n\n\n\n\n.\n\nVậy tập hợp điểm  là đường thẳng .\n\n\n\n🏱 Dạng 5. Chứng minh vuông góc dùng tích vô hướng\n\n\n\n⑴ \tDựa vào định nghĩa: Tích vô hướng của  và  là một số.\n\n▶ Kí hiệu là  được xác định bởi công thức .\n\n⑵ \tTính chất:\n\nVới ba vectơ  bất kì và mọi số thực  ta có:\n\n1.  ( tính chất giao hoán).\t2.  (tính chất phân phối).\n\n3. .\t4. .\n\n⑶ \tChú ý: \t🢬 \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-630",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho . Biết . Chứng minh rằng: .",
-    "explanation": "🖎 Lời giải\n\n⬩ Ta có \n\n⬩ Với .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-631",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tứ giác Chứng minh rằng:",
-    "explanation": "🖎 Lời giải\n\n\n\n\n\n\n\n\n\n\n\nDo đó",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-632",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tam giác đều cạnh . Lấy các điểm lần lượt trên các cạnh sao cho , , . . Xác định để và vuông góc với nhau.",
-    "explanation": "🖎 Lời giải\n\n⬩ Ta có \n\n⬩ Do đó \n\n⬩  và  vuông góc với nhau.\n\n\n\n \n\n\n\n .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c4",
-    "chapterName": "Chương IV: Vectơ",
-    "sourceCitation": "C5-B4-TÍCH VÔ HƯỚNG HAI VECTƠ-P1.docx",
-    "id": "bq-10-c4-633",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c4-mc-1789364775906-45ee",
     "gradeNumber": 10,
     "chapterId": "c4-vecto",
@@ -1906,5 +1138,3365 @@
     "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
     "sourceCitation": "Tài liệu dự án Toán 10: Chương IV: Vectơ",
     "createdAt": "2026-09-14T05:46:15.910Z"
+  },
+  {
+    "id": "bq-10-ai-10.7.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Giá của vectơ $\\overrightarrow{AB}$ (với $A \\ne B$) là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Đường thẳng đi qua hai điểm $A$ và $B$."
+      },
+      {
+        "key": "B",
+        "text": "Đoạn thẳng nối $A$ và $B$."
+      },
+      {
+        "key": "C",
+        "text": "Tia gốc $A$ đi qua $B$."
+      },
+      {
+        "key": "D",
+        "text": "Độ dài khoảng cách $AB$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Định nghĩa SGK: Đường thẳng đi qua điểm đầu và điểm cuối của vectơ gọi là giá của vectơ đó.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành $ABCD$. Cặp vectơ nào sau đây CÙNG PHƯƠNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AD}$ và $\\overrightarrow{BC}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB}$ và $\\overrightarrow{AD}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AC}$ và $\\overrightarrow{BD}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{BC}$ và $\\overrightarrow{CD}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $AD // BC$ nên giá của $\\overrightarrow{AD}$ song song với giá của $\\overrightarrow{BC}$, do đó hai vectơ cùng phương.",
+    "sourceCitation": "Ngân hàng đề thi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB$ có trung điểm $M$. Cặp vectơ nào sau đây NGƯỢC HƯỚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MA}$ và $\\overrightarrow{MB}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AM}$ và $\\overrightarrow{MB}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AM}$ và $\\overrightarrow{AB}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{MB}$ và $\\overrightarrow{AB}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$M$ nằm giữa $A$ và $B$ nên hai tia $MA$ và $MB$ đối nhau $\\implies \\overrightarrow{MA}$ và $\\overrightarrow{MB}$ ngược hướng.",
+    "sourceCitation": "Đề kiểm tra chuyên đề Vectơ"
+  },
+  {
+    "id": "bq-10-ai-10.7.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các khẳng định sau, khẳng định nào ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vectơ $\\overrightarrow{AA}$ là vectơ-không."
+      },
+      {
+        "key": "B",
+        "text": "Độ dài của vectơ $\\vec{0}$ là $1$."
+      },
+      {
+        "key": "C",
+        "text": "Vectơ $\\vec{0}$ không có hướng xác định và không cùng phương với vectơ nào."
+      },
+      {
+        "key": "D",
+        "text": "Vectơ $\\vec{0}$ luôn có độ dài lớn hơn $0$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vectơ có điểm đầu trùng điểm cuối như $\\overrightarrow{AA}$ là vectơ-không, có độ dài bằng $0$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ vuông cân tại $A$ có $AB = AC = 3\\sqrt{2}$. Độ dài của vectơ $\\overrightarrow{BC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6$"
+      },
+      {
+        "key": "B",
+        "text": "$3\\sqrt{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$3$"
+      },
+      {
+        "key": "D",
+        "text": "$12$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$BC = \\sqrt{AB^2 + AC^2} = \\sqrt{18 + 18} = 6 \\implies |\\overrightarrow{BC}| = 6$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là các đỉnh của tam giác?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6$"
+      },
+      {
+        "key": "B",
+        "text": "$3$"
+      },
+      {
+        "key": "C",
+        "text": "$9$"
+      },
+      {
+        "key": "D",
+        "text": "$12$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số vectơ là $3 \\times 2 = 6$ (gồm $\\overrightarrow{AB}, \\overrightarrow{BA}, \\overrightarrow{BC}, \\overrightarrow{CB}, \\overrightarrow{CA}, \\overrightarrow{AC}$).",
+    "sourceCitation": "Đề thi học kì 1 Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thoi $ABCD$. Khẳng định nào sau đây là ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{DC}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{BC}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AD} = \\overrightarrow{CD}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AC} = \\overrightarrow{BD}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Hình thoi là hình bình hành nên $\\overrightarrow{AB} = \\overrightarrow{DC}$.",
+    "sourceCitation": "Bộ đề Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Lấy điểm $D$ đối xứng với $A$ qua $M$. Khi đó vectơ $\\overrightarrow{AB}$ bằng vectơ nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{CD}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{DC}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{BD}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AC}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tứ giác $ABDC$ có hai đường chéo $AD$ và $BC$ cắt nhau tại trung điểm $M$ của mỗi đường nên $ABDC$ là hình bình hành. Do đó $\\overrightarrow{AB} = \\overrightarrow{CD}$.",
+    "sourceCitation": "Chuyên đề Hình học 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Vectơ đơn vị là vectơ có đặc điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Có độ dài bằng $1$."
+      },
+      {
+        "key": "B",
+        "text": "Có hướng luôn chỉ sang phải."
+      },
+      {
+        "key": "C",
+        "text": "Điểm đầu trùng với gốc tọa độ."
+      },
+      {
+        "key": "D",
+        "text": "Có giá đi qua gốc tọa độ."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định nghĩa: Vectơ có độ dài bằng $1$ gọi là vectơ đơn vị.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ngũ giác đều $ABCDE$. Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là các đỉnh của ngũ giác?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$20$"
+      },
+      {
+        "key": "B",
+        "text": "$10$"
+      },
+      {
+        "key": "C",
+        "text": "$15$"
+      },
+      {
+        "key": "D",
+        "text": "$25$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số vectơ khác $\\vec{0}$ là $5 \\times 4 = 20$.",
+    "sourceCitation": "Đề khảo sát Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác đều $ABC$ cạnh $2a$. Chiều cao $AH$ có độ dài vectơ $|\\overrightarrow{AH}|$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$a\\sqrt{3}$"
+      },
+      {
+        "key": "B",
+        "text": "$a$"
+      },
+      {
+        "key": "C",
+        "text": "$2a$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{a\\sqrt{3}}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$AH = \\frac{2a\\sqrt{3}}{2} = a\\sqrt{3} \\implies |\\overrightarrow{AH}| = a\\sqrt{3}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tứ giác $ABCD$. Điều kiện để $\\overrightarrow{AB} = \\overrightarrow{DC}$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tứ giác $ABCD$ là hình bình hành."
+      },
+      {
+        "key": "B",
+        "text": "Tứ giác $ABDC$ là hình bình hành."
+      },
+      {
+        "key": "C",
+        "text": "$AB = DC$."
+      },
+      {
+        "key": "D",
+        "text": "$AB // DC$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} = \\overrightarrow{DC} \\iff AB // DC$ và $AB = DC$, tức là tứ giác $ABCD$ là hình bình hành.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.13",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thoi $ABCD$ tâm $O$. Vectơ $\\overrightarrow{AO}$ bằng vectơ nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{OC}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{CO}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{BO}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{OD}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$O$ là trung điểm $AC$, hướng từ $A \\to O$ trùng hướng từ $O \\to C$ và $AO = OC$ nên $\\overrightarrow{AO} = \\overrightarrow{OC}$.",
+    "sourceCitation": "Bộ đề Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.14",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Trên tia đối của tia $AB$ lấy điểm $D$ sao cho $AD = AB$. Khi đó:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ ngược hướng."
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AD} = \\overrightarrow{AB}$."
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ cùng hướng."
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AD}$ và $\\overrightarrow{AB}$ không cùng phương."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $D$ thuộc tia đối của tia $AB$ nên hai tia $AD$ và $AB$ đối nhau $\\implies \\overrightarrow{AD}$ và $\\overrightarrow{AB}$ ngược hướng.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.15",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình vuông $ABCD$ có cạnh bằng $a$, tâm $O$. Độ dài của vectơ $\\overrightarrow{OB}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{a\\sqrt{2}}{2}$"
+      },
+      {
+        "key": "B",
+        "text": "$a\\sqrt{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{a}{2}$"
+      },
+      {
+        "key": "D",
+        "text": "$a$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường chéo $BD = a\\sqrt{2}$. Vì $O$ là trung điểm $BD$ nên $OB = \\frac{a\\sqrt{2}}{2} \\implies |\\overrightarrow{OB}| = \\frac{a\\sqrt{2}}{2}$.",
+    "sourceCitation": "Đề khảo sát chất lượng Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.16",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Gọi $I$ là trung điểm của $BC$. Độ dài của vectơ $\\overrightarrow{BI}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5$"
+      },
+      {
+        "key": "B",
+        "text": "$10$"
+      },
+      {
+        "key": "C",
+        "text": "$7$"
+      },
+      {
+        "key": "D",
+        "text": "$2.5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cạnh huyền $BC = \\sqrt{6^2 + 8^2} = 10$. Vì $I$ là trung điểm của $BC$ nên $BI = 5 \\implies |\\overrightarrow{BI}| = 5$.",
+    "sourceCitation": "Đề thi thử Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.17",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thang $ABCD$ ($AB // CD$, $AB < CD$). Khẳng định nào sau đây là ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{DC}$."
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{DC}$."
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AB}$ ngược hướng với $\\overrightarrow{DC}$."
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AD}$ cùng phương với $\\overrightarrow{BC}$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Trong hình thang $ABCD$, đáy $AB // DC$, chiều từ $A \\to B$ cùng hướng với $D \\to C$ nên $\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{DC}$ (tuy nhiên $|\\overrightarrow{AB}| \\ne |\\overrightarrow{DC}|$ do $AB < CD$).",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.7.18",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB = 20$. Lấy điểm $C$ trên đoạn $AB$ sao cho $AC = \\frac{2}{5}AB$. Độ dài của vectơ $\\overrightarrow{CB}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$12$"
+      },
+      {
+        "key": "B",
+        "text": "$8$"
+      },
+      {
+        "key": "C",
+        "text": "$10$"
+      },
+      {
+        "key": "D",
+        "text": "$15$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$AC = \\frac{2}{5} \\times 20 = 8$. Do đó $CB = AB - AC = 20 - 8 = 12 \\implies |\\overrightarrow{CB}| = 12$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.7.19",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hai chiếc ô tô khởi hành cùng lúc từ hai vị trí $A$ và $B$ trên một con đường thẳng, chạy ngược chiều nhau để gặp nhau với cùng tốc độ $60\\text{ km/h}$. Gọi $\\vec{v}_1$ và $\\vec{v}_2$ lần lượt là vectơ vận tốc của hai xe. Khẳng định nào sau đây là ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\vec{v}_1$ và $\\vec{v}_2$ là hai vectơ ngược hướng có cùng độ lớn."
+      },
+      {
+        "key": "B",
+        "text": "$\\vec{v}_1 = \\vec{v}_2$ vì hai xe chạy cùng tốc độ."
+      },
+      {
+        "key": "C",
+        "text": "$\\vec{v}_1$ và $\\vec{v}_2$ không cùng phương vì hai xe đi lại gần nhau."
+      },
+      {
+        "key": "D",
+        "text": "$\\vec{v}_1$ và $\\vec{v}_2$ cùng hướng."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì chạy trên cùng một đường thẳng nên giá của hai vectơ trùng nhau (cùng phương). Hai xe chạy ngược chiều nhau nên hai vectơ ngược hướng, tốc độ bằng nhau nên độ lớn bằng nhau.",
+    "sourceCitation": "Toán học ứng dụng"
+  },
+  {
+    "id": "bq-10-ai-10.7.20",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một vận động viên chạy bộ đều đặn trên một đường chạy thẳng dài $400\\text{ m}$ theo hướng từ Tây sang Đông hết 50 giây. Độ lớn của vectơ vận tốc trung bình của vận động viên là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$8\\text{ m/s}$"
+      },
+      {
+        "key": "B",
+        "text": "$10\\text{ m/s}$"
+      },
+      {
+        "key": "C",
+        "text": "$6\\text{ m/s}$"
+      },
+      {
+        "key": "D",
+        "text": "$12\\text{ m/s}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tốc độ trung bình: $v = \\frac{s}{t} = \\frac{400}{50} = 8\\text{ m/s}$. Vậy độ lớn vectơ vận tốc là $8\\text{ m/s}$.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho 4 điểm phân biệt $A, B, C, D$ theo thứ tự nằm trên một đường thẳng sao cho $AB = BC = CD$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{BC}$.",
+        "isCorrect": true,
+        "explanation": "Cùng độ dài và cùng hướng sang phải nên $\\overrightarrow{AB} = \\overrightarrow{BC}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AC} = \\overrightarrow{BD}$.",
+        "isCorrect": true,
+        "explanation": "$AC = 2AB = BD$ và cùng hướng nên $\\overrightarrow{AC} = \\overrightarrow{BD}$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{BA}$ và $\\overrightarrow{CD}$ cùng hướng.",
+        "isCorrect": false,
+        "explanation": "$\\overrightarrow{BA}$ hướng sang trái, còn $\\overrightarrow{CD}$ hướng sang phải nên chúng ngược hướng."
+      },
+      {
+        "key": "d",
+        "text": "$|\\overrightarrow{AD}| = 3|\\overrightarrow{AB}|$.",
+        "isCorrect": true,
+        "explanation": "$AD = 3AB$ nên $|\\overrightarrow{AD}| = 3|\\overrightarrow{AB}|.$"
+      }
+    ],
+    "explanation": "[Ý a]: Cùng độ dài và cùng hướng sang phải nên $\\overrightarrow{AB} = \\overrightarrow{BC}$. | [Ý b]: $AC = 2AB = BD$ và cùng hướng nên $\\overrightarrow{AC} = \\overrightarrow{BD}$. | [Ý c]: $\\overrightarrow{BA}$ hướng sang trái, còn $\\overrightarrow{CD}$ hướng sang phải nên chúng ngược hướng. | [Ý d]: $AD = 3AB$ nên $|\\overrightarrow{AD}| = 3|\\overrightarrow{AB}|.$",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ tâm $O$ có cạnh bằng $a$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{DC}$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì $AB // DC, AB = DC$ và cùng hướng."
+      },
+      {
+        "key": "b",
+        "text": "$|\\overrightarrow{AB}| = |\\overrightarrow{BC}| = a$.",
+        "isCorrect": true,
+        "explanation": "Cạnh hình vuông bằng $a$ nên độ dài bằng nhau."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{AC} = \\overrightarrow{BD}$.",
+        "isCorrect": false,
+        "explanation": "Hai đường chéo vuông góc nhau nên không cùng phương, do đó không thể bằng nhau."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{OB} = \\overrightarrow{DO}$.",
+        "isCorrect": true,
+        "explanation": "$O$ là trung điểm $BD$, chiều từ $D \\to O$ cùng chiều từ $O \\to B$ và $DO = OB$ nên $\\overrightarrow{OB} = \\overrightarrow{DO}$."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì $AB // DC, AB = DC$ và cùng hướng. | [Ý b]: Cạnh hình vuông bằng $a$ nên độ dài bằng nhau. | [Ý c]: Hai đường chéo vuông góc nhau nên không cùng phương, do đó không thể bằng nhau. | [Ý d]: $O$ là trung điểm $BD$, chiều từ $D \\to O$ cùng chiều từ $O \\to B$ và $DO = OB$ nên $\\overrightarrow{OB} = \\overrightarrow{DO}$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$. Gọi $D, E, F$ lần lượt là trung điểm của $BC, CA, AB$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{FE} = \\overrightarrow{BD}$.",
+        "isCorrect": true,
+        "explanation": "$FE$ là đường trung bình song song và bằng $BD$ nên $\\overrightarrow{FE} = \\overrightarrow{BD}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{FE} = \\overrightarrow{DC}$.",
+        "isCorrect": true,
+        "explanation": "$BD = DC$ nên $\\overrightarrow{FE} = \\overrightarrow{DC}$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{FD}$ và $\\overrightarrow{AC}$ ngược hướng.",
+        "isCorrect": false,
+        "explanation": "$FD // AC$, hướng từ $F \\to D$ cùng hướng với $A \\to C$ nên chúng cùng hướng."
+      },
+      {
+        "key": "d",
+        "text": "Tứ giác $AFDE$ là hình bình hành.",
+        "isCorrect": true,
+        "explanation": "Vì $AF // ED$ và $AF = ED = \\frac{1}{2}AB$ nên $AFDE$ là hình bình hành."
+      }
+    ],
+    "explanation": "[Ý a]: $FE$ là đường trung bình song song và bằng $BD$ nên $\\overrightarrow{FE} = \\overrightarrow{BD}$. | [Ý b]: $BD = DC$ nên $\\overrightarrow{FE} = \\overrightarrow{DC}$. | [Ý c]: $FD // AC$, hướng từ $F \\to D$ cùng hướng với $A \\to C$ nên chúng cùng hướng. | [Ý d]: Vì $AF // ED$ và $AF = ED = \\frac{1}{2}AB$ nên $AFDE$ là hình bình hành.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hình thang cân $ABCD$ ($AB // CD, AB < CD$). Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{CD}$ cùng phương.",
+        "isCorrect": true,
+        "explanation": "Vì $AB // CD$ nên hai vectơ cùng phương."
+      },
+      {
+        "key": "b",
+        "text": "Hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{DC}$ cùng hướng.",
+        "isCorrect": true,
+        "explanation": "Cùng hướng từ trái sang phải theo hai đáy."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{AD} = \\overrightarrow{BC}$.",
+        "isCorrect": false,
+        "explanation": "Hai cạnh bên của hình thang không song song nên không cùng phương, do đó không bằng nhau."
+      },
+      {
+        "key": "d",
+        "text": "$|\\overrightarrow{AC}| = |\\overrightarrow{BD}|$.",
+        "isCorrect": true,
+        "explanation": "Hình thang cân có hai đường chéo bằng nhau nên $|\\overrightarrow{AC}| = |\\overrightarrow{BD}|.$"
+      }
+    ],
+    "explanation": "[Ý a]: Vì $AB // CD$ nên hai vectơ cùng phương. | [Ý b]: Cùng hướng từ trái sang phải theo hai đáy. | [Ý c]: Hai cạnh bên của hình thang không song song nên không cùng phương, do đó không bằng nhau. | [Ý d]: Hình thang cân có hai đường chéo bằng nhau nên $|\\overrightarrow{AC}| = |\\overrightarrow{BD}|.$",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Độ dài của vectơ là một số thực không âm.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách giữa hai điểm luôn $\\ge 0$."
+      },
+      {
+        "key": "b",
+        "text": "Hai vectơ cùng phương thì luôn có giá song song với nhau.",
+        "isCorrect": false,
+        "explanation": "Giá của chúng có thể trùng nhau."
+      },
+      {
+        "key": "c",
+        "text": "Nếu $\\vec{a}$ cùng hướng với $\\vec{b}$ và $\\vec{b}$ cùng hướng với $\\vec{c}$ (khác $\\vec{0}$) thì $\\vec{a}$ cùng hướng với $\\vec{c}$.",
+        "isCorrect": true,
+        "explanation": "Quan hệ cùng hướng giữa các vectơ khác $\\vec{0}$ có tính chất bắc cầu."
+      },
+      {
+        "key": "d",
+        "text": "Vectơ $\\vec{0}$ có vô số điểm đầu và điểm cuối.",
+        "isCorrect": false,
+        "explanation": "Vectơ $\\vec{0}$ cụ thể như $\\overrightarrow{AA}$ có điểm đầu là $A$ và điểm cuối là $A$."
+      }
+    ],
+    "explanation": "[Ý a]: Khoảng cách giữa hai điểm luôn $\\ge 0$. | [Ý b]: Giá của chúng có thể trùng nhau. | [Ý c]: Quan hệ cùng hướng giữa các vectơ khác $\\vec{0}$ có tính chất bắc cầu. | [Ý d]: Vectơ $\\vec{0}$ cụ thể như $\\overrightarrow{AA}$ có điểm đầu là $A$ và điểm cuối là $A$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ có cạnh bằng $a$, trọng tâm $G$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$|\\overrightarrow{AB}| = |\\overrightarrow{BC}| = |\\overrightarrow{CA}| = a$.",
+        "isCorrect": true,
+        "explanation": "Ba cạnh tam giác đều bằng $a$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AB} = \\overrightarrow{BC}$.",
+        "isCorrect": false,
+        "explanation": "Hai cạnh cắt nhau nên không cùng phương, không thể bằng nhau."
+      },
+      {
+        "key": "c",
+        "text": "Khoảng cách từ trọng tâm $G$ đến mỗi đỉnh bằng $\\frac{a\\sqrt{3}}{3}$.",
+        "isCorrect": true,
+        "explanation": "$AG = \\frac{2}{3} h = \\frac{2}{3} \\frac{a\\sqrt{3}}{2} = \\frac{a\\sqrt{3}}{3}$."
+      },
+      {
+        "key": "d",
+        "text": "Ba vectơ $\\overrightarrow{GA}, \\overrightarrow{GB}, \\overrightarrow{GC}$ có cùng độ dài.",
+        "isCorrect": true,
+        "explanation": "Trong tam giác đều, khoảng cách từ trọng tâm đến 3 đỉnh là bằng nhau."
+      }
+    ],
+    "explanation": "[Ý a]: Ba cạnh tam giác đều bằng $a$. | [Ý b]: Hai cạnh cắt nhau nên không cùng phương, không thể bằng nhau. | [Ý c]: $AG = \\frac{2}{3} h = \\frac{2}{3} \\frac{a\\sqrt{3}}{2} = \\frac{a\\sqrt{3}}{3}$. | [Ý d]: Trong tam giác đều, khoảng cách từ trọng tâm đến 3 đỉnh là bằng nhau.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có trực tâm $H$ và $O$ là tâm đường tròn ngoại tiếp. Gọi $B'$ là điểm đối xứng của $B$ qua $O$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$B'C \\perp BC$.",
+        "isCorrect": true,
+        "explanation": "Góc $\\widehat{BCB'} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn đường kính $BB'$)."
+      },
+      {
+        "key": "b",
+        "text": "$B'C // AH$.",
+        "isCorrect": true,
+        "explanation": "Cùng vuông góc với $BC$ nên $B'C // AH$."
+      },
+      {
+        "key": "c",
+        "text": "Tứ giác $AHCB'$ là hình bình hành.",
+        "isCorrect": true,
+        "explanation": "Tương tự $B'A // CH$ và $B'C // AH$ nên $AHCB'$ là hình bình hành."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{AH} = \\overrightarrow{B'C}$.",
+        "isCorrect": true,
+        "explanation": "Vì $AHCB'$ là hình bình hành nên $\\overrightarrow{AH} = \\overrightarrow{B'C}$."
+      }
+    ],
+    "explanation": "[Ý a]: Góc $\\widehat{BCB'} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn đường kính $BB'$). | [Ý b]: Cùng vuông góc với $BC$ nên $B'C // AH$. | [Ý c]: Tương tự $B'A // CH$ và $B'C // AH$ nên $AHCB'$ là hình bình hành. | [Ý d]: Vì $AHCB'$ là hình bình hành nên $\\overrightarrow{AH} = \\overrightarrow{B'C}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.7.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Hai người cùng kéo một hòn đá lớn: người thứ nhất kéo với lực $\\vec{F}_1$ có độ lớn $300\\text{ N}$ hướng về phía Đông; người thứ hai kéo với lực $\\vec{F}_2$ có độ lớn $400\\text{ N}$ hướng về phía Bắc. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Hai lực $\\vec{F}_1$ và $\\vec{F}_2$ có phương vuông góc với nhau.",
+        "isCorrect": true,
+        "explanation": "Hướng Đông và hướng Bắc vuông góc nhau."
+      },
+      {
+        "key": "b",
+        "text": "Hai vectơ lực $\\vec{F}_1$ và $\\vec{F}_2$ không cùng phương.",
+        "isCorrect": true,
+        "explanation": "Vì hai giá vuông góc nhau nên không cùng phương."
+      },
+      {
+        "key": "c",
+        "text": "Độ lớn của lực $\\vec{F}_2$ lớn hơn độ lớn của lực $\\vec{F}_1$.",
+        "isCorrect": true,
+        "explanation": "$400\\text{ N} > 300\\text{ N}$."
+      },
+      {
+        "key": "d",
+        "text": "Nếu hòn đá chuyển động, nó sẽ di chuyển theo hướng Đông Bắc.",
+        "isCorrect": true,
+        "explanation": "Lực tổng hợp có hướng nằm giữa hướng Đông và hướng Bắc (hướng Đông Bắc)."
+      }
+    ],
+    "explanation": "[Ý a]: Hướng Đông và hướng Bắc vuông góc nhau. | [Ý b]: Vì hai giá vuông góc nhau nên không cùng phương. | [Ý c]: $400\\text{ N} > 300\\text{ N}$. | [Ý d]: Lực tổng hợp có hướng nằm giữa hướng Đông và hướng Bắc (hướng Đông Bắc).",
+    "sourceCitation": "Vật lý 10 & Vectơ thực tiễn"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho 6 điểm phân biệt không có ba điểm nào thẳng hàng. Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối là các điểm đã cho?",
+    "correctAnswer": "30",
+    "explanation": "$6 \\times 5 = 30$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ có diện tích bằng $36\\text{ cm}^2$. Tính độ dài của vectơ $\\overrightarrow{AB}$ (theo cm).",
+    "correctAnswer": "6",
+    "explanation": "Cạnh hình vuông $a = \\sqrt{36} = 6\\text{ cm} \\implies |\\overrightarrow{AB}| = 6$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ có cạnh bằng $5\\sqrt{2}$. Tính độ dài của vectơ $\\overrightarrow{BD}$.",
+    "correctAnswer": "10",
+    "explanation": "$BD = 5\\sqrt{2} \\cdot \\sqrt{2} = 10 \\implies |\\overrightarrow{BD}| = 10$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình bình hành $ABCD$. Có bao nhiêu vectơ khác $\\vec{0}$ bằng với vectơ $\\overrightarrow{AB}$ mà điểm đầu và điểm cuối là các đỉnh của hình bình hành (không tính chính vectơ $\\overrightarrow{AB}$)?",
+    "correctAnswer": "1",
+    "explanation": "Chỉ có duy nhất vectơ $\\overrightarrow{DC}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ vuông tại $B$ có $AB = 5, BC = 12$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
+    "correctAnswer": "13",
+    "explanation": "$AC = \\sqrt{5^2 + 12^2} = 13 \\implies |\\overrightarrow{AC}| = 13$.",
+    "sourceCitation": "Đề thi học kì 1 Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 16$. Gọi $M$ là trung điểm của cạnh huyền $BC$. Tính độ dài của vectơ $\\overrightarrow{AM}$.",
+    "correctAnswer": "8",
+    "explanation": "$AM = \\frac{BC}{2} = 8 \\implies |\\overrightarrow{AM}| = 8$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB = 18$. Điểm $C$ nằm trên đoạn $AB$ sao cho $AC = 2CB$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
+    "correctAnswer": "12",
+    "explanation": "$AC = \\frac{2}{3}AB = \\frac{2}{3} \\times 18 = 12 \\implies |\\overrightarrow{AC}| = 12$.",
+    "sourceCitation": "Đề kiểm tra định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ cạnh bằng $6$. Gọi $H$ là trung điểm của cạnh $BC$. Tính độ dài của vectơ $\\overrightarrow{AH}$ (kết quả làm tròn đến hàng phần mười).",
+    "correctAnswer": "5.2",
+    "explanation": "$AH = \\frac{6\\sqrt{3}}{2} = 3\\sqrt{3} \\approx 5.196 \\approx 5.2$.",
+    "sourceCitation": "Bộ đề Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình thoi $ABCD$ có cạnh bằng $8$ và góc $\\widehat{ABC} = 120^\\circ$. Tính độ dài của vectơ $\\overrightarrow{AC}$.",
+    "correctAnswer": "13.9",
+    "explanation": "$AC = 2 \\cdot 8 \\sin 60^\\circ = 8\\sqrt{3} \\approx 13.856 \\approx 13.9$.",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho 7 điểm phân biệt trên một đường tròn. Có bao nhiêu vectơ khác $\\vec{0}$ có điểm đầu và điểm cuối lấy từ 7 điểm đã cho?",
+    "correctAnswer": "42",
+    "explanation": "$7 \\times 6 = 42$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 16$, tâm $O$. Tính độ dài của vectơ $\\overrightarrow{OD}$.",
+    "correctAnswer": "10",
+    "explanation": "$BD = \\sqrt{12^2 + 16^2} = 20$. Vì $O$ là trung điểm $BD$ nên $OD = 10 \\implies |\\overrightarrow{OD}| = 10$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.7.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b7",
+    "lessonTitle": "Bài 7: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một chiếc máy bay phản lực bay thẳng đều với vận tốc $750\\text{ km/h}$ theo hướng Tây Bắc. Sau 40 phút bay, độ dài của vectơ độ dịch chuyển của máy bay là bao nhiêu kilômét?",
+    "correctAnswer": "500",
+    "explanation": "Đổi 40 phút $= \\frac{40}{60} = \\frac{2}{3}$ giờ. Độ dài vectơ độ dịch chuyển: $|\\vec{d}| = 750 \\times \\frac{2}{3} = 500\\text{ km}$.",
+    "sourceCitation": "Ứng dụng Vectơ trong Thực tế"
+  },
+  {
+    "id": "bq-10-ai-10.8.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho 3 điểm phân biệt $M, N, P$. Đẳng thức nào sau đây là SAI?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{PN}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{MP}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{PM} + \\overrightarrow{MN} = \\overrightarrow{PN}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{NP} + \\overrightarrow{PM} = \\overrightarrow{NM}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{MN} + \\overrightarrow{NP} = \\overrightarrow{MP}$, không thể bằng $\\overrightarrow{PN}$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành $MNPQ$. Tổng hai vectơ $\\overrightarrow{MN} + \\overrightarrow{MQ}$ bằng vectơ nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MP}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{NQ}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{QN}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{PM}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo quy tắc hình bình hành: $\\overrightarrow{MN} + \\overrightarrow{MQ} = \\overrightarrow{MP}$.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $CD$. Vectơ đối của vectơ $\\overrightarrow{CD}$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{DC}$"
+      },
+      {
+        "key": "B",
+        "text": "$-\\overrightarrow{DC}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{CD}$"
+      },
+      {
+        "key": "D",
+        "text": "$|\\overrightarrow{CD}|$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vectơ đối của $\\overrightarrow{CD}$ là $-\\overrightarrow{CD} = \\overrightarrow{DC}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho ba điểm bất kì $A, B, C$. Hiệu $\\overrightarrow{CA} - \\overrightarrow{CB}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{BA}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AC}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{BC}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo quy tắc trừ chung gốc: $\\overrightarrow{CA} - \\overrightarrow{CB} = \\overrightarrow{BA}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6, AC = 8$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$10$"
+      },
+      {
+        "key": "B",
+        "text": "$14$"
+      },
+      {
+        "key": "C",
+        "text": "$2$"
+      },
+      {
+        "key": "D",
+        "text": "$\\sqrt{14}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Dựng hình chữ nhật $ABDC$, ta có $\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$. Độ dài $|\\overrightarrow{AD}| = \\sqrt{6^2 + 8^2} = 10$.",
+    "sourceCitation": "Đề thi học kì 1 Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Rút gọn biểu thức $\\vec{u} = \\overrightarrow{PQ} + \\overrightarrow{QR} + \\overrightarrow{RP}$ ta được kết quả là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\vec{0}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{PR}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{PQ}$"
+      },
+      {
+        "key": "D",
+        "text": "$2\\overrightarrow{PR}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{PQ} + \\overrightarrow{QR} + \\overrightarrow{RP} = \\overrightarrow{PP} = \\vec{0}$.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho $I$ là trung điểm của đoạn thẳng $AB$. Hiệu $\\overrightarrow{IA} - \\overrightarrow{IB}$ bằng vectơ nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2\\overrightarrow{IA}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\vec{0}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AB}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{BA}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $\\overrightarrow{IB} = -\\overrightarrow{IA}$ nên $\\overrightarrow{IA} - \\overrightarrow{IB} = \\overrightarrow{IA} - (-\\overrightarrow{IA}) = 2\\overrightarrow{IA}$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình vuông $ABCD$ cạnh $4$. Độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4$"
+      },
+      {
+        "key": "B",
+        "text": "$4\\sqrt{2}$"
+      },
+      {
+        "key": "C",
+        "text": "$8$"
+      },
+      {
+        "key": "D",
+        "text": "$0$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$. Độ dài $|\\overrightarrow{CB}| = BC = 4$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành $ABCD$ tâm $O$. Tổng $\\overrightarrow{OA} + \\overrightarrow{OC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\vec{0}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AC}$"
+      },
+      {
+        "key": "C",
+        "text": "$2\\overrightarrow{OA}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{BD}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$O$ là trung điểm $AC$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ có trọng tâm $G$. Với điểm $M$ tùy ý, ta luôn có:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 3\\overrightarrow{MG}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\overrightarrow{MG}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 2\\overrightarrow{MG}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đẳng thức trọng tâm: $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = 3\\overrightarrow{MG}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác đều $ABC$ cạnh $2$. Độ dài vectơ $\\vec{u} = \\overrightarrow{AB} - \\overrightarrow{BC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2\\sqrt{3}$"
+      },
+      {
+        "key": "B",
+        "text": "$2$"
+      },
+      {
+        "key": "C",
+        "text": "$4$"
+      },
+      {
+        "key": "D",
+        "text": "$\\sqrt{3}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AB} + \\overrightarrow{CB}$. Gọi $M$ là trung điểm $B$ đối xứng... Ta có $|\\overrightarrow{AB} + \\overrightarrow{CB}|^2 = AB^2 + CB^2 + 2 AB \\cdot CB \\cos 60^\\circ = 4 + 4 + 2(2)(2)(0.5) = 12 \\implies |\\vec{u}| = \\sqrt{12} = 2\\sqrt{3}$.",
+    "sourceCitation": "Đề thi thử Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho 4 điểm $A, B, C, D$. Tổng $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DA}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\vec{0}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AC}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{BD}$"
+      },
+      {
+        "key": "D",
+        "text": "$2\\overrightarrow{AB}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường gấp khúc khép kín: tổng bằng $\\overrightarrow{AA} = \\vec{0}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.13",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Gọi $M$ là trung điểm của $BC$. Hiệu $\\overrightarrow{AB} - \\overrightarrow{AC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{CB}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{BC}$"
+      },
+      {
+        "key": "C",
+        "text": "$2\\overrightarrow{AM}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\vec{0}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.14",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB = 8$. Độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{BA}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$0$"
+      },
+      {
+        "key": "B",
+        "text": "$8$"
+      },
+      {
+        "key": "C",
+        "text": "$16$"
+      },
+      {
+        "key": "D",
+        "text": "$-8$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BA} = \\vec{0} \\implies |\\vec{0}| = 0$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.15",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Điểm $M$ thỏa mãn $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Trọng tâm của tam giác $ABC$."
+      },
+      {
+        "key": "B",
+        "text": "Trực tâm của tam giác $ABC$."
+      },
+      {
+        "key": "C",
+        "text": "Tâm đường tròn ngoại tiếp tam giác $ABC$."
+      },
+      {
+        "key": "D",
+        "text": "Tâm đường tròn nội tiếp tam giác $ABC$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Điểm thỏa mãn $\\overrightarrow{MA} + \\overrightarrow{MB} + \\overrightarrow{MC} = \\vec{0}$ duy nhất là trọng tâm $G$.",
+    "sourceCitation": "Đề kiểm tra định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.16",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình chữ nhật $ABCD$ có $AB = 5, BC = 12$. Độ dài vectơ $\\overrightarrow{AB} + \\overrightarrow{BC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$13$"
+      },
+      {
+        "key": "B",
+        "text": "$17$"
+      },
+      {
+        "key": "C",
+        "text": "$7$"
+      },
+      {
+        "key": "D",
+        "text": "$\\sqrt{119}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies |\\overrightarrow{AC}| = \\sqrt{5^2 + 12^2} = 13$.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.17",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình thoi $ABCD$ có cạnh bằng $a$ và $\\widehat{ABC} = 60^\\circ$. Độ dài vectơ $\\overrightarrow{BA} - \\overrightarrow{BC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$a$"
+      },
+      {
+        "key": "B",
+        "text": "$a\\sqrt{3}$"
+      },
+      {
+        "key": "C",
+        "text": "$2a$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{a\\sqrt{3}}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$. Tam giác $ABC$ đều nên $CA = a$.",
+    "sourceCitation": "Đề khảo sát Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.18",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho 4 điểm $A, B, C, D$. Khẳng định nào sau đây luôn ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\overrightarrow{AD} + \\overrightarrow{CB}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\overrightarrow{AC} + \\overrightarrow{BD}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AB} - \\overrightarrow{CD} = \\overrightarrow{AC} - \\overrightarrow{BD}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AD} + \\overrightarrow{DC}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chèn điểm: $\\overrightarrow{AB} = \\overrightarrow{AD} + \\overrightarrow{DB}$, $\\overrightarrow{CD} = \\overrightarrow{CB} + \\overrightarrow{BD}$. Cộng lại: $\\overrightarrow{AD} + \\overrightarrow{CB} + (\\overrightarrow{DB} + \\overrightarrow{BD}) = \\overrightarrow{AD} + \\overrightarrow{CB}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.8.19",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hai lực có độ lớn $30\\text{ N}$ và $40\\text{ N}$ tác dụng vào một vật theo hai hướng vuông góc nhau. Độ lớn của hợp lực tác dụng lên vật là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$50\\text{ N}$"
+      },
+      {
+        "key": "B",
+        "text": "$70\\text{ N}$"
+      },
+      {
+        "key": "C",
+        "text": "$10\\text{ N}$"
+      },
+      {
+        "key": "D",
+        "text": "$1200\\text{ N}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$F = \\sqrt{30^2 + 40^2} = 50\\text{ N}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-10.8.20",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một người bơi qua sông với vận tốc $3\\text{ m/s}$ hướng vuông góc với bờ. Dòng nước chảy với vận tốc $4\\text{ m/s}$ dọc theo bờ. Vận tốc thực tế của người đó đối với bờ sông là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5\\text{ m/s}$"
+      },
+      {
+        "key": "B",
+        "text": "$7\\text{ m/s}$"
+      },
+      {
+        "key": "C",
+        "text": "$1\\text{ m/s}$"
+      },
+      {
+        "key": "D",
+        "text": "$12\\text{ m/s}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$v = \\sqrt{3^2 + 4^2} = 5\\text{ m/s}$.",
+    "sourceCitation": "Bài toán thực tế Vectơ"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Chu trình ba điểm khép kín luôn bằng $\\vec{0}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{BC}$.",
+        "isCorrect": false,
+        "explanation": "$\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$, không phải $\\overrightarrow{BC}$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{BC}$ khi tam giác vuông.",
+        "isCorrect": false,
+        "explanation": "Không bao giờ có hệ thức này vì $\\overrightarrow{AB} + \\overrightarrow{AC}$ có phương khác $\\overrightarrow{BC}$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$.",
+        "isCorrect": true,
+        "explanation": "Quy tắc trừ chung gốc: $\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$."
+      }
+    ],
+    "explanation": "[Ý a]: Chu trình ba điểm khép kín luôn bằng $\\vec{0}$. | [Ý b]: $\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$, không phải $\\overrightarrow{BC}$. | [Ý c]: Không bao giờ có hệ thức này vì $\\overrightarrow{AB} + \\overrightarrow{AC}$ có phương khác $\\overrightarrow{BC}$. | [Ý d]: Quy tắc trừ chung gốc: $\\overrightarrow{BA} - \\overrightarrow{BC} = \\overrightarrow{CA}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hình bình hành $ABCD$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{BD}$.",
+        "isCorrect": true,
+        "explanation": "Quy tắc hình bình hành xuất phát từ đỉnh $B$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{DA} + \\overrightarrow{DC} = \\overrightarrow{DB}$.",
+        "isCorrect": true,
+        "explanation": "Quy tắc hình bình hành xuất phát từ đỉnh $D$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AC}$.",
+        "isCorrect": false,
+        "explanation": "Sai: $\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AB} + \\overrightarrow{CB} \\ne \\overrightarrow{AC}$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Vì $\\overrightarrow{CD} = -\\overrightarrow{AB}$ nên tổng bằng $\\vec{0}$."
+      }
+    ],
+    "explanation": "[Ý a]: Quy tắc hình bình hành xuất phát từ đỉnh $B$. | [Ý b]: Quy tắc hình bình hành xuất phát từ đỉnh $D$. | [Ý c]: Sai: $\\overrightarrow{AB} - \\overrightarrow{BC} = \\overrightarrow{AB} + \\overrightarrow{CB} \\ne \\overrightarrow{AC}$. | [Ý d]: Vì $\\overrightarrow{CD} = -\\overrightarrow{AB}$ nên tổng bằng $\\vec{0}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ cạnh $2$, tâm $O$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$|\\overrightarrow{AB} + \\overrightarrow{BC}| = 2\\sqrt{2}$.",
+        "isCorrect": true,
+        "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies AC = 2\\sqrt{2}$."
+      },
+      {
+        "key": "b",
+        "text": "$|\\overrightarrow{AB} - \\overrightarrow{BC}| = 2\\sqrt{2}$.",
+        "isCorrect": true,
+        "explanation": "$|\\overrightarrow{AB} + \\overrightarrow{CB}| = \\sqrt{2^2 + 2^2} = 2\\sqrt{2}$."
+      },
+      {
+        "key": "c",
+        "text": "$|\\overrightarrow{OA} + \\overrightarrow{OC}| = 0$.",
+        "isCorrect": true,
+        "explanation": "$O$ là trung điểm $AC$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0} \\implies$ độ dài bằng $0$."
+      },
+      {
+        "key": "d",
+        "text": "$|\\overrightarrow{AB} + \\overrightarrow{CD}| = 4$.",
+        "isCorrect": false,
+        "explanation": "$\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0} \\implies$ độ dài bằng $0$, không phải 4."
+      }
+    ],
+    "explanation": "[Ý a]: $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC} \\implies AC = 2\\sqrt{2}$. | [Ý b]: $|\\overrightarrow{AB} + \\overrightarrow{CB}| = \\sqrt{2^2 + 2^2} = 2\\sqrt{2}$. | [Ý c]: $O$ là trung điểm $AC$ nên $\\overrightarrow{OA} + \\overrightarrow{OC} = \\vec{0} \\implies$ độ dài bằng $0$. | [Ý d]: $\\overrightarrow{AB} + \\overrightarrow{CD} = \\vec{0} \\implies$ độ dài bằng $0$, không phải 4.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB$ có trung điểm $M$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Tính chất cơ bản của trung điểm."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AM} + \\overrightarrow{BM} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Hai vectơ đối nhau nên tổng bằng $\\vec{0}$."
+      },
+      {
+        "key": "c",
+        "text": "Với mọi điểm $P$, ta có $\\overrightarrow{PA} + \\overrightarrow{PB} = 2\\overrightarrow{PM}$.",
+        "isCorrect": true,
+        "explanation": "Hệ thức trung điểm tổng quát."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\vec{0}$.",
+        "isCorrect": false,
+        "explanation": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\overrightarrow{BA} \\ne \\vec{0}$."
+      }
+    ],
+    "explanation": "[Ý a]: Tính chất cơ bản của trung điểm. | [Ý b]: Hai vectơ đối nhau nên tổng bằng $\\vec{0}$. | [Ý c]: Hệ thức trung điểm tổng quát. | [Ý d]: $\\overrightarrow{MA} - \\overrightarrow{MB} = \\overrightarrow{BA} \\ne \\vec{0}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ cạnh bằng $6$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$|\\overrightarrow{AB} - \\overrightarrow{AC}| = 6$.",
+        "isCorrect": true,
+        "explanation": "$|\\overrightarrow{CB}| = 6$."
+      },
+      {
+        "key": "b",
+        "text": "$|\\overrightarrow{AB} + \\overrightarrow{AC}| = 6\\sqrt{3}$.",
+        "isCorrect": true,
+        "explanation": "$2h = 2 \\cdot \\frac{6\\sqrt{3}}{2} = 6\\sqrt{3}$."
+      },
+      {
+        "key": "c",
+        "text": "$|\\overrightarrow{BC} + \\overrightarrow{CA}| = 6$.",
+        "isCorrect": true,
+        "explanation": "$|\\overrightarrow{BA}| = 6$."
+      },
+      {
+        "key": "d",
+        "text": "$|\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CA}| = 18$.",
+        "isCorrect": false,
+        "explanation": "Tổng ba vectơ bằng $\\vec{0}$ nên độ dài bằng $0$, không phải 18."
+      }
+    ],
+    "explanation": "[Ý a]: $|\\overrightarrow{CB}| = 6$. | [Ý b]: $2h = 2 \\cdot \\frac{6\\sqrt{3}}{2} = 6\\sqrt{3}$. | [Ý c]: $|\\overrightarrow{BA}| = 6$. | [Ý d]: Tổng ba vectơ bằng $\\vec{0}$ nên độ dài bằng $0$, không phải 18.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho 4 điểm phân biệt $A, B, C, D$. Xét tính Đúng/Sai của các hệ thức vectơ sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{CD} + \\overrightarrow{BC} = \\overrightarrow{AD}$.",
+        "isCorrect": true,
+        "explanation": "$\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} = \\overrightarrow{AD}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AC} + \\overrightarrow{BD} = \\overrightarrow{AD} + \\overrightarrow{BC}$.",
+        "isCorrect": true,
+        "explanation": "Chèn điểm $D$ vào $\\overrightarrow{AC}$: $\\overrightarrow{AD} + \\overrightarrow{DC} + \\overrightarrow{BD} = \\overrightarrow{AD} + (\\overrightarrow{BD} + \\overrightarrow{DC}) = \\overrightarrow{AD} + \\overrightarrow{BC}$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{AB} - \\overrightarrow{AD} = \\overrightarrow{CB} - \\overrightarrow{CD}$.",
+        "isCorrect": true,
+        "explanation": "Vế trái $= \\overrightarrow{DB}$, vế phải $= \\overrightarrow{DB}$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$ khi $ABCD$ là hình thang.",
+        "isCorrect": false,
+        "explanation": "Chỉ đúng khi $ABCD$ là hình bình hành."
+      }
+    ],
+    "explanation": "[Ý a]: $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} = \\overrightarrow{AD}$. | [Ý b]: Chèn điểm $D$ vào $\\overrightarrow{AC}$: $\\overrightarrow{AD} + \\overrightarrow{DC} + \\overrightarrow{BD} = \\overrightarrow{AD} + (\\overrightarrow{BD} + \\overrightarrow{DC}) = \\overrightarrow{AD} + \\overrightarrow{BC}$. | [Ý c]: Vế trái $= \\overrightarrow{DB}$, vế phải $= \\overrightarrow{DB}$. | [Ý d]: Chỉ đúng khi $ABCD$ là hình bình hành.",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Hai người kéo một chiếc xe bằng hai sợi dây với lực $F_1 = F_2 = 100\\text{ N}$, góc giữa hai dây là $60^\\circ$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Góc giữa hai vectơ lực là góc nhọn.",
+        "isCorrect": true,
+        "explanation": "$60^\\circ < 90^\\circ$."
+      },
+      {
+        "key": "b",
+        "text": "Độ lớn của lực tổng hợp bằng $100\\sqrt{3}\\text{ N}$.",
+        "isCorrect": true,
+        "explanation": "$F = 2(100)\\cos 30^\\circ = 100\\sqrt{3}\\text{ N}$."
+      },
+      {
+        "key": "c",
+        "text": "Độ lớn của lực tổng hợp lớn hơn $200\\text{ N}$.",
+        "isCorrect": false,
+        "explanation": "$100\\sqrt{3} \\approx 173.2\\text{ N} < 200\\text{ N}$."
+      },
+      {
+        "key": "d",
+        "text": "Xe sẽ chuyển động theo hướng tia phân giác của góc giữa hai sợi dây.",
+        "isCorrect": true,
+        "explanation": "Do hai lực bằng nhau nên hợp lực nằm trên đường phân giác."
+      }
+    ],
+    "explanation": "[Ý a]: $60^\\circ < 90^\\circ$. | [Ý b]: $F = 2(100)\\cos 30^\\circ = 100\\sqrt{3}\\text{ N}$. | [Ý c]: $100\\sqrt{3} \\approx 173.2\\text{ N} < 200\\text{ N}$. | [Ý d]: Do hai lực bằng nhau nên hợp lực nằm trên đường phân giác.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.8.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một chiếc ca nô chạy trên một khúc sông: vận tốc riêng của ca nô là $v_c = 20\\text{ km/h}$, vận tốc dòng nước là $v_n = 4\\text{ km/h}$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Khi ca nô chạy xuôi dòng, vận tốc thực tế là $24\\text{ km/h}$.",
+        "isCorrect": true,
+        "explanation": "Xuôi dòng: hai vectơ cùng hướng $\\implies v = 20 + 4 = 24\\text{ km/h}$."
+      },
+      {
+        "key": "b",
+        "text": "Khi ca nô chạy ngược dòng, vận tốc thực tế là $16\\text{ km/h}$.",
+        "isCorrect": true,
+        "explanation": "Ngược dòng: hai vectơ ngược hướng $\\implies v = 20 - 4 = 16\\text{ km/h}$."
+      },
+      {
+        "key": "c",
+        "text": "Vectơ vận tốc khi xuôi dòng và ngược dòng có cùng độ lớn.",
+        "isCorrect": false,
+        "explanation": "$24\\text{ km/h} \\ne 16\\text{ km/h}$."
+      },
+      {
+        "key": "d",
+        "text": "Khi ca nô tắt máy trôi tự do, vận tốc của nó đối với bờ sông bằng $0$.",
+        "isCorrect": false,
+        "explanation": "Nó sẽ trôi theo dòng nước với vận tốc $4\\text{ km/h}$."
+      }
+    ],
+    "explanation": "[Ý a]: Xuôi dòng: hai vectơ cùng hướng $\\implies v = 20 + 4 = 24\\text{ km/h}$. | [Ý b]: Ngược dòng: hai vectơ ngược hướng $\\implies v = 20 - 4 = 16\\text{ km/h}$. | [Ý c]: $24\\text{ km/h} \\ne 16\\text{ km/h}$. | [Ý d]: Nó sẽ trôi theo dòng nước với vận tốc $4\\text{ km/h}$.",
+    "sourceCitation": "Toán học và Đời sống"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ cạnh $8$. Tính độ dài của vectơ $\\vec{u} = \\overrightarrow{AB} + \\overrightarrow{AD}$ (làm tròn đến hàng phần mười).",
+    "correctAnswer": "11.3",
+    "explanation": "$8\\sqrt{2} \\approx 11.31 \\approx 11.3$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 8, AC = 15$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AC}$.",
+    "correctAnswer": "17",
+    "explanation": "$|\\overrightarrow{CB}| = \\sqrt{8^2 + 15^2} = 17$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ cạnh bằng $2\\sqrt{3}$. Tính độ dài của vectơ $\\overrightarrow{AB} + \\overrightarrow{AC}$.",
+    "correctAnswer": "6",
+    "explanation": "$2 \\cdot \\frac{2\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Hai lực có độ lớn $15\\text{ N}$ và $20\\text{ N}$ tác dụng vào một vật theo hai hướng vuông góc nhau. Độ lớn của hợp lực bằng bao nhiêu Niutơn?",
+    "correctAnswer": "25",
+    "explanation": "$\\sqrt{15^2 + 20^2} = 25\\text{ N}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình chữ nhật $ABCD$ có $AB = 12, AD = 5$. Tính độ dài của vectơ $\\overrightarrow{AB} - \\overrightarrow{AD}$.",
+    "correctAnswer": "13",
+    "explanation": "$|\\overrightarrow{DB}| = \\sqrt{12^2 + 5^2} = 13$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hai vectơ có cùng độ lớn bằng $8$, góc giữa hai vectơ là $120^\\circ$. Tính độ dài của vectơ tổng.",
+    "correctAnswer": "8",
+    "explanation": "Tam giác đều hoặc công thức: $F = 2(8)\\cos 60^\\circ = 8$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ cạnh bằng $6\\sqrt{3}$, trọng tâm $G$. Tính độ dài vectơ $\\overrightarrow{GA} + \\overrightarrow{GB}$.",
+    "correctAnswer": "6",
+    "explanation": "$|\\overrightarrow{GC}| = \\frac{2}{3} \\cdot \\frac{6\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6$.",
+    "sourceCitation": "Đề thi khảo sát Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hai vectơ chung gốc có độ lớn cùng bằng $10$, góc giữa chúng bằng $60^\\circ$. Tính độ dài vectơ tổng (làm tròn đến hàng phần mười).",
+    "correctAnswer": "17.3",
+    "explanation": "$2(10)\\cos 30^\\circ = 10\\sqrt{3} \\approx 17.32 \\approx 17.3$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho ba điểm thẳng hàng $A, B, C$ ($B$ nằm giữa $A$ và $C$) có $AB = 7, BC = 9$. Tính độ dài vectơ $\\overrightarrow{AB} + \\overrightarrow{BC}$.",
+    "correctAnswer": "16",
+    "explanation": "$|\\overrightarrow{AC}| = 7 + 9 = 16$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB = 14$ có trung điểm $M$. Tính độ dài của vectơ $\\overrightarrow{MA} - \\overrightarrow{MB}$.",
+    "correctAnswer": "14",
+    "explanation": "$\\overrightarrow{MA} - \\overrightarrow{MB} = \\overrightarrow{BA} \\implies |\\overrightarrow{BA}| = 14$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một chiếc thuyền máy chạy vuông góc sang sông với vận tốc $24\\text{ km/h}$, dòng nước chảy với vận tốc $7\\text{ km/h}$. Tính vận tốc thực tế của thuyền (theo km/h).",
+    "correctAnswer": "25",
+    "explanation": "$\\sqrt{24^2 + 7^2} = 25\\text{ km/h}$.",
+    "sourceCitation": "Toán học ứng dụng"
+  },
+  {
+    "id": "bq-10-ai-sa-10.8.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b8",
+    "lessonTitle": "Bài 8: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một bóng đèn nặng $80\\text{ N}$ được treo vào trần nhà bằng hai sợi dây tạo với nhau góc $90^\\circ$. Lực căng của mỗi sợi dây bằng bao nhiêu Niutơn? (Làm tròn đến hàng phần mười).",
+    "correctAnswer": "56.6",
+    "explanation": "$T = \\frac{80}{\\sqrt{2}} = 40\\sqrt{2} \\approx 56.57 \\approx 56.6\\text{ N}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho vectơ $\\vec{a} \\ne \\vec{0}$ và số thực $k > 0$. Khẳng định nào sau đây là ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vectơ $k\\vec{a}$ cùng hướng với vectơ $\\vec{a}$."
+      },
+      {
+        "key": "B",
+        "text": "Vectơ $k\\vec{a}$ ngược hướng với vectơ $\\vec{a}$."
+      },
+      {
+        "key": "C",
+        "text": "Vectơ $k\\vec{a}$ vuông góc với vectơ $\\vec{a}$."
+      },
+      {
+        "key": "D",
+        "text": "Độ dài của $k\\vec{a}$ luôn bằng $k$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khi $k > 0$, $k\\vec{a}$ cùng hướng với $\\vec{a}$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho vectơ $\\vec{b} \\ne \\vec{0}$. Vectơ $-2\\vec{b}$ có hướng và độ dài như thế nào so với $\\vec{b}$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ngược hướng và có độ dài gấp $2$ lần độ dài của $\\vec{b}$."
+      },
+      {
+        "key": "B",
+        "text": "Cùng hướng và có độ dài gấp $2$ lần độ dài của $\\vec{b}$."
+      },
+      {
+        "key": "C",
+        "text": "Ngược hướng và có độ dài bằng $-2$ lần độ dài của $\\vec{b}$."
+      },
+      {
+        "key": "D",
+        "text": "Cùng hướng và có độ dài bằng $-2$ lần độ dài của $\\vec{b}$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Số $k = -2 < 0$ nên ngược hướng, độ dài $|-2\\vec{b}| = 2|\\vec{b}|$, độ dài luôn dương.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Khẳng định nào sau đây ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{GM} = -\\frac{1}{3}\\overrightarrow{AM}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{AM}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{GM} = \\frac{2}{3}\\overrightarrow{AM}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đoạn $GM = \\frac{1}{3}AM$, chiều từ $G \\to M$ cùng chiều $A \\to M$ nên $\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$? Hãy kiểm tra: tia $A \\to M$ có $G$ ở giữa nên chiều từ $G \\to M$ cùng hướng với $A \\to M$! Vậy $\\overrightarrow{GM} = \\frac{1}{3}\\overrightarrow{AM}$! Chỉnh lại: $\\overrightarrow{MG} = -\\frac{1}{3}\\overrightarrow{AM}$.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB$ có trung điểm $M$. Khẳng định nào sau đây ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{AB} = 2\\overrightarrow{AM}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB} = -2\\overrightarrow{AM}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AM} = 2\\overrightarrow{AB}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AB} = \\frac{1}{2}\\overrightarrow{AM}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AB}$ cùng hướng với $\\overrightarrow{AM}$ và $AB = 2AM$ nên $\\overrightarrow{AB} = 2\\overrightarrow{AM}$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Với mọi vectơ $\\vec{a}$, kết quả của phép toán $0 \\cdot \\vec{a}$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\vec{0}$"
+      },
+      {
+        "key": "B",
+        "text": "$0$"
+      },
+      {
+        "key": "C",
+        "text": "$\\vec{a}$"
+      },
+      {
+        "key": "D",
+        "text": "Không xác định"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo định nghĩa SGK: $0 \\cdot \\vec{a} = \\vec{0}$ (là vectơ-không, không phải số 0).",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB = 6$. Độ dài của vectơ $-5\\overrightarrow{AB}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$30$"
+      },
+      {
+        "key": "B",
+        "text": "$-30$"
+      },
+      {
+        "key": "C",
+        "text": "$1$"
+      },
+      {
+        "key": "D",
+        "text": "$11$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$|-5\\overrightarrow{AB}| = |-5| \\cdot |\\overrightarrow{AB}| = 5 \\times 6 = 30$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho đoạn thẳng $AB$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = \\frac{1}{3}AB$. Đẳng thức nào sau đây ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MA} = -\\frac{1}{2}\\overrightarrow{MB}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{MA} = 2\\overrightarrow{MB}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{MA} = -2\\overrightarrow{MB}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{MA} = \\frac{1}{2}\\overrightarrow{MB}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$M$ nằm giữa $A$ và $B$, $AM = \\frac{1}{3}AB \\implies MB = \\frac{2}{3}AB \\implies MB = 2AM$. Do hai vectơ ngược hướng nên $\\overrightarrow{MA} = -\\frac{1}{2}\\overrightarrow{MB}$.",
+    "sourceCitation": "Đề thi học kì 1 Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Biểu thức $3(\\vec{a} - 2\\vec{b}) + 2(2\\vec{a} + \\vec{b})$ được thu gọn thành:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$7\\vec{a} - 4\\vec{b}$"
+      },
+      {
+        "key": "B",
+        "text": "$7\\vec{a} + 4\\vec{b}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\vec{a} - 4\\vec{b}$"
+      },
+      {
+        "key": "D",
+        "text": "$7\\vec{a} - 8\\vec{b}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$3\\vec{a} - 6\\vec{b} + 4\\vec{a} + 2\\vec{b} = 7\\vec{a} - 4\\vec{b}$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$. Gọi $M, N$ lần lượt là trung điểm của $AB, AC$. Khẳng định nào sau đây ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MN} = \\frac{1}{2}\\overrightarrow{BC}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{MN} = -\\frac{1}{2}\\overrightarrow{BC}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{MN} = 2\\overrightarrow{BC}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{MN} = \\overrightarrow{BC}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường trung bình: $\\overrightarrow{MN} = \\frac{1}{2}\\overrightarrow{BC}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình bình hành $ABCD$ tâm $O$. Với điểm $M$ tùy ý, ta luôn có:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MC} = 2\\overrightarrow{MO}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MC} = \\overrightarrow{MO}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MC} = \\frac{1}{2}\\overrightarrow{MO}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{MA} + \\overrightarrow{MC} = 4\\overrightarrow{MO}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $O$ là trung điểm $AC$ nên $\\overrightarrow{MA} + \\overrightarrow{MC} = 2\\overrightarrow{MO}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác vuông tại $A$ có $AB = 4, AC = 3$. Độ dài vectơ $\\vec{u} = \\frac{1}{2}\\overrightarrow{AB} + \\overrightarrow{AC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\sqrt{13}$"
+      },
+      {
+        "key": "B",
+        "text": "$5$"
+      },
+      {
+        "key": "C",
+        "text": "$\\sqrt{7}$"
+      },
+      {
+        "key": "D",
+        "text": "$7$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$|\\vec{u}| = \\sqrt{(0.5 \\times 4)^2 + 3^2} = \\sqrt{4 + 9} = \\sqrt{13}$.",
+    "sourceCitation": "Đề khảo sát Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho điểm $C$ nằm giữa hai điểm $A$ và $B$ sao cho $AC = 3CB$. Đẳng thức nào sau đây ĐÚNG?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{CA} = -3\\overrightarrow{CB}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{CA} = 3\\overrightarrow{CB}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{AC} = 3\\overrightarrow{CB}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{CA} = -\\frac{1}{3}\\overrightarrow{CB}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$C$ nằm giữa nên $\\overrightarrow{CA}$ ngược hướng $\\overrightarrow{CB}$, độ dài $CA = 3CB \\implies \\overrightarrow{CA} = -3\\overrightarrow{CB}$.",
+    "sourceCitation": "Đề thi thử Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.13",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tứ giác $ABCD$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$. Với điểm $O$ bất kì, ta có:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = 2(\\overrightarrow{OM} + \\overrightarrow{ON})$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\overrightarrow{OM} + \\overrightarrow{ON}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = 4(\\overrightarrow{OM} + \\overrightarrow{ON})$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{OA} + \\overrightarrow{OB} + \\overrightarrow{OC} + \\overrightarrow{OD} = \\vec{0}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{OA} + \\overrightarrow{OB} = 2\\overrightarrow{OM}$ và $\\overrightarrow{OC} + \\overrightarrow{OD} = 2\\overrightarrow{ON}$. Cộng lại được $2(\\overrightarrow{OM} + \\overrightarrow{ON})$.",
+    "sourceCitation": "SBT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.14",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho vectơ $\\vec{x}$. Vectơ đối của $\\vec{x}$ được biểu thị là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(-1)\\vec{x}$"
+      },
+      {
+        "key": "B",
+        "text": "$0\\vec{x}$"
+      },
+      {
+        "key": "C",
+        "text": "$1\\vec{x}$"
+      },
+      {
+        "key": "D",
+        "text": "$2\\vec{x}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vectơ đối của $\\vec{x}$ là $-\\vec{x} = (-1)\\vec{x}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.15",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác đều $ABC$ cạnh bằng $3$. Độ dài của vectơ $\\vec{u} = 2\\overrightarrow{AB} - 2\\overrightarrow{AC}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6$"
+      },
+      {
+        "key": "B",
+        "text": "$0$"
+      },
+      {
+        "key": "C",
+        "text": "$12$"
+      },
+      {
+        "key": "D",
+        "text": "$3\\sqrt{3}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$2(\\overrightarrow{AB} - \\overrightarrow{AC}) = 2\\overrightarrow{CB} \\implies |2\\overrightarrow{CB}| = 2 \\times 3 = 6$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.16",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đẳng thức $k\\vec{a} = \\vec{0}$ xảy ra khi và chỉ khi:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$k = 0$ hoặc $\\vec{a} = \\vec{0}$."
+      },
+      {
+        "key": "B",
+        "text": "$k = 0$ và $\\vec{a} = \\vec{0}$."
+      },
+      {
+        "key": "C",
+        "text": "$k = 0$."
+      },
+      {
+        "key": "D",
+        "text": "$\\vec{a} = \\vec{0}$."
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tích bằng vectơ-không khi số $k = 0$ hoặc vectơ $\\vec{a} = \\vec{0}$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.9.17",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hình chữ nhật $ABCD$. Gọi $O$ là giao điểm hai đường chéo. Vectơ $\\overrightarrow{AO}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\overrightarrow{AB} + \\overrightarrow{AD}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{2}\\overrightarrow{AB} + \\overrightarrow{AD}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$\\overrightarrow{AO} = \\frac{1}{2}\\overrightarrow{AC} = \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AD}) = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AD}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.18",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho tam giác $ABC$ có $AB = 4, AC = 6$. Đường phân giác trong góc $A$ cắt $BC$ tại $D$. Khi đó $\\overrightarrow{BD} = k\\overrightarrow{BC}$ với $k$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{2}{5}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{3}{5}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{1}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Theo tính chất đường phân giác: $\\frac{DB}{DC} = \\frac{AB}{AC} = \\frac{4}{6} = \\frac{2}{3} \\implies DB = \\frac{2}{5}BC \\implies \\overrightarrow{BD} = \\frac{2}{5}\\overrightarrow{BC} \\implies k = \\frac{2}{5}$.",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.19",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một lực $\\vec{F}_1$ có độ lớn $100\\text{ N}$. Lực $\\vec{F}_2 = -1.5\\vec{F}_1$. Độ lớn của lực $\\vec{F}_2$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$150\\text{ N}$"
+      },
+      {
+        "key": "B",
+        "text": "$-150\\text{ N}$"
+      },
+      {
+        "key": "C",
+        "text": "$100\\text{ N}$"
+      },
+      {
+        "key": "D",
+        "text": "$250\\text{ N}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$|\\vec{F}_2| = |-1.5| \\times 100 = 150\\text{ N}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-10.9.20",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một viên đạn bay ra khỏi nòng súng với vận tốc $\\vec{v}_0$ có độ lớn $600\\text{ m/s}$. Sau một khoảng cách, lực cản không khí làm vận tốc giảm xuống còn $\\vec{v} = 0.75\\vec{v}_0$. Tốc độ của viên đạn khi đó là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$450\\text{ m/s}$"
+      },
+      {
+        "key": "B",
+        "text": "$400\\text{ m/s}$"
+      },
+      {
+        "key": "C",
+        "text": "$500\\text{ m/s}$"
+      },
+      {
+        "key": "D",
+        "text": "$300\\text{ m/s}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$v = 0.75 \\times 600 = 450\\text{ m/s}$.",
+    "sourceCitation": "Bài toán thực tế"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét tính Đúng/Sai của các mệnh đề sau với mọi vectơ $\\vec{a}, \\vec{b}$ và số thực $k, m$:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$k(\\vec{a} + \\vec{b}) = k\\vec{a} + k\\vec{b}$.",
+        "isCorrect": true,
+        "explanation": "Tính chất phân phối đối với phép cộng vectơ."
+      },
+      {
+        "key": "b",
+        "text": "$(k + m)\\vec{a} = k\\vec{a} + m\\vec{a}$.",
+        "isCorrect": true,
+        "explanation": "Tính chất phân phối đối với phép cộng số."
+      },
+      {
+        "key": "c",
+        "text": "$k(m\\vec{a}) = (km)\\vec{a}$.",
+        "isCorrect": true,
+        "explanation": "Tính chất kết hợp."
+      },
+      {
+        "key": "d",
+        "text": "Nếu $k\\vec{a} = \\vec{0}$ thì bắt buộc cả $k = 0$ và $\\vec{a} = \\vec{0}$.",
+        "isCorrect": false,
+        "explanation": "Chỉ cần một trong hai bằng 0 là đủ."
+      }
+    ],
+    "explanation": "[Ý a]: Tính chất phân phối đối với phép cộng vectơ. | [Ý b]: Tính chất phân phối đối với phép cộng số. | [Ý c]: Tính chất kết hợp. | [Ý d]: Chỉ cần một trong hai bằng 0 là đủ.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có trọng tâm $G$, $M$ là trung điểm của $BC$. Xét tính Đúng/Sai của các đẳng thức sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AM} = 3\\overrightarrow{GM}$.",
+        "isCorrect": true,
+        "explanation": "Vì $AM = 3GM$ và cùng hướng nên $\\overrightarrow{AM} = 3\\overrightarrow{GM}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{GA} = -2\\overrightarrow{GM}$.",
+        "isCorrect": true,
+        "explanation": "Hai vectơ ngược hướng và $GA = 2GM$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{GB} + \\overrightarrow{GC} = 2\\overrightarrow{GM}$.",
+        "isCorrect": true,
+        "explanation": "$M$ là trung điểm $BC$ nên $\\overrightarrow{GB} + \\overrightarrow{GC} = 2\\overrightarrow{GM}$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{GA} + 2\\overrightarrow{GM} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Do $\\overrightarrow{GA} = -2\\overrightarrow{GM}$ nên $\\overrightarrow{GA} + 2\\overrightarrow{GM} = \\vec{0}$."
+      }
+    ],
+    "explanation": "[Ý a]: Vì $AM = 3GM$ và cùng hướng nên $\\overrightarrow{AM} = 3\\overrightarrow{GM}$. | [Ý b]: Hai vectơ ngược hướng và $GA = 2GM$. | [Ý c]: $M$ là trung điểm $BC$ nên $\\overrightarrow{GB} + \\overrightarrow{GC} = 2\\overrightarrow{GM}$. | [Ý d]: Do $\\overrightarrow{GA} = -2\\overrightarrow{GM}$ nên $\\overrightarrow{GA} + 2\\overrightarrow{GM} = \\vec{0}$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB$. Điểm $P$ nằm trên tia đối của tia $AB$ sao cho $PA = 2AB$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{PA}$ và $\\overrightarrow{AB}$ ngược hướng.",
+        "isCorrect": true,
+        "explanation": "Do $P$ thuộc tia đối của tia $AB$ nên $\\overrightarrow{PA}$ ngược hướng $\\overrightarrow{AB}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{PA} = -2\\overrightarrow{AB}$.",
+        "isCorrect": true,
+        "explanation": "Ngược hướng và độ dài $PA = 2AB$ nên $\\overrightarrow{PA} = -2\\overrightarrow{AB}$."
+      },
+      {
+        "key": "c",
+        "text": "$PB = 3AB$.",
+        "isCorrect": true,
+        "explanation": "$PB = PA + AB = 2AB + AB = 3AB$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{PB} = 3\\overrightarrow{AB}$.",
+        "isCorrect": false,
+        "explanation": "$\\overrightarrow{PB}$ ngược hướng với $\\overrightarrow{AB}$ nên $\\overrightarrow{PB} = -3\\overrightarrow{AB}$, không phải $3\\overrightarrow{AB}$."
+      }
+    ],
+    "explanation": "[Ý a]: Do $P$ thuộc tia đối của tia $AB$ nên $\\overrightarrow{PA}$ ngược hướng $\\overrightarrow{AB}$. | [Ý b]: Ngược hướng và độ dài $PA = 2AB$ nên $\\overrightarrow{PA} = -2\\overrightarrow{AB}$. | [Ý c]: $PB = PA + AB = 2AB + AB = 3AB$. | [Ý d]: $\\overrightarrow{PB}$ ngược hướng với $\\overrightarrow{AB}$ nên $\\overrightarrow{PB} = -3\\overrightarrow{AB}$, không phải $3\\overrightarrow{AB}$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Hai vectơ $\\vec{a}$ và $2\\vec{a}$ luôn cùng hướng với nhau (với $\\vec{a} \\ne \\vec{0}$).",
+        "isCorrect": true,
+        "explanation": "Số 2 dương nên cùng hướng."
+      },
+      {
+        "key": "b",
+        "text": "Hai vectơ $\\vec{a}$ và $-\\frac{1}{2}\\vec{a}$ luôn ngược hướng với nhau (với $\\vec{a} \\ne \\vec{0}$).",
+        "isCorrect": true,
+        "explanation": "Số $-0.5$ âm nên ngược hướng."
+      },
+      {
+        "key": "c",
+        "text": "Nếu $\\vec{b} = k\\vec{a}$ thì hai vectơ $\\vec{a}$ và $\\vec{b}$ cùng phương.",
+        "isCorrect": true,
+        "explanation": "Đúng theo điều kiện cùng phương."
+      },
+      {
+        "key": "d",
+        "text": "Hai vectơ cùng phương thì luôn có độ dài bằng nhau.",
+        "isCorrect": false,
+        "explanation": "Độ dài có thể khác nhau tùy theo hệ số $k$."
+      }
+    ],
+    "explanation": "[Ý a]: Số 2 dương nên cùng hướng. | [Ý b]: Số $-0.5$ âm nên ngược hướng. | [Ý c]: Đúng theo điều kiện cùng phương. | [Ý d]: Độ dài có thể khác nhau tùy theo hệ số $k$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $AB$ và $N$ là điểm trên $AC$ sao cho $AN = 2NC$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB}$.",
+        "isCorrect": true,
+        "explanation": "$M$ là trung điểm $AB$."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{AN} = \\frac{2}{3}\\overrightarrow{AC}$.",
+        "isCorrect": true,
+        "explanation": "$AC = AN + NC = 3NC \\implies AN = \\frac{2}{3}AC$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{MN} = \\frac{2}{3}\\overrightarrow{AC} - \\frac{1}{2}\\overrightarrow{AB}$.",
+        "isCorrect": true,
+        "explanation": "$\\overrightarrow{MN} = \\overrightarrow{AN} - \\overrightarrow{AM} = \\frac{2}{3}\\overrightarrow{AC} - \\frac{1}{2}\\overrightarrow{AB}$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{MN}$ cùng phương với $\\overrightarrow{BC}$.",
+        "isCorrect": false,
+        "explanation": "Vì $\\frac{AM}{AB} = \\frac{1}{2} \\ne \\frac{AN}{AC} = \\frac{2}{3}$ nên theo Talet $MN$ không song song $BC$, hai vectơ không cùng phương."
+      }
+    ],
+    "explanation": "[Ý a]: $M$ là trung điểm $AB$. | [Ý b]: $AC = AN + NC = 3NC \\implies AN = \\frac{2}{3}AC$. | [Ý c]: $\\overrightarrow{MN} = \\overrightarrow{AN} - \\overrightarrow{AM} = \\frac{2}{3}\\overrightarrow{AC} - \\frac{1}{2}\\overrightarrow{AB}$. | [Ý d]: Vì $\\frac{AM}{AB} = \\frac{1}{2} \\ne \\frac{AN}{AC} = \\frac{2}{3}$ nên theo Talet $MN$ không song song $BC$, hai vectơ không cùng phương.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hình chữ nhật $ABCD$ có $AB = 3, AD = 4$. Xét tính Đúng/Sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$|3\\overrightarrow{AB}| = 9$.",
+        "isCorrect": true,
+        "explanation": "$3 \\times 3 = 9$."
+      },
+      {
+        "key": "b",
+        "text": "$|-2\\overrightarrow{AD}| = 8$.",
+        "isCorrect": true,
+        "explanation": "$|-2| \\times 4 = 8$."
+      },
+      {
+        "key": "c",
+        "text": "$|\\frac{1}{5}\\overrightarrow{AC}| = 1$.",
+        "isCorrect": true,
+        "explanation": "$AC = 5 \\implies \\frac{1}{5} \\times 5 = 1$."
+      },
+      {
+        "key": "d",
+        "text": "$|2\\overrightarrow{AB} + 2\\overrightarrow{AD}| = 14$.",
+        "isCorrect": false,
+        "explanation": "$2|\\overrightarrow{AC}| = 2 \\times 5 = 10 \\ne 14$."
+      }
+    ],
+    "explanation": "[Ý a]: $3 \\times 3 = 9$. | [Ý b]: $|-2| \\times 4 = 8$. | [Ý c]: $AC = 5 \\implies \\frac{1}{5} \\times 5 = 1$. | [Ý d]: $2|\\overrightarrow{AC}| = 2 \\times 5 = 10 \\ne 14$.",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB$. Điểm $I$ chia đoạn thẳng $AB$ theo tỉ số $\\overrightarrow{IA} = -\\frac{3}{5}\\overrightarrow{IB}$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "$I$ nằm giữa $A$ và $B$.",
+        "isCorrect": true,
+        "explanation": "Hệ số âm nên hai vectơ ngược hướng, $I$ nằm giữa $A$ và $B$."
+      },
+      {
+        "key": "b",
+        "text": "$5\\overrightarrow{IA} + 3\\overrightarrow{IB} = \\vec{0}$.",
+        "isCorrect": true,
+        "explanation": "Quy đồng: $5\\overrightarrow{IA} = -3\\overrightarrow{IB} \\iff 5\\overrightarrow{IA} + 3\\overrightarrow{IB} = \\vec{0}$."
+      },
+      {
+        "key": "c",
+        "text": "$IA = \\frac{3}{8}AB$.",
+        "isCorrect": true,
+        "explanation": "$IA = \\frac{3}{5}IB \\implies IA = \\frac{3}{3 + 5}AB = \\frac{3}{8}AB$."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{AI} = \\frac{3}{8}\\overrightarrow{AB}$.",
+        "isCorrect": true,
+        "explanation": "$\\overrightarrow{AI}$ cùng hướng $\\overrightarrow{AB}$ và $AI = \\frac{3}{8}AB$ nên $\\overrightarrow{AI} = \\frac{3}{8}\\overrightarrow{AB}$."
+      }
+    ],
+    "explanation": "[Ý a]: Hệ số âm nên hai vectơ ngược hướng, $I$ nằm giữa $A$ và $B$. | [Ý b]: Quy đồng: $5\\overrightarrow{IA} = -3\\overrightarrow{IB} \\iff 5\\overrightarrow{IA} + 3\\overrightarrow{IB} = \\vec{0}$. | [Ý c]: $IA = \\frac{3}{5}IB \\implies IA = \\frac{3}{3 + 5}AB = \\frac{3}{8}AB$. | [Ý d]: $\\overrightarrow{AI}$ cùng hướng $\\overrightarrow{AB}$ và $AI = \\frac{3}{8}AB$ nên $\\overrightarrow{AI} = \\frac{3}{8}\\overrightarrow{AB}$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.9.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một chiếc máy bay đang bay theo phương ngang với vận tốc $\\vec{v}$ có độ lớn $800\\text{ km/h}$. Xét tính Đúng/Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Khi máy bay giảm tốc còn $\\frac{3}{4}$ tốc độ ban đầu theo hướng cũ, vectơ vận tốc mới là $0.75\\vec{v}$.",
+        "isCorrect": true,
+        "explanation": "Đúng: cùng hướng và độ lớn $= 0.75 \\times 800 = 600\\text{ km/h}$."
+      },
+      {
+        "key": "b",
+        "text": "Độ lớn của vectơ $0.75\\vec{v}$ là $600\\text{ km/h}$.",
+        "isCorrect": true,
+        "explanation": "$0.75 \\times 800 = 600\\text{ km/h}$."
+      },
+      {
+        "key": "c",
+        "text": "Vectơ $-1.2\\vec{v}$ có cùng hướng với $\\vec{v}$.",
+        "isCorrect": false,
+        "explanation": "Sai: hệ số âm nên ngược hướng."
+      },
+      {
+        "key": "d",
+        "text": "Độ lớn của vectơ $-1.2\\vec{v}$ là $960\\text{ km/h}$.",
+        "isCorrect": true,
+        "explanation": "$|-1.2| \\times 800 = 960\\text{ km/h}$."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng: cùng hướng và độ lớn $= 0.75 \\times 800 = 600\\text{ km/h}$. | [Ý b]: $0.75 \\times 800 = 600\\text{ km/h}$. | [Ý c]: Sai: hệ số âm nên ngược hướng. | [Ý d]: $|-1.2| \\times 800 = 960\\text{ km/h}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.1",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB = 7$. Tính độ dài của vectơ $\\vec{u} = -3\\overrightarrow{AB}$.",
+    "correctAnswer": "21",
+    "explanation": "$|-3\\overrightarrow{AB}| = 3 \\times 7 = 21$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.2",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có trọng tâm $G$ và trung tuyến $AM$. Biết $\\overrightarrow{GM} = k\\overrightarrow{GA}$. Tìm số thực $k$.",
+    "correctAnswer": "-0.5",
+    "explanation": "$\\overrightarrow{GM}$ và $\\overrightarrow{GA}$ ngược hướng, $GM = \\frac{1}{2}GA \\implies \\overrightarrow{GM} = -\\frac{1}{2}\\overrightarrow{GA} \\implies k = -0.5$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.3",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho hình vuông $ABCD$ cạnh bằng $5$. Tính độ dài của vectơ $\\vec{u} = 3\\overrightarrow{AB} - 3\\overrightarrow{AD}$ (làm tròn đến hàng phần mười).",
+    "correctAnswer": "21.2",
+    "explanation": "$3|\\overrightarrow{DB}| = 3 \\times 5\\sqrt{2} = 15\\sqrt{2} \\approx 21.21 \\approx 21.2$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.4",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB = 16$. Điểm $M$ thuộc đoạn $AB$ sao cho $AM = 4$. Biết $\\overrightarrow{MB} = k\\overrightarrow{MA}$. Tìm $k$.",
+    "correctAnswer": "-3",
+    "explanation": "$MB = 16 - 4 = 12$. $\\overrightarrow{MB}$ ngược hướng $\\overrightarrow{MA}$, tỉ số $\\frac{MB}{MA} = \\frac{12}{4} = 3 \\implies \\overrightarrow{MB} = -3\\overrightarrow{MA} \\implies k = -3$.",
+    "sourceCitation": "Bộ đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.5",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác đều $ABC$ cạnh $4\\sqrt{3}$, đường cao $AH$. Tính độ dài của vectơ $3\\overrightarrow{AH}$.",
+    "correctAnswer": "18",
+    "explanation": "$AH = \\frac{4\\sqrt{3} \\cdot \\sqrt{3}}{2} = 6 \\implies |3\\overrightarrow{AH}| = 3 \\times 6 = 18$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.6",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$. Gọi $M$ là trung điểm $BC$. Biểu diễn $\\overrightarrow{AM} = x\\overrightarrow{AB} + y\\overrightarrow{AC}$. Tính tích $P = x \\cdot y$.",
+    "correctAnswer": "0.25",
+    "explanation": "$\\overrightarrow{AM} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC} \\implies x = 0.5, y = 0.5 \\implies P = 0.25$.",
+    "sourceCitation": "SBT Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.7",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác $ABC$ có $AB = 6, AC = 9$. Phân giác trong góc $A$ cắt $BC$ tại $D$. Biết $\\overrightarrow{CD} = k\\overrightarrow{CB}$. Tìm giá trị của $k$.",
+    "correctAnswer": "0.6",
+    "explanation": "$\\frac{DC}{DB} = \\frac{AC}{AB} = \\frac{9}{6} = \\frac{3}{2} \\implies DC = \\frac{3}{5}CB \\implies \\overrightarrow{CD} = \\frac{3}{5}\\overrightarrow{CB} \\implies k = 0.6$.",
+    "sourceCitation": "Đề thi HSG Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.8",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Hai quả cầu có khối lượng $m_1 = 4\\text{ kg}$ tại $A$ và $m_2 = 2\\text{ kg}$ tại $B$ cách nhau $18\\text{ cm}$. Khối tâm $G$ thỏa mãn $4\\overrightarrow{GA} + 2\\overrightarrow{GB} = \\vec{0}$. Tính khoảng cách $GB$ (theo cm).",
+    "correctAnswer": "12",
+    "explanation": "$4GA = 2GB \\implies GB = 2GA$. Mà $GA + GB = 18 \\implies 3GA = 18 \\implies GA = 6, GB = 12\\text{ cm}$.",
+    "sourceCitation": "Vật lý 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.9",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho tam giác vuông $ABC$ tại $A$ có $AB = 6, AC = 8$. Tính độ dài vectơ $\\vec{u} = \\frac{1}{2}\\overrightarrow{AB} + \\frac{1}{2}\\overrightarrow{AC}$.",
+    "correctAnswer": "5",
+    "explanation": "$\\vec{u} = \\frac{1}{2}(\\overrightarrow{AB} + \\overrightarrow{AC}) = \\overrightarrow{AM}$ (với $M$ là trung điểm cạnh huyền $BC$). $BC = 10 \\implies AM = 5$.",
+    "sourceCitation": "Đề kiểm tra Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.10",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho đoạn thẳng $AB$. Lấy điểm $C$ sao cho $\\overrightarrow{AC} = 4\\overrightarrow{BC}$. Tính tỉ số độ dài $\\frac{AC}{AB}$.",
+    "correctAnswer": "1.33",
+    "explanation": "$\\overrightarrow{AC} = 4(\\overrightarrow{AC} - \\overrightarrow{AB}) = 4\\overrightarrow{AC} - 4\\overrightarrow{AB} \\implies 3\\overrightarrow{AC} = 4\\overrightarrow{AB} \\implies \\frac{AC}{AB} = \\frac{4}{3} \\approx 1.33$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.11",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một đoàn tàu hỏa đang chạy đều với tốc độ $80\\text{ km/h}$. Khi vào cua, tàu giảm tốc độ còn $0.6$ lần tốc độ ban đầu. Tốc độ mới của tàu là bao nhiêu km/h?",
+    "correctAnswer": "48",
+    "explanation": "$v = 0.6 \\times 80 = 48\\text{ km/h}$.",
+    "sourceCitation": "Toán học thực tế"
+  },
+  {
+    "id": "bq-10-ai-sa-10.9.12",
+    "gradeNumber": 10,
+    "chapterId": "c4",
+    "chapterName": "Chương IV: Vectơ",
+    "lessonId": "b9",
+    "lessonTitle": "Bài 9: Vectơ",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Động cơ tên lửa tạo ra một lực đẩy ban đầu là $1200\\text{ kN}$. Khi kích hoạt tầng đẩy phụ, lực đẩy tăng lên gấp $2.5$ lần lực ban đầu. Độ lớn lực đẩy mới bằng bao nhiêu kN?",
+    "correctAnswer": "3000",
+    "explanation": "$F = 2.5 \\times 1200 = 3000\\text{ kN}$.",
+    "sourceCitation": "Vật lý 10"
   }
 ]

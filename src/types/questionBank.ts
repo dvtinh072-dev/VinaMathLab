@@ -16,8 +16,9 @@ export interface BankQuestion {
   statements?: { id: string; text: string; isCorrect: boolean }[]; // Đúng/Sai 4 ý a,b,c,d
   correctAnswer?: string;       // Đáp án trả lời ngắn (số nguyên, phân số, số thập phân)
   explanation: string;          // Lời giải chi tiết
-  sourceCitation: string;       // Nguồn tài liệu trong dự án
-  createdAt: string;
+  sourceCitation?: string;      // Nguồn tài liệu trong dự án
+  source?: string;              // Nguồn trích dẫn hiển thị
+  createdAt?: string;
 }
 
 export interface ChapterCatalogItem {

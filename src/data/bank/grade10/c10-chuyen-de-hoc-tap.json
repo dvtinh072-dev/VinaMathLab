@@ -2964,5 +2964,40 @@
     "explanation": "$a^2 = 25 \\Rightarrow a = 5$. Độ dài trục lớn là $2a = 10$.",
     "sourceCitation": "Chuyên đề học tập Toán 10 - Bộ sách mới",
     "createdAt": "2026-09-14T05:51:04.606Z"
+  },
+  {
+    "id": "bq-10-c10-tf-001",
+    "gradeNumber": 10,
+    "chapterId": "c10-chuyen-de-hoc-tap",
+    "chapterName": "Chương X: Chuyên đề học tập Toán 10",
+    "lessonId": "cd-ba-duong-conic",
+    "lessonTitle": "Chuyên đề: Ba đường conic và ứng dụng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho elip $(E)$ có phương trình chính tắc $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Độ dài trục lớn của elip bằng $2a = 10$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Độ dài trục nhỏ của elip bằng $2b = 8$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Tiêu cự của elip bằng $2c = 6$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Tâm sai của elip là $e = \\frac{c}{a} = \\frac{3}{5} = 0{,}6 < 1$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $a^2 = 25 \\Rightarrow a = 5 \\Rightarrow 2a = 10$ (Đúng).\nb) $b^2 = 16 \\Rightarrow b = 4 \\Rightarrow 2b = 8$ (Đúng).\nc) $c = \\sqrt{a^2 - b^2} = \\sqrt{25 - 16} = 3 \\Rightarrow 2c = 6$ (Đúng).\nd) $e = c/a = 3/5 = 0{,}6$ (Đúng).",
+    "sourceCitation": "Chuyên đề học tập Toán 10 KNTT"
   }
 ]

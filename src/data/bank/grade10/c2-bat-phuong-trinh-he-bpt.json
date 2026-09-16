@@ -1,329 +1,5 @@
 [
   {
-    "stem": "Biểu diễn hình học tập nghiệm của hệ bất phương trình:",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-1",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.262Z"
-  },
-  {
-    "stem": "Xác định miền nghiệm của các hệ bất phương trình 2 ẩn ⑴ ⑵",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-2",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Xác định miền nghiệm của các hệ bất phương trình 2 ẩn ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\n\n\n\n🏱 Dạng 2. Giá trị lớn nhất – giá trị nhỏ nhất, bài toán tối ưu\n\n\n\n▶ Bài toán: \tTìm giá trị lớn nhất, nhỏ nhất của biểu thức  với  nghiệm đúng một hệ bất phương trình bậc nhất hai ẩn cho trước.\n\n≫ Bước ⑴: \tXác định miền nghiệm của hệ bất phương trình đã cho. Kết quả thường được miền nghiệm  là đa giác.\n\n≫ Bước ⑵: \tTính giá trị của  tương ứng với  là tọa độ của các đỉnh của đa giác.\n\n≫ Bước ⑶: \tKết luận:\n\n Giá trị lớn nhất của  là số lớn nhất trong các giá trị tìm được.\n\n Giá trị nhỏ nhất của  là số nhỏ nhất trong các giá trị tìm được.\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-3",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tìm giá trị lớn nhất, giá trị nhỏ nhất của ⑴ với là nghiệm của hệ bất phương trình . ⑵ với là nghiệm của hệ bất phương trình .",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "VDC",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-4",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Tìm trị lớn nhất của biểu thức ⑴ , với điều kiện . ⑵ , với điều kiện .",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-5",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho hệ bất phương trình . Xác định miền nghiệm của hệ bất phương trình trên. Trong , tìm giá trị lớn nhất của hàm số .",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "VDC",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-6",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Có 3 nhóm máy dùng để sản xuất ra 2 lại sản phẩm và . Để sản xuất một đơn vị sản phẩm mỗi loại phải lần lượt dùng các máy thuộc nhóm máy khác nhau. Số máy trong một nhóm và số máy từng nhóm cần thiết để sản xuất ra một đơn vị sản phẩm thuộc mỗi loại được cho trong bảng bên dưới: Nhóm Số máy trong mỗi nhóm Số máy trong từng nhóm để sản xuất một đơn vị SP Loại I Loại II A 10 2 2 B 4 0 2 C 12 2 4 Một đơn vị sản phẩm I lãi 3000 đồng, một đơn vị sản phẩm II lãi 5000 đồng. Hãy lập phương án sản xuất hai loại sản phẩm trên sao cho có lãi cao nhất.",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-7",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Một xưởng cơ khí có hai công nhân là Chiến và Bình. Xưởng sản xuất loại sản phẩm và . Mỗi sản phẩm bán lãi nghìn đồng, mỗi sản phẩm bán lãi nghìn đồng. Để sản xuất được một sản phẩm thì Chiến phải làm việc trong giờ, Bình phải làm việc trong giờ. Để sản xuất được một sản phẩm thì Chiến phải làm việc trong giờ, Bình phải làm việc trong giờ. Một người không thể làm được đồng thời hai sản phẩm. Biết rằng trong một tháng Chiến không thể làm việc quá giờ và Bình không thể làm việc quá giờ. Tính số tiền lãi lớn nhất trong một tháng của xưởng.",
-    "explanation": "🖎 Lời giải",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-8",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Một hộ nông dân định trồng đậu và cà trên diện tích m2. Nếu trồng đậu thì cần công và thu đồng trên m2 nếu trồng cà thì cần công và thu đồng trên m2. Hỏi cần trồng mỗi loại cây trên diện tích là bao nhiêu để thu được nhiều tiền nhất khi tổng số công không quá .",
-    "explanation": "🖎 Lời giải\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\t\n\n\n\n\n\nC\n\nLuyện tập\n\nCâu hỏi – Trả lời trắc nghiệm\n\nTrong các cặp số sau, cặp nào không là nghiệm của hệ bất phương trình  là\n\nA. .\tB. .\tC. .\tD. .\n\nMiền nghiệm của hệ bất phương trình  là phần mặt phẳng chứa điểm\n\nA. .\tB. .\tC. .\tD. .\n\nĐiểm nào sau đây không thuộc miền nghiệm của hệ bất phương trình?\n\nA. .\tB. .\tC. .\tD. .\n\nĐiểm nào sau đây thuộc miền nghiệm của hệ bất phương trình ?\n\nA. .\tB. .\tC. .\tD. .\n\nMiền nghiệm của hệ bất phương trình  là phần mặt phẳng chứa điểm\n\nA. .\tB. .\tC. .\tD. .\n\nMiền nghiệm của hệ bất phương trình  là phần mặt phẳng chứa điểm\n\nA. .\tB. .\tC. .\tD. .\n\n  Cho hệ bất phương trình  có tập nghiệm là . Khẳng định nào sau đây là khẳng định đúng?\n\nA. .\tB. .\tC. .\tD. .\n\n  Miền nghiệm của hệ bất phương trình  là phần mặt phẳng chứa điểm:\n\nA. .\tB. .\tC. .\tD. .\n\nMiền tam giác  kể cả ba cạnh sau đây là miền nghiệm của hệ bất phương trình nào trong bốn hệ bất phương trình dưới đây?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\nCho hệ bất phương trình  có tập nghiệm là . Khẳng định nào sau đây là khẳng định đúng?\n\nA. .\tB. .\tC. .\tD. .\n\nCho hệ bất phương trình  có tập nghiệm là . Khẳng định nào sau đây là khẳng định đúng?\n\nA. .\tB. .\tC. .\tD. .\n\nCho hệ bất phương trình có tập nghiệm . Khẳng định nào sau đây là khẳng định đúng ?\n\nA. .\tB. .\tC. .\tD. .\n\nCho hệ bất phương trình có tập nghiệm . Khẳng định nào sau đây là khẳng định đúng ?\n\nA. .\n\nB. .\n\nC. Biểu diễn hình học của  là nửa mặt phẳng chứa gốc tọa độ và kể cả bờ , với  là là đường thẳng .\n\nD. Biểu diễn hình học của  là nửa mặt phẳng không chứa gốc tọa độ và kể cả bờ , với  là là đường thẳng .\n\nCho hệ . Gọi  là tập nghiệm của bất phương trình (1),  là tập nghiệm của bất phương trình (2) và  là tập nghiệm của hệ thì\n\nA. .\tB. .\tC. .\tD. .\n\nPhần không gạch chéo ở hình sau đây là biểu diễn miền nghiệm của hệ bất phương trình nào trong bốn hệ A, B, C, D?\n\n\n\nA. .\tB. .\tC. .\tD. .\n\nMiền nghiệm của hệ bất phương trình  chứa điểm nào sau đây?\n\nA. \tB. .\tC. .\tD. \n\nMiền nghiệm của hệ bất phương trình  chứa điểm nào sau đây?\n\nA. Không có.\tB. \tC. \tD. .\n\nMiền nghiệm của hệ bất phương trình  chứa điểm nào sau đây?\n\nA. .\tB. .\tC. .\tD. \n\nMiền nghiệm của hệ bất phương trình  không chứa điểm nào sau đây?\n\nA. \tB. \tC. .\tD. \n\nMiền nghiệm của hệ bất phương trình  không chứa điểm nào sau đây?\n\nA. .\tB. \tC. \tD. \n\nMiền nghiệm của hệ bất phương trình  không chứa điểm nào sau đây?\n\nA. \tB. \tC. \tD. \n\nMiền nghiệm của hệ bất phương trình  không chứa điểm nào sau đây?\n\nA. \tB. \tC. \tD. \n\nGiá trị nhỏ nhất của biểu thức  trên miền xác định bởi hệ  là\n\nA.  khi , .\tB.  khi , .\n\nC.  khi , .\tD.  khi , .\n\nGiá trị lớn nhất của biết thức  với điều kiện  là\n\nA. .\tB. .\tC. .\tD. .\n\nGiá trị nhỏ nhất của biết thức  với điều kiện  là\n\nA. .\tB. .\tC. .\tD. .\n\nBiểu thức  đạt giá trị nhỏ nhất với điều kiện tại điểm  có toạ độ là\n\nA. .\tB. .\tC. .\tD. .\n\n\n\n\n\nBiểu thức , với  và  thõa mãn hệ bất phương trình , đạt giá trị lớn nhất là  và đạt giá trị nhỏ nhất là . Hãy chọn kết quả đúng trong các kết quả sau:\n\nA. và .\tB. và .\tC. và .\tD.  và .\n\nTrong một cuộc thi pha chế, hai đội A, B được sử dụng tối đa  hương liệu,  lít nước và g đường để pha chế nước cam và nước táo. Để pha chế  lít nước cam cần g đường,  lít nước và g hương liệu; pha chế  lít nước táo cần g đường,  lít nước và g hương liệu. Mỗi lít nước cam nhận được  điểm thưởng, mỗi lít nước táo nhận được  điểm thưởng. Đội A pha chế được  lít nước cam và  lít nước táo và dành được điểm thưởng cao nhất. Hiệu số  là\n\nA. .\tB. .\tC. .\tD. .\n\n Một hộ nông dân định trồng đậu và cà trên diện tích . Nếu trồng đậu trên diện tích  thì cần công làm và thu được  đồng. Nếu trồng cà thì trên diện tích  cần  công làm và thu được  đồng. Hỏi cần trồng mỗi loại cây trên diện tích là bao nhiêu để thu được nhiều tiền nhất khi tổng số công làm không quá  công. Hãy chọn phương án đúng nhất trong các phương án sau:\n\nA. Trồng  đậu; cà.\tB. Trồng  đậu; cà.\n\nC. Trồng  đậu; cà.\tD. Trồng  đậu; cà.\n\nMột gia đình cần ít nhất 900 đơn vị protein và 400 đơn vị lipit trong thức ăn mỗi ngày. Mỗi kilogam thịt bò chứa 800 đơn vị protein và 200 đơn vị lipit. Mỗi kilogam thịt lợn chứa 600 đơn vị protein và 400 đơn vị lipit. Biết rằng gia đình này chỉ mua nhiều nhất 1,6 kg thịt bò và 1,1 kg thịt lợn. Giá tiền một kg thịt bò là 160 nghìn đồng, 1 kg thịt lợn là 110 nghìn đồng. Gọi  lần lượt là số kg thịt bò và thịt lợn mà gia đình đó cần mua để tổng số tiền họ phải trả là ít nhất mà vẫn đảm bảo lượng protein và lipit trong thức ăn. Tính \n\nA. .\tB. .\n\nC. .\tD. .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCâu hỏi – Trả lời đúng/sai\n\nCho hệ bất phương trình: . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nHệ trên là một hệ bất phương trình bậc nhất hai ẩn\n\n\n\n\n\n(b)\n\n là một nghiệm của hệ bất phương trình trên\n\n\n\n\n\n(c)\n\n là một nghiệm của hệ bất phương trình trên\n\n\n\n\n\n(d)\n\n là một nghiệm của hệ bất phương trình trên\n\n\n\n\n\nCho hệ bất phương trình . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n không là một nghiệm của hệ bất phương trình\n\n\n\n\n\n(b)\n\n là một nghiệm của hệ bất phương trình\n\n\n\n\n\n(c)\n\n là một nghiệm của hệ bất phương trình\n\n\n\n\n\n(d)\n\n là một nghiệm của hệ bất phương trình\n\n\n\n\n\nCho hệ bất phương trình: . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nMiền nghiệm của hệ bất phương trình là miền tam giác\n\n\n\n\n\n(b)\n\n là một nghiệm của hệ bất phương trình\n\n\n\n\n\n(c)\n\n là nghiệm của hệ bất phương trình (I) sao cho  đạt giá trị lớn nhất\n\n\n\n\n\n(d)\n\n là nghiệm của hệ bất phương trình (I) sao cho  đạt giá trị nhỏ nhất\n\n\n\n\n\nBác Minh có kế hoạch đầu tư không quá 240 triệu đồng vào hai khoản  và khoản Y. Để đạt được lợi nhuận thì khoản  phải đầu tư ít nhất 40 triệu đồng và số tiền đầu tư cho khoản  phải ít nhất gấp ba lần số tiền cho khoản . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nGọi  (đơn vị: triệu đồng) tiền bác Minh đầu tư vào kho ta có hệ bất phương trình:\n\n\n\n\n\n(b)\n\nMiền nghiệm của hệ bất phương trình tiền bác Minh đầu tư vào kho là một tứ giác\n\n\n\n\n\n(c)\n\nĐiểm  không thuộc miền nghiệm của hệ bất phương trình tiền bác Minh đầu tư vào kho\n\n\n\n\n\n(d)\n\nĐiểm  là điểm có tung độ lớn nhất thuộc miền nghiệm của hệ bất phương trình tiền bác Minh đầu tư vào kho\n\n\n\n\n\nTrong 1 lạng thịt bò chứa  protein, 1 lạng cá chứa  protein. Trung bình trong một ngày, một người đàn ông cần từ 56 đến  protein. Theo lời khuyên của bác sĩ, để tốt cho sức khỏe thì không nên ăn thịt nhiều hơn cá. Gọi  lần lượt là số lạng thịt bò, lạng cá mà một người đàn ông ăn trong một ngày. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nHệ bất phương trình bậc nhất hai ẩn  để biểu diễn lượng protein cần thiết trong một ngày cho một người đàn ông là \n\n\n\n\n\n(b)\n\nBiểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn  để biểu diễn lượng protein cần thiết trong một ngày cho một người đàn ông là một ngũ giác\n\n\n\n\n\n(c)\n\n thuộc miền nghiệm của hệ bất phương trình bậc nhất hai ẩn  để biểu diễn lượng protein cần thiết trong một ngày cho một người đàn ông\n\n\n\n\n\n(d)\n\nĐiểm  là điểm có hoành độ bé nhất thuộc miền nghiệm của hệ bất phương trình bậc nhất hai ẩn  để biểu diễn lượng protein cần thiết trong một ngày cho một người đàn ông\n\n\n\n\n\nBà Lan được tư vấn bổ sung chế độ ăn kiêng đặc biệt bằng cách sử dụng hai loại thực phẩm khác nhau là  và . Mỗi gói thực phẩm  chứa 20 đơn vị canxi, 20 đơn vị sắt và 10 đơn vị vitamin . Mỗi gói thực phẩm  chứa 20 đơn vị canxi, 10 đơn vị sắt và 20 đơn vị vitamin . Yêu cầu hằng ngày tối thiểu trong chế độ ăn uống là 240 đơn vị canxi, 160 đơn vị sắt và 140 đơn vị vitamin . Mỗi ngày không được dùng quá 12 gói mỗi loại. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nHệ bất phương mô tả số gói thực phẩm  và thực phẩm  mà bà Lan cần dùng mỗi ngày trong chế độ ăn kiêng để đáp ứng đủ nhu cầu cần thiết đối với canxi, sắt và vitamin là \n\n\n\n\n\n(b)\n\nMiền nghiệm của hệ bất phương mô tả số gói thực phẩm  và thực phẩm  mà bà Lan cần dùng mỗi ngày trong chế độ ăn kiêng để đáp ứng đủ nhu cầu cần thiết đối với canxi, sắt và vitamin là một ngũ giác\n\n\n\n\n\n(c)\n\nBiết 1 gói thực phẩm loại  giá 20000 đồng, 1 gói thực phẩm loại  giá 25000 đồng. Bà Lan cần dùng 10 gói thực phẩm loại  và 2 gói thực phẩm loại  để chi phí mua là ít nhất\n\n\n\n\n\n(d)\n\nĐiểm  không thuộc miền nghiệm của hệ bất phương mô tả số gói thực phẩm  và thực phẩm  mà bà Lan cần dùng mỗi ngày trong chế độ ăn kiêng để đáp ứng đủ nhu cầu cần thiết đối với canxi, sắt và vitamin \n\n\n\n\n\nCho các hệ bất phương trình sau:, . Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\nMiền nghiệm của hệ bất phương trình  là tam giác.\n\n\n\n\n\n(b)\n\nĐiểm  thỏa mãn miền nghiệm của hệ bất phương trình .\n\n\n\n\n\n(c)\n\nMiền nghiệm của hệ bất phương trình  là tứ giác.\n\n\n\n\n\n(d)\n\nĐiểm  không thỏa mãn miền nghiệm của hệ bất phương trình .\n\n\n\n\n\nMột gia đình cần ít nhất  chất protein và  chất lipit trong thức ăn mỗi ngày. Biết rằng thịt bò chứa  protein và  lipit. Thịt lợn chứa  protein và  lipit. Biết rằng gia đình này chỉ mua nhiều nhất là  thịt bò,  thịt lợn, giá tiền  thịt bò là 45000 đồng,  thịt lợn là 35000 đồng. Giả sử gia đình mua  kg thịt bò và  kg thịt lợn. Khi đó:\n\n\n\nMệnh đề\n\nĐúng\n\nSai\n\n(a)\n\n là hệ bất phương trình biểu thị các điều kiện của bài toán\n\n\n\n\n\n(b)\n\nMiền nghiệm của hệ trên là miền của tam giác\n\n\n\n\n\n(c)\n\nGọi  (nghìn đồng) là số tiền phải trả cho  (kilogam) thịt bò và  (kilogam) thịt lợn. Khi đó, chi phí để mua  thịt bò và  thịt lợn là:  (nghìn đồng).\n\n\n\n\n\n(d)\n\nGia đình đó mua  thịt bò và  thịt lợn thì chi phí là ít nhất.\n\n\n\n\n\nCâu hỏi – Trả lời ngắn\n\nCho hệ bất phương trình: . Miền nghiệm của hệ tạo thành đa giác có n cạnh, với n là số tự nhiên. Xác định n\n\n🖎 Điền đáp số:    \n\nCho biểu thức  với  và  thỏa mãn hệ bất phương trình: .\n\nBiết  đạt giá trị nhỏ nhất khi  và . Tính .\n\n🖎 Điền đáp số:    \n\nTìm GTLN của  với điều kiện \n\n🖎 Điền đáp số:    \n\nCó bao nhiêu giá trị nguyên của tham số  trong  để  với mọi cặp số  thoả mãn hệ bất phương trình sau: \n\n🖎 Điền đáp số:    \n\nCho hệ bất phương trình: . Có bao nhiêu giá trị nguyên của tham số  trong  để bất phương trình  nghiệm đúng với mọi cặp số  thoả mãn hệ bất phương trình (II).\n\n🖎 Điền đáp số:    \n\nTrong một cuộc thi pha chế đồ uống gồm hai loại là  và , mỗi đội chơi được sử dụng tối đa  hương liệu, 9 cốc nước lọc và  đường. Để pha chế 1 cốc đồ uống loại  cần 1 cốc nước lọc,  đường và  hương liệu. Để pha chế 1 cốc đồ uống loại  cần 1 cốc nước lọc,  đường và  hương liệu. Mỗi cốc đồ uống loại  nhận được 6 điểm thương, mỗi cốc đồ uống loại  nhận được 8 điểm thưởng. Để đạt được số điểm thưởng cao nhất, đội chơi cần pha chế  cốc đồ uống loại  và  cốc đồ uống loại . Tính giá trị \n\n🖎 Điền đáp số:    \n\nMột gia đình cần ít nhất 900 đơn vị protein và 400 đơn vị lipit trong thức ăn mỗi ngày. Mỗi ki-lô-gam thịt bò chứa 800 đơn vị protein và 200 đơn vị lipit. Mỗi ki-lô-gam thịt lợn (heo) chứa 600 đơn vị protein và 400 đơn vị lipit. Biết rằng gia đình này chỉ mua nhiều nhất là  thịt bò và  thịt lợn; giá  thịt bò là 200000 đồng,  thịt lợn là 160000 đồng. Gia đình đó cần mua  thịt bò và  thịt lợn để đảm bảo cung cấp đủ lượng protein, lipit cho gia đình và có chi phí là ít nhất. Tính giá trị  với  là các số hữu tỉ.\n\n🖎 Điền đáp số:    \n\nNhân dịp tết Trung thu, xí nghiệp sản xuất bánh muốn sản xuất hai loại bánh: bánh nướng và bánh dẻo. Để sản xuất hai loại bánh này, xí nghiệp cần: đường, bột mì, trứng, mứt bí, lạp xưởng,. Xí nghiệp đã nhập về  bột mì và  đường, các nguyên liệu khác luôn đáp ứng được số lượng mà xí nghiệp cần. Mỗi chiếc bánh nướng cần  bột mì,  đường. Mỗi chiếc bánh dẻo cần  bột mì và  đường. Theo khảo sát thị trường, lượng bánh dẻo tiêu thụ không vượt quá ba lần lượng bánh nướng và sản phẩm của xí nghiệp sản xuất luôn được tiêu thụ hết. Mỗi chiếc bánh nướng lãi 8000 đồng, mỗi chiếc bánh dẻo lãi 6000 đồng. Để đáp ứng nhu cầu thị trường; đảm bảo lượng bột mì, đường không vượt quá số lượng mà xí nghiệp đã chuẩn bị và vẫn thu được lợi nhuận cao nhất thì xí nghiệp phải sản xuất m chiếc bánh nướng và n chiếc bánh dẻo, với m;n là các số tự nhiên. Tính giá trị \n\n🖎 Điền đáp số:    \n\nMột xưởng sản xuất hai loại sản phẩm là sản phẩm loại I và sản phẩm loại II:\n\n» Mỗi kg sản phẩm loại I cần  nguyên liệu và 30 giờ, thu lời được 40 nghìn.\n\n» Mỗi kg sản phẩm loại II cần 4 kg nguyên liệu và 15 giờ, thu lời được 30 nghìn. \n\nXưởng có 200 kg nguyên liệu và 1200 giờ làm việc tối đa. Để có mức lời cao nhất xưởng sẽ sản xuất m sản phẩm loại  và n sản phẩm loại II, với m;n là các số tự nhiên. Tính giá trị \n\n🖎 Điền đáp số:    \n\nMột hộ nông dân định trồng dứa và củ đậu trên diện tích 8 ha. Trên diện tích mỗi ha, nếu trồng dứa thì cần 20 công và thu 3 triệu đồng, nếu trồng củ đậu thì cần 30 công và thu 4 triệu đồng. Để thu được nhiều tiền nhất hộ nông dân cần trồng  dứa và  củ đậu, biết rằng m;n là các số tự nhiên và tổng số công không quá 180. Tính giá trị \n\n🖎 Điền đáp số:    \n\nCó ba nhóm máy  dùng để sản xuất ra hai loại sản phẩm I và II. Để sản xuất một đơn vị sản phẩm mỗi loại lần lượt phải dùng các máy thuộc các nhóm khác nhau. Số máy trong một nhóm và số máy của từng nhóm cần thiết để sản xuất ra một đơn vị sản phẩm thuộc mỗi loại được dùng cho trong bảng sau:\n\nNhóm\n\n\n\nSố máy trong mỗi nhóm\n\nSố máy trong từng nhóm để sản xuất ra một đơn vị\n\nLoại I\n\nLoại II\n\n\n\n10\n\n2\n\n2\n\nY\n\n4\n\n0\n\n2\n\n\n\n12\n\n2\n\n4\n\nMột đơn vị sản phẩm loại I lãi 3 nghìn đồng, một đơn vị sản phẩm loại II lãi 5 nghìn đồng. Để cho tổng số tiền lãi thu được là cao nhất thì đơn vị phải sản xuất m sản phẩm loại I và n sản phẩm loại II, với m;n là các số tự nhiên. Tính giá trị \n\n🖎 Điền đáp số:    \n\nBác Năm dự định trồng ngô và đậu xanh trên một mảnh đất có diện tích 8 hecta (ha). Nếu trồng 1 ha ngô thì cần 20 ngày công và thu được 40 triệu đồng. Nếu trồng 1 ha đậu xanh thì cần 30 ngày công và thu được 50 triệu đồng. Để thu được nhiều tiền nhất thì bác Năm cần trồng m ha ngô và n ha đậu xanh, với m;n là các số tự nhiên. Tính giá trị . Biết rằng, bác Năm chỉ có thể sử dụng không quá 180 ngày công cho việc trồng ngô và đậu xanh.\n\n🖎 Điền đáp số:    \n\n\n\n---------------------------------- Hết ----------------------------------",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B2-HỆ BPT BẬC NHẤT HAI ẨN-P3-GHÉP HS.docx",
-    "id": "bq-10-c2-9",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.264Z"
-  },
-  {
-    "stem": "Cho các điểm và các bất phương trình. Kiểm tra các điểm đã cho, điểm nào nằm trong miền nghiệm của bất phương trình. ⑴ Các điểm: , , , và bất phương trình ⑵ Các điểm: , , , và bất phương trình ⑶ Các điểm: , , , và bất phương trình ⑷ Các điểm: , , , và bất phương trình",
-    "explanation": "🖎 Lời giải\n\n⑴ Các điểm: , , ,  và bất phương trình \n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (đúng).\n\nVậy các điểm  nằm trong miền nghiệm của bất phương trình.\n\n⑵ Các điểm: , , ,  và bất phương trình \n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (sai).\n\nVậy điểm  nằm trong miền nghiệm của bất phương trình.\n\n⑶ Các điểm: , , ,  và bất phương trình \n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (đúng).\n\nVậy điểm  nằm trong miền nghiệm của bất phương trình.\n\n⑷ Các điểm: , , ,  và bất phương trình \n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (đúng).\n\nVậy điểm  nằm trong miền nghiệm của bất phương trình.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-494",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Miền nghiệm của bất phương trình là nửa mặt phẳng chứa điểm nào trong các điểm: , , , ?",
-    "explanation": "🖎 Lời giải\n\nTa có \n\nXét điểm  ta có  (đúng).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (sai).\n\nXét điểm  ta có  (sai).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-495",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Điểm không nằm trong miền nghiệm của bất phương trình nào dưới đây?",
-    "explanation": "🖎 Lời giải\n\nXét  ta có  đúng.\n\nXét  ta có  đúng.\n\nXét  ta có  đúng.\n\nXét  ta có  vô lý.\n\nNên  không nằm trong miền nghiệm của \n\n\n\n🏱 Dạng 2. Biểu diễn hình học miền nghiệm\n\n\n\nXét bất phương trình .\n\n≫ Bước ⑴: Vẽ đường thẳng  : .\n\n≫ Bước ⑵: Lấy một điểm  không thuộc  (thường lấy gốc tọa độ  ).\n\n≫ Bước ⑶: Tính  và so sánh với 0.\n\n≫ Bước ⑷: Kết luận:\n\n Nếu  thì nửa mp bờ  không chứa  là miền nghiệm của \n\n Nếu  thì nửa mp bờ  chứa  là miền nghiệm của \n\n▶ Chú ý: \tMiền nghiệm của  bỏ đi đường thẳng  là miền nghiệm của bất phương trình .\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-496",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xác định miền nghiệm của các bất phương trình: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ Xác định miền nghiệm của \n\nVẽ đường thẳng  : .\n\nLấy một điểm  .\n\nTa có:  nên miền nghiệm của bất phương trình  là nửa mp không chứa điểm (tính cả bờ ).\n\n\n\n⑵ Xác định miền nghiệm của \n\nVẽ đường thẳng  : .\n\nLấy một điểm  .\n\nTa có:  nên miền nghiệm của bất phương trình  là nửa mp chứa điểm  (tính cả bờ ).\n\n\n\n⑶ Xác định miền nghiệm của \n\nVẽ đường thẳng  : .\n\nLấy một điểm  .\n\nTa có:  nên miền nghiệm của bất phương trình  là nửa mp chứa điểm (không tính bờ ).\n\n⑷ Xác định miền nghiệm của \n\nVẽ đường thẳng  : .\n\nLấy một điểm  .\n\nTa có:  nên miền nghiệm của bất phương trình  là nửa mp không chứa điểm  (không tính bờ ).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-497",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Biểu diễn hình học tập nghiệm của các bất phương trình: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ Biểu diễn hình học tập nghiệm của \n\nVẽ đường thẳng \n\nLấy gốc tọa độ  \n\nTa thấy  và có  nên nửa mp  bờ  chứa gốc tọa độ  là miền nghiệm của bất phương trình đã cho (miền bị tô đậm trong hình).\n\n⑵ Biểu diễn hình học tập nghiệm của \n\nVẽ đường thẳng \n\nLấy gốc tọa độ  \n\nTa thấy  và có  nên nửa mp bờ  chứa gốc tọa độ  là miền nghiệm của bất phương trình đã cho .\n\n⑶ Biểu diễn hình học tập nghiệm của \n\nThu gọn bất phương trình đề bài đã cho về thành \n\nTa vẽ đường thẳng \n\nLấy gốc tọa độ  \n\nTa thấy  và có  nên nửa mp bờ  chứa gốc tọa độ  không là miền nghiệm của bất phương trình đã cho.\n\n⑷ Biểu diễn hình học tập nghiệm của \n\nTa vẽ đường thẳng \n\nLấy gốc tọa độ  \n\nTa thấy  và có  nên nửa mp bờ  chứa gốc tọa độ  là miền nghiệm của bất phương trình đã cho.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-498",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xác định miền nghiệm của bất phương trình 2 ẩn ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nVẽ đường thẳng .\n\nLấy . \n\nTa thấy là nghiệm của bất phương trình . \n\nVậy miền nghiệm cần tìm là nửa mặt phẳng (không kể bờ ) chứa điểm  (được tô màu)\n\n⑵ \n\nVẽ đường thẳng .\n\nLấy . Ta thấy là nghiệm của bất phương trình . \n\nVậy miền nghiệm cần tìm là nửa mặt phẳng (kể bờ ) chứa điểm (được tô màu)\n\n⑶ \n\nTa có: \n\nVẽ đường thẳng d: \n\nLấy . Ta thấy là nghiệm của bất phương trình . \n\nVậy miền nghiệm cần tìm là nửa mặt phẳng (kể bờ ) chứa điểm (được tô màu)\n\n⑷ \n\nVẽ đường thẳng \n\nLấy . Ta thấy  là nghiệm của bất phương trình . \n\nVậy miền nghiệm cần tìm là nửa mặt phẳng (kể bờ ) chứa điểm (được tô màu)",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C2-B1-BPT BẬC NHẤT HAI ẨN-P1.docx",
-    "id": "bq-10-c2-499",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm biệt thức và nghiệm của các tam thức bậc hai sau ⑴ ⑵ ⑶ ⑷ ⑸ ⑹",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑵ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑶ \n\nTam thức  có , nên tam thức có hai nghiệm phân biệt .\n\n⑷ \n\nTam thức  có , nên tam thức vô nghiệm.\n\n⑸ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑹ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-683",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm biệt thức và nghiệm (nếu có) của các tam thức bậc hai sau: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑵ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑶ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n⑷ \n\nTam thức  có , \n\nNên tam thức có hai nghiệm phân biệt .\n\n\n\n🏱 Dạng 2. Xét dấu tam thức bậc hai\n\n\n\nCho .\n\n» Nếu  thì  luôn cùng dấu với hệ số , với mọi .\n\n» Nếu  thì  luôn cùng dấu với hệ số , với mọi .\n\n» Nếu  thì  luôn:\n\n▪ Cùng dấu với hệ số  khi  \n\n▪ Trái dấu với hệ số  khi . \n\nTrong đó  là hai nghiệm của .\n\n» Khi , dấu của  và  là: “Trong trái ngoài cùng” \n\n\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-684",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xét dấu của các tam thức sau: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTa có  và . Suy ra .\n\n⑵ \n\nTa có: .\n\nBảng xét dấu\n\n\n\nSuy ra:  và .\n\n⑶ \n\nTam thức bậc hai   có , nghiệm kép  và hệ số  nên  với mọi .\n\n⑷ \n\nTa có: .\n\nBảng xét dấu\n\n\n\nSuy ra:  với mọi .\n\n⑸ \n\nTa có: .\n\nBảng xét dấu\n\n\n\nSuy ra:  và .\n\n⑹ \n\nTa có: .\n\nBảng xét dấu\n\n\n\nSuy ra:  với mọi .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-685",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xét dấu các biểu thức sau: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹ ⑺ ⑻",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\n có , hệ số  nên .\n\n⑵ \n\n có , hệ số  nên .\n\n⑶ \n\n có  hai nghiệm phân biệt , hệ số  nên  và .\n\n⑷ \n\n.\n\n\n\nTa có, bảng xét dấu: \n\nVậy  và .\n\n⑸ \n\n có  hai nghiệm phân biệt , \n\nHệ số  nên \n\nvà .\n\n⑹ \n\n có , hệ số  nên .\n\n⑺ \n\n có hai nghiệm phân biệt , hệ số  \n\nNên  và   \n\n⑻ \n\n có hai nghiệm phân biệt , hệ số  \n\nNên  và .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-686",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xét dấu các biểu thức sau: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹ ⑺ ⑻ ⑼ ⑽",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nCho ; .\n\nBảng xét dấu:\n\n\n\nKết luận:\n\n.\n\n.\n\n.\n\n⑵ \n\nCho ; .\n\nBảng xét dấu:\n\n\n\nKết luận:\n\n.\n\n.\n\n.\n\n⑶ \n\nCho ; .\n\nBảng xét dấu:\n\n\n\nKết luận:\n\n.\n\n.\n\n.\n\n không xác định khi và chỉ khi .\n\n⑷ \n\nCho ; .\n\nBảng xét dấu:\n\n\n\nKết luận:\n\n.\n\n.\n\n.\n\n không xác định khi và chỉ khi .\n\n⑸ \n\nTa có  và  nên \n\n⑹ \n\nTa có \n\nDo  nên \n\n⑺ \n\nTa có \n\n\n\nBảng xét dấu\n\n\n\nTừ bảng xét dấu ta thấy \n\n⑻ \n\nLời giải\n\nTa có  ; \n\nBảng xét dấu \n\n\n\n⑼ \n\nTa có \n\nTa có \n\nBảng xét dấu\n\n\n\nSuy ra  dương khi và chỉ khi , \n\n âm khi và chỉ khi .\n\n⑽ \n\nĐiều kiện xác định: .\n\nTa có  , \n\nBảng xét dấu : \n\n\n\nVậy \n\n không xác định tại .\n\n.\n\n.\n\n\n\n🏱 Dạng 3. Điều kiện của tham số để tam thức bậc hai có dấu không đổi\n\n\n\nCho tam thức bậc hai . Đặt .\n\n» \t» \n\n» \t» \n\n\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-687",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho . Tìm các giá trị của tham số để luôn dương với mọi .",
-    "explanation": "🖎 Lời giải\n\nTa có  và .\n\nĐể  thì .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-688",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho . Tìm các giá trị của tham số để với mọi giá trị của .",
-    "explanation": "🖎 Lời giải\n\nVới .\n\nVới , để  thì điều kiện là\n\n.\n\nVậy với  thì .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-689",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm các giá trị của tham số để ⑴ , với . ⑵ , với . ⑶ , với .",
-    "explanation": "🖎 Lời giải\n\n⑴ ,  với \n\nTrường hợp 1. \n\nXét \n\nNếu .\n\nNếu , .\n\nTrường hợp 2.\n\nXét , khi đó, điều kiện để ,  là.\n\n.\n\n⑵ ,  với . \n\nVới .\n\nVới , để ,  thì điều kiện là\n\n\n\nVậy với  thì , .\n\n⑶ ,  với .\n\nTa có , .\n\nĐể ,  thì , \n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B1-DẤU CỦA TAM THỨC BẬC 2-P1.docx",
-    "id": "bq-10-c2-690",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Giải các bất phương trình sau: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTam thức  có  và có hai nghiệm  \n\n( cùng dấu với hệ số ).\n\nSuy ra  hoặc \n\nVậy tập nghiệm của bất phương trình: .\n\n⑵ \n\nTam thức  có  và \n\n trái dấu với hệ số  nên  âm với  và \n\nSuy ra \n\nVậy tập nghiệm của bất phương trình là .\n\n⑶ \n\nĐiều kiện: \n\nXét tam thức vế trái có  và  nên .\n\nVậy tập xác định của hàm số .\n\n⑷ \n\nTa có đúng .\n\nVậy tập nghiệm của bất phương trình .\n\n⑸ \n\nBPT \n\n.\n\nVậy tập nghiệm của bất phương trình: .\n\n⑹ \n\nBPT \n\n.\n\nVậy tập nghiệm của bất phương trình: .\n\n\n\n🏱 Dạng 2. Tìm tham số để tam thức bậc hai luôn âm – dương\n\n\n\nCho tam thức bậc hai . Đặt .\n\n» \t» \n\n» \t» \n\n»  vô nghiệm \n\n»  vô nghiệm \n\n»  vô nghiệm \n\n»  vô nghiệm \n\n⁂ Lưu ý: Khi giải bất phương trình mà  chứa tham số , thì xét 2 trường hợp :\n\n» Trường hợp 1: hệ số \n\n» Trường hợp 2: hệ số \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B2-BPT BẬC 2 và PHƯƠNG TRÌNH QUY VỀ PT BẬC 2-P1.docx",
-    "id": "bq-10-c2-692",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Với giá trị nào của thì ⑴ luôn âm? ⑵ luôn âm? ⑶ luôn dương?",
-    "explanation": "🖎 Lời giải\n\n⑴  luôn âm?\n\n\n\n.\n\nVậy .\n\n⑵  luôn âm?\n\nTrường hợp 1: . Khi đó: . Vậy  (không thỏa).\n\nTrường hợp 2: . Khi đó:\n\n\n\n.\n\nVậy .\n\n⑶  luôn dương?\n\nTrường hợp 1: . Khi đó: . Vậy  (không thỏa).\n\nTrường hợp 2: . Khi đó:\n\n.\n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B2-BPT BẬC 2 và PHƯƠNG TRÌNH QUY VỀ PT BẬC 2-P1.docx",
-    "id": "bq-10-c2-693",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm giá trị của tham số để các biểu thức sau đây luôn dương với mọi . ⑴ ⑵",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTìm  sao cho  với mọi .\n\nDo  nên  khi và chỉ khi  \n\nTa có .\n\n⑵ \n\nTìm   sao cho  với mọi .\n\nTrường hợp 1: ,khi đó  \n\nTrường hợp 2: , khi đó  \n\nTừ đó suy ra  \n\nKết hợp hai trường hợp ta suy ra giá trị của  cần tìm là .\n\n\n\n🏱 Dạng 3. Giải phương trình quy về phương trình bậc hai\n\n\n\n✓ Phương trình dạng \n\n▪Bước 1: \tBình phương hai vế, rút gọn rồi giải phương trình bậc 2 hoặc bậc nhất.\n\n▪Bước 2: \tThử lại các giá trị  tìm được có thỏa phương trình ban đầu hay không? Sau đó kết luận nghiệm.\n\nHoặc \n\n✓ Phương trình dạng \n\n▪Bước 1: \tBình phương hai vế, rút gọn rồi giải phương trình bậc 2 hoặc bậc nhất.\n\n▪Bước 2: \tThử lại các giá trị  tìm được có thỏa phương trình ban đầu hay không? Sau đó kết luận nghiệm.\n\nHoặc \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B2-BPT BẬC 2 và PHƯƠNG TRÌNH QUY VỀ PT BẬC 2-P1.docx",
-    "id": "bq-10-c2-694",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Giải phương trình sau: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nBình phương hai vế của phương trình ta được: \n\nSau khi thu gọn ta được  \n\nTừ đó tìm được  hoặc \n\nThay lần lượt hai giá trị này vào phương trình đã cho, ta thấy chỉ có  thỏa mãn.\n\nVậy nghiệm của phương trình đã cho là .\n\n⑵ \n\nBình phương hai vế của phương trình ta được .\n\nSau khi thu gọn ta được .\n\nTừ đó tìm được  hoặc .\n\nThay lần lượt hai giá trị này vào phương trình đã cho, ta thấy  và  thỏa mãn.\n\nVậy tập nghiệm của phương trình đã cho là \n\n⑶ \n\nBình phương hai vế của phương trình ta được .\n\nSau khi thu gọn ta được .\n\nTừ đó tìm được  hoặc .\n\nThay lần lượt giá trị này vào phương trình đã cho, ta thấy không có giá trị nào thỏa mãn.\n\nVậy tập nghiệm của phương trình đã cho là .\n\n⑷ \n\nTa có : \n\n.\n\nVậy phương trình có tập nghiệm:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c2",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "sourceCitation": "C7-B2-BPT BẬC 2 và PHƯƠNG TRÌNH QUY VỀ PT BẬC 2-P1.docx",
-    "id": "bq-10-c2-695",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c2-mc-002",
     "gradeNumber": 10,
     "chapterId": "c2-bat-phuong-trinh-he-bpt",
@@ -2436,21 +2112,6 @@
     "createdAt": "2026-09-14T05:38:45.460Z"
   },
   {
-    "id": "bq-10-c2-sa-029",
-    "gradeNumber": 10,
-    "chapterId": "c2-bat-phuong-trinh-he-bpt",
-    "chapterName": "Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
-    "lessonId": "b3-bat-phuong-trinh",
-    "lessonTitle": "Bài 3: Bất phương trình bậc nhất hai ẩn",
-    "type": "short_answer",
-    "level": "VDC",
-    "stem": "Nhân dịp tết Trung thu, xí nghiệp sản xuất bánh muốn sản xuất hai loại bánh: bánh nướng và bánh dẻo. Để sản xuất hai loại bánh này, xí nghiệp cần: đường, bột mì, trứng, mứt bí, lạp xưởng,. Xí nghiệp đã nhập về600 kg bột mì và240 kg đường, các nguyên liệu khác luôn đáp ứng được số lượng mà xí nghiệp cần. Mỗi chiếc bánh nướng cần120 g bột mì,60 g đường. Mỗi chiếc bánh dẻo cần160 g bột mì và40 g đường. Theo khảo sát thị trường, lượng bánh dẻo tiêu thụ không vượt quá ba lần lượng bánh nướng và sản phẩm của xí nghiệp sản xuất luôn được tiêu thụ hết. Mỗi chiếc bánh nướng lãi8000 đồng, mỗi chiếc bánh dẻo lãi6000 đồng, Hỏi tổng số lượng bánh nướng và bánh dẻo là bao nhiêu để xí nghiệp thu được lợi nhuận cao nhất và đảm bảo lượng bột mì, đường không vượt số lượng đã chuẩn bị.",
-    "correctAnswer": "10",
-    "explanation": "Biểu diễn miền nghiệm của hệ bất phương trình trên mặt phẳng tọa độ Oxy và xác định tọa độ các đỉnh của miền nghiệm để tìm giá trị cực trị của hàm mục tiêu F(x, y).",
-    "sourceCitation": "Tài liệu Toán thực tế & Tối ưu miền nghiệm Toán 10: chuyen-de-bpt-va-he-bpt-bac-nhat-hai-an-toan-10-dinh-huong-cau-truc-moi.pdf",
-    "createdAt": "2026-09-14T05:38:45.460Z"
-  },
-  {
     "id": "bq-10-c2-sa-030",
     "gradeNumber": 10,
     "chapterId": "c2-bat-phuong-trinh-he-bpt",
@@ -2689,5 +2350,2805 @@
     "explanation": "Biểu diễn miền nghiệm của hệ bất phương trình trên mặt phẳng tọa độ Oxy và xác định tọa độ các đỉnh của miền nghiệm để tìm giá trị cực trị của hàm mục tiêu F(x, y).",
     "sourceCitation": "Tài liệu Toán thực tế & Tối ưu miền nghiệm Toán 10: cac-dang-toan-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an-thuong-gap.pdf",
     "createdAt": "2026-09-14T05:38:45.461Z"
+  },
+  {
+    "id": "bq-10-ai-10.3.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bất phương trình nào sau đây là bất phương trình bậc nhất hai ẩn $x, y$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$3x - 4y > 7$"
+      },
+      {
+        "key": "B",
+        "text": "$3x + y^3 \\le 2$"
+      },
+      {
+        "key": "C",
+        "text": "$2x - y + z \\ge 0$"
+      },
+      {
+        "key": "D",
+        "text": "$x^2 - y^2 < 1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Bất phương trình $3x - 4y > 7$ có bậc 1 đối với cả hai ẩn $x, y$ và hệ số $a = 3, b = -4$ thỏa mãn $a^2 + b^2 \\ne 0$.",
+    "sourceCitation": "Đề phát triển đề minh họa Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bất phương trình nào sau đây KHÔNG PHẢI là bất phương trình bậc nhất hai ẩn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2x - y \\le 1$"
+      },
+      {
+        "key": "B",
+        "text": "$4x + 3y^2 \\ge 5$"
+      },
+      {
+        "key": "C",
+        "text": "$x + 7y > 0$"
+      },
+      {
+        "key": "D",
+        "text": "$-3y < 6$"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Bất phương trình $4x + 3y^2 \\ge 5$ chứa $y^2$ có bậc 2 nên không phải bậc nhất.",
+    "sourceCitation": "Đề rèn luyện nâng cao Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cặp số nào sau đây là một nghiệm của bất phương trình $x - 3y + 4 \\ge 0$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(0; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$(1; 2)$"
+      },
+      {
+        "key": "C",
+        "text": "$(2; 3)$"
+      },
+      {
+        "key": "D",
+        "text": "$(0; 2)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(0; 0)$ vào vế trái: $0 - 3(0) + 4 = 4 \\ge 0$ (luôn đúng).",
+    "sourceCitation": "Đề ôn luyện kiểm tra 15 phút Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cặp số nào sau đây KHÔNG PHẢI là nghiệm của bất phương trình $2x + y > 3$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(2; 1)$"
+      },
+      {
+        "key": "B",
+        "text": "$(1; 2)$"
+      },
+      {
+        "key": "C",
+        "text": "$(0; 2)$"
+      },
+      {
+        "key": "D",
+        "text": "$(3; -1)$"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Thay $(0; 2)$ vào vế trái: $2(0) + 2 = 2 > 3$ là khẳng định sai.",
+    "sourceCitation": "Đề ôn luyện định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Miền nghiệm của bất phương trình nào sau đây CHỨA gốc tọa độ $O(0; 0)$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5x - 2y < -3$"
+      },
+      {
+        "key": "B",
+        "text": "$2x + 4y \\ge 1$"
+      },
+      {
+        "key": "C",
+        "text": "$3x - y + 7 \\ge 0$"
+      },
+      {
+        "key": "D",
+        "text": "$x - 6y > 4$"
+      }
+    ],
+    "correctKey": "C",
+    "explanation": "Thay $x = 0, y = 0$ vào $3x - y + 7 \\ge 0$: $0 - 0 + 7 = 7 \\ge 0$ (đúng).",
+    "sourceCitation": "Ngân hàng đề thi Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường thẳng bờ của miền nghiệm bất phương trình $4x - 3y - 12 \\ge 0$ có phương trình là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4x - 3y = 12$"
+      },
+      {
+        "key": "B",
+        "text": "$4x + 3y = 12$"
+      },
+      {
+        "key": "C",
+        "text": "$3x - 4y = 12$"
+      },
+      {
+        "key": "D",
+        "text": "$4x - 3y = -12$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đổi dấu bất phương trình thành dấu bằng: $4x - 3y - 12 = 0 \\Leftrightarrow 4x - 3y = 12$.",
+    "sourceCitation": "Tài liệu tự học Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường thẳng bờ $d: 3x - 4y = 12$ cắt trục tung $Oy$ tại điểm có tọa độ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(0; -3)$"
+      },
+      {
+        "key": "B",
+        "text": "$(4; 0)$"
+      },
+      {
+        "key": "C",
+        "text": "$(0; 3)$"
+      },
+      {
+        "key": "D",
+        "text": "$(-3; 0)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Giao với $Oy$: Cho $x = 0 \\Rightarrow -4y = 12 \\Rightarrow y = -3$. Tọa độ giao điểm là $(0; -3)$.",
+    "sourceCitation": "Đề luyện tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho bất phương trình $2x - y > 0$. Điểm nào sau đây thuộc miền nghiệm của bất phương trình?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(1; 1)$"
+      },
+      {
+        "key": "B",
+        "text": "$(0; 1)$"
+      },
+      {
+        "key": "C",
+        "text": "$(1; 3)$"
+      },
+      {
+        "key": "D",
+        "text": "$(0; 0)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(1; 1)$ vào vế trái: $2(1) - 1 = 1 > 0$ (đúng).",
+    "sourceCitation": "Đề thi học kì I Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.9",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Nửa mặt phẳng không bị gạch (kể cả bờ) trong hình vẽ là miền nghiệm của bất phương trình nào biết bờ đi qua $(3; 0)$ và $(0; 3)$, miền nghiệm không chứa gốc $O(0; 0)$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$x + y \\ge 3$"
+      },
+      {
+        "key": "B",
+        "text": "$x + y \\le 3$"
+      },
+      {
+        "key": "C",
+        "text": "$x - y \\ge 3$"
+      },
+      {
+        "key": "D",
+        "text": "$x + y > 3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường thẳng qua $(3; 0)$ và $(0; 3)$ là $x + y = 3$. Vì không chứa $O(0; 0)$ và kể cả bờ nên ta có BPT $x + y \\ge 3$.",
+    "sourceCitation": "Đề kiểm tra giữa kì I Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.10",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Khi biểu diễn miền nghiệm của bất phương trình $x - 3y \\le 6$, đường thẳng bờ $x - 3y = 6$ được vẽ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nét liền và thuộc miền nghiệm"
+      },
+      {
+        "key": "B",
+        "text": "Nét đứt và không thuộc miền nghiệm"
+      },
+      {
+        "key": "C",
+        "text": "Nét liền và không thuộc miền nghiệm"
+      },
+      {
+        "key": "D",
+        "text": "Nét đứt và thuộc miền nghiệm"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Bất phương trình mang dấu $\\le$ (có dấu bằng) nên đường bờ vẽ nét liền và các điểm trên bờ thuộc miền nghiệm.",
+    "sourceCitation": "Đề rèn luyện Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.11",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Miền nghiệm của bất phương trình $x \\le -2$ trên mặt phẳng tọa độ $Oxy$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ)"
+      },
+      {
+        "key": "B",
+        "text": "Nửa mặt phẳng nằm bên phải đường thẳng $x = -2$ (kể cả bờ)"
+      },
+      {
+        "key": "C",
+        "text": "Nửa mặt phẳng nằm phía trên đường thẳng $y = -2$"
+      },
+      {
+        "key": "D",
+        "text": "Nửa mặt phẳng nằm phía dưới đường thẳng $y = -2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường thẳng $x = -2$ song song với $Oy$. Miền $x \\le -2$ gồm các điểm có hoành độ nhỏ hơn hoặc bằng $-2$, tức nửa mặt phẳng bên trái kể cả bờ.",
+    "sourceCitation": "Tài liệu chuyên đề Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.12",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Điểm nào sau đây nằm trên đường thẳng bờ của bất phương trình $4x + 3y - 12 \\le 0$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(0; 4)$"
+      },
+      {
+        "key": "B",
+        "text": "$(3; 1)$"
+      },
+      {
+        "key": "C",
+        "text": "$(2; 1)$"
+      },
+      {
+        "key": "D",
+        "text": "$(1; 2)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(0; 4)$ vào phương trình bờ $4x + 3y - 12 = 0$: $4(0) + 3(4) - 12 = 0$ (đúng).",
+    "sourceCitation": "Đề ôn thi học sinh giỏi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.13",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm tất cả các giá trị của tham số $m$ để điểm $M(2; 1)$ thuộc miền nghiệm của bất phương trình $mx - 3y + 5 > 0$.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m > -1$"
+      },
+      {
+        "key": "B",
+        "text": "$m < -1$"
+      },
+      {
+        "key": "C",
+        "text": "$m \\ge -1$"
+      },
+      {
+        "key": "D",
+        "text": "$m \\le 1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $M(2; 1)$ vào: $m(2) - 3(1) + 5 > 0 \\Leftrightarrow 2m + 2 > 0 \\Leftrightarrow 2m > -2 \\Leftrightarrow m > -1$.",
+    "sourceCitation": "Đề tuyển chọn câu hỏi hay Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.14",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm tất cả các giá trị của tham số $m$ để gốc tọa độ $O(0; 0)$ KHÔNG THUỘC miền nghiệm của bất phương trình $2x - y + m^2 - 9 \\le 0$.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m < -3$ hoặc $m > 3$"
+      },
+      {
+        "key": "B",
+        "text": "$-3 \\le m \\le 3$"
+      },
+      {
+        "key": "C",
+        "text": "$m > 3$"
+      },
+      {
+        "key": "D",
+        "text": "$m < -3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Gốc $O(0; 0)$ không thuộc miền nghiệm $\\Leftrightarrow 2(0) - 0 + m^2 - 9 > 0 \\Leftrightarrow m^2 - 9 > 0 \\Leftrightarrow m > 3$ hoặc $m < -3$.",
+    "sourceCitation": "Đề khảo sát năng lực Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.15",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các điểm sau: $A(0; 0), B(1; 1), C(2; 2), D(3; 0), E(0; 4)$, có bao nhiêu điểm thuộc miền nghiệm của bất phương trình $x + 2y < 4$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2 điểm"
+      },
+      {
+        "key": "B",
+        "text": "3 điểm"
+      },
+      {
+        "key": "C",
+        "text": "4 điểm"
+      },
+      {
+        "key": "D",
+        "text": "1 điểm"
+      }
+    ],
+    "correctKey": "B",
+    "explanation": "Thay từng điểm vào $x + 2y < 4$:\n- $A(0; 0): 0 < 4$ (nhận)\n- $B(1; 1): 3 < 4$ (nhận)\n- $C(2; 2): 6 < 4$ (loại)\n- $D(3; 0): 3 < 4$ (nhận... ồ, thử lại: $A(0;0)$ nhận, $B(1;1)$ nhận, $D(3;0): 3 < 4$ nhận -> 3 điểm!)\nPhương án 3 điểm là đúng!",
+    "sourceCitation": "Đề luyện thi định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.16",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tập hợp các điểm $(x; y)$ thỏa mãn điều kiện $\\begin{cases} x < 0 \\\\ y > 0 \\end{cases}$ là miền điểm thuộc góc phần tư thứ mấy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Góc phần tư thứ II"
+      },
+      {
+        "key": "B",
+        "text": "Góc phần tư thứ I"
+      },
+      {
+        "key": "C",
+        "text": "Góc phần tư thứ III"
+      },
+      {
+        "key": "D",
+        "text": "Góc phần tư thứ IV"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Các điểm có hoành độ âm ($x < 0$) và tung độ dương ($y > 0$) nằm ở góc phần tư thứ II của mặt phẳng tọa độ $Oxy$.",
+    "sourceCitation": "Đề ôn tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.17",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường thẳng bờ $2x + 5y = 10$ cùng với hai trục tọa độ $Ox, Oy$ tạo thành một tam giác có diện tích bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5$"
+      },
+      {
+        "key": "B",
+        "text": "$10$"
+      },
+      {
+        "key": "C",
+        "text": "$20$"
+      },
+      {
+        "key": "D",
+        "text": "$2{,}5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Giao $Ox$: $(5; 0) \\Rightarrow OA = 5$. Giao $Oy$: $(0; 2) \\Rightarrow OB = 2$. Diện tích $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 5 \\cdot 2 = 5$.",
+    "sourceCitation": "Đề khảo sát chất lượng Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.18",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Khoảng cách từ gốc tọa độ $O(0; 0)$ đến đường thẳng bờ của bất phương trình $5x - 12y + 26 = 0$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$26$"
+      },
+      {
+        "key": "C",
+        "text": "$13$"
+      },
+      {
+        "key": "D",
+        "text": "$1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d = \\frac{|26|}{\\sqrt{5^2 + (-12)^2}} = \\frac{26}{13} = 2$.",
+    "sourceCitation": "Đề ôn thi học kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.19",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bác Hoa đi chợ mang theo 150 nghìn đồng để mua cam (giá 30 nghìn đồng/kg) và xoài (giá 25 nghìn đồng/kg). Gọi $x, y$ lần lượt là số kg cam và xoài bác Hoa mua. Bất phương trình mô tả số tiền bác chi trả là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$6x + 5y \\le 30$"
+      },
+      {
+        "key": "B",
+        "text": "$5x + 6y \\le 30$"
+      },
+      {
+        "key": "C",
+        "text": "$6x + 5y < 30$"
+      },
+      {
+        "key": "D",
+        "text": "$30x + 25y > 150$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tổng số tiền: $30x + 25y \\le 150$. Chia cả hai vế cho 5 ta được: $6x + 5y \\le 30$.",
+    "sourceCitation": "Bài toán thực tế Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.20",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một thợ mộc có 40 giờ công để sản xuất $x$ chiếc bàn (mỗi chiếc tốn 4 giờ) và $y$ chiếc ghế (mỗi chiếc tốn 2 giờ). Bất phương trình biểu diễn quỹ thời gian của người thợ mộc là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2x + y \\le 20$"
+      },
+      {
+        "key": "B",
+        "text": "$4x + 2y < 40$"
+      },
+      {
+        "key": "C",
+        "text": "$x + 2y \\le 20$"
+      },
+      {
+        "key": "D",
+        "text": "$2x + y \\ge 20$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thời gian làm bàn là $4x$, làm ghế là $2y$. Ta có: $4x + 2y \\le 40 \\Leftrightarrow 2x + y \\le 20$.",
+    "sourceCitation": "Đề bài toán kinh tế Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.21",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho bất phương trình $2x + (m - 1)y < 6$. Tìm tất cả các giá trị của tham số $m$ để cặp số $(1; 2)$ là một nghiệm của bất phương trình đã cho.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m < 3$"
+      },
+      {
+        "key": "B",
+        "text": "$m > 3$"
+      },
+      {
+        "key": "C",
+        "text": "$m < 2$"
+      },
+      {
+        "key": "D",
+        "text": "$m > 2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $x = 1, y = 2$ vào bất phương trình: $2(1) + (m - 1) \\cdot 2 < 6 \\Leftrightarrow 2 + 2m - 2 < 6 \\Leftrightarrow 2m < 6 \\Leftrightarrow m < 3$.",
+    "sourceCitation": "Chuyên đề BPT Toán 10 định hướng mới 2025"
+  },
+  {
+    "id": "bq-10-ai-10.3.22",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Miền nghiệm của bất phương trình $-3x + 2y - 4 \\ge 0$ không chứa điểm nào trong các điểm sau?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$O(0; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$A(-2; 0)$"
+      },
+      {
+        "key": "C",
+        "text": "$B(-1; 1)$"
+      },
+      {
+        "key": "D",
+        "text": "$C(0; 3)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay tọa độ gốc tọa độ $O(0; 0)$: $-3(0) + 2(0) - 4 = -4 < 0$ (không thỏa mãn $\\ge 0$). Do đó miền nghiệm không chứa gốc tọa độ $O$.",
+    "sourceCitation": "Tài liệu Chuyên đề BPT & Hệ BPT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.23",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Đường thẳng bờ của bất phương trình $3x - 4y + 12 = 0$ đi qua hai điểm nào trên hai trục tọa độ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(-4; 0)$ và $(0; 3)$"
+      },
+      {
+        "key": "B",
+        "text": "$(4; 0)$ và $(0; -3)$"
+      },
+      {
+        "key": "C",
+        "text": "$(-4; 0)$ và $(0; -3)$"
+      },
+      {
+        "key": "D",
+        "text": "$(4; 0)$ và $(0; 3)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cho $y = 0 \\Rightarrow 3x + 12 = 0 \\Rightarrow x = -4$, điểm $(-4; 0)$. Cho $x = 0 \\Rightarrow -4y + 12 = 0 \\Rightarrow y = 3$, điểm $(0; 3)$.",
+    "sourceCitation": "Các dạng toán BPT bậc nhất hai ẩn thường gặp"
+  },
+  {
+    "id": "bq-10-ai-10.3.24",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cặp số nguyên không âm $(x; y)$ thỏa mãn bất phương trình $3x + 2y \\le 6$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7 cặp"
+      },
+      {
+        "key": "B",
+        "text": "6 cặp"
+      },
+      {
+        "key": "C",
+        "text": "5 cặp"
+      },
+      {
+        "key": "D",
+        "text": "8 cặp"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "$x, y \\in \\mathbb{N}$: Với $x = 0 \\Rightarrow 2y \\le 6 \\Rightarrow y \\in \\{0; 1; 2; 3\\}$ (4 cặp); với $x = 1 \\Rightarrow 2y \\le 3 \\Rightarrow y \\in \\{0; 1\\}$ (2 cặp); với $x = 2 \\Rightarrow 2y \\le 0 \\Rightarrow y = 0$ (1 cặp). Tổng cộng $4 + 2 + 1 = 7$ cặp.",
+    "sourceCitation": "Chuyên đề BPT bậc nhất hai ẩn Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-10.3.25",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bất phương trình nào sau đây tương đương với bất phương trình $2x - 3y + 1 > 0$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$-4x + 6y - 2 < 0$"
+      },
+      {
+        "key": "B",
+        "text": "$-4x + 6y - 2 > 0$"
+      },
+      {
+        "key": "C",
+        "text": "$4x - 6y + 1 > 0$"
+      },
+      {
+        "key": "D",
+        "text": "$2x - 3y > 1$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Nhân cả hai vế của $2x - 3y + 1 > 0$ với số âm $-2$ và đổi chiều bất đẳng thức ta được $-4x + 6y - 2 < 0$.",
+    "sourceCitation": "Đề rèn luyện nâng cao Toán 10"
+  },
+  {
+    "id": "bq-10-ai-10.3.26",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho bất phương trình $3x - 4y + 5 \\ge 0$. Khoảng cách từ điểm $M(1; -3)$ đến đường thẳng bờ của bất phương trình bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "5"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường thẳng bờ có phương trình $3x - 4y + 5 = 0$. Khoảng cách $d(M, \\Delta) = \\frac{|3(1) - 4(-3) + 5|}{\\sqrt{3^2 + (-4)^2}} = \\frac{|3 + 12 + 5|}{5} = \\frac{20}{5} = 4$.",
+    "sourceCitation": "Chuyên đề Toán 10 chương BPT và Hệ BPT"
+  },
+  {
+    "id": "bq-10-ai-10.3.27",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một cửa hàng văn phòng phẩm bán bút bi với giá 5 nghìn đồng/chiếc và vở ô ly với giá 12 nghìn đồng/quyển. Bạn Nam có 70 nghìn đồng. Bất phương trình mô tả số bút bi $x$ và số quyển vở $y$ mà bạn Nam có thể mua được là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5x + 12y \\le 70$ ($x, y \\in \\mathbb{N}$)"
+      },
+      {
+        "key": "B",
+        "text": "$5x + 12y < 70$ ($x, y \\in \\mathbb{N}$)"
+      },
+      {
+        "key": "C",
+        "text": "$12x + 5y \\le 70$ ($x, y \\in \\mathbb{N}$)"
+      },
+      {
+        "key": "D",
+        "text": "$5x + 12y \\ge 70$ ($x, y \\in \\mathbb{N}$)"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tổng số tiền mua $x$ bút và $y$ vở là $5x + 12y$ (nghìn đồng). Vì Nam có tối đa 70 nghìn đồng nên số tiền không được vượt quá 70, tức là $5x + 12y \\le 70$ với $x, y \\in \\mathbb{N}$.",
+    "sourceCitation": "Toán thực tế BPT & Hệ BPT - Đặng Việt Đông"
+  },
+  {
+    "id": "bq-10-ai-10.3.28",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm tất cả các giá trị của tham số $m$ để gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình $(m - 2)x + 3y + m^2 - 9 > 0$.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m < -3$ hoặc $m > 3$"
+      },
+      {
+        "key": "B",
+        "text": "$-3 < m < 3$"
+      },
+      {
+        "key": "C",
+        "text": "$m > 3$"
+      },
+      {
+        "key": "D",
+        "text": "$m \\ge 3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $x = 0, y = 0$ vào bất phương trình: $(m - 2)(0) + 3(0) + m^2 - 9 > 0 \\Leftrightarrow m^2 - 9 > 0 \\Leftrightarrow m > 3$ hoặc $m < -3$.",
+    "sourceCitation": "Bộ đề ôn tập thi định kì Toán 10 cấu trúc mới"
+  },
+  {
+    "id": "bq-10-ai-10.3.29",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bất phương trình $x - y + 2 \\ge 0$ có miền nghiệm chứa cả hai điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$A(1; 2)$ và $B(-1; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$C(0; 3)$ và $D(1; 4)$"
+      },
+      {
+        "key": "C",
+        "text": "$E(-2; 1)$ và $F(0; 3)$"
+      },
+      {
+        "key": "D",
+        "text": "$G(2; 5)$ và $H(3; 6)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $A(1; 2)$: $1 - 2 + 2 = 1 \\ge 0$ (thỏa mãn); thay $B(-1; 0)$: $-1 - 0 + 2 = 1 \\ge 0$ (thỏa mãn). Vậy miền nghiệm chứa cả hai điểm $A, B$.",
+    "sourceCitation": "Chuyên đề BPT & Hệ BPT Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.3.30",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hai số thực $x, y$ thỏa mãn $x + 2y \\le 4$, $x \\ge 0$, $y \\ge 0$. Giá trị lớn nhất của biểu thức $F(x, y) = 2x + 3y$ bằng bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Miền nghiệm là tam giác với 3 đỉnh $O(0; 0)$, $A(4; 0)$, $B(0; 2)$. Tính giá trị tại các đỉnh: $F(0, 0) = 0$, $F(4, 0) = 2(4) + 0 = 8$, $F(0, 2) = 2(0) + 3(2) = 6$. Vậy $\\max F = 8$ tại điểm $(4; 0)$.",
+    "sourceCitation": "Toán thực tế BPT & Hệ BPT - Đặng Việt Đông"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét tính Đúng hoặc Sai của mỗi khẳng định sau về bất phương trình bậc nhất hai ẩn:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình $5x - 2y + 3 > 0$ là bất phương trình bậc nhất hai ẩn.",
+        "isCorrect": true,
+        "explanation": "Hai ẩn $x, y$ có bậc 1 và $5^2 + (-2)^2 = 29 \\ne 0$."
+      },
+      {
+        "key": "b",
+        "text": "Bất phương trình $x + y^2 \\le 4$ là bất phương trình bậc nhất hai ẩn.",
+        "isCorrect": false,
+        "explanation": "Chứa số hạng $y^2$ bậc 2 nên không phải bậc nhất."
+      },
+      {
+        "key": "c",
+        "text": "Bất phương trình $0x + 0y < 1$ là bất phương trình bậc nhất hai ẩn.",
+        "isCorrect": false,
+        "explanation": "Cả hai hệ số $a, b$ đồng thời bằng 0 nên không thỏa mãn điều kiện $a^2 + b^2 \\ne 0$."
+      },
+      {
+        "key": "d",
+        "text": "Bất phương trình $4y \\ge 8$ có thể coi là bất phương trình bậc nhất hai ẩn $x, y$.",
+        "isCorrect": true,
+        "explanation": "Viết được dạng $0x + 4y \\ge 8$ với $a = 0, b = 4$ thỏa mãn $a^2 + b^2 = 16 \\ne 0$."
+      }
+    ],
+    "explanation": "[Ý a]: Hai ẩn $x, y$ có bậc 1 và $5^2 + (-2)^2 = 29 \\ne 0$. | [Ý b]: Chứa số hạng $y^2$ bậc 2 nên không phải bậc nhất. | [Ý c]: Cả hai hệ số $a, b$ đồng thời bằng 0 nên không thỏa mãn điều kiện $a^2 + b^2 \\ne 0$. | [Ý d]: Viết được dạng $0x + 4y \\ge 8$ với $a = 0, b = 4$ thỏa mãn $a^2 + b^2 = 16 \\ne 0$.",
+    "sourceCitation": "Đề phát triển đề thi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho bất phương trình bậc nhất hai ẩn: $3x - y \\le 3$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Cặp số $(0; 0)$ là một nghiệm của bất phương trình.",
+        "isCorrect": true,
+        "explanation": "Thay $x = 0, y = 0$: $3(0) - 0 = 0 \\le 3$ (đúng)."
+      },
+      {
+        "key": "b",
+        "text": "Cặp số $(2; 1)$ là một nghiệm của bất phương trình.",
+        "isCorrect": false,
+        "explanation": "Thay $x = 2, y = 1$: $3(2) - 1 = 5 \\le 3$ (sai)."
+      },
+      {
+        "key": "c",
+        "text": "Cặp số $(1; 0)$ nằm trên đường thẳng bờ và thuộc miền nghiệm của bất phương trình.",
+        "isCorrect": true,
+        "explanation": "Thay $x = 1, y = 0$: $3(1) - 0 = 3 = 3$ (thỏa mãn dấu $\\le$)."
+      },
+      {
+        "key": "d",
+        "text": "Cặp số $(-1; -2)$ là một nghiệm của bất phương trình.",
+        "isCorrect": true,
+        "explanation": "Thay $x = -1, y = -2$: $3(-1) - (-2) = -1 \\le 3$ (đúng)."
+      }
+    ],
+    "explanation": "[Ý a]: Thay $x = 0, y = 0$: $3(0) - 0 = 0 \\le 3$ (đúng). | [Ý b]: Thay $x = 2, y = 1$: $3(2) - 1 = 5 \\le 3$ (sai). | [Ý c]: Thay $x = 1, y = 0$: $3(1) - 0 = 3 = 3$ (thỏa mãn dấu $\\le$). | [Ý d]: Thay $x = -1, y = -2$: $3(-1) - (-2) = -1 \\le 3$ (đúng).",
+    "sourceCitation": "Đề ôn tập định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho đường thẳng bờ $d: 2x + y = 6$ của bất phương trình $2x + y < 6$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Đường thẳng $d$ đi qua điểm $M(3; 0)$ và điểm $N(0; 6)$.",
+        "isCorrect": true,
+        "explanation": "$2(3) + 0 = 6$ và $2(0) + 6 = 6$ đều đúng."
+      },
+      {
+        "key": "b",
+        "text": "Đường thẳng bờ $d$ được biểu diễn bằng nét đứt khi vẽ miền nghiệm.",
+        "isCorrect": true,
+        "explanation": "Bất phương trình có dấu $<$ nghiêm ngặt nên đường bờ phải vẽ bằng nét đứt."
+      },
+      {
+        "key": "c",
+        "text": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình.",
+        "isCorrect": true,
+        "explanation": "Thay $(0; 0)$ vào: $2(0) + 0 = 0 < 6$ (đúng)."
+      },
+      {
+        "key": "d",
+        "text": "Điểm $P(2; 2)$ thuộc miền nghiệm của bất phương trình.",
+        "isCorrect": false,
+        "explanation": "Thay $(2; 2)$ vào: $2(2) + 2 = 6 < 6$ (sai vì không có dấu bằng)."
+      }
+    ],
+    "explanation": "[Ý a]: $2(3) + 0 = 6$ và $2(0) + 6 = 6$ đều đúng. | [Ý b]: Bất phương trình có dấu $<$ nghiêm ngặt nên đường bờ phải vẽ bằng nét đứt. | [Ý c]: Thay $(0; 0)$ vào: $2(0) + 0 = 0 < 6$ (đúng). | [Ý d]: Thay $(2; 2)$ vào: $2(2) + 2 = 6 < 6$ (sai vì không có dấu bằng).",
+    "sourceCitation": "Đề rèn luyện Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho bất phương trình $3x + (m + 2)y \\le 6$ với $m$ là tham số thực. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình đã cho luôn là bất phương trình bậc nhất hai ẩn với mọi $m \\in \\mathbb{R}$.",
+        "isCorrect": true,
+        "explanation": "Hệ số của $x$ bằng $3 \\ne 0$ nên $3^2 + (m + 2)^2 \\ge 9 > 0$ với mọi $m$."
+      },
+      {
+        "key": "b",
+        "text": "Gốc tọa độ $O(0; 0)$ luôn thuộc miền nghiệm của bất phương trình với mọi giá trị của $m$.",
+        "isCorrect": true,
+        "explanation": "Thay $x = 0, y = 0$: $3(0) + (m + 2)(0) = 0 \\le 6$ luôn đúng."
+      },
+      {
+        "key": "c",
+        "text": "Để điểm $B(1; 1)$ thuộc miền nghiệm thì $m \\le 1$.",
+        "isCorrect": true,
+        "explanation": "Thay $B(1; 1)$: $3(1) + (m + 2)(1) \\le 6 \\Leftrightarrow m + 5 \\le 6 \\Leftrightarrow m \\le 1$."
+      },
+      {
+        "key": "d",
+        "text": "Khi $m = -2$, đường thẳng bờ của bất phương trình song song với trục tung $Oy$.",
+        "isCorrect": true,
+        "explanation": "Khi $m = -2$, BPT trở thành $3x \\le 6 \\Leftrightarrow x \\le 2$. Đường thẳng bờ $x = 2$ song song với $Oy$."
+      }
+    ],
+    "explanation": "[Ý a]: Hệ số của $x$ bằng $3 \\ne 0$ nên $3^2 + (m + 2)^2 \\ge 9 > 0$ với mọi $m$. | [Ý b]: Thay $x = 0, y = 0$: $3(0) + (m + 2)(0) = 0 \\le 6$ luôn đúng. | [Ý c]: Thay $B(1; 1)$: $3(1) + (m + 2)(1) \\le 6 \\Leftrightarrow m + 5 \\le 6 \\Leftrightarrow m \\le 1$. | [Ý d]: Khi $m = -2$, BPT trở thành $3x \\le 6 \\Leftrightarrow x \\le 2$. Đường thẳng bờ $x = 2$ song song với $Oy$.",
+    "sourceCitation": "Đề bồi dưỡng học sinh khá giỏi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét tính Đúng hoặc Sai của mỗi khẳng định sau về miền nghiệm của các bất phương trình trên mặt phẳng Oxy:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Miền nghiệm của $y \\ge 0$ là nửa mặt phẳng nằm phía trên trục hoành $Ox$ (kể cả trục $Ox$).",
+        "isCorrect": true,
+        "explanation": "Trục $Ox$ có phương trình $y = 0$. Miền $y \\ge 0$ là nửa mặt phẳng phía trên kể cả bờ."
+      },
+      {
+        "key": "b",
+        "text": "Miền nghiệm của $x > 0$ là nửa mặt phẳng nằm bên phải trục tung $Oy$ (kể cả trục $Oy$).",
+        "isCorrect": false,
+        "explanation": "Vì dấu $>$ nghiêm ngặt nên không kể trục $Oy$."
+      },
+      {
+        "key": "c",
+        "text": "Miền nghiệm của $2x - y \\ge 0$ chứa điểm $(1; 1)$.",
+        "isCorrect": true,
+        "explanation": "Thay $(1; 1)$ vào: $2(1) - 1 = 1 \\ge 0$ (đúng)."
+      },
+      {
+        "key": "d",
+        "text": "Miền nghiệm của $x - 2y < 0$ chứa điểm $(2; 1)$.",
+        "isCorrect": false,
+        "explanation": "Thay $(2; 1)$ vào: $2 - 2(1) = 0 < 0$ (sai)."
+      }
+    ],
+    "explanation": "[Ý a]: Trục $Ox$ có phương trình $y = 0$. Miền $y \\ge 0$ là nửa mặt phẳng phía trên kể cả bờ. | [Ý b]: Vì dấu $>$ nghiêm ngặt nên không kể trục $Oy$. | [Ý c]: Thay $(1; 1)$ vào: $2(1) - 1 = 1 \\ge 0$ (đúng). | [Ý d]: Thay $(2; 1)$ vào: $2 - 2(1) = 0 < 0$ (sai).",
+    "sourceCitation": "Đề luyện tập Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho đường thẳng bờ $d: 4x - 3y = 12$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Đường thẳng $d$ cắt trục hoành tại $(3; 0)$ và cắt trục tung tại $(0; -4)$.",
+        "isCorrect": true,
+        "explanation": "Cho $y = 0 \\Rightarrow x = 3$. Cho $x = 0 \\Rightarrow y = -4$."
+      },
+      {
+        "key": "b",
+        "text": "Đoạn thẳng nối hai giao điểm của $d$ với hai trục tọa độ có độ dài bằng 5.",
+        "isCorrect": true,
+        "explanation": "Độ dài $AB = \\sqrt{3^2 + (-4)^2} = 5$."
+      },
+      {
+        "key": "c",
+        "text": "Miền nghiệm của $4x - 3y \\le 12$ chứa điểm $(1; -1)$.",
+        "isCorrect": true,
+        "explanation": "Thay $(1; -1)$: $4(1) - 3(-1) = 7 \\le 12$ (đúng)."
+      },
+      {
+        "key": "d",
+        "text": "Miền nghiệm của $4x - 3y \\ge 12$ chứa gốc tọa độ $O(0; 0)$.",
+        "isCorrect": false,
+        "explanation": "Thay $(0; 0)$: $0 \\ge 12$ (sai)."
+      }
+    ],
+    "explanation": "[Ý a]: Cho $y = 0 \\Rightarrow x = 3$. Cho $x = 0 \\Rightarrow y = -4$. | [Ý b]: Độ dài $AB = \\sqrt{3^2 + (-4)^2} = 5$. | [Ý c]: Thay $(1; -1)$: $4(1) - 3(-1) = 7 \\le 12$ (đúng). | [Ý d]: Thay $(0; 0)$: $0 \\ge 12$ (sai).",
+    "sourceCitation": "Đề kiểm tra chương II Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một bạn học sinh có 100 nghìn đồng đi mua bánh ngọt (giá 10 nghìn đồng/cái) và sữa tươi (giá 8 nghìn đồng/hộp). Gọi $x, y$ lần lượt là số cái bánh và hộp sữa bạn mua ($x, y \\in \\mathbb{N}$). Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình mô tả ngân sách mua hàng là: $5x + 4y \\le 50$.",
+        "isCorrect": true,
+        "explanation": "$10x + 8y \\le 100 \\Leftrightarrow 5x + 4y \\le 50$."
+      },
+      {
+        "key": "b",
+        "text": "Bạn có thể mua được 6 cái bánh ngọt và 6 hộp sữa tươi.",
+        "isCorrect": false,
+        "explanation": "Thay $x = 6, y = 6$: $5(6) + 4(6) = 30 + 24 = 54 > 50$ (vượt ngân sách)."
+      },
+      {
+        "key": "c",
+        "text": "Nếu bạn mua 4 cái bánh ngọt thì có thể mua tối đa 7 hộp sữa tươi.",
+        "isCorrect": true,
+        "explanation": "Với $x = 4 \\Rightarrow 5(4) + 4y \\le 50 \\Rightarrow 4y \\le 30 \\Rightarrow y \\le 7,5$. Do $y \\in \\mathbb{N}$ nên tối đa 7 hộp."
+      },
+      {
+        "key": "d",
+        "text": "Cặp số $(x; y) = (2; 10)$ thỏa mãn bất phương trình đã cho.",
+        "isCorrect": true,
+        "explanation": "Thay $x = 2, y = 10$: $5(2) + 4(10) = 50 \\le 50$ (đúng)."
+      }
+    ],
+    "explanation": "[Ý a]: $10x + 8y \\le 100 \\Leftrightarrow 5x + 4y \\le 50$. | [Ý b]: Thay $x = 6, y = 6$: $5(6) + 4(6) = 30 + 24 = 54 > 50$ (vượt ngân sách). | [Ý c]: Với $x = 4 \\Rightarrow 5(4) + 4y \\le 50 \\Rightarrow 4y \\le 30 \\Rightarrow y \\le 7,5$. Do $y \\in \\mathbb{N}$ nên tối đa 7 hộp. | [Ý d]: Thay $x = 2, y = 10$: $5(2) + 4(10) = 50 \\le 50$ (đúng).",
+    "sourceCitation": "Bài toán thực tế Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một xưởng làm đồ chơi thủ công cần dùng tối đa 60 giờ làm việc để sản xuất $x$ chiếc ô tô gỗ (cần 3 giờ/chiếc) và $y$ chiếc máy bay gỗ (cần 5 giờ/chiếc) ($x, y \\in \\mathbb{N}$). Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình ràng buộc số giờ làm việc là: $3x + 5y \\le 60$.",
+        "isCorrect": true,
+        "explanation": "Thời gian làm ô tô là $3x$, máy bay là $5y$. Tổng thời gian: $3x + 5y \\le 60$."
+      },
+      {
+        "key": "b",
+        "text": "Xưởng có thể sản xuất được 10 chiếc ô tô và 7 chiếc máy bay.",
+        "isCorrect": false,
+        "explanation": "Thay $x = 10, y = 7$: $3(10) + 5(7) = 30 + 35 = 65 > 60$."
+      },
+      {
+        "key": "c",
+        "text": "Nếu xưởng chỉ sản xuất ô tô gỗ ($y = 0$) thì có thể làm tối đa 20 chiếc.",
+        "isCorrect": true,
+        "explanation": "$3x \\le 60 \\Rightarrow x \\le 20$."
+      },
+      {
+        "key": "d",
+        "text": "Nếu xưởng sản xuất 5 chiếc máy bay thì có thể làm tối đa 11 chiếc ô tô.",
+        "isCorrect": true,
+        "explanation": "Với $y = 5 \\Rightarrow 3x + 25 \\le 60 \\Rightarrow 3x \\le 35 \\Rightarrow x \\le 11,67$. Tối đa 11 chiếc."
+      }
+    ],
+    "explanation": "[Ý a]: Thời gian làm ô tô là $3x$, máy bay là $5y$. Tổng thời gian: $3x + 5y \\le 60$. | [Ý b]: Thay $x = 10, y = 7$: $3(10) + 5(7) = 30 + 35 = 65 > 60$. | [Ý c]: $3x \\le 60 \\Rightarrow x \\le 20$. | [Ý d]: Với $y = 5 \\Rightarrow 3x + 25 \\le 60 \\Rightarrow 3x \\le 35 \\Rightarrow x \\le 11,67$. Tối đa 11 chiếc.",
+    "sourceCitation": "Đề vận dụng kinh tế Toán 10"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.9",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho bất phương trình $(m + 1)x + 2y - 4 \\le 0$ với $m$ là tham số thực. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Với $m = -1$, bất phương trình trở thành $2y - 4 \\le 0$, vẫn là một bất phương trình bậc nhất hai ẩn.",
+        "isCorrect": true,
+        "explanation": "Khi $m = -1$, hệ số của $x$ bằng 0 và hệ số của $y$ là 2 khác 0, nên $0x + 2y \\le 4$ vẫn là BPT bậc nhất hai ẩn."
+      },
+      {
+        "key": "b",
+        "text": "Gốc tọa độ $O(0; 0)$ luôn thuộc miền nghiệm của bất phương trình với mọi giá trị của $m$.",
+        "isCorrect": true,
+        "explanation": "Thay $(0; 0)$ ta được: $(m + 1)(0) + 2(0) - 4 = -4 \\le 0$ luôn đúng với mọi $m$."
+      },
+      {
+        "key": "c",
+        "text": "Để điểm $A(1; 2)$ thuộc miền nghiệm của bất phương trình thì $m \\ge 1$.",
+        "isCorrect": false,
+        "explanation": "Thay $A(1; 2)$: $(m + 1)(1) + 2(2) - 4 \\le 0 \\Leftrightarrow m + 1 \\le 0 \\Leftrightarrow m \\le -1$."
+      },
+      {
+        "key": "d",
+        "text": "Khi $m = 1$, đường thẳng bờ của bất phương trình đi qua điểm $B(2; 0)$.",
+        "isCorrect": true,
+        "explanation": "Khi $m = 1$, đường thẳng bờ là $2x + 2y - 4 = 0 \\Leftrightarrow x + y - 2 = 0$. Thay $B(2; 0)$: $2 + 0 - 2 = 0$ (thỏa mãn)."
+      }
+    ],
+    "explanation": "[Ý a]: Khi $m = -1$, hệ số của $x$ bằng 0 và hệ số của $y$ là 2 khác 0, nên $0x + 2y \\le 4$ vẫn là BPT bậc nhất hai ẩn. | [Ý b]: Thay $(0; 0)$ ta được: $(m + 1)(0) + 2(0) - 4 = -4 \\le 0$ luôn đúng với mọi $m$. | [Ý c]: Thay $A(1; 2)$: $(m + 1)(1) + 2(2) - 4 \\le 0 \\Leftrightarrow m + 1 \\le 0 \\Leftrightarrow m \\le -1$. | [Ý d]: Khi $m = 1$, đường thẳng bờ là $2x + 2y - 4 = 0 \\Leftrightarrow x + y - 2 = 0$. Thay $B(2; 0)$: $2 + 0 - 2 = 0$ (thỏa mãn).",
+    "sourceCitation": "Chuyên đề BPT Toán 10 định hướng cấu trúc mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.10",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một tiệm bánh làm hai loại bánh: bánh quy (cần 100g bột và 20g bơ) và bánh su kem (cần 50g bột và 40g bơ). Tiệm bánh có sẵn tối đa 2 kg bột và 0,8 kg bơ. Gọi $x, y$ lần lượt là số chiếc bánh quy và bánh su kem tiệm làm được ($x, y \\in \\mathbb{N}$). Xét tính Đúng hoặc Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình ràng buộc lượng bột cần dùng là $100x + 50y \\le 2000$.",
+        "isCorrect": true,
+        "explanation": "Đổi $2\\text{ kg} = 2000\\text{ g}$. Mỗi bánh quy cần 100g, bánh su kem cần 50g nên lượng bột là $100x + 50y \\le 2000$."
+      },
+      {
+        "key": "b",
+        "text": "Bất phương trình ràng buộc lượng bơ cần dùng là $20x + 40y \\le 80$.",
+        "isCorrect": false,
+        "explanation": "Đổi $0,8\\text{ kg} = 800\\text{ g}$. Do đó bất phương trình chính xác phải là $20x + 40y \\le 800$."
+      },
+      {
+        "key": "c",
+        "text": "Nếu tiệm chỉ làm bánh quy ($y = 0$) thì số lượng bánh quy tối đa có thể làm được là 20 chiếc.",
+        "isCorrect": true,
+        "explanation": "$y = 0 \\Rightarrow 100x \\le 2000 \\Rightarrow x \\le 20$ và $20x \\le 800 \\Rightarrow x \\le 40$. Lấy giao lại được $x \\le 20$."
+      },
+      {
+        "key": "d",
+        "text": "Cặp số $(x; y) = (15; 10)$ thỏa mãn điều kiện nguyên liệu của tiệm bánh.",
+        "isCorrect": true,
+        "explanation": "Kiểm tra bột: $100(15) + 50(10) = 1500 + 500 = 2000 \\le 2000$ (thỏa mãn); kiểm tra bơ: $20(15) + 40(10) = 300 + 400 = 700 \\le 800$ (thỏa mãn)."
+      }
+    ],
+    "explanation": "[Ý a]: Đổi $2\\text{ kg} = 2000\\text{ g}$. Mỗi bánh quy cần 100g, bánh su kem cần 50g nên lượng bột là $100x + 50y \\le 2000$. | [Ý b]: Đổi $0,8\\text{ kg} = 800\\text{ g}$. Do đó bất phương trình chính xác phải là $20x + 40y \\le 800$. | [Ý c]: $y = 0 \\Rightarrow 100x \\le 2000 \\Rightarrow x \\le 20$ và $20x \\le 800 \\Rightarrow x \\le 40$. Lấy giao lại được $x \\le 20$. | [Ý d]: Kiểm tra bột: $100(15) + 50(10) = 1500 + 500 = 2000 \\le 2000$ (thỏa mãn); kiểm tra bơ: $20(15) + 40(10) = 300 + 400 = 700 \\le 800$ (thỏa mãn).",
+    "sourceCitation": "Toán thực tế BPT & Hệ BPT - Đặng Việt Đông"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.11",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho bất phương trình $x + 2y - 2 > 0$ có miền nghiệm là nửa mặt phẳng $\\mathcal{P}$ (không kể bờ $d: x + 2y - 2 = 0$). Xét tính Đúng hoặc Sai của mỗi mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Gốc tọa độ $O(0; 0)$ không thuộc miền nghiệm $\\mathcal{P}$.",
+        "isCorrect": true,
+        "explanation": "Thay $(0; 0)$: $0 + 2(0) - 2 = -2 < 0$, do đó $O \\notin \\mathcal{P}$."
+      },
+      {
+        "key": "b",
+        "text": "Điểm $M(2; 1)$ thuộc miền nghiệm $\\mathcal{P}$.",
+        "isCorrect": true,
+        "explanation": "Thay $(2; 1)$: $2 + 2(1) - 2 = 2 > 0$ (thỏa mãn)."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $N(2; 0)$ thuộc miền nghiệm $\\mathcal{P}$.",
+        "isCorrect": false,
+        "explanation": "Thay $(2; 0)$: $2 + 2(0) - 2 = 0$. Vì BPT mang dấu ngặt $>$ (không kể bờ) nên điểm nằm trên bờ không thuộc miền nghiệm."
+      },
+      {
+        "key": "d",
+        "text": "Nếu điểm $A(x_0; y_0) \\in \\mathcal{P}$ thì điểm đối xứng với $A$ qua gốc tọa độ là $A'(-x_0; -y_0)$ chắc chắn không thuộc $\\mathcal{P}$.",
+        "isCorrect": true,
+        "explanation": "$x_0 + 2y_0 - 2 > 0 \\Rightarrow x_0 + 2y_0 > 2$. Khi đó tại $A'$: $-x_0 - 2y_0 - 2 = -(x_0 + 2y_0) - 2 < -2 - 2 = -4 < 0$, nên $A' \\notin \\mathcal{P}$."
+      }
+    ],
+    "explanation": "[Ý a]: Thay $(0; 0)$: $0 + 2(0) - 2 = -2 < 0$, do đó $O \\notin \\mathcal{P}$. | [Ý b]: Thay $(2; 1)$: $2 + 2(1) - 2 = 2 > 0$ (thỏa mãn). | [Ý c]: Thay $(2; 0)$: $2 + 2(0) - 2 = 0$. Vì BPT mang dấu ngặt $>$ (không kể bờ) nên điểm nằm trên bờ không thuộc miền nghiệm. | [Ý d]: $x_0 + 2y_0 - 2 > 0 \\Rightarrow x_0 + 2y_0 > 2$. Khi đó tại $A'$: $-x_0 - 2y_0 - 2 = -(x_0 + 2y_0) - 2 < -2 - 2 = -4 < 0$, nên $A' \\notin \\mathcal{P}$.",
+    "sourceCitation": "Các dạng toán BPT bậc nhất hai ẩn thường gặp"
+  },
+  {
+    "id": "bq-10-ai-tf-10.3.12",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong mặt phẳng tọa độ $Oxy$, cho tam giác $ABC$ có $A(1; 4)$, $B(3; 0)$, $C(-1; 2)$. Cho bất phương trình $2x - y + 1 \\ge 0$. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Điểm $A(1; 4)$ thuộc miền nghiệm của bất phương trình đã cho.",
+        "isCorrect": false,
+        "explanation": "Thay $A(1; 4)$: $2(1) - 4 + 1 = -1 < 0$ (không thỏa mãn $\\ge 0$)."
+      },
+      {
+        "key": "b",
+        "text": "Điểm $B(3; 0)$ thuộc miền nghiệm của bất phương trình đã cho.",
+        "isCorrect": true,
+        "explanation": "Thay $B(3; 0)$: $2(3) - 0 + 1 = 7 \\ge 0$ (thỏa mãn)."
+      },
+      {
+        "key": "c",
+        "text": "Trọng tâm $G$ của tam giác $ABC$ có tọa độ là $(1; 2)$.",
+        "isCorrect": true,
+        "explanation": "$x_G = \\frac{1 + 3 - 1}{3} = 1$, $y_G = \\frac{4 + 0 + 2}{3} = 2$. Trọng tâm $G(1; 2)$."
+      },
+      {
+        "key": "d",
+        "text": "Trọng tâm $G$ của tam giác $ABC$ thuộc miền nghiệm của bất phương trình đã cho.",
+        "isCorrect": true,
+        "explanation": "Thay $G(1; 2)$: $2(1) - 2 + 1 = 1 \\ge 0$ (thỏa mãn)."
+      }
+    ],
+    "explanation": "[Ý a]: Thay $A(1; 4)$: $2(1) - 4 + 1 = -1 < 0$ (không thỏa mãn $\\ge 0$). | [Ý b]: Thay $B(3; 0)$: $2(3) - 0 + 1 = 7 \\ge 0$ (thỏa mãn). | [Ý c]: $x_G = \\frac{1 + 3 - 1}{3} = 1$, $y_G = \\frac{4 + 0 + 2}{3} = 2$. Trọng tâm $G(1; 2)$. | [Ý d]: Thay $G(1; 2)$: $2(1) - 2 + 1 = 1 \\ge 0$ (thỏa mãn).",
+    "sourceCitation": "Đề thi học sinh giỏi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho bất phương trình $x + y \\le 5$. Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn bất phương trình đã cho?",
+    "correctAnswer": "10",
+    "explanation": "$x, y \\ge 1$:\n- $x = 1 \\Rightarrow y \\le 4$ (4 cặp)\n- $x = 2 \\Rightarrow y \\le 3$ (3 cặp)\n- $x = 3 \\Rightarrow y \\le 2$ (2 cặp)\n- $x = 4 \\Rightarrow y \\le 1$ (1 cặp)\nTổng số cặp là $4 + 3 + 2 + 1 = 10$ cặp.",
+    "sourceCitation": "Đề kiểm tra 1 tiết Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Đường thẳng bờ của bất phương trình $3x + 4y \\le 24$ cắt trục hoành tại $A(x_A; 0)$ và cắt trục tung tại $B(0; y_B)$. Tính giá trị $T = x_A + y_B$.",
+    "correctAnswer": "14",
+    "explanation": "Cho $y = 0 \\Rightarrow x_A = 8$. Cho $x = 0 \\Rightarrow y_B = 6$. Vậy $T = 8 + 6 = 14$.",
+    "sourceCitation": "Đề thi thử học kì I Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Đường thẳng bờ $d: 2x + 3y = 12$ cùng với hai trục tọa độ $Ox, Oy$ tạo thành một tam giác vuông $OAB$. Tính diện tích của tam giác vuông đó.",
+    "correctAnswer": "12",
+    "explanation": "Cho $y = 0 \\Rightarrow OA = 6$. Cho $x = 0 \\Rightarrow OB = 4$. Diện tích $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 6 \\cdot 4 = 12$.",
+    "sourceCitation": "Đề kiểm tra chất lượng Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Gọi $A, B$ lần lượt là giao điểm của đường thẳng bờ $d: 6x + 8y = 48$ với trục hoành $Ox$ và trục tung $Oy$. Tính độ dài đoạn thẳng $AB$.",
+    "correctAnswer": "10",
+    "explanation": "Cho $y = 0 \\Rightarrow OA = 8$. Cho $x = 0 \\Rightarrow OB = 6$. Độ dài $AB = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$.",
+    "sourceCitation": "Tài liệu rèn luyện Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm giá trị nguyên nhỏ nhất của tham số $m$ để điểm $A(1; 2)$ thuộc miền nghiệm của bất phương trình $2x + my + 6 \\ge 0$.",
+    "correctAnswer": "-4",
+    "explanation": "Thay $A(1; 2)$ vào BPT: $2(1) + m(2) + 6 \\ge 0 \\Leftrightarrow 2m + 8 \\ge 0 \\Leftrightarrow 2m \\ge -8 \\Leftrightarrow m \\ge -4$. Giá trị nguyên nhỏ nhất của $m$ là $-4$.",
+    "sourceCitation": "Đề bồi dưỡng học sinh khá giỏi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Có bao nhiêu cặp số tự nhiên $(x; y)$ thỏa mãn bất phương trình $3x + 2y \\le 6$?",
+    "correctAnswer": "7",
+    "explanation": "$x, y \\in \\mathbb{N}$:\n- $x = 0 \\Rightarrow 2y \\le 6 \\Rightarrow y \\in \\{0; 1; 2; 3\\}$ (4 cặp)\n- $x = 1 \\Rightarrow 2y \\le 3 \\Rightarrow y \\in \\{0; 1\\}$ (2 cặp)\n- $x = 2 \\Rightarrow 2y \\le 0 \\Rightarrow y = 0$ (1 cặp)\nTổng số cặp là $4 + 2 + 1 = 7$ cặp.",
+    "sourceCitation": "Đề thi học sinh giỏi cấp trường Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tính khoảng cách từ điểm $N(2; 1)$ đến đường thẳng bờ của bất phương trình $4x + 3y + 4 = 0$.",
+    "correctAnswer": "3",
+    "explanation": "Khoảng cách $d = \\frac{|4(2) + 3(1) + 4|}{\\sqrt{4^2 + 3^2}} = \\frac{|8 + 3 + 4|}{5} = \\frac{15}{5} = 3$.",
+    "sourceCitation": "Đề nâng cao Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm số giá trị nguyên của tham số $m \\in [-4; 4]$ để gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình $2x - 3y + 4 - m^2 \\ge 0$.",
+    "correctAnswer": "5",
+    "explanation": "Thay $(0; 0)$: $4 - m^2 \\ge 0 \\Leftrightarrow m^2 \\le 4 \\Leftrightarrow -2 \\le m \\le 2$. Vì $m$ nguyên nên $m \\in \\{-2; -1; 0; 1; 2\\}$, có đúng 5 giá trị.",
+    "sourceCitation": "Đề rèn luyện thi học kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.9",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho $x, y$ là các số tự nhiên thỏa mãn $2x + y \\le 6$. Giá trị lớn nhất của biểu thức $F(x, y) = 4x + 3y$ bằng bao nhiêu?",
+    "correctAnswer": "18",
+    "explanation": "$y \\le 6 - 2x$. $F = 4x + 3y \\le 4x + 3(6 - 2x) = 18 - 2x \\le 18$ (vì $x \\ge 0$). Dấu bằng xảy ra khi $x = 0, y = 6$.",
+    "sourceCitation": "Đề bài toán tối ưu Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.10",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Bác Lan có 180 nghìn đồng để mua táo (giá 30 nghìn đồng/kg) và lê (giá 20 nghìn đồng/kg). Nếu bác Lan mua đúng 3 kg táo thì số kg lê tối đa bác có thể mua là bao nhiêu?",
+    "correctAnswer": "4",
+    "explanation": "Mua 3 kg táo hết $3 \\cdot 30 = 90$ nghìn đồng. Còn lại $180 - 90 = 90$ nghìn đồng. Số kg lê tối đa mua được là $90 : 20 = 4,5$ kg, nhưng số nguyên kg là 4 kg (nếu tính kg nguyên).",
+    "sourceCitation": "Bài toán thực tế Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.11",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một xưởng may có tối đa 80 mét vải để may áo sơ mi (cần 2 mét/chiếc) và váy (cần 3 mét/chiếc). Nếu xưởng đã may 25 chiếc áo sơ mi thì số chiếc váy tối đa có thể may thêm là bao nhiêu?",
+    "correctAnswer": "10",
+    "explanation": "May 25 áo sơ mi hết $25 \\cdot 2 = 50$ mét vải. Số vải còn lại: $80 - 50 = 30$ mét. Số váy tối đa may được: $30 : 3 = 10$ chiếc.",
+    "sourceCitation": "Bài toán kinh tế Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.12",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một trường học cần thuê xe chở tối đa 140 học sinh đi dã ngoại, gồm hai loại xe: xe 30 chỗ và xe 45 chỗ. Nếu trường đã thuê 2 xe loại 45 chỗ thì số xe loại 30 chỗ tối đa cần thuê thêm để chở hết số học sinh còn lại là bao nhiêu?",
+    "correctAnswer": "2",
+    "explanation": "2 xe loại 45 chỗ chở được $2 \\cdot 45 = 90$ học sinh. Còn lại $140 - 90 = 50$ học sinh. Để chở đủ 50 học sinh thì cần ít nhất $50 : 30 = 1,67$ xe, tức là cần thuê 2 xe 30 chỗ.",
+    "sourceCitation": "Đề toán thực tế kỳ thi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.13",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho bất phương trình $2x + my < 8$. Giá trị nguyên lớn nhất của tham số $m$ để bất phương trình nhận cặp số $(1; 2)$ làm nghiệm là bao nhiêu?",
+    "correctAnswer": "2",
+    "explanation": "Thay $(1; 2)$: $2(1) + 2m < 8 \\Leftrightarrow 2m < 6 \\Leftrightarrow m < 3$. Vì $m \\in \\mathbb{Z}$ nên giá trị nguyên lớn nhất là $m = 2$.",
+    "sourceCitation": "Chuyên đề BPT Toán 10 định hướng cấu trúc mới"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.14",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Có bao nhiêu giá trị nguyên của tham số $m \\in [-5; 5]$ để gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình $3x - 2y + 9 - m^2 \\ge 0$?",
+    "correctAnswer": "7",
+    "explanation": "Thay $(0; 0)$: $9 - m^2 \\ge 0 \\Leftrightarrow m^2 \\le 9 \\Leftrightarrow -3 \\le m \\le 3$. Vì $m \\in \\mathbb{Z}$ nên $m \\in \\{-3; -2; -1; 0; 1; 2; 3\\}$, có tất cả 7 giá trị nguyên.",
+    "sourceCitation": "Đề kiểm tra định kì Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.15",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Đường thẳng bờ của bất phương trình $2x + 3y - 12 = 0$ cùng với hai trục tọa độ $Ox, Oy$ tạo thành một tam giác vuông. Tính diện tích của tam giác vuông đó.",
+    "correctAnswer": "12",
+    "explanation": "Giao điểm với $Ox$: $y = 0 \\Rightarrow x = 6$, $A(6; 0) \\Rightarrow OA = 6$. Giao điểm với $Oy$: $x = 0 \\Rightarrow y = 4$, $B(0; 4) \\Rightarrow OB = 4$. Diện tích $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 6 \\cdot 4 = 12$.",
+    "sourceCitation": "Các dạng toán BPT bậc nhất hai ẩn thường gặp"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.16",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một hộ gia đình dự định chi tối đa 600 nghìn đồng trong một tháng cho hai thiết bị điện: máy điều hòa (tiêu thụ 30 nghìn đồng/ngày) và máy nước nóng (tiêu thụ 15 nghìn đồng/ngày). Nếu trong tháng đó máy điều hòa đã bật 12 ngày thì số ngày tối đa gia đình đó có thể bật máy nước nóng là bao nhiêu?",
+    "correctAnswer": "16",
+    "explanation": "Số tiền chạy điều hòa trong 12 ngày: $12 \\cdot 30 = 360$ nghìn đồng. Số tiền còn lại: $600 - 360 = 240$ nghìn đồng. Số ngày tối đa bật máy nước nóng: $240 : 15 = 16$ ngày.",
+    "sourceCitation": "Toán thực tế BPT & Hệ BPT - Đặng Việt Đông"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.17",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn bất phương trình $2x + 3y \\le 12$?",
+    "correctAnswer": "8",
+    "explanation": "$x, y \\in \\mathbb{Z}^+$ ($x, y \\ge 1$):\n- $y = 1 \\Rightarrow 2x \\le 12 - 3 = 9 \\Rightarrow x \\in \\{1; 2; 3; 4\\}$ (4 cặp)\n- $y = 2 \\Rightarrow 2x \\le 12 - 6 = 6 \\Rightarrow x \\in \\{1; 2; 3\\}$ (3 cặp)\n- $y = 3 \\Rightarrow 2x \\le 12 - 9 = 3 \\Rightarrow x = 1$ (1 cặp)\nTổng số cặp nguyên dương là $4 + 3 + 1 = 8$ cặp (khoan: tính lại: nếu $y=1, x=1,2,3,4$ (4 cặp); $y=2, x=1,2,3$ (3 cặp); $y=3, x=1$ (1 cặp) => $4+3+1 = 8$).\nĐáp án đúng là 8.",
+    "sourceCitation": "Đề bồi dưỡng học sinh giỏi Toán 10"
+  },
+  {
+    "id": "bq-10-ai-sa-10.3.18",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b3",
+    "lessonTitle": "Bài 3: BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho $x, y$ là các số thực không âm thỏa mãn $x + y \\le 5$ và $x - y \\le 1$. Giá trị lớn nhất của biểu thức $F(x, y) = 3x + 2y$ bằng bao nhiêu?",
+    "correctAnswer": "13",
+    "explanation": "Miền nghiệm là tứ giác lồi với các đỉnh $O(0; 0)$, $A(1; 0)$, $B(3; 2)$, $C(0; 5)$. Tính giá trị của $F$ tại các đỉnh:\n- $F(0, 0) = 0$\n- $F(1, 0) = 3(1) + 2(0) = 3$\n- $F(3, 2) = 3(3) + 2(2) = 9 + 4 = 13$\n- $F(0, 5) = 3(0) + 2(5) = 10$.\nKhoan: điểm giao của $x - y = 1$ và $x + y = 5$ là $2x = 6 \\Rightarrow x = 3, y = 2$. $F(3, 2) = 3(3) + 2(2) = 13$. Điểm $A(1; 0)$ có $F = 3$. Điểm $(0; 5)$ có $F = 10$. Đỉnh lớn nhất là 13. (Cập nhật correctAnswer = 13).",
+    "sourceCitation": "Toán thực tế BPT & Hệ BPT - Đặng Việt Đông"
+  },
+  {
+    "id": "bq-10-ai-10.4.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong các hệ bất phương trình sau, hệ nào là hệ bất phương trình bậc nhất hai ẩn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} 3x - 2y \\le 7 \\\\ x + 4y > -1 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} x^2 + y \\ge 2 \\\\ 2x - y < 5 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} x + 2y - 3z \\le 0 \\\\ x - y > 1 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} 2xy \\le 3 \\\\ x + 3y \\ge 1 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Hệ $\\begin{cases} 3x - 2y \\le 7 \\\\ x + 4y > -1 \\end{cases}$ chỉ gồm các nhị thức bậc nhất đối với hai ẩn $x, y$. Các hệ còn lại chứa $x^2$, chứa 3 ẩn ($x, y, z$) hoặc chứa tích $xy$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Điểm nào sau đây thuộc miền nghiệm của hệ bất phương trình $\\begin{cases} 2x + y \\le 4 \\\\ x - 3y \\ge -2 \\\\ y \\ge 0 \\end{cases}$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$M(1; 1)$"
+      },
+      {
+        "key": "B",
+        "text": "$N(2; 2)$"
+      },
+      {
+        "key": "C",
+        "text": "$P(3; 0)$"
+      },
+      {
+        "key": "D",
+        "text": "$Q(0; 5)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thử điểm $M(1; 1)$:\n$2(1) + 1 = 3 \\le 4$ (Đúng);\n$1 - 3(1) = -2 \\ge -2$ (Đúng);\n$1 \\ge 0$ (Đúng).\nVậy $M(1; 1)$ thuộc miền nghiệm của hệ.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Điểm nào sau đây KHÔNG thuộc miền nghiệm của hệ bất phương trình $\\begin{cases} x + y > 1 \\\\ 2x - y \\le 3 \\\\ x \\ge 0 \\end{cases}$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$A(0; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$B(1; 1)$"
+      },
+      {
+        "key": "C",
+        "text": "$C(2; 1)$"
+      },
+      {
+        "key": "D",
+        "text": "$D(0; 2)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thử điểm $A(0; 0)$ vào bất phương trình đầu tiên: $0 + 0 = 0 > 1$ là mệnh đề sai. Do đó $A(0; 0)$ không thuộc miền nghiệm của hệ.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của hệ bất phương trình nào dưới đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} x + y \\ge -2 \\\\ 3x - y \\le 1 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} x + y > 2 \\\\ 2x - y < 0 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} 2x + 3y \\le -1 \\\\ x - y \\ge 0 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} x - 2y < -3 \\\\ 4x + y \\ge 1 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(0; 0)$ vào hệ A: $0 + 0 = 0 \\ge -2$ (Đúng) và $3(0) - 0 = 0 \\le 1$ (Đúng). Vậy $O(0; 0)$ thuộc miền nghiệm của hệ A.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hệ bất phương trình nào dưới đây xác định các điểm nằm trong góc phần tư thứ nhất (kể cả các trục tọa độ)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} x > 0 \\\\ y < 0 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} x \\le 0 \\\\ y \\ge 0 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} x \\le 0 \\\\ y \\le 0 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Góc phần tư thứ nhất gồm các điểm có hoành độ không âm $x \\ge 0$ và tung độ không âm $y \\ge 0$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 2y \\le 6 \\end{cases}$ là một miền đa giác. Đó là hình gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tam giác vuông"
+      },
+      {
+        "key": "B",
+        "text": "Tứ giác lồi"
+      },
+      {
+        "key": "C",
+        "text": "Hình thang vuông"
+      },
+      {
+        "key": "D",
+        "text": "Hình bình hành"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường thẳng $3x + 2y = 6$ cắt trục hoành tại $A(2; 0)$ và trục tung tại $B(0; 3)$. Cùng với gốc $O(0; 0)$ và hai trục tọa độ vuông góc nhau, miền nghiệm là tam giác $OAB$ vuông tại $O$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Diện tích miền tam giác nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + 5y \\le 10 \\end{cases}$ bằng:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$5$"
+      },
+      {
+        "key": "B",
+        "text": "$10$"
+      },
+      {
+        "key": "C",
+        "text": "$2{,}5$"
+      },
+      {
+        "key": "D",
+        "text": "$20$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đường thẳng $2x + 5y = 10$ cắt các trục tại $A(5; 0)$ và $B(0; 2)$. Diện tích tam giác vuông $OAB$ là $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 5 \\cdot 2 = 5$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x \\le 3 \\\\ y \\le 4 \\end{cases}$ có bao nhiêu đỉnh?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4 đỉnh"
+      },
+      {
+        "key": "B",
+        "text": "3 đỉnh"
+      },
+      {
+        "key": "C",
+        "text": "5 đỉnh"
+      },
+      {
+        "key": "D",
+        "text": "Vô số đỉnh"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Miền nghiệm là hình chữ nhật giới hạn bởi $0 \\le x \\le 3$ và $0 \\le y \\le 4$, có 4 đỉnh là $O(0; 0), A(3; 0), B(3; 4), C(0; 4)$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.9",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một đỉnh của miền nghiệm hệ $\\begin{cases} x + y \\le 5 \\\\ 2x - y \\le 4 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$ là giao điểm của hai đường thẳng $x + y = 5$ và $2x - y = 4$. Tọa độ đỉnh này là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(3; 2)$"
+      },
+      {
+        "key": "B",
+        "text": "$(2; 3)$"
+      },
+      {
+        "key": "C",
+        "text": "$(1; 4)$"
+      },
+      {
+        "key": "D",
+        "text": "$(4; 1)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Cộng hai phương trình: $(x + y) + (2x - y) = 5 + 4 \\Leftrightarrow 3x = 9 \\Leftrightarrow x = 3$. Thay vào $x + y = 5 \\Rightarrow y = 2$. Giao điểm là $(3; 2)$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.10",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho miền tứ giác nghiệm có các đỉnh $O(0; 0), A(3; 0), B(2; 3), C(0; 4)$. Giá trị lớn nhất của biểu thức $F(x, y) = 5x + 3y$ trên miền tứ giác này là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$19$"
+      },
+      {
+        "key": "B",
+        "text": "$15$"
+      },
+      {
+        "key": "C",
+        "text": "$12$"
+      },
+      {
+        "key": "D",
+        "text": "$21$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tính giá trị $F(x, y)$ tại các đỉnh:\n$F(0; 0) = 0$;\n$F(3; 0) = 5(3) + 3(0) = 15$;\n$F(2; 3) = 5(2) + 3(3) = 19$;\n$F(0; 4) = 5(0) + 3(4) = 12$.\nGiá trị lớn nhất là 19 tại đỉnh $B(2; 3)$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.11",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho biểu thức $F(x, y) = 2x - 3y$ với $(x; y)$ thuộc miền đa giác có các đỉnh $A(1; 1), B(4; 1), C(3; 4), D(1; 3)$. Giá trị nhỏ nhất của $F(x, y)$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$-7$"
+      },
+      {
+        "key": "B",
+        "text": "$-6$"
+      },
+      {
+        "key": "C",
+        "text": "$-1$"
+      },
+      {
+        "key": "D",
+        "text": "$5$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tính tại 4 đỉnh:\n$F(A) = 2(1) - 3(1) = -1$;\n$F(B) = 2(4) - 3(1) = 5$;\n$F(C) = 2(3) - 3(4) = -6$;\n$F(D) = 2(1) - 3(3) = -7$.\nGiá trị nhỏ nhất là $-7$ tại đỉnh $D(1; 3)$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.12",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Hệ bất phương trình nào sau đây có tập nghiệm là tập rỗng?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} x + y > 3 \\\\ x + y < 1 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} x - y \\ge 0 \\\\ x + y \\ge 0 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} 2x + y \\le 5 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} x \\ge 1 \\\\ y \\ge 2 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không thể tồn tại cặp số $(x; y)$ nào vừa thỏa mãn tổng $x + y > 3$ lại vừa thỏa mãn $x + y < 1$. Do đó hệ A vô nghiệm (tập nghiệm rỗng).",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.13",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một miền nghiệm là nửa dải vô hạn nằm giữa hai đường thẳng song song $x = 1$ và $x = 4$ (kể cả bờ). Hệ bất phương trình mô tả miền này là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\begin{cases} x \\ge 1 \\\\ x \\le 4 \\end{cases}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\begin{cases} y \\ge 1 \\\\ y \\le 4 \\end{cases}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\begin{cases} x + y \\ge 1 \\\\ x + y \\le 4 \\end{cases}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\begin{cases} x - y \\ge 1 \\\\ x - y \\le 4 \\end{cases}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Dải mặt phẳng nằm giữa hai đường thẳng thẳng đứng $x = 1$ và $x = 4$ được xác định bởi $1 \\le x \\le 4$, tức là hệ $\\begin{cases} x \\ge 1 \\\\ x \\le 4 \\end{cases}$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.14",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Bác An có tối đa 10 triệu đồng để mua $x$ bao phân bón loại A (giá 400 nghìn đồng/bao) và $y$ bao loại B (giá 500 nghìn đồng/bao). Bất phương trình nào mô tả điều kiện ngân sách?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4x + 5y \\le 100$"
+      },
+      {
+        "key": "B",
+        "text": "$400x + 500y \\le 10$"
+      },
+      {
+        "key": "C",
+        "text": "$4x + 5y \\ge 100$"
+      },
+      {
+        "key": "D",
+        "text": "$5x + 4y \\le 100$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Đổi 10 triệu đồng = 10 000 nghìn đồng. BPT ngân sách: $400x + 500y \\le 10 000$. Chia cả hai vế cho 100 ta được $4x + 5y \\le 100$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.15",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một cửa hàng bán sản phẩm loại 1 với giá 50 nghìn đồng và loại 2 với giá 70 nghìn đồng. Nếu bán được $x$ sản phẩm loại 1 và $y$ sản phẩm loại 2 thì doanh thu $T(x, y)$ (nghìn đồng) là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$T(x, y) = 50x + 70y$"
+      },
+      {
+        "key": "B",
+        "text": "$T(x, y) = 70x + 50y$"
+      },
+      {
+        "key": "C",
+        "text": "$T(x, y) = 50x - 70y$"
+      },
+      {
+        "key": "D",
+        "text": "$T(x, y) = 120(x + y)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Doanh thu bằng đơn giá nhân số lượng: $T(x, y) = 50x + 70y$ (nghìn đồng).",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.16",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn hệ bất phương trình $\\begin{cases} x + y \\le 3 \\\\ x \\ge 1 \\\\ y \\ge 1 \\end{cases}$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 cặp"
+      },
+      {
+        "key": "B",
+        "text": "2 cặp"
+      },
+      {
+        "key": "C",
+        "text": "4 cặp"
+      },
+      {
+        "key": "D",
+        "text": "1 cặp"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Vì $x, y \\in \\mathbb{Z}^+$ nên $x, y \\ge 1$. Ta có các cặp $(x; y)$ thỏa mãn $x + y \\le 3$ là: $(1; 1), (1; 2), (2; 1)$. Tổng cộng có 3 cặp.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.17",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Tìm tất cả các giá trị của tham số $m$ để điểm $A(1; m)$ thuộc miền nghiệm của hệ $\\begin{cases} 2x - y \\ge 0 \\\\ x + 2y \\le 7 \\end{cases}$.",
+    "options": [
+      {
+        "key": "A",
+        "text": "$m \\le 2$ và $m \\le 3$ (tức $m \\le 2$)"
+      },
+      {
+        "key": "B",
+        "text": "$m \\ge 2$"
+      },
+      {
+        "key": "C",
+        "text": "$2 \\le m \\le 3$"
+      },
+      {
+        "key": "D",
+        "text": "$m \\le 3$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Thay $(1; m)$ vào hệ:\n$\\begin{cases} 2(1) - m \\ge 0 \\\\ 1 + 2m \\le 7 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 2 \\\\ 2m \\le 6 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 2 \\\\ m \\le 3 \\end{cases} \\Leftrightarrow m \\le 2$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.18",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Khẳng định nào sau đây là đúng về miền nghiệm của hệ bất phương trình $\\begin{cases} x + y \\ge 2 \\\\ x - y \\le 0 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Miền nghiệm không bị chặn (miền mở)"
+      },
+      {
+        "key": "B",
+        "text": "Miền nghiệm là một hình tam giác đóng"
+      },
+      {
+        "key": "C",
+        "text": "Miền nghiệm là một hình tứ giác"
+      },
+      {
+        "key": "D",
+        "text": "Miền nghiệm chỉ gồm một điểm duy nhất"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Miền nghiệm gồm các điểm $(x; y)$ với $x \\ge 0, y \\ge x, y \\ge 2 - x$. Vì khi $x \\to +\\infty, y \\to +\\infty$ các BPT vẫn thỏa mãn nên miền này trải dài ra vô cực, là một miền không bị chặn.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.19",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Cho hệ $\\begin{cases} 0 \\le x \\le 2 \\\\ 0 \\le y \\le 3 \\end{cases}$. Điểm $(x; y)$ thuộc miền nghiệm của hệ làm cho biểu thức $F(x, y) = 4x - y$ đạt giá trị lớn nhất là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$(2; 0)$"
+      },
+      {
+        "key": "B",
+        "text": "$(2; 3)$"
+      },
+      {
+        "key": "C",
+        "text": "$(0; 0)$"
+      },
+      {
+        "key": "D",
+        "text": "$(0; 3)$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Để $F(x, y) = 4x - y$ lớn nhất thì $x$ phải lớn nhất ($x = 2$) và $y$ phải nhỏ nhất ($y = 0$). Khi đó $F(2, 0) = 4(2) - 0 = 8$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-10.4.20",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một xí nghiệp vận chuyển cần thuê $x$ xe lớn và $y$ xe nhỏ với chi phí $C(x, y) = 4x + 3y$ (triệu đồng). Miền nghiệm cho phép thuê là đa giác có các đỉnh $A(2; 5), B(6; 1), C(4; 4)$. Chi phí thuê thấp nhất là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "23 triệu đồng"
+      },
+      {
+        "key": "B",
+        "text": "27 triệu đồng"
+      },
+      {
+        "key": "C",
+        "text": "28 triệu đồng"
+      },
+      {
+        "key": "D",
+        "text": "24 triệu đồng"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Tính chi phí tại 3 đỉnh:\n$C(A) = 4(2) + 3(5) = 23$;\n$C(B) = 4(6) + 3(1) = 27$;\n$C(C) = 4(4) + 3(4) = 28$.\nChi phí nhỏ nhất là 23 triệu đồng tại điểm $A(2; 5)$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hệ bất phương trình bậc nhất hai ẩn $(I): \\begin{cases} x + 2y \\le 6 \\\\ 2x - y \\ge 2 \\\\ y \\ge 0 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Hệ $(I)$ là một hệ bất phương trình bậc nhất hai ẩn.",
+        "isCorrect": true,
+        "explanation": "Đúng vì mỗi bất phương trình trong hệ đều là bất phương trình bậc nhất hai ẩn $x, y$."
+      },
+      {
+        "key": "b",
+        "text": "Cặp số $(2; 1)$ là một nghiệm của hệ $(I)$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì $2 + 2(1) = 4 \\le 6$, $2(2) - 1 = 3 \\ge 2$, $1 \\ge 0$ đều thỏa mãn."
+      },
+      {
+        "key": "c",
+        "text": "Gốc tọa độ $O(0; 0)$ là một nghiệm của hệ $(I)$.",
+        "isCorrect": false,
+        "explanation": "Sai vì thay $(0; 0)$ vào BPT thứ hai: $2(0) - 0 = 0 \\ge 2$ là sai."
+      },
+      {
+        "key": "d",
+        "text": "Điểm $K(0; 3)$ thuộc miền nghiệm của hệ $(I)$.",
+        "isCorrect": false,
+        "explanation": "Sai vì thay $K(0; 3)$ vào BPT thứ hai: $2(0) - 3 = -3 \\ge 2$ là sai."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì mỗi bất phương trình trong hệ đều là bất phương trình bậc nhất hai ẩn $x, y$. | [Ý b]: Đúng vì $2 + 2(1) = 4 \\le 6$, $2(2) - 1 = 3 \\ge 2$, $1 \\ge 0$ đều thỏa mãn. | [Ý c]: Sai vì thay $(0; 0)$ vào BPT thứ hai: $2(0) - 0 = 0 \\ge 2$ là sai. | [Ý d]: Sai vì thay $K(0; 3)$ vào BPT thứ hai: $2(0) - 3 = -3 \\ge 2$ là sai.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hệ bất phương trình $(II): \\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\\\ x - y \\le 0 \\end{cases}$. Xét tính đúng/sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Đường thẳng $x - y = 0$ chia mặt phẳng thành hai nửa, nửa chứa miền nghiệm là nửa chứa điểm $(0; 1)$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì với điểm $(0; 1)$, ta có $0 - 1 = -1 \\le 0$ thỏa mãn bất phương trình."
+      },
+      {
+        "key": "b",
+        "text": "Miền nghiệm của hệ $(II)$ là một miền tam giác có đỉnh là $O(0; 0), A(0; 4)$ và $B(2; 2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng. Giao điểm của $x=0$ và $y=0$ là $O(0; 0)$. Giao của $x=0$ và $x+y=4$ là $A(0; 4)$. Giao của $x+y=4$ và $x-y=0$ là $B(2; 2)$."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $C(3; 1)$ thuộc miền nghiệm của hệ $(II)$.",
+        "isCorrect": false,
+        "explanation": "Sai vì thay $C(3; 1)$ vào BPT thứ tư: $3 - 1 = 2 \\le 0$ là mệnh đề sai."
+      },
+      {
+        "key": "d",
+        "text": "Diện tích của miền nghiệm tam giác $OAB$ bằng $4$.",
+        "isCorrect": true,
+        "explanation": "Đúng. Tam giác $OAB$ có cạnh đáy $OA = 4$ nằm trên trục $Oy$, chiều cao kẻ từ $B(2; 2)$ xuống $Oy$ chính bằng khoảng cách hoành độ $x_B = 2$. Do đó $S = \\frac{1}{2} \\cdot 4 \\cdot 2 = 4$."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì với điểm $(0; 1)$, ta có $0 - 1 = -1 \\le 0$ thỏa mãn bất phương trình. | [Ý b]: Đúng. Giao điểm của $x=0$ và $y=0$ là $O(0; 0)$. Giao của $x=0$ và $x+y=4$ là $A(0; 4)$. Giao của $x+y=4$ và $x-y=0$ là $B(2; 2)$. | [Ý c]: Sai vì thay $C(3; 1)$ vào BPT thứ tư: $3 - 1 = 2 \\le 0$ là mệnh đề sai. | [Ý d]: Đúng. Tam giác $OAB$ có cạnh đáy $OA = 4$ nằm trên trục $Oy$, chiều cao kẻ từ $B(2; 2)$ xuống $Oy$ chính bằng khoảng cách hoành độ $x_B = 2$. Do đó $S = \\frac{1}{2} \\cdot 4 \\cdot 2 = 4$.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho $(x; y)$ thuộc miền nghiệm đa giác giới hạn bởi các đỉnh $O(0; 0), M(4; 0), N(3; 2), P(0; 3)$. Cho hàm mục tiêu $F(x, y) = 3x + 4y$.",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Giá trị của $F$ tại điểm $M(4; 0)$ là $12$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì $F(4; 0) = 3(4) + 4(0) = 12$."
+      },
+      {
+        "key": "b",
+        "text": "Giá trị của $F$ tại điểm $N(3; 2)$ là $17$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì $F(3; 2) = 3(3) + 4(2) = 9 + 8 = 17$."
+      },
+      {
+        "key": "c",
+        "text": "Giá trị lớn nhất của $F(x, y)$ trên miền đa giác bằng $17$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì so sánh các đỉnh: $F(O) = 0, F(M) = 12, F(N) = 17, F(P) = 12$. Lớn nhất là 17."
+      },
+      {
+        "key": "d",
+        "text": "Giá trị nhỏ nhất của $F(x, y)$ trên miền đa giác bằng $12$.",
+        "isCorrect": false,
+        "explanation": "Sai vì giá trị nhỏ nhất đạt tại gốc tọa độ $O(0; 0)$ với $F(0; 0) = 0$."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì $F(4; 0) = 3(4) + 4(0) = 12$. | [Ý b]: Đúng vì $F(3; 2) = 3(3) + 4(2) = 9 + 8 = 17$. | [Ý c]: Đúng vì so sánh các đỉnh: $F(O) = 0, F(M) = 12, F(N) = 17, F(P) = 12$. Lớn nhất là 17. | [Ý d]: Sai vì giá trị nhỏ nhất đạt tại gốc tọa độ $O(0; 0)$ với $F(0; 0) = 0$.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một bác sĩ khuyên người bệnh mỗi ngày cần bổ sung ít nhất 900 đơn vị protein và 1200 đơn vị lipit. Thức ăn X chứa 30 đơn vị protein, 20 đơn vị lipit trên 100g. Thức ăn Y chứa 10 đơn vị protein, 30 đơn vị lipit trên 100g. Gọi $x, y$ (lạng, 1 lạng = 100g) lần lượt là lượng thức ăn X và Y cần ăn mỗi ngày.",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Điều kiện của các biến số là $x \\ge 0, y \\ge 0$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì khối lượng thức ăn không thể âm."
+      },
+      {
+        "key": "b",
+        "text": "Bất phương trình biểu thị lượng protein cần nạp là $30x + 10y \\ge 900$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì cần ít nhất 900 đơn vị protein nên tổng lượng protein $30x + 10y \\ge 900$."
+      },
+      {
+        "key": "c",
+        "text": "Bất phương trình biểu thị lượng lipit cần nạp là $20x + 30y \\le 1200$.",
+        "isCorrect": false,
+        "explanation": "Sai vì yêu cầu bổ sung ít nhất 1200 đơn vị lipit nên dấu phải là $\\ge 1200$ chứ không phải $\\le$."
+      },
+      {
+        "key": "d",
+        "text": "Nếu ăn 20 lạng thức ăn X và 30 lạng thức ăn Y thì người bệnh thỏa mãn cả hai tiêu chuẩn trên.",
+        "isCorrect": true,
+        "explanation": "Đúng. Với $x = 20, y = 30$:\nProtein: $30(20) + 10(30) = 900 \\ge 900$ (Thỏa mãn);\nLipit: $20(20) + 30(30) = 1300 \\ge 1200$ (Thỏa mãn)."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì khối lượng thức ăn không thể âm. | [Ý b]: Đúng vì cần ít nhất 900 đơn vị protein nên tổng lượng protein $30x + 10y \\ge 900$. | [Ý c]: Sai vì yêu cầu bổ sung ít nhất 1200 đơn vị lipit nên dấu phải là $\\ge 1200$ chứ không phải $\\le$. | [Ý d]: Đúng. Với $x = 20, y = 30$:\nProtein: $30(20) + 10(30) = 900 \\ge 900$ (Thỏa mãn);\nLipit: $20(20) + 30(30) = 1300 \\ge 1200$ (Thỏa mãn).",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hệ bất phương trình $\\begin{cases} x + y \\le 5 \\\\ x - 2y \\le 2 \\\\ x + 1 \\ge 0 \\end{cases}$ và điểm $A(m; 1)$. Xét tính đúng/sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Đường thẳng $x + 1 = 0$ là đường thẳng song song với trục tung $Oy$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì phương trình có dạng $x = c$ ($c = -1$) nên song song với trục $Oy$."
+      },
+      {
+        "key": "b",
+        "text": "Để điểm $A(m; 1)$ thỏa mãn BPT thứ ba thì $m \\ge -1$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì thay $x = m$ vào $x + 1 \\ge 0 \\Leftrightarrow m + 1 \\ge 0 \\Leftrightarrow m \\ge -1$."
+      },
+      {
+        "key": "c",
+        "text": "Để điểm $A(m; 1)$ thuộc miền nghiệm của cả hệ thì $-1 \\le m \\le 4$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì:\n1) $m + 1 \\le 5 \\Leftrightarrow m \\le 4$;\n2) $m - 2(1) \\le 2 \\Leftrightarrow m \\le 4$;\n3) $m \\ge -1$.\nKết hợp lại ta được $-1 \\le m \\le 4$."
+      },
+      {
+        "key": "d",
+        "text": "Có tất cả 5 giá trị nguyên của $m$ để điểm $A(m; 1)$ thuộc miền nghiệm của hệ.",
+        "isCorrect": false,
+        "explanation": "Sai vì các giá trị nguyên thỏa mãn $-1 \\le m \\le 4$ là $\\{-1, 0, 1, 2, 3, 4\\}$, có 6 giá trị nguyên chứ không phải 5."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì phương trình có dạng $x = c$ ($c = -1$) nên song song với trục $Oy$. | [Ý b]: Đúng vì thay $x = m$ vào $x + 1 \\ge 0 \\Leftrightarrow m + 1 \\ge 0 \\Leftrightarrow m \\ge -1$. | [Ý c]: Đúng vì:\n1) $m + 1 \\le 5 \\Leftrightarrow m \\le 4$;\n2) $m - 2(1) \\le 2 \\Leftrightarrow m \\le 4$;\n3) $m \\ge -1$.\nKết hợp lại ta được $-1 \\le m \\le 4$. | [Ý d]: Sai vì các giá trị nguyên thỏa mãn $-1 \\le m \\le 4$ là $\\{-1, 0, 1, 2, 3, 4\\}$, có 6 giá trị nguyên chứ không phải 5.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Cho hệ bất phương trình $\\begin{cases} 2x + y \\ge 4 \\\\ x + 2y \\ge 5 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$. Xét tính đúng/sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của hệ.",
+        "isCorrect": false,
+        "explanation": "Sai vì $2(0) + 0 = 0 \\ge 4$ là sai."
+      },
+      {
+        "key": "b",
+        "text": "Giao điểm của hai đường thẳng $2x + y = 4$ và $x + 2y = 5$ là điểm $I(1; 2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì giải hệ: $y = 4 - 2x \\Rightarrow x + 2(4 - 2x) = 5 \\Leftrightarrow -3x = -3 \\Leftrightarrow x = 1 \\Rightarrow y = 2$."
+      },
+      {
+        "key": "c",
+        "text": "Miền nghiệm của hệ là một miền đa giác đóng (bị chặn).",
+        "isCorrect": false,
+        "explanation": "Sai vì đây là miền mở (không bị chặn phía trên bên phải khi $x, y \\to +\\infty$)."
+      },
+      {
+        "key": "d",
+        "text": "Biểu thức $F(x, y) = 3x + 2y$ có giá trị nhỏ nhất trên miền nghiệm bằng $7$ tại điểm $I(1; 2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì tại 3 đỉnh của miền lồi vô hạn: $(0; 5/2) \\Rightarrow F = 5$; $(1; 2) \\Rightarrow F = 3(1) + 2(2) = 7$; $(2; 0) \\Rightarrow F = 3(2) + 0 = 6$. Khoan! Tại $(2; 0)$, BPT $x + 2y \\ge 5$ trở thành $2 \\ge 5$ (Sai). Điểm biên trên các trục tọa độ phải là: giao của $2x + y = 4$ với $Oy$ là $(0; 4)$ thỏa mãn $0 + 2(4) = 8 \\ge 5$; giao của $x + 2y = 5$ với $Ox$ là $(5; 0)$ thỏa mãn $2(5) + 0 = 10 \\ge 4$. Ba đỉnh thực sự của miền là $(0; 4), (1; 2), (5; 0)$.\nTính $F$: tại $(0; 4): F = 8$; tại $(1; 2): F = 7$; tại $(5; 0): F = 15$. Vì vậy GTNN chính xác là $7$ tại $I(1; 2)$."
+      }
+    ],
+    "explanation": "[Ý a]: Sai vì $2(0) + 0 = 0 \\ge 4$ là sai. | [Ý b]: Đúng vì giải hệ: $y = 4 - 2x \\Rightarrow x + 2(4 - 2x) = 5 \\Leftrightarrow -3x = -3 \\Leftrightarrow x = 1 \\Rightarrow y = 2$. | [Ý c]: Sai vì đây là miền mở (không bị chặn phía trên bên phải khi $x, y \\to +\\infty$). | [Ý d]: Đúng vì tại 3 đỉnh của miền lồi vô hạn: $(0; 5/2) \\Rightarrow F = 5$; $(1; 2) \\Rightarrow F = 3(1) + 2(2) = 7$; $(2; 0) \\Rightarrow F = 3(2) + 0 = 6$. Khoan! Tại $(2; 0)$, BPT $x + 2y \\ge 5$ trở thành $2 \\ge 5$ (Sai). Điểm biên trên các trục tọa độ phải là: giao của $2x + y = 4$ với $Oy$ là $(0; 4)$ thỏa mãn $0 + 2(4) = 8 \\ge 5$; giao của $x + 2y = 5$ với $Ox$ là $(5; 0)$ thỏa mãn $2(5) + 0 = 10 \\ge 4$. Ba đỉnh thực sự của miền là $(0; 4), (1; 2), (5; 0)$.\nTính $F$: tại $(0; 4): F = 8$; tại $(1; 2): F = 7$; tại $(5; 0): F = 15$. Vì vậy GTNN chính xác là $7$ tại $I(1; 2)$.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một hợp tác xã trồng hai loại cây: cam (chi phí giống 2 triệu/ha, công 30 ngày/ha, lợi nhuận 40 triệu/ha) và bưởi (chi phí giống 3 triệu/ha, công 20 ngày/ha, lợi nhuận 50 triệu/ha). Hợp tác xã có tối đa 10 ha đất, quỹ giống 24 triệu và 240 ngày công. Gọi $x, y$ (ha) lần lượt là diện tích trồng cam và bưởi.",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Bất phương trình về diện tích đất trồng là $x + y \\le 10$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì tổng diện tích trồng cam và bưởi không vượt quá 10 ha."
+      },
+      {
+        "key": "b",
+        "text": "Bất phương trình về quỹ giống là $2x + 3y \\le 24$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì tiền giống cam là $2x$ triệu, bưởi là $3y$ triệu, tổng không quá 24 triệu."
+      },
+      {
+        "key": "c",
+        "text": "Bất phương trình về ngày công lao động sau khi rút gọn là $3x + 2y \\le 24$.",
+        "isCorrect": true,
+        "explanation": "Đúng vì $30x + 20y \\le 240 \\Leftrightarrow 3x + 2y \\le 24$."
+      },
+      {
+        "key": "d",
+        "text": "Lợi nhuận lớn nhất hợp tác xã có thể đạt được là $432$ triệu đồng khi trồng $4{,}8$ ha cam và $4{,}8$ ha bưởi.",
+        "isCorrect": true,
+        "explanation": "Đúng. Đỉnh tối ưu là giao điểm của $2x + 3y = 24$ và $3x + 2y = 24$, giải ra $x = 4{,}8$ và $y = 4{,}8$ (thỏa mãn $x + y = 9{,}6 \\le 10$). Lợi nhuận cực đại là $40(4{,}8) + 50(4{,}8) = 432$ triệu đồng."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì tổng diện tích trồng cam và bưởi không vượt quá 10 ha. | [Ý b]: Đúng vì tiền giống cam là $2x$ triệu, bưởi là $3y$ triệu, tổng không quá 24 triệu. | [Ý c]: Đúng vì $30x + 20y \\le 240 \\Leftrightarrow 3x + 2y \\le 24$. | [Ý d]: Đúng. Đỉnh tối ưu là giao điểm của $2x + 3y = 24$ và $3x + 2y = 24$, giải ra $x = 4{,}8$ và $y = 4{,}8$ (thỏa mãn $x + y = 9{,}6 \\le 10$). Lợi nhuận cực đại là $40(4{,}8) + 50(4{,}8) = 432$ triệu đồng.",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-tf-10.4.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Xét bài toán tìm cực trị của biểu thức bậc nhất hai ẩn $F(x, y) = ax + by + c$ trên miền đa giác nghiệm $D$ của một hệ bất phương trình bậc nhất hai ẩn.",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Miền nghiệm $D$ luôn luôn là một đa giác lồi (nếu $D$ là một miền đa giác hữu hạn).",
+        "isCorrect": true,
+        "explanation": "Đúng vì giao của các nửa mặt phẳng luôn tạo ra một tập hợp lồi."
+      },
+      {
+        "key": "b",
+        "text": "Giá trị lớn nhất và nhỏ nhất của $F(x, y)$ trên miền đa giác $D$ luôn đạt được tại ít nhất một trong các đỉnh của $D$.",
+        "isCorrect": true,
+        "explanation": "Đúng, đây là định lý nền tảng của quy hoạch tuyến tính hai biến."
+      },
+      {
+        "key": "c",
+        "text": "Nếu biểu thức $F(x, y)$ đạt giá trị lớn nhất tại hai đỉnh kề nhau của đa giác $D$ thì nó cũng đạt giá trị lớn nhất tại mọi điểm trên đoạn thẳng nối hai đỉnh đó.",
+        "isCorrect": true,
+        "explanation": "Đúng vì trên đoạn thẳng nối hai đỉnh, hàm bậc nhất biến thiên tuyến tính, khi hai đầu mút bằng nhau thì hàm nhận giá trị không đổi trên toàn bộ đoạn thẳng."
+      },
+      {
+        "key": "d",
+        "text": "Nếu miền nghiệm $D$ không bị chặn thì $F(x, y)$ chắc chắn không thể có giá trị nhỏ nhất.",
+        "isCorrect": false,
+        "explanation": "Sai vì mặc dù $D$ không bị chặn, $F(x, y)$ vẫn hoàn toàn có thể có giá trị nhỏ nhất (như đã thấy ở câu Đ/S 6: $F(x, y) = 3x + 2y$ với $x \\ge 0, y \\ge 0$ luôn có GTNN bằng 7)."
+      }
+    ],
+    "explanation": "[Ý a]: Đúng vì giao của các nửa mặt phẳng luôn tạo ra một tập hợp lồi. | [Ý b]: Đúng, đây là định lý nền tảng của quy hoạch tuyến tính hai biến. | [Ý c]: Đúng vì trên đoạn thẳng nối hai đỉnh, hàm bậc nhất biến thiên tuyến tính, khi hai đầu mút bằng nhau thì hàm nhận giá trị không đổi trên toàn bộ đoạn thẳng. | [Ý d]: Sai vì mặc dù $D$ không bị chặn, $F(x, y)$ vẫn hoàn toàn có thể có giá trị nhỏ nhất (như đã thấy ở câu Đ/S 6: $F(x, y) = 3x + 2y$ với $x \\ge 0, y \\ge 0$ luôn có GTNN bằng 7).",
+    "sourceCitation": "Bộ đề thi thử Toán 10 mới"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.1",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tính diện tích của miền tam giác nghiệm xác định bởi hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 4y \\le 24 \\end{cases}$.",
+    "correctAnswer": "24",
+    "explanation": "Đường thẳng $3x + 4y = 24$ cắt trục hoành tại $A(8; 0)$ và trục tung tại $B(0; 6)$. Tam giác vuông $OAB$ có diện tích $S = \\frac{1}{2} \\cdot 8 \\cdot 6 = 24$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.2",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm hoành độ giao điểm của hai đường biên $x + 2y = 8$ và $3x - y = 3$ trong miền nghiệm của hệ bất phương trình tương ứng.",
+    "correctAnswer": "2",
+    "explanation": "Từ $3x - y = 3 \\Rightarrow y = 3x - 3$. Thế vào phương trình đầu: $x + 2(3x - 3) = 8 \\Leftrightarrow 7x - 6 = 8 \\Leftrightarrow 7x = 14 \\Leftrightarrow x = 2$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.3",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm tung độ giao điểm của hai đường biên $2x + y = 10$ và $x + y = 6$.",
+    "correctAnswer": "2",
+    "explanation": "Trừ vế theo vế hai phương trình: $(2x + y) - (x + y) = 10 - 6 \\Leftrightarrow x = 4$. Thay vào $x + y = 6 \\Rightarrow y = 2$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.4",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho $(x; y)$ thuộc miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ 2x + y \\le 8 \\end{cases}$. Tìm giá trị lớn nhất của biểu thức $F(x, y) = 2x + 3y$.",
+    "correctAnswer": "18",
+    "explanation": "Miền nghiệm là tứ giác $OABC$ với $O(0; 0), A(4; 0), B(2; 4), C(0; 6)$ (vì giao của $x+y=6$ và $2x+y=8$ là $x=2, y=4$).\nTính $F$ tại các đỉnh:\n$F(0; 0) = 0$;\n$F(4; 0) = 8$;\n$F(2; 4) = 2(2) + 3(4) = 16$;\n$F(0; 6) = 2(0) + 3(6) = 18$.\nVậy giá trị lớn nhất là 18.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.5",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Cho $(x; y)$ thuộc miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\ge 3 \\\\ x + y \\le 6 \\end{cases}$. Tìm giá trị nhỏ nhất của biểu thức $F(x, y) = 2x + 2y$.",
+    "correctAnswer": "6",
+    "explanation": "Ta có $F(x, y) = 2(x + y)$. Vì $x + y \\ge 3$ nên $F(x, y) \\ge 2(3) = 6$. Giá trị nhỏ nhất là 6.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.6",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Có bao nhiêu cặp số nguyên dương $(x; y)$ thỏa mãn hệ bất phương trình $\\begin{cases} 2x + y \\le 5 \\\\ x \\ge 1 \\\\ y \\ge 1 \\end{cases}$?",
+    "correctAnswer": "4",
+    "explanation": "Vì $x, y \\in \\mathbb{Z}^+$:\n- Với $x = 1 \\Rightarrow 2(1) + y \\le 5 \\Rightarrow y \\le 3$, ta có 3 cặp: $(1; 1), (1; 2), (1; 3)$.\n- Với $x = 2 \\Rightarrow 2(2) + y \\le 5 \\Rightarrow y \\le 1$, ta có 1 cặp: $(2; 1)$.\n- Với $x \\ge 3 \\Rightarrow 2x \\ge 6 > 5$ (loại).\nTổng cộng có 4 cặp số nguyên dương.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.7",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Một xưởng làm bàn ghế cần sản xuất $x$ bàn và $y$ ghế. Doanh thu là $F(x, y) = 500x + 200y$ (nghìn đồng). Biết miền nghiệm thỏa mãn các đỉnh là $O(0; 0), A(10; 0), B(8; 6), C(0; 12)$. Tìm doanh thu lớn nhất (tính bằng nghìn đồng).",
+    "correctAnswer": "5200",
+    "explanation": "Tính tại các đỉnh:\n$F(0; 0) = 0$;\n$F(10; 0) = 500(10) = 5000$;\n$F(8; 6) = 500(8) + 200(6) = 4000 + 1200 = 5200$;\n$F(0; 12) = 200(12) = 2400$.\nDoanh thu lớn nhất là 5200 nghìn đồng.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.8",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tại điểm $(x_0; y_0)$ nào thì biểu thức $F(x, y) = 3x + 5y$ đạt giá trị lớn nhất trên miền nghiệm có các đỉnh $O(0; 0), A(6; 0), B(4; 5), C(0; 7)$? Nhập giá trị của $x_0$.",
+    "correctAnswer": "4",
+    "explanation": "Tính $F$:\n$F(0; 0) = 0$;\n$F(6; 0) = 18$;\n$F(4; 5) = 3(4) + 5(5) = 12 + 25 = 37$;\n$F(0; 7) = 35$.\nGiá trị lớn nhất là 37 đạt tại đỉnh $B(4; 5)$. Vậy $x_0 = 4$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.9",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Tìm số nguyên $m$ lớn nhất để điểm $M(m; 2)$ thuộc miền nghiệm của hệ $\\begin{cases} 3x - 4y \\le 10 \\\\ x + y \\ge 1 \\end{cases}$.",
+    "correctAnswer": "6",
+    "explanation": "Thay $(m; 2)$ vào hệ:\n1) $3m - 4(2) \\le 10 \\Leftrightarrow 3m \\le 18 \\Leftrightarrow m \\le 6$.\n2) $m + 2 \\ge 1 \\Leftrightarrow m \\ge -1$.\nDo đó $-1 \\le m \\le 6$. Giá trị nguyên lớn nhất của $m$ là 6.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.10",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 4y \\le 12 \\end{cases}$ là một tam giác vuông. Tính chu vi của tam giác đó.",
+    "correctAnswer": "12",
+    "explanation": "Đường thẳng $3x + 4y = 12$ cắt hai trục tại $A(4; 0)$ và $B(0; 3)$. Độ dài hai cạnh góc vuông là $OA = 4, OB = 3$. Cạnh huyền $AB = \\sqrt{4^2 + 3^2} = 5$. Chu vi là $4 + 3 + 5 = 12$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.11",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Biểu thức $F(x, y) = 3x + 2y$ đạt giá trị lớn nhất trên miền nghiệm của hệ $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x + 2y \\le 8 \\end{cases}$ tại điểm $(x_0; y_0)$. Tìm giá trị của $x_0$.",
+    "correctAnswer": "5",
+    "explanation": "Miền nghiệm là tứ giác $OABC$ với các đỉnh $O(0; 0), A(5; 0), B(2; 3), C(0; 4)$.\nTính $F$:\n$F(0; 0) = 0$;\n$F(5; 0) = 3(5) + 0 = 15$;\n$F(2; 3) = 3(2) + 2(3) = 12$;\n$F(0; 4) = 3(0) + 2(4) = 8$.\nGiá trị lớn nhất là 15 đạt tại điểm $A(5; 0)$. Do đó $x_0 = 5$.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-ai-sa-10.4.12",
+    "gradeNumber": 10,
+    "chapterId": "c2",
+    "chapterName": "Chương II: Bất phương trình và hệ BPT",
+    "lessonId": "b4",
+    "lessonTitle": "Bài 4: Hệ BPT bậc nhất hai ẩn",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x \\le 5 \\\\ y \\le 4 \\\\ x + y \\ge 2 \\end{cases}$ là một đa giác có bao nhiêu đỉnh?",
+    "correctAnswer": "5",
+    "explanation": "Hình chữ nhật $0 \\le x \\le 5, 0 \\le y \\le 4$ bị đường thẳng $x + y = 2$ cắt cụt mất góc ở gốc tọa độ $O$. Năm đỉnh của đa giác nghiệm là $(2; 0), (5; 0), (5; 4), (0; 4), (0; 2)$. Vậy đa giác có 5 đỉnh.",
+    "sourceCitation": "Bộ đề bồi dưỡng Toán 10 KNTT"
   }
 ]

@@ -1,305 +1,5 @@
 [
   {
-    "stem": "Gieo một con xúc xắc hai lần liên tiếp. Hãy mô tả không gian mẫu của phép thử.",
-    "explanation": "🖎 Lời giải\n\nKhông gian mẫu của phép thử",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-467",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Lấy ngẫu nhiên lần lượt hai chữ số từ ba chữ số xếp thành hàng ngang từ trái qua phải. Hãy mô tả không gian mẫu của phép thử.",
-    "explanation": "🖎 Lời giải\n\nKhông gian mẫu của phép thử",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-468",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xếp ba người ngồi thành hàng ngang. Mô tả không gian mẫu của phép thử đó.",
-    "explanation": "🖎 Lời giải\n\nĐặt tên ba người theo thứ tự là . \n\nKhi đó, không gian mẫu của phép thử là",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-469",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong giỏ có 5 củ khoai tây, lấy ngẫu nhiên ra hai củ. Hãy mô tả không gian mẫu.",
-    "explanation": "🖎 Lời giải\n\nGiả sử 5 củ khoai tây kí hiệu lần lượt là 1, 2, 3, 4, 5. \n\nKhi đó không gian mẫu của phép thử là",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-470",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo đồng xu 3 lần liên tiếp. Hãy mô tả không gian mẫu của phép thử.",
-    "explanation": "🖎 Lời giải\n\nKý hiệu S - là mặt sấp, N - là mặt ngửa. \n\nKhi đó không gian mẫu của phép thử là\n\n\n\n\n\n🏱 Dạng 2. Xác định biến cố của một phép thử",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-471",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo một con súc sắc hai lần, biến cố A: “ Tổng số chấm trên mặt xuất hiện của hai lần gieo là số chẵn”, và biến cố B là biến cố đối của biến cố A. Xác định biến cố B và liệt kê các kết quả thuận lợi cho B.",
-    "explanation": "🖎 Lời giải\n\nB: “ Tổng số chấm trên mặt xuất hiện của hai lần gieo là số lẻ”.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-472",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo con súc sắc hai lần. Xác định biến cố A: “ Tổng số chấm trên mặt xuất hiện của hai lần gieo nhỏ hơn hặc bằng 4”.",
-    "explanation": "🖎 Lời giải\n\nA: “ Tổng số chấm trên mặt xuất hiện của hai lần gieo nhỏ hơn hặc bằng 4”",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-473",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ các số 1, 2, 3, 4, 5, 6, 7, 8, 9, lập được số tự nhiên có 3 chữ số đôi một khác nhau. ⑴ Xác định các biến cố A: “ Số lập được là số có chữ số sau gấp đôi chữ số liền trước nó”. B: “ Số lập được là số có chữ số trước gấp đôi chữ số liền sau nó”. C: “ Số lập được có tổng các chữ số bằng”. ⑵ Xác định một biến cố không và một biến cố chắc chắn.",
-    "explanation": "🖎 Lời giải\n\n⑴ Xác định các biến cố A;B;C.\n\nA: “ Số lập được là số có chữ số sau gấp đôi chữ số liền trước nó”.\n\n\n\nB: “ Số lập được là số có chữ số trước gấp đôi chữ số liền sau nó”.\n\n\n\nC: “ Số lập được có tổng các chữ số bằng”.\n\n\n\n⑵ Xác định một biến cố không và một biến cố chắc chắn. \n\nBiến cố không là biến cố ‘’Số lập được là số chia hết cho 10’’;\n\nBiến cố chắc chắn ‘’ Số được lập là số chẵn hoặc số lẻ’’.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-474",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cắm 2 bông hoa khác nhau vào 3 lọ khác nhau sao cho mỗi lọ có nhiều nhất một bông hoa. Hãy mô tả không gian mẫu của phép thử.",
-    "explanation": "🖎 Lời giải\n\nKý hiệu 2 bông hoa lần lượt là , 3 lọ lần lượt ý hiệu là \n\nKhi đó không gian mẫu của phép thử là",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-475",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có 100 tấm thẻ được đánh số từ 1 đến 100. Lấy ngẫu nhiên 5 thẻ. Tính số phần tử của ⑴ Không gian mẫu ⑵ Các biến cố: (a) A: “Số ghi trên các tấm thẻ được chọn đều là số chẵn”. (b) B: “Có ít nhất một số ghi trên thẻ được chọn chia hết cho 3”.",
-    "explanation": "🖎 Lời giải\n\n⑴ Không gian mẫu\n\nSố phần tử của không gian mẫu \n\n⑵ Các biến cố: A và B.\n\n(a) Từ 1 đến 100 có 50 số chẵn, suy ra \n\n(b) Từ 1 đến 100 có 33 số chia hết cho 3, 67 số không chia hết cho 3.\n\nTa có  : “Cả 5 số trên 5 thẻ được chọn đều không chia hết cho 3”.\n\nSuy ra , do đó .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-476",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo một con súc sắc liên tiếp cho đến khi súc sắc xuất hiện mặt 1 chấm hoặc 6 chấm thì dừng lại. Xác định các biến cố: A:’’số lần gieo không vượt quá hai lần’’; B:’’số lần gieo là ba’’.",
-    "explanation": "🖎 Lời giải\n\nA:’’số lần gieo không vượt quá hai lần’’;\n\n,\n\nB:’’số lần gieo là ba’’.\n\n\n\n\n\n\n\n🏱 Dạng 3. Phép toán trên biến cố",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-477",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một lớp có 15 học sinh nam và 17 học sinh nữ. Gọi A là biến cố : “lập một đội văn nghệ của lớp gồm 7 học sinh trong đó nhất thiết phải có học sinh nữ”. Hãy mô tả biến cố đối của biến cố A (Giả thiết rằng học sinh nào cũng có khả năng văn nghệ)",
-    "explanation": "🖎 Lời giải\n\nA là biến cố : “lập một đội văn nghệ của lớp gồm 7 học sinh trong đó nhất thiết phải có học sinh nữ”\n\nBiến cố đối của biến cố A : “7 học sinh trong đội văn nghệ đều là nam”",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-478",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một xạ thủ bắn hai phát độc lập với nhau. Gọi lần lượt là biến cố lần thứ nhất và lần thứ 2 bắn trúng hồng tâm. Hãy biểu diễn các biến cố sau thông qua các biến cố ⑴ Cả hai lần đều bắn trúng hồng tâm ⑵ Cả hai lần không bắn trúng hồng tâm ⑶ Ít nhất một lần bắn trúng hồng tâm",
-    "explanation": "🖎 Lời giải\n\nTa có: :”Lần thứ nhất bắn trúng hồng tâm”\n\nVà :”Lần thứ hai bắn trúng hồng tâm”\n\n⑴ Cả hai lần đều bắn trúng hồng tâm\n\nGọi  là biến cố cả hai lần đều bắn trúng hồng tâm\n\nTa có  \n\n⑵ Cả hai lần không bắn trúng hồng tâm\n\nGọi là biến cố: Cả hai lần không bắn trúng hồng tâm\n\nTa có \n\n⑶ Ít nhất một lần bắn trúng hồng tâm\n\nGọi là biến cố: Ít nhất một lần bắn trúng hồng tâm\n\nTa có \n\nTa thấy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-479",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho biết hai biến cố A và B xung khắc hay đối nhau hay vừa xung khắc vừa đối nhau. Xác định .",
-    "explanation": "🖎 Lời giải\n\n.\n\nA và B là hai biến cố xung khắc, nhưng không phải là hai biến cố đối nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-480",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho các số 1, 2, 3, 4, 5, 6, 7, 8, 9, lập các số có 4 chữ số từ các số đã cho. Gọi A là biến cố ‘’ Số lập được chia hết cho 3’’. Và B là biến cố ‘’ Số lập được chia hết cho 6’’. Xác định .",
-    "explanation": "🖎 Lời giải\n\nTa có  và  \n\nNên",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-481",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Lớp 11A có 35 học sinh. Trong đó có 10 bạn học sinh giỏi môn Văn. 7 bạn là học sinh giỏi môn Toán và 2 bạn học sinh giỏi cả hai môn. Chọn 1 học sinh đi thi giao thông học đường. Xét biến cố: A:’’Bạn được chọn là học sinh giỏi văn’’; B: ’’Bạn được chọn là học sinh giỏi Toán’’; C: ’’Bạn được chọn là học sinh vừa giỏi văn vừa giỏi Toán’’ Xét tính đúng sai của các khẳng định sau: (a). . (b). và là hai biến cố xung khắc nhau ; (c). và là hai biến cố đối nhau ; (d). là biến cố đối của biến cố . (e). và là hai biến cố đối nhau ; (f). và là hai biến cố xung khắc.",
-    "explanation": "🖎 Lời giải\n\n(a). .\n\nMệnh đề sai. \n\n(b).  và  là hai biến cố xung khắc nhau ;\n\nMệnh đề sai vì .\n\n(c).  và  là hai biến cố đối nhau ;\n\nMệnh đề sai vì .\n\n(d). là biến cố đối của biến cố  .\n\nMệnh đề sai vì , nhưng  . \n\nĐây là hai biến cố xung khắc nhưng không phải hai biến cố đối nhau\n\n(e).  và  là hai biến cố đối nhau ;\n\nMệnh đề đúng. Vì \n\n(f).  và là hai biến cố xung khắc.\n\nMệnh đề đúng. Vì \n\nTương tự với tập . Suy ra hai tập là xung khắc nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B1-KHÔNG GIAN MẪU VÀ BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-482",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong một chiếc hộp có 20 viên bi, trong đó có 8 viên bi màu đỏ, 7 viên bi màu xanh và 5 viên bi màu vàng. Lấy ngẫu nhiên ra 3 viên bi. Tìm xác suất để: ⑴ 3 viên bi lấy ra đều màu đỏ. ⑵ 3 viên bi lấy ra có không quá hai màu.",
-    "explanation": "🖎 Lời giải\n\nGọi A: “3 viên bi lấy ra đều màu đỏ”\n\nB: “3 viên bi lấy ra có đúng hai màu”\n\nSố cách lấy 3 viên bi từ 20 viên bi là  nên ta có .\n\n⑴ 3 viên bi lấy ra đều màu đỏ.\n\nSố cách lấy 3 viên bi màu đỏ là  nên .\n\nDo đó: .\n\n⑵ 3 viên bi lấy ra có không quá hai màu.\n\nSố cách lấy 3 viên bi có đúng hai màu\n\nĐỏ và xanh: \n\nĐỏ và vàng: \n\nVàng và xanh: \n\nNên số cách lấy 3 viên bi có đúng hai màu: \n\nDo đó: . Vậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-484",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo một con súc sắc lần. Tính xác suất của biến cố sau: ⑴ : “ lần gieo cho kết quả như nhau”. ⑵ : “ Tích lần gieo là số lẻ”. ⑶ : “ Tổng lần gieo là ”. ⑷ : “ Lần gieo sau gieo được số lớn hơn lần gieo trước”.",
-    "explanation": "🖎 Lời giải\n\nGieo con xúc sắc  lần sẽ có  cách có thể xảy ra. \n\nTa gọi kết quả  lần gieo lần lượt theo dãy số .\n\n⑴ : “ lần gieo cho kết quả như nhau”.\n\n.\n\n.\n\n⑵ : “ Tích lần gieo là số lẻ”.\n\nTa có : .\n\n.\n\n⑶ : “ Tổng lần gieo là ”.\n\n.\n\n.\n\n⑷ : “ Lần gieo sau gieo được số lớn hơn lần gieo trước”.\n\n\n\n\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-485",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong một hộp kín có 18 quả bóng khác nhau: 9 trắng, 6 đen, 3 vàng.Lấy ngẫu nhiên đồng thời 5 quả bóng trong đó. Tính xác suất của: ⑴ : “5 quả bóng cùng màu”. ⑵ : “5 quả bóng có đủ 3 màu”. ⑶ : “5 quả bóng không có màu trắng”.",
-    "explanation": "🖎 Lời giải\n\nLấy ngẫu nhiên 5 bóng đồng thời trong hộp kín do đó  cách.\n\n⑴ : “5 quả bóng cùng màu”.\n\nTrường hợp 1: 5 quả bóng đồng màu trắng:  cách lấy.\n\nTrường hợp 2: 5 quả bóng đồng màu đen:  cách lấy.\n\nTừ đó .\n\n⑵ : “5 quả bóng có đủ 3 màu”.\n\nTrường hợp 1: 1 trắng, 1 đen, 3 vàng: cách.\n\nTrường hợp 2: 1 trắng, 2 đen, 2 vàng:  cách.\n\nTrường hợp 3: 2 trắng, 1 đen, 2 vàng:  cách.\n\nTrường hợp 4: 2 trắng, 2 đen, 1 vàng:  cách.\n\nTrường hợp 5: 3 trắng, 1 đen, 1 vàng:  cách.\n\nTừ đó .\n\n⑶ : “5 quả bóng không có màu trắng”.\n\n5 quả bóng lấy trong 9 quả đen vàng do đó\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-486",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chọn ngẫu nhiên 3 số trong 80 số tự nhiên 1,2,3, . . . ,80. Tính xác suất của các biến cố: ⑴ A: “Trong 3 số đó có đúng 2 số là bội số của 5”. ⑵ B: “Trong 3 số đó có ít nhất một số chính phương”.",
-    "explanation": "🖎 Lời giải\n\nSố cách chọn 3 số từ 80 số là \n\n⑴ A: “Trong 3 số đó có đúng 2 số là bội số của 5”.\n\nTừ 1 đến 80 có  số chia hết cho 5 và có  số không chia hết cho 5.\n\nDo đó .\n\n⑵ B: “Trong 3 số đó có ít nhất một số chính phương”.\n\nTừ 1 đến 80 có 8 số chính phương là: 1,4,9,16,25,36,49,64.\n\nSố cách chọn 3 số không có số chính phương nào được chọn là .\n\nSuy ra .\n\n\n\n🏱 Dạng 2. Tính xác suất theo biến cố xung khắc – biến cố đối\n\n\n\n✓ Sử dụng biến cố xung khắc, biến cố đối.\n\n✓ Áp dụng các công thức\n\n» Nếu  và  xung khắc thì .\n\n» \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-487",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Gieo đồng thời ba con xúc xắc cân đối và đồng chất. Gọi là biến cố “Tích số chấm ở mặt xuất hiện trên ba con xúc xắc đó là số chẵn”. ⑴ Hãy tìm biến cố đối của biến cố . ⑵ Hãy tính xác suất của biến cố .",
-    "explanation": "🖎 Lời giải\n\n⑴ Hãy tìm biến cố đối của biến cố .\n\nBiến cố đối của biến cố  là biến cố “Tích các số chấm ở mặt xuất hiện trên ba con xúc xắc đó là số lẻ”.\n\n⑵ Hãy tính xác suất của biến cố .\n\nTổng số kết quả có thể xảy ra của phép thử là .\n\n xảy ra khi mặt xuất hiện trên cả ba con xúc xắc đều có số chấm là số lẻ. Số kết quả thuận lợi cho  là .\n\nXác suất của biến cố  là  .\n\nXác suất của biến cố  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-488",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ một hộp gồm 6 viên bi xanh và 4 viên bi đỏ. Lấy ngẫu nhiên hai viên bi. ⑴ Tính xác suất để thu được hai viên bi cùng màu ⑵ Tính xác suất để thu được hai viên bi khác màu.",
-    "explanation": "🖎 Lời giải\n\nTa có .\n\n⑴ Tính xác suất để thu được hai viên bi cùng màu\n\nGọi  là biến cố: “Lấy được hai viên bi cùng màu”.\n\nTrường hợp 1: Lấy được hai viên bi cùng màu xanh: .\n\nTrường hợp 2: Lấy được hai viên bi cùng màu đỏ: .\n\nKhi đó \n\nVậy .\n\n⑵ Tính xác suất để thu được hai viên bi khác màu.\n\nGọi  là biến cố: “Lấy được hai viên bi khác màu”.\n\nVì chỉ có hai màu xanh hoặc đỏ nên ta có .\n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-489",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một giáo viên muốn chọn hai câu hỏi ra đề kiểm tra 15 phút môn Toán lớp 11. Trong ngân hàng đề có 10 câu lượng giác, 6 câu toán tổ hợp, 8 câu hỏi toán xác suất. ⑴ Tính xác suất để hai câu hỏi rơi vào cùng một chủ đề. ⑵ Tính xác suất để hai câu hỏi rơi vào hai chủ đề khác nhau.",
-    "explanation": "🖎 Lời giải\n\nTa có .\n\n⑴ Tính xác suất để hai câu hỏi rơi vào cùng một chủ đề. \n\nGọi  là biến cố: “Chọn được hai câu cùng chủ đề”.\n\nTrường hợp 1: Chọn được hai câu lượng giác: .\n\nTrường hợp 2: Chọn được hai câu tổ hợp: .\n\nTrường hợp 3: Chọn được hai câu xác suất: .\n\nKhi đó \n\nVậy .\n\n⑵ Tính xác suất để hai câu hỏi rơi vào hai chủ đề khác nhau.\n\nGọi  là biến cố: “Chọn được hai câu vào hai chủ đề khác nhau”.\n\nVì  nên.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-490",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một lô hàng gồm sản phẩm tốt và sản phẩm xấu. Lấy ngẫu nhiên sản phẩm. Tính xác suất để sản phẩm lấy ra có ít nhất một sản phẩm tốt.",
-    "explanation": "🖎 Lời giải\n\nChọn ra ba sản phẩm tùy ý có  cách chọn.\n\nDo đó .\n\nGọi : “có ít nhất  sản phẩm tốt”. \n\nKhi đó : “3 sản phẩm không có sản phẩm tốt”.\n\n.\n\nVậy xác suất cần tìm là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-491",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xếp ngẫu nhiên 8 chữ cái trong cụm từ “THANH HOA” thành một hàng ngang. Tính xác suất để có ít nhất hai chữ cái H đứng cạnh nhau.",
-    "explanation": "🖎 Lời giải\n\nCách 1:\n\nXét trường hợp các chữ cái được xếp bất kì, khi đó ta xếp các chữ cái lần lượt như sau\n\n- Có cách chọn vị trí và xếp có 3 chữ cái H.\n\n- Có cách chọn vị trí và xếp có 2 chữ cái A.\n\n- Có  cách xếp 3 chữ cái T, O, N.\n\n- Do đó số phần tử của không gian mẫu là \n\nGọi  là biến cố đã cho.\n\n- Nếu có 3 chữ H đứng cạnh nhau thì ta có 6 cách xếp 3 chữ H.\n\n- Nếu có đúng 2 chữ H đứng cạnh nhau: Khi 2 chữ H ở 2 vị trí đầu (hoặc cuối) thì có 5 cách xếp chữ cái H còn lại, còn khi 2 chữ H đứng ở các vị trí giữa thì có 4 cách xếp chữ cái H còn lại.\n\nDo đó có  cách xếp 3 chữ H sao cho có đúng 2 chữ H đứng cạnh nhau\n\nNhư vậy có  cách xếp 3 chữ H, ứng với cách xếp trên ta có cách chọn vị trí và xếp 2 chữ cái A và cách xếp 3 chữ cái T, O, N.\n\nSuy ra.\n\nVậy xác suất cần tìm là \n\nCách 2:\n\nSố phần tử của không gian mẫu là \n\nGọi là biến cố đã cho, ta sẽ tìm số phần tử của.\n\nĐầu tiên ta xếp 2 chữ cái A và 3 chữ cái T, O, N, có  cách xếp.\n\nTiếp theo ta có 6 vị trí (xen giữa và ở hai đầu) để xếp 3 chữ cái H, có  cách xếp\n\nDo đó, suy ra \n\nVậy xác suất cần tìm là",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c9",
-    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
-    "sourceCitation": "C10-B2-XÁC SUẤT CỦA BIẾN CỐ-P1.docx",
-    "id": "bq-10-c9-492",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c9-hk2-1789364904700-0",
     "gradeNumber": 10,
     "chapterId": "c9-tinh-xac-suat-co-dien",
@@ -2546,5 +2246,636 @@
     "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.700Z"
+  },
+  {
+    "id": "bq-10-c9-tf-001",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Gieo một đồng xu cân đối và đồng chất ba lần liên tiếp. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số phần tử của không gian mẫu là $n(\\Omega) = 8$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Xác suất để được ít nhất một lần xuất hiện mặt ngửa là $\\frac{7}{8}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Xác suất để được đúng hai lần xuất hiện mặt sấp là $\\frac{3}{8}$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Biến cố \"Mặt sấp và mặt ngửa xuất hiện như nhau\" là biến cố không thể.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $n(\\Omega) = 2^3 = 8$ (Đúng).\nb) Biến cố đối \"cả 3 lần đều sấp\" có 1 phần tử (SSS) $\\Rightarrow P = 1 - 1/8 = 7/8$ (Đúng).\nc) Các kết quả đúng 2 sấp: {SSN, SNS, NSS} (3 phần tử) $\\Rightarrow P = 3/8$ (Đúng).\nd) Vì gieo 3 lần (số lẻ) nên không thể có số mặt sấp bằng số mặt ngửa (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương IX"
+  },
+  {
+    "id": "bq-10-c9-auto-1",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 6 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{11}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{6}{11}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{6}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 6 + 5 = 11$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 11$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-2",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 7 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{12}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{7}{12}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{7}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 7 + 5 = 12$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 12$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-3",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 8 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{13}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{8}{13}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{8}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 8 + 5 = 13$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 13$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-4",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 9 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{14}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{9}{14}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{9}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 9 + 5 = 14$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 14$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-5",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 10 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{15}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{10}{15}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{10}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 10 + 5 = 15$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 15$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-6",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 11 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{16}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{11}{16}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{11}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 11 + 5 = 16$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 16$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-7",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 12 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{17}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{12}{17}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{12}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 12 + 5 = 17$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 17$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-8",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 13 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{18}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{13}{18}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{13}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 13 + 5 = 18$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 18$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-9",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 14 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{19}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{14}{19}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{14}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 14 + 5 = 19$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 19$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-10",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 15 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{20}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{15}{20}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{15}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 15 + 5 = 20$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 20$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-11",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Một hộp đựng 16 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{21}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{16}{21}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{16}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 16 + 5 = 21$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 21$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-auto-12",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Một hộp đựng 17 quả cầu trắng và 5 quả cầu đen. Lấy ngẫu nhiên 1 quả cầu. Xác suất để lấy được quả cầu đen là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$\\frac{5}{22}$"
+      },
+      {
+        "key": "B",
+        "text": "$\\frac{17}{22}$"
+      },
+      {
+        "key": "C",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{17}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Không gian mẫu có $n(\\Omega) = 17 + 5 = 22$. Số cách lấy quả cầu đen là 5. Do đó xác suất $P = 5 / 22$.",
+    "sourceCitation": "Xác suất cổ điển Toán 10"
+  },
+  {
+    "id": "bq-10-c9-tf-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Xét tính đúng sai của các biến cố:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số phần tử của không gian mẫu là $n(\\Omega) = 36$.",
+        "isCorrect": true,
+        "explanation": "6 x 6 = 36."
+      },
+      {
+        "key": "b",
+        "text": "Xác suất để hai con xúc xắc xuất hiện số chấm giống nhau là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Có 6 cặp (1,1)...(6,6) -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "c",
+        "text": "Xác suất để tổng số chấm bằng 7 là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Các cặp tổng 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) có 6 cặp -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "d",
+        "text": "Xác suất để tổng số chấm bằng 13 là một biến cố chắc chắn.",
+        "isCorrect": false,
+        "explanation": "Tổng số chấm tối đa là 6+6=12 nên tổng bằng 13 là biến cố không thể (P = 0)."
+      }
+    ],
+    "explanation": "Áp dụng định nghĩa cổ điển của xác suất trên không gian mẫu đồng khả năng.",
+    "sourceCitation": "Đề thi thử THPT Quốc Gia"
+  },
+  {
+    "id": "bq-10-c9-tf-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Xét tính đúng sai của các biến cố:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số phần tử của không gian mẫu là $n(\\Omega) = 36$.",
+        "isCorrect": true,
+        "explanation": "6 x 6 = 36."
+      },
+      {
+        "key": "b",
+        "text": "Xác suất để hai con xúc xắc xuất hiện số chấm giống nhau là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Có 6 cặp (1,1)...(6,6) -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "c",
+        "text": "Xác suất để tổng số chấm bằng 7 là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Các cặp tổng 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) có 6 cặp -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "d",
+        "text": "Xác suất để tổng số chấm bằng 13 là một biến cố chắc chắn.",
+        "isCorrect": false,
+        "explanation": "Tổng số chấm tối đa là 6+6=12 nên tổng bằng 13 là biến cố không thể (P = 0)."
+      }
+    ],
+    "explanation": "Áp dụng định nghĩa cổ điển của xác suất trên không gian mẫu đồng khả năng.",
+    "sourceCitation": "Đề thi thử THPT Quốc Gia"
+  },
+  {
+    "id": "bq-10-c9-tf-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Xét tính đúng sai của các biến cố:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số phần tử của không gian mẫu là $n(\\Omega) = 36$.",
+        "isCorrect": true,
+        "explanation": "6 x 6 = 36."
+      },
+      {
+        "key": "b",
+        "text": "Xác suất để hai con xúc xắc xuất hiện số chấm giống nhau là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Có 6 cặp (1,1)...(6,6) -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "c",
+        "text": "Xác suất để tổng số chấm bằng 7 là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Các cặp tổng 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) có 6 cặp -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "d",
+        "text": "Xác suất để tổng số chấm bằng 13 là một biến cố chắc chắn.",
+        "isCorrect": false,
+        "explanation": "Tổng số chấm tối đa là 6+6=12 nên tổng bằng 13 là biến cố không thể (P = 0)."
+      }
+    ],
+    "explanation": "Áp dụng định nghĩa cổ điển của xác suất trên không gian mẫu đồng khả năng.",
+    "sourceCitation": "Đề thi thử THPT Quốc Gia"
+  },
+  {
+    "id": "bq-10-c9-tf-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Xét tính đúng sai của các biến cố:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Số phần tử của không gian mẫu là $n(\\Omega) = 36$.",
+        "isCorrect": true,
+        "explanation": "6 x 6 = 36."
+      },
+      {
+        "key": "b",
+        "text": "Xác suất để hai con xúc xắc xuất hiện số chấm giống nhau là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Có 6 cặp (1,1)...(6,6) -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "c",
+        "text": "Xác suất để tổng số chấm bằng 7 là $\\frac{1}{6}$.",
+        "isCorrect": true,
+        "explanation": "Các cặp tổng 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) có 6 cặp -> P = 6/36 = 1/6."
+      },
+      {
+        "key": "d",
+        "text": "Xác suất để tổng số chấm bằng 13 là một biến cố chắc chắn.",
+        "isCorrect": false,
+        "explanation": "Tổng số chấm tối đa là 6+6=12 nên tổng bằng 13 là biến cố không thể (P = 0)."
+      }
+    ],
+    "explanation": "Áp dụng định nghĩa cổ điển của xác suất trên không gian mẫu đồng khả năng.",
+    "sourceCitation": "Đề thi thử THPT Quốc Gia"
+  },
+  {
+    "id": "bq-10-c9-sa-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Gieo một con xúc xắc cân đối một lần. Tính số kết quả thuận lợi cho biến cố: \"Số chấm xuất hiện là số nguyên tố\".",
+    "correctAnswer": "3",
+    "explanation": "Các số nguyên tố trên mặt xúc xắc từ 1 đến 6 là: 2, 3, 5. Vậy có 3 kết quả thuận lợi.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c9-sa-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Gieo một con xúc xắc cân đối một lần. Tính số kết quả thuận lợi cho biến cố: \"Số chấm xuất hiện là số nguyên tố\".",
+    "correctAnswer": "3",
+    "explanation": "Các số nguyên tố trên mặt xúc xắc từ 1 đến 6 là: 2, 3, 5. Vậy có 3 kết quả thuận lợi.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c9-sa-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Gieo một con xúc xắc cân đối một lần. Tính số kết quả thuận lợi cho biến cố: \"Số chấm xuất hiện là số nguyên tố\".",
+    "correctAnswer": "3",
+    "explanation": "Các số nguyên tố trên mặt xúc xắc từ 1 đến 6 là: 2, 3, 5. Vậy có 3 kết quả thuận lợi.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c9-sa-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c9-tinh-xac-suat-co-dien",
+    "chapterName": "Chương IX: Tính xác suất theo định nghĩa cổ điển",
+    "lessonId": "b26-bien-co-va-dinh-nghia-xac-suat",
+    "lessonTitle": "Bài 26: Biến cố và định nghĩa cổ điển của xác suất",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Gieo một con xúc xắc cân đối một lần. Tính số kết quả thuận lợi cho biến cố: \"Số chấm xuất hiện là số nguyên tố\".",
+    "correctAnswer": "3",
+    "explanation": "Các số nguyên tố trên mặt xúc xắc từ 1 đến 6 là: 2, 3, 5. Vậy có 3 kết quả thuận lợi.",
+    "sourceCitation": "SGK Toán 10 KNTT"
   }
 ]

@@ -1,68 +1,121 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
-import { CustomExam } from "@/types/customExam";
+import React, { useState, useEffect, useMemo } from "react";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
-import { exportExamToWord } from "@/lib/exportExamWord";
+import { BankQuestion, QuestionBankCatalog, CognitiveLevel, QuestionType } from "@/types/questionBank";
 import {
-  Eye,
-  Download,
-  FileText,
-  CheckCircle2,
-  Clock,
-  Share2,
-  ExternalLink,
+  BookOpen,
   X,
-  Check,
+  Search,
+  CheckCircle2,
   Sparkles,
   CheckSquare,
   Edit3,
   Bookmark,
-  Search,
-  BookOpen,
-  Filter,
   Layers,
+  Filter,
+  RefreshCw,
+  Loader2,
   HelpCircle,
+  ArrowRight,
 } from "lucide-react";
 
-interface ExamPreviewModalProps {
-  exam: CustomExam;
+interface QuestionBankViewerModalProps {
   onClose: () => void;
-  onCopyLink: (id: string) => void;
+  onOpenDrawModal?: (chapterId?: string) => void;
 }
 
-export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModalProps) {
-  const [showAnswers, setShowAnswers] = useState(true);
-  const [copied, setCopied] = useState(false);
-  const [activeTab, setActiveTab] = useState<"all" | "mc" | "tf" | "sa">("all");
+export function QuestionBankViewerModal({ onClose, onOpenDrawModal }: QuestionBankViewerModalProps) {
+  const [catalog, setCatalog] = useState<QuestionBankCatalog | null>(null);
+  const [selectedChapterId, setSelectedChapterId] = useState<string>("chuong-1");
+  const [questions, setQuestions] = useState<BankQuestion[]>([]);
+  const [isLoadingCatalog, setIsLoadingCatalog] = useState(true);
+  const [isLoadingQuestions, setIsLoadingQuestions] = useState(false);
+
+  // Filters
+  const [selectedType, setSelectedType] = useState<string>("all");
+  const [selectedLevel, setSelectedLevel] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [showAnswers, setShowAnswers] = useState(true);
 
-  const rawQuestions = useMemo(() => exam.questions || [], [exam.questions]);
+  // Fetch Catalog
+  useEffect(() => {
+    async function loadCatalog() {
+      setIsLoadingCatalog(true);
+      try {
+        const res = await fetch("/api/teacher/exams/bank-stats?gradeNumber=10");
+        const data = await res.json();
+        if (data.success && data.catalog) {
+          setCatalog(data.catalog);
+          if (data.catalog.chapters && data.catalog.chapters.length > 0) {
+            setSelectedChapterId(data.catalog.chapters[0].chapterId);
+          }
+        }
+      } catch (err) {
+        console.error("Lỗi tải mục lục ngân hàng đề:", err);
+      } finally {
+        setIsLoadingCatalog(false);
+      }
+    }
+    loadCatalog();
+  }, []);
 
-  // Phân loại danh sách câu hỏi
-  const mcList = useMemo(() => rawQuestions.filter((q) => q.type === "multiple_choice"), [rawQuestions]);
-  const tfList = useMemo(() => rawQuestions.filter((q) => q.type === "true_false"), [rawQuestions]);
-  const saList = useMemo(() => rawQuestions.filter((q) => q.type === "short_answer"), [rawQuestions]);
+  // Fetch Chapter Questions when selectedChapterId changes
+  useEffect(() => {
+    if (!selectedChapterId) return;
 
-  // Lọc theo tìm kiếm từ khóa
+    async function loadQuestions() {
+      setIsLoadingQuestions(true);
+      try {
+        const res = await fetch(`/api/teacher/exams/bank-questions?gradeNumber=10&chapterId=${selectedChapterId}`);
+        const data = await res.json();
+        if (data.success && data.questions) {
+          setQuestions(data.questions);
+        } else {
+          setQuestions([]);
+        }
+      } catch (err) {
+        console.error("Lỗi tải câu hỏi:", err);
+        setQuestions([]);
+      } finally {
+        setIsLoadingQuestions(false);
+      }
+    }
+    loadQuestions();
+  }, [selectedChapterId]);
+
+  // Selected Chapter Info
+  const currentChapter = useMemo(() => {
+    if (!catalog?.chapters) return null;
+    return catalog.chapters.find((c) => c.chapterId === selectedChapterId) || catalog.chapters[0];
+  }, [catalog, selectedChapterId]);
+
+  // Filter questions
   const filteredQuestions = useMemo(() => {
-    let list = rawQuestions;
-    if (activeTab === "mc") list = mcList;
-    else if (activeTab === "tf") list = tfList;
-    else if (activeTab === "sa") list = saList;
+    let list = questions;
 
-    if (!searchQuery.trim()) return list;
+    if (selectedType !== "all") {
+      list = list.filter((q) => q.type === selectedType);
+    }
 
-    const q = searchQuery.toLowerCase().trim();
-    return list.filter((item) => {
-      const stem = (item.stem || "").toLowerCase();
-      const topic = (item.topic || "").toLowerCase();
-      const explanation = (item.explanation || "").toLowerCase();
-      return stem.includes(q) || topic.includes(q) || explanation.includes(q);
-    });
-  }, [rawQuestions, mcList, tfList, saList, activeTab, searchQuery]);
+    if (selectedLevel !== "all") {
+      list = list.filter((q) => q.level === selectedLevel);
+    }
 
-  // Helper lấy badge độ khó
+    if (searchQuery.trim()) {
+      const qLower = searchQuery.toLowerCase().trim();
+      list = list.filter((item) => {
+        const stem = (item.stem || "").toLowerCase();
+        const expl = (item.explanation || "").toLowerCase();
+        const src = ((item as any).source || (item as any).sourceCitation || "").toLowerCase();
+        return stem.includes(qLower) || expl.includes(qLower) || src.includes(qLower);
+      });
+    }
+
+    return list;
+  }, [questions, selectedType, selectedLevel, searchQuery]);
+
+  // Helper render Difficulty badge
   const renderDifficultyBadge = (diff?: string) => {
     if (!diff) return null;
     const d = diff.toUpperCase();
@@ -103,29 +156,27 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-950/90 backdrop-blur-md animate-in fade-in">
-      <div className="w-full max-w-5xl rounded-3xl bg-[#0b1329] border-2 border-cyan-500/40 p-4 sm:p-6 space-y-4 shadow-2xl overflow-hidden max-h-[96vh] flex flex-col text-white">
+      <div className="w-full max-w-6xl rounded-3xl bg-[#0b1329] border-2 border-cyan-500/40 p-4 sm:p-6 space-y-4 shadow-2xl overflow-hidden max-h-[96vh] flex flex-col text-white">
         {/* Modal Header */}
         <div className="flex items-start justify-between pb-3 border-b border-slate-800 shrink-0 gap-3">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 border border-cyan-400/50 flex items-center justify-center text-slate-950 font-black shrink-0 shadow-lg shadow-cyan-500/20">
-              <Eye className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-500 border border-cyan-400/50 flex items-center justify-center text-slate-950 font-black shrink-0 shadow-lg shadow-cyan-500/20">
+              <BookOpen className="w-5 h-5 text-slate-950" />
             </div>
             <div>
               <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="text-base sm:text-lg font-black text-white">{exam.title}</h3>
+                <h3 className="text-base sm:text-lg font-black text-white">
+                  Ngân Hàng Câu Hỏi Chuẩn Hóa Toán 10 (2025)
+                </h3>
                 <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-500/30">
-                  {exam.targetClass || "Toán 10"}
-                </span>
-                <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-bold border border-amber-500/30 flex items-center gap-1">
-                  <Clock className="w-3 h-3" />
-                  {exam.durationMinutes} phút
+                  {catalog?.totalQuestions || 1197} câu hỏi hoàn hảo
                 </span>
                 <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
-                  {rawQuestions.length} câu hỏi
+                  10 Chương SGK Kết Nối Tri Thức
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                Xem trước giao diện chuẩn Gamified Đấu Trường Học Tập • Hỗ trợ xuất Word Equation & MathType
+                Duyệt xem toàn bộ câu hỏi trắc nghiệm, đúng/sai và trả lời ngắn với định dạng KaTeX chuẩn như bài học.
               </p>
             </div>
           </div>
@@ -139,150 +190,128 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
           </button>
         </div>
 
-        {/* Action Toolbar */}
-        <div className="flex flex-wrap items-center justify-between gap-2.5 p-3 rounded-2xl bg-[#0e172e] border border-slate-800 shrink-0">
-          {/* Toggle show answers & Tab filters */}
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setShowAnswers(!showAnswers)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ${
-                showAnswers
-                  ? "bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25 ring-2 ring-emerald-300"
-                  : "bg-slate-800 text-slate-300 hover:text-white border border-slate-700"
-              }`}
-            >
-              <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>{showAnswers ? "Đang Hiện Đáp Án & Lời Giải" : "Hiện Đáp Án & Lời Giải"}</span>
-            </button>
+        {/* Toolbar: Chapter selector, Filters, Search & Toggle Answer */}
+        <div className="space-y-2.5 shrink-0">
+          {/* Chapter Tabs Horizontal Scroll */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin">
+            {catalog?.chapters?.map((ch) => {
+              const isSelected = ch.chapterId === selectedChapterId;
+              return (
+                <button
+                  key={ch.chapterId}
+                  onClick={() => setSelectedChapterId(ch.chapterId)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                    isSelected
+                      ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/30 ring-2 ring-cyan-300"
+                      : "bg-slate-900/80 text-slate-300 hover:bg-slate-800 border border-slate-800"
+                  }`}
+                >
+                  <span>{ch.chapterName}</span>
+                  <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-black ${
+                    isSelected ? "bg-white/20 text-white" : "bg-slate-800 text-slate-400"
+                  }`}>
+                    {ch.totalQuestions}
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
-          {/* Action buttons: Export Word & Link */}
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              onClick={() => exportExamToWord(exam, { includeAnswers: false })}
-              className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
-              title="Tải đề thi file Word để in ấn"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Tải Word (Đề thi)</span>
-            </button>
+          {/* Filter Bar */}
+          <div className="flex flex-wrap items-center justify-between gap-2.5 p-3 rounded-2xl bg-[#0e172e] border border-slate-800">
+            <div className="flex flex-wrap items-center gap-2">
+              {/* Type Filter */}
+              <select
+                value={selectedType}
+                onChange={(e) => setSelectedType(e.target.value)}
+                className="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white font-bold focus:outline-none focus:border-cyan-400"
+              >
+                <option value="all">Tất cả dạng câu</option>
+                <option value="multiple_choice">Phần I: Trắc nghiệm 4 lựa chọn</option>
+                <option value="true_false">Phần II: Đúng / Sai 4 ý</option>
+                <option value="short_answer">Phần III: Trả lời ngắn</option>
+              </select>
 
-            <button
-              type="button"
-              onClick={() => exportExamToWord(exam, { includeAnswers: true })}
-              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
-              title="Tải file Word kèm Bảng Đáp Án và Lời Giải Chi Tiết"
-            >
-              <FileText className="w-3.5 h-3.5" />
-              <span>Tải Word (Kèm Lời Giải)</span>
-            </button>
+              {/* Level Filter */}
+              <select
+                value={selectedLevel}
+                onChange={(e) => setSelectedLevel(e.target.value)}
+                className="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white font-bold focus:outline-none focus:border-cyan-400"
+              >
+                <option value="all">Tất cả mức độ</option>
+                <option value="NB">Nhận biết (NB)</option>
+                <option value="TH">Thông hiểu (TH)</option>
+                <option value="VD">Vận dụng (VD)</option>
+                <option value="VDC">Vận dụng cao (VDC)</option>
+              </select>
 
-            <button
-              type="button"
-              onClick={() => {
-                onCopyLink(exam.id);
-                setCopied(true);
-                setTimeout(() => setCopied(false), 2000);
-              }}
-              className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer border border-slate-700"
-            >
-              {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Share2 className="w-3.5 h-3.5 text-cyan-400" />}
-              <span>{copied ? "Đã chép link" : "Sao Chép Link"}</span>
-            </button>
+              {/* Show Answers Toggle */}
+              <button
+                type="button"
+                onClick={() => setShowAnswers(!showAnswers)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ${
+                  showAnswers
+                    ? "bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25 ring-2 ring-emerald-300"
+                    : "bg-slate-800 text-slate-300 hover:text-white border border-slate-700"
+                }`}
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>{showAnswers ? "Đang Hiện Lời Giải" : "Hiện Lời Giải & Đáp Án"}</span>
+              </button>
+            </div>
 
-            <a
-              href={`/kiem-tra/${exam.id}`}
-              target="_blank"
-              rel="noreferrer"
-              className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all flex items-center gap-1.5 border border-slate-700"
-            >
-              <ExternalLink className="w-3.5 h-3.5 text-amber-400" />
-              <span>Thi Thử Ngay</span>
-            </a>
-          </div>
-        </div>
+            <div className="flex items-center gap-2">
+              {/* Quick Search */}
+              <div className="relative w-48 sm:w-60">
+                <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                <input
+                  type="text"
+                  placeholder="Tìm trong chương..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                />
+              </div>
 
-        {/* Navigation Tabs & Search */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 pb-1 shrink-0">
-          <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
-            <button
-              type="button"
-              onClick={() => setActiveTab("all")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === "all"
-                  ? "bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20"
-                  : "bg-slate-900/80 text-slate-300 hover:bg-slate-800 border border-slate-800"
-              }`}
-            >
-              Tất cả ({rawQuestions.length})
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setActiveTab("mc")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === "mc"
-                  ? "bg-blue-600 text-white shadow-md shadow-blue-600/20"
-                  : "bg-slate-900/80 text-slate-300 hover:bg-slate-800 border border-slate-800"
-              }`}
-            >
-              Phần I: Trắc nghiệm ({mcList.length})
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setActiveTab("tf")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === "tf"
-                  ? "bg-teal-500 text-slate-950 shadow-md shadow-teal-500/20"
-                  : "bg-slate-900/80 text-slate-300 hover:bg-slate-800 border border-slate-800"
-              }`}
-            >
-              Phần II: Đúng/Sai ({tfList.length})
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setActiveTab("sa")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === "sa"
-                  ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
-                  : "bg-slate-900/80 text-slate-300 hover:bg-slate-800 border border-slate-800"
-              }`}
-            >
-              Phần III: Trả lời ngắn ({saList.length})
-            </button>
-          </div>
-
-          <div className="relative w-full sm:w-64">
-            <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Tìm nhanh nội dung câu hỏi..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
-            />
+              {/* Draw Exam from this chapter */}
+              {onOpenDrawModal && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    onOpenDrawModal(selectedChapterId);
+                  }}
+                  className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs transition-all shadow-md flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                >
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>Rút Đề Từ Chương Này</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Question Cards List */}
+        {/* Question Cards Stream */}
         <div className="flex-1 overflow-y-auto space-y-4 pr-1.5">
-          {filteredQuestions.length === 0 ? (
-            <div className="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 text-center space-y-2">
+          {isLoadingQuestions ? (
+            <div className="py-20 flex flex-col items-center justify-center space-y-3 text-cyan-400">
+              <Loader2 className="w-8 h-8 animate-spin" />
+              <p className="text-xs font-bold text-slate-400">Đang tải danh sách câu hỏi chuẩn hóa...</p>
+            </div>
+          ) : filteredQuestions.length === 0 ? (
+            <div className="p-10 rounded-2xl bg-slate-900/50 border border-slate-800 text-center space-y-2">
               <HelpCircle className="w-8 h-8 text-slate-500 mx-auto" />
-              <p className="text-sm text-slate-400">Không tìm thấy câu hỏi nào phù hợp với bộ lọc hiện tại.</p>
+              <p className="text-sm text-slate-300 font-bold">Không tìm thấy câu hỏi nào phù hợp với bộ lọc.</p>
+              <p className="text-xs text-slate-500">Hãy thử đổi mức độ nhận thức hoặc xóa từ khóa tìm kiếm.</p>
             </div>
           ) : (
-            filteredQuestions.map((q: any, idx: number) => {
-              const globalIndex = rawQuestions.findIndex((item) => item.id === q.id) + 1 || idx + 1;
+            filteredQuestions.map((q, idx) => {
+              const globalIndex = idx + 1;
 
-              // RENDER PHẦN I: TRẮC NGHIỆM 4 LỰA CHỌN
+              // DẠNG 1: TRẮC NGHIỆM 4 LỰA CHỌN
               if (q.type === "multiple_choice") {
                 const options = q.options || [];
-                const isAnyOptionLong = options.some((opt: any) => (opt.text || "").length > 32);
+                const isAnyOptionLong = options.some((opt: any) => (opt.text || opt || "").length > 32);
 
                 return (
                   <div
@@ -297,7 +326,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                           <span>Câu {globalIndex} (Trắc nghiệm 4 lựa chọn)</span>
                         </span>
 
-                        {renderDifficultyBadge(q.difficulty)}
+                        {renderDifficultyBadge(q.level)}
 
                         <span className="text-[10px] font-bold text-slate-400 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
                           0.25 điểm
@@ -305,13 +334,13 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                       </div>
 
                       <div className="flex items-center gap-1.5">
-                        {(q.topic || q.chapterName) && (
+                        {((q as any).source || (q as any).sourceCitation) && (
                           <span
                             className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 truncate max-w-[240px]"
-                            title={q.topic || q.chapterName}
+                            title={(q as any).source || (q as any).sourceCitation}
                           >
                             <Bookmark className="w-2.5 h-2.5 shrink-0 text-cyan-400" />
-                            <span className="truncate">{q.topic || q.chapterName}</span>
+                            <span className="truncate">{(q as any).source || (q as any).sourceCitation}</span>
                           </span>
                         )}
                       </div>
@@ -319,16 +348,19 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
 
                     {/* Question Stem */}
                     <div className="text-base sm:text-lg font-bold text-white leading-relaxed tracking-wide">
-                      <MathFormattedText text={q.stem || q.question} />
+                      <MathFormattedText text={q.stem} />
                     </div>
 
                     {/* Options Grid */}
                     <div className={`grid gap-2.5 pt-1 ${isAnyOptionLong ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
-                      {options.map((opt: any) => {
-                        const isCorrect = showAnswers && q.correctKey === opt.key;
+                      {options.map((opt: any, optIdx: number) => {
+                        const optKey = opt.key || String.fromCharCode(65 + optIdx);
+                        const optText = typeof opt === "string" ? opt : opt.text;
+                        const isCorrect = showAnswers && q.correctKey === optKey;
+
                         return (
                           <div
-                            key={opt.key}
+                            key={optKey}
                             className={`p-3 sm:p-3.5 rounded-xl border-2 text-left font-bold text-sm sm:text-base flex items-center justify-between gap-3 transition-all ${
                               isCorrect
                                 ? "bg-emerald-950/90 border-emerald-400 text-emerald-100 shadow-md shadow-emerald-500/25"
@@ -343,10 +375,10 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                                     : "bg-white/10 text-cyan-300 border-white/15"
                                 }`}
                               >
-                                {opt.key}
+                                {optKey}
                               </span>
                               <div className="font-bold flex-1 min-w-0 break-words leading-relaxed text-sm sm:text-base">
-                                <MathFormattedText text={opt.text} />
+                                <MathFormattedText text={optText} />
                               </div>
                             </div>
 
@@ -377,9 +409,9 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                 );
               }
 
-              // RENDER PHẦN II: CÂU HỎI ĐÚNG / SAI (4 Ý A, B, C, D)
+              // DẠNG 2: CÂU HỎI ĐÚNG / SAI 4 Ý
               if (q.type === "true_false") {
-                const subQuestions = q.subQuestions || q.statements || q.subItems || [];
+                const subQuestions = (q as any).subQuestions || (q as any).subItems || q.statements || [];
 
                 return (
                   <div
@@ -394,7 +426,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                           <span>Câu {globalIndex} (Đúng / Sai 4 ý)</span>
                         </span>
 
-                        {renderDifficultyBadge(q.difficulty)}
+                        {renderDifficultyBadge(q.level)}
 
                         <span className="text-[10px] font-bold text-slate-400 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
                           0.1 - 0.25 - 0.5 - 1.0 điểm
@@ -402,13 +434,13 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                       </div>
 
                       <div className="flex items-center gap-1.5">
-                        {(q.topic || q.chapterName) && (
+                        {((q as any).source || (q as any).sourceCitation) && (
                           <span
                             className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-teal-950/60 text-teal-300 border border-teal-500/30 truncate max-w-[240px]"
-                            title={q.topic || q.chapterName}
+                            title={(q as any).source || (q as any).sourceCitation}
                           >
                             <Bookmark className="w-2.5 h-2.5 shrink-0 text-teal-400" />
-                            <span className="truncate">{q.topic || q.chapterName}</span>
+                            <span className="truncate">{(q as any).source || (q as any).sourceCitation}</span>
                           </span>
                         )}
                       </div>
@@ -416,7 +448,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
 
                     {/* Question Stem */}
                     <div className="text-base sm:text-lg font-bold text-white leading-relaxed tracking-wide">
-                      <MathFormattedText text={q.stem || q.prompt} />
+                      <MathFormattedText text={q.stem} />
                     </div>
 
                     {/* Sub-items List a, b, c, d */}
@@ -483,7 +515,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                 );
               }
 
-              // RENDER PHẦN III: CÂU HỎI DẠNG TRẢ LỜI NGẮN
+              // DẠNG 3: TRẢ LỜI NGẮN
               if (q.type === "short_answer") {
                 return (
                   <div
@@ -498,7 +530,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                           <span>Câu {globalIndex} (Trả lời ngắn)</span>
                         </span>
 
-                        {renderDifficultyBadge(q.difficulty)}
+                        {renderDifficultyBadge(q.level)}
 
                         <span className="text-[10px] font-bold text-slate-400 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
                           0.5 điểm
@@ -506,13 +538,13 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                       </div>
 
                       <div className="flex items-center gap-1.5">
-                        {(q.topic || q.chapterName) && (
+                        {((q as any).source || (q as any).sourceCitation) && (
                           <span
                             className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-950/60 text-amber-300 border border-amber-500/30 truncate max-w-[240px]"
-                            title={q.topic || q.chapterName}
+                            title={(q as any).source || (q as any).sourceCitation}
                           >
                             <Bookmark className="w-2.5 h-2.5 shrink-0 text-amber-400" />
-                            <span className="truncate">{q.topic || q.chapterName}</span>
+                            <span className="truncate">{(q as any).source || (q as any).sourceCitation}</span>
                           </span>
                         )}
                       </div>
@@ -520,7 +552,7 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
 
                     {/* Question Stem */}
                     <div className="text-base sm:text-lg font-bold text-white leading-relaxed tracking-wide">
-                      <MathFormattedText text={q.stem || q.question} />
+                      <MathFormattedText text={q.stem} />
                     </div>
 
                     {/* Đáp số & Hướng dẫn */}
@@ -553,31 +585,21 @@ export function ExamPreviewModal({ exam, onClose, onCopyLink }: ExamPreviewModal
                 );
               }
 
-              // FALLBACK CHO CÁC DẠNG CÂU KHÁC (NẾU CÓ)
-              return (
-                <div key={q.id || idx} className="p-4 rounded-2xl bg-[#131B2E] border border-slate-800 space-y-2">
-                  <div className="text-sm font-bold text-white">
-                    Câu {globalIndex}: <MathFormattedText text={q.stem} />
-                  </div>
-                  {showAnswers && q.explanation && (
-                    <div className="text-xs text-slate-300 bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
-                      <MathFormattedText text={q.explanation} />
-                    </div>
-                  )}
-                </div>
-              );
+              return null;
             })
           )}
         </div>
 
         {/* Modal Footer */}
         <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 shrink-0 gap-2">
-          <span>Hệ thống Đề Kiểm Tra Chuẩn VinaMathLab & Bộ GD&ĐT 2025</span>
+          <span>
+            Đang hiển thị <strong className="text-cyan-400">{filteredQuestions.length}</strong> / {questions.length} câu hỏi của {currentChapter?.chapterName}
+          </span>
           <button
             onClick={onClose}
             className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold transition-all cursor-pointer border border-slate-700 hover:border-slate-600"
           >
-            Đóng Xem Trước
+            Đóng Ngân Hàng
           </button>
         </div>
       </div>

@@ -1,665 +1,5 @@
 [
   {
-    "stem": "Trên trục cho 2 điểm có tọa độ lần lượt là và 5. ⑴ Tìm tọa độ của . ⑵ Tìm tọa độ trung điểm của đoạn thẳng . ⑶ Tìm tọa độ của điểm sao cho . ⑷ Tìm tọa độ điểm sao cho .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ của .\n\n.\n\n⑵ Tìm tọa độ trung điểm  của đoạn thẳng .\n\nTọa độ điểm  là .\n\n⑶ Tìm tọa độ của điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .\n\n⑷ Tìm tọa độ điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .",
-    "type": "essay",
-    "level": "NB",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-748",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trên trục cho 2 điểm có tọa độ lần lượt là và 1 . ⑴ Tìm tọa độ điểm sao cho . ⑵ Tìm tọa độ điểm sao cho .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .\n\n⑵ Tìm tọa độ điểm  sao cho .\n\nGiả sử điểm  có tọa độ , ta có .",
-    "type": "essay",
-    "level": "NB",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-749",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trên trục tọa độ cho hai điểm có tọa độ lần lượt là . ⑴ Tìm tọa độ điểm sao cho . ⑵ Tìm tọa độ trung điểm của .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ điểm  sao cho .\n\nGọi tọa độ điểm  là .\n\nKhi đó: \n\nVậy tọa độ điểm  là .\n\n⑵ Tìm tọa độ trung điểm của .\n\nGọi tọa độ điểm  là .  là trung điểm của  khi và chỉ khi .\n\nTa có: \n\nVậy tọa độ điểm  là .",
-    "type": "essay",
-    "level": "NB",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-750",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trên trục tọa độ cho bốn điểm bất kỳ. Chứng minh",
-    "explanation": "🖎 Lời giải\n\nGọi tọa độ  của  lần lượt là .\n\nKhi đó:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-751",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trên trục , cho 3 điểm có tọa độ lần lượt là . Tìm điểm sao cho .",
-    "explanation": "🖎 Lời giải\n\nGọi điểm  có tọa độ là . \n\nTa có: \n\nKhi đó: .\n\nSuy ra: .\n\n\n\n🏱 Dạng 2. Tọa độ trên hệ trục\n\n\n\n⑴ \t là trung điểm của đoạn .\n\n⑵ \t là trọng tâm tam giác  .\n\n» Cho  và số thực . Khi đó ta có\n\n⑴ \n\n⑵ \n\n⑶ \n\n⑷  cùng phương với  tồn tại số  sao cho .\n\n⑸ \n\n⑹  ( đều khác )\n\n⑺ Cho hai điểm  thì.\n\n⑻ .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-752",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng tọa độ , cho . ⑴ Tìm tọa độ trung điểm của đoạn thẳng . ⑵ Tìm tọa độ trọng tâm tam giác .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ trung điểm của đoạn thẳng .\n\n là trung điểm của đoạn thẳng .\n\n⑵ Tìm tọa độ trọng tâm tam giác .\n\n là trọng tâm tam giác .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-753",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng tọa độ , cho ⑴ Tìm tọa độ các vectơ . ⑵ Phân tích vectơ theo hai vectơ ; .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ các vectơ .\n\n.\n\n\n\n\n\n.\n\n⑵ Phân tích vectơ  theo hai vectơ ; .\n\nGiả sử \n\n; \n\nLại có \n\nNên . Vậy",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-754",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng tọa độ , cho 3 điểm . ⑴ Chứng minh 3 điểm tạo thành tam giác. ⑵ Tìm tọa độ điểm sao cho là hình bình hành.",
-    "explanation": "🖎 Lời giải\n\n⑴ Chứng minh 3 điểm  tạo thành tam giác.\n\nTa có .\n\n và  không cùng phương hay ba điểm  tạo thành 1 tam giác.\n\n⑵ Tìm tọa độ điểm  sao cho  là hình bình hành.\n\n là hình bình hành .",
-    "type": "essay",
-    "level": "NB",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-755",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho ⑴ Tìm tọa độ của ⑵ Tìm sao cho: ⑶ Biểu diễn vectơ theo .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm tọa độ của  \n\n.\n\n⑵ Tìm  sao cho:  \n\n.\n\n⑶ Biểu diễn vectơ  theo . \n\nGiả sử \n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-756",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho 4 điểm . Hãy biểu diễn theo các vectơ .",
-    "explanation": "🖎 Lời giải\n\nTa có .\n\nGiả sử \n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-757",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm để ⑴ 2 vectơ và cùng phương. ⑵ 3 điểm thẳng hàng.",
-    "explanation": "🖎 Lời giải\n\n⑴ 2 vectơ  và  cùng phương.\n\n và  cùng phương khi và chỉ khi .\n\n⑵ 3 điểm  thẳng hàng.\n\n, .\n\nYêu cầu bài toán tương đương .\n\n.\n\nVậy  thì   hay 3 điểm  thẳng hàng.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-758",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho ba điểm ⑴ Chứng minh ba điểm không thẳng hàng . ⑵ Tìm toạ độ điểm , sao cho là hình bình hành. ⑶ Tìm toạ độ trọng tâm của tam giác .",
-    "explanation": "🖎 Lời giải\n\n⑴ Chứng minh ba điểm  không thẳng hàng . \n\n, .\n\nTa có: ,  không cùng phương nên  không thẳng hàng .\n\n⑵ Tìm toạ độ điểm , sao cho  là hình bình hành.\n\nĐặt .\n\nDo  không thẳng hàng \n\nNên  là hình bình hành khi \n\n\n\n⑶ Tìm toạ độ trọng tâm  của tam giác . \n\nVì  là trọng tâm của tam giác  nên   hay .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-759",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai điểm ⑴ Tìm toạ độ điểm thoả mãn . ⑵ Tìm điểm đối xứng với qua . ⑶ Tìm điểm trên trục , sao cho thẳng hàng. ⑷ Tìm điểm trên sao cho là hình thang có cạnh đáy .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm toạ độ điểm  thoả mãn . \n\nGọi  \n\nTa có:  ,  \n\nKhi đó: .\n\n⑵ Tìm điểm  đối xứng với  qua .\n\nGọi \n\nTa có:  ,  \n\nKhi đó: \n\n⑶ Tìm điểm  trên trục , sao cho  thẳng hàng.\n\nVì  nên \n\nĐể  thẳng hàng thì   \n\n⑷ Tìm điểm  trên  sao cho  là hình thang có cạnh đáy . \n\nVì  nên , \n\nĐể  là hình thang có cạnh đáy \n\nthì     .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B1-TỌA ĐỘ VECTƠ TRONG MẶT PHẲNG-P1.docx",
-    "id": "bq-10-c7-760",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng Oxy, viết phương trình tham số đường thẳng biết đi qua và có véctơ chỉ phương .",
-    "explanation": "🖎 Lời giải\n\nPhương trình tham số đường thẳng",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-762",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng Oxy, đường thẳng đi qua . Viết phương trình tham số đường thẳng",
-    "explanation": "🖎 Lời giải\n\nĐường thẳng  qua  và nhận  làm véc-tơ chỉ phương\n\nVậy phương trình tham số đường thẳng",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-763",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng Oxy, đường thẳng đi qua và song song với đường thẳng . Biết .Viết phương trình đường thẳng",
-    "explanation": "🖎 Lời giải\n\nTa có .\n\nPhương trình tham số đường thẳng \n\n\n\n🏱 Dạng 2. Phương trình tổng quát của đường thẳng\n\n\n\nĐể lập phương trình tham số của đường thẳng  ta cần xác định: \n\n» một điểm \n\n» một véctơ pháp tuyến .\n\nVậy phương trình đường thẳng : .\n\n» Phương trình tổng quát đường thẳng  với .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-764",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , viết phương trình tổng quát đường thẳng đi qua điểm và có vectơ pháp tuyến .",
-    "explanation": "🖎 Lời giải\n\nPhương trình đường thẳng .\n\nVậy phương trình tổng quát đường thẳng .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-765",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , viết phương trình tổng quát của đường thẳng đi qua và vuông góc với đường thẳng .",
-    "explanation": "🖎 Lời giải\n\n» Cách 1:\n\nPhương trình đường thẳng  có dạng .\n\nVì  đi qua  nên ta có phương trình . \n\nVậy phương trình tổng quát đường thẳng của đường thẳng .\n\n» Cách 2:\n\nĐường thẳng  có một vec- tơ chỉ phương .\n\nVì  vuông góc với  nên  nhận  làm vec- tơ pháp tuyến.\n\nPhương trình tổng quát đường thẳng .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-766",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , viết phương trình tổng quát của là đường trung trực của đoạn thẳng với .",
-    "explanation": "🖎 Lời giải\n\nGọi  là trung điểm của đoạn thẳng ,  \n\nVì  nên  có một VTPT là  \n\nVậy PTTQ của  là",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-767",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , cho đường thẳng và . Viết phương trình tham số của đường thẳng đối xứng với qua .",
-    "explanation": "🖎 Lời giải\n\nGọi .\n\nCó  khác .\n\nTìm tọa độ hình chiếu của  lên  là .\n\nTọa độ điểm đối xứng của  qua  là .\n\nVậy đường thẳng cần tìm là .\n\n\n\n🏱 Dạng 3. Vị trí tương đối của đường thẳng\n\n\n\nCho các đường thẳng  và . \n\nKhi đó ta có  và  lần lượt là vectơ pháp tuyến của  và .\n\nĐể xét vị trí tương đối của  và  trước hết ta dựa vào các vectơ  và . Cụ thể ta có:\n\n⑴ \t cắt  khi và chỉ khi , hơn nữa nếu  thì .\n\n⑵ \t khi và chỉ khi .\n\n⑶ \t khi và chỉ khi .\n\n⑷ \tNếu  cắt  và gọi  là góc giữa các đường thẳng  thì .\n\nChú ý: \n\n⑴ \tViệc xét vị trí tương đối của  và  cũng được xét qua số điểm chung. \n\n⑵ \tViệc xét vị trí tương đối và tính góc giữa  và  cũng được thực hiện qua các vectơ chỉ phương.\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-768",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho ba đường thẳng: , , . Chứng minh rằng các đường thẳng , cắt nhau và tìm giá trị của tham số để ba đường thẳng trên đồng quy.",
-    "explanation": "🖎 Lời giải\n\nTa có: .\n\nTừ đó suy ra cắt nhau tại .\n\nBa đường thẳng đã cho đồng quy khi và chỉ khi  cũng đi qua điểm hay  \n\nSuy ra.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-769",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho các đường thẳng và điểm ⑴ Xét vị trí tương đối giữa các đường thẳng ⑵ Biết là đường thẳng đi qua điểm và tạo với các đường thẳng một tam giác cân. Tính góc giữa các đường thẳng .",
-    "explanation": "🖎 Lời giải\n\n⑴ Xét vị trí tương đối giữa các đường thẳng  \n\nTa có là các véc tơ pháp tuyến của .\n\nTa thấy  không cùng phương vì  từ đó suy ra  là các đường thẳng cắt nhau.\n\n⑵ Tính góc giữa các đường thẳng \n\nTa có  do đó  là các đường thẳng vuông góc với nhau.\n\nGọi . \n\nKhi đó tam giác  là vuông tại A do đó nếu tam giác cân thì \n\nTừ đó suy ra góc giữa các đường thẳng  bằng",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-770",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai đường thẳng . Tìm giá trị của tham số để: ⑴ Đường thẳng song song với ⑵ Đường thẳng cắt đường thẳng .",
-    "explanation": "🖎 Lời giải\n\n⑴ Đường thẳng song song với \n\ncắt  khi và chỉ khi .\n\n⑵ Đường thẳng cắt đường thẳng \n\nTheo câu ⑴ để   thì trước hết ta phải có .\n\nVới  khi đó dễ dàng ta nhận thấy .\n\nVậy không tồn tại  để .\n\nChú ý: \tTa có thể làm theo cách sau:  khi và chỉ khi .\n\nHệ trên vô nghiệm do đó không tồn tại  để .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-771",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai đường thẳng song và Phương trình đường thẳng song song và cách đều và là?",
-    "explanation": "🖎 Lời giải\n\nGọi là  đường thẳng song song và cách đều  và .\n\nSuy ra phương trình  có dạng: \n\nMặt khác:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-772",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xác định tất cả các giá trị của để góc tạo bởi đường thẳng và đường thẳng bằng .",
-    "explanation": "🖎 Lời giải\n\nGọi  là góc giữa hai đường thẳng đã cho.\n\nĐường thẳng   có vectơ chỉ phương là .\n\nĐường thẳng  có vectơ chỉ phương là .\n\nTa có  \n\n \n\n.\n\n\n\n🏱 Dạng 4. Khoảng cách từ một điểm đến đường thẳng\n\n\n\nCho điểm và đường thẳng . \n\nKhi đó, khoảng cách từ điểm  đến đường thẳng  được tính: .\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-773",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm khoảng cách từ điểm đến đường thẳng .",
-    "explanation": "🖎 Lời giải\n\nÁp dụng công thức tính khoảng cách ta có .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-774",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm những điểm nằm trên đường thẳng và có khoảng cách đến đường thẳng bằng .",
-    "explanation": "🖎 Lời giải\n\nGọi , khi đó.\n\nTa có .\n\nVậy có hai điểm thỏa điều kiện bài toán là  và .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-775",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình đường thẳng đi qua điểm và có khoảng cách đến điểm bằng .",
-    "explanation": "🖎 Lời giải\n\nGọi  là đường thẳng đi qua điểm   và có hệ số góc là . \n\nKhi đó phương trình đường thẳng  có dạng hay .\n\nTheo đề ta có \n\n.\n\nVậy đường thẳng  cần tìm có phương trình là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-776",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , viết phương trình đường thẳng đi qua điểm và cách đều và .",
-    "explanation": "🖎 Lời giải\n\nGọi phương trình đường thẳng  cần tìm là    .\n\nDo  nên ta có: . \n\nThay  vào  ta có phương trình đường thẳng  trở thành: \n\n .\n\nVì  cách đều hai điểm  và  nên:\n\n\n\n.\n\nTrường hợp 1: Với  thay vào  \n\nTa được phương trình đường thẳng  là: .\n\nTrường hợp 2: Với  ta chọn ,  thay vào  \n\nTa được phương trình đường thẳng  là: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B2-PHƯƠNG TRÌNH ĐƯỜNG THẲNG-P1.docx",
-    "id": "bq-10-c7-777",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong các phương trình sau, phương trình nào là phương trình đường tròn? Tìm tâm và bán kính nếu có. ⑴ (1) ⑵ (2) ⑶ (3) ⑷ (4)",
-    "explanation": "🖎 Lời giải\n\n⑴  (1)\n\nTa có: \n\nVậy phương trình (1) không phải là phương trình đường tròn.\n\n⑵  (2)\n\nTa có: \n\nSuy ra phương trình (2) không phải là phương trình đường tròn.\n\n⑶  (3)\n\nTa có: . Suy ra: \n\nVậy phương trình (3) là phương trình đường tròn tâm  bán kính \n\n⑷  (4)\n\nPhương trình (4) không phải là phương trình đường tròn vì hệ số của  và  khác nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-778",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho phương trình ⑴ Tìm điều kiện của để là phương trình đường tròn. ⑵ Nếu là phương trình đường tròn hãy tìm toạ độ tâm và bán kính theo m",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm điều kiện của  để  là phương trình đường tròn.\n\nĐiều kiện: \n\n⑵ Nếu  là phương trình đường tròn hãy tìm toạ độ tâm và bán kính theo m\n\nVới điều kiện trên thì đường tròn có tâm  và",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-779",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho phương trình đường cong : ⑴ Chứng minh rằng là phương trình một đường tròn. ⑵ Tìm tập hợp tâm các đường tròn khi m thay đổi. ⑶ Chứng minh khi m thay đổi họ các đường tròn luôn đi qua hai điểm cố định.",
-    "explanation": "🖎 Lời giải\n\n⑴ Chứng minh rằng  là phương trình một đường tròn. \n\nTa có \n\nSuy ra  là phương trình đường tròn với mọi m\n\n⑵ Tìm tập hợp tâm các đường tròn khi m thay đổi.\n\nĐường tròn có tâm I:  suy ra \n\nVậy tập hợp tâm các đường tròn là đường thẳng \n\n⑶ Chứng minh khi m thay đổi họ các đường tròn  luôn đi qua hai điểm cố định. \n\nGọi  là điểm cố định mà họ  luôn đi qua.\n\nKhi đó ta có: \n\n\n\n hoặc \n\nVậy có hai điểm cố định mà họ  luôn đi qua với mọi m là  và .\n\n\n\n🏱 Dạng 2. Viết phương trình đường tròn\n\n\n\n▪ Cách 1:\n\n» Tìm tọa độ tâm  của đường tròn .\n\n» Tìm bán kính  của đường tròn .\n\n» Viết phương trình của đường tròn  theo dạng .\n\n▪ Cách 2:\n\n» Giả sử phương trình của đường tròn  là (hoặc dạng ) .\n\n» Từ điều kiện của đề bài thiết lập hệ phương trình với ba ẩn là , , .\n\n» Giải hệ để tìm , , , từ đó tìm được phương trình của đường tròn  .\n\n▪ Chú ý:\n\n» Cho đường tròn  có tâm  và  bán kính , điểm .\n\n»  tiếp xúc với đường thẳng  tại .\n\n»  tiếp xúc với hai đường thẳng  và .\n\n»  cắt đường thẳng  theo dây cung có độ dài .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-780",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình đường tròn có tâm , bán kính",
-    "explanation": "🖎 Lời giải\n\nPhương trình đường tròn cần tìm là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-781",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình đường tròn trong mỗi trường hợp sau: ⑴ Có tâm và đi qua ⑵ Nhận làm đường kính với . ⑶ Đi qua ba điểm:",
-    "explanation": "🖎 Lời giải\n\n⑴ Có tâm và đi qua  \n\nĐường tròn cần tìm có bán kính là  nên có phương trình là \n\n⑵ Nhận  làm đường kính với .\n\nGọi I là trung điểm của đoạn  suy ra \n\n\n\nĐường tròn cần tìm có đường kính là suy ra nó nhận  làm tâm và bán kính  nên có phương trình là \n\n⑶ Đi qua ba điểm:  \n\nGọi phương trình đường tròn (C) có dạng là: .\n\nDo đường tròn đi qua ba điểm  nên ta có hệ phương trình:\n\n\n\nVậy phương trình đường tròn cần tìm là: \n\nNhận xét: Đối với ý ⑶ ta có thể làm theo cách sau:\n\nGọi  và R là tâm và bán kính đường tròn cần tìm\n\nVì  nên ta có:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-782",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình đường tròn (C) trong mỗi trường hợp sau: ⑴ (C) có tâm và tiếp xúc với đường thẳng ⑵ (C) đi qua và tiếp xúc với hai trục toạ độ và ⑶ (C) có tâm nằm trên đường thẳng và tiếp xúc với hai đường thẳng có phương trình và",
-    "explanation": "🖎 Lời giải\n\n⑴ (C) có tâm  và tiếp xúc với đường thẳng  \n\nBán kính đường tròn (C) chính là khoảng cách từ I tới đường thẳng  nên \n\n\n\nVậy phương trình đường tròn (C) là: \n\n⑵ (C) đi qua  và tiếp xúc với hai trục toạ độ  và \n\nVì điểm A nằm ở góc phần tư thứ tư và đường tròn tiếp xúc với hai trục toạ độ nên tâm của đường tròn có dạng  trong đó R là bán kính đường tròn (C).\n\nTa có:\n\nVậy có hai đường tròn thoả mãn đầu bài là:  và \n\n⑶ (C) có tâm nằm trên đường thẳng  và tiếp xúc với hai đường thẳng có phương trình  và  \n\nVì đường tròn cần tìm có tâm K nằm trên đường thẳng d nên gọi \n\nMặt khác đường tròn tiếp xúc với  nên khoảng cách từ tâm I đến hai đường thẳng này bằng nhau và bằng bán kính R \n\n ⇔ \n\n» Với  thì  suy ra \n\n» Với  thì  và  suy ra \n\nVậy có hai đường tròn thỏa mãn có phương trình là\n\n và \n\n\n\n🏱 Dạng 3. Vị trí tương đối giữa đường tròn & đường thẳng\n\n\n\nCho đường thẳng: và đường tròn  có tâm bán kính . \n\nĐường thẳng  và đường tròn  có ba vị trí tương đối.\n\nHướng xử lý: so sánh  và .\n\n⑴ \tĐường thẳng  và đường tròn  có hai điểm chung, ta nói  và  cắt nhau.\n\n\n\n \n\n⑵ \tĐường thẳng  và đường tròn  có một điểm chung, ta nói  tiếp xúc . \n\nĐường thẳng  còn được gọi là tiếp tuyến của đường tròn .\n\n\n\n \n\n⑶ \tĐường thẳng  và đường tròn  không có điểm chung nào, ta nói  và  không cắt nhau. \n\n\n\n \n\n\n\n\n\n\n\nPhương pháp\n\n Chú ý:\n\n⁂ \tKhi đường thẳng  cho bởi phương trình tham số . Để xét vị trí tương đối với đường tròn  ta có thể làm hai cách: \n\n⑴ \tTừ phương trình tham số chuyển về phương trình tổng quát, xét vị trí tương đối giống như trên.\n\n⑵ \tThế phương trình tham số vào phương trình của đường tròn  ta được phương trình bậc hai có ẩn , kí hiệu phương trình . \n\n» Phương trình  vô nghiệm. Ta nói  và  không cắt nhau.\n\n» Phương trình  có một nghiệm. Ta nói  tiếp xúc với . \n\n» Phương trình  có hai nghiệm. Ta nói  và  cắt nhau. \n\n⁂ \tKhi đường thẳng  cho bởi phương trình tổng quát , để xét vị trí tương đối của  và đường tròn , người ta xét hệ phương trình: \n\n.\n\n» Hệ  vô nghiệm. Ta nói  và  không cắt nhau.\n\n» Hệ  có một nghiệm. Ta nói  tiếp xúc với . \n\n» Hệ  có hai nghiệm. Ta nói  và  cắt nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-783",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường thẳng và đường tròn . Xét vị trí tương đối của và .",
-    "explanation": "🖎 Lời giải\n\n có tâm  và bán kính . \n\nTa có . \n\nVậy  và  không cắt nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-784",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường thẳng và đường tròn . Xét vị trí tương đối của và , tìm tọa độ giao điểm nếu có.",
-    "explanation": "🖎 Lời giải\n\nThế phương trình của  vào phương trình  ta được phương trình: \n\n. Vậy  cắt . \n\nVới  và . \n\nVậy tọa độ giao điểm của  và  là ; .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-785",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường thẳng và đường tròn . Tìm để cắt .",
-    "explanation": "🖎 Lời giải\n\n có tâm  và bán kính . \n\nĐể  cắt  thì \n\n. \n\nVậy .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-786",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường tròn có tâm I và đường thẳng ⑴ Tìm để đường thẳng cắt đường tròn (C) tại hai điểm phân biệt A, B ⑵ Tìm m để diện tích tam giác là lớn nhất",
-    "explanation": "🖎 Lời giải\n\n\n\n⑴ Tìm  để đường thẳng  cắt đường tròn (C) tại hai điểm phân biệt A, B\n\nĐường tròn (C) có tâm , bán kính \n\n cắt (C) tại hai điểm phân biệt khi và chỉ khi\n\n (đúng với mọi m)\n\n⑵ Tìm m để diện tích tam giác  là lớn nhất \n\nTa có \n\nSuy  khi và chỉ khi \n\nGọi H là hình chiếu của I lên  khi đó \n\nTa có \n\nVậy với  thỏa mãn yêu cầu bài toán.\n\n\n\n🏱 Dạng 4. Vị trí tương đối giữa đường tròn & đường tròn\n\n\n\nCho đường tròn  có tâm  , bán kính  và đường tròn  có tâm  bán kính \n\n⑴ \tNếu suy ra hai đường tròn không cắt nhau và ở ngoài nhau.\n\n⑵ \tNếu suy ra hai đường tròn không cắt nhau và lồng vào nhau.\n\n⑶ \tNếu suy ra hai đường tròn tiếp xúc trong với nhau.\n\n⑷ \tNếu suy ra hai đường tròn cắt nhau tại hai điểm phân biệt. \n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-787",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , cho hai đường tròn ; . Chứng minh rằng hai đường tròn cắt nhau tại hai điểm phân biệt .",
-    "explanation": "🖎 Lời giải\n\nCách 1: có tâm và bán kính có tâm và bán kính .\n\nTa có .\n\nTa có suy ra hai đường tròn cắt nhau.\n\nCách 2: Xét hệ phương trình .\n\n.\n\nSuy ra hai đường tròn cắt nhau tại hai điểm phân biệt .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-788",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong mặt phẳng , cho hai đường tròn và . Xác định để tiếp xúc với",
-    "explanation": "🖎 Lời giải\n\nDễ thấy có tâm và bán kính .\n\ncó tâm và bán kính .\n\nTa thấy  điểm  nằm trong đường tròn tâm suy ra  và  chỉ có thể tiếp xúc trong nhau \n\nĐiều kiện để hai đường tròn tiếp xúc trong là \n\n.\n\nGiải phương trình ta được .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-789",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường tròn có tâm và đường thẳng ⑴ Tìm để đường thẳng cắt đường tròn tại hai điểm phân biệt , . ⑵ Tìm để diện tích tam giác là lớn nhất .",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm  để đường thẳng  cắt đường tròn  tại hai điểm phân biệt , .\n\ncó tâm và bán kính .\n\nĐường thẳng  cắt đường tròn  tại hai điểm phân biệt khi và chỉ khi \n\n.\n\n⑵ Tìm để diện tích tam giác là lớn nhất .\n\nTa có .\n\nSuy ra .\n\nGọi  là hình chiếu của  lên . \n\nKhi đó .\n\nTa có .\n\nVậy với  thỏa mãn yêu cầu bài toán.\n\n\n\n🏱 Dạng 5. Tiếp tuyến của đường tròn\n\n\n\n⁂ Viết phương trình tiếp tuyến  với  tại điểm \n\nBước 1. \tTìm tọa độ tâm  của .\n\nBước 2. \tTiếp tuyến là đường thẳng   \n\n⁂ Viết phương trình tiếp tuyến  với  tại điểm \n\nBước 1. \tTìm tọa độ tâm  của .\n\nBước 2. \tTiếp tuyến là đường thẳng đi qua  nên có dạng \n\nBước 3. \tTiếp tuyến tiếp xúc với . \n\nGiải  tìm được mối liên hệ giữa . Chọn  phù hợp để kết luận.\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-790",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình tiếp tuyến của đường tròn tại điểm .",
-    "explanation": "🖎 Lời giải\n\nĐường tròn  có tâm .\n\nPhương trình tiếp tuyến cần tìm: .\n\nVậy phương trình tiếp tuyến của  tại điểm  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-791",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường tròn (C) có phương trình và điểm hai điểm ⑴ Chứng minh rằng điểm A thuộc đường tròn, điểm B nằm ngoài đường tròn. ⑵ Viết phương trình tiếp tuyến của (C) tại điểm . ⑶ Viết phương trình tiếp tuyến của (C) kẻ từ .",
-    "explanation": "🖎 Lời giải\n\nĐường tròn (C) có tâm  bán kính .\n\n⑴ Chứng minh rằng điểm A thuộc đường tròn, điểm B nằm ngoài đường tròn.\n\nTa có:  suy ra điểm  thuộc đường tròn và điểm  nằm ngoài đường tròn\n\n⑵ Viết phương trình tiếp tuyến của (C) tại điểm .\n\nTiếp tuyến của (C) tại điểm  nhận  làm vectơ pháp tuyến nên có phương trình là  hay \n\n⑶ Viết phương trình tiếp tuyến của (C) kẻ từ .\n\nPhương trình đường thẳng  đi qua  có dạng:\n\n (với ) hay \n\nĐường thẳng  là tiếp tuyến của đường tròn \n\n\n\n» Nếu , chọn  suy ra phương trình tiếp tuyến là .\n\n» Nếu , chọn  suy ra phương trình tiếp tuyến là \n\nVậy qua A kẻ được hai tiếp tuyến với (C) có phương trình là  và",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-792",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho đường tròn . Biết rằng khi thay đổi, đường tròn luôn đi qua điểm cố định có hoành độ dương. Tìm giá trị của sao cho tiếp tuyến của đường tròn tại song song với .",
-    "explanation": "🖎 Lời giải\n\nGiả sử đường tròn  luôn đi qua điểm  cố định khi  thay đổi.\n\nKhi đó ta có .\n\n\n\n.\n\n có tâm . VTPT của tiếp tuyến của  tại  là .\n\nĐể tiếp tuyến tại  song song với  thì tồn tại  sao cho:\n\n.\n\nVậy  thỏa mãn yêu cầu đề bài.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-793",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Viết phương trình tiếp tuyến của đường tròn trong trường hợp: ⑴ Đường thẳng vuông góc với đường thẳng ⑵ Đường thẳng hợp với trục hoành một góc",
-    "explanation": "🖎 Lời giải\n\n⑴ Đường thẳng  vuông góc với đường thẳng \n\nĐường tròn (C) có tâm , bán kính \n\nVì  nên  nhận  làm VTPT do đó có phương trình: \n\nĐường thẳng  là tiếp tuyến với đường tròn (C) khi và chỉ khi\n\n\n\nVậy có hai tiếp tuyến là  và \n\n⑵ Đường thẳng  hợp với trục hoành một góc  \n\nGiả sử phương trình đường thẳng \n\nĐường thẳng  là tiếp tuyến với đường tròn (C) khi và chỉ khi\n\n\n\nĐường thẳng  hợp với trục hoành một góc  \n\n hoặc \n\nTrường hợp 1: Nếu  thay vào (*) ta có , chọn  suy ra \n\nTrường hợp 2: Nếu  thay vào (*) ta có \n\nVới , chọn \n\nVới , chọn \n\nVậy có bốn đường thẳng thỏa mãn là  và",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-794",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chuyển động của một vật thể trong khoảng thời gian 180 phút được thể hiện trong mặt phẳng tọa độ. Theo đó, tại thời điểm vật thể ở vị trí có tọa độ . ⑴ Tìm vị trí ban đầu và vị trí kết thúc của vật thể. ⑵ Tìm quỹ đạo chuyển động của vật thể.",
-    "explanation": "🖎 Lời giải\n\n⑴ Tìm vị trí ban đầu và vị trí kết thúc của vật thể.\n\nVị trí ban đầu của vật thể tại thời điểm  có tọa độ .\n\nVị trí kết thúc của vật thể tại thời điểm  có tọa độ . \n\n⑵ Tìm quỹ đạo chuyển động của vật thể. \n\nQuỹ đạo chuyển độ của vật thể là các điểm  thỏa mãn\n\n. \n\nVậy quỹ đạo chuyển độ của vật thể là đường tròn , có tâm , bán kính .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B3-PHƯƠNG TRÌNH ĐƯỜNG TRÒN-P1.docx",
-    "id": "bq-10-c7-795",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm tọa độ các đỉnh, độ dài các trục, tiêu cự, tiêu điểm, tâm sai của elip: .",
-    "explanation": "🖎 Lời giải\n\nTừ phương trình của , ta có . Suy ra .\n\nSuy ra tọa độ các đỉnh là .\n\nĐộ dài trục lớn , độ dài trục bé .\n\nTiêu cự , tiêu điểm là .\n\nTâm sai của  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-796",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xác định tọa độ các đỉnh và độ dài các trục của các elip có phương trình sau: ⑴ ⑵ ⑶ ⑷",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTừ phương trình  ta có: .\n\nCác đỉnh: .\n\nĐộ dài trục lớn: .\n\n⑵ \n\nTừ phương trình  ta có: , suy ra .\n\nCác tiêu điểm: .\n\nĐộ dài tiêu cự: .\n\n⑶  \n\nTa có .\n\nCác đỉnh: .\n\nĐộ dài trục lớn: .\n\n⑷  \n\nTa có , suy ra: .\n\nCác tiêu điểm: .\n\nĐộ dài tiêu cự: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-797",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Lập phương trình chính tắc của elip , biết ⑴ Độ dài trục lớn bằng , độ dài trục nhỏ bằng . ⑵ Độ dài trục lớn bằng , tiêu cự có độ dài bằng . ⑶ Elip đi qua hai điểm .",
-    "explanation": "🖎 Lời giải\n\n⑴ Độ dài trục lớn bằng , độ dài trục nhỏ bằng . \n\nGiả sử phương trình elip có dạng \n\nĐộ đài trục lớn bằng .\n\nĐộ dài trục nhỏ bằng .\n\nVậy phương trình elip là .\n\n⑵ Độ dài trục lớn bằng , tiêu cự có độ dài bằng . \n\nGiả sử phương trình elip có dạng .\n\nĐộ dài trục lớn bằng .\n\nĐộ dài tiêu cự bằng .\n\nTa có .\n\nVậy phương trình elip có dạng .\n\n⑶ Elip đi qua hai điểm . \n\nGiả sử phương trình elip có dạng .\n\nĐiểm .\n\nĐiểm .\n\nVậy phương trình chính tắc của elip có dạng .\n\n\n\n\n\n🏱 Dạng 2. Phương trình Hypebol\n\n\n\nCho Hypebol có phương trình: , với .\n\nCác yếu tố trong Hypebol:\n\n» Độ dài trục thực: , độ dài trục ảo: . Độ dài tiêu cự: \n\n» Tọa độ các đỉnh , .\n\n» Tiêu điểm , .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-798",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Xác định tiêu cự, tiêu điểm, các đỉnh, độ dài 2 trục của hypebol sau: ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n⑴  \n\n\n\n\n\nSuy ra: \n\n+ Có hai tiêu điểm , \n\n+ Tiêu cự \n\n+ Hai điểm , được gọi là hai đỉnh.\n\n+ Độ dài trục thực: .\n\n+ Độ dài trục thực:  trục ảo.\n\n⑵  \n\n\n\n\n\nSuy ra: \n\n+ Có hai tiêu điểm , \n\n+ Tiêu cự \n\n+ Hai điểm , được gọi là hai đỉnh.\n\n+ Độ dài trục thực: .\n\n+ Độ dài trục thực:  trục ảo.\n\n⑶  \n\n\n\n\n\nSuy ra: \n\n+ Có hai tiêu điểm , \n\n+ Tiêu cự \n\n+ Hai điểm , được gọi là hai đỉnh.\n\n+ Độ dài trục thực: .\n\n+ Độ dài trục thực:  trục ảo.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-799",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Lập phương trình chính tắc của biết: ⑴ Độ dài trục thực là 8 và tiêu cự bằng 10. ⑵ Độ dài trục ảo là 8 và tiêu cự bằng 12. ⑶ Tiêu cự bằng 20 và một đỉnh trên trục thực là .",
-    "explanation": "🖎 Lời giải\n\nPhương trình chính tắc của hypebol  có dạng , trong đó , .\n\n⑴ Độ dài trục thực là 8 và tiêu cự bằng 10.\n\nĐộ dài trục thực là 8 nên và tiêu cự bằng 10 nên .\n\nTa có \n\nPhương trình chính tắc của hypebol  là: .\n\n⑵ Độ dài trục ảo là 8 và tiêu cự bằng 12.\n\nĐộ dài trục ảo là 8 nên  và tiêu cự bằng 12 nên .\n\nTa có \n\nPhương trình chính tắc của hypebol  là: .\n\n⑶ Tiêu cự bằng 20 và một đỉnh trên trục thực là . \n\nTiêu cự bằng 20 nên  và một đỉnh trên trục thực là  nên .\n\nTa có \n\nPhương trình chính tắc của hypebol  là: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-800",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một tháp triển lãm có mặt cắt hình hypebol có phương trình . Cho biết chiều cao của tháp là 100m và khoảng cách từ nóc tháp đến tâm đối xứng của hypebol bằng khoảng cách từ tâm đối xứng đến đáy. Tính bán kính nóc và bán kính đáy của tháp.",
-    "explanation": "🖎 Lời giải\n\n\n\nDo tính đối xứng của hypebol nên ta có hai bán kính của nóc và đáy tháp đều bằng . \n\nDo điểm  nằm trên hypebol nên thay toạ độ của điểm  vào phương trình của hypebol ta có: \n\n (m).\n\nVậy bán kính của nóc và đáy của tháp bằng 31 m.\n\n\n\n🏱 Dạng 3. Phương trình Parabol\n\n\n\nCho Parabol  có phương trình: , với .\n\nCác yếu tố trong Hypebol:\n\n»  gọi là tham số tiêu của parabol \n\n» Tiêu điểm  và đường chuẩn .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "VD",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-801",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm phương trình chính tắc của parabol . Biết: ⑴ nhận đường thẳng làm đường chuẩn. ⑵ có tiêu điểm là . ⑶ có đường chuẩn là .",
-    "explanation": "🖎 Lời giải\n\nGiả sử Parabol  có phương trình chính tắc  (với ).\n\n⑴  nhận đường thẳng  làm đường chuẩn. \n\nĐường chuẩn của parabol là .\n\nMà   có đường chuẩn là .\n\nDo đó .\n\nVậy phương trình chính tắc của  .\n\n⑵  có tiêu điểm là . \n\n có tiêu điểm là .\n\nMà   có tiêu điểm là .\n\nDo đó .\n\nVậy phương trình chính tắc của  .\n\n⑶  có đường chuẩn là . \n\nĐường chuẩn của parabol là .\n\nMà   có đường chuẩn là .\n\nDo đó .\n\nVậy phương trình chính tắc của  .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-802",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một chiếc đèn có mặt cắt ngang là hình parabol như hình bên. Hình parabol có chiều rộng giữa hai mép vành là và chiều sâu ( bằng khoảng cách từ đến . Bóng đèn nằm ở tiêu điểm . Viết phương trình chính tắc của parabol đó.",
-    "explanation": "🖎 Lời giải\n\n\n\nGắn hình parabol vào hệ trục như đề bài, dựa vào giả thiết bài toán ta có tọa độ điểm . \n\nParabol đi qua điểm  \n\nNên ta có phương trình .\n\nVậy ta có phương trình chính tắc của parabol đó là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c7",
-    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
-    "sourceCitation": "C9-B4-BA ĐƯỜNG CONIC-P1.docx",
-    "id": "bq-10-c7-803",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c7-hk2-1789364904696-0",
     "gradeNumber": 10,
     "chapterId": "c7-phuong-phap-toa-do-mat-phang",
@@ -2160,5 +1500,1565 @@
     "explanation": "Vận dụng lý thuyết và công thức của bài học để tìm đáp án chính xác.",
     "sourceCitation": "Bộ đề ôn tập HK2 Toán 10 - Ngô Đức Tài",
     "createdAt": "2026-09-14T05:48:24.696Z"
+  },
+  {
+    "id": "bq-10-c7-tf-001",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường thẳng $\\Delta: 3x - 4y + 5 = 0$. Xét tính đúng sai của các mệnh đề sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Một vectơ pháp tuyến của $\\Delta$ là $\\vec{n} = (3; -4)$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Một vectơ chỉ phương của $\\Delta$ là $\\vec{u} = (4; 3)$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(1; 2)$ thuộc đường thẳng $\\Delta$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Khoảng cách từ gốc tọa độ $O(0; 0)$ đến đường thẳng $\\Delta$ bằng $1$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) VTCP/VTPT: hệ số $x, y$ là $(3; -4)$ (Đúng).\nb) $\\vec{n} = (3; -4) \\Rightarrow \\vec{u} = (4; 3)$ vì $\\vec{n}\\cdot \\vec{u} = 12 - 12 = 0$ (Đúng).\nc) $3(1) - 4(2) + 5 = 3 - 8 + 5 = 0 \\Rightarrow M \\in \\Delta$ (Đúng).\nd) $d(O, \\Delta) = \\frac{|3(0) - 4(0) + 5|}{\\sqrt{3^2 + (-4)^2}} = \\frac{5}{5} = 1$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương VII"
+  },
+  {
+    "id": "bq-10-c7-tf-002",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C): x^2 + y^2 - 4x + 6y - 12 = 0$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tọa độ tâm của đường tròn là $I(2; -3)$.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 5$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Điểm $A(5; 1)$ nằm trên đường tròn $(C)$.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Phương trình tiếp tuyến của $(C)$ tại điểm $A(5; 1)$ là $3x + 4y - 19 = 0$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) $a = 2, b = -3, c = -12 \\Rightarrow I(2; -3)$ (Đúng).\nb) $R = \\sqrt{a^2 + b^2 - c} = \\sqrt{4 + 9 - (-12)} = \\sqrt{25} = 5$ (Đúng).\nc) $5^2 + 1^2 - 4(5) + 6(1) - 12 = 25 + 1 - 20 + 6 - 12 = 0 \\Rightarrow A \\in (C)$ (Đúng).\nd) $\\vec{IA} = (3; 4)$. Tiếp tuyến: $3(x - 5) + 4(y - 1) = 0 \\Leftrightarrow 3x + 4y - 19 = 0$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương VII"
+  },
+  {
+    "id": "bq-10-c7-auto-1",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 1)$ đến đường thẳng $\\Delta: 3x - 4y + 14 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(1) + 14|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-2",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 2)$ đến đường thẳng $\\Delta: 3x - 4y + 18 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(2) + 18|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-3",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 3)$ đến đường thẳng $\\Delta: 3x - 4y + 22 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(3) + 22|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-4",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 4)$ đến đường thẳng $\\Delta: 3x - 4y + 26 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(4) + 26|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-5",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 5)$ đến đường thẳng $\\Delta: 3x - 4y + 30 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(5) + 30|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-6",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 6)$ đến đường thẳng $\\Delta: 3x - 4y + 34 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(6) + 34|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-7",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 7)$ đến đường thẳng $\\Delta: 3x - 4y + 38 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(7) + 38|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-8",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 8)$ đến đường thẳng $\\Delta: 3x - 4y + 42 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(8) + 42|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-9",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 9)$ đến đường thẳng $\\Delta: 3x - 4y + 46 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(9) + 46|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-10",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 10)$ đến đường thẳng $\\Delta: 3x - 4y + 50 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(10) + 50|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-11",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 11)$ đến đường thẳng $\\Delta: 3x - 4y + 54 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(11) + 54|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-12",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 12)$ đến đường thẳng $\\Delta: 3x - 4y + 58 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(12) + 58|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-13",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 13)$ đến đường thẳng $\\Delta: 3x - 4y + 62 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(13) + 62|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-14",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 14)$ đến đường thẳng $\\Delta: 3x - 4y + 66 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(14) + 66|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-15",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 15)$ đến đường thẳng $\\Delta: 3x - 4y + 70 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(15) + 70|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-16",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 16)$ đến đường thẳng $\\Delta: 3x - 4y + 74 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(16) + 74|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-17",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 17)$ đến đường thẳng $\\Delta: 3x - 4y + 78 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(17) + 78|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-18",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 18)$ đến đường thẳng $\\Delta: 3x - 4y + 82 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(18) + 82|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-19",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 19)$ đến đường thẳng $\\Delta: 3x - 4y + 86 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(19) + 86|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-20",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 20)$ đến đường thẳng $\\Delta: 3x - 4y + 90 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(20) + 90|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-21",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 21)$ đến đường thẳng $\\Delta: 3x - 4y + 94 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(21) + 94|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-22",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 22)$ đến đường thẳng $\\Delta: 3x - 4y + 98 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(22) + 98|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-23",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 23)$ đến đường thẳng $\\Delta: 3x - 4y + 102 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(23) + 102|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-24",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 24)$ đến đường thẳng $\\Delta: 3x - 4y + 106 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(24) + 106|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-25",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 25)$ đến đường thẳng $\\Delta: 3x - 4y + 110 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(25) + 110|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-26",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 26)$ đến đường thẳng $\\Delta: 3x - 4y + 114 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(26) + 114|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-27",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 27)$ đến đường thẳng $\\Delta: 3x - 4y + 118 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(27) + 118|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-28",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 28)$ đến đường thẳng $\\Delta: 3x - 4y + 122 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(28) + 122|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-29",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 29)$ đến đường thẳng $\\Delta: 3x - 4y + 126 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(29) + 126|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-auto-30",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, khoảng cách từ điểm $M(0; 30)$ đến đường thẳng $\\Delta: 3x - 4y + 130 = 0$ là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2$"
+      },
+      {
+        "key": "B",
+        "text": "$1$"
+      },
+      {
+        "key": "C",
+        "text": "$5$"
+      },
+      {
+        "key": "D",
+        "text": "$\\frac{5}{2}$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Khoảng cách $d(M, \\Delta) = \\frac{|3(0) - 4(30) + 130|}{\\sqrt{3^2 + (-4)^2}} = \\frac{10}{5} = 2$.",
+    "sourceCitation": "Hình học tọa độ Oxy Toán 10"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 1)^2 + (y + 2)^2 = 4$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(1; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 2$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(3; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 4$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 2)^2 + (y + 2)^2 = 9$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(2; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 3$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(5; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 5$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 3)^2 + (y + 2)^2 = 16$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(3; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 4$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(7; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 6$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 4)^2 + (y + 2)^2 = 25$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(4; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 5$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(9; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 7$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 5)^2 + (y + 2)^2 = 36$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(5; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 6$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(11; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 8$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-6",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 6)^2 + (y + 2)^2 = 49$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(6; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 7$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(13; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 9$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-7",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 7)^2 + (y + 2)^2 = 64$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(7; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 8$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(15; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 10$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-8",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 8)^2 + (y + 2)^2 = 81$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(8; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 9$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(17; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 11$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-9",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 9)^2 + (y + 2)^2 = 100$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(9; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 10$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(19; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 12$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-tf-bundle-10",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b20-phuong-trinh-duong-tron",
+    "lessonTitle": "Bài 20: Phương trình đường tròn",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Trong mặt phẳng $Oxy$, cho đường tròn $(C_m): (x - 10)^2 + (y + 2)^2 = 121$. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Tâm của đường tròn là $I(10; -2)$.",
+        "isCorrect": true,
+        "explanation": "Đúng theo phương trình chính tắc."
+      },
+      {
+        "key": "b",
+        "text": "Bán kính của đường tròn là $R = 11$.",
+        "isCorrect": true,
+        "explanation": "Bán kính bằng căn vế phải."
+      },
+      {
+        "key": "c",
+        "text": "Điểm $M(21; -2)$ nằm trên đường tròn.",
+        "isCorrect": true,
+        "explanation": "Khoảng cách IM = r."
+      },
+      {
+        "key": "d",
+        "text": "Đường tròn tiếp xúc với trục tung $Oy$ khi $i = 13$.",
+        "isCorrect": false,
+        "explanation": "Tiếp xúc khi khoảng cách đến Oy bằng R, tức là |x_I| = R."
+      }
+    ],
+    "explanation": "Áp dụng phương trình đường tròn trong mặt phẳng tọa độ Oxy.",
+    "sourceCitation": "Đề kiểm tra Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 4)$ đến đường thẳng $y = 4$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 4)$ có tung độ bằng 4$ nên thuộc đường thẳng $y = 4$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 5)$ đến đường thẳng $y = 5$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 5)$ có tung độ bằng 5$ nên thuộc đường thẳng $y = 5$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 6)$ đến đường thẳng $y = 6$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 6)$ có tung độ bằng 6$ nên thuộc đường thẳng $y = 6$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 7)$ đến đường thẳng $y = 7$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 7)$ có tung độ bằng 7$ nên thuộc đường thẳng $y = 7$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 8)$ đến đường thẳng $y = 8$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 8)$ có tung độ bằng 8$ nên thuộc đường thẳng $y = 8$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-6",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 9)$ đến đường thẳng $y = 9$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 9)$ có tung độ bằng 9$ nên thuộc đường thẳng $y = 9$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-7",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 10)$ đến đường thẳng $y = 10$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 10)$ có tung độ bằng 10$ nên thuộc đường thẳng $y = 10$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-8",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 11)$ đến đường thẳng $y = 11$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 11)$ có tung độ bằng 11$ nên thuộc đường thẳng $y = 11$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-9",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 12)$ đến đường thẳng $y = 12$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 12)$ có tung độ bằng 12$ nên thuộc đường thẳng $y = 12$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c7-sa-bundle-10",
+    "gradeNumber": 10,
+    "chapterId": "c7-phuong-phap-toa-do-mat-phang",
+    "chapterName": "Chương VII: Phương pháp tọa độ trong mặt phẳng",
+    "lessonId": "b19-phuong-trinh-duong-thang",
+    "lessonTitle": "Bài 19: Phương trình đường thẳng",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Trong mặt phẳng $Oxy$, tính khoảng cách từ điểm $A(1; 13)$ đến đường thẳng $y = 13$.",
+    "correctAnswer": "0",
+    "explanation": "Vì điểm $A(1; 13)$ có tung độ bằng 13$ nên thuộc đường thẳng $y = 13$, do đó khoảng cách bằng 0.",
+    "sourceCitation": "SGK Toán 10 KNTT"
   }
 ]

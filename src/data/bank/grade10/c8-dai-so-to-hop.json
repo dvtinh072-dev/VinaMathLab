@@ -1,581 +1,5 @@
 [
   {
-    "stem": "Giả sử bạn muốn mua một áo sơ mi cỡ hoặc cỡ Áo cỡ có màu khác nhau, áo cỡ có màu khác nhau. Hỏi có bao nhiêu sự lựa chọn (về màu áo và cỡ áo)?",
-    "explanation": "🖎 Lời giải\n\nNếu chọn cỡ áo  thì sẽ có  cách.\n\nNếu chọn cỡ áo  thì sẽ có  cách.\n\nTheo qui tắc cộng, ta có  cách chọn mua áo.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-697",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một người có cái quần khác nhau, cái áo khác nhau, chiếc cà vạt khác nhau. Hỏi có bao nhiêu cách chọn một cái quần hoặc một cái áo hoặc một cái cà vạt?",
-    "explanation": "🖎 Lời giải\n\n Nếu chọn một cái quần thì sẽ có  cách.\n\n Nếu chọn một cái áo thì sẽ có  cách.\n\n Nếu chọn một cái cà vạt thì sẽ có  cách.\n\nTheo qui tắc cộng, ta có  cách chọn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-698",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trên bàn có cây bút chì khác nhau, cây bút bi khác nhau và cuốn tập khác nhau. Một học sinh muốn chọn một đồ vật duy nhất hoặc một cây bút chì hoặc một cây bút bi hoặc một cuốn tập thì số cách chọn khác nhau bằng bao nhiêu?",
-    "explanation": "🖎 Lời giải\n\n Nếu chọn một cây bút chì thì sẽ có  cách.\n\n Nếu chọn một cây bút bi thì sẽ có  cách.\n\n Nếu chọn một cuốn tập thì sẽ có  cách.\n\nTheo qui tắc cộng, ta có cách chọn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-699",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trong một trường THPT, khối có học sinh nam và học sinh nữ. Nhà trường cần chọn một học sinh ở khối đi dự dạ hội của học sinh thành phố. Hỏi nhà trường có bao nhiêu cách chọn?",
-    "explanation": "🖎 Lời giải\n\nNếu chọn một học sinh nam có  cách.\n\nNếu chọn một học sinh nữ có  cách.\n\nTheo qui tắc cộng, ta có  cách chọn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-700",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một tổ có 4 học sinh nam và 5 học sinh nữ. Hỏi giáo viên chủ nhiệm có bao nhiêu cách chọn 1 bạn trong tổ để làm tổ trưởng?",
-    "explanation": "🖎 Lời giải\n\nĐể chọn 1 bạn nam trong 4 bạn nam để làm tổ trưởng ta có: 4 cách.\n\nĐể chọn 1 bạn nữ trong 5 bạn nữ để làm tổ trưởng ta có: 5 cách.\n\nVậy theo quy tắc cộng ta có:  cách chọn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-701",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một hộp chứa 5 viên bi xanh và 6 viên bi đỏ. Hỏi có bao nhiêu cách lấy 1 viên bi trong hộp?",
-    "explanation": "🖎 Lời giải\n\nĐể lấy 1 viên bi xanh trong hộp ta có: 5 cách.\n\nĐể lấy 1 viên bi đỏ trong hộp ta có: 6 cách. Vậy theo quy tắc cộng ta có:  cách.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-702",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Trường THPT A có 4 học sinh giỏi Toán, 5 học sinh giỏi Lý và 4 học sinh giỏi Hóa. Trong lễ sơ kết học kì I, thầy hiệu trưởng muốn chọn 1 em trong số học sinh giỏi trên để đại diện nhận giấy khen. Nhưng vì số học sinh giỏi Hóa nằm trong đội văn nghệ nên không đại diện để nhận giáy khen được. Hỏi thầy hiệu trưởng có bao nhiêu cách chọn 1 em lên nhận thưởng?",
-    "explanation": "🖎 Lời giải\n\nĐể chọn 1 học sinh giỏi môn Toán làm đại diện ta có: 4 cách. \n\nĐể chọn 1 học sinh giỏi môn Lý làm đại diện ta có: 5 cách. \n\nVậy theo quy tắc cộng ta có:  cách.\n\n\n\n🏱 Dạng 2. Quy tắc nhân\n\n\n\n✓Một công việc X bao gồm hai công đoạn  và . \n\n» Công đoạn  có thể làm theo  cách. \n\n» Với mỗi cách thực hiện công đoạn  \n\nthì công đoạn  có thể làm theo  cách. \n\nSố cách hoàn thành:  cách.\n\n\n\n\n\nPhương pháp\n\nCông việc X\n\nCó m cách\n\nCó n cách\n\nCó m.n cách\n\nThực hiện công việc\n\nCông đoạn A\n\nCông đoạn B",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-703",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ thành phố đến thành phố B có 3 con đường, từ thành phố B đến thành phố C có 4 con đường. Có bao nhiêu cách đi từ thành phố A đến thành phố C, biết phải đi qua thành phố",
-    "explanation": "🖎 Lời giải\n\nCách 1: Làm bằng cách liệt kê các con đường đi:\n\n\n\nCăn cứ vào sơ đồ trên, ta có các con đường đi là: 1a, 1b, 1c, 1d, 2a, 2b, 2c, 2d, 3a, 3b, 3c, 3d. Vậy có 12 con đường\n\nCách 2: Sử dụng quy tắc nhân\n\nĐể đi từ thành phố A đến thành phố B ta có 6 con đường để đi. Với mỗi cách đi từ thành phố A đến thành phố B ta có 4 cách đi từ thành phố B đến thành phố\t\n\nVậy có  cách đi từ thành phố A đến.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-704",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Bạn An có 3 cái áo và 4 cái quần. Hỏi bạn An có mấy cách chọn ⑴ Một cái quần hoặc một cái áo? ⑵ Một bộ quần áo ?",
-    "explanation": "🖎 Lời giải\n\n⑴ Một cái quần hoặc một cái áo? \n\nĐể chọn một cái quần hoặc một cái áo ta có hai phương án lựa chọn\n\nPhương án A- Chọn một cái quần: Có 4 cách thực hiện.\n\nPhương án B- Chọn một cái áo: Có 3 cách thực hiện.\n\nTheo quy tắc cộng ta có:  cách chọn một cái quần hoặc một cái áo.\n\n⑵ Một bộ quần áo ?\n\nĐể chọn một bộ quần áo, ta phải thực hiện hai công đoạn liên tiếp\n\nCông đoạn 1- Chọn một cái quần: Có 4 cách thực hiện\n\nCông đoạn 2- Chọn một cái áo: Có 3 cách thực hiện.\n\nTheo quy tắc nhân ta có  cách chọn một bộ quần áo.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-705",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một người có 7 áo trong đó có 3 áo trắng và 5 cà vạt trong đó có 2 cà vạt vàng. Hỏi người đó có bao nhiêu cách chọn bộ áo và cà vạt, nếu: ⑴ Chọn áo nào cũng được, và cà vạt nào cũng được. ⑵ Đã chọn áo trắng thì không chọn cà vạt vàng.",
-    "explanation": "🖎 Lời giải\n\n⑴ Chọn áo nào cũng được, và cà vạt nào cũng được.\n\nSố cách chọn 1 một bộ áo và cà vạt là: .\n\n⑵ Đã chọn áo trắng thì không chọn cà vạt vàng.\n\nSố cách chọn áo trắng không chọn cà vạt vàng là:  \n\nSố cách chọn bộ áo và cà vạt sao cho không phải áo trắng và cà vạt bất kì trong  cái cà vạt là:  \n\nSố cách chọn bộ áo và cà vạt sao cho áo trắng thì không chọn cà vạt vàng là:",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-706",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho hai đường thẳng song song . Trên lấy điểm phân biệt, trên lấy điểm phân biệt. Hỏi có bao nhiêu tam giác mà đỉnh được chọn từ đỉnh nói trên?",
-    "explanation": "🖎 Lời giải\n\nTrường hợp 1: Lấy  điểm thuộc ,  điểm thuộc :\n\nLấy điểm thứ nhất thuộc  có  cách, lấy điểm thứ hai thuộc có  cách \n\nLấy điểm thuộc  có cách.\n\nVì sự thay đổi các đỉnh trong tam giác không tạo thành một tam giác mới nên hai đỉnh lấy trên  nếu đổi thứ tự lấy không tạo thành tam giác mới.\n\nDo đó có  tam giác\n\nTrường hợp 2: Lấy  điểm thuộc ,  điểm thuộc :\n\nLấy điểm thứ nhất thuộc  có  cách, lấy điểm thứ hai thuộc có  cách \n\nLấy điểm thuộc  có  cách.\n\nVì sự thay đổi các đỉnh trong tam giác không tạo thành một tam giác mới nên hai đỉnh lấy trên  nếu đổi thứ tự lấy không tạo thành tam giác mới.\n\nDo đó có  tam giác\n\nVậy có  tam giác.\n\n\n\n🏱 Dạng 3. Bài toán đếm số\n\n\n\n» Bước 1. \tGọi số cần tìm là \n\n» Bước 2. \tLiệt kê các tính chất của số n thỏa mãn yêu cầu\n\n» Bước 3. \tDựa vào tính chất xem bài toán có chia trường hợp không\n\n» Bước 4. \tThứ tự đếm (đếm ưu tiên)\n\nThứ 1.\tĐếm các chữ số có mặt trong tính chất.\n\nThứ 2.\tĐếm chữ số đầu tiên nếu nó chưa được đếm hoặc tập hợp ban đầu có chứa số 0.\n\nThứ 3.\tĐếm các chữ số còn lại.\n\n» Bước 5. \tSử dụng quy tắc cộng hoặc quy tắc nhân.\n\n⁂ Các bài toán thường gặp:\n\nBài toán 1: Đếm số phương án liên quan đến số tự nhiên\n\nKhi lập một số tự nhiên  ta cần lưu ý:\n\n»  và .\n\n»  là số chẵn  là số chẵn\n\n»  là số lẻ  là số lẻ\n\n»  chia hết cho  chia hết cho \n\n»  chia hết cho   chia hết cho \n\n»  chia hết cho \n\n»  chia hết cho 6 là số chẵn và chia hết cho \n\n»  chia hết cho  chia hết cho \n\n»  chia hết cho  chia hết cho .\n\n»  chia hết cho tổng các chữ số ở hàng lẻ trừ đi tổng các chữ số ở hàng chẵn là một số nguyên chia hết cho .\n\n»  chia hết cho  hai chữ số tận cùng là .\n\nBài toán 2: Đếm số phương án liên quan đến kiến thức thực tế\n\nBài toán 3: Đếm số phương án liên quan đến hình học\n\n\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-707",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập hợp . Từ các phần tử của tập hợp có thể lập được bao nhiêu số tự nhiên gồm 5 chữ số khác nhau?",
-    "explanation": "🖎 Lời giải\n\nGọi số cần tìm là \n\nChọn  có 5 cách.\n\nChọn  có 4 cách.\n\nChọn  có 3 cách. \n\nChọn  có 2 cách.\n\nChọn  có 1 cách. \n\nTheo quy tắc nhân có tất cả  số",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-708",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập hợp Tìm các phần tử thuộc tập có thể lập được bao nhiêu số tự nhiên gồm 5 chữ số khác nhau?",
-    "explanation": "🖎 Lời giải\n\nGọi số cần tìm là  \n\nKhi đó để  là số tự nhiên thì  phải khác 0. Chọn  có 4 cách.\n\nChọn  có 4 cách.\n\nChọn  có 3 cách. \n\nChọn  có 2 cách.\n\nChọn  có 1 cách. \n\nTheo quy tắc nhân có tất cả  số.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-709",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập hợp . Tìm các phần tử của tập có thể lập được bao nhiêu số tự nhiên chẵn gồm 4 chữ số khác nhau?",
-    "explanation": "🖎 Lời giải\n\nGọi số cần tìm là \n\nVì  là số tự nhiên chẵn nên số tận cùng  phải là số chẵn hay  \n\nKhi đó  có 4 cách chọn. \n\nChọn  có 8 cách.\n\nChọn  có 7 cách.\n\nChọn  có 6 cách. Theo quy tắc nhân có tất cả 4.8.7.6  số thỏa mãn.\n\n\n\n🏱 Dạng 4. Bài toán chọn đồ vật\n\n\n\nĐể làm được bài toán này ta cần chú ý đến:\n\n» Có bao nhiêu đồ vật để chọn?\n\n» Chọn bao nhiêu đồ vật và có chia trường hợp hay không?\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-710",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một hộp chứa 3 quả cầu đỏ và 5 quả cầu xanh. Hỏi có bao nhiêu cách chọn ra hai quả cầu trong đó có duy nhất một quả xanh?",
-    "explanation": "🖎 Lời giải\n\nTa chọn thỏa tính chất trước: chọn 1 quả cầu xanh từ 5 quả xanh trong hộp có 5 cách. \n\nKhi chọn quả xanh rồi ta chọn 1 quả đỏ từ 3 quả đỏ có 3 cách.\n\nTheo quy tắc nhân có tất cả  cách chọn thỏa mãn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-711",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một người có 5 cái quần và 7 cái áo. Người đó cần một bộ đồ đi dự tiệc gồm một quần và một áo. Hỏi có bao nhiêu cách chọn khác nhau?",
-    "explanation": "🖎 Lời giải\n\nĐể chọn được chọn một bồ quần áo gồm một quần và một áo ta cần:\n\nChọn 1 quần trong 5 quần có 5 cách.\n\nChọn 1 áo trong 7 áo có 7 cách.\n\nTheo quy tắc nhân có tất cả  cách chọn khác nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-712",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một giá sách có 3 quyển sách tham khảo Toán khác nhau, 2 quyển sách tham khảo Lý khác nhau và 4 quyển sách tham khảo Hóa khác nhau. Hỏi có bao nhiêu cách chọn ra 3 quyển sách thảm khảo trong đó có đầu đủ ba môn?",
-    "explanation": "🖎 Lời giải\n\nĐể chọn được một bộ sách tham khảo gồm ba môn Toán, Lý, Hóa ta lần lượt chọn:\n\nChọn một quyển sách Toán có 3 cách.\n\nChọn một quyển sách Lý có 2 cách.\n\nChọn một quyển sách Hóa có 4 cách.\n\nTheo quy tắc nhân có tất cả  cách chọn sách thỏa mãn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-713",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một hộp có chứa 5 quả cầu đỏ được đánh số từ 1 đến 5 và 10 quả cầu trắng được đánh từ 1 đến 10. Hỏi có bao nhiêu cách để chọn ra hai quả cầu sao cho tổng các số trên hai quả cầu là số lẻ?",
-    "explanation": "🖎 Lời giải\n\nĐể tổng các số trên quả cầu là số lẻ thì phải bốc được hai quả cầu một quả đánh số chắn và quả cầu còn lại được đánh số lẻ.\n\n» Trường hợp 1: Bốc 1 quả cầy đỏ đánh số chẳn có 3 cách, bốc 1 quả cầu trắng đánh số lẻ có 5 cách.\n\nTheo quy tắc nhân có  cách.\n\n» Trường hợp 2: Bốc 1 quả cầu đỏ đánh số lẻ có 2 cách., bốc 1 quả cầu trắng đánh số chẵn có 5 cách.\n\nTheo quy tắc nhân có  cách.\n\nVậy có tất cả  cách.\n\n\n\n🏱 Dạng 5. Bài toán sắp xếp vị trí\n\n\n\nTa quan tâm đến việc sắp xếp vị trí theo hàng ngang (kết quả tương tự như hàng dọc). \n\nTùy theo trường hợp ta thường xếp lần lượt như sau:\n\n» Xếp thỏa mãn điều kiện trước\n\n» Xếp thỏa các người còn lại\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-714",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có 5 học sinh được xếp vào một ghế theo hàng dọc. Hỏi có bao nhiêu cách xếp ?",
-    "explanation": "🖎 Lời giải\n\nTa đánh số các ghế từ 1 đến 5.\n\nXếp 1 người đầu tiên vào 1 trong 5 ghế có 5 cách xếp.\n\nXếp người thứ hai vào 1 ghế trong 4 ghế có 4 cách xếp.\n\nXếp người thứ ba vào 1 ghế trong 3 ghế còn lại có 2 cách xếp.\n\nXếp người thứ tư vào 1 ghế trong 2 ghế còn lại có 2 cách xếp.\n\nXếp người thứ năm vào 1 ghế trong 1 ghế còn lại có 1 cách xếp.\n\nTheo quy tắc nhân có 5.4.3.2.1 = 120 cách xếp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-715",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một bàn dài gồm 8 ghế, có bao nhiêu cách xếp 8 người vào 8 ghế này sao cho Nam và Toàn luôn ngồi kề nhau.",
-    "explanation": "🖎 Lời giải\n\nĐể Toàn và Nam luôn ngồi kề nhau thì ta coi hai người này làm một người \n\nKhi đó ta xếp 7 người vào 7 ghế có 7.6.5.4.3.2.1 = 5040 cách xếp.\n\nKhi xếp xong 7 người này rồi ta đổi vị trí của Nam và Toàn cho nhau có 2 cách.\n\nTheo quy tắc nhân có tất cả 2.5040 = 10080 cách xếp.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-716",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một bàn dài gồm 6 ghế, có bao nhiêu cách xếp 3 người Nam và 3 người nữ vào 6 ghế này sao cho Nam và Nữ ngồi xen kẽ nhau.",
-    "explanation": "🖎 Lời giải\n\nTa đánh số 6 ghế liên tiếp từ 1 đến 6. xét các trưòng hợp\n\n» Trường hợp 1: Nam ngồi các ghế chẵn có 3.2.1 = 6 cách xếp và xếp Nữ ngồi ghế lẻ có 3.2.1 =6 cách xếp. Theo quy tắc nhân có tất cả 6.6 = 36 cách xếp.\n\n» Trường hợp 2: Tương tự như trường hợp một nhưng xếp Nam ngồi các ghế lẻ và Nữ ngồi các ghế chẵn ta cũng có 36 cách xếp.\n\nVậy có tất cả 36 + 36 = 72 cách xếp thỏa mãn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B1-QUY TẮC ĐẾM-P1.docx",
-    "id": "bq-10-c8-717",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập hợp . Có bao nhiêu số tự nhiên có chữ số phân biệt lấy từ tập A?",
-    "explanation": "🖎 Lời giải\n\nGọi  là số cần tìm, , .\n\nMỗi hoán vị của  phần tử tập hợp  ta được  số tự nhiên có 4 chữ số cần tìm, ví dụ như . \n\nDo vậy, ta được số.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-719",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một chồng sách gồm 4 quyển sách Toán khác nhau, 3 quyển sách Vật Lý khác nhau, 5 quyển sách Hóa Học khác nhau. Hỏi có bao nhiêu cách xếp các quyển sách trên thành một hàng ngang sao cho ⑴ Các quyển sách cùng môn thì đứng cạnh nhau. ⑵ Các quyển sách toán đứng gần nhau.",
-    "explanation": "🖎 Lời giải\n\n⑴ Các quyển sách cùng môn thì đứng cạnh nhau.\n\nXếp 4 quyển sách toán thành một nhóm đứng gần nhau có cách xếp. \n\nXếp 3 quyển sách Vật Lí thành một nhóm gần nhau có  cách xếp\n\nXếp 5 quyển sách Hóa Học thành một nhóm gần nhau có  cách xếp.\n\nXếp 3 nhóm sách trên lên giá sách có  cách xếp.\n\nVậy có 24.6.120.6 = 103680 cách xếp các cuốn sách cùng môn thì đứng cạnh nhau.\n\n⑵ Các quyển sách toán đứng gần nhau.\n\nXếp 4 quyển sách Toán thành một nhóm đứng gần nhau có  cách xếp.\n\nCoi nhóm sách Toán là một quyển sách lớn, xếp quyển sách lớn đó và 8 quyển sách còn lại có  cách xếp.\n\nVậy có  cách xếp các cuốn sách Toán đứng gần nhau.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-720",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có bao nhiêu cách sắp xếp người ngồi xung quanh một bàn tròn để dự hội thảo?",
-    "explanation": "🖎 Lời giải\n\nSắp theo nguyên tắc hoán vị vòng quanh, có  cách sắp xếp.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-721",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có bao nhiêu cách sắp xếp bạn nam và bạn nữ ngồi xung quanh một bàn tròn sao cho nam và nữ ngồi xen kẽ?",
-    "explanation": "🖎 Lời giải\n\nChọn  bạn nam ngồi cố định vào  vị trí,  bạn còn lại sẽ hoán vị vòng quanh bạn này theo nguyên tắc là nam nữ xen kẽ. \n\nKhi đó các bạn nam còn lại sẽ ở vị trí mang số  và nữ sẽ ở vị trí số  (theo chiều kim đồng hồ). \n\nỞ mỗi vị trí của mình, các nam và nữ được hoán vị cho nhau.\n\nDo đó, có  cách sắp xếp.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-722",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ các chữ số có thể lập được bao nhiêu số có chữ số, trong đó chữ số xuất hiện lần, các chữ số còn lại xuất hiện đúng một lần.",
-    "explanation": "🖎 Lời giải\n\nXếp các chữ số  thành một hàng có  cách xếp (do đổi chỗ  chữ số  thì hàng không thay đổi).\n\nVậy có  số thỏa mãn yêu cầu.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-723",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ các chữ số có thể lập được bao nhiêu số gồm chữ số, trong đó chữ số có mặt lần, các chữ số còn lại có mặt đúng một lần.",
-    "explanation": "🖎 Lời giải\n\nXếp các chữ số  thành một hàng có  cách xếp.\n\nXếp các chữ số  thành một hàng sao cho chữ số  đứng đầu có  cách xếp.\n\nVậy có  số thỏa mãn yêu cầu.\n\n\n\n\n\n🏱 Dạng 2. Chỉnh hợp trong bài toán đếm số\n\n\n\nCách giải thông thường\n\n» \tGọi số cần tìm là .\n\n» \tLiệt kê các số  thỏa mãn điều kiện đề bài. Dựa vào tính chất bài toán xem có chia trường hợp hay không?\n\n» \tThứ tự đếm và sử dụng quy tắc cộng, nhân (nếu có).\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-724",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ các chữ số có thể lập được bao nhiêu số tự nhiên gồm chữ số khác nhau?",
-    "explanation": "🖎 Lời giải\n\nMỗi số tự nhiên có  chữ số khác nhau được lập bằng cách lấy  chữ số khác nhau từ chín chữ số đã cho và xếp chúng theo một thứ tự nhất định.\n\nMỗi số như vậy được coi là một chỉnh hợp chập  của .\n\nVậy số các số đó là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-725",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "⑴ Từ các chữ số có thể lập được bao nhiêu số tự nhiên gồm chữ số khác nhau? ⑵ Tính tổng của tất cả các số tìm được ở câu trên.",
-    "explanation": "🖎 Lời giải\n\n⑴ Từ các chữ số  có thể lập được bao nhiêu số tự nhiên gồm  chữ số khác nhau?\n\nMỗi số tự nhiên có bốn chữ số khác nhau được lập bằng cách lấy bốn chữ số khác nhau từ chín chữ số đã cho và xếp chúng theo một thứ tự nhất định.\n\nMỗi số như vậy được coi là một chỉnh hợp chập  của .\n\nVậy số các số đó là .\n\n⑵ Tính tổng của tất cả các số tìm được ở câu trên.\n\nTa chia  số ở câu ⑴ thành  cặp số có dạng  trong đó .\n\nTổng mỗi cặp như vậy đều bằng .\n\nVậy tổng của tất cả các số đó bằng .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-726",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập . ⑴ Từ tập có thể lập được bao nhiêu số gồm có chữ số khác nhau và mỗi số chứa chữ số ? ⑵ Trong các số trên, có bao nhiêu số không chia hết cho ?",
-    "explanation": "🖎 Lời giải\n\n⑴ Từ tập  có thể lập được bao nhiêu số gồm có  chữ số khác nhau và mỗi số chứa chữ số ?\n\nMột số gồm 6 chữ số phân biệt hình thành từ :, \n\nĐể số tìm được phải có mặt chữ số 5, ta thấy:  có 6 cách chọn.\n\nMỗi  bộ số dành cho 5 vị trí còn lại ứng với một chỉnh hợp chập 5 của các phần tử của tập  có 8 phần tử. Suy ra có  cách chọn. \n\nNhư vậy ta được  số. \n\n⑵ Trong các số trên, có bao nhiêu số không chia hết cho ?\n\nTrong các số trên, những số chia hết cho 5 có , tức là có  số. \n\nVậy số các số tìm thấy không chia hết cho 5 là  số.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-727",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho tập . Từ tập có thể lập được bao nhiêu số gồm 3 chữ số khác nhau?",
-    "explanation": "🖎 Lời giải\n\nSố gồm 3 chữ số khác nhau được lập từ :  với  và  \n\nTrong đó  nên có 4 cách chọn .\n\nMỗi bộ  ứng với một chỉnh hợp chập 2 của các phần tử của tập : có 4 phần tử nên có   cách chọn. \n\nVậy số các số thỏa mãn đề bài là  ( số).",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-728",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số các số tự nhiên có 4 chữ số đôi một khác nhau được lập thành từ các số sao cho trong mỗi số đó đều có mặt ít nhất chữ số 1 hoặc 2 ?",
-    "explanation": "🖎 Lời giải\n\nGọi số tự nhiên có 4 chữ số khác nhau:   với  có 5 cách, vậy có  số.\n\nGọi số tự nhiên có 4 chữ số khác nhau, không chứa 1 và 2 là   với ,  có 3 cách chọn, 3 số còn lại có  cách, vậy có  cách.\n\nVậy số các số cần tìm là  số.\n\n\n\n🏱 Dạng 3. Tổ hợp\n\n\n\nKhi giải bài toán chọn trên một tập hợp X có n phần tử, ta sẽ dùng tổ hợp nếu có 2 dấu hiệu sau:\n\n» Chỉ chọn  phần tử trong n phần tử của  ().\n\n» Không phụ thuộc vào thứ tự sắp xếp các phần tử đã chọn.\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-729",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ một đội tuyển bóng đá gồm 20 cầu thủ người ta cần cử 3 cầu thủ dự lễ bốc thăm chia bảng thi đấu. Hỏi có bao nhiêu cách cử ?",
-    "explanation": "🖎 Lời giải\n\nMỗi cách cử ra 3 cầu thủ dự lễ bốc thăm chia bảng thi đấu là một tổ hợp chập 3 của 20 phần tử. Do đó số cách cử là  cách.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-730",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một tổ gồm 8 học sinh nam và 6 học sinh nữ. Cần lấy một nhóm 5 người trong đó có 2 học sinh nữ. Hỏi có bao nhiêu cách chọn ?",
-    "explanation": "🖎 Lời giải\n\nLấy một nhóm 5 người trong đó có 2 nữ và 3 nam được thực hiện theo 2 công đoạn.\n\nChọn 2 nữ trong 6 nữ có  cách.\n\nChọn 3 nữ trong 8 nữ có  cách. \n\nTheo quy tắc nhân ta có  cách chọn.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-731",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Một hộp đựng 5 viên bi màu xanh, 7 viên bi màu vàng. Có bao nhiêu cách lấy ra 6 viên bi bất kỳ ?",
-    "explanation": "🖎 Lời giải\n\nSố cách lấy ra 6 viên bất kỳ (không phân biệt màu) trong 12 viên bi là một tổ hợp chập 6 của 12 viên bi.\n\nVậy ta có  cách.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-732",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có 15 đội bóng đá thi đấu theo thể thức vòng tròn tính điểm. Hỏi cần phải tổ chức bao nhiêu trận đấu ?",
-    "explanation": "🖎 Lời giải\n\nLấy hai đội bất kỳ trong 15 đội bóng tham gia thi đấu ta được một trận đấu.\n\nVậy số trận đấu chính là một tổ hợp chập 2 của 15 phần tử ( đội bóng đá).\n\nNhư vậy, ta có  trận đấu.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-733",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Từ 5 bông hồng vàng, 3 bông hồng trắng, 4 bông hồng đỏ (các bông hồng xem như đôi một khác nhau). Người ta muốn chọn ra 1 bó hoa hồng gồm 7 bông. Có bao nhiêu cách chọn. ⑴ 1 bó hoa trong đó có đúng một bông hồng đỏ. ⑵ 1 bó hoa trong đó có ít nhất 3 bông hồng vàng và ít nhất 3 bông hồng đỏ.",
-    "explanation": "🖎 Lời giải\n\n⑴ 1 bó hoa trong đó có đúng một bông hồng đỏ.\n\nChọn 1 bó hoa gồm 7 bông, trong đó có đúng 1 bông hồng đỏ, 6 bông hồng còn lại chọn trong 8 bông (gồm vàng và trắng) . \n\nSố cách chọn:  cách.\n\n⑵ 1 bó hoa trong đó có ít nhất 3 bông hồng vàng và ít nhất 3 bông hồng đỏ.\n\nTrường hợp 1: Chọn 3 bông vàng, 3 bông đỏ và 1 bông trắng, có  cách.\n\nTrường hợp 2: Chọn 4 bông vàng và 3 bông đỏ , có  cách.\n\nTrường hợp 3: Chọn 3 bông vàng và 4 bông đỏ , có   cách.\n\nTheo quy tắc cộng có: ++.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-734",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Có 9 viên bi xanh, 5 viên bi đỏ, 4 bi vàng có kích thước đôi một khác nhau. ⑴ Có bao nhiêu cách chọn ra 6 viên bi, trong đó có đúng 2 viên bi đỏ. ⑵ Có bao nhiêu cách chọn ra 6 viên bi, trong đó số bi xanh bằng số bi đỏ.",
-    "explanation": "🖎 Lời giải\n\n⑴ Có bao nhiêu cách chọn ra 6 viên bi, trong đó có đúng 2 viên bi đỏ.\n\nBước 1: Chọn 2 bi đỏ trong 5 bi đỏ, có  cách chọn .\n\nBước 2: Có  cách chọn 4 bi trong 13 viên bi xanh và vàng.\n\nVậy ta có  cách.\n\n⑵ Có bao nhiêu cách chọn ra 6 viên bi, trong đó số bi xanh bằng số bi đỏ.\n\nTrường hợp 1: Chọn 3 xanh, 3 đỏ, ta có  cách.\n\nTrường hợp 2: Chọn  2 xanh, 2 đỏ, 2 vàng, ta có  cách.\n\nTrường hợp 3: Chọn 1 xanh, 1 đỏ, 4 vàng, ta có  cách.\n\nTheo quy tắc cộng ta có:  cách.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B2-HOÁN VỊ-TỔ HỢP-CHỈNH HỢP-P1.docx",
-    "id": "bq-10-c8-735",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Khai triển các biểu thức sau: ⑴ ⑵ ⑶ ⑷ ⑸ ⑹",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nÁp dụng công thức ta được\n\n⑵ \n\nTa có .\n\n⑶ \n\nTa có: .\n\n⑷ \n\nTa có: .\n\n⑸ \n\n.\n\n\n\n⑹ \n\nTa có \n\n\n\n.",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-737",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Khai triển các biểu thức sau: ⑴ ⑵ ⑶",
-    "explanation": "🖎 Lời giải\n\n⑴ \n\nTa có: \n\n\n\n⑵ \n\nTa có: \n\n\n\n⑶ \n\nTa có: \n\n\n\n\n\n\n\n\n\n🏱 Dạng 2. Xác định một hệ số hay một số hạng trong khai triển\n\n\n\n» \tXác định số hạng tổng quát  trong khai triển  và kết hợp với yêu cầu của bài toán để thiết lập một phương trình, từ đó tìm ra kết quả mà bài toán yêu cầu.\n\nLưu ý:  là số hạng thứ  trong khai triển  theo lũy thừa tăng dần của . \n\n» \tĐối cới các biểu thức dạng  ta biến đổi  rồi áp dụng khai triển nhị thức Newton 2 lần và tìm ra số hạng tổng quát. \n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-738",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số hạng chứa trong khai triển .",
-    "explanation": "🖎 Lời giải\n\nTa xét khai triển  có số hạng tổng quát là\n\n\n\nSố hạng chứa  trong khai triển ứng với giá trị  thỏa mãn :.\n\nVậy số hạng chứa  trong khai triển là: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-739",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm hệ số của số hạng chứa trong khai triển .",
-    "explanation": "🖎 Lời giải\n\nTa xét khai triển  có số hạng tổng quát là\n\n.\n\nSố hạng chứa  trong khai triển ứng với giá trị  thỏa mãn :.\n\nVậy hệ số của số hạng chứa  trong khai triển là: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-740",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm hệ số của số hạng không chứa trong khai triển với .",
-    "explanation": "🖎 Lời giải\n\nTa xét khai triển  ( với ) có số hạng tổng quát là\n\n .\n\nSố hạng không chứa  trong khai triển tương ứng với giá trị  thỏa mãn: .\n\nVậy hệ số của số hạng không chứa  trong khai triển là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-741",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số hạng không chứa trong khai triển với .",
-    "explanation": "🖎 Lời giải\n\nTa xét khai triển  (với ) có số hạng tổng quát là\n\n\n\nSố hạng không chứa  trong khai triển tương ứng với giá trị  thỏa mãn: .\n\nVậy số hạng không chứa  trong khai triển là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-742",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Cho khai triển thỏa mãn . Tìm giá trị của số nguyên dương",
-    "explanation": "🖎 Lời giải\n\nTa có: . \n\nSuy ra: . \n\nThay , ,  vào giả thiết ta có: \n\n.\n\nDo  là số nguyên dương nên .\n\n\n\n🏱 Dạng 3. Tính tổng – Chứng minh đẳng thức \n\n\n\n» \tSử dụng tính chất của số .\n\nCho số nguyên dương  thỏa mãn ta có các tính chất sau :\n\nTính chất 1. .\n\nTính chất 2. .\n\nTính chất 3. .\n\nTính chất 4. .\n\n» \tMột số kết quả hay sử dụng khi chứng minh đẳng thức , tính tổng có sử dụng công thức nhị thức Newton : \n\nKết quả 1 : .\n\nKết quả 2 : \n\nKết quả 3 : \n\nKết quả 4 : .\n\n\n\n\n\nPhương pháp",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-743",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Chứng minh đẳng thức .",
-    "explanation": "🖎 Lời giải\n\nTa có .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-744",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Rút gọn biểu thức",
-    "explanation": "🖎 Lời giải\n\nTa có \n\nXét nhị thức \n\nCho  .\n\nVậy: .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-745",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
-    "stem": "Tìm số hạng không chứa trong khai triển (với khác 0) biết",
-    "explanation": "🖎 Lời giải\n\nTa có kết quả  .  Do đó  .\n\nSuy ra  .\n\nSố hạng tổng quát trong khai triển trên là .\n\nSố hạng không chứa  ứng với  . \n\nVậy số hạng không chứa  là .",
-    "type": "essay",
-    "level": "TH",
-    "chapterId": "c8",
-    "chapterName": "Chương VIII: Đại số tổ hợp",
-    "sourceCitation": "C8-B3-NHỊ THỨC NEWTON-P1.docx",
-    "id": "bq-10-c8-746",
-    "gradeNumber": 10,
-    "createdAt": "2026-09-14T05:01:55.265Z"
-  },
-  {
     "id": "bq-10-c8-mc-1789364788752-mfvl",
     "gradeNumber": 10,
     "chapterId": "c8-dai-so-to-hop",
@@ -2404,5 +1828,1295 @@
     "explanation": "Áp dụng định lý và tính chất liên quan để chọn phương án đúng.",
     "sourceCitation": "Tài liệu dự án Toán 10: Chương VIII: Đại số tổ hợp",
     "createdAt": "2026-09-14T05:46:28.754Z"
+  },
+  {
+    "id": "bq-10-c8-tf-001",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b23-quy-tac-dem",
+    "lessonTitle": "Bài 23: Quy tắc đếm",
+    "type": "true_false",
+    "level": "TH",
+    "stem": "Một hộp chứa 5 quả cầu đỏ khác nhau và 7 quả cầu xanh khác nhau. Xét tính đúng sai:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có 12 cách chọn ra 1 quả cầu từ hộp.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Có 35 cách chọn ra 2 quả cầu khác màu (1 đỏ và 1 xanh).",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Có $C_{12}^2 = 66$ cách chọn ra 2 quả cầu tùy ý từ hộp.",
+        "isCorrect": true
+      },
+      {
+        "key": "d",
+        "text": "Có 30 cách chọn ra 2 quả cầu cùng màu.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "a) Quy tắc cộng: $5 + 7 = 12$ cách (Đúng).\nb) Quy tắc nhân: $5\\cdot 7 = 35$ cách (Đúng).\nc) Số cách chọn 2 quả từ 12 quả là $C_{12}^2 = \\frac{12\\cdot 11}{2} = 66$ (Đúng).\nd) Số cách chọn 2 quả cùng màu là $C_5^2 + C_7^2 = 10 + 21 = 31 \\ne 30$ (Sai).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương VIII"
+  },
+  {
+    "id": "bq-10-c8-tf-002",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Xét khai triển nhị thức Newton $P(x) = (2x - 1)^5$. Xét tính đúng sai của các khẳng định sau:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Khai triển $P(x)$ có tất cả 6 số hạng.",
+        "isCorrect": true
+      },
+      {
+        "key": "b",
+        "text": "Hệ số của số hạng chứa $x^5$ là $32$.",
+        "isCorrect": true
+      },
+      {
+        "key": "c",
+        "text": "Số hạng chứa $x^3$ trong khai triển là $-80x^3$.",
+        "isCorrect": false
+      },
+      {
+        "key": "d",
+        "text": "Tổng tất cả các hệ số trong khai triển bằng $1$.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "a) Khai triển lũy thừa 5 có $5 + 1 = 6$ số hạng (Đúng).\nb) $C_5^0 (2x)^5 (-1)^0 = 32x^5$ (Đúng).\nc) Số hạng chứa $x^3$ là $C_5^2 (2x)^3 (-1)^2 = 10 \\cdot 8x^3 \\cdot 1 = 80x^3$ (hệ số mang dấu dương, Sai khi bảo âm).\nd) Thay $x = 1 \\Rightarrow P(1) = (2\\cdot 1 - 1)^5 = 1^5 = 1$ (Đúng).",
+    "sourceCitation": "SGK Toán 10 Kết nối tri thức - Chương VIII"
+  },
+  {
+    "id": "bq-10-c8-auto-1",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 4 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{4}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{4}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$4^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 4: $C_{4}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-2",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 5 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{5}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{5}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$5^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 5: $C_{5}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 6 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{6}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{6}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$6^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 6: $C_{6}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-4",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 7 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{7}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{7}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$7^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 7: $C_{7}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-5",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 8 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{8}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{8}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$8^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 8: $C_{8}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-6",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 9 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{9}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{9}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$9^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 9: $C_{9}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 10 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{10}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{10}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$10^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 10: $C_{10}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-8",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 11 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{11}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{11}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$11^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 11: $C_{11}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-9",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 12 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{12}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{12}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$12^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 12: $C_{12}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-10",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 13 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{13}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{13}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$13^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 13: $C_{13}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-11",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 14 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{14}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{14}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$14^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 14: $C_{14}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-12",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 15 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{15}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{15}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$15^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 15: $C_{15}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-13",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 16 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{16}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{16}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$16^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 16: $C_{16}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-14",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 17 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{17}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{17}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$17^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 17: $C_{17}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-15",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 18 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{18}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{18}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$18^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 18: $C_{18}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-16",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 19 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{19}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{19}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$19^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 19: $C_{19}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-17",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 20 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{20}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{20}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$20^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 20: $C_{20}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-18",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 21 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{21}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{21}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$21^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 21: $C_{21}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-19",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 22 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{22}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{22}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$22^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 22: $C_{22}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-20",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 23 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{23}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{23}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$23^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 23: $C_{23}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-21",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 24 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{24}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{24}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$24^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 24: $C_{24}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-22",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 25 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{25}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{25}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$25^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 25: $C_{25}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-23",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "NB",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 26 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{26}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{26}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$26^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 26: $C_{26}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-auto-24",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "multiple_choice",
+    "level": "TH",
+    "stem": "Có bao nhiêu cách chọn ra 2 học sinh từ một nhóm gồm 27 học sinh để đi trực nhật?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$C_{27}^2$"
+      },
+      {
+        "key": "B",
+        "text": "$A_{27}^2$"
+      },
+      {
+        "key": "C",
+        "text": "$2!$"
+      },
+      {
+        "key": "D",
+        "text": "$27^2$"
+      }
+    ],
+    "correctKey": "A",
+    "explanation": "Chọn 2 người không phân biệt thứ tự chức vụ là một tổ hợp chập 2 của 27: $C_{27}^2$.",
+    "sourceCitation": "Đại số tổ hợp Toán 10"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 5 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $5 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 5$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 5 bạn nam thành một hàng dọc là $5!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{5}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 6 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $6 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 6$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 6 bạn nam thành một hàng dọc là $6!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{6}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 7 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $7 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 7$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 7 bạn nam thành một hàng dọc là $7!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{7}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 8 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $8 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 8$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 8 bạn nam thành một hàng dọc là $8!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{8}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 9 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $9 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 9$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 9 bạn nam thành một hàng dọc là $9!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{9}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-6",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 10 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $10 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 10$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 10 bạn nam thành một hàng dọc là $10!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{10}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 11 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $11 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 11$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 11 bạn nam thành một hàng dọc là $11!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{11}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-tf-bundle-8",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b24-hoan-vi-chinh-hop-to-hop",
+    "lessonTitle": "Bài 24: Hoán vị, chỉnh hợp và tổ hợp",
+    "type": "true_false",
+    "level": "VD",
+    "stem": "Một lớp học có 12 bạn nam và 6 bạn nữ. Xét tính đúng sai của các phương án chọn ban cán sự lớp:",
+    "subQuestions": [
+      {
+        "key": "a",
+        "text": "Có $12 + 6$ cách chọn ra 1 bạn làm lớp trưởng.",
+        "isCorrect": true,
+        "explanation": "Quy tắc cộng."
+      },
+      {
+        "key": "b",
+        "text": "Có $6 \\times 12$ cách chọn 1 bạn nam và 1 bạn nữ.",
+        "isCorrect": true,
+        "explanation": "Quy tắc nhân."
+      },
+      {
+        "key": "c",
+        "text": "Số cách xếp 12 bạn nam thành một hàng dọc là $12!$.",
+        "isCorrect": true,
+        "explanation": "Số hoán vị của n phần tử."
+      },
+      {
+        "key": "d",
+        "text": "Số cách chọn 2 bạn nam có thứ tự (lớp phó học tập và lớp phó lao động) là $C_{12}^2$.",
+        "isCorrect": false,
+        "explanation": "Phải là chỉnh hợp A_n^2 vì có phân biệt thứ tự nhiệm vụ."
+      }
+    ],
+    "explanation": "Học sinh vận dụng quy tắc cộng, nhân, hoán vị, chỉnh hợp và tổ hợp.",
+    "sourceCitation": "Đề thi Olympic Toán học trẻ"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-1",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^3$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "4",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 3$, số số hạng là $3 + 1 = 4$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-2",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^4$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "5",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 4$, số số hạng là $4 + 1 = 5$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-3",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^5$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "6",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 5$, số số hạng là $5 + 1 = 6$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-4",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^6$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "7",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 6$, số số hạng là $6 + 1 = 7$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-5",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^7$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "8",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 7$, số số hạng là $7 + 1 = 8$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-6",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^8$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "9",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 8$, số số hạng là $8 + 1 = 9$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-7",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^9$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "10",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 9$, số số hạng là $9 + 1 = 10$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-8",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^10$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "11",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 10$, số số hạng là $10 + 1 = 11$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-9",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^11$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "12",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 11$, số số hạng là $11 + 1 = 12$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
+  },
+  {
+    "id": "bq-10-c8-sa-bundle-10",
+    "gradeNumber": 10,
+    "chapterId": "c8-dai-so-to-hop",
+    "chapterName": "Chương VIII: Đại số tổ hợp",
+    "lessonId": "b25-nhi-thuc-newton",
+    "lessonTitle": "Bài 25: Nhị thức Newton",
+    "type": "short_answer",
+    "level": "TH",
+    "stem": "Khai triển nhị thức Newton $(x + 1)^12$ có tất cả bao nhiêu số hạng?",
+    "correctAnswer": "13",
+    "explanation": "Khai triển $(a + b)^n$ có tất cả $n + 1$ số hạng. Với $n = 12$, số số hạng là $12 + 1 = 13$.",
+    "sourceCitation": "SGK Toán 10 KNTT"
   }
 ]

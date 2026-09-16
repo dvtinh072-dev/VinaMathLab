@@ -73,6 +73,7 @@ import { ExamMatrix, MatrixTopicItem, PrebuiltMatrix } from "@/types/examMatrix"
 import { PREBUILT_EXAM_MATRICES } from "@/data/prebuiltMatrices";
 import { parseMatrixFromRawText } from "@/lib/matrixExamGenerator";
 import { ExamPreviewModal } from "@/components/exam/ExamPreviewModal";
+import { QuestionBankViewerModal } from "@/components/exam/QuestionBankViewerModal";
 import { exportExamToWord } from "@/lib/exportExamWord";
 
 export default function GiaoVienPage() {
@@ -136,6 +137,7 @@ export default function GiaoVienPage() {
   const [examCreationSuccess, setExamCreationSuccess] = useState<string | null>(null);
 
   // Bank Exam Drawer States
+  const [isBankViewerModalOpen, setIsBankViewerModalOpen] = useState(false);
   const [isBankDrawModalOpen, setIsBankDrawModalOpen] = useState(false);
   const [bankCatalog, setBankCatalog] = useState<QuestionBankCatalog | null>(null);
   const [isLoadingBankCatalog, setIsLoadingBankCatalog] = useState(false);
@@ -1676,6 +1678,14 @@ export default function GiaoVienPage() {
 
             <div className="flex flex-wrap items-center gap-2.5 shrink-0">
               <button
+                onClick={() => setIsBankViewerModalOpen(true)}
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 text-white font-black text-xs transition-all shadow-lg shadow-purple-500/25 cursor-pointer flex items-center gap-2 shrink-0 hover:scale-[1.02] active:scale-95"
+              >
+                <BookOpen className="w-4 h-4 text-amber-300" />
+                <span>📚 Xem Thử Ngân Hàng Đề (1.197 Câu)</span>
+              </button>
+
+              <button
                 onClick={() => {
                   setIsBankDrawModalOpen(true);
                   if (assignedClasses.length > 0 && !bankTargetClass) {
@@ -2799,23 +2809,33 @@ Câu 3: Tìm x...
                   <Dices className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base sm:text-lg font-black text-white flex items-center gap-2">
+                  <h3 className="text-base sm:text-lg font-black text-white flex items-center gap-2 flex-wrap">
                     <span>Rút Đề Tự Động Từ Ngân Hàng Câu Hỏi (Khối 10)</span>
                     <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">
-                      813 câu hỏi độc quyền
+                      {bankCatalog?.totalQuestions || 1197} câu hỏi hoàn hảo
                     </span>
                   </h3>
                   <p className="text-xs text-slate-400">
-                    Trích xuất câu hỏi ngẫu nhiên theo số lượng, mức độ và phạm vi chương. 100% không trùng bài học và bài luyện tập.
+                    Trích xuất câu hỏi ngẫu nhiên theo số lượng, mức độ và phạm vi chương. 100% chuẩn cấu trúc Bộ GD&ĐT 2025.
                   </p>
                 </div>
               </div>
-              <button
-                onClick={() => setIsBankDrawModalOpen(false)}
-                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setIsBankViewerModalOpen(true)}
+                  className="px-3 py-1.5 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 border border-purple-400/40 text-purple-200 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-amber-300" />
+                  <span>Xem Thử Ngân Hàng Đề</span>
+                </button>
+                <button
+                  onClick={() => setIsBankDrawModalOpen(false)}
+                  className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
             {/* Presets rút nhanh */}
@@ -3711,6 +3731,22 @@ Câu 3: Tìm x...
             </div>
           </div>
         </div>
+      )}
+
+      {/* Modal Khám Phá & Xem Thử Ngân Hàng Câu Hỏi Toán 10 (1.197 Câu Chuẩn) */}
+      {isBankViewerModalOpen && (
+        <QuestionBankViewerModal
+          onClose={() => setIsBankViewerModalOpen(false)}
+          onOpenDrawModal={(chapterId) => {
+            setIsBankViewerModalOpen(false);
+            if (chapterId) {
+              setBankScope("custom");
+              setBankSelectedChapters([chapterId]);
+            }
+            setIsBankDrawModalOpen(true);
+            fetchBankCatalog(10);
+          }}
+        />
       )}
 
       {/* Modal Xem Trước Đề Thi & Tải File Word Chuẩn Equation / MathType */}

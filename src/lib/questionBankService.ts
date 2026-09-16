@@ -198,20 +198,36 @@ export function drawExamFromBank(config: DrawExamConfig): {
 
   // Phần II: Trắc nghiệm Đúng / Sai (TF)
   selectedTF.forEach((q) => {
-    const defaultStatements = [
-      { key: "a" as const, text: "Mệnh đề hoặc phát biểu thứ nhất", isCorrect: true },
-      { key: "b" as const, text: "Mệnh đề hoặc phát biểu thứ hai", isCorrect: false },
-      { key: "c" as const, text: "Mệnh đề hoặc phát biểu thứ ba", isCorrect: true },
-      { key: "d" as const, text: "Mệnh đề hoặc phát biểu thứ tư", isCorrect: false },
-    ];
-    let subQuestions = defaultStatements;
-    if (q.statements && q.statements.length > 0) {
+    let subQuestions: { key: "a" | "b" | "c" | "d"; text: string; isCorrect: boolean }[] = [];
+    const anyQ = q as any;
+
+    if (anyQ.subQuestions && Array.isArray(anyQ.subQuestions) && anyQ.subQuestions.length > 0) {
+      subQuestions = anyQ.subQuestions.slice(0, 4).map((st: any, idx: number) => ({
+        key: (st.key || ["a", "b", "c", "d"][idx]) as "a" | "b" | "c" | "d",
+        text: st.text || "",
+        isCorrect: Boolean(st.isCorrect),
+      }));
+    } else if (anyQ.subItems && Array.isArray(anyQ.subItems) && anyQ.subItems.length > 0) {
+      subQuestions = anyQ.subItems.slice(0, 4).map((st: any, idx: number) => ({
+        key: (st.id || ["a", "b", "c", "d"][idx]) as "a" | "b" | "c" | "d",
+        text: st.text || st.prompt || "",
+        isCorrect: Boolean(st.correctAnswer ?? st.isCorrect),
+      }));
+    } else if (q.statements && Array.isArray(q.statements) && q.statements.length > 0) {
       subQuestions = q.statements.slice(0, 4).map((st, idx) => ({
         key: ["a", "b", "c", "d"][idx] as "a" | "b" | "c" | "d",
         text: st.text,
         isCorrect: Boolean(st.isCorrect),
       }));
+    } else {
+      subQuestions = [
+        { key: "a" as const, text: "Khẳng định thứ nhất là đúng", isCorrect: true },
+        { key: "b" as const, text: "Khẳng định thứ hai là sai", isCorrect: false },
+        { key: "c" as const, text: "Khẳng định thứ ba là đúng", isCorrect: true },
+        { key: "d" as const, text: "Khẳng định thứ tư là sai", isCorrect: false },
+      ];
     }
+
     const tfq: TrueFalseQuestionData = {
       id: q.id,
       type: "true_false",

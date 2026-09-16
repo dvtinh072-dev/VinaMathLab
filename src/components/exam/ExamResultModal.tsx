@@ -50,61 +50,61 @@ export function ExamResultModal({ exam, mcAnswers, tfAnswers, saAnswers, onClose
   const maxPossibleScore = 10.0;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-card w-full max-w-lg rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-2xl space-y-6 relative animate-in fade-in zoom-in-95 duration-200">
+    <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-[#131B2E] w-full max-w-lg rounded-3xl border-2 border-cyan-500/40 p-6 md:p-8 shadow-2xl space-y-6 relative animate-in fade-in zoom-in-95 duration-200 text-white">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-full"
+          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-full bg-slate-900/60 hover:bg-slate-800 transition-all cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
 
         <div className="text-center space-y-2">
-          <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto shadow-inner">
+          <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 flex items-center justify-center mx-auto shadow-inner">
             <Award className="w-8 h-8" />
           </div>
-          <h3 className="font-extrabold text-2xl text-slate-900 dark:text-slate-100">
+          <h3 className="font-extrabold text-2xl text-white">
             Kết Quả Bài Thi VinaMath
           </h3>
-          <p className="text-xs text-slate-500">{exam.title}</p>
+          <p className="text-xs text-slate-400">{exam.title}</p>
         </div>
 
         {/* Score Badge */}
-        <div className="p-5 rounded-2xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-900/50 text-center space-y-1">
-          <div className="text-xs uppercase tracking-wider font-bold text-blue-700 dark:text-blue-400">
+        <div className="p-5 rounded-2xl bg-[#0B1120] border border-cyan-500/40 text-center space-y-1 shadow-inner">
+          <div className="text-xs uppercase tracking-wider font-bold text-cyan-400">
             Tổng điểm đạt được (Thang 10)
           </div>
-          <div className="text-4xl md:text-5xl font-black text-primary tracking-tight">
-            {totalScore} <span className="text-xl font-bold text-slate-400">/ 10.0</span>
+          <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
+            <span className="text-cyan-400">{totalScore}</span> <span className="text-xl font-bold text-slate-500">/ 10.0</span>
           </div>
         </div>
 
         {/* Breakdown by 3 MOET Formats */}
         <div className="space-y-2 text-xs">
-          <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex justify-between items-center">
-            <span>Phần I (Trắc nghiệm 4 lựa chọn):</span>
-            <strong className="text-primary font-bold">{scorePart1.toFixed(2)} đ ({correctPart1} câu đúng)</strong>
+          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+            <span className="font-medium">Phần I (Trắc nghiệm 4 lựa chọn):</span>
+            <strong className="text-cyan-400 font-bold">{scorePart1.toFixed(2)} đ ({correctPart1} câu đúng)</strong>
           </div>
-          <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex justify-between items-center">
-            <span>Phần II (Trắc nghiệm Đúng / Sai):</span>
-            <strong className="text-purple-600 font-bold">{scorePart2.toFixed(2)} đ</strong>
+          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+            <span className="font-medium">Phần II (Trắc nghiệm Đúng / Sai):</span>
+            <strong className="text-purple-400 font-bold">{scorePart2.toFixed(2)} đ</strong>
           </div>
-          <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex justify-between items-center">
-            <span>Phần III (Trả lời ngắn / Điền số):</span>
-            <strong className="text-amber-600 font-bold">{scorePart3.toFixed(2)} đ ({correctPart3} câu đúng)</strong>
+          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+            <span className="font-medium">Phần III (Trả lời ngắn / Điền số):</span>
+            <strong className="text-amber-400 font-bold">{scorePart3.toFixed(2)} đ ({correctPart3} câu đúng)</strong>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-3 pt-3">
+        <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
           <button
             onClick={onRestart}
-            className="w-full sm:flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs sm:text-sm font-extrabold bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 shadow-[0_4px_0_0_#cbd5e1] dark:shadow-[0_4px_0_0_#1e293b] hover:from-slate-50 hover:to-slate-150 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2 transition-all duration-150 select-none"
+            className="w-full sm:flex-1 py-3 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white text-xs sm:text-sm font-extrabold bg-slate-900 hover:bg-slate-850 flex items-center justify-center gap-2 transition-all duration-150 select-none cursor-pointer"
           >
             <RotateCcw className="w-4 h-4" /> Làm lại bài thi
           </button>
           <button
             onClick={onClose}
-            className="w-full sm:flex-1 py-3 rounded-2xl bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white text-xs sm:text-sm font-black border-t border-blue-400 shadow-[0_4px_0_0_#1e40af] hover:from-blue-500 hover:to-indigo-600 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2 transition-all duration-150 select-none"
+            className="w-full sm:flex-1 py-3 rounded-xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-black border border-cyan-400/40 shadow-lg shadow-cyan-900/30 flex items-center justify-center gap-2 transition-all duration-150 select-none cursor-pointer"
           >
             <CheckCircle2 className="w-4 h-4" /> Xem chi tiết lời giải
           </button>

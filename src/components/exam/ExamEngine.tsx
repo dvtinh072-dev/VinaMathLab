@@ -102,13 +102,13 @@ export function ExamEngine({ exam }: Props) {
   const unansweredCount = exam.totalQuestions - answeredCount;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 bg-[#090D16] text-white p-3 sm:p-6 rounded-3xl border sm:border-2 border-slate-800/80 shadow-2xl">
       {/* Header Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-3xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-[#131B2E] border border-cyan-500/30 shadow-xl">
         <div className="flex items-center gap-3">
           <Link
             href="/luyen-thi"
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-2xl bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-[0_3px_0_0_#cbd5e1] dark:shadow-[0_3px_0_0_#0f172a] hover:from-slate-50 hover:to-slate-150 active:translate-y-0.5 active:shadow-none text-xs font-extrabold select-none transition-all duration-150 shrink-0"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 hover:border-cyan-400 shadow-sm active:translate-y-0.5 text-xs font-extrabold select-none transition-all shrink-0"
             title="Rời phòng thi"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
@@ -116,36 +116,36 @@ export function ExamEngine({ exam }: Props) {
           </Link>
 
           <div>
-            <h2 className="font-extrabold text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-100">
+            <h2 className="font-extrabold text-base sm:text-lg md:text-xl text-white">
               {exam.title}
             </h2>
-            <div className="text-xs text-slate-500 flex flex-wrap items-center gap-2 mt-0.5">
-              <span>Đã làm: <strong className="text-emerald-600 dark:text-emerald-400">{answeredCount}/{exam.totalQuestions} câu</strong></span>
+            <div className="text-xs text-slate-400 flex flex-wrap items-center gap-2 mt-0.5">
+              <span>Đã làm: <strong className="text-cyan-400">{answeredCount}/{exam.totalQuestions} câu</strong></span>
               <span>•</span>
-              <span>Thời gian: <strong>{exam.durationMinutes} phút</strong></span>
+              <span>Thời gian: <strong className="text-slate-200">{exam.durationMinutes} phút</strong></span>
               <span>•</span>
-              <span className="text-primary font-semibold">Chuẩn BGD 2026</span>
+              <span className="text-emerald-400 font-semibold">Chuẩn BGD 2026</span>
             </div>
           </div>
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100/80 dark:from-blue-950/60 dark:to-blue-900/40 border border-blue-200/80 dark:border-blue-800 text-blue-700 dark:text-blue-300 font-mono font-black text-sm sm:text-base shadow-[0_3px_0_0_#bfdbfe] dark:shadow-[0_3px_0_0_#1e3a8a]">
-            <Timer className="w-4 h-4 text-blue-600 dark:text-blue-400 animate-pulse" />
+          <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-950/70 border border-blue-500/40 text-cyan-300 font-mono font-black text-sm sm:text-base shadow-inner">
+            <Timer className="w-4 h-4 text-cyan-400 animate-pulse" />
             {formatTime(timeLeft)}
           </div>
 
           {!isSubmitted ? (
             <button
               onClick={() => setShowConfirmSubmit(true)}
-              className="px-5 py-2.5 rounded-2xl bg-gradient-to-b from-emerald-500 via-emerald-600 to-teal-700 text-white font-black text-xs sm:text-sm border-t border-emerald-300 shadow-[0_4px_0_0_#065f46] hover:brightness-105 active:translate-y-1 active:shadow-none transition-all duration-150 flex items-center gap-2 select-none"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-black text-xs sm:text-sm border border-emerald-400/50 shadow-lg shadow-emerald-950/40 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 select-none cursor-pointer"
             >
               <Send className="w-4 h-4" /> Nộp bài thi
             </button>
           ) : (
             <button
               onClick={() => setShowResultModal(true)}
-              className="px-5 py-2.5 rounded-2xl bg-gradient-to-b from-emerald-500 to-teal-600 text-white font-black text-xs sm:text-sm border-t border-emerald-300 shadow-[0_4px_0_0_#065f46] hover:brightness-105 active:translate-y-1 active:shadow-none transition-all duration-150 flex items-center gap-2 select-none"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-black text-xs sm:text-sm border border-cyan-400/40 shadow-lg shadow-blue-950/40 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 select-none cursor-pointer"
             >
               <Award className="w-4 h-4" /> Xem bảng điểm
             </button>
@@ -156,9 +156,9 @@ export function ExamEngine({ exam }: Props) {
       {/* Main Examination View */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
         {/* Question Area */}
-        <div className="lg:col-span-8 p-4 sm:p-7 rounded-3xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-5 sm:space-y-6">
-          <div className="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-200 dark:border-slate-800">
-            <div className="text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider">
+        <div className="lg:col-span-8 p-4 sm:p-6 rounded-2xl bg-[#131B2E] border border-cyan-500/30 shadow-xl space-y-5 sm:space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-800">
+            <div className="text-[11px] sm:text-xs font-bold text-cyan-400 uppercase tracking-wider">
               {currentQ.type === "multiple_choice" && "Phần I: Trắc nghiệm 4 lựa chọn (0.25đ/câu)"}
               {currentQ.type === "true_false" && "Phần II: Trắc nghiệm Đúng / Sai (Tối đa 1.0đ/câu)"}
               {currentQ.type === "short_answer" && "Phần III: Trắc nghiệm Trả lời ngắn (0.5đ/câu)"}
@@ -168,13 +168,13 @@ export function ExamEngine({ exam }: Props) {
               onClick={() =>
                 setFlagged((prev) => ({ ...prev, [currentQ.id]: !prev[currentQ.id] }))
               }
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all duration-150 transform select-none ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all duration-150 select-none cursor-pointer ${
                 flagged[currentQ.id]
-                  ? "bg-gradient-to-b from-amber-400 to-amber-500 text-amber-950 border-t border-amber-200 shadow-[0_3px_0_0_#b45309] scale-105 active:translate-y-0.5 active:shadow-none"
-                  : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-[0_2px_0_0_#cbd5e1] dark:shadow-[0_2px_0_0_#0f172a] hover:bg-slate-200 dark:hover:bg-slate-750 active:translate-y-0.5 active:shadow-none"
+                  ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm"
+                  : "bg-slate-900 hover:bg-slate-850 text-slate-300 border border-slate-700 hover:border-amber-400 hover:text-amber-300"
               }`}
             >
-              <Flag className={`w-3.5 h-3.5 ${flagged[currentQ.id] ? "fill-amber-950" : ""}`} />
+              <Flag className={`w-3.5 h-3.5 ${flagged[currentQ.id] ? "fill-amber-400 text-amber-400" : ""}`} />
               <span>{flagged[currentQ.id] ? "Đã đánh dấu cờ" : "Đánh dấu xem lại"}</span>
             </button>
           </div>
@@ -216,22 +216,22 @@ export function ExamEngine({ exam }: Props) {
             />
           )}
 
-          {/* Prev / Next 3D Buttons */}
-          <div className="flex items-center justify-between pt-5 border-t border-slate-200 dark:border-slate-800">
+          {/* Prev / Next Buttons */}
+          <div className="flex items-center justify-between pt-5 border-t border-slate-800">
             <button
               disabled={currentIdx === 0}
               onClick={() => setCurrentIdx((prev) => Math.max(0, prev - 1))}
-              className="px-5 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs sm:text-sm font-extrabold bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 shadow-[0_4px_0_0_#cbd5e1] dark:shadow-[0_4px_0_0_#1e293b] hover:from-slate-50 hover:to-slate-150 active:translate-y-1 active:shadow-none disabled:opacity-40 disabled:pointer-events-none transition-all duration-150 select-none"
+              className="px-5 py-2.5 rounded-xl border border-slate-700 hover:border-cyan-400 text-slate-200 hover:text-white text-xs sm:text-sm font-extrabold bg-slate-900 hover:bg-slate-850 transition-all select-none disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
             >
               ← Câu trước
             </button>
-            <span className="text-xs sm:text-sm font-bold text-slate-500 dark:text-slate-400">
+            <span className="text-xs sm:text-sm font-bold text-slate-300">
               Câu {currentIdx + 1} / {exam.totalQuestions}
             </span>
             <button
               disabled={currentIdx === exam.totalQuestions - 1}
               onClick={() => setCurrentIdx((prev) => Math.min(exam.totalQuestions - 1, prev + 1))}
-              className="px-6 py-2.5 rounded-2xl bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white text-xs sm:text-sm font-black border-t border-blue-400 shadow-[0_4px_0_0_#1e40af] hover:from-blue-500 hover:to-indigo-600 active:translate-y-1 active:shadow-none disabled:opacity-40 disabled:pointer-events-none transition-all duration-150 select-none"
+              className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-black border border-cyan-400/40 shadow-lg shadow-cyan-900/30 transition-all select-none disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
             >
               Câu tiếp theo →
             </button>
@@ -239,10 +239,10 @@ export function ExamEngine({ exam }: Props) {
         </div>
 
         {/* Question Palette Sidebar */}
-        <div className="lg:col-span-4 p-4 sm:p-5 rounded-3xl bg-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div className="lg:col-span-4 p-4 sm:p-5 rounded-2xl bg-[#131B2E] border border-cyan-500/30 shadow-xl space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">Bảng điều hướng câu hỏi</h3>
-            <span className="text-xs text-slate-500 font-medium">{exam.totalQuestions} câu</span>
+            <h3 className="font-extrabold text-sm text-white">Bảng điều hướng câu hỏi</h3>
+            <span className="text-xs text-slate-400 font-medium">{exam.totalQuestions} câu</span>
           </div>
 
           <div className="grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-5 gap-2">
@@ -255,18 +255,18 @@ export function ExamEngine({ exam }: Props) {
                 <button
                   key={q.id}
                   onClick={() => setCurrentIdx(idx)}
-                  className={`h-11 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center relative transition-all duration-150 transform select-none ${
+                  className={`h-11 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center relative transition-all duration-150 transform select-none cursor-pointer ${
                     active
-                      ? "bg-gradient-to-b from-blue-500 to-indigo-600 text-white border-t border-blue-300 shadow-[0_4px_0_0_#1e3a8a] ring-2 ring-blue-400 ring-offset-2 scale-105 -translate-y-0.5"
+                      ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white border border-cyan-300 shadow-md shadow-cyan-500/30 scale-105"
                       : answered
-                      ? "bg-gradient-to-b from-emerald-500 to-teal-600 text-white border-t border-emerald-300 shadow-[0_3px_0_0_#065f46] hover:brightness-110 active:translate-y-1 active:shadow-none"
-                      : "bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-[0_3px_0_0_#cbd5e1] dark:shadow-[0_3px_0_0_#0f172a] hover:border-blue-400 hover:text-blue-600 active:translate-y-1 active:shadow-none"
+                      ? "bg-emerald-950/80 text-emerald-300 border border-emerald-500/80 hover:border-emerald-400"
+                      : "bg-slate-900 text-slate-300 border border-slate-700 hover:border-cyan-400 hover:text-cyan-300"
                   }`}
                 >
                   <span>{idx + 1}</span>
                   {isFlag && (
-                    <span className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-amber-500 border-2 border-white dark:border-slate-900 shadow-sm flex items-center justify-center">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
+                    <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-amber-400 border border-slate-900 flex items-center justify-center shadow-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-950" />
                     </span>
                   )}
                 </button>
@@ -274,21 +274,21 @@ export function ExamEngine({ exam }: Props) {
             })}
           </div>
 
-          <div className="pt-3.5 border-t border-slate-200 dark:border-slate-800 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-400">
+          <div className="pt-3.5 border-t border-slate-800 space-y-2 text-xs font-semibold text-slate-300">
             <div className="flex items-center gap-2.5">
-              <span className="w-4 h-4 rounded-lg bg-gradient-to-b from-emerald-500 to-teal-600 shadow-[0_2px_0_0_#065f46]" />
+              <span className="w-3.5 h-3.5 rounded bg-emerald-950 border border-emerald-500/80" />
               <span>Đã hoàn thành</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <span className="w-4 h-4 rounded-lg bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 border border-slate-200 dark:border-slate-700 shadow-[0_2px_0_0_#cbd5e1] dark:shadow-[0_2px_0_0_#0f172a]" />
+              <span className="w-3.5 h-3.5 rounded bg-slate-900 border border-slate-700" />
               <span>Chưa làm</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <span className="w-4 h-4 rounded-lg bg-gradient-to-b from-amber-400 to-amber-500 shadow-[0_2px_0_0_#b45309]" />
+              <span className="w-3.5 h-3.5 rounded bg-amber-400" />
               <span>Đã đánh dấu xem lại</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <span className="w-4 h-4 rounded-lg bg-gradient-to-b from-blue-500 to-indigo-600 shadow-[0_2px_0_0_#1e3a8a] ring-1 ring-blue-400" />
+              <span className="w-3.5 h-3.5 rounded bg-gradient-to-r from-blue-600 to-cyan-500 border border-cyan-300" />
               <span>Đang chọn</span>
             </div>
           </div>
@@ -297,19 +297,19 @@ export function ExamEngine({ exam }: Props) {
 
       {/* Confirmation Submit Modal */}
       {showConfirmSubmit && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-card w-full max-w-md rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-7 shadow-2xl space-y-5 animate-in fade-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-[#131B2E] w-full max-w-md rounded-2xl border-2 border-cyan-500/40 p-6 md:p-7 shadow-2xl space-y-5 animate-in fade-in zoom-in-95 duration-200 text-white">
             <div className="text-center space-y-2">
-              <div className="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/30 text-amber-400 flex items-center justify-center mx-auto shadow-inner">
                 <AlertTriangle className="w-7 h-7" />
               </div>
-              <h3 className="font-black text-xl text-slate-900 dark:text-slate-100">
+              <h3 className="font-black text-xl text-white">
                 Xác nhận nộp bài thi?
               </h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Bạn đã hoàn thành <strong className="text-emerald-600 dark:text-emerald-400">{answeredCount}/{exam.totalQuestions}</strong> câu hỏi.
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Bạn đã hoàn thành <strong className="text-cyan-400">{answeredCount}/{exam.totalQuestions}</strong> câu hỏi.
                 {unansweredCount > 0 && (
-                  <span className="block mt-1 text-amber-600 dark:text-amber-400 font-semibold">
+                  <span className="block mt-2 text-amber-300 font-semibold bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20">
                     ⚠️ Còn {unansweredCount} câu chưa trả lời. Bạn có chắc chắn muốn kết thúc bài thi ngay bây giờ?
                   </span>
                 )}
@@ -319,13 +319,13 @@ export function ExamEngine({ exam }: Props) {
             <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
               <button
                 onClick={() => setShowConfirmSubmit(false)}
-                className="w-full sm:flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs sm:text-sm font-extrabold bg-gradient-to-b from-white to-slate-100 dark:from-slate-800 dark:to-slate-850 shadow-[0_4px_0_0_#cbd5e1] dark:shadow-[0_4px_0_0_#1e293b] hover:from-slate-50 hover:to-slate-150 active:translate-y-1 active:shadow-none transition-all duration-150 select-none"
+                className="w-full sm:flex-1 py-3 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white text-xs sm:text-sm font-extrabold bg-slate-900 hover:bg-slate-850 transition-all select-none cursor-pointer"
               >
                 Tiếp tục làm bài
               </button>
               <button
                 onClick={confirmAndSubmit}
-                className="w-full sm:flex-1 py-3 rounded-2xl bg-gradient-to-b from-emerald-500 via-emerald-600 to-teal-700 text-white text-xs sm:text-sm font-black border-t border-emerald-300 shadow-[0_4px_0_0_#065f46] hover:brightness-105 active:translate-y-1 active:shadow-none transition-all duration-150 select-none flex items-center justify-center gap-2"
+                className="w-full sm:flex-1 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs sm:text-sm font-black border border-emerald-400/50 shadow-lg shadow-emerald-950/40 hover:scale-105 active:scale-95 transition-all select-none flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
                 <span>Nộp bài ngay</span>

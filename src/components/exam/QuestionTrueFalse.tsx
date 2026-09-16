@@ -39,18 +39,18 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
     correctCount === 1 ? 0.1 : correctCount === 2 ? 0.25 : correctCount === 3 ? 0.5 : correctCount === 4 ? 1.0 : 0.0;
 
   return (
-    <div className="space-y-4">
-      <div className="flex items-start gap-2.5">
-        <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-xl text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30 shrink-0">
+    <div className="space-y-5">
+      <div className="flex items-start gap-3">
+        <span className="inline-flex items-center justify-center px-3 py-1 rounded-xl text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30 shrink-0">
           Câu {question.index} (Đúng / Sai)
         </span>
-        <div className="text-white font-medium text-sm md:text-base leading-relaxed flex-1">
+        <h4 className="text-base sm:text-lg md:text-xl font-bold text-white leading-relaxed tracking-wide flex-1">
           <MathFormattedText text={question.stem} />
-        </div>
+        </h4>
       </div>
 
       {/* 4 Sub-questions Table */}
-      <div className="rounded-2xl border border-slate-800 overflow-hidden divide-y divide-slate-800 bg-[#0c1322]">
+      <div className="rounded-2xl border border-slate-800/80 overflow-hidden divide-y divide-slate-800/70 bg-[#0B1120] shadow-inner">
         {question.subQuestions.map((sub) => {
           const userVal = answers[sub.key];
           const isCorrect = userVal === sub.isCorrect;
@@ -60,46 +60,42 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
               key={sub.key}
               className={cn(
                 "p-3.5 md:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors",
-                showExplanation && isCorrect && "bg-emerald-950/25",
-                showExplanation && userVal !== undefined && !isCorrect && "bg-rose-950/25"
+                showExplanation && isCorrect && "bg-emerald-950/30",
+                showExplanation && userVal !== undefined && !isCorrect && "bg-rose-950/30"
               )}
             >
-              <div className="flex items-start gap-2.5 flex-1 text-sm text-slate-100">
-                <span className="w-6 h-6 rounded-lg bg-purple-500/20 text-purple-300 font-black text-xs flex items-center justify-center shrink-0 mt-0.5 border border-purple-500/30">
+              <div className="flex items-start gap-3 flex-1 text-slate-100">
+                <span className="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-300 font-black text-xs flex items-center justify-center shrink-0 mt-0.5 border border-purple-500/30">
                   {sub.key})
                 </span>
-                <div className="leading-relaxed flex-1 pt-0.5 font-medium">
+                <div className="leading-relaxed flex-1 pt-0.5 font-bold text-sm sm:text-base text-slate-100">
                   <MathFormattedText text={sub.text} />
                 </div>
               </div>
 
               <div className="flex items-center gap-2 self-end sm:self-center shrink-0">
                 <button
+                  type="button"
                   onClick={() => onAnswer(sub.key, true)}
                   className={cn(
-                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 transform select-none flex items-center gap-1.5 cursor-pointer",
+                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 select-none flex items-center gap-1.5 cursor-pointer border",
                     userVal === true
-                      ? "bg-gradient-to-b from-emerald-400 to-emerald-600 text-slate-950 border-t border-emerald-300 shadow-[0_3px_0_0_#065f46] scale-105"
-                      : "bg-slate-850 hover:bg-slate-800 text-slate-200 border border-slate-700 shadow-[0_2px_0_0_#0f172a] hover:text-emerald-400 active:translate-y-0.5"
+                      ? "bg-emerald-600 hover:bg-emerald-500 text-white border-emerald-400 shadow-md shadow-emerald-600/30 scale-105"
+                      : "bg-slate-900 hover:bg-slate-800 text-slate-300 border-slate-700 hover:border-emerald-400 hover:text-emerald-300 active:scale-95"
                   )}
-                  style={{
-                    backgroundColor: userVal === true ? undefined : "#1e293b"
-                  }}
                 >
                   <Check className="w-4 h-4 stroke-[3]" /> Đúng
                 </button>
 
                 <button
+                  type="button"
                   onClick={() => onAnswer(sub.key, false)}
                   className={cn(
-                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 transform select-none flex items-center gap-1.5 cursor-pointer",
+                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-150 select-none flex items-center gap-1.5 cursor-pointer border",
                     userVal === false
-                      ? "bg-gradient-to-b from-rose-500 to-red-600 text-white border-t border-rose-300 shadow-[0_3px_0_0_#9f1239] scale-105"
-                      : "bg-slate-850 hover:bg-slate-800 text-slate-200 border border-slate-700 shadow-[0_2px_0_0_#0f172a] hover:text-rose-400 active:translate-y-0.5"
+                      ? "bg-rose-600 hover:bg-rose-500 text-white border-rose-400 shadow-md shadow-rose-600/30 scale-105"
+                      : "bg-slate-900 hover:bg-slate-800 text-slate-300 border-slate-700 hover:border-rose-400 hover:text-rose-300 active:scale-95"
                   )}
-                  style={{
-                    backgroundColor: userVal === false ? undefined : "#1e293b"
-                  }}
                 >
                   <X className="w-4 h-4 stroke-[3]" /> Sai
                 </button>
@@ -107,10 +103,10 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
                 {showExplanation && (
                   <span
                     className={cn(
-                      "text-xs px-2.5 py-1 rounded-lg font-bold ml-1",
+                      "text-xs px-2.5 py-1 rounded-lg font-black ml-1 border",
                       sub.isCorrect
-                        ? "bg-emerald-950/80 border border-emerald-500/50 text-emerald-300"
-                        : "bg-amber-950/80 border border-amber-500/50 text-amber-300"
+                        ? "bg-emerald-950/90 border-emerald-500/60 text-emerald-300"
+                        : "bg-amber-950/90 border-amber-500/60 text-amber-300"
                     )}
                   >
                     Chuẩn: {sub.isCorrect ? "Đúng" : "Sai"}
@@ -123,14 +119,14 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
       </div>
 
       {showExplanation && (
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs space-y-2 mt-3 text-slate-200">
-          <div className="flex items-center justify-between font-bold text-white">
-            <span>💡 Lời giải & Phân tích từng ý:</span>
-            <span className="text-purple-400">
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-purple-950/80 via-slate-900 to-indigo-950/80 border border-purple-500/40 text-xs sm:text-sm space-y-2 mt-4 text-slate-200 shadow-xl">
+          <div className="flex items-center justify-between font-bold text-white border-b border-purple-500/30 pb-2">
+            <span className="flex items-center gap-2">💡 <span>Phân tích & Lời giải chi tiết:</span></span>
+            <span className="text-purple-300 font-black">
               Điểm đạt được: {scoreForQuestion}/1.0 điểm ({correctCount}/4 ý đúng)
             </span>
           </div>
-          <div className="text-slate-300 leading-relaxed">
+          <div className="text-slate-200 leading-relaxed pt-1">
             <MathFormattedText text={question.explanation} />
           </div>
         </div>

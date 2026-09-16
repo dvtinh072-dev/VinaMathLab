@@ -13707,12 +13707,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioFrames": [],
   "theorySections": [],
   "interactiveType": "vector",
-  "youtubeVideoId": "QlMSDUNtqKE",
-  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập & Bài tập cuối chương IV - Toán 10 KNTT",
+  "youtubeVideoId": "pQzU9bBvxM4",
+  "youtubeVideoTitle": "Bài Giảng Video: Ôn tập & Bài tập cuối chương IV (Vectơ) - Toán 10 KNTT",
   "youtubeVideos": [
     {
-      "id": "QlMSDUNtqKE",
-      "title": "Tiết 1: Ôn tập lý thuyết và bài tập tổng hợp cuối chương IV"
+      "id": "pQzU9bBvxM4",
+      "title": "Tiết 1: Trắc nghiệm & Lý thuyết trọng tâm cuối chương IV"
+    },
+    {
+      "id": "RnKJxte8GAo",
+      "title": "Tiết 2: Chữa bài tập tự luận Vectơ cuối chương IV"
+    },
+    {
+      "id": "SEjAFxQV-Nw",
+      "title": "Tiết 3: Bài toán thực tế & Vận dụng tổng hợp cuối chương IV"
     }
   ],
   "videoQuestions": [],

@@ -1,4 +1,5 @@
 import type { DetailedLessonData } from "./allGradesLessonsData";
+import { GRADE_11_CHAPTER_3_REVIEW_LESSON } from "./grade11Chapter3ReviewData";
 
 export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   // ==========================================
@@ -13164,5 +13165,6 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "$\\Delta_Q = Q_3 - Q_1 = 68 - 31,11 = 36,89$."
       }
     ]
-  }
+  },
+  "t11-on-tap-chuong-3": GRADE_11_CHAPTER_3_REVIEW_LESSON
 };

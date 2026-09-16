@@ -843,6 +843,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         lessons: [
           { id: "t11-b8-mau-so-lieu-ghep-nhom", lessonNumber: 8, title: "Bài 8: Mẫu số liệu ghép nhóm", strand: "thongke", description: "Bảng tần số ghép nhóm và giá trị đại diện của nhóm.", keyFormulas: ["c_i = \\frac{a_i + a_{i+1}}{2}"] },
           { id: "t11-b9-so-dac-trung-mau-ghep-nhom", lessonNumber: 9, title: "Bài 9: Các số đặc trưng đo xu thế trung tâm", strand: "thongke", description: "Công thức tính số trung bình, trung vị Me, mốt Mo cho mẫu số liệu ghép nhóm.", keyFormulas: ["\\bar{x} = \\frac{1}{n}\\sum m_i c_i, \\ M_e = u_m + \\frac{\\frac{n}{2} - C}{n_m}(u_{m+1} - u_m)"] },
+          { id: "t11-on-tap-chuong-3", lessonNumber: 0, title: "Ôn tập cuối chương III", strand: "thongke", description: "Hệ thống hóa toàn bộ kiến thức Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\bar{x} = \\frac{1}{n}\\sum m_i c_i", "M_e = a_p + \\frac{\\frac{n}{2} - C}{m_p} \\cdot h", "Q_1, Q_3", "M_o = a_j + \\frac{m_j - m_{j-1}}{(m_j - m_{j-1}) + (m_j - m_{j+1})} \\cdot h"] },
         ],
       },
       {

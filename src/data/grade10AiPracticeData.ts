@@ -6372,5 +6372,1411 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
         "explanation": "$F = 2.5 \\times 1200 = 3000\\text{ kN}$."
       }
     ]
-  }
+  },
+
+  // ==========================================
+  // BÀI 10: VECTƠ TRONG MẶT PHẲNG TỌA ĐỘ (AI PRACTICE)
+  // ==========================================
+  "t10-b10-vector-trong-mat-phang-toa-do": {
+  "quizQuestions": [
+    {
+      "id": "ai-10.10.1",
+      "badge": "Luyện thêm 1 - Tọa độ vectơ theo đơn vị",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho vectơ $\\vec{u} = 4\\vec{i} - 5\\vec{j}$. Tọa độ của vectơ $\\vec{u}$ là:",
+      "options": [
+        "$(4; -5)$",
+        "$(-5; 4)$",
+        "$(4; 5)$",
+        "$(-4; -5)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa tọa độ vectơ: $\\vec{u} = x\\vec{i} + y\\vec{j} \\Leftrightarrow \\vec{u} = (x; y)$. Với $x = 4, y = -5$ thì $\\vec{u} = (4; -5)$."
+    },
+    {
+      "id": "ai-10.10.2",
+      "badge": "Luyện thêm 2 - Vectơ nằm trên trục hoành",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho vectơ $\\vec{b} = -7\\vec{i}$. Tọa độ của vectơ $\\vec{b}$ là:",
+      "options": [
+        "$(-7; 0)$",
+        "$(0; -7)$",
+        "$(7; 0)$",
+        "$(-7; -7)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\vec{b} = -7\\vec{i} + 0\\vec{j}$ nên tọa độ của vectơ $\\vec{b}$ là $(-7; 0)$."
+    },
+    {
+      "id": "ai-10.10.3",
+      "badge": "Luyện thêm 3 - Vectơ đơn vị trên trục tung",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, tọa độ của vectơ đơn vị $\\vec{j}$ trên trục tung $Oy$ là:",
+      "options": [
+        "$(0; 1)$",
+        "$(1; 0)$",
+        "$(1; 1)$",
+        "$(0; -1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vectơ đơn vị trên trục tung $Oy$ là $\\vec{j} = (0; 1)$."
+    },
+    {
+      "id": "ai-10.10.4",
+      "badge": "Luyện thêm 4 - Tìm tham số để hai vectơ bằng nhau",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{u} = (3x - 2; 7)$ và $\\vec{v} = (7; 2y + 1)$. Để $\\vec{u} = \\vec{v}$ thì cặp giá trị $(x; y)$ là:",
+      "options": [
+        "$(3; 3)$",
+        "$(3; 4)$",
+        "$(2; 3)$",
+        "$(3; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai vectơ bằng nhau khi: $\\begin{cases} 3x - 2 = 7 \\\\ 2y + 1 = 7 \\end{cases} \\Leftrightarrow \\begin{cases} 3x = 9 \\\\ 2y = 6 \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = 3 \\end{cases}$."
+    },
+    {
+      "id": "ai-10.10.5",
+      "badge": "Luyện thêm 5 - Tọa độ vectơ nối hai điểm",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho hai điểm $A(-3; 2)$ và $B(1; -4)$. Tọa độ của vectơ $\\overrightarrow{AB}$ là:",
+      "options": [
+        "$(4; -6)$",
+        "$(-4; 6)$",
+        "$(-2; -2)$",
+        "$(2; -6)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{AB} = (x_B - x_A; y_B - y_A) = (1 - (-3); -4 - 2) = (4; -6)$."
+    },
+    {
+      "id": "ai-10.10.6",
+      "badge": "Luyện thêm 6 - Vectơ vị trí của điểm",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho điểm $N(5; -8)$. Tọa độ của vectơ vị trí $\\overrightarrow{ON}$ là:",
+      "options": [
+        "$(5; -8)$",
+        "$(-5; 8)$",
+        "$(-8; 5)$",
+        "$(0; -8)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tọa độ vectơ $\\overrightarrow{ON}$ chính là tọa độ của điểm $N$, do đó $\\overrightarrow{ON} = (5; -8)$."
+    },
+    {
+      "id": "ai-10.10.7",
+      "badge": "Luyện thêm 7 - Tìm tọa độ điểm ngọn khi biết gốc và vectơ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng $Oxy$, cho điểm $A(2; -1)$ và vectơ $\\overrightarrow{AB} = (-4; 6)$. Tọa độ của điểm $B$ là:",
+      "options": [
+        "$B(-2; 5)$",
+        "$B(6; -7)$",
+        "$B(-2; -7)$",
+        "$B(2; 5)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{AB} = (x_B - x_A; y_B - y_A) \\Leftrightarrow \\begin{cases} x_B - 2 = -4 \\\\ y_B - (-1) = 6 \\end{cases} \\Leftrightarrow \\begin{cases} x_B = -2 \\\\ y_B = 5 \\end{cases} \\Rightarrow B(-2; 5)$."
+    },
+    {
+      "id": "ai-10.10.8",
+      "badge": "Luyện thêm 8 - Tổng vectơ xuất phát từ một đỉnh",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho ba điểm $A(2; 1), B(-1; 4), C(5; -2)$. Tọa độ của vectơ $\\vec{u} = \\overrightarrow{AB} + \\overrightarrow{AC}$ là:",
+      "options": [
+        "$(0; 0)$",
+        "$(3; 3)$",
+        "$(-3; 3)$",
+        "$(6; -6)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{AB} = (-1 - 2; 4 - 1) = (-3; 3)$ và $\\overrightarrow{AC} = (5 - 2; -2 - 1) = (3; -3)$. Do đó $\\vec{u} = (-3 + 3; 3 + (-3)) = (0; 0)$."
+    },
+    {
+      "id": "ai-10.10.9",
+      "badge": "Luyện thêm 9 - Tổng hai vectơ theo tọa độ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{u} = (2; -5)$ và $\\vec{v} = (-4; 1)$. Tọa độ của vectơ $\\vec{u} + \\vec{v}$ là:",
+      "options": [
+        "$(-2; -4)$",
+        "$(6; -6)$",
+        "$(-2; -6)$",
+        "$(6; 4)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{u} + \\vec{v} = (2 + (-4); -5 + 1) = (-2; -4)$."
+    },
+    {
+      "id": "ai-10.10.10",
+      "badge": "Luyện thêm 10 - Phép nhân vectơ với số",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho vectơ $\\vec{a} = (-3; 4)$. Tọa độ của vectơ $3\\vec{a}$ là:",
+      "options": [
+        "$(-9; 12)$",
+        "$(9; -12)$",
+        "$(-9; 4)$",
+        "$(0; 12)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$3\\vec{a} = (3 \\cdot (-3); 3 \\cdot 4) = (-9; 12)$."
+    },
+    {
+      "id": "ai-10.10.11",
+      "badge": "Luyện thêm 11 - Phối hợp các phép toán vectơ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{a} = (1; -2)$ và $\\vec{b} = (-2; 3)$. Tọa độ của vectơ $\\vec{u} = 3\\vec{a} - 2\\vec{b}$ là:",
+      "options": [
+        "$(7; -12)$",
+        "$(-1; 0)$",
+        "$(7; 0)$",
+        "$(-1; -12)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $3\\vec{a} = (3; -6)$ và $2\\vec{b} = (-4; 6)$. Do đó $\\vec{u} = 3\\vec{a} - 2\\vec{b} = (3 - (-4); -6 - 6) = (7; -12)$."
+    },
+    {
+      "id": "ai-10.10.12",
+      "badge": "Luyện thêm 12 - Phân tích một vectơ theo hai vectơ khác",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho $\\vec{u} = (1; 1), \\vec{v} = (2; -1)$ và $\\vec{w} = (5; 2)$. Biết $\\vec{w} = x\\vec{u} + y\\vec{v}$. Cặp số $(x; y)$ là:",
+      "options": [
+        "$(3; 1)$",
+        "$(1; 2)$",
+        "$(2; 1)$",
+        "$(4; 1)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $\\begin{cases} x + 2y = 5 \\\\ x - y = 2 \\end{cases} \\Leftrightarrow \\begin{cases} 3y = 3 \\\\ x = y + 2 \\end{cases} \\Leftrightarrow \\begin{cases} y = 1 \\\\ x = 3 \\end{cases}$."
+    },
+    {
+      "id": "ai-10.10.13",
+      "badge": "Luyện thêm 13 - Tọa độ trung điểm đoạn thẳng",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai điểm $A(-2; 5)$ và $B(4; 1)$. Tọa độ trung điểm $I$ của đoạn thẳng $AB$ là:",
+      "options": [
+        "$I(1; 3)$",
+        "$I(2; 6)$",
+        "$I(3; 3)$",
+        "$I(1; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x_I = \\dfrac{-2 + 4}{2} = 1, y_I = \\dfrac{5 + 1}{2} = 3 \\Rightarrow I(1; 3)$."
+    },
+    {
+      "id": "ai-10.10.14",
+      "badge": "Luyện thêm 14 - Tọa độ trọng tâm tam giác",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ có $A(2; 3), B(-4; 1), C(5; 2)$. Tọa độ trọng tâm $G$ của tam giác $ABC$ là:",
+      "options": [
+        "$G(1; 2)$",
+        "$G(3; 6)$",
+        "$G(1; 3)$",
+        "$G(2; 2)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x_G = \\dfrac{2 + (-4) + 5}{3} = 1, y_G = \\dfrac{3 + 1 + 2}{3} = 2 \\Rightarrow G(1; 2)$."
+    },
+    {
+      "id": "ai-10.10.15",
+      "badge": "Luyện thêm 15 - Tìm tọa độ đỉnh thứ tư hình bình hành",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng $Oxy$, cho ba điểm $A(2; 3), B(4; 7), C(8; 5)$. Tọa độ điểm $D$ để tứ giác $ABCD$ là hình bình hành là:",
+      "options": [
+        "$D(6; 1)$",
+        "$D(10; 9)$",
+        "$D(2; 5)$",
+        "$D(6; 5)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$ABCD$ là hình bình hành $\\Leftrightarrow \\overrightarrow{AD} = \\overrightarrow{BC} \\Leftrightarrow (x_D - 2; y_D - 3) = (8 - 4; 5 - 7) = (4; -2) \\Leftrightarrow \\begin{cases} x_D = 6 \\\\ y_D = 1 \\end{cases} \\Rightarrow D(6; 1)$."
+    },
+    {
+      "id": "ai-10.10.16",
+      "badge": "Luyện thêm 16 - Điểm đối xứng qua một điểm",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai điểm $A(-1; 4)$ và $B(3; 2)$. Điểm $C$ đối xứng với $A$ qua $B$ có tọa độ là:",
+      "options": [
+        "$C(7; 0)$",
+        "$C(1; 3)$",
+        "$C(5; 0)$",
+        "$C(7; 8)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $B$ là trung điểm của $AC$ nên $\\begin{cases} x_C = 2x_B - x_A = 2(3) - (-1) = 7 \\\\ y_C = 2y_B - y_A = 2(2) - 4 = 0 \\end{cases} \\Rightarrow C(7; 0)$."
+    },
+    {
+      "id": "ai-10.10.17",
+      "badge": "Luyện thêm 17 - Tìm tham số để hai vectơ cùng phương",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{a} = (3; -2)$ và $\\vec{b} = (-6; m)$. Để hai vectơ $\\vec{a}$ và $\\vec{b}$ cùng phương thì giá trị của $m$ là:",
+      "options": [
+        "$m = 4$",
+        "$m = -4$",
+        "$m = 6$",
+        "$m = -6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai vectơ cùng phương khi $\\dfrac{-6}{3} = \\dfrac{m}{-2} \\Leftrightarrow -2 = \\dfrac{m}{-2} \\Leftrightarrow m = 4$."
+    },
+    {
+      "id": "ai-10.10.18",
+      "badge": "Luyện thêm 18 - Tìm tham số để ba điểm thẳng hàng",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng $Oxy$, cho ba điểm $A(2; -1), B(4; 3), C(m; 7)$. Ba điểm $A, B, C$ thẳng hàng khi:",
+      "options": [
+        "$m = 6$",
+        "$m = 5$",
+        "$m = 4$",
+        "$m = -6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{AB} = (2; 4)$ và $\\overrightarrow{AC} = (m - 2; 8)$. Ba điểm thẳng hàng $\\Leftrightarrow \\dfrac{m - 2}{2} = \\dfrac{8}{4} = 2 \\Leftrightarrow m - 2 = 4 \\Leftrightarrow m = 6$."
+    },
+    {
+      "id": "ai-10.10.19",
+      "badge": "Luyện thêm 19 - Vị trí của tàu tuần tra sau hành trình",
+      "isAiGenerated": true,
+      "source": "Toán học thực tế Toán 10",
+      "question": "Trên màn hình radar hàng hải, một tàu tuần tra ban đầu ở tọa độ $A(15; 30)$ (đơn vị: km) di chuyển thẳng đều với vectơ vận tốc $\\vec{v} = (20; -15)$ (km/h). Sau 2 giờ di chuyển, tàu tuần tra đến vị trí $B$ có tọa độ là:",
+      "options": [
+        "$B(55; 0)$",
+        "$B(35; 15)$",
+        "$B(40; -30)$",
+        "$B(55; 30)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ dịch chuyển sau 2 giờ là $2\\vec{v} = (40; -30)$. Vị trí mới: $\\overrightarrow{OB} = \\overrightarrow{OA} + 2\\vec{v} = (15 + 40; 30 - 30) = (55; 0)$."
+    },
+    {
+      "id": "ai-10.10.20",
+      "badge": "Luyện thêm 20 - Vận tốc cano xuôi dòng kết hợp vuông góc",
+      "isAiGenerated": true,
+      "source": "Vật lý 10 & Ứng dụng vectơ",
+      "question": "Một chiếc cano chạy theo hướng vectơ vận tốc máy $\\vec{v}_1 = (18; 0)$ (km/h) cắt ngang sông có dòng nước chảy với vectơ vận tốc $\\vec{v}_2 = (0; 6)$ (km/h). Vectơ vận tốc tổng hợp $\\vec{v} = \\vec{v}_1 + \\vec{v}_2$ của cano có tọa độ là:",
+      "options": [
+        "$(18; 6)$",
+        "$(18; -6)$",
+        "$(0; 24)$",
+        "$(24; 0)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vận tốc tổng hợp là $\\vec{v} = \\vec{v}_1 + \\vec{v}_2 = (18 + 0; 0 + 6) = (18; 6)$ km/h."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-10.10.1",
+      "badge": "Luyện thêm Đ/S 1 - Tọa độ của vectơ và vectơ đơn vị",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho hai vectơ $\\vec{a} = 5\\vec{i} - 2\\vec{j}$ và $\\vec{b} = (-3; 4)$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ của vectơ $\\vec{a}$ là $(5; -2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{a} = 5\\vec{i} - 2\\vec{j} \\Leftrightarrow \\vec{a} = (5; -2)$."
+        },
+        {
+          "id": "b",
+          "text": "Vectơ $\\vec{b}$ được biểu diễn dưới dạng $\\vec{b} = -3\\vec{i} + 4\\vec{j}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vectơ có tọa độ $(-3; 4)$ luôn biểu diễn thành $-3\\vec{i} + 4\\vec{j}$."
+        },
+        {
+          "id": "c",
+          "text": "Tọa độ của vectơ $\\vec{a} + \\vec{b}$ là $(2; 2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{a} + \\vec{b} = (5 + (-3); -2 + 4) = (2; 2)$."
+        },
+        {
+          "id": "d",
+          "text": "Tọa độ của vectơ $-2\\vec{a}$ là $(-10; -4)$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $-2\\vec{a} = (-2 \\cdot 5; -2 \\cdot (-2)) = (-10; 4)$ chứ không phải $(-10; -4)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.2",
+      "badge": "Luyện thêm Đ/S 2 - Tọa độ điểm và vectơ nối 2 điểm",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho ba điểm $A(2; 3), B(-1; 4), C(5; -2)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ của vectơ $\\overrightarrow{AB}$ là $(-3; 1)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AB} = (-1 - 2; 4 - 3) = (-3; 1)$."
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ của vectơ $\\overrightarrow{AC}$ là $(3; -5)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AC} = (5 - 2; -2 - 3) = (3; -5)$."
+        },
+        {
+          "id": "c",
+          "text": "Tọa độ của vectơ $\\overrightarrow{BA}$ là $(-3; 1)$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $\\overrightarrow{BA} = -\\overrightarrow{AB} = (3; -1)$."
+        },
+        {
+          "id": "d",
+          "text": "Tọa độ của vectơ $\\overrightarrow{BC}$ là $(6; -6)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{BC} = (5 - (-1); -2 - 4) = (6; -6)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.3",
+      "badge": "Luyện thêm Đ/S 3 - Tọa độ trung điểm đoạn thẳng",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho đoạn thẳng $AB$ với $A(-4; 6)$ và $B(2; -2)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ trung điểm $I$ của đoạn thẳng $AB$ là $I(-1; 2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $x_I = \\dfrac{-4 + 2}{2} = -1; y_I = \\dfrac{6 + (-2)}{2} = 2 \\Rightarrow I(-1; 2)$."
+        },
+        {
+          "id": "b",
+          "text": "Gốc tọa độ $O(0; 0)$ là trung điểm của đoạn thẳng $AB$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Trung điểm $I(-1; 2) \\ne (0; 0)$."
+        },
+        {
+          "id": "c",
+          "text": "Điểm đối xứng với $A$ qua gốc tọa độ $O$ có tọa độ là $(4; -6)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đối xứng qua gốc $O$ đổi dấu cả hai tọa độ: $A'(4; -6)$."
+        },
+        {
+          "id": "d",
+          "text": "Tọa độ vectơ $\\overrightarrow{IA}$ là $(-3; 4)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{IA} = (-4 - (-1); 6 - 2) = (-3; 4)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.4",
+      "badge": "Luyện thêm Đ/S 4 - Tọa độ trọng tâm tam giác",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có ba đỉnh $A(3; -1), B(-2; 4), C(5; 3)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ trọng tâm $G$ của tam giác $ABC$ là $G(2; 2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $x_G = \\dfrac{3 - 2 + 5}{3} = 2, y_G = \\dfrac{-1 + 4 + 3}{3} = 2$."
+        },
+        {
+          "id": "b",
+          "text": "Tổng vectơ $\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Theo tính chất trọng tâm của tam giác."
+        },
+        {
+          "id": "c",
+          "text": "Tọa độ trung điểm $M$ của cạnh $BC$ là $M\\left(\\dfrac{3}{2}; \\dfrac{7}{2}\\right)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $x_M = \\dfrac{-2 + 5}{2} = \\dfrac{3}{2}, y_M = \\dfrac{4 + 3}{2} = \\dfrac{7}{2}$."
+        },
+        {
+          "id": "d",
+          "text": "Ta có $\\overrightarrow{AG} = 2\\overrightarrow{GM}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Trọng tâm $G$ chia đoạn $AM$ theo tỉ số $AG = 2GM$ và hai vectơ cùng hướng."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.5",
+      "badge": "Luyện thêm Đ/S 5 - Hình bình hành và tọa độ đỉnh",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho ba điểm $A(1; 1), B(4; 5), C(9; 5)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ vectơ $\\overrightarrow{AB}$ là $(3; 4)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AB} = (4 - 1; 5 - 1) = (3; 4)$."
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ vectơ $\\overrightarrow{BC}$ là $(5; 0)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{BC} = (9 - 4; 5 - 5) = (5; 0)$."
+        },
+        {
+          "id": "c",
+          "text": "Tứ giác $ABCD$ là hình bình hành khi $D(6; 1)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AD} = \\overrightarrow{BC} \\Leftrightarrow (x_D - 1; y_D - 1) = (5; 0) \\Rightarrow D(6; 1)$."
+        },
+        {
+          "id": "d",
+          "text": "Tâm của hình bình hành $ABCD$ là điểm $I(5; 3)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tâm $I$ là trung điểm $AC$: $x_I = \\dfrac{1 + 9}{2} = 5, y_I = \\dfrac{1 + 5}{2} = 3$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.6",
+      "badge": "Luyện thêm Đ/S 6 - Hai vectơ cùng phương và cùng hướng",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u} = (2; -3)$ và $\\vec{v} = (-6; 9)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ta có $\\vec{v} = -3\\vec{u}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $-3(2; -3) = (-6; 9) = \\vec{v}$."
+        },
+        {
+          "id": "b",
+          "text": "Hai vectơ $\\vec{u}$ và $\\vec{v}$ cùng phương với nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì $\\vec{v} = k\\vec{u}$ với $k = -3$."
+        },
+        {
+          "id": "c",
+          "text": "Hai vectơ $\\vec{u}$ và $\\vec{v}$ cùng hướng với nhau.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì hệ số $k = -3 < 0$ nên hai vectơ ngược hướng nhau."
+        },
+        {
+          "id": "d",
+          "text": "Tọa độ của vectơ $\\vec{u} + \\vec{v}$ là $(-4; 6)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{u} + \\vec{v} = (2 + (-6); -3 + 9) = (-4; 6)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.7",
+      "badge": "Luyện thêm Đ/S 7 - Ba điểm thẳng hàng trong mặt phẳng tọa độ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho ba điểm $A(-2; 1), B(0; 3), C(2; 5)$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ vectơ $\\overrightarrow{AB}$ là $(2; 2)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AB} = (0 - (-2); 3 - 1) = (2; 2)$."
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ vectơ $\\overrightarrow{AC}$ là $(4; 4)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AC} = (2 - (-2); 5 - 1) = (4; 4)$."
+        },
+        {
+          "id": "c",
+          "text": "Ba điểm $A, B, C$ thẳng hàng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Ta có $\\overrightarrow{AC} = 2\\overrightarrow{AB}$ nên ba điểm thẳng hàng."
+        },
+        {
+          "id": "d",
+          "text": "Điểm $C$ là trung điểm của đoạn thẳng $AB$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $B$ mới là trung điểm của $AC$, vì $\\overrightarrow{AB} = \\overrightarrow{BC} = (2; 2)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.10.8",
+      "badge": "Luyện thêm Đ/S 8 - Ứng dụng tọa độ vectơ vào chuyển động thực tế",
+      "source": "Bài toán thực tế Toán 10",
+      "prompt": "Một chiếc drone trinh sát đang ở tọa độ $A(10; 40)$ (đơn vị: mét) bay thẳng đều với vectơ vận tốc $\\vec{v} = (8; -6)$ (đơn vị: m/s). Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tốc độ bay của drone là $10\\text{ m/s}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tốc độ là độ lớn vận tốc $|\\vec{v}| = \\sqrt{8^2 + (-6)^2} = \\sqrt{64 + 36} = 10\\text{ m/s}$."
+        },
+        {
+          "id": "b",
+          "text": "Sau 5 giây, độ dịch chuyển của drone là $\\vec{d} = (40; -30)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{d} = 5\\vec{v} = 5(8; -6) = (40; -30)$."
+        },
+        {
+          "id": "c",
+          "text": "Sau 5 giây, drone tới vị trí có tọa độ $B(50; 10)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{OB} = \\overrightarrow{OA} + \\vec{d} = (10 + 40; 40 - 30) = (50; 10)$."
+        },
+        {
+          "id": "d",
+          "text": "Sau 10 giây, drone chạm mặt đất (trục hoành $Ox$, tức $y = 0$).",
+          "correctAnswer": false,
+          "explanation": "Sai: Sau $t$ giây, tung độ là $y(t) = 40 - 6t$. Để $y = 0$ thì $t = \\dfrac{40}{6} = \\dfrac{20}{3} \\approx 6.67$ giây, không phải 10 giây."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-10.10.1",
+      "badge": "Luyện thêm TLN 1 - Hoành độ của vectơ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng $Oxy$, cho vectơ $\\vec{u} = -8\\vec{i} + 5\\vec{j}$. Tìm hoành độ của vectơ $\\vec{u}$.",
+      "correctAnswer": "-8",
+      "acceptableAnswers": [
+        "-8"
+      ],
+      "explanation": "Hoành độ là hệ số trước $\\vec{i}$, bằng $-8$."
+    },
+    {
+      "id": "ai-sa-10.10.2",
+      "badge": "Luyện thêm TLN 2 - Tung độ của vectơ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng $Oxy$, cho vectơ $\\vec{v} = 3\\vec{i} - 9\\vec{j}$. Tìm tung độ của vectơ $\\vec{v}$.",
+      "correctAnswer": "-9",
+      "acceptableAnswers": [
+        "-9"
+      ],
+      "explanation": "Tung độ là hệ số trước $\\vec{j}$, bằng $-9$."
+    },
+    {
+      "id": "ai-sa-10.10.3",
+      "badge": "Luyện thêm TLN 3 - Hoành độ vectơ nối hai điểm",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai điểm $A(2; 5)$ và $B(-5; 9)$. Tìm hoành độ của vectơ $\\overrightarrow{AB}$.",
+      "correctAnswer": "-7",
+      "acceptableAnswers": [
+        "-7"
+      ],
+      "explanation": "Hoành độ của $\\overrightarrow{AB}$ là $x_B - x_A = -5 - 2 = -7$."
+    },
+    {
+      "id": "ai-sa-10.10.4",
+      "badge": "Luyện thêm TLN 4 - Tung độ vectơ nối hai điểm",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai điểm $M(3; -2)$ và $N(7; 8)$. Tìm tung độ của vectơ $\\overrightarrow{MN}$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "Tung độ của $\\overrightarrow{MN}$ là $y_N - y_M = 8 - (-2) = 10$."
+    },
+    {
+      "id": "ai-sa-10.10.5",
+      "badge": "Luyện thêm TLN 5 - Hoành độ của tổ hợp tuyến tính",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{a} = (4; -1)$ và $\\vec{b} = (-2; 3)$. Tìm hoành độ của vectơ $\\vec{u} = 3\\vec{a} + 2\\vec{b}$.",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "explanation": "Hoành độ của $\\vec{u}$ là $3(4) + 2(-2) = 12 - 4 = 8$."
+    },
+    {
+      "id": "ai-sa-10.10.6",
+      "badge": "Luyện thêm TLN 6 - Hoành độ trung điểm",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai điểm $A(-6; 3)$ và $B(8; 5)$. Tìm hoành độ của trung điểm $I$ của đoạn thẳng $AB$.",
+      "correctAnswer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "explanation": "$x_I = \\dfrac{-6 + 8}{2} = 1$."
+    },
+    {
+      "id": "ai-sa-10.10.7",
+      "badge": "Luyện thêm TLN 7 - Tung độ trọng tâm tam giác",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có $A(2; 7), B(-1; 3), C(5; 5)$. Tìm tung độ của trọng tâm $G$ của tam giác $ABC$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "explanation": "$y_G = \\dfrac{7 + 3 + 5}{3} = \\dfrac{15}{3} = 5$."
+    },
+    {
+      "id": "ai-sa-10.10.8",
+      "badge": "Luyện thêm TLN 8 - Hoành độ đỉnh D hình bình hành",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng $Oxy$, cho ba điểm $A(3; 2), B(5; 8), C(9; 4)$. Để tứ giác $ABCD$ là hình bình hành thì hoành độ của điểm $D$ bằng bao nhiêu?",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7"
+      ],
+      "explanation": "$\\overrightarrow{AD} = \\overrightarrow{BC} \\Rightarrow x_D = x_A + x_C - x_B = 3 + 9 - 5 = 7$."
+    },
+    {
+      "id": "ai-sa-10.10.9",
+      "badge": "Luyện thêm TLN 9 - Tìm m để hai vectơ cùng phương",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u} = (4; -3)$ và $\\vec{v} = (8; m)$. Tìm giá trị của $m$ để hai vectơ $\\vec{u}$ và $\\vec{v}$ cùng phương.",
+      "correctAnswer": "-6",
+      "acceptableAnswers": [
+        "-6"
+      ],
+      "explanation": "Hai vectơ cùng phương khi $\\dfrac{8}{4} = \\dfrac{m}{-3} \\Rightarrow 2 = \\dfrac{m}{-3} \\Rightarrow m = -6$."
+    },
+    {
+      "id": "ai-sa-10.10.10",
+      "badge": "Luyện thêm TLN 10 - Tìm tung độ điểm thẳng hàng",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho ba điểm $A(2; 1), B(5; 7), C(6; y)$. Biết ba điểm $A, B, C$ thẳng hàng. Tìm giá trị của $y$.",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "explanation": "$\\overrightarrow{AB} = (3; 6)$ và $\\overrightarrow{AC} = (4; y - 1)$. Thẳng hàng $\\Leftrightarrow \\dfrac{y - 1}{6} = \\dfrac{4}{3} \\Leftrightarrow y - 1 = 8 \\Leftrightarrow y = 9$."
+    },
+    {
+      "id": "ai-sa-10.10.11",
+      "badge": "Luyện thêm TLN 11 - Tốc độ thực tế của tàu cứu hộ",
+      "source": "Toán học & Vật lý 10",
+      "prompt": "Một tàu cứu hộ di chuyển theo phương ngang với vận tốc $\\vec{v}_1 = (15; 0)$ (km/h) trong dòng hải lưu có vận tốc $\\vec{v}_2 = (0; 8)$ (km/h). Tính độ lớn vận tốc thực tế của con tàu (theo km/h).",
+      "correctAnswer": "17",
+      "acceptableAnswers": [
+        "17",
+        "17 km/h"
+      ],
+      "explanation": "Vận tốc thực tế là $\\vec{v} = (15; 8)$. Độ lớn vận tốc là $|\\vec{v}| = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17$ km/h."
+    },
+    {
+      "id": "ai-sa-10.10.12",
+      "badge": "Luyện thêm TLN 12 - Tung độ lực cân bằng",
+      "source": "Cơ học & Vectơ 10",
+      "prompt": "Ba lực $\\vec{F}_1 = (25; 15)$, $\\vec{F}_2 = (-45; 35)$ và $\\vec{F}_3$ cùng tác dụng vào một vật nằm cân bằng (tức $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$). Tìm tung độ của lực $\\vec{F}_3$ (theo Niutơn).",
+      "correctAnswer": "-50",
+      "acceptableAnswers": [
+        "-50",
+        "-50 N"
+      ],
+      "explanation": "$\\vec{F}_3 = -(\\vec{F}_1 + \\vec{F}_2) = - (25 - 45; 15 + 35) = -(-20; 50) = (20; -50)$. Tung độ của lực $\\vec{F}_3$ là $-50$."
+    }
+  ]
+},
+
+  // ==========================================
+  // BÀI 11: TÍCH VÔ HƯỚNG CỦA HAI VECTƠ (AI PRACTICE)
+  // ==========================================
+  "t10-b11-tich-vo-huong-hai-vector": {
+  "quizQuestions": [
+    {
+      "id": "ai-10.11.1",
+      "badge": "Luyện thêm 1 - Góc giữa hai vectơ chung gốc",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hình thoi $ABCD$ có góc $\\widehat{ABC} = 120^\\circ$. Góc giữa hai vectơ $\\overrightarrow{BA}$ và $\\overrightarrow{BC}$ bằng:",
+      "options": [
+        "$120^\\circ$",
+        "$60^\\circ$",
+        "$90^\\circ$",
+        "$150^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai vectơ chung gốc $B$ nên $(\\overrightarrow{BA}, \\overrightarrow{BC}) = \\widehat{ABC} = 120^\\circ$."
+    },
+    {
+      "id": "ai-10.11.2",
+      "badge": "Luyện thêm 2 - Góc giữa hai vectơ nối tiếp",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hình vuông $ABCD$. Góc giữa hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{BC}$ bằng:",
+      "options": [
+        "$90^\\circ$",
+        "$0^\\circ$",
+        "$45^\\circ$",
+        "$180^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(\\overrightarrow{AB}, \\overrightarrow{BC}) = 180^\\circ - (\\overrightarrow{BA}, \\overrightarrow{BC}) = 180^\\circ - 90^\\circ = 90^\\circ$."
+    },
+    {
+      "id": "ai-10.11.3",
+      "badge": "Luyện thêm 3 - Góc giữa cạnh và đường chéo",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho tam giác đều $ABC$, gọi $H$ là trung điểm $BC$. Góc giữa hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AH}$ bằng:",
+      "options": [
+        "$30^\\circ$",
+        "$60^\\circ$",
+        "$90^\\circ$",
+        "$45^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tam giác đều, đường trung tuyến $AH$ đồng thời là đường phân giác của góc $\\widehat{BAC}$. Do đó $(\\overrightarrow{AB}, \\overrightarrow{AH}) = \\dfrac{60^\\circ}{2} = 30^\\circ$."
+    },
+    {
+      "id": "ai-10.11.4",
+      "badge": "Luyện thêm 4 - Góc giữa hai vectơ ngược hướng",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ ngược hướng và khác vectơ-không. Góc giữa hai vectơ $\\vec{u}$ và $\\vec{v}$ bằng:",
+      "options": [
+        "$180^\\circ$",
+        "$0^\\circ$",
+        "$90^\\circ$",
+        "$360^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, hai vectơ ngược hướng thì góc giữa chúng bằng $180^\\circ$."
+    },
+    {
+      "id": "ai-10.11.5",
+      "badge": "Luyện thêm 5 - Tính tích vô hướng theo định nghĩa",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{a}$ và $\\vec{b}$ có $|\\vec{a}| = 6, |\\vec{b}| = 5$ và góc giữa chúng bằng $120^\\circ$. Tích vô hướng $\\vec{a} \\cdot \\vec{b}$ bằng:",
+      "options": [
+        "$-15$",
+        "$15$",
+        "$-15\\sqrt{3}$",
+        "$15\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{a} \\cdot \\vec{b} = 6 \\times 5 \\times \\cos 120^\\circ = 30 \\times (-0.5) = -15$."
+    },
+    {
+      "id": "ai-10.11.6",
+      "badge": "Luyện thêm 6 - Tích vô hướng của hai cạnh tam giác vuông",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3, AC = 4$. Tích vô hướng $\\overrightarrow{AB} \\cdot \\overrightarrow{AC}$ bằng:",
+      "options": [
+        "$0$",
+        "$12$",
+        "$6$",
+        "$5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì tam giác vuông tại $A$ nên $\\overrightarrow{AB} \\perp \\overrightarrow{AC} \\Rightarrow \\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0$."
+    },
+    {
+      "id": "ai-10.11.7",
+      "badge": "Luyện thêm 7 - Tích vô hướng trong tam giác đều cạnh 2a",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho tam giác đều $ABC$ có cạnh bằng $2$. Tích vô hướng $\\overrightarrow{AB} \\cdot \\overrightarrow{AC}$ bằng:",
+      "options": [
+        "$2$",
+        "$4$",
+        "$2\\sqrt{3}$",
+        "$-2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 2 \\times 2 \\times \\cos 60^\\circ = 4 \\times 0.5 = 2$."
+    },
+    {
+      "id": "ai-10.11.8",
+      "badge": "Luyện thêm 8 - Độ dài vectơ hiệu khi hai vectơ vuông góc",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ vuông góc với nhau, có độ dài $|\\vec{u}| = 6$ và $|\\vec{v}| = 8$. Độ dài của vectơ $\\vec{u} - \\vec{v}$ bằng:",
+      "options": [
+        "$10$",
+        "$14$",
+        "$2$",
+        "$100$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$|\\vec{u} - \\vec{v}|^2 = \\vec{u}^2 - 2\\vec{u}\\cdot\\vec{v} + \\vec{v}^2 = 6^2 - 0 + 8^2 = 100 \\Rightarrow |\\vec{u} - \\vec{v}| = 10$."
+    },
+    {
+      "id": "ai-10.11.9",
+      "badge": "Luyện thêm 9 - Tích vô hướng theo tọa độ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho $\\vec{u} = (-3; 4)$ và $\\vec{v} = (5; 2)$. Tích vô hướng $\\vec{u} \\cdot \\vec{v}$ bằng:",
+      "options": [
+        "$-7$",
+        "$7$",
+        "$-23$",
+        "$23$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{u} \\cdot \\vec{v} = (-3)(5) + 4(2) = -15 + 8 = -7$."
+    },
+    {
+      "id": "ai-10.11.10",
+      "badge": "Luyện thêm 10 - Độ dài vectơ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, độ dài của vectơ $\\vec{b} = (-5; 12)$ bằng:",
+      "options": [
+        "$13$",
+        "$17$",
+        "$\\sqrt{119}$",
+        "$169$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$|\\vec{b}| = \\sqrt{(-5)^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$."
+    },
+    {
+      "id": "ai-10.11.11",
+      "badge": "Luyện thêm 11 - Khoảng cách giữa hai điểm",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho hai điểm $M(2; -3)$ và $N(7; 9)$. Khoảng cách giữa hai điểm $M$ và $N$ bằng:",
+      "options": [
+        "$13$",
+        "$17$",
+        "$\\sqrt{41}$",
+        "$15$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$MN = \\sqrt{(7 - 2)^2 + (9 - (-3))^2} = \\sqrt{5^2 + 12^2} = 13$."
+    },
+    {
+      "id": "ai-10.11.12",
+      "badge": "Luyện thêm 12 - Tích vô hướng với biểu thức đại số",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{a} = (2; 1)$ và $\\vec{b} = (-1; 3)$. Giá trị của $\\vec{b} \\cdot (\\vec{a} + 2\\vec{b})$ bằng:",
+      "options": [
+        "$21$",
+        "$19$",
+        "$23$",
+        "$17$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\vec{a} + 2\\vec{b} = (2 + 2(-1); 1 + 2(3)) = (0; 7)$. Khi đó $\\vec{b} \\cdot (\\vec{a} + 2\\vec{b}) = -1(0) + 3(7) = 21$."
+    },
+    {
+      "id": "ai-10.11.13",
+      "badge": "Luyện thêm 13 - Góc giữa hai vectơ theo tọa độ",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, góc giữa hai vectơ $\\vec{u} = (0; 2)$ và $\\vec{v} = (3; 3)$ bằng:",
+      "options": [
+        "$45^\\circ$",
+        "$60^\\circ$",
+        "$30^\\circ$",
+        "$90^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\cos(\\vec{u}, \\vec{v}) = \\dfrac{0(3) + 2(3)}{\\sqrt{0^2 + 2^2} \\cdot \\sqrt{3^2 + 3^2}} = \\dfrac{6}{2 \\cdot 3\\sqrt{2}} = \\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2} \\Rightarrow 45^\\circ$."
+    },
+    {
+      "id": "ai-10.11.14",
+      "badge": "Luyện thêm 14 - Vectơ vuông góc",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho hai vectơ $\\vec{a} = (3; -2)$ và $\\vec{b} = (4; 6)$. Góc giữa hai vectơ $\\vec{a}$ và $\\vec{b}$ bằng:",
+      "options": [
+        "$90^\\circ$",
+        "$0^\\circ$",
+        "$180^\\circ$",
+        "$45^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{a} \\cdot \\vec{b} = 3(4) + (-2)(6) = 12 - 12 = 0 \\Rightarrow \\vec{a} \\perp \\vec{b} \\Rightarrow 90^\\circ$."
+    },
+    {
+      "id": "ai-10.11.15",
+      "badge": "Luyện thêm 15 - Tìm tham số để hai vectơ vuông góc",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho $\\vec{u} = (4; 5)$ và $\\vec{v} = (m; -8)$. Hai vectơ $\\vec{u}$ và $\\vec{v}$ vuông góc khi:",
+      "options": [
+        "$m = 10$",
+        "$m = -10$",
+        "$m = 8$",
+        "$m = -8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{u} \\perp \\vec{v} \\Leftrightarrow 4m + 5(-8) = 0 \\Leftrightarrow 4m = 40 \\Leftrightarrow m = 10$."
+    },
+    {
+      "id": "ai-10.11.16",
+      "badge": "Luyện thêm 16 - Tìm tọa độ đỉnh tam giác vuông",
+      "isAiGenerated": true,
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "question": "Cho tam giác $ABC$ có $A(2; 4), B(1; 1), C(4; y)$. Tìm $y$ để tam giác $ABC$ vuông tại $B$.",
+      "options": [
+        "$y = 0$",
+        "$y = 2$",
+        "$y = -1$",
+        "$y = 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{BA} = (1; 3)$ và $\\overrightarrow{BC} = (3; y - 1)$. Tam giác vuông tại $B \\Leftrightarrow \\overrightarrow{BA} \\cdot \\overrightarrow{BC} = 0 \\Leftrightarrow 1(3) + 3(y - 1) = 0 \\Leftrightarrow 3 + 3y - 3 = 0 \\Leftrightarrow 3y = 0 \\Leftrightarrow y = 0$."
+    },
+    {
+      "id": "ai-10.11.17",
+      "badge": "Luyện thêm 17 - Công của lực kéo vật",
+      "isAiGenerated": true,
+      "source": "Toán học & Vật lý 10",
+      "question": "Một bạn học sinh kéo một vali trên sàn ngang một đoạn $s = 20\\text{ m}$ bằng lực kéo $F = 60\\text{ N}$ hợp với phương ngang góc $60^\\circ$. Công sinh ra bởi lực kéo là:",
+      "options": [
+        "$600\\text{ J}$",
+        "$1200\\text{ J}$",
+        "$600\\sqrt{3}\\text{ J}$",
+        "$300\\text{ J}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = F \\cdot s \\cdot \\cos 60^\\circ = 60 \\times 20 \\times 0.5 = 600\\text{ J}$."
+    },
+    {
+      "id": "ai-10.11.18",
+      "badge": "Luyện thêm 18 - Công của trọng lực khi vật rơi tự do",
+      "isAiGenerated": true,
+      "source": "Toán học & Vật lý 10",
+      "question": "Một quả cầu kim loại khối lượng $m = 3\\text{ kg}$ rơi từ độ cao $h = 10\\text{ m}$ xuống đất ($g = 9.8\\text{ m/s}^2$). Công của trọng lực sinh ra trong quá trình rơi là:",
+      "options": [
+        "$294\\text{ J}$",
+        "$147\\text{ J}$",
+        "$588\\text{ J}$",
+        "$0\\text{ J}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = mgh = 3 \\times 9.8 \\times 10 = 294\\text{ J}$."
+    },
+    {
+      "id": "ai-10.11.19",
+      "badge": "Luyện thêm 19 - Tích vô hướng của lực kéo tàu thuyền",
+      "isAiGenerated": true,
+      "source": "Ứng dụng vectơ thực tế",
+      "question": "Hai động cơ kéo cano cùng kéo với lực $F_1 = 400\\text{ N}$ và $F_2 = 500\\text{ N}$, góc hợp bởi hai hướng kéo là $60^\\circ$. Tích vô hướng $\\vec{F}_1 \\cdot \\vec{F}_2$ bằng:",
+      "options": [
+        "$100\\,000\\text{ N}^2$",
+        "$200\\,000\\text{ N}^2$",
+        "$100\\,000\\sqrt{3}\\text{ N}^2$",
+        "$50\\,000\\text{ N}^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\vec{F}_1 \\cdot \\vec{F}_2 = 400 \\times 500 \\times 0.5 = 100\\,000\\text{ N}^2$."
+    },
+    {
+      "id": "ai-10.11.20",
+      "badge": "Luyện thêm 20 - Tìm điểm trên trục tung nhìn đoạn thẳng vuông góc",
+      "isAiGenerated": true,
+      "source": "Toán học nâng cao 10",
+      "question": "Trong mặt phẳng $Oxy$, cho hai điểm $A(1; 2)$ và $B(2; 6)$. Điểm $M(0; y)$ thuộc trục tung sao cho tam giác $MAB$ vuông tại $M$. Tổng các giá trị khả dĩ của $y$ bằng:",
+      "options": [
+        "$8$",
+        "$10$",
+        "$6$",
+        "$12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overrightarrow{MA} = (1; 2 - y)$ và $\\overrightarrow{MB} = (2; 6 - y)$. $\\overrightarrow{MA} \\cdot \\overrightarrow{MB} = 0 \\Leftrightarrow 1(2) + (2 - y)(6 - y) = 0 \\Leftrightarrow 2 + y^2 - 8y + 12 = 0 \\Leftrightarrow y^2 - 8y + 14 = 0$. Theo Vi-ét, tổng các nghiệm là $y_1 + y_2 = 8$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-10.11.1",
+      "badge": "Luyện thêm Đ/S 1 - Góc giữa hai vectơ trong tam giác vuông cân",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ vuông cân tại $A$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Góc giữa hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ bằng $90^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tam giác vuông tại $A$ nên $\\widehat{BAC} = 90^\\circ$."
+        },
+        {
+          "id": "b",
+          "text": "Góc giữa hai vectơ $\\overrightarrow{BA}$ và $\\overrightarrow{BC}$ bằng $45^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tam giác vuông cân tại $A$ nên góc $\\widehat{B} = 45^\\circ$."
+        },
+        {
+          "id": "c",
+          "text": "Góc giữa hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{BC}$ bằng $45^\\circ$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $(\\overrightarrow{AB}, \\overrightarrow{BC}) = 180^\\circ - 45^\\circ = 135^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Tích vô hướng $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì $AB \\perp AC$ nên tích vô hướng bằng $0$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.2",
+      "badge": "Luyện thêm Đ/S 2 - Tính chất của tích vô hướng",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ khác $\\vec{0}$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $\\vec{u} \\cdot \\vec{v} < 0$ thì góc giữa hai vectơ là góc tù.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\cos(\\vec{u}, \\vec{v}) < 0 \\Rightarrow 90^\\circ < (\\vec{u}, \\vec{v}) \\le 180^\\circ$."
+        },
+        {
+          "id": "b",
+          "text": "Ta luôn có $\\vec{u} \\cdot \\vec{v} = \\vec{v} \\cdot \\vec{u}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tính chất giao hoán của tích vô hướng."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $\\vec{u} \\cdot \\vec{v} = 0$ thì bắt buộc $\\vec{u} = \\vec{0}$ hoặc $\\vec{v} = \\vec{0}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Tích vô hướng bằng 0 còn có trường hợp hai vectơ vuông góc nhau."
+        },
+        {
+          "id": "d",
+          "text": "Biểu thức $(\\vec{u} + \\vec{v})^2 = |\\vec{u}|^2 + 2\\vec{u}\\cdot\\vec{v} + |\\vec{v}|^2$ luôn đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đây là hằng đẳng thức vectơ cơ bản."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.3",
+      "badge": "Luyện thêm Đ/S 3 - Biểu thức tọa độ tích vô hướng",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho $\\vec{a} = (4; -2)$ và $\\vec{b} = (1; 3)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tích vô hướng $\\vec{a} \\cdot \\vec{b} = -2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{a} \\cdot \\vec{b} = 4(1) + (-2)(3) = 4 - 6 = -2$."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài vectơ $\\vec{a}$ là $|\\vec{a}| = 2\\sqrt{5}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $|\\vec{a}| = \\sqrt{4^2 + (-2)^2} = \\sqrt{20} = 2\\sqrt{5}$."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài vectơ $\\vec{b}$ là $|\\vec{b}| = \\sqrt{10}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $|\\vec{b}| = \\sqrt{1^2 + 3^2} = \\sqrt{10}$."
+        },
+        {
+          "id": "d",
+          "text": "Góc giữa hai vectơ $\\vec{a}$ và $\\vec{b}$ là góc nhọn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì $\\vec{a} \\cdot \\vec{b} = -2 < 0$ nên góc giữa chúng là góc tù."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.4",
+      "badge": "Luyện thêm Đ/S 4 - Góc giữa hai vectơ theo tọa độ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u} = (2; 1)$ và $\\vec{v} = (3; -1)$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tích vô hướng $\\vec{u} \\cdot \\vec{v} = 5$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{u} \\cdot \\vec{v} = 2(3) + 1(-1) = 6 - 1 = 5$."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài $|\\vec{u}| = \\sqrt{5}$ và $|\\vec{v}| = \\sqrt{10}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $|\\vec{u}| = \\sqrt{4 + 1} = \\sqrt{5}, |\\vec{v}| = \\sqrt{9 + 1} = \\sqrt{10}$."
+        },
+        {
+          "id": "c",
+          "text": "Cosin góc giữa hai vectơ là $\\cos(\\vec{u}, \\vec{v}) = \\dfrac{\\sqrt{2}}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\cos = \\dfrac{5}{\\sqrt{5}\\sqrt{10}} = \\dfrac{5}{5\\sqrt{2}} = \\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2}$."
+        },
+        {
+          "id": "d",
+          "text": "Góc giữa hai vectơ $\\vec{u}$ và $\\vec{v}$ bằng $45^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\cos = \\dfrac{\\sqrt{2}}{2} \\Rightarrow (\\vec{u}, \\vec{v}) = 45^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.5",
+      "badge": "Luyện thêm Đ/S 5 - Tam giác vuông trong mặt phẳng tọa độ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ có $A(2; 3), B(5; 7), C(6; 0)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tọa độ vectơ $\\overrightarrow{AB} = (3; 4)$ và độ dài $AB = 5$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AB} = (3; 4) \\Rightarrow AB = 5$."
+        },
+        {
+          "id": "b",
+          "text": "Tọa độ vectơ $\\overrightarrow{AC} = (4; -3)$ và độ dài $AC = 5$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overrightarrow{AC} = (4; -3) \\Rightarrow AC = 5$."
+        },
+        {
+          "id": "c",
+          "text": "Tam giác $ABC$ vuông cân tại đỉnh $A$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $AB = AC = 5$ và $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 3(4) + 4(-3) = 0$."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài cạnh $BC = 5\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tam giác vuông cân cạnh 5 thì cạnh huyền $BC = 5\\sqrt{2}$ (hoặc tính $BC = \\sqrt{1^2 + (-7)^2} = \\sqrt{50} = 5\\sqrt{2}$)."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.6",
+      "badge": "Luyện thêm Đ/S 6 - Tìm tham số m để hai vectơ vuông góc",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u} = (m + 2; 3)$ và $\\vec{v} = (2; -4)$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tích vô hướng $\\vec{u} \\cdot \\vec{v} = 2m - 8$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\vec{u} \\cdot \\vec{v} = 2(m + 2) + 3(-4) = 2m + 4 - 12 = 2m - 8$."
+        },
+        {
+          "id": "b",
+          "text": "Hai vectơ $\\vec{u}$ và $\\vec{v}$ vuông góc khi $m = 4$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $2m - 8 = 0 \\Leftrightarrow m = 4$."
+        },
+        {
+          "id": "c",
+          "text": "Khi $m = 0$, góc giữa hai vectơ $\\vec{u}$ và $\\vec{v}$ là góc nhọn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Khi $m = 0$, $\\vec{u} \\cdot \\vec{v} = -8 < 0$ nên góc là góc tù."
+        },
+        {
+          "id": "d",
+          "text": "Hai vectơ cùng phương khi $m = -\\dfrac{7}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\dfrac{m + 2}{2} = \\dfrac{3}{-4} \\Leftrightarrow -4(m + 2) = 6 \\Leftrightarrow -4m - 8 = 6 \\Leftrightarrow -4m = 14 \\Leftrightarrow m = -\\dfrac{7}{2}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.7",
+      "badge": "Luyện thêm Đ/S 7 - Công cơ học trong thực tế",
+      "source": "Toán học thực tế & Vật lý 10",
+      "prompt": "Một cỗ máy kéo một khối gỗ trượt đều trên sàn nhà nằm ngang một đoạn $15\\text{ m}$ dưới lực kéo $300\\text{ N}$ nghiêng góc $60^\\circ$ so với mặt sàn. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Góc giữa lực kéo và phương dịch chuyển là $\\alpha = 60^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khối gỗ trượt ngang, lực kéo nghiêng $60^\\circ$ so với phương ngang."
+        },
+        {
+          "id": "b",
+          "text": "Công sinh ra bởi lực kéo là $A = 2250\\text{ J}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $A = 300 \\times 15 \\times \\cos 60^\\circ = 4500 \\times 0.5 = 2250\\text{ J}$."
+        },
+        {
+          "id": "c",
+          "text": "Lực phản lực của mặt sàn lên khối gỗ sinh công âm cản trở chuyển động.",
+          "correctAnswer": false,
+          "explanation": "Sai: Phản lực vuông góc với mặt sàn chuyển động nên công của phản lực bằng $0$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu kéo song song với mặt sàn ($alpha = 0^circ$), công sinh ra sẽ là $4500\\text{ J}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khi $\\alpha = 0^\\circ$, $A = 300 \\times 15 \\times 1 = 4500\\text{ J}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.11.8",
+      "badge": "Luyện thêm Đ/S 8 - Trực tâm và tam giác vuông",
+      "source": "Toán học nâng cao 10",
+      "prompt": "Cho tam giác $ABC$ có $A(1; 4), B(-1; 1), C(4; 1)$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Cạnh $BC$ song song với trục hoành $Ox$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Hai điểm $B$ và $C$ đều có tung độ bằng $1$."
+        },
+        {
+          "id": "b",
+          "text": "Đường cao kẻ từ đỉnh $A$ có phương trình $x = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đường cao hạ từ $A(1; 4)$ vuông góc với $BC$ (song song $Ox$) nên vuông góc với $Ox$, tức song song trục tung: $x = 1$."
+        },
+        {
+          "id": "c",
+          "text": "Trực tâm $H$ của tam giác $ABC$ có hoành độ $x_H = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Trực tâm phải thuộc đường cao kẻ từ $A$, nên hoành độ là $x = 1$."
+        },
+        {
+          "id": "d",
+          "text": "Tung độ của trực tâm $H$ là $y_H = 3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $H(1; y)$. Ta có $\\overrightarrow{BH} = (2; y - 1)$ và $\\overrightarrow{AC} = (3; -3)$. $BH \\perp AC \\Leftrightarrow 2(3) + (y - 1)(-3) = 0 \\Leftrightarrow 6 - 3y + 3 = 0 \\Leftrightarrow 3y = 9 \\Leftrightarrow y = 3$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-10.11.1",
+      "badge": "Luyện thêm TLN 1 - Góc giữa hai vectơ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có góc $\\widehat{B} = 30^\\circ$. Tính góc giữa hai vectơ $\\overrightarrow{CA}$ và $\\overrightarrow{CB}$ (theo độ).",
+      "correctAnswer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60 độ",
+        "60°"
+      ],
+      "explanation": "Góc $\\widehat{C} = 90^\\circ - 30^\\circ = 60^\\circ$. Do đó $(\\overrightarrow{CA}, \\overrightarrow{CB}) = 60^\\circ$."
+    },
+    {
+      "id": "ai-sa-10.11.2",
+      "badge": "Luyện thêm TLN 2 - Tính tích vô hướng theo định nghĩa",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ có $|\\vec{u}| = 8, |\\vec{v}| = 3$ và góc giữa chúng bằng $60^\\circ$. Tính tích vô hướng $\\vec{u} \\cdot \\vec{v}$.",
+      "correctAnswer": "12",
+      "acceptableAnswers": [
+        "12"
+      ],
+      "explanation": "$\\vec{u} \\cdot \\vec{v} = 8 \\times 3 \\times \\cos 60^\\circ = 24 \\times 0.5 = 12$."
+    },
+    {
+      "id": "ai-sa-10.11.3",
+      "badge": "Luyện thêm TLN 3 - Tích vô hướng theo tọa độ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho hai vectơ $\\vec{a} = (5; -3)$ và $\\vec{b} = (2; 4)$. Tính tích vô hướng $\\vec{a} \\cdot \\vec{b}$.",
+      "correctAnswer": "-2",
+      "acceptableAnswers": [
+        "-2"
+      ],
+      "explanation": "$\\vec{a} \\cdot \\vec{b} = 5(2) + (-3)(4) = 10 - 12 = -2$."
+    },
+    {
+      "id": "ai-sa-10.11.4",
+      "badge": "Luyện thêm TLN 4 - Độ dài của vectơ theo tọa độ",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho vectơ $\\vec{a} = (-9; 12)$. Tính độ dài của vectơ $\\vec{a}$.",
+      "correctAnswer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "explanation": "$|\\vec{a}| = \\sqrt{(-9)^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15$."
+    },
+    {
+      "id": "ai-sa-10.11.5",
+      "badge": "Luyện thêm TLN 5 - Khoảng cách giữa hai điểm",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho hai điểm $P(-3; 2)$ và $Q(5; 8)$. Tính khoảng cách giữa hai điểm $P$ và $Q$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$PQ = \\sqrt{(5 - (-3))^2 + (8 - 2)^2} = \\sqrt{8^2 + 6^2} = 10$."
+    },
+    {
+      "id": "ai-sa-10.11.6",
+      "badge": "Luyện thêm TLN 6 - Tìm m để hai vectơ vuông góc",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho hai vectơ $\\vec{a} = (5; -2)$ và $\\vec{b} = (4; m)$. Tìm giá trị của $m$ để hai vectơ $\\vec{a}$ và $\\vec{b}$ vuông góc với nhau.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "explanation": "$\\vec{a} \\perp \\vec{b} \\Leftrightarrow 5(4) + (-2)m = 0 \\Leftrightarrow 20 - 2m = 0 \\Leftrightarrow m = 10$."
+    },
+    {
+      "id": "ai-sa-10.11.7",
+      "badge": "Luyện thêm TLN 7 - Tích vô hướng hai cạnh tam giác đều",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $8$. Tính tích vô hướng $\\overrightarrow{AB} \\cdot \\overrightarrow{AC}$.",
+      "correctAnswer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "explanation": "$\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 8 \\times 8 \\times \\cos 60^\\circ = 64 \\times 0.5 = 32$."
+    },
+    {
+      "id": "ai-sa-10.11.8",
+      "badge": "Luyện thêm TLN 8 - Tích vô hướng hai vectơ liên tiếp",
+      "source": "Đề luyện tập Toán 10 KNTT",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $8$. Tính tích vô hướng $\\overrightarrow{AB} \\cdot \\overrightarrow{BC}$.",
+      "correctAnswer": "-32",
+      "acceptableAnswers": [
+        "-32"
+      ],
+      "explanation": "Góc giữa chúng là $120^\\circ$. Do đó tích vô hướng bằng $8 \\times 8 \\times \\cos 120^\\circ = 64 \\times (-0.5) = -32$."
+    },
+    {
+      "id": "ai-sa-10.11.9",
+      "badge": "Luyện thêm TLN 9 - Công của lực kéo vật",
+      "source": "Toán học & Vật lý 10",
+      "prompt": "Một chiếc máy cày kéo cày dịch chuyển một đoạn $12\\text{ m}$ dưới một lực kéo $F = 50\\text{ N}$ hợp với phương chuyển động góc $60^\\circ$. Tính công mà máy cày đã sinh ra (theo Jun).",
+      "correctAnswer": "300",
+      "acceptableAnswers": [
+        "300",
+        "300 J"
+      ],
+      "explanation": "Công sinh ra là $A = 50 \\times 12 \\times \\cos 60^\\circ = 600 \\times 0.5 = 300\\text{ J}$."
+    },
+    {
+      "id": "ai-sa-10.11.10",
+      "badge": "Luyện thêm TLN 10 - Tích vô hướng hai lực kéo",
+      "source": "Vật lý 10 & Vectơ thực tế",
+      "prompt": "Hai lực $\\vec{F}_1$ và $\\vec{F}_2$ cùng tác dụng vào một chất điểm với độ lớn $F_1 = 40\\text{ N}, F_2 = 70\\text{ N}$ và góc giữa hai lực là $60^\\circ$. Tính tích vô hướng $\\vec{F}_1 \\cdot \\vec{F}_2$ (theo $\\text{N}^2$).",
+      "correctAnswer": "1400",
+      "acceptableAnswers": [
+        "1400"
+      ],
+      "explanation": "$\\vec{F}_1 \\cdot \\vec{F}_2 = 40 \\times 70 \\times \\cos 60^\\circ = 2800 \\times 0.5 = 1400\\text{ N}^2$."
+    },
+    {
+      "id": "ai-sa-10.11.11",
+      "badge": "Luyện thêm TLN 11 - Tìm lực kéo khi biết công và quãng đường",
+      "source": "Toán học & Vật lý 10",
+      "prompt": "Một chiếc xe kéo di chuyển quãng đường $s = 50\\text{ m}$ với lực kéo $\\vec{F}$ hợp với hướng di chuyển góc $60^\\circ$, sinh ra công $A = 7500\\text{ J}$. Tính độ lớn của lực kéo $\\vec{F}$ (theo Niutơn).",
+      "correctAnswer": "300",
+      "acceptableAnswers": [
+        "300",
+        "300 N"
+      ],
+      "explanation": "$A = F \\cdot s \\cdot \\cos 60^\\circ \\Leftrightarrow 7500 = F \\times 50 \\times 0.5 = 25F \\Rightarrow F = 300\\text{ N}$."
+    },
+    {
+      "id": "ai-sa-10.11.12",
+      "badge": "Luyện thêm TLN 12 - Tìm tọa độ đỉnh tam giác vuông",
+      "source": "Toán học 10 nâng cao",
+      "prompt": "Trong mặt phẳng $Oxy$, cho hai điểm $A(1; 3)$ và $B(4; 0)$. Điểm $C(x; 0)$ thuộc trục hoành sao cho tam giác $ABC$ vuông tại $A$. Tìm giá trị của $x$.",
+      "correctAnswer": "-2",
+      "acceptableAnswers": [
+        "-2"
+      ],
+      "explanation": "$\\overrightarrow{AB} = (3; -3)$ và $\\overrightarrow{AC} = (x - 1; -3)$. Tam giác vuông tại $A \\Leftrightarrow \\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0 \\Leftrightarrow 3(x - 1) + (-3)(-3) = 0 \\Leftrightarrow 3x - 3 + 9 = 0 \\Leftrightarrow 3x = -6 \\Leftrightarrow x = -2$."
+    }
+  ]
+}
 };

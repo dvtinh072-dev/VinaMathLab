@@ -16,6 +16,7 @@ export interface ShortAnswerQuestionData {
   explanation: string;
   topic?: string;
   difficulty?: "NB" | "TH" | "VD" | "VDC";
+  svgDiagram?: string;
 }
 
 interface Props {
@@ -50,6 +51,13 @@ export function QuestionShortAnswer({ question, userAnswer = "", onAnswer, showE
           <MathFormattedText text={question.stem} />
         </h4>
       </div>
+
+      {question.svgDiagram && (
+        <div
+          className="my-3 flex justify-center w-full overflow-x-auto"
+          dangerouslySetInnerHTML={{ __html: question.svgDiagram }}
+        />
+      )}
 
       <div className="p-4 sm:p-5 rounded-2xl bg-[#0B1120] border border-slate-800 space-y-3 shadow-inner max-w-xl">
         <label className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">

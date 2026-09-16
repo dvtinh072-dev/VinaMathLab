@@ -20,6 +20,7 @@ export interface TrueFalseQuestionData {
   explanation: string;
   topic?: string;
   difficulty?: "NB" | "TH" | "VD" | "VDC";
+  svgDiagram?: string;
 }
 
 interface Props {
@@ -48,6 +49,13 @@ export function QuestionTrueFalse({ question, answers, onAnswer, showExplanation
           <MathFormattedText text={question.stem} />
         </h4>
       </div>
+
+      {question.svgDiagram && (
+        <div
+          className="my-3 flex justify-center w-full overflow-x-auto"
+          dangerouslySetInnerHTML={{ __html: question.svgDiagram }}
+        />
+      )}
 
       {/* 4 Sub-questions Table */}
       <div className="rounded-2xl border border-slate-800/80 overflow-hidden divide-y divide-slate-800/70 bg-[#0B1120] shadow-inner">

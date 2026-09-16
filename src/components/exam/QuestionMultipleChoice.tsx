@@ -17,6 +17,7 @@ export interface MultipleChoiceQuestionData {
   explanation: string;
   topic?: string;
   difficulty?: "NB" | "TH" | "VD" | "VDC";
+  svgDiagram?: string;
 }
 
 interface Props {
@@ -37,6 +38,13 @@ export function QuestionMultipleChoice({ question, selectedKey, onSelect, showEx
           <MathFormattedText text={question.stem} />
         </h4>
       </div>
+
+      {question.svgDiagram && (
+        <div
+          className="my-3 flex justify-center w-full overflow-x-auto"
+          dangerouslySetInnerHTML={{ __html: question.svgDiagram }}
+        />
+      )}
 
       {(() => {
         const isAnyLong = question.options.some((opt) => opt.text.length > 28);

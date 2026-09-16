@@ -1710,95 +1710,556 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
     gradeNumber: 10,
     examType: "giua-ky-1",
     category: "LOP_10",
-    subtitle: "Mệnh đề & Tập hợp, Bất phương trình bậc nhất hai ẩn, Hệ thức lượng trong tam giác",
-    durationMinutes: 60,
-    totalQuestions: 6,
+    subtitle: "Trọng tâm Chương I (Mệnh đề & Tập hợp), Chương II (BPT & Hệ BPT bậc nhất hai ẩn), Chương III (Hệ thức lượng trong tam giác)",
+    durationMinutes: 90,
+    totalQuestions: 22,
     questions: [
       {
         id: "t10-gk1-q1",
         type: "multiple_choice",
         index: 1,
-        stem: "Mệnh đề phủ định của mệnh đề '$\\forall x \\in \\mathbb{R}, x^2 + 1 > 0$' là:",
+        stem: "Mệnh đề phủ định của mệnh đề: \"Mọi hình vuông đều là hình bình hành\" là:",
         options: [
-          { key: "A", text: "∃x ∈ R, x^2 + 1 ≤ 0" },
-          { key: "B", text: "∀x ∈ R, x^2 + 1 ≤ 0" },
-          { key: "C", text: "∃x ∈ R, x^2 + 1 < 0" },
-          { key: "D", text: "∃x ∈ R, x^2 + 1 = 0" },
+          {
+            key: "A",
+            text: "Có ít nhất một hình vuông không phải là hình bình hành."
+          },
+          {
+            key: "B",
+            text: "Mọi hình vuông đều không phải là hình bình hành."
+          },
+          {
+            key: "C",
+            text: "Có ít nhất một hình bình hành không phải là hình vuông."
+          },
+          {
+            key: "D",
+            text: "Mọi hình bình hành đều là hình vuông."
+          }
         ],
         correctKey: "A",
-        explanation: "Phủ định của $\\forall$ là $\\exists$, phủ định của $>$ là $\\le$.",
-        topic: "Mệnh đề toán học",
-        difficulty: "NB",
+        explanation: "Phủ định của mệnh đề: \"$\\forall x \\in X, P(x)$\" là \"$\\exists x \\in X, \\overline{P(x)}$\". Do đó, phủ định của \"Mọi hình vuông đều là hình bình hành\" là \"Có ít nhất một hình vuông không phải là hình bình hành\".",
+        topic: "Mệnh đề & Mệnh đề phủ định",
+        difficulty: "NB"
       },
       {
         id: "t10-gk1-q2",
         type: "multiple_choice",
         index: 2,
-        stem: "Cho tam giác $ABC$ có $a = 8, c = 5$ và góc $B = 60^\\circ$. Độ dài cạnh $b$ bằng:",
+        stem: "Cho tập hợp $M = \\{x \\in \\mathbb{R} \\mid 1 < x \\le 7\\}$. Tập hợp $M$ được viết dưới dạng khoảng, nửa khoảng là:",
         options: [
-          { key: "A", text: "7" },
-          { key: "B", text: "√129" },
-          { key: "C", text: "49" },
-          { key: "D", text: "√39" },
+          {
+            key: "A",
+            text: "(1; 7)"
+          },
+          {
+            key: "B",
+            text: "[1; 7]"
+          },
+          {
+            key: "C",
+            text: "(1; 7]"
+          },
+          {
+            key: "D",
+            text: "[1; 7)"
+          }
         ],
-        correctKey: "A",
-        explanation: "Theo định lý Cosin: $b^2 = a^2 + c^2 - 2ac\\cos B = 64 + 25 - 2(8)(5)(0,5) = 89 - 40 = 49 \\Rightarrow b = 7$.",
-        topic: "Định lý Cosin",
-        difficulty: "TH",
+        correctKey: "C",
+        explanation: "Vì $1 < x \\le 7$ nên điểm đầu 1 không lấy (ngoặc tròn) và điểm cuối 7 lấy (ngoặc vuông). Vậy $M = (1; 7]$.",
+        topic: "Các tập hợp số",
+        difficulty: "NB"
       },
       {
         id: "t10-gk1-q3",
-        type: "true_false",
+        type: "multiple_choice",
         index: 3,
-        stem: "Cho hai tập hợp $A = [-2; 3)$ và $B = (1; 5]$. Xét tính đúng sai:",
-        subQuestions: [
-          { key: "a", text: "Giao của hai tập hợp $A \\cap B = (1; 3)$.", isCorrect: true },
-          { key: "b", text: "Hợp của hai tập hợp $A \\cup B = [-2; 5]$.", isCorrect: true },
-          { key: "c", text: "Hiệu $A \\setminus B = [-2; 1]$.", isCorrect: true },
-          { key: "d", text: "Số phần tử nguyên thuộc tập $A \\cap B$ là 3 phần tử.", isCorrect: false },
+        stem: "Cho hai tập hợp $A = (-\\infty; 4)$ và $B = [0; +\\infty)$. Tập hợp $A \\cap B$ là:",
+        options: [
+          {
+            key: "A",
+            text: "[0; 4)"
+          },
+          {
+            key: "B",
+            text: "(0; 4)"
+          },
+          {
+            key: "C",
+            text: "[0; 4]"
+          },
+          {
+            key: "D",
+            text: "(-\\infty; +\\infty)"
+          }
         ],
-        explanation: "Các số nguyên trong khoảng $(1; 3)$ chỉ có duy nhất số $2$ (1 phần tử chứ không phải 3). Ý d là Sai.",
+        correctKey: "A",
+        explanation: "Giao của hai tập hợp là tập hợp các phần tử vừa thuộc $A$ vừa thuộc $B$: $A \\cap B = (-\\infty; 4) \\cap [0; +\\infty) = [0; 4)$.",
         topic: "Các phép toán trên tập hợp",
-        difficulty: "TH",
+        difficulty: "TH"
       },
       {
         id: "t10-gk1-q4",
-        type: "true_false",
+        type: "multiple_choice",
         index: 4,
-        stem: "Xét hệ bất phương trình bậc nhất hai ẩn $\\begin{cases} x + y \\le 4 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$:",
-        subQuestions: [
-          { key: "a", text: "Miền nghiệm của hệ là một miền đa giác (tam giác kể cả biên).", isCorrect: true },
-          { key: "b", text: "Điểm $O(0; 0)$ thuộc miền nghiệm của hệ.", isCorrect: true },
-          { key: "c", text: "Các đỉnh của miền tam giác nghiệm là $(0;0), (4;0), (0;4)$.", isCorrect: true },
-          { key: "d", text: "Giá trị lớn nhất của biểu thức $F(x, y) = 2x + 3y$ trên miền nghiệm đạt tại đỉnh $(4; 0)$.", isCorrect: false },
+        stem: "Khảo sát 60 học sinh, có 35 bạn thích xem phim hoạt hình, 30 bạn thích xem phim khoa học viễn tưởng, và cả 60 bạn đều thích ít nhất một trong hai thể loại phim. Số bạn thích cả hai thể loại là:",
+        options: [
+          {
+            key: "A",
+            text: "5 bạn"
+          },
+          {
+            key: "B",
+            text: "8 bạn"
+          },
+          {
+            key: "C",
+            text: "10 bạn"
+          },
+          {
+            key: "D",
+            text: "12 bạn"
+          }
         ],
-        explanation: "Tại $(4; 0)$: $F = 8$. Tại $(0; 4)$: $F = 12$ (lớn nhất đạt tại $(0;4)$ chứ không phải $(4;0)$). Ý d là Sai.",
-        topic: "Quy hoạch tuyến tính đơn giản",
-        difficulty: "VD",
+        correctKey: "A",
+        explanation: "Áp dụng công thức lực lượng tập hợp: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) \\Rightarrow 60 = 35 + 30 - n(A \\cap B) \\Rightarrow n(A \\cap B) = 65 - 60 = 5$ bạn.",
+        topic: "Ứng dụng tập hợp giải toán thực tế",
+        difficulty: "VD"
       },
       {
         id: "t10-gk1-q5",
-        type: "short_answer",
+        type: "multiple_choice",
         index: 5,
-        stem: "Tính diện tích $S$ của tam giác $ABC$ biết $a = 6, b = 10$ và góc $C = 30^\\circ$.",
-        correctAnswer: "15",
-        acceptableAnswers: ["15"],
-        explanation: "$S = \\frac{1}{2} ab \\sin C = \\frac{1}{2} \\cdot 6 \\cdot 10 \\cdot \\sin 30^\\circ = 30 \\cdot 0,5 = 15$.",
-        topic: "Diện tích tam giác",
-        difficulty: "TH",
+        stem: "Miền nghiệm của bất phương trình $x \\le -2$ trên mặt phẳng tọa độ $Oxy$ là:",
+        options: [
+          {
+            key: "A",
+            text: "Nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ)."
+          },
+          {
+            key: "B",
+            text: "Nửa mặt phẳng nằm bên phải đường thẳng $x = -2$ (kể cả bờ)."
+          },
+          {
+            key: "C",
+            text: "Nửa mặt phẳng nằm phía trên đường thẳng $y = -2$."
+          },
+          {
+            key: "D",
+            text: "Nửa mặt phẳng nằm phía dưới đường thẳng $y = -2$."
+          }
+        ],
+        correctKey: "A",
+        explanation: "Đường thẳng $x = -2$ song song với trục tung $Oy$. Tập hợp các điểm có hoành độ $x \\le -2$ tạo thành nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ).",
+        topic: "Bất phương trình bậc nhất hai ẩn",
+        difficulty: "NB"
       },
       {
         id: "t10-gk1-q6",
-        type: "short_answer",
+        type: "multiple_choice",
         index: 6,
-        stem: "Một lớp có 45 học sinh, trong đó có 25 bạn thích môn Toán, 20 bạn thích môn Văn, 10 bạn thích cả hai môn. Hỏi có bao nhiêu bạn không thích cả hai môn?",
-        correctAnswer: "10",
-        acceptableAnswers: ["10", "10 bạn"],
-        explanation: "Số bạn thích ít nhất 1 môn: $25 + 20 - 10 = 35$. Số bạn không thích cả hai: $45 - 35 = 10$.",
-        topic: "Công thức lực lượng tập hợp",
-        difficulty: "TH",
+        stem: "Miền nghiệm của bất phương trình $-3x + 2y - 4 \\ge 0$ KHÔNG chứa điểm nào trong các điểm sau?",
+        options: [
+          {
+            key: "A",
+            text: "O(0; 0)"
+          },
+          {
+            key: "B",
+            text: "A(-2; 0)"
+          },
+          {
+            key: "C",
+            text: "B(-1; 1)"
+          },
+          {
+            key: "D",
+            text: "C(0; 3)"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Thay tọa độ $O(0; 0)$ vào vế trái: $-3(0) + 2(0) - 4 = -4 \\ge 0$ (khẳng định sai). Do đó miền nghiệm không chứa điểm $O(0; 0)$.",
+        topic: "Bất phương trình bậc nhất hai ẩn",
+        difficulty: "NB"
       },
-    ],
+      {
+        id: "t10-gk1-q7",
+        type: "multiple_choice",
+        index: 7,
+        stem: "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 2y \\le 6 \\end{cases}$ là một miền đa giác. Đó là hình gì?",
+        options: [
+          {
+            key: "A",
+            text: "Tam giác vuông"
+          },
+          {
+            key: "B",
+            text: "Tứ giác lồi"
+          },
+          {
+            key: "C",
+            text: "Hình thang vuông"
+          },
+          {
+            key: "D",
+            text: "Hình bình hành"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Miền nghiệm giới hạn bởi hai trục tọa độ $Ox, Oy$ và đường thẳng $3x + 2y = 6$. Ba đỉnh của miền nghiệm là $O(0; 0)$, $A(2; 0)$, $B(0; 3)$, tạo thành một tam giác vuông tại $O$.",
+        topic: "Hệ bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q8",
+        type: "multiple_choice",
+        index: 8,
+        stem: "Một đỉnh của miền nghiệm hệ $\\begin{cases} x + y \\le 5 \\\\ 2x - y \\le 4 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$ là giao điểm của hai đường thẳng $x + y = 5$ và $2x - y = 4$. Tọa độ đỉnh này là:",
+        options: [
+          {
+            key: "A",
+            text: "(3; 2)"
+          },
+          {
+            key: "B",
+            text: "(2; 3)"
+          },
+          {
+            key: "C",
+            text: "(1; 4)"
+          },
+          {
+            key: "D",
+            text: "(4; 1)"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Giải hệ phương trình tọa độ giao điểm: $\\begin{cases} x + y = 5 \\\\ 2x - y = 4 \\end{cases} \\Leftrightarrow \\begin{cases} 3x = 9 \\\\ y = 5 - x \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = 2 \\end{cases}$. Vậy tọa độ đỉnh là $(3; 2)$.",
+        topic: "Hệ bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q9",
+        type: "multiple_choice",
+        index: 9,
+        stem: "Giá trị của biểu thức $A = \\sin 120^\\circ + \\cos 150^\\circ$ bằng:",
+        options: [
+          {
+            key: "A",
+            text: "0"
+          },
+          {
+            key: "B",
+            text: "√3"
+          },
+          {
+            key: "C",
+            text: "-√3"
+          },
+          {
+            key: "D",
+            text: "1"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Áp dụng quan hệ góc bù: $\\sin 120^\\circ = \\sin(180^\\circ - 60^\\circ) = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$, và $\\cos 150^\\circ = -\\cos(180^\\circ - 30^\\circ) = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$. Do đó $A = \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{3}}{2} = 0$.",
+        topic: "Giá trị lượng giác của một góc từ 0° đến 180°",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-q10",
+        type: "multiple_choice",
+        index: 10,
+        stem: "Cho tam giác $ABC$ có $b = 4, c = 5$ và $\\widehat{A} = 60^\\circ$. Độ dài cạnh $a$ bằng:",
+        options: [
+          {
+            key: "A",
+            text: "√21"
+          },
+          {
+            key: "B",
+            text: "√41"
+          },
+          {
+            key: "C",
+            text: "√61"
+          },
+          {
+            key: "D",
+            text: "5"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc\\cos A = 4^2 + 5^2 - 2 \\cdot 4 \\cdot 5 \\cdot \\cos 60^\\circ = 16 + 25 - 40 \\cdot 0,5 = 21 \\Rightarrow a = \\sqrt{21}$.",
+        topic: "Định lý Cosin trong tam giác",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-q11",
+        type: "multiple_choice",
+        index: 11,
+        stem: "Tam giác $ABC$ có cạnh $b = 8$ và góc $\\widehat{B} = 45^\\circ$. Bán kính đường tròn ngoại tiếp $R$ của tam giác $ABC$ là:",
+        options: [
+          {
+            key: "A",
+            text: "4√2"
+          },
+          {
+            key: "B",
+            text: "8√2"
+          },
+          {
+            key: "C",
+            text: "4"
+          },
+          {
+            key: "D",
+            text: "8"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Theo định lý Sin: $\\frac{b}{\\sin B} = 2R \\Rightarrow 2R = \\frac{8}{\\sin 45^\\circ} = \\frac{8}{\\frac{\\sqrt{2}}{2}} = 8\\sqrt{2} \\Rightarrow R = 4\\sqrt{2}$.",
+        topic: "Định lý Sin trong tam giác",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q12",
+        type: "multiple_choice",
+        index: 12,
+        stem: "Tam giác $ABC$ có $a = 6, c = 8$ và $\\widehat{B} = 135^\\circ$. Diện tích của tam giác $ABC$ bằng:",
+        options: [
+          {
+            key: "A",
+            text: "12√2"
+          },
+          {
+            key: "B",
+            text: "24√2"
+          },
+          {
+            key: "C",
+            text: "12"
+          },
+          {
+            key: "D",
+            text: "24"
+          }
+        ],
+        correctKey: "A",
+        explanation: "Áp dụng công thức tính diện tích: $S = \\frac{1}{2} ac \\sin B = \\frac{1}{2} \\cdot 6 \\cdot 8 \\cdot \\sin 135^\\circ = 24 \\cdot \\frac{\\sqrt{2}}{2} = 12\\sqrt{2}$.",
+        topic: "Các công thức tính diện tích tam giác",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-q13",
+        type: "true_false",
+        index: 13,
+        stem: "Cho hai mệnh đề: $P$: \"$\\forall x \\in \\mathbb{R}, (x - 1)^2 \\ge 0$\" và $Q$: \"$\\exists n \\in \\mathbb{Z}, n^2 + 1 = 0$\". Xét tính Đúng hoặc Sai của mỗi phát biểu sau:",
+        subQuestions: [
+          {
+            key: "a",
+            text: "Mệnh đề $P$ là một mệnh đề đúng.",
+            isCorrect: true
+          },
+          {
+            key: "b",
+            text: "Mệnh đề $Q$ là một mệnh đề đúng.",
+            isCorrect: false
+          },
+          {
+            key: "c",
+            text: "Mệnh đề phủ định của $P$ là $\\overline{P}$: \"$\\exists x \\in \\mathbb{R}, (x - 1)^2 < 0$\".",
+            isCorrect: true
+          },
+          {
+            key: "d",
+            text: "Mệnh đề phủ định của $Q$ là $\\overline{Q}$: \"$\\forall n \\in \\mathbb{Z}, n^2 + 1 \\ne 0$\".",
+            isCorrect: true
+          }
+        ],
+        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG vì bình phương của mọi số thực luôn không âm: $(x - 1)^2 \\ge 0, \\forall x \\in \\mathbb{R}$.\n- b) SAI vì với mọi số nguyên $n$, $n^2 \\ge 0 \\Rightarrow n^2 + 1 \\ge 1 > 0$, do đó không tồn tại số nguyên nào để $n^2 + 1 = 0$.\n- c) ĐÚNG vì phủ định của \"$\\forall$\" là \"$\\exists$\" và phủ định của \"$\\ge$\" là \"$<$\".\n- d) ĐÚNG vì phủ định của \"$\\exists$\" là \"$\\forall$\" và phủ định của \"$=\"$ là \"$\\ne$\".",
+        topic: "Mệnh đề toán học & Kí hiệu với mọi, tồn tại",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q14",
+        type: "true_false",
+        index: 14,
+        stem: "Cho hai tập hợp $A = (-\\infty; 2]$ và $B = [0; 5)$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+        subQuestions: [
+          {
+            key: "a",
+            text: "Phần bù của $A$ trong tập số thực $\\mathbb{R}$ là $C_{\\mathbb{R}} A = (2; +\\infty)$.",
+            isCorrect: true
+          },
+          {
+            key: "b",
+            text: "Giao của hai tập hợp là $A \\cap B = [0; 2]$.",
+            isCorrect: true
+          },
+          {
+            key: "c",
+            text: "Hợp của hai tập hợp là $A \\cup B = (-\\infty; 5)$.",
+            isCorrect: true
+          },
+          {
+            key: "d",
+            text: "Hiệu của hai tập hợp là $B \\setminus A = (2; 5)$.",
+            isCorrect: true
+          }
+        ],
+        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG: $C_{\\mathbb{R}} A = \\mathbb{R} \\setminus (-\\infty; 2] = (2; +\\infty)$.\n- b) ĐÚNG: Biểu diễn trên trục số, phần chung của $(-\\infty; 2]$ và $[0; 5)$ là đoạn $[0; 2]$.\n- c) ĐÚNG: Hợp hai tập hợp lấy từ cực âm đến cận trên 5 (ngoặc tròn): $(-\\infty; 5)$.\n- d) ĐÚNG: $B \\setminus A$ là các phần tử thuộc $[0; 5)$ nhưng không thuộc $(-\\infty; 2]$, tức là các số thực lớn hơn 2 và nhỏ hơn 5: $(2; 5)$.",
+        topic: "Các phép toán trên tập hợp con của ℝ",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q15",
+        type: "true_false",
+        index: 15,
+        stem: "Cho hệ bất phương trình $\\begin{cases} x + y \\le 5 \\\\ x - 2y \\le 2 \\\\ x + 1 \\ge 0 \\end{cases}$ và điểm $A(m; 1)$. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+        subQuestions: [
+          {
+            key: "a",
+            text: "Đường thẳng biên $x + 1 = 0$ là đường thẳng song song với trục tung $Oy$.",
+            isCorrect: true
+          },
+          {
+            key: "b",
+            text: "Để điểm $A(m; 1)$ thỏa mãn bất phương trình thứ ba của hệ thì $m \\ge -1$.",
+            isCorrect: true
+          },
+          {
+            key: "c",
+            text: "Để điểm $A(m; 1)$ thuộc miền nghiệm của cả hệ bất phương trình thì $-1 \\le m \\le 4$.",
+            isCorrect: true
+          },
+          {
+            key: "d",
+            text: "Có tất cả 5 giá trị nguyên của tham số $m$ để điểm $A(m; 1)$ thuộc miền nghiệm của hệ.",
+            isCorrect: false
+          }
+        ],
+        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG: Phương trình $x = -1$ biểu diễn đường thẳng song song với trục tung $Oy$ và đi qua điểm $(-1; 0)$.\n- b) ĐÚNG: Thay $x = m$ vào $x + 1 \\ge 0$ ta được $m + 1 \\ge 0 \\Leftrightarrow m \\ge -1$.\n- c) ĐÚNG: Điểm $A(m; 1)$ thuộc miền nghiệm của hệ khi và chỉ khi:\n  $\\begin{cases} m + 1 \\le 5 \\\\ m - 2(1) \\le 2 \\\\ m + 1 \\ge 0 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 4 \\\\ m \\le 4 \\\\ m \\ge -1 \\end{cases} \\Leftrightarrow -1 \\le m \\le 4$.\n- d) SAI: Các số nguyên $m$ thỏa mãn $-1 \\le m \\le 4$ là $\\{-1; 0; 1; 2; 3; 4\\}$, có tất cả 6 giá trị nguyên chứ không phải 5.",
+        topic: "Hệ bất phương trình bậc nhất hai ẩn chứa tham số",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-q16",
+        type: "true_false",
+        index: 16,
+        stem: "Cho tam giác $ABC$ có $\\widehat{A} = 60^\\circ, \\widehat{B} = 45^\\circ$ và cạnh $b = 4$. Xét tính Đúng hoặc Sai của các phát biểu sau:",
+        subQuestions: [
+          {
+            key: "a",
+            text: "Số đo góc $\\widehat{C} = 75^\\circ$.",
+            isCorrect: true
+          },
+          {
+            key: "b",
+            text: "Bán kính đường tròn ngoại tiếp tam giác $ABC$ là $R = 2\\sqrt{2}$.",
+            isCorrect: true
+          },
+          {
+            key: "c",
+            text: "Độ dài cạnh $a = 2\\sqrt{6}$.",
+            isCorrect: true
+          },
+          {
+            key: "d",
+            text: "Độ dài cạnh $a$ ngắn hơn độ dài cạnh $b$.",
+            isCorrect: false
+          }
+        ],
+        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG: $\\widehat{C} = 180^\\circ - (\\widehat{A} + \\widehat{B}) = 180^\\circ - (60^\\circ + 45^\\circ) = 75^\\circ$.\n- b) ĐÚNG: Theo định lý Sin: $2R = \\frac{b}{\\sin B} = \\frac{4}{\\sin 45^\\circ} = \\frac{4}{\\frac{\\sqrt{2}}{2}} = 4\\sqrt{2} \\Rightarrow R = 2\\sqrt{2}$.\n- c) ĐÚNG: $a = 2R \\sin A = 4\\sqrt{2} \\cdot \\sin 60^\\circ = 4\\sqrt{2} \\cdot \\frac{\\sqrt{3}}{2} = 2\\sqrt{6}$.\n- d) SAI: Ta có $a = 2\\sqrt{6} = \\sqrt{24} \\approx 4,899 > b = 4$. Cạnh $a$ dài hơn cạnh $b$ (phù hợp với tính chất góc đối diện $60^\\circ > 45^\\circ$).",
+        topic: "Định lý Sin và giải tam giác",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q17",
+        type: "short_answer",
+        index: 17,
+        stem: "Trong một giải điền kinh gồm 32 vận động viên: có 19 bạn tham gia Chạy, 16 bạn tham gia Nhảy xa, và 7 bạn tham gia cả hai nội dung. Hỏi có bao nhiêu vận động viên chỉ tham gia đúng một nội dung thi đấu?",
+        correctAnswer: "21",
+        acceptableAnswers: [
+          "21",
+          "21 vận động viên",
+          "hai mươi mốt"
+        ],
+        explanation: "Số vận động viên chỉ tham gia Chạy là: $19 - 7 = 12$ người.\nSố vận động viên chỉ tham gia Nhảy xa là: $16 - 7 = 9$ người.\nVậy số vận động viên chỉ tham gia đúng một nội dung thi đấu là: $12 + 9 = 21$ người.",
+        topic: "Ứng dụng biểu đồ Ven đếm số phần tử",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q18",
+        type: "short_answer",
+        index: 18,
+        stem: "Có bao nhiêu giá trị nguyên của tham số $m \\in [-10; 10]$ để đoạn $[m; m + 3]$ là tập con của đoạn $[-2; 6]$?",
+        correctAnswer: "6",
+        acceptableAnswers: [
+          "6",
+          "sáu"
+        ],
+        explanation: "Điều kiện để $[m; m + 3] \\subset [-2; 6]$ là: $\\begin{cases} m \\ge -2 \\\\ m + 3 \\le 6 \\end{cases} \\Leftrightarrow \\begin{cases} m \\ge -2 \\\\ m \\le 3 \\end{cases} \\Leftrightarrow -2 \\le m \\le 3$.\nVì $m$ nguyên và thuộc $[-10; 10]$ nên $m \\in \\{-2; -1; 0; 1; 2; 3\\}$. Có tất cả 6 giá trị nguyên.",
+        topic: "Tập hợp con chứa tham số",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-q19",
+        type: "short_answer",
+        index: 19,
+        stem: "Cho cặp số $(x; y)$ thuộc miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ 2x + y \\le 8 \\end{cases}$. Tìm giá trị lớn nhất của biểu thức mục tiêu $F(x, y) = 2x + 3y$.",
+        correctAnswer: "18",
+        acceptableAnswers: [
+          "18",
+          "mười tám"
+        ],
+        explanation: "Miền nghiệm của hệ là tứ giác lồi $OABC$ với tọa độ các đỉnh:\n- $O(0; 0) \\Rightarrow F(0; 0) = 0$.\n- $A(4; 0)$ (giao của $2x + y = 8$ và $y = 0$) $\\Rightarrow F(4; 0) = 2(4) + 0 = 8$.\n- $B(2; 4)$ (giao của $x + y = 6$ và $2x + y = 8$) $\\Rightarrow F(2; 4) = 2(2) + 3(4) = 16$.\n- $C(0; 6)$ (giao của $x + y = 6$ và $x = 0$) $\\Rightarrow F(0; 6) = 2(0) + 3(6) = 18$.\nSo sánh các giá trị, ta được giá trị lớn nhất của $F(x, y)$ bằng 18 đạt tại điểm $C(0; 6)$.",
+        topic: "Bài toán quy hoạch tuyến tính tối ưu hàm mục tiêu",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-q20",
+        type: "short_answer",
+        index: 20,
+        stem: "Cho tam giác $ABC$ có $b = 3, c = 4$ và góc $\\widehat{A} = 60^\\circ$. Tính giá trị của $a^2$.",
+        correctAnswer: "13",
+        acceptableAnswers: [
+          "13",
+          "mười ba"
+        ],
+        explanation: "Theo định lý Cosin trong tam giác $ABC$:\n$a^2 = b^2 + c^2 - 2bc\\cos A = 3^2 + 4^2 - 2 \\cdot 3 \\cdot 4 \\cdot \\cos 60^\\circ = 9 + 16 - 24 \\cdot 0,5 = 25 - 12 = 13$.",
+        topic: "Định lý Cosin tính bình phương cạnh",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-q21",
+        type: "short_answer",
+        index: 21,
+        stem: "Tam giác $ABC$ có độ dài ba cạnh là $a = 6, b = 8, c = 10$. Tính bán kính đường tròn nội tiếp $r$ của tam giác $ABC$.",
+        correctAnswer: "2",
+        acceptableAnswers: [
+          "2",
+          "hai"
+        ],
+        explanation: "Nhận xét: $a^2 + b^2 = 6^2 + 8^2 = 36 + 64 = 100 = 10^2 = c^2$, do đó tam giác $ABC$ vuông tại $C$.\nDiện tích tam giác: $S = \\frac{1}{2} a b = \\frac{1}{2} \\cdot 6 \\cdot 8 = 24$.\nNửa chu vi tam giác: $p = \\frac{a + b + c}{2} = \\frac{6 + 8 + 10}{2} = 12$.\nBán kính đường tròn nội tiếp: $r = \\frac{S}{p} = \\frac{24}{12} = 2$.",
+        topic: "Bán kính đường tròn nội tiếp tam giác",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-q22",
+        type: "short_answer",
+        index: 22,
+        stem: "Tam giác $ABC$ có diện tích $S = 15$ và bán kính đường tròn ngoại tiếp $R = 5$. Tính tích độ dài ba cạnh $a \\cdot b \\cdot c$ của tam giác đó.",
+        correctAnswer: "300",
+        acceptableAnswers: [
+          "300",
+          "ba trăm"
+        ],
+        explanation: "Áp dụng hệ thức liên hệ giữa diện tích, các cạnh và bán kính đường tròn ngoại tiếp: $S = \\frac{abc}{4R} \\Rightarrow abc = 4RS$.\nThay số: $abc = 4 \\cdot 5 \\cdot 15 = 300$.",
+        topic: "Hệ thức diện tích và bán kính ngoại tiếp",
+        difficulty: "VD"
+      }
+    ]
   },
 
   "t10-ck1": {

@@ -37,31 +37,62 @@ export function formatMathInText(rawText?: string | null): string {
   // 2.0. Loại bỏ các backslash escape thừa ngoài khối math (ví dụ: 6\ 205 -> 6 205, ;\  -> ; )
   protectedText = protectedText.replace(/\\(\s+)/g, "$1");
 
-  // 2.1. Thay thế ký hiệu góc: ∠xOy -> $\widehat{xOy}$
+  // 2.1. Tự động bảo vệ khoảng/nửa khoảng chứa lệnh LaTeX chưa bọc $...$: (-\infty; +\infty), [0; +\infty)
+  protectedText = protectedText.replace(/([(\[][^)\]\n]*?\\[a-zA-Z]+[^)\]\n]*?[)\]])/g, (_, math) => {
+    const idx = mathBlocks.length;
+    mathBlocks.push(math);
+    return `___MATH_BLOCK_INLINE_${idx}___`;
+  });
+
+  // 2.2. Tự động bảo vệ các lệnh LaTeX độc lập chưa có $: \sqrt{3}, \vec{a}, \frac{a}{b}, \pm, \infty
+  protectedText = protectedText.replace(/(\\[a-zA-Z]+(?:\{[^}]*\}|\^\{[^}]*\}|_[^}\s]+)*(?:\s*[\+\-\*\/=><]\s*\S+)?)/g, (_, math) => {
+    const idx = mathBlocks.length;
+    mathBlocks.push(math);
+    return `___MATH_BLOCK_INLINE_${idx}___`;
+  });
+
+  // 2.3. Thay thế ký hiệu góc: ∠xOy -> $\widehat{xOy}$
   protectedText = protectedText.replace(/∠([a-zA-Z0-9]+)/g, (_, angle) => {
     return `$\\widehat{${angle}}$`;
   });
 
-  // 2.2. Thay thế hỗn số: 2 3/4, 3 1/2 -> $2\frac{3}{4}$
+  // 2.4. Thay thế hỗn số: 2 3/4, 3 1/2 -> $2\frac{3}{4}$
   protectedText = protectedText.replace(/(^|[\s(,;=><+\-])(\d+)\s+(\d+)\/(\d+)(?=[\s),;=><+\-]|$)/g, (_, prefix, whole, num, den) => {
     return `${prefix}$${whole}\\frac{${num}}{${den}}$`;
   });
 
-  // 2.3. Thay thế phân số dạng số và đại số: -3/4, 6/-8, 21/28, x/4, a/b
+  // 2.5. Thay thế phân số dạng số và đại số: -3/4, 6/-8, 21/28, x/4, a/b
   protectedText = protectedText.replace(/(^|[\s(,;=><+\-])([xXa-zA-Z]|-?\d+)\s*\/\s*([a-zA-Z]|-?\d+)(?=[\s),;=><+\-]|$)/g, (_, prefix, num, den) => {
     return `${prefix}$\\frac{${num}}{${den}}$`;
   });
 
-  // 2.4. Chuẩn hóa ký hiệu toán học unicode đứng một mình sang LaTeX
+  // 2.6. Chuẩn hóa căn bậc hai unicode: √2, 4√2, -√3 -> $\sqrt{2}$, $4\sqrt{2}$, $-\sqrt{3}$
+  protectedText = protectedText.replace(/(^|[\s(,;=><+\-])(-?\d*)√(\d+)(?=[\s),;=><+\-]|$)/g, (_, prefix, coef, num) => {
+    if (!coef || coef === "") return `${prefix}$\\sqrt{${num}}$`;
+    if (coef === "-") return `${prefix}$-\\sqrt{${num}}$`;
+    return `${prefix}$${coef}\\sqrt{${num}}$`;
+  });
+
+  // 2.7. Tự động bọc khoảng số hoặc tọa độ độc lập: [0; 4), (1; 7], (3; 2), A(-2; 0)
+  if (/^\s*(?:[a-zA-Z]\s*)?[(\[]\s*-?\d+(?:[\.,]\d+)?\s*;\s*-?\d+(?:[\.,]\d+)?\s*[)\]]\s*$/.test(protectedText)) {
+    const trimmed = protectedText.trim();
+    const idx = mathBlocks.length;
+    mathBlocks.push(trimmed);
+    protectedText = `___MATH_BLOCK_INLINE_${idx}___`;
+  }
+
+  // 2.8. Chuẩn hóa ký hiệu toán học unicode đứng một mình sang LaTeX
   protectedText = protectedText.replace(/(^|[\s])([a-zA-Z0-9]+)\s*∈\s*([a-zA-Z0-9ℕℤℚℝ*]+)(?=[\s,;.]|$)/g, (_, prefix, elem, set) => {
     let formattedSet = set === "ℕ*" ? "\\mathbb{N}^*" : set === "ℕ" ? "\\mathbb{N}" : set === "ℤ" ? "\\mathbb{Z}" : set;
     return `${prefix}$${elem} \\in ${formattedSet}$`;
   });
 
-  // 2.5. Tự động chuyển đổi chuỗi chỉ chứa số nguyên/thập phân/phân số đứng độc lập sang LaTeX
+  // 2.9. Tự động chuyển đổi chuỗi chỉ chứa số nguyên/thập phân/phân số đứng độc lập sang LaTeX
   if (/^\s*-?\d+(?:[\.,]\d+)?\s*$/.test(protectedText)) {
     const numClean = protectedText.trim().replace('.', '{,}');
-    protectedText = `$${numClean}$`;
+    const idx = mathBlocks.length;
+    mathBlocks.push(numClean);
+    protectedText = `___MATH_BLOCK_INLINE_${idx}___`;
   }
 
   // Bước 3: Khôi phục các khối LaTeX đã bảo vệ

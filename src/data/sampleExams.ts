@@ -1750,19 +1750,19 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "(1; 7)"
+            text: "$(1; 7)$"
           },
           {
             key: "B",
-            text: "[1; 7]"
+            text: "$[1; 7]$"
           },
           {
             key: "C",
-            text: "(1; 7]"
+            text: "$(1; 7]$"
           },
           {
             key: "D",
-            text: "[1; 7)"
+            text: "$[1; 7)$"
           }
         ],
         correctKey: "C",
@@ -1778,19 +1778,19 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "[0; 4)"
+            text: "$[0; 4)$"
           },
           {
             key: "B",
-            text: "(0; 4)"
+            text: "$(0; 4)$"
           },
           {
             key: "C",
-            text: "[0; 4]"
+            text: "$[0; 4]$"
           },
           {
             key: "D",
-            text: "(-\\infty; +\\infty)"
+            text: "$(-\\infty; +\\infty)$"
           }
         ],
         correctKey: "A",
@@ -1806,22 +1806,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "5 bạn"
+            text: "$10$ bạn"
           },
           {
             key: "B",
-            text: "8 bạn"
+            text: "$5$ bạn"
           },
           {
             key: "C",
-            text: "10 bạn"
+            text: "$8$ bạn"
           },
           {
             key: "D",
-            text: "12 bạn"
+            text: "$12$ bạn"
           }
         ],
-        correctKey: "A",
+        correctKey: "B",
         explanation: "Áp dụng công thức lực lượng tập hợp: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) \\Rightarrow 60 = 35 + 30 - n(A \\cap B) \\Rightarrow n(A \\cap B) = 65 - 60 = 5$ bạn.",
         topic: "Ứng dụng tập hợp giải toán thực tế",
         difficulty: "VD"
@@ -1834,22 +1834,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "Nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ)."
-          },
-          {
-            key: "B",
             text: "Nửa mặt phẳng nằm bên phải đường thẳng $x = -2$ (kể cả bờ)."
           },
           {
-            key: "C",
+            key: "B",
             text: "Nửa mặt phẳng nằm phía trên đường thẳng $y = -2$."
+          },
+          {
+            key: "C",
+            text: "Nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ)."
           },
           {
             key: "D",
             text: "Nửa mặt phẳng nằm phía dưới đường thẳng $y = -2$."
           }
         ],
-        correctKey: "A",
+        correctKey: "C",
         explanation: "Đường thẳng $x = -2$ song song với trục tung $Oy$. Tập hợp các điểm có hoành độ $x \\le -2$ tạo thành nửa mặt phẳng nằm bên trái đường thẳng $x = -2$ (kể cả bờ).",
         topic: "Bất phương trình bậc nhất hai ẩn",
         difficulty: "NB"
@@ -1862,22 +1862,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "O(0; 0)"
+            text: "$A(-2; 0)$"
           },
           {
             key: "B",
-            text: "A(-2; 0)"
+            text: "$B(-1; 1)$"
           },
           {
             key: "C",
-            text: "B(-1; 1)"
+            text: "$C(0; 3)$"
           },
           {
             key: "D",
-            text: "C(0; 3)"
+            text: "$O(0; 0)$"
           }
         ],
-        correctKey: "A",
+        correctKey: "D",
         explanation: "Thay tọa độ $O(0; 0)$ vào vế trái: $-3(0) + 2(0) - 4 = -4 \\ge 0$ (khẳng định sai). Do đó miền nghiệm không chứa điểm $O(0; 0)$.",
         topic: "Bất phương trình bậc nhất hai ẩn",
         difficulty: "NB"
@@ -1890,22 +1890,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "Tam giác vuông"
+            text: "Hình thang vuông"
           },
           {
             key: "B",
-            text: "Tứ giác lồi"
+            text: "Tam giác vuông"
           },
           {
             key: "C",
-            text: "Hình thang vuông"
+            text: "Tứ giác lồi"
           },
           {
             key: "D",
             text: "Hình bình hành"
           }
         ],
-        correctKey: "A",
+        correctKey: "B",
         explanation: "Miền nghiệm giới hạn bởi hai trục tọa độ $Ox, Oy$ và đường thẳng $3x + 2y = 6$. Ba đỉnh của miền nghiệm là $O(0; 0)$, $A(2; 0)$, $B(0; 3)$, tạo thành một tam giác vuông tại $O$.",
         topic: "Hệ bất phương trình bậc nhất hai ẩn",
         difficulty: "TH"
@@ -1918,22 +1918,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "(3; 2)"
+            text: "$(2; 3)$"
           },
           {
             key: "B",
-            text: "(2; 3)"
+            text: "$(1; 4)$"
           },
           {
             key: "C",
-            text: "(1; 4)"
+            text: "$(3; 2)$"
           },
           {
             key: "D",
-            text: "(4; 1)"
+            text: "$(4; 1)$"
           }
         ],
-        correctKey: "A",
+        correctKey: "C",
         explanation: "Giải hệ phương trình tọa độ giao điểm: $\\begin{cases} x + y = 5 \\\\ 2x - y = 4 \\end{cases} \\Leftrightarrow \\begin{cases} 3x = 9 \\\\ y = 5 - x \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = 2 \\end{cases}$. Vậy tọa độ đỉnh là $(3; 2)$.",
         topic: "Hệ bất phương trình bậc nhất hai ẩn",
         difficulty: "TH"
@@ -1946,22 +1946,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "0"
+            text: "$\\sqrt{3}$"
           },
           {
             key: "B",
-            text: "√3"
+            text: "$-\\sqrt{3}$"
           },
           {
             key: "C",
-            text: "-√3"
+            text: "$1$"
           },
           {
             key: "D",
-            text: "1"
+            text: "$0$"
           }
         ],
-        correctKey: "A",
+        correctKey: "D",
         explanation: "Áp dụng quan hệ góc bù: $\\sin 120^\\circ = \\sin(180^\\circ - 60^\\circ) = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$, và $\\cos 150^\\circ = -\\cos(180^\\circ - 30^\\circ) = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$. Do đó $A = \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{3}}{2} = 0$.",
         topic: "Giá trị lượng giác của một góc từ 0° đến 180°",
         difficulty: "NB"
@@ -1974,22 +1974,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "√21"
+            text: "$\\sqrt{41}$"
           },
           {
             key: "B",
-            text: "√41"
+            text: "$\\sqrt{21}$"
           },
           {
             key: "C",
-            text: "√61"
+            text: "$\\sqrt{61}$"
           },
           {
             key: "D",
-            text: "5"
+            text: "$5$"
           }
         ],
-        correctKey: "A",
+        correctKey: "B",
         explanation: "Theo định lý Cosin: $a^2 = b^2 + c^2 - 2bc\\cos A = 4^2 + 5^2 - 2 \\cdot 4 \\cdot 5 \\cdot \\cos 60^\\circ = 16 + 25 - 40 \\cdot 0,5 = 21 \\Rightarrow a = \\sqrt{21}$.",
         topic: "Định lý Cosin trong tam giác",
         difficulty: "NB"
@@ -2002,22 +2002,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "4√2"
+            text: "$8\\sqrt{2}$"
           },
           {
             key: "B",
-            text: "8√2"
+            text: "$4$"
           },
           {
             key: "C",
-            text: "4"
+            text: "$4\\sqrt{2}$"
           },
           {
             key: "D",
-            text: "8"
+            text: "$8$"
           }
         ],
-        correctKey: "A",
+        correctKey: "C",
         explanation: "Theo định lý Sin: $\\frac{b}{\\sin B} = 2R \\Rightarrow 2R = \\frac{8}{\\sin 45^\\circ} = \\frac{8}{\\frac{\\sqrt{2}}{2}} = 8\\sqrt{2} \\Rightarrow R = 4\\sqrt{2}$.",
         topic: "Định lý Sin trong tam giác",
         difficulty: "TH"
@@ -2030,22 +2030,22 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         options: [
           {
             key: "A",
-            text: "12√2"
+            text: "$24\\sqrt{2}$"
           },
           {
             key: "B",
-            text: "24√2"
+            text: "$12$"
           },
           {
             key: "C",
-            text: "12"
+            text: "$24$"
           },
           {
             key: "D",
-            text: "24"
+            text: "$12\\sqrt{2}$"
           }
         ],
-        correctKey: "A",
+        correctKey: "D",
         explanation: "Áp dụng công thức tính diện tích: $S = \\frac{1}{2} ac \\sin B = \\frac{1}{2} \\cdot 6 \\cdot 8 \\cdot \\sin 135^\\circ = 24 \\cdot \\frac{\\sqrt{2}}{2} = 12\\sqrt{2}$.",
         topic: "Các công thức tính diện tích tam giác",
         difficulty: "VD"
@@ -2099,8 +2099,8 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
           },
           {
             key: "c",
-            text: "Hợp của hai tập hợp là $A \\cup B = (-\\infty; 5)$.",
-            isCorrect: true
+            text: "Hợp của hai tập hợp là $A \\cup B = (-\\infty; 5]$.",
+            isCorrect: false
           },
           {
             key: "d",
@@ -2108,7 +2108,7 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
             isCorrect: true
           }
         ],
-        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG: $C_{\\mathbb{R}} A = \\mathbb{R} \\setminus (-\\infty; 2] = (2; +\\infty)$.\n- b) ĐÚNG: Biểu diễn trên trục số, phần chung của $(-\\infty; 2]$ và $[0; 5)$ là đoạn $[0; 2]$.\n- c) ĐÚNG: Hợp hai tập hợp lấy từ cực âm đến cận trên 5 (ngoặc tròn): $(-\\infty; 5)$.\n- d) ĐÚNG: $B \\setminus A$ là các phần tử thuộc $[0; 5)$ nhưng không thuộc $(-\\infty; 2]$, tức là các số thực lớn hơn 2 và nhỏ hơn 5: $(2; 5)$.",
+        explanation: "Phân tích chi tiết từng ý:\n- a) ĐÚNG: $C_{\\mathbb{R}} A = \\mathbb{R} \\setminus (-\\infty; 2] = (2; +\\infty)$.\n- b) ĐÚNG: Biểu diễn trên trục số, phần chung của $(-\\infty; 2]$ và $[0; 5)$ là đoạn $[0; 2]$.\n- c) SAI: Vì $5 \\notin B$ nên cận trên là ngoặc tròn: $A \\cup B = (-\\infty; 5)$, khẳng định dùng ngoặc vuông $(-\\infty; 5]$ là sai.\n- d) ĐÚNG: $B \\setminus A$ là các phần tử thuộc $[0; 5)$ nhưng không thuộc $(-\\infty; 2]$, tức là các số thực lớn hơn 2 và nhỏ hơn 5: $(2; 5)$.",
         topic: "Các phép toán trên tập hợp con của ℝ",
         difficulty: "TH"
       },

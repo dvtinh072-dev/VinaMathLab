@@ -12153,16 +12153,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Định vị radar hàng hải, dẫn đường máy bay và mô phỏng hợp lực trong mặt phẳng tọa độ",
   "scenarioFrames": [],
   "interactiveType": "vector",
-  "youtubeVideoId": "Qp4v2v0vVzU",
-  "youtubeVideoTitle": "Bài Giảng Video: Bài 10 - Vectơ trong mặt phẳng tọa độ - Toán 10 KNTT",
+  "youtubeVideoId": "J7AkmoSmeP0",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 10 - Vectơ trong mặt phẳng toạ độ (Tiết 1) - Toán 10 KNTT",
   "youtubeVideos": [
     {
-      "id": "Qp4v2v0vVzU",
-      "title": "Tiết 1: Tọa độ của vectơ đối với hệ trục tọa độ"
+      "id": "J7AkmoSmeP0",
+      "title": "Tiết 1: Tọa độ của vectơ đối với hệ trục toạ độ"
     },
     {
-      "id": "pT89uOqFjXk",
-      "title": "Tiết 2: Biểu thức tọa độ của các phép toán vectơ & Ứng dụng"
+      "id": "CpeLBot6BOg",
+      "title": "Tiết 2: Biểu thức tọa độ của các phép toán vectơ"
+    },
+    {
+      "id": "zr0fn4dxcvY",
+      "title": "Tiết 3: Luyện tập & Giải bài tập Vectơ trong mặt phẳng toạ độ"
     }
   ],
   "theorySections": [
@@ -12918,16 +12922,24 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "scenarioTitle": "Tình huống thực tế: Tính công cơ học của lực kéo xà lan, lực cản và ứng dụng hình học giải tích",
   "scenarioFrames": [],
   "interactiveType": "vector",
-  "youtubeVideoId": "9gq_M09s0V0",
-  "youtubeVideoTitle": "Bài Giảng Video: Bài 11 - Tích vô hướng của hai vectơ - Toán 10 KNTT",
+  "youtubeVideoId": "iGPpKRIPx3U",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 11 - Tích vô hướng của hai vectơ (Tiết 1) - Toán 10 KNTT",
   "youtubeVideos": [
     {
-      "id": "9gq_M09s0V0",
-      "title": "Tiết 1: Định nghĩa tích vô hướng & Các tính chất cơ bản"
+      "id": "iGPpKRIPx3U",
+      "title": "Tiết 1: Góc giữa hai vectơ & Định nghĩa tích vô hướng"
     },
     {
-      "id": "Q2iX_vj8vLo",
-      "title": "Tiết 2: Biểu thức tọa độ của tích vô hướng, độ dài & góc"
+      "id": "9GQYFqyx9s4",
+      "title": "Tiết 2: Các tính chất của tích vô hướng"
+    },
+    {
+      "id": "jK9nhkTWgnc",
+      "title": "Tiết 3: Biểu thức tọa độ của tích vô hướng"
+    },
+    {
+      "id": "QlMSDUNtqKE",
+      "title": "Tiết 4: Ứng dụng & Giải bài tập tích vô hướng của hai vectơ"
     }
   ],
   "theorySections": [

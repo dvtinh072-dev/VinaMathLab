@@ -687,6 +687,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t10-b9-tich-vector-voi-mot-so", lessonNumber: 9, title: "Bài 9: Tích của một vector với một số", strand: "hinhhoc", description: "Điều kiện hai vector cùng phương và ba điểm thẳng hàng.", keyFormulas: ["\\vec{a} = k \\vec{b} \\Leftrightarrow \\vec{a} \\parallel \\vec{b}"], hasInteractive: "vector" },
           { id: "t10-b10-vector-trong-mat-phang-toa-do", lessonNumber: 10, title: "Bài 10: Vector trong mặt phẳng tọa độ", strand: "hinhhoc", description: "Tọa độ điểm và tọa độ vector trên hệ trục Oxy.", keyFormulas: ["\\vec{u} = (x; y) \\Leftrightarrow \\vec{u} = x\\vec{i} + y\\vec{j}"], hasInteractive: "vector" },
           { id: "t10-b11-tich-vo-huong-hai-vector", lessonNumber: 11, title: "Bài 11: Tích vô hướng của hai vector", strand: "hinhhoc", description: "Định nghĩa góc giữa hai vector và biểu thức tọa độ của tích vô hướng.", keyFormulas: ["\\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| \\cos(\\vec{u}, \\vec{v}) = u_1 v_1 + u_2 v_2"], hasInteractive: "vector" },
+          { id: "t10-on-tap-chuong-4", lessonNumber: 0, title: "Ôn tập cuối chương IV", strand: "hinhhoc", description: "Hệ thống hóa toàn bộ kiến thức Vectơ với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\vec{a} = k\\vec{b}", "\\vec{u} = (x; y)", "\\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| \\cos\\theta = x_1 x_2 + y_1 y_2"], hasInteractive: "vector" },
         ],
       },
       {

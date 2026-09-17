@@ -3450,54 +3450,50 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         svgDiagram: `<svg viewBox="0 0 320 280" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <pattern id="hatch_de5_q7" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.3" />
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.3" stroke-opacity="0.85" />
     </pattern>
     <marker id="arr_de5_q7" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
     </marker>
   </defs>
 
-  <!-- Vùng gạch chéo nửa mặt phẳng bị loại 2x + y > 0 -->
-  <polygon points="90,20 300,20 300,260 210,260" fill="url(#hatch_de5_q7)" fill-opacity="0.85" />
+  <!-- Khung viền hình chữ nhật bao quanh biểu đồ giống hệt đề thi -->
+  <rect x="30" y="20" width="260" height="240" fill="#0b1120" stroke="#475569" stroke-width="1.2" />
 
-  <!-- Hệ trục tọa độ chuẩn tỉ lệ 1:1, mỗi đơn vị = 40px, gốc O(150, 140) -->
-  <line x1="30" y1="140" x2="280" y2="140" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
-  <text x="283" y="144" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">x</text>
+  <!-- Nửa mặt phẳng bên phải đường thẳng d bị gạch chéo -->
+  <polygon points="85,20 290,20 290,260 205,260" fill="url(#hatch_de5_q7)" />
 
-  <line x1="150" y1="260" x2="150" y2="25" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
-  <text x="156" y="22" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">y</text>
+  <!-- Trục hoành Ox (chuẩn tỉ lệ 1:1, đơn vị = 45px, gốc O(130, 110)) -->
+  <line x1="30" y1="110" x2="285" y2="110" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
+  <text x="278" y="104" fill="#cbd5e1" font-size="13" font-style="italic" font-weight="bold">x</text>
+
+  <!-- Trục tung Oy -->
+  <line x1="130" y1="260" x2="130" y2="25" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
+  <text x="136" y="34" fill="#cbd5e1" font-size="13" font-style="italic" font-weight="bold">y</text>
 
   <!-- Gốc tọa độ O -->
-  <text x="134" y="156" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
+  <text x="116" y="126" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
 
-  <!-- Vạch và số trên Ox: -2, -1, 1, 2 -->
-  <line x1="70" y1="137" x2="70" y2="143" stroke="#64748b" stroke-width="1.2" />
-  <text x="70" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">-2</text>
-  <line x1="110" y1="137" x2="110" y2="143" stroke="#64748b" stroke-width="1.2" />
-  <text x="110" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">-1</text>
-  <line x1="190" y1="137" x2="190" y2="143" stroke="#64748b" stroke-width="1.2" />
-  <text x="190" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">1</text>
-  <line x1="230" y1="137" x2="230" y2="143" stroke="#64748b" stroke-width="1.2" />
-  <text x="230" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">2</text>
+  <!-- Vạch và số trên Ox: -1 và 1 -->
+  <line x1="85" y1="107" x2="85" y2="113" stroke="#94a3b8" stroke-width="1.2" />
+  <text x="85" y="126" fill="#94a3b8" font-size="11" text-anchor="middle">-1</text>
+  <line x1="175" y1="107" x2="175" y2="113" stroke="#94a3b8" stroke-width="1.2" />
+  <text x="175" y="126" fill="#94a3b8" font-size="11" text-anchor="middle">1</text>
 
-  <!-- Vạch và số trên Oy: -2, -1, 1, 2 -->
-  <line x1="147" y1="60" x2="153" y2="60" stroke="#64748b" stroke-width="1.2" />
-  <text x="138" y="64" fill="#94a3b8" font-size="11" text-anchor="end">2</text>
-  <line x1="147" y1="100" x2="153" y2="100" stroke="#64748b" stroke-width="1.2" />
-  <text x="138" y="104" fill="#94a3b8" font-size="11" text-anchor="end">1</text>
-  <line x1="147" y1="180" x2="153" y2="180" stroke="#64748b" stroke-width="1.2" />
-  <text x="138" y="184" fill="#94a3b8" font-size="11" text-anchor="end">-1</text>
-  <line x1="147" y1="220" x2="153" y2="220" stroke="#64748b" stroke-width="1.2" />
-  <text x="138" y="224" fill="#94a3b8" font-size="11" text-anchor="end">-2</text>
+  <!-- Vạch và số trên Oy: -1 và -2 -->
+  <line x1="127" y1="155" x2="133" y2="155" stroke="#94a3b8" stroke-width="1.2" />
+  <text x="122" y="159" fill="#94a3b8" font-size="11" text-anchor="end">-1</text>
+  <line x1="127" y1="200" x2="133" y2="200" stroke="#94a3b8" stroke-width="1.2" />
+  <text x="122" y="204" fill="#94a3b8" font-size="11" text-anchor="end">-2</text>
 
-  <!-- Đường thẳng d: 2x + y = 0 đi qua (0;0), (-1; 2)->(110,60), (1;-2)->(190,220) -->
-  <line x1="90" y1="20" x2="210" y2="260" stroke="#f43f5e" stroke-width="2.2" />
-  <text x="80" y="32" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
+  <!-- Đường dóng nét đứt chuẩn xác tới điểm (1; -2) -->
+  <line x1="175" y1="110" x2="175" y2="200" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3" />
+  <line x1="130" y1="200" x2="175" y2="200" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3" />
+  <circle cx="175" cy="200" r="2.5" fill="#facc15" />
 
-  <!-- Đường dóng nét đứt điểm (-1; 2) -->
-  <line x1="110" y1="140" x2="110" y2="60" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3" />
-  <line x1="110" y1="60" x2="150" y2="60" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3" />
-  <circle cx="110" cy="60" r="3" fill="#facc15" />
+  <!-- Đường thẳng d: 2x + y = 0 đi qua (0;0) và (1;-2) -->
+  <line x1="85" y1="20" x2="205" y2="260" stroke="#f43f5e" stroke-width="2.2" />
+  <text x="70" y="36" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
 </svg>`
       },
       {

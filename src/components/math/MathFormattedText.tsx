@@ -18,9 +18,12 @@ interface MathFormattedTextProps {
 export function formatMathInText(rawText?: string | null): string {
   if (!rawText || typeof rawText !== "string") return "";
 
+  // Chuẩn hóa ký tự xuống dòng literal \\n thành \n
+  const unescapedText = rawText.replace(/\\n/g, "\n");
+
   // Bước 1: Bảo vệ các khối LaTeX có sẵn $...$ hoặc $$...$$
   const mathBlocks: string[] = [];
-  let protectedText = rawText.replace(/\$\$([\s\S]+?)\$\$/g, (_, math) => {
+  let protectedText = unescapedText.replace(/\$\$([\s\S]+?)\$\$/g, (_, math) => {
     const idx = mathBlocks.length;
     mathBlocks.push(math);
     return `___MATH_BLOCK_DISPLAY_${idx}___`;
@@ -117,14 +120,70 @@ export function normalizeVectorNotation(latex: string): string {
   return latex.replace(/\\vec\{([A-Z][A-Z0-9']{1,})\}/g, (_, points) => `\\overrightarrow{${points}}`);
 }
 
+/**
+ * Chuyển đổi Markdown Table sang HTML Table chuẩn hóa, hỗ trợ responsive & KaTeX
+ */
+export function convertMarkdownTablesToHtml(src: string): string {
+  if (!src || !src.includes("|")) return src;
+
+  // Chuẩn hóa \n trước
+  const normalized = src.replace(/\\n/g, "\n");
+
+  // Regex tìm khối bảng markdown: bắt đầu và kết thúc bởi các dòng có chứa |
+  const mdTableRegex = /(?:^|\n)(\|[^\n]+\|\r?\n\|[-:\s|]+\|\r?\n(?:\|[^\n]+\|\r?\n?)+)/g;
+  return normalized.replace(mdTableRegex, (match, tableBlock) => {
+    const lines = tableBlock
+      .trim()
+      .split(/\r?\n/)
+      .map((l: string) => l.trim())
+      .filter((l: string) => l.startsWith("|") && l.endsWith("|"));
+
+    if (lines.length < 2) return match;
+
+    const parseRow = (line: string) => {
+      return line
+        .slice(1, -1)
+        .split("|")
+        .map((cell: string) => cell.trim());
+    };
+
+    const headerCells = parseRow(lines[0]);
+    // lines[1] là hàng phân cách |---|---|
+    const bodyRows = lines.slice(2).map(parseRow);
+
+    let html = `<div class="overflow-x-auto my-3"><table class="w-full max-w-xl mx-auto text-center border-collapse border border-slate-700 text-sm bg-slate-900/60 rounded-lg shadow-sm"><thead><tr class="border-b border-slate-700 bg-slate-800/80">`;
+    headerCells.forEach((c: string) => {
+      html += `<th class="border border-slate-700 px-3 py-2 font-semibold text-white">${c}</th>`;
+    });
+    html += `</tr></thead><tbody>`;
+    bodyRows.forEach((row: string[]) => {
+      html += `<tr class="border-b border-slate-700/60 hover:bg-slate-800/40">`;
+      row.forEach((c: string, idx: number) => {
+        const isHeaderCol = idx === 0;
+        const tag = isHeaderCol ? "th" : "td";
+        const cls = isHeaderCol
+          ? "border border-slate-700 px-3 py-2 font-semibold text-white bg-slate-800/60"
+          : "border border-slate-700 px-3 py-2 text-slate-200";
+        html += `<${tag} class="${cls}">${c}</${tag}>`;
+      });
+      html += `</tr>`;
+    });
+    html += `</tbody></table></div>`;
+    return "\n" + html + "\n";
+  });
+}
+
 export function MathFormattedText({ text, className = "" }: MathFormattedTextProps) {
   // Render an toàn tuyệt đối với KaTeX và hỗ trợ bảng HTML responsive
   const renderedHtml = useMemo(() => {
     if (!text || typeof text !== "string") return "";
 
-    // Bước 0: Bảo vệ các khối bảng HTML <div class="overflow-x-auto...">...</div> hoặc <table...>...</table>
+    // Bước 0.1: Chuyển đổi Markdown Table sang HTML Table (nếu có) và unescape \\n
+    const textWithTables = convertMarkdownTablesToHtml(text);
+
+    // Bước 0.2: Bảo vệ các khối bảng HTML <div class="overflow-x-auto...">...</div> hoặc <table...>...</table>
     const htmlBlocks: string[] = [];
-    const textWithProtectedHtml = text.replace(/(<div\s+class="overflow-x-auto[^>]*>[\s\S]*?<\/div>|<table[\s\S]*?<\/table>)/gi, (_, table) => {
+    const textWithProtectedHtml = textWithTables.replace(/(<div\s+class="overflow-x-auto[^>]*>[\s\S]*?<\/div>|<table[\s\S]*?<\/table>)/gi, (_, table) => {
       const idx = htmlBlocks.length;
       htmlBlocks.push(table);
       return `___HTML_TABLE_BLOCK_${idx}___`;
@@ -196,6 +255,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           .replace(/&/g, "&amp;")
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;")
+          .replace(/\\n/g, "<br/>")
           .replace(/\n/g, "<br/>");
       })
       .join("");

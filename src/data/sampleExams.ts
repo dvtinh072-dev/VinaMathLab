@@ -3325,6 +3325,499 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
     ],
   },
 
+  "t10-gk1-de5": {
+    id: "t10-gk1-de5",
+    title: "Đề Kiểm Tra Giữa Học Kỳ 1 - Toán 10 (Đề số 5)",
+    grade: "lop-10",
+    gradeNumber: 10,
+    examType: "giua-ky-1",
+    category: "LOP_10",
+    subtitle: "Đề kiểm tra chính thức THPT Gia Bình Số 1 (Sở GD&ĐT Bắc Ninh) - Năm học 2025 - 2026",
+    durationMinutes: 90,
+    totalQuestions: 21,
+    questions: [
+      {
+        id: "t10-gk1-de5-q1",
+        type: "multiple_choice",
+        index: 1,
+        stem: "Trong các câu sau, câu nào là mệnh đề Toán học?",
+        options: [
+          { key: "A", text: "Số 9 là một số hữu tỉ." },
+          { key: "B", text: "Bạn học lớp mấy?" },
+          { key: "C", text: "Các bạn đã làm bài tập chưa?" },
+          { key: "D", text: "Bắc Ninh là một Tỉnh của nước Việt Nam." }
+        ],
+        correctKey: "A",
+        explanation: "\"Số 9 là một số hữu tỉ\" là một khẳng định đúng về một đối tượng trong toán học ($9 = \\frac{9}{1} \\in \\mathbb{Q}$), vì vậy đây là mệnh đề toán học. B và C là câu nghi vấn, D là mệnh đề thuộc lĩnh vực địa lí.",
+        topic: "Mệnh đề toán học",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q2",
+        type: "multiple_choice",
+        index: 2,
+        stem: "Mệnh đề phủ định của mệnh đề: $P: \"\\exists x \\in \\mathbb{R}: x^2 - 1 > 0\"$ là",
+        options: [
+          { key: "A", text: "$\\overline{P}: \"\\forall x \\in \\mathbb{R}: x^2 - 1 \\ge 0\"$." },
+          { key: "B", text: "$\\overline{P}: \"\\forall x \\in \\mathbb{R}: x^2 - 1 > 0\"$." },
+          { key: "C", text: "$\\overline{P}: \"\\forall x \\in \\mathbb{R}: x^2 - 1 \\le 0\"$." },
+          { key: "D", text: "$\\overline{P}: \"\\exists x \\in \\mathbb{R}: x^2 - 1 < 0\"$." }
+        ],
+        correctKey: "C",
+        explanation: "Phủ định của lượng từ $\\exists$ là $\\forall$, và phủ định của bất đẳng thức $> 0$ là $\\le 0$. Do đó mệnh đề phủ định là: $\\overline{P}: \"\\forall x \\in \\mathbb{R}: x^2 - 1 \\le 0\"$.",
+        topic: "Mệnh đề phủ định",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q3",
+        type: "multiple_choice",
+        index: 3,
+        stem: "Cách phát biểu nào sau đây không dùng để phát biểu định lí toán học dưới dạng $A \\Rightarrow B$?",
+        options: [
+          { key: "A", text: "Nếu $A$ thì $B$." },
+          { key: "B", text: "$A$ kéo theo $B$." },
+          { key: "C", text: "$A$ là điều kiện đủ để có $B$." },
+          { key: "D", text: "$A$ là điều kiện cần để có $B$." }
+        ],
+        correctKey: "D",
+        explanation: "Trong mệnh đề kéo theo $A \\Rightarrow B$, $A$ được gọi là giả thiết (điều kiện đủ để có $B$), còn $B$ được gọi là kết luận (điều kiện cần để có $A$). Do đó câu \"$A$ là điều kiện cần để có $B$\" là không dùng để phát biểu định lí.",
+        topic: "Điều kiện cần và đủ",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q4",
+        type: "multiple_choice",
+        index: 4,
+        stem: "Tập hợp $A = \\{x \\in \\mathbb{R} \\mid -1 < x \\le 3\\}$ là tập nào sau đây?",
+        options: [
+          { key: "A", text: "$\\{0; 1; 2; 3\\}$." },
+          { key: "B", text: "$(-1; 3]$." },
+          { key: "C", text: "$(-1; 3)$." },
+          { key: "D", text: "$[-1; 3)$." }
+        ],
+        correctKey: "B",
+        explanation: "Theo định nghĩa về các tập con của $\\mathbb{R}$, tập hợp $\\{x \\in \\mathbb{R} \\mid -1 < x \\le 3\\}$ là nửa khoảng $(-1; 3]$.",
+        topic: "Các tập con của số thực",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q5",
+        type: "multiple_choice",
+        index: 5,
+        stem: "Cho hai tập hợp $A = \\{x \\in \\mathbb{N} \\mid x \\le 4\\}$ và $B = \\left\\{-1; -\\frac{1}{2}; 0; 1; 3\\right\\}$. Mệnh đề nào sau đây đúng?",
+        options: [
+          { key: "A", text: "$A \\setminus B = \\{2; 4\\}$." },
+          { key: "B", text: "$A \\setminus B = \\left\\{-1; -\\frac{1}{2}\\right\\}$." },
+          { key: "C", text: "$A \\setminus B = \\{4\\}$." },
+          { key: "D", text: "$A \\setminus B = \\{0; 1; 3\\}$." }
+        ],
+        correctKey: "A",
+        explanation: "Ta có $A = \\{0; 1; 2; 3; 4\\}$. Hiệu $A \\setminus B$ là tập hợp gồm các phần tử thuộc $A$ mà không thuộc $B$. Vậy $A \\setminus B = \\{2; 4\\}$.",
+        topic: "Hiệu của hai tập hợp",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q6",
+        type: "multiple_choice",
+        index: 6,
+        stem: "Cho hai tập hợp $A = \\{x \\in \\mathbb{R} \\mid x + 3 \\le 4 + 2x\\}$ và $B = \\{x \\in \\mathbb{R} \\mid 5x - 7 < 3x - 1\\}$. Có bao nhiêu số nguyên thuộc tập hợp $A \\cap B$?",
+        options: [
+          { key: "A", text: "3." },
+          { key: "B", text: "4." },
+          { key: "C", text: "5." },
+          { key: "D", text: "2." }
+        ],
+        correctKey: "B",
+        explanation: "Giải bất phương trình tìm tập hợp:\n+ $x + 3 \\le 4 + 2x \\Leftrightarrow 2x - x \\ge 3 - 4 \\Leftrightarrow x \\ge -1 \\Rightarrow A = [-1; +\\infty)$.\n+ $5x - 7 < 3x - 1 \\Leftrightarrow 2x < 6 \\Leftrightarrow x < 3 \\Rightarrow B = (-\\infty; 3)$.\nSuy ra $A \\cap B = [-1; 3)$.\nCác số nguyên thuộc $[-1; 3)$ là: $-1; 0; 1; 2$ (gồm 4 số nguyên).",
+        topic: "Giao của hai tập hợp",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de5-q7",
+        type: "multiple_choice",
+        index: 7,
+        stem: "Phần không bị gạch chéo trong hình vẽ dưới đây (bao gồm cả đường thẳng $d$) là miền nghiệm của bất phương trình bậc nhất hai ẩn nào dưới đây?",
+        options: [
+          { key: "A", text: "$2x - y \\le 0$." },
+          { key: "B", text: "$x + 2y \\le 0$." },
+          { key: "C", text: "$2x + y \\le 0$." },
+          { key: "D", text: "$2x + y < 0$." }
+        ],
+        correctKey: "C",
+        explanation: "Đường thẳng $d$ đi qua gốc tọa độ $O(0; 0)$ và điểm $(-1; 2)$ nên có phương trình $2x + y = 0$. Vì miền nghiệm bao gồm cả đường thẳng $d$ nên lấy dấu $\\le$ hoặc $\\ge$. Lấy điểm $(-1; -1)$ thuộc phần không bị gạch chéo, thay vào: $2(-1) + (-1) = -3 \\le 0$ (thỏa mãn). Vậy miền nghiệm là $2x + y \\le 0$.",
+        topic: "Miền nghiệm của bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH",
+        svgDiagram: `<svg viewBox="0 0 320 280" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="hatch_de5_q7" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.3" />
+    </pattern>
+    <marker id="arr_de5_q7" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Vùng gạch chéo nửa mặt phẳng bị loại 2x + y > 0 -->
+  <polygon points="90,20 300,20 300,260 210,260" fill="url(#hatch_de5_q7)" fill-opacity="0.85" />
+
+  <!-- Hệ trục tọa độ chuẩn tỉ lệ 1:1, mỗi đơn vị = 40px, gốc O(150, 140) -->
+  <line x1="30" y1="140" x2="280" y2="140" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
+  <text x="283" y="144" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">x</text>
+
+  <line x1="150" y1="260" x2="150" y2="25" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q7)" />
+  <text x="156" y="22" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">y</text>
+
+  <!-- Gốc tọa độ O -->
+  <text x="134" y="156" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
+
+  <!-- Vạch và số trên Ox: -2, -1, 1, 2 -->
+  <line x1="70" y1="137" x2="70" y2="143" stroke="#64748b" stroke-width="1.2" />
+  <text x="70" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">-2</text>
+  <line x1="110" y1="137" x2="110" y2="143" stroke="#64748b" stroke-width="1.2" />
+  <text x="110" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">-1</text>
+  <line x1="190" y1="137" x2="190" y2="143" stroke="#64748b" stroke-width="1.2" />
+  <text x="190" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">1</text>
+  <line x1="230" y1="137" x2="230" y2="143" stroke="#64748b" stroke-width="1.2" />
+  <text x="230" y="156" fill="#94a3b8" font-size="11" text-anchor="middle">2</text>
+
+  <!-- Vạch và số trên Oy: -2, -1, 1, 2 -->
+  <line x1="147" y1="60" x2="153" y2="60" stroke="#64748b" stroke-width="1.2" />
+  <text x="138" y="64" fill="#94a3b8" font-size="11" text-anchor="end">2</text>
+  <line x1="147" y1="100" x2="153" y2="100" stroke="#64748b" stroke-width="1.2" />
+  <text x="138" y="104" fill="#94a3b8" font-size="11" text-anchor="end">1</text>
+  <line x1="147" y1="180" x2="153" y2="180" stroke="#64748b" stroke-width="1.2" />
+  <text x="138" y="184" fill="#94a3b8" font-size="11" text-anchor="end">-1</text>
+  <line x1="147" y1="220" x2="153" y2="220" stroke="#64748b" stroke-width="1.2" />
+  <text x="138" y="224" fill="#94a3b8" font-size="11" text-anchor="end">-2</text>
+
+  <!-- Đường thẳng d: 2x + y = 0 đi qua (0;0), (-1; 2)->(110,60), (1;-2)->(190,220) -->
+  <line x1="90" y1="20" x2="210" y2="260" stroke="#f43f5e" stroke-width="2.2" />
+  <text x="80" y="32" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
+
+  <!-- Đường dóng nét đứt điểm (-1; 2) -->
+  <line x1="110" y1="140" x2="110" y2="60" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3" />
+  <line x1="110" y1="60" x2="150" y2="60" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3" />
+  <circle cx="110" cy="60" r="3" fill="#facc15" />
+</svg>`
+      },
+      {
+        id: "t10-gk1-de5-q8",
+        type: "multiple_choice",
+        index: 8,
+        stem: "Trong các điểm sau, điểm nào thuộc miền nghiệm của hệ bất phương trình $\\begin{cases} x + 3y - 2 \\ge 0 \\\\ 2x + y + 1 \\le 0 \\end{cases}$?",
+        options: [
+          { key: "A", text: "$M(0; 1)$." },
+          { key: "B", text: "$N(-1; 1)$." },
+          { key: "C", text: "$P(1; 3)$." },
+          { key: "D", text: "$Q(-1; 0)$." }
+        ],
+        correctKey: "B",
+        explanation: "Thay tọa độ $N(-1; 1)$ vào hệ:\n$\\begin{cases} -1 + 3(1) - 2 = 0 \\ge 0 \\\\ 2(-1) + 1 + 1 = 0 \\le 0 \\end{cases}$ (thỏa mãn cả hai bất phương trình).\nVậy điểm $N(-1; 1)$ thuộc miền nghiệm của hệ.",
+        topic: "Hệ bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de5-q9",
+        type: "multiple_choice",
+        index: 9,
+        stem: "Cho $0^\\circ \\le x \\le 180^\\circ$. Chọn mệnh đề đúng trong các mệnh đề sau:",
+        options: [
+          { key: "A", text: "$\\sin x = -\\sin(180^\\circ - x)$." },
+          { key: "B", text: "$\\tan x = \\tan(180^\\circ - x)$." },
+          { key: "C", text: "$\\cot x = -\\cot(180^\\circ - x)$." },
+          { key: "D", text: "$\\cos x = \\cos(180^\\circ - x)$." }
+        ],
+        correctKey: "C",
+        explanation: "Hai góc $x$ và $180^\\circ - x$ là hai góc bù nhau, ta có: $\\sin(180^\\circ - x) = \\sin x$, $\\cos(180^\\circ - x) = -\\cos x$, $\\tan(180^\\circ - x) = -\\tan x$, $\\cot(180^\\circ - x) = -\\cot x \\Leftrightarrow \\cot x = -\\cot(180^\\circ - x)$.",
+        topic: "Giá trị lượng giác của hai góc bù nhau",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q10",
+        type: "multiple_choice",
+        index: 10,
+        stem: "Cho tam giác $ABC$. Chọn khẳng định sai trong các khẳng định sau:",
+        options: [
+          { key: "A", text: "$S = \\frac{1}{2} bc \\sin A$." },
+          { key: "B", text: "$S = \\sqrt{p(p - a)(p - b)(p - c)}$." },
+          { key: "C", text: "$\\frac{a}{\\sin A} = \\frac{1}{2R}$." },
+          { key: "D", text: "$a^2 = b^2 + c^2 - 2bc \\cos A$." }
+        ],
+        correctKey: "C",
+        explanation: "Theo định lí sin trong tam giác, ta có $\\frac{a}{\\sin A} = 2R$. Do đó khẳng định $\\frac{a}{\\sin A} = \\frac{1}{2R}$ là sai.",
+        topic: "Hệ thức lượng trong tam giác",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q11",
+        type: "multiple_choice",
+        index: 11,
+        stem: "Cho các điểm phân biệt $A, B, C$. Đẳng thức nào sau đây đúng?",
+        options: [
+          { key: "A", text: "$\\vec{AB} = \\vec{AC} - \\vec{CB}$." },
+          { key: "B", text: "$\\vec{AB} = \\vec{CA} - \\vec{CB}$." },
+          { key: "C", text: "$\\vec{AB} = \\vec{BC} + \\vec{CA}$." },
+          { key: "D", text: "$\\vec{AB} = \\vec{AC} + \\vec{CB}$." }
+        ],
+        correctKey: "D",
+        explanation: "Theo quy tắc ba điểm đối với phép cộng vectơ: $\\vec{AC} + \\vec{CB} = \\vec{AB}$.",
+        topic: "Các phép toán vectơ",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q12",
+        type: "multiple_choice",
+        index: 12,
+        stem: "Chọn phát biểu đúng trong các phát biểu sau:",
+        options: [
+          { key: "A", text: "Hai vectơ được gọi là cùng phương khi và chỉ khi giá của chúng song song với nhau." },
+          { key: "B", text: "Hai vectơ được gọi là bằng nhau khi chúng cùng phương và cùng độ dài." },
+          { key: "C", text: "Vectơ – không là vectơ có điểm đầu và điểm cuối trùng nhau, kí hiệu là $\\vec{0}$." },
+          { key: "D", text: "Vectơ $\\vec{0}$ cùng phương, ngược hướng với mọi vectơ." }
+        ],
+        correctKey: "C",
+        explanation: "Theo định nghĩa, vectơ-không là vectơ có điểm đầu và điểm cuối trùng nhau, kí hiệu là $\\vec{0}$. Khẳng định A thiếu trường hợp trùng nhau; khẳng định B thiếu điều kiện cùng hướng; khẳng định D sai vì $\\vec{0}$ cùng hướng với mọi vectơ.",
+        topic: "Khái niệm vectơ",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de5-q13",
+        type: "true_false",
+        index: 13,
+        stem: "Cho tam giác đều $ABC$ có cạnh bằng 5 và $M$ là trung điểm của $BC$ (tham khảo hình vẽ bên).",
+        subQuestions: [
+          { key: "a", text: "$\\vec{AB} + \\vec{BC} = \\vec{CA}$.", isCorrect: false },
+          { key: "b", text: "$\\vec{AC} - \\vec{AB} = \\vec{BC}$.", isCorrect: true },
+          { key: "c", text: "$|\\vec{AB} - \\vec{AC}| = 0$.", isCorrect: false },
+          { key: "d", text: "$|\\vec{CM} + \\vec{AC}| = \\frac{5\\sqrt{2}}{3}$.", isCorrect: false }
+        ],
+        explanation: "(a) Sai. Theo quy tắc ba điểm: $\\vec{AB} + \\vec{BC} = \\vec{AC} = -\\vec{CA} \\ne \\vec{CA}$.\n(b) Đúng. Theo quy tắc trừ hai vectơ chung gốc: $\\vec{AC} - \\vec{AB} = \\vec{BC}$.\n(c) Sai. $|\\vec{AB} - \\vec{AC}| = |\\vec{CB}| = BC = 5 \\ne 0$.\n(d) Sai. Ta có $\\vec{CM} + \\vec{AC} = \\vec{AC} + \\vec{CM} = \\vec{AM}$. Tam giác $ABC$ đều cạnh bằng 5 nên độ dài đường trung tuyến $AM = \\frac{5\\sqrt{3}}{2} \\ne \\frac{5\\sqrt{2}}{3}$.",
+        topic: "Tổng và hiệu của hai vectơ",
+        difficulty: "TH",
+        svgDiagram: `<svg viewBox="0 0 320 230" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tam giác đều ABC -->
+  <polygon points="160,35 70,190 250,190" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-width="2.2" />
+
+  <!-- Đường trung tuyến AM -->
+  <line x1="160" y1="35" x2="160" y2="190" stroke="#f43f5e" stroke-width="1.8" stroke-dasharray="4 3" />
+
+  <!-- Góc vuông tại M -->
+  <rect x="160" y="176" width="14" height="14" fill="none" stroke="#94a3b8" stroke-width="1.2" />
+
+  <!-- Các điểm A, B, C, M -->
+  <circle cx="160" cy="35" r="4.5" fill="#f8fafc" />
+  <text x="160" y="24" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">A</text>
+
+  <circle cx="70" cy="190" r="4.5" fill="#f8fafc" />
+  <text x="54" y="196" fill="#f8fafc" font-size="14" font-weight="bold">B</text>
+
+  <circle cx="250" cy="190" r="4.5" fill="#f8fafc" />
+  <text x="258" y="196" fill="#f8fafc" font-size="14" font-weight="bold">C</text>
+
+  <circle cx="160" cy="190" r="4" fill="#facc15" />
+  <text x="160" y="210" fill="#facc15" font-size="13" font-weight="bold" text-anchor="middle">M</text>
+
+  <!-- Nhãn cạnh bên bằng 5 -->
+  <text x="105" y="105" fill="#38bdf8" font-size="13" font-weight="bold">5</text>
+</svg>`
+      },
+      {
+        id: "t10-gk1-de5-q14",
+        type: "true_false",
+        index: 14,
+        stem: "Trong một cuộc thi pha chế đồ uống gồm hai loại là $X$ và $Y$, mỗi đội chơi được sử dụng tối đa $24\\text{ g}$ hương liệu, $9$ cốc nước lọc và $210\\text{ g}$ đường. Để pha chế 1 cốc đồ uống loại $X$ cần 1 cốc nước lọc, $30\\text{ g}$ đường và $1\\text{ g}$ hương liệu. Để pha chế 1 cốc đồ uống loại $Y$ cần 1 cốc nước lọc, $10\\text{ g}$ đường và $4\\text{ g}$ hương liệu. Mỗi cốc đồ uống loại $X$ nhận được 6 điểm thưởng, mỗi cốc đồ uống loại $Y$ nhận được 8 điểm thưởng. Gọi $x, y$ lần lượt là số cốc đồ uống loại $X$, loại $Y$ mà đội chơi cần pha chế.",
+        subQuestions: [
+          {
+            key: "a",
+            text: "Điều kiện của $x, y$ là các số tự nhiên và thỏa mãn:\n$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 9 \\\\ 30x + 10y \\le 210 \\\\ x + 4y \\le 24 \\end{cases} \\quad (I)$",
+            isCorrect: true
+          },
+          { key: "b", text: "Điểm $M(2; 1)$ thuộc miền nghiệm của hệ $(I)$.", isCorrect: true },
+          { key: "c", text: "Miền nghiệm của hệ $(I)$ là miền tứ giác.", isCorrect: false },
+          { key: "d", text: "Để đạt được số điểm thưởng cao nhất, đội chơi cần pha chế 6 cốc đồ uống loại $X$ và 3 cốc đồ uống loại $Y$.", isCorrect: false }
+        ],
+        explanation: "(a) Đúng. Số lượng nước lọc: $x + y \\le 9$; lượng đường: $30x + 10y \\le 210$; lượng hương liệu: $x + 4y \\le 24$ và số cốc $x, y \\ge 0, x, y \\in \\mathbb{N}$.\n(b) Đúng. Thay $x = 2, y = 1$ vào hệ: $2 + 1 = 3 \\le 9$; $30(2) + 10(1) = 70 \\le 210$; $2 + 4(1) = 6 \\le 24$ (thỏa mãn).\n(c) Sai. Miền nghiệm của hệ $(I)$ là miền ngũ giác giới hạn bởi 5 đường biên, có 5 đỉnh: $(0; 0), (7; 0), (6; 3), (4; 5), (0; 6)$.\n(d) Sai. Số điểm thưởng nhận được là $F(x, y) = 6x + 8y$.\n- Tại $(6; 3)$: $F = 6(6) + 8(3) = 36 + 24 = 60$ điểm.\n- Tại $(4; 5)$: $F = 6(4) + 8(5) = 24 + 40 = 64$ điểm.\nVì $64 > 60$ nên pha chế 4 cốc loại $X$ và 5 cốc loại $Y$ mới đạt điểm thưởng cao nhất.",
+        topic: "Ứng dụng hệ bất phương trình bậc nhất hai ẩn",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-de5-q15",
+        type: "short_answer",
+        index: 15,
+        stem: "Lớp 10A có 40 học sinh. Trong danh sách đăng kí tham gia tiết mục múa và tiết mục hát chào mừng ngày nhà giáo Việt Nam 20/11 của lớp có 20 học sinh tham gia tiết mục múa, 5 học sinh tham gia cả hai tiết mục. Hỏi lớp 10A có bao nhiêu học sinh tham gia tiết mục hát? Biết rằng lớp có 13 học sinh không tham gia tiết mục nào.",
+        correctAnswer: "12",
+        acceptableAnswers: ["12", "mười hai"],
+        explanation: "Số học sinh tham gia ít nhất một tiết mục (múa hoặc hát) là:\n$40 - 13 = 27$ (học sinh).\nÁp dụng công thức số phần tử của hợp hai tập hợp:\n$|M \\cup H| = |M| + |H| - |M \\cap H|$\n$\\Leftrightarrow 27 = 20 + |H| - 5 \\Leftrightarrow 27 = 15 + |H| \\Leftrightarrow |H| = 12$.\nVậy có 12 học sinh tham gia tiết mục hát.",
+        topic: "Ứng dụng tập hợp trong thực tế",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de5-q16",
+        type: "short_answer",
+        index: 16,
+        stem: "Miền nghiệm của bất phương trình $ax - y < b$ được biểu diễn bởi nửa mặt phẳng không bị gạch (không kể bờ $d$) được minh họa bằng hình vẽ sau. Khi đó $a + b$ bằng bao nhiêu?",
+        correctAnswer: "5",
+        acceptableAnswers: ["5", "năm"],
+        explanation: "Bờ của miền nghiệm là đường thẳng $d: ax - y = b \\Leftrightarrow y = ax - b$.\nTừ hình vẽ, đường thẳng $d$ cắt trục tung $Oy$ tại điểm $(0; -3)$, suy ra: $-b = -3 \\Leftrightarrow b = 3$.\nĐường thẳng $d$ đi qua điểm $(1{,}5; 0)$ trên trục hoành, thay vào: $a(1{,}5) - 3 = 0 \\Leftrightarrow 1{,}5a = 3 \\Leftrightarrow a = 2$.\nKiểm tra miền không bị gạch chứa gốc tọa độ $O(0; 0)$: $2(0) - 0 = 0 < 3$ (thỏa mãn bất phương trình).\nVậy $a = 2, b = 3 \\Rightarrow a + b = 2 + 3 = 5$.",
+        topic: "Xác định bất phương trình từ miền nghiệm",
+        difficulty: "TH",
+        svgDiagram: `<svg viewBox="0 0 320 280" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="hatch_de5_q16" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.3" />
+    </pattern>
+    <marker id="arr_de5_q16" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Nửa mặt phẳng bị gạch chéo ax - y > b -->
+  <polygon points="175,20 290,20 290,260 70,260" fill="url(#hatch_de5_q16)" fill-opacity="0.85" />
+
+  <!-- Hệ trục tọa độ tỉ lệ 1:1, mỗi đơn vị = 35px, gốc O(130, 110) -->
+  <line x1="30" y1="110" x2="280" y2="110" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q16)" />
+  <text x="283" y="114" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">x</text>
+
+  <line x1="130" y1="260" x2="130" y2="25" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q16)" />
+  <text x="136" y="22" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">y</text>
+
+  <!-- Gốc O -->
+  <text x="114" y="126" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
+
+  <!-- Điểm (0; -3) trên trục tung -> y = 110 + 3*35 = 215 -->
+  <circle cx="130" cy="215" r="3.5" fill="#f8fafc" />
+  <text x="112" y="219" fill="#f8fafc" font-size="12" font-weight="bold">-3</text>
+
+  <!-- Đường thẳng d: 2x - y = 3 (nét đứt vì không kể bờ d) -->
+  <line x1="175" y1="20" x2="70" y2="260" stroke="#f43f5e" stroke-width="2" stroke-dasharray="6 4" />
+  <text x="180" y="32" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
+</svg>`
+      },
+      {
+        id: "t10-gk1-de5-q17",
+        type: "short_answer",
+        index: 17,
+        stem: "Cho $x + y = 180^\\circ$, $\\sin x = 0{,}81$. Tính $\\sin y$.",
+        correctAnswer: "0.81",
+        acceptableAnswers: ["0.81", "0,81"],
+        explanation: "Vì $x + y = 180^\\circ$ nên hai góc $x$ và $y$ là hai góc bù nhau.\nTheo tính chất giá trị lượng giác của hai góc bù nhau, ta có:\n$\\sin y = \\sin(180^\\circ - x) = \\sin x = 0{,}81$.",
+        topic: "Giá trị lượng giác của góc bù nhau",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de5-q18",
+        type: "short_answer",
+        index: 18,
+        stem: "Tỉnh A và B bị ngăn cách nhau bởi một ngọn núi. Để đi từ tỉnh A đến tỉnh B, người ta đi theo lộ trình từ tỉnh A qua tỉnh C, rồi từ tỉnh C đến tỉnh B. Biết rằng lộ trình từ A đến C dài 70km, từ C đến B dài 100km, và hai con đường tạo với nhau góc $60^\\circ$. Để thuận lợi cho việc đi lại, người ta dự kiến làm một đường hầm xuyên núi để đi từ tỉnh A đến tỉnh B (tham khảo hình vẽ bên). Hỏi nếu đi theo đường hầm thì quãng đường đó ngắn hơn bao nhiêu km so với quãng đường đi từ A qua C và đến B (làm tròn đến hàng phần chục)?",
+        correctAnswer: "81.1",
+        acceptableAnswers: ["81.1", "81,1", "81.1 km", "81,1 km"],
+        explanation: "Áp dụng định lí côsin trong tam giác $ABC$, khoảng cách đường hầm $AB$ là:\n$AB^2 = CA^2 + CB^2 - 2CA \\cdot CB \\cdot \\cos C = 70^2 + 100^2 - 2 \\cdot 70 \\cdot 100 \\cdot \\cos 60^\\circ$\n$= 4900 + 10000 - 14000 \\cdot 0{,}5 = 7900$\n$\\Rightarrow AB = \\sqrt{7900} \\approx 88{,}8819\\text{ km}$.\nQuãng đường đi vòng từ A qua C đến B dài:\n$s_1 = CA + CB = 70 + 100 = 170\\text{ km}$.\nQuãng đường đi theo đường hầm ngắn hơn là:\n$\\Delta s = 170 - 88{,}8819 = 81{,}1181\\text{ km} \\approx 81{,}1\\text{ km}$.",
+        topic: "Ứng dụng thực tế hệ thức lượng tam giác",
+        difficulty: "VD",
+        svgDiagram: `<svg viewBox="0 0 380 230" class="w-full max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ngọn núi cách điệu giữa A và B -->
+  <path d="M 130 175 Q 185 85 240 175 Z" fill="#312e81" fill-opacity="0.6" stroke="#4338ca" stroke-width="1.5" />
+  <path d="M 160 175 Q 200 65 260 175 Z" fill="#1e1b4b" fill-opacity="0.7" stroke="#3730a3" stroke-width="1.5" />
+
+  <!-- Lộ trình CA và CB -->
+  <line x1="70" y1="175" x2="140" y2="55" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="70" y1="175" x2="280" y2="175" stroke="#38bdf8" stroke-width="2.5" />
+
+  <!-- Đường hầm xuyên núi AB (nét đứt đỏ nổi bật) -->
+  <line x1="140" y1="55" x2="280" y2="175" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="6 4" />
+
+  <!-- Cung góc 60 độ tại C -->
+  <path d="M 98 175 A 28 28 0 0 0 84 151" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <text x="100" y="162" fill="#f59e0b" font-size="12" font-weight="bold">60°</text>
+
+  <!-- Các đỉnh A, B, C -->
+  <circle cx="140" cy="55" r="4.5" fill="#f8fafc" />
+  <text x="140" y="42" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">A</text>
+
+  <circle cx="280" cy="175" r="4.5" fill="#f8fafc" />
+  <text x="290" y="180" fill="#f8fafc" font-size="14" font-weight="bold">B</text>
+
+  <circle cx="70" cy="175" r="4.5" fill="#f8fafc" />
+  <text x="56" y="180" fill="#f8fafc" font-size="14" font-weight="bold">C</text>
+
+  <!-- Nhãn độ dài -->
+  <text x="92" y="105" fill="#38bdf8" font-size="12" font-weight="bold" transform="rotate(-60 92 105)">70 km</text>
+  <text x="175" y="195" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">100 km</text>
+  <text x="225" y="105" fill="#f43f5e" font-size="12" font-weight="bold">Đường hầm AB</text>
+</svg>`
+      },
+      {
+        id: "t10-gk1-de5-q19",
+        type: "short_answer",
+        index: 19,
+        stem: "Phần IV. Tự luận - Câu 19: Cho hai tập hợp $A = \\{x \\in \\mathbb{R} \\mid 2x + 5 \\ge 7\\}$ và $B = \\{x \\in \\mathbb{R} \\mid -5 \\le x < 5\\}$.\na) Viết các tập $A, B$ dưới dạng khoảng, nửa khoảng, đoạn, rồi biểu diễn chúng trên trục số.\nb) Xác định các tập $A \\cap B, A \\cup B$.",
+        correctAnswer: "[1;5)",
+        acceptableAnswers: ["[1;5)", "[1; 5)", "[1;5) và [-5;+vô cùng)"],
+        explanation: "Lời giải sơ lược chi tiết (theo barem chấm THPT Gia Bình 1):\na) Ta có:\n+ $2x + 5 \\ge 7 \\Leftrightarrow 2x \\ge 2 \\Leftrightarrow x \\ge 1 \\Rightarrow A = [1; +\\infty)$.\n+ $B = [-5; 5)$.\nBiểu diễn trên trục số:\n- Tập $A = [1; +\\infty)$: lấy từ điểm 1 sang phải (dùng móc vuông [), gạch bỏ phần bên trái điểm 1.\n- Tập $B = [-5; 5)$: lấy từ điểm -5 đến trước điểm 5 (dùng [ tại -5 và ) tại 5), gạch bỏ phần bên ngoài đoạn.\nb) Xác định các tập hợp:\n+ $A \\cap B = [1; +\\infty) \\cap [-5; 5) = [1; 5)$.\n+ $A \\cup B = [1; +\\infty) \\cup [-5; 5) = [-5; +\\infty)$.",
+        topic: "Tập hợp và các phép toán trên tập hợp (Tự luận)",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de5-q20",
+        type: "short_answer",
+        index: 20,
+        stem: "Phần IV. Tự luận - Câu 20: Biểu diễn miền nghiệm của bất phương trình $x - 2y \\le 2$ trên mặt phẳng tọa độ $Oxy$.",
+        correctAnswer: "x-2y<=2",
+        acceptableAnswers: ["x-2y<=2", "Oxy", "thỏa mãn"],
+        explanation: "Lời giải sơ lược chi tiết (theo barem chấm THPT Gia Bình 1):\n1. Vẽ đường thẳng $d: x - 2y = 2$ đi qua hai điểm $A(2; 0)$ và $B(0; -1)$.\n2. Thay tọa độ gốc $O(0; 0)$ vào vế trái của bất phương trình:\nTa thấy $0 - 2(0) = 0 < 2$ (thỏa mãn).\nDo đó gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình.\n3. Kết luận: Miền nghiệm của bất phương trình $x - 2y \\le 2$ là nửa mặt phẳng có bờ là đường thẳng $d$ chứa gốc tọa độ $O$ (phần không bị gạch, tính cả đường thẳng $d$).",
+        topic: "Biểu diễn miền nghiệm bất phương trình bậc nhất hai ẩn (Tự luận)",
+        difficulty: "TH",
+        svgDiagram: `<svg viewBox="0 0 340 260" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="hatch_de5_q20" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.3" />
+    </pattern>
+    <marker id="arr_de5_q20" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Nửa mặt phẳng bị gạch x - 2y > 2 -->
+  <polygon points="60,200 300,200 300,240 60,240" fill="url(#hatch_de5_q20)" fill-opacity="0.8" />
+  <polygon points="60,200 300,80 300,240 60,240" fill="url(#hatch_de5_q20)" fill-opacity="0.8" />
+
+  <!-- Hệ trục Oxy chuẩn 1:1, mỗi đơn vị = 40px, gốc O(140, 120) -->
+  <line x1="30" y1="120" x2="300" y2="120" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q20)" />
+  <text x="303" y="124" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">x</text>
+
+  <line x1="140" y1="240" x2="140" y2="25" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_de5_q20)" />
+  <text x="146" y="22" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">y</text>
+
+  <!-- Gốc O -->
+  <text x="124" y="136" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
+
+  <!-- Điểm A(2; 0) -> x = 140 + 80 = 220, y = 120 -->
+  <circle cx="220" cy="120" r="3.5" fill="#f8fafc" />
+  <text x="218" y="138" fill="#f8fafc" font-size="12" font-weight="bold">2</text>
+
+  <!-- Điểm B(0; -1) -> x = 140, y = 120 + 40 = 160 -->
+  <circle cx="140" cy="160" r="3.5" fill="#f8fafc" />
+  <text x="124" y="164" fill="#f8fafc" font-size="12" font-weight="bold">-1</text>
+
+  <!-- Đường thẳng d: x - 2y = 2 đi qua (2;0) và (0;-1) -->
+  <line x1="40" y1="210" x2="300" y2="80" stroke="#f43f5e" stroke-width="2.2" />
+  <text x="45" y="225" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
+</svg>`
+      },
+      {
+        id: "t10-gk1-de5-q21",
+        type: "short_answer",
+        index: 21,
+        stem: "Phần IV. Tự luận - Câu 21:\na) Cho hình vuông $ABCD$ có cạnh bằng $a$. Tính $|\\vec{AB} + \\vec{AD}|$.\nb) Cho $0^\\circ < x < 180^\\circ$ và $\\cos x = -\\frac{3}{5}$. Tính giá trị của biểu thức:\n$$P = \\frac{\\tan^3 x + 2\\tan^2 x \\sin x - \\sin^3 x}{2\\tan^3 x \\cos^3 x}$$",
+        correctAnswer: "-1/27",
+        acceptableAnswers: ["-1/27", "-0.037", "-1/27 và a*căn(2)"],
+        explanation: "Lời giải sơ lược chi tiết (theo barem chấm THPT Gia Bình 1):\na) Theo quy tắc hình bình hành (áp dụng cho hình vuông $ABCD$):\n$\\vec{AB} + \\vec{AD} = \\vec{AC}$.\nDo đó $|\\vec{AB} + \\vec{AD}| = |\\vec{AC}| = AC$.\nÁp dụng định lí Pythagore trong tam giác vuông $ABC$:\n$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{a^2 + a^2} = a\\sqrt{2}$.\nb) Do $0^\\circ < x < 180^\\circ$ nên $\\sin x > 0$.\nDo $\\cos x = -\\frac{3}{5} \\ne 0$ nên $\\tan x = \\frac{\\sin x}{\\cos x} \\ne 0$.\nTa có $\\frac{\\sin x}{\\tan x} = \\cos x$. Chia cả tử và mẫu của $P$ cho $\\tan^3 x$:\n$$P = \\frac{1 + 2\\frac{\\sin x}{\\tan x} - \\frac{\\sin^3 x}{\\tan^3 x}}{2\\cos^3 x} = \\frac{1 + 2\\cos x - \\cos^3 x}{2\\cos^3 x}$$\nThay $\\cos x = -\\frac{3}{5}$ vào biểu thức:\n$$P = \\frac{1 + 2\\left(-\\frac{3}{5}\\right) - \\left(-\\frac{3}{5}\\right)^3}{2\\left(-\\frac{3}{5}\\right)^3} = \\frac{1 - \\frac{6}{5} + \\frac{27}{125}}{2\\left(-\\frac{27}{125}\\right)} = \\frac{-\\frac{1}{5} + \\frac{27}{125}}{-\\frac{54}{125}} = \\frac{\\frac{2}{125}}{-\\frac{54}{125}} = -\\frac{2}{54} = -\\frac{1}{27}$$.",
+        topic: "Vectơ và Biểu thức lượng giác (Tự luận)",
+        difficulty: "VDC"
+      }
+    ],
+  },
+
   "t10-ck1": {
     id: "t10-ck1",
     title: "Đề Thi Cuối Học Kỳ 1 - Toán 10 (KNTT)",

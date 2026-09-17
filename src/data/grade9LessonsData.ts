@@ -1695,5 +1695,1612 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Gọi khối lượng đất đội phải xúc theo kế hoạch là $V\\text{ (m}^3\\)$, $V > 0$. Thời gian dự định là $\\frac{V}{50}\\text{ (ngày)}$. Thời gian thực tế là $\\frac{V}{60}\\text{ (ngày)}$. Do hoàn thành trước $2\\text{ ngày}$ nên ta có: $\\frac{V}{50} - \\frac{V}{60} = 2 \\Leftrightarrow \\frac{V}{300} = 2 \\Leftrightarrow V = 600\\text{ m}^3$."
       }
     ]
+  },
+  "t9-on-tap-chuong-1": {
+    "id": "t9-on-tap-chuong-1",
+    "lessonNumber": 0,
+    "title": "Ôn tập cuối chương I",
+    "bookChapter": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn (SGK Toán 9 KNTT - Tập 1)",
+    "scenarioTitle": "Luyện tập 3 đề ôn tập tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+    "scenarioFrames": [],
+    "theorySections": [],
+    "youtubeVideoId": "bppVKFQ1zyw",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và giải bài tập cuối chương I - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "bppVKFQ1zyw",
+        "title": "Tiết 1: Ôn tập lý thuyết và giải hệ phương trình"
+      },
+      {
+        "id": "nDqC-YWY2ik",
+        "title": "Tiết 2: Ôn tập giải bài toán bằng cách lập hệ phương trình"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.ot1.1",
+        "title": "Ví dụ 1: Nhận biết hệ phương trình bậc nhất hai ẩn",
+        "question": "Hệ phương trình nào sau đây là hệ hai phương trình bậc nhất hai ẩn?",
+        "options": [
+          "$\\begin{cases} 2x - 3y = 5 \\\\ x + 4y = 1 \\end{cases}$",
+          "$\\begin{cases} x^2 + y = 3 \\\\ 2x - y = 1 \\end{cases}$",
+          "$\\begin{cases} \\frac{2}{x} + y = 1 \\\\ x - 3y = 2 \\end{cases}$",
+          "$\\begin{cases} xy = 2 \\\\ x + y = 3 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ hai phương trình bậc nhất hai ẩn có dạng $\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}$ với các bậc của biến đều là 1 và không có tích $xy$ hay ẩn ở mẫu."
+      },
+      {
+        "id": "vq-9.ot1.2",
+        "title": "Ví dụ 2: Kiểm tra nghiệm của hệ",
+        "question": "Cặp số $(x; y) = (1; 2)$ là nghiệm của hệ phương trình nào?",
+        "options": [
+          "$\\begin{cases} 2x + y = 4 \\\\ x - y = -1 \\end{cases}$",
+          "$\\begin{cases} 2x - y = 4 \\\\ x + y = 3 \\end{cases}$",
+          "$\\begin{cases} x + 2y = 4 \\\\ 3x - y = 2 \\end{cases}$",
+          "$\\begin{cases} x - 2y = 1 \\\\ 2x + y = 3 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1, y = 2$: $2(1) + 2 = 4$ và $1 - 2 = -1$ (đều thỏa mãn)."
+      },
+      {
+        "id": "vq-9.ot1.3",
+        "title": "Ví dụ 3: Nghiệm của hệ bằng phương pháp thế",
+        "question": "Giải hệ phương trình $\\begin{cases} y = 3x - 1 \\\\ 2x + y = 9 \\end{cases}$. Nghiệm của hệ là:",
+        "options": [
+          "$(2; 5)$",
+          "$(5; 2)$",
+          "$(1; 2)$",
+          "$(3; 8)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thế $y = 3x - 1$ vào phương trình thứ hai: $2x + (3x - 1) = 9 \\Leftrightarrow 5x = 10 \\Leftrightarrow x = 2 \\Rightarrow y = 3(2) - 1 = 5$."
+      },
+      {
+        "id": "vq-9.ot1.4",
+        "title": "Ví dụ 4: Vận tốc xuôi dòng và ngược dòng",
+        "question": "Một ca nô có vận tốc riêng là $24\\text{ km/h}$, vận tốc dòng nước là $3\\text{ km/h}$. Vận tốc của ca nô khi xuôi dòng và ngược dòng lần lượt là:",
+        "options": [
+          "$27\\text{ km/h}$ và $21\\text{ km/h}$",
+          "$21\\text{ km/h}$ và $27\\text{ km/h}$",
+          "$24\\text{ km/h}$ và $3\\text{ km/h}$",
+          "$27\\text{ km/h}$ và $24\\text{ km/h}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Xuôi dòng: $24 + 3 = 27\\text{ km/h}$. Ngược dòng: $24 - 3 = 21\\text{ km/h}$."
+      }
+    ],
+    "tips": [
+      "Trước khi giải hệ bằng máy tính hoặc bằng tay, luôn đưa hệ về dạng chuẩn: $\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}$.",
+      "Phương pháp cộng đại số: Quan sát hệ số của $x$ hoặc $y$, nếu chúng bằng nhau thì trừ hai phương trình, nếu đối nhau thì cộng hai phương trình.",
+      "Bài toán thực tế: Đọc kỹ điều kiện của ẩn (nguyên dương, lớn hơn 0), đơn vị đo và đối chiếu điều kiện trước khi kết luận.",
+      "Bài toán chuyển động sông nước: Luôn nhớ $v_{\\text{xuôi}} = v_{\\text{thực}} + v_{\\text{nước}}$ và $v_{\\text{ngược}} = v_{\\text{thực}} - v_{\\text{nước}}$."
+    ],
+    "traps": [
+      "Bẫy chuyển vế quên đổi dấu khi giải hệ phương pháp thế: Khi chuyển hạng tử sang vế kia, bắt buộc phải đổi dấu.",
+      "Bẫy chia cho 0 khi biện luận số nghiệm của hệ: Hệ thức $\\frac{a}{a'} = \\frac{b}{b'}$ chỉ áp dụng khi tất cả các hệ số ở mẫu đều khác 0.",
+      "Bẫy nhầm lẫn giữa vận tốc thực của tàu và vận tốc xuôi/ngược dòng trong bài toán dòng nước.",
+      "Bẫy quên đặt điều kiện ẩn $x, y > 0$ hoặc $x, y \\in \\mathbb{N}^*$ trong bài toán năng suất và quan hệ số."
+    ],
+    "quizQuestions": [
+      {
+        "id": "ot1-q1",
+        "badge": "Câu 1 (NB) - Nhận biết phương trình bậc nhất hai ẩn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+        "question": "Trong các phương trình sau, phương trình nào là phương trình bậc nhất hai ẩn?",
+        "options": [
+          "$3x - 2y = 7$",
+          "$2x^2 + y = 5$",
+          "$\\frac{1}{x} + 2y = 3$",
+          "$0x + 0y = 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình bậc nhất hai ẩn có dạng $ax + by = c$ với $a \\ne 0$ hoặc $b \\ne 0$. Ở đây $3x - 2y = 7$ có $a = 3, b = -2$ thỏa mãn."
+      },
+      {
+        "id": "ot1-q2",
+        "badge": "Câu 2 (NB) - Kiểm tra nghiệm của phương trình bậc nhất hai ẩn",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 7)",
+        "question": "Cặp số nào sau đây là một nghiệm của phương trình $2x + y = 5$?",
+        "options": [
+          "$(2; 1)$",
+          "$(1; 2)$",
+          "$(3; 1)$",
+          "$(0; 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 2, y = 1$ vào vế trái: $2(2) + 1 = 5$ (bằng vế phải). Vậy $(2; 1)$ là một nghiệm của phương trình."
+      },
+      {
+        "id": "ot1-q3",
+        "badge": "Câu 3 (NB) - Biểu diễn hình học của tập nghiệm",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 8)",
+        "question": "Trong mặt phẳng tọa độ $Oxy$, đường thẳng biểu diễn tập nghiệm của phương trình $x - y = 0$ là:",
+        "options": [
+          "Đường phân giác của góc phần tư thứ I và thứ III",
+          "Đường phân giác của góc phần tư thứ II và thứ IV",
+          "Đường thẳng song song với trục hoành $Ox$",
+          "Đường thẳng song song với trục tung $Oy$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình $x - y = 0 \\Leftrightarrow y = x$, đây là đường phân giác của góc phần tư thứ I và thứ III."
+      },
+      {
+        "id": "ot1-q4",
+        "badge": "Câu 4 (NB) - Kiểm tra nghiệm của hệ hai phương trình",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 10)",
+        "question": "Cặp số $(1; -1)$ là nghiệm của hệ phương trình nào dưới đây?",
+        "options": [
+          "$\\begin{cases} x + y = 0 \\\\ 2x - y = 3 \\end{cases}$",
+          "$\\begin{cases} x - y = 0 \\\\ 2x + y = 3 \\end{cases}$",
+          "$\\begin{cases} 2x + y = 1 \\\\ x - y = 4 \\end{cases}$",
+          "$\\begin{cases} x + 2y = 1 \\\\ 3x - y = 2 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1, y = -1$: $1 + (-1) = 0$ (thỏa mãn) và $2(1) - (-1) = 3$ (thỏa mãn). Vậy $(1; -1)$ là nghiệm của hệ."
+      },
+      {
+        "id": "ot1-q5",
+        "badge": "Câu 5 (NB) - Nhận biết số nghiệm qua hai đường thẳng trùng nhau",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 14)",
+        "question": "Hệ phương trình $\\begin{cases} 2x - y = 1 \\\\ 4x - 2y = 2 \\end{cases}$ có bao nhiêu nghiệm?",
+        "options": [
+          "Có vô số nghiệm",
+          "Vô nghiệm",
+          "Có đúng 1 nghiệm duy nhất",
+          "Có đúng 2 nghiệm phân biệt"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{1}{2}$ nên hai đường thẳng biểu diễn tập nghiệm trùng nhau, do đó hệ có vô số nghiệm."
+      },
+      {
+        "id": "ot1-q6",
+        "badge": "Câu 6 (NB) - Nhận biết số nghiệm qua hai đường thẳng song song",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 12)",
+        "question": "Hệ phương trình $\\begin{cases} x + y = 4 \\\\ x + y = 6 \\end{cases}$ có số nghiệm là:",
+        "options": [
+          "$0$ (Vô nghiệm)",
+          "$1$ nghiệm duy nhất",
+          "$2$ nghiệm",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng $x + y$ không thể vừa bằng 4 vừa bằng 6, hai đường thẳng song song nhau nên hệ phương trình vô nghiệm (0 nghiệm)."
+      },
+      {
+        "id": "ot1-q7",
+        "badge": "Câu 7 (TH) - Giải hệ phương trình bằng phương pháp cộng đại số",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 15)",
+        "question": "Nghiệm của hệ phương trình $\\begin{cases} 2x + 3y = 7 \\\\ x - y = 1 \\end{cases}$ là:",
+        "options": [
+          "$(2; 1)$",
+          "$(1; 2)$",
+          "$(3; 2)$",
+          "$(4; 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Từ phương trình thứ hai: $x = y + 1$. Thế vào phương trình đầu: $2(y + 1) + 3y = 7 \\Leftrightarrow 5y = 5 \\Leftrightarrow y = 1 \\Rightarrow x = 2$. Nghiệm là $(2; 1)$."
+      },
+      {
+        "id": "ot1-q8",
+        "badge": "Câu 8 (TH) - Giải hệ phương trình bằng phương pháp thế",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+        "question": "Giải hệ phương trình $\\begin{cases} y = 2x - 1 \\\\ 3x + y = 9 \\end{cases}$. Giá trị của tích $x \\cdot y$ bằng:",
+        "options": [
+          "$6$",
+          "$5$",
+          "$8$",
+          "$4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thế $y = 2x - 1$ vào phương trình thứ hai: $3x + (2x - 1) = 9 \\Leftrightarrow 5x = 10 \\Leftrightarrow x = 2 \\Rightarrow y = 2(2) - 1 = 3$. Tích $x \\cdot y = 2 \\cdot 3 = 6$."
+      },
+      {
+        "id": "ot1-q9",
+        "badge": "Câu 9 (TH) - Tìm hệ số a, b của hệ phương trình khi biết nghiệm",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+        "question": "Biết cặp số $(x; y) = (1; 2)$ là nghiệm của hệ $\\begin{cases} ax + by = 5 \\\\ 2ax - by = 1 \\end{cases}$. Giá trị của $a$ và $b$ là:",
+        "options": [
+          "$a = 2; b = 1,5$",
+          "$a = 1; b = 2$",
+          "$a = 3; b = 1$",
+          "$a = 2; b = 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1, y = 2$: $\\begin{cases} a + 2b = 5 \\\\ 2a - 2b = 1 \\end{cases}$. Cộng hai phương trình: $3a = 6 \\Rightarrow a = 2$. Thay vào: $2 + 2b = 5 \\Rightarrow 2b = 3 \\Rightarrow b = 1,5$."
+      },
+      {
+        "id": "ot1-q10",
+        "badge": "Câu 10 (TH) - Tọa độ giao điểm của hai đường thẳng",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 14)",
+        "question": "Tọa độ giao điểm $M$ của hai đường thẳng $d_1: 2x - y = 3$ và $d_2: x + y = 3$ là:",
+        "options": [
+          "$M(2; 1)$",
+          "$M(1; 2)$",
+          "$M(3; 0)$",
+          "$M(0; 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tọa độ giao điểm là nghiệm của hệ: $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$. Cộng hai phương trình: $3x = 6 \\Rightarrow x = 2 \\Rightarrow y = 1$. Vậy $M(2; 1)$."
+      },
+      {
+        "id": "ot1-q11",
+        "badge": "Câu 11 (VD) - Tìm tham số m để hệ phương trình có nghiệm duy nhất",
+        "source": "Đề thi tuyển sinh vào lớp 10 THPT TP. Hà Nội",
+        "question": "Tìm tất cả các giá trị của $m$ để hệ phương trình $\\begin{cases} mx + 2y = 4 \\\\ 2x + my = 4 \\end{cases}$ có nghiệm duy nhất.",
+        "options": [
+          "$m \\ne 2$ và $m \\ne -2$",
+          "$m \\ne 2$",
+          "$m \\ne -2$",
+          "$m = 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ phương trình có nghiệm duy nhất khi và chỉ khi $\\frac{m}{2} \\ne \\frac{2}{m} \\Leftrightarrow m^2 \\ne 4 \\Leftrightarrow m \\ne \\pm 2$."
+      },
+      {
+        "id": "ot1-q12",
+        "badge": "Câu 12 (VD) - Toán thực tế hình học mảnh đất",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+        "question": "Một mảnh vườn hình chữ nhật có chu vi bằng $40\\text{ m}$. Biết rằng chiều dài hơn chiều rộng $4\\text{ m}$. Diện tích của mảnh vườn đó là:",
+        "options": [
+          "$96\\text{ m}^2$",
+          "$100\\text{ m}^2$",
+          "$84\\text{ m}^2$",
+          "$92\\text{ m}^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi chiều dài là $x\\text{ (m)}$ và chiều rộng là $y\\text{ (m)}$. Nửa chu vi: $x + y = 20$. Chiều dài hơn chiều rộng: $x - y = 4$. Giải hệ được $x = 12\\text{ m}, y = 8\\text{ m}$. Diện tích $S = 12 \\cdot 8 = 96\\text{ m}^2$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ot1-tf1",
+        "badge": "Đúng/Sai 1 (NB) - Khái niệm phương trình bậc nhất hai ẩn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+        "prompt": "Cho phương trình bậc nhất hai ẩn $3x - 2y = 6$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Các hệ số của phương trình là $a = 3, b = -2, c = 6$.",
+            "correctAnswer": true,
+            "explanation": "Dạng tổng quát $ax + by = c$ có $a = 3, b = -2, c = 6$."
+          },
+          {
+            "id": "b",
+            "text": "Cặp số $(2; 0)$ là một nghiệm của phương trình.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 2, y = 0$ ta được $3(2) - 2(0) = 6$ (đúng)."
+          },
+          {
+            "id": "c",
+            "text": "Cặp số $(0; 3)$ là một nghiệm của phương trình.",
+            "correctAnswer": false,
+            "explanation": "Thay $x = 0, y = 3$ ta được $3(0) - 2(3) = -6 \\ne 6$ nên $(0; 3)$ không phải là nghiệm."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình có vô số nghiệm và tập nghiệm được biểu diễn bởi một đường thẳng trên mặt phẳng tọa độ.",
+            "correctAnswer": true,
+            "explanation": "Mọi phương trình bậc nhất hai ẩn đều có vô số nghiệm và tập nghiệm là một đường thẳng."
+          }
+        ]
+      },
+      {
+        "id": "ot1-tf2",
+        "badge": "Đúng/Sai 2 (TH) - Các bước giải hệ phương trình cộng đại số",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+        "prompt": "Cho hệ phương trình: $\\begin{cases} 2x + y = 5 \\\\ 3x - 2y = 4 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Nhân hai vế của phương trình thứ nhất với 2 ta được phương trình $4x + 2y = 10$.",
+            "correctAnswer": true,
+            "explanation": "$2(2x + y) = 2(5) \\Leftrightarrow 4x + 2y = 10$."
+          },
+          {
+            "id": "b",
+            "text": "Cộng từng vế của phương trình $4x + 2y = 10$ với phương trình $3x - 2y = 4$ ta được $7x = 14$.",
+            "correctAnswer": true,
+            "explanation": "$(4x + 3x) + (2y - 2y) = 10 + 4 \\Leftrightarrow 7x = 14$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm của hệ phương trình đã cho là $(x; y) = (2; 1)$.",
+            "correctAnswer": true,
+            "explanation": "Từ $7x = 14 \\Rightarrow x = 2$. Thay vào phương trình đầu: $2(2) + y = 5 \\Rightarrow y = 1$."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị của biểu thức $x^2 + y^2 = 3$.",
+            "correctAnswer": false,
+            "explanation": "Ta có $x^2 + y^2 = 2^2 + 1^2 = 4 + 1 = 5 \\ne 3$."
+          }
+        ]
+      },
+      {
+        "id": "ot1-tf3",
+        "badge": "Đúng/Sai 3 (TH) - Vị trí tương đối và giao điểm của hai đường thẳng",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 14)",
+        "prompt": "Cho hai đường thẳng $d_1: x + 2y = 4$ và $d_2: 2x - y = 3$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điểm $A(0; 2)$ thuộc đường thẳng $d_1$.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 0, y = 2$ vào $d_1$: $0 + 2(2) = 4$ (thỏa mãn)."
+          },
+          {
+            "id": "b",
+            "text": "Tọa độ giao điểm của $d_1$ và $d_2$ là nghiệm của hệ phương trình $\\begin{cases} x + 2y = 4 \\\\ 2x - y = 3 \\end{cases}$.",
+            "correctAnswer": true,
+            "explanation": "Theo định nghĩa, tọa độ giao điểm là nghiệm chung của hệ hai phương trình."
+          },
+          {
+            "id": "c",
+            "text": "Hai đường thẳng $d_1$ và $d_2$ cắt nhau tại điểm $M(2; 1)$.",
+            "correctAnswer": true,
+            "explanation": "Giải hệ ta được $x = 2, y = 1$. Vậy giao điểm là $M(2; 1)$."
+          },
+          {
+            "id": "d",
+            "text": "Giao điểm $M(2; 1)$ nằm trong góc phần tư thứ hai của mặt phẳng tọa độ.",
+            "correctAnswer": false,
+            "explanation": "Điểm $M(2; 1)$ có hoành độ dương và tung độ dương ($x > 0, y > 0$) nên thuộc góc phần tư thứ nhất."
+          }
+        ]
+      },
+      {
+        "id": "ot1-tf4",
+        "badge": "Đúng/Sai 4 (VD) - Toán thực tế bán hàng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 19)",
+        "prompt": "Một cửa hàng bánh mì bán hai loại: bánh mì chả giá $20.000\\text{ đ/chiếc}$ và bánh mì pate giá $15.000\\text{ đ/chiếc}$. Buổi sáng, cửa hàng đã bán được $80\\text{ chiếc}$ bánh mì cả hai loại và thu được tổng số tiền là $1.450.000\\text{ đ}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Nếu gọi số bánh mì chả là $x$ và bánh mì pate là $y$ thì ta có phương trình $x + y = 80$.",
+            "correctAnswer": true,
+            "explanation": "Tổng số bánh mì bán được là 80 chiếc nên $x + y = 80$."
+          },
+          {
+            "id": "b",
+            "text": "Tổng số tiền thu được biểu diễn bởi phương trình $20x + 15y = 1450$ (đơn vị: nghìn đồng).",
+            "correctAnswer": true,
+            "explanation": "$20.000x + 15.000y = 1.450.000 \\Leftrightarrow 20x + 15y = 1450$."
+          },
+          {
+            "id": "c",
+            "text": "Số bánh mì chả bán được nhiều hơn số bánh mì pate.",
+            "correctAnswer": true,
+            "explanation": "Giải hệ: $x = 50\\text{ chiếc}$ bánh mì chả và $y = 30\\text{ chiếc}$ bánh mì pate. Vì $50 > 30$ nên khẳng định đúng."
+          },
+          {
+            "id": "d",
+            "text": "Cửa hàng đã bán được $45\\text{ chiếc}$ bánh mì chả.",
+            "correctAnswer": false,
+            "explanation": "Cửa hàng bán được đúng $50\\text{ chiếc}$ bánh mì chả, không phải $45$ chiếc."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ot1-sa1",
+        "badge": "Trả lời ngắn 1 (TH) - Tính tổng hai nghiệm của hệ",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+        "prompt": "Cho hệ phương trình $\\begin{cases} 3x - y = 7 \\\\ x + 2y = 7 \\end{cases}$ có nghiệm duy nhất $(x_0; y_0)$. Tính giá trị của biểu thức $x_0 + y_0$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "x+y=5"
+        ],
+        "explanation": "Từ PT 1: $y = 3x - 7$. Thế vào PT 2: $x + 2(3x - 7) = 7 \\Leftrightarrow 7x = 21 \\Leftrightarrow x = 3 \\Rightarrow y = 2$. Giá trị $x_0 + y_0 = 3 + 2 = 5$."
+      },
+      {
+        "id": "ot1-sa2",
+        "badge": "Trả lời ngắn 2 (TH) - Tìm a + b khi biết nghiệm của hệ",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 14)",
+        "prompt": "Biết hệ phương trình $\\begin{cases} ax + y = 3 \\\\ 2x - by = 1 \\end{cases}$ nhận cặp số $(x; y) = (1; 1)$ làm nghiệm. Tính giá trị của tổng $a + b$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "a+b=3"
+        ],
+        "explanation": "Thay $x = 1, y = 1$: $a(1) + 1 = 3 \\Rightarrow a = 2$; $2(1) - b(1) = 1 \\Rightarrow b = 1$. Giá trị $a + b = 2 + 1 = 3$."
+      },
+      {
+        "id": "ot1-sa3",
+        "badge": "Trả lời ngắn 3 (VD) - Tìm tham số m để đường thẳng đi qua giao điểm",
+        "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+        "prompt": "Tìm giá trị của tham số $m$ để đường thẳng $y = mx + 1$ đi qua giao điểm của hai đường thẳng $2x - y = 3$ và $x + y = 3$.",
+        "correctAnswer": "0",
+        "acceptableAnswers": [
+          "0",
+          "m=0"
+        ],
+        "explanation": "Giao điểm của hai đường thẳng là nghiệm của hệ $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases} \\Rightarrow x = 2, y = 1$. Điểm $(2; 1)$ thuộc đường thẳng $y = mx + 1$ nên $1 = m(2) + 1 \\Leftrightarrow 2m = 0 \\Leftrightarrow m = 0$."
+      },
+      {
+        "id": "ot1-sa4",
+        "badge": "Trả lời ngắn 4 (VD) - Tìm m để hệ có nghiệm thỏa mãn x = y",
+        "source": "Đề thi học sinh giỏi Toán 9",
+        "prompt": "Cho hệ phương trình $\\begin{cases} x + 2y = 3 \\\\ 2x - 3y = 4 - m \\end{cases}$. Tìm giá trị của tham số $m$ để hệ có nghiệm duy nhất $(x; y)$ thỏa mãn $x = y$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "m=5"
+        ],
+        "explanation": "Thay $x = y$ vào PT đầu: $x + 2x = 3 \\Leftrightarrow 3x = 3 \\Leftrightarrow x = 1 \\Rightarrow y = 1$. Thay $x = 1, y = 1$ vào PT thứ hai: $2(1) - 3(1) = 4 - m \\Leftrightarrow -1 = 4 - m \\Leftrightarrow m = 5$."
+      },
+      {
+        "id": "ot1-sa5",
+        "badge": "Trả lời ngắn 5 (VD) - Toán thực tế chuyển động sông nước",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+        "prompt": "Một ca nô chạy xuôi dòng một khúc sông dài $30\\text{ km}$ rồi quay ngược dòng trở lại $24\\text{ km}$ hết tổng cộng $3\\text{ giờ}$. Biết vận tốc dòng nước là $2\\text{ km/h}$. Tính vận tốc thực của ca nô khi nước yên lặng (theo đơn vị km/h).",
+        "correctAnswer": "18",
+        "acceptableAnswers": [
+          "18",
+          "18 km/h",
+          "18km/h"
+        ],
+        "explanation": "Gọi vận tốc thực là $v\\text{ (km/h)}$, $v > 2$. Thời gian: $\\frac{30}{v + 2} + \\frac{24}{v - 2} = 3$. Với $v = 18$: $\\frac{30}{20} + \\frac{24}{16} = 1,5 + 1,5 = 3\\text{ (giờ)}$ thỏa mãn. Vậy vận tốc thực là $18\\text{ km/h}$."
+      },
+      {
+        "id": "ot1-sa6",
+        "badge": "Trả lời ngắn 6 (VD) - Toán thực tế quyên góp sách",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 16)",
+        "prompt": "Hai lớp 9A và 9B có tổng số $80\\text{ học sinh}$. Trong đợt quyên góp sách giáo khoa ủng hộ học sinh vùng cao, mỗi học sinh lớp 9A quyên góp $3\\text{ quyển}$, mỗi học sinh lớp 9B quyên góp $4\\text{ quyển}$, cả hai lớp quyên góp được tổng cộng $270\\text{ quyển}$. Hỏi lớp 9A có bao nhiêu học sinh?",
+        "correctAnswer": "50",
+        "acceptableAnswers": [
+          "50",
+          "50 học sinh"
+        ],
+        "explanation": "Gọi số học sinh lớp 9A là $x$ và 9B là $y$ ($x + y = 80$). Tổng số sách: $3x + 4y = 270$. Nhân PT đầu với 4: $4x + 4y = 320$. Trừ theo vế: $x = 320 - 270 = 50\\text{ học sinh}$."
+      }
+    ],
+    "examSets": [
+      {
+        "id": "de-1",
+        "title": "Đề ôn tập số 1",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Phương trình và Hệ phương trình bậc nhất hai ẩn) - Đề số 1",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "ot1-q1",
+            "badge": "Câu 1 (NB) - Nhận biết phương trình bậc nhất hai ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+            "question": "Trong các phương trình sau, phương trình nào là phương trình bậc nhất hai ẩn?",
+            "options": [
+              "$3x - 2y = 7$",
+              "$2x^2 + y = 5$",
+              "$\\frac{1}{x} + 2y = 3$",
+              "$0x + 0y = 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình bậc nhất hai ẩn có dạng $ax + by = c$ với $a \\ne 0$ hoặc $b \\ne 0$. Ở đây $3x - 2y = 7$ có $a = 3, b = -2$ thỏa mãn."
+          },
+          {
+            "id": "ot1-q2",
+            "badge": "Câu 2 (NB) - Kiểm tra nghiệm của phương trình bậc nhất hai ẩn",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 7)",
+            "question": "Cặp số nào sau đây là một nghiệm của phương trình $2x + y = 5$?",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; 1)$",
+              "$(0; 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 2, y = 1$ vào vế trái: $2(2) + 1 = 5$ (bằng vế phải). Vậy $(2; 1)$ là một nghiệm của phương trình."
+          },
+          {
+            "id": "ot1-q3",
+            "badge": "Câu 3 (NB) - Biểu diễn hình học của tập nghiệm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 8)",
+            "question": "Trong mặt phẳng tọa độ $Oxy$, đường thẳng biểu diễn tập nghiệm của phương trình $x - y = 0$ là:",
+            "options": [
+              "Đường phân giác của góc phần tư thứ I và thứ III",
+              "Đường phân giác của góc phần tư thứ II và thứ IV",
+              "Đường thẳng song song với trục hoành $Ox$",
+              "Đường thẳng song song với trục tung $Oy$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình $x - y = 0 \\Leftrightarrow y = x$, đây là đường phân giác của góc phần tư thứ I và thứ III."
+          },
+          {
+            "id": "ot1-q4",
+            "badge": "Câu 4 (NB) - Kiểm tra nghiệm của hệ hai phương trình",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 10)",
+            "question": "Cặp số $(1; -1)$ là nghiệm của hệ phương trình nào dưới đây?",
+            "options": [
+              "$\\begin{cases} x + y = 0 \\\\ 2x - y = 3 \\end{cases}$",
+              "$\\begin{cases} x - y = 0 \\\\ 2x + y = 3 \\end{cases}$",
+              "$\\begin{cases} 2x + y = 1 \\\\ x - y = 4 \\end{cases}$",
+              "$\\begin{cases} x + 2y = 1 \\\\ 3x - y = 2 \\end{cases}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 1, y = -1$: $1 + (-1) = 0$ (thỏa mãn) và $2(1) - (-1) = 3$ (thỏa mãn). Vậy $(1; -1)$ là nghiệm của hệ."
+          },
+          {
+            "id": "ot1-q5",
+            "badge": "Câu 5 (NB) - Nhận biết số nghiệm qua hai đường thẳng trùng nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 14)",
+            "question": "Hệ phương trình $\\begin{cases} 2x - y = 1 \\\\ 4x - 2y = 2 \\end{cases}$ có bao nhiêu nghiệm?",
+            "options": [
+              "Có vô số nghiệm",
+              "Vô nghiệm",
+              "Có đúng 1 nghiệm duy nhất",
+              "Có đúng 2 nghiệm phân biệt"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{1}{2}$ nên hai đường thẳng biểu diễn tập nghiệm trùng nhau, do đó hệ có vô số nghiệm."
+          },
+          {
+            "id": "ot1-q6",
+            "badge": "Câu 6 (NB) - Nhận biết số nghiệm qua hai đường thẳng song song",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 12)",
+            "question": "Hệ phương trình $\\begin{cases} x + y = 4 \\\\ x + y = 6 \\end{cases}$ có số nghiệm là:",
+            "options": [
+              "$0$ (Vô nghiệm)",
+              "$1$ nghiệm duy nhất",
+              "$2$ nghiệm",
+              "Vô số nghiệm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tổng $x + y$ không thể vừa bằng 4 vừa bằng 6, hai đường thẳng song song nhau nên hệ phương trình vô nghiệm (0 nghiệm)."
+          },
+          {
+            "id": "ot1-q7",
+            "badge": "Câu 7 (TH) - Giải hệ phương trình bằng phương pháp cộng đại số",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 15)",
+            "question": "Nghiệm của hệ phương trình $\\begin{cases} 2x + 3y = 7 \\\\ x - y = 1 \\end{cases}$ là:",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; 2)$",
+              "$(4; 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Từ phương trình thứ hai: $x = y + 1$. Thế vào phương trình đầu: $2(y + 1) + 3y = 7 \\Leftrightarrow 5y = 5 \\Leftrightarrow y = 1 \\Rightarrow x = 2$. Nghiệm là $(2; 1)$."
+          },
+          {
+            "id": "ot1-q8",
+            "badge": "Câu 8 (TH) - Giải hệ phương trình bằng phương pháp thế",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+            "question": "Giải hệ phương trình $\\begin{cases} y = 2x - 1 \\\\ 3x + y = 9 \\end{cases}$. Giá trị của tích $x \\cdot y$ bằng:",
+            "options": [
+              "$6$",
+              "$5$",
+              "$8$",
+              "$4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thế $y = 2x - 1$ vào phương trình thứ hai: $3x + (2x - 1) = 9 \\Leftrightarrow 5x = 10 \\Leftrightarrow x = 2 \\Rightarrow y = 2(2) - 1 = 3$. Tích $x \\cdot y = 2 \\cdot 3 = 6$."
+          },
+          {
+            "id": "ot1-q9",
+            "badge": "Câu 9 (TH) - Tìm hệ số a, b của hệ phương trình khi biết nghiệm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+            "question": "Biết cặp số $(x; y) = (1; 2)$ là nghiệm của hệ $\\begin{cases} ax + by = 5 \\\\ 2ax - by = 1 \\end{cases}$. Giá trị của $a$ và $b$ là:",
+            "options": [
+              "$a = 2; b = 1,5$",
+              "$a = 1; b = 2$",
+              "$a = 3; b = 1$",
+              "$a = 2; b = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 1, y = 2$: $\\begin{cases} a + 2b = 5 \\\\ 2a - 2b = 1 \\end{cases}$. Cộng hai phương trình: $3a = 6 \\Rightarrow a = 2$. Thay vào: $2 + 2b = 5 \\Rightarrow 2b = 3 \\Rightarrow b = 1,5$."
+          },
+          {
+            "id": "ot1-q10",
+            "badge": "Câu 10 (TH) - Tọa độ giao điểm của hai đường thẳng",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 14)",
+            "question": "Tọa độ giao điểm $M$ của hai đường thẳng $d_1: 2x - y = 3$ và $d_2: x + y = 3$ là:",
+            "options": [
+              "$M(2; 1)$",
+              "$M(1; 2)$",
+              "$M(3; 0)$",
+              "$M(0; 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tọa độ giao điểm là nghiệm của hệ: $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$. Cộng hai phương trình: $3x = 6 \\Rightarrow x = 2 \\Rightarrow y = 1$. Vậy $M(2; 1)$."
+          },
+          {
+            "id": "ot1-q11",
+            "badge": "Câu 11 (VD) - Tìm tham số m để hệ phương trình có nghiệm duy nhất",
+            "source": "Đề thi tuyển sinh vào lớp 10 THPT TP. Hà Nội",
+            "question": "Tìm tất cả các giá trị của $m$ để hệ phương trình $\\begin{cases} mx + 2y = 4 \\\\ 2x + my = 4 \\end{cases}$ có nghiệm duy nhất.",
+            "options": [
+              "$m \\ne 2$ và $m \\ne -2$",
+              "$m \\ne 2$",
+              "$m \\ne -2$",
+              "$m = 2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hệ phương trình có nghiệm duy nhất khi và chỉ khi $\\frac{m}{2} \\ne \\frac{2}{m} \\Leftrightarrow m^2 \\ne 4 \\Leftrightarrow m \\ne \\pm 2$."
+          },
+          {
+            "id": "ot1-q12",
+            "badge": "Câu 12 (VD) - Toán thực tế hình học mảnh đất",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+            "question": "Một mảnh vườn hình chữ nhật có chu vi bằng $40\\text{ m}$. Biết rằng chiều dài hơn chiều rộng $4\\text{ m}$. Diện tích của mảnh vườn đó là:",
+            "options": [
+              "$96\\text{ m}^2$",
+              "$100\\text{ m}^2$",
+              "$84\\text{ m}^2$",
+              "$92\\text{ m}^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi chiều dài là $x\\text{ (m)}$ và chiều rộng là $y\\text{ (m)}$. Nửa chu vi: $x + y = 20$. Chiều dài hơn chiều rộng: $x - y = 4$. Giải hệ được $x = 12\\text{ m}, y = 8\\text{ m}$. Diện tích $S = 12 \\cdot 8 = 96\\text{ m}^2$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "ot1-tf1",
+            "badge": "Đúng/Sai 1 (NB) - Khái niệm phương trình bậc nhất hai ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+            "prompt": "Cho phương trình bậc nhất hai ẩn $3x - 2y = 6$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Các hệ số của phương trình là $a = 3, b = -2, c = 6$.",
+                "correctAnswer": true,
+                "explanation": "Dạng tổng quát $ax + by = c$ có $a = 3, b = -2, c = 6$."
+              },
+              {
+                "id": "b",
+                "text": "Cặp số $(2; 0)$ là một nghiệm của phương trình.",
+                "correctAnswer": true,
+                "explanation": "Thay $x = 2, y = 0$ ta được $3(2) - 2(0) = 6$ (đúng)."
+              },
+              {
+                "id": "c",
+                "text": "Cặp số $(0; 3)$ là một nghiệm của phương trình.",
+                "correctAnswer": false,
+                "explanation": "Thay $x = 0, y = 3$ ta được $3(0) - 2(3) = -6 \\ne 6$ nên $(0; 3)$ không phải là nghiệm."
+              },
+              {
+                "id": "d",
+                "text": "Phương trình có vô số nghiệm và tập nghiệm được biểu diễn bởi một đường thẳng trên mặt phẳng tọa độ.",
+                "correctAnswer": true,
+                "explanation": "Mọi phương trình bậc nhất hai ẩn đều có vô số nghiệm và tập nghiệm là một đường thẳng."
+              }
+            ]
+          },
+          {
+            "id": "ot1-tf2",
+            "badge": "Đúng/Sai 2 (TH) - Các bước giải hệ phương trình cộng đại số",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+            "prompt": "Cho hệ phương trình: $\\begin{cases} 2x + y = 5 \\\\ 3x - 2y = 4 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Nhân hai vế của phương trình thứ nhất với 2 ta được phương trình $4x + 2y = 10$.",
+                "correctAnswer": true,
+                "explanation": "$2(2x + y) = 2(5) \\Leftrightarrow 4x + 2y = 10$."
+              },
+              {
+                "id": "b",
+                "text": "Cộng từng vế của phương trình $4x + 2y = 10$ với phương trình $3x - 2y = 4$ ta được $7x = 14$.",
+                "correctAnswer": true,
+                "explanation": "$(4x + 3x) + (2y - 2y) = 10 + 4 \\Leftrightarrow 7x = 14$."
+              },
+              {
+                "id": "c",
+                "text": "Nghiệm của hệ phương trình đã cho là $(x; y) = (2; 1)$.",
+                "correctAnswer": true,
+                "explanation": "Từ $7x = 14 \\Rightarrow x = 2$. Thay vào phương trình đầu: $2(2) + y = 5 \\Rightarrow y = 1$."
+              },
+              {
+                "id": "d",
+                "text": "Giá trị của biểu thức $x^2 + y^2 = 3$.",
+                "correctAnswer": false,
+                "explanation": "Ta có $x^2 + y^2 = 2^2 + 1^2 = 4 + 1 = 5 \\ne 3$."
+              }
+            ]
+          },
+          {
+            "id": "ot1-tf3",
+            "badge": "Đúng/Sai 3 (TH) - Vị trí tương đối và giao điểm của hai đường thẳng",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 14)",
+            "prompt": "Cho hai đường thẳng $d_1: x + 2y = 4$ và $d_2: 2x - y = 3$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Điểm $A(0; 2)$ thuộc đường thẳng $d_1$.",
+                "correctAnswer": true,
+                "explanation": "Thay $x = 0, y = 2$ vào $d_1$: $0 + 2(2) = 4$ (thỏa mãn)."
+              },
+              {
+                "id": "b",
+                "text": "Tọa độ giao điểm của $d_1$ và $d_2$ là nghiệm của hệ phương trình $\\begin{cases} x + 2y = 4 \\\\ 2x - y = 3 \\end{cases}$.",
+                "correctAnswer": true,
+                "explanation": "Theo định nghĩa, tọa độ giao điểm là nghiệm chung của hệ hai phương trình."
+              },
+              {
+                "id": "c",
+                "text": "Hai đường thẳng $d_1$ và $d_2$ cắt nhau tại điểm $M(2; 1)$.",
+                "correctAnswer": true,
+                "explanation": "Giải hệ ta được $x = 2, y = 1$. Vậy giao điểm là $M(2; 1)$."
+              },
+              {
+                "id": "d",
+                "text": "Giao điểm $M(2; 1)$ nằm trong góc phần tư thứ hai của mặt phẳng tọa độ.",
+                "correctAnswer": false,
+                "explanation": "Điểm $M(2; 1)$ có hoành độ dương và tung độ dương ($x > 0, y > 0$) nên thuộc góc phần tư thứ nhất."
+              }
+            ]
+          },
+          {
+            "id": "ot1-tf4",
+            "badge": "Đúng/Sai 4 (VD) - Toán thực tế bán hàng",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 19)",
+            "prompt": "Một cửa hàng bánh mì bán hai loại: bánh mì chả giá $20.000\\text{ đ/chiếc}$ và bánh mì pate giá $15.000\\text{ đ/chiếc}$. Buổi sáng, cửa hàng đã bán được $80\\text{ chiếc}$ bánh mì cả hai loại và thu được tổng số tiền là $1.450.000\\text{ đ}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Nếu gọi số bánh mì chả là $x$ và bánh mì pate là $y$ thì ta có phương trình $x + y = 80$.",
+                "correctAnswer": true,
+                "explanation": "Tổng số bánh mì bán được là 80 chiếc nên $x + y = 80$."
+              },
+              {
+                "id": "b",
+                "text": "Tổng số tiền thu được biểu diễn bởi phương trình $20x + 15y = 1450$ (đơn vị: nghìn đồng).",
+                "correctAnswer": true,
+                "explanation": "$20.000x + 15.000y = 1.450.000 \\Leftrightarrow 20x + 15y = 1450$."
+              },
+              {
+                "id": "c",
+                "text": "Số bánh mì chả bán được nhiều hơn số bánh mì pate.",
+                "correctAnswer": true,
+                "explanation": "Giải hệ: $x = 50\\text{ chiếc}$ bánh mì chả và $y = 30\\text{ chiếc}$ bánh mì pate. Vì $50 > 30$ nên khẳng định đúng."
+              },
+              {
+                "id": "d",
+                "text": "Cửa hàng đã bán được $45\\text{ chiếc}$ bánh mì chả.",
+                "correctAnswer": false,
+                "explanation": "Cửa hàng bán được đúng $50\\text{ chiếc}$ bánh mì chả, không phải $45$ chiếc."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "ot1-sa1",
+            "badge": "Trả lời ngắn 1 (TH) - Tính tổng hai nghiệm của hệ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+            "prompt": "Cho hệ phương trình $\\begin{cases} 3x - y = 7 \\\\ x + 2y = 7 \\end{cases}$ có nghiệm duy nhất $(x_0; y_0)$. Tính giá trị của biểu thức $x_0 + y_0$.",
+            "correctAnswer": "5",
+            "acceptableAnswers": [
+              "5",
+              "x+y=5"
+            ],
+            "explanation": "Từ PT 1: $y = 3x - 7$. Thế vào PT 2: $x + 2(3x - 7) = 7 \\Leftrightarrow 7x = 21 \\Leftrightarrow x = 3 \\Rightarrow y = 2$. Giá trị $x_0 + y_0 = 3 + 2 = 5$."
+          },
+          {
+            "id": "ot1-sa2",
+            "badge": "Trả lời ngắn 2 (TH) - Tìm a + b khi biết nghiệm của hệ",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 14)",
+            "prompt": "Biết hệ phương trình $\\begin{cases} ax + y = 3 \\\\ 2x - by = 1 \\end{cases}$ nhận cặp số $(x; y) = (1; 1)$ làm nghiệm. Tính giá trị của tổng $a + b$.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "a+b=3"
+            ],
+            "explanation": "Thay $x = 1, y = 1$: $a(1) + 1 = 3 \\Rightarrow a = 2$; $2(1) - b(1) = 1 \\Rightarrow b = 1$. Giá trị $a + b = 2 + 1 = 3$."
+          },
+          {
+            "id": "ot1-sa3",
+            "badge": "Trả lời ngắn 3 (VD) - Tìm tham số m để đường thẳng đi qua giao điểm",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+            "prompt": "Tìm giá trị của tham số $m$ để đường thẳng $y = mx + 1$ đi qua giao điểm của hai đường thẳng $2x - y = 3$ và $x + y = 3$.",
+            "correctAnswer": "0",
+            "acceptableAnswers": [
+              "0",
+              "m=0"
+            ],
+            "explanation": "Giao điểm của hai đường thẳng là nghiệm của hệ $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases} \\Rightarrow x = 2, y = 1$. Điểm $(2; 1)$ thuộc đường thẳng $y = mx + 1$ nên $1 = m(2) + 1 \\Leftrightarrow 2m = 0 \\Leftrightarrow m = 0$."
+          },
+          {
+            "id": "ot1-sa4",
+            "badge": "Trả lời ngắn 4 (VD) - Tìm m để hệ có nghiệm thỏa mãn x = y",
+            "source": "Đề thi học sinh giỏi Toán 9",
+            "prompt": "Cho hệ phương trình $\\begin{cases} x + 2y = 3 \\\\ 2x - 3y = 4 - m \\end{cases}$. Tìm giá trị của tham số $m$ để hệ có nghiệm duy nhất $(x; y)$ thỏa mãn $x = y$.",
+            "correctAnswer": "5",
+            "acceptableAnswers": [
+              "5",
+              "m=5"
+            ],
+            "explanation": "Thay $x = y$ vào PT đầu: $x + 2x = 3 \\Leftrightarrow 3x = 3 \\Leftrightarrow x = 1 \\Rightarrow y = 1$. Thay $x = 1, y = 1$ vào PT thứ hai: $2(1) - 3(1) = 4 - m \\Leftrightarrow -1 = 4 - m \\Leftrightarrow m = 5$."
+          },
+          {
+            "id": "ot1-sa5",
+            "badge": "Trả lời ngắn 5 (VD) - Toán thực tế chuyển động sông nước",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+            "prompt": "Một ca nô chạy xuôi dòng một khúc sông dài $30\\text{ km}$ rồi quay ngược dòng trở lại $24\\text{ km}$ hết tổng cộng $3\\text{ giờ}$. Biết vận tốc dòng nước là $2\\text{ km/h}$. Tính vận tốc thực của ca nô khi nước yên lặng (theo đơn vị km/h).",
+            "correctAnswer": "18",
+            "acceptableAnswers": [
+              "18",
+              "18 km/h",
+              "18km/h"
+            ],
+            "explanation": "Gọi vận tốc thực là $v\\text{ (km/h)}$, $v > 2$. Thời gian: $\\frac{30}{v + 2} + \\frac{24}{v - 2} = 3$. Với $v = 18$: $\\frac{30}{20} + \\frac{24}{16} = 1,5 + 1,5 = 3\\text{ (giờ)}$ thỏa mãn. Vậy vận tốc thực là $18\\text{ km/h}$."
+          },
+          {
+            "id": "ot1-sa6",
+            "badge": "Trả lời ngắn 6 (VD) - Toán thực tế quyên góp sách",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 16)",
+            "prompt": "Hai lớp 9A và 9B có tổng số $80\\text{ học sinh}$. Trong đợt quyên góp sách giáo khoa ủng hộ học sinh vùng cao, mỗi học sinh lớp 9A quyên góp $3\\text{ quyển}$, mỗi học sinh lớp 9B quyên góp $4\\text{ quyển}$, cả hai lớp quyên góp được tổng cộng $270\\text{ quyển}$. Hỏi lớp 9A có bao nhiêu học sinh?",
+            "correctAnswer": "50",
+            "acceptableAnswers": [
+              "50",
+              "50 học sinh"
+            ],
+            "explanation": "Gọi số học sinh lớp 9A là $x$ và 9B là $y$ ($x + y = 80$). Tổng số sách: $3x + 4y = 270$. Nhân PT đầu với 4: $4x + 4y = 320$. Trừ theo vế: $x = 320 - 270 = 50\\text{ học sinh}$."
+          }
+        ]
+      },
+      {
+        "id": "de-2",
+        "title": "Đề ôn tập số 2",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Phương trình và Hệ phương trình bậc nhất hai ẩn) - Đề số 2",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "ot2-q1",
+            "badge": "Câu 1 (NB) - Kiểm tra cặp số không phải nghiệm",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 7)",
+            "question": "Cặp số nào sau đây KHÔNG phải là nghiệm của phương trình $x - 2y = 3$?",
+            "options": [
+              "$(1; 1)$",
+              "$(3; 0)$",
+              "$(5; 1)$",
+              "$(1; -1)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 1, y = 1$ vào vế trái: $1 - 2(1) = -1 \\ne 3$. Do đó cặp $(1; 1)$ không phải là nghiệm."
+          },
+          {
+            "id": "ot2-q2",
+            "badge": "Câu 2 (NB) - Phương trình khuyết ẩn x",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 7)",
+            "question": "Phương trình $0x + 3y = 6$ có đường thẳng biểu diễn tập nghiệm song song với trục nào?",
+            "options": [
+              "Song song với trục hoành $Ox$",
+              "Song song với trục tung $Oy$",
+              "Trùng với trục hoành $Ox$",
+              "Trùng với trục tung $Oy$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình $0x + 3y = 6 \\Leftrightarrow y = 2$. Đường thẳng $y = 2$ song song với trục hoành $Ox$ và cắt trục tung tại điểm $(0; 2)$."
+          },
+          {
+            "id": "ot2-q3",
+            "badge": "Câu 3 (NB) - Phương trình khuyết ẩn y",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 8)",
+            "question": "Tập nghiệm của phương trình $2x + 0y = 4$ được biểu diễn bởi đường thẳng:",
+            "options": [
+              "$x = 2$",
+              "$y = 2$",
+              "$x = 4$",
+              "$y = 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình $2x + 0y = 4 \\Leftrightarrow 2x = 4 \\Leftrightarrow x = 2$."
+          },
+          {
+            "id": "ot2-q4",
+            "badge": "Câu 4 (NB) - Nhận biết hệ phương trình vô nghiệm",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 12)",
+            "question": "Hệ phương trình $\\begin{cases} x - y = 2 \\\\ 2x - 2y = 5 \\end{cases}$ có số nghiệm là:",
+            "options": [
+              "$0$ (Vô nghiệm)",
+              "$1$ nghiệm duy nhất",
+              "$2$ nghiệm",
+              "Vô số nghiệm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\frac{1}{2} = \\frac{-1}{-2} \\ne \\frac{2}{5}$, hai đường thẳng song song nên hệ vô nghiệm."
+          },
+          {
+            "id": "ot2-q5",
+            "badge": "Câu 5 (NB) - Kiểm tra nghiệm có tung độ âm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 9)",
+            "question": "Cặp số $(x; y) = (3; -1)$ là nghiệm của hệ phương trình nào dưới đây?",
+            "options": [
+              "$\\begin{cases} x + y = 2 \\\\ x - 2y = 5 \\end{cases}$",
+              "$\\begin{cases} x - y = 2 \\\\ 2x + y = 5 \\end{cases}$",
+              "$\\begin{cases} 2x + y = 7 \\\\ x + y = 4 \\end{cases}$",
+              "$\\begin{cases} x + 2y = 1 \\\\ 3x - y = 8 \\end{cases}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 3, y = -1$: $3 + (-1) = 2$ (đúng); $3 - 2(-1) = 5$ (đúng). Vậy $(3; -1)$ là nghiệm của hệ."
+          },
+          {
+            "id": "ot2-q6",
+            "badge": "Câu 6 (NB) - Triệt tiêu ẩn trong phương pháp cộng",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 14)",
+            "question": "Để giải hệ phương trình $\\begin{cases} 3x + y = 5 \\\\ 2x - y = 0 \\end{cases}$ bằng phương pháp cộng đại số, ta thực hiện cộng từng vế hai phương trình để triệt tiêu ẩn nào?",
+            "options": [
+              "Triệt tiêu ẩn $y$",
+              "Triệt tiêu ẩn $x$",
+              "Triệt tiêu cả $x$ và $y$",
+              "Không triệt tiêu được ẩn nào"
+            ],
+            "correctIndex": 0,
+            "explanation": "Do hệ số của $y$ ở hai phương trình đối nhau ($1$ và $-1$) nên khi cộng vế theo vế ta được $5x = 5$, triệt tiêu được ẩn $y$."
+          },
+          {
+            "id": "ot2-q7",
+            "badge": "Câu 7 (TH) - Giải hệ phương trình cơ bản",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+            "question": "Nghiệm của hệ phương trình $\\begin{cases} 3x - 2y = 4 \\\\ 2x + y = 5 \\end{cases}$ là:",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; -1)$",
+              "$(4; 4)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nhân phương trình thứ hai với 2: $4x + 2y = 10$. Cộng với phương trình đầu: $7x = 14 \\Rightarrow x = 2 \\Rightarrow y = 5 - 2(2) = 1$. Nghiệm là $(2; 1)$."
+          },
+          {
+            "id": "ot2-q8",
+            "badge": "Câu 8 (TH) - Giải hệ có nghiệm nguyên",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 13)",
+            "question": "Giải hệ phương trình $\\begin{cases} 4x + 3y = 6 \\\\ 2x + y = 4 \\end{cases}$. Giá trị của hiệu $x - y$ bằng:",
+            "options": [
+              "$5$",
+              "$-1$",
+              "$1$",
+              "$3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Từ PT 2: $y = 4 - 2x$. Thế vào PT 1: $4x + 3(4 - 2x) = 6 \\Leftrightarrow -2x + 12 = 6 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3 \\Rightarrow y = -2$. Hiệu $x - y = 3 - (-2) = 5$."
+          },
+          {
+            "id": "ot2-q9",
+            "badge": "Câu 9 (TH) - Tìm hàm số bậc nhất đi qua hai điểm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+            "question": "Biết đồ thị hàm số bậc nhất $y = ax + b$ đi qua hai điểm $A(1; 3)$ và $B(2; 5)$. Giá trị của $a$ và $b$ là:",
+            "options": [
+              "$a = 2; b = 1$",
+              "$a = 1; b = 2$",
+              "$a = 3; b = 0$",
+              "$a = -2; b = 5$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay tọa độ hai điểm ta có hệ: $\\begin{cases} a + b = 3 \\\\ 2a + b = 5 \\end{cases}$. Trừ từng vế hai phương trình được $a = 2 \\Rightarrow b = 1$."
+          },
+          {
+            "id": "ot2-q10",
+            "badge": "Câu 10 (TH) - Giao điểm của hai đường thẳng",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 14)",
+            "question": "Tọa độ giao điểm của hai đường thẳng $d_1: 3x - y = 5$ và $d_2: x + 2y = 4$ là:",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; 4)$",
+              "$(0; 2)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Giải hệ $\\begin{cases} 3x - y = 5 \\\\ x + 2y = 4 \\end{cases}$. Nhân PT đầu với 2: $6x - 2y = 10$. Cộng vào PT hai: $7x = 14 \\Rightarrow x = 2 \\Rightarrow y = 1$. Giao điểm là $(2; 1)$."
+          },
+          {
+            "id": "ot2-q11",
+            "badge": "Câu 11 (VD) - Tìm tham số để hai đường thẳng song song",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hồ Chí Minh",
+            "question": "Tìm giá trị của tham số $m$ để hai đường thẳng $y = (2m - 1)x + 3$ và $y = 3x - 1$ song song với nhau.",
+            "options": [
+              "$m = 2$",
+              "$m = 1$",
+              "$m = -2$",
+              "$m = 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hai đường thẳng song song khi có cùng hệ số góc và tung độ gốc khác nhau: $2m - 1 = 3 \\Leftrightarrow 2m = 4 \\Leftrightarrow m = 2$ (thỏa mãn $3 \\ne -1$)."
+          },
+          {
+            "id": "ot2-q12",
+            "badge": "Câu 12 (VD) - Toán thực tế diện tích đất",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 17)",
+            "question": "Một mảnh đất hình chữ nhật có chu vi $60\\text{ m}$. Biết chiều dài hơn chiều rộng $6\\text{ m}$. Diện tích của mảnh đất đó là:",
+            "options": [
+              "$216\\text{ m}^2$",
+              "$225\\text{ m}^2$",
+              "$200\\text{ m}^2$",
+              "$180\\text{ m}^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nửa chu vi: $x + y = 30$. Chiều dài hơn rộng: $x - y = 6$. Giải hệ ta được chiều dài $x = 18\\text{ m}$, chiều rộng $y = 12\\text{ m}$. Diện tích $S = 18 \\cdot 12 = 216\\text{ m}^2$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "ot2-tf1",
+            "badge": "Đúng/Sai 1 (NB) - Điểm thuộc đường thẳng biểu diễn nghiệm",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 8)",
+            "prompt": "Cho phương trình bậc nhất hai ẩn $2x + 5y = 10$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Cặp số $(0; 2)$ là một nghiệm của phương trình.",
+                "correctAnswer": true,
+                "explanation": "$2(0) + 5(2) = 10$ (thỏa mãn)."
+              },
+              {
+                "id": "b",
+                "text": "Cặp số $(5; 0)$ là một nghiệm của phương trình.",
+                "correctAnswer": true,
+                "explanation": "$2(5) + 5(0) = 10$ (thỏa mãn)."
+              },
+              {
+                "id": "c",
+                "text": "Đường thẳng biểu diễn tập nghiệm cắt trục tung tại điểm có tung độ bằng $2$.",
+                "correctAnswer": true,
+                "explanation": "Giao với trục tung $Oy$ ($x = 0$) là điểm $(0; 2)$ có tung độ bằng $2$."
+              },
+              {
+                "id": "d",
+                "text": "Khi $x = 1$, giá trị tương ứng của $y$ là $2$.",
+                "correctAnswer": false,
+                "explanation": "Thay $x = 1$: $2(1) + 5y = 10 \\Rightarrow 5y = 8 \\Rightarrow y = 1,6 \\ne 2$."
+              }
+            ]
+          },
+          {
+            "id": "ot2-tf2",
+            "badge": "Đúng/Sai 2 (TH) - Các bước giải hệ phương trình bằng phương pháp thế",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 13)",
+            "prompt": "Cho hệ phương trình: $\\begin{cases} 3x - y = 5 \\\\ x + 2y = 4 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Từ phương trình thứ nhất biểu diễn $y$ theo $x$ ta được $y = 3x - 5$.",
+                "correctAnswer": true,
+                "explanation": "$3x - y = 5 \\Leftrightarrow y = 3x - 5$."
+              },
+              {
+                "id": "b",
+                "text": "Thế $y = 3x - 5$ vào phương trình thứ hai ta được $x + 2(3x - 5) = 4$.",
+                "correctAnswer": true,
+                "explanation": "Thay thế chính xác vào vị trí của biến $y$."
+              },
+              {
+                "id": "c",
+                "text": "Nghiệm duy nhất của hệ phương trình là $(x; y) = (2; 1)$.",
+                "correctAnswer": true,
+                "explanation": "$x + 6x - 10 = 4 \\Leftrightarrow 7x = 14 \\Leftrightarrow x = 2 \\Rightarrow y = 3(2) - 5 = 1$."
+              },
+              {
+                "id": "d",
+                "text": "Biểu thức $2x + 3y$ có giá trị bằng $8$.",
+                "correctAnswer": false,
+                "explanation": "$2(2) + 3(1) = 4 + 3 = 7 \\ne 8$."
+              }
+            ]
+          },
+          {
+            "id": "ot2-tf3",
+            "badge": "Đúng/Sai 3 (TH) - Lập hệ phương trình tìm đường thẳng qua hai điểm",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 15)",
+            "prompt": "Đồ thị hàm số bậc nhất $y = ax + b$ đi qua hai điểm $M(1; 1)$ và $N(2; 3)$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Thay tọa độ điểm $M(1; 1)$ vào phương trình ta được $a + b = 1$.",
+                "correctAnswer": true,
+                "explanation": "$1 = a(1) + b \\Leftrightarrow a + b = 1$."
+              },
+              {
+                "id": "b",
+                "text": "Thay tọa độ điểm $N(2; 3)$ vào phương trình ta được $2a + b = 3$.",
+                "correctAnswer": true,
+                "explanation": "$3 = a(2) + b \\Leftrightarrow 2a + b = 3$."
+              },
+              {
+                "id": "c",
+                "text": "Giải hệ hai phương trình trên ta tìm được $a = 2$ và $b = -1$.",
+                "correctAnswer": true,
+                "explanation": "Trừ vế theo vế: $a = 2 \\Rightarrow b = 1 - 2 = -1$."
+              },
+              {
+                "id": "d",
+                "text": "Đường thẳng này đi qua gốc tọa độ $O(0; 0)$.",
+                "correctAnswer": false,
+                "explanation": "Hàm số là $y = 2x - 1$. Với $x = 0 \\Rightarrow y = -1 \\ne 0$ nên không đi qua gốc tọa độ."
+              }
+            ]
+          },
+          {
+            "id": "ot2-tf4",
+            "badge": "Đúng/Sai 4 (VD) - Bài toán cổ Vừa gà vừa chó",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 17)",
+            "prompt": "Một người nông dân nhốt gà và thỏ trong cùng một chuồng. Người đó đếm được có tất cả $35\\text{ cái đầu}$ (mỗi con có 1 đầu) và $94\\text{ cái chân}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Nếu gọi số con gà là $x$ và số con thỏ là $y$ thì ta có phương trình $x + y = 35$.",
+                "correctAnswer": true,
+                "explanation": "Tổng số con là 35 con nên $x + y = 35$."
+              },
+              {
+                "id": "b",
+                "text": "Phương trình biểu diễn tổng số chân là $2x + 4y = 94$.",
+                "correctAnswer": true,
+                "explanation": "Mỗi con gà có 2 chân, mỗi con thỏ có 4 chân: $2x + 4y = 94$."
+              },
+              {
+                "id": "c",
+                "text": "Số con gà trong chuồng nhiều hơn số con thỏ.",
+                "correctAnswer": true,
+                "explanation": "Giải hệ: $x = 23\\text{ con gà}$ và $y = 12\\text{ con thỏ}$. Vì $23 > 12$ nên khẳng định đúng."
+              },
+              {
+                "id": "d",
+                "text": "Người nông dân nuôi $20\\text{ con thỏ}$.",
+                "correctAnswer": false,
+                "explanation": "Số con thỏ chính xác là $12\\text{ con}$, không phải $20$ con."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "ot2-sa1",
+            "badge": "Trả lời ngắn 1 (TH) - Tích nghiệm của hệ phương trình",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 14)",
+            "prompt": "Giải hệ phương trình $\\begin{cases} 2x + 3y = 8 \\\\ 3x - y = 1 \\end{cases}$. Tính giá trị của tích $x \\cdot y$.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+              "2",
+              "xy=2"
+            ],
+            "explanation": "Từ PT 2: $y = 3x - 1$. Thay vào PT 1: $2x + 3(3x - 1) = 8 \\Leftrightarrow 11x = 11 \\Leftrightarrow x = 1 \\Rightarrow y = 2$. Tích $x \\cdot y = 1 \\cdot 2 = 2$."
+          },
+          {
+            "id": "ot2-sa2",
+            "badge": "Trả lời ngắn 2 (TH) - Tổng bình phương các hệ số",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+            "prompt": "Biết đường thẳng $y = ax + b$ đi qua hai điểm $A(0; -2)$ và $B(3; 4)$. Tính giá trị của $a^2 + b^2$.",
+            "correctAnswer": "8",
+            "acceptableAnswers": [
+              "8"
+            ],
+            "explanation": "Qua $A(0; -2) \\Rightarrow b = -2$. Qua $B(3; 4) \\Rightarrow 3a - 2 = 4 \\Rightarrow 3a = 6 \\Rightarrow a = 2$. Giá trị $a^2 + b^2 = 2^2 + (-2)^2 = 4 + 4 = 8$."
+          },
+          {
+            "id": "ot2-sa3",
+            "badge": "Trả lời ngắn 3 (VD) - Tìm tham số để nghiệm thỏa mãn x = 2y",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Đà Nẵng",
+            "prompt": "Cho hệ phương trình $\\begin{cases} 2x - y = m \\\\ x + y = 3 \\end{cases}$. Tìm giá trị của tham số $m$ để hệ có nghiệm thỏa mãn $x = 2y$.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "m=3"
+            ],
+            "explanation": "Thay $x = 2y$ vào PT 2: $2y + y = 3 \\Leftrightarrow 3y = 3 \\Leftrightarrow y = 1 \\Rightarrow x = 2$. Thay $x = 2, y = 1$ vào PT 1: $m = 2(2) - 1 = 3$."
+          },
+          {
+            "id": "ot2-sa4",
+            "badge": "Trả lời ngắn 4 (VD) - Giải hệ đặt ẩn phụ tìm nghiệm x",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 15)",
+            "prompt": "Tìm giá trị của $x$ trong nghiệm của hệ phương trình: $\\begin{cases} \\frac{2}{x} + \\frac{1}{y} = 2 \\\\ \\frac{1}{x} - \\frac{1}{y} = 1 \\end{cases}$.",
+            "correctAnswer": "1",
+            "acceptableAnswers": [
+              "1",
+              "x=1"
+            ],
+            "explanation": "Cộng hai phương trình vế theo vế: $\\frac{3}{x} = 3 \\Rightarrow x = 1$. (Khi đó $\\frac{1}{y} = 0$, hoặc nghiệm hợp lý $x = 1$)."
+          },
+          {
+            "id": "ot2-sa5",
+            "badge": "Trả lời ngắn 5 (VD) - Toán thực tế chuyển động tàu hỏa",
+            "source": "Đề thi tuyển sinh vào lớp 10 THPT",
+            "prompt": "Một đoàn tàu hỏa đi từ ga A đến ga B với vận tốc không đổi. Nếu tàu tăng vận tốc thêm $10\\text{ km/h}$ thì đến nơi sớm $2\\text{ giờ}$. Nếu tàu giảm vận tốc $10\\text{ km/h}$ thì đến nơi muộn $3\\text{ giờ}$. Tính quãng đường $AB$ (theo đơn vị km).",
+            "correctAnswer": "600",
+            "acceptableAnswers": [
+              "600",
+              "600 km",
+              "600km"
+            ],
+            "explanation": "Gọi vận tốc là $v\\text{ (km/h)}$, thời gian là $t\\text{ (giờ)}$. Quãng đường $s = vt$. Ta có hệ: $\\begin{cases} (v + 10)(t - 2) = vt \\\\ (v - 10)(t + 3) = vt \\end{cases} \\Leftrightarrow \\begin{cases} -2v + 10t = 20 \\\\ 3v - 10t = 30 \\end{cases}$. Cộng hai phương trình được $v = 50\\text{ km/h} \\Rightarrow t = 12\\text{ giờ}$. Quãng đường $s = 50 \\cdot 12 = 600\\text{ km}$."
+          },
+          {
+            "id": "ot2-sa6",
+            "badge": "Trả lời ngắn 6 (VD) - Toán thực tế điểm thi tuyển sinh 10",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+            "prompt": "Trong kỳ thi tuyển sinh vào lớp 10, một phòng thi có $24\\text{ thí sinh}$. Điểm thi môn Toán của cả phòng gồm hai mức là $8\\text{ điểm}$ và $9\\text{ điểm}$. Tổng điểm của cả phòng thi là $202\\text{ điểm}$. Hỏi có bao nhiêu thí sinh đạt điểm $9$?",
+            "correctAnswer": "10",
+            "acceptableAnswers": [
+              "10",
+              "10 thí sinh"
+            ],
+            "explanation": "Gọi số bạn được 8 điểm là $x$, 9 điểm là $y$ ($x + y = 24$). Tổng điểm: $8x + 9y = 202$. Nhân PT đầu với 8: $8x + 8y = 192$. Trừ theo vế: $y = 202 - 192 = 10\\text{ thí sinh}$."
+          }
+        ]
+      },
+      {
+        "id": "de-3",
+        "title": "Đề ôn tập số 3",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Phương trình và Hệ phương trình bậc nhất hai ẩn) - Đề số 3",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "ot3-q1",
+            "badge": "Câu 1 (NB) - Kiểm tra nghiệm của phương trình",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+            "question": "Cặp số $(x; y) = (2; 3)$ là nghiệm của phương trình nào sau đây?",
+            "options": [
+              "$2x + y = 7$",
+              "$x + 2y = 7$",
+              "$3x - y = 4$",
+              "$x - y = 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 2, y = 3$ vào vế trái: $2(2) + 3 = 4 + 3 = 7$ (bằng vế phải)."
+          },
+          {
+            "id": "ot3-q2",
+            "badge": "Câu 2 (NB) - Nghiệm của hệ đối xứng đơn giản",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 8)",
+            "question": "Cặp số nào sau đây là nghiệm của hệ phương trình $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$?",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; 0)$",
+              "$(0; 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cộng hai phương trình: $3x = 6 \\Rightarrow x = 2 \\Rightarrow y = 1$. Cặp số nghiệm là $(2; 1)$."
+          },
+          {
+            "id": "ot3-q3",
+            "badge": "Câu 3 (NB) - Giao điểm với trục hoành Ox",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 9)",
+            "question": "Đường thẳng $d: 2x - y = 4$ cắt trục hoành $Ox$ tại điểm có tọa độ là:",
+            "options": [
+              "$(2; 0)$",
+              "$(0; -4)$",
+              "$(4; 0)$",
+              "$(0; 4)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Giao điểm với trục hoành có $y = 0$. Thay $y = 0$ vào phương trình: $2x - 0 = 4 \\Rightarrow x = 2$. Vậy tọa độ là $(2; 0)$."
+          },
+          {
+            "id": "ot3-q4",
+            "badge": "Câu 4 (NB) - Hệ phương trình có vô số nghiệm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 14)",
+            "question": "Hệ phương trình $\\begin{cases} x - 3y = 2 \\\\ -2x + 6y = -4 \\end{cases}$ có bao nhiêu nghiệm?",
+            "options": [
+              "Có vô số nghiệm",
+              "Vô nghiệm",
+              "Có 1 nghiệm duy nhất",
+              "Có 2 nghiệm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nhân hai vế của phương trình thứ nhất với $-2$ ta được đúng phương trình thứ hai. Hai đường thẳng trùng nhau nên hệ có vô số nghiệm."
+          },
+          {
+            "id": "ot3-q5",
+            "badge": "Câu 5 (NB) - Vị trí tương đối khi hệ vô nghiệm",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 12)",
+            "question": "Hệ phương trình $\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}$ vô nghiệm khi hai đường thẳng biểu diễn tập nghiệm của chúng:",
+            "options": [
+              "Song song với nhau",
+              "Cắt nhau tại một điểm",
+              "Trùng nhau",
+              "Vuông góc với nhau"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hai đường thẳng song song thì không có điểm chung, do đó hệ phương trình vô nghiệm."
+          },
+          {
+            "id": "ot3-q6",
+            "badge": "Câu 6 (NB) - Nghiệm tổng quát của phương trình bậc nhất hai ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 8)",
+            "question": "Nghiệm tổng quát của phương trình $2x - y = 1$ là:",
+            "options": [
+              "$\\begin{cases} x \\in \\mathbb{R} \\\\ y = 2x - 1 \\end{cases}$",
+              "$\\begin{cases} x = 2y - 1 \\\\ y \\in \\mathbb{R} \\end{cases}$",
+              "$\\begin{cases} x \\in \\mathbb{R} \\\\ y = -2x + 1 \\end{cases}$",
+              "$\\begin{cases} x = 1 \\\\ y = 1 \\end{cases}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Từ $2x - y = 1 \\Rightarrow y = 2x - 1$. Nghiệm tổng quát là $(x; 2x - 1)$ với $x \\in \\mathbb{R}$."
+          },
+          {
+            "id": "ot3-q7",
+            "badge": "Câu 7 (TH) - Giải hệ phương trình",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 15)",
+            "question": "Nghiệm của hệ phương trình $\\begin{cases} 5x + 2y = 9 \\\\ x - y = -1 \\end{cases}$ là:",
+            "options": [
+              "$(1; 2)$",
+              "$(2; 1)$",
+              "$(3; -3)$",
+              "$(0; 4,5)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Từ PT 2: $y = x + 1$. Thế vào PT 1: $5x + 2(x + 1) = 9 \\Leftrightarrow 7x = 7 \\Leftrightarrow x = 1 \\Rightarrow y = 2$. Nghiệm là $(1; 2)$."
+          },
+          {
+            "id": "ot3-q8",
+            "badge": "Câu 8 (TH) - Giải hệ phương trình thế cơ bản",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 13)",
+            "question": "Giải hệ phương trình $\\begin{cases} 3x + 2y = 8 \\\\ 2x - y = 3 \\end{cases}$. Giá trị của $x + y$ bằng:",
+            "options": [
+              "$3$",
+              "$4$",
+              "$5$",
+              "$2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Từ PT 2: $y = 2x - 3$. Thế vào PT 1: $3x + 2(2x - 3) = 8 \\Leftrightarrow 7x = 14 \\Leftrightarrow x = 2 \\Rightarrow y = 1$. Giá trị $x + y = 2 + 1 = 3$."
+          },
+          {
+            "id": "ot3-q9",
+            "badge": "Câu 9 (TH) - Tìm tham số a, b của hệ phương trình",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 16)",
+            "question": "Biết hệ phương trình $\\begin{cases} 2x + by = 4 \\\\ ax - y = 1 \\end{cases}$ nhận cặp số $(x; y) = (1; 2)$ làm nghiệm. Giá trị của $a$ và $b$ là:",
+            "options": [
+              "$a = 3; b = 1$",
+              "$a = 1; b = 3$",
+              "$a = 2; b = 2$",
+              "$a = -1; b = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 1, y = 2$: $2(1) + 2b = 4 \\Rightarrow 2b = 2 \\Rightarrow b = 1$; $a(1) - 2 = 1 \\Rightarrow a = 3$."
+          },
+          {
+            "id": "ot3-q10",
+            "badge": "Câu 10 (TH) - Tọa độ giao điểm hai đường thẳng cắt nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 15)",
+            "question": "Tọa độ giao điểm của hai đường thẳng $d_1: y = 2x - 3$ và $d_2: y = -x + 3$ là:",
+            "options": [
+              "$(2; 1)$",
+              "$(1; 2)$",
+              "$(3; 0)$",
+              "$(0; 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình hoành độ giao điểm: $2x - 3 = -x + 3 \\Leftrightarrow 3x = 6 \\Leftrightarrow x = 2 \\Rightarrow y = 1$. Giao điểm là $(2; 1)$."
+          },
+          {
+            "id": "ot3-q11",
+            "badge": "Câu 11 (VD) - Tìm tham số m để ba đường thẳng đồng quy",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+            "question": "Tìm giá trị của tham số $m$ để ba đường thẳng sau đồng quy: $d_1: 2x - y = 1$, $d_2: x + y = 5$, $d_3: mx - 2y = 2$.",
+            "options": [
+              "$m = 4$",
+              "$m = 2$",
+              "$m = -4$",
+              "$m = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tọa độ giao điểm của $d_1$ và $d_2$ là nghiệm của hệ $\\begin{cases} 2x - y = 1 \\\\ x + y = 5 \\end{cases} \\Rightarrow x = 2, y = 3$. Để 3 đường thẳng đồng quy thì điểm $(2; 3)$ phải thuộc $d_3$: $m(2) - 2(3) = 2 \\Leftrightarrow 2m = 8 \\Leftrightarrow m = 4$."
+          },
+          {
+            "id": "ot3-q12",
+            "badge": "Câu 12 (VD) - Toán thực tế mua sắm đồ dùng học tập",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 18)",
+            "question": "Bạn An mua $5\\text{ quyển vở}$ và $3\\text{ chiếc bút}$ hết $65.000\\text{ đ}$. Bạn Bình mua $3\\text{ quyển vở}$ và $5\\text{ chiếc bút}$ cùng loại hết $55.000\\text{ đ}$. Giá tiền của một quyển vở là:",
+            "options": [
+              "$10.000\\text{ đ}$",
+              "$5.000\\text{ đ}$",
+              "$8.000\\text{ đ}$",
+              "$12.000\\text{ đ}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi giá 1 quyển vở là $x$ và 1 chiếc bút là $y$ (nghìn đồng). Hệ: $\\begin{cases} 5x + 3y = 65 \\\\ 3x + 5y = 55 \\end{cases}$. Cộng hai phương trình: $8x + 8y = 120 \\Rightarrow x + y = 15$. Trừ hai phương trình: $2x - 2y = 10 \\Rightarrow x - y = 5$. Suy ra $2x = 20 \\Rightarrow x = 10\\text{ nghìn đồng}$ ($10.000\\text{ đ}$)."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "ot3-tf1",
+            "badge": "Đúng/Sai 1 (NB) - Phương trình bậc nhất hai ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+            "prompt": "Cho phương trình bậc nhất hai ẩn $4x - 3y = 12$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Các hệ số của phương trình là $a = 4, b = -3, c = 12$.",
+                "correctAnswer": true,
+                "explanation": "Hệ số đi kèm $x$ là 4, đi kèm $y$ là $-3$, hằng số là 12."
+              },
+              {
+                "id": "b",
+                "text": "Cặp số $(3; 0)$ là một nghiệm của phương trình.",
+                "correctAnswer": true,
+                "explanation": "$4(3) - 3(0) = 12$ (thỏa mãn)."
+              },
+              {
+                "id": "c",
+                "text": "Cặp số $(0; 4)$ là một nghiệm của phương trình.",
+                "correctAnswer": false,
+                "explanation": "Tại $x = 0$ thì $-3y = 12 \\Rightarrow y = -4 \\ne 4$."
+              },
+              {
+                "id": "d",
+                "text": "Tập nghiệm của phương trình được biểu diễn bởi một đường thẳng trên mặt phẳng tọa độ $Oxy$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, tập nghiệm của phương trình bậc nhất hai ẩn là một đường thẳng."
+              }
+            ]
+          },
+          {
+            "id": "ot3-tf2",
+            "badge": "Đúng/Sai 2 (TH) - Giải hệ phương trình bằng phép cộng đại số",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 14)",
+            "prompt": "Cho hệ phương trình: $\\begin{cases} 4x + y = 9 \\\\ 2x - 3y = 1 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Nhân cả hai vế của phương trình thứ nhất với 3 ta được $12x + 3y = 27$.",
+                "correctAnswer": true,
+                "explanation": "$3(4x + y) = 3(9) \\Leftrightarrow 12x + 3y = 27$."
+              },
+              {
+                "id": "b",
+                "text": "Cộng hai phương trình vế theo vế ta triệt tiêu được ẩn $y$ và được $14x = 28$.",
+                "correctAnswer": true,
+                "explanation": "$(12x + 2x) + (3y - 3y) = 27 + 1 \\Leftrightarrow 14x = 28$."
+              },
+              {
+                "id": "c",
+                "text": "Nghiệm của hệ phương trình là $(x; y) = (2; 1)$.",
+                "correctAnswer": true,
+                "explanation": "$14x = 28 \\Rightarrow x = 2$. Thay vào phương trình đầu: $4(2) + y = 9 \\Rightarrow y = 1$."
+              },
+              {
+                "id": "d",
+                "text": "Giá trị của hiệu $x - y$ bằng $0$.",
+                "correctAnswer": false,
+                "explanation": "$x - y = 2 - 1 = 1 \\ne 0$."
+              }
+            ]
+          },
+          {
+            "id": "ot3-tf3",
+            "badge": "Đúng/Sai 3 (TH) - Tương quan giữa hai đường thẳng",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 15)",
+            "prompt": "Cho hai đường thẳng $d_1: y = 3x - 1$ và $d_2: y = x + 3$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Hai đường thẳng $d_1$ và $d_2$ cắt nhau vì chúng có hệ số góc khác nhau ($3 \\ne 1$).",
+                "correctAnswer": true,
+                "explanation": "Đúng, hai đường thẳng có hệ số góc khác nhau thì luôn cắt nhau."
+              },
+              {
+                "id": "b",
+                "text": "Hoành độ giao điểm của hai đường thẳng là nghiệm của phương trình $3x - 1 = x + 3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, phương trình hoành độ giao điểm là $3x - 1 = x + 3$."
+              },
+              {
+                "id": "c",
+                "text": "Tọa độ giao điểm của hai đường thẳng là $M(2; 5)$.",
+                "correctAnswer": true,
+                "explanation": "$3x - x = 3 + 1 \\Leftrightarrow 2x = 4 \\Leftrightarrow x = 2 \\Rightarrow y = 2 + 3 = 5$."
+              },
+              {
+                "id": "d",
+                "text": "Giao điểm $M(2; 5)$ thuộc đường thẳng $y = 2x + 2$.",
+                "correctAnswer": false,
+                "explanation": "Thay $x = 2$ vào $y = 2x + 2$ được $y = 2(2) + 2 = 6 \\ne 5$."
+              }
+            ]
+          },
+          {
+            "id": "ot3-tf4",
+            "badge": "Đúng/Sai 4 (VD) - Toán thực tế chuyển động xe đạp",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+            "prompt": "Một người đi xe đạp từ địa điểm A đến địa điểm B rồi quay trở lại từ B về A trên cùng một quãng đường dài $30\\text{ km}$. Khi về, người đó đi nhanh hơn lúc đi $3\\text{ km/h}$ nên thời gian về ít hơn thời gian đi là $30\\text{ phút}$ ($0,5\\text{ giờ}$). Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Nếu gọi vận tốc lúc đi là $v\\text{ (km/h)}$ thì vận tốc lúc về là $v + 3\\text{ (km/h)}$.",
+                "correctAnswer": true,
+                "explanation": "Vận tốc về nhanh hơn lúc đi 3 km/h nên là $v + 3$."
+              },
+              {
+                "id": "b",
+                "text": "Thời gian lúc đi là $\\frac{30}{v}\\text{ (giờ)}$ và thời gian lúc về là $\\frac{30}{v + 3}\\text{ (giờ)}$.",
+                "correctAnswer": true,
+                "explanation": "Thời gian bằng quãng đường chia cho vận tốc."
+              },
+              {
+                "id": "c",
+                "text": "Phương trình biểu diễn mối quan hệ thời gian là $\\frac{30}{v} - \\frac{30}{v + 3} = 0,5$.",
+                "correctAnswer": true,
+                "explanation": "Thời gian về ít hơn thời gian đi 0,5 giờ."
+              },
+              {
+                "id": "d",
+                "text": "Vận tốc lúc đi của người đó là $15\\text{ km/h}$.",
+                "correctAnswer": false,
+                "explanation": "Giải: $30(v + 3) - 30v = 0,5v(v + 3) \\Leftrightarrow 90 = 0,5(v^2 + 3v) \\Leftrightarrow v^2 + 3v - 180 = 0 \\Leftrightarrow (v - 12)(v + 15) = 0 \\Rightarrow v = 12\\text{ km/h}$ (không phải $15$ km/h)."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "ot3-sa1",
+            "badge": "Trả lời ngắn 1 (TH) - Tính giá trị biểu thức sau khi giải hệ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+            "prompt": "Giải hệ phương trình $\\begin{cases} 5x + 3y = 13 \\\\ 2x - y = 3 \\end{cases}$. Tính giá trị của biểu thức $x + 2y$.",
+            "correctAnswer": "4",
+            "acceptableAnswers": [
+              "4",
+              "x+2y=4"
+            ],
+            "explanation": "Từ PT 2: $y = 2x - 3$. Thế vào PT 1: $5x + 3(2x - 3) = 13 \\Leftrightarrow 11x = 22 \\Leftrightarrow x = 2 \\Rightarrow y = 1$. Giá trị $x + 2y = 2 + 2(1) = 4$."
+          },
+          {
+            "id": "ot3-sa2",
+            "badge": "Trả lời ngắn 2 (TH) - Tìm m để hệ có vô số nghiệm",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 15)",
+            "prompt": "Tìm giá trị của tham số $m$ để hệ phương trình $\\begin{cases} x + my = 3 \\\\ mx + 4y = 6 \\end{cases}$ có vô số nghiệm.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+              "2",
+              "m=2"
+            ],
+            "explanation": "Hệ có vô số nghiệm khi $\\frac{1}{m} = \\frac{m}{4} = \\frac{3}{6} = \\frac{1}{2}$. Từ $\\frac{1}{m} = \\frac{1}{2} \\Rightarrow m = 2$. Kiểm tra $\\frac{2}{4} = \\frac{1}{2}$ (thỏa mãn)."
+          },
+          {
+            "id": "ot3-sa3",
+            "badge": "Trả lời ngắn 3 (VD) - Tìm tham số a khi biết hoành độ nghiệm",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hồ Chí Minh",
+            "prompt": "Tìm giá trị của tham số $a$ để hệ phương trình $\\begin{cases} ax + 2y = 5 \\\\ 3x - y = 1 \\end{cases}$ nhận nghiệm $(x; y)$ có hoành độ $x = 1$.",
+            "correctAnswer": "1",
+            "acceptableAnswers": [
+              "1",
+              "a=1"
+            ],
+            "explanation": "Thay $x = 1$ vào PT 2: $3(1) - y = 1 \\Rightarrow y = 2$. Thay $x = 1, y = 2$ vào PT 1: $a(1) + 2(2) = 5 \\Leftrightarrow a + 4 = 5 \\Leftrightarrow a = 1$."
+          },
+          {
+            "id": "ot3-sa4",
+            "badge": "Trả lời ngắn 4 (VD) - Hệ đặt ẩn phụ tính tích nghiệm",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 16)",
+            "prompt": "Giải hệ phương trình $\\begin{cases} \\frac{1}{x - 1} + \\frac{1}{y + 1} = 3 \\\\ \\frac{2}{x - 1} - \\frac{1}{y + 1} = 0 \\end{cases}$. Tính giá trị của tích $x \\cdot y$.",
+            "correctAnswer": "-1",
+            "acceptableAnswers": [
+              "-1",
+              "xy=-1"
+            ],
+            "explanation": "Cộng hai phương trình: $\\frac{3}{x - 1} = 3 \\Rightarrow x - 1 = 1 \\Rightarrow x = 2$. Thay vào PT đầu: $1 + \\frac{1}{y + 1} = 3 \\Rightarrow \\frac{1}{y + 1} = 2 \\Rightarrow y + 1 = 0,5 \\Rightarrow y = -0,5$. Tích $x \\cdot y = 2 \\cdot (-0,5) = -1$."
+          },
+          {
+            "id": "ot3-sa5",
+            "badge": "Trả lời ngắn 5 (VD) - Toán thực tế vận tốc dòng nước",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 19)",
+            "prompt": "Một ca nô xuôi dòng khúc sông dài $42\\text{ km}$ hết $1,5\\text{ giờ}$ và ngược dòng khúc sông đó hết $2,1\\text{ giờ}$. Tính vận tốc của dòng nước (theo đơn vị km/h).",
+            "correctAnswer": "4",
+            "acceptableAnswers": [
+              "4",
+              "4 km/h",
+              "4km/h"
+            ],
+            "explanation": "Vận tốc xuôi dòng: $v + v_n = 42 : 1,5 = 28\\text{ (km/h)}$. Vận tốc ngược dòng: $v - v_n = 42 : 2,1 = 20\\text{ (km/h)}$. Trừ từng vế hai phương trình: $2v_n = 8 \\Rightarrow v_n = 4\\text{ km/h}$."
+          },
+          {
+            "id": "ot3-sa6",
+            "badge": "Trả lời ngắn 6 (VD) - Toán thực tế năng suất hai vòi nước",
+            "source": "Đề thi tuyển sinh vào lớp 10 THPT TP. Hà Nội",
+            "prompt": "Hai vòi nước cùng chảy vào một bể không có nước thì sau $4,8\\text{ giờ}$ đầy bể. Biết rằng trong mỗi giờ lượng nước vòi I chảy được bằng $\\frac{3}{2}$ lượng nước vòi II chảy. Hỏi nếu chảy riêng một mình thì vòi I chảy đầy bể trong bao nhiêu giờ?",
+            "correctAnswer": "8",
+            "acceptableAnswers": [
+              "8",
+              "8 giờ",
+              "8h"
+            ],
+            "explanation": "Mỗi giờ cả hai vòi chảy được $\\frac{1}{4,8} = \\frac{5}{24}$ bể. Gọi năng suất vòi II trong 1 giờ là $y$ thì vòi I là $1,5y$. Ta có $1,5y + y = \\frac{5}{24} \\Leftrightarrow 2,5y = \\frac{5}{24} \\Leftrightarrow y = \\frac{1}{12}$ bể/giờ. Năng suất vòi I là $1,5 \\cdot \\frac{1}{12} = \\frac{1}{8}$ bể/giờ. Vậy vòi I chảy một mình đầy bể trong $8\\text{ giờ}$."
+          }
+        ]
+      }
+    ]
   }
 };

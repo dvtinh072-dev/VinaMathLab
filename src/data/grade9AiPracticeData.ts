@@ -1494,5 +1494,275 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
         "explanation": "Gọi tổng số mét vải xưởng phải dệt là $L\\text{ (m)}$, $L > 0$. Thời gian dự định là $\\frac{L}{40}\\text{ (ngày)}$, thời gian thực tế là $\\frac{L}{50}\\text{ (ngày)}$. Ta có phương trình: $\\frac{L}{40} - \\frac{L}{50} = 3 \\Leftrightarrow \\frac{L}{200} = 3 \\Leftrightarrow L = 600\\text{ m}$."
       }
     ]
+  },
+  "t9-on-tap-chuong-1": {
+    "quizQuestions": [
+      {
+        "id": "ai-ot1-q1",
+        "badge": "Luyện thêm 1 (NB) - Nhận biết phương trình bậc nhất hai ẩn",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 6)",
+        "question": "Phương trình nào sau đây là phương trình bậc nhất hai ẩn?",
+        "options": [
+          "$5x - 4y = 9$",
+          "$x^2 - y = 3$",
+          "$2x + \\frac{3}{y} = 1$",
+          "$0x + 0y = 7$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình bậc nhất hai ẩn có dạng $ax + by = c$ với $a \\ne 0$ hoặc $b \\ne 0$. Ở đây $5x - 4y = 9$ có $a = 5, b = -4$."
+      },
+      {
+        "id": "ai-ot1-q2",
+        "badge": "Luyện thêm 2 (NB) - Kiểm tra nghiệm",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 7)",
+        "question": "Cặp số nào sau đây là nghiệm của phương trình $3x - y = 7$?",
+        "options": [
+          "$(3; 2)$",
+          "$(2; 3)$",
+          "$(1; -4)$",
+          "$(0; 7)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 3, y = 2$: $3(3) - 2 = 7$ (thỏa mãn)."
+      },
+      {
+        "id": "ai-ot1-q3",
+        "badge": "Luyện thêm 3 (NB) - Biểu diễn hình học",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 8)",
+        "question": "Đường thẳng biểu diễn tập nghiệm của phương trình $0x + 2y = 4$ là đường thẳng:",
+        "options": [
+          "Song song với trục hoành $Ox$",
+          "Song song với trục tung $Oy$",
+          "Đi qua gốc tọa độ",
+          "Trùng với trục tung $Oy$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$0x + 2y = 4 \\Leftrightarrow y = 2$, đường thẳng này song song với trục hoành $Ox$."
+      },
+      {
+        "id": "ai-ot1-q4",
+        "badge": "Luyện thêm 4 (NB) - Nghiệm của hệ",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1 (Trang 9)",
+        "question": "Cặp số $(2; 1)$ là nghiệm của hệ phương trình nào dưới đây?",
+        "options": [
+          "$\\begin{cases} x + y = 3 \\\\ 2x - y = 3 \\end{cases}$",
+          "$\\begin{cases} x - y = 3 \\\\ x + 2y = 3 \\end{cases}$",
+          "$\\begin{cases} 2x + y = 4 \\\\ x - y = 0 \\end{cases}$",
+          "$\\begin{cases} 3x - y = 4 \\\\ x + y = 2 \\end{cases}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 2, y = 1$: $2 + 1 = 3$ và $2(2) - 1 = 3$ (đều thỏa mãn)."
+      },
+      {
+        "id": "ai-ot1-q5",
+        "badge": "Luyện thêm 5 (NB) - Hệ có vô số nghiệm",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 12)",
+        "question": "Hệ phương trình $\\begin{cases} 3x - y = 2 \\\\ 6x - 2y = 4 \\end{cases}$ có bao nhiêu nghiệm?",
+        "options": [
+          "Có vô số nghiệm",
+          "Vô nghiệm",
+          "Có 1 nghiệm duy nhất",
+          "Có 2 nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai phương trình tương đương nên hai đường thẳng trùng nhau, hệ có vô số nghiệm."
+      },
+      {
+        "id": "ai-ot1-q6",
+        "badge": "Luyện thêm 6 (NB) - Hệ vô nghiệm",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 14)",
+        "question": "Hệ phương trình $\\begin{cases} 2x - y = 1 \\\\ 2x - y = 5 \\end{cases}$ có số nghiệm là:",
+        "options": [
+          "$0$ (Vô nghiệm)",
+          "$1$",
+          "$2$",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai đường thẳng song song không cắt nhau nên hệ vô nghiệm."
+      },
+      {
+        "id": "ai-ot1-q7",
+        "badge": "Luyện thêm 7 (TH) - Giải hệ phương trình thế",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 15)",
+        "question": "Giải hệ phương trình $\\begin{cases} y = 2x - 3 \\\\ 3x + 2y = 8 \\end{cases}$. Nghiệm $(x; y)$ là:",
+        "options": [
+          "$(2; 1)$",
+          "$(1; 2)$",
+          "$(3; 3)$",
+          "$(0; -3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thế $y = 2x - 3$ vào PT 2: $3x + 2(2x - 3) = 8 \\Leftrightarrow 7x = 14 \\Leftrightarrow x = 2 \\Rightarrow y = 1$."
+      },
+      {
+        "id": "ai-ot1-q8",
+        "badge": "Luyện thêm 8 (TH) - Giải hệ phương trình cộng đại số",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 13)",
+        "question": "Giải hệ phương trình $\\begin{cases} 4x + 3y = 11 \\\\ 2x - y = 3 \\end{cases}$. Giá trị của $x + y$ là:",
+        "options": [
+          "$3$",
+          "$4$",
+          "$5$",
+          "$2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhân PT 2 với 3: $6x - 3y = 9$. Cộng vào PT 1: $10x = 20 \\Rightarrow x = 2 \\Rightarrow y = 1$. Giá trị $x + y = 3$."
+      },
+      {
+        "id": "ai-ot1-q9",
+        "badge": "Luyện thêm 9 (TH) - Tìm a, b của hệ",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 14)",
+        "question": "Biết hệ phương trình $\\begin{cases} ax + y = 5 \\\\ bx - 2y = 2 \\end{cases}$ nhận $(x; y) = (2; 1)$ làm nghiệm. Giá trị $a$ và $b$ là:",
+        "options": [
+          "$a = 2; b = 2$",
+          "$a = 1; b = 2$",
+          "$a = 2; b = 1$",
+          "$a = 3; b = 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 2, y = 1$: $2a + 1 = 5 \\Rightarrow a = 2$; $2b - 2 = 2 \\Rightarrow 2b = 4 \\Rightarrow b = 2$."
+      },
+      {
+        "id": "ai-ot1-q10",
+        "badge": "Luyện thêm 10 (TH) - Giao điểm hai đường thẳng",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2 (Trang 16)",
+        "question": "Tọa độ giao điểm của hai đường thẳng $y = 3x - 4$ và $y = -x + 4$ là:",
+        "options": [
+          "$(2; 2)$",
+          "$(1; 3)$",
+          "$(3; 1)$",
+          "$(0; 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3x - 4 = -x + 4 \\Leftrightarrow 4x = 8 \\Leftrightarrow x = 2 \\Rightarrow y = 2$. Giao điểm là $(2; 2)$."
+      },
+      {
+        "id": "ai-ot1-q11",
+        "badge": "Luyện thêm 11 (VD) - Tìm tham số m để hai đường thẳng cắt nhau",
+        "isAiGenerated": true,
+        "source": "Đề thi tuyển sinh vào lớp 10 THPT",
+        "question": "Tìm điều kiện của $m$ để hai đường thẳng $y = (m - 2)x + 1$ và $y = 2x - 3$ cắt nhau.",
+        "options": [
+          "$m \\ne 4$ và $m \\ne 2$",
+          "$m \\ne 4$",
+          "$m \\ne 2$",
+          "$m = 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Để là đường thẳng bậc nhất thì $m - 2 \\ne 0 \\Leftrightarrow m \\ne 2$. Để cắt nhau thì $m - 2 \\ne 2 \\Leftrightarrow m \\ne 4$."
+      },
+      {
+        "id": "ai-ot1-q12",
+        "badge": "Luyện thêm 12 (VD) - Toán thực tế chu vi diện tích",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3 (Trang 18)",
+        "question": "Một thửa ruộng hình chữ nhật có chu vi $80\\text{ m}$. Nếu tăng chiều dài thêm $5\\text{ m}$ và giảm chiều rộng $3\\text{ m}$ thì diện tích giảm $15\\text{ m}^2$. Diện tích ban đầu của thửa ruộng là:",
+        "options": [
+          "$375\\text{ m}^2$",
+          "$400\\text{ m}^2$",
+          "$360\\text{ m}^2$",
+          "$384\\text{ m}^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nửa chu vi $x + y = 40$. $(x + 5)(y - 3) = xy - 15 \\Leftrightarrow -3x + 5y = 0$. Giải hệ được $x = 25\\text{ m}, y = 15\\text{ m}$. Diện tích $S = 25 \\cdot 15 = 375\\text{ m}^2$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-ot1-tf1",
+        "badge": "Luyện thêm Đ/S 1 (NB) - Phương trình bậc nhất hai ẩn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1",
+        "prompt": "Cho phương trình $5x - 2y = 10$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình có các hệ số là $a = 5, b = -2, c = 10$.",
+            "correctAnswer": true,
+            "explanation": "Đúng theo dạng chuẩn $ax + by = c$."
+          },
+          {
+            "id": "b",
+            "text": "Cặp số $(2; 0)$ là một nghiệm của phương trình.",
+            "correctAnswer": true,
+            "explanation": "$5(2) - 2(0) = 10$ (thỏa mãn)."
+          },
+          {
+            "id": "c",
+            "text": "Cặp số $(0; 5)$ là một nghiệm của phương trình.",
+            "correctAnswer": false,
+            "explanation": "Tại $x = 0$: $-2y = 10 \\Rightarrow y = -5 \\ne 5$."
+          },
+          {
+            "id": "d",
+            "text": "Đường thẳng biểu diễn tập nghiệm cắt trục hoành tại điểm $(2; 0)$.",
+            "correctAnswer": true,
+            "explanation": "Giao điểm với trục hoành là điểm có $y = 0$, tọa độ $(2; 0)$."
+          }
+        ]
+      },
+      {
+        "id": "ai-ot1-tf2",
+        "badge": "Luyện thêm Đ/S 2 (TH) - Giải hệ bằng phương pháp cộng",
+        "source": "SGK Toán 9 Cánh Diều Bài 2",
+        "prompt": "Cho hệ phương trình: $\\begin{cases} 3x + 2y = 7 \\\\ 2x - y = 0 \\end{cases}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Nhân phương trình thứ hai với 2 ta được $4x - 2y = 0$.",
+            "correctAnswer": true,
+            "explanation": "$2(2x - y) = 2(0) \\Leftrightarrow 4x - 2y = 0$."
+          },
+          {
+            "id": "b",
+            "text": "Cộng hai phương trình vế theo vế được $7x = 7$.",
+            "correctAnswer": true,
+            "explanation": "$(3x + 4x) + (2y - 2y) = 7 + 0 \\Leftrightarrow 7x = 7$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm của hệ phương trình là $(x; y) = (1; 2)$.",
+            "correctAnswer": true,
+            "explanation": "$7x = 7 \\Rightarrow x = 1 \\Rightarrow y = 2(1) = 2$."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị của biểu thức $x - y$ bằng $1$.",
+            "correctAnswer": false,
+            "explanation": "$x - y = 1 - 2 = -1 \\ne 1$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-ot1-sa1",
+        "badge": "Luyện thêm TLN 1 (TH) - Tổng nghiệm hệ phương trình",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2",
+        "prompt": "Cho hệ phương trình $\\begin{cases} 4x - y = 7 \\\\ 2x + 3y = 7 \\end{cases}$. Tính giá trị tổng $x + y$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": ["3", "x+y=3"],
+        "explanation": "Từ PT 1: $y = 4x - 7$. Thế vào PT 2: $2x + 3(4x - 7) = 7 \\Leftrightarrow 14x = 28 \\Leftrightarrow x = 2 \\Rightarrow y = 1$. Giá trị $x + y = 3$."
+      },
+      {
+        "id": "ai-ot1-sa2",
+        "badge": "Luyện thêm TLN 2 (VD) - Toán thực tế dòng nước",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 3",
+        "prompt": "Một ca nô xuôi dòng khúc sông dài $36\\text{ km}$ hết $1,5\\text{ giờ}$. Biết vận tốc dòng nước là $3\\text{ km/h}$. Tính vận tốc thực của ca nô (theo đơn vị km/h).",
+        "correctAnswer": "21",
+        "acceptableAnswers": ["21", "21 km/h", "21km/h"],
+        "explanation": "Vận tốc xuôi: $36 : 1,5 = 24\\text{ (km/h)}$. Vận tốc thực: $24 - 3 = 21\\text{ (km/h)}$."
+      }
+    ]
   }
 };

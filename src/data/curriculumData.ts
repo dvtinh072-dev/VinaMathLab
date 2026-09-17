@@ -505,6 +505,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t9-b1-khai-niem-he-phuong-trinh", lessonNumber: 1, title: "Bài 1: Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn", strand: "daiso", description: "Dạng tổng quát ax + by = c và nghiệm của hệ.", keyFormulas: ["\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}"] },
           { id: "t9-b2-giai-he-phuong-trinh", lessonNumber: 2, title: "Bài 2: Giải hệ hai phương trình bậc nhất hai ẩn", strand: "daiso", description: "Phương pháp thế và phương pháp cộng đại số.", keyFormulas: ["\\text{Thế } y = \\frac{c-ax}{b} \\text{ vào PT còn lại}"] },
           { id: "t9-b3-giai-toan-lap-he", lessonNumber: 3, title: "Bài 3: Giải bài toán bằng cách lập hệ phương trình", strand: "daiso", description: "Bài toán chuyển động, năng suất, phần trăm và hình học.", keyFormulas: ["s = v \\cdot t, \\ A = N \\cdot t"] },
+          { id: "t9-on-tap-chuong-1", lessonNumber: 0, title: "Ôn tập cuối chương I", strand: "daiso", description: "Hệ thống hóa kiến thức Phương trình và Hệ phương trình bậc nhất hai ẩn với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}", "s = v \\cdot t, \\ A = N \\cdot t"] },
         ],
       },
       {

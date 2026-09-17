@@ -8,6 +8,7 @@ import { GRADE_8_DETAILED_LESSONS } from "@/data/grade8LessonsData";
 import { GRADE_9_DETAILED_LESSONS } from "@/data/grade9LessonsData";
 import { GRADE_10_DETAILED_LESSONS } from "@/data/grade10LessonsData";
 import { GRADE_11_DETAILED_LESSONS } from "@/data/grade11LessonsData";
+import { GRADE_12_DETAILED_LESSONS } from "@/data/grade12LessonsData";
 
 export interface ExampleItem {
   title?: string;
@@ -617,6 +618,11 @@ export function getUnifiedLessonDetail(gradeKey: string, topicId: string, topic:
   // 1f. Kiểm tra nếu là bài học Lớp 11 đã có trong Grade 11 dataset
   if (gradeKey === "lop-11" && GRADE_11_DETAILED_LESSONS[topicId]) {
     return GRADE_11_DETAILED_LESSONS[topicId];
+  }
+
+  // 1g. Kiểm tra nếu là bài học Lớp 12 đã có trong Grade 12 dataset
+  if (gradeKey === "lop-12" && GRADE_12_DETAILED_LESSONS[topicId]) {
+    return GRADE_12_DETAILED_LESSONS[topicId];
   }
 
   // 2. Kiểm tra nếu bài học đã có trong Knowledge Base chi tiết

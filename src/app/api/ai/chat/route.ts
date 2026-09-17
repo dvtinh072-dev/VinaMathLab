@@ -6,6 +6,7 @@ import { CURRICULUM_DATA } from "@/data/curriculumData";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
 import { GRADE_10_DETAILED_LESSONS } from "@/data/grade10LessonsData";
 import { GRADE_11_DETAILED_LESSONS } from "@/data/grade11LessonsData";
+import { GRADE_12_DETAILED_LESSONS } from "@/data/grade12LessonsData";
 import { supabase } from "@/lib/supabaseClient";
 import { generateHybridAiResponse } from "@/lib/geminiChatService";
 
@@ -101,6 +102,7 @@ function searchCurriculumLessons(q: string) {
     ...Object.values(GRADE_6_DETAILED_LESSONS),
     ...Object.values(GRADE_10_DETAILED_LESSONS),
     ...Object.values(GRADE_11_DETAILED_LESSONS),
+    ...Object.values(GRADE_12_DETAILED_LESSONS),
   ];
   for (const lesson of allDetailed) {
     const normTitle = lesson.title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");

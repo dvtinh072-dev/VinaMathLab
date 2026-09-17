@@ -53,6 +53,7 @@ import { GRADE_8_AI_PRACTICE_DATA } from "@/data/grade8AiPracticeData";
 import { GRADE_9_AI_PRACTICE_DATA } from "@/data/grade9AiPracticeData";
 import { GRADE_10_AI_PRACTICE_DATA } from "@/data/grade10AiPracticeData";
 import { GRADE_11_AI_PRACTICE_DATA } from "@/data/grade11AiPracticeData";
+import { GRADE_12_AI_PRACTICE_DATA } from "@/data/grade12AiPracticeData";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { GeometryDiagram, GeometryDiagramProps } from "@/components/math/GeometryDiagram";
 import { useAuth } from "@/context/AuthContext";
@@ -351,7 +352,16 @@ function generateSimilarAiQuestions(lessonId: string, lessonTitle: string, baseQ
   const ts = Date.now();
   const id = lessonId.toLowerCase();
 
-  // 1. Kiểm tra trong cơ sở dữ liệu câu hỏi Luyện Tập Thêm 1-1 chuyên sâu (Lớp 6, 7, 8, 9, 10 & 11)
+  // 1. Kiểm tra trong cơ sở dữ liệu câu hỏi Luyện Tập Thêm 1-1 chuyên sâu (Lớp 6, 7, 8, 9, 10, 11 & 12)
+  const g12Direct = GRADE_12_AI_PRACTICE_DATA[lessonId] || GRADE_12_AI_PRACTICE_DATA[id];
+  if (g12Direct?.quizQuestions && g12Direct.quizQuestions.length > 0) {
+    return g12Direct.quizQuestions.map((q, idx) => ({
+      ...q,
+      id: `${q.id}-${ts}-${idx}`,
+      isAiGenerated: true,
+    }));
+  }
+
   const g11Direct = GRADE_11_AI_PRACTICE_DATA[lessonId] || GRADE_11_AI_PRACTICE_DATA[id];
   if (g11Direct?.quizQuestions && g11Direct.quizQuestions.length > 0) {
     return g11Direct.quizQuestions.map((q, idx) => ({
@@ -1051,7 +1061,8 @@ export function GamifiedMathQuiz({
 
   const aiTfList: TrueFalseQuestion[] = useMemo(() => {
     return !activeExam
-      ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+      ? (GRADE_12_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
+         GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
          GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
          [])
       : [];
@@ -1096,7 +1107,8 @@ export function GamifiedMathQuiz({
 
   const aiSaList: ShortAnswerQuestion[] = useMemo(() => {
     return !activeExam
-      ? (GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+      ? (GRADE_12_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
+         GRADE_11_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
          GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
          [])
       : [];

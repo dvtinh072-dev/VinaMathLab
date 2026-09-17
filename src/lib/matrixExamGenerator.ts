@@ -5,6 +5,7 @@ import { TrueFalseQuestionData } from "@/components/exam/QuestionTrueFalse";
 import { ShortAnswerQuestionData } from "@/components/exam/QuestionShortAnswer";
 import { SAMPLE_EXAMS } from "@/data/sampleExams";
 import { GRADE_10_DETAILED_LESSONS } from "@/data/grade10LessonsData";
+import { GRADE_12_DETAILED_LESSONS } from "@/data/grade12LessonsData";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
 import { parseExamText } from "@/lib/examParser";
 import { getAiConfiguration } from "@/lib/geminiChatService";
@@ -37,7 +38,7 @@ export function getProjectQuestionsPool(gradeNumber: number): QuestionData[] {
   });
 
   // 2. From DETAILED_LESSONS
-  const lessonsMap = gradeNumber === 6 ? GRADE_6_DETAILED_LESSONS : gradeNumber === 10 ? GRADE_10_DETAILED_LESSONS : {};
+  const lessonsMap = gradeNumber === 6 ? GRADE_6_DETAILED_LESSONS : gradeNumber === 10 ? GRADE_10_DETAILED_LESSONS : gradeNumber === 12 ? GRADE_12_DETAILED_LESSONS : {};
 
   Object.values(lessonsMap).forEach((lesson: any) => {
     const chapterName = lesson.bookChapter || lesson.title || "";

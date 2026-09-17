@@ -156,30 +156,25 @@
 }
 
 .inline-math-item {
-  display: inline;
-  word-break: break-word;
-  overflow-wrap: break-word;
+  display: inline-block;
+  white-space: nowrap !important;
+  vertical-align: middle;
   color: #fcd34d !important;
 }
 
 .inline-math-item .katex {
-  white-space: normal !important;
+  white-space: nowrap !important;
   color: #fcd34d !important;
-}
-
-.inline-math-item .katex {
   font-size: 1.15em !important;
 }
 
 .inline-math-item .katex-html {
-  white-space: normal !important;
-  display: inline !important;
+  white-space: nowrap !important;
   color: #fcd34d !important;
 }
 
 .inline-math-item .katex .base {
-  white-space: normal !important;
-  display: inline !important;
+  white-space: nowrap !important;
   color: #fcd34d !important;
 }
 

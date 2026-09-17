@@ -173,6 +173,58 @@ export function convertMarkdownTablesToHtml(src: string): string {
   });
 }
 
+/**
+ * Tự động xuống dòng và bọc display mode $$...$$ cho các hệ phương trình/hệ bất phương trình (\begin{cases})
+ * để dấu ngoặc nhọn ôm trọn cả hệ, không bị gãy dòng hoặc dính liền câu văn
+ */
+export function formatCasesInText(text: string): string {
+  if (!text || typeof text !== "string" || !text.includes("\\begin{cases}")) return text;
+
+  // Nếu toàn bộ chuỗi chỉ là một hệ phương trình trắc nghiệm đơn thuần (ví dụ trong nút bấm phương án A, B, C, D)
+  if (/^\s*(?:[A-D]\.\s*)?\$\\begin\{cases\}[\s\S]*?\\end\{cases\}\s*[\.\?]?\s*$/.test(text)) {
+    return text;
+  }
+
+  // Nếu chuỗi là một hệ phương trình không có dấu $ bọc ngoài (ví dụ keyFormulas)
+  if (/^\s*\\begin\{cases\}[\s\S]*?\\end\{cases\}\s*$/.test(text)) {
+    return `$$${text.trim()}$$`;
+  }
+
+  // Chuẩn hóa \n trước
+  let result = text.replace(/\\n/g, "\n");
+
+  // Tự động chuyển đổi hệ phương trình inline $\begin{cases}...\end{cases}$ thành display block $$\begin{cases}...\end{cases}$$
+  // Giữ nguyên các khối display math $$...$$ đã có (sử dụng lookaround để không bắt nhầm $$)
+  result = result.replace(
+    /([^\n$]+?)(\s*:?)\s*(?<!\$)\$(?!\$)(\\begin\{cases\}[\s\S]*?\\end\{cases\})(?<!\$)\$(?!\$)([,\.\?]?)(\s*)/g,
+    (match, prefix, colon, mathContent, punctuation, suffix) => {
+      // Bỏ qua nếu là tiền tố nhãn phương án trắc nghiệm như "A. "
+      if (/^\s*[A-D]\.\s*$/.test(prefix)) {
+        return match;
+      }
+
+      // Chuẩn hóa tiền tố lời dẫn kết thúc bằng dấu ':'
+      let cleanPrefix = prefix.trimEnd();
+      if (!cleanPrefix.endsWith(":") && !cleanPrefix.endsWith("?")) {
+        cleanPrefix = `${cleanPrefix}:`;
+      }
+
+      // Xử lý từ ngữ tiếp nối sau hệ phương trình (ví dụ: "ta thu được phương trình:", "có bao nhiêu nghiệm?", "là:")
+      let tail = punctuation && punctuation !== "." && punctuation !== ":" && punctuation !== "?" ? punctuation.trim() : "";
+      if (suffix && suffix.trim()) {
+        tail = tail ? `${tail} ${suffix.trim()}` : suffix.trim();
+      }
+
+      if (tail) {
+        return `${cleanPrefix}\n$$${mathContent}$$\n${tail}\n`;
+      }
+      return `${cleanPrefix}\n$$${mathContent}$$\n`;
+    }
+  );
+
+  return result;
+}
+
 export function MathFormattedText({ text, className = "" }: MathFormattedTextProps) {
   // Render an toàn tuyệt đối với KaTeX và hỗ trợ bảng HTML responsive
   const renderedHtml = useMemo(() => {
@@ -181,9 +233,12 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
     // Bước 0.1: Chuyển đổi Markdown Table sang HTML Table (nếu có) và unescape \\n
     const textWithTables = convertMarkdownTablesToHtml(text);
 
-    // Bước 0.2: Bảo vệ các khối bảng HTML <div class="overflow-x-auto...">...</div> hoặc <table...>...</table>
+    // Bước 0.2: Tự động xuống dòng cho hệ phương trình (\begin{cases}) để tròn ý và không bị gãy ngoặc nhọn
+    const textWithFormattedCases = formatCasesInText(textWithTables);
+
+    // Bước 0.3: Bảo vệ các khối bảng HTML <div class="overflow-x-auto...">...</div> hoặc <table...>...</table>
     const htmlBlocks: string[] = [];
-    const textWithProtectedHtml = textWithTables.replace(/(<div\s+class="overflow-x-auto[^>]*>[\s\S]*?<\/div>|<table[\s\S]*?<\/table>)/gi, (_, table) => {
+    const textWithProtectedHtml = textWithFormattedCases.replace(/(<div\s+class="overflow-x-auto[^>]*>[\s\S]*?<\/div>|<table[\s\S]*?<\/table>)/gi, (_, table) => {
       const idx = htmlBlocks.length;
       htmlBlocks.push(table);
       return `___HTML_TABLE_BLOCK_${idx}___`;
@@ -206,7 +261,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           return rawTable.replace(/\$([^\$\n]+?)\$/g, (_, math) => {
             try {
               const normalizedMath = normalizeVectorNotation(math);
-              return `<span class="inline-math-item mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
+              return `<span class="inline-math-item inline-block whitespace-nowrap mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
                 normalizedMath,
                 { displayMode: false, throwOnError: false, strict: false }
               )}</span>`;
@@ -219,13 +274,13 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
         if (part.startsWith("$$") && part.endsWith("$$") && part.length > 4) {
           const content = normalizeVectorNotation(part.slice(2, -2));
           try {
-            return katex.renderToString(content, {
+            return `<span class="block my-2.5 text-center overflow-x-auto select-none">${katex.renderToString(content, {
               displayMode: true,
-              throwOnError: true,
+              throwOnError: false,
               strict: false,
-            });
+            })}</span>`;
           } catch {
-            return `<span>${content}</span>`;
+            return `<span class="block my-2 text-center text-amber-300 font-bold">${content}</span>`;
           }
         }
 
@@ -236,17 +291,17 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           const hasPunctuationAfter = /^[.,;:?!)]/.test(nextPart.trimStart());
           const mrClass = hasPunctuationAfter ? "mr-0" : "mr-0.5";
           try {
-            return `<span class="inline-math-item ml-0.5 ${mrClass} align-middle text-amber-300 font-semibold">${katex.renderToString(
+            return `<span class="inline-math-item inline-block whitespace-nowrap ml-0.5 ${mrClass} align-middle text-amber-300 font-semibold">${katex.renderToString(
               content,
               {
                 displayMode: false,
-                throwOnError: true,
+                throwOnError: false,
                 strict: false,
               }
             )}</span>`;
           } catch {
             // Fallback an toàn khi KaTeX parse không thành công
-            return `<span class="text-amber-300 font-bold">${content}</span>`;
+            return `<span class="inline-block whitespace-nowrap text-amber-300 font-bold">${content}</span>`;
           }
         }
 

@@ -63,7 +63,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       {
         "id": "vq-9.1.4",
         "title": "Ví dụ 4: Ý nghĩa hình học về số nghiệm của hệ phương trình",
-        "question": "Hai đường thẳng $d_1: 2x - y = 1$ và $d_2: 2x - y = 3$ song song với nhau. Khi đó hệ phương trình $\\begin{cases} 2x - y = 1 \\\\ 2x - y = 3 \\end{cases}$ có bao nhiêu nghiệm?",
+        "question": "Hai đường thẳng $d_1: 2x - y = 1$ và $d_2: 2x - y = 3$ song song với nhau. Khi đó hệ phương trình:\n$$\\begin{cases} 2x - y = 1 \\\\ 2x - y = 3 \\end{cases}$$\ncó bao nhiêu nghiệm?",
         "options": [
           "Vô nghiệm (0 nghiệm)",
           "Có nghiệm duy nhất (1 nghiệm)",
@@ -320,7 +320,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       {
         "id": "vq-9.2.2",
         "title": "Ví dụ 2: Giải hệ phương trình bằng phương pháp thế",
-        "question": "Nghiệm của hệ phương trình $\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$ là:",
+        "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$$\nlà:",
         "options": [
           "$(5; 1)$",
           "$(1; 5)$",
@@ -333,7 +333,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       {
         "id": "vq-9.2.3",
         "title": "Ví dụ 3: Giải hệ phương trình bằng phương pháp cộng đại số",
-        "question": "Nghiệm của hệ phương trình $\\begin{cases} 2x - 3y = 1 \\\\ 4x + 3y = 11 \\end{cases}$ là:",
+        "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} 2x - 3y = 1 \\\\ 4x + 3y = 11 \\end{cases}$$\nlà:",
         "options": [
           "$(2; 1)$",
           "$(1; 2)$",
@@ -346,7 +346,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       {
         "id": "vq-9.2.4",
         "title": "Ví dụ 4: Nhận biết hệ phương trình vô nghiệm hoặc vô số nghiệm",
-        "question": "Khẳng định nào sau đây là ĐÚNG về số nghiệm của hệ phương trình $\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$?",
+        "question": "Khẳng định nào sau đây là ĐÚNG về số nghiệm của hệ phương trình:\n$$\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$$?",
         "options": [
           "Hệ phương trình vô nghiệm",
           "Hệ có nghiệm duy nhất $(2; 1)$",
@@ -369,7 +369,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "  Bước 4: Thay giá trị tìm được vào biểu thức ở Bước 1 để tìm ẩn còn lại, rồi kết luận."
         ],
         "exampleTitle": "Ví dụ 1 (Tài liệu chuyên đề Trang 19 & SGK Trang 12)",
-        "exampleProblem": "Giải hệ phương trình sau bằng phương pháp thế: $\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$.",
+        "exampleProblem": "Giải hệ phương trình sau bằng phương pháp thế:\n$$\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$$",
         "exampleSolution": "• Bước 1 (Biểu diễn ẩn $x$ theo $y$): Từ phương trình thứ nhất, ta có: $x = 3y + 2$.\n• Bước 2 (Thế vào phương trình thứ hai): Thay $x = 3y + 2$ vào phương trình thứ hai, ta được:\n  $2(3y + 2) + y = 11$.\n• Bước 3 (Giải phương trình một ẩn $y$):\n  $6y + 4 + y = 11$\n  $7y = 7$, suy ra $y = 1$.\n• Bước 4 (Tìm ẩn $x$ và kết luận): Thay $y = 1$ vào $x = 3y + 2$, ta được:\n  $x = 3(1) + 2 = 5$.\n• Vậy hệ phương trình có nghiệm duy nhất là $(5; 1)$."
       },
       {
@@ -385,18 +385,18 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "examples": [
           {
             "title": "Ví dụ 2a (Trường hợp các hệ số của một ẩn đối nhau)",
-            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số: $\\begin{cases} 2x - 3y = 1 \\\\ 4x + 3y = 11 \\end{cases}$.",
+            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số:\n$$\\begin{cases} 2x - 3y = 1 \\\\ 4x + 3y = 11 \\end{cases}$$",
             "solution": "• Bước 1 (Nhận xét hệ số): Hệ số của ẩn $y$ trong hai phương trình là $-3$ và $3$ là hai số đối nhau.\n• Bước 2 (Cộng từng vế để triệt tiêu $y$): Cộng từng vế hai phương trình của hệ, ta được:\n  $(2x + 4x) + (-3y + 3y) = 1 + 11$\n  $6x = 12$, suy ra $x = 2$.\n• Bước 3 (Tìm ẩn $y$ và kết luận): Thay $x = 2$ vào phương trình $4x + 3y = 11$, ta được:\n  $4(2) + 3y = 11$\n  $3y = 3$, suy ra $y = 1$.\n• Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
           },
           {
             "title": "Ví dụ 2b (Trường hợp các hệ số của một ẩn bằng nhau)",
-            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số: $\\begin{cases} 3x + 2y = 8 \\\\ 3x - y = 5 \\end{cases}$.",
+            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số:\n$$\\begin{cases} 3x + 2y = 8 \\\\ 3x - y = 5 \\end{cases}$$",
             "solution": "• Bước 1 (Nhận xét hệ số): Hệ số của ẩn $x$ trong cả hai phương trình đều bằng $3$.\n• Bước 2 (Trừ từng vế để triệt tiêu $x$): Trừ từng vế phương trình thứ nhất cho phương trình thứ hai, ta được:\n  $(3x - 3x) + [2y - (-y)] = 8 - 5$\n  $3y = 3$, suy ra $y = 1$.\n• Bước 3 (Tìm ẩn $x$ và kết luận): Thay $y = 1$ vào phương trình $3x - y = 5$, ta được:\n  $3x - 1 = 5$\n  $3x = 6$, suy ra $x = 2$.\n• Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
           },
           {
             "title": "Ví dụ 2c (Trường hợp hệ số không bằng nhau và không đối nhau)",
-            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số: $\\begin{cases} 3x - 2y = 4 \\\\ 2x + y = 5 \\end{cases}$.",
-            "solution": "• Bước 1 (Nhân tạo hệ số đối nhau): Nhân hai vế phương trình thứ hai với $2$, ta được hệ mới:\n  $\\begin{cases} 3x - 2y = 4 \\\\ 4x + 2y = 10 \\end{cases}$.\n• Bước 2 (Cộng từng vế để triệt tiêu $y$): Cộng từng vế hai phương trình của hệ, ta được:\n  $(3x + 4x) + (-2y + 2y) = 4 + 10$\n  $7x = 14$, suy ra $x = 2$.\n• Bước 3 (Tìm ẩn $y$ và kết luận): Thay $x = 2$ vào phương trình $2x + y = 5$, ta được:\n  $2(2) + y = 5$, suy ra $y = 1$.\n• Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
+            "problem": "Giải hệ phương trình sau bằng phương pháp cộng đại số:\n$$\\begin{cases} 3x - 2y = 4 \\\\ 2x + y = 5 \\end{cases}$$",
+            "solution": "• Bước 1 (Nhân tạo hệ số đối nhau): Nhân hai vế phương trình thứ hai với $2$, ta được hệ mới:\n  $$\\begin{cases} 3x - 2y = 4 \\\\ 4x + 2y = 10 \\end{cases}$$\n• Bước 2 (Cộng từng vế để triệt tiêu $y$): Cộng từng vế hai phương trình của hệ, ta được:\n  $(3x + 4x) + (-2y + 2y) = 4 + 10$\n  $7x = 14$, suy ra $x = 2$.\n• Bước 3 (Tìm ẩn $y$ và kết luận): Thay $x = 2$ vào phương trình $2x + y = 5$, ta được:\n  $2(2) + y = 5$, suy ra $y = 1$.\n• Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
           }
         ]
       },
@@ -409,7 +409,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "  Nếu xuất hiện phương trình có dạng $0x = k$ (hoặc $0y = k$) với $k \\ne 0$ vô nghiệm thì hệ phương trình đã cho vô nghiệm."
         ],
         "exampleTitle": "Ví dụ 3 (Tài liệu chuyên đề Trang 57 & SGK Trang 15)",
-        "exampleProblem": "Giải hệ phương trình sau: $\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$.",
+        "exampleProblem": "Giải hệ phương trình sau:\n$$\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$$",
         "exampleSolution": "• Bước 1 (Cộng từng vế hai phương trình): Cộng từng vế hai phương trình của hệ, ta được:\n  $(2x - 2x) + (-y + y) = 5 + 1$\n  $0x + 0y = 6$ hay $0 = 6$ (vô lý).\n• Bước 2 (Kết luận): Vì phương trình nhận được là vô lý nên hệ phương trình đã cho vô nghiệm."
       },
       {
@@ -422,7 +422,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "  Nhập lần lượt các hệ số $a, b, c$ của phương trình thứ nhất và $a', b', c'$ của phương trình thứ hai rồi nhấn dấu bằng \"=\" để nhận kết quả."
         ],
         "exampleTitle": "Ví dụ 4 (SGK Toán 9 Trang 16)",
-        "exampleProblem": "Dùng MTCT kiểm tra nghiệm của hệ phương trình: $\\begin{cases} 2x + 3y = 7 \\\\ 3x - y = 5 \\end{cases}$.",
+        "exampleProblem": "Dùng MTCT kiểm tra nghiệm của hệ phương trình:\n$$\\begin{cases} 2x + 3y = 7 \\\\ 3x - y = 5 \\end{cases}$$",
         "exampleSolution": "• Bước 1 (Nhập hệ số vào máy tính): Bấm MENU 9 1 2, nhập lần lượt các hệ số: $2 = 3 = 7 =$ và $3 = -1 = 5 =$.\n• Bước 2 (Đọc kết quả hiển thị): Màn hình hiển thị $x = 2$ và $y = 1$. Vậy hệ phương trình có nghiệm duy nhất là $(2; 1)$."
       }
     ],
@@ -453,7 +453,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.2",
         "badge": "Câu 2 - Thế ẩn vào phương trình thứ hai",
         "source": "Tài liệu chuyên đề Toán 9 Dạng 7 (Trang 19)",
-        "question": "Khi giải hệ phương trình $\\begin{cases} x = 2y + 1 \\\\ 3x - 2y = 7 \\end{cases}$ bằng phương pháp thế, phương trình một ẩn $y$ thu được là:",
+        "question": "Khi giải hệ phương trình:\n$$\\begin{cases} x = 2y + 1 \\\\ 3x - 2y = 7 \\end{cases}$$\nbằng phương pháp thế, phương trình một ẩn $y$ thu được là:",
         "options": [
           "$4y + 3 = 7$",
           "$6y + 1 - 2y = 7$",
@@ -467,7 +467,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.3",
         "badge": "Câu 3 - Giải hệ bằng phương pháp thế",
         "source": "Tài liệu chuyên đề Toán 9 Ví dụ 8b (Trang 19)",
-        "question": "Nghiệm của hệ phương trình $\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$ là:",
+        "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} x - 3y = 2 \\\\ 2x + y = 11 \\end{cases}$$\nlà:",
         "options": [
           "$(5; 1)$",
           "$(1; 5)$",
@@ -481,7 +481,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.4",
         "badge": "Câu 4 - Cộng hai phương trình có hệ số đối nhau",
         "source": "SGK Toán 9 Trang 14",
-        "question": "Cộng từng vế hai phương trình của hệ $\\begin{cases} 2x + 3y = 8 \\\\ 5x - 3y = 6 \\end{cases}$ ta thu được phương trình một ẩn là:",
+        "question": "Cộng từng vế hai phương trình của hệ:\n$$\\begin{cases} 2x + 3y = 8 \\\\ 5x - 3y = 6 \\end{cases}$$\nta thu được phương trình một ẩn là:",
         "options": [
           "$7x = 14$",
           "$3x = 14$",
@@ -495,7 +495,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.5",
         "badge": "Câu 5 - Trừ hai phương trình có hệ số bằng nhau",
         "source": "SGK Toán 9 Trang 14",
-        "question": "Trừ từng vế phương trình thứ nhất cho phương trình thứ hai của hệ $\\begin{cases} 3x + 2y = 7 \\\\ 3x - y = 1 \\end{cases}$ ta thu được phương trình:",
+        "question": "Trừ từng vế phương trình thứ nhất cho phương trình thứ hai của hệ:\n$$\\begin{cases} 3x + 2y = 7 \\\\ 3x - y = 1 \\end{cases}$$\nta thu được phương trình:",
         "options": [
           "$3y = 6$",
           "$y = 6$",
@@ -509,7 +509,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.6",
         "badge": "Câu 6 - Giải hệ bằng phương pháp cộng đại số",
         "source": "Tài liệu chuyên đề Toán 9 Ví dụ 9b (Trang 19)",
-        "question": "Nghiệm của hệ phương trình $\\begin{cases} 3x - 2y = 4 \\\\ 2x + y = 5 \\end{cases}$ là:",
+        "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} 3x - 2y = 4 \\\\ 2x + y = 5 \\end{cases}$$\nlà:",
         "options": [
           "$(2; 1)$",
           "$(1; 2)$",
@@ -523,7 +523,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.7",
         "badge": "Câu 7 - Tính tổng các tọa độ nghiệm S = x + y",
         "source": "Tài liệu chuyên đề Toán 9 Câu 45 (Trang 57)",
-        "question": "Biết $(x; y)$ là nghiệm của hệ phương trình $\\begin{cases} 7x + 4y = 18 \\\\ 3x - 4y = 2 \\end{cases}$. Giá trị của tổng $S = x + y$ là:",
+        "question": "Biết $(x; y)$ là nghiệm của hệ phương trình:\n$$\\begin{cases} 7x + 4y = 18 \\\\ 3x - 4y = 2 \\end{cases}$$\nGiá trị của tổng $S = x + y$ là:",
         "options": [
           "$3$",
           "$-3$",
@@ -537,7 +537,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.8",
         "badge": "Câu 8 - Nhận biết hệ vô nghiệm",
         "source": "Tài liệu chuyên đề Toán 9 Câu 47 (Trang 57)",
-        "question": "Khẳng định nào sau đây là đúng về tập nghiệm của hệ phương trình $\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$?",
+        "question": "Khẳng định nào sau đây là đúng về tập nghiệm của hệ phương trình:\n$$\\begin{cases} 2x - y = 5 \\\\ -2x + y = 1 \\end{cases}$$?",
         "options": [
           "Hệ phương trình vô nghiệm",
           "Hệ có nghiệm duy nhất $(2; 1)$",
@@ -551,7 +551,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-9.2.9",
         "badge": "Câu 9 - Nhận biết hệ vô số nghiệm",
         "source": "Tài liệu chuyên đề Toán 9 Câu 53 (Trang 57)",
-        "question": "Hệ phương trình $\\begin{cases} 2x - 4y = -2 \\\\ x - 2y = -1 \\end{cases}$ có số nghiệm là:",
+        "question": "Hệ phương trình:\n$$\\begin{cases} 2x - 4y = -2 \\\\ x - 2y = -1 \\end{cases}$$\ncó số nghiệm là:",
         "options": [
           "Vô số nghiệm",
           "$0$",

@@ -459,6 +459,81 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       ],
       "correctIndex": 0,
       "explanation": "Tổng khối lượng: $x + y = 500$. Khối lượng muối nguyên chất: $0,1x + 0,2y = 0,16 \\times 500 = 80$. Giải hệ ta được $x = 200\\text{ g}$ và $y = 300\\text{ g}$."
+    },
+    {
+      "id": "ai-9.2.16",
+      "badge": "Bài tập nâng cao 1 - Tìm m, n để hệ phương trình có nghiệm cho trước",
+      "isAiGenerated": true,
+      "source": "Tài liệu chuyên đề Nâng cao Hệ phương trình Toán 9",
+      "question": "Biết hệ phương trình:\n$$\\begin{cases} mx + ny = 5 \\\\ 2mx - ny = 1 \\end{cases}$$\nnhận cặp số $(1; 1)$ làm nghiệm. Giá trị của $m$ và $n$ là:",
+      "options": [
+        "$m = 2;\\ n = 3$",
+        "$m = 3;\\ n = 2$",
+        "$m = 1;\\ n = 4$",
+        "$m = -2;\\ n = 7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $x = 1, y = 1$ vào hệ phương trình, ta được:\n$$\\begin{cases} m(1) + n(1) = 5 \\\\ 2m(1) - n(1) = 1 \\end{cases} \\Leftrightarrow \\begin{cases} m + n = 5 \\\\ 2m - n = 1 \\end{cases}$$\nCộng từng vế hai phương trình: $3m = 6 \\Rightarrow m = 2$.\nThay $m = 2$ vào phương trình thứ nhất: $2 + n = 5 \\Rightarrow n = 3$.\nVậy $m = 2$ và $n = 3$."
+    },
+    {
+      "id": "ai-9.2.17",
+      "badge": "Bài tập nâng cao 2 - Tìm m, n để hệ phương trình có nghiệm cho trước",
+      "isAiGenerated": true,
+      "source": "Tuyển tập Đề thi Tuyển sinh vào 10 môn Toán",
+      "question": "Tìm các hệ số $m$ và $n$ để hệ phương trình:\n$$\\begin{cases} 3mx - 2ny = -4 \\\\ mx + ny = 7 \\end{cases}$$\ncó nghiệm là $(x; y) = (2; -1)$.",
+      "options": [
+        "$m = 1;\\ n = -5$",
+        "$m = -1;\\ n = 5$",
+        "$m = 2;\\ n = -3$",
+        "$m = 1;\\ n = 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $x = 2, y = -1$ vào hệ phương trình ta được:\n$$\\begin{cases} 3m(2) - 2n(-1) = -4 \\\\ m(2) + n(-1) = 7 \\end{cases} \\Leftrightarrow \\begin{cases} 6m + 2n = -4 \\\\ 2m - n = 7 \\end{cases}$$\nNhân hai vế phương trình thứ hai với $2$: $4m - 2n = 14$.\nCộng từng vế với phương trình thứ nhất: $10m = 10 \\Rightarrow m = 1$.\nThay $m = 1$ vào $2m - n = 7$: $2(1) - n = 7 \\Rightarrow n = -5$.\nVậy $m = 1$ và $n = -5$."
+    },
+    {
+      "id": "ai-9.2.18",
+      "badge": "Bài tập nâng cao 3 - Tính tổng m + n từ nghiệm cho trước",
+      "isAiGenerated": true,
+      "source": "Tài liệu Bồi dưỡng học sinh giỏi Toán 9",
+      "question": "Biết hệ phương trình:\n$$\\begin{cases} (m + 1)x - 2ny = 8 \\\\ mx + (n - 1)y = 1 \\end{cases}$$\nnhận cặp số $(2; -1)$ làm nghiệm. Giá trị của tổng $S = m + n$ là:",
+      "options": [
+        "$3$",
+        "$5$",
+        "$1$",
+        "$-3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $x = 2$ và $y = -1$ vào hệ phương trình:\n$$\\begin{cases} (m + 1) \\cdot 2 - 2n \\cdot (-1) = 8 \\\\ m \\cdot 2 + (n - 1) \\cdot (-1) = 1 \\end{cases} \\Leftrightarrow \\begin{cases} 2m + 2n = 6 \\\\ 2m - n = 0 \\end{cases} \\Leftrightarrow \\begin{cases} m + n = 3 \\\\ n = 2m \\end{cases}$$\nThay $n = 2m$ vào $m + n = 3$: $3m = 3 \\Rightarrow m = 1$, suy ra $n = 2$.\nVậy $S = m + n = 1 + 2 = 3$."
+    },
+    {
+      "id": "ai-9.2.19",
+      "badge": "Bài tập nâng cao 4 - Tìm a, b của hàm số bậc nhất qua 2 điểm",
+      "isAiGenerated": true,
+      "source": "Tài liệu chuyên đề Hàm số bậc nhất và Hệ phương trình",
+      "question": "Đồ thị hàm số bậc nhất $y = ax + b$ đi qua hai điểm $M(2; -1)$ và $N(-1; 5)$. Khi đó giá trị của $a$ và $b$ lần lượt là:",
+      "options": [
+        "$a = -2;\\ b = 3$",
+        "$a = 2;\\ b = -3$",
+        "$a = -2;\\ b = -3$",
+        "$a = 3;\\ b = -2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đồ thị đi qua $M(2; -1) \\Rightarrow a(2) + b = -1 \\Leftrightarrow 2a + b = -1$.\nĐồ thị đi qua $N(-1; 5) \\Rightarrow a(-1) + b = 5 \\Leftrightarrow -a + b = 5$.\nTa có hệ phương trình:\n$$\\begin{cases} 2a + b = -1 \\\\ -a + b = 5 \\end{cases}$$\nTrừ từng vế phương trình thứ nhất cho phương trình thứ hai: $3a = -6 \\Rightarrow a = -2$.\nThay $a = -2$ vào $-a + b = 5$: $-(-2) + b = 5 \\Rightarrow b = 3$.\nVậy $a = -2$ và $b = 3$ (hàm số là $y = -2x + 3$)."
+    },
+    {
+      "id": "ai-9.2.20",
+      "badge": "Bài tập nâng cao 5 - Tìm a, b của hàm số bậc nhất qua 2 điểm",
+      "isAiGenerated": true,
+      "source": "Đề thi Tuyển sinh vào lớp 10 môn Toán",
+      "question": "Biết đường thẳng $d: y = ax + b$ đi qua điểm $A(1; 1)$ và điểm $B(3; -3)$. Giá trị của tích $P = a \\cdot b$ là:",
+      "options": [
+        "$-6$",
+        "$6$",
+        "$-3$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường thẳng $d$ đi qua $A(1; 1) \\Rightarrow a(1) + b = 1 \\Leftrightarrow a + b = 1$.\nĐường thẳng $d$ đi qua $B(3; -3) \\Rightarrow a(3) + b = -3 \\Leftrightarrow 3a + b = -3$.\nTa có hệ phương trình:\n$$\\begin{cases} a + b = 1 \\\\ 3a + b = -3 \\end{cases}$$\nLấy phương trình thứ hai trừ phương trình thứ nhất: $2a = -4 \\Rightarrow a = -2$.\nThay $a = -2$ vào $a + b = 1$: $-2 + b = 1 \\Rightarrow b = 3$.\nVậy $a = -2$ và $b = 3$, suy ra tích $P = a \\cdot b = (-2) \\cdot 3 = -6$."
     }
   ],
 

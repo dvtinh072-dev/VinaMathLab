@@ -10,6 +10,15 @@ interface MathFormattedTextProps {
 }
 
 /**
+ * Chuẩn hóa an toàn ký tự xuống dòng literal \n
+ * Tuyệt đối không thay thế nếu \n là phần đầu của các lệnh LaTeX: \ne, \neq, \neg, \notin, \not, \nabla, \natural, \nu, \nsubseteq, \nexists, \ngtr, \nless, \nparallel, \nsim, \ncong, \nmid...
+ */
+export function safeUnescapeNewlines(text?: string | null): string {
+  if (!text || typeof text !== "string") return "";
+  return text.replace(/\\n(?!(?:e|eq|eg|otin|ot|abla|atural|u|subseteq|exists|gtr|less|parallel|sim|cong|mid)\b)/g, "\n");
+}
+
+/**
  * Hàm chuẩn hóa an toàn:
  * 1. Bảo vệ các khối LaTeX đã có sẵn trong $...$
  * 2. Tự động chuyển đổi các phân số chưa bọc ($a/b$, $-3/4$, $21/28$), hỗn số, góc và ký hiệu unicode sang LaTeX chuẩn
@@ -18,8 +27,8 @@ interface MathFormattedTextProps {
 export function formatMathInText(rawText?: string | null): string {
   if (!rawText || typeof rawText !== "string") return "";
 
-  // Chuẩn hóa ký tự xuống dòng literal \\n thành \n
-  const unescapedText = rawText.replace(/\\n/g, "\n");
+  // Chuẩn hóa ký tự xuống dòng an toàn (bảo vệ \ne, \notin...)
+  const unescapedText = safeUnescapeNewlines(rawText);
 
   // Bước 1: Bảo vệ các khối LaTeX có sẵn $...$ hoặc $$...$$
   const mathBlocks: string[] = [];
@@ -126,8 +135,8 @@ export function normalizeVectorNotation(latex: string): string {
 export function convertMarkdownTablesToHtml(src: string): string {
   if (!src || !src.includes("|")) return src;
 
-  // Chuẩn hóa \n trước
-  const normalized = src.replace(/\\n/g, "\n");
+  // Chuẩn hóa \n an toàn trước
+  const normalized = safeUnescapeNewlines(src);
 
   // Regex tìm khối bảng markdown: bắt đầu và kết thúc bởi các dòng có chứa |
   const mdTableRegex = /(?:^|\n)(\|[^\n]+\|\r?\n\|[-:\s|]+\|\r?\n(?:\|[^\n]+\|\r?\n?)+)/g;
@@ -190,8 +199,8 @@ export function formatCasesInText(text: string): string {
     return `$$${text.trim()}$$`;
   }
 
-  // Chuẩn hóa \n trước
-  let result = text.replace(/\\n/g, "\n");
+  // Chuẩn hóa \n an toàn trước
+  let result = safeUnescapeNewlines(text);
 
   // Tự động chuyển đổi hệ phương trình inline $\begin{cases}...\end{cases}$ thành display block $$\begin{cases}...\end{cases}$$
   // Giữ nguyên các khối display math $$...$$ đã có (sử dụng lookaround để không bắt nhầm $$)
@@ -306,11 +315,11 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
         }
 
         // Văn bản thường: escape HTML an toàn và hỗ trợ xuống dòng
-        return part
+        const unescaped = safeUnescapeNewlines(part);
+        return unescaped
           .replace(/&/g, "&amp;")
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;")
-          .replace(/\\n/g, "<br/>")
           .replace(/\n/g, "<br/>");
       })
       .join("");

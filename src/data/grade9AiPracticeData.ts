@@ -175,7 +175,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Bài tập mở rộng 2 - Tìm tham số để hệ nhận nghiệm cho trước",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Bài tập nâng cao hệ phương trình",
-      "question": "Cho hệ phương trình $\\begin{cases} mx + y = 3 \\\\ 2x - my = 1 \\end{cases}$. Giá trị của $m$ để hệ nhận cặp số $(1; 1)$ làm nghiệm là:",
+      "question": "Cho hệ phương trình:\n$$\\begin{cases} mx + y = 3 \\\\ 2x - my = 1 \\end{cases}$$\nGiá trị của $m$ để hệ nhận cặp số $(1; 1)$ làm nghiệm là:",
       "options": [
         "$m \\in \\emptyset$",
         "$m = 2$",
@@ -253,7 +253,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 2 - Giải hệ phương trình bằng phương pháp thế",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Toán 9 Dạng 7 (Trang 19)",
-      "question": "Nghiệm của hệ phương trình $\\begin{cases} x = y + 1 \\\\ 2x + y = 5 \\end{cases}$ là:",
+      "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} x = y + 1 \\\\ 2x + y = 5 \\end{cases}$$\nlà:",
       "options": [
         "$(2; 1)$",
         "$(1; 2)$",
@@ -268,7 +268,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 3 - Cách nhân để triệt tiêu ẩn",
       "isAiGenerated": true,
       "source": "SGK Toán 9 Trang 14",
-      "question": "Để triệt tiêu ẩn $y$ bằng phương pháp cộng đại số trong hệ $\\begin{cases} 3x - y = 2 \\\\ 2x + 3y = 5 \\end{cases}$, ta có thể thực hiện thao tác nào?",
+      "question": "Để triệt tiêu ẩn $y$ bằng phương pháp cộng đại số trong hệ:\n$$\\begin{cases} 3x - y = 2 \\\\ 2x + 3y = 5 \\end{cases}$$\nta có thể thực hiện thao tác nào?",
       "options": [
         "Nhân hai vế của phương trình thứ nhất với $3$ rồi cộng từng vế với phương trình thứ hai",
         "Nhân hai vế của phương trình thứ nhất với $2$ rồi cộng từng vế với phương trình thứ hai",
@@ -283,7 +283,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 4 - Giải hệ bằng phương pháp cộng đại số",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Toán 9 Bài 3 (Trang 21)",
-      "question": "Nghiệm của hệ phương trình $\\begin{cases} 2x + y = 7 \\\\ x - y = 2 \\end{cases}$ là:",
+      "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} 2x + y = 7 \\\\ x - y = 2 \\end{cases}$$\nlà:",
       "options": [
         "$(3; 1)$",
         "$(1; 3)$",
@@ -298,7 +298,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 5 - Tính tích hai tọa độ nghiệm P = x . y",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Toán 9 Câu 51 (Trang 57)",
-      "question": "Biết $(x_0; y_0)$ là nghiệm của hệ phương trình $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$. Giá trị của tích $x_0 \\cdot y_0$ là:",
+      "question": "Biết $(x_0; y_0)$ là nghiệm của hệ phương trình:\n$$\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$$\nGiá trị của tích $x_0 \\cdot y_0$ là:",
       "options": [
         "$2$",
         "$3$",
@@ -313,7 +313,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 6 - Tính hiệu hai bình phương x² - y²",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Toán 9 Câu 49 (Trang 57)",
-      "question": "Gọi $(x; y)$ là nghiệm của hệ phương trình $\\begin{cases} 3x - y = 7 \\\\ x + y = 1 \\end{cases}$. Giá trị của biểu thức $x^2 - y^2$ là:",
+      "question": "Gọi $(x; y)$ là nghiệm của hệ phương trình:\n$$\\begin{cases} 3x - y = 7 \\\\ x + y = 1 \\end{cases}$$\nGiá trị của biểu thức $x^2 - y^2$ là:",
       "options": [
         "$3$",
         "$5$",
@@ -358,7 +358,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Luyện thêm 9 - Hệ phương trình có hệ số phân số",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Toán 9 Câu 48 (Trang 57)",
-      "question": "Nghiệm của hệ phương trình $\\begin{cases} \\frac{x}{2} + \\frac{y}{3} = 1 \\\\ x - y = -3 \\end{cases}$ là:",
+      "question": "Nghiệm của hệ phương trình:\n$$\\begin{cases} \\frac{x}{2} + \\frac{y}{3} = 1 \\\\ x - y = -3 \\end{cases}$$\nlà:",
       "options": [
         "$(0; 3)$",
         "$(2; 5)$",
@@ -390,22 +390,22 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Bài tập mở rộng 1 - Phương pháp đặt ẩn phụ",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Nâng cao Toán 9",
-      "question": "Giải hệ phương trình $\\begin{cases} \\frac{1}{x} + \\frac{1}{y} = 5 \\\\ \\frac{2}{x} - \\frac{1}{y} = 1 \\end{cases}$ ($x \\ne 0, y \\ne 0$). Cặp nghiệm $(x; y)$ của hệ là:",
+      "question": "Giải hệ phương trình (với $x \\ne 0, y \\ne 0$):\n$$\\begin{cases} \\frac{1}{x} + \\frac{1}{y} = 5 \\\\ \\frac{2}{x} - \\frac{1}{y} = 1 \\end{cases}$$\nCặp nghiệm $(x; y)$ của hệ là:",
       "options": [
-        "$(\\frac{1}{2}; \\frac{1}{3})$",
+        "$\\left(\\frac{1}{2}; \\frac{1}{3}\\right)$",
         "$(2; 3)$",
         "$(3; 2)$",
-        "$(\\frac{1}{3}; \\frac{1}{2})$"
+        "$\\left(\\frac{1}{3}; \\frac{1}{2}\\right)$"
       ],
       "correctIndex": 0,
-      "explanation": "Đặt $u = \\frac{1}{x}, v = \\frac{1}{y}$, hệ trở thành: $\\begin{cases} u + v = 5 \\\\ 2u - v = 1 \\end{cases}$. Cộng hai vế được $3u = 6 \\Rightarrow u = 2 \\Rightarrow x = \\frac{1}{2}$. Thay vào được $v = 3 \\Rightarrow y = \\frac{1}{3}$."
+      "explanation": "Đặt $u = \\frac{1}{x}, v = \\frac{1}{y}$ ($u, v \\ne 0$), hệ trở thành:\n$$\\begin{cases} u + v = 5 \\\\ 2u - v = 1 \\end{cases}$$\nCộng hai vế được $3u = 6 \\Rightarrow u = 2 \\Rightarrow x = \\frac{1}{2}$. Thay vào được $v = 3 \\Rightarrow y = \\frac{1}{3}$."
     },
     {
       "id": "ai-9.2.12",
       "badge": "Bài tập mở rộng 2 - Điều kiện tham số để hệ có nghiệm duy nhất",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Nâng cao Hệ phương trình Toán 9",
-      "question": "Hệ phương trình $\\begin{cases} mx + y = 3 \\\\ x + my = 2 \\end{cases}$ có nghiệm duy nhất khi và chỉ khi:",
+      "question": "Hệ phương trình:\n$$\\begin{cases} mx + y = 3 \\\\ x + my = 2 \\end{cases}$$\ncó nghiệm duy nhất khi và chỉ khi:",
       "options": [
         "$m \\ne \\pm 1$",
         "$m \\ne 1$",
@@ -420,7 +420,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "badge": "Bài tập mở rộng 3 - Tìm m để nghiệm thỏa mãn x + y = 2",
       "isAiGenerated": true,
       "source": "Tài liệu chuyên đề Bồi dưỡng HSG Toán 9",
-      "question": "Cho hệ phương trình $\\begin{cases} x + 2y = 3 \\\\ 2x - y = m \\end{cases}$. Giá trị của $m$ để nghiệm $(x; y)$ thỏa mãn $x + y = 2$ là:",
+      "question": "Cho hệ phương trình:\n$$\\begin{cases} x + 2y = 3 \\\\ 2x - y = m \\end{cases}$$\nGiá trị của $m$ để nghiệm $(x; y)$ thỏa mãn $x + y = 2$ là:",
       "options": [
         "$m = 1$",
         "$m = 2$",

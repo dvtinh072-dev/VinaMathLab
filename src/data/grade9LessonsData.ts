@@ -870,5 +870,830 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Gọi giá niêm yết tủ lạnh là $x$, máy giặt là $y$ (triệu đồng). Ta có $x + y = 25,4$. Giá sau giảm: $(1 - 0,4)x + (1 - 0,25)y = 16,77$, hay $0,6x + 0,75y = 16,77$. Giải hệ phương trình ta được $x = 15,2\\text{ triệu đồng}$ và $y = 10,2\\text{ triệu đồng}$."
       }
     ]
+  },
+  "t9-b4-pt-quy-ve-bac-nhat": {
+    "id": "t9-b4-pt-quy-ve-bac-nhat",
+    "lessonNumber": 4,
+    "title": "Bài 4: Phương trình quy về phương trình bậc nhất một ẩn",
+    "bookChapter": "Chương I: Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+    "scenarioTitle": "Tình huống: Tính vận tốc ca nô trên dòng sông và chia sẻ công việc",
+    "scenarioFrames": [],
+    "youtubeVideoId": "4o3cQ3jX57w",
+    "youtubeVideoTitle": "Bài Giảng Video: Phương Trình Quy Về Phương Trình Bậc Nhất Một Ẩn - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "4o3cQ3jX57w",
+        "title": "Tiết 1: Phương trình tích"
+      },
+      {
+        "id": "eZ9vLzK8Uu0",
+        "title": "Tiết 2: Phương trình chứa ẩn ở mẫu thức"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.4.1",
+        "title": "Ví dụ 1: Giải phương trình tích cơ bản",
+        "question": "Nghiệm của phương trình tích $(2x - 4)(x + 3) = 0$ là:",
+        "options": [
+          "$x = 2$ hoặc $x = -3$",
+          "$x = -2$ hoặc $x = 3$",
+          "$x = 4$ hoặc $x = -3$",
+          "$x = 2$ hoặc $x = 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $(2x - 4)(x + 3) = 0 \Leftrightarrow 2x - 4 = 0$ hoặc $x + 3 = 0 \Leftrightarrow x = 2$ hoặc $x = -3$."
+      },
+      {
+        "id": "vq-9.4.2",
+        "title": "Ví dụ 2: Tìm điều kiện xác định của phương trình",
+        "question": "Điều kiện xác định của phương trình $\\frac{x + 1}{x - 2} = \\frac{3}{x + 1}$ là:",
+        "options": [
+          "$x \\ne 2$ và $x \\ne -1$",
+          "$x \\ne 2$",
+          "$x \\ne -1$",
+          "$x \\ne -2$ và $x \\ne 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình chứa ẩn ở mẫu xác định khi tất cả các mẫu thức khác 0: $x - 2 \\ne 0$ và $x + 1 \\ne 0 \\Leftrightarrow x \\ne 2$ và $x \\ne -1$."
+      },
+      {
+        "id": "vq-9.4.3",
+        "title": "Ví dụ 3: Nghiệm ngoại lai của phương trình chứa ẩn ở mẫu",
+        "question": "Giải phương trình $\\frac{x^2 - 4}{x - 2} = 0$. Phương trình có bao nhiêu nghiệm?",
+        "options": [
+          "1 nghiệm ($x = -2$)",
+          "2 nghiệm ($x = 2$ và $x = -2$)",
+          "Vô nghiệm",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne 2$. Phương trình $\\Leftrightarrow x^2 - 4 = 0 \\Leftrightarrow x = 2$ (loại do không thỏa mãn ĐKXĐ) hoặc $x = -2$ (thỏa mãn ĐKXĐ). Vậy phương trình chỉ có duy nhất 1 nghiệm $x = -2$."
+      },
+      {
+        "id": "vq-9.4.4",
+        "title": "Ví dụ 4: Vận tốc xuôi dòng và ngược dòng",
+        "question": "Một ca nô có vận tốc thực khi nước yên lặng là $v\\text{ (km/h)}$, vận tốc dòng nước là $3\\text{ km/h}$. Biểu thức biểu thị vận tốc xuôi dòng và ngược dòng của ca nô lần lượt là:",
+        "options": [
+          "$v + 3\\text{ (km/h)}$ và $v - 3\\text{ (km/h)}$",
+          "$v - 3\\text{ (km/h)}$ và $v + 3\\text{ (km/h)}$",
+          "$3v\\text{ (km/h)}$ và $\\frac{v}{3}\\text{ (km/h)}$",
+          "$v + 3\\text{ (km/h)}$ và $3 - v\\text{ (km/h)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi xuôi dòng, vận tốc ca nô được tăng thêm bởi dòng nước: $v_{\\text{xuôi}} = v + v_{\\text{nước}} = v + 3\\text{ (km/h)}$. Khi ngược dòng: $v_{\\text{ngược}} = v - v_{\\text{nước}} = v - 3\\text{ (km/h)}$."
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Phương trình tích và cách giải",
+        "points": [
+          "Dạng tổng quát: $A(x) \\cdot B(x) = 0$.",
+          "Quy tắc giải: Muốn giải phương trình $A(x) \\cdot B(x) = 0$, ta giải hai phương trình $A(x) = 0$ và $B(x) = 0$, rồi lấy tất cả các nghiệm của chúng:",
+          "  $A(x) \\cdot B(x) = 0 \\Leftrightarrow A(x) = 0$ hoặc $B(x) = 0$.",
+          "Phương pháp biến đổi: Chuyển tất cả các hạng tử sang vế trái (vế phải bằng 0), sau đó phân tích vế trái thành nhân tử (đặt nhân tử chung, dùng hằng đẳng thức, nhóm hạng tử)."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 9 KNTT Trang 19)",
+        "exampleProblem": "Giải các phương trình sau:\n  a) $(3x - 2)(x + 1) = 0$\n  b) $x^2 - 4 + (x - 2)(2x + 3) = 0$.",
+        "exampleSolution": "• Câu a: $(3x - 2)(x + 1) = 0 \\Leftrightarrow 3x - 2 = 0$ hoặc $x + 1 = 0 \\Leftrightarrow x = \\frac{2}{3}$ hoặc $x = -1$.\n  Vậy tập nghiệm của phương trình là $S = \\left\\{-\\frac{2}{3}; -1\\right\\}$.\n• Câu b: Phân tích vế trái thành nhân tử:\n  $(x - 2)(x + 2) + (x - 2)(2x + 3) = 0\\n  \\Leftrightarrow (x - 2)[(x + 2) + (2x + 3)] = 0\\n  \\Leftrightarrow (x - 2)(3x + 5) = 0\\n  \\Leftrightarrow x - 2 = 0$ hoặc $3x + 5 = 0 \\Leftrightarrow x = 2$ hoặc $x = -\\frac{5}{3}$.\n  Vậy tập nghiệm của phương trình là $S = \\left\\{2; -\\frac{5}{3}\\right\\}$."
+      },
+      {
+        "index": "2",
+        "title": "Phương trình chứa ẩn ở mẫu thức",
+        "points": [
+          "Điều kiện xác định (ĐKXĐ): Điều kiện của ẩn để tất cả các mẫu thức trong phương trình đều khác 0.",
+          "Quy trình 4 bước giải phương trình chứa ẩn ở mẫu thức:",
+          "  • Bước 1: Tìm điều kiện xác định (ĐKXĐ) của phương trình.",
+          "  • Bước 2: Quy đồng mẫu thức hai vế của phương trình rồi khử mẫu (dùng dấu suy ra $\\Rightarrow$).",
+          "  • Bước 3: Giải phương trình vừa nhận được.",
+          "  • Bước 4 (Kết luận): Trong các giá trị của ẩn tìm được ở Bước 3, các giá trị thỏa mãn ĐKXĐ chính là nghiệm của phương trình đã cho; các giá trị không thỏa mãn ĐKXĐ bị loại (gọi là nghiệm ngoại lai)."
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 9 KNTT Trang 20)",
+        "exampleProblem": "Giải phương trình: $\\frac{x + 2}{x - 2} - \\frac{2}{x(x - 2)} = 1$.",
+        "exampleSolution": "• Bước 1 (ĐKXĐ): $x \\ne 0$ và $x - 2 \\ne 0 \\Leftrightarrow x \\ne 0$ và $x \\ne 2$.\n• Bước 2 (Quy đồng và khử mẫu): Mẫu thức chung là $x(x - 2)$.\n  $\\frac{x(x + 2)}{x(x - 2)} - \\frac{2}{x(x - 2)} = \\frac{x(x - 2)}{x(x - 2)}\\n  \\Rightarrow x(x + 2) - 2 = x(x - 2)$.\n• Bước 3 (Giải phương trình):\n  $x^2 + 2x - 2 = x^2 - 2x\\n  \\Leftrightarrow 2x + 2x = 2 \\Leftrightarrow 4x = 2 \\Leftrightarrow x = \\frac{1}{2}$.\n• Bước 4 (Đối chiếu và kết luận):\n  Giá trị $x = \\frac{1}{2}$ thỏa mãn ĐKXĐ ($x \\ne 0, x \\ne 2$).\n  Vậy nghiệm của phương trình là $x = \\frac{1}{2}$."
+      },
+      {
+        "index": "3",
+        "title": "Ứng dụng giải toán thực tế quy về phương trình bậc nhất",
+        "points": [
+          "Các dạng toán thực tế thường gặp:",
+          "  • Toán chuyển động dòng nước: $v_{\\text{xuôi}} = v_{\\text{thực}} + v_{\\text{nước}}$, $v_{\\text{ngược}} = v_{\\text{thực}} - v_{\\text{nước}}$, $t = \\frac{s}{v}$.",
+          "  • Toán năng suất công việc (làm chung - làm riêng): Coi toàn bộ công việc là $1$ đơn vị. Nếu hoàn thành trong $x$ ngày thì mỗi ngày làm được $\\frac{1}{x}$ công việc.",
+          "  • Toán kế hoạch và thực tế: Số sản phẩm mỗi ngày = $\\frac{\\text{Tổng số sản phẩm}}{\\text{Số ngày}}$."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 9 Cánh Diều Trang 16)",
+        "exampleProblem": "Một ca nô chạy xuôi dòng một khúc sông dài $45\\text{ km}$, sau đó chạy ngược dòng $18\\text{ km}$ hết tổng cộng $3\\text{ giờ}$. Biết vận tốc dòng nước là $3\\text{ km/h}$. Tính vận tốc thực của ca nô.",
+        "exampleSolution": "• Gọi vận tốc thực của ca nô là $v\\text{ (km/h)}$, điều kiện $v > 3$.\n• Vận tốc xuôi dòng: $v + 3\\text{ (km/h)}$; Vận tốc ngược dòng: $v - 3\\text{ (km/h)}$.\n• Thời gian xuôi dòng: $\\frac{45}{v + 3}\\text{ (giờ)}$; Thời gian ngược dòng: $\\frac{18}{v - 3}\\text{ (giờ)}$.\n• Do tổng thời gian là $3\\text{ giờ}$ nên ta có phương trình:\n  $\\frac{45}{v + 3} + \\frac{18}{v - 3} = 3\\n  \\Leftrightarrow \\frac{15}{v + 3} + \\frac{6}{v - 3} = 1\\n  \\Rightarrow 15(v - 3) + 6(v + 3) = (v + 3)(v - 3)\\n  \\Leftrightarrow 15v - 45 + 6v + 18 = v^2 - 9\\n  \\Leftrightarrow 21v - 27 = v^2 - 9\\n  \\Leftrightarrow v^2 - 21v + 18 = 0\\n  \\dots$ (Đối chiếu điều kiện thực tế để chọn nghiệm phù hợp)."
+      }
+    ],
+    "tips": [
+      "Luôn tìm Điều Kiện Xác Định (ĐKXĐ) đầu tiên trước khi biến đổi khử mẫu!",
+      "Khi chuyển vế để giải phương trình tích, nhớ đổi dấu và cố gắng đặt nhân tử chung thay vì nhân tung ra.",
+      "Đối với phương trình chứa ẩn ở mẫu, bắt buộc phải dùng dấu suy ra $(\\Rightarrow)$ khi khử mẫu vì phép khử mẫu có thể làm xuất hiện nghiệm ngoại lai.",
+      "Luôn đối chiếu nghiệm tìm được với ĐKXĐ trước khi ghi kết luận tập nghiệm $S$."
+    ],
+    "traps": [
+      "Bẫy chia cả hai vế cho biểu thức chứa ẩn: Ví dụ phương trình $x(x - 2) = 3(x - 2)$, nếu chia cho $(x - 2)$ sẽ làm mất nghiệm $x = 2$!",
+      "Bẫy quên đối chiếu ĐKXĐ: Rất nhiều bạn học sinh tính ra nghiệm trùng với giá trị làm mẫu bằng 0 mà vẫn kết luận nhận nghiệm.",
+      "Bẫy sai dấu khi đổi dấu mẫu thức: Chú ý $1 - x = -(x - 1)$, khi đổi dấu mẫu thức cần đổi dấu của phân thức đứng trước.",
+      "Bẫy quên nhân cả hai vế với mẫu chung khi một vế là số nguyên: Ví dụ vế phải là số $1$ hay $2$ thì phải nhân cả số đó với mẫu chung."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-9.4.1",
+        "badge": "Câu 1 - Nhận biết điều kiện xác định",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.11a (Trang 21)",
+        "question": "Điều kiện xác định của phương trình $\\frac{3}{x - 4} = 2$ là:",
+        "options": [
+          "$x \\ne 4$",
+          "$x \\ne -4$",
+          "$x \\ne 2$",
+          "$x \\ne 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mẫu thức của phương trình là $x - 4$. Điều kiện xác định là mẫu thức khác 0: $x - 4 \\ne 0 \\Leftrightarrow x \\ne 4$."
+      },
+      {
+        "id": "quiz-9.4.2",
+        "badge": "Câu 2 - Nhận biết nghiệm phương trình tích",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.12a (Trang 21)",
+        "question": "Tập nghiệm của phương trình tích $(x - 3)(2x + 8) = 0$ là:",
+        "options": [
+          "$S = \\{3; -4\\}$",
+          "$S = \\{-3; 4\\}$",
+          "$S = \\{3; 4\\}$",
+          "$S = \\{-3; -4\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 3)(2x + 8) = 0 \\Leftrightarrow x - 3 = 0$ hoặc $2x + 8 = 0 \\Leftrightarrow x = 3$ hoặc $x = -4$. Vậy $S = \\{3; -4\\}$."
+      },
+      {
+        "id": "quiz-9.4.3",
+        "badge": "Câu 3 - Nhận biết ĐKXĐ của hai mẫu thức",
+        "source": "SGK Toán 9 Cánh Diều Bài 1b (Trang 15)",
+        "question": "Điều kiện xác định của phương trình $\\frac{x + 1}{x - 2} + \\frac{2}{x + 3} = 0$ là:",
+        "options": [
+          "$x \\ne 2$ và $x \\ne -3$",
+          "$x \\ne -2$ và $x \\ne 3$",
+          "$x \\ne 2$",
+          "$x \\ne -3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình có hai mẫu thức là $x - 2$ và $x + 3$. ĐKXĐ là: $\\begin{cases} x - 2 \\ne 0 \\\\ x + 3 \\ne 0 \\end{cases} \\Leftrightarrow \\begin{cases} x \\ne 2 \\\\ x \\ne -3 \\end{cases}$."
+      },
+      {
+        "id": "quiz-9.4.4",
+        "badge": "Câu 4 - Kiểm tra nghiệm phương trình tích",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1a (Trang 18)",
+        "question": "Trong các số sau, số nào là một nghiệm của phương trình $(2x - 5)(x + 1) = 0$?",
+        "options": [
+          "$x = 2,5$",
+          "$x = 5$",
+          "$x = 1$",
+          "$x = -2,5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình $(2x - 5)(x + 1) = 0 \\Leftrightarrow 2x - 5 = 0$ hoặc $x + 1 = 0 \\Leftrightarrow x = 2,5$ hoặc $x = -1$. Do đó $x = 2,5$ là một nghiệm."
+      },
+      {
+        "id": "quiz-9.4.5",
+        "badge": "Câu 5 - ĐKXĐ mẫu thức bậc hai",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.11b (Trang 21)",
+        "question": "Điều kiện xác định của phương trình $\\frac{5}{x^2 - 9} = 1$ là:",
+        "options": [
+          "$x \\ne 3$ và $x \\ne -3$",
+          "$x \\ne 9$",
+          "$x \\ne 3$",
+          "$x \\ne -3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mẫu thức là $x^2 - 9 = (x - 3)(x + 3)$. Để mẫu thức khác 0 thì $x^2 \\ne 9 \\Leftrightarrow x \\ne \\pm 3$."
+      },
+      {
+        "id": "quiz-9.4.6",
+        "badge": "Câu 6 - Nhận biết nghiệm phân thức",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.12b (Trang 21)",
+        "question": "Nghiệm của phương trình $\\frac{x - 1}{x + 2} = 0$ là:",
+        "options": [
+          "$x = 1$",
+          "$x = -2$",
+          "$x = 1$ và $x = -2$",
+          "Phương trình vô nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne -2$. Phương trình $\\frac{x - 1}{x + 2} = 0 \\Rightarrow x - 1 = 0 \\Leftrightarrow x = 1$ (thỏa mãn ĐKXĐ). Vậy nghiệm là $x = 1$."
+      },
+      {
+        "id": "quiz-9.4.7",
+        "badge": "Câu 7 - Số nghiệm của phương trình tích",
+        "source": "SGK Toán 9 Cánh Diều Bài 1a (Trang 15)",
+        "question": "Phương trình $x(3x - 6) = 0$ có bao nhiêu nghiệm?",
+        "options": [
+          "2 nghiệm",
+          "1 nghiệm",
+          "0 nghiệm (vô nghiệm)",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phương trình $x(3x - 6) = 0 \\Leftrightarrow x = 0$ hoặc $3x - 6 = 0 \\Leftrightarrow x = 0$ hoặc $x = 2$. Vậy phương trình có đúng 2 nghiệm phân biệt."
+      },
+      {
+        "id": "quiz-9.4.8",
+        "badge": "Câu 8 - Nhận biết ĐKXĐ chứa ẩn ở mẫu",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1c (Trang 18)",
+        "question": "Điều kiện xác định của phương trình $\\frac{2x}{x - 1} = \\frac{3}{x}$ là:",
+        "options": [
+          "$x \\ne 0$ và $x \\ne 1$",
+          "$x \\ne 1$",
+          "$x \\ne 0$",
+          "$x \\ne -1$ và $x \\ne 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Các mẫu thức chứa ẩn là $x - 1$ và $x$. ĐKXĐ là: $x \\ne 0$ và $x - 1 \\ne 0 \\Leftrightarrow x \\ne 0$ và $x \\ne 1$."
+      },
+      {
+        "id": "quiz-9.4.9",
+        "badge": "Câu 9 - Giải phương trình tích có nhân tử chung",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.13a (Trang 21)",
+        "question": "Giải phương trình $(x - 2)(3x + 1) = (x - 2)(x + 5)$. Tập nghiệm $S$ là:",
+        "options": [
+          "$S = \\{2\\}$",
+          "$S = \\{2; 5\\}$",
+          "$S = \\{-1; 5\\}$",
+          "$S = \\{2; -1; 5\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chuyển vế: $(x - 2)(3x + 1) - (x - 2)(x + 5) = 0 \\Leftrightarrow (x - 2)[(3x + 1) - (x + 5)] = 0 \\Leftrightarrow (x - 2)(2x - 4) = 0 \\Leftrightarrow 2(x - 2)^2 = 0 \\Leftrightarrow x = 2$. Vậy $S = \\{2\\}$."
+      },
+      {
+        "id": "quiz-9.4.10",
+        "badge": "Câu 10 - Đưa về phương trình tích bằng hằng đẳng thức",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.13b (Trang 21)",
+        "question": "Nghiệm của phương trình $(2x - 1)^2 - 9 = 0$ là:",
+        "options": [
+          "$x = 2$ hoặc $x = -1$",
+          "$x = 5$ hoặc $x = -4$",
+          "$x = 2$ hoặc $x = 1$",
+          "$x = -2$ hoặc $x = 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng hằng đẳng thức $a^2 - b^2$: $(2x - 1 - 3)(2x - 1 + 3) = 0 \\Leftrightarrow (2x - 4)(2x + 2) = 0 \\Leftrightarrow 2x - 4 = 0$ hoặc $2x + 2 = 0 \\Leftrightarrow x = 2$ hoặc $x = -1$."
+      },
+      {
+        "id": "quiz-9.4.11",
+        "badge": "Câu 11 - Giải phương trình chứa ẩn ở mẫu",
+        "source": "SGK Toán 9 Cánh Diều Bài 2c (Trang 15)",
+        "question": "Tập nghiệm của phương trình $\\frac{x + 3}{x - 3} + \\frac{x - 3}{x + 3} = 2$ là:",
+        "options": [
+          "$S = \\emptyset$ (Phương trình vô nghiệm)",
+          "$S = \\{0\\}$",
+          "$S = \\{3; -3\\}$",
+          "$S = \\mathbb{R} \\setminus \\{\\pm 3\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne \\pm 3$. Quy đồng khử mẫu: $(x + 3)^2 + (x - 3)^2 = 2(x - 3)(x + 3) \\Leftrightarrow (x^2 + 6x + 9) + (x^2 - 6x + 9) = 2(x^2 - 9) \\Leftrightarrow 2x^2 + 18 = 2x^2 - 18 \\Leftrightarrow 18 = -18$ (vô lý). Vậy phương trình vô nghiệm."
+      },
+      {
+        "id": "quiz-9.4.12",
+        "badge": "Câu 12 - Giải phương trình quy về bậc nhất",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2a (Trang 19)",
+        "question": "Nghiệm của phương trình $\\frac{x}{x - 2} - \\frac{2}{x + 2} = \\frac{4}{x^2 - 4}$ là:",
+        "options": [
+          "$x = 0$",
+          "$x = 2$",
+          "$x = -2$",
+          "$x = 0$ và $x = 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne \\pm 2$. Mẫu chung $x^2 - 4 = (x - 2)(x + 2)$. Khử mẫu: $x(x + 2) - 2(x - 2) = 4 \\Leftrightarrow x^2 + 2x - 2x + 4 = 4 \\Leftrightarrow x^2 = 0 \\Leftrightarrow x = 0$ (thỏa mãn ĐKXĐ). Vậy nghiệm là $x = 0$."
+      },
+      {
+        "id": "quiz-9.4.13",
+        "badge": "Câu 13 - Bẫy nghiệm ngoại lai",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.14a (Trang 22)",
+        "question": "Phương trình $\\frac{x^2 - 4}{x - 2} = 0$ có bao nhiêu nghiệm?",
+        "options": [
+          "1 nghiệm",
+          "2 nghiệm",
+          "0 nghiệm",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne 2$. Khử mẫu: $x^2 - 4 = 0 \\Leftrightarrow x = 2$ hoặc $x = -2$. Đối chiếu ĐKXĐ: $x = 2$ bị loại, $x = -2$ thỏa mãn. Vậy phương trình có đúng 1 nghiệm duy nhất là $x = -2$."
+      },
+      {
+        "id": "quiz-9.4.14",
+        "badge": "Câu 14 - Tổng các nghiệm của phương trình tích",
+        "source": "Đề tuyển sinh vào 10 THPT TP. Hà Nội",
+        "question": "Tổng tất cả các nghiệm của phương trình $(x^2 - 4)(2x - 6) = 0$ là:",
+        "options": [
+          "$3$",
+          "$5$",
+          "$-3$",
+          "$1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^2 - 4)(2x - 6) = 0 \\Leftrightarrow x^2 - 4 = 0$ hoặc $2x - 6 = 0 \\Leftrightarrow x = 2$, $x = -2$ hoặc $x = 3$. Tổng các nghiệm là: $2 + (-2) + 3 = 3$."
+      },
+      {
+        "id": "quiz-9.4.15",
+        "badge": "Câu 15 - Vận dụng giải phương trình phân thức",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.15 (Trang 22)",
+        "question": "Tập nghiệm của phương trình $\\frac{x + 2}{x - 2} - \\frac{x - 2}{x + 2} = \\frac{16}{x^2 - 4}$ là:",
+        "options": [
+          "$S = \\emptyset$",
+          "$S = \\{2\\}$",
+          "$S = \\{-2\\}$",
+          "$S = \\{2; -2\\}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne \\pm 2$. Mẫu chung là $x^2 - 4$. Khử mẫu ta được: $(x + 2)^2 - (x - 2)^2 = 16 \\Leftrightarrow (x^2 + 4x + 4) - (x^2 - 4x + 4) = 16 \\Leftrightarrow 8x = 16 \\Leftrightarrow x = 2$. Đối chiếu ĐKXĐ: $x = 2$ không thỏa mãn (bị loại). Vậy phương trình vô nghiệm ($S = \\emptyset$)."
+      },
+      {
+        "id": "quiz-9.4.16",
+        "badge": "Câu 16 - Vận dụng tìm tham số m để nghiệm thỏa mãn điều kiện",
+        "source": "Đề thi tuyển sinh vào 10 THPT TP. Hồ Chí Minh",
+        "question": "Tìm tất cả các giá trị của tham số $m$ để phương trình $\\frac{x + 2m}{x - 1} = 3$ có nghiệm thỏa mãn $x > 2$.",
+        "options": [
+          "$m > \\frac{1}{2}$",
+          "$m < \\frac{1}{2}$",
+          "$m \\ge \\frac{1}{2}$",
+          "$m \\ne -\\frac{1}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "ĐKXĐ: $x \\ne 1$. Phương trình $\\Rightarrow x + 2m = 3(x - 1) \\Leftrightarrow x + 2m = 3x - 3 \\Leftrightarrow 2x = 2m + 3 \\Leftrightarrow x = \\frac{2m + 3}{2}$. Để nghiệm $x > 2$, ta có $\\frac{2m + 3}{2} > 2 \\Leftrightarrow 2m + 3 > 4 \\Leftrightarrow 2m > 1 \\Leftrightarrow m > \\frac{1}{2}$ (khi đó $x > 2 > 1$ nên luôn thỏa mãn ĐKXĐ $x \\ne 1$)."
+      },
+      {
+        "id": "quiz-9.4.17",
+        "badge": "Câu 17 - Vận dụng phương trình tích đa thức",
+        "source": "Đề thi tuyển sinh vào 10 THPT TP. Đà Nẵng",
+        "question": "Tích tất cả các nghiệm của phương trình $(x^2 - 5x + 6)(x^2 - 1) = 0$ là:",
+        "options": [
+          "$-6$",
+          "$6$",
+          "$12$",
+          "$-12$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $(x^2 - 5x + 6)(x^2 - 1) = 0 \\Leftrightarrow (x - 2)(x - 3)(x - 1)(x + 1) = 0$. Phương trình có 4 nghiệm phân biệt là $x_1 = 2, x_2 = 3, x_3 = 1, x_4 = -1$. Tích các nghiệm là $2 \\cdot 3 \\cdot 1 \\cdot (-1) = -6$."
+      },
+      {
+        "id": "quiz-9.4.18",
+        "badge": "Câu 18 - Toán thực tế chuyển động dòng nước",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.16 (Trang 22)",
+        "question": "Một ca nô chạy xuôi dòng một khúc sông dài $40\\text{ km}$ rồi quay ngược dòng khúc sông đó hết tổng cộng $4,5\\text{ giờ}$. Biết vận tốc dòng nước là $2\\text{ km/h}$. Vận tốc thực của ca nô khi nước yên lặng là:",
+        "options": [
+          "$18\\text{ km/h}$",
+          "$16\\text{ km/h}$",
+          "$20\\text{ km/h}$",
+          "$22\\text{ km/h}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi vận tốc thực của ca nô là $v\\text{ (km/h)}$, $v > 2$. Vận tốc xuôi dòng là $v + 2\\text{ (km/h)}$, ngược dòng là $v - 2\\text{ (km/h)}$. Thời gian xuôi và ngược là: $\\frac{40}{v + 2} + \\frac{40}{v - 2} = 4,5$. Với $v = 18$: $\\frac{40}{20} + \\frac{40}{16} = 2 + 2,5 = 4,5\\text{ (giờ)}$ thỏa mãn. Vậy vận tốc thực là $18\\text{ km/h}$."
+      },
+      {
+        "id": "quiz-9.4.19",
+        "badge": "Câu 19 - Toán thực tế làm chung làm riêng",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4 (Trang 21)",
+        "question": "Hai tổ công nhân cùng làm chung một công việc thì sau $6\\text{ ngày}$ hoàn thành. Nếu làm riêng một mình thì tổ một hoàn thành nhanh hơn tổ hai $5\\text{ ngày}$. Thời gian tổ một làm riêng một mình xong công việc là:",
+        "options": [
+          "$10\\text{ ngày}$",
+          "$15\\text{ ngày}$",
+          "$12\\text{ ngày}$",
+          "$8\\text{ ngày}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi thời gian tổ một làm một mình xong việc là $x\\text{ (ngày)}$, $x > 0$. Tổ hai làm trong $x + 5\\text{ (ngày)}$. Phương trình: $\\frac{1}{x} + \\frac{1}{x + 5} = \\frac{1}{6} \\Leftrightarrow 6(2x + 5) = x(x + 5) \\Leftrightarrow x^2 - 7x - 30 = 0 \\Leftrightarrow (x - 10)(x + 3) = 0 \\Leftrightarrow x = 10$ (nhận vì $x > 0$). Vậy tổ một làm trong $10\\text{ ngày}$."
+      },
+      {
+        "id": "quiz-9.4.20",
+        "badge": "Câu 20 - Toán thực tế kế hoạch chở hàng",
+        "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội năm học 2023 - 2024",
+        "question": "Một đội xe dự định chở $60\\text{ tấn}$ hàng cứu trợ. Khi bắt đầu chở, có $2\\text{ xe}$ được điều đi làm nhiệm vụ khác nên mỗi xe còn lại phải chở thêm $1\\text{ tấn}$ hàng so với dự định. Số xe ban đầu của đội là:",
+        "options": [
+          "$12\\text{ xe}$",
+          "$10\\text{ xe}$",
+          "$14\\text{ xe}$",
+          "$15\\text{ xe}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi số xe ban đầu là $x\\text{ (xe)}$, $x \\in \\mathbb{N}^*, x > 2$. Dự định mỗi xe chở $\\frac{60}{x}\\text{ tấn}$. Thực tế có $x - 2\\text{ xe}$, mỗi xe chở $\\frac{60}{x - 2}\\text{ tấn}$. Phương trình: $\\frac{60}{x - 2} - \\frac{60}{x} = 1 \\Leftrightarrow 60x - 60(x - 2) = x(x - 2) \\Leftrightarrow x^2 - 2x - 120 = 0 \\Leftrightarrow (x - 12)(x + 10) = 0 \\Leftrightarrow x = 12$ (thỏa mãn). Vậy ban đầu đội có $12\\text{ xe}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-9.4.1",
+        "badge": "Đúng/Sai 1 - Nhận biết điều kiện xác định",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.11 (Trang 21)",
+        "prompt": "Cho phương trình chứa ẩn ở mẫu thức: $\\frac{2x - 1}{x - 3} + \\frac{1}{x + 1} = \\frac{4}{(x - 3)(x + 1)}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne 3$ và $x \\ne -1$.",
+            "correctAnswer": true,
+            "explanation": "Hai mẫu thức $x - 3$ và $x + 1$ khác 0 khi và chỉ khi $x \\ne 3$ và $x \\ne -1$."
+          },
+          {
+            "id": "b",
+            "text": "Mẫu thức chung của phương trình là $(x - 3)(x + 1)$.",
+            "correctAnswer": true,
+            "explanation": "Mẫu thức chung nhỏ nhất là tích $(x - 3)(x + 1)$."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị $x = 3$ thỏa mãn điều kiện xác định của phương trình.",
+            "correctAnswer": false,
+            "explanation": "Tại $x = 3$, mẫu thức $x - 3 = 0$ nên $x = 3$ không thỏa mãn ĐKXĐ."
+          },
+          {
+            "id": "d",
+            "text": "Khi $x = 0$, cả hai vế của phương trình đều có giá trị xác định.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 0$ vào hai mẫu thức ta được $-3 \\ne 0$ và $1 \\ne 0$ nên phương trình xác định tại $x = 0$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.2",
+        "badge": "Đúng/Sai 2 - Nhận biết giải phương trình tích",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 15)",
+        "prompt": "Cho phương trình tích: $(3x - 6)(2x + 1) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình tương đương với $3x - 6 = 0$ hoặc $2x + 1 = 0$.",
+            "correctAnswer": true,
+            "explanation": "Quy tắc giải phương trình tích: $A(x) \\cdot B(x) = 0 \\Leftrightarrow A(x) = 0$ hoặc $B(x) = 0$."
+          },
+          {
+            "id": "b",
+            "text": "$x = 2$ là một nghiệm của phương trình.",
+            "correctAnswer": true,
+            "explanation": "Giải $3x - 6 = 0 \\Leftrightarrow 3x = 6 \\Leftrightarrow x = 2$."
+          },
+          {
+            "id": "c",
+            "text": "$x = \\frac{1}{2}$ là một nghiệm của phương trình.",
+            "correctAnswer": false,
+            "explanation": "Giải $2x + 1 = 0 \\Leftrightarrow x = -\\frac{1}{2}$ (không phải $\\frac{1}{2}$)."
+          },
+          {
+            "id": "d",
+            "text": "Tập nghiệm của phương trình là $S = \\left\\{2; -\\frac{1}{2}\\right\\}$.",
+            "correctAnswer": true,
+            "explanation": "Phương trình có hai nghiệm là $x = 2$ và $x = -\\frac{1}{2}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.3",
+        "badge": "Đúng/Sai 3 - Phân thức bằng 0",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 19)",
+        "prompt": "Cho phương trình $\\frac{x^2 - 9}{x - 3} = 0$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne 3$.",
+            "correctAnswer": true,
+            "explanation": "Mẫu thức khác 0: $x - 3 \\ne 0 \\Leftrightarrow x \\ne 3$."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình có hai nghiệm là $x = 3$ và $x = -3$.",
+            "correctAnswer": false,
+            "explanation": "$x = 3$ vi phạm ĐKXĐ nên bị loại."
+          },
+          {
+            "id": "c",
+            "text": "$x = -3$ là nghiệm duy nhất của phương trình.",
+            "correctAnswer": true,
+            "explanation": "Tử thức $x^2 - 9 = 0 \\Leftrightarrow x = \\pm 3$. Do $x \\ne 3$ nên chỉ nhận nghiệm $x = -3$."
+          },
+          {
+            "id": "d",
+            "text": "Tập nghiệm của phương trình là $S = \\{-3\\}$.",
+            "correctAnswer": true,
+            "explanation": "Phương trình có duy nhất 1 nghiệm $x = -3$ nên $S = \\{-3\\}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.4",
+        "badge": "Đúng/Sai 4 - Nhận biết biến đổi đưa về phương trình tích",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.13 (Trang 21)",
+        "prompt": "Cho phương trình: $x^2 - 4x = 0$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình có thể đưa về phương trình tích bằng cách đặt nhân tử chung là $x$.",
+            "correctAnswer": true,
+            "explanation": "$x^2 - 4x = x(x - 4) = 0$."
+          },
+          {
+            "id": "b",
+            "text": "$x = 0$ là một nghiệm của phương trình.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 0$ vào vế trái được $0^2 - 4(0) = 0$."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình có nghiệm âm.",
+            "correctAnswer": false,
+            "explanation": "Hai nghiệm của phương trình là $x = 0$ và $x = 4$, không có nghiệm âm."
+          },
+          {
+            "id": "d",
+            "text": "Tổng các nghiệm của phương trình bằng $4$.",
+            "correctAnswer": true,
+            "explanation": "Tổng hai nghiệm: $0 + 4 = 4$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.5",
+        "badge": "Đúng/Sai 5 - Thông hiểu biến đổi phương trình tích",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 15)",
+        "prompt": "Cho phương trình: $(x^2 - 4) + 3(x - 2) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Ta có $x^2 - 4 = (x - 2)(x + 2)$.",
+            "correctAnswer": true,
+            "explanation": "Áp dụng hằng đẳng thức hiệu hai bình phương."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình có thể viết lại thành $(x - 2)(x + 5) = 0$.",
+            "correctAnswer": true,
+            "explanation": "$(x - 2)(x + 2) + 3(x - 2) = (x - 2)[(x + 2) + 3] = (x - 2)(x + 5) = 0$."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình có 2 nghiệm là $x = 2$ và $x = 5$.",
+            "correctAnswer": false,
+            "explanation": "Nghiệm thứ hai là $x + 5 = 0 \\Leftrightarrow x = -5$ (không phải $5$)."
+          },
+          {
+            "id": "d",
+            "text": "Tích các nghiệm của phương trình bằng $-10$.",
+            "correctAnswer": true,
+            "explanation": "Tích hai nghiệm: $2 \\cdot (-5) = -10$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.6",
+        "badge": "Đúng/Sai 6 - Thông hiểu phương trình phân thức",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.14 (Trang 22)",
+        "prompt": "Cho phương trình: $\\frac{2x - 5}{x - 3} = 1$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne 3$.",
+            "correctAnswer": true,
+            "explanation": "Mẫu thức $x - 3 \\ne 0 \\Leftrightarrow x \\ne 3$."
+          },
+          {
+            "id": "b",
+            "text": "Khử mẫu phương trình ta được $2x - 5 = x - 3$.",
+            "correctAnswer": true,
+            "explanation": "Nhân cả hai vế với $x - 3$ được $2x - 5 = 1(x - 3)$."
+          },
+          {
+            "id": "c",
+            "text": "Giải phương trình khử mẫu thu được $x = 2$.",
+            "correctAnswer": true,
+            "explanation": "$2x - x = -3 + 5 \\Leftrightarrow x = 2$."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị $x = 2$ không thỏa mãn điều kiện xác định nên phương trình vô nghiệm.",
+            "correctAnswer": false,
+            "explanation": "$x = 2$ thỏa mãn ĐKXĐ ($2 \\ne 3$) nên $x = 2$ là nghiệm của phương trình."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.7",
+        "badge": "Đúng/Sai 7 - Thông hiểu nghiệm ngoại lai",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 20)",
+        "prompt": "Cho phương trình: $\\frac{x}{x - 1} - \\frac{1}{x + 1} = \\frac{2}{x^2 - 1}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne 1$ và $x \\ne -1$.",
+            "correctAnswer": true,
+            "explanation": "Mẫu thức chung là $x^2 - 1 = (x - 1)(x + 1) \\ne 0 \\Leftrightarrow x \\ne \\pm 1$."
+          },
+          {
+            "id": "b",
+            "text": "Khử mẫu ta được phương trình: $x(x + 1) - (x - 1) = 2$.",
+            "correctAnswer": true,
+            "explanation": "Quy đồng với mẫu chung $(x - 1)(x + 1)$ ta thu được phương trình tử số này."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình sau khi thu gọn là $x^2 = 1$.",
+            "correctAnswer": true,
+            "explanation": "$x^2 + x - x + 1 = 2 \\Leftrightarrow x^2 + 1 = 2 \\Leftrightarrow x^2 = 1$."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình đã cho có 2 nghiệm phân biệt là $x = 1$ và $x = -1$.",
+            "correctAnswer": false,
+            "explanation": "$x^2 = 1 \\Leftrightarrow x = \\pm 1$, cả hai giá trị này đều vi phạm ĐKXĐ nên bị loại, phương trình vô nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.8",
+        "badge": "Đúng/Sai 8 - Vận dụng phương trình chứa tham số",
+        "source": "Đề thi HSG Toán 9 & Chuyên đề phương trình",
+        "prompt": "Cho phương trình chứa tham số $m$: $\\frac{x - 2m}{x - 2} = 3$ (với $m$ là tham số). Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Điều kiện xác định của phương trình là $x \\ne 2$.",
+            "correctAnswer": true,
+            "explanation": "Mẫu thức $x - 2 \\ne 0 \\Leftrightarrow x \\ne 2$."
+          },
+          {
+            "id": "b",
+            "text": "Biến đổi phương trình thu được $2x = 6 - 2m$.",
+            "correctAnswer": true,
+            "explanation": "$x - 2m = 3(x - 2) \\Leftrightarrow x - 2m = 3x - 6 \\Leftrightarrow 2x = 6 - 2m$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm của phương trình biểu diễn theo $m$ là $x = 3 - m$.",
+            "correctAnswer": true,
+            "explanation": "$x = \\frac{6 - 2m}{2} = 3 - m$."
+          },
+          {
+            "id": "d",
+            "text": "Với $m = 1$, phương trình có nghiệm duy nhất $x = 2$.",
+            "correctAnswer": false,
+            "explanation": "Khi $m = 1$, ta có $x = 3 - 1 = 2$, giá trị này không thỏa mãn ĐKXĐ ($x \\ne 2$) nên với $m = 1$ phương trình vô nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.9",
+        "badge": "Đúng/Sai 9 - Toán thực tế chuyển động dòng nước",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.16 (Trang 22)",
+        "prompt": "Một chiếc ca nô xuôi dòng khúc sông dài $36\\text{ km}$ rồi quay ngược dòng $36\\text{ km}$. Biết vận tốc dòng nước là $3\\text{ km/h}$. Gọi vận tốc thực của ca nô khi nước yên lặng là $v\\text{ (km/h)}$ ($v > 3$). Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Vận tốc của ca nô khi xuôi dòng là $v + 3\\text{ (km/h)}$.",
+            "correctAnswer": true,
+            "explanation": "Vận tốc xuôi dòng bằng vận tốc thực cộng vận tốc dòng nước."
+          },
+          {
+            "id": "b",
+            "text": "Thời gian ca nô đi ngược dòng $36\\text{ km}$ là $\\frac{36}{v - 3}\\text{ (giờ)}$.",
+            "correctAnswer": true,
+            "explanation": "Thời gian ngược dòng bằng quãng đường chia vận tốc ngược dòng: $\\frac{36}{v - 3}$."
+          },
+          {
+            "id": "c",
+            "text": "Thời gian xuôi dòng luôn lớn hơn thời gian ngược dòng trên cùng khúc sông.",
+            "correctAnswer": false,
+            "explanation": "Vì vận tốc xuôi dòng ($v + 3$) lớn hơn vận tốc ngược dòng ($v - 3$) nên thời gian xuôi dòng phải ít hơn thời gian ngược dòng."
+          },
+          {
+            "id": "d",
+            "text": "Nếu tổng thời gian cả đi và về là $5\\text{ giờ}$ thì vận tốc thực của ca nô là $15\\text{ km/h}$.",
+            "correctAnswer": true,
+            "explanation": "Thay $v = 15$ vào tổng thời gian: $\\frac{36}{15 + 3} + \\frac{36}{15 - 3} = \\frac{36}{18} + \\frac{36}{12} = 2 + 3 = 5\\text{ (giờ)}$ (thỏa mãn)."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.4.10",
+        "badge": "Đúng/Sai 10 - Toán thực tế năng suất làm việc",
+        "source": "SGK Toán 9 Cánh Diều Bài 4 (Trang 16)",
+        "prompt": "Hai vòi nước cùng chảy vào một bể không có nước thì sau $4\\text{ giờ}$ đầy bể. Nếu chảy một mình, vòi thứ nhất làm đầy bể nhanh hơn vòi thứ hai $6\\text{ giờ}$. Gọi thời gian vòi một chảy một mình đầy bể là $x\\text{ (giờ)}$ ($x > 0$). Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Trong $1\\text{ giờ}$, vòi thứ nhất chảy được $\\frac{1}{x}$ bể.",
+            "correctAnswer": true,
+            "explanation": "Vòi một chảy một mình đầy bể trong $x$ giờ nên mỗi giờ chảy được $\\frac{1}{x}$ bể."
+          },
+          {
+            "id": "b",
+            "text": "Thời gian vòi thứ hai chảy một mình đầy bể là $x + 6\\text{ (giờ)}$.",
+            "correctAnswer": true,
+            "explanation": "Vòi một nhanh hơn vòi hai 6 giờ nghĩa là vòi hai chảy lâu hơn vòi một 6 giờ: $x + 6$ giờ."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình lập được là: $\\frac{1}{x} + \\frac{1}{x + 6} = \\frac{1}{4}$.",
+            "correctAnswer": true,
+            "explanation": "Cả hai vòi cùng chảy 4 giờ đầy bể nên trong 1 giờ hai vòi chảy được $\\frac{1}{4}$ bể."
+          },
+          {
+            "id": "d",
+            "text": "Nếu chảy riêng một mình, vòi thứ nhất mất $8\\text{ giờ}$ để làm đầy bể.",
+            "correctAnswer": false,
+            "explanation": "Giải phương trình: $4(2x + 6) = x(x + 6) \\Leftrightarrow 8x + 24 = x^2 + 6x \\Leftrightarrow x^2 - 2x - 24 = 0 \\Leftrightarrow (x - 6)(x + 4) = 0 \\Leftrightarrow x = 6\\text{ (giờ)}$ (không phải $8$ giờ)."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-9.4.1",
+        "badge": "Trả lời ngắn 1 - Nghiệm lớn nhất phương trình tích",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.12 (Trang 21)",
+        "prompt": "Tìm nghiệm lớn nhất của phương trình tích: $(x - 5)(2x + 6) = 0$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": ["5", "x=5", "x = 5"],
+        "explanation": "Phương trình $\\Leftrightarrow x - 5 = 0$ hoặc $2x + 6 = 0 \\Leftrightarrow x = 5$ hoặc $x = -3$. Nghiệm lớn nhất là $5$."
+      },
+      {
+        "id": "sa-9.4.2",
+        "badge": "Trả lời ngắn 2 - Giá trị làm mẫu thức bằng 0",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 15)",
+        "prompt": "Tìm giá trị của $x$ để mẫu thức của phân thức $\\frac{3x - 1}{4x - 12}$ bằng 0.",
+        "correctAnswer": "3",
+        "acceptableAnswers": ["3", "x=3", "x = 3"],
+        "explanation": "Mẫu thức bằng 0: $4x - 12 = 0 \\Leftrightarrow 4x = 12 \\Leftrightarrow x = 3$."
+      },
+      {
+        "id": "sa-9.4.3",
+        "badge": "Trả lời ngắn 3 - Số nghiệm của phương trình tích",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 18)",
+        "prompt": "Phương trình $(x - 1)(x - 2)(x - 3) = 0$ có tất cả bao nhiêu nghiệm phân biệt?",
+        "correctAnswer": "3",
+        "acceptableAnswers": ["3", "ba"],
+        "explanation": "Phương trình có 3 nghiệm phân biệt là $x = 1, x = 2, x = 3$. Vậy có 3 nghiệm."
+      },
+      {
+        "id": "sa-9.4.4",
+        "badge": "Trả lời ngắn 4 - Nghiệm của phân thức bằng 0",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.12 (Trang 21)",
+        "prompt": "Tìm nghiệm của phương trình $\\frac{x - 7}{x + 4} = 0$.",
+        "correctAnswer": "7",
+        "acceptableAnswers": ["7", "x=7", "x = 7"],
+        "explanation": "ĐKXĐ: $x \\ne -4$. Phương trình $\\Rightarrow x - 7 = 0 \\Leftrightarrow x = 7$ (thỏa mãn ĐKXĐ)."
+      },
+      {
+        "id": "sa-9.4.5",
+        "badge": "Trả lời ngắn 5 - Tổng các nghiệm phương trình tích",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.13 (Trang 21)",
+        "prompt": "Tính tổng các nghiệm của phương trình: $(2x - 4)(x + 3) = 0$.",
+        "correctAnswer": "-1",
+        "acceptableAnswers": ["-1"],
+        "explanation": "Phương trình có 2 nghiệm: $x_1 = 2$ và $x_2 = -3$. Tổng các nghiệm là: $2 + (-3) = -1$."
+      },
+      {
+        "id": "sa-9.4.6",
+        "badge": "Trả lời ngắn 6 - Số nghiệm sau khi loại nghiệm ngoại lai",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 15)",
+        "prompt": "Phương trình $\\frac{x^2 - 16}{x - 4} = 0$ có bao nhiêu nghiệm thỏa mãn điều kiện xác định?",
+        "correctAnswer": "1",
+        "acceptableAnswers": ["1", "một"],
+        "explanation": "ĐKXĐ: $x \\ne 4$. $x^2 - 16 = 0 \\Leftrightarrow x = \\pm 4$. Do $x \\ne 4$ nên $x = 4$ bị loại, chỉ nhận nghiệm $x = -4$. Vậy phương trình có đúng 1 nghiệm."
+      },
+      {
+        "id": "sa-9.4.7",
+        "badge": "Trả lời ngắn 7 - Nghiệm lớn hơn 3",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 19)",
+        "prompt": "Giải phương trình $x^2 - 6x + 8 = 0$. Tìm nghiệm nguyên của phương trình thỏa mãn điều kiện $x > 3$.",
+        "correctAnswer": "4",
+        "acceptableAnswers": ["4", "x=4", "x = 4"],
+        "explanation": "Ta có $x^2 - 6x + 8 = (x - 2)(x - 4) = 0 \\Leftrightarrow x = 2$ hoặc $x = 4$. Nghiệm thỏa mãn $x > 3$ là $x = 4$."
+      },
+      {
+        "id": "sa-9.4.8",
+        "badge": "Trả lời ngắn 8 - Tìm tham số m để phương trình nhận nghiệm",
+        "source": "Đề thi tuyển sinh vào 10 THPT",
+        "prompt": "Tìm giá trị của tham số $m$ để phương trình $\\frac{x - 2m}{x + 1} = 2$ nhận $x = 4$ làm nghiệm.",
+        "correctAnswer": "-3",
+        "acceptableAnswers": ["-3", "m=-3", "m = -3"],
+        "explanation": "Thay $x = 4$ vào phương trình: $\\frac{4 - 2m}{4 + 1} = 2 \\Leftrightarrow \\frac{4 - 2m}{5} = 2 \\Leftrightarrow 4 - 2m = 10 \\Leftrightarrow 2m = -6 \\Leftrightarrow m = -3$."
+      },
+      {
+        "id": "sa-9.4.9",
+        "badge": "Trả lời ngắn 9 - Toán thực tế vận tốc dòng nước",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 1.16 (Trang 22)",
+        "prompt": "Một ca nô đi xuôi dòng khúc sông dài $45\\text{ km}$ hết $1,5\\text{ giờ}$. Biết vận tốc dòng nước là $4\\text{ km/h}$. Tính vận tốc thực của ca nô khi nước yên lặng (theo đơn vị km/h).",
+        "correctAnswer": "26",
+        "acceptableAnswers": ["26", "26 km/h", "26km/h"],
+        "explanation": "Vận tốc xuôi dòng của ca nô là: $45 : 1,5 = 30\\text{ (km/h)}$. Vận tốc thực của ca nô khi nước yên lặng là: $v_{\\text{thực}} = v_{\\text{xuôi}} - v_{\\text{nước}} = 30 - 4 = 26\\text{ (km/h)}$."
+      },
+      {
+        "id": "sa-9.4.10",
+        "badge": "Trả lời ngắn 10 - Toán thực tế năng suất đào đất",
+        "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+        "prompt": "Một đội máy xúc theo kế hoạch mỗi ngày phải xúc $50\\text{ m}^3$ đất. Nhờ thi đua tăng năng suất, mỗi ngày đội xúc được $60\\text{ m}^3$ đất nên đã hoàn thành trước thời hạn $2\\text{ ngày}$. Tính tổng khối lượng đất đội phải xúc theo kế hoạch (theo đơn vị $\\text{m}^3$).",
+        "correctAnswer": "600",
+        "acceptableAnswers": ["600", "600 m3", "600m3", "600 m^3"],
+        "explanation": "Gọi khối lượng đất đội phải xúc theo kế hoạch là $V\\text{ (m}^3\\)$, $V > 0$. Thời gian dự định là $\\frac{V}{50}\\text{ (ngày)}$. Thời gian thực tế là $\\frac{V}{60}\\text{ (ngày)}$. Do hoàn thành trước $2\\text{ ngày}$ nên ta có: $\\frac{V}{50} - \\frac{V}{60} = 2 \\Leftrightarrow \\frac{V}{300} = 2 \\Leftrightarrow V = 600\\text{ m}^3$."
+      }
+    ]
   }
 };

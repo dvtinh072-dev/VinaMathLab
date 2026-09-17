@@ -2926,6 +2926,338 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
     ],
   },
 
+  "t10-gk1-de4": {
+    id: "t10-gk1-de4",
+    title: "Đề Thi Giữa Học Kỳ 1 - Toán 10 (Đề số 4)",
+    grade: "lop-10",
+    gradeNumber: 10,
+    examType: "giua-ky-1",
+    category: "LOP_10",
+    subtitle: "Đề thi chính thức THPT Nguyễn Trãi - Hội An (Sở GD&ĐT Đà Nẵng) - Năm học 2025 - 2026",
+    durationMinutes: 90,
+    totalQuestions: 22,
+    questions: [
+      {
+        id: "t10-gk1-de4-q1",
+        type: "multiple_choice",
+        index: 1,
+        stem: "Trong các đẳng thức sau đây, đẳng thức nào sai?",
+        options: [
+          { key: "A", text: "$\\tan(180^\\circ - \\alpha) = -\\tan \\alpha$" },
+          { key: "B", text: "$\\cot(180^\\circ - \\alpha) = \\cot \\alpha$" },
+          { key: "C", text: "$\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$" },
+          { key: "D", text: "$\\sin(180^\\circ - \\alpha) = \\sin \\alpha$" }
+        ],
+        correctKey: "B",
+        explanation: "Theo tính chất của hai góc bù nhau:\n$\\sin(180^\\circ - \\alpha) = \\sin \\alpha$;\n$\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$;\n$\\tan(180^\\circ - \\alpha) = -\\tan \\alpha$;\n$\\cot(180^\\circ - \\alpha) = -\\cot \\alpha$.\nDo đó đẳng thức $\\cot(180^\\circ - \\alpha) = \\cot \\alpha$ là sai.",
+        topic: "Giá trị lượng giác của hai góc bù nhau",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q2",
+        type: "multiple_choice",
+        index: 2,
+        stem: "Cho mệnh đề: “Nếu một tứ giác là hình chữ nhật thì tứ giác đó có hai đường chéo bằng nhau”. Trong các mệnh đề sau đây, đâu là mệnh đề đảo của mệnh đề trên?",
+        options: [
+          { key: "A", text: "Nếu tứ giác có hai đường chéo không bằng nhau thì tứ giác đó không là hình chữ nhật." },
+          { key: "B", text: "Nếu tứ giác có hai đường chéo bằng nhau thì tứ giác đó là hình chữ nhật." },
+          { key: "C", text: "Nếu tứ giác không là hình chữ nhật thì tứ giác đó không có hai đường chéo bằng nhau." },
+          { key: "D", text: "Nếu tứ giác là hình chữ nhật thì tứ giác đó có hai đường chéo bằng nhau." }
+        ],
+        correctKey: "B",
+        explanation: "Mệnh đề có dạng $P \\Rightarrow Q$. Mệnh đề đảo có dạng $Q \\Rightarrow P$: \"Nếu tứ giác có hai đường chéo bằng nhau thì tứ giác đó là hình chữ nhật\".",
+        topic: "Mệnh đề đảo",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q3",
+        type: "multiple_choice",
+        index: 3,
+        stem: "Trong $\\triangle ABC$ có $AB = c, AC = b, BC = a$. Đẳng thức nào sau đây đúng?",
+        options: [
+          { key: "A", text: "$c^2 = a^2 + b^2 + 2ab \\cos C$" },
+          { key: "B", text: "$c^2 = a^2 + b^2 - 2ab \\cos A$" },
+          { key: "C", text: "$c^2 = a^2 + b^2 - 2ab \\cos B$" },
+          { key: "D", text: "$c^2 = a^2 + b^2 - 2ab \\cos C$" }
+        ],
+        correctKey: "D",
+        explanation: "Theo định lí côsin trong tam giác: $c^2 = a^2 + b^2 - 2ab \\cos C$.",
+        topic: "Định lí côsin trong tam giác",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q4",
+        type: "multiple_choice",
+        index: 4,
+        stem: "Mệnh đề phủ định của mệnh đề \"$\\exists x \\in \\mathbb{R},\\; x^2 + x + 5 \\ge 0$\" là:",
+        options: [
+          { key: "A", text: "$\\exists x \\in \\mathbb{R},\\; x^2 + x + 5 \\le 0$" },
+          { key: "B", text: "$\\exists x \\in \\mathbb{R},\\; x^2 + x + 5 < 0$" },
+          { key: "C", text: "$\\forall x \\in \\mathbb{R},\\; x^2 + x + 5 \\le 0$" },
+          { key: "D", text: "$\\forall x \\in \\mathbb{R},\\; x^2 + x + 5 < 0$" }
+        ],
+        correctKey: "D",
+        explanation: "Phủ định của kí hiệu $\\exists$ là $\\forall$, và phủ định của bất đẳng thức $\\ge 0$ là $< 0$. Do đó phủ định của mệnh đề đã cho là: \"$\\forall x \\in \\mathbb{R},\\; x^2 + x + 5 < 0$\".",
+        topic: "Mệnh đề phủ định",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q5",
+        type: "multiple_choice",
+        index: 5,
+        stem: "Viết mệnh đề sau bằng cách sử dụng kí hiệu $\\forall$ hoặc $\\exists$: “Mọi số thực nhân với 1 đều bằng chính nó”.",
+        options: [
+          { key: "A", text: "$\\exists x \\in \\mathbb{R},\\; x + 1 = x$" },
+          { key: "B", text: "$\\forall x \\in \\mathbb{R},\\; x \\cdot 1 = x$" },
+          { key: "C", text: "$\\exists x \\in \\mathbb{R},\\; x \\cdot 1 = x$" },
+          { key: "D", text: "$\\forall x \\in \\mathbb{R},\\; x = x + 1$" }
+        ],
+        correctKey: "B",
+        explanation: "\"Mọi số thực\" tương ứng kí hiệu $\\forall x \\in \\mathbb{R}$, \"nhân với 1 đều bằng chính nó\" tương ứng $x \\cdot 1 = x$.",
+        topic: "Kí hiệu với mọi và tồn tại",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q6",
+        type: "multiple_choice",
+        index: 6,
+        stem: "Cho tập hợp $B = \\{a; 1; b; 3\\}$. Mệnh đề nào sau đây là sai?",
+        options: [
+          { key: "A", text: "$\\{1\\} \\subset B$" },
+          { key: "B", text: "$\\{-2\\} \\not\\subset B$" },
+          { key: "C", text: "$3 \\notin B$" },
+          { key: "D", text: "$b \\in B$" }
+        ],
+        correctKey: "C",
+        explanation: "Phần tử 3 thuộc tập hợp $B$ ($3 \\in B$), vì vậy mệnh đề \"$3 \\notin B$\" là mệnh đề sai.",
+        topic: "Khái niệm và quan hệ tập hợp",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q7",
+        type: "multiple_choice",
+        index: 7,
+        stem: "Trong các đẳng thức sau đây, đẳng thức nào là đúng?",
+        options: [
+          { key: "A", text: "$\\cot 150^\\circ = \\sqrt{3}$" },
+          { key: "B", text: "$\\tan 150^\\circ = \\frac{1}{\\sqrt{3}}$" },
+          { key: "C", text: "$\\cos 150^\\circ = -\\frac{\\sqrt{3}}{2}$" },
+          { key: "D", text: "$\\sin 150^\\circ = -\\frac{1}{2}$" }
+        ],
+        correctKey: "C",
+        explanation: "Ta có $\\cos 150^\\circ = \\cos(180^\\circ - 30^\\circ) = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$.\nCác giá trị khác: $\\sin 150^\\circ = \\frac{1}{2}$, $\\tan 150^\\circ = -\\frac{1}{\\sqrt{3}}$, $\\cot 150^\\circ = -\\sqrt{3}$.",
+        topic: "Giá trị lượng giác góc đặc biệt",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q8",
+        type: "multiple_choice",
+        index: 8,
+        stem: "Trong $\\triangle ABC$ có $AB = c, AC = b, BC = a$. Chọn công thức tính diện tích đúng trong các đáp án sau:",
+        options: [
+          { key: "A", text: "$S = ac \\sin B$" },
+          { key: "B", text: "$S = \\frac{1}{2} ac \\sin C$" },
+          { key: "C", text: "$S = \\frac{1}{2} ac \\sin A$" },
+          { key: "D", text: "$S = \\frac{1}{2} ac \\sin B$" }
+        ],
+        correctKey: "D",
+        explanation: "Công thức tính diện tích tam giác theo tích hai cạnh và sin của góc xen giữa là $S = \\frac{1}{2} ac \\sin B$.",
+        topic: "Công thức diện tích tam giác",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q9",
+        type: "multiple_choice",
+        index: 9,
+        stem: "Hệ nào dưới đây là hệ bất phương trình bậc nhất hai ẩn?",
+        options: [
+          { key: "A", text: "$\\begin{cases} x + y^2 \\le 0 \\\\ x^2 - y < 1 \\end{cases}$" },
+          { key: "B", text: "$\\begin{cases} \\sqrt{x} + 2y > 3 \\\\ x - 2y \\le 2 \\end{cases}$" },
+          { key: "C", text: "$\\begin{cases} 2x + 3y < 1 \\\\ xy \\ge -3 \\end{cases}$" },
+          { key: "D", text: "$\\begin{cases} x + 2y > 3 \\\\ x - y \\le -4 \\end{cases}$" }
+        ],
+        correctKey: "D",
+        explanation: "Hệ bất phương trình bậc nhất hai ẩn gồm các bất phương trình bậc nhất đối với hai ẩn $x, y$. Hệ ở phương án D thỏa mãn. Các hệ còn lại chứa $y^2, x^2, \\sqrt{x}, xy$ nên không phải bậc nhất hai ẩn.",
+        topic: "Nhận biết hệ bất phương trình bậc nhất hai ẩn",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q10",
+        type: "multiple_choice",
+        index: 10,
+        stem: "Trong các câu sau, câu nào không phải là mệnh đề?",
+        options: [
+          { key: "A", text: "8 là số chính phương." },
+          { key: "B", text: "Buồn ngủ quá!" },
+          { key: "C", text: "Băng Cốc là thủ đô của Mianma." },
+          { key: "D", text: "Hình thoi có hai đường chéo vuông góc với nhau." }
+        ],
+        correctKey: "B",
+        explanation: "\"Buồn ngủ quá!\" là một câu cảm thán, bộc lộ cảm xúc, không thể xác định tính đúng hoặc sai nên không phải là mệnh đề.",
+        topic: "Khái niệm mệnh đề",
+        difficulty: "NB"
+      },
+      {
+        id: "t10-gk1-de4-q11",
+        type: "multiple_choice",
+        index: 11,
+        stem: "Điểm nào dưới đây thuộc miền nghiệm của bất phương trình $2x + y < 1$?",
+        options: [
+          { key: "A", text: "$P(2; -2)$" },
+          { key: "B", text: "$M(1; -2)$" },
+          { key: "C", text: "$N(1; 0)$" },
+          { key: "D", text: "$Q(1; 1)$" }
+        ],
+        correctKey: "B",
+        explanation: "Thay tọa độ các điểm vào biểu thức $2x + y$:\n- Với $M(1; -2)$: $2(1) + (-2) = 0 < 1$ (thỏa mãn).\n- Với $P(2; -2)$: $2(2) + (-2) = 2 \\not< 1$.\n- Với $N(1; 0)$: $2(1) + 0 = 2 \\not< 1$.\n- Với $Q(1; 1)$: $2(1) + 1 = 3 \\not< 1$.",
+        topic: "Miền nghiệm bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q12",
+        type: "multiple_choice",
+        index: 12,
+        stem: "Cho mệnh đề chứa biến $P(x)$: \"$x^2 - 5x + 4 = 0$\". Mệnh đề nào dưới đây đúng?",
+        options: [
+          { key: "A", text: "$P(1)$" },
+          { key: "B", text: "$P(-1)$" },
+          { key: "C", text: "$P(-5)$" },
+          { key: "D", text: "$P(2)$" }
+        ],
+        correctKey: "A",
+        explanation: "Thay $x = 1$ vào phương trình ta được $1^2 - 5(1) + 4 = 0$ (đúng). Do đó $P(1)$ là mệnh đề đúng.",
+        topic: "Mệnh đề chứa biến",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q13",
+        type: "true_false",
+        index: 13,
+        stem: "Cho hai tập hợp: $A = \\{-3; -1; 0; 2\\}$ và $B = \\{-2; -1; 2; 4\\}$. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+        subQuestions: [
+          { key: "a", text: "Tập hợp $A$ có 4 phần tử.", isCorrect: true },
+          { key: "b", text: "Tập hợp $X = \\{-1; 2\\}$ là một tập hợp con của tập hợp $A$.", isCorrect: true },
+          { key: "c", text: "$A \\cap B = \\{-2; 2\\}$.", isCorrect: false },
+          { key: "d", text: "$B \\setminus A = \\{-2; 2\\}$.", isCorrect: false }
+        ],
+        explanation: "(a) Đúng. Tập hợp $A$ có đúng 4 phần tử là $-3, -1, 0, 2$.\n(b) Đúng. Cả hai phần tử $-1$ và $2$ đều thuộc $A$ nên $X \\subset A$.\n(c) Sai. Các phần tử chung của $A$ và $B$ là $-1$ và $2$, do đó $A \\cap B = \\{-1; 2\\}$.\n(d) Sai. Các phần tử thuộc $B$ mà không thuộc $A$ là $-2$ và $4$, do đó $B \\setminus A = \\{-2; 4\\}$.",
+        topic: "Các phép toán trên tập hợp",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q14",
+        type: "true_false",
+        index: 14,
+        stem: "Cho miền được gạch chéo trong hình vẽ biểu diễn miền nghiệm của hệ bất phương trình $(I)$ gồm các bất phương trình giới hạn bởi hai trục tọa độ $Ox, Oy$ và đường thẳng $d$ đi qua $(0; 2)$ và $(2; 0)$. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+        subQuestions: [
+          { key: "a", text: "Đường thẳng $d$ đi qua điểm có tọa độ $(0; 2)$.", isCorrect: true },
+          { key: "b", text: "Các điểm thuộc miền nghiệm của hệ bất phương trình $(I)$ đều có hoành độ không âm.", isCorrect: true },
+          { key: "c", text: "Miền nghiệm của hệ bất phương trình $(I)$ chứa điểm $M(1; -1)$.", isCorrect: false },
+          { key: "d", text: "Miền nghiệm của hệ bất phương trình $(I)$ là miền tam giác.", isCorrect: true }
+        ],
+        explanation: "(a) Đúng. Theo hình vẽ đề bài, đường thẳng $d$ cắt trục tung tại điểm $(0; 2)$.\n(b) Đúng. Miền nghiệm nằm ở nửa mặt phẳng bên phải trục tung, thỏa mãn $x \\ge 0$.\n(c) Sai. Điểm $M(1; -1)$ có tung độ $y = -1 < 0$ nằm ngoài miền nghiệm.\n(d) Đúng. Miền nghiệm là miền tam giác giới hạn bởi hai trục tọa độ và đường thẳng $d$.",
+        topic: "Biểu diễn miền nghiệm của hệ bất phương trình",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q15",
+        type: "true_false",
+        index: 15,
+        stem: "Câu lạc bộ thể dục thể thao của trường có 30 học sinh yêu thích môn bóng đá, 25 học sinh yêu thích môn bóng bàn, 20 học sinh yêu thích môn cầu lông, 15 học sinh yêu thích cả hai môn bóng đá và bóng bàn, 12 học sinh yêu thích cả hai môn bóng bàn và cầu lông, 10 học sinh yêu thích cả hai môn bóng đá và cầu lông, 5 học sinh yêu thích cả ba môn bóng đá, bóng bàn và cầu lông. Gọi $m, n, p$ lần lượt là số học sinh chỉ thích một môn bóng đá, bóng bàn, cầu lông. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+        subQuestions: [
+          { key: "a", text: "Số học sinh chỉ thích môn bóng đá là $m = 10$.", isCorrect: true },
+          { key: "b", text: "Số học sinh chỉ thích môn bóng bàn là $n = 3$.", isCorrect: true },
+          { key: "c", text: "Số học sinh chỉ thích môn cầu lông là $p = 5$.", isCorrect: false },
+          { key: "d", text: "Tổng số học sinh chỉ thích đúng một trong ba môn thể thao trên là $S = m + n + p = 16$.", isCorrect: true }
+        ],
+        explanation: "Sử dụng biểu đồ Venn ba tập hợp:\n- Số học sinh chỉ thích bóng đá và bóng bàn: $15 - 5 = 10$.\n- Số học sinh chỉ thích bóng đá và cầu lông: $10 - 5 = 5$.\n- Số học sinh chỉ thích bóng bàn và cầu lông: $12 - 5 = 7$.\n(a) Đúng. Số học sinh chỉ thích bóng đá là: $m = 30 - (10 + 5 + 5) = 10$.\n(b) Đúng. Số học sinh chỉ thích bóng bàn là: $n = 25 - (10 + 7 + 5) = 3$.\n(c) Sai. Số học sinh chỉ thích cầu lông là: $p = 20 - (5 + 7 + 5) = 3$.\n(d) Đúng. Tổng số học sinh chỉ thích một môn là: $S = m + n + p = 10 + 3 + 3 = 16$.",
+        topic: "Ứng dụng biểu đồ Venn trong bài toán thực tế",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-de4-q16",
+        type: "true_false",
+        index: 16,
+        stem: "Một xưởng sản xuất bàn và ghế. Một chiếc bàn cần 1,5 giờ lắp ráp và 1 giờ hoàn thiện; một chiếc ghế cần 1 giờ lắp ráp và 2 giờ hoàn thiện. Bộ phận lắp ráp có 3 nhân công, bộ phận hoàn thiện có 4 nhân công. Mỗi công nhân làm việc không quá 8 tiếng mỗi ngày. Thị trường luôn tiêu thụ hết sản phẩm của xưởng và lượng ghế tiêu thụ không vượt quá 3,5 lần số bàn. Giả sử trong một ngày xưởng sản xuất $x$ chiếc bàn và $y$ chiếc ghế ($x, y \\ge 0$). Xét tính Đúng hoặc Sai của các khẳng định sau:",
+        subQuestions: [
+          { key: "a", text: "Tổng thời gian làm việc tối đa của bộ phận lắp ráp là 24 giờ và bộ phận hoàn thiện là 32 giờ.", isCorrect: true },
+          { key: "b", text: "Hệ bất phương trình biểu thị các điều kiện của bài toán là $\\begin{cases} 1{,}5x + y \\le 24 \\\\ x + 2y \\le 32 \\\\ y \\le 3{,}5x \\\\ x \\ge 0, y \\ge 0 \\end{cases}$.", isCorrect: true },
+          { key: "c", text: "Điểm có tọa độ $(8; 12)$ thuộc miền nghiệm của hệ bất phương trình trên.", isCorrect: true },
+          { key: "d", text: "Nếu mỗi chiếc bàn lãi 600 nghìn đồng và mỗi chiếc ghế lãi 450 nghìn đồng thì xưởng thu tiền lãi cao nhất khi chỉ sản xuất 16 chiếc bàn và 0 chiếc ghế.", isCorrect: false }
+        ],
+        explanation: "(a) Đúng. Bộ phận lắp ráp: $3 \\times 8 = 24$ giờ; hoàn thiện: $4 \\times 8 = 32$ giờ.\n(b) Đúng. Điều kiện thời gian lắp ráp: $1{,}5x + y \\le 24$; hoàn thiện: $x + 2y \\le 32$; tỉ lệ: $y \\le 3{,}5x$; số lượng $x, y \\ge 0$.\n(c) Đúng. Thay $(8; 12)$ vào hệ: $1{,}5(8) + 12 = 24 \\le 24$; $8 + 2(12) = 32 \\le 32$; $12 \\le 3{,}5(8) = 28$; $8 \\ge 0, 12 \\ge 0$ (thỏa mãn tất cả).\n(d) Sai. Hàm tiền lãi: $F(x, y) = 600x + 450y$ (nghìn đồng).\n- Tại $(16; 0)$: $F = 600(16) = 9600$ nghìn đồng.\n- Tại $(8; 12)$: $F = 600(8) + 450(12) = 4800 + 5400 = 10200$ nghìn đồng.\nDo $10200 > 9600$, sản xuất 8 bàn và 12 ghế đem lại lợi nhuận cao hơn phương án chỉ làm 16 bàn.",
+        topic: "Quy hoạch tuyến tính thực tế",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-de4-q17",
+        type: "short_answer",
+        index: 17,
+        stem: "Cho hai tập hợp $A = (-3; 2]$ và $B = [-1; +\\infty)$. Khi đó tập hợp $A \\cap B$ có bao nhiêu phần tử là số nguyên?",
+        correctAnswer: "4",
+        acceptableAnswers: ["4", "bốn"],
+        explanation: "Ta có: $A \\cap B = (-3; 2] \\cap [-1; +\\infty) = [-1; 2]$.\nCác số nguyên thuộc đoạn $[-1; 2]$ gồm: $-1, 0, 1, 2$.\nVậy có tất cả 4 phần tử là số nguyên.",
+        topic: "Giao của hai tập hợp số",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q18",
+        type: "short_answer",
+        index: 18,
+        stem: "Một cửa hàng bán hai loại bánh: Bánh kem loại A giá 350.000 đồng/cái và bánh kem loại B giá 250.000 đồng/cái. Cửa hàng cần đạt được tổng doanh thu ít nhất là 7.000.000 đồng trong tuần này. Gọi $x, y$ lần lượt là số lượng bánh kem loại A và loại B đã bán được. Bất phương trình bậc nhất hai ẩn $x$ và $y$ thể hiện điều kiện về kinh doanh tối thiểu của cửa hàng có dạng $mx + 5y \\ge n$. Tính giá trị của biểu thức: $T = 2n - m$.",
+        correctAnswer: "273",
+        acceptableAnswers: ["273"],
+        explanation: "Tổng doanh thu bán bánh của cửa hàng là: $350000x + 250000y$ (đồng).\nTheo yêu cầu, doanh thu ít nhất 7.000.000 đồng nên ta có bất phương trình:\n$350000x + 250000y \\ge 7000000$.\nChia cả hai vế cho 50.000, ta được:\n$7x + 5y \\ge 140$.\nĐồng nhất với dạng $mx + 5y \\ge n$, suy ra $m = 7$ và $n = 140$.\nGiá trị của biểu thức $T = 2n - m = 2(140) - 7 = 280 - 7 = 273$.",
+        topic: "Ứng dụng bất phương trình bậc nhất hai ẩn",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q19",
+        type: "short_answer",
+        index: 19,
+        stem: "Cho $\\sin \\alpha = \\frac{\\sqrt{2}}{5}$ và $\\alpha \\in (0^\\circ; 90^\\circ)$. Khi đó $\\cos \\alpha = \\frac{\\sqrt{a}}{b}$ với $a, b \\in \\mathbb{Z}$ và $a$ là số nguyên tố. Tính giá trị của biểu thức $a - 2b$.",
+        correctAnswer: "13",
+        acceptableAnswers: ["13"],
+        explanation: "Vì $0^\\circ < \\alpha < 90^\\circ$ nên $\\cos \\alpha > 0$.\nÁp dụng hệ thức $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$, ta có:\n$\\cos^2 \\alpha = 1 - \\sin^2 \\alpha = 1 - \\left(\\frac{\\sqrt{2}}{5}\\right)^2 = 1 - \\frac{2}{25} = \\frac{23}{25}$.\nSuy ra $\\cos \\alpha = \\frac{\\sqrt{23}}{5}$.\nDo $a, b \\in \\mathbb{Z}$ và $a$ là số nguyên tố nên $a = 23$ và $b = 5$.\nVậy $a - 2b = 23 - 2(5) = 23 - 10 = 13$.",
+        topic: "Giá trị lượng giác của một góc",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q20",
+        type: "short_answer",
+        index: 20,
+        stem: "Để đo khoảng cách từ vị trí $A$ trên bờ sông đến vị trí $C$ của con tàu bị mắc cạn gần một cù lao giữa sông, bạn Minh đi dọc bờ sông từ vị trí $A$ đến vị trí $B$ cách $A$ một khoảng bằng $60\\text{ m}$ và đo các góc $\\widehat{BAC} = 85^\\circ$, $\\widehat{ABC} = 45^\\circ$. Tính khoảng cách $AC$ theo đơn vị mét (làm tròn kết quả đến hàng đơn vị).",
+        correctAnswer: "55",
+        acceptableAnswers: ["55", "55m", "55 m"],
+        explanation: "Trong tam giác $ABC$, số đo góc $\\widehat{ACB}$ là:\n$\\widehat{ACB} = 180^\\circ - (\\widehat{BAC} + \\widehat{ABC}) = 180^\\circ - (85^\\circ + 45^\\circ) = 50^\\circ$.\nÁp dụng định lí sin trong tam giác $ABC$, ta có:\n$\\frac{AC}{\\sin \\widehat{ABC}} = \\frac{AB}{\\sin \\widehat{ACB}} \\Rightarrow AC = \\frac{AB \\cdot \\sin 45^\\circ}{\\sin 50^\\circ} = \\frac{60 \\cdot \\sin 45^\\circ}{\\sin 50^\\circ} \\approx \\frac{42{,}4264}{0{,}7660} \\approx 55{,}38\\text{ m}$.\nLàm tròn kết quả đến hàng đơn vị ta được $AC \\approx 55\\text{ m}$.",
+        topic: "Ứng dụng thực tế định lí sin giải tam giác",
+        difficulty: "VD"
+      },
+      {
+        id: "t10-gk1-de4-q21",
+        type: "short_answer",
+        index: 21,
+        stem: "Cho hai tập hợp $A = [-4; 3)$ và $B = (-\\infty; 1]$. Khi đó tập hợp $A \\cap B$ có bao nhiêu phần tử là số nguyên?",
+        correctAnswer: "6",
+        acceptableAnswers: ["6", "sáu"],
+        explanation: "Ta có: $A \\cap B = [-4; 3) \\cap (-\\infty; 1] = [-4; 1]$.\nCác số nguyên thuộc đoạn $[-4; 1]$ là: $-4, -3, -2, -1, 0, 1$.\nVậy có tất cả 6 phần tử là số nguyên.",
+        topic: "Phép toán giao các tập hợp con của R",
+        difficulty: "TH"
+      },
+      {
+        id: "t10-gk1-de4-q22",
+        type: "short_answer",
+        index: 22,
+        stem: "Câu lạc bộ thể thao trường THPT Nguyễn Trãi có 30 học sinh yêu thích bóng đá, 25 học sinh yêu thích bóng bàn, 20 học sinh yêu thích cầu lông; 15 học sinh thích cả bóng đá và bóng bàn; 12 học sinh thích cả bóng bàn và cầu lông; 10 học sinh thích cả bóng đá và cầu lông; 5 học sinh thích cả ba môn. Gọi $m, n, p$ lần lượt là số học sinh chỉ thích đúng một môn thể thao bóng đá, bóng bàn, cầu lông. Tính giá trị của tổng $S = m + n + p$.",
+        correctAnswer: "16",
+        acceptableAnswers: ["16", "mười sáu"],
+        explanation: "Áp dụng biểu đồ Venn để xác định số học sinh cho từng phần riêng biệt:\n- Số học sinh chỉ thích đúng môn bóng đá là: $m = 30 - [(15 - 5) + (10 - 5) + 5] = 30 - (10 + 5 + 5) = 10$.\n- Số học sinh chỉ thích đúng môn bóng bàn là: $n = 25 - [(15 - 5) + (12 - 5) + 5] = 25 - (10 + 7 + 5) = 3$.\n- Số học sinh chỉ thích đúng môn cầu lông là: $p = 20 - [(10 - 5) + (12 - 5) + 5] = 20 - (5 + 7 + 5) = 3$.\nVậy tổng số học sinh chỉ thích một môn thể thao là: $S = m + n + p = 10 + 3 + 3 = 16$.",
+        topic: "Bài toán đếm và tập hợp trong thực tế",
+        difficulty: "VD"
+      }
+    ],
+  },
+
   "t10-ck1": {
     id: "t10-ck1",
     title: "Đề Thi Cuối Học Kỳ 1 - Toán 10 (KNTT)",

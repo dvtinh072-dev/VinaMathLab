@@ -3157,7 +3157,42 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         ],
         explanation: "(a) Đúng. Theo hình vẽ đề bài, đường thẳng $d$ cắt trục tung tại điểm $(0; 2)$.\n(b) Đúng. Miền nghiệm nằm ở nửa mặt phẳng bên phải trục tung, thỏa mãn $x \\ge 0$.\n(c) Sai. Điểm $M(1; -1)$ có tung độ $y = -1 < 0$ nằm ngoài miền nghiệm.\n(d) Đúng. Miền nghiệm là miền tam giác giới hạn bởi hai trục tọa độ và đường thẳng $d$.",
         topic: "Biểu diễn miền nghiệm của hệ bất phương trình",
-        difficulty: "TH"
+        difficulty: "TH",
+        svgDiagram: `<svg viewBox="0 0 320 280" class="w-full max-w-xs sm:max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="hatch_c14" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1.5" />
+    </pattern>
+    <marker id="arr_axis_c14" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Miền tam giác gạch chéo nghiệm OAB (tỉ lệ 1:1, OA = OB = 100px) -->
+  <polygon points="90,200 190,200 90,100" fill="url(#hatch_c14)" fill-opacity="0.8" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Trục tọa độ Ox, Oy (đơn vị trực chuẩn 1:1, mỗi đơn vị = 50px) -->
+  <line x1="30" y1="200" x2="265" y2="200" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_axis_c14)" />
+  <text x="268" y="204" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">x</text>
+
+  <line x1="90" y1="245" x2="90" y2="35" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr_axis_c14)" />
+  <text x="96" y="32" fill="#cbd5e1" font-size="14" font-style="italic" font-weight="bold">y</text>
+
+  <!-- Gốc tọa độ O -->
+  <text x="74" y="216" fill="#94a3b8" font-size="13" font-weight="bold">O</text>
+
+  <!-- Đường thẳng d đi qua (0; 2) và (2; 0) kéo dài -->
+  <line x1="45" y1="55" x2="235" y2="245" stroke="#f43f5e" stroke-width="2" />
+  <text x="240" y="250" fill="#f43f5e" font-size="14" font-style="italic" font-weight="bold">d</text>
+
+  <!-- Điểm và số 2 trên trục Oy -->
+  <circle cx="90" cy="100" r="3.5" fill="#f8fafc" />
+  <text x="74" y="105" fill="#f8fafc" font-size="13" font-weight="bold">2</text>
+
+  <!-- Điểm và số 2 trên trục Ox -->
+  <circle cx="190" cy="200" r="3.5" fill="#f8fafc" />
+  <text x="187" y="218" fill="#f8fafc" font-size="13" font-weight="bold">2</text>
+</svg>`
       },
       {
         id: "t10-gk1-de4-q15",
@@ -3231,7 +3266,39 @@ export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
         acceptableAnswers: ["55", "55m", "55 m"],
         explanation: "Trong tam giác $ABC$, số đo góc $\\widehat{ACB}$ là:\n$\\widehat{ACB} = 180^\\circ - (\\widehat{BAC} + \\widehat{ABC}) = 180^\\circ - (85^\\circ + 45^\\circ) = 50^\\circ$.\nÁp dụng định lí sin trong tam giác $ABC$, ta có:\n$\\frac{AC}{\\sin \\widehat{ABC}} = \\frac{AB}{\\sin \\widehat{ACB}} \\Rightarrow AC = \\frac{AB \\cdot \\sin 45^\\circ}{\\sin 50^\\circ} = \\frac{60 \\cdot \\sin 45^\\circ}{\\sin 50^\\circ} \\approx \\frac{42{,}4264}{0{,}7660} \\approx 55{,}38\\text{ m}$.\nLàm tròn kết quả đến hàng đơn vị ta được $AC \\approx 55\\text{ m}$.",
         topic: "Ứng dụng thực tế định lí sin giải tam giác",
-        difficulty: "VD"
+        difficulty: "VD",
+        svgDiagram: `<svg viewBox="0 0 380 230" class="w-full max-w-sm mx-auto my-3 select-none rounded-xl bg-slate-900/90 border border-slate-700/70 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr_dim_c20" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Tam giác ABC tô nền xanh tươi sáng -->
+  <polygon points="80,170 240,170 94,30" fill="#10b981" fill-opacity="0.25" stroke="#10b981" stroke-width="2.2" />
+
+  <!-- Cung góc BAC = 85 độ tại A(80, 170) -->
+  <path d="M 115 170 A 35 35 0 0 0 83 135" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <text x="96" y="156" fill="#f59e0b" font-size="12" font-weight="bold">85°</text>
+
+  <!-- Cung góc ABC = 45 độ tại B(240, 170) -->
+  <path d="M 205 170 A 35 35 0 0 1 215 145" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <text x="186" y="162" fill="#f59e0b" font-size="12" font-weight="bold">45°</text>
+
+  <!-- Các đỉnh A, B, C -->
+  <circle cx="80" cy="170" r="4.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+  <text x="64" y="176" fill="#38bdf8" font-size="14" font-weight="bold">A</text>
+
+  <circle cx="240" cy="170" r="4.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+  <text x="248" y="176" fill="#38bdf8" font-size="14" font-weight="bold">B</text>
+
+  <circle cx="94" cy="30" r="4.5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5" />
+  <text x="94" y="20" fill="#f43f5e" font-size="14" font-weight="bold" text-anchor="middle">C</text>
+
+  <!-- Kích thước bờ sông AB = 60 m -->
+  <line x1="80" y1="195" x2="240" y2="195" stroke="#94a3b8" stroke-width="1.4" marker-start="url(#arr_dim_c20)" marker-end="url(#arr_dim_c20)" />
+  <text x="160" y="212" fill="#cbd5e1" font-size="13" font-weight="bold" text-anchor="middle">60 m</text>
+</svg>`
       },
       {
         id: "t10-gk1-de4-q21",

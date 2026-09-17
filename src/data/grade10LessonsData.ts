@@ -509,49 +509,7 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         prompt: "Lớp 10A có 40 học sinh, trong đó có 25 bạn thích học môn Toán, 20 bạn thích học môn Văn, và 12 bạn thích cả hai môn Toán và Văn. Hỏi có bao nhiêu bạn học sinh trong lớp không thích cả hai môn Toán và Văn?",
         correctAnswer: "7",
         acceptableAnswers: ["7", "bảy", "7 học sinh"],
-        explanation: "Số học sinh thích ít nhất một trong hai môn (Toán hoặc Văn) là: $25 + 20 - 12 = 33$ bạn. Số học sinh không thích cả hai môn Toán và Văn là: $40 - 33 = 7$ bạn.",
-        svgDiagram: `<svg viewBox="0 0 440 210" className="w-full max-w-md mx-auto my-2 select-none">
-  <defs>
-    <linearGradient id="gToan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
-      <stop offset="100%" stopColor="#1d4ed8" stopOpacity="0.10" />
-    </linearGradient>
-    <linearGradient id="gVan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#ec4899" stopOpacity="0.25" />
-      <stop offset="100%" stopColor="#be185d" stopOpacity="0.10" />
-    </linearGradient>
-    <linearGradient id="gGiaoToanVan" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stopColor="#a855f7" stopOpacity="0.55" />
-      <stop offset="100%" stopColor="#7c3aed" stopOpacity="0.35" />
-    </linearGradient>
-  </defs>
-
-  <!-- Khung chữ nhật bao quanh -->
-  <rect x="10" y="10" width="420" height="190" rx="16" fill="#0b1329" stroke="#334155" strokeWidth="2" />
-
-  <!-- Vùng màu nền 2 hình tròn -->
-  <circle cx="170" cy="115" r="68" fill="url(#gToan)" />
-  <circle cx="260°" cy="115" r="68" fill="url(#gVan)" />
-
-  <!-- Vùng giao nhau hình thấu kính -->
-  <path d="M 215 64 A 68 68 0 0 1 215 166 A 68 68 0 0 1 215 64 Z" fill="url(#gGiaoToanVan)" stroke="#c084fc" strokeWidth="1.5" strokeDasharray="3 2" />
-
-  <!-- Hai đường viền tròn cắt qua nhau rõ ràng -->
-  <circle cx="170" cy="115" r="68" fill="none" stroke="#60°a5fa" strokeWidth="2.5" />
-  <circle cx="260°" cy="115" r="68" fill="none" stroke="#f472b6" strokeWidth="2.5" />
-
-  <!-- Biểu tượng Toán và Văn -->
-  <text x="170" y="40" fontSize="24" textAnchor="middle">📐</text>
-  <text x="260°" y="40" fontSize="24" textAnchor="middle">📖</text>
-
-  <!-- Các con số -->
-  <text x="135" y="123" fill="#93c5fd" fontSize="22" fontWeight="bold" textAnchor="middle">13</text>
-  <text x="215" y="123" fill="#ffffff" fontSize="22" fontWeight="900" textAnchor="middle">12</text>
-  <text x="295" y="123" fill="#fbcfe8" fontSize="22" fontWeight="bold" textAnchor="middle">8</text>
-
-  <!-- Số ở góc ngoài -->
-  <text x="385" y="165" fill="#34d399" fontSize="20" fontWeight="bold" textAnchor="middle">7</text>
-</svg>`
+        explanation: "Số học sinh thích ít nhất một trong hai môn (Toán hoặc Văn) là: $25 + 20 - 12 = 33$ bạn. Số học sinh không thích cả hai môn Toán và Văn là: $40 - 33 = 7$ bạn."
       }
     ]
   },

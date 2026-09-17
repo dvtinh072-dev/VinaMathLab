@@ -3302,5 +3302,436 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         ]
       }
     ]
+  },
+  "t9-b5-bat-dang-thuc": {
+    "id": "t9-b5-bat-dang-thuc",
+    "lessonNumber": 5,
+    "title": "Bài 5: Bất đẳng thức và tính chất",
+    "bookChapter": "Chương II: Phương trình và bất phương trình bậc nhất một ẩn",
+    "scenarioTitle": "Tình huống: Bập bênh thăng bằng và so sánh tải trọng xe",
+    "scenarioFrames": [],
+    "youtubeVideoId": "2W_k86M77tE",
+    "youtubeVideoTitle": "Bài Giảng Video: Bất Đẳng Thức và Tính Chất - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "2W_k86M77tE",
+        "title": "Tiết 1: Khái niệm bất đẳng thức và liên hệ với phép cộng"
+      },
+      {
+        "id": "q1k8xM_77tA",
+        "title": "Tiết 2: Liên hệ giữa thứ tự và phép nhân - Tính chất bắc cầu"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.5.1",
+        "title": "Ví dụ 1: Nhận biết bất đẳng thức",
+        "question": "Trong các hệ thức sau, hệ thức nào là bất đẳng thức?",
+        "options": [
+          "$2x - 3 < 5$",
+          "$2x - 3 = 5$",
+          "$x^2 + 2x + 1$",
+          "$3x - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ thức có chứa dấu $<, >, \\le, \\ge$ được gọi là bất đẳng thức. Do đó $2x - 3 < 5$ là một bất đẳng thức."
+      },
+      {
+        "id": "vq-9.5.2",
+        "title": "Ví dụ 2: Liên hệ giữa thứ tự và phép cộng",
+        "question": "Cho bất đẳng thức $a < b$. Khi cộng số $3$ vào cả hai vế, ta được bất đẳng thức nào?",
+        "options": [
+          "$a + 3 < b + 3$",
+          "$a + 3 > b + 3$",
+          "$a + 3 = b + 3$",
+          "$a - 3 < b + 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi cộng cùng một số vào cả hai vế của bất đẳng thức, ta được bất đẳng thức mới cùng chiều: $a + 3 < b + 3$."
+      },
+      {
+        "id": "vq-9.5.3",
+        "title": "Ví dụ 3: Nhân với số âm đổi chiều bất đẳng thức",
+        "question": "Cho bất đẳng thức $a < b$. Khi nhân cả hai vế với $-3$, ta được bất đẳng thức nào?",
+        "options": [
+          "$-3a > -3b$",
+          "$-3a < -3b$",
+          "$-3a = -3b$",
+          "$3a > 3b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi nhân cả hai vế của một bất đẳng thức với cùng một số âm, ta phải ĐỔI CHIỀU bất đẳng thức: $a < b \\Rightarrow -3a > -3b$."
+      },
+      {
+        "id": "vq-9.5.4",
+        "title": "Ví dụ 4: Tính chất bắc cầu",
+        "question": "Biết $x < y$ và $y < 10$. Kết luận nào sau đây đúng theo tính chất bắc cầu?",
+        "options": [
+          "$x < 10$",
+          "$x > 10$",
+          "$x = 10$",
+          "$x \\ge 10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo tính chất bắc cầu: nếu $x < y$ và $y < 10$ thì $x < 10$."
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Khái niệm bất đẳng thức",
+        "points": [
+          "Hệ thức dạng $a < b$ (hay $a > b, a \\le b, a \\ge b$) được gọi là bất đẳng thức.",
+          "Trong đó: $a$ gọi là vế trái, $b$ gọi là vế phải của bất đẳng thức.",
+          "Bất đẳng thức ngặt: chứa dấu $<$ hoặc $>$.",
+          "Bất đẳng thức không ngặt: chứa dấu $\\le$ (nhỏ hơn hoặc bằng, không vượt quá) hoặc $\\ge$ (lớn hơn hoặc bằng, tối thiểu, không ít hơn)."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 9 KNTT Trang 27)",
+        "exampleProblem": "Dùng dấu bất đẳng thức để viết các khẳng định sau:\n  a) $x$ là số không âm.\n  b) Tốc độ $v\\text{ (km/h)}$ của xe máy không vượt quá $40\\text{ km/h}$.",
+        "exampleSolution": "• Câu a: Số không âm là số lớn hơn hoặc bằng 0, viết là: $x \\ge 0$.\n• Câu b: Tốc độ không vượt quá $40\\text{ km/h}$, viết là: $v \\le 40$."
+      },
+      {
+        "index": "2",
+        "title": "Liên hệ giữa thứ tự và phép cộng",
+        "points": [
+          "Tính chất: Khi cộng cùng một số vào cả hai vế của một bất đẳng thức, ta được bất đẳng thức mới cùng chiều với bất đẳng thức đã cho.",
+          "Tổng quát:\n  $a < b \\Rightarrow a + c < b + c$\n  $a \\le b \\Rightarrow a + c \\le b + c$\n  $a > b \\Rightarrow a + c > b + c$\n  $a \\ge b \\Rightarrow a + c \\ge b + c$"
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 9 KNTT Trang 28)",
+        "exampleProblem": "Cho $a < b$. Hãy so sánh:\n  a) $a + 4$ và $b + 4$\n  b) $a - 5$ và $b - 5$.",
+        "exampleSolution": "• Câu a: Cộng số 4 vào hai vế của $a < b$ ta được: $a + 4 < b + 4$.\n• Câu b: Trừ số 5 (tức là cộng số $-5$) vào hai vế của $a < b$ ta được: $a - 5 < b - 5$."
+      },
+      {
+        "index": "3",
+        "title": "Liên hệ giữa thứ tự và phép nhân - Tính chất bắc cầu",
+        "points": [
+          "Nhân với số DƯƠNG ($c > 0$): CÙNG CHIỀU\n  $a < b \\Rightarrow ac < bc$",
+          "Nhân với số ÂM ($c < 0$): ĐỔI CHIỀU (NGƯỢC CHIỀU)\n  $a < b \\Rightarrow ac > bc$",
+          "Tính chất bắc cầu:\n  Nếu $a < b$ và $b < c$ thì $a < c$."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 9 KNTT Trang 28)",
+        "exampleProblem": "Cho $a < b$. Hãy so sánh:\n  a) $3a$ và $3b$\n  b) $-2a$ và $-2b$\n  c) $2a + 1$ và $2b + 1$.",
+        "exampleSolution": "• Câu a: Vì $3 > 0$ nên nhân 3 vào hai vế của $a < b$ ta được: $3a < 3b$.\n• Câu b: Vì $-2 < 0$ nên nhân $-2$ vào hai vế của $a < b$ ta phải đổi chiều: $-2a > -2b$.\n• Câu c: Vì $2 > 0$ nên $2a < 2b$. Cộng thêm 1 vào hai vế ta được: $2a + 1 < 2b + 1$."
+      }
+    ],
+    "tips": [
+      "Quy tắc vàng: Chỉ có khi nhân hoặc chia với SỐ ÂM thì bất đẳng thức mới ĐỔI CHIỀU.",
+      "Cộng hoặc trừ với bất kỳ số nào (dương hay âm) thì bất đẳng thức luôn GIỮ NGUYÊN CHIỀU.",
+      "Cụm từ thực tế:\n  • 'không vượt quá', 'nhiều nhất', 'tối đa' tương ứng với dấu $\\le$.\n  • 'không ít hơn', 'ít nhất', 'tối thiểu' tương ứng với dấu $\\ge$."
+    ],
+    "traps": [
+      "Bẫy quên đổi chiều khi nhân hoặc chia cho số âm: Ví dụ $a < b \\Rightarrow -3a > -3b$, nhiều bạn hay viết sai thành $-3a < -3b$.",
+      "Bẫy nhầm lẫn khi trừ: Phép trừ hai vế cho một số $c$ thực chất là cộng với số $-c$ nên chiều bất đẳng thức KHÔNG đổi: $a < b \\Rightarrow a - c < b - c$."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-9.5.1",
+        "badge": "Câu 1 - Nhận biết bất đẳng thức",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.1 (Trang 28)",
+        "question": "Trong các hệ thức sau, hệ thức nào là một bất đẳng thức?",
+        "options": [
+          "$3x - 1 < 5$",
+          "$3x - 1 = 5$",
+          "$2x + 3y$",
+          "$x^2 - 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ thức có dạng $A < B$ (hoặc $>, \\le, \\ge$) được gọi là bất đẳng thức. Ở đây $3x - 1 < 5$ là bất đẳng thức."
+      },
+      {
+        "id": "quiz-9.5.2",
+        "badge": "Câu 2 - Viết khẳng định dưới dạng bất đẳng thức",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 25)",
+        "question": "Khẳng định 'Số $m$ lớn hơn hoặc bằng $-2$' được viết dưới dạng bất đẳng thức là:",
+        "options": [
+          "$m \\ge -2$",
+          "$m > -2$",
+          "$m \\le -2$",
+          "$m < -2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Lớn hơn hoặc bằng' tương ứng với ký hiệu $\\ge$. Do đó khẳng định viết là $m \\ge -2$."
+      },
+      {
+        "id": "quiz-9.5.3",
+        "badge": "Câu 3 - Xác định vế trái và vế phải",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 28)",
+        "question": "Vế trái và vế phải của bất đẳng thức $2a + 3 \\le 7$ lần lượt là:",
+        "options": [
+          "$2a + 3$ và $7$",
+          "$7$ và $2a + 3$",
+          "$2a$ và $7$",
+          "$3$ và $7$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vế bên trái dấu bất đẳng thức là $2a + 3$, vế bên phải dấu bất đẳng thức là $7$."
+      },
+      {
+        "id": "quiz-9.5.4",
+        "badge": "Câu 4 - Tính chất cộng cùng một số",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.2 (Trang 28)",
+        "question": "Cho $a < b$. Khẳng định nào sau đây là đúng?",
+        "options": [
+          "$a + 5 < b + 5$",
+          "$a + 5 > b + 5$",
+          "$a + 5 = b + 5$",
+          "$a - 5 > b - 5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi cộng cùng một số vào hai vế của bất đẳng thức thì chiều của bất đẳng thức không đổi: $a + 5 < b + 5$."
+      },
+      {
+        "id": "quiz-9.5.5",
+        "badge": "Câu 5 - Nhân cả hai vế với số dương",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "question": "Cho $a < b$. Khẳng định nào sau đây đúng khi nhân cả hai vế với số dương $3$?",
+        "options": [
+          "$3a < 3b$",
+          "$3a > 3b$",
+          "$3a = 3b$",
+          "$3a \\le 3b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $3 > 0$ nên khi nhân cả hai vế của bất đẳng thức với $3$, chiều bất đẳng thức giữ nguyên: $3a < 3b$."
+      },
+      {
+        "id": "quiz-9.5.6",
+        "badge": "Câu 6 - Nhân cả hai vế với số âm",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 29)",
+        "question": "Cho $a < b$. Khi nhân cả hai vế với $-2$, bất đẳng thức nào sau đây đúng?",
+        "options": [
+          "$-2a > -2b$",
+          "$-2a < -2b$",
+          "$-2a = -2b$",
+          "$2a > 2b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $-2 < 0$ nên khi nhân cả hai vế của bất đẳng thức với $-2$, ta phải đổi chiều: $-2a > -2b$."
+      },
+      {
+        "id": "quiz-9.5.7",
+        "badge": "Câu 7 - Nhận biết khẳng định sai khi nhân số âm",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.3 (Trang 29)",
+        "question": "Cho $a > b$. Khẳng định nào sau đây là SAI?",
+        "options": [
+          "$-3a > -3b$",
+          "$a + 2 > b + 2$",
+          "$a - 1 > b - 1$",
+          "$4a > 4b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $-3 < 0$ nên khi nhân với $-3$ phải đổi chiều: $-3a < -3b$. Do đó khẳng định $-3a > -3b$ là SAI."
+      },
+      {
+        "id": "quiz-9.5.8",
+        "badge": "Câu 8 - Suy luận từ phép cộng",
+        "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 26)",
+        "question": "Biết $a + 2 < b + 2$. Kết luận nào sau đây đúng khi so sánh $a$ và $b$?",
+        "options": [
+          "$a < b$",
+          "$a > b$",
+          "$a = b$",
+          "$a \\le b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trừ cả hai vế cho 2: $(a + 2) - 2 < (b + 2) - 2 \\Leftrightarrow a < b$."
+      },
+      {
+        "id": "quiz-9.5.9",
+        "badge": "Câu 9 - Phối hợp phép nhân và phép cộng",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 29)",
+        "question": "Cho $m < n$. So sánh hai biểu thức $2m + 1$ và $2n + 1$:",
+        "options": [
+          "$2m + 1 < 2n + 1$",
+          "$2m + 1 > 2n + 1$",
+          "$2m + 1 = 2n + 1$",
+          "$2m + 1 \\ge 2n + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $2 > 0$ nên $m < n \\Rightarrow 2m < 2n$. Cộng 1 vào cả hai vế: $2m + 1 < 2n + 1$."
+      },
+      {
+        "id": "quiz-9.5.10",
+        "badge": "Câu 10 - Phối hợp nhân số âm và phép cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.4 (Trang 29)",
+        "question": "Cho $x < y$. So sánh hai biểu thức $-4x + 3$ và $-4y + 3$:",
+        "options": [
+          "$-4x + 3 > -4y + 3$",
+          "$-4x + 3 < -4y + 3$",
+          "$-4x + 3 = -4y + 3$",
+          "$-4x + 3 \\le -4y + 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $-4 < 0$ nên $x < y \\Rightarrow -4x > -4y$. Cộng 3 vào cả hai vế: $-4x + 3 > -4y + 3$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-9.5.1",
+        "badge": "Đúng/Sai 1 - Tính chất cơ bản của phép cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.2 (Trang 28)",
+        "prompt": "Cho bất đẳng thức $a < b$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$a + 7 < b + 7$.",
+            "correctAnswer": true,
+            "explanation": "Cộng cùng số 7 vào hai vế giữ nguyên chiều bất đẳng thức."
+          },
+          {
+            "id": "b",
+            "text": "$a - 3 < b - 3$.",
+            "correctAnswer": true,
+            "explanation": "Trừ cùng số 3 vào hai vế giữ nguyên chiều bất đẳng thức."
+          },
+          {
+            "id": "c",
+            "text": "$a + c > b + c$ với mọi số thực $c$.",
+            "correctAnswer": false,
+            "explanation": "Khẳng định này sai vì phải cùng chiều: $a + c < b + c$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu $a + 2 < b + 2$ thì $a < b$.",
+            "correctAnswer": true,
+            "explanation": "Trừ 2 ở cả hai vế ta được $a < b$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.5.2",
+        "badge": "Đúng/Sai 2 - Tính chất của phép nhân",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "prompt": "Cho bất đẳng thức $m > n$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$5m > 5n$.",
+            "correctAnswer": true,
+            "explanation": "Nhân với số dương 5 giữ nguyên chiều."
+          },
+          {
+            "id": "b",
+            "text": "$-2m > -2n$.",
+            "correctAnswer": false,
+            "explanation": "Nhân với số âm $-2$ phải đổi chiều: $-2m < -2n$."
+          },
+          {
+            "id": "c",
+            "text": "$-m < -n$.",
+            "correctAnswer": true,
+            "explanation": "Nhân với $-1$ thì đổi chiều: $-m < -n$."
+          },
+          {
+            "id": "d",
+            "text": "$\frac{m}{3} > \frac{n}{3}$.",
+            "correctAnswer": true,
+            "explanation": "Chia cho số dương 3 (tức nhân $\\frac{1}{3} > 0$) giữ nguyên chiều."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.5.3",
+        "badge": "Đúng/Sai 3 - Phối hợp các phép toán",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 29)",
+        "prompt": "Cho $x < y$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$3x + 2 < 3y + 2$.",
+            "correctAnswer": true,
+            "explanation": "Vì $3 > 0$ nên $3x < 3y \\Rightarrow 3x + 2 < 3y + 2$."
+          },
+          {
+            "id": "b",
+            "text": "$-5x + 1 > -5y + 1$.",
+            "correctAnswer": true,
+            "explanation": "Vì $-5 < 0$ nên $-5x > -5y \\Rightarrow -5x + 1 > -5y + 1$."
+          },
+          {
+            "id": "c",
+            "text": "$2x - 4 > 2y - 4$.",
+            "correctAnswer": false,
+            "explanation": "$2 > 0$ nên $2x - 4 < 2y - 4$, khẳng định viết ngược chiều là sai."
+          },
+          {
+            "id": "d",
+            "text": "$-x - 3 < -y - 3$.",
+            "correctAnswer": false,
+            "explanation": "Nhân với $-1$ phải đổi chiều: $-x > -y \\Rightarrow -x - 3 > -y - 3$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.5.4",
+        "badge": "Đúng/Sai 4 - Diễn đạt thực tế và tính chất bắc cầu",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.1 (Trang 28)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khẳng định 'Khối lượng $m$ của một vật không quá $50\\text{ kg}$' được viết là $m \\le 50$.",
+            "correctAnswer": true,
+            "explanation": "'Không quá' có nghĩa là nhỏ hơn hoặc bằng ($\\le$)."
+          },
+          {
+            "id": "b",
+            "text": "Khẳng định 'Số người $N$ ít nhất là 20 người' được viết là $N \\ge 20$.",
+            "correctAnswer": true,
+            "explanation": "'Ít nhất' có nghĩa là lớn hơn hoặc bằng ($\\ge$)."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $a < b$ và $b < 3$ thì $a < 3$.",
+            "correctAnswer": true,
+            "explanation": "Theo tính chất bắc cầu của bất đẳng thức."
+          },
+          {
+            "id": "d",
+            "text": "Nếu $x > y$ và $y > z$ thì $x < z$.",
+            "correctAnswer": false,
+            "explanation": "Theo tính chất bắc cầu: nếu $x > y$ và $y > z$ thì $x > z$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-9.5.1",
+        "badge": "Trả lời ngắn 1 - So sánh giá trị sau khi cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.2 (Trang 28)",
+        "prompt": "Cho $a < b$. Khi cộng số $8$ vào cả hai vế, giữa hai biểu thức $a + 8$ và $b + 8$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": "<",
+        "acceptableAnswers": ["<", "dấu <", "nho hon"],
+        "explanation": "Vì $a < b$ nên khi cộng cùng số 8 vào hai vế ta được $a + 8 < b + 8$."
+      },
+      {
+        "id": "sa-9.5.2",
+        "badge": "Trả lời ngắn 2 - So sánh giá trị sau khi nhân số âm",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "prompt": "Cho $x > y$. Khi nhân cả hai vế với $-5$, giữa hai biểu thức $-5x$ và $-5y$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": "<",
+        "acceptableAnswers": ["<", "dấu <", "nho hon"],
+        "explanation": "Vì $-5 < 0$ nên khi nhân cả hai vế với $-5$ bất đẳng thức đổi chiều: $-5x < -5y$."
+      },
+      {
+        "id": "sa-9.5.3",
+        "badge": "Trả lời ngắn 3 - So sánh hai số ban đầu",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 29)",
+        "prompt": "Biết rằng $2a - 5 < 2b - 5$. Giữa $a$ và $b$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": "<",
+        "acceptableAnswers": ["<", "dấu <", "nho hon"],
+        "explanation": "Cộng 5 vào hai vế được $2a < 2b$. Chia hai vế cho số dương 2 được $a < b$."
+      },
+      {
+        "id": "sa-9.5.4",
+        "badge": "Trả lời ngắn 4 - So sánh khi nhân số âm và cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.4 (Trang 29)",
+        "prompt": "Biết $-3m > -3n$. Giữa hai biểu thức $m$ và $n$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": "<",
+        "acceptableAnswers": ["<", "dấu <", "nho hon"],
+        "explanation": "Chia cả hai vế cho số âm $-3$ thì bất đẳng thức đổi chiều: $m < n$."
+      }
+    ]
   }
 };

@@ -1764,5 +1764,327 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
         "explanation": "Vận tốc xuôi: $36 : 1,5 = 24\\text{ (km/h)}$. Vận tốc thực: $24 - 3 = 21\\text{ (km/h)}$."
       }
     ]
+  },
+  "t9-b5-bat-dang-thuc": {
+    "quizQuestions": [
+      {
+        "id": "ai-9.5.1",
+        "badge": "Luyện thêm 1 - Viết bất đẳng thức từ thực tế",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.1 (Trang 28)",
+        "question": "Khẳng định 'Nhiệt độ $t$ của cơ thể không vượt quá $37,5^\\circ\\text{C}$' được viết dưới dạng bất đẳng thức là:",
+        "options": [
+          "$t \\le 37,5$",
+          "$t < 37,5$",
+          "$t \\ge 37,5$",
+          "$t > 37,5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Không vượt quá' có nghĩa là nhỏ hơn hoặc bằng, do đó ta viết là $t \\le 37,5$."
+      },
+      {
+        "id": "ai-9.5.2",
+        "badge": "Luyện thêm 2 - Cộng với số âm",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "question": "Cho $x > y$. Bất đẳng thức nào sau đây đúng khi trừ cả hai vế cho $4$?",
+        "options": [
+          "$x - 4 > y - 4$",
+          "$x - 4 < y - 4$",
+          "$x - 4 = y - 4$",
+          "$x - 4 \\le y - 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi trừ cả hai vế cho cùng một số (hoặc cộng với $-4$), chiều bất đẳng thức giữ nguyên: $x - 4 > y - 4$."
+      },
+      {
+        "id": "ai-9.5.3",
+        "badge": "Luyện thêm 3 - Nhân với số dương",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 29)",
+        "question": "Cho $a \\le b$. Bất đẳng thức nào sau đây đúng khi nhân cả hai vế với số dương $5$?",
+        "options": [
+          "$5a \\le 5b$",
+          "$5a \\ge 5b$",
+          "$5a < 5b$",
+          "$5a > 5b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $5 > 0$ nên khi nhân cả hai vế với $5$, chiều bất đẳng thức không đổi: $5a \\le 5b$."
+      },
+      {
+        "id": "ai-9.5.4",
+        "badge": "Luyện thêm 4 - Nhân với số âm đổi chiều",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.3 (Trang 29)",
+        "question": "Cho $m \\ge n$. Khi nhân cả hai vế với số âm $-3$, ta thu được bất đẳng thức nào?",
+        "options": [
+          "$-3m \\le -3n$",
+          "$-3m \\ge -3n$",
+          "$-3m < -3n$",
+          "$-3m > -3n$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $-3 < 0$ nên khi nhân cả hai vế với $-3$, ta phải đổi chiều: $-3m \\le -3n$."
+      },
+      {
+        "id": "ai-9.5.5",
+        "badge": "Luyện thêm 5 - Tính chất bắc cầu cơ bản",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 26)",
+        "question": "Cho $a < b$ và $b < 5$. Theo tính chất bắc cầu, kết luận nào sau đây đúng?",
+        "options": [
+          "$a < 5$",
+          "$a > 5$",
+          "$a = 5$",
+          "$a \\ge 5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo tính chất bắc cầu: $a < b$ và $b < 5 \\Rightarrow a < 5$."
+      },
+      {
+        "id": "ai-9.5.6",
+        "badge": "Luyện thêm 6 - Suy luận từ phép trừ",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 29)",
+        "question": "Biết rằng $m - 7 > n - 7$. Khi so sánh $m$ và $n$, kết luận nào đúng?",
+        "options": [
+          "$m > n$",
+          "$m < n$",
+          "$m = n$",
+          "$m \\le n$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cộng cả hai vế với $7$: $(m - 7) + 7 > (n - 7) + 7 \\Leftrightarrow m > n$."
+      },
+      {
+        "id": "ai-9.5.7",
+        "badge": "Luyện thêm 7 - Suy luận từ phép nhân số âm",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.3 (Trang 29)",
+        "question": "Biết $-3x < -3y$. Khi so sánh $x$ và $y$, kết luận nào sau đây đúng?",
+        "options": [
+          "$x > y$",
+          "$x < y$",
+          "$x = y$",
+          "$x \\le y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chia cả hai vế cho số âm $-3$, ta phải đổi chiều bất đẳng thức: $x > y$."
+      },
+      {
+        "id": "ai-9.5.8",
+        "badge": "Luyện thêm 8 - Phối hợp nhân số dương và cộng",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 26)",
+        "question": "Cho $a < b$. Hãy so sánh hai biểu thức $3a - 5$ và $3b - 5$:",
+        "options": [
+          "$3a - 5 < 3b - 5$",
+          "$3a - 5 > 3b - 5$",
+          "$3a - 5 = 3b - 5$",
+          "$3a - 5 \\ge 3b - 5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $3 > 0$ nên $a < b \\Rightarrow 3a < 3b$. Trừ 5 ở cả hai vế: $3a - 5 < 3b - 5$."
+      },
+      {
+        "id": "ai-9.5.9",
+        "badge": "Luyện thêm 9 - Phối hợp nhân số âm và cộng",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 29)",
+        "question": "Cho $x > y$. Hãy so sánh hai biểu thức $-2x + 7$ và $-2y + 7$:",
+        "options": [
+          "$-2x + 7 < -2y + 7$",
+          "$-2x + 7 > -2y + 7$",
+          "$-2x + 7 = -2y + 7$",
+          "$-2x + 7 \\ge -2y + 7$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $-2 < 0$ nên $x > y \\Rightarrow -2x < -2y$. Cộng 7 ở cả hai vế: $-2x + 7 < -2y + 7$."
+      },
+      {
+        "id": "ai-9.5.10",
+        "badge": "Luyện thêm 10 - Suy luận ngược hai bước",
+        "isAiGenerated": true,
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.4 (Trang 29)",
+        "question": "Biết $2a + 3 \\le 2b + 3$. Kết luận nào sau đây đúng khi so sánh $a$ và $b$?",
+        "options": [
+          "$a \\le b$",
+          "$a \\ge b$",
+          "$a < b$",
+          "$a > b$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trừ 3 ở cả hai vế: $2a \\le 2b$. Chia cả hai vế cho $2 > 0$: $a \\le b$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-9.5.1",
+        "badge": "Luyện thêm Đ/S 1 - Tính chất phép cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.2 (Trang 28)",
+        "prompt": "Cho $x > y$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$x + 10 > y + 10$.",
+            "correctAnswer": true,
+            "explanation": "Cộng 10 vào hai vế giữ nguyên chiều bất đẳng thức."
+          },
+          {
+            "id": "b",
+            "text": "$x - 8 > y - 8$.",
+            "correctAnswer": true,
+            "explanation": "Trừ 8 vào hai vế giữ nguyên chiều bất đẳng thức."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $x + 5 > y + 5$ thì $x > y$.",
+            "correctAnswer": true,
+            "explanation": "Trừ 5 ở cả hai vế ta được $x > y$."
+          },
+          {
+            "id": "d",
+            "text": "$x - 2 < y - 2$.",
+            "correctAnswer": false,
+            "explanation": "Trừ 2 thì chiều giữ nguyên $x - 2 > y - 2$, viết ngược lại là sai."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-9.5.2",
+        "badge": "Luyện thêm Đ/S 2 - Tính chất phép nhân",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "prompt": "Cho $a < b$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$4a < 4b$.",
+            "correctAnswer": true,
+            "explanation": "Nhân với $4 > 0$ giữ nguyên chiều."
+          },
+          {
+            "id": "b",
+            "text": "$-5a > -5b$.",
+            "correctAnswer": true,
+            "explanation": "Nhân với $-5 < 0$ đổi chiều bất đẳng thức."
+          },
+          {
+            "id": "c",
+            "text": "$-a < -b$.",
+            "correctAnswer": false,
+            "explanation": "Nhân với $-1$ phải đổi chiều: $-a > -b$."
+          },
+          {
+            "id": "d",
+            "text": "$\frac{a}{2} < \frac{b}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Chia cho số dương 2 giữ nguyên chiều."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-9.5.3",
+        "badge": "Luyện thêm Đ/S 3 - Phối hợp nhân và cộng",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 29)",
+        "prompt": "Cho $u \\le v$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$2u + 5 \\le 2v + 5$.",
+            "correctAnswer": true,
+            "explanation": "Nhân $2 > 0$ rồi cộng 5 giữ nguyên chiều $\\le$."
+          },
+          {
+            "id": "b",
+            "text": "$-3u + 1 \\ge -3v + 1$.",
+            "correctAnswer": true,
+            "explanation": "Nhân $-3 < 0$ đổi chiều thành $\\ge$, rồi cộng 1."
+          },
+          {
+            "id": "c",
+            "text": "$5u - 2 \\ge 5v - 2$.",
+            "correctAnswer": false,
+            "explanation": "Phải là $5u - 2 \\le 5v - 2$."
+          },
+          {
+            "id": "d",
+            "text": "$-u - 4 \\ge -v - 4$.",
+            "correctAnswer": true,
+            "explanation": "Nhân $-1$ đổi chiều thành $\\ge$, rồi trừ 4."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-9.5.4",
+        "badge": "Luyện thêm Đ/S 4 - Ý nghĩa thực tế và bắc cầu",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.1 (Trang 28)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khẳng định 'Tuổi $T$ của học sinh ít nhất là 15 tuổi' được viết là $T \\ge 15$.",
+            "correctAnswer": true,
+            "explanation": "'Ít nhất' tương ứng với $\\ge$."
+          },
+          {
+            "id": "b",
+            "text": "Khẳng định 'Số tiền $S$ không quá 100 nghìn đồng' được viết là $S \\le 100$.",
+            "correctAnswer": true,
+            "explanation": "'Không quá' tương ứng với $\\le$."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $x > y$ và $y > 4$ thì $x > 4$.",
+            "correctAnswer": true,
+            "explanation": "Theo tính chất bắc cầu."
+          },
+          {
+            "id": "d",
+            "text": "Nếu $m < n$ và $n < k$ thì $m > k$.",
+            "correctAnswer": false,
+            "explanation": "Theo tính chất bắc cầu thì $m < k$ (không phải $m > k$)."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-9.5.1",
+        "badge": "Luyện thêm TLN 1 - Điền dấu sau khi cộng",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.2 (Trang 28)",
+        "prompt": "Cho $x > y$. Giữa hai biểu thức $x + 12$ và $y + 12$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": ">",
+        "acceptableAnswers": [">", "dấu >", "lon hon"],
+        "explanation": "Vì $x > y$ nên khi cộng cùng số 12 ta được $x + 12 > y + 12$."
+      },
+      {
+        "id": "ai-sa-9.5.2",
+        "badge": "Luyện thêm TLN 2 - Điền dấu sau khi nhân số âm",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 26)",
+        "prompt": "Cho $a < b$. Giữa hai biểu thức $-4a$ và $-4b$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": ">",
+        "acceptableAnswers": [">", "dấu >", "lon hon"],
+        "explanation": "Nhân cả hai vế với số âm $-4$ thì đổi chiều: $-4a > -4b$."
+      },
+      {
+        "id": "ai-sa-9.5.3",
+        "badge": "Luyện thêm TLN 3 - So sánh hai số ban đầu",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 29)",
+        "prompt": "Biết $3m + 7 > 3n + 7$. Giữa hai số $m$ và $n$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": ">",
+        "acceptableAnswers": [">", "dấu >", "lon hon"],
+        "explanation": "Trừ 7 ở hai vế: $3m > 3n$. Chia cho $3 > 0$: $m > n$."
+      },
+      {
+        "id": "ai-sa-9.5.4",
+        "badge": "Luyện thêm TLN 4 - Điền dấu sau khi chia số âm",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.4 (Trang 29)",
+        "prompt": "Biết $-2x < -2y$. Giữa hai số $x$ và $y$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": ">",
+        "acceptableAnswers": [">", "dấu >", "lon hon"],
+        "explanation": "Chia cả hai vế cho số âm $-2$ thì đổi chiều: $x > y$."
+      }
+    ]
   }
 };

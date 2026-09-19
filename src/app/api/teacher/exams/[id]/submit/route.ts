@@ -31,6 +31,7 @@ export async function POST(request: Request, { params }: Props) {
       mcAnswers,
       tfAnswers,
       saAnswers,
+      essayFiles,
     } = body;
 
     if (!studentName || !studentClass) {
@@ -59,6 +60,7 @@ export async function POST(request: Request, { params }: Props) {
       mcAnswers: mcAnswers || {},
       tfAnswers: tfAnswers || {},
       saAnswers: saAnswers || {},
+      essayFiles: Array.isArray(essayFiles) ? essayFiles : [],
     };
 
     saveExamSubmission(submission);

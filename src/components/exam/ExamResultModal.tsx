@@ -1,19 +1,31 @@
 "use client";
 
 import React from "react";
-import { Award, CheckCircle2, RotateCcw, X } from "lucide-react";
+import { Award, CheckCircle2, RotateCcw, X, FileCheck, Eye } from "lucide-react";
 import { ExamData } from "./ExamEngine";
+import { EssayAttachment } from "@/types/customExam";
 
 interface Props {
   exam: ExamData;
   mcAnswers: { [id: string]: "A" | "B" | "C" | "D" };
   tfAnswers: { [id: string]: { [key in "a" | "b" | "c" | "d"]?: boolean } };
   saAnswers: { [id: string]: string };
+  essayFiles?: EssayAttachment[];
   onClose: () => void;
   onRestart: () => void;
+  onOpenEssay?: () => void;
 }
 
-export function ExamResultModal({ exam, mcAnswers, tfAnswers, saAnswers, onClose, onRestart }: Props) {
+export function ExamResultModal({
+  exam,
+  mcAnswers,
+  tfAnswers,
+  saAnswers,
+  essayFiles = [],
+  onClose,
+  onRestart,
+  onOpenEssay,
+}: Props) {
   let scorePart1 = 0;
   let correctPart1 = 0;
   let scorePart2 = 0;
@@ -72,14 +84,14 @@ export function ExamResultModal({ exam, mcAnswers, tfAnswers, saAnswers, onClose
         {/* Score Badge */}
         <div className="p-5 rounded-2xl bg-[#0B1120] border border-cyan-500/40 text-center space-y-1 shadow-inner">
           <div className="text-xs uppercase tracking-wider font-bold text-cyan-400">
-            Tổng điểm đạt được (Thang 10)
+            Tổng điểm trắc nghiệm (Thang 10)
           </div>
           <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
             <span className="text-cyan-400">{totalScore}</span> <span className="text-xl font-bold text-slate-500">/ 10.0</span>
           </div>
         </div>
 
-        {/* Breakdown by 3 MOET Formats */}
+        {/* Breakdown by MOET Formats */}
         <div className="space-y-2 text-xs">
           <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
             <span className="font-medium">Phần I (Trắc nghiệm 4 lựa chọn):</span>
@@ -93,6 +105,34 @@ export function ExamResultModal({ exam, mcAnswers, tfAnswers, saAnswers, onClose
             <span className="font-medium">Phần III (Trả lời ngắn / Điền số):</span>
             <strong className="text-amber-400 font-bold">{scorePart3.toFixed(2)} đ ({correctPart3} câu đúng)</strong>
           </div>
+
+          {essayFiles && essayFiles.length > 0 ? (
+            <div className="p-3.5 rounded-xl bg-indigo-950/40 border border-indigo-500/40 flex justify-between items-center text-slate-200">
+              <div className="flex items-center gap-2">
+                <FileCheck className="w-4 h-4 text-indigo-400" />
+                <span className="font-medium">Phần Tự luận (Đã nộp):</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-bold">{essayFiles.length} trang</span>
+                {onOpenEssay && (
+                  <button
+                    onClick={() => {
+                      onClose();
+                      onOpenEssay();
+                    }}
+                    className="px-2 py-1 bg-indigo-600/80 hover:bg-indigo-600 text-white rounded-lg text-[11px] font-semibold transition-colors flex items-center gap-1"
+                  >
+                    <Eye className="w-3 h-3" /> Xem bài
+                  </button>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex justify-between items-center text-slate-400 text-[11px]">
+              <span>Phần Tự luận:</span>
+              <span>Chưa đính kèm bài làm</span>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">

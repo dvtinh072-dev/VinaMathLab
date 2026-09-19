@@ -74,6 +74,7 @@ import { PREBUILT_EXAM_MATRICES } from "@/data/prebuiltMatrices";
 import { parseMatrixFromRawText } from "@/lib/matrixExamGenerator";
 import { ExamPreviewModal } from "@/components/exam/ExamPreviewModal";
 import { QuestionBankViewerModal } from "@/components/exam/QuestionBankViewerModal";
+import EssaySubmissionUploader from "@/components/exam/EssaySubmissionUploader";
 import { exportExamToWord } from "@/lib/exportExamWord";
 
 export default function GiaoVienPage() {
@@ -3368,6 +3369,7 @@ Câu 3: Tìm x...
                         <th className="p-3">Họ và Tên Học Sinh</th>
                         <th className="p-3">Lớp</th>
                         <th className="p-3 text-center">Điểm (Thang 10)</th>
+                        <th className="p-3 text-center">Tự Luận</th>
                         <th className="p-3 text-center">Thời Gian Làm</th>
                         <th className="p-3 text-center">
                           <span className="text-rose-400">Thoát Màn Hình</span>
@@ -3379,7 +3381,7 @@ Câu 3: Tìm x...
                     <tbody className="divide-y divide-slate-800/60 text-slate-300">
                       {examSubmissionsList.length === 0 ? (
                         <tr>
-                          <td colSpan={8} className="p-8 text-center text-slate-500">
+                          <td colSpan={9} className="p-8 text-center text-slate-500">
                             Chưa có học sinh nào nộp bài cho đề thi này. Hãy sao chép link và gửi cho học sinh!
                           </td>
                         </tr>
@@ -3400,6 +3402,17 @@ Câu 3: Tìm x...
                               <span className="px-2.5 py-1 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-black text-sm">
                                 {sub.score.toFixed(2)}
                               </span>
+                            </td>
+                            <td className="p-3 text-center">
+                              {sub.essayFiles && sub.essayFiles.length > 0 ? (
+                                <span className="px-2 py-0.5 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-[11px] font-bold">
+                                  📄 {sub.essayFiles.length} trang
+                                </span>
+                              ) : (
+                                <span className="text-[11px] text-slate-500">
+                                  —
+                                </span>
+                              )}
                             </td>
                             <td className="p-3 text-center text-slate-400 font-mono">
                               {Math.floor(sub.timeSpentSeconds / 60)}p {sub.timeSpentSeconds % 60}s
@@ -3453,16 +3466,17 @@ Câu 3: Tìm x...
       {/* ========================================================================= */}
       {selectedSubmissionDetail && selectedExamForSubmissions && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md animate-in fade-in">
-          <div className="w-full max-w-2xl rounded-3xl bg-[#0e1526] border-2 border-cyan-500/40 p-6 space-y-5 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto text-white">
+          <div className="w-full max-w-3xl rounded-3xl bg-[#0e1526] border-2 border-cyan-500/40 p-6 space-y-5 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto text-white">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800">
               <div>
-                <h4 className="text-base font-black text-white">
+                <h4 className="text-base sm:text-lg font-black text-white">
                   Bài Làm: {selectedSubmissionDetail.studentName}
                 </h4>
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-slate-400 mt-0.5">
                   Lớp: <strong className="text-cyan-400">{selectedSubmissionDetail.studentClass}</strong> • 
-                  Điểm số: <strong className="text-emerald-400">{selectedSubmissionDetail.score.toFixed(2)}/10 đ</strong> • 
-                  Thoát màn hình: <strong className="text-rose-400">{selectedSubmissionDetail.blurCount} lần</strong>
+                  Điểm trắc nghiệm: <strong className="text-emerald-400">{selectedSubmissionDetail.score.toFixed(2)}/10 đ</strong> • 
+                  Thoát màn hình: <strong className="text-rose-400">{selectedSubmissionDetail.blurCount} lần</strong> • 
+                  Tự luận: <strong className="text-indigo-300">{selectedSubmissionDetail.essayFiles?.length || 0} trang</strong>
                 </p>
               </div>
               <button
@@ -3473,8 +3487,28 @@ Câu 3: Tìm x...
               </button>
             </div>
 
+            {/* Phần Tự Luận Của Học Sinh */}
+            {selectedSubmissionDetail.essayFiles && selectedSubmissionDetail.essayFiles.length > 0 ? (
+              <div className="space-y-2">
+                <EssaySubmissionUploader
+                  files={selectedSubmissionDetail.essayFiles}
+                  readOnly={true}
+                  title={`Tệp Bài Làm Tự Luận Của Học Sinh (${selectedSubmissionDetail.essayFiles.length} trang)`}
+                  description="Bấm vào từng ảnh để phóng to (lightbox zoom), xoay chiều ảnh để xem chi tiết bài làm tự luận viết tay hoặc file PDF."
+                />
+              </div>
+            ) : (
+              <div className="p-3.5 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+                <span>Bài làm tự luận:</span>
+                <span className="text-slate-500 italic">Học sinh không đính kèm tệp bài làm tự luận</span>
+              </div>
+            )}
+
             {/* Danh sách câu hỏi và câu trả lời của học sinh */}
             <div className="space-y-3">
+              <h5 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                Chi tiết câu hỏi trắc nghiệm ({selectedExamForSubmissions.questions.length} câu)
+              </h5>
               {selectedExamForSubmissions.questions.map((q, idx) => {
                 let isCorrect = false;
                 let userChoiceText = "Chưa làm";

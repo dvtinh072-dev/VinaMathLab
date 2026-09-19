@@ -17,12 +17,14 @@ import {
   UserCheck,
   RotateCcw,
   Sparkles,
+  FileCheck,
 } from "lucide-react";
-import { CustomExam, StudentExamSubmission } from "@/types/customExam";
+import { CustomExam, StudentExamSubmission, EssayAttachment } from "@/types/customExam";
 import { QuestionData } from "./ExamEngine";
 import { QuestionMultipleChoice } from "./QuestionMultipleChoice";
 import { QuestionTrueFalse } from "./QuestionTrueFalse";
 import { QuestionShortAnswer } from "./QuestionShortAnswer";
+import EssaySubmissionUploader from "./EssaySubmissionUploader";
 import { formatTime } from "@/lib/utils";
 import confetti from "canvas-confetti";
 import { useAuth } from "@/context/AuthContext";
@@ -47,6 +49,8 @@ export function OnlineExamRunner({ exam }: Props) {
 
   // Exam Progress State
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [isEssayActive, setIsEssayActive] = useState(false);
+  const [essayFiles, setEssayFiles] = useState<EssayAttachment[]>([]);
   const [timeLeft, setTimeLeft] = useState(exam.durationMinutes * 60);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -223,6 +227,7 @@ export function OnlineExamRunner({ exam }: Props) {
       mcAnswers,
       tfAnswers,
       saAnswers,
+      essayFiles,
     };
 
     try {
@@ -397,6 +402,22 @@ export function OnlineExamRunner({ exam }: Props) {
               <span className="text-slate-300">Phần III (Trả lời ngắn / Điền số):</span>
               <strong className="text-amber-400 font-bold">{submissionResult.scorePart3.toFixed(2)} đ</strong>
             </div>
+            {submissionResult.essayFiles && submissionResult.essayFiles.length > 0 ? (
+              <div className="p-3 rounded-xl bg-indigo-950/40 border border-indigo-500/40 flex justify-between items-center">
+                <span className="text-indigo-300 font-medium flex items-center gap-1.5">
+                  <FileCheck className="w-4 h-4 text-indigo-400" />
+                  <span>Phần Tự Luận:</span>
+                </span>
+                <strong className="text-emerald-400 font-bold">
+                  Đã nộp {submissionResult.essayFiles.length} trang bài làm
+                </strong>
+              </div>
+            ) : (
+              <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center text-slate-400">
+                <span>Phần Tự Luận:</span>
+                <span>Không có tệp đính kèm</span>
+              </div>
+            )}
           </div>
 
           {/* Thống kê Giám Sát Thoát Màn Hình */}
@@ -533,96 +554,153 @@ export function OnlineExamRunner({ exam }: Props) {
 
       {/* Main Examination Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-        {/* Active Question Box */}
+        {/* Active Question Box / Essay Area */}
         <div className="lg:col-span-8 p-5 sm:p-7 rounded-3xl bg-[#0e1526] border border-slate-800 shadow-xl space-y-6">
-          {/* Question Header */}
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-            <div className="flex items-center gap-2">
-              <span className="px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-black">
-                Câu {currentIdx + 1} / {exam.totalQuestions}
-              </span>
-              <span className="text-xs text-slate-400 font-medium">
-                {currentQ.type === "multiple_choice"
-                  ? "Trắc nghiệm 4 lựa chọn (0.25đ)"
-                  : currentQ.type === "true_false"
-                  ? "Trắc nghiệm Đúng / Sai (1.0đ)"
-                  : "Trả lời ngắn / Điền số (0.5đ)"}
-              </span>
+          {isEssayActive ? (
+            <div className="space-y-5">
+              <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+                <div className="flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-xs font-black flex items-center gap-1.5">
+                    <FileCheck className="w-3.5 h-3.5" />
+                    <span>Phần Tự Luận</span>
+                  </span>
+                  <span className="text-xs text-slate-400 font-medium">
+                    Đính kèm bài làm viết tay dạng ảnh hoặc tệp PDF
+                  </span>
+                </div>
+              </div>
+
+              <EssaySubmissionUploader
+                files={essayFiles}
+                onChange={setEssayFiles}
+                readOnly={isSubmitted || reviewMode}
+                title="Tải Lên Bài Làm Tự Luận (Ảnh hoặc PDF)"
+                description="Học sinh giải phần tự luận ra giấy kiểm tra, sau đó chụp ảnh các trang bài làm (hoặc scan file PDF) và tải lên tại đây để Thầy/Cô chấm điểm."
+              />
+
+              <div className="flex items-center justify-between pt-5 border-t border-slate-800">
+                <button
+                  onClick={() => {
+                    setIsEssayActive(false);
+                    setCurrentIdx(exam.totalQuestions - 1);
+                  }}
+                  className="px-5 py-2.5 rounded-2xl bg-slate-900 border border-slate-700 text-slate-300 text-xs font-bold hover:text-white transition-all cursor-pointer"
+                >
+                  ← Về câu trắc nghiệm ({exam.totalQuestions})
+                </button>
+
+                {!isSubmitted && (
+                  <button
+                    onClick={() => setShowConfirmSubmit(true)}
+                    className="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 text-xs font-black hover:from-emerald-400 hover:to-teal-500 transition-all cursor-pointer flex items-center gap-1.5"
+                  >
+                    <Send className="w-3.5 h-3.5" />
+                    <span>Nộp bài thi</span>
+                  </button>
+                )}
+              </div>
             </div>
+          ) : (
+            <>
+              {/* Question Header */}
+              <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+                <div className="flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-black">
+                    Câu {currentIdx + 1} / {exam.totalQuestions}
+                  </span>
+                  <span className="text-xs text-slate-400 font-medium">
+                    {currentQ.type === "multiple_choice"
+                      ? "Trắc nghiệm 4 lựa chọn (0.25đ)"
+                      : currentQ.type === "true_false"
+                      ? "Trắc nghiệm Đúng / Sai (1.0đ)"
+                      : "Trả lời ngắn / Điền số (0.5đ)"}
+                  </span>
+                </div>
 
-            {!isSubmitted && (
-              <button
-                onClick={() => setFlagged((prev) => ({ ...prev, [currentQ.id]: !prev[currentQ.id] }))}
-                className={`px-3 py-1 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition-all cursor-pointer ${
-                  flagged[currentQ.id]
-                    ? "bg-amber-500/20 border-amber-500/40 text-amber-300"
-                    : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
-                }`}
-              >
-                <Flag className="w-3.5 h-3.5" />
-                <span>{flagged[currentQ.id] ? "Đã đánh dấu" : "Đánh dấu xem lại"}</span>
-              </button>
-            )}
-          </div>
+                {!isSubmitted && (
+                  <button
+                    onClick={() => setFlagged((prev) => ({ ...prev, [currentQ.id]: !prev[currentQ.id] }))}
+                    className={`px-3 py-1 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition-all cursor-pointer ${
+                      flagged[currentQ.id]
+                        ? "bg-amber-500/20 border-amber-500/40 text-amber-300"
+                        : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
+                    }`}
+                  >
+                    <Flag className="w-3.5 h-3.5" />
+                    <span>{flagged[currentQ.id] ? "Đã đánh dấu" : "Đánh dấu xem lại"}</span>
+                  </button>
+                )}
+              </div>
 
-          {/* Interactive Question Component */}
-          {currentQ.type === "multiple_choice" && (
-            <QuestionMultipleChoice
-              question={currentQ}
-              selectedKey={mcAnswers[currentQ.id]}
-              onSelect={(key: "A" | "B" | "C" | "D") =>
-                !isSubmitted && setMcAnswers((prev) => ({ ...prev, [currentQ.id]: key }))
-              }
-              showExplanation={isSubmitted || reviewMode}
-            />
+              {/* Interactive Question Component */}
+              {currentQ.type === "multiple_choice" && (
+                <QuestionMultipleChoice
+                  question={currentQ}
+                  selectedKey={mcAnswers[currentQ.id]}
+                  onSelect={(key: "A" | "B" | "C" | "D") =>
+                    !isSubmitted && setMcAnswers((prev) => ({ ...prev, [currentQ.id]: key }))
+                  }
+                  showExplanation={isSubmitted || reviewMode}
+                />
+              )}
+
+              {currentQ.type === "true_false" && (
+                <QuestionTrueFalse
+                  question={currentQ}
+                  answers={tfAnswers[currentQ.id] || {}}
+                  onAnswer={(subKey: "a" | "b" | "c" | "d", val: boolean) =>
+                    !isSubmitted &&
+                    setTfAnswers((prev) => ({
+                      ...prev,
+                      [currentQ.id]: { ...(prev[currentQ.id] || {}), [subKey]: val },
+                    }))
+                  }
+                  showExplanation={isSubmitted || reviewMode}
+                />
+              )}
+
+              {currentQ.type === "short_answer" && (
+                <QuestionShortAnswer
+                  question={currentQ}
+                  userAnswer={saAnswers[currentQ.id] || ""}
+                  onAnswer={(val) =>
+                    !isSubmitted && setSaAnswers((prev) => ({ ...prev, [currentQ.id]: val }))
+                  }
+                  showExplanation={isSubmitted || reviewMode}
+                />
+              )}
+
+              {/* Navigation Controls */}
+              <div className="flex items-center justify-between pt-5 border-t border-slate-800">
+                <button
+                  disabled={currentIdx === 0}
+                  onClick={() => setCurrentIdx((prev) => Math.max(0, prev - 1))}
+                  className="px-5 py-2.5 rounded-2xl bg-slate-900 border border-slate-700 text-slate-300 text-xs font-bold hover:text-white disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
+                >
+                  ← Câu trước
+                </button>
+                <span className="text-xs font-bold text-slate-400">
+                  Câu {currentIdx + 1} / {exam.totalQuestions}
+                </span>
+                {currentIdx < exam.totalQuestions - 1 ? (
+                  <button
+                    onClick={() => setCurrentIdx((prev) => Math.min(exam.totalQuestions - 1, prev + 1))}
+                    className="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 text-xs font-black hover:from-emerald-400 hover:to-teal-500 transition-all cursor-pointer"
+                  >
+                    Câu tiếp theo →
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setIsEssayActive(true)}
+                    className="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-xs font-black hover:from-indigo-500 hover:to-violet-500 transition-all cursor-pointer flex items-center gap-1.5"
+                  >
+                    <FileCheck className="w-4 h-4" />
+                    <span>Nộp tự luận →</span>
+                  </button>
+                )}
+              </div>
+            </>
           )}
-
-          {currentQ.type === "true_false" && (
-            <QuestionTrueFalse
-              question={currentQ}
-              answers={tfAnswers[currentQ.id] || {}}
-              onAnswer={(subKey: "a" | "b" | "c" | "d", val: boolean) =>
-                !isSubmitted &&
-                setTfAnswers((prev) => ({
-                  ...prev,
-                  [currentQ.id]: { ...(prev[currentQ.id] || {}), [subKey]: val },
-                }))
-              }
-              showExplanation={isSubmitted || reviewMode}
-            />
-          )}
-
-          {currentQ.type === "short_answer" && (
-            <QuestionShortAnswer
-              question={currentQ}
-              userAnswer={saAnswers[currentQ.id] || ""}
-              onAnswer={(val) =>
-                !isSubmitted && setSaAnswers((prev) => ({ ...prev, [currentQ.id]: val }))
-              }
-              showExplanation={isSubmitted || reviewMode}
-            />
-          )}
-
-          {/* Navigation Controls */}
-          <div className="flex items-center justify-between pt-5 border-t border-slate-800">
-            <button
-              disabled={currentIdx === 0}
-              onClick={() => setCurrentIdx((prev) => Math.max(0, prev - 1))}
-              className="px-5 py-2.5 rounded-2xl bg-slate-900 border border-slate-700 text-slate-300 text-xs font-bold hover:text-white disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
-            >
-              ← Câu trước
-            </button>
-            <span className="text-xs font-bold text-slate-400">
-              Câu {currentIdx + 1} / {exam.totalQuestions}
-            </span>
-            <button
-              disabled={currentIdx === exam.totalQuestions - 1}
-              onClick={() => setCurrentIdx((prev) => Math.min(exam.totalQuestions - 1, prev + 1))}
-              className="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 text-xs font-black hover:from-emerald-400 hover:to-teal-500 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
-            >
-              Câu tiếp theo →
-            </button>
-          </div>
         </div>
 
         {/* Question Palette Sidebar */}
@@ -636,14 +714,17 @@ export function OnlineExamRunner({ exam }: Props) {
 
           <div className="grid grid-cols-5 gap-2">
             {exam.questions.map((q, idx) => {
-              const active = currentIdx === idx;
+              const active = !isEssayActive && currentIdx === idx;
               const answered = isAnswered(q);
               const isFlag = flagged[q.id];
 
               return (
                 <button
                   key={q.id}
-                  onClick={() => setCurrentIdx(idx)}
+                  onClick={() => {
+                    setIsEssayActive(false);
+                    setCurrentIdx(idx);
+                  }}
                   className={`h-10 rounded-2xl font-black text-xs flex items-center justify-center relative transition-all cursor-pointer ${
                     active
                       ? "bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/30 ring-2 ring-emerald-400 scale-105"
@@ -659,6 +740,35 @@ export function OnlineExamRunner({ exam }: Props) {
                 </button>
               );
             })}
+          </div>
+
+          {/* Nút truy cập Phần Tự Luận */}
+          <div className="pt-2 border-t border-slate-800">
+            <button
+              type="button"
+              onClick={() => setIsEssayActive(true)}
+              className={`w-full py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-between border transition-all cursor-pointer ${
+                isEssayActive
+                  ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white border-indigo-400 shadow-md shadow-indigo-500/30 scale-[1.02]"
+                  : essayFiles.length > 0
+                  ? "bg-teal-700/60 text-white border-teal-500/40 hover:bg-teal-600/60"
+                  : "bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-400"
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <FileCheck className="w-4 h-4 text-indigo-400" />
+                <span>Phần Tự Luận</span>
+              </div>
+              <span
+                className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${
+                  essayFiles.length > 0
+                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                    : "bg-slate-800 text-slate-400"
+                }`}
+              >
+                {essayFiles.length > 0 ? `${essayFiles.length} trang` : "Chưa tải"}
+              </span>
+            </button>
           </div>
 
           <div className="pt-3 border-t border-slate-800 space-y-2 text-xs font-semibold text-slate-400">
@@ -686,19 +796,36 @@ export function OnlineExamRunner({ exam }: Props) {
       {showConfirmSubmit && (
         <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-[#0e1526] w-full max-w-md rounded-3xl border border-slate-700 p-6 sm:p-7 shadow-2xl space-y-5 animate-in fade-in zoom-in-95 duration-200 text-white">
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-3">
               <div className="w-14 h-14 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto border border-amber-500/40">
                 <AlertTriangle className="w-7 h-7" />
               </div>
               <h3 className="font-black text-xl text-white">Xác nhận nộp bài thi?</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Bạn đã hoàn thành <strong className="text-emerald-400">{answeredCount}/{exam.totalQuestions}</strong> câu hỏi.
-                {unansweredCount > 0 && (
-                  <span className="block mt-1 text-amber-400 font-semibold">
-                    ⚠️ Còn {unansweredCount} câu chưa hoàn thành. Bạn có chắc chắn muốn nộp bài ngay?
-                  </span>
-                )}
-              </p>
+              
+              <div className="bg-slate-900/90 p-3.5 rounded-2xl border border-slate-800 text-xs text-left space-y-2">
+                <div className="flex justify-between items-center text-slate-300">
+                  <span>Trắc nghiệm:</span>
+                  <strong className="text-emerald-400 font-bold">{answeredCount}/{exam.totalQuestions} câu</strong>
+                </div>
+                <div className="flex justify-between items-center text-slate-300">
+                  <span>Tự luận (ảnh/PDF):</span>
+                  <strong className={essayFiles.length > 0 ? "text-emerald-400 font-bold" : "text-amber-400 font-bold"}>
+                    {essayFiles.length > 0 ? `Đã đính kèm ${essayFiles.length} trang` : "Chưa tải trang nào"}
+                  </strong>
+                </div>
+              </div>
+
+              {unansweredCount > 0 && (
+                <div className="text-amber-400 font-semibold text-xs text-left bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20">
+                  ⚠️ Còn {unansweredCount} câu trắc nghiệm chưa hoàn thành.
+                </div>
+              )}
+
+              {essayFiles.length === 0 && (
+                <div className="text-indigo-300 font-semibold text-xs text-left bg-indigo-500/10 p-2.5 rounded-xl border border-indigo-500/30">
+                  💡 Bạn chưa tải ảnh/PDF bài làm tự luận. Nếu đề thi có phần tự luận, bạn có muốn tải lên trước khi nộp không?
+                </div>
+              )}
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">

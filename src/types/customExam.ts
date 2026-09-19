@@ -27,6 +27,15 @@ export interface CustomExam {
   antiCheatEnabled: boolean; // default true (track focus/blur)
 }
 
+export interface EssayAttachment {
+  id: string;
+  name: string;
+  type: "image" | "pdf";
+  dataUrl: string; // Base64 data URL (ảnh đã nén hoặc data pdf)
+  size: number; // bytes
+  rotation?: number; // 0, 90, 180, 270 deg
+}
+
 export interface StudentExamSubmission {
   id: string;
   examId: string;
@@ -46,4 +55,6 @@ export interface StudentExamSubmission {
   mcAnswers: { [id: string]: "A" | "B" | "C" | "D" };
   tfAnswers: { [id: string]: { [key in "a" | "b" | "c" | "d"]?: boolean } };
   saAnswers: { [id: string]: string };
+  essayFiles?: EssayAttachment[]; // Tệp bài làm tự luận (ảnh/pdf)
 }
+

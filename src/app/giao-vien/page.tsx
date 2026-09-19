@@ -3623,11 +3623,56 @@ Câu 3: Tìm x...
               </button>
             </div>
 
+            {/* Thống kê nhanh quá trình học của học sinh */}
+            {(() => {
+              const prog = selectedStudentDetail.progress || {};
+              const lessons = prog.lessons || prog.lessonsProgress || {};
+              let sumSecs = 0;
+              let sumCorrect = 0;
+              let sumWrong = 0;
+              let compLessons = 0;
+
+              Object.values(lessons).forEach((l: any) => {
+                sumSecs += l.videoWatchedSeconds || 0;
+                sumCorrect += l.correctQuestionsCount || 0;
+                sumWrong += l.wrongQuestionsCount || 0;
+                if (l.isCompleted) compLessons++;
+              });
+
+              const totalCorrect = Math.max(prog.totalCorrectQuestions || 0, sumCorrect, Object.keys(prog.solvedQuestions || {}).length);
+              const totalWrong = Math.max(prog.totalWrongQuestions || 0, sumWrong, Object.keys(prog.wrongQuestions || {}).length);
+              const totalAttempted = totalCorrect + totalWrong;
+              const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
+              const totalMins = prog.totalVideoMinutes || Math.round(sumSecs / 60);
+              const videoTimeStr = totalMins >= 60 ? `${Math.floor(totalMins / 60)}g ${totalMins % 60}p` : `${totalMins} phút`;
+
+              return (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  <div className="p-2.5 rounded-xl bg-slate-900/90 border border-cyan-500/30 text-center">
+                    <div className="text-[10px] text-cyan-400 font-bold">Xem Video</div>
+                    <div className="text-sm font-black text-white">{videoTimeStr}</div>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-slate-900/90 border border-emerald-500/30 text-center">
+                    <div className="text-[10px] text-emerald-400 font-bold">Bài Đã Học</div>
+                    <div className="text-sm font-black text-white">{compLessons} bài</div>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-slate-900/90 border border-teal-500/30 text-center">
+                    <div className="text-[10px] text-teal-400 font-bold">Câu Làm Được</div>
+                    <div className="text-sm font-black text-teal-300">{totalCorrect} ({accuracy}%)</div>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-slate-900/90 border border-rose-500/30 text-center">
+                    <div className="text-[10px] text-rose-400 font-bold">Câu Làm Sai</div>
+                    <div className="text-sm font-black text-rose-300">{totalWrong} câu</div>
+                  </div>
+                </div>
+              );
+            })()}
+
             {/* Bảng Chi Tiết Thời Gian Video Từng Bài Học */}
             <div className="space-y-3">
               <h3 className="text-sm font-black text-white flex items-center gap-2">
                 <Video className="w-4 h-4 text-amber-400" />
-                <span>Thời Gian Xem Video & Điểm Số Từng Bài Học</span>
+                <span>Chi Tiết Từng Bài Học (Video & Bài Tập)</span>
               </h3>
 
               <div className="rounded-2xl border border-slate-800 bg-slate-900/80 overflow-hidden">
@@ -3637,58 +3682,67 @@ Câu 3: Tìm x...
                       <tr>
                         <th className="p-2.5">Mã Bài</th>
                         <th className="p-2.5">Tên Bài Học</th>
-                        <th className="p-2.5 text-center">Thời Lượng Video</th>
-                        <th className="p-2.5 text-center">Điểm Trắc Nghiệm</th>
+                        <th className="p-2.5 text-center">Xem Video</th>
+                        <th className="p-2.5 text-center">Đúng / Sai</th>
+                        <th className="p-2.5 text-center">Điểm Đạt</th>
                         <th className="p-2.5 text-center">Trạng Thái</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800/60 text-slate-300">
-                      {selectedStudentDetail.progress?.lessonsProgress &&
-                      Object.keys(selectedStudentDetail.progress.lessonsProgress).length > 0 ? (
-                        Object.entries(selectedStudentDetail.progress.lessonsProgress).map(
-                          ([lId, val]: [string, any]) => {
-                            const secs = val.videoWatchedSeconds || 0;
-                            const timeText =
-                              secs >= 60
-                                ? `${Math.floor(secs / 60)}p ${secs % 60}s`
-                                : `${secs}s`;
-                            const lessonInfo =
-                              (GRADE_6_DETAILED_LESSONS as any)[lId] || null;
+                      {(() => {
+                        const lessons = selectedStudentDetail.progress?.lessons || selectedStudentDetail.progress?.lessonsProgress || {};
+                        const entries = Object.entries(lessons);
+                        if (entries.length === 0) {
+                          return (
+                            <tr>
+                              <td colSpan={6} className="p-4 text-center text-slate-500 text-xs">
+                                Học sinh chưa có dữ liệu học tập chi tiết cho bài nào.
+                              </td>
+                            </tr>
+                          );
+                        }
 
-                            return (
-                              <tr key={lId} className="hover:bg-slate-800/40">
-                                <td className="p-2.5 font-mono text-cyan-400 text-[11px]">{lId}</td>
-                                <td className="p-2.5 font-medium text-slate-200">
-                                  {lessonInfo?.title || val.lessonTitle || lId}
-                                </td>
-                                <td className="p-2.5 text-center font-mono font-bold text-amber-300">
-                                  {timeText}
-                                </td>
-                                <td className="p-2.5 text-center font-bold text-emerald-400">
-                                  {val.score !== undefined ? `${val.score} đ` : "—"}
-                                </td>
-                                <td className="p-2.5 text-center">
-                                  {val.isCompleted ? (
-                                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300">
-                                      Hoàn thành
-                                    </span>
-                                  ) : (
-                                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400">
-                                      Đang học
-                                    </span>
-                                  )}
-                                </td>
-                              </tr>
-                            );
-                          }
-                        )
-                      ) : (
-                        <tr>
-                          <td colSpan={5} className="p-4 text-center text-slate-500 text-xs">
-                            Học sinh chưa có dữ liệu xem video chi tiết cho bài nào.
-                          </td>
-                        </tr>
-                      )}
+                        return entries.map(([lId, val]: [string, any]) => {
+                          const secs = val.videoWatchedSeconds || 0;
+                          const timeText =
+                            secs >= 60
+                              ? `${Math.floor(secs / 60)}p ${secs % 60}s`
+                              : `${secs}s`;
+                          const lessonInfo =
+                            (GRADE_6_DETAILED_LESSONS as any)[lId] || null;
+
+                          return (
+                            <tr key={lId} className="hover:bg-slate-800/40">
+                              <td className="p-2.5 font-mono text-cyan-400 text-[11px]">{lId}</td>
+                              <td className="p-2.5 font-medium text-slate-200">
+                                {lessonInfo?.title || val.lessonTitle || lId}
+                              </td>
+                              <td className="p-2.5 text-center font-mono font-bold text-amber-300">
+                                {timeText}
+                              </td>
+                              <td className="p-2.5 text-center">
+                                <span className="text-emerald-400 font-bold">🟢 {val.correctQuestionsCount || 0}</span>
+                                <span className="text-slate-500 mx-1">•</span>
+                                <span className="text-rose-400 font-bold">🔴 {val.wrongQuestionsCount || 0}</span>
+                              </td>
+                              <td className="p-2.5 text-center font-bold text-emerald-400">
+                                {val.score !== undefined ? `${val.score}%` : "—"}
+                              </td>
+                              <td className="p-2.5 text-center">
+                                {val.isCompleted ? (
+                                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300">
+                                    Hoàn thành
+                                  </span>
+                                ) : (
+                                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400">
+                                    Đang học
+                                  </span>
+                                )}
+                              </td>
+                            </tr>
+                          );
+                        });
+                      })()}
                     </tbody>
                   </table>
                 </div>

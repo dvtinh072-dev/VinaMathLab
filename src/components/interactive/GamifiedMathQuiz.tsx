@@ -1221,6 +1221,7 @@ export function GamifiedMathQuiz({
         if (correctCount === 4) {
           markQuestionSolved(studentIdentifier, tfKey, earned);
           recordCorrectedMistake(currentTf.id);
+          recordCorrectAnswer(currentTf.id);
         }
         if (addExpAndCoins) addExpAndCoins(earned, 10, streak + 1);
         setGradeTotalScore((prev) => {
@@ -1501,6 +1502,7 @@ export function GamifiedMathQuiz({
 
     if (isCorrect) {
       recordCorrectedMistake(currentSa.id);
+      recordCorrectAnswer(currentSa.id);
       if (isAlreadySolved) {
         // Đã tính điểm trước đó -> Làm lại không tính thêm điểm
         setStreak((prev) => prev + 1);
@@ -1582,8 +1584,7 @@ export function GamifiedMathQuiz({
   useEffect(() => {
     if (!activeVideoId || quizMode !== "theory") return;
 
-    const studentIdentifier = user?.id || user?.studentCode || user?.username;
-    if (!studentIdentifier) return;
+    const studentIdentifier = user?.id || user?.studentCode || user?.username || "guest";
 
     // Helper gửi tích lũy số giây xem video về server và localStorage
     const flushVideoTime = (seconds: number) => {
@@ -1595,7 +1596,7 @@ export function GamifiedMathQuiz({
       // 1. Lưu chính xác timestamp vị trí video đang phát
       saveVideoPosition(lessonId, studentIdentifier, currentPos, false);
 
-      // 2. Lưu cục bộ (localStorage) ngay lập tức
+      // 2. Lưu cục bộ (localStorage) và tự động đồng bộ Cloud
       saveLocalStudentProgressUpdate({
         userId: user?.id,
         studentCode: user?.studentCode,
@@ -1609,22 +1610,6 @@ export function GamifiedMathQuiz({
         addVideoSeconds: seconds,
         lastVideoPosition: currentPos,
       });
-
-      // 3. Gửi đồng bộ lên server (Supabase Cloud)
-      fetch("/api/student/progress", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId: user?.id,
-          studentCode: user?.studentCode,
-          username: user?.username,
-          addVideoSeconds: seconds,
-          lastVideoPosition: currentPos,
-          lessonId,
-          gradeKey,
-          lessonTitle,
-        }),
-      }).catch(() => {});
     };
 
     // Đếm thời gian thực tế mỗi giây khi học sinh đang xem tab bài giảng
@@ -1635,7 +1620,7 @@ export function GamifiedMathQuiz({
 
       pendingSecondsRef.current += 1;
 
-      // Cứ tích lũy đủ 10 giây thực tế thì đồng bộ lên Cloud
+      // Cứ tích lũy đủ 10 giây thực tế thì đồng bộ
       if (pendingSecondsRef.current >= 10) {
         const secs = pendingSecondsRef.current;
         pendingSecondsRef.current = 0;
@@ -1652,21 +1637,12 @@ export function GamifiedMathQuiz({
         flushVideoTime(secs);
       }
     };
-  }, [activeVideoId, quizMode, user?.id, user?.studentCode, user?.username, user?.fullName, user?.schoolName, user?.schoolClass, lessonId, gradeKey, lessonTitle]);
+  }, [activeVideoId, quizMode, user?.id, user?.studentCode, user?.username, lessonId, gradeKey, lessonTitle]);
 
   // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
-  const recordMistake = async (
-    qId: string | number,
-    badgeText: string | undefined,
-    questionText: string,
-    selectedOptionText: string,
-    correctOptionText: string,
-    explanationText: string
-  ) => {
-    const studentId = user?.id || user?.studentCode || user?.username;
-    if (!studentId) return;
-
-    // 1. Lưu ngay vào bộ nhớ cục bộ
+  // Hàm ghi nhận câu hỏi làm đúng vào tiến độ học tập chi tiết
+  const recordCorrectAnswer = (qId: string | number) => {
+    const studentId = user?.id || user?.studentCode || user?.username || "guest";
     saveLocalStudentProgressUpdate({
       userId: user?.id,
       studentCode: user?.studentCode,
@@ -1677,6 +1653,35 @@ export function GamifiedMathQuiz({
       lessonId,
       gradeKey,
       lessonTitle,
+      totalQuestions: activeQuizList.length || 10,
+      isCorrectAnswer: true,
+    });
+  };
+
+  // Hàm ghi nhận câu hỏi làm sai vào Sổ tay câu sai cá nhân & Admin Portal
+  const recordMistake = async (
+    qId: string | number,
+    badgeText: string | undefined,
+    questionText: string,
+    selectedOptionText: string,
+    correctOptionText: string,
+    explanationText: string
+  ) => {
+    const studentId = user?.id || user?.studentCode || user?.username || "guest";
+
+    // 1. Lưu ngay vào bộ nhớ cục bộ & cập nhật số câu làm sai
+    saveLocalStudentProgressUpdate({
+      userId: user?.id,
+      studentCode: user?.studentCode,
+      username: user?.username,
+      fullName: user?.fullName,
+      schoolName: user?.schoolName,
+      schoolClass: user?.schoolClass,
+      lessonId,
+      gradeKey,
+      lessonTitle,
+      totalQuestions: activeQuizList.length || 10,
+      isWrongAnswer: true,
       wrongQuestion: {
         questionId: String(qId),
         badge: badgeText || "Bài tập",
@@ -1690,30 +1695,34 @@ export function GamifiedMathQuiz({
       },
     });
 
-    // 2. Gửi lên server
-    try {
-      await fetch("/api/student/progress", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId: user?.id,
-          studentCode: user?.studentCode,
-          username: user?.username,
-          lessonId,
-          gradeKey,
-          lessonTitle,
-          wrongQuestion: {
-            questionId: String(qId),
-            badge: badgeText || "Bài tập",
-            questionText,
-            selectedOption: selectedOptionText,
-            correctOption: correctOptionText,
-            explanation: explanationText,
-          },
-        }),
-      });
-    } catch (e) {
-      console.error("Lỗi ghi nhận câu sai:", e);
+    // 2. Gửi lên server nếu đã đăng nhập
+    if (user?.id || user?.studentCode || user?.username) {
+      try {
+        await fetch("/api/student/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId: user?.id,
+            studentCode: user?.studentCode,
+            username: user?.username,
+            lessonId,
+            gradeKey,
+            lessonTitle,
+            totalQuestions: activeQuizList.length || 10,
+            isWrongAnswer: true,
+            wrongQuestion: {
+              questionId: String(qId),
+              badge: badgeText || "Bài tập",
+              questionText,
+              selectedOption: selectedOptionText,
+              correctOption: correctOptionText,
+              explanation: explanationText,
+            },
+          }),
+        });
+      } catch (e) {
+        console.error("Lỗi ghi nhận câu sai:", e);
+      }
     }
   };
 
@@ -2231,6 +2240,9 @@ export function GamifiedMathQuiz({
     if (isCorrect) {
       // Nếu câu này trước đó học sinh từng sai, ghi nhận đã giải quyết xong
       recordCorrectedMistake(currentQ.id);
+
+      // Ghi nhận câu làm đúng vào tiến độ học tập chi tiết của bài học và học sinh
+      recordCorrectAnswer(currentQ.id);
 
       // NẾU CÂU NÀY ĐÃ TÍNH ĐIỂM RỒI -> LÀM LẠI LẦN 2 KHÔNG TÍNH ĐIỂM NỮA
       if (isAlreadySolved) {
@@ -3679,6 +3691,7 @@ export function GamifiedMathQuiz({
                                         }
                                         playSound("correct");
                                         recordCorrectedMistake(vq.id);
+                                        recordCorrectAnswer(vq.id);
                                       } else {
                                         playSound("wrong");
                                         recordMistake(

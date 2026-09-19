@@ -350,6 +350,15 @@ export async function POST(req: Request) {
       isCompleted,
       score,
       totalQuestions,
+      isCorrectAnswer,
+      isWrongAnswer,
+      correctCount,
+      wrongCount,
+      attemptedCount,
+      totalCorrectQuestions,
+      totalWrongQuestions,
+      totalQuestionsAttempted,
+      accuracyRate,
       wrongQuestion,
       resolveQuestionId,
       solvedQuestionId,
@@ -389,7 +398,12 @@ export async function POST(req: Request) {
           schoolName: studentUser?.schoolName || "THCS VinaMath",
           schoolClass: studentUser?.schoolClass || "Lớp 6A",
           totalVideoMinutes: 0,
+          totalVideoSeconds: 0,
           totalCompletedLessons: 0,
+          totalCorrectQuestions: 0,
+          totalWrongQuestions: 0,
+          totalQuestionsAttempted: 0,
+          accuracyRate: 0,
           lessons: {},
           wrongQuestions: {},
           updatedAt: new Date().toISOString(),
@@ -410,6 +424,9 @@ export async function POST(req: Request) {
           isCompleted: false,
           score: 0,
           totalQuestions: totalQuestions || 10,
+          correctQuestionsCount: 0,
+          wrongQuestionsCount: 0,
+          attemptedQuestionsCount: 0,
           lastStudiedAt: new Date().toISOString(),
         };
       }
@@ -436,6 +453,34 @@ export async function POST(req: Request) {
       if (totalQuestions !== undefined) {
         l.totalQuestions = totalQuestions;
       }
+
+      // Ghi nhận câu đúng / câu sai trong bài học
+      if (isCorrectAnswer) {
+        l.correctQuestionsCount = (l.correctQuestionsCount || 0) + 1;
+        l.attemptedQuestionsCount = (l.attemptedQuestionsCount || 0) + 1;
+      }
+      if (isWrongAnswer) {
+        l.wrongQuestionsCount = (l.wrongQuestionsCount || 0) + 1;
+        l.attemptedQuestionsCount = (l.attemptedQuestionsCount || 0) + 1;
+      }
+      if (correctCount !== undefined) {
+        l.correctQuestionsCount = Math.max(l.correctQuestionsCount || 0, correctCount);
+      }
+      if (wrongCount !== undefined) {
+        l.wrongQuestionsCount = Math.max(l.wrongQuestionsCount || 0, wrongCount);
+      }
+      if (attemptedCount !== undefined) {
+        l.attemptedQuestionsCount = Math.max(l.attemptedQuestionsCount || 0, attemptedCount);
+      }
+
+      if (l.totalQuestions > 0 && l.correctQuestionsCount !== undefined) {
+        const calculatedScore = Math.min(100, Math.round((l.correctQuestionsCount / l.totalQuestions) * 100));
+        l.score = Math.max(l.score || 0, calculatedScore);
+        if (l.score >= 80) {
+          l.isCompleted = true;
+        }
+      }
+
       l.lastStudiedAt = new Date().toISOString();
     }
 
@@ -520,16 +565,36 @@ export async function POST(req: Request) {
       studentRecord.streak = Math.max(studentRecord.streak || 1, streak);
     }
 
-    // 5. Tính toán lại tổng hợp
+    // 5. Tính toán lại tổng hợp khoa học & chính xác
     let totalSec = 0;
     let completedCount = 0;
+    let totalLessonCorrect = 0;
+    let totalLessonWrong = 0;
+    let totalLessonAttempted = 0;
+
     Object.values(studentRecord.lessons).forEach((item: any) => {
       totalSec += (item.videoWatchedSeconds || 0);
       if (item.isCompleted) completedCount++;
+      totalLessonCorrect += (item.correctQuestionsCount || 0);
+      totalLessonWrong += (item.wrongQuestionsCount || 0);
+      totalLessonAttempted += (item.attemptedQuestionsCount || ((item.correctQuestionsCount || 0) + (item.wrongQuestionsCount || 0)));
     });
 
+    const solvedCount = Object.keys(studentRecord.solvedQuestions || {}).length;
+    const wrongCountTotal = Object.keys(studentRecord.wrongQuestions || {}).length;
+
+    const totalCorrect = Math.max(totalLessonCorrect, solvedCount, totalCorrectQuestions || 0);
+    const totalWrong = Math.max(totalLessonWrong, wrongCountTotal, totalWrongQuestions || 0);
+    const totalAttempted = Math.max(totalLessonAttempted, totalCorrect + totalWrong, totalQuestionsAttempted || 0);
+    const accuracy = totalAttempted > 0 ? Math.min(100, Math.round((totalCorrect / totalAttempted) * 100)) : 0;
+
+    studentRecord.totalVideoSeconds = totalSec;
     studentRecord.totalVideoMinutes = Math.round(totalSec / 60);
     studentRecord.totalCompletedLessons = completedCount;
+    studentRecord.totalCorrectQuestions = totalCorrect;
+    studentRecord.totalWrongQuestions = totalWrong;
+    studentRecord.totalQuestionsAttempted = totalAttempted;
+    studentRecord.accuracyRate = accuracy;
     studentRecord.updatedAt = new Date().toISOString();
 
     // 6. Lưu vào bộ nhớ file JSON cục bộ

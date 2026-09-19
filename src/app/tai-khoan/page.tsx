@@ -26,6 +26,7 @@ import {
   Filter,
   History,
   FileCheck,
+  Target,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
@@ -62,8 +63,16 @@ export default function StudentProfilePage() {
       setIsLoading(false);
     }
 
+    const handleProgressUpdate = () => {
+      fetchStudentProgress();
+    };
+
     window.addEventListener("vinamath_practice_exam_saved", loadPracticeResults);
-    return () => window.removeEventListener("vinamath_practice_exam_saved", loadPracticeResults);
+    window.addEventListener("vinamath_student_progress_saved", handleProgressUpdate);
+    return () => {
+      window.removeEventListener("vinamath_practice_exam_saved", loadPracticeResults);
+      window.removeEventListener("vinamath_student_progress_saved", handleProgressUpdate);
+    };
   }, [user]);
 
   const fetchStudentProgress = async () => {
@@ -175,7 +184,37 @@ export default function StudentProfilePage() {
 
   const lessonsMap = progressData?.lessons || {};
   const completedLessonsCount = Object.values(lessonsMap).filter((l: any) => l.isCompleted).length;
-  const totalVideoMinutes = progressData?.totalVideoMinutes || 0;
+
+  let sumLessonCorrect = 0;
+  let sumLessonWrong = 0;
+  let sumLessonAttempted = 0;
+  let sumVideoSeconds = 0;
+
+  Object.values(lessonsMap).forEach((l: any) => {
+    sumVideoSeconds += l.videoWatchedSeconds || 0;
+    sumLessonCorrect += l.correctQuestionsCount || 0;
+    sumLessonWrong += l.wrongQuestionsCount || 0;
+    sumLessonAttempted += l.attemptedQuestionsCount || ((l.correctQuestionsCount || 0) + (l.wrongQuestionsCount || 0));
+  });
+
+  const solvedCount = Object.keys(progressData?.solvedQuestions || {}).length;
+  const totalCorrectCount = Math.max(progressData?.totalCorrectQuestions || 0, sumLessonCorrect, solvedCount);
+  const totalWrongCount = Math.max(progressData?.totalWrongQuestions || 0, sumLessonWrong, wrongList.length);
+  const totalAttemptedCount = Math.max(progressData?.totalQuestionsAttempted || 0, sumLessonAttempted, totalCorrectCount + totalWrongCount);
+  const accuracyRate = totalAttemptedCount > 0 ? Math.min(100, Math.round((totalCorrectCount / totalAttemptedCount) * 100)) : 0;
+
+  const totalVideoMinutes = progressData?.totalVideoMinutes || Math.round(sumVideoSeconds / 60);
+
+  const formatVideoDisplay = (mins: number, secsTotal?: number) => {
+    if (mins >= 60) {
+      const h = Math.floor(mins / 60);
+      const m = mins % 60;
+      return `${h} giờ ${m} phút`;
+    }
+    if (mins > 0) return `${mins} phút`;
+    if (secsTotal && secsTotal > 0) return `${secsTotal} giây`;
+    return "0 phút";
+  };
 
   return (
     <div className="space-y-6 pb-12">
@@ -220,7 +259,7 @@ export default function StudentProfilePage() {
         <div className="flex items-center gap-2 shrink-0">
           <button
             onClick={fetchStudentProgress}
-            className="px-3 py-2 rounded-xl bg-slate-900/80 border border-cyan-500/30 text-cyan-300 font-bold text-xs hover:bg-slate-800 transition-all flex items-center gap-1.5"
+            className="px-3 py-2 rounded-xl bg-slate-900/80 border border-cyan-500/30 text-cyan-300 font-bold text-xs hover:bg-slate-800 transition-all flex items-center gap-1.5 cursor-pointer"
             title="Đồng bộ lại tiến độ"
           >
             <RefreshCw className="w-3.5 h-3.5" />
@@ -228,7 +267,7 @@ export default function StudentProfilePage() {
           </button>
           <button
             onClick={logout}
-            className="px-3 py-2 rounded-xl bg-slate-900/80 border border-rose-500/30 text-rose-300 font-bold text-xs hover:bg-rose-950/40 transition-all flex items-center gap-1.5"
+            className="px-3 py-2 rounded-xl bg-slate-900/80 border border-rose-500/30 text-rose-300 font-bold text-xs hover:bg-rose-950/40 transition-all flex items-center gap-1.5 cursor-pointer"
           >
             <LogOut className="w-3.5 h-3.5" />
             <span>Đăng xuất</span>
@@ -236,36 +275,65 @@ export default function StudentProfilePage() {
         </div>
       </div>
 
-      {/* 2. Key Metrics Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-cyan-500/30 space-y-1">
+      {/* 2. Key Metrics Cards - Hệ thống 6 chỉ số học tập chi tiết, khoa học */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        {/* Card 1: Thời gian xem video */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-cyan-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-cyan-400 font-bold">
-            <span>Video Đã Xem</span>
+            <span>Xem Video</span>
             <Clock className="w-4 h-4" />
           </div>
-          <div className="text-xl sm:text-2xl font-black text-white">
-            {totalVideoMinutes} <span className="text-xs font-bold text-slate-400">phút</span>
+          <div className="text-lg sm:text-xl font-black text-white">
+            {formatVideoDisplay(totalVideoMinutes, sumVideoSeconds)}
           </div>
-          <p className="text-[10px] text-slate-400">Thời gian xem video bài giảng</p>
+          <p className="text-[10px] text-slate-400">Thời gian học video bài giảng</p>
         </div>
 
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-emerald-500/30 space-y-1">
+        {/* Card 2: Số bài hoàn thành */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-emerald-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-emerald-400 font-bold">
-            <span>Bài Hoàn Thành</span>
+            <span>Bài Đã Học</span>
             <CheckCircle2 className="w-4 h-4" />
           </div>
-          <div className="text-xl sm:text-2xl font-black text-white">
+          <div className="text-lg sm:text-xl font-black text-white">
             {completedLessonsCount} <span className="text-xs font-bold text-slate-400">bài</span>
           </div>
           <p className="text-[10px] text-slate-400">Đạt chuẩn kiến thức ≥ 80%</p>
         </div>
 
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-indigo-500/30 space-y-1">
+        {/* Card 3: Số câu làm được */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-teal-500/30 space-y-1">
+          <div className="flex items-center justify-between text-xs text-teal-400 font-bold">
+            <span>Câu Làm Được</span>
+            <Target className="w-4 h-4 text-teal-400" />
+          </div>
+          <div className="text-lg sm:text-xl font-black text-teal-300">
+            {totalCorrectCount} <span className="text-xs font-bold text-slate-400">câu</span>
+          </div>
+          <p className="text-[10px] text-teal-400 font-medium">Tỷ lệ đúng: {accuracyRate}%</p>
+        </div>
+
+        {/* Card 4: Số câu làm sai */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-rose-500/30 space-y-1">
+          <div className="flex items-center justify-between text-xs text-rose-400 font-bold">
+            <span>Câu Làm Sai</span>
+            <AlertTriangle className="w-4 h-4" />
+          </div>
+          <div className="text-lg sm:text-xl font-black text-rose-300">
+            {totalWrongCount} <span className="text-xs font-bold text-slate-400">câu</span>
+          </div>
+          <p className="text-[10px] text-slate-400">
+            {activeWrongs.length > 0 ? `${activeWrongs.length} câu cần ôn tập` : "Đã sửa hết lỗi sai"}
+          </p>
+        </div>
+
+        {/* Card 5: Đề thi thử */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-indigo-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-indigo-400 font-bold">
             <span>Đề Thi Thử</span>
             <Award className="w-4 h-4" />
           </div>
-          <div className="text-xl sm:text-2xl font-black text-white">
+          <div className="text-lg sm:text-xl font-black text-indigo-300">
             {practiceResults.length} <span className="text-xs font-bold text-slate-400">lần</span>
           </div>
           <p className="text-[10px] text-slate-400">
@@ -275,28 +343,16 @@ export default function StudentProfilePage() {
           </p>
         </div>
 
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-amber-500/30 space-y-1">
+        {/* Card 6: Điểm tích lũy */}
+        <div className="p-3.5 rounded-2xl bg-[#0e1526] border border-amber-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-amber-400 font-bold">
             <span>Điểm Tích Lũy</span>
             <Sparkles className="w-4 h-4" />
           </div>
-          <div className="text-xl sm:text-2xl font-black text-white">
+          <div className="text-lg sm:text-xl font-black text-amber-300">
             {formatNaturalNumber(user.exp || 0)} <span className="text-xs font-bold text-slate-400">EXP</span>
           </div>
           <p className="text-[10px] text-slate-400">🪙 {user.coins || 0} VinaCoins</p>
-        </div>
-
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-rose-500/30 space-y-1 col-span-2 sm:col-span-1">
-          <div className="flex items-center justify-between text-xs text-rose-400 font-bold">
-            <span>Sổ Tay Câu Sai</span>
-            <AlertTriangle className="w-4 h-4" />
-          </div>
-          <div className="text-xl sm:text-2xl font-black text-white">
-            {activeWrongs.length} <span className="text-xs font-bold text-slate-400">câu</span>
-          </div>
-          <p className="text-[10px] text-slate-400">
-            {resolvedWrongs.length > 0 ? `Đã sửa ${resolvedWrongs.length} câu` : "Cần ôn tập lại"}
-          </p>
         </div>
       </div>
 
@@ -594,7 +650,8 @@ export default function StudentProfilePage() {
                     <th className="py-3.5 px-4">Mã Bài</th>
                     <th className="py-3.5 px-4">Tên Bài Học</th>
                     <th className="py-3.5 px-4 text-center">Xem Video</th>
-                    <th className="py-3.5 px-4 text-center">Điểm Đạt</th>
+                    <th className="py-3.5 px-4 text-center">Câu Làm Được / Sai</th>
+                    <th className="py-3.5 px-4 text-center">Đánh Giá</th>
                     <th className="py-3.5 px-4 text-center">Trạng Thái</th>
                     <th className="py-3.5 px-4 text-right">Thao Tác</th>
                   </tr>
@@ -602,7 +659,7 @@ export default function StudentProfilePage() {
                 <tbody className="divide-y divide-slate-800">
                   {Object.keys(lessonsMap).length === 0 ? (
                     <tr>
-                      <td colSpan={6} className="py-8 text-center text-slate-500">
+                      <td colSpan={7} className="py-8 text-center text-slate-500">
                         Chưa có bài học nào được ghi nhận. Hãy bắt đầu học ngay nhé!
                       </td>
                     </tr>
@@ -615,6 +672,9 @@ export default function StudentProfilePage() {
                         ? `${mins}p ${remainSec > 0 ? `${remainSec}s` : ""}`
                         : `${remainSec}s`;
 
+                      const correct = l.correctQuestionsCount || 0;
+                      const wrong = l.wrongQuestionsCount || 0;
+
                       return (
                         <tr key={l.lessonId} className="hover:bg-slate-900/60 transition-colors">
                           <td className="py-3 px-4 font-black text-cyan-300">{l.lessonId}</td>
@@ -622,16 +682,26 @@ export default function StudentProfilePage() {
                           <td className="py-3 px-4 text-center font-bold text-cyan-400">
                             ⏱ {timeStr}
                           </td>
+                          <td className="py-3 px-4 text-center">
+                            <div className="flex items-center justify-center gap-2 text-xs">
+                              <span className="text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                                🟢 {correct} đúng
+                              </span>
+                              <span className="text-rose-400 font-bold bg-rose-500/10 px-2 py-0.5 rounded-md border border-rose-500/20">
+                                🔴 {wrong} sai
+                              </span>
+                            </div>
+                          </td>
                           <td className="py-3 px-4 text-center font-black text-amber-300">
-                            ⭐ {l.score || 0} điểm
+                            ⭐ {l.score || 0}%
                           </td>
                           <td className="py-3 px-4 text-center">
                             {l.isCompleted ? (
-                              <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-bold">
+                              <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-bold">
                                 ✓ Hoàn thành
                               </span>
                             ) : (
-                              <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px] font-bold">
+                              <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px] font-bold">
                                 Đang học
                               </span>
                             )}

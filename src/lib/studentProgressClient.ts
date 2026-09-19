@@ -9,6 +9,9 @@ export interface LessonProgressItem {
   isCompleted: boolean;
   score: number;
   totalQuestions: number;
+  correctQuestionsCount?: number;
+  wrongQuestionsCount?: number;
+  attemptedQuestionsCount?: number;
   lastStudiedAt: string;
 }
 
@@ -39,7 +42,12 @@ export interface StudentProgressRecord {
   coins?: number;
   streak?: number;
   totalVideoMinutes: number;
+  totalVideoSeconds?: number;
   totalCompletedLessons: number;
+  totalCorrectQuestions?: number;
+  totalWrongQuestions?: number;
+  totalQuestionsAttempted?: number;
+  accuracyRate?: number;
   lessons: Record<string, LessonProgressItem>;
   wrongQuestions: Record<string, WrongQuestionItem>;
   solvedQuestions?: Record<string, { solvedAt: string; earnedExp?: number } | boolean>;
@@ -114,6 +122,11 @@ export function saveLocalStudentProgressUpdate(params: {
   isCompleted?: boolean;
   score?: number;
   totalQuestions?: number;
+  isCorrectAnswer?: boolean;
+  isWrongAnswer?: boolean;
+  correctCount?: number;
+  wrongCount?: number;
+  attemptedCount?: number;
   wrongQuestion?: {
     questionId: string;
     badge?: string;
@@ -151,7 +164,12 @@ export function saveLocalStudentProgressUpdate(params: {
       coins: params.coins !== undefined ? params.coins : 50,
       streak: params.streak !== undefined ? params.streak : 1,
       totalVideoMinutes: 0,
+      totalVideoSeconds: 0,
       totalCompletedLessons: 0,
+      totalCorrectQuestions: 0,
+      totalWrongQuestions: 0,
+      totalQuestionsAttempted: 0,
+      accuracyRate: 0,
       lessons: {},
       wrongQuestions: {},
       updatedAt: new Date().toISOString(),
@@ -189,6 +207,9 @@ export function saveLocalStudentProgressUpdate(params: {
         isCompleted: false,
         score: 0,
         totalQuestions: params.totalQuestions || 10,
+        correctQuestionsCount: 0,
+        wrongQuestionsCount: 0,
+        attemptedQuestionsCount: 0,
         lastStudiedAt: new Date().toISOString(),
       };
     }
@@ -212,10 +233,39 @@ export function saveLocalStudentProgressUpdate(params: {
     if (params.totalQuestions !== undefined) {
       l.totalQuestions = params.totalQuestions;
     }
+
+    // Ghi nhận câu đúng / câu sai trong bài học
+    if (params.isCorrectAnswer) {
+      l.correctQuestionsCount = (l.correctQuestionsCount || 0) + 1;
+      l.attemptedQuestionsCount = (l.attemptedQuestionsCount || 0) + 1;
+    }
+    if (params.isWrongAnswer) {
+      l.wrongQuestionsCount = (l.wrongQuestionsCount || 0) + 1;
+      l.attemptedQuestionsCount = (l.attemptedQuestionsCount || 0) + 1;
+    }
+    if (params.correctCount !== undefined) {
+      l.correctQuestionsCount = Math.max(l.correctQuestionsCount || 0, params.correctCount);
+    }
+    if (params.wrongCount !== undefined) {
+      l.wrongQuestionsCount = Math.max(l.wrongQuestionsCount || 0, params.wrongCount);
+    }
+    if (params.attemptedCount !== undefined) {
+      l.attemptedQuestionsCount = Math.max(l.attemptedQuestionsCount || 0, params.attemptedCount);
+    }
+
+    // Tính điểm và trạng thái hoàn thành nếu có số liệu làm bài
+    if (l.totalQuestions > 0 && l.correctQuestionsCount !== undefined) {
+      const calculatedScore = Math.min(100, Math.round((l.correctQuestionsCount / l.totalQuestions) * 100));
+      l.score = Math.max(l.score || 0, calculatedScore);
+      if (l.score >= 80) {
+        l.isCompleted = true;
+      }
+    }
+
     l.lastStudiedAt = new Date().toISOString();
   }
 
-  // 2. Cập nhật câu sai
+  // 2. Cập nhật câu sai vào Sổ tay câu sai
   if (params.wrongQuestion && params.wrongQuestion.questionId) {
     const qId = params.wrongQuestion.questionId;
     if (!existing.wrongQuestions[qId]) {
@@ -258,16 +308,39 @@ export function saveLocalStudentProgressUpdate(params: {
     };
   }
 
-  // 4. Tính toán tổng thời lượng video & bài học hoàn thành
+  // 4. Tính toán tổng hợp khoa học & chính xác:
+  // - Thời gian xem video (giây và phút)
+  // - Số bài hoàn thành
+  // - Số câu làm được, số câu sai, tổng số câu đã làm, tỷ lệ chính xác %
   let totalSec = 0;
   let completedCount = 0;
+  let totalLessonCorrect = 0;
+  let totalLessonWrong = 0;
+  let totalLessonAttempted = 0;
+
   Object.values(existing.lessons).forEach((item) => {
     totalSec += item.videoWatchedSeconds || 0;
     if (item.isCompleted) completedCount++;
+    totalLessonCorrect += item.correctQuestionsCount || 0;
+    totalLessonWrong += item.wrongQuestionsCount || 0;
+    totalLessonAttempted += item.attemptedQuestionsCount || ((item.correctQuestionsCount || 0) + (item.wrongQuestionsCount || 0));
   });
 
+  const solvedCount = Object.keys(existing.solvedQuestions || {}).length;
+  const wrongCount = Object.keys(existing.wrongQuestions || {}).length;
+
+  const totalCorrect = Math.max(totalLessonCorrect, solvedCount);
+  const totalWrong = Math.max(totalLessonWrong, wrongCount);
+  const totalAttempted = Math.max(totalLessonAttempted, totalCorrect + totalWrong);
+  const accuracy = totalAttempted > 0 ? Math.min(100, Math.round((totalCorrect / totalAttempted) * 100)) : 0;
+
+  existing.totalVideoSeconds = totalSec;
   existing.totalVideoMinutes = Math.round(totalSec / 60);
   existing.totalCompletedLessons = completedCount;
+  existing.totalCorrectQuestions = totalCorrect;
+  existing.totalWrongQuestions = totalWrong;
+  existing.totalQuestionsAttempted = totalAttempted;
+  existing.accuracyRate = accuracy;
   existing.updatedAt = new Date().toISOString();
 
   // Lưu lại vào store
@@ -277,7 +350,14 @@ export function saveLocalStudentProgressUpdate(params: {
 
   saveLocalProgressStore(store);
 
-  // Đồng bộ thời gian thực lên Cloud (Supabase) khi người dùng có thao tác học tập
+  // Phát sự kiện để mọi giao diện (Tài khoản, Phòng học, v.v.) tự động cập nhật
+  if (typeof window !== "undefined") {
+    try {
+      window.dispatchEvent(new CustomEvent("vinamath_student_progress_saved", { detail: existing }));
+    } catch {}
+  }
+
+  // Đồng bộ thời gian thực lên Cloud khi người dùng có tài khoản
   const studentIdToSync = params.userId || params.studentCode || params.username;
   if (studentIdToSync && studentIdToSync !== "guest") {
     try {
@@ -297,6 +377,15 @@ export function saveLocalStudentProgressUpdate(params: {
           isCompleted: params.isCompleted,
           score: params.score,
           totalQuestions: params.totalQuestions,
+          isCorrectAnswer: params.isCorrectAnswer,
+          isWrongAnswer: params.isWrongAnswer,
+          correctCount: params.correctCount,
+          wrongCount: params.wrongCount,
+          attemptedCount: params.attemptedCount,
+          totalCorrectQuestions: existing.totalCorrectQuestions,
+          totalWrongQuestions: existing.totalWrongQuestions,
+          totalQuestionsAttempted: existing.totalQuestionsAttempted,
+          accuracyRate: existing.accuracyRate,
           wrongQuestion: params.wrongQuestion,
           resolveQuestionId: params.resolveQuestionId,
           solvedQuestionId: params.solvedQuestionId,

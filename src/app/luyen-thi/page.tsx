@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { SAMPLE_EXAMS, GRADE_EXAM_TABS, EXAM_PERIODS } from "@/data/sampleExams";
 import { 
@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { canAccessGrade } from "@/lib/teacherClassUtils";
+import { getPracticeHistorySummary } from "@/lib/practiceExamStore";
+import { PracticeExamSummary } from "@/types/practiceExam";
 
 const GRADE_STYLES: {
   [key: string]: {
@@ -121,6 +123,19 @@ export default function LuyenThiPage() {
   const [selectedGrade, setSelectedGrade] = useState<string>(defaultGradeId);
   const [selectedPeriod, setSelectedPeriod] = useState<string>("all");
   const [accessWarning, setAccessWarning] = useState<string | null>(null);
+  const [summaryMap, setSummaryMap] = useState<Record<string, PracticeExamSummary>>({});
+
+  // Nạp tóm tắt kết quả các lần thi thử
+  useEffect(() => {
+    const updateSummary = () => {
+      const map = getPracticeHistorySummary(user?.id || user?.studentCode);
+      setSummaryMap(map);
+    };
+
+    updateSummary();
+    window.addEventListener("vinamath_practice_exam_saved", updateSummary);
+    return () => window.removeEventListener("vinamath_practice_exam_saved", updateSummary);
+  }, [user]);
 
   // Đổi khối lớp
   const handleSelectGrade = (gradeId: string) => {
@@ -349,6 +364,22 @@ export default function LuyenThiPage() {
                         {exam.subtitle}
                       </p>
                     )}
+
+                    {/* Huy hiệu kết quả thi thử đã lưu */}
+                    {summaryMap[exam.id] && (
+                      <div className="flex flex-wrap items-center gap-2.5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold">
+                          <Award className="w-3.5 h-3.5 text-amber-500" />
+                          <span>Điểm cao nhất: <strong>{summaryMap[exam.id].bestScore.toFixed(1)}/10đ</strong></span>
+                        </span>
+                        <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                          • Đã thi {summaryMap[exam.id].attemptsCount} lần
+                        </span>
+                        <span className="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3" /> Đã lưu kết quả
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   <Link
@@ -359,7 +390,7 @@ export default function LuyenThiPage() {
                         : "bg-gradient-to-b from-blue-600 via-indigo-600 to-indigo-700 text-white border-t border-blue-400 shadow-[0_5px_0_0_#1e3a8a] hover:from-blue-500 hover:to-indigo-600 active:translate-y-1 active:shadow-none"
                     }`}
                   >
-                    <span>Vào làm bài ngay</span>
+                    <span>{summaryMap[exam.id] ? "Làm lại / Thi tiếp" : "Vào làm bài ngay"}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

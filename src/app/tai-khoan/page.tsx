@@ -24,12 +24,16 @@ import {
   ExternalLink,
   BookMarked,
   Filter,
+  History,
+  FileCheck,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
 import { getUserGradeKey } from "@/lib/teacherClassUtils";
+import { getAllPracticeResults } from "@/lib/practiceExamStore";
+import { PracticeExamResult } from "@/types/practiceExam";
 
 export default function StudentProfilePage() {
   const router = useRouter();
@@ -37,19 +41,29 @@ export default function StudentProfilePage() {
   const userGradeKey = getUserGradeKey(user);
 
   const [progressData, setProgressData] = useState<any>(null);
+  const [practiceResults, setPracticeResults] = useState<PracticeExamResult[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [filterWrong, setFilterWrong] = useState<"all" | "active" | "resolved">("all");
-  const [activeTab, setActiveTab] = useState<"overview" | "mistakes" | "lessons">("overview");
+  const [activeTab, setActiveTab] = useState<"overview" | "mistakes" | "lessons" | "practice">("overview");
   const [retryingQuestionId, setRetryingQuestionId] = useState<string | null>(null);
   const [retryAnswer, setRetryAnswer] = useState<number | null>(null);
   const [retryFeedback, setRetryFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
 
   useEffect(() => {
+    const loadPracticeResults = () => {
+      const results = getAllPracticeResults(user?.id || user?.studentCode || user?.username);
+      setPracticeResults(results);
+    };
+
     if (user?.id || user?.studentCode || user?.username) {
       fetchStudentProgress();
+      loadPracticeResults();
     } else {
       setIsLoading(false);
     }
+
+    window.addEventListener("vinamath_practice_exam_saved", loadPracticeResults);
+    return () => window.removeEventListener("vinamath_practice_exam_saved", loadPracticeResults);
   }, [user]);
 
   const fetchStudentProgress = async () => {
@@ -223,7 +237,7 @@ export default function StudentProfilePage() {
       </div>
 
       {/* 2. Key Metrics Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
         <div className="p-4 rounded-2xl bg-[#0e1526] border border-cyan-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-cyan-400 font-bold">
             <span>Video Đã Xem</span>
@@ -246,6 +260,21 @@ export default function StudentProfilePage() {
           <p className="text-[10px] text-slate-400">Đạt chuẩn kiến thức ≥ 80%</p>
         </div>
 
+        <div className="p-4 rounded-2xl bg-[#0e1526] border border-indigo-500/30 space-y-1">
+          <div className="flex items-center justify-between text-xs text-indigo-400 font-bold">
+            <span>Đề Thi Thử</span>
+            <Award className="w-4 h-4" />
+          </div>
+          <div className="text-xl sm:text-2xl font-black text-white">
+            {practiceResults.length} <span className="text-xs font-bold text-slate-400">lần</span>
+          </div>
+          <p className="text-[10px] text-slate-400">
+            {practiceResults.length > 0
+              ? `Cao nhất: ${Math.max(...practiceResults.map((r) => r.score)).toFixed(1)}/10đ`
+              : "Chưa tham gia thi"}
+          </p>
+        </div>
+
         <div className="p-4 rounded-2xl bg-[#0e1526] border border-amber-500/30 space-y-1">
           <div className="flex items-center justify-between text-xs text-amber-400 font-bold">
             <span>Điểm Tích Lũy</span>
@@ -257,7 +286,7 @@ export default function StudentProfilePage() {
           <p className="text-[10px] text-slate-400">🪙 {user.coins || 0} VinaCoins</p>
         </div>
 
-        <div className="p-4 rounded-2xl bg-[#0e1526] border border-rose-500/30 space-y-1">
+        <div className="p-4 rounded-2xl bg-[#0e1526] border border-rose-500/30 space-y-1 col-span-2 sm:col-span-1">
           <div className="flex items-center justify-between text-xs text-rose-400 font-bold">
             <span>Sổ Tay Câu Sai</span>
             <AlertTriangle className="w-4 h-4" />
@@ -272,10 +301,10 @@ export default function StudentProfilePage() {
       </div>
 
       {/* 3. Navigation Tabs */}
-      <div className="flex items-center gap-2 border-b border-slate-800 pb-2">
+      <div className="flex items-center gap-2 border-b border-slate-800 pb-2 overflow-x-auto">
         <button
           onClick={() => setActiveTab("overview")}
-          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 whitespace-nowrap select-none ${
             activeTab === "overview"
               ? "bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20"
               : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
@@ -286,8 +315,20 @@ export default function StudentProfilePage() {
         </button>
 
         <button
+          onClick={() => setActiveTab("practice")}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 whitespace-nowrap select-none ${
+            activeTab === "practice"
+              ? "bg-gradient-to-r from-indigo-600 to-cyan-600 text-white shadow-md shadow-indigo-600/30"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <History className="w-4 h-4 text-indigo-400" />
+          <span>Lịch Sử Thi Thử ({practiceResults.length})</span>
+        </button>
+
+        <button
           onClick={() => setActiveTab("mistakes")}
-          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 whitespace-nowrap select-none ${
             activeTab === "mistakes"
               ? "bg-rose-500 text-white shadow-md shadow-rose-500/20"
               : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
@@ -302,7 +343,7 @@ export default function StudentProfilePage() {
 
         <button
           onClick={() => setActiveTab("lessons")}
-          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 whitespace-nowrap select-none ${
             activeTab === "lessons"
               ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
               : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
@@ -611,6 +652,180 @@ export default function StudentProfilePage() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* TAB 4: LỊCH SỬ THI THỬ */}
+      {activeTab === "practice" && (
+        <div className="space-y-4">
+          <div className="p-5 rounded-3xl bg-[#0e1526] border border-indigo-500/30 space-y-4 shadow-xl">
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400">
+                  <History className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-black text-white">
+                    Nhật Ký & Kết Quả Thi Thử
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Lưu trữ kết quả các lần làm bài thi Giữa kỳ, Cuối kỳ và Chuyên đề chuẩn cấu trúc Bộ GD&ĐT
+                  </p>
+                </div>
+              </div>
+
+              <Link
+                href="/luyen-thi"
+                className="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-xs shadow-md shadow-indigo-950/40 flex items-center gap-1.5 transition-all select-none"
+              >
+                <span>Vào phòng luyện thi</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Thống kê nhanh */}
+            {practiceResults.length > 0 && (
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
+                  <div className="text-[11px] text-slate-400 font-semibold">Tổng lượt thi</div>
+                  <div className="text-xl font-black text-cyan-400">{practiceResults.length}</div>
+                </div>
+                <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
+                  <div className="text-[11px] text-slate-400 font-semibold">Điểm cao nhất</div>
+                  <div className="text-xl font-black text-amber-400">
+                    {Math.max(...practiceResults.map((r) => r.score)).toFixed(1)}/10đ
+                  </div>
+                </div>
+                <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
+                  <div className="text-[11px] text-slate-400 font-semibold">Điểm trung bình</div>
+                  <div className="text-xl font-black text-emerald-400">
+                    {(
+                      practiceResults.reduce((acc, r) => acc + r.score, 0) /
+                      practiceResults.length
+                    ).toFixed(1)}/10đ
+                  </div>
+                </div>
+                <div className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 text-center">
+                  <div className="text-[11px] text-slate-400 font-semibold">Lần thi gần nhất</div>
+                  <div className="text-xs font-bold text-slate-300 truncate mt-1">
+                    {practiceResults[0]?.submittedAt
+                      ? new Date(practiceResults[0].submittedAt).toLocaleDateString("vi-VN")
+                      : "—"}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Danh sách kết quả */}
+            {practiceResults.length === 0 ? (
+              <div className="text-center py-12 p-6 rounded-2xl bg-slate-900/40 border border-dashed border-slate-800 space-y-3">
+                <Award className="w-12 h-12 text-slate-600 mx-auto" />
+                <div className="space-y-1">
+                  <p className="font-bold text-slate-300 text-sm">
+                    Bạn chưa có kết quả thi thử nào.
+                  </p>
+                  <p className="text-xs text-slate-500 max-w-md mx-auto">
+                    Hãy truy cập Phòng Luyện Thi để thử sức với các bộ đề thi trắc nghiệm và tự luận chuẩn định dạng Bộ Giáo Dục!
+                  </p>
+                </div>
+                <Link
+                  href="/luyen-thi"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs transition-all shadow-md shadow-cyan-500/20"
+                >
+                  <GraduationCap className="w-4 h-4" />
+                  <span>Khám phá các đề thi ngay</span>
+                </Link>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {practiceResults.map((res) => {
+                  const dateStr = res.submittedAt
+                    ? new Date(res.submittedAt).toLocaleString("vi-VN", {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        day: "2-digit",
+                        month: "2-digit",
+                        year: "numeric",
+                      })
+                    : "—";
+
+                  const minutes = Math.floor(res.timeSpentSeconds / 60);
+                  const seconds = res.timeSpentSeconds % 60;
+                  const durationStr = `${minutes}p ${seconds < 10 ? "0" : ""}${seconds}s`;
+
+                  return (
+                    <div
+                      key={res.id}
+                      className="p-4 sm:p-5 rounded-2xl bg-[#090D16] border border-slate-800 hover:border-indigo-500/40 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
+                    >
+                      <div className="space-y-1.5 flex-1 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2 text-xs">
+                          {res.grade && (
+                            <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-black uppercase text-[10px] border border-cyan-500/30">
+                              {res.grade.replace("lop-", "Lớp ")}
+                            </span>
+                          )}
+                          <span className="text-slate-400 text-[11px] flex items-center gap-1">
+                            <Clock className="w-3.5 h-3.5" /> {dateStr}
+                          </span>
+                          <span className="text-slate-500 text-[11px]">•</span>
+                          <span className="text-slate-400 text-[11px]">Làm trong: {durationStr}</span>
+                        </div>
+
+                        <h4 className="font-extrabold text-white text-sm sm:text-base truncate">
+                          {res.examTitle}
+                        </h4>
+
+                        {/* Điểm thành phần */}
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-300 pt-0.5">
+                          <span>
+                            Phần I: <strong className="text-cyan-400">{res.scorePart1?.toFixed(2)}đ</strong>
+                          </span>
+                          <span>•</span>
+                          <span>
+                            Phần II: <strong className="text-purple-400">{res.scorePart2?.toFixed(2)}đ</strong>
+                          </span>
+                          <span>•</span>
+                          <span>
+                            Phần III: <strong className="text-amber-400">{res.scorePart3?.toFixed(2)}đ</strong>
+                          </span>
+                          {res.essayFiles && res.essayFiles.length > 0 && (
+                            <>
+                              <span>•</span>
+                              <span className="text-indigo-300 font-semibold flex items-center gap-1">
+                                <FileCheck className="w-3.5 h-3.5 text-indigo-400" />
+                                Tự luận: {res.essayFiles.length} trang
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Điểm tổng và Nút thi lại */}
+                      <div className="flex items-center justify-between md:justify-end gap-4 w-full md:w-auto shrink-0 pt-2 md:pt-0 border-t md:border-t-0 border-slate-800">
+                        <div className="text-left md:text-right">
+                          <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                            Tổng điểm
+                          </div>
+                          <div className="text-2xl font-black text-cyan-400">
+                            {res.score.toFixed(2)} <span className="text-xs font-bold text-slate-500">/ 10đ</span>
+                          </div>
+                        </div>
+
+                        <Link
+                          href={`/luyen-thi/${res.examId}`}
+                          className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 hover:text-white border border-slate-700 hover:border-cyan-400 text-xs font-black transition-all flex items-center gap-1.5 select-none"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5" />
+                          <span>Thi lại</span>
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       )}

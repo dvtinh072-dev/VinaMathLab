@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Award, CheckCircle2, RotateCcw, X, FileCheck, Eye } from "lucide-react";
+import { Award, CheckCircle2, RotateCcw, X, FileCheck, Eye, History } from "lucide-react";
 import { ExamData } from "./ExamEngine";
 import { EssayAttachment } from "@/types/customExam";
 
@@ -14,6 +14,7 @@ interface Props {
   onClose: () => void;
   onRestart: () => void;
   onOpenEssay?: () => void;
+  onOpenHistory?: () => void;
 }
 
 export function ExamResultModal({
@@ -25,6 +26,7 @@ export function ExamResultModal({
   onClose,
   onRestart,
   onOpenEssay,
+  onOpenHistory,
 }: Props) {
   let scorePart1 = 0;
   let correctPart1 = 0;
@@ -133,6 +135,25 @@ export function ExamResultModal({
               <span>Chưa đính kèm bài làm</span>
             </div>
           )}
+          {/* Thông báo đã lưu kết quả */}
+          <div className="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-xs text-emerald-300 flex items-center justify-between">
+            <span className="flex items-center gap-1.5 font-semibold">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              Đã lưu kết quả thi thử vào lịch sử học tập
+            </span>
+            {onOpenHistory && (
+              <button
+                onClick={() => {
+                  onClose();
+                  onOpenHistory();
+                }}
+                className="px-2.5 py-1 rounded-lg bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-200 text-[11px] font-bold transition-colors flex items-center gap-1 cursor-pointer"
+              >
+                <History className="w-3.5 h-3.5" />
+                <span>Xem lịch sử</span>
+              </button>
+            )}
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">

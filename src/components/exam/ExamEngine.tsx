@@ -2,13 +2,21 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Timer, Send, Flag, RotateCcw, Award, ArrowLeft, AlertTriangle, FileCheck } from "lucide-react";
+import { Timer, Send, Flag, RotateCcw, Award, ArrowLeft, AlertTriangle, FileCheck, History } from "lucide-react";
 import { MultipleChoiceQuestionData, QuestionMultipleChoice } from "./QuestionMultipleChoice";
 import { TrueFalseQuestionData, QuestionTrueFalse } from "./QuestionTrueFalse";
 import { ShortAnswerQuestionData, QuestionShortAnswer } from "./QuestionShortAnswer";
 import { ExamResultModal } from "./ExamResultModal";
 import EssaySubmissionUploader from "./EssaySubmissionUploader";
+import PracticeExamHistoryModal from "./PracticeExamHistoryModal";
 import { EssayAttachment } from "@/types/customExam";
+import { PracticeExamResult } from "@/types/practiceExam";
+import {
+  saveLocalPracticeResult,
+  getPracticeResultsByExamId,
+  deletePracticeResult,
+} from "@/lib/practiceExamStore";
+import { useAuth } from "@/context/AuthContext";
 import { formatTime } from "@/lib/utils";
 import confetti from "canvas-confetti";
 
@@ -35,6 +43,7 @@ interface Props {
 }
 
 export function ExamEngine({ exam }: Props) {
+  const { user, addExpAndCoins } = useAuth();
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isEssayActive, setIsEssayActive] = useState(false);
   const [essayFiles, setEssayFiles] = useState<EssayAttachment[]>([]);
@@ -43,6 +52,15 @@ export function ExamEngine({ exam }: Props) {
   const [showResultModal, setShowResultModal] = useState(false);
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const [flagged, setFlagged] = useState<{ [id: string]: boolean }>({});
+
+  // Lịch sử thi thử
+  const [practiceHistory, setPracticeHistory] = useState<PracticeExamResult[]>([]);
+  const [isHistoryModalOpen, setIsHistoryModalOpen] = useState(false);
+
+  useEffect(() => {
+    const list = getPracticeResultsByExamId(exam.id, user?.id || user?.studentCode);
+    setPracticeHistory(list);
+  }, [exam.id, user]);
 
   // User answers state
   const [mcAnswers, setMcAnswers] = useState<{ [id: string]: "A" | "B" | "C" | "D" }>({});
@@ -75,6 +93,82 @@ export function ExamEngine({ exam }: Props) {
       spread: 70,
       origin: { y: 0.6 },
     });
+
+    // Tự động tính điểm và lưu kết quả thi thử
+    try {
+      let scorePart1 = 0;
+      let correctPart1 = 0;
+      let scorePart2 = 0;
+      let scorePart3 = 0;
+      let correctPart3 = 0;
+
+      exam.questions.forEach((q) => {
+        if (q.type === "multiple_choice") {
+          if (mcAnswers[q.id] === q.correctKey) {
+            scorePart1 += 0.25;
+            correctPart1 += 1;
+          }
+        } else if (q.type === "true_false") {
+          const userAns = tfAnswers[q.id] || {};
+          const subCorrect = q.subQuestions.filter((sub) => userAns[sub.key] === sub.isCorrect).length;
+          if (subCorrect === 1) scorePart2 += 0.1;
+          else if (subCorrect === 2) scorePart2 += 0.25;
+          else if (subCorrect === 3) scorePart2 += 0.5;
+          else if (subCorrect === 4) scorePart2 += 1.0;
+        } else if (q.type === "short_answer") {
+          const user = (saAnswers[q.id] || "").trim().toLowerCase();
+          const correct = q.correctAnswer.trim().toLowerCase();
+          const match =
+            user === correct ||
+            (q.acceptableAnswers && q.acceptableAnswers.some((a) => a.trim().toLowerCase() === user));
+          if (match) {
+            scorePart3 += 0.5;
+            correctPart3 += 1;
+          }
+        }
+      });
+
+      const totalScore = parseFloat((scorePart1 + scorePart2 + scorePart3).toFixed(2));
+      const correctCount = correctPart1 + correctPart3;
+      const timeSpentSeconds = Math.max(0, exam.durationMinutes * 60 - timeLeft);
+
+      const newResult: PracticeExamResult = {
+        id: `pe_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        examId: exam.id,
+        examTitle: exam.title,
+        grade: exam.grade,
+        totalQuestions: exam.totalQuestions,
+        score: totalScore,
+        totalScore,
+        maxScore: 10,
+        scorePart1: parseFloat(scorePart1.toFixed(2)),
+        scorePart2: parseFloat(scorePart2.toFixed(2)),
+        scorePart3: parseFloat(scorePart3.toFixed(2)),
+        correctCount,
+        timeSpentSeconds,
+        submittedAt: new Date().toISOString(),
+        mcAnswers,
+        tfAnswers,
+        saAnswers,
+        essayFiles,
+        userId: user?.id || user?.studentCode,
+        studentName: user?.fullName,
+        studentClass: user?.schoolClass || user?.grade,
+      };
+
+      saveLocalPracticeResult(newResult);
+      const updated = getPracticeResultsByExamId(exam.id, user?.id || user?.studentCode);
+      setPracticeHistory(updated);
+
+      // Thưởng EXP & Xu học tập
+      if (addExpAndCoins) {
+        const earnedExp = Math.max(10, Math.round(totalScore * 10));
+        const earnedCoins = Math.max(2, Math.round(totalScore * 2));
+        addExpAndCoins(earnedExp, earnedCoins);
+      }
+    } catch (e) {
+      console.error("Lỗi khi lưu kết quả thi thử:", e);
+    }
   };
 
   const handleRestart = () => {
@@ -137,8 +231,23 @@ export function ExamEngine({ exam }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-950/70 border border-blue-500/40 text-cyan-300 font-mono font-black text-sm sm:text-base shadow-inner">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+          {/* Lịch sử làm bài */}
+          <button
+            onClick={() => setIsHistoryModalOpen(true)}
+            className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-300 hover:text-cyan-300 border border-slate-700 hover:border-cyan-500/50 text-xs font-bold transition-all flex items-center gap-1.5 select-none cursor-pointer"
+            title="Xem lịch sử các lần thi thử"
+          >
+            <History className="w-4 h-4 text-cyan-400" />
+            <span className="hidden md:inline">Lịch sử</span>
+            {practiceHistory.length > 0 && (
+              <span className="px-1.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[10px] font-black border border-cyan-500/40">
+                {practiceHistory.length}
+              </span>
+            )}
+          </button>
+
+          <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-blue-950/70 border border-blue-500/40 text-cyan-300 font-mono font-black text-sm sm:text-base shadow-inner">
             <Timer className="w-4 h-4 text-cyan-400 animate-pulse" />
             {formatTime(timeLeft)}
           </div>
@@ -460,6 +569,24 @@ export function ExamEngine({ exam }: Props) {
           onClose={() => setShowResultModal(false)}
           onRestart={handleRestart}
           onOpenEssay={() => setIsEssayActive(true)}
+          onOpenHistory={() => setIsHistoryModalOpen(true)}
+        />
+      )}
+
+      {/* Modal Lịch sử các lần thi thử */}
+      {isHistoryModalOpen && (
+        <PracticeExamHistoryModal
+          examTitle={exam.title}
+          history={practiceHistory}
+          isOpen={isHistoryModalOpen}
+          onClose={() => {
+            setIsHistoryModalOpen(false);
+            setPracticeHistory(getPracticeResultsByExamId(exam.id, user?.id || user?.studentCode));
+          }}
+          onDelete={(id) => {
+            deletePracticeResult(id);
+            setPracticeHistory(getPracticeResultsByExamId(exam.id, user?.id || user?.studentCode));
+          }}
         />
       )}
     </div>

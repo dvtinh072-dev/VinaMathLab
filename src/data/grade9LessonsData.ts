@@ -3733,5 +3733,882 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Chia cả hai vế cho số âm $-3$ thì bất đẳng thức đổi chiều: $m < n$."
       }
     ]
+  },
+"t9-b6-bat-phuong-trinh-bac-nhat": {
+    "id": "t9-b6-bat-phuong-trinh-bac-nhat",
+    "lessonNumber": 6,
+    "title": "Bài 6: Bất phương trình bậc nhất một ẩn",
+    "bookChapter": "Chương II: Phương trình và bất phương trình bậc nhất một ẩn",
+    "scenarioTitle": "Tình huống: Cân đối chi tiêu mua sắm và xác định điểm xét tuyển tối thiểu",
+    "scenarioFrames": [],
+    "youtubeVideoId": "D7Y4Y_g1QvE",
+    "youtubeVideoTitle": "Bài Giảng Video: Bất Phương Trình Bậc Nhất Một Ẩn - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "D7Y4Y_g1QvE",
+        "title": "Tiết 1: Định nghĩa bất phương trình bậc nhất một ẩn và hai quy tắc biến đổi"
+      },
+      {
+        "id": "p7Q6K8M9z1w",
+        "title": "Tiết 2: Cách giải bất phương trình bậc nhất một ẩn và bài toán thực tế"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.6.1",
+        "title": "Ví dụ 1: Nhận biết bất phương trình bậc nhất một ẩn",
+        "question": "Trong các bất phương trình sau, bất phương trình nào là bất phương trình bậc nhất một ẩn?",
+        "options": [
+          "$2x - 8 > 0$",
+          "$0x + 8 \\ge 0$",
+          "$x^2 - 4 < 0$",
+          "$\\frac{1}{x} + 2 \\le 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $< 0, \\ge 0, \\le 0$) với $a \\ne 0$. Do đó $2x - 8 > 0$ là bất phương trình bậc nhất một ẩn (hệ số $a = 2 \\ne 0$ và $b = -8$)."
+      },
+      {
+        "id": "vq-9.6.2",
+        "title": "Ví dụ 2: Kiểm tra nghiệm của bất phương trình",
+        "question": "Trong hai giá trị $x = 1$ và $x = 2$, giá trị nào là nghiệm của bất phương trình $3x - 4 \\le 0$?",
+        "options": [
+          "$x = 1$",
+          "$x = 2$",
+          "Cả $x = 1$ và $x = 2$",
+          "Không có giá trị nào"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1$ vào vế trái: $3(1) - 4 = -1 \\le 0$ (thỏa mãn). Thay $x = 2$: $3(2) - 4 = 2 > 0$ (không thỏa mãn). Vậy $x = 1$ là nghiệm của bất phương trình."
+      },
+      {
+        "id": "vq-9.6.3",
+        "title": "Ví dụ 3: Quy tắc nhân với số âm và đổi chiều bất phương trình",
+        "question": "Nghiệm của bất phương trình $-3x + 6 < 0$ là:",
+        "options": [
+          "$x > 2$",
+          "$x < 2$",
+          "$x > -2$",
+          "$x < -2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chuyển hạng tử $+6$ sang vế phải: $-3x < -6$. Chia cả hai vế cho số âm $-3$ và đổi chiều bất phương trình: $x > \\frac{-6}{-3} \\Leftrightarrow x > 2$."
+      },
+      {
+        "id": "vq-9.6.4",
+        "title": "Ví dụ 4: Lập bất phương trình từ bài toán mua sắm thực tế",
+        "question": "Bạn Thanh có $100$ nghìn đồng, mua một cây bút giá $18$ nghìn đồng và $x$ quyển vở giá $7$ nghìn đồng mỗi quyển. Bất phương trình biểu thị số tiền mua đồ không vượt quá số tiền bạn Thanh có là:",
+        "options": [
+          "$18 + 7x \\le 100$",
+          "$18 + 7x < 100$",
+          "$18 + 7x \\ge 100$",
+          "$7x - 18 \\le 100$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng số tiền mua một cây bút và $x$ quyển vở là $18 + 7x$ (nghìn đồng). Vì số tiền không vượt quá $100$ nghìn đồng nên ta có bất phương trình $18 + 7x \\le 100$."
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Khái niệm bất phương trình bậc nhất một ẩn và nghiệm",
+        "points": [
+          "Bất phương trình bậc nhất một ẩn là bất phương trình có dạng:",
+          "  $ax + b > 0$  (hoặc $ax + b < 0$; $ax + b \\ge 0$; $ax + b \\le 0$)",
+          "  trong đó $a$ và $b$ là hai số đã cho và $a \\ne 0$.",
+          "Nghiệm của bất phương trình:",
+          "  Số $x_0$ được gọi là một nghiệm của bất phương trình nếu thay $x = x_0$ vào bất phương trình ta được một khẳng định đúng.",
+          "  Giải bất phương trình là tìm tất cả các nghiệm của bất phương trình đó (tìm tập nghiệm)."
+        ],
+        "exampleTitle": "Ví dụ 1 (Tài liệu chuyên đề Toán 9 HK1 Trang 57 & SGK Trang 31)",
+        "exampleProblem": "a) Trong các bất phương trình sau, bất phương trình nào là bất phương trình bậc nhất một ẩn: $2x - 8 > 0$; $9 - 3x \\le 0$; $0x + 8 \\ge 0$; $\\frac{2}{5}x + 4 > 0$?\nb) Kiểm tra xem $x = -1$ có là nghiệm của bất phương trình $2x - 8 > 0$ và $9 - 3x \\le 0$ không.",
+        "exampleSolution": "• Câu a: Các bất phương trình $2x - 8 > 0$ ($a = 2, b = -8$), $9 - 3x \\le 0$ ($a = -3, b = 9$) và $\\frac{2}{5}x + 4 > 0$ ($a = \\frac{2}{5}, b = 4$) là các bất phương trình bậc nhất một ẩn. Bất phương trình $0x + 8 \\ge 0$ không phải vì có hệ số $a = 0$.\n• Câu b: Thay $x = -1$ vào $2x - 8 > 0$ ta được $2(-1) - 8 = -10 > 0$ (sai), vậy $x = -1$ không phải là nghiệm. Thay $x = -1$ vào $9 - 3x \\le 0$ ta được $9 - 3(-1) = 12 \\le 0$ (sai), vậy $x = -1$ cũng không là nghiệm của bất phương trình này."
+      },
+      {
+        "index": "2",
+        "title": "Hai quy tắc biến đổi tương đương và cách giải tổng quát",
+        "points": [
+          "Quy tắc chuyển vế:",
+          "  Khi chuyển một hạng tử của bất phương trình từ vế này sang vế kia thì ta phải đổi dấu hạng tử đó.",
+          "  Ví dụ: $ax + b > c \\Leftrightarrow ax > c - b$.",
+          "Quy tắc nhân với một số khác 0:",
+          "  • Khi nhân (hoặc chia) hai vế của bất phương trình với cùng một số DƯƠNG, ta GIỮ NGUYÊN chiều bất phương trình.",
+          "  • Khi nhân (hoặc chia) hai vế của bất phương trình với cùng một số ÂM, ta phải ĐỔI CHIỀU bất phương trình.",
+          "Biểu diễn tập nghiệm trên trục số:",
+          "  • $x > a$: Gạch bỏ phần bên trái điểm $a$, dùng dấu ngoặc tròn $($ tại điểm $a$ hướng về bên phải.",
+          "  • $x \\ge a$: Gạch bỏ phần bên trái điểm $a$, dùng dấu ngoặc vuông $[$ tại điểm $a$ hướng về bên phải.",
+          "  • $x < a$: Gạch bỏ phần bên phải điểm $a$, dùng dấu ngoặc tròn $)$ tại điểm $a$ hướng về bên trái.",
+          "  • $x \\le a$: Gạch bỏ phần bên phải điểm $a$, dùng dấu ngoặc vuông $]$ tại điểm $a$ hướng về bên trái."
+        ],
+        "exampleTitle": "Ví dụ 2 (Tài liệu chuyên đề Toán 9 HK1 Trang 58 & SGK Trang 33)",
+        "exampleProblem": "Giải bất phương trình $2x - 5 \\le 4x + 3$ và biểu diễn tập nghiệm trên trục số.",
+        "exampleSolution": "• Bước 1 (Chuyển vế): Chuyển các hạng tử chứa $x$ sang vế trái, các hằng số sang vế phải:\n  $2x - 4x \\le 3 + 5 \\Leftrightarrow -2x \\le 8$.\n• Bước 2 (Chia hai vế cho số âm): Chia cả hai vế cho $-2 < 0$ và đổi chiều bất phương trình:\n  $x \\ge \\frac{8}{-2} \\Leftrightarrow x \\ge -4$.\n• Bước 3 (Kết luận): Vậy nghiệm của bất phương trình là $x \\ge -4$.\n• Biểu diễn trên trục số: Gạch bỏ phần trục số bên trái điểm $-4$, tại điểm $-4$ đặt dấu ngoặc vuông $[$ quay về bên phải."
+      },
+      {
+        "index": "3",
+        "title": "Lập và giải bất phương trình bậc nhất một ẩn trong bài toán thực tế",
+        "points": [
+          "Quy trình 3 bước giải bài toán bằng cách lập bất phương trình:",
+          "  • Bước 1 (Lập bất phương trình): Chọn ẩn số và đặt điều kiện thích hợp cho ẩn; biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết; lập bất phương trình theo mối quan hệ đề bài cho.",
+          "  • Bước 2 (Giải bất phương trình): Áp dụng các quy tắc chuyển vế và nhân/chia để tìm nghiệm của bất phương trình.",
+          "  • Bước 3 (Đối chiếu và kết luận): Đối chiếu nghiệm của bất phương trình với điều kiện của ẩn và bối cảnh thực tế để trả lời.",
+          "Ý nghĩa các cụm từ thực tế thường gặp:",
+          "  • 'Không vượt quá', 'tối đa', 'nhiều nhất': sử dụng dấu $\\le$.",
+          "  • 'Ít nhất', 'tối thiểu', 'không dưới', 'không nhỏ hơn': sử dụng dấu $\\ge$.",
+          "  • 'Vượt quá', 'lớn hơn': sử dụng dấu $>$; 'nhỏ hơn', 'chưa tới': sử dụng dấu $<$."
+        ],
+        "exampleTitle": "Ví dụ 3 (Tài liệu chuyên đề Toán 9 HK1 Bài 5 Trang 57 & SGK Trang 34)",
+        "exampleProblem": "Trong kì thi gồm ba môn Toán, Ngữ văn và Tiếng Anh, điểm Toán và Ngữ văn tính hệ số 2, Tiếng Anh tính hệ số 1. Để trúng tuyển, điểm trung bình của ba môn ít nhất phải bằng 8,0. Bạn Na đạt 9,1 điểm Toán và 6,9 điểm Ngữ văn. Hãy lập và giải bất phương trình để tìm điểm số Tiếng Anh tối thiểu bạn Na cần đạt.",
+        "exampleSolution": "• Gọi điểm số môn Tiếng Anh bạn Na cần đạt là $x$ ($0 \\le x \\le 10$).\n• Tổng số hệ số ba môn là: $2 + 2 + 1 = 5$.\n• Điểm trung bình ba môn của bạn Na là: $\\frac{2 \\cdot 9,1 + 2 \\cdot 6,9 + x}{5} = \\frac{18,2 + 13,8 + x}{5} = \\frac{32 + x}{5}$.\n• Do điểm trung bình ít nhất phải bằng 8,0 nên ta có bất phương trình:\n  $\\frac{32 + x}{5} \\ge 8 \\Leftrightarrow 32 + x \\ge 40 \\Leftrightarrow x \\ge 8$.\n• Kết hợp với điều kiện $0 \\le x \\le 10$, ta được $8 \\le x \\le 10$.\n• Kết luận: Bạn Na phải đạt tối thiểu $8,0$ điểm môn Tiếng Anh để trúng tuyển."
+      }
+    ],
+    "tips": [
+      "QUY TẮC NHÂN/CHIA VỚI SỐ ÂM: Luôn nhớ đổi chiều bất đẳng thức (dấu > đổi thành <, dấu ≥ đổi thành ≤). Đây là lỗi học sinh hay mắc nhất!",
+      "TỪ KHÓA THỰC TẾ: Cụm từ 'nhiều nhất', 'tối đa', 'không quá' tương ứng với dấu ≤. Cụm từ 'ít nhất', 'tối thiểu', 'không dưới' tương ứng với dấu ≥.",
+      "BIỂU DIỄN TRỤC SỐ: Có dấu bằng (≤ hoặc ≥) dùng ngoặc vuông [, ]; không có dấu bằng (< hoặc >) dùng ngoặc tròn (, ). Bề lõm của ngoặc luôn hướng về phía miền nghiệm giữ lại.",
+      "ĐỐI CHIẾU ĐIỀU KIỆN THỰC TẾ: Các đại lượng như số người, số xe, số quyển vở phải là số nguyên dương (thuộc N*); nếu ra x ≥ 7,2 mà x là số tự nhiên thì phải chọn x nhỏ nhất bằng 8."
+    ],
+    "traps": [
+      "BẪY HỆ SỐ a = 0: Bất phương trình 0x + 5 > 0 hoặc 0x - 2 ≤ 0 không phải là bất phương trình bậc nhất một ẩn vì hệ số a = 0.",
+      "BẪY QUÊN ĐỔI CHIỀU: Ví dụ từ -2x < 6 suy ra x < -3 là SAI HOÀN TOÀN. Đúng phải là chia cho -2 và đổi chiều: x > -3.",
+      "BẪY ĐỔI DẤU KHI CHUYỂN VẾ: Khi chuyển hạng tử từ vế này sang vế kia phải đổi dấu hạng tử đó. Ví dụ: x - 5 > 2 ⇔ x > 2 + 5 (chuyển -5 thành +5).",
+      "BẪY LÀM TRÒN SỐ TRONG BÀI TOÁN THỰC TẾ: Ví dụ số xe chở hàng cần ít nhất thỏa mãn x ≥ 4,2 xe thì phải chọn tối thiểu 5 xe (làm tròn lên để chở hết hàng, không được làm tròn xuống 4 xe)."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-9.6.1",
+        "badge": "Câu 1 - Nhận biết bất phương trình bậc nhất một ẩn",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 1 (Trang 57)",
+        "question": "Bất phương trình nào sau đây là bất phương trình bậc nhất một ẩn?",
+        "options": [
+          "$2x - 8 > 0$",
+          "$0x + 8 \\ge 0$",
+          "$x^2 - 4 < 0$",
+          "$\\frac{1}{x} + 2 \\le 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $< 0, \\ge 0, \\le 0$) với $a \\ne 0$. Do đó $2x - 8 > 0$ là bất phương trình bậc nhất một ẩn (có $a = 2 \\ne 0$ và $b = -8$)."
+      },
+      {
+        "id": "quiz-9.6.2",
+        "badge": "Câu 2 - Nhận biết hệ số a và b",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.5 (Trang 32)",
+        "question": "Trong bất phương trình bậc nhất một ẩn $-3x + 6 < 0$, hệ số $a$ và $b$ lần lượt là:",
+        "options": [
+          "$a = -3;\\ b = 6$",
+          "$a = 3;\\ b = 6$",
+          "$a = -3;\\ b = -6$",
+          "$a = 6;\\ b = -3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bất phương trình có dạng $ax + b < 0$ với $a$ là hệ số đứng trước biến $x$ và $b$ là hạng tử tự do. Vậy $a = -3$ và $b = 6$."
+      },
+      {
+        "id": "quiz-9.6.3",
+        "badge": "Câu 3 - Nhận biết nghiệm của bất phương trình",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 2 (Trang 57)",
+        "question": "Trong các giá trị sau, giá trị nào là một nghiệm của bất phương trình $3x - 4 \\le 0$?",
+        "options": [
+          "$x = 1$",
+          "$x = 2$",
+          "$x = 3$",
+          "$x = 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thay $x = 1$ vào bất phương trình: $3(1) - 4 = -1 \\le 0$ (khẳng định đúng). Do đó $x = 1$ là một nghiệm."
+      },
+      {
+        "id": "quiz-9.6.4",
+        "badge": "Câu 4 - Quy tắc chuyển vế",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 2 (Trang 64)",
+        "question": "Cho bất phương trình $-4x + 12 > 0$. Áp dụng quy tắc chuyển vế, ta được bất phương trình nào sau đây?",
+        "options": [
+          "$-4x > -12$",
+          "$-4x > 12$",
+          "$4x > -12$",
+          "$-4x < -12$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi chuyển hạng tử $+12$ từ vế trái sang vế phải, ta phải đổi dấu thành $-12$: $-4x > -12$."
+      },
+      {
+        "id": "quiz-9.6.5",
+        "badge": "Câu 5 - Quy tắc nhân với số dương",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 3 (Trang 64)",
+        "question": "Cho bất phương trình $0,4x > -1,2$. Khi chia cả hai vế cho $0,4$, ta được bất phương trình nào?",
+        "options": [
+          "$x > -3$",
+          "$x < -3$",
+          "$x > 3$",
+          "$x < 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $0,4 > 0$ nên khi chia cả hai vế cho $0,4$, bất phương trình giữ nguyên chiều: $x > \\frac{-1,2}{0,4} \\Leftrightarrow x > -3$."
+      },
+      {
+        "id": "quiz-9.6.6",
+        "badge": "Câu 6 - Quy tắc nhân với số âm",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 17 (Trang 65)",
+        "question": "Nếu $a \\le b$ và $c < 0$ thì khẳng định nào sau đây là đúng?",
+        "options": [
+          "$ac \\ge bc$",
+          "$ac \\le bc$",
+          "$ac > bc$",
+          "$ac < bc$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi nhân cả hai vế của một bất đẳng thức với cùng một số âm, ta phải đổi chiều bất đẳng thức: $a \\le b$ và $c < 0 \\Rightarrow ac \\ge bc$."
+      },
+      {
+        "id": "quiz-9.6.7",
+        "badge": "Câu 7 - Nhận diện bất phương trình không phải bậc nhất một ẩn",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 1c (Trang 57)",
+        "question": "Bất phương trình nào sau đây KHÔNG PHẢI là bất phương trình bậc nhất một ẩn?",
+        "options": [
+          "$0x + 7 \\ge 0$",
+          "$-2x + 5 > 0$",
+          "$\\frac{1}{3}x - 2 < 0$",
+          "$4x - 1 \\le 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bất phương trình $0x + 7 \\ge 0$ có hệ số $a = 0$ nên không phải là bất phương trình bậc nhất một ẩn theo định nghĩa ($a \\ne 0$)."
+      },
+      {
+        "id": "quiz-9.6.8",
+        "badge": "Câu 8 - Nhận biết hình biểu diễn tập nghiệm trên trục số",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 18 (Trang 65) & SGK Trang 33",
+        "question": "Hình biểu diễn trục số có điểm $a = 3$, phần bên trái số $3$ bị gạch bỏ và tại điểm $3$ có dấu ngoặc vuông $[$ quay về bên phải là tập nghiệm của bất phương trình nào?",
+        "options": [
+          "$x \\ge 3$",
+          "$x > 3$",
+          "$x \\le 3$",
+          "$x < 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Phần bên trái bị gạch bỏ nghĩa là các giá trị nhỏ hơn $3$ không thỏa mãn; dấu ngoặc vuông $[$ quay sang phải biểu thị lấy các giá trị lớn hơn hoặc bằng $3$, tức là $x \\ge 3$."
+      },
+      {
+        "id": "quiz-9.6.9",
+        "badge": "Câu 9 - Giải bất phương trình bậc nhất đơn giản",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 3a (Trang 57)",
+        "question": "Nghiệm của bất phương trình $2x - 5 > 0$ là:",
+        "options": [
+          "$x > 2,5$",
+          "$x < 2,5$",
+          "$x > -2,5$",
+          "$x < -2,5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $2x - 5 > 0 \\Leftrightarrow 2x > 5 \\Leftrightarrow x > \\frac{5}{2} = 2,5$."
+      },
+      {
+        "id": "quiz-9.6.10",
+        "badge": "Câu 10 - Giải bất phương trình có hệ số âm",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 3r (Trang 57)",
+        "question": "Tập nghiệm của bất phương trình $-6x - 2 \\le 0$ là:",
+        "options": [
+          "$x \\ge -\\frac{1}{3}$",
+          "$x \\le -\\frac{1}{3}$",
+          "$x \\ge \\frac{1}{3}$",
+          "$x \\le \\frac{1}{3}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$-6x - 2 \\le 0 \\Leftrightarrow -6x \\le 2 \\Leftrightarrow x \\ge \\frac{2}{-6} = -\\frac{1}{3}$ (chia cho $-6 < 0$ đổi chiều)."
+      },
+      {
+        "id": "quiz-9.6.11",
+        "badge": "Câu 11 - Giải bất phương trình hai vế chứa biến",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4t (Trang 58)",
+        "question": "Nghiệm của bất phương trình $5x - 4 < 2x + 1$ là:",
+        "options": [
+          "$x < \\frac{5}{3}$",
+          "$x > \\frac{5}{3}$",
+          "$x < 1$",
+          "$x > 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chuyển vế: $5x - 2x < 1 + 4 \\Leftrightarrow 3x < 5 \\Leftrightarrow x < \\frac{5}{3}$."
+      },
+      {
+        "id": "quiz-9.6.12",
+        "badge": "Câu 12 - Giải bất phương trình chứa dấu ngoặc",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4aa (Trang 58)",
+        "question": "Nghiệm của bất phương trình $2(x - 2) < x + 1$ là:",
+        "options": [
+          "$x < 5$",
+          "$x > 5$",
+          "$x < 3$",
+          "$x < -5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khai triển: $2x - 4 < x + 1 \\Leftrightarrow 2x - x < 1 + 4 \\Leftrightarrow x < 5$."
+      },
+      {
+        "id": "quiz-9.6.13",
+        "badge": "Câu 13 - Tìm số nghiệm nguyên dương",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.9 (Trang 35)",
+        "question": "Bất phương trình $3x - 7 < 2$ có bao nhiêu nghiệm nguyên dương?",
+        "options": [
+          "2 nghiệm",
+          "3 nghiệm",
+          "1 nghiệm",
+          "Vô số nghiệm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $3x - 7 < 2 \\Leftrightarrow 3x < 9 \\Leftrightarrow x < 3$. Các số nguyên dương thỏa mãn $x < 3$ là $x \\in \\{1; 2\\}$. Vậy có đúng 2 nghiệm nguyên dương."
+      },
+      {
+        "id": "quiz-9.6.14",
+        "badge": "Câu 14 - Tìm nghiệm nguyên lớn nhất",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4 (Trang 58)",
+        "question": "Nghiệm nguyên lớn nhất của bất phương trình $4x - 5 < 12$ là:",
+        "options": [
+          "$x = 4$",
+          "$x = 5$",
+          "$x = 3$",
+          "$x = 4,25$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$4x - 5 < 12 \\Leftrightarrow 4x < 17 \\Leftrightarrow x < \\frac{17}{4} = 4,25$. Số nguyên lớn nhất nhỏ hơn $4,25$ là $x = 4$."
+      },
+      {
+        "id": "quiz-9.6.15",
+        "badge": "Câu 15 - Vận dụng: Cân đối ngân sách mua sắm",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 13 (Trang 59)",
+        "question": "Bạn Thanh có $100$ nghìn đồng. Bạn muốn mua một cây bút giá $18$ nghìn đồng và một số quyển vở, mỗi quyển giá $7$ nghìn đồng. Hỏi bạn Thanh mua được nhiều nhất bao nhiêu quyển vở?",
+        "options": [
+          "11 quyển",
+          "12 quyển",
+          "10 quyển",
+          "14 quyển"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi số quyển vở Thanh mua là $x$ ($x \\in \\mathbb{N}^*$). Tổng số tiền mua bút và vở là $18 + 7x$ (nghìn đồng). Vì Thanh có $100$ nghìn đồng nên: $18 + 7x \\le 100 \\Leftrightarrow 7x \\le 82 \\Leftrightarrow x \\le \\frac{82}{7} \\approx 11,71$. Do $x$ là số tự nhiên nên Thanh mua được nhiều nhất 11 quyển vở."
+      },
+      {
+        "id": "quiz-9.6.16",
+        "badge": "Câu 16 - Vận dụng: Xác định điểm thi tuyển sinh tối thiểu",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 5 (Trang 57)",
+        "question": "Trong kì thi gồm ba môn Toán, Ngữ văn và Tiếng Anh, điểm Toán và Ngữ văn tính hệ số 2, Tiếng Anh tính hệ số 1. Để trúng tuyển, điểm trung bình ba môn ít nhất phải bằng 8,0. Bạn Na đạt 9,1 điểm Toán và 6,9 điểm Ngữ văn. Điểm số Tiếng Anh tối thiểu Na phải đạt để trúng tuyển là:",
+        "options": [
+          "8,0 điểm",
+          "7,5 điểm",
+          "8,5 điểm",
+          "9,0 điểm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi điểm Tiếng Anh Na cần đạt là $x$ ($0 \\le x \\le 10$). Tổng hệ số là $2 + 2 + 1 = 5$. Điểm trung bình ba môn: $\\frac{2(9,1) + 2(6,9) + x}{5} = \\frac{18,2 + 13,8 + x}{5} = \\frac{32 + x}{5}$. Để trúng tuyển thì $\\frac{32 + x}{5} \\ge 8 \\Leftrightarrow 32 + x \\ge 40 \\Leftrightarrow x \\ge 8$. Vậy Na cần đạt tối thiểu 8,0 điểm Tiếng Anh."
+      },
+      {
+        "id": "quiz-9.6.17",
+        "badge": "Câu 17 - Vận dụng: Cuộc thi đố vui tích lũy điểm",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 59)",
+        "question": "Trong cuộc thi 'Đố vui để học', thí sinh phải trả lời 12 câu hỏi. Mỗi câu trả lời đúng được cộng 5 điểm, trả lời sai bị trừ 2 điểm. Mỗi thí sinh có sẵn 20 điểm khi bắt đầu. Thí sinh đạt từ 50 điểm trở lên sẽ được vào vòng tiếp theo. Hỏi thí sinh phải trả lời đúng ít nhất bao nhiêu câu để vào vòng tiếp theo?",
+        "options": [
+          "8 câu",
+          "7 câu",
+          "9 câu",
+          "6 câu"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi số câu trả lời đúng là $x$ ($x \\in \\mathbb{N}, 0 \\le x \\le 12$). Khi đó số câu trả lời sai là $12 - x$. Tổng số điểm đạt được là: $20 + 5x - 2(12 - x) = 20 + 5x - 24 + 2x = 7x - 4$. Để đạt từ 50 điểm trở lên: $7x - 4 \\ge 50 \\Leftrightarrow 7x \\ge 54 \\Leftrightarrow x \\ge \\frac{54}{7} \\approx 7,71$. Vì $x$ là số nguyên nên thí sinh phải trả lời đúng ít nhất 8 câu."
+      },
+      {
+        "id": "quiz-9.6.18",
+        "badge": "Câu 18 - Vận dụng: Cước phí dịch vụ taxi",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 17 (Trang 59)",
+        "question": "Một hãng taxi quy định giá mở cửa là 15 nghìn đồng và giá 12 nghìn đồng cho mỗi kilômét tiếp theo. Với 200 nghìn đồng, hành khách có thể di chuyển được tối đa bao nhiêu kilômét (làm tròn đến hàng đơn vị)?",
+        "options": [
+          "15 km",
+          "16 km",
+          "14 km",
+          "17 km"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi quãng đường đi thêm là $x$ (km, $x > 0$). Tổng chi phí chuyến đi là $15 + 12x$ (nghìn đồng). Với số tiền 200 nghìn đồng: $15 + 12x \\le 200 \\Leftrightarrow 12x \\le 185 \\Leftrightarrow x \\le \\frac{185}{12} \\approx 15,42\\text{ km}$. Làm tròn đến hàng đơn vị là 15 km."
+      },
+      {
+        "id": "quiz-9.6.19",
+        "badge": "Câu 19 - Vận dụng: Trọng tải xe vận chuyển hàng hóa",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 18 (Trang 60)",
+        "question": "Một xe tải chở bia có trọng tải tối đa là 5,25 tấn (5 250 kg). Bác lái xe nặng 65 kg. Mỗi thùng bia nặng 6,7 kg. Xe có thể chở được tối đa bao nhiêu thùng bia để không vượt quá trọng tải?",
+        "options": [
+          "773 thùng",
+          "774 thùng",
+          "783 thùng",
+          "750 thùng"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi số thùng bia xe chở là $n$ ($n \\in \\mathbb{N}^*$). Tổng khối lượng của xe gồm bác tài và hàng hóa: $65 + 6,7n$ (kg). Để không vượt quá trọng tải cho phép: $65 + 6,7n \\le 5250 \\Leftrightarrow 6,7n \\le 5185 \\Leftrightarrow n \\le \\frac{5185}{6,7} \\approx 773,88$. Vì $n$ nguyên nên xe chở được tối đa 773 thùng bia."
+      },
+      {
+        "id": "quiz-9.6.20",
+        "badge": "Câu 20 - Vận dụng: Lựa chọn phương án chi phí tối ưu",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 40 (Trang 62)",
+        "question": "Nhà trường dự định tổ chức cho học sinh đi xem phim. Rạp chiếu phim đưa ra hai phương án trả tiền: Phương án 1 tính 50 nghìn đồng/vé; Phương án 2 trả khoản phí ban đầu 400 nghìn đồng rồi tính mỗi vé 45 nghìn đồng. Với số lượng học sinh đăng kí từ bao nhiêu bạn trở lên thì nhà trường nên chọn Phương án 2 để tiết kiệm chi phí?",
+        "options": [
+          "Từ 81 học sinh trở lên",
+          "Từ 80 học sinh trở lên",
+          "Từ 75 học sinh trở lên",
+          "Từ 90 học sinh trở lên"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gọi số học sinh đăng kí xem phim là $x$ ($x \\in \\mathbb{N}^*$). Chi phí theo Phương án 1 là $50x$ (nghìn đồng), theo Phương án 2 là $400 + 45x$ (nghìn đồng). Phương án 2 có lợi hơn khi: $400 + 45x < 50x \\Leftrightarrow 50x - 45x > 400 \\Leftrightarrow 5x > 400 \\Leftrightarrow x > 80$. Vì $x$ là số tự nhiên nên từ 81 học sinh trở lên, Phương án 2 sẽ có lợi hơn."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-9.6.1",
+        "badge": "Đúng/Sai 1 - Nhận biết định nghĩa và hệ số bất phương trình bậc nhất một ẩn",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 1 (Trang 57)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về bất phương trình bậc nhất một ẩn:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Bất phương trình $2x - 5 > 0$ là bất phương trình bậc nhất một ẩn với hệ số $a = 2, b = -5$.",
+            "correctAnswer": true,
+            "explanation": "BPT có dạng $ax + b > 0$ với $a = 2 \\ne 0$ và $b = -5$."
+          },
+          {
+            "id": "b",
+            "text": "Bất phương trình $0x + 7 \\ge 0$ là một bất phương trình bậc nhất một ẩn.",
+            "correctAnswer": false,
+            "explanation": "Theo định nghĩa, hệ số $a$ phải khác 0 ($a \\ne 0$). Ở đây $a = 0$ nên không phải."
+          },
+          {
+            "id": "c",
+            "text": "Bất phương trình $\\frac{3}{5}x + 4 < 0$ là bất phương trình bậc nhất một ẩn.",
+            "correctAnswer": true,
+            "explanation": "Dạng $ax + b < 0$ với $a = \\frac{3}{5} \\ne 0$ và $b = 4$."
+          },
+          {
+            "id": "d",
+            "text": "Bất phương trình $x^2 - 3x + 2 \\le 0$ là bất phương trình bậc nhất một ẩn.",
+            "correctAnswer": false,
+            "explanation": "Đây là bất phương trình bậc hai vì có chứa $x^2$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.2",
+        "badge": "Đúng/Sai 2 - Kiểm tra nghiệm của bất phương trình",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 2 (Trang 57)",
+        "prompt": "Cho bất phương trình $3x - 5 \\le x + 1$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Giá trị $x = 0$ là một nghiệm của bất phương trình.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 0$: $3(0) - 5 = -5 \\le 0 + 1 = 1$ (đúng)."
+          },
+          {
+            "id": "b",
+            "text": "Giá trị $x = 3$ là một nghiệm của bất phương trình.",
+            "correctAnswer": true,
+            "explanation": "Thay $x = 3$: $3(3) - 5 = 4 \\le 3 + 1 = 4$ (đúng vì có dấu bằng)."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị $x = 4$ là một nghiệm của bất phương trình.",
+            "correctAnswer": false,
+            "explanation": "Thay $x = 4$: $3(4) - 5 = 7 \\le 4 + 1 = 5$ (sai)."
+          },
+          {
+            "id": "d",
+            "text": "Mọi số thực $x < 3$ đều là nghiệm của bất phương trình.",
+            "correctAnswer": true,
+            "explanation": "Giải BPT: $3x - x \\le 1 + 5 \\Leftrightarrow 2x \\le 6 \\Leftrightarrow x \\le 3$. Do đó mọi $x < 3$ đều là nghiệm."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.3",
+        "badge": "Đúng/Sai 3 - Quy tắc biến đổi bất phương trình",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 6 (Trang 64)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về hai quy tắc biến đổi bất phương trình:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khi chuyển một hạng tử từ vế này sang vế kia của một bất phương trình, ta phải đổi dấu hạng tử đó.",
+            "correctAnswer": true,
+            "explanation": "Đây là phát biểu chính xác của quy tắc chuyển vế."
+          },
+          {
+            "id": "b",
+            "text": "Khi nhân hai vế của một bất phương trình với một số âm, ta phải giữ nguyên chiều bất phương trình.",
+            "correctAnswer": false,
+            "explanation": "Khi nhân với số âm, ta BẮT BUỘC phải đổi chiều bất phương trình."
+          },
+          {
+            "id": "c",
+            "text": "Bất phương trình $-2x > 4$ tương đương với $x > -2$.",
+            "correctAnswer": false,
+            "explanation": "Chia cho số âm $-2$ thì phải đổi chiều: $x < \\frac{4}{-2} = -2$."
+          },
+          {
+            "id": "d",
+            "text": "Bất phương trình $3x < 9$ tương đương với $x < 3$.",
+            "correctAnswer": true,
+            "explanation": "Chia cả hai vế cho $3 > 0$ giữ nguyên chiều: $x < 3$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.4",
+        "badge": "Đúng/Sai 4 - Nhận biết biểu diễn tập nghiệm trên trục số",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 7 & 16 (Trang 64 - 65)",
+        "prompt": "Xét tính đúng/sai của các khẳng định về biểu diễn tập nghiệm trên trục số:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tập nghiệm $x > 2$ được biểu diễn bằng cách gạch bỏ phần bên trái điểm $2$ và dùng ngoặc tròn $($ tại điểm $2$ hướng sang phải.",
+            "correctAnswer": true,
+            "explanation": "Quy tắc biểu diễn chuẩn cho $x > a$."
+          },
+          {
+            "id": "b",
+            "text": "Tập nghiệm $x \\le -1$ được biểu diễn bằng cách dùng ngoặc vuông $[$ quay sang phải.",
+            "correctAnswer": false,
+            "explanation": "Nghiệm $x \\le -1$ lấy phần bên trái nên ngoặc vuông phải quay sang trái $]$. "
+          },
+          {
+            "id": "c",
+            "text": "Tại điểm mút có dấu bằng ($\\ge$ hoặc $\\le$), ta sử dụng dấu ngoặc vuông $[$ hoặc $]$.",
+            "correctAnswer": true,
+            "explanation": "Dấu ngoặc vuông biểu thị lấy cả giá trị tại mút."
+          },
+          {
+            "id": "d",
+            "text": "Hình vẽ gạch bỏ phần bên phải số $0$ và tại $0$ có ngoặc tròn $)$ hướng sang trái biểu diễn tập nghiệm $x < 0$.",
+            "correctAnswer": true,
+            "explanation": "Chính xác, biểu diễn tập nghiệm của các số thực nhỏ hơn 0."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.5",
+        "badge": "Đúng/Sai 5 - Giải bất phương trình chứa dấu ngoặc",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4bb (Trang 58)",
+        "prompt": "Cho bất phương trình: $3(x + 2) > x - 4$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khai triển vế trái ta được: $3x + 6 > x - 4$.",
+            "correctAnswer": true,
+            "explanation": "$3(x + 2) = 3x + 6$."
+          },
+          {
+            "id": "b",
+            "text": "Chuyển vế và thu gọn ta được: $2x > -10$.",
+            "correctAnswer": true,
+            "explanation": "$3x - x > -4 - 6 \\Leftrightarrow 2x > -10$."
+          },
+          {
+            "id": "c",
+            "text": "Nghiệm của bất phương trình là $x < -5$.",
+            "correctAnswer": false,
+            "explanation": "Chia cho $2 > 0$ giữ nguyên chiều: $x > -5$ (không phải $x < -5$)."
+          },
+          {
+            "id": "d",
+            "text": "Số nguyên âm lớn nhất thỏa mãn bất phương trình là $x = -4$.",
+            "correctAnswer": true,
+            "explanation": "Các số nguyên lớn hơn $-5$ là $-4, -3, -2, \\dots$, số nguyên âm lớn nhất là $-4$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.6",
+        "badge": "Đúng/Sai 6 - Giải bất phương trình có mẫu số nguyên",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 6f (Trang 58)",
+        "prompt": "Cho bất phương trình: $\\frac{2x - 3}{3} \\le \\frac{3x - 2}{4}$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Mẫu chung dương của hai vế là $12$.",
+            "correctAnswer": true,
+            "explanation": "$\\text{BCNN}(3; 4) = 12$."
+          },
+          {
+            "id": "b",
+            "text": "Quy đồng và khử mẫu ta được: $4(2x - 3) \\le 3(3x - 2)$.",
+            "correctAnswer": true,
+            "explanation": "Nhân cả hai vế với $12 > 0$ giữ nguyên chiều: $4(2x - 3) \\le 3(3x - 2)$."
+          },
+          {
+            "id": "c",
+            "text": "Thu gọn ta được: $-x \\le 6$.",
+            "correctAnswer": true,
+            "explanation": "$8x - 12 \\le 9x - 6 \\Leftrightarrow 8x - 9x \\le -6 + 12 \\Leftrightarrow -x \\le 6$."
+          },
+          {
+            "id": "d",
+            "text": "Tập nghiệm của bất phương trình là $x \\le -6$.",
+            "correctAnswer": false,
+            "explanation": "$-x \\le 6 \\Leftrightarrow x \\ge -6$ (chia cho $-1 < 0$ phải đổi chiều)."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.7",
+        "badge": "Đúng/Sai 7 - Tìm điều kiện để giá trị biểu thức thỏa mãn yêu cầu",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 7 (Trang 58 - 59)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về điều kiện của biến $x$:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Giá trị của biểu thức $-2x + 7$ là số dương khi và chỉ khi $x < 3,5$.",
+            "correctAnswer": true,
+            "explanation": "$-2x + 7 > 0 \\Leftrightarrow -2x > -7 \\Leftrightarrow x < 3,5$."
+          },
+          {
+            "id": "b",
+            "text": "Giá trị của biểu thức $x + 3$ nhỏ hơn giá trị của biểu thức $5 - 4x$ khi và chỉ khi $x < 0,4$.",
+            "correctAnswer": true,
+            "explanation": "$x + 3 < 5 - 4x \\Leftrightarrow 5x < 2 \\Leftrightarrow x < \\frac{2}{5} = 0,4$."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị của biểu thức $3x + 1$ không nhỏ hơn giá trị của biểu thức $x - 3$ khi và chỉ khi $x \\ge -2$.",
+            "correctAnswer": true,
+            "explanation": "'Không nhỏ hơn' nghĩa là $\\ge$: $3x + 1 \\ge x - 3 \\Leftrightarrow 2x \\ge -4 \\Leftrightarrow x \\ge -2$."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị của biểu thức $4x - 10$ không âm khi và chỉ khi $x \\le 2,5$.",
+            "correctAnswer": false,
+            "explanation": "'Không âm' nghĩa là $\\ge 0$: $4x - 10 \\ge 0 \\Leftrightarrow 4x \\ge 10 \\Leftrightarrow x \\ge 2,5$ (không phải $\\le$)."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.8",
+        "badge": "Đúng/Sai 8 - Vận dụng: Ngân sách mua đồ dùng học tập",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 39 (Trang 62)",
+        "prompt": "Bạn Nam có $150\\,000$ đồng. Nam đã mua một hộp bút vẽ hết $45\\,000$ đồng và mua một cuốn sách tham khảo hết $38\\,000$ đồng. Nam định dùng số tiền còn lại để mua thêm các quyển vở cùng loại với giá $8\\,500$ đồng/quyển. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Số tiền Nam còn lại sau khi mua bút vẽ và sách là $67\\,000$ đồng.",
+            "correctAnswer": true,
+            "explanation": "$150\\,000 - (45\\,000 + 38\\,000) = 150\\,000 - 83\\,000 = 67\\,000$ đồng."
+          },
+          {
+            "id": "b",
+            "text": "Gọi $x$ là số quyển vở Nam định mua ($x \\in \\mathbb{N}^*$), bất phương trình biểu thị số tiền mua là $83\\,000 + 8\\,500x \\le 150\\,000$.",
+            "correctAnswer": true,
+            "explanation": "Tổng số tiền mua hộp bút, sách và $x$ quyển vở không vượt quá 150 000 đồng."
+          },
+          {
+            "id": "c",
+            "text": "Giải bất phương trình ta được $x \\le 7,88$.",
+            "correctAnswer": true,
+            "explanation": "$8\\,500x \\le 67\\,000 \\Leftrightarrow x \\le \\frac{670}{85} \\approx 7,88$."
+          },
+          {
+            "id": "d",
+            "text": "Bạn Nam có thể mua được tối đa 8 quyển vở.",
+            "correctAnswer": false,
+            "explanation": "Vì $x \\in \\mathbb{N}^*$ và $x \\le 7,88$ nên Nam chỉ mua được tối đa 7 quyển vở (8 quyển thì hết $83\\,000 + 68\\,000 = 151\\,000$ đồng, vượt quá số tiền có)."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.9",
+        "badge": "Đúng/Sai 9 - Vận dụng: Bài toán cuộc thi tuyển dụng nhân sự",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 15 (Trang 59)",
+        "prompt": "Trong cuộc thi tuyển dụng, thí sinh phải trả lời 25 câu hỏi. Mỗi câu đúng được cộng 2 điểm, mỗi câu sai bị trừ 1 điểm. Ban tổ chức tặng sẵn mỗi thí sinh 5 điểm khi bắt đầu. Thí sinh phải đạt từ 25 điểm trở lên mới được vào vòng phỏng vấn. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Nếu thí sinh trả lời đúng $x$ câu ($0 \\le x \\le 25$) thì số câu trả lời sai là $25 - x$.",
+            "correctAnswer": true,
+            "explanation": "Thí sinh phải trả lời đủ 25 câu hỏi nên số câu sai là $25 - x$."
+          },
+          {
+            "id": "b",
+            "text": "Tổng điểm của thí sinh đạt được tính theo công thức: $5 + 2x - (25 - x) = 3x - 20$.",
+            "correctAnswer": true,
+            "explanation": "$5 + 2x - 25 + x = 3x - 20$ điểm."
+          },
+          {
+            "id": "c",
+            "text": "Bất phương trình để thí sinh vào vòng phỏng vấn là $3x - 20 \\ge 25$.",
+            "correctAnswer": true,
+            "explanation": "Cần từ 25 điểm trở lên nên $3x - 20 \\ge 25$."
+          },
+          {
+            "id": "d",
+            "text": "Thí sinh cần trả lời đúng ít nhất 14 câu hỏi để được vào vòng phỏng vấn.",
+            "correctAnswer": false,
+            "explanation": "$3x \\ge 45 \\Leftrightarrow x \\ge 15$. Vậy thí sinh cần trả lời đúng ít nhất 15 câu (14 câu chỉ được $3(14) - 20 = 22 < 25$ điểm)."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.6.10",
+        "badge": "Đúng/Sai 10 - Vận dụng: Thuê xe du lịch cơ quan",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 44 (Trang 63)",
+        "prompt": "Một nhà máy cần thuê xe chở công nhân đi du lịch. Hãng xe A tính phí ban đầu 2 triệu đồng và 8 nghìn đồng/km. Hãng xe B tính phí ban đầu 1,5 triệu đồng và 9 nghìn đồng/km. Gọi $x$ là quãng đường di chuyển (km). Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Chi phí thuê xe của Hãng A là $2000 + 8x$ (nghìn đồng) và Hãng B là $1500 + 9x$ (nghìn đồng).",
+            "correctAnswer": true,
+            "explanation": "2 triệu = 2000 nghìn, 1,5 triệu = 1500 nghìn."
+          },
+          {
+            "id": "b",
+            "text": "Bất phương trình diễn đạt 'tiền thuê xe của Hãng A ít hơn Hãng B' là $2000 + 8x < 1500 + 9x$.",
+            "correctAnswer": true,
+            "explanation": "Chi phí hãng A nhỏ hơn chi phí hãng B."
+          },
+          {
+            "id": "c",
+            "text": "Giải bất phương trình trên ta được $x > 500$ km.",
+            "correctAnswer": true,
+            "explanation": "$2000 - 1500 < 9x - 8x \\Leftrightarrow 500 < x \\Leftrightarrow x > 500$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu hành trình du lịch dài 320 km thì chọn Hãng xe A sẽ có chi phí rẻ hơn.",
+            "correctAnswer": false,
+            "explanation": "Vì $320 < 500$ nên Hãng B rẻ hơn (Hãng B: $1500 + 9(320) = 4380$k; Hãng A: $2000 + 8(320) = 4560$k, Hãng B tiết kiệm hơn 180 nghìn đồng)."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-9.6.1",
+        "badge": "Trả lời ngắn 1 - Xác định hệ số a",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.5 (Trang 32)",
+        "prompt": "Trong bất phương trình bậc nhất một ẩn $5 - 4x > 0$, hệ số $a$ bằng bao nhiêu?",
+        "correctAnswer": "-4",
+        "acceptableAnswers": [
+          "-4",
+          "- 4",
+          "a = -4"
+        ],
+        "explanation": "Bất phương trình được viết lại thành $-4x + 5 > 0$, hệ số của $x$ là $a = -4$."
+      },
+      {
+        "id": "sa-9.6.2",
+        "badge": "Trả lời ngắn 2 - Điền dấu sau khi nhân số âm",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 6b (Trang 64)",
+        "prompt": "Cho $-3x < 12$. Khi chia cả hai vế cho $-3$, giữa $x$ và $-4$ ta điền dấu nào ($<$ hay $>$)?",
+        "correctAnswer": ">",
+        "acceptableAnswers": [
+          ">",
+          "dấu >",
+          "lon hon"
+        ],
+        "explanation": "Vì chia cho số âm $-3$ nên bất phương trình phải đổi chiều: $x > -4$."
+      },
+      {
+        "id": "sa-9.6.3",
+        "badge": "Trả lời ngắn 3 - Chuyển vế đổi dấu",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 3 (Trang 57)",
+        "prompt": "Cho bất phương trình $x + 7 \\ge 2$. Khi chuyển hạng tử $7$ sang vế phải ta được $x \\ge c$. Giá trị của số $c$ là bao nhiêu?",
+        "correctAnswer": "-5",
+        "acceptableAnswers": [
+          "-5",
+          "- 5",
+          "c = -5"
+        ],
+        "explanation": "Chuyển vế đổi dấu: $x \\ge 2 - 7 = -5$."
+      },
+      {
+        "id": "sa-9.6.4",
+        "badge": "Trả lời ngắn 4 - Kiểm tra nghiệm cụ thể",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 2 (Trang 57)",
+        "prompt": "Số $x = 0$ có phải là nghiệm của bất phương trình $2x - 9 < 0$ hay không (điền 'có' hoặc 'không')?",
+        "correctAnswer": "có",
+        "acceptableAnswers": [
+          "có",
+          "co",
+          "Có",
+          "Co",
+          "yes"
+        ],
+        "explanation": "Thay $x = 0$ ta được $2(0) - 9 = -9 < 0$ là khẳng định đúng, do đó $x = 0$ là nghiệm."
+      },
+      {
+        "id": "sa-9.6.5",
+        "badge": "Trả lời ngắn 5 - Tìm nghiệm nguyên lớn nhất",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4 (Trang 58)",
+        "prompt": "Tìm số nguyên lớn nhất thỏa mãn bất phương trình $3x - 1 < 14$.",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4",
+          "x = 4"
+        ],
+        "explanation": "Ta có $3x - 1 < 14 \\Leftrightarrow 3x < 15 \\Leftrightarrow x < 5$. Số nguyên lớn nhất nhỏ hơn $5$ là $4$."
+      },
+      {
+        "id": "sa-9.6.6",
+        "badge": "Trả lời ngắn 6 - Đếm số nghiệm nguyên dương",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.9 (Trang 35)",
+        "prompt": "Bất phương trình $5 - 2x > -3$ có bao nhiêu nghiệm nguyên dương?",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "3 nghiệm",
+          "ba"
+        ],
+        "explanation": "$5 - 2x > -3 \\Leftrightarrow -2x > -8 \\Leftrightarrow x < 4$. Các nghiệm nguyên dương là $x \\in \\{1; 2; 3\\}$, tổng cộng có 3 nghiệm."
+      },
+      {
+        "id": "sa-9.6.7",
+        "badge": "Trả lời ngắn 7 - Nghiệm nguyên nhỏ nhất",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 4 (Trang 58)",
+        "prompt": "Tìm số nguyên $x$ nhỏ nhất thỏa mãn bất phương trình $4x + 1 \\ge 13$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "x = 3"
+        ],
+        "explanation": "$4x + 1 \\ge 13 \\Leftrightarrow 4x \\ge 12 \\Leftrightarrow x \\ge 3$. Số nguyên nhỏ nhất thỏa mãn là $x = 3$."
+      },
+      {
+        "id": "sa-9.6.8",
+        "badge": "Trả lời ngắn 8 - Vận dụng: Điểm thi tiếng Anh tối thiểu",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 5 (Trang 57)",
+        "prompt": "Điểm Toán và Văn hệ số 2, Tiếng Anh hệ số 1. Điểm trung bình cần đạt tối thiểu 8,0. Na đạt Toán 9,1 và Văn 6,9. Điểm Tiếng Anh tối thiểu Na cần đạt là bao nhiêu?",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "8.0",
+          "8,0",
+          "x = 8"
+        ],
+        "explanation": "$\\frac{2(9,1) + 2(6,9) + x}{5} \\ge 8 \\Leftrightarrow \\frac{32 + x}{5} \\ge 8 \\Leftrightarrow 32 + x \\ge 40 \\Leftrightarrow x \\ge 8$."
+      },
+      {
+        "id": "sa-9.6.9",
+        "badge": "Trả lời ngắn 9 - Vận dụng: Số vở mua được nhiều nhất",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 13 (Trang 59)",
+        "prompt": "Thanh có 100 nghìn đồng, mua 1 bút giá 18 nghìn đồng và các quyển vở giá 7 nghìn đồng/quyển. Thanh mua được nhiều nhất bao nhiêu quyển vở?",
+        "correctAnswer": "11",
+        "acceptableAnswers": [
+          "11",
+          "11 quyển",
+          "11 quyen"
+        ],
+        "explanation": "$18 + 7x \\le 100 \\Leftrightarrow 7x \\le 82 \\Leftrightarrow x \\le 11,71 \\Rightarrow x = 11$ quyển."
+      },
+      {
+        "id": "sa-9.6.10",
+        "badge": "Trả lời ngắn 10 - Vận dụng: Kích thước mảnh vườn rào lưới",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 33 (Trang 61)",
+        "prompt": "Một mảnh vườn hình chữ nhật có chiều dài hơn chiều rộng 3 m. Người ta dùng tấm lưới dài 70 m để rào vừa đủ xung quanh vườn. Chiều rộng tối đa của mảnh vườn là bao nhiêu mét?",
+        "correctAnswer": "16",
+        "acceptableAnswers": [
+          "16",
+          "16 m",
+          "16m"
+        ],
+        "explanation": "Gọi chiều rộng là $a$ (m). Chiều dài là $a + 3$ (m). Chu vi là $2(a + a + 3) = 4a + 6$ (m). Để rào đủ với tấm lưới 70 m thì chu vi $4a + 6 \\le 70 \\Leftrightarrow 4a \\le 64 \\Leftrightarrow a \\le 16$ mét."
+      }
+    ]
   }
 };

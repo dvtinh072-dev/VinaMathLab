@@ -12367,15 +12367,15 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "id": "quiz-9.9.20",
       "badge": "Câu 20 (VD - Thực tế) - Độ dài đường chéo màn hình tivi",
       "source": "Tài liệu Toán ứng dụng trong Đời sống",
-      "question": "Màn hình một chiếc tivi thông minh hình chữ nhật có chiều dài $8\\sqrt{5}\\text{ cm}$ và chiều rộng $4\\sqrt{5}\\text{ cm}$. Độ dài đường chéo của màn hình chiếc tivi đó bằng:",
+      "question": "Màn hình một chiếc tivi thông minh hình chữ nhật có chiều dài $40\\sqrt{5}\\text{ cm}$ và chiều rộng $20\\sqrt{5}\\text{ cm}$. Độ dài đường chéo của màn hình chiếc tivi đó bằng:",
       "options": [
-        "$20\\text{ cm}$",
-        "$12\\sqrt{5}\\text{ cm}$",
-        "$40\\text{ cm}$",
-        "$10\\sqrt{5}\\text{ cm}$"
+        "$100\\text{ cm}$",
+        "$60\\sqrt{5}\\text{ cm}$",
+        "$200\\text{ cm}$",
+        "$50\\sqrt{5}\\text{ cm}$"
       ],
       "correctIndex": 0,
-      "explanation": "Theo định lí Pythagoras: $d = \\sqrt{(8\\sqrt{5})^2 + (4\\sqrt{5})^2} = \\sqrt{64 \\cdot 5 + 16 \\cdot 5} = \\sqrt{320 + 80} = \\sqrt{400} = 20\\text{ cm}$."
+      "explanation": "Theo định lí Pythagoras, độ dài đường chéo màn hình tivi là: $d = \\sqrt{(40\\sqrt{5})^2 + (20\\sqrt{5})^2} = \\sqrt{1600 \\cdot 5 + 400 \\cdot 5} = \\sqrt{8000 + 2000} = \\sqrt{10000} = 100\\text{ cm}$ (độ dài này xấp xỉ $39,4\\text{ inch}$, tương đương dòng tivi $40\\text{ inch}$ trong thực tế)."
     }
   ],
   "trueFalseQuestions": [

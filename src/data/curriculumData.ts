@@ -517,7 +517,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         lessons: [
           { id: "t9-b4-pt-quy-ve-bac-nhat", lessonNumber: 4, title: "Bài 4: Phương trình quy về phương trình bậc nhất một ẩn", strand: "daiso", description: "Phương trình tích A(x).B(x) = 0 và phương trình chứa ẩn ở mẫu.", keyFormulas: ["A(x) \\cdot B(x) = 0 \\Leftrightarrow A(x)=0 \\lor B(x)=0"] },
           { id: "t9-b5-bat-dang-thuc", lessonNumber: 5, title: "Bài 5: Bất đẳng thức và tính chất", strand: "daiso", description: "Tính chất liên hệ giữa thứ tự với phép cộng và phép nhân.", keyFormulas: ["a < b \\Rightarrow a + c < b + c, \\ a < b \\wedge c > 0 \\Rightarrow ac < bc"] },
-          { id: "t9-b6-bat-phuong-trinh-bac-nhat", lessonNumber: 6, title: "Bài 6: Bất phương trình bậc nhất một ẩn", strand: "daiso", description: "Giải ax + b > 0 và biểu diễn tập nghiệm trên trục số.", keyFormulas: ["ax + b > 0 \\Leftrightarrow ax > -b"] },
+          { id: "t9-b6-bat-phuong-trinh-bac-nhat", lessonNumber: 6, title: "Bài 6: Bất phương trình bậc nhất một ẩn", strand: "daiso", description: "Khái niệm, hai quy tắc biến đổi tương đương và cách giải ax + b > 0.", keyFormulas: ["ax + b > 0 \\Leftrightarrow ax > -b"] },
         ],
       },
       {

@@ -2181,18 +2181,18 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       },
       {
         "id": "ai-9.6.7",
-        "badge": "Luyện thêm 7 - Đọc tập nghiệm trên trục số",
+        "badge": "Luyện thêm 7 - Điều kiện tham số của bất phương trình bậc nhất một ẩn",
         "isAiGenerated": true,
-        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.6 (Trang 33)",
-        "question": "Hình vẽ trục số gạch bỏ phần bên phải số $-2$ và tại $-2$ có dấu ngoặc vuông $]$ hướng sang trái biểu diễn tập nghiệm của bất phương trình nào?",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 1 (Trang 57) & SGK Trang 32",
+        "question": "Bất phương trình $(2m - 4)x - 7 \\le 0$ là bất phương trình bậc nhất một ẩn khi và chỉ khi:",
         "options": [
-          "$x \\le -2$",
-          "$x < -2$",
-          "$x \\ge -2$",
-          "$x > -2$"
+          "$m \\ne 2$",
+          "$m = 2$",
+          "$m > 2$",
+          "$m \\ne 0$"
         ],
         "correctIndex": 0,
-        "explanation": "Phần bên phải bị gạch bỏ và ngoặc vuông $]$ quay sang trái biểu diễn tập nghiệm các số thực nhỏ hơn hoặc bằng $-2$, tức là $x \\le -2$."
+        "explanation": "Bất phương trình bậc nhất một ẩn đòi hỏi hệ số của $x$ khác 0: $2m - 4 \\ne 0 \\Leftrightarrow 2m \\ne 4 \\Leftrightarrow m \\ne 2$."
       },
       {
         "id": "ai-9.6.8",
@@ -2347,6 +2347,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       {
         "id": "ai-9.6.18",
         "badge": "Luyện thêm 18 - Vận dụng: Lãi suất tiền gửi tiết kiệm",
+        "isAiGenerated": true,
         "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 14 (Trang 59)",
         "question": "Ngân hàng áp dụng lãi suất gửi tiết kiệm kì hạn 12 tháng là 7,4%/năm. Bà Mai cần số tiền lãi hằng năm ít nhất là 60 triệu đồng để chi tiêu. Hỏi bà Mai cần gửi tiết kiệm ít nhất bao nhiêu tiền (làm tròn đến triệu đồng)?",
         "options": [
@@ -2418,7 +2419,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
             "id": "d",
             "text": "Phương trình và bất phương trình có tập nghiệm giống nhau.",
             "correctAnswer": false,
-            "explanation": "Bất phương trình thường có vô số nghiệm tạo thành một khoảng/nửa khoảng trên trục số, trong khi phương trình bậc nhất chỉ có một nghiệm duy nhất."
+            "explanation": "Bất phương trình thường có vô số nghiệm thỏa mãn bất đẳng thức, trong khi phương trình bậc nhất một ẩn chỉ có một nghiệm duy nhất."
           }
         ]
       },
@@ -2488,33 +2489,33 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       },
       {
         "id": "ai-tf-9.6.4",
-        "badge": "Luyện thêm Đ/S 4 - Đọc biểu diễn trục số",
-        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.6 (Trang 33)",
-        "prompt": "Xét tính đúng/sai của các khẳng định sau về hình biểu diễn tập nghiệm trên trục số:",
+        "badge": "Luyện thêm Đ/S 4 - Nhận biết khái niệm nghiệm và tập nghiệm",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.5 (Trang 32)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về nghiệm của bất phương trình:",
         "subItems": [
           {
             "id": "a",
-            "text": "Tập nghiệm $x < 5$ không bao gồm giá trị $x = 5$.",
+            "text": "Tập nghiệm của bất phương trình là tập hợp tất cả các nghiệm của bất phương trình đó.",
             "correctAnswer": true,
-            "explanation": "Dấu ngặt $<$ không lấy dấu bằng, tại điểm 5 dùng ngoặc tròn $($."
+            "explanation": "Đúng theo định nghĩa tập nghiệm."
           },
           {
             "id": "b",
-            "text": "Tập nghiệm $x \\ge 0$ bao gồm số 0 và tất cả các số thực dương.",
+            "text": "Giải một bất phương trình là tìm tập hợp tất cả các nghiệm của bất phương trình đó.",
             "correctAnswer": true,
-            "explanation": "Tập các số không âm $[0; +\\infty)$."
+            "explanation": "Đúng theo định nghĩa giải bất phương trình."
           },
           {
             "id": "c",
-            "text": "Khi biểu diễn tập nghiệm $x \\ge -3$, phần bị gạch bỏ là phần bên phải điểm $-3$.",
-            "correctAnswer": false,
-            "explanation": "Lấy các giá trị lớn hơn hoặc bằng $-3$ nên phần bị gạch bỏ là phần bên trái điểm $-3$."
+            "text": "Bất phương trình $2x < 6$ có tập hợp nghiệm gồm tất cả các số thực $x < 3$.",
+            "correctAnswer": true,
+            "explanation": "Chia cả hai vế cho $2 > 0$ giữ nguyên chiều: $x < 3$."
           },
           {
             "id": "d",
-            "text": "Biểu diễn $x \\le 4$ sử dụng ngoặc vuông $]$ quay sang trái tại vị trí số 4.",
-            "correctAnswer": true,
-            "explanation": "Dấu $\\le$ dùng ngoặc vuông $]$ quay về phía phần giữ lại (bên trái)."
+            "text": "Bất phương trình $x + 1 > x + 2$ có một nghiệm là $x = 0$.",
+            "correctAnswer": false,
+            "explanation": "Thay $x = 0$ ta được $0 + 1 > 0 + 2 \\Leftrightarrow 1 > 2$ (vô lý). BPT này thực chất vô nghiệm."
           }
         ]
       },
@@ -2741,7 +2742,7 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       },
       {
         "id": "ai-sa-9.6.3",
-        "badge": "Luyện thêm TLN 3 - Tìm số mốc trên trục số",
+        "badge": "Luyện thêm TLN 3 - Tìm nghiệm của bất phương trình",
         "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 3 (Trang 57)",
         "prompt": "Cho bất phương trình $3x - 12 > 0$. Nghiệm của bất phương trình là $x > m$. Giá trị của $m$ là bao nhiêu?",
         "correctAnswer": "4",

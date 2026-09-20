@@ -3734,7 +3734,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
-"t9-b6-bat-phuong-trinh-bac-nhat": {
+  "t9-b6-bat-phuong-trinh-bac-nhat": {
     "id": "t9-b6-bat-phuong-trinh-bac-nhat",
     "lessonNumber": 6,
     "title": "Bài 6: Bất phương trình bậc nhất một ẩn",
@@ -3833,15 +3833,13 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "Quy tắc nhân với một số khác 0:",
           "  • Khi nhân (hoặc chia) hai vế của bất phương trình với cùng một số DƯƠNG, ta GIỮ NGUYÊN chiều bất phương trình.",
           "  • Khi nhân (hoặc chia) hai vế của bất phương trình với cùng một số ÂM, ta phải ĐỔI CHIỀU bất phương trình.",
-          "Biểu diễn tập nghiệm trên trục số:",
-          "  • $x > a$: Gạch bỏ phần bên trái điểm $a$, dùng dấu ngoặc tròn $($ tại điểm $a$ hướng về bên phải.",
-          "  • $x \\ge a$: Gạch bỏ phần bên trái điểm $a$, dùng dấu ngoặc vuông $[$ tại điểm $a$ hướng về bên phải.",
-          "  • $x < a$: Gạch bỏ phần bên phải điểm $a$, dùng dấu ngoặc tròn $)$ tại điểm $a$ hướng về bên trái.",
-          "  • $x \\le a$: Gạch bỏ phần bên phải điểm $a$, dùng dấu ngoặc vuông $]$ tại điểm $a$ hướng về bên trái."
+          "Cách viết kết luận nghiệm của bất phương trình:",
+          "  • Sau khi giải xong, ta kết luận nghiệm dưới dạng: Vậy nghiệm của bất phương trình là $x > a$ (hoặc $x \\ge a, x < a, x \\le a$).",
+          "  • Tập hợp tất cả các nghiệm của bất phương trình được gọi là tập nghiệm của bất phương trình đó (thường kí hiệu là $S$)."
         ],
         "exampleTitle": "Ví dụ 2 (Tài liệu chuyên đề Toán 9 HK1 Trang 58 & SGK Trang 33)",
-        "exampleProblem": "Giải bất phương trình $2x - 5 \\le 4x + 3$ và biểu diễn tập nghiệm trên trục số.",
-        "exampleSolution": "• Bước 1 (Chuyển vế): Chuyển các hạng tử chứa $x$ sang vế trái, các hằng số sang vế phải:\n  $2x - 4x \\le 3 + 5 \\Leftrightarrow -2x \\le 8$.\n• Bước 2 (Chia hai vế cho số âm): Chia cả hai vế cho $-2 < 0$ và đổi chiều bất phương trình:\n  $x \\ge \\frac{8}{-2} \\Leftrightarrow x \\ge -4$.\n• Bước 3 (Kết luận): Vậy nghiệm của bất phương trình là $x \\ge -4$.\n• Biểu diễn trên trục số: Gạch bỏ phần trục số bên trái điểm $-4$, tại điểm $-4$ đặt dấu ngoặc vuông $[$ quay về bên phải."
+        "exampleProblem": "Giải bất phương trình $2x - 5 \\le 4x + 3$.",
+        "exampleSolution": "• Bước 1 (Chuyển vế): Chuyển các hạng tử chứa $x$ sang vế trái, các hằng số sang vế phải:\n  $2x - 4x \\le 3 + 5 \\Leftrightarrow -2x \\le 8$.\n• Bước 2 (Chia hai vế cho số âm): Chia cả hai vế cho $-2 < 0$ và đổi chiều bất phương trình:\n  $x \\ge \\frac{8}{-2} \\Leftrightarrow x \\ge -4$.\n• Bước 3 (Kết luận): Vậy nghiệm của bất phương trình đã cho là $x \\ge -4$."
       },
       {
         "index": "3",
@@ -3864,7 +3862,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     "tips": [
       "QUY TẮC NHÂN/CHIA VỚI SỐ ÂM: Luôn nhớ đổi chiều bất đẳng thức (dấu > đổi thành <, dấu ≥ đổi thành ≤). Đây là lỗi học sinh hay mắc nhất!",
       "TỪ KHÓA THỰC TẾ: Cụm từ 'nhiều nhất', 'tối đa', 'không quá' tương ứng với dấu ≤. Cụm từ 'ít nhất', 'tối thiểu', 'không dưới' tương ứng với dấu ≥.",
-      "BIỂU DIỄN TRỤC SỐ: Có dấu bằng (≤ hoặc ≥) dùng ngoặc vuông [, ]; không có dấu bằng (< hoặc >) dùng ngoặc tròn (, ). Bề lõm của ngoặc luôn hướng về phía miền nghiệm giữ lại.",
+      "CÁCH KẾT LUẬN NGHIỆM: Sau khi tìm được nghiệm, luôn viết câu kết luận rõ ràng: 'Vậy nghiệm của bất phương trình đã cho là x > a' (hoặc x ≥ a, x < a, x ≤ a) hoặc viết dưới dạng tập nghiệm S.",
       "ĐỐI CHIẾU ĐIỀU KIỆN THỰC TẾ: Các đại lượng như số người, số xe, số quyển vở phải là số nguyên dương (thuộc N*); nếu ra x ≥ 7,2 mà x là số tự nhiên thì phải chọn x nhỏ nhất bằng 8."
     ],
     "traps": [
@@ -3886,7 +3884,7 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "$\\frac{1}{x} + 2 \\le 0$"
         ],
         "correctIndex": 0,
-        "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $< 0, \\ge 0, \\le 0$) với $a \\ne 0$. Do đó $2x - 8 > 0$ là bất phương trình bậc nhất một ẩn (có $a = 2 \\ne 0$ và $b = -8$)."
+        "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $< 0, \\ge 0, \\le 0$) với $a \\ne 0$. Do đó $2x - 8 > 0$ là bất phương trình bậc nhất một ẩn (hệ số $a = 2 \\ne 0$ và $b = -8$)."
       },
       {
         "id": "quiz-9.6.2",
@@ -3974,17 +3972,17 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       },
       {
         "id": "quiz-9.6.8",
-        "badge": "Câu 8 - Nhận biết hình biểu diễn tập nghiệm trên trục số",
-        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 18 (Trang 65) & SGK Trang 33",
-        "question": "Hình biểu diễn trục số có điểm $a = 3$, phần bên trái số $3$ bị gạch bỏ và tại điểm $3$ có dấu ngoặc vuông $[$ quay về bên phải là tập nghiệm của bất phương trình nào?",
+        "badge": "Câu 8 - Nhận biết điều kiện tham số của bất phương trình bậc nhất một ẩn",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 1 (Trang 57) & SGK Trang 32",
+        "question": "Với giá trị nào của $m$ thì bất phương trình $(m - 3)x + 5 > 0$ là bất phương trình bậc nhất một ẩn?",
         "options": [
-          "$x \\ge 3$",
-          "$x > 3$",
-          "$x \\le 3$",
-          "$x < 3$"
+          "$m \\ne 3$",
+          "$m = 3$",
+          "$m > 3$",
+          "$m \\ne 0$"
         ],
         "correctIndex": 0,
-        "explanation": "Phần bên trái bị gạch bỏ nghĩa là các giá trị nhỏ hơn $3$ không thỏa mãn; dấu ngoặc vuông $[$ quay sang phải biểu thị lấy các giá trị lớn hơn hoặc bằng $3$, tức là $x \\ge 3$."
+        "explanation": "Bất phương trình có dạng $ax + b > 0$ là bất phương trình bậc nhất một ẩn khi và chỉ khi hệ số đứng trước biến $x$ khác 0: $a \\ne 0 \\Leftrightarrow m - 3 \\ne 0 \\Leftrightarrow m \\ne 3$."
       },
       {
         "id": "quiz-9.6.9",
@@ -4254,33 +4252,33 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       },
       {
         "id": "tf-9.6.4",
-        "badge": "Đúng/Sai 4 - Nhận biết biểu diễn tập nghiệm trên trục số",
-        "source": "Tài liệu chuyên đề Toán 9 HK1 Câu 7 & 16 (Trang 64 - 65)",
-        "prompt": "Xét tính đúng/sai của các khẳng định về biểu diễn tập nghiệm trên trục số:",
+        "badge": "Đúng/Sai 4 - Nhận biết nghiệm và tập nghiệm của bất phương trình",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 2.5 (Trang 32)",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về nghiệm của bất phương trình:",
         "subItems": [
           {
             "id": "a",
-            "text": "Tập nghiệm $x > 2$ được biểu diễn bằng cách gạch bỏ phần bên trái điểm $2$ và dùng ngoặc tròn $($ tại điểm $2$ hướng sang phải.",
+            "text": "Mỗi giá trị của biến làm cho bất phương trình trở thành một khẳng định đúng được gọi là một nghiệm của bất phương trình đó.",
             "correctAnswer": true,
-            "explanation": "Quy tắc biểu diễn chuẩn cho $x > a$."
+            "explanation": "Đúng theo định nghĩa nghiệm của bất phương trình."
           },
           {
             "id": "b",
-            "text": "Tập nghiệm $x \\le -1$ được biểu diễn bằng cách dùng ngoặc vuông $[$ quay sang phải.",
+            "text": "Bất phương trình $x > 5$ chỉ có duy nhất một nghiệm là $x = 6$.",
             "correctAnswer": false,
-            "explanation": "Nghiệm $x \\le -1$ lấy phần bên trái nên ngoặc vuông phải quay sang trái $]$. "
+            "explanation": "Sai, bất phương trình $x > 5$ có vô số nghiệm là tất cả các số thực lớn hơn 5."
           },
           {
             "id": "c",
-            "text": "Tại điểm mút có dấu bằng ($\\ge$ hoặc $\\le$), ta sử dụng dấu ngoặc vuông $[$ hoặc $]$.",
+            "text": "Bất phương trình $x - 2 > 0$ có nghiệm là mọi số thực $x > 2$.",
             "correctAnswer": true,
-            "explanation": "Dấu ngoặc vuông biểu thị lấy cả giá trị tại mút."
+            "explanation": "Chuyển vế $-2$ sang vế phải ta được $x > 2$."
           },
           {
             "id": "d",
-            "text": "Hình vẽ gạch bỏ phần bên phải số $0$ và tại $0$ có ngoặc tròn $)$ hướng sang trái biểu diễn tập nghiệm $x < 0$.",
+            "text": "Số $0$ là một nghiệm của bất phương trình $-3x + 1 > 0$.",
             "correctAnswer": true,
-            "explanation": "Chính xác, biểu diễn tập nghiệm của các số thực nhỏ hơn 0."
+            "explanation": "Thay $x = 0$ vào ta được $-3(0) + 1 = 1 > 0$ (khẳng định đúng)."
           }
         ]
       },

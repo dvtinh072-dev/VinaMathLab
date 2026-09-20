@@ -2844,5 +2844,283 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
         "explanation": "$250 + 10x \\ge 370 \\Leftrightarrow 10x \\ge 120 \\Leftrightarrow x \\ge 12$ tháng."
       }
     ]
-  }
+  },
+  "t9-on-tap-chuong-2": {
+    "quizQuestions": [
+        {
+            "id": "ai-otc2-q1",
+            "badge": "Luyện thêm 1 (NB) - Nhận biết phương trình tích",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 30)",
+            "question": "Phương trình nào sau đây là phương trình tích?",
+            "options": [
+                "$(3x + 1)(x - 4) = 0$",
+                "$(3x + 1) + (x - 4) = 0$",
+                "$(3x + 1)(x - 4) = 2$",
+                "$\\frac{3x + 1}{x - 4} = 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình tích có dạng chuẩn $A(x) \\cdot B(x) = 0$. Phương trình $(3x + 1)(x - 4) = 0$ có tích hai đa thức bằng 0."
+        },
+        {
+            "id": "ai-otc2-q2",
+            "badge": "Luyện thêm 2 (NB) - Điều kiện xác định của phương trình",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 32)",
+            "question": "Điều kiện xác định của phương trình $\\frac{x + 3}{2x - 4} = 1$ là:",
+            "options": [
+                "$x \\ne 2$",
+                "$x \\ne -3$",
+                "$x \\ne 4$",
+                "$x \\ne 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mẫu thức khác 0: $2x - 4 \\ne 0 \\Leftrightarrow 2x \\ne 4 \\Leftrightarrow x \\ne 2$."
+        },
+        {
+            "id": "ai-otc2-q3",
+            "badge": "Luyện thêm 3 (NB) - Liên hệ thứ tự và phép nhân",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 38)",
+            "question": "Cho $a > b$. Nhân cả hai vế với số dương 4 ta được:",
+            "options": [
+                "$4a > 4b$",
+                "$4a < 4b$",
+                "$-4a > -4b$",
+                "$4a = 4b$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khi nhân cả hai vế của bất đẳng thức với một số dương, ta được bất đẳng thức cùng chiều: $a > b \\Rightarrow 4a > 4b$."
+        },
+        {
+            "id": "ai-otc2-q4",
+            "badge": "Luyện thêm 4 (NB) - Nghiệm của bất phương trình cơ bản",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 42)",
+            "question": "Nghiệm của bất phương trình $5x > 15$ là:",
+            "options": [
+                "$x > 3$",
+                "$x < 3$",
+                "$x \\ge 3$",
+                "$x > -3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chia cả hai vế cho 5 (số dương): $x > \\frac{15}{5} \\Leftrightarrow x > 3$."
+        },
+        {
+            "id": "ai-otc2-q5",
+            "badge": "Luyện thêm 5 (TH) - Nghiệm của phương trình tích",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 31)",
+            "question": "Nghiệm của phương trình $(2x - 1)(x + 5) = 0$ là:",
+            "options": [
+                "$x = \\frac{1}{2}$ hoặc $x = -5$",
+                "$x = -\\frac{1}{2}$ hoặc $x = 5$",
+                "$x = \\frac{1}{2}$ hoặc $x = 5$",
+                "$x = 1$ hoặc $x = -5$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $2x - 1 = 0 \\Leftrightarrow x = \\frac{1}{2}$; $x + 5 = 0 \\Leftrightarrow x = -5$."
+        },
+        {
+            "id": "ai-otc2-q6",
+            "badge": "Luyện thêm 6 (TH) - Bất phương trình đổi chiều khi nhân chia số âm",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 43)",
+            "question": "Nghiệm của bất phương trình $-2x \\le 8$ là:",
+            "options": [
+                "$x \\ge -4$",
+                "$x \\le -4$",
+                "$x \\ge 4$",
+                "$x \\le 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chia cả hai vế cho số âm $-2$ và đổi chiều bất phương trình: $x \\ge \\frac{8}{-2} \\Leftrightarrow x \\ge -4$."
+        },
+        {
+            "id": "ai-otc2-q7",
+            "badge": "Luyện thêm 7 (TH) - Tìm nghiệm phương trình chứa ẩn ở mẫu",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 33)",
+            "question": "Nghiệm của phương trình $\\frac{x - 3}{x + 2} = 0$ là:",
+            "options": [
+                "$x = 3$",
+                "$x = -2$",
+                "$x = 3$ hoặc $x = -2$",
+                "Vô nghiệm"
+            ],
+            "correctIndex": 0,
+            "explanation": "ĐKXĐ: $x \\ne -2$. Phương trình tương đương $x - 3 = 0 \\Leftrightarrow x = 3$ (thỏa mãn ĐKXĐ)."
+        },
+        {
+            "id": "ai-otc2-q8",
+            "badge": "Luyện thêm 8 (TH) - So sánh hai biểu thức",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 37)",
+            "question": "Cho $x < y$. So sánh $-3x + 1$ và $-3y + 1$ ta được:",
+            "options": [
+                "$-3x + 1 > -3y + 1$",
+                "$-3x + 1 < -3y + 1$",
+                "$-3x + 1 = -3y + 1$",
+                "$-3x + 1 \\le -3y + 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $x < y \\Rightarrow -3x > -3y$ (nhân với số âm $-3$ đổi chiều). Cộng 1 vào hai vế ta được: $-3x + 1 > -3y + 1$."
+        },
+        {
+            "id": "ai-otc2-q9",
+            "badge": "Luyện thêm 9 (TH) - Bất phương trình dạng ax + b > 0",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 44)",
+            "question": "Tập nghiệm của bất phương trình $4x - 12 < 0$ là:",
+            "options": [
+                "$x < 3$",
+                "$x > 3$",
+                "$x \\le 3$",
+                "$x < -3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chuyển vế: $4x < 12 \\Leftrightarrow x < 3$."
+        },
+        {
+            "id": "ai-otc2-q10",
+            "badge": "Luyện thêm 10 (VD) - Tìm số nghiệm nguyên dương",
+            "isAiGenerated": true,
+            "source": "Đề khảo sát Toán 9 Quận Đống Đa",
+            "question": "Có bao nhiêu số nguyên dương thỏa mãn bất phương trình $3x - 10 < 0$?",
+            "options": [
+                "$3$",
+                "$4$",
+                "$2$",
+                "Vô số"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $3x < 10 \\Leftrightarrow x < \\frac{10}{3} \\approx 3,33$. Các số nguyên dương thỏa mãn là $1, 2, 3$. Có 3 số."
+        },
+        {
+            "id": "ai-otc2-q11",
+            "badge": "Luyện thêm 11 (VD) - Tìm tham số m để phương trình có nghiệm cho trước",
+            "isAiGenerated": true,
+            "source": "Đề thi học kì I THCS Nguyễn Du",
+            "question": "Tìm $m$ để phương trình $(2m - 1)x + 3 = 0$ nhận $x = 1$ làm nghiệm.",
+            "options": [
+                "$m = -1$",
+                "$m = 1$",
+                "$m = 2$",
+                "$m = -2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 1$: $(2m - 1)(1) + 3 = 0 \\Leftrightarrow 2m + 2 = 0 \\Leftrightarrow 2m = -2 \\Leftrightarrow m = -1$."
+        },
+        {
+            "id": "ai-otc2-q12",
+            "badge": "Luyện thêm 12 (VD) - Toán thực tế số người tham gia chuyến đi",
+            "isAiGenerated": true,
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 45)",
+            "question": "Một nhóm bạn muốn thuê một chiếc xe du lịch với giá trọn gói $1\\,800\\,000$ đồng. Để chi phí mỗi người phải đóng không vượt quá $200\\,000$ đồng thì nhóm bạn cần có ít nhất bao nhiêu người?",
+            "options": [
+                "$9$ người",
+                "$10$ người",
+                "$8$ người",
+                "$12$ người"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi số người là $x$ ($x \\in \\mathbb{N}^*$). Chi phí mỗi người phải đóng là $\\frac{1\\,800\\,000}{x}$ (đồng). Theo đề bài: $\\frac{1\\,800\\,000}{x} \\le 200\\,000 \\Leftrightarrow x \\ge \\frac{1\\,800\\,000}{200\\,000} = 9$. Vậy nhóm cần ít nhất 9 người."
+        }
+    ],
+    "trueFalseQuestions": [
+        {
+            "id": "ai-otc2-tf1",
+            "badge": "Luyện thêm Đúng/Sai 1 (TH) - Bất đẳng thức và thứ tự",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 38)",
+            "prompt": "Cho hai số thực $m$ và $n$ thỏa mãn $m > n$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$m + 4 > n + 4$.",
+                    "correctAnswer": true,
+                    "explanation": "Cộng 4 vào hai vế chiều bất đẳng thức không đổi."
+                },
+                {
+                    "id": "b",
+                    "text": "$-2m > -2n$.",
+                    "correctAnswer": false,
+                    "explanation": "Nhân với số âm $-2$ phải đổi chiều thành $-2m < -2n$."
+                },
+                {
+                    "id": "c",
+                    "text": "$3m - 1 > 3n - 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì $m > n \\Rightarrow 3m > 3n \\Rightarrow 3m - 1 > 3n - 1$."
+                },
+                {
+                    "id": "d",
+                    "text": "$5 - m > 5 - n$.",
+                    "correctAnswer": false,
+                    "explanation": "Vì $m > n \\Rightarrow -m < -n \\Rightarrow 5 - m < 5 - n$."
+                }
+            ]
+        },
+        {
+            "id": "ai-otc2-tf2",
+            "badge": "Luyện thêm Đúng/Sai 2 (VD) - Phương trình và bất phương trình thực tế",
+            "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 45)",
+            "prompt": "Một cửa hàng văn phòng phẩm bán một chiếc bút bi với giá $5\\,000$ đồng và một quyển sổ giá $12\\,000$ đồng. Bạn Lan mua 2 chiếc bút bi và một số quyển sổ, mang theo $50\\,000$ đồng. Gọi $x$ là số quyển sổ Lan mua ($x \\in \\mathbb{N}^*$). Xét tính đúng/sai:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Số tiền Lan trả cho 2 chiếc bút bi là $10\\,000$ đồng.",
+                    "correctAnswer": true,
+                    "explanation": "$2 \\cdot 5\\,000 = 10\\,000$ đồng."
+                },
+                {
+                    "id": "b",
+                    "text": "Bất phương trình biểu thị số tiền Lan mua hàng là $10\\,000 + 12\\,000x \\le 50\\,000$.",
+                    "correctAnswer": true,
+                    "explanation": "Tổng số tiền mua bút và sổ không vượt quá số tiền mang theo."
+                },
+                {
+                    "id": "c",
+                    "text": "Bất phương trình tương đương với $x \\le 3,33$.",
+                    "correctAnswer": true,
+                    "explanation": "$12\\,000x \\le 40\\,000 \\Leftrightarrow x \\le \\frac{40}{12} = \\frac{10}{3} \\approx 3,33$."
+                },
+                {
+                    "id": "d",
+                    "text": "Lan có thể mua tối đa 4 quyển sổ.",
+                    "correctAnswer": false,
+                    "explanation": "Vì $x \\le 3,33$ và $x \\in \\mathbb{N}^*$ nên Lan chỉ mua tối đa 3 quyển sổ."
+                }
+            ]
+        }
+    ],
+    "shortAnswerQuestions": [
+        {
+            "id": "ai-otc2-sa1",
+            "badge": "Luyện thêm Trả lời ngắn 1 (TH) - Tìm nghiệm của phương trình",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 33)",
+            "prompt": "Tìm nghiệm của phương trình $\\frac{4x - 3}{x + 1} = 3$.",
+            "correctAnswer": "6",
+            "acceptableAnswers": [
+                "6",
+                "x=6",
+                "x = 6"
+            ],
+            "explanation": "ĐKXĐ: $x \\ne -1$. Quy đồng và khử mẫu: $4x - 3 = 3(x + 1) \\Leftrightarrow 4x - 3 = 3x + 3 \\Leftrightarrow x = 6$ (thỏa mãn ĐKXĐ)."
+        },
+        {
+            "id": "ai-otc2-sa2",
+            "badge": "Luyện thêm Trả lời ngắn 2 (VD) - Tìm số nguyên lớn nhất thỏa mãn",
+            "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 44)",
+            "prompt": "Tìm giá trị lớn nhất của số nguyên $x$ thỏa mãn bất phương trình $3(x + 1) - 2(x - 2) < 12$.",
+            "correctAnswer": "4",
+            "acceptableAnswers": [
+                "4",
+                "x=4",
+                "x = 4"
+            ],
+            "explanation": "Khai triển và rút gọn vế trái: $3x + 3 - 2x + 4 < 12 \\Leftrightarrow x + 7 < 12 \\Leftrightarrow x < 5$. Vì $x$ là số nguyên nên giá trị lớn nhất của $x$ là 4."
+        }
+    ]
+},
 };

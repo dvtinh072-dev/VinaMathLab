@@ -4608,5 +4608,1625 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Gọi chiều rộng là $a$ (m). Chiều dài là $a + 3$ (m). Chu vi là $2(a + a + 3) = 4a + 6$ (m). Để rào đủ với tấm lưới 70 m thì chu vi $4a + 6 \\le 70 \\Leftrightarrow 4a \\le 64 \\Leftrightarrow a \\le 16$ mét."
       }
     ]
-  }
+  },
+  "t9-on-tap-chuong-2": {
+    "id": "t9-on-tap-chuong-2",
+    "lessonNumber": 0,
+    "title": "Ôn tập cuối chương II",
+    "bookChapter": "Chương II: Phương trình và bất phương trình bậc nhất một ẩn (SGK Toán 9 KNTT - Tập 1)",
+    "scenarioTitle": "Luyện tập 3 đề ôn tập tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+    "scenarioFrames": [],
+    "theorySections": [],
+    "youtubeVideoId": "t9_ot2_video",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và giải bài tập cuối chương II - Toán 9 KNTT",
+    "youtubeVideos": [
+        {
+            "id": "t9_ot2_video1",
+            "title": "Tiết 1: Ôn tập phương trình quy về bậc nhất (Phương trình tích và phương trình chứa ẩn ở mẫu)"
+        },
+        {
+            "id": "t9_ot2_video2",
+            "title": "Tiết 2: Ôn tập bất đẳng thức và bất phương trình bậc nhất một ẩn"
+        }
+    ],
+    "videoQuestions": [
+        {
+            "id": "vq-9.ot2.1",
+            "title": "Ví dụ 1: Giải phương trình tích",
+            "question": "Nghiệm của phương trình $(2x - 4)(3x + 9) = 0$ là:",
+            "options": [
+                "$x = 2$ hoặc $x = -3$",
+                "$x = -2$ hoặc $x = 3$",
+                "$x = 2$ hoặc $x = 3$",
+                "$x = -2$ hoặc $x = -3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình $(2x - 4)(3x + 9) = 0 \\Leftrightarrow 2x - 4 = 0$ hoặc $3x + 9 = 0 \\Leftrightarrow x = 2$ hoặc $x = -3$."
+        },
+        {
+            "id": "vq-9.ot2.2",
+            "title": "Ví dụ 2: Tìm điều kiện xác định của phương trình chứa ẩn ở mẫu",
+            "question": "Điều kiện xác định của phương trình $\\frac{x + 1}{x - 2} + \\frac{3}{x + 2} = 0$ là:",
+            "options": [
+                "$x \\ne 2$ và $x \\ne -2$",
+                "$x \\ne 2$",
+                "$x \\ne -2$",
+                "$x \\ne 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Điều kiện xác định là các mẫu thức phải khác 0: $\\begin{cases} x - 2 \\ne 0 \\\\ x + 2 \\ne 0 \\end{cases} \\Leftrightarrow \\begin{cases} x \\ne 2 \\\\ x \\ne -2 \\end{cases}$."
+        },
+        {
+            "id": "vq-9.ot2.3",
+            "title": "Ví dụ 3: Tính chất liên hệ giữa thứ tự và phép nhân với số âm",
+            "question": "Cho $a < b$. Khẳng định nào sau đây là đúng?",
+            "options": [
+                "$-5a > -5b$",
+                "$-5a < -5b$",
+                "$-5a = -5b$",
+                "$-5a \\le -5b$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khi nhân cả hai vế của bất đẳng thức $a < b$ với số âm $-5$, ta phải đổi chiều bất đẳng thức: $-5a > -5b$."
+        },
+        {
+            "id": "vq-9.ot2.4",
+            "title": "Ví dụ 4: Giải bất phương trình bậc nhất một ẩn",
+            "question": "Nghiệm của bất phương trình $3x - 6 > 0$ là:",
+            "options": [
+                "$x > 2$",
+                "$x < 2$",
+                "$x \\ge 2$",
+                "$x > -2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $3x - 6 > 0 \\Leftrightarrow 3x > 6 \\Leftrightarrow x > \\frac{6}{3} \\Leftrightarrow x > 2$."
+        }
+    ],
+    "tips": [
+        "Phương trình tích $A(x) \\cdot B(x) = 0$: Luôn tách thành hai trường hợp $A(x) = 0$ hoặc $B(x) = 0$ rồi lấy hợp tất cả các nghiệm.",
+        "Phương trình chứa ẩn ở mẫu: Bắt buộc phải tìm điều kiện xác định (ĐKXĐ) ngay từ bước đầu tiên và đối chiếu kỹ lưỡng trước khi kết luận nghiệm.",
+        "Bất đẳng thức & Bất phương trình: Quy tắc cốt lõi cần nhớ là 'Nhân hoặc chia hai vế với số âm PHẢI ĐỔI CHIỀU bất đẳng thức'.",
+        "Bài toán thực tế bất phương trình: Đọc kỹ các từ khóa chỉ chiều bất đẳng thức: 'nhiều nhất', 'tối đa', 'không quá' ($\\le$); 'ít nhất', 'tối thiểu', 'không dưới' ($\\ge$)."
+    ],
+    "traps": [
+        "Bẫy quên điều kiện xác định khi giải phương trình chứa ẩn ở mẫu, dẫn đến nhận nhầm nghiệm ngoại lai.",
+        "Bẫy quên đổi chiều bất đẳng thức khi nhân hoặc chia hai vế cho một số âm (ví dụ $-2x > 6 \\Rightarrow x < -3$, không phải $x > -3$).",
+        "Bẫy chuyển vế quên đổi dấu hạng tử (ví dụ $3x - 5 > 0 \\Rightarrow 3x > 5$, dễ nhầm thành $3x > -5$).",
+        "Bẫy làm tròn số trong bài toán thực tế: Khi hỏi 'số quyển vở mua nhiều nhất' mà ra $x \\le 7,5$ thì phải lấy số nguyên 7, không được làm tròn lên 8 vì sẽ vượt quá số tiền có."
+    ],
+    "quizQuestions": [
+        {
+            "id": "otc2-d1-q1",
+            "badge": "Câu 1 (NB) - Điều kiện xác định của phương trình",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 32)",
+            "question": "Điều kiện xác định của phương trình $\\frac{2x - 1}{x - 3} = 0$ là:",
+            "options": [
+                "$x \\ne 3$",
+                "$x \\ne \\frac{1}{2}$",
+                "$x \\ne -3$",
+                "$x \\ne 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phương trình chứa ẩn ở mẫu xác định khi và chỉ khi mẫu thức khác 0: $x - 3 \\ne 0 \\Leftrightarrow x \\ne 3$."
+        },
+        {
+            "id": "otc2-d1-q2",
+            "badge": "Câu 2 (NB) - Nghiệm của phương trình tích",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 30)",
+            "question": "Nghiệm của phương trình tích $(x - 2)(2x + 6) = 0$ là:",
+            "options": [
+                "$x = 2$ hoặc $x = -3$",
+                "$x = -2$ hoặc $x = 3$",
+                "$x = 2$ hoặc $x = 3$",
+                "$x = -2$ hoặc $x = -3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $(x - 2)(2x + 6) = 0 \\Leftrightarrow x - 2 = 0$ hoặc $2x + 6 = 0 \\Leftrightarrow x = 2$ hoặc $x = -3$."
+        },
+        {
+            "id": "otc2-d1-q3",
+            "badge": "Câu 3 (NB) - Liên hệ giữa thứ tự và phép cộng",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 36)",
+            "question": "Cho $a < b$. Khẳng định nào sau đây luôn đúng?",
+            "options": [
+                "$a + 5 < b + 5$",
+                "$a - 5 > b - 5$",
+                "$a + 5 > b + 5$",
+                "$5 - a < 5 - b$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khi cộng cùng một số $5$ vào hai vế của bất đẳng thức $a < b$, ta được bất đẳng thức cùng chiều: $a + 5 < b + 5$."
+        },
+        {
+            "id": "otc2-d1-q4",
+            "badge": "Câu 4 (NB) - Nhận biết bất phương trình bậc nhất một ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 42)",
+            "question": "Bất phương trình nào sau đây là bất phương trình bậc nhất một ẩn?",
+            "options": [
+                "$3x - 7 > 0$",
+                "$2x^2 + 1 < 0$",
+                "$0x + 5 \\ge 0$",
+                "$\\frac{2}{x} - 1 \\le 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $<, \\ge, \\le$) với $a \\ne 0$. Ở đây $3x - 7 > 0$ có $a = 3 \\ne 0, b = -7$."
+        },
+        {
+            "id": "otc2-d1-q5",
+            "badge": "Câu 5 (TH) - Giải bất phương trình bậc nhất một ẩn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 43)",
+            "question": "Tập nghiệm của bất phương trình $2x - 8 \\ge 0$ là:",
+            "options": [
+                "$x \\ge 4$",
+                "$x \\le 4$",
+                "$x > 4$",
+                "$x \\ge -4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chuyển vế hạng tử tự do: $2x \\ge 8$. Chia hai vế cho 2: $x \\ge 4$."
+        },
+        {
+            "id": "otc2-d1-q6",
+            "badge": "Câu 6 (TH) - Giải phương trình chứa ẩn ở mẫu",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 33)",
+            "question": "Nghiệm của phương trình $\\frac{2x - 1}{x - 2} = 3$ là:",
+            "options": [
+                "$x = 5$",
+                "$x = -5$",
+                "$x = 2$",
+                "Phương trình vô nghiệm"
+            ],
+            "correctIndex": 0,
+            "explanation": "ĐKXĐ: $x \\ne 2$. Phương trình tương đương: $2x - 1 = 3(x - 2) \\Leftrightarrow 2x - 1 = 3x - 6 \\Leftrightarrow 3x - 2x = 6 - 1 \\Leftrightarrow x = 5$ (thỏa mãn ĐKXĐ)."
+        },
+        {
+            "id": "otc2-d1-q7",
+            "badge": "Câu 7 (TH) - Liên hệ giữa thứ tự và phép nhân với số âm",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 40)",
+            "question": "Biết $-3a > -3b$. So sánh hai số $a$ và $b$ ta được:",
+            "options": [
+                "$a < b$",
+                "$a > b$",
+                "$a = b$",
+                "$a \\le b$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chia cả hai vế của bất đẳng thức $-3a > -3b$ cho số âm $-3$, ta phải đổi chiều bất đẳng thức, do đó $a < b$."
+        },
+        {
+            "id": "otc2-d1-q8",
+            "badge": "Câu 8 (TH) - Bất phương trình đổi chiều khi chia số âm",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+            "question": "Nghiệm của bất phương trình $-4x + 12 < 0$ là:",
+            "options": [
+                "$x > 3$",
+                "$x < 3$",
+                "$x > -3$",
+                "$x < -3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chuyển vế: $-4x < -12$. Chia cả hai vế cho $-4$ (đổi chiều bất đẳng thức): $x > \\frac{-12}{-4} \\Leftrightarrow x > 3$."
+        },
+        {
+            "id": "otc2-d1-q9",
+            "badge": "Câu 9 (TH) - So sánh giá trị biểu thức nhờ tính chất thứ tự",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 39)",
+            "question": "Cho $m < n$. Bất đẳng thức nào sau đây là đúng?",
+            "options": [
+                "$2m - 5 < 2n - 5$",
+                "$2m - 5 > 2n - 5$",
+                "$-2m + 5 < -2n + 5$",
+                "$5 - 2m < 5 - 2n$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $m < n \\Rightarrow 2m < 2n$ (nhân số dương 2 giữ nguyên chiều). Cộng $-5$ vào hai vế ta được: $2m - 5 < 2n - 5$."
+        },
+        {
+            "id": "otc2-d1-q10",
+            "badge": "Câu 10 (VD) - Tìm tham số để phương trình bậc nhất một ẩn",
+            "source": "Đề thi học kì I Toán 9 THCS Trưng Vương",
+            "question": "Tìm giá trị của $m$ để phương trình $(m - 2)x^2 + 3x - 1 = 0$ là phương trình bậc nhất một ẩn.",
+            "options": [
+                "$m = 2$",
+                "$m \\ne 2$",
+                "$m = 0$",
+                "$m = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Để phương trình trở thành phương trình bậc nhất một ẩn thì hệ số của $x^2$ phải bằng 0: $m - 2 = 0 \\Leftrightarrow m = 2$. Khi đó phương trình là $3x - 1 = 0$ (bậc nhất)."
+        },
+        {
+            "id": "otc2-d1-q11",
+            "badge": "Câu 11 (VD) - Tìm số nguyên lớn nhất thỏa mãn bất phương trình",
+            "source": "Đề khảo sát chất lượng Toán 9 Quận Cầu Giấy",
+            "question": "Số nguyên dương $x$ lớn nhất thỏa mãn bất phương trình $5 - 2x > -3$ là:",
+            "options": [
+                "$3$",
+                "$4$",
+                "$2$",
+                "$1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $5 - 2x > -3 \\Leftrightarrow -2x > -8 \\Leftrightarrow x < 4$. Vì $x$ là số nguyên dương nên $x \\in \\{1; 2; 3\\}$. Số nguyên dương lớn nhất là 3."
+        },
+        {
+            "id": "otc2-d1-q12",
+            "badge": "Câu 12 (VD) - Toán thực tế mua sắm đồ dùng học tập",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 45)",
+            "question": "Bạn An có $60\\,000$ đồng, An mua một chiếc thước kẻ giá $15\\,000$ đồng, số tiền còn lại mua vở với giá $6\\,000$ đồng một quyển. Số quyển vở An có thể mua nhiều nhất là:",
+            "options": [
+                "$7$ quyển",
+                "$8$ quyển",
+                "$6$ quyển",
+                "$9$ quyển"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi số quyển vở An mua là $x$ ($x \\in \\mathbb{N}^*$). Số tiền An phải trả là $15\\,000 + 6\\,000x$ (đồng). Do An chỉ có $60\\,000$ đồng nên: $15\\,000 + 6\\,000x \\le 60\\,000 \\Leftrightarrow 6\\,000x \\le 45\\,000 \\Leftrightarrow x \\le 7,5$. Vì $x$ nguyên dương nên số quyển vở mua được nhiều nhất là 7 quyển."
+        }
+    ],
+    "trueFalseQuestions": [
+        {
+            "id": "otc2-d1-tf1",
+            "badge": "Đúng/Sai 1 (NB) - Phương trình tích",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 30)",
+            "prompt": "Cho phương trình tích $(2x - 4)(x + 3) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Phương trình đã cho có dạng tích $A(x) \\cdot B(x) = 0$.",
+                    "correctAnswer": true,
+                    "explanation": "Phương trình có dạng tích của hai đa thức $A(x) = 2x - 4$ và $B(x) = x + 3$."
+                },
+                {
+                    "id": "b",
+                    "text": "Giá trị $x = 2$ là một nghiệm của phương trình.",
+                    "correctAnswer": true,
+                    "explanation": "Thay $x = 2$: $2(2) - 4 = 0$, do đó $0 \\cdot (2 + 3) = 0$ (thỏa mãn)."
+                },
+                {
+                    "id": "c",
+                    "text": "Giá trị $x = 3$ là một nghiệm của phương trình.",
+                    "correctAnswer": false,
+                    "explanation": "Thay $x = 3$: $(2 \\cdot 3 - 4)(3 + 3) = 2 \\cdot 6 = 12 \\ne 0$. Nghiệm đúng phải là $x = -3$."
+                },
+                {
+                    "id": "d",
+                    "text": "Tập nghiệm của phương trình đã cho là $S = \\{2; -3\\}$.",
+                    "correctAnswer": true,
+                    "explanation": "Phương trình tương đương $2x - 4 = 0$ hoặc $x + 3 = 0 \\Leftrightarrow x = 2$ hoặc $x = -3$."
+                }
+            ]
+        },
+        {
+            "id": "otc2-d1-tf2",
+            "badge": "Đúng/Sai 2 (TH) - Phương trình chứa ẩn ở mẫu và điều kiện xác định",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 33)",
+            "prompt": "Cho phương trình $\\frac{x + 2}{x - 1} = \\frac{3}{x - 1}$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Điều kiện xác định của phương trình là $x \\ne 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Mẫu thức chung là $x - 1$, nên điều kiện xác định là $x - 1 \\ne 0 \\Leftrightarrow x \\ne 1$."
+                },
+                {
+                    "id": "b",
+                    "text": "Khử mẫu ta được phương trình bậc nhất $x + 2 = 3$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì hai vế cùng mẫu thức $(x - 1)$ nên khử mẫu được $x + 2 = 3$."
+                },
+                {
+                    "id": "c",
+                    "text": "Phương trình sau khi khử mẫu có nghiệm duy nhất $x = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "$x + 2 = 3 \\Leftrightarrow x = 3 - 2 = 1$."
+                },
+                {
+                    "id": "d",
+                    "text": "Phương trình ban đầu có tập nghiệm là $S = \\{1\\}$.",
+                    "correctAnswer": false,
+                    "explanation": "Giá trị $x = 1$ không thỏa mãn điều kiện xác định $x \\ne 1$, nên bị loại. Phương trình ban đầu vô nghiệm ($S = \\emptyset$)."
+                }
+            ]
+        },
+        {
+            "id": "otc2-d1-tf3",
+            "badge": "Đúng/Sai 3 (TH) - Tính chất của bất đẳng thức",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 38)",
+            "prompt": "Cho hai số thực $a$ và $b$ thỏa mãn $a > b$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$a - 7 > b - 7$.",
+                    "correctAnswer": true,
+                    "explanation": "Cộng $-7$ vào hai vế của bất đẳng thức $a > b$, chiều bất đẳng thức không đổi."
+                },
+                {
+                    "id": "b",
+                    "text": "$-4a > -4b$.",
+                    "correctAnswer": false,
+                    "explanation": "Nhân hai vế với số âm $-4$ phải đổi chiều bất đẳng thức: $-4a < -4b$."
+                },
+                {
+                    "id": "c",
+                    "text": "$3a + 2 > 3b + 2$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì $a > b \\Rightarrow 3a > 3b \\Rightarrow 3a + 2 > 3b + 2$."
+                },
+                {
+                    "id": "d",
+                    "text": "$10 - 2a < 10 - 2b$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì $a > b \\Rightarrow -2a < -2b \\Rightarrow 10 - 2a < 10 - 2b$."
+                }
+            ]
+        },
+        {
+            "id": "otc2-d1-tf4",
+            "badge": "Đúng/Sai 4 (VD) - Bất phương trình bậc nhất một ẩn và số nghiệm",
+            "source": "Đề thi giữa kì I Toán 9 THCS Giảng Võ",
+            "prompt": "Cho bất phương trình $6 - 3x \\ge 0$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Hệ số bậc nhất của bất phương trình là $a = -3$, hệ số tự do là $b = 6$.",
+                    "correctAnswer": true,
+                    "explanation": "Bất phương trình đưa về dạng chuẩn $-3x + 6 \\ge 0$ có $a = -3, b = 6$."
+                },
+                {
+                    "id": "b",
+                    "text": "Chuyển vế hạng tử tự do ta được $-3x \\ge -6$.",
+                    "correctAnswer": true,
+                    "explanation": "Chuyển $6$ sang vế phải đổi dấu thành $-6$."
+                },
+                {
+                    "id": "c",
+                    "text": "Tập nghiệm của bất phương trình là $x \\ge 2$.",
+                    "correctAnswer": false,
+                    "explanation": "Chia cả hai vế cho $-3$ (số âm), ta phải đổi chiều: $x \\le \\frac{-6}{-3} \\Leftrightarrow x \\le 2$."
+                },
+                {
+                    "id": "d",
+                    "text": "Số lượng số nguyên dương thỏa mãn bất phương trình là 2.",
+                    "correctAnswer": true,
+                    "explanation": "Các số nguyên dương thỏa mãn $x \\le 2$ là $x = 1$ và $x = 2$, có đúng 2 số."
+                }
+            ]
+        }
+    ],
+    "shortAnswerQuestions": [
+        {
+            "id": "otc2-d1-sa1",
+            "badge": "Trả lời ngắn 1 (TH) - Tìm nghiệm phương trình quy về bậc nhất",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 33)",
+            "prompt": "Tìm nghiệm của phương trình $\\frac{3x - 2}{x - 1} = 2$.",
+            "correctAnswer": "0",
+            "acceptableAnswers": [
+                "0",
+                "x=0",
+                "x = 0"
+            ],
+            "explanation": "ĐKXĐ: $x \\ne 1$. Phương trình tương đương: $3x - 2 = 2(x - 1) \\Leftrightarrow 3x - 2 = 2x - 2 \\Leftrightarrow 3x - 2x = -2 + 2 \\Leftrightarrow x = 0$ (thỏa mãn ĐKXĐ). Vậy nghiệm là 0."
+        },
+        {
+            "id": "otc2-d1-sa2",
+            "badge": "Trả lời ngắn 2 (TH) - Đếm số nghiệm của phương trình tích",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 31)",
+            "prompt": "Phương trình $(x^2 - 4)(3x + 9) = 0$ có tất cả bao nhiêu nghiệm phân biệt?",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+                "3",
+                "3 nghiệm"
+            ],
+            "explanation": "Ta có: $(x - 2)(x + 2)(3x + 9) = 0 \\Leftrightarrow x - 2 = 0$ hoặc $x + 2 = 0$ hoặc $3x + 9 = 0 \\Leftrightarrow x = 2, x = -2, x = -3$. Có 3 nghiệm phân biệt."
+        },
+        {
+            "id": "otc2-d1-sa3",
+            "badge": "Trả lời ngắn 3 (TH) - Đếm số nghiệm nguyên dương của bất phương trình",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+            "prompt": "Có bao nhiêu số nguyên dương $x$ thỏa mãn bất phương trình $7 - 2x > 1$?",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+                "2",
+                "2 số"
+            ],
+            "explanation": "Ta có: $7 - 2x > 1 \\Leftrightarrow -2x > -6 \\Leftrightarrow x < 3$. Các số nguyên dương nhỏ hơn 3 là $1$ và $2$. Vậy có 2 số."
+        },
+        {
+            "id": "otc2-d1-sa4",
+            "badge": "Trả lời ngắn 4 (VD) - Tìm tham số m để bất phương trình nhận nghiệm cho trước",
+            "source": "Đề thi học kì I Toán 9 THCS Chu Văn An",
+            "prompt": "Tìm giá trị của $m$ để bất phương trình $(m - 1)x + 6 > 0$ nhận $x = 2$ làm một nghiệm và khi $x = 2$ vế trái nhận giá trị bằng 10.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+                "3",
+                "m=3",
+                "m = 3"
+            ],
+            "explanation": "Khi $x = 2$, vế trái bằng 10 ta có: $(m - 1) \\cdot 2 + 6 = 10 \\Leftrightarrow 2(m - 1) = 4 \\Leftrightarrow m - 1 = 2 \\Leftrightarrow m = 3$. Thay $m = 3$ vào bất phương trình được $2x + 6 > 0$, với $x = 2$ thỏa mãn $10 > 0$."
+        },
+        {
+            "id": "otc2-d1-sa5",
+            "badge": "Trả lời ngắn 5 (VD) - Bài toán thực tế chuyển động bóng chạm đất",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 35)",
+            "prompt": "Độ cao $h$ (tính bằng mét) của một quả bóng bay lên sau khi được sút $t$ giây được xác định bởi công thức $h = 20t - 5t^2$. Sau bao nhiêu giây từ lúc sút thì bóng chạm đất ($h = 0$ và $t > 0$)?",
+            "correctAnswer": "4",
+            "acceptableAnswers": [
+                "4",
+                "4 giây",
+                "4s"
+            ],
+            "explanation": "Bóng chạm đất khi $h = 0 \\Leftrightarrow 20t - 5t^2 = 0 \\Leftrightarrow 5t(4 - t) = 0$. Vì $t > 0$ nên $4 - t = 0 \\Leftrightarrow t = 4$ giây."
+        },
+        {
+            "id": "otc2-d1-sa6",
+            "badge": "Trả lời ngắn 6 (VD) - Bài toán thực tế cước taxi",
+            "source": "Đề tuyển sinh vào 10 THPT TP. Hà Nội",
+            "prompt": "Một hãng taxi quy định giá cước mở cửa là $10\\,000$ đồng (cho $0,5\\text{ km}$ đầu tiên), mỗi kilômét tiếp theo tính giá $15\\,000$ đồng. Bác An chỉ mang theo $160\\,000$ đồng. Hỏi bác An có thể đi được quãng đường nhiều nhất bao nhiêu kilômét?",
+            "correctAnswer": "10,5",
+            "acceptableAnswers": [
+                "10,5",
+                "10.5",
+                "10,5 km",
+                "10.5 km"
+            ],
+            "explanation": "Gọi độ dài quãng đường bác An đi là $x$ ($x > 0,5\\text{ km}$). Số tiền cước phải trả là: $10\\,000 + 15\\,000(x - 0,5)$ (đồng). Do bác An có $160\\,000$ đồng: $10\\,000 + 15\\,000(x - 0,5) \\le 160\\,000 \\Leftrightarrow 15\\,000(x - 0,5) \\le 150\\,000 \\Leftrightarrow x - 0,5 \\le 10 \\Leftrightarrow x \\le 10,5\\text{ km}$."
+        }
+    ],
+    "examSets": [
+        {
+            "id": "de-1",
+            "title": "Đề ôn tập số 1",
+            "description": "Đề ôn tập tổng hợp cuối Chương II (Phương trình và Bất phương trình bậc nhất một ẩn) - Đề số 1",
+            "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+            "quizQuestions": [
+                {
+                    "id": "otc2-d1-q1",
+                    "badge": "Câu 1 (NB) - Điều kiện xác định của phương trình",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 32)",
+                    "question": "Điều kiện xác định của phương trình $\\frac{2x - 1}{x - 3} = 0$ là:",
+                    "options": [
+                        "$x \\ne 3$",
+                        "$x \\ne \\frac{1}{2}$",
+                        "$x \\ne -3$",
+                        "$x \\ne 0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Phương trình chứa ẩn ở mẫu xác định khi và chỉ khi mẫu thức khác 0: $x - 3 \\ne 0 \\Leftrightarrow x \\ne 3$."
+                },
+                {
+                    "id": "otc2-d1-q2",
+                    "badge": "Câu 2 (NB) - Nghiệm của phương trình tích",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 30)",
+                    "question": "Nghiệm của phương trình tích $(x - 2)(2x + 6) = 0$ là:",
+                    "options": [
+                        "$x = 2$ hoặc $x = -3$",
+                        "$x = -2$ hoặc $x = 3$",
+                        "$x = 2$ hoặc $x = 3$",
+                        "$x = -2$ hoặc $x = -3$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Ta có: $(x - 2)(2x + 6) = 0 \\Leftrightarrow x - 2 = 0$ hoặc $2x + 6 = 0 \\Leftrightarrow x = 2$ hoặc $x = -3$."
+                },
+                {
+                    "id": "otc2-d1-q3",
+                    "badge": "Câu 3 (NB) - Liên hệ giữa thứ tự và phép cộng",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 36)",
+                    "question": "Cho $a < b$. Khẳng định nào sau đây luôn đúng?",
+                    "options": [
+                        "$a + 5 < b + 5$",
+                        "$a - 5 > b - 5$",
+                        "$a + 5 > b + 5$",
+                        "$5 - a < 5 - b$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Khi cộng cùng một số $5$ vào hai vế của bất đẳng thức $a < b$, ta được bất đẳng thức cùng chiều: $a + 5 < b + 5$."
+                },
+                {
+                    "id": "otc2-d1-q4",
+                    "badge": "Câu 4 (NB) - Nhận biết bất phương trình bậc nhất một ẩn",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 42)",
+                    "question": "Bất phương trình nào sau đây là bất phương trình bậc nhất một ẩn?",
+                    "options": [
+                        "$3x - 7 > 0$",
+                        "$2x^2 + 1 < 0$",
+                        "$0x + 5 \\ge 0$",
+                        "$\\frac{2}{x} - 1 \\le 0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Bất phương trình bậc nhất một ẩn có dạng $ax + b > 0$ (hoặc $<, \\ge, \\le$) với $a \\ne 0$. Ở đây $3x - 7 > 0$ có $a = 3 \\ne 0, b = -7$."
+                },
+                {
+                    "id": "otc2-d1-q5",
+                    "badge": "Câu 5 (TH) - Giải bất phương trình bậc nhất một ẩn",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 43)",
+                    "question": "Tập nghiệm của bất phương trình $2x - 8 \\ge 0$ là:",
+                    "options": [
+                        "$x \\ge 4$",
+                        "$x \\le 4$",
+                        "$x > 4$",
+                        "$x \\ge -4$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Chuyển vế hạng tử tự do: $2x \\ge 8$. Chia hai vế cho 2: $x \\ge 4$."
+                },
+                {
+                    "id": "otc2-d1-q6",
+                    "badge": "Câu 6 (TH) - Giải phương trình chứa ẩn ở mẫu",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 33)",
+                    "question": "Nghiệm của phương trình $\\frac{2x - 1}{x - 2} = 3$ là:",
+                    "options": [
+                        "$x = 5$",
+                        "$x = -5$",
+                        "$x = 2$",
+                        "Phương trình vô nghiệm"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "ĐKXĐ: $x \\ne 2$. Phương trình tương đương: $2x - 1 = 3(x - 2) \\Leftrightarrow 2x - 1 = 3x - 6 \\Leftrightarrow 3x - 2x = 6 - 1 \\Leftrightarrow x = 5$ (thỏa mãn ĐKXĐ)."
+                },
+                {
+                    "id": "otc2-d1-q7",
+                    "badge": "Câu 7 (TH) - Liên hệ giữa thứ tự và phép nhân với số âm",
+                    "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 40)",
+                    "question": "Biết $-3a > -3b$. So sánh hai số $a$ và $b$ ta được:",
+                    "options": [
+                        "$a < b$",
+                        "$a > b$",
+                        "$a = b$",
+                        "$a \\le b$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Chia cả hai vế của bất đẳng thức $-3a > -3b$ cho số âm $-3$, ta phải đổi chiều bất đẳng thức, do đó $a < b$."
+                },
+                {
+                    "id": "otc2-d1-q8",
+                    "badge": "Câu 8 (TH) - Bất phương trình đổi chiều khi chia số âm",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "question": "Nghiệm của bất phương trình $-4x + 12 < 0$ là:",
+                    "options": [
+                        "$x > 3$",
+                        "$x < 3$",
+                        "$x > -3$",
+                        "$x < -3$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Chuyển vế: $-4x < -12$. Chia cả hai vế cho $-4$ (đổi chiều bất đẳng thức): $x > \\frac{-12}{-4} \\Leftrightarrow x > 3$."
+                },
+                {
+                    "id": "otc2-d1-q9",
+                    "badge": "Câu 9 (TH) - So sánh giá trị biểu thức nhờ tính chất thứ tự",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 39)",
+                    "question": "Cho $m < n$. Bất đẳng thức nào sau đây là đúng?",
+                    "options": [
+                        "$2m - 5 < 2n - 5$",
+                        "$2m - 5 > 2n - 5$",
+                        "$-2m + 5 < -2n + 5$",
+                        "$5 - 2m < 5 - 2n$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $m < n \\Rightarrow 2m < 2n$ (nhân số dương 2 giữ nguyên chiều). Cộng $-5$ vào hai vế ta được: $2m - 5 < 2n - 5$."
+                },
+                {
+                    "id": "otc2-d1-q10",
+                    "badge": "Câu 10 (VD) - Tìm tham số để phương trình bậc nhất một ẩn",
+                    "source": "Đề thi học kì I Toán 9 THCS Trưng Vương",
+                    "question": "Tìm giá trị của $m$ để phương trình $(m - 2)x^2 + 3x - 1 = 0$ là phương trình bậc nhất một ẩn.",
+                    "options": [
+                        "$m = 2$",
+                        "$m \\ne 2$",
+                        "$m = 0$",
+                        "$m = 3$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Để phương trình trở thành phương trình bậc nhất một ẩn thì hệ số của $x^2$ phải bằng 0: $m - 2 = 0 \\Leftrightarrow m = 2$. Khi đó phương trình là $3x - 1 = 0$ (bậc nhất)."
+                },
+                {
+                    "id": "otc2-d1-q11",
+                    "badge": "Câu 11 (VD) - Tìm số nguyên lớn nhất thỏa mãn bất phương trình",
+                    "source": "Đề khảo sát chất lượng Toán 9 Quận Cầu Giấy",
+                    "question": "Số nguyên dương $x$ lớn nhất thỏa mãn bất phương trình $5 - 2x > -3$ là:",
+                    "options": [
+                        "$3$",
+                        "$4$",
+                        "$2$",
+                        "$1$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Ta có: $5 - 2x > -3 \\Leftrightarrow -2x > -8 \\Leftrightarrow x < 4$. Vì $x$ là số nguyên dương nên $x \\in \\{1; 2; 3\\}$. Số nguyên dương lớn nhất là 3."
+                },
+                {
+                    "id": "otc2-d1-q12",
+                    "badge": "Câu 12 (VD) - Toán thực tế mua sắm đồ dùng học tập",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 45)",
+                    "question": "Bạn An có $60\\,000$ đồng, An mua một chiếc thước kẻ giá $15\\,000$ đồng, số tiền còn lại mua vở với giá $6\\,000$ đồng một quyển. Số quyển vở An có thể mua nhiều nhất là:",
+                    "options": [
+                        "$7$ quyển",
+                        "$8$ quyển",
+                        "$6$ quyển",
+                        "$9$ quyển"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Gọi số quyển vở An mua là $x$ ($x \\in \\mathbb{N}^*$). Số tiền An phải trả là $15\\,000 + 6\\,000x$ (đồng). Do An chỉ có $60\\,000$ đồng nên: $15\\,000 + 6\\,000x \\le 60\\,000 \\Leftrightarrow 6\\,000x \\le 45\\,000 \\Leftrightarrow x \\le 7,5$. Vì $x$ nguyên dương nên số quyển vở mua được nhiều nhất là 7 quyển."
+                }
+            ],
+            "trueFalseQuestions": [
+                {
+                    "id": "otc2-d1-tf1",
+                    "badge": "Đúng/Sai 1 (NB) - Phương trình tích",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 30)",
+                    "prompt": "Cho phương trình tích $(2x - 4)(x + 3) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Phương trình đã cho có dạng tích $A(x) \\cdot B(x) = 0$.",
+                            "correctAnswer": true,
+                            "explanation": "Phương trình có dạng tích của hai đa thức $A(x) = 2x - 4$ và $B(x) = x + 3$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Giá trị $x = 2$ là một nghiệm của phương trình.",
+                            "correctAnswer": true,
+                            "explanation": "Thay $x = 2$: $2(2) - 4 = 0$, do đó $0 \\cdot (2 + 3) = 0$ (thỏa mãn)."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Giá trị $x = 3$ là một nghiệm của phương trình.",
+                            "correctAnswer": false,
+                            "explanation": "Thay $x = 3$: $(2 \\cdot 3 - 4)(3 + 3) = 2 \\cdot 6 = 12 \\ne 0$. Nghiệm đúng phải là $x = -3$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Tập nghiệm của phương trình đã cho là $S = \\{2; -3\\}$.",
+                            "correctAnswer": true,
+                            "explanation": "Phương trình tương đương $2x - 4 = 0$ hoặc $x + 3 = 0 \\Leftrightarrow x = 2$ hoặc $x = -3$."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d1-tf2",
+                    "badge": "Đúng/Sai 2 (TH) - Phương trình chứa ẩn ở mẫu và điều kiện xác định",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 33)",
+                    "prompt": "Cho phương trình $\\frac{x + 2}{x - 1} = \\frac{3}{x - 1}$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Điều kiện xác định của phương trình là $x \\ne 1$.",
+                            "correctAnswer": true,
+                            "explanation": "Mẫu thức chung là $x - 1$, nên điều kiện xác định là $x - 1 \\ne 0 \\Leftrightarrow x \\ne 1$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Khử mẫu ta được phương trình bậc nhất $x + 2 = 3$.",
+                            "correctAnswer": true,
+                            "explanation": "Vì hai vế cùng mẫu thức $(x - 1)$ nên khử mẫu được $x + 2 = 3$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Phương trình sau khi khử mẫu có nghiệm duy nhất $x = 1$.",
+                            "correctAnswer": true,
+                            "explanation": "$x + 2 = 3 \\Leftrightarrow x = 3 - 2 = 1$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Phương trình ban đầu có tập nghiệm là $S = \\{1\\}$.",
+                            "correctAnswer": false,
+                            "explanation": "Giá trị $x = 1$ không thỏa mãn điều kiện xác định $x \\ne 1$, nên bị loại. Phương trình ban đầu vô nghiệm ($S = \\emptyset$)."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d1-tf3",
+                    "badge": "Đúng/Sai 3 (TH) - Tính chất của bất đẳng thức",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 38)",
+                    "prompt": "Cho hai số thực $a$ và $b$ thỏa mãn $a > b$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "$a - 7 > b - 7$.",
+                            "correctAnswer": true,
+                            "explanation": "Cộng $-7$ vào hai vế của bất đẳng thức $a > b$, chiều bất đẳng thức không đổi."
+                        },
+                        {
+                            "id": "b",
+                            "text": "$-4a > -4b$.",
+                            "correctAnswer": false,
+                            "explanation": "Nhân hai vế với số âm $-4$ phải đổi chiều bất đẳng thức: $-4a < -4b$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "$3a + 2 > 3b + 2$.",
+                            "correctAnswer": true,
+                            "explanation": "Vì $a > b \\Rightarrow 3a > 3b \\Rightarrow 3a + 2 > 3b + 2$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "$10 - 2a < 10 - 2b$.",
+                            "correctAnswer": true,
+                            "explanation": "Vì $a > b \\Rightarrow -2a < -2b \\Rightarrow 10 - 2a < 10 - 2b$."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d1-tf4",
+                    "badge": "Đúng/Sai 4 (VD) - Bất phương trình bậc nhất một ẩn và số nghiệm",
+                    "source": "Đề thi giữa kì I Toán 9 THCS Giảng Võ",
+                    "prompt": "Cho bất phương trình $6 - 3x \\ge 0$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Hệ số bậc nhất của bất phương trình là $a = -3$, hệ số tự do là $b = 6$.",
+                            "correctAnswer": true,
+                            "explanation": "Bất phương trình đưa về dạng chuẩn $-3x + 6 \\ge 0$ có $a = -3, b = 6$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Chuyển vế hạng tử tự do ta được $-3x \\ge -6$.",
+                            "correctAnswer": true,
+                            "explanation": "Chuyển $6$ sang vế phải đổi dấu thành $-6$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Tập nghiệm của bất phương trình là $x \\ge 2$.",
+                            "correctAnswer": false,
+                            "explanation": "Chia cả hai vế cho $-3$ (số âm), ta phải đổi chiều: $x \\le \\frac{-6}{-3} \\Leftrightarrow x \\le 2$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Số lượng số nguyên dương thỏa mãn bất phương trình là 2.",
+                            "correctAnswer": true,
+                            "explanation": "Các số nguyên dương thỏa mãn $x \\le 2$ là $x = 1$ và $x = 2$, có đúng 2 số."
+                        }
+                    ]
+                }
+            ],
+            "shortAnswerQuestions": [
+                {
+                    "id": "otc2-d1-sa1",
+                    "badge": "Trả lời ngắn 1 (TH) - Tìm nghiệm phương trình quy về bậc nhất",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 33)",
+                    "prompt": "Tìm nghiệm của phương trình $\\frac{3x - 2}{x - 1} = 2$.",
+                    "correctAnswer": "0",
+                    "acceptableAnswers": [
+                        "0",
+                        "x=0",
+                        "x = 0"
+                    ],
+                    "explanation": "ĐKXĐ: $x \\ne 1$. Phương trình tương đương: $3x - 2 = 2(x - 1) \\Leftrightarrow 3x - 2 = 2x - 2 \\Leftrightarrow 3x - 2x = -2 + 2 \\Leftrightarrow x = 0$ (thỏa mãn ĐKXĐ). Vậy nghiệm là 0."
+                },
+                {
+                    "id": "otc2-d1-sa2",
+                    "badge": "Trả lời ngắn 2 (TH) - Đếm số nghiệm của phương trình tích",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 31)",
+                    "prompt": "Phương trình $(x^2 - 4)(3x + 9) = 0$ có tất cả bao nhiêu nghiệm phân biệt?",
+                    "correctAnswer": "3",
+                    "acceptableAnswers": [
+                        "3",
+                        "3 nghiệm"
+                    ],
+                    "explanation": "Ta có: $(x - 2)(x + 2)(3x + 9) = 0 \\Leftrightarrow x - 2 = 0$ hoặc $x + 2 = 0$ hoặc $3x + 9 = 0 \\Leftrightarrow x = 2, x = -2, x = -3$. Có 3 nghiệm phân biệt."
+                },
+                {
+                    "id": "otc2-d1-sa3",
+                    "badge": "Trả lời ngắn 3 (TH) - Đếm số nghiệm nguyên dương của bất phương trình",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "prompt": "Có bao nhiêu số nguyên dương $x$ thỏa mãn bất phương trình $7 - 2x > 1$?",
+                    "correctAnswer": "2",
+                    "acceptableAnswers": [
+                        "2",
+                        "2 số"
+                    ],
+                    "explanation": "Ta có: $7 - 2x > 1 \\Leftrightarrow -2x > -6 \\Leftrightarrow x < 3$. Các số nguyên dương nhỏ hơn 3 là $1$ và $2$. Vậy có 2 số."
+                },
+                {
+                    "id": "otc2-d1-sa4",
+                    "badge": "Trả lời ngắn 4 (VD) - Tìm tham số m để bất phương trình nhận nghiệm cho trước",
+                    "source": "Đề thi học kì I Toán 9 THCS Chu Văn An",
+                    "prompt": "Tìm giá trị của $m$ để bất phương trình $(m - 1)x + 6 > 0$ nhận $x = 2$ làm một nghiệm và khi $x = 2$ vế trái nhận giá trị bằng 10.",
+                    "correctAnswer": "3",
+                    "acceptableAnswers": [
+                        "3",
+                        "m=3",
+                        "m = 3"
+                    ],
+                    "explanation": "Khi $x = 2$, vế trái bằng 10 ta có: $(m - 1) \\cdot 2 + 6 = 10 \\Leftrightarrow 2(m - 1) = 4 \\Leftrightarrow m - 1 = 2 \\Leftrightarrow m = 3$. Thay $m = 3$ vào bất phương trình được $2x + 6 > 0$, với $x = 2$ thỏa mãn $10 > 0$."
+                },
+                {
+                    "id": "otc2-d1-sa5",
+                    "badge": "Trả lời ngắn 5 (VD) - Bài toán thực tế chuyển động bóng chạm đất",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 35)",
+                    "prompt": "Độ cao $h$ (tính bằng mét) của một quả bóng bay lên sau khi được sút $t$ giây được xác định bởi công thức $h = 20t - 5t^2$. Sau bao nhiêu giây từ lúc sút thì bóng chạm đất ($h = 0$ và $t > 0$)?",
+                    "correctAnswer": "4",
+                    "acceptableAnswers": [
+                        "4",
+                        "4 giây",
+                        "4s"
+                    ],
+                    "explanation": "Bóng chạm đất khi $h = 0 \\Leftrightarrow 20t - 5t^2 = 0 \\Leftrightarrow 5t(4 - t) = 0$. Vì $t > 0$ nên $4 - t = 0 \\Leftrightarrow t = 4$ giây."
+                },
+                {
+                    "id": "otc2-d1-sa6",
+                    "badge": "Trả lời ngắn 6 (VD) - Bài toán thực tế cước taxi",
+                    "source": "Đề tuyển sinh vào 10 THPT TP. Hà Nội",
+                    "prompt": "Một hãng taxi quy định giá cước mở cửa là $10\\,000$ đồng (cho $0,5\\text{ km}$ đầu tiên), mỗi kilômét tiếp theo tính giá $15\\,000$ đồng. Bác An chỉ mang theo $160\\,000$ đồng. Hỏi bác An có thể đi được quãng đường nhiều nhất bao nhiêu kilômét?",
+                    "correctAnswer": "10,5",
+                    "acceptableAnswers": [
+                        "10,5",
+                        "10.5",
+                        "10,5 km",
+                        "10.5 km"
+                    ],
+                    "explanation": "Gọi độ dài quãng đường bác An đi là $x$ ($x > 0,5\\text{ km}$). Số tiền cước phải trả là: $10\\,000 + 15\\,000(x - 0,5)$ (đồng). Do bác An có $160\\,000$ đồng: $10\\,000 + 15\\,000(x - 0,5) \\le 160\\,000 \\Leftrightarrow 15\\,000(x - 0,5) \\le 150\\,000 \\Leftrightarrow x - 0,5 \\le 10 \\Leftrightarrow x \\le 10,5\\text{ km}$."
+                }
+            ]
+        },
+        {
+            "id": "de-2",
+            "title": "Đề ôn tập số 2",
+            "description": "Đề ôn tập tổng hợp cuối Chương II (Phương trình và Bất phương trình bậc nhất một ẩn) - Đề số 2",
+            "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+            "quizQuestions": [
+                {
+                    "id": "otc2-d2-q1",
+                    "badge": "Câu 1 (NB) - Phương trình đưa về dạng tích",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 31)",
+                    "question": "Phương trình nào sau đây đưa được về dạng phương trình tích bằng cách đặt nhân tử chung?",
+                    "options": [
+                        "$x^2 - 4x = 0$",
+                        "$x^2 + 4 = 0$",
+                        "$2x - 3 = 0$",
+                        "$\\frac{x}{x - 1} = 2$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Ta có $x^2 - 4x = 0 \\Leftrightarrow x(x - 4) = 0$, đây là phương trình tích đưa về bằng cách đặt nhân tử chung $x$."
+                },
+                {
+                    "id": "otc2-d2-q2",
+                    "badge": "Câu 2 (NB) - Điều kiện xác định với hai mẫu thức",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 32)",
+                    "question": "Điều kiện xác định của phương trình $\\frac{1}{x - 2} + \\frac{1}{x + 2} = 3$ là:",
+                    "options": [
+                        "$x \\ne 2$ và $x \\ne -2$",
+                        "$x \\ne 2$",
+                        "$x \\ne -2$",
+                        "$x \\ne 0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Điều kiện xác định: $x - 2 \\ne 0$ và $x + 2 \\ne 0 \\Leftrightarrow x \\ne 2$ và $x \\ne -2$."
+                },
+                {
+                    "id": "otc2-d2-q3",
+                    "badge": "Câu 3 (NB) - Khẳng định sai về bất đẳng thức",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 38)",
+                    "question": "Cho $x < y$. Khẳng định nào sau đây là SAI?",
+                    "options": [
+                        "$-2x < -2y$",
+                        "$x + 1 < y + 1$",
+                        "$3x < 3y$",
+                        "$x - 4 < y - 4$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $x < y$, khi nhân cả hai vế với số âm $-2$ thì phải đổi chiều bất đẳng thức thành $-2x > -2y$. Do đó khẳng định $-2x < -2y$ là sai."
+                },
+                {
+                    "id": "otc2-d2-q4",
+                    "badge": "Câu 4 (NB) - Bất phương trình tương đương",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 42)",
+                    "question": "Bất phương trình $x - 3 < 1$ tương đương với bất phương trình nào?",
+                    "options": [
+                        "$x < 4$",
+                        "$x > 4$",
+                        "$x \\le 4$",
+                        "$x < -2$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Chuyển vế hạng tử $-3$ sang vế phải: $x < 1 + 3 \\Leftrightarrow x < 4$."
+                },
+                {
+                    "id": "otc2-d2-q5",
+                    "badge": "Câu 5 (TH) - Phương trình vô nghiệm do không thỏa mãn ĐKXĐ",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 34)",
+                    "question": "Tập nghiệm của phương trình $\\frac{x^2 - 1}{x - 1} = 0$ là:",
+                    "options": [
+                        "$S = \\emptyset$",
+                        "$S = \\{1\\}$",
+                        "$S = \\{-1\\}$",
+                        "$S = \\{-1; 1\\}$"
+                    ],
+                    "correctIndex": 2,
+                    "explanation": "ĐKXĐ: $x \\ne 1$. Phương trình tương đương: $x^2 - 1 = 0 \\Leftrightarrow (x - 1)(x + 1) = 0 \\Leftrightarrow x = 1$ (loại vì không thỏa mãn ĐKXĐ) hoặc $x = -1$ (thỏa mãn ĐKXĐ). Vậy $S = \\{-1\\}$."
+                },
+                {
+                    "id": "otc2-d2-q6",
+                    "badge": "Câu 6 (TH) - Bất đẳng thức đúng với mọi số thực c",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 37)",
+                    "question": "Cho hai số thực $a$ và $b$ thỏa mãn $a > b$. Với mọi số thực $c$, bất đẳng thức nào sau đây luôn đúng?",
+                    "options": [
+                        "$a + c > b + c$",
+                        "$ac > bc$",
+                        "$\\frac{a}{c} > \\frac{b}{c}$",
+                        "$a - c < b - c$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Theo tính chất thứ tự với phép cộng, khi cộng cùng số thực $c$ bất kì vào hai vế của $a > b$ ta luôn được $a + c > b + c$."
+                },
+                {
+                    "id": "otc2-d2-q7",
+                    "badge": "Câu 7 (TH) - Giải bất phương trình quy đồng mẫu số",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 44)",
+                    "question": "Nghiệm của bất phương trình $\\frac{x - 1}{2} - \\frac{x - 2}{3} \\ge 1$ là:",
+                    "options": [
+                        "$x \\ge 5$",
+                        "$x \\le 5$",
+                        "$x \\ge 7$",
+                        "$x \\ge 1$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Quy đồng với mẫu số chung là 6: $3(x - 1) - 2(x - 2) \\ge 6 \\Leftrightarrow 3x - 3 - 2x + 4 \\ge 6 \\Leftrightarrow x + 1 \\ge 6 \\Leftrightarrow x \\ge 5$."
+                },
+                {
+                    "id": "otc2-d2-q8",
+                    "badge": "Câu 8 (TH) - Điều kiện để biểu thức nhận giá trị âm",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "question": "Biểu thức $P = 6 - 3x$ nhận giá trị âm khi:",
+                    "options": [
+                        "$x > 2$",
+                        "$x < 2$",
+                        "$x \\ge 2$",
+                        "$x > -2$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Biểu thức $P$ nhận giá trị âm khi $6 - 3x < 0 \\Leftrightarrow -3x < -6 \\Leftrightarrow x > \\frac{-6}{-3} \\Leftrightarrow x > 2$."
+                },
+                {
+                    "id": "otc2-d2-q9",
+                    "badge": "Câu 9 (TH) - Điều kiện tham số để là bất phương trình bậc nhất",
+                    "source": "SGK Toán 9 Cánh Diều Bài 3 (Trang 43)",
+                    "question": "Với giá trị nào của $m$ thì bất phương trình $(m - 3)x + 5 > 0$ là bất phương trình bậc nhất một ẩn?",
+                    "options": [
+                        "$m \\ne 3$",
+                        "$m = 3$",
+                        "$m > 3$",
+                        "$m < 3$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Bất phương trình là bậc nhất một ẩn khi và chỉ khi hệ số của ẩn khác 0: $m - 3 \\ne 0 \\Leftrightarrow m \\ne 3$."
+                },
+                {
+                    "id": "otc2-d2-q10",
+                    "badge": "Câu 10 (VD) - Nghiệm lớn nhất của phương trình tích",
+                    "source": "Đề thi học kì I THCS Yên Hòa",
+                    "question": "Nghiệm lớn nhất của phương trình tích $(x^2 - 4)(2x - 5) = 0$ là:",
+                    "options": [
+                        "$2,5$",
+                        "$2$",
+                        "$-2$",
+                        "$5$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Ta có: $(x - 2)(x + 2)(2x - 5) = 0 \\Leftrightarrow x = 2$ hoặc $x = -2$ hoặc $x = 2,5$. Nghiệm lớn nhất trong ba nghiệm là $2,5$."
+                },
+                {
+                    "id": "otc2-d2-q11",
+                    "badge": "Câu 11 (VD) - Bất đẳng thức nghịch đảo hai số dương",
+                    "source": "Đề thi tuyển sinh vào 10 THPT TP. Hồ Chí Minh",
+                    "question": "Cho hai số dương $a$ và $b$ thỏa mãn $a < b$. Khẳng định nào sau đây là đúng?",
+                    "options": [
+                        "$\\frac{1}{a} > \\frac{1}{b}$",
+                        "$\\frac{1}{a} < \\frac{1}{b}$",
+                        "$a^2 > b^2$",
+                        "$-a < -b$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $a, b > 0$, chia cả hai vế của $a < b$ cho tích số dương $ab$, ta được $\\frac{a}{ab} < \\frac{b}{ab} \\Leftrightarrow \\frac{1}{b} < \\frac{1}{a} \\Leftrightarrow \\frac{1}{a} > \\frac{1}{b}$."
+                },
+                {
+                    "id": "otc2-d2-q12",
+                    "badge": "Câu 12 (VD) - Toán thực tế góc nghiêng an toàn của thang",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 45)",
+                    "question": "Để đảm bảo an toàn khi dựng thang dựa vào tường, khoảng cách $d$ (mét) từ chân thang đến tường cần thỏa mãn bất phương trình $1,2 \\le d \\le 1,8$. Một người đặt thang cách chân tường $1,5\\text{ m}$. Hỏi khoảng cách này có đảm bảo an toàn không và còn có thể lùi chân thang ra xa tường tối đa thêm bao nhiêu mét nữa?",
+                    "options": [
+                        "Đảm bảo an toàn; tối đa thêm $0,3\\text{ m}$",
+                        "Đảm bảo an toàn; tối đa thêm $0,5\\text{ m}$",
+                        "Không an toàn; cần tiến lại gần tường $0,3\\text{ m}$",
+                        "Đảm bảo an toàn; tối đa thêm $0,6\\text{ m}$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $1,2 \\le 1,5 \\le 1,8$ nên khoảng cách đặt thang đảm bảo an toàn. Khoảng cách tối đa cho phép là $1,8\\text{ m}$, do đó chân thang có thể lùi ra xa tường thêm tối đa là $1,8 - 1,5 = 0,3\\text{ m}$."
+                }
+            ],
+            "trueFalseQuestions": [
+                {
+                    "id": "otc2-d2-tf1",
+                    "badge": "Đúng/Sai 1 (NB) - Phương trình tích chứa nhân tử vô nghiệm",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 31)",
+                    "prompt": "Cho phương trình $(x - 1)(x^2 + 1) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Phương trình đã cho có tích của hai nhân tử là $x - 1$ và $x^2 + 1$.",
+                            "correctAnswer": true,
+                            "explanation": "Phương trình có dạng $A(x) \\cdot B(x) = 0$ với $A(x) = x - 1$ và $B(x) = x^2 + 1$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Phương trình $x^2 + 1 = 0$ vô nghiệm trên tập số thực $\\mathbb{R}$.",
+                            "correctAnswer": true,
+                            "explanation": "Vì $x^2 \\ge 0$ với mọi $x$ nên $x^2 + 1 \\ge 1 > 0$ với mọi $x \\in \\mathbb{R}$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Phương trình đã cho có 3 nghiệm phân biệt trên tập số thực.",
+                            "correctAnswer": false,
+                            "explanation": "Chỉ có nhân tử $x - 1 = 0 \\Leftrightarrow x = 1$, nên phương trình chỉ có 1 nghiệm duy nhất."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Tập nghiệm của phương trình là $S = \\{1\\}$.",
+                            "correctAnswer": true,
+                            "explanation": "Nghiệm duy nhất là $x = 1$, tập nghiệm là $S = \\{1\\}$."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d2-tf2",
+                    "badge": "Đúng/Sai 2 (TH) - Giải phương trình chứa ẩn ở mẫu",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 34)",
+                    "prompt": "Cho phương trình $\\frac{2}{x - 3} - \\frac{1}{x} = \\frac{6}{x(x - 3)}$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Điều kiện xác định của phương trình là $x \\ne 0$ và $x \\ne 3$.",
+                            "correctAnswer": true,
+                            "explanation": "Mẫu thức chung là $x(x - 3)$, các mẫu khác 0 khi $x \\ne 0$ và $x \\ne 3$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Mẫu thức chung của phương trình là $x(x - 3)$.",
+                            "correctAnswer": true,
+                            "explanation": "Mẫu thức chung gồm tích của các nhân tử phân biệt $x$ và $x - 3$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Khử mẫu ta được phương trình $2x - (x - 3) = 6 \\Leftrightarrow x + 3 = 6 \\Leftrightarrow x = 3$.",
+                            "correctAnswer": true,
+                            "explanation": "Quy đồng và khử mẫu đúng dẫn đến $x = 3$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Phương trình đã cho có nghiệm là $x = 3$.",
+                            "correctAnswer": false,
+                            "explanation": "Giá trị $x = 3$ vi phạm điều kiện xác định $x \\ne 3$, nên bị loại. Phương trình vô nghiệm."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d2-tf3",
+                    "badge": "Đúng/Sai 3 (TH) - Tính chất bất đẳng thức với hai số âm",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 39)",
+                    "prompt": "Cho hai số âm $a$ và $b$ thỏa mãn $a < b < 0$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "$a^2 > b^2$.",
+                            "correctAnswer": true,
+                            "explanation": "Ví dụ $a = -3, b = -2 \\Rightarrow (-3)^2 = 9 > (-2)^2 = 4$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "$ab > 0$.",
+                            "correctAnswer": true,
+                            "explanation": "Tích của hai số âm luôn là một số dương."
+                        },
+                        {
+                            "id": "c",
+                            "text": "$\\frac{1}{a} < \\frac{1}{b}$.",
+                            "correctAnswer": false,
+                            "explanation": "Chia cả hai vế của $a < b$ cho tích số dương $ab$, ta được $\\frac{1}{b} < \\frac{1}{a} \\Leftrightarrow \\frac{1}{a} > \\frac{1}{b}$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "$2a - 3 < 2b - 3$.",
+                            "correctAnswer": true,
+                            "explanation": "Vì $a < b \\Rightarrow 2a < 2b \\Rightarrow 2a - 3 < 2b - 3$."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d2-tf4",
+                    "badge": "Đúng/Sai 4 (VD) - Bài toán thực tế kế hoạch tiết kiệm tiền",
+                    "source": "Đề thi học kì I THCS Archimedes Academy",
+                    "prompt": "Bạn Nam muốn tiết kiệm tiền để mua một chiếc xe đạp giá $2\\,400\\,000$ đồng. Hiện tại Nam có $600\\,000$ đồng và mỗi tháng Nam tiết kiệm được $300\\,000$ đồng. Gọi $x$ là số tháng Nam tiết kiệm ($x \\in \\mathbb{N}^*$). Xét tính đúng/sai:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Tổng số tiền Nam có được sau $x$ tháng là $600\\,000 + 300\\,000x$ (đồng).",
+                            "correctAnswer": true,
+                            "explanation": "Tiền ban đầu cộng với số tiền tiết kiệm trong $x$ tháng."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Bất phương trình biểu thị số tiền đủ để Nam mua xe là $600\\,000 + 300\\,000x \\ge 2\\,400\\,000$.",
+                            "correctAnswer": true,
+                            "explanation": "Để mua được xe, tổng số tiền phải lớn hơn hoặc bằng giá chiếc xe."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Bất phương trình tương đương với $x \\ge 5$.",
+                            "correctAnswer": false,
+                            "explanation": "$300\\,000x \\ge 1\\,800\\,000 \\Leftrightarrow x \\ge \\frac{1\\,800\\,000}{300\\,000} = 6$. Khẳng định $x \\ge 5$ là sai."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Nam cần tiết kiệm ít nhất 6 tháng thì mới có đủ tiền mua xe đạp.",
+                            "correctAnswer": true,
+                            "explanation": "Số nguyên dương nhỏ nhất thỏa mãn $x \\ge 6$ là 6."
+                        }
+                    ]
+                }
+            ],
+            "shortAnswerQuestions": [
+                {
+                    "id": "otc2-d2-sa1",
+                    "badge": "Trả lời ngắn 1 (TH) - Tìm nghiệm phương trình quy về bậc nhất",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 33)",
+                    "prompt": "Tìm nghiệm của phương trình $\\frac{3x - 2}{x + 1} = 2$.",
+                    "correctAnswer": "4",
+                    "acceptableAnswers": [
+                        "4",
+                        "x=4",
+                        "x = 4"
+                    ],
+                    "explanation": "ĐKXĐ: $x \\ne -1$. Quy đồng và khử mẫu: $3x - 2 = 2(x + 1) \\Leftrightarrow 3x - 2 = 2x + 2 \\Leftrightarrow x = 4$ (thỏa mãn ĐKXĐ)."
+                },
+                {
+                    "id": "otc2-d2-sa2",
+                    "badge": "Trả lời ngắn 2 (TH) - Tính tổng các nghiệm của phương trình tích",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 31)",
+                    "prompt": "Tính tổng tất cả các nghiệm của phương trình tích $(2x - 6)(3x + 9) = 0$.",
+                    "correctAnswer": "0",
+                    "acceptableAnswers": [
+                        "0"
+                    ],
+                    "explanation": "Phương trình có nghiệm: $2x - 6 = 0 \\Rightarrow x_1 = 3$ và $3x + 9 = 0 \\Rightarrow x_2 = -3$. Tổng các nghiệm là $3 + (-3) = 0$."
+                },
+                {
+                    "id": "otc2-d2-sa3",
+                    "badge": "Trả lời ngắn 3 (TH) - Đếm số nghiệm nguyên không âm",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "prompt": "Có bao nhiêu số nguyên không âm $x$ thỏa mãn bất phương trình $7 - 3x \\ge 1$?",
+                    "correctAnswer": "3",
+                    "acceptableAnswers": [
+                        "3",
+                        "3 số"
+                    ],
+                    "explanation": "Ta có: $7 - 3x \\ge 1 \\Leftrightarrow -3x \\ge -6 \\Leftrightarrow x \\le 2$. Các số nguyên không âm ($x \\ge 0$) là $0, 1, 2$. Có đúng 3 số."
+                },
+                {
+                    "id": "otc2-d2-sa4",
+                    "badge": "Trả lời ngắn 4 (VD) - Tìm số nguyên lớn nhất thỏa mãn bất phương trình",
+                    "source": "Đề khảo sát chất lượng Toán 9 Quận Ba Đình",
+                    "prompt": "Tìm giá trị lớn nhất của số nguyên $x$ thỏa mãn bất phương trình $\\frac{2x - 1}{3} < \\frac{x + 4}{2}$.",
+                    "correctAnswer": "13",
+                    "acceptableAnswers": [
+                        "13",
+                        "x=13",
+                        "x = 13"
+                    ],
+                    "explanation": "Quy đồng hai vế với mẫu chung 6: $2(2x - 1) < 3(x + 4) \\Leftrightarrow 4x - 2 < 3x + 12 \\Leftrightarrow x < 14$. Vì $x$ là số nguyên nên giá trị lớn nhất của $x$ là 13."
+                },
+                {
+                    "id": "otc2-d2-sa5",
+                    "badge": "Trả lời ngắn 5 (VD) - Bài toán thực tế điểm kiểm tra",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 45)",
+                    "prompt": "Để đạt danh hiệu học sinh Giỏi một môn học, điểm trung bình của 4 bài kiểm tra phải từ $8,0$ trở lên. Bạn Bình đã có điểm 3 bài đầu là $7,5$; $8,0$ và $8,5$. Hỏi ở bài kiểm tra thứ tư, Bình phải đạt ít nhất bao nhiêu điểm để đạt danh hiệu học sinh Giỏi?",
+                    "correctAnswer": "8",
+                    "acceptableAnswers": [
+                        "8",
+                        "8 điểm",
+                        "8.0",
+                        "8,0"
+                    ],
+                    "explanation": "Gọi điểm bài kiểm tra thứ tư là $x$ ($0 \\le x \\le 10$). Điểm trung bình là: $\\frac{7,5 + 8,0 + 8,5 + x}{4} \\ge 8,0 \\Leftrightarrow \\frac{24 + x}{4} \\ge 8,0 \\Leftrightarrow 24 + x \\ge 32 \\Leftrightarrow x \\ge 8$. Vậy Bình phải đạt ít nhất 8 điểm."
+                },
+                {
+                    "id": "otc2-d2-sa6",
+                    "badge": "Trả lời ngắn 6 (VD) - Bài toán thực tế kinh doanh sản phẩm",
+                    "source": "Đề thi tuyển sinh vào 10 THPT Tỉnh Quảng Ninh",
+                    "prompt": "Một cửa hàng nhập về một lô áo với giá vốn $120\\,000$ đồng/chiếc. Chi phí vận chuyển và quản lý cố định là $3\\,000\\,000$ đồng. Cửa hàng bán mỗi chiếc áo với giá $200\\,000$ đồng. Hỏi cửa hàng cần bán ít nhất bao nhiêu chiếc áo để thu được lợi nhuận tối thiểu là $5\\,000\\,000$ đồng?",
+                    "correctAnswer": "100",
+                    "acceptableAnswers": [
+                        "100",
+                        "100 chiếc",
+                        "100 chiếc áo"
+                    ],
+                    "explanation": "Gọi số áo cửa hàng bán là $x$ chiếc ($x \\in \\mathbb{N}^*$). Tiền lãi từ mỗi chiếc áo là $200\\,000 - 120\\,000 = 80\\,000$ đồng. Lợi nhuận của cửa hàng là: $80\\,000x - 3\\,000\\,000$. Theo yêu cầu: $80\\,000x - 3\\,000\\,000 \\ge 5\\,000\\,000 \\Leftrightarrow 80\\,000x \\ge 8\\,000\\,000 \\Leftrightarrow x \\ge 100$. Vậy cửa hàng phải bán ít nhất 100 chiếc áo."
+                }
+            ]
+        },
+        {
+            "id": "de-3",
+            "title": "Đề ôn tập số 3",
+            "description": "Đề ôn tập tổng hợp cuối Chương II (Phương trình và Bất phương trình bậc nhất một ẩn) - Đề số 3",
+            "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+            "quizQuestions": [
+                {
+                    "id": "otc2-d3-q1",
+                    "badge": "Câu 1 (NB) - Dạng chuẩn của phương trình tích",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 30)",
+                    "question": "Phương trình nào dưới đây là phương trình tích?",
+                    "options": [
+                        "$(2x - 1)(x + 3) = 0$",
+                        "$(2x - 1) + (x + 3) = 0$",
+                        "$(2x - 1)(x + 3) = 5$",
+                        "$\\frac{2x - 1}{x + 3} = 0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Phương trình tích có dạng chuẩn là $A(x) \\cdot B(x) = 0$. Chỉ có phương trình $(2x - 1)(x + 3) = 0$ thỏa mãn."
+                },
+                {
+                    "id": "otc2-d3-q2",
+                    "badge": "Câu 2 (NB) - Nghiệm của bất phương trình chia cho số âm",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 43)",
+                    "question": "Nghiệm của bất phương trình $-4x > 12$ là:",
+                    "options": [
+                        "$x < -3$",
+                        "$x > -3$",
+                        "$x < 3$",
+                        "$x > 3$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Chia cả hai vế cho $-4$ và đổi chiều bất phương trình: $x < \\frac{12}{-4} \\Leftrightarrow x < -3$."
+                },
+                {
+                    "id": "otc2-d3-q3",
+                    "badge": "Câu 3 (NB) - Tính chất cộng hai vế của bất đẳng thức",
+                    "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 39)",
+                    "question": "Cho $a > b$. Cộng cả hai vế của bất đẳng thức với $-7$ ta được:",
+                    "options": [
+                        "$a - 7 > b - 7$",
+                        "$a - 7 < b - 7$",
+                        "$a + 7 < b + 7$",
+                        "$-7a > -7b$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Khi cộng cùng một số vào hai vế của bất đẳng thức ta được bất đẳng thức cùng chiều: $a > b \\Rightarrow a - 7 > b - 7$."
+                },
+                {
+                    "id": "otc2-d3-q4",
+                    "badge": "Câu 4 (NB) - Điều kiện xác định mẫu hiệu hai bình phương",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 32)",
+                    "question": "Điều kiện xác định của phương trình $\\frac{x}{x^2 - 4} = 1$ là:",
+                    "options": [
+                        "$x \\ne 2$ và $x \\ne -2$",
+                        "$x \\ne 2$",
+                        "$x \\ne -2$",
+                        "$x \\ne 4$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Mẫu thức là $x^2 - 4 = (x - 2)(x + 2) \\ne 0 \\Leftrightarrow x \\ne 2$ và $x \\ne -2$."
+                },
+                {
+                    "id": "otc2-d3-q5",
+                    "badge": "Câu 5 (TH) - Tích các nghiệm của phương trình tích",
+                    "source": "Đề thi học kì I THCS Đoàn Thị Điểm",
+                    "question": "Tích các nghiệm của phương trình $(x^2 - 25)(3x - 1) = 0$ bằng:",
+                    "options": [
+                        "$-\\frac{25}{3}$",
+                        "$\\frac{25}{3}$",
+                        "$-25$",
+                        "$0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Phương trình có 3 nghiệm: $x = 5, x = -5, x = \\frac{1}{3}$. Tích các nghiệm là $5 \\cdot (-5) \\cdot \\frac{1}{3} = -\\frac{25}{3}$."
+                },
+                {
+                    "id": "otc2-d3-q6",
+                    "badge": "Câu 6 (TH) - Giải bất phương trình có chứa dấu ngoặc",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "question": "Nghiệm của bất phương trình $3(x - 2) - 2(x + 1) \\le 4$ là:",
+                    "options": [
+                        "$x \\le 12$",
+                        "$x \\ge 12$",
+                        "$x \\le 8$",
+                        "$x \\le 4$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Phá ngoặc thu gọn: $3x - 6 - 2x - 2 \\le 4 \\Leftrightarrow x - 8 \\le 4 \\Leftrightarrow x \\le 12$."
+                },
+                {
+                    "id": "otc2-d3-q7",
+                    "badge": "Câu 7 (TH) - Số nghiệm của phương trình chứa ẩn ở mẫu",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 35)",
+                    "question": "Số nghiệm của phương trình $\\frac{x + 1}{x - 1} - \\frac{x - 1}{x + 1} = \\frac{4}{x^2 - 1}$ là:",
+                    "options": [
+                        "$0$",
+                        "$1$",
+                        "$2$",
+                        "Vô số nghiệm"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "ĐKXĐ: $x \\ne \\pm 1$. Quy đồng và khử mẫu: $(x + 1)^2 - (x - 1)^2 = 4 \\Leftrightarrow (x^2 + 2x + 1) - (x^2 - 2x + 1) = 4 \\Leftrightarrow 4x = 4 \\Leftrightarrow x = 1$. Giá trị $x = 1$ bị loại do không thỏa mãn ĐKXĐ. Vậy phương trình có 0 nghiệm (vô nghiệm)."
+                },
+                {
+                    "id": "otc2-d3-q8",
+                    "badge": "Câu 8 (TH) - Bất đẳng thức hằng đẳng thức",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 5 (Trang 37)",
+                    "question": "Với mọi số thực $a, b$, bất đẳng thức nào sau đây luôn đúng?",
+                    "options": [
+                        "$a^2 + b^2 \\ge 2ab$",
+                        "$a^2 + b^2 > 2ab$",
+                        "$a^2 + b^2 \\le 2ab$",
+                        "$(a + b)^2 < 0$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $(a - b)^2 \\ge 0 \\Leftrightarrow a^2 - 2ab + b^2 \\ge 0 \\Leftrightarrow a^2 + b^2 \\ge 2ab$ với mọi $a, b$."
+                },
+                {
+                    "id": "otc2-d3-q9",
+                    "badge": "Câu 9 (TH) - Điều kiện để bất phương trình nghiệm đúng với mọi x",
+                    "source": "Đề thi học sinh giỏi cấp trường THCS Thăng Long",
+                    "question": "Tìm giá trị của $m$ để bất phương trình $(m - 1)x + 2 > 0$ nghiệm đúng với mọi $x \\in \\mathbb{R}$.",
+                    "options": [
+                        "$m = 1$",
+                        "$m \\ne 1$",
+                        "$m > 1$",
+                        "Không có giá trị nào của $m$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Khi $m = 1$, bất phương trình trở thành $0x + 2 > 0 \\Leftrightarrow 2 > 0$, luôn đúng với mọi $x \\in \\mathbb{R}$."
+                },
+                {
+                    "id": "otc2-d3-q10",
+                    "badge": "Câu 10 (VD) - Tìm số nguyên x nhỏ nhất thỏa mãn bất phương trình",
+                    "source": "Đề tuyển sinh vào 10 THPT Chuyên Hà Nội - Amsterdam (vòng 1)",
+                    "question": "Số nguyên $x$ nhỏ nhất thỏa mãn bất phương trình $\\frac{3x + 1}{2} - 1 > \\frac{x - 2}{3}$ là:",
+                    "options": [
+                        "$0$",
+                        "$1$",
+                        "$-1$",
+                        "$2$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Quy đồng hai vế với mẫu 6: $3(3x + 1) - 6 > 2(x - 2) \\Leftrightarrow 9x + 3 - 6 > 2x - 4 \\Leftrightarrow 7x > -1 \\Leftrightarrow x > -\\frac{1}{7}$. Số nguyên nhỏ nhất lớn hơn $-\\frac{1}{7}$ là 0."
+                },
+                {
+                    "id": "otc2-d3-q11",
+                    "badge": "Câu 11 (VD) - Bất đẳng thức so sánh tỉ số",
+                    "source": "Đề thi vào 10 THPT TP. Hải Phòng",
+                    "question": "Cho hai số dương $a \\ge b > 0$. Khẳng định nào sau đây là SAI?",
+                    "options": [
+                        "$\\frac{a}{b} < 1$",
+                        "$\\frac{a}{b} \\ge 1$",
+                        "$a + 1 \\ge b + 1$",
+                        "$-2a \\le -2b$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Vì $a \\ge b$ và $b > 0$ nên chia hai vế cho $b$ ta được $\\frac{a}{b} \\ge 1$. Khẳng định $\\frac{a}{b} < 1$ là sai."
+                },
+                {
+                    "id": "otc2-d3-q12",
+                    "badge": "Câu 12 (VD) - Toán thực tế so sánh gói cước Internet",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 45)",
+                    "question": "Bạn Mai dự định đăng ký một gói cước Internet 4G. Gói A có giá thuê bao cố định là $50\\,000$ đồng/tháng cộng thêm $2\\,000$ đồng cho mỗi GB dung lượng sử dụng. Gói B có giá trọn gói là $150\\,000$ đồng/tháng không giới hạn dung lượng. Mai cần sử dụng nhiều hơn bao nhiêu GB trong một tháng thì dùng gói B sẽ tiết kiệm chi phí hơn gói A?",
+                    "options": [
+                        "$50\\text{ GB}$",
+                        "$40\\text{ GB}$",
+                        "$60\\text{ GB}$",
+                        "$75\\text{ GB}$"
+                    ],
+                    "correctIndex": 0,
+                    "explanation": "Gọi số GB dung lượng sử dụng là $x$ ($x > 0$). Chi phí dùng gói A là $50\\,000 + 2\\,000x$ (đồng). Để gói B ($150\\,000$ đồng) tiết kiệm hơn gói A: $50\\,000 + 2\\,000x > 150\\,000 \\Leftrightarrow 2\\,000x > 100\\,000 \\Leftrightarrow x > 50\\text{ GB}$."
+                }
+            ],
+            "trueFalseQuestions": [
+                {
+                    "id": "otc2-d3-tf1",
+                    "badge": "Đúng/Sai 1 (NB) - Phương trình tích chứa hằng đẳng thức",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 31)",
+                    "prompt": "Cho phương trình $(x^2 - 4x + 4)(2x - 6) = 0$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Biểu thức $x^2 - 4x + 4$ có thể viết lại thành $(x - 2)^2$.",
+                            "correctAnswer": true,
+                            "explanation": "Theo hằng đẳng thức bình phương của một hiệu: $x^2 - 4x + 4 = (x - 2)^2$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Phương trình $(x - 2)^2 = 0$ có nghiệm $x = 2$.",
+                            "correctAnswer": true,
+                            "explanation": "$(x - 2)^2 = 0 \\Leftrightarrow x - 2 = 0 \\Leftrightarrow x = 2$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Phương trình $2x - 6 = 0$ có nghiệm $x = 3$.",
+                            "correctAnswer": true,
+                            "explanation": "$2x - 6 = 0 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Phương trình ban đầu có 3 nghiệm phân biệt trên tập số thực.",
+                            "correctAnswer": false,
+                            "explanation": "Phương trình chỉ có 2 nghiệm phân biệt là $x = 2$ và $x = 3$."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d3-tf2",
+                    "badge": "Đúng/Sai 2 (TH) - Rút gọn và giải phương trình phân thức",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 33)",
+                    "prompt": "Cho biểu thức $A = \\frac{x + 2}{x - 2} - \\frac{x - 2}{x + 2}$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Điều kiện xác định của biểu thức $A$ là $x \\ne 2$ và $x \\ne -2$.",
+                            "correctAnswer": true,
+                            "explanation": "Các mẫu thức là $x - 2$ và $x + 2$, do đó điều kiện là $x \\ne 2$ và $x \\ne -2$."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Rút gọn biểu thức $A$ ta được $A = \\frac{8x}{x^2 - 4}$.",
+                            "correctAnswer": true,
+                            "explanation": "$A = \\frac{(x+2)^2 - (x-2)^2}{(x-2)(x+2)} = \\frac{(x^2+4x+4) - (x^2-4x+4)}{x^2-4} = \\frac{8x}{x^2-4}$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Để $A = 0$ thì $x = 0$ (thỏa mãn điều kiện xác định).",
+                            "correctAnswer": true,
+                            "explanation": "$\\frac{8x}{x^2 - 4} = 0 \\Leftrightarrow 8x = 0 \\Leftrightarrow x = 0$ (thỏa mãn $x \\ne \\pm 2$)."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Với mọi giá trị của $x \\ne \\pm 2$, giá trị của $A$ luôn là số dương.",
+                            "correctAnswer": false,
+                            "explanation": "Khi $x = -1$, $A = \\frac{-8}{1 - 4} = \\frac{8}{3} > 0$; nhưng khi $x = 1$, $A = \\frac{8}{1 - 4} = -\\frac{8}{3} < 0$. Do đó khẳng định luôn dương là sai."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d3-tf3",
+                    "badge": "Đúng/Sai 3 (TH) - Bất đẳng thức liên hệ tổng và tích hai số",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 40)",
+                    "prompt": "Cho hai số thực dương $x, y$ thỏa mãn $x + y = 4$. Xét tính đúng/sai của các khẳng định sau:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Ta luôn có bất đẳng thức $(x - y)^2 \\ge 0$ với mọi $x, y$.",
+                            "correctAnswer": true,
+                            "explanation": "Bình phương của một số thực luôn không âm."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Tích $xy$ thỏa mãn bất đẳng thức $xy \\le \\frac{(x + y)^2}{4} = 4$.",
+                            "correctAnswer": true,
+                            "explanation": "Từ $(x - y)^2 \\ge 0 \\Leftrightarrow (x + y)^2 - 4xy \\ge 0 \\Leftrightarrow xy \\le \\frac{(x + y)^2}{4} = \\frac{16}{4} = 4$."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Giá trị lớn nhất của tích $xy$ bằng 4 đạt được khi $x = y = 2$.",
+                            "correctAnswer": true,
+                            "explanation": "Dấu bằng xảy ra khi $x = y$, kết hợp $x + y = 4 \\Rightarrow x = y = 2$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Tổng bình phương $x^2 + y^2 \\le 8$.",
+                            "correctAnswer": false,
+                            "explanation": "Ta có $x^2 + y^2 = (x + y)^2 - 2xy = 16 - 2xy$. Vì $xy \\le 4$ nên $x^2 + y^2 \\ge 16 - 2(4) = 8$. Khẳng định $\\le 8$ là sai."
+                        }
+                    ]
+                },
+                {
+                    "id": "otc2-d3-tf4",
+                    "badge": "Đúng/Sai 4 (VD) - Bài toán thực tế kế hoạch vận chuyển hàng hóa",
+                    "source": "Đề tuyển sinh vào 10 THPT Tỉnh Nam Định",
+                    "prompt": "Một đội xe vận tải có 10 chiếc xe gồm hai loại: loại I chở được 3 tấn mỗi chuyến và loại II chở được 5 tấn mỗi chuyến. Đội cần vận chuyển ít nhất 38 tấn hàng trong một chuyến toàn đội. Gọi $x$ là số xe loại II ($x \\in \\mathbb{N}, x \\le 10$). Xét tính đúng/sai:",
+                    "subItems": [
+                        {
+                            "id": "a",
+                            "text": "Số lượng xe loại I được sử dụng là $10 - x$ xe.",
+                            "correctAnswer": true,
+                            "explanation": "Tổng số xe là 10, nên số xe loại I là $10 - x$ xe."
+                        },
+                        {
+                            "id": "b",
+                            "text": "Tổng khối lượng hàng cả đội xe chở được trong một chuyến là $3(10 - x) + 5x$ (tấn).",
+                            "correctAnswer": true,
+                            "explanation": "Loại I chở $3(10 - x)$ tấn, loại II chở $5x$ tấn."
+                        },
+                        {
+                            "id": "c",
+                            "text": "Bất phương trình biểu thị yêu cầu vận chuyển hàng là $3(10 - x) + 5x \\ge 38$.",
+                            "correctAnswer": true,
+                            "explanation": "Để chở được ít nhất 38 tấn thì tổng khối lượng phải $\\ge 38$."
+                        },
+                        {
+                            "id": "d",
+                            "text": "Đội xe cần dùng ít nhất 3 xe loại II.",
+                            "correctAnswer": false,
+                            "explanation": "Ta có: $30 - 3x + 5x \\ge 38 \\Leftrightarrow 2x \\ge 8 \\Leftrightarrow x \\ge 4$. Vậy đội xe cần dùng ít nhất 4 xe loại II, không phải 3 xe."
+                        }
+                    ]
+                }
+            ],
+            "shortAnswerQuestions": [
+                {
+                    "id": "otc2-d3-sa1",
+                    "badge": "Trả lời ngắn 1 (TH) - Tìm nghiệm của phương trình chứa ẩn ở mẫu",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 4 (Trang 34)",
+                    "prompt": "Tìm nghiệm của phương trình $\\frac{2x - 5}{x - 1} = \\frac{x + 1}{x - 1}$.",
+                    "correctAnswer": "6",
+                    "acceptableAnswers": [
+                        "6",
+                        "x=6",
+                        "x = 6"
+                    ],
+                    "explanation": "ĐKXĐ: $x \\ne 1$. Khử mẫu: $2x - 5 = x + 1 \\Leftrightarrow 2x - x = 1 + 5 \\Leftrightarrow x = 6$ (thỏa mãn ĐKXĐ). Vậy nghiệm là 6."
+                },
+                {
+                    "id": "otc2-d3-sa2",
+                    "badge": "Trả lời ngắn 2 (TH) - Đếm số nghiệm nguyên dương của bất phương trình",
+                    "source": "SGK Toán 9 Kết Nối Tri Thức Bài 6 (Trang 44)",
+                    "prompt": "Có bao nhiêu số nguyên dương $x$ thỏa mãn bất phương trình $\\frac{3x - 1}{2} - \\frac{x + 2}{3} \\le 1$?",
+                    "correctAnswer": "1",
+                    "acceptableAnswers": [
+                        "1",
+                        "1 số"
+                    ],
+                    "explanation": "Quy đồng hai vế với 6: $3(3x - 1) - 2(x + 2) \\le 6 \\Leftrightarrow 9x - 3 - 2x - 4 \\le 6 \\Leftrightarrow 7x - 7 \\le 6 \\Leftrightarrow 7x \\le 13 \\Leftrightarrow x \\le \\frac{13}{7} \\approx 1,86$. Số nguyên dương duy nhất thỏa mãn là $x = 1$."
+                },
+                {
+                    "id": "otc2-d3-sa3",
+                    "badge": "Trả lời ngắn 3 (TH) - Tìm tham số để phương trình nhận nghiệm cho trước",
+                    "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 32)",
+                    "prompt": "Tìm giá trị của $m$ để phương trình $(m - 2)x + 8 = 0$ nhận $x = -2$ làm nghiệm.",
+                    "correctAnswer": "6",
+                    "acceptableAnswers": [
+                        "6",
+                        "m=6",
+                        "m = 6"
+                    ],
+                    "explanation": "Thay $x = -2$ vào phương trình: $(m - 2)(-2) + 8 = 0 \\Leftrightarrow -2m + 4 + 8 = 0 \\Leftrightarrow -2m = -12 \\Leftrightarrow m = 6$."
+                },
+                {
+                    "id": "otc2-d3-sa4",
+                    "badge": "Trả lời ngắn 4 (VD) - Tìm giá trị nhỏ nhất của biểu thức chứa biến ở mẫu",
+                    "source": "Đề thi tuyển sinh vào lớp 10 THPT TP. Hà Nội",
+                    "prompt": "Cho $x > 0$. Giá trị nhỏ nhất của biểu thức $P = x + \\frac{9}{x}$ bằng bao nhiêu?",
+                    "correctAnswer": "6",
+                    "acceptableAnswers": [
+                        "6"
+                    ],
+                    "explanation": "Áp dụng bất đẳng thức Cô-si cho hai số dương $x$ và $\\frac{9}{x}$: $x + \\frac{9}{x} \\ge 2\\sqrt{x \\cdot \\frac{9}{x}} = 2 \\cdot 3 = 6$. Dấu bằng xảy ra khi $x = \\frac{9}{x} \\Leftrightarrow x^2 = 9 \\Rightarrow x = 3$ (vì $x > 0$). Vậy GTNN của $P$ là 6."
+                },
+                {
+                    "id": "otc2-d3-sa5",
+                    "badge": "Trả lời ngắn 5 (VD) - Bài toán thực tế cước thuê bao điện thoại",
+                    "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3 (Trang 45)",
+                    "prompt": "Một thuê bao di động trả sau có cước thuê bao tháng cố định là $49\\,000$ đồng và cước gọi là $900$ đồng cho mỗi phút gọi. Một người muốn số tiền cước điện thoại trong tháng không vượt quá $130\\,000$ đồng. Hỏi người đó có thể gọi tối đa bao nhiêu phút?",
+                    "correctAnswer": "90",
+                    "acceptableAnswers": [
+                        "90",
+                        "90 phút",
+                        "90 phut"
+                    ],
+                    "explanation": "Gọi số phút gọi trong tháng là $x$ ($x \\ge 0$). Cước phí phải trả là $49\\,000 + 900x$ (đồng). Theo đề bài: $49\\,000 + 900x \\le 130\\,000 \\Leftrightarrow 900x \\le 81\\,000 \\Leftrightarrow x \\le 90$. Vậy người đó có thể gọi tối đa 90 phút."
+                },
+                {
+                    "id": "otc2-d3-sa6",
+                    "badge": "Trả lời ngắn 6 (VD) - Bài toán thực tế năng suất xưởng may",
+                    "source": "Đề thi tuyển sinh vào 10 THPT Tỉnh Bắc Ninh",
+                    "prompt": "Một xưởng may theo kế hoạch phải may $600$ bộ quần áo. Nhờ tăng năng suất, mỗi ngày xưởng may thêm được $10$ bộ so với dự định, do đó xưởng đã hoàn thành trước thời hạn 2 ngày. Hỏi theo kế hoạch, mỗi ngày xưởng phải may bao nhiêu bộ quần áo?",
+                    "correctAnswer": "50",
+                    "acceptableAnswers": [
+                        "50",
+                        "50 bộ",
+                        "50 bo"
+                    ],
+                    "explanation": "Gọi số bộ quần áo xưởng phải may mỗi ngày theo kế hoạch là $x$ ($x > 0$, bộ). Thời gian dự định là $\\frac{600}{x}$ ngày. Năng suất thực tế là $x + 10$ bộ/ngày, thời gian thực tế là $\\frac{600}{x + 10}$ ngày. Do hoàn thành trước 2 ngày nên: $\\frac{600}{x} - \\frac{600}{x + 10} = 2 \\Leftrightarrow \\frac{600(x + 10) - 600x}{x(x + 10)} = 2 \\Leftrightarrow 6000 = 2x(x + 10) \\Leftrightarrow x^2 + 10x - 3000 = 0 \\Leftrightarrow (x - 50)(x + 60) = 0$. Vì $x > 0$ nên $x = 50$."
+                }
+            ]
+        }
+    ]
+},
 };

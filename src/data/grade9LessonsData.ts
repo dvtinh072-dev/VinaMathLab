@@ -10966,4 +10966,931 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 },
+  // ==========================================
+  // BÀI 8: KHAI CĂN BẬC HAI VỚI PHÉP NHÂN VÀ PHÉP CHIA
+  // ==========================================
+  // ==========================================
+  // BÀI 8: KHAI CĂN BẬC HAI VỚI PHÉP NHÂN VÀ PHÉP CHIA
+  // ==========================================
+  // ==========================================
+  // BÀI 8: KHAI CĂN BẬC HAI VỚI PHÉP NHÂN VÀ PHÉP CHIA
+  // ==========================================
+  // ==========================================
+  // BÀI 8: KHAI CĂN BẬC HAI VỚI PHÉP NHÂN VÀ PHÉP CHIA
+  // ==========================================
+  "t9-b8-khai-can-nhan-chia": {
+  "id": "t9-b8-khai-can-nhan-chia",
+  "lessonNumber": 8,
+  "title": "Bài 8: Khai căn bậc hai với phép nhân và phép chia",
+  "bookChapter": "Chương III: Căn bậc hai và căn bậc ba",
+  "scenarioTitle": "Tình huống: Tính diện tích khu vườn sinh thái và so sánh vận tốc rơi tự do",
+  "scenarioFrames": [
+    {
+      "id": 1,
+      "character": "student",
+      "characterName": "Học sinh (Khám phá)",
+      "avatar": "🧑‍🎓",
+      "speech": "Thưa Thầy Tính, khu vườn sinh thái của trường em có chiều dài là \\sqrt{72}\\text{ m} và chiều rộng là \\sqrt{18}\\text{ m}. Khi tính diện tích thì em phải tính từng căn số lẻ rồi nhân lại hay có cách nào khai căn nhanh hơn không ạ?",
+      "visualGraphic": "box",
+      "mathNote": "S = a \\cdot b = \\sqrt{72} \\cdot \\sqrt{18} = \\sqrt{72 \\cdot 18} = \\sqrt{1296} = 36\\text{ m}^2"
+    },
+    {
+      "id": 2,
+      "character": "teacher",
+      "characterName": "Thầy Tính (VinaMath)",
+      "avatar": "👨‍🏫",
+      "speech": "Chào em! Đó chính là sức mạnh của quy tắc khai căn một tích và một thương! Thay vì tính từng căn lẻ, ta có công thức \\sqrt{a} \\cdot \\sqrt{b} = \\sqrt{a \\cdot b} và \\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}} (với a \\ge 0, b > 0). Khi nhân 72 với 18 ta được 1296, khai căn ra đúng 36 mét vuông tròn trĩnh! Hãy cùng Thầy khám phá toàn bộ quy tắc này nhé!",
+      "visualGraphic": "graph",
+      "mathNote": "\\sqrt{ab} = \\sqrt{a}\\sqrt{b} \\ (a, b \\ge 0); \\quad \\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}} \\ (a \\ge 0, b > 0)"
+    }
+  ],
+  "youtubeVideoId": "G0Hw9b8L101",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 8 - Khai căn bậc hai với phép nhân và phép chia - Toán 9 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "G0Hw9b8L101",
+      "title": "Tiết 1: Khai phương một tích và quy tắc nhân hai căn bậc hai"
+    },
+    {
+      "id": "K2M9b8L202",
+      "title": "Tiết 2: Khai phương một thương và quy tắc chia hai căn bậc hai"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-9.8.1",
+      "timeSeconds": 210,
+      "timeLabel": "03:30",
+      "title": "Ví dụ 1: Nhân hai căn bậc hai",
+      "question": "Giá trị của biểu thức $\\sqrt{12} \\cdot \\sqrt{3}$ bằng bao nhiêu?",
+      "options": [
+        "$36$",
+        "$6$",
+        "$\\sqrt{15}$",
+        "$18$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Áp dụng quy tắc nhân hai căn bậc hai: $\\sqrt{12} \\cdot \\sqrt{3} = \\sqrt{12 \\cdot 3} = \\sqrt{36} = 6$."
+    },
+    {
+      "id": "vq-9.8.2",
+      "timeSeconds": 450,
+      "timeLabel": "07:30",
+      "title": "Ví dụ 2: Điều kiện áp dụng định lí",
+      "question": "Điều kiện để đẳng thức $\\sqrt{a \\cdot b} = \\sqrt{a} \\cdot \\sqrt{b}$ đúng với mọi số thực $a, b$ là gì?",
+      "options": [
+        "$a \\ge 0$ và $b \\ge 0$",
+        "$a \\cdot b \\ge 0$",
+        "$a > 0$ và $b > 0$",
+        "Tùy ý không cần điều kiện"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quy tắc khai phương một tích chỉ áp dụng khi cả hai thừa số $a$ và $b$ đều không âm: $a \\ge 0, b \\ge 0$."
+    },
+    {
+      "id": "vq-9.8.3",
+      "timeSeconds": 680,
+      "timeLabel": "11:20",
+      "title": "Ví dụ 3: Chia hai căn bậc hai",
+      "question": "Giá trị của thương $\\frac{\\sqrt{80}}{\\sqrt{5}}$ bằng bao nhiêu?",
+      "options": [
+        "$16$",
+        "$4$",
+        "$8$",
+        "$2\\sqrt{5}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Áp dụng quy tắc chia hai căn bậc hai: $\\frac{\\sqrt{80}}{\\sqrt{5}} = \\sqrt{\\frac{80}{5}} = \\sqrt{16} = 4$."
+    },
+    {
+      "id": "vq-9.8.4",
+      "timeSeconds": 920,
+      "timeLabel": "15:20",
+      "title": "Ví dụ 4: Rút gọn căn thức có biến",
+      "question": "Với biểu thức $x > 0$, rút gọn biểu thức $\\frac{\\sqrt{50x^3}}{\\sqrt{2x}}$ ta được kết quả là:",
+      "options": [
+        "$5x$",
+        "$25x^2$",
+        "$5|x|$",
+        "$25x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\frac{\\sqrt{50x^3}}{\\sqrt{2x}} = \\sqrt{\\frac{50x^3}{2x}} = \\sqrt{25x^2} = \\sqrt{25} \\cdot \\sqrt{x^2} = 5|x|$. Vì $x > 0$ nên $5|x| = 5x$."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Khai căn bậc hai của một tích và Quy tắc nhân các căn bậc hai",
+      "points": [
+        "Định lí khai phương một tích: Với hai số $a$ và $b$ không âm ($a \\ge 0, b \\ge 0$), ta có: $\\sqrt{a \\cdot b} = \\sqrt{a} \\cdot \\sqrt{b}$.",
+        "Quy tắc khai phương một tích: Muốn khai phương một tích của các số không âm, ta có thể khai phương từng thừa số rồi nhân các kết quả lại với nhau.",
+        "Quy tắc nhân các căn bậc hai: Muốn nhân các căn bậc hai của các số không âm, ta có thể nhân các số dưới dấu căn với nhau rồi khai phương kết quả đó.",
+        "Mở rộng: Định lí mở rộng cho tích nhiều thừa số không âm: $\\sqrt{a_1 a_2 \\dots a_n} = \\sqrt{a_1}\\sqrt{a_2}\\dots\\sqrt{a_n}$."
+      ],
+      "formula": "\\sqrt{a \\cdot b} = \\sqrt{a} \\cdot \\sqrt{b} \\quad (a \\ge 0, b \\ge 0)",
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tính nhanh giá trị bằng quy tắc nhân căn bậc hai",
+          "problem": "Tính giá trị của các biểu thức sau: a) $A = \\sqrt{0,16 \\cdot 81 \\cdot 100}$; b) $B = \\sqrt{20} \\cdot \\sqrt{45}$.",
+          "solution": "• a) $A = \\sqrt{0,16} \\cdot \\sqrt{81} \\cdot \\sqrt{100} = 0,4 \\cdot 9 \\cdot 10 = 36$.\\n• b) $B = \\sqrt{20 \\cdot 45} = \\sqrt{900} = 30$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "Khai căn bậc hai của một thương và Quy tắc chia các căn bậc hai",
+      "points": [
+        "Định lí khai phương một thương: Với số $a$ không âm và số $b$ dương ($a \\ge 0, b > 0$), ta có: $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$.",
+        "Quy tắc khai phương một thương: Muốn khai phương một thương $\\frac{a}{b}$ ($a \\ge 0, b > 0$), ta có thể lần lượt khai phương số bị chia $a$ và số chia $b$, rồi lấy kết quả thứ nhất chia cho kết quả thứ hai.",
+        "Quy tắc chia hai căn bậc hai: Muốn chia căn bậc hai của số $a \\ge 0$ cho căn bậc hai của số $b > 0$, ta có thể lấy số $a$ chia cho số $b$ rồi khai phương kết quả đó.",
+        "Lưu ý: Mẫu số dưới dấu căn hoặc ở mẫu thức phải luôn luôn dương ($b > 0$)."
+      ],
+      "formula": "\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}} \\quad (a \\ge 0, b > 0)",
+      "examples": [
+        {
+          "title": "Ví dụ 2: Tính nhanh giá trị bằng quy tắc chia căn bậc hai",
+          "problem": "Tính giá trị của các biểu thức sau: a) $C = \\sqrt{1\\frac{9}{16}}$; b) $D = \\frac{\\sqrt{128}}{\\sqrt{2}}$.",
+          "solution": "• a) $1\\frac{9}{16} = \\frac{25}{16} \\implies C = \\sqrt{\\frac{25}{16}} = \\frac{\\sqrt{25}}{\\sqrt{16}} = \\frac{5}{4} = 1,25$.\\n• b) $D = \\sqrt{\\frac{128}{2}} = \\sqrt{64} = 8$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Khai căn tích và thương của biểu thức đại số chứa căn",
+      "points": [
+        "Với các biểu thức đại số $A, B$ thỏa mãn điều kiện $A \\ge 0, B \\ge 0$: $\\sqrt{A \\cdot B} = \\sqrt{A} \\cdot \\sqrt{B}$.",
+        "Với các biểu thức đại số $A, B$ thỏa mãn điều kiện $A \\ge 0, B > 0$: $\\sqrt{\\frac{A}{B}} = \\frac{\\sqrt{A}}{\\sqrt{B}}$.",
+        "Hằng đẳng thức căn tích chứa bình phương (với $B \\ge 0$): $\\sqrt{A^2 \\cdot B} = |A|\\sqrt{B}$.",
+        "Nếu $A \\ge 0, B \\ge 0$ thì $\\sqrt{A^2 B} = A\\sqrt{B}$. Nếu $A < 0, B \\ge 0$ thì $\\sqrt{A^2 B} = -A\\sqrt{B}$."
+      ],
+      "formula": "\\sqrt{A^2 \\cdot B} = |A|\\sqrt{B} \\quad (B \\ge 0)",
+      "examples": [
+        {
+          "title": "Ví dụ 3: Rút gọn biểu thức chứa biến",
+          "problem": "Rút gọn các biểu thức sau: a) $M = \\sqrt{16a^4 b^6}$ với $b \\le 0$; b) $N = \\frac{\\sqrt{63x^3 y}}{\\sqrt{7xy}}$ với $x > 0, y > 0$.",
+          "solution": "• a) $M = 4 \\cdot |a^2| \\cdot |b^3|$. Vì $a^2 \\ge 0$ và $b \\le 0 \\implies b^3 \\le 0$, nên $M = 4a^2(-b^3) = -4a^2 b^3$.\\n• b) $N = \\sqrt{\\frac{63x^3 y}{7xy}} = \\sqrt{9x^2} = 3|x| = 3x$ (do $x > 0$)."
+        }
+      ]
+    },
+    {
+      "index": "4",
+      "title": "Ứng dụng thực tế của khai căn phép nhân và chia",
+      "points": [
+        "Tính diện tích hình học: Kích thước hình chữ nhật $a = \\sqrt{48}\\text{ m}, b = \\sqrt{3}\\text{ m} \\implies S = \\sqrt{48 \\cdot 3} = \\sqrt{144} = 12\\text{ m}^2$.",
+        "Tỉ số kích thước hình học đồng dạng: Tỉ số cạnh của hai hình vuông bằng căn bậc hai tỉ số diện tích: $\\frac{a_1}{a_2} = \\sqrt{\\frac{S_1}{S_2}}$.",
+        "Vật lí - Vận tốc rơi tự do chạm đất: $v = \\sqrt{2gh}$. Tỉ số vận tốc rơi từ hai độ cao là $\\frac{v_1}{v_2} = \\sqrt{\\frac{h_1}{h_2}}$.",
+        "Vật lí - Chu kì con lắc đơn: $T = 2\\pi \\sqrt{\\frac{l}{g}}$."
+      ],
+      "formula": "\\frac{a_1}{a_2} = \\sqrt{\\frac{S_1}{S_2}}, \\quad \\frac{v_1}{v_2} = \\sqrt{\\frac{h_1}{h_2}}",
+      "examples": [
+        {
+          "title": "Ví dụ 4: Bài toán thực tế - Tỉ số vận tốc rơi tự do",
+          "problem": "Một vật rơi tự do từ đỉnh tháp cao $45\\text{ m}$ và vật khác rơi từ tháp cao $20\\text{ m}$. Biết vận tốc lúc chạm đất tính bởi $v = \\sqrt{2gh}$. Vận tốc khi chạm đất của vật thứ nhất gấp bao nhiêu lần vật thứ hai?",
+          "solution": "Ta có: $\\frac{v_1}{v_2} = \\frac{\\sqrt{2g \\cdot 45}}{\\sqrt{2g \\cdot 20}} = \\sqrt{\\frac{45}{20}} = \\sqrt{\\frac{9}{4}} = \\frac{3}{2} = 1,5$. Vậy vận tốc vật thứ nhất gấp $1,5$ lần vật thứ hai."
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Nhẩm số chính phương: Nhớ các số chính phương quen thuộc: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 400, 900...",
+    "Ghép cặp thông minh: Khi gặp các số dưới căn không phải số chính phương (như $\\sqrt{2}, \\sqrt{8}, \\sqrt{18}, \\sqrt{50}$), hãy nhân chúng lại để tạo thành tích là số chính phương trước khi khai căn.",
+    "Rút gọn phân số trước: Khi tính thương các căn bậc hai, hãy viết dưới một dấu căn lớn rồi triệt tiêu ước chung ở tử và mẫu trước khi khai căn."
+  ],
+  "traps": [
+    "Bẫy dấu khi biểu thức âm: Công thức $\\sqrt{a \\cdot b} = \\sqrt{a} \\cdot \\sqrt{b}$ CHỈ ĐÚNG khi $a \\ge 0, b \\ge 0$. Nếu $a < 0, b < 0$ thì $\\sqrt{a}$ và $\\sqrt{b}$ không xác định trong tập số thực!",
+    "Bẫy căn bậc hai của tổng/hiệu: TUYỆT ĐỐI KHÔNG ĐƯỢC viết $\\sqrt{a + b} = \\sqrt{a} + \\sqrt{b}$ hoặc $\\sqrt{a - b} = \\sqrt{a} - \\sqrt{b}$. Đây là sai lầm phổ biến nhất của học sinh lớp 9!",
+    "Bẫy giá trị tuyệt đối: $\\sqrt{A^2} = |A|$, chỉ được bỏ dấu giá trị tuyệt đối khi đã xác định rõ dấu của $A$ (nếu $A < 0$ thì $|A| = -A$)."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-9.8.1",
+      "badge": "Câu 1 (NB) - Quy tắc khai phương một tích",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 52)",
+      "question": "Với hai số $a, b$ không âm, khẳng định nào sau đây là đúng?",
+      "options": [
+        "$\\sqrt{ab} = \\sqrt{a} + \\sqrt{b}$",
+        "$\\sqrt{ab} = \\sqrt{a} \\cdot \\sqrt{b}$",
+        "$\\sqrt{ab} = a \\cdot b$",
+        "$\\sqrt{ab} = \\sqrt{a} - \\sqrt{b}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Theo định lí khai phương một tích, với $a \\ge 0, b \\ge 0$ thì $\\sqrt{ab} = \\sqrt{a} \\cdot \\sqrt{b}$."
+    },
+    {
+      "id": "quiz-9.8.2",
+      "badge": "Câu 2 (NB) - Quy tắc khai phương một thương",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 54)",
+      "question": "Với $a \\ge 0$ và $b > 0$, khẳng định nào sau đây là đúng?",
+      "options": [
+        "$\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{b}$",
+        "$\\sqrt{\\frac{a}{b}} = \\frac{a}{\\sqrt{b}}$",
+        "$\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$",
+        "$\\sqrt{\\frac{a}{b}} = \\sqrt{a} - \\sqrt{b}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "Theo định lí khai phương một thương, với $a \\ge 0, b > 0$ thì $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$."
+    },
+    {
+      "id": "quiz-9.8.3",
+      "badge": "Câu 3 (NB) - Tính căn một tích số chính phương",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 48)",
+      "question": "Giá trị của biểu thức $\\sqrt{25 \\cdot 4}$ bằng:",
+      "options": [
+        "$10$",
+        "$100$",
+        "$50$",
+        "$20$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{25 \\cdot 4} = \\sqrt{25} \\cdot \\sqrt{4} = 5 \\cdot 2 = 10$."
+    },
+    {
+      "id": "quiz-9.8.4",
+      "badge": "Câu 4 (NB) - Tính căn một thương số chính phương",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 53)",
+      "question": "Giá trị của biểu thức $\\sqrt{\\frac{49}{81}}$ bằng:",
+      "options": [
+        "$\\frac{9}{7}$",
+        "$\\frac{7}{81}$",
+        "$\\frac{7}{9}$",
+        "$\\frac{49}{9}$"
+      ],
+      "correctIndex": 2,
+      "explanation": "$\\sqrt{\\frac{49}{81}} = \\frac{\\sqrt{49}}{\\sqrt{81}} = \\frac{7}{9}$."
+    },
+    {
+      "id": "quiz-9.8.5",
+      "badge": "Câu 5 (NB) - Nhân hai căn bậc hai đơn giản",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 55)",
+      "question": "Tích $\\sqrt{2} \\cdot \\sqrt{8}$ có giá trị bằng:",
+      "options": [
+        "$16$",
+        "$4$",
+        "$\\sqrt{10}$",
+        "$2\\sqrt{2}$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\sqrt{2} \\cdot \\sqrt{8} = \\sqrt{2 \\cdot 8} = \\sqrt{16} = 4$."
+    },
+    {
+      "id": "quiz-9.8.6",
+      "badge": "Câu 6 (NB) - Chia hai căn bậc hai đơn giản",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 49)",
+      "question": "Thương $\\frac{\\sqrt{50}}{\\sqrt{2}}$ có giá trị bằng:",
+      "options": [
+        "$25$",
+        "$5$",
+        "$\\sqrt{48}$",
+        "$10$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\frac{\\sqrt{50}}{\\sqrt{2}} = \\sqrt{\\frac{50}{2}} = \\sqrt{25} = 5$."
+    },
+    {
+      "id": "quiz-9.8.7",
+      "badge": "Câu 7 (NB) - Khai căn số thập phân",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 53)",
+      "question": "Giá trị của $\\sqrt{0,09 \\cdot 64}$ bằng:",
+      "options": [
+        "$2,4$",
+        "$0,24$",
+        "$24$",
+        "$5,76$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{0,09 \\cdot 64} = \\sqrt{0,09} \\cdot \\sqrt{64} = 0,3 \\cdot 8 = 2,4$."
+    },
+    {
+      "id": "quiz-9.8.8",
+      "badge": "Câu 8 (NB) - Khai căn thương chứa hỗn số",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 56)",
+      "question": "Biểu thức $\\sqrt{2\\frac{7}{9}}$ có giá trị là:",
+      "options": [
+        "$\\frac{5}{3}$",
+        "$2\\frac{\\sqrt{7}}{3}$",
+        "$\\frac{25}{9}$",
+        "$\\frac{\\sqrt{23}}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đổi hỗn số sang phân số: $2\\frac{7}{9} = \\frac{25}{9}$. Do đó $\\sqrt{\\frac{25}{9}} = \\frac{\\sqrt{25}}{\\sqrt{9}} = \\frac{5}{3}$."
+    },
+    {
+      "id": "quiz-9.8.9",
+      "badge": "Câu 9 (TH) - Ghép thừa số để khai căn tích",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 54)",
+      "question": "Tính giá trị của biểu thức $P = \\sqrt{75} \\cdot \\sqrt{3}$:",
+      "options": [
+        "$15$",
+        "$225$",
+        "$5\\sqrt{3}$",
+        "$25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = \\sqrt{75 \\cdot 3} = \\sqrt{225} = 15$."
+    },
+    {
+      "id": "quiz-9.8.10",
+      "badge": "Câu 10 (TH) - Khai căn tích chứa số phân tích ra thừa số nguyên tố",
+      "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 8 (Trang 62)",
+      "question": "Giá trị của biểu thức $Q = \\sqrt{20 \\cdot 72 \\cdot 10}$ bằng:",
+      "options": [
+        "$144$",
+        "$120$",
+        "$1200$",
+        "$60$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$Q = \\sqrt{20 \\cdot 10 \\cdot 72} = \\sqrt{200 \\cdot 72} = \\sqrt{14400} = 120$."
+    },
+    {
+      "id": "quiz-9.8.11",
+      "badge": "Câu 11 (TH) - Rút gọn căn thức bậc hai chứa biến",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 54)",
+      "question": "Với $a \\ge 0$, biểu thức $\\sqrt{36a^2}$ sau khi rút gọn bằng:",
+      "options": [
+        "$6a$",
+        "$-6a$",
+        "$6|a|$",
+        "$36a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{36a^2} = \\sqrt{36} \\cdot \\sqrt{a^2} = 6|a|$. Vì $a \\ge 0$ nên $|a| = a$, do đó kết quả là $6a$."
+    },
+    {
+      "id": "quiz-9.8.12",
+      "badge": "Câu 12 (TH) - Rút gọn căn thức với biến có điều kiện âm",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 50)",
+      "question": "Với $x < 0$, biểu thức $\\sqrt{25x^2 y^4}$ được rút gọn thành:",
+      "options": [
+        "$5x y^2$",
+        "$-5x y^2$",
+        "$5|x|y$",
+        "$-25x y^2$"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\sqrt{25x^2 y^4} = 5|x|y^2$. Do $x < 0$ nên $|x| = -x$, suy ra kết quả là $-5x y^2$."
+    },
+    {
+      "id": "quiz-9.8.13",
+      "badge": "Câu 13 (TH) - Chia hai căn thức chứa biến",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 57)",
+      "question": "Với $x > 0$, rút gọn biểu thức $M = \\frac{\\sqrt{48x^5}}{\\sqrt{3x}}$ ta được:",
+      "options": [
+        "$4x^2$",
+        "$16x^4$",
+        "$4x$",
+        "$-4x^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với $x > 0$: $M = \\sqrt{\\frac{48x^5}{3x}} = \\sqrt{16x^4} = 4x^2$."
+    },
+    {
+      "id": "quiz-9.8.14",
+      "badge": "Câu 14 (TH) - Giải phương trình sử dụng quy tắc nhân chia căn",
+      "source": "Đề thi khảo sát chất lượng Toán 9 HK1",
+      "question": "Số nghiệm của phương trình $\\sqrt{3} \\cdot x - \\sqrt{12} = 0$ là:",
+      "options": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "Vô số nghiệm"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\sqrt{3} \\cdot x = \\sqrt{12} \\Leftrightarrow x = \\frac{\\sqrt{12}}{\\sqrt{3}} = \\sqrt{\\frac{12}{3}} = \\sqrt{4} = 2$. Phương trình có duy nhất 1 nghiệm $x = 2$."
+    },
+    {
+      "id": "quiz-9.8.15",
+      "badge": "Câu 15 (VD) - Rút gọn biểu thức tổng hợp",
+      "source": "Đề thi tuyển sinh vào 10 môn Toán TP. Hà Nội",
+      "question": "Giá trị của biểu thức $E = (\\sqrt{8} - \\sqrt{18} + 2\\sqrt{2}) \\cdot \\sqrt{2}$ bằng:",
+      "options": [
+        "$2$",
+        "$4$",
+        "$2\\sqrt{2}$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân $\\sqrt{2}$ vào từng số hạng: $E = \\sqrt{8 \\cdot 2} - \\sqrt{18 \\cdot 2} + 2\\sqrt{2 \\cdot 2} = \\sqrt{16} - \\sqrt{36} + 2\\sqrt{4} = 4 - 6 + 4 = 2$."
+    },
+    {
+      "id": "quiz-9.8.16",
+      "badge": "Câu 16 (VD) - Tính giá trị phân thức",
+      "source": "Đề thi HSG Toán 9 Cấp Quận",
+      "question": "Rút gọn biểu thức $K = \\frac{\\sqrt{15} - \\sqrt{5}}{\\sqrt{3} - 1}$ ta được:",
+      "options": [
+        "$\\sqrt{5}$",
+        "$5$",
+        "$\\sqrt{3}$",
+        "$\\sqrt{15}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt $\\sqrt{5}$ làm nhân tử chung ở tử: $\\sqrt{15} - \\sqrt{5} = \\sqrt{5}(\\sqrt{3} - 1)$. Khi đó $K = \\frac{\\sqrt{5}(\\sqrt{3}-1)}{\\sqrt{3}-1} = \\sqrt{5}$."
+    },
+    {
+      "id": "quiz-9.8.17",
+      "badge": "Câu 17 (VD - Thực tế) - Diện tích sân bóng chuyền hơi",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 55)",
+      "question": "Một sân chơi hình chữ nhật có chiều dài $L = \\sqrt{162}\\text{ m}$ và chiều rộng $W = \\sqrt{32}\\text{ m}$. Diện tích sân chơi đó là bao nhiêu mét vuông?",
+      "options": [
+        "$72\\text{ m}^2$",
+        "$144\\text{ m}^2$",
+        "$36\\text{ m}^2$",
+        "$194\\text{ m}^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích: $S = L \\cdot W = \\sqrt{162} \\cdot \\sqrt{32} = \\sqrt{162 \\cdot 32} = \\sqrt{81 \\cdot 16 \\cdot 4} = 9 \\cdot 4 \\cdot 2 = 72\\text{ m}^2$."
+    },
+    {
+      "id": "quiz-9.8.18",
+      "badge": "Câu 18 (VD - Thực tế) - Tỉ số chiều dài dây con lắc đơn",
+      "source": "Tài liệu chuyên đề Vật lí - Toán 9 HK1",
+      "question": "Chu kì dao động của con lắc đơn tính bằng $T = 2\\pi \\sqrt{\\frac{l}{g}}$ ($l$ là chiều dài dây, $g$ là gia tốc trọng trường). Để chu kì dao động tăng lên gấp $2$ lần thì chiều dài dây $l$ cần thay đổi như thế nào?",
+      "options": [
+        "Tăng lên 2 lần",
+        "Tăng lên 4 lần",
+        "Giảm đi 2 lần",
+        "Tăng lên $\\sqrt{2}$ lần"
+      ],
+      "correctIndex": 1,
+      "explanation": "$\\frac{T_2}{T_1} = \\sqrt{\\frac{l_2}{l_1}}$. Để $\\frac{T_2}{T_1} = 2$ thì $\\sqrt{\\frac{l_2}{l_1}} = 2 \\Leftrightarrow \\frac{l_2}{l_1} = 4$. Vậy chiều dài dây phải tăng lên 4 lần."
+    },
+    {
+      "id": "quiz-9.8.19",
+      "badge": "Câu 19 (VD - Thực tế) - Tỉ số cạnh hình vuông khi biết diện tích",
+      "source": "Đề thi tuyển sinh vào 10 Chuyên Toán",
+      "question": "Hai mảnh đất hình vuông có diện tích lần lượt là $S_1 = 180\\text{ m}^2$ và $S_2 = 20\\text{ m}^2$. Tỉ số độ dài cạnh của mảnh đất thứ nhất so với mảnh đất thứ hai là:",
+      "options": [
+        "$9$",
+        "$3$",
+        "$6$",
+        "$4,5$"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cạnh mảnh đất thứ nhất là $a_1 = \\sqrt{180}$, cạnh mảnh đất thứ hai là $a_2 = \\sqrt{20}$. Tỉ số độ dài: $\\frac{a_1}{a_2} = \\frac{\\sqrt{180}}{\\sqrt{20}} = \\sqrt{\\frac{180}{20}} = \\sqrt{9} = 3$."
+    },
+    {
+      "id": "quiz-9.8.20",
+      "badge": "Câu 20 (VD - Thực tế) - Hiệu điện thế nguồn điện xoay chiều",
+      "source": "Vật lí 9 - Chương Điện học",
+      "question": "Công suất tỏa nhiệt trên điện trở $R$ được tính theo công thức $P = \\frac{U^2}{R}$, suy ra hiệu điện thế $U = \\sqrt{P \\cdot R}$. Khi một điện trở $R = 50\\ \\Omega$ có công suất tỏa nhiệt $P = 72\\text{ W}$, giá trị hiệu điện thế $U$ là:",
+      "options": [
+        "$60\\text{ V}$",
+        "$3600\\text{ V}$",
+        "$120\\text{ V}$",
+        "$30\\text{ V}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $U = \\sqrt{P \\cdot R} = \\sqrt{72 \\cdot 50} = \\sqrt{3600} = 60\\text{ V}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-9.8.1",
+      "badge": "Đúng/Sai 1 (NB) - Định lí khai phương một tích",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 52)",
+      "prompt": "Xét tính đúng/sai của các mệnh đề sau về phép khai căn một tích:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Với $a \\ge 0, b \\ge 0$ thì $\\sqrt{ab} = \\sqrt{a}\\sqrt{b}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định lí khai phương một tích."
+        },
+        {
+          "id": "b",
+          "text": "Đẳng thức $\\sqrt{ab} = \\sqrt{a}\\sqrt{b}$ luôn đúng với mọi số thực $a, b$.",
+          "correctAnswer": false,
+          "explanation": "Sai, nếu $a < 0$ và $b < 0$ thì $ab > 0$ nhưng $\\sqrt{a}$ và $\\sqrt{b}$ không xác định."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt{16 \\cdot 25} = \\sqrt{16} \\cdot \\sqrt{25} = 4 \\cdot 5 = 20$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $16 > 0$ và $25 > 0$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt{(-4) \\cdot (-9)} = \\sqrt{-4} \\cdot \\sqrt{-9}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\sqrt{-4}$ và $\\sqrt{-9}$ không xác định trong tập số thực $\\mathbb{R}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.2",
+      "badge": "Đúng/Sai 2 (NB) - Định lí khai phương một thương",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 54)",
+      "prompt": "Xét tính đúng/sai của các mệnh đề sau về khai phương một thương:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Với $a \\ge 0, b > 0$ thì $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định lí khai phương một thương."
+        },
+        {
+          "id": "b",
+          "text": "Với $a \\ge 0, b \\ge 0$ thì $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì mẫu số $b$ phải khác $0$ (tức là $b > 0$), không thể có $b = 0$."
+        },
+        {
+          "id": "c",
+          "text": "$\\frac{\\sqrt{45}}{\\sqrt{5}} = \\sqrt{\\frac{45}{5}} = \\sqrt{9} = 3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo quy tắc chia hai căn bậc hai."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt{\\frac{-16}{-25}} = \\frac{\\sqrt{-16}}{\\sqrt{-25}}$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì tử và mẫu ở vế phải không xác định."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.3",
+      "badge": "Đúng/Sai 3 (TH) - Tính toán giá trị số học",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 51)",
+      "prompt": "Cho các biểu thức số học $A, B, C, D$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt{1,44 \\cdot 100} = 12$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{1,44} \\cdot \\sqrt{100} = 1,2 \\cdot 10 = 12$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{2} \\cdot \\sqrt{32} = 8$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{2 \\cdot 32} = \\sqrt{64} = 8$."
+        },
+        {
+          "id": "c",
+          "text": "$\\frac{\\sqrt{12}}{\\sqrt{27}} = \\frac{2}{3}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{\\frac{12}{27}} = \\sqrt{\\frac{4}{9}} = \\frac{2}{3}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt{9 + 16} = \\sqrt{9} + \\sqrt{16} = 7$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $\\sqrt{9 + 16} = \\sqrt{25} = 5 \\ne 3 + 4 = 7$ (căn của tổng không bằng tổng các căn)."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.4",
+      "badge": "Đúng/Sai 4 (TH) - Biến đổi căn thức chứa biến",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 55)",
+      "prompt": "Cho biểu thức $P = \\sqrt{4x^2 y^4}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Biểu thức $P$ luôn xác định với mọi số thực $x, y$.",
+          "correctAnswer": true,
+          "explanation": "Vì $4x^2 y^4 = (2xy^2)^2 \\ge 0$ với mọi $x, y$ nên biểu thức luôn xác định."
+        },
+        {
+          "id": "b",
+          "text": "Biểu thức rút gọn tổng quát của $P$ là $2|x|y^2$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{4x^2 y^4} = 2\\sqrt{x^2}\\sqrt{y^4} = 2|x|y^2$ (do $y^2 \\ge 0$ nên $|y^2| = y^2$)."
+        },
+        {
+          "id": "c",
+          "text": "Khi $x < 0$ thì $P = -2xy^2$.",
+          "correctAnswer": true,
+          "explanation": "Vì $x < 0$ nên $|x| = -x$, do đó $P = 2(-x)y^2 = -2xy^2$."
+        },
+        {
+          "id": "d",
+          "text": "Khi $x = -3, y = 2$ thì $P = -24$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì căn bậc hai số học $P$ không âm, thay vào: $P = 2|-3| \\cdot 2^2 = 2 \\cdot 3 \\cdot 4 = 24 > 0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.5",
+      "badge": "Đúng/Sai 5 (TH) - Rút gọn thương hai căn thức",
+      "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 8 (Trang 65)",
+      "prompt": "Cho biểu thức $Q = \\frac{\\sqrt{72a^3 b}}{\\sqrt{2ab}}$ với $a > 0, b > 0$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điều kiện xác định của biểu thức $Q$ là $a > 0$ và $b > 0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì ở mẫu số $\\sqrt{2ab} > 0 \\Leftrightarrow ab > 0$, cùng với $a > 0$ suy ra $b > 0$."
+        },
+        {
+          "id": "b",
+          "text": "Áp dụng quy tắc chia hai căn bậc hai: $Q = \\sqrt{\\frac{72a^3 b}{2ab}}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo quy tắc chia hai căn bậc hai với biểu thức không âm."
+        },
+        {
+          "id": "c",
+          "text": "Biểu thức sau khi rút gọn là $Q = 6a$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{\\frac{72a^3 b}{2ab}} = \\sqrt{36a^2} = 6|a| = 6a$ (vì $a > 0$)."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị của $Q$ phụ thuộc vào giá trị của biến $b$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì biến $b$ đã bị triệt tiêu hoàn toàn, $Q = 6a$ không phụ thuộc vào $b$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.6",
+      "badge": "Đúng/Sai 6 (VD) - Phương trình chứa căn tích và thương",
+      "source": "Đề thi giữa HK1 Toán 9 THCS Trưng Vương",
+      "prompt": "Cho phương trình $\\sqrt{2x} \\cdot \\sqrt{8} = 8$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điều kiện xác định của phương trình là $x \\ge 0$.",
+          "correctAnswer": true,
+          "explanation": "Dưới dấu căn là $2x \\ge 0 \\Leftrightarrow x \\ge 0$."
+        },
+        {
+          "id": "b",
+          "text": "Phương trình tương đương với $\\sqrt{16x} = 8$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{2x} \\cdot \\sqrt{8} = \\sqrt{2x \\cdot 8} = \\sqrt{16x}$."
+        },
+        {
+          "id": "c",
+          "text": "Nghiệm của phương trình là $x = 2$.",
+          "correctAnswer": false,
+          "explanation": "$\\sqrt{16x} = 8 \\Leftrightarrow 16x = 64 \\Leftrightarrow x = 4$. Do đó $x = 2$ là sai."
+        },
+        {
+          "id": "d",
+          "text": "Phương trình có duy nhất một nghiệm dương.",
+          "correctAnswer": true,
+          "explanation": "Phương trình có nghiệm duy nhất $x = 4 > 0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.7",
+      "badge": "Đúng/Sai 7 (VD) - Rút gọn biểu thức phân thức chứa căn",
+      "source": "Đề thi HSG Toán 9 Cấp Tỉnh",
+      "prompt": "Cho biểu thức $A = \\frac{a - b}{\\sqrt{a} + \\sqrt{b}}$ với $a > 0, b > 0, a \\ne b$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tử thức có thể phân tích thành $a - b = (\\sqrt{a} - \\sqrt{b})(\\sqrt{a} + \\sqrt{b})$.",
+          "correctAnswer": true,
+          "explanation": "Vì $a, b > 0$ nên $a = (\\sqrt{a})^2, b = (\\sqrt{b})^2$, áp dụng hằng đẳng thức hiệu hai bình phương."
+        },
+        {
+          "id": "b",
+          "text": "Rút gọn biểu thức $A$ ta được $A = \\sqrt{a} - \\sqrt{b}$.",
+          "correctAnswer": true,
+          "explanation": "$A = \\frac{(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b})}{\\sqrt{a}+\\sqrt{b}} = \\sqrt{a} - \\sqrt{b}$."
+        },
+        {
+          "id": "c",
+          "text": "Khi $a = 18, b = 8$ thì $A = \\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "Thay vào: $A = \\sqrt{18} - \\sqrt{8} = 3\\sqrt{2} - 2\\sqrt{2} = \\sqrt{2}$."
+        },
+        {
+          "id": "d",
+          "text": "Khi $a = 25, b = 16$ thì $A = 9$.",
+          "correctAnswer": false,
+          "explanation": "$A = \\sqrt{25} - \\sqrt{16} = 5 - 4 = 1 \\ne 9$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.8",
+      "badge": "Đúng/Sai 8 (VD - Thực tế) - Kích thước khu vườn hình chữ nhật",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 56)",
+      "prompt": "Một khu vườn sinh thái hình chữ nhật có diện tích $S = 60\\text{ m}^2$ và chiều rộng $W = \\sqrt{15}\\text{ m}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chiều dài của khu vườn được tính bởi công thức $L = \\frac{S}{W} = \\frac{60}{\\sqrt{15}}$.",
+          "correctAnswer": true,
+          "explanation": "Chiều dài bằng diện tích chia chiều rộng."
+        },
+        {
+          "id": "b",
+          "text": "Trục căn thức ở mẫu, ta được chiều dài $L = 4\\sqrt{15}\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "$\\frac{60}{\\sqrt{15}} = \\frac{60\\sqrt{15}}{15} = 4\\sqrt{15}\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Chiều dài gấp $4$ lần chiều rộng.",
+          "correctAnswer": true,
+          "explanation": "Tỉ số: $\\frac{L}{W} = \\frac{4\\sqrt{15}}{\\sqrt{15}} = 4$."
+        },
+        {
+          "id": "d",
+          "text": "Chu vi của khu vườn là $10\\sqrt{15}\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Chu vi $P = 2(L + W) = 2(4\\sqrt{15} + \\sqrt{15}) = 2(5\\sqrt{15}) = 10\\sqrt{15}\\text{ m}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.9",
+      "badge": "Đúng/Sai 9 (VD - Thực tế) - Vận tốc va chạm của xe ô tô khi phanh gấp",
+      "source": "Tài liệu Toán học và An toàn giao thông",
+      "prompt": "Theo các chuyên gia giao thông, tốc độ tối thiểu $v$ (km/h) của ô tô trước khi phanh gấp được ước tính theo công thức $v = \\sqrt{254 \\cdot \\mu \\cdot d}$, trong đó $\\mu$ là hệ số ma sát giữa lốp xe và mặt đường, $d$ là chiều dài vết trượt bánh xe (mét). Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tốc độ $v$ tỉ lệ thuận với căn bậc hai của chiều dài vết trượt $d$.",
+          "correctAnswer": true,
+          "explanation": "Vì $v = \\sqrt{254\\mu} \\cdot \\sqrt{d}$, hệ số $\\sqrt{254\\mu}$ không đổi nên $v$ tỉ lệ thuận với $\\sqrt{d}$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu chiều dài vết trượt $d$ tăng gấp $4$ lần (hệ số $\\mu$ không đổi) thì tốc độ $v$ tăng gấp $2$ lần.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{4d} = \\sqrt{4}\\sqrt{d} = 2\\sqrt{d}$, tốc độ tăng 2 lần."
+        },
+        {
+          "id": "c",
+          "text": "Khi $\\mu = 0,8$ và $d = 20\\text{ m}$, ta có $v = \\sqrt{4064} \\approx 63,75\\text{ km/h}$.",
+          "correctAnswer": true,
+          "explanation": "$254 \\cdot 0,8 \\cdot 20 = 4064$. Căn bậc hai $\\sqrt{4064} \\approx 63,75\\text{ km/h}$."
+        },
+        {
+          "id": "d",
+          "text": "Để tốc độ $v$ tăng gấp $3$ lần thì vết trượt $d$ chỉ cần tăng gấp $3$ lần.",
+          "correctAnswer": false,
+          "explanation": "Sai, để $v$ tăng 3 lần thì $d$ phải tăng $3^2 = 9$ lần."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.8.10",
+      "badge": "Đúng/Sai 10 (VD - Thực tế) - Bài toán tam giác vuông và tỉ số lượng giác",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 56)",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có hai cạnh góc vuông là $AB = \\sqrt{27}\\text{ cm}$ và $AC = \\sqrt{48}\\text{ cm}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài hai cạnh góc vuông có thể rút gọn thành $AB = 3\\sqrt{3}\\text{ cm}$ và $AC = 4\\sqrt{3}\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{27} = \\sqrt{9 \\cdot 3} = 3\\sqrt{3}$, $\\sqrt{48} = \\sqrt{16 \\cdot 3} = 4\\sqrt{3}$."
+        },
+        {
+          "id": "b",
+          "text": "Diện tích tam giác $ABC$ là $S = 18\\text{ cm}^2$.",
+          "correctAnswer": true,
+          "explanation": "$S = \\frac{1}{2} AB \\cdot AC = \\frac{1}{2} \\sqrt{27} \\cdot \\sqrt{48} = \\frac{1}{2} \\sqrt{1296} = \\frac{1}{2} \\cdot 36 = 18\\text{ cm}^2$."
+        },
+        {
+          "id": "c",
+          "text": "Cạnh huyền $BC$ có độ dài bằng $5\\sqrt{3}\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "$BC = \\sqrt{AB^2 + AC^2} = \\sqrt{27 + 48} = \\sqrt{75} = 5\\sqrt{3}\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Tỉ số $\\frac{AB}{AC} = \\frac{3}{4}$.",
+          "correctAnswer": true,
+          "explanation": "$\\frac{AB}{AC} = \\frac{3\\sqrt{3}}{4\\sqrt{3}} = \\frac{3}{4}$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-9.8.1",
+      "badge": "Trả lời ngắn 1 (TH) - Tính tích các căn bậc hai",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 8 (Trang 53)",
+      "prompt": "Tính giá trị của biểu thức $A = \\sqrt{12} \\cdot \\sqrt{27}$.",
+      "correctAnswer": "18",
+      "acceptableAnswers": [
+        "18",
+        "A=18"
+      ],
+      "explanation": "$A = \\sqrt{12 \\cdot 27} = \\sqrt{324} = 18$."
+    },
+    {
+      "id": "sa-9.8.2",
+      "badge": "Trả lời ngắn 2 (TH) - Tính thương các căn bậc hai",
+      "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 55)",
+      "prompt": "Tính giá trị của biểu thức $B = \\frac{\\sqrt{98}}{\\sqrt{2}}$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7",
+        "B=7"
+      ],
+      "explanation": "$B = \\sqrt{\\frac{98}{2}} = \\sqrt{49} = 7$."
+    },
+    {
+      "id": "sa-9.8.3",
+      "badge": "Trả lời ngắn 3 (TH) - Khai căn tích ba thừa số",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 50)",
+      "prompt": "Tính giá trị của biểu thức $C = \\sqrt{0,4 \\cdot 90 \\cdot 16}$.",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24",
+        "C=24"
+      ],
+      "explanation": "$C = \\sqrt{(0,4 \\cdot 90) \\cdot 16} = \\sqrt{36 \\cdot 16} = \\sqrt{36} \\cdot \\sqrt{16} = 6 \\cdot 4 = 24$."
+    },
+    {
+      "id": "sa-9.8.4",
+      "badge": "Trả lời ngắn 4 (TH) - Rút gọn biểu thức số học",
+      "source": "Đề kiểm tra 15 phút Toán 9 HK1",
+      "prompt": "Tính giá trị của biểu thức $D = \\frac{\\sqrt{5} \\cdot \\sqrt{45}}{\\sqrt{25}}$.",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "D=3"
+      ],
+      "explanation": "Tử số: $\\sqrt{5 \\cdot 45} = \\sqrt{225} = 15$. Mẫu số: $\\sqrt{25} = 5$. Vậy $D = \\frac{15}{5} = 3$."
+    },
+    {
+      "id": "sa-9.8.5",
+      "badge": "Trả lời ngắn 5 (VD) - Tìm x trong phương trình căn thức",
+      "source": "Đề thi khảo sát chất lượng Toán 9",
+      "prompt": "Tìm nghiệm của phương trình $\\sqrt{5x} = \\sqrt{125}$.",
+      "correctAnswer": "25",
+      "acceptableAnswers": [
+        "25",
+        "x=25"
+      ],
+      "explanation": "$\\sqrt{5x} = \\sqrt{125} \\Leftrightarrow 5x = 125 \\Leftrightarrow x = 25$."
+    },
+    {
+      "id": "sa-9.8.6",
+      "badge": "Trả lời ngắn 6 (VD) - Tìm x trong phương trình chứa thương căn",
+      "source": "Đề thi tuyển sinh vào 10 THPT",
+      "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình $\\frac{\\sqrt{3x}}{\\sqrt{27}} = 4$.",
+      "correctAnswer": "144",
+      "acceptableAnswers": [
+        "144",
+        "x=144"
+      ],
+      "explanation": "Ta có $\\sqrt{\\frac{3x}{27}} = 4 \\Leftrightarrow \\sqrt{\\frac{x}{9}} = 4 \\Leftrightarrow \\frac{\\sqrt{x}}{3} = 4 \\Leftrightarrow \\sqrt{x} = 12 \\Leftrightarrow x = 144$."
+    },
+    {
+      "id": "sa-9.8.7",
+      "badge": "Trả lời ngắn 7 (VD) - Rút gọn biểu thức và tính giá trị",
+      "source": "Đề thi giữa HK1 Toán 9",
+      "prompt": "Cho biểu thức $P = \\frac{\\sqrt{12x^3}}{\\sqrt{3x}}$ với $x > 0$. Tính giá trị của $P$ khi $x = 5$.",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10",
+        "P=10"
+      ],
+      "explanation": "Rút gọn: $P = \\sqrt{\\frac{12x^3}{3x}} = \\sqrt{4x^2} = 2|x| = 2x$ (do $x > 0$). Khi $x = 5$ thì $P = 2 \\cdot 5 = 10$."
+    },
+    {
+      "id": "sa-9.8.8",
+      "badge": "Trả lời ngắn 8 (VD - Thực tế) - Diện tích tấm pin năng lượng mặt trời",
+      "source": "Tài liệu Ứng dụng Toán học thực tế",
+      "prompt": "Một tấm pin năng lượng mặt trời hình chữ nhật có kích thước hai cạnh là $\\sqrt{48}\\text{ dm}$ và $\\sqrt{75}\\text{ dm}$. Tính diện tích của tấm pin đó theo đề-xi-mét vuông $(\\text{dm}^2)$.",
+      "correctAnswer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60 dm2",
+        "60dm2",
+        "60 dm^2"
+      ],
+      "explanation": "$S = \\sqrt{48} \\cdot \\sqrt{75} = \\sqrt{48 \\cdot 75} = \\sqrt{16 \\cdot 3 \\cdot 25 \\cdot 3} = \\sqrt{16 \\cdot 25 \\cdot 9} = 4 \\cdot 5 \\cdot 3 = 60\\text{ dm}^2$."
+    },
+    {
+      "id": "sa-9.8.9",
+      "badge": "Trả lời ngắn 9 (VD - Thực tế) - Tỉ số vận tốc rơi tự do",
+      "source": "Vật lí 9 - Rơi tự do",
+      "prompt": "Vật A rơi tự do từ độ cao $64\\text{ m}$, vật B rơi tự do từ độ cao $16\\text{ m}$. Biết vận tốc khi chạm đất tính bởi $v = \\sqrt{2gh}$. Vận tốc khi chạm đất của vật A gấp bao nhiêu lần vật B?",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2 lần"
+      ],
+      "explanation": "Tỉ số vận tốc: $\\frac{v_A}{v_B} = \\sqrt{\\frac{h_A}{h_B}} = \\sqrt{\\frac{64}{16}} = \\sqrt{4} = 2$."
+    },
+    {
+      "id": "sa-9.8.10",
+      "badge": "Trả lời ngắn 10 (VD - Thực tế) - Tính cạnh đáy bể nước hình vuông",
+      "source": "Bài tập Ứng dụng thực tế Toán 9",
+      "prompt": "Một bể nước có đáy hình vuông. Biết diện tích đáy hình vuông bằng tích hai kích thước $\\sqrt{72}\\text{ m}$ và $\\sqrt{18}\\text{ m}$. Tính độ dài cạnh đáy của bể nước theo mét.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6 m",
+        "6m",
+        "a=6"
+      ],
+      "explanation": "Diện tích đáy: $S = \\sqrt{72} \\cdot \\sqrt{18} = \\sqrt{72 \\cdot 18} = \\sqrt{1296} = 36\\text{ m}^2$. Do đáy là hình vuông nên cạnh đáy là $a = \\sqrt{S} = \\sqrt{36} = 6\\text{ m}$."
+    }
+  ]
+},
 };

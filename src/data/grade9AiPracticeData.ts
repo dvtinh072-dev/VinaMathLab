@@ -6048,4 +6048,579 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
     }
   ]
 },
+  // ==========================================
+  // BÀI 9: BIẾN ĐỔI ĐƠN GIẢN VÀ RÚT GỌN BIỂU THỨC CHỨA CĂN THỨC BẬC HAI
+  // ==========================================
+  "t9-b9-bien-doi-rut-gon-can-thuc": {
+  "quizQuestions": [
+    {
+      "id": "ai-9.9.1",
+      "badge": "Luyện thêm 1 (NB) - Đưa thừa số ra ngoài căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Biểu thức $\\sqrt{28}$ khi đưa thừa số ra ngoài căn bằng:",
+      "options": [
+        "$2\\sqrt{7}$",
+        "$7\\sqrt{2}$",
+        "$4\\sqrt{7}$",
+        "$14$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{28} = \\sqrt{4 \\cdot 7} = 2\\sqrt{7}$."
+    },
+    {
+      "id": "ai-9.9.2",
+      "badge": "Luyện thêm 2 (NB) - Đưa thừa số ra ngoài căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "question": "Rút gọn biểu thức $\\sqrt{32}$ ta được:",
+      "options": [
+        "$4\\sqrt{2}$",
+        "$2\\sqrt{8}$",
+        "$16\\sqrt{2}$",
+        "$8\\sqrt{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{32} = \\sqrt{16 \\cdot 2} = 4\\sqrt{2}$."
+    },
+    {
+      "id": "ai-9.9.3",
+      "badge": "Luyện thêm 3 (NB) - Đưa thừa số ra ngoài căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "question": "Khai căn $\\sqrt{48}$ ta được kết quả tối giản là:",
+      "options": [
+        "$4\\sqrt{3}$",
+        "$3\\sqrt{4}$",
+        "$16\\sqrt{3}$",
+        "$2\\sqrt{12}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{48} = \\sqrt{16 \\cdot 3} = 4\\sqrt{3}$."
+    },
+    {
+      "id": "ai-9.9.4",
+      "badge": "Luyện thêm 4 (NB) - Đưa thừa số vào trong căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Đưa thừa số vào trong dấu căn của $4\\sqrt{2}$ ta được:",
+      "options": [
+        "$\\sqrt{32}$",
+        "$\\sqrt{16}$",
+        "$\\sqrt{8}$",
+        "$\\sqrt{64}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$4\\sqrt{2} = \\sqrt{4^2 \\cdot 2} = \\sqrt{16 \\cdot 2} = \\sqrt{32}$."
+    },
+    {
+      "id": "ai-9.9.5",
+      "badge": "Luyện thêm 5 (NB) - Đưa thừa số vào trong căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "question": "Đưa thừa số vào trong dấu căn của $5\\sqrt{2}$ ta được:",
+      "options": [
+        "$\\sqrt{50}$",
+        "$\\sqrt{20}$",
+        "$\\sqrt{100}$",
+        "$\\sqrt{25}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$5\\sqrt{2} = \\sqrt{5^2 \\cdot 2} = \\sqrt{25 \\cdot 2} = \\sqrt{50}$."
+    },
+    {
+      "id": "ai-9.9.6",
+      "badge": "Luyện thêm 6 (NB) - Đưa thừa số âm vào trong căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Biểu thức $-4\\sqrt{3}$ khi đưa thừa số vào trong dấu căn là:",
+      "options": [
+        "$-\\sqrt{48}$",
+        "$\\sqrt{48}$",
+        "$-\\sqrt{24}$",
+        "$\\sqrt{-48}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giữ dấu trừ bên ngoài: $-4\\sqrt{3} = -\\sqrt{4^2 \\cdot 3} = -\\sqrt{48}$."
+    },
+    {
+      "id": "ai-9.9.7",
+      "badge": "Luyện thêm 7 (NB) - Trục căn thức mẫu đơn giản",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "question": "Trục căn thức ở mẫu của phân thức $\\frac{6}{\\sqrt{3}}$ ta được:",
+      "options": [
+        "$2\\sqrt{3}$",
+        "$3\\sqrt{2}$",
+        "$\\sqrt{3}$",
+        "$6\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\frac{6}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}$."
+    },
+    {
+      "id": "ai-9.9.8",
+      "badge": "Luyện thêm 8 (NB) - Trục căn thức mẫu đơn giản",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "question": "Phân thức $\\frac{8}{\\sqrt{2}}$ sau khi trục căn thức ở mẫu là:",
+      "options": [
+        "$4\\sqrt{2}$",
+        "$2\\sqrt{2}$",
+        "$8\\sqrt{2}$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\frac{8}{\\sqrt{2}} = \\frac{8\\sqrt{2}}{2} = 4\\sqrt{2}$."
+    },
+    {
+      "id": "ai-9.9.9",
+      "badge": "Luyện thêm 9 (NB) - Khử mẫu biểu thức lấy căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Khử mẫu biểu thức lấy căn của $\\sqrt{\\frac{3}{5}}$ ta được:",
+      "options": [
+        "$\\frac{\\sqrt{15}}{5}$",
+        "$\\frac{\\sqrt{3}}{5}$",
+        "$\\frac{\\sqrt{15}}{25}$",
+        "$\\frac{3}{5}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{\\frac{3}{5}} = \\sqrt{\\frac{3 \\cdot 5}{5^2}} = \\frac{\\sqrt{15}}{5}$."
+    },
+    {
+      "id": "ai-9.9.10",
+      "badge": "Luyện thêm 10 (NB) - Cộng trừ căn đồng dạng cơ bản",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "question": "Giá trị của biểu thức $3\\sqrt{5} + 6\\sqrt{5} - 2\\sqrt{5}$ bằng:",
+      "options": [
+        "$7\\sqrt{5}$",
+        "$9\\sqrt{5}$",
+        "$5\\sqrt{5}$",
+        "$7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3 + 6 - 2)\\sqrt{5} = 7\\sqrt{5}$."
+    },
+    {
+      "id": "ai-9.9.11",
+      "badge": "Luyện thêm 11 (TH) - Rút gọn tổng hai căn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Rút gọn biểu thức $\\sqrt{75} - \\sqrt{27}$ ta được:",
+      "options": [
+        "$2\\sqrt{3}$",
+        "$3\\sqrt{3}$",
+        "$4\\sqrt{3}$",
+        "$\\sqrt{48}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{75} - \\sqrt{27} = 5\\sqrt{3} - 3\\sqrt{3} = 2\\sqrt{3}$."
+    },
+    {
+      "id": "ai-9.9.12",
+      "badge": "Luyện thêm 12 (TH) - Rút gọn tổng ba căn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "question": "Rút gọn biểu thức $M = \\sqrt{20} + \\sqrt{45} - \\sqrt{80}$ ta được:",
+      "options": [
+        "$\\sqrt{5}$",
+        "$2\\sqrt{5}$",
+        "$3\\sqrt{5}$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$M = 2\\sqrt{5} + 3\\sqrt{5} - 4\\sqrt{5} = (2 + 3 - 4)\\sqrt{5} = \\sqrt{5}$."
+    },
+    {
+      "id": "ai-9.9.13",
+      "badge": "Luyện thêm 13 (TH) - So sánh hai số chứa căn",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "question": "So sánh hai số $2\\sqrt{6}$ và $3\\sqrt{3}$:",
+      "options": [
+        "$2\\sqrt{6} < 3\\sqrt{3}$",
+        "$2\\sqrt{6} > 3\\sqrt{3}$",
+        "$2\\sqrt{6} = 3\\sqrt{3}$",
+        "$2\\sqrt{6} \\ge 3\\sqrt{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$2\\sqrt{6} = \\sqrt{24}$, $3\\sqrt{3} = \\sqrt{27}$. Vì $24 < 27$ nên $2\\sqrt{6} < 3\\sqrt{3}$."
+    },
+    {
+      "id": "ai-9.9.14",
+      "badge": "Luyện thêm 14 (TH) - Đưa biến âm ra ngoài căn",
+      "isAiGenerated": true,
+      "source": "Tài liệu chuyên đề Toán 9 HK1",
+      "question": "Với $m < 0$, biểu thức $\\sqrt{16m^2}$ bằng:",
+      "options": [
+        "$-4m$",
+        "$4m$",
+        "$4|m|$",
+        "$-16m$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{16m^2} = 4|m|$. Vì $m < 0$ nên $|m| = -m$, suy ra kết quả là $-4m$."
+    },
+    {
+      "id": "ai-9.9.15",
+      "badge": "Luyện thêm 15 (TH) - Trục căn thức bằng nhân liên hợp",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "question": "Trục căn thức ở mẫu của biểu thức $\\frac{1}{\\sqrt{7} - \\sqrt{6}}$ ta được:",
+      "options": [
+        "$\\sqrt{7} + \\sqrt{6}$",
+        "$\\sqrt{7} - \\sqrt{6}$",
+        "$1$",
+        "$\\frac{\\sqrt{7} + \\sqrt{6}}{13}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nhân cả tử và mẫu với $\\sqrt{7} + \\sqrt{6}$: $\\frac{\\sqrt{7}+\\sqrt{6}}{7-6} = \\sqrt{7}+\\sqrt{6}$."
+    },
+    {
+      "id": "ai-9.9.16",
+      "badge": "Luyện thêm 16 (TH) - Rút gọn biểu thức chứa liên hợp",
+      "isAiGenerated": true,
+      "source": "Đề thi học kì 1 Toán 9",
+      "question": "Giá trị của biểu thức $H = \\frac{2}{\\sqrt{5} + \\sqrt{3}} + \\frac{2}{\\sqrt{5} - \\sqrt{3}}$ bằng:",
+      "options": [
+        "$2\\sqrt{5}$",
+        "$2\\sqrt{3}$",
+        "$4\\sqrt{5}$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\frac{2(\\sqrt{5}-\\sqrt{3})}{2} + \\frac{2(\\sqrt{5}+\\sqrt{3})}{2} = (\\sqrt{5}-\\sqrt{3}) + (\\sqrt{5}+\\sqrt{3}) = 2\\sqrt{5}$."
+    },
+    {
+      "id": "ai-9.9.17",
+      "badge": "Luyện thêm 17 (VD) - Giải phương trình chứa căn",
+      "isAiGenerated": true,
+      "source": "Đề thi khảo sát Toán 9",
+      "question": "Nghiệm của phương trình $\\sqrt{16x} - \\sqrt{4x} = 6$ là:",
+      "options": [
+        "$x = 9$",
+        "$x = 3$",
+        "$x = 36$",
+        "$x = 81$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điều kiện $x \\ge 0$. Ta có $4\\sqrt{x} - 2\\sqrt{x} = 6 \\Leftrightarrow 2\\sqrt{x} = 6 \\Leftrightarrow \\sqrt{x} = 3 \\Leftrightarrow x = 9$."
+    },
+    {
+      "id": "ai-9.9.18",
+      "badge": "Luyện thêm 18 (VD) - Rút gọn phân thức chứa căn",
+      "isAiGenerated": true,
+      "source": "Đề thi tuyển sinh vào 10",
+      "question": "Với $x > 0, x \\ne 9$, rút gọn biểu thức $\\frac{x - 9}{\\sqrt{x} - 3}$ ta được:",
+      "options": [
+        "$\\sqrt{x} + 3$",
+        "$\\sqrt{x} - 3$",
+        "$x + 3$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\frac{(\\sqrt{x}-3)(\\sqrt{x}+3)}{\\sqrt{x}-3} = \\sqrt{x} + 3$."
+    },
+    {
+      "id": "ai-9.9.19",
+      "badge": "Luyện thêm 19 (VD - Thực tế) - Chu vi tam giác có kích thước chứa căn",
+      "isAiGenerated": true,
+      "source": "Bài tập Ứng dụng thực tế",
+      "question": "Một tam giác có ba cạnh dài lần lượt là $\\sqrt{18}\\text{ cm}$, $\\sqrt{50}\\text{ cm}$ và $\\sqrt{98}\\text{ cm}$. Chu vi của tam giác đó bằng:",
+      "options": [
+        "$15\\sqrt{2}\\text{ cm}$",
+        "$16\\sqrt{2}\\text{ cm}$",
+        "$14\\sqrt{2}\\text{ cm}$",
+        "$12\\sqrt{2}\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$C = 3\\sqrt{2} + 5\\sqrt{2} + 7\\sqrt{2} = 15\\sqrt{2}\\text{ cm}$."
+    },
+    {
+      "id": "ai-9.9.20",
+      "badge": "Luyện thêm 20 (VD - Thực tế) - Chiều rộng mảnh đất hình chữ nhật",
+      "isAiGenerated": true,
+      "source": "Toán học và Đời sống",
+      "question": "Một mảnh đất hình chữ nhật có diện tích $S = 60\\text{ m}^2$ và chiều dài $L = 2\\sqrt{15}\\text{ m}$. Chiều rộng của mảnh đất là:",
+      "options": [
+        "$2\\sqrt{15}\\text{ m}$",
+        "$\\sqrt{15}\\text{ m}$",
+        "$4\\sqrt{15}\\text{ m}$",
+        "$30\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chiều rộng $W = \\frac{S}{L} = \\frac{60}{2\\sqrt{15}} = \\frac{30}{\\sqrt{15}} = \\frac{30\\sqrt{15}}{15} = 2\\sqrt{15}\\text{ m}$ (khu đất thực tế là hình vuông)."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-9.9.1",
+      "badge": "Luyện thêm Đ/S 1 - Các phép biến đổi căn thức cơ bản",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "prompt": "Xét tính đúng/sai của các biến đổi sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt{12} = 2\\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{12} = \\sqrt{4 \\cdot 3} = 2\\sqrt{3}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{20} = 4\\sqrt{5}$.",
+          "correctAnswer": false,
+          "explanation": "Sai, $\\sqrt{20} = \\sqrt{4 \\cdot 5} = 2\\sqrt{5}$, không phải $4\\sqrt{5}$."
+        },
+        {
+          "id": "c",
+          "text": "$3\\sqrt{2} = \\sqrt{18}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{3^2 \\cdot 2} = \\sqrt{18}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\frac{2}{\\sqrt{2}} = \\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\frac{2\\sqrt{2}}{2} = \\sqrt{2}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.9.2",
+      "badge": "Luyện thêm Đ/S 2 - Đưa thừa số chứa biến ra ngoài căn",
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "prompt": "Xét tính đúng/sai của các kết quả rút gọn biểu thức có biến:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Với $x \\ge 0$, $\\sqrt{4x} = 2\\sqrt{x}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{4x} = 2\\sqrt{x}$ khi $x \\ge 0$."
+        },
+        {
+          "id": "b",
+          "text": "Với $a < 0$, $\\sqrt{9a^2} = 3a$.",
+          "correctAnswer": false,
+          "explanation": "Sai, $\\sqrt{9a^2} = 3|a| = -3a$ khi $a < 0$."
+        },
+        {
+          "id": "c",
+          "text": "Với $y \\ge 0$, $\\sqrt{25x^2 y} = 5|x|\\sqrt{y}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng với mọi số thực $x$ và $y \\ge 0$."
+        },
+        {
+          "id": "d",
+          "text": "Với $a > 0$, $a\\sqrt{\\frac{1}{a}} = \\sqrt{a}$.",
+          "correctAnswer": true,
+          "explanation": "Đưa $a$ vào trong căn: $\\sqrt{a^2 \\cdot \\frac{1}{a}} = \\sqrt{a}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.9.3",
+      "badge": "Luyện thêm Đ/S 3 - Phép cộng trừ căn thức đồng dạng",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "prompt": "Cho biểu thức $P = \\sqrt{18} + \\sqrt{32} - \\sqrt{50}$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt{18} = 3\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{9 \\cdot 2} = 3\\sqrt{2}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{32} = 4\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{16 \\cdot 2} = 4\\sqrt{2}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt{50} = 5\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{25 \\cdot 2} = 5\\sqrt{2}$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị của biểu thức $P$ bằng $2\\sqrt{2}$.",
+          "correctAnswer": true,
+          "explanation": "$P = 3\\sqrt{2} + 4\\sqrt{2} - 5\\sqrt{2} = 2\\sqrt{2}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.9.4",
+      "badge": "Luyện thêm Đ/S 4 - Trục căn thức ở mẫu dạng liên hợp",
+      "source": "Tài liệu chuyên đề Toán 9 HK1",
+      "prompt": "Cho biểu thức $A = \\frac{2}{\\sqrt{5} - \\sqrt{3}}$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Biểu thức liên hợp của mẫu là $\\sqrt{5} + \\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa biểu thức liên hợp."
+        },
+        {
+          "id": "b",
+          "text": "Tích của mẫu với biểu thức liên hợp bằng $2$.",
+          "correctAnswer": true,
+          "explanation": "$(\\sqrt{5}-\\sqrt{3})(\\sqrt{5}+\\sqrt{3}) = 5 - 3 = 2$."
+        },
+        {
+          "id": "c",
+          "text": "Rút gọn biểu thức $A$ ta được $\\sqrt{5} + \\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "$\\frac{2(\\sqrt{5}+\\sqrt{3})}{2} = \\sqrt{5}+\\sqrt{3}$."
+        },
+        {
+          "id": "d",
+          "text": "$A$ có giá trị bằng $2(\\sqrt{5} - \\sqrt{3})$.",
+          "correctAnswer": false,
+          "explanation": "Sai theo kết quả ở câu c."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.9.5",
+      "badge": "Luyện thêm Đ/S 5 - Phương trình quy về căn thức",
+      "source": "Đề thi thử vào 10 THPT",
+      "prompt": "Cho phương trình $\\sqrt{4x + 20} + \\sqrt{x + 5} = 9$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điều kiện xác định của phương trình là $x \\ge -5$.",
+          "correctAnswer": true,
+          "explanation": "$x + 5 \\ge 0 \\Leftrightarrow x \\ge -5$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{4x + 20} = 2\\sqrt{x + 5}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{4(x+5)} = 2\\sqrt{x+5}$."
+        },
+        {
+          "id": "c",
+          "text": "Phương trình thu gọn thành $3\\sqrt{x + 5} = 9$.",
+          "correctAnswer": true,
+          "explanation": "$2\\sqrt{x+5} + \\sqrt{x+5} = 3\\sqrt{x+5} = 9$."
+        },
+        {
+          "id": "d",
+          "text": "Nghiệm của phương trình là $x = 4$.",
+          "correctAnswer": true,
+          "explanation": "$3\\sqrt{x+5} = 9 \\Leftrightarrow \\sqrt{x+5} = 3 \\Leftrightarrow x + 5 = 9 \\Leftrightarrow x = 4$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.9.6",
+      "badge": "Luyện thêm Đ/S 6 - Bài toán tam giác vuông trong thực tế",
+      "source": "Hình học ứng dụng 9",
+      "prompt": "Một cái thang dài $5\\text{ m}$ dựa vào một bức tường. Chân thang cách chân tường $3\\text{ m}$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Khoảng cách từ đỉnh thang chạm tường đến mặt đất bằng $4\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "$h = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Tam giác tạo bởi thang, tường và mặt đất là tam giác vuông.",
+          "correctAnswer": true,
+          "explanation": "Tường vuông góc với mặt đất nằm ngang."
+        },
+        {
+          "id": "c",
+          "text": "Nếu chân thang kéo lùi ra xa tường thêm $1\\text{ m}$ (thành $4\\text{ m}$) thì đỉnh thang hạ xuống còn $3\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "$h' = \\sqrt{5^2 - 4^2} = \\sqrt{9} = 3\\text{ m}$."
+        },
+        {
+          "id": "d",
+          "text": "Độ cao đỉnh thang chạm tường tỉ lệ thuận với khoảng cách từ chân thang tới tường.",
+          "correctAnswer": false,
+          "explanation": "Sai, khi chân thang ra xa tường thì đỉnh thang hạ thấp xuống, không phải tỉ lệ thuận."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-9.9.1",
+      "badge": "Luyện thêm Trả lời ngắn 1 (NB) - Rút gọn căn thức đồng dạng",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "prompt": "Rút gọn biểu thức $A = \\sqrt{12} + \\sqrt{27}$. Biết kết quả có dạng $k\\sqrt{3}$. Tìm giá trị của $k$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "k=5"
+      ],
+      "explanation": "$A = 2\\sqrt{3} + 3\\sqrt{3} = 5\\sqrt{3} \\implies k = 5$."
+    },
+    {
+      "id": "ai-sa-9.9.2",
+      "badge": "Luyện thêm Trả lời ngắn 2 (NB) - Trục căn thức ở mẫu",
+      "source": "SGK Toán 9 Cánh Diều Bài 3",
+      "prompt": "Trục căn thức ở mẫu của phân thức $\\frac{18}{\\sqrt{6}}$. Kết quả có dạng $a\\sqrt{6}$. Tìm $a$.",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "a=3"
+      ],
+      "explanation": "$\\frac{18}{\\sqrt{6}} = \\frac{18\\sqrt{6}}{6} = 3\\sqrt{6} \\implies a = 3$."
+    },
+    {
+      "id": "ai-sa-9.9.3",
+      "badge": "Luyện thêm Trả lời ngắn 3 (TH) - Đưa thừa số vào trong căn",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 3",
+      "prompt": "Viết biểu thức $6\\sqrt{2}$ dưới dạng $\\sqrt{m}$. Tìm giá trị của số nguyên $m$.",
+      "correctAnswer": "72",
+      "acceptableAnswers": [
+        "72",
+        "m=72"
+      ],
+      "explanation": "$6\\sqrt{2} = \\sqrt{6^2 \\cdot 2} = \\sqrt{36 \\cdot 2} = \\sqrt{72} \\implies m = 72$."
+    },
+    {
+      "id": "ai-sa-9.9.4",
+      "badge": "Luyện thêm Trả lời ngắn 4 (TH) - Tính giá trị rút gọn",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 9",
+      "prompt": "Tính giá trị của biểu thức $B = 2\\sqrt{45} - \\sqrt{20}$. Kết quả có dạng $c\\sqrt{5}$. Tìm $c$.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "c=4"
+      ],
+      "explanation": "$B = 2(3\\sqrt{5}) - 2\\sqrt{5} = 6\\sqrt{5} - 2\\sqrt{5} = 4\\sqrt{5} \\implies c = 4$."
+    },
+    {
+      "id": "ai-sa-9.9.5",
+      "badge": "Luyện thêm Trả lời ngắn 5 (VD) - Tìm x trong phương trình",
+      "source": "Đề thi khảo sát Toán 9",
+      "prompt": "Tìm nghiệm của phương trình $\\sqrt{9x} - \\sqrt{x} = 4$.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "x=4"
+      ],
+      "explanation": "Điều kiện $x \\ge 0$. Ta có $3\\sqrt{x} - \\sqrt{x} = 4 \\Leftrightarrow 2\\sqrt{x} = 4 \\Leftrightarrow \\sqrt{x} = 2 \\Leftrightarrow x = 4$."
+    },
+    {
+      "id": "ai-sa-9.9.6",
+      "badge": "Luyện thêm Trả lời ngắn 6 (VD - Thực tế) - Chu vi hình chữ nhật",
+      "source": "Toán học ứng dụng thực tế",
+      "prompt": "Một biển báo hình chữ nhật có hai cạnh là $\\sqrt{32}\\text{ dm}$ và $\\sqrt{18}\\text{ dm}$. Chu vi biển báo có dạng $k\\sqrt{2}\\text{ dm}$. Tìm giá trị của $k$.",
+      "correctAnswer": "14",
+      "acceptableAnswers": [
+        "14",
+        "k=14"
+      ],
+      "explanation": "Hai cạnh là $4\\sqrt{2}\\text{ dm}$ và $3\\sqrt{2}\\text{ dm}$. Chu vi $C = 2(4\\sqrt{2} + 3\\sqrt{2}) = 2(7\\sqrt{2}) = 14\\sqrt{2}\\text{ dm} \\implies k = 14$."
+    }
+  ]
+},
 };

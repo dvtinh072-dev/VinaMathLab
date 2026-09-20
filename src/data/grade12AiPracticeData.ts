@@ -720,6 +720,9 @@ export const GRADE_12_AI_PRACTICE_DATA: Record<string, Grade12AiPracticePackage>
   // ==========================================
   // BÀI 2: GIÁ TRỊ LỚN NHẤT VÀ GIÁ TRỊ NHỎ NHẤT CỦA HÀM SỐ
   // ==========================================
+  // ==========================================
+  // BÀI 2: GIÁ TRỊ LỚN NHẤT VÀ GIÁ TRỊ NHỎ NHẤT CỦA HÀM SỐ
+  // ==========================================
   "t12-b2-gtln-gtnn": {
   "quizQuestions": [
     {

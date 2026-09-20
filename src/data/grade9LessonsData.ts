@@ -8017,4 +8017,2036 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t9-on-tap-chuong-4": {
+    "id": "t9-on-tap-chuong-4",
+    "lessonNumber": 0,
+    "title": "Ôn tập cuối chương IV",
+    "bookChapter": "Chương IV: Hệ thức lượng trong tam giác vuông (SGK Toán 9 KNTT - Tập 1)",
+    "scenarioTitle": "Hệ thống hóa kiến thức & Luyện 3 đề ôn tập tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+    "scenarioFrames": [],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Tóm tắt lý thuyết: Tỉ số lượng giác của góc nhọn",
+        "points": [
+          "Trong tam giác vuông $ABC$ vuông tại $A$ với góc nhọn $\\widehat{B} = \\alpha$ ($0^\\circ < \\alpha < 90^\\circ$):",
+          "• $\\sin \\alpha = \\frac{\\text{đối}}{\\text{huyền}} = \\frac{AC}{BC}$; $\\cos \\alpha = \\frac{\\text{kề}}{\\text{huyền}} = \\frac{AB}{BC}$.",
+          "• $\\tan \\alpha = \\frac{\\text{đối}}{\\text{kề}} = \\frac{AC}{AB}$; $\\cot \\alpha = \\frac{\\text{kề}}{\\text{đối}} = \\frac{AB}{AC}$.",
+          "• Tính chất quan trọng: $0 < \\sin \\alpha < 1$; $0 < \\cos \\alpha < 1$; $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$; $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$; $\\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$; $\\tan \\alpha \\cdot \\cot \\alpha = 1$.",
+          "• Hai góc phụ nhau: Nếu $\\alpha + \\beta = 90^\\circ$ thì $\\sin \\alpha = \\cos \\beta$; $\\cos \\alpha = \\sin \\beta$; $\\tan \\alpha = \\cot \\beta$; $\\cot \\alpha = \\tan \\beta$."
+        ],
+        "examples": [
+          {
+            "title": "Bảng giá trị tỉ số lượng giác các góc đặc biệt cần nhớ",
+            "problem": "Nêu giá trị các tỉ số lượng giác của các góc $30^\\circ, 45^\\circ, 60^\\circ$.",
+            "solution": "• $30^\\circ$: $\\sin 30^\\circ = \\frac{1}{2}, \\cos 30^\\circ = \\frac{\\sqrt{3}}{2}, \\tan 30^\\circ = \\frac{\\sqrt{3}}{3}, \\cot 30^\\circ = \\sqrt{3}$.\\n• $45^\\circ$: $\\sin 45^\\circ = \\cos 45^\\circ = \\frac{\\sqrt{2}}{2}, \\tan 45^\\circ = \\cot 45^\\circ = 1$.\\n• $60^\\circ$: $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}, \\cos 60^\\circ = \\frac{1}{2}, \\tan 60^\\circ = \\sqrt{3}, \\cot 60^\\circ = \\frac{\\sqrt{3}}{3}$."
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "Tóm tắt lý thuyết: Hệ thức giữa cạnh và góc trong tam giác vuông",
+        "points": [
+          "Cho tam giác $ABC$ vuông tại $A$ ($a = BC, b = AC, c = AB$):",
+          "• Hệ thức với cạnh huyền: $b = a \\cdot \\sin B = a \\cdot \\cos C$; $c = a \\cdot \\sin C = a \\cdot \\cos B$.",
+          "• Hệ thức giữa hai cạnh góc vuông: $b = c \\cdot \\tan B = c \\cdot \\cot C$; $c = b \\cdot \\tan C = b \\cdot \\cot B$.",
+          "• Khẩu quyết: Cạnh góc vuông = Huyền nhân Sin đối = Huyền nhân Cos kề; Cạnh góc vuông này = Cạnh góc vuông kia nhân Tan đối = Cạnh góc vuông kia nhân Cot kề."
+        ],
+        "examples": [
+          {
+            "title": "Sơ đồ tam giác vuông chuẩn hóa",
+            "problem": "Cho tam giác vuông $ABC$ ($A = 90^\\circ$), minh họa các yếu tố cạnh và góc.",
+            "solution": "Tam giác vuông $ABC$ có cạnh huyền $a$, các cạnh góc vuông $b, c$ và hai góc nhọn $B, C$ phụ nhau.",
+            "svgDiagram": "<svg viewBox=\"0 0 360 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-sm mx-auto my-2 select-none rounded-lg border border-slate-700 bg-slate-900\">\n  <polygon points=\"60,160 300,160 60,40\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <rect x=\"60\" y=\"142\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2\" />\n  <text x=\"42\" y=\"172\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <text x=\"310\" y=\"165\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <text x=\"50\" y=\"32\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <text x=\"38\" y=\"105\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">b</text>\n  <text x=\"180\" y=\"182\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\">c</text>\n  <text x=\"190\" y=\"95\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-26 190 95)\">a</text>\n</svg>"
+          }
+        ]
+      }
+    ],
+    "youtubeVideoId": "t9_ot4_video",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và giải đề thi cuối chương IV - Hệ thức lượng tam giác vuông - Toán 9 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "t9_ot4_video1",
+        "title": "Tiết 1: Ôn tập tỉ số lượng giác và hệ thức giữa cạnh và góc trong tam giác vuông"
+      },
+      {
+        "id": "t9_ot4_video2",
+        "title": "Tiết 2: Phương pháp giải các bài toán thực tế đo đạc góc nâng, góc hạ"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-9.ot4.1",
+        "title": "Ví dụ 1: Tính giá trị biểu thức lượng giác phụ nhau",
+        "question": "Giá trị của biểu thức $P = \\sin^2 25^\\circ + \\sin^2 65^\\circ + \\tan 30^\\circ \\cdot \\cot 30^\\circ$ bằng:",
+        "options": [
+          "2",
+          "1",
+          "0",
+          "\\sqrt{3}"
+        ],
+        "correctIndex": 0,
+        "explanation": "Do $25^\\circ + 65^\\circ = 90^\\circ$ nên $\\sin 65^\\circ = \\cos 25^\\circ$. Biểu thức trở thành $\\sin^2 25^\\circ + \\cos^2 25^\\circ + 1 = 1 + 1 = 2$."
+      },
+      {
+        "id": "vq-9.ot4.2",
+        "title": "Ví dụ 2: Tính cạnh góc vuông theo cạnh huyền",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 12\\text{ cm}, \\widehat{C} = 30^\\circ$. Độ dài cạnh $AB$ là:",
+        "options": [
+          "6 cm",
+          "6\\sqrt{3} cm",
+          "12\\sqrt{3} cm",
+          "4 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $AB = BC \\cdot \\sin C = 12 \\cdot \\sin 30^\\circ = 12 \\cdot 0,5 = 6\\text{ cm}$."
+      },
+      {
+        "id": "vq-9.ot4.3",
+        "title": "Ví dụ 3: Tính cạnh góc vuông theo tang",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 8\\text{ cm}, \\widehat{B} = 45^\\circ$. Độ dài cạnh $AC$ là:",
+        "options": [
+          "8 cm",
+          "8\\sqrt{2} cm",
+          "4\\sqrt{2} cm",
+          "16 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $AC = AB \\cdot \\tan 45^\\circ = 8 \\cdot 1 = 8\\text{ cm}$."
+      },
+      {
+        "id": "vq-9.ot4.4",
+        "title": "Ví dụ 4: Bài toán thực tế đo bóng tòa nhà",
+        "question": "Một tòa nhà có bóng trên mặt đất dài $30\\text{ m}$ khi góc nâng của mặt trời là $60^\\circ$. Chiều cao của tòa nhà là:",
+        "options": [
+          "30\\sqrt{3} m",
+          "10\\sqrt{3} m",
+          "30 m",
+          "60 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiều cao tòa nhà: $h = 30 \\cdot \\tan 60^\\circ = 30\\sqrt{3}\\text{ m}$."
+      }
+    ],
+    "tips": [
+      "Luôn kiểm tra máy tính cầm tay đang ở chế độ DEG (chữ D) trước khi bấm các tỉ số lượng giác.",
+      "Đối với hai góc phụ nhau: Sin góc này bằng Cos góc kia, Tan góc này bằng Cot góc kia.",
+      "Cạnh góc vuông = Huyền nhân Sin đối = Huyền nhân Cos kề; Cạnh góc vuông này = Cạnh góc vuông kia nhân Tan đối = Cạnh góc vuông kia nhân Cot kề.",
+      "Bài toán giác kế: Chiều cao toàn phần = Chiều cao tính được qua góc nâng ($d \\cdot \\tan\\alpha$) + Chiều cao giác kế ($h_0$)."
+    ],
+    "traps": [
+      "Bẫy nhầm góc đối và góc kề khi hoán đổi giữa hai góc nhọn trong tam giác vuông.",
+      "Bẫy để máy tính ở chế độ Radian (R) làm sai toàn bộ kết quả góc và cạnh.",
+      "Bẫy quên cộng chiều cao người quan sát/giác kế trong bài toán đo chiều cao thực tế.",
+      "Bẫy góc hạ: Góc hạ là góc tạo bởi đường ngắm nhìn xuống và tia nằm ngang, bằng góc nâng từ điểm dưới nhìn lên."
+    ],
+    "quizQuestions": [
+      {
+        "id": "q-9.ot4.1",
+        "badge": "Câu 1 (NB) - Định nghĩa Sin của góc nhọn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$. Tỉ số lượng giác $\\sin B$ bằng:",
+        "options": [
+          "$\\frac{AC}{BC}$",
+          "$\\frac{AB}{BC}$",
+          "$\\frac{AC}{AB}$",
+          "$\\frac{AB}{AC}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa: $\\sin B = \\frac{\\text{đối}}{\\text{huyền}} = \\frac{AC}{BC}$."
+      },
+      {
+        "id": "q-9.ot4.2",
+        "badge": "Câu 2 (NB) - Định nghĩa Tang của góc nhọn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$. Tỉ số lượng giác $\\tan B$ bằng:",
+        "options": [
+          "$\\frac{AC}{AB}$",
+          "$\\frac{AB}{AC}$",
+          "$\\frac{AC}{BC}$",
+          "$\\frac{AB}{BC}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tang của góc $B$ là tỉ số giữa cạnh đối và cạnh kề: $\\tan B = \\frac{AC}{AB}$."
+      },
+      {
+        "id": "q-9.ot4.3",
+        "badge": "Câu 3 (NB) - Hệ thức góc phụ nhau",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 66)",
+        "question": "Biết hai góc nhọn $\\alpha$ và $\\beta$ có $\\alpha + \\beta = 90^\\circ$. Khẳng định nào sau đây là đúng?",
+        "options": [
+          "$\\sin \\alpha = \\cos \\beta$",
+          "$\\sin \\alpha = \\sin \\beta$",
+          "$\\tan \\alpha = \\tan \\beta$",
+          "$\\cos \\alpha = -\\cos \\beta$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai góc phụ nhau thì sin góc này bằng côsin góc kia: $\\sin \\alpha = \\cos \\beta$."
+      },
+      {
+        "id": "q-9.ot4.4",
+        "badge": "Câu 4 (NB) - Hệ thức cạnh góc vuông theo cạnh huyền",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 74)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $a$ và các cạnh góc vuông $b, c$. Hệ thức nào sau đây đúng?",
+        "options": [
+          "$b = a \\cdot \\sin B$",
+          "$b = a \\cdot \\tan B$",
+          "$b = a \\cdot \\cos B$",
+          "$b = a \\cdot \\cot C$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh góc vuông bằng cạnh huyền nhân sin góc đối: $b = a \\cdot \\sin B$."
+      },
+      {
+        "id": "q-9.ot4.5",
+        "badge": "Câu 5 (NB) - Hệ thức giữa hai cạnh góc vuông",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+        "question": "Trong tam giác $ABC$ vuông tại $A$, cạnh góc vuông $b$ được tính theo cạnh $c$ và góc đối $B$ bởi:",
+        "options": [
+          "$b = c \\cdot \\tan B$",
+          "$b = c \\cdot \\cot B$",
+          "$b = c \\cdot \\sin B$",
+          "$b = c \\cdot \\cos B$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh góc vuông bằng cạnh góc vuông kia nhân với tang của góc đối: $b = c \\cdot \\tan B$."
+      },
+      {
+        "id": "q-9.ot4.6",
+        "badge": "Câu 6 (NB) - Giá trị sin 45 độ",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 61)",
+        "question": "Giá trị của $\\sin 45^\\circ$ bằng:",
+        "options": [
+          "$\\frac{\\sqrt{2}}{2}$",
+          "$\\frac{1}{2}$",
+          "$\\frac{\\sqrt{3}}{2}$",
+          "$1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo bảng lượng giác các góc đặc biệt, $\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}$."
+      },
+      {
+        "id": "q-9.ot4.7",
+        "badge": "Câu 7 (NB) - Giá trị tang 60 độ",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+        "question": "Giá trị của $\\tan 60^\\circ$ bằng:",
+        "options": [
+          "$\\sqrt{3}$",
+          "$\\frac{\\sqrt{3}}{3}$",
+          "$1$",
+          "$\\frac{1}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo bảng góc đặc biệt: $\\tan 60^\\circ = \\sqrt{3}$."
+      },
+      {
+        "id": "q-9.ot4.8",
+        "badge": "Câu 8 (NB) - Hệ thức cơ bản sin bình cộng cos bình",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+        "question": "Với mọi góc nhọn $\\alpha$, giá trị của $\\sin^2 \\alpha + \\cos^2 \\alpha$ luôn bằng:",
+        "options": [
+          "1",
+          "0",
+          "2",
+          "\\tan \\alpha"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đây là hệ thức lượng giác cơ bản: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$."
+      },
+      {
+        "id": "q-9.ot4.9",
+        "badge": "Câu 9 (TH) - Tính cạnh huyền từ cạnh góc vuông và góc 30 độ",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có $AC = 7\\text{ cm}, \\widehat{B} = 30^\\circ$. Độ dài cạnh huyền $BC$ bằng:",
+        "options": [
+          "14 cm",
+          "7\\sqrt{3} cm",
+          "14\\sqrt{3} cm",
+          "3,5 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\sin B = \\frac{AC}{BC} \\Rightarrow BC = \\frac{AC}{\\sin 30^\\circ} = \\frac{7}{0,5} = 14\\text{ cm}$."
+      },
+      {
+        "id": "q-9.ot4.10",
+        "badge": "Câu 10 (TH) - Tính cạnh góc vuông theo côsin",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 106)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 18\\text{ cm}, \\widehat{B} = 60^\\circ$. Cạnh góc vuông $AB$ có độ dài là:",
+        "options": [
+          "9 cm",
+          "9\\sqrt{3} cm",
+          "18\\sqrt{3} cm",
+          "6 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh $AB$ kề góc $60^\\circ$ nên $AB = BC \\cdot \\cos 60^\\circ = 18 \\cdot 0,5 = 9\\text{ cm}$."
+      },
+      {
+        "id": "q-9.ot4.11",
+        "badge": "Câu 11 (TH) - Tính góc nhọn tam giác vuông 3-4-5",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 80)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3\\text{ cm}, AC = 4\\text{ cm}$. Số đo góc $\\widehat{B}$ (làm tròn đến độ) là:",
+        "options": [
+          "53°",
+          "37°",
+          "45°",
+          "60°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\tan B = \\frac{AC}{AB} = \\frac{4}{3} \\approx 1,3333 \\Rightarrow \\widehat{B} \\approx 53^\\circ$."
+      },
+      {
+        "id": "q-9.ot4.12",
+        "badge": "Câu 12 (TH) - Rút gọn biểu thức lượng giác phụ nhau",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 101)",
+        "question": "Giá trị của biểu thức $A = \\sin 40^\\circ - \\cos 50^\\circ + \\tan 20^\\circ \\cdot \\tan 70^\\circ$ bằng:",
+        "options": [
+          "1",
+          "0",
+          "2",
+          "-1"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $40^\\circ + 50^\\circ = 90^\\circ$ nên $\\cos 50^\\circ = \\sin 40^\\circ \\Rightarrow \\sin 40^\\circ - \\cos 50^\\circ = 0$. Vì $20^\\circ + 70^\\circ = 90^\\circ$ nên $\\tan 70^\\circ = \\cot 20^\\circ \\Rightarrow \\tan 20^\\circ \\cdot \\tan 70^\\circ = 1$. Vậy $A = 1$."
+      },
+      {
+        "id": "q-9.ot4.13",
+        "badge": "Câu 13 (TH) - Tính diện tích tam giác vuông",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 10\\text{ cm}, \\widehat{C} = 45^\\circ$. Diện tích của tam giác $ABC$ là:",
+        "options": [
+          "25 cm²",
+          "50 cm²",
+          "25\\sqrt{2} cm²",
+          "100 cm²"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tam giác vuông cân có $AB = AC = 10 \\cdot \\sin 45^\\circ = 5\\sqrt{2}\\text{ cm}$. Diện tích: $S = \\frac{1}{2} (5\\sqrt{2})^2 = 25\\text{ cm}^2$."
+      },
+      {
+        "id": "q-9.ot4.14",
+        "badge": "Câu 14 (TH) - Tính đường cao trong tam giác vuông",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 107)",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}, AC = 8\\text{ cm}$. Độ dài đường cao $AH$ là:",
+        "options": [
+          "4,8 cm",
+          "5 cm",
+          "3,6 cm",
+          "6,4 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh huyền $BC = 10\\text{ cm}$. Đường cao $AH = \\frac{AB \\cdot AC}{BC} = \\frac{6 \\cdot 8}{10} = 4,8\\text{ cm}$."
+      },
+      {
+        "id": "q-9.ot4.15",
+        "badge": "Câu 15 (VD - Thực tế) - Đặt thang an toàn vào tường",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+        "question": "Một chiếc thang dài $3,5\\text{ m}$ dựng tựa vào tường thẳng đứng. Để đảm bảo an toàn, góc tạo bởi thang và mặt đất cần là $68^\\circ$. Khoảng cách từ chân thang đến chân tường là bao nhiêu mét (làm tròn đến hàng phần trăm)?",
+        "options": [
+          "1,31 m",
+          "3,25 m",
+          "1,45 m",
+          "1,18 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khoảng cách từ chân thang đến tường là cạnh kề góc $68^\\circ$: $d = 3,5 \\cdot \\cos 68^\\circ \\approx 3,5 \\cdot 0,3746 = 1,311 \\approx 1,31\\text{ m}$."
+      },
+      {
+        "id": "q-9.ot4.16",
+        "badge": "Câu 16 (VD - Thực tế) - Độ cao máy bay cất cánh",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 130)",
+        "question": "Một chiếc máy bay cất cánh theo góc nghiêng $22^\\circ$ so với mặt phẳng nằm ngang với tốc độ không đổi $300\\text{ km/h}$. Sau 2 phút, máy bay đạt độ cao bao nhiêu mét so với mặt đất (làm tròn đến hàng đơn vị)?",
+        "options": [
+          "3746 m",
+          "4000 m",
+          "3500 m",
+          "4210 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Quãng đường bay trong 2 phút ($2/60\\text{ h}$): $s = 300 \\cdot \\frac{2}{60} = 10\\text{ km} = 10\\,000\\text{ m}$. Độ cao đạt được: $h = 10\\,000 \\cdot \\sin 22^\\circ \\approx 10\\,000 \\cdot 0,3746 = 3746\\text{ m}$."
+      },
+      {
+        "id": "q-9.ot4.17",
+        "badge": "Câu 17 (VD - Thực tế) - Khoảng cách tàu cứu hộ từ hải đăng",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 131)",
+        "question": "Một người đứng trên ngọn hải đăng cao $55\\text{ m}$ nhìn thấy một chiếc tàu với góc hạ $28^\\circ$. Khoảng cách từ tàu đến chân ngọn hải đăng là bao nhiêu mét (làm tròn đến hàng phần mười)?",
+        "options": [
+          "103,4 m",
+          "112,5 m",
+          "98,2 m",
+          "120,0 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khoảng cách từ tàu đến chân hải đăng: $d = \\frac{55}{\\tan 28^\\circ} \\approx \\frac{55}{0,5317} \\approx 103,44 \\approx 103,4\\text{ m}$."
+      },
+      {
+        "id": "q-9.ot4.18",
+        "badge": "Câu 18 (VD - Thực tế) - Đo chiều cao tháp bằng giác kế",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+        "question": "Một người đặt giác kế cao $1,6\\text{ m}$ cách chân ngọn tháp $60\\text{ m}$ để ngắm đỉnh tháp với góc nâng $34^\\circ$. Chiều cao của tháp là bao nhiêu mét (làm tròn đến hàng phần mười)?",
+        "options": [
+          "42,1 m",
+          "40,5 m",
+          "44,2 m",
+          "38,9 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Độ cao từ ống ngắm lên đỉnh tháp: $h_1 = 60 \\cdot \\tan 34^\\circ \\approx 60 \\cdot 0,6745 = 40,47\\text{ m}$. Chiều cao của tháp: $h = 40,47 + 1,6 = 42,07 \\approx 42,1\\text{ m}$."
+      },
+      {
+        "id": "q-9.ot4.19",
+        "badge": "Câu 19 (VD - Thực tế) - Độ dốc xe chạy lên cầu vượt",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 72)",
+        "question": "Một đoạn dốc lên cầu vượt dài $150\\text{ m}$ và có đỉnh dốc cao $7,5\\text{ m}$ so với mặt đường. Góc nghiêng của con dốc so với phương nằm ngang là bao nhiêu (làm tròn đến độ)?",
+        "options": [
+          "3°",
+          "5°",
+          "2°",
+          "4°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\sin \\alpha = \\frac{7,5}{150} = 0,05 \\Rightarrow \\alpha \\approx 2^\\circ 52' \\approx 3^\\circ$."
+      },
+      {
+        "id": "q-9.ot4.20",
+        "badge": "Câu 20 (VD - Thực tế) - Thuyền qua sông bị nước đẩy xiên",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 131)",
+        "question": "Một con sông rộng $90\\text{ m}$. Một chiếc đò chèo qua sông bị dòng nước cuốn trôi lệch theo phương xiên tạo với bờ một góc $55^\\circ$. Chiều dài đường đi thực tế của chiếc đò là bao nhiêu mét (làm tròn đến hàng đơn vị)?",
+        "options": [
+          "110 m",
+          "120 m",
+          "105 m",
+          "95 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bề rộng sông là cạnh đối diện góc $55^\\circ$: $\\sin 55^\\circ = \\frac{90}{s} \\Rightarrow s = \\frac{90}{\\sin 55^\\circ} \\approx \\frac{90}{0,8192} \\approx 109,87 \\approx 110\\text{ m}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-9.ot4.1",
+        "badge": "Đúng/Sai 1 (NB) - Định nghĩa và tính chất tỉ số lượng giác",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+        "prompt": "Cho góc nhọn $\\alpha$ ($0^\\circ < \\alpha < 90^\\circ$). Xét tính đúng/sai của các hệ thức sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$0 < \\sin \\alpha < 1$ và $0 < \\cos \\alpha < 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì trong tam giác vuông cạnh góc vuông luôn nhỏ hơn cạnh huyền."
+          },
+          {
+            "id": "b",
+            "text": "$\\sin^2 \\alpha + \\cos^2 \\alpha = 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng theo định lý Pythagore: $\\frac{b^2}{a^2} + \\frac{c^2}{a^2} = \\frac{a^2}{a^2} = 1$."
+          },
+          {
+            "id": "c",
+            "text": "$\\tan \\alpha \\cdot \\cot \\alpha = 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $\\tan \\alpha = \\frac{b}{c}$ và $\\cot \\alpha = \\frac{c}{b}$."
+          },
+          {
+            "id": "d",
+            "text": "$\\tan \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, phải là $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.2",
+        "badge": "Đúng/Sai 2 (NB) - Tỉ số lượng giác góc phụ nhau",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+        "prompt": "Cho hai góc nhọn $\\alpha$ và $\\beta$ phụ nhau ($\\alpha + \\beta = 90^\\circ$). Xét tính đúng/sai của các mệnh đề sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$\\sin \\alpha = \\cos \\beta$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, sin góc này bằng côsin góc kia."
+          },
+          {
+            "id": "b",
+            "text": "$\\tan \\alpha = \\cot \\beta$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tang góc này bằng côtang góc kia."
+          },
+          {
+            "id": "c",
+            "text": "$\\sin^2 \\alpha + \\sin^2 \\beta = 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $\\sin \\beta = \\cos \\alpha$ nên $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$."
+          },
+          {
+            "id": "d",
+            "text": "$\\tan \\alpha \\cdot \\tan \\beta = -1$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\tan \\beta = \\cot \\alpha$ nên $\\tan \\alpha \\cdot \\cot \\alpha = 1$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.3",
+        "badge": "Đúng/Sai 3 (NB) - Hệ thức cạnh và góc trong tam giác vuông",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 74)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $a$, các cạnh góc vuông $b, c$. Xét tính đúng/sai của các hệ thức:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$b = a \\cdot \\sin B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, cạnh góc vuông bằng cạnh huyền nhân sin góc đối."
+          },
+          {
+            "id": "b",
+            "text": "$c = a \\cdot \\cos B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, cạnh góc vuông bằng cạnh huyền nhân cos góc kề."
+          },
+          {
+            "id": "c",
+            "text": "$b = c \\cdot \\tan C$.",
+            "correctAnswer": false,
+            "explanation": "Sai, phải là $b = c \\cdot \\tan B$ hoặc $b = c \\cdot \\cot C$."
+          },
+          {
+            "id": "d",
+            "text": "$c = b \\cdot \\cot B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, cạnh góc vuông bằng cạnh góc vuông kia nhân cot góc kề."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.4",
+        "badge": "Đúng/Sai 4 (NB) - Giá trị lượng giác góc đặc biệt",
+        "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+        "prompt": "Xét tính đúng/sai của các giá trị lượng giác sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$\\sin 30^\\circ = \\cos 60^\\circ = 0,5$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là cặp giá trị góc đặc biệt phụ nhau."
+          },
+          {
+            "id": "b",
+            "text": "$\\tan 45^\\circ = 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì tam giác vuông cân có hai cạnh góc vuông bằng nhau."
+          },
+          {
+            "id": "c",
+            "text": "$\\sin 60^\\circ = \\frac{\\sqrt{2}}{2}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$."
+          },
+          {
+            "id": "d",
+            "text": "$\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.5",
+        "badge": "Đúng/Sai 5 (TH) - Giải tam giác vuông ABC có cạnh góc vuông 6 và 8",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}, AC = 8\\text{ cm}$. Kẻ đường cao $AH$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Cạnh huyền $BC = 10\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $BC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+          },
+          {
+            "id": "b",
+            "text": "Đường cao $AH = 4,8\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $AH = \\frac{6 \\times 8}{10} = 4,8\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Góc nhọn $\\widehat{B} > 45^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $AC = 8 > AB = 6 \\Rightarrow \\widehat{B} > \\widehat{C} \\Rightarrow \\widehat{B} > 45^\\circ$."
+          },
+          {
+            "id": "d",
+            "text": "$\\sin B = 0,6$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\sin B = \\frac{AC}{BC} = \\frac{8}{10} = 0,8$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.6",
+        "badge": "Đúng/Sai 6 (TH) - Tam giác vuông có một góc 30 độ",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 12\\text{ cm}, \\widehat{C} = 30^\\circ$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Độ dài cạnh $AB = 6\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $AB = BC \\cdot \\sin 30^\\circ = 12 \\cdot 0,5 = 6\\text{ cm}$."
+          },
+          {
+            "id": "b",
+            "text": "Độ dài cạnh $AC = 6\\sqrt{3}\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $AC = BC \\cdot \\cos 30^\\circ = 12 \\cdot \\frac{\\sqrt{3}}{2} = 6\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Diện tích tam giác $ABC$ bằng $18\\sqrt{3}\\text{ cm}^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $S = \\frac{1}{2} \\cdot 6 \\cdot 6\\sqrt{3} = 18\\sqrt{3}\\text{ cm}^2$."
+          },
+          {
+            "id": "d",
+            "text": "Góc $\\widehat{B} = 45^\\circ$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\widehat{B} = 90^\\circ - 30^\\circ = 60^\\circ$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.7",
+        "badge": "Đúng/Sai 7 (TH) - Tam giác nhọn và đường cao",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 108)",
+        "prompt": "Cho tam giác nhọn $ABC$ có hai cạnh $AB = 8\\text{ cm}, AC = 10\\text{ cm}$ và $\\widehat{A} = 60^\\circ$. Kẻ đường cao $BH \\perp AC$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đoạn thẳng $AH = 4\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì tam giác $ABH$ vuông tại $H$ có $\\widehat{A} = 60^\\circ$: $AH = 8 \\cdot \\cos 60^\\circ = 4\\text{ cm}$."
+          },
+          {
+            "id": "b",
+            "text": "Đường cao $BH = 4\\sqrt{3}\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $BH = 8 \\cdot \\sin 60^\\circ = 4\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Đoạn thẳng $HC = 6\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $HC = AC - AH = 10 - 4 = 6\\text{ cm}$."
+          },
+          {
+            "id": "d",
+            "text": "Độ dài cạnh $BC = 2\\sqrt{21}\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tam giác $BHC$ vuông tại $H$: $BC = \\sqrt{BH^2 + HC^2} = \\sqrt{(4\\sqrt{3})^2 + 6^2} = \\sqrt{48 + 36} = \\sqrt{84} = 2\\sqrt{21}\\text{ cm}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.8",
+        "badge": "Đúng/Sai 8 (VD - Thực tế) - Đặt thang an toàn",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+        "prompt": "Một chiếc thang dài $4,5\\text{ m}$ tựa vào tường nhà. Để đảm bảo an toàn, góc nghiêng của thang so với mặt đất phải nằm trong khoảng từ $65^\\circ$ đến $75^\\circ$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khi góc đặt thang là $70^\\circ$, thang thỏa mãn quy chuẩn an toàn.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $65^\\circ \\le 70^\\circ \\le 75^\\circ$."
+          },
+          {
+            "id": "b",
+            "text": "Khi góc nghiêng là $70^\\circ$, chân thang cách tường xấp xỉ $1,54\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $d = 4,5 \\cdot \\cos 70^\\circ \\approx 4,5 \\cdot 0,3420 = 1,539 \\approx 1,54\\text{ m}$."
+          },
+          {
+            "id": "c",
+            "text": "Khi góc nghiêng là $70^\\circ$, đầu thang chạm tường ở độ cao lớn hơn $4,3\\text{ m}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $h = 4,5 \\cdot \\sin 70^\\circ \\approx 4,5 \\cdot 0,9397 = 4,23\\text{ m} < 4,3\\text{ m}$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu chân thang cách tường $2,25\\text{ m}$ thì góc đặt thang bằng $60^\\circ$, không an toàn.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì $\\cos\\alpha = \\frac{2,25}{4,5} = 0,5 \\Rightarrow \\alpha = 60^\\circ < 65^\\circ$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.9",
+        "badge": "Đúng/Sai 9 (VD - Thực tế) - Tàu ngầm lặn biển",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 111)",
+        "prompt": "Một tàu ngầm di chuyển theo phương nghiêng lặn xuống biển tạo với mặt nước một góc $20^\\circ$ với tốc độ không đổi $18\\text{ km/h}$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Vận tốc của tàu ngầm đổi ra đơn vị mét trên giây là $5\\text{ m/s}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $18\\text{ km/h} = \\frac{18000}{3600} = 5\\text{ m/s}$."
+          },
+          {
+            "id": "b",
+            "text": "Sau 1 phút lặn, quãng đường tàu di chuyển theo đường nghiêng là $300\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $s = 5 \\times 60 = 300\\text{ m}$."
+          },
+          {
+            "id": "c",
+            "text": "Sau 1 phút, độ sâu của tàu ngầm so với mặt nước biển lớn hơn $110\\text{ m}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, độ sâu $h = 300 \\cdot \\sin 20^\\circ \\approx 300 \\cdot 0,3420 = 102,6\\text{ m} < 110\\text{ m}$."
+          },
+          {
+            "id": "d",
+            "text": "Để đạt độ sâu $200\\text{ m}$, tàu ngầm cần di chuyển một quãng đường nghiêng khoảng gần $585\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $s = \\frac{200}{\\sin 20^\\circ} \\approx \\frac{200}{0,3420} \\approx 584,8\\text{ m} \\approx 585\\text{ m}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-9.ot4.10",
+        "badge": "Đúng/Sai 10 (VD - Thực tế) - Đo khoảng cách hai bờ sông",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+        "prompt": "Để đo khoảng cách giữa hai địa điểm $A$ và $B$ ở hai bên bờ sông, người ta chọn điểm $C$ cùng bên bờ sông với $B$ sao cho $AB \\perp BC$. Đo được $BC = 60\\text{ m}$ và dùng giác kế đo được góc $\\widehat{ACB} = 40^\\circ$.",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khoảng cách $AB$ tính bằng công thức $AB = BC \\cdot \\tan 40^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì tam giác $ABC$ vuông tại $B$ nên $AB = BC \\cdot \\tan C$."
+          },
+          {
+            "id": "b",
+            "text": "Khoảng cách $AB$ xấp xỉ bằng $50,3\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $AB = 60 \\cdot \\tan 40^\\circ \\approx 60 \\cdot 0,8391 = 50,35\\text{ m} \\approx 50,3\\text{ m}$."
+          },
+          {
+            "id": "c",
+            "text": "Khoảng cách từ $A$ đến $C$ theo đường chim bay nhỏ hơn $75\\text{ m}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $AC = \\frac{60}{\\cos 40^\\circ} \\approx \\frac{60}{0,7660} \\approx 78,33\\text{ m} > 75\\text{ m}$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu đo được góc $\\widehat{ACB} = 45^\\circ$ thì khoảng cách $AB = 60\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng vì khi đó tam giác $ABC$ vuông cân tại $B$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-9.ot4.1",
+        "badge": "Trả lời ngắn 1 (NB) - Tính cạnh góc vuông theo cạnh huyền",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 24\\text{ cm}$ và $\\widehat{B} = 30^\\circ$. Tính độ dài cạnh góc vuông $AC$ theo đơn vị centimet.",
+        "correctAnswer": "12",
+        "acceptableAnswers": [
+          "12",
+          "12 cm",
+          "12cm"
+        ],
+        "explanation": "Ta có $AC = BC \\cdot \\sin 30^\\circ = 24 \\cdot 0,5 = 12\\text{ cm}$."
+      },
+      {
+        "id": "sa-9.ot4.2",
+        "badge": "Trả lời ngắn 2 (NB) - Tính cạnh góc vuông tam giác vuông cân",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 105)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 15\\text{ cm}$ và $\\widehat{C} = 45^\\circ$. Tính độ dài cạnh $AC$ theo đơn vị centimet.",
+        "correctAnswer": "15",
+        "acceptableAnswers": [
+          "15",
+          "15 cm",
+          "15cm"
+        ],
+        "explanation": "Tam giác vuông cân nên $AC = AB = 15\\text{ cm}$."
+      },
+      {
+        "id": "sa-9.ot4.3",
+        "badge": "Trả lời ngắn 3 (NB) - Giá trị biểu thức lượng giác cơ bản",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+        "prompt": "Tính giá trị của biểu thức $M = \\sin^2 32^\\circ + \\sin^2 58^\\circ + \\tan 45^\\circ$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2"
+        ],
+        "explanation": "Vì $32^\\circ + 58^\\circ = 90^\\circ$ nên $\\sin 58^\\circ = \\cos 32^\\circ$. Biểu thức trở thành: $\\sin^2 32^\\circ + \\cos^2 32^\\circ + \\tan 45^\\circ = 1 + 1 = 2$."
+      },
+      {
+        "id": "sa-9.ot4.4",
+        "badge": "Trả lời ngắn 4 (NB) - Tính cạnh góc vuông theo tang",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 106)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 4\\text{ cm}$ và $\\tan B = 3$. Tính độ dài cạnh $AC$ theo đơn vị centimet.",
+        "correctAnswer": "12",
+        "acceptableAnswers": [
+          "12",
+          "12 cm",
+          "12cm"
+        ],
+        "explanation": "Ta có $AC = AB \\cdot \\tan B = 4 \\cdot 3 = 12\\text{ cm}$."
+      },
+      {
+        "id": "sa-9.ot4.5",
+        "badge": "Trả lời ngắn 5 (TH) - Tính cạnh kề góc 60 độ",
+        "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 20\\text{ cm}$ và $\\widehat{C} = 60^\\circ$. Tính độ dài cạnh góc vuông $AC$ theo đơn vị centimet.",
+        "correctAnswer": "10",
+        "acceptableAnswers": [
+          "10",
+          "10 cm",
+          "10cm"
+        ],
+        "explanation": "Cạnh $AC$ kề góc $C$: $AC = BC \\cdot \\cos 60^\\circ = 20 \\cdot 0,5 = 10\\text{ cm}$."
+      },
+      {
+        "id": "sa-9.ot4.6",
+        "badge": "Trả lời ngắn 6 (TH) - Đường cao tam giác vuông",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 107)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 15\\text{ cm}$ và $AC = 20\\text{ cm}$. Tính độ dài đường cao $AH$ hạ từ đỉnh $A$ xuống cạnh huyền theo đơn vị centimet.",
+        "correctAnswer": "12",
+        "acceptableAnswers": [
+          "12",
+          "12 cm",
+          "12cm"
+        ],
+        "explanation": "Cạnh huyền $BC = \\sqrt{15^2 + 20^2} = 25\\text{ cm}$. Đường cao $AH = \\frac{AB \\cdot AC}{BC} = \\frac{15 \\cdot 20}{25} = 12\\text{ cm}$."
+      },
+      {
+        "id": "sa-9.ot4.7",
+        "badge": "Trả lời ngắn 7 (TH) - Diện tích tam giác vuông",
+        "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 12\\text{ cm}$ và $\\widehat{B} = 45^\\circ$. Tính diện tích tam giác $ABC$ theo đơn vị $\\text{cm}^2$.",
+        "correctAnswer": "36",
+        "acceptableAnswers": [
+          "36",
+          "36 cm2",
+          "36cm2"
+        ],
+        "explanation": "Tam giác vuông cân có $AB = AC = 12 \\cdot \\sin 45^\\circ = 6\\sqrt{2}\\text{ cm}$. Diện tích $S = \\frac{1}{2} (6\\sqrt{2})^2 = 36\\text{ cm}^2$."
+      },
+      {
+        "id": "sa-9.ot4.8",
+        "badge": "Trả lời ngắn 8 (VD - Thực tế) - Chiều cao cột cờ",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 110)",
+        "prompt": "Một bạn học sinh đứng cách chân cột cờ $12\\text{ m}$ nhìn lên đỉnh cột cờ với góc nâng $45^\\circ$. Mắt bạn cách mặt đất $1,5\\text{ m}$. Tính chiều cao cột cờ theo mét (viết dưới dạng số thập phân).",
+        "correctAnswer": "13.5",
+        "acceptableAnswers": [
+          "13.5",
+          "13,5",
+          "13.5 m",
+          "13,5 m",
+          "13.5m",
+          "13,5m"
+        ],
+        "explanation": "Độ cao từ tầm mắt lên đỉnh cột cờ: $h_1 = 12 \\cdot \\tan 45^\\circ = 12\\text{ m}$. Chiều cao cột cờ: $h = 12 + 1,5 = 13,5\\text{ m}$."
+      },
+      {
+        "id": "sa-9.ot4.9",
+        "badge": "Trả lời ngắn 9 (VD - Thực tế) - Độ cao con dốc",
+        "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 72)",
+        "prompt": "Một con dốc dài $300\\text{ m}$ có góc nghiêng so với mặt đất nằm ngang là $5^\\circ$. Tính độ cao của đỉnh dốc so với chân dốc theo mét (làm tròn đến hàng đơn vị, lấy $\\sin 5^\\circ \\approx 0,0872$).",
+        "correctAnswer": "26",
+        "acceptableAnswers": [
+          "26",
+          "26 m",
+          "26m"
+        ],
+        "explanation": "Độ cao đỉnh dốc: $h = 300 \\cdot \\sin 5^\\circ \\approx 300 \\cdot 0,0872 = 26,16\\text{ m} \\approx 26\\text{ m}$."
+      },
+      {
+        "id": "sa-9.ot4.10",
+        "badge": "Trả lời ngắn 10 (VD - Thực tế) - Khoảng cách tàu đến hải đăng",
+        "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 131)",
+        "prompt": "Một ngọn hải đăng cao $45\\text{ m}$ so với mực nước biển. Người quan sát đứng trên đỉnh nhìn thấy một con tàu với góc hạ $30^\\circ$. Khoảng cách từ tàu đến chân ngọn hải đăng là bao nhiêu mét (làm tròn đến hàng đơn vị, lấy $\\sqrt{3} \\approx 1,732$)?",
+        "correctAnswer": "78",
+        "acceptableAnswers": [
+          "78",
+          "78 m",
+          "78m"
+        ],
+        "explanation": "Khoảng cách từ tàu đến chân hải đăng: $d = \\frac{45}{\\tan 30^\\circ} = 45\\sqrt{3} \\approx 45 \\cdot 1,732 = 77,94 \\approx 78\\text{ m}$."
+      }
+    ],
+    "examSets": [
+      {
+        "id": "de-1",
+        "title": "Đề ôn tập số 1",
+        "description": "Đề ôn tập tổng hợp cuối Chương IV (Hệ thức lượng trong tam giác vuông) - Đề số 1",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc4-d1-q1",
+            "badge": "Câu 1 (NB) - Định nghĩa Cos của góc nhọn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$. Tỉ số lượng giác $\\cos B$ bằng:",
+            "options": [
+              "$\\frac{AB}{BC}$",
+              "$\\frac{AC}{BC}$",
+              "$\\frac{AC}{AB}$",
+              "$\\frac{BC}{AB}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo định nghĩa: $\\cos B = \\frac{\\text{kề}}{\\text{huyền}} = \\frac{AB}{BC}$."
+          },
+          {
+            "id": "otc4-d1-q2",
+            "badge": "Câu 2 (NB) - Định nghĩa Cot của góc nhọn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$. Tỉ số lượng giác $\\cot C$ bằng:",
+            "options": [
+              "$\\frac{AC}{AB}$",
+              "$\\frac{AB}{AC}$",
+              "$\\frac{AC}{BC}$",
+              "$\\frac{BC}{AC}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đối với góc $C$, cạnh kề là $AC$, cạnh đối là $AB$. Do đó $\\cot C = \\frac{AC}{AB}$."
+          },
+          {
+            "id": "otc4-d1-q3",
+            "badge": "Câu 3 (NB) - Hai góc phụ nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "question": "Nếu hai góc nhọn $\\alpha$ và $\\beta$ phụ nhau thì:",
+            "options": [
+              "$\\tan \\alpha = \\cot \\beta$",
+              "$\\sin \\alpha = \\sin \\beta$",
+              "$\\cos \\alpha = \\cos \\beta$",
+              "$\\tan \\alpha = \\tan \\beta$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hai góc phụ nhau thì tang góc này bằng côtang góc kia: $\\tan \\alpha = \\cot \\beta$."
+          },
+          {
+            "id": "otc4-d1-q4",
+            "badge": "Câu 4 (NB) - Giá trị sin 30 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Giá trị của $\\sin 30^\\circ$ bằng:",
+            "options": [
+              "$\\frac{1}{2}$",
+              "$\\frac{\\sqrt{3}}{2}$",
+              "$\\frac{\\sqrt{2}}{2}$",
+              "$1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo bảng góc đặc biệt, $\\sin 30^\\circ = \\frac{1}{2}$."
+          },
+          {
+            "id": "otc4-d1-q5",
+            "badge": "Câu 5 (TH) - Tính cạnh góc vuông theo cạnh huyền và sin",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 74)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 16\\text{ cm}, \\widehat{B} = 60^\\circ$. Độ dài cạnh $AC$ là:",
+            "options": [
+              "$8\\sqrt{3}\\text{ cm}$",
+              "$8\\text{ cm}$",
+              "$16\\sqrt{3}\\text{ cm}$",
+              "$12\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cạnh $AC$ đối diện góc $B$: $AC = BC \\cdot \\sin 60^\\circ = 16 \\cdot \\frac{\\sqrt{3}}{2} = 8\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-q6",
+            "badge": "Câu 6 (TH) - Tính cạnh góc vuông theo tang",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}, \\widehat{C} = 30^\\circ$. Độ dài cạnh $AC$ là:",
+            "options": [
+              "$6\\sqrt{3}\\text{ cm}$",
+              "$2\\sqrt{3}\\text{ cm}$",
+              "$12\\text{ cm}$",
+              "$3\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\tan C = \\frac{AB}{AC} \\Rightarrow AC = \\frac{AB}{\\tan 30^\\circ} = \\frac{6}{\\frac{\\sqrt{3}}{3}} = 6\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-q7",
+            "badge": "Câu 7 (TH) - Tính giá trị biểu thức lượng giác",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 101)",
+            "question": "Tính giá trị của biểu thức $P = \\cos^2 15^\\circ + \\cos^2 75^\\circ$.",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "\\frac{1}{2}"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $15^\\circ + 75^\\circ = 90^\\circ$ nên $\\cos 75^\\circ = \\sin 15^\\circ$. Do đó $P = \\cos^2 15^\\circ + \\sin^2 15^\\circ = 1$."
+          },
+          {
+            "id": "otc4-d1-q8",
+            "badge": "Câu 8 (TH) - Tìm góc nhọn biết tỉ số",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Cho góc nhọn $\\alpha$ có $\\tan \\alpha = 1$. Số đo của góc $\\alpha$ là:",
+            "options": [
+              "45°",
+              "30°",
+              "60°",
+              "90°"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\tan 45^\\circ = 1 \\Rightarrow \\alpha = 45^\\circ$."
+          },
+          {
+            "id": "otc4-d1-q9",
+            "badge": "Câu 9 (TH) - Giải tam giác vuông cân",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 105)",
+            "question": "Một tam giác vuông cân có cạnh góc vuông bằng $5\\text{ cm}$. Độ dài cạnh huyền của tam giác đó là:",
+            "options": [
+              "$5\\sqrt{2}\\text{ cm}$",
+              "$10\\text{ cm}$",
+              "$5\\sqrt{3}\\text{ cm}$",
+              "$2,5\\sqrt{2}\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo định lý Pythagore hoặc hệ thức lượng: $a = \\frac{5}{\\sin 45^\\circ} = 5\\sqrt{2}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-q10",
+            "badge": "Câu 10 (VD) - Tính cạnh tam giác không vuông qua đường cao",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 108)",
+            "question": "Cho tam giác nhọn $ABC$ có $AB = 10\\text{ cm}, \\widehat{B} = 45^\\circ, \\widehat{C} = 30^\\circ$. Đường cao $AH$ hạ từ $A$ xuống $BC$ có độ dài là:",
+            "options": [
+              "$5\\sqrt{2}\\text{ cm}$",
+              "$5\\text{ cm}$",
+              "$5\\sqrt{3}\\text{ cm}$",
+              "$10\\sqrt{2}\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tam giác $ABH$ vuông tại $H$: $AH = AB \\cdot \\sin B = 10 \\cdot \\sin 45^\\circ = 5\\sqrt{2}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-q11",
+            "badge": "Câu 11 (VD - Thực tế) - Đo bóng cột cờ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 72)",
+            "question": "Một cột cờ cao $10\\text{ m}$ có bóng in trên mặt đất dài $10\\text{ m}$. Góc tạo bởi tia nắng mặt trời và mặt đất lúc đó bằng:",
+            "options": [
+              "45°",
+              "30°",
+              "60°",
+              "50°"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\tan \\alpha = \\frac{10}{10} = 1 \\Rightarrow \\alpha = 45^\\circ$."
+          },
+          {
+            "id": "otc4-d1-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Thang dựa tường",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+            "question": "Một chiếc thang dài $5\\text{ m}$ tựa vào tường tạo với mặt đất góc $65^\\circ$. Chiều cao điểm tựa của thang trên tường là bao nhiêu mét (làm tròn đến hàng phần mười)?",
+            "options": [
+              "4,5 m",
+              "4,1 m",
+              "3,8 m",
+              "4,8 m"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chiều cao điểm tựa: $h = 5 \\cdot \\sin 65^\\circ \\approx 5 \\cdot 0,9063 = 4,53 \\approx 4,5\\text{ m}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc4-d1-tf1",
+            "badge": "Câu 1 (NB) - Quan hệ giữa các tỉ số lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "prompt": "Cho góc nhọn $\\alpha$. Xét tính đúng/sai của các hệ thức sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$\\sin^2 \\alpha + \\cos^2 \\alpha = 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng theo hệ thức lượng giác cơ bản."
+              },
+              {
+                "id": "b",
+                "text": "$\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng theo định nghĩa."
+              },
+              {
+                "id": "c",
+                "text": "$\\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng theo định nghĩa."
+              },
+              {
+                "id": "d",
+                "text": "$\\tan \\alpha + \\cot \\alpha = 1$.",
+                "correctAnswer": false,
+                "explanation": "Sai, chỉ có $\\tan\\alpha \\cdot \\cot\\alpha = 1$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d1-tf2",
+            "badge": "Câu 2 (TH) - Giải tam giác vuông ABC có cạnh góc vuông 9 và 12",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 9\\text{ cm}, AC = 12\\text{ cm}$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Cạnh huyền $BC = 15\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $BC = \\sqrt{9^2 + 12^2} = 15\\text{ cm}$."
+              },
+              {
+                "id": "b",
+                "text": "$\\sin B = 0,8$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $\\sin B = \\frac{12}{15} = 0,8$."
+              },
+              {
+                "id": "c",
+                "text": "Đường cao kẻ từ $A$ xuống $BC$ dài $7,2\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $AH = \\frac{9 \\cdot 12}{15} = 7,2\\text{ cm}$."
+              },
+              {
+                "id": "d",
+                "text": "Góc nhọn $\\widehat{B} < 45^\\circ$.",
+                "correctAnswer": false,
+                "explanation": "Sai, vì $AC = 12 > AB = 9 \\Rightarrow \\widehat{B} > 45^\\circ$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d1-tf3",
+            "badge": "Câu 3 (TH) - Giá trị lượng giác của các góc phụ nhau",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 66)",
+            "prompt": "Xét tính đúng/sai của các biểu thức sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$\\sin 20^\\circ = \\cos 70^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $20^\\circ + 70^\\circ = 90^\\circ$."
+              },
+              {
+                "id": "b",
+                "text": "$\\tan 35^\\circ = \\cot 55^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $35^\\circ + 55^\\circ = 90^\\circ$."
+              },
+              {
+                "id": "c",
+                "text": "$\\sin^2 40^\\circ + \\sin^2 50^\\circ = 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\sin 50^\\circ = \\cos 40^\\circ$."
+              },
+              {
+                "id": "d",
+                "text": "$\\cos 60^\\circ = \\frac{\\sqrt{3}}{2}$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $\\cos 60^\\circ = \\frac{1}{2}$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d1-tf4",
+            "badge": "Câu 4 (VD - Thực tế) - Bài toán thang tựa tường",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+            "prompt": "Một chiếc thang dài $4\\text{ m}$ dựng tựa vào tường thẳng đứng tạo với mặt đất góc $65^\\circ$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Khoảng cách từ chân thang đến chân tường là $4 \\cdot \\cos 65^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, khoảng cách là cạnh kề góc $65^\\circ$."
+              },
+              {
+                "id": "b",
+                "text": "Khoảng cách chân thang đến tường xấp xỉ $1,69\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $4 \\cdot \\cos 65^\\circ \\approx 1,69\\text{ m}$."
+              },
+              {
+                "id": "c",
+                "text": "Chiều cao đầu trên của thang chạm tường xấp xỉ $3,63\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $h = 4 \\cdot \\sin 65^\\circ \\approx 3,63\\text{ m}$."
+              },
+              {
+                "id": "d",
+                "text": "Nếu đầu thang trượt xuống $1\\text{ m}$ thì góc giữa thang và đất tăng lên.",
+                "correctAnswer": false,
+                "explanation": "Sai, thang trượt xuống thấp thì góc với mặt đất phải giảm đi."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc4-d1-sa1",
+            "badge": "Câu 1 (NB) - Tính cạnh góc vuông theo cạnh huyền",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 18\\text{ cm}, \\widehat{C} = 30^\\circ$. Tính độ dài cạnh $AB$ theo centimet.",
+            "correctAnswer": "9",
+            "acceptableAnswers": [
+              "9",
+              "9 cm",
+              "9cm"
+            ],
+            "explanation": "Ta có $AB = BC \\cdot \\sin 30^\\circ = 18 \\cdot 0,5 = 9\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-sa2",
+            "badge": "Câu 2 (NB) - Tính cạnh tam giác vuông cân",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 105)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 11\\text{ cm}, \\widehat{B} = 45^\\circ$. Tính độ dài cạnh $AC$ theo centimet.",
+            "correctAnswer": "11",
+            "acceptableAnswers": [
+              "11",
+              "11 cm",
+              "11cm"
+            ],
+            "explanation": "Tam giác vuông cân nên $AC = AB = 11\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-sa3",
+            "badge": "Câu 3 (TH) - Tính cạnh huyền từ cạnh kề góc 60 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 8\\text{ cm}, \\widehat{B} = 60^\\circ$. Tính độ dài cạnh huyền $BC$ theo centimet.",
+            "correctAnswer": "16",
+            "acceptableAnswers": [
+              "16",
+              "16 cm",
+              "16cm"
+            ],
+            "explanation": "Ta có $\\cos 60^\\circ = \\frac{AB}{BC} \\Rightarrow BC = \\frac{8}{0,5} = 16\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d1-sa4",
+            "badge": "Câu 4 (TH) - Tính giá trị biểu thức lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "prompt": "Tính giá trị của biểu thức $K = \\sin^2 12^\\circ + \\sin^2 78^\\circ + 2\\tan 45^\\circ$.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3"
+            ],
+            "explanation": "Do $12^\\circ + 78^\\circ = 90^\\circ$ nên $\\sin 78^\\circ = \\cos 12^\\circ$. Ta có $K = 1 + 2(1) = 3$."
+          },
+          {
+            "id": "otc4-d1-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Độ cao con dốc đường bộ",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 72)",
+            "prompt": "Một đoạn dốc dài $200\\text{ m}$ nghiêng $6^\\circ$ so với mặt đất. Hỏi đỉnh dốc cao bao nhiêu mét so với chân dốc (làm tròn đến hàng đơn vị, lấy $\\sin 6^\\circ \\approx 0,1045$)?",
+            "correctAnswer": "21",
+            "acceptableAnswers": [
+              "21",
+              "21 m",
+              "21m"
+            ],
+            "explanation": "Chiều cao đỉnh dốc: $h = 200 \\cdot \\sin 6^\\circ \\approx 200 \\cdot 0,1045 = 20,9\\text{ m} \\approx 21\\text{ m}$."
+          },
+          {
+            "id": "otc4-d1-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Chiều cao ngọn cây qua giác kế",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 110)",
+            "prompt": "Một bạn học sinh đặt giác kế cao $1,4\\text{ m}$ cách gốc cây $10\\text{ m}$ ngắm lên ngọn cây với góc nâng $45^\\circ$. Chiều cao của cây là bao nhiêu mét (viết dưới dạng số thập phân)?",
+            "correctAnswer": "11.4",
+            "acceptableAnswers": [
+              "11.4",
+              "11,4",
+              "11.4 m",
+              "11,4 m",
+              "11.4m",
+              "11,4m"
+            ],
+            "explanation": "Độ cao từ tầm mắt: $h_1 = 10 \\cdot \\tan 45^\\circ = 10\\text{ m}$. Chiều cao cây: $h = 10 + 1,4 = 11,4\\text{ m}$."
+          }
+        ]
+      },
+      {
+        "id": "de-2",
+        "title": "Đề ôn tập số 2",
+        "description": "Đề ôn tập tổng hợp cuối Chương IV (Hệ thức lượng trong tam giác vuông) - Đề số 2",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc4-d2-q1",
+            "badge": "Câu 1 (NB) - Quan hệ tỉ số lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "question": "Trong một tam giác vuông, khẳng định nào sau đây là đúng?",
+            "options": [
+              "Cạnh đối diện góc $30^\\circ$ bằng nửa cạnh huyền",
+              "Cạnh đối diện góc $60^\\circ$ bằng nửa cạnh huyền",
+              "Cạnh góc vuông luôn lớn hơn cạnh huyền",
+              "Sin của một góc nhọn có thể lớn hơn 1"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $\\sin 30^\\circ = 0,5$ nên cạnh đối diện góc $30^\\circ$ bằng nửa cạnh huyền."
+          },
+          {
+            "id": "otc4-d2-q2",
+            "badge": "Câu 2 (NB) - Hệ thức hai cạnh góc vuông",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$. Hệ thức nào biểu diễn đúng cạnh $c = AB$ theo cạnh $b = AC$ và góc đối $C$?",
+            "options": [
+              "$c = b \\cdot \\tan C$",
+              "$c = b \\cdot \\cot C$",
+              "$c = b \\cdot \\sin C$",
+              "$c = b \\cdot \\cos C$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mỗi cạnh góc vuông bằng cạnh góc vuông kia nhân với tang của góc đối: $c = b \\cdot \\tan C$."
+          },
+          {
+            "id": "otc4-d2-q3",
+            "badge": "Câu 3 (NB) - Giá trị cos 30 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Giá trị của $\\cos 30^\\circ$ bằng:",
+            "options": [
+              "$\\frac{\\sqrt{3}}{2}$",
+              "$\\frac{1}{2}$",
+              "$\\frac{\\sqrt{2}}{2}$",
+              "$\\sqrt{3}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo bảng góc đặc biệt: $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$."
+          },
+          {
+            "id": "otc4-d2-q4",
+            "badge": "Câu 4 (NB) - Điều kiện giải tam giác vuông",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+            "question": "Để giải được một tam giác vuông, ta cần biết ít nhất:",
+            "options": [
+              "2 yếu tố, trong đó có ít nhất một cạnh",
+              "Chỉ cần 2 góc nhọn",
+              "3 góc",
+              "Chỉ cần 1 cạnh bất kì"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cần ít nhất 2 yếu tố ngoài góc vuông, trong đó bắt buộc phải có ít nhất 1 cạnh."
+          },
+          {
+            "id": "otc4-d2-q5",
+            "badge": "Câu 5 (TH) - Tính cạnh góc vuông theo côsin góc kề",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 74)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 20\\text{ cm}, \\cos B = 0,8$. Độ dài cạnh $AB$ là:",
+            "options": [
+              "16 cm",
+              "12 cm",
+              "15 cm",
+              "18 cm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $AB = BC \\cdot \\cos B = 20 \\cdot 0,8 = 16\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-q6",
+            "badge": "Câu 6 (TH) - Tìm góc nhọn biết cạnh đối và kề",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 80)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}, AC = 5\\sqrt{3}\\text{ cm}$. Số đo góc $\\widehat{C}$ là:",
+            "options": [
+              "30°",
+              "60°",
+              "45°",
+              "75°"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\tan C = \\frac{AB}{AC} = \\frac{5}{5\\sqrt{3}} = \\frac{\\sqrt{3}}{3} \\Rightarrow \\widehat{C} = 30^\\circ$."
+          },
+          {
+            "id": "otc4-d2-q7",
+            "badge": "Câu 7 (TH) - Rút gọn biểu thức lượng giác",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 101)",
+            "question": "Giá trị của biểu thức $H = \\sin 25^\\circ - \\cos 65^\\circ + \\cot 45^\\circ$ là:",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $25^\\circ + 65^\\circ = 90^\\circ$ nên $\\cos 65^\\circ = \\sin 25^\\circ \\Rightarrow H = 0 + 1 = 1$."
+          },
+          {
+            "id": "otc4-d2-q8",
+            "badge": "Câu 8 (TH) - Tính đường chéo hình vuông",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 69)",
+            "question": "Một hình vuông có độ dài cạnh là $6\\text{ cm}$. Độ dài đường chéo của hình vuông đó là:",
+            "options": [
+              "$6\\sqrt{2}\\text{ cm}$",
+              "$12\\text{ cm}$",
+              "$6\\sqrt{3}\\text{ cm}$",
+              "$3\\sqrt{2}\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đường chéo chia hình vuông thành tam giác vuông cân có góc $45^\\circ$: $d = \\frac{6}{\\sin 45^\\circ} = 6\\sqrt{2}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-q9",
+            "badge": "Câu 9 (TH) - Chiều cao tam giác đều",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 108)",
+            "question": "Cho tam giác đều $ABC$ có cạnh bằng $8\\text{ cm}$. Chiều cao $AH$ của tam giác đều đó là:",
+            "options": [
+              "$4\\sqrt{3}\\text{ cm}$",
+              "$4\\text{ cm}$",
+              "$8\\sqrt{3}\\text{ cm}$",
+              "$6\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Tam giác $ABH$ vuông tại $H$ có $\\widehat{B} = 60^\\circ$: $AH = 8 \\cdot \\sin 60^\\circ = 4\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-q10",
+            "badge": "Câu 10 (VD) - Diện tích tứ giác có hai đường chéo vuông góc",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 109)",
+            "question": "Một hình thoi có cạnh bằng $10\\text{ cm}$ và một góc nhọn bằng $60^\\circ$. Diện tích của hình thoi đó là:",
+            "options": [
+              "$50\\sqrt{3}\\text{ cm}^2$",
+              "$100\\sqrt{3}\\text{ cm}^2$",
+              "$25\\sqrt{3}\\text{ cm}^2$",
+              "$50\\text{ cm}^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nửa đường chéo: $10 \\cdot \\sin 30^\\circ = 5\\text{ cm}$ và $10 \\cdot \\cos 30^\\circ = 5\\sqrt{3}\\text{ cm}$. Hai đường chéo là $10\\text{ cm}$ và $10\\sqrt{3}\\text{ cm}$. Diện tích $S = \\frac{1}{2} \\cdot 10 \\cdot 10\\sqrt{3} = 50\\sqrt{3}\\text{ cm}^2$."
+          },
+          {
+            "id": "otc4-d2-q11",
+            "badge": "Câu 11 (VD - Thực tế) - Độ cao máy bay cất cánh",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 130)",
+            "question": "Một máy bay bay lên theo góc nghiêng $18^\\circ$ với vận tốc $360\\text{ km/h}$. Sau 1 phút, máy bay đạt độ cao bao nhiêu mét (làm tròn đến hàng đơn vị, lấy $\\sin 18^\\circ \\approx 0,3090$)?",
+            "options": [
+              "1854 m",
+              "2000 m",
+              "1650 m",
+              "2120 m"
+            ],
+            "correctIndex": 0,
+            "explanation": "Quãng đường bay: $s = 360 \\times \\frac{1}{60} = 6\\text{ km} = 6000\\text{ m}$. Độ cao $h = 6000 \\cdot \\sin 18^\\circ \\approx 6000 \\cdot 0,3090 = 1854\\text{ m}$."
+          },
+          {
+            "id": "otc4-d2-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Đo chiều cao tháp bằng giác kế",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+            "question": "Một người đứng cách chân tháp $45\\text{ m}$, giác kế đặt cao $1,5\\text{ m}$ ngắm đỉnh tháp dưới góc nâng $40^\\circ$. Chiều cao ngọn tháp là bao nhiêu mét (làm tròn đến hàng phần mười)?",
+            "options": [
+              "39,3 m",
+              "37,8 m",
+              "41,2 m",
+              "43,0 m"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chiều cao tháp: $h = 1,5 + 45 \\cdot \\tan 40^\\circ \\approx 1,5 + 45 \\cdot 0,8391 = 1,5 + 37,76 = 39,26 \\approx 39,3\\text{ m}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc4-d2-tf1",
+            "badge": "Câu 1 (NB) - Tính chất các tỉ số lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "prompt": "Xét tính đúng/sai của các nhận định sau về góc nhọn $\\alpha$:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Khi góc $\\alpha$ tăng từ $0^\\circ$ đến $90^\\circ$ thì $\\sin \\alpha$ tăng.",
+                "correctAnswer": true,
+                "explanation": "Đúng, góc tăng thì sin tăng."
+              },
+              {
+                "id": "b",
+                "text": "Khi góc $\\alpha$ tăng từ $0^\\circ$ đến $90^\\circ$ thì $\\cos \\alpha$ tăng.",
+                "correctAnswer": false,
+                "explanation": "Sai, góc tăng thì côsin giảm."
+              },
+              {
+                "id": "c",
+                "text": "Khi góc $\\alpha$ tăng từ $0^\\circ$ đến $90^\\circ$ thì $\\tan \\alpha$ tăng.",
+                "correctAnswer": true,
+                "explanation": "Đúng, góc tăng thì tang tăng."
+              },
+              {
+                "id": "d",
+                "text": "Nếu $\\sin \\alpha = \\cos \\alpha$ thì $\\alpha = 45^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\tan\\alpha = 1 \\Rightarrow \\alpha = 45^\\circ$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d2-tf2",
+            "badge": "Câu 2 (TH) - Giải tam giác vuông MNP vuông tại M",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 68)",
+            "prompt": "Cho tam giác $MNP$ vuông tại $M$ có cạnh huyền $NP = 10\\text{ cm}, \\widehat{P} = 60^\\circ$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Góc nhọn $\\widehat{N} = 30^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì hai góc nhọn phụ nhau."
+              },
+              {
+                "id": "b",
+                "text": "Cạnh $MP = 5\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $MP = 10 \\cdot \\cos 60^\\circ = 5\\text{ cm}$."
+              },
+              {
+                "id": "c",
+                "text": "Cạnh $MN = 5\\sqrt{3}\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $MN = 10 \\cdot \\sin 60^\\circ = 5\\sqrt{3}\\text{ cm}$."
+              },
+              {
+                "id": "d",
+                "text": "Diện tích tam giác $MNP$ bằng $25\\text{ cm}^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $S = \\frac{1}{2} \\cdot 5 \\cdot 5\\sqrt{3} = 12,5\\sqrt{3}\\text{ cm}^2$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d2-tf3",
+            "badge": "Câu 3 (TH) - Tính chất hai góc bù và phụ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 71)",
+            "prompt": "Xét tính đúng/sai của các phép tính lượng giác sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$\\frac{\\sin 35^\\circ}{\\cos 55^\\circ} = 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\cos 55^\\circ = \\sin 35^\\circ$."
+              },
+              {
+                "id": "b",
+                "text": "$\\tan 25^\\circ - \\cot 65^\\circ = 0$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\cot 65^\\circ = \\tan 25^\\circ$."
+              },
+              {
+                "id": "c",
+                "text": "$\\sin 45^\\circ + \\cos 45^\\circ = \\sqrt{2}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\sqrt{2}$."
+              },
+              {
+                "id": "d",
+                "text": "$\\tan 30^\\circ \\cdot \\cot 60^\\circ = 1$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $\\tan 30^\\circ = \\frac{\\sqrt{3}}{3}$, $\\cot 60^\\circ = \\frac{\\sqrt{3}}{3} \\Rightarrow$ tích bằng $\\frac{1}{3}$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d2-tf4",
+            "badge": "Câu 4 (VD - Thực tế) - Chiếc ca nô và ngọn hải đăng",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 131)",
+            "prompt": "Từ đỉnh ngọn hải đăng cao $50\\text{ m}$ so với mặt nước biển, nhân viên quan sát thấy một chiếc ca nô đang tiến lại gần với góc hạ $30^\\circ$. Sau một lúc, góc hạ tăng lên thành $45^\\circ$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Khoảng cách ban đầu từ ca nô đến chân hải đăng là $50\\sqrt{3}\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $d_1 = \\frac{50}{\\tan 30^\\circ} = 50\\sqrt{3}\\text{ m}$."
+              },
+              {
+                "id": "b",
+                "text": "Khoảng cách lúc sau từ ca nô đến chân hải đăng là $50\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $d_2 = \\frac{50}{\\tan 45^\\circ} = 50\\text{ m}$."
+              },
+              {
+                "id": "c",
+                "text": "Quãng đường ca nô đã di chuyển giữa hai lần quan sát xấp xỉ $36,6\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $50\\sqrt{3} - 50 \\approx 50(1,732 - 1) = 36,6\\text{ m}$."
+              },
+              {
+                "id": "d",
+                "text": "Góc hạ càng lớn chứng tỏ ca nô càng ở xa ngọn hải đăng.",
+                "correctAnswer": false,
+                "explanation": "Sai, góc hạ càng lớn thì ca nô càng ở gần chân ngọn hải đăng."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc4-d2-sa1",
+            "badge": "Câu 1 (NB) - Tính cạnh góc vuông theo cạnh huyền",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 26\\text{ cm}, \\widehat{C} = 30^\\circ$. Tính độ dài cạnh $AB$ theo centimet.",
+            "correctAnswer": "13",
+            "acceptableAnswers": [
+              "13",
+              "13 cm",
+              "13cm"
+            ],
+            "explanation": "Ta có $AB = BC \\cdot \\sin 30^\\circ = 26 \\cdot 0,5 = 13\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-sa2",
+            "badge": "Câu 2 (NB) - Cạnh tam giác vuông cân",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 105)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AC = 19\\text{ cm}, \\widehat{B} = 45^\\circ$. Tính độ dài cạnh $AB$ theo centimet.",
+            "correctAnswer": "19",
+            "acceptableAnswers": [
+              "19",
+              "19 cm",
+              "19cm"
+            ],
+            "explanation": "Tam giác vuông cân nên $AB = AC = 19\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-sa3",
+            "badge": "Câu 3 (TH) - Tính cạnh kề theo góc 60 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 32\\text{ cm}, \\widehat{C} = 60^\\circ$. Tính độ dài cạnh $AC$ theo centimet.",
+            "correctAnswer": "16",
+            "acceptableAnswers": [
+              "16",
+              "16 cm",
+              "16cm"
+            ],
+            "explanation": "Cạnh $AC = BC \\cdot \\cos 60^\\circ = 32 \\cdot 0,5 = 16\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-sa4",
+            "badge": "Câu 4 (TH) - Đường cao tam giác vuông",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 107)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 12\\text{ cm}, AC = 16\\text{ cm}$. Tính độ dài đường cao $AH$ theo centimet (viết dưới dạng số thập phân).",
+            "correctAnswer": "9.6",
+            "acceptableAnswers": [
+              "9.6",
+              "9,6",
+              "9.6 cm",
+              "9,6 cm",
+              "9.6cm",
+              "9,6cm"
+            ],
+            "explanation": "Cạnh huyền $BC = \\sqrt{12^2 + 16^2} = 20\\text{ cm}$. Đường cao $AH = \\frac{12 \\cdot 16}{20} = 9,6\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d2-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Độ dốc cầu trượt công viên",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+            "prompt": "Một máng trượt dài $8\\text{ m}$ có góc nghiêng $30^\\circ$ so với mặt đất. Hỏi đỉnh máng trượt cao hơn mặt đất bao nhiêu mét?",
+            "correctAnswer": "4",
+            "acceptableAnswers": [
+              "4",
+              "4 m",
+              "4m"
+            ],
+            "explanation": "Chiều cao $h = 8 \\cdot \\sin 30^\\circ = 8 \\cdot 0,5 = 4\\text{ m}$."
+          },
+          {
+            "id": "otc4-d2-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Chiều cao tòa nhà qua giác kế",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 110)",
+            "prompt": "Một người đứng cách chân tòa nhà $25\\text{ m}$ ngắm lên đỉnh tòa nhà với góc nâng $45^\\circ$. Giác kế cao $1,6\\text{ m}$. Tính chiều cao tòa nhà theo mét (viết dạng số thập phân).",
+            "correctAnswer": "26.6",
+            "acceptableAnswers": [
+              "26.6",
+              "26,6",
+              "26.6 m",
+              "26,6 m",
+              "26.6m",
+              "26,6m"
+            ],
+            "explanation": "Chiều cao tòa nhà: $h = 25 \\cdot \\tan 45^\\circ + 1,6 = 25 + 1,6 = 26,6\\text{ m}$."
+          }
+        ]
+      },
+      {
+        "id": "de-3",
+        "title": "Đề ôn tập số 3",
+        "description": "Đề ôn tập tổng hợp phân hóa cuối Chương IV (Định hướng thi tuyển sinh vào 10)",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc4-d3-q1",
+            "badge": "Câu 1 (NB) - Quan hệ hai góc phụ nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$. Khẳng định nào sau đây luôn đúng?",
+            "options": [
+              "$\\sin B = \\cos C$",
+              "$\\sin B = \\sin C$",
+              "$\\cos B = \\cos C$",
+              "$\\tan B = \\tan C$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hai góc $B$ và $C$ phụ nhau nên $\\sin B = \\cos C$."
+          },
+          {
+            "id": "otc4-d3-q2",
+            "badge": "Câu 2 (NB) - Hệ thức cạnh góc vuông theo góc kề",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 74)",
+            "question": "Trong tam giác $ABC$ vuông tại $A$, cạnh $b = AC$ bằng:",
+            "options": [
+              "$a \\cdot \\cos C$",
+              "$a \\cdot \\sin C$",
+              "$a \\cdot \\tan C$",
+              "$a \\cdot \\cot B$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mỗi cạnh góc vuông bằng cạnh huyền nhân với côsin của góc kề: $b = a \\cdot \\cos C$."
+          },
+          {
+            "id": "otc4-d3-q3",
+            "badge": "Câu 3 (NB) - Giá trị côtang 45 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Giá trị của $\\cot 45^\\circ$ là:",
+            "options": [
+              "1",
+              "0",
+              "\\sqrt{2}",
+              "\\frac{1}{2}"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo bảng góc đặc biệt: $\\cot 45^\\circ = 1$."
+          },
+          {
+            "id": "otc4-d3-q4",
+            "badge": "Câu 4 (NB) - Nhận biết tam giác vuông từ cạnh",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 100)",
+            "question": "Tam giác có ba cạnh bằng $6\\text{ cm}, 8\\text{ cm}, 10\\text{ cm}$ là:",
+            "options": [
+              "Tam giác vuông",
+              "Tam giác cân",
+              "Tam giác đều",
+              "Tam giác tù"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $6^2 + 8^2 = 36 + 64 = 100 = 10^2$ nên là tam giác vuông theo định lý Pythagore đảo."
+          },
+          {
+            "id": "otc4-d3-q5",
+            "badge": "Câu 5 (TH) - Rút gọn biểu thức lượng giác không phụ thuộc góc",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 11 (Trang 102)",
+            "question": "Giá trị của biểu thức $Q = \\sin^4 \\alpha + \\cos^4 \\alpha + 2\\sin^2 \\alpha \\cos^2 \\alpha$ bằng:",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "correctIndex": 0,
+            "explanation": "Biểu thức có dạng hằng đẳng thức: $(\\sin^2 \\alpha + \\cos^2 \\alpha)^2 = 1^2 = 1$."
+          },
+          {
+            "id": "otc4-d3-q6",
+            "badge": "Câu 6 (TH) - Tìm góc nhọn biết sin",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 71)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $BC = 10\\text{ cm}, AC = 5\\sqrt{2}\\text{ cm}$. Số đo góc $\\widehat{B}$ là:",
+            "options": [
+              "45°",
+              "30°",
+              "60°",
+              "15°"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\sin B = \\frac{AC}{BC} = \\frac{5\\sqrt{2}}{10} = \\frac{\\sqrt{2}}{2} \\Rightarrow \\widehat{B} = 45^\\circ$."
+          },
+          {
+            "id": "otc4-d3-q7",
+            "badge": "Câu 7 (TH) - Hệ thức lượng giác trong tam giác",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 108)",
+            "question": "Cho tam giác nhọn $ABC$ có đường cao $AH$. Khẳng định nào sau đây luôn đúng?",
+            "options": [
+              "$AB \\cdot \\sin B = AC \\cdot \\sin C$",
+              "$AB \\cdot \\cos B = AC \\cdot \\cos C$",
+              "$AB \\cdot \\tan B = AC \\cdot \\tan C$",
+              "$AB + AC = BC \\cdot \\sin A$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì cùng bằng độ dài đường cao $AH$: $AH = AB \\cdot \\sin B = AC \\cdot \\sin C$."
+          },
+          {
+            "id": "otc4-d3-q8",
+            "badge": "Câu 8 (TH) - Tính cạnh góc vuông từ góc kề 30 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 14\\text{ cm}, \\widehat{B} = 30^\\circ$. Cạnh $AB$ có độ dài là:",
+            "options": [
+              "$7\\sqrt{3}\\text{ cm}$",
+              "$7\\text{ cm}$",
+              "$14\\sqrt{3}\\text{ cm}$",
+              "$28\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cạnh $AB = BC \\cdot \\cos 30^\\circ = 14 \\cdot \\frac{\\sqrt{3}}{2} = 7\\sqrt{3}\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-q9",
+            "badge": "Câu 9 (TH) - Giải tam giác vuông biết hai cạnh góc vuông",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 7\\text{ cm}, AC = 24\\text{ cm}$. Độ dài cạnh huyền $BC$ là:",
+            "options": [
+              "25 cm",
+              "26 cm",
+              "31 cm",
+              "20 cm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo định lý Pythagore: $BC = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-q10",
+            "badge": "Câu 10 (VD) - Tính diện tích hình bình hành",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 109)",
+            "question": "Hình bình hành $ABCD$ có $AB = 8\\text{ cm}, AD = 6\\text{ cm}$ và góc $\\widehat{A} = 30^\\circ$. Diện tích của hình bình hành đó là:",
+            "options": [
+              "24 cm²",
+              "48 cm²",
+              "12 cm²",
+              "24\\sqrt{3} cm²"
+            ],
+            "correctIndex": 0,
+            "explanation": "Kẻ đường cao $BH \\perp AD$. Ta có $BH = AB \\cdot \\sin 30^\\circ = 8 \\cdot 0,5 = 4\\text{ cm}$. Diện tích $S = AD \\cdot BH = 6 \\cdot 4 = 24\\text{ cm}^2$."
+          },
+          {
+            "id": "otc4-d3-q11",
+            "badge": "Câu 11 (VD - Thực tế) - Dây diều thả gió",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 112)",
+            "question": "Một người thả diều với đoạn dây dài $120\\text{ m}$ căng thẳng, tạo với phương ngang góc $35^\\circ$. Tay cầm dây cách mặt đất $1,2\\text{ m}$. Con diều cách mặt đất bao nhiêu mét (làm tròn đến hàng đơn vị, lấy $\\sin 35^\\circ \\approx 0,5736$)?",
+            "options": [
+              "70 m",
+              "68 m",
+              "72 m",
+              "65 m"
+            ],
+            "correctIndex": 0,
+            "explanation": "Độ cao từ tay cầm: $h_1 = 120 \\cdot \\sin 35^\\circ \\approx 120 \\cdot 0,5736 = 68,83\\text{ m}$. Chiều cao so với mặt đất: $h = 68,83 + 1,2 = 70,03 \\approx 70\\text{ m}$."
+          },
+          {
+            "id": "otc4-d3-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Khoảng cách hai tàu trên biển",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 72)",
+            "question": "Từ ngọn hải đăng cao $80\\text{ m}$, người quan sát thấy tàu $A$ và $B$ thẳng hàng với chân tháp theo cùng một hướng với các góc hạ lần lượt là $45^\\circ$ và $30^\\circ$. Khoảng cách giữa hai tàu là bao nhiêu mét (làm tròn đến hàng đơn vị, lấy $\\sqrt{3} \\approx 1,732$)?",
+            "options": [
+              "59 m",
+              "65 m",
+              "50 m",
+              "72 m"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khoảng cách từ chân tháp đến tàu gần: $80 / \\tan 45^\\circ = 80\\text{ m}$. Khoảng cách đến tàu xa: $80 / \\tan 30^\\circ = 80\\sqrt{3} \\approx 138,56\\text{ m}$. Khoảng cách giữa hai tàu: $138,56 - 80 = 58,56 \\approx 59\\text{ m}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc4-d3-tf1",
+            "badge": "Câu 1 (NB) - Tính chất hàm lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "prompt": "Cho góc nhọn $\\alpha$. Xét tính đúng/sai của các biểu thức:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $1 + \\frac{\\sin^2\\alpha}{\\cos^2\\alpha} = \\frac{\\cos^2\\alpha + \\sin^2\\alpha}{\\cos^2\\alpha} = \\frac{1}{\\cos^2\\alpha}$."
+              },
+              {
+                "id": "b",
+                "text": "$1 + \\cot^2 \\alpha = \\frac{1}{\\sin^2 \\alpha}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, tương tự công thức trên."
+              },
+              {
+                "id": "c",
+                "text": "$\\tan \\alpha = \\cot (90^\\circ - \\alpha)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng theo tính chất hai góc phụ nhau."
+              },
+              {
+                "id": "d",
+                "text": "$\\sin \\alpha + \\cos \\alpha = 1$.",
+                "correctAnswer": false,
+                "explanation": "Sai hoàn toàn, chỉ có $\\sin^2\\alpha + \\cos^2\\alpha = 1$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d3-tf2",
+            "badge": "Câu 2 (TH) - Tam giác vuông ABC vuông tại A",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 76)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AC = 12\\text{ cm}, \\widehat{B} = 60^\\circ$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Cạnh huyền $BC = 8\\sqrt{3}\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $BC = \\frac{AC}{\\sin 60^\\circ} = \\frac{12}{\\frac{\\sqrt{3}}{2}} = 8\\sqrt{3}\\text{ cm}$."
+              },
+              {
+                "id": "b",
+                "text": "Cạnh góc vuông $AB = 4\\sqrt{3}\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $AB = \\frac{AC}{\\tan 60^\\circ} = \\frac{12}{\\sqrt{3}} = 4\\sqrt{3}\\text{ cm}$."
+              },
+              {
+                "id": "c",
+                "text": "Góc nhọn $\\widehat{C} = 30^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì $\\widehat{C} = 90^\\circ - 60^\\circ = 30^\\circ$."
+              },
+              {
+                "id": "d",
+                "text": "Diện tích tam giác $ABC$ bằng $48\\sqrt{3}\\text{ cm}^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $S = \\frac{1}{2} \\cdot 4\\sqrt{3} \\cdot 12 = 24\\sqrt{3}\\text{ cm}^2$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d3-tf3",
+            "badge": "Câu 3 (TH) - Hệ thức góc và cạnh trong hình thang vuông",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 109)",
+            "prompt": "Cho hình thang vuông $ABCD$ ($A = D = 90^\\circ$) có $AB = 3\\text{ cm}, CD = 7\\text{ cm}, AD = 4\\text{ cm}$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Độ dài đường cao kẻ từ $B$ xuống $CD$ bằng $4\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì bằng cạnh bên vuông góc $AD$."
+              },
+              {
+                "id": "b",
+                "text": "Đoạn thẳng hình chiếu $HC = CD - AB = 4\\text{ cm}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $HC = 7 - 3 = 4\\text{ cm}$."
+              },
+              {
+                "id": "c",
+                "text": "Góc nhọn $\\widehat{C} = 45^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng vì tam giác $BHC$ vuông tại $H$ có $BH = HC = 4\\text{ cm}$."
+              },
+              {
+                "id": "d",
+                "text": "Độ dài cạnh bên $BC = 4\\sqrt{3}\\text{ cm}$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $BC = 4\\sqrt{2}\\text{ cm}$."
+              }
+            ]
+          },
+          {
+            "id": "otc4-d3-tf4",
+            "badge": "Câu 4 (VD - Thực tế) - Bài toán đo chiều rộng sông",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 77)",
+            "prompt": "Để đo chiều rộng $AB$ của một khúc sông, hai bạn học sinh cắm cọc tại $B$ và $C$ sao cho $AB \\perp BC$. Đo được $BC = 70\\text{ m}$ và góc $\\widehat{ACB} = 35^\\circ$.",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Chiều rộng sông tính bởi $AB = BC \\cdot \\tan 35^\\circ$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, trong tam giác $ABC$ vuông tại $B$."
+              },
+              {
+                "id": "b",
+                "text": "Chiều rộng $AB$ xấp xỉ bằng $49\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $70 \\cdot \\tan 35^\\circ \\approx 70 \\cdot 0,7002 = 49,01 \\approx 49\\text{ m}$."
+              },
+              {
+                "id": "c",
+                "text": "Khoảng cách đường chéo từ $A$ đến $C$ lớn hơn $85\\text{ m}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $AC = \\frac{70}{\\cos 35^\\circ} \\approx \\frac{70}{0,8192} \\approx 85,45\\text{ m} > 85\\text{ m}$."
+              },
+              {
+                "id": "d",
+                "text": "Nếu góc $\\widehat{ACB} = 30^\\circ$ thì khoảng cách $AB = 35\\text{ m}$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $AB = 70 \\cdot \\tan 30^\\circ = \\frac{70\\sqrt{3}}{3} \\approx 40,4\\text{ m} \\ne 35\\text{ m}$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc4-d3-sa1",
+            "badge": "Câu 1 (NB) - Tính cạnh góc vuông theo cạnh huyền",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 12 (Trang 75)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 30\\text{ cm}, \\widehat{B} = 30^\\circ$. Tính độ dài cạnh $AC$ theo centimet.",
+            "correctAnswer": "15",
+            "acceptableAnswers": [
+              "15",
+              "15 cm",
+              "15cm"
+            ],
+            "explanation": "Ta có $AC = BC \\cdot \\sin 30^\\circ = 30 \\cdot 0,5 = 15\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-sa2",
+            "badge": "Câu 2 (NB) - Tính cạnh góc vuông tam giác vuông cân",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 105)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 25\\text{ cm}, \\widehat{C} = 45^\\circ$. Tính độ dài cạnh $AC$ theo centimet.",
+            "correctAnswer": "25",
+            "acceptableAnswers": [
+              "25",
+              "25 cm",
+              "25cm"
+            ],
+            "explanation": "Tam giác vuông cân nên $AC = AB = 25\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-sa3",
+            "badge": "Câu 3 (TH) - Tính cạnh kề theo góc 60 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 2 (Trang 79)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 40\\text{ cm}, \\widehat{C} = 60^\\circ$. Tính độ dài cạnh $AC$ theo centimet.",
+            "correctAnswer": "20",
+            "acceptableAnswers": [
+              "20",
+              "20 cm",
+              "20cm"
+            ],
+            "explanation": "Cạnh $AC = BC \\cdot \\cos 60^\\circ = 40 \\cdot 0,5 = 20\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-sa4",
+            "badge": "Câu 4 (TH) - Tính đường cao tam giác vuông",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 107)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}, AC = 12\\text{ cm}$. Tính độ dài đường cao $AH$ theo centimet (làm tròn đến hàng phần mười).",
+            "correctAnswer": "4.6",
+            "acceptableAnswers": [
+              "4.6",
+              "4,6",
+              "4.6 cm",
+              "4,6 cm",
+              "4.6cm",
+              "4,6cm",
+              "60/13"
+            ],
+            "explanation": "Cạnh huyền $BC = 13\\text{ cm}$. Đường cao $AH = \\frac{60}{13} \\approx 4,615 \\approx 4,6\\text{ cm}$."
+          },
+          {
+            "id": "otc4-d3-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Độ dốc xe chạy",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 2 (Trang 72)",
+            "prompt": "Một con dốc dài $600\\text{ m}$ có góc nghiêng so với mặt đất nằm ngang là $4^\\circ$. Tính độ cao của đỉnh dốc theo mét (làm tròn đến hàng đơn vị, lấy $\\sin 4^\\circ \\approx 0,0698$).",
+            "correctAnswer": "42",
+            "acceptableAnswers": [
+              "42",
+              "42 m",
+              "42m"
+            ],
+            "explanation": "Chiều cao $h = 600 \\cdot \\sin 4^\\circ \\approx 600 \\cdot 0,0698 = 41,88\\text{ m} \\approx 42\\text{ m}$."
+          },
+          {
+            "id": "otc4-d3-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Khoảng cách tàu cứu hộ đến hải đăng",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 12 (Trang 131)",
+            "prompt": "Một ngọn hải đăng cao $60\\text{ m}$ so với mực nước biển. Người quan sát đứng trên đỉnh nhìn thấy một con tàu với góc hạ $30^\\circ$. Khoảng cách từ tàu đến chân ngọn hải đăng là bao nhiêu mét (làm tròn đến hàng đơn vị, lấy $\\sqrt{3} \\approx 1,732$)?",
+            "correctAnswer": "104",
+            "acceptableAnswers": [
+              "104",
+              "104 m",
+              "104m"
+            ],
+            "explanation": "Khoảng cách từ tàu đến chân hải đăng: $d = \\frac{60}{\\tan 30^\\circ} = 60\\sqrt{3} \\approx 60 \\cdot 1,732 = 103,92 \\approx 104\\text{ m}$."
+          }
+        ]
+      }
+    ]
+  },
 };

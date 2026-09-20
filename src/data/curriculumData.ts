@@ -543,6 +543,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         lessons: [
           { id: "t9-b11-ti-so-luong-giac-goc-nhon", lessonNumber: 11, title: "Bài 11: Tỉ số lượng giác của góc nhọn", strand: "hinhhoc", description: "Định nghĩa sin, cos, tan, cot trong tam giác vuông.", keyFormulas: ["\\sin \\alpha = \\frac{\\text{đối}}{\\text{huyền}}", "\\cos \\alpha = \\frac{\\text{kề}}{\\text{huyền}}"], hasInteractive: "geometry" },
           { id: "t9-b12-he-thuc-canh-goc-tam-giac-vuong", lessonNumber: 12, title: "Bài 12: Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng", strand: "hinhhoc", description: "Tính cạnh góc vuông theo cạnh huyền hoặc cạnh kề.", keyFormulas: ["b = a \\sin B = a \\cos C = c \\tan B"], hasInteractive: "geometry" },
+          { id: "t9-on-tap-chuong-4", lessonNumber: 0, title: "Ôn tập cuối chương IV", strand: "hinhhoc", description: "Hệ thống hóa kiến thức Tỉ số lượng giác và Hệ thức giữa cạnh và góc trong tam giác vuông, luyện 3 đề chuẩn Bộ GD&ĐT.", keyFormulas: ["\\sin \\alpha = \\frac{\\text{đối}}{\\text{huyền}}", "b = a \\sin B = c \\tan B"], hasInteractive: "geometry" },
         ],
       },
       {

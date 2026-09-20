@@ -4882,4 +4882,584 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       }
     ]
   },
+  // ==========================================
+  // BÀI 7: CĂN BẬC HAI VÀ CĂN THỨC BẬC HAI
+  // ==========================================
+  // ==========================================
+  // BÀI 7: CĂN BẬC HAI VÀ CĂN THỨC BẬC HAI
+  // ==========================================
+  "t9-b7-can-bac-hai-can-thuc": {
+  "quizQuestions": [
+    {
+      "id": "ai-9.7.1",
+      "badge": "Luyện thêm 1 - Căn bậc hai số học của số chính phương",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Căn bậc hai số học của số $100$ là:",
+      "options": [
+        "$10$",
+        "$-10$",
+        "$\\pm 10$",
+        "$10000$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $10 > 0$ và $10^2 = 100$ nên căn bậc hai số học của $100$ là $\\sqrt{100} = 10$."
+    },
+    {
+      "id": "ai-9.7.2",
+      "badge": "Luyện thêm 2 - Tìm các căn bậc hai của một số",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Các căn bậc hai của số $0,64$ là:",
+      "options": [
+        "$0,8$ và $-0,8$",
+        "$0,8$",
+        "$-0,8$",
+        "$0,08$ và $-0,08$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số dương $0,64$ có hai căn bậc hai là $0,8$ và $-0,8$ vì $(\\pm 0,8)^2 = 0,64$."
+    },
+    {
+      "id": "ai-9.7.3",
+      "badge": "Luyện thêm 3 - Căn bậc hai số học của phân số",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Căn bậc hai số học của $\\frac{9}{16}$ là:",
+      "options": [
+        "$\\frac{3}{4}$",
+        "$\\pm \\frac{3}{4}$",
+        "$-\\frac{3}{4}$",
+        "$\\frac{81}{256}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\frac{3}{4} > 0$ và $\\left(\\frac{3}{4}\\right)^2 = \\frac{9}{16}$ nên căn bậc hai số học là $\\frac{3}{4}$."
+    },
+    {
+      "id": "ai-9.7.4",
+      "badge": "Luyện thêm 4 - So sánh hai số chứa căn",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "So sánh hai số $6$ và $\\sqrt{37}$:",
+      "options": [
+        "$6 < \\sqrt{37}$",
+        "$6 > \\sqrt{37}$",
+        "$6 = \\sqrt{37}$",
+        "Không so sánh được"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $6 = \\sqrt{36}$. Vì $36 < 37$ nên $\\sqrt{36} < \\sqrt{37}$, do đó $6 < \\sqrt{37}$."
+    },
+    {
+      "id": "ai-9.7.5",
+      "badge": "Luyện thêm 5 - Điều kiện xác định căn thức",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Căn thức bậc hai $\\sqrt{5x - 10}$ xác định khi và chỉ khi:",
+      "options": [
+        "$x \\ge 2$",
+        "$x > 2$",
+        "$x \\le 2$",
+        "$x < 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$5x - 10 \\ge 0 \\Leftrightarrow 5x \\ge 10 \\Leftrightarrow x \\ge 2$."
+    },
+    {
+      "id": "ai-9.7.6",
+      "badge": "Luyện thêm 6 - Điều kiện căn thức hệ số âm",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Căn thức bậc hai $\\sqrt{6 - 3x}$ có nghĩa khi và chỉ khi:",
+      "options": [
+        "$x \\le 2$",
+        "$x \\ge 2$",
+        "$x < 2$",
+        "$x \\ge -2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$6 - 3x \\ge 0 \\Leftrightarrow -3x \\ge -6 \\Leftrightarrow x \\le 2$."
+    },
+    {
+      "id": "ai-9.7.7",
+      "badge": "Luyện thêm 7 - Áp dụng hằng đẳng thức căn bình phương",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Giá trị của biểu thức $\\sqrt{(-11)^2}$ bằng:",
+      "options": [
+        "$11$",
+        "$-11$",
+        "$\\pm 11$",
+        "$121$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{(-11)^2} = |-11| = 11$."
+    },
+    {
+      "id": "ai-9.7.8",
+      "badge": "Luyện thêm 8 - Rút gọn căn thức hiệu hai số",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Rút gọn biểu thức $\\sqrt{(\\sqrt{5} - 3)^2}$ ta được:",
+      "options": [
+        "$3 - \\sqrt{5}$",
+        "$\\sqrt{5} - 3$",
+        "$\\sqrt{5} + 3$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\sqrt{5} < \\sqrt{9} = 3 \\implies \\sqrt{5} - 3 < 0$, nên $|\\sqrt{5} - 3| = 3 - \\sqrt{5}$."
+    },
+    {
+      "id": "ai-9.7.9",
+      "badge": "Luyện thêm 9 - Tính giá trị biểu thức căn",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Giá trị của biểu thức $M = \\sqrt{36} + \\sqrt{64} - \\sqrt{49}$ là:",
+      "options": [
+        "$7$",
+        "$9$",
+        "$5$",
+        "$11$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$M = 6 + 8 - 7 = 7$."
+    },
+    {
+      "id": "ai-9.7.10",
+      "badge": "Luyện thêm 10 - Tìm x không âm từ căn bậc hai",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Tìm $x$ không âm biết $\\sqrt{x} = 9$:",
+      "options": [
+        "$x = 81$",
+        "$x = 3$",
+        "$x = 9$",
+        "$x = 18$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x = 9^2 = 81$."
+    },
+    {
+      "id": "ai-9.7.11",
+      "badge": "Luyện thêm 11 - Điều kiện căn thức phân thức dương",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Biểu thức $\\sqrt{\\frac{2}{3x - 9}}$ có nghĩa khi và chỉ khi:",
+      "options": [
+        "$x > 3$",
+        "$x \\ge 3$",
+        "$x < 3$",
+        "$x \\ne 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tử số $2 > 0$ nên mẫu số $3x - 9 > 0 \\Leftrightarrow x > 3$."
+    },
+    {
+      "id": "ai-9.7.12",
+      "badge": "Luyện thêm 12 - Rút gọn biểu thức chứa biến âm",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Rút gọn biểu thức $B = \\sqrt{16x^2} - 5x$ với $x < 0$ ta được:",
+      "options": [
+        "$-9x$",
+        "$-x$",
+        "$9x$",
+        "$x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{16x^2} = |4x|$. Vì $x < 0$ nên $|4x| = -4x \\implies B = -4x - 5x = -9x$."
+    },
+    {
+      "id": "ai-9.7.13",
+      "badge": "Luyện thêm 13 - Giải phương trình căn thức cơ bản",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Nghiệm của phương trình $\\sqrt{x + 4} = 6$ là:",
+      "options": [
+        "$x = 32$",
+        "$x = 2$",
+        "$x = 8$",
+        "$x = 40$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x + 4 = 6^2 = 36 \\Leftrightarrow x = 32$ (thỏa mãn)."
+    },
+    {
+      "id": "ai-9.7.14",
+      "badge": "Luyện thêm 14 - Tìm nghiệm phương trình căn bình phương",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Tập nghiệm của phương trình $\\sqrt{x^2 - 2x + 1} = 4$ là:",
+      "options": [
+        "$S = \\{5; -3\\}$",
+        "$S = \\{5\\}$",
+        "$S = \\{-3\\}$",
+        "$S = \\{3; -5\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt{(x - 1)^2} = 4 \\Leftrightarrow |x - 1| = 4 \\Leftrightarrow x - 1 = 4$ hoặc $x - 1 = -4 \\Leftrightarrow x = 5$ hoặc $x = -3$."
+    },
+    {
+      "id": "ai-9.7.15",
+      "badge": "Luyện thêm 15 - Rút gọn hằng đẳng thức chứa biến",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Rút gọn biểu thức $K = \\sqrt{x^2 - 6x + 9} + 2x$ với $x \\ge 3$ ta được:",
+      "options": [
+        "$3x - 3$",
+        "$x + 3$",
+        "$-3x + 3$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$K = |x - 3| + 2x$. Vì $x \\ge 3$ nên $|x - 3| = x - 3 \\implies K = x - 3 + 2x = 3x - 3$."
+    },
+    {
+      "id": "ai-9.7.16",
+      "badge": "Luyện thêm 16 - Giá trị nhỏ nhất của biểu thức chứa căn",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Giá trị nhỏ nhất của biểu thức $B = \\sqrt{2x - 6} - 3$ bằng:",
+      "options": [
+        "$-3$",
+        "$3$",
+        "$0$",
+        "$-6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $\\sqrt{2x - 6} \\ge 0$ nên $B \\ge -3$. Đạt tại $x = 3$."
+    },
+    {
+      "id": "ai-9.7.17",
+      "badge": "Luyện thêm 17 - Bất phương trình căn bậc hai",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Tập hợp các số thực $x$ không âm thỏa mãn $\\sqrt{x} < 5$ là:",
+      "options": [
+        "$0 \\le x < 25$",
+        "$x < 25$",
+        "$x < 5$",
+        "$0 \\le x < 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điều kiện $x \\ge 0$. Ta có $\\sqrt{x} < 5 \\Leftrightarrow x < 25$. Kết hợp điều kiện: $0 \\le x < 25$."
+    },
+    {
+      "id": "ai-9.7.18",
+      "badge": "Luyện thêm 18 - Bài toán thực tế: Sân chơi hình vuông",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Một sân chơi trường mầm non hình vuông có diện tích $64\\text{ m}^2$. Người ta muốn viền hàng rào nhựa bảo vệ xung quanh sân chơi đó. Chiều dài hàng rào nhựa cần mua là bao nhiêu mét?",
+      "options": [
+        "$32\\text{ m}$",
+        "$16\\text{ m}$",
+        "$8\\text{ m}$",
+        "$24\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ dài cạnh sân chơi hình vuông: $a = \\sqrt{64} = 8\\text{ m}$. Chiều dài hàng rào là chu vi: $4 \\times 8 = 32\\text{ m}$."
+    },
+    {
+      "id": "ai-9.7.19",
+      "badge": "Luyện thêm 19 - Bài toán thực tế: Vận tốc rơi chạm đáy",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Một quả bóng rơi tự do từ tầng thượng tòa nhà cao $40\\text{ m}$ xuống đất. Cho gia tốc trọng trường $g \\approx 9,8\\text{ m/s}^2$ và công thức vận tốc chạm đất $v = \\sqrt{2gh}$. Vận tốc chạm đất của quả bóng (làm tròn hàng đơn vị) là:",
+      "options": [
+        "$28\\text{ m/s}$",
+        "$20\\text{ m/s}$",
+        "$32\\text{ m/s}$",
+        "$25\\text{ m/s}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$v = \\sqrt{2 \\times 9,8 \\times 40} = \\sqrt{784} = 28\\text{ m/s}$."
+    },
+    {
+      "id": "ai-9.7.20",
+      "badge": "Luyện thêm 20 - Bài toán thực tế: Khoảng cách tầm nhìn",
+      "isAiGenerated": true,
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "question": "Tầm nhìn xa của mắt người quan sát ở độ cao $h$ (mét) so với mặt nước biển được tính xấp xỉ bởi công thức $d = 3,57\\sqrt{h}$ (hải lý). Để có tầm nhìn xa là $35,7\\text{ hải lý}$ thì người quan sát cần ở độ cao bao nhiêu mét?",
+      "options": [
+        "$100\\text{ m}$",
+        "$10\\text{ m}$",
+        "$50\\text{ m}$",
+        "$200\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$35,7 = 3,57\\sqrt{h} \\implies \\sqrt{h} = 10 \\implies h = 10^2 = 100\\text{ m}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-9.7.1",
+      "badge": "Luyện thêm TF 1 - Căn bậc hai và căn bậc hai số học",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về căn bậc hai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số $121$ có hai căn bậc hai là $11$ và $-11$.",
+          "correctAnswer": true,
+          "explanation": "Mỗi số dương có hai căn bậc hai là $\\pm \\sqrt{121} = \\pm 11$."
+        },
+        {
+          "id": "b",
+          "text": "Căn bậc hai số học của $121$ là $\\sqrt{121} = 11$.",
+          "correctAnswer": true,
+          "explanation": "Căn bậc hai số học luôn mang giá trị không âm."
+        },
+        {
+          "id": "c",
+          "text": "Số $-25$ có căn bậc hai số học là $-5$.",
+          "correctAnswer": false,
+          "explanation": "Số âm không có căn bậc hai."
+        },
+        {
+          "id": "d",
+          "text": "Ta có $\\sqrt{(-9)^2} = -9$.",
+          "correctAnswer": false,
+          "explanation": "$\\sqrt{(-9)^2} = |-9| = 9 \\ne -9$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.7.2",
+      "badge": "Luyện thêm TF 2 - So sánh căn bậc hai số học",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Xét tính đúng/sai của các so sánh sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ta có $7 = \\sqrt{49} > \\sqrt{48}$, suy ra $7 > \\sqrt{48}$.",
+          "correctAnswer": true,
+          "explanation": "$49 > 48 \\implies \\sqrt{49} > \\sqrt{48}$."
+        },
+        {
+          "id": "b",
+          "text": "Ta có $\\sqrt{10} < 3$ vì $10 < 9$.",
+          "correctAnswer": false,
+          "explanation": "$10 > 9$ nên $\\sqrt{10} > 3$, khẳng định này sai."
+        },
+        {
+          "id": "c",
+          "text": "Với $x \\ge 0$, nếu $\\sqrt{x} > 6$ thì $x > 36$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{x} > \\sqrt{36} \\Leftrightarrow x > 36$."
+        },
+        {
+          "id": "d",
+          "text": "Với $x \\ge 0$, nếu $\\sqrt{x} < 1$ thì $0 \\le x < 1$.",
+          "correctAnswer": true,
+          "explanation": "Kết hợp $x \\ge 0$ và $x < 1^2 = 1$ ta được $0 \\le x < 1$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.7.3",
+      "badge": "Luyện thêm TF 3 - Điều kiện xác định căn thức",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về điều kiện có nghĩa của căn thức:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Căn thức $\\sqrt{4x - 8}$ xác định khi và chỉ khi $x \\ge 2$.",
+          "correctAnswer": true,
+          "explanation": "$4x - 8 \\ge 0 \\Leftrightarrow x \\ge 2$."
+        },
+        {
+          "id": "b",
+          "text": "Căn thức $\\sqrt{10 - 2x}$ xác định khi và chỉ khi $x \\le 5$.",
+          "correctAnswer": true,
+          "explanation": "$10 - 2x \\ge 0 \\Leftrightarrow -2x \\ge -10 \\Leftrightarrow x \\le 5$."
+        },
+        {
+          "id": "c",
+          "text": "Căn thức $\\sqrt{-x^2}$ không xác định với bất kì giá trị nào của $x$.",
+          "correctAnswer": false,
+          "explanation": "Tại $x = 0$, biểu thức dưới căn bằng $0 \\ge 0$, do đó căn thức vẫn xác định tại $x = 0$."
+        },
+        {
+          "id": "d",
+          "text": "Căn thức $\\sqrt{x^2 + 4}$ xác định với mọi số thực $x \\in \\mathbb{R}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $x^2 + 4 \\ge 4 > 0, \\forall x$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.7.4",
+      "badge": "Luyện thêm TF 4 - Hằng đẳng thức căn(A^2) = |A|",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Xét tính đúng/sai của các phép tính sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt{(3 - \\sqrt{11})^2} = \\sqrt{11} - 3$.",
+          "correctAnswer": true,
+          "explanation": "Vì $3 < \\sqrt{11}$ nên $|3 - \\sqrt{11}| = \\sqrt{11} - 3$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{(5 - \\sqrt{21})^2} = 5 - \\sqrt{21}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $5 = \\sqrt{25} > \\sqrt{21}$ nên $5 - \\sqrt{21} > 0$, suy ra $|5 - \\sqrt{21}| = 5 - \\sqrt{21}$."
+        },
+        {
+          "id": "c",
+          "text": "Với $a < 0$, ta có $\\sqrt{25a^2} = 5a$.",
+          "correctAnswer": false,
+          "explanation": "Vì $a < 0$ nên $\\sqrt{25a^2} = |5a| = -5a \\ne 5a$."
+        },
+        {
+          "id": "d",
+          "text": "Với $x \\ge 1$, ta có $\\sqrt{x^2 - 2x + 1} = x - 1$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{(x - 1)^2} = |x - 1| = x - 1$ do $x \\ge 1$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.7.5",
+      "badge": "Luyện thêm TF 5 - Giải phương trình chứa căn",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Cho phương trình: $\\sqrt{3x + 1} = 4$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điều kiện xác định của phương trình là $x \\ge -\\frac{1}{3}$.",
+          "correctAnswer": true,
+          "explanation": "$3x + 1 \\ge 0 \\Leftrightarrow x \\ge -\\frac{1}{3}$."
+        },
+        {
+          "id": "b",
+          "text": "Bình phương hai vế phương trình ta được: $3x + 1 = 16$.",
+          "correctAnswer": true,
+          "explanation": "$4^2 = 16$."
+        },
+        {
+          "id": "c",
+          "text": "Nghiệm của phương trình là $x = 5$.",
+          "correctAnswer": true,
+          "explanation": "$3x = 15 \\Leftrightarrow x = 5$ (thỏa mãn ĐKXĐ)."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị $x = -5$ cũng là một nghiệm của phương trình.",
+          "correctAnswer": false,
+          "explanation": "Thay $x = -5$: $3(-5) + 1 = -14 < 0$ (không xác định), nên không phải nghiệm."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.7.6",
+      "badge": "Luyện thêm TF 6 - Bài toán thực tế: Tấm bạt che hình vuông",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Một chiếc bạt che sân hình vuông có diện tích là $49\\text{ m}^2$. Người ta may thêm viền phản quang xung quanh mép bạt. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài mỗi cạnh của chiếc bạt che là $\\sqrt{49} = 7\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Cạnh hình vuông bằng $\\sqrt{49} = 7\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Tổng chiều dài viền phản quang cần may là $28\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Chu vi hình vuông là $4 \\times 7 = 28\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Nếu diện tích bạt tăng gấp 4 lần ($196\\text{ m}^2$) thì cạnh của bạt tăng gấp 4 lần.",
+          "correctAnswer": false,
+          "explanation": "Cạnh bạt mới là $\\sqrt{196} = 14\\text{ m}$, chỉ tăng gấp 2 lần so với ban đầu (vì $\\sqrt{4} = 2$)."
+        },
+        {
+          "id": "d",
+          "text": "Với giá dây viền phản quang là $15\\,000$ đồng/mét, chi phí may viền chiếc bạt $49\\text{ m}^2$ là $420\\,000$ đồng.",
+          "correctAnswer": true,
+          "explanation": "$28 \\times 15\\,000 = 420\\,000$ đồng."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-9.7.1",
+      "badge": "Luyện thêm SA 1 - Căn bậc hai số học",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Căn bậc hai số học của số $169$ bằng bao nhiêu?",
+      "correctAnswer": "13",
+      "acceptableAnswers": [
+        "13",
+        "13.0"
+      ],
+      "explanation": "Vì $13 > 0$ và $13^2 = 169$ nên $\\sqrt{169} = 13$."
+    },
+    {
+      "id": "ai-sa-9.7.2",
+      "badge": "Luyện thêm SA 2 - Tính giá trị biểu thức số",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Tính giá trị của biểu thức: $\\sqrt{225} - \\sqrt{64}$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7",
+        "7.0"
+      ],
+      "explanation": "$\\sqrt{225} = 15, \\sqrt{64} = 8 \\implies 15 - 8 = 7$."
+    },
+    {
+      "id": "ai-sa-9.7.3",
+      "badge": "Luyện thêm SA 3 - Cận điều kiện xác định",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Căn thức $\\sqrt{3x - 15}$ xác định với mọi $x \\ge a$. Giá trị của số $a$ bằng bao nhiêu?",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "5.0"
+      ],
+      "explanation": "$3x - 15 \\ge 0 \\Leftrightarrow 3x \\ge 15 \\Leftrightarrow x \\ge 5$. Vậy $a = 5$."
+    },
+    {
+      "id": "ai-sa-9.7.4",
+      "badge": "Luyện thêm SA 4 - Áp dụng hằng đẳng thức",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Tính giá trị của biểu thức: $B = \\sqrt{(\\sqrt{7} - 4)^2} + \\sqrt{7}$.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4.0"
+      ],
+      "explanation": "Vì $\\sqrt{7} < \\sqrt{16} = 4$ nên $|\\sqrt{7} - 4| = 4 - \\sqrt{7}$. Khi đó $B = 4 - \\sqrt{7} + \\sqrt{7} = 4$."
+    },
+    {
+      "id": "ai-sa-9.7.5",
+      "badge": "Luyện thêm SA 5 - Giải phương trình căn thức",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Tìm nghiệm của phương trình: $\\sqrt{3x + 4} = 5$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7",
+        "x = 7"
+      ],
+      "explanation": "$3x + 4 = 5^2 = 25 \\Leftrightarrow 3x = 21 \\Leftrightarrow x = 7$."
+    },
+    {
+      "id": "ai-sa-9.7.6",
+      "badge": "Luyện thêm SA 6 - Bài toán thực tế: Chiều dài cạnh sàn gạch",
+      "source": "Bộ Đề Tự Luyện Toán 9 - Bài 7",
+      "prompt": "Một sân gạch hình vuông có diện tích bằng $100\\text{ m}^2$. Độ dài cạnh của sân gạch đó là bao nhiêu mét?",
+      "correctAnswer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10.0",
+        "10m",
+        "10 m"
+      ],
+      "explanation": "Độ dài cạnh hình vuông bằng $\\sqrt{100} = 10\\text{ m}$."
+    }
+  ]
+},
 };

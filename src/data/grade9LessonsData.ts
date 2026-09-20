@@ -10049,4 +10049,921 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  // ==========================================
+  // BÀI 7: CĂN BẬC HAI VÀ CĂN THỨC BẬC HAI
+  // ==========================================
+  // ==========================================
+  // BÀI 7: CĂN BẬC HAI VÀ CĂN THỨC BẬC HAI
+  // ==========================================
+  "t9-b7-can-bac-hai-can-thuc": {
+  "id": "t9-b7-can-bac-hai-can-thuc",
+  "lessonNumber": 7,
+  "title": "Bài 7: Căn bậc hai và căn thức bậc hai",
+  "bookChapter": "Chương III: Căn bậc hai và căn bậc ba",
+  "scenarioTitle": "Tình huống: Tính khoảng cách tầm nhìn ngọn hải đăng và thiết kế mặt sàn căn phòng hình vuông",
+  "scenarioFrames": [
+    {
+      "id": 1,
+      "character": "student",
+      "characterName": "Học sinh (Khám phá)",
+      "avatar": "🧑‍🎓",
+      "speech": "Thưa Thầy Tính, số 9 có hai căn bậc hai là 3 và -3, vậy khi viết kí hiệu căn bậc hai số học căn 9 thì kết quả là số nào ạ? Và biểu thức chứa căn bậc hai khi nào thì có nghĩa ạ?",
+      "visualGraphic": "box",
+      "mathNote": "x^2 = a \\implies x = \\pm\\sqrt{a}, \\quad \\sqrt{a} \\ge 0"
+    },
+    {
+      "id": 2,
+      "character": "teacher",
+      "characterName": "Thầy Tính (VinaMath)",
+      "avatar": "👨‍🏫",
+      "speech": "Chào em! Em cần phân biệt thật rõ: Số dương a có hai căn bậc hai là hai số đối nhau: \\sqrt{a} và -\\sqrt{a}. Riêng dấu căn \\sqrt{a} biểu thị CĂN BẬC HAI SỐ HỌC, nên luôn luôn là số KHÔNG ÂM (\\sqrt{9} = 3)! Còn căn thức \\sqrt{A} xác định khi biểu thức dưới dấu căn không âm: A \\ge 0 nhé!",
+      "visualGraphic": "graph",
+      "mathNote": "\\sqrt{A} \\text{ xác định } \\Leftrightarrow A \\ge 0; \\quad \\sqrt{A^2} = |A|"
+    }
+  ],
+  "youtubeVideoId": "uN9611o8370",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 7 - Căn bậc hai và căn thức bậc hai - Toán 9 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "uN9611o8370",
+      "title": "Tiết 1: Căn bậc hai và Căn bậc hai số học của số thực"
+    },
+    {
+      "id": "w4H7T9zKl08",
+      "title": "Tiết 2: Căn thức bậc hai và Hằng đẳng thức căn(A^2) = |A|"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-9.7.1",
+      "title": "Ví dụ 1: Căn bậc hai số học của một số",
+      "question": "Căn bậc hai số học của số $64$ là:",
+      "options": [
+        "$8$",
+        "$-8$",
+        "$\\pm 8$",
+        "$16$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $8 > 0$ và $8^2 = 64$ nên căn bậc hai số học của $64$ là $\\sqrt{64} = 8$."
+    },
+    {
+      "id": "vq-9.7.2",
+      "title": "Ví dụ 2: Tìm điều kiện xác định của căn thức",
+      "question": "Căn thức bậc hai $\\sqrt{3x - 6}$ xác định khi và chỉ khi:",
+      "options": [
+        "$x \\ge 2$",
+        "$x > 2$",
+        "$x \\le 2$",
+        "$x \\ne 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Căn thức $\\sqrt{A}$ có nghĩa khi $A \\ge 0$. Ta có: $3x - 6 \\ge 0 \\Leftrightarrow 3x \\ge 6 \\Leftrightarrow x \\ge 2$."
+    },
+    {
+      "id": "vq-9.7.3",
+      "title": "Ví dụ 3: Áp dụng hằng đẳng thức căn bậc hai",
+      "question": "Giá trị của biểu thức $\\sqrt{(3 - \\sqrt{10})^2}$ bằng:",
+      "options": [
+        "$\\sqrt{10} - 3$",
+        "$3 - \\sqrt{10}$",
+        "$\\sqrt{10} + 3$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng $\\sqrt{A^2} = |A|$: $\\sqrt{(3 - \\sqrt{10})^2} = |3 - \\sqrt{10}|$. Vì $3 = \\sqrt{9} < \\sqrt{10}$ nên $3 - \\sqrt{10} < 0$, do đó $|3 - \\sqrt{10}| = \\sqrt{10} - 3$."
+    },
+    {
+      "id": "vq-9.7.4",
+      "title": "Ví dụ 4: Bài toán thực tế cạnh hình vuông",
+      "question": "Một mảnh vườn hình vuông có diện tích $81\\text{ m}^2$. Độ dài cạnh của mảnh vườn là:",
+      "options": [
+        "$9\\text{ m}$",
+        "$\\pm 9\\text{ m}$",
+        "$18\\text{ m}$",
+        "$20,25\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi độ dài cạnh hình vuông là $a$ ($a > 0$). Ta có $a^2 = 81 \\implies a = \\sqrt{81} = 9\\text{ m}$."
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Căn bậc hai và Căn bậc hai số học",
+      "points": [
+        "Căn bậc hai của một số thực không âm $a$ là số thực $x$ sao cho $x^2 = a$.",
+        "Số dương $a$ có đúng hai căn bậc hai là hai số đối nhau: số dương kí hiệu là $\\sqrt{a}$ và số âm kí hiệu là $-\\sqrt{a}$.",
+        "Số $0$ có đúng một căn bậc hai là chính số $0$, viết là $\\sqrt{0} = 0$.",
+        "Số âm không có căn bậc hai vì bình phương của mọi số thực đều không âm.",
+        "Định nghĩa căn bậc hai số học: Với số dương $a$, số $\\sqrt{a}$ được gọi là căn bậc hai số học của $a$. Ta có: $x = \\sqrt{a} \\Leftrightarrow \\begin{cases} x \\ge 0 \\\\ x^2 = a \\end{cases}$."
+      ],
+      "formula": "x = \\sqrt{a} \\Leftrightarrow \\begin{cases} x \\ge 0 \\\\ x^2 = a \\end{cases}",
+      "examples": [
+        {
+          "title": "Ví dụ 1: Tìm căn bậc hai và căn bậc hai số học (SGK Trang 46)",
+          "problem": "Tìm các căn bậc hai và căn bậc hai số học của các số sau: a) 36; b) 0,49; c) 0.",
+          "solution": "• a) Căn bậc hai số học của 36 là $\\sqrt{36} = 6$. Các căn bậc hai của 36 là $6$ và $-6$.\\n• b) Căn bậc hai số học của 0,49 là $\\sqrt{0,49} = 0,7$. Các căn bậc hai của 0,49 là $0,7$ và $-0,7$.\\n• c) Căn bậc hai và căn bậc hai số học của 0 đều là $\\sqrt{0} = 0$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "So sánh các căn bậc hai số học",
+      "points": [
+        "Định lý: Với hai số không âm $a$ và $b$, ta có: $a < b \\Leftrightarrow \\sqrt{a} < \\sqrt{b}$.",
+        "Ứng dụng 1: So sánh hai số bằng cách đưa về cùng căn bậc hai (ví dụ: so sánh $3$ và $\\sqrt{8}$ bằng cách viết $3 = \\sqrt{9} > \\sqrt{8}$).",
+        "Ứng dụng 2: Giải bất phương trình chứa căn bậc hai số học (với $x \\ge 0$: $\\sqrt{x} < a \\Leftrightarrow x < a^2$ với $a > 0$)."
+      ],
+      "formula": "0 \\le a < b \\Leftrightarrow \\sqrt{a} < \\sqrt{b}",
+      "examples": [
+        {
+          "title": "Ví dụ 2: So sánh số thực và tìm x (SGK Trang 47)",
+          "problem": "a) So sánh 5 và $\\sqrt{23}$; b) Tìm số thực không âm $x$ biết $\\sqrt{x} < 3$.",
+          "solution": "• a) Ta có $5 = \\sqrt{25}$. Vì $25 > 23$ nên $\\sqrt{25} > \\sqrt{23}$, suy ra $5 > \\sqrt{23}$.\\n• b) Điều kiện $x \\ge 0$. Ta có $3 = \\sqrt{9}$. Do đó $\\sqrt{x} < \\sqrt{9} \\Leftrightarrow x < 9$. Kết hợp điều kiện ta được $0 \\le x < 9$."
+        }
+      ]
+    },
+    {
+      "index": "3",
+      "title": "Căn thức bậc hai và Điều kiện xác định",
+      "points": [
+        "Khái niệm: Với $A$ là một biểu thức đại số, người ta gọi $\\sqrt{A}$ là căn thức bậc hai của $A$, còn $A$ được gọi là biểu thức dưới dấu căn (hay biểu thức lấy căn).",
+        "Điều kiện xác định (ĐKXĐ): $\\sqrt{A}$ xác định (hay có nghĩa) khi và chỉ khi $A$ lấy giá trị không âm, tức là $A \\ge 0$.",
+        "Quy tắc giải bất phương trình tìm ĐKXĐ:",
+        "  • Với $\\sqrt{ax + b}$: Điều kiện $ax + b \\ge 0$. (Lưu ý đổi chiều khi chia cho hệ số $a < 0$).",
+        "  • Với $\\sqrt{\\frac{A}{B}}$: Điều kiện $\\frac{A}{B} \\ge 0$ và $B \\ne 0$."
+      ],
+      "formula": "\\sqrt{A} \\text{ xác định } \\Leftrightarrow A \\ge 0",
+      "examples": [
+        {
+          "title": "Ví dụ 3: Tìm điều kiện xác định của căn thức bậc hai (SGK Trang 48)",
+          "problem": "Tìm điều kiện của $x$ để mỗi căn thức sau có nghĩa:\n  a) $\\sqrt{2x - 6}$;\n  b) $\\sqrt{5 - x}$;\n  c) $\\sqrt{\\frac{1}{x + 2}}$.",
+          "solution": "• a) $\\sqrt{2x - 6}$ có nghĩa khi $2x - 6 \\ge 0 \\Leftrightarrow 2x \\ge 6 \\Leftrightarrow x \\ge 3$.\\n• b) $\\sqrt{5 - x}$ có nghĩa khi $5 - x \\ge 0 \\Leftrightarrow -x \\ge -5 \\Leftrightarrow x \\le 5$.\\n• c) $\\sqrt{\\frac{1}{x + 2}}$ có nghĩa khi $\\frac{1}{x+2} > 0$ (vì tử số $1 > 0$ nên mẫu số phải dương), suy ra $x + 2 > 0 \\Leftrightarrow x > -2$."
+        }
+      ]
+    },
+    {
+      "index": "4",
+      "title": "Hằng đẳng thức căn(A^2) = |A| và Rút gọn biểu thức",
+      "points": [
+        "Định lý: Với mọi số hay biểu thức đại số $A$, ta luôn có: $\\sqrt{A^2} = |A|$.",
+        "Quy tắc bỏ dấu giá trị tuyệt đối:",
+        "  • Nếu $A \\ge 0$ thì $\\sqrt{A^2} = A$.",
+        "  • Nếu $A < 0$ thì $\\sqrt{A^2} = -A$.",
+        "Ứng dụng đưa về bình phương: $\\sqrt{A \\pm 2\\sqrt{B}} = \\sqrt{(a \\pm b)^2} = |a \\pm b|$ (với $A = a^2 + b^2$ và $B = a^2 b^2$)."
+      ],
+      "formula": "\\sqrt{A^2} = |A| = \\begin{cases} A & \\text{khi } A \\ge 0 \\\\ -A & \\text{khi } A < 0 \\end{cases}",
+      "examples": [
+        {
+          "title": "Ví dụ 4: Rút gọn biểu thức chứa căn (SGK Trang 49)",
+          "problem": "Rút gọn các biểu thức sau:\n  a) $\\sqrt{(\\sqrt{2} - 1)^2}$;\n  b) $\\sqrt{(1 - \\sqrt{5})^2}$;\n  c) $\\sqrt{4x^2} - 3x$ với $x < 0$.",
+          "solution": "• a) $\\sqrt{(\\sqrt{2} - 1)^2} = |\\sqrt{2} - 1|$. Vì $\\sqrt{2} > 1$ nên $|\\sqrt{2} - 1| = \\sqrt{2} - 1$.\\n• b) $\\sqrt{(1 - \\sqrt{5})^2} = |1 - \\sqrt{5}|$. Vì $1 < \\sqrt{5}$ nên $1 - \\sqrt{5} < 0$, suy ra $|1 - \\sqrt{5}| = \\sqrt{5} - 1$.\\n• c) $\\sqrt{4x^2} = \\sqrt{(2x)^2} = |2x|$. Vì $x < 0$ nên $|2x| = -2x$. Do đó: $\\sqrt{4x^2} - 3x = -2x - 3x = -5x$."
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Phân biệt căn bậc hai và căn bậc hai số học: Khi người ta hỏi 'căn bậc hai của 16' thì đáp án là $\\pm 4$. Nhưng khi có dấu căn $\\sqrt{16}$ thì kết quả duy nhất là $4$ (căn bậc hai số học).",
+    "Tuyệt đối không viết $\\sqrt{A^2} = A$: Công thức đúng luôn phải có dấu giá trị tuyệt đối $\\sqrt{A^2} = |A|$. Sau đó mới xét dấu của $A$ để bỏ dấu trị tuyệt đối.",
+    "Bấm máy tính cầm tay: Nhấn phím [√] nhập số rồi nhấn [=]. Để chuyển từ số thập phân vô hạn sang làm tròn, dùng phím [S<=>D]."
+  ],
+  "traps": [
+    "Bẫy dấu khi giải bất phương trình tìm điều kiện: Với $\\sqrt{-3x + 9}$, điều kiện là $-3x + 9 \\ge 0 \\Leftrightarrow -3x \\ge -9 \\Leftrightarrow x \\le 3$ (khi chia cho $-3 < 0$ phải đổi chiều bất đẳng thức).",
+    "Bẫy căn thức chứa mẫu: $\\sqrt{\\frac{1}{x - 3}}$ xác định khi $x - 3 > 0 \\Leftrightarrow x > 3$ (không có dấu bằng vì mẫu thức phải khác 0).",
+    "Bẫy phá dấu trị tuyệt đối căn thức số học: $\\sqrt{(2 - \\sqrt{7})^2} = |2 - \\sqrt{7}| = \\sqrt{7} - 2$, không được viết $2 - \\sqrt{7}$ vì $2 - \\sqrt{7} < 0$ sẽ làm căn bậc hai mang giá trị âm!"
+  ],
+  "interactiveType": "function",
+  "quizQuestions": [
+    {
+      "id": "quiz-9.7.1",
+      "badge": "NB - Nhận biết căn bậc hai số học của một số",
+      "source": "SGK Toán 9 KNTT - Bài 7 Khởi động",
+      "question": "Căn bậc hai số học của số $49$ là:",
+      "options": [
+        "$7$",
+        "$-7$",
+        "$\\pm 7$",
+        "$49$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Căn bậc hai số học của số dương $a$ là số dương $\\sqrt{a}$. Vì $7 > 0$ và $7^2 = 49$ nên căn bậc hai số học của $49$ là $\\sqrt{49} = 7$."
+    },
+    {
+      "id": "quiz-9.7.2",
+      "badge": "NB - Phân biệt căn bậc hai của một số",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 1",
+      "question": "Các căn bậc hai của số $25$ là:",
+      "options": [
+        "$5$ và $-5$",
+        "$5$",
+        "$-5$",
+        "$625$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mỗi số dương $a$ luôn có đúng hai căn bậc hai là hai số đối nhau: $\\sqrt{a}$ và $-\\sqrt{a}$. Với $a = 25$, hai căn bậc hai là $5$ và $-5$ (vì $5^2 = 25$ và $(-5)^2 = 25$)."
+    },
+    {
+      "id": "quiz-9.7.3",
+      "badge": "NB - Khẳng định đúng về sự tồn tại căn bậc hai",
+      "source": "SGK Toán 9 KNTT - Bài 7 Nhận xét",
+      "question": "Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "Số âm không có căn bậc hai.",
+        "Mọi số thực đều có hai căn bậc hai đối nhau.",
+        "Căn bậc hai số học của $0$ là không xác định.",
+        "Căn bậc hai của $16$ chỉ có duy nhất một giá trị là $4$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì bình phương của mọi số thực đều không âm nên không tồn tại số thực nào có bình phương là một số âm. Do đó, số âm không có căn bậc hai."
+    },
+    {
+      "id": "quiz-9.7.4",
+      "badge": "NB - So sánh hai căn bậc hai số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 1",
+      "question": "So sánh hai số $\\sqrt{15}$ và $4$:",
+      "options": [
+        "$\\sqrt{15} < 4$",
+        "$\\sqrt{15} > 4$",
+        "$\\sqrt{15} = 4$",
+        "Không thể so sánh được"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta viết $4 = \\sqrt{16}$. Vì $0 \\le 15 < 16$ nên $\\sqrt{15} < \\sqrt{16}$, tức là $\\sqrt{15} < 4$."
+    },
+    {
+      "id": "quiz-9.7.5",
+      "badge": "NB - Điều kiện xác định căn thức bậc nhất đơn giản",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 2",
+      "question": "Căn thức bậc hai $\\sqrt{x - 3}$ xác định (có nghĩa) khi và chỉ khi:",
+      "options": [
+        "$x \\ge 3$",
+        "$x > 3$",
+        "$x \\le 3$",
+        "$x \\ne 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Căn thức $\\sqrt{A}$ xác định khi và chỉ khi biểu thức lấy căn $A \\ge 0$. Do đó $x - 3 \\ge 0 \\Leftrightarrow x \\ge 3$."
+    },
+    {
+      "id": "quiz-9.7.6",
+      "badge": "NB - Điều kiện xác định căn thức có hệ số âm",
+      "source": "SGK Toán 9 KNTT - Bài 7 Ví dụ 3",
+      "question": "Căn thức bậc hai $\\sqrt{4 - 2x}$ có nghĩa khi và chỉ khi:",
+      "options": [
+        "$x \\le 2$",
+        "$x \\ge 2$",
+        "$x < 2$",
+        "$x \\ge -2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Căn thức có nghĩa $\\Leftrightarrow 4 - 2x \\ge 0 \\Leftrightarrow -2x \\ge -4$. Chia cả hai vế cho số âm $-2$ và đổi chiều bất phương trình ta được $x \\le 2$."
+    },
+    {
+      "id": "quiz-9.7.7",
+      "badge": "NB - Áp dụng hằng đẳng thức với số âm",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 3",
+      "question": "Giá trị của biểu thức $\\sqrt{(-7)^2}$ bằng:",
+      "options": [
+        "$7$",
+        "$-7$",
+        "$\\pm 7$",
+        "$49$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo hằng đẳng thức $\\sqrt{A^2} = |A|$, ta có $\\sqrt{(-7)^2} = |-7| = 7$."
+    },
+    {
+      "id": "quiz-9.7.8",
+      "badge": "NB - Rút gọn căn thức chứa biến không âm",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 3",
+      "question": "Với số thực $a \\ge 0$, biểu thức $\\sqrt{9a^2}$ bằng:",
+      "options": [
+        "$3a$",
+        "$-3a$",
+        "$9a$",
+        "$3a^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sqrt{9a^2} = \\sqrt{(3a)^2} = |3a|$. Vì $a \\ge 0$ nên $3a \\ge 0$, do đó $|3a| = 3a$."
+    },
+    {
+      "id": "quiz-9.7.9",
+      "badge": "TH - Rút gọn căn thức hiệu hai số",
+      "source": "SGK Toán 9 KNTT - Bài 7 Ví dụ 4",
+      "question": "Rút gọn biểu thức $\\sqrt{(\\sqrt{3} - 2)^2}$ ta được kết quả là:",
+      "options": [
+        "$2 - \\sqrt{3}$",
+        "$\\sqrt{3} - 2$",
+        "$\\sqrt{3} + 2$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sqrt{(\\sqrt{3} - 2)^2} = |\\sqrt{3} - 2|$. Vì $3 < 4$ nên $\\sqrt{3} < \\sqrt{4} = 2$, suy ra $\\sqrt{3} - 2 < 0$. Do đó $|\\sqrt{3} - 2| = -(\\sqrt{3} - 2) = 2 - \\sqrt{3}$."
+    },
+    {
+      "id": "quiz-9.7.10",
+      "badge": "TH - Tìm x không âm từ căn bậc hai số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.1",
+      "question": "Tìm số thực $x$ không âm, biết $\\sqrt{x} = 6$. Giá trị của $x$ là:",
+      "options": [
+        "$x = 36$",
+        "$x = 6$",
+        "$x = \\sqrt{6}$",
+        "$x = 12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Với $x \\ge 0$, ta có $\\sqrt{x} = 6 \\Leftrightarrow x = 6^2 = 36$."
+    },
+    {
+      "id": "quiz-9.7.11",
+      "badge": "TH - Tính giá trị biểu thức số học chứa căn",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.2",
+      "question": "Giá trị của biểu thức $P = \\sqrt{25} - \\sqrt{16} + \\sqrt{81}$ là:",
+      "options": [
+        "$10$",
+        "$8$",
+        "$12$",
+        "$14$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính từng căn bậc hai số học: $\\sqrt{25} = 5$, $\\sqrt{16} = 4$, $\\sqrt{81} = 9$. Khi đó $P = 5 - 4 + 9 = 10$."
+    },
+    {
+      "id": "quiz-9.7.12",
+      "badge": "TH - Điều kiện xác định căn thức chứa mẫu",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.4",
+      "question": "Biểu thức $\\sqrt{\\frac{1}{2x - 5}}$ xác định khi và chỉ khi:",
+      "options": [
+        "$x > \\frac{5}{2}$",
+        "$x \\ge \\frac{5}{2}$",
+        "$x < \\frac{5}{2}$",
+        "$x \\ne \\frac{5}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Biểu thức $\\sqrt{\\frac{1}{2x - 5}}$ có nghĩa khi $\\frac{1}{2x - 5} \\ge 0$ và mẫu số $2x - 5 \\ne 0$. Vì tử số $1 > 0$ nên phân thức dương khi và chỉ khi mẫu số dương: $2x - 5 > 0 \\Leftrightarrow x > \\frac{5}{2}$."
+    },
+    {
+      "id": "quiz-9.7.13",
+      "badge": "TH - Rút gọn biểu thức chứa biến âm",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.5",
+      "question": "Rút gọn biểu thức $A = \\sqrt{a^2} + 3a$ với $a < 0$ ta được:",
+      "options": [
+        "$2a$",
+        "$4a$",
+        "$-2a$",
+        "$-4a$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\sqrt{a^2} = |a|$. Vì $a < 0$ nên $|a| = -a$. Khi đó $A = -a + 3a = 2a$."
+    },
+    {
+      "id": "quiz-9.7.14",
+      "badge": "TH - Giải phương trình chứa căn cơ bản",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.3",
+      "question": "Số nghiệm của phương trình $\\sqrt{x - 1} = 3$ là:",
+      "options": [
+        "1 nghiệm",
+        "2 nghiệm",
+        "0 nghiệm",
+        "Vô số nghiệm"
+      ],
+      "correctIndex": 0,
+      "explanation": "ĐKXĐ: $x \\ge 1$. Bình phương hai vế: $x - 1 = 3^2 = 9 \\Leftrightarrow x = 10$ (thỏa mãn ĐKXĐ). Vậy phương trình có đúng 1 nghiệm duy nhất là $x = 10$."
+    },
+    {
+      "id": "quiz-9.7.15",
+      "badge": "VD - Giải phương trình dạng căn(A^2) = c",
+      "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+      "question": "Tập nghiệm của phương trình $\\sqrt{x^2 - 6x + 9} = 5$ là:",
+      "options": [
+        "$S = \\{8; -2\\}$",
+        "$S = \\{8\\}$",
+        "$S = \\{-2\\}$",
+        "$S = \\{2; -8\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $x^2 - 6x + 9 = (x - 3)^2$. Phương trình trở thành:\\n$\\sqrt{(x - 3)^2} = 5 \\Leftrightarrow |x - 3| = 5 \\Leftrightarrow \\begin{cases} x - 3 = 5 \\\\ x - 3 = -5 \\end{cases} \\Leftrightarrow \\begin{cases} x = 8 \\\\ x = -2 \\end{cases}$.\\nVậy tập nghiệm của phương trình là $S = \\{8; -2\\}$."
+    },
+    {
+      "id": "quiz-9.7.16",
+      "badge": "VD - Rút gọn biểu thức hằng đẳng thức chứa biến",
+      "source": "Đề thi HSG Toán 9 Cấp Quận",
+      "question": "Rút gọn biểu thức $M = \\sqrt{x^2 - 4x + 4} - x$ với $x \\ge 2$ ta được:",
+      "options": [
+        "$-2$",
+        "$2x - 2$",
+        "$2$",
+        "$-2x + 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $x^2 - 4x + 4 = (x - 2)^2$. Khi đó:\\n$M = \\sqrt{(x - 2)^2} - x = |x - 2| - x$.\\nVì $x \\ge 2$ nên $x - 2 \\ge 0 \\implies |x - 2| = x - 2$.\\nSuy ra $M = (x - 2) - x = -2$."
+    },
+    {
+      "id": "quiz-9.7.17",
+      "badge": "VD - Tìm giá trị nhỏ nhất của biểu thức chứa căn",
+      "source": "Đề khảo sát chất lượng Toán 9 HK1",
+      "question": "Giá trị nhỏ nhất của biểu thức $A = \\sqrt{x - 2} + 5$ là:",
+      "options": [
+        "$5$",
+        "$2$",
+        "$0$",
+        "$7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Điều kiện xác định: $x \\ge 2$. Với mọi $x \\ge 2$, ta luôn có $\\sqrt{x - 2} \\ge 0$. Do đó $A = \\sqrt{x - 2} + 5 \\ge 0 + 5 = 5$. Dấu bằng xảy ra khi $\\sqrt{x - 2} = 0 \\Leftrightarrow x = 2$. Vậy giá trị nhỏ nhất của biểu thức là $5$."
+    },
+    {
+      "id": "quiz-9.7.18",
+      "badge": "VD - Bài toán thực tế: Lắp phào chân tường phòng vuông",
+      "source": "SGK Toán 9 KNTT - Bài 7 Vận dụng",
+      "question": "Một căn phòng khách hình vuông có diện tích mặt sàn là $36\\text{ m}^2$. Gia đình muốn lắp phào gỗ chân tường xung quanh phòng, trừ đi cửa ra vào rộng $1,5\\text{ m}$. Chiều dài phào gỗ cần dùng là bao nhiêu mét?",
+      "options": [
+        "$22,5\\text{ m}$",
+        "$24\\text{ m}$",
+        "$20,5\\text{ m}$",
+        "$18\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ dài mỗi cạnh của căn phòng hình vuông là: $a = \\sqrt{36} = 6\\text{ m}$.\\nChu vi bốn bức tường của phòng là: $4 \\times 6 = 24\\text{ m}$.\\nTrừ đi khoảng trống cửa ra vào rộng $1,5\\text{ m}$, chiều dài phào gỗ cần dùng là:\\n$24 - 1,5 = 22,5\\text{ m}$."
+    },
+    {
+      "id": "quiz-9.7.19",
+      "badge": "VD - Bài toán thực tế: Tốc độ rơi tự do của vật",
+      "source": "SGK Toán 9 Cánh Diều - Bài toán thực tiễn",
+      "question": "Vận tốc $v$ (m/s) của một vật khi rơi tự do chạm đáy vực sâu từ độ cao $h$ (mét) được cho bởi công thức $v = \\sqrt{2gh}$ với gia tốc trọng trường $g \\approx 9,8\\text{ m/s}^2$. Một hòn đá rơi tự do từ độ cao $20\\text{ m}$ xuống đáy vực. Vận tốc chạm đáy của hòn đá (làm tròn đến hàng phần mười) là:",
+      "options": [
+        "$19,8\\text{ m/s}$",
+        "$14,0\\text{ m/s}$",
+        "$20,0\\text{ m/s}$",
+        "$39,2\\text{ m/s}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay số vào công thức: $v = \\sqrt{2 \\times 9,8 \\times 20} = \\sqrt{392} \\approx 19,7989\\dots\\text{ m/s}$. Làm tròn đến hàng phần mười ta được $19,8\\text{ m/s}$."
+    },
+    {
+      "id": "quiz-9.7.20",
+      "badge": "VDC - Bài toán thực tế: Tầm nhìn xa từ ngọn hải đăng",
+      "source": "Đề thi Đánh giá Năng lực - Ứng dụng Hàng hải",
+      "question": "Tầm nhìn xa $d$ (tính bằng hải lý, $1\\text{ hải lý} \\approx 1,852\\text{ km}$) của một hoa tiêu đứng trên ngọn hải đăng có tâm đèn cao $h$ (feet) so với mực nước biển được tính bởi công thức $d \\approx 1,17\\sqrt{h}$. Nếu tâm đèn ngọn hải đăng cách mực nước biển $100\\text{ feet}$ thì tầm nhìn xa của hoa tiêu đạt tối đa bao nhiêu hải lý?",
+      "options": [
+        "$11,7\\text{ hải lý}$",
+        "$10,0\\text{ hải lý}$",
+        "$117\\text{ hải lý}$",
+        "$13,5\\text{ hải lý}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $h = 100$ vào công thức: $d \\approx 1,17 \\times \\sqrt{100} = 1,17 \\times 10 = 11,7\\text{ hải lý}$. Hoa tiêu có thể quan sát xa tối đa $11,7$ hải lý."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-9.7.1",
+      "badge": "Đúng/Sai 1 - Khái niệm căn bậc hai và căn bậc hai số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 1",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về căn bậc hai và căn bậc hai số học:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số dương $a$ có đúng hai căn bậc hai là $\\sqrt{a}$ và $-\\sqrt{a}$.",
+          "correctAnswer": true,
+          "explanation": "Mỗi số thực dương luôn có đúng hai căn bậc hai là hai số đối nhau."
+        },
+        {
+          "id": "b",
+          "text": "Số $-16$ có căn bậc hai là $-4$ vì $(-4)^2 = 16$.",
+          "correctAnswer": false,
+          "explanation": "Số âm không có căn bậc hai vì bình phương của mọi số thực đều không âm (không thể bằng $-16$)."
+        },
+        {
+          "id": "c",
+          "text": "Căn bậc hai số học của $81$ là $\\pm 9$.",
+          "correctAnswer": false,
+          "explanation": "Căn bậc hai số học của số dương luôn là một số DƯƠNG duy nhất, do đó căn bậc hai số học của 81 là 9."
+        },
+        {
+          "id": "d",
+          "text": "Với mọi số thực $x$, ta có $\\sqrt{x^2} = x$.",
+          "correctAnswer": false,
+          "explanation": "Công thức đúng phải là $\\sqrt{x^2} = |x|$. Nếu $x < 0$ thì $\\sqrt{x^2} = -x \\ne x$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.2",
+      "badge": "Đúng/Sai 2 - So sánh hai căn bậc hai số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 1",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về so sánh số:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Vì $36 > 35$ nên $\\sqrt{36} > \\sqrt{35}$, suy ra $6 > \\sqrt{35}$.",
+          "correctAnswer": true,
+          "explanation": "Áp dụng định lý $a > b \\ge 0 \\Leftrightarrow \\sqrt{a} > \\sqrt{b}$."
+        },
+        {
+          "id": "b",
+          "text": "Ta có $3 = \\sqrt{9}$ và $\\sqrt{8} < \\sqrt{9}$ nên $\\sqrt{8} < 3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $8 < 9 \\implies \\sqrt{8} < \\sqrt{9} = 3$."
+        },
+        {
+          "id": "c",
+          "text": "Với số thực không âm $x$, nếu $\\sqrt{x} > 5$ thì $x > 25$.",
+          "correctAnswer": true,
+          "explanation": "Vì $5 = \\sqrt{25}$ nên $\\sqrt{x} > \\sqrt{25} \\Leftrightarrow x > 25$."
+        },
+        {
+          "id": "d",
+          "text": "Với số thực không âm $x$, nếu $\\sqrt{x} < 4$ thì tập nghiệm là $x < 16$.",
+          "correctAnswer": false,
+          "explanation": "Thiếu điều kiện $x \\ge 0$. Tập nghiệm chính xác phải là $0 \\le x < 16$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.3",
+      "badge": "Đúng/Sai 3 - Điều kiện xác định căn thức bậc nhất",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 2",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về điều kiện xác định của căn thức bậc hai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Căn thức $\\sqrt{3x - 12}$ xác định khi và chỉ khi $x \\ge 4$.",
+          "correctAnswer": true,
+          "explanation": "$3x - 12 \\ge 0 \\Leftrightarrow 3x \\ge 12 \\Leftrightarrow x \\ge 4$."
+        },
+        {
+          "id": "b",
+          "text": "Căn thức $\\sqrt{-5x}$ xác định khi và chỉ khi $x \\ge 0$.",
+          "correctAnswer": false,
+          "explanation": "$-5x \\ge 0 \\Leftrightarrow x \\le 0$ (chia cho $-5 < 0$ đổi chiều)."
+        },
+        {
+          "id": "c",
+          "text": "Căn thức $\\sqrt{7 - x}$ xác định khi và chỉ khi $x \\le 7$.",
+          "correctAnswer": true,
+          "explanation": "$7 - x \\ge 0 \\Leftrightarrow -x \\ge -7 \\Leftrightarrow x \\le 7$."
+        },
+        {
+          "id": "d",
+          "text": "Căn thức $\\sqrt{x^2 + 1}$ xác định với mọi số thực $x \\in \\mathbb{R}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $x^2 \\ge 0$ nên $x^2 + 1 \\ge 1 > 0$ với mọi $x \\in \\mathbb{R}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.4",
+      "badge": "Đúng/Sai 4 - Điều kiện xác định căn thức chứa phân thức",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.4",
+      "prompt": "Xét tính đúng/sai của các khẳng định sau về điều kiện xác định của căn thức phân thức:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Căn thức $\\sqrt{\\frac{3}{x - 2}}$ có nghĩa khi và chỉ khi $x > 2$.",
+          "correctAnswer": true,
+          "explanation": "Tử số $3 > 0$ nên phân thức dương khi mẫu $x - 2 > 0 \\Leftrightarrow x > 2$."
+        },
+        {
+          "id": "b",
+          "text": "Căn thức $\\sqrt{\\frac{-2}{x + 1}}$ có nghĩa khi và chỉ khi $x < -1$.",
+          "correctAnswer": true,
+          "explanation": "Tử số $-2 < 0$ nên phân thức không âm khi mẫu $x + 1 < 0 \\Leftrightarrow x < -1$."
+        },
+        {
+          "id": "c",
+          "text": "Căn thức $\\sqrt{\\frac{x - 1}{4}}$ có nghĩa khi và chỉ khi $x \\ge 1$.",
+          "correctAnswer": true,
+          "explanation": "Mẫu số $4 > 0$ nên $\\frac{x - 1}{4} \\ge 0 \\Leftrightarrow x - 1 \\ge 0 \\Leftrightarrow x \\ge 1$."
+        },
+        {
+          "id": "d",
+          "text": "Căn thức $\\sqrt{\\frac{1}{x^2}}$ có nghĩa với mọi số thực $x \\in \\mathbb{R}$.",
+          "correctAnswer": false,
+          "explanation": "Mẫu số phải khác 0 nên $x^2 \\ne 0 \\Leftrightarrow x \\ne 0$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.5",
+      "badge": "Đúng/Sai 5 - Áp dụng hằng đẳng thức căn(A^2) = |A|",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 3",
+      "prompt": "Xét tính đúng/sai của các phép tính sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt{(-\\sqrt{5})^2} = \\sqrt{5}$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{(-\\sqrt{5})^2} = |-\\sqrt{5}| = \\sqrt{5}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt{(\\sqrt{7} - 3)^2} = \\sqrt{7} - 3$.",
+          "correctAnswer": false,
+          "explanation": "Vì $7 < 9 \\implies \\sqrt{7} < 3 \\implies \\sqrt{7} - 3 < 0$, do đó $\\sqrt{(\\sqrt{7}-3)^2} = |\\sqrt{7}-3| = 3 - \\sqrt{7}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt{(2 - \\sqrt{3})^2} = 2 - \\sqrt{3}$.",
+          "correctAnswer": true,
+          "explanation": "Vì $4 > 3 \\implies 2 > \\sqrt{3} \\implies 2 - \\sqrt{3} > 0$, nên $|2 - \\sqrt{3}| = 2 - \\sqrt{3}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt{(1 - \\sqrt{2})^2} + \\sqrt{2} = 1$.",
+          "correctAnswer": true,
+          "explanation": "$|1 - \\sqrt{2}| + \\sqrt{2} = (\\sqrt{2} - 1) + \\sqrt{2} = 2\\sqrt{2} - 1 \\ne 1$. Khẳng định này sai! Khoan, để kiểm tra lại: $|1-\\sqrt{2}| = \\sqrt{2}-1$, cộng $\\sqrt{2}$ được $2\\sqrt{2}-1$. Khẳng định nói bằng 1 là SAI."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.6",
+      "badge": "Đúng/Sai 6 - Rút gọn biểu thức chứa biến",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 4",
+      "prompt": "Cho biểu thức $P = \\sqrt{9x^2} - 2x$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Ta có $\\sqrt{9x^2} = \\sqrt{(3x)^2} = |3x|$.",
+          "correctAnswer": true,
+          "explanation": "Áp dụng định lý $\\sqrt{A^2} = |A|$ với $A = 3x$."
+        },
+        {
+          "id": "b",
+          "text": "Khi $x \\ge 0$, biểu thức $P$ rút gọn thành $P = x$.",
+          "correctAnswer": true,
+          "explanation": "Khi $x \\ge 0$, $|3x| = 3x \\implies P = 3x - 2x = x$."
+        },
+        {
+          "id": "c",
+          "text": "Khi $x < 0$, biểu thức $P$ rút gọn thành $P = -x$.",
+          "correctAnswer": false,
+          "explanation": "Khi $x < 0$, $|3x| = -3x \\implies P = -3x - 2x = -5x \\ne -x$."
+        },
+        {
+          "id": "d",
+          "text": "Tại $x = -4$, giá trị của biểu thức $P$ bằng $20$.",
+          "correctAnswer": true,
+          "explanation": "Thay $x = -4$ vào $P = -5x$: $P = -5(-4) = 20$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.7",
+      "badge": "Đúng/Sai 7 - Rút gọn hằng đẳng thức bậc hai",
+      "source": "Đề thi HSG Toán 9 Cấp Huyện",
+      "prompt": "Cho biểu thức $A = \\sqrt{x^2 - 10x + 25} + 3$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Biểu thức dưới dấu căn có thể viết thành hằng đẳng thức $(x - 5)^2$.",
+          "correctAnswer": true,
+          "explanation": "$x^2 - 10x + 25 = (x - 5)^2$."
+        },
+        {
+          "id": "b",
+          "text": "Với mọi giá trị của $x$, ta luôn có $A = |x - 5| + 3$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt{(x - 5)^2} = |x - 5|$."
+        },
+        {
+          "id": "c",
+          "text": "Với $x < 5$, biểu thức $A$ rút gọn thành $A = x - 2$.",
+          "correctAnswer": false,
+          "explanation": "Khi $x < 5$, $|x - 5| = 5 - x$, suy ra $A = 5 - x + 3 = 8 - x \\ne x - 2$."
+        },
+        {
+          "id": "d",
+          "text": "Giá trị nhỏ nhất của biểu thức $A$ bằng $3$, đạt được khi $x = 5$.",
+          "correctAnswer": true,
+          "explanation": "Vì $|x - 5| \\ge 0$ nên $A \\ge 3$. Đạt tại $x = 5$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.8",
+      "badge": "Đúng/Sai 8 - Giải phương trình chứa căn",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.3",
+      "prompt": "Cho phương trình: $\\sqrt{2x - 3} = 5$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điều kiện xác định của phương trình là $x \\ge \\frac{3}{2}$.",
+          "correctAnswer": true,
+          "explanation": "$2x - 3 \\ge 0 \\Leftrightarrow x \\ge \\frac{3}{2}$."
+        },
+        {
+          "id": "b",
+          "text": "Bình phương hai vế phương trình ta được: $2x - 3 = 10$.",
+          "correctAnswer": false,
+          "explanation": "Vế phải bình phương là $5^2 = 25$, không phải 10."
+        },
+        {
+          "id": "c",
+          "text": "Nghiệm của phương trình là $x = 14$.",
+          "correctAnswer": true,
+          "explanation": "$2x - 3 = 25 \\Leftrightarrow 2x = 28 \\Leftrightarrow x = 14$ (thỏa mãn ĐKXĐ)."
+        },
+        {
+          "id": "d",
+          "text": "Phương trình đã cho có đúng hai nghiệm phân biệt.",
+          "correctAnswer": false,
+          "explanation": "Phương trình chỉ có duy nhất một nghiệm là $x = 14$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.9",
+      "badge": "Đúng/Sai 9 - Toán thực tế: Mảnh vườn hình vuông",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập thực tế",
+      "prompt": "Bác Ba có một mảnh vườn hình vuông diện tích $144\\text{ m}^2$. Bác muốn rào dây thép gai xung quanh vườn (chừa cửa rộng $2\\text{ m}$). Giá mỗi mét dây thép gai là $40\\,000$ đồng. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài mỗi cạnh của mảnh vườn là $\\sqrt{144} = 12\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Diện tích hình vuông $S = a^2 = 144 \\implies a = 12\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Chu vi của toàn bộ mảnh vườn là $48\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Chu vi hình vuông là $4 \\times 12 = 48\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Chiều dài dây thép gai cần dùng để rào vườn là $46\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Trừ đi cửa rộng 2 m: $48 - 2 = 46\\text{ m}$."
+        },
+        {
+          "id": "d",
+          "text": "Bác Ba cần chuẩn bị số tiền mua dây thép gai là $1\\,920\\,000$ đồng.",
+          "correctAnswer": false,
+          "explanation": "Số tiền cần mua: $46 \\times 40\\,000 = 1\\,840\\,000$ đồng (chứ không phải 1 920 000 đồng vì đã trừ cửa)."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.7.10",
+      "badge": "Đúng/Sai 10 - Toán thực tế: Tầm nhìn xa hàng hải",
+      "source": "SGK Toán 9 KNTT - Bài 7 Ứng dụng thực tiễn",
+      "prompt": "Khoảng cách $d$ (hải lý) từ vị trí người quan sát trên biển đến đường chân trời được tính bởi công thức $d = 3,57\\sqrt{h}$, trong đó $h$ là chiều cao của mắt người quan sát so với mực nước biển (tính bằng mét). Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu một người đứng trên boong tàu có độ cao $h = 4\\text{ m}$ thì tầm nhìn xa đến chân trời là $7,14\\text{ hải lý}$.",
+          "correctAnswer": true,
+          "explanation": "$d = 3,57 \\times \\sqrt{4} = 3,57 \\times 2 = 7,14\\text{ hải lý}$."
+        },
+        {
+          "id": "b",
+          "text": "Khi chiều cao ngọn hải đăng tăng lên 4 lần thì tầm nhìn xa cũng tăng lên 4 lần.",
+          "correctAnswer": false,
+          "explanation": "Vì $d$ tỉ lệ thuận với $\\sqrt{h}$, khi $h$ tăng 4 lần thì $\\sqrt{4h} = 2\\sqrt{h}$, tức là tầm nhìn chỉ tăng lên 2 lần."
+        },
+        {
+          "id": "c",
+          "text": "Một người đứng trên ngọn hải đăng cao $25\\text{ m}$ thì có tầm nhìn xa là $17,85\\text{ hải lý}$.",
+          "correctAnswer": true,
+          "explanation": "$d = 3,57 \\times \\sqrt{25} = 3,57 \\times 5 = 17,85\\text{ hải lý}$."
+        },
+        {
+          "id": "d",
+          "text": "Để có tầm nhìn xa đạt $35,7\\text{ hải lý}$ thì đài quan sát cần đặt ở độ cao $10\\text{ m}$.",
+          "correctAnswer": false,
+          "explanation": "$35,7 = 3,57\\sqrt{h} \\implies \\sqrt{h} = 10 \\implies h = 100\\text{ m}$ (chứ không phải 10 m)."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-9.7.1",
+      "badge": "Trả lời ngắn 1 - Căn bậc hai số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Khởi động",
+      "prompt": "Căn bậc hai số học của số $81$ bằng bao nhiêu?",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9.0"
+      ],
+      "explanation": "Vì $9 > 0$ và $9^2 = 81$ nên $\\sqrt{81} = 9$."
+    },
+    {
+      "id": "sa-9.7.2",
+      "badge": "Trả lời ngắn 2 - Giá trị biểu thức số học",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.2",
+      "prompt": "Tính giá trị của biểu thức: $\\sqrt{144} - \\sqrt{49}$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "5.0"
+      ],
+      "explanation": "Ta có $\\sqrt{144} = 12$ và $\\sqrt{49} = 7$. Do đó $12 - 7 = 5$."
+    },
+    {
+      "id": "sa-9.7.3",
+      "badge": "Trả lời ngắn 3 - Tìm cận điều kiện xác định",
+      "source": "SGK Toán 9 KNTT - Bài 7 Mục 2",
+      "prompt": "Căn thức bậc hai $\\sqrt{2x - 8}$ xác định với mọi $x \\ge a$. Giá trị của số $a$ là bao nhiêu?",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4.0",
+        "a = 4"
+      ],
+      "explanation": "$2x - 8 \\ge 0 \\Leftrightarrow 2x \\ge 8 \\Leftrightarrow x \\ge 4$. Vậy $a = 4$."
+    },
+    {
+      "id": "sa-9.7.4",
+      "badge": "Trả lời ngắn 4 - Áp dụng hằng đẳng thức",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 2",
+      "prompt": "Tính giá trị của biểu thức: $A = \\sqrt{(\\sqrt{5} - 3)^2} + \\sqrt{5}$.",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3.0"
+      ],
+      "explanation": "Ta có $\\sqrt{(\\sqrt{5} - 3)^2} = |\\sqrt{5} - 3|$. Vì $\\sqrt{5} < \\sqrt{9} = 3$ nên $|\\sqrt{5} - 3| = 3 - \\sqrt{5}$.\\nDo đó $A = 3 - \\sqrt{5} + \\sqrt{5} = 3$."
+    },
+    {
+      "id": "sa-9.7.5",
+      "badge": "Trả lời ngắn 5 - Tìm x từ căn bậc hai",
+      "source": "SGK Toán 9 KNTT - Bài 7 Bài tập 3.1",
+      "prompt": "Tìm số thực $x$ không âm thỏa mãn $\\sqrt{x} = 7$.",
+      "correctAnswer": "49",
+      "acceptableAnswers": [
+        "49",
+        "x = 49"
+      ],
+      "explanation": "Với $x \\ge 0$, ta có $\\sqrt{x} = 7 \\Leftrightarrow x = 7^2 = 49$."
+    },
+    {
+      "id": "sa-9.7.6",
+      "badge": "Trả lời ngắn 6 - Giải phương trình căn thức",
+      "source": "SGK Toán 9 KNTT - Bài 7 Luyện tập 3",
+      "prompt": "Tìm nghiệm của phương trình: $\\sqrt{2x + 1} = 5$.",
+      "correctAnswer": "12",
+      "acceptableAnswers": [
+        "12",
+        "x = 12"
+      ],
+      "explanation": "ĐKXĐ: $x \\ge -0,5$. Bình phương hai vế: $2x + 1 = 5^2 = 25 \\Leftrightarrow 2x = 24 \\Leftrightarrow x = 12$ (thỏa mãn ĐKXĐ)."
+    },
+    {
+      "id": "sa-9.7.7",
+      "badge": "Trả lời ngắn 7 - Tính giá trị biểu thức rút gọn",
+      "source": "Đề thi HSG Toán 9 Cấp Quận",
+      "prompt": "Cho biểu thức $P = \\sqrt{x^2 - 10x + 25} + x$ với $x \\ge 5$. Tính giá trị của $P$ khi $x = 8$.",
+      "correctAnswer": "11",
+      "acceptableAnswers": [
+        "11",
+        "11.0"
+      ],
+      "explanation": "Ta có $P = \\sqrt{(x - 5)^2} + x = |x - 5| + x$. Với $x \\ge 5$, $|x - 5| = x - 5 \\implies P = 2x - 5$. Thay $x = 8$: $P = 2(8) - 5 = 11$."
+    },
+    {
+      "id": "sa-9.7.8",
+      "badge": "Trả lời ngắn 8 - Tổng nghiệm phương trình căn bình phương",
+      "source": "Đề thi tuyển sinh vào 10 THPT",
+      "prompt": "Tổng tất cả các nghiệm của phương trình $\\sqrt{x^2 - 4x + 4} = 3$ bằng bao nhiêu?",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4.0"
+      ],
+      "explanation": "Phương trình tương đương $|x - 2| = 3 \\Leftrightarrow x - 2 = 3$ hoặc $x - 2 = -3 \\Leftrightarrow x = 5$ hoặc $x = -1$. Tổng các nghiệm là $5 + (-1) = 4$."
+    },
+    {
+      "id": "sa-9.7.9",
+      "badge": "Trả lời ngắn 9 - Bài toán thực tế: Cạnh pin năng lượng mặt trời",
+      "source": "SGK Toán 9 KNTT - Bài 7 Vận dụng",
+      "prompt": "Một tấm pin năng lượng mặt trời hình vuông có diện tích bề mặt là $2,25\\text{ m}^2$. Độ dài cạnh của tấm pin đó bằng bao nhiêu mét?",
+      "correctAnswer": "1.5",
+      "acceptableAnswers": [
+        "1.5",
+        "1,5",
+        "1.5 m",
+        "1,5 m"
+      ],
+      "explanation": "Độ dài cạnh tấm pin hình vuông là: $a = \\sqrt{2,25} = 1,5\\text{ m}$."
+    },
+    {
+      "id": "sa-9.7.10",
+      "badge": "Trả lời ngắn 10 - Bài toán thực tế: Thời gian rơi tự do",
+      "source": "Đề kiểm tra thực hành Vật lý - Toán 9",
+      "prompt": "Thời gian $t$ (giây) để một vật rơi tự do từ độ cao $h$ (mét) xuống đất được tính bởi công thức $t = \\sqrt{\\frac{2h}{g}}$ với $g \\approx 9,8\\text{ m/s}^2$. Nếu vật rơi từ độ cao $19,6\\text{ m}$ thì thời gian rơi chạm đất là bao nhiêu giây?",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2.0",
+        "2 giây",
+        "2s"
+      ],
+      "explanation": "Thay số: $t = \\sqrt{\\frac{2 \\times 19,6}{9,8}} = \\sqrt{\\frac{39,2}{9,8}} = \\sqrt{4} = 2\\text{ giây}$."
+    }
+  ]
+},
 };

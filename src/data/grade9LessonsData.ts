@@ -6229,4 +6229,888 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         }
     ]
 },
+  "t9-b11-ti-so-luong-giac-goc-nhon": {
+    "id": "t9-b11-ti-so-luong-giac-goc-nhon",
+    "lessonNumber": 11,
+    "title": "Bài 11: Tỉ số lượng giác của góc nhọn",
+    "bookChapter": "Chương IV: Hệ thức lượng trong tam giác vuông",
+    "scenarioTitle": "Khám phá tỉ số lượng giác và bí quyết đo đạc chiều cao thực tế",
+    "scenarioFrames": [],
+    "theorySections": [
+        {
+            "index": "1",
+            "title": "Khái niệm và Định nghĩa tỉ số lượng giác của góc nhọn",
+            "points": [
+                "Trong tam giác vuông, tỉ số giữa cạnh đối và cạnh kề, cạnh huyền của một góc nhọn chỉ phụ thuộc vào độ lớn của góc đó mà không phụ thuộc vào kích thước của tam giác.",
+                "Cho tam giác $ABC$ vuông tại $A$, xét góc nhọn $\\widehat{B} = \\alpha$ ($0^\\circ < \\alpha < 90^\\circ$):",
+                "• Sin của góc $\\alpha$ (kí hiệu $\\sin \\alpha$): là tỉ số giữa cạnh đối và cạnh huyền: $\\sin \\alpha = \\frac{\\text{cạnh đối}}{\\text{cạnh huyền}} = \\frac{AC}{BC}$.",
+                "• Côsin của góc $\\alpha$ (kí hiệu $\\cos \\alpha$): là tỉ số giữa cạnh kề và cạnh huyền: $\\cos \\alpha = \\frac{\\text{cạnh kề}}{\\text{cạnh huyền}} = \\frac{AB}{BC}$.",
+                "• Tang của góc $\\alpha$ (kí hiệu $\\tan \\alpha$): là tỉ số giữa cạnh đối và cạnh kề: $\\tan \\alpha = \\frac{\\text{cạnh đối}}{\\text{cạnh kề}} = \\frac{AC}{AB}$.",
+                "• Côtang của góc $\\alpha$ (kí hiệu $\\cot \\alpha$): là tỉ số giữa cạnh kề và cạnh đối: $\\cot \\alpha = \\frac{\\text{cạnh kề}}{\\text{cạnh đối}} = \\frac{AB}{AC}$.",
+                "Khẩu quyết nhớ: Sao Đi Học (Sin = Đối/Huyền), Cứ Khóc Hoài (Cos = Kề/Huyền), Thôi Đừng Khóc (Tan = Đối/Kề), Có Kẹo Đây (Cot = Kề/Đối)."
+            ],
+            "examples": [
+                {
+                    "title": "Minh họa hình học: Tam giác vuông và các cạnh đối, kề, huyền",
+                    "problem": "Cho tam giác $ABC$ vuông tại $A$ có góc nhọn $\\widehat{B} = \\alpha$. Hãy xác định cạnh đối, cạnh kề và cạnh huyền đối với góc $\\alpha$.",
+                    "solution": "Cạnh đối diện góc $\\alpha$ là $AC$. Cạnh kề góc $\\alpha$ là $AB$. Cạnh đối diện góc vuông $A$ là cạnh huyền $BC$.",
+                    "svgDiagram": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Đỉnh A(60, 190), B(320, 190), C(60, 40) - Vuông tại A, góc alpha tại B -->\n  <polygon points=\"60,190 340,190 60,40\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  \n  <!-- Ký hiệu góc vuông tại A -->\n  <rect x=\"60\" y=\"170\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2\" />\n  <circle cx=\"70\" cy=\"180\" r=\"2\" fill=\"#f43f5e\" />\n\n  <!-- Cung tròn góc alpha tại B -->\n  <path d=\"M 300,190 A 40,40 0 0,0 307.7,172.7\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"285\" y=\"178\" fill=\"#fbbf24\" font-size=\"16\" font-weight=\"bold\" font-style=\"italic\">α</text>\n\n  <!-- Tên các đỉnh -->\n  <text x=\"40\" y=\"205\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">A</text>\n  <text x=\"350\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">B</text>\n  <text x=\"50\" y=\"32\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">C</text>\n\n  <!-- Tên các cạnh đối với góc alpha tại B -->\n  <text x=\"25\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh đối (AC)</text>\n  <text x=\"200\" y=\"215\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh kề (AB)</text>\n  <text x=\"215\" y=\"100\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-28 215 100)\" text-anchor=\"middle\">Cạnh huyền (BC)</text>\n</svg>"
+                }
+            ]
+        },
+        {
+            "index": "2",
+            "title": "Tính chất và Tỉ số lượng giác của hai góc phụ nhau",
+            "points": [
+                "Với mọi góc nhọn $\\alpha$ ($0^\\circ < \\alpha < 90^\\circ$), ta luôn có: $0 < \\sin \\alpha < 1, \\ 0 < \\cos \\alpha < 1, \\ \\tan \\alpha > 0, \\ \\cot \\alpha > 0$.",
+                "Định lí hai góc phụ nhau (tổng bằng $90^\\circ$): Nếu hai góc phụ nhau thì sin góc này bằng côsin góc kia, tang góc này bằng côtang góc kia:",
+                "• $\\sin B = \\cos C$ và $\\cos B = \\sin C$",
+                "• $\\tan B = \\cot C$ và $\\cot B = \\tan C$",
+                "Các hệ thức lượng giác cơ bản thường dùng:",
+                "1) $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$ và $\\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$",
+                "2) $\\tan \\alpha \\cdot \\cot \\alpha = 1$",
+                "3) $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$",
+                "4) $1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$ và $1 + \\cot^2 \\alpha = \\frac{1}{\\sin^2 \\alpha}$"
+            ],
+            "exampleTitle": "Ví dụ mẫu: Rút gọn biểu thức lượng giác góc phụ nhau",
+            "exampleProblem": "Rút gọn biểu thức $A = \\sin^2 25^\\circ + \\sin^2 65^\\circ - \\tan 30^\\circ \\cdot \\tan 60^\\circ$.",
+            "exampleSolution": "• Vì $25^\\circ + 65^\\circ = 90^\\circ$ nên $\\sin 65^\\circ = \\cos 25^\\circ$, do đó: $\\sin^2 25^\\circ + \\sin^2 65^\\circ = \\sin^2 25^\\circ + \\cos^2 25^\\circ = 1$.\n• Vì $30^\\circ + 60^\\circ = 90^\\circ$ nên $\\tan 60^\\circ = \\cot 30^\\circ$, do đó: $\\tan 30^\\circ \\cdot \\tan 60^\\circ = \\tan 30^\\circ \\cdot \\cot 30^\\circ = 1$.\n• Vậy $A = 1 - 1 = 0$."
+        },
+        {
+            "index": "3",
+            "title": "Bảng tỉ số lượng giác các góc đặc biệt và Ứng dụng thực tế",
+            "points": [
+                "Bảng giá trị lượng giác các góc đặc biệt cần thuộc lòng:",
+                "• $30^\\circ$: $\\sin = \\frac{1}{2}, \\ \\cos = \\frac{\\sqrt{3}}{2}, \\ \\tan = \\frac{\\sqrt{3}}{3}, \\ \\cot = \\sqrt{3}$",
+                "• $45^\\circ$: $\\sin = \\frac{\\sqrt{2}}{2}, \\ \\cos = \\frac{\\sqrt{2}}{2}, \\ \\tan = 1, \\ \\cot = 1$",
+                "• $60^\\circ$: $\\sin = \\frac{\\sqrt{3}}{2}, \\ \\cos = \\frac{1}{2}, \\ \\tan = \\sqrt{3}, \\ \\cot = \\frac{\\sqrt{3}}{3}$",
+                "Ứng dụng thực tế: Đo chiều cao cây cối, cột cờ, tháp truyền hình qua bóng nắng và góc nâng $h = d \\cdot \\tan \\alpha$; xác định góc dốc con đường, khoảng cách hải đăng tới thuyền."
+            ],
+            "examples": [
+                {
+                    "title": "Ứng dụng thực tế: Đo chiều cao cây qua bóng trên mặt đất",
+                    "problem": "Một cây cổ thụ có bóng trên mặt đất dài $8\\text{ m}$ khi tia nắng chiếu tạo với mặt đất góc $40^\\circ$. Tính chiều cao của cây.",
+                    "solution": "Trong tam giác vuông tạo bởi cây, mặt đất và tia nắng: chiều cao cây là $h = 8 \\cdot \\tan 40^\\circ \\approx 8 \\cdot 0,8391 \\approx 6,7\\text{ m}$.",
+                    "svgDiagram": "<svg viewBox=\"0 0 420 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Mặt đất nằm ngang -->\n  <line x1=\"20\" y1=\"180\" x2=\"400\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\" />\n  \n  <!-- Thân cây tại A(80, 180) cao lên C(80, 50) -->\n  <line x1=\"80\" y1=\"180\" x2=\"80\" y2=\"50\" stroke=\"#10b981\" stroke-width=\"4.5\" stroke-linecap=\"round\" />\n  <!-- Tán cây tròn xanh -->\n  <circle cx=\"80\" cy=\"45\" r=\"28\" fill=\"#059669\" fill-opacity=\"0.8\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <circle cx=\"65\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"95\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"80\" cy=\"25\" r=\"16\" fill=\"#34d399\" fill-opacity=\"0.8\" />\n\n  <!-- Mặt trời vàng ở góc phải trên -->\n  <circle cx=\"360\" cy=\"35\" r=\"16\" fill=\"#f59e0b\" />\n  <path d=\"M 360,12 L 360,5 M 360,58 L 360,65 M 337,35 L 330,35 M 383,35 L 390,35 M 344,19 L 339,14 M 376,51 L 381,56\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-linecap=\"round\" />\n\n  <!-- Tia nắng nối từ ngọn cây C(80, 45) xuống bóng B(280, 180) -->\n  <line x1=\"80\" y1=\"45\" x2=\"280\" y2=\"180\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"5 3\" />\n  \n  <!-- Góc vuông tại gốc cây A -->\n  <rect x=\"80\" y=\"162\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  \n  <!-- Góc nâng của tia nắng tại B -->\n  <path d=\"M 240,180 A 40,40 0 0,1 247,157\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"215\" y=\"172\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">40°</text>\n\n  <!-- Tên đỉnh và kích thước -->\n  <text x=\"65\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A (Gốc)</text>\n  <text x=\"285\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B (Bóng)</text>\n  <text x=\"80\" y=\"18\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">C (Ngọn)</text>\n  \n  <!-- Nhãn đo chiều cao h và bóng d -->\n  <text x=\"45\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">h = ?</text>\n  <text x=\"180\" y=\"202\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Bóng AB = 8 m</text>\n</svg>"
+                }
+            ]
+        }
+    ],
+    "youtubeVideoId": "5V2w7aI7VEE",
+    "youtubeVideoTitle": "Bài Giảng Video: Bài 11 - Tỉ số lượng giác của góc nhọn - Toán 9 KNTT",
+    "youtubeVideos": [
+        {
+            "id": "5V2w7aI7VEE",
+            "title": "Tiết 1: Định nghĩa và tính chất tỉ số lượng giác của góc nhọn"
+        },
+        {
+            "id": "H7aB6q8vG_8",
+            "title": "Tiết 2: Góc phụ nhau, góc đặc biệt và ứng dụng thực tế"
+        }
+    ],
+    "videoQuestions": [
+        {
+            "id": "vq-9.11.1",
+            "title": "Ví dụ 1: Tính tỉ số lượng giác của tam giác vuông 3-4-5",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3\\text{ cm}, AC = 4\\text{ cm}$. Giá trị của $\\sin B$ là:",
+            "options": [
+                "$\\frac{4}{5}$",
+                "$\\frac{3}{5}$",
+                "$\\frac{4}{3}$",
+                "$\\frac{3}{4}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo định lí Pythagore: $BC = \\sqrt{AB^2 + AC^2} = \\sqrt{3^2 + 4^2} = 5\\text{ cm}$. Đối với góc $B$, cạnh đối là $AC = 4$, cạnh huyền là $BC = 5$. Do đó $\\sin B = \\frac{AC}{BC} = \\frac{4}{5}$."
+        },
+        {
+            "id": "vq-9.11.2",
+            "title": "Ví dụ 2: Sử dụng tính chất góc phụ nhau",
+            "question": "Giá trị của biểu thức $P = \\sin 35^\\circ - \\cos 55^\\circ$ bằng:",
+            "options": [
+                "$0$",
+                "$1$",
+                "$2\\sin 35^\\circ$",
+                "$-1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $35^\\circ + 55^\\circ = 90^\\circ$ nên $\\cos 55^\\circ = \\sin 35^\\circ$. Do đó $P = \\sin 35^\\circ - \\sin 35^\\circ = 0$."
+        },
+        {
+            "id": "vq-9.11.3",
+            "title": "Ví dụ 3: Tính giá trị lượng giác góc đặc biệt",
+            "question": "Tính giá trị của biểu thức $M = \\sin 30^\\circ + \\cos 60^\\circ + \\tan 45^\\circ$.",
+            "options": [
+                "$2$",
+                "$1$",
+                "$\\frac{3}{2}$",
+                "$\\sqrt{3}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\sin 30^\\circ = \\frac{1}{2}, \\cos 60^\\circ = \\frac{1}{2}, \\tan 45^\\circ = 1$. Thay vào: $M = \\frac{1}{2} + \\frac{1}{2} + 1 = 2$."
+        },
+        {
+            "id": "vq-9.11.4",
+            "title": "Ví dụ 4: Bài toán thực tế đo bóng cây",
+            "question": "Một cây có bóng trên mặt đất dài $6\\text{ m}$ khi góc nâng của tia nắng mặt trời là $45^\\circ$. Chiều cao của cây là:",
+            "options": [
+                "$6\\text{ m}$",
+                "$6\\sqrt{3}\\text{ m}$",
+                "$3\\sqrt{2}\\text{ m}$",
+                "$3\\text{ m}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi chiều cao cây là $h$. Ta có $\\tan 45^\\circ = \\frac{h}{6} \\Leftrightarrow h = 6 \\cdot \\tan 45^\\circ = 6 \\cdot 1 = 6\\text{ m}$."
+        }
+    ],
+    "tips": [
+        "Khắc sâu câu thần chú: 'Sao Đi Học (Sin = Đối/Huyền), Cứ Khóc Hoài (Cos = Kề/Huyền), Thôi Đừng Khóc (Tan = Đối/Kề), Có Kẹo Đây (Cot = Kề/Đối)'.",
+        "Khi hai góc nhọn có tổng bằng $90^\\circ$ (phụ nhau), luôn đổi ngay $\\sin$ thành $\\cos$, $\\tan$ thành $\\cot$ để đơn giản hóa biểu thức.",
+        "Ghi nhớ hằng đẳng thức cốt lõi: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$ và $\\tan \\alpha \\cdot \\cot \\alpha = 1$. Khi biết một tỉ số lượng giác, có thể suy ra 3 tỉ số còn lại.",
+        "Trong bài toán thực tế, luôn vẽ phác họa tam giác vuông: xác định góc vuông ở đâu, cạnh nào đã biết (chiều cao hay bóng trên mặt đất) và góc đề bài cho là góc đối hay kề."
+    ],
+    "traps": [
+        "Bẫy nhầm lẫn cạnh đối và cạnh kề: Cạnh đối diện với góc đang xét là cạnh đối, còn cạnh nằm kề góc đó (không phải cạnh huyền) là cạnh kề. Đổi góc xét thì đối và kề hoán đổi cho nhau.",
+        "Bẫy quên bình phương trong hệ thức $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$: Rất nhiều học sinh nhầm thành $\\sin \\alpha + \\cos \\alpha = 1$ (sai hoàn toàn!).",
+        "Bẫy đơn vị khi dùng máy tính cầm tay: Khi bấm tính $\\sin, \\cos, \\tan$, hãy chắc chắn máy tính đang ở chế độ đo độ (chữ **D** trên màn hình), không để ở chế độ Radian (**R**).",
+        "Bẫy góc nâng và góc hạ: Góc hạ đo từ đường nằm ngang nhìn xuống, bằng với góc nâng đo từ dưới nhìn lên (hai góc so le trong bằng nhau)."
+    ],
+    "quizQuestions": [
+        {
+            "id": "q-9.11.1",
+            "badge": "Câu 1 (NB) - Định nghĩa Sin của góc nhọn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có góc nhọn $\\widehat{B} = \\alpha$. Tỉ số lượng giác $\\sin \\alpha$ được tính bằng:",
+            "options": [
+                "$\\frac{\\text{Cạnh đối}}{\\text{Cạnh huyền}} = \\frac{AC}{BC}$",
+                "$\\frac{\\text{Cạnh kề}}{\\text{Cạnh huyền}} = \\frac{AB}{BC}$",
+                "$\\frac{\\text{Cạnh đối}}{\\text{Cạnh kề}} = \\frac{AC}{AB}$",
+                "$\\frac{\\text{Cạnh kề}}{\\text{Cạnh đối}} = \\frac{AB}{AC}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo định nghĩa, trong tam giác vuông, sin của một góc nhọn là tỉ số giữa cạnh đối diện với góc đó và cạnh huyền: $\\sin \\alpha = \\frac{\\text{đối}}{\\text{huyền}} = \\frac{AC}{BC}$.",
+            "svgDiagram": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Đỉnh A(60, 190), B(320, 190), C(60, 40) - Vuông tại A, góc alpha tại B -->\n  <polygon points=\"60,190 340,190 60,40\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  \n  <!-- Ký hiệu góc vuông tại A -->\n  <rect x=\"60\" y=\"170\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2\" />\n  <circle cx=\"70\" cy=\"180\" r=\"2\" fill=\"#f43f5e\" />\n\n  <!-- Cung tròn góc alpha tại B -->\n  <path d=\"M 300,190 A 40,40 0 0,0 307.7,172.7\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"285\" y=\"178\" fill=\"#fbbf24\" font-size=\"16\" font-weight=\"bold\" font-style=\"italic\">α</text>\n\n  <!-- Tên các đỉnh -->\n  <text x=\"40\" y=\"205\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">A</text>\n  <text x=\"350\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">B</text>\n  <text x=\"50\" y=\"32\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">C</text>\n\n  <!-- Tên các cạnh đối với góc alpha tại B -->\n  <text x=\"25\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh đối (AC)</text>\n  <text x=\"200\" y=\"215\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh kề (AB)</text>\n  <text x=\"215\" y=\"100\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-28 215 100)\" text-anchor=\"middle\">Cạnh huyền (BC)</text>\n</svg>"
+        },
+        {
+            "id": "q-9.11.2",
+            "badge": "Câu 2 (NB) - Định nghĩa Côsin của góc nhọn",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $\\widehat{B} = \\alpha$. Tỉ số lượng giác $\\cos \\alpha$ được tính bằng công thức nào?",
+            "options": [
+                "$\\cos \\alpha = \\frac{AB}{BC}$",
+                "$\\cos \\alpha = \\frac{AC}{BC}$",
+                "$\\cos \\alpha = \\frac{AC}{AB}$",
+                "$\\cos \\alpha = \\frac{BC}{AB}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Côsin của góc nhọn là tỉ số giữa cạnh kề và cạnh huyền: $\\cos \\alpha = \\frac{\\text{cạnh kề}}{\\text{cạnh huyền}} = \\frac{AB}{BC}$."
+        },
+        {
+            "id": "q-9.11.3",
+            "badge": "Câu 3 (NB) - Định nghĩa Tang và Côtang",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 64)",
+            "question": "Trong tam giác $ABC$ vuông tại $A$, khẳng định nào sau đây là đúng về tỉ số lượng giác $\\tan C$?",
+            "options": [
+                "$\\tan C = \\frac{AB}{AC}$",
+                "$\\tan C = \\frac{AC}{AB}$",
+                "$\\tan C = \\frac{AB}{BC}$",
+                "$\\tan C = \\frac{AC}{BC}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đối với góc nhọn $C$, cạnh đối là $AB$, cạnh kề là $AC$. Do đó $\\tan C = \\frac{\\text{đối}}{\\text{kề}} = \\frac{AB}{AC}$."
+        },
+        {
+            "id": "q-9.11.4",
+            "badge": "Câu 4 (NB) - Giá trị sin 30 độ và cos 60 độ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "question": "Giá trị của $\\sin 30^\\circ$ bằng bao nhiêu?",
+            "options": [
+                "$\\frac{1}{2}$",
+                "$\\frac{\\sqrt{3}}{2}$",
+                "$\\frac{\\sqrt{2}}{2}$",
+                "$1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo bảng tỉ số lượng giác của các góc đặc biệt, $\\sin 30^\\circ = \\frac{1}{2}$."
+        },
+        {
+            "id": "q-9.11.5",
+            "badge": "Câu 5 (NB) - Giá trị tang 45 độ",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 61)",
+            "question": "Giá trị của $\\tan 45^\\circ$ là:",
+            "options": [
+                "$1$",
+                "$\\sqrt{3}$",
+                "$\\frac{\\sqrt{3}}{3}$",
+                "$\\frac{1}{2}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Trong tam giác vuông cân (có góc nhọn $45^\\circ$), cạnh đối bằng cạnh kề nên $\\tan 45^\\circ = 1$."
+        },
+        {
+            "id": "q-9.11.6",
+            "badge": "Câu 6 (NB) - Tỉ số lượng giác của hai góc phụ nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "question": "Cho hai góc nhọn $\\alpha$ và $\\beta$ phụ nhau ($\\alpha + \\beta = 90^\\circ$). Khẳng định nào sau đây luôn đúng?",
+            "options": [
+                "$\\sin \\alpha = \\cos \\beta$",
+                "$\\sin \\alpha = \\sin \\beta$",
+                "$\\tan \\alpha = \\tan \\beta$",
+                "$\\cos \\alpha = \\cot \\beta$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nếu hai góc phụ nhau thì sin góc này bằng côsin góc kia: $\\sin \\alpha = \\cos \\beta$."
+        },
+        {
+            "id": "q-9.11.7",
+            "badge": "Câu 7 (NB) - Hệ thức sin^2 + cos^2",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Với mọi góc nhọn $\\alpha$, biểu thức $\\sin^2 \\alpha + \\cos^2 \\alpha$ luôn có giá trị bằng:",
+            "options": [
+                "$1$",
+                "$0$",
+                "$2$",
+                "Phụ thuộc vào góc $\\alpha$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\sin^2 \\alpha + \\cos^2 \\alpha = \\left(\\frac{c_{\\text{đối}}}{c_{\\text{huyền}}}\\right)^2 + \\left(\\frac{c_{\\text{kề}}}{c_{\\text{huyền}}}\\right)^2 = \\frac{c_{\\text{đối}}^2 + c_{\\text{kề}}^2}{c_{\\text{huyền}}^2} = \\frac{c_{\\text{huyền}}^2}{c_{\\text{huyền}}^2} = 1$ (theo định lí Pythagore)."
+        },
+        {
+            "id": "q-9.11.8",
+            "badge": "Câu 8 (NB) - Tích tang và côtang",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 62)",
+            "question": "Với mọi góc nhọn $\\alpha$, giá trị của tích $\\tan \\alpha \\cdot \\cot \\alpha$ bằng:",
+            "options": [
+                "$1$",
+                "$0$",
+                "$-1$",
+                "$\\sin \\alpha$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $\\tan \\alpha = \\frac{\\text{đối}}{\\text{kề}}$ và $\\cot \\alpha = \\frac{\\text{kề}}{\\text{đối}}$ nên $\\tan \\alpha \\cdot \\cot \\alpha = \\frac{\\text{đối}}{\\text{kề}} \\cdot \\frac{\\text{kề}}{\\text{đối}} = 1$."
+        },
+        {
+            "id": "q-9.11.9",
+            "badge": "Câu 9 (TH) - Tính tỉ số lượng giác tam giác vuông 3-4-5",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 3\\text{ cm}$ và $AC = 4\\text{ cm}$. Tỉ số $\\cos B$ bằng:",
+            "options": [
+                "$\\frac{3}{5}$",
+                "$\\frac{4}{5}$",
+                "$\\frac{3}{4}$",
+                "$\\frac{5}{3}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Độ dài cạnh huyền $BC = \\sqrt{3^2 + 4^2} = 5\\text{ cm}$. Đối với góc $B$, cạnh kề là $AB = 3$, cạnh huyền là $BC = 5$. Do đó $\\cos B = \\frac{AB}{BC} = \\frac{3}{5}$.",
+            "svgDiagram": "<svg viewBox=\"0 0 380 230\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-sm mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-md\">\n  <!-- A(60, 180), B(300, 180), C(60, 60) -> AB=240, AC=120, tỉ lệ 4 : 2 (hoặc 4 : 3) -->\n  <polygon points=\"60,180 300,180 60,60\" fill=\"#3b82f6\" fill-opacity=\"0.15\" stroke=\"#60a5fa\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  \n  <!-- Góc vuông tại A -->\n  <rect x=\"60\" y=\"162\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  \n  <!-- Góc B -->\n  <path d=\"M 265,180 A 35,35 0 0,0 271,165\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"2\" />\n  <text x=\"252\" y=\"173\" fill=\"#facc15\" font-size=\"13\" font-weight=\"bold\">B</text>\n\n  <!-- Tên các đỉnh -->\n  <text x=\"45\" y=\"195\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">A</text>\n  <text x=\"310\" y=\"185\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">B</text>\n  <text x=\"50\" y=\"50\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">C</text>\n\n  <!-- Độ dài -->\n  <text x=\"40\" y=\"125\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">AC = 4</text>\n  <text x=\"175\" y=\"202\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">AB = 3</text>\n  <text x=\"195\" y=\"110\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-26 195 110)\" text-anchor=\"middle\">BC = 5</text>\n</svg>"
+        },
+        {
+            "id": "q-9.11.10",
+            "badge": "Câu 10 (TH) - Tính cos khi biết sin",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 66)",
+            "question": "Cho góc nhọn $\\alpha$ có $\\sin \\alpha = 0,6$. Giá trị của $\\cos \\alpha$ là:",
+            "options": [
+                "$0,8$",
+                "$0,4$",
+                "$0,64$",
+                "$0,36$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$ nên $\\cos^2 \\alpha = 1 - \\sin^2 \\alpha = 1 - 0,6^2 = 1 - 0,36 = 0,64$. Vì $\\alpha$ là góc nhọn nên $\\cos \\alpha > 0 \\Rightarrow \\cos \\alpha = \\sqrt{0,64} = 0,8$."
+        },
+        {
+            "id": "q-9.11.11",
+            "badge": "Câu 11 (TH) - Tính giá trị biểu thức góc đặc biệt",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "question": "Tính giá trị của biểu thức $M = \\sin 30^\\circ \\cdot \\cos 60^\\circ + \\cos 30^\\circ \\cdot \\sin 60^\\circ$.",
+            "options": [
+                "$1$",
+                "$\\frac{1}{2}$",
+                "$\\frac{\\sqrt{3}}{2}$",
+                "$0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có $\\sin 30^\\circ = \\frac{1}{2}, \\cos 60^\\circ = \\frac{1}{2}, \\cos 30^\\circ = \\frac{\\sqrt{3}}{2}, \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$. Thay vào: $M = \\frac{1}{2} \\cdot \\frac{1}{2} + \\frac{\\sqrt{3}}{2} \\cdot \\frac{\\sqrt{3}}{2} = \\frac{1}{4} + \\frac{3}{4} = 1$."
+        },
+        {
+            "id": "q-9.11.12",
+            "badge": "Câu 12 (TH) - Rút gọn biểu thức lượng giác góc phụ nhau",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 63)",
+            "question": "Rút gọn biểu thức $A = \\sin^2 20^\\circ + \\sin^2 70^\\circ - \\tan 35^\\circ \\cdot \\tan 55^\\circ$.",
+            "options": [
+                "$0$",
+                "$1$",
+                "$-1$",
+                "$2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vì $20^\\circ + 70^\\circ = 90^\\circ \\Rightarrow \\sin 70^\\circ = \\cos 20^\\circ \\Rightarrow \\sin^2 20^\\circ + \\sin^2 70^\\circ = \\sin^2 20^\\circ + \\cos^2 20^\\circ = 1$. Lại có $35^\\circ + 55^\\circ = 90^\\circ \\Rightarrow \\tan 55^\\circ = \\cot 35^\\circ \\Rightarrow \\tan 35^\\circ \\cdot \\tan 55^\\circ = \\tan 35^\\circ \\cdot \\cot 35^\\circ = 1$. Do đó $A = 1 - 1 = 0$."
+        },
+        {
+            "id": "q-9.11.13",
+            "badge": "Câu 13 (TH) - Chiều biến thiên khi góc nhọn tăng",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 71)",
+            "question": "Khi góc nhọn $\\alpha$ tăng dần từ $0^\\circ$ đến $90^\\circ$, khẳng định nào sau đây là đúng?",
+            "options": [
+                "$\\sin \\alpha$ tăng, $\\cos \\alpha$ giảm",
+                "$\\sin \\alpha$ giảm, $\\cos \\alpha$ tăng",
+                "Cả $\\sin \\alpha$ và $\\cos \\alpha$ đều tăng",
+                "Cả $\\sin \\alpha$ và $\\cos \\alpha$ đều giảm"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khi góc nhọn $\\alpha$ tăng từ $0^\\circ$ đến $90^\\circ$ thì cạnh đối tăng còn cạnh kề giảm, do đó $\\sin \\alpha$ tăng, $\\cos \\alpha$ giảm; $\\tan \\alpha$ tăng, $\\cot \\alpha$ giảm."
+        },
+        {
+            "id": "q-9.11.14",
+            "badge": "Câu 14 (TH) - Tính cạnh đối diện góc 30 độ",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 12\\text{ cm}$ và $\\widehat{B} = 30^\\circ$. Độ dài cạnh $AC$ bằng:",
+            "options": [
+                "$6\\text{ cm}$",
+                "$6\\sqrt{3}\\text{ cm}$",
+                "$4\\text{ cm}$",
+                "$8\\text{ cm}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ta có: $\\sin B = \\frac{AC}{BC} \\Rightarrow AC = BC \\cdot \\sin B = 12 \\cdot \\sin 30^\\circ = 12 \\cdot \\frac{1}{2} = 6\\text{ cm}$."
+        },
+        {
+            "id": "q-9.11.15",
+            "badge": "Câu 15 (VD) - Tính tang qua đường cao tam giác vuông",
+            "source": "Đề thi học kì I THCS Trưng Vương",
+            "question": "Cho tam giác $ABC$ vuông tại $A$, đường cao $AH$. Biết $BH = 4\\text{ cm}$ và $CH = 9\\text{ cm}$. Giá trị của $\\tan B$ bằng:",
+            "options": [
+                "$1,5$",
+                "$\\frac{2}{3}$",
+                "$\\frac{4}{9}$",
+                "$2,25$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo hệ thức lượng trong tam giác vuông: $AH^2 = BH \\cdot CH = 4 \\cdot 9 = 36 \\Rightarrow AH = 6\\text{ cm}$. Trong tam giác vuông $ABH$ vuông tại $H$, ta có $\\tan B = \\frac{AH}{BH} = \\frac{6}{4} = 1,5$."
+        },
+        {
+            "id": "q-9.11.16",
+            "badge": "Câu 16 (VD) - Tính giá trị phân thức lượng giác",
+            "source": "Đề thi tuyển sinh vào 10 THPT Chuyên KHTN",
+            "question": "Cho góc nhọn $\\alpha$ thỏa mãn $\\tan \\alpha = 2$. Giá trị của biểu thức $P = \\frac{\\sin \\alpha + \\cos \\alpha}{\\sin \\alpha - \\cos \\alpha}$ bằng:",
+            "options": [
+                "$3$",
+                "$2$",
+                "$\\frac{1}{3}$",
+                "$-3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chia cả tử và mẫu của biểu thức $P$ cho $\\cos \\alpha \\ne 0$: $P = \\frac{\\frac{\\sin \\alpha}{\\cos \\alpha} + 1}{\\frac{\\sin \\alpha}{\\cos \\alpha} - 1} = \\frac{\\tan \\alpha + 1}{\\tan \\alpha - 1} = \\frac{2 + 1}{2 - 1} = \\frac{3}{1} = 3$."
+        },
+        {
+            "id": "q-9.11.17",
+            "badge": "Câu 17 (VD) - Toán thực tế khoảng cách từ hải đăng đến thuyền",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 9 (Trang 100)",
+            "question": "Một ngọn hải đăng cao $45\\text{ m}$ so với mực nước biển. Từ đỉnh ngọn hải đăng, người quan sát nhìn thấy một chiếc thuyền đánh cá với góc hạ $30^\\circ$. Khoảng cách từ chân ngọn hải đăng đến chiếc thuyền là bao nhiêu mét?",
+            "options": [
+                "$45\\sqrt{3}\\text{ m} \\approx 77,94\\text{ m}$",
+                "$45\\text{ m}$",
+                "$90\\text{ m}$",
+                "$15\\sqrt{3}\\text{ m} \\approx 25,98\\text{ m}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi $A$ là chân tháp, $C$ là đỉnh tháp ($AC = 45\\text{ m}$) và $B$ là vị trí thuyền. Góc hạ bằng góc nâng tại thuyền nên $\\widehat{ABC} = 30^\\circ$. Trong tam giác vuông $ABC$, ta có: $\\tan 30^\\circ = \\frac{AC}{AB} \\Rightarrow AB = \\frac{AC}{\\tan 30^\\circ} = \\frac{45}{\\frac{\\sqrt{3}}{3}} = 45\\sqrt{3}\\text{ m} \\approx 77,94\\text{ m}$.",
+            "svgDiagram": "<svg viewBox=\"0 0 420 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-md\">\n  <!-- Mặt biển -->\n  <line x1=\"20\" y1=\"180\" x2=\"400\" y2=\"180\" stroke=\"#0284c7\" stroke-width=\"3\" />\n  <path d=\"M 30,185 Q 50,182 70,185 T 110,185 T 150,185 T 190,185 T 230,185 T 270,185 T 310,185 T 350,185 T 390,185\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.5\" />\n\n  <!-- Tháp hải đăng tại A(70, 180) lên C(70, 40) -->\n  <polygon points=\"58,180 82,180 77,50 63,50\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2\" />\n  <rect x=\"61\" y=\"32\" width=\"18\" height=\"18\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"1.5\" rx=\"3\" />\n  <!-- Ánh sáng hải đăng -->\n  <polygon points=\"79,41 340,180 70,41\" fill=\"#fef08a\" fill-opacity=\"0.18\" />\n\n  <!-- Đường nhìn ngắm từ đỉnh hải đăng C(70, 40) tới thuyền B(340, 180) -->\n  <line x1=\"70\" y1=\"41\" x2=\"340\" y2=\"180\" stroke=\"#facc15\" stroke-width=\"2\" stroke-dasharray=\"4 3\" />\n  <!-- Đường nằm ngang từ đỉnh để xác định góc hạ -->\n  <line x1=\"70\" y1=\"41\" x2=\"160\" y2=\"41\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\" />\n  <path d=\"M 120,41 A 50,50 0 0,1 113,63\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"1.8\" />\n  <text x=\"130\" y=\"58\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\">30°</text>\n\n  <!-- Con thuyền nhỏ tại B(340, 180) -->\n  <polygon points=\"325,180 355,180 350,192 330,192\" fill=\"#b45309\" stroke=\"#78350f\" stroke-width=\"1.5\" />\n  <line x1=\"340\" y1=\"180\" x2=\"340\" y2=\"162\" stroke=\"#f8fafc\" stroke-width=\"2\" />\n  <polygon points=\"340,164 353,173 340,173\" fill=\"#f43f5e\" />\n\n  <!-- Nhãn kích thước -->\n  <text x=\"65\" y=\"200\" fill=\"#f8fafc\" font-size=\"13\" font-weight=\"bold\">A (Chân tháp)</text>\n  <text x=\"340\" y=\"208\" fill=\"#f8fafc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">B (Thuyền)</text>\n  <text x=\"70\" y=\"24\" fill=\"#f8fafc\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">C (Đỉnh)</text>\n  <text x=\"35\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">45 m</text>\n  <text x=\"205\" y=\"172\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">d = ?</text>\n</svg>"
+        },
+        {
+            "id": "q-9.11.18",
+            "badge": "Câu 18 (VD) - Toán thực tế tính chiều cao cây từ bóng nắng",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 72)",
+            "question": "Một cây cổ thụ có bóng trên mặt đất dài $8\\text{ m}$ vào thời điểm các tia nắng mặt trời tạo với mặt đất một góc $40^\\circ$. Chiều cao của cây là (kết quả làm tròn đến hàng phần mười của mét, biết $\\tan 40^\\circ \\approx 0,8391$):",
+            "options": [
+                "$6,7\\text{ m}$",
+                "$6,1\\text{ m}$",
+                "$9,5\\text{ m}$",
+                "$5,1\\text{ m}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi chiều cao cây là $h$. Tam giác tạo bởi cây, bóng trên mặt đất và tia nắng là tam giác vuông tại gốc cây. Ta có: $\\tan 40^\\circ = \\frac{h}{8} \\Rightarrow h = 8 \\cdot \\tan 40^\\circ \\approx 8 \\cdot 0,8391 = 6,7128 \\approx 6,7\\text{ m}$.",
+            "svgDiagram": "<svg viewBox=\"0 0 420 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Mặt đất nằm ngang -->\n  <line x1=\"20\" y1=\"180\" x2=\"400\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\" />\n  \n  <!-- Thân cây tại A(80, 180) cao lên C(80, 50) -->\n  <line x1=\"80\" y1=\"180\" x2=\"80\" y2=\"50\" stroke=\"#10b981\" stroke-width=\"4.5\" stroke-linecap=\"round\" />\n  <!-- Tán cây tròn xanh -->\n  <circle cx=\"80\" cy=\"45\" r=\"28\" fill=\"#059669\" fill-opacity=\"0.8\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <circle cx=\"65\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"95\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"80\" cy=\"25\" r=\"16\" fill=\"#34d399\" fill-opacity=\"0.8\" />\n\n  <!-- Mặt trời vàng ở góc phải trên -->\n  <circle cx=\"360\" cy=\"35\" r=\"16\" fill=\"#f59e0b\" />\n  <path d=\"M 360,12 L 360,5 M 360,58 L 360,65 M 337,35 L 330,35 M 383,35 L 390,35 M 344,19 L 339,14 M 376,51 L 381,56\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-linecap=\"round\" />\n\n  <!-- Tia nắng nối từ ngọn cây C(80, 45) xuống bóng B(280, 180) -->\n  <line x1=\"80\" y1=\"45\" x2=\"280\" y2=\"180\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"5 3\" />\n  \n  <!-- Góc vuông tại gốc cây A -->\n  <rect x=\"80\" y=\"162\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  \n  <!-- Góc nâng của tia nắng tại B -->\n  <path d=\"M 240,180 A 40,40 0 0,1 247,157\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"215\" y=\"172\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">40°</text>\n\n  <!-- Tên đỉnh và kích thước -->\n  <text x=\"65\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A (Gốc)</text>\n  <text x=\"285\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B (Bóng)</text>\n  <text x=\"80\" y=\"18\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">C (Ngọn)</text>\n  \n  <!-- Nhãn đo chiều cao h và bóng d -->\n  <text x=\"45\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">h = ?</text>\n  <text x=\"180\" y=\"202\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Bóng AB = 8 m</text>\n</svg>"
+        },
+        {
+            "id": "q-9.11.19",
+            "badge": "Câu 19 (VD) - Toán thực tế góc nghiêng an toàn của chiếc thang",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 17 (Trang 102)",
+            "question": "Một chiếc thang dài $3,5\\text{ m}$ được đặt dựa vào bức tường thẳng đứng. Để đảm bảo an toàn, góc tạo bởi thang và mặt đất cần đạt khoảng $65^\\circ$. Khoảng cách an toàn từ chân thang đến chân tường là bao nhiêu mét? (Làm tròn đến hàng phần mười, biết $\\cos 65^\\circ \\approx 0,4226$):",
+            "options": [
+                "$1,5\\text{ m}$",
+                "$1,2\\text{ m}$",
+                "$3,2\\text{ m}$",
+                "$1,8\\text{ m}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Gọi khoảng cách từ chân thang đến tường là $d$. Chiếc thang đóng vai trò là cạnh huyền trong tam giác vuông. Ta có: $\\cos 65^\\circ = \\frac{d}{3,5} \\Rightarrow d = 3,5 \\cdot \\cos 65^\\circ \\approx 3,5 \\cdot 0,4226 = 1,4791 \\approx 1,5\\text{ m}$.",
+            "svgDiagram": "<svg viewBox=\"0 0 380 230\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-sm mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-md\">\n  <!-- Bức tường thẳng đứng AC và mặt đất AB -->\n  <line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"4\" stroke-linecap=\"round\" />\n  <line x1=\"50\" y1=\"190\" x2=\"350\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\" />\n  \n  <!-- Ký hiệu góc vuông tại chân tường A(80, 190) -->\n  <rect x=\"80\" y=\"172\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n\n  <!-- Chiếc thang BC nghiêng từ C(80, 50) xuống B(240, 190) -->\n  <line x1=\"80\" y1=\"50\" x2=\"240\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"5\" stroke-linecap=\"round\" />\n  <!-- Bậc thang -->\n  <line x1=\"104\" y1=\"71\" x2=\"100\" y2=\"76\" stroke=\"#d97706\" stroke-width=\"2.5\" />\n  <line x1=\"128\" y1=\"92\" x2=\"124\" y2=\"97\" stroke=\"#d97706\" stroke-width=\"2.5\" />\n  <line x1=\"152\" y1=\"113\" x2=\"148\" y2=\"118\" stroke=\"#d97706\" stroke-width=\"2.5\" />\n  <line x1=\"176\" y1=\"134\" x2=\"172\" y2=\"139\" stroke=\"#d97706\" stroke-width=\"2.5\" />\n  <line x1=\"200\" y1=\"155\" x2=\"196\" y2=\"160\" stroke=\"#d97706\" stroke-width=\"2.5\" />\n\n  <!-- Góc alpha giữa thang và mặt đất tại B -->\n  <path d=\"M 205,190 A 35,35 0 0,1 213,166\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n  <text x=\"185\" y=\"180\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">65°</text>\n\n  <!-- Nhãn kích thước -->\n  <text x=\"65\" y=\"208\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <text x=\"245\" y=\"208\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <text x=\"65\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <text x=\"175\" y=\"105\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-41 175 105)\" text-anchor=\"middle\">Thang = 3,5 m</text>\n  <text x=\"160\" y=\"210\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">d = ?</text>\n</svg>"
+        },
+        {
+            "id": "q-9.11.20",
+            "badge": "Câu 20 (VD) - Toán thực tế độ cao máy bay cất cánh",
+            "source": "Đề thi tuyển sinh vào 10 THPT TP. Hà Nội",
+            "question": "Một máy bay cất cánh từ đường băng theo đường thẳng nghiêng một góc $20^\\circ$ so với mặt đất với vận tốc trung bình $500\\text{ km/h}$. Hỏi sau $1,2\\text{ phút}$ kể từ khi cất cánh, máy bay đạt độ cao bao nhiêu mét so với mặt đất? (Biết $\\sin 20^\\circ \\approx 0,3420$):",
+            "options": [
+                "$3420\\text{ m}$",
+                "$2850\\text{ m}$",
+                "$1000\\text{ m}$",
+                "$3640\\text{ m}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đổi thời gian: $1,2\\text{ phút} = \\frac{1,2}{60} = 0,02\\text{ giờ}$. Quãng đường bay của máy bay là: $s = 500 \\cdot 0,02 = 10\\text{ km} = 10\\,000\\text{ m}$. Độ cao của máy bay là cạnh đối diện góc $20^\\circ$: $h = s \\cdot \\sin 20^\\circ = 10\\,000 \\cdot \\sin 20^\\circ \\approx 10\\,000 \\cdot 0,3420 = 3420\\text{ m}$."
+        }
+    ],
+    "trueFalseQuestions": [
+        {
+            "id": "tf-9.11.1",
+            "badge": "Đúng/Sai 1 (NB) - Định nghĩa các tỉ số lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 68)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$, có góc nhọn $\\widehat{B} = \\alpha$. Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\sin \\alpha = \\frac{AC}{BC}$.",
+                    "correctAnswer": true,
+                    "explanation": "Cạnh đối diện góc $B$ là $AC$, cạnh huyền là $BC$, nên $\\sin \\alpha = \\frac{AC}{BC}$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\cos \\alpha = \\frac{AC}{AB}$.",
+                    "correctAnswer": false,
+                    "explanation": "$\\cos \\alpha = \\frac{AB}{BC}$ (cạnh kề chia cạnh huyền), không phải $\\frac{AC}{AB}$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\tan \\alpha = \\frac{AC}{AB}$.",
+                    "correctAnswer": true,
+                    "explanation": "Tang là tỉ số giữa cạnh đối và cạnh kề: $\\tan \\alpha = \\frac{AC}{AB}$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\cot \\alpha = \\frac{AB}{AC}$.",
+                    "correctAnswer": true,
+                    "explanation": "Côtang là tỉ số giữa cạnh kề và cạnh đối: $\\cot \\alpha = \\frac{AB}{AC}$."
+                }
+            ],
+            "svgDiagram": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Đỉnh A(60, 190), B(320, 190), C(60, 40) - Vuông tại A, góc alpha tại B -->\n  <polygon points=\"60,190 340,190 60,40\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  \n  <!-- Ký hiệu góc vuông tại A -->\n  <rect x=\"60\" y=\"170\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2\" />\n  <circle cx=\"70\" cy=\"180\" r=\"2\" fill=\"#f43f5e\" />\n\n  <!-- Cung tròn góc alpha tại B -->\n  <path d=\"M 300,190 A 40,40 0 0,0 307.7,172.7\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"285\" y=\"178\" fill=\"#fbbf24\" font-size=\"16\" font-weight=\"bold\" font-style=\"italic\">α</text>\n\n  <!-- Tên các đỉnh -->\n  <text x=\"40\" y=\"205\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">A</text>\n  <text x=\"350\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">B</text>\n  <text x=\"50\" y=\"32\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\">C</text>\n\n  <!-- Tên các cạnh đối với góc alpha tại B -->\n  <text x=\"25\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh đối (AC)</text>\n  <text x=\"200\" y=\"215\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Cạnh kề (AB)</text>\n  <text x=\"215\" y=\"100\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"bold\" transform=\"rotate(-28 215 100)\" text-anchor=\"middle\">Cạnh huyền (BC)</text>\n</svg>"
+        },
+        {
+            "id": "tf-9.11.2",
+            "badge": "Đúng/Sai 2 (NB) - Tỉ số lượng giác của hai góc phụ nhau",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$. Xét tính đúng/sai của các hệ thức liên hệ giữa hai góc nhọn $B$ và $C$:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\sin B = \\cos C$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì hai góc $B$ và $C$ phụ nhau ($B + C = 90^\\circ$) nên $\\sin B = \\cos C$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\cos B = \\sin C$.",
+                    "correctAnswer": true,
+                    "explanation": "Góc phụ nhau: côsin góc này bằng sin góc kia."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\tan B = \\tan C$.",
+                    "correctAnswer": false,
+                    "explanation": "Hai góc phụ nhau thì $\\tan B = \\cot C$, không phải $\\tan B = \\tan C$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\tan B \\cdot \\tan C = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì $\\tan C = \\cot B$ nên $\\tan B \\cdot \\tan C = \\tan B \\cdot \\cot B = 1$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.3",
+            "badge": "Đúng/Sai 3 (NB) - Bảng giá trị lượng giác các góc đặc biệt",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "prompt": "Xét tính đúng/sai của các giá trị lượng giác các góc đặc biệt sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\sin 30^\\circ = \\cos 60^\\circ = \\frac{1}{2}$.",
+                    "correctAnswer": true,
+                    "explanation": "Đây là giá trị lượng giác chuẩn của hai góc phụ nhau $30^\\circ$ và $60^\\circ$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\tan 45^\\circ = \\cot 45^\\circ = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Tam giác vuông cân có góc $45^\\circ$ thì hai cạnh góc vuông bằng nhau, tỉ số bằng 1."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\cos 45^\\circ = \\frac{1}{2}$.",
+                    "correctAnswer": false,
+                    "explanation": "Giá trị đúng là $\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\tan 60^\\circ = \\sqrt{3}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\tan 60^\\circ = \\frac{\\sin 60^\\circ}{\\cos 60^\\circ} = \\frac{\\sqrt{3}/2}{1/2} = \\sqrt{3}$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.4",
+            "badge": "Đúng/Sai 4 (TH) - Các tính chất bất đẳng thức lượng giác",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "prompt": "Với mọi góc nhọn $\\alpha$ ($0^\\circ < \\alpha < 90^\\circ$), xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$0 < \\sin \\alpha < 1$ và $0 < \\cos \\alpha < 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Độ dài cạnh góc vuông luôn nhỏ hơn cạnh huyền và lớn hơn 0."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\sin \\alpha + \\cos \\alpha = 1$.",
+                    "correctAnswer": false,
+                    "explanation": "Hệ thức đúng phải có bình phương: $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\frac{\\sin \\alpha}{\\cos \\alpha} = \\frac{\\text{đối}/\\text{huyền}}{\\text{kề}/\\text{huyền}} = \\frac{\\text{đối}}{\\text{kề}} = \\tan \\alpha$."
+                },
+                {
+                    "id": "d",
+                    "text": "$1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$.",
+                    "correctAnswer": true,
+                    "explanation": "$1 + \\tan^2 \\alpha = 1 + \\frac{\\sin^2 \\alpha}{\\cos^2 \\alpha} = \\frac{\\cos^2 \\alpha + \\sin^2 \\alpha}{\\cos^2 \\alpha} = \\frac{1}{\\cos^2 \\alpha}$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.5",
+            "badge": "Đúng/Sai 5 (TH) - Tam giác vuông có cạnh 6 và 8",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 62)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}, AC = 8\\text{ cm}$. Xét tính đúng/sai:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Độ dài cạnh huyền $BC = 10\\text{ cm}$.",
+                    "correctAnswer": true,
+                    "explanation": "$BC = \\sqrt{AB^2 + AC^2} = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\sin B = \\frac{4}{5}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\sin B = \\frac{AC}{BC} = \\frac{8}{10} = \\frac{4}{5}$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\cos B = \\frac{4}{5}$.",
+                    "correctAnswer": false,
+                    "explanation": "$\\cos B = \\frac{AB}{BC} = \\frac{6}{10} = \\frac{3}{5}$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\tan B = \\frac{4}{3}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\tan B = \\frac{AC}{AB} = \\frac{8}{6} = \\frac{4}{3}$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.6",
+            "badge": "Đúng/Sai 6 (TH) - Tính toán biểu thức lượng giác",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 71)",
+            "prompt": "Xét tính đúng/sai của các phép tính lượng giác sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\sin^2 15^\\circ + \\sin^2 75^\\circ = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Vì $75^\\circ + 15^\\circ = 90^\\circ \\Rightarrow \\sin 75^\\circ = \\cos 15^\\circ \\Rightarrow \\sin^2 15^\\circ + \\cos^2 15^\\circ = 1$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\tan 10^\\circ \\cdot \\tan 80^\\circ = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\tan 80^\\circ = \\cot 10^\\circ \\Rightarrow \\tan 10^\\circ \\cdot \\cot 10^\\circ = 1$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\cos 50^\\circ - \\sin 40^\\circ = 1$.",
+                    "correctAnswer": false,
+                    "explanation": "Vì $\\cos 50^\\circ = \\sin 40^\\circ$ nên hiệu của chúng bằng 0, không phải 1."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\tan 30^\\circ \\cdot \\cot 30^\\circ = 1$.",
+                    "correctAnswer": true,
+                    "explanation": "Với mọi góc nhọn, tích tang và côtang luôn bằng 1."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.7",
+            "badge": "Đúng/Sai 7 (TH) - Tìm các tỉ số lượng giác khi biết sin alpha",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 66)",
+            "prompt": "Cho góc nhọn $\\alpha$ có $\\sin \\alpha = \\frac{3}{5}$. Xét tính đúng/sai:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\cos \\alpha = \\frac{4}{5}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\cos \\alpha = \\sqrt{1 - \\sin^2 \\alpha} = \\sqrt{1 - \\frac{9}{25}} = \\frac{4}{5}$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\tan \\alpha = \\frac{3}{4}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha} = \\frac{3/5}{4/5} = \\frac{3}{4}$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\cot \\alpha = \\frac{3}{4}$.",
+                    "correctAnswer": false,
+                    "explanation": "$\\cot \\alpha = \\frac{1}{\\tan \\alpha} = \\frac{4}{3}$, không phải $\\frac{3}{4}$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\sin \\alpha + \\cos \\alpha = \\frac{7}{5}$.",
+                    "correctAnswer": true,
+                    "explanation": "$\\frac{3}{5} + \\frac{4}{5} = \\frac{7}{5}$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.8",
+            "badge": "Đúng/Sai 8 (TH) - So sánh các tỉ số lượng giác",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 10 (Trang 100)",
+            "prompt": "Xét tính đúng/sai của các phép so sánh tỉ số lượng giác sau:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "$\\sin 25^\\circ < \\sin 70^\\circ$.",
+                    "correctAnswer": true,
+                    "explanation": "Khi góc nhọn tăng thì sin tăng, vì $25^\\circ < 70^\\circ$ nên $\\sin 25^\\circ < \\sin 70^\\circ$."
+                },
+                {
+                    "id": "b",
+                    "text": "$\\cos 25^\\circ < \\cos 70^\\circ$.",
+                    "correctAnswer": false,
+                    "explanation": "Khi góc nhọn tăng thì côsin giảm, nên $\\cos 25^\\circ > \\cos 70^\\circ$."
+                },
+                {
+                    "id": "c",
+                    "text": "$\\tan 40^\\circ < \\tan 65^\\circ$.",
+                    "correctAnswer": true,
+                    "explanation": "Khi góc nhọn tăng thì tang tăng, vì $40^\\circ < 65^\\circ$ nên $\\tan 40^\\circ < \\tan 65^\\circ$."
+                },
+                {
+                    "id": "d",
+                    "text": "$\\cot 15^\\circ > \\cot 45^\\circ$.",
+                    "correctAnswer": true,
+                    "explanation": "Khi góc nhọn tăng thì côtang giảm, vì $15^\\circ < 45^\\circ$ nên $\\cot 15^\\circ > \\cot 45^\\circ$."
+                }
+            ]
+        },
+        {
+            "id": "tf-9.11.9",
+            "badge": "Đúng/Sai 9 (VD) - Bài toán thực tế chiều cao cột cờ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 72)",
+            "prompt": "Một cột cờ thẳng đứng có bóng trên mặt đất dài $10\\text{ m}$. Tại thời điểm đó, góc nâng của ánh nắng mặt trời tạo với mặt đất là $35^\\circ$. Gọi $h$ là chiều cao của cột cờ ($h > 0$). Xét tính đúng/sai:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Mô hình hình học của bài toán là một tam giác vuông.",
+                    "correctAnswer": true,
+                    "explanation": "Cột cờ vuông góc với mặt đất tạo thành tam giác vuông."
+                },
+                {
+                    "id": "b",
+                    "text": "Ta có công thức liên hệ là $\\tan 35^\\circ = \\frac{h}{10}$.",
+                    "correctAnswer": true,
+                    "explanation": "Tang của góc nâng bằng cạnh đối (chiều cao cột cờ) chia cho cạnh kề (chiều dài bóng)."
+                },
+                {
+                    "id": "c",
+                    "text": "Chiều cao cột cờ được tính bằng $h = 10 \\cdot \\cos 35^\\circ$.",
+                    "correctAnswer": false,
+                    "explanation": "Công thức đúng là $h = 10 \\cdot \\tan 35^\\circ$."
+                },
+                {
+                    "id": "d",
+                    "text": "Chiều cao cột cờ xấp xỉ $7,0\\text{ m}$ (lấy $\\tan 35^\\circ \\approx 0,7002$).",
+                    "correctAnswer": true,
+                    "explanation": "$h = 10 \\cdot 0,7002 \\approx 7,0\\text{ m}$."
+                }
+            ],
+            "svgDiagram": "<svg viewBox=\"0 0 420 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 shadow-lg\">\n  <!-- Mặt đất nằm ngang -->\n  <line x1=\"20\" y1=\"180\" x2=\"400\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\" />\n  \n  <!-- Thân cây tại A(80, 180) cao lên C(80, 50) -->\n  <line x1=\"80\" y1=\"180\" x2=\"80\" y2=\"50\" stroke=\"#10b981\" stroke-width=\"4.5\" stroke-linecap=\"round\" />\n  <!-- Tán cây tròn xanh -->\n  <circle cx=\"80\" cy=\"45\" r=\"28\" fill=\"#059669\" fill-opacity=\"0.8\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <circle cx=\"65\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"95\" cy=\"40\" r=\"18\" fill=\"#10b981\" fill-opacity=\"0.8\" />\n  <circle cx=\"80\" cy=\"25\" r=\"16\" fill=\"#34d399\" fill-opacity=\"0.8\" />\n\n  <!-- Mặt trời vàng ở góc phải trên -->\n  <circle cx=\"360\" cy=\"35\" r=\"16\" fill=\"#f59e0b\" />\n  <path d=\"M 360,12 L 360,5 M 360,58 L 360,65 M 337,35 L 330,35 M 383,35 L 390,35 M 344,19 L 339,14 M 376,51 L 381,56\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-linecap=\"round\" />\n\n  <!-- Tia nắng nối từ ngọn cây C(80, 45) xuống bóng B(280, 180) -->\n  <line x1=\"80\" y1=\"45\" x2=\"280\" y2=\"180\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"5 3\" />\n  \n  <!-- Góc vuông tại gốc cây A -->\n  <rect x=\"80\" y=\"162\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  \n  <!-- Góc nâng của tia nắng tại B -->\n  <path d=\"M 240,180 A 40,40 0 0,1 247,157\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"215\" y=\"172\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\">40°</text>\n\n  <!-- Tên đỉnh và kích thước -->\n  <text x=\"65\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A (Gốc)</text>\n  <text x=\"285\" y=\"198\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B (Bóng)</text>\n  <text x=\"80\" y=\"18\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">C (Ngọn)</text>\n  \n  <!-- Nhãn đo chiều cao h và bóng d -->\n  <text x=\"45\" y=\"115\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\">h = ?</text>\n  <text x=\"180\" y=\"202\" fill=\"#34d399\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Bóng AB = 8 m</text>\n</svg>"
+        },
+        {
+            "id": "tf-9.11.10",
+            "badge": "Đúng/Sai 10 (VD) - Bài toán thực tế độ dốc đường đèo",
+            "source": "Đề thi tuyển sinh vào lớp 10 THPT TP. Đà Nẵng",
+            "prompt": "Một con dốc leo núi có độ dài từ chân dốc lên đỉnh dốc là $500\\text{ m}$, góc nghiêng của dốc so với phương nằm ngang là $6^\\circ$. Xét tính đúng/sai:",
+            "subItems": [
+                {
+                    "id": "a",
+                    "text": "Quãng đường leo dốc $500\\text{ m}$ tương ứng với cạnh huyền của tam giác vuông.",
+                    "correctAnswer": true,
+                    "explanation": "Mặt dốc nghiêng nối từ chân lên đỉnh đóng vai trò là cạnh huyền."
+                },
+                {
+                    "id": "b",
+                    "text": "Độ cao của đỉnh dốc so với mặt đất tính bằng công thức $h = 500 \\cdot \\sin 6^\\circ$.",
+                    "correctAnswer": true,
+                    "explanation": "Độ cao là cạnh đối diện góc nghiêng $6^\\circ$, nên $h = 500 \\cdot \\sin 6^\\circ$."
+                },
+                {
+                    "id": "c",
+                    "text": "Độ cao của đỉnh dốc xấp xỉ $52\\text{ m}$ (biết $\\sin 6^\\circ \\approx 0,1045$).",
+                    "correctAnswer": true,
+                    "explanation": "$h = 500 \\cdot 0,1045 = 52,25 \\approx 52\\text{ m}$."
+                },
+                {
+                    "id": "d",
+                    "text": "Khoảng cách nằm ngang từ chân dốc đến điểm chiếu thẳng đứng của đỉnh dốc là $500 \\cdot \\tan 6^\\circ$.",
+                    "correctAnswer": false,
+                    "explanation": "Khoảng cách nằm ngang là cạnh kề, được tính bằng $500 \\cdot \\cos 6^\\circ$, không phải $500 \\cdot \\tan 6^\\circ$."
+                }
+            ]
+        }
+    ],
+    "shortAnswerQuestions": [
+        {
+            "id": "sa-9.11.1",
+            "badge": "Trả lời ngắn 1 (TH) - Tính cạnh đối qua định lí Pythagore",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 69)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}$ và $BC = 13\\text{ cm}$. Tính độ dài cạnh $AC$ theo đơn vị xentimét.",
+            "correctAnswer": "12",
+            "acceptableAnswers": [
+                "12",
+                "12 cm",
+                "12cm"
+            ],
+            "explanation": "Theo định lí Pythagore: $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}$."
+        },
+        {
+            "id": "sa-9.11.2",
+            "badge": "Trả lời ngắn 2 (TH) - Tính giá trị biểu thức lượng giác",
+            "source": "SGK Toán 9 Cánh Diều Bài 1 (Trang 65)",
+            "prompt": "Tính giá trị của biểu thức $P = \\sin^2 35^\\circ + \\cos^2 35^\\circ + \\tan 45^\\circ$.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+                "2"
+            ],
+            "explanation": "Áp dụng hệ thức $\\sin^2 35^\\circ + \\cos^2 35^\\circ = 1$ và $\\tan 45^\\circ = 1$, ta có $P = 1 + 1 = 2$."
+        },
+        {
+            "id": "sa-9.11.3",
+            "badge": "Trả lời ngắn 3 (TH) - Tính biểu thức chứa sin khi biết cos",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 71)",
+            "prompt": "Cho góc nhọn $\\alpha$ thỏa mãn $\\cos \\alpha = 0,6$. Tính giá trị của biểu thức $10 \\sin \\alpha$.",
+            "correctAnswer": "8",
+            "acceptableAnswers": [
+                "8"
+            ],
+            "explanation": "Ta có $\\sin \\alpha = \\sqrt{1 - \\cos^2 \\alpha} = \\sqrt{1 - 0,36} = 0,8$. Do đó $10 \\sin \\alpha = 10 \\cdot 0,8 = 8$."
+        },
+        {
+            "id": "sa-9.11.4",
+            "badge": "Trả lời ngắn 4 (TH) - Tính tích tang hai góc phụ nhau",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 63)",
+            "prompt": "Tính giá trị của biểu thức $M = \\tan 20^\\circ \\cdot \\tan 70^\\circ + 2 \\sin 30^\\circ$.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+                "2"
+            ],
+            "explanation": "Vì $20^\\circ + 70^\\circ = 90^\\circ \\Rightarrow \\tan 70^\\circ = \\cot 20^\\circ \\Rightarrow \\tan 20^\\circ \\cdot \\tan 70^\\circ = 1$. Lại có $\\sin 30^\\circ = 0,5 \\Rightarrow 2 \\sin 30^\\circ = 1$. Do đó $M = 1 + 1 = 2$."
+        },
+        {
+            "id": "sa-9.11.5",
+            "badge": "Trả lời ngắn 5 (TH) - Tìm cạnh đối diện góc 30 độ",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 70)",
+            "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $\\widehat{B} = 30^\\circ$ và cạnh huyền $BC = 16\\text{ cm}$. Tính độ dài cạnh $AC$ (đơn vị: cm).",
+            "correctAnswer": "8",
+            "acceptableAnswers": [
+                "8",
+                "8 cm",
+                "8cm"
+            ],
+            "explanation": "Trong tam giác vuông, cạnh đối diện góc $30^\\circ$ bằng một nửa cạnh huyền: $AC = BC \\cdot \\sin 30^\\circ = 16 \\cdot \\frac{1}{2} = 8\\text{ cm}$."
+        },
+        {
+            "id": "sa-9.11.6",
+            "badge": "Trả lời ngắn 6 (VD) - Bài toán thực tế khoảng cách chân thang",
+            "source": "Tài liệu chuyên đề Toán 9 HK1 Bài 20 (Trang 103)",
+            "prompt": "Một chiếc thang dài $5\\text{ m}$ dựa vào tường sao cho góc tạo bởi thang và mặt đất là $60^\\circ$. Khoảng cách từ chân thang đến chân tường bằng bao nhiêu mét?",
+            "correctAnswer": "2,5",
+            "acceptableAnswers": [
+                "2,5",
+                "2.5",
+                "2,5 m",
+                "2.5 m"
+            ],
+            "explanation": "Khoảng cách từ chân thang đến chân tường là cạnh kề góc $60^\\circ$: $d = 5 \\cdot \\cos 60^\\circ = 5 \\cdot 0,5 = 2,5\\text{ m}$."
+        },
+        {
+            "id": "sa-9.11.7",
+            "badge": "Trả lời ngắn 7 (VD) - Tính phân thức lượng giác theo tang",
+            "source": "Đề thi học kì I THCS Cầu Giấy",
+            "prompt": "Cho góc nhọn $\\alpha$ có $\\tan \\alpha = 3$. Tính giá trị của biểu thức $Q = \\frac{2\\sin \\alpha + 3\\cos \\alpha}{\\sin \\alpha - \\cos \\alpha}$.",
+            "correctAnswer": "4,5",
+            "acceptableAnswers": [
+                "4,5",
+                "4.5",
+                "9/2"
+            ],
+            "explanation": "Chia cả tử và mẫu cho $\\cos \\alpha \\ne 0$: $Q = \\frac{2\\tan \\alpha + 3}{\\tan \\alpha - 1} = \\frac{2(3) + 3}{3 - 1} = \\frac{9}{2} = 4,5$."
+        },
+        {
+            "id": "sa-9.11.8",
+            "badge": "Trả lời ngắn 8 (VD) - Bài toán thực tế chiều cao cầu vượt",
+            "source": "SGK Toán 9 Kết Nối Tri Thức Bài 11 (Trang 72)",
+            "prompt": "Một con dốc dẫn lên cầu vượt dài $200\\text{ m}$ có góc nghiêng so với mặt đất là $3^\\circ$. Chiều cao của cầu vượt so với mặt đất bằng bao nhiêu mét? (Làm tròn kết quả đến hàng đơn vị mét, biết $\\sin 3^\\circ \\approx 0,0523$):",
+            "correctAnswer": "10",
+            "acceptableAnswers": [
+                "10",
+                "10 m",
+                "10m"
+            ],
+            "explanation": "Chiều cao cầu vượt là cạnh đối diện góc $3^\\circ$: $h = 200 \\cdot \\sin 3^\\circ \\approx 200 \\cdot 0,0523 = 10,46 \\approx 10\\text{ m}$."
+        },
+        {
+            "id": "sa-9.11.9",
+            "badge": "Trả lời ngắn 9 (VD) - Bài toán thực tế đo chiều cao tháp",
+            "source": "Đề tuyển sinh vào 10 THPT TP. Hồ Chí Minh",
+            "prompt": "Một người đứng cách chân tháp $100\\text{ m}$ nhìn lên đỉnh tháp dưới góc nâng $60^\\circ$. Biết khoảng cách từ mắt người quan sát đến mặt đất là $1,6\\text{ m}$. Tính chiều cao của tháp theo đơn vị mét (làm tròn đến hàng đơn vị, lấy $\\sqrt{3} \\approx 1,732$).",
+            "correctAnswer": "175",
+            "acceptableAnswers": [
+                "175",
+                "175 m",
+                "175m"
+            ],
+            "explanation": "Độ cao từ tầm mắt người đến đỉnh tháp là: $h_1 = 100 \\cdot \\tan 60^\\circ = 100\\sqrt{3} \\approx 173,2\\text{ m}$. Chiều cao của tháp là: $h = 1,6 + h_1 \\approx 1,6 + 173,2 = 174,8 \\approx 175\\text{ m}$."
+        },
+        {
+            "id": "sa-9.11.10",
+            "badge": "Trả lời ngắn 10 (VD) - Bài toán thực tế cáp treo leo núi",
+            "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 1 (Trang 64)",
+            "prompt": "Một tuyến cáp treo từ chân núi lên đỉnh núi có chiều dài dây cáp là $1200\\text{ m}$. Góc tạo bởi tuyến cáp treo với phương nằm ngang là $30^\\circ$. Hỏi đỉnh núi cao hơn chân núi bao nhiêu mét?",
+            "correctAnswer": "600",
+            "acceptableAnswers": [
+                "600",
+                "600 m",
+                "600m"
+            ],
+            "explanation": "Chiều cao của đỉnh núi so với chân núi là cạnh đối diện góc $30^\\circ$: $h = 1200 \\cdot \\sin 30^\\circ = 1200 \\cdot \\frac{1}{2} = 600\\text{ m}$."
+        }
+    ]
+},
 };

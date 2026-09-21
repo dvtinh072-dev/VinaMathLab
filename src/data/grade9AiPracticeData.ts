@@ -6623,4 +6623,581 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
     }
   ]
 },
+  // ==========================================
+  // BÀI 10: CĂN BẬC BA VÀ CĂN THỨC BẬC BA
+  // ==========================================
+  "t9-b10-can-bac-ba": {
+  "quizQuestions": [
+    {
+      "id": "ai-9.10.1",
+      "badge": "Luyện thêm 1 (NB) - Căn bậc ba số nguyên dương",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "Giá trị của $\\sqrt[3]{1}$ bằng:",
+      "options": [
+        "$1$",
+        "$-1$",
+        "$\\pm 1$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $1^3 = 1$ nên $\\sqrt[3]{1} = 1$."
+    },
+    {
+      "id": "ai-9.10.2",
+      "badge": "Luyện thêm 2 (NB) - Căn bậc ba số nguyên âm",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "question": "Giá trị của $\\sqrt[3]{-1}$ bằng:",
+      "options": [
+        "$-1$",
+        "$1$",
+        "$\\pm 1$",
+        "Không xác định"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $(-1)^3 = -1$ nên $\\sqrt[3]{-1} = -1$."
+    },
+    {
+      "id": "ai-9.10.3",
+      "badge": "Luyện thêm 3 (NB) - Căn bậc ba của 27",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "question": "Căn bậc ba của số $27$ là:",
+      "options": [
+        "$3$",
+        "$-3$",
+        "$\\pm 3$",
+        "$9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $3^3 = 27$ nên $\\sqrt[3]{27} = 3$."
+    },
+    {
+      "id": "ai-9.10.4",
+      "badge": "Luyện thêm 4 (NB) - Căn bậc ba của -64",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "Giá trị của $\\sqrt[3]{-64}$ bằng:",
+      "options": [
+        "$-4$",
+        "$4$",
+        "$\\pm 4$",
+        "$-8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $(-4)^3 = -64$ nên $\\sqrt[3]{-64} = -4$."
+    },
+    {
+      "id": "ai-9.10.5",
+      "badge": "Luyện thêm 5 (NB) - Căn bậc ba của 125",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "question": "Căn bậc ba của $125$ là:",
+      "options": [
+        "$5$",
+        "$-5$",
+        "$\\pm 5$",
+        "$25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $5^3 = 125$ nên $\\sqrt[3]{125} = 5$."
+    },
+    {
+      "id": "ai-9.10.6",
+      "badge": "Luyện thêm 6 (NB) - Căn bậc ba của số thập phân",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "question": "Giá trị của $\\sqrt[3]{0,008}$ bằng:",
+      "options": [
+        "$0,2$",
+        "$0,02$",
+        "$2$",
+        "$0,002$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $0,2^3 = 0,008$ nên $\\sqrt[3]{0,008} = 0,2$."
+    },
+    {
+      "id": "ai-9.10.7",
+      "badge": "Luyện thêm 7 (NB) - Căn bậc ba của phân số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "Giá trị của $\\sqrt[3]{\\frac{27}{64}}$ bằng:",
+      "options": [
+        "$\\frac{3}{4}$",
+        "$\\frac{9}{16}$",
+        "$\\pm \\frac{3}{4}$",
+        "$\\frac{3}{8}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{\\frac{27}{64}} = \\frac{\\sqrt[3]{27}}{\\sqrt[3]{64}} = \\frac{3}{4}$."
+    },
+    {
+      "id": "ai-9.10.8",
+      "badge": "Luyện thêm 8 (NB) - Hằng đẳng thức căn bậc ba",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "question": "Giá trị của biểu thức $(\\sqrt[3]{-7})^3$ bằng:",
+      "options": [
+        "$-7$",
+        "$7$",
+        "$-343$",
+        "Không tồn tại"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo tính chất căn bậc ba: $(\\sqrt[3]{a})^3 = a$ với mọi số thực $a$. Do đó $(\\sqrt[3]{-7})^3 = -7$."
+    },
+    {
+      "id": "ai-9.10.9",
+      "badge": "Luyện thêm 9 (NB) - Điều kiện xác định",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "question": "Biểu thức $\\sqrt[3]{5 - x}$ xác định khi:",
+      "options": [
+        "Với mọi số thực $x$",
+        "$x \\le 5$",
+        "$x \\ge 5$",
+        "$x \\ne 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Căn thức bậc ba luôn xác định với mọi $x \\in \\mathbb{R}$."
+    },
+    {
+      "id": "ai-9.10.10",
+      "badge": "Luyện thêm 10 (NB) - Tính chất đối dấu",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "Với số thực $a$ bất kì, khẳng định nào sau đây là đúng?",
+      "options": [
+        "$\\sqrt[3]{-a} = -\\sqrt[3]{a}$",
+        "$\\sqrt[3]{-a} = \\sqrt[3]{a}$",
+        "$\\sqrt[3]{-a} = |\\sqrt[3]{a}|$",
+        "$\\sqrt[3]{-a}$ không tồn tại khi $a > 0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta luôn có tính chất $\\sqrt[3]{-a} = -\\sqrt[3]{a}$."
+    },
+    {
+      "id": "ai-9.10.11",
+      "badge": "Luyện thêm 11 (TH) - Nhân hai căn bậc ba",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "Tích $\\sqrt[3]{-4} \\cdot \\sqrt[3]{16}$ có giá trị bằng:",
+      "options": [
+        "$-4$",
+        "$4$",
+        "$-8$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{-4 \\cdot 16} = \\sqrt[3]{-64} = -4$."
+    },
+    {
+      "id": "ai-9.10.12",
+      "badge": "Luyện thêm 12 (TH) - Chia hai căn bậc ba",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "question": "Thương $\\frac{\\sqrt[3]{-250}}{\\sqrt[3]{2}}$ có giá trị bằng:",
+      "options": [
+        "$-5$",
+        "$5$",
+        "$-25$",
+        "Không xác định"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{\\frac{-250}{2}} = \\sqrt[3]{-125} = -5$."
+    },
+    {
+      "id": "ai-9.10.13",
+      "badge": "Luyện thêm 13 (TH) - Tính giá trị tổng hai căn bậc ba",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "question": "Giá trị của biểu thức $\\sqrt[3]{216} - \\sqrt[3]{125}$ bằng:",
+      "options": [
+        "$1$",
+        "$-1$",
+        "$91$",
+        "$3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{216} = 6, \\sqrt[3]{125} = 5$. Kết quả $6 - 5 = 1$."
+    },
+    {
+      "id": "ai-9.10.14",
+      "badge": "Luyện thêm 14 (TH) - Rút gọn biểu thức chứa biến",
+      "isAiGenerated": true,
+      "source": "Tài liệu chuyên đề Toán 9 HK1",
+      "question": "Rút gọn biểu thức $\\sqrt[3]{64x^3}$ ta được:",
+      "options": [
+        "$4x$",
+        "$4|x|$",
+        "$16x$",
+        "$4x^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{(4x)^3} = 4x$."
+    },
+    {
+      "id": "ai-9.10.15",
+      "badge": "Luyện thêm 15 (TH) - So sánh hai số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "question": "So sánh hai số $5$ và $\\sqrt[3]{124}$:",
+      "options": [
+        "$5 > \\sqrt[3]{124}$",
+        "$5 < \\sqrt[3]{124}$",
+        "$5 = \\sqrt[3]{124}$",
+        "$5 \\le \\sqrt[3]{124}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$5 = \\sqrt[3]{125}$. Vì $125 > 124$ nên $5 > \\sqrt[3]{124}$."
+    },
+    {
+      "id": "ai-9.10.16",
+      "badge": "Luyện thêm 16 (TH) - Giải phương trình chứa căn bậc ba",
+      "isAiGenerated": true,
+      "source": "Đề thi học kì 1 Toán 9",
+      "question": "Tìm nghiệm của phương trình $\\sqrt[3]{x} = -1$:",
+      "options": [
+        "$x = -1$",
+        "$x = 1$",
+        "$x = -3$",
+        "Vô nghiệm"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{x} = -1 \\Leftrightarrow x = (-1)^3 = -1$."
+    },
+    {
+      "id": "ai-9.10.17",
+      "badge": "Luyện thêm 17 (VD) - Phương trình căn bậc ba chứa nhị thức",
+      "isAiGenerated": true,
+      "source": "Đề thi tuyển sinh vào 10",
+      "question": "Nghiệm của phương trình $\\sqrt[3]{x - 5} = 2$ là:",
+      "options": [
+        "$x = 13$",
+        "$x = 11$",
+        "$x = 3$",
+        "$x = 9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x - 5 = 2^3 = 8 \\Leftrightarrow x = 13$."
+    },
+    {
+      "id": "ai-9.10.18",
+      "badge": "Luyện thêm 18 (VD) - Rút gọn biểu thức chứa căn bậc ba",
+      "isAiGenerated": true,
+      "source": "Đề thi khảo sát Toán 9",
+      "question": "Giá trị của biểu thức $\\sqrt[3]{(3 - \\sqrt{10})^3} + \\sqrt{10}$ bằng:",
+      "options": [
+        "$3$",
+        "$-3$",
+        "$2\\sqrt{10}$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\sqrt[3]{(3-\\sqrt{10})^3} + \\sqrt{10} = (3 - \\sqrt{10}) + \\sqrt{10} = 3$."
+    },
+    {
+      "id": "ai-9.10.19",
+      "badge": "Luyện thêm 19 (VD - Thực tế) - Cạnh của thùng gỗ lập phương",
+      "isAiGenerated": true,
+      "source": "Bài tập Ứng dụng thực tế",
+      "question": "Một chiếc hộp quà hình lập phương có thể tích bằng $512\\text{ cm}^3$. Độ dài cạnh của chiếc hộp quà là:",
+      "options": [
+        "$8\\text{ cm}$",
+        "$64\\text{ cm}$",
+        "$16\\text{ cm}$",
+        "$4\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cạnh của chiếc hộp là $a = \\sqrt[3]{512} = 8\\text{ cm}$ (vì $8^3 = 512$)."
+    },
+    {
+      "id": "ai-9.10.20",
+      "badge": "Luyện thêm 20 (VD - Thực tế) - Thể tích bể nước hình lập phương",
+      "isAiGenerated": true,
+      "source": "Toán học và Đời sống",
+      "question": "Một bể chứa nước hình lập phương có độ dài cạnh là $3\\text{ m}$. Thể tích chứa nước tối đa của bể là:",
+      "options": [
+        "$27\\text{ m}^3$",
+        "$9\\text{ m}^3$",
+        "$18\\text{ m}^3$",
+        "$81\\text{ m}^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$V = a^3 = 3^3 = 27\\text{ m}^3$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-9.10.1",
+      "badge": "Luyện thêm Đ/S 1 - So sánh căn bậc hai và căn bậc ba",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "prompt": "Xét tính đúng/sai của các so sánh giữa căn bậc hai và căn bậc ba:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Căn bậc hai chỉ xác định với số không âm, còn căn bậc ba xác định với mọi số thực.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa."
+        },
+        {
+          "id": "b",
+          "text": "Số dương $a$ có đúng hai căn bậc hai nhưng chỉ có duy nhất một căn bậc ba.",
+          "correctAnswer": true,
+          "explanation": "Đúng, căn bậc hai có $\\pm\\sqrt{a}$, còn căn bậc ba là duy nhất $\\sqrt[3]{a}$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt{x^2} = |x|$, còn $\\sqrt[3]{x^3} = x$ với mọi số thực $x$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo hai hằng đẳng thức căn bản."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt[3]{-64} = 4$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $(-4)^3 = -64$ nên $\\sqrt[3]{-64} = -4$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.10.2",
+      "badge": "Luyện thêm Đ/S 2 - Tính toán căn bậc ba các số nguyên",
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "prompt": "Xét tính đúng/sai của các phép tính sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt[3]{125} = 5$.",
+          "correctAnswer": true,
+          "explanation": "$5^3 = 125$."
+        },
+        {
+          "id": "b",
+          "text": "$\\sqrt[3]{-216} = -6$.",
+          "correctAnswer": true,
+          "explanation": "$(-6)^3 = -216$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt[3]{1000} = 100$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $10^3 = 1000$ nên $\\sqrt[3]{1000} = 10$, không phải $100$."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt[3]{0,027} = 0,3$.",
+          "correctAnswer": true,
+          "explanation": "$0,3^3 = 0,027$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.10.3",
+      "badge": "Luyện thêm Đ/S 3 - Phép nhân chia căn bậc ba",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "prompt": "Xét tính đúng/sai của các phép biến đổi:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$\\sqrt[3]{-8} \\cdot \\sqrt[3]{27} = -6$.",
+          "correctAnswer": true,
+          "explanation": "$(-2) \\cdot 3 = -6$."
+        },
+        {
+          "id": "b",
+          "text": "$\\frac{\\sqrt[3]{250}}{\\sqrt[3]{2}} = 5$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt[3]{\\frac{250}{2}} = \\sqrt[3]{125} = 5$."
+        },
+        {
+          "id": "c",
+          "text": "$\\sqrt[3]{a \\cdot b} = \\sqrt[3]{a} \\cdot \\sqrt[3]{b}$ chỉ đúng khi $a \\ge 0, b \\ge 0$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì công thức đúng với mọi số thực $a, b$, không cần điều kiện không âm."
+        },
+        {
+          "id": "d",
+          "text": "$\\sqrt[3]{x^6} = x^2$ với mọi số thực $x$.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt[3]{(x^2)^3} = x^2$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.10.4",
+      "badge": "Luyện thêm Đ/S 4 - Phương trình căn thức bậc ba",
+      "source": "Tài liệu bồi dưỡng học sinh giỏi Toán 9",
+      "prompt": "Cho phương trình $\\sqrt[3]{x - 1} = -2$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Phương trình xác định với mọi số thực $x$.",
+          "correctAnswer": true,
+          "explanation": "Căn bậc ba xác định trên $\\mathbb{R}$."
+        },
+        {
+          "id": "b",
+          "text": "Phương trình tương đương với $x - 1 = -8$.",
+          "correctAnswer": true,
+          "explanation": "Lập phương hai vế: $x - 1 = (-2)^3 = -8$."
+        },
+        {
+          "id": "c",
+          "text": "Phương trình có nghiệm là $x = -7$.",
+          "correctAnswer": true,
+          "explanation": "$x = -8 + 1 = -7$."
+        },
+        {
+          "id": "d",
+          "text": "Phương trình có nghiệm là $x = -9$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì nghiệm là $x = -7$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.10.5",
+      "badge": "Luyện thêm Đ/S 5 - Toán thực tế: Khối rubik và hình lập phương",
+      "source": "Đề thi học kì 1 Toán 9",
+      "prompt": "Một khối lập phương bằng pha lê có thể tích $V = 1000\\text{ cm}^3$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài mỗi cạnh của khối lập phương là $10\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "$a = \\sqrt[3]{1000} = 10\\text{ cm}$."
+        },
+        {
+          "id": "b",
+          "text": "Diện tích một mặt của khối lập phương là $100\\text{ cm}^2$.",
+          "correctAnswer": true,
+          "explanation": "$S = a^2 = 10^2 = 100\\text{ cm}^2$."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích toàn phần 6 mặt của khối lập phương là $600\\text{ cm}^2$.",
+          "correctAnswer": true,
+          "explanation": "$6 \\cdot 100 = 600\\text{ cm}^2$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu tăng độ dài mỗi cạnh lên gấp đôi thì thể tích khối lập phương tăng lên gấp $6$ lần.",
+          "correctAnswer": false,
+          "explanation": "Sai, thể tích tăng $2^3 = 8$ lần."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.10.6",
+      "badge": "Luyện thêm Đ/S 6 - Ứng dụng công thức vật lí",
+      "source": "Vật lí 9 - Thủy lực và chất lưu",
+      "prompt": "Một giọt nước mưa hình cầu có thể tích $V = \\frac{4}{3}\\pi R^3$. Xét tính đúng/sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bán kính $R$ được biểu diễn theo thể tích bởi $R = \\sqrt[3]{\\frac{3V}{4\\pi}}$.",
+          "correctAnswer": true,
+          "explanation": "$R^3 = \\frac{3V}{4\\pi} \\implies R = \\sqrt[3]{\\frac{3V}{4\\pi}}$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu thể tích giọt nước tăng gấp $8$ lần thì bán kính $R$ tăng gấp $2$ lần.",
+          "correctAnswer": true,
+          "explanation": "$\\sqrt[3]{8} = 2$."
+        },
+        {
+          "id": "c",
+          "text": "Nếu bán kính giọt nước tăng gấp $3$ lần thì thể tích tăng gấp $9$ lần.",
+          "correctAnswer": false,
+          "explanation": "Sai, thể tích tăng $3^3 = 27$ lần."
+        },
+        {
+          "id": "d",
+          "text": "Khi thể tích $V = 36\\pi\\text{ mm}^3$ thì bán kính $R = 3\\text{ mm}$.",
+          "correctAnswer": true,
+          "explanation": "$R^3 = \\frac{3 \\cdot 36\\pi}{4\\pi} = 27 \\implies R = \\sqrt[3]{27} = 3\\text{ mm}$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-9.10.1",
+      "badge": "Luyện thêm Trả lời ngắn 1 (NB) - Tính căn bậc ba số nguyên",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "prompt": "Tính giá trị của biểu thức $A = \\sqrt[3]{729}$.",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9",
+        "A=9"
+      ],
+      "explanation": "Vì $9^3 = 729$ nên $\\sqrt[3]{729} = 9$."
+    },
+    {
+      "id": "ai-sa-9.10.2",
+      "badge": "Luyện thêm Trả lời ngắn 2 (NB) - Tính căn bậc ba số âm",
+      "source": "SGK Toán 9 Cánh Diều Bài 4",
+      "prompt": "Tính giá trị của biểu thức $B = \\sqrt[3]{-512}$.",
+      "correctAnswer": "-8",
+      "acceptableAnswers": [
+        "-8",
+        "B=-8"
+      ],
+      "explanation": "Vì $(-8)^3 = -512$ nên $\\sqrt[3]{-512} = -8$."
+    },
+    {
+      "id": "ai-sa-9.10.3",
+      "badge": "Luyện thêm Trả lời ngắn 3 (TH) - Tích hai căn bậc ba",
+      "source": "SGK Toán 9 Chân Trời Sáng Tạo Bài 4",
+      "prompt": "Tính giá trị của biểu thức $M = \\sqrt[3]{5} \\cdot \\sqrt[3]{25}$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "M=5"
+      ],
+      "explanation": "$M = \\sqrt[3]{5 \\cdot 25} = \\sqrt[3]{125} = 5$."
+    },
+    {
+      "id": "ai-sa-9.10.4",
+      "badge": "Luyện thêm Trả lời ngắn 4 (TH) - Rút gọn tổng các căn bậc ba",
+      "source": "SGK Toán 9 Kết Nối Tri Thức Bài 10",
+      "prompt": "Tính giá trị của biểu thức $P = \\sqrt[3]{64} + \\sqrt[3]{-8} + \\sqrt[3]{27}$.",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "P=5"
+      ],
+      "explanation": "$P = 4 + (-2) + 3 = 5$."
+    },
+    {
+      "id": "ai-sa-9.10.5",
+      "badge": "Luyện thêm Trả lời ngắn 5 (VD) - Tìm x trong phương trình",
+      "source": "Đề thi khảo sát Toán 9",
+      "prompt": "Tìm nghiệm của phương trình $\\sqrt[3]{x - 2} = 4$.",
+      "correctAnswer": "66",
+      "acceptableAnswers": [
+        "66",
+        "x=66"
+      ],
+      "explanation": "$x - 2 = 4^3 = 64 \\Leftrightarrow x = 66$."
+    },
+    {
+      "id": "ai-sa-9.10.6",
+      "badge": "Luyện thêm Trả lời ngắn 6 (VD - Thực tế) - Độ dài cạnh bể nước",
+      "source": "Toán học và Đời sống",
+      "prompt": "Một bể nước ngầm hình lập phương có dung tích chứa được $8000\\text{ lít}$ nước ($8\\text{ m}^3$). Tính độ dài cạnh của bể nước theo mét.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2 m",
+        "2m",
+        "a=2"
+      ],
+      "explanation": "$a = \\sqrt[3]{V} = \\sqrt[3]{8} = 2\\text{ m}$."
+    }
+  ]
+},
 };

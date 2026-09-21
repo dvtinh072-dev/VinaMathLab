@@ -6,10 +6,10 @@
  * 
  * Quy tắc kỹ thuật & Sư phạm:
  * 1. Năm học chuẩn xác duy nhất: 2026 - 2027.
- * 2. Cấu trúc chuẩn theo đề của Sở: Nếu 100% tự luận thì chỉ làm tự luận; có trắc nghiệm thì làm trắc nghiệm.
- * 3. Hỗ trợ đầy đủ: Vẽ hình vector SVG trực quan, Barem điểm & Hướng dẫn chấm chi tiết từng bước.
+ * 2. Chuẩn tuyệt đối như đề gốc của Sở: Đề gốc có gì thì để nguyên văn bản như vậy; không tự ý vẽ thêm hình (thí sinh phải tự vẽ hình vào bài làm theo quy chế thi).
+ * 3. Nếu đề gốc 100% tự luận thì chỉ làm tự luận; nếu có trắc nghiệm thì giữ đúng tỉ lệ. Barem điểm & Hướng dẫn chấm chi tiết từng bước.
  * 4. Chia đợt cập nhật để tránh tràn bộ nhớ ngữ cảnh AI:
- *    - ĐỢT 1: Hà Nội & TP. Hồ Chí Minh (Đã hoàn thành xuất sắc)
+ *    - ĐỢT 1: Hà Nội & TP. Hồ Chí Minh (Đã hoàn thành xuất sắc đúng nguyên bản đề gốc)
  *    - ĐỢT 2: Cụm Đồng Bằng & Miền Núi Phía Bắc (Hải Phòng, Bắc Ninh, Hải Dương, Hưng Yên, Nam Định, Ninh Bình, Quảng Ninh, Vĩnh Phúc, Phú Thọ, Thái Nguyên)
  *    - ĐỢT 3: Cụm Miền Trung & Tây Nguyên (Thanh Hóa, Nghệ An, Hà Tĩnh, Thừa Thiên Huế, Đà Nẵng, Quảng Nam, Bình Định, Khánh Hòa, Đắk Lắk, Lâm Đồng)
  *    - ĐỢT 4: Cụm Đông Nam Bộ & Đồng Bằng Sông Cửu Long (Bình Dương, Đồng Nai, Bà Rịa - Vũng Tàu, Cần Thơ, An Giang, Tiền Giang, Long An, Kiên Giang)
@@ -39,7 +39,7 @@ export const TUYEN_SINH_10_ROADMAP: ProvinceExamMeta[] = [
     totalPoints: 10.0,
     batchNumber: 1,
     status: "completed",
-    notes: "Nguồn chính thức Sở GD&ĐT Hà Nội năm học 2026-2027. 100% Tự luận (5 bài), có hình vẽ đường tròn SVG.",
+    notes: "Nguồn chính thức Sở GD&ĐT Hà Nội năm học 2026-2027. 100% Tự luận (5 bài), giữ nguyên bản không vẽ sẵn hình.",
   },
   {
     code: "ts10-tphcm-2026",
@@ -50,7 +50,7 @@ export const TUYEN_SINH_10_ROADMAP: ProvinceExamMeta[] = [
     totalPoints: 10.0,
     batchNumber: 1,
     status: "completed",
-    notes: "Nguồn chính thức Sở GD&ĐT TP.HCM năm học 2026-2027. 100% Tự luận (6 bài thực tế đời sống), có hình vẽ SVG.",
+    notes: "Nguồn chính thức Sở GD&ĐT TP.HCM năm học 2026-2027. 100% Tự luận (6 bài thực tế đời sống), chuẩn nguyên bản đề gốc.",
   },
 
   // --- ĐỢT 2: CỤM MIỀN BẮC ---

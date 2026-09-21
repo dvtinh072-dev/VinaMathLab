@@ -26,12 +26,12 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hn-bai-1",
           index: 1,
-          title: "Bài I (2.0 điểm): Căn thức bậc hai và biểu thức đại số",
+          title: "Bài I (2.0 điểm)",
           stem: "Cho hai biểu thức:\n$$A = \\frac{\\sqrt{x}}{\\sqrt{x} + 3} \\quad \\text{và} \\quad B = \\frac{2\\sqrt{x}}{\\sqrt{x} - 3} - \\frac{3x + 9}{x - 9} \\quad \\text{với } x \\ge 0, x \\ne 9$$\n1) Tính giá trị của biểu thức $A$ khi $x = 16$.\n2) Rút gọn biểu thức $B$.\n3) Cho biểu thức $P = A + B$. Tìm tất cả các giá trị nguyên của $x$ để biểu thức $P$ nhận giá trị là số nguyên.",
           points: 2.0,
           subItems: [
             { key: "1", text: "Tính giá trị của biểu thức A khi x = 16", points: 0.5 },
-            { key: "2", text: "Rút gọn biểu thức B chứng minh B = -sqrt(x)/(sqrt(x)+3) hoặc dạng tối giản", points: 1.0 },
+            { key: "2", text: "Rút gọn biểu thức B", points: 1.0 },
             { key: "3", text: "Tìm x nguyên để P nhận giá trị nguyên", points: 0.5 },
           ],
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI I (SỞ GD&ĐT HÀ NỘI):
@@ -61,11 +61,11 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hn-bai-2",
           index: 2,
-          title: "Bài II (2.5 điểm): Giải toán bằng lập phương trình & Hình học không gian thực tế",
+          title: "Bài II (2.5 điểm)",
           stem: "**1) (2.0 điểm)** Một xe ô tô và một xe máy cùng khởi hành từ địa điểm $A$ để đi đến địa điểm $B$ với quãng đường dài $120\\text{ km}$. Vận tốc của xe ô tô lớn hơn vận tốc của xe máy là $20\\text{ km/h}$, do đó xe ô tô đến địa điểm $B$ sớm hơn xe máy $1$ giờ. Biết trên suốt quãng đường đi, vận tốc của mỗi xe không thay đổi. Tính vận tốc của xe ô tô và vận tốc của xe máy.\n\n**2) (0.5 điểm)** Một chiếc thùng rác inox công cộng có dạng hình trụ tròn xoay với đường kính đáy $d = 30\\text{ cm}$ (bán kính đáy $r = 15\\text{ cm}$) và chiều cao $h = 60\\text{ cm}$. Hãy tính thể tích không gian bên trong của chiếc thùng rác đó theo đơn vị lít (lấy $\\pi \\approx 3,14$; biết $1\\text{ lít} = 1000\\text{ cm}^3$ và kết quả làm tròn đến chữ số thập phân thứ nhất).",
           points: 2.5,
           subItems: [
-            { key: "1", text: "Giải bài toán lập phương trình chuyển động", points: 2.0 },
+            { key: "1", text: "Giải bài toán lập phương trình", points: 2.0 },
             { key: "2", text: "Tính thể tích thùng rác hình trụ", points: 0.5 },
           ],
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI II (SỞ GD&ĐT HÀ NỘI):
@@ -101,11 +101,11 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hn-bai-3",
           index: 3,
-          title: "Bài III (2.0 điểm): Hệ phương trình & Phương trình bậc hai Viète",
+          title: "Bài III (2.0 điểm)",
           stem: "**1) (1.0 điểm)** Giải hệ phương trình:\n$$\\begin{cases} \\dfrac{3}{x + 1} - 2y = -1 \\\\[8pt] \\dfrac{2}{x + 1} + 3y = 8 \\end{cases}$$\n\n**2) (1.0 điểm)** Trong mặt phẳng tọa độ $Oxy$, cho parabol $(P): y = x^2$ và đường thẳng $(d): y = 2x + m - 1$ ($m$ là tham số).\n\na) Tìm $m$ để đường thẳng $(d)$ đi qua điểm $M(1; 3)$.\nb) Tìm tất cả các giá trị của $m$ để $(d)$ cắt $(P)$ tại hai điểm phân biệt có hoành độ $x_1, x_2$ thỏa mãn hệ thức:\n$$x_1^2 + x_2^2 - x_1 x_2 = 7$$",
           points: 2.0,
           subItems: [
-            { key: "1", text: "Giải hệ phương trình bằng ẩn phụ", points: 1.0 },
+            { key: "1", text: "Giải hệ phương trình", points: 1.0 },
             { key: "2a", text: "Tìm m để đường thẳng đi qua điểm M(1; 3)", points: 0.25 },
             { key: "2b", text: "Tìm m để hai nghiệm phân biệt thỏa mãn hệ thức Viète", points: 0.75 },
           ],
@@ -138,80 +138,17 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hn-bai-4",
           index: 4,
-          title: "Bài IV (3.0 điểm): Hình học đường tròn (Hình vẽ vector trực quan)",
+          title: "Bài IV (3.0 điểm)",
           stem: "Cho đường tròn $(O; R)$ và điểm $M$ nằm ngoài đường tròn. Từ điểm $M$ kẻ hai tiếp tuyến $MA, MB$ với đường tròn $(O)$ ($A, B$ là các tiếp điểm). Gọi $H$ là giao điểm của đoạn thẳng $MO$ và đoạn thẳng $AB$.\n\n1) Chứng minh bốn điểm $M, A, O, B$ cùng thuộc một đường tròn và $MO \\perp AB$ tại $H$.\n2) Kẻ cát tuyến $MCD$ không đi qua tâm $O$ của đường tròn $(O)$ ($C$ nằm giữa $M$ và $D$, tia $MC$ nằm giữa hai tia $MO$ và $MA$). Chứng minh $MA^2 = MC \\cdot MD$ và $MH \\cdot MO = MC \\cdot MD$.\n3) Kẻ đường kính $AK$ của đường tròn $(O)$. Tia phân giác của góc $\\widehat{CAD}$ cắt dây $CD$ tại $I$. Chứng minh rằng:\n$$\\frac{MC}{MD} = \\frac{IC^2}{ID^2}$$",
           points: 3.0,
           subItems: [
             { key: "1", text: "Chứng minh tứ giác MAOB nội tiếp và MO vuông góc AB tại H", points: 1.0 },
             { key: "2", text: "Chứng minh MA^2 = MC.MD = MH.MO", points: 1.0 },
-            { key: "3", text: "Chứng minh tỉ số lượng giác và tính chất phân giác MC/MD = IC^2/ID^2", points: 1.0 },
+            { key: "3", text: "Chứng minh MC/MD = IC^2/ID^2", points: 1.0 },
           ],
-          svgDrawing: `<svg viewBox="0 0 520 340" className="w-full h-auto bg-slate-900/90 rounded-2xl p-2 border border-slate-700 shadow-inner">
-  <defs>
-    <radialGradient id="hnGlowCircle" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.15" />
-      <stop offset="100%" stopColor="#0284c7" stopOpacity="0.02" />
-    </radialGradient>
-  </defs>
-
-  <!-- Đường tròn tâm O bán kính R -->
-  <circle cx="340" cy="170" r="110" fill="url(#hnGlowCircle)" stroke="#38bdf8" strokeWidth="2.5" />
-  
-  <!-- Tiếp tuyến MA, MB -->
-  <line x1="60" y1="170" x2="270" y2="78" stroke="#f59e0b" strokeWidth="2" />
-  <line x1="60" y1="170" x2="270" y2="262" stroke="#f59e0b" strokeWidth="2" />
-
-  <!-- Dây cung tiếp điểm AB -->
-  <line x1="270" y1="78" x2="270" y2="262" stroke="#a855f7" strokeWidth="2" />
-
-  <!-- Đoạn nối MO -->
-  <line x1="60" y1="170" x2="340" y2="170" stroke="#ec4899" strokeWidth="2" strokeDasharray="5 3" />
-
-  <!-- Bán kính OA, OB -->
-  <line x1="340" y1="170" x2="270" y2="78" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="3 3" />
-  <line x1="340" y1="170" x2="270" y2="262" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="3 3" />
-
-  <!-- Cát tuyến MCD -->
-  <line x1="60" y1="170" x2="435" y2="115" stroke="#10b981" strokeWidth="2" />
-
-  <!-- Dây AC, AD -->
-  <line x1="270" y1="78" x2="236" y2="136" stroke="#06b6d4" strokeWidth="1.5" />
-  <line x1="270" y1="78" x2="435" y2="115" stroke="#06b6d4" strokeWidth="1.5" />
-
-  <!-- Tia phân giác AI của góc CAD -->
-  <line x1="270" y1="78" x2="305" y2="126" stroke="#f43f5e" strokeWidth="1.5" strokeDasharray="4 2" />
-
-  <!-- Đường kính AK và đoạn DK -->
-  <line x1="270" y1="78" x2="410" y2="262" stroke="#6366f1" strokeWidth="1.5" strokeDasharray="4 3" />
-
-  <!-- Ký hiệu góc vuông tại A, B, H -->
-  <polyline points="260,82 265,92 275,88" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
-  <polyline points="260,258 265,248 275,252" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
-  <polyline points="260,170 260,160 270,160" fill="none" stroke="#ec4899" strokeWidth="1.5" />
-
-  <!-- Các điểm tròn -->
-  <circle cx="60" cy="170" r="4.5" fill="#ef4444" />
-  <circle cx="340" cy="170" r="4.5" fill="#38bdf8" />
-  <circle cx="270" cy="78" r="4.5" fill="#f59e0b" />
-  <circle cx="270" cy="262" r="4.5" fill="#f59e0b" />
-  <circle cx="270" cy="170" r="4" fill="#a855f7" />
-  <circle cx="236" cy="136" r="4" fill="#10b981" />
-  <circle cx="435" cy="115" r="4" fill="#10b981" />
-  <circle cx="305" cy="126" r="4" fill="#f43f5e" />
-  <circle cx="410" cy="262" r="4" fill="#6366f1" />
-
-  <!-- Nhãn chữ cái -->
-  <text x="40" y="175" fill="#ef4444" fontWeight="bold" fontSize="14">M</text>
-  <text x="350" y="185" fill="#38bdf8" fontWeight="bold" fontSize="14">O</text>
-  <text x="265" y="65" fill="#f59e0b" fontWeight="bold" fontSize="14">A</text>
-  <text x="265" y="285" fill="#f59e0b" fontWeight="bold" fontSize="14">B</text>
-  <text x="275" y="165" fill="#a855f7" fontWeight="bold" fontSize="13">H</text>
-  <text x="228" y="128" fill="#10b981" fontWeight="bold" fontSize="13">C</text>
-  <text x="445" y="118" fill="#10b981" fontWeight="bold" fontSize="13">D</text>
-  <text x="305" y="145" fill="#f43f5e" fontWeight="bold" fontSize="13">I</text>
-  <text x="415" y="280" fill="#6366f1" fontWeight="bold" fontSize="13">K</text>
-</svg>`,
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI IV (SỞ GD&ĐT HÀ NỘI):
+
+*Lưu ý theo quy chế chấm thi của Sở GD&ĐT: Thí sinh phải tự vẽ hình vào bài làm. Nếu không vẽ hình hoặc vẽ hình sai thì không chấm điểm bài hình.*
 
 **1) (1.0 điểm) Chứng minh tứ giác $MAOB$ nội tiếp và $MO \\perp AB$ tại $H$:**
 - Vì $MA, MB$ là hai tiếp tuyến của $(O)$ nên $MA \\perp OA$ và $MB \\perp OB$.
@@ -246,7 +183,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hn-bai-5",
           index: 5,
-          title: "Bài V (0.5 điểm): Bất đẳng thức & Giá trị nhỏ nhất",
+          title: "Bài V (0.5 điểm)",
           stem: "Cho các số thực dương $a, b, c$ thỏa mãn điều kiện $a + b + c = 3$.\nTìm giá trị nhỏ nhất của biểu thức:\n$$P = \\frac{a^2}{b + 1} + \\frac{b^2}{c + 1} + \\frac{c^2}{a + 1}$$",
           points: 0.5,
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI V (SỞ GD&ĐT HÀ NỘI):
@@ -296,7 +233,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-1",
           index: 1,
-          title: "Bài 1 (1.5 điểm): Đồ thị Parabol và đường thẳng tương giao",
+          title: "Bài 1 (1.5 điểm)",
           stem: "Cho parabol $(P): y = \\frac{1}{2} x^2$ và đường thẳng $(d): y = x + 4$.\n1) Vẽ đồ thị $(P)$ và $(d)$ trên cùng một mặt phẳng tọa độ $Oxy$.\n2) Tìm tọa độ các giao điểm của $(P)$ và $(d)$ bằng phép tính.",
           points: 1.5,
           subItems: [
@@ -325,11 +262,11 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-2",
           index: 2,
-          title: "Bài 2 (1.0 điểm): Phương trình bậc hai & Định lí Viète",
+          title: "Bài 2 (1.0 điểm)",
           stem: "Cho phương trình bậc hai: $x^2 - 2(m + 1)x + 2m = 0$ ($x$ là ẩn số, $m$ là tham số).\n1) Chứng minh phương trình luôn có hai nghiệm phân biệt $x_1, x_2$ với mọi giá trị của $m$.\n2) Tìm tất cả các giá trị của $m$ để biểu thức sau đạt giá trị nhỏ nhất:\n$$K = x_1^2 + x_2^2 - 3x_1 x_2$$",
           points: 1.0,
           subItems: [
-            { key: "1", text: "Chứng minh Delta' > 0 với mọi m", points: 0.5 },
+            { key: "1", text: "Chứng minh phương trình có hai nghiệm phân biệt", points: 0.5 },
             { key: "2", text: "Tìm m để K đạt GTNN", points: 0.5 },
           ],
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI 2 (SỞ GD&ĐT TP.HCM):
@@ -354,7 +291,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-3",
           index: 3,
-          title: "Bài 3 (1.0 điểm): Bài toán thực tế về Kinh tế - Thương mại khuyến mãi liên tiếp",
+          title: "Bài 3 (1.0 điểm)",
           stem: "Nhân dịp đầu năm học mới, một nhà sách tại Quận 1 thực hiện chương trình khuyến mãi: Giảm giá $10\\%$ trên giá niêm yết cho tất cả các loại sách tham khảo và dụng cụ học tập. Đặc biệt, nếu khách hàng có thẻ học sinh - sinh viên thì được giảm tiếp thêm $5\\%$ trên số tiền đã giảm ở lần một.\n\nBạn Minh (có thẻ học sinh) đến nhà sách mua một bộ sách nâng cao và một chiếc máy tính cầm tay Casio fx-880BTG. Tổng giá tiền niêm yết của hai món hàng này là $900.000$ đồng.\n1) Hỏi bạn Minh phải thanh toán thực tế cho nhà sách là bao nhiêu tiền?\n2) Số tiền bạn Minh tiết kiệm được so với giá niêm yết ban đầu chiếm bao nhiêu phần trăm?",
           points: 1.0,
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI 3 (SỞ GD&ĐT TP.HCM):
@@ -375,7 +312,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-4",
           index: 4,
-          title: "Bài 4 (1.0 điểm): Bài toán đo đạc chiều cao thực tế bằng tỉ số lượng giác",
+          title: "Bài 4 (1.0 điểm)",
           stem: "Để đo chiều cao của tòa tháp Bitexco Financial Tower tại TP. Hồ Chí Minh mà không cần trèo lên đỉnh tháp, một nhóm học sinh sử dụng giác kế đặt tại hai vị trí quan sát $A$ và $B$ trên mặt đất bằng phẳng (chân tòa tháp $C$ cùng với $A, B$ thẳng hàng theo thứ tự $B - A - C$):\n- Tại vị trí $A$, góc nâng nhìn lên đỉnh tháp $D$ là $\\widehat{DAC} = 42^\\circ$.\n- Tại vị trí $B$ lùi xa thêm một khoảng $AB = 85\\text{ m}$, góc nâng nhìn lên đỉnh tháp $D$ là $\\widehat{DBC} = 31^\\circ$.\n\nBiết chiều cao của giác kế tính từ mặt đất đến ống ngắm là $1,3\\text{ m}$. Hãy tính chiều cao của tòa tháp Bitexco (kết quả làm tròn đến mét).",
           points: 1.0,
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI 4 (SỞ GD&ĐT TP.HCM):
@@ -396,7 +333,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-5",
           index: 5,
-          title: "Bài 5 (1.5 điểm): Bài toán thực tế về biểu giá điện sinh hoạt lũy tiến EVN HCMC",
+          title: "Bài 5 (1.5 điểm)",
           stem: "Bảng đơn giá điện sinh hoạt bậc thang của Tổng công ty Điện lực TP. Hồ Chí Minh (EVN HCMC) quy định như bảng sau (chưa bao gồm thuế GTGT $8\\%$):\n\n| Bậc | Mức tiêu thụ trong tháng (kWh) | Đơn giá (đồng/kWh) |\n| :---: | :--- | :---: |\n| Bậc 1 | Cho kWh từ 0 - 50 | 1.806 |\n| Bậc 2 | Cho kWh từ 51 - 100 | 1.866 |\n| Bậc 3 | Cho kWh từ 101 - 200 | 2.167 |\n| Bậc 4 | Cho kWh từ 201 - 300 | 2.729 |\n\n1) Trong tháng 6, gia đình bạn An tiêu thụ hết $180\\text{ kWh}$ điện. Hãy tính số tiền điện gia đình bạn An phải trả (bao gồm cả thuế VAT $8\\%$).\n2) Tháng 7, gia đình bạn An thanh toán tổng cộng tiền điện (đã gồm $8\\%$ VAT) là $616.788$ đồng. Hỏi trong tháng 7 gia đình bạn An đã tiêu thụ bao nhiêu kWh điện?",
           points: 1.5,
           tableData: {
@@ -435,7 +372,7 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
         {
           id: "hcm-bai-6",
           index: 6,
-          title: "Bài 6 (4.0 điểm): Hình học phẳng đường tròn & Tâm đường tròn nội tiếp (Hình vẽ SVG vector)",
+          title: "Bài 6 (4.0 điểm)",
           stem: "Từ điểm $S$ nằm bên ngoài đường tròn $(O; R)$, vẽ hai tiếp tuyến $SA, SB$ với đường tròn $(O)$ ($A, B$ là các tiếp điểm). Gọi $H$ là giao điểm của đoạn thẳng $SO$ và đoạn thẳng $AB$. Kẻ cát tuyến $SCD$ của đường tròn $(O)$ sao cho $C$ nằm giữa $S$ và $D$ ($D$ thuộc $(O)$ và tia $SC$ nằm trong góc $\\widehat{ASO}$).\n\n1) Chứng minh tứ giác $SAOB$ nội tiếp và $SO \\perp AB$ tại $H$.\n2) Chứng minh: $SA^2 = SC \\cdot SD$ và $\\triangle SCH \\sim \\triangle SOD$.\n3) Gọi $K$ là giao điểm của đoạn thẳng $SO$ với cung nhỏ $AB$ của $(O)$. Chứng minh điểm $K$ là tâm đường tròn nội tiếp của tam giác $SAB$.",
           points: 4.0,
           subItems: [
@@ -443,65 +380,9 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
             { key: "2", text: "Chứng minh SA^2 = SC.SD và tam giác SCH đồng dạng SOD", points: 1.5 },
             { key: "3", text: "Chứng minh K là tâm đường tròn nội tiếp tam giác SAB", points: 1.0 },
           ],
-          svgDrawing: `<svg viewBox="0 0 520 340" className="w-full h-auto bg-slate-900/90 rounded-2xl p-2 border border-slate-700 shadow-inner">
-  <defs>
-    <radialGradient id="hcmGlowCircle" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stopColor="#ec4899" stopOpacity="0.15" />
-      <stop offset="100%" stopColor="#be185d" stopOpacity="0.02" />
-    </radialGradient>
-  </defs>
-
-  <!-- Đường tròn tâm O -->
-  <circle cx="340" cy="170" r="110" fill="url(#hcmGlowCircle)" stroke="#ec4899" strokeWidth="2.5" />
-
-  <!-- Tiếp tuyến SA, SB -->
-  <line x1="60" y1="170" x2="270" y2="78" stroke="#38bdf8" strokeWidth="2" />
-  <line x1="60" y1="170" x2="270" y2="262" stroke="#38bdf8" strokeWidth="2" />
-
-  <!-- Đoạn SO & Dây AB -->
-  <line x1="60" y1="170" x2="340" y2="170" stroke="#f59e0b" strokeWidth="2" strokeDasharray="5 3" />
-  <line x1="270" y1="78" x2="270" y2="262" stroke="#a855f7" strokeWidth="2" />
-
-  <!-- Bán kính OA, OB -->
-  <line x1="340" y1="170" x2="270" y2="78" stroke="#ec4899" strokeWidth="1.5" strokeDasharray="3 3" />
-  <line x1="340" y1="170" x2="270" y2="262" stroke="#ec4899" strokeWidth="1.5" strokeDasharray="3 3" />
-
-  <!-- Cát tuyến SCD -->
-  <line x1="60" y1="170" x2="435" y2="115" stroke="#10b981" strokeWidth="2" />
-  <line x1="270" y1="170" x2="236" y2="136" stroke="#f43f5e" strokeWidth="1.5" strokeDasharray="3 3" />
-  <line x1="340" y1="170" x2="435" y2="115" stroke="#10b981" strokeWidth="1.5" strokeDasharray="3 3" />
-
-  <!-- Đường phân giác AK -->
-  <line x1="270" y1="78" x2="230" y2="170" stroke="#fbbf24" strokeWidth="1.5" strokeDasharray="3 3" />
-
-  <!-- Điểm K giao điểm của SO và cung nhỏ AB -->
-  <circle cx="230" cy="170" r="5" fill="#e11d48" />
-
-  <!-- Ký hiệu góc vuông tại A, B, H -->
-  <polyline points="260,82 265,92 275,88" fill="none" stroke="#38bdf8" strokeWidth="1.5" />
-  <polyline points="260,258 265,248 275,252" fill="none" stroke="#38bdf8" strokeWidth="1.5" />
-  <polyline points="260,170 260,160 270,160" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
-
-  <!-- Điểm tròn nổi bật -->
-  <circle cx="60" cy="170" r="4.5" fill="#38bdf8" />
-  <circle cx="340" cy="170" r="4.5" fill="#ec4899" />
-  <circle cx="270" cy="78" r="4.5" fill="#38bdf8" />
-  <circle cx="270" cy="262" r="4.5" fill="#38bdf8" />
-  <circle cx="270" cy="170" r="4" fill="#a855f7" />
-  <circle cx="236" cy="136" r="4" fill="#10b981" />
-  <circle cx="435" cy="115" r="4" fill="#10b981" />
-
-  <!-- Nhãn chữ cái -->
-  <text x="40" y="175" fill="#38bdf8" fontWeight="bold" fontSize="14">S</text>
-  <text x="350" y="185" fill="#ec4899" fontWeight="bold" fontSize="14">O</text>
-  <text x="265" y="65" fill="#38bdf8" fontWeight="bold" fontSize="14">A</text>
-  <text x="265" y="285" fill="#38bdf8" fontWeight="bold" fontSize="14">B</text>
-  <text x="278" y="165" fill="#a855f7" fontWeight="bold" fontSize="13">H</text>
-  <text x="228" y="128" fill="#10b981" fontWeight="bold" fontSize="13">C</text>
-  <text x="445" y="118" fill="#10b981" fontWeight="bold" fontSize="13">D</text>
-  <text x="218" y="195" fill="#e11d48" fontWeight="bold" fontSize="14">K</text>
-</svg>`,
           solutionGuide: `### HƯỚNG DẪN CHẤM & BIỂU ĐIỂM CHI TIẾT BÀI 6 (SỞ GD&ĐT TP.HCM):
+
+*Lưu ý theo quy chế chấm thi: Thí sinh phải tự vẽ hình vào bài làm. Nếu không vẽ hình hoặc vẽ hình sai thì không chấm điểm bài hình.*
 
 **1) (1.5 điểm) Chứng minh tứ giác $SAOB$ nội tiếp và $SO \\perp AB$:**
 - Vì $SA, SB$ là các tiếp tuyến của $(O)$ nên $\\widehat{SAO} = 90^\\circ$ và $\\widehat{SBO} = 90^\\circ$.

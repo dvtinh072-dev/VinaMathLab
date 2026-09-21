@@ -152,37 +152,43 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
           title: "Câu IV (4,0 điểm)",
           stem: "1) Một xô đựng nước dạng hình trụ có chiều cao bằng $25\\text{ cm}$ và bán kính đáy bằng $12\\text{ cm}$. (Lấy $\\pi \\approx 3,14$ và coi độ dày của xô đựng nước không đáng kể).\n\na) Tính diện tích xung quanh của xô đựng nước đó.\nb) Người ta dùng xô đựng nước trên để múc nước đổ vào một bể có thể tích $150\\text{ lít}$. Mỗi lần người ta chỉ múc lượng nước bằng $80\\%$ thể tích của xô. Lúc đầu bể không có nước, hỏi cần múc ít nhất bao nhiêu xô để đổ đầy bể? (Biết $1\\text{ lít} = 1000\\text{ cm}^3$).\n\n2) Cho tam giác $ABC$ vuông tại $A$ ($AB < AC$) nội tiếp đường tròn tâm $O$, đường kính $BC$. Lấy điểm $H$ thuộc đoạn thẳng $AB$ sao cho $HB > HA$ ($H$ khác $A$). Kẻ đường thẳng qua $H$ vuông góc với đường thẳng $BC$ tại điểm $D$ và cắt đường thẳng $AC$ tại điểm $E$.\n\na) Chứng minh bốn điểm $A, H, D, C$ cùng thuộc một đường tròn.\nb) Đường thẳng $CH$ cắt đường tròn $(O)$ tại điểm thứ hai $F$. Đường thẳng qua $A$ vuông góc với đường thẳng $ED$ cắt đường thẳng $DF$ tại điểm $M$. Chứng minh $AE \\cdot BC = EH \\cdot AB$ và $\\widehat{EMH} = 90^\\circ$.\nc) Đường thẳng $BM$ cắt đường tròn $(O)$ tại điểm thứ hai $K$. Chứng minh tam giác $HKM$ là tam giác cân.",
           points: 4.0,
-          svgDrawing: `<svg viewBox="0 0 260 320" className="w-full max-w-xs mx-auto h-auto bg-white dark:bg-slate-900 rounded-xl p-3 border border-slate-300 dark:border-slate-700 shadow-sm">
+          svgDrawing: `<svg viewBox="0 0 280 340" style="background-color: #ffffff; border-radius: 12px;" className="w-full max-w-xs mx-auto h-auto bg-white rounded-xl p-3 border border-slate-300 shadow-md">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
   <defs>
-    <!-- Mũi tên hai đầu -->
+    <!-- Mũi tên hai đầu đen đậm -->
     <marker id="arrowBucket" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0f172a" className="dark:fill-slate-200" />
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0f172a" />
     </marker>
   </defs>
 
-  <!-- Miệng xô hình trụ (Elip nét liền) -->
-  <ellipse cx="120" cy="65" rx="70" ry="18" fill="#f8fafc" className="dark:fill-slate-800" stroke="#0f172a" strokeWidth="2" />
-  <line x1="120" y1="65" x2="190" y2="65" stroke="#0f172a" strokeWidth="1.5" strokeDasharray="3 3" />
-  <text x="155" y="58" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">12 cm</text>
-  <circle cx="120" cy="65" r="2.5" fill="#0f172a" />
+  <!-- Tiêu đề hình vẽ -->
+  <text x="140" y="24" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">
+    XÔ ĐỰNG NƯỚC HÌNH TRỤ
+  </text>
+
+  <!-- Miệng xô hình trụ (Elip) -->
+  <ellipse cx="130" cy="70" rx="75" ry="20" fill="#f1f5f9" stroke="#0f172a" strokeWidth="2.5" />
+  <line x1="130" y1="70" x2="205" y2="70" stroke="#0f172a" strokeWidth="2" strokeDasharray="3 3" />
+  <text x="168" y="62" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">r = 12 cm</text>
+  <circle cx="130" cy="70" r="3" fill="#0f172a" />
 
   <!-- Thân xô (hai đường thẳng đứng) -->
-  <line x1="50" y1="65" x2="50" y2="255" stroke="#0f172a" strokeWidth="2" />
-  <line x1="190" y1="65" x2="190" y2="255" stroke="#0f172a" strokeWidth="2" />
+  <line x1="55" y1="70" x2="55" y2="265" stroke="#0f172a" strokeWidth="2.5" />
+  <line x1="205" y1="70" x2="205" y2="265" stroke="#0f172a" strokeWidth="2.5" />
 
   <!-- Đáy xô (nửa dưới nét liền, nửa trên nét đứt) -->
-  <path d="M 50 255 A 70 18 0 0 0 190 255" fill="none" stroke="#0f172a" strokeWidth="2" />
-  <path d="M 50 255 A 70 18 0 0 1 190 255" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4 3" />
+  <path d="M 55 265 A 75 20 0 0 0 205 265" fill="none" stroke="#0f172a" strokeWidth="2.5" />
+  <path d="M 55 265 A 75 20 0 0 1 205 265" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4 3" />
 
   <!-- Trục đối xứng nét đứt giữa -->
-  <line x1="120" y1="65" x2="120" y2="255" stroke="#94a3b8" strokeWidth="1" strokeDasharray="4 3" />
+  <line x1="130" y1="70" x2="130" y2="265" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="4 3" />
 
   <!-- Gióng kích thước chiều cao 25 cm ở bên phải -->
-  <line x1="205" y1="65" x2="205" y2="255" stroke="#0f172a" className="dark:stroke-slate-200" strokeWidth="1.5" markerStart="url(#arrowBucket)" markerEnd="url(#arrowBucket)" />
-  <line x1="190" y1="65" x2="215" y2="65" stroke="#94a3b8" strokeWidth="1" strokeDasharray="2 2" />
-  <line x1="190" y1="255" x2="215" y2="255" stroke="#94a3b8" strokeWidth="1" strokeDasharray="2 2" />
-  <text x="228" y="165" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold" transform="rotate(90, 228, 165)">
-    25 cm
+  <line x1="225" y1="70" x2="225" y2="265" stroke="#0f172a" strokeWidth="2" markerStart="url(#arrowBucket)" markerEnd="url(#arrowBucket)" />
+  <line x1="205" y1="70" x2="238" y2="70" stroke="#64748b" strokeWidth="1" strokeDasharray="2 2" />
+  <line x1="205" y1="265" x2="238" y2="265" stroke="#64748b" strokeWidth="1" strokeDasharray="2 2" />
+  <text x="252" y="172" textAnchor="middle" fill="#0f172a" fontSize="14" fontWeight="bold" transform="rotate(90, 252, 172)">
+    h = 25 cm
   </text>
 </svg>`,
           subItems: [
@@ -362,89 +368,107 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
             { key: "b", text: "Tính xác suất của biến cố A", points: 0.5 },
             { key: "c", text: "Tính xác suất của biến cố B", points: 0.5 },
           ],
-          svgDrawing: `<svg viewBox="0 0 540 320" className="w-full max-w-xl mx-auto h-auto bg-white dark:bg-slate-900 rounded-xl p-3 border border-slate-300 dark:border-slate-700 shadow-sm">
+          svgDrawing: `<svg viewBox="0 0 540 330" style="background-color: #ffffff; border-radius: 12px;" className="w-full max-w-xl mx-auto h-auto bg-white rounded-xl p-3 border border-slate-300 shadow-md">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
   <defs>
+    <!-- Pattern sọc chéo xanh lam sắc nét -->
     <pattern id="hatchHcm" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="0" y2="8" stroke="#0284c7" strokeWidth="2.5" />
     </pattern>
   </defs>
 
   <!-- Tiêu đề biểu đồ -->
-  <text x="270" y="24" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold">
+  <text x="270" y="24" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">
     KHẢO SÁT SỐ GIỜ SỬ DỤNG ĐIỆN THOẠI TRONG
   </text>
-  <text x="270" y="42" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold">
+  <text x="270" y="42" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">
     MỘT NGÀY CỦA HỌC SINH KHỐI 9
   </text>
 
+  <!-- Đường gióng ngang hỗ trợ đọc số liệu -->
+  <g stroke="#e2e8f0" strokeWidth="1" strokeDasharray="3 3">
+    <line x1="80" y1="234" x2="480" y2="234" />
+    <line x1="80" y1="208" x2="480" y2="208" />
+    <line x1="80" y1="182" x2="480" y2="182" />
+    <line x1="80" y1="156" x2="480" y2="156" />
+    <line x1="80" y1="130" x2="480" y2="130" />
+    <line x1="80" y1="104" x2="480" y2="104" />
+    <line x1="80" y1="78" x2="480" y2="78" />
+  </g>
+
   <!-- Trục tung (Số học sinh) -->
-  <line x1="80" y1="260" x2="80" y2="65" stroke="#334155" strokeWidth="2" markerEnd="url(#arrowUp)" />
-  <path d="M 77 70 L 80 60 L 83 70 Z" fill="#334155" />
+  <line x1="80" y1="260" x2="80" y2="62" stroke="#0f172a" strokeWidth="2" />
+  <polygon points="76,68 80,56 84,68" fill="#0f172a" />
   
   <!-- Trục hoành (Số giờ sử dụng điện thoại) -->
-  <line x1="80" y1="260" x2="500" y2="260" stroke="#334155" strokeWidth="2" />
-  <path d="M 495 257 L 505 260 L 495 263 Z" fill="#334155" />
+  <line x1="80" y1="260" x2="495" y2="260" stroke="#0f172a" strokeWidth="2" />
+  <polygon points="490,256 502,260 490,264" fill="#0f172a" />
 
   <!-- Nhãn trục tung xoay dọc -->
-  <text x="-165" y="32" transform="rotate(-90)" textAnchor="middle" fill="#475569" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">
+  <text x="-165" y="32" transform="rotate(-90)" textAnchor="middle" fill="#0f172a" fontSize="12" fontWeight="bold">
     Số học sinh
   </text>
 
-  <!-- Vạch chia trục tung -->
-  <g fontSize="11" fill="#475569" className="dark:fill-slate-400" textAnchor="end">
+  <!-- Vạch chia & số liệu trục tung -->
+  <g fontSize="11" fill="#0f172a" fontWeight="bold" textAnchor="end">
     <text x="72" y="264">0</text>
-    <line x1="76" y1="260" x2="80" y2="260" stroke="#334155" />
+    <line x1="74" y1="260" x2="80" y2="260" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="238">5</text>
-    <line x1="76" y1="234" x2="80" y2="234" stroke="#94a3b8" strokeDasharray="2 2" />
+    <line x1="74" y1="234" x2="80" y2="234" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="212">10</text>
-    <line x1="76" y1="208" x2="80" y2="208" stroke="#94a3b8" />
+    <line x1="74" y1="208" x2="80" y2="208" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="186">15</text>
-    <line x1="76" y1="182" x2="80" y2="182" stroke="#94a3b8" />
+    <line x1="74" y1="182" x2="80" y2="182" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="160">20</text>
-    <line x1="76" y1="156" x2="80" y2="156" stroke="#94a3b8" />
+    <line x1="74" y1="156" x2="80" y2="156" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="134">25</text>
-    <line x1="76" y1="130" x2="80" y2="130" stroke="#94a3b8" />
+    <line x1="74" y1="130" x2="80" y2="130" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="108">30</text>
-    <line x1="76" y1="104" x2="80" y2="104" stroke="#94a3b8" />
+    <line x1="74" y1="104" x2="80" y2="104" stroke="#0f172a" strokeWidth="1.5" />
     
     <text x="72" y="82">35</text>
-    <line x1="76" y1="78" x2="80" y2="78" stroke="#94a3b8" />
+    <line x1="74" y1="78" x2="80" y2="78" stroke="#0f172a" strokeWidth="1.5" />
   </g>
 
-  <!-- CÁC CỘT BIỂU ĐỒ (chiều rộng cột: 34px) -->
-  <!-- Cột 1: 1 giờ, số HS = 12 (chiều cao = 12 * 5.2 = 62.4 => y = 260 - 62.4 = 197.6) -->
-  <rect x="120" y="197" width="34" height="63" fill="url(#hatchHcm)" stroke="#0f172a" strokeWidth="1.5" />
-  <text x="137" y="190" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">12</text>
-  <text x="137" y="280" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">1</text>
+  <!-- CÁC CỘT BIỂU ĐỒ (chiều rộng cột: 36px) -->
+  <!-- Cột 1: 1 giờ, số HS = 12 -->
+  <rect x="120" y="197" width="36" height="63" fill="#e0f2fe" stroke="#0f172a" strokeWidth="2" />
+  <rect x="120" y="197" width="36" height="63" fill="url(#hatchHcm)" stroke="none" />
+  <text x="138" y="188" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">12</text>
+  <text x="138" y="280" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">1</text>
 
-  <!-- Cột 2: 2 giờ, số HS = 28 (chiều cao = 28 * 5.2 = 145.6 => y = 260 - 145.6 = 114.4) -->
-  <rect x="195" y="114" width="34" height="146" fill="url(#hatchHcm)" stroke="#0f172a" strokeWidth="1.5" />
-  <text x="212" y="107" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">28</text>
-  <text x="212" y="280" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">2</text>
+  <!-- Cột 2: 2 giờ, số HS = 28 -->
+  <rect x="195" y="114" width="36" height="146" fill="#e0f2fe" stroke="#0f172a" strokeWidth="2" />
+  <rect x="195" y="114" width="36" height="146" fill="url(#hatchHcm)" stroke="none" />
+  <text x="213" y="105" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">28</text>
+  <text x="213" y="280" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">2</text>
 
-  <!-- Cột 3: 3 giờ, số HS = 30 (chiều cao = 30 * 5.2 = 156 => y = 260 - 156 = 104) -->
-  <rect x="270" y="104" width="34" height="156" fill="url(#hatchHcm)" stroke="#0f172a" strokeWidth="1.5" />
-  <text x="287" y="97" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">30</text>
-  <text x="287" y="280" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">3</text>
+  <!-- Cột 3: 3 giờ, số HS = 30 -->
+  <rect x="270" y="104" width="36" height="156" fill="#e0f2fe" stroke="#0f172a" strokeWidth="2" />
+  <rect x="270" y="104" width="36" height="156" fill="url(#hatchHcm)" stroke="none" />
+  <text x="288" y="95" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">30</text>
+  <text x="288" y="280" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">3</text>
 
-  <!-- Cột 4: 4 giờ, số HS = 20 (chiều cao = 20 * 5.2 = 104 => y = 260 - 104 = 156) -->
-  <rect x="345" y="156" width="34" height="104" fill="url(#hatchHcm)" stroke="#0f172a" strokeWidth="1.5" />
-  <text x="362" y="149" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">20</text>
-  <text x="362" y="280" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">4</text>
+  <!-- Cột 4: 4 giờ, số HS = 20 -->
+  <rect x="345" y="156" width="36" height="104" fill="#e0f2fe" stroke="#0f172a" strokeWidth="2" />
+  <rect x="345" y="156" width="36" height="104" fill="url(#hatchHcm)" stroke="none" />
+  <text x="363" y="147" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">20</text>
+  <text x="363" y="280" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">4</text>
 
-  <!-- Cột 5: 5 giờ, số HS = 10 (chiều cao = 10 * 5.2 = 52 => y = 260 - 52 = 208) -->
-  <rect x="420" y="208" width="34" height="52" fill="url(#hatchHcm)" stroke="#0f172a" strokeWidth="1.5" />
-  <text x="437" y="201" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">10</text>
-  <text x="437" y="280" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontWeight="bold">5</text>
+  <!-- Cột 5: 5 giờ, số HS = 10 -->
+  <rect x="420" y="208" width="36" height="52" fill="#e0f2fe" stroke="#0f172a" strokeWidth="2" />
+  <rect x="420" y="208" width="36" height="52" fill="url(#hatchHcm)" stroke="none" />
+  <text x="438" y="199" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">10</text>
+  <text x="438" y="280" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">5</text>
 
   <!-- Nhãn trục hoành -->
-  <text x="290" y="306" textAnchor="middle" fill="#334155" className="dark:fill-slate-300" fontSize="12" fontStyle="italic">
+  <text x="290" y="308" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold" fontStyle="italic">
     Số giờ sử dụng điện thoại
   </text>
 </svg>`,
@@ -477,37 +501,42 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
             { key: "a", text: "Viết biểu thức thu gọn biểu diễn diện tích phần làm nhà ở theo x", points: 0.5 },
             { key: "b", text: "Tìm chiều dài, chiều rộng của mảnh đất", points: 0.5 },
           ],
-          svgDrawing: `<svg viewBox="0 0 520 280" className="w-full max-w-lg mx-auto h-auto bg-white dark:bg-slate-900 rounded-xl p-3 border border-slate-300 dark:border-slate-700 shadow-sm">
+          svgDrawing: `<svg viewBox="0 0 520 290" style="background-color: #ffffff; border-radius: 12px;" className="w-full max-w-lg mx-auto h-auto bg-white rounded-xl p-3 border border-slate-300 shadow-md">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
   <defs>
-    <!-- Mũi tên hai đầu -->
-    <marker id="arrowHcm" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0f172a" className="dark:fill-slate-200" />
+    <!-- Mũi tên hai đầu đen đậm -->
+    <marker id="arrowHcmLand" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0f172a" />
     </marker>
   </defs>
 
-  <!-- Mảnh đất lớn hình chữ nhật ABCD -->
-  <rect x="70" y="40" width="340" height="200" fill="#f1f5f9" className="dark:fill-slate-800" stroke="#0f172a" strokeWidth="2.5" />
+  <!-- Tiêu đề hình vẽ -->
+  <text x="260" y="20" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">
+    MẢNH ĐẤT VÀ KHU VỰC LÀM NHÀ Ở CỦA BÁC NĂM
+  </text>
 
-  <!-- Phần đất làm Nhà ở (hình chữ nhật ở góc dưới bên phải) -->
-  <!-- Chiều rộng thụt vào 15m từ mép trái, chiều cao thụt 11m từ mép dưới -->
-  <rect x="210" y="40" width="200" height="110" fill="#e2e8f0" className="dark:fill-slate-700" stroke="#0f172a" strokeWidth="2" strokeDasharray="none" />
-  <text x="310" y="100" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="14" fontWeight="bold">Nhà ở</text>
+  <!-- Mảnh đất lớn hình chữ nhật ABCD -->
+  <rect x="70" y="45" width="340" height="195" fill="#f8fafc" stroke="#0f172a" strokeWidth="2.5" />
+
+  <!-- Phần đất làm Nhà ở (hình chữ nhật thụt vào 15m bên trái và 11m bên dưới) -->
+  <rect x="210" y="45" width="200" height="105" fill="#fed7aa" stroke="#0f172a" strokeWidth="2.5" />
+  <text x="310" y="105" textAnchor="middle" fill="#0f172a" fontSize="16" fontWeight="bold">Nhà ở</text>
 
   <!-- Kích thước chiều dài trên đỉnh: x + 9 (m) -->
-  <line x1="70" y1="22" x2="410" y2="22" stroke="#0f172a" className="dark:stroke-slate-200" strokeWidth="1.5" markerStart="url(#arrowHcm)" markerEnd="url(#arrowHcm)" />
-  <text x="240" y="16" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold">x + 9 (m)</text>
+  <line x1="70" y1="32" x2="410" y2="32" stroke="#0f172a" strokeWidth="2" markerStart="url(#arrowHcmLand)" markerEnd="url(#arrowHcmLand)" />
+  <text x="240" y="27" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">x + 9 (m)</text>
 
   <!-- Kích thước chiều rộng bên phải: x (m) -->
-  <line x1="430" y1="40" x2="430" y2="240" stroke="#0f172a" className="dark:stroke-slate-200" strokeWidth="1.5" markerStart="url(#arrowHcm)" markerEnd="url(#arrowHcm)" />
-  <text x="450" y="145" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold" transform="rotate(90, 450, 145)">x (m)</text>
+  <line x1="428" y1="45" x2="428" y2="240" stroke="#0f172a" strokeWidth="2" markerStart="url(#arrowHcmLand)" markerEnd="url(#arrowHcmLand)" />
+  <text x="448" y="145" textAnchor="middle" fill="#0f172a" fontSize="14" fontWeight="bold" transform="rotate(90, 448, 145)">x (m)</text>
 
   <!-- Kích thước 15 (m) từ mép trái đến mép nhà -->
-  <line x1="70" y1="65" x2="210" y2="65" stroke="#0f172a" className="dark:stroke-slate-200" strokeWidth="1.5" markerStart="url(#arrowHcm)" markerEnd="url(#arrowHcm)" />
-  <text x="140" y="58" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">15 (m)</text>
+  <line x1="70" y1="70" x2="210" y2="70" stroke="#0f172a" strokeWidth="1.5" markerStart="url(#arrowHcmLand)" markerEnd="url(#arrowHcmLand)" />
+  <text x="140" y="63" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">15 (m)</text>
 
   <!-- Kích thước 11 (m) từ mép dưới đến mép nhà -->
-  <line x1="345" y1="150" x2="345" y2="240" stroke="#0f172a" className="dark:stroke-slate-200" strokeWidth="1.5" markerStart="url(#arrowHcm)" markerEnd="url(#arrowHcm)" />
-  <text x="325" y="200" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="12" fontWeight="bold">11 (m)</text>
+  <line x1="345" y1="150" x2="345" y2="240" stroke="#0f172a" strokeWidth="1.5" markerStart="url(#arrowHcmLand)" markerEnd="url(#arrowHcmLand)" />
+  <text x="323" y="198" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">11 (m)</text>
 </svg>`,
           solutionGuide: `### HƯỚNG DẪN CHẤM & ĐÁP ÁN BÀI 4 (SỞ GD&ĐT TP.HCM):
 
@@ -543,26 +572,48 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
             { key: "a", text: "Tính thể tích không gian bên trong bình", points: 0.5 },
             { key: "b", text: "Tính chi phí sơn một cái bình inox", points: 0.5 },
           ],
-          svgDrawing: `<svg viewBox="0 0 280 340" className="w-full max-w-xs mx-auto h-auto bg-white dark:bg-slate-900 rounded-xl p-3 border border-slate-300 dark:border-slate-700 shadow-sm">
-  <!-- Phần nắp: Nửa hình cầu bên trên (tâm 140, 90; R = 60) -->
-  <path d="M 80 90 A 60 60 0 0 1 200 90 Z" fill="#f8fafc" className="dark:fill-slate-800" stroke="#0f172a" strokeWidth="2" />
-  <!-- Elip phân cách giữa nắp và thân -->
-  <ellipse cx="140" cy="90" rx="60" ry="14" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4 3" />
+          svgDrawing: `<svg viewBox="0 0 300 360" style="background-color: #ffffff; border-radius: 12px;" className="w-full max-w-xs mx-auto h-auto bg-white rounded-xl p-3 border border-slate-300 shadow-md">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+  <defs>
+    <!-- Mũi tên hai đầu đen đậm -->
+    <marker id="arrowBottle" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0f172a" />
+    </marker>
+  </defs>
 
-  <!-- Thân hình trụ (chiều cao 180) -->
-  <line x1="80" y1="90" x2="80" y2="270" stroke="#0f172a" strokeWidth="2" />
-  <line x1="200" y1="90" x2="200" y2="270" stroke="#0f172a" strokeWidth="2" />
+  <!-- Tiêu đề hình vẽ -->
+  <text x="150" y="24" textAnchor="middle" fill="#0f172a" fontSize="13" fontWeight="bold">
+    BÌNH INOX (NẮP CẦU + THÂN TRỤ)
+  </text>
+
+  <!-- Nắp bình: Nửa hình cầu bên trên (tâm 140, 100; R = 60) -->
+  <path d="M 80 100 A 60 60 0 0 1 200 100 Z" fill="#e2e8f0" stroke="#0f172a" strokeWidth="2.5" />
+  
+  <!-- Bán kính nắp R = 4 cm -->
+  <line x1="140" y1="100" x2="200" y2="100" stroke="#0f172a" strokeWidth="1.5" strokeDasharray="3 3" />
+  <circle cx="140" cy="100" r="3" fill="#0f172a" />
+  <text x="168" y="93" textAnchor="middle" fill="#0f172a" fontSize="12" fontWeight="bold">R = 4 cm</text>
+
+  <!-- Thân hình trụ (màu kim loại inox sáng nhạt) -->
+  <rect x="80" y="100" width="120" height="180" fill="#f1f5f9" stroke="none" />
+
+  <!-- Elip phân cách giữa nắp và thân -->
+  <ellipse cx="140" cy="100" rx="60" ry="14" fill="none" stroke="#0f172a" strokeWidth="1.5" strokeDasharray="4 3" />
+
+  <!-- Hai đường sinh thẳng đứng của thân hình trụ -->
+  <line x1="80" y1="100" x2="80" y2="280" stroke="#0f172a" strokeWidth="2.5" />
+  <line x1="200" y1="100" x2="200" y2="280" stroke="#0f172a" strokeWidth="2.5" />
 
   <!-- Đáy hình trụ: Elip (nửa dưới nét liền, nửa trên nét đứt) -->
-  <path d="M 80 270 A 60 14 0 0 0 200 270" fill="none" stroke="#0f172a" strokeWidth="2" />
-  <path d="M 80 270 A 60 14 0 0 1 200 270" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4 3" />
+  <path d="M 80 280 A 60 14 0 0 0 200 280" fill="none" stroke="#0f172a" strokeWidth="2.5" />
+  <path d="M 80 280 A 60 14 0 0 1 200 280" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4 3" />
 
   <!-- Gióng kích thước chiều cao thân trụ 20 cm -->
-  <line x1="225" y1="90" x2="225" y2="270" stroke="#0f172a" strokeWidth="1.5" markerStart="url(#arrowHcm)" markerEnd="url(#arrowHcm)" />
-  <line x1="200" y1="90" x2="235" y2="90" stroke="#94a3b8" strokeWidth="1" strokeDasharray="2 2" />
-  <line x1="200" y1="270" x2="235" y2="270" stroke="#94a3b8" strokeWidth="1" strokeDasharray="2 2" />
-  <text x="248" y="185" textAnchor="middle" fill="#0f172a" className="dark:fill-slate-100" fontSize="13" fontWeight="bold" transform="rotate(90, 248, 185)">
-    20 cm
+  <line x1="228" y1="100" x2="228" y2="280" stroke="#0f172a" strokeWidth="2" markerStart="url(#arrowBottle)" markerEnd="url(#arrowBottle)" />
+  <line x1="200" y1="100" x2="240" y2="100" stroke="#64748b" strokeWidth="1" strokeDasharray="2 2" />
+  <line x1="200" y1="280" x2="240" y2="280" stroke="#64748b" strokeWidth="1" strokeDasharray="2 2" />
+  <text x="254" y="195" textAnchor="middle" fill="#0f172a" fontSize="14" fontWeight="bold" transform="rotate(90, 254, 195)">
+    h = 20 cm
   </text>
 </svg>`,
           solutionGuide: `### HƯỚNG DẪN CHẤM & ĐÁP ÁN BÀI 5 (SỞ GD&ĐT TP.HCM):

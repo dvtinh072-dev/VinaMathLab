@@ -411,13 +411,16 @@ export function ExamEngine({ exam }: Props) {
                         </div>
                       )}
 
-                      {/* Hình vẽ vector SVG trực quan */}
+                      {/* Hình vẽ vector SVG trực quan (Card nền trắng nổi bật chuẩn giấy thi) */}
                       {eq.svgDrawing && (
-                        <div className="my-3 flex justify-center">
+                        <div className="my-4 flex flex-col items-center justify-center">
                           <div
-                            className="max-w-xl w-full"
+                            className="w-full max-w-xl rounded-2xl bg-white p-2 sm:p-3 shadow-lg border border-slate-300 flex items-center justify-center"
                             dangerouslySetInnerHTML={{ __html: eq.svgDrawing }}
                           />
+                          <span className="text-[11px] text-slate-400 mt-1.5 italic">
+                            (Hình vẽ / Biểu đồ minh họa chuẩn đề thi chính thức)
+                          </span>
                         </div>
                       )}
 

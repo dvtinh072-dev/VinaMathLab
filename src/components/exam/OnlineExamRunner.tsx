@@ -668,15 +668,15 @@ export function OnlineExamRunner({ exam }: Props) {
                           </div>
                         )}
 
-                        {/* Hình vẽ vector SVG nếu có */}
+                        {/* Hình vẽ vector SVG nếu có (Card nền trắng nổi bật chuẩn giấy thi) */}
                         {q.svgDrawing && (
-                          <div className="p-3 rounded-xl bg-slate-900/90 border border-cyan-500/20 flex flex-col items-center justify-center my-3">
+                          <div className="p-3 sm:p-4 rounded-2xl bg-white border border-slate-300 shadow-lg flex flex-col items-center justify-center my-4">
                             <div
-                              className="w-full max-w-[480px] overflow-hidden flex items-center justify-center"
+                              className="w-full max-w-[500px] overflow-hidden flex items-center justify-center"
                               dangerouslySetInnerHTML={{ __html: q.svgDrawing }}
                             />
-                            <span className="text-[11px] text-slate-400 mt-1 italic">
-                              (Hình vẽ minh họa chuẩn hình học - Đề thi chính thức)
+                            <span className="text-[11px] text-slate-600 mt-2 italic font-medium">
+                              (Hình vẽ / Biểu đồ minh họa chuẩn đề thi chính thức)
                             </span>
                           </div>
                         )}

@@ -347,12 +347,25 @@ export default function LuyenThiPage() {
                       <span className="text-xs text-slate-500 flex items-center gap-1 font-medium">
                         <Timer className="w-3.5 h-3.5" /> {exam.durationMinutes} phút
                       </span>
-                      <span className="text-xs text-slate-500 font-medium">
-                        • {exam.totalQuestions} câu hỏi
-                      </span>
-                      <span className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
-                        <CheckCircle2 className="w-3.5 h-3.5" /> Tự động chấm điểm
-                      </span>
+                      {(!exam.questions || exam.questions.length === 0) && exam.essayPart ? (
+                        <>
+                          <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">
+                            • {exam.essayPart.questions.length} bài tự luận ({exam.essayPart.totalPoints || 10}đ)
+                          </span>
+                          <span className="text-xs text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1">
+                            <CheckCircle2 className="w-3.5 h-3.5" /> Tự luận & Barem điểm chi tiết
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="text-xs text-slate-500 font-medium">
+                            • {exam.totalQuestions} câu hỏi
+                          </span>
+                          <span className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
+                            <CheckCircle2 className="w-3.5 h-3.5" /> Tự động chấm điểm
+                          </span>
+                        </>
+                      )}
                     </div>
 
                     <h4 className="font-extrabold text-base sm:text-lg md:text-xl text-slate-900 dark:text-slate-100">

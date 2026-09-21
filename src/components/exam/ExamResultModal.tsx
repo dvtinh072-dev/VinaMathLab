@@ -60,8 +60,8 @@ export function ExamResultModal({
     }
   });
 
+  const isPureEssay = exam.questions.length === 0 && Boolean(exam.essayPart?.questions?.length);
   const totalScore = parseFloat((scorePart1 + scorePart2 + scorePart3).toFixed(2));
-  const maxPossibleScore = 10.0;
 
   return (
     <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
@@ -78,61 +78,77 @@ export function ExamResultModal({
             <Award className="w-8 h-8" />
           </div>
           <h3 className="font-extrabold text-2xl text-white">
-            Kết Quả Bài Thi VinaMath
+            {isPureEssay ? "Hoàn Thành Nộp Bài Tự Luận" : "Kết Quả Bài Thi VinaMath"}
           </h3>
           <p className="text-xs text-slate-400">{exam.title}</p>
         </div>
 
         {/* Score Badge */}
-        <div className="p-5 rounded-2xl bg-[#0B1120] border border-cyan-500/40 text-center space-y-1 shadow-inner">
-          <div className="text-xs uppercase tracking-wider font-bold text-cyan-400">
-            Tổng điểm trắc nghiệm (Thang 10)
+        {isPureEssay ? (
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-indigo-950/80 to-purple-950/60 border border-indigo-500/40 text-center space-y-2 shadow-inner">
+            <div className="text-xs uppercase tracking-wider font-bold text-indigo-300">
+              Hình thức: 100% Tự Luận ({exam.essayPart?.totalPoints || 10} điểm)
+            </div>
+            <div className="text-2xl md:text-3xl font-black text-emerald-400 tracking-tight flex items-center justify-center gap-2">
+              <CheckCircle2 className="w-7 h-7 text-emerald-400" />
+              <span>Đã nộp bài thành công!</span>
+            </div>
+            <p className="text-xs text-slate-300 max-w-sm mx-auto">
+              Hệ thống đã lưu lời giải của bạn. Vui lòng bấm <strong>&quot;Xem Hướng Dẫn Giải & Barem Điểm&quot;</strong> để đối chiếu từng bước chấm chi tiết.
+            </p>
           </div>
-          <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
-            <span className="text-cyan-400">{totalScore}</span> <span className="text-xl font-bold text-slate-500">/ 10.0</span>
+        ) : (
+          <div className="p-5 rounded-2xl bg-[#0B1120] border border-cyan-500/40 text-center space-y-1 shadow-inner">
+            <div className="text-xs uppercase tracking-wider font-bold text-cyan-400">
+              Tổng điểm trắc nghiệm (Thang 10)
+            </div>
+            <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
+              <span className="text-cyan-400">{totalScore}</span> <span className="text-xl font-bold text-slate-500">/ 10.0</span>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Breakdown by MOET Formats */}
         <div className="space-y-2 text-xs">
-          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
-            <span className="font-medium">Phần I (Trắc nghiệm 4 lựa chọn):</span>
-            <strong className="text-cyan-400 font-bold">{scorePart1.toFixed(2)} đ ({correctPart1} câu đúng)</strong>
-          </div>
-          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
-            <span className="font-medium">Phần II (Trắc nghiệm Đúng / Sai):</span>
-            <strong className="text-purple-400 font-bold">{scorePart2.toFixed(2)} đ</strong>
-          </div>
-          <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
-            <span className="font-medium">Phần III (Trả lời ngắn / Điền số):</span>
-            <strong className="text-amber-400 font-bold">{scorePart3.toFixed(2)} đ ({correctPart3} câu đúng)</strong>
-          </div>
+          {!isPureEssay && (
+            <>
+              <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+                <span className="font-medium">Phần I (Trắc nghiệm 4 lựa chọn):</span>
+                <strong className="text-cyan-400 font-bold">{scorePart1.toFixed(2)} đ ({correctPart1} câu đúng)</strong>
+              </div>
+              <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+                <span className="font-medium">Phần II (Trắc nghiệm Đúng / Sai):</span>
+                <strong className="text-purple-400 font-bold">{scorePart2.toFixed(2)} đ</strong>
+              </div>
+              <div className="p-3.5 rounded-xl bg-[#0B1120] border border-slate-800 flex justify-between items-center text-slate-200">
+                <span className="font-medium">Phần III (Trả lời ngắn / Điền số):</span>
+                <strong className="text-amber-400 font-bold">{scorePart3.toFixed(2)} đ ({correctPart3} câu đúng)</strong>
+              </div>
+            </>
+          )}
 
-          {essayFiles && essayFiles.length > 0 ? (
+          {exam.essayPart && (
             <div className="p-3.5 rounded-xl bg-indigo-950/40 border border-indigo-500/40 flex justify-between items-center text-slate-200">
               <div className="flex items-center gap-2">
                 <FileCheck className="w-4 h-4 text-indigo-400" />
-                <span className="font-medium">Phần Tự luận (Đã nộp):</span>
+                <span className="font-medium">Phần Tự luận ({exam.essayPart.questions.length} bài):</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-emerald-400 font-bold">{essayFiles.length} trang</span>
+                <span className="text-emerald-400 font-bold">
+                  {essayFiles.length > 0 ? `${essayFiles.length} trang đính kèm` : "Đã làm lời giải"}
+                </span>
                 {onOpenEssay && (
                   <button
                     onClick={() => {
                       onClose();
                       onOpenEssay();
                     }}
-                    className="px-2 py-1 bg-indigo-600/80 hover:bg-indigo-600 text-white rounded-lg text-[11px] font-semibold transition-colors flex items-center gap-1"
+                    className="px-2.5 py-1 bg-indigo-600/80 hover:bg-indigo-600 text-white rounded-lg text-[11px] font-semibold transition-colors flex items-center gap-1 cursor-pointer"
                   >
-                    <Eye className="w-3 h-3" /> Xem bài
+                    <Eye className="w-3.5 h-3.5" /> Xem lời giải & Barem
                   </button>
                 )}
               </div>
-            </div>
-          ) : (
-            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex justify-between items-center text-slate-400 text-[11px]">
-              <span>Phần Tự luận:</span>
-              <span>Chưa đính kèm bài làm</span>
             </div>
           )}
           {/* Thông báo đã lưu kết quả */}

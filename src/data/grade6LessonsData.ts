@@ -1,5 +1,6 @@
 import { DetailedLessonData } from "@/data/allGradesLessonsData";
 import { LessonItem, GradeData } from "@/data/curriculumData";
+import { GRADE_6_CHAPTER_1_REVIEW_LESSON } from "./grade6Chapter1ReviewData";
 
 /**
  * HỆ THỐNG GIÁO ÁN CHI TIẾT & ĐẤU TRƯỜNG BÀI TẬP SGK TOÁN 6
@@ -1843,6 +1844,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
     }
   ]
 },
+  "t6-on-tap-chuong-1": GRADE_6_CHAPTER_1_REVIEW_LESSON,
   "t6-b8-quan-he-chia-het": {
     "id": "t6-b8-quan-he-chia-het",
     "lessonNumber": 8,

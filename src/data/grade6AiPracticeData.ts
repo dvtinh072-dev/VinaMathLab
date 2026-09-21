@@ -2873,5 +2873,157 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
       "correctIndex": 0,
       "explanation": "BCNN(12, 15) = 60. Mẫu chung nhỏ nhất là 60."
     }
+  ],
+  "t6-on-tap-chuong-1": [
+    {
+      "id": "ai-otc1.1",
+      "badge": "Luyện tập 1 - Đếm chữ cái trong tập hợp",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Tập hợp các chữ cái xuất hiện trong từ \"HÌNH HỌC\" có tất cả bao nhiêu phần tử?",
+      "options": [
+        "$5$ phần tử",
+        "$6$ phần tử",
+        "$7$ phần tử",
+        "$4$ phần tử"
+      ],
+      "correctIndex": 0,
+      "explanation": "Các chữ cái xuất hiện gồm: H, I, N, O, C (chữ H xuất hiện hai lần nhưng trong tập hợp chỉ viết một lần). Vậy có đúng 5 phần tử."
+    },
+    {
+      "id": "ai-otc1.2",
+      "badge": "Luyện tập 2 - Số tự nhiên liền sau",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Số tự nhiên liền sau của số $999$ là:",
+      "options": [
+        "$1\\ 000$",
+        "$998$",
+        "$1\\ 001$",
+        "$990$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số tự nhiên liền sau của số $a$ là $a + 1$. Ta có $999 + 1 = 1\\ 000$."
+    },
+    {
+      "id": "ai-otc1.3",
+      "badge": "Luyện tập 3 - Chữ số La Mã",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Chữ số La Mã $\\text{XXVIII}$ có giá trị tương ứng trong hệ thập phân là:",
+      "options": [
+        "$28$",
+        "$23$",
+        "$27$",
+        "$18$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $\\text{XX} = 20$, $\\text{VIII} = 8$, do đó $\\text{XXVIII} = 20 + 8 = 28$."
+    },
+    {
+      "id": "ai-otc1.4",
+      "badge": "Luyện tập 4 - Khái niệm lũy thừa",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Khẳng định nào sau đây về lũy thừa $3^4$ là ĐÚNG?",
+      "options": [
+        "$3^4 = 3 \\cdot 3 \\cdot 3 \\cdot 3 = 81$",
+        "$3^4 = 3 \\cdot 4 = 12$",
+        "$3^4 = 4 \\cdot 4 \\cdot 4 = 64$",
+        "$3^4 = 3 + 3 + 3 + 3 = 12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lũy thừa bậc 4 của 3 là tích của 4 thừa số 3: $3^4 = 3 \\cdot 3 \\cdot 3 \\cdot 3 = 81$."
+    },
+    {
+      "id": "ai-otc1.5",
+      "badge": "Luyện tập 5 - Viết tập hợp số tự nhiên khác 0",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Tập hợp $M = \\{x \\in \\mathbb{N}^* \\mid x \\le 6\\}$ gồm các phần tử nào?",
+      "options": [
+        "$M = \\{1; 2; 3; 4; 5; 6\\}$",
+        "$M = \\{0; 1; 2; 3; 4; 5; 6\\}$",
+        "$M = \\{1; 2; 3; 4; 5\\}$",
+        "$M = \\{0; 1; 2; 3; 4; 5\\}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $x \\in \\mathbb{N}^*$ nên $x \\ge 1$, kết hợp với $x \\le 6$ ta được các phần tử: $1; 2; 3; 4; 5; 6$."
+    },
+    {
+      "id": "ai-otc1.6",
+      "badge": "Luyện tập 6 - Tính nhanh",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Tính nhanh giá trị biểu thức $48 \\cdot 19 + 48 \\cdot 81$:",
+      "options": [
+        "$4\\ 800$",
+        "$4\\ 600$",
+        "$5\\ 000$",
+        "$480$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đặt 48 làm thừa số chung: $48 \\cdot (19 + 81) = 48 \\cdot 100 = 4\\ 800$."
+    },
+    {
+      "id": "ai-otc1.7",
+      "badge": "Luyện tập 7 - Thứ tự thực hiện phép tính có ngoặc",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Kết quả của phép tính $100 : [5 \\cdot (18 - 8)]$ là:",
+      "options": [
+        "$2$",
+        "$10$",
+        "$20$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tính trong ngoặc tròn: $18 - 8 = 10$.\nTính trong ngoặc vuông: $5 \\cdot 10 = 50$.\nTính phép chia: $100 : 50 = 2$."
+    },
+    {
+      "id": "ai-otc1.8",
+      "badge": "Luyện tập 8 - Tìm x",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Tìm số tự nhiên $x$ thỏa mãn: $5 \\cdot (x + 12) - 45 = 55$.",
+      "options": [
+        "$8$",
+        "$10$",
+        "$6$",
+        "$12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $5 \\cdot (x + 12) = 55 + 45 = 100$\n$x + 12 = 100 : 5 = 20$\n$x = 20 - 12 = 8$."
+    },
+    {
+      "id": "ai-otc1.9",
+      "badge": "Luyện tập 9 - Đóng bao gạo",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Một cửa hàng cần đóng gói $150\\text{ kg}$ gạo vào hai loại bao: bao $10\\text{ kg}$ và bao $5\\text{ kg}$. Người ta đã dùng $10$ bao loại $10\\text{ kg}$. Cần dùng thêm bao nhiêu bao loại $5\\text{ kg}$ để đóng hết số gạo còn lại?",
+      "options": [
+        "$10$ bao",
+        "$8$ bao",
+        "$12$ bao",
+        "$15$ bao"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khối lượng gạo đóng trong 10 bao loại 10 kg là: $10 \\cdot 10 = 100\\text{ kg}$.\nSố gạo còn lại là: $150 - 100 = 50\\text{ kg}$.\nSố bao 5 kg cần dùng là: $50 : 5 = 10$ bao."
+    },
+    {
+      "id": "ai-otc1.10",
+      "badge": "Luyện tập 10 - Tìm số mũ lũy thừa",
+      "isAiGenerated": true,
+      "source": "Ngân hàng câu hỏi Toán 6 - Ôn tập Chương I",
+      "question": "Tìm số tự nhiên $x$ thỏa mãn: $5^{x+1} - 5^x = 500$.",
+      "options": [
+        "$3$",
+        "$2$",
+        "$4$",
+        "$5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có: $5^x \\cdot 5 - 5^x = 500$\n$5^x \\cdot (5 - 1) = 500$\n$5^x \\cdot 4 = 500$\n$5^x = 500 : 4 = 125$\nVì $125 = 5^3$ nên $x = 3$."
+    }
   ]
 };

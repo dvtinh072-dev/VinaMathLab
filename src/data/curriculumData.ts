@@ -63,6 +63,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t6-b5-phep-nhan-chia-so-tu-nhien", lessonNumber: 5, title: "Bài 5: Phép nhân và phép chia số tự nhiên", strand: "daiso", description: "Tính chất phân phối của phép nhân đối với phép cộng, phép chia hết và chia có dư.", keyFormulas: ["a(b + c) = ab + ac", "a = b \\cdot q + r \\ (0 \\le r < b)"] },
           { id: "t6-b6-luy-thua-so-mu-tu-nhien", lessonNumber: 6, title: "Bài 6: Lũy thừa với số mũ tự nhiên", strand: "daiso", description: "Nhân và chia hai lũy thừa cùng cơ số.", keyFormulas: ["a^m \\cdot a^n = a^{m+n}", "a^m : a^n = a^{m-n} \\ (a \\neq 0, m \\ge n)"] },
           { id: "t6-b7-thu-tu-thuc-hien-phep-tinh", lessonNumber: 7, title: "Bài 7: Thứ tự thực hiện các phép tính", strand: "daiso", description: "Quy tắc ngoặc tròn, vuông, nhọn và thứ tự lũy thừa, nhân chia, cộng trừ.", keyFormulas: ["( ) \\to [ ] \\to \\{ \\}"] },
+          { id: "t6-on-tap-chuong-1", lessonNumber: 0, title: "Bài tập cuối chương I", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Tập hợp, Các phép tính số tự nhiên, Lũy thừa và Thứ tự thực hiện phép tính với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["a \\in A, \\ b \\notin A", "\\overline{ab} = 10a + b", "a(b + c) = ab + ac", "a^m \\cdot a^n = a^{m+n}", "a^m : a^n = a^{m-n}", "( ) \\to [ ] \\to \\{ \\}"] },
         ],
       },
       {

@@ -1,6 +1,13 @@
 import type { QuizQuestion } from "@/components/interactive/GamifiedMathQuiz";
+import type { TrueFalseQuestion, ShortAnswerQuestion } from "./allGradesLessonsData";
 
-export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
+export interface Grade8AiPracticePackage {
+  quizQuestions: QuizQuestion[];
+  trueFalseQuestions?: TrueFalseQuestion[];
+  shortAnswerQuestions?: ShortAnswerQuestion[];
+}
+
+export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiPracticePackage> = {
   "t8-b1-don-thuc": [
     // 10 CÂU VÀO MỤC LUYỆN THÊM (Luyện tập 1 đến 10)
     {
@@ -1375,231 +1382,429 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "explanation": "$d = (15x^2 + 10xy) : 5x = 3x + 2y\\text{ (m)}$."
     }
   ],
-  "t8-b6-binh-phuong-tong-hieu": [
-  {
-    "id": "ai-8.6.1",
-    "badge": "Luyện thêm 1 (NB) - Khai triển hiệu hai bình phương",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 30",
-    "question": "Khai triển biểu thức $(x - 4)(x + 4)$ ta được kết quả là:",
-    "options": [
-      "$x^2 - 16$",
-      "$x^2 - 4$",
-      "$x^2 + 16$",
-      "$x^2 - 8$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(x - 4)(x + 4) = x^2 - 4^2 = x^2 - 16$."
-  },
-  {
-    "id": "ai-8.6.2",
-    "badge": "Luyện thêm 2 (NB) - Khai triển bình phương một tổng",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 31",
-    "question": "Khai triển biểu thức $(x + 3)^2$ ta được kết quả là:",
-    "options": [
-      "$x^2 + 6x + 9$",
-      "$x^2 + 9$",
-      "$x^2 + 3x + 9$",
-      "$x^2 + 6x + 6$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(x + 3)^2 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$."
-  },
-  {
-    "id": "ai-8.6.3",
-    "badge": "Luyện thêm 3 (NB) - Khai triển bình phương một hiệu",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 32",
-    "question": "Khai triển biểu thức $(x - 1)^2$ ta được kết quả là:",
-    "options": [
-      "$x^2 - 2x + 1$",
-      "$x^2 - 1$",
-      "$x^2 - 2x - 1$",
-      "$x^2 + 2x + 1$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(x - 1)^2 = x^2 - 2 \\cdot x \\cdot 1 + 1^2 = x^2 - 2x + 1$."
-  },
-  {
-    "id": "ai-8.6.4",
-    "badge": "Luyện thêm 4 (NB) - Viết đa thức thành tích",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 30",
-    "question": "Viết đa thức $x^2 - 25$ dưới dạng tích của hai đa thức ta được:",
-    "options": [
-      "$(x - 5)(x + 5)$",
-      "$(x - 25)(x + 25)$",
-      "$(x - 5)^2$",
-      "$(x + 5)^2$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$x^2 - 25 = x^2 - 5^2 = (x - 5)(x + 5)$."
-  },
-  {
-    "id": "ai-8.6.5",
-    "badge": "Luyện thêm 5 (NB) - Viết thành bình phương một tổng",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 31",
-    "question": "Đa thức $x^2 + 10x + 25$ được viết dưới dạng bình phương của một tổng là:",
-    "options": [
-      "$(x + 5)^2$",
-      "$(x + 10)^2$",
-      "$(x + 25)^2$",
-      "$(x + 2)^2$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$x^2 + 10x + 25 = x^2 + 2 \\cdot x \\cdot 5 + 5^2 = (x + 5)^2$."
-  },
-  {
-    "id": "ai-8.6.6",
-    "badge": "Luyện thêm 6 (NB) - Viết thành bình phương một hiệu",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 32",
-    "question": "Đa thức $x^2 - 12x + 36$ được viết dưới dạng bình phương của một hiệu là:",
-    "options": [
-      "$(x - 6)^2$",
-      "$(x - 12)^2$",
-      "$(x - 36)^2$",
-      "$(x + 6)^2$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$x^2 - 12x + 36 = x^2 - 2 \\cdot x \\cdot 6 + 6^2 = (x - 6)^2$."
-  },
-  {
-    "id": "ai-8.6.7",
-    "badge": "Luyện thêm 7 (TH) - Khai triển bình phương tổng có hệ số",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 31",
-    "question": "Khai triển hằng đẳng thức $(3x + 1)^2$ ta được kết quả là:",
-    "options": [
-      "$9x^2 + 6x + 1$",
-      "$3x^2 + 6x + 1$",
-      "$9x^2 + 3x + 1$",
-      "$9x^2 + 1$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(3x + 1)^2 = (3x)^2 + 2 \\cdot (3x) \\cdot 1 + 1^2 = 9x^2 + 6x + 1$."
-  },
-  {
-    "id": "ai-8.6.8",
-    "badge": "Luyện thêm 8 (TH) - Khai triển bình phương hiệu có hệ số",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 32",
-    "question": "Khai triển hằng đẳng thức $(2x - 5)^2$ ta được kết quả là:",
-    "options": [
-      "$4x^2 - 20x + 25$",
-      "$4x^2 - 10x + 25$",
-      "$4x^2 - 20x - 25$",
-      "$2x^2 - 20x + 25$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(2x - 5)^2 = (2x)^2 - 2 \\cdot (2x) \\cdot 5 + 5^2 = 4x^2 - 20x + 25$."
-  },
-  {
-    "id": "ai-8.6.9",
-    "badge": "Luyện thêm 9 (TH) - Khai triển hiệu hai bình phương có hệ số",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 30",
-    "question": "Khai triển tích $(3x - 2)(3x + 2)$ ta được kết quả là:",
-    "options": [
-      "$9x^2 - 4$",
-      "$3x^2 - 4$",
-      "$9x^2 + 4$",
-      "$9x^2 - 12x + 4$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$(3x - 2)(3x + 2) = (3x)^2 - 2^2 = 9x^2 - 4$."
-  },
-  {
-    "id": "ai-8.6.10",
-    "badge": "Luyện thêm 10 (TH) - Tính nhẩm bình phương số gần tròn chục",
-    "isAiGenerated": true,
-    "source": "SGK Toán 8 KNTT Trang 31",
-    "question": "Tính nhanh giá trị $51^2$ bằng hằng đẳng thức ta được:",
-    "options": [
-      "$2601$",
-      "$2501$",
-      "$2611$",
-      "$2510$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$51^2 = (50 + 1)^2 = 50^2 + 2 \\cdot 50 \\cdot 1 + 1^2 = 2500 + 100 + 1 = 2601$."
-  },
-  {
-    "id": "ai-8.6.11",
-    "badge": "Bài tập mở rộng 1 (VD) - Rút gọn hiệu hai bình phương",
-    "isAiGenerated": true,
-    "source": "Toán 8 KNTT Nâng cao",
-    "question": "Rút gọn biểu thức $P = (x + 2)^2 - (x - 2)^2$ ta được kết quả là:",
-    "options": [
-      "$8x$",
-      "$4x$",
-      "$2x^2 + 8$",
-      "$0$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$P = (x^2 + 4x + 4) - (x^2 - 4x + 4) = 8x$."
-  },
-  {
-    "id": "ai-8.6.12",
-    "badge": "Bài tập mở rộng 2 (VD) - Tìm x bằng hiệu hai bình phương",
-    "isAiGenerated": true,
-    "source": "Toán 8 KNTT Nâng cao",
-    "question": "Tìm giá trị của $x$ biết: $(x + 5)^2 - x^2 = 45$.",
-    "options": [
-      "$x = 2$",
-      "$x = 3$",
-      "$x = 4$",
-      "$x = 1$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$x^2 + 10x + 25 - x^2 = 45 \\Leftrightarrow 10x = 20 \\Leftrightarrow x = 2$."
-  },
-  {
-    "id": "ai-8.6.13",
-    "badge": "Bài tập mở rộng 3 (VD) - Tính giá trị đa thức thu gọn",
-    "isAiGenerated": true,
-    "source": "Toán 8 KNTT Nâng cao",
-    "question": "Tính giá trị của biểu thức $A = x^2 - 6xy + 9y^2$ tại $x = 26$ và $y = 2$.",
-    "options": [
-      "$400$",
-      "$200$",
-      "$100$",
-      "$20$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$A = (x - 3y)^2$. Thay $x = 26, y = 2$: $A = (26 - 3 \\cdot 2)^2 = (26 - 6)^2 = 20^2 = 400$."
-  },
-  {
-    "id": "ai-8.6.14",
-    "badge": "Bài tập mở rộng 4 (VD) - Tính nhanh tích hai số đối xứng",
-    "isAiGenerated": true,
-    "source": "Toán 8 KNTT Nâng cao",
-    "question": "Tính nhanh giá trị của tích $102 \\cdot 98$ bằng hằng đẳng thức hiệu hai bình phương:",
-    "options": [
-      "$9996$",
-      "$9994$",
-      "$9986$",
-      "$10004$"
-    ],
-    "correctIndex": 0,
-    "explanation": "$102 \\cdot 98 = (100 + 2)(100 - 2) = 100^2 - 2^2 = 10000 - 4 = 9996$."
-  },
-  {
-    "id": "ai-8.6.15",
-    "badge": "Bài tập mở rộng 5 (VD - Thực tế) - Biến đổi diện tích chuồng trại",
-    "isAiGenerated": true,
-    "source": "Toán 8 KNTT - Bài toán thực tế",
-    "question": "Một hộ chăn nuôi có chuồng trại hình vuông cạnh $x\\text{ (m)}$ ($x > 3$). Bác chủ trại điều chỉnh kích thước: tăng chiều dài thêm $3\\text{ m}$ và giảm chiều rộng đi $3\\text{ m}$. Hỏi diện tích chuồng trại mới thay đổi thế nào so với ban đầu?",
-    "options": [
-      "Giảm đi $9\\text{ m}^2$",
-      "Tăng thêm $9\\text{ m}^2$",
-      "Không thay đổi",
-      "Giảm đi $6\\text{ m}^2$"
-    ],
-    "correctIndex": 0,
-    "explanation": "Diện tích ban đầu là $x^2\\text{ (m}^2\\text{)}$.\nDiện tích mới là: $(x + 3)(x - 3) = x^2 - 9\\text{ (m}^2\\text{)}$.\nSo với ban đầu, diện tích giảm đi đúng $9\\text{ m}^2$."
-  }
-],
+  "t8-b6-binh-phuong-tong-hieu": {
+  "quizQuestions": [
+    {
+      "id": "ai-8.6.1",
+      "badge": "Luyện thêm 1 (NB) - Khai triển hiệu hai bình phương",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Khai triển biểu thức $(x - 4)(x + 4)$ ta được kết quả là:",
+      "options": [
+        "$x^2 - 16$",
+        "$x^2 - 4$",
+        "$x^2 + 16$",
+        "$x^2 - 8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 4)(x + 4) = x^2 - 4^2 = x^2 - 16$."
+    },
+    {
+      "id": "ai-8.6.2",
+      "badge": "Luyện thêm 2 (NB) - Khai triển bình phương một tổng",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Khai triển biểu thức $(x + 3)^2$ ta được kết quả là:",
+      "options": [
+        "$x^2 + 6x + 9$",
+        "$x^2 + 9$",
+        "$x^2 + 3x + 9$",
+        "$x^2 + 6x + 6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 3)^2 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$."
+    },
+    {
+      "id": "ai-8.6.3",
+      "badge": "Luyện thêm 3 (NB) - Khai triển bình phương một hiệu",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Khai triển biểu thức $(x - 1)^2$ ta được kết quả là:",
+      "options": [
+        "$x^2 - 2x + 1$",
+        "$x^2 - 1$",
+        "$x^2 - 2x - 1$",
+        "$x^2 + 2x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 1)^2 = x^2 - 2 \\cdot x \\cdot 1 + 1^2 = x^2 - 2x + 1$."
+    },
+    {
+      "id": "ai-8.6.4",
+      "badge": "Luyện thêm 4 (NB) - Viết đa thức thành tích",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Viết đa thức $x^2 - 25$ dưới dạng tích của hai đa thức ta được:",
+      "options": [
+        "$(x - 5)(x + 5)$",
+        "$(x - 25)(x + 25)$",
+        "$(x - 5)^2$",
+        "$(x + 5)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 25 = x^2 - 5^2 = (x - 5)(x + 5)$."
+    },
+    {
+      "id": "ai-8.6.5",
+      "badge": "Luyện thêm 5 (NB) - Viết thành bình phương một tổng",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Đa thức $x^2 + 10x + 25$ được viết dưới dạng bình phương của một tổng là:",
+      "options": [
+        "$(x + 5)^2$",
+        "$(x + 10)^2$",
+        "$(x + 25)^2$",
+        "$(x + 2)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 + 10x + 25 = x^2 + 2 \\cdot x \\cdot 5 + 5^2 = (x + 5)^2$."
+    },
+    {
+      "id": "ai-8.6.6",
+      "badge": "Luyện thêm 6 (NB) - Viết thành bình phương một hiệu",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Đa thức $x^2 - 12x + 36$ được viết dưới dạng bình phương của một hiệu là:",
+      "options": [
+        "$(x - 6)^2$",
+        "$(x - 12)^2$",
+        "$(x - 36)^2$",
+        "$(x + 6)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 12x + 36 = x^2 - 2 \\cdot x \\cdot 6 + 6^2 = (x - 6)^2$."
+    },
+    {
+      "id": "ai-8.6.7",
+      "badge": "Luyện thêm 7 (TH) - Khai triển bình phương tổng có hệ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Khai triển hằng đẳng thức $(3x + 1)^2$ ta được kết quả là:",
+      "options": [
+        "$9x^2 + 6x + 1$",
+        "$3x^2 + 6x + 1$",
+        "$9x^2 + 3x + 1$",
+        "$9x^2 + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3x + 1)^2 = (3x)^2 + 2 \\cdot (3x) \\cdot 1 + 1^2 = 9x^2 + 6x + 1$."
+    },
+    {
+      "id": "ai-8.6.8",
+      "badge": "Luyện thêm 8 (TH) - Khai triển bình phương hiệu có hệ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Khai triển hằng đẳng thức $(2x - 5)^2$ ta được kết quả là:",
+      "options": [
+        "$4x^2 - 20x + 25$",
+        "$4x^2 - 10x + 25$",
+        "$4x^2 - 20x - 25$",
+        "$2x^2 - 20x + 25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2x - 5)^2 = (2x)^2 - 2 \\cdot (2x) \\cdot 5 + 5^2 = 4x^2 - 20x + 25$."
+    },
+    {
+      "id": "ai-8.6.9",
+      "badge": "Luyện thêm 9 (TH) - Khai triển hiệu hai bình phương có hệ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Khai triển tích $(3x - 2)(3x + 2)$ ta được kết quả là:",
+      "options": [
+        "$9x^2 - 4$",
+        "$3x^2 - 4$",
+        "$9x^2 + 4$",
+        "$9x^2 - 12x + 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3x - 2)(3x + 2) = (3x)^2 - 2^2 = 9x^2 - 4$."
+    },
+    {
+      "id": "ai-8.6.10",
+      "badge": "Luyện thêm 10 (TH) - Tính nhẩm bình phương số gần tròn chục",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Tính nhanh giá trị $51^2$ bằng hằng đẳng thức ta được:",
+      "options": [
+        "$2601$",
+        "$2501$",
+        "$2611$",
+        "$2510$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$51^2 = (50 + 1)^2 = 50^2 + 2 \\cdot 50 \\cdot 1 + 1^2 = 2500 + 100 + 1 = 2601$."
+    },
+    {
+      "id": "ai-8.6.11",
+      "badge": "Bài tập mở rộng 1 (VD) - Rút gọn hiệu hai bình phương",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Rút gọn biểu thức $P = (x + 2)^2 - (x - 2)^2$ ta được kết quả là:",
+      "options": [
+        "$8x$",
+        "$4x$",
+        "$2x^2 + 8$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (x^2 + 4x + 4) - (x^2 - 4x + 4) = 8x$."
+    },
+    {
+      "id": "ai-8.6.12",
+      "badge": "Bài tập mở rộng 2 (VD) - Tìm x bằng hiệu hai bình phương",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tìm giá trị của $x$ biết: $(x + 5)^2 - x^2 = 45$.",
+      "options": [
+        "$x = 2$",
+        "$x = 3$",
+        "$x = 4$",
+        "$x = 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 + 10x + 25 - x^2 = 45 \\Leftrightarrow 10x = 20 \\Leftrightarrow x = 2$."
+    },
+    {
+      "id": "ai-8.6.13",
+      "badge": "Bài tập mở rộng 3 (VD) - Tính giá trị đa thức thu gọn",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tính giá trị của biểu thức $A = x^2 - 6xy + 9y^2$ tại $x = 26$ và $y = 2$.",
+      "options": [
+        "$400$",
+        "$200$",
+        "$100$",
+        "$20$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = (x - 3y)^2$. Thay $x = 26, y = 2$: $A = (26 - 3 \\cdot 2)^2 = (26 - 6)^2 = 20^2 = 400$."
+    },
+    {
+      "id": "ai-8.6.14",
+      "badge": "Bài tập mở rộng 4 (VD) - Tính nhanh tích hai số đối xứng",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tính nhanh giá trị của tích $102 \\cdot 98$ bằng hằng đẳng thức hiệu hai bình phương:",
+      "options": [
+        "$9996$",
+        "$9994$",
+        "$9986$",
+        "$10004$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$102 \\cdot 98 = (100 + 2)(100 - 2) = 100^2 - 2^2 = 10000 - 4 = 9996$."
+    },
+    {
+      "id": "ai-8.6.15",
+      "badge": "Bài tập mở rộng 5 (VD - Thực tế) - Biến đổi diện tích chuồng trại",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một hộ chăn nuôi có chuồng trại hình vuông cạnh $x\\text{ (m)}$ ($x > 3$). Bác chủ trại điều chỉnh kích thước: tăng chiều dài thêm $3\\text{ m}$ và giảm chiều rộng đi $3\\text{ m}$. Hỏi diện tích chuồng trại mới thay đổi thế nào so với ban đầu?",
+      "options": [
+        "Giảm đi $9\\text{ m}^2$",
+        "Tăng thêm $9\\text{ m}^2$",
+        "Không thay đổi",
+        "Giảm đi $6\\text{ m}^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích ban đầu là $x^2\\text{ (m}^2\\text{)}$.\nDiện tích mới là: $(x + 3)(x - 3) = x^2 - 9\\text{ (m}^2\\text{)}$.\nSo với ban đầu, diện tích giảm đi đúng $9\\text{ m}^2$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-8.6.1",
+      "badge": "Đúng / Sai 1 (NB) - Khẳng định về hằng đẳng thức mở rộng",
+      "prompt": "Xét tính đúng/sai của các khẳng định đại số sau với mọi số thực $x, y$:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$(x + 2y)^2 = x^2 + 4xy + 4y^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $(x + 2y)^2 = x^2 + 2 \\cdot x \\cdot (2y) + (2y)^2 = x^2 + 4xy + 4y^2$."
+        },
+        {
+          "id": "b",
+          "text": "$(3x - 1)^2 = 9x^2 - 6x - 1$.",
+          "correctAnswer": false,
+          "explanation": "Sai, số hạng cuối cùng phải là $+1^2 = +1$, khai triển đúng là $9x^2 - 6x + 1$."
+        },
+        {
+          "id": "c",
+          "text": "$(-x - 2y)^2 = (x + 2y)^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $[- (x + 2y)]^2 = (x + 2y)^2$ (bình phương của hai số đối nhau luôn bằng nhau)."
+        },
+        {
+          "id": "d",
+          "text": "$(x - 4)(4 + x) = x^2 - 16$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $4 + x = x + 4$, áp dụng hiệu hai bình phương được $(x - 4)(x + 4) = x^2 - 16$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-8.6.2",
+      "badge": "Đúng / Sai 2 (TH) - Viết đa thức về dạng tích hoặc bình phương",
+      "prompt": "Xét tính đúng/sai của các phép biến đổi đa thức sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$4x^2 - 25 = (2x - 5)(2x + 5)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $4x^2 - 25 = (2x)^2 - 5^2 = (2x - 5)(2x + 5)$."
+        },
+        {
+          "id": "b",
+          "text": "$x^2 + 6x + 9 = (x + 3)^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $x^2 + 2 \\cdot x \\cdot 3 + 3^2 = (x + 3)^2$."
+        },
+        {
+          "id": "c",
+          "text": "$9x^2 - 12xy + 4y^2 = (3x - 4y)^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, vì $4y^2 = (2y)^2$ nên biểu thức viết đúng là $(3x - 2y)^2$."
+        },
+        {
+          "id": "d",
+          "text": "$1 - 16x^2 = (1 - 4x)(1 + 4x)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $1 - 16x^2 = 1^2 - (4x)^2 = (1 - 4x)(1 + 4x)$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-8.6.3",
+      "badge": "Đúng / Sai 3 (TH) - Rút gọn biểu thức và giải phương trình",
+      "prompt": "Cho biểu thức $Q = (2x + 1)^2 - 4x(x + 1)$ và phương trình $(x + 5)^2 - x^2 = 35$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Rút gọn biểu thức $Q$ ta được kết quả $Q = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $Q = (4x^2 + 4x + 1) - (4x^2 + 4x) = 1$."
+        },
+        {
+          "id": "b",
+          "text": "Giá trị của biểu thức $Q$ phụ thuộc vào giá trị của biến $x$.",
+          "correctAnswer": false,
+          "explanation": "Sai, vì $Q = 1$ luôn là một hằng số nên không phụ thuộc vào biến $x$."
+        },
+        {
+          "id": "c",
+          "text": "Phương trình $(x + 5)^2 - x^2 = 35$ sau khi khai triển vế trái tương đương với $10x + 25 = 35$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vế trái là $(x^2 + 10x + 25) - x^2 = 10x + 25$."
+        },
+        {
+          "id": "d",
+          "text": "Nghiệm của phương trình $(x + 5)^2 - x^2 = 35$ là $x = 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $10x + 25 = 35 \\Leftrightarrow 10x = 10 \\Leftrightarrow x = 1$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-8.6.4",
+      "badge": "Đúng / Sai 4 (VD - Thực tế) - Diện tích đường dạo bộ công viên",
+      "prompt": "Một công viên hình vuông ban đầu có cạnh bằng $x\\text{ (m)}$ ($x > 2$). Ban quản lý làm một đường đi dạo lát sỏi bao quanh bên ngoài có bề rộng $2\\text{ m}$, tạo thành một khu đất hình vuông lớn hơn có cạnh là $x + 4\\text{ (m)}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Diện tích khu công viên hình vuông ban đầu là $x^2\\text{ (m}^2\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, diện tích hình vuông cạnh $x$ là $x^2\\text{ (m}^2\\text{)}$."
+        },
+        {
+          "id": "b",
+          "text": "Diện tích toàn bộ khu đất sau khi làm đường đi dạo là $(x + 4)^2\\text{ (m}^2\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì cạnh của khu đất mới là $x + 2 + 2 = x + 4\\text{ (m)}$."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích con đường đi dạo lát sỏi được biểu thị bởi đa thức $8x + 16\\text{ (m}^2\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, diện tích con đường là $(x + 4)^2 - x^2 = (x^2 + 8x + 16) - x^2 = 8x + 16\\text{ (m}^2\\text{)}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu công viên ban đầu có cạnh $x = 20\\text{ m}$ thì diện tích con đường lát sỏi là $160\\text{ m}^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, khi $x = 20$, diện tích con đường là $8(20) + 16 = 160 + 16 = 176\\text{ m}^2$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-8.6.1",
+      "badge": "Câu 1 (NB) - Hệ số của biến trong khai triển",
+      "prompt": "Hệ số của $x$ trong đa thức sau khi khai triển hằng đẳng thức $(x + 4)^2$ bằng bao nhiêu?",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8",
+        "tám"
+      ],
+      "explanation": "$(x + 4)^2 = x^2 + 2 \\cdot x \\cdot 4 + 4^2 = x^2 + 8x + 16$. Hệ số của $x$ là $8$."
+    },
+    {
+      "id": "ai-sa-8.6.2",
+      "badge": "Câu 2 (TH) - Tìm hệ số k trong hằng đẳng thức",
+      "prompt": "Cho đẳng thức $9x^2 + kxy + 4y^2 = (3x + 2y)^2$. Giá trị của hệ số $k$ bằng bao nhiêu?",
+      "correctAnswer": "12",
+      "acceptableAnswers": [
+        "12",
+        "mười hai"
+      ],
+      "explanation": "$(3x + 2y)^2 = (3x)^2 + 2 \\cdot (3x) \\cdot (2y) + (2y)^2 = 9x^2 + 12xy + 4y^2$. Suy ra $k = 12$."
+    },
+    {
+      "id": "ai-sa-8.6.3",
+      "badge": "Câu 3 (TH) - Tính nhanh giá trị biểu thức",
+      "prompt": "Tính nhanh giá trị của biểu thức $P = 102^2 - 4$ bằng hằng đẳng thức hiệu hai bình phương.",
+      "correctAnswer": "10400",
+      "acceptableAnswers": [
+        "10400",
+        "mười nghìn bốn trăm"
+      ],
+      "explanation": "$P = 102^2 - 2^2 = (102 - 2)(102 + 2) = 100 \\cdot 104 = 10400$."
+    },
+    {
+      "id": "ai-sa-8.6.4",
+      "badge": "Câu 4 (TH) - Tính giá trị đa thức đưa về bình phương",
+      "prompt": "Tính giá trị của biểu thức $M = x^2 - 8x + 16$ tại $x = 24$.",
+      "correctAnswer": "400",
+      "acceptableAnswers": [
+        "400",
+        "bốn trăm"
+      ],
+      "explanation": "$M = (x - 4)^2$. Tại $x = 24$: $M = (24 - 4)^2 = 20^2 = 400$."
+    },
+    {
+      "id": "ai-sa-8.6.5",
+      "badge": "Câu 5 (VD) - Tìm x bằng hằng đẳng thức",
+      "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x + 3)^2 - (x - 1)(x + 1) = 16$.",
+      "correctAnswer": "1",
+      "acceptableAnswers": [
+        "1",
+        "một"
+      ],
+      "explanation": "$(x^2 + 6x + 9) - (x^2 - 1) = 16 \\Leftrightarrow 6x + 10 = 16 \\Leftrightarrow 6x = 6 \\Leftrightarrow x = 1$."
+    },
+    {
+      "id": "ai-sa-8.6.6",
+      "badge": "Câu 6 (VD - Thực tế) - Tìm cạnh bồn hoa ban đầu",
+      "prompt": "Một bồn hoa hình vuông ban đầu có cạnh là $x\\text{ (m)}$. Người ta mở rộng mỗi phía thêm $1\\text{ m}$ để được bồn hoa mới hình vuông có cạnh là $x + 2\\text{ (m)}$. Biết diện tích phần đất mở rộng thêm bằng $20\\text{ m}^2$. Tính độ dài cạnh ban đầu $x$ của bồn hoa (theo đơn vị mét).",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "bốn",
+        "4m",
+        "4 m"
+      ],
+      "explanation": "Diện tích mở rộng thêm là: $(x + 2)^2 - x^2 = 4x + 4\\text{ (m}^2\\text{)}$.\nTheo bài ra: $4x + 4 = 20 \\Leftrightarrow 4x = 16 \\Leftrightarrow x = 4\\text{ (m)}$."
+    }
+  ]
+},
 };

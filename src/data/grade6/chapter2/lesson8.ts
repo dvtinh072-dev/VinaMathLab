@@ -2,15 +2,16 @@ import type { DetailedLessonData } from "@/data/allGradesLessonsData";
 
 /**
  * BÀI 8: QUAN HỆ CHIA HẾT VÀ TÍNH CHẤT - TOÁN 6
- * BỘ SÁCH: KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
+ * BỘ SÁCH: KẾT NỐI TRI THỨC VỚI CUỘC SỐNG (TẬP 1)
  * ID: t6-b8-quan-he-chia-het
+ * Đầy đủ: Lý thuyết + Video + 10 câu TN Cốt lõi + 10 câu TN Luyện thêm + 6 câu Đúng/Sai (24 ý) + 8 câu Trả lời ngắn
  */
 export const LESSON_8_DATA: DetailedLessonData = {
   id: "t6-b8-quan-he-chia-het",
   lessonNumber: 8,
   title: "Bài 8: Quan hệ chia hết và tính chất",
   bookChapter: "Chương II: Tính chia hết trong tập hợp các số tự nhiên",
-  scenarioTitle: "Tình huống: Chia đều phần quà và đóng gói sản phẩm",
+  scenarioTitle: "Tình huống: Chia đều phần quà và sắp xếp đội hình",
   scenarioFrames: [
     {
       id: 1,
@@ -40,7 +41,7 @@ export const LESSON_8_DATA: DetailedLessonData = {
         "Ký hiệu: $a$ chia hết cho $b$ viết là $a \\ \\vdots \\ b$. Nếu $a$ không chia hết cho $b$, ta ký hiệu là $a \\ \\not\\vdots \\ b$.",
         "Khi $a \\ \\vdots \\ b$, ta nói $a$ là **bội** của $b$, còn $b$ là **ước** của $a$.",
         "Tập hợp các ước của $a$ ký hiệu là $Ư(a)$. Tập hợp các bội của $b$ ký hiệu là $B(b)$.",
-        "Chú ý quan trọng:\n- Số $0$ là bội của mọi số tự nhiên khác $0$. Số $0$ không phải là ước của bất kì số tự nhiên nào.\n- Số $1$ là ước của mọi số tự nhiên. Số $1$ chỉ có đúng một ước là $1$.",
+        "Chú ý quan trọng:\n- Số $0$ là bội của mọi số tự nhiên khác $0$. Số $0$ không phải là ước của bất kì số tự nhiên nào.\n- Số $1$ là ước của mọi số tự nhiên. Số $1$ chỉ có đúng một ước là chính nó.",
       ],
       formula: "a = b \\cdot q \\ (b \\ne 0, q \\in \\mathbb{N}) \\implies a \\ \\vdots \\ b",
       exampleTitle: "Ví dụ 1 (Nhận biết quan hệ chia hết, ước và bội)",
@@ -140,7 +141,7 @@ export const LESSON_8_DATA: DetailedLessonData = {
   ],
   interactiveType: "divisibility",
 
-  // MỤC 1: 10 CÂU BÀI TẬP CỐT LÕI
+  // MỤC 1: 10 CÂU BÀI TẬP CỐT LÕI (PHẦN I - TRẮC NGHIỆM 4 LỰA CHỌN)
   quizQuestions: [
     {
       id: "t6-b8-q1",
@@ -378,7 +379,7 @@ export const LESSON_8_DATA: DetailedLessonData = {
         "$6$",
       ],
       correctIndex: 0,
-      explanation: "Các bội của $6$ không vượt quá $60$ là: $0; 6; 12; 18; 24; 30; 36; 42; 48; 54; 60$. Trong các số này, những số là ước của $60$ (khác 0 và chia hết cho 60) gồm: $6; 12; 30; 60$. Như vậy có tất cả $4$ số thỏa mãn.",
+      explanation: "Các bội của $6$ không vượt quá $60$ là: $0; 6; 12; 18; 24; 30; 36; 42; 48; 54; 60$. Trong các số này, những số là ước của $60$ (khác 0 và là ước của 60) gồm: $6; 12; 30; 60$. Như vậy có tất cả $4$ số thỏa mãn.",
     },
     {
       id: "t6-b8-p9",
@@ -408,7 +409,7 @@ export const LESSON_8_DATA: DetailedLessonData = {
     },
   ],
 
-  // MỤC 3: 4 CÂU ĐÚNG/SAI CHUẨN BỘ GD&ĐT
+  // MỤC 3: 6 CÂU ĐÚNG/SAI CHUẨN BỘ GD&ĐT (TỔNG CỘNG 24 Ý)
   trueFalseQuestions: [
     {
       id: "t6-b8-tf1",
@@ -528,15 +529,77 @@ export const LESSON_8_DATA: DetailedLessonData = {
         },
         {
           id: "d",
-          text: "Nếu tích $a \\cdot b$ chia hết cho $7$ thì chắc chắn có ít nhất một trong hai thừa số $a$ hoặc $b$ chia hết cho $7$.",
+          text: "Nếu trong một tích có một thừa số chia hết cho $7$ thì cả tích đó chia hết cho $7$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $7$ là số nguyên tố, nếu tích chia hết cho $7$ thì ít nhất một thừa số phải chia hết cho $7$.",
+          explanation: "Đúng, theo tính chất chia hết của một tích.",
+        },
+      ],
+    },
+    {
+      id: "t6-b8-tf5",
+      badge: "Câu hỏi Đúng/Sai 5",
+      prompt: "Trong một đợt quyên góp sách vở ủng hộ thư viện, lớp 6A gom được 48 quyển vở, 72 chiếc bút chì và 36 cục tẩy. Cô giáo dự định chia đều số đồ dùng trên vào các túi quà sao cho mỗi túi có số lượng mỗi loại đồ dùng như nhau. Xét tính đúng hoặc sai của các khẳng định sau:",
+      subItems: [
+        {
+          id: "a",
+          text: "Cô giáo có thể chia đều số đồ dùng trên vào đúng $6$ túi quà.",
+          correctAnswer: true,
+          explanation: "Đúng, vì $48 \\ \\vdots \\ 6$, $72 \\ \\vdots \\ 6$ và $36 \\ \\vdots \\ 6$.",
+        },
+        {
+          id: "b",
+          text: "Cô giáo có thể chia đều số đồ dùng trên vào đúng $8$ túi quà.",
+          correctAnswer: false,
+          explanation: "Sai, vì $36$ không chia hết cho $8$ ($36 = 8 \\cdot 4 + 4$) nên không thể chia đều số tẩy vào $8$ túi.",
+        },
+        {
+          id: "c",
+          text: "Số túi quà cô giáo có thể chia được phải là ước chung của $48, 72$ và $36$.",
+          correctAnswer: true,
+          explanation: "Đúng, để mỗi túi có số đồ dùng như nhau và không dư thì số túi phải là ước của từng số $48, 72, 36$.",
+        },
+        {
+          id: "d",
+          text: "Nếu chia thành $12$ túi quà thì mỗi túi sẽ có đúng $4$ quyển vở, $6$ chiếc bút chì và $3$ cục tẩy.",
+          correctAnswer: true,
+          explanation: "Đúng, vì $48 : 12 = 4$, $72 : 12 = 6$ và $36 : 12 = 3$.",
+        },
+      ],
+    },
+    {
+      id: "t6-b8-tf6",
+      badge: "Câu hỏi Đúng/Sai 6",
+      prompt: "Xét tính đúng hoặc sai của các khẳng định số học nâng cao sau:",
+      subItems: [
+        {
+          id: "a",
+          text: "Tích của ba số tự nhiên liên tiếp luôn chia hết cho $3$.",
+          correctAnswer: true,
+          explanation: "Đúng, vì trong ba số tự nhiên liên tiếp luôn có đúng một số chia hết cho $3$, do đó tích luôn chia hết cho $3$.",
+        },
+        {
+          id: "b",
+          text: "Nếu $(n + 6)$ chia hết cho $n$ với $n \\in \\mathbb{N}^*$ thì $n$ phải là ước của $6$.",
+          correctAnswer: true,
+          explanation: "Đúng, vì $n \\ \\vdots \\ n$, để $(n + 6) \\ \\vdots \\ n$ thì theo tính chất chia hết của tổng, $6$ phải chia hết cho $n$, tức $n \\in Ư(6)$.",
+        },
+        {
+          id: "c",
+          text: "Nếu số tự nhiên $a$ chia hết cho $2$ và chia hết cho $3$ thì $a$ luôn chia hết cho $6$.",
+          correctAnswer: true,
+          explanation: "Đúng, vì $2$ và $3$ là hai số nguyên tố cùng nhau, một số vừa chia hết cho $2$ vừa chia hết cho $3$ thì sẽ chia hết cho $2 \\cdot 3 = 6$.",
+        },
+        {
+          id: "d",
+          text: "Nếu tổng $(a + b)$ chia hết cho $4$ và $a$ chia cho $4$ dư $1$ thì $b$ chia cho $4$ dư $1$.",
+          correctAnswer: false,
+          explanation: "Sai, vì nếu $a$ chia $4$ dư $1$ thì $b$ phải chia $4$ dư $3$ để tổng hai số dư là $1 + 3 = 4 \\ \\vdots \\ 4$.",
         },
       ],
     },
   ],
 
-  // MỤC 4: 6 CÂU TRẢ LỜI NGẮN
+  // MỤC 4: 8 CÂU TRẢ LỜI NGẮN (PHẦN III - ĐIỀN ĐÁP SỐ CHÍNH XÁC)
   shortAnswerQuestions: [
     {
       id: "t6-b8-sa1",
@@ -585,6 +648,22 @@ export const LESSON_8_DATA: DetailedLessonData = {
       correctAnswer: "0",
       acceptableAnswers: ["0", "dư 0"],
       explanation: "Số tự nhiên $n$ chia cho $15$ dư $9$ nên $n = 15k + 9 = 3 \\cdot (5k + 3)$ với $k \\in \\mathbb{N}$. Vì $n$ chia hết cho $3$ nên số dư của phép chia $n$ cho $3$ bằng $0$.",
+    },
+    {
+      id: "t6-b8-sa7",
+      badge: "Trả lời ngắn 7",
+      prompt: "Có bao nhiêu số tự nhiên có hai chữ số vừa là bội của $4$ vừa là bội của $6$?",
+      correctAnswer: "8",
+      acceptableAnswers: ["8", "8 số"],
+      explanation: "Một số vừa là bội của $4$ vừa là bội của $6$ thì số đó là bội của $12$. Các số có hai chữ số là bội của $12$ gồm: $12; 24; 36; 48; 60; 72; 84; 96$. Có tất cả $(96 - 12) : 12 + 1 = 8$ số.",
+    },
+    {
+      id: "t6-b8-sa8",
+      badge: "Trả lời ngắn 8",
+      prompt: "Một trường học có số học sinh khối 6 khi xếp thành $12$ hàng hoặc $15$ hàng đều vừa đủ không thừa bạn nào. Biết số học sinh trong khoảng từ $150$ đến $200$ em. Hãy tính số học sinh khối 6 của trường đó.",
+      correctAnswer: "180",
+      acceptableAnswers: ["180", "180 em", "180 học sinh"],
+      explanation: "Gọi số học sinh là $a$ ($a \\in \\mathbb{N}, 150 \\le a \\le 200$). Vì $a \\ \\vdots \\ 12$ và $a \\ \\vdots \\ 15$ nên $a$ là bội chung của $12$ và $15$, tức $a$ là bội của $60$. Các bội của $60$ là: $0; 60; 120; 180; 240; \\dots$ Số tự nhiên duy nhất thỏa mãn $150 \\le a \\le 200$ là $180$. Vậy trường có $180$ học sinh khối 6.",
     },
   ],
 };

@@ -400,13 +400,14 @@ function generateSimilarAiQuestions(lessonId: string, lessonTitle: string, baseQ
     }));
   }
 
-  const directData =
+  const directDataRaw =
     GRADE_6_AI_PRACTICE_DATA[lessonId] ||
     GRADE_6_AI_PRACTICE_DATA[id] ||
     GRADE_7_AI_PRACTICE_DATA[lessonId] ||
     GRADE_7_AI_PRACTICE_DATA[id];
+  const directData = Array.isArray(directDataRaw) ? directDataRaw : (directDataRaw as any)?.quizQuestions || [];
   if (directData && directData.length > 0) {
-    return directData.map((q, idx) => ({
+    return directData.map((q: any, idx: number) => ({
       ...q,
       id: `${q.id}-${ts}-${idx}`,
       isAiGenerated: true,
@@ -1083,6 +1084,8 @@ export function GamifiedMathQuiz({
          GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.trueFalseQuestions ||
          (GRADE_9_AI_PRACTICE_DATA[lessonId || ""] as any)?.trueFalseQuestions ||
          (GRADE_8_AI_PRACTICE_DATA[lessonId || ""] as any)?.trueFalseQuestions ||
+         (GRADE_7_AI_PRACTICE_DATA[lessonId || ""] as any)?.trueFalseQuestions ||
+         (GRADE_6_AI_PRACTICE_DATA[lessonId || ""] as any)?.trueFalseQuestions ||
          [])
       : [];
   }, [activeExam, lessonId]);
@@ -1131,6 +1134,8 @@ export function GamifiedMathQuiz({
          GRADE_10_AI_PRACTICE_DATA[lessonId || ""]?.shortAnswerQuestions ||
          (GRADE_9_AI_PRACTICE_DATA[lessonId || ""] as any)?.shortAnswerQuestions ||
          (GRADE_8_AI_PRACTICE_DATA[lessonId || ""] as any)?.shortAnswerQuestions ||
+         (GRADE_7_AI_PRACTICE_DATA[lessonId || ""] as any)?.shortAnswerQuestions ||
+         (GRADE_6_AI_PRACTICE_DATA[lessonId || ""] as any)?.shortAnswerQuestions ||
          [])
       : [];
   }, [activeExam, lessonId]);

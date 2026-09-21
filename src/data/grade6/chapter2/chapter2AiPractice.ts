@@ -1,4 +1,4 @@
-import { QuizQuestion } from "@/data/allGradesLessonsData";
+import type { QuizQuestion } from "@/data/allGradesLessonsData";
 import { LESSON_8_DATA } from "./lesson8";
 import { LESSON_9_DATA } from "./lesson9";
 import { LESSON_10_DATA } from "./lesson10";

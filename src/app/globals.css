@@ -156,16 +156,19 @@
 }
 
 .inline-math-item {
-  display: inline-block;
+  display: inline !important;
   white-space: nowrap !important;
-  vertical-align: middle;
+  vertical-align: baseline !important;
   color: #fcd34d !important;
 }
 
 .inline-math-item .katex {
+  display: inline !important;
   white-space: nowrap !important;
   color: #fcd34d !important;
-  font-size: 1.15em !important;
+  font-size: 1.05em !important;
+  vertical-align: baseline !important;
+  line-height: inherit;
 }
 
 .inline-math-item .katex-html {

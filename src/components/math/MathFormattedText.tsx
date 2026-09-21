@@ -270,7 +270,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           return rawTable.replace(/\$([^\$\n]+?)\$/g, (_, math) => {
             try {
               const normalizedMath = normalizeVectorNotation(math);
-              return `<span class="inline-math-item inline-block whitespace-nowrap mx-0.5 align-middle text-amber-300 font-semibold">${katex.renderToString(
+              return `<span class="inline-math-item inline whitespace-nowrap mx-0.5 align-baseline text-amber-300 font-semibold">${katex.renderToString(
                 normalizedMath,
                 { displayMode: false, throwOnError: false, strict: false }
               )}</span>`;
@@ -300,7 +300,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
           const hasPunctuationAfter = /^[.,;:?!)]/.test(nextPart.trimStart());
           const mrClass = hasPunctuationAfter ? "mr-0" : "mr-0.5";
           try {
-            return `<span class="inline-math-item inline-block whitespace-nowrap ml-0.5 ${mrClass} align-middle text-amber-300 font-semibold">${katex.renderToString(
+            return `<span class="inline-math-item inline whitespace-nowrap ml-0.5 ${mrClass} align-baseline text-amber-300 font-semibold">${katex.renderToString(
               content,
               {
                 displayMode: false,
@@ -310,7 +310,7 @@ export function MathFormattedText({ text, className = "" }: MathFormattedTextPro
             )}</span>`;
           } catch {
             // Fallback an toàn khi KaTeX parse không thành công
-            return `<span class="inline-block whitespace-nowrap text-amber-300 font-bold">${content}</span>`;
+            return `<span class="inline whitespace-nowrap align-baseline text-amber-300 font-bold">${content}</span>`;
           }
         }
 

@@ -3504,4 +3504,660 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t8-b6-binh-phuong-tong-hieu": {
+  "id": "t8-b6-binh-phuong-tong-hieu",
+  "lessonNumber": 6,
+  "title": "Bài 6: Hiệu hai bình phương. Bình phương của một tổng hay một hiệu",
+  "bookChapter": "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng",
+  "scenarioTitle": "Tình huống: Tính nhanh diện tích mảnh đất mở rộng và phần cắt bớt hình vuông",
+  "scenarioFrames": [
+    {
+      "id": 1,
+      "character": "student",
+      "characterName": "Bạn An",
+      "avatar": "🧑‍🎓",
+      "speech": "Thưa Thầy Tính, bác Nam có một mảnh vườn hình vuông cạnh x mét. Bác muốn mở rộng vườn thành hình vuông có cạnh là x + 3 mét, rồi cắt bớt một góc hình vuông nhỏ có cạnh 3 mét. Bác tính diện tích còn lại bằng cách tính (x + 3)² - 3² nhưng phải nhân rất lâu. Thầy có công thức nào tính nhanh được không ạ?",
+      "visualGraphic": "box",
+      "mathNote": "S = (x + 3)^2 - 3^2"
+    },
+    {
+      "id": 2,
+      "character": "teacher",
+      "characterName": "Thầy Tính (VinaMath)",
+      "avatar": "👨‍🏫",
+      "speech": "Chào An! Đây chính là ứng dụng tuyệt vời của các hằng đẳng thức đáng nhớ: (A + B)² = A² + 2AB + B² và A² - B² = (A - B)(A + B). Áp dụng hiệu hai bình phương, ta có ngay: (x + 3)² - 3² = [(x + 3) - 3][(x + 3) + 3] = x(x + 6) = x² + 6x mét vuông! Rất nhanh và đẹp mắt. Thầy trò ta cùng khám phá 3 hằng đẳng thức bậc hai này nhé!",
+      "visualGraphic": "graph",
+      "mathNote": "A^2 - B^2 = (A - B)(A + B)"
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Hiệu hai bình phương",
+      "points": [
+        "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Hiệu hai bình phương:",
+        "  $A^2 - B^2 = (A - B)(A + B)$",
+        "Chiều biến đổi:",
+        "  • Biến đổi tích thành hiệu hai bình phương: $(A - B)(A + B) = A^2 - B^2$.",
+        "  • Biến đổi hiệu hai bình phương thành tích: $A^2 - B^2 = (A - B)(A + B)$.",
+        "Ứng dụng tính nhanh:",
+        "  • $101^2 - 1 = (101 - 1)(101 + 1) = 100 \\cdot 102 = 10200$.",
+        "  • $52 \\cdot 48 = (50 + 2)(50 - 2) = 50^2 - 2^2 = 2500 - 4 = 2496$."
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 30)",
+      "exampleProblem": "a) Khai triển: $(x - 3)(x + 3)$ và $(2x - y)(2x + y)$.\nb) Viết dưới dạng tích: $x^2 - 16$ và $9x^2 - 4y^2$.",
+      "exampleSolution": "a) Áp dụng $(A - B)(A + B) = A^2 - B^2$:\n• $(x - 3)(x + 3) = x^2 - 3^2 = x^2 - 9$.\n• $(2x - y)(2x + y) = (2x)^2 - y^2 = 4x^2 - y^2$.\n\nb) Áp dụng $A^2 - B^2 = (A - B)(A + B)$:\n• $x^2 - 16 = x^2 - 4^2 = (x - 4)(x + 4)$.\n• $9x^2 - 4y^2 = (3x)^2 - (2y)^2 = (3x - 2y)(3x + 2y)$."
+    },
+    {
+      "index": "2",
+      "title": "Bình phương của một tổng",
+      "points": [
+        "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Bình phương của một tổng:",
+        "  $(A + B)^2 = A^2 + 2AB + B^2$",
+        "Ý nghĩa hình học: Diện tích hình vuông cạnh $a + b$ bằng tổng diện tích hai hình vuông nhỏ (cạnh $a$ và $b$) cùng với hai hình chữ nhật (kích thước $a \\times b$).",
+        "Lưu ý quan trọng: $(A + B)^2 \\ne A^2 + B^2$ (học sinh rất hay quên số hạng hai lần tích $2AB$).",
+        "Ứng dụng tính nhẩm bình phương:",
+        "  • $51^2 = (50 + 1)^2 = 50^2 + 2 \\cdot 50 \\cdot 1 + 1^2 = 2500 + 100 + 1 = 2601$."
+      ],
+      "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 31)",
+      "exampleProblem": "a) Khai triển $(x + 2)^2$ và $(2x + 3y)^2$.\nb) Viết đa thức sau thành bình phương của một tổng: $x^2 + 6x + 9$ và $4x^2 + 4x + 1$.",
+      "exampleSolution": "a) Khai triển:\n• $(x + 2)^2 = x^2 + 2 \\cdot x \\cdot 2 + 2^2 = x^2 + 4x + 4$.\n• $(2x + 3y)^2 = (2x)^2 + 2 \\cdot (2x) \\cdot (3y) + (3y)^2 = 4x^2 + 12xy + 9y^2$.\n\nb) Biến đổi ngược lại:\n• $x^2 + 6x + 9 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = (x + 3)^2$.\n• $4x^2 + 4x + 1 = (2x)^2 + 2 \\cdot (2x) \\cdot 1 + 1^2 = (2x + 1)^2$."
+    },
+    {
+      "index": "3",
+      "title": "Bình phương của một hiệu",
+      "points": [
+        "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Bình phương của một hiệu:",
+        "  $(A - B)^2 = A^2 - 2AB + B^2$",
+        "Lưu ý quan trọng:",
+        "  • Số hạng cuối cùng luôn mang dấu cộng $+B^2$, không phải $-B^2$.",
+        "  • Hai số đối nhau có bình phương bằng nhau: $(A - B)^2 = (B - A)^2$.",
+        "  • $(-A - B)^2 = [-(A + B)]^2 = (A + B)^2$.",
+        "Ứng dụng tính nhẩm bình phương:",
+        "  • $49^2 = (50 - 1)^2 = 50^2 - 2 \\cdot 50 \\cdot 1 + 1^2 = 2500 - 100 + 1 = 2401$."
+      ],
+      "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 32)",
+      "exampleProblem": "a) Khai triển $(x - 5)^2$ và $(3x - 2y)^2$.\nb) Viết đa thức sau thành bình phương của một hiệu: $x^2 - 8x + 16$ và $9x^2 - 6xy + y^2$.",
+      "exampleSolution": "a) Khai triển:\n• $(x - 5)^2 = x^2 - 2 \\cdot x \\cdot 5 + 5^2 = x^2 - 10x + 25$.\n• $(3x - 2y)^2 = (3x)^2 - 2 \\cdot (3x) \\cdot (2y) + (2y)^2 = 9x^2 - 12xy + 4y^2$.\n\nb) Biến đổi ngược lại:\n• $x^2 - 8x + 16 = x^2 - 2 \\cdot x \\cdot 4 + 4^2 = (x - 4)^2$.\n• $9x^2 - 6xy + y^2 = (3x)^2 - 2 \\cdot (3x) \\cdot y + y^2 = (3x - y)^2$."
+    },
+    {
+      "index": "4",
+      "title": "Rút gọn biểu thức và ứng dụng thực tế",
+      "points": [
+        "Kỹ thuật rút gọn biểu thức bằng hằng đẳng thức:",
+        "  • Phối hợp khai triển và thu gọn các hạng tử đồng dạng.",
+        "  • Nhận dạng nhanh hiệu hai bình phương để rút gọn: $(A + B)^2 - (A - B)^2 = 4AB$.",
+        "Ứng dụng tìm $x$ và tính giá trị biểu thức:",
+        "  • Thu gọn biểu thức về dạng đơn giản trước khi thay số.",
+        "Ứng dụng hình học:",
+        "  • Tính diện tích hình vuông khi mở rộng cạnh, tính diện tích đường đi bao quanh."
+      ],
+      "exampleTitle": "Ví dụ 4 (Bài toán thực tế)",
+      "exampleProblem": "Một sân chơi hình vuông ban đầu có cạnh bằng $x\\text{ (m)}$. Người ta mở rộng mỗi phía thêm $1\\text{ m}$ tạo thành sân chơi mới hình vuông có cạnh $x + 2\\text{ (m)}$.\na) Viết biểu thức tính diện tích phần mở rộng thêm.\nb) Tính diện tích mở rộng thêm khi $x = 10\\text{ m}$.",
+      "exampleSolution": "a) Diện tích sân ban đầu là $x^2\\text{ (m}^2\\text{)}$. Diện tích sân sau khi mở rộng là $(x + 2)^2\\text{ (m}^2\\text{)}$.\nDiện tích phần mở rộng thêm là:\n$S = (x + 2)^2 - x^2 = (x^2 + 4x + 4) - x^2 = 4x + 4\\text{ (m}^2\\text{)}$.\nb) Khi $x = 10\\text{ m}$:\n$S = 4(10) + 4 = 40 + 4 = 44\\text{ (m}^2\\text{)}$."
+    }
+  ],
+  "youtubeVideos": [
+    {
+      "id": "t8_b6_video1",
+      "title": "Tiết 1: Hiệu hai bình phương và ứng dụng tính nhanh"
+    },
+    {
+      "id": "t8_b6_video2",
+      "title": "Tiết 2: Bình phương của một tổng, một hiệu và bài toán thực tế"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-8.6.1",
+      "timeSeconds": 135,
+      "timeLabel": "02:15",
+      "title": "Ví dụ 1: Khai triển hiệu hai bình phương",
+      "question": "Khai triển biểu thức $(x - 4)(x + 4)$ ta được:",
+      "options": [
+        "$x^2 - 16$",
+        "$x^2 - 8$",
+        "$x^2 + 16$",
+        "$x^2 - 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng $(A - B)(A + B) = A^2 - B^2$, ta có: $(x - 4)(x + 4) = x^2 - 4^2 = x^2 - 16$."
+    },
+    {
+      "id": "vq-8.6.2",
+      "timeSeconds": 330,
+      "timeLabel": "05:30",
+      "title": "Ví dụ 2: Khai triển bình phương một tổng",
+      "question": "Khai triển biểu thức $(x + 3)^2$ ta được:",
+      "options": [
+        "$x^2 + 6x + 9$",
+        "$x^2 + 9$",
+        "$x^2 + 3x + 9$",
+        "$x^2 + 6x + 6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng $(A + B)^2 = A^2 + 2AB + B^2$, ta có: $(x + 3)^2 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$."
+    },
+    {
+      "id": "vq-8.6.3",
+      "timeSeconds": 180,
+      "timeLabel": "03:00",
+      "title": "Ví dụ 3: Khai triển bình phương một hiệu",
+      "question": "Khai triển biểu thức $(2x - 1)^2$ ta được:",
+      "options": [
+        "$4x^2 - 4x + 1$",
+        "$4x^2 - 1$",
+        "$4x^2 - 2x + 1$",
+        "$2x^2 - 4x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2x - 1)^2 = (2x)^2 - 2 \\cdot (2x) \\cdot 1 + 1^2 = 4x^2 - 4x + 1$."
+    },
+    {
+      "id": "vq-8.6.4",
+      "timeSeconds": 435,
+      "timeLabel": "07:15",
+      "title": "Ví dụ 4: Tính nhanh bằng hằng đẳng thức",
+      "question": "Tính nhanh giá trị $51^2$ ta được:",
+      "options": [
+        "$2601$",
+        "$2501$",
+        "$2600$",
+        "$2701$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$51^2 = (50 + 1)^2 = 50^2 + 2 \\cdot 50 \\cdot 1 + 1^2 = 2500 + 100 + 1 = 2601$."
+    }
+  ],
+  "tips": [
+    "Thuộc làu câu thần chú: 'Bình phương số thứ nhất, cộng (hoặc trừ) hai lần tích hai số, cộng bình phương số thứ hai'.",
+    "Đặt trong ngoặc khi hệ số khác 1: Khi lấy bình phương đơn thức chứa hệ số, bắt buộc dùng ngoặc: $(2x)^2 = 4x^2$, $(3y)^2 = 9y^2$, tránh viết nhầm thành $2x^2$ hay $3y^2$.",
+    "Mẹo đổi dấu bình phương hiệu: $(A - B)^2 = (B - A)^2$. Ví dụ: $(1 - x)^2 = (x - 1)^2$, cực kỳ hữu ích khi quy đồng hoặc rút gọn.",
+    "Tính nhẩm nhanh với số gần tròn chục: Đưa về $(a \\pm 1)^2$ hoặc $(a - b)(a + b)$. Ví dụ: $51^2 = (50+1)^2 = 2601$, $52 \\cdot 48 = 50^2 - 2^2 = 2496$."
+  ],
+  "traps": [
+    "Bẫy quên hai lần tích: Nhầm $(x + y)^2 = x^2 + y^2$ hoặc $(x - y)^2 = x^2 - y^2$. Đây là lỗi sai phổ biến nhất của học sinh lớp 8!",
+    "Bẫy quên bình phương hệ số: Viết $(3x)^2 = 3x^2$ thay vì $(3x)^2 = 9x^2$.",
+    "Bẫy dấu số hạng cuối trong bình phương hiệu: Viết $(A - B)^2 = A^2 - 2AB - B^2$ (số hạng cuối cùng luôn luôn mang dấu cộng $+B^2$).",
+    "Bẫy dấu ngoặc khi rút gọn: Khi gặp dấu trừ trước biểu thức hằng đẳng thức, ví dụ $-(x - 2)^2$, phải khai triển trong ngoặc trước: $-(x^2 - 4x + 4) = -x^2 + 4x - 4$."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-8.6.1",
+      "badge": "Câu 1 (NB) - Công thức hiệu hai bình phương",
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Công thức hiệu hai bình phương của hai biểu thức $A, B$ là:",
+      "options": [
+        "$A^2 - B^2 = (A - B)(A + B)$",
+        "$A^2 - B^2 = (A - B)^2$",
+        "$A^2 - B^2 = A^2 - 2AB + B^2$",
+        "$A^2 - B^2 = (A + B)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hằng đẳng thức hiệu hai bình phương: $A^2 - B^2 = (A - B)(A + B)$."
+    },
+    {
+      "id": "quiz-8.6.2",
+      "badge": "Câu 2 (NB) - Công thức bình phương của một tổng",
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Công thức bình phương của một tổng hai biểu thức $A, B$ là:",
+      "options": [
+        "$(A + B)^2 = A^2 + 2AB + B^2$",
+        "$(A + B)^2 = A^2 + B^2$",
+        "$(A + B)^2 = A^2 + AB + B^2$",
+        "$(A + B)^2 = A^2 - 2AB + B^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hằng đẳng thức bình phương của một tổng: $(A + B)^2 = A^2 + 2AB + B^2$."
+    },
+    {
+      "id": "quiz-8.6.3",
+      "badge": "Câu 3 (NB) - Công thức bình phương của một hiệu",
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Công thức bình phương của một hiệu hai biểu thức $A, B$ là:",
+      "options": [
+        "$(A - B)^2 = A^2 - 2AB + B^2$",
+        "$(A - B)^2 = A^2 - B^2$",
+        "$(A - B)^2 = A^2 - 2AB - B^2$",
+        "$(A - B)^2 = A^2 - AB + B^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hằng đẳng thức bình phương của một hiệu: $(A - B)^2 = A^2 - 2AB + B^2$."
+    },
+    {
+      "id": "quiz-8.6.4",
+      "badge": "Câu 4 (NB) - Khai triển hiệu hai bình phương",
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Khai triển tích $(x - 2)(x + 2)$ ta được kết quả là:",
+      "options": [
+        "$x^2 - 4$",
+        "$x^2 - 2$",
+        "$x^2 + 4$",
+        "$x^2 - 4x + 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng $(A - B)(A + B) = A^2 - B^2$: $(x - 2)(x + 2) = x^2 - 2^2 = x^2 - 4$."
+    },
+    {
+      "id": "quiz-8.6.5",
+      "badge": "Câu 5 (NB) - Khai triển bình phương một tổng",
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Khai triển hằng đẳng thức $(x + 1)^2$ ta được kết quả là:",
+      "options": [
+        "$x^2 + 2x + 1$",
+        "$x^2 + 1$",
+        "$x^2 + x + 1$",
+        "$x^2 + 4x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 1)^2 = x^2 + 2 \\cdot x \\cdot 1 + 1^2 = x^2 + 2x + 1$."
+    },
+    {
+      "id": "quiz-8.6.6",
+      "badge": "Câu 6 (NB) - Khai triển bình phương một hiệu",
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Khai triển hằng đẳng thức $(x - 3)^2$ ta được kết quả là:",
+      "options": [
+        "$x^2 - 6x + 9$",
+        "$x^2 - 9$",
+        "$x^2 - 3x + 9$",
+        "$x^2 - 6x - 9$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 3)^2 = x^2 - 2 \\cdot x \\cdot 3 + 3^2 = x^2 - 6x + 9$."
+    },
+    {
+      "id": "quiz-8.6.7",
+      "badge": "Câu 7 (NB) - Viết đa thức dưới dạng tích",
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Viết đa thức $x^2 - 9$ dưới dạng tích của hai đa thức ta được:",
+      "options": [
+        "$(x - 3)(x + 3)$",
+        "$(x - 9)(x + 9)$",
+        "$(x - 3)^2$",
+        "$(x + 3)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 9 = x^2 - 3^2 = (x - 3)(x + 3)$."
+    },
+    {
+      "id": "quiz-8.6.8",
+      "badge": "Câu 8 (NB) - Viết thành bình phương một tổng",
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Đa thức $x^2 + 4x + 4$ được viết dưới dạng bình phương của một tổng là:",
+      "options": [
+        "$(x + 2)^2$",
+        "$(x + 4)^2$",
+        "$(x + 1)^2$",
+        "$(2x + 1)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 + 4x + 4 = x^2 + 2 \\cdot x \\cdot 2 + 2^2 = (x + 2)^2$."
+    },
+    {
+      "id": "quiz-8.6.9",
+      "badge": "Câu 9 (NB) - Viết thành bình phương một hiệu",
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Đa thức $x^2 - 2x + 1$ được viết dưới dạng bình phương của một hiệu là:",
+      "options": [
+        "$(x - 1)^2$",
+        "$(x - 2)^2$",
+        "$(x + 1)^2$",
+        "$(1 - 2x)^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 2x + 1 = x^2 - 2 \\cdot x \\cdot 1 + 1^2 = (x - 1)^2$."
+    },
+    {
+      "id": "quiz-8.6.10",
+      "badge": "Câu 10 (NB) - Tính chất bình phương của hiệu",
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Với mọi số thực $x$, khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$(x - 5)^2 = (5 - x)^2$",
+        "$(x - 5)^2 = -(5 - x)^2$",
+        "$(x + 5)^2 = x^2 + 25$",
+        "$(x - 5)(x + 5) = x^2 - 10$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $(x - 5)$ và $(5 - x)$ là hai số đối nhau nên bình phương của chúng bằng nhau: $(x - 5)^2 = (5 - x)^2$."
+    },
+    {
+      "id": "quiz-8.6.11",
+      "badge": "Câu 11 (TH) - Khai triển bình phương tổng có hệ số",
+      "source": "SGK Toán 8 KNTT Trang 31",
+      "question": "Khai triển hằng đẳng thức $(2x + 1)^2$ ta được kết quả là:",
+      "options": [
+        "$4x^2 + 4x + 1$",
+        "$2x^2 + 4x + 1$",
+        "$4x^2 + 2x + 1$",
+        "$4x^2 + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2x + 1)^2 = (2x)^2 + 2 \\cdot (2x) \\cdot 1 + 1^2 = 4x^2 + 4x + 1$."
+    },
+    {
+      "id": "quiz-8.6.12",
+      "badge": "Câu 12 (TH) - Khai triển bình phương hiệu hai biến",
+      "source": "SGK Toán 8 KNTT Trang 32",
+      "question": "Khai triển hằng đẳng thức $(3x - 2y)^2$ ta được kết quả là:",
+      "options": [
+        "$9x^2 - 12xy + 4y^2$",
+        "$9x^2 - 6xy + 4y^2$",
+        "$9x^2 - 12xy - 4y^2$",
+        "$3x^2 - 12xy + 2y^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3x - 2y)^2 = (3x)^2 - 2 \\cdot (3x) \\cdot (2y) + (2y)^2 = 9x^2 - 12xy + 4y^2$."
+    },
+    {
+      "id": "quiz-8.6.13",
+      "badge": "Câu 13 (TH) - Khai triển hiệu hai bình phương hai biến",
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Khai triển tích $(2x - 3y)(2x + 3y)$ ta được kết quả là:",
+      "options": [
+        "$4x^2 - 9y^2$",
+        "$2x^2 - 3y^2$",
+        "$4x^2 + 9y^2$",
+        "$4x^2 - 6xy - 9y^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2x - 3y)(2x + 3y) = (2x)^2 - (3y)^2 = 4x^2 - 9y^2$."
+    },
+    {
+      "id": "quiz-8.6.14",
+      "badge": "Câu 14 (TH) - Điền đơn thức vào hằng đẳng thức",
+      "source": "Toán 8 KNTT Bài tập 2.3 Trang 33",
+      "question": "Điền đơn thức thích hợp vào chỗ chấm để biểu thức trở thành bình phương của một tổng: $x^2 + \\ldots + 9y^2 = (x + 3y)^2$.",
+      "options": [
+        "$6xy$",
+        "$3xy$",
+        "$12xy$",
+        "$9xy$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 3y)^2 = x^2 + 2 \\cdot x \\cdot (3y) + (3y)^2 = x^2 + 6xy + 9y^2$. Đơn thức cần điền là $6xy$."
+    },
+    {
+      "id": "quiz-8.6.15",
+      "badge": "Câu 15 (TH) - Tính nhanh giá trị bằng hiệu hai bình phương",
+      "source": "SGK Toán 8 KNTT Trang 30",
+      "question": "Tính nhanh giá trị của biểu thức $P = 101^2 - 1$ ta được:",
+      "options": [
+        "$10200$",
+        "$10100$",
+        "$10000$",
+        "$10020$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = 101^2 - 1^2 = (101 - 1)(101 + 1) = 100 \\cdot 102 = 10200$."
+    },
+    {
+      "id": "quiz-8.6.16",
+      "badge": "Câu 16 (TH) - Rút gọn biểu thức hằng đẳng thức",
+      "source": "Toán 8 KNTT Bài tập 2.4 Trang 33",
+      "question": "Rút gọn biểu thức $M = (x + 2)^2 - x(x + 4)$ ta được kết quả là:",
+      "options": [
+        "$4$",
+        "$4x + 4$",
+        "$8x + 4$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$M = (x^2 + 4x + 4) - (x^2 + 4x) = 4$."
+    },
+    {
+      "id": "quiz-8.6.17",
+      "badge": "Câu 17 (VD) - Rút gọn hiệu hai bình phương tổng",
+      "source": "Toán 8 KNTT Bài tập 2.5 Trang 33",
+      "question": "Rút gọn biểu thức $A = (x + 3)^2 - (x - 3)^2$ ta được kết quả là:",
+      "options": [
+        "$12x$",
+        "$6x$",
+        "$2x^2 + 18$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = (x^2 + 6x + 9) - (x^2 - 6x + 9) = 6x + 6x = 12x$ (hoặc dùng hiệu hai bình phương: $[(x+3)-(x-3)][(x+3)+(x-3)] = 6 \\cdot 2x = 12x$)."
+    },
+    {
+      "id": "quiz-8.6.18",
+      "badge": "Câu 18 (VD) - Tìm x bằng hằng đẳng thức",
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tìm giá trị của $x$ thỏa mãn đẳng thức: $(x + 2)^2 - x^2 = 12$.",
+      "options": [
+        "$x = 2$",
+        "$x = 3$",
+        "$x = 1$",
+        "$x = 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x^2 + 4x + 4) - x^2 = 12 \\Leftrightarrow 4x + 4 = 12 \\Leftrightarrow 4x = 8 \\Leftrightarrow x = 2$."
+    },
+    {
+      "id": "quiz-8.6.19",
+      "badge": "Câu 19 (VD) - Tính giá trị đa thức qua bình phương",
+      "source": "Toán 8 KNTT Bài tập 2.6 Trang 33",
+      "question": "Tính giá trị của biểu thức $Q = x^2 - 4xy + 4y^2$ tại $x = 18$ và $y = 4$.",
+      "options": [
+        "$100$",
+        "$64$",
+        "$144$",
+        "$10$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$Q = (x - 2y)^2$. Thay $x = 18, y = 4$ vào: $Q = (18 - 2 \\cdot 4)^2 = (18 - 8)^2 = 10^2 = 100$."
+    },
+    {
+      "id": "quiz-8.6.20",
+      "badge": "Câu 20 (VD - Thực tế) - Diện tích viền gạch sân phơi",
+      "source": "Toán 8 KNTT Ứng dụng thực tế",
+      "question": "Một sân phơi hình vuông có cạnh bằng $x\\text{ (m)}$. Người ta mở rộng sân phơi bằng cách lát thêm một dải viền gạch bao quanh có bề rộng $1\\text{ m}$, tạo thành một sân mới hình vuông có cạnh là $x + 2\\text{ (m)}$. Đa thức biểu thị diện tích dải viền gạch mới lát thêm là:",
+      "options": [
+        "$4x + 4\\text{ (m}^2\\text{)}$",
+        "$2x + 1\\text{ (m}^2\\text{)}$",
+        "$4x + 1\\text{ (m}^2\\text{)}$",
+        "$2x + 4\\text{ (m}^2\\text{)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích viền gạch là hiệu diện tích sân mới và sân cũ: $S = (x + 2)^2 - x^2 = x^2 + 4x + 4 - x^2 = 4x + 4\\text{ (m}^2\\text{)}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-8.6.1",
+      "badge": "Câu 1 (Đ/S) - Các hằng đẳng thức bậc hai cơ bản",
+      "prompt": "Cho $A, B$ là hai biểu thức đại số tùy ý. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$(A + B)^2 = A^2 + B^2$ với mọi biểu thức $A, B$.",
+          "correctAnswer": false,
+          "explanation": "Sai, công thức đúng là $(A + B)^2 = A^2 + 2AB + B^2$ (phải có số hạng hai lần tích $2AB$)."
+        },
+        {
+          "id": "b",
+          "text": "$A^2 - B^2 = (A - B)(A + B)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, đây là hằng đẳng thức hiệu hai bình phương."
+        },
+        {
+          "id": "c",
+          "text": "$(A - B)^2 = (B - A)^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì hai số đối nhau có bình phương bằng nhau."
+        },
+        {
+          "id": "d",
+          "text": "$(A - B)^2 = A^2 - 2AB - B^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, số hạng cuối cùng phải mang dấu cộng $+B^2$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.6.2",
+      "badge": "Câu 2 (Đ/S) - Khai triển và biến đổi thành bình phương",
+      "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$(2x + 3)^2 = 4x^2 + 12x + 9$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(2x)^2 + 2(2x)(3) + 3^2 = 4x^2 + 12x + 9$."
+        },
+        {
+          "id": "b",
+          "text": "$(3x - 1)^2 = 9x^2 - 3x + 1$.",
+          "correctAnswer": false,
+          "explanation": "Sai, hai lần tích là $2(3x)(1) = 6x$, khai triển đúng là $9x^2 - 6x + 1$."
+        },
+        {
+          "id": "c",
+          "text": "$x^2 - 16y^2 = (x - 4y)(x + 4y)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì $16y^2 = (4y)^2$ nên áp dụng hiệu hai bình phương được $(x - 4y)(x + 4y)$."
+        },
+        {
+          "id": "d",
+          "text": "$4x^2 - 4x + 1 = (2x - 1)^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(2x)^2 - 2(2x)(1) + 1^2 = (2x - 1)^2$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.6.3",
+      "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức và giải phương trình",
+      "prompt": "Cho biểu thức $P = (x + 1)^2 - (x - 1)^2$ và phương trình $(x + 3)^2 - x^2 = 21$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Rút gọn biểu thức $P$ ta được kết quả $P = 4x$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $P = (x^2 + 2x + 1) - (x^2 - 2x + 1) = 4x$."
+        },
+        {
+          "id": "b",
+          "text": "Giá trị của biểu thức $P$ tại $x = 5$ là $20$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, tại $x = 5$ thì $P = 4(5) = 20$."
+        },
+        {
+          "id": "c",
+          "text": "Phương trình $(x + 3)^2 - x^2 = 21$ sau khi thu gọn vế trái trở thành $6x + 9 = 21$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(x^2 + 6x + 9) - x^2 = 6x + 9$."
+        },
+        {
+          "id": "d",
+          "text": "Nghiệm của phương trình $(x + 3)^2 - x^2 = 21$ là $x = 3$.",
+          "correctAnswer": false,
+          "explanation": "Sai, $6x + 9 = 21 \\Leftrightarrow 6x = 12 \\Leftrightarrow x = 2$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.6.4",
+      "badge": "Câu 4 (Đ/S - Thực tế) - Diện tích mảnh vườn khi thay đổi kích thước",
+      "prompt": "Bác Hùng có một khu đất hình vuông cạnh $x\\text{ (m)}$ ($x > 3$). Bác dự định điều chỉnh khu đất: một cạnh tăng thêm $3\\text{ m}$, cạnh kia giảm đi $3\\text{ m}$ để trở thành khu đất hình chữ nhật mới. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Diện tích khu đất hình vuông ban đầu là $x^2\\text{ (m}^2\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, diện tích hình vuông cạnh $x$ là $x^2\\text{ (m}^2\\text{)}$."
+        },
+        {
+          "id": "b",
+          "text": "Kích thước của khu đất hình chữ nhật mới là $x + 3\\text{ (m)}$ và $x - 3\\text{ (m)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo dữ kiện bài toán."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích khu đất mới bằng $(x + 3)(x - 3) = x^2 - 9\\text{ (m}^2\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, áp dụng hằng đẳng thức hiệu hai bình phương."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích khu đất hình chữ nhật mới lớn hơn diện tích khu đất hình vuông ban đầu $9\\text{ m}^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, diện tích mới là $x^2 - 9\\text{ (m}^2\\text{)}$, nhỏ hơn diện tích cũ $x^2\\text{ (m}^2\\text{)}$ là $9\\text{ m}^2$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-8.6.1",
+      "badge": "Câu 1 (NB) - Hệ số tự do của khai triển",
+      "prompt": "Hệ số tự do trong khai triển hằng đẳng thức $(x + 5)^2$ bằng bao nhiêu?",
+      "correctAnswer": "25",
+      "acceptableAnswers": [
+        "25",
+        "hai mươi lăm"
+      ],
+      "explanation": "$(x + 5)^2 = x^2 + 10x + 25$. Hệ số tự do bằng $25$."
+    },
+    {
+      "id": "sa-8.6.2",
+      "badge": "Câu 2 (TH) - Tìm hằng số trong bình phương hiệu",
+      "prompt": "Cho đẳng thức $4x^2 - 12x + 9 = (2x - b)^2$ với $b > 0$. Giá trị của $b$ bằng bao nhiêu?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "ba"
+      ],
+      "explanation": "$4x^2 - 12x + 9 = (2x)^2 - 2 \\cdot (2x) \\cdot 3 + 3^2 = (2x - 3)^2$. Vậy $b = 3$."
+    },
+    {
+      "id": "sa-8.6.3",
+      "badge": "Câu 3 (TH) - Tính nhanh tích hai số bằng hằng đẳng thức",
+      "prompt": "Tính nhanh giá trị của tích $52 \\cdot 48$ bằng hằng đẳng thức hiệu hai bình phương.",
+      "correctAnswer": "2496",
+      "acceptableAnswers": [
+        "2496",
+        "hai nghìn bốn trăm chín mươi sáu"
+      ],
+      "explanation": "$52 \\cdot 48 = (50 + 2)(50 - 2) = 50^2 - 2^2 = 2500 - 4 = 2496$."
+    },
+    {
+      "id": "sa-8.6.4",
+      "badge": "Câu 4 (TH) - Tính giá trị đa thức đưa về bình phương",
+      "prompt": "Tính giá trị của biểu thức $P = x^2 + 6x + 9$ tại $x = 17$.",
+      "correctAnswer": "400",
+      "acceptableAnswers": [
+        "400",
+        "bốn trăm"
+      ],
+      "explanation": "$P = (x + 3)^2$. Tại $x = 17$: $P = (17 + 3)^2 = 20^2 = 400$."
+    },
+    {
+      "id": "sa-8.6.5",
+      "badge": "Câu 5 (VD) - Tìm x bằng hiệu hai bình phương",
+      "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x + 4)^2 - x^2 = 32$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "hai"
+      ],
+      "explanation": "$(x^2 + 8x + 16) - x^2 = 32 \\Leftrightarrow 8x + 16 = 32 \\Leftrightarrow 8x = 16 \\Leftrightarrow x = 2$."
+    },
+    {
+      "id": "sa-8.6.6",
+      "badge": "Câu 6 (VD - Thực tế) - Tìm kích thước phòng khách",
+      "prompt": "Một phòng khách hình vuông ban đầu có cạnh là $x\\text{ (m)}$. Khi sửa chữa, gia đình mở rộng đều mỗi chiều thêm $1\\text{ m}$ để được phòng khách hình vuông mới có cạnh là $x + 1\\text{ (m)}$. Biết diện tích phòng khách tăng thêm đúng $9\\text{ m}^2$. Tính cạnh ban đầu $x$ của phòng khách theo đơn vị mét.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "bốn",
+        "4m",
+        "4 m"
+      ],
+      "explanation": "Diện tích tăng thêm là: $(x + 1)^2 - x^2 = 2x + 1\\text{ (m}^2\\text{)}$.\nTheo bài ra: $2x + 1 = 9 \\Leftrightarrow 2x = 8 \\Leftrightarrow x = 4\\text{ (m)}$."
+    }
+  ]
+},
 };

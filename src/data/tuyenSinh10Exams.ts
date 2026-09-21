@@ -4,24 +4,24 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
   // =========================================================================
   // ĐỀ 1: ĐỀ THI TUYỂN SINH VÀO LỚP 10 THPT - TP. HÀ NỘI
   // NGUỒN CHÍNH THỨC: SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ NỘI
-  // NĂM HỌC: 2024 - 2025 (Khóa thi ngày 09/06/2024 & Định hướng GDPT 2018)
+  // NĂM HỌC: 2026 - 2027 (Chuẩn cấu trúc định dạng mới nhất Chương trình GDPT 2018)
   // HÌNH THỨC THI: 100% TỰ LUẬN (5 BÀI - TỔNG ĐIỂM: 10.0 ĐIỂM - THỜI GIAN: 120 PHÚT)
   // =========================================================================
   "ts10-hanoi-2026": {
     id: "ts10-hanoi-2026",
-    title: "Đề Thi Tuyển Sinh Vào Lớp 10 THPT - TP. Hà Nội (Năm học 2024 - 2025)",
+    title: "Đề Thi Tuyển Sinh Vào Lớp 10 THPT - TP. Hà Nội (Năm học 2026 - 2027)",
     grade: "lop-9",
     gradeNumber: 9,
     examType: "tuyen-sinh-10",
     category: "TUYEN_SINH_10",
-    subtitle: "Nguồn chính thức: Sở GD&ĐT Hà Nội (Khóa thi 2024-2025 & Chuẩn GDPT 2018) - 100% Tự luận (10.0 điểm / 120 phút)",
+    subtitle: "Nguồn chính thức: Sở GD&ĐT Hà Nội (Năm học 2026 - 2027 chuẩn GDPT 2018 mới nhất) - 100% Tự luận (10.0 điểm / 120 phút)",
     durationMinutes: 120,
     totalQuestions: 5,
     questions: [], // Đề thi Hà Nội là 100% Tự luận, không có phần trắc nghiệm
     essayPart: {
-      title: "ĐỀ THI TUYỂN SINH LỚP 10 THPT TP. HÀ NỘI (10.0 ĐIỂM TỰ LUẬN)",
+      title: "ĐỀ THI TUYỂN SINH LỚP 10 THPT TP. HÀ NỘI - NĂM HỌC 2026 - 2027 (10.0 ĐIỂM TỰ LUẬN)",
       totalPoints: 10.0,
-      description: "Nguồn chính thức: Sở GD&ĐT Hà Nội - Thời gian làm bài 120 phút. Thí sinh làm bài trực tiếp vào ô soạn thảo hoặc làm ra giấy thi rồi nộp ảnh chụp toàn bộ bài làm.",
+      description: "Nguồn chính thức: Sở Giáo dục và Đào tạo Hà Nội - Năm học 2026 - 2027 (Chuẩn GDPT 2018 mới nhất). Thời gian làm bài: 120 phút. Đề thi gồm 5 bài tự luận (10.0 điểm). Thí sinh làm bài trực tiếp vào ô soạn thảo hoặc làm ra giấy thi rồi nộp ảnh chụp toàn bộ bài làm.",
       questions: [
         {
           id: "hn-bai-1",
@@ -274,24 +274,24 @@ export const tuyenSinh10Exams: { [key: string]: ExamData } = {
   // =========================================================================
   // ĐỀ 2: ĐỀ THI TUYỂN SINH VÀO LỚP 10 THPT - TP. HỒ CHÍ MINH
   // NGUỒN CHÍNH THỨC: SỞ GIÁO DỤC VÀ ĐÀO TẠO TP. HỒ CHÍ MINH
-  // NĂM HỌC: 2024 - 2025 (Khóa thi ngày 07/06/2024 & Định hướng GDPT 2018)
+  // NĂM HỌC: 2026 - 2027 (Chuẩn cấu trúc định dạng mới nhất Chương trình GDPT 2018)
   // HÌNH THỨC THI: 100% TỰ LUẬN (ĐẶC TRƯNG TOÁN THỰC TẾ TP.HCM - 10.0 ĐIỂM - 120 PHÚT)
   // =========================================================================
   "ts10-tphcm-2026": {
     id: "ts10-tphcm-2026",
-    title: "Đề Thi Tuyển Sinh Vào Lớp 10 THPT - TP. Hồ Chí Minh (Năm học 2024 - 2025)",
+    title: "Đề Thi Tuyển Sinh Vào Lớp 10 THPT - TP. Hồ Chí Minh (Năm học 2026 - 2027)",
     grade: "lop-9",
     gradeNumber: 9,
     examType: "tuyen-sinh-10",
     category: "TUYEN_SINH_10",
-    subtitle: "Nguồn chính thức: Sở GD&ĐT TP.HCM (Khóa thi 2024-2025) - Đặc trưng Toán ứng dụng thực tế - 100% Tự luận (10.0 điểm / 120 phút)",
+    subtitle: "Nguồn chính thức: Sở GD&ĐT TP.HCM (Năm học 2026 - 2027 chuẩn GDPT 2018 mới nhất) - Đặc trưng Toán ứng dụng thực tế - 100% Tự luận (10.0 điểm / 120 phút)",
     durationMinutes: 120,
     totalQuestions: 6,
     questions: [], // Đề thi TP.HCM là 100% Tự luận
     essayPart: {
-      title: "ĐỀ THI TUYỂN SINH LỚP 10 THPT TP. HỒ CHÍ MINH (10.0 ĐIỂM TỰ LUẬN)",
+      title: "ĐỀ THI TUYỂN SINH LỚP 10 THPT TP. HỒ CHÍ MINH - NĂM HỌC 2026 - 2027 (10.0 ĐIỂM TỰ LUẬN)",
       totalPoints: 10.0,
-      description: "Nguồn chính thức: Sở GD&ĐT TP.HCM - Thời gian làm bài 120 phút. Đề thi gồm các bài toán ứng dụng thực tế đời sống đặc trưng cấu trúc thi vào 10 TP.HCM.",
+      description: "Nguồn chính thức: Sở Giáo dục và Đào tạo TP. Hồ Chí Minh - Năm học 2026 - 2027 (Chuẩn GDPT 2018 mới nhất). Thời gian làm bài 120 phút. Đề thi gồm 6 bài tự luận đặc trưng Toán ứng dụng thực tế đời sống. Thí sinh làm bài trực tiếp hoặc chụp ảnh bài làm nộp lên hệ thống.",
       questions: [
         {
           id: "hcm-bai-1",

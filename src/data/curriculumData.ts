@@ -532,6 +532,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t9-b8-khai-can-nhan-chia", lessonNumber: 8, title: "Bài 8: Khai căn bậc hai với phép nhân và phép chia", strand: "daiso", description: "Khai phương một tích, khai phương một thương.", keyFormulas: ["\\sqrt{AB} = \\sqrt{A}\\sqrt{B}, \\ \\sqrt{\\frac{A}{B}} = \\frac{\\sqrt{A}}{\\sqrt{B}}"] },
           { id: "t9-b9-bien-doi-rut-gon-can-thuc", lessonNumber: 9, title: "Bài 9: Biến đổi đơn giản và rút gọn biểu thức chứa căn thức bậc hai", strand: "daiso", description: "Đưa thừa số ra ngoài/vào trong dấu căn, khử mẫu, trục căn thức.", keyFormulas: ["\\sqrt{A^2B} = |A|\\sqrt{B}, \\ \\frac{1}{\\sqrt{A}+\\sqrt{B}} = \\frac{\\sqrt{A}-\\sqrt{B}}{A-B}"] },
           { id: "t9-b10-can-bac-ba", lessonNumber: 10, title: "Bài 10: Căn bậc ba và căn thức bậc ba", strand: "daiso", description: "Khái niệm căn bậc ba và các phép tính căn bậc ba.", keyFormulas: ["\\sqrt[3]{a} = x \\Leftrightarrow x^3 = a, \\ \\sqrt[3]{a^3} = a"] },
+          { id: "t9-on-tap-chuong-3", lessonNumber: 0, title: "Ôn tập cuối chương III", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Căn bậc hai, Căn bậc ba và Rút gọn biểu thức chứa căn với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\sqrt{A^2} = |A|", "\\sqrt{AB} = \\sqrt{A}\\sqrt{B}", "\\frac{A}{\\sqrt{B}} = \\frac{A\\sqrt{B}}{B}", "\\sqrt[3]{A^3} = A"] },
         ],
       },
       {

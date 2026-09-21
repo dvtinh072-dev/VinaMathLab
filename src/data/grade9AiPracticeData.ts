@@ -7200,4 +7200,253 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
     }
   ]
 },
+  // ÔN TẬP CUỐI CHƯƠNG III: CĂN BẬC HAI VÀ CĂN BẬC BA
+  "t9-on-tap-chuong-3": {
+    "quizQuestions": [
+      {
+        "id": "ai-otc3-q1",
+        "badge": "Luyện thêm 1 (NB) - Căn bậc hai số học của số chính phương",
+        "question": "Căn bậc hai số học của $81$ là:",
+        "options": [
+          "$9$",
+          "$-9$",
+          "$\\pm 9$",
+          "$6561$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $9^2 = 81$ và $9 > 0$ nên $\\sqrt{81} = 9$."
+      },
+      {
+        "id": "ai-otc3-q2",
+        "badge": "Luyện thêm 2 (NB) - Điều kiện xác định",
+        "question": "Biểu thức $\\sqrt{3x - 12}$ xác định khi và chỉ khi:",
+        "options": [
+          "$x \\ge 4$",
+          "$x > 4$",
+          "$x \\le 4$",
+          "$x \\ge -4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3x - 12 \\ge 0 \\Leftrightarrow 3x \\ge 12 \\Leftrightarrow x \\ge 4$."
+      },
+      {
+        "id": "ai-otc3-q3",
+        "badge": "Luyện thêm 3 (NB) - Khai phương một thương",
+        "question": "Giá trị của biểu thức $\\sqrt{\\frac{49}{100}}$ là:",
+        "options": [
+          "$\\frac{7}{10}$",
+          "$-\\frac{7}{10}$",
+          "$\\frac{49}{10}$",
+          "$\\frac{7}{100}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\sqrt{\\frac{49}{100}} = \\frac{\\sqrt{49}}{\\sqrt{100}} = \\frac{7}{10}$."
+      },
+      {
+        "id": "ai-otc3-q4",
+        "badge": "Luyện thêm 4 (NB) - Căn bậc ba số âm",
+        "question": "Giá trị của căn bậc ba $\\sqrt[3]{-0,027}$ bằng:",
+        "options": [
+          "$-0,3$",
+          "$0,3$",
+          "$-0,03$",
+          "$-0,09$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $(-0,3)^3 = -0,027$ nên $\\sqrt[3]{-0,027} = -0,3$."
+      },
+      {
+        "id": "ai-otc3-q5",
+        "badge": "Luyện thêm 5 (NB) - Hằng đẳng thức căn bậc hai",
+        "question": "Rút gọn biểu thức $\\sqrt{(1 - \\sqrt{3})^2}$ ta được:",
+        "options": [
+          "$\\sqrt{3} - 1$",
+          "$1 - \\sqrt{3}$",
+          "$2$",
+          "$-2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\sqrt{(1 - \\sqrt{3})^2} = |1 - \\sqrt{3}|$. Vì $1 < \\sqrt{3}$ nên $|1 - \\sqrt{3}| = \\sqrt{3} - 1$."
+      },
+      {
+        "id": "ai-otc3-q6",
+        "badge": "Luyện thêm 6 (NB) - Đưa thừa số ra ngoài căn",
+        "question": "Rút gọn biểu thức $\\sqrt{45}$ ta được:",
+        "options": [
+          "$3\\sqrt{5}$",
+          "$5\\sqrt{3}$",
+          "$9\\sqrt{5}$",
+          "$15\\sqrt{3}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\sqrt{45} = \\sqrt{9 \\cdot 5} = 3\\sqrt{5}$."
+      },
+      {
+        "id": "ai-otc3-q7",
+        "badge": "Luyện thêm 7 (TH) - Khử mẫu biểu thức lấy căn",
+        "question": "Khử mẫu của biểu thức lấy căn $\\sqrt{\\frac{7}{18}}$ ta được:",
+        "options": [
+          "$\\frac{\\sqrt{14}}{6}$",
+          "$\\frac{\\sqrt{7}}{6}$",
+          "$\\frac{\\sqrt{14}}{18}$",
+          "$\\frac{7\\sqrt{2}}{6}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $\\sqrt{\\frac{7}{18}} = \\sqrt{\\frac{7 \\cdot 2}{18 \\cdot 2}} = \\sqrt{\\frac{14}{36}} = \\frac{\\sqrt{14}}{6}$."
+      },
+      {
+        "id": "ai-otc3-q8",
+        "badge": "Luyện thêm 8 (TH) - Trục căn thức ở mẫu",
+        "question": "Trục căn thức ở mẫu của biểu thức $\\frac{6}{\\sqrt{7} - 1}$ ta được:",
+        "options": [
+          "$\\sqrt{7} + 1$",
+          "$\\sqrt{7} - 1$",
+          "$2(\\sqrt{7}+1)$",
+          "$\\frac{\\sqrt{7}+1}{6}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhân liên hợp: $\\frac{6(\\sqrt{7}+1)}{(\\sqrt{7}-1)(\\sqrt{7}+1)} = \\frac{6(\\sqrt{7}+1)}{7 - 1} = \\frac{6(\\sqrt{7}+1)}{6} = \\sqrt{7} + 1$."
+      },
+      {
+        "id": "ai-otc3-q9",
+        "badge": "Luyện thêm 9 (TH) - Phép tính rút gọn căn thức",
+        "question": "Rút gọn biểu thức $M = \\sqrt{20} - \\sqrt{45} + 2\\sqrt{5}$ ta được:",
+        "options": [
+          "$\\sqrt{5}$",
+          "$2\\sqrt{5}$",
+          "$3\\sqrt{5}$",
+          "$0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $\\sqrt{20} = 2\\sqrt{5}$, $\\sqrt{45} = 3\\sqrt{5}$. Do đó $M = 2\\sqrt{5} - 3\\sqrt{5} + 2\\sqrt{5} = \\sqrt{5}$."
+      },
+      {
+        "id": "ai-otc3-q10",
+        "badge": "Luyện thêm 10 (TH) - Tính toán căn bậc ba",
+        "question": "Giá trị của biểu thức $\\sqrt[3]{2} \\cdot \\sqrt[3]{32}$ bằng:",
+        "options": [
+          "$4$",
+          "$8$",
+          "$2$",
+          "$16$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng tính chất căn bậc ba: $\\sqrt[3]{2} \\cdot \\sqrt[3]{32} = \\sqrt[3]{2 \\cdot 32} = \\sqrt[3]{64} = 4$."
+      },
+      {
+        "id": "ai-otc3-q11",
+        "badge": "Luyện thêm 11 (VD) - Rút gọn biểu thức chứa ẩn",
+        "question": "Với $a > 0$ và $a \\ne 4$, rút gọn biểu thức $\\frac{a - 4}{\\sqrt{a} - 2} - \\sqrt{a}$ ta được:",
+        "options": [
+          "$2$",
+          "$-2$",
+          "$2\\sqrt{a}$",
+          "$\\sqrt{a} + 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\frac{a-4}{\\sqrt{a}-2} = \\frac{(\\sqrt{a}-2)(\\sqrt{a}+2)}{\\sqrt{a}-2} = \\sqrt{a} + 2$. Trừ đi $\\sqrt{a}$ ta được $2$."
+      },
+      {
+        "id": "ai-otc3-q12",
+        "badge": "Luyện thêm 12 (VD - Thực tế) - Độ dài cạnh khối lập phương",
+        "question": "Một bể nước ngầm hình lập phương có thể tích đúng bằng $125\\text{ m}^3$. Chiều dài mỗi cạnh của bể nước là:",
+        "options": [
+          "$5\\text{ m}$",
+          "$25\\text{ m}$",
+          "$15\\text{ m}$",
+          "$10\\text{ m}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh của khối lập phương là $a = \\sqrt[3]{125} = 5\\text{ m}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-otc3-tf1",
+        "badge": "Luyện thêm Đ/S 1 - So sánh và tính chất căn bậc hai",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về căn bậc hai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Mọi số thực dương đều có đúng hai căn bậc hai đối nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, số $a > 0$ có hai căn bậc hai là $\\sqrt{a}$ và $-\\sqrt{a}$."
+          },
+          {
+            "id": "b",
+            "text": "Ta có $\\sqrt{25} = \\pm 5$.",
+            "correctAnswer": false,
+            "explanation": "Sai, ký hiệu $\\sqrt{25}$ là căn bậc hai số học nên chỉ bằng $5$."
+          },
+          {
+            "id": "c",
+            "text": "Với $a < b < 0$, ta có $\\sqrt{a} < \\sqrt{b}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, căn bậc hai số học không xác định với số âm."
+          },
+          {
+            "id": "d",
+            "text": "Đẳng thức $\\sqrt{x^2} = x$ đúng với mọi $x \\ge 0$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $\\sqrt{x^2} = |x| = x$ khi $x \\ge 0$."
+          }
+        ]
+      },
+      {
+        "id": "ai-otc3-tf2",
+        "badge": "Luyện thêm Đ/S 2 - Rút gọn căn thức bậc hai và bậc ba",
+        "prompt": "Xét tính đúng/sai của các phép rút gọn sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "$\\sqrt{50} - \\sqrt{18} = 2\\sqrt{2}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $5\\sqrt{2} - 3\\sqrt{2} = 2\\sqrt{2}$."
+          },
+          {
+            "id": "b",
+            "text": "$\\sqrt[3]{16} = 2\\sqrt[3]{2}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $\\sqrt[3]{16} = \\sqrt[3]{8 \\cdot 2} = 2\\sqrt[3]{2}$."
+          },
+          {
+            "id": "c",
+            "text": "$\\frac{1}{\\sqrt{2}+1} = \\sqrt{2} - 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, nhân liên hợp ta được $\\frac{\\sqrt{2}-1}{2-1} = \\sqrt{2} - 1$."
+          },
+          {
+            "id": "d",
+            "text": "$\\sqrt[3]{-8} = 2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\sqrt[3]{-8} = -2$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-otc3-sa1",
+        "badge": "Luyện thêm Trả lời ngắn 1 (TH) - Tính tổng căn thức",
+        "prompt": "Tính giá trị của biểu thức $K = \\sqrt{100} + \\sqrt[3]{-64}$.",
+        "correctAnswer": "6",
+        "acceptableAnswers": [
+          "6",
+          "sáu"
+        ],
+        "explanation": "Ta có $\\sqrt{100} = 10$ và $\\sqrt[3]{-64} = -4$. Vậy $K = 10 + (-4) = 6$."
+      },
+      {
+        "id": "ai-otc3-sa2",
+        "badge": "Luyện thêm Trả lời ngắn 2 (VD) - Tìm nghiệm phương trình căn",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình $\\sqrt{3x - 5} = 4$.",
+        "correctAnswer": "7",
+        "acceptableAnswers": [
+          "7",
+          "bảy"
+        ],
+        "explanation": "Điều kiện $3x - 5 \\ge 0 \\Leftrightarrow x \\ge \\frac{5}{3}$. Bình phương hai vế: $3x - 5 = 16 \\Leftrightarrow 3x = 21 \\Leftrightarrow x = 7$ (thỏa mãn)."
+      }
+    ]
+  },
 };

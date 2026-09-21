@@ -4160,4 +4160,652 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 },
+  "t8-b7-lap-phuong-tong-hieu": {
+  "id": "t8-b7-lap-phuong-tong-hieu",
+  "lessonNumber": 7,
+  "title": "Bài 7: Lập phương của một tổng. Lập phương của một hiệu",
+  "bookChapter": "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng",
+  "scenarioTitle": "Tình huống: Tính thể tích bể nước ngầm hình lập phương khi mở rộng",
+  "scenarioFrames": [
+    {
+      "id": 1,
+      "character": "student",
+      "characterName": "Bạn Lan",
+      "avatar": "🧑‍🎓",
+      "speech": "Thưa Thầy Tính, gia đình em đang dùng một bể nước ngầm hình lập phương cạnh x mét. Bố em dự định xây lại bể mới bằng cách tăng mỗi cạnh thêm 1 mét để thành khối lập phương cạnh x + 1 mét. Bố hỏi em thể tích bể mới tăng thêm bao nhiêu mét khối mà em tính (x + 1)³ bằng cách nhân ba lần đa thức rất dễ nhầm dấu ạ?",
+      "visualGraphic": "box",
+      "mathNote": "V_1 = x^3; \\quad V_2 = (x + 1)^3"
+    },
+    {
+      "id": 2,
+      "character": "teacher",
+      "characterName": "Thầy Tính (VinaMath)",
+      "avatar": "👨‍🏫",
+      "speech": "Chào Lan! Đó chính là bài toán thực tế dẫn tới hai hằng đẳng thức bậc 3 cực kỳ quan trọng: Lập phương của một tổng (A + B)³ = A³ + 3A²B + 3AB² + B³ và Lập phương của một hiệu (A - B)³ = A³ - 3A²B + 3AB² - B³. Với bể nước của bố em, thể tích bể mới là: (x + 1)³ = x³ + 3x² + 3x + 1 mét khối. Phần thể tích tăng thêm chính là 3x² + 3x + 1 mét khối! Chúng ta cùng tìm hiểu kỹ hai hằng đẳng thức này nhé!",
+      "visualGraphic": "graph",
+      "mathNote": "(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3"
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "Lập phương của một tổng",
+      "points": [
+        "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Lập phương của một tổng:",
+        "  $(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$",
+        "Quy tắc nhớ hệ số: Các hệ số theo thứ tự là $1 - 3 - 3 - 1$.",
+        "Dạng nhóm hữu ích khi làm toán nâng cao: $(A + B)^3 = A^3 + B^3 + 3AB(A + B)$.",
+        "Ý nghĩa hình học: Thể tích khối lập phương cạnh $(a + b)$ bằng tổng thể tích hai khối lập phương (cạnh $a, b$) và 6 khối hộp chữ nhật kích thước $a^2b, ab^2$."
+      ],
+      "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 34)",
+      "exampleProblem": "a) Khai triển biểu thức: $(x + 2)^3$ và $(2x + y)^3$.\nb) Viết đa thức sau dưới dạng lập phương của một tổng: $x^3 + 3x^2 + 3x + 1$ và $8x^3 + 12x^2 + 6x + 1$.",
+      "exampleSolution": "a) Khai triển:\n• $(x + 2)^3 = x^3 + 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 + 2^3 = x^3 + 6x^2 + 12x + 8$.\n• $(2x + y)^3 = (2x)^3 + 3 \\cdot (2x)^2 \\cdot y + 3 \\cdot (2x) \\cdot y^2 + y^3 = 8x^3 + 12x^2y + 6xy^2 + y^3$.\n\nb) Viết dưới dạng lập phương:\n• $x^3 + 3x^2 + 3x + 1 = x^3 + 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 + 1^3 = (x + 1)^3$.\n• $8x^3 + 12x^2 + 6x + 1 = (2x)^3 + 3 \\cdot (2x)^2 \\cdot 1 + 3 \\cdot (2x) \\cdot 1^2 + 1^3 = (2x + 1)^3$."
+    },
+    {
+      "index": "2",
+      "title": "Lập phương của một hiệu",
+      "points": [
+        "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Lập phương của một hiệu:",
+        "  $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$",
+        "Quy tắc dấu: Dấu của các hạng tử đan xen nhau: $+ - + -$.",
+        "Dạng nhóm hữu ích: $(A - B)^3 = A^3 - B^3 - 3AB(A - B)$.",
+        "Chú ý quan trọng: Vì lũy thừa bậc 3 là số mũ lẻ nên hai số đối nhau có lập phương đối nhau:",
+        "  $(A - B)^3 = -(B - A)^3$ (khác với bình phương $(A - B)^2 = (B - A)^2$)."
+      ],
+      "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 35)",
+      "exampleProblem": "a) Khai triển: $(x - 1)^3$ và $(2x - 3y)^3$.\nb) Viết đa thức sau dưới dạng lập phương của một hiệu: $x^3 - 6x^2 + 12x - 8$.",
+      "exampleSolution": "a) Khai triển:\n• $(x - 1)^3 = x^3 - 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 - 1^3 = x^3 - 3x^2 + 3x - 1$.\n• $(2x - 3y)^3 = (2x)^3 - 3 \\cdot (2x)^2 \\cdot (3y) + 3 \\cdot (2x) \\cdot (3y)^2 - (3y)^3 = 8x^3 - 36x^2y + 54xy^2 - 27y^3$.\n\nb) Viết dưới dạng lập phương:\n• $x^3 - 6x^2 + 12x - 8 = x^3 - 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 - 2^3 = (x - 2)^3$."
+    },
+    {
+      "index": "3",
+      "title": "Rút gọn biểu thức và tính giá trị",
+      "points": [
+        "Phối hợp khai triển hằng đẳng thức lập phương để rút gọn biểu thức đại số.",
+        "Nhận dạng nhanh để tính nhanh giá trị biểu thức:",
+        "  • Thu gọn đa thức về dạng $(x + a)^3$ hoặc $(x - a)^3$ trước khi thay giá trị số của biến.",
+        "Ví dụ tính nhẩm: $x^3 + 3x^2 + 3x + 1$ tại $x = 99$:",
+        "  Ta có biểu thức bằng $(x + 1)^3$. Thay $x = 99$ được $(99 + 1)^3 = 100^3 = 1000000$."
+      ],
+      "exampleTitle": "Ví dụ 3 (Toán 8 KNTT Trang 36)",
+      "exampleProblem": "a) Rút gọn biểu thức: $M = (x + 1)^3 - (x - 1)^3$.\nb) Tính giá trị của biểu thức $P = x^3 - 6x^2 + 12x - 8$ tại $x = 12$.",
+      "exampleSolution": "a) Khai triển hai hằng đẳng thức:\n$M = (x^3 + 3x^2 + 3x + 1) - (x^3 - 3x^2 + 3x - 1)$\n$M = x^3 + 3x^2 + 3x + 1 - x^3 + 3x^2 - 3x + 1 = 6x^2 + 2$.\n\nb) Ta nhận thấy: $P = (x - 2)^3$.\nThay $x = 12$ vào: $P = (12 - 2)^3 = 10^3 = 1000$."
+    },
+    {
+      "index": "4",
+      "title": "Ứng dụng hình học và thực tế",
+      "points": [
+        "Công thức thể tích khối lập phương cạnh $a$ là $V = a^3$.",
+        "Khi cạnh khối lập phương tăng thêm $b$ đơn vị, thể tích mới là $V' = (a + b)^3$.",
+        "Thể tích tăng thêm là $\\Delta V = (a + b)^3 - a^3 = 3a^2b + 3ab^2 + b^3$.",
+        "Giải các bài toán thực tế về kích thước bồn chứa, hộp quà, thể tích gian phòng."
+      ],
+      "exampleTitle": "Ví dụ 4 (Bài toán thể tích thực tế)",
+      "exampleProblem": "Một khối bê tông hình lập phương ban đầu có cạnh là $x\\text{ (m)}$. Người ta đổ thêm bê tông đều ra các mặt để tạo thành khối lập phương mới có cạnh $x + 2\\text{ (m)}$.\na) Viết đa thức biểu thị thể tích bê tông đổ thêm.\nb) Khi $x = 2\\text{ m}$, thể tích bê tông đổ thêm bằng bao nhiêu mét khối?",
+      "exampleSolution": "a) Thể tích ban đầu là $x^3\\text{ (m}^3\\text{)}$. Thể tích mới là $(x + 2)^3\\text{ (m}^3\\text{)}$.\nThể tích bê tông đổ thêm là:\n$\\Delta V = (x + 2)^3 - x^3 = (x^3 + 6x^2 + 12x + 8) - x^3 = 6x^2 + 12x + 8\\text{ (m}^3\\text{)}$.\nb) Với $x = 2\\text{ m}$, ta có:\n$\\Delta V = 6(2^2) + 12(2) + 8 = 24 + 24 + 8 = 56\\text{ (m}^3\\text{)}$."
+    }
+  ],
+  "youtubeVideos": [
+    {
+      "id": "t8_b7_video1",
+      "title": "Tiết 1: Lập phương của một tổng và ứng dụng khai triển"
+    },
+    {
+      "id": "t8_b7_video2",
+      "title": "Tiết 2: Lập phương của một hiệu và bài toán thực tế"
+    }
+  ],
+  "videoQuestions": [
+    {
+      "id": "vq-8.7.1",
+      "timeSeconds": 140,
+      "timeLabel": "02:20",
+      "title": "Ví dụ 1: Khai triển lập phương một tổng",
+      "question": "Khai triển hằng đẳng thức $(x + 1)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 + 3x^2 + 3x + 1$",
+        "$x^3 + 1$",
+        "$x^3 + 3x + 1$",
+        "$x^3 + x^2 + x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 1)^3 = x^3 + 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 + 1^3 = x^3 + 3x^2 + 3x + 1$."
+    },
+    {
+      "id": "vq-8.7.2",
+      "timeSeconds": 340,
+      "timeLabel": "05:40",
+      "title": "Ví dụ 2: Khai triển lập phương một hiệu",
+      "question": "Khai triển hằng đẳng thức $(x - 2)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 - 6x^2 + 12x - 8$",
+        "$x^3 - 8$",
+        "$x^3 - 6x^2 - 12x - 8$",
+        "$x^3 - 2x^2 + 4x - 8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 2)^3 = x^3 - 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 - 2^3 = x^3 - 6x^2 + 12x - 8$."
+    },
+    {
+      "id": "vq-8.7.3",
+      "timeSeconds": 210,
+      "timeLabel": "03:30",
+      "title": "Ví dụ 3: Nhận dạng hằng đẳng thức",
+      "question": "Đa thức $x^3 + 6x^2 + 12x + 8$ viết dưới dạng lập phương của một tổng là:",
+      "options": [
+        "$(x + 2)^3$",
+        "$(x + 8)^3$",
+        "$(x + 4)^3$",
+        "$(2x + 1)^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^3 + 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 + 2^3 = (x + 2)^3$."
+    },
+    {
+      "id": "vq-8.7.4",
+      "timeSeconds": 460,
+      "timeLabel": "07:40",
+      "title": "Ví dụ 4: Tính nhanh bằng lập phương",
+      "question": "Tính giá trị của biểu thức $P = x^3 - 3x^2 + 3x - 1$ tại $x = 101$:",
+      "options": [
+        "$1000000$",
+        "$100000$",
+        "$10000$",
+        "$1000$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (x - 1)^3$. Thay $x = 101$ vào được: $P = (101 - 1)^3 = 100^3 = 1000000$."
+    }
+  ],
+  "tips": [
+    "Nhớ dãy hệ số Pascal bậc 3: Dãy hệ số luôn là $1 - 3 - 3 - 1$. Với hiệu thì dấu đan xen $+ - + -$.",
+    "Đóng ngoặc biểu thức có hệ số: Khi khai triển $(2x + 1)^3$, luôn viết $(2x)^3 = 8x^3$ và $3(2x)^2 \\cdot 1 = 3 \\cdot 4x^2 = 12x^2$, tránh viết nhầm thành $2x^3$ hay $6x^2$.",
+    "Nhận diện bậc 3 hai đầu: Khi thấy $x^3$ ở đầu và một số lập phương như $1, 8, 27$ ở cuối, hãy thử ngay hằng đẳng thức $(x \\pm a)^3$.",
+    "Tính chất đổi dấu của hiệu bậc lẻ: $(A - B)^3 = -(B - A)^3$, chú ý có dấu trừ phía trước chứ không bằng nhau như bậc 2."
+  ],
+  "traps": [
+    "Bẫy quên hai số hạng ở giữa: Nhầm $(x + y)^3 = x^3 + y^3$ hoặc $(x - y)^3 = x^3 - y^3$. Đây là lỗi sai rất nghiêm trọng!",
+    "Bẫy nhầm dấu trong lập phương hiệu: Viết $(A - B)^3 = A^3 - 3A^2B - 3AB^2 - B^3$ (số hạng thứ ba phải mang dấu cộng $+3AB^2$).",
+    "Bẫy lũy thừa hệ số: Viết $(2x)^3 = 6x^3$ (nhân hệ số với 3 thay vì nâng lên lũy thừa $2^3 = 8$).",
+    "Bẫy dấu khi đổi vị trí trong hiệu: Nhầm $(A - B)^3 = (B - A)^3$ (đúng phải là $(A - B)^3 = -(B - A)^3$)."
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-8.7.1",
+      "badge": "Câu 1 (NB) - Công thức lập phương một tổng",
+      "source": "SGK Toán 8 KNTT Trang 34",
+      "question": "Công thức lập phương của một tổng hai biểu thức $A, B$ là:",
+      "options": [
+        "$(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$",
+        "$(A + B)^3 = A^3 + B^3$",
+        "$(A + B)^3 = A^3 + 3A^2B + B^3$",
+        "$(A + B)^3 = A^3 + A^2B + AB^2 + B^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hằng đẳng thức lập phương của một tổng: $(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$."
+    },
+    {
+      "id": "quiz-8.7.2",
+      "badge": "Câu 2 (NB) - Công thức lập phương một hiệu",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Công thức lập phương của một hiệu hai biểu thức $A, B$ là:",
+      "options": [
+        "$(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$",
+        "$(A - B)^3 = A^3 - B^3$",
+        "$(A - B)^3 = A^3 - 3A^2B - 3AB^2 - B^3$",
+        "$(A - B)^3 = A^3 + 3A^2B - 3AB^2 + B^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hằng đẳng thức lập phương của một hiệu: $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$."
+    },
+    {
+      "id": "quiz-8.7.3",
+      "badge": "Câu 3 (NB) - Dấu các hạng tử trong lập phương hiệu",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Khi khai triển hằng đẳng thức $(A - B)^3$, dấu của bốn hạng tử theo thứ tự là:",
+      "options": [
+        "$+, -, +, -$",
+        "$+, +, -, -$",
+        "$+, -, -, -$",
+        "$-, +, -, +$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong khai triển $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$, dấu các hạng tử đan xen nhau là: $+ , - , + , -$."
+    },
+    {
+      "id": "quiz-8.7.4",
+      "badge": "Câu 4 (NB) - Khai triển lập phương của x + 1",
+      "source": "SGK Toán 8 KNTT Trang 34",
+      "question": "Khai triển hằng đẳng thức $(x + 1)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 + 3x^2 + 3x + 1$",
+        "$x^3 + 1$",
+        "$x^3 + 3x + 1$",
+        "$x^3 + x^2 + x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 1)^3 = x^3 + 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 + 1^3 = x^3 + 3x^2 + 3x + 1$."
+    },
+    {
+      "id": "quiz-8.7.5",
+      "badge": "Câu 5 (NB) - Khai triển lập phương của x - 1",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Khai triển hằng đẳng thức $(x - 1)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 - 3x^2 + 3x - 1$",
+        "$x^3 - 1$",
+        "$x^3 - 3x^2 - 3x - 1$",
+        "$x^3 - 3x - 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 1)^3 = x^3 - 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 - 1^3 = x^3 - 3x^2 + 3x - 1$."
+    },
+    {
+      "id": "quiz-8.7.6",
+      "badge": "Câu 6 (NB) - Khai triển lập phương của x + 2",
+      "source": "SGK Toán 8 KNTT Trang 34",
+      "question": "Khai triển hằng đẳng thức $(x + 2)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 + 6x^2 + 12x + 8$",
+        "$x^3 + 8$",
+        "$x^3 + 6x^2 + 6x + 8$",
+        "$x^3 + 2x^2 + 4x + 8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 2)^3 = x^3 + 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 + 2^3 = x^3 + 6x^2 + 12x + 8$."
+    },
+    {
+      "id": "quiz-8.7.7",
+      "badge": "Câu 7 (NB) - Khai triển lập phương của x - 2",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Khai triển hằng đẳng thức $(x - 2)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 - 6x^2 + 12x - 8$",
+        "$x^3 - 8$",
+        "$x^3 - 6x^2 - 12x - 8$",
+        "$x^3 + 6x^2 - 12x + 8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 2)^3 = x^3 - 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 - 2^3 = x^3 - 6x^2 + 12x - 8$."
+    },
+    {
+      "id": "quiz-8.7.8",
+      "badge": "Câu 8 (NB) - Viết đa thức về lập phương một tổng",
+      "source": "SGK Toán 8 KNTT Trang 34",
+      "question": "Đa thức $x^3 + 3x^2 + 3x + 1$ được viết dưới dạng lập phương của một tổng là:",
+      "options": [
+        "$(x + 1)^3$",
+        "$(x + 3)^3$",
+        "$(x + 2)^3$",
+        "$(3x + 1)^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^3 + 3 \\cdot x^2 \\cdot 1 + 3 \\cdot x \\cdot 1^2 + 1^3 = (x + 1)^3$."
+    },
+    {
+      "id": "quiz-8.7.9",
+      "badge": "Câu 9 (NB) - Viết đa thức về lập phương một hiệu",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Đa thức $x^3 - 6x^2 + 12x - 8$ được viết dưới dạng lập phương của một hiệu là:",
+      "options": [
+        "$(x - 2)^3$",
+        "$(x - 8)^3$",
+        "$(x - 4)^3$",
+        "$(2x - 1)^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^3 - 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 - 2^3 = (x - 2)^3$."
+    },
+    {
+      "id": "quiz-8.7.10",
+      "badge": "Câu 10 (NB) - Tính chất đổi dấu lập phương",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Với mọi số thực $x$, khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "$(x - 3)^3 = -(3 - x)^3$",
+        "$(x - 3)^3 = (3 - x)^3$",
+        "$(x + 3)^3 = x^3 + 27$",
+        "$(x - 3)^3 = x^3 - 27$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $(x - 3) = -(3 - x)$ và số mũ 3 là số lẻ nên: $(x - 3)^3 = [-(3 - x)]^3 = -(3 - x)^3$."
+    },
+    {
+      "id": "quiz-8.7.11",
+      "badge": "Câu 11 (TH) - Khai triển lập phương có hệ số",
+      "source": "SGK Toán 8 KNTT Trang 34",
+      "question": "Khai triển hằng đẳng thức $(2x + 1)^3$ ta được kết quả là:",
+      "options": [
+        "$8x^3 + 12x^2 + 6x + 1$",
+        "$8x^3 + 6x^2 + 6x + 1$",
+        "$2x^3 + 6x^2 + 6x + 1$",
+        "$8x^3 + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(2x + 1)^3 = (2x)^3 + 3(2x)^2(1) + 3(2x)(1^2) + 1^3 = 8x^3 + 12x^2 + 6x + 1$."
+    },
+    {
+      "id": "quiz-8.7.12",
+      "badge": "Câu 12 (TH) - Khai triển lập phương hiệu hai biến",
+      "source": "SGK Toán 8 KNTT Trang 35",
+      "question": "Khai triển hằng đẳng thức $(x - 2y)^3$ ta được kết quả là:",
+      "options": [
+        "$x^3 - 6x^2y + 12xy^2 - 8y^3$",
+        "$x^3 - 3x^2y + 6xy^2 - 8y^3$",
+        "$x^3 - 6x^2y - 12xy^2 - 8y^3$",
+        "$x^3 - 8y^3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 2y)^3 = x^3 - 3x^2(2y) + 3x(2y)^2 - (2y)^3 = x^3 - 6x^2y + 12xy^2 - 8y^3$."
+    },
+    {
+      "id": "quiz-8.7.13",
+      "badge": "Câu 13 (TH) - Khai triển lập phương hiệu có hệ số",
+      "source": "Toán 8 KNTT Bài tập 2.7 Trang 36",
+      "question": "Khai triển hằng đẳng thức $(3x - 1)^3$ ta được kết quả là:",
+      "options": [
+        "$27x^3 - 27x^2 + 9x - 1$",
+        "$27x^3 - 9x^2 + 9x - 1$",
+        "$9x^3 - 27x^2 + 9x - 1$",
+        "$27x^3 - 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3x - 1)^3 = (3x)^3 - 3(3x)^2(1) + 3(3x)(1^2) - 1^3 = 27x^3 - 27x^2 + 9x - 1$."
+    },
+    {
+      "id": "quiz-8.7.14",
+      "badge": "Câu 14 (TH) - Điền đơn thức vào hằng đẳng thức",
+      "source": "Toán 8 KNTT Bài tập 2.8 Trang 36",
+      "question": "Điền đơn thức thích hợp vào chỗ chấm để biểu thức trở thành lập phương của một tổng: $x^3 + 9x^2 + \\ldots + 27 = (x + 3)^3$.",
+      "options": [
+        "$27x$",
+        "$18x$",
+        "$9x$",
+        "$3x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 3)^3 = x^3 + 3 \\cdot x^2 \\cdot 3 + 3 \\cdot x \\cdot 3^2 + 3^3 = x^3 + 9x^2 + 27x + 27$. Đơn thức cần điền là $27x$."
+    },
+    {
+      "id": "quiz-8.7.15",
+      "badge": "Câu 15 (TH) - Tính nhanh giá trị biểu thức",
+      "source": "Toán 8 KNTT Bài tập 2.9 Trang 36",
+      "question": "Tính nhanh giá trị của biểu thức $P = x^3 + 3x^2 + 3x + 1$ tại $x = 99$:",
+      "options": [
+        "$1000000$",
+        "$100000$",
+        "$10000$",
+        "$1000$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (x + 1)^3$. Với $x = 99$: $P = (99 + 1)^3 = 100^3 = 1000000$."
+    },
+    {
+      "id": "quiz-8.7.16",
+      "badge": "Câu 16 (TH) - Rút gọn biểu thức lập phương",
+      "source": "Toán 8 KNTT Bài tập 2.10 Trang 36",
+      "question": "Rút gọn biểu thức $M = (x + 1)^3 - x^2(x + 3)$ ta được kết quả là:",
+      "options": [
+        "$3x + 1$",
+        "$3x^2 + 3x + 1$",
+        "$1$",
+        "$x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$M = (x^3 + 3x^2 + 3x + 1) - (x^3 + 3x^2) = 3x + 1$."
+    },
+    {
+      "id": "quiz-8.7.17",
+      "badge": "Câu 17 (VD) - Rút gọn hiệu hai lập phương",
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Rút gọn biểu thức $A = (x + 1)^3 - (x - 1)^3$ ta được kết quả là:",
+      "options": [
+        "$6x^2 + 2$",
+        "$6x^2$",
+        "$2x^3 + 6x$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = (x^3 + 3x^2 + 3x + 1) - (x^3 - 3x^2 + 3x - 1) = 6x^2 + 2$."
+    },
+    {
+      "id": "quiz-8.7.18",
+      "badge": "Câu 18 (VD) - Tính giá trị đa thức hai biến",
+      "source": "Toán 8 KNTT Bài tập 2.11 Trang 36",
+      "question": "Tính giá trị của biểu thức $P = x^3 - 6x^2y + 12xy^2 - 8y^3$ tại $x = 26$ và $y = 3$:",
+      "options": [
+        "$8000$",
+        "$4000$",
+        "$1000$",
+        "$20$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (x - 2y)^3$. Thay $x = 26, y = 3$ vào: $P = (26 - 2 \\cdot 3)^3 = (26 - 6)^3 = 20^3 = 8000$."
+    },
+    {
+      "id": "quiz-8.7.19",
+      "badge": "Câu 19 (VD) - Tìm x bằng hằng đẳng thức lập phương",
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tìm giá trị của $x$ thỏa mãn đẳng thức: $(x + 1)^3 - x^2(x + 3) = 13$.",
+      "options": [
+        "$x = 4$",
+        "$x = 3$",
+        "$x = 2$",
+        "$x = 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x^3 + 3x^2 + 3x + 1) - (x^3 + 3x^2) = 13 \\Leftrightarrow 3x + 1 = 13 \\Leftrightarrow 3x = 12 \\Leftrightarrow x = 4$."
+    },
+    {
+      "id": "quiz-8.7.20",
+      "badge": "Câu 20 (VD - Thực tế) - Thể tích bể nước tăng thêm",
+      "source": "Toán 8 KNTT Ứng dụng thực tế",
+      "question": "Một bể nước hình lập phương có cạnh bằng $x\\text{ (m)}$. Người ta xây bể mới bằng cách tăng mỗi cạnh thêm $1\\text{ m}$ để được khối lập phương có cạnh $x + 1\\text{ (m)}$. Đa thức biểu thị phần thể tích tăng thêm của bể nước là:",
+      "options": [
+        "$3x^2 + 3x + 1\\text{ (m}^3\\text{)}$",
+        "$1\\text{ (m}^3\\text{)}$",
+        "$3x^2 + 1\\text{ (m}^3\\text{)}$",
+        "$x^2 + x + 1\\text{ (m}^3\\text{)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thể tích tăng thêm bằng thể tích bể mới trừ thể tích bể cũ: $\\Delta V = (x + 1)^3 - x^3 = (x^3 + 3x^2 + 3x + 1) - x^3 = 3x^2 + 3x + 1\\text{ (m}^3\\text{)}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-8.7.1",
+      "badge": "Câu 1 (Đ/S) - Các công thức hằng đẳng thức lập phương",
+      "prompt": "Cho $A, B$ là hai biểu thức đại số tùy ý. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, đây là hằng đẳng thức lập phương của một tổng."
+        },
+        {
+          "id": "b",
+          "text": "$(A - B)^3 = A^3 - B^3$ với mọi biểu thức $A, B$.",
+          "correctAnswer": false,
+          "explanation": "Sai, khai triển đúng là $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$."
+        },
+        {
+          "id": "c",
+          "text": "$(A - B)^3 = -(B - A)^3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, vì lũy thừa bậc 3 là số mũ lẻ nên $[-(B - A)]^3 = -(B - A)^3$."
+        },
+        {
+          "id": "d",
+          "text": "Trong khai triển $(A - B)^3$, số hạng thứ ba là $-3AB^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, số hạng thứ ba mang dấu cộng $+3AB^2$ vì $(-B)^2 = B^2$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.7.2",
+      "badge": "Câu 2 (Đ/S) - Khai triển và viết về dạng lập phương",
+      "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$(2x + 1)^3 = 8x^3 + 12x^2 + 6x + 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(2x)^3 + 3(2x)^2(1) + 3(2x)(1^2) + 1^3 = 8x^3 + 12x^2 + 6x + 1$."
+        },
+        {
+          "id": "b",
+          "text": "$(x - 2)^3 = x^3 - 6x^2 + 12x - 8$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $x^3 - 3(x^2)(2) + 3(x)(4) - 8 = x^3 - 6x^2 + 12x - 8$."
+        },
+        {
+          "id": "c",
+          "text": "$x^3 + 9x^2 + 27x + 27 = (x + 9)^3$.",
+          "correctAnswer": false,
+          "explanation": "Sai, vì $27 = 3^3$ nên biểu thức viết đúng phải là $(x + 3)^3$."
+        },
+        {
+          "id": "d",
+          "text": "$8x^3 - 12x^2 + 6x - 1 = (2x - 1)^3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(2x)^3 - 3(2x)^2(1) + 3(2x)(1^2) - 1^3 = (2x - 1)^3$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.7.3",
+      "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức và giải phương trình",
+      "prompt": "Cho biểu thức $M = (x + 1)^3 - x^2(x + 3)$ và phương trình $(x + 2)^3 - x^3 - 6x^2 = 20$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Rút gọn biểu thức $M$ ta được kết quả $M = 3x + 1$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $M = (x^3 + 3x^2 + 3x + 1) - (x^3 + 3x^2) = 3x + 1$."
+        },
+        {
+          "id": "b",
+          "text": "Giá trị của biểu thức $M$ tại $x = 10$ là $31$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, thay $x = 10$ vào: $3(10) + 1 = 31$."
+        },
+        {
+          "id": "c",
+          "text": "Phương trình $(x + 2)^3 - x^3 - 6x^2 = 20$ sau khi thu gọn vế trái trở thành $12x + 8 = 20$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(x^3 + 6x^2 + 12x + 8) - x^3 - 6x^2 = 12x + 8$."
+        },
+        {
+          "id": "d",
+          "text": "Nghiệm của phương trình $(x + 2)^3 - x^3 - 6x^2 = 20$ là $x = 2$.",
+          "correctAnswer": false,
+          "explanation": "Sai, $12x + 8 = 20 \\Leftrightarrow 12x = 12 \\Leftrightarrow x = 1$."
+        }
+      ]
+    },
+    {
+      "id": "tf-8.7.4",
+      "badge": "Câu 4 (Đ/S - Thực tế) - Thể tích bể bơi hình lập phương",
+      "prompt": "Một hồ bơi hình lập phương có cạnh bằng $x\\text{ (m)}$ ($x > 1$). Chủ khu nghỉ dưỡng mở rộng hồ bơi bằng cách tăng đều mỗi cạnh thêm $2\\text{ m}$ để thành hồ bơi mới hình lập phương cạnh $x + 2\\text{ (m)}$. Xét tính đúng/sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Thể tích hồ bơi ban đầu là $x^3\\text{ (m}^3\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, thể tích khối lập phương cạnh $x$ là $x^3\\text{ (m}^3\\text{)}$."
+        },
+        {
+          "id": "b",
+          "text": "Thể tích hồ bơi mới sau khi mở rộng là $(x + 2)^3\\text{ (m}^3\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, cạnh hồ bơi mới là $x + 2\\text{ (m)}$ nên thể tích là $(x + 2)^3\\text{ (m}^3\\text{)}$."
+        },
+        {
+          "id": "c",
+          "text": "Phần thể tích tăng thêm được biểu thị bởi đa thức $6x^2 + 12x + 8\\text{ (m}^3\\text{)}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng, $(x + 2)^3 - x^3 = (x^3 + 6x^2 + 12x + 8) - x^3 = 6x^2 + 12x + 8\\text{ (m}^3\\text{)}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu hồ bơi ban đầu có cạnh $x = 3\\text{ m}$ thì thể tích tăng thêm là $80\\text{ m}^3$.",
+          "correctAnswer": false,
+          "explanation": "Sai, với $x = 3$: $\\Delta V = 6(3^2) + 12(3) + 8 = 54 + 36 + 8 = 98\\text{ m}^3$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-8.7.1",
+      "badge": "Câu 1 (NB) - Hệ số tự do của khai triển",
+      "prompt": "Hệ số tự do trong khai triển hằng đẳng thức $(x + 3)^3$ bằng bao nhiêu?",
+      "correctAnswer": "27",
+      "acceptableAnswers": [
+        "27",
+        "hai mươi bảy"
+      ],
+      "explanation": "$(x + 3)^3 = x^3 + 9x^2 + 27x + 27$. Hệ số tự do bằng $3^3 = 27$."
+    },
+    {
+      "id": "sa-8.7.2",
+      "badge": "Câu 2 (TH) - Hệ số của biến trong khai triển",
+      "prompt": "Hệ số của $x^2$ trong khai triển hằng đẳng thức $(2x + 1)^3$ bằng bao nhiêu?",
+      "correctAnswer": "12",
+      "acceptableAnswers": [
+        "12",
+        "mười hai"
+      ],
+      "explanation": "$(2x + 1)^3 = (2x)^3 + 3(2x)^2(1) + 3(2x)(1) + 1 = 8x^3 + 12x^2 + 6x + 1$. Hệ số của $x^2$ là $12$."
+    },
+    {
+      "id": "sa-8.7.3",
+      "badge": "Câu 3 (TH) - Tính nhanh giá trị biểu thức",
+      "prompt": "Tính giá trị của biểu thức $P = x^3 - 3x^2 + 3x - 1$ tại $x = 11$.",
+      "correctAnswer": "1000",
+      "acceptableAnswers": [
+        "1000",
+        "một nghìn",
+        "1.000"
+      ],
+      "explanation": "$P = (x - 1)^3$. Tại $x = 11$: $P = (11 - 1)^3 = 10^3 = 1000$."
+    },
+    {
+      "id": "sa-8.7.4",
+      "badge": "Câu 4 (TH) - Tìm hằng số trong lập phương",
+      "prompt": "Cho đẳng thức $x^3 + 6x^2 + 12x + 8 = (x + b)^3$. Giá trị của $b$ bằng bao nhiêu?",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "hai"
+      ],
+      "explanation": "$x^3 + 6x^2 + 12x + 8 = x^3 + 3 \\cdot x^2 \\cdot 2 + 3 \\cdot x \\cdot 2^2 + 2^3 = (x + 2)^3$. Vậy $b = 2$."
+    },
+    {
+      "id": "sa-8.7.5",
+      "badge": "Câu 5 (VD) - Tìm x thỏa mãn đẳng thức",
+      "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x + 2)^3 - x^3 - 6x^2 = 32$.",
+      "correctAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "hai"
+      ],
+      "explanation": "$(x^3 + 6x^2 + 12x + 8) - x^3 - 6x^2 = 32 \\Leftrightarrow 12x + 8 = 32 \\Leftrightarrow 12x = 24 \\Leftrightarrow x = 2$."
+    },
+    {
+      "id": "sa-8.7.6",
+      "badge": "Câu 6 (VD - Thực tế) - Tìm kích thước khối lập phương",
+      "prompt": "Một thùng chứa hàng hình lập phương cạnh $x\\text{ (m)}$. Khi tăng mỗi cạnh thêm $1\\text{ m}$ thì thể tích thùng tăng thêm $61\\text{ m}^3$. Tính độ dài cạnh ban đầu $x$ của thùng chứa theo đơn vị mét.",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "bốn",
+        "4m",
+        "4 m"
+      ],
+      "explanation": "Thể tích tăng thêm là: $(x + 1)^3 - x^3 = 3x^2 + 3x + 1\\text{ (m}^3\\text{)}$.\nTheo đề bài: $3x^2 + 3x + 1 = 61 \\Leftrightarrow 3x^2 + 3x - 60 = 0 \\Leftrightarrow x^2 + x - 20 = 0$.\nVì $x > 0$ nên $(x - 4)(x + 5) = 0 \\Leftrightarrow x = 4\\text{ (m)}$."
+    }
+  ]
+},
 };

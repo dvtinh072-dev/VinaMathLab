@@ -74,11 +74,12 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         description: "Quan hệ chia hết, dấu hiệu chia hết cho 2, 3, 5, 9, số nguyên tố, ƯCLN và BCNN.",
         lessons: [
           { id: "t6-b8-quan-he-chia-het", lessonNumber: 8, title: "Bài 8: Quan hệ chia hết và tính chất", strand: "daiso", description: "Khái niệm ước và bội, tính chất chia hết của một tổng.", keyFormulas: ["a \\ \\vdots \\ m \\text{ và } b \\ \\vdots \\ m \\Rightarrow (a + b) \\ \\vdots \\ m"] },
-          { id: "t6-b9-dau-hieu-chia-het-2-5", lessonNumber: 9, title: "Bài 9: Dấu hiệu chia hết cho 2, cho 5", strand: "daiso", description: "Xét chữ số tận cùng.", keyFormulas: ["a \\ \\vdots \\ 2 \\Leftrightarrow \\text{chữ số tận cùng } \\in \\{0, 2, 4, 6, 8\\}"] },
-          { id: "t6-b10-dau-hieu-chia-het-3-9", lessonNumber: 10, title: "Bài 10: Dấu hiệu chia hết cho 3, cho 9", strand: "daiso", description: "Xét tổng các chữ số.", keyFormulas: ["a \\ \\vdots \\ 9 \\Leftrightarrow \\text{Tổng các chữ số } \\vdots \\ 9"] },
+          { id: "t6-b9-dau-hieu-chia-het-2-5", lessonNumber: 9, title: "Bài 9: Dấu hiệu chia hết cho 2, cho 5", strand: "daiso", description: "Xét chữ số tận cùng.", keyFormulas: ["a \\ \\vdots \\ 2 \\text{ khi chữ số tận cùng } \\in \\{0, 2, 4, 6, 8\\}"] },
+          { id: "t6-b10-dau-hieu-chia-het-3-9", lessonNumber: 10, title: "Bài 10: Dấu hiệu chia hết cho 3, cho 9", strand: "daiso", description: "Xét tổng các chữ số.", keyFormulas: ["a \\ \\vdots \\ 9 \\text{ khi Tổng các chữ số } \\vdots \\ 9"] },
           { id: "t6-b11-so-nguyen-to", lessonNumber: 11, title: "Bài 11: Số nguyên tố", strand: "daiso", description: "Số nguyên tố, hợp số và phân tích một số ra thừa số nguyên tố.", keyFormulas: ["p > 1, \\ p \\text{ chỉ có 2 ước là 1 và chính nó}"] },
           { id: "t6-b12-uoc-chung-ucln", lessonNumber: 12, title: "Bài 12: Ước chung và ước chung lớn nhất", strand: "daiso", description: "Tìm ƯCLN và rút gọn phân số.", keyFormulas: ["\\text{ƯCLN}(a, b) = \\text{tích thừa số nguyên tố chung với số mũ nhỏ nhất}"] },
           { id: "t6-b13-boi-chung-bcnn", lessonNumber: 13, title: "Bài 13: Bội chung và bội chung nhỏ nhất", strand: "daiso", description: "Tìm BCNN và quy đồng mẫu số các phân số.", keyFormulas: ["\\text{BCNN}(a, b) = \\text{tích thừa số chung và riêng với số mũ lớn nhất}"] },
+          { id: "t6-on-tap-chuong-2", lessonNumber: 0, title: "Bài tập cuối chương II", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Tính chia hết, Dấu hiệu chia hết cho 2, 3, 5, 9, Số nguyên tố, ƯCLN và BCNN với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["a = b \\cdot q \\Rightarrow a \\ \\vdots \\ b", "a \\ \\vdots \\ m, \\ b \\ \\vdots \\ m \\Rightarrow (a + b) \\ \\vdots \\ m", "\\text{ƯCLN}(a, b) \\cdot \\text{BCNN}(a, b) = a \\cdot b"] },
         ],
       },
       {

@@ -65,6 +65,7 @@ export interface ExamSetItem {
   description?: string;
   matrixBadge?: string;
   quizQuestions: QuizQuestion[];
+  practiceQuestions?: QuizQuestion[];
   trueFalseQuestions?: TrueFalseQuestion[];
   shortAnswerQuestions?: ShortAnswerQuestion[];
 }
@@ -103,6 +104,7 @@ export interface DetailedLessonData {
   traps?: string[];
   interactiveType?: "venn" | "numberline" | "power" | "divisibility" | "integers" | "geometry" | "fraction" | "decimal" | "geometry2d" | "statistics" | "function" | "circle" | "vector" | "default";
   quizQuestions: QuizQuestion[];
+  practiceQuestions?: QuizQuestion[];
   trueFalseQuestions?: TrueFalseQuestion[];
   shortAnswerQuestions?: ShortAnswerQuestion[];
   examSets?: ExamSetItem[];

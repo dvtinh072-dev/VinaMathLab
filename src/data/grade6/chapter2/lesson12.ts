@@ -132,10 +132,10 @@ export const LESSON_12_DATA: DetailedLessonData = {
       source: 'SGK Toán 6 Kết nối tri thức Tập 1 & SH6-CĐ 2',
       question: 'Tập hợp các ước chung của $12$ và $18$ là:',
       options: [
-        '\\{1; 2; 3; 6\\}',
-        '\\{1; 2; 3; 4\\}',
-        '\\{1; 2; 6; 12\\}',
-        '\\{1; 3; 6; 9\\}'
+        '$\\{1; 2; 3; 6\\}$',
+        '$\\{1; 2; 3; 4\\}$',
+        '$\\{1; 2; 6; 12\\}$',
+        '$\\{1; 3; 6; 9\\}$'
       ],
       correctIndex: 0,
       explanation: 'Ta có $\\text{Ư}(12) = \\{1; 2; 3; 4; 6; 12\\}$ và $\\text{Ư}(18) = \\{1; 2; 3; 6; 9; 18\\}$. Các phần tử chung là $1; 2; 3; 6$. Do đó $\\text{ƯC}(12, 18) = \\{1; 2; 3; 6\\}$.'
@@ -302,10 +302,10 @@ export const LESSON_12_DATA: DetailedLessonData = {
       source: 'Chuyên đề Dạy thêm Toán 6 Kết nối tri thức',
       question: 'Tập hợp các ước chung lớn hơn $4$ của hai số $36$ và $90$ là:',
       options: [
-        '\\{6; 9; 18\\}',
-        '\\{6; 12; 18\\}',
-        '\\{9; 18\\}',
-        '\\{6; 9; 18; 36\\}'
+        '$\\{6; 9; 18\\}$',
+        '$\\{6; 12; 18\\}$',
+        '$\\{9; 18\\}$',
+        '$\\{6; 9; 18; 36\\}$'
       ],
       correctIndex: 0,
       explanation: 'Ta có $36 = 2^2 \\cdot 3^2$ và $90 = 2 \\cdot 3^2 \\cdot 5$, suy ra $\\text{ƯCLN}(36, 90) = 2 \\cdot 3^2 = 18$. Các ước chung của $36$ và $90$ là ước của $18$: $\\text{Ư}(18) = \\{1; 2; 3; 6; 9; 18\\}$. Các ước lớn hơn $4$ là $6; 9; 18$. Vậy tập hợp cần tìm là $\\{6; 9; 18\\}$.'

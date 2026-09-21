@@ -181,10 +181,10 @@ export const LESSON_11_DATA: DetailedLessonData = {
       badge: 'Câu 5 (Thông hiểu)',
       question: 'Tập hợp tất cả các số nguyên tố có một chữ số là:',
       options: [
-        '\\{2;\\ 3;\\ 5;\\ 7\\}',
-        '\\{1;\\ 2;\\ 3;\\ 5;\\ 7\\}',
-        '\\{3;\\ 5;\\ 7;\\ 9\\}',
-        '\\{2;\\ 3;\\ 5;\\ 7;\\ 9\\}'
+        '$\\{2;\\ 3;\\ 5;\\ 7\\}$',
+        '$\\{1;\\ 2;\\ 3;\\ 5;\\ 7\\}$',
+        '$\\{3;\\ 5;\\ 7;\\ 9\\}$',
+        '$\\{2;\\ 3;\\ 5;\\ 7;\\ 9\\}$'
       ],
       correctIndex: 0,
       explanation: 'Các số nguyên tố có một chữ số là $2;\\ 3;\\ 5;\\ 7$. Số $1$ không là số nguyên tố, số $9$ là hợp số vì chia hết cho $3$. Do đó tập hợp cần tìm là $\\{2;\\ 3;\\ 5;\\ 7\\}$.',
@@ -207,10 +207,10 @@ export const LESSON_11_DATA: DetailedLessonData = {
       badge: 'Câu 7 (Thông hiểu)',
       question: 'Tìm tập hợp tất cả các ước nguyên tố của số $30$:',
       options: [
-        '\\{2;\\ 3;\\ 5\\}',
-        '\\{1;\\ 2;\\ 3;\\ 5\\}',
-        '\\{2;\\ 3;\\ 5;\\ 6\\}',
-        '\\{3;\\ 5\\}'
+        '$\\{2;\\ 3;\\ 5\\}$',
+        '$\\{1;\\ 2;\\ 3;\\ 5\\}$',
+        '$\\{2;\\ 3;\\ 5;\\ 6\\}$',
+        '$\\{3;\\ 5\\}$'
       ],
       correctIndex: 0,
       explanation: 'Phân tích $30 = 2 \\cdot 3 \\cdot 5$. Các ước nguyên tố của số $30$ là $2;\\ 3;\\ 5$. Số $1$ không phải số nguyên tố, số $6$ là hợp số.',
@@ -352,10 +352,10 @@ export const LESSON_11_DATA: DetailedLessonData = {
       badge: 'Luyện tập 8',
       question: 'Thay chữ số vào dấu $*$ để số $\\overline{1*}$ là một số nguyên tố. Tập hợp tất cả các chữ số $*$ thỏa mãn là:',
       options: [
-        '\\{1;\\ 3;\\ 7;\\ 9\\}',
-        '\\{1;\\ 3;\\ 7\\}',
-        '\\{3;\\ 7;\\ 9\\}',
-        '\\{1;\\ 7;\\ 9\\}'
+        '$\\{1;\\ 3;\\ 7;\\ 9\\}$',
+        '$\\{1;\\ 3;\\ 7\\}$',
+        '$\\{3;\\ 7;\\ 9\\}$',
+        '$\\{1;\\ 7;\\ 9\\}$'
       ],
       correctIndex: 0,
       explanation: 'Các số có hai chữ số bắt đầu bằng $1$ là $10;\\ 11;\\ 12;\\ 13;\\ 14;\\ 15;\\ 16;\\ 17;\\ 18;\\ 19$. Trong đó các số nguyên tố là $11;\\ 13;\\ 17;\\ 19$. Vậy $* \\in \\{1;\\ 3;\\ 7;\\ 9\\}$.',

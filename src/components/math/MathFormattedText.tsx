@@ -93,6 +93,19 @@ export function formatMathInText(rawText?: string | null): string {
     protectedText = `___MATH_BLOCK_INLINE_${idx}___`;
   }
 
+  // 2.7.1. Tự động bọc và chuẩn hóa tập hợp số hoặc phần tử viết bằng LaTeX chưa bọc $: \{2; 3; 5; 7\} -> $\{2; 3; 5; 7\}$
+  protectedText = protectedText.replace(/(^|[\s=∈∉⊂⊆(:,;])\\\{([^{}\n]+?)\\\}/g, (_, prefix, inner) => {
+    return `${prefix}$\\{${inner.trim()}\\}$`;
+  });
+
+  // 2.7.2. Tự động bọc tập hợp viết bằng ngoặc nhọn thuần túy: {1; 2; 3; 6} hoặc {-6; -3; -2} -> $\{1; 2; 3; 6\}$
+  protectedText = protectedText.replace(/(^|[\s=∈∉⊂⊆(:,;])\{([a-zA-Z0-9\s;,._\-\+\*\/\\dots]+?)\}(?=[\s\.,;:\?!)]|$)/g, (match, prefix, inner) => {
+    if (/[;,]/.test(inner) || /^\s*-?\d+\s*$/.test(inner)) {
+      return `${prefix}$\\{${inner.trim()}\\}$`;
+    }
+    return match;
+  });
+
   // 2.8. Chuẩn hóa ký hiệu toán học unicode đứng một mình sang LaTeX
   protectedText = protectedText.replace(/(^|[\s])([a-zA-Z0-9]+)\s*∈\s*([a-zA-Z0-9ℕℤℚℝ*]+)(?=[\s,;.]|$)/g, (_, prefix, elem, set) => {
     let formattedSet = set === "ℕ*" ? "\\mathbb{N}^*" : set === "ℕ" ? "\\mathbb{N}" : set === "ℤ" ? "\\mathbb{Z}" : set;

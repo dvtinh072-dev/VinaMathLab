@@ -614,5 +614,657 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Chu vi hình tam giác bằng tổng độ dài ba cạnh:\n$C = (x + 2y) + (2x - y) + (3x + 4) = (x + 2x + 3x) + (2y - y) + 4 = 6x + y + 4\\text{ (cm)}$."
       }
     ]
-  }
+  },
+  // BÀI 4: PHÉP NHÂN ĐA THỨC
+  "t8-b4-phep-nhan-da-thuc": {
+    "id": "t8-b4-phep-nhan-da-thuc",
+    "lessonNumber": 4,
+    "title": "Bài 4: Phép nhân đa thức",
+    "bookChapter": "Chương I: Đa thức (SGK Toán 8 KNTT - Tập 1)",
+    "scenarioTitle": "Tình huống: Tính diện tích mảnh vườn mở rộng và thể tích khối hộp",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn An",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, gia đình em có một mảnh vườn hình chữ nhật ban đầu có chiều dài x mét và chiều rộng y mét. Nay bố em muốn mở rộng: tăng chiều dài thêm 3 mét và tăng chiều rộng thêm 2 mét. Làm thế nào để tính diện tích mảnh vườn mới bằng một đa thức ạ?",
+        "visualGraphic": "box",
+        "mathNote": "S = (x + 3)(y + 2)"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào An! Đó chính là ứng dụng tuyệt vời của phép nhân đa thức! Ta chỉ việc nhân mỗi hạng tử của đa thức thứ nhất với từng hạng tử của đa thức thứ hai: S = (x + 3)(y + 2) = xy + 2x + 3y + 6. Bài học này sẽ giúp các em nắm vững toàn bộ quy tắc nhân đơn thức với đa thức và nhân đa thức với đa thức một cách dễ dàng và chuẩn xác!",
+        "visualGraphic": "graph",
+        "mathNote": "(A + B)(C + D) = AC + AD + BC + BD"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Nhân đơn thức với đa thức",
+        "points": [
+          "Quy tắc: Muốn nhân một đơn thức với một đa thức, ta nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích với nhau.",
+          "Công thức tổng quát: $A(B + C) = AB + AC$.",
+          "Chú ý dấu của các hạng tử:",
+          "  $(+) \\cdot (+) = (+)$",
+          "  $(+) \\cdot (-) = (-)$",
+          "  $(-) \\cdot (-) = (+)$",
+          "Khi nhân các biến, áp dụng quy tắc nhân hai lũy thừa cùng cơ số: $x^m \\cdot x^n = x^{m+n}$."
+        ],
+        "formula": "A(B + C) = AB + AC",
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 19)",
+        "exampleProblem": "Thực hiện phép tính: a) $2x(x^2 - 3x + 1)$;  b) $(-3xy)(2x^2y - xy^2 + 4)$.",
+        "exampleSolution": "a) Nhân $2x$ với từng hạng tử:\n$2x(x^2 - 3x + 1) = 2x \\cdot x^2 + 2x \\cdot (-3x) + 2x \\cdot 1 = 2x^3 - 6x^2 + 2x$.\nb) Nhân $(-3xy)$ với từng hạng tử:\n$(-3xy)(2x^2y - xy^2 + 4) = (-3xy) \\cdot (2x^2y) + (-3xy) \\cdot (-xy^2) + (-3xy) \\cdot 4 = -6x^3y^2 + 3x^2y^3 - 12xy$."
+      },
+      {
+        "index": "2",
+        "title": "Nhân đa thức với đa thức",
+        "points": [
+          "Quy tắc: Muốn nhân một đa thức với một đa thức, ta nhân mỗi hạng tử của đa thức này với từng hạng tử của đa thức kia rồi cộng các tích với nhau.",
+          "Công thức tổng quát: $(A + B)(C + D) = AC + AD + BC + BD$.",
+          "Nếu đa thức có nhiều hơn hai hạng tử, ta thực hiện tương tự theo quy tắc phân phối.",
+          "Sau khi nhân, luôn chú ý thu gọn các hạng tử đồng dạng để đa thức kết quả đạt dạng tối giản."
+        ],
+        "formula": "(A + B)(C + D) = AC + AD + BC + BD",
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 20)",
+        "exampleProblem": "Thực hiện phép tính: a) $(x + 3)(x + 2)$;  b) $(2x - 1)(x^2 - 3x + 2)$.",
+        "exampleSolution": "a) $(x + 3)(x + 2) = x \\cdot x + x \\cdot 2 + 3 \\cdot x + 3 \\cdot 2 = x^2 + 2x + 3x + 6 = x^2 + 5x + 6$.\nb) Nhân từng hạng tử của $(2x - 1)$ với đa thức sau:\n$(2x - 1)(x^2 - 3x + 2) = 2x(x^2 - 3x + 2) - 1(x^2 - 3x + 2)$\n$= 2x^3 - 6x^2 + 4x - x^2 + 3x - 2 = 2x^3 - 7x^2 + 7x - 2$."
+      },
+      {
+        "index": "3",
+        "title": "Rút gọn biểu thức và tính giá trị",
+        "points": [
+          "Để tính giá trị của biểu thức chứa phép nhân đa thức, thông thường ta nên rút gọn biểu thức trước rồi mới thay giá trị của biến vào.",
+          "Dạng toán chứng minh giá trị biểu thức không phụ thuộc vào biến: Thực hiện phép nhân, thu gọn các hạng tử đồng dạng, nếu kết quả cuối cùng là một hằng số thì biểu thức không phụ thuộc vào biến.",
+          "Dạng toán tìm $x$: Rút gọn vế trái để triệt tiêu các hạng tử bậc hai (nếu có), đưa về dạng phương trình bậc nhất quen thuộc $ax = b$."
+        ],
+        "formula": "P(x) = C \\quad (C \\text{ là hằng số})",
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 21)",
+        "exampleProblem": "Rút gọn rồi tính giá trị của biểu thức: $A = (x - 2)(x + 2) - x(x - 3)$ tại $x = 4$.",
+        "exampleSolution": "Thực hiện phép nhân và rút gọn:\n$A = (x^2 + 2x - 2x - 4) - (x^2 - 3x) = x^2 - 4 - x^2 + 3x = 3x - 4$.\nThay $x = 4$ vào biểu thức đã rút gọn: $A = 3 \\cdot 4 - 4 = 12 - 4 = 8$."
+      },
+      {
+        "index": "4",
+        "title": "Ứng dụng hình học và bài toán thực tế",
+        "points": [
+          "Tính diện tích hình chữ nhật: $S = a \\cdot b$, với $a, b$ là các đa thức biểu thị chiều dài và chiều rộng.",
+          "Tính thể tích hình hộp chữ nhật: $V = a \\cdot b \\cdot c$, nhân ba kích thước dài, rộng và cao.",
+          "Tính diện tích hình tam giác, hình thang có độ dài các cạnh hoặc chiều cao chứa biến."
+        ],
+        "formula": "S = a \\cdot b; \\quad V = a \\cdot b \\cdot c",
+        "exampleTitle": "Ví dụ 4 (SGK Toán 8 KNTT Bài 1.25 Trang 21)",
+        "exampleProblem": "Một tấm bìa hình chữ nhật có kích thước ban đầu là $x\\text{ (cm)}$ và $y\\text{ (cm)}$. Người ta cắt bớt mỗi chiều $2\\text{ (cm)}$. Viết đa thức biểu thị diện tích phần bìa còn lại.",
+        "exampleSolution": "Kích thước của phần bìa còn lại là $(x - 2)\\text{ (cm)}$ và $(y - 2)\\text{ (cm)}$.\nDiện tích phần bìa còn lại là:\n$S = (x - 2)(y - 2) = x(y - 2) - 2(y - 2) = xy - 2x - 2y + 4\\text{ (cm}^2\\text{)}$."
+      }
+    ],
+    "youtubeVideoId": "t8_b4_video",
+    "youtubeVideoTitle": "Bài Giảng Video: Bài 4 - Phép nhân đa thức - Toán 8 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "t8_b4_video1",
+        "title": "Tiết 1: Quy tắc nhân đơn thức với đa thức và các dạng toán cơ bản"
+      },
+      {
+        "id": "t8_b4_video2",
+        "title": "Tiết 2: Quy tắc nhân đa thức với đa thức và bài toán thực tế"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.4.1",
+        "timeSeconds": 150,
+        "timeLabel": "02:30",
+        "title": "Ví dụ 1: Nhân đơn thức với đa thức",
+        "question": "Kết quả của phép nhân $3x(2x - 5)$ là:",
+        "options": [
+          "$6x^2 - 15x$",
+          "$6x^2 - 5$",
+          "$6x - 15$",
+          "$5x^2 - 15x$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhân $3x$ với từng hạng tử: $3x \\cdot 2x + 3x \\cdot (-5) = 6x^2 - 15x$."
+      },
+      {
+        "id": "vq-8.4.2",
+        "timeSeconds": 360,
+        "timeLabel": "06:00",
+        "title": "Ví dụ 2: Quy tắc dấu khi nhân đơn thức âm",
+        "question": "Kết quả của phép tính $(-2x)(x^2 - 3)$ là:",
+        "options": [
+          "$-2x^3 + 6x$",
+          "$-2x^3 - 6x$",
+          "$2x^3 + 6x$",
+          "$-2x^3 - 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng quy tắc dấu: $(-2x) \\cdot x^2 + (-2x) \\cdot (-3) = -2x^3 + 6x$."
+      },
+      {
+        "id": "vq-8.4.3",
+        "timeSeconds": 180,
+        "timeLabel": "03:00",
+        "title": "Ví dụ 3: Nhân hai nhị thức bậc nhất",
+        "question": "Khai triển của tích $(x + 2)(x + 5)$ là:",
+        "options": [
+          "$x^2 + 7x + 10$",
+          "$x^2 + 10x + 7$",
+          "$x^2 + 7x + 7$",
+          "$x^2 + 10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 2)(x + 5) = x^2 + 5x + 2x + 10 = x^2 + 7x + 10$."
+      },
+      {
+        "id": "vq-8.4.4",
+        "timeSeconds": 420,
+        "timeLabel": "07:00",
+        "title": "Ví dụ 4: Rút gọn biểu thức tích",
+        "question": "Rút gọn biểu thức $P = x(x - 4) - x^2$ ta được:",
+        "options": [
+          "$-4x$",
+          "$4x$",
+          "$2x^2 - 4x$",
+          "$-4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khai triển và trừ: $P = x^2 - 4x - x^2 = -4x$."
+      }
+    ],
+    "tips": [
+      "Nhân đơn thức với đa thức: Luôn nhớ nhân cả phần hệ số và cộng các số mũ của biến cùng loại: $x^m \\cdot x^n = x^{m+n}$.",
+      "Nhân đa thức với đa thức: Viết lần lượt từng tích theo thứ tự để không bị sót hạng tử. Đa thức có $m$ hạng tử nhân với đa thức có $n$ hạng tử sẽ sinh ra $m \\cdot n$ tích ban đầu trước khi thu gọn.",
+      "Quy tắc dấu đằng trước: Khi gặp dấu trừ trước tích đa thức như $-(x - 1)(x + 2)$, hãy để toàn bộ kết quả nhân trong dấu ngoặc rồi mới tiến hành đổi dấu tất cả các hạng tử.",
+      "Mẹo kiểm tra nhanh khi nhân $(x + a)(x + b)$: Kết quả luôn có dạng $x^2 + (a + b)x + ab$ (hệ số bậc nhất là tổng, hệ số tự do là tích)."
+    ],
+    "traps": [
+      "Bẫy nhân số mũ thay vì cộng số mũ: Viết $x^2 \\cdot x^3 = x^6$ là SAI, công thức đúng là $x^2 \\cdot x^3 = x^{2+3} = x^5$.",
+      "Bẫy nhân quên hạng tử tự do: Khi nhân $2x(x + 1)$, nhiều học sinh chỉ nhân $2x \\cdot x = 2x^2$ mà quên $2x \\cdot 1 = 2x$, dẫn đến kết quả sai $2x^2 + 1$.",
+      "Bẫy sai dấu khi nhân số âm: Khi nhân $(-3x)(2x - 4)$, học sinh dễ nhầm $(-3x) \\cdot (-4) = -12x$ thay vì $+12x$.",
+      "Bẫy quên thu gọn các hạng tử đồng dạng: Sau khi nhân đa thức với đa thức, nếu không thu gọn $2x + 3x = 5x$ thì biểu thức chưa đạt dạng chuẩn tối giản."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.4.1",
+        "badge": "Câu 1 (NB) - Quy tắc nhân đơn thức với đa thức",
+        "source": "SGK Toán 8 KNTT Trang 19",
+        "question": "Công thức nào sau đây biểu diễn đúng quy tắc nhân đơn thức với đa thức?",
+        "options": [
+          "$A(B + C) = AB + AC$",
+          "$A(B + C) = AB + C$",
+          "$A(B + C) = A + BC$",
+          "$A(B + C) = AB \\cdot AC$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Muốn nhân một đơn thức với một đa thức, ta nhân đơn thức với từng hạng tử của đa thức: $A(B + C) = AB + AC$."
+      },
+      {
+        "id": "quiz-8.4.2",
+        "badge": "Câu 2 (NB) - Nhân đơn thức bậc một với nhị thức",
+        "source": "SGK Toán 8 KNTT Trang 19",
+        "question": "Tích của đơn thức $x$ và đa thức $x + 1$ là:",
+        "options": [
+          "$x^2 + x$",
+          "$x^2 + 1$",
+          "$2x + 1$",
+          "$x^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $x(x + 1) = x \\cdot x + x \\cdot 1 = x^2 + x$."
+      },
+      {
+        "id": "quiz-8.4.3",
+        "badge": "Câu 3 (NB) - Nhân đơn thức có hệ số",
+        "source": "SGK Toán 8 KNTT Trang 19",
+        "question": "Kết quả của phép nhân $2x(3x - 1)$ là:",
+        "options": [
+          "$6x^2 - 2x$",
+          "$6x^2 - 1$",
+          "$5x^2 - 2x$",
+          "$6x - 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhân $2x$ với từng hạng tử: $2x \\cdot 3x + 2x \\cdot (-1) = 6x^2 - 2x$."
+      },
+      {
+        "id": "quiz-8.4.4",
+        "badge": "Câu 4 (NB) - Nhân đơn thức chứa dấu trừ",
+        "source": "SGK Toán 8 KNTT Trang 19",
+        "question": "Kết quả của phép nhân $-x(2x - 3)$ là:",
+        "options": [
+          "$-2x^2 + 3x$",
+          "$-2x^2 - 3x$",
+          "$2x^2 - 3x$",
+          "$-2x + 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $(-x) \\cdot 2x + (-x) \\cdot (-3) = -2x^2 + 3x$."
+      },
+      {
+        "id": "quiz-8.4.5",
+        "badge": "Câu 5 (NB) - Nhân đơn thức hai biến",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Tích của đơn thức $xy$ với đa thức $x - y$ là:",
+        "options": [
+          "$x^2y - xy^2$",
+          "$x^2y - y$",
+          "$xy - xy^2$",
+          "$x^2 - y^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $xy \\cdot x - xy \\cdot y = x^2y - xy^2$."
+      },
+      {
+        "id": "quiz-8.4.6",
+        "badge": "Câu 6 (NB) - Nhân hai đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 19",
+        "question": "Tích của hai đơn thức $2x^2$ và $-3x^3$ bằng:",
+        "options": [
+          "$-6x^5$",
+          "$-6x^6$",
+          "$6x^5$",
+          "$-x^5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nhân hệ số với hệ số, biến với biến: $2 \\cdot (-3) \\cdot (x^2 \\cdot x^3) = -6x^{2+3} = -6x^5$."
+      },
+      {
+        "id": "quiz-8.4.7",
+        "badge": "Câu 7 (NB) - Khai triển tích hai nhị thức cộng",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Khai triển tích $(x + 1)(x + 2)$ ta được:",
+        "options": [
+          "$x^2 + 3x + 2$",
+          "$x^2 + 2x + 2$",
+          "$x^2 + 3x + 3$",
+          "$x^2 + 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 1)(x + 2) = x^2 + 2x + x + 2 = x^2 + 3x + 2$."
+      },
+      {
+        "id": "quiz-8.4.8",
+        "badge": "Câu 8 (NB) - Tích tổng và hiệu",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Khai triển tích $(x - 1)(x + 1)$ ta được:",
+        "options": [
+          "$x^2 - 1$",
+          "$x^2 + 1$",
+          "$x^2 - 2x + 1$",
+          "$x^2 - 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 1)(x + 1) = x^2 + x - x - 1 = x^2 - 1$."
+      },
+      {
+        "id": "quiz-8.4.9",
+        "badge": "Câu 9 (NB) - Tích hai nhị thức chứa dấu trừ",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Khai triển tích $(x - 2)(x - 3)$ ta được:",
+        "options": [
+          "$x^2 - 5x + 6$",
+          "$x^2 - 5x - 6$",
+          "$x^2 + 5x + 6$",
+          "$x^2 - 6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 2)(x - 3) = x^2 - 3x - 2x + 6 = x^2 - 5x + 6$."
+      },
+      {
+        "id": "quiz-8.4.10",
+        "badge": "Câu 10 (NB) - Bậc của đa thức tích",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Bậc của đa thức thu gọn sau khi nhân $2x^2(3x^3 - x + 1)$ là:",
+        "options": [
+          "$5$",
+          "$6$",
+          "$3$",
+          "$4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hạng tử có bậc cao nhất là $2x^2 \\cdot 3x^3 = 6x^5$, do đó đa thức tích có bậc là $5$."
+      },
+      {
+        "id": "quiz-8.4.11",
+        "badge": "Câu 11 (TH) - Nhân đơn thức với đa thức nhiều biến",
+        "source": "SGK Toán 8 KNTT Trang 20",
+        "question": "Thực hiện phép tính $2xy(x^2 - 3xy + y^2)$ ta được kết quả là:",
+        "options": [
+          "$2x^3y - 6x^2y^2 + 2xy^3$",
+          "$2x^3y - 3x^2y^2 + 2xy^3$",
+          "$2x^3y - 6xy + 2xy^3$",
+          "$2x^2y - 6x^2y^2 + 2xy^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2xy \\cdot x^2 - 2xy \\cdot 3xy + 2xy \\cdot y^2 = 2x^3y - 6x^2y^2 + 2xy^3$."
+      },
+      {
+        "id": "quiz-8.4.12",
+        "badge": "Câu 12 (TH) - Nhân hai đa thức có hệ số",
+        "source": "SGK Toán 8 KNTT Trang 21",
+        "question": "Khai triển và thu gọn đa thức $(2x - 1)(x + 3)$ ta được:",
+        "options": [
+          "$2x^2 + 5x - 3$",
+          "$2x^2 + 6x - 3$",
+          "$2x^2 - 5x - 3$",
+          "$2x^2 + 5x + 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x - 1)(x + 3) = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3$."
+      },
+      {
+        "id": "quiz-8.4.13",
+        "badge": "Câu 13 (TH) - Nhân nhị thức với tam thức",
+        "source": "SGK Toán 8 KNTT Trang 21",
+        "question": "Khai triển và thu gọn biểu thức $(x - y)(x^2 + xy + y^2)$ ta được:",
+        "options": [
+          "$x^3 - y^3$",
+          "$x^3 + y^3$",
+          "$x^3 - 2x^2y + y^3$",
+          "$x^3 + 2xy^2 - y^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - y)(x^2 + xy + y^2) = x(x^2 + xy + y^2) - y(x^2 + xy + y^2) = x^3 + x^2y + xy^2 - x^2y - xy^2 - y^3 = x^3 - y^3$."
+      },
+      {
+        "id": "quiz-8.4.14",
+        "badge": "Câu 14 (TH) - Rút gọn biểu thức chứa phép nhân",
+        "source": "SGK Toán 8 KNTT Trang 21",
+        "question": "Rút gọn biểu thức $M = x(x - 2) - x^2$ ta được:",
+        "options": [
+          "$-2x$",
+          "$2x$",
+          "$x^2 - 2x$",
+          "$-2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$M = x^2 - 2x - x^2 = -2x$."
+      },
+      {
+        "id": "quiz-8.4.15",
+        "badge": "Câu 15 (TH) - Tính giá trị của biểu thức sau khi rút gọn",
+        "source": "SGK Toán 8 KNTT Trang 21",
+        "question": "Giá trị của biểu thức $A = x(x - y) + y(x + y)$ tại $x = 2$ và $y = 3$ là:",
+        "options": [
+          "$13$",
+          "$5$",
+          "$-5$",
+          "$25$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Rút gọn biểu thức trước: $A = x^2 - xy + xy + y^2 = x^2 + y^2$. Thay $x = 2, y = 3$: $A = 2^2 + 3^2 = 4 + 9 = 13$."
+      },
+      {
+        "id": "quiz-8.4.16",
+        "badge": "Câu 16 (TH) - Tìm x bằng phép nhân đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 21",
+        "question": "Tìm giá trị của $x$ thỏa mãn phương trình: $x(x + 2) - x^2 = 6$:",
+        "options": [
+          "$x = 3$",
+          "$x = -3$",
+          "$x = 6$",
+          "$x = 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khai triển vế trái: $x^2 + 2x - x^2 = 6 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3$."
+      },
+      {
+        "id": "quiz-8.4.17",
+        "badge": "Câu 17 (VD) - Rút gọn biểu thức tổng hợp",
+        "source": "SGK Toán 8 KNTT Bài 1.24 Trang 21",
+        "question": "Rút gọn biểu thức $P = (x - 3)(x + 3) - (x - 1)(x + 2)$ ta được:",
+        "options": [
+          "$-x - 7$",
+          "$-x - 11$",
+          "$x - 7$",
+          "$-x + 7$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có: $(x - 3)(x + 3) = x^2 - 9$ và $(x - 1)(x + 2) = x^2 + 2x - x - 2 = x^2 + x - 2$.\nDo đó $P = (x^2 - 9) - (x^2 + x - 2) = x^2 - 9 - x^2 - x + 2 = -x - 7$."
+      },
+      {
+        "id": "quiz-8.4.18",
+        "badge": "Câu 18 (VD) - Chứng minh biểu thức không phụ thuộc biến",
+        "source": "SGK Toán 8 KNTT Bài 1.26 Trang 21",
+        "question": "Biểu thức $M = (x - 5)(2x + 3) - 2x(x - 3) + x + 7$ có giá trị bằng:",
+        "options": [
+          "$-8$",
+          "$8$",
+          "$-15$",
+          "$0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khai triển: $(x - 5)(2x + 3) = 2x^2 + 3x - 10x - 15 = 2x^2 - 7x - 15$.\n$-2x(x - 3) = -2x^2 + 6x$.\nCộng lại: $M = (2x^2 - 7x - 15) - 2x^2 + 6x + x + 7 = (2x^2 - 2x^2) + (-7x + 6x + x) + (-15 + 7) = -8$."
+      },
+      {
+        "id": "quiz-8.4.19",
+        "badge": "Câu 19 (VD - Thực tế) - Diện tích mảnh vườn mở rộng",
+        "source": "SGK Toán 8 KNTT - Bài toán thực tế hình chữ nhật",
+        "question": "Một mảnh vườn hình chữ nhật ban đầu có chiều dài là $x\\text{ (m)}$ và chiều rộng là $y\\text{ (m)}$. Người ta tăng chiều dài thêm $3\\text{ m}$ và tăng chiều rộng thêm $2\\text{ m}$. Đa thức biểu thị diện tích mảnh vườn sau khi mở rộng là:",
+        "options": [
+          "$xy + 2x + 3y + 6\\text{ (m}^2\\text{)}$",
+          "$xy + 3x + 2y + 6\\text{ (m}^2\\text{)}$",
+          "$xy + 5\\text{ (m}^2\\text{)}$",
+          "$xy + 6\\text{ (m}^2\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Kích thước mới của mảnh vườn là $(x + 3)\\text{ (m)}$ và $(y + 2)\\text{ (m)}$.\nDiện tích mới là: $S = (x + 3)(y + 2) = x(y + 2) + 3(y + 2) = xy + 2x + 3y + 6\\text{ (m}^2\\text{)}$."
+      },
+      {
+        "id": "quiz-8.4.20",
+        "badge": "Câu 20 (VD - Thực tế) - Thể tích khối hộp chữ nhật",
+        "source": "Toán 8 KNTT - Ứng dụng hình học không gian",
+        "question": "Một khối hộp chữ nhật có ba kích thước lần lượt là $x\\text{ (cm)}$, $x + 2\\text{ (cm)}$ và $x + 4\\text{ (cm)}$. Đa thức biểu thị thể tích của khối hộp đó là:",
+        "options": [
+          "$x^3 + 6x^2 + 8x\\text{ (cm}^3\\text{)}$",
+          "$x^3 + 8x^2 + 6x\\text{ (cm}^3\\text{)}$",
+          "$x^3 + 6x + 8\\text{ (cm}^3\\text{)}$",
+          "$3x + 6\\text{ (cm}^3\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thể tích khối hộp chữ nhật bằng tích ba kích thước:\n$V = x(x + 2)(x + 4) = x(x^2 + 4x + 2x + 8) = x(x^2 + 6x + 8) = x^3 + 6x^2 + 8x\\text{ (cm}^3\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.4.1",
+        "badge": "Câu 1 (Đ/S) - Nhân đơn thức với đa thức",
+        "prompt": "Cho đơn thức $A = 2x^2$ và đa thức $B = 3x^2 - 4x + 1$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tích của $A$ và hạng tử bậc hai của $B$ là $6x^4$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $2x^2 \\cdot 3x^2 = 6x^{2+2} = 6x^4$."
+          },
+          {
+            "id": "b",
+            "text": "Tích của $A$ và hạng tử bậc nhất của $B$ là $8x^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, hạng tử bậc nhất của $B$ là $-4x$, do đó tích là $2x^2 \\cdot (-4x) = -8x^3$."
+          },
+          {
+            "id": "c",
+            "text": "Kết quả của phép nhân $A \\cdot B$ là $6x^4 - 8x^3 + 2x^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, nhân $2x^2$ với từng hạng tử của $B$ ta được $6x^4 - 8x^3 + 2x^2$."
+          },
+          {
+            "id": "d",
+            "text": "Bậc của đa thức tích $A \\cdot B$ bằng $6$.",
+            "correctAnswer": false,
+            "explanation": "Sai, hạng tử có bậc cao nhất là $6x^4$ nên bậc của đa thức tích là $4$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.4.2",
+        "badge": "Câu 2 (Đ/S) - Quy tắc nhân đa thức với đa thức",
+        "prompt": "Xét tính đúng/sai của các công thức và phép tính sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khẳng định $(A + B)(C + D) = AC + BD$ là đúng.",
+            "correctAnswer": false,
+            "explanation": "Sai, công thức đầy đủ phải là $(A + B)(C + D) = AC + AD + BC + BD$."
+          },
+          {
+            "id": "b",
+            "text": "Khai triển $(x - 4)(x + 4)$ ta được kết quả $x^2 - 16$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x - 4)(x + 4) = x^2 + 4x - 4x - 16 = x^2 - 16$."
+          },
+          {
+            "id": "c",
+            "text": "Tích của $(x + 2)$ và $(x - 3)$ là $x^2 - x - 6$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^2 - 3x + 2x - 6 = x^2 - x - 6$."
+          },
+          {
+            "id": "d",
+            "text": "Hệ số tự do của tích $(2x + 3)(3x - 5)$ bằng $15$.",
+            "correctAnswer": false,
+            "explanation": "Sai, hệ số tự do là $3 \\cdot (-5) = -15$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.4.3",
+        "badge": "Câu 3 (Đ/S) - Rút gọn và tính giá trị biểu thức",
+        "prompt": "Cho biểu thức $P = (x - 2)(x^2 + 2x + 4) - x^2(x - 1)$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khai triển tích $(x - 2)(x^2 + 2x + 4)$ ta được kết quả $x^3 - 8$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, nhân ra và triệt tiêu các hạng tử đối nhau ta được $x^3 - 8$ (đây chính là hằng đẳng thức hiệu hai lập phương)."
+          },
+          {
+            "id": "b",
+            "text": "Khai triển $-x^2(x - 1)$ ta được $-x^3 - x^2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(-x^2) \\cdot x + (-x^2) \\cdot (-1) = -x^3 + x^2$."
+          },
+          {
+            "id": "c",
+            "text": "Biểu thức $P$ sau khi thu gọn bằng $x^2 - 8$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $P = (x^3 - 8) - x^3 + x^2 = x^2 - 8$."
+          },
+          {
+            "id": "d",
+            "text": "Tại $x = -3$, giá trị của biểu thức $P$ bằng $1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thay $x = -3$: $P = (-3)^2 - 8 = 9 - 8 = 1$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.4.4",
+        "badge": "Câu 4 (Đ/S) - Bài toán thực tế diện tích sân chơi",
+        "prompt": "Một sân chơi hình chữ nhật có chiều dài là $2x + 5\\text{ (m)}$ và chiều rộng là $x + 2\\text{ (m)}$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức biểu thị diện tích sân chơi là một đa thức bậc hai.",
+            "correctAnswer": true,
+            "explanation": "Đúng, diện tích là tích của hai nhị thức bậc nhất nên có bậc là $1 + 1 = 2$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức biểu thị diện tích sân chơi là $2x^2 + 9x + 10\\text{ (m}^2\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $S = (2x + 5)(x + 2) = 2x^2 + 4x + 5x + 10 = 2x^2 + 9x + 10\\text{ (m}^2\\text{)}$."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $x = 10\\text{ m}$, diện tích sân chơi bằng $300\\text{ m}^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, chiều dài là $2(10) + 5 = 25\\text{ m}$, chiều rộng là $10 + 2 = 12\\text{ m}$. Diện tích là $25 \\cdot 12 = 300\\text{ m}^2$ (hoặc thay vào đa thức: $2(100) + 9(10) + 10 = 300$)."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức biểu thị chu vi của sân chơi là $3x + 7\\text{ (m)}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, chu vi là $2 \\cdot [(2x + 5) + (x + 2)] = 2(3x + 7) = 6x + 14\\text{ (m)}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.4.1",
+        "badge": "Câu 1 (TH) - Tính giá trị của tích tại giá trị của biến",
+        "prompt": "Tính giá trị của biểu thức $M = (x - 1)(x + 1)$ tại $x = 5$.",
+        "correctAnswer": "24",
+        "acceptableAnswers": [
+          "24",
+          "hai mươi tư",
+          "hai mươi bốn"
+        ],
+        "explanation": "Ta có $(x - 1)(x + 1) = x^2 - 1$. Với $x = 5$, giá trị biểu thức là $5^2 - 1 = 25 - 1 = 24$."
+      },
+      {
+        "id": "sa-8.4.2",
+        "badge": "Câu 2 (TH) - Tìm hệ số của x bình phương trong tích",
+        "prompt": "Hệ số của $x^2$ trong đa thức kết quả của phép nhân $(2x - 3)(x + 4)$ bằng bao nhiêu?",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "Khai triển: $(2x - 3)(x + 4) = 2x^2 + 8x - 3x - 12 = 2x^2 + 5x - 12$. Hệ số của $x^2$ là $2$."
+      },
+      {
+        "id": "sa-8.4.3",
+        "badge": "Câu 3 (TH) - Tìm nghiệm phương trình bằng phép nhân đơn thức",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $x(x - 3) - x^2 = 9$.",
+        "correctAnswer": "-3",
+        "acceptableAnswers": [
+          "-3",
+          "âm 3",
+          "- 3"
+        ],
+        "explanation": "Khai triển vế trái: $x^2 - 3x - x^2 = 9 \\Leftrightarrow -3x = 9 \\Leftrightarrow x = -3$."
+      },
+      {
+        "id": "sa-8.4.4",
+        "badge": "Câu 4 (VD) - Tính giá trị của biểu thức tích sau rút gọn",
+        "prompt": "Tính giá trị của biểu thức $A = (x - y)(x^2 + xy + y^2)$ tại $x = 3$ và $y = 2$.",
+        "correctAnswer": "19",
+        "acceptableAnswers": [
+          "19",
+          "mười chín"
+        ],
+        "explanation": "Ta có $A = x^3 - y^3$. Với $x = 3, y = 2$, giá trị là $3^3 - 2^3 = 27 - 8 = 19$."
+      },
+      {
+        "id": "sa-8.4.5",
+        "badge": "Câu 5 (VD - Thực tế) - Hệ số tự do của đa thức diện tích",
+        "prompt": "Một mảnh đất hình chữ nhật có kích thước là $(x + 4)\\text{ (m)}$ và $(x + 6)\\text{ (m)}$. Hệ số tự do của đa thức biểu thị diện tích mảnh đất đó bằng bao nhiêu?",
+        "correctAnswer": "24",
+        "acceptableAnswers": [
+          "24",
+          "hai mươi tư",
+          "hai mươi bốn"
+        ],
+        "explanation": "Diện tích là $S = (x + 4)(x + 6) = x^2 + 10x + 24$. Hệ số tự do là $4 \\cdot 6 = 24$."
+      },
+      {
+        "id": "sa-8.4.6",
+        "badge": "Câu 6 (VD) - Tìm x để biểu thức đạt giá trị cho trước",
+        "prompt": "Cho biểu thức $Q = (2x - 1)(3x + 2) - 6x(x - 1)$. Tìm giá trị của $x$ để biểu thức $Q$ nhận giá trị bằng $19$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "Rút gọn $Q$: $(6x^2 + 4x - 3x - 2) - (6x^2 - 6x) = 6x^2 + x - 2 - 6x^2 + 6x = 7x - 2$.\nĐể $Q = 19$ thì $7x - 2 = 19 \\Leftrightarrow 7x = 21 \\Leftrightarrow x = 3$."
+      }
+    ]
+  },
 };

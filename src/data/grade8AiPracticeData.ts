@@ -690,5 +690,233 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "correctIndex": 0,
       "explanation": "Lượng nước cần đổ thêm vào: $\\Delta V = V_1 - V_2 = (3x^2y + 5xy^2) - (x^2y + 2xy^2) = (3 - 1)x^2y + (5 - 2)xy^2 = 2x^2y + 3xy^2\\text{ (dm}^3\\text{)}$."
     }
-  ]
+  ],
+  // BÀI 4: PHÉP NHÂN ĐA THỨC
+  "t8-b4-phep-nhan-da-thuc": [
+    {
+      "id": "ai-8.4.1",
+      "badge": "Luyện thêm 1 (NB) - Nhân đơn thức với nhị thức cơ bản",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 19",
+      "question": "Tích của đơn thức $3x$ và đa thức $x - 2$ là:",
+      "options": [
+        "$3x^2 - 6x$",
+        "$3x^2 - 2$",
+        "$3x^2 - 5x$",
+        "$3x - 6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$3x(x - 2) = 3x \\cdot x - 3x \\cdot 2 = 3x^2 - 6x$."
+    },
+    {
+      "id": "ai-8.4.2",
+      "badge": "Luyện thêm 2 (NB) - Nhân đơn thức âm với đa thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 19",
+      "question": "Kết quả của phép nhân $-2x(x^2 - 4)$ là:",
+      "options": [
+        "$-2x^3 + 8x$",
+        "$-2x^3 - 8x$",
+        "$2x^3 - 8x$",
+        "$-2x^3 + 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(-2x) \\cdot x^2 + (-2x) \\cdot (-4) = -2x^3 + 8x$."
+    },
+    {
+      "id": "ai-8.4.3",
+      "badge": "Luyện thêm 3 (NB) - Nhân đơn thức hai biến",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 20",
+      "question": "Tích của $2x^2y$ và $3xy - 1$ là:",
+      "options": [
+        "$6x^3y^2 - 2x^2y$",
+        "$6x^2y^2 - 2x^2y$",
+        "$5x^3y^2 - 2x^2y$",
+        "$6x^3y - 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$2x^2y \\cdot 3xy - 2x^2y \\cdot 1 = 6x^3y^2 - 2x^2y$."
+    },
+    {
+      "id": "ai-8.4.4",
+      "badge": "Luyện thêm 4 (NB) - Khai triển tích hai nhị thức cộng",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 20",
+      "question": "Khai triển tích $(x + 3)(x + 4)$ ta được:",
+      "options": [
+        "$x^2 + 7x + 12$",
+        "$x^2 + 12x + 7$",
+        "$x^2 + 7x + 7$",
+        "$x^2 + 12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x + 3)(x + 4) = x^2 + 4x + 3x + 12 = x^2 + 7x + 12$."
+    },
+    {
+      "id": "ai-8.4.5",
+      "badge": "Luyện thêm 5 (NB) - Khai triển tích có số âm",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 20",
+      "question": "Khai triển tích $(x - 5)(x + 2)$ ta được:",
+      "options": [
+        "$x^2 - 3x - 10$",
+        "$x^2 + 3x - 10$",
+        "$x^2 - 7x - 10$",
+        "$x^2 - 10$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 5)(x + 2) = x^2 + 2x - 5x - 10 = x^2 - 3x - 10$."
+    },
+    {
+      "id": "ai-8.4.6",
+      "badge": "Luyện thêm 6 (NB) - Bậc của tích",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 20",
+      "question": "Bậc của đa thức tích $(-3x^3)(2x^2 - 5x + 1)$ là:",
+      "options": [
+        "$5$",
+        "$6$",
+        "$3$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hạng tử có bậc cao nhất là $(-3x^3) \\cdot 2x^2 = -6x^5$, bậc của đa thức tích là $5$."
+    },
+    {
+      "id": "ai-8.4.7",
+      "badge": "Luyện thêm 7 (TH) - Nhân đơn thức với tam thức bậc hai",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 20",
+      "question": "Thực hiện phép tính $x^2(2x^2 - 3x + 5)$ ta được:",
+      "options": [
+        "$2x^4 - 3x^3 + 5x^2$",
+        "$2x^3 - 3x^2 + 5x$",
+        "$2x^4 + 3x^3 + 5x^2$",
+        "$2x^4 - 3x^2 + 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 \\cdot 2x^2 - x^2 \\cdot 3x + x^2 \\cdot 5 = 2x^4 - 3x^3 + 5x^2$."
+    },
+    {
+      "id": "ai-8.4.8",
+      "badge": "Luyện thêm 8 (TH) - Nhân hai đa thức có hệ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 21",
+      "question": "Khai triển và thu gọn đa thức $(3x - 2)(x + 1)$ ta được:",
+      "options": [
+        "$3x^2 + x - 2$",
+        "$3x^2 - x - 2$",
+        "$3x^2 + 5x - 2$",
+        "$3x^2 - 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3x - 2)(x + 1) = 3x^2 + 3x - 2x - 2 = 3x^2 + x - 2$."
+    },
+    {
+      "id": "ai-8.4.9",
+      "badge": "Luyện thêm 9 (TH) - Rút gọn biểu thức chứa phép nhân",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 21",
+      "question": "Rút gọn biểu thức $A = 2x(x + 3) - 2x^2$ ta được:",
+      "options": [
+        "$6x$",
+        "$-6x$",
+        "$4x^2 + 6x$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = 2x^2 + 6x - 2x^2 = 6x$."
+    },
+    {
+      "id": "ai-8.4.10",
+      "badge": "Luyện thêm 10 (TH) - Tìm x bằng phép nhân đa thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 21",
+      "question": "Tìm giá trị của $x$ thỏa mãn phương trình: $x(x - 5) - x^2 = 15$:",
+      "options": [
+        "$x = -3$",
+        "$x = 3$",
+        "$x = -5$",
+        "$x = 5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 5x - x^2 = 15 \\Leftrightarrow -5x = 15 \\Leftrightarrow x = -3$."
+    },
+    {
+      "id": "ai-8.4.11",
+      "badge": "Bài tập mở rộng 1 (VD) - Rút gọn biểu thức tích hai nhị thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Nâng cao",
+      "question": "Rút gọn biểu thức $M = (x - 2)(x + 2) - (x - 3)(x + 1)$ ta được:",
+      "options": [
+        "$2x - 1$",
+        "$-2x - 1$",
+        "$2x - 7$",
+        "$-1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x - 2)(x + 2) = x^2 - 4$.\n$(x - 3)(x + 1) = x^2 + x - 3x - 3 = x^2 - 2x - 3$.\n$M = (x^2 - 4) - (x^2 - 2x - 3) = x^2 - 4 - x^2 + 2x + 3 = 2x - 1$."
+    },
+    {
+      "id": "ai-8.4.12",
+      "badge": "Bài tập mở rộng 2 (VD) - Tính giá trị của biểu thức tích",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Nâng cao",
+      "question": "Giá trị của biểu thức $P = (2x - y)(4x^2 + 2xy + y^2)$ tại $x = 1$ và $y = 2$ là:",
+      "options": [
+        "$0$",
+        "$16$",
+        "$-8$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta có $P = (2x)^3 - y^3 = 8x^3 - y^3$. Thay $x = 1, y = 2$: $P = 8(1)^3 - 2^3 = 8 - 8 = 0$."
+    },
+    {
+      "id": "ai-8.4.13",
+      "badge": "Bài tập mở rộng 3 (VD) - Chứng minh không phụ thuộc biến",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Bài 1.26 Trang 21",
+      "question": "Cho biểu thức $H = (x - 1)(x + 2) - x(x + 1) + 5$. Giá trị của $H$ là:",
+      "options": [
+        "$3$",
+        "$5$",
+        "$-3$",
+        "$7$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$H = (x^2 + 2x - x - 2) - (x^2 + x) + 5 = x^2 + x - 2 - x^2 - x + 5 = 3$."
+    },
+    {
+      "id": "ai-8.4.14",
+      "badge": "Bài tập mở rộng 4 (VD - Thực tế) - Diện tích hình chữ nhật",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một mảnh đất hình chữ nhật có chiều dài là $2x + 3\\text{ (m)}$ và chiều rộng là $x + 1\\text{ (m)}$. Đa thức biểu thị diện tích mảnh đất đó là:",
+      "options": [
+        "$2x^2 + 5x + 3\\text{ (m}^2\\text{)}$",
+        "$2x^2 + 3x + 3\\text{ (m}^2\\text{)}$",
+        "$2x^2 + 6x + 3\\text{ (m}^2\\text{)}$",
+        "$3x + 4\\text{ (m}^2\\text{)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S = (2x + 3)(x + 1) = 2x^2 + 2x + 3x + 3 = 2x^2 + 5x + 3\\text{ (m}^2\\text{)}$."
+    },
+    {
+      "id": "ai-8.4.15",
+      "badge": "Bài tập mở rộng 5 (VD - Thực tế) - Thể tích bể nước hình hộp",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một bể chứa nước hình hộp chữ nhật có đáy hình vuông cạnh $x\\text{ (m)}$ và chiều cao là $x + 1\\text{ (m)}$. Đa thức biểu thị dung tích của bể nước đó là:",
+      "options": [
+        "$x^3 + x^2\\text{ (m}^3\\text{)}$",
+        "$x^3 + 1\\text{ (m}^3\\text{)}$",
+        "$x^2 + x\\text{ (m}^3\\text{)}$",
+        "$3x + 1\\text{ (m}^3\\text{)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dung tích khối hộp chữ nhật: $V = x \\cdot x \\cdot (x + 1) = x^2(x + 1) = x^3 + x^2\\text{ (m}^3\\text{)}$."
+    }
+  ],
 };

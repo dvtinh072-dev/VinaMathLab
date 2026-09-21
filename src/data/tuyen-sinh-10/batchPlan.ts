@@ -39,7 +39,7 @@ export const TUYEN_SINH_10_ROADMAP: ProvinceExamMeta[] = [
     totalPoints: 10.0,
     batchNumber: 1,
     status: "completed",
-    notes: "Nguồn chính thức Sở GD&ĐT Hà Nội năm học 2026-2027. 100% Tự luận (5 bài), giữ nguyên bản không vẽ sẵn hình.",
+    notes: "Nguồn chính thức Sở GD&ĐT Hà Nội (Khóa thi 31/5/2026). 100% Tự luận (5 câu lớn gồm Thống kê, Căn thức, Đại số thực tế, Hình học không gian xô nước và Hình học đường tròn, BĐT chi phí kho xưởng).",
   },
   {
     code: "ts10-tphcm-2026",
@@ -50,7 +50,7 @@ export const TUYEN_SINH_10_ROADMAP: ProvinceExamMeta[] = [
     totalPoints: 10.0,
     batchNumber: 1,
     status: "completed",
-    notes: "Nguồn chính thức Sở GD&ĐT TP.HCM năm học 2026-2027. 100% Tự luận (6 bài thực tế đời sống), chuẩn nguyên bản đề gốc.",
+    notes: "Nguồn chính thức Sở GD&ĐT TP.HCM (Khóa thi 02/6/2026). 100% Tự luận (7 bài gồm Parabol, Viète, Thống kê dùng ĐT, Mảnh đất bác Năm, Bình inox, Năng suất 2 đội, Hình học đường tròn).",
   },
 
   // --- ĐỢT 2: CỤM MIỀN BẮC ---

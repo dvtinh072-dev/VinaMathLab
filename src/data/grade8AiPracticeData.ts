@@ -919,4 +919,232 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "explanation": "Dung tích khối hộp chữ nhật: $V = x \\cdot x \\cdot (x + 1) = x^2(x + 1) = x^3 + x^2\\text{ (m}^3\\text{)}$."
     }
   ],
+  // BÀI 5: PHÉP CHIA ĐA THỨC CHO ĐƠN THỨC
+  "t8-b5-phep-chia-da-thuc-don-thuc": [
+    {
+      "id": "ai-8.5.1",
+      "badge": "Luyện thêm 1 (NB) - Chia hai lũy thừa cùng cơ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 22",
+      "question": "Kết quả của phép chia $y^8 : y^3$ là:",
+      "options": [
+        "$y^5$",
+        "$y^{11}$",
+        "$y^{24}$",
+        "$y^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$y^8 : y^3 = y^{8-3} = y^5$."
+    },
+    {
+      "id": "ai-8.5.2",
+      "badge": "Luyện thêm 2 (NB) - Chia đơn thức một biến có hệ số",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 22",
+      "question": "Kết quả của phép chia $10x^4 : 2x^2$ là:",
+      "options": [
+        "$5x^2$",
+        "$5x^6$",
+        "$8x^2$",
+        "$5x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(10 : 2)(x^4 : x^2) = 5x^2$."
+    },
+    {
+      "id": "ai-8.5.3",
+      "badge": "Luyện thêm 3 (NB) - Chia đơn thức hai biến",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 22",
+      "question": "Kết quả của phép chia $16x^3y^2 : 4x^2y$ là:",
+      "options": [
+        "$4xy$",
+        "$4x^2y$",
+        "$4x$",
+        "$12xy$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(16 : 4)(x^3 : x^2)(y^2 : y) = 4xy$."
+    },
+    {
+      "id": "ai-8.5.4",
+      "badge": "Luyện thêm 4 (NB) - Chia đơn thức chứa dấu âm",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 22",
+      "question": "Kết quả của phép chia $-20x^5y^3 : (-5x^3y)$ là:",
+      "options": [
+        "$4x^2y^2$",
+        "$-4x^2y^2$",
+        "$4x^2y$",
+        "$-4x^8y^4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$[-20 : (-5)](x^5 : x^3)(y^3 : y) = 4x^2y^2$."
+    },
+    {
+      "id": "ai-8.5.5",
+      "badge": "Luyện thêm 5 (NB) - Chia nhị thức cho đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 23",
+      "question": "Kết quả của phép chia $(6x^3 + 3x^2) : 3x^2$ là:",
+      "options": [
+        "$2x + 1$",
+        "$2x$",
+        "$2x + 3$",
+        "$x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(6x^3 : 3x^2) + (3x^2 : 3x^2) = 2x + 1$."
+    },
+    {
+      "id": "ai-8.5.6",
+      "badge": "Luyện thêm 6 (NB) - Chia đa thức hai biến cho đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 23",
+      "question": "Kết quả của phép chia $(8x^2y - 4xy) : 4xy$ là:",
+      "options": [
+        "$2x - 1$",
+        "$2x$",
+        "$2x - 4$",
+        "$x - 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(8x^2y : 4xy) - (4xy : 4xy) = 2x - 1$."
+    },
+    {
+      "id": "ai-8.5.7",
+      "badge": "Luyện thêm 7 (TH) - Chia đa thức ba hạng tử",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 23",
+      "question": "Kết quả của phép chia $(9x^4 - 6x^3 + 3x^2) : 3x^2$ là:",
+      "options": [
+        "$3x^2 - 2x + 1$",
+        "$3x^2 - 2x$",
+        "$3x^2 - 2x + 3$",
+        "$3x^2 - 3x + 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(9x^4 : 3x^2) - (6x^3 : 3x^2) + (3x^2 : 3x^2) = 3x^2 - 2x + 1$."
+    },
+    {
+      "id": "ai-8.5.8",
+      "badge": "Luyện thêm 8 (TH) - Chia đa thức cho đơn thức âm",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 23",
+      "question": "Kết quả của phép chia $(8x^3 - 4x^2) : (-2x)$ là:",
+      "options": [
+        "$-4x^2 + 2x$",
+        "$-4x^2 - 2x$",
+        "$4x^2 - 2x$",
+        "$-4x^2 + 4x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$[8x^3 : (-2x)] - [4x^2 : (-2x)] = -4x^2 - (-2x) = -4x^2 + 2x$."
+    },
+    {
+      "id": "ai-8.5.9",
+      "badge": "Luyện thêm 9 (TH) - Rút gọn biểu thức chứa phép chia",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 24",
+      "question": "Rút gọn biểu thức $A = (10x^3 - 5x^2) : 5x^2 + 2$ ta được:",
+      "options": [
+        "$2x + 1$",
+        "$2x - 1$",
+        "$2x + 2$",
+        "$2x$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A = (2x - 1) + 2 = 2x + 1$."
+    },
+    {
+      "id": "ai-8.5.10",
+      "badge": "Luyện thêm 10 (TH) - Tìm x bằng phép chia đa thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT Trang 24",
+      "question": "Tìm giá trị của $x$ thỏa mãn: $(8x^2 - 6x) : 2x = 5$:",
+      "options": [
+        "$x = 2$",
+        "$x = -2$",
+        "$x = 4$",
+        "$x = 1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(8x^2 : 2x) - (6x : 2x) = 4x - 3$.\n$4x - 3 = 5 \\Leftrightarrow 4x = 8 \\Leftrightarrow x = 2$."
+    },
+    {
+      "id": "ai-8.5.11",
+      "badge": "Bài tập mở rộng 1 (VD) - Rút gọn biểu thức kết hợp nhân và chia",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Rút gọn biểu thức $M = (6x^3 - 9x^2) : 3x^2 - x(1 - x)$ ta được:",
+      "options": [
+        "$x^2 + x - 3$",
+        "$x^2 - x - 3$",
+        "$x^2 - 3$",
+        "$2x - 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(6x^3 - 9x^2) : 3x^2 = 2x - 3$.\n$-x(1 - x) = -x + x^2$.\nCộng lại: $(2x - 3) - x + x^2 = x^2 + x - 3$."
+    },
+    {
+      "id": "ai-8.5.12",
+      "badge": "Bài tập mở rộng 2 (VD) - Tính giá trị của biểu thức hai biến",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Giá trị của biểu thức $P = (16x^3y^2 - 8x^2y^3) : 8x^2y^2$ tại $x = 5, y = 3$ là:",
+      "options": [
+        "$7$",
+        "$10$",
+        "$3$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (16x^3y^2 : 8x^2y^2) - (8x^2y^3 : 8x^2y^2) = 2x - y$.\nTại $x = 5, y = 3$: $P = 2(5) - 3 = 10 - 3 = 7$."
+    },
+    {
+      "id": "ai-8.5.13",
+      "badge": "Bài tập mở rộng 3 (VD) - Chứng minh biểu thức không phụ thuộc biến",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Bài 1.31 Trang 24",
+      "question": "Giá trị của biểu thức $H = (8x^4 - 4x^3 + 2x^2) : 2x^2 - (4x^2 - 2x)$ là:",
+      "options": [
+        "$1$",
+        "$0$",
+        "$-1$",
+        "$2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(8x^4 - 4x^3 + 2x^2) : 2x^2 = 4x^2 - 2x + 1$.\n$H = (4x^2 - 2x + 1) - (4x^2 - 2x) = 1$."
+    },
+    {
+      "id": "ai-8.5.14",
+      "badge": "Bài tập mở rộng 4 (VD - Thực tế) - Chiều rộng mảnh vườn chữ nhật",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một mảnh vườn hình chữ nhật có diện tích là $S = 8x^2y + 12xy^2\\text{ (m}^2\\text{)}$ và chiều dài là $4xy\\text{ (m)}$. Chiều rộng của mảnh vườn là:",
+      "options": [
+        "$2x + 3y\\text{ (m)}$",
+        "$2x - 3y\\text{ (m)}$",
+        "$3x + 2y\\text{ (m)}$",
+        "$2x^2 + 3y^2\\text{ (m)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chiều rộng = Diện tích : Chiều dài:\n$r = (8x^2y + 12xy^2) : 4xy = 2x + 3y\\text{ (m)}$."
+    },
+    {
+      "id": "ai-8.5.15",
+      "badge": "Bài tập mở rộng 5 (VD - Thực tế) - Chiều cao bể nước hình hộp",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một bể nước hình hộp chữ nhật có dung tích là $V = 15x^3 + 20x^2\\text{ (dm}^3\\text{)}$ và diện tích đáy là $S = 5x^2\\text{ (dm}^2\\text{)}$. Chiều cao của bể nước đó là:",
+      "options": [
+        "$3x + 4\\text{ (dm)}$",
+        "$3x - 4\\text{ (dm)}$",
+        "$4x + 3\\text{ (dm)}$",
+        "$3x^2 + 4\\text{ (dm)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chiều cao bể nước: $h = V : S = (15x^3 + 20x^2) : 5x^2 = 3x + 4\\text{ (dm)}$."
+    }
+  ],
 };

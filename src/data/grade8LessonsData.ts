@@ -1267,4 +1267,655 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  // BÀI 5: PHÉP CHIA ĐA THỨC CHO ĐƠN THỨC
+  "t8-b5-phep-chia-da-thuc-don-thuc": {
+    "id": "t8-b5-phep-chia-da-thuc-don-thuc",
+    "lessonNumber": 5,
+    "title": "Bài 5: Phép chia đa thức cho đơn thức",
+    "bookChapter": "Chương I: Đa thức (SGK Toán 8 KNTT - Tập 1)",
+    "scenarioTitle": "Tình huống: Tính chiều dài khu vườn và kích thước hồ bơi",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn Minh",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, bác bảo vệ trường em đang chia một khu vườn hình chữ nhật có tổng diện tích là S = 6x³y + 9x²y² mét vuông thành các luống hoa có chiều rộng đúng bằng 3x²y mét. Bác hỏi em chiều dài của khu vườn là bao nhiêu mét mà em chưa biết cách chia đa thức cho đơn thức ạ?",
+        "visualGraphic": "box",
+        "mathNote": "S = 6x^3y + 9x^2y^2; \\quad d = 3x^2y"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào Minh! Câu hỏi của bác bảo vệ chính là bài toán chia đa thức cho đơn thức rất thú vị! Muốn tìm chiều dài, ta chỉ cần chia từng hạng tử của đa thức diện tích cho đơn thức chiều rộng: (6x³y + 9x²y²) : (3x²y) = (6x³y : 3x²y) + (9x²y² : 3x²y) = 2x + 3y mét. Thầy trò ta cùng tìm hiểu kỹ quy tắc này nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "(A + B) : C = A : C + B : C"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Phép chia đơn thức cho đơn thức",
+        "points": [
+          "Điều kiện chia hết: Đơn thức $A$ chia hết cho đơn thức $B$ ($B \\ne 0$) khi mỗi biến của $B$ đều là biến của $A$ với số mũ không lớn hơn số mũ của nó trong $A$.",
+          "Quy tắc chia đơn thức cho đơn thức:",
+          "  Bước 1: Chia hệ số của đơn thức $A$ cho hệ số của đơn thức $B$.",
+          "  Bước 2: Chia lũy thừa của từng biến trong $A$ cho lũy thừa của cùng biến đó trong $B$: $x^m : x^n = x^{m-n}$ ($m \\ge n$).",
+          "  Bước 3: Nhân các kết quả vừa tìm được với nhau.",
+          "Quy ước: Với $x \\ne 0$, ta có $x^0 = 1$ và $x^m : x^m = 1$."
+        ],
+        "formula": "a x^m y^n : b x^p y^q = \\frac{a}{b} x^{m-p} y^{n-q} \\quad (b \\ne 0, m \\ge p, n \\ge q)",
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 22)",
+        "exampleProblem": "Thực hiện phép tính: a) $15x^5 : 3x^2$;  b) $12x^3y^2 : (-4xy)$.",
+        "exampleSolution": "a) Chia hệ số và trừ số mũ của biến $x$:\n$15x^5 : 3x^2 = (15 : 3) \\cdot (x^5 : x^2) = 5x^{5-2} = 5x^3$.\nb) $12x^3y^2 : (-4xy) = [12 : (-4)] \\cdot (x^3 : x) \\cdot (y^2 : y) = -3x^2y$."
+      },
+      {
+        "index": "2",
+        "title": "Phép chia đa thức cho đơn thức",
+        "points": [
+          "Điều kiện chia hết: Đa thức $A$ chia hết cho đơn thức $B$ nếu mọi hạng tử của $A$ đều chia hết cho $B$.",
+          "Quy tắc: Muốn chia đa thức $A$ cho đơn thức $B$ (trường hợp chia hết), ta chia từng hạng tử của $A$ cho $B$ rồi cộng các kết quả với nhau.",
+          "Công thức tổng quát: $(A + B + C) : D = A : D + B : D + C : D$.",
+          "Lưu ý về dấu: Cần chú ý quy tắc dấu của từng thương khi chia các hạng tử mang dấu âm."
+        ],
+        "formula": "(A + B + C) : D = A : D + B : D + C : D",
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 23)",
+        "exampleProblem": "Làm tính chia: a) $(6x^4 - 9x^3 + 3x^2) : 3x^2$;  b) $(4x^3y^2 - 8x^2y + 10xy) : 2xy$.",
+        "exampleSolution": "a) Chia từng hạng tử cho $3x^2$:\n$(6x^4 - 9x^3 + 3x^2) : 3x^2 = (6x^4 : 3x^2) - (9x^3 : 3x^2) + (3x^2 : 3x^2) = 2x^2 - 3x + 1$.\nb) $(4x^3y^2 - 8x^2y + 10xy) : 2xy = (4x^3y^2 : 2xy) - (8x^2y : 2xy) + (10xy : 2xy) = 2x^2y - 4x + 5$."
+      },
+      {
+        "index": "3",
+        "title": "Rút gọn biểu thức và tính giá trị",
+        "points": [
+          "Khi biểu thức gồm cả phép nhân, chia, cộng, trừ: Ta thực hiện phép tính nhân, chia trước rồi thực hiện phép cộng, trừ sau.",
+          "Thu gọn các hạng tử đồng dạng để thu được kết quả tối giản.",
+          "Sau khi rút gọn, thay giá trị cụ thể của các biến vào biểu thức đã thu gọn để tính toán nhanh chóng và chính xác nhất."
+        ],
+        "formula": "P = A : B + C \\cdot D",
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 24)",
+        "exampleProblem": "Rút gọn rồi tính giá trị của biểu thức $P = (12x^3y^2 - 8x^2y^3) : 4x^2y^2$ tại $x = 2, y = 1$.",
+        "exampleSolution": "Thực hiện phép chia:\n$P = (12x^3y^2 : 4x^2y^2) - (8x^2y^3 : 4x^2y^2) = 3x - 2y$.\nThay $x = 2, y = 1$ vào $P$:\n$P = 3 \\cdot 2 - 2 \\cdot 1 = 6 - 2 = 4$."
+      },
+      {
+        "index": "4",
+        "title": "Ứng dụng hình học và thực tế",
+        "points": [
+          "Tìm kích thước hình chữ nhật: Biết diện tích $S$ và một kích thước $a$, kích thước còn lại là $b = S : a$.",
+          "Tìm chiều cao khối hộp chữ nhật: Biết thể tích $V$ và diện tích đáy $S_{\\text{đáy}}$, chiều cao là $h = V : S_{\\text{đáy}}$.",
+          "Bài toán toán học thực tế: Chia đều sản lượng, thời gian và năng suất lao động."
+        ],
+        "formula": "b = \\frac{S}{a}; \\quad h = \\frac{V}{S_{\\text{đáy}}}",
+        "exampleTitle": "Ví dụ 4 (SGK Toán 8 KNTT Bài 1.32 Trang 24)",
+        "exampleProblem": "Một hình hộp chữ nhật có thể tích là $V = 10x^3 + 15x^2\\text{ (cm}^3\\text{)}$ và diện tích mặt đáy là $S = 5x^2\\text{ (cm}^2\\text{)}$. Tính chiều cao của hình hộp chữ nhật đó.",
+        "exampleSolution": "Chiều cao của hình hộp chữ nhật là:\n$h = V : S = (10x^3 + 15x^2) : 5x^2 = (10x^3 : 5x^2) + (15x^2 : 5x^2) = 2x + 3\\text{ (cm)}$."
+      }
+    ],
+    "youtubeVideoId": "t8_b5_video",
+    "youtubeVideoTitle": "Bài Giảng Video: Bài 5 - Phép chia đa thức cho đơn thức - Toán 8 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "t8_b5_video1",
+        "title": "Tiết 1: Quy tắc chia đơn thức cho đơn thức và điều kiện chia hết"
+      },
+      {
+        "id": "t8_b5_video2",
+        "title": "Tiết 2: Quy tắc chia đa thức cho đơn thức và bài toán thực tế"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.5.1",
+        "timeSeconds": 120,
+        "timeLabel": "02:00",
+        "title": "Ví dụ 1: Chia hai lũy thừa cùng cơ số",
+        "question": "Kết quả của phép chia $x^7 : x^3$ là:",
+        "options": [
+          "$x^4$",
+          "$x^{10}$",
+          "$x^2$",
+          "$x^5$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng quy tắc chia hai lũy thừa cùng cơ số: $x^7 : x^3 = x^{7-3} = x^4$."
+      },
+      {
+        "id": "vq-8.5.2",
+        "timeSeconds": 300,
+        "timeLabel": "05:00",
+        "title": "Ví dụ 2: Chia đơn thức cho đơn thức",
+        "question": "Kết quả của phép chia $18x^4y^3 : 6x^2y$ là:",
+        "options": [
+          "$3x^2y^2$",
+          "$3x^2y$",
+          "$3x^6y^4$",
+          "$12x^2y^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$18x^4y^3 : 6x^2y = (18 : 6)(x^4 : x^2)(y^3 : y) = 3x^2y^2$."
+      },
+      {
+        "id": "vq-8.5.3",
+        "timeSeconds": 200,
+        "timeLabel": "03:20",
+        "title": "Ví dụ 3: Chia đa thức cho đơn thức",
+        "question": "Kết quả của phép chia $(6x^3 - 4x^2) : 2x^2$ là:",
+        "options": [
+          "$3x - 2$",
+          "$3x - 2x$",
+          "$3x^2 - 2$",
+          "$3x + 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(6x^3 - 4x^2) : 2x^2 = (6x^3 : 2x^2) - (4x^2 : 2x^2) = 3x - 2$."
+      },
+      {
+        "id": "vq-8.5.4",
+        "timeSeconds": 450,
+        "timeLabel": "07:30",
+        "title": "Ví dụ 4: Rút gọn biểu thức chia",
+        "question": "Rút gọn biểu thức $A = (8x^2y - 4xy^2) : 4xy$ ta được:",
+        "options": [
+          "$2x - y$",
+          "$2x - 4y$",
+          "$2xy - y$",
+          "$x - 2y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(8x^2y : 4xy) - (4xy^2 : 4xy) = 2x - y$."
+      }
+    ],
+    "tips": [
+      "Trừ số mũ, KHÔNG chia số mũ: Khi chia hai lũy thừa cùng cơ số $x^m : x^n = x^{m-n}$ (rất nhiều học sinh nhầm $x^6 : x^2 = x^3$).",
+      "Khi số mũ bằng nhau: $x^m : x^m = x^0 = 1$, do đó nếu biến có cùng số mũ ở cả tử và mẫu thì triệt tiêu thành số 1.",
+      "Chia từng hạng tử: Khi chia $(A + B) : C$, luôn nhớ chia TẤT CẢ các hạng tử của đa thức cho đơn thức $C$, không được bỏ sót hạng tử nào.",
+      "Quy tắc dấu khi chia: Tương tự như phép nhân: $(+) : (+) = (+)$, $(-) : (-) = (+)$, $(+) : (-) = (-)$."
+    ],
+    "traps": [
+      "Bẫy chia số mũ: Nhầm $x^8 : x^2 = x^4$ thay vì $x^{8-2} = x^6$.",
+      "Bẫy chia hạng tử giống nhau bằng 0: Khi chia $(3x^2 + 2x) : x$, hạng tử $2x : x = 2$, không phải bằng 0.",
+      "Bẫy quên đổi dấu khi đơn thức chia mang dấu âm: Khi chia $(6x^3 - 4x^2) : (-2x)$, kết quả là $-3x^2 + 2x$, rất dễ nhầm thành $-3x^2 - 2x$.",
+      "Bẫy điều kiện chia hết: Đơn thức $A$ chia hết cho đơn thức $B$ khi mỗi biến của $B$ đều xuất hiện trong $A$ với số mũ không lớn hơn. Ví dụ $x^2y$ KHÔNG chia hết cho $x^2y^2$ vì số mũ của $y$ trong số chia lớn hơn."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.5.1",
+        "badge": "Câu 1 (NB) - Chia hai lũy thừa cùng cơ số",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Với $x \\ne 0$ và $m > n$, công thức nào sau đây là đúng?",
+        "options": [
+          "$x^m : x^n = x^{m-n}$",
+          "$x^m : x^n = x^{m+n}$",
+          "$x^m : x^n = x^{m:n}$",
+          "$x^m : x^n = x^{m \\cdot n}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khi chia hai lũy thừa cùng cơ số (khác 0), ta giữ nguyên cơ số và trừ các số mũ: $x^m : x^n = x^{m-n}$."
+      },
+      {
+        "id": "quiz-8.5.2",
+        "badge": "Câu 2 (NB) - Phép chia lũy thừa cụ thể",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Kết quả của phép chia $x^5 : x^2$ là:",
+        "options": [
+          "$x^3$",
+          "$x^7$",
+          "$x^{2,5}$",
+          "$x^{10}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $x^5 : x^2 = x^{5-2} = x^3$."
+      },
+      {
+        "id": "quiz-8.5.3",
+        "badge": "Câu 3 (NB) - Chia đơn thức một biến",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Kết quả của phép chia $6x^3 : 2x$ là:",
+        "options": [
+          "$3x^2$",
+          "$3x^3$",
+          "$4x^2$",
+          "$3x$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta chia hệ số cho hệ số và trừ số mũ: $(6 : 2)(x^3 : x) = 3x^2$."
+      },
+      {
+        "id": "quiz-8.5.4",
+        "badge": "Câu 4 (NB) - Chia đơn thức hai biến",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Kết quả của phép chia $12x^2y : 3xy$ là:",
+        "options": [
+          "$4x$",
+          "$4xy$",
+          "$4y$",
+          "$4x^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$12x^2y : 3xy = (12 : 3)(x^2 : x)(y : y) = 4 \\cdot x \\cdot 1 = 4x$."
+      },
+      {
+        "id": "quiz-8.5.5",
+        "badge": "Câu 5 (NB) - Chia đơn thức có dấu âm",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Kết quả của phép chia $-15x^4y^2 : 5x^2y$ là:",
+        "options": [
+          "$-3x^2y$",
+          "$3x^2y$",
+          "$-3x^2y^2$",
+          "$-3x^6y^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(-15 : 5)(x^4 : x^2)(y^2 : y) = -3x^2y$."
+      },
+      {
+        "id": "quiz-8.5.6",
+        "badge": "Câu 6 (NB) - Quy tắc chia đa thức cho đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Công thức nào sau đây biểu diễn đúng quy tắc chia đa thức cho đơn thức?",
+        "options": [
+          "$(A + B) : C = A : C + B : C$",
+          "$(A + B) : C = A : C + B$",
+          "$(A + B) : C = A + B : C$",
+          "$(A + B) : C = (A + B) \\cdot C$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Muốn chia đa thức $A + B$ cho đơn thức $C$, ta chia từng hạng tử của đa thức cho $C$: $(A + B) : C = A : C + B : C$."
+      },
+      {
+        "id": "quiz-8.5.7",
+        "badge": "Câu 7 (NB) - Chia nhị thức cho đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Kết quả của phép chia $(4x^2 + 2x) : 2x$ là:",
+        "options": [
+          "$2x + 1$",
+          "$2x$",
+          "$2x + 2$",
+          "$x + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(4x^2 + 2x) : 2x = (4x^2 : 2x) + (2x : 2x) = 2x + 1$."
+      },
+      {
+        "id": "quiz-8.5.8",
+        "badge": "Câu 8 (NB) - Chia đa thức chứa dấu trừ",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Kết quả của phép chia $(6x^3 - 9x^2) : 3x^2$ là:",
+        "options": [
+          "$2x - 3$",
+          "$2x + 3$",
+          "$3x - 3$",
+          "$2x^2 - 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(6x^3 - 9x^2) : 3x^2 = (6x^3 : 3x^2) - (9x^2 : 3x^2) = 2x - 3$."
+      },
+      {
+        "id": "quiz-8.5.9",
+        "badge": "Câu 9 (NB) - Nhận biết đơn thức chia hết",
+        "source": "SGK Toán 8 KNTT Trang 22",
+        "question": "Đơn thức $6x^3y^2$ chia hết cho đơn thức nào sau đây?",
+        "options": [
+          "$2x^2y$",
+          "$3x^4y$",
+          "$4xy^3$",
+          "$x^3y^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đơn thức $2x^2y$ có số mũ của $x$ là $2 \\le 3$ và số mũ của $y$ là $1 \\le 2$, nên $6x^3y^2$ chia hết cho $2x^2y$."
+      },
+      {
+        "id": "quiz-8.5.10",
+        "badge": "Câu 10 (NB) - Bậc của đa thức thương",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Bậc của đa thức thương trong phép chia $(8x^5 - 4x^3) : 2x^2$ là:",
+        "options": [
+          "$3$",
+          "$5$",
+          "$2$",
+          "$4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(8x^5 - 4x^3) : 2x^2 = 4x^3 - 2x$. Hạng tử có bậc cao nhất là $4x^3$ nên bậc của thương là $3$."
+      },
+      {
+        "id": "quiz-8.5.11",
+        "badge": "Câu 11 (TH) - Chia đa thức ba hạng tử",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Kết quả của phép chia $(12x^4 - 8x^3 + 4x^2) : 4x^2$ là:",
+        "options": [
+          "$3x^2 - 2x + 1$",
+          "$3x^2 - 2x$",
+          "$3x^2 - 2x + 4$",
+          "$3x^2 - 4x + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(12x^4 : 4x^2) - (8x^3 : 4x^2) + (4x^2 : 4x^2) = 3x^2 - 2x + 1$."
+      },
+      {
+        "id": "quiz-8.5.12",
+        "badge": "Câu 12 (TH) - Chia đa thức hai biến cho đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Thực hiện phép tính $(6x^3y^2 - 9x^2y^3) : 3x^2y^2$ ta được kết quả là:",
+        "options": [
+          "$2x - 3y$",
+          "$2x + 3y$",
+          "$2xy - 3$",
+          "$3x - 2y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(6x^3y^2 : 3x^2y^2) - (9x^2y^3 : 3x^2y^2) = 2x - 3y$."
+      },
+      {
+        "id": "quiz-8.5.13",
+        "badge": "Câu 13 (TH) - Chia đa thức cho đơn thức mang dấu âm",
+        "source": "SGK Toán 8 KNTT Trang 23",
+        "question": "Kết quả của phép chia $(10x^3 - 15x^2 + 5x) : (-5x)$ là:",
+        "options": [
+          "$-2x^2 + 3x - 1$",
+          "$-2x^2 - 3x + 1$",
+          "$2x^2 - 3x + 1$",
+          "$-2x^2 + 3x$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(10x^3 : -5x) - (15x^2 : -5x) + (5x : -5x) = -2x^2 + 3x - 1$."
+      },
+      {
+        "id": "quiz-8.5.14",
+        "badge": "Câu 14 (TH) - Rút gọn biểu thức chứa phép chia",
+        "source": "SGK Toán 8 KNTT Trang 24",
+        "question": "Rút gọn biểu thức $M = (4x^3 - 6x^2) : 2x^2 + 3$ ta được:",
+        "options": [
+          "$2x$",
+          "$2x - 6$",
+          "$2x + 3$",
+          "$2x - 3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$M = (2x - 3) + 3 = 2x$."
+      },
+      {
+        "id": "quiz-8.5.15",
+        "badge": "Câu 15 (TH) - Tính giá trị của biểu thức sau khi chia",
+        "source": "SGK Toán 8 KNTT Trang 24",
+        "question": "Giá trị của biểu thức $A = (15x^2y^2 - 10xy^3) : 5xy^2$ tại $x = 2$ và $y = 1$ là:",
+        "options": [
+          "$4$",
+          "$6$",
+          "$2$",
+          "$8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Rút gọn: $A = (15x^2y^2 : 5xy^2) - (10xy^3 : 5xy^2) = 3x - 2y$.\nThay $x = 2, y = 1$: $A = 3(2) - 2(1) = 6 - 2 = 4$."
+      },
+      {
+        "id": "quiz-8.5.16",
+        "badge": "Câu 16 (TH) - Tìm x bằng phép chia đa thức",
+        "source": "SGK Toán 8 KNTT Trang 24",
+        "question": "Tìm giá trị của $x$ thỏa mãn: $(6x^2 - 4x) : 2x = 7$:",
+        "options": [
+          "$x = 3$",
+          "$x = -3$",
+          "$x = 5$",
+          "$x = 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chia vế trái: $(6x^2 : 2x) - (4x : 2x) = 3x - 2$.\nPhương trình trở thành: $3x - 2 = 7 \\Leftrightarrow 3x = 9 \\Leftrightarrow x = 3$."
+      },
+      {
+        "id": "quiz-8.5.17",
+        "badge": "Câu 17 (VD) - Rút gọn biểu thức kết hợp nhân và chia",
+        "source": "SGK Toán 8 KNTT Bài 1.31 Trang 24",
+        "question": "Rút gọn biểu thức $P = (8x^3 - 12x^2) : 4x^2 - x(2 - x)$ ta được:",
+        "options": [
+          "$x^2 - 3$",
+          "$x^2 + 4x - 3$",
+          "$-x^2 - 3$",
+          "$3 - x^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thực hiện phép chia: $(8x^3 - 12x^2) : 4x^2 = 2x - 3$.\nThực hiện phép nhân: $-x(2 - x) = -2x + x^2$.\nCộng lại: $P = (2x - 3) - 2x + x^2 = x^2 - 3$."
+      },
+      {
+        "id": "quiz-8.5.18",
+        "badge": "Câu 18 (VD) - Tìm điều kiện của số tự nhiên n để phép chia hết",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Tìm số tự nhiên $n$ để đơn thức $A = 5x^n y^3$ chia hết cho đơn thức $B = 2x^2 y^n$:",
+        "options": [
+          "$n = 2$ hoặc $n = 3$",
+          "$n = 2$",
+          "$n = 3$",
+          "$n \\ge 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Để $A$ chia hết cho $B$ thì số mũ của $x$ trong $A$ phải lớn hơn hoặc bằng trong $B$: $n \\ge 2$.\nSố mũ của $y$ trong $A$ phải lớn hơn hoặc bằng trong $B$: $3 \\ge n \\Leftrightarrow n \\le 3$.\nKết hợp lại ta được $2 \\le n \\le 3$. Vì $n \\in \\mathbb{N}$ nên $n \\in \\{2; 3\\}$."
+      },
+      {
+        "id": "quiz-8.5.19",
+        "badge": "Câu 19 (VD - Thực tế) - Tìm chiều dài khu vườn hình chữ nhật",
+        "source": "SGK Toán 8 KNTT Bài 1.32 Trang 24",
+        "question": "Một khu vườn hình chữ nhật có diện tích là $S = 6x^2y + 9xy^2\\text{ (m}^2\\text{)}$ và chiều rộng là $3xy\\text{ (m)}$. Đa thức biểu thị chiều dài của khu vườn là:",
+        "options": [
+          "$2x + 3y\\text{ (m)}$",
+          "$3x + 2y\\text{ (m)}$",
+          "$2x^2 + 3y^2\\text{ (m)}$",
+          "$2x - 3y\\text{ (m)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiều dài khu vườn bằng diện tích chia cho chiều rộng:\n$d = S : r = (6x^2y + 9xy^2) : 3xy = (6x^2y : 3xy) + (9xy^2 : 3xy) = 2x + 3y\\text{ (m)}$."
+      },
+      {
+        "id": "quiz-8.5.20",
+        "badge": "Câu 20 (VD - Thực tế) - Chiều cao khối hộp chữ nhật",
+        "source": "Toán 8 KNTT - Ứng dụng hình học không gian",
+        "question": "Một khối hộp chữ nhật có thể tích là $V = 12x^3y + 8x^2y^2\\text{ (cm}^3\\text{)}$ và diện tích đáy là $S = 4x^2y\\text{ (cm}^2\\text{)}$. Đa thức biểu thị chiều cao của khối hộp là:",
+        "options": [
+          "$3x + 2y\\text{ (cm)}$",
+          "$3x - 2y\\text{ (cm)}$",
+          "$3x^2 + 2y\\text{ (cm)}$",
+          "$4x + 2y\\text{ (cm)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiều cao khối hộp chữ nhật:\n$h = V : S = (12x^3y + 8x^2y^2) : 4x^2y = (12x^3y : 4x^2y) + (8x^2y^2 : 4x^2y) = 3x + 2y\\text{ (cm)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.5.1",
+        "badge": "Câu 1 (Đ/S) - Điều kiện chia hết và phép chia đơn thức",
+        "prompt": "Cho đơn thức $M = 8x^4y^3$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đơn thức $M$ chia hết cho đơn thức $2x^3y^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì số mũ của $x$ là $3 \\le 4$ và số mũ của $y$ là $2 \\le 3$."
+          },
+          {
+            "id": "b",
+            "text": "Kết quả của phép chia $M : 4x^2y$ là $2x^2y^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $8x^4y^3 : 4x^2y = (8:4)(x^4:x^2)(y^3:y) = 2x^2y^2$."
+          },
+          {
+            "id": "c",
+            "text": "Đơn thức $M$ chia hết cho đơn thức $x^5y$.",
+            "correctAnswer": false,
+            "explanation": "Sai, số mũ của $x$ trong số chia là $5 > 4$ nên không chia hết."
+          },
+          {
+            "id": "d",
+            "text": "Kết quả của phép chia $M : (-2x^4y^3)$ là $-4$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $8 : (-2) = -4$ và $(x^4:x^4)(y^3:y^3) = 1 \\cdot 1 = 1$, kết quả là $-4$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.5.2",
+        "badge": "Câu 2 (Đ/S) - Phép chia đa thức cho đơn thức",
+        "prompt": "Cho đa thức $A = 15x^3y^2 - 10x^2y^3 + 5x^2y^2$ và đơn thức $B = 5x^2y^2$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Mọi hạng tử của đa thức $A$ đều chia hết cho đơn thức $B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $15x^3y^2$, $-10x^2y^3$ và $5x^2y^2$ đều có số mũ của $x \\ge 2$ và $y \\ge 2$."
+          },
+          {
+            "id": "b",
+            "text": "Hạng tử thứ ba của $A$ chia cho $B$ được kết quả bằng $0$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $5x^2y^2 : 5x^2y^2 = 1$, không phải bằng 0."
+          },
+          {
+            "id": "c",
+            "text": "Kết quả của phép chia $A : B$ là $3x - 2y + 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(15x^3y^2:5x^2y^2) - (10x^2y^3:5x^2y^2) + (5x^2y^2:5x^2y^2) = 3x - 2y + 1$."
+          },
+          {
+            "id": "d",
+            "text": "Tại $x = 1, y = 2$, giá trị của thương $A : B$ bằng $0$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thay $x = 1, y = 2$: $3(1) - 2(2) + 1 = 3 - 4 + 1 = 0$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.5.3",
+        "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức tổng hợp",
+        "prompt": "Cho biểu thức $Q = (12x^4 - 6x^3) : 3x^2 - 2x(2x - 1)$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Thương của phép chia $(12x^4 - 6x^3) : 3x^2$ là $4x^2 - 2x$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $12x^4 : 3x^2 - 6x^3 : 3x^2 = 4x^2 - 2x$."
+          },
+          {
+            "id": "b",
+            "text": "Khai triển tích $-2x(2x - 1)$ ta được $-4x^2 - 2x$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(-2x) \\cdot 2x + (-2x) \\cdot (-1) = -4x^2 + 2x$."
+          },
+          {
+            "id": "c",
+            "text": "Biểu thức $Q$ sau khi rút gọn có giá trị bằng $0$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $Q = (4x^2 - 2x) - 4x^2 + 2x = (4x^2 - 4x^2) + (-2x + 2x) = 0$."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị của $Q$ phụ thuộc vào giá trị của biến $x$.",
+            "correctAnswer": false,
+            "explanation": "Sai, vì $Q = 0$ với mọi $x$ nên giá trị của $Q$ không phụ thuộc vào $x$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.5.4",
+        "badge": "Câu 4 (Đ/S) - Bài toán thực tế bể bơi hình chữ nhật",
+        "prompt": "Một hồ bơi hình chữ nhật có diện tích đáy là $S = 20x^2 + 30xy\\text{ (m}^2\\text{)}$ và chiều rộng là $5x\\text{ (m)}$ (với $x, y > 0$). Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức biểu thị chiều dài đáy hồ bơi là $(20x^2 + 30xy) : 5x$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, chiều dài bằng diện tích chia cho chiều rộng."
+          },
+          {
+            "id": "b",
+            "text": "Chiều dài của đáy hồ bơi là $4x + 6y\\text{ (m)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(20x^2 : 5x) + (30xy : 5x) = 4x + 6y\\text{ (m)}$."
+          },
+          {
+            "id": "c",
+            "text": "Đa thức biểu thị chu vi đáy hồ bơi là $9x + 6y\\text{ (m)}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, chu vi là $2 \\cdot [(4x + 6y) + 5x] = 2(9x + 6y) = 18x + 12y\\text{ (m)}$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu $x = 2\\text{ m}$ và $y = 3\\text{ m}$ thì chiều dài đáy hồ bơi là $26\\text{ m}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thay $x = 2, y = 3$ vào chiều dài: $4(2) + 6(3) = 8 + 18 = 26\\text{ m}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.5.1",
+        "badge": "Câu 1 (TH) - Tìm hệ số của thương đơn thức",
+        "prompt": "Hệ số của đơn thức thương trong phép chia $24x^5y^3 : 8x^2y^3$ bằng bao nhiêu?",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "Hệ số của thương bằng thương hai hệ số: $24 : 8 = 3$."
+      },
+      {
+        "id": "sa-8.5.2",
+        "badge": "Câu 2 (TH) - Tính giá trị của thương sau khi rút gọn",
+        "prompt": "Tính giá trị của thương $(10x^3 - 6x^2) : 2x^2$ tại $x = 1$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "Thương bằng $5x - 3$. Tại $x = 1$, giá trị là $5(1) - 3 = 2$."
+      },
+      {
+        "id": "sa-8.5.3",
+        "badge": "Câu 3 (TH) - Tìm nghiệm x bằng phép chia đa thức",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(8x^2 - 12x) : 4x = -7$.",
+        "correctAnswer": "-2",
+        "acceptableAnswers": [
+          "-2",
+          "âm 2",
+          "- 2"
+        ],
+        "explanation": "Thực hiện phép chia vế trái: $(8x^2 : 4x) - (12x : 4x) = 2x - 3$.\nPhương trình trở thành: $2x - 3 = -7 \\Leftrightarrow 2x = -4 \\Leftrightarrow x = -2$."
+      },
+      {
+        "id": "sa-8.5.4",
+        "badge": "Câu 4 (VD) - Tính giá trị của biểu thức hai biến",
+        "prompt": "Tính giá trị của biểu thức $P = (18x^3y^2 - 12x^2y^3) : 6x^2y^2$ tại $x = 3$ và $y = 2$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "năm"
+        ],
+        "explanation": "Rút gọn: $P = 3x - 2y$. Thay $x = 3, y = 2$: $P = 3(3) - 2(2) = 9 - 4 = 5$."
+      },
+      {
+        "id": "sa-8.5.5",
+        "badge": "Câu 5 (VD - Thực tế) - Tìm chiều dài mảnh đất",
+        "prompt": "Một mảnh đất hình chữ nhật có diện tích $S = 75x^2 + 50xy\\text{ (m}^2\\text{)}$ và chiều rộng là $25x\\text{ (m)}$. Khi $x = 3\\text{ m}$ và $y = 8\\text{ m}$, chiều dài mảnh đất đó bằng bao nhiêu mét?",
+        "correctAnswer": "25",
+        "acceptableAnswers": [
+          "25",
+          "hai mươi lăm",
+          "25m",
+          "25 m"
+        ],
+        "explanation": "Chiều dài mảnh đất là $d = (75x^2 + 50xy) : 25x = 3x + 2y\\text{ (m)}$.\nKhi $x = 3, y = 8$: $d = 3(3) + 2(8) = 9 + 16 = 25\\text{ m}$."
+      },
+      {
+        "id": "sa-8.5.6",
+        "badge": "Câu 6 (VD) - Tìm số tự nhiên n lớn nhất để phép chia hết",
+        "prompt": "Tìm số tự nhiên $n$ lớn nhất để đơn thức $6x^3y^2$ chia hết cho đơn thức $2x^n y^n$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "Để $6x^3y^2$ chia hết cho $2x^n y^n$ thì $n \\le 3$ và $n \\le 2$. Do đó $n \\le 2$. Số tự nhiên $n$ lớn nhất thỏa mãn là $n = 2$."
+      }
+    ]
+  },
 };

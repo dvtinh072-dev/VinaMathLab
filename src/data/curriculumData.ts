@@ -356,6 +356,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t8-b3-phep-cong-tru-da-thuc", lessonNumber: 3, title: "Bài 3: Phép cộng và phép trừ đa thức", strand: "daiso", description: "Cộng trừ các đa thức nhiều biến.", keyFormulas: ["A + B, \\ A - B"] },
           { id: "t8-b4-phep-nhan-da-thuc", lessonNumber: 4, title: "Bài 4: Phép nhân đa thức", strand: "daiso", description: "Nhân đơn thức với đa thức, nhân đa thức với đa thức.", keyFormulas: ["A(B + C) = AB + AC", "(A+B)(C+D) = AC + AD + BC + BD"] },
           { id: "t8-b5-phep-chia-da-thuc-don-thuc", lessonNumber: 5, title: "Bài 5: Phép chia đa thức cho đơn thức", strand: "daiso", description: "Chia từng hạng tử của đa thức cho đơn thức.", keyFormulas: ["(A + B) : C = A : C + B : C"] },
+          { id: "t8-on-tap-chuong-1", lessonNumber: 0, title: "Bài tập cuối chương I", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Đơn thức, Đa thức, Cộng trừ, Nhân và Chia đa thức cho đơn thức với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["ax^m y^n", "A + B, \\ A - B", "A(B + C) = AB + AC", "(A + B) : C = A : C + B : C"] },
         ],
       },
       {

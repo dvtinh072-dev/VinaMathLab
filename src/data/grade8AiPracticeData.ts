@@ -1147,4 +1147,232 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[]> = {
       "explanation": "Chiều cao bể nước: $h = V : S = (15x^3 + 20x^2) : 5x^2 = 3x + 4\\text{ (dm)}$."
     }
   ],
+  // BÀI TẬP CUỐI CHƯƠNG I: ĐA THỨC
+  "t8-on-tap-chuong-1": [
+    {
+      "id": "ai-8.ot1.1",
+      "badge": "Luyện thêm 1 (NB) - Nhận diện đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Biểu thức nào sau đây là đơn thức?",
+      "options": [
+        "$-5x^3y$",
+        "$x + y$",
+        "$\\frac{x}{y}$",
+        "$2x - 3$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Biểu thức $-5x^3y$ chỉ gồm tích giữa số và các biến nên là đơn thức."
+    },
+    {
+      "id": "ai-8.ot1.2",
+      "badge": "Luyện thêm 2 (NB) - Bậc của đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Bậc của đơn thức $4x^2y^3z^2$ là:",
+      "options": [
+        "$7$",
+        "$6$",
+        "$5$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bậc của đơn thức là $2 + 3 + 2 = 7$."
+    },
+    {
+      "id": "ai-8.ot1.3",
+      "badge": "Luyện thêm 3 (NB) - Cộng đơn thức đồng dạng",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Tổng của $3x^2y$ và $5x^2y$ là:",
+      "options": [
+        "$8x^2y$",
+        "$8x^4y^2$",
+        "$15x^2y$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(3 + 5)x^2y = 8x^2y$."
+    },
+    {
+      "id": "ai-8.ot1.4",
+      "badge": "Luyện thêm 4 (NB) - Nhân đơn thức với nhị thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Kết quả của phép nhân $3x(x - 2)$ là:",
+      "options": [
+        "$3x^2 - 6x$",
+        "$3x^2 - 2$",
+        "$3x^2 - 5x$",
+        "$3x - 6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$3x \\cdot x - 3x \\cdot 2 = 3x^2 - 6x$."
+    },
+    {
+      "id": "ai-8.ot1.5",
+      "badge": "Luyện thêm 5 (NB) - Chia đơn thức cho đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Kết quả của phép chia $15x^5y^3 : 5x^2y$ là:",
+      "options": [
+        "$3x^3y^2$",
+        "$3x^2y^2$",
+        "$3x^3y$",
+        "$10x^3y^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(15 : 5)(x^5 : x^2)(y^3 : y) = 3x^3y^2$."
+    },
+    {
+      "id": "ai-8.ot1.6",
+      "badge": "Luyện thêm 6 (TH) - Thu gọn đa thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Thu gọn đa thức $P = 4x^2 - 3x + 2 - x^2 + 3x$ ta được:",
+      "options": [
+        "$3x^2 + 2$",
+        "$3x^2 - 6x + 2$",
+        "$5x^2 + 2$",
+        "$3x^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = (4x^2 - x^2) + (-3x + 3x) + 2 = 3x^2 + 2$."
+    },
+    {
+      "id": "ai-8.ot1.7",
+      "badge": "Luyện thêm 7 (TH) - Hiệu hai đa thức",
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "isAiGenerated": true,
+      "question": "Cho $A = 2x^2 + y^2$ và $B = x^2 - y^2$. Hiệu $A - B$ bằng:",
+      "options": [
+        "$x^2 + 2y^2$",
+        "$x^2$",
+        "$3x^2$",
+        "$x^2 - 2y^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$A - B = (2x^2 + y^2) - (x^2 - y^2) = 2x^2 + y^2 - x^2 + y^2 = x^2 + 2y^2$."
+    },
+    {
+      "id": "ai-8.ot1.8",
+      "badge": "Luyện thêm 8 (TH) - Khai triển tích hai nhị thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Khai triển $(x + 4)(x - 3)$ ta được:",
+      "options": [
+        "$x^2 + x - 12$",
+        "$x^2 - x - 12$",
+        "$x^2 + 7x - 12$",
+        "$x^2 - 12$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x^2 - 3x + 4x - 12 = x^2 + x - 12$."
+    },
+    {
+      "id": "ai-8.ot1.9",
+      "badge": "Luyện thêm 9 (TH) - Chia đa thức cho đơn thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Kết quả của phép chia $(12x^3 - 8x^2) : 4x^2$ là:",
+      "options": [
+        "$3x - 2$",
+        "$3x - 2x$",
+        "$3x^2 - 2$",
+        "$3x + 2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(12x^3 : 4x^2) - (8x^2 : 4x^2) = 3x - 2$."
+    },
+    {
+      "id": "ai-8.ot1.10",
+      "badge": "Luyện thêm 10 (TH) - Tính giá trị đa thức",
+      "isAiGenerated": true,
+      "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+      "question": "Giá trị của đa thức $M = 2x^2 - 3xy$ tại $x = 2, y = 1$ là:",
+      "options": [
+        "$2$",
+        "$8$",
+        "$-2$",
+        "$5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay $x = 2, y = 1$: $2(2)^2 - 3(2)(1) = 8 - 6 = 2$."
+    },
+    {
+      "id": "ai-8.ot1.11",
+      "badge": "Bài tập mở rộng 1 (VD) - Rút gọn biểu thức tổng hợp",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Rút gọn biểu thức $A = (x - 2)(x + 2) - x(x - 4)$ ta được:",
+      "options": [
+        "$4x - 4$",
+        "$-4x - 4$",
+        "$4x + 4$",
+        "$-4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x^2 - 4) - (x^2 - 4x) = 4x - 4$."
+    },
+    {
+      "id": "ai-8.ot1.12",
+      "badge": "Bài tập mở rộng 2 (VD) - Chứng minh không phụ thuộc biến",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Giá trị của biểu thức $B = (x - 1)(x + 3) - x(x + 2) + 5$ là:",
+      "options": [
+        "$2$",
+        "$0$",
+        "$-2$",
+        "$8$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$(x^2 + 2x - 3) - (x^2 + 2x) + 5 = -3 + 5 = 2$."
+    },
+    {
+      "id": "ai-8.ot1.13",
+      "badge": "Bài tập mở rộng 3 (VD) - Tìm x",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT Nâng cao",
+      "question": "Tìm giá trị của $x$ biết rằng: $(8x^2 - 4x) : 4x = 5$:",
+      "options": [
+        "$x = 3$",
+        "$x = -3$",
+        "$x = 2$",
+        "$x = 4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$2x - 1 = 5 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3$."
+    },
+    {
+      "id": "ai-8.ot1.14",
+      "badge": "Bài tập mở rộng 4 (VD - Thực tế) - Diện tích mảnh vườn mở rộng",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một mảnh vườn hình chữ nhật có chiều dài là $x + 5\\text{ (m)}$ và chiều rộng là $x + 2\\text{ (m)}$. Đa thức biểu thị diện tích mảnh vườn là:",
+      "options": [
+        "$x^2 + 7x + 10\\text{ (m}^2\\text{)}$",
+        "$x^2 + 10x + 7\\text{ (m}^2\\text{)}$",
+        "$x^2 + 7x + 7\\text{ (m}^2\\text{)}$",
+        "$2x + 7\\text{ (m}^2\\text{)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S = (x + 5)(x + 2) = x^2 + 2x + 5x + 10 = x^2 + 7x + 10\\text{ (m}^2\\text{)}$."
+    },
+    {
+      "id": "ai-8.ot1.15",
+      "badge": "Bài tập mở rộng 5 (VD - Thực tế) - Chiều dài khu đất",
+      "isAiGenerated": true,
+      "source": "Toán 8 KNTT - Bài toán thực tế",
+      "question": "Một khu đất hình chữ nhật có diện tích $S = 15x^2 + 10xy\\text{ (m}^2\\text{)}$ và chiều rộng là $5x\\text{ (m)}$. Chiều dài của khu đất là:",
+      "options": [
+        "$3x + 2y\\text{ (m)}$",
+        "$3x - 2y\\text{ (m)}$",
+        "$2x + 3y\\text{ (m)}$",
+        "$3x^2 + 2y\\text{ (m)}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$d = (15x^2 + 10xy) : 5x = 3x + 2y\\text{ (m)}$."
+    }
+  ],
 };

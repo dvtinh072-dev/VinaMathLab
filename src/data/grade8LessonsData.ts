@@ -1918,4 +1918,1590 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  // BÀI TẬP CUỐI CHƯƠNG I: ĐA THỨC
+  "t8-on-tap-chuong-1": {
+    "id": "t8-on-tap-chuong-1",
+    "lessonNumber": 0,
+    "title": "Bài tập cuối chương I",
+    "bookChapter": "Chương I: Đa thức (SGK Toán 8 KNTT - Tập 1)",
+    "scenarioTitle": "Luyện tập 3 đề ôn tập tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+    "scenarioFrames": [],
+    "theorySections": [],
+    "youtubeVideoId": "t8_ot1_video",
+    "youtubeVideoTitle": "Bài Giảng Video: Ôn tập và giải bài tập cuối chương I - Toán 8 KNTT",
+    "youtubeVideos": [
+      {
+        "id": "t8_ot1_video1",
+        "title": "Tiết 1: Ôn tập đơn thức, đa thức và phép cộng, trừ đa thức"
+      },
+      {
+        "id": "t8_ot1_video2",
+        "title": "Tiết 2: Ôn tập phép nhân đa thức và phép chia đa thức cho đơn thức"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.ot1.1",
+        "timeSeconds": 150,
+        "timeLabel": "02:30",
+        "title": "Ví dụ 1: Nhận biết và thu gọn đơn thức",
+        "question": "Đơn thức thu gọn của $2x^2y \\cdot (-3xy^2)$ là:",
+        "options": [
+          "$-6x^3y^3$",
+          "$-6x^2y^2$",
+          "$6x^3y^3$",
+          "$-5x^3y^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2 \\cdot (-3) \\cdot (x^2 \\cdot x) \\cdot (y \\cdot y^2) = -6x^3y^3$."
+      },
+      {
+        "id": "vq-8.ot1.2",
+        "timeSeconds": 360,
+        "timeLabel": "06:00",
+        "title": "Ví dụ 2: Cộng trừ đa thức nhiều biến",
+        "question": "Cho $A = 3x^2 - xy$ và $B = x^2 + xy$. Hiệu $A - B$ bằng:",
+        "options": [
+          "$2x^2 - 2xy$",
+          "$2x^2$",
+          "$4x^2$",
+          "$2x^2 + 2xy$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$A - B = (3x^2 - xy) - (x^2 + xy) = 3x^2 - xy - x^2 - xy = 2x^2 - 2xy$."
+      },
+      {
+        "id": "vq-8.ot1.3",
+        "timeSeconds": 210,
+        "timeLabel": "03:30",
+        "title": "Ví dụ 3: Phép nhân đa thức",
+        "question": "Khai triển của tích $(x + 3)(x - 2)$ là:",
+        "options": [
+          "$x^2 + x - 6$",
+          "$x^2 - x - 6$",
+          "$x^2 + 5x - 6$",
+          "$x^2 - 6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 3)(x - 2) = x^2 - 2x + 3x - 6 = x^2 + x - 6$."
+      },
+      {
+        "id": "vq-8.ot1.4",
+        "timeSeconds": 420,
+        "timeLabel": "07:00",
+        "title": "Ví dụ 4: Phép chia đa thức cho đơn thức",
+        "question": "Kết quả của phép chia $(6x^3y^2 - 4x^2y) : 2x^2y$ là:",
+        "options": [
+          "$3xy - 2$",
+          "$3x - 2$",
+          "$3xy - 2y$",
+          "$3x^2y - 2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(6x^3y^2 : 2x^2y) - (4x^2y : 2x^2y) = 3xy - 2$."
+      }
+    ],
+    "tips": [
+      "Đơn thức đồng dạng: Chỉ cộng hoặc trừ các hệ số với nhau và giữ nguyên phần biến chung.",
+      "Quy tắc dấu khi trừ đa thức: Khi viết $A - B$, bắt buộc đặt $B$ trong dấu ngoặc rồi bỏ ngoặc đổi dấu tất cả các hạng tử của $B$.",
+      "Quy tắc lũy thừa: Nhân thì CỘNG số mũ ($x^m \\cdot x^n = x^{m+n}$), chia thì TRỪ số mũ ($x^m : x^n = x^{m-n}$).",
+      "Chiến thuật làm bài thi trắc nghiệm: Rút gọn biểu thức trước khi thay số để tiết kiệm thời gian và tránh tính nhầm số lớn."
+    ],
+    "traps": [
+      "Bẫy nhầm giữa cộng và nhân đơn thức: $2x^2 + 3x^2 = 5x^2$ (không cộng số mũ thành $5x^4$).",
+      "Bẫy bỏ ngoặc có dấu trừ: $A - (2x - y) = A - 2x + y$ (rất dễ quên đổi dấu $-y$ thành $+y$).",
+      "Bẫy chia hai lũy thừa cùng cơ số: $x^6 : x^2 = x^4$ (dễ nhầm lấy số mũ chia nhau thành $x^3$).",
+      "Bẫy chia hạng tử giống nhau bằng 0: $(3x + 2) : 2 = \\frac{3}{2}x + 1$, hoặc $(x^2 + x) : x = x + 1$ (không phải $x + 0 = x$)."
+    ],
+    "quizQuestions": [
+      {
+        "id": "otc1-d1-q1",
+        "badge": "Câu 1 (NB) - Nhận biết đơn thức thu gọn",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Trong các biểu thức sau, biểu thức nào là đơn thức thu gọn?",
+        "options": [
+          "$-3x^2y^3$",
+          "$2x^2 \\cdot 3y$",
+          "$x + 2y$",
+          "$\\frac{2x}{y}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đơn thức $-3x^2y^3$ chỉ gồm tích của một số với các biến mà mỗi biến chỉ viết một lần với số mũ nguyên dương nên là đơn thức thu gọn."
+      },
+      {
+        "id": "otc1-d1-q2",
+        "badge": "Câu 2 (NB) - Bậc của đơn thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Bậc của đơn thức $-5x^3y^2z$ là:",
+        "options": [
+          "$6$",
+          "$5$",
+          "$3$",
+          "$2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bậc của đơn thức là tổng số mũ của tất cả các biến: $3 + 2 + 1 = 6$."
+      },
+      {
+        "id": "otc1-d1-q3",
+        "badge": "Câu 3 (NB) - Cặp đơn thức đồng dạng",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Cặp đơn thức nào sau đây là hai đơn thức đồng dạng?",
+        "options": [
+          "$2x^2y$ và $-5x^2y$",
+          "$2x^2y$ và $2xy^2$",
+          "$3x^2$ và $3y^2$",
+          "$-x^2y$ và $-x^2y^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai đơn thức $2x^2y$ và $-5x^2y$ có hệ số khác 0 và có cùng phần biến là $x^2y$ nên đồng dạng với nhau."
+      },
+      {
+        "id": "otc1-d1-q4",
+        "badge": "Câu 4 (NB) - Bậc của đa thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Bậc của đa thức $P = x^4 - 2x^2y^3 + 5$ là:",
+        "options": [
+          "$5$",
+          "$4$",
+          "$3$",
+          "$2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đa thức có hạng tử $-2x^2y^3$ có bậc cao nhất là $2 + 3 = 5$, do đó bậc của đa thức là $5$."
+      },
+      {
+        "id": "otc1-d1-q5",
+        "badge": "Câu 5 (NB) - Phép nhân đơn thức với đa thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Kết quả của phép nhân $2x(x - 3)$ là:",
+        "options": [
+          "$2x^2 - 6x$",
+          "$2x^2 - 3$",
+          "$2x^2 - 6$",
+          "$x^2 - 6x$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x(x - 3) = 2x \\cdot x - 2x \\cdot 3 = 2x^2 - 6x$."
+      },
+      {
+        "id": "otc1-d1-q6",
+        "badge": "Câu 6 (NB) - Phép chia đơn thức cho đơn thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Kết quả của phép chia $12x^4y^2 : 4x^2y$ là:",
+        "options": [
+          "$3x^2y$",
+          "$3x^2$",
+          "$3xy$",
+          "$8x^2y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$12x^4y^2 : 4x^2y = (12 : 4)(x^4 : x^2)(y^2 : y) = 3x^2y$."
+      },
+      {
+        "id": "otc1-d1-q7",
+        "badge": "Câu 7 (TH) - Thu gọn đa thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Thu gọn đa thức $A = 3x^2y - 2xy^2 + x^2y + 5xy^2$ ta được:",
+        "options": [
+          "$4x^2y + 3xy^2$",
+          "$4x^2y - 3xy^2$",
+          "$2x^2y + 7xy^2$",
+          "$7x^2y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$A = (3x^2y + x^2y) + (-2xy^2 + 5xy^2) = 4x^2y + 3xy^2$."
+      },
+      {
+        "id": "otc1-d1-q8",
+        "badge": "Câu 8 (TH) - Trừ hai đa thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Cho $M = x^2 - 2xy + y^2$ và $N = x^2 + 2xy + y^2$. Hiệu $M - N$ bằng:",
+        "options": [
+          "$-4xy$",
+          "$4xy$",
+          "$2x^2 + 2y^2$",
+          "$0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$M - N = (x^2 - 2xy + y^2) - (x^2 + 2xy + y^2) = x^2 - 2xy + y^2 - x^2 - 2xy - y^2 = -4xy$."
+      },
+      {
+        "id": "otc1-d1-q9",
+        "badge": "Câu 9 (TH) - Nhân hai đa thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Khai triển và thu gọn tích $(x - 2)(x + 5)$ ta được:",
+        "options": [
+          "$x^2 + 3x - 10$",
+          "$x^2 - 3x - 10$",
+          "$x^2 + 7x - 10$",
+          "$x^2 - 10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 2)(x + 5) = x^2 + 5x - 2x - 10 = x^2 + 3x - 10$."
+      },
+      {
+        "id": "otc1-d1-q10",
+        "badge": "Câu 10 (TH) - Chia đa thức cho đơn thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Kết quả của phép chia $(6x^3 - 4x^2 + 2x) : 2x$ là:",
+        "options": [
+          "$3x^2 - 2x + 1$",
+          "$3x^2 - 2x$",
+          "$3x^2 - 2x + 2$",
+          "$3x^3 - 2x^2 + x$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(6x^3 : 2x) - (4x^2 : 2x) + (2x : 2x) = 3x^2 - 2x + 1$."
+      },
+      {
+        "id": "otc1-d1-q11",
+        "badge": "Câu 11 (VD) - Rút gọn biểu thức tổng hợp",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+        "question": "Rút gọn biểu thức $P = (x - 1)(x + 2) - x(x + 3)$ ta được:",
+        "options": [
+          "$-2x - 2$",
+          "$-2x + 2$",
+          "$2x - 2$",
+          "$-2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khai triển: $(x - 1)(x + 2) = x^2 + 2x - x - 2 = x^2 + x - 2$.\n$-x(x + 3) = -x^2 - 3x$.\nCộng lại: $P = (x^2 + x - 2) - x^2 - 3x = -2x - 2$."
+      },
+      {
+        "id": "otc1-d1-q12",
+        "badge": "Câu 12 (VD - Thực tế) - Diện tích mảnh vườn mở rộng",
+        "source": "SGK Toán 8 KNTT - Bài toán thực tế",
+        "question": "Một mảnh đất hình chữ nhật có chiều dài ban đầu là $x\\text{ (m)}$ và chiều rộng là $y\\text{ (m)}$. Người ta tăng chiều dài thêm $4\\text{ m}$ và giữ nguyên chiều rộng. Đa thức biểu thị diện tích mảnh đất sau khi mở rộng là:",
+        "options": [
+          "$xy + 4y\\text{ (m}^2\\text{)}$",
+          "$xy + 4x\\text{ (m}^2\\text{)}$",
+          "$xy + 4\\text{ (m}^2\\text{)}$",
+          "$4xy\\text{ (m}^2\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiều dài mới là $(x + 4)\\text{ (m)}$. Diện tích mới là $S = (x + 4)y = xy + 4y\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "otc1-d1-tf1",
+        "badge": "Câu 1 (Đ/S) - Khái niệm đơn thức và đơn thức đồng dạng",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về đơn thức:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Biểu thức $3x^2y$ là một đơn thức thu gọn.",
+            "correctAnswer": true,
+            "explanation": "Đúng, các biến chỉ xuất hiện một lần với số mũ nguyên dương."
+          },
+          {
+            "id": "b",
+            "text": "Số thực $0$ là đơn thức có bậc bằng $0$.",
+            "correctAnswer": false,
+            "explanation": "Sai, số 0 được coi là đơn thức không có bậc. Chỉ có các số thực khác 0 mới có bậc bằng 0."
+          },
+          {
+            "id": "c",
+            "text": "Hai đơn thức $-2xy^2$ và $5y^2x$ đồng dạng với nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì $y^2x = xy^2$, cả hai có cùng phần biến."
+          },
+          {
+            "id": "d",
+            "text": "Tổng của hai đơn thức đồng dạng $2x^2y + 3x^2y$ bằng $5x^4y^2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, khi cộng đơn thức đồng dạng ta cộng hệ số và giữ nguyên phần biến: $(2 + 3)x^2y = 5x^2y$."
+          }
+        ]
+      },
+      {
+        "id": "otc1-d1-tf2",
+        "badge": "Câu 2 (Đ/S) - Phép cộng và trừ đa thức",
+        "prompt": "Cho hai đa thức $A = 2x^2 - xy + 3$ và $B = x^2 + xy - 1$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tổng $A + B = 3x^2 + 2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $A + B = (2x^2 + x^2) + (-xy + xy) + (3 - 1) = 3x^2 + 2$."
+          },
+          {
+            "id": "b",
+            "text": "Hiệu $A - B = x^2 - 2xy + 4$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $A - B = (2x^2 - x^2) + (-xy - xy) + (3 - (-1)) = x^2 - 2xy + 4$."
+          },
+          {
+            "id": "c",
+            "text": "Bậc của đa thức tổng $A + B$ bằng $4$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $A + B = 3x^2 + 2$ có bậc bằng $2$."
+          },
+          {
+            "id": "d",
+            "text": "Tại $x = 1, y = 2$, giá trị của $A - B$ bằng $1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thay $x = 1, y = 2$: $1^2 - 2(1)(2) + 4 = 1 - 4 + 4 = 1$."
+          }
+        ]
+      },
+      {
+        "id": "otc1-d1-tf3",
+        "badge": "Câu 3 (Đ/S) - Phép nhân và chia đa thức",
+        "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tích của $-3x$ và $(2x - 1)$ là $-6x^2 + 3x$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(-3x) \\cdot 2x + (-3x) \\cdot (-1) = -6x^2 + 3x$."
+          },
+          {
+            "id": "b",
+            "text": "Khai triển $(x - 3)(x + 3)$ ta được $x^2 - 9$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x - 3)(x + 3) = x^2 + 3x - 3x - 9 = x^2 - 9$."
+          },
+          {
+            "id": "c",
+            "text": "Phép chia $(4x^3 - 2x^2) : 2x^2$ cho kết quả là $2x - 2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $4x^3 : 2x^2 - 2x^2 : 2x^2 = 2x - 1$."
+          },
+          {
+            "id": "d",
+            "text": "Đơn thức $6x^2y$ chia hết cho đơn thức $3xy^2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, vì số mũ của $y$ trong số chia là $2 > 1$ (số mũ của $y$ trong số bị chia)."
+          }
+        ]
+      },
+      {
+        "id": "otc1-d1-tf4",
+        "badge": "Câu 4 (Đ/S) - Ứng dụng hình học thực tế",
+        "prompt": "Một khối hộp chữ nhật có ba kích thước đáy và chiều cao lần lượt là $x\\text{ (cm)}$, $x + 1\\text{ (cm)}$ và $2x\\text{ (cm)}$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức biểu thị diện tích mặt đáy là $x^2 + x\\text{ (cm}^2\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $S_{\\text{đáy}} = x(x + 1) = x^2 + x\\text{ (cm}^2\\text{)}$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức biểu thị thể tích khối hộp là $2x^3 + 2x^2\\text{ (cm}^3\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $V = x(x + 1)(2x) = 2x^2(x + 1) = 2x^3 + 2x^2\\text{ (cm}^3\\text{)}$."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $x = 3\\text{ cm}$, thể tích của khối hộp là $72\\text{ cm}^3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thay $x = 3$: $2(27) + 2(9) = 54 + 18 = 72\\text{ cm}^3$."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức biểu thị thể tích là một đa thức bậc hai.",
+            "correctAnswer": false,
+            "explanation": "Sai, hạng tử cao nhất là $2x^3$ nên thể tích là đa thức bậc ba."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "otc1-d1-sa1",
+        "badge": "Câu 1 (TH) - Bậc của đa thức thu gọn",
+        "prompt": "Tìm bậc của đa thức thu gọn: $P = 2x^3y^2 - 5x^2y^3 + 3 - 2x^3y^2$.",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "năm"
+        ],
+        "explanation": "Thu gọn: $P = (2x^3y^2 - 2x^3y^2) - 5x^2y^3 + 3 = -5x^2y^3 + 3$. Bậc của hạng tử $-5x^2y^3$ là $2 + 3 = 5$."
+      },
+      {
+        "id": "otc1-d1-sa2",
+        "badge": "Câu 2 (TH) - Tính giá trị của đa thức",
+        "prompt": "Tính giá trị của đa thức $A = 3x^2y - 2xy + 1$ tại $x = 1$ và $y = 2$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "Thay $x = 1, y = 2$: $A = 3(1)^2(2) - 2(1)(2) + 1 = 6 - 4 + 1 = 3$."
+      },
+      {
+        "id": "otc1-d1-sa3",
+        "badge": "Câu 3 (TH) - Tìm nghiệm phương trình bằng phép nhân đa thức",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $x(x - 4) - x^2 = 8$.",
+        "correctAnswer": "-2",
+        "acceptableAnswers": [
+          "-2",
+          "âm 2",
+          "- 2"
+        ],
+        "explanation": "Khai triển vế trái: $x^2 - 4x - x^2 = 8 \\Leftrightarrow -4x = 8 \\Leftrightarrow x = -2$."
+      },
+      {
+        "id": "otc1-d1-sa4",
+        "badge": "Câu 4 (VD) - Rút gọn biểu thức tích hai nhị thức",
+        "prompt": "Tính giá trị của biểu thức $M = (x - 2)(x + 2) - x^2$ tại $x = 100$.",
+        "correctAnswer": "-4",
+        "acceptableAnswers": [
+          "-4",
+          "âm 4",
+          "- 4"
+        ],
+        "explanation": "Ta có $(x - 2)(x + 2) - x^2 = x^2 - 4 - x^2 = -4$. Giá trị của $M$ luôn bằng $-4$ với mọi $x$."
+      },
+      {
+        "id": "otc1-d1-sa5",
+        "badge": "Câu 5 (VD - Thực tế) - Tìm chiều rộng mảnh vườn",
+        "prompt": "Một mảnh vườn hình chữ nhật có diện tích là $S = 12x^2 + 18xy\\text{ (m}^2\\text{)}$ và chiều dài là $6x\\text{ (m)}$. Khi $x = 2\\text{ m}$ và $y = 3\\text{ m}$, chiều rộng mảnh vườn bằng bao nhiêu mét?",
+        "correctAnswer": "13",
+        "acceptableAnswers": [
+          "13",
+          "mười ba",
+          "13m",
+          "13 m"
+        ],
+        "explanation": "Chiều rộng mảnh vườn: $r = S : d = (12x^2 + 18xy) : 6x = 2x + 3y\\text{ (m)}$.\nKhi $x = 2, y = 3$: $r = 2(2) + 3(3) = 4 + 9 = 13\\text{ m}$."
+      },
+      {
+        "id": "otc1-d1-sa6",
+        "badge": "Câu 6 (VD) - Tìm hệ số tự do của tích đa thức",
+        "prompt": "Hệ số tự do của đa thức thu gọn sau khi khai triển $(2x - 3)(x + 5)$ bằng bao nhiêu?",
+        "correctAnswer": "-15",
+        "acceptableAnswers": [
+          "-15",
+          "âm 15",
+          "- 15"
+        ],
+        "explanation": "Khai triển: $(2x - 3)(x + 5) = 2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$. Hệ số tự do là $-15$."
+      }
+    ],
+    "examSets": [
+      {
+        "id": "de-1",
+        "title": "Đề ôn tập số 1",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Đa thức) - Đề số 1 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc1-d1-q1",
+            "badge": "Câu 1 (NB) - Nhận biết đơn thức thu gọn",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Trong các biểu thức sau, biểu thức nào là đơn thức thu gọn?",
+            "options": [
+              "$-3x^2y^3$",
+              "$2x^2 \\cdot 3y$",
+              "$x + 2y$",
+              "$\\frac{2x}{y}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đơn thức $-3x^2y^3$ chỉ gồm tích của một số với các biến mà mỗi biến chỉ viết một lần với số mũ nguyên dương nên là đơn thức thu gọn."
+          },
+          {
+            "id": "otc1-d1-q2",
+            "badge": "Câu 2 (NB) - Bậc của đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Bậc của đơn thức $-5x^3y^2z$ là:",
+            "options": [
+              "$6$",
+              "$5$",
+              "$3$",
+              "$2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Bậc của đơn thức là tổng số mũ của tất cả các biến: $3 + 2 + 1 = 6$."
+          },
+          {
+            "id": "otc1-d1-q3",
+            "badge": "Câu 3 (NB) - Cặp đơn thức đồng dạng",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Cặp đơn thức nào sau đây là hai đơn thức đồng dạng?",
+            "options": [
+              "$2x^2y$ và $-5x^2y$",
+              "$2x^2y$ và $2xy^2$",
+              "$3x^2$ và $3y^2$",
+              "$-x^2y$ và $-x^2y^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Hai đơn thức $2x^2y$ và $-5x^2y$ có hệ số khác 0 và có cùng phần biến là $x^2y$ nên đồng dạng với nhau."
+          },
+          {
+            "id": "otc1-d1-q4",
+            "badge": "Câu 4 (NB) - Bậc của đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Bậc của đa thức $P = x^4 - 2x^2y^3 + 5$ là:",
+            "options": [
+              "$5$",
+              "$4$",
+              "$3$",
+              "$2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đa thức có hạng tử $-2x^2y^3$ có bậc cao nhất là $2 + 3 = 5$, do đó bậc của đa thức là $5$."
+          },
+          {
+            "id": "otc1-d1-q5",
+            "badge": "Câu 5 (NB) - Phép nhân đơn thức với đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép nhân $2x(x - 3)$ là:",
+            "options": [
+              "$2x^2 - 6x$",
+              "$2x^2 - 3$",
+              "$2x^2 - 6$",
+              "$x^2 - 6x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$2x(x - 3) = 2x \\cdot x - 2x \\cdot 3 = 2x^2 - 6x$."
+          },
+          {
+            "id": "otc1-d1-q6",
+            "badge": "Câu 6 (NB) - Phép chia đơn thức cho đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $12x^4y^2 : 4x^2y$ là:",
+            "options": [
+              "$3x^2y$",
+              "$3x^2$",
+              "$3xy$",
+              "$8x^2y$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$12x^4y^2 : 4x^2y = (12 : 4)(x^4 : x^2)(y^2 : y) = 3x^2y$."
+          },
+          {
+            "id": "otc1-d1-q7",
+            "badge": "Câu 7 (TH) - Thu gọn đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Thu gọn đa thức $A = 3x^2y - 2xy^2 + x^2y + 5xy^2$ ta được:",
+            "options": [
+              "$4x^2y + 3xy^2$",
+              "$4x^2y - 3xy^2$",
+              "$2x^2y + 7xy^2$",
+              "$7x^2y$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$A = (3x^2y + x^2y) + (-2xy^2 + 5xy^2) = 4x^2y + 3xy^2$."
+          },
+          {
+            "id": "otc1-d1-q8",
+            "badge": "Câu 8 (TH) - Trừ hai đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Cho $M = x^2 - 2xy + y^2$ và $N = x^2 + 2xy + y^2$. Hiệu $M - N$ bằng:",
+            "options": [
+              "$-4xy$",
+              "$4xy$",
+              "$2x^2 + 2y^2$",
+              "$0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$M - N = (x^2 - 2xy + y^2) - (x^2 + 2xy + y^2) = x^2 - 2xy + y^2 - x^2 - 2xy - y^2 = -4xy$."
+          },
+          {
+            "id": "otc1-d1-q9",
+            "badge": "Câu 9 (TH) - Nhân hai đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Khai triển và thu gọn tích $(x - 2)(x + 5)$ ta được:",
+            "options": [
+              "$x^2 + 3x - 10$",
+              "$x^2 - 3x - 10$",
+              "$x^2 + 7x - 10$",
+              "$x^2 - 10$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 2)(x + 5) = x^2 + 5x - 2x - 10 = x^2 + 3x - 10$."
+          },
+          {
+            "id": "otc1-d1-q10",
+            "badge": "Câu 10 (TH) - Chia đa thức cho đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $(6x^3 - 4x^2 + 2x) : 2x$ là:",
+            "options": [
+              "$3x^2 - 2x + 1$",
+              "$3x^2 - 2x$",
+              "$3x^2 - 2x + 2$",
+              "$3x^3 - 2x^2 + x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(6x^3 : 2x) - (4x^2 : 2x) + (2x : 2x) = 3x^2 - 2x + 1$."
+          },
+          {
+            "id": "otc1-d1-q11",
+            "badge": "Câu 11 (VD) - Rút gọn biểu thức tổng hợp",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Rút gọn biểu thức $P = (x - 1)(x + 2) - x(x + 3)$ ta được:",
+            "options": [
+              "$-2x - 2$",
+              "$-2x + 2$",
+              "$2x - 2$",
+              "$-2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Khai triển: $(x - 1)(x + 2) = x^2 + 2x - x - 2 = x^2 + x - 2$.\n$-x(x + 3) = -x^2 - 3x$.\nCộng lại: $P = (x^2 + x - 2) - x^2 - 3x = -2x - 2$."
+          },
+          {
+            "id": "otc1-d1-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Diện tích mảnh vườn mở rộng",
+            "source": "SGK Toán 8 KNTT - Bài toán thực tế",
+            "question": "Một mảnh đất hình chữ nhật có chiều dài ban đầu là $x\\text{ (m)}$ và chiều rộng là $y\\text{ (m)}$. Người ta tăng chiều dài thêm $4\\text{ m}$ và giữ nguyên chiều rộng. Đa thức biểu thị diện tích mảnh đất sau khi mở rộng là:",
+            "options": [
+              "$xy + 4y\\text{ (m}^2\\text{)}$",
+              "$xy + 4x\\text{ (m}^2\\text{)}$",
+              "$xy + 4\\text{ (m}^2\\text{)}$",
+              "$4xy\\text{ (m}^2\\text{)}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chiều dài mới là $(x + 4)\\text{ (m)}$. Diện tích mới là $S = (x + 4)y = xy + 4y\\text{ (m}^2\\text{)}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc1-d1-tf1",
+            "badge": "Câu 1 (Đ/S) - Khái niệm đơn thức và đơn thức đồng dạng",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau về đơn thức:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Biểu thức $3x^2y$ là một đơn thức thu gọn.",
+                "correctAnswer": true,
+                "explanation": "Đúng, các biến chỉ xuất hiện một lần với số mũ nguyên dương."
+              },
+              {
+                "id": "b",
+                "text": "Số thực $0$ là đơn thức có bậc bằng $0$.",
+                "correctAnswer": false,
+                "explanation": "Sai, số 0 được coi là đơn thức không có bậc. Chỉ có các số thực khác 0 mới có bậc bằng 0."
+              },
+              {
+                "id": "c",
+                "text": "Hai đơn thức $-2xy^2$ và $5y^2x$ đồng dạng với nhau.",
+                "correctAnswer": true,
+                "explanation": "Đúng, vì $y^2x = xy^2$, cả hai có cùng phần biến."
+              },
+              {
+                "id": "d",
+                "text": "Tổng của hai đơn thức đồng dạng $2x^2y + 3x^2y$ bằng $5x^4y^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, khi cộng đơn thức đồng dạng ta cộng hệ số và giữ nguyên phần biến: $(2 + 3)x^2y = 5x^2y$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d1-tf2",
+            "badge": "Câu 2 (Đ/S) - Phép cộng và trừ đa thức",
+            "prompt": "Cho hai đa thức $A = 2x^2 - xy + 3$ và $B = x^2 + xy - 1$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Tổng $A + B = 3x^2 + 2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $A + B = (2x^2 + x^2) + (-xy + xy) + (3 - 1) = 3x^2 + 2$."
+              },
+              {
+                "id": "b",
+                "text": "Hiệu $A - B = x^2 - 2xy + 4$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $A - B = (2x^2 - x^2) + (-xy - xy) + (3 - (-1)) = x^2 - 2xy + 4$."
+              },
+              {
+                "id": "c",
+                "text": "Bậc của đa thức tổng $A + B$ bằng $4$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $A + B = 3x^2 + 2$ có bậc bằng $2$."
+              },
+              {
+                "id": "d",
+                "text": "Tại $x = 1, y = 2$, giá trị của $A - B$ bằng $1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, thay $x = 1, y = 2$: $1^2 - 2(1)(2) + 4 = 1 - 4 + 4 = 1$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d1-tf3",
+            "badge": "Câu 3 (Đ/S) - Phép nhân và chia đa thức",
+            "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Tích của $-3x$ và $(2x - 1)$ là $-6x^2 + 3x$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(-3x) \\cdot 2x + (-3x) \\cdot (-1) = -6x^2 + 3x$."
+              },
+              {
+                "id": "b",
+                "text": "Khai triển $(x - 3)(x + 3)$ ta được $x^2 - 9$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x - 3)(x + 3) = x^2 + 3x - 3x - 9 = x^2 - 9$."
+              },
+              {
+                "id": "c",
+                "text": "Phép chia $(4x^3 - 2x^2) : 2x^2$ cho kết quả là $2x - 2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $4x^3 : 2x^2 - 2x^2 : 2x^2 = 2x - 1$."
+              },
+              {
+                "id": "d",
+                "text": "Đơn thức $6x^2y$ chia hết cho đơn thức $3xy^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, vì số mũ của $y$ trong số chia là $2 > 1$ (số mũ của $y$ trong số bị chia)."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d1-tf4",
+            "badge": "Câu 4 (Đ/S) - Ứng dụng hình học thực tế",
+            "prompt": "Một khối hộp chữ nhật có ba kích thước đáy và chiều cao lần lượt là $x\\text{ (cm)}$, $x + 1\\text{ (cm)}$ và $2x\\text{ (cm)}$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đa thức biểu thị diện tích mặt đáy là $x^2 + x\\text{ (cm}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $S_{\\text{đáy}} = x(x + 1) = x^2 + x\\text{ (cm}^2\\text{)}$."
+              },
+              {
+                "id": "b",
+                "text": "Đa thức biểu thị thể tích khối hộp là $2x^3 + 2x^2\\text{ (cm}^3\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $V = x(x + 1)(2x) = 2x^2(x + 1) = 2x^3 + 2x^2\\text{ (cm}^3\\text{)}$."
+              },
+              {
+                "id": "c",
+                "text": "Nếu $x = 3\\text{ cm}$, thể tích của khối hộp là $72\\text{ cm}^3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, thay $x = 3$: $2(27) + 2(9) = 54 + 18 = 72\\text{ cm}^3$."
+              },
+              {
+                "id": "d",
+                "text": "Đa thức biểu thị thể tích là một đa thức bậc hai.",
+                "correctAnswer": false,
+                "explanation": "Sai, hạng tử cao nhất là $2x^3$ nên thể tích là đa thức bậc ba."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc1-d1-sa1",
+            "badge": "Câu 1 (TH) - Bậc của đa thức thu gọn",
+            "prompt": "Tìm bậc của đa thức thu gọn: $P = 2x^3y^2 - 5x^2y^3 + 3 - 2x^3y^2$.",
+            "correctAnswer": "5",
+            "acceptableAnswers": [
+              "5",
+              "năm"
+            ],
+            "explanation": "Thu gọn: $P = (2x^3y^2 - 2x^3y^2) - 5x^2y^3 + 3 = -5x^2y^3 + 3$. Bậc của hạng tử $-5x^2y^3$ là $2 + 3 = 5$."
+          },
+          {
+            "id": "otc1-d1-sa2",
+            "badge": "Câu 2 (TH) - Tính giá trị của đa thức",
+            "prompt": "Tính giá trị của đa thức $A = 3x^2y - 2xy + 1$ tại $x = 1$ và $y = 2$.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "ba"
+            ],
+            "explanation": "Thay $x = 1, y = 2$: $A = 3(1)^2(2) - 2(1)(2) + 1 = 6 - 4 + 1 = 3$."
+          },
+          {
+            "id": "otc1-d1-sa3",
+            "badge": "Câu 3 (TH) - Tìm nghiệm phương trình bằng phép nhân đa thức",
+            "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $x(x - 4) - x^2 = 8$.",
+            "correctAnswer": "-2",
+            "acceptableAnswers": [
+              "-2",
+              "âm 2",
+              "- 2"
+            ],
+            "explanation": "Khai triển vế trái: $x^2 - 4x - x^2 = 8 \\Leftrightarrow -4x = 8 \\Leftrightarrow x = -2$."
+          },
+          {
+            "id": "otc1-d1-sa4",
+            "badge": "Câu 4 (VD) - Rút gọn biểu thức tích hai nhị thức",
+            "prompt": "Tính giá trị của biểu thức $M = (x - 2)(x + 2) - x^2$ tại $x = 100$.",
+            "correctAnswer": "-4",
+            "acceptableAnswers": [
+              "-4",
+              "âm 4",
+              "- 4"
+            ],
+            "explanation": "Ta có $(x - 2)(x + 2) - x^2 = x^2 - 4 - x^2 = -4$. Giá trị của $M$ luôn bằng $-4$ với mọi $x$."
+          },
+          {
+            "id": "otc1-d1-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Tìm chiều rộng mảnh vườn",
+            "prompt": "Một mảnh vườn hình chữ nhật có diện tích là $S = 12x^2 + 18xy\\text{ (m}^2\\text{)}$ và chiều dài là $6x\\text{ (m)}$. Khi $x = 2\\text{ m}$ và $y = 3\\text{ m}$, chiều rộng mảnh vườn bằng bao nhiêu mét?",
+            "correctAnswer": "13",
+            "acceptableAnswers": [
+              "13",
+              "mười ba",
+              "13m",
+              "13 m"
+            ],
+            "explanation": "Chiều rộng mảnh vườn: $r = S : d = (12x^2 + 18xy) : 6x = 2x + 3y\\text{ (m)}$.\nKhi $x = 2, y = 3$: $r = 2(2) + 3(3) = 4 + 9 = 13\\text{ m}$."
+          },
+          {
+            "id": "otc1-d1-sa6",
+            "badge": "Câu 6 (VD) - Tìm hệ số tự do của tích đa thức",
+            "prompt": "Hệ số tự do của đa thức thu gọn sau khi khai triển $(2x - 3)(x + 5)$ bằng bao nhiêu?",
+            "correctAnswer": "-15",
+            "acceptableAnswers": [
+              "-15",
+              "âm 15",
+              "- 15"
+            ],
+            "explanation": "Khai triển: $(2x - 3)(x + 5) = 2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$. Hệ số tự do là $-15$."
+          }
+        ]
+      },
+      {
+        "id": "de-2",
+        "title": "Đề ôn tập số 2",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Đa thức) - Đề số 2 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc1-d2-q1",
+            "badge": "Câu 1 (NB) - Hệ số của đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Phần hệ số của đơn thức $-7x^3y^4$ là:",
+            "options": [
+              "$-7$",
+              "$7$",
+              "$3$",
+              "$4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phần hệ số là thừa số số đứng trước phần biến: $-7$."
+          },
+          {
+            "id": "otc1-d2-q2",
+            "badge": "Câu 2 (NB) - Bậc của số thực khác 0",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Bậc của đơn thức $2026$ là:",
+            "options": [
+              "$0$",
+              "$1$",
+              "$2026$",
+              "Không có bậc"
+            ],
+            "correctIndex": 0,
+            "explanation": "Theo quy ước, một số thực khác 0 là đơn thức có bậc bằng 0."
+          },
+          {
+            "id": "otc1-d2-q3",
+            "badge": "Câu 3 (NB) - Tổng hai đơn thức đồng dạng",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Tổng của hai đơn thức $4x^3y$ và $-x^3y$ là:",
+            "options": [
+              "$3x^3y$",
+              "$5x^3y$",
+              "$3x^6y^2$",
+              "$4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$4x^3y + (-x^3y) = (4 - 1)x^3y = 3x^3y$."
+          },
+          {
+            "id": "otc1-d2-q4",
+            "badge": "Câu 4 (NB) - Nhận biết đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Biểu thức nào sau đây KHÔNG PHẢI là đa thức?",
+            "options": [
+              "$\\frac{2x + 1}{y}$",
+              "$2x^2 - 3x + 1$",
+              "$xy + y^2$",
+              "$5$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Biểu thức $\\frac{2x+1}{y}$ chứa biến $y$ ở mẫu nên không phải là đa thức."
+          },
+          {
+            "id": "otc1-d2-q5",
+            "badge": "Câu 5 (NB) - Nhân đơn thức âm",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép nhân $-3x^2(2x - 1)$ là:",
+            "options": [
+              "$-6x^3 + 3x^2$",
+              "$-6x^3 - 3x^2$",
+              "$6x^3 - 3x^2$",
+              "$-6x^2 + 3x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$-3x^2 \\cdot 2x + (-3x^2) \\cdot (-1) = -6x^3 + 3x^2$."
+          },
+          {
+            "id": "otc1-d2-q6",
+            "badge": "Câu 6 (NB) - Chia hai lũy thừa cùng cơ số",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $y^9 : y^3$ là:",
+            "options": [
+              "$y^6$",
+              "$y^3$",
+              "$y^{12}$",
+              "$y^{27}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$y^9 : y^3 = y^{9-3} = y^6$."
+          },
+          {
+            "id": "otc1-d2-q7",
+            "badge": "Câu 7 (TH) - Cộng hai đa thức bậc hai",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Cho $A = 2x^2 - 3x + 5$ và $B = x^2 + 3x - 2$. Tổng $A + B$ là:",
+            "options": [
+              "$3x^2 + 3$",
+              "$3x^2 + 6x + 3$",
+              "$x^2 + 3$",
+              "$3x^2 - 6x + 7$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$A + B = (2x^2 + x^2) + (-3x + 3x) + (5 - 2) = 3x^2 + 3$."
+          },
+          {
+            "id": "otc1-d2-q8",
+            "badge": "Câu 8 (TH) - Nhân hai nhị thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Khai triển và thu gọn $(2x - 1)(x + 4)$ ta được:",
+            "options": [
+              "$2x^2 + 7x - 4$",
+              "$2x^2 + 8x - 4$",
+              "$2x^2 - 7x - 4$",
+              "$2x^2 + 7x + 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(2x - 1)(x + 4) = 2x^2 + 8x - x - 4 = 2x^2 + 7x - 4$."
+          },
+          {
+            "id": "otc1-d2-q9",
+            "badge": "Câu 9 (TH) - Chia đa thức cho đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $(15x^4 - 10x^3) : 5x^2$ là:",
+            "options": [
+              "$3x^2 - 2x$",
+              "$3x^2 - 2$",
+              "$3x - 2$",
+              "$3x^2 + 2x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(15x^4 : 5x^2) - (10x^3 : 5x^2) = 3x^2 - 2x$."
+          },
+          {
+            "id": "otc1-d2-q10",
+            "badge": "Câu 10 (TH) - Tính giá trị đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Giá trị của đa thức $B = x^2 - 4xy + 4y^2$ tại $x = 4, y = 1$ là:",
+            "options": [
+              "$4$",
+              "$16$",
+              "$0$",
+              "$8$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thay $x = 4, y = 1$: $4^2 - 4(4)(1) + 4(1)^2 = 16 - 16 + 4 = 4$."
+          },
+          {
+            "id": "otc1-d2-q11",
+            "badge": "Câu 11 (VD) - Tìm x bằng phép chia đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Tìm giá trị của $x$ thỏa mãn phương trình: $(6x^2 - 9x) : 3x = 5$:",
+            "options": [
+              "$x = 4$",
+              "$x = -4$",
+              "$x = 2$",
+              "$x = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(6x^2 : 3x) - (9x : 3x) = 5 \\Leftrightarrow 2x - 3 = 5 \\Leftrightarrow 2x = 8 \\Leftrightarrow x = 4$."
+          },
+          {
+            "id": "otc1-d2-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Thể tích hình hộp chữ nhật",
+            "source": "Toán 8 KNTT - Bài toán thực tế",
+            "question": "Một hồ bơi hình hộp chữ nhật có diện tích đáy là $S = 20x^2 + 15xy\\text{ (m}^2\\text{)}$ và chiều sâu (chiều cao) là $2\\text{ m}$. Đa thức biểu thị dung tích của hồ bơi là:",
+            "options": [
+              "$40x^2 + 30xy\\text{ (m}^3\\text{)}$",
+              "$20x^2 + 15xy + 2\\text{ (m}^3\\text{)}$",
+              "$10x^2 + 7,5xy\\text{ (m}^3\\text{)}$",
+              "$40x^2 + 15xy\\text{ (m}^3\\text{)}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$V = S \\cdot h = (20x^2 + 15xy) \\cdot 2 = 40x^2 + 30xy\\text{ (m}^3\\text{)}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc1-d2-tf1",
+            "badge": "Câu 1 (Đ/S) - Bậc và đơn thức thu gọn",
+            "prompt": "Xét tính đúng/sai của các phát biểu sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đơn thức $2x^2y \\cdot 3xy$ là đơn thức đã thu gọn.",
+                "correctAnswer": false,
+                "explanation": "Sai, vì biến $x$ và biến $y$ xuất hiện nhiều hơn một lần; thu gọn là $6x^3y^2$."
+              },
+              {
+                "id": "b",
+                "text": "Bậc của đơn thức $-4x^2y^4$ bằng $6$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $2 + 4 = 6$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức $x^3 - 2x^2 + x^3 + 5$ có bậc bằng $6$.",
+                "correctAnswer": false,
+                "explanation": "Sai, thu gọn đa thức được $2x^3 - 2x^2 + 5$, bậc của đa thức là $3$."
+              },
+              {
+                "id": "d",
+                "text": "Đơn thức $0$ không có bậc.",
+                "correctAnswer": true,
+                "explanation": "Đúng, theo quy ước số 0 là đơn thức không có bậc."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d2-tf2",
+            "badge": "Câu 2 (Đ/S) - Phép toán đa thức nhiều biến",
+            "prompt": "Cho hai đa thức $P = x^2y - 2xy^2$ và $Q = 3x^2y + xy^2$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Tổng $P + Q = 4x^2y - xy^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(1 + 3)x^2y + (-2 + 1)xy^2 = 4x^2y - xy^2$."
+              },
+              {
+                "id": "b",
+                "text": "Hiệu $P - Q = -2x^2y - 3xy^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(1 - 3)x^2y + (-2 - 1)xy^2 = -2x^2y - 3xy^2$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức tổng $P + Q$ có bậc bằng $4$.",
+                "correctAnswer": false,
+                "explanation": "Sai, cả hai hạng tử đều có bậc là $2 + 1 = 3$, bậc của đa thức tổng là $3$."
+              },
+              {
+                "id": "d",
+                "text": "Tại $x = 1, y = 1$, giá trị của $P + Q$ bằng $3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $4(1)^2(1) - (1)(1)^2 = 4 - 1 = 3$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d2-tf3",
+            "badge": "Câu 3 (Đ/S) - Khai triển và chia đa thức",
+            "prompt": "Xét tính đúng/sai của các phép tính sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$(x + 2)(x - 2) = x^2 - 4$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x + 2)(x - 2) = x^2 - 2x + 2x - 4 = x^2 - 4$."
+              },
+              {
+                "id": "b",
+                "text": "$(2x + 1)(x - 3) = 2x^2 - 5x - 3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $2x^2 - 6x + x - 3 = 2x^2 - 5x - 3$."
+              },
+              {
+                "id": "c",
+                "text": "$(6x^3y - 9x^2y^2) : 3xy = 2x^2 - 3xy$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(6x^3y : 3xy) - (9x^2y^2 : 3xy) = 2x^2 - 3xy$."
+              },
+              {
+                "id": "d",
+                "text": "Đa thức $x^2 + y$ chia hết cho đơn thức $x$.",
+                "correctAnswer": false,
+                "explanation": "Sai, hạng tử $y$ không chứa biến $x$ nên không chia hết cho $x$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d2-tf4",
+            "badge": "Câu 4 (Đ/S) - Bài toán thực tế diện tích khu đất",
+            "prompt": "Một khu đất hình chữ nhật có chiều dài là $3x + 2\\text{ (m)}$ và chiều rộng là $2x - 1\\text{ (m)}$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đa thức biểu thị diện tích khu đất là $6x^2 + x - 2\\text{ (m}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(3x + 2)(2x - 1) = 6x^2 - 3x + 4x - 2 = 6x^2 + x - 2\\text{ (m}^2\\text{)}$."
+              },
+              {
+                "id": "b",
+                "text": "Chu vi của khu đất là $5x + 1\\text{ (m)}$.",
+                "correctAnswer": false,
+                "explanation": "Sai, chu vi là $2[(3x + 2) + (2x - 1)] = 2(5x + 1) = 10x + 2\\text{ (m)}$."
+              },
+              {
+                "id": "c",
+                "text": "Khi $x = 5\\text{ m}$, diện tích khu đất bằng $153\\text{ m}^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, chiều dài $3(5)+2 = 17\\text{ m}$, chiều rộng $2(5)-1 = 9\\text{ m}$, diện tích $17 \\cdot 9 = 153\\text{ m}^2$ (hoặc thay vào đa thức: $6(25) + 5 - 2 = 150 + 3 = 153$)."
+              },
+              {
+                "id": "d",
+                "text": "Hệ số tự do của đa thức diện tích bằng $2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, hệ số tự do là $-2$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc1-d2-sa1",
+            "badge": "Câu 1 (TH) - Bậc của đơn thức tích",
+            "prompt": "Tìm bậc của đơn thức thu gọn của tích: $(-2x^3y) \\cdot (3x^2y^3)$.",
+            "correctAnswer": "9",
+            "acceptableAnswers": [
+              "9",
+              "chín"
+            ],
+            "explanation": "Thu gọn tích: $-6x^5y^4$. Bậc của đơn thức này là $5 + 4 = 9$."
+          },
+          {
+            "id": "otc1-d2-sa2",
+            "badge": "Câu 2 (TH) - Tính giá trị của thương",
+            "prompt": "Tính giá trị của thương $(8x^3y^2 - 4x^2y^2) : 4x^2y^2$ tại $x = 5$.",
+            "correctAnswer": "9",
+            "acceptableAnswers": [
+              "9",
+              "chín"
+            ],
+            "explanation": "Thương bằng $2x - 1$. Thay $x = 5$: $2(5) - 1 = 9$."
+          },
+          {
+            "id": "otc1-d2-sa3",
+            "badge": "Câu 3 (TH) - Nghiệm x của phương trình",
+            "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $2x(x + 3) - 2x^2 = 12$.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+              "2",
+              "hai"
+            ],
+            "explanation": "$2x^2 + 6x - 2x^2 = 12 \\Leftrightarrow 6x = 12 \\Leftrightarrow x = 2$."
+          },
+          {
+            "id": "otc1-d2-sa4",
+            "badge": "Câu 4 (VD) - Chứng minh giá trị không phụ thuộc biến",
+            "prompt": "Biểu thức $P = (x - 3)(x + 2) - x(x - 1) + 6$ có giá trị bằng bao nhiêu?",
+            "correctAnswer": "0",
+            "acceptableAnswers": [
+              "0",
+              "không"
+            ],
+            "explanation": "$P = (x^2 - x - 6) - x^2 + x + 6 = 0$."
+          },
+          {
+            "id": "otc1-d2-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Chiều cao bể nước hình hộp chữ nhật",
+            "prompt": "Một bể nước hình hộp chữ nhật có thể tích là $V = 18x^3 + 24x^2\\text{ (dm}^3\\text{)}$ và diện tích đáy là $S = 6x^2\\text{ (dm}^2\\text{)}$. Khi $x = 2\\text{ dm}$, chiều cao của bể nước bằng bao nhiêu đêximét?",
+            "correctAnswer": "10",
+            "acceptableAnswers": [
+              "10",
+              "mười",
+              "10dm",
+              "10 dm"
+            ],
+            "explanation": "Chiều cao bể: $h = V : S = (18x^3 + 24x^2) : 6x^2 = 3x + 4\\text{ (dm)}$.\nKhi $x = 2$: $h = 3(2) + 4 = 10\\text{ dm}$."
+          },
+          {
+            "id": "otc1-d2-sa6",
+            "badge": "Câu 6 (VD) - Hệ số của x trong khai triển",
+            "prompt": "Tìm hệ số của $x$ trong đa thức thu gọn của tích: $(3x - 2)(2x + 5)$.",
+            "correctAnswer": "11",
+            "acceptableAnswers": [
+              "11",
+              "mười một"
+            ],
+            "explanation": "$(3x - 2)(2x + 5) = 6x^2 + 15x - 4x - 10 = 6x^2 + 11x - 10$. Hệ số của $x$ là $11$."
+          }
+        ]
+      },
+      {
+        "id": "de-3",
+        "title": "Đề ôn tập số 3",
+        "description": "Đề ôn tập tổng hợp cuối Chương I (Đa thức) - Đề số 3 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc1-d3-q1",
+            "badge": "Câu 1 (NB) - Bậc của đơn thức một biến",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Bậc của đơn thức $-8x^7$ là:",
+            "options": [
+              "$7$",
+              "$-8$",
+              "$8$",
+              "$1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Số mũ của biến $x$ là $7$ nên bậc của đơn thức là $7$."
+          },
+          {
+            "id": "otc1-d3-q2",
+            "badge": "Câu 2 (NB) - Phần biến của đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Phần biến của đơn thức $\\frac{1}{3}x^2y^3$ là:",
+            "options": [
+              "$x^2y^3$",
+              "$\\frac{1}{3}$",
+              "$x^2$",
+              "$y^3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Phần biến là tích các biến lũy thừa: $x^2y^3$."
+          },
+          {
+            "id": "otc1-d3-q3",
+            "badge": "Câu 3 (NB) - Hiệu hai đơn thức đồng dạng",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Hiệu của hai đơn thức đồng dạng $5xy^2 - 7xy^2$ bằng:",
+            "options": [
+              "$-2xy^2$",
+              "$2xy^2$",
+              "$-2$",
+              "$-12xy^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(5 - 7)xy^2 = -2xy^2$."
+          },
+          {
+            "id": "otc1-d3-q4",
+            "badge": "Câu 4 (NB) - Các hạng tử của đa thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Đa thức $2x^2 - 3xy + 5$ gồm có bao nhiêu hạng tử?",
+            "options": [
+              "$3$",
+              "$2$",
+              "$4$",
+              "$1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Đa thức gồm 3 hạng tử: $2x^2$, $-3xy$ và $5$."
+          },
+          {
+            "id": "otc1-d3-q5",
+            "badge": "Câu 5 (NB) - Nhân đơn thức với đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Tích của hai đơn thức $4xy$ và $-2x^2y$ bằng:",
+            "options": [
+              "$-8x^3y^2$",
+              "$8x^3y^2$",
+              "$-8x^2y$",
+              "$-6x^3y^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$4 \\cdot (-2) \\cdot (x \\cdot x^2) \\cdot (y \\cdot y) = -8x^3y^2$."
+          },
+          {
+            "id": "otc1-d3-q6",
+            "badge": "Câu 6 (NB) - Chia đơn thức chia hết",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $-16x^5 : 4x^3$ là:",
+            "options": [
+              "$-4x^2$",
+              "$4x^2$",
+              "$-4x^8$",
+              "$-4x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$-16 : 4 = -4$ và $x^5 : x^3 = x^2$, kết quả là $-4x^2$."
+          },
+          {
+            "id": "otc1-d3-q7",
+            "badge": "Câu 7 (TH) - Thu gọn đa thức chứa hạng tử đối nhau",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Thu gọn đa thức $M = x^3 - 2x^2 + 5 - x^3 + 2x^2$ ta được:",
+            "options": [
+              "$5$",
+              "$2x^3 + 5$",
+              "$0$",
+              "$4x^2 + 5$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$M = (x^3 - x^3) + (-2x^2 + 2x^2) + 5 = 5$."
+          },
+          {
+            "id": "otc1-d3-q8",
+            "badge": "Câu 8 (TH) - Khai triển tích hai nhị thức dấu trừ",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Khai triển và thu gọn $(x - 4)(x - 1)$ ta được:",
+            "options": [
+              "$x^2 - 5x + 4$",
+              "$x^2 - 5x - 4$",
+              "$x^2 + 5x + 4$",
+              "$x^2 - 3x + 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 4)(x - 1) = x^2 - x - 4x + 4 = x^2 - 5x + 4$."
+          },
+          {
+            "id": "otc1-d3-q9",
+            "badge": "Câu 9 (TH) - Chia đa thức ba hạng tử cho đơn thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Kết quả của phép chia $(8x^3 - 6x^2 + 2x) : 2x$ là:",
+            "options": [
+              "$4x^2 - 3x + 1$",
+              "$4x^2 - 3x$",
+              "$4x^2 - 3x + 2$",
+              "$4x^3 - 3x^2 + x$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(8x^3 : 2x) - (6x^2 : 2x) + (2x : 2x) = 4x^2 - 3x + 1$."
+          },
+          {
+            "id": "otc1-d3-q10",
+            "badge": "Câu 10 (TH) - Tính giá trị của biểu thức hiệu",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Giá trị của biểu thức $C = (x + y)(x - y)$ tại $x = 5, y = 3$ là:",
+            "options": [
+              "$16$",
+              "$8$",
+              "$2$",
+              "$25$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x + y)(x - y) = x^2 - y^2$. Thay $x = 5, y = 3$: $5^2 - 3^2 = 25 - 9 = 16$."
+          },
+          {
+            "id": "otc1-d3-q11",
+            "badge": "Câu 11 (VD) - Rút gọn biểu thức tổng hợp",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương I",
+            "question": "Rút gọn biểu thức $H = (2x - 1)(x + 2) - 2x(x + 1)$ ta được:",
+            "options": [
+              "$x - 2$",
+              "$3x - 2$",
+              "$-x - 2$",
+              "$-2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(2x - 1)(x + 2) = 2x^2 + 4x - x - 2 = 2x^2 + 3x - 2$.\n$-2x(x + 1) = -2x^2 - 2x$.\nCộng lại: $(2x^2 + 3x - 2) - 2x^2 - 2x = x - 2$."
+          },
+          {
+            "id": "otc1-d3-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Tìm chiều dài mảnh đất hình chữ nhật",
+            "source": "Toán 8 KNTT - Bài toán thực tế",
+            "question": "Một mảnh đất hình chữ nhật có diện tích $S = 10x^2 + 15xy\\text{ (m}^2\\text{)}$ và chiều rộng là $5x\\text{ (m)}$. Đa thức biểu thị chiều dài của mảnh đất là:",
+            "options": [
+              "$2x + 3y\\text{ (m)}$",
+              "$3x + 2y\\text{ (m)}$",
+              "$2x - 3y\\text{ (m)}$",
+              "$5x + 3y\\text{ (m)}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Chiều dài = Diện tích : Chiều rộng = $(10x^2 + 15xy) : 5x = 2x + 3y\\text{ (m)}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc1-d3-tf1",
+            "badge": "Câu 1 (Đ/S) - Đơn thức và phép nhân đơn thức",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Tích của hai đơn thức $3x^2$ và $2x^3$ là $6x^5$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $3 \\cdot 2 = 6$ và $x^2 \\cdot x^3 = x^5$."
+              },
+              {
+                "id": "b",
+                "text": "Đơn thức $-5x^2y^3$ có bậc bằng $5$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, tổng số mũ là $2 + 3 = 5$."
+              },
+              {
+                "id": "c",
+                "text": "Biểu thức $\\frac{x^2 + 1}{2}$ là một đa thức.",
+                "correctAnswer": true,
+                "explanation": "Đúng, vì $\\frac{x^2+1}{2} = \\frac{1}{2}x^2 + \\frac{1}{2}$, mẫu là hằng số nên đây là đa thức."
+              },
+              {
+                "id": "d",
+                "text": "Hai đơn thức $3x^2y$ và $-3xy^2$ đồng dạng với nhau.",
+                "correctAnswer": false,
+                "explanation": "Sai, một bên có phần biến là $x^2y$, một bên là $xy^2$ (khác số mũ của $x$ và $y$)."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d3-tf2",
+            "badge": "Câu 2 (Đ/S) - Bỏ dấu ngoặc và thu gọn đa thức",
+            "prompt": "Cho đa thức $M = (3x^2 - 2xy + 1) - (x^2 - 2xy - 3)$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Khi bỏ dấu ngoặc có dấu trừ, ta đổi dấu tất cả các hạng tử bên trong.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $-(x^2 - 2xy - 3) = -x^2 + 2xy + 3$."
+              },
+              {
+                "id": "b",
+                "text": "Đa thức $M$ sau khi thu gọn bằng $2x^2 + 4$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(3x^2 - x^2) + (-2xy + 2xy) + (1 + 3) = 2x^2 + 4$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức $M$ có bậc bằng $4$.",
+                "correctAnswer": false,
+                "explanation": "Sai, đa thức thu gọn $2x^2 + 4$ có bậc bằng $2$."
+              },
+              {
+                "id": "d",
+                "text": "Với mọi giá trị của $x, y$, giá trị của $M$ luôn dương.",
+                "correctAnswer": true,
+                "explanation": "Đúng, vì $x^2 \\ge 0 \\Rightarrow 2x^2 + 4 \\ge 4 > 0$ với mọi $x$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d3-tf3",
+            "badge": "Câu 3 (Đ/S) - Phép nhân và chia đa thức",
+            "prompt": "Xét tính đúng/sai của các công thức và phép tính sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "$(x + 3)(x - 1) = x^2 + 2x - 3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x^2 - x + 3x - 3 = x^2 + 2x - 3$."
+              },
+              {
+                "id": "b",
+                "text": "$(10x^3 - 5x) : 5x = 2x^2 - 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(10x^3 : 5x) - (5x : 5x) = 2x^2 - 1$."
+              },
+              {
+                "id": "c",
+                "text": "Phép chia $(6x^3 + 2x^2) : (-2x) = -3x^2 - x$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $[6x^3 : (-2x)] + [2x^2 : (-2x)] = -3x^2 - x$."
+              },
+              {
+                "id": "d",
+                "text": "Đơn thức $4x^2y^2$ chia hết cho đơn thức $2x^3y$.",
+                "correctAnswer": false,
+                "explanation": "Sai, vì số mũ của $x$ trong số chia là $3 > 2$."
+              }
+            ]
+          },
+          {
+            "id": "otc1-d3-tf4",
+            "badge": "Câu 4 (Đ/S) - Bài toán thực tế diện tích tấm bìa",
+            "prompt": "Một tấm bìa hình chữ nhật có kích thước $2x + 3\\text{ (cm)}$ và $x + 4\\text{ (cm)}$. Người ta khoét một lỗ hình vuông có cạnh là $x\\text{ (cm)}$. Xét tính đúng/sai:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Diện tích tấm bìa ban đầu là $2x^2 + 11x + 12\\text{ (cm}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(2x + 3)(x + 4) = 2x^2 + 8x + 3x + 12 = 2x^2 + 11x + 12\\text{ (cm}^2\\text{)}$."
+              },
+              {
+                "id": "b",
+                "text": "Diện tích phần lỗ khoét hình vuông là $x^2\\text{ (cm}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, diện tích hình vuông là $x \\cdot x = x^2$."
+              },
+              {
+                "id": "c",
+                "text": "Diện tích phần bìa còn lại là $x^2 + 11x + 12\\text{ (cm}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(2x^2 + 11x + 12) - x^2 = x^2 + 11x + 12\\text{ (cm}^2\\text{)}$."
+              },
+              {
+                "id": "d",
+                "text": "Khi $x = 2\\text{ cm}$, diện tích phần bìa còn lại bằng $30\\text{ cm}^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, thay $x = 2$: $2^2 + 11(2) + 12 = 4 + 22 + 12 = 38\\text{ cm}^2$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc1-d3-sa1",
+            "badge": "Câu 1 (TH) - Hệ số của đa thức thu gọn",
+            "prompt": "Hệ số của $x^2$ trong đa thức thu gọn của tích $(3x - 1)(2x + 4)$ bằng bao nhiêu?",
+            "correctAnswer": "6",
+            "acceptableAnswers": [
+              "6",
+              "sáu"
+            ],
+            "explanation": "$(3x - 1)(2x + 4) = 6x^2 + 12x - 2x - 4 = 6x^2 + 10x - 4$. Hệ số của $x^2$ là $6$."
+          },
+          {
+            "id": "otc1-d3-sa2",
+            "badge": "Câu 2 (TH) - Tính giá trị của thương",
+            "prompt": "Tính giá trị của thương $(15x^3 - 9x^2) : 3x^2$ tại $x = 2$.",
+            "correctAnswer": "7",
+            "acceptableAnswers": [
+              "7",
+              "bảy"
+            ],
+            "explanation": "Thương bằng $5x - 3$. Tại $x = 2$: $5(2) - 3 = 7$."
+          },
+          {
+            "id": "otc1-d3-sa3",
+            "badge": "Câu 3 (TH) - Tìm nghiệm x bằng phép chia đa thức",
+            "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(12x^2 - 8x) : 4x = 4$.",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+              "2",
+              "hai"
+            ],
+            "explanation": "$(12x^2 : 4x) - (8x : 4x) = 4 \\Leftrightarrow 3x - 2 = 4 \\Leftrightarrow 3x = 6 \\Leftrightarrow x = 2$."
+          },
+          {
+            "id": "otc1-d3-sa4",
+            "badge": "Câu 4 (VD) - Tính giá trị biểu thức sau rút gọn",
+            "prompt": "Tính giá trị của biểu thức $P = (x - 3)(x + 3) - x(x - 2)$ tại $x = 5$.",
+            "correctAnswer": "1",
+            "acceptableAnswers": [
+              "1",
+              "một"
+            ],
+            "explanation": "$P = (x^2 - 9) - (x^2 - 2x) = 2x - 9$. Tại $x = 5$: $2(5) - 9 = 1$."
+          },
+          {
+            "id": "otc1-d3-sa5",
+            "badge": "Câu 5 (VD - Thực tế) - Tìm chiều rộng mảnh đất",
+            "prompt": "Một mảnh đất hình chữ nhật có diện tích $S = 24x^2 + 16xy\\text{ (m}^2\\text{)}$ và chiều dài là $8x\\text{ (m)}$. Khi $x = 3\\text{ m}$ và $y = 5\\text{ m}$, chiều rộng mảnh đất đó bằng bao nhiêu mét?",
+            "correctAnswer": "19",
+            "acceptableAnswers": [
+              "19",
+              "mười chín",
+              "19m",
+              "19 m"
+            ],
+            "explanation": "Chiều rộng: $r = (24x^2 + 16xy) : 8x = 3x + 2y\\text{ (m)}$.\nKhi $x = 3, y = 5$: $r = 3(3) + 2(5) = 9 + 10 = 19\\text{ m}$."
+          },
+          {
+            "id": "otc1-d3-sa6",
+            "badge": "Câu 6 (VD) - Tìm số tự nhiên n lớn nhất",
+            "prompt": "Tìm số tự nhiên $n$ lớn nhất để đơn thức $8x^5y^3$ chia hết cho đơn thức $2x^n y^n$.",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "ba"
+            ],
+            "explanation": "Để $8x^5y^3$ chia hết cho $2x^n y^n$ thì $n \\le 5$ và $n \\le 3 \\Rightarrow n \\le 3$. Giá trị lớn nhất là $n = 3$."
+          }
+        ]
+      }
+    ]
+  },
 };

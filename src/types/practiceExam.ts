@@ -21,6 +21,7 @@ export interface PracticeExamResult {
   tfAnswers: { [id: string]: { [key in "a" | "b" | "c" | "d"]?: boolean } };
   saAnswers: { [id: string]: string };
   essayFiles?: EssayAttachment[];
+  essayTextAnswers?: { [questionId: string]: string };
   userId?: string;
   studentName?: string;
   studentClass?: string;

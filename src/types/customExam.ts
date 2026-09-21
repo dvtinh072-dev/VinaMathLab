@@ -8,6 +8,25 @@ export interface ExamFolder {
   createdAt?: string;
 }
 
+export interface EssayQuestionData {
+  id: string;
+  index: number;
+  title: string; // VD: "Bài 1 (1.5 điểm): Căn thức và rút gọn"
+  stem: string; // Đề bài chi tiết chuẩn KaTeX
+  points: number; // Điểm số ví dụ 1.5, 2.0, 3.0
+  subItems?: { key: string; text: string; points?: number }[]; // Các ý a, b, c nhỏ
+  svgDrawing?: string; // Hình vẽ hình học chính xác bằng mã SVG vector
+  tableData?: { headers: string[]; rows: string[][] }; // Bảng số liệu nếu có
+  solutionGuide?: string; // Hướng dẫn giải chi tiết & biểu điểm
+}
+
+export interface EssayPartData {
+  title?: string; // VD: "PHẦN II: TỰ LUẬN (7.0 ĐIỂM)"
+  totalPoints?: number;
+  description?: string;
+  questions: EssayQuestionData[];
+}
+
 export interface CustomExam {
   id: string;
   title: string;
@@ -22,6 +41,7 @@ export interface CustomExam {
   durationMinutes: number; // e.g. 15, 45, 60, 90
   totalQuestions: number;
   questions: QuestionData[];
+  essayPart?: EssayPartData;
   createdAt: string; // ISO string
   allowReviewAnswers: boolean; // default true
   antiCheatEnabled: boolean; // default true (track focus/blur)
@@ -55,6 +75,7 @@ export interface StudentExamSubmission {
   mcAnswers: { [id: string]: "A" | "B" | "C" | "D" };
   tfAnswers: { [id: string]: { [key in "a" | "b" | "c" | "d"]?: boolean } };
   saAnswers: { [id: string]: string };
+  essayTextAnswers?: { [questionId: string]: string }; // Lời giải gõ trực tiếp
   essayFiles?: EssayAttachment[]; // Tệp bài làm tự luận (ảnh/pdf)
 }
 

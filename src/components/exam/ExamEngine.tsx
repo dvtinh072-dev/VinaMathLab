@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Timer, Send, Flag, RotateCcw, Award, ArrowLeft, AlertTriangle, FileCheck, History } from "lucide-react";
+import { Timer, Send, Flag, RotateCcw, Award, ArrowLeft, AlertTriangle, FileCheck, History, PenTool, Camera, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import { MultipleChoiceQuestionData, QuestionMultipleChoice } from "./QuestionMultipleChoice";
 import { TrueFalseQuestionData, QuestionTrueFalse } from "./QuestionTrueFalse";
 import { ShortAnswerQuestionData, QuestionShortAnswer } from "./QuestionShortAnswer";
 import { ExamResultModal } from "./ExamResultModal";
 import EssaySubmissionUploader from "./EssaySubmissionUploader";
 import PracticeExamHistoryModal from "./PracticeExamHistoryModal";
-import { EssayAttachment } from "@/types/customExam";
+import { EssayAttachment, EssayPartData, EssayQuestionData } from "@/types/customExam";
 import { PracticeExamResult } from "@/types/practiceExam";
 import {
   saveLocalPracticeResult,
@@ -19,6 +19,7 @@ import {
 import { useAuth } from "@/context/AuthContext";
 import { formatTime } from "@/lib/utils";
 import confetti from "canvas-confetti";
+import { MathFormattedText } from "@/components/math/MathFormattedText";
 
 export type QuestionData =
   | MultipleChoiceQuestionData
@@ -36,6 +37,7 @@ export interface ExamData {
   durationMinutes: number;
   totalQuestions: number;
   questions: QuestionData[];
+  essayPart?: EssayPartData;
 }
 
 interface Props {
@@ -47,6 +49,9 @@ export function ExamEngine({ exam }: Props) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isEssayActive, setIsEssayActive] = useState(false);
   const [essayFiles, setEssayFiles] = useState<EssayAttachment[]>([]);
+  const [essayTextAnswers, setEssayTextAnswers] = useState<Record<string, string>>({});
+  const [essayActiveTab, setEssayActiveTab] = useState<"text" | "upload">("text");
+  const [expandedSolutions, setExpandedSolutions] = useState<Record<string, boolean>>({});
   const [timeLeft, setTimeLeft] = useState(exam.durationMinutes * 60);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showResultModal, setShowResultModal] = useState(false);
@@ -151,6 +156,7 @@ export function ExamEngine({ exam }: Props) {
         tfAnswers,
         saAnswers,
         essayFiles,
+        essayTextAnswers,
         userId: user?.id || user?.studentCode,
         studentName: user?.fullName,
         studentClass: user?.schoolClass || user?.grade,
@@ -275,21 +281,188 @@ export function ExamEngine({ exam }: Props) {
         {/* Question or Essay Area */}
         <div className="lg:col-span-8 p-4 sm:p-6 rounded-2xl bg-[#131B2E] border border-cyan-500/30 shadow-xl space-y-5 sm:space-y-6">
           {isEssayActive ? (
-            <div className="space-y-5">
-              <div className="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-800">
-                <div className="text-xs font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-2">
-                  <FileCheck className="w-4 h-4" />
-                  <span>Phần Tự Luận: Nộp bài làm viết tay hoặc tệp PDF</span>
+            <div className="space-y-6">
+              {/* Header phần tự luận */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+                <div>
+                  <div className="text-xs font-black text-indigo-400 uppercase tracking-wider flex items-center gap-2">
+                    <FileCheck className="w-4 h-4 text-indigo-400" />
+                    <span>{exam.essayPart?.title || "Phần Tự Luận"}</span>
+                    {exam.essayPart?.totalPoints && (
+                      <span className="px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-[10px]">
+                        {exam.essayPart.totalPoints} điểm
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs text-slate-400 mt-1">
+                    {exam.essayPart?.description ||
+                      "Học sinh có thể gõ bài làm trực tiếp vào ô bên dưới hoặc làm ra giấy thi rồi chụp ảnh/tải tệp đính kèm."}
+                  </p>
+                </div>
+
+                {/* Tab chuyển đổi chế độ làm bài tự luận */}
+                <div className="flex items-center p-1 rounded-xl bg-slate-900 border border-slate-800 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => setEssayActiveTab("text")}
+                    className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition-all ${
+                      essayActiveTab === "text"
+                        ? "bg-indigo-600 text-white shadow-sm"
+                        : "text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    <PenTool className="w-3.5 h-3.5" />
+                    <span>Gõ bài giải trực tiếp</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setEssayActiveTab("upload")}
+                    className={`px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition-all ${
+                      essayActiveTab === "upload"
+                        ? "bg-indigo-600 text-white shadow-sm"
+                        : "text-slate-400 hover:text-slate-200"
+                    }`}
+                  >
+                    <Camera className="w-3.5 h-3.5" />
+                    <span>Chụp ảnh / Tải tệp ({essayFiles.length})</span>
+                  </button>
                 </div>
               </div>
 
-              <EssaySubmissionUploader
-                files={essayFiles}
-                onChange={setEssayFiles}
-                readOnly={isSubmitted}
-                title="Tải Lên Bài Làm Tự Luận (Ảnh hoặc PDF)"
-                description="Học sinh giải bài tự luận ra giấy kiểm tra, sau đó bấm 'Chụp ảnh bài làm' bằng camera điện thoại hoặc tải file PDF/ảnh từ máy."
-              />
+              {/* Danh sách các câu hỏi tự luận */}
+              {exam.essayPart?.questions && exam.essayPart.questions.length > 0 ? (
+                <div className="space-y-6">
+                  {exam.essayPart.questions.map((q, qIndex) => {
+                    const hasSolution = Boolean(q.solutionGuide);
+                    const isSolutionOpen = expandedSolutions[q.id] || false;
+
+                    return (
+                      <div
+                        key={q.id}
+                        className="p-5 rounded-2xl bg-[#0b1120] border border-slate-800/80 hover:border-indigo-500/40 transition-all space-y-4"
+                      >
+                        {/* Title & Points */}
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-sm font-black text-amber-400">
+                            {q.title || `Bài ${qIndex + 1}`}
+                          </span>
+                          <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                            {q.points} điểm
+                          </span>
+                        </div>
+
+                        {/* Đề bài (KaTeX) */}
+                        <div className="text-slate-200 text-sm sm:text-base leading-relaxed font-sans">
+                          <MathFormattedText text={q.stem} />
+                        </div>
+
+                        {/* Bảng biểu nếu có */}
+                        {q.tableData && (
+                          <div className="overflow-x-auto my-3">
+                            <table className="min-w-full text-xs sm:text-sm text-left border-collapse border border-slate-700">
+                              <thead>
+                                <tr className="bg-slate-800/80 text-cyan-300">
+                                  {q.tableData.headers.map((h, i) => (
+                                    <th key={i} className="border border-slate-700 px-3 py-2 font-bold">
+                                      <MathFormattedText text={h} />
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {q.tableData.rows.map((row, rIdx) => (
+                                  <tr key={rIdx} className="hover:bg-slate-900/60">
+                                    {row.map((cell, cIdx) => (
+                                      <td key={cIdx} className="border border-slate-700 px-3 py-2 text-slate-300 font-mono">
+                                        <MathFormattedText text={cell} />
+                                      </td>
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        )}
+
+                        {/* Hình vẽ vector SVG nếu có */}
+                        {q.svgDrawing && (
+                          <div className="p-3 rounded-xl bg-slate-900/90 border border-cyan-500/20 flex flex-col items-center justify-center my-3">
+                            <div
+                              className="w-full max-w-[480px] overflow-hidden flex items-center justify-center"
+                              dangerouslySetInnerHTML={{ __html: q.svgDrawing }}
+                            />
+                            <span className="text-[11px] text-slate-400 mt-1 italic">
+                              (Hình vẽ minh họa chuẩn hình học - Đề thi chính thức)
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Ô gõ bài làm trực tiếp nếu tab 'text' đang chọn */}
+                        {essayActiveTab === "text" && (
+                          <div className="space-y-1.5 pt-2">
+                            <label className="text-xs font-bold text-slate-300 flex items-center justify-between">
+                              <span>Bài làm của em cho {q.title || `Bài ${qIndex + 1}`}:</span>
+                              {essayTextAnswers[q.id]?.trim() && (
+                                <span className="text-[11px] text-emerald-400 flex items-center gap-1 font-normal">
+                                  <CheckCircle2 className="w-3 h-3" /> Đã lưu bài giải
+                                </span>
+                              )}
+                            </label>
+                            <textarea
+                              value={essayTextAnswers[q.id] || ""}
+                              onChange={(e) =>
+                                setEssayTextAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))
+                              }
+                              disabled={isSubmitted}
+                              placeholder="Trình bày lời giải các bước chi tiết tại đây (hỗ trợ các biểu thức x^2, căn bậc hai, phân số, lập luận hình học...)"
+                              rows={5}
+                              className="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-700/80 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 text-sm font-sans placeholder:text-slate-600 transition-all resize-y"
+                            />
+                          </div>
+                        )}
+
+                        {/* Hiển thị hướng dẫn giải / biểu điểm khi đã nộp bài */}
+                        {isSubmitted && hasSolution && (
+                          <div className="pt-2">
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setExpandedSolutions((prev) => ({ ...prev, [q.id]: !prev[q.id] }))
+                              }
+                              className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5 py-1 select-none cursor-pointer"
+                            >
+                              <span>{isSolutionOpen ? "Thu gọn lời giải chi tiết" : "Xem lời giải chi tiết & Biểu điểm"}</span>
+                              {isSolutionOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                            </button>
+
+                            {isSolutionOpen && (
+                              <div className="mt-2.5 p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-emerald-100 text-xs sm:text-sm space-y-2 leading-relaxed font-sans animate-in fade-in duration-200">
+                                <div className="font-bold text-emerald-400 uppercase tracking-wide text-[11px] pb-1 border-b border-emerald-500/20">
+                                  Barem Chấm & Hướng Dẫn Giải Chi Tiết:
+                                </div>
+                                <MathFormattedText text={q.solutionGuide} />
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : null}
+
+              {/* Nếu tab upload hoặc đề thi không có câu tự luận chi tiết thì hiện Uploader */}
+              {(essayActiveTab === "upload" || !exam.essayPart?.questions?.length) && (
+                <div className="p-4 rounded-2xl bg-[#0b1120] border border-slate-800 space-y-3">
+                  <EssaySubmissionUploader
+                    files={essayFiles}
+                    onChange={setEssayFiles}
+                    readOnly={isSubmitted}
+                    title="Tải Lên Bài Làm Viết Tay (Chụp ảnh từ điện thoại hoặc tải file PDF)"
+                    description="Học sinh giải phần tự luận ra giấy thi, sau đó chụp ảnh hoặc scan file PDF tải lên đây để lưu trữ và nộp bài hoàn tất."
+                  />
+                </div>
+              )}
 
               {/* Prev / Next Buttons in Essay Mode */}
               <div className="flex items-center justify-between pt-5 border-t border-slate-800">
@@ -455,31 +628,43 @@ export function ExamEngine({ exam }: Props) {
 
           {/* Nút truy cập Phần Tự Luận */}
           <div className="pt-2 border-t border-slate-800">
-            <button
-              type="button"
-              onClick={() => setIsEssayActive(true)}
-              className={`w-full py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-between border transition-all duration-150 cursor-pointer ${
-                isEssayActive
-                  ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white border-indigo-400 shadow-md shadow-indigo-500/30 scale-[1.02]"
-                  : essayFiles.length > 0
-                  ? "bg-emerald-950/80 text-emerald-300 border border-emerald-500/80 hover:border-emerald-400"
-                  : "bg-slate-900 hover:bg-slate-850 text-slate-300 border-slate-700 hover:border-indigo-400"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <FileCheck className="w-4 h-4 text-indigo-400" />
-                <span>Phần Tự Luận</span>
-              </div>
-              <span
-                className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${
-                  essayFiles.length > 0
-                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-                    : "bg-slate-800 text-slate-400"
-                }`}
-              >
-                {essayFiles.length > 0 ? `${essayFiles.length} trang` : "Chưa nộp"}
-              </span>
-            </button>
+            {(() => {
+              const hasTextAnswers = Object.values(essayTextAnswers).some((t) => t.trim().length > 0);
+              const hasEssayDone = essayFiles.length > 0 || hasTextAnswers;
+              const totalEssayCount = exam.essayPart?.questions?.length;
+
+              return (
+                <button
+                  type="button"
+                  onClick={() => setIsEssayActive(true)}
+                  className={`w-full py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-between border transition-all duration-150 cursor-pointer ${
+                    isEssayActive
+                      ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white border-indigo-400 shadow-md shadow-indigo-500/30 scale-[1.02]"
+                      : hasEssayDone
+                      ? "bg-emerald-950/80 text-emerald-300 border border-emerald-500/80 hover:border-emerald-400"
+                      : "bg-slate-900 hover:bg-slate-850 text-slate-300 border-slate-700 hover:border-indigo-400"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <FileCheck className="w-4 h-4 text-indigo-400" />
+                    <span>Phần Tự Luận {totalEssayCount ? `(${totalEssayCount} bài)` : ""}</span>
+                  </div>
+                  <span
+                    className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${
+                      hasEssayDone
+                        ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                        : "bg-slate-800 text-slate-400"
+                    }`}
+                  >
+                    {hasEssayDone
+                      ? essayFiles.length > 0
+                        ? `${essayFiles.length} tệp ảnh`
+                        : "Đã làm lời giải"
+                      : "Chưa làm"}
+                  </span>
+                </button>
+              );
+            })()}
           </div>
 
           <div className="pt-3.5 border-t border-slate-800 space-y-2 text-xs font-semibold text-slate-300">

@@ -1,4 +1,5 @@
 import { ExamData } from "@/components/exam/ExamEngine";
+import { tuyenSinh10Exams } from "./tuyenSinh10Exams";
 
 export const EXAM_PERIODS = [
   { id: "giua-ky-1", label: "Giữa kỳ 1", badge: "GK1" },
@@ -21,6 +22,7 @@ export const GRADE_EXAM_TABS = [
 ];
 
 export const SAMPLE_EXAMS: { [key: string]: ExamData } = {
+  ...tuyenSinh10Exams,
   // =========================================================================
   // TOÁN 6
   // =========================================================================

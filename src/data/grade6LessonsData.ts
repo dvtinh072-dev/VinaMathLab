@@ -2101,62 +2101,6 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
   },
   ...chapter4Lessons,
 
-  "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can": {
-    "id": "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can",
-    "lessonNumber": 19,
-    "title": "Bài 19: Hình chữ nhật. Hình thoi. Hình bình hành. Hình thang cân",
-    "bookChapter": "Chương IV: Một số hình phẳng trong thực tiễn",
-    "scenarioTitle": "Tình huống: Khung cửa và hoa văn thổ cẩm",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Hình thoi có 4 cạnh bằng nhau và hai đường chéo vuông góc với nhau."
-    ],
-    "traps": [
-      "Hình bình hành có các cạnh đối song song và bằng nhau."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-19.1",
-        "badge": "Câu 1",
-        "question": "Tứ giác có 4 cạnh bằng nhau và hai đường chéo vuông góc tại trung điểm mỗi đường là hình gì?",
-        "options": [
-          "Hình thoi",
-          "Hình chữ nhật",
-          "Hình thang cân",
-          "Hình bình hành"
-        ],
-        "correctIndex": 0,
-        "explanation": "Đó là đặc điểm nhận biết của hình thoi."
-      },
-      {
-        "id": "sgk-19.2",
-        "badge": "Câu 2",
-        "question": "Một hình thoi có cạnh bằng 6 cm. Chu vi của hình thoi đó là:",
-        "options": [
-          "24 cm (vì C = 4 × 6 = 24 cm)",
-          "36 cm",
-          "18 cm",
-          "12 cm"
-        ],
-        "correctIndex": 0,
-        "explanation": "Chu vi hình thoi cạnh a: C = 4a = 4 × 6 = 24 cm."
-      },
-      {
-        "id": "sgk-19.3",
-        "badge": "Câu 3",
-        "question": "Hình thang cân có tính chất nào sau đây?",
-        "options": [
-          "Hai cạnh bên bằng nhau và hai đường chéo bằng nhau",
-          "Bốn cạnh bằng nhau",
-          "Hai đường chéo vuông góc",
-          "Bốn góc bằng nhau"
-        ],
-        "correctIndex": 0,
-        "explanation": "Hình thang cân có hai cạnh bên bằng nhau và hai đường chéo bằng nhau."
-      }
-    ]
-  },
   "t6-b20-chu-vi-dien-tich-tu-giac": {
     "id": "t6-b20-chu-vi-dien-tich-tu-giac",
     "lessonNumber": 20,

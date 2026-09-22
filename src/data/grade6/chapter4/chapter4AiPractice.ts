@@ -182,5 +182,157 @@ export const chapter4AiPracticeData: { [lessonId: string]: QuizQuestion[] } = {
       correctIndex: 0,
       explanation: "Độ dài cạnh của từng hình khi cùng có chu vi $36\\text{ cm}$ là:\n- Cạnh tam giác đều: $a_{\\text{tam giác}} = 36 : 3 = 12\\text{ cm}$.\n- Cạnh hình vuông: $a_{\\text{vuông}} = 36 : 4 = 9\\text{ cm}$.\n- Cạnh lục giác đều: $a_{\\text{lục giác}} = 36 : 6 = 6\\text{ cm}$."
     }
+  ],
+  "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can": [
+    {
+      id: "ai-19.1",
+      badge: "Luyện tập AI 1",
+      isAiGenerated: true,
+      source: "Câu 19 - TN6 CIV V Bài 19 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mảnh vườn hình chữ nhật có chiều dài $24\\text{ m}$ và chiều rộng $16\\text{ m}$. Người ta làm một lối đi xung quanh vườn rộng $1\\text{ m}$, phần đất còn lại bên trong dùng để trồng hoa. Chiều dài và chiều rộng của phần đất trồng hoa lần lượt là:",
+      options: [
+        "Chiều dài $22\\text{ m}$ và chiều rộng $14\\text{ m}$",
+        "Chiều dài $23\\text{ m}$ và chiều rộng $15\\text{ m}$",
+        "Chiều dài $22\\text{ m}$ và chiều rộng $15\\text{ m}$",
+        "Chiều dài $23\\text{ m}$ và chiều rộng $14\\text{ m}$"
+      ],
+      correctIndex: 0,
+      explanation: "Lối đi xung quanh vườn rộng $1\\text{ m}$ nên cả chiều dài và chiều rộng của phần đất còn lại đều bị bớt đi ở cả hai phía (mỗi phía bớt $1\\text{ m}$).\n- Chiều dài phần đất trồng hoa là: $24 - 1 - 1 = 22\\text{ m}$.\n- Chiều rộng phần đất trồng hoa là: $16 - 1 - 1 = 14\\text{ m}$."
+    },
+    {
+      id: "ai-19.2",
+      badge: "Luyện tập AI 2",
+      isAiGenerated: true,
+      source: "Câu 20 - TN6 CIV V Bài 19 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Cho một hình chữ nhật có độ dài đường chéo bằng $15\\text{ cm}$. Người ta vẽ một hình thoi có cạnh đúng bằng đường chéo của hình chữ nhật đó. Tổng độ dài tất cả các cạnh của hình thoi là:",
+      options: [
+        "$60\\text{ cm}$",
+        "$30\\text{ cm}$",
+        "$45\\text{ cm}$",
+        "$75\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Hình thoi có $4$ cạnh bằng nhau, mỗi cạnh dài bằng đường chéo hình chữ nhật ($a = 15\\text{ cm}$). Do đó tổng độ dài các cạnh của hình thoi là: $4 \\cdot 15 = 60\\text{ cm}$."
+    },
+    {
+      id: "ai-19.3",
+      badge: "Luyện tập AI 3",
+      isAiGenerated: true,
+      source: "Bài tập 19 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Bác Thắng có một thanh sắt dài $160\\text{ cm}$ uốn thành khung một chiếc cửa sổ hình bình hành có một cạnh dài $50\\text{ cm}$. Hỏi cạnh kề còn lại của khung cửa sổ đó dài bao nhiêu cm?",
+      options: [
+        "$30\\text{ cm}$",
+        "$60\\text{ cm}$",
+        "$55\\text{ cm}$",
+        "$40\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Độ dài thanh sắt chính là chu vi khung cửa sổ hình bình hành. Nửa chu vi hình bình hành là: $160 : 2 = 80\\text{ cm}$. Độ dài cạnh kề còn lại là: $80 - 50 = 30\\text{ cm}$."
+    },
+    {
+      id: "ai-19.4",
+      badge: "Luyện tập AI 4",
+      isAiGenerated: true,
+      source: "Bài tập 18 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một hình thang cân có độ dài hai đáy lần lượt là $8\\text{ cm}$ và $14\\text{ cm}$, cạnh bên dài $5\\text{ cm}$. Chu vi của hình thang cân đó là:",
+      options: [
+        "$32\\text{ cm}$",
+        "$27\\text{ cm}$",
+        "$37\\text{ cm}$",
+        "$22\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Hình thang cân có hai cạnh bên bằng nhau ($5\\text{ cm}$). Chu vi của hình thang cân là: $C = 8 + 14 + 5 + 5 = 32\\text{ cm}$."
+    },
+    {
+      id: "ai-19.5",
+      badge: "Luyện tập AI 5",
+      isAiGenerated: true,
+      source: "Bài tập 17 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một chiếc diều hình thoi có độ dài hai đường chéo lần lượt là $50\\text{ cm}$ và $40\\text{ cm}$. Diện tích của chiếc diều đó là:",
+      options: [
+        "$1\\ 000\\text{ cm}^2$",
+        "$2\\ 000\\text{ cm}^2$",
+        "$500\\text{ cm}^2$",
+        "$90\\text{ cm}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích hình thoi bằng nửa tích độ dài hai đường chéo: $S = \\frac{1}{2} \\cdot 50 \\cdot 40 = 1\\ 000\\text{ cm}^2$."
+    },
+    {
+      id: "ai-19.6",
+      badge: "Luyện tập AI 6",
+      isAiGenerated: true,
+      source: "Bài tập 13 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Cho hình bình hành $ABCD$ có hai đường chéo $AC = 14\\text{ cm}$ và $BD = 10\\text{ cm}$ cắt nhau tại $O$. Giá trị của tổng $OA + OB$ bằng:",
+      options: [
+        "$12\\text{ cm}$",
+        "$24\\text{ cm}$",
+        "$7\\text{ cm}$",
+        "$15\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Vì hai đường chéo của hình bình hành cắt nhau tại trung điểm của mỗi đường nên: $OA = AC : 2 = 14 : 2 = 7\\text{ cm}$ và $OB = BD : 2 = 10 : 2 = 5\\text{ cm}$. Do đó $OA + OB = 7 + 5 = 12\\text{ cm}$."
+    },
+    {
+      id: "ai-19.7",
+      badge: "Luyện tập AI 7",
+      isAiGenerated: true,
+      source: "Bài tập 14 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một hình thang cân có chu vi bằng $42\\text{ cm}$. Biết tổng độ dài hai cạnh đáy là $26\\text{ cm}$. Độ dài mỗi cạnh bên của hình thang cân đó là:",
+      options: [
+        "$8\\text{ cm}$",
+        "$16\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$10\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Tổng độ dài hai cạnh bên của hình thang cân là: $42 - 26 = 16\\text{ cm}$. Vì hai cạnh bên bằng nhau nên độ dài mỗi cạnh bên là: $16 : 2 = 8\\text{ cm}$."
+    },
+    {
+      id: "ai-19.8",
+      badge: "Luyện tập AI 8",
+      isAiGenerated: true,
+      source: "Bài tập 16 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mảnh đất hình chữ nhật có chu vi bằng $40\\text{ m}$, biết chiều dài hơn chiều rộng $4\\text{ m}$. Chiều dài và chiều rộng của mảnh đất đó lần lượt là:",
+      options: [
+        "Chiều dài $12\\text{ m}$ và chiều rộng $8\\text{ m}$",
+        "Chiều dài $14\\text{ m}$ và chiều rộng $10\\text{ m}$",
+        "Chiều dài $11\\text{ m}$ và chiều rộng $7\\text{ m}$",
+        "Chiều dài $13\\text{ m}$ và chiều rộng $9\\text{ m}$"
+      ],
+      correctIndex: 0,
+      explanation: "Nửa chu vi mảnh đất là: $40 : 2 = 20\\text{ m}$.\nChiều dài mảnh đất là: $(20 + 4) : 2 = 12\\text{ m}$.\nChiều rộng mảnh đất là: $20 - 12 = 8\\text{ m}$."
+    },
+    {
+      id: "ai-19.9",
+      badge: "Luyện tập AI 9",
+      isAiGenerated: true,
+      source: "Bài tập 7 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một tấm bìa hình thoi có chu vi bằng $76\\text{ cm}$. Độ dài mỗi cạnh của tấm bìa hình thoi đó là:",
+      options: [
+        "$19\\text{ cm}$",
+        "$38\\text{ cm}$",
+        "$18\\text{ cm}$",
+        "$24\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Hình thoi có $4$ cạnh bằng nhau nên độ dài mỗi cạnh là: $a = 76 : 4 = 19\\text{ cm}$."
+    },
+    {
+      id: "ai-19.10",
+      badge: "Luyện tập AI 10",
+      isAiGenerated: true,
+      source: "Bài tập 8 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mảnh đất hình bình hành có độ dài cạnh đáy bằng $25\\text{ m}$ và chiều cao tương ứng với cạnh đáy đó là $12\\text{ m}$. Diện tích của mảnh đất hình bình hành đó là:",
+      options: [
+        "$300\\text{ m}^2$",
+        "$150\\text{ m}^2$",
+        "$600\\text{ m}^2$",
+        "$74\\text{ m}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích hình bình hành bằng tích cạnh đáy nhân với chiều cao tương ứng: $S = a \\cdot h = 25 \\cdot 12 = 300\\text{ m}^2$."
+    }
   ]
 };

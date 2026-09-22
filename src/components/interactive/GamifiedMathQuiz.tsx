@@ -2413,14 +2413,64 @@ export function GamifiedMathQuiz({
 
     if (!isGeometryLesson) return null;
 
-    if (lId.includes("tam-giac") || text.includes("tam giác đều")) {
+    const qText = (q.question || "").toLowerCase();
+
+    // 1. Ưu tiên nhận diện theo đúng nội dung câu hỏi đặt ra:
+    if (qText.includes("lục giác")) {
+      return { type: "luc-giac-deu" as const, caption: "Lục giác đều: 6 cạnh bằng nhau, 3 đường chéo chính cắt nhau tại O" };
+    }
+    if (qText.includes("hình vuông")) {
+      return { type: "hinh-vuong" as const, caption: "Hình vuông: 4 cạnh bằng nhau, 4 góc vuông, 2 đường chéo vuông góc" };
+    }
+    if (qText.includes("tam giác đều")) {
       return { type: "tam-giac-deu" as const, caption: "Tam giác đều: 3 cạnh bằng nhau, 3 góc bằng 60°" };
     }
-    if (text.includes("hình vuông")) {
-      return { type: "hinh-vuong" as const, caption: "Hình vuông: 4 cạnh bằng nhau, 4 góc vuông" };
+    if (qText.includes("hình thoi")) {
+      return { type: "hinh-thoi" as const, caption: "Hình thoi: 4 cạnh bằng nhau, 2 đường chéo vuông góc" };
     }
-    if (text.includes("lục giác đều")) {
-      return { type: "luc-giac-deu" as const, caption: "Lục giác đều: 6 cạnh bằng nhau, tâm O" };
+    if (qText.includes("hình bình hành")) {
+      return { type: "hinh-binh-hanh" as const, caption: "Hình bình hành: Các cặp cạnh đối song song và bằng nhau" };
+    }
+    if (qText.includes("hình thang cân") || qText.includes("hình thang")) {
+      return { type: "hinh-thang-can" as const, caption: "Hình thang cân: Hai đáy song song, 2 cạnh bên bằng nhau" };
+    }
+    if (qText.includes("hình chữ nhật")) {
+      return { type: "hinh-chu-nhat" as const, caption: "Hình chữ nhật: 4 góc vuông, 2 đường chéo bằng nhau" };
+    }
+    if (qText.includes("trục đối xứng")) {
+      return { type: "doi-xung-truc" as const, caption: "Hình có trục đối xứng d" };
+    }
+    if (qText.includes("tâm đối xứng")) {
+      return { type: "doi-xung-tam" as const, caption: "Hình có tâm đối xứng O" };
+    }
+    if (qText.includes("trung điểm")) {
+      return { type: "doan-thang-trung-diem" as const, caption: "Đoạn thẳng và trung điểm M" };
+    }
+    if (qText.includes("góc vuông") || qText.includes("90°") || qText.includes("90 độ")) {
+      return { type: "goc-vuong" as const, caption: "Góc vuông: ∠xOy = 90°" };
+    }
+    if (qText.includes("góc nhọn")) {
+      return { type: "goc-nhon" as const, caption: "Góc nhọn: 0° đến 90°" };
+    }
+    if (qText.includes("góc tù")) {
+      return { type: "goc-tu" as const, caption: "Góc tù: 90° đến 180°" };
+    }
+    if (qText.includes("góc bẹt") || qText.includes("180°") || qText.includes("180 độ")) {
+      return { type: "goc-bet" as const, caption: "Góc bẹt: ∠xOy = 180°" };
+    }
+    if (qText.includes("tam giác")) {
+      return { type: "tam-giac-deu" as const, caption: "Tam giác đều: 3 cạnh bằng nhau, 3 góc bằng 60°" };
+    }
+
+    // 2. Nếu câu hỏi ngắn, kiểm tra thêm lời giải:
+    if (text.includes("lục giác")) {
+      return { type: "luc-giac-deu" as const, caption: "Lục giác đều: 6 cạnh bằng nhau, 3 đường chéo chính cắt nhau tại O" };
+    }
+    if (text.includes("hình vuông")) {
+      return { type: "hinh-vuong" as const, caption: "Hình vuông: 4 cạnh bằng nhau, 4 góc vuông, 2 đường chéo vuông góc" };
+    }
+    if (text.includes("tam giác đều")) {
+      return { type: "tam-giac-deu" as const, caption: "Tam giác đều: 3 cạnh bằng nhau, 3 góc bằng 60°" };
     }
     if (text.includes("hình thoi")) {
       return { type: "hinh-thoi" as const, caption: "Hình thoi: 4 cạnh bằng nhau, 2 đường chéo vuông góc" };
@@ -2428,19 +2478,19 @@ export function GamifiedMathQuiz({
     if (text.includes("hình bình hành")) {
       return { type: "hinh-binh-hanh" as const, caption: "Hình bình hành: Các cặp cạnh đối song song và bằng nhau" };
     }
-    if (text.includes("hình thang cân")) {
+    if (text.includes("hình thang cân") || text.includes("hình thang")) {
       return { type: "hinh-thang-can" as const, caption: "Hình thang cân: Hai đáy song song, 2 cạnh bên bằng nhau" };
     }
     if (text.includes("hình chữ nhật")) {
       return { type: "hinh-chu-nhat" as const, caption: "Hình chữ nhật: 4 góc vuông, 2 đường chéo bằng nhau" };
     }
-    if (lId.includes("truc-doi-xung") || text.includes("trục đối xứng")) {
+    if (text.includes("trục đối xứng")) {
       return { type: "doi-xung-truc" as const, caption: "Hình có trục đối xứng d" };
     }
-    if (lId.includes("tam-doi-xung") || text.includes("tâm đối xứng")) {
+    if (text.includes("tâm đối xứng")) {
       return { type: "doi-xung-tam" as const, caption: "Hình có tâm đối xứng O" };
     }
-    if (lId.includes("trung-diem") && text.includes("trung điểm")) {
+    if (text.includes("trung điểm")) {
       return { type: "doan-thang-trung-diem" as const, caption: "Đoạn thẳng và trung điểm M" };
     }
     if (text.includes("góc vuông") || text.includes("90°") || text.includes("90 độ")) {
@@ -2455,6 +2505,10 @@ export function GamifiedMathQuiz({
     if (text.includes("góc bẹt") || text.includes("180°") || text.includes("180 độ")) {
       return { type: "goc-bet" as const, caption: "Góc bẹt: ∠xOy = 180°" };
     }
+    if (text.includes("tam giác")) {
+      return { type: "tam-giac-deu" as const, caption: "Tam giác đều: 3 cạnh bằng nhau, 3 góc bằng 60°" };
+    }
+
     return null;
   };
 

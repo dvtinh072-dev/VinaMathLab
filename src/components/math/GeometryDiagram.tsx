@@ -66,7 +66,9 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           <text x="100" y="12" fill="#38bdf8" fontSize="13" fontWeight="bold" textAnchor="middle">A</text>
           <text x="18" y="140" fill="#38bdf8" fontSize="13" fontWeight="bold" textAnchor="middle">B</text>
           <text x="182" y="140" fill="#38bdf8" fontSize="13" fontWeight="bold" textAnchor="middle">C</text>
-          <text x="100" y="145" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">a = {labels.a || "6 cm"}</text>
+          <text x="100" y="145" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.a ? `a = ${labels.a}` : "cạnh a"}
+          </text>
         </svg>
       );
 
@@ -83,6 +85,12 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
             strokeWidth="3"
             rx="2"
           />
+          {/* Hai đường chéo AC và BD */}
+          <line x1="45" y1="20" x2="155" y2="130" stroke="#c084fc" strokeWidth="1.5" strokeDasharray="3,3" />
+          <line x1="155" y1="20" x2="45" y2="130" stroke="#c084fc" strokeWidth="1.5" strokeDasharray="3,3" />
+          <circle cx="100" cy="75" r="3" fill="#facc15" />
+          <text x="106" y="72" fill="#fef08a" fontSize="11" fontWeight="bold">O</text>
+
           {/* Right angle marks */}
           <path d="M 45 32 L 57 32 L 57 20" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
           <path d="M 143 20 L 143 32 L 155 32" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
@@ -94,7 +102,9 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           <text x="162" y="20" fill="#c084fc" fontSize="13" fontWeight="bold">B</text>
           <text x="162" y="135" fill="#c084fc" fontSize="13" fontWeight="bold">C</text>
           <text x="35" y="135" fill="#c084fc" fontSize="13" fontWeight="bold">D</text>
-          <text x="100" y="145" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">cạnh = {labels.a || "5 cm"}</text>
+          <text x="100" y="145" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.a ? `cạnh = ${labels.a}` : "cạnh a"}
+          </text>
         </svg>
       );
 
@@ -139,6 +149,12 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
             strokeWidth="3"
             rx="2"
           />
+          {/* Two diagonals */}
+          <line x1="30" y1="35" x2="170" y2="115" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="3,3" />
+          <line x1="170" y1="35" x2="30" y2="115" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="3,3" />
+          <circle cx="100" cy="75" r="3" fill="#facc15" />
+          <text x="106" y="72" fill="#fef08a" fontSize="11" fontWeight="bold">O</text>
+
           {/* Right angles */}
           <path d="M 30 45 L 40 45 L 40 35" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
           <path d="M 160 35 L 160 45 L 170 45" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
@@ -150,8 +166,12 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           <text x="175" y="35" fill="#38bdf8" fontSize="13" fontWeight="bold">B</text>
           <text x="175" y="125" fill="#38bdf8" fontSize="13" fontWeight="bold">C</text>
           <text x="20" y="125" fill="#38bdf8" fontSize="13" fontWeight="bold">D</text>
-          <text x="100" y="27" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">a = {labels.a || "12 cm"}</text>
-          <text x="180" y="80" fill="#f59e0b" fontSize="11" fontWeight="bold">b = {labels.b || "8 cm"}</text>
+          <text x="100" y="27" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.a ? `a = ${labels.a}` : "chiều dài a"}
+          </text>
+          <text x="180" y="80" fill="#f59e0b" fontSize="11" fontWeight="bold">
+            {labels.b ? `b = ${labels.b}` : "chiều rộng b"}
+          </text>
         </svg>
       );
 
@@ -177,7 +197,9 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           <text x="175" y="80" fill="#fb7185" fontSize="13" fontWeight="bold">B</text>
           <text x="100" y="147" fill="#fb7185" fontSize="13" fontWeight="bold" textAnchor="middle">C</text>
           <text x="22" y="80" fill="#fb7185" fontSize="13" fontWeight="bold">D</text>
-          <text x="100" y="90" fill="#f59e0b" fontSize="10" fontWeight="bold" textAnchor="middle">d₁={labels.d1 || "6 cm"}, d₂={labels.d2 || "8 cm"}</text>
+          <text x="100" y="90" fill="#f59e0b" fontSize="10" fontWeight="bold" textAnchor="middle">
+            {labels.d1 && labels.d2 ? `d₁=${labels.d1}, d₂=${labels.d2}` : "hai đường chéo m, n"}
+          </text>
         </svg>
       );
 
@@ -193,14 +215,18 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           {/* Height line */}
           <line x1="65" y1="30" x2="65" y2="120" stroke="#34d399" strokeWidth="1.5" strokeDasharray="3,3" />
           <path d="M 65 110 L 75 110 L 75 120" fill="none" stroke="#f59e0b" strokeWidth="1.5" />
-          <text x="70" y="75" fill="#f59e0b" fontSize="11" fontWeight="bold">h = {labels.h || "4 cm"}</text>
+          <text x="70" y="75" fill="#f59e0b" fontSize="11" fontWeight="bold">
+            {labels.h ? `h = ${labels.h}` : "chiều cao h"}
+          </text>
 
           {/* Labels */}
           <text x="55" y="25" fill="#6ee7b7" fontSize="13" fontWeight="bold">A</text>
           <text x="180" y="25" fill="#6ee7b7" fontSize="13" fontWeight="bold">B</text>
           <text x="142" y="130" fill="#6ee7b7" fontSize="13" fontWeight="bold">C</text>
           <text x="15" y="130" fill="#6ee7b7" fontSize="13" fontWeight="bold">D</text>
-          <text x="80" y="135" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">đáy a = {labels.a || "10 cm"}</text>
+          <text x="80" y="135" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.a ? `đáy a = ${labels.a}` : "đáy a"}
+          </text>
         </svg>
       );
 
@@ -222,8 +248,12 @@ function renderSvg(type: string, labels: { [key: string]: string | number }) {
           <text x="145" y="28" fill="#fdba74" fontSize="13" fontWeight="bold">B</text>
           <text x="175" y="125" fill="#fdba74" fontSize="13" fontWeight="bold">C</text>
           <text x="20" y="125" fill="#fdba74" fontSize="13" fontWeight="bold">D</text>
-          <text x="100" y="25" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">đáy nhỏ a = {labels.a || "4 cm"}</text>
-          <text x="100" y="135" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">đáy lớn b = {labels.b || "8 cm"}</text>
+          <text x="100" y="25" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.a ? `đáy nhỏ a = ${labels.a}` : "đáy nhỏ a"}
+          </text>
+          <text x="100" y="135" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle">
+            {labels.b ? `đáy lớn b = ${labels.b}` : "đáy lớn b"}
+          </text>
         </svg>
       );
 

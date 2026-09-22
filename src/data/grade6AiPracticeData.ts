@@ -1,5 +1,6 @@
 import { QuizQuestion } from "@/data/allGradesLessonsData";
 import { chapter2AiPracticeData } from "./grade6/chapter2/chapter2AiPractice";
+import { chapter4AiPracticeData } from "./grade6/chapter4/chapter4AiPractice";
 
 /**
  * BỘ ĐỀ LUYỆN TẬP THÊM (AI PRACTICE) 1-1 TƯƠNG ỨNG VỚI TỪNG BÀI TẬP SGK TOÁN 6
@@ -7,6 +8,7 @@ import { chapter2AiPracticeData } from "./grade6/chapter2/chapter2AiPractice";
  */
 export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = {
   ...chapter2AiPracticeData,
+  ...chapter4AiPracticeData,
   "t6-b1-tap-hop": [
     {
       "id": "ai-1.1",

@@ -2,6 +2,7 @@ import { DetailedLessonData } from "@/data/allGradesLessonsData";
 import { LessonItem, GradeData } from "@/data/curriculumData";
 import { GRADE_6_CHAPTER_1_REVIEW_LESSON } from "./grade6Chapter1ReviewData";
 import { chapter2Lessons } from "./grade6/chapter2";
+import { chapter4Lessons } from "./grade6/chapter4";
 
 /**
  * HỆ THỐNG GIÁO ÁN CHI TIẾT & ĐẤU TRƯỜNG BÀI TẬP SGK TOÁN 6
@@ -2098,62 +2099,8 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
       }
     ]
   },
-  "t6-b18-tam-giac-deu-hinh-vuong-luc-giac-deu": {
-    "id": "t6-b18-tam-giac-deu-hinh-vuong-luc-giac-deu",
-    "lessonNumber": 18,
-    "title": "Bài 18: Tam giác đều. Hình vuông. Lục giác đều",
-    "bookChapter": "Chương IV: Một số hình phẳng trong thực tiễn",
-    "scenarioTitle": "Tình huống: Lát gạch trang trí",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Tam giác đều có 3 cạnh bằng nhau, 3 góc bằng nhau và bằng 60°."
-    ],
-    "traps": [
-      "Lục giác đều gồm 6 tam giác đều ghép lại."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-18.1",
-        "badge": "Câu 1",
-        "question": "Một tam giác đều có độ dài cạnh bằng 5 cm. Chu vi của tam giác đều đó là:",
-        "options": [
-          "15 cm (vì C = 3 × 5 = 15 cm)",
-          "20 cm",
-          "25 cm",
-          "10 cm"
-        ],
-        "correctIndex": 0,
-        "explanation": "Chu vi tam giác đều cạnh a: C = 3a = 3 × 5 = 15 cm."
-      },
-      {
-        "id": "sgk-18.2",
-        "badge": "Câu 2",
-        "question": "Một hình vuông có cạnh dài 4 cm. Chu vi và diện tích của hình vuông đó lần lượt là:",
-        "options": [
-          "C = 16 cm và S = 16 cm²",
-          "C = 8 cm và S = 16 cm²",
-          "C = 16 cm và S = 8 cm²",
-          "C = 12 cm và S = 16 cm²"
-        ],
-        "correctIndex": 0,
-        "explanation": "Chu vi C = 4 × 4 = 16 cm. Diện tích S = 4² = 16 cm²."
-      },
-      {
-        "id": "sgk-18.3",
-        "badge": "Câu 3",
-        "question": "Lục giác đều ABCDEF có bao nhiêu đường chéo chính cắt nhau tại một điểm?",
-        "options": [
-          "3 đường chéo chính (AD, BE, CF)",
-          "6 đường chéo",
-          "4 đường chéo",
-          "2 đường chéo"
-        ],
-        "correctIndex": 0,
-        "explanation": "Lục giác đều có 3 đường chéo chính nối các đỉnh đối diện cắt nhau tại tâm."
-      }
-    ]
-  },
+  ...chapter4Lessons,
+
   "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can": {
     "id": "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can",
     "lessonNumber": 19,

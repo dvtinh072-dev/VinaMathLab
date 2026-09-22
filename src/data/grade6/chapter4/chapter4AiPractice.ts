@@ -334,5 +334,157 @@ export const chapter4AiPracticeData: { [lessonId: string]: QuizQuestion[] } = {
       correctIndex: 0,
       explanation: "Diện tích hình bình hành bằng tích cạnh đáy nhân với chiều cao tương ứng: $S = a \\cdot h = 25 \\cdot 12 = 300\\text{ m}^2$."
     }
+  ],
+  "t6-b20-chu-vi-dien-tich-tu-giac": [
+    {
+      id: "ai-20.1",
+      badge: "Luyện tập AI 1",
+      isAiGenerated: true,
+      source: "Câu 10 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một tấm thảm hình chữ nhật có chiều dài $3,5\\text{ m}$ và chiều rộng $2\\text{ m}$. Người ta muốn may viền ren xung quanh toàn bộ mép tấm thảm đó. Chiều dài dải ren cần dùng là:",
+      options: [
+        "$11\\text{ m}$",
+        "$7\\text{ m}$",
+        "$5,5\\text{ m}$",
+        "$14\\text{ m}$"
+      ],
+      correctIndex: 0,
+      explanation: "Chiều dài dải ren cần may chính là chu vi tấm thảm hình chữ nhật: $C = 2 \\cdot (3,5 + 2) = 2 \\cdot 5,5 = 11\\text{ m}$."
+    },
+    {
+      id: "ai-20.2",
+      badge: "Luyện tập AI 2",
+      isAiGenerated: true,
+      source: "Câu 14 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mảnh đất hình thang cân có đáy lớn $30\\text{ m}$, đáy nhỏ $20\\text{ m}$ và khoảng cách giữa hai đáy (chiều cao) là $14\\text{ m}$. Diện tích của mảnh đất đó là:",
+      options: [
+        "$350\\text{ m}^2$",
+        "$700\\text{ m}^2$",
+        "$500\\text{ m}^2$",
+        "$280\\text{ m}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích mảnh đất hình thang cân là: $S = \\frac{(30 + 20) \\cdot 14}{2} = \\frac{50 \\cdot 14}{2} = 350\\text{ m}^2$."
+    },
+    {
+      id: "ai-20.3",
+      badge: "Luyện tập AI 3",
+      isAiGenerated: true,
+      source: "Bài tập 3 Dạng 3 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một tấm biển quảng cáo hình bình hành có cạnh đáy dài $3,2\\text{ m}$ và chiều cao tương ứng là $1,5\\text{ m}$. Chi phí để in ấn biển quảng cáo là $400\\ 000$ đồng mỗi mét vuông. Tổng số tiền cần chi trả để in biển quảng cáo đó là:",
+      options: [
+        "$1\\ 920\\ 000$ đồng",
+        "$960\\ 000$ đồng",
+        "$2\\ 400\\ 000$ đồng",
+        "$1\\ 600\\ 000$ đồng"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích tấm biển quảng cáo hình bình hành là: $S = 3,2 \\cdot 1,5 = 4,8\\text{ m}^2$.\nTổng chi phí in ấn là: $4,8 \\cdot 400\\ 000 = 1\\ 920\\ 000$ đồng."
+    },
+    {
+      id: "ai-20.4",
+      badge: "Luyện tập AI 4",
+      isAiGenerated: true,
+      source: "Câu 20 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Bác Ba cần lát sàn một phòng ngủ hình chữ nhật có chiều dài $6\\text{ m}$ và chiều rộng $4\\text{ m}$ bằng các viên gạch men hình vuông cạnh $40\\text{ cm}$. Bác Ba cần mua bao nhiêu viên gạch (bỏ qua mạch vữa)?",
+      options: [
+        "$150$ viên",
+        "$120$ viên",
+        "$200$ viên",
+        "$100$ viên"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích phòng ngủ là: $6 \\cdot 4 = 24\\text{ m}^2 = 240\\ 000\\text{ cm}^2$.\nDiện tích của một viên gạch men hình vuông là: $40 \\cdot 40 = 1\\ 600\\text{ cm}^2$.\nSố viên gạch bác Ba cần mua là: $240\\ 000 : 1\\ 600 = 150$ viên."
+    },
+    {
+      id: "ai-20.5",
+      badge: "Luyện tập AI 5",
+      isAiGenerated: true,
+      source: "Câu 12 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mặt bàn kính hình thoi có độ dài hai đường chéo lần lượt là $120\\text{ cm}$ và $80\\text{ cm}$. Diện tích của mặt bàn kính đó theo đơn vị mét vuông ($\\text{m}^2$) là:",
+      options: [
+        "$0,48\\text{ m}^2$",
+        "$0,96\\text{ m}^2$",
+        "$4,8\\text{ m}^2$",
+        "$9,6\\text{ m}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích mặt bàn kính là: $S = \\frac{1}{2} \\cdot 120 \\cdot 80 = 4\\ 800\\text{ cm}^2$.\nĐổi sang mét vuông: $4\\ 800\\text{ cm}^2 = 4\\ 800 : 10\\ 000 = 0,48\\text{ m}^2$."
+    },
+    {
+      id: "ai-20.6",
+      badge: "Luyện tập AI 6",
+      isAiGenerated: true,
+      source: "Bài tập 2 Dạng 2 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một hình vuông có diện tích bằng diện tích của một hình chữ nhật có chiều dài $16\\text{ cm}$ và chiều rộng $4\\text{ cm}$. Chu vi của hình vuông đó là:",
+      options: [
+        "$32\\text{ cm}$",
+        "$64\\text{ cm}$",
+        "$16\\text{ cm}$",
+        "$24\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Diện tích hình chữ nhật là: $16 \\cdot 4 = 64\\text{ cm}^2$.\nVì hình vuông có diện tích bằng $64\\text{ cm}^2$ và $8^2 = 64$ nên cạnh hình vuông là $8\\text{ cm}$.\nChu vi hình vuông là: $4 \\cdot 8 = 32\\text{ cm}$."
+    },
+    {
+      id: "ai-20.7",
+      badge: "Luyện tập AI 7",
+      isAiGenerated: true,
+      source: "Câu 24 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một hình thang có diện tích bằng $120\\text{ cm}^2$, chiều cao bằng $10\\text{ cm}$ và độ dài đáy nhỏ là $9\\text{ cm}$. Độ dài đáy lớn của hình thang đó là:",
+      options: [
+        "$15\\text{ cm}$",
+        "$12\\text{ cm}$",
+        "$18\\text{ cm}$",
+        "$24\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Tổng độ dài hai đáy của hình thang là: $\\frac{2S}{h} = \\frac{2 \\cdot 120}{10} = 24\\text{ cm}$.\nĐộ dài đáy lớn là: $24 - 9 = 15\\text{ cm}$."
+    },
+    {
+      id: "ai-20.8",
+      badge: "Luyện tập AI 8",
+      isAiGenerated: true,
+      source: "Câu 18 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một bông hoa trang trí được ghép bởi $8$ cánh hoa hình thoi bằng nhau. Biết mỗi hình thoi có diện tích là $12\\text{ cm}^2$. Tổng diện tích giấy màu cần dùng để cắt bông hoa đó là:",
+      options: [
+        "$96\\text{ cm}^2$",
+        "$48\\text{ cm}^2$",
+        "$80\\text{ cm}^2$",
+        "$192\\text{ cm}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Tổng diện tích giấy màu cần dùng là: $8 \\cdot 12 = 96\\text{ cm}^2$."
+    },
+    {
+      id: "ai-20.9",
+      badge: "Luyện tập AI 9",
+      isAiGenerated: true,
+      source: "Câu 22 - TN6 CIV V Bài 20 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một hình chữ nhật có chiều dài bằng $20\\text{ cm}$ và diện tích bằng $240\\text{ cm}^2$. Chu vi của hình chữ nhật đó là:",
+      options: [
+        "$64\\text{ cm}$",
+        "$32\\text{ cm}$",
+        "$52\\text{ cm}$",
+        "$80\\text{ cm}$"
+      ],
+      correctIndex: 0,
+      explanation: "Chiều rộng của hình chữ nhật là: $240 : 20 = 12\\text{ cm}$.\nChu vi của hình chữ nhật là: $C = 2 \\cdot (20 + 12) = 2 \\cdot 32 = 64\\text{ cm}$."
+    },
+    {
+      id: "ai-20.10",
+      badge: "Luyện tập AI 10",
+      isAiGenerated: true,
+      source: "Bài tập 4 Dạng 1 - Chuyên đề Dạy thêm Hình 6 C4 (Thư mục Anti/Tài Liệu Lớp 6)",
+      question: "Một mảnh vườn hình chữ nhật có chiều rộng là $12\\text{ m}$. Nếu người ta mở rộng mảnh vườn bằng cách tăng chiều dài thêm $5\\text{ m}$ (chiều rộng giữ nguyên) thì diện tích mảnh vườn tăng thêm bao nhiêu mét vuông?",
+      options: [
+        "$60\\text{ m}^2$",
+        "$30\\text{ m}^2$",
+        "$120\\text{ m}^2$",
+        "$17\\text{ m}^2$"
+      ],
+      correctIndex: 0,
+      explanation: "Phần diện tích tăng thêm chính là diện tích một hình chữ nhật có chiều dài $5\\text{ m}$ và chiều rộng $12\\text{ m}$.\nDiện tích tăng thêm là: $5 \\cdot 12 = 60\\text{ m}^2$."
+    }
   ]
 };

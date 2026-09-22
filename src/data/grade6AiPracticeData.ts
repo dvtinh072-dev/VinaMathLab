@@ -1462,68 +1462,6 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
       "explanation": "BCNN(12, 15) = 60. Mẫu chung nhỏ nhất là 60."
     }
   ],
-  "t6-b15-phep-cong-tru-so-nguyen": [
-    {
-      "id": "ai-15.1",
-      "badge": "Luyện tập 74",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính kết quả phép cộng hai số nguyên âm: (-15) + (-36) = ?",
-      "options": [
-        "-39",
-        "+39",
-        "-9",
-        "+9"
-      ],
-      "correctIndex": 0,
-      "explanation": "(-15) + (-24) = -(15 + 24) = -39."
-    },
-    {
-      "id": "ai-15.2",
-      "badge": "Luyện tập 75",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính hiệu hai số nguyên: 23 - (-15) = ?",
-      "options": [
-        "35 (vì 23 - (-12) = 23 + 12 = 35)",
-        "11",
-        "-35",
-        "-11"
-      ],
-      "correctIndex": 0,
-      "explanation": "23 - (-12) = 23 + 12 = 35."
-    },
-    {
-      "id": "ai-15.3",
-      "badge": "Luyện tập 76",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính hợp lý tổng: 152 + (-73) + (-152) + 73 = ?",
-      "options": [
-        "0 (ghép [152 + (-152)] + [(-73) + 73] = 0 + 0 = 0)",
-        "152",
-        "-73",
-        "100"
-      ],
-      "correctIndex": 0,
-      "explanation": "Tổng hai số đối nhau bằng 0: [152 + (-152)] + [(-73) + 73] = 0 + 0 = 0."
-    },
-    {
-      "id": "ai-15.4",
-      "badge": "Luyện tập 77",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tìm số nguyên x biết: x + (-5) = -18",
-      "options": [
-        "x = -13 (vì x = -18 - (-5) = -18 + 5 = -13)",
-        "x = -23",
-        "x = 13",
-        "x = 23"
-      ],
-      "correctIndex": 0,
-      "explanation": "x = -18 - (-5) = -18 + 5 = -13."
-    }
-  ],
   "t6-b16-phep-nhan-so-nguyen": [
     {
       "id": "ai-16.1",

@@ -90,7 +90,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         description: "Tập hợp Z, các phép tính cộng trừ nhân chia số nguyên và quy tắc dấu.",
         lessons: [
           { id: "t6-b14-tap-hop-so-nguyen", lessonNumber: 14, title: "Bài 14: Tập hợp các số nguyên", strand: "daiso", description: "Khái niệm số nguyên âm, tập hợp Z, trục số, số đối và so sánh hai số nguyên.", keyFormulas: ["\\mathbb{Z} = \\{\\dots; -2; -1; 0; 1; 2; \\dots\\}", "\\text{Số đối của } a \\text{ là } -a", "\\text{Số âm} < 0 < \\text{Số dương}"] },
-          { id: "t6-b15-phep-cong-tru-so-nguyen", lessonNumber: 15, title: "Bài 15: Phép cộng và phép trừ số nguyên", strand: "daiso", description: "Cộng hai số nguyên cùng dấu, khác dấu và quy tắc trừ.", keyFormulas: ["a - b = a + (-b)"] },
+          { id: "t6-b15-phep-cong-tru-so-nguyen", lessonNumber: 15, title: "Bài 15: Phép cộng và phép trừ số nguyên", strand: "daiso", description: "Quy tắc cộng hai số nguyên cùng dấu, khác dấu, tính chất phép cộng và phép trừ số nguyên.", keyFormulas: ["(-a) + (-b) = -(a + b)", "(-a) + a = 0", "a - b = a + (-b)"] },
           { id: "t6-b16-phep-nhan-so-nguyen", lessonNumber: 16, title: "Bài 16: Phép nhân số nguyên", strand: "daiso", description: "Quy tắc dấu khi nhân hai số nguyên.", keyFormulas: ["(-a) \\cdot (-b) = a \\cdot b", "(-a) \\cdot b = -(ab)"] },
           { id: "t6-b17-phep-chia-het-so-nguyen", lessonNumber: 17, title: "Bài 17: Phép chia hết. Ước và bội của một số nguyên", strand: "daiso", description: "Bội và ước trong tập hợp Z.", keyFormulas: ["a = b \\cdot q \\Rightarrow a \\ \\vdots \\ b"] },
         ],

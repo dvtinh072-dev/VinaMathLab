@@ -1,4 +1,5 @@
 import type { QuizQuestion } from "@/data/allGradesLessonsData";
+import { GRADE_6_CHAPTER_4_REVIEW_LESSON } from "./chapter4Review";
 
 /**
  * NGÂN HÀNG CÂU HỎI THÊM TỪ AI (AI PRACTICE) CHO CHƯƠNG IV - TOÁN 6
@@ -486,5 +487,11 @@ export const chapter4AiPracticeData: { [lessonId: string]: QuizQuestion[] } = {
       correctIndex: 0,
       explanation: "Phần diện tích tăng thêm chính là diện tích một hình chữ nhật có chiều dài $5\\text{ m}$ và chiều rộng $12\\text{ m}$.\nDiện tích tăng thêm là: $5 \\cdot 12 = 60\\text{ m}^2$."
     }
-  ]
+  ],
+  "t6-on-tap-chuong-4": (GRADE_6_CHAPTER_4_REVIEW_LESSON.examSets?.[1]?.quizQuestions || []).map((q, i) => ({
+    ...q,
+    id: `ai-ot4.${i + 1}`,
+    badge: `Luyện tập tổng hợp ${i + 1}`,
+    isAiGenerated: true,
+  })),
 };

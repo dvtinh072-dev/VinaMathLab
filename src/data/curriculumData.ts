@@ -105,6 +105,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t6-b18-tam-giac-deu-hinh-vuong-luc-giac-deu", lessonNumber: 18, title: "Bài 18: Tam giác đều. Hình vuông. Lục giác đều", strand: "hinhhoc", description: "Khám phá các hình đều qua cạnh, góc và đường chéo.", keyFormulas: ["C = 4a, \\ S = a^2"], hasInteractive: "geometry" },
           { id: "t6-b19-hinh-chu-nhat-thoi-binh-hanh-thang-can", lessonNumber: 19, title: "Bài 19: Hình chữ nhật. Hình thoi. Hình bình hành. Hình thang cân", strand: "hinhhoc", description: "Đặc điểm các tứ giác trong thực tế.", keyFormulas: ["S_{\\text{HCN}} = ab, \\ S_{\\text{HBH}} = ah"], hasInteractive: "geometry" },
           { id: "t6-b20-chu-vi-dien-tich-tu-giac", lessonNumber: 20, title: "Bài 20: Chu vi và diện tích của một số tứ giác đã học", strand: "hinhhoc", description: "Tính chu vi, diện tích hình thoi, hình thang.", keyFormulas: ["S_{\\text{thoi}} = \\frac{1}{2} d_1 d_2", "S_{\\text{thang}} = \\frac{(a+b)h}{2}"], hasInteractive: "geometry" },
+          { id: "t6-on-tap-chuong-4", lessonNumber: 0, title: "Bài tập cuối chương IV", strand: "hinhhoc", description: "Hệ thống hóa toàn bộ kiến thức Tam giác đều, Hình vuông, Lục giác đều, Hình chữ nhật, Hình thoi, Hình bình hành, Hình thang cân và Chu vi, Diện tích với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["S_{\\text{vuông}} = a^2", "S_{\\text{HCN}} = ab", "S_{\\text{thoi}} = \\frac{1}{2} mn", "S_{\\text{HBH}} = ah", "S_{\\text{thang}} = \\frac{(a+b)h}{2}"], hasInteractive: "geometry" },
         ],
       },
       {

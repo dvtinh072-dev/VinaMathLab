@@ -1,5 +1,6 @@
 import { QuizQuestion } from "@/data/allGradesLessonsData";
 import { chapter2AiPracticeData } from "./grade6/chapter2/chapter2AiPractice";
+import { chapter3AiPracticeData } from "./grade6/chapter3/chapter3AiPractice";
 import { chapter4AiPracticeData } from "./grade6/chapter4/chapter4AiPractice";
 
 /**
@@ -8,6 +9,7 @@ import { chapter4AiPracticeData } from "./grade6/chapter4/chapter4AiPractice";
  */
 export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = {
   ...chapter2AiPracticeData,
+  ...chapter3AiPracticeData,
   ...chapter4AiPracticeData,
   "t6-b1-tap-hop": [
     {
@@ -1458,68 +1460,6 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
       ],
       "correctIndex": 0,
       "explanation": "BCNN(12, 15) = 60. Mẫu chung nhỏ nhất là 60."
-    }
-  ],
-  "t6-b14-tap-hop-so-nguyen": [
-    {
-      "id": "ai-14.1",
-      "badge": "Luyện tập 70",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Biểu diễn độ cao 5 mét dưới mực nước biển bằng số nguyên:",
-      "options": [
-        "-5 m",
-        "+5 m",
-        "0 m",
-        "50 m"
-      ],
-      "correctIndex": 0,
-      "explanation": "Độ cao dưới mực nước biển được quy ước biểu diễn bằng số nguyên âm: -5 m."
-    },
-    {
-      "id": "ai-14.2",
-      "badge": "Luyện tập 71",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Số đối của số nguyên -4 là:",
-      "options": [
-        "4 (hay +4)",
-        "-4",
-        "0",
-        "1/4"
-      ],
-      "correctIndex": 0,
-      "explanation": "Số đối của -4 là 4."
-    },
-    {
-      "id": "ai-14.3",
-      "badge": "Luyện tập 72",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "So sánh hai số nguyên: -5 và -2",
-      "options": [
-        "-5 < -2 (vì trên trục số, điểm -5 nằm bên trái điểm -2)",
-        "-5 > -2",
-        "-5 = -2",
-        "Không so sánh được"
-      ],
-      "correctIndex": 0,
-      "explanation": "-5 nằm bên trái -2 trên trục số nên -5 < -2."
-    },
-    {
-      "id": "ai-14.4",
-      "badge": "Luyện tập 73",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Sắp xếp các số nguyên sau theo thứ tự tăng dần: 2; -4; 0; 5; -11; -3; 9:",
-      "options": [
-        "-11 < -4 < -3 < 0 < 2 < 5 < 9",
-        "-11 < -3 < -4 < 0 < 2 < 5 < 9",
-        "9 > 5 > 2 > 0 > -3 > -4 > -11",
-        "-3 < -4 < -11 < 0 < 2 < 5 < 9"
-      ],
-      "correctIndex": 0,
-      "explanation": "Thứ tự tăng dần: -11 < -4 < -3 < 0 < 2 < 5 < 9."
     }
   ],
   "t6-b15-phep-cong-tru-so-nguyen": [

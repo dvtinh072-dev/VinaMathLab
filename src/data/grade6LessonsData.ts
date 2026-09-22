@@ -2,6 +2,7 @@ import { DetailedLessonData } from "@/data/allGradesLessonsData";
 import { LessonItem, GradeData } from "@/data/curriculumData";
 import { GRADE_6_CHAPTER_1_REVIEW_LESSON } from "./grade6Chapter1ReviewData";
 import { chapter2Lessons } from "./grade6/chapter2";
+import { chapter3Lessons } from "./grade6/chapter3";
 import { chapter4Lessons } from "./grade6/chapter4";
 
 /**
@@ -1849,75 +1850,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
 },
   "t6-on-tap-chuong-1": GRADE_6_CHAPTER_1_REVIEW_LESSON,
   ...chapter2Lessons,
-  "t6-b14-tap-hop-so-nguyen": {
-    "id": "t6-b14-tap-hop-so-nguyen",
-    "lessonNumber": 14,
-    "title": "Bài 14: Tập hợp các số nguyên",
-    "bookChapter": "Chương III: Số nguyên",
-    "scenarioTitle": "Tình huống: Nhiệt độ dưới 0°C và độ sâu mực nước biển",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Tập hợp ℤ gồm số nguyên âm, số 0 và số nguyên dương."
-    ],
-    "traps": [
-      "Số 0 không là số nguyên dương cũng không là số nguyên âm."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-14.1",
-        "badge": "Câu 1",
-        "question": "Biểu diễn độ cao 5 mét dưới mực nước biển bằng số nguyên:",
-        "options": [
-          "-5 m",
-          "+5 m",
-          "0 m",
-          "50 m"
-        ],
-        "correctIndex": 0,
-        "explanation": "Độ cao dưới mực nước biển được quy ước biểu diễn bằng số nguyên âm: -5 m."
-      },
-      {
-        "id": "sgk-14.2",
-        "badge": "Câu 2",
-        "question": "Số đối của số nguyên -4 là:",
-        "options": [
-          "4 (hay +4)",
-          "-4",
-          "0",
-          "1/4"
-        ],
-        "correctIndex": 0,
-        "explanation": "Số đối của -4 là 4."
-      },
-      {
-        "id": "sgk-14.3",
-        "badge": "Câu 3",
-        "question": "So sánh hai số nguyên: -5 và -2",
-        "options": [
-          "-5 < -2 (vì trên trục số, điểm -5 nằm bên trái điểm -2)",
-          "-5 > -2",
-          "-5 = -2",
-          "Không so sánh được"
-        ],
-        "correctIndex": 0,
-        "explanation": "-5 nằm bên trái -2 trên trục số nên -5 < -2."
-      },
-      {
-        "id": "sgk-14.4",
-        "badge": "Câu 4",
-        "question": "Sắp xếp các số nguyên sau theo thứ tự tăng dần: 2; -4; 0; 5; -11; -3; 9:",
-        "options": [
-          "-11 < -4 < -3 < 0 < 2 < 5 < 9",
-          "-11 < -3 < -4 < 0 < 2 < 5 < 9",
-          "9 > 5 > 2 > 0 > -3 > -4 > -11",
-          "-3 < -4 < -11 < 0 < 2 < 5 < 9"
-        ],
-        "correctIndex": 0,
-        "explanation": "Thứ tự tăng dần: -11 < -4 < -3 < 0 < 2 < 5 < 9."
-      }
-    ]
-  },
+  ...chapter3Lessons,
   "t6-b15-phep-cong-tru-so-nguyen": {
     "id": "t6-b15-phep-cong-tru-so-nguyen",
     "lessonNumber": 15,

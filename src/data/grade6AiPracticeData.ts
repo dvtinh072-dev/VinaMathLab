@@ -1462,68 +1462,6 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
       "explanation": "BCNN(12, 15) = 60. Mẫu chung nhỏ nhất là 60."
     }
   ],
-  "t6-b16-phep-nhan-so-nguyen": [
-    {
-      "id": "ai-16.1",
-      "badge": "Luyện tập 78",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính tích hai số nguyên cùng dấu: (-8) · (-5) = ?",
-      "options": [
-        "40",
-        "-40",
-        "13",
-        "-13"
-      ],
-      "correctIndex": 0,
-      "explanation": "(-8) · (-5) = 8 · 5 = 40."
-    },
-    {
-      "id": "ai-16.2",
-      "badge": "Luyện tập 79",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Dự đoán dấu của tích P = (-3) · (-5) · 4 · (-2):",
-      "options": [
-        "P mang dấu âm (vì có 3 thừa số âm, số lẻ thừa số âm)",
-        "P mang dấu dương",
-        "P = 0",
-        "Không xác định được"
-      ],
-      "correctIndex": 0,
-      "explanation": "Tích có 3 thừa số âm (số lẻ thừa số âm) nên tích mang dấu âm."
-    },
-    {
-      "id": "ai-16.3",
-      "badge": "Luyện tập 80",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính nhanh bằng cách ghép nhóm hợp lý: (-25) · 68 · (-4) = ?",
-      "options": [
-        "6 800 (vì [(-25) · (-4)] · 68 = 100 · 68 = 6 800)",
-        "-6 800",
-        "680",
-        "-680"
-      ],
-      "correctIndex": 0,
-      "explanation": "[(-25) · (-4)] · 68 = 100 · 68 = 6 800."
-    },
-    {
-      "id": "ai-16.4",
-      "badge": "Luyện tập 81",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Áp dụng tính chất phân phối để tính nhanh: (-15) · 25 + (-15) · 75 = ?",
-      "options": [
-        "-1 200 (vì (-12) · (25 + 75) = (-12) · 100 = -1 200)",
-        "1 200",
-        "-120",
-        "120"
-      ],
-      "correctIndex": 0,
-      "explanation": "(-12) · (25 + 75) = (-12) · 100 = -1 200."
-    }
-  ],
   "t6-b17-phep-chia-het-so-nguyen": [
     {
       "id": "ai-17.1",

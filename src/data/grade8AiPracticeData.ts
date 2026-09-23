@@ -2233,4 +2233,293 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
     }
   ]
 },
+  "t8-b8-tong-hieu-hai-lap-phuong": {
+    "quizQuestions": [
+      {
+        "id": "ai-8.8.1",
+        "badge": "Luyện thêm 1 (NB) - Khai triển tổng hai lập phương",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Khai triển tích $(x + 4)(x^2 - 4x + 16)$ ta được kết quả là:",
+        "options": [
+          "$x^3 + 64$",
+          "$x^3 - 64$",
+          "$x^3 + 16$",
+          "$x^3 + 8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 4)(x^2 - 4x + 16) = x^3 + 4^3 = x^3 + 64$."
+      },
+      {
+        "id": "ai-8.8.2",
+        "badge": "Luyện thêm 2 (NB) - Khai triển hiệu hai lập phương",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Khai triển tích $(x - 5)(x^2 + 5x + 25)$ ta được kết quả là:",
+        "options": [
+          "$x^3 - 125$",
+          "$x^3 + 125$",
+          "$x^3 - 25$",
+          "$x^3 - 15$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 5)(x^2 + 5x + 25) = x^3 - 5^3 = x^3 - 125$."
+      },
+      {
+        "id": "ai-8.8.3",
+        "badge": "Luyện thêm 3 (NB) - Viết tổng lập phương thành tích",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Đa thức $x^3 + 125$ viết dưới dạng tích là:",
+        "options": [
+          "$(x + 5)(x^2 - 5x + 25)$",
+          "$(x + 5)(x^2 + 5x + 25)$",
+          "$(x + 5)(x^2 - 10x + 25)$",
+          "$(x - 5)(x^2 + 5x + 25)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 + 125 = x^3 + 5^3 = (x + 5)(x^2 - 5x + 25)$."
+      },
+      {
+        "id": "ai-8.8.4",
+        "badge": "Luyện thêm 4 (NB) - Viết hiệu lập phương thành tích",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Đa thức $x^3 - 8$ viết dưới dạng tích là:",
+        "options": [
+          "$(x - 2)(x^2 + 2x + 4)$",
+          "$(x - 2)(x^2 - 2x + 4)$",
+          "$(x - 2)(x^2 + 4x + 4)$",
+          "$(x + 2)(x^2 - 2x + 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 - 8 = x^3 - 2^3 = (x - 2)(x^2 + 2x + 4)$."
+      },
+      {
+        "id": "ai-8.8.5",
+        "badge": "Luyện thêm 5 (TH) - Khai triển có hệ số",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Khai triển biểu thức $(2x + 3)(4x^2 - 6x + 9)$ ta được kết quả là:",
+        "options": [
+          "$8x^3 + 27$",
+          "$8x^3 - 27$",
+          "$4x^3 + 9$",
+          "$2x^3 + 27$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x + 3)[(2x)^2 - (2x)(3) + 3^2] = (2x)^3 + 3^3 = 8x^3 + 27$."
+      },
+      {
+        "id": "ai-8.8.6",
+        "badge": "Luyện thêm 6 (TH) - Khai triển hiệu lập phương có hệ số",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Khai triển biểu thức $(2x - y)(4x^2 + 2xy + y^2)$ ta được kết quả là:",
+        "options": [
+          "$8x^3 - y^3$",
+          "$8x^3 + y^3$",
+          "$4x^3 - y^3$",
+          "$2x^3 - y^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x - y)[(2x)^2 + (2x)(y) + y^2] = (2x)^3 - y^3 = 8x^3 - y^3$."
+      },
+      {
+        "id": "ai-8.8.7",
+        "badge": "Luyện thêm 7 (TH) - Rút gọn biểu thức",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Bài tập 2.14 Trang 39",
+        "question": "Rút gọn biểu thức $B = (x + 3)(x^2 - 3x + 9) - (x^3 + 20)$ ta được kết quả là:",
+        "options": [
+          "$7$",
+          "$-7$",
+          "$47$",
+          "$0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$B = (x^3 + 27) - x^3 - 20 = 7$."
+      },
+      {
+        "id": "ai-8.8.8",
+        "badge": "Luyện thêm 8 (TH) - Tính nhanh giá trị biểu thức",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Bài tập 2.15 Trang 39",
+        "question": "Tính giá trị của biểu thức $K = (x - 1)(x^2 + x + 1) + 1$ tại $x = 20$:",
+        "options": [
+          "$8000$",
+          "$400$",
+          "$7999$",
+          "$8001$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$K = (x^3 - 1) + 1 = x^3$. Tại $x = 20$: $K = 20^3 = 8000$."
+      },
+      {
+        "id": "ai-8.8.9",
+        "badge": "Luyện thêm 9 (VD) - Tìm x bằng hằng đẳng thức",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Tìm giá trị của $x$ thỏa mãn: $(x + 2)(x^2 - 2x + 4) - x(x - 1)(x + 1) = 9$.",
+        "options": [
+          "$x = 1$",
+          "$x = 2$",
+          "$x = -1$",
+          "$x = 0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^3 + 8) - x(x^2 - 1) = 9 \\Leftrightarrow x^3 + 8 - x^3 + x = 9 \\Leftrightarrow x + 8 = 9 \\Leftrightarrow x = 1$."
+      },
+      {
+        "id": "ai-8.8.10",
+        "badge": "Luyện thêm 10 (VD - Thực tế) - Thể tích khối lập phương rỗng",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ứng dụng thực tế",
+        "question": "Một khối bê tông hình lập phương cạnh $x\\text{ (m)}$ bị khoét bỏ một phần rỗng hình lập phương cạnh $1\\text{ (m)}$ bên trong. Thể tích bê tông còn lại được biểu diễn bởi đa thức:",
+        "options": [
+          "$(x - 1)(x^2 + x + 1)\\text{ (m}^3\\text{)}$",
+          "$(x + 1)(x^2 - x + 1)\\text{ (m}^3\\text{)}$",
+          "$(x - 1)^3\\text{ (m}^3\\text{)}$",
+          "$(x - 1)(x^2 - x + 1)\\text{ (m}^3\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$V = x^3 - 1^3 = (x - 1)(x^2 + x + 1)\\text{ (m}^3\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-8.8.1",
+        "badge": "Luyện thêm Đ/S 1 - Các phép biến đổi lập phương",
+        "prompt": "Xét tính đúng/sai của các phép biến đổi hằng đẳng thức sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tích $(x + 5)(x^2 - 5x + 25)$ bằng $x^3 + 125$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x + 5)(x^2 - 5x + 25) = x^3 + 5^3 = x^3 + 125$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $27x^3 + 1$ phân tích thành tích là $(3x + 1)(9x^2 - 3x + 1)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(3x)^3 + 1^3 = (3x + 1)[(3x)^2 - (3x)(1) + 1^2] = (3x + 1)(9x^2 - 3x + 1)$."
+          },
+          {
+            "id": "c",
+            "text": "Tích $(2x - 1)(4x^2 + 2x + 1)$ có kết quả là $4x^3 - 1$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(2x)^3 - 1^3 = 8x^3 - 1$ (chứ không phải $4x^3 - 1$)."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $x^3 - 216$ phân tích thành tích là $(x - 6)(x^2 + 6x + 36)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^3 - 6^3 = (x - 6)(x^2 + 6x + 36)$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-8.8.2",
+        "badge": "Luyện thêm Đ/S 2 - Rút gọn và bài toán thực tế",
+        "prompt": "Xét tính đúng/sai của các bài toán đại số và thực tế sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Giá trị của biểu thức $M = (x - 2)(x^2 + 2x + 4) - (x + 2)(x^2 - 2x + 4)$ bằng $-16$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $M = (x^3 - 8) - (x^3 + 8) = x^3 - 8 - x^3 - 8 = -16$."
+          },
+          {
+            "id": "b",
+            "text": "Nghiệm của phương trình $(x + 1)(x^2 - x + 1) - x^3 = 5$ là $x = 4$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(x^3 + 1) - x^3 = 5 \\Leftrightarrow 1 = 5$ (vô nghiệm)."
+          },
+          {
+            "id": "c",
+            "text": "Một khối lập phương cạnh $4\\text{ cm}$ có thể tích bằng $64\\text{ cm}^3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $V = 4^3 = 64\\text{ cm}^3$."
+          },
+          {
+            "id": "d",
+            "text": "Hiệu thể tích giữa khối lập phương cạnh $5\\text{ cm}$ và khối lập phương cạnh $4\\text{ cm}$ là $61\\text{ cm}^3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $5^3 - 4^3 = 125 - 64 = 61\\text{ cm}^3$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-8.8.1",
+        "badge": "Câu 1 (NB) - Hệ số tự do của khai triển",
+        "prompt": "Hệ số tự do trong khai triển tích $(x + 4)(x^2 - 4x + 16)$ bằng bao nhiêu?",
+        "correctAnswer": "64",
+        "acceptableAnswers": [
+          "64",
+          "sáu mươi tư"
+        ],
+        "explanation": "$(x + 4)(x^2 - 4x + 16) = x^3 + 4^3 = x^3 + 64$. Hệ số tự do là $64$."
+      },
+      {
+        "id": "ai-sa-8.8.2",
+        "badge": "Câu 2 (TH) - Hệ số tự do của hiệu lập phương",
+        "prompt": "Hệ số tự do trong khai triển tích $(x - 5)(x^2 + 5x + 25)$ bằng bao nhiêu?",
+        "correctAnswer": "-125",
+        "acceptableAnswers": [
+          "-125",
+          "âm một trăm hai mươi lăm",
+          "- 125"
+        ],
+        "explanation": "$(x - 5)(x^2 + 5x + 25) = x^3 - 5^3 = x^3 - 125$. Hệ số tự do là $-125$."
+      },
+      {
+        "id": "ai-sa-8.8.3",
+        "badge": "Câu 3 (TH) - Tính nhanh giá trị biểu thức",
+        "prompt": "Tính giá trị của biểu thức $P = (x + 1)(x^2 - x + 1)$ tại $x = 9$.",
+        "correctAnswer": "730",
+        "acceptableAnswers": [
+          "730",
+          "bảy trăm ba mươi"
+        ],
+        "explanation": "$P = x^3 + 1$. Tại $x = 9$: $P = 9^3 + 1 = 729 + 1 = 730$."
+      },
+      {
+        "id": "ai-sa-8.8.4",
+        "badge": "Câu 4 (TH) - Tìm hệ số a trong tổng lập phương",
+        "prompt": "Cho đẳng thức $(2x + 1)(4x^2 - 2x + 1) = ax^3 + 1$. Giá trị của $a$ bằng bao nhiêu?",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "tám"
+        ],
+        "explanation": "$(2x + 1)(4x^2 - 2x + 1) = (2x)^3 + 1 = 8x^3 + 1$. Vậy $a = 8$."
+      },
+      {
+        "id": "ai-sa-8.8.5",
+        "badge": "Câu 5 (VD) - Tìm x bằng hằng đẳng thức",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x - 1)(x^2 + x + 1) - x(x^2 - 2) = 5$.",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "$(x^3 - 1) - (x^3 - 2x) = 5 \\Leftrightarrow 2x - 1 = 5 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3$."
+      },
+      {
+        "id": "ai-sa-8.8.6",
+        "badge": "Câu 6 (VD - Thực tế) - Thể tích hai bể nước lập phương",
+        "prompt": "Một khu tập thể có hai bể chứa nước hình lập phương, bể thứ nhất có cạnh $3\\text{ m}$, bể thứ hai có cạnh $2\\text{ m}$. Tổng dung tích của hai bể chứa nước bằng bao nhiêu mét khối?",
+        "correctAnswer": "35",
+        "acceptableAnswers": [
+          "35",
+          "ba mươi lăm",
+          "35m3",
+          "35 m3"
+        ],
+        "explanation": "Tổng dung tích hai bể là: $V = 3^3 + 2^3 = 27 + 8 = 35\\text{ (m}^3\\text{)}$."
+      }
+    ]
+  },
 };

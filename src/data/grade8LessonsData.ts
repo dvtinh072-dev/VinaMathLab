@@ -4808,4 +4808,678 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 },
+  "t8-b8-tong-hieu-hai-lap-phuong": {
+    "id": "t8-b8-tong-hieu-hai-lap-phuong",
+    "lessonNumber": 8,
+    "title": "Bài 8: Tổng và hiệu hai lập phương",
+    "bookChapter": "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng",
+    "scenarioTitle": "Tình huống: Tính chênh lệch và tổng thể tích hai khối kim loại lập phương",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn Nam",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, trong giờ thực hành cơ khí, xưởng giao nhiệm vụ gia công một khối kim loại hình lập phương cạnh a = 10 cm, sau đó khoét rỗng ở tâm một khối lập phương nhỏ cạnh b = 8 cm. Thầy giáo yêu cầu em tính thể tích kim loại còn lại. Em tính a³ - b³ = 10³ - 8³ = 1000 - 512 = 488 cm³, nhưng nếu gặp kích thước lớn hoặc chứa biến x, y thì có cách nào biến đổi a³ - b³ thành tích để tính toán và rút gọn nhanh hơn không ạ?",
+        "visualGraphic": "box",
+        "mathNote": "V = a^3 - b^3"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào Nam! Câu hỏi của em rất thông minh! Trong đại số, để chuyển hiệu hai lập phương về dạng tích, ta có hằng đẳng thức tuyệt đẹp: a³ - b³ = (a - b)(a² + ab + b²). Với khối kim loại của em: a - b = 10 - 8 = 2 cm, và a² + ab + b² = 100 + 80 + 64 = 244. Khi đó thể tích còn lại là: 2 × 244 = 488 cm³! Tương tự, ta cũng có hằng đẳng thức Tổng hai lập phương: a³ + b³ = (a + b)(a² - ab + b²). Chúng ta cùng tìm hiểu kỹ hai hằng đẳng thức này nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "A^3 \pm B^3 = (A \pm B)(A^2 \mp AB + B^2)"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Tổng hai lập phương",
+        "points": [
+          "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Tổng hai lập phương:",
+          "  $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$",
+          "Biểu thức $A^2 - AB + B^2$ được gọi là bình phương thiếu của một hiệu (vì thiếu hệ số 2 so với $(A - B)^2 = A^2 - 2AB + B^2$).",
+          "Quy tắc nhớ dấu: Thừa số thứ nhất cùng dấu với vế trái $(A + B)$, thừa số thứ hai có dấu đan xen: hạng tử giữa mang dấu trừ $-AB$.",
+          "Dạng đảo (khai triển tích): $(A + B)(A^2 - AB + B^2) = A^3 + B^3$."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 37)",
+        "exampleProblem": "a) Khai triển biểu thức: $(x + 2)(x^2 - 2x + 4)$ và $(2x + 1)(4x^2 - 2x + 1).\n" +
+          "b) Viết các đa thức sau dưới dạng tích: $x^3 + 8$ và $27x^3 + y^3$.",
+        "exampleSolution": "a) Khai triển tích:\n" +
+          "• Nhận thấy $(x + 2)(x^2 - x \\cdot 2 + 2^2)$ đúng dạng $(A + B)(A^2 - AB + B^2)$ với $A = x, B = 2$.\n" +
+          "  Do đó: $(x + 2)(x^2 - 2x + 4) = x^3 + 2^3 = x^3 + 8$.\n" +
+          "• Với $(2x + 1)[(2x)^2 - (2x)\\cdot 1 + 1^2]$, ta có $A = 2x, B = 1$.\n" +
+          "  Do đó: $(2x + 1)(4x^2 - 2x + 1) = (2x)^3 + 1^3 = 8x^3 + 1.\n\n" +
+          "b) Viết dưới dạng tích:\n" +
+          "• $x^3 + 8 = x^3 + 2^3 = (x + 2)(x^2 - x \\cdot 2 + 2^2) = (x + 2)(x^2 - 2x + 4).\n" +
+          "• $27x^3 + y^3 = (3x)^3 + y^3 = (3x + y)[(3x)^2 - (3x)\\cdot y + y^2] = (3x + y)(9x^2 - 3xy + y^2)$."
+      },
+      {
+        "index": "2",
+        "title": "Hiệu hai lập phương",
+        "points": [
+          "Với hai biểu thức tùy ý $A$ và $B$, ta có hằng đẳng thức Hiệu hai lập phương:",
+          "  $A^3 - B^3 = (A - B)(A^2 + AB + B^2)$",
+          "Biểu thức $A^2 + AB + B^2$ được gọi là bình phương thiếu của một tổng (vì thiếu hệ số 2 so với $(A + B)^2 = A^2 + 2AB + B^2$).",
+          "Quy tắc nhớ dấu: Thừa số thứ nhất cùng dấu với vế trái $(A - B)$, thừa số thứ hai mang toàn bộ dấu cộng: $A^2 + AB + B^2$.",
+          "Dạng đảo (khai triển tích): $(A - B)(A^2 + AB + B^2) = A^3 - B^3$."
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 38)",
+        "exampleProblem": "a) Khai triển biểu thức: $(x - 3)(x^2 + 3x + 9)$ và $(x - 2y)(x^2 + 2xy + 4y^2).\n" +
+          "b) Viết các đa thức sau dưới dạng tích: $x^3 - 1$ và $8x^3 - 27$.",
+        "exampleSolution": "a) Khai triển tích:\n" +
+          "• $(x - 3)(x^2 + 3x + 9) = (x - 3)(x^2 + x \\cdot 3 + 3^2) = x^3 - 3^3 = x^3 - 27.\n" +
+          "• $(x - 2y)[x^2 + x \\cdot (2y) + (2y)^2] = x^3 - (2y)^3 = x^3 - 8y^3.\n\n" +
+          "b) Viết dưới dạng tích:\n" +
+          "• $x^3 - 1 = x^3 - 1^3 = (x - 1)(x^2 + x \\cdot 1 + 1^2) = (x - 1)(x^2 + x + 1).\n" +
+          "• $8x^3 - 27 = (2x)^3 - 3^3 = (2x - 3)[(2x)^2 + (2x)\\cdot 3 + 3^2] = (2x - 3)(4x^2 + 6x + 9)$."
+      },
+      {
+        "index": "3",
+        "title": "Rút gọn biểu thức và Tính nhanh giá trị",
+        "points": [
+          "Phối hợp hằng đẳng thức tổng và hiệu hai lập phương để rút gọn các biểu thức chứa tích.",
+          "Chứng minh giá trị của một biểu thức không phụ thuộc vào giá trị của biến:",
+          "  Nếu sau khi thu gọn, biểu thức triệt tiêu hết biến và chỉ còn một hằng số.",
+          "Tính nhanh giá trị của biểu thức tại giá trị cho trước của biến:",
+          "  Thu gọn biểu thức về dạng $x^3 \\pm a^3$ trước khi thay số."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 39)",
+        "exampleProblem": "a) Rút gọn biểu thức: $M = (x + 1)(x^2 - x + 1) - (x - 1)(x^2 + x + 1).\n" +
+          "b) Tính nhanh giá trị của biểu thức $P = (x - 2)(x^2 + 2x + 4) + 8$ tại $x = 10$.",
+        "exampleSolution": "a) Áp dụng hằng đẳng thức tổng và hiệu hai lập phương:\n" +
+          "$(x + 1)(x^2 - x + 1) = x^3 + 1^3 = x^3 + 1;\n" +
+          "(x - 1)(x^2 + x + 1) = x^3 - 1^3 = x^3 - 1.\n" +
+          "Do đó: $M = (x^3 + 1) - (x^3 - 1) = x^3 + 1 - x^3 + 1 = 2$.\n" +
+          "(Giá trị của $M$ luôn bằng 2 với mọi $x$, không phụ thuộc vào biến $x$).\n\n" +
+          "b) Ta có: $P = (x^3 - 2^3) + 8 = x^3 - 8 + 8 = x^3$.\n" +
+          "Thay $x = 10$ vào ta được: $P = 10^3 = 1000$."
+      },
+      {
+        "index": "4",
+        "title": "Ứng dụng thực tế & Tìm x",
+        "points": [
+          "Giải phương trình chứa tích: Áp dụng hằng đẳng thức để đưa về $x^3 \\pm a^3$, kết hợp với khai triển đơn thức và đa thức để triệt tiêu số hạng bậc 3, đưa về phương trình bậc nhất một ẩn.",
+          "Bài toán thể tích thực tế:",
+          "  • Khối lập phương rỗng: $V_{\\text{vỏ}} = a^3 - b^3 = (a - b)(a^2 + ab + b^2)$.",
+          "  • Tổng thể tích hai bể chứa hình lập phương: $V_{\\text{tổng}} = a^3 + b^3 = (a + b)(a^2 - ab + b^2)$."
+        ],
+        "exampleTitle": "Ví dụ 4 (Toán 8 KNTT Trang 39 - Vận dụng)",
+        "exampleProblem": "a) Tìm $x$, biết: $(x - 1)(x^2 + x + 1) - x(x - 2)(x + 2) = 11.\n" +
+          "b) Một khối bê tông hình lập phương cạnh $x\\text{ (m)}$ bị khoét một hốc hình lập phương cạnh $y\\text{ (m)}$ ($x > y$). Viết công thức tính thể tích bê tông còn lại dưới dạng tích. Tính thể tích khi $x = 2\\text{ m}, y = 1\\text{ m}$.",
+        "exampleSolution": "a) Thu gọn vế trái:\n" +
+          "• $(x - 1)(x^2 + x + 1) = x^3 - 1$.\n" +
+          "• $x(x - 2)(x + 2) = x(x^2 - 4) = x^3 - 4x$.\n" +
+          "Phương trình trở thành:\n" +
+          "$(x^3 - 1) - (x^3 - 4x) = 11 \\Leftrightarrow x^3 - 1 - x^3 + 4x = 11 \\Leftrightarrow 4x - 1 = 11 \\Leftrightarrow 4x = 12 \\Leftrightarrow x = 3$.\n\n" +
+          "b) Thể tích bê tông còn lại là: $V = x^3 - y^3 = (x - y)(x^2 + xy + y^2)\\text{ (m}^3\\text{)}.\n" +
+          "Với $x = 2, y = 1$: $V = (2 - 1)(2^2 + 2\\cdot 1 + 1^2) = 1 \\cdot (4 + 2 + 1) = 7\\text{ (m}^3\\text{)}$."
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_b8_video1",
+        "title": "Tiết 1: Tổng hai lập phương và ứng dụng phân tích đa thức thành tích"
+      },
+      {
+        "id": "t8_b8_video2",
+        "title": "Tiết 2: Hiệu hai lập phương, bài toán rút gọn và thực tế"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.8.1",
+        "timeSeconds": 135,
+        "timeLabel": "02:15",
+        "title": "Ví dụ 1: Khai triển tổng hai lập phương",
+        "question": "Khai triển tích $(x + 3)(x^2 - 3x + 9)$ ta được kết quả là:",
+        "options": [
+          "$x^3 + 27$",
+          "$x^3 - 27$",
+          "$x^3 + 9$",
+          "$x^3 - 9$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 3)(x^2 - 3x + 9) = x^3 + 3^3 = x^3 + 27$."
+      },
+      {
+        "id": "vq-8.8.2",
+        "timeSeconds": 330,
+        "timeLabel": "05:30",
+        "title": "Ví dụ 2: Viết tổng hai lập phương thành tích",
+        "question": "Viết đa thức $8x^3 + 1$ dưới dạng tích của hai đa thức:",
+        "options": [
+          "$(2x + 1)(4x^2 - 2x + 1)$",
+          "$(2x + 1)(4x^2 + 2x + 1)$",
+          "$(2x + 1)(2x^2 - 2x + 1)$",
+          "$(8x + 1)(x^2 - 8x + 1)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$8x^3 + 1 = (2x)^3 + 1^3 = (2x + 1)[(2x)^2 - (2x)(1) + 1^2] = (2x + 1)(4x^2 - 2x + 1)$."
+      },
+      {
+        "id": "vq-8.8.3",
+        "timeSeconds": 225,
+        "timeLabel": "03:45",
+        "title": "Ví dụ 3: Khai triển hiệu hai lập phương",
+        "question": "Khai triển tích $(x - 4)(x^2 + 4x + 16)$ ta được kết quả là:",
+        "options": [
+          "$x^3 - 64$",
+          "$x^3 + 64$",
+          "$x^3 - 16$",
+          "$x^3 - 12$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 4)(x^2 + 4x + 16) = x^3 - 4^3 = x^3 - 64$."
+      },
+      {
+        "id": "vq-8.8.4",
+        "timeSeconds": 440,
+        "timeLabel": "07:20",
+        "title": "Ví dụ 4: Tính nhanh giá trị biểu thức",
+        "question": "Tính giá trị của biểu thức $P = (x - 1)(x^2 + x + 1)$ tại $x = 11$:",
+        "options": [
+          "$1330$",
+          "$1331$",
+          "$1000$",
+          "$1320$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$P = x^3 - 1$. Thay $x = 11$: $P = 11^3 - 1 = 1331 - 1 = 1330$."
+      }
+    ],
+    "tips": [
+      "Quy tắc nhớ dấu 'Cùng dấu trước, trái dấu sau': $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$ (thừa số đầu cộng, giữa trừ); $A^3 - B^3 = (A - B)(A^2 + AB + B^2)$ (thừa số đầu trừ, giữa cộng).",
+      "Phân biệt bình phương thiếu: Bình phương thiếu $A^2 \\pm AB + B^2$ không có số 2 ở giữa, khác hoàn toàn bình phương đủ $(A \\pm B)^2 = A^2 \\pm 2AB + B^2$.",
+      "Ghi nhớ các số lập phương quen thuộc: $1 = 1^3, 8 = 2^3, 27 = 3^3, 64 = 4^3, 125 = 5^3, 216 = 6^3$.",
+      "Đóng ngoặc khi biểu thức có hệ số: Khi tính $(2x)^3 = 8x^3$ và $[(2x)^2] = 4x^2$, luôn đặt trong dấu ngoặc để tránh nhầm thành $2x^3$ hoặc $2x^2$."
+    ],
+    "traps": [
+      "Bẫy nhầm giữa tổng hai lập phương và lập phương một tổng: Nhầm $A^3 + B^3$ với $(A + B)^3$. Đây là hai biểu thức hoàn toàn khác nhau!",
+      "Bẫy nhầm giữa hiệu hai lập phương và lập phương một hiệu: Nhầm $A^3 - B^3$ với $(A - B)^3$.",
+      "Bẫy thêm số 2 vào bình phương thiếu: Viết nhầm $x^3 + 8 = (x + 2)(x^2 - 4x + 4)$ hoặc $(x + 2)(x^2 - 2x + 4)$ thành có số 2 ở giữa: $x^2 - 4x + 4$.",
+      "Bẫy sai dấu ở thừa số thứ hai: Viết nhầm $A^3 + B^3 = (A + B)(A^2 + AB + B^2)$ (dấu giữa phải là $-AB$) hoặc $A^3 - B^3 = (A - B)(A^2 - AB + B^2)$ (dấu giữa phải là $+AB$)."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.8.1",
+        "badge": "Câu 1 (NB) - Công thức tổng hai lập phương",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Công thức tổng hai lập phương của hai biểu thức $A$ và $B$ là:",
+        "options": [
+          "$A^3 + B^3 = (A + B)(A^2 - AB + B^2)$",
+          "$A^3 + B^3 = (A + B)(A^2 + AB + B^2)$",
+          "$A^3 + B^3 = (A + B)(A^2 - 2AB + B^2)$",
+          "$A^3 + B^3 = (A - B)(A^2 + AB + B^2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hằng đẳng thức tổng hai lập phương: $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$."
+      },
+      {
+        "id": "quiz-8.8.2",
+        "badge": "Câu 2 (NB) - Công thức hiệu hai lập phương",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Công thức hiệu hai lập phương của hai biểu thức $A$ và $B$ là:",
+        "options": [
+          "$A^3 - B^3 = (A - B)(A^2 + AB + B^2)$",
+          "$A^3 - B^3 = (A - B)(A^2 - AB + B^2)$",
+          "$A^3 - B^3 = (A - B)(A^2 + 2AB + B^2)$",
+          "$A^3 - B^3 = (A + B)(A^2 - AB + B^2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hằng đẳng thức hiệu hai lập phương: $A^3 - B^3 = (A - B)(A^2 + AB + B^2)$."
+      },
+      {
+        "id": "quiz-8.8.3",
+        "badge": "Câu 3 (NB) - Khái niệm bình phương thiếu của một hiệu",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Biểu thức nào sau đây được gọi là 'bình phương thiếu của một hiệu' $A - B$?",
+        "options": [
+          "$A^2 - AB + B^2$",
+          "$A^2 - 2AB + B^2$",
+          "$A^2 + AB + B^2$",
+          "$A^2 + 2AB + B^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Biểu thức $A^2 - AB + B^2$ được gọi là bình phương thiếu của một hiệu vì thiếu hệ số 2 so với $(A - B)^2 = A^2 - 2AB + B^2$."
+      },
+      {
+        "id": "quiz-8.8.4",
+        "badge": "Câu 4 (NB) - Khái niệm bình phương thiếu của một tổng",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Biểu thức nào sau đây được gọi là 'bình phương thiếu của một tổng' $A + B$?",
+        "options": [
+          "$A^2 + AB + B^2$",
+          "$A^2 + 2AB + B^2$",
+          "$A^2 - AB + B^2$",
+          "$A^2 - 2AB + B^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Biểu thức $A^2 + AB + B^2$ được gọi là bình phương thiếu của một tổng vì thiếu hệ số 2 so với $(A + B)^2 = A^2 + 2AB + B^2$."
+      },
+      {
+        "id": "quiz-8.8.5",
+        "badge": "Câu 5 (NB) - Khai triển tích của x + 1",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Khai triển tích $(x + 1)(x^2 - x + 1)$ ta được kết quả là:",
+        "options": [
+          "$x^3 + 1$",
+          "$x^3 - 1$",
+          "$x^3 + 3x + 1$",
+          "$x^3 - 3x + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 1)(x^2 - x + 1) = x^3 + 1^3 = x^3 + 1$."
+      },
+      {
+        "id": "quiz-8.8.6",
+        "badge": "Câu 6 (NB) - Khai triển tích của x - 1",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Khai triển tích $(x - 1)(x^2 + x + 1)$ ta được kết quả là:",
+        "options": [
+          "$x^3 - 1$",
+          "$x^3 + 1$",
+          "$x^3 - 3x - 1$",
+          "$x^2 - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 1)(x^2 + x + 1) = x^3 - 1^3 = x^3 - 1$."
+      },
+      {
+        "id": "quiz-8.8.7",
+        "badge": "Câu 7 (NB) - Khai triển tích của x + 2",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Khai triển tích $(x + 2)(x^2 - 2x + 4)$ ta được kết quả là:",
+        "options": [
+          "$x^3 + 8$",
+          "$x^3 - 8$",
+          "$x^3 + 4$",
+          "$x^3 - 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 2)(x^2 - 2x + 4) = x^3 + 2^3 = x^3 + 8$."
+      },
+      {
+        "id": "quiz-8.8.8",
+        "badge": "Câu 8 (NB) - Khai triển tích của x - 2",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Khai triển tích $(x - 2)(x^2 + 2x + 4)$ ta được kết quả là:",
+        "options": [
+          "$x^3 - 8$",
+          "$x^3 + 8$",
+          "$x^3 - 4$",
+          "$x^3 - 6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 2)(x^2 + 2x + 4) = x^3 - 2^3 = x^3 - 8$."
+      },
+      {
+        "id": "quiz-8.8.9",
+        "badge": "Câu 9 (NB) - Viết đa thức thành tích tổng lập phương",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Đa thức $x^3 + 27$ được viết dưới dạng tích của hai đa thức là:",
+        "options": [
+          "$(x + 3)(x^2 - 3x + 9)$",
+          "$(x + 3)(x^2 + 3x + 9)$",
+          "$(x + 3)(x^2 - 6x + 9)$",
+          "$(x - 3)(x^2 + 3x + 9)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 + 27 = x^3 + 3^3 = (x + 3)(x^2 - 3x + 3^2) = (x + 3)(x^2 - 3x + 9)$."
+      },
+      {
+        "id": "quiz-8.8.10",
+        "badge": "Câu 10 (NB) - Viết đa thức thành tích hiệu lập phương",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Đa thức $x^3 - 64$ được viết dưới dạng tích của hai đa thức là:",
+        "options": [
+          "$(x - 4)(x^2 + 4x + 16)$",
+          "$(x - 4)(x^2 - 4x + 16)$",
+          "$(x - 4)(x^2 + 8x + 16)$",
+          "$(x + 4)(x^2 - 4x + 16)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 - 64 = x^3 - 4^3 = (x - 4)(x^2 + 4x + 4^2) = (x - 4)(x^2 + 4x + 16)$."
+      },
+      {
+        "id": "quiz-8.8.11",
+        "badge": "Câu 11 (TH) - Khai triển tích có hệ số của x",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Khai triển biểu thức $(2x + 1)(4x^2 - 2x + 1)$ ta được kết quả là:",
+        "options": [
+          "$8x^3 + 1$",
+          "$8x^3 - 1$",
+          "$4x^3 + 1$",
+          "$2x^3 + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x + 1)[(2x)^2 - (2x)(1) + 1^2] = (2x)^3 + 1^3 = 8x^3 + 1$."
+      },
+      {
+        "id": "quiz-8.8.12",
+        "badge": "Câu 12 (TH) - Khai triển hiệu lập phương có hệ số",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Khai triển biểu thức $(3x - 1)(9x^2 + 3x + 1)$ ta được kết quả là:",
+        "options": [
+          "$27x^3 - 1$",
+          "$27x^3 + 1$",
+          "$9x^3 - 1$",
+          "$3x^3 - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(3x - 1)[(3x)^2 + (3x)(1) + 1^2] = (3x)^3 - 1^3 = 27x^3 - 1$."
+      },
+      {
+        "id": "quiz-8.8.13",
+        "badge": "Câu 13 (TH) - Phân tích đa thức hai biến thành tích",
+        "source": "SGK Toán 8 KNTT Trang 37",
+        "question": "Đa thức $8x^3 + y^3$ được viết dưới dạng tích là:",
+        "options": [
+          "$(2x + y)(4x^2 - 2xy + y^2)$",
+          "$(2x + y)(4x^2 + 2xy + y^2)$",
+          "$(2x + y)(2x^2 - 2xy + y^2)$",
+          "$(8x + y)(x^2 - 8xy + y^2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$8x^3 + y^3 = (2x)^3 + y^3 = (2x + y)[(2x)^2 - (2x)(y) + y^2] = (2x + y)(4x^2 - 2xy + y^2)$."
+      },
+      {
+        "id": "quiz-8.8.14",
+        "badge": "Câu 14 (TH) - Phân tích hiệu lập phương hai biến",
+        "source": "SGK Toán 8 KNTT Trang 38",
+        "question": "Đa thức $27x^3 - 8y^3$ được viết dưới dạng tích là:",
+        "options": [
+          "$(3x - 2y)(9x^2 + 6xy + 4y^2)$",
+          "$(3x - 2y)(9x^2 - 6xy + 4y^2)$",
+          "$(3x + 2y)(9x^2 - 6xy + 4y^2)$",
+          "$(3x - 2y)(3x^2 + 6xy + 2y^2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$27x^3 - 8y^3 = (3x)^3 - (2y)^3 = (3x - 2y)[(3x)^2 + (3x)(2y) + (2y)^2] = (3x - 2y)(9x^2 + 6xy + 4y^2)$."
+      },
+      {
+        "id": "quiz-8.8.15",
+        "badge": "Câu 15 (TH) - Rút gọn biểu thức chứa tích",
+        "source": "Toán 8 KNTT Bài 2.14 Trang 39",
+        "question": "Rút gọn biểu thức $M = (x - 2)(x^2 + 2x + 4) - x^3$ ta được kết quả là:",
+        "options": [
+          "$-8$",
+          "$8$",
+          "$-4$",
+          "$0$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$M = (x^3 - 8) - x^3 = -8$."
+      },
+      {
+        "id": "quiz-8.8.16",
+        "badge": "Câu 16 (TH) - Tính nhanh giá trị biểu thức",
+        "source": "Toán 8 KNTT Bài 2.15 Trang 39",
+        "question": "Tính giá trị của biểu thức $P = (x + 2)(x^2 - 2x + 4)$ tại $x = 8$:",
+        "options": [
+          "$520$",
+          "$512$",
+          "$504$",
+          "$528$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$P = x^3 + 8$. Tại $x = 8$: $P = 8^3 + 8 = 512 + 8 = 520$."
+      },
+      {
+        "id": "quiz-8.8.17",
+        "badge": "Câu 17 (VD) - Chứng minh biểu thức không phụ thuộc x",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Giá trị của biểu thức $A = (x + 1)(x^2 - x + 1) - (x - 1)(x^2 + x + 1)$ là:",
+        "options": [
+          "$2$",
+          "$0$",
+          "$-2$",
+          "$2x^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$A = (x^3 + 1) - (x^3 - 1) = x^3 + 1 - x^3 + 1 = 2$."
+      },
+      {
+        "id": "quiz-8.8.18",
+        "badge": "Câu 18 (VD) - Tìm x bằng hằng đẳng thức lập phương",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x - 1)(x^2 + x + 1) - x(x - 2)(x + 2) = 7$.",
+        "options": [
+          "$x = 2$",
+          "$x = 1$",
+          "$x = 3$",
+          "$x = -2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^3 - 1) - x(x^2 - 4) = 7 \\Leftrightarrow x^3 - 1 - x^3 + 4x = 7 \\Leftrightarrow 4x - 1 = 7 \\Leftrightarrow 4x = 8 \\Leftrightarrow x = 2$."
+      },
+      {
+        "id": "quiz-8.8.19",
+        "badge": "Câu 19 (VD) - Tính giá trị đa thức hai biến",
+        "source": "Toán 8 KNTT Bài tập 2.16 Trang 39",
+        "question": "Tính giá trị của biểu thức $Q = (x + 2y)(x^2 - 2xy + 4y^2)$ tại $x = 6$ và $y = 2$:",
+        "options": [
+          "$280$",
+          "$216$",
+          "$248$",
+          "$344$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$Q = x^3 + (2y)^3 = x^3 + 8y^3$. Thay $x = 6, y = 2$: $Q = 6^3 + 8(2^3) = 216 + 8(8) = 216 + 64 = 280$."
+      },
+      {
+        "id": "quiz-8.8.20",
+        "badge": "Câu 20 (VD - Thực tế) - Thể tích khối lập phương rỗng",
+        "source": "Toán 8 KNTT Ứng dụng thực tế",
+        "question": "Một khối kim loại hình lập phương cạnh $x\\text{ (cm)}$ được khoét rỗng một lỗ hình lập phương cạnh $y\\text{ (cm)}$ bên trong ($x > y$). Biểu thức tính thể tích phần kim loại còn lại dưới dạng tích là:",
+        "options": [
+          "$(x - y)(x^2 + xy + y^2)\\text{ (cm}^3\\text{)}$",
+          "$(x + y)(x^2 - xy + y^2)\\text{ (cm}^3\\text{)}$",
+          "$(x - y)^3\\text{ (cm}^3\\text{)}$",
+          "$(x - y)(x^2 - xy + y^2)\\text{ (cm}^3\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thể tích kim loại còn lại bằng thể tích ngoài trừ phần rỗng: $V = x^3 - y^3 = (x - y)(x^2 + xy + y^2)\\text{ (cm}^3\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.8.1",
+        "badge": "Câu 1 (Đ/S) - Các công thức tổng và hiệu hai lập phương",
+        "prompt": "Cho $A, B$ là hai biểu thức đại số tùy ý. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đẳng thức $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$ luôn đúng với mọi biểu thức $A, B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là hằng đẳng thức Tổng hai lập phương."
+          },
+          {
+            "id": "b",
+            "text": "Biểu thức $A^2 + AB + B^2$ được gọi là bình phương thiếu của một tổng $A + B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì thiếu hệ số 2 so với $(A + B)^2 = A^2 + 2AB + B^2$."
+          },
+          {
+            "id": "c",
+            "text": "Đẳng thức $A^3 - B^3 = (A - B)(A^2 - AB + B^2)$ là khẳng định đúng.",
+            "correctAnswer": false,
+            "explanation": "Sai, công thức đúng là $A^3 - B^3 = (A - B)(A^2 + AB + B^2)$ (hạng tử ở giữa mang dấu cộng)."
+          },
+          {
+            "id": "d",
+            "text": "Tổng hai lập phương $A^3 + B^3$ luôn bằng lập phương của một tổng $(A + B)^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3 \\ne A^3 + B^3$ khi $AB(A + B) \\ne 0$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.8.2",
+        "badge": "Câu 2 (Đ/S) - Khai triển và phân tích đa thức thành tích",
+        "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tích $(x + 3)(x^2 - 3x + 9)$ có kết quả thu gọn là $x^3 + 27$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x + 3)(x^2 - 3x + 9) = x^3 + 3^3 = x^3 + 27$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $8x^3 - 1$ phân tích thành tích là $(2x - 1)(4x^2 + 2x + 1)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(2x)^3 - 1^3 = (2x - 1)[(2x)^2 + (2x)(1) + 1^2] = (2x - 1)(4x^2 + 2x + 1)$."
+          },
+          {
+            "id": "c",
+            "text": "Tích $(x - 2y)(x^2 + 2xy + 4y^2)$ có kết quả thu gọn là $x^3 - 4y^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(x - 2y)(x^2 + 2xy + 4y^2) = x^3 - (2y)^3 = x^3 - 8y^3$ (chứ không phải $-4y^3$)."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $x^3 + 64$ phân tích thành tích là $(x + 4)(x^2 - 4x + 16)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^3 + 4^3 = (x + 4)(x^2 - 4x + 16)$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.8.3",
+        "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức và giải phương trình",
+        "prompt": "Cho biểu thức $P = (x + 2)(x^2 - 2x + 4) - (x - 1)(x^2 + x + 1)$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khai triển $(x + 2)(x^2 - 2x + 4)$ được kết quả là $x^3 + 8$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hằng đẳng thức tổng hai lập phương: $x^3 + 2^3 = x^3 + 8$."
+          },
+          {
+            "id": "b",
+            "text": "Khai triển $(x - 1)(x^2 + x + 1)$ được kết quả là $x^3 - 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hằng đẳng thức hiệu hai lập phương: $x^3 - 1^3 = x^3 - 1$."
+          },
+          {
+            "id": "c",
+            "text": "Biểu thức $P$ sau khi rút gọn bằng $7$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $P = (x^3 + 8) - (x^3 - 1) = x^3 + 8 - x^3 + 1 = 9$."
+          },
+          {
+            "id": "d",
+            "text": "Nghiệm của phương trình $(x - 1)(x^2 + x + 1) - x(x - 3)(x + 3) = 17$ là $x = 2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x^3 - 1) - x(x^2 - 9) = 17 \\Leftrightarrow x^3 - 1 - x^3 + 9x = 17 \\Leftrightarrow 9x - 1 = 17 \\Leftrightarrow 9x = 18 \\Leftrightarrow x = 2$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.8.4",
+        "badge": "Câu 4 (Đ/S - Thực tế) - Khối kim loại lập phương khoét rỗng",
+        "prompt": "Một khối chi tiết máy bằng đồng đặc hình lập phương có cạnh bằng $a\\text{ (cm)}$. Người ta tiện khoét bỏ một phần rỗng hình lập phương ở giữa có cạnh $b\\text{ (cm)}$ ($a > b > 0$). Biết khối lượng riêng của đồng là $8{,}9\\text{ g/cm}^3$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Thể tích ban đầu của khối kim loại là $a^3\\text{ (cm}^3\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, thể tích khối lập phương cạnh $a$ là $a^3\\text{ (cm}^3\\text{)}$."
+          },
+          {
+            "id": "b",
+            "text": "Thể tích phần kim loại còn lại được biểu thị bởi biểu thức $(a - b)(a^2 + ab + b^2)\\text{ (cm}^3\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $V = a^3 - b^3 = (a - b)(a^2 + ab + b^2)$."
+          },
+          {
+            "id": "c",
+            "text": "Nếu $a = 5\\text{ cm}$ và $b = 3\\text{ cm}$ thì thể tích kim loại còn lại là $98\\text{ cm}^3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $V = 5^3 - 3^3 = 125 - 27 = 98\\text{ cm}^3$."
+          },
+          {
+            "id": "d",
+            "text": "Với $a = 5\\text{ cm}, b = 3\\text{ cm}$, khối lượng phần kim loại còn lại là $872{,}2\\text{ g}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $m = D \\cdot V = 8{,}9 \\times 98 = 872{,}2\\text{ g}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.8.1",
+        "badge": "Câu 1 (NB) - Hệ số tự do của khai triển",
+        "prompt": "Hệ số tự do trong khai triển tích $(x + 5)(x^2 - 5x + 25)$ bằng bao nhiêu?",
+        "correctAnswer": "125",
+        "acceptableAnswers": [
+          "125",
+          "một trăm hai mươi lăm"
+        ],
+        "explanation": "$(x + 5)(x^2 - 5x + 25) = x^3 + 5^3 = x^3 + 125$. Hệ số tự do là $125$."
+      },
+      {
+        "id": "sa-8.8.2",
+        "badge": "Câu 2 (TH) - Hệ số của x³ trong khai triển",
+        "prompt": "Hệ số của $x^3$ trong khai triển tích $(2x - 3)(4x^2 + 6x + 9)$ bằng bao nhiêu?",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "tám"
+        ],
+        "explanation": "$(2x - 3)[(2x)^2 + (2x)(3) + 3^2] = (2x)^3 - 3^3 = 8x^3 - 27$. Hệ số của $x^3$ là $8$."
+      },
+      {
+        "id": "sa-8.8.3",
+        "badge": "Câu 3 (TH) - Tính nhanh giá trị biểu thức",
+        "prompt": "Tính giá trị của biểu thức $P = (x - 2)(x^2 + 2x + 4)$ tại $x = 12$.",
+        "correctAnswer": "1720",
+        "acceptableAnswers": [
+          "1720",
+          "1.720",
+          "một nghìn bảy trăm hai mươi"
+        ],
+        "explanation": "$P = x^3 - 8$. Tại $x = 12$: $P = 12^3 - 8 = 1728 - 8 = 1720$."
+      },
+      {
+        "id": "sa-8.8.4",
+        "badge": "Câu 4 (TH) - Tìm tổng hệ số trong đẳng thức",
+        "prompt": "Cho đẳng thức $(3x + 1)(9x^2 - 3x + 1) = ax^3 + b$. Giá trị của $a + b$ bằng bao nhiêu?",
+        "correctAnswer": "28",
+        "acceptableAnswers": [
+          "28",
+          "hai mươi tám"
+        ],
+        "explanation": "$(3x + 1)(9x^2 - 3x + 1) = (3x)^3 + 1^3 = 27x^3 + 1$. Do đó $a = 27, b = 1 \\Rightarrow a + b = 28$."
+      },
+      {
+        "id": "sa-8.8.5",
+        "badge": "Câu 5 (VD) - Tìm x thỏa mãn phương trình",
+        "prompt": "Tìm giá trị của $x$ thỏa mãn phương trình: $(x + 1)(x^2 - x + 1) - x(x^2 - 4) = 9$.",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "$(x^3 + 1) - (x^3 - 4x) = 9 \\Leftrightarrow 4x + 1 = 9 \\Leftrightarrow 4x = 8 \\Leftrightarrow x = 2$."
+      },
+      {
+        "id": "sa-8.8.6",
+        "badge": "Câu 6 (VD - Thực tế) - Thể tích kim loại còn lại",
+        "prompt": "Một khối kim loại hình lập phương đặc cạnh $6\\text{ cm}$ bị khoét rỗng một khối lập phương cạnh $4\\text{ cm}$. Thể tích phần kim loại còn lại bằng bao nhiêu $\\text{cm}^3$?",
+        "correctAnswer": "152",
+        "acceptableAnswers": [
+          "152",
+          "152cm3",
+          "152 cm3"
+        ],
+        "explanation": "Thể tích phần kim loại còn lại là: $V = 6^3 - 4^3 = 216 - 64 = 152\\text{ (cm}^3\\text{)}$."
+      }
+    ]
+  },
 };

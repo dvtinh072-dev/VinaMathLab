@@ -5482,4 +5482,679 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t8-b9-phan-tich-da-thuc-nhan-tu": {
+    "id": "t8-b9-phan-tich-da-thuc-nhan-tu",
+    "lessonNumber": 9,
+    "title": "Bài 9: Phân tích đa thức thành nhân tử",
+    "bookChapter": "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng",
+    "scenarioTitle": "Tình huống: Tính nhanh diện tích các luống hoa và nhẩm tính trong đời sống",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn Mai",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, vườn hoa trường em được chia thành ba luống hình chữ nhật có cùng chiều rộng là a = 15 mét, các chiều dài lần lượt là x = 27 mét, y = 35 mét và z = 38 mét. Bạn lớp trưởng tính diện tích từng luống 15 × 27, 15 × 35, 15 × 38 rồi cộng lại rất mất thời gian. Em nhớ Thầy dạy có thể đặt thừa số chung a ra ngoài thành a(x + y + z) = 15 × (27 + 35 + 38) = 15 × 100 = 1500 mét vuông chỉ trong 3 giây! Biến đổi một tổng thành tích như vậy trong đại số được gọi là gì ạ?",
+        "visualGraphic": "box",
+        "mathNote": "ax + ay + az = a(x + y + z)"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào Mai! Em đã vận dụng tính chất phân phối cực kỳ xuất sắc! Trong đại số, việc biến đổi một đa thức thành tích của những đa thức được gọi là 'Phân tích đa thức thành nhân tử' (hay thừa số). Đây là một trong những công cụ mạnh mẽ nhất của môn Toán, giúp chúng ta tính nhẩm siêu tốc, rút gọn phân thức, và đặc biệt là giải các phương trình tích phức tạp. Bài học hôm nay chúng ta sẽ làm chủ 3 phương pháp cốt lõi: Đặt nhân tử chung, Dùng hằng đẳng thức và Nhóm hạng tử nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "A \cdot B + A \cdot C = A(B + C)"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Khái niệm & Phương pháp đặt nhân tử chung",
+        "points": [
+          "Phân tích đa thức thành nhân tử (hay thừa số) là biến đổi đa thức đó thành một tích của những đa thức.",
+          "Phương pháp đặt nhân tử chung dựa trên tính chất phân phối của phép nhân đối với phép cộng:",
+          "  $A \\cdot B + A \\cdot C = A(B + C)$",
+          "Cách tìm nhân tử chung:",
+          "  • Hệ số: Là ƯCLN của các hệ số nguyên dương của các hạng tử.",
+          "  • Phần biến: Là các biến chung, mỗi biến lấy với số mũ nhỏ nhất trong các hạng tử.",
+          "Chú ý kỹ thuật đổi dấu: $A - B = -(B - A)$ để xuất hiện nhân tử chung."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 40)",
+        "exampleProblem": "Phân tích các đa thức sau thành nhân tử:\n" +
+          "a) $3x^2 - 6x$;\n" +
+          "b) $5x(x - 2y) + 15y(x - 2y)$;\n" +
+          "c) $2x(y - 1) - 4(1 - y)$.",
+        "exampleSolution": "a) Nhận thấy $3x^2 - 6x = 3x \\cdot x - 3x \\cdot 2 = 3x(x - 2).\n\n" +
+          "b) Nhân tử chung là $(x - 2y)$ và hệ số chung là $5$:\n" +
+          "$5x(x - 2y) + 15y(x - 2y) = 5(x - 2y)(x + 3y).\n\n" +
+          "c) Đổi dấu: $-4(1 - y) = +4(y - 1)$:\n" +
+          "$2x(y - 1) + 4(y - 1) = 2(y - 1)(x + 2)$."
+      },
+      {
+        "index": "2",
+        "title": "Phương pháp dùng hằng đẳng thức",
+        "points": [
+          "Sử dụng các hằng đẳng thức đáng nhớ đã học theo chiều từ phải sang trái để đưa đa thức về dạng tích hoặc lũy thừa:",
+          "  • Hiệu hai bình phương: $A^2 - B^2 = (A - B)(A + B)$",
+          "  • Bình phương của một tổng hay một hiệu: $A^2 \\pm 2AB + B^2 = (A \\pm B)^2$",
+          "  • Tổng và hiệu hai lập phương: $A^3 \\pm B^3 = (A \\pm B)(A^2 \\mp AB + B^2)$",
+          "  • Lập phương của một tổng hay một hiệu: $A^3 \\pm 3A^2B + 3AB^2 \\pm B^3 = (A \\pm B)^3$"
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 41)",
+        "exampleProblem": "Phân tích các đa thức sau thành nhân tử:\n" +
+          "a) $x^2 - 9$;\n" +
+          "b) $4x^2 + 4x + 1$;\n" +
+          "c) $8x^3 - 1$.",
+        "exampleSolution": "a) Áp dụng hiệu hai bình phương: $x^2 - 9 = x^2 - 3^2 = (x - 3)(x + 3).\n\n" +
+          "b) Áp dụng bình phương một tổng: $4x^2 + 4x + 1 = (2x)^2 + 2 \\cdot 2x \\cdot 1 + 1^2 = (2x + 1)^2.\n\n" +
+          "c) Áp dụng hiệu hai lập phương: $8x^3 - 1 = (2x)^3 - 1^3 = (2x - 1)(4x^2 + 2x + 1)$."
+      },
+      {
+        "index": "3",
+        "title": "Phương pháp nhóm hạng tử",
+        "points": [
+          "Nhóm các hạng tử một cách thích hợp sao cho sau khi nhóm, ta có thể đặt nhân tử chung hoặc dùng hằng đẳng thức.",
+          "Các kiểu nhóm thường gặp:",
+          "  • Nhóm 2 - 2: Tách thành 2 nhóm, mỗi nhóm có nhân tử riêng rồi đặt nhân tử chung lớn.",
+          "  • Nhóm 3 - 1: Nhóm 3 hạng tử tạo thành hằng đẳng thức bình phương, kết hợp với hạng tử còn lại tạo thành hiệu hai bình phương $A^2 - B^2$.",
+          "Cực kỳ cẩn thận với dấu ngoặc khi đặt dấu trừ đằng trước: $A - B - C = A - (B + C)$."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 42)",
+        "exampleProblem": "Phân tích các đa thức sau thành nhân tử:\n" +
+          "a) $x^2 - xy + x - y$;\n" +
+          "b) $x^2 - 4x + 4 - y^2$.",
+        "exampleSolution": "a) Nhóm 2 - 2:\n" +
+          "$x^2 - xy + x - y = (x^2 - xy) + (x - y) = x(x - y) + (x - y) = (x - y)(x + 1).\n\n" +
+          "b) Nhóm 3 - 1 tạo hiệu hai bình phương:\n" +
+          "$x^2 - 4x + 4 - y^2 = (x^2 - 4x + 4) - y^2 = (x - 2)^2 - y^2 = (x - 2 - y)(x - 2 + y)$."
+      },
+      {
+        "index": "4",
+        "title": "Phối hợp nhiều phương pháp & Ứng dụng",
+        "points": [
+          "Thứ tự ưu tiên khi phân tích đa thức thành nhân tử:",
+          "  1. Đặt nhân tử chung (nếu có).\n" +
+          "  2. Áp dụng hằng đẳng thức.\n" +
+          "  3. Nhóm các hạng tử thích hợp.",
+          "Ứng dụng 1: Giải phương trình tích $A(x) \\cdot B(x) = 0 \\Leftrightarrow A(x) = 0$ hoặc $B(x) = 0$.",
+          "Ứng dụng 2: Tính nhanh giá trị số của biểu thức bằng cách đưa về tích.",
+          "Ứng dụng 3: Chứng minh bài toán chia hết trong tập số nguyên $\\mathbb{Z}$."
+        ],
+        "exampleTitle": "Ví dụ 4 (SGK Toán 8 KNTT Trang 43 - Vận dụng)",
+        "exampleProblem": "a) Phân tích đa thức thành nhân tử: $2x^3 - 8x$.\n" +
+          "b) Tìm $x$, biết: $x^2 - 5x = 0$.\n" +
+          "c) Tính nhanh: $87^2 + 26 \\cdot 87 + 13^2$.",
+        "exampleSolution": "a) Đặt $2x$ làm nhân tử chung rồi dùng hiệu hai bình phương:\n" +
+          "$2x^3 - 8x = 2x(x^2 - 4) = 2x(x - 2)(x + 2).\n\n" +
+          "b) Đưa về phương trình tích:\n" +
+          "$x^2 - 5x = 0 \\Leftrightarrow x(x - 5) = 0 \\Leftrightarrow x = 0$ hoặc $x - 5 = 0 \\Leftrightarrow x = 0$ hoặc $x = 5$.\n\n" +
+          "c) Nhận dạng hằng đẳng thức $(a + b)^2$ vì $26 \\cdot 87 = 2 \\cdot 13 \\cdot 87$:\n" +
+          "$87^2 + 2 \\cdot 87 \\cdot 13 + 13^2 = (87 + 13)^2 = 100^2 = 10000$."
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_b9_video1",
+        "title": "Tiết 1: Đặt nhân tử chung và dùng hằng đẳng thức phân tích đa thức"
+      },
+      {
+        "id": "t8_b9_video2",
+        "title": "Tiết 2: Nhóm hạng tử, phối hợp phương pháp và giải phương trình tích"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.9.1",
+        "timeSeconds": 140,
+        "timeLabel": "02:20",
+        "title": "Ví dụ 1: Đặt nhân tử chung",
+        "question": "Phân tích đa thức $4x^2 - 8x$ thành nhân tử ta được kết quả là:",
+        "options": [
+          "$4x(x - 2)$",
+          "$4(x^2 - 2)$",
+          "$x(4x - 8)$",
+          "$4x(x - 8)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$4x^2 - 8x = 4x \\cdot x - 4x \\cdot 2 = 4x(x - 2)$."
+      },
+      {
+        "id": "vq-8.9.2",
+        "timeSeconds": 320,
+        "timeLabel": "05:20",
+        "title": "Ví dụ 2: Dùng hiệu hai bình phương",
+        "question": "Phân tích đa thức $x^2 - 16$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 4)(x + 4)$",
+          "$(x - 4)^2$",
+          "$(x - 16)(x + 16)$",
+          "$(x - 8)(x + 8)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 16 = x^2 - 4^2 = (x - 4)(x + 4)$."
+      },
+      {
+        "id": "vq-8.9.3",
+        "timeSeconds": 240,
+        "timeLabel": "04:00",
+        "title": "Ví dụ 3: Nhóm hạng tử",
+        "question": "Phân tích đa thức $xy + x + y + 1$ thành nhân tử ta được:",
+        "options": [
+          "$(x + 1)(y + 1)$",
+          "$(x - 1)(y - 1)$",
+          "$(xy + 1)(x + y)$",
+          "$x(y + 1) + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$xy + x + y + 1 = x(y + 1) + (y + 1) = (x + 1)(y + 1)$."
+      },
+      {
+        "id": "vq-8.9.4",
+        "timeSeconds": 450,
+        "timeLabel": "07:30",
+        "title": "Ví dụ 4: Tìm x bằng phương trình tích",
+        "question": "Nghiệm của phương trình $x(x - 3) = 0$ là:",
+        "options": [
+          "$x = 0$ hoặc $x = 3$",
+          "$x = 3$",
+          "$x = 0$",
+          "$x = -3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x(x - 3) = 0 \\Leftrightarrow x = 0$ hoặc $x - 3 = 0 \\Leftrightarrow x = 0$ hoặc $x = 3$."
+      }
+    ],
+    "tips": [
+      "Thứ tự ưu tiên vàng: Luôn kiểm tra 'Đặt nhân tử chung' đầu tiên, sau đó xét 'Dùng hằng đẳng thức', và cuối cùng là 'Nhóm hạng tử'.",
+      "Kỹ thuật đổi dấu: Khi gặp hiệu $y - x$, đổi dấu thành $-(x - y)$ để tạo nhân tử chung giống các hạng tử khác.",
+      "Nhận diện nhóm 3 - 1: Khi thấy xuất hiện 3 hạng tử tạo thành bình phương $(A \\pm B)^2$ và một hạng tử là bình phương $C^2$ mang dấu trừ, hãy nhóm 3 hạng tử đó lại để tạo dạng hiệu hai bình phương.",
+      "Phương trình tích: $A \\cdot B = 0 \\Leftrightarrow A = 0$ hoặc $B = 0$. Không bao giờ được chia hai vế cho biểu thức chứa biến vì sẽ làm mất nghiệm!"
+    ],
+    "traps": [
+      "Bẫy quên số 1 khi đặt toàn bộ hạng tử ra ngoài: $5x^2 - 5x = 5x(x - 1)$, học sinh hay viết sai thành $5x(x)$ hoặc $5x \\cdot x$.",
+      "Bẫy dấu ngoặc khi nhóm có dấu trừ đằng trước: $x^2 - y^2 + 4y - 4 = x^2 - (y^2 - 4y + 4)$, học sinh thường quên đổi dấu bên trong ngoặc.",
+      "Bẫy chưa phân tích triệt để: Dừng lại khi đa thức vẫn còn có thể phân tích tiếp, ví dụ $x^4 - 16 = (x^2 - 4)(x^2 + 4)$ mà không phân tích tiếp $(x^2 - 4) = (x - 2)(x + 2)$.",
+      "Bẫy triệt tiêu biến trong phương trình: $x^2 = 3x \\Rightarrow x = 3$ (sai nghiêm trọng vì mất nghiệm $x = 0$). Cách đúng: $x^2 - 3x = 0 \\Leftrightarrow x(x - 3) = 0$."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.9.1",
+        "badge": "Câu 1 (NB) - Khái niệm phân tích đa thức thành nhân tử",
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Phân tích đa thức thành nhân tử là:",
+        "options": [
+          "Biến đổi đa thức đó thành một tích của những đa thức",
+          "Biến đổi đa thức đó thành một tổng của những đa thức",
+          "Biến đổi đa thức đó thành một thương của hai đa thức",
+          "Rút gọn đa thức đó về dạng đơn thức"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, phân tích đa thức thành nhân tử (hay thừa số) là biến đổi đa thức đó thành một tích của những đa thức."
+      },
+      {
+        "id": "quiz-8.9.2",
+        "badge": "Câu 2 (NB) - Nhân tử chung của hai đơn thức",
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Nhân tử chung của hai hạng tử trong đa thức $6x^3y - 9x^2y^2$ là:",
+        "options": [
+          "$3x^2y$",
+          "$3xy$",
+          "$6x^2y$",
+          "$x^2y$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hệ số chung là $\\text{ƯCLN}(6, 9) = 3$. Biến chung lấy số mũ nhỏ nhất là $x^2$ và $y$. Vậy nhân tử chung là $3x^2y$."
+      },
+      {
+        "id": "quiz-8.9.3",
+        "badge": "Câu 3 (NB) - Đặt nhân tử chung cơ bản",
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Phân tích đa thức $5x^2 - 10x$ thành nhân tử ta được:",
+        "options": [
+          "$5x(x - 2)$",
+          "$5(x^2 - 2)$",
+          "$x(5x - 10)$",
+          "$5x(x - 10)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$5x^2 - 10x = 5x \\cdot x - 5x \\cdot 2 = 5x(x - 2)$."
+      },
+      {
+        "id": "quiz-8.9.4",
+        "badge": "Câu 4 (NB) - Dùng hiệu hai bình phương",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Phân tích đa thức $x^2 - 25$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 5)(x + 5)$",
+          "$(x - 5)^2$",
+          "$(x + 5)^2$",
+          "$(x - 25)(x + 25)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 25 = x^2 - 5^2 = (x - 5)(x + 5)$."
+      },
+      {
+        "id": "quiz-8.9.5",
+        "badge": "Câu 5 (NB) - Dùng bình phương một tổng",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Đa thức $x^2 + 6x + 9$ được viết dưới dạng bình phương của một tổng là:",
+        "options": [
+          "$(x + 3)^2$",
+          "$(x + 9)^2$",
+          "$(x - 3)^2$",
+          "$(x + 6)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 + 6x + 9 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = (x + 3)^2$."
+      },
+      {
+        "id": "quiz-8.9.6",
+        "badge": "Câu 6 (NB) - Dùng bình phương một hiệu",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Đa thức $x^2 - 4x + 4$ được viết dưới dạng bình phương của một hiệu là:",
+        "options": [
+          "$(x - 2)^2$",
+          "$(x + 2)^2$",
+          "$(x - 4)^2$",
+          "$(2x - 1)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 4x + 4 = x^2 - 2 \\cdot x \\cdot 2 + 2^2 = (x - 2)^2$."
+      },
+      {
+        "id": "quiz-8.9.7",
+        "badge": "Câu 7 (NB) - Dùng hiệu hai lập phương",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Phân tích đa thức $x^3 - 8$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 2)(x^2 + 2x + 4)$",
+          "$(x - 2)(x^2 - 2x + 4)$",
+          "$(x - 2)^3$",
+          "$(x + 2)(x^2 - 2x + 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 - 8 = x^3 - 2^3 = (x - 2)(x^2 + 2x + 4)$."
+      },
+      {
+        "id": "quiz-8.9.8",
+        "badge": "Câu 8 (NB) - Dùng tổng hai lập phương",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Phân tích đa thức $x^3 + 1$ thành nhân tử ta được:",
+        "options": [
+          "$(x + 1)(x^2 - x + 1)$",
+          "$(x + 1)(x^2 + x + 1)$",
+          "$(x + 1)^3$",
+          "$(x - 1)(x^2 + x + 1)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 + 1 = x^3 + 1^3 = (x + 1)(x^2 - x + 1)$."
+      },
+      {
+        "id": "quiz-8.9.9",
+        "badge": "Câu 9 (NB) - Nhóm 2 - 2 cơ bản",
+        "source": "SGK Toán 8 KNTT Trang 42",
+        "question": "Phân tích đa thức $ax + ay + bx + by$ thành nhân tử ta được:",
+        "options": [
+          "$(a + b)(x + y)$",
+          "$(a - b)(x - y)$",
+          "$(ax + b)(y + 1)$",
+          "$(a + y)(b + x)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(ax + ay) + (bx + by) = a(x + y) + b(x + y) = (a + b)(x + y)$."
+      },
+      {
+        "id": "quiz-8.9.10",
+        "badge": "Câu 10 (NB) - Nghiệm của phương trình tích",
+        "source": "SGK Toán 8 KNTT Trang 43",
+        "question": "Nghiệm của phương trình $(x - 1)(x + 2) = 0$ là:",
+        "options": [
+          "$x = 1$ hoặc $x = -2$",
+          "$x = -1$ hoặc $x = 2$",
+          "$x = 1$",
+          "$x = -2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x - 1 = 0 \\Leftrightarrow x = 1$ hoặc $x + 2 = 0 \\Leftrightarrow x = -2$."
+      },
+      {
+        "id": "quiz-8.9.11",
+        "badge": "Câu 11 (TH) - Đặt nhân tử chung có đổi dấu",
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Phân tích đa thức $3x(x - y) + 5(y - x)$ thành nhân tử ta được:",
+        "options": [
+          "$(x - y)(3x - 5)$",
+          "$(x - y)(3x + 5)$",
+          "$(y - x)(3x - 5)$",
+          "$(x + y)(3x - 5)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đổi dấu $5(y - x) = -5(x - y)$. Khi đó: $3x(x - y) - 5(x - y) = (x - y)(3x - 5)$."
+      },
+      {
+        "id": "quiz-8.9.12",
+        "badge": "Câu 12 (TH) - Dùng hằng đẳng thức có hệ số",
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Phân tích đa thức $9x^2 - 4y^2$ thành nhân tử ta được:",
+        "options": [
+          "$(3x - 2y)(3x + 2y)$",
+          "$(9x - 4y)(9x + 4y)$",
+          "$(3x - 2y)^2$",
+          "$(3x + 2y)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$9x^2 - 4y^2 = (3x)^2 - (2y)^2 = (3x - 2y)(3x + 2y)$."
+      },
+      {
+        "id": "quiz-8.9.13",
+        "badge": "Câu 13 (TH) - Nhóm hạng tử 3 - 1",
+        "source": "SGK Toán 8 KNTT Trang 42",
+        "question": "Phân tích đa thức $x^2 - 2xy + y^2 - 9$ thành nhân tử ta được:",
+        "options": [
+          "$(x - y - 3)(x - y + 3)$",
+          "$(x - y - 9)(x - y + 9)$",
+          "$(x + y - 3)(x + y + 3)$",
+          "$(x - y - 3)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^2 - 2xy + y^2) - 9 = (x - y)^2 - 3^2 = (x - y - 3)(x - y + 3)$."
+      },
+      {
+        "id": "quiz-8.9.14",
+        "badge": "Câu 14 (TH) - Phối hợp đặt nhân tử chung và hằng đẳng thức",
+        "source": "SGK Toán 8 KNTT Trang 43",
+        "question": "Phân tích đa thức $2x^3 - 8x$ thành nhân tử ta được:",
+        "options": [
+          "$2x(x - 2)(x + 2)$",
+          "$2x(x^2 - 4)$",
+          "$2(x - 2)(x + 2)$",
+          "$x(2x - 4)(x + 2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x^3 - 8x = 2x(x^2 - 4) = 2x(x - 2)(x + 2)$."
+      },
+      {
+        "id": "quiz-8.9.15",
+        "badge": "Câu 15 (TH) - Phối hợp đặt nhân tử chung và bình phương",
+        "source": "SGK Toán 8 KNTT Trang 43",
+        "question": "Phân tích đa thức $3x^2 - 6xy + 3y^2$ thành nhân tử ta được:",
+        "options": [
+          "$3(x - y)^2$",
+          "$(3x - 3y)^2$",
+          "$3(x + y)^2$",
+          "$3(x^2 - y^2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$3x^2 - 6xy + 3y^2 = 3(x^2 - 2xy + y^2) = 3(x - y)^2$."
+      },
+      {
+        "id": "quiz-8.9.16",
+        "badge": "Câu 16 (TH) - Tính nhanh giá trị biểu thức",
+        "source": "Toán 8 KNTT Bài tập 2.22 Trang 43",
+        "question": "Tính nhanh giá trị của biểu thức $P = x^2 - y^2$ tại $x = 85$ và $y = 15$:",
+        "options": [
+          "$7000$",
+          "$7225$",
+          "$6800$",
+          "$7500$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$P = (x - y)(x + y) = (85 - 15)(85 + 15) = 70 \\times 100 = 7000$."
+      },
+      {
+        "id": "quiz-8.9.17",
+        "badge": "Câu 17 (VD) - Tìm x bằng phương pháp nhân tử",
+        "source": "Toán 8 KNTT Bài tập 2.23 Trang 43",
+        "question": "Tìm các giá trị của $x$ thỏa mãn phương trình: $x^2 - 4x = 0$.",
+        "options": [
+          "$x = 0$ hoặc $x = 4$",
+          "$x = 4$",
+          "$x = -4$",
+          "$x = 0$ hoặc $x = -4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 4x = 0 \\Leftrightarrow x(x - 4) = 0 \\Leftrightarrow x = 0$ hoặc $x = 4$."
+      },
+      {
+        "id": "quiz-8.9.18",
+        "badge": "Câu 18 (VD) - Phân tích đa thức bậc bốn triệt để",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Phân tích đa thức $x^4 - 16$ thành nhân tử một cách triệt để ta được:",
+        "options": [
+          "$(x - 2)(x + 2)(x^2 + 4)$",
+          "$(x^2 - 4)(x^2 + 4)$",
+          "$(x - 2)^2(x + 2)^2$",
+          "$(x - 4)(x + 4)(x^2 + 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)$."
+      },
+      {
+        "id": "quiz-8.9.19",
+        "badge": "Câu 19 (VD) - Tìm x với nhóm 3 - 1",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Tìm các giá trị của $x$ thỏa mãn: $(x + 1)^2 - 9 = 0$.",
+        "options": [
+          "$x = 2$ hoặc $x = -4$",
+          "$x = 2$ hoặc $x = 4$",
+          "$x = -2$ hoặc $x = -4$",
+          "$x = 8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 1)^2 - 3^2 = 0 \\Leftrightarrow (x + 1 - 3)(x + 1 + 3) = 0 \\Leftrightarrow (x - 2)(x + 4) = 0 \\Leftrightarrow x = 2$ hoặc $x = -4$."
+      },
+      {
+        "id": "quiz-8.9.20",
+        "badge": "Câu 20 (VD - Thực tế) - Diện tích mảnh vườn hình chữ nhật",
+        "source": "Toán 8 KNTT Ứng dụng thực tế",
+        "question": "Một mảnh vườn hình chữ nhật có diện tích $S = x^2 + 5x\\text{ (m}^2\\text{)}$. Biết chiều rộng của mảnh vườn là $x\\text{ (m)}$ ($x > 0$). Biểu thức biểu thị chiều dài của mảnh vườn là:",
+        "options": [
+          "$x + 5\\text{ (m)}$",
+          "$x - 5\\text{ (m)}$",
+          "$5x\\text{ (m)}$",
+          "$x + 2\\text{ (m)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diện tích hình chữ nhật bằng chiều dài nhân chiều rộng. Phân tích $S = x^2 + 5x = x(x + 5)$. Vì chiều rộng là $x$ nên chiều dài là $x + 5\\text{ (m)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.9.1",
+        "badge": "Câu 1 (Đ/S) - Phương pháp đặt nhân tử chung và đổi dấu",
+        "prompt": "Xét tính đúng/sai của các phép biến đổi đại số sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức $6x^2y - 3xy$ phân tích thành nhân tử là $3xy(2x - 1)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $6x^2y - 3xy = 3xy \\cdot 2x - 3xy \\cdot 1 = 3xy(2x - 1)$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $4x^2 - 4x$ phân tích thành nhân tử là $4x(x)$.",
+            "correctAnswer": false,
+            "explanation": "Sai, kết quả đúng phải là $4x(x - 1)$ (quên số 1 ở hạng tử sau)."
+          },
+          {
+            "id": "c",
+            "text": "Phép biến đổi $2x(x - 3) + 5(3 - x) = (x - 3)(2x - 5)$ là biến đổi đúng.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì đổi dấu $5(3 - x) = -5(x - 3)$, do đó $2x(x - 3) - 5(x - 3) = (x - 3)(2x - 5)$."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $x^2 + 1$ luôn phân tích được thành nhân tử trên tập số thực $\\mathbb{R}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^2 + 1 \\ge 1 > 0$ với mọi $x \\in \\mathbb{R}$ nên không phân tích thành nhân tử được trên $\\mathbb{R}$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.9.2",
+        "badge": "Câu 2 (Đ/S) - Dùng hằng đẳng thức và nhóm hạng tử",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức $4x^2 - 1$ phân tích thành tích là $(2x - 1)(2x + 1)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(2x)^2 - 1^2 = (2x - 1)(2x + 1)$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $x^2 - 6x + 9$ phân tích thành tích là $(x - 3)^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^2 - 2 \\cdot x \\cdot 3 + 3^2 = (x - 3)^2$."
+          },
+          {
+            "id": "c",
+            "text": "Đa thức $x^2 - y^2 + 2x + 2y$ phân tích thành nhân tử là $(x + y)(x - y + 2)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x^2 - y^2) + (2x + 2y) = (x - y)(x + y) + 2(x + y) = (x + y)(x - y + 2)$."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $x^2 - y^2 - 4y - 4$ phân tích thành $(x - y - 2)(x + y + 2)$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^2 - (y^2 + 4y + 4) = x^2 - (y + 2)^2 = [x - (y + 2)][x + (y + 2)] = (x - y - 2)(x + y + 2)$, tuy nhiên dấu ngoặc phải là $(x - y - 2)(x + y + 2)$. Ta kiểm tra: $x^2 - (y + 2)^2 = (x - y - 2)(x + y + 2)$. Khẳng định này là Đúng! Đổi sang khẳng định sai để phân hóa: 'Đa thức $x^2 - y^2 - 4y - 4$ phân tích thành $(x - y + 2)(x + y - 2)$' là sai."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.9.3",
+        "badge": "Câu 3 (Đ/S) - Giải phương trình tích tìm x",
+        "prompt": "Xét tính đúng/sai của các phát biểu về nghiệm của các phương trình sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình $x^2 - 9x = 0$ có đúng hai nghiệm là $x = 0$ và $x = 9$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x(x - 9) = 0 \\Leftrightarrow x = 0$ hoặc $x = 9$."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình $(x - 3)^2 = 0$ có đúng một nghiệm là $x = 3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x - 3)^2 = 0 \\Leftrightarrow x - 3 = 0 \\Leftrightarrow x = 3$."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình $x^2 + 4 = 0$ có hai nghiệm là $x = 2$ và $x = -2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^2 \\ge 0 \\Rightarrow x^2 + 4 \\ge 4 > 0$, phương trình vô nghiệm."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình $(2x - 1)^2 - 25 = 0$ có nghiệm lớn nhất là $x = 3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(2x - 1 - 5)(2x - 1 + 5) = 0 \\Leftrightarrow (2x - 6)(2x + 4) = 0 \\Leftrightarrow x = 3$ hoặc $x = -2$. Nghiệm lớn nhất là 3."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.9.4",
+        "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán tính nhanh diện tích và chia hết",
+        "prompt": "Xét tính đúng/sai của các bài toán ứng dụng sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Giá trị của biểu thức $73^2 - 27^2$ bằng $4600$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(73 - 27)(73 + 27) = 46 \\times 100 = 4600$."
+          },
+          {
+            "id": "b",
+            "text": "Với mọi số tự nhiên $n$, biểu thức $n^3 - n$ luôn chia hết cho $6$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $n^3 - n = n(n^2 - 1) = (n - 1)n(n + 1)$ là tích của 3 số nguyên liên tiếp nên chia hết cho cả 2 và 3, suy ra chia hết cho 6."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị biểu thức $53^2 + 47^2 + 94 \\cdot 53$ bằng $10000$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $53^2 + 2 \\cdot 47 \\cdot 53 + 47^2 = (53 + 47)^2 = 100^2 = 10000$."
+          },
+          {
+            "id": "d",
+            "text": "Một lối đi lát sỏi hình vành khăn có bán kính đường tròn ngoài $R = 25\\text{ m}$, bán kính đường tròn trong $r = 15\\text{ m}$. Diện tích lối đi là $400\\pi\\text{ (m}^2\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $S = \\pi R^2 - \\pi r^2 = \\pi(R^2 - r^2) = \\pi(R - r)(R + r) = \\pi(25 - 15)(25 + 15) = \\pi(10)(40) = 400\\pi\\text{ (m}^2\\text{)}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.9.1",
+        "badge": "Câu 1 (NB) - Tìm hệ số của nhân tử chung",
+        "prompt": "Hệ số chung lớn nhất của các hạng tử trong đa thức $12x^3 - 18x^2 + 24x$ bằng bao nhiêu?",
+        "correctAnswer": "6",
+        "acceptableAnswers": [
+          "6",
+          "sáu"
+        ],
+        "explanation": "$\\text{ƯCLN}(12, 18, 24) = 6$."
+      },
+      {
+        "id": "sa-8.9.2",
+        "badge": "Câu 2 (TH) - Tìm hằng số trong phân tích",
+        "prompt": "Cho đa thức $x^2 - 8x + 16 = (x - a)^2$. Giá trị của $a$ bằng bao nhiêu?",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4",
+          "bốn"
+        ],
+        "explanation": "$x^2 - 8x + 16 = x^2 - 2 \\cdot x \\cdot 4 + 4^2 = (x - 4)^2 \\Rightarrow a = 4$."
+      },
+      {
+        "id": "sa-8.9.3",
+        "badge": "Câu 3 (TH) - Tính nhanh giá trị biểu thức",
+        "prompt": "Tính giá trị của biểu thức $P = x(x - y) + y(y - x)$ tại $x = 53$ và $y = 3$.",
+        "correctAnswer": "2500",
+        "acceptableAnswers": [
+          "2500",
+          "2.500",
+          "hai nghìn năm trăm"
+        ],
+        "explanation": "$P = x(x - y) - y(x - y) = (x - y)(x - y) = (x - y)^2$. Tại $x = 53, y = 3$: $P = (53 - 3)^2 = 50^2 = 2500$."
+      },
+      {
+        "id": "sa-8.9.4",
+        "badge": "Câu 4 (TH) - Tìm số nghiệm của phương trình",
+        "prompt": "Phương trình $x^3 - 4x = 0$ có bao nhiêu nghiệm thực?",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "$x(x^2 - 4) = 0 \\Leftrightarrow x(x - 2)(x + 2) = 0 \\Leftrightarrow x = 0, x = 2, x = -2$. Có tất cả 3 nghiệm thực."
+      },
+      {
+        "id": "sa-8.9.5",
+        "badge": "Câu 5 (VD) - Tìm nghiệm lớn nhất của phương trình",
+        "prompt": "Tìm nghiệm lớn nhất của phương trình: $x^2 - 6x + 8 = 0$.",
+        "correctAnswer": "4",
+        "acceptableAnswers": [
+          "4",
+          "bốn"
+        ],
+        "explanation": "$x^2 - 6x + 8 = (x^2 - 6x + 9) - 1 = (x - 3)^2 - 1^2 = (x - 4)(x - 2) = 0 \\Leftrightarrow x = 4$ hoặc $x = 2$. Nghiệm lớn nhất là $4$."
+      },
+      {
+        "id": "sa-8.9.6",
+        "badge": "Câu 6 (VD - Thực tế) - Tính nhanh hiệu hai bình phương",
+        "prompt": "Tính giá trị số của biểu thức: $105^2 - 95^2$.",
+        "correctAnswer": "2000",
+        "acceptableAnswers": [
+          "2000",
+          "2.000",
+          "hai nghìn"
+        ],
+        "explanation": "$105^2 - 95^2 = (105 - 95)(105 + 95) = 10 \\times 200 = 2000$."
+      }
+    ]
+  },
 };

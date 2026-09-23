@@ -2522,4 +2522,293 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
       }
     ]
   },
+  "t8-b9-phan-tich-da-thuc-nhan-tu": {
+    "quizQuestions": [
+      {
+        "id": "ai-8.9.1",
+        "badge": "Luyện thêm 1 (NB) - Đặt nhân tử chung đơn giản",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Phân tích đa thức $7x^2 - 14x$ thành nhân tử ta được:",
+        "options": [
+          "$7x(x - 2)$",
+          "$7(x^2 - 2)$",
+          "$x(7x - 14)$",
+          "$7x(x - 14)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$7x^2 - 14x = 7x \\cdot x - 7x \\cdot 2 = 7x(x - 2)$."
+      },
+      {
+        "id": "ai-8.9.2",
+        "badge": "Luyện thêm 2 (NB) - Dùng hiệu hai bình phương",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Phân tích đa thức $x^2 - 49$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 7)(x + 7)$",
+          "$(x - 7)^2$",
+          "$(x + 7)^2$",
+          "$(x - 49)(x + 49)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 49 = x^2 - 7^2 = (x - 7)(x + 7)$."
+      },
+      {
+        "id": "ai-8.9.3",
+        "badge": "Luyện thêm 3 (NB) - Dùng bình phương một tổng",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Đa thức $x^2 + 10x + 25$ được phân tích thành:",
+        "options": [
+          "$(x + 5)^2$",
+          "$(x - 5)^2$",
+          "$(x + 25)^2$",
+          "$(x + 10)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 + 2 \\cdot x \\cdot 5 + 5^2 = (x + 5)^2$."
+      },
+      {
+        "id": "ai-8.9.4",
+        "badge": "Luyện thêm 4 (NB) - Dùng bình phương một hiệu",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 41",
+        "question": "Đa thức $4x^2 - 12x + 9$ được phân tích thành:",
+        "options": [
+          "$(2x - 3)^2$",
+          "$(2x + 3)^2$",
+          "$(4x - 9)^2$",
+          "$(2x - 9)^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x)^2 - 2(2x)(3) + 3^2 = (2x - 3)^2$."
+      },
+      {
+        "id": "ai-8.9.5",
+        "badge": "Luyện thêm 5 (TH) - Đặt nhân tử chung có đổi dấu",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 40",
+        "question": "Phân tích đa thức $x(x - 2) + 3(2 - x)$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 2)(x - 3)$",
+          "$(x - 2)(x + 3)$",
+          "$(x + 2)(x - 3)$",
+          "$(2 - x)(x - 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đổi dấu $3(2 - x) = -3(x - 2)$. Khi đó $x(x - 2) - 3(x - 2) = (x - 2)(x - 3)$."
+      },
+      {
+        "id": "ai-8.9.6",
+        "badge": "Luyện thêm 6 (TH) - Nhóm 2 - 2",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 42",
+        "question": "Phân tích đa thức $x^2 - xy + 2x - 2y$ thành nhân tử ta được:",
+        "options": [
+          "$(x - y)(x + 2)$",
+          "$(x + y)(x - 2)$",
+          "$(x - y)(x - 2)$",
+          "$(x + y)(x + 2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x(x - y) + 2(x - y) = (x - y)(x + 2)$."
+      },
+      {
+        "id": "ai-8.9.7",
+        "badge": "Luyện thêm 7 (TH) - Nhóm 3 - 1",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 42",
+        "question": "Phân tích đa thức $x^2 - 4y^2 + 4y - 1$ thành nhân tử ta được:",
+        "options": [
+          "$(x - 2y + 1)(x + 2y - 1)$",
+          "$(x - 2y - 1)(x + 2y + 1)$",
+          "$(x - 2y + 1)^2$",
+          "$(x - 4y + 1)(x + 4y - 1)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - (4y^2 - 4y + 1) = x^2 - (2y - 1)^2 = [x - (2y - 1)][x + (2y - 1)] = (x - 2y + 1)(x + 2y - 1)$."
+      },
+      {
+        "id": "ai-8.9.8",
+        "badge": "Luyện thêm 8 (TH) - Tính nhanh giá trị biểu thức",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Bài tập 2.22 Trang 43",
+        "question": "Tính giá trị của biểu thức $M = x^2 - 2xy + y^2$ tại $x = 105$ và $y = 5$:",
+        "options": [
+          "$10000$",
+          "$1000$",
+          "$100$",
+          "$11000$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$M = (x - y)^2 = (105 - 5)^2 = 100^2 = 10000$."
+      },
+      {
+        "id": "ai-8.9.9",
+        "badge": "Luyện thêm 9 (VD) - Tìm x bằng phương trình tích",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Bài tập 2.23 Trang 43",
+        "question": "Nghiệm của phương trình $2x(x - 3) - (x - 3) = 0$ là:",
+        "options": [
+          "$x = 3$ hoặc $x = \\frac{1}{2}$",
+          "$x = 3$ hoặc $x = -\\frac{1}{2}$",
+          "$x = 3$ hoặc $x = 2$",
+          "$x = -3$ hoặc $x = \\frac{1}{2}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 3)(2x - 1) = 0 \\Leftrightarrow x = 3$ hoặc $x = \\frac{1}{2}$."
+      },
+      {
+        "id": "ai-8.9.10",
+        "badge": "Luyện thêm 10 (VD - Thực tế) - Diện tích sân gạch",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ứng dụng thực tế",
+        "question": "Một khoảng sân hình vuông cạnh $a = 65\\text{ m}$ có một bồn hoa hình vuông ở giữa cạnh $b = 35\\text{ m}$. Diện tích phần sân lát gạch xung quanh bồn hoa là:",
+        "options": [
+          "$3000\\text{ m}^2$",
+          "$3500\\text{ m}^2$",
+          "$4000\\text{ m}^2$",
+          "$2500\\text{ m}^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$S = a^2 - b^2 = (a - b)(a + b) = (65 - 35)(65 + 35) = 30 \\times 100 = 3000\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-8.9.1",
+        "badge": "Luyện thêm Đ/S 1 - Các phép phân tích thành nhân tử",
+        "prompt": "Xét tính đúng/sai của các phép phân tích đa thức thành nhân tử sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức $x^2 - 36$ phân tích thành tích là $(x - 6)(x + 6)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^2 - 6^2 = (x - 6)(x + 6)$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $x^2 + 4x + 4$ phân tích thành $(x + 2)^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x + 2)^2 = x^2 + 4x + 4$."
+          },
+          {
+            "id": "c",
+            "text": "Đa thức $3x^2 - 3$ phân tích thành $3(x - 1)$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $3x^2 - 3 = 3(x^2 - 1) = 3(x - 1)(x + 1)$ (chưa phân tích triệt để)."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $x^3 - 27$ phân tích thành $(x - 3)(x^2 + 3x + 9)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hằng đẳng thức hiệu hai lập phương $x^3 - 3^3 = (x - 3)(x^2 + 3x + 9)$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-8.9.2",
+        "badge": "Luyện thêm Đ/S 2 - Giải phương trình và tính nhanh",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Phương trình $x^2 - 25 = 0$ có hai nghiệm là $x = 5$ và $x = -5$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x - 5)(x + 5) = 0 \\Leftrightarrow x = \\pm 5$."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình $x^2 = 7x$ chỉ có duy nhất một nghiệm là $x = 7$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^2 - 7x = 0 \\Leftrightarrow x(x - 7) = 0$ có 2 nghiệm là $x = 0$ và $x = 7$."
+          },
+          {
+            "id": "c",
+            "text": "Giá trị của biểu thức $55^2 - 45^2$ bằng $1000$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(55 - 45)(55 + 45) = 10 \\times 100 = 1000$."
+          },
+          {
+            "id": "d",
+            "text": "Tích của hai số tự nhiên liên tiếp chia hết cho 2.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $n(n + 1)$ luôn chứa một số chẵn nên luôn chia hết cho 2."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-8.9.1",
+        "badge": "Câu 1 (NB) - Tìm nhân tử chung",
+        "prompt": "Hệ số chung lớn nhất của đa thức $15x^2 - 20x + 25$ bằng bao nhiêu?",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "năm"
+        ],
+        "explanation": "$\\text{ƯCLN}(15, 20, 25) = 5$."
+      },
+      {
+        "id": "ai-sa-8.9.2",
+        "badge": "Câu 2 (TH) - Tìm hằng số trong hằng đẳng thức",
+        "prompt": "Cho đẳng thức $x^2 - 10x + 25 = (x - a)^2$. Giá trị của $a$ bằng bao nhiêu?",
+        "correctAnswer": "5",
+        "acceptableAnswers": [
+          "5",
+          "năm"
+        ],
+        "explanation": "$x^2 - 10x + 25 = (x - 5)^2 \\Rightarrow a = 5$."
+      },
+      {
+        "id": "ai-sa-8.9.3",
+        "badge": "Câu 3 (TH) - Tính nhanh giá trị",
+        "prompt": "Tính giá trị của biểu thức $A = 75^2 - 25^2$.",
+        "correctAnswer": "5000",
+        "acceptableAnswers": [
+          "5000",
+          "5.000",
+          "năm nghìn"
+        ],
+        "explanation": "$A = (75 - 25)(75 + 25) = 50 \\times 100 = 5000$."
+      },
+      {
+        "id": "ai-sa-8.9.4",
+        "badge": "Câu 4 (TH) - Số nghiệm của phương trình",
+        "prompt": "Phương trình $x^2 - 16 = 0$ có bao nhiêu nghiệm thực?",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "$(x - 4)(x + 4) = 0 \\Leftrightarrow x = 4$ hoặc $x = -4$. Có đúng 2 nghiệm."
+      },
+      {
+        "id": "ai-sa-8.9.5",
+        "badge": "Câu 5 (VD) - Tìm nghiệm dương của phương trình",
+        "prompt": "Tìm nghiệm dương của phương trình: $x^2 - 9x = 0$.",
+        "correctAnswer": "9",
+        "acceptableAnswers": [
+          "9",
+          "chín"
+        ],
+        "explanation": "$x(x - 9) = 0 \\Leftrightarrow x = 0$ hoặc $x = 9$. Nghiệm dương là $9$."
+      },
+      {
+        "id": "ai-sa-8.9.6",
+        "badge": "Câu 6 (VD - Thực tế) - Diện tích lối đi",
+        "prompt": "Một cái ao hình vuông cạnh $20\\text{ m}$ được đào ở giữa một mảnh đất hình vuông cạnh $30\\text{ m}$. Diện tích đất còn lại để trồng cỏ bằng bao nhiêu mét vuông?",
+        "correctAnswer": "500",
+        "acceptableAnswers": [
+          "500",
+          "năm trăm",
+          "500m2",
+          "500 m2"
+        ],
+        "explanation": "$S = 30^2 - 20^2 = (30 - 20)(30 + 20) = 10 \\times 50 = 500\\text{ (m}^2\\text{)}$."
+      }
+    ]
+  },
 };

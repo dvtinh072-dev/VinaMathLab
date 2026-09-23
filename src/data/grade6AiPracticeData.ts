@@ -1462,38 +1462,6 @@ export const GRADE_6_AI_PRACTICE_DATA: { [lessonId: string]: QuizQuestion[] } = 
       "explanation": "BCNN(12, 15) = 60. Mẫu chung nhỏ nhất là 60."
     }
   ],
-  "t6-b17-phep-chia-het-so-nguyen": [
-    {
-      "id": "ai-17.1",
-      "badge": "Luyện tập 82",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tính thương phép chia hai số nguyên: (-45) : 9 = ?",
-      "options": [
-        "-5",
-        "5",
-        "-54",
-        "-36"
-      ],
-      "correctIndex": 0,
-      "explanation": "(-45) : 9 = -(45 : 9) = -5."
-    },
-    {
-      "id": "ai-17.2",
-      "badge": "Luyện tập 83",
-      "isAiGenerated": true,
-      "source": "Ngân hàng Trắc nghiệm & Chuyên đề Dạy thêm Toán 6 (Thư mục Anti/Tài Liệu Lớp 6)",
-      "question": "Tìm tất cả các ước nguyên của số 6:",
-      "options": [
-        "{-6; -3; -2; -1; 1; 2; 3; 6}",
-        "{1; 2; 3; 6}",
-        "{-6; -3; -2; -1}",
-        "{0; 1; 2; 3; 6}"
-      ],
-      "correctIndex": 0,
-      "explanation": "Ước của 6 trong ℤ gồm cả số âm và số dương: ±1; ±2; ±3; ±6."
-    }
-  ],
   "t6-b18-tam-giac-deu-hinh-vuong-luc-giac-deu": [
     {
       "id": "ai-18.1",

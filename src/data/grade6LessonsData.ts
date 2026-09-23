@@ -1851,49 +1851,6 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
   "t6-on-tap-chuong-1": GRADE_6_CHAPTER_1_REVIEW_LESSON,
   ...chapter2Lessons,
   ...chapter3Lessons,
-  "t6-b17-phep-chia-het-so-nguyen": {
-    "id": "t6-b17-phep-chia-het-so-nguyen",
-    "lessonNumber": 17,
-    "title": "Bài 17: Phép chia hết. Ước và bội của một số nguyên",
-    "bookChapter": "Chương III: Số nguyên",
-    "scenarioTitle": "Tình huống: Chia đều khoản nợ",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Các ước của số nguyên a gồm cả ước dương và ước âm."
-    ],
-    "traps": [
-      "Ư(6) = {±1; ±2; ±3; ±6} gồm 8 phần tử."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-17.1",
-        "badge": "Câu 1",
-        "question": "Tính thương phép chia hai số nguyên: (-45) : 9 = ?",
-        "options": [
-          "-5",
-          "5",
-          "-54",
-          "-36"
-        ],
-        "correctIndex": 0,
-        "explanation": "(-45) : 9 = -(45 : 9) = -5."
-      },
-      {
-        "id": "sgk-17.2",
-        "badge": "Câu 2",
-        "question": "Tìm tất cả các ước nguyên của số 6:",
-        "options": [
-          "{-6; -3; -2; -1; 1; 2; 3; 6}",
-          "{1; 2; 3; 6}",
-          "{-6; -3; -2; -1}",
-          "{0; 1; 2; 3; 6}"
-        ],
-        "correctIndex": 0,
-        "explanation": "Ước của 6 trong ℤ gồm cả số âm và số dương: ±1; ±2; ±3; ±6."
-      }
-    ]
-  },
   ...chapter4Lessons,
 
   "t6-b21-hinh-co-truc-doi-xung": {

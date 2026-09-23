@@ -2811,4 +2811,293 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
       }
     ]
   },
+  "t8-on-tap-chuong-2": {
+    "quizQuestions": [
+      {
+        "id": "ai-8.ot2.1",
+        "badge": "Luyện thêm 1 (NB) - Khai triển bình phương một tổng",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Khai triển biểu thức $(x + 5)^2$ ta được kết quả là:",
+        "options": [
+          "$x^2 + 10x + 25$",
+          "$x^2 + 25$",
+          "$x^2 + 5x + 25$",
+          "$x^2 + 10x + 10$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 5)^2 = x^2 + 2(x)(5) + 5^2 = x^2 + 10x + 25$."
+      },
+      {
+        "id": "ai-8.ot2.2",
+        "badge": "Luyện thêm 2 (NB) - Khai triển hiệu hai bình phương",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Khai triển tích $(3x - 1)(3x + 1)$ ta được:",
+        "options": [
+          "$9x^2 - 1$",
+          "$9x^2 + 1$",
+          "$3x^2 - 1$",
+          "$9x - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(3x)^2 - 1^2 = 9x^2 - 1$."
+      },
+      {
+        "id": "ai-8.ot2.3",
+        "badge": "Luyện thêm 3 (NB) - Lập phương một hiệu",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Khai triển hằng đẳng thức $(x - 2)^3$ ta được:",
+        "options": [
+          "$x^3 - 6x^2 + 12x - 8$",
+          "$x^3 - 8$",
+          "$x^3 - 6x^2 - 12x - 8$",
+          "$x^3 + 6x^2 - 12x + 8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 2)^3 = x^3 - 6x^2 + 12x - 8$."
+      },
+      {
+        "id": "ai-8.ot2.4",
+        "badge": "Luyện thêm 4 (NB) - Tổng hai lập phương",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Khai triển biểu thức $(x + 1)(x^2 - x + 1)$ ta được:",
+        "options": [
+          "$x^3 + 1$",
+          "$x^3 - 1$",
+          "$x^3 + 3x + 1$",
+          "$(x + 1)^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^3 + 1^3 = x^3 + 1$."
+      },
+      {
+        "id": "ai-8.ot2.5",
+        "badge": "Luyện thêm 5 (TH) - Đặt nhân tử chung",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Phân tích đa thức $7x^2 - 14x$ thành nhân tử:",
+        "options": [
+          "$7x(x - 2)$",
+          "$7(x^2 - 2)$",
+          "$x(7x - 14)$",
+          "$7x(x + 2)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$7x(x - 2)$."
+      },
+      {
+        "id": "ai-8.ot2.6",
+        "badge": "Luyện thêm 6 (TH) - Nhóm 2 - 2",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Phân tích đa thức $x^2 - xy + 4x - 4y$ thành nhân tử:",
+        "options": [
+          "$(x - y)(x + 4)$",
+          "$(x + y)(x - 4)$",
+          "$(x - y)(x - 4)$",
+          "$(x + y)(x + 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x(x - y) + 4(x - y) = (x - y)(x + 4)$."
+      },
+      {
+        "id": "ai-8.ot2.7",
+        "badge": "Luyện thêm 7 (TH) - Nhóm 3 - 1",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Phân tích đa thức $x^2 - 6x + 9 - y^2$ thành nhân tử:",
+        "options": [
+          "$(x - 3 - y)(x - 3 + y)$",
+          "$(x - 3 - y)^2$",
+          "$(x + 3 - y)(x + 3 + y)$",
+          "$(x - y - 3)(x - y + 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)$."
+      },
+      {
+        "id": "ai-8.ot2.8",
+        "badge": "Luyện thêm 8 (TH) - Tính nhanh giá trị biểu thức",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Tính nhanh giá trị của $78 \\cdot 82$:",
+        "options": [
+          "$6396$",
+          "$6400$",
+          "$6394$",
+          "$6404$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(80 - 2)(80 + 2) = 80^2 - 2^2 = 6400 - 4 = 6396$."
+      },
+      {
+        "id": "ai-8.ot2.9",
+        "badge": "Luyện thêm 9 (VD) - Tìm x bằng phương trình tích",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Nghiệm của phương trình $x^2 - 36 + (x - 6)(x + 1) = 0$ là:",
+        "options": [
+          "$x = 6$ hoặc $x = -\\frac{7}{2}$",
+          "$x = 6$ hoặc $x = 7$",
+          "$x = -6$ hoặc $x = \\frac{7}{2}$",
+          "$x = 6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 6)(x + 6) + (x - 6)(x + 1) = 0 \\Leftrightarrow (x - 6)(2x + 7) = 0 \\Leftrightarrow x = 6$ hoặc $x = -\\frac{7}{2}$."
+      },
+      {
+        "id": "ai-8.ot2.10",
+        "badge": "Luyện thêm 10 (VD - Thực tế) - Diện tích sân gạch",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Ôn tập Chương II",
+        "question": "Một khu đất hình vuông cạnh $50\\text{ m}$ có một hồ nước hình vuông cạnh $30\\text{ m}$ ở chính giữa. Diện tích đất xung quanh hồ bằng:",
+        "options": [
+          "$1600\\text{ m}^2$",
+          "$2000\\text{ m}^2$",
+          "$2500\\text{ m}^2$",
+          "$1200\\text{ m}^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$50^2 - 30^2 = (50 - 30)(50 + 30) = 20 \\times 80 = 1600\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-8.ot2.1",
+        "badge": "Luyện thêm Đ/S 1 - Khẳng định về hằng đẳng thức",
+        "prompt": "Xét tính đúng/sai của các phát biểu sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đẳng thức $(x + 4)^2 = x^2 + 8x + 16$ là đúng.",
+            "correctAnswer": true,
+            "explanation": "Đúng, bình phương một tổng."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $x^2 - 9$ phân tích thành $(x - 3)(x + 3)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hiệu hai bình phương."
+          },
+          {
+            "id": "c",
+            "text": "Đa thức $x^3 - 8$ phân tích thành $(x - 2)^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^3 - 8 = (x - 2)(x^2 + 2x + 4) \\ne (x - 2)^3$."
+          },
+          {
+            "id": "d",
+            "text": "Phương trình $x^2 = 9$ có hai nghiệm là $x = 3$ và $x = -3$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^2 - 9 = 0 \\Leftrightarrow x = \\pm 3$."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-8.ot2.2",
+        "badge": "Luyện thêm Đ/S 2 - Rút gọn và thực tế",
+        "prompt": "Xét tính đúng/sai của các bài toán sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Giá trị của biểu thức $(x + 2)^2 - (x - 2)^2$ bằng $8x$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $4x - (-4x) = 8x$."
+          },
+          {
+            "id": "b",
+            "text": "Giá trị của $65^2 - 35^2$ bằng $3000$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(65 - 35)(65 + 35) = 30 \\times 100 = 3000$."
+          },
+          {
+            "id": "c",
+            "text": "Một khối lập phương cạnh $3\\text{ m}$ có thể tích là $9\\text{ m}^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $V = 3^3 = 27\\text{ m}^3$."
+          },
+          {
+            "id": "d",
+            "text": "Với mọi $n \\in \\mathbb{N}$, số $n(n + 1)$ luôn chia hết cho 2.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tích 2 số tự nhiên liên tiếp luôn chẵn."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-8.ot2.1",
+        "badge": "Câu 1 (NB) - Hệ số tự do của bình phương",
+        "prompt": "Hệ số tự do trong khai triển $(x - 5)^2$ bằng bao nhiêu?",
+        "correctAnswer": "25",
+        "acceptableAnswers": [
+          "25",
+          "hai mươi lăm"
+        ],
+        "explanation": "$(-5)^2 = 25$."
+      },
+      {
+        "id": "ai-sa-8.ot2.2",
+        "badge": "Câu 2 (TH) - Tìm hằng số trong hằng đẳng thức",
+        "prompt": "Cho đa thức $x^2 - 12x + 36 = (x - a)^2$. Giá trị của $a$ bằng bao nhiêu?",
+        "correctAnswer": "6",
+        "acceptableAnswers": [
+          "6",
+          "sáu"
+        ],
+        "explanation": "$x^2 - 2(6)x + 6^2 = (x - 6)^2 \\Rightarrow a = 6$."
+      },
+      {
+        "id": "ai-sa-8.ot2.3",
+        "badge": "Câu 3 (TH) - Tính nhanh hiệu hai bình phương",
+        "prompt": "Tính giá trị số của biểu thức: $105^2 - 25$.",
+        "correctAnswer": "11000",
+        "acceptableAnswers": [
+          "11000",
+          "11.000",
+          "mười một nghìn"
+        ],
+        "explanation": "$105^2 - 5^2 = (105 - 5)(105 + 5) = 100 \\times 110 = 11000$."
+      },
+      {
+        "id": "ai-sa-8.ot2.4",
+        "badge": "Câu 4 (TH) - Số nghiệm của phương trình",
+        "prompt": "Phương trình $x(x - 2)(x + 2) = 0$ có bao nhiêu nghiệm thực?",
+        "correctAnswer": "3",
+        "acceptableAnswers": [
+          "3",
+          "ba"
+        ],
+        "explanation": "$x = 0, x = 2, x = -2$. Có 3 nghiệm."
+      },
+      {
+        "id": "ai-sa-8.ot2.5",
+        "badge": "Câu 5 (VD) - Tìm nghiệm dương của phương trình",
+        "prompt": "Tìm nghiệm dương của phương trình: $x^2 - 64 = 0$.",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "tám"
+        ],
+        "explanation": "$x^2 = 64 \\Leftrightarrow x = \\pm 8$. Nghiệm dương là $8$."
+      },
+      {
+        "id": "ai-sa-8.ot2.6",
+        "badge": "Câu 6 (VD - Thực tế) - Thể tích bể nước tăng thêm",
+        "prompt": "Một khối lập phương cạnh $4\\text{ m}$ có thể tích bằng bao nhiêu mét khối?",
+        "correctAnswer": "64",
+        "acceptableAnswers": [
+          "64",
+          "sáu mươi tư",
+          "64m3",
+          "64 m3"
+        ],
+        "explanation": "$V = 4^3 = 64\\text{ (m}^3\\text{)}$."
+      }
+    ]
+  },
 };

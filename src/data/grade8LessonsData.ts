@@ -6157,4 +6157,1660 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t8-on-tap-chuong-2": {
+    "id": "t8-on-tap-chuong-2",
+    "lessonNumber": 0,
+    "title": "Bài tập cuối chương II",
+    "bookChapter": "Chương II: Hằng đẳng thức đáng nhớ và ứng dụng (SGK Toán 8 KNTT - Tập 1)",
+    "scenarioTitle": "Luyện tập 3 đề ôn tập tổng hợp chuẩn cấu trúc Bộ GD&ĐT",
+    "scenarioFrames": [],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Hệ thống 7 hằng đẳng thức đáng nhớ",
+        "points": [
+          "1. Bình phương của một tổng: $(A + B)^2 = A^2 + 2AB + B^2$",
+          "2. Bình phương của một hiệu: $(A - B)^2 = A^2 - 2AB + B^2$",
+          "3. Hiệu hai bình phương: $A^2 - B^2 = (A - B)(A + B)$",
+          "4. Lập phương của một tổng: $(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$",
+          "5. Lập phương của một hiệu: $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$",
+          "6. Tổng hai lập phương: $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$",
+          "7. Hiệu hai lập phương: $A^3 - B^3 = (A - B)(A^2 + AB + B^2)$"
+        ],
+        "exampleTitle": "Ví dụ 1 (Tổng hợp khai triển và thu gọn)",
+        "exampleProblem": "a) Khai triển $(2x - 3y)^2$ và $(x + 2)^3$.\n" +
+          "b) Thu gọn biểu thức $M = (x - 1)(x^2 + x + 1) - (x + 1)(x^2 - x + 1)$.",
+        "exampleSolution": "a) Khai triển:\n" +
+          "• $(2x - 3y)^2 = (2x)^2 - 2(2x)(3y) + (3y)^2 = 4x^2 - 12xy + 9y^2.\n" +
+          "• $(x + 2)^3 = x^3 + 3x^2(2) + 3x(2^2) + 2^3 = x^3 + 6x^2 + 12x + 8.\n\n" +
+          "b) Áp dụng hiệu và tổng hai lập phương:\n" +
+          "$M = (x^3 - 1) - (x^3 + 1) = x^3 - 1 - x^3 - 1 = -2$."
+      },
+      {
+        "index": "2",
+        "title": "Các phương pháp phân tích đa thức thành nhân tử",
+        "points": [
+          "Phương pháp 1: Đặt nhân tử chung ($A \\cdot B + A \\cdot C = A(B + C)$).",
+          "Phương pháp 2: Dùng hằng đẳng thức (vận dụng 7 hằng đẳng thức theo chiều ngược lại).",
+          "Phương pháp 3: Nhóm hạng tử (nhóm 2 - 2, nhóm 3 - 1 tạo hiệu hai bình phương).",
+          "Thứ tự ưu tiên phối hợp: Đặt nhân tử chung $\\rightarrow$ Dùng hằng đẳng thức $\\rightarrow$ Nhóm hạng tử."
+        ],
+        "exampleTitle": "Ví dụ 2 (Phân tích đa thức thành nhân tử)",
+        "exampleProblem": "Phân tích các đa thức sau thành nhân tử:\n" +
+          "a) $3x^3 - 12x$;\n" +
+          "b) $x^2 - 2xy + y^2 - 16$;\n" +
+          "c) $x^2 - 5x + 6$.",
+        "exampleSolution": "a) $3x^3 - 12x = 3x(x^2 - 4) = 3x(x - 2)(x + 2).\n\n" +
+          "b) Nhóm 3 - 1: $(x^2 - 2xy + y^2) - 16 = (x - y)^2 - 4^2 = (x - y - 4)(x - y + 4).\n\n" +
+          "c) Tách hạng tử: $x^2 - 2x - 3x + 6 = x(x - 2) - 3(x - 2) = (x - 2)(x - 3)$."
+      },
+      {
+        "index": "3",
+        "title": "Ứng dụng giải phương trình tích và tính nhanh",
+        "points": [
+          "Giải phương trình tích: Đưa phương trình về dạng $A(x) \\cdot B(x) = 0 \\Leftrightarrow A(x) = 0$ hoặc $B(x) = 0$.",
+          "Tính nhanh giá trị biểu thức số bằng cách nhận dạng hằng đẳng thức tròn chục, tròn trăm: $(a \\pm b)^2, a^2 - b^2$.",
+          "Chứng minh giá trị biểu thức luôn dương, luôn âm hoặc không phụ thuộc biến."
+        ],
+        "exampleTitle": "Ví dụ 3 (Giải phương trình và tính nhanh)",
+        "exampleProblem": "a) Giải phương trình: $x^2 - 9 + (x + 3)(2x - 1) = 0$.\n" +
+          "b) Tính nhanh giá trị của $75^2 + 25^2 + 50 \\cdot 75$.",
+        "exampleSolution": "a) Biến đổi vế trái:\n" +
+          "$(x - 3)(x + 3) + (x + 3)(2x - 1) = 0 \\Leftrightarrow (x + 3)(x - 3 + 2x - 1) = 0\n" +
+          "\\Leftrightarrow (x + 3)(3x - 4) = 0 \\Leftrightarrow x = -3$ hoặc $x = \\frac{4}{3}.\n\n" +
+          "b) Nhận thấy $50 \\cdot 75 = 2 \\cdot 25 \\cdot 75$:\n" +
+          "$75^2 + 2 \\cdot 75 \\cdot 25 + 25^2 = (75 + 25)^2 = 100^2 = 10000$."
+      },
+      {
+        "index": "4",
+        "title": "Ứng dụng thực tế & Hình học",
+        "points": [
+          "Tính diện tích phần đất bao quanh, lối đi lát sỏi, diện tích vành khăn: $S = \\pi R^2 - \\pi r^2 = \\pi(R - r)(R + r)$.",
+          "Tính thể tích phần rỗng của khối lập phương hoặc khối hộp chữ nhật: $V = a^3 - b^3 = (a - b)(a^2 + ab + b^2)$.",
+          "Tối ưu hóa kích thước và chi phí sản xuất."
+        ],
+        "exampleTitle": "Ví dụ 4 (Bài toán thực tế)",
+        "exampleProblem": "Một hồ bơi hình chữ nhật có chiều dài $x + 4\\text{ (m)}$ và chiều rộng $x - 4\\text{ (m)}$ ($x > 4$).\n" +
+          "a) Viết đa thức biểu thị diện tích hồ bơi.\n" +
+          "b) Khi $x = 10\\text{ m}$, diện tích hồ bơi bằng bao nhiêu mét vuông?",
+        "exampleSolution": "a) Diện tích hồ bơi là:\n" +
+          "$S = (x + 4)(x - 4) = x^2 - 16\\text{ (m}^2\\text{)}.\n\n" +
+          "b) Thay $x = 10$ vào ta được:\n" +
+          "$S = 10^2 - 16 = 100 - 16 = 84\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_ot2_video1",
+        "title": "Tiết 1: Ôn tập 7 Hằng đẳng thức đáng nhớ và kỹ năng rút gọn"
+      },
+      {
+        "id": "t8_ot2_video2",
+        "title": "Tiết 2: Ôn tập phân tích đa thức thành nhân tử và giải phương trình tích"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.ot2.1",
+        "timeSeconds": 150,
+        "timeLabel": "02:30",
+        "title": "Ví dụ 1: Khai triển hiệu hai bình phương",
+        "question": "Khai triển của tích $(2x - 1)(2x + 1)$ là:",
+        "options": [
+          "$4x^2 - 1$",
+          "$4x^2 + 1$",
+          "$2x^2 - 1$",
+          "$4x - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x - 1)(2x + 1) = (2x)^2 - 1^2 = 4x^2 - 1$."
+      },
+      {
+        "id": "vq-8.ot2.2",
+        "timeSeconds": 340,
+        "timeLabel": "05:40",
+        "title": "Ví dụ 2: Nhận dạng hằng đẳng thức lập phương",
+        "question": "Thu gọn biểu thức $(x + 1)(x^2 - x + 1)$ ta được:",
+        "options": [
+          "$x^3 + 1$",
+          "$x^3 - 1$",
+          "$x^3 + 3x + 1$",
+          "$(x + 1)^3$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đây là hằng đẳng thức tổng hai lập phương: $x^3 + 1^3 = x^3 + 1$."
+      },
+      {
+        "id": "vq-8.ot2.3",
+        "timeSeconds": 210,
+        "timeLabel": "03:30",
+        "title": "Ví dụ 3: Phân tích đa thức thành nhân tử",
+        "question": "Phân tích đa thức $x^2 - 6x + 9 - y^2$ thành nhân tử:",
+        "options": [
+          "$(x - 3 - y)(x - 3 + y)$",
+          "$(x - 3 - y)^2$",
+          "$(x + 3 - y)(x + 3 + y)$",
+          "$(x - y - 3)(x - y + 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^2 - 6x + 9) - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)$."
+      },
+      {
+        "id": "vq-8.ot2.4",
+        "timeSeconds": 420,
+        "timeLabel": "07:00",
+        "title": "Ví dụ 4: Tìm x bằng phương trình tích",
+        "question": "Nghiệm của phương trình $x^2 - 4x = 0$ là:",
+        "options": [
+          "$x = 0$ hoặc $x = 4$",
+          "$x = 4$",
+          "$x = 0$",
+          "$x = -4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x(x - 4) = 0 \\Leftrightarrow x = 0$ hoặc $x = 4$."
+      }
+    ],
+    "tips": [
+      "Hệ thống 7 hằng đẳng thức: 3 hằng đẳng thức bậc 2 và 4 hằng đẳng thức bậc 3. Nhớ dấu đan xen ở hiệu bậc 3.",
+      "Thứ tự ưu tiên phân tích: Luôn tìm nhân tử chung trước, sau đó xét hằng đẳng thức, cuối cùng mới nhóm hạng tử.",
+      "Kỹ thuật tạo số tròn trăm khi tính nhanh: $87 \\times 113 = (100 - 13)(100 + 13) = 10000 - 169 = 9831$.",
+      "Giải phương trình tích: Luôn đưa về $A \\cdot B = 0$. Không được chia hai vế cho biểu thức chứa $x$."
+    ],
+    "traps": [
+      "Bẫy nhầm $(A + B)^2$ với $A^2 + B^2$: Đây là lỗi phổ biến nhất của học sinh (thiếu $2AB$).",
+      "Bẫy nhầm bình phương thiếu: $A^2 - AB + B^2$ (không có số 2) với $(A - B)^2 = A^2 - 2AB + B^2$.",
+      "Bẫy quên số 1 khi đặt nhân tử chung: $3x^2 - 3x = 3x(x - 1)$, rất dễ quên số 1.",
+      "Bẫy triệt tiêu ẩn trong phương trình: $x^2 = 5x \\Rightarrow x = 5$ (quên nghiệm $x = 0$)."
+    ],
+    "quizQuestions": [
+      {
+        "id": "otc2-d1-q1",
+        "badge": "Câu 1 (NB) - Khai triển bình phương một tổng",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Khai triển hằng đẳng thức $(x + 3)^2$ ta được kết quả là:",
+        "options": [
+          "$x^2 + 6x + 9$",
+          "$x^2 + 9$",
+          "$x^2 + 3x + 9$",
+          "$x^2 + 6x + 6$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 3)^2 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$."
+      },
+      {
+        "id": "otc2-d1-q2",
+        "badge": "Câu 2 (NB) - Khai triển hiệu hai bình phương",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Khai triển biểu thức $(2x - 1)(2x + 1)$ ta được:",
+        "options": [
+          "$4x^2 - 1$",
+          "$4x^2 + 1$",
+          "$2x^2 - 1$",
+          "$4x - 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x - 1)(2x + 1) = (2x)^2 - 1^2 = 4x^2 - 1$."
+      },
+      {
+        "id": "otc2-d1-q3",
+        "badge": "Câu 3 (NB) - Khai triển lập phương một tổng",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Khai triển hằng đẳng thức $(x + 1)^3$ ta được:",
+        "options": [
+          "$x^3 + 3x^2 + 3x + 1$",
+          "$x^3 + 1$",
+          "$x^3 + 3x + 1$",
+          "$x^3 + x^2 + x + 1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 1)^3 = x^3 + 3x^2 + 3x + 1$."
+      },
+      {
+        "id": "otc2-d1-q4",
+        "badge": "Câu 4 (NB) - Khai triển tổng hai lập phương",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Khai triển biểu thức $(x + 2)(x^2 - 2x + 4)$ ta được:",
+        "options": [
+          "$x^3 + 8$",
+          "$x^3 - 8$",
+          "$x^3 + 4$",
+          "$x^3 - 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x + 2)(x^2 - 2x + 4) = x^3 + 2^3 = x^3 + 8$."
+      },
+      {
+        "id": "otc2-d1-q5",
+        "badge": "Câu 5 (NB) - Đặt nhân tử chung",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Phân tích đa thức $6x^2 - 9x$ thành nhân tử ta được:",
+        "options": [
+          "$3x(2x - 3)$",
+          "$3(2x^2 - 3)$",
+          "$x(6x - 9)$",
+          "$3x(2x + 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$6x^2 - 9x = 3x(2x - 3)$."
+      },
+      {
+        "id": "otc2-d1-q6",
+        "badge": "Câu 6 (NB) - Dùng hiệu hai bình phương",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Đa thức $x^2 - 36$ phân tích thành tích là:",
+        "options": [
+          "$(x - 6)(x + 6)$",
+          "$(x - 6)^2$",
+          "$(x + 6)^2$",
+          "$(x - 18)(x + 18)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x^2 - 36 = x^2 - 6^2 = (x - 6)(x + 6)$."
+      },
+      {
+        "id": "otc2-d1-q7",
+        "badge": "Câu 7 (TH) - Khai triển bình phương có hệ số",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Khai triển hằng đẳng thức $(2x - 3y)^2$ ta được:",
+        "options": [
+          "$4x^2 - 12xy + 9y^2$",
+          "$4x^2 - 6xy + 9y^2$",
+          "$2x^2 - 12xy + 3y^2$",
+          "$4x^2 + 12xy + 9y^2$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(2x)^2 - 2(2x)(3y) + (3y)^2 = 4x^2 - 12xy + 9y^2$."
+      },
+      {
+        "id": "otc2-d1-q8",
+        "badge": "Câu 8 (TH) - Nhóm 2 - 2",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Phân tích đa thức $x^2 - xy + 3x - 3y$ thành nhân tử:",
+        "options": [
+          "$(x - y)(x + 3)$",
+          "$(x + y)(x - 3)$",
+          "$(x - y)(x - 3)$",
+          "$(x + y)(x + 3)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x(x - y) + 3(x - y) = (x - y)(x + 3)$."
+      },
+      {
+        "id": "otc2-d1-q9",
+        "badge": "Câu 9 (TH) - Nhóm 3 - 1",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Phân tích đa thức $x^2 - 4x + 4 - y^2$ thành nhân tử:",
+        "options": [
+          "$(x - 2 - y)(x - 2 + y)$",
+          "$(x - 2 - y)^2$",
+          "$(x + 2 - y)(x + 2 + y)$",
+          "$(x - y - 4)(x - y + 4)$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x^2 - 4x + 4) - y^2 = (x - 2)^2 - y^2 = (x - 2 - y)(x - 2 + y)$."
+      },
+      {
+        "id": "otc2-d1-q10",
+        "badge": "Câu 10 (TH) - Rút gọn biểu thức hằng đẳng thức",
+        "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+        "question": "Rút gọn biểu thức $A = (x + 2)^2 - (x - 2)^2$ ta được:",
+        "options": [
+          "$8x$",
+          "$4x$",
+          "$8$",
+          "$2x^2 + 8$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$A = (x^2 + 4x + 4) - (x^2 - 4x + 4) = 8x$."
+      },
+      {
+        "id": "otc2-d1-q11",
+        "badge": "Câu 11 (VD) - Tìm x bằng phương trình tích",
+        "source": "Toán 8 KNTT - Nâng cao",
+        "question": "Nghiệm của phương trình $x^2 - 16 + (x - 4)(2x + 1) = 0$ là:",
+        "options": [
+          "$x = 4$ hoặc $x = -\\frac{5}{3}$",
+          "$x = 4$ hoặc $x = -5$",
+          "$x = -4$ hoặc $x = \\frac{5}{3}$",
+          "$x = 4$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$(x - 4)(x + 4) + (x - 4)(2x + 1) = 0 \\Leftrightarrow (x - 4)(3x + 5) = 0 \\Leftrightarrow x = 4$ hoặc $x = -\\frac{5}{3}$."
+      },
+      {
+        "id": "otc2-d1-q12",
+        "badge": "Câu 12 (VD - Thực tế) - Diện tích lối đi xung quanh vườn",
+        "source": "Toán 8 KNTT - Ứng dụng thực tế",
+        "question": "Một khu vườn hình vuông cạnh $x\\text{ (m)}$. Người ta làm một lối đi xung quanh rộng $1\\text{ m}$. Đa thức biểu thị diện tích lối đi là:",
+        "options": [
+          "$4x - 4\\text{ (m}^2\\text{)}$",
+          "$4x + 4\\text{ (m}^2\\text{)}$",
+          "$2x - 1\\text{ (m}^2\\text{)}$",
+          "$4x\\text{ (m}^2\\text{)}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh phần đất trồng cây bên trong là $x - 2\\text{ (m)}$. Diện tích lối đi là: $x^2 - (x - 2)^2 = x^2 - (x^2 - 4x + 4) = 4x - 4\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "otc2-d1-tf1",
+        "badge": "Câu 1 (Đ/S) - Bảng hằng đẳng thức đáng nhớ",
+        "prompt": "Xét tính đúng/sai của các hằng đẳng thức sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đẳng thức $(A - B)^2 = A^2 - 2AB + B^2$ luôn đúng với mọi $A, B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là bình phương của một hiệu."
+          },
+          {
+            "id": "b",
+            "text": "Đẳng thức $(A - B)^3 = A^3 - B^3$ luôn đúng với mọi $A, B$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$."
+          },
+          {
+            "id": "c",
+            "text": "Đẳng thức $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$ luôn đúng với mọi $A, B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là hằng đẳng thức tổng hai lập phương."
+          },
+          {
+            "id": "d",
+            "text": "Đẳng thức $(A - B)(A + B) = A^2 - B^2$ luôn đúng với mọi $A, B$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là hiệu hai bình phương."
+          }
+        ]
+      },
+      {
+        "id": "otc2-d1-tf2",
+        "badge": "Câu 2 (Đ/S) - Phân tích đa thức thành nhân tử",
+        "prompt": "Xét tính đúng/sai của các kết quả phân tích đa thức thành nhân tử sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Đa thức $5x^2 - 5$ phân tích thành $5(x - 1)(x + 1)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $5(x^2 - 1) = 5(x - 1)(x + 1)$."
+          },
+          {
+            "id": "b",
+            "text": "Đa thức $x^2 + 6x + 9$ phân tích thành $(x + 3)^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x^2 + 2 \\cdot 3x + 3^2 = (x + 3)^2$."
+          },
+          {
+            "id": "c",
+            "text": "Đa thức $x^3 - 8$ phân tích thành $(x - 2)(x^2 - 2x + 4)$.",
+            "correctAnswer": false,
+            "explanation": "Sai, phải là $(x - 2)(x^2 + 2x + 4)$ (hạng tử ở giữa mang dấu cộng)."
+          },
+          {
+            "id": "d",
+            "text": "Đa thức $xy - 3x + 2y - 6$ phân tích thành $(x + 2)(y - 3)$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x(y - 3) + 2(y - 3) = (x + 2)(y - 3)$."
+          }
+        ]
+      },
+      {
+        "id": "otc2-d1-tf3",
+        "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức và giải phương trình",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Biểu thức $(x + 1)^3 - x^2(x + 3)$ rút gọn bằng $3x + 1$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x^3 + 3x^2 + 3x + 1) - (x^3 + 3x^2) = 3x + 1$."
+          },
+          {
+            "id": "b",
+            "text": "Phương trình $x^2 - 25 = 0$ có đúng 2 nghiệm là $x = 5$ và $x = -5$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x - 5)(x + 5) = 0 \\Leftrightarrow x = \\pm 5$."
+          },
+          {
+            "id": "c",
+            "text": "Phương trình $x^2 + 9 = 0$ có nghiệm là $x = 3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $x^2 + 9 \\ge 9 > 0$ nên phương trình vô nghiệm."
+          },
+          {
+            "id": "d",
+            "text": "Giá trị của biểu thức $(x - 1)(x^2 + x + 1) - x^3$ luôn bằng $-1$ với mọi $x$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x^3 - 1) - x^3 = -1$."
+          }
+        ]
+      },
+      {
+        "id": "otc2-d1-tf4",
+        "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán diện tích và thể tích",
+        "prompt": "Xét tính đúng/sai của các bài toán hình học và thực tế sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Một hình chữ nhật có chiều dài $x + 3\\text{ (m)}$ và chiều rộng $x - 3\\text{ (m)}$ có diện tích là $x^2 - 9\\text{ (m}^2\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $S = (x + 3)(x - 3) = x^2 - 9$."
+          },
+          {
+            "id": "b",
+            "text": "Khối lập phương cạnh $x + 1\\text{ (m)}$ có thể tích lớn hơn khối lập phương cạnh $x\\text{ (m)}$ là $3x^2 + 3x + 1\\text{ (m}^3\\text{)}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(x + 1)^3 - x^3 = 3x^2 + 3x + 1$."
+          },
+          {
+            "id": "c",
+            "text": "Hiệu diện tích hai hình vuông cạnh $55\\text{ cm}$ và $45\\text{ cm}$ bằng $1000\\text{ cm}^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $55^2 - 45^2 = (55 - 45)(55 + 45) = 10 \\times 100 = 1000\\text{ cm}^2$."
+          },
+          {
+            "id": "d",
+            "text": "Một bể nước lập phương cạnh $2\\text{ m}$ có thể tích bằng $6\\text{ m}^3$.",
+            "correctAnswer": false,
+            "explanation": "Sai, $V = 2^3 = 8\\text{ m}^3$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "otc2-d1-sa1",
+        "badge": "Câu 1 (NB) - Hệ số tự do của bình phương",
+        "prompt": "Hệ số tự do trong khai triển hằng đẳng thức $(x + 4)^2$ bằng bao nhiêu?",
+        "correctAnswer": "16",
+        "acceptableAnswers": [
+          "16",
+          "mười sáu"
+        ],
+        "explanation": "$(x + 4)^2 = x^2 + 8x + 16$. Hệ số tự do là $16$."
+      },
+      {
+        "id": "otc2-d1-sa2",
+        "badge": "Câu 2 (TH) - Hệ số của x trong lập phương",
+        "prompt": "Hệ số của $x$ trong khai triển hằng đẳng thức $(x + 2)^3$ bằng bao nhiêu?",
+        "correctAnswer": "12",
+        "acceptableAnswers": [
+          "12",
+          "mười hai"
+        ],
+        "explanation": "$(x + 2)^3 = x^3 + 6x^2 + 12x + 8$. Hệ số của $x$ là $12$."
+      },
+      {
+        "id": "otc2-d1-sa3",
+        "badge": "Câu 3 (TH) - Tính nhanh hiệu hai bình phương",
+        "prompt": "Tính giá trị số của biểu thức: $102^2 - 4$.",
+        "correctAnswer": "10400",
+        "acceptableAnswers": [
+          "10400",
+          "10.400",
+          "mười nghìn bốn trăm"
+        ],
+        "explanation": "$102^2 - 2^2 = (102 - 2)(102 + 2) = 100 \\times 104 = 10400$."
+      },
+      {
+        "id": "otc2-d1-sa4",
+        "badge": "Câu 4 (TH) - Tìm nghiệm dương của phương trình",
+        "prompt": "Tìm nghiệm dương của phương trình: $x^2 - 49 = 0$.",
+        "correctAnswer": "7",
+        "acceptableAnswers": [
+          "7",
+          "bảy"
+        ],
+        "explanation": "$x^2 = 49 \\Leftrightarrow x = \\pm 7$. Nghiệm dương là $7$."
+      },
+      {
+        "id": "otc2-d1-sa5",
+        "badge": "Câu 5 (VD) - Tìm nghiệm lớn nhất của phương trình",
+        "prompt": "Tìm nghiệm lớn nhất của phương trình: $(x - 2)^2 - 25 = 0$.",
+        "correctAnswer": "7",
+        "acceptableAnswers": [
+          "7",
+          "bảy"
+        ],
+        "explanation": "$(x - 2 - 5)(x - 2 + 5) = 0 \\Leftrightarrow (x - 7)(x + 3) = 0 \\Leftrightarrow x = 7$ hoặc $x = -3$. Nghiệm lớn nhất là $7$."
+      },
+      {
+        "id": "otc2-d1-sa6",
+        "badge": "Câu 6 (VD - Thực tế) - Chênh lệch diện tích hai sân vuông",
+        "prompt": "Sân thứ nhất hình vuông có cạnh $40\\text{ m}$, sân thứ hai hình vuông có cạnh $30\\text{ m}$. Diện tích sân thứ nhất lớn hơn sân thứ hai bao nhiêu mét vuông?",
+        "correctAnswer": "700",
+        "acceptableAnswers": [
+          "700",
+          "bảy trăm",
+          "700m2",
+          "700 m2"
+        ],
+        "explanation": "$40^2 - 30^2 = (40 - 30)(40 + 30) = 10 \\times 70 = 700\\text{ (m}^2\\text{)}$."
+      }
+    ],
+    "examSets": [
+      {
+        "id": "de-1",
+        "title": "Đề ôn tập số 1",
+        "description": "Đề ôn tập tổng hợp cuối Chương II (Hằng đẳng thức đáng nhớ & Ứng dụng) - Đề số 1 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc2-d1-q1",
+            "badge": "Câu 1 (NB) - Khai triển bình phương một tổng",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Khai triển hằng đẳng thức $(x + 3)^2$ ta được kết quả là:",
+            "options": [
+              "$x^2 + 6x + 9$",
+              "$x^2 + 9$",
+              "$x^2 + 3x + 9$",
+              "$x^2 + 6x + 6$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x + 3)^2 = x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$."
+          },
+          {
+            "id": "otc2-d1-q2",
+            "badge": "Câu 2 (NB) - Khai triển hiệu hai bình phương",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Khai triển biểu thức $(2x - 1)(2x + 1)$ ta được:",
+            "options": [
+              "$4x^2 - 1$",
+              "$4x^2 + 1$",
+              "$2x^2 - 1$",
+              "$4x - 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(2x - 1)(2x + 1) = (2x)^2 - 1^2 = 4x^2 - 1$."
+          },
+          {
+            "id": "otc2-d1-q3",
+            "badge": "Câu 3 (NB) - Khai triển lập phương một tổng",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Khai triển hằng đẳng thức $(x + 1)^3$ ta được:",
+            "options": [
+              "$x^3 + 3x^2 + 3x + 1$",
+              "$x^3 + 1$",
+              "$x^3 + 3x + 1$",
+              "$x^3 + x^2 + x + 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x + 1)^3 = x^3 + 3x^2 + 3x + 1$."
+          },
+          {
+            "id": "otc2-d1-q4",
+            "badge": "Câu 4 (NB) - Khai triển tổng hai lập phương",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Khai triển biểu thức $(x + 2)(x^2 - 2x + 4)$ ta được:",
+            "options": [
+              "$x^3 + 8$",
+              "$x^3 - 8$",
+              "$x^3 + 4$",
+              "$x^3 - 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x + 2)(x^2 - 2x + 4) = x^3 + 2^3 = x^3 + 8$."
+          },
+          {
+            "id": "otc2-d1-q5",
+            "badge": "Câu 5 (NB) - Đặt nhân tử chung",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Phân tích đa thức $6x^2 - 9x$ thành nhân tử ta được:",
+            "options": [
+              "$3x(2x - 3)$",
+              "$3(2x^2 - 3)$",
+              "$x(6x - 9)$",
+              "$3x(2x + 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$6x^2 - 9x = 3x(2x - 3)$."
+          },
+          {
+            "id": "otc2-d1-q6",
+            "badge": "Câu 6 (NB) - Dùng hiệu hai bình phương",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Đa thức $x^2 - 36$ phân tích thành tích là:",
+            "options": [
+              "$(x - 6)(x + 6)$",
+              "$(x - 6)^2$",
+              "$(x + 6)^2$",
+              "$(x - 18)(x + 18)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x^2 - 36 = x^2 - 6^2 = (x - 6)(x + 6)$."
+          },
+          {
+            "id": "otc2-d1-q7",
+            "badge": "Câu 7 (TH) - Khai triển bình phương có hệ số",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Khai triển hằng đẳng thức $(2x - 3y)^2$ ta được:",
+            "options": [
+              "$4x^2 - 12xy + 9y^2$",
+              "$4x^2 - 6xy + 9y^2$",
+              "$2x^2 - 12xy + 3y^2$",
+              "$4x^2 + 12xy + 9y^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(2x)^2 - 2(2x)(3y) + (3y)^2 = 4x^2 - 12xy + 9y^2$."
+          },
+          {
+            "id": "otc2-d1-q8",
+            "badge": "Câu 8 (TH) - Nhóm 2 - 2",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Phân tích đa thức $x^2 - xy + 3x - 3y$ thành nhân tử:",
+            "options": [
+              "$(x - y)(x + 3)$",
+              "$(x + y)(x - 3)$",
+              "$(x - y)(x - 3)$",
+              "$(x + y)(x + 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x(x - y) + 3(x - y) = (x - y)(x + 3)$."
+          },
+          {
+            "id": "otc2-d1-q9",
+            "badge": "Câu 9 (TH) - Nhóm 3 - 1",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Phân tích đa thức $x^2 - 4x + 4 - y^2$ thành nhân tử:",
+            "options": [
+              "$(x - 2 - y)(x - 2 + y)$",
+              "$(x - 2 - y)^2$",
+              "$(x + 2 - y)(x + 2 + y)$",
+              "$(x - y - 4)(x - y + 4)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x^2 - 4x + 4) - y^2 = (x - 2)^2 - y^2 = (x - 2 - y)(x - 2 + y)$."
+          },
+          {
+            "id": "otc2-d1-q10",
+            "badge": "Câu 10 (TH) - Rút gọn biểu thức hằng đẳng thức",
+            "source": "SGK Toán 8 KNTT - Ôn tập Chương II",
+            "question": "Rút gọn biểu thức $A = (x + 2)^2 - (x - 2)^2$ ta được:",
+            "options": [
+              "$8x$",
+              "$4x$",
+              "$8$",
+              "$2x^2 + 8$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$A = (x^2 + 4x + 4) - (x^2 - 4x + 4) = 8x$."
+          },
+          {
+            "id": "otc2-d1-q11",
+            "badge": "Câu 11 (VD) - Tìm x bằng phương trình tích",
+            "source": "Toán 8 KNTT - Nâng cao",
+            "question": "Nghiệm của phương trình $x^2 - 16 + (x - 4)(2x + 1) = 0$ là:",
+            "options": [
+              "$x = 4$ hoặc $x = -\\frac{5}{3}$",
+              "$x = 4$ hoặc $x = -5$",
+              "$x = -4$ hoặc $x = \\frac{5}{3}$",
+              "$x = 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 4)(x + 4) + (x - 4)(2x + 1) = 0 \\Leftrightarrow (x - 4)(3x + 5) = 0 \\Leftrightarrow x = 4$ hoặc $x = -\\frac{5}{3}$."
+          },
+          {
+            "id": "otc2-d1-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Diện tích lối đi xung quanh vườn",
+            "source": "Toán 8 KNTT - Ứng dụng thực tế",
+            "question": "Một khu vườn hình vuông cạnh $x\\text{ (m)}$. Người ta làm một lối đi xung quanh rộng $1\\text{ m}$. Đa thức biểu thị diện tích lối đi là:",
+            "options": [
+              "$4x - 4\\text{ (m}^2\\text{)}$",
+              "$4x + 4\\text{ (m}^2\\text{)}$",
+              "$2x - 1\\text{ (m}^2\\text{)}$",
+              "$4x\\text{ (m}^2\\text{)}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cạnh phần đất trồng cây bên trong là $x - 2\\text{ (m)}$. Diện tích lối đi là: $x^2 - (x - 2)^2 = x^2 - (x^2 - 4x + 4) = 4x - 4\\text{ (m}^2\\text{)}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc2-d1-tf1",
+            "badge": "Câu 1 (Đ/S) - Bảng hằng đẳng thức đáng nhớ",
+            "prompt": "Xét tính đúng/sai của các hằng đẳng thức sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đẳng thức $(A - B)^2 = A^2 - 2AB + B^2$ luôn đúng với mọi $A, B$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, đây là bình phương của một hiệu."
+              },
+              {
+                "id": "b",
+                "text": "Đẳng thức $(A - B)^3 = A^3 - B^3$ luôn đúng với mọi $A, B$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$."
+              },
+              {
+                "id": "c",
+                "text": "Đẳng thức $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$ luôn đúng với mọi $A, B$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, đây là hằng đẳng thức tổng hai lập phương."
+              },
+              {
+                "id": "d",
+                "text": "Đẳng thức $(A - B)(A + B) = A^2 - B^2$ luôn đúng với mọi $A, B$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, đây là hiệu hai bình phương."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d1-tf2",
+            "badge": "Câu 2 (Đ/S) - Phân tích đa thức thành nhân tử",
+            "prompt": "Xét tính đúng/sai của các kết quả phân tích đa thức thành nhân tử sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đa thức $5x^2 - 5$ phân tích thành $5(x - 1)(x + 1)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $5(x^2 - 1) = 5(x - 1)(x + 1)$."
+              },
+              {
+                "id": "b",
+                "text": "Đa thức $x^2 + 6x + 9$ phân tích thành $(x + 3)^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x^2 + 2 \\cdot 3x + 3^2 = (x + 3)^2$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức $x^3 - 8$ phân tích thành $(x - 2)(x^2 - 2x + 4)$.",
+                "correctAnswer": false,
+                "explanation": "Sai, phải là $(x - 2)(x^2 + 2x + 4)$ (hạng tử ở giữa mang dấu cộng)."
+              },
+              {
+                "id": "d",
+                "text": "Đa thức $xy - 3x + 2y - 6$ phân tích thành $(x + 2)(y - 3)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x(y - 3) + 2(y - 3) = (x + 2)(y - 3)$."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d1-tf3",
+            "badge": "Câu 3 (Đ/S) - Rút gọn biểu thức và giải phương trình",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Biểu thức $(x + 1)^3 - x^2(x + 3)$ rút gọn bằng $3x + 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x^3 + 3x^2 + 3x + 1) - (x^3 + 3x^2) = 3x + 1$."
+              },
+              {
+                "id": "b",
+                "text": "Phương trình $x^2 - 25 = 0$ có đúng 2 nghiệm là $x = 5$ và $x = -5$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x - 5)(x + 5) = 0 \\Leftrightarrow x = \\pm 5$."
+              },
+              {
+                "id": "c",
+                "text": "Phương trình $x^2 + 9 = 0$ có nghiệm là $x = 3$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $x^2 + 9 \\ge 9 > 0$ nên phương trình vô nghiệm."
+              },
+              {
+                "id": "d",
+                "text": "Giá trị của biểu thức $(x - 1)(x^2 + x + 1) - x^3$ luôn bằng $-1$ với mọi $x$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x^3 - 1) - x^3 = -1$."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d1-tf4",
+            "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán diện tích và thể tích",
+            "prompt": "Xét tính đúng/sai của các bài toán hình học và thực tế sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Một hình chữ nhật có chiều dài $x + 3\\text{ (m)}$ và chiều rộng $x - 3\\text{ (m)}$ có diện tích là $x^2 - 9\\text{ (m}^2\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $S = (x + 3)(x - 3) = x^2 - 9$."
+              },
+              {
+                "id": "b",
+                "text": "Khối lập phương cạnh $x + 1\\text{ (m)}$ có thể tích lớn hơn khối lập phương cạnh $x\\text{ (m)}$ là $3x^2 + 3x + 1\\text{ (m}^3\\text{)}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x + 1)^3 - x^3 = 3x^2 + 3x + 1$."
+              },
+              {
+                "id": "c",
+                "text": "Hiệu diện tích hai hình vuông cạnh $55\\text{ cm}$ và $45\\text{ cm}$ bằng $1000\\text{ cm}^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $55^2 - 45^2 = (55 - 45)(55 + 45) = 10 \\times 100 = 1000\\text{ cm}^2$."
+              },
+              {
+                "id": "d",
+                "text": "Một bể nước lập phương cạnh $2\\text{ m}$ có thể tích bằng $6\\text{ m}^3$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $V = 2^3 = 8\\text{ m}^3$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc2-d1-sa1",
+            "badge": "Câu 1 (NB) - Hệ số tự do của bình phương",
+            "prompt": "Hệ số tự do trong khai triển hằng đẳng thức $(x + 4)^2$ bằng bao nhiêu?",
+            "correctAnswer": "16",
+            "acceptableAnswers": [
+              "16",
+              "mười sáu"
+            ],
+            "explanation": "$(x + 4)^2 = x^2 + 8x + 16$. Hệ số tự do là $16$."
+          },
+          {
+            "id": "otc2-d1-sa2",
+            "badge": "Câu 2 (TH) - Hệ số của x trong lập phương",
+            "prompt": "Hệ số của $x$ trong khai triển hằng đẳng thức $(x + 2)^3$ bằng bao nhiêu?",
+            "correctAnswer": "12",
+            "acceptableAnswers": [
+              "12",
+              "mười hai"
+            ],
+            "explanation": "$(x + 2)^3 = x^3 + 6x^2 + 12x + 8$. Hệ số của $x$ là $12$."
+          },
+          {
+            "id": "otc2-d1-sa3",
+            "badge": "Câu 3 (TH) - Tính nhanh hiệu hai bình phương",
+            "prompt": "Tính giá trị số của biểu thức: $102^2 - 4$.",
+            "correctAnswer": "10400",
+            "acceptableAnswers": [
+              "10400",
+              "10.400",
+              "mười nghìn bốn trăm"
+            ],
+            "explanation": "$102^2 - 2^2 = (102 - 2)(102 + 2) = 100 \\times 104 = 10400$."
+          },
+          {
+            "id": "otc2-d1-sa4",
+            "badge": "Câu 4 (TH) - Tìm nghiệm dương của phương trình",
+            "prompt": "Tìm nghiệm dương của phương trình: $x^2 - 49 = 0$.",
+            "correctAnswer": "7",
+            "acceptableAnswers": [
+              "7",
+              "bảy"
+            ],
+            "explanation": "$x^2 = 49 \\Leftrightarrow x = \\pm 7$. Nghiệm dương là $7$."
+          },
+          {
+            "id": "otc2-d1-sa5",
+            "badge": "Câu 5 (VD) - Tìm nghiệm lớn nhất của phương trình",
+            "prompt": "Tìm nghiệm lớn nhất của phương trình: $(x - 2)^2 - 25 = 0$.",
+            "correctAnswer": "7",
+            "acceptableAnswers": [
+              "7",
+              "bảy"
+            ],
+            "explanation": "$(x - 2 - 5)(x - 2 + 5) = 0 \\Leftrightarrow (x - 7)(x + 3) = 0 \\Leftrightarrow x = 7$ hoặc $x = -3$. Nghiệm lớn nhất là $7$."
+          },
+          {
+            "id": "otc2-d1-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Chênh lệch diện tích hai sân vuông",
+            "prompt": "Sân thứ nhất hình vuông có cạnh $40\\text{ m}$, sân thứ hai hình vuông có cạnh $30\\text{ m}$. Diện tích sân thứ nhất lớn hơn sân thứ hai bao nhiêu mét vuông?",
+            "correctAnswer": "700",
+            "acceptableAnswers": [
+              "700",
+              "bảy trăm",
+              "700m2",
+              "700 m2"
+            ],
+            "explanation": "$40^2 - 30^2 = (40 - 30)(40 + 30) = 10 \\times 70 = 700\\text{ (m}^2\\text{)}$."
+          }
+        ]
+      },
+      {
+        "id": "de-2",
+        "title": "Đề ôn tập số 2",
+        "description": "Đề ôn tập tổng hợp cuối Chương II (Hằng đẳng thức đáng nhớ & Ứng dụng) - Đề số 2 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc2-d2-q1",
+            "badge": "Câu 1 (NB) - Khai triển bình phương một hiệu",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Khai triển hằng đẳng thức $(x - 4)^2$ ta được:",
+            "options": [
+              "$x^2 - 8x + 16$",
+              "$x^2 - 16$",
+              "$x^2 - 4x + 16$",
+              "$x^2 + 8x + 16$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 4)^2 = x^2 - 8x + 16$."
+          },
+          {
+            "id": "otc2-d2-q2",
+            "badge": "Câu 2 (NB) - Khai triển hiệu hai lập phương",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Khai triển biểu thức $(x - 1)(x^2 + x + 1)$ ta được:",
+            "options": [
+              "$x^3 - 1$",
+              "$x^3 + 1$",
+              "$x^3 - 3x - 1$",
+              "$(x - 1)^3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 1)(x^2 + x + 1) = x^3 - 1$."
+          },
+          {
+            "id": "otc2-d2-q3",
+            "badge": "Câu 3 (NB) - Đặt nhân tử chung đơn giản",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Phân tích đa thức $8x^2y - 12xy^2$ thành nhân tử:",
+            "options": [
+              "$4xy(2x - 3y)$",
+              "$4xy(2x + 3y)$",
+              "$2xy(4x - 6y)$",
+              "$4x^2y(2 - 3y)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$\\text{ƯCLN}(8, 12) = 4$, phần biến chung là $xy$. Vậy $4xy(2x - 3y)$."
+          },
+          {
+            "id": "otc2-d2-q4",
+            "badge": "Câu 4 (NB) - Viết thành bình phương một hiệu",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Đa thức $x^2 - 10x + 25$ được viết dưới dạng:",
+            "options": [
+              "$(x - 5)^2$",
+              "$(x + 5)^2$",
+              "$(x - 25)^2$",
+              "$(x - 10)^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x^2 - 2(5)x + 5^2 = (x - 5)^2$."
+          },
+          {
+            "id": "otc2-d2-q5",
+            "badge": "Câu 5 (NB) - Phân tích hiệu hai lập phương",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Đa thức $x^3 - 27$ phân tích thành tích là:",
+            "options": [
+              "$(x - 3)(x^2 + 3x + 9)$",
+              "$(x - 3)(x^2 - 3x + 9)$",
+              "$(x - 3)^3$",
+              "$(x + 3)(x^2 - 3x + 9)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x^3 - 3^3 = (x - 3)(x^2 + 3x + 9)$."
+          },
+          {
+            "id": "otc2-d2-q6",
+            "badge": "Câu 6 (NB) - Nghiệm của phương trình tích",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Nghiệm của phương trình $(x + 3)(x - 1) = 0$ là:",
+            "options": [
+              "$x = -3$ hoặc $x = 1$",
+              "$x = 3$ hoặc $x = -1$",
+              "$x = -3$",
+              "$x = 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x + 3 = 0 \\Leftrightarrow x = -3$; $x - 1 = 0 \\Leftrightarrow x = 1$."
+          },
+          {
+            "id": "otc2-d2-q7",
+            "badge": "Câu 7 (TH) - Khai triển lập phương một hiệu",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Khai triển hằng đẳng thức $(x - 2)^3$ ta được:",
+            "options": [
+              "$x^3 - 6x^2 + 12x - 8$",
+              "$x^3 - 8$",
+              "$x^3 - 6x^2 - 12x - 8$",
+              "$x^3 + 6x^2 - 12x + 8$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 2)^3 = x^3 - 3x^2(2) + 3x(2^2) - 2^3 = x^3 - 6x^2 + 12x - 8$."
+          },
+          {
+            "id": "otc2-d2-q8",
+            "badge": "Câu 8 (TH) - Đổi dấu đặt nhân tử chung",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Phân tích đa thức $2x(x - 1) + 3(1 - x)$ thành nhân tử:",
+            "options": [
+              "$(x - 1)(2x - 3)$",
+              "$(x - 1)(2x + 3)$",
+              "$(1 - x)(2x - 3)$",
+              "$(x + 1)(2x - 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$2x(x - 1) - 3(x - 1) = (x - 1)(2x - 3)$."
+          },
+          {
+            "id": "otc2-d2-q9",
+            "badge": "Câu 9 (TH) - Nhóm hạng tử 3 - 1",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Phân tích đa thức $x^2 - 9 - y^2 + 6y$ thành nhân tử:",
+            "options": [
+              "$(x - y + 3)(x + y - 3)$",
+              "$(x - y - 3)(x + y + 3)$",
+              "$(x - y + 3)^2$",
+              "$(x - 3 - y)(x + 3 + y)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x^2 - (y^2 - 6y + 9) = x^2 - (y - 3)^2 = [x - (y - 3)][x + (y - 3)] = (x - y + 3)(x + y - 3)$."
+          },
+          {
+            "id": "otc2-d2-q10",
+            "badge": "Câu 10 (TH) - Tính nhanh giá trị biểu thức",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Giá trị của biểu thức $P = x^3 - 3x^2 + 3x - 1$ tại $x = 101$ là:",
+            "options": [
+              "$1000000$",
+              "$100000$",
+              "$10000$",
+              "$1010000$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$P = (x - 1)^3 = (101 - 1)^3 = 100^3 = 1000000$."
+          },
+          {
+            "id": "otc2-d2-q11",
+            "badge": "Câu 11 (VD) - Tìm x bằng hằng đẳng thức",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Tìm các giá trị của $x$ thỏa mãn: $(x + 2)^3 - x^2(x + 6) = 20$.",
+            "options": [
+              "$x = 1$",
+              "$x = 2$",
+              "$x = 3$",
+              "$x = 0$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x^3 + 6x^2 + 12x + 8) - (x^3 + 6x^2) = 20 \\Leftrightarrow 12x + 8 = 20 \\Leftrightarrow 12x = 12 \\Leftrightarrow x = 1$."
+          },
+          {
+            "id": "otc2-d2-q12",
+            "badge": "Câu 12 (VD - Thực tế) - Thể tích bể nước tăng thêm",
+            "source": "Toán 8 KNTT Đề số 2",
+            "question": "Một khối nước đá hình lập phương cạnh $x\\text{ (m)}$ bị tan chảy đều làm mỗi cạnh giảm đi $1\\text{ m}$. Đa thức biểu thị phần thể tích bị tan chảy là:",
+            "options": [
+              "$3x^2 - 3x + 1\\text{ (m}^3\\text{)}$",
+              "$3x^2 + 3x + 1\\text{ (m}^3\\text{)}$",
+              "$1\\text{ (m}^3\\text{)}$",
+              "$x^2 - x + 1\\text{ (m}^3\\text{)}$"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thể tích tan chảy là: $x^3 - (x - 1)^3 = x^3 - (x^3 - 3x^2 + 3x - 1) = 3x^2 - 3x + 1\\text{ (m}^3\\text{)}$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc2-d2-tf1",
+            "badge": "Câu 1 (Đ/S) - Các quy tắc dấu trong hằng đẳng thức",
+            "prompt": "Xét tính đúng/sai của các phát biểu sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Khẳng định $(x - y)^2 = (y - x)^2$ luôn đúng với mọi $x, y$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, bình phương của hai số đối nhau luôn bằng nhau."
+              },
+              {
+                "id": "b",
+                "text": "Khẳng định $(x - y)^3 = (y - x)^3$ luôn đúng với mọi $x, y$.",
+                "correctAnswer": false,
+                "explanation": "Sai, vì $(x - y)^3 = -(y - x)^3$."
+              },
+              {
+                "id": "c",
+                "text": "Khẳng định $(A + B)^2 = A^2 + B^2$ chỉ đúng khi $AB = 0$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(A + B)^2 = A^2 + 2AB + B^2$, bằng $A^2 + B^2$ khi $2AB = 0 \\Leftrightarrow AB = 0$."
+              },
+              {
+                "id": "d",
+                "text": "Biểu thức $x^2 + 4$ luôn phân tích được thành nhân tử trên tập số thực.",
+                "correctAnswer": false,
+                "explanation": "Sai, $x^2 + 4 > 0$ với mọi $x \\in \\mathbb{R}$ nên không phân tích được trên $\\mathbb{R}$."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d2-tf2",
+            "badge": "Câu 2 (Đ/S) - Phân tích đa thức thành nhân tử nâng cao",
+            "prompt": "Xét tính đúng/sai của các phép phân tích sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đa thức $x^4 - y^4$ phân tích thành $(x - y)(x + y)(x^2 + y^2)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x^4 - y^4 = (x^2 - y^2)(x^2 + y^2) = (x - y)(x + y)(x^2 + y^2)$."
+              },
+              {
+                "id": "b",
+                "text": "Đa thức $x^2 - 7x + 12$ phân tích thành $(x - 3)(x - 4)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x^2 - 3x - 4x + 12 = x(x - 3) - 4(x - 3) = (x - 3)(x - 4)$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức $8x^3 + 1$ phân tích thành $(2x + 1)(4x^2 + 2x + 1)$.",
+                "correctAnswer": false,
+                "explanation": "Sai, dấu ở giữa phải là trừ: $(2x + 1)(4x^2 - 2x + 1)$."
+              },
+              {
+                "id": "d",
+                "text": "Đa thức $x^3 - 3x^2 + 3x - 1$ được viết dưới dạng $(x - 1)^3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, hằng đẳng thức lập phương một hiệu."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d2-tf3",
+            "badge": "Câu 3 (Đ/S) - Phương trình và giá trị lớn nhất, nhỏ nhất",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Phương trình $x(x - 2) = 0$ có tập nghiệm là $S = \\{0; 2\\}$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x = 0$ hoặc $x = 2$."
+              },
+              {
+                "id": "b",
+                "text": "Giá trị nhỏ nhất của biểu thức $A = x^2 - 4x + 7$ là $3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $A = (x - 2)^2 + 3 \\ge 3$ khi $x = 2$."
+              },
+              {
+                "id": "c",
+                "text": "Giá trị lớn nhất của biểu thức $B = -x^2 + 6x - 10$ là $-1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $B = -(x^2 - 6x + 9) - 1 = -(x - 3)^2 - 1 \\le -1$ khi $x = 3$."
+              },
+              {
+                "id": "d",
+                "text": "Phương trình $(x + 2)^2 = 4$ có đúng 1 nghiệm là $x = 0$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $x + 2 = 2 \\Leftrightarrow x = 0$ hoặc $x + 2 = -2 \\Leftrightarrow x = -4$ (có 2 nghiệm)."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d2-tf4",
+            "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán thực tế",
+            "prompt": "Xét tính đúng/sai của các bài toán sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Giá trị của $85^2 - 15^2$ bằng $7000$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(85 - 15)(85 + 15) = 70 \\times 100 = 7000$."
+              },
+              {
+                "id": "b",
+                "text": "Một hình vuông có cạnh tăng thêm $2\\text{ m}$ thì diện tích tăng thêm $4\\text{ m}^2$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $(x + 2)^2 - x^2 = 4x + 4\\text{ m}^2$ (phụ thuộc vào cạnh $x$)."
+              },
+              {
+                "id": "c",
+                "text": "Tích của 3 số nguyên liên tiếp luôn chia hết cho 6.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(n - 1)n(n + 1)$ chia hết cho cả 2 và 3 nên chia hết cho 6."
+              },
+              {
+                "id": "d",
+                "text": "Biểu thức $99^3 + 1$ chia hết cho $100$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $99^3 + 1^3 = (99 + 1)(99^2 - 99 + 1) = 100 \\times M \\ \\vdots \\ 100$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc2-d2-sa1",
+            "badge": "Câu 1 (NB) - Hệ số tự do của hiệu hai bình phương",
+            "prompt": "Hệ số tự do trong khai triển $(3x - 4)(3x + 4)$ bằng bao nhiêu?",
+            "correctAnswer": "-16",
+            "acceptableAnswers": [
+              "-16",
+              "âm mười sáu",
+              "- 16"
+            ],
+            "explanation": "$(3x)^2 - 4^2 = 9x^2 - 16$. Hệ số tự do là $-16$."
+          },
+          {
+            "id": "otc2-d2-sa2",
+            "badge": "Câu 2 (TH) - Tìm hằng số trong hằng đẳng thức",
+            "prompt": "Cho đa thức $4x^2 - 12x + 9 = (2x - a)^2$. Giá trị của $a$ bằng bao nhiêu?",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "ba"
+            ],
+            "explanation": "$(2x)^2 - 2(2x)(3) + 3^2 = (2x - 3)^2 \\Rightarrow a = 3$."
+          },
+          {
+            "id": "otc2-d2-sa3",
+            "badge": "Câu 3 (TH) - Tính nhanh giá trị số",
+            "prompt": "Tính giá trị của biểu thức: $48 \\cdot 52$.",
+            "correctAnswer": "2496",
+            "acceptableAnswers": [
+              "2496",
+              "2.496",
+              "hai nghìn bốn trăm chín mươi sáu"
+            ],
+            "explanation": "$(50 - 2)(50 + 2) = 50^2 - 2^2 = 2500 - 4 = 2496$."
+          },
+          {
+            "id": "otc2-d2-sa4",
+            "badge": "Câu 4 (TH) - Số nghiệm của phương trình",
+            "prompt": "Phương trình $x^3 - 9x = 0$ có bao nhiêu nghiệm thực?",
+            "correctAnswer": "3",
+            "acceptableAnswers": [
+              "3",
+              "ba"
+            ],
+            "explanation": "$x(x^2 - 9) = x(x - 3)(x + 3) = 0 \\Leftrightarrow x = 0, x = 3, x = -3$. Có 3 nghiệm."
+          },
+          {
+            "id": "otc2-d2-sa5",
+            "badge": "Câu 5 (VD) - Giá trị nhỏ nhất của biểu thức",
+            "prompt": "Tìm giá trị nhỏ nhất của biểu thức $P = x^2 - 6x + 14$.",
+            "correctAnswer": "5",
+            "acceptableAnswers": [
+              "5",
+              "năm"
+            ],
+            "explanation": "$P = (x - 3)^2 + 5 \\ge 5$ khi $x = 3$. Giá trị nhỏ nhất là $5$."
+          },
+          {
+            "id": "otc2-d2-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Thể tích khối lập phương",
+            "prompt": "Một khối lập phương đặc có thể tích $125\\text{ cm}^3$. Độ dài cạnh của khối lập phương đó bằng bao nhiêu centimét?",
+            "correctAnswer": "5",
+            "acceptableAnswers": [
+              "5",
+              "5cm",
+              "5 cm",
+              "năm"
+            ],
+            "explanation": "$a^3 = 125 = 5^3 \\Rightarrow a = 5\\text{ cm}$."
+          }
+        ]
+      },
+      {
+        "id": "de-3",
+        "title": "Đề ôn tập số 3",
+        "description": "Đề ôn tập tổng hợp cuối Chương II (Hằng đẳng thức đáng nhớ & Ứng dụng) - Đề số 3 chuẩn cấu trúc Bộ GD&ĐT",
+        "matrixBadge": "30% Nhận biết • 40% Thông hiểu • 30% Vận dụng (10.0 điểm)",
+        "quizQuestions": [
+          {
+            "id": "otc2-d3-q1",
+            "badge": "Câu 1 (NB) - Công thức bình phương của một tổng",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Công thức bình phương của một tổng hai biểu thức $A, B$ là:",
+            "options": [
+              "$(A + B)^2 = A^2 + 2AB + B^2$",
+              "$(A + B)^2 = A^2 + B^2$",
+              "$(A + B)^2 = A^2 + AB + B^2$",
+              "$(A + B)^2 = A^2 - 2AB + B^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(A + B)^2 = A^2 + 2AB + B^2$."
+          },
+          {
+            "id": "otc2-d3-q2",
+            "badge": "Câu 2 (NB) - Khai triển tích hiệu hai bình phương",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Khai triển $(3x - 2)(3x + 2)$ ta được:",
+            "options": [
+              "$9x^2 - 4$",
+              "$9x^2 + 4$",
+              "$3x^2 - 4$",
+              "$9x - 4$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(3x)^2 - 2^2 = 9x^2 - 4$."
+          },
+          {
+            "id": "otc2-d3-q3",
+            "badge": "Câu 3 (NB) - Khai triển lập phương một hiệu",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Khai triển hằng đẳng thức $(x - 1)^3$ ta được:",
+            "options": [
+              "$x^3 - 3x^2 + 3x - 1$",
+              "$x^3 - 1$",
+              "$x^3 - 3x^2 - 3x - 1$",
+              "$x^3 - 3x - 1$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(x - 1)^3 = x^3 - 3x^2 + 3x - 1$."
+          },
+          {
+            "id": "otc2-d3-q4",
+            "badge": "Câu 4 (NB) - Dùng hằng đẳng thức tổng lập phương",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Đa thức $x^3 + 27$ viết dưới dạng tích là:",
+            "options": [
+              "$(x + 3)(x^2 - 3x + 9)$",
+              "$(x + 3)(x^2 + 3x + 9)$",
+              "$(x + 3)^3$",
+              "$(x - 3)(x^2 + 3x + 9)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x^3 + 3^3 = (x + 3)(x^2 - 3x + 9)$."
+          },
+          {
+            "id": "otc2-d3-q5",
+            "badge": "Câu 5 (NB) - Đặt nhân tử chung đa thức bậc 3",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Phân tích đa thức $2x^3 - 6x^2$ thành nhân tử:",
+            "options": [
+              "$2x^2(x - 3)$",
+              "$2x(x^2 - 3)$",
+              "$x^2(2x - 6)$",
+              "$2x^2(x + 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$2x^2(x - 3)$."
+          },
+          {
+            "id": "otc2-d3-q6",
+            "badge": "Câu 6 (NB) - Nhận biết phương trình tích",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Nghiệm của phương trình $(2x - 4)(x + 1) = 0$ là:",
+            "options": [
+              "$x = 2$ hoặc $x = -1$",
+              "$x = -2$ hoặc $x = 1$",
+              "$x = 4$ hoặc $x = -1$",
+              "$x = 2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$2x - 4 = 0 \\Leftrightarrow x = 2$; $x + 1 = 0 \\Leftrightarrow x = -1$."
+          },
+          {
+            "id": "otc2-d3-q7",
+            "badge": "Câu 7 (TH) - Phân tích đa thức bằng hằng đẳng thức",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Đa thức $25x^2 - 1$ phân tích thành tích là:",
+            "options": [
+              "$(5x - 1)(5x + 1)$",
+              "$(25x - 1)(25x + 1)$",
+              "$(5x - 1)^2$",
+              "$(5x + 1)^2$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$(5x)^2 - 1^2 = (5x - 1)(5x + 1)$."
+          },
+          {
+            "id": "otc2-d3-q8",
+            "badge": "Câu 8 (TH) - Nhóm 2 - 2 kết hợp đổi dấu",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Phân tích đa thức $x(y - 2) + 3(2 - y)$ thành nhân tử:",
+            "options": [
+              "$(y - 2)(x - 3)$",
+              "$(y - 2)(x + 3)$",
+              "$(2 - y)(x - 3)$",
+              "$(y + 2)(x - 3)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$x(y - 2) - 3(y - 2) = (y - 2)(x - 3)$."
+          },
+          {
+            "id": "otc2-d3-q9",
+            "badge": "Câu 9 (TH) - Nhóm 3 - 1",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Phân tích đa thức $4 - x^2 + 2xy - y^2$ thành nhân tử:",
+            "options": [
+              "$(2 - x + y)(2 + x - y)$",
+              "$(2 - x - y)(2 + x + y)$",
+              "$(2 - x + y)^2$",
+              "$(4 - x + y)(4 + x - y)$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$4 - (x^2 - 2xy + y^2) = 2^2 - (x - y)^2 = [2 - (x - y)][2 + (x - y)] = (2 - x + y)(2 + x - y)$."
+          },
+          {
+            "id": "otc2-d3-q10",
+            "badge": "Câu 10 (TH) - Tính nhanh giá trị hằng đẳng thức",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Tính nhanh giá trị của $98^2$:",
+            "options": [
+              "$9604$",
+              "$9600$",
+              "$9804$",
+              "$9404$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$98^2 = (100 - 2)^2 = 100^2 - 2(100)(2) + 2^2 = 10000 - 400 + 4 = 9604$."
+          },
+          {
+            "id": "otc2-d3-q11",
+            "badge": "Câu 11 (VD) - Tìm x bằng phân tích thành nhân tử",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Nghiệm của phương trình $2x(x - 3) - x + 3 = 0$ là:",
+            "options": [
+              "$x = 3$ hoặc $x = \\frac{1}{2}$",
+              "$x = 3$ hoặc $x = -\\frac{1}{2}$",
+              "$x = -3$ hoặc $x = \\frac{1}{2}$",
+              "$x = 3$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$2x(x - 3) - (x - 3) = 0 \\Leftrightarrow (x - 3)(2x - 1) = 0 \\Leftrightarrow x = 3$ hoặc $x = \\frac{1}{2}$."
+          },
+          {
+            "id": "otc2-d3-q12",
+            "badge": "Câu 12 (VD - Nâng cao) - Chứng minh chia hết",
+            "source": "Toán 8 KNTT Đề số 3",
+            "question": "Với mọi số nguyên $n$, biểu thức $A = (n + 2)^2 - (n - 2)^2$ luôn chia hết cho số nào sau đây?",
+            "options": [
+              "$8$",
+              "$16$",
+              "$5$",
+              "$7$"
+            ],
+            "correctIndex": 0,
+            "explanation": "$A = (n^2 + 4n + 4) - (n^2 - 4n + 4) = 8n \\ \\vdots \\ 8$."
+          }
+        ],
+        "trueFalseQuestions": [
+          {
+            "id": "otc2-d3-tf1",
+            "badge": "Câu 1 (Đ/S) - Khẳng định về hằng đẳng thức",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Biểu thức $(x + 2y)^2$ khai triển bằng $x^2 + 4xy + 4y^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x^2 + 2(x)(2y) + (2y)^2 = x^2 + 4xy + 4y^2$."
+              },
+              {
+                "id": "b",
+                "text": "Biểu thức $x^2 - 4y^2$ phân tích bằng $(x - 4y)(x + 4y)$.",
+                "correctAnswer": false,
+                "explanation": "Sai, phải là $(x - 2y)(x + 2y)$."
+              },
+              {
+                "id": "c",
+                "text": "Biểu thức $(x - 1)(x^2 + x + 1)$ thu gọn bằng $x^3 - 1$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, hằng đẳng thức hiệu hai lập phương."
+              },
+              {
+                "id": "d",
+                "text": "Biểu thức $(x + 1)^3$ thu gọn bằng $x^3 + 1$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $(x + 1)^3 = x^3 + 3x^2 + 3x + 1$."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d3-tf2",
+            "badge": "Câu 2 (Đ/S) - Biến đổi đa thức thành tích",
+            "prompt": "Xét tính đúng/sai của các phép biến đổi sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Đa thức $x^3 - 4x$ phân tích thành $x(x - 2)(x + 2)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $x(x^2 - 4) = x(x - 2)(x + 2)$."
+              },
+              {
+                "id": "b",
+                "text": "Đa thức $x^2 - 2x + 1 - y^2$ phân tích thành $(x - 1 - y)(x - 1 + y)$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x - 1)^2 - y^2 = (x - 1 - y)(x - 1 + y)$."
+              },
+              {
+                "id": "c",
+                "text": "Đa thức $x^2 + y^2$ luôn phân tích được thành nhân tử trên tập số thực.",
+                "correctAnswer": false,
+                "explanation": "Sai, không phân tích được thành nhân tử trên $\\mathbb{R}$."
+              },
+              {
+                "id": "d",
+                "text": "Đa thức $x^3 + 8$ phân tích thành $(x + 2)(x^2 - 4x + 4)$.",
+                "correctAnswer": false,
+                "explanation": "Sai, phải là $(x + 2)(x^2 - 2x + 4)$ (bình phương thiếu không có số 4 ở giữa)."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d3-tf3",
+            "badge": "Câu 3 (Đ/S) - Nghiệm phương trình và chia hết",
+            "prompt": "Xét tính đúng/sai của các khẳng định sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Phương trình $x^2 - 16 = 0$ có nghiệm nhỏ nhất là $-4$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, hai nghiệm là $4$ và $-4$, nhỏ nhất là $-4$."
+              },
+              {
+                "id": "b",
+                "text": "Phương trình $x^2 - 4x + 4 = 0$ có đúng 1 nghiệm duy nhất là $x = 2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(x - 2)^2 = 0 \\Leftrightarrow x = 2$."
+              },
+              {
+                "id": "c",
+                "text": "Với mọi số tự nhiên $n$, số $n^2 + n$ luôn là số chẵn.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $n(n + 1)$ là tích của 2 số tự nhiên liên tiếp nên luôn chẵn."
+              },
+              {
+                "id": "d",
+                "text": "Phương trình $x^2 + 1 = 0$ có nghiệm là $x = -1$.",
+                "correctAnswer": false,
+                "explanation": "Sai, $x^2 + 1 \\ge 1 > 0$ nên vô nghiệm."
+              }
+            ]
+          },
+          {
+            "id": "otc2-d3-tf4",
+            "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán thực tế",
+            "prompt": "Xét tính đúng/sai của các bài toán thực tiễn sau:",
+            "subItems": [
+              {
+                "id": "a",
+                "text": "Biểu thức $65^2 - 35^2$ có giá trị bằng $3000$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(65 - 35)(65 + 35) = 30 \\times 100 = 3000$."
+              },
+              {
+                "id": "b",
+                "text": "Một hình chữ nhật có kích thước $x + 5\\text{ (m)}$ và $x - 5\\text{ (m)}$. Khi $x = 15\\text{ m}$, diện tích là $200\\text{ m}^2$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $S = 15^2 - 25 = 225 - 25 = 200\\text{ m}^2$."
+              },
+              {
+                "id": "c",
+                "text": "Biểu thức $101^2 - 1$ chia hết cho $100$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $(101 - 1)(101 + 1) = 100 \\times 102$ chia hết cho 100."
+              },
+              {
+                "id": "d",
+                "text": "Khối kim loại rỗng có thể tích $V = 10^3 - 6^3 = 784\\text{ cm}^3$.",
+                "correctAnswer": true,
+                "explanation": "Đúng, $1000 - 216 = 784\\text{ cm}^3$."
+              }
+            ]
+          }
+        ],
+        "shortAnswerQuestions": [
+          {
+            "id": "otc2-d3-sa1",
+            "badge": "Câu 1 (NB) - Hệ số tự do của khai triển",
+            "prompt": "Hệ số tự do trong khai triển $(x + 6)(x - 6)$ bằng bao nhiêu?",
+            "correctAnswer": "-36",
+            "acceptableAnswers": [
+              "-36",
+              "âm ba mươi sáu",
+              "- 36"
+            ],
+            "explanation": "$x^2 - 36$. Hệ số tự do là $-36$."
+          },
+          {
+            "id": "otc2-d3-sa2",
+            "badge": "Câu 2 (TH) - Tìm hằng số trong lập phương",
+            "prompt": "Cho đa thức $x^3 + 6x^2 + 12x + 8 = (x + a)^3$. Giá trị của $a$ bằng bao nhiêu?",
+            "correctAnswer": "2",
+            "acceptableAnswers": [
+              "2",
+              "hai"
+            ],
+            "explanation": "$(x + 2)^3 \\Rightarrow a = 2$."
+          },
+          {
+            "id": "otc2-d3-sa3",
+            "badge": "Câu 3 (TH) - Tính nhanh giá trị số",
+            "prompt": "Tính giá trị số của biểu thức: $95^2 - 5^2$.",
+            "correctAnswer": "9000",
+            "acceptableAnswers": [
+              "9000",
+              "9.000",
+              "chín nghìn"
+            ],
+            "explanation": "$(95 - 5)(95 + 5) = 90 \\times 100 = 9000$."
+          },
+          {
+            "id": "otc2-d3-sa4",
+            "badge": "Câu 4 (TH) - Số nghiệm của phương trình",
+            "prompt": "Phương trình $(x - 5)^2 = 0$ có bao nhiêu nghiệm?",
+            "correctAnswer": "1",
+            "acceptableAnswers": [
+              "1",
+              "một"
+            ],
+            "explanation": "$x - 5 = 0 \\Leftrightarrow x = 5$. Có duy nhất 1 nghiệm."
+          },
+          {
+            "id": "otc2-d3-sa5",
+            "badge": "Câu 5 (VD) - Tìm nghiệm dương của phương trình",
+            "prompt": "Tìm nghiệm dương của phương trình: $x^2 - 8x = 0$.",
+            "correctAnswer": "8",
+            "acceptableAnswers": [
+              "8",
+              "tám"
+            ],
+            "explanation": "$x(x - 8) = 0 \\Leftrightarrow x = 0$ hoặc $x = 8$. Nghiệm dương là $8$."
+          },
+          {
+            "id": "otc2-d3-sa6",
+            "badge": "Câu 6 (VD - Thực tế) - Thể tích khối lập phương rỗng",
+            "prompt": "Một khối lập phương đặc cạnh $8\\text{ cm}$ bị khoét rỗng một khối lập phương cạnh $6\\text{ cm}$. Thể tích kim loại còn lại bằng bao nhiêu $\\text{cm}^3$?",
+            "correctAnswer": "296",
+            "acceptableAnswers": [
+              "296",
+              "296cm3",
+              "296 cm3"
+            ],
+            "explanation": "$8^3 - 6^3 = 512 - 216 = 296\\text{ (cm}^3\\text{)}$."
+          }
+        ]
+      }
+    ]
+  },
 };

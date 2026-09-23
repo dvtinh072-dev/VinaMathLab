@@ -374,6 +374,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t8-b7-lap-phuong-tong-hieu", lessonNumber: 7, title: "Bài 7: Lập phương của một tổng. Lập phương của một hiệu", strand: "daiso", description: "Hằng đẳng thức bậc 3 tổng và hiệu.", keyFormulas: ["(A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3", "(A-B)^3 = A^3 - 3A^2B + 3AB^2 - B^3"] },
           { id: "t8-b8-tong-hieu-hai-lap-phuong", lessonNumber: 8, title: "Bài 8: Tổng và hiệu hai lập phương", strand: "daiso", description: "Hằng đẳng thức tổng và hiệu hai lập phương.", keyFormulas: ["A^3 + B^3 = (A+B)(A^2 - AB + B^2)", "A^3 - B^3 = (A-B)(A^2 + AB + B^2)"] },
           { id: "t8-b9-phan-tich-da-thuc-nhan-tu", lessonNumber: 9, title: "Bài 9: Phân tích đa thức thành nhân tử", strand: "daiso", description: "Phương pháp nhân tử chung, hằng đẳng thức, nhóm hạng tử.", keyFormulas: ["AB + AC = A(B + C)"] },
+          { id: "t8-on-tap-chuong-2", lessonNumber: 0, title: "Bài tập cuối chương II", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức 7 Hằng đẳng thức đáng nhớ và Phân tích đa thức thành nhân tử với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["(A \\pm B)^2 = A^2 \\pm 2AB + B^2", "A^2 - B^2 = (A-B)(A+B)", "(A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3", "A^3 \\pm B^3 = (A \\pm B)(A^2 \\mp AB + B^2)", "AB + AC = A(B + C)"] },
         ],
       },
       {

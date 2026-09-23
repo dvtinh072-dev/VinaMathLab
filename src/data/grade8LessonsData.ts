@@ -7813,4 +7813,692 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t8-b10-tu-giac": {
+    "id": "t8-b10-tu-giac",
+    "lessonNumber": 10,
+    "title": "Bài 10: Tứ giác",
+    "bookChapter": "Chương III: Tứ giác",
+    "scenarioTitle": "Tình huống: Đo góc khung diều và kiểm tra độ vững chắc của giàn giáo",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn An",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, em và các bạn đang làm một chiếc diều hình tứ giác ABCD. Em dùng thước đo góc đo được góc A = 60 độ, góc B = 110 độ và góc D = 110 độ. Nhưng chiếc diều đang dán dở nên em không đặt được thước đo để đo góc C. Thầy có cách nào tính chính xác số đo góc C mà không cần đo trực tiếp không ạ?",
+        "visualGraphic": "box",
+        "mathNote": "\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = ?"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào An! Hoàn toàn tính được rất dễ dàng em nhé! Một định lí nền tảng của hình học là: Tổng các góc trong một tứ giác luôn bằng 360 độ (vì bất kỳ tứ giác nào cũng được chia thành hai tam giác bằng một đường chéo, mà mỗi tam giác có tổng ba góc bằng 180 độ). Với chiếc diều của em: \\widehat{C} = 360° - (60° + 110° + 110°) = 360° - 280° = 80°. Chiếc diều của em có góc C đúng bằng 80 độ! Chúng ta cùng khám phá thế giới phong phú của tứ giác nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = 360^\\circ"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Khái niệm tứ giác & Tứ giác lồi",
+        "points": [
+          "Tứ giác $ABCD$ là hình gồm bốn đoạn thẳng $AB, BC, CD, DA$, trong đó bất kì hai đoạn thẳng nào cũng không cùng nằm trên một đường thẳng.",
+          "Các yếu tố của tứ giác:",
+          "  • Bốn đỉnh: $A, B, C, D$. Bốn cạnh: $AB, BC, CD, DA$.",
+          "  • Hai đỉnh kề nhau: $A$ và $B$, $B$ và $C$,... Hai đỉnh đối nhau: $A$ và $C$, $B$ và $D$.",
+          "  • Hai cạnh kề nhau: $AB$ và $BC$,... Hai cạnh đối nhau: $AB$ và $CD$, $AD$ và $BC$.",
+          "  • Hai đường chéo: $AC$ và $BD$. Bốn góc trong: $\\widehat{A}, \\widehat{B}, \\widehat{C}, \\widehat{D}$.",
+          "Tứ giác lồi là tứ giác luôn nằm trong một nửa mặt phẳng có bờ là đường thẳng chứa bất kì cạnh nào của tứ giác.",
+          "Quy ước: Từ nay khi nói tứ giác mà không chú thích gì thêm, ta hiểu đó là tứ giác lồi."
+        ],
+        "exampleTitle": "Ví dụ 1 (Nhận biết tứ giác lồi chuẩn SGK Trang 48)",
+        "exampleProblem": "Quan sát hình vẽ dưới đây, cho biết hình nào là tứ giác lồi, hình nào không phải là tứ giác lồi? Giải thích vì sao.",
+        "exampleSolution": "• Hình 1 (tứ giác $ABCD$) là tứ giác lồi vì khi ta lấy bất kì cạnh nào (ví dụ cạnh $AB, BC, CD$ hoặc $DA$) làm bờ thì toàn bộ tứ giác luôn nằm trọn vẹn trong một nửa mặt phẳng có bờ là đường thẳng đó.\n• Hình 2 (tứ giác $EFGH$) không phải là tứ giác lồi (đây là tứ giác lõm tại đỉnh $F$) vì đường thẳng chứa cạnh $EF$ đi xuyên qua tứ giác, chia tứ giác nằm về hai phía khác nhau của đường thẳng đó.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa chuẩn SGK: Tứ giác lồi và Tứ giác lõm",
+            "problem": "Phân biệt tứ giác lồi $ABCD$ và tứ giác lõm $EFGH$:",
+            "solution": "Tứ giác lồi luôn nằm về một phía của bất kỳ đường thẳng chứa cạnh nào.",
+            "svgDiagram": "<svg viewBox=\"0 0 520 220\" class=\"w-full max-w-lg mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- KHUNG TRÁI: Tứ giác lồi ABCD -->\n  <g>\n    <polygon points=\"60,50 180,60 160,170 50,150\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n    <circle cx=\"60\" cy=\"50\" r=\"4\" fill=\"#38bdf8\" />\n    <circle cx=\"180\" cy=\"60\" r=\"4\" fill=\"#38bdf8\" />\n    <circle cx=\"160\" cy=\"170\" r=\"4\" fill=\"#38bdf8\" />\n    <circle cx=\"50\" cy=\"150\" r=\"4\" fill=\"#38bdf8\" />\n    <text x=\"52\" y=\"38\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">A</text>\n    <text x=\"190\" y=\"58\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">B</text>\n    <text x=\"170\" y=\"190\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">C</text>\n    <text x=\"32\" y=\"165\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">D</text>\n    <text x=\"115\" y=\"210\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">a) Tứ giác lồi ABCD</text>\n  </g>\n  <!-- ĐƯỜNG PHÂN CÁCH -->\n  <line x1=\"260\" y1=\"20\" x2=\"260\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" />\n  <!-- KHUNG PHẢI: Tứ giác lõm EFGH -->\n  <g>\n    <polygon points=\"290,50 370,115 450,55 400,175\" fill=\"#f43f5e\" fill-opacity=\"0.15\" stroke=\"#fb7185\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n    <circle cx=\"290\" cy=\"50\" r=\"4\" fill=\"#fb7185\" />\n    <circle cx=\"370\" cy=\"115\" r=\"4\" fill=\"#fb7185\" />\n    <circle cx=\"450\" cy=\"55\" r=\"4\" fill=\"#fb7185\" />\n    <circle cx=\"400\" cy=\"175\" r=\"4\" fill=\"#fb7185\" />\n    <text x=\"280\" y=\"42\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">E</text>\n    <text x=\"375\" y=\"120\" fill=\"#facc15\" font-size=\"15\" font-weight=\"bold\">F (lõm)</text>\n    <text x=\"460\" y=\"55\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">G</text>\n    <text x=\"410\" y=\"190\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">H</text>\n    <text x=\"385\" y=\"210\" fill=\"#fb7185\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">b) Tứ giác lõm EFGH</text>\n  </g>\n</svg>"
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "Định lí tổng các góc của một tứ giác",
+        "points": [
+          "Định lí: Tổng các góc trong một tứ giác bằng $360^\\circ$:",
+          "  $\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = 360^\\circ$",
+          "Chứng minh định lí:",
+          "  Kẻ đường chéo $AC$ chia tứ giác $ABCD$ thành hai tam giác $\\Delta ABC$ và $\\Delta ADC$.",
+          "  Tổng các góc của $\\Delta ABC$ là: $\\widehat{A}_1 + \\widehat{B} + \\widehat{C}_1 = 180^\\circ$.",
+          "  Tổng các góc của $\\Delta ADC$ là: $\\widehat{A}_2 + \\widehat{D} + \\widehat{C}_2 = 180^\\circ$.",
+          "  Do đó: $\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = (\\widehat{A}_1 + \\widehat{A}_2) + \\widehat{B} + (\\widehat{C}_1 + \\widehat{C}_2) + \\widehat{D} = 180^\\circ + 180^\\circ = 360^\\circ$."
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 49)",
+        "exampleProblem": "Cho tứ giác $ABCD$ có $\\widehat{A} = 65^\\circ, \\widehat{B} = 117^\\circ, \\widehat{C} = 71^\\circ$. Tính số đo của góc $D$.",
+        "exampleSolution": "Áp dụng định lí tổng các góc của tứ giác $ABCD$ ta có:\n" +
+          "$\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = 360^\\circ$\n" +
+          "$\\Rightarrow 65^\\circ + 117^\\circ + 71^\\circ + \\widehat{D} = 360^\\circ$\n" +
+          "$\\Rightarrow 253^\\circ + \\widehat{D} = 360^\\circ$\n" +
+          "$\\Rightarrow \\widehat{D} = 360^\\circ - 253^\\circ = 107^\\circ$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Kẻ đường chéo chia hai tam giác",
+            "problem": "Chứng minh tổng 4 góc tứ giác bằng 360 độ nhờ đường chéo AC:",
+            "solution": "Tổng các góc tứ giác bằng tổng các góc của hai tam giác: 180° + 180° = 360°.",
+            "svgDiagram": "<svg viewBox=\"0 0 380 230\" class=\"w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"60,50 300,50 330,180 80,180\" fill=\"#0284c7\" fill-opacity=\"0.12\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  <!-- Đường chéo AC nối từ (60,50) đến (330,180) -->\n  <line x1=\"60\" y1=\"50\" x2=\"330\" y2=\"180\" stroke=\"#f59e0b\" stroke-width=\"2.2\" stroke-dasharray=\"5 4\" />\n  <!-- Đỉnh A -->\n  <circle cx=\"60\" cy=\"50\" r=\"4\" fill=\"#38bdf8\" />\n  <text x=\"40\" y=\"48\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">A</text>\n  <text x=\"78\" y=\"70\" fill=\"#38bdf8\" font-size=\"11\">A₁</text>\n  <text x=\"68\" y=\"95\" fill=\"#34d399\" font-size=\"11\">A₂</text>\n  <!-- Đỉnh B -->\n  <circle cx=\"300\" cy=\"50\" r=\"4\" fill=\"#38bdf8\" />\n  <text x=\"310\" y=\"48\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">B</text>\n  <!-- Đỉnh C -->\n  <circle cx=\"330\" cy=\"180\" r=\"4\" fill=\"#38bdf8\" />\n  <text x=\"342\" y=\"190\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">C</text>\n  <text x=\"295\" y=\"165\" fill=\"#38bdf8\" font-size=\"11\">C₁</text>\n  <text x=\"305\" y=\"182\" fill=\"#34d399\" font-size=\"11\">C₂</text>\n  <!-- Đỉnh D -->\n  <circle cx=\"80\" cy=\"180\" r=\"4\" fill=\"#38bdf8\" />\n  <text x=\"62\" y=\"195\" fill=\"#f8fafc\" font-size=\"15\" font-weight=\"bold\">D</text>\n  <!-- Nhãn tam giác -->\n  <text x=\"210\" y=\"95\" fill=\"#38bdf8\" font-size=\"12\" font-style=\"italic\">ΔABC (180°)</text>\n  <text x=\"160\" y=\"150\" fill=\"#34d399\" font-size=\"12\" font-style=\"italic\">ΔADC (180°)</text>\n</svg>"
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "Góc ngoài của tứ giác",
+        "points": [
+          "Định nghĩa: Góc kề bù với một góc của tứ giác gọi là góc ngoài của tứ giác tại đỉnh đó.",
+          "Mỗi đỉnh của tứ giác có hai góc ngoài (hai góc ngoài này là hai góc đối đỉnh nên bằng nhau).",
+          "Tính chất quan trọng: Tổng 4 góc ngoài ở 4 đỉnh của một tứ giác lồi luôn bằng $360^\\circ$:",
+          "  $\\widehat{A}_1 + \\widehat{B}_1 + \\widehat{C}_1 + \\widehat{D}_1 = 360^\\circ$",
+          "Chứng minh nhanh: Tổng các góc ngoài bằng $4 \\times 180^\\circ - (\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D}) = 720^\\circ - 360^\\circ = 360^\\circ$."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 50)",
+        "exampleProblem": "Cho tứ giác $ABCD$ có các góc trong $\\widehat{A} = 100^\\circ, \\widehat{B} = 80^\\circ, \\widehat{C} = 70^\\circ$.\n" +
+          "a) Tính góc ngoài tại đỉnh $A$ và góc ngoài tại đỉnh $B$.\n" +
+          "b) Tính góc trong $\\widehat{D}$ và góc ngoài tại đỉnh $D$.",
+        "exampleSolution": "a) Góc ngoài tại đỉnh $A$ là: $\\widehat{A}_{\\text{ngoài}} = 180^\\circ - 100^\\circ = 80^\\circ$.\n" +
+          "Góc ngoài tại đỉnh $B$ là: $\\widehat{B}_{\\text{ngoài}} = 180^\\circ - 80^\\circ = 100^\\circ$.\n\n" +
+          "b) Góc trong $\\widehat{D} = 360^\\circ - (100^\\circ + 80^\\circ + 70^\\circ) = 360^\\circ - 250^\\circ = 110^\\circ$.\n" +
+          "Góc ngoài tại đỉnh $D$ là: $\\widehat{D}_{\\text{ngoài}} = 180^\\circ - 110^\\circ = 70^\\circ$."
+      },
+      {
+        "index": "4",
+        "title": "Các dạng toán tính góc & Ứng dụng thực tế",
+        "points": [
+          "Dạng 1: Cho biết 3 góc, tính góc thứ tư: $\\widehat{D} = 360^\\circ - (\\widehat{A} + \\widehat{B} + \\widehat{C})$.",
+          "Dạng 2: Các góc tỉ lệ hoặc có mối quan hệ đại số: Đặt ẩn phụ $x$ rồi lập phương trình tổng bằng $360^\\circ$.",
+          "Dạng 3: Tứ giác có các góc vuông (ví dụ tứ giác có 2 góc vuông, 3 góc vuông).",
+          "Dạng 4: Bài toán thực tế về khung diều, giàn giáo xây dựng, liên kết cơ khí hình tứ giác."
+        ],
+        "exampleTitle": "Ví dụ 4 (Tính góc theo tỉ lệ và thực tế)",
+        "exampleProblem": "a) Tìm các góc của tứ giác $ABCD$, biết các góc tỉ lệ với $1 : 2 : 3 : 4$.\n" +
+          "b) Khung giàn giáo hình tứ giác có hai thanh giằng chéo vuông góc với nhau và hai góc trên đều bằng $90^\\circ$. Hai góc còn lại có mối quan hệ gì?",
+        "exampleSolution": "a) Gọi số đo các góc $\\widehat{A}, \\widehat{B}, \\widehat{C}, \\widehat{D}$ lần lượt là $x, 2x, 3x, 4x$ ($x > 0$).\n" +
+          "Tổng bốn góc bằng $360^\\circ$ nên:\n" +
+          "$x + 2x + 3x + 4x = 360^\\circ \\Leftrightarrow 10x = 360^\\circ \\Leftrightarrow x = 36^\\circ$.\n" +
+          "Vậy: $\\widehat{A} = 36^\\circ, \\widehat{B} = 72^\\circ, \\widehat{C} = 108^\\circ, \\widehat{D} = 144^\\circ$.\n\n" +
+          "b) Nếu tứ giác có hai góc bằng $90^\\circ$ thì tổng hai góc còn lại bằng $360^\\circ - (90^\\circ + 90^\\circ) = 180^\\circ$ (hai góc còn lại bù nhau)."
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_b10_video1",
+        "title": "Tiết 1: Định nghĩa tứ giác lồi và định lí tổng 4 góc"
+      },
+      {
+        "id": "t8_b10_video2",
+        "title": "Tiết 2: Góc ngoài của tứ giác và các bài toán tính góc thực tế"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.10.1",
+        "timeSeconds": 130,
+        "timeLabel": "02:10",
+        "title": "Ví dụ 1: Tổng các góc trong tứ giác",
+        "question": "Tổng các góc trong một tứ giác bằng bao nhiêu độ?",
+        "options": [
+          "$360^\\circ$",
+          "$180^\\circ$",
+          "$540^\\circ$",
+          "$720^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Định lí: Tổng các góc trong một tứ giác bằng $360^\\circ$."
+      },
+      {
+        "id": "vq-8.10.2",
+        "timeSeconds": 310,
+        "timeLabel": "05:10",
+        "title": "Ví dụ 2: Tính góc thứ tư",
+        "question": "Cho tứ giác $ABCD$ có $\\widehat{A} = 80^\\circ, \\widehat{B} = 100^\\circ, \\widehat{C} = 70^\\circ$. Số đo góc $D$ là:",
+        "options": [
+          "$110^\\circ$",
+          "$100^\\circ$",
+          "$120^\\circ$",
+          "$90^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\widehat{D} = 360^\\circ - (80^\\circ + 100^\\circ + 70^\\circ) = 360^\\circ - 250^\\circ = 110^\\circ$."
+      },
+      {
+        "id": "vq-8.10.3",
+        "timeSeconds": 220,
+        "timeLabel": "03:40",
+        "title": "Ví dụ 3: Góc ngoài của tứ giác",
+        "question": "Góc trong $\\widehat{A}$ của một tứ giác bằng $115^\\circ$. Số đo góc ngoài tại đỉnh $A$ là:",
+        "options": [
+          "$65^\\circ$",
+          "$115^\\circ$",
+          "$75^\\circ$",
+          "$245^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Góc ngoài kề bù với góc trong: $180^\\circ - 115^\\circ = 65^\\circ$."
+      },
+      {
+        "id": "vq-8.10.4",
+        "timeSeconds": 440,
+        "timeLabel": "07:20",
+        "title": "Ví dụ 4: Tổng các góc ngoài",
+        "question": "Tổng các góc ngoài tại 4 đỉnh của một tứ giác lồi bằng bao nhiêu độ?",
+        "options": [
+          "$360^\\circ$",
+          "$720^\\circ$",
+          "$180^\\circ$",
+          "$540^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng 4 góc ngoài ở 4 đỉnh của tứ giác lồi luôn bằng $360^\\circ$."
+      }
+    ],
+    "tips": [
+      "Mẹo chia đôi hình: Nhớ rằng tứ giác được chia thành 2 tam giác bởi một đường chéo: $2 \\times 180^\\circ = 360^\\circ$.",
+      "Kỹ thuật tính góc thứ tư: Lấy $360^\\circ$ trừ đi tổng ba góc đã biết.",
+      "Góc ngoài kề bù: Góc ngoài luôn bằng $180^\\circ$ trừ đi góc trong tại cùng đỉnh đó.",
+      "Tứ giác có 3 góc vuông: Góc thứ tư bắt buộc phải bằng $90^\\circ$ vì $360^\\circ - 3 \\times 90^\\circ = 90^\\circ$ (đó là hình chữ nhật)."
+    ],
+    "traps": [
+      "Bẫy nhầm tổng góc: Nhầm tổng các góc tứ giác là $180^\\circ$ (nhầm sang tam giác) dẫn đến tính ra số âm.",
+      "Bẫy 4 góc nhọn: Tứ giác không thể có 4 góc đều nhọn vì nếu cả 4 góc $< 90^\\circ$ thì tổng $< 360^\\circ$ (vô lí).",
+      "Bẫy 4 góc tù: Tứ giác không thể có 4 góc đều tù vì nếu cả 4 góc $> 90^\\circ$ thì tổng $> 360^\\circ$.",
+      "Bẫy thứ tự đọc tên đỉnh: Tứ giác $ABCD$ phải nối theo chu vi $A \\to B \\to C \\to D$, không được nối chéo $A \\to C \\to B \\to D$."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.10.1",
+        "badge": "Câu 1 (NB) - Định lí tổng các góc của tứ giác",
+        "source": "SGK Toán 8 KNTT Trang 49",
+        "question": "Tổng các góc trong một tứ giác lồi bằng:",
+        "options": [
+          "$360^\\circ$",
+          "$180^\\circ$",
+          "$540^\\circ$",
+          "$720^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Định lí SGK: Tổng các góc trong một tứ giác bằng $360^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.2",
+        "badge": "Câu 2 (NB) - Nhận biết tứ giác lồi",
+        "source": "SGK Toán 8 KNTT Trang 48",
+        "question": "Tứ giác lồi là tứ giác:",
+        "options": [
+          "Luôn nằm trong một nửa mặt phẳng có bờ là đường thẳng chứa bất kì cạnh nào của tứ giác",
+          "Có ít nhất một góc lớn hơn $180^\\circ$",
+          "Có hai đường chéo không cắt nhau",
+          "Có bốn cạnh luôn bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, tứ giác lồi là tứ giác luôn nằm trong một nửa mặt phẳng có bờ là đường thẳng chứa bất kì cạnh nào của tứ giác."
+      },
+      {
+        "id": "quiz-8.10.3",
+        "badge": "Câu 3 (NB) - Tính góc x trong hình vẽ",
+        "source": "SGK Toán 8 KNTT Bài 3.1 Trang 51",
+        "question": "Tìm số đo góc $x$ trong hình vẽ tứ giác $ABCD$ dưới đây:",
+        "svgDiagram": "<svg viewBox=\"0 0 320 200\" class=\"w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,40 250,50 280,160 80,160\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  <!-- Cung tròn đỉnh A: 65° -->\n  <text x=\"68\" y=\"65\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">65°</text>\n  <text x=\"32\" y=\"38\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <!-- Cung tròn đỉnh B: 115° -->\n  <text x=\"215\" y=\"75\" fill=\"#34d399\" font-size=\"12\" font-weight=\"bold\">115°</text>\n  <text x=\"260\" y=\"48\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <!-- Cung tròn đỉnh C: 80° -->\n  <text x=\"240\" y=\"148\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">80°</text>\n  <text x=\"292\" y=\"172\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">C</text>\n  <!-- Cung tròn đỉnh D: góc x cần tìm (KHÔNG GHI ĐÁP ÁN) -->\n  <text x=\"90\" y=\"148\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">x</text>\n  <text x=\"62\" y=\"175\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">D</text>\n</svg>",
+        "options": [
+          "$x = 100^\\circ$",
+          "$x = 90^\\circ$",
+          "$x = 110^\\circ$",
+          "$x = 80^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x = 360^\\circ - (65^\\circ + 115^\\circ + 80^\\circ) = 360^\\circ - 260^\\circ = 100^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.4",
+        "badge": "Câu 4 (NB) - Tứ giác có hai góc vuông",
+        "source": "SGK Toán 8 KNTT Trang 50",
+        "question": "Tìm số đo góc $x$ trong hình vẽ tứ giác $MNPQ$ có hai góc vuông tại $M$ và $N$:",
+        "svgDiagram": "<svg viewBox=\"0 0 320 200\" class=\"w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"60,40 240,40 270,160 60,160\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  <!-- Góc vuông M tại (60,40) -->\n  <rect x=\"60\" y=\"40\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.8\" />\n  <text x=\"40\" y=\"35\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">M</text>\n  <!-- Góc vuông Q tại (60,160) -->\n  <rect x=\"60\" y=\"144\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.8\" />\n  <text x=\"40\" y=\"175\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">Q</text>\n  <!-- Góc N = 120° -->\n  <text x=\"210\" y=\"68\" fill=\"#facc15\" font-size=\"13\" font-weight=\"bold\">120°</text>\n  <text x=\"252\" y=\"35\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">N</text>\n  <!-- Góc P = x cần tìm (KHÔNG GHI ĐÁP ÁN) -->\n  <text x=\"235\" y=\"150\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">x</text>\n  <text x=\"282\" y=\"175\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">P</text>\n</svg>",
+        "options": [
+          "$x = 60^\\circ$",
+          "$x = 90^\\circ$",
+          "$x = 70^\\circ$",
+          "$x = 120^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x = 360^\\circ - (90^\\circ + 90^\\circ + 120^\\circ) = 360^\\circ - 300^\\circ = 60^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.5",
+        "badge": "Câu 5 (NB) - Khái niệm góc ngoài",
+        "source": "SGK Toán 8 KNTT Trang 50",
+        "question": "Góc ngoài của tứ giác là góc:",
+        "options": [
+          "Kề bù với một góc của tứ giác",
+          "Đối đỉnh với một góc của tứ giác",
+          "Nằm ngoài tứ giác và bằng $90^\\circ$",
+          "Kề với một cạnh của tứ giác"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, góc kề bù với một góc của tứ giác gọi là góc ngoài của tứ giác."
+      },
+      {
+        "id": "quiz-8.10.6",
+        "badge": "Câu 6 (NB) - Tổng các góc ngoài",
+        "source": "SGK Toán 8 KNTT Trang 50",
+        "question": "Tổng các góc ngoài tại bốn đỉnh của một tứ giác lồi luôn bằng:",
+        "options": [
+          "$360^\\circ$",
+          "$180^\\circ$",
+          "$720^\\circ$",
+          "$540^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng 4 góc ngoài ở 4 đỉnh của tứ giác lồi luôn bằng $360^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.7",
+        "badge": "Câu 7 (NB) - Tính góc ngoài khi biết góc trong",
+        "source": "SGK Toán 8 KNTT Trang 50",
+        "question": "Một tứ giác có góc trong tại đỉnh $A$ bằng $75^\\circ$. Số đo góc ngoài tại đỉnh $A$ là:",
+        "options": [
+          "$105^\\circ$",
+          "$75^\\circ$",
+          "$115^\\circ$",
+          "$285^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Góc ngoài kề bù với góc trong: $180^\\circ - 75^\\circ = 105^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.8",
+        "badge": "Câu 8 (NB) - Số góc nhọn tối đa trong tứ giác",
+        "source": "SGK Toán 8 KNTT Bài tập 3.2 Trang 51",
+        "question": "Một tứ giác có thể có nhiều nhất bao nhiêu góc nhọn (góc nhỏ hơn $90^\\circ$)?",
+        "options": [
+          "$3$",
+          "$4$",
+          "$2$",
+          "$1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nếu tứ giác có 4 góc nhọn thì tổng 4 góc $< 4 \\times 90^\\circ = 360^\\circ$ (vô lí). Vậy tứ giác chỉ có thể có nhiều nhất 3 góc nhọn (khi đó góc thứ tư là góc tù lớn hơn $90^\\circ$)."
+      },
+      {
+        "id": "quiz-8.10.9",
+        "badge": "Câu 9 (NB) - Số góc tù tối đa trong tứ giác",
+        "source": "SGK Toán 8 KNTT Bài tập 3.2 Trang 51",
+        "question": "Một tứ giác có thể có nhiều nhất bao nhiêu góc tù (góc lớn hơn $90^\\circ$)?",
+        "options": [
+          "$3$",
+          "$4$",
+          "$2$",
+          "$1$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nếu tứ giác có 4 góc tù thì tổng 4 góc $> 4 \\times 90^\\circ = 360^\\circ$ (vô lí). Vậy tứ giác chỉ có thể có nhiều nhất 3 góc tù."
+      },
+      {
+        "id": "quiz-8.10.10",
+        "badge": "Câu 10 (NB) - Tứ giác có 4 góc bằng nhau",
+        "source": "SGK Toán 8 KNTT Trang 50",
+        "question": "Một tứ giác có bốn góc bằng nhau thì mỗi góc bằng bao nhiêu độ?",
+        "options": [
+          "$90^\\circ$",
+          "$60^\\circ$",
+          "$120^\\circ$",
+          "$45^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì tổng 4 góc bằng $360^\\circ$ nên mỗi góc bằng $360^\\circ : 4 = 90^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.11",
+        "badge": "Câu 11 (TH) - Tính góc ngoài x từ hình vẽ",
+        "source": "SGK Toán 8 KNTT Trang 51",
+        "question": "Tìm số đo góc ngoài $x$ tại đỉnh $C$ trong hình vẽ sau:",
+        "svgDiagram": "<svg viewBox=\"0 0 340 200\" class=\"w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,50 220,50 250,150 70,150\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  <!-- Tia kéo dài DC ra phía ngoài C -->\n  <line x1=\"70\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"4 3\" />\n  <!-- Góc A = 100° -->\n  <text x=\"65\" y=\"75\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">100°</text>\n  <text x=\"35\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <!-- Góc B = 90° vuông -->\n  <rect x=\"204\" y=\"50\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"1.8\" />\n  <text x=\"228\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <!-- Góc D = 80° -->\n  <text x=\"85\" y=\"140\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">80°</text>\n  <text x=\"52\" y=\"170\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <!-- Góc ngoài x tại C (KHÔNG GHI ĐÁP ÁN) -->\n  <path d=\"M 270,150 A 20,20 0 0,0 240,117\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2\" />\n  <text x=\"275\" y=\"140\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"bold\">x</text>\n  <text x=\"245\" y=\"172\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">C</text>\n</svg>",
+        "options": [
+          "$x = 90^\\circ$",
+          "$x = 100^\\circ$",
+          "$x = 80^\\circ$",
+          "$x = 110^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Góc trong $\\widehat{C} = 360^\\circ - (100^\\circ + 90^\\circ + 80^\\circ) = 360^\\circ - 270^\\circ = 90^\\circ$. Góc ngoài $x = 180^\\circ - 90^\\circ = 90^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.12",
+        "badge": "Câu 12 (TH) - Các góc tứ giác tỉ lệ",
+        "source": "SGK Toán 8 KNTT Trang 51",
+        "question": "Tứ giác $ABCD$ có các góc tỉ lệ $\\widehat{A} : \\widehat{B} : \\widehat{C} : \\widehat{D} = 2 : 3 : 4 : 6$. Số đo góc $D$ lớn nhất là:",
+        "options": [
+          "$144^\\circ$",
+          "$120^\\circ$",
+          "$160^\\circ$",
+          "$135^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng số phần bằng nhau: $2 + 3 + 4 + 6 = 15$ phần. Một phần là: $360^\\circ : 15 = 24^\\circ$. Góc $D$ là: $6 \\times 24^\\circ = 144^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.13",
+        "badge": "Câu 13 (TH) - Tứ giác có hai góc đối bù nhau",
+        "source": "SGK Toán 8 KNTT Trang 51",
+        "question": "Cho tứ giác $ABCD$ có $\\widehat{A} + \\widehat{C} = 180^\\circ$. Khi đó tổng hai góc $\\widehat{B} + \\widehat{D}$ bằng:",
+        "options": [
+          "$180^\\circ$",
+          "$360^\\circ$",
+          "$90^\\circ$",
+          "$270^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $\\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = 360^\\circ$ nên $\\widehat{B} + \\widehat{D} = 360^\\circ - (\\widehat{A} + \\widehat{C}) = 360^\\circ - 180^\\circ = 180^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.14",
+        "badge": "Câu 14 (TH) - Tìm x và y trong tứ giác",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Cho tứ giác $ABCD$ có $\\widehat{A} = 2x, \\widehat{B} = 3x, \\widehat{C} = 4x, \\widehat{D} = x$. Giá trị của $x$ bằng:",
+        "options": [
+          "$36^\\circ$",
+          "$30^\\circ$",
+          "$40^\\circ$",
+          "$45^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$2x + 3x + 4x + x = 360^\\circ \\Leftrightarrow 10x = 360^\\circ \\Leftrightarrow x = 36^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.15",
+        "badge": "Câu 15 (TH) - Tứ giác cánh diều",
+        "source": "Toán 8 KNTT Trang 51",
+        "question": "Một tứ giác $ABCD$ có $AB = AD$ và $CB = CD$ (hình cái diều) có $\\widehat{B} = 105^\\circ, \\widehat{D} = 105^\\circ, \\widehat{A} = 70^\\circ$. Số đo góc $C$ là:",
+        "options": [
+          "$80^\\circ$",
+          "$70^\\circ$",
+          "$85^\\circ$",
+          "$75^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\widehat{C} = 360^\\circ - (70^\\circ + 105^\\circ + 105^\\circ) = 360^\\circ - 280^\\circ = 80^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.16",
+        "badge": "Câu 16 (TH) - Hai góc kề bù nhau",
+        "source": "Toán 8 KNTT Trang 51",
+        "question": "Cho tứ giác $ABCD$ có $\\widehat{A} = 70^\\circ, \\widehat{B} = 110^\\circ$. Khẳng định nào sau đây là ĐÚNG?",
+        "options": [
+          "$AD \\parallel BC$",
+          "$AB \\parallel CD$",
+          "$AC = BD$",
+          "$AB = CD$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $\\widehat{A} + \\widehat{B} = 70^\\circ + 110^\\circ = 180^\\circ$ mà hai góc này ở vị trí trong cùng phía nên $AD \\parallel BC$."
+      },
+      {
+        "id": "quiz-8.10.17",
+        "badge": "Câu 17 (VD) - Phân giác hai góc kề",
+        "source": "Toán 8 KNTT Bài 3.3 Trang 51",
+        "question": "Tứ giác $ABCD$ có hai tia phân giác của góc $A$ và góc $B$ cắt nhau tại điểm $I$. Biết $\\widehat{C} = 80^\\circ$ và $\\widehat{D} = 120^\\circ$. Số đo góc $\\widehat{AIB}$ là:",
+        "options": [
+          "$100^\\circ$",
+          "$90^\\circ$",
+          "$110^\\circ$",
+          "$80^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\widehat{A} + \\widehat{B} = 360^\\circ - (80^\\circ + 120^\\circ) = 160^\\circ$. Trong $\\Delta AIB$: $\\widehat{AIB} = 180^\\circ - \\frac{\\widehat{A} + \\widehat{B}}{2} = 180^\\circ - \\frac{160^\\circ}{2} = 180^\\circ - 80^\\circ = 100^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.18",
+        "badge": "Câu 18 (VD) - Tứ giác có hiệu hai góc",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Cho tứ giác $ABCD$ có $\\widehat{A} = 110^\\circ, \\widehat{B} = 90^\\circ$. Biết $\\widehat{C} - \\widehat{D} = 20^\\circ$. Số đo của góc $C$ là:",
+        "options": [
+          "$90^\\circ$",
+          "$80^\\circ$",
+          "$100^\\circ$",
+          "$70^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tổng $\\widehat{C} + \\widehat{D} = 360^\\circ - (110^\\circ + 90^\\circ) = 160^\\circ$. Lại có $\\widehat{C} - \\widehat{D} = 20^\\circ \\Rightarrow \\widehat{C} = (160^\\circ + 20^\\circ) : 2 = 90^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.19",
+        "badge": "Câu 19 (VD) - Tính góc ngoài tổng hợp",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Cho tứ giác $ABCD$ có các góc ngoài tại đỉnh $A, B, C$ lần lượt là $110^\\circ, 80^\\circ, 100^\\circ$. Số đo góc trong tại đỉnh $D$ là:",
+        "options": [
+          "$110^\\circ$",
+          "$70^\\circ$",
+          "$80^\\circ$",
+          "$100^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Góc ngoài tại đỉnh $D$ là: $360^\\circ - (110^\\circ + 80^\\circ + 100^\\circ) = 70^\\circ$. Do đó góc trong tại đỉnh $D$ là: $180^\\circ - 70^\\circ = 110^\\circ$."
+      },
+      {
+        "id": "quiz-8.10.20",
+        "badge": "Câu 20 (VD - Thực tế) - Góc khung diều",
+        "source": "Toán 8 KNTT Ứng dụng thực tế",
+        "question": "Một khung diều hình tứ giác có hai góc đối bằng nhau: $\\widehat{B} = \\widehat{D} = 108^\\circ$. Góc ở đuôi diều $\\widehat{C} = 64^\\circ$. Số đo góc ở đầu diều $\\widehat{A}$ là:",
+        "options": [
+          "$80^\\circ$",
+          "$75^\\circ$",
+          "$85^\\circ$",
+          "$90^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$\\widehat{A} = 360^\\circ - (108^\\circ + 108^\\circ + 64^\\circ) = 360^\\circ - 280^\\circ = 80^\\circ$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.10.1",
+        "badge": "Câu 1 (Đ/S) - Khẳng định về các góc của tứ giác",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về góc của tứ giác:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tổng bốn góc trong của một tứ giác lồi luôn bằng $360^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, định lí tổng các góc trong tứ giác."
+          },
+          {
+            "id": "b",
+            "text": "Một tứ giác có thể có cả 4 góc đều là góc nhọn.",
+            "correctAnswer": false,
+            "explanation": "Sai, nếu 4 góc đều nhọn thì tổng $< 360^\\circ$."
+          },
+          {
+            "id": "c",
+            "text": "Một tứ giác có thể có nhiều nhất 3 góc nhọn.",
+            "correctAnswer": true,
+            "explanation": "Đúng, khi đó góc thứ tư là góc tù lớn hơn $90^\\circ$."
+          },
+          {
+            "id": "d",
+            "text": "Tứ giác có 3 góc vuông thì góc thứ tư bắt buộc phải là góc vuông.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $360^\\circ - 3 \\times 90^\\circ = 90^\\circ$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.10.2",
+        "badge": "Câu 2 (Đ/S) - Quan sát hình vẽ tứ giác và tính góc",
+        "prompt": "Cho hình vẽ tứ giác $ABCD$ với các số đo góc cho trước. Xét tính đúng/sai của các khẳng định sau:",
+        "svgDiagram": "<svg viewBox=\"0 0 340 210\" class=\"w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"60,50 250,50 280,165 70,165\" fill=\"#0284c7\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n  <line x1=\"70\" y1=\"165\" x2=\"320\" y2=\"165\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"4 3\" />\n  <!-- Góc A = 110° -->\n  <text x=\"78\" y=\"75\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\">110°</text>\n  <text x=\"40\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">A</text>\n  <!-- Góc B = 70° -->\n  <text x=\"225\" y=\"75\" fill=\"#34d399\" font-size=\"12\" font-weight=\"bold\">70°</text>\n  <text x=\"260\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">B</text>\n  <!-- Góc D = 85° -->\n  <text x=\"85\" y=\"155\" fill=\"#facc15\" font-size=\"12\" font-weight=\"bold\">85°</text>\n  <text x=\"52\" y=\"185\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">D</text>\n  <!-- Góc trong C ghi nhãn y, góc ngoài ghi nhãn x (KHÔNG GHI ĐÁP ÁN) -->\n  <text x=\"245\" y=\"155\" fill=\"#a855f7\" font-size=\"13\" font-weight=\"bold\">y</text>\n  <text x=\"285\" y=\"155\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"bold\">x</text>\n  <text x=\"275\" y=\"190\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\">C</text>\n</svg>",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Số đo góc trong $y$ tại đỉnh $C$ bằng $95^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $y = 360^\\circ - (110^\\circ + 70^\\circ + 85^\\circ) = 360^\\circ - 265^\\circ = 95^\\circ$."
+          },
+          {
+            "id": "b",
+            "text": "Số đo góc ngoài $x$ tại đỉnh $C$ bằng $85^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $x = 180^\\circ - 95^\\circ = 85^\\circ$."
+          },
+          {
+            "id": "c",
+            "text": "Hai cạnh $AD$ và $BC$ song song với nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì $\\widehat{A} + \\widehat{B} = 110^\\circ + 70^\\circ = 180^\\circ$ (hai góc trong cùng phía bù nhau)."
+          },
+          {
+            "id": "d",
+            "text": "Tổng góc ngoài tại đỉnh $A$ và góc ngoài tại đỉnh $B$ bằng $180^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $(180^\\circ - 110^\\circ) + (180^\\circ - 70^\\circ) = 70^\\circ + 110^\\circ = 180^\\circ$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.10.3",
+        "badge": "Câu 3 (Đ/S) - Định lí góc ngoài của tứ giác",
+        "prompt": "Xét tính đúng/sai của các khẳng định sau về góc ngoài:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Góc ngoài tại một đỉnh của tứ giác kề bù với góc trong tại đỉnh đó.",
+            "correctAnswer": true,
+            "explanation": "Đúng, theo định nghĩa góc ngoài."
+          },
+          {
+            "id": "b",
+            "text": "Mỗi đỉnh của tứ giác có đúng hai góc ngoài và hai góc ngoài này bằng nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì chúng đối đỉnh."
+          },
+          {
+            "id": "c",
+            "text": "Tổng các góc ngoài tại 4 đỉnh của tứ giác lồi luôn bằng $720^\\circ$.",
+            "correctAnswer": false,
+            "explanation": "Sai, tổng 4 góc ngoài ở 4 đỉnh bằng $360^\\circ$."
+          },
+          {
+            "id": "d",
+            "text": "Nếu tứ giác có 4 góc trong bằng nhau thì 4 góc ngoài cũng bằng nhau và bằng $90^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $180^\\circ - 90^\\circ = 90^\\circ$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.10.4",
+        "badge": "Câu 4 (Đ/S - Thực tế) - Bài toán khung diều và giàn giáo",
+        "prompt": "Xét tính đúng/sai của các bài toán thực tiễn sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Một khung diều hình tứ giác có $\\widehat{A} = 60^\\circ, \\widehat{B} = 110^\\circ, \\widehat{D} = 110^\\circ$ thì góc còn lại $\\widehat{C} = 80^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $360^\\circ - (60^\\circ + 110^\\circ + 110^\\circ) = 80^\\circ$."
+          },
+          {
+            "id": "b",
+            "text": "Một khung cửa sổ hình tứ giác có 3 góc vuông thì góc thứ tư chắc chắn bằng $90^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $360^\\circ - 270^\\circ = 90^\\circ$."
+          },
+          {
+            "id": "c",
+            "text": "Một giàn giáo hình tứ giác có 4 góc tỉ lệ với $1 : 1 : 1 : 1$ thì các góc đều là góc vuông.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $360^\\circ : 4 = 90^\\circ$."
+          },
+          {
+            "id": "d",
+            "text": "Một cái bàn hình tứ giác có thể có 4 góc lần lượt là $85^\\circ, 85^\\circ, 85^\\circ, 85^\\circ$.",
+            "correctAnswer": false,
+            "explanation": "Sai, tổng bằng $340^\\circ \\ne 360^\\circ$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.10.1",
+        "badge": "Câu 1 (NB) - Tính số đo góc thứ tư",
+        "prompt": "Cho tứ giác $ABCD$ có $\\widehat{A} = 70^\\circ, \\widehat{B} = 120^\\circ, \\widehat{C} = 80^\\circ$. Số đo của góc $D$ bằng bao nhiêu độ?",
+        "correctAnswer": "90",
+        "acceptableAnswers": [
+          "90",
+          "90°",
+          "chín mươi"
+        ],
+        "explanation": "$\\widehat{D} = 360^\\circ - (70^\\circ + 120^\\circ + 80^\\circ) = 360^\\circ - 270^\\circ = 90^\\circ$."
+      },
+      {
+        "id": "sa-8.10.2",
+        "badge": "Câu 2 (TH) - Tính góc x trong hình vẽ",
+        "prompt": "Cho tứ giác $ABCD$ có $\\widehat{A} = 105^\\circ, \\widehat{B} = 115^\\circ$ và hai góc $\\widehat{C} = \\widehat{D} = x$. Giá trị của $x$ bằng bao nhiêu độ?",
+        "correctAnswer": "70",
+        "acceptableAnswers": [
+          "70",
+          "70°",
+          "bảy mươi"
+        ],
+        "explanation": "$2x = 360^\\circ - (105^\\circ + 115^\\circ) = 360^\\circ - 220^\\circ = 140^\\circ \\Rightarrow x = 70^\\circ$."
+      },
+      {
+        "id": "sa-8.10.3",
+        "badge": "Câu 3 (TH) - Tìm góc lớn nhất khi biết tỉ lệ",
+        "prompt": "Một tứ giác có các góc tỉ lệ $1 : 2 : 3 : 6$. Số đo góc lớn nhất bằng bao nhiêu độ?",
+        "correctAnswer": "180",
+        "acceptableAnswers": [
+          "180",
+          "180°"
+        ],
+        "explanation": "Tổng số phần: $1+2+3+6 = 12$ phần. Một phần: $360^\\circ : 12 = 30^\\circ$. Góc lớn nhất: $6 \\times 30^\\circ = 180^\\circ$ (đây là trường hợp suy biến trên đường thẳng)."
+      },
+      {
+        "id": "sa-8.10.4",
+        "badge": "Câu 4 (TH) - Tính góc ngoài",
+        "prompt": "Góc trong tại đỉnh $B$ của tứ giác bằng $125^\\circ$. Góc ngoài tại đỉnh $B$ bằng bao nhiêu độ?",
+        "correctAnswer": "55",
+        "acceptableAnswers": [
+          "55",
+          "55°",
+          "năm mươi lăm"
+        ],
+        "explanation": "$180^\\circ - 125^\\circ = 55^\\circ$."
+      },
+      {
+        "id": "sa-8.10.5",
+        "badge": "Câu 5 (VD) - Góc tạo bởi hai phân giác",
+        "prompt": "Tứ giác $ABCD$ có $\\widehat{C} = 70^\\circ, \\widehat{D} = 110^\\circ$. Hai tia phân giác của góc $A$ và góc $B$ cắt nhau tại $I$. Số đo góc $\\widehat{AIB}$ bằng bao nhiêu độ?",
+        "correctAnswer": "90",
+        "acceptableAnswers": [
+          "90",
+          "90°",
+          "chín mươi"
+        ],
+        "explanation": "$\\widehat{A} + \\widehat{B} = 360^\\circ - (70^\\circ + 110^\\circ) = 180^\\circ$. $\\widehat{AIB} = 180^\\circ - \\frac{180^\\circ}{2} = 90^\\circ$."
+      },
+      {
+        "id": "sa-8.10.6",
+        "badge": "Câu 6 (VD - Thực tế) - Góc đầu diều",
+        "prompt": "Một khung diều tứ giác có hai góc cánh $\\widehat{B} = \\widehat{D} = 110^\\circ$, góc đuôi $\\widehat{C} = 75^\\circ$. Số đo góc đầu diều $\\widehat{A}$ bằng bao nhiêu độ?",
+        "correctAnswer": "65",
+        "acceptableAnswers": [
+          "65",
+          "65°",
+          "sáu mươi lăm"
+        ],
+        "explanation": "$\\widehat{A} = 360^\\circ - (110^\\circ + 110^\\circ + 75^\\circ) = 360^\\circ - 295^\\circ = 65^\\circ$."
+      }
+    ]
+  },
 };

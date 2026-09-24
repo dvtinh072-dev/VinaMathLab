@@ -9203,5 +9203,703 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "explanation": "Chân mái đê: $d = \\frac{14 - 6}{2} = 4\\text{ m}$. Chiều cao con đê $h = \\sqrt{5^2 - 4^2} = \\sqrt{25 - 16} = 3\\text{ m}$."
       }
     ]
-  }
+  },
+  "t8-b12-hinh-binh-hanh": {
+    "id": "t8-b12-hinh-binh-hanh",
+    "lessonNumber": 12,
+    "title": "Bài 12: Hình bình hành",
+    "bookChapter": "Chương III: Tứ giác",
+    "scenarioTitle": "Tình huống: Cánh cổng xếp tự động và Cơ cấu kích nâng xe ô tô",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn An",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, mỗi lần đến trường em đều ngắm chiếc cổng xếp tự động đóng mở. Khi co lại hay kéo dãn ra, các thanh thép đan chéo luôn tạo thành những tứ giác có các cạnh đối luôn song song và bằng nhau. Tại sao các kỹ sư lại sử dụng kết cấu này mà không phải hình vuông hay tam giác ạ?",
+        "visualGraphic": "box",
+        "mathNote": "AB \\parallel CD, \\ AD \\parallel BC"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào An! Câu hỏi rất thú vị! Đó chính là ứng dụng tuyệt vời của hình bình hành. Hình bình hành là tứ giác có các cạnh đối song song. Đặc biệt, các cạnh đối luôn bằng nhau và hai đường chéo luôn cắt nhau tại trung điểm của mỗi đường. Nhờ cơ cấu này, khi một cạnh chuyển động thì cạnh đối diện luôn song song và chuyển động tịnh tiến cùng chiều, giúp cánh cổng kéo trượt nhẹ nhàng, không bị kẹt hay đổ nghiêng. Các kích nâng xe ô tô, giàn phơi thông minh hay cánh tay robot cũng ứng dụng cơ cấu hình bình hành này đấy! Thầy trò mình cùng khám phá trọn vẹn kiến thức bài học này nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "AB = CD, \\ AD = BC, \\ OA = OC, \\ OB = OD"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Định nghĩa Hình bình hành",
+        "points": [
+          "• **Định nghĩa:** Hình bình hành là tứ giác có các cạnh đối song song.",
+          "• Tứ giác $ABCD$ là hình bình hành $\\iff \\begin{cases} AB \\parallel CD \\\\ AD \\parallel BC \\end{cases}$",
+          "• **Mối liên hệ với hình thang:** Hình bình hành là một trường hợp đặc biệt của hình thang (hình thang có hai cạnh bên song song)."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 56)",
+        "exampleProblem": "Cho tam giác $ABC$. Lấy điểm $D$ sao cho $C$ là trung điểm của $AD$. Qua $D$ kẻ đường thẳng song song với $BC$ cắt $AB$ tại $E$. Tứ giác $BCDE$ có phải là hình bình hành không?",
+        "exampleSolution": "Theo giả thiết ta có $DE \\parallel BC$, do đó tứ giác $BCDE$ là hình thang.\n" +
+          "Nếu chứng minh được thêm $BE \\parallel CD$ thì tứ giác $BCDE$ là hình bình hành theo định nghĩa (có các cạnh đối song song).",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa chuẩn SGK: Hình bình hành ABCD",
+            "problem": "Quan sát các cặp cạnh đối song song trong hình bình hành ABCD:",
+            "solution": "Cạnh AB song song với CD, cạnh AD song song với BC.",
+            "svgDiagram": "<svg viewBox='0 0 380 200' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='110,45 290,45 250,155 70,155' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.5' stroke-linejoin='round'/><path d='M 185,41 L 195,45 L 185,49' fill='none' stroke='#38bdf8' stroke-width='2'/><path d='M 145,151 L 155,155 L 145,159' fill='none' stroke='#38bdf8' stroke-width='2'/><path d='M 86,95 L 90,105 L 94,95' fill='none' stroke='#f59e0b' stroke-width='2'/><path d='M 266,95 L 270,105 L 274,95' fill='none' stroke='#f59e0b' stroke-width='2'/><text x='100' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='298' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='256' y='172' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='56' y='172' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='190' y='185' fill='#38bdf8' font-size='11' text-anchor='middle'>AB \\parallel CD \\quad \\text{và} \\quad AD \\parallel BC</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "Tính chất của Hình bình hành",
+        "points": [
+          "Trong một hình bình hành:",
+          "• **Tính chất cạnh:** Các cạnh đối bằng nhau ($AB = CD, AD = BC$).",
+          "• **Tính chất góc:** Các góc đối bằng nhau ($\\widehat{A} = \\widehat{C}, \\widehat{B} = \\widehat{D}$).",
+          "• **Tính chất góc kề:** Hai góc kề một cạnh bất kì luôn bù nhau: $\\widehat{A} + \\widehat{B} = 180^\\circ, \\widehat{B} + \\widehat{C} = 180^\\circ, \\widehat{C} + \\widehat{D} = 180^\\circ, \\widehat{D} + \\widehat{A} = 180^\\circ$.",
+          "• **Tính chất đường chéo:** Hai đường chéo cắt nhau tại trung điểm của mỗi đường ($OA = OC, OB = OD$).",
+          "• **Tâm đối xứng:** Giao điểm $O$ của hai đường chéo là tâm đối xứng của hình bình hành."
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 57)",
+        "exampleProblem": "Cho hình bình hành $ABCD$ có $\\widehat{A} = 110^\\circ$. Tính số đo các góc còn lại của hình bình hành.",
+        "exampleSolution": "Vì $ABCD$ là hình bình hành nên:\n" +
+          "• Các góc đối bằng nhau: $\\widehat{C} = \\widehat{A} = 110^\\circ$.\n" +
+          "• Hai góc kề một cạnh bù nhau: $\\widehat{B} = 180^\\circ - \\widehat{A} = 180^\\circ - 110^\\circ = 70^\\circ$.\n" +
+          "• Góc đối với góc $B$: $\\widehat{D} = \\widehat{B} = 70^\\circ$.\n" +
+          "Vậy $\\widehat{B} = 70^\\circ, \\widehat{C} = 110^\\circ, \\widehat{D} = 70^\\circ$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Hai đường chéo cắt nhau tại trung điểm O",
+            "problem": "Quan sát giao điểm O là trung điểm của AC và BD trong hình bình hành ABCD:",
+            "solution": "OA = OC (gạch 1 vạch) và OB = OD (gạch 2 vạch). O là tâm đối xứng.",
+            "svgDiagram": "<svg viewBox='0 0 380 210' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='110,45 290,45 250,165 70,165' fill='none' stroke='#38bdf8' stroke-width='2.2'/><line x1='110' y1='45' x2='250' y2='165' stroke='#f43f5e' stroke-width='1.8'/><line x1='290' y1='45' x2='70' y2='165' stroke='#fbbf24' stroke-width='1.8'/><circle cx='180' cy='105' r='3.5' fill='#a855f7'/><text x='180' y='98' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><line x1='142' y1='73' x2='148' y2='77' stroke='#f43f5e' stroke-width='2'/><line x1='212' y1='133' x2='218' y2='137' stroke='#f43f5e' stroke-width='2'/><line x1='122' y1='132' x2='128' y2='138' stroke='#fbbf24' stroke-width='2'/><line x1='126' y1='130' x2='132' y2='136' stroke='#fbbf24' stroke-width='2'/><line x1='232' y1='72' x2='238' y2='78' stroke='#fbbf24' stroke-width='2'/><line x1='236' y1='70' x2='242' y2='76' stroke='#fbbf24' stroke-width='2'/><text x='100' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='298' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='256' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='56' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='180' y='198' fill='#34d399' font-size='11' text-anchor='middle'>OA = OC \\quad \\text{và} \\quad OB = OD</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "Dấu hiệu nhận biết Hình bình hành",
+        "points": [
+          "Một tứ giác là hình bình hành nếu thỏa mãn một trong 5 dấu hiệu sau:",
+          "1. **Dấu hiệu 1 (Theo cạnh đối song song):** Tứ giác có các cạnh đối song song là hình bình hành.",
+          "2. **Dấu hiệu 2 (Theo cạnh đối bằng nhau):** Tứ giác có các cạnh đối bằng nhau là hình bình hành ($AB = CD$ và $AD = BC$).",
+          "3. **Dấu hiệu 3 (Một cặp cạnh vừa song song vừa bằng nhau):** Tứ giác có một cặp cạnh đối song song và bằng nhau là hình bình hành ($AB \\parallel CD$ và $AB = CD$). *(Dấu hiệu hay dùng nhất!)*",
+          "4. **Dấu hiệu 4 (Theo góc đối bằng nhau):** Tứ giác có các góc đối bằng nhau là hình bình hành ($\\widehat{A} = \\widehat{C}$ và $\\widehat{B} = \\widehat{D}$).",
+          "5. **Dấu hiệu 5 (Theo đường chéo):** Tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường là hình bình hành.",
+          "⚠️ **CẢNH BÁO BẪY KINH ĐIỂN:** 'Tứ giác có một cặp cạnh đối song song VÀ một cặp cạnh đối bằng nhau' CHƯA CHẮC là hình bình hành! (Vì nếu $AB \\parallel CD$ nhưng lại cho $AD = BC$ thì đó có thể là **hình thang cân**)."
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 58)",
+        "exampleProblem": "Cho hình bình hành $ABCD$. Gọi $E$ là trung điểm của $AB$, $F$ là trung điểm của $CD$. Chứng minh tứ giác $AECF$ là hình bình hành.",
+        "exampleSolution": "• Vì $ABCD$ là hình bình hành nên $AB \\parallel CD$ và $AB = CD$.\n" +
+          "• Vì $E$ là trung điểm của $AB$ nên $AE = \\frac{1}{2}AB$.\n" +
+          "• Vì $F$ là trung điểm của $CD$ nên $CF = \\frac{1}{2}CD$.\n" +
+          "• Suy ra $AE = CF$.\n" +
+          "• Mặt khác, $E \\in AB, F \\in CD$ mà $AB \\parallel CD$ nên $AE \\parallel CF$.\n" +
+          "• Tứ giác $AECF$ có một cặp cạnh đối song song và bằng nhau ($AE \\parallel CF$ và $AE = CF$) nên $AECF$ là hình bình hành (theo Dấu hiệu 3).",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Dấu hiệu 1 cặp cạnh vừa song song vừa bằng nhau",
+            "problem": "Chứng minh tứ giác AECF là hình bình hành từ hình bình hành ABCD:",
+            "solution": "Đoạn AE song song và bằng đoạn CF, suy ra AECF là hình bình hành.",
+            "svgDiagram": "<svg viewBox='0 0 400 200' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='90,45 310,45 270,155 50,155' fill='none' stroke='#475569' stroke-width='1.5' stroke-dasharray='4 3'/><polygon points='90,45 200,45 270,155 160,155' fill='rgba(16, 185, 129, 0.1)' stroke='#10b981' stroke-width='2.2'/><circle cx='200' cy='45' r='3.5' fill='#34d399'/><circle cx='160' cy='155' r='3.5' fill='#34d399'/><text x='80' y='40' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='318' y='40' fill='#94a3b8' font-size='13'>B</text><text x='278' y='170' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='38' y='170' fill='#94a3b8' font-size='13'>D</text><text x='200' y='36' fill='#34d399' font-size='12' font-weight='bold' text-anchor='middle'>E</text><text x='160' y='175' fill='#34d399' font-size='12' font-weight='bold' text-anchor='middle'>F</text><text x='200' y='192' fill='#10b981' font-size='11' text-anchor='middle'>AE \\parallel CF \\quad \\text{và} \\quad AE = CF \\implies AECF \\text{ là HBH}</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "Ứng dụng tính toán: Chu vi, Diện tích và Kỹ thuật chứng minh",
+        "points": [
+          "• **Chu vi hình bình hành:** $C = 2(a + b)$, trong đó $a, b$ là độ dài hai cạnh kề.",
+          "• **Diện tích hình bình hành:** $S = a \\cdot h$, trong đó $a$ là độ dài một cạnh đáy và $h$ là chiều cao tương ứng hạ vuông góc xuống cạnh đáy đó ($h = AH \\perp CD$).",
+          "• **Kỹ thuật chứng minh 3 điểm thẳng hàng:** Nếu $O$ là trung điểm của đường chéo $AC$ trong hình bình hành $ABCD$, và cần chứng minh $B, O, D$ thẳng hàng, ta chỉ cần chỉ ra $ABCD$ là hình bình hành $\\implies O$ cũng là trung điểm của $BD \\implies B, O, D$ thẳng hàng.",
+          "• **Phân giác góc trong tạo tam giác cân:** Nếu tia phân giác của góc $A$ cắt cạnh $CD$ tại $M$, thì $\\triangle ADM$ là tam giác cân tại $D$ vì $\\widehat{DAM} = \\widehat{DMA}$ (so le trong)."
+        ],
+        "exampleTitle": "Ví dụ 4 (Tính chu vi và diện tích hình bình hành)",
+        "exampleProblem": "Một mảnh đất hình bình hành có cạnh đáy dài $25\\text{ m}$, cạnh bên dài $15\\text{ m}$ và chiều cao tương ứng với cạnh đáy dài $12\\text{ m}$. Tính chu vi và diện tích mảnh đất.",
+        "exampleSolution": "• Chu vi mảnh đất là: $C = 2 \\times (25 + 15) = 2 \\times 40 = 80\\text{ (m)}$.\n" +
+          "• Diện tích mảnh đất là: $S = 25 \\times 12 = 300\\text{ (m}^2\\text{)}$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Chiều cao và diện tích hình bình hành",
+            "problem": "Quan sát cạnh đáy CD = a và đường cao tương ứng AH = h:",
+            "solution": "Diện tích S = a . h. Tam giác ADH vuông tại H cho phép áp dụng Pythagoras.",
+            "svgDiagram": "<svg viewBox='0 0 380 200' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='110,45 290,45 250,155 70,155' fill='rgba(59, 130, 246, 0.06)' stroke='#38bdf8' stroke-width='2.2'/><line x1='110' y1='45' x2='110' y2='155' stroke='#f59e0b' stroke-width='1.8' stroke-dasharray='4 3'/><rect x='110' y='143' width='12' height='12' fill='none' stroke='#f59e0b' stroke-width='1.5'/><text x='100' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='298' y='38' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='256' y='170' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='56' y='170' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='106' y='172' fill='#f59e0b' font-size='12' font-weight='bold'>H</text><text x='96' y='105' fill='#f59e0b' font-size='12' font-weight='bold'>h</text><text x='160' y='175' fill='#38bdf8' font-size='12' font-weight='bold' text-anchor='middle'>đáy CD = a</text><text x='190' y='192' fill='#94a3b8' font-size='11' text-anchor='middle'>S = a \\cdot h</text></svg>"
+          }
+        ]
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_b12_video1",
+        "title": "Tiết 1: Định nghĩa và các tính chất của hình bình hành (SGK Toán 8 KNTT)"
+      },
+      {
+        "id": "t8_b12_video2",
+        "title": "Tiết 2: 5 Dấu hiệu nhận biết hình bình hành và bài tập chứng minh"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.12.1",
+        "timeSeconds": 150,
+        "timeLabel": "02:30",
+        "title": "Định nghĩa hình bình hành",
+        "question": "Hình bình hành là tứ giác có đặc điểm nào sau đây?",
+        "options": [
+          "Các cạnh đối song song",
+          "Bốn cạnh bằng nhau",
+          "Hai đường chéo vuông góc",
+          "Bốn góc bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, hình bình hành là tứ giác có các cạnh đối song song."
+      },
+      {
+        "id": "vq-8.12.2",
+        "timeSeconds": 380,
+        "timeLabel": "06:20",
+        "title": "Tính chất đường chéo",
+        "question": "Trong hình bình hành, hai đường chéo có tính chất gì?",
+        "options": [
+          "Cắt nhau tại trung điểm của mỗi đường",
+          "Bằng nhau và vuông góc với nhau",
+          "Là phân giác của các góc",
+          "Luôn vuông góc với nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Định lí tính chất: Trong hình bình hành, hai đường chéo cắt nhau tại trung điểm của mỗi đường."
+      },
+      {
+        "id": "vq-8.12.3",
+        "timeSeconds": 620,
+        "timeLabel": "10:20",
+        "title": "Dấu hiệu nhận biết",
+        "question": "Tứ giác nào sau đây CHẮC CHẮN là hình bình hành?",
+        "options": [
+          "Tứ giác có một cặp cạnh đối song song và bằng nhau",
+          "Tứ giác có một cặp cạnh đối song song và một cặp cạnh đối bằng nhau",
+          "Tứ giác có hai đường chéo bằng nhau",
+          "Tứ giác có hai góc đối bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 3: Tứ giác có một cặp cạnh đối vừa song song vừa bằng nhau là hình bình hành."
+      },
+      {
+        "id": "vq-8.12.4",
+        "timeSeconds": 850,
+        "timeLabel": "14:10",
+        "title": "Tính góc kề",
+        "question": "Hình bình hành $ABCD$ có $\\widehat{A} = 75^\\circ$. Số đo góc $B$ bằng:",
+        "options": [
+          "105°",
+          "75°",
+          "115°",
+          "90°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai góc kề một cạnh của hình bình hành bù nhau: $\\widehat{B} = 180^\\circ - 75^\\circ = 105^\\circ$."
+      }
+    ],
+    "tips": [
+      "Mẹo 1: Dấu hiệu '1 cặp cạnh vừa song song vừa bằng nhau' là con đường ngắn nhất và xuất hiện nhiều nhất khi chứng minh hình bình hành.",
+      "Mẹo 2: Hai góc kề một cạnh luôn bù nhau (tổng bằng 180°). Biết 1 góc là tính được ngay 3 góc còn lại của hình bình hành!",
+      "Mẹo 3: Muốn chứng minh 3 điểm thẳng hàng, hãy tìm một hình bình hành nhận đoạn thẳng nối 2 điểm làm đường chéo, điểm thứ ba là trung điểm đường chéo kia.",
+      "Mẹo 4: Giao điểm hai đường chéo là tâm đối xứng. Hai đường chéo chia hình bình hành thành 4 tam giác có diện tích bằng nhau!"
+    ],
+    "traps": [
+      "Bẫy 1: Ngộ nhận 'Tứ giác có 1 cặp cạnh song song và 1 cặp cạnh bằng nhau là hình bình hành'. Cực kỳ sai! Nếu cặp song song khác cặp bằng nhau thì đó là HÌNH THANG CÂN!",
+      "Bẫy 2: Ngộ nhận hai đường chéo hình bình hành bằng nhau hoặc vuông góc. Hình bình hành nói chung KHÔNG có hai đường chéo bằng nhau hay vuông góc (đó là hình chữ nhật hoặc hình thoi).",
+      "Bẫy 3: Ngộ nhận đường chéo là phân giác các góc. Đường chéo hình bình hành thường không phải là phân giác.",
+      "Bẫy 4: Tính sai diện tích: Lấy tích hai cạnh kề a . b (sai). Diện tích đúng phải là a . h (cạnh đáy nhân chiều cao tương ứng)."
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.12.1",
+        "badge": "Câu 1 (NB) - Định nghĩa hình bình hành",
+        "source": "SGK Toán 8 KNTT Trang 56",
+        "question": "Hình bình hành là tứ giác có:",
+        "options": [
+          "Các cạnh đối song song",
+          "Bốn cạnh bằng nhau",
+          "Hai đường chéo vuông góc",
+          "Bốn góc bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa, hình bình hành là tứ giác có các cạnh đối song song."
+      },
+      {
+        "id": "quiz-8.12.2",
+        "badge": "Câu 2 (NB) - Tính chất góc đối",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Cho hình bình hành $ABCD$ có $\\widehat{A} = 110^\\circ$. Số đo góc $x$ tại đỉnh $C$ trong hình vẽ là:",
+        "options": [
+          "$x = 110^\\circ$",
+          "$x = 70^\\circ$",
+          "$x = 80^\\circ$",
+          "$x = 120^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình bình hành, hai góc đối bằng nhau nên $x = \\widehat{C} = \\widehat{A} = 110^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 82,85 A 22 22 0 0 1 122,40' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='105' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>110°</text><path d='M 198,140 A 22 22 0 0 1 238,95' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='202' y='122' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+      },
+      {
+        "id": "quiz-8.12.3",
+        "badge": "Câu 3 (TH) - Hai góc kề bù nhau",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Cho hình bình hành $ABCD$ có $\\widehat{A} = 120^\\circ$. Số đo góc $x$ tại đỉnh $B$ trong hình vẽ là:",
+        "options": [
+          "$x = 60^\\circ$",
+          "$x = 120^\\circ$",
+          "$x = 70^\\circ$",
+          "$x = 90^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình bình hành, hai góc kề một cạnh luôn bù nhau: $\\widehat{A} + \\widehat{B} = 180^\\circ \\implies x = 180^\\circ - 120^\\circ = 60^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 80,88 A 22 22 0 0 1 122,40' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='105' y='68' fill='#38bdf8' font-size='11' font-weight='bold'>120°</text><path d='M 238,40 A 22 22 0 0 0 248,65' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='240' y='65' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+      },
+      {
+        "id": "quiz-8.12.4",
+        "badge": "Câu 4 (NB) - Tính chất cạnh đối",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Cho hình bình hành $ABCD$ có $AB = 8\\text{ cm}$ và $AD = 5\\text{ cm}$. Độ dài cạnh $CD$ có giá trị $x$ bằng:",
+        "options": [
+          "$x = 8\text{ cm}$",
+          "$x = 5\text{ cm}$",
+          "$x = 13\text{ cm}$",
+          "$x = 10\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình bình hành, các cạnh đối bằng nhau nên $x = CD = AB = 8\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><text x='180' y='34' fill='#38bdf8' font-size='11' font-weight='bold' text-anchor='middle'>8 cm</text><text x='70' y='90' fill='#f59e0b' font-size='11' font-weight='bold'>5 cm</text><text x='140' y='158' fill='#f43f5e' font-size='14' font-weight='bold' text-anchor='middle'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+      },
+      {
+        "id": "quiz-8.12.5",
+        "badge": "Câu 5 (TH) - Giao điểm hai đường chéo",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Hình bình hành $ABCD$ có hai đường chéo cắt nhau tại $O$. Biết $OA = 4\\text{ cm}$. Độ dài đường chéo $AC$ bằng:",
+        "options": [
+          "8 cm",
+          "4 cm",
+          "16 cm",
+          "2 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $O$ là trung điểm của $AC$ nên $AC = 2 \\times OA = 2 \\times 4 = 8\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.6",
+        "badge": "Câu 6 (NB) - Tâm đối xứng",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Tâm đối xứng của hình bình hành $ABCD$ là điểm nào sau đây?",
+        "options": [
+          "Giao điểm của hai đường chéo AC và BD",
+          "Trung điểm của cạnh đáy AB",
+          "Đỉnh A của hình bình hành",
+          "Giao điểm của hai cạnh bên AD và BC"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình bình hành, giao điểm của hai đường chéo là tâm đối xứng của hình bình hành đó."
+      },
+      {
+        "id": "quiz-8.12.7",
+        "badge": "Câu 7 (TH) - Dấu hiệu nhận biết",
+        "source": "SGK Toán 8 KNTT Trang 58",
+        "question": "Tứ giác $ABCD$ có $AB \\parallel CD$ và $AB = CD$. Tứ giác $ABCD$ là hình gì?",
+        "options": [
+          "Hình bình hành",
+          "Hình thang cân",
+          "Hình thang vuông",
+          "Tứ giác không xác định"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 3: Tứ giác có một cặp cạnh đối song song và bằng nhau là hình bình hành."
+      },
+      {
+        "id": "quiz-8.12.8",
+        "badge": "Câu 8 (TH) - Cảnh giác bẫy nhận biết",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Khẳng định nào sau đây là SAI?",
+        "options": [
+          "Tứ giác có hai cạnh đối song song và hai cạnh đối kia bằng nhau luôn là hình bình hành",
+          "Tứ giác có các cạnh đối bằng nhau là hình bình hành",
+          "Tứ giác có các góc đối bằng nhau là hình bình hành",
+          "Tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường là hình bình hành"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khẳng định A là SAI, vì tứ giác có một cặp cạnh đối song song và một cặp cạnh đối kia bằng nhau có thể là HÌNH THANG CÂN."
+      },
+      {
+        "id": "quiz-8.12.9",
+        "badge": "Câu 9 (TH) - Tính chu vi hình bình hành",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Một hình bình hành có độ dài hai cạnh kề là $5\\text{ cm}$ và $7\\text{ cm}$. Chu vi của hình bình hành đó bằng:",
+        "options": [
+          "24 cm",
+          "12 cm",
+          "35 cm",
+          "20 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chu vi hình bình hành là: $C = 2 \\times (5 + 7) = 2 \\times 12 = 24\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.10",
+        "badge": "Câu 10 (VD) - Kẻ đường cao tính góc",
+        "source": "SGK Toán 8 KNTT Trang 59",
+        "question": "Cho hình bình hành $ABCD$ có $\\widehat{D} = 60^\\circ$. Kẻ đường cao $AH \\perp CD$ ($H \\in CD$). Số đo góc $x = \\widehat{DAH}$ trong hình vẽ là:",
+        "options": [
+          "$x = 30^\\circ$",
+          "$x = 60^\\circ$",
+          "$x = 45^\\circ$",
+          "$x = 40^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong tam giác vuông $\\triangle AHD$ vuông tại $H$, ta có: $x = \\widehat{DAH} = 90^\\circ - \\widehat{D} = 90^\\circ - 60^\\circ = 30^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 190' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='110,40 270,40 220,145 60,145' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><line x1='110' y1='40' x2='110' y2='145' stroke='#f59e0b' stroke-width='1.8' stroke-dasharray='4 3'/><rect x='110' y='133' width='12' height='12' fill='none' stroke='#f59e0b' stroke-width='1.5'/><path d='M 80,145 A 20 20 0 0 1 73,126' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='82' y='138' fill='#38bdf8' font-size='11' font-weight='bold'>60°</text><path d='M 110,62 A 22 22 0 0 1 97,55' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='114' y='68' fill='#f43f5e' font-size='13' font-weight='bold'>x</text><text x='100' y='34' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='278' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='106' y='160' fill='#f59e0b' font-size='12' font-weight='bold'>H</text></svg>"
+      },
+      {
+        "id": "quiz-8.12.11",
+        "badge": "Câu 11 (VD) - Tính diện tích hình bình hành",
+        "source": "SGK Toán 8 KNTT Trang 59",
+        "question": "Hình bình hành có cạnh đáy dài $12\\text{ cm}$ và chiều cao tương ứng bằng $5\\text{ cm}$. Diện tích của hình bình hành đó bằng:",
+        "options": [
+          "60 cm²",
+          "30 cm²",
+          "120 cm²",
+          "34 cm²"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diện tích hình bình hành là: $S = a \\times h = 12 \\times 5 = 60\\text{ (cm}^2\\text{)}$."
+      },
+      {
+        "id": "quiz-8.12.12",
+        "badge": "Câu 12 (VD) - Hiệu hai góc kề",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Hình bình hành $ABCD$ có $\\widehat{A} - \\widehat{B} = 40^\\circ$. Số đo góc $A$ bằng:",
+        "options": [
+          "110°",
+          "70°",
+          "120°",
+          "100°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\widehat{A} + \\widehat{B} = 180^\\circ$ và $\\widehat{A} - \\widehat{B} = 40^\\circ$. Cộng vế theo vế: $2\\widehat{A} = 220^\\circ \\implies \\widehat{A} = 110^\\circ$."
+      },
+      {
+        "id": "quiz-8.12.13",
+        "badge": "Câu 13 (VD) - Hai góc kề tỉ lệ",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Hình bình hành $ABCD$ có $\\widehat{A} = 2\\widehat{B}$. Số đo góc nhọn của hình bình hành bằng:",
+        "options": [
+          "60°",
+          "120°",
+          "45°",
+          "30°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $\\widehat{A} + \\widehat{B} = 180^\\circ \\implies 2\\widehat{B} + \\widehat{B} = 180^\\circ \\implies 3\\widehat{B} = 180^\\circ \\implies \\widehat{B} = 60^\\circ$."
+      },
+      {
+        "id": "quiz-8.12.14",
+        "badge": "Câu 14 (TH) - Giao điểm hai đường chéo chia độ dài",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Cho hình bình hành $ABCD$ có $AC = 10\\text{ cm}$ và $BD = 14\\text{ cm}$. Hai đường chéo cắt nhau tại $O$. Độ dài đoạn thẳng $OB$ bằng:",
+        "options": [
+          "7 cm",
+          "5 cm",
+          "14 cm",
+          "12 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình bình hành, $O$ là trung điểm của $BD$ nên $OB = \\frac{BD}{2} = \\frac{14}{2} = 7\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.15",
+        "badge": "Câu 15 (VD) - Phân giác tạo tam giác cân",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Cho hình bình hành $ABCD$ ($AB > BC$). Tia phân giác của góc $A$ cắt cạnh $CD$ tại $E$. Khẳng định nào sau đây là ĐÚNG?",
+        "options": [
+          "Tam giác ADE cân tại D",
+          "Tam giác ADE đều",
+          "Tam giác ADE vuông tại E",
+          "Tam giác ADE cân tại A"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $AE$ là phân giác của $\\widehat{A}$ nên $\\widehat{DAE} = \\widehat{EAB}$. Mà $AB \\parallel CD$ nên $\\widehat{EAB} = \\widehat{DEA}$ (so le trong) $\\implies \\widehat{DAE} = \\widehat{DEA} \\implies \\triangle ADE$ cân tại $D$."
+      },
+      {
+        "id": "quiz-8.12.16",
+        "badge": "Câu 16 (VD) - Tính cạnh đáy từ chu vi",
+        "source": "SGK Toán 8 KNTT Trang 58",
+        "question": "Hình bình hành $ABCD$ có chu vi bằng $40\\text{ cm}$ và cạnh $AB$ dài hơn cạnh $BC$ là $4\\text{ cm}$. Độ dài cạnh $AB$ bằng:",
+        "options": [
+          "12 cm",
+          "8 cm",
+          "16 cm",
+          "10 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nửa chu vi là: $AB + BC = 40 : 2 = 20\\text{ cm}$. Độ dài cạnh $AB = (20 + 4) : 2 = 12\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.17",
+        "badge": "Câu 17 (VDC) - Trung điểm và hình bình hành con",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Cho hình bình hành $ABCD$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$. Đường chéo $BD$ cắt $AN$ tại $P$ và cắt $CM$ tại $Q$. Tỉ số $DP : PQ : QB$ bằng:",
+        "options": [
+          "1 : 1 : 1",
+          "1 : 2 : 1",
+          "2 : 1 : 2",
+          "1 : 3 : 1"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định lí đường trung bình và tính chất hình bình hành, hai đoạn $AN$ và $CM$ song song với nhau và chia đường chéo $BD$ thành 3 đoạn bằng nhau: $DP = PQ = QB$."
+      },
+      {
+        "id": "quiz-8.12.18",
+        "badge": "Câu 18 (VD - Thực tế) - Giàn phơi thông minh",
+        "source": "SGK Toán 8 KNTT Trang 59",
+        "question": "Một khung giàn phơi quần áo thông minh xếp theo cơ cấu hình bình hành với thanh ngang $a = 60\\text{ cm}$ và thanh nghiêng $b = 30\\text{ cm}$. Khi nâng hạ thanh ngang, khoảng cách giữa hai đầu thanh nghiêng luôn bằng bao nhiêu để giàn phơi giữ thăng bằng?",
+        "options": [
+          "60 cm",
+          "30 cm",
+          "90 cm",
+          "45 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong cơ cấu hình bình hành, hai cạnh đối luôn song song và bằng nhau nên khoảng cách giữa hai đầu luôn bằng độ dài thanh ngang $a = 60\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.19",
+        "badge": "Câu 19 (VD - Thực tế) - Kích nâng xe ô tô",
+        "source": "SGK Toán 8 KNTT Trang 59",
+        "question": "Một chiếc kích nâng xe ô tô hoạt động theo cơ cấu hình thoi/hình bình hành 4 thanh bằng nhau dài $25\\text{ cm}$. Khi hai khớp đối diện cách nhau $30\\text{ cm}$, chiều cao nâng được của kích bằng bao nhiêu?",
+        "options": [
+          "40 cm",
+          "35 cm",
+          "20 cm",
+          "50 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai đường chéo cắt nhau tại trung điểm và vuông góc. Nửa đường chéo ngang: $30 : 2 = 15\\text{ cm}$. Nửa đường chéo đứng: $\\sqrt{25^2 - 15^2} = \\sqrt{625 - 225} = 20\\text{ cm}$. Chiều cao nâng là: $2 \\times 20 = 40\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.12.20",
+        "badge": "Câu 20 (TH) - Góc ngoài của hình bình hành",
+        "source": "SGK Toán 8 KNTT Trang 57",
+        "question": "Hình bình hành $ABCD$ có $\\widehat{A} = 70^\\circ$. Số đo góc ngoài tại đỉnh $B$ bằng:",
+        "options": [
+          "70°",
+          "110°",
+          "120°",
+          "80°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ta có $\\widehat{B} = 180^\\circ - 70^\\circ = 110^\\circ$. Góc ngoài tại đỉnh $B$ kề bù với góc trong: $180^\\circ - 110^\\circ = 70^\\circ$ (bằng với góc trong $\\widehat{A}$ do so le trong hoặc đồng vị)."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.12.1",
+        "badge": "Câu 1 (Đ/S) - Định nghĩa và tính chất của hình bình hành",
+        "prompt": "Cho hình bình hành $ABCD$ có hai đường chéo $AC$ và $BD$ cắt nhau tại $O$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Các cạnh đối bằng nhau ($AB = CD, AD = BC$) và các góc đối bằng nhau ($\\widehat{A} = \\widehat{C}, \\widehat{B} = \\widehat{D}$).",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là tính chất cơ bản của hình bình hành."
+          },
+          {
+            "id": "b",
+            "text": "Hai đường chéo của hình bình hành luôn bằng nhau ($AC = BD$).",
+            "correctAnswer": false,
+            "explanation": "Sai, hai đường chéo của hình bình hành nói chung không bằng nhau (chỉ bằng nhau khi nó là hình chữ nhật)."
+          },
+          {
+            "id": "c",
+            "text": "Điểm $O$ là trung điểm của cả hai đường chéo $AC$ và $BD$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hai đường chéo của hình bình hành cắt nhau tại trung điểm của mỗi đường."
+          },
+          {
+            "id": "d",
+            "text": "Hai góc kề một cạnh bất kì có tổng số đo bằng $180^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì các cạnh đối song song nên hai góc kề một cạnh là hai góc trong cùng phía bù nhau."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.12.2",
+        "badge": "Câu 2 (Đ/S) - Dấu hiệu nhận biết hình bình hành",
+        "prompt": "Xét tính đúng/sai của các điều kiện nhận biết một tứ giác là hình bình hành sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tứ giác có một cặp cạnh đối song song và bằng nhau là hình bình hành.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 3 nhận biết hình bình hành."
+          },
+          {
+            "id": "b",
+            "text": "Tứ giác có một cặp cạnh đối song song và cặp cạnh đối còn lại bằng nhau luôn là hình bình hành.",
+            "correctAnswer": false,
+            "explanation": "Sai, đây có thể là hình thang cân (ví dụ $AB \\parallel CD$ và $AD = BC$)."
+          },
+          {
+            "id": "c",
+            "text": "Tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường là hình bình hành.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 5 nhận biết hình bình hành."
+          },
+          {
+            "id": "d",
+            "text": "Tứ giác có hai góc đối bằng nhau là hình bình hành.",
+            "correctAnswer": false,
+            "explanation": "Sai, phải là CẢ HAI CẶP GÓC ĐỐI bằng nhau ($\\widehat{A} = \\widehat{C}$ VÀ $\\widehat{B} = \\widehat{D}$)."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.12.3",
+        "badge": "Câu 3 (Đ/S) - Tính toán hình học hình bình hành",
+        "prompt": "Cho hình bình hành $ABCD$ có $AB = 10\\text{ cm}, AD = 6\\text{ cm}$ và $\\widehat{D} = 30^\\circ$. Kẻ đường cao $AH \\perp CD$ ($H \\in CD$). Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Góc trong tại đỉnh $A$ có số đo bằng $150^\\circ$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hai góc trong cùng phía bù nhau: $\\widehat{A} = 180^\\circ - 30^\\circ = 150^\\circ$."
+          },
+          {
+            "id": "b",
+            "text": "Chiều cao $AH$ có độ dài bằng $3\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, trong tam giác vuông $\\triangle AHD$ vuông tại $H$ có $\\widehat{D} = 30^\\circ$, cạnh đối diện góc $30^\\circ$ bằng nửa cạnh huyền: $AH = AD : 2 = 6 : 2 = 3\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Chu vi hình bình hành $ABCD$ bằng $32\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, chu vi $C = 2 \\times (10 + 6) = 32\\text{ cm}$."
+          },
+          {
+            "id": "d",
+            "text": "Diện tích hình bình hành $ABCD$ bằng $60\\text{ cm}^2$.",
+            "correctAnswer": false,
+            "explanation": "Sai, diện tích $S = CD \\times AH = 10 \\times 3 = 30\\text{ cm}^2$ (nhiều bạn nhầm lấy $10 \\times 6 = 60$)."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.12.4",
+        "badge": "Câu 4 (Đ/S) - Bài toán thực tế cơ cấu cánh cổng xếp",
+        "prompt": "Một cánh cổng xếp tự động gồm nhiều thanh kim loại bắt chéo nhau tạo thành các mắt hình bình hành. Mỗi mắt có cạnh dài $40\\text{ cm}$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Khi cổng dãn ra hay co lại, các thanh đối diện của mỗi mắt luôn song song với nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì cơ cấu hình bình hành luôn duy trì tính chất các cạnh đối song song."
+          },
+          {
+            "id": "b",
+            "text": "Khoảng cách giữa hai thanh đỉnh trên và đỉnh dưới luôn không đổi khi cổng di chuyển.",
+            "correctAnswer": false,
+            "explanation": "Sai, khi góc giữa các thanh thay đổi (cổng dãn ra hoặc co lại), chiều cao của hình bình hành sẽ thay đổi."
+          },
+          {
+            "id": "c",
+            "text": "Khi góc kề của mắt cổng đạt $90^\\circ$, diện tích mỗi mắt cổng đạt giá trị lớn nhất.",
+            "correctAnswer": true,
+            "explanation": "Đúng, diện tích $S = a^2 \\sin \\alpha \\le a^2$, đạt cực đại khi $\\alpha = 90^\\circ$ (hình vuông)."
+          },
+          {
+            "id": "d",
+            "text": "Giao điểm của hai thanh đan chéo luôn là trung điểm của mỗi thanh.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hai đường chéo của hình bình hành luôn cắt nhau tại trung điểm của mỗi đường."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.12.1",
+        "badge": "Câu 1 (NB) - Tìm góc kề",
+        "prompt": "Cho hình bình hành $ABCD$ có $\\widehat{A} = 125^\\circ$. Số đo góc $B$ bằng bao nhiêu độ?",
+        "correctAnswer": "55",
+        "acceptableAnswers": [
+          "55",
+          "55°",
+          "năm mươi lăm"
+        ],
+        "explanation": "$\\widehat{B} = 180^\\circ - 125^\\circ = 55^\\circ$."
+      },
+      {
+        "id": "sa-8.12.2",
+        "badge": "Câu 2 (NB) - Độ dài cạnh đối",
+        "prompt": "Hình bình hành $ABCD$ có cạnh $AB = 9\\text{ cm}$. Độ dài cạnh $CD$ bằng bao nhiêu cm?",
+        "correctAnswer": "9",
+        "acceptableAnswers": [
+          "9",
+          "9 cm",
+          "chín"
+        ],
+        "explanation": "Trong hình bình hành, các cạnh đối bằng nhau nên $CD = AB = 9\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.12.3",
+        "badge": "Câu 3 (TH) - Độ dài đường chéo",
+        "prompt": "Hai đường chéo của hình bình hành $ABCD$ cắt nhau tại $O$. Biết $OA = 7\\text{ cm}$. Độ dài đường chéo $AC$ bằng bao nhiêu cm?",
+        "correctAnswer": "14",
+        "acceptableAnswers": [
+          "14",
+          "14 cm",
+          "mười bốn"
+        ],
+        "explanation": "$AC = 2 \\times OA = 2 \\times 7 = 14\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.12.4",
+        "badge": "Câu 4 (TH) - Tìm cạnh kề từ chu vi",
+        "prompt": "Một hình bình hành có chu vi $36\\text{ cm}$ và một cạnh dài $10\\text{ cm}$. Độ dài cạnh kề với cạnh đó bằng bao nhiêu cm?",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "8 cm",
+          "tám"
+        ],
+        "explanation": "Nửa chu vi là $36 : 2 = 18\\text{ cm}$. Cạnh kề dài $18 - 10 = 8\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.12.5",
+        "badge": "Câu 5 (VD) - Diện tích hình bình hành",
+        "prompt": "Một hình bình hành có cạnh đáy bằng $15\\text{ cm}$ và chiều cao tương ứng bằng $8\\text{ cm}$. Diện tích của hình bình hành bằng bao nhiêu $\\text{cm}^2$?",
+        "correctAnswer": "120",
+        "acceptableAnswers": [
+          "120",
+          "120 cm2",
+          "một trăm hai mươi"
+        ],
+        "explanation": "Diện tích $S = a \\times h = 15 \\times 8 = 120\\text{ (cm}^2\\text{)}$."
+      },
+      {
+        "id": "sa-8.12.6",
+        "badge": "Câu 6 (VD) - Tính góc khi biết tỉ lệ 1:3",
+        "prompt": "Hình bình hành có hai góc kề tỉ lệ $1 : 3$. Số đo góc lớn nhất của hình bình hành đó bằng bao nhiêu độ?",
+        "correctAnswer": "135",
+        "acceptableAnswers": [
+          "135",
+          "135°",
+          "một trăm ba mươi lăm"
+        ],
+        "explanation": "Tổng số phần: $1 + 3 = 4$. Một phần: $180^\\circ : 4 = 45^\\circ$. Góc lớn nhất: $3 \\times 45^\\circ = 135^\\circ$."
+      }
+    ]
+  },
 };

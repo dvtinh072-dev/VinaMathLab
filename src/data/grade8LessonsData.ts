@@ -9902,4 +9902,710 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t8-b13-hinh-chu-nhat": {
+    "id": "t8-b13-hinh-chu-nhat",
+    "lessonNumber": 13,
+    "title": "Bài 13: Hình chữ nhật",
+    "bookChapter": "Chương III: Tứ giác",
+    "scenarioTitle": "Tình huống: Khung cửa vuông vắn của bác thợ xây và Màn hình chuẩn điện ảnh",
+    "scenarioFrames": [
+      {
+        "id": 1,
+        "character": "student",
+        "characterName": "Bạn An",
+        "avatar": "🧑‍🎓",
+        "speech": "Thưa Thầy Tính, hôm qua em quan sát các bác thợ xây lắp khung bao cửa gỗ. Sau khi đo chiều dài và chiều rộng bằng nhau, bác thợ lấy thước kéo chéo đo hai đường chéo rồi bảo: 'Hai đường chéo bằng nhau chằn chặn thế này thì khung cửa chắc chắn vuông góc 100% rồi!'. Tại sao chỉ cần đo hai đường chéo bằng nhau là biết chắc khung cửa có các góc vuông ạ?",
+        "visualGraphic": "box",
+        "mathNote": "AB = CD, \\ AD = BC, \\ AC = BD \\implies \\text{Góc vuông}"
+      },
+      {
+        "id": 2,
+        "character": "teacher",
+        "characterName": "Thầy Tính (VinaMath)",
+        "avatar": "👨‍🏫",
+        "speech": "Chào An! Quan sát của em rất sắc sảo! Bác thợ xây đã áp dụng một định lí nhận biết kinh điển trong hình học: 'Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật'. Khung cửa ban đầu đã là hình bình hành vì có các cặp cạnh đối bằng nhau, khi ép cho hai đường chéo bằng nhau thì cả 4 góc tức khắc trở thành 4 góc vuông 90°! Hình chữ nhật vừa thừa hưởng toàn bộ tính chất của hình bình hành, vừa mang trọn vẹn tính cân đối của hình thang cân. Không chỉ trong xây dựng, từ màn hình tivi, điện thoại đến mặt bàn học, khung tranh đều là hình chữ nhật để tối ưu không gian hiển thị và độ vững chãi đấy! Cùng Thầy khám phá bài học thú vị này nhé!",
+        "visualGraphic": "graph",
+        "mathNote": "AC = BD, \\ OA = OB = OC = OD, \\ d = \\sqrt{a^2 + b^2}"
+      }
+    ],
+    "theorySections": [
+      {
+        "index": "1",
+        "title": "Định nghĩa Hình chữ nhật",
+        "points": [
+          "• **Định nghĩa:** Hình chữ nhật là tứ giác có bốn góc vuông.",
+          "• Tứ giác $ABCD$ là hình chữ nhật $\\iff \\widehat{A} = \\widehat{B} = \\widehat{C} = \\widehat{D} = 90^\\circ$.",
+          "• **Mối liên hệ đặc biệt:**",
+          "  - Hình chữ nhật là một **hình bình hành** (vì có các cặp góc đối bằng nhau $90^\\circ$, hoặc các cạnh đối song song do cùng vuông góc với một cạnh).",
+          "  - Hình chữ nhật là một **hình thang cân** (vì là hình thang có hai góc kề đáy bằng $90^\\circ$)."
+        ],
+        "exampleTitle": "Ví dụ 1 (SGK Toán 8 KNTT Trang 60)",
+        "exampleProblem": "Chứng minh rằng hình chữ nhật $ABCD$ có các cạnh đối song song và bằng nhau.",
+        "exampleSolution": "Vì hình chữ nhật $ABCD$ có $\\widehat{A} = \\widehat{B} = \\widehat{C} = \\widehat{D} = 90^\\circ$ nên:\n" +
+          "• $AB \\perp AD$ và $CD \\perp AD \\implies AB \\parallel CD$.\n" +
+          "• $AD \\perp AB$ và $BC \\perp AB \\implies AD \\parallel BC$.\n" +
+          "Do đó tứ giác $ABCD$ là hình bình hành, suy ra các cạnh đối bằng nhau: $AB = CD$ và $AD = BC$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa chuẩn SGK: Hình chữ nhật ABCD",
+            "problem": "Quan sát 4 góc vuông và các cặp cạnh đối bằng nhau trong hình chữ nhật ABCD:",
+            "solution": "Bốn góc vuông ở A, B, C, D; cạnh AB song song và bằng CD; AD song song và bằng BC.",
+            "svgDiagram": "<svg viewBox='0 0 380 200' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='45' width='240' height='120' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.5' rx='2'/><rect x='70' y='45' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><rect x='296' y='45' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><rect x='296' y='151' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><rect x='70' y='151' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><text x='56' y='40' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='318' y='40' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='318' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='56' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='190' y='38' fill='#38bdf8' font-size='11' text-anchor='middle'>chiều dài a</text><text x='46' y='110' fill='#f59e0b' font-size='11' text-anchor='middle'>b</text><text x='190' y='190' fill='#94a3b8' font-size='11' text-anchor='middle'>\\widehat{A} = \\widehat{B} = \\widehat{C} = \\widehat{D} = 90^\\circ</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "Tính chất của Hình chữ nhật",
+        "points": [
+          "Trong một hình chữ nhật:",
+          "• Mang đầy đủ mọi tính chất của **hình bình hành** và **hình thang cân**.",
+          "• **Tính chất đường chéo đặc trưng:** Hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường:",
+          "  $$AC = BD \\quad \\text{và} \\quad OA = OB = OC = OD = \\frac{1}{2}AC$$",
+          "• **Tâm đối xứng:** Giao điểm $O$ của hai đường chéo là tâm đối xứng của hình chữ nhật.",
+          "• **Trục đối xứng:** Hình chữ nhật có **hai trục đối xứng**, đó là hai đường trung trực của các cặp cạnh đối."
+        ],
+        "exampleTitle": "Ví dụ 2 (SGK Toán 8 KNTT Trang 61)",
+        "exampleProblem": "Cho hình chữ nhật $ABCD$ có hai đường chéo cắt nhau tại $O$. Biết $OA = 5\\text{ cm}$ và $AB = 8\\text{ cm}$. Tính độ dài đường chéo $BD$ và cạnh $BC$.",
+        "exampleSolution": "• Vì hai đường chéo bằng nhau và cắt nhau tại trung điểm nên:\n" +
+          "  $AC = 2 \\times OA = 2 \\times 5 = 10\\text{ cm} \\implies BD = AC = 10\\text{ cm}$.\n" +
+          "• Tam giác $\\triangle ABC$ vuông tại $B$, theo định lí Pythagoras ta có:\n" +
+          "  $AC^2 = AB^2 + BC^2 \\implies 10^2 = 8^2 + BC^2 \\implies BC^2 = 100 - 64 = 36 \\implies BC = 6\\text{ cm}$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Hai đường chéo và trục đối xứng",
+            "problem": "Quan sát hai đường chéo AC = BD cắt nhau tại O và 4 đoạn OA = OB = OC = OD:",
+            "solution": "Giao điểm O là tâm đối xứng, cách đều 4 đỉnh A, B, C, D.",
+            "svgDiagram": "<svg viewBox='0 0 380 210' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='45' width='240' height='120' fill='none' stroke='#38bdf8' stroke-width='2.2'/><line x1='70' y1='45' x2='310' y2='165' stroke='#f43f5e' stroke-width='1.8'/><line x1='70' y1='165' x2='310' y2='45' stroke='#fbbf24' stroke-width='1.8'/><circle cx='190' cy='105' r='3.5' fill='#a855f7'/><text x='190' y='98' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><line x1='190' y1='25' x2='190' y2='185' stroke='#94a3b8' stroke-width='1.2' stroke-dasharray='4 3'/><line x1='50' y1='105' x2='330' y2='105' stroke='#94a3b8' stroke-width='1.2' stroke-dasharray='4 3'/><text x='56' y='40' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='318' y='40' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='318' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='56' y='180' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='190' y='200' fill='#34d399' font-size='11' text-anchor='middle'>OA = OB = OC = OD = \\frac{1}{2}AC</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "Dấu hiệu nhận biết Hình chữ nhật",
+        "points": [
+          "Có 4 dấu hiệu nhận biết một tứ giác là hình chữ nhật:",
+          "1. **Dấu hiệu 1 (Từ tứ giác):** Tứ giác có **ba góc vuông** là hình chữ nhật.",
+          "2. **Dấu hiệu 2 (Từ hình thang cân):** Hình thang cân có **một góc vuông** là hình chữ nhật.",
+          "3. **Dấu hiệu 3 (Từ hình bình hành - theo góc):** Hình bình hành có **một góc vuông** là hình chữ nhật.",
+          "4. **Dấu hiệu 4 (Từ hình bình hành - theo đường chéo):** Hình bình hành có **hai đường chéo bằng nhau** là hình chữ nhật.",
+          "⚠️ **CẢNH BÁO BẪY KINH ĐIỂN:**",
+          "• 'Tứ giác có hai đường chéo bằng nhau' **CHƯA CHẮC** là hình chữ nhật (vì có thể là hình thang cân hoặc tứ giác bất kì có 2 đường chéo bằng nhau).",
+          "• Bắt buộc phải là **HÌNH BÌNH HÀNH** có hai đường chéo bằng nhau mới suy ra hình chữ nhật!"
+        ],
+        "exampleTitle": "Ví dụ 3 (SGK Toán 8 KNTT Trang 62)",
+        "exampleProblem": "Cho tam giác $ABC$ vuông tại $A$. Gọi $M$ là trung điểm của cạnh $BC$. Lấy điểm $D$ đối xứng với $A$ qua $M$. Tứ giác $ABDC$ là hình gì? Vì sao?",
+        "exampleSolution": "• Xét tứ giác $ABDC$ có $M$ là trung điểm của đường chéo $BC$ (theo giả thiết) và $M$ là trung điểm của đường chéo $AD$ (do $D$ đối xứng với $A$ qua $M$).\n" +
+          "• Do đó tứ giác $ABDC$ có hai đường chéo cắt nhau tại trung điểm của mỗi đường nên $ABDC$ là hình bình hành.\n" +
+          "• Hình bình hành $ABDC$ lại có $\\widehat{BAC} = 90^\\circ$ (do $\\triangle ABC$ vuông tại $A$).\n" +
+          "• Vậy theo Dấu hiệu 3, hình bình hành có một góc vuông là hình chữ nhật, suy ra $ABDC$ là hình chữ nhật.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: 4 Dấu hiệu nhận biết hình chữ nhật",
+            "problem": "Phân biệt các con đường dẫn đến hình chữ nhật:",
+            "solution": "Tứ giác có 3 góc vuông; Hình thang cân có 1 góc vuông; Hình bình hành có 1 góc vuông hoặc 2 đường chéo bằng nhau.",
+            "svgDiagram": "<svg viewBox='0 0 440 200' class='w-full max-w-md mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><text x='110' y='25' fill='#38bdf8' font-size='12' font-weight='bold' text-anchor='middle'>Từ Tứ giác: 3 góc vuông</text><rect x='40' y='45' width='140' height='90' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2'/><rect x='40' y='45' width='12' height='12' fill='none' stroke='#38bdf8' stroke-width='1.5'/><rect x='168' y='45' width='12' height='12' fill='none' stroke='#38bdf8' stroke-width='1.5'/><rect x='40' y='123' width='12' height='12' fill='none' stroke='#38bdf8' stroke-width='1.5'/><text x='110' y='160' fill='#38bdf8' font-size='11' text-anchor='middle'>3 góc vuông \\implies HCN</text><text x='330' y='25' fill='#34d399' font-size='12' font-weight='bold' text-anchor='middle'>Từ Hình bình hành: AC = BD</text><rect x='260' y='45' width='140' height='90' fill='rgba(52, 211, 153, 0.08)' stroke='#34d399' stroke-width='2'/><line x1='260' y1='45' x2='400' y2='135' stroke='#f43f5e' stroke-width='1.5' stroke-dasharray='3 3'/><line x1='260' y1='135' x2='400' y2='45' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='3 3'/><text x='330' y='160' fill='#34d399' font-size='11' text-anchor='middle'>HBH có AC = BD \\implies HCN</text></svg>"
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "Định lí Áp dụng vào Tam giác vuông & Tính toán",
+        "points": [
+          "• **Định lí đường trung tuyến trong tam giác vuông (Định lí thuận):**",
+          "  Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền:",
+          "  $$\\triangle ABC \\text{ vuông tại } A, \\ M \\text{ là trung điểm } BC \\implies AM = \\frac{1}{2}BC = BM = MC$$",
+          "• **Dấu hiệu nhận biết tam giác vuông (Định lí đảo):**",
+          "  Nếu một tam giác có đường trung tuyến ứng với một cạnh bằng nửa cạnh đó thì tam giác đó là tam giác vuông.",
+          "• **Công thức tính toán trong hình chữ nhật kích thước $a \\times b$:**",
+          "  - Chu vi: $C = 2(a + b)$.",
+          "  - Diện tích: $S = a \\cdot b$.",
+          "  - Đường chéo (Pythagoras): $d = \\sqrt{a^2 + b^2}$."
+        ],
+        "exampleTitle": "Ví dụ 4 (Tính trung tuyến tam giác vuông và đường chéo)",
+        "exampleProblem": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}$ và $AC = 8\\text{ cm}$. Gọi $M$ là trung điểm của $BC$. Tính độ dài đoạn thẳng $AM$.",
+        "exampleSolution": "• Áp dụng định lí Pythagoras trong $\\triangle ABC$ vuông tại $A$:\n" +
+          "  $BC = \\sqrt{AB^2 + AC^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$.\n" +
+          "• Vì $AM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên:\n" +
+          "  $AM = \\frac{1}{2}BC = \\frac{10}{2} = 5\\text{ cm}$.",
+        "examples": [
+          {
+            "title": "Hình vẽ minh họa: Đường trung tuyến ứng với cạnh huyền AM = BC / 2",
+            "problem": "Quan sát tam giác vuông ABC với đường trung tuyến AM bằng nửa cạnh huyền BC:",
+            "solution": "AM = BM = MC, tạo thành hai tam giác cân MAB và MAC.",
+            "svgDiagram": "<svg viewBox='0 0 380 200' class='w-full max-w-sm mx-auto my-3 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='80,150 80,50 280,150' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><rect x='80' y='136' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><line x1='80' y1='150' x2='180' y2='100' stroke='#f43f5e' stroke-width='2'/><circle cx='180' cy='100' r='3.5' fill='#f43f5e'/><line x1='127' y1='72' x2='133' y2='78' stroke='#38bdf8' stroke-width='1.8'/><line x1='227' y1='122' x2='233' y2='128' stroke='#38bdf8' stroke-width='1.8'/><line x1='128' y1='122' x2='132' y2='128' stroke='#f43f5e' stroke-width='1.8'/><text x='62' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='64' y='45' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='290' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='188' y='94' fill='#f43f5e' font-size='12' font-weight='bold'>M</text><text x='190' y='185' fill='#34d399' font-size='11' text-anchor='middle'>AM = BM = MC = \\frac{1}{2}BC</text></svg>"
+          }
+        ]
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "id": "t8_b13_video1",
+        "title": "Tiết 1: Định nghĩa và tính chất của hình chữ nhật (SGK Toán 8 KNTT)"
+      },
+      {
+        "id": "t8_b13_video2",
+        "title": "Tiết 2: 4 Dấu hiệu nhận biết và Định lý trung tuyến tam giác vuông"
+      }
+    ],
+    "videoQuestions": [
+      {
+        "id": "vq-8.13.1",
+        "timeSeconds": 140,
+        "timeLabel": "02:20",
+        "title": "Định nghĩa hình chữ nhật",
+        "question": "Hình chữ nhật là tứ giác có đặc điểm nào sau đây?",
+        "options": [
+          "Có bốn góc vuông",
+          "Có bốn cạnh bằng nhau",
+          "Có hai đường chéo vuông góc",
+          "Có một góc nhọn và một góc tù"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa SGK, hình chữ nhật là tứ giác có bốn góc vuông."
+      },
+      {
+        "id": "vq-8.13.2",
+        "timeSeconds": 370,
+        "timeLabel": "06:10",
+        "title": "Tính chất đường chéo",
+        "question": "Trong hình chữ nhật, hai đường chéo có tính chất gì?",
+        "options": [
+          "Bằng nhau và cắt nhau tại trung điểm của mỗi đường",
+          "Vuông góc với nhau",
+          "Là phân giác của các góc",
+          "Có độ dài bằng cạnh đáy"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình chữ nhật, hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường ($OA = OB = OC = OD$)."
+      },
+      {
+        "id": "vq-8.13.3",
+        "timeSeconds": 610,
+        "timeLabel": "10:10",
+        "title": "Dấu hiệu nhận biết",
+        "question": "Hình bình hành có điều kiện nào sau đây thì trở thành hình chữ nhật?",
+        "options": [
+          "Có hai đường chéo bằng nhau",
+          "Có hai đường chéo vuông góc",
+          "Có hai cạnh kề bằng nhau",
+          "Có các cạnh đối bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 4: Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật."
+      },
+      {
+        "id": "vq-8.13.4",
+        "timeSeconds": 830,
+        "timeLabel": "13:50",
+        "title": "Đường trung tuyến tam giác vuông",
+        "question": "Tam giác vuông có cạnh huyền dài $12\\text{ cm}$. Độ dài đường trung tuyến ứng với cạnh huyền bằng:",
+        "options": [
+          "6 cm",
+          "12 cm",
+          "24 cm",
+          "4 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền: $12 : 2 = 6\\text{ cm}$."
+      }
+    ],
+    "tips": [
+      "Mẹo 1: Nhớ 'Bộ ba bằng nhau': Hai đường chéo hình chữ nhật bằng nhau cắt nhau tạo thành 4 đoạn OA = OB = OC = OD bằng nhau.",
+      "Mẹo 2: Dấu hiệu 'HBH có 2 đường chéo bằng nhau' là cách nhanh nhất thợ xây kiểm tra góc vuông của khung cửa hay móng nhà.",
+      "Mẹo 3: Đường trung tuyến ứng với cạnh huyền: Gặp tam giác vuông có trung điểm cạnh huyền, hãy nối ngay trung tuyến để có AM = BC / 2 và hai tam giác cân.",
+      "Mẹo 4: Đường chéo hình chữ nhật luôn tính bằng định lí Pythagoras: d = \\sqrt{a^2 + b^2}."
+    ],
+    "traps": [
+      "Bẫy 1: Ngộ nhận 'Tứ giác có 2 đường chéo bằng nhau là hình chữ nhật'. Sai hoàn toàn! Hình thang cân cũng có 2 đường chéo bằng nhau. Phải là HÌNH BÌNH HÀNH có 2 đường chéo bằng nhau.",
+      "Bẫy 2: Ngộ nhận hai đường chéo hình chữ nhật vuông góc với nhau (chỉ có hình vuông hoặc hình thoi mới có).",
+      "Bẫy 3: Ngộ nhận đường chéo hình chữ nhật là tia phân giác của góc (chỉ hình vuông và hình thoi mới có).",
+      "Bẫy 4: Nhầm lẫn số trục đối xứng: Hình chữ nhật có đúng 2 trục đối xứng (hai đường trung trực cạnh đối), hai đường chéo KHÔNG phải là trục đối xứng!"
+    ],
+    "quizQuestions": [
+      {
+        "id": "quiz-8.13.1",
+        "badge": "Câu 1 (NB) - Định nghĩa hình chữ nhật",
+        "source": "SGK Toán 8 KNTT Trang 60",
+        "question": "Hình chữ nhật là tứ giác có:",
+        "options": [
+          "Bốn góc vuông",
+          "Bốn cạnh bằng nhau",
+          "Hai đường chéo vuông góc",
+          "Hai cạnh kề bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo định nghĩa, hình chữ nhật là tứ giác có bốn góc vuông."
+      },
+      {
+        "id": "quiz-8.13.2",
+        "badge": "Câu 2 (NB) - Tính chất đường chéo",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Trong hình chữ nhật, khẳng định nào sau đây là ĐÚNG?",
+        "options": [
+          "Hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường",
+          "Hai đường chéo vuông góc với nhau",
+          "Hai đường chéo là các đường phân giác của các góc",
+          "Hai đường chéo có độ dài khác nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình chữ nhật, hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường."
+      },
+      {
+        "id": "quiz-8.13.3",
+        "badge": "Câu 3 (TH) - Pythagoras tính đường chéo",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Hình chữ nhật $ABCD$ có chiều dài $AB = 8\\text{ cm}$ và chiều rộng $BC = 6\\text{ cm}$. Độ dài đường chéo $d$ trong hình vẽ là:",
+        "options": [
+          "$d = 10\text{ cm}$",
+          "$d = 14\text{ cm}$",
+          "$d = 12\text{ cm}$",
+          "$d = 9\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng định lí Pythagoras trong tam giác vuông $\\triangle ABC$: $d = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='35' width='220' height='110' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><rect x='266' y='35' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><line x1='60' y1='145' x2='280' y2='35' stroke='#f43f5e' stroke-width='2'/><text x='170' y='28' fill='#38bdf8' font-size='11' font-weight='bold' text-anchor='middle'>8 cm</text><text x='294' y='95' fill='#f59e0b' font-size='11' font-weight='bold'>6 cm</text><text x='160' y='102' fill='#f43f5e' font-size='14' font-weight='bold'>d</text><text x='48' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='288' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='288' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+      },
+      {
+        "id": "quiz-8.13.4",
+        "badge": "Câu 4 (TH) - Nửa đường chéo hình chữ nhật",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Hình chữ nhật $ABCD$ có hai đường chéo cắt nhau tại $O$. Biết đường chéo $AC = 12\\text{ cm}$. Độ dài đoạn $OA$ có giá trị $x$ bằng:",
+        "options": [
+          "$x = 6\text{ cm}$",
+          "$x = 12\text{ cm}$",
+          "$x = 3\text{ cm}$",
+          "$x = 4\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong hình chữ nhật, $O$ là trung điểm của $AC$ nên $x = OA = AC : 2 = 12 : 2 = 6\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='35' width='220' height='110' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><line x1='60' y1='35' x2='280' y2='145' stroke='#f43f5e' stroke-width='1.8'/><line x1='60' y1='145' x2='280' y2='35' stroke='#fbbf24' stroke-width='1.8'/><circle cx='170' cy='90' r='3.5' fill='#a855f7'/><text x='170' y='82' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><text x='105' y='58' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='48' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='288' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='288' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>D</text><text x='170' y='168' fill='#38bdf8' font-size='11' text-anchor='middle'>AC = 12 cm</text></svg>"
+      },
+      {
+        "id": "quiz-8.13.5",
+        "badge": "Câu 5 (NB) - Trục đối xứng",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Hình chữ nhật (không phải hình vuông) có bao nhiêu trục đối xứng?",
+        "options": [
+          "2 trục đối xứng",
+          "4 trục đối xứng",
+          "1 trục đối xứng",
+          "Không có trục đối xứng"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hình chữ nhật có 2 trục đối xứng, đó là hai đường trung trực của hai cặp cạnh đối."
+      },
+      {
+        "id": "quiz-8.13.6",
+        "badge": "Câu 6 (TH) - Dấu hiệu từ tứ giác",
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Một tứ giác có ít nhất bao nhiêu góc vuông thì chắc chắn là hình chữ nhật?",
+        "options": [
+          "3 góc vuông",
+          "2 góc vuông",
+          "1 góc vuông",
+          "4 góc vuông"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 1: Tứ giác có 3 góc vuông thì góc thứ tư bắt buộc phải bằng 90° (vì tổng 4 góc bằng 360°), do đó nó là hình chữ nhật."
+      },
+      {
+        "id": "quiz-8.13.7",
+        "badge": "Câu 7 (TH) - Dấu hiệu từ hình bình hành",
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Hình bình hành $ABCD$ cần thêm điều kiện nào sau đây để trở thành hình chữ nhật?",
+        "options": [
+          "Hai đường chéo bằng nhau (AC = BD)",
+          "Hai đường chéo vuông góc với nhau",
+          "Hai cạnh kề bằng nhau",
+          "Một góc kề bù với góc còn lại"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo Dấu hiệu 4: Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật."
+      },
+      {
+        "id": "quiz-8.13.8",
+        "badge": "Câu 8 (TH) - Cảnh giác bẫy nhận biết",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Khẳng định nào sau đây là SAI?",
+        "options": [
+          "Tứ giác có hai đường chéo bằng nhau luôn là hình chữ nhật",
+          "Hình thang cân có một góc vuông là hình chữ nhật",
+          "Hình bình hành có một góc vuông là hình chữ nhật",
+          "Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khẳng định A là SAI, vì tứ giác có hai đường chéo bằng nhau có thể là HÌNH THANG CÂN chứ chưa chắc là hình chữ nhật."
+      },
+      {
+        "id": "quiz-8.13.9",
+        "badge": "Câu 9 (TH) - Trung tuyến tam giác vuông",
+        "source": "SGK Toán 8 KNTT Trang 63",
+        "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 10\\text{ cm}$. Gọi $M$ là trung điểm của $BC$. Độ dài đoạn trung tuyến $AM$ có giá trị $x$ bằng:",
+        "options": [
+          "$x = 5\text{ cm}$",
+          "$x = 10\text{ cm}$",
+          "$x = 2.5\text{ cm}$",
+          "$x = 6\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền: $x = AM = BC : 2 = 10 : 2 = 5\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='70,140 70,40 270,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><rect x='70' y='126' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><line x1='70' y1='140' x2='170' y2='90' stroke='#f43f5e' stroke-width='2'/><circle cx='170' cy='90' r='3.5' fill='#f43f5e'/><text x='110' y='108' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='52' y='150' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='54' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='278' y='150' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='176' y='82' fill='#f43f5e' font-size='12' font-weight='bold'>M</text><text x='185' y='160' fill='#38bdf8' font-size='11' text-anchor='middle'>BC = 10 cm</text></svg>"
+      },
+      {
+        "id": "quiz-8.13.10",
+        "badge": "Câu 10 (VD) - Nhận biết tam giác vuông từ trung tuyến",
+        "source": "SGK Toán 8 KNTT Trang 63",
+        "question": "Tam giác $MNP$ có trung tuyến $MI$ ứng với cạnh $NP$. Biết $NP = 16\\text{ cm}$ và $MI = 8\\text{ cm}$. Tam giác $MNP$ là tam giác gì?",
+        "options": [
+          "Tam giác vuông tại M",
+          "Tam giác cân tại M",
+          "Tam giác đều",
+          "Tam giác tù tại M"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $MI = 8 = 16 : 2 = \\frac{NP}{2}$, tam giác có đường trung tuyến bằng nửa cạnh đối diện nên $\\triangle MNP$ vuông tại $M$."
+      },
+      {
+        "id": "quiz-8.13.11",
+        "badge": "Câu 11 (VD) - Góc tạo bởi hai đường chéo",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Hình chữ nhật $ABCD$ có hai đường chéo cắt nhau tại $O$. Biết $\\widehat{AOB} = 60^\\circ$. Số đo góc $x = \\widehat{OAD}$ trong hình vẽ là:",
+        "options": [
+          "$x = 30^\\circ$",
+          "$x = 60^\\circ$",
+          "$x = 45^\\circ$",
+          "$x = 15^\\circ$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $OA = OB$ và $\\widehat{AOB} = 60^\\circ$ nên $\\triangle OAB$ là tam giác đều $\\implies \\widehat{OAB} = 60^\\circ$. Vì $\\widehat{BAD} = 90^\\circ$ nên $x = \\widehat{OAD} = 90^\\circ - 60^\\circ = 30^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='35' width='220' height='110' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><line x1='60' y1='35' x2='280' y2='145' stroke='#f43f5e' stroke-width='1.8'/><line x1='60' y1='145' x2='280' y2='35' stroke='#fbbf24' stroke-width='1.8'/><circle cx='170' cy='90' r='3.5' fill='#a855f7'/><text x='170' y='82' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><text x='170' y='68' fill='#fbbf24' font-size='11' font-weight='bold' text-anchor='middle'>60°</text><path d='M 60,65 A 24 24 0 0 0 80,48' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='78' y='68' fill='#f43f5e' font-size='13' font-weight='bold'>x</text><text x='48' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='288' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='288' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+      },
+      {
+        "id": "quiz-8.13.12",
+        "badge": "Câu 12 (VD) - Diện tích từ đường chéo",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Hình chữ nhật có độ dài đường chéo bằng $13\\text{ cm}$ và một cạnh bằng $12\\text{ cm}$. Diện tích của hình chữ nhật đó bằng:",
+        "options": [
+          "60 cm²",
+          "156 cm²",
+          "78 cm²",
+          "30 cm²"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh còn lại là: $\\sqrt{13^2 - 12^2} = \\sqrt{169 - 144} = \\sqrt{25} = 5\\text{ cm}$. Diện tích $S = 12 \\times 5 = 60\\text{ cm}^2$."
+      },
+      {
+        "id": "quiz-8.13.13",
+        "badge": "Câu 13 (VD) - Tỉ lệ hai kích thước",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Một hình chữ nhật có chu vi bằng $50\\text{ cm}$ và tỉ số hai cạnh là $2 : 3$. Chiều dài của hình chữ nhật đó bằng:",
+        "options": [
+          "15 cm",
+          "10 cm",
+          "20 cm",
+          "25 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nửa chu vi là: $50 : 2 = 25\\text{ cm}$. Tổng số phần: $2 + 3 = 5$. Chiều dài bằng: $25 : 5 \\times 3 = 15\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.13.14",
+        "badge": "Câu 14 (VD) - Hình thang cân có một góc vuông",
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Hình thang cân $ABCD$ ($AB \\parallel CD$) có thêm điều kiện $\\widehat{A} = 90^\\circ$. Khi đó tứ giác $ABCD$ là hình gì?",
+        "options": [
+          "Hình chữ nhật",
+          "Hình bình hành không vuông",
+          "Hình thoi",
+          "Hình thang vuông không cân"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 2: Hình thang cân có một góc vuông là hình chữ nhật (vì $\\widehat{B} = \\widehat{A} = 90^\\circ$ và các góc kề bù bằng $90^\\circ$)."
+      },
+      {
+        "id": "quiz-8.13.15",
+        "badge": "Câu 15 (VD) - Phân giác các góc hình bình hành",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Các tia phân giác của bốn góc trong một hình bình hành cắt nhau tạo thành một tứ giác. Tứ giác đó luôn là:",
+        "options": [
+          "Hình chữ nhật",
+          "Hình bình hành",
+          "Hình thoi",
+          "Hình vuông"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai góc kề một cạnh bù nhau nên tổng hai nửa góc bằng 90°, suy ra tam giác tạo bởi hai tia phân giác có một góc vuông. Tứ giác có 4 góc vuông nên luôn là hình chữ nhật."
+      },
+      {
+        "id": "quiz-8.13.16",
+        "badge": "Câu 16 (VD) - Tâm đối xứng chia diện tích",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Hai đường chéo của hình chữ nhật chia hình chữ nhật thành bao nhiêu tam giác có diện tích bằng nhau?",
+        "options": [
+          "4 tam giác",
+          "2 tam giác",
+          "8 tam giác",
+          "6 tam giác"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hai đường chéo cắt nhau tại trung điểm chia hình chữ nhật thành 4 tam giác có diện tích bằng nhau (bằng 1/4 diện tích hình chữ nhật)."
+      },
+      {
+        "id": "quiz-8.13.17",
+        "badge": "Câu 17 (VDC) - Diện tích cực đại",
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Trong tất cả các hình chữ nhật có cùng chu vi $40\\text{ cm}$, hình có diện tích lớn nhất là hình vuông có diện tích bằng:",
+        "options": [
+          "100 cm²",
+          "80 cm²",
+          "120 cm²",
+          "64 cm²"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cạnh hình vuông là: $40 : 4 = 10\\text{ cm}$. Diện tích lớn nhất đạt được khi chiều dài bằng chiều rộng: $S = 10 \\times 10 = 100\\text{ cm}^2$."
+      },
+      {
+        "id": "quiz-8.13.18",
+        "badge": "Câu 18 (VD - Thực tế) - Đo màn hình Tivi",
+        "source": "SGK Toán 8 KNTT Trang 63",
+        "question": "Người ta thường gọi kích cỡ màn hình Tivi theo độ dài đường chéo (tính bằng inch, 1 inch $\\approx 2.54\\text{ cm}$). Một chiếc Tivi hình chữ nhật có kích thước $120\\text{ cm} \\times 90\\text{ cm}$. Đường chéo của màn hình chiếc Tivi này dài bao nhiêu cm?",
+        "options": [
+          "150 cm",
+          "130 cm",
+          "210 cm",
+          "105 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Áp dụng định lí Pythagoras: $d = \\sqrt{120^2 + 90^2} = \\sqrt{14400 + 8100} = \\sqrt{22500} = 150\\text{ cm}$ (tương đương khoảng 59 inch)."
+      },
+      {
+        "id": "quiz-8.13.19",
+        "badge": "Câu 19 (VD - Thực tế) - Thợ xây kiểm tra khung cửa",
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Bác thợ mộc đóng một chiếc khung tranh hình chữ nhật có hai thanh ngang dài $80\\text{ cm}$ và hai thanh đứng dài $60\\text{ cm}$. Bác cần đo độ dài đường chéo bằng bao nhiêu để đảm bảo các góc của khung tranh vuông vức?",
+        "options": [
+          "100 cm",
+          "140 cm",
+          "90 cm",
+          "120 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đường chéo chuẩn: $d = \\sqrt{80^2 + 60^2} = \\sqrt{6400 + 3600} = \\sqrt{10000} = 100\\text{ cm}$."
+      },
+      {
+        "id": "quiz-8.13.20",
+        "badge": "Câu 20 (TH) - Điểm cách đều 4 đỉnh",
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Trong hình chữ nhật $ABCD$, điểm nào cách đều bốn đỉnh $A, B, C, D$?",
+        "options": [
+          "Giao điểm của hai đường chéo",
+          "Trung điểm của cạnh AB",
+          "Trọng tâm tam giác ABC",
+          "Đỉnh A của hình chữ nhật"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vì $OA = OB = OC = OD$ nên giao điểm hai đường chéo $O$ là điểm cách đều cả bốn đỉnh của hình chữ nhật (chính là tâm đường tròn ngoại tiếp sau này)."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "tf-8.13.1",
+        "badge": "Câu 1 (Đ/S) - Định nghĩa và tính chất hình chữ nhật",
+        "prompt": "Cho hình chữ nhật $ABCD$ có hai đường chéo $AC$ và $BD$ cắt nhau tại $O$. Xét tính đúng/sai của các khẳng định sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Hình chữ nhật có 4 góc vuông và các cạnh đối song song, bằng nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, theo định nghĩa và tính chất của hình chữ nhật."
+          },
+          {
+            "id": "b",
+            "text": "Hai đường chéo $AC$ và $BD$ bằng nhau và cắt nhau tại trung điểm của mỗi đường.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là tính chất đặc trưng của hình chữ nhật."
+          },
+          {
+            "id": "c",
+            "text": "Hai đường chéo của hình chữ nhật luôn vuông góc với nhau.",
+            "correctAnswer": false,
+            "explanation": "Sai, hai đường chéo chỉ vuông góc khi hình chữ nhật là hình vuông."
+          },
+          {
+            "id": "d",
+            "text": "Giao điểm $O$ của hai đường chéo cách đều cả bốn đỉnh của hình chữ nhật.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì $OA = OB = OC = OD = \\frac{1}{2}AC$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.13.2",
+        "badge": "Câu 2 (Đ/S) - Dấu hiệu nhận biết hình chữ nhật",
+        "prompt": "Xét tính đúng/sai của các nhận định về dấu hiệu nhận biết hình chữ nhật sau:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tứ giác có 3 góc vuông là hình chữ nhật.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 1."
+          },
+          {
+            "id": "b",
+            "text": "Tứ giác có hai đường chéo bằng nhau luôn là hình chữ nhật.",
+            "correctAnswer": false,
+            "explanation": "Sai, tứ giác đó có thể là hình thang cân hoặc tứ giác thường."
+          },
+          {
+            "id": "c",
+            "text": "Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 4."
+          },
+          {
+            "id": "d",
+            "text": "Hình thang cân có một góc vuông là hình chữ nhật.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 2."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.13.3",
+        "badge": "Câu 3 (Đ/S) - Định lí trung tuyến tam giác vuông",
+        "prompt": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 9\\text{ cm}, AC = 12\\text{ cm}$ và trung tuyến $AM$ ứng với cạnh huyền $BC$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Cạnh huyền $BC$ có độ dài bằng $15\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $BC = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15\\text{ cm}$."
+          },
+          {
+            "id": "b",
+            "text": "Độ dài đường trung tuyến $AM$ bằng $7.5\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $AM = \\frac{BC}{2} = \\frac{15}{2} = 7.5\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Tam giác $MAB$ là tam giác đều.",
+            "correctAnswer": false,
+            "explanation": "Sai, $\\triangle MAB$ chỉ là tam giác cân tại $M$ ($MA = MB = 7.5\\text{ cm} \\neq AB = 9\\text{ cm}$)."
+          },
+          {
+            "id": "d",
+            "text": "Diện tích tam giác $MAB$ bằng một nửa diện tích tam giác $ABC$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, vì $M$ là trung điểm của $BC$ nên hai tam giác chung đường cao hạ từ $A$ và đáy $BM = MC$."
+          }
+        ]
+      },
+      {
+        "id": "tf-8.13.4",
+        "badge": "Câu 4 (Đ/S) - Bài toán thực tế kiểm tra vuông góc",
+        "prompt": "Một người thợ xây dùng thước dây kiểm tra móng nhà hình tứ giác $ABCD$. Người đó đo được $AB = CD = 8\\text{ m}, BC = AD = 6\\text{ m}$ và đường chéo $AC = 10\\text{ m}$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Tứ giác $ABCD$ ban đầu là một hình bình hành vì có các cạnh đối bằng nhau.",
+            "correctAnswer": true,
+            "explanation": "Đúng, tứ giác có các cạnh đối bằng nhau là hình bình hành."
+          },
+          {
+            "id": "b",
+            "text": "Tam giác $ABC$ là tam giác vuông tại $B$ vì $8^2 + 6^2 = 10^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, theo định lí Pythagoras đảo: $64 + 36 = 100 = 10^2$."
+          },
+          {
+            "id": "c",
+            "text": "Người thợ kết luận móng nhà là hình chữ nhật là hoàn toàn chính xác.",
+            "correctAnswer": true,
+            "explanation": "Đúng, hình bình hành có một góc vuông là hình chữ nhật."
+          },
+          {
+            "id": "d",
+            "text": "Nếu người thợ đo thêm đường chéo $BD$ thì độ dài $BD$ phải khác $10\\text{ m}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, trong hình chữ nhật hai đường chéo bằng nhau nên $BD$ bắt buộc phải bằng $AC = 10\\text{ m}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "sa-8.13.1",
+        "badge": "Câu 1 (TH) - Tính đường chéo Pythagoras",
+        "prompt": "Một hình chữ nhật có hai kích thước là $5\\text{ cm}$ và $12\\text{ cm}$. Độ dài đường chéo của hình chữ nhật bằng bao nhiêu cm?",
+        "correctAnswer": "13",
+        "acceptableAnswers": [
+          "13",
+          "13 cm",
+          "mười ba"
+        ],
+        "explanation": "Đường chéo $d = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.13.2",
+        "badge": "Câu 2 (TH) - Trung tuyến tam giác vuông",
+        "prompt": "Tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 16\\text{ cm}$. Độ dài đường trung tuyến $AM$ ứng với cạnh huyền bằng bao nhiêu cm?",
+        "correctAnswer": "8",
+        "acceptableAnswers": [
+          "8",
+          "8 cm",
+          "tám"
+        ],
+        "explanation": "$AM = \\frac{BC}{2} = \\frac{16}{2} = 8\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.13.3",
+        "badge": "Câu 3 (TH) - Độ dài đường chéo từ nửa đường chéo",
+        "prompt": "Hai đường chéo của hình chữ nhật $ABCD$ cắt nhau tại $O$. Biết $OA = 4.5\\text{ cm}$. Độ dài đường chéo $BD$ bằng bao nhiêu cm?",
+        "correctAnswer": "9",
+        "acceptableAnswers": [
+          "9",
+          "9 cm",
+          "chín"
+        ],
+        "explanation": "$BD = AC = 2 \\times OA = 2 \\times 4.5 = 9\\text{ cm}$."
+      },
+      {
+        "id": "sa-8.13.4",
+        "badge": "Câu 4 (VD) - Diện tích từ chu vi",
+        "prompt": "Một hình chữ nhật có chu vi $28\\text{ cm}$, chiều dài hơn chiều rộng $2\\text{ cm}$. Diện tích của hình chữ nhật bằng bao nhiêu $\\text{cm}^2$?",
+        "correctAnswer": "48",
+        "acceptableAnswers": [
+          "48",
+          "48 cm2",
+          "bốn mươi tám"
+        ],
+        "explanation": "Nửa chu vi là $28 : 2 = 14\\text{ cm}$. Chiều dài: $(14 + 2) : 2 = 8\\text{ cm}$, chiều rộng: $14 - 8 = 6\\text{ cm}$. Diện tích $S = 8 \\times 6 = 48\\text{ cm}^2$."
+      },
+      {
+        "id": "sa-8.13.5",
+        "badge": "Câu 5 (NB) - Số trục đối xứng",
+        "prompt": "Hình chữ nhật (không phải hình vuông) có bao nhiêu trục đối xứng?",
+        "correctAnswer": "2",
+        "acceptableAnswers": [
+          "2",
+          "hai"
+        ],
+        "explanation": "Hình chữ nhật có đúng 2 trục đối xứng là hai đường trung trực của hai cặp cạnh đối diện."
+      },
+      {
+        "id": "sa-8.13.6",
+        "badge": "Câu 6 (VD - Thực tế) - Màn hình điện tử",
+        "prompt": "Một chiếc màn hình máy tính có chiều rộng $40\\text{ cm}$ và chiều cao $30\\text{ cm}$. Độ dài đường chéo của màn hình bằng bao nhiêu cm?",
+        "correctAnswer": "50",
+        "acceptableAnswers": [
+          "50",
+          "50 cm",
+          "năm mươi"
+        ],
+        "explanation": "Độ dài đường chéo $d = \\sqrt{40^2 + 30^2} = \\sqrt{1600 + 900} = \\sqrt{2500} = 50\\text{ cm}$."
+      }
+    ]
+  },
 };

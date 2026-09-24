@@ -3964,4 +3964,298 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
       }
     ]
   },
+  "t8-b13-hinh-chu-nhat": {
+    "quizQuestions": [
+      {
+        "id": "ai-8.13.1",
+        "badge": "Luyện thêm 1 (NB) - Bốn góc hình chữ nhật",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 60",
+        "question": "Tổng số đo bốn góc trong một hình chữ nhật bằng:",
+        "options": [
+          "360°",
+          "180°",
+          "90°",
+          "270°"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hình chữ nhật có 4 góc vuông nên tổng bốn góc là $4 \\times 90^\\circ = 360^\\circ$."
+      },
+      {
+        "id": "ai-8.13.2",
+        "badge": "Luyện thêm 2 (TH) - Tìm độ dài đường chéo x",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Cho hình chữ nhật có kích thước $9\\text{ cm} \\times 12\\text{ cm}$. Độ dài đường chéo $x$ trong hình vẽ bằng bao nhiêu?",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='35' width='220' height='110' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><rect x='266' y='35' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><line x1='60' y1='145' x2='280' y2='35' stroke='#f43f5e' stroke-width='2'/><text x='170' y='28' fill='#38bdf8' font-size='11' font-weight='bold' text-anchor='middle'>12 cm</text><text x='294' y='95' fill='#f59e0b' font-size='11' font-weight='bold'>9 cm</text><text x='160' y='102' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='48' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='288' y='32' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='288' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='160' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
+        "options": [
+          "$x = 15\text{ cm}$",
+          "$x = 21\text{ cm}$",
+          "$x = 14\text{ cm}$",
+          "$x = 16\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "$x = \\sqrt{12^2 + 9^2} = \\sqrt{144 + 81} = \\sqrt{225} = 15\\text{ cm}$."
+      },
+      {
+        "id": "ai-8.13.3",
+        "badge": "Luyện thêm 3 (TH) - Tìm trung tuyến x tam giác vuông",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 63",
+        "question": "Cho tam giác vuông có cạnh huyền dài $18\\text{ cm}$. Độ dài đường trung tuyến ứng với cạnh huyền có giá trị $x$ bằng:",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='70,140 70,40 270,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><rect x='70' y='126' width='14' height='14' fill='none' stroke='#34d399' stroke-width='1.5'/><line x1='70' y1='140' x2='170' y2='90' stroke='#f43f5e' stroke-width='2'/><circle cx='170' cy='90' r='3.5' fill='#f43f5e'/><text x='110' y='108' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='52' y='150' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='54' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='278' y='150' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='176' y='82' fill='#f43f5e' font-size='12' font-weight='bold'>M</text><text x='185' y='160' fill='#38bdf8' font-size='11' text-anchor='middle'>BC = 18 cm</text></svg>",
+        "options": [
+          "$x = 9\text{ cm}$",
+          "$x = 18\text{ cm}$",
+          "$x = 6\text{ cm}$",
+          "$x = 12\text{ cm}$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền: $x = 18 : 2 = 9\\text{ cm}$."
+      },
+      {
+        "id": "ai-8.13.4",
+        "badge": "Luyện thêm 4 (TH) - Dấu hiệu nhận biết",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Hình bình hành có thêm điều kiện nào sau đây thì là hình chữ nhật?",
+        "options": [
+          "Có một góc vuông",
+          "Có hai đường chéo vuông góc",
+          "Có hai cạnh kề bằng nhau",
+          "Có các góc đối bằng nhau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dấu hiệu 3: Hình bình hành có một góc vuông là hình chữ nhật."
+      },
+      {
+        "id": "ai-8.13.5",
+        "badge": "Luyện thêm 5 (TH) - Bốn đoạn chéo bằng nhau",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Cho hình chữ nhật $ABCD$ có $AC = 14\\text{ cm}$. Khoảng cách từ giao điểm hai đường chéo đến mỗi đỉnh bằng:",
+        "options": [
+          "7 cm",
+          "14 cm",
+          "3.5 cm",
+          "10 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Khoảng cách từ giao điểm đến mỗi đỉnh bằng nửa đường chéo: $14 : 2 = 7\\text{ cm}$."
+      },
+      {
+        "id": "ai-8.13.6",
+        "badge": "Luyện thêm 6 (VD) - Chu vi hình chữ nhật",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 61",
+        "question": "Một hình chữ nhật có diện tích $48\\text{ cm}^2$ và chiều rộng $6\\text{ cm}$. Chu vi của hình chữ nhật đó bằng:",
+        "options": [
+          "28 cm",
+          "14 cm",
+          "32 cm",
+          "24 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiều dài: $48 : 6 = 8\\text{ cm}$. Chu vi: $C = 2 \\times (8 + 6) = 28\\text{ cm}$."
+      },
+      {
+        "id": "ai-8.13.7",
+        "badge": "Luyện thêm 7 (VD) - Tam giác vuông có một góc 30°",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Hình chữ nhật $ABCD$ có $\\widehat{BDC} = 30^\\circ$ và $BC = 5\\text{ cm}$. Độ dài đường chéo $BD$ bằng:",
+        "options": [
+          "10 cm",
+          "5 cm",
+          "15 cm",
+          "8 cm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trong tam giác vuông $\\triangle BCD$ vuông tại $C$ có $\\widehat{BDC} = 30^\\circ$, cạnh đối diện góc 30° bằng nửa cạnh huyền: $BC = \\frac{BD}{2} \\implies BD = 2 \\times 5 = 10\\text{ cm}$."
+      },
+      {
+        "id": "ai-8.13.8",
+        "badge": "Luyện thêm 8 (VD) - Trung điểm các cạnh hình chữ nhật",
+        "isAiGenerated": true,
+        "source": "Toán 8 KNTT Nâng cao",
+        "question": "Nối lần lượt trung điểm bốn cạnh của một hình chữ nhật ta được hình gì?",
+        "options": [
+          "Hình thoi",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình thang cân"
+        ],
+        "correctIndex": 0,
+        "explanation": "Theo tính chất đường trung bình, các cạnh của tứ giác mới đều bằng nửa đường chéo hình chữ nhật. Vì hai đường chéo hình chữ nhật bằng nhau nên bốn cạnh của tứ giác mới bằng nhau, do đó nó là hình thoi."
+      },
+      {
+        "id": "ai-8.13.9",
+        "badge": "Luyện thêm 9 (VD - Thực tế) - Sân bóng đá tiêu chuẩn",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 63",
+        "question": "Một sân bóng đá hình chữ nhật có chiều dài $105\\text{ m}$ và chiều rộng $68\\text{ m}$. Diện tích mặt sân bóng đá đó bằng bao nhiêu mét vuông?",
+        "options": [
+          "7 140 m²",
+          "346 m²",
+          "14 280 m²",
+          "7 200 m²"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diện tích mặt sân là: $S = 105 \\times 68 = 7\\ 140\\text{ (m}^2\\text{)}$."
+      },
+      {
+        "id": "ai-8.13.10",
+        "badge": "Luyện thêm 10 (VD - Thực tế) - Khung bao cửa sổ",
+        "isAiGenerated": true,
+        "source": "SGK Toán 8 KNTT Trang 62",
+        "question": "Một khung cửa sổ nhôm kính có chiều cao $1.6\\text{ m}$ và chiều rộng $1.2\\text{ m}$. Đường chéo của khung cửa sổ bằng bao nhiêu mét?",
+        "options": [
+          "2.0 m",
+          "2.8 m",
+          "1.8 m",
+          "2.5 m"
+        ],
+        "correctIndex": 0,
+        "explanation": "$d = \\sqrt{1.6^2 + 1.2^2} = \\sqrt{2.56 + 1.44} = \\sqrt{4.0} = 2.0\\text{ m}$."
+      }
+    ],
+    "trueFalseQuestions": [
+      {
+        "id": "ai-tf-8.13.1",
+        "badge": "Đúng / Sai 1 (TH) - Các mệnh đề về hình chữ nhật",
+        "prompt": "Xét tính đúng/sai của các mệnh đề sau về hình chữ nhật:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Hình chữ nhật có hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường.",
+            "correctAnswer": true,
+            "explanation": "Đúng, định lí tính chất cơ bản của hình chữ nhật."
+          },
+          {
+            "id": "b",
+            "text": "Hình chữ nhật có hai đường chéo là các đường phân giác của các góc.",
+            "correctAnswer": false,
+            "explanation": "Sai, đường chéo hình chữ nhật chỉ là phân giác khi nó là hình vuông."
+          },
+          {
+            "id": "c",
+            "text": "Tứ giác có 3 góc vuông là hình chữ nhật.",
+            "correctAnswer": true,
+            "explanation": "Đúng, đây là Dấu hiệu 1."
+          },
+          {
+            "id": "d",
+            "text": "Tâm đối xứng của hình chữ nhật là giao điểm của hai đường chéo.",
+            "correctAnswer": true,
+            "explanation": "Đúng, giao điểm hai đường chéo là tâm đối xứng."
+          }
+        ]
+      },
+      {
+        "id": "ai-tf-8.13.2",
+        "badge": "Đúng / Sai 2 (VD) - Tính toán hình học tam giác vuông và hình chữ nhật",
+        "prompt": "Cho hình chữ nhật $ABCD$ có $AB = 8\\text{ cm}, BC = 6\\text{ cm}$ và hai đường chéo cắt nhau tại $O$. Xét tính đúng/sai:",
+        "subItems": [
+          {
+            "id": "a",
+            "text": "Độ dài đường chéo $AC = 10\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $AC = \\sqrt{8^2 + 6^2} = 10\\text{ cm}$."
+          },
+          {
+            "id": "b",
+            "text": "Khoảng cách từ $O$ đến mỗi đỉnh của hình chữ nhật bằng $5\\text{ cm}$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, $OA = OB = OC = OD = 10 : 2 = 5\\text{ cm}$."
+          },
+          {
+            "id": "c",
+            "text": "Diện tích tam giác $OAB$ bằng $12\\text{ cm}^2$.",
+            "correctAnswer": true,
+            "explanation": "Đúng, diện tích hình chữ nhật là $8 \\times 6 = 48\\text{ cm}^2$. Diện tích $\\triangle OAB$ bằng $48 : 4 = 12\\text{ cm}^2$."
+          },
+          {
+            "id": "d",
+            "text": "Chu vi tam giác $OAB$ bằng $16\\text{ cm}$.",
+            "correctAnswer": false,
+            "explanation": "Sai, chu vi $\\triangle OAB = OA + OB + AB = 5 + 5 + 8 = 18\\text{ cm}$."
+          }
+        ]
+      }
+    ],
+    "shortAnswerQuestions": [
+      {
+        "id": "ai-sa-8.13.1",
+        "badge": "Câu 1 (NB) - Cạnh đối hình chữ nhật",
+        "prompt": "Hình chữ nhật $ABCD$ có $AB = 15\\text{ cm}$. Độ dài cạnh $CD$ bằng bao nhiêu cm?",
+        "correctAnswer": "15",
+        "acceptableAnswers": [
+          "15",
+          "15 cm",
+          "mười lăm"
+        ],
+        "explanation": "Trong hình chữ nhật, các cạnh đối bằng nhau nên $CD = AB = 15\\text{ cm}$."
+      },
+      {
+        "id": "ai-sa-8.13.2",
+        "badge": "Câu 2 (TH) - Đường chéo Pythagoras",
+        "prompt": "Một hình chữ nhật có kích thước $7\\text{ cm}$ và $24\\text{ cm}$. Độ dài đường chéo của hình chữ nhật bằng bao nhiêu cm?",
+        "correctAnswer": "25",
+        "acceptableAnswers": [
+          "25",
+          "25 cm",
+          "hai mươi lăm"
+        ],
+        "explanation": "$d = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25\\text{ cm}$."
+      },
+      {
+        "id": "ai-sa-8.13.3",
+        "badge": "Câu 3 (TH) - Trung tuyến tam giác vuông",
+        "prompt": "Cho tam giác vuông có cạnh huyền dài $22\\text{ cm}$. Độ dài đường trung tuyến ứng với cạnh huyền bằng bao nhiêu cm?",
+        "correctAnswer": "11",
+        "acceptableAnswers": [
+          "11",
+          "11 cm",
+          "mười một"
+        ],
+        "explanation": "Trung tuyến $= 22 : 2 = 11\\text{ cm}$."
+      },
+      {
+        "id": "ai-sa-8.13.4",
+        "badge": "Câu 4 (VD) - Chu vi hình chữ nhật",
+        "prompt": "Hình chữ nhật có chiều dài $16\\text{ cm}$, đường chéo $20\\text{ cm}$. Chu vi của hình chữ nhật đó bằng bao nhiêu cm?",
+        "correctAnswer": "56",
+        "acceptableAnswers": [
+          "56",
+          "56 cm",
+          "năm mươi sáu"
+        ],
+        "explanation": "Chiều rộng $= \\sqrt{20^2 - 16^2} = 12\\text{ cm}$. Chu vi $= 2 \\times (16 + 12) = 56\\text{ cm}$."
+      },
+      {
+        "id": "ai-sa-8.13.5",
+        "badge": "Câu 5 (VD) - Diện tích hình chữ nhật",
+        "prompt": "Một hình chữ nhật có chu vi $34\\text{ cm}$ và chiều dài hơn chiều rộng $7\\text{ cm}$. Diện tích của hình chữ nhật bằng bao nhiêu $\\text{cm}^2$?",
+        "correctAnswer": "60",
+        "acceptableAnswers": [
+          "60",
+          "60 cm2",
+          "sáu mươi"
+        ],
+        "explanation": "Nửa chu vi $= 17\\text{ cm}$. Chiều dài: $(17 + 7) : 2 = 12\\text{ cm}$, chiều rộng: $17 - 12 = 5\\text{ cm}$. Diện tích $= 12 \\times 5 = 60\\text{ cm}^2$."
+      },
+      {
+        "id": "ai-sa-8.13.6",
+        "badge": "Câu 6 (VD - Thực tế) - Đường chéo khung tranh",
+        "prompt": "Một khung tranh hình chữ nhật có kích thước $60\\text{ cm} \\times 80\\text{ cm}$. Độ dài đường chéo khung tranh bằng bao nhiêu cm?",
+        "correctAnswer": "100",
+        "acceptableAnswers": [
+          "100",
+          "100 cm",
+          "một trăm"
+        ],
+        "explanation": "Đường chéo $d = \\sqrt{60^2 + 80^2} = \\sqrt{3600 + 6400} = 100\\text{ cm}$."
+      }
+    ]
+  },
 };

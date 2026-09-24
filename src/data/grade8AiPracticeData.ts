@@ -3691,8 +3691,8 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
         "badge": "Luyện thêm 2 (NB) - Tìm góc x từ hình vẽ",
         "isAiGenerated": true,
         "source": "SGK Toán 8 KNTT Trang 57",
-        "question": "Tìm số đo góc $x$ tại đỉnh $D$ trong hình bình hành sau:",
-        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 238,40 A 22 22 0 0 0 248,65' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='240' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>70°</text><path d='M 82,140 A 22 22 0 0 1 72,118' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='82' y='134' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
+        "question": "Tìm số đo góc $x$ tại đỉnh $D$ trong hình bình hành sau khi biết $\\widehat{A} = 110^\\circ$:",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 82,85 A 22 22 0 0 1 122,40' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='105' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>110°</text><path d='M 82,140 A 22 22 0 0 1 72,118' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='82' y='134' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
         "options": [
           "$x = 70^\\circ$",
           "$x = 110^\\circ$",
@@ -3700,23 +3700,23 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
           "$x = 60^\\circ$"
         ],
         "correctIndex": 0,
-        "explanation": "Trong hình bình hành, hai góc đối bằng nhau nên $x = \\widehat{D} = \\widehat{B} = 70^\\circ$."
+        "explanation": "Trong hình bình hành, hai góc kề một cạnh bù nhau: $\\widehat{A} + \\widehat{D} = 180^\\circ \\implies x = \\widehat{D} = 180^\\circ - 110^\\circ = 70^\\circ$."
       },
       {
         "id": "ai-8.12.3",
-        "badge": "Luyện thêm 3 (TH) - Tìm độ dài cạnh đối x",
+        "badge": "Luyện thêm 3 (TH) - Tìm độ dài cạnh x từ chu vi",
         "isAiGenerated": true,
         "source": "SGK Toán 8 KNTT Trang 57",
-        "question": "Cho hình bình hành $ABCD$ có $AD = 7\\text{ cm}$. Độ dài cạnh $BC$ mang giá trị $x$ bằng bao nhiêu?",
-        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><text x='65' y='92' fill='#38bdf8' font-size='11' font-weight='bold'>7 cm</text><text x='250' y='92' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
+        "question": "Hình bình hành $ABCD$ có chu vi bằng $22\\text{ cm}$ và $AB = 4\\text{ cm}$. Độ dài cạnh $BC$ mang giá trị $x$ bằng bao nhiêu?",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><text x='180' y='34' fill='#38bdf8' font-size='11' font-weight='bold' text-anchor='middle'>4 cm</text><text x='250' y='92' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='180' y='95' fill='#fbbf24' font-size='12' font-weight='bold' text-anchor='middle'>Chu vi: 22 cm</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
         "options": [
-          "$x = 7\text{ cm}$",
-          "$x = 14\text{ cm}$",
-          "$x = 3.5\text{ cm}$",
-          "$x = 10\text{ cm}$"
+          "$x = 7\\text{ cm}$",
+          "$x = 14\\text{ cm}$",
+          "$x = 3.5\\text{ cm}$",
+          "$x = 9\\text{ cm}$"
         ],
         "correctIndex": 0,
-        "explanation": "Trong hình bình hành, hai cạnh đối bằng nhau nên $x = BC = AD = 7\\text{ cm}$."
+        "explanation": "Chu vi hình bình hành bằng $2(AB + BC) = 2(4 + x) = 22\\text{ cm} \\implies 4 + x = 11 \\implies x = 7\\text{ cm}$."
       },
       {
         "id": "ai-8.12.4",
@@ -3783,8 +3783,8 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
         "badge": "Luyện thêm 8 (VD) - Góc ngoài tại một đỉnh",
         "isAiGenerated": true,
         "source": "SGK Toán 8 KNTT Trang 57",
-        "question": "Hình bình hành $ABCD$ có $\\widehat{A} = 115^\\circ$. Số đo góc ngoài tại đỉnh $D$ trong hình vẽ là:",
-        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><line x1='60' y1='140' x2='15' y2='140' stroke='#f59e0b' stroke-width='1.8' stroke-dasharray='4 3'/><path d='M 82,85 A 22 22 0 0 1 122,40' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='105' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>115°</text><path d='M 40,140 A 20 20 0 0 1 48,122' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='35' y='126' fill='#f43f5e' font-size='13' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='62' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
+        "question": "Hình bình hành $ABCD$ có $\\widehat{B} = 65^\\circ$. Số đo góc ngoài tại đỉnh $D$ trong hình vẽ là:",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><line x1='60' y1='140' x2='15' y2='140' stroke='#f59e0b' stroke-width='1.8' stroke-dasharray='4 3'/><path d='M 238,40 A 22 22 0 0 0 248,65' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='240' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>65°</text><path d='M 40,140 A 20 20 0 0 1 48,122' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='35' y='126' fill='#f43f5e' font-size='13' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='62' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>",
         "options": [
           "$x = 115^\\circ$",
           "$x = 65^\\circ$",
@@ -3792,7 +3792,7 @@ export const GRADE_8_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade8AiP
           "$x = 125^\\circ$"
         ],
         "correctIndex": 0,
-        "explanation": "Ta có $\\widehat{D} = 180^\\circ - \\widehat{A} = 180^\\circ - 115^\\circ = 65^\\circ$. Góc ngoài tại đỉnh $D$ kề bù với góc trong: $x = 180^\\circ - 65^\\circ = 115^\\circ$ (bằng góc trong $\\widehat{A}$ do đồng vị)."
+        "explanation": "Trong hình bình hành, hai góc đối diện bằng nhau nên $\\widehat{D}_{trong} = \\widehat{B} = 65^\\circ$. Góc ngoài tại đỉnh $D$ kề bù với góc trong nên $x = 180^\\circ - 65^\\circ = 115^\\circ$."
       },
       {
         "id": "ai-8.12.9",

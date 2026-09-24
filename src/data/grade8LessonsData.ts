@@ -8733,7 +8733,7 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-8.11.2",
         "badge": "Câu 2 (NB) - Tính góc đáy hình thang cân",
         "source": "SGK Toán 8 KNTT Trang 53",
-        "question": "Cho hình thang cân $ABCD$ ($AB \\parallel CD$) có số đo góc $\\widehat{D} = 70^\\circ$. Số đo góc $x$ tại đỉnh $C$ bằng bao nhiêu?",
+        "question": "Cho hình thang cân $ABCD$ ($AB \\parallel CD$) có góc đáy nhỏ $\\widehat{B} = 110^\\circ$. Số đo góc đáy lớn $x$ tại đỉnh $C$ bằng bao nhiêu?",
         "options": [
           "$70^\\circ$",
           "$110^\\circ$",
@@ -8741,8 +8741,8 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "$140^\\circ$"
         ],
         "correctIndex": 0,
-        "explanation": "Vì $ABCD$ là hình thang cân có hai đáy $AB \\parallel CD$ nên hai góc kề đáy lớn bằng nhau: $x = \\widehat{C} = \\widehat{D} = 70^\\circ$.",
-        "svgDiagram": "<svg viewBox='0 0 340 190' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='95,45 225,45 275,150 45,150' fill='rgba(56, 189, 248, 0.05)' stroke='#38bdf8' stroke-width='2'/><path d='M 65,150 A 20 20 0 0 0 74,136' fill='none' stroke='#fbbf24' stroke-width='1.8'/><path d='M 255,150 A 20 20 0 0 1 246,136' fill='none' stroke='#34d399' stroke-width='1.8'/><text x='88' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>A</text><text x='230' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>B</text><text x='282' y='155' fill='#cbd5e1' font-size='12' font-weight='bold'>C</text><text x='30' y='155' fill='#cbd5e1' font-size='12' font-weight='bold'>D</text><text x='82' y='145' fill='#fbbf24' font-size='11'>70°</text><text x='236' y='145' fill='#34d399' font-size='12' font-weight='bold'>x</text></svg>"
+        "explanation": "Vì $ABCD$ là hình thang ($AB \\parallel CD$) nên hai góc trong cùng phía bù nhau: $\\widehat{B} + \\widehat{C} = 180^\\circ \\implies x = \\widehat{C} = 180^\\circ - 110^\\circ = 70^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 190' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='95,45 225,45 275,150 45,150' fill='rgba(56, 189, 248, 0.05)' stroke='#38bdf8' stroke-width='2'/><path d='M 205,45 A 20 20 0 0 0 231,61' fill='none' stroke='#fbbf24' stroke-width='1.8'/><path d='M 255,150 A 20 20 0 0 1 246,136' fill='none' stroke='#34d399' stroke-width='1.8'/><text x='88' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>A</text><text x='230' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>B</text><text x='282' y='155' fill='#cbd5e1' font-size='12' font-weight='bold'>C</text><text x='30' y='155' fill='#cbd5e1' font-size='12' font-weight='bold'>D</text><text x='192' y='65' fill='#fbbf24' font-size='11'>110°</text><text x='236' y='145' fill='#34d399' font-size='12' font-weight='bold'>x</text></svg>"
       },
       {
         "id": "quiz-8.11.3",
@@ -8806,7 +8806,7 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         "id": "quiz-8.11.7",
         "badge": "Câu 7 (TH) - Giao điểm hai đường chéo",
         "source": "Toán 8 KNTT Nâng cao",
-        "question": "Hình thang cân $ABCD$ ($AB \\parallel CD$) có hai đường chéo cắt nhau tại $O$. Biết $OA = 3\\text{ cm}$ và $OD = 5\\text{ cm}$. Đoạn $OC$ có độ dài $x$ bằng bao nhiêu?",
+        "question": "Hình thang cân $ABCD$ ($AB \\parallel CD$) có hai đường chéo cắt nhau tại $O$. Biết đường chéo $AC = 8\\text{ cm}$ và đoạn $OA = 3\\text{ cm}$. Đoạn $OC$ có độ dài $x$ bằng bao nhiêu?",
         "options": [
           "5 cm",
           "3 cm",
@@ -8814,8 +8814,8 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "2 cm"
         ],
         "correctIndex": 0,
-        "explanation": "Do tính chất đối xứng của hình thang cân, $\\triangle OCD$ cân tại $O$ nên $OC = OD = 5\\text{ cm}$.",
-        "svgDiagram": "<svg viewBox='0 0 340 200' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='105,45 215,45 265,160 55,160' fill='none' stroke='#38bdf8' stroke-width='2'/><line x1='105' y1='45' x2='265' y2='160' stroke='#f43f5e' stroke-width='1.5'/><line x1='215' y1='45' x2='55' y2='160' stroke='#fbbf24' stroke-width='1.5'/><circle cx='160' cy='95' r='3.5' fill='#a855f7'/><text x='160' y='90' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><text x='95' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>A</text><text x='222' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>B</text><text x='272' y='165' fill='#cbd5e1' font-size='12' font-weight='bold'>C</text><text x='42' y='165' fill='#cbd5e1' font-size='12' font-weight='bold'>D</text><text x='115' y='70' fill='#38bdf8' font-size='10'>3 cm</text><text x='100' y='140' fill='#fbbf24' font-size='11'>5 cm</text><text x='215' y='140' fill='#f43f5e' font-size='12' font-weight='bold'>x</text></svg>"
+        "explanation": "Điểm $O$ nằm trên đoạn thẳng $AC$ nên $OA + OC = AC \\implies x = OC = AC - OA = 8 - 3 = 5\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 200' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='105,45 215,45 265,160 55,160' fill='none' stroke='#38bdf8' stroke-width='2'/><line x1='105' y1='45' x2='265' y2='160' stroke='#f43f5e' stroke-width='1.5'/><line x1='215' y1='45' x2='55' y2='160' stroke='#fbbf24' stroke-width='1.5'/><circle cx='160' cy='95' r='3.5' fill='#a855f7'/><text x='160' y='90' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>O</text><text x='95' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>A</text><text x='222' y='40' fill='#cbd5e1' font-size='12' font-weight='bold'>B</text><text x='272' y='165' fill='#cbd5e1' font-size='12' font-weight='bold'>C</text><text x='42' y='165' fill='#cbd5e1' font-size='12' font-weight='bold'>D</text><text x='115' y='70' fill='#38bdf8' font-size='10'>3 cm</text><text x='215' y='140' fill='#f43f5e' font-size='12' font-weight='bold'>x</text><text x='170' y='185' fill='#94a3b8' font-size='11' text-anchor='middle'>AC = 8 cm</text></svg>"
       },
       {
         "id": "quiz-8.11.8",
@@ -9432,9 +9432,9 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       },
       {
         "id": "quiz-8.12.2",
-        "badge": "Câu 2 (NB) - Tính chất góc đối",
+        "badge": "Câu 2 (TH) - Hai góc kề bù nhau",
         "source": "SGK Toán 8 KNTT Trang 57",
-        "question": "Cho hình bình hành $ABCD$ có $\\widehat{A} = 110^\\circ$. Số đo góc $x$ tại đỉnh $C$ trong hình vẽ là:",
+        "question": "Cho hình bình hành $ABCD$ có $\\widehat{B} = 70^\\circ$. Số đo góc $x$ tại đỉnh $C$ trong hình vẽ là:",
         "options": [
           "$x = 110^\\circ$",
           "$x = 70^\\circ$",
@@ -9442,8 +9442,8 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
           "$x = 120^\\circ$"
         ],
         "correctIndex": 0,
-        "explanation": "Trong hình bình hành, hai góc đối bằng nhau nên $x = \\widehat{C} = \\widehat{A} = 110^\\circ$.",
-        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 82,85 A 22 22 0 0 1 122,40' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='105' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>110°</text><path d='M 198,140 A 22 22 0 0 1 238,95' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='202' y='122' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+        "explanation": "Trong hình bình hành, hai góc kề một cạnh luôn bù nhau: $\\widehat{B} + \\widehat{C} = 180^\\circ \\implies x = \\widehat{C} = 180^\\circ - 70^\\circ = 110^\\circ$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><path d='M 238,40 A 22 22 0 0 0 248,65' fill='none' stroke='#38bdf8' stroke-width='1.8'/><text x='240' y='65' fill='#38bdf8' font-size='11' font-weight='bold'>70°</text><path d='M 198,140 A 22 22 0 0 1 238,95' fill='none' stroke='#f43f5e' stroke-width='2'/><text x='202' y='122' fill='#f43f5e' font-size='14' font-weight='bold'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
       },
       {
         "id": "quiz-8.12.3",
@@ -9462,18 +9462,18 @@ export const GRADE_8_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       },
       {
         "id": "quiz-8.12.4",
-        "badge": "Câu 4 (NB) - Tính chất cạnh đối",
+        "badge": "Câu 4 (TH) - Tìm cạnh hình bình hành qua chu vi",
         "source": "SGK Toán 8 KNTT Trang 57",
-        "question": "Cho hình bình hành $ABCD$ có $AB = 8\\text{ cm}$ và $AD = 5\\text{ cm}$. Độ dài cạnh $CD$ có giá trị $x$ bằng:",
+        "question": "Cho hình bình hành $ABCD$ có chu vi bằng $26\\text{ cm}$ và $AD = 5\\text{ cm}$. Độ dài cạnh $CD$ có giá trị $x$ bằng:",
         "options": [
-          "$x = 8\text{ cm}$",
-          "$x = 5\text{ cm}$",
-          "$x = 13\text{ cm}$",
-          "$x = 10\text{ cm}$"
+          "$x = 8\\text{ cm}$",
+          "$x = 5\\text{ cm}$",
+          "$x = 13\\text{ cm}$",
+          "$x = 10\\text{ cm}$"
         ],
         "correctIndex": 0,
-        "explanation": "Trong hình bình hành, các cạnh đối bằng nhau nên $x = CD = AB = 8\\text{ cm}$.",
-        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><text x='180' y='34' fill='#38bdf8' font-size='11' font-weight='bold' text-anchor='middle'>8 cm</text><text x='70' y='90' fill='#f59e0b' font-size='11' font-weight='bold'>5 cm</text><text x='140' y='158' fill='#f43f5e' font-size='14' font-weight='bold' text-anchor='middle'>x</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
+        "explanation": "Chu vi hình bình hành bằng $2(AD + CD) = 2(5 + x) = 26\\text{ cm} \\implies 5 + x = 13 \\implies x = 8\\text{ cm}$.",
+        "svgDiagram": "<svg viewBox='0 0 340 180' class='w-full max-w-xs mx-auto my-2 select-none rounded-xl border border-slate-700 bg-slate-900/90 p-2 shadow-md' xmlns='http://www.w3.org/2000/svg'><polygon points='100,40 260,40 220,140 60,140' fill='rgba(56, 189, 248, 0.08)' stroke='#38bdf8' stroke-width='2.2'/><text x='70' y='90' fill='#f59e0b' font-size='11' font-weight='bold'>5 cm</text><text x='140' y='158' fill='#f43f5e' font-size='14' font-weight='bold' text-anchor='middle'>x</text><text x='180' y='95' fill='#38bdf8' font-size='12' font-weight='bold' text-anchor='middle'>Chu vi: 26 cm</text><text x='90' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>A</text><text x='268' y='35' fill='#f8fafc' font-size='13' font-weight='bold'>B</text><text x='226' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>C</text><text x='48' y='155' fill='#f8fafc' font-size='13' font-weight='bold'>D</text></svg>"
       },
       {
         "id": "quiz-8.12.5",

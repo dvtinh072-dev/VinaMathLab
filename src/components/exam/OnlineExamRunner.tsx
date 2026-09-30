@@ -33,6 +33,8 @@ import { formatTime } from "@/lib/utils";
 import confetti from "canvas-confetti";
 import { useAuth } from "@/context/AuthContext";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
+import { saveLocalPracticeResult } from "@/lib/practiceExamStore";
+import { PracticeExamResult } from "@/types/practiceExam";
 
 interface Props {
   exam: CustomExam;
@@ -253,6 +255,38 @@ export function OnlineExamRunner({ exam }: Props) {
     } catch (e) {
       console.warn("Lỗi lưu bài thi lên server, lưu tạm tại máy học sinh:", e);
       setSubmissionResult(submissionPayload as StudentExamSubmission);
+    }
+
+    // Tự động lưu vào lịch sử làm bài của học sinh (đồng bộ trang cá nhân & đa thiết bị)
+    try {
+      const practiceItem: PracticeExamResult = {
+        id: submissionPayload.id || `sub_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+        examId: exam.id,
+        examTitle: exam.title,
+        grade: exam.grade,
+        gradeNumber: exam.gradeNumber || 6,
+        examType: "teacher_exam",
+        submittedAt: new Date().toISOString(),
+        timeSpentSeconds,
+        score: totalScore,
+        totalScore,
+        maxScore: 10,
+        scorePart1,
+        scorePart2,
+        scorePart3,
+        totalQuestions: exam.totalQuestions,
+        correctCount: correctPart1 + correctPart3,
+        mcAnswers,
+        tfAnswers,
+        saAnswers,
+        essayFiles,
+        userId: user?.id || user?.studentCode || user?.username || studentName.trim(),
+        studentName: studentName.trim(),
+        studentClass: studentClass.trim(),
+      };
+      saveLocalPracticeResult(practiceItem);
+    } catch (syncErr) {
+      console.warn("Lỗi lưu lịch sử làm bài vào profile học sinh:", syncErr);
     }
 
     setIsSubmitted(true);

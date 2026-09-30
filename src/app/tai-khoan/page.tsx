@@ -27,14 +27,16 @@ import {
   History,
   FileCheck,
   Target,
+  Eye,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { formatNaturalNumber } from "@/components/interactive/GamifiedMathQuiz";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { getLocalStudentProgress, saveLocalStudentProgressUpdate } from "@/lib/studentProgressClient";
 import { getUserGradeKey } from "@/lib/teacherClassUtils";
-import { getAllPracticeResults } from "@/lib/practiceExamStore";
+import { getAllPracticeResults, fetchAndSyncPracticeResults } from "@/lib/practiceExamStore";
 import { PracticeExamResult } from "@/types/practiceExam";
+import ExamSubmissionReviewModal from "@/components/exam/ExamSubmissionReviewModal";
 
 export default function StudentProfilePage() {
   const router = useRouter();
@@ -43,6 +45,8 @@ export default function StudentProfilePage() {
 
   const [progressData, setProgressData] = useState<any>(null);
   const [practiceResults, setPracticeResults] = useState<PracticeExamResult[]>([]);
+  const [reviewSubmission, setReviewSubmission] = useState<PracticeExamResult | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [filterWrong, setFilterWrong] = useState<"all" | "active" | "resolved">("all");
   const [activeTab, setActiveTab] = useState<"overview" | "mistakes" | "lessons" | "practice">("overview");
@@ -51,9 +55,17 @@ export default function StudentProfilePage() {
   const [retryFeedback, setRetryFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
 
   useEffect(() => {
-    const loadPracticeResults = () => {
-      const results = getAllPracticeResults(user?.id || user?.studentCode || user?.username);
-      setPracticeResults(results);
+    const loadPracticeResults = async () => {
+      const identifier = user?.id || user?.studentCode || user?.username;
+      if (!identifier) return;
+      const localResults = getAllPracticeResults(identifier);
+      setPracticeResults(localResults);
+
+      // Đồng bộ đa thiết bị từ máy chủ
+      const synced = await fetchAndSyncPracticeResults(identifier);
+      if (synced && synced.length > 0) {
+        setPracticeResults(synced);
+      }
     };
 
     if (user?.id || user?.studentCode || user?.username) {
@@ -883,13 +895,27 @@ export default function StudentProfilePage() {
                           </div>
                         </div>
 
-                        <Link
-                          href={`/luyen-thi/${res.examId}`}
-                          className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 hover:text-white border border-slate-700 hover:border-cyan-400 text-xs font-black transition-all flex items-center gap-1.5 select-none"
-                        >
-                          <RotateCcw className="w-3.5 h-3.5" />
-                          <span>Thi lại</span>
-                        </Link>
+                        <div className="flex items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setReviewSubmission(res);
+                              setShowReviewModal(true);
+                            }}
+                            className="px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black text-xs transition-all flex items-center gap-1.5 shadow-md shadow-cyan-500/20 cursor-pointer select-none"
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>Xem lại bài làm</span>
+                          </button>
+
+                          <Link
+                            href={`/luyen-thi/${res.examId}`}
+                            className="px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 hover:text-white border border-slate-700 hover:border-cyan-400 text-xs font-black transition-all flex items-center gap-1.5 select-none"
+                          >
+                            <RotateCcw className="w-3.5 h-3.5" />
+                            <span>Thi lại</span>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   );
@@ -899,6 +925,16 @@ export default function StudentProfilePage() {
           </div>
         </div>
       )}
+
+      {/* Modal Xem Lại Chi Tiết Bài Làm Của Học Sinh */}
+      <ExamSubmissionReviewModal
+        submission={reviewSubmission}
+        isOpen={showReviewModal}
+        onClose={() => {
+          setShowReviewModal(false);
+          setReviewSubmission(null);
+        }}
+      />
     </div>
   );
 }

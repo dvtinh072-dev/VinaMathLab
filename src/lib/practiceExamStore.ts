@@ -16,7 +16,7 @@ export function getAllPracticeResults(userId?: string): PracticeExamResult[] {
     if (userId) {
       const cleanUser = userId.trim().toLowerCase();
       return list.filter(
-        (item) => !item.userId || item.userId.trim().toLowerCase() === cleanUser
+        (item) => !item.userId || item.userId.trim().toLowerCase() === cleanUser || item.studentName?.trim().toLowerCase() === cleanUser
       );
     }
     return list;
@@ -68,7 +68,7 @@ export function saveLocalPracticeResult(result: PracticeExamResult): void {
   try {
     const existing = getAllPracticeResults();
     // Đưa kết quả mới nhất lên đầu danh sách
-    const updated = [result, ...existing.filter((item) => item.id !== result.id)].slice(0, 100);
+    const updated = [result, ...existing.filter((item) => item.id !== result.id)].slice(0, 200);
     localStorage.setItem(PRACTICE_EXAM_STORE_KEY, JSON.stringify(updated));
 
     // Bắn sự kiện CustomEvent để các component trên màn hình cập nhật tức thì
@@ -87,6 +87,59 @@ export function saveLocalPracticeResult(result: PracticeExamResult): void {
   } catch (e) {
     console.warn("Lỗi lưu kết quả thi thử vào localStorage:", e);
   }
+}
+
+/**
+ * Tải và đồng bộ kết quả thi thử từ máy chủ về thiết bị hiện tại (hỗ trợ đa thiết bị)
+ */
+export async function fetchAndSyncPracticeResults(userId: string): Promise<PracticeExamResult[]> {
+  if (!userId) return [];
+  const localList = getAllPracticeResults(userId);
+
+  try {
+    const res = await fetch(`/api/student/practice-exams?userId=${encodeURIComponent(userId)}`);
+    const data = await res.json();
+    if (data.success && Array.isArray(data.results)) {
+      const serverList: PracticeExamResult[] = data.results;
+
+      // Hợp nhất dữ liệu giữa Server và Local
+      const mergedMap = new Map<string, PracticeExamResult>();
+      serverList.forEach((item) => mergedMap.set(item.id, item));
+
+      // Những bài nào chỉ có ở local thì backup lên server
+      localList.forEach((item) => {
+        if (!mergedMap.has(item.id)) {
+          mergedMap.set(item.id, item);
+          fetch("/api/student/practice-exams", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(item),
+          }).catch(() => {});
+        }
+      });
+
+      const mergedList = Array.from(mergedMap.values()).sort(
+        (a, b) => new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime()
+      );
+
+      // Lưu lại vào localStorage của thiết bị hiện tại
+      if (typeof window !== "undefined") {
+        const fullLocal = getAllPracticeResults();
+        const otherUsersData = fullLocal.filter(
+          (x) => x.userId && x.userId.toLowerCase() !== userId.toLowerCase()
+        );
+        const combined = [...mergedList, ...otherUsersData].slice(0, 300);
+        localStorage.setItem(PRACTICE_EXAM_STORE_KEY, JSON.stringify(combined));
+        window.dispatchEvent(new CustomEvent("vinamath_practice_exam_saved"));
+      }
+
+      return mergedList;
+    }
+  } catch (e) {
+    console.warn("Lỗi tải kết quả thi từ server, dùng cache local:", e);
+  }
+
+  return localList;
 }
 
 /**
@@ -111,7 +164,6 @@ export function getPracticeHistorySummary(
       const cur = summaryMap[res.examId];
       cur.attemptsCount += 1;
       cur.bestScore = Math.max(cur.bestScore, res.score);
-      // Danh sách đã sort theo submittedAt desc nên kết quả đầu tiên là latest
     }
   }
 
@@ -119,7 +171,7 @@ export function getPracticeHistorySummary(
 }
 
 /**
- * Xóa 1 lần thi thử cụ thể
+ * Xóa 1 lần thi cụ thể
  */
 export function deletePracticeResult(resultId: string): void {
   if (typeof window === "undefined") return;
@@ -128,6 +180,11 @@ export function deletePracticeResult(resultId: string): void {
     const filtered = existing.filter((r) => r.id !== resultId);
     localStorage.setItem(PRACTICE_EXAM_STORE_KEY, JSON.stringify(filtered));
     window.dispatchEvent(new CustomEvent("vinamath_practice_exam_saved"));
+
+    // Đồng bộ xóa trên server
+    fetch(`/api/student/practice-exams?id=${encodeURIComponent(resultId)}`, {
+      method: "DELETE",
+    }).catch(() => {});
   } catch (e) {
     console.warn("Lỗi xóa kết quả thi thử:", e);
   }

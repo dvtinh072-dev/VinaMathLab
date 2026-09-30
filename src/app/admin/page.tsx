@@ -37,6 +37,7 @@ import {
   Bot,
   MessageSquare,
   Save,
+  History,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { GRADE_6_DETAILED_LESSONS } from "@/data/grade6LessonsData";
@@ -47,6 +48,8 @@ import { parseAssignedClasses, isStudentInAssignedClasses } from "@/lib/teacherC
 import { fetchQuestionReports, updateQuestionReportStatus, deleteQuestionReport, QuestionReportItem } from "@/lib/questionReportClient";
 import { fetchAdminChatLogs, deleteAdminChatLog, AiChatLogItem, AiConfigData, fetchAiAdminConfig, saveAiAdminConfig } from "@/lib/vinaAiChatClient";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
+import ExamSubmissionReviewModal from "@/components/exam/ExamSubmissionReviewModal";
+import { formatTime } from "@/lib/utils";
 
 export default function AdminDashboardPage() {
   const router = useRouter();
@@ -59,7 +62,17 @@ export default function AdminDashboardPage() {
     }
   }, [user, isAdmin, router]);
 
-  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "mistakes" | "reports" | "ai_chat" | "backup" | "settings">("students");
+  const [activeTab, setActiveTab] = useState<"lessons" | "students" | "teachers" | "submissions" | "mistakes" | "reports" | "ai_chat" | "backup" | "settings">("students");
+  const [submissionsList, setSubmissionsList] = useState<any[]>([]);
+  const [submissionsKpi, setSubmissionsKpi] = useState<any>(null);
+  const [submissionsSearchQuery, setSubmissionsSearchQuery] = useState("");
+  const [submissionsFilterGrade, setSubmissionsFilterGrade] = useState("all");
+  const [submissionsFilterClass, setSubmissionsFilterClass] = useState("all");
+  const [submissionsFilterType, setSubmissionsFilterType] = useState("all");
+  const [submissionsSort, setSubmissionsSort] = useState<"newest" | "oldest" | "highest" | "lowest">("newest");
+  const [selectedReviewSubmission, setSelectedReviewSubmission] = useState<any | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [isLoadingSubmissions, setIsLoadingSubmissions] = useState(false);
   const [aiChatLogs, setAiChatLogs] = useState<AiChatLogItem[]>([]);
   const [aiChatSearchQuery, setAiChatSearchQuery] = useState<string>("");
   const [aiConfig, setAiConfig] = useState<AiConfigData | null>(null);
@@ -266,6 +279,18 @@ export default function AdminDashboardPage() {
         console.warn("Lỗi fetch chat logs:", chatErr);
       }
 
+      // 1.7. Lấy danh sách kết quả bài thi / bài kiểm tra của học sinh
+      try {
+        const resSub = await fetch("/api/student/practice-exams?mode=admin");
+        const dataSub = await resSub.json();
+        if (dataSub.success && Array.isArray(dataSub.results)) {
+          setSubmissionsList(dataSub.results);
+          setSubmissionsKpi(dataSub.kpi);
+        }
+      } catch (subErr) {
+        console.warn("Lỗi fetch submissions:", subErr);
+      }
+
       const resProgress = await fetch("/api/student/progress?mode=admin");
       const dataProgress = await resProgress.json();
       if (dataProgress.success) {
@@ -278,6 +303,41 @@ export default function AdminDashboardPage() {
     }
   };
 
+  const fetchSubmissionsData = async () => {
+    setIsLoadingSubmissions(true);
+    try {
+      const res = await fetch("/api/student/practice-exams?mode=admin");
+      const data = await res.json();
+      if (data.success && Array.isArray(data.results)) {
+        setSubmissionsList(data.results);
+        setSubmissionsKpi(data.kpi);
+      }
+    } catch (e) {
+      console.warn("Lỗi tải danh sách bài nộp của học sinh:", e);
+    } finally {
+      setIsLoadingSubmissions(false);
+    }
+  };
+
+  const handleDeleteSubmission = async (id: string) => {
+    if (!window.confirm("Bạn có chắc chắn muốn xóa bài thi này khỏi hệ thống?")) return;
+    try {
+      const res = await fetch(`/api/student/practice-exams?id=${encodeURIComponent(id)}`, {
+        method: "DELETE",
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmissionsList((prev) => prev.filter((s) => s.id !== id));
+        setStatusMessage("Đã xóa bài thi thành công!");
+        setTimeout(() => setStatusMessage(null), 3000);
+      } else {
+        alert(data.error || "Không thể xóa bài thi");
+      }
+    } catch (e) {
+      alert("Lỗi kết nối máy chủ");
+    }
+  };
+
   useEffect(() => {
     if (activeTab === "ai_chat") {
       fetchAdminChatLogs().then((logs) => setAiChatLogs(logs));
@@ -287,6 +347,8 @@ export default function AdminDashboardPage() {
           setAiProviderChoice(cfg.provider || "gemini");
         }
       });
+    } else if (activeTab === "submissions") {
+      fetchSubmissionsData();
     }
   }, [activeTab]);
 
@@ -324,6 +386,98 @@ export default function AdminDashboardPage() {
 
     return matchQuery && matchSchool && matchClass && matchGrade;
   });
+
+  // Lọc danh sách bài thi / kiểm tra của học sinh cho Admin
+  const filteredSubmissions = useMemo(() => {
+    return submissionsList
+      .filter((s) => {
+        const q = submissionsSearchQuery.toLowerCase().trim();
+        const matchQ =
+          !q ||
+          s.studentName?.toLowerCase().includes(q) ||
+          s.studentUsername?.toLowerCase().includes(q) ||
+          s.userId?.toLowerCase().includes(q) ||
+          s.studentClass?.toLowerCase().includes(q) ||
+          s.examTitle?.toLowerCase().includes(q);
+
+        const matchGrade = submissionsFilterGrade === "all" || s.grade === submissionsFilterGrade;
+        const matchClass = submissionsFilterClass === "all" || s.studentClass === submissionsFilterClass;
+        const matchType =
+          submissionsFilterType === "all" ||
+          (submissionsFilterType === "teacher" && s.examType === "teacher_exam") ||
+          (submissionsFilterType === "practice" && s.examType !== "teacher_exam");
+
+        return matchQ && matchGrade && matchClass && matchType;
+      })
+      .sort((a, b) => {
+        if (submissionsSort === "newest") {
+          return new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime();
+        }
+        if (submissionsSort === "oldest") {
+          return new Date(a.submittedAt).getTime() - new Date(b.submittedAt).getTime();
+        }
+        if (submissionsSort === "highest") {
+          return (b.score || 0) - (a.score || 0);
+        }
+        if (submissionsSort === "lowest") {
+          return (a.score || 0) - (b.score || 0);
+        }
+        return 0;
+      });
+  }, [
+    submissionsList,
+    submissionsSearchQuery,
+    submissionsFilterGrade,
+    submissionsFilterClass,
+    submissionsFilterType,
+    submissionsSort,
+  ]);
+
+  const handleExportSubmissionsCsv = () => {
+    if (filteredSubmissions.length === 0) {
+      alert("Không có dữ liệu bài nộp để xuất");
+      return;
+    }
+    const headers = [
+      "Mã bài nộp",
+      "Họ và tên học sinh",
+      "Lớp",
+      "Tài khoản",
+      "Tên đề thi",
+      "Khối",
+      "Tổng điểm",
+      "Phần I (Trắc nghiệm)",
+      "Phần II (Đúng/Sai)",
+      "Phần III (Trả lời ngắn)",
+      "Thời gian làm (giây)",
+      "Số lần rời màn hình",
+      "Thời gian nộp bài",
+    ];
+    const rows = filteredSubmissions.map((s) => [
+      `"${s.id || ""}"`,
+      `"${s.studentName || ""}"`,
+      `"${s.studentClass || ""}"`,
+      `"${s.studentUsername || s.userId || ""}"`,
+      `"${s.examTitle || ""}"`,
+      `"${s.grade || ""}"`,
+      s.score ?? 0,
+      s.scorePart1 ?? 0,
+      s.scorePart2 ?? 0,
+      s.scorePart3 ?? 0,
+      s.timeSpentSeconds ?? 0,
+      s.blurCount ?? 0,
+      `"${s.submittedAt ? new Date(s.submittedAt).toLocaleString("vi-VN") : ""}"`,
+    ]);
+    const csvContent = "\uFEFF" + [headers.join(","), ...rows.map((r) => r.join(","))].join("\n");
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `VinaMath_Lich_Su_Bai_Thi_${new Date().toISOString().slice(0, 10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Tìm thông tin tiến độ kèm theo học sinh (gộp cả dữ liệu máy chủ và localStorage)
   const getStudentProgress = (studentId: string, studentCode?: string, username?: string) => {
@@ -981,6 +1135,18 @@ export default function AdminDashboardPage() {
         </button>
 
         <button
+          onClick={() => setActiveTab("submissions")}
+          className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
+            activeTab === "submissions"
+              ? "bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-md shadow-indigo-500/20"
+              : "bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+          }`}
+        >
+          <History className="w-4 h-4 text-cyan-400" />
+          <span>Lịch Sử Bài Thi & Kiểm Tra ({submissionsList.length})</span>
+        </button>
+
+        <button
           onClick={() => setActiveTab("mistakes")}
           className={`px-4 py-2.5 rounded-2xl text-xs font-black flex items-center gap-2 transition-all cursor-pointer ${
             activeTab === "mistakes"
@@ -1332,6 +1498,286 @@ export default function AdminDashboardPage() {
                                 onClick={() => handleDeleteTeacher(t.id || t.username, t.fullName || t.username)}
                                 className="p-1.5 rounded-xl bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 border border-rose-500/30 text-xs transition-all cursor-pointer"
                                 title="Xóa tài khoản giáo viên này"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB: LỊCH SỬ BÀI THI & KIỂM TRA CỦA HỌC SINH (QUẢN LÝ KẾT QUẢ THI)        */}
+      {/* ========================================================================= */}
+      {activeTab === "submissions" && (
+        <div className="space-y-4">
+          {/* Header & KPI Summary */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="p-4 rounded-2xl bg-[#0e1526] border border-cyan-500/30 space-y-1">
+              <span className="text-[11px] font-bold text-cyan-400 block">Tổng Lượt Nộp Bài</span>
+              <div className="text-xl sm:text-2xl font-black text-white">
+                {submissionsList.length} <span className="text-xs text-slate-400 font-bold">bài</span>
+              </div>
+              <p className="text-[10px] text-slate-400">Bao gồm cả thi thử và bài kiểm tra</p>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-[#0e1526] border border-emerald-500/30 space-y-1">
+              <span className="text-[11px] font-bold text-emerald-400 block">Học Sinh Tham Gia</span>
+              <div className="text-xl sm:text-2xl font-black text-emerald-300">
+                {submissionsKpi?.uniqueStudents || new Set(submissionsList.map((s) => s.userId || s.studentName)).size}{" "}
+                <span className="text-xs text-slate-400 font-bold">em</span>
+              </div>
+              <p className="text-[10px] text-slate-400">Đã nộp bài ít nhất 1 lần</p>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-[#0e1526] border border-amber-500/30 space-y-1">
+              <span className="text-[11px] font-bold text-amber-400 block">Điểm Trung Bình</span>
+              <div className="text-xl sm:text-2xl font-black text-amber-300">
+                {submissionsKpi?.avgScore || (submissionsList.length > 0 ? (submissionsList.reduce((a, b) => a + (b.score || 0), 0) / submissionsList.length).toFixed(1) : "0")}
+                <span className="text-xs text-slate-400 font-bold"> / 10đ</span>
+              </div>
+              <p className="text-[10px] text-slate-400">Điểm số trung bình toàn hệ thống</p>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-[#0e1526] border border-purple-500/30 space-y-1">
+              <span className="text-[11px] font-bold text-purple-400 block">Đạt Điểm Giỏi (≥ 8.0)</span>
+              <div className="text-xl sm:text-2xl font-black text-purple-300">
+                {submissionsList.filter((s) => (s.score || 0) >= 8.0).length}{" "}
+                <span className="text-xs text-slate-400 font-bold">
+                  ({submissionsList.length > 0 ? Math.round((submissionsList.filter((s) => (s.score || 0) >= 8.0).length / submissionsList.length) * 100) : 0}%)
+                </span>
+              </div>
+              <p className="text-[10px] text-slate-400">Tỷ lệ xuất sắc và khá giỏi</p>
+            </div>
+          </div>
+
+          {/* Filter Bar */}
+          <div className="p-4 rounded-2xl bg-[#0e1526] border border-slate-800 space-y-3">
+            <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+              {/* Search input */}
+              <div className="relative flex-1">
+                <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  value={submissionsSearchQuery}
+                  onChange={(e) => setSubmissionsSearchQuery(e.target.value)}
+                  placeholder="Tìm theo tên học sinh, lớp, tài khoản, hoặc tên đề thi..."
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-all"
+                />
+              </div>
+
+              {/* Filters */}
+              <div className="flex flex-wrap items-center gap-2">
+                <select
+                  value={submissionsFilterGrade}
+                  onChange={(e) => setSubmissionsFilterGrade(e.target.value)}
+                  className="px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 font-bold focus:outline-none focus:border-cyan-500"
+                >
+                  <option value="all">Tất cả Khối lớp</option>
+                  <option value="lop-6">Khối 6</option>
+                  <option value="lop-7">Khối 7</option>
+                  <option value="lop-8">Khối 8</option>
+                  <option value="lop-9">Khối 9</option>
+                  <option value="lop-10">Khối 10</option>
+                  <option value="lop-11">Khối 11</option>
+                  <option value="lop-12">Khối 12</option>
+                </select>
+
+                <select
+                  value={submissionsFilterType}
+                  onChange={(e) => setSubmissionsFilterType(e.target.value)}
+                  className="px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 font-bold focus:outline-none focus:border-cyan-500"
+                >
+                  <option value="all">Tất cả Loại đề</option>
+                  <option value="practice">Đề thi thử hệ thống</option>
+                  <option value="teacher">Đề kiểm tra giáo viên</option>
+                </select>
+
+                <select
+                  value={submissionsSort}
+                  onChange={(e: any) => setSubmissionsSort(e.target.value)}
+                  className="px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 font-bold focus:outline-none focus:border-cyan-500"
+                >
+                  <option value="newest">Mới nộp gần nhất</option>
+                  <option value="oldest">Cũ nhất</option>
+                  <option value="highest">Điểm cao nhất</option>
+                  <option value="lowest">Điểm thấp nhất</option>
+                </select>
+
+                <button
+                  onClick={fetchSubmissionsData}
+                  className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-cyan-300 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
+                  title="Tải lại danh sách"
+                >
+                  <RefreshCw className={`w-3.5 h-3.5 ${isLoadingSubmissions ? "animate-spin" : ""}`} />
+                  <span className="hidden sm:inline">Làm mới</span>
+                </button>
+
+                <button
+                  onClick={handleExportSubmissionsCsv}
+                  className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition-all shadow-md shadow-emerald-900/40 cursor-pointer"
+                  title="Xuất file Excel CSV"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Xuất Excel</span>
+                </button>
+              </div>
+            </div>
+
+            <div className="text-xs text-slate-400 flex items-center justify-between">
+              <span>
+                Hiển thị <strong className="text-white">{filteredSubmissions.length}</strong> / {submissionsList.length} bài nộp
+              </span>
+            </div>
+          </div>
+
+          {/* Submissions Table */}
+          <div className="rounded-3xl bg-[#0e1526] border border-slate-800 overflow-hidden shadow-xl">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs text-slate-300">
+                <thead className="bg-[#131d33] text-[11px] font-black uppercase text-cyan-300 border-b border-slate-800">
+                  <tr>
+                    <th className="py-3.5 px-4">Thời Gian Nộp</th>
+                    <th className="py-3.5 px-4">Học Sinh & Lớp</th>
+                    <th className="py-3.5 px-4">Đề Thi & Khối</th>
+                    <th className="py-3.5 px-4 text-center">Điểm Tổng</th>
+                    <th className="py-3.5 px-4 text-center">Điểm Thành Phần</th>
+                    <th className="py-3.5 px-4 text-center">Thời Gian Làm</th>
+                    <th className="py-3.5 px-4 text-center">Giám Sát</th>
+                    <th className="py-3.5 px-4 text-right">Thao Tác</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/80">
+                  {filteredSubmissions.length === 0 ? (
+                    <tr>
+                      <td colSpan={8} className="py-12 text-center text-slate-500 space-y-2">
+                        <History className="w-8 h-8 text-slate-600 mx-auto" />
+                        <p className="font-bold text-sm">Chưa có kết quả làm bài thi nào phù hợp với bộ lọc.</p>
+                      </td>
+                    </tr>
+                  ) : (
+                    filteredSubmissions.map((sub: any) => {
+                      const dateStr = sub.submittedAt
+                        ? new Date(sub.submittedAt).toLocaleString("vi-VN", {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric",
+                          })
+                        : "—";
+
+                      const scoreVal = Number(sub.score || 0);
+                      const isHigh = scoreVal >= 8.0;
+                      const isMid = scoreVal >= 6.5 && scoreVal < 8.0;
+
+                      return (
+                        <tr key={sub.id} className="hover:bg-slate-900/60 transition-colors">
+                          <td className="py-3 px-4 text-slate-400 whitespace-nowrap">
+                            <div className="flex items-center gap-1.5 font-mono text-[11px]">
+                              <Clock className="w-3.5 h-3.5 text-slate-500" />
+                              <span>{dateStr}</span>
+                            </div>
+                          </td>
+
+                          <td className="py-3 px-4">
+                            <div className="font-bold text-white flex items-center gap-1.5">
+                              <span>{sub.studentName || "Học sinh"}</span>
+                              {sub.studentClass && (
+                                <span className="px-1.5 py-0.2 rounded bg-slate-800 text-[10px] text-cyan-300 font-bold border border-slate-700">
+                                  {sub.studentClass}
+                                </span>
+                              )}
+                            </div>
+                            <div className="text-[10px] text-slate-400 font-mono">
+                              @{sub.studentUsername || sub.userId || "hocsinh"}
+                            </div>
+                          </td>
+
+                          <td className="py-3 px-4 max-w-xs">
+                            <div className="font-bold text-white truncate" title={sub.examTitle}>
+                              {sub.examTitle || `Đề thi #${sub.examId}`}
+                            </div>
+                            <div className="flex items-center gap-1.5 text-[10px] text-slate-400 mt-0.5">
+                              {sub.grade && (
+                                <span className="px-1.5 py-0.2 rounded bg-cyan-500/10 text-cyan-400 font-bold border border-cyan-500/20 uppercase">
+                                  {sub.grade.replace("lop-", "Lớp ")}
+                                </span>
+                              )}
+                              <span>•</span>
+                              <span>{sub.examType === "teacher_exam" ? "Đề giáo viên" : "Đề thi thử"}</span>
+                            </div>
+                          </td>
+
+                          <td className="py-3 px-4 text-center whitespace-nowrap">
+                            <span
+                              className={`text-base font-black px-2.5 py-1 rounded-xl border ${
+                                isHigh
+                                  ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+                                  : isMid
+                                  ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/40"
+                                  : scoreVal >= 5.0
+                                  ? "bg-amber-500/20 text-amber-300 border-amber-500/40"
+                                  : "bg-rose-500/20 text-rose-300 border-rose-500/40"
+                              }`}
+                            >
+                              {scoreVal.toFixed(2)}đ
+                            </span>
+                          </td>
+
+                          <td className="py-3 px-4 text-center whitespace-nowrap text-[11px] text-slate-400">
+                            <div>I: <strong className="text-cyan-300">{Number(sub.scorePart1 || 0).toFixed(1)}</strong> | II: <strong className="text-purple-300">{Number(sub.scorePart2 || 0).toFixed(1)}</strong> | III: <strong className="text-amber-300">{Number(sub.scorePart3 || 0).toFixed(1)}</strong></div>
+                            {sub.essayFiles && sub.essayFiles.length > 0 && (
+                              <div className="text-emerald-400 font-bold text-[10px] mt-0.5">
+                                📝 {sub.essayFiles.length} file tự luận
+                              </div>
+                            )}
+                          </td>
+
+                          <td className="py-3 px-4 text-center whitespace-nowrap font-mono text-[11px] text-slate-300">
+                            {formatTime(sub.timeSpentSeconds || 0)}
+                          </td>
+
+                          <td className="py-3 px-4 text-center whitespace-nowrap">
+                            {sub.blurCount && sub.blurCount > 0 ? (
+                              <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-bold flex items-center justify-center gap-1">
+                                <AlertTriangle className="w-3 h-3" /> {sub.blurCount} lần rời tab
+                              </span>
+                            ) : (
+                              <span className="text-emerald-400 text-[11px] flex items-center justify-center gap-1">
+                                <CheckCircle2 className="w-3.5 h-3.5" /> Chuẩn
+                              </span>
+                            )}
+                          </td>
+
+                          <td className="py-3 px-4 text-right whitespace-nowrap">
+                            <div className="flex items-center justify-end gap-1.5">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setSelectedReviewSubmission(sub);
+                                  setShowReviewModal(true);
+                                }}
+                                className="px-3 py-1.5 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 font-bold text-[11px] transition-all flex items-center gap-1 cursor-pointer"
+                                title="Xem lại chi tiết bài làm của học sinh này"
+                              >
+                                <Eye className="w-3.5 h-3.5" />
+                                <span>Xem bài</span>
+                              </button>
+
+                              <button
+                                type="button"
+                                onClick={() => handleDeleteSubmission(sub.id)}
+                                className="p-1.5 rounded-lg bg-slate-800 hover:bg-rose-900/50 text-slate-400 hover:text-rose-300 border border-slate-700 hover:border-rose-500/40 transition-all cursor-pointer"
+                                title="Xóa bài thi này"
                               >
                                 <Trash2 className="w-3.5 h-3.5" />
                               </button>
@@ -2521,6 +2967,78 @@ export default function AdminDashboardPage() {
               )}
             </div>
 
+            {/* Lịch sử bài thi / kiểm tra của học sinh này */}
+            {(() => {
+              const studentSubmissions = submissionsList.filter((s: any) => {
+                const sId = (selectedStudentDetail.id || "").toLowerCase();
+                const sCode = (selectedStudentDetail.studentCode || "").toLowerCase();
+                const sUser = (selectedStudentDetail.username || "").toLowerCase();
+                const sName = (selectedStudentDetail.fullName || "").toLowerCase();
+
+                const subUser = (s.studentUsername || s.userId || "").toLowerCase();
+                const subName = (s.studentName || "").toLowerCase();
+
+                return (
+                  (sId && subUser === sId) ||
+                  (sCode && subUser === sCode) ||
+                  (sUser && subUser === sUser) ||
+                  (sName && subName === sName)
+                );
+              });
+
+              return (
+                <div className="space-y-3 pt-2 border-t border-slate-800">
+                  <h3 className="text-sm font-black text-white flex items-center justify-between">
+                    <span className="flex items-center gap-2">
+                      <History className="w-4 h-4 text-cyan-400" />
+                      <span>Lịch Sử Bài Thi & Kiểm Tra ({studentSubmissions.length} bài)</span>
+                    </span>
+                  </h3>
+
+                  {studentSubmissions.length > 0 ? (
+                    <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
+                      {studentSubmissions.map((sub: any) => (
+                        <div
+                          key={sub.id}
+                          className="p-3 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-3 text-xs"
+                        >
+                          <div className="space-y-1 min-w-0">
+                            <div className="font-bold text-white truncate">{sub.examTitle}</div>
+                            <div className="text-[11px] text-slate-400 flex items-center gap-2">
+                              <span>{new Date(sub.submittedAt).toLocaleDateString("vi-VN")}</span>
+                              <span>•</span>
+                              <span>Làm trong {formatTime(sub.timeSpentSeconds || 0)}</span>
+                            </div>
+                          </div>
+
+                          <div className="flex items-center gap-3 shrink-0">
+                            <span className="text-sm font-black text-cyan-400 bg-cyan-950/40 px-2 py-0.5 rounded border border-cyan-500/30">
+                              {Number(sub.score || 0).toFixed(2)}đ
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setSelectedReviewSubmission(sub);
+                                setShowReviewModal(true);
+                              }}
+                              className="px-2.5 py-1 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 font-bold text-[11px] border border-cyan-500/40 flex items-center gap-1 cursor-pointer"
+                            >
+                              <Eye className="w-3.5 h-3.5" />
+                              <span>Xem bài</span>
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center text-xs text-slate-400">
+                      Học sinh chưa tham gia bài thi thử hoặc bài kiểm tra nào.
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
+
             {/* Footer Modal */}
             <div className="pt-2 flex justify-end">
               <button
@@ -2853,6 +3371,16 @@ export default function AdminDashboardPage() {
           </div>
         </div>
       )}
+
+      {/* Modal Xem Lại Chi Tiết Bài Làm Cho Admin */}
+      <ExamSubmissionReviewModal
+        submission={selectedReviewSubmission}
+        isOpen={showReviewModal}
+        onClose={() => {
+          setShowReviewModal(false);
+          setSelectedReviewSubmission(null);
+        }}
+      />
     </div>
   );
 }

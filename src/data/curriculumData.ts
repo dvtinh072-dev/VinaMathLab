@@ -707,7 +707,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
         title: "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
         description: "Số gần đúng, sai số, số trung bình, trung vị, tứ phân vị, mốt, khoảng biến thiên và độ lệch chuẩn.",
         lessons: [
-          { id: "t10-b12-so-gan-dung-sai-so", lessonNumber: 12, title: "Bài 12: Số gần đúng và sai số", strand: "thongke", description: "Sai số tuyệt đối, sai số tương đối và độ chính xác.", keyFormulas: ["\\Delta_a = |\\bar{a} - a| \\le d"] },
+          { id: "t10-b12-so-gan-dung-va-sai-so", lessonNumber: 12, title: "Bài 12: Số gần đúng và sai số", strand: "thongke", description: "Sai số tuyệt đối, sai số tương đối và độ chính xác.", keyFormulas: ["\\Delta_a = |\\bar{a} - a| \\le d"] },
           { id: "t10-b13-so-dac-trung-do-xu-the-trung-tam", lessonNumber: 13, title: "Bài 13: Các số đặc trưng đo xu thế trung tâm", strand: "thongke", description: "Số trung bình cộng, trung vị Me, tứ phân vị Q1, Q2, Q3 và mốt Mo.", keyFormulas: ["\\bar{x} = \\frac{\\sum x_i}{n}, \\ Q_2 = M_e"] },
           { id: "t10-b14-so-dac-trung-do-do-phan-tan", lessonNumber: 14, title: "Bài 14: Các số đặc trưng đo độ phân tán", strand: "thongke", description: "Khoảng biến thiên R, khoảng tứ phân vị Delta Q, phương sai s^2 và độ lệch chuẩn s.", keyFormulas: ["R = x_{\\max} - x_{\\min}, \\ \\Delta_Q = Q_3 - Q_1, \\ s = \\sqrt{s^2}"] },
         ],

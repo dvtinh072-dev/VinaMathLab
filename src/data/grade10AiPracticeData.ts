@@ -7778,5 +7778,723 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "explanation": "$\\overrightarrow{AB} = (3; -3)$ và $\\overrightarrow{AC} = (x - 1; -3)$. Tam giác vuông tại $A \\Leftrightarrow \\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0 \\Leftrightarrow 3(x - 1) + (-3)(-3) = 0 \\Leftrightarrow 3x - 3 + 9 = 0 \\Leftrightarrow 3x = -6 \\Leftrightarrow x = -2$."
     }
   ]
+},
+  "t10-b12-so-gan-dung-va-sai-so": {
+  "quizQuestions": [
+    {
+      "id": "ai-10.12.1",
+      "badge": "Luyện thêm 1 - Nhận biết số đúng và số gần đúng",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Trong các phát biểu sau, trường hợp nào cho ta một số đúng?",
+      "options": [
+        "Một tuần lễ có đúng 7 ngày.",
+        "Đường kính của Trái Đất là 12 742 km.",
+        "Khối lượng của một quả táo là 180 g.",
+        "Nhiệt độ phòng hiện tại là 26 °C."
+      ],
+      "correctIndex": 0,
+      "explanation": "Một tuần lễ có 7 ngày là quy ước thời gian chuẩn xác tuyệt đối (số đúng). Các đại lượng đo đường kính Trái Đất, khối lượng quả táo, nhiệt độ phòng đều là số đo thực nghiệm xấp xỉ gần đúng."
+    },
+    {
+      "id": "ai-10.12.2",
+      "badge": "Luyện thêm 2 - Tính sai số tuyệt đối khi biết số đúng",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Cho số đúng $\\overline{a} = 2{,}71828$. Lấy số gần đúng là $a = 2{,}72$. Sai số tuyệt đối $\\Delta_a$ bằng:",
+      "options": [
+        "$0{,}00172$",
+        "$0{,}00182$",
+        "$0{,}0172$",
+        "$0{,}002$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_a = |\\overline{a} - a| = |2{,}71828 - 2{,}72| = 0{,}00172$."
+    },
+    {
+      "id": "ai-10.12.3",
+      "badge": "Luyện thêm 3 - Khoảng chứa số đúng khi biết độ chính xác",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Kết quả đo bề dày một cuốn sách là $h = 2{,}4\\text{ cm} \\pm 0{,}05\\text{ cm}$. Số đúng $\\overline{h}$ thuộc đoạn nào?",
+      "options": [
+        "$[2{,}35; 2{,}45]$",
+        "$[2{,}30; 2{,}50]$",
+        "$[2{,}35; 2{,}40]$",
+        "$[2{,}40; 2{,}45]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overline{h} \\in [2{,}4 - 0{,}05; 2{,}4 + 0{,}05] = [2{,}35; 2{,}45]\\text{ cm}$."
+    },
+    {
+      "id": "ai-10.12.4",
+      "badge": "Luyện thêm 4 - Đánh giá sai số tương đối",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Đo chiều dài sợi dây được kết quả $L = 50\\text{ m} \\pm 0{,}2\\text{ m}$. Sai số tương đối của phép đo không vượt quá:",
+      "options": [
+        "$0{,}4\\%$",
+        "$0{,}2\\%$",
+        "$0{,}04\\%$",
+        "$0{,}02\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_L \\le \\dfrac{0{,}2}{50} = 0{,}004 = 0{,}4\\%$."
+    },
+    {
+      "id": "ai-10.12.5",
+      "badge": "Luyện thêm 5 - Hàng làm tròn theo độ chính xác thập phân",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Khi quy tròn số gần đúng $a = 48{,}356$ với độ chính xác $d = 0{,}004$, ta cần làm tròn số $a$ đến hàng nào?",
+      "options": [
+        "Hàng phần trăm (hàng $0{,}01$).",
+        "Hàng phần chục (hàng $0{,}1$).",
+        "Hàng phần nghìn (hàng $0{,}001$).",
+        "Hàng đơn vị."
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 0{,}004$ ở hàng phần nghìn, nên ta làm tròn số $a$ đến hàng liền trên là hàng phần trăm."
+    },
+    {
+      "id": "ai-10.12.6",
+      "badge": "Luyện thêm 6 - Hàng làm tròn theo độ chính xác số nguyên",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Cho số gần đúng $a = 8\\,452\\,100$ với độ chính xác $d = 5\\,000$. Ta cần làm tròn số $a$ đến hàng nào?",
+      "options": [
+        "Hàng chục nghìn.",
+        "Hàng nghìn.",
+        "Hàng trăm nghìn.",
+        "Hàng trăm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 5\\,000$ ở hàng nghìn, nên ta làm tròn đến hàng liền trên là hàng chục nghìn."
+    },
+    {
+      "id": "ai-10.12.7",
+      "badge": "Luyện thêm 7 - Tính sai số tuyệt đối khi xấp xỉ phân số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Biết số đúng $\\overline{a} = \\dfrac{7}{3}$. Lấy giá trị gần đúng $a = 2{,}33$. Sai số tuyệt đối $\\Delta_a$ bằng:",
+      "options": [
+        "$\\dfrac{1}{300}$",
+        "$\\dfrac{1}{100}$",
+        "$\\dfrac{1}{30}$",
+        "$\\dfrac{7}{300}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_a = \\left| \\dfrac{7}{3} - 2{,}33 \\right| = \\left| \\dfrac{7}{3} - \\dfrac{233}{100} \\right| = \\left| \\dfrac{700 - 699}{300} \\right| = \\dfrac{1}{300}$."
+    },
+    {
+      "id": "ai-10.12.8",
+      "badge": "Luyện thêm 8 - Làm tròn số thập phân đến hàng phần chục",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Quy tròn số $a = 45{,}782$ đến hàng phần chục, ta được kết quả là:",
+      "options": [
+        "$45{,}8$",
+        "$45{,}7$",
+        "$46{,}0$",
+        "$45{,}78$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chữ số hàng phần chục là 7, chữ số ngay sau nó là 8 ($\\ge 5$) nên cộng thêm 1 thành $45{,}8$."
+    },
+    {
+      "id": "ai-10.12.9",
+      "badge": "Luyện thêm 9 - Quy tròn số lớn theo độ chính xác",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Quy tròn số $a = 864\\,230$ với độ chính xác $d = 400$. Số quy tròn là:",
+      "options": [
+        "$864\\,000$",
+        "$864\\,200$",
+        "$865\\,000$",
+        "$864\\,300$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 400$ ở hàng trăm, làm tròn số $a$ đến hàng nghìn. Chữ số hàng nghìn là 4, chữ số sau là 2 (< 5) nên giữ nguyên thành $864\\,000$."
+    },
+    {
+      "id": "ai-10.12.10",
+      "badge": "Luyện thêm 10 - Quy tròn số thập phân theo độ chính xác d",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Quy tròn số gần đúng $a = 5{,}6387$ với độ chính xác $d = 0{,}02$. Số quy tròn là:",
+      "options": [
+        "$5{,}6$",
+        "$5{,}64$",
+        "$5{,}7$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 0{,}02$ ở hàng phần trăm, làm tròn số $a$ đến hàng phần chục. Chữ số hàng phần chục là 6, chữ số sau là 3 (< 5) nên giữ nguyên $5{,}6$."
+    },
+    {
+      "id": "ai-10.12.11",
+      "badge": "Luyện thêm 11 - So sánh sai số tương đối hai phép cân",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Cân một con gà được $m_1 = 2\\text{ kg} \\pm 0{,}02\\text{ kg}$, cân một con bò được $m_2 = 250\\text{ kg} \\pm 1\\text{ kg}$. Khẳng định nào đúng?",
+      "options": [
+        "Phép cân con bò chính xác hơn vì sai số tương đối nhỏ hơn ($0{,}4\\% < 1\\%$).",
+        "Phép cân con gà chính xác hơn vì độ chính xác tuyệt đối nhỏ hơn ($0{,}02\\text{ kg} < 1\\text{ kg}$).",
+        "Hai phép cân có độ chính xác tương đương nhau.",
+        "Không thể so sánh chất lượng giữa hai phép cân này."
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_1 \\le \\dfrac{0{,}02}{2} = 1\\%$; $\\delta_2 \\le \\dfrac{1}{250} = 0{,}004 = 0{,}4\\%$. Vì $\\delta_2 < \\delta_1$ nên phép cân con bò có độ chính xác tương đối cao hơn."
+    },
+    {
+      "id": "ai-10.12.12",
+      "badge": "Luyện thêm 12 - Xác định các chữ số chắc chắn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Cho số gần đúng $a = 345{,}67$ với độ chính xác $d = 0{,}2$. Các chữ số chắc chắn của $a$ là:",
+      "options": [
+        "Các chữ số 3, 4, 5.",
+        "Các chữ số 3, 4, 5, 6.",
+        "Các chữ số 3, 4.",
+        "Tất cả các chữ số của $a$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa đơn vị hàng đơn vị là $0{,}5 > d = 0{,}2$ nên các chữ số hàng trăm (3), chục (4), đơn vị (5) là chữ số chắc. Hàng phần mười có nửa đơn vị là $0{,}05 < 0{,}2$ nên không chắc. Vậy các chữ số chắc là 3, 4, 5."
+    },
+    {
+      "id": "ai-10.12.13",
+      "badge": "Luyện thêm 13 - Sai số tuyệt đối của hiệu hai số gần đúng",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Cho $x = 24{,}6 \\pm 0{,}1$ và $y = 10{,}2 \\pm 0{,}3$. Sai số tuyệt đối của hiệu $x - y$ ước lượng không vượt quá:",
+      "options": [
+        "$0{,}4$",
+        "$0{,}2$",
+        "$0{,}3$",
+        "$0{,}03$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tuyệt đối của tổng hay hiệu hai số gần đúng đều không vượt quá tổng các sai số tuyệt đối: $\\Delta_{x-y} \\le d_x + d_y = 0{,}1 + 0{,}3 = 0{,}4$."
+    },
+    {
+      "id": "ai-10.12.14",
+      "badge": "Luyện thêm 14 - Làm tròn số âm",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Quy tròn số gần đúng $a = -25{,}678$ đến hàng phần trăm (hai chữ số sau dấu phẩy) ta được:",
+      "options": [
+        "$-25{,}68$",
+        "$-25{,}67$",
+        "$-25{,}70$",
+        "$-26{,}00$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta làm tròn số dương $25{,}678$ đến hàng phần trăm được $25{,}68$ (do chữ số sau là 8 > 5). Do đó số quy tròn của $-25{,}678$ là $-25{,}68$."
+    },
+    {
+      "id": "ai-10.12.15",
+      "badge": "Luyện thêm 15 - Độ lệch chuẩn danh định của bao xi măng",
+      "isAiGenerated": true,
+      "source": "Toán học thực tế 10",
+      "question": "Một bao phân bón có khối lượng ghi trên bao bì là $25\\text{ kg} \\pm 0{,}25\\text{ kg}$. Sai số tương đối tối đa là:",
+      "options": [
+        "$1\\%$",
+        "$0{,}5\\%$",
+        "$0{,}1\\%$",
+        "$0{,}01\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta \\le \\dfrac{0{,}25}{25} = 0{,}01 = 1\\%$."
+    },
+    {
+      "id": "ai-10.12.16",
+      "badge": "Luyện thêm 16 - Tính chu vi hình chữ nhật kèm sai số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "question": "Một mảnh đất hình chữ nhật có kích thước $a = 40\\text{ m} \\pm 0{,}2\\text{ m}$ và $b = 30\\text{ m} \\pm 0{,}1\\text{ m}$. Chu vi $P$ ghi dưới dạng số gần đúng kèm độ chính xác là:",
+      "options": [
+        "$P = 140\\text{ m} \\pm 0{,}6\\text{ m}$",
+        "$P = 140\\text{ m} \\pm 0{,}3\\text{ m}$",
+        "$P = 70\\text{ m} \\pm 0{,}3\\text{ m}$",
+        "$P = 140\\text{ m} \\pm 0{,}1\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$P = 2(40 + 30) = 140\\text{ m}$; $d_P = 2(0{,}2 + 0{,}1) = 0{,}6\\text{ m}$."
+    },
+    {
+      "id": "ai-10.12.17",
+      "badge": "Luyện thêm 17 - Sai số tương đối của thể tích chất lỏng",
+      "isAiGenerated": true,
+      "source": "Toán học ứng dụng 10",
+      "question": "Đo thể tích dung dịch trong ống đong thu được $V = 100\\text{ ml} \\pm 0{,}5\\text{ ml}$. Sai số tương đối bằng:",
+      "options": [
+        "$0{,}5\\%$",
+        "$0{,}05\\%$",
+        "$1\\%$",
+        "$0{,}25\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_V \\le \\dfrac{0{,}5}{100} = 0{,}005 = 0{,}5\\%$."
+    },
+    {
+      "id": "ai-10.12.18",
+      "badge": "Luyện thêm 18 - Ước lượng sai số diện tích phòng học",
+      "isAiGenerated": true,
+      "source": "Toán học thực tế 10",
+      "question": "Một phòng học hình chữ nhật có chiều dài $x = 8\\text{ m} \\pm 0{,}02\\text{ m}$ và chiều rộng $y = 6\\text{ m} \\pm 0{,}01\\text{ m}$. Diện tích danh định là $S = 48\\text{ m}^2$. Sai số tuyệt đối tối đa của diện tích ước lượng không vượt quá:",
+      "options": [
+        "$0{,}2002\\text{ m}^2$",
+        "$0{,}03\\text{ m}^2$",
+        "$0{,}12\\text{ m}^2$",
+        "$0{,}48\\text{ m}^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$S_{\\max} = 8{,}02 \\times 6{,}01 = 48{,}2002\\text{ m}^2$. Khi đó $\\Delta_S = 48{,}2002 - 48 = 0{,}2002\\text{ m}^2$."
+    },
+    {
+      "id": "ai-10.12.19",
+      "badge": "Luyện thêm 19 - Khoảng biến thiên tổng quãng đường xe chạy",
+      "isAiGenerated": true,
+      "source": "Chuyên đề vận tốc & quãng đường 10",
+      "question": "Một ô tô chạy chặng 1 được $s_1 = 120\\text{ km} \\pm 1\\text{ km}$, chặng 2 được $s_2 = 80\\text{ km} \\pm 0{,}5\\text{ km}$. Tổng quãng đường thực tế $s = s_1 + s_2$ thuộc khoảng:",
+      "options": [
+        "$[198{,}5; 201{,}5]\\text{ km}$",
+        "$[199; 201]\\text{ km}$",
+        "$[199{,}5; 200{,}5]\\text{ km}$",
+        "$[198; 202]\\text{ km}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$s_{\\min} = 119 + 79{,}5 = 198{,}5\\text{ km}$; $s_{\\max} = 121 + 80{,}5 = 201{,}5\\text{ km}$."
+    },
+    {
+      "id": "ai-10.12.20",
+      "badge": "Luyện thêm 20 - Đo vận tốc dòng nước sông",
+      "isAiGenerated": true,
+      "source": "Toán học & Vật lý 10",
+      "question": "Đo vận tốc chảy của dòng sông thu được $v = 1{,}5\\text{ m/s} \\pm 0{,}03\\text{ m/s}$. Tỉ số phần trăm sai số tương đối là:",
+      "options": [
+        "$2\\%$",
+        "$3\\%$",
+        "$0{,}2\\%$",
+        "$0{,}3\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_v \\le \\dfrac{0{,}03}{1{,}5} = 0{,}02 = 2\\%$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-10.12.1",
+      "badge": "Luyện thêm Đ/S 1 - Phân biệt số đúng và số gần đúng",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Xét tính Đúng/Sai của các phát biểu sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Một tam giác có đúng 3 cạnh là một số đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Số cạnh của tam giác là số xác định theo định nghĩa hình học."
+        },
+        {
+          "id": "b",
+          "text": "Số dân của thành phố Hà Nội được thống kê là 8 500 000 người là số gần đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Dân số luôn biến động và thống kê tại một thời điểm chỉ là số xấp xỉ gần đúng."
+        },
+        {
+          "id": "c",
+          "text": "Số đúng luôn lớn hơn số gần đúng.",
+          "correctAnswer": false,
+          "explanation": "Sai: Số đúng có thể lớn hơn, nhỏ hơn hoặc bằng số gần đúng (ví dụ làm tròn lên thì số gần đúng lớn hơn số đúng)."
+        },
+        {
+          "id": "d",
+          "text": "Sai số tuyệt đối càng nhỏ thì số gần đúng càng sát với số đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\Delta_a = |\\overline{a} - a|$ càng nhỏ thì $a$ càng gần $\\overline{a}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.2",
+      "badge": "Luyện thêm Đ/S 2 - Đọc kết quả đo lường và độ chính xác",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Một chiếc cầu bê tông có chiều dài được ghi nhận là $L = 180\\text{ m} \\pm 0{,}5\\text{ m}$. Xét tính Đúng/Sai của các khẳng định:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số gần đúng của chiều dài cây cầu là $180\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $a = 180\\text{ m}$ là số gần đúng."
+        },
+        {
+          "id": "b",
+          "text": "Độ chính xác của phép đo là $d = 0{,}5\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = 0{,}5\\text{ m}$ là cận trên sai số tuyệt đối."
+        },
+        {
+          "id": "c",
+          "text": "Chiều dài thực tế của cây cầu có thể bằng $179\\text{ m}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Chiều dài tối thiểu là $180 - 0{,}5 = 179{,}5\\text{ m} > 179\\text{ m}$."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài của khoảng chứa giá trị đúng của cây cầu là $1\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khoảng chứa là $[179{,}5; 180{,}5]$ có độ dài là $2d = 2 \\times 0{,}5 = 1\\text{ m}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.3",
+      "badge": "Luyện thêm Đ/S 3 - So sánh sai số tương đối",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Xét hai phép đo: Đo khoảng cách giữa hai trạm thu phí là $S_1 = 30\\text{ km} \\pm 0{,}03\\text{ km}$; Đo chiều dài đường băng sân bay là $S_2 = 3\\text{ km} \\pm 0{,}01\\text{ km}$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sai số tương đối của phép đo 1 là $\\delta_1 \\le 0{,}1\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_1 \\le \\dfrac{0{,}03}{30} = 0{,}001 = 0{,}1\\%$."
+        },
+        {
+          "id": "b",
+          "text": "Sai số tương đối của phép đo 2 là $\\delta_2 \\le \\dfrac{1}{3}\\% \\approx 0{,}33\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_2 \\le \\dfrac{0{,}01}{3} \\approx 0{,}0033 = 0{,}33\\%$."
+        },
+        {
+          "id": "c",
+          "text": "Phép đo 2 chính xác hơn phép đo 1 vì có độ chính xác $d_2 = 0{,}01 < d_1 = 0{,}03$.",
+          "correctAnswer": false,
+          "explanation": "Sai: So sánh độ chính xác của hai phép đo có quy mô khác nhau phải căn cứ vào sai số tương đối. Vì $\\delta_1 = 0{,}1\\% < \\delta_2 = 0{,}33\\%$ nên phép đo 1 có độ chính xác cao hơn."
+        },
+        {
+          "id": "d",
+          "text": "Sai số tương đối không phụ thuộc vào đơn vị đo của các đại lượng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì sai số tương đối là tỉ số giữa hai đại lượng cùng đơn vị nên triệt tiêu đơn vị đo."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.4",
+      "badge": "Luyện thêm Đ/S 4 - Quy tròn số thập phân",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Cho số $y = 85{,}3472$. Xét tính Đúng/Sai của các khẳng định làm tròn:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Làm tròn số $y$ đến hàng đơn vị được $85$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số sau hàng đơn vị là 3 < 5 nên giữ nguyên 85."
+        },
+        {
+          "id": "b",
+          "text": "Làm tròn số $y$ đến hàng phần chục được $85{,}3$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số sau hàng phần chục là 4 < 5 nên giữ nguyên $85{,}3$."
+        },
+        {
+          "id": "c",
+          "text": "Làm tròn số $y$ đến hàng phần trăm được $85{,}35$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số hàng phần trăm là 4, chữ số sau là 7 ($\\ge 5$) nên cộng 1 thành $85{,}35$."
+        },
+        {
+          "id": "d",
+          "text": "Làm tròn số $y$ đến hàng phần nghìn được $85{,}348$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Chữ số hàng phần nghìn là 7, chữ số sau là 2 < 5 nên kết quả đúng là $85{,}347$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.5",
+      "badge": "Luyện thêm Đ/S 5 - Quy tròn số theo độ chính xác d",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Xét tính Đúng/Sai khi làm tròn các số gần đúng sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số gần đúng $a = 4\\,728$ với $d = 30$ được làm tròn đến hàng trăm.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = 30$ ở hàng chục nên làm tròn đến hàng liền trên là hàng trăm."
+        },
+        {
+          "id": "b",
+          "text": "Số quy tròn của $a = 4\\,728$ với $d = 30$ là $4\\,700$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Làm tròn đến hàng trăm, chữ số sau là 2 < 5 nên được $4\\,700$."
+        },
+        {
+          "id": "c",
+          "text": "Số gần đúng $b = 18{,}472$ với $d = 0{,}02$ được quy tròn thành $18{,}47$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $d = 0{,}02$ ở hàng phần trăm nên phải làm tròn đến hàng phần chục, kết quả đúng là $18{,}5$."
+        },
+        {
+          "id": "d",
+          "text": "Số gần đúng $c = 92\\,650$ với $d = 200$ được quy tròn thành $93\\,000$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = 200$ ở hàng trăm, làm tròn đến hàng nghìn. Chữ số hàng nghìn là 2, chữ số sau là 6 ($\\ge 5$) nên cộng thêm 1 thành $93\\,000$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.6",
+      "badge": "Luyện thêm Đ/S 6 - Nhận diện chữ số chắc chắn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Cho số gần đúng $a = 356{,}72$ với độ chính xác $d = 0{,}04$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chữ số 6 ở hàng đơn vị là chữ số chắc chắn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa đơn vị hàng đơn vị là $0{,}5 > d = 0{,}04$."
+        },
+        {
+          "id": "b",
+          "text": "Chữ số 7 ở hàng phần mười là chữ số chắc chắn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa đơn vị hàng phần mười là $0{,}05 > d = 0{,}04$."
+        },
+        {
+          "id": "c",
+          "text": "Chữ số 2 ở hàng phần trăm là chữ số chắc chắn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Nửa đơn vị hàng phần trăm là $0{,}005 < 0{,}04$ nên không chắc."
+        },
+        {
+          "id": "d",
+          "text": "Số $a$ có đúng 4 chữ số chắc chắn là 3, 5, 6, 7.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Bốn chữ số hàng trăm, chục, đơn vị và phần mười đều là chữ số chắc."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.7",
+      "badge": "Luyện thêm Đ/S 7 - Bài toán thực tế bể bơi hình chữ nhật",
+      "source": "Toán học thực tế 10",
+      "prompt": "Một hồ bơi hình chữ nhật có chiều dài $a = 50\\text{ m} \\pm 0{,}1\\text{ m}$ và chiều rộng $b = 25\\text{ m} \\pm 0{,}1\\text{ m}$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chu vi danh định của hồ bơi là $P = 150\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $P = 2(50 + 25) = 150\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Độ chính xác của chu vi là $d_P = 0{,}4\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d_P = 2(0{,}1 + 0{,}1) = 0{,}4\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích danh định của hồ bơi là $S = 1\\,250\\text{ m}^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $S = 50 \\times 25 = 1\\,250\\text{ m}^2$."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích tối đa của hồ bơi là $S_{\\max} = 1\\,257{,}51\\text{ m}^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $S_{\\max} = 50{,}1 \\times 25{,}1 = 1\\,257{,}51\\text{ m}^2$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.12.8",
+      "badge": "Luyện thêm Đ/S 8 - Tiêu chuẩn khối lượng gói bánh",
+      "source": "Kiểm nghiệm tiêu chuẩn thực phẩm 10",
+      "prompt": "Một gói bánh xốp ghi khối lượng tịnh là $m = 200\\text{ g} \\pm 4\\text{ g}$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Gói bánh có khối lượng đạt chuẩn nếu khối lượng thực tế nằm trong $[196; 204]\\text{ g}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $m \\in [200 - 4; 200 + 4] = [196; 204]\\text{ g}$."
+        },
+        {
+          "id": "b",
+          "text": "Sai số tương đối của khối lượng gói bánh không vượt quá $2\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_m \\le \\dfrac{4}{200} = 0{,}02 = 2\\%$."
+        },
+        {
+          "id": "c",
+          "text": "Một gói bánh nặng $205\\text{ g}$ vẫn coi là đạt chuẩn theo nhãn hiệu.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì $205 > 204\\text{ g}$ vượt quá dung sai cho phép."
+        },
+        {
+          "id": "d",
+          "text": "Nếu lấy 10 gói bánh đạt chuẩn bất kì, tổng khối lượng của chúng chắc chắn không nhỏ hơn $1\\,960\\text{ g}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Mỗi gói $\\ge 196\\text{ g}$ nên 10 gói $\\ge 10 \\times 196 = 1\\,960\\text{ g}$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-10.12.1",
+      "badge": "Luyện thêm TLN 1 - Sai số tuyệt đối khi xấp xỉ số e",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Biết số đúng của cơ số tự nhiên $e = 2{,}7182818...$ Lấy giá trị gần đúng $e \\approx 2{,}72$. Tính sai số tuyệt đối $\\Delta$ (làm tròn kết quả đến 5 chữ số thập phân).",
+      "correctAnswer": "0.00172",
+      "acceptableAnswers": [
+        "0.00172",
+        "0,00172"
+      ],
+      "explanation": "$\\Delta = |2{,}7182818 - 2{,}72| = 0{,}0017182... \\approx 0{,}00172$."
+    },
+    {
+      "id": "ai-sa-10.12.2",
+      "badge": "Luyện thêm TLN 2 - Độ dài khoảng chứa số đúng",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Cho số gần đúng $\\overline{x} = 82{,}4 \\pm 0{,}25$. Tính độ dài của khoảng chứa số đúng $[x - d; x + d]$.",
+      "correctAnswer": "0.5",
+      "acceptableAnswers": [
+        "0.5",
+        "0,5"
+      ],
+      "explanation": "Độ dài khoảng chứa số đúng là $2d = 2 \\times 0{,}25 = 0{,}5$."
+    },
+    {
+      "id": "ai-sa-10.12.3",
+      "badge": "Luyện thêm TLN 3 - Quy tròn số lớn theo độ chính xác",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Quy tròn số $a = 67\\,482$ với độ chính xác $d = 200$.",
+      "correctAnswer": "67000",
+      "acceptableAnswers": [
+        "67000",
+        "67 000",
+        "67.000"
+      ],
+      "explanation": "Độ chính xác $d = 200$ ở hàng trăm, làm tròn số $a$ đến hàng nghìn. Chữ số hàng nghìn là 7, chữ số sau là 4 (< 5) nên giữ nguyên thành $67\\,000$."
+    },
+    {
+      "id": "ai-sa-10.12.4",
+      "badge": "Luyện thêm TLN 4 - Quy tròn số thập phân theo độ chính xác",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Quy tròn số gần đúng $a = 0{,}62784$ với độ chính xác $d = 0{,}003$.",
+      "correctAnswer": "0.63",
+      "acceptableAnswers": [
+        "0.63",
+        "0,63"
+      ],
+      "explanation": "Độ chính xác $d = 0{,}003$ ở hàng phần nghìn, ta làm tròn đến hàng phần trăm. Chữ số hàng phần trăm là 2, chữ số sau là 7 ($\\ge 5$) nên làm tròn lên thành $0{,}63$."
+    },
+    {
+      "id": "ai-sa-10.12.5",
+      "badge": "Luyện thêm TLN 5 - Sai số tương đối của phép đo chiều dài",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Đo chiều dài đường hầm đường bộ được kết quả $L = 500\\text{ m} \\pm 0{,}5\\text{ m}$. Tính sai số tương đối tối đa của phép đo theo tỉ số phần trăm.",
+      "correctAnswer": "0.1%",
+      "acceptableAnswers": [
+        "0.1%",
+        "0.1",
+        "0,1%",
+        "0,1"
+      ],
+      "explanation": "$\\delta_L \\le \\dfrac{0{,}5}{500} = 0{,}001 = 0{,}1\\%$."
+    },
+    {
+      "id": "ai-sa-10.12.6",
+      "badge": "Luyện thêm TLN 6 - Sai số tương đối chi tiết tiện cơ khí",
+      "source": "Toán học kỹ thuật 10",
+      "prompt": "Đường kính thanh thép sau khi tiện đo được là $d = 25\\text{ mm} \\pm 0{,}05\\text{ mm}$. Sai số tương đối tối đa của phép đo là bao nhiêu phần trăm?",
+      "correctAnswer": "0.2%",
+      "acceptableAnswers": [
+        "0.2%",
+        "0.2",
+        "0,2%",
+        "0,2"
+      ],
+      "explanation": "$\\delta_d \\le \\dfrac{0{,}05}{25} = 0{,}002 = 0{,}2\\%$."
+    },
+    {
+      "id": "ai-sa-10.12.7",
+      "badge": "Luyện thêm TLN 7 - Đếm số chữ số chắc chắn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Cho số gần đúng $a = 142{,}58$ với độ chính xác $d = 0{,}03$. Số gần đúng $a$ có bao nhiêu chữ số chắc chắn?",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "bốn"
+      ],
+      "explanation": "Nửa đơn vị hàng phần mười là $0{,}05 > d = 0{,}03$ nên các chữ số hàng trăm (1), hàng chục (4), hàng đơn vị (2) và hàng phần mười (5) là chữ số chắc. Hàng phần trăm có nửa đơn vị là $0{,}005 < 0{,}03$ nên không chắc. Vậy có đúng 4 chữ số chắc chắn."
+    },
+    {
+      "id": "ai-sa-10.12.8",
+      "badge": "Luyện thêm TLN 8 - Tính chu vi tối đa của sân vườn",
+      "source": "Toán học thực tế 10",
+      "prompt": "Một sân vườn hình chữ nhật có kích thước $a = 18\\text{ m} \\pm 0{,}1\\text{ m}$ và $b = 12\\text{ m} \\pm 0{,}1\\text{ m}$. Tính chu vi tối đa có thể của sân vườn (theo mét).",
+      "correctAnswer": "60.4",
+      "acceptableAnswers": [
+        "60.4",
+        "60,4"
+      ],
+      "explanation": "$a_{\\max} = 18{,}1\\text{ m}, b_{\\max} = 12{,}1\\text{ m} \\Rightarrow P_{\\max} = 2(18{,}1 + 12{,}1) = 60{,}4\\text{ m}$."
+    },
+    {
+      "id": "ai-sa-10.12.9",
+      "badge": "Luyện thêm TLN 9 - Quy tròn số đúng căn bậc hai",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Biết số đúng $\\sqrt{7} = 2{,}6457513...$ Quy tròn số $\\sqrt{7}$ đến hàng phần trăm.",
+      "correctAnswer": "2.65",
+      "acceptableAnswers": [
+        "2.65",
+        "2,65"
+      ],
+      "explanation": "Chữ số hàng phần trăm là 4, chữ số ngay sau nó là 5 ($\\ge 5$) nên làm tròn lên thành $2{,}65$."
+    },
+    {
+      "id": "ai-sa-10.12.10",
+      "badge": "Luyện thêm TLN 10 - Sai số tuyệt đối của tổng hai độ dài",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Nối hai đoạn dây điện có chiều dài $L_1 = 12\\text{ m} \\pm 0{,}05\\text{ m}$ và $L_2 = 8\\text{ m} \\pm 0{,}03\\text{ m}$. Sai số tuyệt đối tối đa của tổng chiều dài đoạn dây sau khi nối là bao nhiêu mét?",
+      "correctAnswer": "0.08",
+      "acceptableAnswers": [
+        "0.08",
+        "0,08"
+      ],
+      "explanation": "$\\Delta_L \\le d_1 + d_2 = 0{,}05 + 0{,}03 = 0{,}08\\text{ m}$."
+    },
+    {
+      "id": "ai-sa-10.12.11",
+      "badge": "Luyện thêm TLN 11 - Quy tròn số theo độ chính xác hàng chục",
+      "source": "Chuyên đề Toán 10 KNTT Bài 12",
+      "prompt": "Quy tròn số gần đúng $a = 918\\,674$ với độ chính xác $d = 50$.",
+      "correctAnswer": "918700",
+      "acceptableAnswers": [
+        "918700",
+        "918 700",
+        "918.700"
+      ],
+      "explanation": "Độ chính xác $d = 50$ ở hàng chục, làm tròn đến hàng trăm. Chữ số hàng trăm là 6, chữ số sau là 7 ($\\ge 5$) nên cộng thêm 1 thành $918\\,700$."
+    },
+    {
+      "id": "ai-sa-10.12.12",
+      "badge": "Luyện thêm TLN 12 - Dung sai thể tích két nước",
+      "source": "Toán học thực tế 10",
+      "prompt": "Một nhà máy đóng 20 bình nước khoáng, mỗi bình có thể tích ghi nhãn là $19\\text{ lít} \\pm 0{,}1\\text{ lít}$. Tính độ chênh lệch giữa tổng thể tích tối đa và tối thiểu của cả 20 bình (theo lít).",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4 lít",
+        "4.0"
+      ],
+      "explanation": "Mỗi bình có độ chênh lệch tối đa - tối thiểu là $2 \\times 0{,}1 = 0{,}2\\text{ lít}$. Với 20 bình thì độ chênh lệch là $20 \\times 0{,}2 = 4\\text{ lít}$."
+    }
+  ]
 }
+
 };
+
+GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-sai-so"] = GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-va-sai-so"];

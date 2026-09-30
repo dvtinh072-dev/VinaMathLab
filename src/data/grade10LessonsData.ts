@@ -15213,5 +15213,768 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       ]
     }
   ]
+},
+  // ==========================================
+  // BÀI 12: SỐ GẦN ĐÚNG VÀ SAI SỐ
+  // ==========================================
+  "t10-b12-so-gan-dung-va-sai-so": {
+  "id": "t10-b12-so-gan-dung-va-sai-so",
+  "lessonNumber": 12,
+  "title": "Bài 12: Số gần đúng và sai số",
+  "bookChapter": "Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm",
+  "scenarioTitle": "Tình huống thực tế: Đo đạc khoảng cách thiên văn, sai số kỹ thuật trong gia công cơ khí chính xác và làm tròn số liệu thống kê",
+  "scenarioFrames": [],
+  "youtubeVideoId": "sJzHl3Yqj9c",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 12 - Số gần đúng và sai số - Toán 10 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "sJzHl3Yqj9c",
+      "title": "Tiết 1: Số gần đúng & Sai số tuyệt đối, độ chính xác của số gần đúng"
+    },
+    {
+      "id": "O8n_Y2wQ7aE",
+      "title": "Tiết 2: Sai số tương đối & Phương pháp quy tròn số gần đúng"
+    },
+    {
+      "id": "wJ2n7c1Xk08",
+      "title": "Tiết 3: Chữ số chắc chắn & Ứng dụng đo đạc thực tế"
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Số gần đúng (Số xấp xỉ)",
+      "points": [
+        "• Trong thực tiễn đo đạc (chiều dài, khối lượng, thời gian,...) hoặc trong các phép tính toán số học (với số vô tỉ như $\\pi, \\sqrt{2}, \\sqrt{3},...$), ta hầu như không thể thu được giá trị chính xác tuyệt đối mà chỉ thu được **số gần đúng**, kí hiệu là $a$.",
+        "• Giá trị thực sự của đại lượng được gọi là **số đúng**, kí hiệu là $\\overline{a}$."
+      ]
+    },
+    {
+      "index": "2",
+      "title": "2. Sai số tuyệt đối và độ chính xác của số gần đúng",
+      "points": [
+        "• **Sai số tuyệt đối**: Cho $a$ là số gần đúng của số đúng $\\overline{a}$. Giá trị $\\Delta_a = |\\overline{a} - a|$ được gọi là **sai số tuyệt đối** của số gần đúng $a$.",
+        "• **Độ chính xác $d$**: Do thường không biết chính xác $\\overline{a}$, ta ước lượng sai số tuyệt đối qua một số dương $d$ sao cho $\\Delta_a = |\\overline{a} - a| \\le d$. Khi đó, ta nói $a$ là số gần đúng của $\\overline{a}$ với **độ chính xác** $d$, và viết tắt là:",
+        "$$\\overline{a} = a \\pm d \\quad \\text{hay} \\quad a - d \\le \\overline{a} \\le a + d$$",
+        "• Khoảng $[a - d; a + d]$ được gọi là **khoảng chứa số đúng**."
+      ]
+    },
+    {
+      "index": "3",
+      "title": "3. Sai số tương đối",
+      "points": [
+        "• **Định nghĩa**: Tỉ số $\\delta_a = \\dfrac{\\Delta_a}{|a|}$ được gọi là **sai số tương đối** của số gần đúng $a$.",
+        "• Nếu $\\Delta_a \\le d$ thì $\\delta_a \\le \\dfrac{d}{|a|}$. Người ta thường biểu diễn sai số tương đối dưới dạng **tỉ số phần trăm** (%).",
+        "• **Ý nghĩa sư phạm**: Sai số tương đối càng nhỏ thì chất lượng của phép đo đạc hoặc tính toán càng chính xác. Sai số tương đối cho phép so sánh độ chính xác giữa hai phép đo có quy mô độ lớn hoàn toàn khác nhau (ví dụ: đo khoảng cách giữa hai thành phố so với đo chiều dài chiếc bàn học)."
+      ]
+    },
+    {
+      "index": "4",
+      "title": "4. Quy tròn số gần đúng & Chữ số chắc chắn",
+      "points": [
+        "• **Quy tắc làm tròn số gần đúng căn cứ vào độ chính xác $d$**:",
+        "  - Bước 1: Xác định hàng của chữ số khác $0$ đầu tiên bên trái của độ chính xác $d$ (gọi là hàng của độ chính xác).",
+        "  - Bước 2: Làm tròn số gần đúng $a$ đến **hàng liền trên** (hàng cao hơn một bậc) so với hàng của độ chính xác $d$.",
+        "  *(Ví dụ: Nếu $d = 0{,}03$ ở hàng phần trăm $\\Rightarrow$ quy tròn số $a$ đến hàng phần chục $0{,}1$. Nếu $d = 400$ ở hàng trăm $\\Rightarrow$ quy tròn số $a$ đến hàng nghìn).*",
+        "• **Chữ số chắc (chữ số đáng tin)**: Trong số gần đúng $a$, một chữ số ở hàng nào đó được gọi là **chữ số chắc** nếu độ chính xác $d$ không vượt quá nửa đơn vị của hàng đó."
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "quiz-10.12.1",
+      "badge": "Nhận biết - Khái niệm số đúng và số gần đúng",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Trong các phát biểu sau, phát biểu nào đề cập đến một số đúng?",
+      "options": [
+        "Số học sinh của lớp 10A1 là 42 học sinh.",
+        "Khoảng cách từ Trái Đất đến Mặt Trăng là 384 400 km.",
+        "Vận tốc ánh sáng xấp xỉ bằng 300 000 km/s.",
+        "Chiều cao của ngọn núi Phan-xi-păng là 3 143 m."
+      ],
+      "correctIndex": 0,
+      "explanation": "Số học sinh của một lớp là đại lượng đếm được chính xác tuyệt đối (42 em). Các số đo khoảng cách, vận tốc, chiều cao đều là kết quả của phép đo lường nên chỉ là số gần đúng."
+    },
+    {
+      "id": "quiz-10.12.2",
+      "badge": "Nhận biết - Công thức tính sai số tuyệt đối",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Cho $a$ là số gần đúng của số đúng $\\overline{a}$. Sai số tuyệt đối của số gần đúng $a$, kí hiệu là $\\Delta_a$, được xác định bởi công thức nào?",
+      "options": [
+        "$\\Delta_a = |\\overline{a} - a|$",
+        "$\\Delta_a = \\overline{a} - a$",
+        "$\\Delta_a = a - \\overline{a}$",
+        "$\\Delta_a = \\dfrac{|\\overline{a} - a|}{|a|}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, sai số tuyệt đối của số gần đúng $a$ là $\\Delta_a = |\\overline{a} - a|$."
+    },
+    {
+      "id": "quiz-10.12.3",
+      "badge": "Nhận biết - Ý nghĩa của cách viết a ± d",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Một phép đo cho kết quả viết dưới dạng $\\overline{a} = a \\pm d$. Đại lượng $d$ được gọi là:",
+      "options": [
+        "Độ chính xác của số gần đúng $a$.",
+        "Sai số tương đối của số gần đúng $a$.",
+        "Số đúng của phép đo.",
+        "Sai số tuyệt đối của phép đo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong cách viết $\\overline{a} = a \\pm d$, $d$ là cận trên của sai số tuyệt đối và được gọi là độ chính xác của số gần đúng $a$."
+    },
+    {
+      "id": "quiz-10.12.4",
+      "badge": "Nhận biết - Công thức sai số tương đối",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Sai số tương đối của số gần đúng $a$, kí hiệu là $\\delta_a$, được xác định bởi công thức:",
+      "options": [
+        "$\\delta_a = \\dfrac{\\Delta_a}{|a|}$",
+        "$\\delta_a = \\dfrac{|a|}{\\Delta_a}$",
+        "$\\delta_a = \\Delta_a \\cdot |a|$",
+        "$\\delta_a = |\\overline{a} - a|$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tương đối là tỉ số giữa sai số tuyệt đối và giá trị tuyệt đối của số gần đúng: $\\delta_a = \\dfrac{\\Delta_a}{|a|}$."
+    },
+    {
+      "id": "quiz-10.12.5",
+      "badge": "Nhận biết - Hàng quy tròn theo độ chính xác thập phân",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Khi quy tròn số gần đúng $a = 15{,}274$ với độ chính xác $d = 0{,}02$, ta cần làm tròn số $a$ đến hàng nào?",
+      "options": [
+        "Hàng phần chục (hàng $0{,}1$).",
+        "Hàng phần trăm (hàng $0{,}01$).",
+        "Hàng phần nghìn (hàng $0{,}001$).",
+        "Hàng đơn vị."
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 0{,}02$ có chữ số khác 0 ở hàng phần trăm, nên theo quy tắc ta làm tròn số $a$ đến hàng liền trên là hàng phần chục."
+    },
+    {
+      "id": "quiz-10.12.6",
+      "badge": "Nhận biết - Hàng quy tròn theo độ chính xác số nguyên",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho số gần đúng $a = 432\\,516$ với độ chính xác $d = 300$. Ta cần làm tròn số $a$ đến hàng nào?",
+      "options": [
+        "Hàng nghìn.",
+        "Hàng trăm.",
+        "Hàng chục.",
+        "Hàng chục nghìn."
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 300$ ở hàng trăm, nên ta làm tròn số $a$ đến hàng liền trên là hàng nghìn."
+    },
+    {
+      "id": "quiz-10.12.7",
+      "badge": "Thông hiểu - Tính sai số tuyệt đối khi xấp xỉ số hữu tỉ",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Biết số đúng $\\overline{a} = \\dfrac{4}{3}$. Lấy số gần đúng là $a = 1{,}33$. Sai số tuyệt đối $\\Delta_a$ bằng:",
+      "options": [
+        "$\\dfrac{1}{300}$",
+        "$\\dfrac{1}{100}$",
+        "$\\dfrac{1}{30}$",
+        "$\\dfrac{1}{3}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_a = \\left| \\dfrac{4}{3} - 1{,}33 \\right| = \\left| \\dfrac{4}{3} - \\dfrac{133}{100} \\right| = \\left| \\dfrac{400 - 399}{300} \\right| = \\dfrac{1}{300}$."
+    },
+    {
+      "id": "quiz-10.12.8",
+      "badge": "Thông hiểu - Xác định khoảng chứa số đúng",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Đoạn thẳng có độ dài đo được là $L = 12{,}5\\text{ m} \\pm 0{,}1\\text{ m}$. Số đúng $\\overline{L}$ chắc chắn thuộc đoạn nào sau đây?",
+      "options": [
+        "$[12{,}4; 12{,}6]$",
+        "$[12{,}5; 12{,}6]$",
+        "$[12{,}4; 12{,}5]$",
+        "$[12{,}3; 12{,}7]$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overline{L} \\in [12{,}5 - 0{,}1; 12{,}5 + 0{,}1] = [12{,}4; 12{,}6]$."
+    },
+    {
+      "id": "quiz-10.12.9",
+      "badge": "Thông hiểu - Làm tròn số thập phân đến hàng phần trăm",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Quy tròn số $a = 3{,}14159$ đến hàng phần trăm (hai chữ số sau dấu phẩy), ta được kết quả là:",
+      "options": [
+        "$3{,}14$",
+        "$3{,}15$",
+        "$3{,}142$",
+        "$3{,}1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chữ số ở hàng phần trăm là 4, chữ số ngay sau nó là 1 (nhỏ hơn 5) nên ta giữ nguyên 4, kết quả là $3{,}14$."
+    },
+    {
+      "id": "quiz-10.12.10",
+      "badge": "Thông hiểu - Làm tròn số nguyên lớn theo độ chính xác",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Quy tròn số $a = 152\\,674$ với độ chính xác $d = 200$. Số quy tròn là:",
+      "options": [
+        "$153\\,000$",
+        "$152\\,700$",
+        "$152\\,000$",
+        "$152\\,600$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 200$ ở hàng trăm, làm tròn số $a$ đến hàng nghìn. Chữ số hàng nghìn là 2, chữ số sau nó là 6 ($\\ge 5$) nên cộng thêm 1 vào hàng nghìn thành 3, các chữ số sau đổi thành 0: được $153\\,000$."
+    },
+    {
+      "id": "quiz-10.12.11",
+      "badge": "Thông hiểu - Quy tròn số thập phân theo độ chính xác d",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Quy tròn số gần đúng $a = 23{,}7842$ với độ chính xác $d = 0{,}04$. Số quy tròn là:",
+      "options": [
+        "$23{,}8$",
+        "$23{,}78$",
+        "$23{,}7$",
+        "$24$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ chính xác $d = 0{,}04$ ở hàng phần trăm, làm tròn số $a$ đến hàng phần chục. Chữ số hàng phần chục là 7, chữ số ngay sau nó là 8 ($\\ge 5$) nên làm tròn lên thành $23{,}8$."
+    },
+    {
+      "id": "quiz-10.12.12",
+      "badge": "Thông hiểu - Đánh giá sai số tương đối",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Một phép đo cho kết quả $a = 200\\text{ m}$ với độ chính xác $d = 0{,}5\\text{ m}$. Sai số tương đối $\\delta_a$ không vượt quá:",
+      "options": [
+        "$0{,}25\\%$",
+        "$0{,}5\\%$",
+        "$0{,}05\\%$",
+        "$0{,}025\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_a \\le \\dfrac{d}{|a|} = \\dfrac{0{,}5}{200} = 0{,}0025 = 0{,}25\\%$."
+    },
+    {
+      "id": "quiz-10.12.13",
+      "badge": "Thông hiểu - So sánh độ chính xác của hai phép đo",
+      "source": "SGK Toán 10 KNTT",
+      "question": "Người ta đo chiều dài một cây bút là $L_1 = 15\\text{ cm} \\pm 0{,}1\\text{ cm}$ và đo chiều rộng một cái bàn là $L_2 = 80\\text{ cm} \\pm 0{,}2\\text{ cm}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "Phép đo chiều rộng cái bàn chính xác hơn vì sai số tương đối nhỏ hơn.",
+        "Phép đo chiều dài cây bút chính xác hơn vì độ chính xác $d_1 = 0{,}1$ nhỏ hơn $d_2 = 0{,}2$.",
+        "Hai phép đo có độ chính xác như nhau.",
+        "Không thể so sánh độ chính xác giữa hai phép đo này."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tương đối: $\\delta_1 \\le \\dfrac{0{,}1}{15} \\approx 0{,}67\\%$; $\\delta_2 \\le \\dfrac{0{,}2}{80} = 0{,}25\\%$. Vì $\\delta_2 < \\delta_1$ nên phép đo cái bàn có độ chính xác cao hơn."
+    },
+    {
+      "id": "quiz-10.12.14",
+      "badge": "Thông hiểu - Xác định chữ số chắc của số gần đúng",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho số gần đúng $a = 12{,}345$ với độ chính xác $d = 0{,}02$. Các chữ số chắc của $a$ là:",
+      "options": [
+        "Các chữ số 1, 2, 3.",
+        "Các chữ số 1, 2.",
+        "Các chữ số 1, 2, 3, 4.",
+        "Tất cả các chữ số 1, 2, 3, 4, 5."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa đơn vị của hàng phần mười là $0{,}05 > d = 0{,}02$ nên chữ số 3 ở hàng phần mười là chữ số chắc. Nửa đơn vị hàng phần trăm là $0{,}005 < 0{,}02$ nên chữ số 4 không phải chữ số chắc. Vậy các chữ số chắc là 1, 2, 3."
+    },
+    {
+      "id": "quiz-10.12.15",
+      "badge": "Thông hiểu - Sai số của phép tính cộng hai số gần đúng",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Cho hai số gần đúng $a = 12{,}3 \\pm 0{,}1$ và $b = 8{,}4 \\pm 0{,}2$. Sai số tuyệt đối của tổng $a + b$ không vượt quá:",
+      "options": [
+        "$0{,}3$",
+        "$0{,}1$",
+        "$0{,}2$",
+        "$0{,}02$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tuyệt đối của tổng không vượt quá tổng các sai số tuyệt đối: $\\Delta_{a+b} \\le d_a + d_b = 0{,}1 + 0{,}2 = 0{,}3$."
+    },
+    {
+      "id": "quiz-10.12.16",
+      "badge": "Thông hiểu - Làm tròn số âm",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Quy tròn số gần đúng $a = -18{,}736$ đến hàng phần chục (một chữ số sau dấu phẩy) ta được:",
+      "options": [
+        "$-18{,}7$",
+        "$-18{,}8$",
+        "$-19{,}0$",
+        "$-18{,}74$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ta làm tròn phần số dương $18{,}736$ đến hàng phần chục được $18{,}7$ (do chữ số sau là 3 < 5). Do đó số quy tròn của $-18{,}736$ là $-18{,}7$."
+    },
+    {
+      "id": "quiz-10.12.17",
+      "badge": "Vận dụng - Tính chu vi khu đất kèm sai số",
+      "source": "Toán học thực tế 10 KNTT",
+      "question": "Một mảnh vườn hình chữ nhật có chiều dài $a = 25\\text{ m} \\pm 0{,}1\\text{ m}$ và chiều rộng $b = 15\\text{ m} \\pm 0{,}1\\text{ m}$. Chu vi $P$ của mảnh vườn được ghi theo dạng số gần đúng kèm độ chính xác là:",
+      "options": [
+        "$P = 80\\text{ m} \\pm 0{,}4\\text{ m}$",
+        "$P = 80\\text{ m} \\pm 0{,}2\\text{ m}$",
+        "$P = 80\\text{ m} \\pm 0{,}1\\text{ m}$",
+        "$P = 40\\text{ m} \\pm 0{,}2\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chu vi $P = 2(a + b) = 2(25 + 15) = 80\\text{ m}$. Độ chính xác của chu vi là $d_P = 2(d_a + d_b) = 2(0{,}1 + 0{,}1) = 0{,}4\\text{ m}$. Vậy $P = 80\\text{ m} \\pm 0{,}4\\text{ m}$."
+    },
+    {
+      "id": "quiz-10.12.18",
+      "badge": "Vận dụng - Sai số tương đối trong đo lường cơ khí",
+      "source": "Chuyên đề đo lường kỹ thuật 10",
+      "question": "Một trục máy cơ khí có đường kính danh định được đo bằng thước kẹp điện tử là $D = 32{,}45\\text{ mm} \\pm 0{,}02\\text{ mm}$. Sai số tương đối của phép đo này xấp xỉ bằng:",
+      "options": [
+        "$0{,}06\\%$",
+        "$0{,}6\\%$",
+        "$0{,}02\\%$",
+        "$0{,}12\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_D \\le \\dfrac{0{,}02}{32{,}45} \\approx 0{,}000616 \\approx 0{,}06\\%$."
+    },
+    {
+      "id": "quiz-10.12.19",
+      "badge": "Vận dụng - Ước lượng sai số diện tích hình chữ nhật",
+      "source": "SBT Toán 10 KNTT",
+      "question": "Một tấm tôn hình chữ nhật có chiều dài $x = 2{,}5\\text{ m} \\pm 0{,}01\\text{ m}$ và chiều rộng $y = 1{,}2\\text{ m} \\pm 0{,}01\\text{ m}$. Diện tích $S$ gần đúng là $S = 2{,}5 \\times 1{,}2 = 3\\text{ m}^2$. Sai số tuyệt đối của diện tích $\\Delta_S$ ước lượng không vượt quá:",
+      "options": [
+        "$0{,}0371\\text{ m}^2$",
+        "$0{,}01\\text{ m}^2$",
+        "$0{,}025\\text{ m}^2$",
+        "$0{,}05\\text{ m}^2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diện tích lớn nhất là $S_{\\max} = 2{,}51 \\times 1{,}21 = 3{,}0371\\text{ m}^2$. Khi đó $\\Delta_S = |S_{\\max} - S| = 3{,}0371 - 3 = 0{,}0371\\text{ m}^2$."
+    },
+    {
+      "id": "quiz-10.12.20",
+      "badge": "Vận dụng cao - Khoảng giá trị của số lượng bao hàng",
+      "source": "Đề khảo sát Toán 10 nâng cao",
+      "question": "Một chiếc xe tải chở 100 bao xi măng, mỗi bao có khối lượng được ghi là $50\\text{ kg} \\pm 0{,}5\\text{ kg}$. Khối lượng thực sự của cả lô hàng 100 bao nằm trong khoảng nào?",
+      "options": [
+        "Từ 4 950 kg đến 5 050 kg",
+        "Từ 4 995 kg đến 5 005 kg",
+        "Từ 4 900 kg đến 5 100 kg",
+        "Từ 4 990 kg đến 5 010 kg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khối lượng mỗi bao nằm trong $[49{,}5; 50{,}5]\\text{ kg}$. Khối lượng của 100 bao xi măng nằm trong $[100 \\times 49{,}5; 100 \\times 50{,}5] = [4\\,950; 5\\,050]\\text{ kg}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-10.12.1",
+      "badge": "Đúng / Sai 1 - Khái niệm số đúng và sai số tuyệt đối",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Xét tính Đúng/Sai của các mệnh đề sau về số đúng, số gần đúng và sai số:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Kết quả đếm số học sinh của một trường THPT là một số đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Số học sinh là đại lượng đếm được chính xác tuyệt đối."
+        },
+        {
+          "id": "b",
+          "text": "Kết quả đo chiều dài của sân trường bằng thước cuộn là một số gần đúng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Mọi phép đo thực nghiệm đều chỉ cho kết quả xấp xỉ gần đúng do giới hạn dụng cụ đo."
+        },
+        {
+          "id": "c",
+          "text": "Sai số tuyệt đối của số gần đúng có thể nhận giá trị âm.",
+          "correctAnswer": false,
+          "explanation": "Sai: Theo định nghĩa, sai số tuyệt đối $\\Delta_a = |\\overline{a} - a| \\ge 0$ luôn không âm."
+        },
+        {
+          "id": "d",
+          "text": "Nếu sai số tuyệt đối $\\Delta_a = 0$ thì số gần đúng $a$ trùng với số đúng $\\overline{a}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $|\\overline{a} - a| = 0 \\Leftrightarrow \\overline{a} = a$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.2",
+      "badge": "Đúng / Sai 2 - Biểu diễn số gần đúng dưới dạng a ± d",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Một nhà địa chất đo chiều cao của một ngọn đồi và ghi kết quả là $h = 350\\text{ m} \\pm 2\\text{ m}$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ chính xác của phép đo chiều cao là $d = 2\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Theo định nghĩa, đại lượng đứng sau dấu $\\pm$ là độ chính xác $d = 2\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Chiều cao thực sự $\\overline{h}$ của ngọn đồi chắc chắn không nhỏ hơn $348\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{h} \\ge 350 - 2 = 348\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Chiều cao thực sự $\\overline{h}$ của ngọn đồi có thể bằng $353\\text{ m}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Chiều cao tối đa là $350 + 2 = 352\\text{ m}$, không thể bằng $353\\text{ m}$."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng chứa giá trị đúng của chiều cao ngọn đồi là đoạn $[348; 352]\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{h} \\in [350 - 2; 350 + 2] = [348; 352]\\text{ m}$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.3",
+      "badge": "Đúng / Sai 3 - Sai số tương đối và so sánh độ chính xác",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Xét hai phép đo: Phép đo 1 đo khối lượng bao gạo được $m_1 = 50\\text{ kg} \\pm 0{,}5\\text{ kg}$; Phép đo 2 đo khối lượng một thanh sắt được $m_2 = 200\\text{ kg} \\pm 1\\text{ kg}$. Xét tính Đúng/Sai của các khẳng định:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Sai số tương đối của phép đo 1 không vượt quá $1\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_1 \\le \\dfrac{0{,}5}{50} = 0{,}01 = 1\\%$."
+        },
+        {
+          "id": "b",
+          "text": "Sai số tương đối của phép đo 2 không vượt quá $0{,}5\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_2 \\le \\dfrac{1}{200} = 0{,}005 = 0{,}5\\%$."
+        },
+        {
+          "id": "c",
+          "text": "Phép đo 1 có độ chính xác cao hơn phép đo 2 vì có độ chính xác tuyệt đối $d_1 = 0{,}5 < d_2 = 1$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Để so sánh chất lượng phép đo ở hai quy mô khác nhau, ta phải so sánh sai số tương đối $\\delta$. Vì $\\delta_2 = 0{,}5\\% < \\delta_1 = 1\\%$ nên phép đo 2 chính xác hơn."
+        },
+        {
+          "id": "d",
+          "text": "Sai số tương đối càng nhỏ thì chất lượng phép đo càng cao.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đây là ý nghĩa cơ bản của sai số tương đối."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.4",
+      "badge": "Đúng / Sai 4 - Quy tròn số thập phân theo yêu cầu hàng làm tròn",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho số thập phân $x = 127{,}4685$. Xét tính Đúng/Sai của các kết quả làm tròn sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Làm tròn số $x$ đến hàng đơn vị được $127$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số hàng đơn vị là 7, chữ số ngay sau nó là 4 (< 5) nên giữ nguyên 127."
+        },
+        {
+          "id": "b",
+          "text": "Làm tròn số $x$ đến hàng phần chục được $127{,}5$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số hàng phần chục là 4, chữ số ngay sau nó là 6 ($\\ge 5$) nên cộng thêm 1 thành $127{,}5$."
+        },
+        {
+          "id": "c",
+          "text": "Làm tròn số $x$ đến hàng phần trăm được $127{,}46$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Chữ số hàng phần trăm là 6, chữ số sau nó là 8 ($\\ge 5$) nên phải làm tròn lên thành $127{,}47$."
+        },
+        {
+          "id": "d",
+          "text": "Làm tròn số $x$ đến hàng phần nghìn được $127{,}469$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chữ số hàng phần nghìn là 8, chữ số sau nó là 5 ($\\ge 5$) nên cộng thêm 1 thành $127{,}469$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.5",
+      "badge": "Đúng / Sai 5 - Quy tắc làm tròn số gần đúng theo độ chính xác d",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Xét tính Đúng/Sai của các quy tắc và kết quả làm tròn số gần đúng căn cứ vào độ chính xác $d$:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu độ chính xác $d$ ở hàng phần trăm thì làm tròn số gần đúng đến hàng phần chục.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Theo quy tắc, làm tròn đến hàng liền trên của hàng của độ chính xác $d$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu độ chính xác $d$ ở hàng chục thì làm tròn số gần đúng đến hàng trăm.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Hàng liền trên của hàng chục là hàng trăm."
+        },
+        {
+          "id": "c",
+          "text": "Số gần đúng $a = 354{,}68$ với $d = 0{,}03$ được quy tròn thành $354{,}7$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = 0{,}03$ ở hàng phần trăm, làm tròn số $a$ đến hàng phần chục được $354{,}7$."
+        },
+        {
+          "id": "d",
+          "text": "Số gần đúng $a = 15\\,872$ với $d = 20$ được quy tròn thành $15\\,870$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $d = 20$ ở hàng chục, phải làm tròn số $a$ đến hàng trăm, kết quả đúng là $15\\,900$."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.6",
+      "badge": "Đúng / Sai 6 - Nhận biết chữ số chắc chắn",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho số gần đúng $a = 28{,}456$ với độ chính xác $d = 0{,}03$. Xét tính Đúng/Sai của các nhận định:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chữ số 8 ở hàng đơn vị là chữ số chắc chắn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa đơn vị hàng đơn vị là $0{,}5 > d = 0{,}03$ nên chữ số 8 là chữ số chắc."
+        },
+        {
+          "id": "b",
+          "text": "Chữ số 4 ở hàng phần mười là chữ số chắc chắn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa đơn vị hàng phần mười là $0{,}05 > d = 0{,}03$ nên chữ số 4 là chữ số chắc."
+        },
+        {
+          "id": "c",
+          "text": "Chữ số 5 ở hàng phần trăm là chữ số chắc chắn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Nửa đơn vị hàng phần trăm là $0{,}005 < d = 0{,}03$ nên chữ số 5 không phải chữ số chắc."
+        },
+        {
+          "id": "d",
+          "text": "Số gần đúng $a$ có đúng 3 chữ số chắc chắn là 2, 8, 4.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Các chữ số chắc chắn là 2 (hàng chục), 8 (hàng đơn vị), 4 (hàng phần chục)."
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.7",
+      "badge": "Đúng / Sai 7 - Bài toán thực tế đo đạc sân bóng đá",
+      "source": "Toán học thực tế 10 KNTT",
+      "prompt": "Một sân bóng đá hình chữ nhật có kích thước đo được là chiều dài $x = 105\\text{ m} \\pm 0{,}2\\text{ m}$ và chiều rộng $y = 68\\text{ m} \\pm 0{,}1\\text{ m}$. Xét tính Đúng/Sai của các mệnh đề sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chu vi danh định của sân bóng là $P = 346\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $P = 2(105 + 68) = 2 \\times 173 = 346\\text{ m}$."
+        },
+        {
+          "id": "b",
+          "text": "Độ chính xác của phép tính chu vi là $d_P = 0{,}6\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d_P = 2(d_x + d_y) = 2(0{,}2 + 0{,}1) = 0{,}6\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Diện tích danh định của sân bóng là $S = 7\\,140\\text{ m}^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $S = 105 \\times 68 = 7\\,140\\text{ m}^2$."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích thực tế của sân bóng chắc chắn không thể vượt quá $7\\,155\\text{ m}^2$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Diện tích lớn nhất là $S_{\\max} = 105{,}2 \\times 68{,}1 = 7\\,164{,}12$ m²? Hãy tính lại: $105{,}2 \\times 68{,}1 = 7164{,}12 > 7155$. Do đó mệnh đề nói 'không thể vượt quá 7155' là Sai!"
+        }
+      ]
+    },
+    {
+      "id": "tf-10.12.8",
+      "badge": "Đúng / Sai 8 - Kiểm định chất lượng thể tích bình nước ngọt",
+      "source": "Bài toán thực tế kiểm định đo lường 10",
+      "prompt": "Trên nhãn một chai nước ngọt có ghi thể tích thực là $V = 330\\text{ ml} \\pm 5\\text{ ml}$. Xét tính Đúng/Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Thể tích thực tế của nước trong chai nằm trong đoạn $[325; 335]\\text{ ml}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $V \\in [330 - 5; 330 + 5] = [325; 335]\\text{ ml}$."
+        },
+        {
+          "id": "b",
+          "text": "Sai số tuyệt đối tối đa của thể tích chai nước là $5\\text{ ml}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Độ chính xác $d = 5\\text{ ml}$ là cận trên của sai số tuyệt đối."
+        },
+        {
+          "id": "c",
+          "text": "Sai số tương đối của thể tích chai nước nhỏ hơn $2\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_V \\le \\dfrac{5}{330} \\approx 0{,}01515 = 1{,}52\\% < 2\\%$."
+        },
+        {
+          "id": "d",
+          "text": "Một chai nước có thể tích đo được là $324\\text{ ml}$ vẫn đạt tiêu chuẩn ghi trên nhãn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì $324 < 325\\text{ ml}$ nằm ngoài khoảng dung sai cho phép nên không đạt tiêu chuẩn."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-10.12.1",
+      "badge": "Trả lời ngắn 1 - Sai số tuyệt đối khi xấp xỉ số Pi",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Biết số đúng $\\pi = 3{,}14159265...$ Lấy giá trị gần đúng của $\\pi$ là $3{,}14$. Tính sai số tuyệt đối $\\Delta$ (làm tròn kết quả đến 5 chữ số sau dấu phẩy).",
+      "correctAnswer": "0.00159",
+      "acceptableAnswers": [
+        "0.00159",
+        "0,00159"
+      ],
+      "explanation": "$\\Delta = |3{,}14159265 - 3{,}14| = 0{,}00159265... \\approx 0{,}00159$."
+    },
+    {
+      "id": "sa-10.12.2",
+      "badge": "Trả lời ngắn 2 - Độ dài khoảng chứa số đúng",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Cho số gần đúng $\\overline{a} = 45{,}6 \\pm 0{,}3$. Tính độ dài của khoảng chứa số đúng (khoảng biến thiên $[a - d; a + d]$).",
+      "correctAnswer": "0.6",
+      "acceptableAnswers": [
+        "0.6",
+        "0,6"
+      ],
+      "explanation": "Độ dài khoảng chứa số đúng là $(a + d) - (a - d) = 2d = 2 \\times 0{,}3 = 0{,}6$."
+    },
+    {
+      "id": "sa-10.12.3",
+      "badge": "Trả lời ngắn 3 - Quy tròn số nguyên lớn theo độ chính xác",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Quy tròn số $a = 48\\,725$ với độ chính xác $d = 300$.",
+      "correctAnswer": "49000",
+      "acceptableAnswers": [
+        "49000",
+        "49 000",
+        "49.000"
+      ],
+      "explanation": "Độ chính xác $d = 300$ ở hàng trăm, làm tròn số $a$ đến hàng nghìn. Chữ số hàng nghìn là 8, chữ số sau là 7 ($\\ge 5$) nên cộng thêm 1 thành $49\\,000$."
+    },
+    {
+      "id": "sa-10.12.4",
+      "badge": "Trả lời ngắn 4 - Quy tròn số thập phân theo độ chính xác",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Quy tròn số gần đúng $a = 0{,}84635$ với độ chính xác $d = 0{,}002$.",
+      "correctAnswer": "0.85",
+      "acceptableAnswers": [
+        "0.85",
+        "0,85"
+      ],
+      "explanation": "Độ chính xác $d = 0{,}002$ ở hàng phần nghìn, ta làm tròn đến hàng phần trăm. Chữ số hàng phần trăm là 4, chữ số sau là 6 ($\\ge 5$) nên làm tròn thành $0{,}85$."
+    },
+    {
+      "id": "sa-10.12.5",
+      "badge": "Trả lời ngắn 5 - Sai số tương đối của phép đo chiều dài",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Một cây cầu có chiều dài đo được là $L = 250\\text{ m} \\pm 0{,}5\\text{ m}$. Tính sai số tương đối tối đa của phép đo theo tỉ số phần trăm (nhập số kèm hoặc không kèm kí hiệu %).",
+      "correctAnswer": "0.2%",
+      "acceptableAnswers": [
+        "0.2%",
+        "0.2",
+        "0,2%",
+        "0,2"
+      ],
+      "explanation": "$\\delta_L \\le \\dfrac{0{,}5}{250} = 0{,}002 = 0{,}2\\%$."
+    },
+    {
+      "id": "sa-10.12.6",
+      "badge": "Trả lời ngắn 6 - Sai số tương đối chi tiết cơ khí",
+      "source": "Toán học kỹ thuật 10",
+      "prompt": "Một chi tiết máy hình trụ có đường kính $D = 40\\text{ mm} \\pm 0{,}04\\text{ mm}$. Sai số tương đối tối đa của phép đo đường kính này bằng bao nhiêu phần trăm?",
+      "correctAnswer": "0.1%",
+      "acceptableAnswers": [
+        "0.1%",
+        "0.1",
+        "0,1%",
+        "0,1"
+      ],
+      "explanation": "$\\delta_D \\le \\dfrac{0{,}04}{40} = 0{,}001 = 0{,}1\\%$."
+    },
+    {
+      "id": "sa-10.12.7",
+      "badge": "Trả lời ngắn 7 - Đếm số chữ số chắc chắn",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Cho số gần đúng $a = 78{,}345$ với độ chính xác $d = 0{,}04$. Số gần đúng $a$ có bao nhiêu chữ số chắc chắn?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "ba"
+      ],
+      "explanation": "Nửa đơn vị hàng phần mười là $0{,}05 > d = 0{,}04$ nên các chữ số ở hàng chục (7), hàng đơn vị (8) và hàng phần mười (3) là chữ số chắc. Hàng phần trăm có nửa đơn vị là $0{,}005 < 0{,}04$ nên không chắc. Vậy có đúng 3 chữ số chắc."
+    },
+    {
+      "id": "sa-10.12.8",
+      "badge": "Trả lời ngắn 8 - Tính chu vi tối đa của khu đất",
+      "source": "Bài toán thực tế Toán 10 KNTT",
+      "prompt": "Một khu đất hình chữ nhật có chiều dài $a = 30\\text{ m} \\pm 0{,}2\\text{ m}$ và chiều rộng $b = 20\\text{ m} \\pm 0{,}1\\text{ m}$. Tính chu vi tối đa có thể có của khu đất (theo mét).",
+      "correctAnswer": "100.6",
+      "acceptableAnswers": [
+        "100.6",
+        "100,6"
+      ],
+      "explanation": "$a_{\\max} = 30{,}2\\text{ m}, b_{\\max} = 20{,}1\\text{ m} \\Rightarrow P_{\\max} = 2(30{,}2 + 20{,}1) = 2 \\times 50{,}3 = 100{,}6\\text{ m}$."
+    },
+    {
+      "id": "sa-10.12.9",
+      "badge": "Trả lời ngắn 9 - Quy tròn số đúng căn bậc hai",
+      "source": "SGK Toán 10 KNTT",
+      "prompt": "Biết số đúng $\\sqrt{5} = 2{,}2360679...$ Hãy quy tròn số $\\sqrt{5}$ đến hàng phần trăm (hai chữ số thập phân).",
+      "correctAnswer": "2.24",
+      "acceptableAnswers": [
+        "2.24",
+        "2,24"
+      ],
+      "explanation": "Chữ số hàng phần trăm là 3, chữ số ngay sau nó là 6 ($\\ge 5$) nên cộng thêm 1 thành $2{,}24$."
+    },
+    {
+      "id": "sa-10.12.10",
+      "badge": "Trả lời ngắn 10 - Sai số tuyệt đối của tổng",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Hai thanh kim loại có chiều dài đo được là $L_1 = 4{,}5\\text{ m} \\pm 0{,}02\\text{ m}$ và $L_2 = 3{,}8\\text{ m} \\pm 0{,}03\\text{ m}$. Sai số tuyệt đối tối đa khi ghép nối hai thanh kim loại này thành một thanh dài $L = L_1 + L_2$ là bao nhiêu mét?",
+      "correctAnswer": "0.05",
+      "acceptableAnswers": [
+        "0.05",
+        "0,05"
+      ],
+      "explanation": "Sai số tuyệt đối của tổng là $d_L = d_1 + d_2 = 0{,}02 + 0{,}03 = 0{,}05\\text{ m}$."
+    },
+    {
+      "id": "sa-10.12.11",
+      "badge": "Trả lời ngắn 11 - Quy tròn số theo độ chính xác hàng chục",
+      "source": "SBT Toán 10 KNTT",
+      "prompt": "Quy tròn số gần đúng $a = 753\\,428$ với độ chính xác $d = 40$.",
+      "correctAnswer": "753400",
+      "acceptableAnswers": [
+        "753400",
+        "753 400",
+        "753.400"
+      ],
+      "explanation": "Độ chính xác $d = 40$ ở hàng chục, làm tròn đến hàng trăm. Chữ số hàng trăm là 4, chữ số ngay sau nó là 2 (< 5) nên giữ nguyên 4, được $753\\,400$."
+    },
+    {
+      "id": "sa-10.12.12",
+      "badge": "Trả lời ngắn 12 - Dung sai khối lượng gói hàng",
+      "source": "Toán học thực tế 10",
+      "prompt": "Một thùng hàng gồm 50 gói đường, mỗi gói nặng $1\\text{ kg} \\pm 0{,}01\\text{ kg}$. Tính độ chênh lệch giữa khối lượng tối đa và khối lượng tối thiểu của cả thùng hàng (theo kg).",
+      "correctAnswer": "1",
+      "acceptableAnswers": [
+        "1",
+        "1 kg",
+        "1.0"
+      ],
+      "explanation": "Khối lượng mỗi gói có độ chênh lệch là $2 \\times 0{,}01 = 0{,}02\\text{ kg}$. Thùng 50 gói có độ chênh lệch giữa khối lượng tối đa và tối thiểu là $50 \\times 0{,}02 = 1\\text{ kg}$."
+    }
+  ]
 }
+
 };
+
+GRADE_10_DETAILED_LESSONS["t10-b12-so-gan-dung-sai-so"] = GRADE_10_DETAILED_LESSONS["t10-b12-so-gan-dung-va-sai-so"];

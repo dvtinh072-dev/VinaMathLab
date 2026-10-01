@@ -7,25 +7,29 @@ import {
 } from "@/data/educationalKnowledgeBase";
 
 function buildVinaAssistantPrompt(groundingText?: string): string {
-  return `Bạn là **Trợ Lý Vina** - Trợ lý AI Sư phạm Toán học thông minh, chuẩn mực trực thuộc nền tảng giáo dục VinaMath (bao trọn chương trình GDPT 2018 từ Toán 6 đến Toán 12).
+  return `Bạn là **Trợ Lý Vina** - Trợ lý AI chuyên sâu môn Toán học được vận hành độc quyền bởi nền tảng **Google Gemini Toán học** trực thuộc hệ thống giáo dục VinaMath (Toán 6 đến Toán 12 theo chuẩn GDPT 2018).
 
-🎯 TÍNH NĂNG VÀ NHIỆM VỤ CHÍNH CỦA TRỢ LÝ VINA:
-1. TRA CỨU PHƯƠNG PHÁP & CÔNG THỨC TOÁN HỌC:
-   - Tra cứu nhanh, chuẩn xác định nghĩa, định lý, hệ thức và công thức toán học từ Lớp 6 đến Lớp 12 theo chương trình GDPT 2018 (sách Kết nối tri thức, Cánh diều, Chân trời sáng tạo).
-   - Giải thích ngắn gọn ý nghĩa các ký hiệu, đại lượng, đơn vị đo và điều kiện xác định.
-2. HỖ TRỢ HỌC SINH LÀM BÀI KHI CẦN:
-   - Khi học sinh hỏi bài tập / bài toán: Nêu rõ phương pháp tư duy, định hướng các bước giải và trình bày bài giải chi tiết, rõ ràng, tính toán mạch lạc có đáp số chính xác giúp học sinh tự tin nắm vững bản chất bài toán.
-   - Đi thẳng vào trọng tâm câu hỏi, súc tích, không rào đón khách sáo, không dài dòng triết lý.
-3. QUY TẮC ĐỊNH DẠNG LATEX / KATEX BẮT BUỘC:
-   - Công thức nội dòng (inline): kẹp giữa MỘT dấu đô la $ ... $ (Ví dụ: $S = a \\cdot b$, $x^2 - 4x + 3 = 0$, $\\Delta = b^2 - 4ac$).
-   - Công thức hiển thị khối riêng (block): kẹp giữa HAI dấu đô la:
-     $$
-     ...
-     $$
-     (Ví dụ: $$S = a \\cdot b$$ hoặc $$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$$).
+⚡ NGUYÊN TẮC BẮT BUỘC ĐỂ TRẢ LỜI GỌN GÀNG, CHÍNH XÁC, KHÔNG RƯỜM RÀ LAN MAN:
+1. ĐI THẲNG VÀO TRỌNG TÂM CÂU HỎI:
+   - Tuyệt đối không chào hỏi dài dòng, không rào đón khách sáo (chỉ cần "Chào em!" ngắn gọn ở đầu nếu là câu hỏi mới, hoặc đi thẳng vào bài giải).
+   - Tuyệt đối không nói triết lý sống, không khuyên nhủ đạo đức ngoài lề, không viết câu cảm thán hay bình luận thừa thãi.
+   - Trả lời đúng, đủ, súc tích và chính xác tuyệt đối.
+
+2. CHUẨN XÁC VỀ MẶT TOÁN HỌC 100%:
+   - Khi hỏi công thức / định lý: Nêu trực tiếp công thức chuẩn, điều kiện áp dụng và giải thích ngắn gọn ký hiệu.
+   - Khi hỏi bài tập / bài toán: Trình bày các bước giải ngắn gọn, logic, tính toán chính xác và in đậm rõ ràng **ĐÁP SỐ**.
+   - Khi hỏi câu trắc nghiệm: Đưa ra ngay phương án chọn (Ví dụ: **Chọn B**) kèm 2 - 3 dòng giải thích/chứng minh trọng tâm.
+
+3. ĐỊNH DẠNG TOÁN HỌC KATEX CHUẨN MỰC:
+   - Công thức trong dòng (inline): kẹp giữa cặp dấu $ ... $ (Ví dụ: $x = 2$, $\Delta = b^2 - 4ac$, $S = \frac{1}{2}ah$).
+   - Công thức dòng riêng (display): kẹp giữa cặp dấu $$ ... $$ (Ví dụ: $$x = \frac{-b \pm \sqrt{\Delta}}{2a}$$).
+   - Mọi biến số, số đo, biểu thức đều phải được đặt trong ký hiệu toán học.
+
+4. CĂN CỨ TƯ LIỆU SÁCH GIÁO KHOA CHUẨN GDPT 2018:
+   - Bám sát chương trình GDPT 2018 bộ Kết nối tri thức với cuộc sống.
 ${
   groundingText
-    ? `\n---\n${groundingText}\n*Lưu ý: Hãy ưu tiên bám sát công thức và phương pháp chuẩn mực được trích xuất từ cơ sở dữ liệu VinaMath ở trên để giải đáp cho học sinh.*\n---`
+    ? `\n---\n📚 TƯ LIỆU SGK CHÍNH THỐNG ĐỐI CHIẾU:\n${groundingText}\n*Căn cứ tài liệu chuẩn mực ở trên để giải đáp chuẩn xác.*\n---`
     : ""
 }`;
 }
@@ -105,17 +109,14 @@ export async function POST(req: NextRequest) {
           const chat = model.startChat({
             history: formattedHistory,
             generationConfig: {
-              temperature: 0.2,
-              maxOutputTokens: 1200,
+              temperature: 0.1,
+              maxOutputTokens: 1024,
             },
           });
 
           const result = await chat.sendMessage(latestUserMessage.content);
           responseText = result.response.text();
-          providerSource =
-            modelName === "gemini-2.0-flash"
-              ? "Gemini 2.0 Flash (Trợ Lý Vina)"
-              : "Gemini 1.5 Flash (Trợ Lý Vina)";
+          providerSource = "Google Gemini Toán học (Trợ Lý Vina)";
           break; // Thành công thì kết thúc vòng lặp
         } catch (geminiError: any) {
           console.warn(`Model ${modelName} call failed, trying next:`, geminiError?.message);
@@ -123,27 +124,28 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 4. NẾU CHƯA CÓ KEY HOẶC GEMINI GẶP SỰ CỐ: Dùng kho học liệu Toán 6 - 12 chuẩn SGK
+    // 4. NẾU CHƯA CÓ KEY HOẶC GEMINI GẶP SỰ CỐ: Dùng kho học liệu Toán 6 - 12 chuẩn SGK ngắn gọn
     if (!responseText) {
       const k = matchedItem || queryEducationalKnowledgeBase(latestUserMessage.content).match;
 
       if (k) {
         const stepsBlock =
           k.standardSteps && k.standardSteps.length > 0
-            ? "\n\n📌 **Các bước áp dụng chuẩn:**\n" +
+            ? "\n\n**Các bước áp dụng:**\n" +
               k.standardSteps.map((s, idx) => `${idx + 1}. ${s}`).join("\n")
             : "";
 
-        responseText = `### 📖 ${k.topic}
-
-${k.officialContent}${stepsBlock}
-
-*(Nguồn trích dẫn: ${k.sourceName})*`;
+        responseText = `### 📖 ${k.topic}\n\n${k.officialContent}${stepsBlock}\n\n📚 *Nguồn: ${k.sourceCitation}*`;
+        providerSource = "Kho Học Liệu SGK Chuẩn VinaMath (GDPT 2018)";
       } else {
-        responseText = `Chào em! Thầy là **Trợ Lý Vina**. Để giải bài toán này, em thực hiện theo các bước sau:
-1. **Xác định dữ kiện:** Tóm tắt các đại lượng đã cho và đại lượng cần tìm.
-2. **Quy đổi đơn vị:** Đưa các kích thước hoặc số liệu về cùng một đơn vị đo thống nhất.
-3. **Áp dụng công thức:** Sử dụng công thức toán học tương ứng từ SGK để tính toán ra kết quả.`;
+        responseText = `Chào em! Thầy là **Trợ Lý Vina** (Google Gemini Toán học).
+
+Để được giải đáp nhanh và chuẩn xác nhất, em vui lòng:
+1. Nhập từ khóa trọng tâm (ví dụ: *\"định lý sin\"*, *\"hằng đẳng thức\"*, *\"công thức đạo hàm\"*...).
+2. Hoặc dán đề bài toán cụ thể kèm yêu cầu tính toán.
+
+Thầy sẽ giải đáp ngay với đáp số và các bước giải ngắn gọn, chuẩn xác!`;
+        providerSource = "Google Gemini Toán học (Trợ Lý Vina)";
       }
     }
 

@@ -23,7 +23,7 @@ export interface AiChatMessageLog {
     url?: string;
   }[];
   isAnsweredFromKnowledge: boolean;
-  aiProvider?: "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK chuẩn" | "Học liệu SGK nội bộ";
+  aiProvider?: "Google Gemini Toán học" | "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK chuẩn" | "Học liệu SGK nội bộ" | string;
   topic?: string;
   grade?: number;
   timestamp: string;

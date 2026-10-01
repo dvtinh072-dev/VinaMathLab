@@ -2310,58 +2310,40 @@ export default function AdminDashboardPage() {
               {/* Mode selection */}
               <div className="space-y-1.5">
                 <label className="text-xs font-bold text-slate-300">Chế độ vận hành của Trợ lý AI Vina:</label>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <button
                     type="button"
                     onClick={() => setAiProviderChoice("gemini")}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1.5 ${
                       aiProviderChoice === "gemini"
-                        ? "bg-purple-950/40 border-purple-500 text-white shadow-sm"
+                        ? "bg-purple-950/40 border-purple-500 text-white shadow-sm ring-1 ring-purple-500/30"
                         : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
                     }`}
                   >
                     <div className="text-xs font-bold flex items-center justify-between">
-                      <span>Google Gemini + SGK</span>
-                      {aiProviderChoice === "gemini" && <span className="text-[10px] text-purple-400 font-black">✓ Chọn</span>}
+                      <span className="text-purple-300">★ Google Gemini Toán học (Chuẩn mực)</span>
+                      {aiProviderChoice === "gemini" && <span className="text-[10px] text-purple-400 font-black">✓ Đang dùng</span>}
                     </div>
-                    <div className="text-[10px] text-slate-400 leading-snug">
-                      Ưu tiên dùng Gemini Flash kết hợp nạp dữ liệu SGK đối chiếu.
-                    </div>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => setAiProviderChoice("openai")}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
-                      aiProviderChoice === "openai"
-                        ? "bg-emerald-950/40 border-emerald-500 text-white shadow-sm"
-                        : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
-                    }`}
-                  >
-                    <div className="text-xs font-bold flex items-center justify-between">
-                      <span>ChatGPT + SGK</span>
-                      {aiProviderChoice === "openai" && <span className="text-[10px] text-emerald-400 font-black">✓ Chọn</span>}
-                    </div>
-                    <div className="text-[10px] text-slate-400 leading-snug">
-                      Sử dụng OpenAI gpt-4o-mini với prompt sư phạm căn cứ SGK.
+                    <div className="text-[11px] text-slate-300 leading-snug">
+                      Độc quyền nền tảng Gemini Toán học: Trả lời gọn gàng, chính xác 100%, không rườm rà lan man, định dạng LaTeX chuẩn mực.
                     </div>
                   </button>
 
                   <button
                     type="button"
                     onClick={() => setAiProviderChoice("internal")}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1 ${
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer space-y-1.5 ${
                       aiProviderChoice === "internal"
-                        ? "bg-cyan-950/40 border-cyan-500 text-white shadow-sm"
+                        ? "bg-cyan-950/40 border-cyan-500 text-white shadow-sm ring-1 ring-cyan-500/30"
                         : "bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200"
                     }`}
                   >
                     <div className="text-xs font-bold flex items-center justify-between">
-                      <span>Học liệu SGK Chuẩn</span>
-                      {aiProviderChoice === "internal" && <span className="text-[10px] text-cyan-400 font-black">✓ Chọn</span>}
+                      <span>Học liệu SGK Chuẩn (Offline / Dự phòng)</span>
+                      {aiProviderChoice === "internal" && <span className="text-[10px] text-cyan-400 font-black">✓ Đang dùng</span>}
                     </div>
-                    <div className="text-[10px] text-slate-400 leading-snug">
-                      Không gọi API ngoài, 100% trích xuất chuẩn CSDL SGK VinaMath.
+                    <div className="text-[11px] text-slate-400 leading-snug">
+                      Không gọi API ngoài, trích xuất trực tiếp kho tư liệu SGK Kết nối tri thức Toán 6 - 12.
                     </div>
                   </button>
                 </div>

@@ -53,8 +53,8 @@ export function VinaAiChatWidget() {
           id: "welcome",
           sender: "vina",
           text:
-            "Xin chào em! Thầy/Cô là **Trợ lý AI Vina** của VinaMath. Em có thắc mắc gì về công thức, định lý hay phương pháp giải Toán từ Lớp 6 đến Lớp 12 không?\n\n" +
-            "💡 *Em hãy nhập tên bài học, định lý hoặc câu hỏi toán học cần giải đáp nhé!*",
+            "Xin chào em! Thầy/Cô là **Trợ lý AI Vina** (Google Gemini Toán học).\n\n" +
+            "Em cần tra cứu công thức hay giải đáp bài toán nào từ Lớp 6 đến Lớp 12? Hãy gửi câu hỏi để nhận lời giải ngắn gọn, chuẩn xác nhất nhé!",
           sources: [
             {
               title: "Bộ Giáo Dục và Đào Tạo - Chương trình GDPT 2018",

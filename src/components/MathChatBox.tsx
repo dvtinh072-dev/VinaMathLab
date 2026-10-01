@@ -29,13 +29,13 @@ export interface ChatMessage {
 
 const INITIAL_GREETING: ChatMessage = {
   role: "assistant",
-  content: `Chào em! Thầy là **Trợ Lý Vina** - Trợ lý AI Sư phạm Toán học VinaMath.
+  content: `Chào em! Thầy là **Trợ Lý Vina** (Google Gemini Toán học).
 
-Thầy có thể hỗ trợ em:
-- 🔍 **Tra cứu nhanh** phương pháp giải, định lý và công thức toán học từ **Lớp 6 đến Lớp 12**.
-- 💡 **Hỗ trợ giải bài tập khi cần**, phân tích hướng tư duy, trình bày lời giải chi tiết và đáp số chuẩn xác.
+Thầy hỗ trợ giải đáp nhanh, chuẩn xác và đúng trọng tâm:
+- 📐 **Công thức & Định lý** chuẩn SGK từ Lớp 6 đến Lớp 12.
+- ✍️ **Phương pháp & Lời giải bài tập** ngắn gọn, mạch lạc, có đáp số chuẩn xác.
 
-Em hãy gửi bài toán hoặc công thức cần tra cứu nhé!`,
+Em hãy gửi bài toán hoặc công thức cần giải đáp nhé!`,
   timestamp: new Date().toISOString(),
 };
 

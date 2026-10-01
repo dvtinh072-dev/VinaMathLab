@@ -24,7 +24,7 @@ export interface HybridChatInput {
 export interface HybridChatOutput {
   reply: string;
   sources: { title: string; citation: string; url?: string }[];
-  providerUsed: "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK chuẩn";
+  providerUsed: "Google Gemini Toán học" | "Gemini + SGK" | "ChatGPT + SGK" | "Học liệu SGK chuẩn";
   isGroundedWithKnowledge: boolean;
 }
 
@@ -91,25 +91,33 @@ export async function saveAiConfiguration(config: Partial<AiConfig>): Promise<bo
 }
 
 /**
- * Xây dựng Grounding Prompt chặt chẽ cho mô hình AI
+ * Xây dựng Grounding Prompt chặt chẽ cho mô hình AI Google Gemini Toán học
  */
 function buildSystemPrompt(groundingContext: string): string {
-  return `Bạn là **Trợ Lý Vina** - Chuyên gia Sư phạm Toán học trực thuộc dự án VinaMath.
-Sứ mệnh của bạn là tra cứu phương pháp, công thức và hỗ trợ học sinh Việt Nam học Toán từ Lớp 6 đến Lớp 12 một cách chuẩn mực, dễ hiểu và truyền cảm hứng.
+  return `Bạn là **Trợ Lý Vina** - Trợ lý AI chuyên sâu môn Toán học được vận hành độc quyền bởi nền tảng **Google Gemini Toán học** trực thuộc hệ sinh thái giáo dục VinaMath (Toán 6 đến Toán 12 theo chuẩn GDPT 2018).
 
-⚠️ **CÁC NGUYÊN TẮC BẮT BUỘC ĐỂ KIỂM SOÁT TÍNH CHÍNH XÁC:**
-1. **CHUẨN CHƯƠNG TRÌNH:** Bám sát 100% Chương trình Giáo dục Phổ thông 2018 và bộ SGK Kết nối tri thức với cuộc sống của Bộ Giáo dục và Đào tạo Việt Nam.
-2. **CĂN CỨ TÀI LIỆU CHÍNH THỐNG (GROUNDING):** Bạn PHẢI ưu tiên sử dụng tri thức trong phần "TƯ LIỆU SÁCH GIÁO KHOA CHÍNH THỐNG" dưới đây. Tuyệt đối không bịa đặt công thức, không dùng định nghĩa sai lệch so với chương trình phổ thông.
-3. **CÔNG THỨC TOÁN HỌC:** Mọi biến số, biểu thức, công thức toán học PHẢI được viết chuẩn bằng LaTeX:
-   - Viết trong dòng (inline): dùng cặp dấu \`$\` (ví dụ: \`$a^2 = b^2 + c^2 - 2bc \\cos A$\`, \`$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$\`).
-   - Viết tách khối (display): dùng cặp dấu \`$$\` (ví dụ: \`$$\\frac{a}{\\sin A} = 2R$$\`).
-4. **VĂN PHONG SƯ PHẠM:**
-   - Trình bày mạch lạc: Phương pháp -> Công thức toán học -> Các bước giải chi tiết, rõ ràng có đáp số chuẩn xác.
-   - Đi thẳng vào trọng tâm câu hỏi, không dài dòng triết lý hay rào đón khách sáo.
-5. **TRÍCH DẪN NGUỒN:** Ở cuối câu trả lời, luôn có một dòng ngắn gọn trích dẫn nguồn SGK theo tài liệu đối chiếu.
+⚡ NGUYÊN TẮC BẮT BUỘC ĐỂ TRẢ LỜI GỌN GÀNG, CHÍNH XÁC, KHÔNG RƯỜM RÀ LAN MAN:
+1. ĐI THẲNG VÀO TRỌNG TÂM CÂU HỎI:
+   - Tuyệt đối không chào hỏi dài dòng, không rào đón khách sáo (chỉ cần "Chào em!" ngắn gọn ở đầu nếu là câu hỏi mới, hoặc đi thẳng vào bài giải).
+   - Tuyệt đối không nói triết lý sống, không khuyên nhủ đạo đức ngoài lề, không viết câu cảm thán hay bình luận thừa thãi.
+   - Trả lời đúng, đủ, súc tích và chính xác tuyệt đối.
+
+2. CHUẨN XÁC VỀ MẶT TOÁN HỌC 100%:
+   - Khi hỏi công thức / định lý: Nêu trực tiếp công thức chuẩn, điều kiện áp dụng và giải thích ngắn gọn ký hiệu.
+   - Khi hỏi bài tập / bài toán: Trình bày các bước giải ngắn gọn, logic, tính toán chính xác và in đậm rõ ràng **ĐÁP SỐ**.
+   - Khi hỏi câu trắc nghiệm: Đưa ra ngay phương án chọn (Ví dụ: **Chọn B**) kèm 2 - 3 dòng giải thích/chứng minh trọng tâm.
+
+3. ĐỊNH DẠNG TOÁN HỌC KATEX CHUẨN MỰC:
+   - Công thức trong dòng (inline): kẹp giữa cặp dấu \`$\` (Ví dụ: \`$x = 2$\`, \`$\\Delta = b^2 - 4ac$\`, \`$S = \\frac{1}{2}ah$\`).
+   - Công thức dòng riêng (display): kẹp giữa cặp dấu \`$$\` (Ví dụ: \`$$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$$\`).
+   - Mọi biến số, số đo, biểu thức đều phải được đặt trong ký hiệu toán học.
+
+4. CĂN CỨ TƯ LIỆU SÁCH GIÁO KHOA CHUẨN GDPT 2018:
+   - Bám sát chương trình GDPT 2018 bộ Kết nối tri thức với cuộc sống.
+   - Ưu tiên sử dụng tư liệu chính thống được đối chiếu dưới đây:
 
 ---------------------
-📚 **TƯ LIỆU SÁCH GIÁO KHOA CHÍNH THỐNG ĐỐI CHIẾU:**
+📚 TƯ LIỆU SGK CHÍNH THỐNG ĐỐI CHIẾU:
 ${groundingContext}
 ---------------------`;
 }
@@ -121,7 +129,7 @@ async function callGeminiApi(
   apiKey: string,
   prompt: string,
   systemInstruction: string,
-  temperature: number = 0.2
+  temperature: number = 0.1
 ): Promise<string | null> {
   const models = ["gemini-2.0-flash", "gemini-1.5-flash"];
   
@@ -146,8 +154,8 @@ async function callGeminiApi(
             },
           ],
           generationConfig: {
-            temperature: temperature,
-            maxOutputTokens: 2048,
+            temperature: 0.1,
+            maxOutputTokens: 1024,
           },
         }),
       });
@@ -157,7 +165,7 @@ async function callGeminiApi(
       if (res.ok) {
         const data = await res.json();
         const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (text && text.trim().length > 10) {
+        if (text && text.trim().length > 5) {
           return text.trim();
         }
       } else {
@@ -172,55 +180,7 @@ async function callGeminiApi(
 }
 
 /**
- * Gọi OpenAI API (ChatGPT)
- */
-async function callOpenAiApi(
-  apiKey: string,
-  prompt: string,
-  systemInstruction: string,
-  temperature: number = 0.3
-): Promise<string | null> {
-  try {
-    const url = "https://api.openai.com/v1/chat/completions";
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 9000);
-
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      signal: controller.signal,
-      body: JSON.stringify({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "system", content: systemInstruction },
-          { role: "user", content: prompt },
-        ],
-        temperature: temperature,
-        max_tokens: 2048,
-      }),
-    });
-
-    clearTimeout(timeoutId);
-
-    if (res.ok) {
-      const data = await res.json();
-      const text = data.choices?.[0]?.message?.content;
-      if (text && text.trim().length > 10) {
-        return text.trim();
-      }
-    }
-  } catch (e: any) {
-    console.warn("Lỗi khi gọi OpenAI API:", e.message);
-  }
-
-  return null;
-}
-
-/**
- * XỬ LÝ CHAT HYBRID: Kết hợp Gemini/ChatGPT với CSDL SGK chuẩn mực
+ * XỬ LÝ CHAT TRỢ LÝ VINA: Sử dụng độc quyền nguồn Google Gemini Toán học kết hợp SGK chuẩn
  */
 export async function generateHybridAiResponse(
   input: HybridChatInput
@@ -272,46 +232,36 @@ export async function generateHybridAiResponse(
   }
 
   const systemPrompt = buildSystemPrompt(groundingContext);
-  const userPrompt = `Câu hỏi của học sinh (${studentInfo?.fullName || "Học sinh"} - Lớp: ${studentInfo?.schoolClass || "Chưa rõ"}):
+  const userPrompt = `Câu hỏi của học sinh (${studentInfo?.fullName || "Học sinh"} - Lớp: ${studentInfo?.schoolClass || "Toán phổ thông"}):
 "${question}"
 
-Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi tiết, chính xác, định dạng công thức toán học đẹp mắt theo chuẩn KaTeX.`;
+YÊU CẦU: Trả lời ngắn gọn, đi thẳng vào bản chất câu hỏi, chính xác tuyệt đối, không rườm rà lan man. Mọi công thức đều viết chuẩn LaTeX.`;
 
-  // 2. Thử gọi LLM nếu có cấu hình API Key
-  if (config.provider === "gemini" && config.geminiApiKey) {
-    const aiText = await callGeminiApi(config.geminiApiKey, userPrompt, systemPrompt, config.temperature);
+  // 2. Chỉ sử dụng nguồn Gemini Toán học (Google Gemini)
+  const geminiApiKey = config.geminiApiKey || process.env.GEMINI_API_KEY || "";
+  if (geminiApiKey) {
+    const aiText = await callGeminiApi(geminiApiKey, userPrompt, systemPrompt, 0.1);
     if (aiText) {
       return {
         reply: aiText,
         sources: defaultSources,
-        providerUsed: "Gemini + SGK",
-        isGroundedWithKnowledge: !!(knowledgeMatch || curriculumMatch),
-      };
-    }
-  } else if (config.provider === "openai" && config.openaiApiKey) {
-    const aiText = await callOpenAiApi(config.openaiApiKey, userPrompt, systemPrompt, config.temperature);
-    if (aiText) {
-      return {
-        reply: aiText,
-        sources: defaultSources,
-        providerUsed: "ChatGPT + SGK",
+        providerUsed: "Google Gemini Toán học",
         isGroundedWithKnowledge: !!(knowledgeMatch || curriculumMatch),
       };
     }
   }
 
-  // 3. FALLBACK AN TOÀN TUYỆT ĐỐI: Dùng kho tri thức chuẩn SGK đã biên soạn nếu không dùng LLM hoặc LLM lỗi
+  // 3. FALLBACK AN TOÀN: Khi chưa có API key hoặc kết nối mạng bận, dùng ngay kho tri thức SGK ngắn gọn
   if (knowledgeMatch) {
     const k = knowledgeMatch;
     const stepText = k.standardSteps && k.standardSteps.length > 0
-      ? "\n#### 📌 Các bước áp dụng chuẩn:\n" + k.standardSteps.join("\n") + "\n"
+      ? "\n**Các bước thực hiện:**\n" + k.standardSteps.map((s, idx) => `${idx + 1}. ${s}`).join("\n") + "\n"
       : "";
 
-    const fallbackReply = "Chào em! Dưới đây là kiến thức chuẩn mực về **" + k.topic + "** được trích dẫn từ sách giáo khoa:\n\n" +
-      "### 📖 " + k.topic + "\n" +
-      k.officialContent + "\n" +
+    const fallbackReply = `### 📖 ${k.topic}\n\n` +
+      `${k.officialContent}\n` +
       stepText +
-      "\n📚 **Nguồn trích dẫn:** *" + k.sourceCitation + "*";
+      `\n📚 *Nguồn: ${k.sourceCitation}*`;
 
     return {
       reply: fallbackReply,
@@ -323,13 +273,13 @@ Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi ti
 
   if (curriculumMatch) {
     const cur = curriculumMatch;
-    const descText = cur.description ? "**Tóm tắt cốt lõi:** " + cur.description + "\n\n" : "";
-    const theoryText = cur.theory ? "**Kiến thức trọng tâm:**\n- " + cur.theory.points.join("\n- ") + "\n" : "";
-    const formulaText = cur.formulas && cur.formulas.length > 0 ? "\n**Công thức trọng tâm:**\n$$" + cur.formulas.join("$$ và $$") + "$$\n" : "";
+    const descText = cur.description ? `**Tóm tắt cốt lõi:** ${cur.description}\n\n` : "";
+    const theoryText = cur.theory ? `**Kiến thức trọng tâm:**\n- ${cur.theory.points.join("\n- ")}\n` : "";
+    const formulaText = cur.formulas && cur.formulas.length > 0 ? `\n**Công thức trọng tâm:**\n$$${cur.formulas.join("$$ và $$")}$$\n` : "";
 
-    const fallbackReply = "Chào em! Dưới đây là kiến thức chuẩn của bài học **" + cur.lessonTitle + "** (" + cur.bookChapter + "):\n\n" +
+    const fallbackReply = `### 📖 ${cur.lessonTitle} (${cur.bookChapter})\n\n` +
       descText + theoryText + formulaText +
-      "\n📚 **Nguồn trích dẫn:** *Chương trình Giáo dục phổ thông 2018 môn Toán - " + cur.bookChapter + "*";
+      `\n📚 *Nguồn: Chương trình GDPT 2018 - ${cur.bookChapter}*`;
 
     return {
       reply: fallbackReply,
@@ -339,13 +289,14 @@ Em đang cần hỗ trợ giải đáp toán học. Em hãy giải thích chi ti
     };
   }
 
-  // Nếu không match gì cả và không có LLM
-  const noMatchReply = "Chào em! Hiện tại hệ thống chưa tìm thấy mục bài học hoặc định lý đối chiếu cho câu hỏi:\n" +
-    "*" + question + "*\n\n" +
-    "💡 **Gợi ý tra cứu:**\n" +
-    "1. Em hãy nhập từ khóa ngắn gọn, đúng trọng tâm (ví dụ: *\"định lý cosin\"*, *\"định lý sin\"*, *\"hằng đẳng thức\"*, *\"căn bậc hai\"*, *\"đạo hàm\"*...).\n" +
-    "2. Hoặc ghi kèm lớp học (ví dụ: *\"Toán 10 định lý cosin\"*, *\"Toán 6 dấu hiệu chia hết\"*).\n" +
-    "3. Thầy/Cô quản trị đã ghi nhận câu hỏi này trên trang quản trị để kịp thời giải đáp cho em nhé!";
+  // Nếu không match và chưa có key
+  const noMatchReply = `Chào em! Câu hỏi của em:
+*"${question}"*
+
+💡 **Gợi ý tra cứu nhanh:**
+1. Nhập từ khóa trọng tâm (ví dụ: *\"định lý cosin\"*, *\"hằng đẳng thức\"*, *\"công thức đạo hàm\"*...).
+2. Hoặc ghi kèm lớp học (ví dụ: *\"Toán 10 khoảng biến thiên\"*, *\"Toán 12 cực trị\"*).
+3. Thầy/Cô đã ghi nhận câu hỏi để cập nhật thêm vào cơ sở dữ liệu giải đáp nhé!`;
 
   return {
     reply: noMatchReply,

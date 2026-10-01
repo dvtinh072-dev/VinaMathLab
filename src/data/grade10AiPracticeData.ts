@@ -1,6 +1,8 @@
 import type { QuizQuestion, TrueFalseQuestion, ShortAnswerQuestion } from "./allGradesLessonsData";
 
 export interface Grade10AiPracticePackage {
+  lessonId?: string;
+  title?: string;
   quizQuestions: QuizQuestion[];
   trueFalseQuestions?: TrueFalseQuestion[];
   shortAnswerQuestions?: ShortAnswerQuestion[];
@@ -9202,8 +9204,1126 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
       "explanation": "$\\overline{x} = \\dfrac{6 \\times 3 + 7 \\times 7 + 8 \\times 8 + 9 \\times 2}{20} = \\dfrac{18 + 49 + 64 + 18}{20} = \\dfrac{149}{20} = 7{,}45$."
     }
   ]
+},
+  "t10-b14-so-dac-trung-do-do-phan-tan": {
+  "quizQuestions": [
+    {
+      "id": "ai-10.14.1",
+      "badge": "Luyện thêm 1 - Ý nghĩa của khoảng biến thiên",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Khoảng biến thiên $R$ của một mẫu số liệu phản ánh:",
+      "options": [
+        "Độ chênh lệch giữa giá trị lớn nhất và giá trị nhỏ nhất trong mẫu.",
+        "Độ lệch của các giá trị so với số trung bình cộng.",
+        "Mức độ biến động của 50% số liệu ở trung tâm.",
+        "Giá trị xuất hiện thường xuyên nhất trong mẫu."
+      ],
+      "correctIndex": 0,
+      "explanation": "Khoảng biến thiên $R = x_{\\max} - x_{\\min}$ phản ánh khoảng cách độ lớn giữa hai giá trị cực biên."
+    },
+    {
+      "id": "ai-10.14.2",
+      "badge": "Luyện thêm 2 - Ưu điểm của khoảng tứ phân vị",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Ưu điểm vượt trội của khoảng tứ phân vị $\\Delta_Q$ so với khoảng biến thiên $R$ là:",
+      "options": [
+        "Không bị ảnh hưởng bởi các giá trị bất thường (ngoại lai).",
+        "Luôn có giá trị lớn hơn khoảng biến thiên.",
+        "Có cùng đơn vị đo với phương sai.",
+        "Tính toán không cần phải sắp xếp mẫu số liệu."
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_Q = Q_3 - Q_1$ chỉ đo độ biến động của 50% số liệu trung tâm nên không bị kéo lệch bởi giá trị cực biên."
+    },
+    {
+      "id": "ai-10.14.3",
+      "badge": "Luyện thêm 3 - Ranh giới dưới của giá trị bất thường",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Một giá trị $x$ được xem là giá trị bất thường (quá nhỏ) nếu thỏa mãn bất đẳng thức nào?",
+      "options": [
+        "$x < Q_1 - 1{,}5\\Delta_Q$",
+        "$x < Q_1 - \\Delta_Q$",
+        "$x < Q_2 - 1{,}5\\Delta_Q$",
+        "$x < Q_3 - 1{,}5\\Delta_Q$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, giá trị bất thường bên trái thỏa mãn $x < Q_1 - 1{,}5\\Delta_Q$."
+    },
+    {
+      "id": "ai-10.14.4",
+      "badge": "Luyện thêm 4 - Đơn vị của độ lệch chuẩn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Nếu mẫu số liệu có đơn vị đo là mét (m) thì độ lệch chuẩn $s$ có đơn vị là:",
+      "options": [
+        "mét (m)",
+        "mét vuông ($\\text{m}^2$)",
+        "mét khối ($\\text{m}^3$)",
+        "Không có đơn vị"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ lệch chuẩn $s = \\sqrt{s^2}$ có cùng đơn vị đo với mẫu số liệu (mét)."
+    },
+    {
+      "id": "ai-10.14.5",
+      "badge": "Luyện thêm 5 - Tính khoảng biến thiên năng suất lúa",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Năng suất lúa (tạ/ha) của 6 xã lần lượt là: $58, 62, 65, 67, 70, 74$. Khoảng biến thiên $R$ bằng:",
+      "options": [
+        "$16\\text{ tạ/ha}$",
+        "$14\\text{ tạ/ha}$",
+        "$15\\text{ tạ/ha}$",
+        "$18\\text{ tạ/ha}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$R = 74 - 58 = 16\\text{ tạ/ha}$."
+    },
+    {
+      "id": "ai-10.14.6",
+      "badge": "Luyện thêm 6 - Khoảng biến thiên thời gian giải toán",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Thời gian (phút) hoàn thành bài toán của 7 học sinh: $10, 15, 12, 18, 9, 14, 20$. Khoảng biến thiên $R$ là:",
+      "options": [
+        "$11\\text{ phút}$",
+        "$10\\text{ phút}$",
+        "$12\\text{ phút}$",
+        "$9\\text{ phút}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x_{\\max} = 20, x_{\\min} = 9 \\implies R = 20 - 9 = 11$ phút."
+    },
+    {
+      "id": "ai-10.14.7",
+      "badge": "Luyện thêm 7 - Tính khoảng tứ phân vị mẫu n = 8",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Cho mẫu số liệu đã sắp xếp: $3, 6, 8, 10, 14, 17, 20, 24$. Khoảng tứ phân vị $\\Delta_Q$ bằng:",
+      "options": [
+        "$11{,}5$",
+        "$11$",
+        "$12$",
+        "$10{,}5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 8$, $Q_1 = \\dfrac{6+8}{2} = 7$, $Q_3 = \\dfrac{17+20}{2} = 18{,}5 \\implies \\Delta_Q = 18{,}5 - 7 = 11{,}5$."
+    },
+    {
+      "id": "ai-10.14.8",
+      "badge": "Luyện thêm 8 - Tính khoảng tứ phân vị mẫu n = 9",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Cho mẫu số liệu đã sắp xếp: $2, 4, 6, 9, 12, 15, 18, 20, 25$. Khoảng tứ phân vị $\\Delta_Q$ bằng:",
+      "options": [
+        "$14$",
+        "$13{,}5$",
+        "$14{,}5$",
+        "$15$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 9$, $Q_2 = 12$. Nửa dưới $\\{2, 4, 6, 9\\} \\Rightarrow Q_1 = 5$. Nửa trên $\\{15, 18, 20, 25\\} \\Rightarrow Q_3 = 19$. $\\Delta_Q = 19 - 5 = 14$."
+    },
+    {
+      "id": "ai-10.14.9",
+      "badge": "Luyện thêm 9 - Tìm giá trị bất thường",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Một mẫu số liệu có $Q_1 = 20$ và $Q_3 = 32$. Giá trị nào sau đây là giá trị bất thường?",
+      "options": [
+        "$52$",
+        "$25$",
+        "$35$",
+        "$48$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_Q = 32 - 20 = 12$. Ranh giới trên: $Q_3 + 1{,}5\\Delta_Q = 32 + 1{,}5(12) = 50$. Do $52 > 50$ nên 52 là giá trị bất thường."
+    },
+    {
+      "id": "ai-10.14.10",
+      "badge": "Luyện thêm 10 - Tính phương sai của 5 số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Cho mẫu số liệu: $1, 3, 5, 7, 9$. Phương sai $s^2$ bằng:",
+      "options": [
+        "$8$",
+        "$10$",
+        "$6$",
+        "$4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overline{x} = 5$. $s^2 = \\dfrac{(-4)^2 + (-2)^2 + 0^2 + 2^2 + 4^2}{5} = \\dfrac{40}{5} = 8$."
+    },
+    {
+      "id": "ai-10.14.11",
+      "badge": "Luyện thêm 11 - Tính độ lệch chuẩn khi biết phương sai",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Phương sai của một mẫu số liệu bằng $s^2 = 25$. Độ lệch chuẩn $s$ bằng:",
+      "options": [
+        "$5$",
+        "$10$",
+        "$50$",
+        "$25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$s = \\sqrt{25} = 5$."
+    },
+    {
+      "id": "ai-10.14.12",
+      "badge": "Luyện thêm 12 - Mẫu số liệu có độ lệch chuẩn bằng 0",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Khi nào độ lệch chuẩn của một mẫu số liệu bằng 0 ($s = 0$)?",
+      "options": [
+        "Khi tất cả các giá trị trong mẫu số liệu đều bằng nhau.",
+        "Khi số trung bình cộng bằng 0.",
+        "Khi mẫu số liệu không có mốt.",
+        "Khi khoảng biến thiên bằng 1."
+      ],
+      "correctIndex": 0,
+      "explanation": "$s = 0 \\Leftrightarrow \\sum(x_i - \\overline{x})^2 = 0 \\Leftrightarrow x_1 = x_2 = \\dots = x_n$."
+    },
+    {
+      "id": "ai-10.14.13",
+      "badge": "Luyện thêm 13 - Tính phương sai từ bảng tần số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Bảng tần số điểm kiểm tra của 10 học sinh:\n- Điểm 5: 2 học sinh\n- Điểm 7: 6 học sinh\n- Điểm 9: 2 học sinh\nPhương sai $s^2$ bằng:",
+      "options": [
+        "$1{,}6$",
+        "$1{,}8$",
+        "$1{,}4$",
+        "$2{,}0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overline{x} = 7$. $s^2 = \\dfrac{2(5-7)^2 + 6(7-7)^2 + 2(9-7)^2}{10} = \\dfrac{2(4) + 0 + 2(4)}{10} = 1{,}6$."
+    },
+    {
+      "id": "ai-10.14.14",
+      "badge": "Luyện thêm 14 - Độ lệch chuẩn bảng tần số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Từ câu trên ($s^2 = 1{,}6$), độ lệch chuẩn $s$ làm tròn đến hàng phần trăm là:",
+      "options": [
+        "$1{,}26$",
+        "$1{,}25$",
+        "$1{,}28$",
+        "$1{,}30$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$s = \\sqrt{1{,}6} \\approx 1{,}2649... \\approx 1{,}26$."
+    },
+    {
+      "id": "ai-10.14.15",
+      "badge": "Luyện thêm 15 - So sánh độ ổn định năng suất cây trồng",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Hai vườn cây ăn trái M và N có sản lượng trung bình mỗi cây đều là $50\\text{ kg}$. Độ lệch chuẩn sản lượng của vườn M là $s_M = 3{,}2\\text{ kg}$ và vườn N là $s_N = 6{,}5\\text{ kg}$. Khẳng định nào đúng?",
+      "options": [
+        "Cây ở vườn M cho sản lượng đồng đều hơn cây ở vườn N.",
+        "Cây ở vườn N cho sản lượng đồng đều hơn cây ở vườn M.",
+        "Hai vườn có độ phân tán sản lượng như nhau.",
+        "Vườn N có tổng sản lượng cao hơn vườn M."
+      ],
+      "correctIndex": 0,
+      "explanation": "$s_M < s_N$ ($3{,}2 < 6{,}5$) nên vườn M có mức độ đồng đều cao hơn."
+    },
+    {
+      "id": "ai-10.14.16",
+      "badge": "Luyện thêm 16 - Cộng hằng số vào mẫu số liệu",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Nếu trừ đi 3 đơn vị ở mỗi giá trị trong mẫu số liệu thì phương sai $s^2$ sẽ:",
+      "options": [
+        "Không thay đổi.",
+        "Giảm đi 3 đơn vị.",
+        "Giảm đi 9 đơn vị.",
+        "Bằng 0."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tịnh tiến mẫu số liệu không làm thay đổi phương sai và độ lệch chuẩn."
+    },
+    {
+      "id": "ai-10.14.17",
+      "badge": "Luyện thêm 17 - Nhân mẫu số liệu với hằng số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Nếu nhân mỗi số liệu trong mẫu với số $5$ thì độ lệch chuẩn $s$ mới sẽ:",
+      "options": [
+        "Tăng lên 5 lần.",
+        "Tăng lên 25 lần.",
+        "Không thay đổi.",
+        "Tăng lên $\\sqrt{5}$ lần."
+      ],
+      "correctIndex": 0,
+      "explanation": "$s' = |k|s = 5s$."
+    },
+    {
+      "id": "ai-10.14.18",
+      "badge": "Luyện thêm 18 - Độ lệch chuẩn trong kiểm soát chất lượng linh kiện",
+      "isAiGenerated": true,
+      "source": "Toán học kỹ thuật 10",
+      "question": "Hai dây chuyền sản xuất bu-lông có đường kính trung bình thiết kế đều là $10\\text{ mm}$. Độ lệch chuẩn của dây chuyền I là $0{,}02\\text{ mm}$ và dây chuyền II là $0{,}08\\text{ mm}$. Dây chuyền nào có độ chuẩn xác cơ khí cao hơn?",
+      "options": [
+        "Dây chuyền I",
+        "Dây chuyền II",
+        "Cả hai như nhau",
+        "Không so sánh được"
+      ],
+      "correctIndex": 0,
+      "explanation": "Độ lệch chuẩn của dây chuyền I nhỏ hơn nhiều ($0{,}02 < 0{,}08$) nên sản phẩm bu-lông làm ra đồng đều và chính xác hơn."
+    },
+    {
+      "id": "ai-10.14.19",
+      "badge": "Luyện thêm 19 - Xác định giá trị bất thường thấp",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "question": "Khảo sát điểm số có $Q_1 = 30$ và $Q_3 = 42$. Giá trị nào sau đây là giá trị bất thường?",
+      "options": [
+        "$10$",
+        "$15$",
+        "$20$",
+        "$35$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_Q = 42 - 30 = 12$. Ranh giới dưới: $Q_1 - 1{,}5\\Delta_Q = 30 - 1{,}5(12) = 30 - 18 = 12$. Vì $10 < 12$ nên 10 là giá trị bất thường."
+    },
+    {
+      "id": "ai-10.14.20",
+      "badge": "Luyện thêm 20 - Đại lượng đo độ phân tán phù hợp",
+      "isAiGenerated": true,
+      "source": "SGK Toán 10 KNTT",
+      "question": "Để đo mức độ phân tán của 50% số liệu trung tâm trong mẫu số liệu, ta sử dụng:",
+      "options": [
+        "Khoảng tứ phân vị",
+        "Khoảng biến thiên",
+        "Số trung bình",
+        "Mốt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1$ phản ánh độ biến thiên của 50% số liệu trung tâm."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-10.14.1",
+      "badge": "Luyện thêm Đ/S 1 - Chiều cao 8 vận động viên điền kinh",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Chiều cao (cm) của 8 vận động viên: $172, 174, 175, 176, 178, 180, 182, 186$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Khoảng biến thiên chiều cao là $R = 14\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $186 - 172 = 14\\text{ cm}$."
+        },
+        {
+          "id": "b",
+          "text": "Tứ phân vị thứ nhất là $Q_1 = 174{,}5\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa dưới $\\{172, 174, 175, 176\\} \\Rightarrow Q_1 = \\dfrac{174 + 175}{2} = 174{,}5\\text{ cm}$."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 181\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa trên $\\{178, 180, 182, 186\\} \\Rightarrow Q_3 = \\dfrac{180 + 182}{2} = 181\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng tứ phân vị là $\\Delta_Q = 6{,}5\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\Delta_Q = 181 - 174{,}5 = 6{,}5\\text{ cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.2",
+      "badge": "Luyện thêm Đ/S 2 - Tính phương sai điểm số",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Điểm kiểm tra của 5 học sinh: $5, 7, 8, 9, 11$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số trung bình cộng là $\\overline{x} = 8{,}0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{5+7+8+9+11}{5} = \\dfrac{40}{5} = 8{,}0$."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng biến thiên của điểm là $R = 6$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $11 - 5 = 6$."
+        },
+        {
+          "id": "c",
+          "text": "Phương sai của mẫu số liệu là $s^2 = 4{,}0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s^2 = \\dfrac{(-3)^2 + (-1)^2 + 0^2 + 1^2 + 3^2}{5} = \\dfrac{9 + 1 + 0 + 1 + 9}{5} = \\dfrac{20}{5} = 4{,}0$."
+        },
+        {
+          "id": "d",
+          "text": "Độ lệch chuẩn là $s = 2{,}0$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s = \\sqrt{4} = 2{,}0$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.3",
+      "badge": "Luyện thêm Đ/S 3 - Phát hiện outlier quãng đường đi bộ",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Quãng đường đi bộ (km) trong 9 ngày: $4, 5, 5, 6, 6, 7, 8, 9, 25$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung vị quãng đường đi bộ là 6 km.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $n = 9$, số chính giữa $x_5 = 6$ km."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng tứ phân vị $\\Delta_Q = 3{,}5\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $Q_1 = 5, Q_3 = 8{,}5 \\implies \\Delta_Q = 8{,}5 - 5 = 3{,}5\\text{ km}$."
+        },
+        {
+          "id": "c",
+          "text": "Ranh giới trên để phát hiện giá trị bất thường là $13{,}75\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $Q_3 + 1{,}5\\Delta_Q = 8{,}5 + 1{,}5(3{,}5) = 8{,}5 + 5{,}25 = 13{,}75\\text{ km}$."
+        },
+        {
+          "id": "d",
+          "text": "Ngày đi 25 km là một giá trị bất thường.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $25 > 13{,}75$ km."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.4",
+      "badge": "Luyện thêm Đ/S 4 - Bảng tần số số cuộc gọi tư vấn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Số cuộc gọi tiếp nhận mỗi giờ của một tổng đài viên trong 20 giờ:\n- 2 cuộc: 6 giờ\n- 4 cuộc: 8 giờ\n- 6 cuộc: 6 giờ\nXét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Khoảng biến thiên là $R = 4$ cuộc.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $R = 6 - 2 = 4$ cuộc."
+        },
+        {
+          "id": "b",
+          "text": "Số cuộc gọi trung bình mỗi giờ là 4 cuộc.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{2(6) + 4(8) + 6(6)}{20} = \\dfrac{12 + 32 + 36}{20} = 4$ cuộc."
+        },
+        {
+          "id": "c",
+          "text": "Phương sai là $s^2 = 2{,}4$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s^2 = \\dfrac{6(2-4)^2 + 8(4-4)^2 + 6(6-4)^2}{20} = \\dfrac{6(4) + 0 + 6(4)}{20} = \\dfrac{48}{20} = 2{,}4$."
+        },
+        {
+          "id": "d",
+          "text": "Độ lệch chuẩn làm tròn đến hàng phần trăm là $s \\approx 1{,}55$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s = \\sqrt{2{,}4} \\approx 1{,}549... \\approx 1{,}55$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.5",
+      "badge": "Luyện thêm Đ/S 5 - So sánh độ biến động nhiệt độ hai vùng",
+      "source": "Địa lý & Khí hậu 10",
+      "prompt": "Nhiệt độ trung bình mùa hè của hai vùng X và Y đều là $30^\\circ\\text{C}$. Độ lệch chuẩn của vùng X là $s_X = 1{,}5^\\circ\\text{C}$ và vùng Y là $s_Y = 4{,}2^\\circ\\text{C}$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Phương sai nhiệt độ vùng X là $s_X^2 = 2{,}25$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $(1{,}5)^2 = 2{,}25$."
+        },
+        {
+          "id": "b",
+          "text": "Phương sai nhiệt độ vùng Y là $s_Y^2 = 17{,}64$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $(4{,}2)^2 = 17{,}64$."
+        },
+        {
+          "id": "c",
+          "text": "Vùng Y có thời tiết mùa hè ôn hòa, ít biến động hơn vùng X.",
+          "correctAnswer": false,
+          "explanation": "Sai: $s_Y = 4{,}2 > s_X = 1{,}5$ nên vùng Y thời tiết biến động gay gắt hơn vùng X."
+        },
+        {
+          "id": "d",
+          "text": "Vùng X có nền nhiệt độ ổn định hơn vùng Y.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Độ lệch chuẩn của vùng X nhỏ hơn nhiều so với vùng Y."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.6",
+      "badge": "Luyện thêm Đ/S 6 - Tịnh tiến và co giãn mẫu số liệu",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Cho mẫu số liệu có độ lệch chuẩn $s = 4$ và khoảng biến thiên $R = 12$. Tạo mẫu số liệu mới bằng cách nhân mỗi giá trị với $2$ rồi trừ đi $5$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Khoảng biến thiên mới là 24.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $R' = 2R = 2 \\times 12 = 24$."
+        },
+        {
+          "id": "b",
+          "text": "Độ lệch chuẩn mới là 8.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s' = 2s = 2 \\times 4 = 8$."
+        },
+        {
+          "id": "c",
+          "text": "Phương sai mới là 64.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s'^2 = 8^2 = 64$."
+        },
+        {
+          "id": "d",
+          "text": "Phương sai mới bị trừ đi 5 đơn vị.",
+          "correctAnswer": false,
+          "explanation": "Sai: Phép trừ hằng số 5 không ảnh hưởng đến phương sai."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.7",
+      "badge": "Luyện thêm Đ/S 7 - Điểm rèn luyện của hai lớp",
+      "source": "Giáo dục học đường 10",
+      "prompt": "Điểm rèn luyện trung bình của lớp 10A và 10B đều là 85 điểm. Độ lệch chuẩn của 10A là $s_A = 2{,}8$ điểm và 10B là $s_B = 5{,}6$ điểm. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Học sinh lớp 10A có điểm rèn luyện đồng đều hơn lớp 10B.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s_A < s_B$ ($2{,}8 < 5{,}6$)."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng phân tán điểm rèn luyện của lớp 10B rộng hơn lớp 10A.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s_B > s_A$."
+        },
+        {
+          "id": "c",
+          "text": "Tất cả học sinh lớp 10A đều có điểm cao hơn học sinh lớp 10B.",
+          "correctAnswer": false,
+          "explanation": "Sai: Độ lệch chuẩn chỉ đo độ phân tán, không khẳng định từng cá nhân."
+        },
+        {
+          "id": "d",
+          "text": "Phương sai điểm rèn luyện của lớp 10B gấp 4 lần lớp 10A.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s_B / s_A = 5{,}6 / 2{,}8 = 2 \\implies s_B^2 / s_A^2 = 2^2 = 4$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.14.8",
+      "badge": "Luyện thêm Đ/S 8 - Đặc trưng đo độ phân tán tổng quát",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Xét tính Đúng/Sai của các nhận định lý thuyết thống kê:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ lệch chuẩn luôn mang giá trị dương.",
+          "correctAnswer": false,
+          "explanation": "Sai: Độ lệch chuẩn $s \\ge 0$, có thể bằng 0 khi mọi số liệu bằng nhau."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng biến thiên $R$ luôn không âm ($R \\ge 0$).",
+          "correctAnswer": true,
+          "explanation": "Đúng: $x_{\\max} \\ge x_{\\min} \\implies R \\ge 0$."
+        },
+        {
+          "id": "c",
+          "text": "Khoảng tứ phân vị $\\Delta_Q$ không bao giờ lớn hơn khoảng biến thiên $R$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\Delta_Q = Q_3 - Q_1 \\le x_{\\max} - x_{\\min} = R$."
+        },
+        {
+          "id": "d",
+          "text": "Khi có một giá trị cực lớn xuất hiện, khoảng tứ phân vị bị tăng vọt.",
+          "correctAnswer": false,
+          "explanation": "Sai: Giá trị cực lớn là ngoại lai, chỉ ảnh hưởng đến $R, s^2, s$, không ảnh hưởng đến $\\Delta_Q$."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-10.14.1",
+      "badge": "Luyện thêm TLN 1 - Tính khoảng biến thiên",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Cho mẫu số liệu điểm số: $14, 20, 28, 11, 35, 17, 30$. Tính khoảng biến thiên $R$.",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "explanation": "$x_{\\max} = 35, x_{\\min} = 11 \\implies R = 35 - 11 = 24$."
+    },
+    {
+      "id": "ai-sa-10.14.2",
+      "badge": "Luyện thêm TLN 2 - Tính khoảng tứ phân vị",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Cho dãy số đã sắp xếp: $5, 8, 10, 13, 16, 20, 23, 27$. Tính khoảng tứ phân vị $\\Delta_Q$.",
+      "correctAnswer": "12.5",
+      "acceptableAnswers": [
+        "12.5",
+        "12,5",
+        "25/2"
+      ],
+      "explanation": "$n = 8$, $Q_1 = \\dfrac{8+10}{2} = 9$, $Q_3 = \\dfrac{20+23}{2} = 21{,}5 \\implies \\Delta_Q = 21{,}5 - 9 = 12{,}5$."
+    },
+    {
+      "id": "ai-sa-10.14.3",
+      "badge": "Luyện thêm TLN 3 - Tính phương sai của 5 số",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Tính phương sai $s^2$ của mẫu số liệu sau: $4, 6, 8, 10, 12$.",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8.0",
+        "8,0"
+      ],
+      "explanation": "$\\overline{x} = 8$. $s^2 = \\dfrac{(-4)^2 + (-2)^2 + 0^2 + 2^2 + 4^2}{5} = \\dfrac{40}{5} = 8$."
+    },
+    {
+      "id": "ai-sa-10.14.4",
+      "badge": "Luyện thêm TLN 4 - Tính độ lệch chuẩn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Cho mẫu số liệu có phương sai $s^2 = 81$. Tính độ lệch chuẩn $s$.",
+      "correctAnswer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9.0",
+        "9,0"
+      ],
+      "explanation": "$s = \\sqrt{81} = 9$."
+    },
+    {
+      "id": "ai-sa-10.14.5",
+      "badge": "Luyện thêm TLN 5 - Ranh giới trên của giá trị bất thường",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Mẫu số liệu có $Q_1 = 18$ và $Q_3 = 30$. Tính ranh giới trên $Q_3 + 1{,}5\\Delta_Q$ để xác định outlier.",
+      "correctAnswer": "48",
+      "acceptableAnswers": [
+        "48",
+        "48.0"
+      ],
+      "explanation": "$\\Delta_Q = 30 - 18 = 12$. Ranh giới trên $= 30 + 1{,}5(12) = 30 + 18 = 48$."
+    },
+    {
+      "id": "ai-sa-10.14.6",
+      "badge": "Luyện thêm TLN 6 - Tính khoảng tứ phân vị mẫu lẻ n = 7",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Cho mẫu số liệu đã sắp xếp: $6, 9, 12, 16, 20, 25, 30$. Tính khoảng tứ phân vị $\\Delta_Q$.",
+      "correctAnswer": "16",
+      "acceptableAnswers": [
+        "16"
+      ],
+      "explanation": "$n = 7$, $Q_1 = 9, Q_3 = 25 \\implies \\Delta_Q = 25 - 9 = 16$."
+    },
+    {
+      "id": "ai-sa-10.14.7",
+      "badge": "Luyện thêm TLN 7 - Phương sai bảng tần số",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Bảng tần số điểm thi của 10 học sinh:\n- Điểm 4: 2 học sinh\n- Điểm 6: 6 học sinh\n- Điểm 8: 2 học sinh\nTính phương sai $s^2$.",
+      "correctAnswer": "1.6",
+      "acceptableAnswers": [
+        "1.6",
+        "1,6",
+        "8/5"
+      ],
+      "explanation": "$\\overline{x} = 6$. $s^2 = \\dfrac{2(-2)^2 + 6(0)^2 + 2(2)^2}{10} = \\dfrac{16}{10} = 1{,}6$."
+    },
+    {
+      "id": "ai-sa-10.14.8",
+      "badge": "Luyện thêm TLN 8 - Phương sai của 3 số",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Tính phương sai $s^2$ của 3 số: $5, 10, 15$.",
+      "correctAnswer": "16.67",
+      "acceptableAnswers": [
+        "16.67",
+        "16,67",
+        "50/3",
+        "16.7"
+      ],
+      "explanation": "$\\overline{x} = 10$. $s^2 = \\dfrac{(-5)^2 + 0^2 + 5^2}{3} = \\dfrac{50}{3} \\approx 16{,}67$."
+    },
+    {
+      "id": "ai-sa-10.14.9",
+      "badge": "Luyện thêm TLN 9 - Khoảng biến thiên doanh thu",
+      "source": "Toán học kinh tế 10",
+      "prompt": "Doanh thu thấp nhất là 15 triệu đồng, cao nhất là 65 triệu đồng. Tính khoảng biến thiên (triệu đồng).",
+      "correctAnswer": "50",
+      "acceptableAnswers": [
+        "50",
+        "50 triệu"
+      ],
+      "explanation": "$R = 65 - 15 = 50$ triệu đồng."
+    },
+    {
+      "id": "ai-sa-10.14.10",
+      "badge": "Luyện thêm TLN 10 - Tìm giá trị bất thường",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Mẫu số liệu: $10, 11, 12, 12, 13, 14, 15, 16, 40$. Tìm giá trị bất thường duy nhất.",
+      "correctAnswer": "40",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "explanation": "$Q_1 = 11{,}5, Q_3 = 15{,}5 \\implies \\Delta_Q = 4$. Ranh giới trên: $15{,}5 + 1{,}5(4) = 21{,}5$. Vì $40 > 21{,}5$ nên giá trị bất thường là 40."
+    },
+    {
+      "id": "ai-sa-10.14.11",
+      "badge": "Luyện thêm TLN 11 - Tỉ số phương sai khi nhân với 5",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Khi nhân tất cả các giá trị của mẫu số liệu với 5 thì phương sai mới gấp mấy lần phương sai cũ?",
+      "correctAnswer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25 lần"
+      ],
+      "explanation": "$s'^2 = 5^2 s^2 = 25s^2$."
+    },
+    {
+      "id": "ai-sa-10.14.12",
+      "badge": "Luyện thêm TLN 12 - Tỉ số độ lệch chuẩn khi nhân với 6",
+      "source": "Chuyên đề Toán 10 KNTT Bài 14",
+      "prompt": "Khi nhân tất cả các giá trị của mẫu số liệu với 6 thì độ lệch chuẩn mới gấp mấy lần độ lệch chuẩn cũ?",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6 lần"
+      ],
+      "explanation": "$s' = 6s$."
+    }
+  ]
+},
+  "t10-on-tap-chuong-5": {
+  "lessonId": "t10-on-tap-chuong-5",
+  "title": "Luyện thêm Ôn tập cuối chương V - Thống kê & Số đặc trưng",
+  "quizQuestions": [
+    {
+      "id": "ai-ot5-2.1",
+      "badge": "Nhận biết - Công thức sai số tương đối",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Sai số tương đối $\\delta_a$ của số gần đúng $a$ được tính theo công thức:",
+      "options": [
+        "$\\delta_a = \\dfrac{\\Delta_a}{|a|}$",
+        "$\\delta_a = \\dfrac{|a|}{\\Delta_a}$",
+        "$\\delta_a = \\Delta_a \\cdot |a|$",
+        "$\\delta_a = |\\overline{a} - a|$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tương đối là $\\delta_a = \\dfrac{\\Delta_a}{|a|}$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.2",
+      "badge": "Nhận biết - Ý nghĩa sai số tương đối",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Để so sánh độ chính xác của hai phép đo khác nhau về quy mô độ lớn, người ta thường sử dụng:",
+      "options": [
+        "Sai số tương đối",
+        "Sai số tuyệt đối",
+        "Số trung bình",
+        "Độ lệch chuẩn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sai số tương đối cho phép so sánh độ chính xác giữa các phép đo có độ lớn khác nhau.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.3",
+      "badge": "Nhận biết - Khái niệm trung vị mẫu chẵn",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Cho mẫu số liệu đã sắp xếp gồm $n = 2k$ số. Trung vị $M_e$ bằng:",
+      "options": [
+        "$\\dfrac{x_k + x_{k+1}}{2}$",
+        "$x_k$",
+        "$x_{k+1}$",
+        "$\\dfrac{x_1 + x_n}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khi $n = 2k$ chẵn, $M_e = \\dfrac{x_k + x_{k+1}}{2}$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.4",
+      "badge": "Nhận biết - Tứ phân vị thứ hai",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Trong bộ ba tứ phân vị $(Q_1, Q_2, Q_3)$, tứ phân vị thứ hai $Q_2$ chính là:",
+      "options": [
+        "Trung vị của mẫu số liệu ($M_e$).",
+        "Số trung bình cộng của mẫu số liệu ($\\overline{x}$).",
+        "Mốt của mẫu số liệu ($M_o$).",
+        "Độ lệch chuẩn của mẫu số liệu ($s$)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, $Q_2 = M_e$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.5",
+      "badge": "Nhận biết - Đại lượng không bị ảnh hưởng bởi outlier",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Số đặc trưng đo độ phân tán nào KHÔNG bị ảnh hưởng bởi các giá trị bất thường?",
+      "options": [
+        "Khoảng tứ phân vị",
+        "Khoảng biến thiên",
+        "Phương sai",
+        "Độ lệch chuẩn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1$ đo 50% số liệu trung tâm nên không chịu ảnh hưởng của các giá trị ngoại lai.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.6",
+      "badge": "Nhận biết - Công thức tính phương sai",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Phương sai $s^2$ của mẫu số liệu $\\{x_1, x_2, \\dots, x_n\\}$ được xác định bởi:",
+      "options": [
+        "$s^2 = \\dfrac{1}{n}\\sum_{i=1}^n (x_i - \\overline{x})^2$",
+        "$s^2 = \\dfrac{1}{n}\\sum_{i=1}^n |x_i - \\overline{x}|$",
+        "$s^2 = \\sum_{i=1}^n (x_i - \\overline{x})^2$",
+        "$s^2 = \\sqrt{\\dfrac{1}{n}\\sum_{i=1}^n (x_i - \\overline{x})^2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Phương sai là trung bình cộng của các bình phương độ lệch so với số trung bình.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.7",
+      "badge": "Thông hiểu - Đánh giá sai số tương đối",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Đo chiều dài cây cầu thu được $L = 500\\text{ m} \\pm 0{,}5\\text{ m}$. Sai số tương đối không vượt quá:",
+      "options": [
+        "$0{,}1\\%$",
+        "$1\\%$",
+        "$0{,}01\\%$",
+        "$0{,}5\\%$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\delta_L \\le \\dfrac{0{,}5}{500} = 0{,}001 = 0{,}1\\%$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.8",
+      "badge": "Thông hiểu - Tính trung vị từ bảng tần số",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Bảng tần số điểm kiểm tra của 20 học sinh:\n- Điểm 6: 4 học sinh\n- Điểm 7: 8 học sinh\n- Điểm 8: 6 học sinh\n- Điểm 9: 2 học sinh\nTrung vị điểm kiểm tra là:",
+      "options": [
+        "$7$",
+        "$7{,}5$",
+        "$8$",
+        "$6{,}5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 20$, $M_e = \\dfrac{x_{10} + x_{11}}{2}$. Tích lũy: nhóm 6 (1-4), nhóm 7 (5-12). Cả $x_{10}$ và $x_{11}$ đều bằng 7 $\\implies M_e = 7$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.9",
+      "badge": "Thông hiểu - Xác định hai mốt trong mẫu",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Mẫu số liệu: $2, 3, 3, 5, 7, 7, 8, 9$ có mốt là:",
+      "options": [
+        "3 và 7",
+        "5",
+        "3",
+        "Không có mốt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai giá trị 3 và 7 đều xuất hiện 2 lần (lớn nhất) nên mẫu có 2 mốt là 3 và 7.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.10",
+      "badge": "Thông hiểu - Khoảng biến thiên mẫu",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Khoảng biến thiên của mẫu số liệu: $14, 25, 9, 38, 17, 22$ là:",
+      "options": [
+        "$29$",
+        "$24$",
+        "$28$",
+        "$31$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$x_{\\max} = 38, x_{\\min} = 9 \\implies R = 38 - 9 = 29$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.11",
+      "badge": "Vận dụng - Ranh giới dưới phát hiện outlier",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Mẫu số liệu có $Q_1 = 24$ và $Q_3 = 36$. Giá trị ranh giới dưới để xác định giá trị bất thường là:",
+      "options": [
+        "$6$",
+        "$12$",
+        "$8$",
+        "$0$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\Delta_Q = 36 - 24 = 12$. Ranh giới dưới $= Q_1 - 1{,}5\\Delta_Q = 24 - 1{,}5(12) = 24 - 18 = 6$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-2.12",
+      "badge": "Vận dụng - Độ biến thiên phương sai khi nhân số",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "question": "Nếu nhân tất cả các giá trị của một mẫu số liệu với 4 thì độ lệch chuẩn của mẫu mới sẽ:",
+      "options": [
+        "Tăng lên 4 lần.",
+        "Tăng lên 16 lần.",
+        "Không thay đổi.",
+        "Tăng lên 2 lần."
+      ],
+      "correctIndex": 0,
+      "explanation": "$s' = |k|s = 4s$ (tăng lên 4 lần).",
+      "isAiGenerated": true
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-ot5-tf2.1",
+      "badge": "Đúng / Sai 1 - Dung sai và khoảng chứa số đúng",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Một bao xi măng đóng gói ghi khối lượng tịnh $m = 50\\text{ kg} \\pm 0{,}4\\text{ kg}$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Khối lượng thực của bao xi măng nằm trong đoạn $[49{,}6; 50{,}4]\\text{ kg}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $m \\in [50 - 0{,}4; 50 + 0{,}4] = [49{,}6; 50{,}4]\\text{ kg}$."
+        },
+        {
+          "id": "b",
+          "text": "Độ chính xác của phép cân bao xi măng là $d = 0{,}4\\text{ kg}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Theo định nghĩa, $d = 0{,}4\\text{ kg}$."
+        },
+        {
+          "id": "c",
+          "text": "Sai số tương đối không vượt quá $0{,}8\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\delta_m \\le \\dfrac{0{,}4}{50} = 0{,}008 = 0{,}8\\%$."
+        },
+        {
+          "id": "d",
+          "text": "Một bao xi măng nặng $49{,}5\\text{ kg}$ vẫn nằm trong dung sai tiêu chuẩn cho phép.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì $49{,}5 < 49{,}6$ nên không đạt tiêu chuẩn."
+        }
+      ],
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-tf2.2",
+      "badge": "Đúng / Sai 2 - Phân tích lương công ty có outlier",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Khảo sát lương tháng (triệu đồng) của 10 nhân viên một công ty:\n- 8 nhân viên: 12 triệu đồng\n- 1 trưởng phòng: 24 triệu đồng\n- 1 giám đốc: 80 triệu đồng\nXét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Mức lương trung bình của công ty là 20 triệu đồng/tháng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{8(12) + 24 + 80}{10} = \\dfrac{96 + 104}{10} = 20$ triệu đồng."
+        },
+        {
+          "id": "b",
+          "text": "Trung vị mức lương là $M_e = 12$ triệu đồng/tháng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Xếp dãy 10 số: $x_5 = 12, x_6 = 12 \\implies M_e = 12$ triệu."
+        },
+        {
+          "id": "c",
+          "text": "Mức lương 80 triệu của giám đốc là một giá trị bất thường.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Giá trị 80 vượt xa mặt bằng chung và làm méo mó số trung bình."
+        },
+        {
+          "id": "d",
+          "text": "Số trung bình phản ánh sát mức lương phổ biến hơn trung vị.",
+          "correctAnswer": false,
+          "explanation": "Sai: Trung vị 12 triệu phản ánh chính xác đa số nhân viên hơn số trung bình 20 triệu."
+        }
+      ],
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-tf2.3",
+      "badge": "Đúng / Sai 3 - Tứ phân vị và khoảng tứ phân vị thời gian đọc sách",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Thời gian (phút) đọc sách mỗi ngày của 9 học sinh: $15, 20, 25, 25, 30, 35, 40, 45, 50$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung vị thời gian đọc sách là $M_e = 30$ phút.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $n = 9$, số chính giữa $x_5 = 30$ phút."
+        },
+        {
+          "id": "b",
+          "text": "Tứ phân vị thứ nhất là $Q_1 = 22{,}5$ phút.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa dưới $\\{15, 20, 25, 25\\} \\implies Q_1 = \\dfrac{20 + 25}{2} = 22{,}5$ phút."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 42{,}5$ phút.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa trên $\\{35, 40, 45, 50\\} \\implies Q_3 = \\dfrac{40 + 45}{2} = 42{,}5$ phút."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng tứ phân vị của mẫu là $\\Delta_Q = 20$ phút.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\Delta_Q = 42{,}5 - 22{,}5 = 20$ phút."
+        }
+      ],
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-tf2.4",
+      "badge": "Đúng / Sai 4 - So sánh độ rủi ro hai quỹ đầu tư",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Lợi nhuận trung bình hàng năm của Quỹ P và Quỹ Q đều là $18\\%$. Phương sai lợi nhuận của Quỹ P là $s_P^2 = 16$ và của Quỹ Q là $s_Q^2 = 49$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ lệch chuẩn lợi nhuận của Quỹ P là $s_P = 4\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s_P = \\sqrt{16} = 4\\%$."
+        },
+        {
+          "id": "b",
+          "text": "Độ lệch chuẩn lợi nhuận của Quỹ Q là $s_Q = 7\\%$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $s_Q = \\sqrt{49} = 7\\%$."
+        },
+        {
+          "id": "c",
+          "text": "Đầu tư vào Quỹ Q có mức độ rủi ro biến động cao hơn Quỹ P.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì $s_Q = 7\\% > s_P = 4\\%$ nên Quỹ Q biến động mạnh hơn."
+        },
+        {
+          "id": "d",
+          "text": "Nhà đầu tư chấp nhận rủi ro cao để tìm cơ hội lợi nhuận đột biến sẽ ưu tiên Quỹ P.",
+          "correctAnswer": false,
+          "explanation": "Sai: Quỹ P an toàn và ổn định hơn, Quỹ Q mới có biên độ dao động mạnh hơn."
+        }
+      ],
+      "isAiGenerated": true
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-ot5-sa2.1",
+      "badge": "Trả lời ngắn 1 - Sai số tương đối",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Đo khối lượng một vật được $m = 200\\text{ g} \\pm 1\\text{ g}$. Tính tỉ số phần trăm của sai số tương đối (ghi số kèm ký hiệu %, ví dụ 0.5%).",
+      "correctAnswer": "0.5%",
+      "acceptableAnswers": [
+        "0.5%",
+        "0,5%",
+        "0.5",
+        "0,5"
+      ],
+      "explanation": "$\\delta_m \\le \\dfrac{1}{200} = 0{,}005 = 0{,}5\\%$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-sa2.2",
+      "badge": "Trả lời ngắn 2 - Quy tròn số thập phân",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Quy tròn số gần đúng $a = 4{,}5726$ với độ chính xác $d = 0{,}004$.",
+      "correctAnswer": "4.57",
+      "acceptableAnswers": [
+        "4.57",
+        "4,57"
+      ],
+      "explanation": "$d = 0{,}004$ ở hàng phần nghìn, làm tròn đến hàng phần trăm. Chữ số sau 7 là 2 (< 5) nên giữ nguyên: $4{,}57$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-sa2.3",
+      "badge": "Trả lời ngắn 3 - Trung vị của mẫu chẵn",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Tìm trung vị $M_e$ của mẫu số liệu gồm 6 số: $7, 10, 13, 17, 21, 26$. (Ghi số thập phân)",
+      "correctAnswer": "15",
+      "acceptableAnswers": [
+        "15",
+        "15.0",
+        "15,0"
+      ],
+      "explanation": "$n = 6$, $M_e = \\dfrac{13 + 17}{2} = 15$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-sa2.4",
+      "badge": "Trả lời ngắn 4 - Khoảng biến thiên",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Cho mẫu số liệu điểm kiểm tra: $16, 22, 35, 12, 40, 19$. Tính khoảng biến thiên $R$.",
+      "correctAnswer": "28",
+      "acceptableAnswers": [
+        "28"
+      ],
+      "explanation": "$R = 40 - 12 = 28$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-sa2.5",
+      "badge": "Trả lời ngắn 5 - Phương sai mẫu 5 số",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Tính phương sai $s^2$ của mẫu số liệu sau: $5, 7, 9, 11, 13$.",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8.0",
+        "8,0"
+      ],
+      "explanation": "$\\overline{x} = 9$. $s^2 = \\dfrac{(-4)^2 + (-2)^2 + 0^2 + 2^2 + 4^2}{5} = \\dfrac{40}{5} = 8$.",
+      "isAiGenerated": true
+    },
+    {
+      "id": "ai-ot5-sa2.6",
+      "badge": "Trả lời ngắn 6 - Độ lệch chuẩn",
+      "source": "Đề ôn tập Chương V - Đề 2",
+      "prompt": "Cho mẫu số liệu có phương sai $s^2 = 49$. Tính độ lệch chuẩn $s$.",
+      "correctAnswer": "7",
+      "acceptableAnswers": [
+        "7",
+        "7.0",
+        "7,0"
+      ],
+      "explanation": "$s = \\sqrt{49} = 7$.",
+      "isAiGenerated": true
+    }
+  ]
 }
 };
 
 GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-sai-so"] = GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-va-sai-so"];
 GRADE_10_AI_PRACTICE_DATA["t10-b13-cac-so-dac-trung-do-xu-the-trung-tam"] = GRADE_10_AI_PRACTICE_DATA["t10-b13-so-dac-trung-do-xu-the-trung-tam"];
+
+GRADE_10_AI_PRACTICE_DATA["t10-b14-cac-so-dac-trung-do-do-phan-tan"] = GRADE_10_AI_PRACTICE_DATA["t10-b14-so-dac-trung-do-do-phan-tan"];
+GRADE_10_AI_PRACTICE_DATA["t10-c5-on-tap"] = GRADE_10_AI_PRACTICE_DATA["t10-on-tap-chuong-5"];

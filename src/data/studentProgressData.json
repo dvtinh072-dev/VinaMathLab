@@ -103,5 +103,37 @@
       }
     },
     "updatedAt": "2026-09-02T16:32:00.000Z"
+  },
+  "u-admin-1": {
+    "userId": "u-admin-1",
+    "username": "admin",
+    "fullName": "Quản Trị Viên VinaMath",
+    "schoolName": "THCS VinaMath",
+    "schoolClass": "Lớp 6A",
+    "totalVideoMinutes": 0,
+    "totalVideoSeconds": 7,
+    "totalCompletedLessons": 0,
+    "totalCorrectQuestions": 0,
+    "totalWrongQuestions": 0,
+    "totalQuestionsAttempted": 0,
+    "accuracyRate": 0,
+    "lessons": {
+      "t10-b12-so-gan-dung-va-sai-so": {
+        "lessonId": "t10-b12-so-gan-dung-va-sai-so",
+        "gradeKey": "lop-6",
+        "lessonTitle": "",
+        "videoWatchedSeconds": 7,
+        "isCompleted": false,
+        "score": 0,
+        "totalQuestions": 10,
+        "correctQuestionsCount": 0,
+        "wrongQuestionsCount": 0,
+        "attemptedQuestionsCount": 0,
+        "lastStudiedAt": "2026-10-01T00:31:40.699Z",
+        "lastVideoPosition": 7
+      }
+    },
+    "wrongQuestions": {},
+    "updatedAt": "2026-10-01T00:31:40.699Z"
   }
 }

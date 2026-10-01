@@ -710,6 +710,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t10-b12-so-gan-dung-va-sai-so", lessonNumber: 12, title: "Bài 12: Số gần đúng và sai số", strand: "thongke", description: "Sai số tuyệt đối, sai số tương đối và độ chính xác.", keyFormulas: ["\\Delta_a = |\\bar{a} - a| \\le d"] },
           { id: "t10-b13-so-dac-trung-do-xu-the-trung-tam", lessonNumber: 13, title: "Bài 13: Các số đặc trưng đo xu thế trung tâm", strand: "thongke", description: "Số trung bình cộng, trung vị Me, tứ phân vị Q1, Q2, Q3 và mốt Mo.", keyFormulas: ["\\bar{x} = \\frac{\\sum x_i}{n}, \\ Q_2 = M_e"] },
           { id: "t10-b14-so-dac-trung-do-do-phan-tan", lessonNumber: 14, title: "Bài 14: Các số đặc trưng đo độ phân tán", strand: "thongke", description: "Khoảng biến thiên R, khoảng tứ phân vị Delta Q, phương sai s^2 và độ lệch chuẩn s.", keyFormulas: ["R = x_{\\max} - x_{\\min}, \\ \\Delta_Q = Q_3 - Q_1, \\ s = \\sqrt{s^2}"] },
+          { id: "t10-on-tap-chuong-5", lessonNumber: 0, title: "Ôn tập cuối chương V", strand: "thongke", description: "Hệ thống hóa toàn bộ kiến thức Thống kê & Số đặc trưng với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT.", keyFormulas: ["\\Delta_a \\le d", "\\bar{x} = \\frac{\\sum x_i}{n}, \\ Q_2 = M_e", "R = x_{\\max} - x_{\\min}, \\ \\Delta_Q = Q_3 - Q_1", "s^2 = \\frac{1}{n}\\sum (x_i - \\bar{x})^2, \\ s = \\sqrt{s^2}"] },
         ],
       },
 

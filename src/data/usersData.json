@@ -6,7 +6,10 @@
     "password": "admin123",
     "fullName": "Quản Trị Viên VinaMath",
     "email": "admin@vinamath.edu.vn",
-    "createdAt": "2026-08-30T00:00:00.000Z"
+    "createdAt": "2026-08-30T00:00:00.000Z",
+    "exp": 0,
+    "coins": 0,
+    "streak": 1
   },
   {
     "id": "u-student-1",

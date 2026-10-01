@@ -31,6 +31,7 @@ export interface TrueFalseQuestion {
   prompt: string;
   subItems: TrueFalseSubItem[];
   svgDiagram?: string;
+  isAiGenerated?: boolean;
 }
 
 export interface ShortAnswerQuestion {
@@ -42,6 +43,7 @@ export interface ShortAnswerQuestion {
   acceptableAnswers?: string[];
   explanation: string;
   svgDiagram?: string;
+  isAiGenerated?: boolean;
 }
 
 export interface TheorySection {

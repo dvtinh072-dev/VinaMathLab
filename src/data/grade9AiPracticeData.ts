@@ -8226,5 +8226,783 @@ export const GRADE_9_AI_PRACTICE_DATA: Record<string, QuizQuestion[] | Grade9AiP
       "explanation": "Đường kính bằng độ dài cạnh huyền: $AC = \\sqrt{18^2 + 24^2} = \\sqrt{324 + 576} = \\sqrt{900} = 30\\text{ cm}$."
     }
   ]
+},
+  "t9-b14-cung-va-day-duong-tron": {
+  "quizQuestions": [
+    {
+      "id": "ai-q-9.14.1",
+      "badge": "Luyện thêm TN 1 (NB) - Dây lớn nhất trong đường tròn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Dây cung lớn nhất của đường tròn $(O; 8\\text{ cm})$ có độ dài bằng:",
+      "options": [
+        "$16\\text{ cm}$",
+        "$8\\text{ cm}$",
+        "$4\\text{ cm}$",
+        "$32\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dây lớn nhất là đường kính $d = 2R = 2 \\times 8 = 16\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.2",
+      "badge": "Luyện thêm TN 2 (NB) - Dây không thể lớn hơn đường kính",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho đường tròn $(O; 7\\text{ cm})$. Độ dài nào sau đây KHÔNG THỂ là độ dài của một dây cung?",
+      "options": [
+        "$15\\text{ cm}$",
+        "$14\\text{ cm}$",
+        "$10\\text{ cm}$",
+        "$7\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường kính bằng $14\\text{ cm}$, dây cung tối đa bằng $14\\text{ cm}$, do đó không thể bằng $15\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.3",
+      "badge": "Luyện thêm TN 3 (NB) - Đường kính vuông góc với dây",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Đường kính vuông góc với một dây cung thì:",
+      "options": [
+        "Đi qua trung điểm của dây cung ấy",
+        "Có độ dài bằng dây cung ấy",
+        "Chia đường tròn thành 4 phần bằng nhau",
+        "Song song với tiếp tuyến"
+      ],
+      "correctIndex": 0,
+      "explanation": "Định lý: Đường kính vuông góc với một dây thì đi qua trung điểm của dây ấy."
+    },
+    {
+      "id": "ai-q-9.14.4",
+      "badge": "Luyện thêm TN 4 (NB) - Trung điểm dây không qua tâm",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho dây $MN$ không qua tâm của đường tròn $(O)$. Gọi $I$ là trung điểm của $MN$. Đoạn thẳng $OI$:",
+      "options": [
+        "Vuông góc với dây $MN$",
+        "Song song với dây $MN$",
+        "Bằng bán kính $R$",
+        "Bằng nửa dây $MN$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường kính qua trung điểm của dây không qua tâm thì vuông góc với dây ấy, nên $OI \\perp MN$."
+    },
+    {
+      "id": "ai-q-9.14.5",
+      "badge": "Luyện thêm TN 5 (NB) - Hai dây cách đều tâm",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Trong một đường tròn, nếu hai dây cách đều tâm thì:",
+      "options": [
+        "Hai dây đó bằng nhau",
+        "Hai dây đó vuông góc với nhau",
+        "Hai dây đó song song với nhau",
+        "Hai dây đó cắt nhau tại tâm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai dây cách đều tâm thì bằng nhau."
+    },
+    {
+      "id": "ai-q-9.14.6",
+      "badge": "Luyện thêm TN 6 (NB) - Hai dây bằng nhau thì cách đều tâm",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Trong đường tròn $(O)$, nếu dây $AB = CD$ thì:",
+      "options": [
+        "Khoảng cách từ $O$ đến $AB$ bằng khoảng cách từ $O$ đến $CD$",
+        "Dây $AB$ song song với dây $CD$",
+        "Dây $AB$ vuông góc với dây $CD$",
+        "Dây $AB$ và $CD$ phải cắt nhau"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai dây bằng nhau thì cách đều tâm."
+    },
+    {
+      "id": "ai-q-9.14.7",
+      "badge": "Luyện thêm TN 7 (TH) - Dây lớn hơn gần tâm hơn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho hai dây $EF$ và $GH$ có $EF < GH$. So sánh khoảng cách $d(O, EF)$ và $d(O, GH)$:",
+      "options": [
+        "$d(O, EF) > d(O, GH)$",
+        "$d(O, EF) < d(O, GH)$",
+        "$d(O, EF) = d(O, GH)$",
+        "Không thể so sánh"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dây nào nhỏ hơn thì xa tâm hơn: $d(O, EF) > d(O, GH)$."
+    },
+    {
+      "id": "ai-q-9.14.8",
+      "badge": "Luyện thêm TN 8 (TH) - Dây cách tâm nhỏ hơn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho hai dây $AB$ và $CD$ có khoảng cách đến tâm lần lượt là $4\\text{ cm}$ và $6\\text{ cm}$. Khẳng định nào đúng?",
+      "options": [
+        "$AB > CD$",
+        "$AB < CD$",
+        "$AB = CD$",
+        "$AB = 2CD$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dây có khoảng cách đến tâm nhỏ hơn ($4 < 6$) thì có độ dài lớn hơn: $AB > CD$."
+    },
+    {
+      "id": "ai-q-9.14.9",
+      "badge": "Luyện thêm TN 9 (TH) - Tính khoảng cách từ tâm đến dây",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho đường tròn $(O; 15\\text{ cm})$ và dây $AB = 24\\text{ cm}$. Khoảng cách từ tâm $O$ đến dây $AB$ bằng:",
+      "options": [
+        "$9\\text{ cm}$",
+        "$12\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$8\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$OH = \\sqrt{15^2 - 12^2} = \\sqrt{225 - 144} = \\sqrt{81} = 9\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.10",
+      "badge": "Luyện thêm TN 10 (TH) - Tính độ dài dây cung",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho đường tròn $(O; 20\\text{ cm})$. Dây $CD$ cách tâm $12\\text{ cm}$ có độ dài bằng:",
+      "options": [
+        "$32\\text{ cm}$",
+        "$16\\text{ cm}$",
+        "$24\\text{ cm}$",
+        "$40\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa dây là $\\sqrt{20^2 - 12^2} = 16\\text{ cm}$. Dây $CD = 2 \\times 16 = 32\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.11",
+      "badge": "Luyện thêm TN 11 (TH) - Tìm bán kính khi biết dây và khoảng cách",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Dây cung $AB = 16\\text{ cm}$ cách tâm một khoảng bằng $6\\text{ cm}$. Bán kính của đường tròn là:",
+      "options": [
+        "$10\\text{ cm}$",
+        "$8\\text{ cm}$",
+        "$12\\text{ cm}$",
+        "$\\sqrt{100}\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$R = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.12",
+      "badge": "Luyện thêm TN 12 (TH) - Dây đi qua tâm",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Khoảng cách từ tâm $O$ đến dây cung $AB$ bằng bao nhiêu khi $AB$ là một đường kính?",
+      "options": [
+        "$0$",
+        "$R$",
+        "$2R$",
+        "$\\frac{R}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường kính đi qua tâm $O$ nên khoảng cách từ tâm đến đường kính bằng 0."
+    },
+    {
+      "id": "ai-q-9.14.13",
+      "badge": "Luyện thêm TN 13 (VD) - Dây tạo tam giác vuông cân",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho đường tròn $(O; 6\\text{ cm})$. Dây cung $AB$ có độ dài bằng $6\\sqrt{2}\\text{ cm}$. Khoảng cách từ tâm $O$ đến $AB$ bằng:",
+      "options": [
+        "$3\\sqrt{2}\\text{ cm}$",
+        "$3\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$2\\sqrt{3}\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa dây là $3\\sqrt{2}\\text{ cm}$. $d = \\sqrt{6^2 - (3\\sqrt{2})^2} = \\sqrt{36 - 18} = \\sqrt{18} = 3\\sqrt{2}\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.14",
+      "badge": "Luyện thêm TN 14 (VD) - Góc ở tâm tam giác đều",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho dây $AB = R$ trong đường tròn $(O; R)$. Số đo của góc $\\widehat{AOB}$ là:",
+      "options": [
+        "$60^\\circ$",
+        "$90^\\circ$",
+        "$120^\\circ$",
+        "$45^\\circ$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tam giác $OAB$ đều vì 3 cạnh đều bằng $R$, nên $\\widehat{AOB} = 60^\\circ$."
+    },
+    {
+      "id": "ai-q-9.14.15",
+      "badge": "Luyện thêm TN 15 (VD) - Dây cách tâm R/2",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Dây cung $CD$ của đường tròn $(O; R)$ cách tâm một khoảng bằng $\\frac{R}{2}$. Độ dài dây $CD$ bằng:",
+      "options": [
+        "$R\\sqrt{3}$",
+        "$\\frac{R\\sqrt{3}}{2}$",
+        "$R\\sqrt{2}$",
+        "$\\frac{3R}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nửa dây là $\\sqrt{R^2 - (R/2)^2} = \\frac{R\\sqrt{3}}{2} \\implies CD = R\\sqrt{3}$."
+    },
+    {
+      "id": "ai-q-9.14.16",
+      "badge": "Luyện thêm TN 16 (VD) - Khoảng cách hai dây song song",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Cho đường tròn $(O; 13\\text{ cm})$ có hai dây song song $AB = 24\\text{ cm}$ và $CD = 10\\text{ cm}$ nằm cùng phía so với $O$. Khoảng cách giữa hai dây là:",
+      "options": [
+        "$7\\text{ cm}$",
+        "$17\\text{ cm}$",
+        "$5\\text{ cm}$",
+        "$12\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$d_1 = \\sqrt{13^2 - 12^2} = 5\\text{ cm}$, $d_2 = \\sqrt{13^2 - 5^2} = 12\\text{ cm}$. Khoảng cách $= 12 - 5 = 7\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.17",
+      "badge": "Luyện thêm TN 17 (VD) - Hai dây vuông góc nhau",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Hai dây $AB$ và $CD$ vuông góc tại $I$. Biết $IA = 2, IB = 6, IC = 3, ID = 4$. Bán kính $R$ của đường tròn là:",
+      "options": [
+        "$\\frac{\\sqrt{65}}{2}$",
+        "$\\sqrt{65}$",
+        "$5$",
+        "$6$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$4R^2 = 2^2 + 6^2 + 3^2 + 4^2 = 4 + 36 + 9 + 16 = 65 \\implies R = \\frac{\\sqrt{65}}{2}$."
+    },
+    {
+      "id": "ai-q-9.14.18",
+      "badge": "Luyện thêm TN 18 (VD) - Dây nhỏ nhất qua điểm M",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Trong đường tròn $(O; 15\\text{ cm})$, cho điểm $M$ có $OM = 9\\text{ cm}$. Dây cung qua $M$ có độ dài nhỏ nhất bằng:",
+      "options": [
+        "$24\\text{ cm}$",
+        "$12\\text{ cm}$",
+        "$30\\text{ cm}$",
+        "$18\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dây nhỏ nhất vuông góc với $OM$ tại $M$: độ dài $= 2\\sqrt{15^2 - 9^2} = 2 \\times 12 = 24\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.19",
+      "badge": "Luyện thêm TN 19 (VDC) - Đo bán kính mặt cắt thân cây gỗ",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Một khúc gỗ tròn có mặt cắt ngang hình tròn. Một thước dây đo được dây $AB = 60\\text{ cm}$ và khoảng cách từ trung điểm dây đến cung gỗ là $h = 10\\text{ cm}$. Bán kính của khúc gỗ là:",
+      "options": [
+        "$50\\text{ cm}$",
+        "$40\\text{ cm}$",
+        "$60\\text{ cm}$",
+        "$45\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$a = 30, h = 10 \\implies R = \\frac{30^2 + 10^2}{20} = \\frac{1000}{20} = 50\\text{ cm}$."
+    },
+    {
+      "id": "ai-q-9.14.20",
+      "badge": "Luyện thêm TN 20 (VDC) - Độ võng của dây cáp cầu treo",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "question": "Một dây cáp cầu treo có hình cung tròn với khoảng cách hai trụ cầu là $80\\text{ m}$ và độ võng ở giữa là $8\\text{ m}$. Bán kính cong của dây cáp là:",
+      "options": [
+        "$104\\text{ m}$",
+        "$100\\text{ m}$",
+        "$108\\text{ m}$",
+        "$96\\text{ m}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$a = 40, h = 8 \\implies R = \\frac{40^2 + 8^2}{2 \\times 8} = \\frac{1600 + 64}{16} = \\frac{1664}{16} = 104\\text{ m}$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-9.14.1",
+      "badge": "Luyện thêm Đ/S 1 - Đường kính và dây cung",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Xét tính Đúng hoặc Sai của mỗi khẳng định:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Đường kính của đường tròn là dây cung đi qua tâm.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài đường kính gấp đôi bán kính.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = 2R$."
+        },
+        {
+          "id": "c",
+          "text": "Có thể vẽ được một dây cung dài hơn đường kính trong cùng một đường tròn.",
+          "correctAnswer": false,
+          "explanation": "Sai: Đường kính là dây cung lớn nhất."
+        },
+        {
+          "id": "d",
+          "text": "Hai dây cung có độ dài bằng đường kính thì cắt nhau tại tâm của đường tròn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Hai dây bằng đường kính đều đi qua tâm."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.2",
+      "badge": "Luyện thêm Đ/S 2 - Tính chất đường kính vuông góc với dây",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O)$ có đường kính $AB$ vuông góc với dây $CD$ tại $M$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "$M$ là trung điểm của đoạn thẳng $CD$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định lý 1."
+        },
+        {
+          "id": "b",
+          "text": "Tam giác $OCD$ là tam giác cân tại $O$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $OC = OD = R$."
+        },
+        {
+          "id": "c",
+          "text": "Đoạn thẳng $OM$ là đường trung tuyến của tam giác $OCD$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $M$ là trung điểm của $CD$."
+        },
+        {
+          "id": "d",
+          "text": "Góc $\\widehat{COD}$ luôn bằng $90^\\circ$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Góc này phụ thuộc vào độ dài dây $CD$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.3",
+      "badge": "Luyện thêm Đ/S 3 - So sánh hai dây qua khoảng cách",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Trong đường tròn $(O)$, cho hai dây $AB$ và $CD$ có khoảng cách đến tâm là $h_1, h_2$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $h_1 = h_2$ thì $AB = CD$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Hai dây cách đều tâm thì bằng nhau."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $AB < CD$ thì $h_1 < h_2$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Dây nhỏ hơn thì xa tâm hơn ($h_1 > h_2$)."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $h_1 = 0$ thì $AB = 2R$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khoảng cách bằng 0 nghĩa là dây đi qua tâm (đường kính)."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng cách từ tâm đến dây luôn nhỏ hơn hoặc bằng bán kính $R$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $h = \\sqrt{R^2 - (AB/2)^2} \\le R$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.4",
+      "badge": "Luyện thêm Đ/S 4 - Tính toán với dây cung 16 cm trong đường tròn R = 10",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O; 10\\text{ cm})$ và dây $AB = 16\\text{ cm}$. Kẻ $OH \\perp AB$ tại $H$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài đoạn thẳng $AH$ là $8\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $AH = 16 / 2 = 8\\text{ cm}$."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng cách $OH$ bằng $6\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\sqrt{10^2 - 8^2} = 6\\text{ cm}$."
+        },
+        {
+          "id": "c",
+          "text": "Góc $\\widehat{OAH}$ có $\\cos \\widehat{OAH} = 0{,}8$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\cos \\widehat{OAH} = AH / OA = 8 / 10 = 0{,}8$."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích tam giác $OAB$ là $96\\text{ cm}^2$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $S = \\frac{1}{2} \\times 16 \\times 6 = 48\\text{ cm}^2$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.5",
+      "badge": "Luyện thêm Đ/S 5 - Hai dây song song",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho hai dây $AB \\parallel CD$ trong đường tròn $(O)$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung điểm của $AB$, trung điểm của $CD$ và tâm $O$ luôn thẳng hàng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Cùng nằm trên đường thẳng vuông góc chung qua $O$."
+        },
+        {
+          "id": "b",
+          "text": "Hai cung bị chắn giữa hai dây song song luôn bằng nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Tứ giác $ABDC$ luôn là hình bình hành.",
+          "correctAnswer": false,
+          "explanation": "Sai: Tứ giác là hình thang cân."
+        },
+        {
+          "id": "d",
+          "text": "Đoạn thẳng nối hai trung điểm của $AB$ và $CD$ vuông góc với cả hai dây.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.6",
+      "badge": "Luyện thêm Đ/S 6 - Dây căng cung và số đo cung",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Xét tính Đúng hoặc Sai về quan hệ giữa cung và dây:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trong một đường tròn, hai dây bằng nhau thì căng hai cung nhỏ bằng nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Dây lớn hơn thì căng cung lớn hơn (xét cung nhỏ).",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Nếu dây $AB$ có độ dài bằng $R\\sqrt{2}$ thì số đo cung nhỏ $\\overparen{AB}$ bằng $90^\\circ$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì góc ở tâm bằng $90^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Dây có độ dài bằng $R$ căng cung có số đo bằng $90^\\circ$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Căng cung $60^\\circ$ do tam giác đều."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.7",
+      "badge": "Luyện thêm Đ/S 7 - Điểm M trong đường tròn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho điểm $M$ bên trong đường tròn $(O; R)$ với $M \\ne O$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Có vô số dây cung đi qua điểm $M$.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Dây cung đi qua $M$ dài nhất là đường kính đi qua $M$.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Dây cung đi qua $M$ ngắn nhất là dây đi qua tâm $O$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Dây đi qua tâm $O$ là dây dài nhất."
+        },
+        {
+          "id": "d",
+          "text": "Dây vuông góc với $OM$ tại $M$ là dây ngắn nhất đi qua $M$.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.8",
+      "badge": "Luyện thêm Đ/S 8 - Hai dây vuông góc nhau",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho hai dây $AB \\perp CD$ tại $I$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Nếu $I$ trùng với tâm $O$ thì $AB$ và $CD$ là hai đường kính vuông góc.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Tứ giác tạo bởi 4 đầu mút của hai đường kính vuông góc là hình vuông.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Khoảng cách từ tâm đến hai dây vuông góc bằng nhau thì hai dây đó bằng nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì hai dây cách đều tâm."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài dây $AB$ luôn bằng độ dài dây $CD$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Hai dây vuông góc không nhất thiết phải bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.9",
+      "badge": "Luyện thêm Đ/S 9 - Công thức vòm tròn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho một vòm tròn có độ dài nhịp $2a$ và chiều cao đỉnh vòm $h$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bán kính cong của vòm được tính theo công thức $R = \\dfrac{a^2 + h^2}{2h}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Khi $a = 12\\text{ m}, h = 4\\text{ m}$ thì $R = 20\\text{ m}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $R = \\frac{144 + 16}{8} = \\frac{160}{8} = 20\\text{ m}$."
+        },
+        {
+          "id": "c",
+          "text": "Bán kính cong luôn nhỏ hơn chiều cao $h$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $R \\ge h$ luôn đúng."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $h = a$ thì vòm cầu là một nửa hình tròn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khi $h = a$ thì $R = \\frac{a^2 + a^2}{2a} = a = h$ (bán nguyệt)."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-9.14.10",
+      "badge": "Luyện thêm Đ/S 10 - Thực tế ống cống tròn ngập nước",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Một cống thoát nước tròn bán kính $R = 60\\text{ cm}$. Mặt nước cách đáy cống một khoảng $h = 20\\text{ cm}$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Mặt nước nằm phía dưới tâm của cống thoát nước.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $h = 20 < R = 60$."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng cách từ tâm cống đến mặt nước là $40\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $d = R - h = 60 - 20 = 40\\text{ cm}$."
+        },
+        {
+          "id": "c",
+          "text": "Bề rộng mặt nước là $20\\sqrt{5}\\text{ cm}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Nửa bề rộng $= \\sqrt{60^2 - 40^2} = \\sqrt{2000} = 20\\sqrt{5}$, bề rộng $= 40\\sqrt{5}\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu nước ngập sâu $60\\text{ cm}$ thì bề rộng mặt nước đúng bằng đường kính $120\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khi ngập $60\\text{ cm}$ thì mặt nước đi qua tâm cống."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-9.14.1",
+      "badge": "Luyện thêm TLN 1 (TH) - Tính dây cung",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O; 15\\text{ cm})$ và khoảng cách từ tâm $O$ đến dây $AB$ bằng $9\\text{ cm}$. Tính độ dài dây $AB$ (đơn vị cm).",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24 cm",
+        "24cm"
+      ],
+      "explanation": "$AH = \\sqrt{15^2 - 9^2} = 12\\text{ cm} \\implies AB = 24\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.2",
+      "badge": "Luyện thêm TLN 2 (TH) - Tính khoảng cách từ tâm đến dây",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O; 20\\text{ cm})$ và dây cung $CD = 32\\text{ cm}$. Tính khoảng cách từ tâm $O$ đến dây $CD$ (đơn vị cm).",
+      "correctAnswer": "12",
+      "acceptableAnswers": [
+        "12",
+        "12 cm",
+        "12cm"
+      ],
+      "explanation": "$OH = \\sqrt{20^2 - 16^2} = \\sqrt{400 - 256} = 12\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.3",
+      "badge": "Luyện thêm TLN 3 (TH) - Tìm bán kính",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Một dây cung dài $30\\text{ cm}$ cách tâm một khoảng $8\\text{ cm}$. Tính bán kính $R$ của đường tròn (đơn vị cm).",
+      "correctAnswer": "17",
+      "acceptableAnswers": [
+        "17",
+        "17 cm",
+        "17cm"
+      ],
+      "explanation": "$R = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = 17\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.4",
+      "badge": "Luyện thêm TLN 4 (TH) - Khoảng cách hai dây cùng phía",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Trong đường tròn $(O; 15\\text{ cm})$, hai dây song song $AB = 24\\text{ cm}$ và $CD = 18\\text{ cm}$ cùng phía so với tâm. Khoảng cách giữa hai dây là bao nhiêu cm?",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3 cm",
+        "3cm"
+      ],
+      "explanation": "$d_1 = \\sqrt{15^2 - 12^2} = 9\\text{ cm}$, $d_2 = \\sqrt{15^2 - 9^2} = 12\\text{ cm}$. Khoảng cách $= 12 - 9 = 3\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.5",
+      "badge": "Luyện thêm TLN 5 (TH) - Khoảng cách hai dây khác phía",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Trong đường tròn $(O; 15\\text{ cm})$, hai dây song song $AB = 24\\text{ cm}$ và $CD = 18\\text{ cm}$ khác phía so với tâm. Khoảng cách giữa hai dây là bao nhiêu cm?",
+      "correctAnswer": "21",
+      "acceptableAnswers": [
+        "21",
+        "21 cm",
+        "21cm"
+      ],
+      "explanation": "$d = 9 + 12 = 21\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.6",
+      "badge": "Luyện thêm TLN 6 (VD) - Dây ngắn nhất qua M",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O; 13\\text{ cm})$ và điểm $M$ có $OM = 5\\text{ cm}$. Tính độ dài dây cung ngắn nhất đi qua $M$ (đơn vị cm).",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24 cm",
+        "24cm"
+      ],
+      "explanation": "$2\\sqrt{13^2 - 5^2} = 2 \\times 12 = 24\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.7",
+      "badge": "Luyện thêm TLN 7 (VD) - Dây dài nhất qua M",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Cho đường tròn $(O; 13\\text{ cm})$ và điểm $M$ cách tâm $5\\text{ cm}$. Dây cung dài nhất đi qua $M$ dài bao nhiêu cm?",
+      "correctAnswer": "26",
+      "acceptableAnswers": [
+        "26",
+        "26 cm",
+        "26cm"
+      ],
+      "explanation": "Dây dài nhất là đường kính $= 2R = 26\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.8",
+      "badge": "Luyện thêm TLN 8 (VDC) - Bán kính vòm cầu nhịp 80m",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Một vòm cầu hình cung tròn có nhịp cầu dài $80\\text{ m}$ và chiều cao đỉnh vòm $h = 20\\text{ m}$. Tính bán kính của đường tròn chứa cung vòm cầu đó (đơn vị mét).",
+      "correctAnswer": "50",
+      "acceptableAnswers": [
+        "50",
+        "50 m",
+        "50m"
+      ],
+      "explanation": "$a = 40\\text{ m}, h = 20\\text{ m} \\implies R = \\frac{40^2 + 20^2}{40} = \\frac{1600 + 400}{40} = 50\\text{ m}$."
+    },
+    {
+      "id": "ai-sa-9.14.9",
+      "badge": "Luyện thêm TLN 9 (VDC) - Bề rộng mặt nước trong cống tròn",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Một cống tròn bán kính $R = 25\\text{ cm}$. Mặt nước cách tâm cống một khoảng $15\\text{ cm}$. Bề rộng của mặt nước trong cống là bao nhiêu cm?",
+      "correctAnswer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40 cm",
+        "40cm"
+      ],
+      "explanation": "$2\\sqrt{25^2 - 15^2} = 2 \\times 20 = 40\\text{ cm}$."
+    },
+    {
+      "id": "ai-sa-9.14.10",
+      "badge": "Luyện thêm TLN 10 (VDC) - Chiều cao đỉnh vòm cửa sổ",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 9 KNTT Bài 14",
+      "prompt": "Một vòm cửa sổ cung tròn bán kính $R = 100\\text{ cm}$ có chiều rộng đáy $120\\text{ cm}$. Chiều cao đỉnh vòm so với đáy là bao nhiêu cm?",
+      "correctAnswer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20 cm",
+        "20cm"
+      ],
+      "explanation": "Khoảng cách từ tâm đến đáy là $\\sqrt{100^2 - 60^2} = 80\\text{ cm}$. Chiều cao vòm $h = R - d = 100 - 80 = 20\\text{ cm}$."
+    }
+  ]
 }
 };

@@ -15327,4 +15327,827 @@ export const GRADE_9_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
+  "t9-b13-mo-dau-ve-duong-tron": {
+  "id": "t9-b13-mo-dau-ve-duong-tron",
+  "lessonNumber": 13,
+  "title": "Bài 13: Mở đầu về đường tròn",
+  "bookChapter": "Chương V: Đường tròn (SGK Toán 9 Kết Nối Tri Thức - Tập 1)",
+  "scenarioTitle": "Tình huống thực tế: Định vị tâm chấn động đất từ ba trạm quan sát địa chấn, vùng phủ sóng phát thanh viễn thông và thiết kế bánh đà chuyển động tròn",
+  "scenarioFrames": [],
+  "interactiveType": "circle",
+  "youtubeVideoId": "1P2M_vA4j2M",
+  "youtubeVideoTitle": "Bài Giảng Video: Bài 13 - Mở đầu về đường tròn - Toán 9 KNTT",
+  "youtubeVideos": [
+    {
+      "id": "1P2M_vA4j2M",
+      "title": "Tiết 1: Định nghĩa đường tròn, vị trí tương đối của một điểm đối với đường tròn & Tính đối xứng"
+    },
+    {
+      "id": "aX7_yZ3bW9E",
+      "title": "Tiết 2: Sự xác định đường tròn qua 3 điểm & Đường tròn ngoại tiếp tam giác"
+    },
+    {
+      "id": "mK4_vN8pL2R",
+      "title": "Tiết 3: Đường tròn ngoại tiếp tam giác vuông, tam giác đều & Ứng dụng thực tiễn"
+    }
+  ],
+  "theorySections": [
+    {
+      "index": "1",
+      "title": "1. Khái niệm đường tròn và hình tròn",
+      "points": [
+        "• **Định nghĩa**: Đường tròn tâm $O$ bán kính $R$ ($R > 0$), kí hiệu là $(O; R)$ hoặc $(O)$, là hình gồm tất cả các điểm cách điểm $O$ một khoảng bằng $R$.",
+        "• **Vị trí tương đối của điểm $M$ đối với $(O; R)$**:",
+        "  - Điểm $M$ **nằm trên** (thuộc) đường tròn $(O; R) \\Leftrightarrow OM = R$.",
+        "  - Điểm $M$ **nằm trong** đường tròn $(O; R) \\Leftrightarrow OM < R$.",
+        "  - Điểm $M$ **nằm ngoài** đường tròn $(O; R) \\Leftrightarrow OM > R$.",
+        "• **Hình tròn**: Hình tròn tâm $O$ bán kính $R$ là hình gồm các điểm nằm trên đường tròn và các điểm nằm bên trong đường tròn đó (tập hợp các điểm $M$ sao cho $OM \\le R$)."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 1: Xác định vị trí điểm đối với đường tròn",
+          "problem": "Cho đường tròn $(O; 5\\text{ cm})$. So sánh vị trí của các điểm $A, B, C$ đối với đường tròn $(O)$, biết $OA = 3\\text{ cm}, OB = 5\\text{ cm}, OC = 6\\text{ cm}$.",
+          "solution": "• Vì $OA = 3\\text{ cm} < R = 5\\text{ cm}$ nên điểm $A$ nằm trong đường tròn $(O)$.\n• Vì $OB = 5\\text{ cm} = R$ nên điểm $B$ nằm trên đường tròn $(O)$.\n• Vì $OC = 6\\text{ cm} > R = 5\\text{ cm}$ nên điểm $C$ nằm ngoài đường tròn $(O)$."
+        }
+      ]
+    },
+    {
+      "index": "2",
+      "title": "2. Tính đối xứng của đường tròn",
+      "points": [
+        "• **Tâm đối xứng**: Đường tròn là hình có tâm đối xứng. Tâm $O$ của đường tròn chính là tâm đối xứng duy nhất của đường tròn đó. (Nếu $M \\in (O)$ và $M'$ đối xứng với $M$ qua $O$ thì $M' \\in (O)$).",
+        "• **Trục đối xứng**: Đường tròn là hình có trục đối xứng. Bất kì đường thẳng nào đi qua tâm $O$ đều là một trục đối xứng của đường tròn.",
+        "• **Kết luận**: Đường tròn có duy nhất 1 tâm đối xứng và có vô số trục đối xứng."
+      ]
+    },
+    {
+      "index": "3",
+      "title": "3. Sự xác định đường tròn qua các điểm",
+      "points": [
+        "• **Qua 1 điểm**: Có vô số đường tròn đi qua một điểm cho trước.",
+        "• **Qua 2 điểm $A, B$**: Có vô số đường tròn đi qua hai điểm $A$ và $B$. Tâm của tất cả các đường tròn này luôn nằm trên **đường trung trực** của đoạn thẳng $AB$. Đường tròn nhỏ nhất đi qua $A, B$ có đường kính chính là $AB$.",
+        "• **Qua 3 điểm không thẳng hàng**: Qua ba điểm không thẳng hàng, có **một và chỉ một** đường tròn đi qua cả ba điểm đó.",
+        "• **Đường tròn ngoại tiếp tam giác**: Đường tròn đi qua ba đỉnh của tam giác $ABC$ gọi là đường tròn ngoại tiếp tam giác $ABC$. Khi đó tam giác $ABC$ gọi là nội tiếp đường tròn.",
+        "• **Cách xác định tâm**: Tâm của đường tròn ngoại tiếp tam giác là giao điểm của ba đường trung trực của tam giác đó.",
+        "• **Chú ý quan trọng**: Không vẽ được đường tròn nào đi qua ba điểm thẳng hàng."
+      ]
+    },
+    {
+      "index": "4",
+      "title": "4. Đường tròn ngoại tiếp tam giác vuông và tam giác đều",
+      "points": [
+        "• **Đường tròn ngoại tiếp tam giác vuông**:",
+        "  - Tâm của đường tròn ngoại tiếp tam giác vuông là **trung điểm của cạnh huyền**.",
+        "  - Bán kính đường tròn ngoại tiếp tam giác vuông bằng nửa cạnh huyền: $R = \\frac{\\text{cạnh huyền}}{2}$.",
+        "  - Định lý đảo: Nếu một tam giác nội tiếp đường tròn có một cạnh là đường kính của đường tròn thì tam giác đó là tam giác vuông.",
+        "• **Đường tròn ngoại tiếp tam giác đều cạnh $a$**:",
+        "  - Tâm ngoại tiếp trùng với trọng tâm, trực tâm và tâm nội tiếp của tam giác.",
+        "  - Bán kính: $R = \\frac{2}{3} h = \\frac{2}{3} \\left( \\frac{a\\sqrt{3}}{2} \\right) = \\frac{a\\sqrt{3}}{3}$."
+      ],
+      "examples": [
+        {
+          "title": "Ví dụ 2: Bán kính đường tròn ngoại tiếp tam giác vuông",
+          "problem": "Cho tam giác $ABC$ vuông tại $A$ có $AB = 6\\text{ cm}, AC = 8\\text{ cm}$. Tính bán kính đường tròn ngoại tiếp tam giác $ABC$.",
+          "solution": "• Áp dụng định lý Pythagore trong tam giác vuông $ABC$:\n  $BC^2 = AB^2 + AC^2 = 6^2 + 8^2 = 100 \\implies BC = 10\\text{ cm}$.\n• Tâm đường tròn ngoại tiếp tam giác $ABC$ là trung điểm $M$ của cạnh huyền $BC$.\n• Bán kính đường tròn ngoại tiếp là: $R = \\frac{BC}{2} = \\frac{10}{2} = 5\\text{ cm}$."
+        }
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "q-9.13.1",
+      "badge": "Nhận biết 1 - Khái niệm đường tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 82",
+      "question": "Đường tròn $(O; R)$ với $R > 0$ là tập hợp tất cả các điểm $M$ thỏa mãn điều kiện nào sau đây?",
+      "options": [
+        "$OM = R$",
+        "$OM < R$",
+        "$OM \\le R$",
+        "$OM > R$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, đường tròn tâm $O$ bán kính $R$ là hình gồm các điểm cách $O$ một khoảng bằng $R$, tức là $OM = R$."
+    },
+    {
+      "id": "q-9.13.2",
+      "badge": "Nhận biết 2 - Khái niệm hình tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 82",
+      "question": "Hình tròn tâm $O$ bán kính $R$ gồm tất cả các điểm $M$ trong mặt phẳng thỏa mãn:",
+      "options": [
+        "$OM \\le R$",
+        "$OM = R$",
+        "$OM < R$",
+        "$OM \\ge R$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hình tròn tâm $O$ bán kính $R$ gồm các điểm nằm trên đường tròn ($OM = R$) và các điểm nằm bên trong đường tròn ($OM < R$), tức là $OM \\le R$."
+    },
+    {
+      "id": "q-9.13.3",
+      "badge": "Nhận biết 3 - Vị trí điểm đối với đường tròn",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 78",
+      "question": "Cho đường tròn $(O; 4\\text{ cm})$ và điểm $M$ sao cho $OM = 3\\text{ cm}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "Điểm $M$ nằm trong đường tròn $(O)$",
+        "Điểm $M$ nằm trên đường tròn $(O)$",
+        "Điểm $M$ nằm ngoài đường tròn $(O)$",
+        "Điểm $M$ trùng với tâm $O$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $OM = 3\\text{ cm} < R = 4\\text{ cm}$ nên điểm $M$ nằm bên trong đường tròn $(O)$."
+    },
+    {
+      "id": "q-9.13.4",
+      "badge": "Nhận biết 4 - Vị trí điểm nằm ngoài đường tròn",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 78",
+      "question": "Cho đường tròn $(O; R)$. Điểm $N$ nằm ngoài đường tròn $(O; R)$ khi và chỉ khi:",
+      "options": [
+        "$ON > R$",
+        "$ON < R$",
+        "$ON = R$",
+        "$ON \\ge R$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo quy tắc xác định vị trí tương đối, điểm $N$ nằm ngoài đường tròn $(O; R) \\Leftrightarrow ON > R$."
+    },
+    {
+      "id": "q-9.13.5",
+      "badge": "Nhận biết 5 - Tâm đối xứng của đường tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 83",
+      "question": "Hình tròn hoặc đường tròn có bao nhiêu tâm đối xứng?",
+      "options": [
+        "Có duy nhất 1 tâm đối xứng (là tâm của đường tròn)",
+        "Có 2 tâm đối xứng",
+        "Có vô số tâm đối xứng",
+        "Không có tâm đối xứng nào"
+      ],
+      "correctIndex": 0,
+      "explanation": "Đường tròn là hình có duy nhất một tâm đối xứng, đó chính là tâm $O$ của đường tròn."
+    },
+    {
+      "id": "q-9.13.6",
+      "badge": "Nhận biết 6 - Trục đối xứng của đường tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 83",
+      "question": "Đường tròn có bao nhiêu trục đối xứng?",
+      "options": [
+        "Vô số trục đối xứng (mọi đường thẳng đi qua tâm)",
+        "Có duy nhất 1 trục đối xứng",
+        "Có 2 trục đối xứng vuông góc",
+        "Có 4 trục đối xứng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bất kì đường thẳng nào đi qua tâm $O$ của đường tròn đều là một trục đối xứng của đường tròn, do đó đường tròn có vô số trục đối xứng."
+    },
+    {
+      "id": "q-9.13.7",
+      "badge": "Thông hiểu 7 - Số đường tròn qua 2 điểm",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 84",
+      "question": "Có bao nhiêu đường tròn đi qua hai điểm phân biệt $A$ và $B$ cho trước?",
+      "options": [
+        "Vô số đường tròn (tâm nằm trên đường trung trực của $AB$)",
+        "Chỉ có 1 đường tròn duy nhất",
+        "Có 2 đường tròn",
+        "Không có đường tròn nào"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tâm của đường tròn đi qua $A$ và $B$ cách đều $A$ và $B$ nên nằm trên đường trung trực của $AB$. Vì đường trung trực có vô số điểm nên có vô số đường tròn đi qua $A$ và $B$."
+    },
+    {
+      "id": "q-9.13.8",
+      "badge": "Thông hiểu 8 - Đường tròn nhỏ nhất qua 2 điểm",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 79",
+      "question": "Trong các đường tròn đi qua hai điểm phân biệt $A$ và $B$, đường tròn có bán kính nhỏ nhất là đường tròn có:",
+      "options": [
+        "Đường kính là đoạn thẳng $AB$",
+        "Bán kính bằng đoạn thẳng $AB$",
+        "Tâm là điểm $A$",
+        "Đường kính bằng $2AB$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gọi tâm là $I$, ta có bán kính $R = IA = IB$. Vì $I$ thuộc trung trực của $AB$ nên $IA \\ge \\frac{AB}{2}$. Dấu bằng xảy ra khi $I$ là trung điểm của $AB$, tức đường tròn có đường kính là $AB$."
+    },
+    {
+      "id": "q-9.13.9",
+      "badge": "Nhận biết 9 - Sự xác định đường tròn qua 3 điểm",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 85",
+      "question": "Qua ba điểm phân biệt không thẳng hàng, ta vẽ được:",
+      "options": [
+        "Một và chỉ một đường tròn",
+        "Vô số đường tròn",
+        "Hai đường tròn",
+        "Không vẽ được đường tròn nào"
+      ],
+      "correctIndex": 0,
+      "explanation": "Qua ba điểm không thẳng hàng, các đường trung trực của ba cạnh cắt nhau tại duy nhất một điểm, do đó có một và chỉ một đường tròn đi qua cả ba điểm đó."
+    },
+    {
+      "id": "q-9.13.10",
+      "badge": "Nhận biết 10 - Ba điểm thẳng hàng và đường tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 85",
+      "question": "Qua ba điểm thẳng hàng, ta vẽ được bao nhiêu đường tròn đi qua cả ba điểm?",
+      "options": [
+        "0 đường tròn",
+        "1 đường tròn",
+        "2 đường tròn",
+        "Vô số đường tròn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nếu ba điểm thẳng hàng thì các đường trung trực của chúng song song với nhau nên không có giao điểm, do đó không có đường tròn nào đi qua cả ba điểm thẳng hàng."
+    },
+    {
+      "id": "q-9.13.11",
+      "badge": "Thông hiểu 11 - Tâm đường tròn ngoại tiếp tam giác",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 85",
+      "question": "Tâm của đường tròn ngoại tiếp tam giác là giao điểm của:",
+      "options": [
+        "Ba đường trung trực của ba cạnh tam giác",
+        "Ba đường phân giác trong của tam giác",
+        "Ba đường cao của tam giác",
+        "Ba đường trung tuyến của tam giác"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tâm đường tròn ngoại tiếp tam giác cách đều ba đỉnh nên là giao điểm của ba đường trung trực của ba cạnh tam giác."
+    },
+    {
+      "id": "q-9.13.12",
+      "badge": "Thông hiểu 12 - Tâm đường tròn ngoại tiếp tam giác vuông",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 86",
+      "question": "Tâm của đường tròn ngoại tiếp tam giác vuông nằm ở vị trí nào?",
+      "options": [
+        "Là trung điểm của cạnh huyền",
+        "Là đỉnh góc vuông của tam giác",
+        "Nằm bên trong tam giác",
+        "Nằm trên một cạnh góc vuông"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền, do đó trung điểm cạnh huyền cách đều ba đỉnh của tam giác vuông, chính là tâm đường tròn ngoại tiếp."
+    },
+    {
+      "id": "q-9.13.13",
+      "badge": "Thông hiểu 13 - Bán kính ngoại tiếp tam giác vuông",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 80",
+      "question": "Cho tam giác $ABC$ vuông tại $A$ có cạnh huyền $BC = 12\\text{ cm}$. Bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ bằng:",
+      "options": [
+        "$6\\text{ cm}$",
+        "$12\\text{ cm}$",
+        "$24\\text{ cm}$",
+        "$3\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bán kính đường tròn ngoại tiếp tam giác vuông bằng nửa cạnh huyền: $R = \\frac{BC}{2} = \\frac{12}{2} = 6\\text{ cm}$."
+    },
+    {
+      "id": "q-9.13.14",
+      "badge": "Thông hiểu 14 - Nhận biết tam giác vuông từ đường tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 86",
+      "question": "Cho tam giác $ABC$ nội tiếp đường tròn $(O)$ có cạnh $BC$ là một đường kính của đường tròn. Khi đó tam giác $ABC$ là:",
+      "options": [
+        "Tam giác vuông tại $A$",
+        "Tam giác cân tại $A$",
+        "Tam giác vuông tại $B$",
+        "Tam giác đều"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $O$ là trung điểm của đường kính $BC$ và $OA = OB = OC = R$, nên đường trung tuyến $AO = \\frac{1}{2}BC$, suy ra tam giác $ABC$ vuông tại $A$."
+    },
+    {
+      "id": "q-9.13.15",
+      "badge": "Vận dụng 15 - Bán kính đường tròn ngoại tiếp tam giác vuông",
+      "source": "Bộ đề ôn thi vào 10 Toán 9 Trang 45",
+      "question": "Cho tam giác vuông $ABC$ vuông tại $A$ có $AB = 5\\text{ cm}$ và $AC = 12\\text{ cm}$. Bán kính đường tròn ngoại tiếp tam giác $ABC$ là:",
+      "options": [
+        "$6{,}5\\text{ cm}$",
+        "$13\\text{ cm}$",
+        "$8{,}5\\text{ cm}$",
+        "$7\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Áp dụng định lý Pythagore: $BC = \\sqrt{AB^2 + AC^2} = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13\\text{ cm}$. Bán kính $R = \\frac{BC}{2} = \\frac{13}{2} = 6{,}5\\text{ cm}$."
+    },
+    {
+      "id": "q-9.13.16",
+      "badge": "Vận dụng 16 - Bán kính ngoại tiếp tam giác đều",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 80",
+      "question": "Cho tam giác đều $ABC$ có độ dài cạnh bằng $6\\text{ cm}$. Bán kính đường tròn ngoại tiếp tam giác $ABC$ bằng:",
+      "options": [
+        "$2\\sqrt{3}\\text{ cm}$",
+        "$3\\sqrt{3}\\text{ cm}$",
+        "$\\sqrt{3}\\text{ cm}$",
+        "$4\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chiều cao tam giác đều cạnh $a = 6$ là $h = \\frac{a\\sqrt{3}}{2} = 3\\sqrt{3}\\text{ cm}$. Bán kính đường tròn ngoại tiếp là $R = \\frac{2}{3}h = \\frac{2}{3}(3\\sqrt{3}) = 2\\sqrt{3}\\text{ cm}$."
+    },
+    {
+      "id": "q-9.13.17",
+      "badge": "Vận dụng 17 - Điểm cùng thuộc một đường tròn",
+      "source": "Bộ đề thi học kì I Toán 9 KNTT",
+      "question": "Cho hình chữ nhật $ABCD$ có $AB = 8\\text{ cm}, BC = 6\\text{ cm}$. Bốn điểm $A, B, C, D$ cùng thuộc một đường tròn có bán kính bằng:",
+      "options": [
+        "$5\\text{ cm}$",
+        "$10\\text{ cm}$",
+        "$7\\text{ cm}$",
+        "$4\\text{ cm}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hai đường chéo của hình chữ nhật cắt nhau tại trung điểm $O$ của mỗi đường và bằng nhau ($OA = OB = OC = OD$). Độ dài đường chéo $AC = \\sqrt{8^2 + 6^2} = 10\\text{ cm}$. Do đó bán kính $R = \\frac{AC}{2} = 5\\text{ cm}$."
+    },
+    {
+      "id": "q-9.13.18",
+      "badge": "Vận dụng 18 - Vị trí tương đối và khoảng cách",
+      "source": "Tài liệu bồi dưỡng học sinh Toán 9",
+      "question": "Trong mặt phẳng tọa độ $Oxy$, cho đường tròn tâm là gốc tọa độ $O(0; 0)$ bán kính $R = 5$. Điểm nào sau đây nằm trên đường tròn $(O; 5)$?",
+      "options": [
+        "$M(3; 4)$",
+        "$N(2; 4)$",
+        "$P(4; 4)$",
+        "$Q(1; 5)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Khoảng cách từ gốc tọa độ $O$ đến $M(3; 4)$ là $OM = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 = R$. Vậy $M$ nằm trên đường tròn."
+    },
+    {
+      "id": "q-9.13.19",
+      "badge": "Vận dụng cao 19 - Bài toán thực tế trạm phát sóng viễn thông",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 87",
+      "question": "Một trạm phát sóng viễn thông đặt tại điểm $O$ có bán kính phủ sóng là $15\\text{ km}$. Một người ở vị trí điểm $A$ cách trạm $12\\text{ km}$ và một người ở vị trí điểm $B$ cách trạm $16\\text{ km}$. Khẳng định nào sau đây đúng?",
+      "options": [
+        "Người ở vị trí $A$ nhận được sóng, người ở vị trí $B$ không nhận được sóng",
+        "Cả hai người đều nhận được sóng",
+        "Cả hai người đều không nhận được sóng",
+        "Người ở vị trí $B$ nhận được sóng, người ở vị trí $A$ không nhận được sóng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vì $OA = 12\\text{ km} < 15\\text{ km}$ nên $A$ nằm trong vùng phủ sóng (nhận được sóng). Vì $OB = 16\\text{ km} > 15\\text{ km}$ nên $B$ nằm ngoài vùng phủ sóng (không nhận được sóng)."
+    },
+    {
+      "id": "q-9.13.20",
+      "badge": "Vận dụng cao 20 - Bài toán thực tế định vị tâm chấn động đất",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 87",
+      "question": "Để xác định vị trí tâm chấn của một trận động đất trên mặt đất phẳng, các nhà địa chấn học cần tín hiệu đo khoảng cách từ ít nhất bao nhiêu trạm quan sát địa chấn không thẳng hàng?",
+      "options": [
+        "Ít nhất 3 trạm quan sát không thẳng hàng",
+        "Chỉ cần 1 trạm quan sát",
+        "Chỉ cần 2 trạm quan sát",
+        "Cần đúng 5 trạm quan sát"
+      ],
+      "correctIndex": 0,
+      "explanation": "Từ mỗi trạm, tâm chấn nằm trên một đường tròn. Hai đường tròn cắt nhau tại tối đa 2 điểm. Cần trạm thứ ba (không thẳng hàng với hai trạm trước) để xác định điểm giao nhau duy nhất của ba đường tròn."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "tf-9.13.1",
+      "badge": "Đúng / Sai 1 - Khái niệm đường tròn và hình tròn",
+      "source": "SGK Toán 9 KNTT Trang 82",
+      "prompt": "Cho đường tròn $(O; R)$ với bán kính $R = 6\\text{ cm}$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Mọi điểm nằm trên đường tròn $(O; 6\\text{ cm})$ đều cách điểm $O$ một khoảng bằng $6\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng theo định nghĩa đường tròn: tập hợp các điểm cách $O$ một khoảng bằng bán kính $R = 6\\text{ cm}$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu điểm $A$ thỏa mãn $OA = 5\\text{ cm}$ thì điểm $A$ thuộc hình tròn $(O; 6\\text{ cm})$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì hình tròn gồm các điểm có khoảng cách tới tâm $OM \\le R$. Ở đây $OA = 5 < 6$ nên $A$ nằm trong hình tròn."
+        },
+        {
+          "id": "c",
+          "text": "Nếu điểm $B$ có $OB = 6{,}5\\text{ cm}$ thì điểm $B$ nằm bên trong đường tròn $(O; 6\\text{ cm})$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì $OB = 6{,}5 > 6$ nên điểm $B$ nằm ngoài đường tròn."
+        },
+        {
+          "id": "d",
+          "text": "Tâm $O$ là một điểm thuộc đường tròn $(O; 6\\text{ cm})$.",
+          "correctAnswer": false,
+          "explanation": "Sai vì khoảng cách từ $O$ đến $O$ bằng $0 \\ne 6$, nên tâm $O$ nằm bên trong hình tròn chứ không nằm trên đường tròn."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.2",
+      "badge": "Đúng / Sai 2 - Tính đối xứng của đường tròn",
+      "source": "SGK Toán 9 KNTT Trang 83",
+      "prompt": "Xét tính Đúng hoặc Sai của mỗi khẳng định sau về tính đối xứng của đường tròn $(O; R)$:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Đường tròn $(O; R)$ có duy nhất một tâm đối xứng là tâm $O$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tâm $O$ là tâm đối xứng duy nhất của đường tròn."
+        },
+        {
+          "id": "b",
+          "text": "Mọi đường kính của đường tròn $(O; R)$ đều là một trục đối xứng của đường tròn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Bất kì đường thẳng nào đi qua tâm $O$ (tức chứa đường kính) đều là trục đối xứng của đường tròn."
+        },
+        {
+          "id": "c",
+          "text": "Đường tròn chỉ có đúng hai trục đối xứng là hai đường kính vuông góc với nhau.",
+          "correctAnswer": false,
+          "explanation": "Sai: Đường tròn có vô số trục đối xứng, không phải chỉ có hai."
+        },
+        {
+          "id": "d",
+          "text": "Nếu đoạn thẳng $MN$ là một dây cung đi qua tâm $O$ thì $O$ là trung điểm của $MN$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Dây cung đi qua tâm là đường kính, nên $OM = ON = R$, do đó $O$ là trung điểm của $MN$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.3",
+      "badge": "Đúng / Sai 3 - Sự xác định đường tròn qua các điểm",
+      "source": "SGK Toán 9 KNTT Trang 84",
+      "prompt": "Xét tính Đúng hoặc Sai của mỗi khẳng định sau về sự xác định đường tròn:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Có vô số đường tròn đi qua hai điểm phân biệt $A$ và $B$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tâm của các đường tròn này có thể là bất kì điểm nào nằm trên đường trung trực của đoạn thẳng $AB$."
+        },
+        {
+          "id": "b",
+          "text": "Tâm của các đường tròn đi qua hai điểm $A, B$ nằm trên đoạn thẳng nối $A$ và $B$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Tâm phải cách đều $A$ và $B$ nên phải nằm trên đường trung trực của đoạn thẳng $AB$."
+        },
+        {
+          "id": "c",
+          "text": "Có duy nhất một đường tròn đi qua ba điểm thẳng hàng.",
+          "correctAnswer": false,
+          "explanation": "Sai: Không có đường tròn nào đi qua ba điểm thẳng hàng vì các đường trung trực không thể cắt nhau."
+        },
+        {
+          "id": "d",
+          "text": "Qua ba đỉnh của một tam giác luôn vẽ được duy nhất một đường tròn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Ba đỉnh của một tam giác là ba điểm không thẳng hàng nên xác định duy nhất một đường tròn ngoại tiếp."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.4",
+      "badge": "Đúng / Sai 4 - Đường tròn ngoại tiếp tam giác vuông",
+      "source": "SGK Toán 9 KNTT Trang 86",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ nội tiếp đường tròn $(O; R)$. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Cạnh huyền $BC$ chính là một đường kính của đường tròn $(O)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tâm $O$ là trung điểm của cạnh huyền $BC$ nên $BC$ là đường kính."
+        },
+        {
+          "id": "b",
+          "text": "Bán kính của đường tròn là $R = \\dfrac{BC}{2}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng vì $BC$ là đường kính nên bán kính bằng nửa đường kính: $R = BC / 2$."
+        },
+        {
+          "id": "c",
+          "text": "Đoạn thẳng $OA$ vuông góc với cạnh huyền $BC$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $OA$ là đường trung tuyến ứng với cạnh huyền, chỉ vuông góc khi tam giác vuông cân tại $A$."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài đoạn thẳng $OA$ bằng bán kính $R$ của đường tròn.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì $A$ nằm trên đường tròn $(O)$ nên $OA = R$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.5",
+      "badge": "Đúng / Sai 5 - Đường tròn ngoại tiếp tam giác đều và tam giác cân",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 81",
+      "prompt": "Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tâm đường tròn ngoại tiếp tam giác đều trùng với trọng tâm của tam giác đó.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Trong tam giác đều, các đường trung trực, trung tuyến, đường cao, phân giác đều trùng nhau."
+        },
+        {
+          "id": "b",
+          "text": "Tam giác đều cạnh $a$ có bán kính đường tròn ngoại tiếp bằng $R = \\dfrac{a\\sqrt{3}}{3}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Chiều cao $h = \\frac{a\\sqrt{3}}{2}$, bán kính $R = \\frac{2}{3}h = \\frac{a\\sqrt{3}}{3}$."
+        },
+        {
+          "id": "c",
+          "text": "Trong tam giác cân, tâm đường tròn ngoại tiếp luôn nằm ngoài tam giác.",
+          "correctAnswer": false,
+          "explanation": "Sai: Nếu tam giác cân có ba góc nhọn thì tâm ngoại tiếp nằm bên trong tam giác."
+        },
+        {
+          "id": "d",
+          "text": "Trong tam giác nhọn, tâm đường tròn ngoại tiếp luôn nằm bên trong tam giác.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đối với tam giác nhọn, giao điểm ba đường trung trực luôn nằm trong tam giác."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.6",
+      "badge": "Đúng / Sai 6 - Đường tròn ngoại tiếp tứ giác đặc biệt",
+      "source": "Bộ đề ôn tập Toán 9 KNTT",
+      "prompt": "Cho hình chữ nhật $ABCD$ có tâm $O$ (giao điểm của hai đường chéo $AC$ và $BD$). Xét tính Đúng hoặc Sai của mỗi khẳng định:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bốn điểm $A, B, C, D$ cùng thuộc một đường tròn tâm $O$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Do tính chất hình chữ nhật, $OA = OB = OC = OD = \\frac{1}{2}AC$."
+        },
+        {
+          "id": "b",
+          "text": "Bán kính của đường tròn đi qua 4 điểm $A, B, C, D$ bằng nửa độ dài đường chéo $AC$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $R = OA = \\frac{AC}{2}$."
+        },
+        {
+          "id": "c",
+          "text": "Đoạn thẳng $AB$ là một đường kính của đường tròn đó.",
+          "correctAnswer": false,
+          "explanation": "Sai: $AC$ và $BD$ mới là các đường kính của đường tròn, $AB$ chỉ là dây cung."
+        },
+        {
+          "id": "d",
+          "text": "Mọi hình thoi đều có một đường tròn đi qua cả bốn đỉnh của nó.",
+          "correctAnswer": false,
+          "explanation": "Sai: Chỉ hình vuông (hình thoi có 4 góc vuông) mới có đường tròn ngoại tiếp đi qua 4 đỉnh."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.7",
+      "badge": "Đúng / Sai 7 - Tính toán toạ độ và khoảng cách trên hệ trục Oxy",
+      "source": "SBT Toán 9 KNTT Trang 81",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho đường tròn $(C)$ có tâm tại gốc tọa độ $O(0; 0)$ và đi qua điểm $M(3; 4)$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Bán kính của đường tròn $(C)$ bằng $5$ đơn vị độ dài.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $R = OM = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$."
+        },
+        {
+          "id": "b",
+          "text": "Điểm $P(-4; 3)$ nằm trên đường tròn $(C)$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $OP = \\sqrt{(-4)^2 + 3^2} = 5 = R$ nên $P$ nằm trên đường tròn."
+        },
+        {
+          "id": "c",
+          "text": "Điểm $Q(0; 6)$ nằm bên trong đường tròn $(C)$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $OQ = 6 > R = 5$ nên điểm $Q$ nằm ngoài đường tròn."
+        },
+        {
+          "id": "d",
+          "text": "Đường kính của đường tròn $(C)$ bằng $10$ đơn vị độ dài.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đường kính $d = 2R = 2 \\times 5 = 10$."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.8",
+      "badge": "Đúng / Sai 8 - Tính chất dây cung và khoảng cách",
+      "source": "SGK Toán 9 KNTT Trang 85",
+      "prompt": "Cho đường tròn $(O; R)$ và dây cung $AB$ không đi qua tâm. Xét tính Đúng hoặc Sai của các khẳng định sau:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Độ dài dây cung $AB$ luôn nhỏ hơn hoặc bằng đường kính $2R$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Đường kính là dây cung lớn nhất của đường tròn, nên $AB \\le 2R$."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $AB$ không đi qua tâm $O$ thì tam giác $OAB$ là tam giác cân tại $O$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Vì $OA = OB = R$ nên tam giác $OAB$ luôn cân tại $O$."
+        },
+        {
+          "id": "c",
+          "text": "Đường trung trực của đoạn thẳng $AB$ không đi qua tâm $O$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì $OA = OB$ nên điểm $O$ luôn thuộc đường trung trực của $AB$."
+        },
+        {
+          "id": "d",
+          "text": "Góc $\\widehat{OAB}$ luôn bằng góc $\\widehat{OBA}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Do tam giác $OAB$ cân tại $O$ nên hai góc ở đáy bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.9",
+      "badge": "Đúng / Sai 9 - Vị trí của tâm ngoại tiếp tam giác tù",
+      "source": "SBT Toán 9 KNTT Trang 82",
+      "prompt": "Cho tam giác $ABC$ có góc $\\widehat{A} > 90^\\circ$ (tam giác tù). Gọi $O$ là tâm đường tròn ngoại tiếp tam giác $ABC$. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tâm $O$ nằm bên trong tam giác $ABC$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Đối với tam giác tù, tâm đường tròn ngoại tiếp luôn nằm ở phía ngoài tam giác."
+        },
+        {
+          "id": "b",
+          "text": "Cạnh $BC$ đối diện với góc tù có độ dài lớn hơn đường kính $2R$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Dây cung trong đường tròn không bao giờ vượt quá đường kính $2R$."
+        },
+        {
+          "id": "c",
+          "text": "Khoảng cách từ $O$ đến ba đỉnh $A, B, C$ là bằng nhau.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $OA = OB = OC = R$ theo định nghĩa đường tròn ngoại tiếp."
+        },
+        {
+          "id": "d",
+          "text": "Đường trung trực của cạnh $BC$ đi qua tâm $O$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tâm ngoại tiếp là giao điểm các đường trung trực của ba cạnh."
+        }
+      ]
+    },
+    {
+      "id": "tf-9.13.10",
+      "badge": "Đúng / Sai 10 - Ứng dụng thực tế bánh đà và vòng tròn",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 87",
+      "prompt": "Một chiếc đĩa cổ hình tròn bị vỡ chỉ còn lại một mảnh vành chứa 3 điểm $A, B, C$. Người ta muốn phục chế lại chiếc đĩa nguyên bản. Xét tính Đúng hoặc Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Chỉ cần lấy ba điểm phân biệt $A, B, C$ trên vành đĩa là có thể xác định được tâm và bán kính đĩa ban đầu.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Qua ba điểm không thẳng hàng trên cung tròn, xác định được duy nhất một đường tròn."
+        },
+        {
+          "id": "b",
+          "text": "Tâm của đĩa là giao điểm hai đường trung trực của đoạn thẳng $AB$ và $BC$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Giao điểm hai đường trung trực chính là tâm của đường tròn đi qua 3 điểm $A, B, C$."
+        },
+        {
+          "id": "c",
+          "text": "Nếu khoảng cách $AB = 6\\text{ cm}, BC = 8\\text{ cm}$ và $AB \\perp BC$ thì đường kính đĩa cổ là $10\\text{ cm}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Khi $AB \\perp BC$, tam giác $ABC$ vuông tại $B$ nên cạnh huyền $AC$ là đường kính: $AC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu lấy thêm một điểm thứ tư $D$ trên vành đĩa thì $D$ không thuộc đường tròn xác định bởi ba điểm $A, B, C$.",
+          "correctAnswer": false,
+          "explanation": "Sai: Vì tất cả các điểm trên vành đĩa ban đầu đều thuộc cùng một đường tròn nên điểm $D$ phải thuộc đường tròn đó."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "sa-9.13.1",
+      "badge": "Trả lời ngắn 1 - Tính bán kính ngoại tiếp tam giác vuông 6, 8, 10",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 86",
+      "prompt": "Cho tam giác $ABC$ vuông tại $A$ có hai cạnh góc vuông $AB = 6\\text{ cm}$ và $AC = 8\\text{ cm}$. Tính bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ (ghi kết quả bằng số theo đơn vị cm).",
+      "correctAnswer": "5",
+      "acceptableAnswers": [
+        "5",
+        "5 cm",
+        "5cm"
+      ],
+      "explanation": "Áp dụng định lý Pythagore: $BC = \\sqrt{6^2 + 8^2} = 10\\text{ cm}$. Bán kính đường tròn ngoại tiếp là $R = \\frac{BC}{2} = \\frac{10}{2} = 5\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.2",
+      "badge": "Trả lời ngắn 2 - Bán kính đường tròn ngoại tiếp tam giác vuông cân",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 81",
+      "prompt": "Cho tam giác $ABC$ vuông cân tại $A$ có cạnh góc vuông $AB = AC = 4\\sqrt{2}\\text{ cm}$. Tính bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ (đơn vị cm).",
+      "correctAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4 cm",
+        "4cm"
+      ],
+      "explanation": "Cạnh huyền $BC = \\sqrt{AB^2 + AC^2} = \\sqrt{(4\\sqrt{2})^2 + (4\\sqrt{2})^2} = \\sqrt{32 + 32} = \\sqrt{64} = 8\\text{ cm}$. Bán kính $R = \\frac{BC}{2} = 4\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.3",
+      "badge": "Trả lời ngắn 3 - Bán kính đường tròn ngoại tiếp hình chữ nhật",
+      "source": "Bộ đề ôn tập Toán 9 KNTT Trang 50",
+      "prompt": "Cho hình chữ nhật $ABCD$ có chiều dài $AB = 12\\text{ cm}$ và chiều rộng $BC = 5\\text{ cm}$. Bốn đỉnh của hình chữ nhật cùng thuộc một đường tròn có đường kính bằng bao nhiêu cm?",
+      "correctAnswer": "13",
+      "acceptableAnswers": [
+        "13",
+        "13 cm",
+        "13cm"
+      ],
+      "explanation": "Đường kính của đường tròn chính là độ dài đường chéo $AC = \\sqrt{AB^2 + BC^2} = \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.4",
+      "badge": "Trả lời ngắn 4 - Bán kính đường tròn nhỏ nhất qua 2 điểm",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 84",
+      "prompt": "Cho đoạn thẳng $AB = 16\\text{ cm}$. Bán kính của đường tròn nhỏ nhất đi qua hai điểm $A$ và $B$ bằng bao nhiêu cm?",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8 cm",
+        "8cm"
+      ],
+      "explanation": "Đường tròn nhỏ nhất đi qua $A$ và $B$ có đường kính là $AB = 16\\text{ cm}$. Bán kính của đường tròn đó là $R = \\frac{AB}{2} = 8\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.5",
+      "badge": "Trả lời ngắn 5 - Khoảng cách điểm tới tâm trên mặt phẳng tọa độ",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 82",
+      "prompt": "Trong mặt phẳng tọa độ $Oxy$, cho đường tròn tâm $O(0; 0)$ bán kính $R = 10$. Điểm $M(8; y_0)$ với $y_0 > 0$ nằm trên đường tròn đó. Tìm giá trị của $y_0$.",
+      "correctAnswer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "explanation": "Vì $M$ thuộc đường tròn $(O; 10)$ nên $OM^2 = 10^2 \\Leftrightarrow 8^2 + y_0^2 = 100 \\Leftrightarrow 64 + y_0^2 = 100 \\Leftrightarrow y_0^2 = 36$. Do $y_0 > 0$ nên $y_0 = 6$."
+    },
+    {
+      "id": "sa-9.13.6",
+      "badge": "Trả lời ngắn 6 - Bán kính đường tròn ngoại tiếp tam giác đều",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 86",
+      "prompt": "Cho tam giác đều $ABC$ có cạnh bằng $3\\sqrt{3}\\text{ cm}$. Tính bán kính $R$ của đường tròn ngoại tiếp tam giác $ABC$ (ghi kết quả bằng số, đơn vị cm).",
+      "correctAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3 cm",
+        "3cm"
+      ],
+      "explanation": "Công thức bán kính ngoại tiếp tam giác đều cạnh $a$ là $R = \\frac{a\\sqrt{3}}{3}$. Thay $a = 3\\sqrt{3}$ vào: $R = \\frac{3\\sqrt{3} \\cdot \\sqrt{3}}{3} = \\frac{9}{3} = 3\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.7",
+      "badge": "Trả lời ngắn 7 - Cạnh huyền tam giác vuông khi biết bán kính ngoại tiếp",
+      "source": "SBT Toán 9 KNTT Bài 13 Trang 82",
+      "prompt": "Một tam giác vuông nội tiếp đường tròn có bán kính $R = 7{,}5\\text{ cm}$. Độ dài cạnh huyền của tam giác vuông đó bằng bao nhiêu cm?",
+      "correctAnswer": "15",
+      "acceptableAnswers": [
+        "15",
+        "15 cm",
+        "15cm"
+      ],
+      "explanation": "Cạnh huyền của tam giác vuông nội tiếp bằng đường kính của đường tròn: $BC = 2R = 2 \\times 7{,}5 = 15\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.8",
+      "badge": "Trả lời ngắn 8 - Độ dài cạnh góc vuông còn lại",
+      "source": "Bộ đề tuyển sinh vào 10 Trang 52",
+      "prompt": "Tam giác $ABC$ vuông tại $A$ nội tiếp đường tròn có đường kính $26\\text{ cm}$. Biết một cạnh góc vuông $AB = 10\\text{ cm}$, tính độ dài cạnh góc vuông $AC$ (đơn vị cm).",
+      "correctAnswer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24 cm",
+        "24cm"
+      ],
+      "explanation": "Cạnh huyền $BC = 26\\text{ cm}$. Theo định lý Pythagore: $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{26^2 - 10^2} = \\sqrt{676 - 100} = \\sqrt{576} = 24\\text{ cm}$."
+    },
+    {
+      "id": "sa-9.13.9",
+      "badge": "Trả lời ngắn 9 - Bán kính phủ sóng tối thiểu",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 87",
+      "prompt": "Ba thôn $A, B, C$ tạo thành một tam giác vuông tại $A$ với khoảng cách $AB = 9\\text{ km}, AC = 12\\text{ km}$. Người ta muốn đặt một trạm phát sóng tại vị trí cách đều ba thôn. Bán kính phủ sóng tối thiểu của trạm để phủ sóng được cả ba thôn là bao nhiêu km?",
+      "correctAnswer": "7.5",
+      "acceptableAnswers": [
+        "7.5",
+        "7,5",
+        "15/2",
+        "7.5 km",
+        "7,5 km"
+      ],
+      "explanation": "Vị trí cách đều ba thôn là tâm đường tròn ngoại tiếp tam giác vuông $ABC$ (trung điểm cạnh huyền $BC$). Khoảng cách $BC = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15\\text{ km}$. Bán kính tối thiểu là $R = \\frac{BC}{2} = 7{,}5\\text{ km}$."
+    },
+    {
+      "id": "sa-9.13.10",
+      "badge": "Trả lời ngắn 10 - Đường kính của chiếc đĩa cổ hình tròn phục chế",
+      "source": "SGK Toán 9 KNTT Bài 13 Trang 87",
+      "prompt": "Một mảnh đĩa cổ có ba điểm $A, B, C$ thuộc vành đĩa tạo thành tam giác vuông tại $B$ với $AB = 15\\text{ cm}$ và $BC = 20\\text{ cm}$. Tính đường kính của chiếc đĩa cổ nguyên bản ban đầu (ghi kết quả bằng số theo đơn vị cm).",
+      "correctAnswer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25 cm",
+        "25cm"
+      ],
+      "explanation": "Vì tam giác $ABC$ vuông tại $B$ nội tiếp đường tròn vành đĩa nên cạnh huyền $AC$ chính là đường kính của đĩa. Ta có $AC = \\sqrt{AB^2 + BC^2} = \\sqrt{15^2 + 20^2} = \\sqrt{225 + 400} = \\sqrt{625} = 25\\text{ cm}$."
+    }
+  ]
+}
 };

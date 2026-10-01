@@ -8494,7 +8494,716 @@ export const GRADE_10_AI_PRACTICE_DATA: Record<string, Grade10AiPracticePackage>
     }
   ]
 }
-
+,
+  "t10-b13-so-dac-trung-do-xu-the-trung-tam": {
+  "quizQuestions": [
+    {
+      "id": "ai-10.13.1",
+      "badge": "Luyện thêm 1 - Ý nghĩa của số trung bình",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Số trung bình cộng $\\overline{x}$ của một mẫu số liệu phản ánh điều gì?",
+      "options": [
+        "Mức độ trung bình đại diện cho mẫu số liệu khi các giá trị phân bố tương đối đều.",
+        "Giá trị xuất hiện nhiều lần nhất trong mẫu số liệu.",
+        "Giá trị chính giữa chia mẫu số liệu thành hai phần bằng nhau.",
+        "Khoảng cách giữa giá trị lớn nhất và nhỏ nhất của mẫu."
+      ],
+      "correctIndex": 0,
+      "explanation": "Số trung bình cộng đại diện cho giá trị trung bình của toàn bộ mẫu số liệu khi không có giá trị bất thường."
+    },
+    {
+      "id": "ai-10.13.2",
+      "badge": "Luyện thêm 2 - Vị trí của trung vị trong mẫu lẻ",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Một mẫu số liệu đã sắp xếp có kích thước $n = 15$. Trung vị $M_e$ của mẫu số liệu là giá trị ở vị trí thứ mấy?",
+      "options": [
+        "Vị trí thứ 8",
+        "Vị trí thứ 7",
+        "Vị trí thứ 7 và thứ 8",
+        "Vị trí thứ 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 15$ là số lẻ, $n = 2 \\times 7 + 1 \\Rightarrow$ trung vị ở vị trí $k + 1 = 7 + 1 = 8$ ($x_8$)."
+    },
+    {
+      "id": "ai-10.13.3",
+      "badge": "Luyện thêm 3 - Tính trung vị mẫu chẵn n = 12",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Một mẫu số liệu đã sắp xếp gồm $n = 12$ phần tử. Trung vị $M_e$ được tính bằng:",
+      "options": [
+        "$\\dfrac{x_6 + x_7}{2}$",
+        "$x_6$",
+        "$x_7$",
+        "$\\dfrac{x_1 + x_{12}}{2}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 12$ chẵn, $k = 6$, trung vị là trung bình cộng của 2 số ở giữa: $M_e = \\dfrac{x_6 + x_7}{2}$."
+    },
+    {
+      "id": "ai-10.13.4",
+      "badge": "Luyện thêm 4 - Nhận biết mốt trong bảng tần số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Trong bảng phân bố tần số, giá trị nào sau đây chính là mốt $M_o$?",
+      "options": [
+        "Giá trị của đại lượng có tần số lớn nhất.",
+        "Tần số lớn nhất trong cột tần số.",
+        "Giá trị lớn nhất của đại lượng.",
+        "Trung bình cộng của tất cả các tần số."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mốt là giá trị của đại lượng ứng với tần số xuất hiện lớn nhất."
+    },
+    {
+      "id": "ai-10.13.5",
+      "badge": "Luyện thêm 5 - Tính số trung bình dãy số thực tế",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Nhiệt độ đo được vào buổi trưa trong 5 ngày là: $28^\\circ\\text{C}, 30^\\circ\\text{C}, 31^\\circ\\text{C}, 33^\\circ\\text{C}, 38^\\circ\\text{C}$. Nhiệt độ trung bình là:",
+      "options": [
+        "$32^\\circ\\text{C}$",
+        "$31^\\circ\\text{C}$",
+        "$32{,}5^\\circ\\text{C}$",
+        "$33^\\circ\\text{C}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$\\overline{x} = \\dfrac{28 + 30 + 31 + 33 + 38}{5} = \\dfrac{160}{5} = 32^\\circ\\text{C}$."
+    },
+    {
+      "id": "ai-10.13.6",
+      "badge": "Luyện thêm 6 - Tính số trung bình khối lượng quả cam",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cân nặng (gam) của 6 quả cam được chọn ngẫu nhiên là: $140, 150, 155, 160, 165, 190$. Khối lượng trung bình của một quả cam bằng:",
+      "options": [
+        "$160\\text{ g}$",
+        "$158\\text{ g}$",
+        "$162\\text{ g}$",
+        "$165\\text{ g}$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng khối lượng $= 140+150+155+160+165+190 = 960\\text{ g}$. Trung bình $\\overline{x} = \\dfrac{960}{6} = 160\\text{ g}$."
+    },
+    {
+      "id": "ai-10.13.7",
+      "badge": "Luyện thêm 7 - Tìm trung vị mẫu lẻ kích thước 9",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu chưa sắp xếp: $18, 25, 14, 30, 22, 16, 27, 20, 24$. Trung vị $M_e$ của mẫu số liệu là:",
+      "options": [
+        "$22$",
+        "$20$",
+        "$24$",
+        "$23$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sắp xếp lại mẫu: $14, 16, 18, 20, 22, 24, 25, 27, 30$. Với $n = 9$ lẻ, trung vị $M_e = x_5 = 22$."
+    },
+    {
+      "id": "ai-10.13.8",
+      "badge": "Luyện thêm 8 - Tìm trung vị mẫu chẵn kích thước 8",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu đã sắp xếp: $5, 8, 11, 14, 18, 21, 26, 30$. Trung vị $M_e$ bằng:",
+      "options": [
+        "$16$",
+        "$14$",
+        "$18$",
+        "$17$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 8$ chẵn, $M_e = \\dfrac{x_4 + x_5}{2} = \\dfrac{14 + 18}{2} = 16$."
+    },
+    {
+      "id": "ai-10.13.9",
+      "badge": "Luyện thêm 9 - Xác định mốt của mẫu số liệu",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Số con trong 10 gia đình được điều tra lần lượt là: $2, 1, 2, 3, 2, 2, 1, 4, 2, 3$. Mốt của mẫu số liệu là:",
+      "options": [
+        "$2$",
+        "$1$",
+        "$3$",
+        "$2{,}2$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Giá trị 2 xuất hiện 5 lần (nhiều nhất), nên mốt là $M_o = 2$."
+    },
+    {
+      "id": "ai-10.13.10",
+      "badge": "Luyện thêm 10 - Mẫu số liệu không có mốt",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu điểm kiểm tra: $4, 5, 6, 7, 8, 9$. Khẳng định nào sau đây là đúng?",
+      "options": [
+        "Mẫu số liệu này không có mốt.",
+        "Mốt của mẫu số liệu là 6,5.",
+        "Mọi giá trị đều là mốt.",
+        "Mốt là giá trị lớn nhất 9."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mỗi giá trị đều xuất hiện đúng 1 lần (tần số bằng nhau), vì vậy mẫu số liệu này không có mốt."
+    },
+    {
+      "id": "ai-10.13.11",
+      "badge": "Luyện thêm 11 - Tứ phân vị của mẫu kích thước 8",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu: $3, 5, 7, 9, 11, 13, 15, 17$. Tứ phân vị thứ nhất $Q_1$ và thứ ba $Q_3$ là:",
+      "options": [
+        "$Q_1 = 6$ và $Q_3 = 14$",
+        "$Q_1 = 7$ và $Q_3 = 13$",
+        "$Q_1 = 5{,}5$ và $Q_3 = 14{,}5$",
+        "$Q_1 = 6$ và $Q_3 = 13$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 8$ chẵn, nửa dưới gồm $\\{3, 5, 7, 9\\} \\Rightarrow Q_1 = \\dfrac{5+7}{2} = 6$. Nửa trên gồm $\\{11, 13, 15, 17\\} \\Rightarrow Q_3 = \\dfrac{13+15}{2} = 14$."
+    },
+    {
+      "id": "ai-10.13.12",
+      "badge": "Luyện thêm 12 - Tứ phân vị của mẫu kích thước 7",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu đã sắp xếp: $4, 6, 9, 12, 16, 19, 23$. Tứ phân vị thứ ba $Q_3$ bằng:",
+      "options": [
+        "$19$",
+        "$16$",
+        "$21$",
+        "$17{,}5$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 7$ lẻ, $Q_2 = 12$. Nửa số liệu bên phải là $\\{16, 19, 23\\}$. Trung vị của nửa trên là $Q_3 = 19$."
+    },
+    {
+      "id": "ai-10.13.13",
+      "badge": "Luyện thêm 13 - Ý nghĩa của tứ phân vị thứ ba Q3",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Trong phân tích thống kê, tứ phân vị thứ ba $Q_3$ có ý nghĩa gì?",
+      "options": [
+        "Khoảng 75% giá trị của mẫu số liệu nhỏ hơn hoặc bằng $Q_3$.",
+        "Khoảng 25% giá trị của mẫu số liệu nhỏ hơn hoặc bằng $Q_3$.",
+        "Khoảng 50% giá trị của mẫu số liệu nhỏ hơn hoặc bằng $Q_3$.",
+        "Đúng 3/4 giá trị của mẫu số liệu bằng $Q_3$."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theo định nghĩa, khoảng 75% số liệu nhỏ hơn hoặc bằng $Q_3$ và khoảng 25% số liệu lớn hơn hoặc bằng $Q_3$."
+    },
+    {
+      "id": "ai-10.13.14",
+      "badge": "Luyện thêm 14 - Tính số trung bình bảng tần số học sinh giỏi",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Số điểm 10 đạt được trong tháng của 25 học sinh được thống kê:\n- 1 điểm 10: 5 học sinh\n- 2 điểm 10: 10 học sinh\n- 3 điểm 10: 6 học sinh\n- 4 điểm 10: 4 học sinh\nSố điểm 10 trung bình mỗi học sinh đạt được là:",
+      "options": [
+        "$2{,}36$",
+        "$2{,}5$",
+        "$2{,}25$",
+        "$2{,}4$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng số điểm 10 $= 1 \\times 5 + 2 \\times 10 + 3 \\times 6 + 4 \\times 4 = 5 + 20 + 18 + 16 = 59$. Số trung bình $\\overline{x} = \\dfrac{59}{25} = 2{,}36$."
+    },
+    {
+      "id": "ai-10.13.15",
+      "badge": "Luyện thêm 15 - Trung vị bảng phân bố tần số điểm 10",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Từ bảng thống kê số điểm 10 của 25 học sinh ở câu trên, trung vị $M_e$ bằng:",
+      "options": [
+        "$2$",
+        "$2{,}5$",
+        "$3$",
+        "$1$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 25$ lẻ, trung vị là số ở vị trí thứ $13$. Tích lũy: nhóm 1 điểm (1-5), nhóm 2 điểm (6-15). Do đó số thứ 13 là 2, suy ra $M_e = 2$."
+    },
+    {
+      "id": "ai-10.13.16",
+      "badge": "Luyện thêm 16 - So sánh độ nhạy của số trung bình và trung vị",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Khi thay thế giá trị lớn nhất của mẫu số liệu bằng một giá trị lớn gấp 10 lần giá trị đó, số đặc trưng nào sau đây KHÔNG THAY ĐỔI?",
+      "options": [
+        "Trung vị",
+        "Số trung bình",
+        "Khoảng biến thiên",
+        "Phương sai"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thay đổi giá trị cực trị lớn nhất không làm thay đổi thứ tự và giá trị của các phần tử ở chính giữa mẫu, do đó trung vị giữ nguyên."
+    },
+    {
+      "id": "ai-10.13.17",
+      "badge": "Luyện thêm 17 - Tìm giá trị chưa biết của mẫu số liệu",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Biết số trung bình của 5 số $12, 15, 18, 21, y$ bằng $18$. Giá trị của $y$ là:",
+      "options": [
+        "$24$",
+        "$20$",
+        "$22$",
+        "$25$"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tổng $= 12 + 15 + 18 + 21 + y = 66 + y = 5 \\times 18 = 90 \\Rightarrow y = 90 - 66 = 24$."
+    },
+    {
+      "id": "ai-10.13.18",
+      "badge": "Luyện thêm 18 - Tìm tứ phân vị Q1 và Q3 của dãy 11 số",
+      "isAiGenerated": true,
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "question": "Cho mẫu số liệu đã sắp xếp: $1, 4, 7, 8, 10, 12, 14, 16, 18, 20, 22$. Cặp giá trị $(Q_1; Q_3)$ là:",
+      "options": [
+        "$(7; 18)$",
+        "$(8; 16)$",
+        "$(7; 16)$",
+        "$(8; 18)$"
+      ],
+      "correctIndex": 0,
+      "explanation": "$n = 11$ lẻ, $Q_2 = x_6 = 12$. Nửa dưới gồm $\\{1, 4, 7, 8, 10\\} \\Rightarrow Q_1 = x_3 = 7$. Nửa trên gồm $\\{14, 16, 18, 20, 22\\} \\Rightarrow Q_3 = x_9 = 18$."
+    },
+    {
+      "id": "ai-10.13.19",
+      "badge": "Luyện thêm 19 - Phân tích thu nhập gia đình có giá trị ngoại lai",
+      "isAiGenerated": true,
+      "source": "Toán học kinh tế 10",
+      "question": "Thu nhập hàng tháng (triệu đồng) của 5 hộ dân trong một con ngõ lần lượt là: $12, 14, 15, 16, 120$. Đại lượng nào phản ánh đúng mức thu nhập của đa số các hộ dân?",
+      "options": [
+        "Trung vị $M_e = 15$ triệu đồng",
+        "Số trung bình $\\overline{x} = 35{,}4$ triệu đồng",
+        "Giá trị lớn nhất 120 triệu đồng",
+        "Khoảng biến thiên 108 triệu đồng"
+      ],
+      "correctIndex": 0,
+      "explanation": "Số trung bình là $(12+14+15+16+120)/5 = 35{,}4$ triệu, bị kéo quá cao bởi hộ thu nhập 120 triệu. Trung vị $M_e = 15$ triệu phản ánh sát nhất thu nhập thực tế của đa số hộ dân."
+    },
+    {
+      "id": "ai-10.13.20",
+      "badge": "Luyện thêm 20 - Ứng dụng mốt trong siêu thị giày dép",
+      "isAiGenerated": true,
+      "source": "Toán học kinh doanh 10",
+      "question": "Một cửa hàng giày thể thao bán được các cỡ giày trong ngày thứ Bảy: Cỡ 38 (8 đôi), Cỡ 39 (15 đôi), Cỡ 40 (42 đôi), Cỡ 41 (28 đôi), Cỡ 42 (12 đôi). Cỡ giày mốt $M_o$ của ngày là:",
+      "options": [
+        "Cỡ 40",
+        "Cỡ 42",
+        "Cỡ 39",
+        "Cỡ 41"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cỡ giày 40 bán được nhiều nhất với 42 đôi, vì vậy $M_o = 40$."
+    }
+  ],
+  "trueFalseQuestions": [
+    {
+      "id": "ai-tf-10.13.1",
+      "badge": "Luyện thêm Đ/S 1 - Các số đặc trưng của dãy số nguyên",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Cho mẫu số liệu điểm đánh giá năng lực của 7 học sinh: $6, 8, 9, 9, 9, 10, 12$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Số trung bình của mẫu số liệu là 9.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{6 + 8 + 9 + 9 + 9 + 10 + 12}{7} = \\dfrac{63}{7} = 9$."
+        },
+        {
+          "id": "b",
+          "text": "Trung vị của mẫu số liệu là $M_e = 9$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Dãy 7 số đã sắp xếp, phần tử ở chính giữa $x_4 = 9$."
+        },
+        {
+          "id": "c",
+          "text": "Mốt của mẫu số liệu là $M_o = 9$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Điểm 9 xuất hiện 3 lần (nhiều nhất)."
+        },
+        {
+          "id": "d",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 11$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $n = 7$ lẻ, nửa trên là $\\{9, 10, 12\\} \\Rightarrow Q_3 = 10 \\ne 11$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.2",
+      "badge": "Luyện thêm Đ/S 2 - Bảng tần số số lỗi chính tả trong bài tập làm văn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Khảo sát số lỗi chính tả trong bài tập làm văn của 40 học sinh thu được bảng tần số:\n- 0 lỗi: 15 học sinh\n- 1 lỗi: 12 học sinh\n- 2 lỗi: 8 học sinh\n- 3 lỗi: 3 học sinh\n- 4 lỗi: 2 học sinh\nXét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Mốt của số lỗi chính tả là $M_o = 0$ lỗi.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Mức 0 lỗi có tần số lớn nhất (15 học sinh)."
+        },
+        {
+          "id": "b",
+          "text": "Tổng số lỗi chính tả của cả 40 học sinh là 45 lỗi.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tổng $= 0 \\times 15 + 1 \\times 12 + 2 \\times 8 + 3 \\times 3 + 4 \\times 2 = 0 + 12 + 16 + 9 + 8 = 45$ lỗi."
+        },
+        {
+          "id": "c",
+          "text": "Số lỗi chính tả trung bình của mỗi học sinh là $1{,}125$ lỗi.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{45}{40} = 1{,}125$ lỗi."
+        },
+        {
+          "id": "d",
+          "text": "Trung vị của mẫu số liệu là $M_e = 0$ lỗi.",
+          "correctAnswer": false,
+          "explanation": "Sai: $n = 40$ chẵn, $M_e = \\dfrac{x_{20} + x_{21}}{2}$. Nhóm 0 lỗi (1-15), nhóm 1 lỗi (16-27). Cả $x_{20}$ và $x_{21}$ đều bằng 1 $\\Rightarrow M_e = 1$ lỗi."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.3",
+      "badge": "Luyện thêm Đ/S 3 - So sánh điểm bắn súng của hai vận động viên",
+      "source": "Thể thao bắn súng 10",
+      "prompt": "Điểm bắn súng qua 5 lượt của vận động viên A và vận động viên B:\n- VĐV A: $8, 9, 9, 9, 10$\n- VĐV B: $7, 8, 9, 10, 11$\nXét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Điểm trung bình của hai vận động viên đều bằng 9.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tổng điểm cả hai đều là 45, nên $\\overline{x}_A = \\overline{x}_B = 9$."
+        },
+        {
+          "id": "b",
+          "text": "Trung vị điểm bắn của hai vận động viên đều bằng 9.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Phần tử chính giữa của mỗi dãy đều là 9."
+        },
+        {
+          "id": "c",
+          "text": "Mẫu số liệu của vận động viên B có mốt là 9.",
+          "correctAnswer": false,
+          "explanation": "Sai: Điểm của B mỗi số xuất hiện 1 lần nên không có mốt."
+        },
+        {
+          "id": "d",
+          "text": "Vận động viên A bắn ổn định hơn vận động viên B.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Điểm của A tập trung từ 8 đến 10, ít dao động hơn so với điểm của B (từ 7 đến 11)."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.4",
+      "badge": "Luyện thêm Đ/S 4 - Tứ phân vị quãng đường chạy bộ",
+      "source": "Thể dục thể thao 10",
+      "prompt": "Quãng đường chạy bộ hàng ngày (km) của một người trong 8 ngày: $3, 4, 5, 6, 7, 8, 9, 12$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung vị quãng đường chạy là $M_e = 6{,}5\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $n = 8$, $M_e = \\dfrac{6 + 7}{2} = 6{,}5\\text{ km}$."
+        },
+        {
+          "id": "b",
+          "text": "Tứ phân vị thứ nhất là $Q_1 = 4{,}5\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa dưới $\\{3, 4, 5, 6\\} \\Rightarrow Q_1 = \\dfrac{4 + 5}{2} = 4{,}5\\text{ km}$."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 8{,}5\\text{ km}$.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa trên $\\{7, 8, 9, 12\\} \\Rightarrow Q_3 = \\dfrac{8 + 9}{2} = 8{,}5\\text{ km}$."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng tứ phân vị $Q_3 - Q_1 = 5\\text{ km}$.",
+          "correctAnswer": false,
+          "explanation": "Sai: $Q_3 - Q_1 = 8{,}5 - 4{,}5 = 4\\text{ km} \\ne 5\\text{ km}$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.5",
+      "badge": "Luyện thêm Đ/S 5 - Doanh thu bán hàng và giá trị bất thường",
+      "source": "Toán học kinh doanh 10",
+      "prompt": "Doanh số bán hàng (triệu đồng) trong 10 ngày của một cửa hàng nhỏ:\n9 ngày bán được lần lượt: $4, 4, 5, 5, 5, 6, 6, 7, 8$.\nNgày đặc biệt (khai trương khuyến mãi) bán được: $50$ triệu đồng.\nXét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Doanh thu trung bình mỗi ngày là 10 triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Tổng $= 4+4+5+5+5+6+6+7+8+50 = 100$ triệu. $\\overline{x} = \\dfrac{100}{10} = 10$ triệu."
+        },
+        {
+          "id": "b",
+          "text": "Trung vị doanh thu là $M_e = 5{,}5$ triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Dãy 10 số đã xếp, hai số ở giữa là $x_5 = 5, x_6 = 6 \\Rightarrow M_e = 5{,}5$ triệu."
+        },
+        {
+          "id": "c",
+          "text": "Doanh thu trung bình 10 triệu phản ánh tốt mức bán hàng thường ngày của quán.",
+          "correctAnswer": false,
+          "explanation": "Sai: 9/10 ngày doanh thu chỉ từ 4 đến 8 triệu, mức trung bình 10 triệu bị ngày khuyến mãi 50 triệu kéo lệch."
+        },
+        {
+          "id": "d",
+          "text": "Mốt của mẫu số liệu là $M_o = 5$ triệu đồng.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Mức 5 triệu xuất hiện 3 lần (nhiều nhất)."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.6",
+      "badge": "Luyện thêm Đ/S 6 - Số lượng khách hàng vào quán cà phê",
+      "source": "Toán học ứng dụng 10",
+      "prompt": "Lượng khách vào quán cà phê trong 9 giờ cao điểm: $20, 24, 25, 28, 30, 32, 35, 38, 42$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung vị lượng khách trong một giờ là 30 khách.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Dãy 9 số đã xếp tăng dần, số chính giữa $x_5 = 30$."
+        },
+        {
+          "id": "b",
+          "text": "Tứ phân vị thứ nhất là $Q_1 = 24{,}5$ khách.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa dưới (bỏ 30) là $\\{20, 24, 25, 28\\} \\Rightarrow Q_1 = \\dfrac{24 + 25}{2} = 24{,}5$."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 36{,}5$ khách.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa trên (bỏ 30) là $\\{32, 35, 38, 42\\} \\Rightarrow Q_3 = \\dfrac{35 + 38}{2} = 36{,}5$."
+        },
+        {
+          "id": "d",
+          "text": "Khoảng cách giữa $Q_3$ và $Q_1$ bằng 10 khách.",
+          "correctAnswer": false,
+          "explanation": "Sai: $Q_3 - Q_1 = 36{,}5 - 24{,}5 = 12 \\ne 10$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.7",
+      "badge": "Luyện thêm Đ/S 7 - Số bài tập hoàn thành trong tuần",
+      "source": "Toán học học đường 10",
+      "prompt": "Số bài toán một học sinh giải được trong 10 ngày ôn thi: $2, 3, 3, 4, 2, 3, 5, 3, 4, 6$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Tổng số bài toán học sinh giải được là 35 bài.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $2 + 3 + 3 + 4 + 2 + 3 + 5 + 3 + 4 + 6 = 35$ bài."
+        },
+        {
+          "id": "b",
+          "text": "Số bài toán trung bình mỗi ngày giải được là 3,5 bài.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $\\overline{x} = \\dfrac{35}{10} = 3{,}5$ bài."
+        },
+        {
+          "id": "c",
+          "text": "Mốt của mẫu số liệu là $M_o = 3$ bài.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Giá trị 3 xuất hiện 4 lần (nhiều nhất)."
+        },
+        {
+          "id": "d",
+          "text": "Trung vị của số bài tập là $M_e = 3{,}5$ bài.",
+          "correctAnswer": false,
+          "explanation": "Sai: Xếp tăng: $2, 2, 3, 3, 3, 3, 4, 4, 5, 6$. $x_5 = 3, x_6 = 3 \\Rightarrow M_e = 3 \\ne 3{,}5$."
+        }
+      ]
+    },
+    {
+      "id": "ai-tf-10.13.8",
+      "badge": "Luyện thêm Đ/S 8 - Tuổi thọ của bóng đèn điện thử nghiệm",
+      "source": "Kỹ thuật và đời sống 10",
+      "prompt": "Tuổi thọ (nghìn giờ) của 11 bóng đèn LED thử nghiệm: $18, 19, 20, 20, 21, 22, 22, 23, 24, 25, 26$. Xét tính Đúng/Sai:",
+      "subItems": [
+        {
+          "id": "a",
+          "text": "Trung vị tuổi thọ là $M_e = 22$ nghìn giờ.",
+          "correctAnswer": true,
+          "explanation": "Đúng: $n = 11$ lẻ, dãy đã sắp xếp, số ở vị trí chính giữa $x_6 = 22$."
+        },
+        {
+          "id": "b",
+          "text": "Tứ phân vị thứ nhất là $Q_1 = 20$ nghìn giờ.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa dưới gồm $\\{18, 19, 20, 20, 21\\} \\Rightarrow Q_1 = 20$."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba là $Q_3 = 24$ nghìn giờ.",
+          "correctAnswer": true,
+          "explanation": "Đúng: Nửa trên gồm $\\{22, 23, 24, 25, 26\\} \\Rightarrow Q_3 = 24$."
+        },
+        {
+          "id": "d",
+          "text": "Mẫu số liệu chỉ có duy nhất một mốt là 20 nghìn giờ.",
+          "correctAnswer": false,
+          "explanation": "Sai: Cả 20 và 22 đều xuất hiện 2 lần (lớn nhất), nên mẫu có hai mốt là 20 và 22."
+        }
+      ]
+    }
+  ],
+  "shortAnswerQuestions": [
+    {
+      "id": "ai-sa-10.13.1",
+      "badge": "Luyện thêm TLN 1 - Tính số trung bình cộng",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tính số trung bình cộng của mẫu số liệu sau: $6, 9, 10, 13, 17$.",
+      "correctAnswer": "11",
+      "acceptableAnswers": [
+        "11",
+        "11.0",
+        "11,0"
+      ],
+      "explanation": "$\\overline{x} = \\dfrac{6 + 9 + 10 + 13 + 17}{5} = \\dfrac{55}{5} = 11$."
+    },
+    {
+      "id": "ai-sa-10.13.2",
+      "badge": "Luyện thêm TLN 2 - Điểm trung bình kiểm tra Văn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Điểm kiểm tra Văn của 8 học sinh: $6, 7, 7, 8, 8, 9, 8, 7$. Tính điểm trung bình (làm tròn đến hàng phần mười).",
+      "correctAnswer": "7.5",
+      "acceptableAnswers": [
+        "7.5",
+        "7,5",
+        "15/2"
+      ],
+      "explanation": "Tổng điểm = 60, $\\overline{x} = \\dfrac{60}{8} = 7{,}5$."
+    },
+    {
+      "id": "ai-sa-10.13.3",
+      "badge": "Luyện thêm TLN 3 - Trung vị của mẫu số lẻ",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tìm trung vị $M_e$ của mẫu số liệu: $16, 30, 14, 21, 27, 19, 32$.",
+      "correctAnswer": "21",
+      "acceptableAnswers": [
+        "21"
+      ],
+      "explanation": "Sắp xếp mẫu: $14, 16, 19, 21, 27, 30, 32$. Với $n = 7$ lẻ, $M_e = x_4 = 21$."
+    },
+    {
+      "id": "ai-sa-10.13.4",
+      "badge": "Luyện thêm TLN 4 - Trung vị của mẫu số chẵn",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tìm trung vị $M_e$ của mẫu số liệu gồm 6 số: $5, 8, 12, 16, 22, 27$. (Ghi số thập phân)",
+      "correctAnswer": "14",
+      "acceptableAnswers": [
+        "14",
+        "14.0",
+        "14,0"
+      ],
+      "explanation": "$n = 6$ chẵn, $M_e = \\dfrac{12 + 16}{2} = 14$."
+    },
+    {
+      "id": "ai-sa-10.13.5",
+      "badge": "Luyện thêm TLN 5 - Tứ phân vị thứ nhất của mẫu n = 7",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tìm tứ phân vị thứ nhất $Q_1$ của mẫu số liệu đã sắp xếp: $5, 8, 10, 13, 16, 19, 22$.",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "explanation": "$n = 7$ lẻ, $Q_2 = 13$. Nửa dưới là $\\{5, 8, 10\\} \\Rightarrow Q_1 = 8$."
+    },
+    {
+      "id": "ai-sa-10.13.6",
+      "badge": "Luyện thêm TLN 6 - Tứ phân vị thứ ba của mẫu n = 8",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tìm tứ phân vị thứ ba $Q_3$ của mẫu số liệu: $6, 10, 14, 17, 20, 24, 28, 32$.",
+      "correctAnswer": "26",
+      "acceptableAnswers": [
+        "26"
+      ],
+      "explanation": "$n = 8$ chẵn, nửa trên gồm $\\{20, 24, 28, 32\\} \\Rightarrow Q_3 = \\dfrac{24 + 28}{2} = 26$."
+    },
+    {
+      "id": "ai-sa-10.13.7",
+      "badge": "Luyện thêm TLN 7 - Xác định Mốt cỡ nón bảo hiểm",
+      "source": "Toán học kinh doanh 10",
+      "prompt": "Số lượng nón bảo hiểm bán ra: Cỡ S (12 chiếc), Cỡ M (48 chiếc), Cỡ L (35 chiếc), Cỡ XL (18 chiếc). Cỡ nào là mốt của mẫu số liệu? (Ghi chữ cái tên size, ví dụ: M)",
+      "correctAnswer": "M",
+      "acceptableAnswers": [
+        "M",
+        "m",
+        "Size M",
+        "size M"
+      ],
+      "explanation": "Cỡ M bán được nhiều nhất với 48 chiếc, do đó mốt là M."
+    },
+    {
+      "id": "ai-sa-10.13.8",
+      "badge": "Luyện thêm TLN 8 - Tìm giá trị chưa biết qua số trung bình",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Cho 6 số: $4, 6, 9, 12, 15, y$. Biết số trung bình của 6 số bằng 10. Tìm $y$.",
+      "correctAnswer": "14",
+      "acceptableAnswers": [
+        "14"
+      ],
+      "explanation": "Tổng $= 4 + 6 + 9 + 12 + 15 + y = 46 + y = 6 \\times 10 = 60 \\Rightarrow y = 60 - 46 = 14$."
+    },
+    {
+      "id": "ai-sa-10.13.9",
+      "badge": "Luyện thêm TLN 9 - Tìm giá trị chưa biết qua trung vị",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Cho 5 số nguyên dương đã sắp xếp: $3, 5, y, 10, 12$. Biết trung vị của mẫu số liệu bằng 8. Tìm $y$.",
+      "correctAnswer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "explanation": "$n = 5$ lẻ, phần tử chính giữa là $y$, do đó $y = M_e = 8$."
+    },
+    {
+      "id": "ai-sa-10.13.10",
+      "badge": "Luyện thêm TLN 10 - Độ chênh lệch giữa số trung bình và trung vị",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Cho mẫu điểm kiểm tra gồm 10 giá trị: $4, 5, 6, 6, 7, 7, 7, 8, 8, 9$. Tính độ chênh lệch tuyệt đối $|\\overline{x} - M_e|$ giữa số trung bình và trung vị (ghi số thập phân).",
+      "correctAnswer": "0.3",
+      "acceptableAnswers": [
+        "0.3",
+        "0,3",
+        "3/10"
+      ],
+      "explanation": "Tổng $= 67 \\Rightarrow \\overline{x} = 6{,}7$. Trung vị $M_e = \\dfrac{7 + 7}{2} = 7$. Độ chênh lệch $= |6{,}7 - 7| = 0{,}3$."
+    },
+    {
+      "id": "ai-sa-10.13.11",
+      "badge": "Luyện thêm TLN 11 - Tìm tứ phân vị Q2 của mẫu n = 8",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Tìm tứ phân vị thứ hai $Q_2$ của mẫu số liệu sau: $20, 14, 28, 10, 34, 17, 24, 29$.",
+      "correctAnswer": "22",
+      "acceptableAnswers": [
+        "22"
+      ],
+      "explanation": "Sắp xếp: $10, 14, 17, 20, 24, 28, 29, 34$. $Q_2 = M_e = \\dfrac{20 + 24}{2} = 22$."
+    },
+    {
+      "id": "ai-sa-10.13.12",
+      "badge": "Luyện thêm TLN 12 - Tính số trung bình từ bảng tần số",
+      "source": "Chuyên đề Toán 10 KNTT Bài 13",
+      "prompt": "Bảng tần số điểm kiểm tra của 20 học sinh:\n- Điểm 6: 3 học sinh\n- Điểm 7: 7 học sinh\n- Điểm 8: 8 học sinh\n- Điểm 9: 2 học sinh\nTính điểm trung bình $\\overline{x}$ của cả 20 học sinh (ghi số thập phân).",
+      "correctAnswer": "7.45",
+      "acceptableAnswers": [
+        "7.45",
+        "7,45"
+      ],
+      "explanation": "$\\overline{x} = \\dfrac{6 \\times 3 + 7 \\times 7 + 8 \\times 8 + 9 \\times 2}{20} = \\dfrac{18 + 49 + 64 + 18}{20} = \\dfrac{149}{20} = 7{,}45$."
+    }
+  ]
+}
 };
 
 GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-sai-so"] = GRADE_10_AI_PRACTICE_DATA["t10-b12-so-gan-dung-va-sai-so"];
+GRADE_10_AI_PRACTICE_DATA["t10-b13-cac-so-dac-trung-do-xu-the-trung-tam"] = GRADE_10_AI_PRACTICE_DATA["t10-b13-so-dac-trung-do-xu-the-trung-tam"];

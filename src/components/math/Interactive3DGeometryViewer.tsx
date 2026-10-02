@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { RotateCcw, Play, Pause, ZoomIn, ZoomOut, Move3D, Eye } from "lucide-react";
 
-export type Solid3DType = "pyramid-abcd" | "pyramid-so" | "pyramid-m-sc" | "pyramid-am-so" | "pyramid-trapezoid" | "pyramid-parallel" | "pyramid-mn-ad" | "pyramid-mn-ab" | "tetrahedron" | "tetrahedron-dm" | "tetrahedron-mn" | "tetrahedron-mnpq" | "tetrahedron-sg" | "tetrahedron-3centroids";
+export type Solid3DType = "pyramid-abcd" | "pyramid-g1g2" | "pyramid-so" | "pyramid-m-sc" | "pyramid-am-so" | "pyramid-trapezoid" | "pyramid-parallel" | "pyramid-mn-ad" | "pyramid-mn-ab" | "tetrahedron" | "tetrahedron-dm" | "tetrahedron-mn" | "tetrahedron-mnpq" | "tetrahedron-sg" | "tetrahedron-3centroids";
 
 interface Point3D {
   name: string;
@@ -38,6 +38,7 @@ export function Interactive3DGeometryViewer({
   const detectedType = useMemo<Solid3DType | null>(() => {
     if (type) return type;
     if (!fallbackSvg) return null;
+    if (fallbackSvg.includes("G1") && fallbackSvg.includes("G2")) return "pyramid-g1g2";
     if (fallbackSvg.includes("SO") || fallbackSvg.includes(">O<")) {
       if (fallbackSvg.includes("AM") || (fallbackSvg.includes(">M<") && fallbackSvg.includes(">I<"))) {
         return "pyramid-am-so";
@@ -154,6 +155,13 @@ export function Interactive3DGeometryViewer({
           points.push(M, I);
           edges.push({ from: "A", to: "M", style: "highlight-dashed", color: "#ec4899" });
         }
+            } else if (t === "pyramid-g1g2") {
+        // G1 trọng tâm SAB: S(0, h, 0), A(-1.4, 0, -1.3), B(-2.0, 0, 1.2)
+        const G1 = { name: "G1", x: -1.13, y: heightParam * 0.33, z: -0.03, color: "#f59e0b" };
+        // G2 trọng tâm SAD: S(0, h, 0), A(-1.4, 0, -1.3), D(1.6, 0, -1.3)
+        const G2 = { name: "G2", x: 0.07, y: heightParam * 0.33, z: -0.87, color: "#f59e0b" };
+        points.push(G1, G2);
+        edges.push({ from: "G1", to: "G2", style: "highlight-dashed", color: "#f59e0b" });
       } else if (t === "pyramid-m-sc") {
         const M = { name: "M", x: 0.9, y: heightParam * 0.5, z: 0.6, color: "#f59e0b" };
         points.push(M);

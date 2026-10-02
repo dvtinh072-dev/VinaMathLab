@@ -6,6 +6,7 @@ import { GRADE_12_LESSON_6_AI_PRACTICE } from "./grade12Lesson6Data";
 import { GRADE_12_LESSON_7_AI_PRACTICE } from "./grade12Lesson7Data";
 import { GRADE_12_LESSON_8_AI_PRACTICE } from "./grade12Lesson8Data";
 import { GRADE_12_CHAPTER_1_REVIEW_AI_PRACTICE } from "./grade12Chapter1ReviewData";
+import { GRADE_12_CHAPTER_2_REVIEW_AI_PRACTICE } from "./grade12Chapter2ReviewData";
 
 export interface Grade12AiPracticePackage {
   quizQuestions: QuizQuestion[];
@@ -1444,5 +1445,6 @@ export const GRADE_12_AI_PRACTICE_DATA: Record<string, Grade12AiPracticePackage>
   "t12-on-tap-chuong-1": GRADE_12_CHAPTER_1_REVIEW_AI_PRACTICE,
   "t12-b6-vector-trong-khong-gian": GRADE_12_LESSON_6_AI_PRACTICE,
   "t12-b7-he-truc-toa-do-oxyz": GRADE_12_LESSON_7_AI_PRACTICE,
-  "t12-b8-bieu-thuc-toa-do-vector": GRADE_12_LESSON_8_AI_PRACTICE
+  "t12-b8-bieu-thuc-toa-do-vector": GRADE_12_LESSON_8_AI_PRACTICE,
+  "t12-on-tap-chuong-2": GRADE_12_CHAPTER_2_REVIEW_AI_PRACTICE
 };

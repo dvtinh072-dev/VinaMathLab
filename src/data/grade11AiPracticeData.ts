@@ -1,3 +1,4 @@
+import { GRADE_11_LESSON_10_AI_PRACTICE } from "./grade11Lesson10Data";
 import type { QuizQuestion, TrueFalseQuestion, ShortAnswerQuestion } from "./allGradesLessonsData";
 
 export interface Grade11AiPracticePackage {
@@ -7154,4 +7155,6 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
       }
     ]
   }
+,
+  "t11-b10-duong-thang-mat-phang": GRADE_11_LESSON_10_AI_PRACTICE
 };

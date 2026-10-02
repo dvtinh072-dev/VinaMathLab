@@ -1,5 +1,6 @@
 import type { DetailedLessonData } from "./allGradesLessonsData";
 import { GRADE_11_CHAPTER_3_REVIEW_LESSON } from "./grade11Chapter3ReviewData";
+import { GRADE_11_LESSON_10 } from "./grade11Lesson10Data";
 
 export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   // ==========================================
@@ -13166,5 +13167,6 @@ export const GRADE_11_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       }
     ]
   },
-  "t11-on-tap-chuong-3": GRADE_11_CHAPTER_3_REVIEW_LESSON
+  "t11-on-tap-chuong-3": GRADE_11_CHAPTER_3_REVIEW_LESSON,
+  "t11-b10-duong-thang-mat-phang": GRADE_11_LESSON_10
 };

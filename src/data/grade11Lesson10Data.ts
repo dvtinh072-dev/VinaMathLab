@@ -14,7 +14,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       avatar: "🧑‍🎓",
       speech: "Thưa Thầy, tại sao các nhiếp ảnh gia hay họa sĩ luôn dùng giá đỡ ba chân (tripod) mà không dùng giá bốn chân như bàn ghế ạ? Giá bốn chân trên nền đất không bằng phẳng rất hay bị khập khiễng!",
       visualGraphic: "box",
-      mathNote: "3 \text{ điểm không thẳng hàng xác định duy nhất 1 mặt phẳng}"
+      mathNote: "3 \\text{ điểm không thẳng hàng xác định duy nhất 1 mặt phẳng}"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       avatar: "👨‍🏫",
       speech: "Chào Minh! Quan sát rất sắc bén. Trong hình học không gian, có một tính chất thừa nhận cốt lõi: 'Có một và chỉ một mặt phẳng đi qua ba điểm phân biệt không thẳng hàng'. Vì thế 3 đầu mút của chân tripod luôn đồng phẳng với bất kỳ mặt đất nào, giúp giá máy luôn đứng vững tuyệt đối!",
       visualGraphic: "box",
-      mathNote: "(P) \equiv (ABC) \iff A, B, C \text{ không thẳng hàng}"
+      mathNote: "(P) \\equiv (ABC) \\iff A, B, C \\text{ không thẳng hàng}"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       avatar: "🧑‍🎓",
       speech: "Ồ, thật kỳ diệu! Vậy còn 4 điểm thì chưa chắc cùng thuộc một mặt phẳng, giống như bốn chân ghế đặt trên sàn gồ ghề sẽ bị kênh. Em rất hào hứng muốn khám phá các tiên đề và phương pháp tìm giao tuyến, giao điểm trong không gian!",
       visualGraphic: "box",
-      mathNote: "(P) \cap (Q) = d"
+      mathNote: "(P) \\cap (Q) = d"
     }
   ],
   youtubeVideoId: "N1r_d3g28Hk",
@@ -57,8 +57,8 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       title: "1. Khái niệm mở đầu về Mặt phẳng và Điểm",
       points: [
         "Mặt phẳng là một đối tượng cơ bản của hình học không gian không được định nghĩa, tựa như mặt bàn kéo dài vô tận về mọi phía.",
-        "Ký hiệu mặt phẳng: Ta thường dùng chữ cái in hoa đặt trong dấu ngoặc đơn, ví dụ: $(P), (Q), (R), (\alpha), (\beta), \dots$",
-        "Quan hệ liên thuộc: Nếu điểm $A$ thuộc mặt phẳng $(P)$, ta viết $A \in (P)$. Nếu điểm $B$ không thuộc mặt phẳng $(P)$, ta viết $B \notin (P)$.",
+        "Ký hiệu mặt phẳng: Ta thường dùng chữ cái in hoa đặt trong dấu ngoặc đơn, ví dụ: $(P), (Q), (R), (\\alpha), (\\beta), \\dots$",
+        "Quan hệ liên thuộc: Nếu điểm $A$ thuộc mặt phẳng $(P)$, ta viết $A \\in (P)$. Nếu điểm $B$ không thuộc mặt phẳng $(P)$, ta viết $B \\notin (P)$.",
         "Quy tắc biểu diễn hình không gian lên mặt phẳng phẳng (hình vẽ phẳng):",
         "+ Đường thẳng nhìn thấy được vẽ bằng nét liền (—).",
         "+ Đường thẳng bị che khuất vẽ bằng nét đứt khúc (---).",
@@ -68,7 +68,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       examples: [
         {
           problem: "Ví dụ 1: Điểm $M$ thuộc đường thẳng $a$, mà đường thẳng $a$ nằm trong mặt phẳng $(P)$. Hỏi điểm $M$ có thuộc mặt phẳng $(P)$ không?",
-          solution: "Vì $M \in a$ và $a \subset (P)$ nên theo tính chất liên thuộc, ta có $M \in (P)$."
+          solution: "Vì $M \\in a$ và $a \\subset (P)$ nên theo tính chất liên thuộc, ta có $M \\in (P)$."
         }
       ]
     },
@@ -77,15 +77,15 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       title: "2. Các tính chất thừa nhận (Tiên đề hình học không gian)",
       points: [
         "Tính chất 1: Có một và chỉ một mặt phẳng đi qua ba điểm phân biệt không thẳng hàng. Ký hiệu mặt phẳng đó là $(ABC)$.",
-        "Tính chất 2: Nếu một đường thẳng có hai điểm phân biệt thuộc một mặt phẳng thì mọi điểm của đường thẳng đều thuộc mặt phẳng đó. Khi đó ta nói đường thẳng nằm trong mặt phẳng, ký hiệu $d \subset (P)$ hoặc $(P) \supset d$.",
+        "Tính chất 2: Nếu một đường thẳng có hai điểm phân biệt thuộc một mặt phẳng thì mọi điểm của đường thẳng đều thuộc mặt phẳng đó. Khi đó ta nói đường thẳng nằm trong mặt phẳng, ký hiệu $d \\subset (P)$ hoặc $(P) \\supset d$.",
         "Tính chất 3: Tồn tại bốn điểm không cùng thuộc một mặt phẳng (không đồng phẳng).",
-        "Tính chất 4: Nếu hai mặt phẳng phân biệt có một điểm chung thì chúng có một đường thẳng chung duy nhất chứa tất cả các điểm chung của hai mặt phẳng đó. Đường thẳng chung này gọi là **giao tuyến** của hai mặt phẳng: $(P) \cap (Q) = d$.",
+        "Tính chất 4: Nếu hai mặt phẳng phân biệt có một điểm chung thì chúng có một đường thẳng chung duy nhất chứa tất cả các điểm chung của hai mặt phẳng đó. Đường thẳng chung này gọi là **giao tuyến** của hai mặt phẳng: $(P) \\cap (Q) = d$.",
         "Tính chất 5: Trên mỗi mặt phẳng, các kết quả đã biết của hình học phẳng đều đúng (định lý Thales, Pythagore, Menelaus, Ceva, công thức lượng giác...)."
       ],
       examples: [
         {
-          problem: "Ví dụ 2: Hai mặt phẳng phân biệt $(P)$ và $(Q)$ có điểm chung $A$ và điểm chung $B$ ($A \ne B$). Chứng minh giao tuyến của $(P)$ và $(Q)$ là đường thẳng $AB$.",
-          solution: "Vì $A \in (P) \cap (Q)$ và $B \in (P) \cap (Q)$, mà qua 2 điểm phân biệt $A, B$ chỉ có duy nhất một đường thẳng $AB$. Do đó theo Tính chất 4, đường thẳng $AB$ chính là giao tuyến của $(P)$ và $(Q)$, tức $(P) \cap (Q) = AB$."
+          problem: "Ví dụ 2: Hai mặt phẳng phân biệt $(P)$ và $(Q)$ có điểm chung $A$ và điểm chung $B$ ($A \\ne B$). Chứng minh giao tuyến của $(P)$ và $(Q)$ là đường thẳng $AB$.",
+          solution: "Vì $A \\in (P) \\cap (Q)$ và $B \\in (P) \\cap (Q)$, mà qua 2 điểm phân biệt $A, B$ chỉ có duy nhất một đường thẳng $AB$. Do đó theo Tính chất 4, đường thẳng $AB$ chính là giao tuyến của $(P)$ và $(Q)$, tức $(P) \\cap (Q) = AB$."
         }
       ]
     },
@@ -95,13 +95,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       points: [
         "Một mặt phẳng hoàn toàn được xác định khi biết:",
         "1. Ba điểm không thẳng hàng: Mặt phẳng $(ABC)$.",
-        "2. Một đường thẳng và một điểm không thuộc đường thẳng đó: Mặt phẳng $(A, d)$ với $A \notin d$.",
-        "3. Hai đường thẳng cắt nhau: Mặt phẳng $(a, b)$ với $a \cap b = {I}$.",
-        "4. (Mở rộng) Hai đường thẳng song song: Mặt phẳng $(a, b)$ với $a \parallel b$."
+        "2. Một đường thẳng và một điểm không thuộc đường thẳng đó: Mặt phẳng $(A, d)$ với $A \\notin d$.",
+        "3. Hai đường thẳng cắt nhau: Mặt phẳng $(a, b)$ với $a \\cap b = {I}$.",
+        "4. (Mở rộng) Hai đường thẳng song song: Mặt phẳng $(a, b)$ với $a \\parallel b$."
       ],
       examples: [
         {
-          problem: "Ví dụ 3: Cho hai đường thẳng cắt nhau $a$ và $b$ tại $O$. Điểm $M \notin a, M \notin b$. Hỏi có bao nhiêu mặt phẳng chứa cả hai đường thẳng $a$ và $b$?",
+          problem: "Ví dụ 3: Cho hai đường thẳng cắt nhau $a$ và $b$ tại $O$. Điểm $M \\notin a, M \\notin b$. Hỏi có bao nhiêu mặt phẳng chứa cả hai đường thẳng $a$ và $b$?",
           solution: "Hai đường thẳng cắt nhau $a$ và $b$ xác định duy nhất một mặt phẳng, ký hiệu là mặt phẳng $(a, b)$. Do đó có đúng 1 mặt phẳng chứa cả $a$ và $b$."
         }
       ]
@@ -111,10 +111,10 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       title: "4. Hình chóp và Hình tứ diện",
       points: [
         "**Hình chóp:**",
-        "+ Cho đa giác $A_1A_2\dots A_n$ nằm trong mặt phẳng $(\alpha)$ và điểm $S \notin (\alpha)$. Nối $S$ với các đỉnh của đa giác, ta được hình chóp $S.A_1A_2\dots A_n$.",
-        "+ Điểm $S$ gọi là **đỉnh**; đa giác $A_1A_2\dots A_n$ gọi là **mặt đáy**.",
-        "+ Các tam giác $SA_1A_2, SA_2A_3, \dots, SA_nA_1$ gọi là các **mặt bên**.",
-        "+ Các đoạn thẳng $SA_1, SA_2, \dots, SA_n$ là các **cạnh bên**; các cạnh của đa giác đáy là các **cạnh đáy**.",
+        "+ Cho đa giác $A_1A_2\\dots A_n$ nằm trong mặt phẳng $(\\alpha)$ và điểm $S \\notin (\\alpha)$. Nối $S$ với các đỉnh của đa giác, ta được hình chóp $S.A_1A_2\\dots A_n$.",
+        "+ Điểm $S$ gọi là **đỉnh**; đa giác $A_1A_2\\dots A_n$ gọi là **mặt đáy**.",
+        "+ Các tam giác $SA_1A_2, SA_2A_3, \\dots, SA_nA_1$ gọi là các **mặt bên**.",
+        "+ Các đoạn thẳng $SA_1, SA_2, \\dots, SA_n$ là các **cạnh bên**; các cạnh của đa giác đáy là các **cạnh đáy**.",
         "**Hình tứ diện:**",
         "+ Cho 4 điểm $A, B, C, D$ không đồng phẳng. Hình gồm 4 mặt tam giác $ABC, BCD, CDA, DAB$ gọi là hình tứ diện $ABCD$.",
         "+ Tứ diện có 4 đỉnh, 4 mặt, 6 cạnh.",
@@ -124,7 +124,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       examples: [
         {
           problem: "Ví dụ 4: Hình chóp tứ giác $S.ABCD$ có bao nhiêu mặt, bao nhiêu cạnh?",
-          solution: "Hình chóp tứ giác có 1 mặt đáy là tứ giác và 4 mặt bên là tam giác $\Rightarrow$ Có 5 mặt. Có 4 cạnh đáy và 4 cạnh bên $\Rightarrow$ Có 8 cạnh."
+          solution: "Hình chóp tứ giác có 1 mặt đáy là tứ giác và 4 mặt bên là tam giác $\\Rightarrow$ Có 5 mặt. Có 4 cạnh đáy và 4 cạnh bên $\\Rightarrow$ Có 8 cạnh."
         }
       ]
     },
@@ -133,23 +133,23 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       title: "5. Các phương pháp giải toán hình học không gian cốt lõi",
       points: [
         "**Dạng 1: Tìm giao tuyến của hai mặt phẳng $(P)$ và $(Q)$:**",
-        "+ Phương pháp: Tìm hai điểm chung phân biệt $A$ và $B$ của $(P)$ và $(Q)$. Khi đó giao tuyến là đường thẳng $AB = (P) \cap (Q)$.",
+        "+ Phương pháp: Tìm hai điểm chung phân biệt $A$ và $B$ của $(P)$ và $(Q)$. Khi đó giao tuyến là đường thẳng $AB = (P) \\cap (Q)$.",
         "+ Để tìm điểm chung, tìm giao điểm của hai đường thẳng cùng nằm trong một mặt phẳng thứ ba.",
-        "**Dạng 2: Tìm giao điểm của đường thẳng $d$ và mặt phẳng $(\alpha)$:**",
-        "+ Bước 1: Tìm một mặt phẳng phụ $(\beta)$ chứa $d$.",
-        "+ Bước 2: Tìm giao tuyến $a = (\alpha) \cap (\beta)$.",
-        "+ Bước 3: Trong mặt phẳng $(\beta)$, tìm giao điểm $M = d \cap a$. Khi đó $M = d \cap (\alpha)$.",
+        "**Dạng 2: Tìm giao điểm của đường thẳng $d$ và mặt phẳng $(\\alpha)$:**",
+        "+ Bước 1: Tìm một mặt phẳng phụ $(\\beta)$ chứa $d$.",
+        "+ Bước 2: Tìm giao tuyến $a = (\\alpha) \\cap (\\beta)$.",
+        "+ Bước 3: Trong mặt phẳng $(\\beta)$, tìm giao điểm $M = d \\cap a$. Khi đó $M = d \\cap (\\alpha)$.",
         "**Dạng 3: Chứng minh ba điểm thẳng hàng, ba đường thẳng đồng quy:**",
         "+ Chứng minh 3 điểm cùng thuộc giao tuyến của hai mặt phẳng phân biệt.",
         "+ Chứng minh 3 đường thẳng là 3 giao tuyến của 3 mặt phẳng đôi một cắt nhau.",
-        "**Dạng 4: Tìm thiết diện (mặt cắt) của hình chóp với mặt phẳng $(\alpha)$:**",
-        "+ Tìm lần lượt các đoạn giao tuyến của $(\alpha)$ với các mặt của hình chóp.",
+        "**Dạng 4: Tìm thiết diện (mặt cắt) của hình chóp với mặt phẳng $(\\alpha)$:**",
+        "+ Tìm lần lượt các đoạn giao tuyến của $(\\alpha)$ với các mặt của hình chóp.",
         "+ Nối các đoạn giao tuyến đó lại tạo thành một đa giác kín, đa giác này chính là thiết diện cần tìm."
       ],
       examples: [
         {
           problem: "Ví dụ 5: Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thang (đáy lớn $AB$, đáy nhỏ $CD$). Tìm giao tuyến của $(SAD)$ và $(SBC)$.",
-          solution: "Điểm chung thứ nhất là đỉnh $S$. Trong mặt phẳng đáy $(ABCD)$, hai đường thẳng $AD$ và $BC$ không song song nên cắt nhau tại $E$. Vì $E \in AD \subset (SAD)$ và $E \in BC \subset (SBC)$ nên $E$ là điểm chung thứ hai. Vậy giao tuyến là đường thẳng $SE$."
+          solution: "Điểm chung thứ nhất là đỉnh $S$. Trong mặt phẳng đáy $(ABCD)$, hai đường thẳng $AD$ và $BC$ không song song nên cắt nhau tại $E$. Vì $E \\in AD \\subset (SAD)$ và $E \\in BC \\subset (SBC)$ nên $E$ là điểm chung thứ hai. Vậy giao tuyến là đường thẳng $SE$."
         }
       ]
     }
@@ -240,7 +240,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Đường thẳng $d$ cắt mặt phẳng $(P)$ tại hai điểm."
       ],
       correctIndex: 0,
-      explanation: "Theo Tính chất 2: Nếu một đường thẳng có hai điểm phân biệt thuộc một mặt phẳng thì mọi điểm của đường thẳng đều thuộc mặt phẳng đó (tức $d \subset (P)$)."
+      explanation: "Theo Tính chất 2: Nếu một đường thẳng có hai điểm phân biệt thuộc một mặt phẳng thì mọi điểm của đường thẳng đều thuộc mặt phẳng đó (tức $d \\subset (P)$)."
     },
     {
       id: "quiz-11.10.3",
@@ -310,7 +310,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Đường thẳng $AB$."
       ],
       correctIndex: 0,
-      explanation: "Ta có: $S \in (SAC) \cap (SBD)$. Mặt khác $O = AC \cap BD$ nên $O \in AC \subset (SAC)$ và $O \in BD \subset (SBD) \Rightarrow O \in (SAC) \cap (SBD)$. Vậy giao tuyến là $SO$."
+      explanation: "Ta có: $S \\in (SAC) \\cap (SBD)$. Mặt khác $O = AC \\cap BD$ nên $O \\in AC \\subset (SAC)$ và $O \\in BD \\subset (SBD) \\Rightarrow O \\in (SAC) \\cap (SBD)$. Vậy giao tuyến là $SO$."
     },
     {
       id: "quiz-11.10.8",
@@ -324,21 +324,21 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "$12$ cạnh và $7$ mặt."
       ],
       correctIndex: 0,
-      explanation: "Hình chóp có đáy là đa giác $n$ cạnh thì có $n$ cạnh đáy và $n$ cạnh bên $\Rightarrow$ tổng số cạnh là $2n = 2 \times 5 = 10$ cạnh. Số mặt gồm 1 đáy và $n$ mặt bên $\Rightarrow n + 1 = 6$ mặt."
+      explanation: "Hình chóp có đáy là đa giác $n$ cạnh thì có $n$ cạnh đáy và $n$ cạnh bên $\\Rightarrow$ tổng số cạnh là $2n = 2 \\times 5 = 10$ cạnh. Số mặt gồm 1 đáy và $n$ mặt bên $\\Rightarrow n + 1 = 6$ mặt."
     },
     {
       id: "quiz-11.10.9",
       badge: "Câu 9 - Thông hiểu - Điểm thuộc mặt phẳng",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      question: "Cho hình chóp $S.ABCD$ đáy $ABCD$. Điểm $M$ nằm trên cạnh $SC$ ($M \ne S, M \ne C$). Khẳng định nào sau đây là ĐÚNG?",
+      question: "Cho hình chóp $S.ABCD$ đáy $ABCD$. Điểm $M$ nằm trên cạnh $SC$ ($M \\ne S, M \\ne C$). Khẳng định nào sau đây là ĐÚNG?",
       options: [
-        "$M \in (SCD)$.",
-        "$M \in (ABCD)$.",
-        "$M \in (SAB)$.",
-        "$SC \not\subset (SAC)$."
+        "$M \\in (SCD)$.",
+        "$M \\in (ABCD)$.",
+        "$M \\in (SAB)$.",
+        "$SC \\not\\subset (SAC)$."
       ],
       correctIndex: 0,
-      explanation: "Vì $M \in SC$ và $SC \subset (SCD)$ nên $M \in (SCD)$."
+      explanation: "Vì $M \\in SC$ và $SC \\subset (SCD)$ nên $M \\in (SCD)$."
     },
     {
       id: "quiz-11.10.10",
@@ -366,7 +366,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Đồng quy tại một điểm."
       ],
       correctIndex: 0,
-      explanation: "Ba giao điểm phân biệt $A, B, C$ không thẳng hàng xác định duy nhất một mặt phẳng $(ABC)$. Vì $a$ đi qua $A, B$ nên $a \subset (ABC)$; tương tự $b, c \subset (ABC)$. Vậy ba đường thẳng cùng nằm trên mặt phẳng $(ABC)$."
+      explanation: "Ba giao điểm phân biệt $A, B, C$ không thẳng hàng xác định duy nhất một mặt phẳng $(ABC)$. Vì $a$ đi qua $A, B$ nên $a \\subset (ABC)$; tương tự $b, c \\subset (ABC)$. Vậy ba đường thẳng cùng nằm trên mặt phẳng $(ABC)$."
     },
     {
       id: "quiz-11.10.12",
@@ -380,21 +380,21 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Trung điểm của $BC$."
       ],
       correctIndex: 0,
-      explanation: "Vì $M$ nằm trên $AB$ mà $AB \subset (ABC)$ nên $M \in (ABC)$. Lại có $M \in DM$, suy ra $DM \cap (ABC) = M$."
+      explanation: "Vì $M$ nằm trên $AB$ mà $AB \\subset (ABC)$ nên $M \\in (ABC)$. Lại có $M \\in DM$, suy ra $DM \\cap (ABC) = M$."
     },
     {
       id: "quiz-11.10.13",
       badge: "Câu 13 - Vận dụng - Giao tuyến qua điểm kéo dài trong đáy",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      question: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thang với đáy lớn $AB$, đáy nhỏ $CD$ ($AB$ không song song $CD$). Gọi $I = AD \cap BC$. Giao tuyến của $(SAD)$ và $(SBC)$ là đường thẳng nào?",
+      question: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thang với đáy lớn $AB$, đáy nhỏ $CD$ ($AB$ không song song $CD$). Gọi $I = AD \\cap BC$. Giao tuyến của $(SAD)$ và $(SBC)$ là đường thẳng nào?",
       options: [
         "$SI$.",
-        "$SO$ với $O = AC \cap BD$.",
+        "$SO$ với $O = AC \\cap BD$.",
         "$AB$.",
         "$CD$."
       ],
       correctIndex: 0,
-      explanation: "Ta có $S$ là điểm chung thứ nhất. Trong mặt phẳng đáy $(ABCD)$, hai cạnh bên $AD$ và $BC$ cắt nhau tại $I$. Do $I \in AD \subset (SAD)$ và $I \in BC \subset (SBC)$ nên $I$ là điểm chung thứ hai. Vậy giao tuyến là $SI$."
+      explanation: "Ta có $S$ là điểm chung thứ nhất. Trong mặt phẳng đáy $(ABCD)$, hai cạnh bên $AD$ và $BC$ cắt nhau tại $I$. Do $I \\in AD \\subset (SAD)$ và $I \\in BC \\subset (SBC)$ nên $I$ là điểm chung thứ hai. Vậy giao tuyến là $SI$."
     },
     {
       id: "quiz-11.10.14",
@@ -408,21 +408,21 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Giao điểm của $AM$ và $SD$."
       ],
       correctIndex: 0,
-      explanation: "Chọn mặt phẳng phụ chứa $AM$ là $(SAC)$. Giao tuyến của $(SAC)$ và $(SBD)$ là $SO$. Trong mặt phẳng $(SAC)$, $AM$ cắt $SO$ tại $I$. Vì $I \in SO \subset (SBD)$ nên $I$ chính là giao điểm của $AM$ với $(SBD)$."
+      explanation: "Chọn mặt phẳng phụ chứa $AM$ là $(SAC)$. Giao tuyến của $(SAC)$ và $(SBD)$ là $SO$. Trong mặt phẳng $(SAC)$, $AM$ cắt $SO$ tại $I$. Vì $I \\in SO \\subset (SBD)$ nên $I$ chính là giao điểm của $AM$ với $(SBD)$."
     },
     {
       id: "quiz-11.10.15",
       badge: "Câu 15 - Vận dụng - Tỉ số giao điểm của đường thẳng với đường chéo",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      question: "Trong bài toán trên (hình bình hành $ABCD$ tâm $O$, $M$ là trung điểm $SC$, $I = AM \cap SO$), tỉ số $\dfrac{SI}{SO}$ bằng:",
+      question: "Trong bài toán trên (hình bình hành $ABCD$ tâm $O$, $M$ là trung điểm $SC$, $I = AM \\cap SO$), tỉ số $\\dfrac{SI}{SO}$ bằng:",
       options: [
-        "$\dfrac{2}{3}$",
-        "$\dfrac{1}{2}$",
-        "$\dfrac{3}{4}$",
-        "$\dfrac{1}{3}$"
+        "$\\dfrac{2}{3}$",
+        "$\\dfrac{1}{2}$",
+        "$\\dfrac{3}{4}$",
+        "$\\dfrac{1}{3}$"
       ],
       correctIndex: 0,
-      explanation: "Xét tam giác $SAC$: $SO$ là đường trung tuyến (vì $O$ là trung điểm $AC$), $AM$ cũng là đường trung tuyến (vì $M$ là trung điểm $SC$). Do đó giao điểm $I$ chính là trọng tâm của tam giác $SAC$. Theo tính chất trọng tâm, ta có $\dfrac{SI}{SO} = \dfrac{2}{3}$."
+      explanation: "Xét tam giác $SAC$: $SO$ là đường trung tuyến (vì $O$ là trung điểm $AC$), $AM$ cũng là đường trung tuyến (vì $M$ là trung điểm $SC$). Do đó giao điểm $I$ chính là trọng tâm của tam giác $SAC$. Theo tính chất trọng tâm, ta có $\\dfrac{SI}{SO} = \\dfrac{2}{3}$."
     },
     {
       id: "quiz-11.10.16",
@@ -436,13 +436,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "Có thể là hình ngũ giác."
       ],
       correctIndex: 0,
-      explanation: "Vì tứ diện chỉ có 4 mặt nên một mặt phẳng cắt các mặt của tứ diện nhiều nhất ở 4 mặt $\Rightarrow$ thiết diện chỉ có thể là tam giác (cắt 3 mặt) hoặc tứ giác (cắt 4 mặt), không thể là ngũ giác."
+      explanation: "Vì tứ diện chỉ có 4 mặt nên một mặt phẳng cắt các mặt của tứ diện nhiều nhất ở 4 mặt $\\Rightarrow$ thiết diện chỉ có thể là tam giác (cắt 3 mặt) hoặc tứ giác (cắt 4 mặt), không thể là ngũ giác."
     },
     {
       id: "quiz-11.10.17",
       badge: "Câu 17 - Vận dụng - Chứng minh ba điểm thẳng hàng",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      question: "Cho tứ diện $ABCD$. Các đường thẳng $AB$ và $CD$ không song song. Điểm $M \in AB, N \in CD, P \in BC$. Để chứng minh ba điểm nào đó thẳng hàng bằng phương pháp hình học không gian, ta thường chỉ ra:",
+      question: "Cho tứ diện $ABCD$. Các đường thẳng $AB$ và $CD$ không song song. Điểm $M \\in AB, N \\in CD, P \\in BC$. Để chứng minh ba điểm nào đó thẳng hàng bằng phương pháp hình học không gian, ta thường chỉ ra:",
       options: [
         "Ba điểm đó là các điểm chung của hai mặt phẳng phân biệt.",
         "Ba điểm đó cùng cách đều một điểm thứ tư.",
@@ -456,7 +456,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       id: "quiz-11.10.18",
       badge: "Câu 18 - Vận dụng cao - Thiết diện hình chóp tứ giác",
       source: "Đề thi thử Tốt nghiệp THPT 2025",
-      question: "Thiết diện của hình chóp tứ giác $S.ABCD$ khi cắt bởi một mặt phẳng $(\alpha)$ có thể có TỐI ĐA bao nhiêu cạnh?",
+      question: "Thiết diện của hình chóp tứ giác $S.ABCD$ khi cắt bởi một mặt phẳng $(\\alpha)$ có thể có TỐI ĐA bao nhiêu cạnh?",
       options: [
         "$5$ cạnh.",
         "$4$ cạnh.",
@@ -464,7 +464,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "$8$ cạnh."
       ],
       correctIndex: 0,
-      explanation: "Hình chóp tứ giác có 5 mặt (1 mặt đáy và 4 mặt bên). Mặt phẳng $(\alpha)$ cắt mỗi mặt của hình chóp theo tối đa một đoạn giao tuyến. Do đó thiết diện có tối đa 5 cạnh (ngũ giác)."
+      explanation: "Hình chóp tứ giác có 5 mặt (1 mặt đáy và 4 mặt bên). Mặt phẳng $(\\alpha)$ cắt mỗi mặt của hình chóp theo tối đa một đoạn giao tuyến. Do đó thiết diện có tối đa 5 cạnh (ngũ giác)."
     },
     {
       id: "quiz-11.10.19",
@@ -472,13 +472,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       source: "Đề phát triển ĐGNL 2025",
       question: "Cho tứ diện đều $ABCD$ có tất cả các cạnh bằng $a$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$. Mặt phẳng $(P)$ đi qua $MN$ và song song với $BC$. Thiết diện của tứ diện cắt bởi $(P)$ là hình gì?",
       options: [
-        "Hình bình hành có diện tích $S = \dfrac{a^2 \sqrt{2}}{8}$.",
-        "Hình tam giác đều có diện tích $S = \dfrac{a^2 \sqrt{3}}{4}$.",
-        "Hình chữ nhật có diện tích $S = \dfrac{a^2}{4}$.",
-        "Hình thang vuông có diện tích $S = \dfrac{a^2 \sqrt{2}}{4}$."
+        "Hình bình hành có diện tích $S = \\dfrac{a^2 \\sqrt{2}}{8}$.",
+        "Hình tam giác đều có diện tích $S = \\dfrac{a^2 \\sqrt{3}}{4}$.",
+        "Hình chữ nhật có diện tích $S = \\dfrac{a^2}{4}$.",
+        "Hình thang vuông có diện tích $S = \\dfrac{a^2 \\sqrt{2}}{4}$."
       ],
       correctIndex: 0,
-      explanation: "Mặt phẳng $(P)$ qua $M$ song song với $BC$ cắt $AC$ tại trung điểm $P$ của $AC$; qua $N$ song song với $BC$ cắt $BD$ tại trung điểm $Q$ của $BD$. Thiết diện là hình bình hành $MPNQ$. Vì $BC \perp AD$ trong tứ diện đều nên thiết diện là hình vuông cạnh $\dfrac{a}{2}$. Diện tích là $\left(\dfrac{a}{2}\right)^2 \times \sin = \dfrac{a^2 \sqrt{2}}{8}$ theo phép chiếu."
+      explanation: "Mặt phẳng $(P)$ qua $M$ song song với $BC$ cắt $AC$ tại trung điểm $P$ của $AC$; qua $N$ song song với $BC$ cắt $BD$ tại trung điểm $Q$ của $BD$. Thiết diện là hình bình hành $MPNQ$. Vì $BC \\perp AD$ trong tứ diện đều nên thiết diện là hình vuông cạnh $\\dfrac{a}{2}$. Diện tích là $\\left(\\dfrac{a}{2}\\right)^2 \\times \\sin = \\dfrac{a^2 \\sqrt{2}}{8}$ theo phép chiếu."
     },
     {
       id: "quiz-11.10.20",
@@ -492,7 +492,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
         "$20$"
       ],
       correctIndex: 0,
-      explanation: "Mỗi cặp hai mặt phẳng phân biệt cắt nhau tạo thành 1 giao tuyến. Với 5 mặt phẳng đôi một cắt nhau, số giao tuyến phân biệt tối đa là số tổ hợp chập 2 của 5: $C_5^2 = \dfrac{5 \times 4}{2} = 10$ giao tuyến."
+      explanation: "Mỗi cặp hai mặt phẳng phân biệt cắt nhau tạo thành 1 giao tuyến. Với 5 mặt phẳng đôi một cắt nhau, số giao tuyến phân biệt tối đa là số tổ hợp chập 2 của 5: $C_5^2 = \\dfrac{5 \\times 4}{2} = 10$ giao tuyến."
     }
   ],
   trueFalseQuestions: [
@@ -538,7 +538,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "a",
           text: "Đường thẳng $d$ và điểm $A$ luôn xác định duy nhất một mặt phẳng kí hiệu là $(A, d)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $A \notin d$ nên theo cách xác định mặt phẳng, có duy nhất một mặt phẳng chứa $A$ và $d$."
+          explanation: "Đúng, vì $A \\notin d$ nên theo cách xác định mặt phẳng, có duy nhất một mặt phẳng chứa $A$ và $d$."
         },
         {
           id: "b",
@@ -564,31 +564,31 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       id: "tf-11.10.3",
       badge: "Đúng/Sai 3 - Hình chóp tứ giác S.ABCD",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      prompt: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là tứ giác lồi, các cạnh đối diện không song song. Gọi $O = AC \cap BD$ và $E = AB \cap CD$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      prompt: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là tứ giác lồi, các cạnh đối diện không song song. Gọi $O = AC \\cap BD$ và $E = AB \\cap CD$. Xét tính Đúng / Sai của các mệnh đề sau:",
       subItems: [
         {
           id: "a",
           text: "Giao tuyến của hai mặt phẳng $(SAC)$ và $(SBD)$ là đường thẳng $SO$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $S$ là điểm chung thứ nhất và $O = AC \cap BD$ là điểm chung thứ hai."
+          explanation: "Đúng, vì $S$ là điểm chung thứ nhất và $O = AC \\cap BD$ là điểm chung thứ hai."
         },
         {
           id: "b",
           text: "Giao tuyến của hai mặt phẳng $(SAB)$ và $(SCD)$ là đường thẳng $SE$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $S$ là điểm chung thứ nhất và $E = AB \cap CD$ là điểm chung thứ hai thuộc mặt đáy."
+          explanation: "Đúng, vì $S$ là điểm chung thứ nhất và $E = AB \\cap CD$ là điểm chung thứ hai thuộc mặt đáy."
         },
         {
           id: "c",
           text: "Đường thẳng $SO$ nằm trong mặt phẳng $(SAB)$.",
           correctAnswer: false,
-          explanation: "Sai, điểm $O$ thuộc miền trong của tứ giác đáy $ABCD$, $O \notin AB$ nên $SO$ không nằm trong $(SAB)$."
+          explanation: "Sai, điểm $O$ thuộc miền trong của tứ giác đáy $ABCD$, $O \\notin AB$ nên $SO$ không nằm trong $(SAB)$."
         },
         {
           id: "d",
           text: "Giao điểm của đường thẳng $SO$ với mặt phẳng $(ABCD)$ chính là điểm $O$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $O \in SO$ và $O = AC \cap BD \subset (ABCD)$ nên $SO \cap (ABCD) = O$."
+          explanation: "Đúng, vì $O \\in SO$ và $O = AC \\cap BD \\subset (ABCD)$ nên $SO \\cap (ABCD) = O$."
         }
       ]
     },
@@ -602,7 +602,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "a",
           text: "Điểm $M$ thuộc cả hai mặt phẳng $(ABC)$ và $(ABD)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $M \in AB$ mà $AB = (ABC) \cap (ABD)$."
+          explanation: "Đúng, vì $M \\in AB$ mà $AB = (ABC) \\cap (ABD)$."
         },
         {
           id: "b",
@@ -614,13 +614,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "c",
           text: "Mặt phẳng $(ABN)$ và mặt phẳng $(CDM)$ có chung đoạn thẳng $MN$.",
           correctAnswer: true,
-          explanation: "Đúng, $M \in AB \subset (ABN)$ và $N \in (ABN) \Rightarrow MN \subset (ABN)$. Tương tự $N \in CD \subset (CDM)$ và $M \in (CDM) \Rightarrow MN \subset (CDM)$."
+          explanation: "Đúng, $M \\in AB \\subset (ABN)$ và $N \\in (ABN) \\Rightarrow MN \\subset (ABN)$. Tương tự $N \\in CD \\subset (CDM)$ và $M \\in (CDM) \\Rightarrow MN \\subset (CDM)$."
         },
         {
           id: "d",
           text: "Thiết diện của tứ diện $ABCD$ cắt bởi mặt phẳng $(ABN)$ là tam giác $ABN$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $(ABN)$ cắt mặt $(ABC)$ theo đoạn $AN$, cắt mặt $(ABD)$ theo đoạn $BN$, và chứa cạnh $AB$ $\Rightarrow$ thiết diện là tam giác $ABN$."
+          explanation: "Đúng, vì $(ABN)$ cắt mặt $(ABC)$ theo đoạn $AN$, cắt mặt $(ABD)$ theo đoạn $BN$, và chứa cạnh $AB$ $\\Rightarrow$ thiết diện là tam giác $ABN$."
         }
       ]
     },
@@ -634,13 +634,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "a",
           text: "Giao điểm của đường thẳng $SG$ với mặt phẳng $(ABC)$ là điểm $G$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $G \in (ABC)$ và $G \in SG$."
+          explanation: "Đúng, vì $G \\in (ABC)$ và $G \\in SG$."
         },
         {
           id: "b",
           text: "Đường thẳng $AM$ nằm trong mặt phẳng $(SBC)$.",
           correctAnswer: false,
-          explanation: "Sai, $A \notin (SBC)$ và $M$ không thuộc $(SBC)$ nên $AM$ không thể nằm trong $(SBC)$."
+          explanation: "Sai, $A \\notin (SBC)$ và $M$ không thuộc $(SBC)$ nên $AM$ không thể nằm trong $(SBC)$."
         },
         {
           id: "c",
@@ -652,7 +652,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "d",
           text: "Giao điểm của đường thẳng $AM$ với mặt phẳng $(SBC)$ chính là giao điểm của $AM$ và $SA'$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $SA' \subset (SBC)$ nên giao điểm của $AM$ với $SA'$ nằm trên mặt phẳng $(SBC)$."
+          explanation: "Đúng, vì $SA' \\subset (SBC)$ nên giao điểm của $AM$ với $SA'$ nằm trên mặt phẳng $(SBC)$."
         }
       ]
     },
@@ -660,7 +660,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       id: "tf-11.10.6",
       badge: "Đúng/Sai 6 - Ba điểm thẳng hàng trong không gian",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      prompt: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thang đáy lớn $AB$, đáy nhỏ $CD$. Gọi $I = AD \cap BC$, $J = AC \cap BD$. Mặt phẳng $(\alpha)$ cắt các cạnh $SA, SB, SC, SD$ lần lượt tại $A', B', C', D'$. Gọi $I' = A'D' \cap B'C'$, $J' = A'C' \cap B'D'$. Xét tính Đúng / Sai của các khẳng định sau:",
+      prompt: "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thang đáy lớn $AB$, đáy nhỏ $CD$. Gọi $I = AD \\cap BC$, $J = AC \\cap BD$. Mặt phẳng $(\\alpha)$ cắt các cạnh $SA, SB, SC, SD$ lần lượt tại $A', B', C', D'$. Gọi $I' = A'D' \\cap B'C'$, $J' = A'C' \\cap B'D'$. Xét tính Đúng / Sai của các khẳng định sau:",
       subItems: [
         {
           id: "a",
@@ -678,13 +678,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "c",
           text: "Đường thẳng $I'J'$ cắt đường thẳng $IJ$.",
           correctAnswer: false,
-          explanation: "Sai, $I'J'$ thuộc mặt phẳng $(\alpha)$ còn $IJ$ thuộc mặt phẳng đáy $(ABCD)$. Chúng chỉ cắt nhau nếu hai mặt phẳng cắt nhau và giao tuyến chứa giao điểm này, không thể tùy tiện khẳng định luôn cắt nhau."
+          explanation: "Sai, $I'J'$ thuộc mặt phẳng $(\\alpha)$ còn $IJ$ thuộc mặt phẳng đáy $(ABCD)$. Chúng chỉ cắt nhau nếu hai mặt phẳng cắt nhau và giao tuyến chứa giao điểm này, không thể tùy tiện khẳng định luôn cắt nhau."
         },
         {
           id: "d",
-          text: "Nếu $A'B' \parallel CD$ thì $A'B' \parallel AB$.",
+          text: "Nếu $A'B' \\parallel CD$ thì $A'B' \\parallel AB$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $AB \parallel CD$, theo tính chất bắc cầu quan hệ song song của các đường thẳng cùng nằm trong các mặt cắt tương ứng."
+          explanation: "Đúng, vì $AB \\parallel CD$, theo tính chất bắc cầu quan hệ song song của các đường thẳng cùng nằm trong các mặt cắt tương ứng."
         }
       ]
     },
@@ -704,19 +704,19 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "b",
           text: "Mặt phẳng $(ADM)$ cắt mặt phẳng $(SAB)$ theo giao tuyến là đoạn thẳng $AM$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $A \in (SAB)$ và $M \in SB \subset (SAB)$ nên giao tuyến là $AM$."
+          explanation: "Đúng, vì $A \\in (SAB)$ và $M \\in SB \\subset (SAB)$ nên giao tuyến là $AM$."
         },
         {
           id: "c",
           text: "Giao tuyến của $(ADM)$ với $(SCD)$ đi qua điểm $D$ và song song với $AB$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $AD \parallel BC$ trong đáy, theo định lý giao tuyến của hai mặt phẳng đi qua hai đường thẳng song song."
+          explanation: "Đúng, vì $AD \\parallel BC$ trong đáy, theo định lý giao tuyến của hai mặt phẳng đi qua hai đường thẳng song song."
         },
         {
           id: "d",
           text: "Thiết diện của hình chóp cắt bởi mặt phẳng $(ADM)$ luôn là một hình tam giác.",
           correctAnswer: false,
-          explanation: "Sai, thiết diện cắt các mặt bên và đáy tạo thành một hình thang $ADNM$ (với $N \in SC$), tức là một tứ giác chứ không phải tam giác."
+          explanation: "Sai, thiết diện cắt các mặt bên và đáy tạo thành một hình thang $ADNM$ (với $N \\in SC$), tức là một tứ giác chứ không phải tam giác."
         }
       ]
     },
@@ -724,7 +724,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       id: "tf-11.10.8",
       badge: "Đúng/Sai 8 - Số lượng hình học cơ bản trong không gian",
       source: "Tài liệu GDPT 2018 Toán 11 C4B1",
-      prompt: "Cho $n$ điểm phân biệt trong không gian ($n \ge 4$), trong đó không có 4 điểm nào đồng phẳng và không có 3 điểm nào thẳng hàng. Xét tính Đúng / Sai của các phát biểu sau:",
+      prompt: "Cho $n$ điểm phân biệt trong không gian ($n \\ge 4$), trong đó không có 4 điểm nào đồng phẳng và không có 3 điểm nào thẳng hàng. Xét tính Đúng / Sai của các phát biểu sau:",
       subItems: [
         {
           id: "a",
@@ -742,13 +742,13 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
           id: "c",
           text: "Với $n = 5$, số mặt phẳng phân biệt tạo thành là $10$.",
           correctAnswer: true,
-          explanation: "Đúng, $C_5^3 = \dfrac{5 \times 4 \times 3}{3 \times 2 \times 1} = 10$ mặt phẳng."
+          explanation: "Đúng, $C_5^3 = \\dfrac{5 \\times 4 \\times 3}{3 \\times 2 \\times 1} = 10$ mặt phẳng."
         },
         {
           id: "d",
           text: "Với $n = 6$, số tứ diện phân biệt có các đỉnh lấy từ $n$ điểm là $20$.",
           correctAnswer: false,
-          explanation: "Sai, số tứ diện là số cách chọn 4 điểm từ $n$ điểm: $C_6^4 = C_6^2 = \dfrac{6 \times 5}{2} = 15$ tứ diện, chứ không phải $20$."
+          explanation: "Sai, số tứ diện là số cách chọn 4 điểm từ $n$ điểm: $C_6^4 = C_6^2 = \\dfrac{6 \\times 5}{2} = 15$ tứ diện, chứ không phải $20$."
         }
       ]
     }
@@ -770,7 +770,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Một hình chóp có tất cả 9 mặt (gồm cả mặt đáy và các mặt bên). Hỏi hình chóp đó có bao nhiêu cạnh?",
       correctAnswer: "16",
       acceptableAnswers: ["16"],
-      explanation: "Hình chóp có đáy là đa giác $n$ cạnh thì có $n$ mặt bên và 1 mặt đáy, tổng số mặt là $n + 1 = 9 \Rightarrow n = 8$. Số cạnh của hình chóp là $2n = 2 \times 8 = 16$ cạnh."
+      explanation: "Hình chóp có đáy là đa giác $n$ cạnh thì có $n$ mặt bên và 1 mặt đáy, tổng số mặt là $n + 1 = 9 \\Rightarrow n = 8$. Số cạnh của hình chóp là $2n = 2 \\times 8 = 16$ cạnh."
     },
     {
       id: "sa-11.10.3",
@@ -779,7 +779,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Cho 5 điểm phân biệt trong không gian sao cho không có 4 điểm nào đồng phẳng. Hỏi có thể lập được bao nhiêu mặt phẳng đi qua 3 trong 5 điểm đã cho?",
       correctAnswer: "10",
       acceptableAnswers: ["10"],
-      explanation: "Số mặt phẳng tạo thành từ 3 trong 5 điểm không đồng phẳng là $C_5^3 = \dfrac{5!}{3! \times 2!} = 10$ mặt phẳng."
+      explanation: "Số mặt phẳng tạo thành từ 3 trong 5 điểm không đồng phẳng là $C_5^3 = \\dfrac{5!}{3! \\times 2!} = 10$ mặt phẳng."
     },
     {
       id: "sa-11.10.4",
@@ -806,7 +806,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Một hình chóp có tổng số cạnh bằng 24. Hỏi hình chóp đó có bao nhiêu đỉnh?",
       correctAnswer: "13",
       acceptableAnswers: ["13"],
-      explanation: "Hình chóp đáy $n$ giác có $2n$ cạnh $\Rightarrow 2n = 24 \Rightarrow n = 12$. Đáy có 12 đỉnh, cộng thêm đỉnh chóp $S$ thì hình chóp có tất cả $n + 1 = 12 + 1 = 13$ đỉnh."
+      explanation: "Hình chóp đáy $n$ giác có $2n$ cạnh $\\Rightarrow 2n = 24 \\Rightarrow n = 12$. Đáy có 12 đỉnh, cộng thêm đỉnh chóp $S$ thì hình chóp có tất cả $n + 1 = 12 + 1 = 13$ đỉnh."
     },
     {
       id: "sa-11.10.7",
@@ -815,7 +815,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Cho tứ diện đều $ABCD$ có tất cả các cạnh bằng 8. Gọi $M, N, P, Q$ lần lượt là trung điểm của các cạnh $AB, BC, CD, DA$. Tính chu vi của tứ giác $MNPQ$.",
       correctAnswer: "16",
       acceptableAnswers: ["16"],
-      explanation: "$MN$ là đường trung bình trong $\triangle ABC \Rightarrow MN = \dfrac{AC}{2} = \dfrac{8}{2} = 4$. Tương tự $PQ = \dfrac{AC}{2} = 4$, $NP = \dfrac{BD}{2} = 4$, $QM = \dfrac{BD}{2} = 4$. Chu vi của hình bình hành (hình thoi) $MNPQ$ là $4 \times 4 = 16$."
+      explanation: "$MN$ là đường trung bình trong $\\triangle ABC \\Rightarrow MN = \\dfrac{AC}{2} = \\dfrac{8}{2} = 4$. Tương tự $PQ = \\dfrac{AC}{2} = 4$, $NP = \\dfrac{BD}{2} = 4$, $QM = \\dfrac{BD}{2} = 4$. Chu vi của hình bình hành (hình thoi) $MNPQ$ là $4 \\times 4 = 16$."
     },
     {
       id: "sa-11.10.8",
@@ -833,7 +833,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Cho hình chóp $S.ABCD$ có đáy là hình thang $ABCD$ với hai đáy $AB$ và $CD$ thỏa mãn $AB = 2CD$. Hai cạnh bên $AD$ và $BC$ cắt nhau tại $E$. Tính tỉ số $\\dfrac{EA}{ED}$.",
       correctAnswer: "2",
       acceptableAnswers: ["2"],
-      explanation: "Vì $AB \parallel CD$, áp dụng định lý Thales trong tam giác $EAB$ có $CD \parallel AB$: $\\dfrac{EA}{ED} = \\dfrac{AB}{CD} = 2$."
+      explanation: "Vì $AB \\parallel CD$, áp dụng định lý Thales trong tam giác $EAB$ có $CD \\parallel AB$: $\\dfrac{EA}{ED} = \\dfrac{AB}{CD} = 2$."
     },
     {
       id: "sa-11.10.10",
@@ -842,7 +842,7 @@ export const GRADE_11_LESSON_10: DetailedLessonData = {
       prompt: "Cho hình chóp tứ giác $S.ABCD$. Có bao nhiêu giao tuyến phân biệt đôi một của các cặp mặt phẳng trong số 4 mặt bên $(SAB), (SBC), (SCD), (SDA)$ cùng đi qua đỉnh $S$?",
       correctAnswer: "4",
       acceptableAnswers: ["4"],
-      explanation: "Bốn mặt bên kề nhau cắt nhau theo 4 cạnh bên: $(SAB) \cap (SBC) = SB$, $(SBC) \cap (SCD) = SC$, $(SCD) \cap (SDA) = SD$, $(SDA) \cap (SAB) = SA$. Đó là 4 giao tuyến phân biệt."
+      explanation: "Bốn mặt bên kề nhau cắt nhau theo 4 cạnh bên: $(SAB) \\cap (SBC) = SB$, $(SBC) \\cap (SCD) = SC$, $(SCD) \\cap (SDA) = SD$, $(SDA) \\cap (SAB) = SA$. Đó là 4 giao tuyến phân biệt."
     }
   ]
 };
@@ -892,7 +892,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         "$12$"
       ],
       correctIndex: 0,
-      explanation: "Hình chóp tam giác có 4 đỉnh và 4 mặt $\Rightarrow$ tổng số đỉnh và số mặt là $4 + 4 = 8$."
+      explanation: "Hình chóp tam giác có 4 đỉnh và 4 mặt $\\Rightarrow$ tổng số đỉnh và số mặt là $4 + 4 = 8$."
     },
     {
       id: "ai-11.10.4",
@@ -1004,7 +1004,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Luyện thêm 11 - Giao điểm cạnh bên và mặt phẳng",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      question: "Cho tứ diện $ABCD$. Lấy điểm $K$ trên cạnh $AC$ ($K \ne A, K \ne C$). Giao điểm của đường thẳng $DK$ với mặt phẳng $(ABC)$ là:",
+      question: "Cho tứ diện $ABCD$. Lấy điểm $K$ trên cạnh $AC$ ($K \\ne A, K \\ne C$). Giao điểm của đường thẳng $DK$ với mặt phẳng $(ABC)$ là:",
       options: [
         "Điểm $K$.",
         "Điểm $D$.",
@@ -1012,7 +1012,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         "Điểm $C$."
       ],
       correctIndex: 0,
-      explanation: "Vì $K \in AC \subset (ABC)$ nên $K \in (ABC)$. Mặt khác $K \in DK$, do đó $DK \cap (ABC) = K$."
+      explanation: "Vì $K \\in AC \\subset (ABC)$ nên $K \\in (ABC)$. Mặt khác $K \\in DK$, do đó $DK \\cap (ABC) = K$."
     },
     {
       id: "ai-11.10.12",
@@ -1027,22 +1027,22 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         "$(SCD)$"
       ],
       correctIndex: 0,
-      explanation: "Ta có $AC \subset (SAC)$ và $S \in (SAC), O \in AC \subset (SAC) \Rightarrow SO \subset (SAC)$. Vậy mặt phẳng đó là $(SAC)$."
+      explanation: "Ta có $AC \\subset (SAC)$ và $S \\in (SAC), O \\in AC \\subset (SAC) \\Rightarrow SO \\subset (SAC)$. Vậy mặt phẳng đó là $(SAC)$."
     },
     {
       id: "ai-11.10.13",
       badge: "Luyện thêm 13 - Giao tuyến qua điểm chung kéo dài",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      question: "Cho hình chóp $S.ABCD$ đáy $ABCD$ là hình thang ($AB \parallel CD, AB > CD$). Giao tuyến của $(SAD)$ và $(SBC)$ là:",
+      question: "Cho hình chóp $S.ABCD$ đáy $ABCD$ là hình thang ($AB \\parallel CD, AB > CD$). Giao tuyến của $(SAD)$ và $(SBC)$ là:",
       options: [
-        "Đường thẳng $SE$ với $E = AD \cap BC$.",
+        "Đường thẳng $SE$ với $E = AD \\cap BC$.",
         "Đường thẳng qua $S$ song song với $AB$.",
-        "Đường thẳng $SO$ với $O = AC \cap BD$.",
+        "Đường thẳng $SO$ với $O = AC \\cap BD$.",
         "Đường thẳng $SC$."
       ],
       correctIndex: 0,
-      explanation: "Trong hình thang đáy $AB \parallel CD$, hai cạnh bên $AD$ và $BC$ không song song nên cắt nhau tại $E$. $E$ là điểm chung thứ hai của $(SAD)$ và $(SBC)$. Giao tuyến là $SE$."
+      explanation: "Trong hình thang đáy $AB \\parallel CD$, hai cạnh bên $AD$ và $BC$ không song song nên cắt nhau tại $E$. $E$ là điểm chung thứ hai của $(SAD)$ và $(SBC)$. Giao tuyến là $SE$."
     },
     {
       id: "ai-11.10.14",
@@ -1072,7 +1072,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         "Điểm chia $CD$ theo tỉ số $1:3$."
       ],
       correctIndex: 0,
-      explanation: "Đường thẳng $BG$ cắt $CD$ tại trung điểm $N$ của $CD$ (vì $BG$ là đường trung tuyến của tam giác $BCD$). Vì $B, G \in (ABG)$ nên $N \in (ABG)$. Vậy giao điểm là trung điểm $N$ của $CD$."
+      explanation: "Đường thẳng $BG$ cắt $CD$ tại trung điểm $N$ của $CD$ (vì $BG$ là đường trung tuyến của tam giác $BCD$). Vì $B, G \\in (ABG)$ nên $N \\in (ABG)$. Vậy giao điểm là trung điểm $N$ của $CD$."
     },
     {
       id: "ai-11.10.16",
@@ -1096,7 +1096,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       source: "Tài liệu Luyện tập Toán 11 C4B1",
       question: "Để chứng minh ba điểm $P, Q, R$ phân biệt thẳng hàng trong không gian, khẳng định nào sau đây là phương pháp CHÍNH XÁC?",
       options: [
-        "Chứng minh $P, Q, R$ cùng thuộc hai mặt phẳng phân biệt $(\alpha)$ và $(\beta)$.",
+        "Chứng minh $P, Q, R$ cùng thuộc hai mặt phẳng phân biệt $(\\alpha)$ và $(\\beta)$.",
         "Chứng minh độ dài $PQ = QR$.",
         "Chứng minh chúng cùng thuộc một mặt phẳng bất kỳ.",
         "Chứng minh ba đường thẳng nối chúng đôi một song song."
@@ -1124,15 +1124,15 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Luyện thêm 19 - Chu vi thiết diện hình chóp đều",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      question: "Cho hình chóp tứ giác đều $S.ABCD$ có tất cả các cạnh đều bằng $a$. Mặt phẳng $(\alpha)$ đi qua trung điểm của các cạnh $SA, SB, SC, SD$. Thiết diện của hình chóp cắt bởi $(\alpha)$ là hình vuông có chu vi bằng:",
+      question: "Cho hình chóp tứ giác đều $S.ABCD$ có tất cả các cạnh đều bằng $a$. Mặt phẳng $(\\alpha)$ đi qua trung điểm của các cạnh $SA, SB, SC, SD$. Thiết diện của hình chóp cắt bởi $(\\alpha)$ là hình vuông có chu vi bằng:",
       options: [
         "$2a$",
         "$4a$",
         "$a$",
-        "$\dfrac{a}{2}$"
+        "$\\dfrac{a}{2}$"
       ],
       correctIndex: 0,
-      explanation: "Các đoạn giao tuyến là các đường trung bình của các tam giác mặt bên, mỗi cạnh thiết diện có độ dài bằng $\dfrac{a}{2}$. Do đó thiết diện là hình vuông cạnh $\dfrac{a}{2}$, chu vi bằng $4 \times \dfrac{a}{2} = 2a$."
+      explanation: "Các đoạn giao tuyến là các đường trung bình của các tam giác mặt bên, mỗi cạnh thiết diện có độ dài bằng $\\dfrac{a}{2}$. Do đó thiết diện là hình vuông cạnh $\\dfrac{a}{2}$, chu vi bằng $4 \\times \\dfrac{a}{2} = 2a$."
     },
     {
       id: "ai-11.10.20",
@@ -1147,7 +1147,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         "$30$"
       ],
       correctIndex: 0,
-      explanation: "Số giao tuyến tối đa là số cách chọn 2 mặt phẳng trong 6 mặt phẳng: $C_6^2 = \dfrac{6 \times 5}{2} = 15$ giao tuyến."
+      explanation: "Số giao tuyến tối đa là số cách chọn 2 mặt phẳng trong 6 mặt phẳng: $C_6^2 = \\dfrac{6 \\times 5}{2} = 15$ giao tuyến."
     }
   ],
   trueFalseQuestions: [
@@ -1189,7 +1189,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Đúng/Sai LT 2 - Tứ diện và hình chóp",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      prompt: "Cho tứ diện $S.ABC$. Lấy $M \in SA, N \in SB$ sao cho $MN$ không song song với $AB$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      prompt: "Cho tứ diện $S.ABC$. Lấy $M \\in SA, N \\in SB$ sao cho $MN$ không song song với $AB$. Xét tính Đúng / Sai của các mệnh đề sau:",
       subItems: [
         {
           id: "a",
@@ -1201,19 +1201,19 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
           id: "b",
           text: "Giao điểm của $MN$ và $AB$ thuộc mặt phẳng $(ABC)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì giao điểm thuộc $AB$ mà $AB \subset (ABC)$."
+          explanation: "Đúng, vì giao điểm thuộc $AB$ mà $AB \\subset (ABC)$."
         },
         {
           id: "c",
           text: "Đường thẳng $MN$ cắt đường thẳng $SC$.",
           correctAnswer: false,
-          explanation: "Sai, $MN$ nằm trong mặt phẳng $(SAB)$ mà $C \notin (SAB)$ nên $SC$ và $MN$ chéo nhau."
+          explanation: "Sai, $MN$ nằm trong mặt phẳng $(SAB)$ mà $C \\notin (SAB)$ nên $SC$ và $MN$ chéo nhau."
         },
         {
           id: "d",
           text: "Giao tuyến của mặt phẳng $(CMN)$ với mặt phẳng $(ABC)$ là đường thẳng nối $C$ với giao điểm của $MN$ và $AB$.",
           correctAnswer: true,
-          explanation: "Đúng, vì điểm $C$ là điểm chung thứ nhất và $E = MN \cap AB$ là điểm chung thứ hai."
+          explanation: "Đúng, vì điểm $C$ là điểm chung thứ nhất và $E = MN \\cap AB$ là điểm chung thứ hai."
         }
       ]
     },
@@ -1228,25 +1228,25 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
           id: "a",
           text: "Đường thẳng $BM$ nằm trong mặt phẳng $(SBD)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $B \in (SBD)$ và $M \in SD \subset (SBD)$."
+          explanation: "Đúng, vì $B \\in (SBD)$ và $M \\in SD \\subset (SBD)$."
         },
         {
           id: "b",
           text: "Đoạn thẳng $BM$ cắt đoạn thẳng $SO$ tại trọng tâm tam giác $SBD$.",
           correctAnswer: true,
-          explanation: "Đúng, trong $\triangle SBD$, $SO$ và $BM$ là hai đường trung tuyến nên cắt nhau tại trọng tâm."
+          explanation: "Đúng, trong $\\triangle SBD$, $SO$ và $BM$ là hai đường trung tuyến nên cắt nhau tại trọng tâm."
         },
         {
           id: "c",
           text: "Giao điểm của $BM$ với mặt phẳng $(SAC)$ là giao điểm của $BM$ và $SO$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $SO = (SAC) \cap (SBD)$."
+          explanation: "Đúng, vì $SO = (SAC) \\cap (SBD)$."
         },
         {
           id: "d",
           text: "Mặt phẳng $(ABM)$ cắt cạnh $SC$ tại trung điểm của $SC$.",
           correctAnswer: false,
-          explanation: "Sai, mặt phẳng $(ABM)$ đi qua $AB \parallel CD$ nên giao tuyến với $(SCD)$ qua $M$ song song với $CD$, cắt $SC$ tại trung điểm $N$ của $SC$. Tuy nhiên mệnh đề cần kiểm tra chính xác: $N$ là trung điểm của $SC$ (đúng, vì $M$ là trung điểm $SD$ và $MN \parallel CD$). Nhưng ở đây phát biểu là: thiết diện luôn là hình bình hành (nếu là hình thang)."
+          explanation: "Sai, mặt phẳng $(ABM)$ đi qua $AB \\parallel CD$ nên giao tuyến với $(SCD)$ qua $M$ song song với $CD$, cắt $SC$ tại trung điểm $N$ của $SC$. Tuy nhiên mệnh đề cần kiểm tra chính xác: $N$ là trung điểm của $SC$ (đúng, vì $M$ là trung điểm $SD$ và $MN \\parallel CD$). Nhưng ở đây phát biểu là: thiết diện luôn là hình bình hành (nếu là hình thang)."
         }
       ]
     },
@@ -1288,7 +1288,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Đúng/Sai LT 5 - Thiết diện tứ diện",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      prompt: "Cho tứ diện đều $ABCD$ cạnh $a$. Gọi $I, J$ lần lượt là trung điểm của $AB$ và $CD$. Mặt phẳng $(\alpha)$ chứa $IJ$ và vuông góc hoặc cắt các mặt. Xét tính Đúng / Sai của các khẳng định sau:",
+      prompt: "Cho tứ diện đều $ABCD$ cạnh $a$. Gọi $I, J$ lần lượt là trung điểm của $AB$ và $CD$. Mặt phẳng $(\\alpha)$ chứa $IJ$ và vuông góc hoặc cắt các mặt. Xét tính Đúng / Sai của các khẳng định sau:",
       subItems: [
         {
           id: "a",
@@ -1304,9 +1304,9 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
         },
         {
           id: "c",
-          text: "Độ dài đoạn nối trung điểm $IJ$ bằng $\dfrac{a\sqrt{2}}{2}$.",
+          text: "Độ dài đoạn nối trung điểm $IJ$ bằng $\\dfrac{a\\sqrt{2}}{2}$.",
           correctAnswer: true,
-          explanation: "Đúng, trong tứ diện đều cạnh $a$, đoạn nối trung điểm hai cạnh đối diện có độ dài $IJ = \sqrt{a^2 - (a/2)^2 - (a/2)^2} = \dfrac{a\sqrt{2}}{2}$."
+          explanation: "Đúng, trong tứ diện đều cạnh $a$, đoạn nối trung điểm hai cạnh đối diện có độ dài $IJ = \\sqrt{a^2 - (a/2)^2 - (a/2)^2} = \\dfrac{a\\sqrt{2}}{2}$."
         },
         {
           id: "d",
@@ -1321,7 +1321,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Đúng/Sai LT 6 - Hình chóp và đa giác đáy",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      prompt: "Cho hình chóp $S.A_1A_2\dots A_n$ có đáy là đa giác lồi $n$ cạnh ($n \ge 3$). Xét tính Đúng / Sai của các mệnh đề sau:",
+      prompt: "Cho hình chóp $S.A_1A_2\\dots A_n$ có đáy là đa giác lồi $n$ cạnh ($n \\ge 3$). Xét tính Đúng / Sai của các mệnh đề sau:",
       subItems: [
         {
           id: "a",
@@ -1360,19 +1360,19 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
           id: "a",
           text: "Ba điểm $M, N, I$ thẳng hàng.",
           correctAnswer: true,
-          explanation: "Đúng, theo giả thiết $I$ là giao điểm của đường thẳng $MN$ và $CD$ nên $I \in MN$."
+          explanation: "Đúng, theo giả thiết $I$ là giao điểm của đường thẳng $MN$ và $CD$ nên $I \\in MN$."
         },
         {
           id: "b",
           text: "Điểm $I$ thuộc mặt phẳng $(BCD)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $I \in CD$ mà $CD \subset (BCD)$."
+          explanation: "Đúng, vì $I \\in CD$ mà $CD \\subset (BCD)$."
         },
         {
           id: "c",
           text: "Điểm $I$ là điểm chung của mặt phẳng $(BMN)$ và mặt phẳng $(BCD)$.",
           correctAnswer: true,
-          explanation: "Đúng, vì $I \in MN \subset (BMN)$ và $I \in CD \subset (BCD)$."
+          explanation: "Đúng, vì $I \\in MN \\subset (BMN)$ và $I \\in CD \\subset (BCD)$."
         },
         {
           id: "d",
@@ -1387,25 +1387,25 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       badge: "Đúng/Sai LT 8 - Thiết diện hình chóp tứ giác",
       isAiGenerated: true,
       source: "Tài liệu Luyện tập Toán 11 C4B1",
-      prompt: "Cho hình chóp $S.ABCD$ có đáy là hình thang $ABCD$ ($AB \parallel CD$). Gọi $(\alpha)$ là mặt phẳng qua $C$ và cắt các cạnh $SA, SB$. Xét tính Đúng / Sai của các mệnh đề sau:",
+      prompt: "Cho hình chóp $S.ABCD$ có đáy là hình thang $ABCD$ ($AB \\parallel CD$). Gọi $(\\alpha)$ là mặt phẳng qua $C$ và cắt các cạnh $SA, SB$. Xét tính Đúng / Sai của các mệnh đề sau:",
       subItems: [
         {
           id: "a",
-          text: "Thiết diện của hình chóp cắt bởi $(\alpha)$ không thể là tam giác.",
+          text: "Thiết diện của hình chóp cắt bởi $(\\alpha)$ không thể là tam giác.",
           correctAnswer: false,
-          explanation: "Sai, nếu $(\alpha)$ chỉ cắt cạnh $SA, SB$ và đi qua đỉnh $C$ mà không cắt cạnh $SD$ thì thiết diện có thể là tam giác hoặc tứ giác tùy thuộc vị trí."
+          explanation: "Sai, nếu $(\\alpha)$ chỉ cắt cạnh $SA, SB$ và đi qua đỉnh $C$ mà không cắt cạnh $SD$ thì thiết diện có thể là tam giác hoặc tứ giác tùy thuộc vị trí."
         },
         {
           id: "b",
           text: "Thiết diện có thể là một tứ giác.",
           correctAnswer: true,
-          explanation: "Đúng, khi $(\alpha)$ cắt 4 mặt của hình chóp."
+          explanation: "Đúng, khi $(\\alpha)$ cắt 4 mặt của hình chóp."
         },
         {
           id: "c",
           text: "Thiết diện có thể là một ngũ giác.",
           correctAnswer: true,
-          explanation: "Đúng, khi $(\alpha)$ cắt cả 4 mặt bên và 1 mặt đáy."
+          explanation: "Đúng, khi $(\\alpha)$ cắt cả 4 mặt bên và 1 mặt đáy."
         },
         {
           id: "d",
@@ -1445,7 +1445,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       prompt: "Một hình chóp có tất cả 10 đỉnh. Hỏi hình chóp đó có bao nhiêu cạnh?",
       correctAnswer: "18",
       acceptableAnswers: ["18"],
-      explanation: "Đáy có $10 - 1 = 9$ đỉnh $\Rightarrow$ đáy là đa giác 9 cạnh. Số cạnh của hình chóp là $2n = 2 \times 9 = 18$ cạnh."
+      explanation: "Đáy có $10 - 1 = 9$ đỉnh $\\Rightarrow$ đáy là đa giác 9 cạnh. Số cạnh của hình chóp là $2n = 2 \\times 9 = 18$ cạnh."
     },
     {
       id: "ai-sa-11.10.4",
@@ -1455,7 +1455,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       prompt: "Cho 6 điểm phân biệt trong không gian, không có 4 điểm nào đồng phẳng. Có bao nhiêu mặt phẳng phân biệt xác định từ 3 trong 6 điểm đó?",
       correctAnswer: "20",
       acceptableAnswers: ["20"],
-      explanation: "Số mặt phẳng là $C_6^3 = \dfrac{6 \times 5 \times 4}{3 \times 2 \times 1} = 20$ mặt phẳng."
+      explanation: "Số mặt phẳng là $C_6^3 = \\dfrac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1} = 20$ mặt phẳng."
     },
     {
       id: "ai-sa-11.10.5",
@@ -1475,7 +1475,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       prompt: "Cho 5 điểm phân biệt trong không gian không có 3 điểm nào thẳng hàng. Có bao nhiêu đường thẳng phân biệt đi qua từng cặp điểm?",
       correctAnswer: "10",
       acceptableAnswers: ["10"],
-      explanation: "Số đường thẳng là $C_5^2 = \dfrac{5 \times 4}{2} = 10$ đường thẳng."
+      explanation: "Số đường thẳng là $C_5^2 = \\dfrac{5 \\times 4}{2} = 10$ đường thẳng."
     },
     {
       id: "ai-sa-11.10.7",
@@ -1485,7 +1485,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       prompt: "Cho tứ diện đều $ABCD$ có cạnh bằng 10. Mặt phẳng $(P)$ song song với $BC$ và $AD$ cắt các cạnh $AB, AC, CD, BD$ lần lượt tại 4 điểm tạo thành hình thoi thiết diện. Chu vi của hình thoi thiết diện bằng bao nhiêu?",
       correctAnswer: "20",
       acceptableAnswers: ["20"],
-      explanation: "Thiết diện là hình thoi có các cạnh bằng $\\dfrac{1}{2}$ cạnh tứ diện khi mặt phẳng đi qua trung điểm, tức cạnh bằng 5. Chu vi là $4 \times 5 = 20$."
+      explanation: "Thiết diện là hình thoi có các cạnh bằng $\\dfrac{1}{2}$ cạnh tứ diện khi mặt phẳng đi qua trung điểm, tức cạnh bằng 5. Chu vi là $4 \\times 5 = 20$."
     },
     {
       id: "ai-sa-11.10.8",
@@ -1495,7 +1495,7 @@ export const GRADE_11_LESSON_10_AI_PRACTICE = {
       prompt: "Một hình chóp có đúng 30 cạnh. Hỏi hình chóp đó có bao nhiêu đỉnh?",
       correctAnswer: "16",
       acceptableAnswers: ["16"],
-      explanation: "Số cạnh $2n = 30 \Rightarrow n = 15$. Số đỉnh của hình chóp là $n + 1 = 15 + 1 = 16$ đỉnh."
+      explanation: "Số cạnh $2n = 30 \\Rightarrow n = 15$. Số đỉnh của hình chóp là $n + 1 = 15 + 1 = 16$ đỉnh."
     },
     {
       id: "ai-sa-11.10.9",

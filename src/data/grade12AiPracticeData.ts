@@ -1,4 +1,5 @@
 import type { QuizQuestion, TrueFalseQuestion, ShortAnswerQuestion } from "./allGradesLessonsData";
+import { GRADE_12_LESSON_3_AI_PRACTICE } from "./grade12Lesson3Data";
 
 export interface Grade12AiPracticePackage {
   quizQuestions: QuizQuestion[];
@@ -1431,4 +1432,5 @@ export const GRADE_12_AI_PRACTICE_DATA: Record<string, Grade12AiPracticePackage>
     }
   ]
 },
+  "t12-b3-duong-tiem-can": GRADE_12_LESSON_3_AI_PRACTICE
 };

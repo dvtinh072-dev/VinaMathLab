@@ -1,4 +1,5 @@
 import type { DetailedLessonData } from "./allGradesLessonsData";
+import { GRADE_12_LESSON_3 } from "./grade12Lesson3Data";
 
 export const GRADE_12_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   // ==========================================
@@ -1688,4 +1689,5 @@ export const GRADE_12_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
     }
   ]
 },
+  "t12-b3-duong-tiem-can": GRADE_12_LESSON_3
 };

@@ -1,3 +1,4 @@
+import { GRADE_11_LESSON_13_AI_PRACTICE } from "./grade11Lesson13Data";
 import { GRADE_11_LESSON_12_AI_PRACTICE } from "./grade11Lesson12Data";
 import { GRADE_11_LESSON_11_AI_PRACTICE } from "./grade11Lesson11Data";
 import { GRADE_11_LESSON_10_AI_PRACTICE } from "./grade11Lesson10Data";
@@ -7160,5 +7161,6 @@ export const GRADE_11_AI_PRACTICE_DATA: Record<string, Grade11AiPracticePackage>
 ,
   "t11-b10-duong-thang-mat-phang": GRADE_11_LESSON_10_AI_PRACTICE,
   "t11-b11-hai-duong-thang-song-song": GRADE_11_LESSON_11_AI_PRACTICE,
-  "t11-b12-duong-thang-song-song-mat-phang": GRADE_11_LESSON_12_AI_PRACTICE
+  "t11-b12-duong-thang-song-song-mat-phang": GRADE_11_LESSON_12_AI_PRACTICE,
+  "t11-b13-hai-mat-phang-song-song": GRADE_11_LESSON_13_AI_PRACTICE
 };

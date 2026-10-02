@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { RotateCcw, Play, Pause, ZoomIn, ZoomOut, Move3D, Eye } from "lucide-react";
 
-export type Solid3DType = "pyramid-abcd" | "pyramid-g1g2" | "pyramid-so" | "pyramid-m-sc" | "pyramid-am-so" | "pyramid-trapezoid" | "pyramid-parallel" | "pyramid-mn-ad" | "pyramid-mn-ab" | "tetrahedron" | "tetrahedron-dm" | "tetrahedron-mn" | "tetrahedron-mnpq" | "tetrahedron-sg" | "tetrahedron-3centroids";
+export type Solid3DType = "pyramid-abcd" | "pyramid-g1g2" | "pyramid-so" | "pyramid-m-sc" | "pyramid-am-so" | "pyramid-trapezoid" | "pyramid-parallel" | "pyramid-mn-ad" | "pyramid-mn-ab" | "pyramid-mnpq" | "prism-triangular" | "box-parallel" | "tetrahedron" | "tetrahedron-dm" | "tetrahedron-mn" | "tetrahedron-mnpq" | "tetrahedron-sg" | "tetrahedron-3centroids";
 
 interface Point3D {
   name: string;
@@ -34,8 +34,50 @@ export function Interactive3DGeometryViewer({
   caption,
   className = ""
 }: Interactive3DGeometryViewerProps) {
+  // 1. Kiểm tra tuyệt đối: Bảng biến thiên (Toán 12), đồ thị 2D giải tích, bảng xét dấu, bảng số liệu
+  // TUYỆT ĐỐI KHÔNG áp dụng tính năng 3D cho các hình vẽ này!
+  const isNonSpatial = useMemo<boolean>(() => {
+    if (!fallbackSvg) return true;
+    const s = fallbackSvg.toLowerCase();
+    
+    // Dấu hiệu Bảng biến thiên (BBT) Toán 12
+    if (
+      s.includes("biến thiên") ||
+      s.includes("bbt") ||
+      s.includes("bảng xét dấu") ||
+      s.includes("xét dấu") ||
+      s.includes("y'") ||
+      s.includes("f'(x)") ||
+      s.includes("f(x)") ||
+      s.includes("&infin;") ||
+      s.includes("+\\infty") ||
+      s.includes("-\\infty") ||
+      s.includes("&#8734;") ||
+      (fallbackSvg.includes(">x<") && (fallbackSvg.includes(">y'<") || fallbackSvg.includes(">y<") || fallbackSvg.includes(">f'(x)<")))
+    ) {
+      return true;
+    }
+
+    // Dấu hiệu Đồ thị hàm số phẳng 2D hệ tọa độ Oxy (Toán 12, 10, 9)
+    if (
+      (s.includes("arrow-x") || s.includes("arrow-y") || (fallbackSvg.includes(">x<") && fallbackSvg.includes(">y<") && fallbackSvg.includes(">O<"))) &&
+      !fallbackSvg.includes(">S<") &&
+      !fallbackSvg.includes("stroke-dasharray")
+    ) {
+      return true;
+    }
+
+    // Bảng biểu, biểu đồ thống kê
+    if (s.includes("<table") || s.includes("tần số") || s.includes("tần suất") || s.includes("khoảng tứ phân vị")) {
+      return true;
+    }
+
+    return false;
+  }, [fallbackSvg]);
+
   // If no type is provided or recognized, try to infer from fallbackSvg or just render fallbackSvg
   const detectedType = useMemo<Solid3DType | null>(() => {
+    if (isNonSpatial) return null;
     if (type) return type;
     if (!fallbackSvg) return null;
     if (fallbackSvg.includes("G1") && fallbackSvg.includes("G2")) return "pyramid-g1g2";
@@ -45,7 +87,10 @@ export function Interactive3DGeometryViewer({
       }
       return "pyramid-so";
     }
+    if (fallbackSvg.includes("D'") && fallbackSvg.includes("A'")) return "box-parallel";
+    if (fallbackSvg.includes("A'") && fallbackSvg.includes("B'") && fallbackSvg.includes("C'") && !fallbackSvg.includes("SG")) return "prism-triangular";
     if (fallbackSvg.includes("A'") && fallbackSvg.includes("SG")) return "tetrahedron-sg";
+    if (fallbackSvg.includes("MNPQ") && fallbackSvg.includes(">S<")) return "pyramid-mnpq";
     if (fallbackSvg.includes("MNPQ")) return "tetrahedron-mnpq";
     if (fallbackSvg.includes("MN") && fallbackSvg.includes(">P<") && fallbackSvg.includes(">Q<") && fallbackSvg.includes(">G<")) return "tetrahedron-3centroids";
     if (fallbackSvg.includes(">I<") && fallbackSvg.includes(">S<") && fallbackSvg.includes(">D<")) return "pyramid-trapezoid";
@@ -61,7 +106,11 @@ export function Interactive3DGeometryViewer({
     if (fallbackSvg.includes(">S<") && fallbackSvg.includes(">A<") && fallbackSvg.includes(">B<") && fallbackSvg.includes(">C<") && fallbackSvg.includes(">D<")) return "pyramid-abcd";
     if (fallbackSvg.includes(">A<") && fallbackSvg.includes(">B<") && fallbackSvg.includes(">C<") && fallbackSvg.includes(">D<") && !fallbackSvg.includes(">S<")) return "tetrahedron";
     return null;
-  }, [type, fallbackSvg]);
+  }, [type, fallbackSvg, isNonSpatial]);
+
+  const isSpatialGeometry = useMemo<boolean>(() => {
+    return !isNonSpatial && detectedType !== null;
+  }, [isNonSpatial, detectedType]);
 
   // View state
   const [isInteractive, setIsInteractive] = useState<boolean>(false);
@@ -188,7 +237,67 @@ export function Interactive3DGeometryViewer({
         const N = { name: "N", x: -1.0, y: heightParam * 0.5, z: 0.6, color: "#f59e0b" };
         points.push(M, N);
         edges.push({ from: "M", to: "N", style: "highlight-solid", color: "#f59e0b" });
+      } else if (t === "pyramid-mnpq") {
+        const M = { name: "M", x: -0.7, y: heightParam * 0.5, z: -0.65, color: "#f59e0b" };
+        const N = { name: "N", x: -1.0, y: heightParam * 0.5, z: 0.6, color: "#f59e0b" };
+        const P = { name: "P", x: 0.9, y: heightParam * 0.5, z: 0.6, color: "#f59e0b" };
+        const Q = { name: "Q", x: 0.8, y: heightParam * 0.5, z: -0.65, color: "#f59e0b" };
+        points.push(M, N, P, Q);
+        edges.push({ from: "M", to: "N", style: "highlight-solid", color: "#f59e0b" });
+        edges.push({ from: "N", to: "P", style: "highlight-solid", color: "#f59e0b" });
+        edges.push({ from: "P", to: "Q", style: "highlight-solid", color: "#f59e0b" });
+        edges.push({ from: "Q", to: "M", style: "highlight-dashed", color: "#f59e0b" });
       }
+    } else if (t === "prism-triangular") {
+      // Lăng trụ tam giác ABC.A'B'C'
+      const A = { name: "A", x: -1.2, y: -heightParam * 0.45, z: -1.0 };
+      const B = { name: "B", x: -1.6, y: -heightParam * 0.45, z: 1.2 };
+      const C = { name: "C", x: 1.5, y: -heightParam * 0.45, z: 0.4 };
+      const A_prime = { name: "A'", x: -1.2, y: heightParam * 0.45, z: -1.0, color: "#38bdf8" };
+      const B_prime = { name: "B'", x: -1.6, y: heightParam * 0.45, z: 1.2, color: "#38bdf8" };
+      const C_prime = { name: "C'", x: 1.5, y: heightParam * 0.45, z: 0.4, color: "#38bdf8" };
+
+      points.push(A, B, C, A_prime, B_prime, C_prime);
+      // Đáy dưới
+      edges.push({ from: "A", to: "B" });
+      edges.push({ from: "B", to: "C" });
+      edges.push({ from: "A", to: "C", style: "dashed" });
+      // Đáy trên
+      edges.push({ from: "A'", to: "B'" });
+      edges.push({ from: "B'", to: "C'" });
+      edges.push({ from: "A'", to: "C'" });
+      // Cạnh bên
+      edges.push({ from: "A", to: "A'", style: "dashed" });
+      edges.push({ from: "B", to: "B'" });
+      edges.push({ from: "C", to: "C'" });
+    } else if (t === "box-parallel") {
+      // Hình hộp ABCD.A'B'C'D'
+      const A = { name: "A", x: -1.4, y: -heightParam * 0.45, z: -1.2 };
+      const B = { name: "B", x: -1.9, y: -heightParam * 0.45, z: 1.0 };
+      const C = { name: "C", x: 1.4, y: -heightParam * 0.45, z: 1.0 };
+      const D = { name: "D", x: 1.8, y: -heightParam * 0.45, z: -1.2 };
+
+      const A_prime = { name: "A'", x: -1.4, y: heightParam * 0.45, z: -1.2, color: "#38bdf8" };
+      const B_prime = { name: "B'", x: -1.9, y: heightParam * 0.45, z: 1.0, color: "#38bdf8" };
+      const C_prime = { name: "C'", x: 1.4, y: heightParam * 0.45, z: 1.0, color: "#38bdf8" };
+      const D_prime = { name: "D'", x: 1.8, y: heightParam * 0.45, z: -1.2, color: "#38bdf8" };
+
+      points.push(A, B, C, D, A_prime, B_prime, C_prime, D_prime);
+      // Đáy dưới
+      edges.push({ from: "A", to: "B" });
+      edges.push({ from: "B", to: "C" });
+      edges.push({ from: "C", to: "D" });
+      edges.push({ from: "D", to: "A", style: "dashed" });
+      // Đáy trên
+      edges.push({ from: "A'", to: "B'" });
+      edges.push({ from: "B'", to: "C'" });
+      edges.push({ from: "C'", to: "D'" });
+      edges.push({ from: "D'", to: "A'" });
+      // Cạnh bên
+      edges.push({ from: "A", to: "A'", style: "dashed" });
+      edges.push({ from: "B", to: "B'" });
+      edges.push({ from: "C", to: "C'" });
+      edges.push({ from: "D", to: "D'" });
     } else {
       // Tứ diện ABCD
       const A = { name: "A", x: 0, y: heightParam, z: 0, color: "#38bdf8" };
@@ -280,7 +389,27 @@ export function Interactive3DGeometryViewer({
     return map;
   }, [modelData.points, yaw, pitch, zoom]);
 
-  // Render static SVG fallback if not interactive mode
+  // TRƯỜNG HỢP 1: Bảng biến thiên (Toán 12), đồ thị 2D, bảng số liệu hoặc hình không phải không gian 3D
+  // Render SVG tĩnh 100% nguyên bản, TUYỆT ĐỐI KHÔNG hiển thị nút xoay 3D hay bất kỳ tính năng 3D nào!
+  if (!isSpatialGeometry) {
+    if (!fallbackSvg) return null;
+    return (
+      <div className={`relative my-3 flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/85 border border-slate-800 shadow-xl overflow-hidden ${className}`}>
+        <div
+          className="w-full flex justify-center overflow-x-auto"
+          dangerouslySetInnerHTML={{ __html: fallbackSvg }}
+        />
+        {caption && (
+          <div className="mt-1.5 text-center text-xs text-slate-400 font-medium">
+            {caption}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // TRƯỜNG HỢP 2: Là hình học không gian 3D trực quan, ban đầu hiển thị SVG chuẩn SGK
+  // kèm nút kích hoạt chế độ xoay 3D tương tác để học sinh có thể kéo, xoay hình khi cần
   if (!isInteractive && fallbackSvg) {
     return (
       <div className={`relative group my-3 flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/85 border border-slate-800 shadow-xl overflow-hidden ${className}`}>
@@ -288,19 +417,19 @@ export function Interactive3DGeometryViewer({
           className="w-full flex justify-center"
           dangerouslySetInnerHTML={{ __html: fallbackSvg }}
         />
-        {/* Button to activate 3D Interactive Mode */}
+        {/* Nút bật chế độ 3D chỉ dành riêng cho hình học không gian trực quan */}
         <div className="mt-2.5 flex items-center justify-between w-full max-w-sm px-2">
           <button
             type="button"
             onClick={() => setIsInteractive(true)}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs shadow-md hover:from-blue-500 hover:to-indigo-500 transition-all active:scale-95"
-            title="Chạm hoặc kéo để xoay hình học không gian 3D 360 độ"
+            title="Kéo chuột hoặc vuốt để xoay mô hình hình học không gian 3D 360 độ"
           >
-            <Move3D className="w-3.5 h-3.5 animate-pulse" />
-            <span>Xoay 3D & Kéo hình tương tác</span>
+            <Move3D className="w-3.5 h-3.5 animate-pulse text-sky-300" />
+            <span>Xoay mô hình 3D</span>
           </button>
           <span className="text-[11px] text-slate-400 flex items-center gap-1 font-medium">
-            <Eye className="w-3 h-3 text-cyan-400" /> Chuẩn nét khuất SGK
+            <Eye className="w-3 h-3 text-cyan-400" /> Hình học không gian
           </span>
         </div>
       </div>

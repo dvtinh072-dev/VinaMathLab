@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { 
   Moon, Sun, Shield, GraduationCap, LogIn, LogOut, 
-  BookOpen, Award, Sparkles, Menu, X, Home, Users
+  BookOpen, Award, Sparkles, Menu, X, Home, Users, Target
 } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useAuth } from "@/context/AuthContext";
@@ -20,9 +20,10 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Trang Chủ", icon: Home },
-    { href: "/hoc-tap", label: "Học Liệu Khối Lớp", icon: BookOpen },
+    { href: "/hoc-tap", label: "Học Liệu", icon: BookOpen },
+    { href: "/phong-on-luyen", label: "Phòng Ôn Luyện", icon: Target },
     { href: "/luyen-thi", label: "Phòng Thi Thử", icon: Award },
-    { href: "/giao-vien", label: "Dành Cho Giáo Viên", icon: Users },
+    { href: "/giao-vien", label: "Giáo Viên", icon: Users },
   ];
 
   return (

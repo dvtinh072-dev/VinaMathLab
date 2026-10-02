@@ -56,6 +56,7 @@ import { GRADE_11_AI_PRACTICE_DATA } from "@/data/grade11AiPracticeData";
 import { GRADE_12_AI_PRACTICE_DATA } from "@/data/grade12AiPracticeData";
 import { MathFormattedText } from "@/components/math/MathFormattedText";
 import { GeometryDiagram, GeometryDiagramProps } from "@/components/math/GeometryDiagram";
+import { Interactive3DGeometryViewer } from "@/components/math/Interactive3DGeometryViewer";
 import { useAuth } from "@/context/AuthContext";
 import { QuestionEditModal } from "@/components/admin/QuestionEditModal";
 import { AiQuestionGeneratorModal } from "@/components/admin/AiQuestionGeneratorModal";
@@ -4206,10 +4207,7 @@ export function GamifiedMathQuiz({
                               </div>
                             ))}
                           {ex.svgDiagram && (
-                            <div
-                              className="mt-3 p-2.5 rounded-xl bg-slate-950/90 border border-slate-800 flex flex-col items-center justify-center shadow-inner overflow-x-auto select-none"
-                              dangerouslySetInnerHTML={{ __html: ex.svgDiagram }}
-                            />
+                            <Interactive3DGeometryViewer fallbackSvg={ex.svgDiagram} />
                           )}
                         </div>
                       </div>
@@ -4410,10 +4408,7 @@ export function GamifiedMathQuiz({
 
                   {/* Sơ đồ trực quan SVG nếu có */}
                   {currentTf.svgDiagram && (
-                    <div
-                      className="my-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 flex justify-center shadow-inner overflow-hidden"
-                      dangerouslySetInnerHTML={{ __html: currentTf.svgDiagram }}
-                    />
+                    <Interactive3DGeometryViewer fallbackSvg={currentTf.svgDiagram} />
                   )}
 
                   {/* Danh sách 4 ý a, b, c, d */}
@@ -4648,10 +4643,7 @@ export function GamifiedMathQuiz({
 
                   {/* Sơ đồ trực quan Venn SVG nếu có */}
                   {currentSa.svgDiagram && (
-                    <div
-                      className="my-2 p-3 rounded-xl bg-slate-950/80 border border-slate-800 flex justify-center shadow-inner overflow-hidden"
-                      dangerouslySetInnerHTML={{ __html: currentSa.svgDiagram }}
-                    />
+                    <Interactive3DGeometryViewer fallbackSvg={currentSa.svgDiagram} />
                   )}
 
                   {/* Input Box & Submit Button */}
@@ -4873,10 +4865,7 @@ export function GamifiedMathQuiz({
 
             {/* Hình vẽ hình học trực quan nếu có */}
             {currentQ.svgDiagram && (
-              <div
-                className="my-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 flex justify-center shadow-inner overflow-hidden"
-                dangerouslySetInnerHTML={{ __html: currentQ.svgDiagram }}
-              />
+              <Interactive3DGeometryViewer fallbackSvg={currentQ.svgDiagram} />
             )}
 
             {diagramInfo && !currentQ.svgDiagram && (

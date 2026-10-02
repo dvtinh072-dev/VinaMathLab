@@ -4,6 +4,7 @@ import { GRADE_12_LESSON_4 } from "./grade12Lesson4Data";
 import { GRADE_12_LESSON_5 } from "./grade12Lesson5Data";
 import { GRADE_12_LESSON_6 } from "./grade12Lesson6Data";
 import { GRADE_12_LESSON_7 } from "./grade12Lesson7Data";
+import { GRADE_12_LESSON_8 } from "./grade12Lesson8Data";
 import { GRADE_12_CHAPTER_1_REVIEW_LESSON } from "./grade12Chapter1ReviewData";
 
 export const GRADE_12_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
@@ -1699,5 +1700,6 @@ export const GRADE_12_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
   "t12-b5-ung-dung-thuc-tien-dao-ham": GRADE_12_LESSON_5,
   "t12-on-tap-chuong-1": GRADE_12_CHAPTER_1_REVIEW_LESSON,
   "t12-b6-vector-trong-khong-gian": GRADE_12_LESSON_6,
-  "t12-b7-he-truc-toa-do-oxyz": GRADE_12_LESSON_7
+  "t12-b7-he-truc-toa-do-oxyz": GRADE_12_LESSON_7,
+  "t12-b8-bieu-thuc-toa-do-vector": GRADE_12_LESSON_8
 };

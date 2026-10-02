@@ -1005,6 +1005,7 @@ export const CURRICULUM_DATA: { [key: string]: GradeData } = {
           { id: "t12-b3-duong-tiem-can", lessonNumber: 3, title: "Bài 3: Đường tiệm cận của đồ thị hàm số", strand: "daiso", description: "Tiệm cận đứng, tiệm cận ngang và tiệm cận xiên của hàm phân thức bậc 2/bậc 1.", keyFormulas: ["\\lim_{x \\to x_0^+} f(x) = \\pm\\infty \\Rightarrow x = x_0 \\text{ (TCĐ)}", "y = ax + b \\text{ (TCX)}"] },
           { id: "t12-b4-khao-sat-do-thi", lessonNumber: 4, title: "Bài 4: Khảo sát sự biến thiên và vẽ đồ thị của hàm số", strand: "daiso", description: "Khảo sát hàm bậc 3, hàm phân thức bậc 1/bậc 1 và bậc 2/bậc 1.", keyFormulas: ["y = \\frac{ax+b}{cx+d} \\Rightarrow y' = \\frac{ad-bc}{(cx+d)^2}"], hasInteractive: "function" },
           { id: "t12-b5-ung-dung-thuc-tien-dao-ham", lessonNumber: 5, title: "Bài 5: Ứng dụng đạo hàm để giải quyết một số vấn đề thực tiễn", strand: "daiso", description: "Bài toán chi phí tối thiểu, lợi nhuận tối đa, dung tích lớn nhất.", keyFormulas: ["\\text{Lập hàm số mục tiêu } f(x) \\to f'(x) = 0"] },
+          { id: "t12-on-tap-chuong-1", lessonNumber: 0, title: "Bài tập cuối chương I", strand: "daiso", description: "Hệ thống hóa toàn bộ kiến thức Khảo sát hàm số, Cực trị, GTLN-GTNN, Tiệm cận, Đồ thị và Bài toán thực tế với 3 đề ôn tập tổng hợp chuẩn Bộ GD&ĐT 2025.", keyFormulas: ["y' = 0", "\\max/\\min", "y = ax+b \\text{ (TCX)}", "R(x) - C(x)"], hasInteractive: "function" },
         ],
       },
       {

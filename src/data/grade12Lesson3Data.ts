@@ -359,13 +359,13 @@ export const GRADE_12_LESSON_3: DetailedLessonData = {
       source: "Đề thi thử Tốt nghiệp THPT 2025",
       question: "Tìm tất cả các giá trị thực của tham số $m$ để đồ thị hàm số $y = \\frac{x - 1}{x^2 - 2mx + 4}$ có đúng 2 đường tiệm cận đứng.",
       options: [
-        "$m \\in (-\infty; -2) \\cup (2; +\\infty) \\setminus \\{5/2\\}$",
+        "$m \\in (-\\infty; -2) \\cup (2; +\\infty) \\setminus \\{5/2\\}$",
         "$m \\in (-2; 2)$",
         "$m \\in [2; +\\infty)$",
         "$m > 2$"
       ],
       correctIndex: 0,
-      explanation: "Để đồ thị có đúng 2 tiệm cận đứng thì phương trình mẫu $g(x) = x^2 - 2mx + 4 = 0$ phải có 2 nghiệm phân biệt khác 1.\n- Điều kiện 2 nghiệm phân biệt: $\\Delta' = m^2 - 4 > 0 \\Leftrightarrow m > 2$ hoặc $m < -2$.\n- Nghiệm khác 1: $g(1) = 1 - 2m + 4 \\ne 0 \\Leftrightarrow 5 - 2m \\ne 0 \\Leftrightarrow m \\ne \\frac{5}{2}$.\nKết hợp lại: $m \\in (-\infty; -2) \\cup (2; +\\infty) \\setminus \\{5/2\\}$."
+      explanation: "Để đồ thị có đúng 2 tiệm cận đứng thì phương trình mẫu $g(x) = x^2 - 2mx + 4 = 0$ phải có 2 nghiệm phân biệt khác 1.\n- Điều kiện 2 nghiệm phân biệt: $\\Delta' = m^2 - 4 > 0 \\Leftrightarrow m > 2$ hoặc $m < -2$.\n- Nghiệm khác 1: $g(1) = 1 - 2m + 4 \\ne 0 \\Leftrightarrow 5 - 2m \\ne 0 \\Leftrightarrow m \\ne \\frac{5}{2}$.\nKết hợp lại: $m \\in (-\\infty; -2) \\cup (2; +\\infty) \\setminus \\{5/2\\}$."
     },
     {
       id: "q-12.3.12",

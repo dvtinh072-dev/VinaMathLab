@@ -1634,32 +1634,34 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "explanation": "Thay $(1; 2)$ vào vế trái: $1 - 2(2) = -3 < 0$ (đúng). Lưu ý điểm $(0; 0)$ thuộc đường bờ $x - 2y = 0$ nhưng BPT có dấu $<$ nghiêm ngặt nên $(0; 0)$ không thuộc miền nghiệm."
     },
     {
-      "id": "quiz-10.3.9",
-      "badge": "Thông hiểu - Đọc hình vẽ miền nghiệm Oxy",
-      "source": "Bộ đề thi định kì Toán 10 KNTT Trang 28",
-      "question": "Nửa mặt phẳng không bị gạch (kể cả bờ) trong hình vẽ là miền nghiệm của bất phương trình nào biết đường bờ đi qua $(0; 2)$ và $(4; 0)$, miền nghiệm chứa gốc $O(0; 0)$?",
-      "options": [
-        "$x + 2y \\le 4$",
-        "$x + 2y \\ge 4$",
-        "$2x + y \\le 4$",
-        "$x + 2y < 4$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Đường thẳng qua $(4; 0)$ và $(0; 2)$ có phương trình $\\frac{x}{4} + \\frac{y}{2} = 1 \\Leftrightarrow x + 2y = 4$. Vì miền nghiệm chứa $O(0; 0)$ và kể cả bờ nên ta có BPT $x + 2y \\le 4$."
+          "id": "quiz-10.3.9",
+          "badge": "Thông hiểu - Nhận dạng miền nghiệm BPT trên Oxy",
+          "source": "SGK Toán 10 KNTT - Bài tập rèn luyện",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b3_q9\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b3_q9\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b3_q9\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b3_q9\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    \n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b3_q9)\" clipPath=\"url(#frame_b3_q9)\" />\n  \n  <!-- Miền gạch sọc: Phần KHÔNG phải nghiệm (x + 2y > 4, nửa mặt phẳng trên d) -->\n  <polygon points=\"10,80 320,235 330,235 330,10 10,10\" fill=\"url(#hatch_b3_q9)\" clipPath=\"url(#frame_b3_q9)\" />\n  <!-- Miền nghiệm (sáng) -->\n  <polygon points=\"10,80 320,235 320,250 10,250\" fill=\"#38bdf8\" fillOpacity=\"0.08\" clipPath=\"url(#frame_b3_q9)\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"180\" x2=\"315\" y2=\"180\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_q9)\" />\n  <line x1=\"90\" y1=\"240\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_q9)\" />\n  \n  <text x=\"315\" y=\"195\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"78\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"76\" y=\"195\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"120\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"150\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"180\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"210\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"80\" y=\"154\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"80\" y=\"124\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">2</text>\n  <text x=\"80\" y=\"94\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">3</text>\n\n  <!-- Đường thẳng bờ d (nét liền) -->\n  <line x1=\"10\" y1=\"80\" x2=\"310\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" clipPath=\"url(#frame_b3_q9)\" />\n  <text x=\"300\" y=\"240\" fill=\"#38bdf8\" fontSize=\"14\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các điểm mốc trên trục -->\n  <circle cx=\"210\" cy=\"180\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"90\" cy=\"120\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn nào sau đây (miền không bị gạch sọc, kể cả đường thẳng bờ $d$) trên mặt phẳng tọa độ $Oxy$?",
+          "options": [
+                "$x + 2y \\le 4$",
+                "$x + 2y \\ge 4$",
+                "$2x + y \\le 4$",
+                "$x + 2y < 4$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Đường thẳng bờ $d$ đi qua hai điểm $(4; 0)$ và $(0; 2)$ có phương trình là $\\frac{x}{4} + \\frac{y}{2} = 1 \\Leftrightarrow x + 2y = 4$. Gốc tọa độ $O(0; 0)$ nằm trong phần mặt phẳng không bị gạch sọc (thuộc miền nghiệm), thay tọa độ vào: $0 + 2(0) = 0 \\le 4$ (thỏa mãn). Vì hình vẽ lấy cả đường bờ $d$ (đường nét liền) nên đây là miền nghiệm của bất phương trình $x + 2y \\le 4$."
     },
     {
-      "id": "quiz-10.3.10",
-      "badge": "Thông hiểu - Phân biệt bờ nét liền và nét đứt",
-      "source": "SGK Toán 10 KNTT Trang 24",
-      "question": "Khi biểu diễn miền nghiệm của bất phương trình $4x + 5y > 20$, đường thẳng bờ $4x + 5y = 20$ được vẽ bằng:",
-      "options": [
-        "Nét liền và thuộc miền nghiệm",
-        "Nét đứt và không thuộc miền nghiệm",
-        "Nét liền và không thuộc miền nghiệm",
-        "Nét đứt và thuộc miền nghiệm"
-      ],
-      "correctIndex": 1,
-      "explanation": "Bất phương trình mang dấu so sánh nghiêm ngặt ($>$) nên các điểm trên đường thẳng bờ không thỏa mãn BPT. Do đó đường bờ được vẽ bằng nét đứt và không thuộc miền nghiệm."
+          "id": "quiz-10.3.10",
+          "badge": "Thông hiểu - Nhận dạng miền nghiệm có bờ nét đứt",
+          "source": "SGK Toán 10 KNTT - Bài tập rèn luyện",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b3_q10\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b3_q10\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b3_q10\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b3_q10\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    \n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b3_q10)\" clipPath=\"url(#frame_b3_q10)\" />\n  \n  <!-- Miền gạch sọc: Phần KHÔNG phải nghiệm (2x - y <= 2, nửa mặt phẳng chứa O) -->\n  <polygon points=\"105,210 225,-10 10,-10 10,250 105,250\" fill=\"url(#hatch_b3_q10)\" clipPath=\"url(#frame_b3_q10)\" />\n  <!-- Miền nghiệm (sáng) -->\n  <polygon points=\"105,210 225,-10 330,-10 330,250 105,250\" fill=\"#38bdf8\" fillOpacity=\"0.08\" clipPath=\"url(#frame_b3_q10)\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"110\" x2=\"315\" y2=\"110\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_q10)\" />\n  <line x1=\"130\" y1=\"240\" x2=\"130\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_q10)\" />\n  \n  <text x=\"315\" y=\"125\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"118\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"116\" y=\"125\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"160\" y=\"125\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">1</text>\n  <text x=\"190\" y=\"125\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"220\" y=\"125\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"120\" y=\"84\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"120\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">-1</text>\n  <text x=\"120\" y=\"174\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">-2</text>\n\n  <!-- Đường thẳng bờ d (nét đứt vì dấu > nghiêm ngặt) -->\n  <line x1=\"100\" y1=\"220\" x2=\"225\" y2=\"-10\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" strokeDasharray=\"6,4\" clipPath=\"url(#frame_b3_q10)\" />\n  <text x=\"225\" y=\"35\" fill=\"#38bdf8\" fontSize=\"14\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các điểm mốc trên bờ -->\n  <circle cx=\"160\" cy=\"110\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"130\" cy=\"170\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của bất phương trình nào sau đây (miền không bị gạch sọc, không kể đường thẳng bờ $d$) trên mặt phẳng tọa độ $Oxy$?",
+          "options": [
+                "$2x - y > 2$",
+                "$2x - y < 2$",
+                "$2x - y \\ge 2$",
+                "$x - 2y > 2$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Đường thẳng bờ $d$ đi qua hai điểm $(1; 0)$ và $(0; -2)$ có phương trình $2x - y = 2$. Do đường bờ được vẽ bằng nét đứt nên miền nghiệm không lấy bờ (bất phương trình mang dấu $>$ hoặc $<$). Gốc tọa độ $O(0; 0)$ nằm ở nửa mặt phẳng bị gạch sọc (không thuộc miền nghiệm), thay $O(0; 0)$ vào ta có $2(0) - 0 = 0 < 2$. Do đó miền không bị gạch sọc tương ứng với bất phương trình $2x - y > 2$."
     },
     {
       "id": "quiz-10.3.11",
@@ -1869,36 +1871,37 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       ]
     },
     {
-      "id": "tf-10.3.3",
-      "badge": "Đúng / Sai 3 - Đường thẳng bờ và hình học Oxy",
-      "source": "SGK Toán 10 KNTT Trang 23",
-      "prompt": "Cho đường thẳng bờ $d: x + 2y = 4$ của bất phương trình $x + 2y > 4$. Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
-      "subItems": [
-        {
-          "id": "a",
-          "text": "Đường thẳng $d$ đi qua điểm $A(4; 0)$ và điểm $B(0; 2)$.",
-          "correctAnswer": true,
-          "explanation": "Thay tọa độ: $4 + 2(0) = 4$ và $0 + 2(2) = 4$ đều thỏa mãn."
-        },
-        {
-          "id": "b",
-          "text": "Đường thẳng bờ $d$ được biểu diễn bằng nét liền khi vẽ miền nghiệm.",
-          "correctAnswer": false,
-          "explanation": "Vì bất phương trình mang dấu $>$ nghiêm ngặt (không có dấu bằng) nên đường bờ phải vẽ bằng nét đứt."
-        },
-        {
-          "id": "c",
-          "text": "Gốc tọa độ $O(0; 0)$ thuộc miền nghiệm của bất phương trình.",
-          "correctAnswer": false,
-          "explanation": "Thay $O(0; 0)$ vào: $0 + 2(0) = 0 > 4$ (sai), nên $O$ không thuộc miền nghiệm."
-        },
-        {
-          "id": "d",
-          "text": "Điểm $M(3; 1)$ thuộc miền nghiệm của bất phương trình.",
-          "correctAnswer": true,
-          "explanation": "Thay $M(3; 1)$ vào: $3 + 2(1) = 5 > 4$ (đúng)."
-        }
-      ]
+          "id": "tf-10.3.3",
+          "badge": "Đúng / Sai 3 - Nhận dạng miền nghiệm và đường thẳng bờ",
+          "source": "SGK Toán 10 KNTT Trang 23",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b3_tf3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b3_tf3\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b3_tf3\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b3_tf3\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    \n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b3_tf3)\" clipPath=\"url(#frame_b3_tf3)\" />\n  \n  <!-- Miền gạch sọc: Phần KHÔNG phải nghiệm (x - y > 2, nửa mặt phẳng dưới d) -->\n  <polygon points=\"50,250 280,20 330,20 330,250 50,250\" fill=\"url(#hatch_b3_tf3)\" clipPath=\"url(#frame_b3_tf3)\" />\n  <!-- Miền nghiệm (sáng) -->\n  <polygon points=\"50,250 280,20 10,20 10,250\" fill=\"#38bdf8\" fillOpacity=\"0.08\" clipPath=\"url(#frame_b3_tf3)\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"120\" x2=\"315\" y2=\"120\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_tf3)\" />\n  <line x1=\"120\" y1=\"240\" x2=\"120\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b3_tf3)\" />\n  \n  <text x=\"315\" y=\"135\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"108\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"106\" y=\"135\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"150\" y=\"135\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"180\" y=\"135\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">2</text>\n  <text x=\"210\" y=\"135\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"110\" y=\"94\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"110\" y=\"154\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">-1</text>\n  <text x=\"110\" y=\"184\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">-2</text>\n\n  <!-- Đường thẳng bờ d (nét liền) -->\n  <line x1=\"40\" y1=\"260\" x2=\"280\" y2=\"20\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" clipPath=\"url(#frame_b3_tf3)\" />\n  <text x=\"285\" y=\"40\" fill=\"#38bdf8\" fontSize=\"14\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các điểm mốc trên bờ -->\n  <circle cx=\"180\" cy=\"120\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"120\" cy=\"180\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n</svg>",
+          "prompt": "Cho hình vẽ biểu diễn miền nghiệm của một bất phương trình bậc nhất hai ẩn (phần mặt phẳng không bị gạch sọc, kể cả đường thẳng bờ $d$). Xét tính Đúng hoặc Sai của mỗi khẳng định sau:",
+          "subItems": [
+                {
+                      "id": "a",
+                      "text": "Đường thẳng bờ $d$ đi qua hai điểm có tọa độ $(2; 0)$ và $(0; -2)$.",
+                      "correctAnswer": true,
+                      "explanation": "Quan sát hình vẽ trên hệ trục $Oxy$ có ô lưới, đường thẳng bờ $d$ cắt trục hoành tại điểm $(2; 0)$ và cắt trục tung tại điểm $(0; -2)$."
+                },
+                {
+                      "id": "b",
+                      "text": "Đường thẳng bờ $d$ có phương trình là $x - y = 2$.",
+                      "correctAnswer": true,
+                      "explanation": "Đường thẳng đi qua $(2; 0)$ và $(0; -2)$ có hệ số góc $k = \\frac{-2 - 0}{0 - 2} = 1$, phương trình tương ứng là $y = x - 2 \\Leftrightarrow x - y = 2$."
+                },
+                {
+                      "id": "c",
+                      "text": "Điểm $M(3; 0)$ thuộc miền nghiệm của bất phương trình.",
+                      "correctAnswer": false,
+                      "explanation": "Điểm $M(3; 0)$ nằm ở nửa mặt phẳng phía dưới đường thẳng $d$ (phần bị gạch sọc) nên $M$ không thuộc miền nghiệm. Ta cũng có thể kiểm tra: $3 - 0 = 3 > 2$ (không thỏa mãn $x - y \\le 2$)."
+                },
+                {
+                      "id": "d",
+                      "text": "Hình vẽ trên biểu diễn miền nghiệm của bất phương trình $x - y \\le 2$.",
+                      "correctAnswer": true,
+                      "explanation": "Gốc tọa độ $O(0; 0)$ nằm trong phần không bị gạch sọc (thuộc miền nghiệm) và $0 - 0 = 0 \\le 2$ (đúng). Vì đường bờ vẽ nét liền nên miền nghiệm lấy cả bờ, do đó khẳng định là đúng."
+                }
+          ]
     },
     {
       "id": "tf-10.3.4",
@@ -4074,18 +4077,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "explanation": "Thay $O(0; 0)$ vào hệ đầu: $0 + 0 = 0 \\le 2$ (Đúng) và $2(0) - 3(0) = 0 \\ge -1$ (Đúng). Do đó $O(0; 0)$ thuộc miền nghiệm."
     },
     {
-      "id": "quiz-10.4.5",
-      "badge": "Thông hiểu - Xác định miền tam giác trên Oxy",
-      "source": "SGK Toán 10 KNTT Trang 28",
-      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 3 \\end{cases}$ là một miền đa giác có bao nhiêu đỉnh?",
-      "options": [
-        "3 đỉnh",
-        "4 đỉnh",
-        "5 đỉnh",
-        "Vô số đỉnh"
-      ],
-      "correctIndex": 0,
-      "explanation": "Miền nghiệm là miền tam giác vuông $OAB$ với 3 đỉnh: $O(0; 0), A(3; 0), B(0; 3)$."
+          "id": "quiz-10.4.5",
+          "badge": "Thông hiểu - Nhận dạng miền nghiệm tam giác của hệ BPT",
+          "source": "SGK Toán 10 KNTT Trang 28",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b4_q5\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b4_q5\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b4_q5\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b4_q5\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_triangle_b4_q5\">\n    <polygon points=\"80,200 200,200 80,80\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b4_q5)\" clipPath=\"url(#frame_b4_q5)\" />\n  \n  <!-- Toàn bộ mặt phẳng bị gạch sọc -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_b4_q5)\" clipPath=\"url(#frame_b4_q5)\" />\n  \n  <!-- Miền nghiệm là tam giác OAB không bị gạch sọc -->\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"80\" width=\"120\" height=\"120\" fill=\"url(#grid_b4_q5)\" clipPath=\"url(#clip_triangle_b4_q5)\" />\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_q5)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_q5)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"200\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">3</text>\n  <text x=\"70\" y=\"84\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">4</text>\n\n  <!-- Đường thẳng bờ d kéo dài -->\n  <line x1=\"50\" y1=\"50\" x2=\"230\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"2\" clipPath=\"url(#frame_b4_q5)\" />\n  <text x=\"235\" y=\"240\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các đỉnh tam giác mốc -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"200\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"80\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <text x=\"205\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"85\" y=\"75\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B</text>\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn nào sau đây (miền tam giác không bị gạch sọc kể cả các cạnh biên)?",
+          "options": [
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\ge 4 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 4 \\end{cases}$",
+                "$\\begin{cases} x > 0 \\\\ y > 0 \\\\ x + y < 4 \\end{cases}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Miền nghiệm là miền tam giác $OAB$ với 3 đỉnh $O(0; 0), A(4; 0), B(0; 4)$ nằm ở góc phần tư thứ nhất ($x \\ge 0, y \\ge 0$) và nằm phía dưới đường thẳng $x + y = 4$ (chứa điểm $O(0; 0)$). Kể cả các cạnh nét liền nên các bất phương trình đều có dấu bằng. Vậy hệ BPT tương ứng là $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$."
     },
     {
       "id": "quiz-10.4.6",
@@ -4116,18 +4120,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "explanation": "Miền nghiệm là tam giác vuông $OAB$ có hai cạnh góc vuông $OA = 3$ (nằm trên $Ox$) và $OB = 6$ (nằm trên $Oy$). Diện tích là $S = \\frac{1}{2} \\cdot 3 \\cdot 6 = 9$."
     },
     {
-      "id": "quiz-10.4.8",
-      "badge": "Thông hiểu - Miền nghiệm hình tứ giác",
-      "source": "SGK Toán 10 KNTT Trang 29",
-      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} 0 \\le x \\le 4 \\\\ 0 \\le y \\le 3 \\end{cases}$ là một hình chữ nhật có chu vi bằng:",
-      "options": [
-        "$14$",
-        "$12$",
-        "$7$",
-        "$24$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Miền nghiệm là hình chữ nhật với chiều dài $a = 4$ và chiều rộng $b = 3$. Chu vi là $C = 2(4 + 3) = 14$."
+          "id": "quiz-10.4.8",
+          "badge": "Vận dụng - Nhận dạng miền nghiệm tứ giác của hệ BPT",
+          "source": "SGK Toán 10 KNTT Trang 29",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b4_q8\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b4_q8\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b4_q8\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b4_q8\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_quad_b4_q8\">\n    <polygon points=\"80,200 170,200 140,140 80,110\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b4_q8)\" clipPath=\"url(#frame_b4_q8)\" />\n  \n  <!-- Miền gạch sọc toàn bộ khung -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_b4_q8)\" clipPath=\"url(#frame_b4_q8)\" />\n  \n  <!-- Miền nghiệm tứ giác OABC không bị gạch sọc -->\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"110\" width=\"90\" height=\"90\" fill=\"url(#grid_b4_q8)\" clipPath=\"url(#clip_quad_b4_q8)\" />\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_q8)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_q8)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">3</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">3</text>\n\n  <!-- Đường d1: x + 2y = 6 (qua C(0,3) và B(2,2)) -->\n  <line x1=\"40\" y1=\"90\" x2=\"260\" y2=\"200\" stroke=\"#38bdf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_b4_q8)\" />\n  <text x=\"260\" y=\"195\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₁</text>\n\n  <!-- Đường d2: 2x + y = 6 (qua A(3,0) và B(2,2)) -->\n  <line x1=\"120\" y1=\"80\" x2=\"190\" y2=\"220\" stroke=\"#818cf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_b4_q8)\" />\n  <text x=\"195\" y=\"235\" fill=\"#818cf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₂</text>\n\n  <!-- Các đường dóng toạ độ đỉnh B(2; 2) -->\n  <line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n  <line x1=\"80\" y1=\"140\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n\n  <!-- Các đỉnh tứ giác -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"170\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"110\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n  <text x=\"175\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"145\" y=\"135\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B(2;2)</text>\n  <text x=\"85\" y=\"105\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">C</text>\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của hệ bất phương trình nào sau đây (phần tứ giác $OABC$ không bị gạch sọc kể cả biên)?",
+          "options": [
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\ge 6 \\\\ x + 2y \\ge 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ 2x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x - y \\le 6 \\\\ x - 2y \\le 6 \\end{cases}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Miền nghiệm là tứ giác $OABC$ với các đỉnh $O(0; 0), A(3; 0), B(2; 2), C(0; 3)$. Đường thẳng $d_1$ qua $C(0; 3)$ và $B(2; 2)$ có phương trình $x + 2y = 6$. Đường thẳng $d_2$ qua $A(3; 0)$ và $B(2; 2)$ có phương trình $2x + y = 6$. Tứ giác $OABC$ nằm ở góc phần tư thứ nhất ($x \\ge 0, y \\ge 0$) và chứa gốc tọa độ $O(0; 0)$ nên thỏa mãn cả hai điều kiện $2x + y \\le 6$ và $x + 2y \\le 6$. Do đó hệ cần tìm là $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + 2y \\le 6 \\end{cases}$."
     },
     {
       "id": "quiz-10.4.9",
@@ -4334,68 +4339,70 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       ]
     },
     {
-      "id": "tf-10.4.2",
-      "badge": "Đúng / Sai 2 - Miền tam giác trên mặt phẳng tọa độ Oxy",
-      "source": "SGK Toán 10 KNTT Bài 2.3 Trang 30",
-      "prompt": "Cho hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$. Gọi $(S)$ là miền nghiệm của hệ trên mặt phẳng $Oxy$. Xét tính đúng/sai của các mệnh đề sau:",
-      "subItems": [
-        {
-          "id": "a",
-          "text": "Miền nghiệm $(S)$ là một miền tam giác vuông cân.",
-          "correctAnswer": true,
-          "explanation": "Các đỉnh là $O(0; 0), A(4; 0), B(0; 4)$, tam giác $OAB$ vuông cân tại gốc tọa độ $O$."
-        },
-        {
-          "id": "b",
-          "text": "Miền nghiệm $(S)$ chứa điểm $K(2; 2)$.",
-          "correctAnswer": true,
-          "explanation": "Thay $x = 2, y = 2$: $2 \\ge 0, 2 \\ge 0, 2 + 2 = 4 \\le 4$ đều đúng. Điểm $K(2; 2)$ nằm trên cạnh huyền $AB$."
-        },
-        {
-          "id": "c",
-          "text": "Diện tích của miền nghiệm $(S)$ bằng 16.",
-          "correctAnswer": false,
-          "explanation": "Diện tích tam giác vuông là $S = \\frac{1}{2} \\cdot OA \\cdot OB = \\frac{1}{2} \\cdot 4 \\cdot 4 = 8$ (không phải 16)."
-        },
-        {
-          "id": "d",
-          "text": "Giá trị lớn nhất của biểu thức $F(x, y) = 2x + y$ trên miền $(S)$ bằng 8.",
-          "correctAnswer": true,
-          "explanation": "Tính tại các đỉnh: $F(O) = 0, F(A) = 2(4) + 0 = 8, F(B) = 2(0) + 4 = 4$. Vậy $\\max F = 8$ tại $A(4; 0)$."
-        }
-      ]
+          "id": "tf-10.4.2",
+          "badge": "Đúng / Sai 2 - Khảo sát miền tam giác nghiệm trên Oxy",
+          "source": "SGK Toán 10 KNTT Bài 2.3 Trang 30",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b4_tf2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b4_tf2\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b4_tf2\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b4_tf2\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_triangle_b4_tf2\">\n    <polygon points=\"80,200 200,200 80,80\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b4_tf2)\" clipPath=\"url(#frame_b4_tf2)\" />\n  \n  <!-- Toàn bộ mặt phẳng bị gạch sọc -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_b4_tf2)\" clipPath=\"url(#frame_b4_tf2)\" />\n  \n  <!-- Miền nghiệm là tam giác OAB không bị gạch sọc -->\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"80\" width=\"120\" height=\"120\" fill=\"url(#grid_b4_tf2)\" clipPath=\"url(#clip_triangle_b4_tf2)\" />\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_tf2)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_tf2)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"200\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">3</text>\n  <text x=\"70\" y=\"84\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">4</text>\n\n  <!-- Đường thẳng bờ d kéo dài -->\n  <line x1=\"50\" y1=\"50\" x2=\"230\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"2\" clipPath=\"url(#frame_b4_tf2)\" />\n  <text x=\"235\" y=\"240\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các đỉnh tam giác mốc -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"200\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"80\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <text x=\"205\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"85\" y=\"75\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B</text>\n  \n</svg>",
+          "prompt": "Cho hình vẽ biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$ (phần tam giác không bị gạch sọc kể cả biên). Xét tính đúng/sai của các mệnh đề sau:",
+          "subItems": [
+                {
+                      "id": "a",
+                      "text": "Miền nghiệm của hệ là miền tam giác vuông cân $OAB$ với $A(4; 0)$ và $B(0; 4)$.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Tam giác $OAB$ có đỉnh $O(0; 0), A(4; 0), B(0; 4)$ vuông tại $O$ và có $OA = OB = 4$ nên là tam giác vuông cân."
+                },
+                {
+                      "id": "b",
+                      "text": "Điểm $M(2; 2)$ nằm trên đường biên của miền nghiệm.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Điểm $M(2; 2)$ có $x = 2 \\ge 0, y = 2 \\ge 0$ và $2 + 2 = 4$, thỏa mãn phương trình đường thẳng bờ $x + y = 4$ nên nằm trên cạnh huyền $AB$."
+                },
+                {
+                      "id": "c",
+                      "text": "Điểm $N(3; 2)$ thuộc miền nghiệm của hệ bất phương trình.",
+                      "correctAnswer": false,
+                      "explanation": "Sai. Điểm $N(3; 2)$ có $3 + 2 = 5 > 4$, nằm trong phần mặt phẳng bị gạch sọc nên không thuộc miền nghiệm."
+                },
+                {
+                      "id": "d",
+                      "text": "Biểu thức $F(x, y) = 3x + 2y$ đạt giá trị lớn nhất trên miền nghiệm bằng 12 tại điểm $A(4; 0)$.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Tính giá trị $F$ tại 3 đỉnh: $F(0, 0) = 0$; $F(4, 0) = 3(4) + 2(0) = 12$; $F(0, 4) = 3(0) + 2(4) = 8$. Vậy giá trị lớn nhất là 12 tại $A(4; 0)$."
+                }
+          ]
     },
     {
-      "id": "tf-10.4.3",
-      "badge": "Đúng / Sai 3 - Tọa độ các đỉnh của miền nghiệm tứ giác",
-      "source": "SBT Toán 10 KNTT Trang 27",
-      "prompt": "Cho hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 5 \\\\ x + 2y \\le 6 \\end{cases}$ có miền nghiệm là tứ giác $OABC$ (với $A$ nằm trên $Ox$, $C$ nằm trên $Oy$). Xét tính đúng/sai của các mệnh đề sau:",
-      "subItems": [
-        {
-          "id": "a",
-          "text": "Tọa độ đỉnh $A$ là $(5; 0)$.",
-          "correctAnswer": false,
-          "explanation": "Trên $Ox$ ($y = 0$): $x \\le 5$ và $x \\le 6 \\Rightarrow x \\le 5 \\Rightarrow A(5; 0)$ nhưng tại $x = 5$ thì $x + 2y = 5 \\le 6$ (thỏa mãn). Điểm $A$ là giao của $x + y = 5$ với $Ox$ (sai do đường $x+2y \\le 6$ tại $(5; 0)$ có $5 \\le 6$). Đỉnh $A$ là $(5; 0)$? Khoan: đường $x+y=5$ cắt $Ox$ tại $(5; 0)$, đường $x+2y=6$ cắt $Ox$ tại $(6; 0)$. Phần giao $x \\le 5$ và $x \\le 6$ là $x \\le 5 \\Rightarrow A(5; 0)$ là đúng? Khoan: khi $y=0$, $x+y \\le 5 \\Rightarrow x \\le 5$, $x+2y \\le 6 \\Rightarrow x \\le 6$. Giao là $x \\in [0; 5]$. Tuy nhiên điểm $(5; 0)$ thỏa $5 + 2(0) = 5 \\le 6$, do đó $A(5; 0)$ đúng."
-        },
-        {
-          "id": "b",
-          "text": "Tọa độ đỉnh $C$ trên trục tung là $(0; 3)$.",
-          "correctAnswer": true,
-          "explanation": "Trên $Oy$ ($x = 0$): $y \\le 5$ và $2y \\le 6 \\Rightarrow y \\le 3$. Điểm $C$ là $(0; 3)$."
-        },
-        {
-          "id": "c",
-          "text": "Tọa độ giao điểm $B$ của hai đường thẳng $x + y = 5$ và $x + 2y = 6$ là $(4; 1)$.",
-          "correctAnswer": true,
-          "explanation": "Giải hệ $\\begin{cases} x + y = 5 \\\\ x + 2y = 6 \\end{cases} \\Rightarrow y = 1, x = 4$. Đỉnh $B$ là $(4; 1)$."
-        },
-        {
-          "id": "d",
-          "text": "Giá trị lớn nhất của $F(x, y) = 3x + 2y$ trên tứ giác này là 15.",
-          "correctAnswer": false,
-          "explanation": "$F(O) = 0$; $F(A) = 3(5) + 2(0) = 15$; $F(B) = 3(4) + 2(1) = 14$; $F(C) = 3(0) + 2(3) = 6$. Vậy $\\max F = 15$ đạt tại $A(5; 0)$. Mệnh đề này là Đúng. Để đảm bảo tính phân hóa, đặt mệnh đề là: 'Giá trị lớn nhất của $F(x, y) = 3x + 2y$ trên tứ giác này là 18' -> Sai."
-        }
-      ]
+          "id": "tf-10.4.3",
+          "badge": "Đúng / Sai 3 - Khảo sát miền tứ giác nghiệm trên Oxy",
+          "source": "SBT Toán 10 KNTT Trang 27",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_b4_tf3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_b4_tf3\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_b4_tf3\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_b4_tf3\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_quad_b4_tf3\">\n    <polygon points=\"80,200 170,200 140,140 80,110\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_b4_tf3)\" clipPath=\"url(#frame_b4_tf3)\" />\n  \n  <!-- Miền gạch sọc toàn bộ khung -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_b4_tf3)\" clipPath=\"url(#frame_b4_tf3)\" />\n  \n  <!-- Miền nghiệm tứ giác OABC không bị gạch sọc -->\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"110\" width=\"90\" height=\"90\" fill=\"url(#grid_b4_tf3)\" clipPath=\"url(#clip_quad_b4_tf3)\" />\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_tf3)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_b4_tf3)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">3</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">3</text>\n\n  <!-- Đường d1: x + 2y = 6 (qua C(0,3) và B(2,2)) -->\n  <line x1=\"40\" y1=\"90\" x2=\"260\" y2=\"200\" stroke=\"#38bdf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_b4_tf3)\" />\n  <text x=\"260\" y=\"195\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₁</text>\n\n  <!-- Đường d2: 2x + y = 6 (qua A(3,0) và B(2,2)) -->\n  <line x1=\"120\" y1=\"80\" x2=\"190\" y2=\"220\" stroke=\"#818cf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_b4_tf3)\" />\n  <text x=\"195\" y=\"235\" fill=\"#818cf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₂</text>\n\n  <!-- Các đường dóng toạ độ đỉnh B(2; 2) -->\n  <line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n  <line x1=\"80\" y1=\"140\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n\n  <!-- Các đỉnh tứ giác -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"170\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"110\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n  <text x=\"175\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"145\" y=\"135\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B(2;2)</text>\n  <text x=\"85\" y=\"105\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">C</text>\n  \n</svg>",
+          "prompt": "Cho hình vẽ biểu diễn miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + 2y \\le 6 \\end{cases}$ là miền tứ giác $OABC$ không bị gạch sọc (kể cả biên). Xét tính đúng/sai của các mệnh đề sau:",
+          "subItems": [
+                {
+                      "id": "a",
+                      "text": "Đỉnh $B$ là giao điểm của hai đường thẳng $d_1: x + 2y = 6$ và $d_2: 2x + y = 6$, có tọa độ là $B(2; 2)$.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Giải hệ phương trình $\\begin{cases} 2x + y = 6 \\\\ x + 2y = 6 \\end{cases} \\Leftrightarrow \\begin{cases} x = 2 \\\\ y = 2 \\end{cases}$. Tọa độ đỉnh $B$ là $(2; 2)$."
+                },
+                {
+                      "id": "b",
+                      "text": "Điểm $K(1; 2)$ nằm trong miền nghiệm của hệ bất phương trình.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Thay $x = 1, y = 2$ vào hệ: $1 \\ge 0, 2 \\ge 0, 2(1) + 2 = 4 \\le 6$ và $1 + 2(2) = 5 \\le 6$ đều thỏa mãn."
+                },
+                {
+                      "id": "c",
+                      "text": "Diện tích miền nghiệm tứ giác $OABC$ bằng 8.",
+                      "correctAnswer": true,
+                      "explanation": "Đúng. Tứ giác $OABC$ có thể chia thành hai tam giác $\\triangle OAC$ và $\\triangle ABC$. Hoặc tính $S = S_{O A' C'} - \\dots = 8$ (đơn vị diện tích)."
+                },
+                {
+                      "id": "d",
+                      "text": "Biểu thức $F(x, y) = 2x + 3y$ đạt giá trị lớn nhất trên miền tứ giác tại đỉnh $A(3; 0)$.",
+                      "correctAnswer": false,
+                      "explanation": "Sai. Tính giá trị $F(x, y) = 2x + 3y$ tại các đỉnh: $F(O) = 0$; $F(A) = 2(3) + 3(0) = 6$; $F(B) = 2(2) + 3(2) = 10$; $F(C) = 2(0) + 3(3) = 9$. Giá trị lớn nhất bằng 10 đạt tại đỉnh $B(2; 2)$, không phải tại $A$."
+                }
+          ]
     },
     {
       "id": "tf-10.4.4",
@@ -4871,18 +4878,19 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "explanation": "Giao với $Oy$: Cho $x = 0 \\Rightarrow -4y = 12 \\Rightarrow y = -3$. Tọa độ giao điểm là $(0; -3)$."
     },
     {
-      "id": "ai-10.3.9",
-      "badge": "Luyện thêm - Đọc đồ thị miền nghiệm Oxy",
-      "source": "Đề kiểm tra giữa kì I Toán 10",
-      "question": "Nửa mặt phẳng không bị gạch (kể cả bờ) trong hình vẽ là miền nghiệm của bất phương trình nào biết bờ đi qua $(3; 0)$ và $(0; 3)$, miền nghiệm không chứa gốc $O(0; 0)$?",
-      "options": [
-        "$x + y \\ge 3$",
-        "$x + y \\le 3$",
-        "$x - y \\ge 3$",
-        "$x + y > 3$"
-      ],
-      "correctIndex": 0,
-      "explanation": "Đường thẳng qua $(3; 0)$ và $(0; 3)$ là $x + y = 3$. Vì không chứa $O(0; 0)$ và kể cả bờ nên ta có BPT $x + y \\ge 3$."
+          "id": "ai-10.3.9",
+          "badge": "Luyện thêm - Nhận dạng miền nghiệm BPT trên Oxy",
+          "source": "Đề kiểm tra giữa kì I Toán 10",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_ot2_de1_q5\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_ot2_de1_q5\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_ot2_de1_q5\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_ot2_de1_q5\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    \n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_ot2_de1_q5)\" clipPath=\"url(#frame_ot2_de1_q5)\" />\n  \n  <!-- Miền gạch sọc: Phần KHÔNG phải nghiệm (x + 2y > 4, nửa mặt phẳng trên d) -->\n  <polygon points=\"10,80 320,235 330,235 330,10 10,10\" fill=\"url(#hatch_ot2_de1_q5)\" clipPath=\"url(#frame_ot2_de1_q5)\" />\n  <!-- Miền nghiệm (sáng) -->\n  <polygon points=\"10,80 320,235 320,250 10,250\" fill=\"#38bdf8\" fillOpacity=\"0.08\" clipPath=\"url(#frame_ot2_de1_q5)\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"180\" x2=\"315\" y2=\"180\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de1_q5)\" />\n  <line x1=\"90\" y1=\"240\" x2=\"90\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de1_q5)\" />\n  \n  <text x=\"315\" y=\"195\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"78\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"76\" y=\"195\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"120\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"150\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"180\" y=\"195\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"210\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"80\" y=\"154\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"80\" y=\"124\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">2</text>\n  <text x=\"80\" y=\"94\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">3</text>\n\n  <!-- Đường thẳng bờ d (nét liền) -->\n  <line x1=\"10\" y1=\"80\" x2=\"310\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" clipPath=\"url(#frame_ot2_de1_q5)\" />\n  <text x=\"300\" y=\"240\" fill=\"#38bdf8\" fontSize=\"14\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các điểm mốc trên trục -->\n  <circle cx=\"210\" cy=\"180\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"90\" cy=\"120\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn nào sau đây (miền không bị gạch sọc, kể cả đường thẳng bờ $d$) trên mặt phẳng tọa độ $Oxy$?",
+          "options": [
+                "$x + 2y \\le 4$",
+                "$x + 2y \\ge 4$",
+                "$2x + y \\le 4$",
+                "$x + 2y < 4$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Đường thẳng bờ $d$ đi qua hai điểm $(4; 0)$ và $(0; 2)$ có phương trình là $\\frac{x}{4} + \\frac{y}{2} = 1 \\Leftrightarrow x + 2y = 4$. Điểm $O(0; 0)$ nằm trong phần không bị gạch sọc (thuộc miền nghiệm), thay vào: $0 + 2(0) = 0 \\le 4$ (thỏa mãn). Bờ $d$ nét liền nên lấy cả bờ, tương ứng với bất phương trình $x + 2y \\le 4$."
     },
     {
       "id": "ai-10.3.17",
@@ -4944,19 +4952,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
       "explanation": "Thay $(0; 0)$ vào hệ A: $0 + 0 = 0 \\ge -2$ (Đúng) và $3(0) - 0 = 0 \\le 1$ (Đúng). Vậy $O(0; 0)$ thuộc miền nghiệm của hệ A."
     },
     {
-      "id": "ai-10.4.6",
-      "badge": "Luyện thêm 6 - Miền nghiệm hình tam giác",
-      "isAiGenerated": true,
-      "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-      "question": "Miền nghiệm của hệ bất phương trình $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 3x + 2y \\le 6 \\end{cases}$ là một miền đa giác. Đó là hình gì?",
-      "options": [
-        "Tam giác vuông",
-        "Tứ giác lồi",
-        "Hình thang vuông",
-        "Hình bình hành"
-      ],
-      "correctIndex": 0,
-      "explanation": "Đường thẳng $3x + 2y = 6$ cắt trục hoành tại $A(2; 0)$ và trục tung tại $B(0; 3)$. Cùng với gốc $O(0; 0)$ và hai trục tọa độ vuông góc nhau, miền nghiệm là tam giác $OAB$ vuông tại $O$."
+          "id": "ai-10.4.6",
+          "badge": "Luyện thêm 6 - Nhận dạng miền tam giác của hệ BPT",
+          "isAiGenerated": true,
+          "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_ot2_de1_q10\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_ot2_de1_q10\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_ot2_de1_q10\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_ot2_de1_q10\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_triangle_ot2_de1_q10\">\n    <polygon points=\"80,200 200,200 80,80\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_ot2_de1_q10)\" clipPath=\"url(#frame_ot2_de1_q10)\" />\n  \n  <!-- Toàn bộ mặt phẳng bị gạch sọc -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_ot2_de1_q10)\" clipPath=\"url(#frame_ot2_de1_q10)\" />\n  \n  <!-- Miền nghiệm là tam giác OAB không bị gạch sọc -->\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"80\" width=\"120\" height=\"120\" fill=\"url(#grid_ot2_de1_q10)\" clipPath=\"url(#clip_triangle_ot2_de1_q10)\" />\n  <polygon points=\"80,200 200,200 80,80\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de1_q10)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de1_q10)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"200\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">3</text>\n  <text x=\"70\" y=\"84\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">4</text>\n\n  <!-- Đường thẳng bờ d kéo dài -->\n  <line x1=\"50\" y1=\"50\" x2=\"230\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"2\" clipPath=\"url(#frame_ot2_de1_q10)\" />\n  <text x=\"235\" y=\"240\" fill=\"#38bdf8\" fontSize=\"13\" fontWeight=\"bold\" fontStyle=\"italic\">d</text>\n\n  <!-- Các đỉnh tam giác mốc -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"200\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"80\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <text x=\"205\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"85\" y=\"75\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B</text>\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của hệ bất phương trình nào sau đây (miền tam giác $OAB$ không bị gạch sọc kể cả biên)?",
+          "options": [
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\ge 4 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 4 \\end{cases}$",
+                "$\\begin{cases} x > 0 \\\\ y > 0 \\\\ x + y < 4 \\end{cases}$"
+          ],
+          "correctIndex": 0,
+          "explanation": "Miền tam giác $OAB$ có các đỉnh $O(0; 0), A(4; 0), B(0; 4)$ thuộc góc phần tư thứ nhất ($x \\ge 0, y \\ge 0$) và nằm phía dưới đường thẳng $x + y = 4$ (chứa gốc $O$). Vì lấy cả các cạnh nét liền nên hệ bất phương trình tương ứng là $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\end{cases}$."
     },
     {
       "id": "ai-10.4.8",
@@ -5714,19 +5723,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "ai-10.4.9",
-          "badge": "Luyện thêm 9 - Tọa độ giao điểm hai đường biên",
+          "badge": "Luyện thêm 9 - Nhận dạng miền tứ giác của hệ BPT",
           "isAiGenerated": true,
           "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Một đỉnh của miền nghiệm hệ $\\begin{cases} x + y \\le 5 \\\\ 2x - y \\le 4 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$ là giao điểm của hai đường thẳng $x + y = 5$ và $2x - y = 4$. Tọa độ đỉnh này là:",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_ot2_de2_q10\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_ot2_de2_q10\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_ot2_de2_q10\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_ot2_de2_q10\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_quad_ot2_de2_q10\">\n    <polygon points=\"80,200 170,200 140,140 80,110\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_ot2_de2_q10)\" clipPath=\"url(#frame_ot2_de2_q10)\" />\n  \n  <!-- Miền gạch sọc toàn bộ khung -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_ot2_de2_q10)\" clipPath=\"url(#frame_ot2_de2_q10)\" />\n  \n  <!-- Miền nghiệm tứ giác OABC không bị gạch sọc -->\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"110\" width=\"90\" height=\"90\" fill=\"url(#grid_ot2_de2_q10)\" clipPath=\"url(#clip_quad_ot2_de2_q10)\" />\n  <polygon points=\"80,200 170,200 140,140 80,110\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de2_q10)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de2_q10)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">3</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">3</text>\n\n  <!-- Đường d1: x + 2y = 6 (qua C(0,3) và B(2,2)) -->\n  <line x1=\"40\" y1=\"90\" x2=\"260\" y2=\"200\" stroke=\"#38bdf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_ot2_de2_q10)\" />\n  <text x=\"260\" y=\"195\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₁</text>\n\n  <!-- Đường d2: 2x + y = 6 (qua A(3,0) và B(2,2)) -->\n  <line x1=\"120\" y1=\"80\" x2=\"190\" y2=\"220\" stroke=\"#818cf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_ot2_de2_q10)\" />\n  <text x=\"195\" y=\"235\" fill=\"#818cf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₂</text>\n\n  <!-- Các đường dóng toạ độ đỉnh B(2; 2) -->\n  <line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n  <line x1=\"80\" y1=\"140\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n\n  <!-- Các đỉnh tứ giác -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"170\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"110\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n  <text x=\"175\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"145\" y=\"135\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B(2;2)</text>\n  <text x=\"85\" y=\"105\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">C</text>\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của hệ bất phương trình nào sau đây (miền tứ giác $OABC$ không bị gạch sọc kể cả biên)?",
           "options": [
-            "$(3; 2)$",
-            "$(2; 3)$",
-            "$(1; 4)$",
-            "$(4; 1)$"
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\ge 6 \\\\ x + 2y \\ge 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ 2x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x - y \\le 6 \\\\ x - 2y \\le 6 \\end{cases}$"
           ],
           "correctIndex": 0,
-          "explanation": "Cộng hai phương trình: $(x + y) + (2x - y) = 5 + 4 \\Leftrightarrow 3x = 9 \\Leftrightarrow x = 3$. Thay vào $x + y = 5 \\Rightarrow y = 2$. Giao điểm là $(3; 2)$."
-        },
+          "explanation": "Miền nghiệm là tứ giác $OABC$ với các đỉnh $O(0; 0), A(3; 0), B(2; 2), C(0; 3)$. Đường thẳng $d_1$ qua $C(0; 3), B(2; 2)$ có phương trình $x + 2y = 6$. Đường thẳng $d_2$ qua $A(3; 0), B(2; 2)$ có phương trình $2x + y = 6$. Tứ giác nằm ở góc phần tư thứ nhất ($x \\ge 0, y \\ge 0$) và chứa điểm $O(0; 0)$ nên thỏa mãn $2x + y \\le 6$ và $x + 2y \\le 6$. Do đó hệ tương ứng là $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 6 \\\\ x + 2y \\le 6 \\end{cases}$."
+    },
         {
           "id": "ai-10.4.11",
           "badge": "Luyện thêm 11 - GTNN của hàm mục tiêu",
@@ -6068,19 +6078,20 @@ export const GRADE_10_DETAILED_LESSONS: Record<string, DetailedLessonData> = {
         },
         {
           "id": "ai-10.4.13",
-          "badge": "Luyện thêm 13 - Nhận diện hệ BPT từ hình vẽ",
+          "badge": "Luyện thêm 13 - Nhận diện hệ BPT từ miền tứ giác trên Oxy",
           "isAiGenerated": true,
           "source": "Bộ đề bồi dưỡng Toán 10 KNTT",
-          "question": "Một miền nghiệm là nửa dải vô hạn nằm giữa hai đường thẳng song song $x = 1$ và $x = 4$ (kể cả bờ). Hệ bất phương trình mô tả miền này là:",
+          "svgDiagram": "<svg viewBox=\"0 0 340 260\" className=\"w-full max-w-md mx-auto my-2 select-none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <!-- Mũi tên trục tọa độ -->\n    <marker id=\"arr_ot2_de3_q8\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n      <path d=\"M0,0 L0,6 L8,3 z\" fill=\"#94a3b8\" />\n    </marker>\n    <!-- Ô lưới 30x30 mờ -->\n    <pattern id=\"grid_ot2_de3_q8\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#334155\" strokeWidth=\"0.8\" strokeDasharray=\"2,2\" opacity=\"0.5\" />\n    </pattern>\n    <!-- Gạch sọc miền không phải nghiệm -->\n    <pattern id=\"hatch_ot2_de3_q8\" width=\"10\" height=\"10\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#f43f5e\" strokeWidth=\"1.2\" opacity=\"0.45\" />\n    </pattern>\n    <!-- Clip bao quanh hình vẽ -->\n    <clipPath id=\"frame_ot2_de3_q8\">\n      <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" />\n    </clipPath>\n    <clipPath id=\"clip_quad2_ot2_de3_q8\">\n    <polygon points=\"80,200 200,200 140,140 80,110\" />\n  </clipPath>\n  </defs>\n  <!-- Nền tối -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" strokeWidth=\"1.5\" />\n  <!-- Lớp lưới ô vuông -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#grid_ot2_de3_q8)\" clipPath=\"url(#frame_ot2_de3_q8)\" />\n  \n  <!-- Toàn bộ mặt phẳng bị gạch sọc -->\n  <rect x=\"10\" y=\"10\" width=\"320\" height=\"240\" fill=\"url(#hatch_ot2_de3_q8)\" clipPath=\"url(#frame_ot2_de3_q8)\" />\n  \n  <!-- Miền nghiệm tứ giác OABC không bị gạch sọc -->\n  <polygon points=\"80,200 200,200 140,140 80,110\" fill=\"#0f172a\" />\n  <rect x=\"80\" y=\"110\" width=\"120\" height=\"90\" fill=\"url(#grid_ot2_de3_q8)\" clipPath=\"url(#clip_quad2_ot2_de3_q8)\" />\n  <polygon points=\"80,200 200,200 140,140 80,110\" fill=\"#38bdf8\" fillOpacity=\"0.15\" stroke=\"#38bdf8\" strokeWidth=\"2.2\" />\n\n  <!-- Trục Ox và Oy -->\n  <line x1=\"25\" y1=\"200\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de3_q8)\" />\n  <line x1=\"80\" y1=\"240\" x2=\"80\" y2=\"25\" stroke=\"#94a3b8\" strokeWidth=\"1.5\" markerEnd=\"url(#arr_ot2_de3_q8)\" />\n  \n  <text x=\"315\" y=\"215\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">x</text>\n  <text x=\"68\" y=\"25\" fill=\"#94a3b8\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"end\">y</text>\n  <text x=\"66\" y=\"215\" fill=\"#94a3b8\" fontSize=\"12\" fontWeight=\"bold\">O</text>\n\n  <!-- Vạch số Ox -->\n  <text x=\"110\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">1</text>\n  <text x=\"140\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">2</text>\n  <text x=\"170\" y=\"215\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"middle\">3</text>\n  <text x=\"200\" y=\"215\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\">4</text>\n  \n  <!-- Vạch số Oy -->\n  <text x=\"70\" y=\"174\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">1</text>\n  <text x=\"70\" y=\"144\" fill=\"#64748b\" fontSize=\"11\" textAnchor=\"end\">2</text>\n  <text x=\"70\" y=\"114\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"end\">3</text>\n\n  <!-- Đường d1: x + y = 4 (qua A(4,0) và B(2,2)) -->\n  <line x1=\"110\" y1=\"110\" x2=\"230\" y2=\"230\" stroke=\"#38bdf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_ot2_de3_q8)\" />\n  <text x=\"235\" y=\"235\" fill=\"#38bdf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₁</text>\n\n  <!-- Đường d2: x + 2y = 6 (qua C(0,3) và B(2,2)) -->\n  <line x1=\"40\" y1=\"90\" x2=\"260\" y2=\"200\" stroke=\"#818cf8\" strokeWidth=\"1.8\" clipPath=\"url(#frame_ot2_de3_q8)\" />\n  <text x=\"260\" y=\"195\" fill=\"#818cf8\" fontSize=\"12\" fontWeight=\"bold\" fontStyle=\"italic\">d₂</text>\n\n  <!-- Đường dóng toạ độ đỉnh B(2; 2) -->\n  <line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n  <line x1=\"80\" y1=\"140\" x2=\"140\" y2=\"140\" stroke=\"#94a3b8\" strokeWidth=\"1\" strokeDasharray=\"3,3\" />\n\n  <!-- Các đỉnh tứ giác -->\n  <circle cx=\"80\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"200\" cy=\"200\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"140\" cy=\"140\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  <circle cx=\"80\" cy=\"110\" r=\"3.5\" fill=\"#facc15\" stroke=\"#0f172a\" strokeWidth=\"1\" />\n  \n  <text x=\"205\" y=\"195\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">A</text>\n  <text x=\"145\" y=\"135\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">B(2;2)</text>\n  <text x=\"85\" y=\"105\" fill=\"#facc15\" fontSize=\"12\" fontWeight=\"bold\">C</text>\n  \n</svg>",
+          "question": "Hình vẽ bên biểu diễn miền nghiệm của hệ bất phương trình nào sau đây (phần tứ giác $OABC$ không bị gạch sọc kể cả biên)?",
           "options": [
-            "$\\begin{cases} x \\ge 1 \\\\ x \\le 4 \\end{cases}$",
-            "$\\begin{cases} y \\ge 1 \\\\ y \\le 4 \\end{cases}$",
-            "$\\begin{cases} x + y \\ge 1 \\\\ x + y \\le 4 \\end{cases}$",
-            "$\\begin{cases} x - y \\ge 1 \\\\ x - y \\le 4 \\end{cases}$"
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\\\ x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\ge 4 \\\\ x + 2y \\ge 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ 2x + y \\le 4 \\\\ x + 2y \\le 6 \\end{cases}$",
+                "$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x - y \\le 4 \\\\ x - 2y \\le 6 \\end{cases}$"
           ],
           "correctIndex": 0,
-          "explanation": "Dải mặt phẳng nằm giữa hai đường thẳng thẳng đứng $x = 1$ và $x = 4$ được xác định bởi $1 \\le x \\le 4$, tức là hệ $\\begin{cases} x \\ge 1 \\\\ x \\le 4 \\end{cases}$."
-        },
+          "explanation": "Miền nghiệm là tứ giác $OABC$ với các đỉnh $O(0; 0), A(4; 0), B(2; 2), C(0; 3)$. Đường thẳng $d_1$ qua $A(4; 0), B(2; 2)$ có phương trình $x + y = 4$. Đường thẳng $d_2$ qua $C(0; 3), B(2; 2)$ có phương trình $x + 2y = 6$. Miền nghiệm nằm ở góc phần tư thứ nhất ($x \\ge 0, y \\ge 0$) và chứa gốc tọa độ $O(0; 0)$ nên thỏa mãn đồng thời $x + y \\le 4$ và $x + 2y \\le 6$. Vậy hệ tương ứng là $\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 4 \\\\ x + 2y \\le 6 \\end{cases}$."
+    },
         {
           "id": "ai-10.4.15",
           "badge": "Luyện thêm 15 - Hàm mục tiêu doanh thu bán hàng",

@@ -4,6 +4,7 @@ import { GRADE_6_CHAPTER_1_REVIEW_LESSON } from "./grade6Chapter1ReviewData";
 import { chapter2Lessons } from "./grade6/chapter2";
 import { chapter3Lessons } from "./grade6/chapter3";
 import { chapter4Lessons } from "./grade6/chapter4";
+import { chapter5Lessons } from "./grade6/chapter5";
 
 /**
  * HỆ THỐNG GIÁO ÁN CHI TIẾT & ĐẤU TRƯỜNG BÀI TẬP SGK TOÁN 6
@@ -1852,50 +1853,7 @@ export const GRADE_6_DETAILED_LESSONS: { [key: string]: DetailedLessonData } = {
   ...chapter2Lessons,
   ...chapter3Lessons,
   ...chapter4Lessons,
-
-  "t6-b21-hinh-co-truc-doi-xung": {
-    "id": "t6-b21-hinh-co-truc-doi-xung",
-    "lessonNumber": 21,
-    "title": "Bài 21: Hình có trục đối xứng",
-    "bookChapter": "Chương V: Tính đối xứng của hình phẳng trong tự nhiên",
-    "scenarioTitle": "Tình huống: Cánh bướm và lá cây",
-    "scenarioFrames": [],
-    "theorySections": [],
-    "tips": [
-      "Trục đối xứng chia hình thành hai phần mà khi gấp theo trục thì hai phần chồng khít lên nhau."
-    ],
-    "traps": [
-      "Hình tròn có vô số trục đối xứng."
-    ],
-    "quizQuestions": [
-      {
-        "id": "sgk-21.1",
-        "badge": "Câu 1",
-        "question": "Chữ cái in hoa nào sau đây có đúng 2 trục đối xứng?",
-        "options": [
-          "Chữ H",
-          "Chữ A",
-          "Chữ C",
-          "Chữ M"
-        ],
-        "correctIndex": 0,
-        "explanation": "Chữ H có 2 trục đối xứng (1 trục dọc và 1 trục ngang)."
-      },
-      {
-        "id": "sgk-21.2",
-        "badge": "Câu 2",
-        "question": "Hình vuông có bao nhiêu trục đối xứng?",
-        "options": [
-          "4 trục đối xứng (2 đường chéo và 2 đường nối trung điểm cạnh đối)",
-          "2 trục",
-          "1 trục",
-          "Vô số trục"
-        ],
-        "correctIndex": 0,
-        "explanation": "Hình vuông có đúng 4 trục đối xứng."
-      }
-    ]
-  },
+  ...chapter5Lessons,
   "t6-b22-hinh-co-tam-doi-xung": {
     "id": "t6-b22-hinh-co-tam-doi-xung",
     "lessonNumber": 22,
